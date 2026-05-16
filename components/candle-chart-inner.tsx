@@ -38,9 +38,15 @@ export default function CandleChartInner({ series, intraday }: CandleChartProps)
     const container = containerRef.current;
     if (!container) return;
 
+    // Container width/height may be 0 on first render before layout finishes.
+    // Fall back to sane minimums so the chart is created with positive
+    // dimensions; the ResizeObserver below will fix the real size shortly.
+    const initialW = Math.max(container.clientWidth, 200);
+    const initialH = Math.max(container.clientHeight, 32);
+
     const chart = createChart(container, {
-      width: container.clientWidth,
-      height: container.clientHeight,
+      width: initialW,
+      height: initialH,
       layout: {
         background: { type: ColorType.Solid, color: "#000000" },
         textColor: "#71717a",
@@ -78,10 +84,15 @@ export default function CandleChartInner({ series, intraday }: CandleChartProps)
     });
     seriesRef.current = candleSeries;
 
-    // Auto-resize when the container size changes (e.g., window resize).
+    // Auto-resize when the container size changes (e.g., window resize, or
+    // the very first layout pass when the container actually gets measured).
+    // CRITICAL: refit content after every resize, otherwise the bars stay
+    // compressed in the leftmost portion of whatever the initial width was.
     const ro = new ResizeObserver(([entry]) => {
       const { width, height } = entry.contentRect;
+      if (width <= 0 || height <= 0) return;
       chart.applyOptions({ width, height });
+      chart.timeScale().fitContent();
     });
     ro.observe(container);
 
