@@ -11,9 +11,7 @@ import { formatPct } from "@/lib/utils";
 import { TICKER_TIPS } from "@/lib/glossary";
 import RangeSelector from "./range-selector";
 import Sparkline from "./sparkline";
-import CandleChart from "./candle-chart";
 import Tooltip from "./tooltip";
-import { useChartType } from "./chart-type-provider";
 
 export type TechAsset = { symbol: string; label: string; sublabel: string };
 export type TechQuote = { price: number | null; changePct: number | null };
@@ -34,7 +32,6 @@ export default function TechStocksClient({
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
-  const { chartType } = useChartType();
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
@@ -106,17 +103,13 @@ export default function TechStocksClient({
                 <span className={pctCls}>{pct === null ? "—" : formatPct(pct)}</span>
                 <span className="ml-auto text-[10px] text-[var(--dim)]">{range}</span>
               </div>
-              {/* Chart */}
+              {/* Sparkline */}
               <div className="h-10 w-full">
-                {chartType === "candle" ? (
-                  <CandleChart series={series} intraday={INTRADAY_RANGES.has(range)} />
-                ) : (
-                  <Sparkline
-                    points={series}
-                    positive={up}
-                    intraday={INTRADAY_RANGES.has(range)}
-                  />
-                )}
+                <Sparkline
+                  points={series}
+                  positive={up}
+                  intraday={INTRADAY_RANGES.has(range)}
+                />
               </div>
             </div>
           );

@@ -11,9 +11,7 @@ import { formatPct } from "@/lib/utils";
 import { TICKER_TIPS } from "@/lib/glossary";
 import RangeSelector from "./range-selector";
 import Sparkline from "./sparkline";
-import CandleChart from "./candle-chart";
 import Tooltip from "./tooltip";
-import { useChartType } from "./chart-type-provider";
 
 type Asset = { symbol: string; label: string };
 type Quote = { price: number | null; changePct: number | null };
@@ -36,7 +34,6 @@ export default function MultiAssetSparkPanel({
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
-  const { chartType } = useChartType();
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
@@ -101,15 +98,11 @@ export default function MultiAssetSparkPanel({
                 <span className="ml-1 text-[10px] text-[var(--dim)]">· {range}</span>
               </span>
               <div className="col-span-3 h-10">
-                {chartType === "candle" ? (
-                  <CandleChart series={series} intraday={INTRADAY_RANGES.has(range)} />
-                ) : (
-                  <Sparkline
-                    points={series}
-                    positive={up}
-                    intraday={INTRADAY_RANGES.has(range)}
-                  />
-                )}
+                <Sparkline
+                  points={series}
+                  positive={up}
+                  intraday={INTRADAY_RANGES.has(range)}
+                />
               </div>
             </div>
           );

@@ -21,8 +21,8 @@ export default function ChartTypeHeaderToggle() {
       aria-pressed={isCandle}
       title={
         isCandle
-          ? "Candle view ON — click to switch all charts back to line view"
-          : "Candle view OFF — click to switch all charts to candlestick view"
+          ? "Candle view ON — click to switch back to line view (applies to the main charts; small sparkline panels stay as lines because candles are unreadable at that size)"
+          : "Candle view OFF — click to switch the main charts to candlestick view (small sparklines stay as lines either way)"
       }
       className={
         "flex items-center gap-1 border px-2 py-1 font-mono text-[10px] uppercase tracking-widest transition-colors " +

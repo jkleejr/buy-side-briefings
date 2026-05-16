@@ -91,8 +91,6 @@ export default function CandleChartInner({ series, intraday }: CandleChartProps)
           borderColor: "#262626",
           timeVisible: !!intraday,
           secondsVisible: false,
-          fixLeftEdge: true,
-          fixRightEdge: true,
         },
         crosshair: {
           mode: CrosshairMode.Magnet,
