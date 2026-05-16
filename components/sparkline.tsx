@@ -59,20 +59,13 @@ export default function Sparkline({ points, positive, intraday, color }: Props) 
 
   const formatted = hoverPoint ? formatChartDate(hoverPoint.date) : null;
 
+  // Position popup at the hover X as a percentage; flip anchor when in the
+  // right half of the chart so the bubble doesn't overflow off-screen.
+  const hoverFrac = hoverIdx !== null ? hoverIdx / (points.length - 1) : 0;
+  const anchorRight = hoverFrac > 0.5;
+
   return (
     <div className="relative h-full w-full">
-      {/* Inline hover-readout (one line, fits a sparkline width) */}
-      {hoverPoint && formatted && (
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 flex justify-between bg-black/80 px-1 py-px font-mono text-[9px] leading-tight">
-          <span className="truncate text-[var(--amber-dim)]">
-            {formatted.full}
-            {intraday && formatted.time ? ` · ${formatted.time}` : ""}
-          </span>
-          <span className="shrink-0 text-[var(--foreground)]">
-            ${hoverPoint.close.toLocaleString("en-US", { maximumFractionDigits: 2 })}
-          </span>
-        </div>
-      )}
       <svg
         ref={svgRef}
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
@@ -105,6 +98,34 @@ export default function Sparkline({ points, positive, intraday, color }: Props) 
           </>
         )}
       </svg>
+
+      {/* Floating popup tooltip — day / date / (time if intraday) / price.
+          Matches the SPY chart's hover style for consistency. */}
+      {hoverPoint && formatted && (
+        <div
+          className="pointer-events-none absolute top-full z-50 mt-1 border bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]"
+          style={{
+            borderColor: lineColor,
+            [anchorRight ? "right" : "left"]: anchorRight
+              ? `${100 - hoverFrac * 100}%`
+              : `${hoverFrac * 100}%`,
+            minWidth: 110,
+            maxWidth: "min(220px, calc(100vw - 24px))",
+          }}
+        >
+          <div className="text-[var(--amber)]">{formatted.day}</div>
+          <div className="text-[var(--amber-dim)]">{formatted.full}</div>
+          {intraday && formatted.time && (
+            <div className="text-[var(--cyan-term)]">{formatted.time}</div>
+          )}
+          <div className="mt-0.5 text-[var(--dim)]">
+            {intraday ? "Price" : "Close"}{" "}
+            <span className="text-[var(--foreground)]">
+              ${hoverPoint.close.toLocaleString("en-US", { maximumFractionDigits: 2 })}
+            </span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
