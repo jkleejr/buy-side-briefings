@@ -62,7 +62,8 @@ export default async function SectorRotation() {
     <Panel
       code="SECT"
       title="Sector Rotation · 11 ETFs"
-      learn="The 11 S&P sector ETFs (Tech = XLK, Financials = XLF, etc.) sorted by today's move. 'Today' is the intraday change. '~50d' is the % change vs. the 50-day moving average — a longer-horizon trend reading. Leadership rotation between sectors is a tell about what the market thinks is coming (e.g., utilities + staples leading = defensive)."
+      learn="The 11 S&P sector ETFs (Tech = XLK, Financials = XLF, etc.) sorted by today's move. 'Today' is the intraday change. '~50d' is the % change vs. the 50-day moving average — a longer-horizon trend reading. Click the title for the full Sectors detail page with per-sector charts and rotation framework."
+      href="/sectors"
       meta={<span>SORT ▾ TODAY</span>}
     >
       <table className="w-full font-mono text-[11px]">

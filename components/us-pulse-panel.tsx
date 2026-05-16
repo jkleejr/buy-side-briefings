@@ -132,7 +132,8 @@ export default async function UsPulsePanel() {
     <Panel
       code="PULSE"
       title="US Pulse · Breadth & Risk Internals"
-      learn="The six numbers a US-desk trader scans first thing every morning, beyond SPX. Russell 2K = is the rally broad? RSP−SPY spread = breadth check (equal-weight vs cap-weight). Copper = global growth pulse. HYG = credit stress (early warning before stocks crack). 30Y Yield + TLT = long-duration bond sentiment. Together they fill in what SPX alone hides. Refreshes every 60 seconds."
+      learn="The six numbers a US-desk trader scans first thing every morning, beyond SPX. Russell 2K = is the rally broad? RSP−SPY spread = breadth check (equal-weight vs cap-weight). Copper = global growth pulse. HYG = credit stress (early warning before stocks crack). 30Y Yield + TLT = long-duration bond sentiment. Click the title for the full US Pulse detail page with each indicator charted historically."
+      href="/pulse"
       meta={<span>YAHOO · 60s</span>}
     >
       <div className="grid grid-cols-2 divide-x divide-y divide-[var(--border)] sm:grid-cols-3 lg:grid-cols-6 lg:divide-y-0">

@@ -63,7 +63,8 @@ export default async function GlobalMarketsPanel() {
     <Panel
       code="GLBL"
       title="Global Markets · Overnight & Sessions"
-      learn="The major non-US stock indices, grouped by region. Useful as overnight read: by the time the US market opens at 9:30am ET, Asia has already closed and Europe is mid-session — these tell you what futures will do at the open. Refreshes every 60 seconds."
+      learn="The major non-US stock indices, grouped by region. Useful as overnight read: by the time the US market opens at 9:30am ET, Asia has already closed and Europe is mid-session — these tell you what futures will do at the open. Click the title for the full Global Markets detail page with per-region charts."
+      href="/global"
       meta={<span>YAHOO · 60s</span>}
     >
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">

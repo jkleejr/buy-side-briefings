@@ -101,7 +101,8 @@ export default async function FedPanel() {
     <Panel
       code="MACRO"
       title="Fed & Macro"
-      learn="The macro backdrop — Fed policy, yields, inflation, jobs. These move slowly but they're the gravity behind every market regime. Mix of live FRED (Federal Reserve Economic Data) and manually maintained values."
+      learn="The macro backdrop — Fed policy, yields, inflation, jobs. These move slowly but they're the gravity behind every market regime. Mix of live FRED (Federal Reserve Economic Data) and manually maintained values. Click the title for the full Fed & Macro detail page."
+      href="/macro"
       meta={
         <a
           href={m.fed.fed_watch_url}
