@@ -70,7 +70,8 @@ export default function SpyChartClient({
 
   return (
     <div className="flex h-full flex-col">
-      <div className="flex flex-wrap items-center gap-2 px-2 pt-1.5 font-mono text-[11px]">
+      {/* Row 1 — price/% header. Just the data, no controls. */}
+      <div className="flex flex-wrap items-baseline gap-x-2 px-2 pt-1.5 font-mono text-[11px]">
         <span className="text-[var(--amber-dim)]">{symbol}</span>
         <span className="text-[var(--foreground)]">
           {price === null
@@ -79,11 +80,20 @@ export default function SpyChartClient({
         </span>
         <span className={pctCls}>{pct === null ? "—" : formatPct(pct)}</span>
         <span className="text-[10px] text-[var(--dim)]">· {range}</span>
-        <div className="ml-auto flex items-center gap-2">
-          <ChartTypeToggle value={chartType} onChange={setChartType} />
-          <RangeSelector value={range} onChange={setRange} loading={loading} />
-        </div>
       </div>
+
+      {/* Row 2 — dedicated control bar. Timeframe + chart-type toggles. */}
+      <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 border-y border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
+        <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+          Timeframe ▸
+        </span>
+        <RangeSelector value={range} onChange={setRange} loading={loading} />
+        <span className="ml-auto font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+          View ▸
+        </span>
+        <ChartTypeToggle value={chartType} onChange={setChartType} />
+      </div>
+
       <div className="flex-1">
         {chartType === "candle" ? (
           <CandleChart series={series} intraday={intraday} />
