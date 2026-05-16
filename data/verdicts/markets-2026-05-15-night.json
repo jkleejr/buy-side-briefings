@@ -1,0 +1,78 @@
+{
+  "routine": "markets",
+  "date": "2026-05-15",
+  "window": "night",
+  "generated_at": "2026-05-16T01:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE / DEFENSIVE TILT",
+    "conviction": "medium",
+    "rationale_short": "Morning warning fired — VIX broke its 18 trigger, breadth collapsed across small caps and semis, bonds and precious metals sold off in tandem suggesting forced deleveraging rather than orderly rotation. Don't chase Monday's open; wait for either capitulation low or VIX cooling below 16.",
+    "supporting_data": [
+      { "label": "VIX 18.43 (+6.78%) — broke 18 trigger flagged this morning", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "Russell 2000 -2.44% — 2x the SPX drawdown (breadth breakdown)", "url": "https://finance.yahoo.com/quote/%5ERUT/" },
+      { "label": "30Y Treasury 5.13% (+13bps) — secular-high zone, duration on offer", "url": "https://finance.yahoo.com/quote/%5ETYX/" },
+      { "label": "NVDA -4.42%, AMD -5.69%, AVGO -3.32% — AI/semis complex unwound multi-day rally", "url": "https://finance.yahoo.com/quote/NVDA/" },
+      { "label": "Silver -9.12%, Gold -2.63% — metals deleveraging, not flight-to-safety", "url": "https://finance.yahoo.com/quote/SLV/" },
+      { "label": "WTI Crude +4.23% to $101 — geopolitical risk premium piled onto inflation overhang", "url": "https://finance.yahoo.com/quote/CL%3DF/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7408.5,  "change_pct":  -1.24, "as_of": "2026-05-15T21:00:00Z" },
+    "nasdaq": { "level": 29125.2, "change_pct":  -1.54, "as_of": "2026-05-15T21:00:00Z" },
+    "vix":    { "level": 18.43,   "change_pct":   6.78, "as_of": "2026-05-15T21:00:00Z" },
+    "ust10y": { "level": 4.60,    "change_bps":  13,    "as_of": "2026-05-15T21:00:00Z" },
+    "dxy":    { "level": 99.27,   "change_pct":  -0.01, "as_of": "2026-05-15T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                   "value": 18.43, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",             "value": 5.13,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "Russell-2K daily",      "value": -2.44, "trigger_below": -2.0, "unit": "%" },
+    { "name": "Sectors red (of 11)",   "value": 10,    "trigger_above": 9,    "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Crushed -4.42% on AI/semis capex anxiety; first close back near $225 in weeks",     "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "Bucked the tape +0.68% — classic defensive mega-cap bid in risk-off",                  "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "Up +3.05% on the day — best-in-class quality grab while rest of tech sold",            "sentiment": "positive" },
+    { "ticker": "TSLA",  "note": "-4.75% — high-beta unwind, broke below 50DMA on heavy volume",                           "sentiment": "negative" },
+    { "ticker": "TSM",   "note": "-3.20% — Asia semis weakness amplified by overnight Nikkei -1.99% read",                "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA", "reason": "Still +21% above 200DMA despite today's flush; AI capex narrative under real question for first time in months",  "better_entry": "wait for VIX <16 AND $215 close" },
+    { "ticker": "PLTR", "reason": "Flat today (+0.19%) while peers got crushed — no flush yet; suggests forced-buyers exhausted, not retail capitulated", "better_entry": "$115 retest" },
+    { "ticker": "IWM",  "reason": "Small caps broke the structure today; -2.4% with weak relative-strength reading. Avoid chasing if Monday gaps up.", "better_entry": "wait for VIX <17 AND >$282 reclaim" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SOXX",
+      "direction": "short",
+      "thesis": "Semis ETF broke decisively below 50DMA; NVDA/AMD/AVGO led downside -3 to -6%. AI capex narrative cracked for first time in months. Momentum unwind has room to run if VIX stays above 18.",
+      "entry": "$235-240 on any bounce",
+      "invalidation": "$245 daily close",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Only S&P sector green today (+2.36%) driven by WTI breaking $100. If oil holds above $98, energy is the rare risk-on hide-out: inflation-hedge profile, FCF strong at this oil deck, sector neglected for months.",
+      "entry": "$58-59.50 on pullback",
+      "invalidation": "$56.50 close",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Russell 2000 led the downside -2.44%; small caps lack the mega-cap defensive bid and have the most domestic-economy sensitivity to rising long yields. Cleanest expression of breadth-breakdown thesis.",
+      "entry": "$282 on Monday bounce",
+      "invalidation": "$290 close",
+      "conviction": "high",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "A smart bear of THIS step-aside call would say: today was Friday-options-expiry mechanics plus a delta-hedging flush, not the start of a regime change. Friday OPEX often produces sharp moves that reverse Monday. VIX at 18.43 is elevated but nowhere near 'panic' (>25). If Asia stabilizes Sunday and tech catches a quality bid Monday, today's drawdown could be a textbook buy-the-dip — and stepping aside means missing it. The oil spike could also be a one-off geopolitical headline already in the price, rather than persistent inflation pressure. The fact that DXY barely moved (-0.01%) argues against a real macro break. Watch for a Monday gap-up reversing today's flush: if SPX reclaims 7,460 by midday Monday, step-aside is wrong.",
+  "body_mdx": "data/briefings/markets/2026-05-15-night.mdx"
+}

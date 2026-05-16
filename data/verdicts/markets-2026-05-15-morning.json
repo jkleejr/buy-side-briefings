@@ -1,0 +1,65 @@
+{
+  "routine": "markets",
+  "date": "2026-05-15",
+  "window": "morning",
+  "generated_at": "2026-05-15T11:32:14Z",
+  "is_seed": true,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD / SELECTIVE DAY",
+    "conviction": "medium",
+    "rationale_short": "Sentiment over-bullish into a thin breadth tape; valuation tolerable but no margin of safety.",
+    "supporting_data": [
+      { "label": "AAII Bulls 52%", "url": "https://www.aaii.com/sentimentsurvey" },
+      { "label": "CNN Fear & Greed 78 (Extreme Greed)", "url": "https://www.cnn.com/markets/fear-and-greed" },
+      { "label": "VIX 14.2 — flips bearish above 18", "url": "https://www.cboe.com/tradable_products/vix/" },
+      { "label": "S&P 500 fwd P/E 22.4x", "url": "https://www.factset.com/insight/earnings" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 5824.5,  "change_pct":  0.31, "as_of": "2026-05-15T11:30:00Z" },
+    "nasdaq": { "level": 18920.0, "change_pct":  0.52, "as_of": "2026-05-15T11:30:00Z" },
+    "vix":    { "level": 14.2,    "change_pct": -3.1,  "as_of": "2026-05-15T11:30:00Z" },
+    "ust10y": { "level": 4.18,    "change_bps":  2,    "as_of": "2026-05-15T11:30:00Z" },
+    "dxy":    { "level": 104.6,   "change_pct": -0.1,  "as_of": "2026-05-15T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "AAII Bull",    "value": 52,   "trigger_above": 55, "unit": "%" },
+    { "name": "Fear & Greed", "value": 78,   "trigger_above": 80, "unit": "" },
+    { "name": "VIX",          "value": 14.2, "trigger_above": 18, "unit": "" },
+    { "name": "Fwd P/E",      "value": 22.4, "trigger_above": 23, "unit": "x" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Holding $1,420 support after pre-market dip on margin commentary", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Antitrust headline ignored; constructive into earnings",            "sentiment": "positive" },
+    { "ticker": "AAPL",  "note": "Lagging mega-caps; iPhone unit estimates trimmed at Wedbush",       "sentiment": "negative" },
+    { "ticker": "TSLA",  "note": "Bouncing off 50DMA with thin volume",                                "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "PLTR", "reason": "RSI 81 across daily/weekly, parabolic since April",     "better_entry": "$28-30" },
+    { "ticker": "ARM",  "reason": "Lockup expiry overhang next month, no fresh catalyst",   "better_entry": "$110" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SOXX",
+      "direction": "short",
+      "thesis": "Semis stretched 2.5σ above 20DMA going into the PHLX index rebalance window. Mean reversion candidate.",
+      "entry": "$245-247",
+      "invalidation": "$252 close",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Energy lagged into oil's $84 base; constructive if WTI holds. Inflation hedge if 10Y breaks 4.25%.",
+      "entry": "$93.50-94.50",
+      "invalidation": "$91",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "A smart bear says: breadth has been narrow for months and the market has gone up anyway. AI capex cycle is in inning 3, not inning 9. Fading on sentiment alone has been a losing trade for two years. The Buy Verdict could be wrong if Q1 earnings broaden the rally beyond mega-caps — watch GOOGL print Friday.",
+  "body_mdx": "data/briefings/markets/2026-05-15-morning.mdx"
+}

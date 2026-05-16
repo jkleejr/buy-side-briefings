@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-05-15",
+  "notes": "Manual fallback values used when FRED is unavailable. Replace via FRED live fetch or update by hand when new prints drop.",
+  "fed": {
+    "funds_target_low": 4.25,
+    "funds_target_high": 4.50,
+    "funds_effective": 4.33,
+    "last_change_date": "2026-03-19",
+    "last_change_action": "Held",
+    "next_fomc_date": "2026-06-17",
+    "next_fomc_label": "Jun 16-17",
+    "balance_sheet_trillions": 6.74,
+    "balance_sheet_direction": "shrinking",
+    "fed_watch_url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+  },
+  "inflation": {
+    "cpi_yoy_pct": 2.4,
+    "cpi_release_date": "2026-05-13",
+    "core_cpi_yoy_pct": 3.1,
+    "core_pce_yoy_pct": 2.5,
+    "core_pce_release_date": "2026-04-30"
+  },
+  "labor": {
+    "unemployment_rate_pct": 4.2,
+    "unemployment_release_date": "2026-05-02",
+    "nonfarm_payrolls_thousands": 158,
+    "nonfarm_release_date": "2026-05-02"
+  },
+  "growth": {
+    "ism_manufacturing": 48.7,
+    "ism_manufacturing_release_date": "2026-05-01",
+    "ism_services": 51.3,
+    "ism_services_release_date": "2026-05-05",
+    "gdp_qoq_annualized_pct": 1.8,
+    "gdp_release_date": "2026-04-29"
+  },
+  "sentiment": {
+    "aaii_bull_pct": 52,
+    "aaii_bear_pct": 22,
+    "aaii_release_date": "2026-05-14",
+    "fear_greed_value": 78,
+    "fear_greed_label": "Extreme Greed"
+  },
+  "valuation": {
+    "sp500_forward_pe": 22.4,
+    "shiller_cape": 35.8
+  },
+  "crypto_cycle": {
+    "last_btc_halving_date": "2024-04-19",
+    "next_btc_halving_date": "2028-03-31",
+    "cycle_position_label": "Post-halving year 2"
+  }
+}

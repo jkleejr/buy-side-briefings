@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #e4e4e7;
+  --panel: #050505;
+  --panel-head: #0a0a0a;
+  --border: #262626;
+  --border-strong: #3f3f46;
+  --amber: #ffa500;
+  --amber-dim: #b45309;
+  --cyan: #22d3ee;
+  --up: #22c55e;
+  --down: #ef4444;
+  --dim: #71717a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-panel-head: var(--panel-head);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-amber-term: var(--amber);
+  --color-amber-dim: var(--amber-dim);
+  --color-cyan-term: var(--cyan);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --color-dim: var(--dim);
+  --font-sans: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+/* Tight, terminal-like baseline */
+body {
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+/* Blinking dot for "live" indicators */
+@keyframes term-blink {
+  0%, 60% { opacity: 1; }
+  61%, 100% { opacity: 0.25; }
+}
+.term-blink {
+  animation: term-blink 1.6s steps(2, end) infinite;
+}
+
+/* Thin scrollbar inside panels */
+.panel-scroll::-webkit-scrollbar { height: 6px; width: 6px; }
+.panel-scroll::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 0; }
+.panel-scroll::-webkit-scrollbar-track { background: transparent; }
+
+/* Learn-mode tooltips (CSS-only, controlled by data-learn on <html>) */
+.tip-host {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+.tip-bubble {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: max-content;
+  max-width: 280px;
+  border: 1px solid var(--amber);
+  background: #000;
+  color: var(--foreground);
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 1.45;
+  font-weight: 400;
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: normal;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+.tip-bubble--right {
+  left: auto;
+  right: 0;
+}
+[data-learn="on"] .tip-host {
+  cursor: help;
+  border-bottom: 1px dotted var(--amber);
+}
+[data-learn="on"] .tip-host:hover > .tip-bubble,
+[data-learn="on"] .tip-host:focus-within > .tip-bubble {
+  display: block;
+}
+/* Bubble stays hidden when learn mode is off */
+[data-learn="off"] .tip-bubble { display: none !important; }
+[data-learn="off"] .tip-host { border-bottom: none; cursor: inherit; }
