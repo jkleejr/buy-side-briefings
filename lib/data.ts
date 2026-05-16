@@ -84,6 +84,10 @@ export type BriefingMeta = {
   is_seed?: boolean;
   /** ISO timestamp the linked verdict was generated, if known. */
   generated_at?: string;
+  /** Verdict code from the linked verdict JSON, if any. */
+  verdict_code?: VerdictCode;
+  /** Short rationale from the linked verdict — useful for client-side search. */
+  verdict_rationale?: string;
 };
 
 export type Briefing = BriefingMeta & {
@@ -136,10 +140,17 @@ export function getAllBriefings(): BriefingMeta[] {
       const { data } = matter(raw);
       const verdictRef: string | undefined = data.verdict_ref;
       let generatedAt: string | undefined;
+      let verdictCode: VerdictCode | undefined;
+      let verdictRationale: string | undefined;
       if (verdictRef) {
         const verdictPath = path.join(verdictsDir, `${verdictRef}.json`);
-        const v = readJson<{ generated_at?: string }>(verdictPath);
+        const v = readJson<{
+          generated_at?: string;
+          verdict?: { code?: VerdictCode; rationale_short?: string };
+        }>(verdictPath);
         if (v?.generated_at) generatedAt = v.generated_at;
+        if (v?.verdict?.code) verdictCode = v.verdict.code;
+        if (v?.verdict?.rationale_short) verdictRationale = v.verdict.rationale_short;
       }
       all.push({
         slug,
@@ -150,6 +161,8 @@ export function getAllBriefings(): BriefingMeta[] {
         verdict_ref: verdictRef,
         is_seed: data.is_seed,
         generated_at: generatedAt,
+        verdict_code: verdictCode,
+        verdict_rationale: verdictRationale,
       });
     }
   }

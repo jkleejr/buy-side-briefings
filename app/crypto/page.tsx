@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
+import BigCompareChart from "@/components/big-compare-chart";
 import Panel from "@/components/panel";
 import { TICKER_TIPS } from "@/lib/glossary";
 
@@ -40,6 +41,17 @@ export default function CryptoPage() {
         color="#627eea"
         learn={TICKER_TIPS["ETH-USD"]}
         metaLabel="USD · YAHOO"
+      />
+
+      <BigCompareChart
+        code="VS-SPY"
+        title="BTC vs SPY — risk-sentiment lead/lag"
+        assets={[
+          { symbol: "BTC-USD", label: "BTC", color: "#f7931a" },
+          { symbol: "SPY", label: "SPY", color: "#22d3ee" },
+        ]}
+        learn="Bitcoin and the S&P 500 ETF, both normalized to 100 at the start of the window. Useful for seeing when crypto leads or lags risk-on/risk-off. Sustained divergence is rare and meaningful — if BTC is rallying hard while SPY is flat (or vice versa), one of them is wrong about risk appetite."
+        metaLabel="NORMALIZED 100"
       />
 
       <Panel code="EDU" title="How to think about crypto">

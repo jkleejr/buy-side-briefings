@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { WatchlistEntry, RecentMention } from "@/lib/data";
 import {
+  CHART_RANGES,
   INTRADAY_RANGES,
   pctForRange,
   type ChartRange,
@@ -35,17 +36,43 @@ export default function WatchlistCards({
   quoteBySymbol,
   mentions,
 }: Props) {
-  const [range, setRange] = useState<ChartRange>(initialRange);
+  // Lazy initializer: if URL has ?range=X, start with that; otherwise use the
+  // server-provided initial range. Runs once on first render — no flicker.
+  const [range, setRange] = useState<ChartRange>(() => {
+    if (typeof window === "undefined") return initialRange;
+    const params = new URLSearchParams(window.location.search);
+    const urlRange = params.get("range");
+    if (urlRange && (CHART_RANGES as readonly string[]).includes(urlRange)) {
+      return urlRange as ChartRange;
+    }
+    return initialRange;
+  });
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
+  // Persist range in the URL so the timeframe survives sharing/refreshing.
   useEffect(() => {
-    if (isFirstMount.current) {
+    if (typeof window === "undefined") return;
+    const url = new URL(window.location.href);
+    if (range === initialRange) {
+      url.searchParams.delete("range");
+    } else {
+      url.searchParams.set("range", range);
+    }
+    window.history.replaceState(null, "", url.toString());
+  }, [range, initialRange]);
+
+  useEffect(() => {
+    // Skip the very first render *only* when the chosen range matches what
+    // the server pre-fetched. If URL deep-linked a different range, fall
+    // through to fetch immediately.
+    if (isFirstMount.current && range === initialRange) {
       isFirstMount.current = false;
       return;
     }
+    isFirstMount.current = false;
     const id = ++reqId.current;
     setLoading(true);
     Promise.all(

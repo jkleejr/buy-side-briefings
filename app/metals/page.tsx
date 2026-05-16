@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
+import BigCompareChart from "@/components/big-compare-chart";
 import Panel from "@/components/panel";
 import { TICKER_TIPS } from "@/lib/glossary";
 
@@ -40,6 +41,18 @@ export default function MetalsPage() {
         color="#cbd5e1"
         learn={TICKER_TIPS["SLV"]}
         metaLabel="NYSE ARCA · YAHOO"
+      />
+
+      <BigCompareChart
+        code="GLD/SLV"
+        title="Gold / Silver ratio — risk-off signal"
+        assets={[
+          { symbol: "GLD", label: "GLD", color: "#fbbf24" },
+          { symbol: "SLV", label: "SLV", color: "#cbd5e1" },
+        ]}
+        asRatio
+        learn="GLD / SLV price ratio, normalized to 100 at the start of the window. Classic precious-metals signal: when the ratio rises, gold is outperforming silver — typically a risk-off / safe-haven signal because silver is more industrial. When the ratio falls, silver is leading — usually a risk-on / reflation tape. Historical mean is around 70–85."
+        metaLabel="RATIO · NORMALIZED 100"
       />
 
       <Panel code="EDU" title="How to think about precious metals">

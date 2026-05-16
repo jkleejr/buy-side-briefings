@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
+import BigCompareChart from "@/components/big-compare-chart";
 import UsPulsePanel from "@/components/us-pulse-panel";
 import Panel from "@/components/panel";
 import { TICKER_TIPS } from "@/lib/glossary";
@@ -27,6 +28,19 @@ export default function PulsePage() {
 
       {/* Current snapshot — same component as the dashboard. */}
       <UsPulsePanel />
+
+      {/* Breadth as a chart, not just today's spread. */}
+      <BigCompareChart
+        code="BREADTH"
+        title="RSP / SPY ratio — breadth over time"
+        assets={[
+          { symbol: "RSP", label: "RSP", color: "#84cc16" },
+          { symbol: "SPY", label: "SPY", color: "#22d3ee" },
+        ]}
+        asRatio
+        learn="Equal-weight S&P (RSP) divided by cap-weight S&P (SPY), normalized to 100 at the start of the window. Rising = the average stock outperforming the mega-caps (broad rally). Falling = mega-caps lifting the index while the average stock lags (narrow rally — historically fragile). The trend matters more than the absolute level."
+        metaLabel="RATIO · NORMALIZED 100"
+      />
 
       <Panel code="DEPTH" title="Each indicator, full chart">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
