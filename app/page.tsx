@@ -9,6 +9,7 @@ import SectorRotation from "@/components/sector-rotation";
 import FedPanel from "@/components/fed-panel";
 import CyclePanel from "@/components/cycle-panel";
 import UsIndicesPanel from "@/components/us-indices-panel";
+import TechStocksPanel from "@/components/tech-stocks-panel";
 import MetalsPanel from "@/components/metals-panel";
 import GlobalMarketsPanel from "@/components/global-markets-panel";
 import UsPulsePanel from "@/components/us-pulse-panel";
@@ -62,7 +63,12 @@ export default function Home() {
           <MetalsPanel />
         </div>
 
-        {/* Row 3 — US breadth & risk internals (the 6 numbers a desk trader scans first) */}
+        {/* Row 3 — Major tech stocks: Mag 7 + AVGO */}
+        <div className="lg:col-span-12">
+          <TechStocksPanel />
+        </div>
+
+        {/* Row 4 — US breadth & risk internals (the 6 numbers a desk trader scans first) */}
         <div className="lg:col-span-12">
           <UsPulsePanel />
         </div>
