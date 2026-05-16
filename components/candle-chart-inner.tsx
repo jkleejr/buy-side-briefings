@@ -6,8 +6,6 @@ import {
   ColorType,
   createChart,
   CrosshairMode,
-  type IChartApi,
-  type ISeriesApi,
   type Time,
   type UTCTimestamp,
 } from "lightweight-charts";
@@ -21,100 +19,32 @@ export type CandleChartProps = {
 /** Convert one of our ISO date strings to lightweight-charts' Time value. */
 function isoToTime(iso: string, intraday: boolean): Time {
   if (intraday) {
-    // Intraday bars need a UTC Unix timestamp in seconds.
     return Math.floor(new Date(iso).getTime() / 1000) as UTCTimestamp;
   }
-  // Daily/weekly/monthly bars use the YYYY-MM-DD form (UTC).
   return iso.slice(0, 10) as Time;
 }
 
+/**
+ * Recreate-on-data-change pattern. Heavier than the "create once + update"
+ * approach, but bullet-proof against the "compressed-to-left" issue caused
+ * by the chart initializing with 0 width before layout completes.
+ *
+ * Process per render:
+ *   1. Wait for the container to have positive dimensions
+ *   2. Create a fresh chart at the measured size
+ *   3. Add the candle series, push data, fitContent()
+ *   4. Set up ResizeObserver that applyOptions + fitContent on every change
+ *   5. On unmount or data change, remove and rebuild
+ */
 export default function CandleChartInner({ series, intraday }: CandleChartProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const chartRef = useRef<IChartApi | null>(null);
-  const seriesRef = useRef<ISeriesApi<"Candlestick"> | null>(null);
 
-  // Create the chart instance once on mount, dispose on unmount.
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    // Container width/height may be 0 on first render before layout finishes.
-    // Fall back to sane minimums so the chart is created with positive
-    // dimensions; the ResizeObserver below will fix the real size shortly.
-    const initialW = Math.max(container.clientWidth, 200);
-    const initialH = Math.max(container.clientHeight, 32);
-
-    const chart = createChart(container, {
-      width: initialW,
-      height: initialH,
-      layout: {
-        background: { type: ColorType.Solid, color: "#000000" },
-        textColor: "#71717a",
-        fontFamily: "var(--font-geist-mono), ui-monospace, monospace",
-        fontSize: 10,
-      },
-      grid: {
-        vertLines: { color: "#1f1f1f" },
-        horzLines: { color: "#1f1f1f" },
-      },
-      rightPriceScale: {
-        borderColor: "#262626",
-      },
-      timeScale: {
-        borderColor: "#262626",
-        timeVisible: !!intraday,
-        secondsVisible: false,
-      },
-      crosshair: {
-        mode: CrosshairMode.Magnet,
-        vertLine: { color: "#b45309", style: 2, labelBackgroundColor: "#b45309" },
-        horzLine: { color: "#b45309", style: 2, labelBackgroundColor: "#b45309" },
-      },
-      handleScroll: false,
-      handleScale: false,
-    });
-    chartRef.current = chart;
-
-    const candleSeries = chart.addSeries(CandlestickSeries, {
-      upColor: "#22c55e",
-      downColor: "#ef4444",
-      wickUpColor: "#22c55e",
-      wickDownColor: "#ef4444",
-      borderVisible: false,
-    });
-    seriesRef.current = candleSeries;
-
-    // Auto-resize when the container size changes (e.g., window resize, or
-    // the very first layout pass when the container actually gets measured).
-    // CRITICAL: refit content after every resize, otherwise the bars stay
-    // compressed in the leftmost portion of whatever the initial width was.
-    const ro = new ResizeObserver(([entry]) => {
-      const { width, height } = entry.contentRect;
-      if (width <= 0 || height <= 0) return;
-      chart.applyOptions({ width, height });
-      chart.timeScale().fitContent();
-    });
-    ro.observe(container);
-
-    return () => {
-      ro.disconnect();
-      chart.remove();
-      chartRef.current = null;
-      seriesRef.current = null;
-    };
-    // intraday only matters at create time for timeVisible; if it changes,
-    // the effect below repopulates data and applyOptions handles the rest.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  // Push data whenever the series prop changes.
-  useEffect(() => {
-    const candleSeries = seriesRef.current;
-    const chart = chartRef.current;
-    if (!candleSeries || !chart) return;
-
-    // Build OHLC bars; skip rows without full OHLC (lightweight-charts
-    // requires open/high/low/close).
+    // Build the OHLC data first — if there's nothing to draw, skip the
+    // expensive chart creation entirely.
     const data = series
       .filter((p) => p.open != null && p.high != null && p.low != null)
       .map((p) => ({
@@ -124,12 +54,86 @@ export default function CandleChartInner({ series, intraday }: CandleChartProps)
         low: p.low!,
         close: p.close,
       }));
+    if (data.length === 0) return;
 
-    candleSeries.setData(data);
-    chart.applyOptions({
-      timeScale: { timeVisible: !!intraday, secondsVisible: false },
-    });
-    chart.timeScale().fitContent();
+    let disposed = false;
+    let chart: ReturnType<typeof createChart> | null = null;
+    let ro: ResizeObserver | null = null;
+
+    // Defer chart creation to the next frame so the container has a real
+    // measured size (important when the user toggles between line/candle
+    // and the previous Recharts container just unmounted).
+    const init = () => {
+      if (disposed) return;
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      if (w <= 0 || h <= 0) {
+        // Keep waiting until layout completes
+        requestAnimationFrame(init);
+        return;
+      }
+
+      chart = createChart(container, {
+        width: w,
+        height: h,
+        layout: {
+          background: { type: ColorType.Solid, color: "#000000" },
+          textColor: "#71717a",
+          fontFamily: "var(--font-geist-mono), ui-monospace, monospace",
+          fontSize: 10,
+        },
+        grid: {
+          vertLines: { color: "#1f1f1f" },
+          horzLines: { color: "#1f1f1f" },
+        },
+        rightPriceScale: { borderColor: "#262626" },
+        timeScale: {
+          borderColor: "#262626",
+          timeVisible: !!intraday,
+          secondsVisible: false,
+          fixLeftEdge: true,
+          fixRightEdge: true,
+        },
+        crosshair: {
+          mode: CrosshairMode.Magnet,
+          vertLine: { color: "#b45309", style: 2, labelBackgroundColor: "#b45309" },
+          horzLine: { color: "#b45309", style: 2, labelBackgroundColor: "#b45309" },
+        },
+        handleScroll: false,
+        handleScale: false,
+      });
+
+      const candleSeries = chart.addSeries(CandlestickSeries, {
+        upColor: "#22c55e",
+        downColor: "#ef4444",
+        wickUpColor: "#22c55e",
+        wickDownColor: "#ef4444",
+        borderVisible: false,
+      });
+
+      candleSeries.setData(data);
+      // fitContent must be called AFTER setData. With fixLeftEdge/fixRightEdge
+      // on, the chart pins both edges of the data to the chart edges — bars
+      // fill the full horizontal space, never compressed to a corner.
+      chart.timeScale().fitContent();
+
+      ro = new ResizeObserver(([entry]) => {
+        if (!chart) return;
+        const { width, height } = entry.contentRect;
+        if (width <= 0 || height <= 0) return;
+        chart.applyOptions({ width, height });
+        chart.timeScale().fitContent();
+      });
+      ro.observe(container);
+    };
+
+    requestAnimationFrame(init);
+
+    return () => {
+      disposed = true;
+      ro?.disconnect();
+      chart?.remove();
+    };
   }, [series, intraday]);
 
   return (
