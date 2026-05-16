@@ -4,7 +4,6 @@ import "./globals.css";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import TickerStrip from "@/components/ticker-strip";
-import { ChartTypeProvider } from "@/components/chart-type-provider";
 import { getSiteUrl } from "@/lib/site-url";
 
 const geistMono = Geist_Mono({
@@ -59,12 +58,10 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: learnInitScript }} />
       </head>
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
-        <ChartTypeProvider>
-          <SiteHeader />
-          <TickerStrip />
-          <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 sm:px-2 sm:py-2">{children}</main>
-          <SiteFooter />
-        </ChartTypeProvider>
+        <SiteHeader />
+        <TickerStrip />
+        <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 sm:px-2 sm:py-2">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

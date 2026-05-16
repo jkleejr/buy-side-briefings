@@ -10,10 +10,8 @@ import {
 import { formatPct } from "@/lib/utils";
 import RangeSelector from "./range-selector";
 import AssetChart from "./asset-chart";
-import CandleChart from "./candle-chart";
 import Tooltip from "./tooltip";
 import { TICKER_TIPS } from "@/lib/glossary";
-import { useChartType } from "./chart-type-provider";
 
 export type IndexAsset = {
   symbol: string;
@@ -41,7 +39,6 @@ export default function UsIndicesClient({
   quoteBySymbol,
 }: Props) {
   const [range, setRange] = useState<ChartRange>(initialRange);
-  const { chartType } = useChartType();
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
   const reqId = useRef(0);
@@ -117,16 +114,12 @@ export default function UsIndicesClient({
                 <span className="text-[10px] text-[var(--dim)]">· {range}</span>
               </div>
               <div className="flex-1">
-                {chartType === "candle" ? (
-                  <CandleChart series={series} intraday={intraday} />
-                ) : (
-                  <AssetChart
-                    series={series}
-                    color={a.color}
-                    label={a.label}
-                    intraday={intraday}
-                  />
-                )}
+                <AssetChart
+                  series={series}
+                  color={a.color}
+                  label={a.label}
+                  intraday={intraday}
+                />
               </div>
             </div>
           );

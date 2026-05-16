@@ -10,8 +10,6 @@ import {
 import { formatPct } from "@/lib/utils";
 import RangeSelector from "./range-selector";
 import AssetChart from "./asset-chart";
-import CandleChart from "./candle-chart";
-import { useChartType } from "./chart-type-provider";
 
 type Quote = { price: number | null; changePct: number | null };
 
@@ -33,7 +31,6 @@ export default function SpyChartClient({
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [series, setSeries] = useState(initialSeries);
   const [loading, setLoading] = useState(false);
-  const { chartType } = useChartType();
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
@@ -70,7 +67,6 @@ export default function SpyChartClient({
 
   return (
     <div className="flex h-full flex-col">
-      {/* Price + timeframe row. Chart type comes from the global header toggle. */}
       <div className="flex flex-wrap items-center gap-2 px-2 pt-1.5 font-mono text-[11px]">
         <span className="text-[var(--amber-dim)]">{symbol}</span>
         <span className="text-[var(--foreground)]">
@@ -85,16 +81,12 @@ export default function SpyChartClient({
         </div>
       </div>
       <div className="flex-1">
-        {chartType === "candle" ? (
-          <CandleChart series={series} intraday={intraday} />
-        ) : (
-          <AssetChart
-            series={series}
-            color={color}
-            label={symbol}
-            intraday={intraday}
-          />
-        )}
+        <AssetChart
+          series={series}
+          color={color}
+          label={symbol}
+          intraday={intraday}
+        />
       </div>
     </div>
   );
