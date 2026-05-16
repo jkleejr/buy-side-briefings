@@ -30,7 +30,7 @@ export default function LearnToggle() {
       title={isOn ? "Hover-to-learn tooltips: ON. Click to disable." : "Hover-to-learn tooltips: OFF. Click to enable."}
       aria-pressed={isOn}
       className={
-        "flex items-center gap-1 border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-widest transition-colors " +
+        "flex items-center gap-1 border px-2 py-1 font-mono text-[10px] uppercase tracking-widest transition-colors sm:px-1.5 sm:py-0.5 " +
         (isOn
           ? "border-[var(--amber)] text-[var(--amber)] hover:bg-[rgba(255,165,0,0.08)]"
           : "border-[var(--border)] text-[var(--dim)] hover:text-[var(--amber)] hover:border-[var(--amber-dim)]")

@@ -12,6 +12,7 @@ import SpyChart from "@/components/spy-chart";
 import MetalsPanel from "@/components/metals-panel";
 import GlobalMarketsPanel from "@/components/global-markets-panel";
 import UsPulsePanel from "@/components/us-pulse-panel";
+import CalendarPanel from "@/components/calendar-panel";
 import Panel from "@/components/panel";
 
 export const revalidate = 300;
@@ -66,7 +67,12 @@ export default function Home() {
           <UsPulsePanel />
         </div>
 
-        {/* Row 4 — Global markets (overnight & European sessions) */}
+        {/* Row 4 — Week-ahead calendar: upcoming earnings + macro releases */}
+        <div className="lg:col-span-12">
+          <CalendarPanel />
+        </div>
+
+        {/* Row 5 — Global markets (overnight & European sessions) */}
         <div className="lg:col-span-12">
           <GlobalMarketsPanel />
         </div>

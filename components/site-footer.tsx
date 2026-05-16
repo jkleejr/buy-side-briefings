@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function SiteFooter() {
   return (
     <footer className="border-t border-[var(--border)] bg-black">
-      <div className="mx-auto flex max-w-[1600px] flex-wrap items-center gap-3 px-2 py-1.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
+      <div className="mx-auto flex max-w-[1600px] flex-wrap items-center gap-x-3 gap-y-1 px-2 py-1.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
         <span className="text-[var(--amber-dim)]">DSCLM</span>
-        <span className="normal-case tracking-normal text-[var(--dim)]">
+        <span className="basis-full normal-case tracking-normal text-[var(--dim)] sm:basis-auto sm:flex-1">
           Educational analysis only. Not investment advice. Past performance does not guarantee
           future results.
         </span>

@@ -1,8 +1,13 @@
 import Link from "next/link";
 import { getAllMarketsVerdicts, type MarketsVerdict } from "@/lib/data";
 import { getSpxDailyCloses } from "@/lib/markets";
-import { scoreVerdict, type ReturnWindow, type VerdictScore } from "@/lib/verdict-scoring";
-import { formatPct, verdictColor } from "@/lib/utils";
+import {
+  aggregateStats,
+  scoreVerdict,
+  type ReturnWindow,
+  type VerdictScore,
+} from "@/lib/verdict-scoring";
+import { formatBriefingTitle, formatPct, verdictColor } from "@/lib/utils";
 import Panel from "@/components/panel";
 import Tooltip from "@/components/tooltip";
 import VerdictMarkerChart, {
@@ -91,6 +96,9 @@ export default async function TrackRecordPage() {
   }
   const hitRate = scored > 0 ? (hits / scored) * 100 : null;
 
+  // Per-code breakdown, best/worst, current streak — all computed once.
+  const stats = aggregateStats(rows);
+
   // Build markers for the chart.
   const markers: VerdictMarker[] = rows.map(({ v, score }) => ({
     date: score.base_date ?? v.date,
@@ -140,6 +148,173 @@ export default async function TrackRecordPage() {
           <div className="font-mono text-[10px] text-[var(--dim)]">
             {scored === 0 ? "no scored windows yet" : `${hits}/${scored} windows`}
           </div>
+        </div>
+      </div>
+
+      {/* ---- Per-code performance + best/worst + streak (richer track stats) ---- */}
+      <div className="grid grid-cols-1 gap-1 lg:grid-cols-12">
+        <div className="lg:col-span-8">
+          <Panel
+            code="PERF"
+            title="Performance by Verdict Code"
+            learn="For each verdict code, the number issued, +5d hit rate (right / wrong / pending), and average SPX return at +5d. BUY is graded right when SPX is up; BEARISH right when down; STEP ASIDE right when SPX is flat or down (≤+1%). HOLD is informational only and isn't graded."
+          >
+            <table className="w-full font-mono text-[11px]">
+              <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
+                <tr>
+                  <th className="px-2 py-1 text-left font-normal">Code</th>
+                  <th className="px-2 py-1 text-right font-normal">N</th>
+                  <th className="px-2 py-1 text-right font-normal">+5d Right</th>
+                  <th className="px-2 py-1 text-right font-normal">+5d Wrong</th>
+                  <th className="px-2 py-1 text-right font-normal">Pending</th>
+                  <th className="px-2 py-1 text-right font-normal">+5d Hit %</th>
+                  <th className="px-2 py-1 text-right font-normal">Avg +5d SPX</th>
+                </tr>
+              </thead>
+              <tbody>
+                {(["buy", "hold", "step_aside", "bearish"] as const).map((code) => {
+                  const cs = stats.by_code[code];
+                  const color = verdictColor(code);
+                  const scoredN = cs.d5_right + cs.d5_wrong;
+                  const hitPct = scoredN > 0 ? (cs.d5_right / scoredN) * 100 : null;
+                  const avg = cs.avg_d5_pct;
+                  const avgCls =
+                    avg === null
+                      ? "text-[var(--dim)]"
+                      : avg > 0
+                        ? "text-[var(--up)]"
+                        : avg < 0
+                          ? "text-[var(--down)]"
+                          : "text-[var(--dim)]";
+                  return (
+                    <tr key={code} className="border-t border-[var(--border)]">
+                      <td className={`px-2 py-0.5 uppercase ${color.text}`}>
+                        {code.replace("_", " ")}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
+                        {cs.count}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--up)]">
+                        {code === "hold" ? "—" : cs.d5_right}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--down)]">
+                        {code === "hold" ? "—" : cs.d5_wrong}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--dim)]">
+                        {cs.d5_pending}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
+                        {code === "hold"
+                          ? "—"
+                          : hitPct === null
+                            ? "—"
+                            : `${hitPct.toFixed(0)}%`}
+                      </td>
+                      <td className={`px-2 py-0.5 text-right ${avgCls}`}>
+                        {avg === null ? "—" : formatPct(avg)}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Panel>
+        </div>
+
+        <div className="lg:col-span-4">
+          <Panel
+            code="HILO"
+            title="Best & Worst Call · Streak"
+            learn="The verdict with the strongest direction-adjusted +20d outcome (BEST), the verdict with the worst outcome (WORST), and the current consecutive same-result streak at the +5d window (STREAK). Direction-adjusted means a +5% SPX move counts as +5% for a BUY call but -5% for a BEARISH call. Requires +20d windows to be completed."
+          >
+            <div className="divide-y divide-[var(--border)]">
+              {/* Best */}
+              <div className="px-2 py-1.5">
+                <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--up)]">
+                  Best Call
+                </div>
+                {stats.best_call ? (
+                  <>
+                    <Link
+                      href={`/briefings/${stats.best_call.v.routine}/${stats.best_call.v.date}-${stats.best_call.v.window}`}
+                      className="mt-0.5 block font-mono text-[12px] text-[var(--foreground)] hover:underline"
+                    >
+                      {stats.best_call.v.verdict.emoji} {stats.best_call.v.verdict.label}
+                    </Link>
+                    <div className="font-mono text-[10px] text-[var(--dim)]">
+                      {formatBriefingTitle({
+                        routine: stats.best_call.v.routine,
+                        date: stats.best_call.v.date,
+                        window: stats.best_call.v.window,
+                      })}
+                    </div>
+                    <div className="mt-0.5 font-mono text-[11px] text-[var(--up)]">
+                      +20d adjusted return {formatPct(stats.best_call.pct)}
+                    </div>
+                  </>
+                ) : (
+                  <div className="mt-0.5 font-mono text-[11px] text-[var(--dim)]">
+                    no +20d windows complete yet
+                  </div>
+                )}
+              </div>
+
+              {/* Worst */}
+              <div className="px-2 py-1.5">
+                <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--down)]">
+                  Worst Call
+                </div>
+                {stats.worst_call ? (
+                  <>
+                    <Link
+                      href={`/briefings/${stats.worst_call.v.routine}/${stats.worst_call.v.date}-${stats.worst_call.v.window}`}
+                      className="mt-0.5 block font-mono text-[12px] text-[var(--foreground)] hover:underline"
+                    >
+                      {stats.worst_call.v.verdict.emoji} {stats.worst_call.v.verdict.label}
+                    </Link>
+                    <div className="font-mono text-[10px] text-[var(--dim)]">
+                      {formatBriefingTitle({
+                        routine: stats.worst_call.v.routine,
+                        date: stats.worst_call.v.date,
+                        window: stats.worst_call.v.window,
+                      })}
+                    </div>
+                    <div className="mt-0.5 font-mono text-[11px] text-[var(--down)]">
+                      +20d adjusted return {formatPct(stats.worst_call.pct)}
+                    </div>
+                  </>
+                ) : (
+                  <div className="mt-0.5 font-mono text-[11px] text-[var(--dim)]">
+                    no +20d windows complete yet
+                  </div>
+                )}
+              </div>
+
+              {/* Streak */}
+              <div className="px-2 py-1.5">
+                <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
+                  Current Streak · +5d
+                </div>
+                <div
+                  className={
+                    "mt-0.5 font-mono text-[14px] " +
+                    (stats.streak_d5.kind === "right"
+                      ? "text-[var(--up)]"
+                      : stats.streak_d5.kind === "wrong"
+                        ? "text-[var(--down)]"
+                        : "text-[var(--dim)]")
+                  }
+                >
+                  {stats.streak_d5.kind === "none"
+                    ? "—"
+                    : `${stats.streak_d5.length} ${stats.streak_d5.kind} in a row`}
+                </div>
+                <div className="font-mono text-[10px] text-[var(--dim)]">
+                  oldest-to-newest at +5d, skipping HOLDs and pending
+                </div>
+              </div>
+            </div>
+          </Panel>
         </div>
       </div>
 

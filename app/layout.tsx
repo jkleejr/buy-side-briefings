@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
         <SiteHeader />
         <TickerStrip />
-        <main className="mx-auto w-full max-w-[1600px] flex-1 px-2 py-2">{children}</main>
+        <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 sm:px-2 sm:py-2">{children}</main>
         <SiteFooter />
       </body>
     </html>

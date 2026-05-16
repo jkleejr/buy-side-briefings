@@ -68,7 +68,7 @@ function ChartTooltip({
 export default function VerdictMarkerChart({ series, markers }: Props) {
   if (series.length === 0) {
     return (
-      <div className="flex h-full min-h-[260px] items-center justify-center p-4 text-center font-mono text-[11px] text-[var(--dim)]">
+      <div className="flex h-full min-h-[200px] sm:h-[260px] items-center justify-center p-4 text-center font-mono text-[11px] text-[var(--dim)]">
         No SPX history available.
       </div>
     );
@@ -90,7 +90,7 @@ export default function VerdictMarkerChart({ series, markers }: Props) {
     .filter((m): m is VerdictMarker & { close: number } => m !== null);
 
   return (
-    <div className="h-[260px] w-full p-2">
+    <div className="h-[200px] sm:h-[260px] w-full p-2">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={series} margin={{ top: 10, right: 8, left: 0, bottom: 0 }}>
           <CartesianGrid stroke="#1f1f1f" strokeDasharray="2 2" />

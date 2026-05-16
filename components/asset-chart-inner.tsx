@@ -73,7 +73,7 @@ export default function AssetChartInner({ series, color, label, intraday }: Asse
   const gradientId = `grad-${label.replace(/[^a-z0-9]/gi, "")}`;
 
   return (
-    <div className="h-[150px] w-full">
+    <div className="h-[110px] w-full sm:h-[150px]">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={series} margin={{ top: 8, right: 6, left: 0, bottom: 0 }}>
           <defs>

@@ -44,7 +44,7 @@ export default async function BigAssetChart({
       learn={learn}
       meta={metaLabel ? <span>{metaLabel}</span> : undefined}
     >
-      <div className="min-h-[320px]">
+      <div className="min-h-[240px] sm:min-h-[320px]">
         <SpyChartClient
           initialRange={INITIAL_RANGE}
           initialSeries={series}

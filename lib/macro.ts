@@ -3,6 +3,7 @@ import path from "node:path";
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
 const FRED_BASE = "https://api.stlouisfed.org/fred/series/observations";
+const FRED_RELEASE_DATES_URL = "https://api.stlouisfed.org/fred/release/dates";
 
 export type MacroSnapshot = {
   as_of: string;
@@ -172,4 +173,74 @@ export async function getMacroSnapshot(): Promise<MacroSnapshot> {
       as_of: spread2s10s.date ?? ust10y.date,
     },
   };
+}
+
+// ---- Upcoming macro releases (FRED /release/dates) -------------------------
+//
+// FRED publishes release calendars per "release" (each release covers one or
+// more series). We hard-map the most-watched releases here. Returns the next
+// scheduled release date for each, in date-ascending order.
+
+export type UpcomingRelease = {
+  id: number;
+  name: string;
+  abbrev: string;
+  date: string; // YYYY-MM-DD
+  /** Lower = more important — used for sort tie-breaking only. */
+  priority: number;
+};
+
+// Curated list — only the releases that materially move risk-asset pricing.
+// IDs come from https://fred.stlouisfed.org/releases — keep this list short.
+const TRACKED_RELEASES: Array<{ id: number; name: string; abbrev: string; priority: number }> = [
+  { id: 10,  name: "Consumer Price Index",                  abbrev: "CPI",  priority: 1 },
+  { id: 21,  name: "Personal Income & Outlays (Core PCE)",   abbrev: "PCE",  priority: 1 },
+  { id: 50,  name: "Employment Situation (NFP & Unemployment)", abbrev: "NFP",  priority: 1 },
+  { id: 53,  name: "Gross Domestic Product",                abbrev: "GDP",  priority: 2 },
+  { id: 14,  name: "Retail Sales",                          abbrev: "RTL",  priority: 2 },
+  { id: 175, name: "FOMC Decision",                          abbrev: "FOMC", priority: 1 },
+];
+
+type FredReleaseDatesResp = {
+  release_dates?: Array<{ release_id: number; date: string }>;
+};
+
+async function fredReleaseNext(
+  id: number,
+  apiKey: string,
+): Promise<string | null> {
+  const today = new Date().toISOString().slice(0, 10);
+  const url = `${FRED_RELEASE_DATES_URL}?release_id=${id}&api_key=${apiKey}&file_type=json&include_release_dates_with_no_data=true&realtime_start=${today}&sort_order=asc&limit=1`;
+  try {
+    const res = await fetch(url, { next: { revalidate: 21600 } }); // 6h cache
+    if (!res.ok) return null;
+    const json = (await res.json()) as FredReleaseDatesResp;
+    return json.release_dates?.[0]?.date ?? null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Return upcoming key macro releases, sorted by date ascending. Limited to
+ * those within `daysAhead` from today. Drops entries with no scheduled date.
+ */
+export async function getUpcomingReleases(daysAhead = 14): Promise<UpcomingRelease[]> {
+  const apiKey = process.env.FRED_API_KEY;
+  if (!apiKey) return [];
+  const cutoffMs = Date.now() + daysAhead * 86_400_000;
+
+  const results = await Promise.all(
+    TRACKED_RELEASES.map(async (r) => {
+      const date = await fredReleaseNext(r.id, apiKey);
+      if (!date) return null;
+      const ts = new Date(`${date}T00:00:00Z`).getTime();
+      if (isNaN(ts) || ts > cutoffMs) return null;
+      return { id: r.id, name: r.name, abbrev: r.abbrev, date, priority: r.priority };
+    }),
+  );
+
+  return results
+    .filter((r): r is UpcomingRelease => r !== null)
+    .sort((a, b) => (a.date.localeCompare(b.date) || a.priority - b.priority));
 }

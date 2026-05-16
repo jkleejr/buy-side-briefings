@@ -46,7 +46,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
             <Link
               href={`/briefings/${b.routine}/${b.slug}`}
               title={fullTitle}
-              className="flex items-center gap-2 px-2 py-1.5 font-mono text-[11px] hover:bg-[var(--panel-head)]"
+              className="flex items-center gap-2 px-2 py-2.5 font-mono text-[11px] hover:bg-[var(--panel-head)] sm:py-1.5"
             >
               <span className="w-9 shrink-0 text-[var(--amber-dim)]">
                 {ROUTINE_LABEL[b.routine] ?? b.routine.slice(0, 3).toUpperCase()}

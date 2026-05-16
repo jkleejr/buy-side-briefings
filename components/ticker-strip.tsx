@@ -10,7 +10,7 @@ export default async function TickerStrip() {
 
   return (
     <div className="w-full border-b border-[var(--border)] bg-[var(--panel-head)]">
-      <div className="mx-auto flex max-w-[1600px] flex-wrap items-center gap-x-5 gap-y-1 px-2 py-1 font-mono text-[11px]">
+      <div className="panel-scroll mx-auto flex max-w-[1600px] flex-nowrap items-center gap-x-5 overflow-x-auto px-2 py-1 font-mono text-[11px] md:flex-wrap md:gap-y-1 md:overflow-visible">
         {quotes.map((q) => {
           const up = (q.changePct ?? 0) > 0;
           const down = (q.changePct ?? 0) < 0;

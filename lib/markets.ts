@@ -209,6 +209,63 @@ export async function getChartSeries(
   }
 }
 
+// ---- Earnings calendar (Yahoo quoteSummary calendarEvents) -----------------
+
+export type UpcomingEarnings = {
+  symbol: string;
+  date: string; // ISO date (YYYY-MM-DD)
+  /** Estimate for the upcoming report, if Yahoo provides one. */
+  epsEstimate?: number;
+  /** "amc" / "bmo" timing if Yahoo provides it, otherwise undefined. */
+  timing?: string;
+};
+
+/**
+ * Fetch upcoming earnings dates for a list of symbols. Returns only those with
+ * a future earnings date within the next ~14 days. Sorted ascending by date.
+ */
+export async function getUpcomingEarnings(
+  symbols: string[],
+  daysAhead = 14,
+): Promise<UpcomingEarnings[]> {
+  const cutoff = Date.now() + daysAhead * 86_400_000;
+  const results = await Promise.all(
+    symbols.map(async (symbol) => {
+      try {
+        const sum = (await yahooFinance.quoteSummary(symbol, {
+          modules: ["calendarEvents"],
+        })) as {
+          calendarEvents?: {
+            earnings?: {
+              earningsDate?: Date[];
+              earningsCallDate?: Date[];
+              earningsAverage?: number;
+            };
+          };
+        };
+        const dates = sum?.calendarEvents?.earnings?.earningsDate ?? [];
+        // Yahoo often returns a range (2 dates). Take the earliest future one.
+        const future = dates
+          .map((d) => (d instanceof Date ? d : new Date(d)))
+          .filter((d) => !isNaN(d.getTime()) && d.getTime() > Date.now() && d.getTime() < cutoff)
+          .sort((a, b) => a.getTime() - b.getTime());
+        if (future.length === 0) return null;
+        return {
+          symbol,
+          date: future[0].toISOString().slice(0, 10),
+          epsEstimate: sum?.calendarEvents?.earnings?.earningsAverage,
+        } as UpcomingEarnings;
+      } catch (err) {
+        console.error(`[earnings] fetch failed for ${symbol}:`, err);
+        return null;
+      }
+    }),
+  );
+  return results
+    .filter((r): r is UpcomingEarnings => r !== null)
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
 export async function getQuote(symbol: string): Promise<LiveQuote | null> {
   try {
     const q = (await yahooFinance.quote(symbol)) as YQuote | YQuote[];

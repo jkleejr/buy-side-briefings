@@ -73,7 +73,9 @@ body {
   z-index: 9999;
   display: none;
   width: max-content;
-  max-width: 280px;
+  /* Viewport-aware: never exceed screen width minus a margin. Works on mobile
+     so the tooltip stays readable even when the host is near the right edge. */
+  max-width: min(280px, calc(100vw - 24px));
   border: 1px solid var(--amber);
   background: #000;
   color: var(--foreground);
@@ -87,6 +89,12 @@ body {
   white-space: normal;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.8);
   pointer-events: none;
+}
+
+/* Touch devices: tap-to-toggle (focus-within already in the spec below). The
+   :focus-within rule fires on tap because tip-host has tabIndex=0. */
+@media (hover: none) {
+  [data-learn="on"] .tip-host { cursor: pointer; }
 }
 .tip-bubble--right {
   left: auto;
