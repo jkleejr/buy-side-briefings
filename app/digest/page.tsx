@@ -2,8 +2,15 @@ import Link from "next/link";
 import { getAllMarketsVerdicts, type MarketsVerdict } from "@/lib/data";
 import { getSpxDailyCloses } from "@/lib/markets";
 import { scoreVerdict, type VerdictScore } from "@/lib/verdict-scoring";
-import { formatPct, verdictColor, formatBriefingTitle, formatRelativeTime } from "@/lib/utils";
+import {
+  formatPct,
+  verdictColor,
+  formatBriefingTitle,
+  formatRelativeTime,
+  getVerdictExplanation,
+} from "@/lib/utils";
 import Panel from "@/components/panel";
+import Tooltip from "@/components/tooltip";
 import VerdictMarkerChart, { type VerdictMarker } from "@/components/verdict-marker-chart";
 
 export const metadata = { title: "Week in Review — Buy-Side Briefings" };
@@ -177,7 +184,11 @@ export default async function DigestPage() {
                       className={`inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-wide ${color.text} hover:underline`}
                     >
                       <span>{v.verdict.emoji}</span>
-                      <span>{v.verdict.label}</span>
+                      <span>
+                        <Tooltip text={getVerdictExplanation(v.verdict.code)}>
+                          {v.verdict.label}
+                        </Tooltip>
+                      </span>
                     </Link>
                     <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
                       {title}

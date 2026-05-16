@@ -7,7 +7,12 @@ import {
   type ReturnWindow,
   type VerdictScore,
 } from "@/lib/verdict-scoring";
-import { formatBriefingTitle, formatPct, verdictColor } from "@/lib/utils";
+import {
+  formatBriefingTitle,
+  formatPct,
+  getVerdictExplanation,
+  verdictColor,
+} from "@/lib/utils";
 import Panel from "@/components/panel";
 import Tooltip from "@/components/tooltip";
 import VerdictMarkerChart, {
@@ -239,7 +244,10 @@ export default async function TrackRecordPage() {
                       href={`/briefings/${stats.best_call.v.routine}/${stats.best_call.v.date}-${stats.best_call.v.window}`}
                       className="mt-0.5 block font-mono text-[12px] text-[var(--foreground)] hover:underline"
                     >
-                      {stats.best_call.v.verdict.emoji} {stats.best_call.v.verdict.label}
+                      {stats.best_call.v.verdict.emoji}{" "}
+                      <Tooltip text={getVerdictExplanation(stats.best_call.v.verdict.code)}>
+                        {stats.best_call.v.verdict.label}
+                      </Tooltip>
                     </Link>
                     <div className="font-mono text-[10px] text-[var(--dim)]">
                       {formatBriefingTitle({
@@ -270,7 +278,10 @@ export default async function TrackRecordPage() {
                       href={`/briefings/${stats.worst_call.v.routine}/${stats.worst_call.v.date}-${stats.worst_call.v.window}`}
                       className="mt-0.5 block font-mono text-[12px] text-[var(--foreground)] hover:underline"
                     >
-                      {stats.worst_call.v.verdict.emoji} {stats.worst_call.v.verdict.label}
+                      {stats.worst_call.v.verdict.emoji}{" "}
+                      <Tooltip text={getVerdictExplanation(stats.worst_call.v.verdict.code)}>
+                        {stats.worst_call.v.verdict.label}
+                      </Tooltip>
                     </Link>
                     <div className="font-mono text-[10px] text-[var(--dim)]">
                       {formatBriefingTitle({
@@ -362,7 +373,11 @@ export default async function TrackRecordPage() {
                           className={`inline-flex items-center gap-1.5 ${color.text} hover:underline`}
                         >
                           <span>{v.verdict.emoji}</span>
-                          <span>{v.verdict.label}</span>
+                          <span>
+                            <Tooltip text={getVerdictExplanation(v.verdict.code)}>
+                              {v.verdict.label}
+                            </Tooltip>
+                          </span>
                         </Link>
                       </td>
                       <td className="px-2 py-1 text-right">

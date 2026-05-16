@@ -125,6 +125,26 @@ export function formatBriefingTitle(b: {
   return `${routineLabel} · ${day}, ${dateStr}${win}`;
 }
 
+/**
+ * Plain-English explanation of what each verdict code means and how it's
+ * graded. Surfaced as a hover-tooltip wherever a verdict label is displayed.
+ */
+const VERDICT_EXPLANATIONS: Record<string, string> = {
+  buy: "🟢 BUY — actively bullish. The analyst expects SPX up over the briefing's horizon (typically days to weeks). Usually paired with named entry levels and an invalidation. Graded RIGHT if SPX is up at the +1d/+5d/+20d marks.",
+  hold: "🟡 HOLD — no directional call. Either the setup is unclear or the bull and bear cases balance out. Informational rather than positioning advice; not graded right or wrong because there's no directional bet to score.",
+  step_aside:
+    "🟠 STEP ASIDE — cautious. Not actively short, but explicitly not chasing. 'Take some risk off, don't add new longs, wait for better entry.' Graded RIGHT if SPX is flat or down (i.e., you didn't miss meaningful upside by stepping aside).",
+  bearish:
+    "🔴 BEARISH — actively negative. The analyst expects SPX down. Often paired with a specific short, hedge, or inverse-ETF idea. Graded RIGHT if SPX is down at the +1d/+5d/+20d marks.",
+};
+
+export function getVerdictExplanation(code: string): string {
+  return (
+    VERDICT_EXPLANATIONS[code] ??
+    `Verdict code "${code}". Hover the labels on the dashboard or About page for an explanation.`
+  );
+}
+
 export function verdictColor(code: string): {
   bg: string;
   text: string;

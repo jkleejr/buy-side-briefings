@@ -9,6 +9,7 @@ import {
   cn,
   formatBriefingTitle,
   formatPct,
+  getVerdictExplanation,
   verdictColor,
   formatRelativeTime,
 } from "@/lib/utils";
@@ -147,7 +148,9 @@ export default async function BriefingPage({
           >
             <span>{verdict.verdict.emoji}</span>
             <span className="font-semibold uppercase tracking-wide">
-              {verdict.verdict.label}
+              <Tooltip text={getVerdictExplanation(verdict.verdict.code)}>
+                {verdict.verdict.label}
+              </Tooltip>
             </span>
             <span className="text-[10px] text-[var(--dim)]">
               · generated {formatRelativeTime(verdict.generated_at)}

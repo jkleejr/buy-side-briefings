@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { MarketsVerdict } from "@/lib/data";
-import { cn, formatRelativeTime, verdictColor } from "@/lib/utils";
+import { cn, formatRelativeTime, getVerdictExplanation, verdictColor } from "@/lib/utils";
 import Panel from "./panel";
+import Tooltip from "./tooltip";
 
 export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
   const color = verdictColor(verdict.verdict.code);
@@ -30,8 +31,10 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
             {verdict.verdict.emoji}
           </div>
           <div className="min-w-0 flex-1">
-            <div className={cn("truncate font-mono text-base font-bold uppercase tracking-wide", color.text)}>
-              {verdict.verdict.label}
+            <div className={cn("font-mono text-base font-bold uppercase tracking-wide", color.text)}>
+              <Tooltip text={getVerdictExplanation(verdict.verdict.code)}>
+                {verdict.verdict.label}
+              </Tooltip>
             </div>
             <div className="mt-0.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
               Conviction:{" "}

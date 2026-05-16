@@ -4,16 +4,41 @@ import "./globals.css";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import TickerStrip from "@/components/ticker-strip";
+import { getSiteUrl } from "@/lib/site-url";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
+const SITE_URL = getSiteUrl();
+
 export const metadata: Metadata = {
-  title: "BSB Terminal — Buy-Side Briefings",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "BSB Terminal — Buy-Side Briefings",
+    template: "%s — Buy-Side Briefings",
+  },
   description:
     "Opinionated, cited, auditable market briefings. Tells you when NOT to buy as much as when to buy. Not investment advice.",
+  openGraph: {
+    type: "website",
+    siteName: "Buy-Side Briefings",
+    title: "BSB Terminal — Buy-Side Briefings",
+    description:
+      "Opinionated, cited, auditable market briefings. Buy-side voice — tells you when NOT to buy as much as when to buy.",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BSB Terminal — Buy-Side Briefings",
+    description:
+      "Opinionated, cited, auditable market briefings. Buy-side voice — tells you when NOT to buy.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const learnInitScript = `(function(){try{var v=localStorage.getItem('learnMode');document.documentElement.setAttribute('data-learn', v==='off'?'off':'on');}catch(e){document.documentElement.setAttribute('data-learn','on');}})();`;
