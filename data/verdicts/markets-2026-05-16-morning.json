@@ -1,0 +1,76 @@
+{
+  "routine": "markets",
+  "date": "2026-05-16",
+  "window": "morning",
+  "generated_at": "2026-05-16T06:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — CONFIRMED (weekend continuation)",
+    "conviction": "medium",
+    "rationale_short": "Friday's regime-trigger flush is being confirmed by the weekend tape — crypto has continued lower through the only live session, with no bullish catalyst emerging in the 12 hours since the Friday close briefing. Conviction firms; the Monday open is more likely to gap down or grind sideways than rip-reverse.",
+    "supporting_data": [
+      { "label": "BTC -0.5% since Friday close ($78,917 → $78,514) — weekend continuation, not relief bounce", "url": "https://finance.yahoo.com/quote/BTC-USD/" },
+      { "label": "ETH -0.6% since Friday close ($2,222 → $2,208) — same pattern as BTC, no decoupling", "url": "https://finance.yahoo.com/quote/ETH-USD/" },
+      { "label": "VIX closed Friday at 18.43 — broke the 18 trigger; no weekend session to compress it", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "30Y yield 5.13% — still in secular-high zone; long bonds offer no relief signal", "url": "https://finance.yahoo.com/quote/%5ETYX/" },
+      { "label": "DXY 99.27 — flat, no flight-to-USD bid yet (suggests not full panic, just deleveraging)", "url": "https://finance.yahoo.com/quote/DX-Y.NYB/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7408.5,  "change_pct":  -1.24, "as_of": "2026-05-15T21:00:00Z" },
+    "nasdaq": { "level": 29125.2, "change_pct":  -1.54, "as_of": "2026-05-15T21:00:00Z" },
+    "vix":    { "level": 18.43,   "change_pct":   6.78, "as_of": "2026-05-15T21:00:00Z" },
+    "ust10y": { "level": 4.60,    "change_bps":  13,    "as_of": "2026-05-15T21:00:00Z" },
+    "dxy":    { "level": 99.27,   "change_pct":  -0.01, "as_of": "2026-05-15T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                  "value": 18.43, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",            "value": 5.13,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "BTC weekend tape",     "value": -0.5,  "trigger_below": 0,    "unit": "%" },
+    { "name": "Russell-2K Friday",    "value": -2.44, "trigger_below": -2.0, "unit": "%" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Friday flush -4.42%; weekend crypto continuation suggests no Monday relief rally. Wait for $215 or VIX <16.", "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "The defensive trade that worked Friday (+0.68%); likely to stay bid Monday if regime stays risk-off",            "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "Same defensive setup as AAPL; was +3.05% Friday. Quality flight may continue.",                                   "sentiment": "positive" },
+    { "ticker": "TSLA",  "note": "Crypto-correlated high-beta — weekend BTC weakness suggests more downside before stabilizing",                   "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA", "reason": "Still +21% above 200DMA after Friday's flush; weekend BTC continuation reinforces the no-relief thesis",    "better_entry": "$215 close OR VIX <16" },
+    { "ticker": "IWM",  "reason": "Russell broke structure Friday; small caps lack defensive bid and overnight tape didn't recover",            "better_entry": "VIX <17 AND >$282 reclaim" },
+    { "ticker": "PLTR", "reason": "Still no flush — flat Friday while peers cratered. Demand exhaustion signal hasn't appeared yet",             "better_entry": "$115 retest" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Friday's breadth-breakdown thesis carrying into weekend. Crypto continuation reinforces risk-off persistence. Smallcaps + rising 30Y yields = worst combo. HIGHEST-conviction setup of the three.",
+      "entry": "$282 on any Monday open bounce",
+      "invalidation": "$290 daily close",
+      "conviction": "high",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "SOXX",
+      "direction": "short",
+      "thesis": "Semis complex broke 50DMA Friday with -3-6% across NVDA/AMD/AVGO. Weekend BTC weakness reinforces broad risk-off. AI capex narrative still under question into earnings.",
+      "entry": "$235-240 on Monday bounce",
+      "invalidation": "$245 close",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Carried forward from Friday — only sector green at +2.36% on WTI breaking $100. Energy as the rare risk-on hide-out IF oil holds above $98.",
+      "entry": "$58-59.50 on pullback",
+      "invalidation": "$56.50 close",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "A smart bear of THIS doubled-down step-aside would say: weekend crypto declines of -0.5% are noise, not signal. Crypto routinely chops in low-volume weekend tape; treating an overnight 0.5% move as 'confirmation' is exactly the kind of confirmation-bias trap that catches retail at every short-term low. If anything, the LACK of further panic over the weekend (no -5% crash, no DXY ripping) is mildly bullish — the Friday flush may have been peak fear. Equity bulls would say: every meaningful market low for two years has happened on Fridays-of-the-week-traders-felt-fear. Monday's gap-down could be a textbook buy-the-dip. The fact that we're now MORE conviction on STEP ASIDE 12 hours after the call could itself be the contra-tell.",
+  "body_mdx": "data/briefings/markets/2026-05-16-morning.mdx"
+}
