@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LearnToggle from "./learn-toggle";
+import ChartTypeHeaderToggle from "./chart-type-header-toggle";
 import MobileNav from "./mobile-nav";
 
 const NAV = [
@@ -41,6 +42,7 @@ export default function SiteHeader() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] sm:gap-3">
+          <ChartTypeHeaderToggle />
           <LearnToggle />
           <span className="hidden sm:inline">{dateStr}</span>
           <span className="hidden text-[var(--amber-dim)] sm:inline">·</span>

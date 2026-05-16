@@ -11,9 +11,7 @@ export type { CandleChartProps } from "./candle-chart-inner";
 const CandleChart = dynamic(() => import("./candle-chart-inner"), {
   ssr: false,
   loading: () => (
-    <div className="flex h-[110px] w-full items-center justify-center font-mono text-[10px] text-[var(--dim)] sm:h-[150px]">
-      Loading chart…
-    </div>
+    <div className="flex h-full w-full items-center justify-center font-mono text-[10px] text-[var(--dim)]" />
   ),
 });
 

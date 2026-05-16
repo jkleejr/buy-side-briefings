@@ -9,11 +9,11 @@ import {
 } from "@/lib/chart-ranges";
 import { formatPct } from "@/lib/utils";
 import RangeSelector from "./range-selector";
-import ChartTypeToggle, { type ChartType } from "./chart-type-toggle";
 import AssetChart from "./asset-chart";
 import CandleChart from "./candle-chart";
 import Tooltip from "./tooltip";
 import { TICKER_TIPS } from "@/lib/glossary";
+import { useChartType } from "./chart-type-provider";
 
 export type IndexAsset = {
   symbol: string;
@@ -41,7 +41,7 @@ export default function UsIndicesClient({
   quoteBySymbol,
 }: Props) {
   const [range, setRange] = useState<ChartRange>(initialRange);
-  const [chartType, setChartType] = useState<ChartType>("line");
+  const { chartType } = useChartType();
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
   const reqId = useRef(0);
@@ -76,16 +76,12 @@ export default function UsIndicesClient({
 
   return (
     <div className="flex h-full flex-col">
-      {/* Shared timeframe + chart-type toggles apply to all 3 charts. */}
-      <div className="flex flex-wrap items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
+      {/* Shared timeframe selector — chart type comes from the global header toggle. */}
+      <div className="flex items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
         <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
           Timeframe ▸
         </span>
         <RangeSelector value={range} onChange={setRange} loading={loading} />
-        <span className="ml-auto font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
-          View ▸
-        </span>
-        <ChartTypeToggle value={chartType} onChange={setChartType} />
       </div>
 
       {/* Three charts side-by-side on desktop; stacks on mobile */}

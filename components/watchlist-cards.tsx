@@ -14,6 +14,8 @@ import { formatPct, verdictColor } from "@/lib/utils";
 import Panel from "./panel";
 import RangeSelector from "./range-selector";
 import Sparkline from "./sparkline";
+import CandleChart from "./candle-chart";
+import { useChartType } from "./chart-type-provider";
 
 export type WatchQuote = {
   price: number | null;
@@ -49,6 +51,7 @@ export default function WatchlistCards({
   });
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
+  const { chartType } = useChartType();
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
@@ -163,13 +166,17 @@ export default function WatchlistCards({
                   )}
                 </div>
 
-                {/* Sparkline — hover for day/date/time/price popup */}
+                {/* Chart — hover for day/date/time/price popup */}
                 <div className="relative h-12 w-full">
-                  <Sparkline
-                    points={series}
-                    positive={up}
-                    intraday={INTRADAY_RANGES.has(range)}
-                  />
+                  {chartType === "candle" ? (
+                    <CandleChart series={series} intraday={INTRADAY_RANGES.has(range)} />
+                  ) : (
+                    <Sparkline
+                      points={series}
+                      positive={up}
+                      intraday={INTRADAY_RANGES.has(range)}
+                    />
+                  )}
                 </div>
 
                 {/* Latest briefing mention */}

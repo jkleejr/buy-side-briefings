@@ -124,8 +124,8 @@ export default function CandleChartInner({ series, intraday }: CandleChartProps)
   return (
     <div
       ref={containerRef}
-      className="h-[110px] w-full sm:h-[150px]"
-      style={{ position: "relative" }}
+      className="h-full w-full"
+      style={{ position: "relative", minHeight: 32 }}
     />
   );
 }
