@@ -1,8 +1,59 @@
 import { getRecentMentionsByTicker, getWatchlist, type RecentMention } from "@/lib/data";
 import { getChartSeries, getQuote } from "@/lib/markets";
 import type { ChartPoint } from "@/lib/chart-ranges";
+import { formatPct } from "@/lib/utils";
 import Panel from "@/components/panel";
 import WatchlistCards, { type WatchQuote } from "@/components/watchlist-cards";
+
+// Curated additions to consider beyond the user-edited watchlist. Grouped by
+// theme. Edit freely. Anything already in data/watchlist.json is auto-filtered
+// out at render time so suggestions don't duplicate.
+const SUGGESTIONS: Array<{
+  category: string;
+  description: string;
+  tickers: Array<{ symbol: string; label: string; why: string }>;
+}> = [
+  {
+    category: "AI · Semis depth",
+    description:
+      "Beyond NVDA/AMD/AVGO — the picks-and-shovels of the AI capex cycle.",
+    tickers: [
+      { symbol: "MU", label: "Micron Technology", why: "Memory cycle bellwether — HBM demand from AI capex" },
+      { symbol: "ARM", label: "Arm Holdings", why: "IP licensing across mobile, auto, datacenter — royalty-on-everything model" },
+      { symbol: "ASML", label: "ASML", why: "EUV lithography monopoly — required for every advanced node" },
+    ],
+  },
+  {
+    category: "Quantum · speculative",
+    description:
+      "Pure-play quantum-compute exposure. High volatility, narrative-driven, small caps.",
+    tickers: [
+      { symbol: "IONQ", label: "IonQ", why: "Trapped-ion quantum hardware — the most-watched pure-play" },
+      { symbol: "RGTI", label: "Rigetti Computing", why: "Superconducting quantum — high beta to quantum-narrative news" },
+      { symbol: "QBTS", label: "D-Wave Quantum", why: "Quantum annealing — commercial use cases earliest, niche but real" },
+    ],
+  },
+  {
+    category: "Crypto exposure via equities",
+    description:
+      "Get crypto-cycle exposure without holding BTC directly. Useful in tax-advantaged accounts.",
+    tickers: [
+      { symbol: "COIN", label: "Coinbase", why: "Public proxy for crypto adoption + retail trading volumes" },
+      { symbol: "MSTR", label: "Strategy (MicroStrategy)", why: "Largest corporate BTC treasury — behaves like leveraged BTC" },
+      { symbol: "HOOD", label: "Robinhood", why: "Retail trading + crypto + rates exposure; high beta to risk sentiment" },
+    ],
+  },
+  {
+    category: "Defensive quality",
+    description:
+      "Boring compounders that hold up when the broader tape gets ugly. Diversifies tech-heavy book.",
+    tickers: [
+      { symbol: "COST", label: "Costco", why: "Best-in-class consumer staples — defensive growth that holds in downturns" },
+      { symbol: "V", label: "Visa", why: "Payments duopoly with MA — quasi-utility cash machine" },
+      { symbol: "BRK-B", label: "Berkshire Hathaway B", why: "Buffett's holding company — quality value + insurance + cash hoard" },
+    ],
+  },
+];
 
 export const metadata = { title: "Watchlist — Buy-Side Briefings" };
 export const revalidate = 120;
@@ -14,11 +65,26 @@ export default async function WatchlistPage() {
   const symbols = entries.map((e) => e.symbol);
   const mentionsMap = getRecentMentionsByTicker(symbols);
 
-  // Parallel: live quote + initial-range series per ticker.
-  const [quotes, sparks] = await Promise.all([
+  // Filter suggestions to drop any tickers already in the user's watchlist.
+  const ownedSet = new Set(symbols);
+  const suggestionCategories = SUGGESTIONS.map((cat) => ({
+    ...cat,
+    tickers: cat.tickers.filter((t) => !ownedSet.has(t.symbol)),
+  })).filter((cat) => cat.tickers.length > 0);
+  const suggestionSymbols = suggestionCategories.flatMap((c) =>
+    c.tickers.map((t) => t.symbol),
+  );
+
+  // Parallel: live quote + initial-range series per watchlist ticker, plus
+  // a separate batch for suggestion quotes (no sparkline data needed there).
+  const [quotes, sparks, suggestionQuotes] = await Promise.all([
     Promise.all(entries.map((e) => getQuote(e.symbol))),
     Promise.all(entries.map((e) => getChartSeries(e.symbol, INITIAL_RANGE))),
+    Promise.all(suggestionSymbols.map((s) => getQuote(s))),
   ]);
+  const suggestionQuoteBySymbol = new Map(
+    suggestionSymbols.map((s, i) => [s, suggestionQuotes[i]]),
+  );
 
   // Convert arrays → maps keyed by symbol for the client component.
   const seriesBySymbol: Record<string, ChartPoint[]> = {};
@@ -71,6 +137,74 @@ export default async function WatchlistPage() {
           quoteBySymbol={quoteBySymbol}
           mentions={mentionsByKey}
         />
+      )}
+
+      {suggestionCategories.length > 0 && (
+        <Panel
+          code="ADD?"
+          title="Suggested additions"
+          learn="A curated list of tickers you could consider adding to data/watchlist.json — organized by theme. Each entry shows live price + day % change and a one-line reason for the pick. Filter automatically excludes anything already on your list. To add a ticker: open data/watchlist.json, append the entry, commit + push, the watchlist re-renders within ~2 minutes."
+        >
+          <div className="divide-y divide-[var(--border)]">
+            {suggestionCategories.map((cat) => (
+              <div key={cat.category} className="p-3">
+                <div className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber)]">
+                  {cat.category}
+                </div>
+                <p className="mt-0.5 font-mono text-[10px] text-[var(--dim)]">
+                  {cat.description}
+                </p>
+                <table className="mt-2 w-full font-mono text-[11px]">
+                  <tbody>
+                    {cat.tickers.map((t) => {
+                      const q = suggestionQuoteBySymbol.get(t.symbol);
+                      const price = q?.price ?? null;
+                      const pct = q?.changePct ?? null;
+                      const up = (pct ?? 0) > 0;
+                      const down = (pct ?? 0) < 0;
+                      const pctCls = up
+                        ? "text-[var(--up)]"
+                        : down
+                          ? "text-[var(--down)]"
+                          : "text-[var(--dim)]";
+                      return (
+                        <tr
+                          key={t.symbol}
+                          className="border-t border-[var(--border)] align-top"
+                        >
+                          <td className="w-16 px-2 py-1 text-[var(--amber-dim)]">
+                            {t.symbol}
+                          </td>
+                          <td className="w-40 px-2 py-1 text-[var(--foreground)]">
+                            {t.label}
+                          </td>
+                          <td className="px-2 py-1 text-[var(--dim)]">{t.why}</td>
+                          <td className="w-20 px-2 py-1 text-right text-[var(--foreground)]">
+                            {price === null
+                              ? "—"
+                              : `$${price.toLocaleString("en-US", { maximumFractionDigits: 2 })}`}
+                          </td>
+                          <td className={`w-20 px-2 py-1 text-right ${pctCls}`}>
+                            {pct === null ? "—" : formatPct(pct)}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+            <div className="border-t border-[var(--border)] bg-[var(--panel-head)] p-3 font-mono text-[10px] leading-snug text-[var(--dim)]">
+              <span className="text-[var(--amber-dim)]">To add ▸</span> open{" "}
+              <code className="text-[var(--amber)]">data/watchlist.json</code>, append an
+              entry like{" "}
+              <code className="text-[var(--amber)]">
+                {`{ "symbol": "MU", "label": "Micron Technology" }`}
+              </code>
+              , commit + push. The watchlist re-renders within ~2 minutes.
+            </div>
+          </div>
+        </Panel>
       )}
     </div>
   );
