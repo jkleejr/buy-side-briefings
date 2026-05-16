@@ -55,6 +55,24 @@ export default function GlobalPage() {
         metaLabel="HONG KONG · CHINA TECH PROXY"
       />
 
+      <BigAssetChart
+        symbol="000001.SS"
+        code="SSE"
+        title="Shanghai Composite — China A-shares"
+        color="#fb923c"
+        learn={TICKER_TIPS["000001.SS"]}
+        metaLabel="SHANGHAI · MAINLAND CHINA"
+      />
+
+      <BigAssetChart
+        symbol="^KS11"
+        code="KOSPI"
+        title="KOSPI — South Korea (Samsung & SK Hynix)"
+        color="#84cc16"
+        learn={TICKER_TIPS["^KS11"]}
+        metaLabel="SEOUL · GLOBAL MEMORY-CHIP DUOPOLY"
+      />
+
       <Panel code="EUROPE" title="Europe · the morning US gets">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           London/Frankfurt/Paris open ~3am US ET. By the time US opens at 9:30am,
@@ -82,6 +100,24 @@ export default function GlobalPage() {
         metaLabel="LONDON · ENERGY + MINERS + GLOBAL CONSUMER"
       />
 
+      <BigAssetChart
+        symbol="^FCHI"
+        code="CAC"
+        title="CAC 40 — France (luxury proxy)"
+        color="#a78bfa"
+        learn={TICKER_TIPS["^FCHI"]}
+        metaLabel="PARIS · LUXURY + PHARMA + ENERGY"
+      />
+
+      <BigAssetChart
+        symbol="^STOXX50E"
+        code="STOXX"
+        title="Euro Stoxx 50 — pan-Eurozone benchmark"
+        color="#60a5fa"
+        learn={TICKER_TIPS["^STOXX50E"]}
+        metaLabel="EUROZONE · BROAD BLUE-CHIP"
+      />
+
       <Panel code="EM" title="Emerging markets · the growth lane">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           Nifty (India) is the biggest EM growth story — increasingly important as
@@ -98,6 +134,24 @@ export default function GlobalPage() {
         color="#a78bfa"
         learn={TICKER_TIPS["^NSEI"]}
         metaLabel="MUMBAI · IT SERVICES + BANKS"
+      />
+
+      <BigAssetChart
+        symbol="^BVSP"
+        code="BVSP"
+        title="Bovespa — Brazil (EM commodity play)"
+        color="#22c55e"
+        learn={TICKER_TIPS["^BVSP"]}
+        metaLabel="SÃO PAULO · IRON ORE + OIL + BANKS"
+      />
+
+      <BigAssetChart
+        symbol="^GSPTSE"
+        code="TSX"
+        title="S&P/TSX Composite — Canada"
+        color="#ef4444"
+        learn={TICKER_TIPS["^GSPTSE"]}
+        metaLabel="TORONTO · ENERGY + BANKS + MINERS"
       />
 
       <Panel code="EDU" title="How to use the global session">

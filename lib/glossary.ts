@@ -113,6 +113,8 @@ export const TICKER_TIPS: Record<string, string> = {
   TLT: "iShares 20+ Year Treasury Bond ETF — the cleanest way to chart long-duration bonds without dealing with yields directly. TLT up = long yields down (bonds rallying). TLT down = long yields up (bonds selling off). Inverse to yields. Many traders chart TLT instead of TYX because price action is easier to read than yield levels.",
 
   SPY: "SPDR S&P 500 ETF — the largest and most-traded ETF in the world, designed to track the S&P 500 index. Effectively 'the stock market' in one ticker. Trades intraday like a stock, unlike the index itself.",
+  QQQ: "Invesco QQQ Trust — the ETF that tracks the Nasdaq 100 (the largest 100 non-financial Nasdaq-listed companies). Tech-heavy: Apple, Microsoft, Nvidia, Amazon, Meta, Alphabet dominate the weighting. More volatile than SPY because of the concentration; the cleanest proxy for 'big tech.'",
+  IWM: "iShares Russell 2000 ETF — tracks the Russell 2000 small-cap index. The cleanest US-listed read on the *domestic* economy because small caps have ~85% US revenue (vs. SPX's ~60%). When IWM outperforms SPY, the rally is broad. When it underperforms, only mega-caps are working.",
   GLD: "SPDR Gold Shares — the largest gold ETF, backed by physical gold bullion held in vaults. The simplest way for retail investors to get gold exposure without owning bars or coins. Tracks gold's spot price closely.",
   SLV: "iShares Silver Trust — the largest silver ETF, backed by physical silver bullion. Silver is more volatile than gold (smaller market, more industrial demand) and often called 'high-beta gold' — it amplifies gold's moves in both directions.",
   Silver:

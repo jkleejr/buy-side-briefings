@@ -8,7 +8,7 @@ import SentimentPanel from "@/components/sentiment-panel";
 import SectorRotation from "@/components/sector-rotation";
 import FedPanel from "@/components/fed-panel";
 import CyclePanel from "@/components/cycle-panel";
-import SpyChart from "@/components/spy-chart";
+import UsIndicesPanel from "@/components/us-indices-panel";
 import MetalsPanel from "@/components/metals-panel";
 import GlobalMarketsPanel from "@/components/global-markets-panel";
 import UsPulsePanel from "@/components/us-pulse-panel";
@@ -54,9 +54,9 @@ export default function Home() {
           <CryptoPanel />
         </div>
 
-        {/* Row 2 — SPY chart + compact Metals panel (parity with Crypto's footprint) */}
+        {/* Row 2 — US indices (SPY · QQQ · IWM) + compact Metals panel */}
         <div className="lg:col-span-9">
-          <SpyChart />
+          <UsIndicesPanel />
         </div>
         <div className="lg:col-span-3">
           <MetalsPanel />
