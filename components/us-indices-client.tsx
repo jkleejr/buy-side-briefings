@@ -9,7 +9,9 @@ import {
 } from "@/lib/chart-ranges";
 import { formatPct } from "@/lib/utils";
 import RangeSelector from "./range-selector";
+import ChartTypeToggle, { type ChartType } from "./chart-type-toggle";
 import AssetChart from "./asset-chart";
+import CandleChart from "./candle-chart";
 import Tooltip from "./tooltip";
 import { TICKER_TIPS } from "@/lib/glossary";
 
@@ -39,6 +41,7 @@ export default function UsIndicesClient({
   quoteBySymbol,
 }: Props) {
   const [range, setRange] = useState<ChartRange>(initialRange);
+  const [chartType, setChartType] = useState<ChartType>("line");
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
   const reqId = useRef(0);
@@ -69,14 +72,20 @@ export default function UsIndicesClient({
       });
   }, [range, assets, initialRange]);
 
+  const intraday = INTRADAY_RANGES.has(range);
+
   return (
     <div className="flex h-full flex-col">
-      {/* Shared range selector */}
-      <div className="flex items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
+      {/* Shared timeframe + chart-type toggles apply to all 3 charts. */}
+      <div className="flex flex-wrap items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
         <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
           Timeframe ▸
         </span>
         <RangeSelector value={range} onChange={setRange} loading={loading} />
+        <span className="ml-auto font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+          View ▸
+        </span>
+        <ChartTypeToggle value={chartType} onChange={setChartType} />
       </div>
 
       {/* Three charts side-by-side on desktop; stacks on mobile */}
@@ -96,7 +105,6 @@ export default function UsIndicesClient({
           const tip = TICKER_TIPS[a.symbol] ?? "";
           return (
             <div key={a.symbol} className="flex min-w-0 flex-col">
-              {/* Per-chart price header */}
               <div className="flex flex-wrap items-baseline gap-x-2 px-2 pt-1.5 font-mono text-[11px]">
                 <span className="text-[var(--amber-dim)]">
                   {tip ? <Tooltip text={tip}>{a.label}</Tooltip> : a.label}
@@ -112,14 +120,17 @@ export default function UsIndicesClient({
                 <span className={pctCls}>{pct === null ? "—" : formatPct(pct)}</span>
                 <span className="text-[10px] text-[var(--dim)]">· {range}</span>
               </div>
-              {/* Chart */}
               <div className="flex-1">
-                <AssetChart
-                  series={series}
-                  color={a.color}
-                  label={a.label}
-                  intraday={INTRADAY_RANGES.has(range)}
-                />
+                {chartType === "candle" ? (
+                  <CandleChart series={series} intraday={intraday} />
+                ) : (
+                  <AssetChart
+                    series={series}
+                    color={a.color}
+                    label={a.label}
+                    intraday={intraday}
+                  />
+                )}
               </div>
             </div>
           );

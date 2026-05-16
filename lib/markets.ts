@@ -187,10 +187,28 @@ const RANGE_PARAMS: Record<
   ALL: { days: 365 * 40, interval: "1mo" },
 };
 
+type YahooQuoteBar = {
+  date?: Date;
+  open?: number | null;
+  high?: number | null;
+  low?: number | null;
+  close?: number | null;
+  volume?: number | null;
+};
+
+export type ChartBar = {
+  date: string;
+  close: number;
+  open?: number;
+  high?: number;
+  low?: number;
+  volume?: number;
+};
+
 export async function getChartSeries(
   symbol: string,
   range: ChartRange,
-): Promise<DailyClose[]> {
+): Promise<ChartBar[]> {
   const { days, interval } = RANGE_PARAMS[range];
   try {
     const now = Date.now();
@@ -198,15 +216,24 @@ export async function getChartSeries(
     const result = (await yahooFinance.chart(symbol, {
       period1: start,
       interval: interval as never,
-    })) as { quotes?: Array<{ date?: Date; close?: number | null }> };
+    })) as { quotes?: YahooQuoteBar[] };
     const quotes = result?.quotes ?? [];
     return quotes
-      .filter((q): q is { date: Date; close: number } => q.close != null && q.date != null)
-      .map((q) => ({
-        // Keep full ISO datetime so intraday ranges retain the hour/minute.
-        date: q.date.toISOString(),
-        close: q.close,
-      }))
+      .filter((q): q is YahooQuoteBar & { date: Date; close: number } =>
+        q.close != null && q.date != null,
+      )
+      .map((q) => {
+        const bar: ChartBar = {
+          // Keep full ISO datetime so intraday ranges retain the hour/minute.
+          date: q.date.toISOString(),
+          close: q.close,
+        };
+        if (q.open != null) bar.open = q.open;
+        if (q.high != null) bar.high = q.high;
+        if (q.low != null) bar.low = q.low;
+        if (q.volume != null) bar.volume = q.volume;
+        return bar;
+      })
       .sort((a, b) => a.date.localeCompare(b.date));
   } catch (err) {
     console.error(`[markets] chart series fetch failed for ${symbol} ${range}:`, err);

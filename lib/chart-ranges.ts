@@ -8,7 +8,16 @@ export const CHART_RANGES: ChartRange[] = ["1D", "5D", "1M", "3M", "1Y", "5Y", "
 /** Ranges where each data point is a partial trading day (need time display). */
 export const INTRADAY_RANGES: ReadonlySet<ChartRange> = new Set(["1D", "5D"]);
 
-export type ChartPoint = { date: string; close: number };
+export type ChartPoint = {
+  date: string;
+  close: number;
+  /** Open/High/Low — present when fetched via getChartSeries; needed for
+   *  candlestick rendering. Optional so line-only consumers ignore them. */
+  open?: number;
+  high?: number;
+  low?: number;
+  volume?: number;
+};
 
 /**
  * % change to display alongside the price for the currently selected range:

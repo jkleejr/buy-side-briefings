@@ -9,7 +9,9 @@ import {
 } from "@/lib/chart-ranges";
 import { formatPct } from "@/lib/utils";
 import RangeSelector from "./range-selector";
+import ChartTypeToggle, { type ChartType } from "./chart-type-toggle";
 import AssetChart from "./asset-chart";
+import CandleChart from "./candle-chart";
 
 type Quote = { price: number | null; changePct: number | null };
 
@@ -30,31 +32,30 @@ export default function SpyChartClient({
 }: Props) {
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [series, setSeries] = useState(initialSeries);
+  const [chartType, setChartType] = useState<ChartType>("line");
   const [loading, setLoading] = useState(false);
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
   useEffect(() => {
-    // Skip the very first render — initial data is already in state from SSR.
-    // Any subsequent range change (including clicking back to the initial range
-    // after browsing elsewhere) triggers a fresh fetch.
-    if (isFirstMount.current) {
+    if (isFirstMount.current && range === initialRange) {
       isFirstMount.current = false;
       return;
     }
+    isFirstMount.current = false;
     const id = ++reqId.current;
     setLoading(true);
     fetch(`/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}`)
       .then((r) => r.json())
       .then((j) => {
-        if (id !== reqId.current) return; // a newer request superseded this
+        if (id !== reqId.current) return;
         if (Array.isArray(j.data)) setSeries(j.data);
       })
       .catch((err) => console.error("[spy-chart] fetch failed:", err))
       .finally(() => {
         if (id === reqId.current) setLoading(false);
       });
-  }, [range, symbol]);
+  }, [range, symbol, initialRange]);
 
   const price = initialQuote.price;
   const pct = pctForRange(range, series, initialQuote.changePct);
@@ -65,6 +66,7 @@ export default function SpyChartClient({
     : down
       ? "text-[var(--down)]"
       : "text-[var(--dim)]";
+  const intraday = INTRADAY_RANGES.has(range);
 
   return (
     <div className="flex h-full flex-col">
@@ -77,17 +79,22 @@ export default function SpyChartClient({
         </span>
         <span className={pctCls}>{pct === null ? "—" : formatPct(pct)}</span>
         <span className="text-[10px] text-[var(--dim)]">· {range}</span>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center gap-2">
+          <ChartTypeToggle value={chartType} onChange={setChartType} />
           <RangeSelector value={range} onChange={setRange} loading={loading} />
         </div>
       </div>
       <div className="flex-1">
-        <AssetChart
-          series={series}
-          color={color}
-          label={symbol}
-          intraday={INTRADAY_RANGES.has(range)}
-        />
+        {chartType === "candle" ? (
+          <CandleChart series={series} intraday={intraday} />
+        ) : (
+          <AssetChart
+            series={series}
+            color={color}
+            label={symbol}
+            intraday={intraday}
+          />
+        )}
       </div>
     </div>
   );
