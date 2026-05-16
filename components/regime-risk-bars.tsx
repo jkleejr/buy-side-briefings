@@ -1,12 +1,14 @@
 import type { RegimeIndicator } from "@/lib/data";
+import { getRegimeTip } from "@/lib/glossary";
 import Panel from "./panel";
+import Tooltip from "./tooltip";
 
 export default function RegimeRiskBars({ indicators }: { indicators: RegimeIndicator[] }) {
   return (
     <Panel
       code="RISK"
       title="Regime Risk Indicators"
-      learn="Warning lights — gauges that signal when the market mood is overheating. Each bar fills toward a trigger threshold (green = fine, amber = approaching, red = triggered). Multiple bars hot at once = take the next bullish call with more skepticism. Not buy/sell signals on their own."
+      learn="Warning lights — gauges that signal when the market mood is overheating. Each bar fills toward a trigger threshold (green = fine, amber = approaching, red = triggered). Multiple bars hot at once = take the next bullish call with more skepticism. Hover any indicator name to learn what that specific bar means and what crossing the trigger signifies."
     >
       <ul className="divide-y divide-[var(--border)]">
         {indicators.map((r) => {
@@ -18,10 +20,13 @@ export default function RegimeRiskBars({ indicators }: { indicators: RegimeIndic
             : pct > 80
               ? "bg-[var(--amber)]"
               : "bg-[var(--up)]";
+          const tip = getRegimeTip(r.name);
           return (
             <li key={r.name} className="px-2 py-1.5">
               <div className="flex items-baseline justify-between font-mono text-[11px]">
-                <span className="truncate text-[var(--foreground)]">{r.name}</span>
+                <span className="truncate text-[var(--foreground)]">
+                  {tip ? <Tooltip text={tip}>{r.name}</Tooltip> : r.name}
+                </span>
                 <span className="text-[var(--foreground)]">
                   {r.value}
                   {r.unit ?? ""}

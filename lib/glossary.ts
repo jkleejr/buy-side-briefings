@@ -121,6 +121,82 @@ export const TICKER_TIPS: Record<string, string> = {
     "Silver — precious metal with both monetary and industrial demand (electronics, solar panels, EVs). More volatile than gold because the market is smaller and ~50% of demand is industrial, so it's more sensitive to growth expectations.",
 };
 
+// ---- Regime Risk Indicators -----------------------------------------------
+// Each verdict's regime_risk[] uses free-form names (the analyst can add new
+// ones). This table is matched by case-insensitive `includes()` against the
+// indicator name, so variants like "Russell-2K daily" and "Russell-2K Friday"
+// both find the same explanation. Order matters — more specific entries first.
+
+type RegimeTipRule = { match: string[]; tip: string };
+
+const REGIME_RISK_RULES: RegimeTipRule[] = [
+  {
+    match: ["vix"],
+    tip: "CBOE Volatility Index — expected 30-day S&P 500 volatility implied by option prices. Often called the 'fear gauge.' This bar fills toward the trigger (typically 18–20). Above the trigger, options markets are pricing meaningful equity stress and the buy-the-dip reflex historically stops working. Above 25 = stressed. Above 40 = panic.",
+  },
+  {
+    match: ["30y yield", "30-year yield", "30 year yield", "30y "],
+    tip: "30-Year US Treasury yield, percent. Bar fills toward a high-water threshold (typically 5.0%). Above the trigger means long-duration bond yields are in a secular-high zone, which mechanically compresses equity multiples (especially long-duration growth stocks) and signals bond-market stress. The long end is harder for the Fed to control than short rates.",
+  },
+  {
+    match: ["10y yield", "10-year yield", "10 year yield", "10y "],
+    tip: "10-Year US Treasury yield, percent. The benchmark 'risk-free' rate the whole financial system prices off. Bar fills toward a high-water trigger. Above the trigger raises borrowing costs system-wide and pressures growth-stock multiples; a fast rise often pairs with bond-market stress.",
+  },
+  {
+    match: ["aaii"],
+    tip: "American Association of Individual Investors weekly bullish-sentiment survey, percent of respondents who say they're bullish on the next 6 months. Bar fills toward an over-bullish trigger (typically 55%). Above the trigger is historically a contrarian signal — extreme retail bullishness means most potential buyers are already in, leaving the marginal next move skewed downward.",
+  },
+  {
+    match: ["fear & greed", "fear and greed", "fear/greed"],
+    tip: "CNN's 0–100 composite of 7 market-mood indicators (put/call ratio, momentum, breadth, safe-haven demand, junk-bond demand, market volatility, stock-price strength). Bar fills toward the extreme-greed trigger (typically 80). Above the trigger means market mood is overheated and vulnerable to bad-news shocks. Below 20 is extreme fear — historically a contrarian buy zone.",
+  },
+  {
+    match: ["fwd p/e", "forward p/e", "fwd pe", "forward pe", "p/e"],
+    tip: "S&P 500 forward price-to-earnings ratio — the index level divided by the next-12-months consensus EPS estimate. Long-run average is roughly 16–18x. Bar fills toward a stretched-valuation trigger (typically 22–23x). Above the trigger means the index is priced for everything going right; multiple-compression risk dominates even if earnings hold up.",
+  },
+  {
+    match: ["shiller cape", "cape ratio"],
+    tip: "Cyclically Adjusted P/E — index level divided by the 10-year average of inflation-adjusted earnings. Smooths out earnings-cycle noise. 100-year average ≈ 17. Bar fills toward a stretched-valuation trigger. Elevated readings historically pair with lower long-term forward returns.",
+  },
+  {
+    match: ["russell-2k", "russell 2k", "russell-2000", "rut "],
+    tip: "Russell 2000 small-cap index daily percent change. Bar fills toward a downside trigger (typically -2.0%). Below the trigger means small caps are leading the downside — a breadth-breakdown signal. Small caps lack the mega-cap defensive bid and have the most US-domestic-economy sensitivity, so they break first when broader risk-off begins.",
+  },
+  {
+    match: ["sectors red"],
+    tip: "Count of S&P sectors closing red on the session, out of 11. Bar fills toward an extreme trigger (typically 9 or 10). Above the trigger means broad-based sector weakness, not just mega-cap-led decline — a stronger risk-off signal than a narrow drawdown. A day where everything sells is harder to brush off than a day where Tech-leads-down with defensives green.",
+  },
+  {
+    match: ["btc weekend", "btc overnight", "crypto weekend", "crypto overnight"],
+    tip: "Bitcoin percent change since the prior US-market close, used as a weekend / overnight risk-sentiment gauge. Crypto is the only meaningful price-discovery happening when US markets are closed. A reading below zero means crypto continued lower with no dip-buying — confirmation that the prior risk-off regime is persisting, not relief-bouncing.",
+  },
+  {
+    match: ["2s10s", "2s/10s", "yield curve"],
+    tip: "10-Year minus 2-Year Treasury yield, in basis points. Bar fills toward an inverted trigger. When negative (the curve is inverted), the bond market is pricing slower growth ahead — historically preceded recessions by 6–18 months. Positive and steep = normal expansion. Flat = late-cycle caution.",
+  },
+  {
+    match: ["hyg", "high yield", "credit spread"],
+    tip: "High-yield ('junk') corporate bond ETF or spread. Bar fills toward credit-stress trigger. Falling HYG / widening spreads means investors are demanding more compensation to hold risky corporate debt — historically a leading indicator of equity weakness because credit cracks before stocks do.",
+  },
+  {
+    match: ["dxy", "dollar"],
+    tip: "US Dollar Index. Bar fills toward a stressed-strength trigger. A sharp DXY rally usually pairs with global risk-off (flight to USD), commodity weakness (priced in USD), and emerging-market stress. Sustained breaks above key levels reset the macro regime.",
+  },
+];
+
+/**
+ * Look up an educational tooltip for a regime-risk indicator by its free-form
+ * name. Returns undefined when no match — caller should skip the tooltip
+ * rather than show a generic placeholder.
+ */
+export function getRegimeTip(name: string): string | undefined {
+  const n = name.toLowerCase();
+  for (const rule of REGIME_RISK_RULES) {
+    if (rule.match.some((m) => n.includes(m))) return rule.tip;
+  }
+  return undefined;
+}
+
 export const SECTOR_TIPS: Record<string, string> = {
   XLK: "Technology Select Sector SPDR — the S&P 500 tech sector ETF. Apple, Microsoft, Nvidia, Broadcom dominate. Largest sector by weight in the S&P. Sensitive to interest rates (high duration).",
   XLF: "Financial Select Sector SPDR — big banks (JPMorgan, Bank of America), insurers, asset managers, exchanges. Generally benefits when rates rise and the yield curve steepens, suffers in credit stress.",
