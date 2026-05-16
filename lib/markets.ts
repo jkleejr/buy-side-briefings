@@ -10,6 +10,8 @@ export type LiveQuote = {
   price: number | null;
   change: number | null;
   changePct: number | null;
+  /** % change vs the 50-day moving average. A rough trend gauge. */
+  avg50pct: number | null;
 };
 
 const TICKER_STRIP: Array<{ symbol: string; label: string }> = [
@@ -29,6 +31,7 @@ type YQuote = {
   regularMarketPrice?: number;
   regularMarketChange?: number;
   regularMarketChangePercent?: number;
+  fiftyDayAverageChangePercent?: number;
 };
 
 export async function getTickerStrip(): Promise<LiveQuote[]> {
@@ -44,6 +47,7 @@ export async function getTickerStrip(): Promise<LiveQuote[]> {
         price: q?.regularMarketPrice ?? null,
         change: q?.regularMarketChange ?? null,
         changePct: q?.regularMarketChangePercent ?? null,
+        avg50pct: q?.fiftyDayAverageChangePercent ?? null,
       };
     });
   } catch (err) {
@@ -54,6 +58,7 @@ export async function getTickerStrip(): Promise<LiveQuote[]> {
       price: null,
       change: null,
       changePct: null,
+      avg50pct: null,
     }));
   }
 }
@@ -276,6 +281,7 @@ export async function getQuote(symbol: string): Promise<LiveQuote | null> {
       price: item?.regularMarketPrice ?? null,
       change: item?.regularMarketChange ?? null,
       changePct: item?.regularMarketChangePercent ?? null,
+      avg50pct: item?.fiftyDayAverageChangePercent ?? null,
     };
   } catch (err) {
     console.error(`[markets] quote fetch failed for ${symbol}:`, err);

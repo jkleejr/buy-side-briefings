@@ -177,6 +177,94 @@ export function getBriefing(routine: string, slug: string): Briefing | null {
   };
 }
 
+// ---- Watchlist (user-editable file at data/watchlist.json) ----------------
+
+export type WatchlistEntry = {
+  symbol: string;
+  label: string;
+  /** Optional free-form personal note shown beside the row. */
+  note?: string;
+};
+
+/**
+ * Read the user's watchlist from data/watchlist.json. Returns an empty array
+ * if the file is missing or malformed (clean degradation, no crash).
+ */
+export function getWatchlist(): WatchlistEntry[] {
+  const file = path.join(DATA_DIR, "watchlist.json");
+  if (!fs.existsSync(file)) return [];
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, "utf-8")) as unknown;
+    if (!Array.isArray(parsed)) return [];
+    return parsed
+      .filter(
+        (e): e is WatchlistEntry =>
+          typeof e === "object" &&
+          e !== null &&
+          typeof (e as WatchlistEntry).symbol === "string" &&
+          typeof (e as WatchlistEntry).label === "string",
+      )
+      .map((e) => ({ symbol: e.symbol, label: e.label, note: e.note }));
+  } catch {
+    return [];
+  }
+}
+
+export type RecentMention = {
+  ticker: string;
+  date: string;
+  window?: string;
+  routine: string;
+  note: string;
+  sentiment: "positive" | "neutral" | "negative";
+  verdict_code: VerdictCode;
+  verdict_label: string;
+};
+
+/**
+ * For each ticker in the watchlist, find the most recent verdict that mentions
+ * it (in either watchlist_mentions or dont_buy). Returns a map keyed by ticker
+ * so the page can look up O(1).
+ */
+export function getRecentMentionsByTicker(
+  tickers: string[],
+): Map<string, RecentMention> {
+  const map = new Map<string, RecentMention>();
+  if (tickers.length === 0) return map;
+  const wanted = new Set(tickers);
+  // getAllMarketsVerdicts already returns newest-first.
+  for (const v of getAllMarketsVerdicts()) {
+    for (const m of v.watchlist_mentions ?? []) {
+      if (!wanted.has(m.ticker) || map.has(m.ticker)) continue;
+      map.set(m.ticker, {
+        ticker: m.ticker,
+        date: v.date,
+        window: v.window,
+        routine: v.routine,
+        note: m.note,
+        sentiment: m.sentiment,
+        verdict_code: v.verdict.code,
+        verdict_label: v.verdict.label,
+      });
+    }
+    for (const d of v.dont_buy ?? []) {
+      if (!wanted.has(d.ticker) || map.has(d.ticker)) continue;
+      map.set(d.ticker, {
+        ticker: d.ticker,
+        date: v.date,
+        window: v.window,
+        routine: v.routine,
+        note: `Don't buy — ${d.reason}. Better entry ${d.better_entry}.`,
+        sentiment: "negative",
+        verdict_code: v.verdict.code,
+        verdict_label: v.verdict.label,
+      });
+    }
+    if (map.size === wanted.size) break; // every ticker matched
+  }
+  return map;
+}
+
 function normalizeDate(value: unknown): string {
   if (value instanceof Date) {
     const y = value.getUTCFullYear();
