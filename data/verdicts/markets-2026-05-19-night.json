@@ -1,0 +1,78 @@
+{
+  "routine": "markets",
+  "date": "2026-05-19",
+  "window": "night",
+  "generated_at": "2026-05-20T01:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — leaning BUY into Wednesday's open",
+    "conviction": "high",
+    "rationale_short": "Tuesday's close did the work the morning brief outlined. SPX 7,464 reclaimed the explicit Step Aside invalidation line (7,460). VIX closed 15.92 — below the 16 stabilization line. 30Y closed at 4.98% — first sub-5.00% close since the May 14 flush. Three of four regime triggers are now neutralized; the cross-asset signature is risk-on. Tomorrow's open at SPX >7,460 + VIX <17 + 30Y <5.05% is the upgrade-to-BUY trigger, and all three are pre-positioned overnight.",
+    "supporting_data": [
+      { "label": "SPX 7,464 close (+1.01% on the day) — reclaimed the 7,460 Step Aside invalidation line", "url": "https://finance.yahoo.com/quote/%5EGSPC/" },
+      { "label": "VIX 15.92 close (-10.7%) — first close below 16 since May 12", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "30Y yield 4.98% (-10bps) — first close below 5.00% since the May 14 flush", "url": "https://finance.yahoo.com/quote/%5ETYX/" },
+      { "label": "Russell 2000 +1.8% — breadth participated; not a megacap-only rally", "url": "https://finance.yahoo.com/quote/%5ERUT/" },
+      { "label": "AAPL +2.1%, MSFT +2.0%, GOOGL +2.4%, META +1.8% — quality megacap leadership broadening to growth", "url": "https://finance.yahoo.com/quote/AAPL/" },
+      { "label": "BTC $79,150 (+1.5% from Monday low) — risk-on confirmation in the only 24/7 venue", "url": "https://finance.yahoo.com/quote/BTC-USD/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7464.3,  "change_pct":  1.01, "as_of": "2026-05-19T20:00:00Z" },
+    "nasdaq": { "level": 29262.5, "change_pct":  1.52, "as_of": "2026-05-19T20:00:00Z" },
+    "vix":    { "level": 15.92,   "change_pct": -10.74,"as_of": "2026-05-19T20:00:00Z" },
+    "ust10y": { "level": 4.56,    "change_bps": -4,    "as_of": "2026-05-19T20:00:00Z" },
+    "dxy":    { "level": 99.12,   "change_pct": -0.33, "as_of": "2026-05-19T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                "value": 15.92, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",          "value": 4.98,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",                "value": 99.12, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460",       "value": 7464,  "trigger_below": 7460, "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AAPL",  "note": "Closed $310.40 (+2.1%); the Tuesday long is +2.5% from entry. Setup intact for the carry into Wednesday",         "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "$430.05 (+2.0%); same setup as AAPL, quality leadership confirmed",                                                  "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "$406.45 (+2.4%); growth catching up. The Wednesday pullback-to-$400 setup looks live",                               "sentiment": "positive" },
+    { "ticker": "NVDA",  "note": "$229.50 (+3.1%); did not retest the $215 trigger. Chasing here is bad RR but the move happened",                     "sentiment": "neutral"  },
+    { "ticker": "PLTR",  "note": "Flushed -3.2% intraday to $129.80 then closed $131.20 (-2.2%). The first real demand reset finally arrived",         "sentiment": "neutral"  }
+  ],
+  "dont_buy": [
+    { "ticker": "SOXX", "reason": "Lagged the rally at +0.9% vs SPX +1.0% — semis still earning the wait-and-confirm treatment. Earnings catalysts next week", "better_entry": "$248 confirmed reclaim on 2 daily closes" },
+    { "ticker": "IWM",  "reason": "Closed +1.8% (extended after the bounce). Chasing the long here is bad RR; the short side closed at $284 — don't re-short either", "better_entry": "$282 retest on light volume" },
+    { "ticker": "NVDA", "reason": "Missed the $215 trigger; chasing the $229.50 close is the worst-RR entry in the watchlist. Wait for pullback",            "better_entry": "$218 OR VIX <15" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AAPL",
+      "direction": "long",
+      "thesis": "Hold the position from Tuesday morning's entry. +2.5% in 36 hours; defensive-quality bid that *kept working* into the broader recovery — the rare position that wins in both regimes. Trail stop to $304 (above entry). Next target $315.",
+      "entry": "held; trail stop $304",
+      "invalidation": "$304 daily close",
+      "conviction": "high",
+      "horizon": "3-6 weeks"
+    },
+    {
+      "asset": "GOOGL",
+      "direction": "long",
+      "thesis": "Growth catching up to defensives. +2.4% Tuesday on broad megacap bid; valuation cleaner than AAPL/MSFT. Adds AI exposure that was avoided through NVDA/semis. New setup on Wednesday pullback to $400.",
+      "entry": "$398-402 on pullback",
+      "invalidation": "$390 daily close",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "VIXY",
+      "direction": "short",
+      "thesis": "Tactical inverse — VIX broke below 16 with conviction; mean reversion of the May 15-18 vol spike is the cleanest expression of regime stabilization. Smaller size than equity longs because vol-of-vol risk skews adversely after a multi-session move.",
+      "entry": "$30 spot (open)",
+      "invalidation": "VIX >18 daily close",
+      "conviction": "medium",
+      "horizon": "5-10 sessions"
+    }
+  ],
+  "bear_case": "Counter-argument: declaring the regime call resolved on the second session of recovery is exactly the pattern-completion bias that catches investors at false bottoms. The 30Y at 4.98% is below the 5.0% trigger by *two basis points* — that is a tag, not a structural shift. The DXY at 99.12 is consistent with risk-on, but the broader macro question (can long yields stay below 5.0% with the 10Y at 4.56%?) is not answered by one Tuesday close. Semis underperforming the broad tape (SOXX +0.9% vs SPX +1.0%) is the leading-indicator tell that the breadth recovery is partial, not complete; the AI capex narrative that broke May 15 has not been answered, only deferred. Invalidation level: if SPX rolls back below 7,440 by Friday close with VIX printing 17+ and 30Y reclaiming 5.05%, the BUY-leaning HOLD was premature and Step Aside should be reinstated.",
+  "body_mdx": "data/briefings/markets/2026-05-19-night.mdx"
+}
