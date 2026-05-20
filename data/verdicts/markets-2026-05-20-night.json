@@ -1,0 +1,78 @@
+{
+  "routine": "markets",
+  "date": "2026-05-20",
+  "window": "night",
+  "generated_at": "2026-05-21T03:45:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — NVDA confirms AI capex; upgrade path conditional on Thursday's open",
+    "conviction": "medium",
+    "rationale_short": "NVDA's Q1 beat ($81.6B revenue vs $79.2B estimate; Q2 guide $91.0B) confirms the AI capex narrative and resolves the morning's primary binary risk. WTI fell ~5% to ~$98 on Middle East peace talks, partially relieving the inflationary pressure that drove the morning selloff. However, the 30Y remains above the 5.0% regime trigger (~5.09%), FOMC April minutes confirmed an 8-4 hawkish vote with CME pricing 63% year-end hike odds, and NVDA's AH reaction (initially -2% sell-the-news, recovered to +1.93%) introduces Thursday open uncertainty. The HOLD is maintained; BUY upgrade requires NVDA $226+ at Thursday's open + SPX reclaiming 7,460 + 30Y below 5.15% for 30 minutes.",
+    "supporting_data": [
+      { "label": "NVDA Q1 revenue $81.6B vs $79.2B estimate; Q2 guide $91.0B (±2%) — 15% sequential growth; data center $75.2B nearly doubled YoY", "url": "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-first-quarter-fiscal-fq78amc9h84m.html" },
+      { "label": "WTI crude fell ~5% to ~$98 on Middle East peace deal hopes — first sub-$100 close since early May; partial inflation pressure relief", "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-may-20-2026/" },
+      { "label": "Russell 2000 +2.44% led the tape — rate-sensitive small caps benefiting most from oil's decline; breadth expanded beyond megacap", "url": "https://finance.yahoo.com/quote/%5ERUT/" },
+      { "label": "FOMC April minutes: 8-4 hawkish dissenting vote (first in that proportion since Oct 1992); CME FedWatch now prices 63% year-end hike odds", "url": "https://www.benzinga.com/news/politics/26/05/52705469/fed-minutes-april-2026-rate-hike-odds-inflation" },
+      { "label": "30Y UST ~5.09% — healing from morning's 5.20% but still above the 5.0% regime trigger; two-session confirmation below 5.05% still required", "url": "https://finance.yahoo.com/quote/%5ETYX/" },
+      { "label": "SpaceX filed S-1 for $75B raise at $1.75T valuation (SPCX on Nasdaq); roadshow June 4, trading June 12 — largest IPO in history, a structural liquidity event within three weeks", "url": "https://www.cnbc.com/2026/05/20/spacex-ipo-live-updates.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7432.0,  "change_pct":  1.08, "as_of": "2026-05-20T20:00:00Z" },
+    "nasdaq": { "level": 26268.0, "change_pct":  1.54, "as_of": "2026-05-20T20:00:00Z" },
+    "vix":    { "level": 16.86,   "change_pct": -5.4,  "as_of": "2026-05-20T20:00:00Z" },
+    "ust10y": { "level": 4.59,    "change_bps":  -7,   "as_of": "2026-05-20T20:00:00Z" },
+    "dxy":    { "level": 99.30,   "change_pct":  0.04, "as_of": "2026-05-20T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.86, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.09,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.30, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7432,  "trigger_below": 7460, "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Regular session closed ~$222 (range 217.91–224.48). AH: $81.6B Q1 revenue beat, $91.0B Q2 guide, initially -2% sell-the-news then recovered to +1.93%. Wait for pre-market $226+ before sizing in Thursday morning.", "sentiment": "positive" },
+    { "ticker": "AAPL",  "note": "Trail stop trim at $302 executed per morning setup. Residual held with $290 stop; AAPL likely recovered in the afternoon rally. Quality-flight bid remains intact.", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "Quality megacap leader; should extend Thursday as tech broadly benefits from NVDA's AI capex confirmation. Highest-conviction HOLD in the portfolio.", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "Recovered from $388 morning low toward ~$394. NVDA's AI confirmation is a read-through for GOOGL data center revenue. The $398–402 entry from May 19 brief is approaching.", "sentiment": "positive" },
+    { "ticker": "XLE",   "note": "WTI fell ~5% to $98 — the morning reinstatement went the wrong direction. Oil sub-$100 removes the structural inflation-hedge thesis. Review the position; $56.50 stop is close.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "SOXX at gap open", "reason": "If SOXX opens up 4%+ Thursday on NVDA read-through, the gap is too wide to chase; worst-RR entry of the day is at the open print", "better_entry": "First 30-minute consolidation Thursday; NVDA holding $225+ is the anchoring condition" },
+    { "ticker": "SPX at 7,500",     "reason": "If SPX gaps above 7,500 at Thursday's open, 7,460 needs to BE confirmed support before index exposure is added — not a launch pad chased 40 points above last resistance", "better_entry": "Retest of 7,460 as intraday support on light volume after any gap open" },
+    { "ticker": "XLE",              "reason": "WTI sub-$100 removes the core inflation-hedge energy thesis; the morning's reinstatement was wrong-direction today", "better_entry": "WTI reclaiming $103 on two consecutive closes or confirmed Iran escalation" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Q1 revenue $81.6B and Q2 guide of $91.0B (+15% sequential) confirm Blackwell demand is intact and accelerating. Data center revenue nearly doubled YoY to $75.2B. The initial -2% AH sell-the-news followed by recovery to +1.93% is consistent with a real beat vs. an over-hyped one. This is the entry that was correctly avoided into the binary event; the event has now resolved positively.",
+      "entry": "$225–232 at Thursday's open; require pre-market $226+ to confirm AH hold",
+      "invalidation": "$215 daily close",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "SMH",
+      "direction": "long",
+      "thesis": "NVDA's $91B Q2 guide is a direct read-through for the AI semi complex. AMD, TSM, and AVGO supply the same data center build-out. SMH lagged NVDA heading into earnings — the sector ETF is the lower-beta expression of AI capex confirmation, avoiding single-stock post-earnings noise.",
+      "entry": "Thursday open, first 30-minute consolidation; do not chase if SMH opens up more than 4%",
+      "invalidation": "NVDA falls below $215 or SPX loses 7,400",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "TBT",
+      "direction": "long",
+      "thesis": "FOMC April minutes confirmed the most hawkish Fed posture since October 1992 (8-4 vote). CME FedWatch prices 63% year-end hike. Warsh's June 16–17 meeting is the next structural catalyst for the 30Y. TBT (2x inverse long-dated Treasury) hedges the dominant macro headwind while equity longs in AI names are held.",
+      "entry": "Any TBT pullback toward $27–28",
+      "invalidation": "30Y closes below 4.85% on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    }
+  ],
+  "bear_case": "FOMC April minutes were the most hawkish since October 1992, and equity markets ignored them because NVDA's numbers were better — that ordering has historically reversed sharply when the macro input catches up to the fundamental one. If the 30Y spikes back above 5.20% Thursday morning on hawkish Fed speaker commentary, the NVDA-driven rally fails to hold and SPX rolls back below 7,400. The SpaceX IPO ($75B raise, June 12 trading) represents the largest equity capital drain in history arriving in three weeks; institutional managers funding the SPCX allocation will begin raising cash from winning positions — which now include the AI complex. If SPX closes below 7,400 with the 30Y above 5.20% on Thursday, the HOLD-to-BUY upgrade path is invalidated; reinstate Step Aside.",
+  "body_mdx": "data/briefings/markets/2026-05-20-night.mdx"
+}
