@@ -1,0 +1,78 @@
+{
+  "routine": "markets",
+  "date": "2026-05-19",
+  "window": "morning",
+  "generated_at": "2026-05-19T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD / SELECTIVE — bounce setup forming",
+    "conviction": "medium",
+    "rationale_short": "Monday closed off the lows after testing 7,318 intraday and reclaiming 7,360 into the bell. VIX retreated from 19.4 to 17.8. Tuesday pre-market is firm. The capitulation case is unlikely now; the stabilization case is plausible. Step Aside downgraded to HOLD — buy quality on weakness, do not chase strength, semis still avoided.",
+    "supporting_data": [
+      { "label": "SPX closed Monday at 7,389 — bounced 71 points off the 7,318 low, reclaimed 7,360", "url": "https://finance.yahoo.com/quote/%5EGSPC/" },
+      { "label": "VIX 17.84 close (-7.4% from intraday high of 19.42)", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "ES futures +0.45% overnight; Asia bid (Nikkei +1.21%)", "url": "https://finance.yahoo.com/quote/ES%3DF/" },
+      { "label": "BTC stabilized at $77,950 (+1.05% from Monday low) — first risk-on tell", "url": "https://finance.yahoo.com/quote/BTC-USD/" },
+      { "label": "30Y yield 5.08% (-6bps) — duration catching a real bid", "url": "https://finance.yahoo.com/quote/%5ETYX/" },
+      { "label": "AAPL +1.4%, MSFT +1.1% pre-market — defensive megacap leadership intact, with growth catching up", "url": "https://finance.yahoo.com/quote/AAPL/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7421.5,  "change_pct":  0.44, "as_of": "2026-05-19T13:35:00Z" },
+    "nasdaq": { "level": 29045.8, "change_pct":  0.77, "as_of": "2026-05-19T13:35:00Z" },
+    "vix":    { "level": 17.32,   "change_pct": -2.91, "as_of": "2026-05-19T13:35:00Z" },
+    "ust10y": { "level": 4.56,    "change_bps": -6,    "as_of": "2026-05-19T13:35:00Z" },
+    "dxy":    { "level": 99.18,   "change_pct": -0.27, "as_of": "2026-05-19T13:35:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                "value": 17.32, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",          "value": 5.08,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",                "value": 99.18, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,360",       "value": 7421,  "trigger_below": 7360, "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Monday low $217.40, closed $222.85; pre-market $225.10 +1.0%. Didn't print the $215 trigger — passed on the add", "sentiment": "neutral"  },
+    { "ticker": "AAPL",  "note": "Closed Monday +1.4%; pre-market +1.4% again. Quality bid that became *the* trade",                                  "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "+1.1% pre-market on continuing flight-to-quality; still preferred long",                                            "sentiment": "positive" },
+    { "ticker": "PLTR",  "note": "Finally flushed Monday afternoon -3.2% to $129.80. Forced-buyer thesis complete — now watch for stabilization",     "sentiment": "neutral"  },
+    { "ticker": "TSLA",  "note": "Bounced off $405 Monday to close $414; following BTC's stabilization. Not adding yet",                              "sentiment": "neutral"  }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA", "reason": "Missed the $215 trigger by 2 points Monday; chasing the bounce at $225 is the worst possible RR. Wait for retest", "better_entry": "$218 OR VIX <15" },
+    { "ticker": "SOXX", "reason": "Bounced with the tape but momentum break is intact. AI capex narrative remains under question heading into next earnings", "better_entry": "$248 confirmed reclaim on 2 daily closes" },
+    { "ticker": "IWM",  "reason": "Held the short into Monday's bounce attempt; closed $281 (just below $282 trigger). Bounce-tape risk now skews vs short — close half the position", "better_entry": "$285 retest with VIX 18+ before re-shorting" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AAPL",
+      "direction": "long",
+      "thesis": "The cleanest expression of the quality-flight bid that emerged Friday and accelerated through Monday's low. Up 4 of the last 5 sessions while broad tape struggled. New 50DMA breakout into Tuesday. Defensive AI exposure without semis capex risk.",
+      "entry": "$303-305 on open",
+      "invalidation": "$298 daily close",
+      "conviction": "medium",
+      "horizon": "3-6 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Carried forward — energy now the relative-strength sector. WTI holding $99-101. Pull-back to $58.50 zone gives entry. Decoupling intact even as broad tape stabilizes.",
+      "entry": "$58.50-59.50",
+      "invalidation": "$56.50 close",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Trim half. Russell held $279 support Monday and is bouncing with the tape; bounce-tape risk is asymmetric for shorts here. The original thesis (breadth breakdown) is still right but the timing is now ambiguous.",
+      "entry": "trim half of position at $281",
+      "invalidation": "$285 daily close",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "Counter-argument: a one-session bounce off a regime-trigger flush rarely marks the actual end of the move. Historically, equity drawdowns after a four-trigger breach (VIX, 30Y, breadth, sector dispersion all firing the same day) average 4-6 sessions to find the low and another 5-10 sessions to retest it. Monday's bounce off 7,318 is the textbook *first relief leg* that gets sold into within 2-3 sessions. The 30Y at 5.08% is still above the 5.0% trigger; until it closes below 5.0% for two consecutive sessions, the regime signal is intact, not resolved. Upgrading to HOLD this early risks adding back exposure just before the retest leg. Invalidation level: if SPX breaks back below 7,360 with VIX printing 19+ this week, the HOLD downgrade was premature and Step Aside should be reinstated.",
+  "body_mdx": "data/briefings/markets/2026-05-19-morning.mdx"
+}

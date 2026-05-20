@@ -1,0 +1,78 @@
+{
+  "routine": "markets",
+  "date": "2026-05-18",
+  "window": "morning",
+  "generated_at": "2026-05-18T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — CONFIRMED (Monday gap-down playing out)",
+    "conviction": "high",
+    "rationale_short": "Monday open is doing exactly what Friday's regime-trigger flush implied. Asia opened heavy, ES futures dropped 0.8% overnight, VIX prints 19.1 in the first hour, 30Y holds 5.14%. The OPEX-mechanics reversal thesis is dead. Conviction firms from medium to high — wait for VIX <16 OR SPX 7,300 capitulation before adding risk.",
+    "supporting_data": [
+      { "label": "ES futures -0.82% overnight; cash open gapped to 7,348", "url": "https://finance.yahoo.com/quote/ES%3DF/" },
+      { "label": "VIX 19.12 first hour — broke higher, not lower, vs Friday's 18.43 close", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "Nikkei closed -2.31% overnight; DAX -1.74% — global confirmation, not isolated US", "url": "https://finance.yahoo.com/quote/%5EN225/" },
+      { "label": "BTC $77,140 (-1.7% from Friday close) — crypto failed to bounce, continued lower", "url": "https://finance.yahoo.com/quote/BTC-USD/" },
+      { "label": "30Y yield 5.14% — duration still on offer; no flight-to-bonds yet", "url": "https://finance.yahoo.com/quote/%5ETYX/" },
+      { "label": "Russell 2000 -1.1% first hour — small caps leading lower again", "url": "https://finance.yahoo.com/quote/%5ERUT/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7348.2,  "change_pct": -0.81, "as_of": "2026-05-18T13:35:00Z" },
+    "nasdaq": { "level": 28823.5, "change_pct": -1.04, "as_of": "2026-05-18T13:35:00Z" },
+    "vix":    { "level": 19.12,   "change_pct":  3.74, "as_of": "2026-05-18T13:35:00Z" },
+    "ust10y": { "level": 4.62,    "change_bps":  2,    "as_of": "2026-05-18T13:35:00Z" },
+    "dxy":    { "level": 99.45,   "change_pct":  0.18, "as_of": "2026-05-18T13:35:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                  "value": 19.12, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",            "value": 5.14,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",                  "value": 99.45, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,360 support", "value": 7348,  "trigger_below": 7360, "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Down another -1.8% pre-market to $221; getting closer to the $215 entry trigger but not there yet", "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "Defensive bid persisting +0.4% pre-market — Friday's quality-flight trade still working",                "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "Flat pre-market after Friday's +3.05% rip; quality bid intact",                                          "sentiment": "neutral"  },
+    { "ticker": "TSLA",  "note": "BTC-correlated bleeding continues; -2.1% pre-market on weekend crypto weakness",                        "sentiment": "negative" },
+    { "ticker": "PLTR",  "note": "Still no flush — flat pre-market while peers down 1–2%. Forced-buyer exhaustion thesis intact",         "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA", "reason": "Approaching but not yet at the $215 trigger; gap-down catches are the highest-loss pattern in regime-risk tape", "better_entry": "$215 close OR VIX <16" },
+    { "ticker": "IWM",  "reason": "Russell down another -1.1% in the first hour. This is the SHORT setup confirming, not a buying opportunity",     "better_entry": "VIX <17 AND >$282 reclaim" },
+    { "ticker": "SOXX", "reason": "Semis ETF down -1.4% open; same broken-momentum setup as Friday. Don't try to catch the knife mid-flush",         "better_entry": "$235-240 only on stabilized VIX <17" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Friday's breadth-breakdown thesis confirmed by Monday gap-down. Russell -1.1% in first hour, no defensive bid. Highest-conviction setup of the three — trigger already armed, now in motion.",
+      "entry": "$280-282 (already in zone)",
+      "invalidation": "$290 daily close",
+      "conviction": "high",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "VIXY",
+      "direction": "long",
+      "thesis": "VIX broke through 19 on Monday open after closing Friday at 18.43. Term structure flattening. Tactical long-vol via VIXY captures continued risk-off path of least resistance. Cleaner expression than equity shorts because it doesn't need a specific level.",
+      "entry": "$31-32 spot",
+      "invalidation": "VIX <16 close",
+      "conviction": "medium",
+      "horizon": "5-10 sessions"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Carried forward — only sector green Friday, WTI holding $100. Pull-back to $58 zone gives entry on the rare risk-on hide-out. Energy decoupling from broad tape is the cleanest long expression.",
+      "entry": "$58-59.50 on pullback",
+      "invalidation": "$56.50 close",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "Counter-argument: a Monday gap-down following a Friday flush is the textbook 'second leg' setup that bottoms intraday and reverses by Tuesday. Capitulation entries are explicitly defined ahead — SPX 7,300 or VIX >22 — and Monday's open at 7,348 with VIX 19 is neither yet. Treating an unfinished move as confirmation risks selling the low. The DXY is still only at 99.45 (not the 100+ that signals genuine USD-flight panic), and the 10Y at 4.62% is up just 2bps overnight, suggesting bonds are starting to catch a defensive bid — that's a stabilization signal, not crisis. Invalidation level: if SPX reclaims 7,460 by Tuesday's close AND VIX prints below 17, the high-conviction step-aside call should be downgraded to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-05-18-morning.mdx"
+}
