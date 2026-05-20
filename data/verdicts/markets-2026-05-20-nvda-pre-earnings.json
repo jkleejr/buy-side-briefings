@@ -1,0 +1,128 @@
+{
+  "routine": "markets",
+  "date": "2026-05-20",
+  "window": "afternoon",
+  "generated_at": "2026-05-20T19:00:00Z",
+  "is_seed": false,
+  "title": "NVDA Q1 FY27 — Pre-Earnings Setup",
+  "brief_type": "pre-earnings",
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD / STEP ASIDE — AWAIT THE PRINT",
+    "conviction": "low",
+    "rationale_short": "NVDA reports Q1 FY27 at 4pm ET with consensus at $78.8B rev and $1.77–$1.78 EPS. Options imply ±12.9% (~$29) move on a $224.86 stock. This is a setup brief, not a directional call — the right posture is wait-and-confirm before sizing. Compare this brief to the 7pm night briefing for the post-earnings reaction.",
+    "supporting_data": [
+      { "label": "Q1 Rev consensus: $78.8B — company guided $78.0B ±2%", "url": "https://www.heygotrade.com/en/blog/nvidia-q1-fy2027-earnings-preview-may-20-setup-catalysts/" },
+      { "label": "Q1 EPS consensus: $1.77–$1.78 adjusted (+120% YoY)", "url": "https://tickeron.com/blogs/nvidia-nvda-q1-fiscal-2027-earnings-preview-data-center-strength-in-focus-13538/" },
+      { "label": "Q1 Data Center rev consensus: ~$73B", "url": "https://www.heygotrade.com/en/blog/nvidia-q1-fy27-earnings-preview-may-20-2026/" },
+      { "label": "Q1 Gross margin consensus: 74.5% vs 75% company guide", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261902589-nvidia-q1-fy2027-earnings-may-20-nvda-a-buy-at-224-before-most-important-print-tradingkey" },
+      { "label": "Q2 rev consensus: $86.08B; whisper $90B — guide is the whole story", "url": "https://www.techi.com/nvda-earnings-may-20-q2-guide-q1-beat/" },
+      { "label": "Options-implied move: ±12.9% (~$29); IVR 61; positive call skew", "url": "https://averin.com/en/journal/nvda-earnings-may-2026-options-iv-strategy" }
+    ]
+  },
+  "earnings_setup": {
+    "ticker": "NVDA",
+    "event": "Q1 FY2027 Earnings",
+    "report_time_et": "2026-05-20T16:00:00-04:00",
+    "call_time_et": "2026-05-20T17:00:00-04:00",
+    "current_price": 224.86,
+    "change_pct_today": 1.7,
+    "open_price": 219.62,
+    "day_range_low": 220.50,
+    "day_range_high": 225.30,
+    "consensus": {
+      "revenue_b": 78.8,
+      "eps_adjusted": 1.77,
+      "dc_revenue_b": 73.0,
+      "gross_margin_pct": 74.5,
+      "q2_guidance_consensus_b": 86.08,
+      "q2_whisper_b": 90.0
+    },
+    "options": {
+      "implied_move_pct": 12.9,
+      "implied_move_dollars": 29,
+      "front_iv_pct_range": "44–50",
+      "iv_rank": 61,
+      "skew": "positive — calls at premium to puts",
+      "historical_avg_earnings_move_pct": "8–12"
+    }
+  },
+  "scenarios": [
+    {
+      "name": "Beat & Raise",
+      "probability_pct": 35,
+      "conditions": "Rev $80–81B; DC $74–76B; Q2 guide $88–92B; incremental China progress",
+      "nvda_move": "+8 to +12%",
+      "nvda_target_range": "$242–$252"
+    },
+    {
+      "name": "In-Line",
+      "probability_pct": 40,
+      "conditions": "Rev $78.5–79.5B; Q2 guide $85–87B; GM at guide; no China unlock",
+      "nvda_move": "±3%",
+      "nvda_target_range": "$218–$232"
+    },
+    {
+      "name": "Miss / Light Guide",
+      "probability_pct": 25,
+      "conditions": "Rev ≤$78.5B OR Q2 ≤$84B; GM compression; China permanently excluded",
+      "nvda_move": "-6 to -10%",
+      "nvda_target_range": "$202–$211"
+    }
+  ],
+  "questions_to_watch": [
+    "Q1 Revenue: Beat $78.8B consensus by ≥$1B? Or miss the $80B whisper?",
+    "Data Center: Beat $73B consensus? Sequential acceleration or deceleration?",
+    "Gross margin: At/above 75% guided? Or Blackwell CoGs compress to sub-74%?",
+    "Q2 Guidance: ≥$88B (bull alive) or below $85B (bear activated) vs $86.08B consensus?",
+    "China commentary: Any H200/GB200 visibility? Or permanently excluded from guidance?"
+  ],
+  "comp_setup": {
+    "alphabet": { "event": "Q1 FY26 earnings", "reaction": "+10%", "read": "hyperscaler AI demand confirmed; cloud +18%" },
+    "meta": { "event": "Q1 FY26 earnings", "reaction": "sold on capex", "read": "fundamental beat but punished on $135B capex guidance" },
+    "amazon": { "event": "Q1 FY26 earnings", "reaction": "flat", "read": "no capex raise — management comfortable with current pacing" },
+    "microsoft": { "event": "Q1 FY26 earnings", "reaction": "positive", "read": "capex up 24% to $190B — direct NVDA demand signal" },
+    "avgo": { "event": "custom silicon narrative", "reaction": "growing", "read": "Meta/Broadcom partnership at 1GW+ — competing narrative to NVDA" }
+  },
+  "snapshot": {
+    "nvda": { "level": 224.86, "change_pct": 1.7, "day_range_low": 220.50, "day_range_high": 225.30, "as_of": "2026-05-20T19:00:00Z" },
+    "sp500": { "level": 7464, "note": "softening from 7,488 morning open; VIX elevated", "as_of": "2026-05-20T19:00:00Z" },
+    "vix": { "level": 18.0, "note": "at/near 18 bearish trigger threshold", "as_of": "2026-05-20T19:00:00Z" },
+    "soxx": { "level": 496, "note": "NAV May 18; up 64% YTD — extended into the print", "as_of": "2026-05-18" },
+    "smh": { "level": 537, "note": "May 19 close", "as_of": "2026-05-19" },
+    "ust10y": { "level": 4.51, "note": "4.51–4.65% range today; 10Y at 16-month highs mid-week", "as_of": "2026-05-20T13:35:00Z" },
+    "dxy": { "level": 98.91, "change_pct": -0.27, "as_of": "2026-05-20T13:35:00Z" }
+  },
+  "trade_setups": [
+    {
+      "asset": "NVDA options",
+      "direction": "calls-only for bulls / step aside for non-directional",
+      "thesis": "Straddles near fair value at ±12.9% implied ($29 on $224.86). Historical average earnings move is 8–12% — straddle breakeven is at the high end of that range. IV crush of 40–55% is the post-print norm. Step aside on straddles unless you have directional conviction; directional bulls buy calls only.",
+      "entry": "May 23 or June 6 $225 calls for bull thesis; step aside otherwise",
+      "invalidation": "IVR > 60 without directional edge; do not buy straddles",
+      "conviction": "low",
+      "horizon": "1–2 days"
+    },
+    {
+      "asset": "SMH",
+      "direction": "short-hedge",
+      "thesis": "SOXX up 64% YTD heading into the most binary semi catalyst of the year. SMH puts or short notional hedges existing longs vs. event risk at a low carry cost.",
+      "entry": "SMH $535 June puts; or short 1/4 notional SMH into print",
+      "invalidation": "NVDA beat; SOXX gaps above $510 on open Thursday — cover immediately",
+      "conviction": "medium",
+      "horizon": "1–3 days"
+    },
+    {
+      "asset": "NVDA / AMD pair",
+      "direction": "long NVDA / short AMD (post-print activation only)",
+      "thesis": "A NVDA beat confirms AI capex concentration at NVDA over AMD. Post-print only: long NVDA / short AMD captures spread compression. AMD rallies less and gives back faster after NVDA beats historically.",
+      "entry": "Post-print ONLY if beat confirmed",
+      "invalidation": "AMD custom silicon revenue beat suggesting structural NVDA share capture",
+      "conviction": "medium",
+      "horizon": "1–2 weeks"
+    }
+  ],
+  "bear_case": "Counter-argument: NVDA enters this print up ~78% from its April lows and at 33x forward earnings — a valuation that prices no margin for a guide miss. The 1.7% earnings-day bid and positive call skew signal institutional pre-positioning, not fresh discovery. When smart money has already expressed the bull view, a beat without surprise magnitude leaves no incremental buyer; the stock stalls or reverses into the IV crush. A Q2 guide at $85B — technically sequential growth — but below the $87B the bull narrative requires could produce -6% on a nominal beat: a textbook sell-the-news outcome. The $5.5B H20 charge and permanent China exclusion from guidance are structural impairments that the bull thesis requires hyperscaler demand to fully offset. Invalidation level: Q2 guide ≥$88B AND incrementally positive China commentary; cover hedges at Thursday open if both conditions met.",
+  "body_mdx": "data/briefings/markets/2026-05-20-nvda-pre-earnings.mdx"
+}
