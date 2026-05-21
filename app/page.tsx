@@ -9,7 +9,6 @@ import SectorRotation from "@/components/sector-rotation";
 import FedPanel from "@/components/fed-panel";
 import CyclePanel from "@/components/cycle-panel";
 import UsIndicesPanel from "@/components/us-indices-panel";
-import TechStocksPanel from "@/components/tech-stocks-panel";
 import MetalsPanel from "@/components/metals-panel";
 import GlobalMarketsPanel from "@/components/global-markets-panel";
 import UsPulsePanel from "@/components/us-pulse-panel";
@@ -55,20 +54,23 @@ export default function Home() {
           <CryptoPanel />
         </div>
 
-        {/* Row 2 — US indices (SPY · QQQ · IWM) + compact Metals panel */}
+        {/* Row 2 — SPY only on the home page; QQQ + IWM live on /indices,
+            tech stocks on /tech (linked from the nav). */}
         <div className="lg:col-span-9">
-          <UsIndicesPanel />
+          <UsIndicesPanel
+            assets={[
+              { symbol: "SPY", label: "SPY", sublabel: "S&P 500", color: "#22d3ee" },
+            ]}
+            code="SPY"
+            title="SPY · S&P 500"
+            learn="The single most-watched US equity benchmark — SPDR S&P 500 ETF. Use this as the 'is the market up or down today?' read; full US-indices comparison (SPY · QQQ · IWM) lives on the Indices page."
+          />
         </div>
         <div className="lg:col-span-3">
           <MetalsPanel />
         </div>
 
-        {/* Row 3 — Major tech stocks: Mag 7 + AVGO */}
-        <div className="lg:col-span-12">
-          <TechStocksPanel />
-        </div>
-
-        {/* Row 4 — US breadth & risk internals (the 6 numbers a desk trader scans first) */}
+        {/* Row 3 — US breadth & risk internals (the 6 numbers a desk trader scans first) */}
         <div className="lg:col-span-12">
           <UsPulsePanel />
         </div>

@@ -1,0 +1,43 @@
+{
+  "id": "short-xle-oil-thesis-broken-2026-05-21",
+  "title": "Short XLE — Energy Thesis Breaking on Iran Peace Headlines",
+  "ticker": "XLE",
+  "asset_class": "etf",
+  "category": "contrarian",
+  "direction": "short",
+  "conviction": "low",
+  "time_horizon": "2-4 weeks",
+  "current_price": 58.0,
+  "entry": "Short on bounce to $59-$60 (mean-reversion entry after Wednesday's selloff). Avoid initiating on continued momentum down — wait for one positive oil session for cleaner entry.",
+  "stop_loss": "$62 daily close — implies WTI back above $103 on confirmed Iran escalation",
+  "targets": [
+    "$55 — measured move from breakdown, -5%",
+    "$52 — Iran ceasefire holds + Saudi production normalizes, -10%",
+    "$48 — WTI to $80, energy capex cycle peak narrative, -17%"
+  ],
+  "risk_reward": "1:2 to first target",
+  "position_size_pct": 2,
+  "catalyst": "WTI fell ~5% Wednesday to $98 — first sub-$100 close since early May on Middle East peace deal hopes. Trump publicly toggling 'ceasefire on life support' language but headlines lean toward de-escalation in next 2-3 weeks. XLE has been priced for $105-$110 sustained WTI; sub-$100 breaks the structural energy thesis.",
+  "thesis": "This is a tactical countertrend short, not a structural call. The energy sector has been priced for the Iran war continuing indefinitely — WTI sustainably above $100, refiner margins expanded, oil majors' capex cycles ramping. Wednesday's 5% WTI drop signals the market is pricing in some non-zero probability of ceasefire/de-escalation. If that probability rises to 50%+ over the next 2-4 weeks (Trump's stated 'life support' is rhetoric, but back-channel negotiations are ongoing), WTI mean-reverts to $85-$90. At those levels, XLE has 8-12% downside. Critically: this is sized SMALL (2%) and stopped TIGHT ($62) because the Iran war could re-escalate overnight with a single missile launch. The trade is asymmetric *only* if you respect the stop — the upside on a peace deal is 10-15%, the downside on a re-escalation is unlimited (XLE could hit $70-$75 on Hormuz blockade). Better expressed as a put spread (long $58 puts, short $52 puts) to cap the tail risk if you can structure options.",
+  "bull_case": "Iran-Israel formal ceasefire announced within 2-3 weeks (back-channel negotiations succeed); Hormuz fully reopens; Saudi raises production to capture market share. WTI to $80; XLE to $48-$52. Refiners get crushed; integrated oil majors (XOM, CVX) trim capex guidance; sector multiple compresses from 14x to 10x forward earnings.",
+  "bear_case": "Iran-Israel war re-escalates — single missile attack on Hormuz oil tanker triggers full blockade; WTI gaps to $130 overnight; XLE to $70+ in 24 hours. Tail risk: 25%+ adverse move on a single news event. This is why position sizing is tiny.",
+  "invalidation": "Daily close above $62, OR Hormuz blockade event reported",
+  "sources": [
+    {
+      "label": "WTI crude analysis May 20 2026 — FX Daily Report",
+      "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-may-20-2026/"
+    },
+    {
+      "label": "Energy Select Sector SPDR (XLE)",
+      "url": "https://www.sectorspdrs.com/sectorspdr/sector/xle"
+    },
+    {
+      "label": "Iran ceasefire life support — CNBC",
+      "url": "https://www.cnbc.com/2026/05/05/oil-prices-today-wti-brent-iran-war-trump-hormuz.html"
+    }
+  ],
+  "created_at": "2026-05-21",
+  "expires_at": "2026-06-21",
+  "status": "active",
+  "tags": ["energy", "contrarian", "short", "Iran", "tactical", "low-conviction"]
+}

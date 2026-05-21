@@ -278,6 +278,90 @@ export function getRecentMentionsByTicker(
   return map;
 }
 
+// ---- Opportunities (data/opportunities/*.json) ----------------------------
+
+export type OpportunityDirection = "long" | "short" | "long_vol" | "short_vol" | "pair";
+export type OpportunityConviction = "low" | "medium" | "high";
+export type OpportunityAssetClass =
+  | "equity"
+  | "etf"
+  | "crypto"
+  | "commodity"
+  | "options"
+  | "fx"
+  | "fixed_income"
+  | "pair";
+export type OpportunityCategory =
+  | "momentum"
+  | "value"
+  | "catalyst"
+  | "contrarian"
+  | "options"
+  | "pair_trade"
+  | "macro"
+  | "sector"
+  | "event"
+  | "thematic";
+export type OpportunityStatus =
+  | "active"
+  | "triggered"
+  | "stopped_out"
+  | "target_hit"
+  | "expired"
+  | "thesis_broken";
+
+export type Opportunity = {
+  id: string;
+  title: string;
+  ticker: string;
+  asset_class: OpportunityAssetClass;
+  category: OpportunityCategory;
+  direction: OpportunityDirection;
+  conviction: OpportunityConviction;
+  time_horizon: string;
+  current_price?: number;
+  entry: string;
+  stop_loss: string;
+  targets: string[];
+  risk_reward: string;
+  position_size_pct: number;
+  catalyst: string;
+  thesis: string;
+  bull_case: string;
+  bear_case: string;
+  invalidation: string;
+  sources: { label: string; url: string }[];
+  created_at: string;
+  expires_at?: string;
+  status: OpportunityStatus;
+  tags: string[];
+};
+
+export function getAllOpportunities(): Opportunity[] {
+  const dir = path.join(DATA_DIR, "opportunities");
+  if (!fs.existsSync(dir)) return [];
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
+  const list = files
+    .map((f) => readJson<Opportunity>(path.join(dir, f)))
+    .filter((o): o is Opportunity => o !== null);
+  return list.sort((a, b) => {
+    // Active first, then by conviction (high > med > low), then by created_at desc
+    const statusRank = (s: OpportunityStatus) => (s === "active" ? 0 : 1);
+    const sa = statusRank(a.status) - statusRank(b.status);
+    if (sa !== 0) return sa;
+    const convRank = (c: OpportunityConviction) =>
+      c === "high" ? 0 : c === "medium" ? 1 : 2;
+    const cb = convRank(a.conviction) - convRank(b.conviction);
+    if (cb !== 0) return cb;
+    return b.created_at.localeCompare(a.created_at);
+  });
+}
+
+export function getOpportunity(id: string): Opportunity | null {
+  const file = path.join(DATA_DIR, "opportunities", `${id}.json`);
+  return readJson<Opportunity>(file);
+}
+
 function normalizeDate(value: unknown): string {
   if (value instanceof Date) {
     const y = value.getUTCFullYear();

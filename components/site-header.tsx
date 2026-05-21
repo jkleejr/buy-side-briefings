@@ -4,7 +4,10 @@ import MobileNav from "./mobile-nav";
 
 const NAV = [
   { href: "/", code: "DASH", label: "Dashboard" },
+  { href: "/indices", code: "INDX", label: "Indices" },
+  { href: "/tech", code: "TECH", label: "Tech" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
+  { href: "/opportunities", code: "OPS", label: "Opportunities" },
   { href: "/digest", code: "WEEK", label: "Week" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist" },

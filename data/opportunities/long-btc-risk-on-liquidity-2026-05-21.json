@@ -1,0 +1,39 @@
+{
+  "id": "long-btc-risk-on-liquidity-2026-05-21",
+  "title": "Long BTC — Risk-On Confirmation + AI Capex Correlation",
+  "ticker": "BTC",
+  "asset_class": "crypto",
+  "category": "momentum",
+  "direction": "long",
+  "conviction": "medium",
+  "time_horizon": "1-3 months",
+  "current_price": 78500,
+  "entry": "Scale in: 40% at $76-$78K (current zone); 30% on confirmed Wednesday close above $80K; 30% on breakout above $82K with volume. Avoid chasing >$84K without consolidation.",
+  "stop_loss": "$72K daily close — breaks the May 19 swing low; correlation hedge to NDX fails",
+  "targets": [
+    "$85K — recapture pre-FOMC range, +8%",
+    "$92K — measured move from May low, +17%",
+    "$105K — ATH retest, +34%"
+  ],
+  "risk_reward": "1:3 to second target",
+  "position_size_pct": 3,
+  "catalyst": "BTC closed Wednesday at ~$78,500 (+1.7%) — same daily move as NDX (+1.5%) and ETH (+1.7%). Risk-on correlation is intact and AI capex confirmation is bullish for digital risk assets. SpaceX $75B IPO at $1.75T valuation (June 12) is a 'risk-asset-friendly' liquidity signal — institutions selling existing positions to fund new growth allocations spreads bid to BTC.",
+  "thesis": "Bitcoin is trading as a high-beta NDX proxy — the daily correlation has been 0.65-0.78 over the last 30 days. The AI capex narrative that's pulling NVDA and semis higher is the same narrative supporting BTC: it's a 'long innovation, long digital-economy' regime. The catalysts for continued BTC strength: (1) NVDA's confirmation of secular AI demand keeps the risk-on framework intact through summer; (2) SpaceX IPO sucks $75B into growth-asset bid, signaling institutional appetite for non-traditional risk; (3) Fed hawkishness is paradoxically supportive longer-term — if the Fed loses credibility on inflation control, the BTC-as-hedge narrative re-emerges; (4) US election year typically brings policy stimulus and weakening dollar tail risk. The cleanest expression is spot BTC or IBIT (BlackRock spot ETF). Don't size aggressively because correlation breaks at extremes — if NDX falls hard, BTC will fall harder. But within a constructive AI capex regime, BTC is the highest-beta way to participate.",
+  "bull_case": "NDX breaks above 27,000 within 2 weeks on NVDA continuation; BTC follows to $88-92K. SpaceX trading debut June 12 is a successful event; risk-on momentum extends. Spot Ethereum staking ETF approved Q2 (already in motion); brings crypto-curious institutional capital. Tail: a single nation-state announces BTC reserve buying (Argentina, El Salvador expansion) — BTC to $110-120K.",
+  "bear_case": "30Y spikes above 5.20% post-PCE May 27; risk-off across growth assets; BTC sells off harder than NDX (typical correlation in stress). $72K stop triggered, possibly extending to $65K on continued momentum. Tail: a major exchange or stablecoin issuer experiences a credit event; BTC drops to $60K-$65K rapidly.",
+  "invalidation": "Daily close below $72K, OR NDX below 25,500 with VIX above 20",
+  "sources": [
+    {
+      "label": "BTC price data — CoinMarketCap",
+      "url": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "label": "IBIT BlackRock Bitcoin ETF",
+      "url": "https://www.ishares.com/us/products/333011/ishares-bitcoin-trust"
+    }
+  ],
+  "created_at": "2026-05-21",
+  "expires_at": "2026-08-21",
+  "status": "active",
+  "tags": ["crypto", "BTC", "momentum", "risk-on", "AI-correlation"]
+}
