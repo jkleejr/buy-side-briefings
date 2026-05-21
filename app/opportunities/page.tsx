@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllOpportunities } from "@/lib/data";
 import Panel from "@/components/panel";
 import OpportunitiesList from "@/components/opportunities-list";
@@ -19,13 +20,21 @@ export default function OpportunitiesPage() {
 
   return (
     <div className="space-y-1">
-      <header className="space-y-1 px-1 pb-2">
-        <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
-          Opportunities
-        </h1>
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Active trade ideas · entries, stops, targets, theses · filter by direction · conviction · tag
-        </p>
+      <header className="flex items-start justify-between gap-2 px-1 pb-2">
+        <div className="space-y-1">
+          <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+            Opportunities
+          </h1>
+          <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
+            Active trade ideas · refreshed every weekday 8am ET · filter by direction · conviction · tag
+          </p>
+        </div>
+        <Link
+          href="/opportunities/history"
+          className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
+        >
+          HISTORY ▸
+        </Link>
       </header>
 
       {/* Summary tiles */}

@@ -1,5 +1,9 @@
 import type { MetadataRoute } from "next";
-import { getAllBriefings, getAllOpportunities } from "@/lib/data";
+import {
+  getAllBriefings,
+  getAllOpportunities,
+  getAllOpportunitySnapshots,
+} from "@/lib/data";
 import { getSiteUrl } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -41,5 +45,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...briefingRoutes, ...opportunityRoutes];
+  const snapshotRoutes = [
+    {
+      url: `${base}/opportunities/history`,
+      lastModified: now,
+      changeFrequency: "daily" as const,
+      priority: 0.6,
+    },
+    ...getAllOpportunitySnapshots().map((s) => ({
+      url: `${base}/opportunities/history/${s.date}`,
+      lastModified: new Date(s.generated_at),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    })),
+  ];
+
+  return [...staticRoutes, ...briefingRoutes, ...opportunityRoutes, ...snapshotRoutes];
 }

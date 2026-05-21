@@ -310,6 +310,14 @@ export type OpportunityStatus =
   | "expired"
   | "thesis_broken";
 
+export type OpportunityOutcome = {
+  closed_at: string;
+  final_price: number;
+  return_pct: number;
+  outcome_label: string;
+  note?: string;
+};
+
 export type Opportunity = {
   id: string;
   title: string;
@@ -335,6 +343,24 @@ export type Opportunity = {
   expires_at?: string;
   status: OpportunityStatus;
   tags: string[];
+  outcome?: OpportunityOutcome;
+};
+
+// Daily snapshot of the opportunities slate — written by the morning routine.
+export type OpportunitySnapshot = {
+  date: string;
+  generated_at: string;
+  summary: string;
+  active_ids: string[];
+  new_today_ids: string[];
+  closed_today: Array<{
+    id: string;
+    status: OpportunityStatus;
+    final_price?: number;
+    return_pct?: number;
+    note?: string;
+  }>;
+  current_prices?: Record<string, number>;
 };
 
 export function getAllOpportunities(): Opportunity[] {
@@ -360,6 +386,52 @@ export function getAllOpportunities(): Opportunity[] {
 export function getOpportunity(id: string): Opportunity | null {
   const file = path.join(DATA_DIR, "opportunities", `${id}.json`);
   return readJson<Opportunity>(file);
+}
+
+export function getAllOpportunitySnapshots(): OpportunitySnapshot[] {
+  const dir = path.join(DATA_DIR, "opportunities-snapshots");
+  if (!fs.existsSync(dir)) return [];
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
+  const list = files
+    .map((f) => readJson<OpportunitySnapshot>(path.join(dir, f)))
+    .filter((s): s is OpportunitySnapshot => s !== null);
+  return list.sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export function getOpportunitySnapshot(date: string): OpportunitySnapshot | null {
+  const file = path.join(DATA_DIR, "opportunities-snapshots", `${date}.json`);
+  return readJson<OpportunitySnapshot>(file);
+}
+
+// Aggregate opportunity stats — win rate, average return, counts.
+export function getOpportunityStats() {
+  const all = getAllOpportunities();
+  const active = all.filter((o) => o.status === "active").length;
+  const closed = all.filter((o) =>
+    ["target_hit", "stopped_out", "expired", "thesis_broken"].includes(o.status),
+  );
+  const wins = closed.filter((o) => o.status === "target_hit").length;
+  const losses = closed.filter(
+    (o) => o.status === "stopped_out" || o.status === "thesis_broken",
+  ).length;
+  const expired = closed.filter((o) => o.status === "expired").length;
+  const returns = closed
+    .map((o) => o.outcome?.return_pct)
+    .filter((r): r is number => typeof r === "number");
+  const avgReturn =
+    returns.length > 0 ? returns.reduce((a, b) => a + b, 0) / returns.length : null;
+  const hitRate =
+    wins + losses > 0 ? (wins / (wins + losses)) * 100 : null;
+  return {
+    total: all.length,
+    active,
+    closed: closed.length,
+    wins,
+    losses,
+    expired,
+    hit_rate_pct: hitRate,
+    avg_return_pct: avgReturn,
+  };
 }
 
 function normalizeDate(value: unknown): string {
