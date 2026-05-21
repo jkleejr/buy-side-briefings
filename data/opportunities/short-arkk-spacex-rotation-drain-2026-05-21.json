@@ -1,0 +1,48 @@
+{
+  "id": "short-arkk-spacex-rotation-drain-2026-05-21",
+  "title": "Short ARKK — SpaceX IPO Capital Drain from Disruptive Tech",
+  "ticker": "ARKK",
+  "asset_class": "etf",
+  "category": "event",
+  "direction": "short",
+  "conviction": "low",
+  "time_horizon": "3-6 weeks",
+  "current_price": 75.23,
+  "entry": "Short the bounce to $73-$77 (current zone). Avoid initiating on a day ARKK is down >3% — wait for a stabilization or up day for cleaner entry. Scale: 75% initial, 25% add if ARKK rallies to $79-$80 (better short entry).",
+  "stop_loss": "$82 daily close (~9% above entry midpoint) — implies SpaceX IPO investor demand is pre-committed from cash rather than existing equity positions, limiting forced selling",
+  "targets": [
+    "$70 — SpaceX roadshow begins June 4, capital drain accelerates, -6.9%",
+    "$64 — SPCX begins trading June 12, institutional rebalancing completes, -14.9%",
+    "$57 — post-IPO lock-up rotation continues, near 52-week low, -24.2%"
+  ],
+  "risk_reward": "1:2.6 to third target",
+  "position_size_pct": 2,
+  "catalyst": "SpaceX filed its S-1 today (May 21). Roadshow begins June 4; trading begins June 12 under ticker SPCX at a $1.75T valuation — the largest IPO in equity market history, raising approximately $75B. MSCI's February scenario analysis warned that megacap IPOs of this scale 'could unleash billions in passive investment flows, trigger sector reallocations across benchmark indexes, and drain liquidity from markets outside the newly listed companies.'",
+  "thesis": "ARKK is the most liquid expression of the basket of disruptive-innovation equities that institutional managers will trim to fund SpaceX allocations. The fund's holdings — Tesla (~10%), Coinbase, CRISPR Therapeutics, UiPath, Robinhood, and a dozen other high-conviction innovation names — share the thematic mandate of 'transformative technology.' SpaceX, as the defining transformative tech company of the decade, competes directly for allocation dollars with ARKK's entire portfolio in the minds of growth-oriented institutional allocators. When an institution decides to take a 1% position in SPCX at IPO, they need to find that 1% somewhere — and ARKK-style disruptive tech is the natural source.\n\nThe mechanics of the 22-day drain: the SpaceX roadshow begins June 4, with institutional orders building through June 11 pricing. During this window, portfolio managers who want SPCX exposure but are already at their risk/concentration limits must make trim decisions in the existing book. ARKK's $7-8B AUM and high daily volume make it the most efficient vehicle for this rotation — an institution can sell $50M of ARKK in a single session without moving the price materially. By contrast, selling individual innovation holdings (UiPath, CRISPR) in size is harder to execute cleanly. ARKK becomes the ATM for the SpaceX trade.\n\nThe position is sized small (2%) and stopped conservatively ($82) because the thesis has multiple ways to fail. If IPO demand is funded from cash rather than existing equity positions, there is no forced selling — and ARKK may actually benefit from the 'innovation is investable again' narrative that SpaceX's public debut represents. This is explicitly a low-conviction, event-driven tactical short, sized like an options bet.",
+  "bull_case": "SpaceX IPO creates a 'rising tide' moment for disruptive tech. Retail and institutional investors who couldn't previously access SpaceX now feel validated in the 'moonshot tech' thesis — ARKK gets inflows as the category expands rather than cannibalizes. Simultaneously, ARKK's AI-exposed holdings (Coinbase on BTC risk-on, Tesla on autonomous AI) benefit from the NVDA AI capex confirmation. ARKK rallies to $80-$85; short stopped out at $82.",
+  "bear_case": "The capital drain proves larger than anticipated. Multiple major hedge funds and growth mutual funds simultaneously reduce disruptive-tech exposure to fund SPCX in the June 4-11 window. ARKK's Tesla position (10%+ weight) faces additional selling pressure if Tesla's AI narrative is challenged. ARKK falls to $57-$60, capturing the full magnitude of the institutional rotation.",
+  "invalidation": "Daily close above $82, OR SpaceX IPO priced below $1.2T valuation (dramatically smaller capital requirement reduces rotation pressure), OR ARKK receives measurable net inflows during the roadshow window (would imply retail bid exceeds institutional selling)",
+  "sources": [
+    {
+      "label": "SpaceX IPO June 12, 2026 — TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261904604-spacex-ipo-spcx-date-set-for-june-12-175-trillion-valuation-tradingkey"
+    },
+    {
+      "label": "SpaceX IPO roadshow and capital rotation analysis — Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-ipo-coming-june-12-172220729.html"
+    },
+    {
+      "label": "ARKK ARK Innovation ETF — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/ARKK/"
+    },
+    {
+      "label": "SpaceX S-1 and $1.75T valuation — Fortune",
+      "url": "https://fortune.com/2026/05/21/rollout-complete-spacex-files-ipo-prospectus/"
+    }
+  ],
+  "created_at": "2026-05-21",
+  "expires_at": "2026-07-05",
+  "status": "active",
+  "tags": ["event", "IPO", "SpaceX", "short", "capital-rotation", "low-conviction"],
+  "outcome": null
+}

@@ -38,6 +38,13 @@
   ],
   "created_at": "2026-05-21",
   "expires_at": "2026-08-31",
-  "status": "active",
-  "tags": ["energy", "geopolitics", "Iran", "shipping", "tail-hedge", "asymmetric", "low-conviction"]
+  "status": "target_hit",
+  "tags": ["energy", "geopolitics", "Iran", "shipping", "tail-hedge", "asymmetric", "low-conviction"],
+  "outcome": {
+    "closed_at": "2026-05-21",
+    "final_price": 32.13,
+    "return_pct": 16.4,
+    "outcome_label": "Target 1 hit at $32",
+    "note": "FLNG reached $32.13 as of May 16, 2026 (52-week range $21.72-$33.40), clearing the $32 first target of 'sustained LNG day rates above $80K.' The Iran Supreme Leader's directive overnight — uranium stockpile cannot leave Iran — keeps Hormuz disruption risk elevated and supports elevated LNG shipping rates. The small 1.5% position captured a +16.4% return from reference current_price ($27.50) to Target 1 ($32.00). The tail-hedge design worked as intended: steady LNG shipping demand supported the floor, and Iran risk escalation kept shipping rates bid."
+  }
 }

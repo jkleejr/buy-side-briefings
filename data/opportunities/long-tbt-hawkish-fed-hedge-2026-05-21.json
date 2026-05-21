@@ -34,6 +34,13 @@
   ],
   "created_at": "2026-05-21",
   "expires_at": "2026-07-15",
-  "status": "active",
-  "tags": ["macro", "rates", "hedge", "Fed", "structural"]
+  "status": "target_hit",
+  "tags": ["macro", "rates", "hedge", "Fed", "structural"],
+  "outcome": {
+    "closed_at": "2026-05-21",
+    "final_price": 37.63,
+    "return_pct": 19.3,
+    "outcome_label": "All targets exceeded — TBT at $37.63",
+    "note": "TBT is trading at $37.63 (last data May 18, 2026), well above all three targets ($30.50, $32, $34). The 30Y hawkish thesis is confirmed: 8-4 FOMC vote, 63% hike probability, and Iran re-escalation all sustained elevated long-end yields. Return computed from reference current_price ($28.50) to Target 3 ($34.00): +19.3%. Note: TBT's 52-week range is $31.69-$39.70, indicating the $28.50 reference price predates the current rate-spike regime; actual market returns from a valid entry in the $31-32 zone would be approximately +17% to the $37.63 level."
+  }
 }

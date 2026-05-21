@@ -1,0 +1,44 @@
+{
+  "id": "long-amzn-aws-cloud-capex-2026-05-21",
+  "title": "Long AMZN — AWS Cloud AI Capex Read-Through",
+  "ticker": "AMZN",
+  "asset_class": "equity",
+  "category": "catalyst",
+  "direction": "long",
+  "conviction": "medium",
+  "time_horizon": "4-8 weeks",
+  "current_price": 265.0,
+  "entry": "Buy the current consolidation zone at $260-$268. Scale: 60% at current; add 40% on either a pullback to $255 or a confirmed break above $272 on volume.",
+  "stop_loss": "$248 daily close (~6.4% below entry midpoint) — implies AWS growth deceleration or consumer demand cracking",
+  "targets": [
+    "$278 — recapture 52-week high zone, +4.9%",
+    "$295 — new all-time high on AWS guide raise, +11.3%",
+    "$315 — full AWS AI infrastructure re-rating, +18.9%"
+  ],
+  "risk_reward": "1:3.2 to third target",
+  "position_size_pct": 4,
+  "catalyst": "NVDA's $91B Q2 guide is the strongest leading indicator for AWS revenue in 4-8 weeks. AWS processed 36% YoY revenue growth in Q1 2026 — accelerating sequentially. Every dollar of hyperscaler AI capex that NVDA's supply chain is absorbing flows directly to AWS infrastructure capacity. Amazon disclosed $6B in new data center commitments in the most recent earnings period; the $91B NVDA Q2 guide implies these commitments will be front-loaded.",
+  "thesis": "AWS is the largest public cloud by revenue and processes the majority of enterprise AI inference and training workloads. NVDA's $91B Q2 guide creates a direct read-through: if hyperscalers are collectively committing $91B to NVDA GPU supply in a single quarter, the cloud platforms (AWS, Azure, GCP) must be simultaneously expanding capacity to host those GPUs. AWS's competitive advantage is scale and ecosystem depth — the Bedrock AI platform, SageMaker infrastructure, and the broader enterprise software stack mean AWS captures both the raw compute revenue and the application-layer services revenue as AI adoption expands.\n\nThe tactical advantage of AMZN over NVDA right now is the absence of near-term binary risk. NVDA is in the 'beats and drops' pattern post-earnings, creating a consolidation period with unclear direction in the next 5-10 trading sessions. AMZN has no earnings until late July — the 4-8 week window is exactly the catalyst-free runway needed for the AI capex read-through to be reflected in the stock price ahead of the earnings catalyst. AMZN's 52-week range ($196-$278.56) means the $265 entry is below the 52-week high, leaving room for a new ATH breakout without requiring an extreme move.\n\nThe position is sized at 4% (medium, not high) because AMZN is not a clean single-factor AI play. The retail and advertising segments (~60% of revenue) face independent headwinds: 30Y at 5.12% pressures consumer confidence and mortgage-sensitive spending; PCE on May 27 will confirm whether inflation is sticky enough to affect discretionary retail. The thesis requires AWS to drive margin expansion fast enough to offset any retail softness — which is the consensus analyst view (62 buy recommendations, 0 sells) but not guaranteed.\n\nThe counter-party to this trade is the institutional manager selling AMZN in the next 22 days to fund a SpaceX IPO allocation. SPCX's $75B raise will require portfolio rebalancing across growth-oriented funds, and AMZN — as a $2.79T market cap member of every major benchmark — will receive some of those sell orders. This is a headwind in the 0-3 week window; the 4-8 week thesis absorbs the IPO-selling and positions for the July earnings catalyst.",
+  "bull_case": "AWS Q2 revenue growth accelerates to 40%+ YoY (vs 36% in Q1); Amazon Bedrock enterprise adoption surges (Fortune 500 companies lock in multi-year AI contracts); AMZN raises FY26 operating income guide at July earnings. Stock breaks above $278 52-week high, trades to new ATH at $295-$315 range. Tail: SpaceX IPO drives general 'tech is back' sentiment post-June 12 debut; AMZN benefits from the rising tide.",
+  "bear_case": "Consumer spending cracks on PCE hot print (May 27) + 30Y persistence; Amazon retail margins compress in Q2; AWS growth stalls at 28-30% as enterprise AI adoption is slower to monetize than NVDA's supply data suggests. Stock pulls toward $248-$252 stop zone. Tail: SpaceX IPO selling pressure is concentrated in megacap tech in the June 4-12 window; AMZN experiences unusual selling before the thesis can play out.",
+  "invalidation": "Daily close below $248, OR AWS Q2 growth guide below 28% YoY (would require an early update or an analyst estimate revision that implies this)",
+  "sources": [
+    {
+      "label": "Amazon Q1 2026 earnings — AWS revenue growth",
+      "url": "https://ir.aboutamazon.com/news-releases/news-release-details/amazoncom-announces-first-quarter-results-6"
+    },
+    {
+      "label": "AMZN stock — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/AMZN/"
+    },
+    {
+      "label": "NVDA Q1 FY27 guide $91B — AI capex read-through — StockTitan",
+      "url": "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-first-quarter-fiscal-fq78amc9h84m.html"
+    }
+  ],
+  "created_at": "2026-05-21",
+  "expires_at": "2026-07-31",
+  "status": "active",
+  "tags": ["AI", "cloud", "AWS", "megacap", "earnings-catalyst"],
+  "outcome": null
+}
