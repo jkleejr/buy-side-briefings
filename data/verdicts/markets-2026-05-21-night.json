@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-05-21",
+  "window": "night",
+  "generated_at": "2026-05-21T22:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Morning Call Confirmed; SPX 14 Points Shy of BUY; Bogus Iran Rally Masks Unresolved Regime",
+    "conviction": "medium",
+    "rationale_short": "The morning's core prediction executed with precision: NVDA's beats-and-drops closed at $219.45 (called from $226 AH; -2.93% historical pattern matched exactly), and SPX closed at 7,445.72 — 14 points below the 7,460 BUY trigger for the fourth consecutive session. The day was rescued from a down close only by a late-session bogus report that the US and Iran were near a draft resolution, sending oil briefly below $100 before reversing to ~$101. The Dow hit a record 50,285 (no NVDA exposure), but the macro regime — 30Y at 5.10%, VIX at 17.44, SPX below the trigger — is not cleared. NVDA is now in the $216–220 target entry zone; Friday is Day 2 of the consolidation test. Hold through pre-Memorial Day light volume; April PCE on May 28 is the macro binary.",
+    "supporting_data": [
+      { "label": "NVDA closed $219.45 (high $227.40, low $217.93) — beats-and-drops pattern confirmed exactly as forecast; entry zone $216–220 now active for Day 2", "url": "https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-may-2026" },
+      { "label": "S&P 500 7,445.72 (+0.18%) — eked a gain only on a late-session bogus Iran deal report; still 14 points below the 7,460 BUY trigger; four consecutive sessions below the line", "url": "https://www.cnbc.com/2026/05/20/stock-market-today-live-updates.html" },
+      { "label": "Dow Jones 50,285.66 (+0.55%, record close) — non-tech breadth expanding; Dow excludes NVDA, so today's divergence from SPX/NDX is structural, not sentiment-based", "url": "https://www.cnbc.com/2026/05/20/stock-market-today-live-updates.html" },
+      { "label": "WTI crude ~$101 (+3% session) — rose on Iran Supreme Leader uranium directive; bogus deal report briefly pulled oil below $100 before it reversed; inflation risk not resolved", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-21-2026" },
+      { "label": "30Y Treasury yield ~5.10% — above the 5.05% two-session confirmation threshold; Day 0 of the consecutive-close signal has not started through Thursday's close", "url": "https://ycharts.com/indicators/30_year_treasury_rate" },
+      { "label": "VIX 17.44 (down from morning's 17.80) — declining in the right direction but well above the 16.0 level needed for high-conviction BUY regime confirmation", "url": "https://finance.yahoo.com/quote/%5EVIX/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7445.72,  "change_pct":  0.18, "as_of": "2026-05-21T20:00:00Z" },
+    "nasdaq": { "level": 26293.10, "change_pct":  0.09, "as_of": "2026-05-21T20:00:00Z" },
+    "vix":    { "level": 17.44,    "change_pct": -2.02, "as_of": "2026-05-21T20:00:00Z" },
+    "ust10y": { "level": 4.59,     "change_bps":  0,    "as_of": "2026-05-21T20:00:00Z" },
+    "dxy":    { "level": 99.10,    "change_pct": -0.02, "as_of": "2026-05-21T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.44, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.10,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.10, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7446,  "trigger_above": 7460, "unit": "" },
+    { "name": "Fear & Greed", "value": 61,    "trigger_above": 65,   "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Closed $219.45 (range $217.93–$227.40) — beats-and-drops matched the -2.93% historical average almost to the cent. Day 1 of two-session consolidation in the $216–220 target zone established. Also announced $80B buyback and dividend raise to $0.25/quarter — structurally bullish; entry on Day 2.", "sentiment": "neutral" },
+    { "ticker": "DJIA",  "note": "Record close 50,285.66 (+0.55%) — no NVDA exposure explains divergence from SPX/NDX; industrial and financial weights led; breadth expanding beyond megacap tech is constructive for the broader market regime.", "sentiment": "positive" },
+    { "ticker": "IWM",   "note": "Russell 2000 +0.93% — driven by the late-session bogus Iran deal report; structural 30Y rate headwind (5.10%, Warsh hike risk June 16–17) unchanged; the fake-deal pop is the short entry, not a long signal.", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "Quality anchor; held bid through a choppy tape. Hold with no trim; highest-conviction name to own through Memorial Day weekend.", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "Still approaching the $398–402 entry zone. NVDA's $91B Q2 guide is a direct cloud/AI read-through; entry valid only when SPX clears 7,460 on close.", "sentiment": "neutral" },
+    { "ticker": "TBT",   "note": "30Y at 5.10%; FOMC 8-4 hawkish posture confirmed; April PCE on May 28 is next binary. Structural long-rate hedge holds regardless of short-term Iran noise.", "sentiment": "positive" },
+    { "ticker": "AMD",   "note": "Positive NVDA read-through on the $91B Q2 guide; do not chase until NVDA posts Day 2 of consolidation. Entry on Tuesday May 26 post-holiday if NVDA base holds.", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "WTI at ~$101 reinstates the inflation-hedge thesis partially. But Iran deal/no-deal volatility is extreme; $56.50 stop still operative. Monitor — no size increase until WTI stays above $100 for two sessions.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA on Friday open",  "reason": "Day 1 of two-session consolidation just completed at $219.45. Pre-Memorial Day Friday volume is structurally thin — entry on thin-volume confirmation is not a clean base. The optimal entry is Tuesday May 26 after confirming NVDA holds $218+ through the long weekend.", "better_entry": "$216–220 on Tuesday May 26 post-holiday open; require a Friday close above $218 as the prerequisite" },
+    { "ticker": "IWM long",             "reason": "Today's +0.93% was driven by a late-session bogus Iran draft-resolution report. When the report is confirmed premature — oil is already reversing the fake-deal spike — the structural rate headwind (30Y 5.10%, Warsh hike June 16–17) reasserts. Fading a fake-news rally into a rate-headwind environment is the highest-probability short in the book.", "better_entry": "$278–282 as the short entry on first bounce after the bogus-deal narrative unwinds" },
+    { "ticker": "SMH at gap-open",      "reason": "The semis complex gap-open on NVDA's $91B guide is still not the entry. NVDA needs two sessions of consolidation to confirm the beats-and-drops is complete rather than continuing. Day 2 is Friday; Day 2 confirmation is the correct entry, not front-running it.", "better_entry": "SMH after NVDA holds $218+ on Friday and Tuesday; require two-session NVDA stability before sizing the semis complex" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "The Q2 guide of $91.0B (15% sequential growth), data center $75.2B YoY near-double, Blackwell ramp intact, and a new $80B buyback authorization are the strongest combined fundamental package in the company's history. Day 1 of the beats-and-drops consolidation closed at $219.45 — exactly in the $216–220 target zone called since the May 19 night brief. Day 2 Friday establishes the base; Tuesday May 26 is the preferred execution session.",
+      "entry": "$216–220 on Day 2 consolidation (Friday valid on thin volume if $218+ holds; Tuesday preferred for full-size entry)",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "TBT",
+      "direction": "long",
+      "thesis": "FOMC April minutes confirmed 8-4 hawkish dissent — the sharpest split since October 1992. CME FedWatch at 63% year-end hike probability. WTI above $100 on Iran uncertainty re-adds to near-term inflation risk. April PCE on May 28 is the next catalyst; a hot print (>2.5% YoY) directly validates the 30Y floor above 5.0% and accelerates TBT.",
+      "entry": "Any pullback toward $27–28",
+      "invalidation": "30Y closes below 4.85% on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "The +0.93% close was driven by a bogus Iran deal report that briefly pulled oil below $100 before the move reversed to ~$101. Structurally, the Russell 2000 remains the index most exposed to Warsh rate-hike risk (June 16–17), SpaceX IPO capital drain disadvantaging small-cap allocations, and 30Y above 5.0%. When the fake-deal narrative fades, the rate headwind reasserts and the small-cap bid evaporates.",
+      "entry": "$278–282 on first bounce as the bogus-deal narrative fades; Monday overnight or Tuesday open",
+      "invalidation": "$285 daily close",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "The Dow's record close at 50,285 and VIX declining to 17.44 are genuine improvements in market breadth and risk appetite — if these represent institutional rotation into cyclicals rather than a fake-news-driven spike, the SPX re-rate through 7,460 follows on Friday's thin-volume drift and the HOLD call is one session too conservative. NVDA's $219.45 close rather than a collapse toward $210 is a constructive digestion, and the $80B buyback authorization provides a structural put. A Friday close above 7,460 with 30Y at or below 5.05% would arm the BUY immediately for Tuesday's post-holiday open. If SPX closes above 7,460 on Friday and 30Y closes at or below 5.05%, the HOLD call is wrong — upgrade to BUY before markets close.",
+  "body_mdx": "data/briefings/markets/2026-05-21-night.mdx"
+}
