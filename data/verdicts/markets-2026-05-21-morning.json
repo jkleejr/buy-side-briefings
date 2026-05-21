@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-05-21",
+  "window": "morning",
+  "generated_at": "2026-05-21T13:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — BUY upgrade conditions unmet; Iran reverses Wednesday's catalyst",
+    "conviction": "medium",
+    "rationale_short": "All three BUY upgrade conditions from the May 20 night brief have failed at Thursday's pre-market open: SPX futures at 7,422 (vs. 7,460 required), NVDA's AH recovery did not hold into pre-market with ES futures down -0.39%, and the 30Y at 5.12% has not begun the required two-session consecutive close below 5.05%. A new overnight catalyst compounds the caution: Iran's Supreme Leader issued a directive that near-weapons-grade uranium cannot leave the country, reversing the Middle East peace-deal narrative that drove Wednesday's 5% oil decline and Russell +2.44% rally. WTI stabilized back at ~$99, the inflation-relief impulse is partially withdrawn, and VIX is rising (+2.06% to 17.80) rather than retreating. HOLD: do not add new longs at the open; let NVDA resolve beats-and-drops before entering; maintain TBT hedge.",
+    "supporting_data": [
+      { "label": "SPX ES futures 7,422.50 (-0.39%) pre-market — 38 points below the 7,460 BUY trigger; futures lead with a gap-down open implied", "url": "https://finance.yahoo.com/economy/live/stock-market-today-dow-sp-500-nasdaq-futures-waver-as-wall-street-shrugs-off-nvidia-earnings-232311825.html" },
+      { "label": "VIX 17.80 (+2.06% from Wednesday's 16.86 close) — rising into the open despite NVDA's strong Q2 guide; approaching the 18 bearish trigger again", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "30Y Treasury 5.12% — easing from 5.20% high but still above the 5.05% two-session confirmation threshold; Day 0 of consecutive closes below 5.05% has not started", "url": "https://tradingeconomics.com/united-states/30-year-bond-yield" },
+      { "label": "Iran Supreme Leader directive: near-weapons-grade uranium cannot leave Iran — reverses the peace-deal oil-decline catalyst behind Wednesday's rally; WTI stabilized at ~$99", "url": "https://finance.yahoo.com/economy/live/stock-market-today-dow-sp-500-nasdaq-futures-waver-as-wall-street-shrugs-off-nvidia-earnings-232311825.html" },
+      { "label": "NVDA AH recovery to ~$226 (+1.93%) did not survive overnight; historically averaged -2.93% next-day move post-earnings over five prior reports despite strong beats", "url": "https://finance.yahoo.com/quote/NVDA/" },
+      { "label": "CNN Fear & Greed 61 (Greed); high-yield spreads 2.76% — sentiment not at fearful extremes; rallies in Greed conditions get sold before true capitulation bid", "url": "https://www.cnn.com/markets/fear-and-greed" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7432.0,  "change_pct": -0.39, "as_of": "2026-05-21T13:15:00Z" },
+    "nasdaq": { "level": 26268.0, "change_pct": -0.51, "as_of": "2026-05-21T13:15:00Z" },
+    "vix":    { "level": 17.80,   "change_pct":  2.06, "as_of": "2026-05-21T13:15:00Z" },
+    "ust10y": { "level": 4.65,    "change_bps":  6,    "as_of": "2026-05-21T13:15:00Z" },
+    "dxy":    { "level": 99.12,   "change_pct": -0.19, "as_of": "2026-05-21T13:15:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.80, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.12,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.12, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7422,  "trigger_below": 7460, "unit": "" },
+    { "name": "Fear & Greed", "value": 61,    "trigger_above": 65,   "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "AH recovery to ~$226 (+1.93% from ~$222 regular close) confirmed on NVDA's $91B Q2 guide. However, ES futures down -0.39% and the historically documented -2.93% average next-day move post-earnings signal do not chase the AH level at Thursday's open. Wait for the first 30-minute consolidation.", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~$302 residual from the May 19 trail-stop trim. Hold with the $290 stop; MSFT quality-flight bid remains the anchoring confirm.", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "~$432 — quality megacap anchor; outperformed Wednesday's tape (+0.55% when SPX was -0.67%). Best HOLD name in the portfolio.", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "~$394 — NVDA AI read-through is constructive. Approach the $398-402 entry zone cautiously; SPX must first clear 7,460 to confirm the entry.", "sentiment": "neutral" },
+    { "ticker": "AMD",   "note": "Positive read-through from NVDA's $91B Q2 guide. Do not chase any gap open; wait for consolidation with the semis complex.", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "BTC-correlated; crypto flat (~$77K). No direct NVDA read-through; monitor only.", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$134 — Warsh rate-hike narrative and government contract cycle are the primary drivers. NVDA provides an AI thematic tailwind but not a direct catalyst.", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "Iran Supreme Leader directive partially reverses the oil-decline catalyst. WTI stabilizes ~$99; the $56.50 stop on the reinstated XLE long from May 20 morning is at risk. Review the position.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA at open",  "reason": "Beats-and-drops pattern historically posts -2.93% average next-day move post-earnings despite strong beats; ES futures down -0.39% amplifies the gap-down risk. The Q2 guide is real; the entry is not at the open print.", "better_entry": "$216-220 zone on first 30-minute consolidation after the open; require SPX holding 7,400 simultaneously" },
+    { "ticker": "SMH",           "reason": "Semis complex gap open driven by NVDA read-through is exactly the wrong entry — the sector trades in sympathy with NVDA's beats-and-drops pattern; buying the gap open captures maximum intraday slippage.", "better_entry": "First intraday pullback 30-45 minutes post-open; NVDA stabilizing above $220 for two sessions is the sector anchoring condition" },
+    { "ticker": "IWM long",      "reason": "Wednesday's +2.44% Russell rally was entirely driven by the oil-decline/Iran-peace narrative; the Supreme Leader's uranium directive reverses that catalyst. Russell futures -0.81% lead the pre-market decline. The IWM long is the wrong side.", "better_entry": "Cover any IWM long; $272-276 bounce provides a better short entry in the Warsh/rising-30Y regime" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "TBT",
+      "direction": "hedge",
+      "thesis": "30Y at 5.12% is structurally supported by the FOMC's 8-4 hawkish posture (most dissenting since October 1992), CME FedWatch at 63% year-end hike probability, and April CPI at 3.8% YoY. The two-session consecutive close below 5.05% has not started. TBT (2x inverse long-dated Treasury) is the cleanest macro hedge while equity longs in NVDA and quality megacap are held. The Iran re-escalation also re-adds to the inflationary backdrop underpinning the 30Y floor.",
+      "entry": "Any pullback toward $27-28",
+      "invalidation": "30Y closes below 4.85% on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Russell 2000 futures -0.81% lead the pre-market decline — the most rate-sensitive major index. Wednesday's +2.44% outperformance was entirely a function of the oil-decline/peace-deal narrative that the Iran Supreme Leader directive has now reversed. 30Y at 5.12% above the 5.0% trigger with 30Y two-session confirmation not started reinstates the structural IWM short thesis. Warsh rate-hike scenario is still the governing macro risk for small caps through June 16-17.",
+      "entry": "$272-276 on the first intraday bounce after the open",
+      "invalidation": "$285 daily close",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "The fundamental case is not in question: Q2 guide of $91.0B (15% sequential growth), data center $75.2B nearly doubling YoY, Blackwell ramp intact. The correct entry is not at Wednesday's AH $226 or Thursday's open gap — it is after the beats-and-drops fade resolves. A two-session consolidation in the $216-220 zone establishes a better cost basis than the AH print. This is the position to build, not on Thursday's open.",
+      "entry": "$216-220 on first two-session consolidation; do not buy the open",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    }
+  ],
+  "bear_case": "NVDA's Q2 guide of $91B is the strongest in the company's history, yet ES futures are down -0.39% at Thursday's open — the market is treating a genuine AI capex confirmation as a sell-the-rip event, which is the signature of a regime where macro headwinds dominate fundamental catalysts. If the Iran situation escalates further (Strait of Hormuz risk re-priced, oil back above $103), the 30Y re-tests 5.20% and the NVDA-driven bid fails to hold. The SpaceX IPO ($75B raise, June 12) is now a confirmed capital allocation decision competing with every existing AI name over the next three weeks. If SPX closes below 7,400 with VIX printing above 18 on Thursday, reinstate Step Aside.",
+  "body_mdx": "data/briefings/markets/2026-05-21-morning.mdx"
+}
