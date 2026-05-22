@@ -1,0 +1,47 @@
+{
+  "id": "short-rklb-spacex-s1-competition-2026-05-22",
+  "title": "Short RKLB — SpaceX S-1 Direct Competitive Headwind",
+  "ticker": "RKLB",
+  "asset_class": "equity",
+  "category": "event",
+  "direction": "short",
+  "conviction": "medium",
+  "time_horizon": "3-6 weeks",
+  "current_price": 128.37,
+  "entry": "Short on any intraday bounce to $128-133 today or Tuesday May 26. Avoid initiating on a further down session — wait for stabilization or a 1-2% up day that creates a cleaner entry. Scale: 75% initial, 25% add if RKLB bounces to $132-135 next week.",
+  "stop_loss": "$140 daily close (~8.9% above entry midpoint $128.50) — implies SPCX IPO demand funded from cash rather than existing space-sector equity, OR RKLB announces a material new government contract that creates demand-independent revenue",
+  "targets": [
+    "$118 — SpaceX roadshow begins June 4; institutional capital drain from RKLB confirmed; -8.2%",
+    "$106 — SPCX begins trading June 12; RKLB institutional allocation fully rotated; -17.5%",
+    "$90 — Post-SPCX equilibrium; RKLB reprices without the 'only public space play' scarcity premium; -29.9%"
+  ],
+  "risk_reward": "1:3.3 to third target",
+  "position_size_pct": 2,
+  "catalyst": "SpaceX formally filed its S-1 with the SEC today (May 22, 2026). The prospectus targets a $75B raise at a $1.75T valuation, with Nasdaq debut under ticker SPCX targeted for June 12 and roadshow beginning June 4. Full-year 2025 revenue was $18.7B (+33% YoY). RKLB fell 6% pre-market on the S-1 announcement and is trading down 2.13% at $128.37 as of Friday morning — the partial recovery masks the ongoing 22-session institutional reallocation that has only just started.",
+  "thesis": "RKLB's current $77.7B market cap — trading at approximately 52x trailing revenue — was sustained largely by a 'space sector scarcity premium': for institutional investors wanting listed exposure to commercial launch and space infrastructure, RKLB was the closest pure-play available. That scarcity premium evaporates the moment SPCX begins trading on June 12. SpaceX is categorically different in scale: $18.7B 2025 revenue vs RKLB's sub-$250M, the global Starlink infrastructure, 200+ successful launches in 2025, and Starshield military contracts. Institutional investors who held RKLB as a 'space compounder' will find SPCX a superior vehicle and must fund that allocation from somewhere. With RKLB the most liquid listed 'space company' in the current market, it is the natural source.\n\nThe competitive threat is direct, not only financial. Rocket Lab's Neutron rocket — designed to compete with Falcon 9 in medium-lift commercial launch — now directly competes with SpaceX's established Falcon 9 (reusable, 250+ successful reflights) and the upcoming Starship. SpaceX's launch cost per kilogram is approximately 40% lower than RKLB's Electron rocket on small-sat, and Neutron's development timeline (2026-2027) faces a well-capitalized publicly-funded competitor with infinite reinvestment capacity at $1.75T valuation. The IPO doesn't just drain capital from RKLB — it announces a low-cost competitor in RKLB's target market with an unlimited cash runway.\n\nThe timing structure creates three identifiable milestones with predictable RKLB drawdown pressure: June 4 roadshow launch (institutional capital allocation decisions formalized), June 12 SPCX debut (rotation trade execution), and post-June 12 equilibrium (RKLB finds fair value without the scarcity premium). Each milestone maps roughly to one of the three targets. Position is sized at 2% because RKLB's short float is low and a 'rising tide' counter-rally is a real risk — if SPCX prices below $1.2T or is poorly received, managers seeking space-sector alternatives could bid RKLB back to $135-140. The $140 stop is set at the 52-week high region to capture exactly this scenario.\n\nThe counter-party is the RKLB bull who argues SpaceX's IPO legitimizes the entire space sector, with RKLB re-rated as the best-in-class non-SpaceX play. This is a real risk — Coinbase (COIN) briefly lifted all crypto-adjacent equities when it IPO'd in 2021 before institutional rotation settled into the new equilibrium. The key structural difference: COIN IPO didn't add a direct low-cost competitor to the crypto exchange business. SPCX directly addresses RKLB's launch market.",
+  "bull_case": "SPCX IPO demand is funded from cash rather than existing space-sector positions; RKLB benefits from the 'rising tide' narrative rather than suffering the rotation. RKLB announces a major DoD multi-year contract during the SPCX roadshow window, creating demand-independent revenue signal. Neutron rocket completes a successful first test flight in the June 4-12 window — a real capability milestone that decouples RKLB from SpaceX's shadow. Short stopped at $140.",
+  "bear_case": "RKLB's institutional investor base (growth/tech funds with space mandates) systematically liquidates space-sector exposure ahead of SPCX debut, RKLB bearing the brunt. By June 12, RKLB has traded down 20%+ to $100-108. If Neutron development delays emerge or a launch failure occurs during the SPCX roadshow window, the bear case accelerates to $90-95. Tail: SpaceX announces Neutron-competitive pricing to small-sat customers at 50% below market — existential competitive pressure emerges before Neutron even flies.",
+  "invalidation": "Daily close above $140, OR SPCX IPO prices below $1.2T valuation (reduces capital drain thesis), OR RKLB announces a $1B+ multi-year government contract independent of SpaceX allocation dynamics",
+  "sources": [
+    {
+      "label": "SpaceX S-1 IPO filing — Fortune",
+      "url": "https://fortune.com/2026/05/20/spacex-finally-files-ipo-prospectus-reveals-revenue-is-up-but-losses-are-too/"
+    },
+    {
+      "label": "RKLB stock price — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/RKLB/"
+    },
+    {
+      "label": "Why Rocket Lab RKLB stock is falling today — FinancialContent",
+      "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-5-21-why-rocket-lab-rklb-stock-is-falling-today"
+    },
+    {
+      "label": "SpaceX IPO SPCX June 12 — TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261904604-spacex-ipo-spcx-date-set-for-june-12-175-trillion-valuation-tradingkey"
+    }
+  ],
+  "created_at": "2026-05-22",
+  "expires_at": "2026-07-01",
+  "status": "active",
+  "tags": ["short", "event", "SpaceX", "IPO", "space", "competitive-headwind", "capital-rotation"]
+}
