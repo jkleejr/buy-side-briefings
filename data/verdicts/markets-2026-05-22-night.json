@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-05-22",
+  "window": "night",
+  "generated_at": "2026-05-22T21:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — First SPX Close Above 7,460; NVDA Day 2 Confirmed; Tuesday Armed",
+    "conviction": "medium",
+    "rationale_short": "The S&P 500 closed at 7,473.47 — the first definitive session close above the 7,460 BUY trigger this series has tracked — completing the primary regime condition. NVDA closed at $218.13, confirming Day 2 of the post-earnings consolidation and arming the Tuesday May 26 execution entry at $216–220. VIX declined to 16.76 and the 30Y eased to 5.064%, both directionally healing but not yet through their respective BUY thresholds. Conviction stays medium: the 30Y two-session confirmation clock has not started, the 72-hour Memorial Day gap leaves Iran/oil risk unquantified, and the IWM short thesis faces its second consecutive contradicting session. Execute NVDA $216–220 Tuesday open; size broad BUY at 50–60% pending May 28 PCE outcome.",
+    "supporting_data": [
+      { "label": "SPX 7,473.47 (+0.37%) — first close above 7,460 BUY trigger; 8th consecutive weekly gain; every sector green except Communications (−0.54%)", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-22-2026" },
+      { "label": "NVDA $218.13 (range $215.16–$221.49) — Day 2 close above $218 floor confirmed; intraday dip to $215.16 found buyers; Tuesday May 26 execution at $216–220 now armed", "url": "https://finance.yahoo.com/quote/NVDA/" },
+      { "label": "VIX 16.76 (−4.6% from morning's 17.58) — third consecutive declining session; approaching 16.0 BUY floor; not yet cleared", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "30Y yield 5.064% (−4.7 bps) — meaningful easing; 1.4 bps above the 5.05% two-session threshold; Day 1 opportunity opens Tuesday May 26", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-22-2026" },
+      { "label": "WTI crude $98.22 — eased from morning's $99.08; below $100 for the first time since the bogus Iran deal reversal; inflation variable moderating but formally unresolved", "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-may-22-2026/" },
+      { "label": "Breadth: Tech +1.02%, Health Care +1.19%, only Communications −0.54% declined; Dow 50,579.70 sets record close; S&P 500 posts 8th straight weekly gain", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-may-22-213042893.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7473.47,  "change_pct":  0.37, "as_of": "2026-05-22T20:00:00Z" },
+    "nasdaq": { "level": 26343.97, "change_pct":  0.19, "as_of": "2026-05-22T20:00:00Z" },
+    "vix":    { "level": 16.76,    "change_pct": -4.60, "as_of": "2026-05-22T20:00:00Z" },
+    "ust10y": { "level": 4.558,    "change_bps":  -3,   "as_of": "2026-05-22T20:00:00Z" },
+    "dxy":    { "level": 99.23,    "change_pct":  0.07, "as_of": "2026-05-22T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.76, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.064, "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.23, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7473,  "trigger_below": 7460, "unit": "" },
+    { "name": "Fear & Greed", "value": 61,    "trigger_above": 65,   "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Day 2 confirmed at $218.13 (range $215.16–$221.49). Intraday dip to $215.16 found buyers; recovered to close above $218 floor. Tuesday May 26 execution entry armed at $216–220. Invalidation: $210 daily close.", "sentiment": "positive" },
+    { "ticker": "RGTI",  "note": "+17% Friday extending Thursday's +19% — two-day 39%+ surge. Morning brief's 8-15% fade call was wrong; government grant momentum has legs. Government equity stake overhang remains structural ceiling; no new entry at +39% from pre-grant level.", "sentiment": "neutral" },
+    { "ticker": "QBTS",  "note": "+13% Friday extending Thursday's gains — two-day 30%+. Same structural overhang as RGTI. If already long from pre-grant levels, consider trimming 25-30% into the next spike.", "sentiment": "neutral" },
+    { "ticker": "IONQ",  "note": "+8% Friday. Sympathy rotation; IONQ has the most credible commercial backlog among the pure-plays but did not receive direct grant. No new entry after a 15%+ two-day move.", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "$420.30 — declined ~2.8% from Thursday's ~$432; notable divergence from Tech sector's +1.02% day. No specific catalyst identified; quality HOLD with $410 stop. Monitor before adding.", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~$309 (range $305.85–$311.40) — quality-flight hold; modestly bid in risk-on session. $290 stop maintained. No action.", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "$418.40 — declined from morning's ~$433; BTC flat (~$77,447). No direct catalyst. Monitor only.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$396 (est.) — approaching the $398–402 entry zone. Entry valid Tuesday if post-holiday open holds SPX above 7,460. NVDA Q2 cloud confirmation is the read-through. Begin sizing in the zone.", "sentiment": "positive" },
+    { "ticker": "IWM",   "note": "~$287 — two consecutive +0.91% sessions pushed IWM above the prior $285 invalidation. Short thesis structurally intact (SpaceX drain, 30Y headwind, Warsh risk); entry shifted to $285–288 on reversal. Downgraded to low conviction.", "sentiment": "negative" },
+    { "ticker": "PLTR",  "note": "~$135 (est.) — government AI contract cycle and Warsh rate path are primary drivers. PCE May 28 binary. Hold.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "RGTI / QBTS at current levels", "reason": "40%+ two-day surge on government grant; government equity stakes limit structural free-float appreciation. Entering after a 39%+ run in 48 hours carries adverse slippage and overhang risk. The morning brief's fade call was wrong — momentum is real — but this is not a controlled entry point.", "better_entry": "25-30% pullback from Friday's close; second catalyst required (commercial contract or device milestone, not supplemental government grant)" },
+    { "ticker": "NVDA above $222 pre-Tuesday", "reason": "Day 2 confirmed; the controlled execution entry is Tuesday May 26 at $216–220. A gap above $222 from any weekend catalyst is not the risk-managed entry the consolidation base was designed for.", "better_entry": "$216–220 on Tuesday May 26 open; if it opens above $222, wait for intraday pullback to zone before sizing" },
+    { "ticker": "IWM long at $287+", "reason": "No long case. Structural short thesis (SpaceX $75B drain beginning June 4, 30Y at 5.064%, Warsh June 16-17 hike risk) intact. Two consecutive up sessions require timing adjustment, not directional reversal.", "better_entry": "Short at $285–288 on reversal confirmation; long only if Russell clears $295 with 30Y below 5.0%" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Day 2 close at $218.13 (range $215.16–$221.49) confirms the two-session consolidation base. Intraday test of $215.16 found buyers, validating the zone. Fundamental case: Q2 guide $91.0B, 15% sequential growth, Blackwell near-double, $80B buyback, dividend $0.25/quarter — strongest in company history. Tuesday May 26 is the execution session.",
+      "entry": "$216–220 on Tuesday May 26 open; if Tuesday opens above $222, wait for intraday pullback to zone before sizing",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "TBT",
+      "direction": "hedge",
+      "thesis": "30Y at 5.064% remains above the regime trigger with the two-session close below 5.05% not yet started. April PCE on May 28 is the next binary — a hot reading (>2.5% YoY vs. prior 2.40%) re-accelerates the 30Y and directly validates TBT. FOMC 8-4 hawkish vote, CME FedWatch 63% year-end hike probability, and WTI at $98 all support the structural 30Y floor. Cleanest hedge alongside NVDA and index BUY posture.",
+      "entry": "Any pullback toward $27–28",
+      "invalidation": "30Y closes below 4.85% on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Structural case intact: SpaceX SPCX roadshow June 4 (9 sessions away) — $75B capital drain disadvantages small-cap allocators first; 30Y at 5.064% most punitive to small-cap financing; Warsh June 16-17 is the rate-hike risk event. Two consecutive +0.91% sessions pushed IWM to ~$287 above the prior $285 invalidation. Conviction downgraded to low; entry shifted to $285–288 with reversal confirmation required before sizing.",
+      "entry": "$285–288 on reversal candle; require confirmation session before full sizing",
+      "invalidation": "$292 daily close",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "The S&P 500 has posted eight consecutive weekly gains — a streak that historically precedes consolidation or reversion, not sustained acceleration. VIX at 16.76 and Fear & Greed at 61 confirm sentiment is in greed territory, not the capitulation-reset zone that historically produces high-conviction BUY entries; the marginal buyer pool thins with each additional gain week. The 30Y at 5.064% has not yet started the two-session close below 5.05%, and a 72-hour Memorial Day gap with WTI at $98 and no formal Iran resolution means Tuesday could open with an adverse geopolitical shock. May 28 PCE at >2.5% YoY would immediately confirm the 30Y structural floor, push yields back toward 5.15–5.20%, and require abandoning the BUY call before it is fully sized. If SPX closes below 7,400 with the 30Y above 5.15% on any session through May 28, Step Aside is activated and the NVDA execution entry is abandoned.",
+  "body_mdx": "data/briefings/markets/2026-05-22-night.mdx"
+}
