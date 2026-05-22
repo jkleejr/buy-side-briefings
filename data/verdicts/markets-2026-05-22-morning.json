@@ -1,0 +1,85 @@
+{
+  "routine": "markets",
+  "date": "2026-05-22",
+  "window": "morning",
+  "generated_at": "2026-05-22T13:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Quantum Grants Clear 7,460 Futures; Regime Unconfirmed Pre-Holiday",
+    "conviction": "medium",
+    "rationale_short": "ES futures at 7,482 (+0.21%) breach the 7,460 BUY trigger for the first time, driven by a $2B CHIPS Act quantum computing grant announcement — not by the regime-clearing conditions laid out in prior briefings. The 30Y at ~5.08% has not started the two-session close below 5.05%, VIX reopened at 17.58, and WTI is +2.9% to $99.08 on renewed Iran deal skepticism. SpaceX's S-1 filing formally starts the 12-session capital drain countdown. Pre-Memorial Day thin volume makes today's close an unreliable regime signal. HOLD: no new index longs today; watch NVDA Day 2 consolidation above $218; execute BUY upgrade positions Tuesday May 26 if today's close holds above 7,460.",
+    "supporting_data": [
+      { "label": "ES futures 7,482 (+0.21%) — above 7,460 BUY trigger for first time; driven by quantum grants, not regime-clearing conditions; pre-holiday thin volume reduces signal reliability", "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-dow-futures-020148504.html" },
+      { "label": "30Y yield ~5.08% — easing toward but still above the 5.05% two-session confirmation threshold; Day 0 has not started; regime trigger remains active", "url": "https://tradingeconomics.com/united-states/30-year-bond-yield" },
+      { "label": "VIX 17.58 (opened Friday; session range 16.60–17.87) — declining toward the 16.0 BUY floor but not there; above-18 trigger un-breached; pre-holiday vol suppression may compress artificially", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "WTI crude +2.9% to $99.08 Friday morning — CNBC: 'traders grow skeptical of U.S.-Iran deal'; uranium stockpile and Hormuz toll disputes unresolved; inflation risk re-active after Thursday settlement at ~$96", "url": "https://www.cnbc.com/2026/05/22/oil-prices-today-trump-iran-strait-of-hormuz-uranium-.html" },
+      { "label": "$2B CHIPS Act quantum grants — Rigetti +15%, D-Wave +17%, IonQ +8%, IBM +6.5%, GlobalFoundries +13% pre-market; government equity stakes cap free-float upside; sector-specific catalyst, not index-level regime shift", "url": "https://seekingalpha.com/news/4595634-quantum-computing-is-the-latest-us-government-equity-bet" },
+      { "label": "SpaceX S-1 filed May 20 — $75B raise at $1.75T valuation; roadshow June 4, trading June 12; RKLB -6% pre-market; 12-session institutional capital drain countdown begins today", "url": "https://fortune.com/2026/05/20/spacex-finally-files-ipo-prospectus-reveals-revenue-is-up-but-losses-are-too/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7445.72,  "change_pct":  0.18, "as_of": "2026-05-21T20:00:00Z" },
+    "nasdaq": { "level": 26293.10, "change_pct":  0.09, "as_of": "2026-05-21T20:00:00Z" },
+    "vix":    { "level": 17.58,    "change_pct":  0.80, "as_of": "2026-05-22T13:00:00Z" },
+    "ust10y": { "level": 4.59,     "change_bps":  -6,   "as_of": "2026-05-22T13:00:00Z" },
+    "dxy":    { "level": 99.39,    "change_pct":  0.30, "as_of": "2026-05-21T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.58, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.08,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.39, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7482,  "trigger_below": 7460, "unit": "" },
+    { "name": "Fear & Greed", "value": 61,    "trigger_above": 65,   "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Day 2 consolidation window open. Closed $219.45 Thursday. Watch for $218+ hold through today's session to confirm the two-session base. Entry zone $216-220; execution session Tuesday May 26.", "sentiment": "positive" },
+    { "ticker": "RGTI",  "note": "+15% pre-market on $2B government grant. Government equity stake reduces free-float upside; sector names historically fade 40-60% within 30 days of announcement-driven spikes. Do not chase the open.", "sentiment": "neutral" },
+    { "ticker": "IONQ",  "note": "+8% pre-market (received no direct grant; sympathy rally). Same fade risk as RGTI. Monitor; no entry.", "sentiment": "neutral" },
+    { "ticker": "IBM",   "note": "+6.5% pre-market on direct quantum grant. More durable quantum hardware business than pure-plays; smaller position acceptable above $250 if confirmed post-open.", "sentiment": "positive" },
+    { "ticker": "RKLB",  "note": "-6% pre-market as SpaceX S-1 filed. Direct competitive read-through on launch market share. Structural pressure; avoid.", "sentiment": "negative" },
+    { "ticker": "WMT",   "note": "-2% after weak FY outlook: adjusted EPS guide $2.75-$2.85 vs. $2.91 consensus. Consumer spending signal; watch for read-through to AMZN and discretionary.", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "~$432 — quality megacap anchor unchanged. Best HOLD through the holiday.", "sentiment": "positive" },
+    { "ticker": "AAPL",  "note": "~$302 — residual quality hold with $290 stop. No new catalyst.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$394 — entry zone $398-402 approaching. Entry valid if today's SPX close confirms 7,460+ and Tuesday's session holds. No preemptive sizing.", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$134 — Warsh rate-hike narrative primary driver; government AI contracts a tailwind. Hold.", "sentiment": "neutral" },
+    { "ticker": "IWM",   "note": "SpaceX capital drain accelerates small-cap rotation headwind. 30Y at 5.08% still punitive. Short thesis intact; Thursday's +0.93% fake-news bounce provides the entry.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "RGTI / QBTS / IONQ at the open", "reason": "Government equity stakes from the $2B CHIPS grant cap free-float appreciation. These names have historically faded 40-60% within 30 days of government-announcement spikes. The pre-market gap is the sell, not the entry.", "better_entry": "20-30% pullback from Friday's open level after the catalyst fades; re-enter on a second catalyst (commercial contract or device milestone), not the government announcement alone" },
+    { "ticker": "NVDA above $222", "reason": "Day 2 of the two-session consolidation must close at or below $222 to confirm the base. A gap above $222 on thin pre-holiday volume is noise, not a regime signal.", "better_entry": "$216-220 on Tuesday May 26 post-holiday, after confirming Friday's close held the $218 floor" },
+    { "ticker": "New index longs at Friday's open", "reason": "Pre-Memorial Day is the lowest-quality signal session of the year: thin liquidity, early desk closings, position squaring. A close above 7,460 on 60-70% of average volume carries weak regime confirmation value.", "better_entry": "Tuesday May 26 post-holiday open, after observing Asia and Europe weekend price action and the Monday session" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Day 1 consolidated at $219.45 (within the $216-220 zone). Day 2 (Friday) confirmation is required: NVDA holds $218+ through today's session. The fundamental case — $91.0B Q2 guide, 15% sequential growth, data center near-doubling, $80B buyback — is the strongest in company history. Execution session is Tuesday May 26.",
+      "entry": "$216-220; require Friday close above $218 as Day 2 confirmation; execute Tuesday May 26 open",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "TBT",
+      "direction": "hedge",
+      "thesis": "30Y at 5.08% remains above the 5.0% regime trigger with the two-session consecutive close below 5.05% not yet started. FOMC 8-4 hawkish vote, CME FedWatch at 63% year-end hike probability, April CPI 3.8% YoY, and WTI at $99 on Iran deal skepticism all support the 30Y structural floor. TBT is the cleanest hedge to hold alongside AI-complex longs through the May 28 PCE binary.",
+      "entry": "Any pullback toward $27-28",
+      "invalidation": "30Y closes below 4.85% on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SpaceX S-1 formally filed; $75B institutional capital raise begins with June 4 roadshow. Small-cap managers face the most acute rotation pressure as they fund SPCX allocation from liquid growth names. 30Y at 5.08% is most punitive to small-cap financing costs. Warsh June 16-17 meeting is the rate-hike risk event. Thursday's +0.93% IWM pop was a fake-news spike; RKLB -6% this morning confirms the structural competitive pressure on small-cap growth names from SPCX.",
+      "entry": "$280-282 on first bounce as fake-deal narrative continues reversing",
+      "invalidation": "$285 daily close",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "WTI is +2.9% to $99 this morning as Iran deal optimism dissolves — a 3% oil move before markets open is the signature of a geopolitical variable that is not fully priced. SpaceX's S-1 filing formally starts the 12-session countdown to the largest institutional capital drain in equity market history, arriving precisely as AI-sector multiples are stretched and the 30Y refuses to clear 5.05%. The quantum computing rally in RGTI and IONQ on government equity stakes is a government-directed price signal, not market-driven demand; if these names fade 30-40% into the weekend, Friday's positive futures close reverses and Tuesday's open reveals a failed breakout. If SPX closes below 7,400 with the 30Y above 5.15% on Tuesday May 26, HOLD converts immediately to Step Aside and the NVDA consolidation entry is abandoned.",
+  "body_mdx": "data/briefings/markets/2026-05-22-morning.mdx"
+}
