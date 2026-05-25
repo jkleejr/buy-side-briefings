@@ -1,0 +1,113 @@
+{
+  "routine": "markets",
+  "date": "2026-05-25",
+  "window": "night",
+  "generated_at": "2026-05-25T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — Oil Breaks $91; Nikkei Records; Tuesday Execution Armed",
+    "conviction": "medium",
+    "rationale_short": "US markets were closed for Memorial Day, but the global session delivered one of the most significant macro developments in months: WTI crude fell ~5.2% to ~$90.65 as markets priced increasing Iran deal probability. Nikkei 225 hit a record all-time high above 65,000 for the first time; European STOXX 50 rose 2%; ES and NQ futures are positive into Tuesday. BUY maintained at medium conviction — the deal is unsigned, NVDA pre-market slipped below $215, and April PCE on Thursday remains the rate-path binary.",
+    "supporting_data": [
+      {
+        "label": "WTI crude dropped ~5.2% to ~$90.65 on Memorial Day — largest single-session decline since Iran deal talks began; Hormuz reopening priced by oil markets",
+        "url": "https://www.fxstreet.com/news/wti-slips-below-9100-amid-rising-us-iran-peace-hopes-202605250313"
+      },
+      {
+        "label": "Nikkei 225 closed 65,158.19 (+2.87%) — first-ever session above 65,000; Japan's TOPIX also hit an all-time high on oil decline and Iran deal optimism",
+        "url": "https://www.cnbc.com/2026/05/25/asia-markets-today-live-updates-asx-nikkei-sensei-iran-us-trump-oil-hormuz.html"
+      },
+      {
+        "label": "European STOXX 50 +2% to 6,139; STOXX 600 +1.1% to 632 — broad risk-on session driven by Iran deal progress and oil's sharp decline",
+        "url": "https://www.cnbc.com/2026/05/25/asia-markets-today-live-updates-asx-nikkei-sensei-iran-us-trump-oil-hormuz.html"
+      },
+      {
+        "label": "ES June futures +0.35%, NQ June futures +0.42% — US equities point to a positive Tuesday open; oil relief should ease the 30Y yield on Day 1",
+        "url": "https://www.investing.com/indices/us-spx-500-futures"
+      },
+      {
+        "label": "CBS News: US-Iran draft memo agreed on cessation of hostilities; Rubio said deal possible 'today' — deal advancing but still unsigned",
+        "url": "https://www.cbsnews.com/news/iran-peace-deal-draft-memo-white-house/"
+      },
+      {
+        "label": "DXY fell to 98.96 (−0.28%) — dollar slipping below 99 as risk-on trades build; cross-asset tailwind for US equities Tuesday",
+        "url": "https://tradingeconomics.com/united-states/currency"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7473.47,  "change_pct": 0.37,  "as_of": "2026-05-22T20:00:00Z" },
+    "nasdaq": { "level": 26343.97, "change_pct": 0.19,  "as_of": "2026-05-22T20:00:00Z" },
+    "vix":    { "level": 16.76,    "change_pct": -4.60, "as_of": "2026-05-22T20:00:00Z" },
+    "ust10y": { "level": 4.558,    "change_bps": -3,    "as_of": "2026-05-22T20:00:00Z" },
+    "dxy":    { "level": 98.96,    "change_pct": -0.28, "as_of": "2026-05-25T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.76, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y UST",      "value": 5.064, "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 98.96, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7473,  "trigger_above": 0,    "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Pre-market $213.35 — below the $215 execution threshold from the morning brief; oil collapse is risk-on but pre-market weakness requires confirmation before Tuesday entry; entry adjusted to $213–218 conditional on open above $212; voided below $212 open", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$396 — entry zone $398–402 valid Tuesday if SPX holds 7,460 post-holiday open", "sentiment": "positive" },
+    { "ticker": "XLE",   "note": "Short candidate — WTI dropped 5.2% to $90.65; energy sector faces direct headwind when XLE trades Tuesday; signed Iran deal would push WTI toward $80–85", "sentiment": "negative" },
+    { "ticker": "IWM",   "note": "Short thesis intact; SpaceX SPCX roadshow CORRECTED to week of June 8 (not June 4); pricing June 11; first trade June 12 — extends runway by 3 sessions", "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "~$309 quality-flight hold; $290 stop; no new catalyst", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "$420 — unexplained 2.8% divergence from Tech sector May 22 still unresolved; $410 stop; investigate before sizing", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "BTC ~$77,292 (mild risk-on bid, not a strong catalyst); TSLA monitor only; no action", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "~$635 — Communications −0.54% Friday; watching Tuesday to clarify rotation vs. sustained reversal", "sentiment": "neutral" },
+    { "ticker": "AMZN",  "note": "~$268 — AWS capex confirmation via NVDA; no individual catalyst", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$135 — PCE May 28 is the governing catalyst; hold through the print", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "XLE / USO long",
+      "reason": "Oil is at $91 and declining on Iran deal probability. Buying energy longs into declining oil is the wrong side of the trade — the deal's resolution is oil-bearish, not oil-bullish. A formally signed agreement pushes WTI toward $80–85, erasing energy sector margins.",
+      "better_entry": "Short XLE or USO at Tuesday open after confirming WTI holds below $93; if deal signed overnight, add to the short — path to $80–85 makes energy shorts the primary trade of the week"
+    },
+    {
+      "ticker": "NVDA below $212 on Tuesday open",
+      "reason": "Pre-market at $213.35 indicates institutional position reduction on the holiday. If Tuesday's regular session opens below $212 with SPX below 7,440, the two-session consolidation base is structurally impaired.",
+      "better_entry": "$213–218 on Tuesday open if NVDA holds above $212 through first 15 minutes; if below $212 at open, wait for a reversal candle with SPX above 7,460 before committing"
+    },
+    {
+      "ticker": "RGTI / QBTS at current elevated levels",
+      "reason": "Two-day 36–39% rally has not produced a third catalyst. Government grant momentum without a follow-up commercial announcement or device milestone is not a durable re-rating.",
+      "better_entry": "25–30% pullback from Friday close; require commercial contract or quantum device milestone as second catalyst"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Fundamental long thesis unchanged: $91.0B Q2 guide (15% sequential), Blackwell data-center near-doubled, $80B buyback, $0.25/qtr dividend. Oil at $91 is a risk-on macro environment that accelerates AI capex commitments. Pre-market at $213.35 creates a lower, wider entry zone than the prior $216–220 brief. Tuesday is the execution session conditional on open confirmation.",
+      "entry": "$213–218 on Tuesday May 26 open; requires NVDA above $212 through first 15 minutes and SPX above 7,460; if NVDA opens below $212, wait for reversal candle",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "WTI crude collapsed 5.2% to ~$90.65 on Memorial Day as markets priced Iran deal probability. Energy sector margins contract materially at $91 vs. the ~$100 level where XLE was priced through most of May. A formally signed deal pushes WTI toward $80–85, extending XLE downside 8–12%. The XLE short is the cleanest expression of the oil-bearish thesis embedded in the BUY verdict — lower oil eases 30Y, lifts real incomes, and benefits tech/growth while disadvantaging pure energy.",
+      "entry": "XLE at Tuesday open after confirming WTI holds below $93 in early trading; size proportionate to deal confidence",
+      "invalidation": "WTI recovers above $97 on formal Iranian deal denial; cover XLE immediately",
+      "conviction": "medium",
+      "horizon": "1–3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SpaceX SPCX IPO roadshow confirmed week of June 8 (CORRECTED from June 4); pricing June 11; first trade June 12 on Nasdaq. The $75B institutional capital drain disadvantages small-cap allocators first. 30Y at 5.064% remains most punitive to small-cap financing costs. Warsh FOMC June 16–17 adds rate-hike risk. SPCX timeline correction extends the short runway by 3 sessions vs. prior estimates; maintain low conviction and wait for reversal entry.",
+      "entry": "$285–288 on reversal confirmation; require a full confirmation session before full sizing",
+      "invalidation": "$292 daily close",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "Iran's willingness to signal progress publicly while simultaneously stating that signing is 'not imminent' is a negotiating posture that leaves maximum room for reversal. A formal Iranian denial before Tuesday's open would snap WTI from $91 back toward $99–103, eliminate the overnight yield relief this session is pricing in, and force SPX to open below 7,440 on gap-down with no liquid session to absorb the shock. NVDA's pre-market at $213.35 — below the prior brief's $215 execution threshold — reflects institutional position reduction, not accumulation; if Tuesday confirms a gap-down below $212, the two-session consolidation base is structurally impaired and the primary long thesis requires recalibration. April PCE on Thursday, with TradingKey warning that inflation is spreading across food, airfares, and AI chips, adds a second directional risk vector independent of Iran deal status. If SPX closes below 7,400 with the 30Y above 5.10% on any session through May 28, the BUY posture is abandoned and Step Aside is activated immediately.",
+  "body_mdx": "data/briefings/markets/2026-05-25-night.mdx"
+}
