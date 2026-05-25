@@ -38,7 +38,13 @@
   ],
   "created_at": "2026-05-21",
   "expires_at": "2026-06-18",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["macro", "short", "rates", "Iran", "small-cap", "mean-reversion"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-05-22",
+    "final_price": 285.26,
+    "return_pct": -3.35,
+    "outcome_label": "Stopped out at $285.26 — two consecutive +0.91% sessions",
+    "note": "IWM closed at $285.26 (iShares NAV; market price ~$287 per morning briefing) on May 22, breaching the $285 daily close stop. Two consecutive +0.91% Russell 2000 sessions (May 21–22) were driven by Iran deal optimism and broad risk-on sentiment as the SPX confirmed its first close above the 7,460 BUY trigger. Short from $276.00, stopped at $285.26: -3.35% loss. The structural thesis — SPCX capital drain beginning June 4, 30Y above 5.064%, Warsh June FOMC hike risk — remains fully intact per the May 25 morning briefing, which flags re-entry at $285–288 on a confirmed reversal candle at low conviction."
+  }
 }
