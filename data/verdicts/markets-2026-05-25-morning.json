@@ -1,0 +1,114 @@
+{
+  "routine": "markets",
+  "date": "2026-05-25",
+  "window": "morning",
+  "generated_at": "2026-05-25T13:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — Iran Deal Emerging; Tuesday Execution Armed",
+    "conviction": "medium",
+    "rationale_short": "US markets are closed for Memorial Day. The BUY verdict from Friday's close is maintained and reinforced by a dominant macro development: Trump stated on May 23 that an Iran deal reopening the Strait of Hormuz is 'largely negotiated,' Axios published exclusive deal terms on May 24, and US equity futures rose Monday on deal optimism. Medium conviction maintained — the deal is unsigned, Iran's state media contradicted key terms, April PCE binary looms Thursday, and the 30Y two-session confirmation clock has not started.",
+    "supporting_data": [
+      {
+        "label": "Trump May 23: Iran-Hormuz deal 'largely negotiated,' announcement 'imminent'",
+        "url": "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html"
+      },
+      {
+        "label": "Axios exclusive May 24: deal terms — 60-day ceasefire, Hormuz opens with no tolls, Iran sells oil freely, uranium disposal discussions",
+        "url": "https://www.axios.com/2026/05/24/iran-deal-strait-hormuz-sanctions-nuclear"
+      },
+      {
+        "label": "US equity futures rose Monday as Iran deal optimism improved sentiment; WTI already pricing partial resolution",
+        "url": "https://www.cnbc.com/2026/05/22/oil-prices-today-trump-iran-strait-of-hormuz-uranium-.html"
+      },
+      {
+        "label": "WTI settled $96.60, Brent $103.54 on May 22 — oil posting weekly loss as US-Iran signal progress; further downside if deal closes",
+        "url": "https://www.cnbc.com/2026/05/22/oil-prices-today-trump-iran-strait-of-hormuz-uranium-.html"
+      },
+      {
+        "label": "SPX 7,473.47 (+0.37%) — first confirmed close above 7,460 BUY trigger; 8th straight weekly gain; all sectors green ex-Communications",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-22-2026"
+      },
+      {
+        "label": "April PCE consensus: Headline +2.2% YoY (prior 2.40%), Core +2.5% — cool print expected May 28 before tariff effects flow through",
+        "url": "https://fxmacrodata.com/articles/usd-pce-may-2026"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7473.47, "change_pct": 0.37,  "as_of": "2026-05-22T20:00:00Z" },
+    "nasdaq": { "level": 26343.97, "change_pct": 0.19, "as_of": "2026-05-22T20:00:00Z" },
+    "vix":    { "level": 16.76,   "change_pct": -4.60, "as_of": "2026-05-22T20:00:00Z" },
+    "ust10y": { "level": 4.558,   "change_bps": -3,    "as_of": "2026-05-22T20:00:00Z" },
+    "dxy":    { "level": 99.23,   "change_pct": 0.07,  "as_of": "2026-05-22T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.76, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y UST",      "value": 5.064, "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.23, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7473,  "trigger_above": 0,    "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Day 2 consolidation confirmed at $218.13; Tuesday execution $216–220 armed; Iran deal progress does not change the fundamental long thesis", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "~$396 approaching $398–402 entry zone; initiate alongside NVDA on Tuesday open after confirming SPX holds 7,460", "sentiment": "positive" },
+    { "ticker": "AMD",   "note": "Semis complex benefits from NVDA Day 2 + AI capex read-through; initiate Tuesday alongside NVDA", "sentiment": "positive" },
+    { "ticker": "TSM",   "note": "NVDA $91B Q2 guide is the direct AI capex read-through; initiate Tuesday", "sentiment": "positive" },
+    { "ticker": "AVGO",  "note": "Same as TSM — initiate alongside NVDA on Tuesday", "sentiment": "positive" },
+    { "ticker": "AAPL",  "note": "~$309 quality-flight hold; $290 stop; no new catalyst", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "$420 — unexplained 2.8% session divergence from Tech sector on Friday; investigate before sizing; $410 stop", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "$418 — BTC flat, no crypto catalyst; monitor only", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "~$635 — Communications sector was -0.54% Friday; monitor for sustained reversal vs one-session rotation", "sentiment": "neutral" },
+    { "ticker": "AMZN",  "note": "~$268 — AWS capex confirmation via NVDA; no individual catalysts", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$135 — PCE May 28 is the governing catalyst; hold through the print", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "RGTI / QBTS at current levels",
+      "reason": "Up 36–39% in two sessions on a government grant announcement. Momentum has proven stickier than forecast, but entering after a 39% two-day move into government equity stake overhang is not a controlled position.",
+      "better_entry": "25–30% pullback from Friday close; require a second catalyst (commercial contract or quantum device milestone), not a supplemental government announcement"
+    },
+    {
+      "ticker": "NVDA above $222",
+      "reason": "Tuesday $216–220 is the controlled, risk-managed two-session consolidation entry. A gap above $222 on Iran-deal euphoria is not the structured entry the base was designed for.",
+      "better_entry": "$216–220 on Tuesday open; if NVDA gaps above $222, wait for intraday pullback to the zone"
+    },
+    {
+      "ticker": "XLE / energy stocks chasing the Iran deal",
+      "reason": "Deal is unsigned. Iran's state media contradicted Trump's key Strait of Hormuz terms on May 24. Entering long energy on a deal that reverses produces maximum pain: oil re-spikes, energy stocks correct, and the macro backdrop deteriorates.",
+      "better_entry": "Short XLE / USO only after a formally signed agreement; no long energy pre-positioning on an unsigned deal"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Two-session post-earnings consolidation base confirmed. Q2 guide $91.0B (15% sequential); Blackwell data-center near-doubled; $80B buyback; $0.25/qtr dividend. Tuesday May 26 is the execution session. Iran deal progress does not change the fundamental NVDA long — if anything, a risk-on regime accelerates AI capex commitments from hyperscalers.",
+      "entry": "$216–220 on Tuesday May 26 open; if NVDA gaps above $222 on Iran-deal news, wait for intraday pullback to zone before sizing",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "TBT",
+      "direction": "long",
+      "thesis": "30Y at 5.064% has not completed Day 1 of the two-session close below 5.05% threshold. April PCE on May 28 is the binary — consensus expects 2.2% YoY, but TradingKey's preview warns inflation is spreading across sectors. If PCE prints hot (>2.5%), 30Y re-accelerates and TBT rallies sharply. If Iran deal closes and oil drops, 30Y eases and TBT loses upside — but it remains the essential hedge if the deal falls apart. Reduce size 25% vs prior given Iran deal optionality; hold through PCE.",
+      "entry": "Any pullback toward $27–28; reduce prior size by 25%",
+      "invalidation": "30Y closes below 4.85% on two consecutive sessions",
+      "conviction": "low",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SpaceX SPCX IPO roadshow begins June 4 — 7 trading sessions from Tuesday — creating $75B institutional capital drain that disadvantages small-cap allocators first. 30Y at 5.064% remains most punitive to small-cap financing costs. Warsh June 16–17 FOMC is the rate-hike risk event. Two consecutive +0.91% sessions have pushed IWM to ~$287; wait for a reversal candle before sizing in.",
+      "entry": "$285–288 on reversal; require a confirmation session before full sizing",
+      "invalidation": "$292 daily close",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "The Iran deal rests on a Trump public statement, not a signed agreement. Iran's state media (Fars agency) explicitly contradicted the Strait of Hormuz terms on May 24, calling U.S. assertions 'inconsistent with reality.' A deal breakdown — after Trump declared it 'imminent' — could spike WTI from $96 back above $110, re-ignite 30Y widening pressure, and invalidate Friday's SPX close above 7,460 in a Tuesday gap-down. April PCE on Thursday with inflation 'spreading across sectors' (per TradingKey's preview) adds a second directional risk that could arrive before any Iran deal resolution. If SPX closes below 7,400 with the 30Y above 5.15% on any session through May 28, the BUY posture is abandoned and Step Aside is activated immediately.",
+  "body_mdx": "data/briefings/markets/2026-05-25-morning.mdx"
+}
