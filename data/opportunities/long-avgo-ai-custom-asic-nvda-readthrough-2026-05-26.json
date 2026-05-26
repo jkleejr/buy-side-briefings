@@ -1,0 +1,48 @@
+{
+  "id": "long-avgo-ai-custom-asic-nvda-readthrough-2026-05-26",
+  "title": "Long AVGO — AI Custom ASIC Co-Entry with NVDA",
+  "ticker": "AVGO",
+  "asset_class": "equity",
+  "category": "catalyst",
+  "direction": "long",
+  "conviction": "medium",
+  "time_horizon": "4-8 weeks",
+  "current_price": 414.14,
+  "entry": "Initiate $410-420 alongside NVDA execution on Tuesday May 26, after confirming SPX holds 7,460 through the first 15 minutes. Scale: 60% at open, 40% add on any intraday pullback to $405-410. AVGO moves with a 0.80-0.90 correlation to NVDA on AI capex confirmation sessions — execute both positions together or not at all.",
+  "stop_loss": "$390 daily close (~6% below entry midpoint $415) — implies broad semis reversal OR NVDA breaks $215 daily close, invalidating the AI capex thesis",
+  "targets": [
+    "$440 — approach 52-week high zone ($442.36); hyperscaler commentary confirms AI ASIC demand; +6.3%",
+    "$475 — new all-time high; Broadcom Q3 FY2026 earnings (late July) shows AI ASIC revenue growing >80% YoY; +14.5%",
+    "$525 — full XPU re-rating; Broadcom captures 15-20% of AI chip TAM alongside NVDA; +26.5%"
+  ],
+  "risk_reward": "1:4.4 to third target",
+  "position_size_pct": 4,
+  "catalyst": "NVDA's $91B Q2 guide is the AI GPU demand signal; Broadcom's custom AI accelerators (XPUs) are the fastest-growing alternative to NVDA GPUs for hyperscaler inference workloads. Google's TPU v5p, Meta's MTIA, Apple's Neural Engine, and ByteDance's custom accelerators all use Broadcom's ASIC design and packaging services. Broadcom's AI revenue was $4.1B in Q1 FY2026 (+46% YoY); management guided $4.7B for Q2 (+17% sequential). The May 26 morning briefing explicitly names AVGO at ~$413 as a co-entry with NVDA and AMD today, conditional on SPX holding 7,460.",
+  "thesis": "Broadcom occupies the one AI chip segment that NVIDIA cannot threaten: custom silicon built specifically for each hyperscaler's inference architecture. Google, Meta, Apple, and ByteDance each have unique AI inference requirements that a general-purpose GPU suboptimally serves — Broadcom designs and manufactures custom ASICs (called XPUs) that deliver 2-3x better performance per dollar on each company's specific inference workload. NVDA dominates AI training at $91B quarterly run-rate; Broadcom dominates AI inference at scale because inference is 80% of production AI compute and doesn't require CUDA's flexibility. These are not competing markets — they are complementary, meaning NVDA's parabolic training demand creates the model catalog that then drives AVGO's inference deployment expansion.\n\nThe valuation case is compelling at $414. AVGO trades at approximately 32x forward earnings — below its 3-year average of 36x — with AI ASIC revenue growing faster than any other Broadcom segment. The $4.7B Q2 AI guidance implies $18-20B of annualized AI revenue, or approximately 40% of total Broadcom revenue. This is a clean AI compounder with 70%+ gross margins in the custom-chip segment, underpinned by multi-year hyperscaler contracts rather than volatile spot GPU orders. The 52-week high is $442.36 — Target 1 at $440 requires only recovering to near that level, which is achievable on any positive AI ASIC channel check or Q3 guidance lift.\n\nThe entry today is explicitly alongside NVDA execution. The briefing's signal is direct: 'Initiate AMD, TSM, AVGO alongside NVDA if the first 15-minute confirmation holds.' AVGO is the third co-entry positioned as the non-GPU AI chip expression. Iran military strikes introduced intraday volatility, but the Iran war has no direct effect on Broadcom's hyperscaler ASIC contracts, which are governed by multi-year design-win relationships at Google, Meta, and Apple.\n\nThe primary risk is a broad semis risk-off event — if NVDA breaks $215 daily close on Iran escalation, AVGO's $390 stop is the mirror. The two positions are structurally coupled through the AI capex thesis: if the demand confirmation breaks (NVDA signals), the inference deployment acceleration (AVGO) breaks simultaneously. This coupling means portfolio-level stop discipline applies to both: if NVDA is stopped out, AVGO should be reduced as well.",
+  "bull_case": "SPX holds 7,460; NVDA confirms above $218-222 and closes above $215; AVGO closes above $420, recapturing near-ATH territory. Broadcom Q3 earnings (late July): AI ASIC revenue $5.5B+ (vs $4.7B guide), +80% YoY, management raises FY2026 AI guide to $22-24B. Stock re-rates to $475-525. Tail: one of Google, Meta, or ByteDance publicly announces a major AVGO XPU deployment milestone — resets the TAM from $12B annually to $25B+, analyst upgrades cascade.",
+  "bear_case": "NVDA breaks $215 on Iran-driven risk-off; semis complex drops 4-6%; AVGO closes below $390. Structurally: hyperscalers decide to bring ASIC design in-house at scale (Google already has an internal TPU team; Apple Neural Engine is internally designed) — AVGO's contracted revenue doesn't grow beyond existing commitments. Stop triggered on macro break, not fundamental deterioration. Tail: Broadcom's semiconductor components business (networking, storage controllers) faces a cyclical decline that mixed earnings in late July, causing a re-rating even as AI segment beats.",
+  "invalidation": "Daily close below $390, OR NVDA breaks $215 daily close, OR Broadcom guides AI ASIC revenue below $4.5B for Q3 at late-July earnings",
+  "sources": [
+    {
+      "label": "AVGO Broadcom stock price — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/AVGO/"
+    },
+    {
+      "label": "AVGO Broadcom stock price — CNBC",
+      "url": "https://www.cnbc.com/quotes/AVGO"
+    },
+    {
+      "label": "Broadcom Inc. investor relations — AI ASIC segment results",
+      "url": "https://investors.broadcom.com/"
+    },
+    {
+      "label": "NVDA $91B Q2 guide — AI capex read-through to AVGO — StockTitan",
+      "url": "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-first-quarter-fiscal-fq78amc9h84m.html"
+    }
+  ],
+  "created_at": "2026-05-26",
+  "expires_at": "2026-07-31",
+  "status": "active",
+  "tags": ["AI", "semis", "ASIC", "catalyst", "custom-chip", "hyperscaler"],
+  "outcome": null
+}
