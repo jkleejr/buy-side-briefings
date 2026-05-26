@@ -1,0 +1,113 @@
+{
+  "routine": "markets",
+  "date": "2026-05-26",
+  "window": "night",
+  "generated_at": "2026-05-26T22:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — 30Y Day 1 Confirmed; Records Set; PCE Thursday Is the Gatekeeper",
+    "conviction": "medium",
+    "rationale_short": "S&P 500 and Nasdaq closed at new record highs on May 26 as the 30Y yield confirmed Day 1 of the two-session below-5.05% clock at 5.01% — the first qualifying close in this series. Technology sector led at +2.8%, with Micron's 19% AI memory re-rating validating the broader AI infrastructure thesis. BUY at medium conviction: if Day 2 (May 27) confirms the 30Y below 5.05% and April PCE Thursday prints cool (below 2.4% core), high-conviction BUY activates before the Warsh FOMC for the first time in this series.",
+    "supporting_data": [
+      {
+        "label": "30Y Treasury closed 5.01% (−6bps from 5.064%) — Day 1 of two-session below-5.05% confirmation clock officially confirmed",
+        "url": "https://tradingeconomics.com/united-states/30-year-bond-yield"
+      },
+      {
+        "label": "S&P 500 +0.61% to 7,519.12 and Nasdaq +1.19% to 26,656.18 — both new record closing highs on the first full session after Memorial Day",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-26-2026"
+      },
+      {
+        "label": "Technology sector +2.8% — best performer in the S&P 500; Micron (MU) +19% hit $1T market cap on UBS $1,625 price target upgrade on AI memory cycle re-rating",
+        "url": "https://www.cnbc.com/2026/05/26/micron-stock-trillion-market-cap.html"
+      },
+      {
+        "label": "Brent crude fell from morning's $99.39 to $96.31 — below $97 XLE short threshold met; WTI ~$92 near five-week low; oil-bearish thesis intact",
+        "url": "https://www.cnbc.com/amp/2026/05/26/european-markets-stoxx-600-ftse-dax-cac-iran-news.html"
+      },
+      {
+        "label": "VIX 17.01 (+2.53%) on a day SPX rose 0.61% — unusual divergence signals options market is actively hedging the PCE Thursday binary",
+        "url": "https://finance.yahoo.com/quote/%5EVIX/"
+      },
+      {
+        "label": "Iran deal talks continue in Doha with high-level Iranian delegation; Rubio says deal takes 'a few days' — uncertainty contained, deal not broken",
+        "url": "https://www.aljazeera.com/news/2026/5/26/us-strikes-iran-again-what-we-know-and-is-the-ceasefire-over"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7519.12,  "change_pct": 0.61,  "as_of": "2026-05-26T20:00:00Z" },
+    "nasdaq": { "level": 26656.18, "change_pct": 1.19,  "as_of": "2026-05-26T20:00:00Z" },
+    "vix":    { "level": 17.01,    "change_pct": 2.53,  "as_of": "2026-05-26T20:00:00Z" },
+    "ust10y": { "level": 4.51,     "change_bps": -5,    "as_of": "2026-05-26T20:00:00Z" },
+    "dxy":    { "level": 99.24,    "change_pct": 0.28,  "as_of": "2026-05-26T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.01, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y UST",      "value": 5.01,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.24, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7519,  "trigger_above": 0,    "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Opened $220.90 (conditional entry executed); pulled back to ~$215 close; hold with $210 daily close as hard invalidation; thesis intact, MU re-rating is read-through positive", "sentiment": "positive" },
+    { "ticker": "MU",    "note": "+19% to $1T market cap; UBS raised target $535→$1,625 on AI memory structural re-rating; do not chase at current levels; semis read-through positive for AMD, TSM, AVGO", "sentiment": "positive" },
+    { "ticker": "TSLA",  "note": "~$432 (up from ~$418 morning); mild risk-on correlation; no specific catalyst; monitor only", "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "~$415 (range $413–420 intraday); slight softening from prior ~$420 level; no new catalyst; $410 stop; hold", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "Energy sector lower on Brent decline to $96.31; entry condition from morning brief (<$97 Brent) now met; initiate partial short Wednesday open", "sentiment": "negative" },
+    { "ticker": "IWM",   "note": "Russell +1.79% puts IWM at ~$292 — at the $292 invalidation threshold; no reversal candle; do NOT initiate short here; entry recalibrates to $285–288 on reversal", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$396–402 range; entry zone $398–402 still armed for Wednesday; second-priority add after Day 2 30Y confirmation", "sentiment": "positive" },
+    { "ticker": "AAPL",  "note": "~$309–315; tech sector +2.8% read-through; quality-flight hold; $290 stop; no new catalyst", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$135; hold through April PCE Thursday; no pre-print action warranted", "sentiment": "neutral" },
+    { "ticker": "AMZN",  "note": "~$268; AWS capex thesis supported by MU re-rating and AI infrastructure spend; hold", "sentiment": "positive" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $218",
+      "reason": "Conditional entry executed at $220.90 open then stock pulled back to ~$215 close. Adding above $218 before 30Y Day 2 confirmation and PCE Thursday stacks a second PCE binary risk onto an already-entered position that needs managing through the Thursday print.",
+      "better_entry": "$213–217 accumulation on any pullback; $210 daily close remains the hard stop; no new size above $218 without Day 2 30Y confirmation"
+    },
+    {
+      "ticker": "MU post-surge",
+      "reason": "A 19% one-day surge on an analyst price target raise is not a buyable entry — the first-session premium from the UBS catalyst is fully embedded in the close. The structural re-rating thesis may be correct but the near-term risk/reward requires digestion.",
+      "better_entry": "10–15% pullback from today's close; require a second analyst confirmation or forthcoming earnings data to re-enter at lower risk"
+    },
+    {
+      "ticker": "IWM short at ~$292",
+      "reason": "Russell +1.79% puts IWM exactly at the $292 invalidation level identified in the morning brief. Initiating the IWM short at its own invalidation threshold is not an asymmetric trade setup.",
+      "better_entry": "$285–288 on a confirmed reversal session with volume; SPCX June 12 capital drain is the structural catalyst — there is time; do not enter above $290"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Conditional entry executed at $220.90 open; intraday pullback to ~$215 does not change the fundamental thesis: $91.0B Q2 guide, Blackwell ramp, $80B buyback. Micron's 19% AI memory re-rating today is the strongest secondary confirmation of NVDA's AI infrastructure thesis in weeks — if memory pricing is re-rated structurally, NVDA's data-center pricing power commands the same structural premium. Hold through PCE Thursday with tight risk management.",
+      "entry": "Already entered $218–222 open zone; accumulate $213–217 on any further pullback; do NOT add above $218 without 30Y Day 2 confirmation",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Brent crude fell from $99.39 (morning brief) to $96.31 at close, crossing the <$97 entry threshold established in the morning brief. Energy sector closed lower on the session. Iran deal talks continuing in Doha; a signed agreement pushes WTI from $92 toward $80–85, extending XLE downside 10–15%. Initiate partial position at Wednesday open; scale to full size on WTI confirmation below $90.",
+      "entry": "XLE short at Wednesday May 27 open after confirming Brent holds below $97 in Asian/European session; full-size entry requires WTI confirmation below $90",
+      "invalidation": "Brent closes above $103 (formal Iran deal denial or Hormuz closure threat) — cover immediately",
+      "conviction": "medium",
+      "horizon": "1–3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SpaceX SPCX IPO roadshow week of June 8, pricing June 11, first trade June 12 — $75B institutional capital drain disadvantages small-cap allocators first. 30Y Day 1 at 5.01% remains the most punitive rate environment for small-cap financing costs. Warsh June 16–17 FOMC adds rate-hike signal risk. Russell +1.79% today brings IWM to the $292 invalidation threshold with no reversal candle — timing is extended; structural thesis intact.",
+      "entry": "$285–288 on confirmed reversal session with volume; do NOT enter at or above $292; SPCX pre-roadshow pressure builds from June 1",
+      "invalidation": "$292 daily close on two consecutive sessions",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "April PCE prints Thursday May 28 with the prior core reading at 2.40% YoY and April CPI showing headline inflation at +3.8% — well above the Fed's 2% target under a hawkish new Fed chair. TradingKey's pre-PCE analysis flags a third consecutive upward revision to full-year inflation expectations with pressures spreading across food, airfares, and AI chips. VIX rising 2.53% on a day when SPX rose 0.61% is an options-market tell: professional money is actively buying downside protection into Thursday, not participating in the record close with conviction. A hot PCE print above 2.5% core with Warsh's 8-4 hawkish committee at the June 16–17 FOMC would reverse the 30Y Day 1 tailwind in a single session, push the 30Y from 5.01% back above 5.10%, and force an immediate BUY-to-Step-Aside conversion. If April PCE prints above 2.5% core and the 30Y spikes above 5.10% on Thursday, the BUY call converts to Step Aside immediately; NVDA below $210 on a daily close voids the long entry regardless of SPX level.",
+  "body_mdx": "data/briefings/markets/2026-05-26-night.mdx"
+}
