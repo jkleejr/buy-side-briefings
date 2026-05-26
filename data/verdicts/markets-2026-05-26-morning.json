@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-05-26",
+  "window": "morning",
+  "generated_at": "2026-05-26T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Iran Strikes Muddy Oil-Relief Thesis; NVDA Execution Triggered",
+    "conviction": "medium",
+    "rationale_short": "The May 25 night BUY call was directionally correct at the index level — NVDA opened $220.90 above the $212 conditional entry threshold and ES futures implied SPX opening above 7,460. But US military self-defense strikes in southern Iran overnight sent Brent crude +3.4% to $99.39 and drew Iranian retaliation threats, contaminating the clean oil-bearish thesis the BUY depended on. WTI at $92.85 is $3.75 below Friday's close, but the Brent/WTI spread widening to $6.54 is the Hormuz disruption signature. Hold established positions; no new broad-index additions until Iran clarity; April PCE Thursday is a live binary."
+  },
+  "supporting_data": [
+    { "label": "NVDA opened $220.90 on May 26 — above the $212 conditional entry threshold specified in the May 25 night brief; execution triggered", "url": "https://stockanalysis.com/stocks/nvda/" },
+    { "label": "Brent crude +3.4% to $99.39 — US military self-defense strikes in southern Iran; Iran vowing retaliation; Hormuz risk premium re-emerging", "url": "https://www.cnbc.com/2026/05/26/oil-prices-today-brent-wti-iran-trump-hormuz.html" },
+    { "label": "WTI crude $92.85 (−3.9% from Friday's $96.60 but +2.4% from Memorial Day's $90.65) — oil relief partial and contested by Brent spike", "url": "https://www.cnbc.com/2026/05/26/oil-prices-today-brent-wti-iran-trump-hormuz.html" },
+    { "label": "ES futures +0.54% → SPX implied open ~7,510-7,515; Polymarket 91% probability of SPX opening higher; BUY trigger at 7,460 intact", "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52769764/sp500-may-26-open-up-or-down-polymarket-iran-talks-oil-prices" },
+    { "label": "30Y UST 5.064% (May 22 close); Day 1 two-session confirmation clock begins today; Iran-Brent spike is a countervailing force against yield relief", "url": "https://www.federalreserve.gov/releases/h15/" },
+    { "label": "April PCE releases Thursday May 28 at 8:30 AM ET; prior 2.40% YoY; inflation spreading across food, airfares, AI chips — binary overhanging all Tuesday-Wednesday positioning", "url": "https://fxmacrodata.com/articles/usd-pce-may-2026" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7473.47,  "change_pct":  0.37, "as_of": "2026-05-22T20:00:00Z" },
+    "nasdaq": { "level": 26343.97, "change_pct":  0.19, "as_of": "2026-05-22T20:00:00Z" },
+    "vix":    { "level": 16.76,    "change_pct": -0.12, "as_of": "2026-05-22T20:00:00Z" },
+    "ust10y": { "level": 4.51,     "change_bps":  -5,   "as_of": "2026-05-26T11:00:00Z" },
+    "dxy":    { "level": 99.05,    "change_pct":  0.09, "as_of": "2026-05-26T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.76, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.064, "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.05, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7513,  "trigger_below": 7460, "unit": "" },
+    { "name": "Fear & Greed", "value": 59,    "trigger_above": 65,   "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "$220.90 open (vs $218.13 May 22 close) — conditional entry from night brief triggered above $212 with SPX above 7,460. Recalibrate entry zone to $218-222 for late entrants. Invalidation $215 daily close.", "sentiment": "positive" },
+    { "ticker": "XLE",   "note": "DO NOT short at open. Night brief targeted XLE short but Brent +3.4% to $99.39 on Iran military strikes means energy is not declining cleanly. Wait for Brent below $97 and WTI below $90 before initiating.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$396 (May 25 estimate); $398-402 entry zone from night brief may fill on gap-up. Second-priority entry after NVDA executes and SPX holds 7,460 first 15 minutes.", "sentiment": "positive" },
+    { "ticker": "AVGO",  "note": "$413.04 — semis complex with NVDA; initiate alongside NVDA after first 15-minute confirmation.", "sentiment": "positive" },
+    { "ticker": "AAPL",  "note": "~$309 quality-flight hold. $290 stop. No new catalyst.", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$135 — April PCE Thursday is the governing catalyst. Hold through the print; no pre-PCE action.", "sentiment": "neutral" },
+    { "ticker": "IWM",   "note": "Short thesis intact. SPCX IPO June 12, Warsh June 16-17, 30Y punitive. Entry $285-288 on reversal session only.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "XLE (either direction) at open", "reason": "Brent +3.4% to $99.39 with Iran retaliation threat makes both the long and the short premature at today's open; the oil-bearish thesis is contested", "better_entry": "Initiate XLE short after Brent falls below $97 and WTI closes a 30-minute bar below $90" },
+    { "ticker": "NVDA above $222", "reason": "Gap-up to $220.90 is above the original $213-218 entry zone; chasing above $222 without a consolidation candle increases Iran-news whipsaw risk", "better_entry": "$218-222 at open if SPX holds 7,460 through first 15 minutes; $215+ on any intraday pullback" },
+    { "ticker": "IWM short at market", "reason": "Two consecutive +0.91% sessions require a reversal candle; entering the short on a continuation gap-up is poor risk management in a risk-on tape", "better_entry": "$285-288 on confirmed reversal session with volume" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Night brief's conditional entry executed: $220.90 open is above the $212 threshold with SPX implied above 7,460. Fundamental case unchanged — $91.0B Q2 guide, Blackwell data-center ramp, $80B buyback. Entry zone recalibrated to $218-222 to reflect the gap-up above the prior $213-218 zone. Iran military strikes are index-level noise, not an NVDA-specific fundamental change.",
+      "entry": "$218-222 at open; require NVDA above $218 through first 15 minutes and SPX above 7,460; if NVDA fades below $215 in first hour, wait for a recovery candle",
+      "invalidation": "$215 daily close",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "The structural oil-bearish thesis is valid — lower WTI eases the 30Y, hurts energy sector margins — but Brent +3.4% to $99.39 on Iran military strikes makes Tuesday's open a premature entry point. The XLE short requires Brent confirmation: initiate only after Brent falls below $97, signaling the military-strike risk premium is being unwound rather than sustained.",
+      "entry": "Initiate XLE short only after Brent falls below $97; preferred zone $95-97; NOT at Tuesday open",
+      "invalidation": "Brent closes above $103 (Iran deal denial or Hormuz closure escalation — cover immediately)",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Structural thesis intact: SpaceX SPCX IPO roadshow week of June 8, pricing June 11, first trade June 12; $75B capital drain from small-cap allocators. 30Y at 5.064% most punitive to small-cap financing costs. Warsh June 16-17 first FOMC adds rate-hike signal risk. Two consecutive 0.91% IWM sessions require a reversal confirmation before sizing.",
+      "entry": "$285-288 on confirmed reversal session with volume; do not enter on continuation gap-up",
+      "invalidation": "$292 daily close",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "The Brent/WTI spread widening to $6.54 ($99.39 vs. $92.85) is the Hormuz disruption signature — Brent prices direct Middle East supply interruption risk while WTI tracks domestic US supply. US military strikes in southern Iran drew Iranian retaliation threats; if Iran's foreign ministry formally declares the ceasefire void and signals imminent Hormuz access disruption, Brent accelerates toward $105-108 and WTI reverses from $92.85 toward $97-100, eliminating the 30Y yield relief window before it completes even one confirmation session. April PCE on Thursday at a prior 2.40% YoY with inflation spreading across food, airfares, and AI chips leaves no margin for an Iran-driven oil reversal. If SPX closes below 7,440 with Brent above $103 on any session before PCE Thursday, HOLD upgrades immediately to Step Aside.",
+  "body_mdx": "data/briefings/markets/2026-05-26-morning.mdx"
+}
