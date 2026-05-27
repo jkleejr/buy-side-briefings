@@ -1,0 +1,115 @@
+{
+  "routine": "markets",
+  "date": "2026-05-27",
+  "window": "morning",
+  "generated_at": "2026-05-27T11:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY MEDIUM — 30Y Day 2 Running; High-Conviction Gate Is Tonight's Close",
+    "conviction": "medium",
+    "rationale_short": "The 30Y is tracking at 5.03% intraday — Day 2 of the two-session below-5.05% confirmation clock is in progress. S&P 500 futures are +0.13% from yesterday's record close of 7,519.12, and WTI crude has declined to ~$90.31 (−3.8%) as Iran deal talks continue. BUY maintained at medium conviction; the high-conviction upgrade activates if the 30Y closes at or below 5.05% tonight, before tomorrow's April PCE binary at 8:30 AM ET.",
+    "supporting_data": [
+      {
+        "label": "30Y at 5.03% intraday (−0.63%) — Day 2 of the two-session below-5.05% confirmation clock in progress; close at or below 5.05% tonight activates the high-conviction BUY upgrade before PCE",
+        "url": "https://finance.yahoo.com/quote/%5ETYX/"
+      },
+      {
+        "label": "S&P 500 futures +0.13% from record close 7,519.12; Polymarket 61% probability of higher open — flat continuation above critical 7,460 support",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52800148/sp500-may-27-open-up-or-down-polymarket-micron-ai-iran-talks"
+      },
+      {
+        "label": "WTI crude at ~$90.31 intraday (previous close $93.89, −3.8%) — Iran deal progress compressing oil-risk premium; approaching the $90 full-size XLE short entry trigger",
+        "url": "https://tradingeconomics.com/commodity/crude-oil"
+      },
+      {
+        "label": "VIX ~16.70 pre-market (down from 17.01 close) — below the 18 trigger; PCE-driven hedging easing slightly into session open",
+        "url": "https://finance.yahoo.com/quote/%5EVIX/"
+      },
+      {
+        "label": "April PCE due 8:30 AM ET Thursday May 28: prior core 2.40% YoY; Morningstar consensus projects 'another good month'; Dell Technologies also reports premarket the same morning",
+        "url": "https://www.morningstar.com/economy/forecasts-april-pce-report-show-another-good-month-inflation"
+      },
+      {
+        "label": "BTC 3-month uptrend vs. gold snapped with $2B+ in BTC ETF outflows vs. gold inflows — institutional safe-haven rotation pre-PCE signal; BTC at $75,740",
+        "url": "https://www.coindesk.com/markets/2026/05/27/bitcoin-vs-gold-btc-s-three-month-uptrend-has-snapped"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7519.12,  "change_pct": 0.61,  "as_of": "2026-05-26T20:00:00Z" },
+    "nasdaq": { "level": 26656.18, "change_pct": 1.19,  "as_of": "2026-05-26T20:00:00Z" },
+    "vix":    { "level": 16.70,    "change_pct": -1.82, "as_of": "2026-05-27T11:00:00Z" },
+    "ust10y": { "level": 4.47,     "change_bps": -4,    "as_of": "2026-05-27T11:30:00Z" },
+    "dxy":    { "level": 99.24,    "change_pct": 0.00,  "as_of": "2026-05-26T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.70, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y UST",      "value": 5.03,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.24, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7519,  "trigger_above": 0,    "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Intraday range $212.00–$218.36; at ~$213.95 — inside the $213–217 accumulation zone from night brief; MU re-rating thesis intact; hold with $210 daily close stop; add on dips in zone", "sentiment": "positive" },
+    { "ticker": "XLE",   "note": "WTI at $90.31 intraday — approaching the $90 full-size entry trigger; Brent well below $97 threshold; initiate short at open; scale to full size on WTI daily close below $90", "sentiment": "negative" },
+    { "ticker": "IWM",   "note": "Russell 2000 ~2,869 (IWM ~$288) — approaching $285–288 entry zone for structural short; wait for confirmed reversal session; do not initiate above $290", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$383.75 — pulled below the $396–402 night brief entry zone; adjusted entry $378–385 on Day 2 30Y confirmation tonight; second-priority add", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~$310.75; quality-flight hold; $290 stop; mild tech tailwind; no new catalyst", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "~$419.25; quality anchor; range $413–420 this week; $410 stop; hold", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$135; hold through April PCE print tomorrow; no pre-print action warranted", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "~$433 (May 26 close); risk-on correlation; no specific catalyst; monitor", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "~$612; Motley Fool identified META as most undervalued Mag-7 vs. forward growth; no active position; monitor for Day 2 BUY upgrade entry", "sentiment": "positive" },
+    { "ticker": "AMZN",  "note": "~$265; AWS capex thesis intact; MU AI re-rating supportive of infrastructure spend; hold", "sentiment": "positive" },
+    { "ticker": "BTC",   "note": "$75,740 — 3-month uptrend vs. gold snapped; $2B+ ETF outflows per CoinDesk; $74,300 near-term support; pre-PCE setup not favorable for new crypto longs", "sentiment": "negative" },
+    { "ticker": "DELL",  "note": "Reporting Q1 FY2027 premarket Thursday May 28 — same morning as April PCE 8:30 AM ET; AI server segment is direct validator of hyperscaler capex; watch pre-market", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $218",
+      "reason": "PCE binary is tomorrow and 30Y Day 2 is not yet confirmed. Adding above $218 before tonight's 30Y close stacks two unresolved binaries onto an already-entered position that needs managing through Thursday's print.",
+      "better_entry": "$213–217 accumulation on any intraday dip; hard stop at $210 daily close; do not add above $218 without tonight's 30Y close confirmation in hand"
+    },
+    {
+      "ticker": "BTC at $75,740",
+      "reason": "The 3-month BTC uptrend vs. gold has snapped with $2B+ in institutional ETF outflows per CoinDesk. With PCE tomorrow, institutional money is rotating to safe havens, not adding risk crypto. Near-term support at $74,300; a break below targets $71,000–72,000.",
+      "better_entry": "Post-PCE clarity; require VIX below 16 and 30Y Day 2 confirmed before re-entering BTC longs; $72,000–74,000 zone offers better risk/reward if $74,300 support breaks"
+    },
+    {
+      "ticker": "GOOGL above $385",
+      "reason": "Stock corrected from $396–402 to $383.75 before the prior entry was filled. Chasing with a new entry before Day 2 30Y confirmation does not offer asymmetric setup in a pre-PCE session.",
+      "better_entry": "$378–385 on tonight's Day 2 30Y close confirmation; if no confirmation, wait for post-PCE re-entry at $375–380"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Existing entry at $218–222 open zone from May 26. Intraday range today is $212.00–$218.36 with current level ~$213.95 — inside the $213–217 accumulation zone. Micron's 19% AI memory re-rating on May 26 is the strongest recent structural read-through for NVDA's data-center pricing power. The $91.0B Q2 guide, Blackwell ramp, and $80B buyback remain intact. Manage through PCE Thursday with the $210 hard stop; add partial size in $213–217 zone on any intraday dip today.",
+      "entry": "Already entered $218–222; accumulate $213–217 on intraday dips; do NOT add above $218 without tonight's 30Y close confirmation",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Entry condition from May 26 night brief was met: Brent crossed below $97. WTI has declined further to ~$90.31 intraday today, approaching the full-size trigger below $90. Iran deal talks are progressing toward a memorandum of understanding that would reopen the Strait of Hormuz — the most oil-bearish single event in the current geopolitical regime. A signed deal pushes WTI from $90 toward $80–85, extending XLE downside 10–15%.",
+      "entry": "XLE short at open (condition met); scale to full size on WTI daily close below $90",
+      "invalidation": "Brent closes above $103 (formal Iran deal collapse or Hormuz closure threat) — cover immediately",
+      "conviction": "medium",
+      "horizon": "1–3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Russell 2000 at ~2,869 (IWM ~$288) is approaching the $285–288 entry zone. SpaceX SPCX IPO roadshow begins June 8 — $75B institutional capital drain structurally disadvantages small-cap allocators first. 30Y intraday at 5.03% is the most punitive financing environment for small-cap balance sheets. Warsh June 16–17 FOMC adds rate-hike signal risk. Wait for a confirmed reversal session; SPCX pre-roadshow pressure builds from June 1.",
+      "entry": "$285–288 on confirmed reversal session with volume; do NOT enter at or above $290",
+      "invalidation": "$292 daily close on two consecutive sessions",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "April PCE prints tomorrow at 8:30 AM ET with April CPI already at +3.8% YoY headline and TradingKey's pre-release analysis flagging inflation spreading across food, airfares, and AI chips — a third consecutive upward revision cycle that would push core PCE materially above the prior 2.40% YoY reading. The BTC uptrend break vs. gold — with $2B+ in institutional ETF outflows rotating to precious metals — is an independent signal that professional money is hedging exposure ahead of the print rather than adding it. A hot PCE core print above 2.8% YoY combined with a 30Y spike back above 5.10% would immediately void the Day 2 confirmation's signal value, convert the BUY call to Step Aside, and force NVDA position closure at or below $210. If April PCE core exceeds 2.8% and the 30Y closes above 5.10% on Thursday, the BUY call is wrong regardless of Day 2 status.",
+  "body_mdx": "data/briefings/markets/2026-05-27-morning.mdx"
+}
