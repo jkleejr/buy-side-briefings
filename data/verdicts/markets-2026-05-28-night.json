@@ -1,0 +1,114 @@
+{
+  "routine": "markets",
+  "date": "2026-05-28",
+  "window": "night",
+  "generated_at": "2026-05-28T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY MEDIUM — PCE Absorbed; Iran MoU Compresses Oil Risk",
+    "conviction": "medium",
+    "rationale_short": "S&P 500 and Nasdaq closed at new records (7,563.63 and 26,917.47) as April PCE core printed at consensus (3.3% YoY, +0.2% MoM below the 0.3% estimate) and US-Iran negotiators agreed on a 60-day ceasefire MoU. Brent crude fell from an intraday high of $96.57 to a close of $93.71 as deal optimism spread, powerfully reactivating the XLE short thesis in a single session. Medium conviction: PCE headline at 3.8% YoY (3-year high) gives Warsh's hawkish committee live ammunition for June 16-17, and Dell's -3.93% after-hours decline on a record $43.8B beat introduces sell-the-news risk into AI infrastructure names.",
+    "supporting_data": [
+      {
+        "label": "S&P 500 closed at record 7,563.63 (+0.58%) and Nasdaq at 26,917.47 (+0.91%) — second consecutive record session despite hottest PCE reading since May 2023",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-28-2026"
+      },
+      {
+        "label": "April PCE core +3.3% YoY (consensus match), +0.2% MoM (below 0.3% estimate); headline +3.8% YoY — market absorbed as no hawkish surprise; personal saving rate fell to 2.6% (lowest since June 2022)",
+        "url": "https://www.benzinga.com/markets/macro-economic-events/26/05/52835775/us-pce-inflation-report-april-2026"
+      },
+      {
+        "label": "US-Iran 60-day ceasefire MoU agreed pending Trump approval; includes Strait of Hormuz mine-clearance within 30 days; Brent fell from $96.57 intraday high to $93.71 close",
+        "url": "https://www.cnbc.com/2026/05/28/oil-prices-us-strikes-in-iran-revive-strait-of-hormuz-turmoil-fears.html"
+      },
+      {
+        "label": "Dell Q1 FY2027: record $43.8B revenue (+88% YoY), $24.4B AI orders, $16.1B AI server revenue — FY27 full-year AI server revenue guided to ~$60B (+144% YoY)",
+        "url": "https://www.benzinga.com/insights/news/26/05/52861382/dell-technologies-q1-2027-earnings-call-complete-transcript"
+      },
+      {
+        "label": "PLTR surged 7.83% to $137.93 — session's top watchlist mover; government AI and defense contracts benefiting from Iran ceasefire resolution",
+        "url": "https://finance.yahoo.com/quote/PLTR/"
+      },
+      {
+        "label": "30Y UST opened at 5.027%, intraday high 5.055% (brief breach of trigger); Day 2 confirmed May 27 at 5.01% — high-conviction BUY framework technically active, capped at medium on mixed morning call and Warsh June 16-17 risk",
+        "url": "https://www.cnbc.com/quotes/US30Y"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7563.63, "change_pct": 0.58, "as_of": "2026-05-28T20:00:00Z" },
+    "nasdaq": { "level": 26917.47, "change_pct": 0.91, "as_of": "2026-05-28T20:00:00Z" },
+    "vix":    { "level": 16.20,   "change_pct": -3.57, "as_of": "2026-05-28T20:00:00Z" },
+    "ust10y": { "level": 4.47,    "change_bps": 0,    "as_of": "2026-05-28T20:00:00Z" },
+    "dxy":    { "level": 99.23,   "change_pct": 0.03,  "as_of": "2026-05-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",         "value": 16.20, "trigger_above": 18,   "unit": ""        },
+    { "name": "30Y UST",     "value": 5.03,  "trigger_above": 5.05, "unit": "%"       },
+    { "name": "DXY",         "value": 99.23, "trigger_above": 100,  "unit": ""        },
+    { "name": "Brent Crude", "value": 93.71, "trigger_above": 100,  "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "$214.28 (+0.79%) — back inside $213-217 accumulation zone; Dell $24.4B AI orders validate Blackwell demand; $210 hard stop intact", "sentiment": "positive" },
+    { "ticker": "PLTR", "note": "$137.93 (+7.83%) — session's top watchlist mover; government AI + defense tailwind from Iran ceasefire; consider partial profits $138-140", "sentiment": "positive" },
+    { "ticker": "MSFT", "note": "~$418.43 (+~1.4%) — Azure AI thesis intact; holding well above $410 stop; AI software category broadly outperforming", "sentiment": "positive" },
+    { "ticker": "TSLA", "note": "$441.01 (+~2%) — risk-on correlation; no new catalyst; hold", "sentiment": "neutral" },
+    { "ticker": "DELL", "note": "$317.31 AH (-3.93%) — record $43.8B beat, $24.4B AI orders; sold off after 158% YTD run; sell-the-news dynamic emerging in AI infrastructure names", "sentiment": "negative" },
+    { "ticker": "GOOGL", "note": "~$384-388; PCE entry condition met (core 3.3%); target $380-384 on Friday morning softness", "sentiment": "positive" },
+    { "ticker": "META", "note": "AI advertising thesis intact; tech sector outperformer; hold", "sentiment": "positive" },
+    { "ticker": "AMZN", "note": "AWS revenue trajectory confirmed by SNOW $6B deal + Dell AI server demand; hold", "sentiment": "positive" },
+    { "ticker": "AMD",  "note": "Recovered broadly with semis complex; hold existing; Dell AI order volume validates full AI semis complex", "sentiment": "neutral" },
+    { "ticker": "BTC",  "note": "$73,461 (-0.11%) — $74,300 support broken; underperforming on a risk-on equity day; institutional flow going to equities not crypto", "sentiment": "negative" },
+    { "ticker": "ETH",  "note": "$2,004 (-0.54%) — tracking BTC; no crypto-specific catalyst", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "DELL",
+      "reason": "-3.93% after hours despite record $43.8B revenue (+88% YoY) and $24.4B AI orders; 158% YTD rally has absorbed AI server cycle thesis; sell-the-news dynamic following SNOW's similar pattern",
+      "better_entry": "Post-reaction consolidation; require 2 consecutive closes above $310 before re-entering; $295-300 offers better risk/reward on pullback"
+    },
+    {
+      "ticker": "NVDA above $217",
+      "reason": "NVDA at $214.28 is inside the accumulation zone — adding above $217 is chasing beyond the disciplined entry range before 30Y confirms sustained below 5.00%",
+      "better_entry": "$213-215 pullback on Friday morning softness; $210 is the non-negotiable daily-close stop"
+    },
+    {
+      "ticker": "BTC",
+      "reason": "$74,300 support broken ($73,461 close); risk-on session sent institutional capital to equities, not crypto; crypto underperforming in a risk-on environment is a positioning tell",
+      "better_entry": "$70,000-72,000 if support holds on high volume; require VIX below 15 and 30Y below 5.00% as prerequisite"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA at $214.28 is back inside the $213-217 accumulation zone. Dell's $24.4B AI orders and $16.1B AI server revenue — combined with SNOW's $6B AWS deal — represent the most definitive two-session validation of Blackwell GPU demand durability in this cycle. Risk/reward at current levels is approximately 3:1 toward the $230-240 target.",
+      "entry": "Existing position; add partial at $213-215; do NOT add above $218 until 30Y closes below 5.00% for two consecutive sessions",
+      "invalidation": "$210 daily close — exit entire position; do not re-enter until Iran deal signed and 30Y re-establishes below 5.00%",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "US-Iran 60-day ceasefire MoU with Strait of Hormuz mine-clearance commitment is the most structurally bearish oil catalyst since the conflict began. Brent fell from $96.57 to $93.71 in a single session — the first meaningful leg of risk-premium compression. A signed deal pushes WTI from $88.90 toward $80-85, translating to 8-12% downside on XLE. Scale from morning's risk-managed 25-50% back to full size.",
+      "entry": "Scale from 25-50% to 100% size as Brent holds below $94; add to max size on WTI confirming below $87 after deal signature",
+      "invalidation": "Brent close above $100 — cover entire position immediately; Trump deal rejection is the primary trigger",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SpaceX SPCX roadshow begins June 8 — the $75B institutional capital drain at a $1.75-2T valuation structurally disadvantages small-cap allocators first. 30Y at 5.03% is the most punitive small-cap debt financing environment in this series. Warsh FOMC June 16-17 adds rate-hike signal risk. IWM at ~$292 is still above the $285-288 entry zone; patience required.",
+      "entry": "$285-288 on confirmed reversal session with above-average volume; do NOT initiate at or above $290",
+      "invalidation": "$292 daily close on two consecutive sessions",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "April PCE headline at 3.8% YoY — the highest since May 2023 — hands Warsh's 8-4 hawkish committee the hottest inflation print since he took the chair; core at 3.3% marks the third consecutive month above 3.0%, a pattern that historically precedes rate hike cycles, and the Fed chair who entered with a hawkish 8-4 vote now has a politically viable argument for a June 16-17 rate hike that would void every BUY thesis built on rate-stability expectations. Dell's -3.93% after-hours decline on $43.8B revenue (+88% YoY) and $24.4B in AI orders — following SNOW's pop-then-fade — signals the AI infrastructure complex is in a priced-for-perfection phase where record beats compress multiples rather than expand them. The Iran 60-day MoU is still pending Trump's signature, and the President has publicly stated he is 'not satisfied' with the current terms; rejection sends Brent back toward $100+ overnight, voids the XLE short, and re-inflates the Hormuz risk premium in a single session. If SPX loses 7,460 on a daily close and the 30Y closes above 5.10%, the BUY call converts to Step Aside immediately.",
+  "body_mdx": "data/briefings/markets/2026-05-28-night.mdx"
+}
