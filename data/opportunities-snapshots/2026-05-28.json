@@ -1,0 +1,69 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "2026-05-28T12:10:00Z",
+  "summary": "Three closures today: AMD long hit Target 1 intraday at $510.21 (+5.4%); RKLB short stopped out at $143.20 (−9.7%) after an $816M SDA government contract triggered the stated invalidation condition; MSFT/META pair stopped out as META surged +3.8% to $635.36, widening the pair spread −6.5% past the 5% threshold. Three new ideas added: Long DELL ($318.80, AI server earnings tonight — conditional May 29 entry), Long PLTR ($132.51, government AI + Iran military exchange premium), Long UUP ($27.70, safe-haven dollar on PCE ~3.3% core + Iran fabricated-deal escalation); NVDA held above the adjusted $210 stop at $211.34 close; SPX finished essentially flat at ~7,520.",
+  "active_ids": [
+    "long-nvda-post-earnings-2026-05-21",
+    "long-amzn-aws-cloud-capex-2026-05-21",
+    "long-btc-risk-on-liquidity-2026-05-21",
+    "long-gld-iran-fed-tail-2026-05-21",
+    "short-arkk-spacex-rotation-drain-2026-05-21",
+    "short-xle-oil-thesis-broken-2026-05-21",
+    "long-googl-ai-search-spx-breakout-2026-05-22",
+    "long-ita-defense-iran-geopolitical-2026-05-22",
+    "long-jets-iran-oil-relief-2026-05-25",
+    "short-uso-iran-wti-downside-2026-05-25",
+    "long-avgo-ai-custom-asic-nvda-readthrough-2026-05-26",
+    "long-tsm-foundry-ai-wafer-demand-2026-05-26",
+    "short-iwm-spacex-ipo-drain-reentry-2026-05-26",
+    "long-dell-ai-server-earnings-reaction-2026-05-28",
+    "long-pltr-government-ai-iran-geopolitical-2026-05-28",
+    "long-uup-dollar-safe-haven-pce-iran-2026-05-28"
+  ],
+  "new_today_ids": [
+    "long-dell-ai-server-earnings-reaction-2026-05-28",
+    "long-pltr-government-ai-iran-geopolitical-2026-05-28",
+    "long-uup-dollar-safe-haven-pce-iran-2026-05-28"
+  ],
+  "closed_today": [
+    {
+      "id": "long-amd-ai-semis-tuesday-entry-2026-05-25",
+      "status": "target_hit",
+      "final_price": 495.54,
+      "return_pct": 5.4,
+      "note": "AMD hit $510.21 intraday (new 52-week high), clearing Target 1 at $500. Entry ~$470 on May 26; final close $495.54. SNOW's $6B AWS AI deal and NVDA's $91B Q2 guide read-through drove the AI GPU second-source thesis to fruition faster than the 4–8 week horizon."
+    },
+    {
+      "id": "short-rklb-spacex-s1-competition-2026-05-22",
+      "status": "stopped_out",
+      "final_price": 143.20,
+      "return_pct": -9.7,
+      "note": "Rocket Lab awarded $816M Space Development Agency Tracking Layer Tranche 3 contract on May 27, directly triggering the invalidation condition ('material new government contract'). Combined with prior $515M SDA award, RKLB's backlog exceeded $1.3B, undermining the space-scarcity-premium drain thesis. Closed at $143.20, above the $140 stop. Short entered at ~$130.50."
+    },
+    {
+      "id": "pair-msft-long-meta-short-2026-05-21",
+      "status": "stopped_out",
+      "final_price": 412.65,
+      "return_pct": -3.4,
+      "note": "META +3.8% to $635.36 on AI advertising tailwinds and SNOW earnings validation; MSFT −0.8% to $412.65. MSFT/META ratio moved from ~0.694 at entry to ~0.650, a 6.5% adverse spread move exceeding the 5% pair stop threshold. Combined pair P&L approximately −3.4% of total notional."
+    }
+  ],
+  "current_prices": {
+    "long-nvda-post-earnings-2026-05-21": 211.34,
+    "long-amzn-aws-cloud-capex-2026-05-21": 271.85,
+    "long-btc-risk-on-liquidity-2026-05-21": 73286.0,
+    "long-gld-iran-fed-tail-2026-05-21": 408.49,
+    "short-arkk-spacex-rotation-drain-2026-05-21": 76.40,
+    "short-xle-oil-thesis-broken-2026-05-21": 56.99,
+    "long-googl-ai-search-spx-breakout-2026-05-22": 385.07,
+    "long-ita-defense-iran-geopolitical-2026-05-22": 232.00,
+    "long-jets-iran-oil-relief-2026-05-25": 28.95,
+    "short-uso-iran-wti-downside-2026-05-25": 131.03,
+    "long-avgo-ai-custom-asic-nvda-readthrough-2026-05-26": 421.86,
+    "long-tsm-foundry-ai-wafer-demand-2026-05-26": 407.00,
+    "short-iwm-spacex-ipo-drain-reentry-2026-05-26": 290.37,
+    "long-dell-ai-server-earnings-reaction-2026-05-28": 318.80,
+    "long-pltr-government-ai-iran-geopolitical-2026-05-28": 132.51,
+    "long-uup-dollar-safe-haven-pce-iran-2026-05-28": 27.70
+  }
+}

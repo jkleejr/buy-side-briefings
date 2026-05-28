@@ -34,6 +34,13 @@
   ],
   "created_at": "2026-05-21",
   "expires_at": "2026-08-21",
-  "status": "active",
-  "tags": ["pair-trade", "quality", "megacap", "AI", "low-conviction"]
+  "status": "stopped_out",
+  "tags": ["pair-trade", "quality", "megacap", "AI", "low-conviction"],
+  "outcome": {
+    "closed_at": "2026-05-28",
+    "final_price": 412.65,
+    "return_pct": -3.4,
+    "outcome_label": "Stopped out — META outperformed MSFT by ~6.5%, exceeding the 5% pair stop",
+    "note": "META surged +3.8% to $635.36 on May 27, 2026, on AI advertising tailwinds and SNOW's $6B AWS deal validating the cloud AI infrastructure thesis — while MSFT declined −0.8% to $412.65. The MSFT/META ratio moved from approximately 0.694 at entry (MSFT $419, META ~$603) to 0.650 at exit, a 6.5% tightening against the long MSFT / short META position, triggering the 5% pair P&L stop threshold. Combined pair loss: long MSFT −1.5%, short META −5.4%, totaling approximately −3.4% of total dollar-notional. META's AI advertising outperformance — AI Overviews and ad-targeting improvements — contradicted the hawkish-regime quality-rotation thesis that drove the trade at inception. final_price reflects MSFT (the reference ticker) at $412.65."
+  }
 }

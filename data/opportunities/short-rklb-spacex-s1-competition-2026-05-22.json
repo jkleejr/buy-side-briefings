@@ -42,6 +42,13 @@
   ],
   "created_at": "2026-05-22",
   "expires_at": "2026-07-01",
-  "status": "active",
-  "tags": ["short", "event", "SpaceX", "IPO", "space", "competitive-headwind", "capital-rotation"]
+  "status": "stopped_out",
+  "tags": ["short", "event", "SpaceX", "IPO", "space", "competitive-headwind", "capital-rotation"],
+  "outcome": {
+    "closed_at": "2026-05-28",
+    "final_price": 143.20,
+    "return_pct": -9.7,
+    "outcome_label": "Stopped out at $143.20 — $816M SDA contract invalidation triggered",
+    "note": "Rocket Lab announced an $816M Space Development Agency Tracking Layer Tranche 3 satellite contract on May 27, 2026, directly triggering the stated invalidation condition: 'RKLB announces a material new government contract that creates demand-independent revenue.' Combined with a prior $515M SDA award, RKLB's total SDA backlog exceeded $1.3B, fundamentally altering its revenue profile and undercutting the 'space scarcity premium drain' thesis. RKLB closed at $143.20 on May 27, breaching the $140 daily-close stop. Short entered at approximately $130.50 (midpoint of $128–133 range); stopped at $143.20 = −9.7% loss on the short."
+  }
 }

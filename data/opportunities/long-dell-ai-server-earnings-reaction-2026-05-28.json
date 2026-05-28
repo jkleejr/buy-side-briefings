@@ -1,0 +1,48 @@
+{
+  "id": "long-dell-ai-server-earnings-reaction-2026-05-28",
+  "title": "Long DELL — AI Server Earnings Reaction + SNOW Validation",
+  "ticker": "DELL",
+  "asset_class": "equity",
+  "category": "event",
+  "direction": "long",
+  "conviction": "medium",
+  "time_horizon": "2-4 weeks",
+  "current_price": 318.80,
+  "entry": "Enter on May 29 open after confirming tonight's Q1 FY2027 earnings. Require: (1) ISG revenue above $19B or AI-optimized server revenue growth ≥80% YoY, (2) FY2027 guide maintained or raised, (3) EPS beat or in-line. Do NOT enter on a miss or a guide cut. If earnings are clean, enter $310–330 at the May 29 open. Scale: 70% at open, 30% add on any intraday pullback to $305–312.",
+  "stop_loss": "$295 daily close (~7.5% below reference price) — implies AI server demand decelerates or FY2027 guidance is cut",
+  "targets": [
+    "$340 — gap-fill above prior resistance, AI server thesis confirmed by earnings, +6.6%",
+    "$370 — SNOW AWS deal read-through fully priced into Dell's AI backlog re-rating, +16.1%",
+    "$405 — full ISG AI server supercycle re-rating; analyst target upgrades; $50B AI revenue guide, +27.1%"
+  ],
+  "risk_reward": "1:3.5 to third target",
+  "position_size_pct": 3,
+  "catalyst": "Dell Technologies reports Q1 FY2027 results after the close on May 28, 2026 (conference call 3:30 PM CDT). Consensus: $35.46B revenue (+51.7% YoY), EPS $3.04 (+96% YoY), ISG AI server revenue expected to grow >100% YoY. Dell entered the quarter with a $43B AI backlog (as of Q4 FY2026 exit) and guided FY2027 AI revenue of ~$50B. SNOW's $6B five-year AWS AI expansion deal announced today is the strongest real-time validation of enterprise AI infrastructure spending that directly flows through Dell's ISG order book — AWS is a top-10 Dell AI server customer.",
+  "thesis": "Dell is the dominant direct-sale AI server OEM to US enterprise and cloud customers. Its Infrastructure Solutions Group is the single largest beneficiary of the hyperscaler AI capex cycle beyond the chip makers themselves: every NVDA Blackwell GPU cluster that a hyperscaler deploys requires Dell PowerEdge servers, high-speed networking, cooling, and storage — all of which flow through ISG. Dell's Q4 FY2026 AI-optimized server revenue was $9.0B (up 342% YoY), with a $43B backlog and 4,000+ AI customers. The Q1 FY2027 report is the first quarterly confirmation that NVDA's $91B Q2 guide actually materialized as physical server orders flowing through Dell's ISG pipeline.\n\nSNOW's $6B AWS AI deal announced this morning is the most direct corroborating signal available: Snowflake committed $6B to AWS AI infrastructure over five years, and AWS is primarily deploying that on Dell-manufactured clusters in its data centers. Every dollar of hyperscaler AI infrastructure spend ($91B quarterly NVDA + $6B SNOW + an estimated $180B total annual hyperscaler capex) creates downstream demand for Dell's server, networking, and storage products. The ISG segment's backlog of $43B represents approximately 4.8x quarterly revenue at the Q4 FY2026 run rate — the strongest order-book-to-revenue ratio in Dell's history.\n\nThe trade setup is post-earnings conditional: enter only after confirming the results meet the stated thresholds. The $295 stop reflects a scenario where Dell misses on AI server growth guidance or provides a below-consensus FY2027 outlook — a genuine negative, not a noise event. The 2-4 week horizon captures the post-earnings positive momentum that typically runs for 10-15 sessions in this type of strong earnings beat cycle. Beyond that window, the June FOMC and SpaceX IPO introduce macro crosscurrents that dilute the single-name earnings thesis.\n\nThe key risk is that Dell's AI server margin profile disappoints even if revenue beats: ISG AI margins are thinner than traditional server margins because Dell passes through GPU cost to maintain market share. If Q1 gross margin for AI servers is below 11–12%, the revenue beat may be offset by margin compression, creating a 'revenue beat, stock flat' reaction. Size at 3% (not 4%) to reflect this margin-compression binary.",
+  "bull_case": "Q1 FY2027 beats on all three dimensions: revenue $36B+, AI server revenue $10B+ (+>100% YoY), EPS $3.20+. FY2027 AI revenue guide raised to $55B+ (vs. $50B prior). SNOW's AWS deal creates a visible demand tail for Dell's compute stack. Stock gaps to $330–340 at the May 29 open and holds. Management calls out HP Enterprise and Cisco losing enterprise AI server share to Dell in the quarter. Target 2 ($370) in reach within 3 weeks on analyst upgrades. Tail: NVDA announces Blackwell Ultra availability pulling forward Dell's rack-level AI cluster orders into Q2.",
+  "bear_case": "AI server gross margins compress to 10% on competition from HP Enterprise and ODM direct sales; EPS misses despite revenue beat; Dell guides Q2 AI revenue below consensus. Stock falls to $295–310 post-earnings. Stop triggered. Tail: NVDA's $91B Q2 guide raises supply chain fears — if Dell cannot fulfill orders because NVDA allocation is constrained, backlog converts to cancellations rather than revenue, and the entire $43B backlog narrative collapses.",
+  "invalidation": "$295 daily close, OR ISG AI server revenue growth below 60% YoY in Q1 FY2027 results, OR FY2027 guide cut",
+  "sources": [
+    {
+      "label": "Dell Q1 FY2027 earnings report — MarketBeat consensus preview",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-5-28-dell-technologies-inc-stock/"
+    },
+    {
+      "label": "Dell $43B AI backlog, $50B AI revenue FY2027 guide — Let's Data Science",
+      "url": "https://letsdatascience.com/news/dell-reports-43b-ai-backlog-guides-50b-ai-revenue-9f6f0c5f"
+    },
+    {
+      "label": "SNOW $6B AWS AI deal validates AI infra spending — FX Leaders",
+      "url": "https://www.fxleaders.com/news/2026/05/28/snow-surges-38-after-earnings-blowout-as-6b-aws-ai-deal-reignites-growth-narrative/"
+    },
+    {
+      "label": "Dell Technologies stock price — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/DELL/"
+    }
+  ],
+  "created_at": "2026-05-28",
+  "expires_at": "2026-06-25",
+  "status": "active",
+  "tags": ["AI", "server", "earnings", "event", "enterprise", "ISG", "hyperscaler"],
+  "outcome": null
+}

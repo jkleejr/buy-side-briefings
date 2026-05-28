@@ -38,7 +38,13 @@
   ],
   "created_at": "2026-05-25",
   "expires_at": "2026-07-31",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["AI", "semis", "GPU", "catalyst", "Tuesday-entry", "AMD"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-05-28",
+    "final_price": 495.54,
+    "return_pct": 5.4,
+    "outcome_label": "Target 1 hit — $500 cleared intraday at $510.21",
+    "note": "AMD hit an intraday high of $510.21 on May 28, 2026, clearing the $500 Target 1 threshold and also setting a new 52-week high on the session. The AI GPU thesis accelerated: SNOW's $6B AWS AI expansion deal (reported premarket May 28) reinforced hyperscaler dual-vendor GPU procurement, validating the MI300X demand read-through from NVDA's $91B Q2 guide. Entry midpoint ~$470 (May 26 open, confirmed SPX held 7,460); final close $495.54 = +5.4% return. Target 1 tagged intraday at $510.21 (+8.8% from entry), with Target 2 ($530) and Target 3 ($580) remaining as open upside for any re-entry after consolidation."
+  }
 }
