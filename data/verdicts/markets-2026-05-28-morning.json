@@ -1,0 +1,117 @@
+{
+  "routine": "markets",
+  "date": "2026-05-28",
+  "window": "morning",
+  "generated_at": "2026-05-28T11:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD MEDIUM — Day 2 Confirmed; Iran Strikes Void Today's BUY Setup",
+    "conviction": "medium",
+    "rationale_short": "The 30Y closed at 5.01% on May 27, formally confirming Day 2 and technically activating the high-conviction BUY framework — but overnight US-Iran military exchanges (US struck an Iranian military site; Iran's Revolutionary Guards retaliated against a US airbase) reversed oil's entire May 27 decline, with WTI +1.8% to $90 and Brent +2% to $96.07. With April PCE due at 8:30 AM ET (consensus core +3.3% YoY, highest since 2023) and S&P futures -0.2%, today is hold territory: manage existing positions with defined stops and do not add new broad-index longs until the oil-Iran and PCE double binary resolves.",
+    "supporting_data": [
+      {
+        "label": "30Y closed at 5.01% on May 27 — Day 2 of the two-session confirmation clock formally CONFIRMED below 5.05%; high-conviction BUY framework technically activated per prior brief's conditional, but Iran cross-asset signal prevents high-conviction upgrade",
+        "url": "https://finance.yahoo.com/quote/%5ETYX/"
+      },
+      {
+        "label": "US struck Iran military site overnight; Iran's Revolutionary Guards retaliated against a US airbase at ~4:50 AM local time — WTI +1.8% to $90 and Brent +2% to $96.07, fully reversing May 27's oil-risk-premium compression",
+        "url": "https://www.cnbc.com/2026/05/28/oil-prices-us-strikes-in-iran-revive-strait-of-hormuz-turmoil-fears.html"
+      },
+      {
+        "label": "April PCE due 8:30 AM ET: consensus core +3.3% YoY (vs 3.2% prior March reading), headline +3.8% YoY — Morningstar projects energy-driven inflation rising to 3-year highs; the single most important print of the week",
+        "url": "https://www.morningstar.com/economy/april-pce-report-seen-showing-energy-driven-inflation-rising-3-year-highs"
+      },
+      {
+        "label": "S&P 500 futures -0.2%, Nasdaq 100 futures -0.3% premarket — markets pricing Iran risk premium ahead of PCE; SPX record close 7,520.36 now under pressure at the open",
+        "url": "https://www.cnbc.com/2026/05/27/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "NVDA at $211.30 premarket (May 27 close $212.60, -1.05%) — below the $213–217 accumulation zone; $210 daily-close hard stop within one session's range; no add warranted ahead of PCE and Iran resolution",
+        "url": "https://finance.yahoo.com/quote/NVDA/"
+      },
+      {
+        "label": "SNOW +37% premarket after Q1 product revenue +34% YoY ($1.334B) and a five-year $6B AWS AI expansion deal — AI infrastructure capex thesis validated, but isolated to single-name; insufficient to override macro headwinds today",
+        "url": "https://www.fxleaders.com/news/2026/05/28/snow-surges-38-after-earnings-blowout-as-6b-aws-ai-deal-reignites-growth-narrative/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7520.36,  "change_pct": 0.02,  "as_of": "2026-05-27T20:00:00Z" },
+    "nasdaq": { "level": 26674.73, "change_pct": 0.07,  "as_of": "2026-05-27T20:00:00Z" },
+    "vix":    { "level": 16.80,    "change_pct": -1.24, "as_of": "2026-05-27T20:00:00Z" },
+    "ust10y": { "level": 4.47,     "change_bps": 0,     "as_of": "2026-05-27T20:00:00Z" },
+    "dxy":    { "level": 99.24,    "change_pct": 0.00,  "as_of": "2026-05-27T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.80, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y UST",      "value": 5.01,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.24, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7520,  "trigger_above": 0,    "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "May 27 close $212.60; premarket $211.30 — below $213–217 accumulation zone; hold existing with $210 daily-close hard stop; do not add until Iran resolves and PCE clears", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "WTI +1.8% to $90, Brent $96.07 on Iran strikes — overnight reversal directly challenges the short thesis; reduce short size to 25–50%; hold remaining with $100 Brent close stop", "sentiment": "negative" },
+    { "ticker": "IWM",   "note": "Approaching $285–288 structural short entry zone; SPCX roadshow June 8 pressure building; do not initiate today — wait for confirmed reversal session post-PCE", "sentiment": "neutral" },
+    { "ticker": "SNOW",  "note": "+37% premarket on Q1 product revenue +34% YoY + $6B AWS 5-year AI deal; FY guidance raised to $5.84B; strongest single-name AI capex read-through of the week", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "~$384.83 May 28 session — entry zone $378–385 set in prior brief; hold entry conditional on PCE outcome at 8:30 AM today; day-2 confirmation done, but Iran/PCE argue for patience", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~$310.85; quality-flight hold; $290 stop; no new catalyst today", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "~$412.67; mild pullback from $419 range; quality anchor hold; $410 stop; AWS capex thesis validated by SNOW deal", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "~$635.36 (+3.8% May 28 session) — outperforming on AI advertising tailwinds; watch as buy candidate post-PCE if HOLD converts to BUY", "sentiment": "positive" },
+    { "ticker": "AMZN",  "note": "SNOW's $6B AWS deal is a direct read-through for AMZN AWS cloud revenue acceleration; hold; AWS AI monetization thesis strengthening", "sentiment": "positive" },
+    { "ticker": "PLTR",  "note": "~$135; hold through PCE today; defense/AI platform; limited Iran/oil direct impact", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "Risk-on correlation; will track broad-market mood on PCE outcome; no specific catalyst; monitor", "sentiment": "neutral" },
+    { "ticker": "DELL",  "note": "Reports Q1 FY2027 AFTER THE CLOSE today (conference call 3:30 PM CDT) — correction to prior brief which stated premarket; consensus $35.46B revenue (+51.7% YoY), EPS $3.04 (+96% YoY); AI server segment is the key read-through", "sentiment": "neutral" },
+    { "ticker": "BTC",   "note": "~$75,424 (May 27); institutional rotation to safe havens pre-PCE ongoing; $74,300 near-term support; Iran escalation re-intensifies safe-haven demand for gold over BTC; no new crypto longs today", "sentiment": "negative" },
+    { "ticker": "AMD",   "note": "Semi sector under pressure with NVDA below accumulation zone; hold existing; SNOW AI deal supports data-center thesis; no add until PCE clears", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $212",
+      "reason": "NVDA at $211.30 premarket is already below the $213–217 accumulation zone. Adding exposure before the PCE binary at 8:30 AM and Iran resolution stacks three unresolved risks (Iran, PCE, accumulation zone undercut) onto a position whose hard stop at $210 is within one session's normal range.",
+      "better_entry": "Wait for PCE print and Iran stabilization; re-enter accumulation only if NVDA reclaims $213–214 on a daily close with PCE core ≤3.3% and Brent below $97"
+    },
+    {
+      "ticker": "XLE long (do not add to sector)",
+      "reason": "Brent at $96.07 and WTI at $90 on Iran military exchange has reversed the XLE short thesis. The sector is caught between two forces: the existing short (now losing money) and a potential energy spike. The correct move is reduction, not addition of any long.",
+      "better_entry": "No XLE long warranted. Reduce XLE short to 25–50% of size; hold remaining with $100 Brent close stop. Re-evaluate energy direction only after Iran situation is clarified."
+    },
+    {
+      "ticker": "BTC at $75,424",
+      "reason": "Iran escalation reactivates safe-haven demand for gold over crypto. With PCE printing today, professional money continues rotating to Treasuries and gold rather than risk assets. BTC's $74,300 support remains vulnerable in a risk-off open.",
+      "better_entry": "Post-PCE clarity; require VIX back below 16, 30Y below 5.00%, and Iran military activity paused before initiating new BTC longs; $72,000–74,000 zone offers better risk/reward if $74,300 breaks"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Manage existing long through the PCE binary. NVDA at $211.30 premarket has dropped below the $213–217 accumulation zone, but the $210 hard stop has not been breached. SNOW's $6B AWS AI deal (announced after May 27 close) confirms hyperscaler AI infrastructure demand — a direct read-through for NVDA data-center pricing power. Hold position through 8:30 AM PCE; close on a daily print at or below $210. Do not add size ahead of PCE or with Iran unresolved.",
+      "entry": "Existing position; hold with $210 daily-close hard stop; add only if NVDA reclaims $213+ on a confirmed daily close after PCE prints",
+      "invalidation": "$210 daily close — cover immediately if breached",
+      "conviction": "medium",
+      "horizon": "4–8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "hedge",
+      "thesis": "The XLE short (initiated at the May 27 open on Brent crossing below $97) is now being squeezed by the overnight Iran reversal: WTI +1.8% to $90, Brent +2% to $96.07. The position remains directionally correct on a 2–4 week horizon — Iran deal talks are disrupted, not permanently collapsed, and WTI at $90 is still below the structural supply-return threshold — but the near-term risk is a Brent spike above $100 on further escalation. Reduce size to 25–50% at today's open; hold residual with $100 Brent close as stop.",
+      "entry": "Reduce existing XLE short to 25–50% of full size at open; retain residual hedge; scale back to full size only if Brent re-establishes below $94 on a daily close",
+      "invalidation": "Brent close above $100 — cover entire position immediately",
+      "conviction": "medium",
+      "horizon": "1–3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "The structural short case is building: IWM is approaching the $285–288 entry zone, SpaceX SPCX IPO roadshow begins June 8 (11 sessions away), and the 30Y at 5.01% remains the most punitive financing environment for small-cap balance sheets in this series' history. Today is not the initiation day — Iran/PCE volatility creates noise, and small-caps can rip on a dovish PCE surprise. Wait for a confirmed reversal session with volume post-PCE before initiating.",
+      "entry": "$285–288 on confirmed reversal session with volume, post-PCE resolution; do NOT initiate today or above $290",
+      "invalidation": "$292 daily close on two consecutive sessions",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "April PCE core at consensus +3.3% YoY would mark the highest reading since 2023 and a clear reacceleration from March's 3.2% — a print that would force Fed Chair Warsh to hold rates longer and likely push the 30Y back above 5.05%, voiding the Day 2 signal's strategic value within 24 hours of its confirmation. Iran's overnight military exchange with the US demonstrates that the deal is further away than markets priced in after May 27's oil decline; if Iran formally announces Strait of Hormuz restrictions in response to US strikes, Brent could retest $103+, triggering the full Step Aside scenario. If April PCE core exceeds 3.3% and the 30Y closes above 5.10% today, the HOLD call converts to Step Aside immediately; if SPX loses 7,460 on a daily close under that scenario, the BUY call is wrong.",
+  "body_mdx": "data/briefings/markets/2026-05-28-morning.mdx"
+}
