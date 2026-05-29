@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-05-26",
   "expires_at": "2026-06-25",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["short", "event", "SpaceX", "IPO", "small-cap", "capital-drain", "rates", "low-conviction"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-05-28",
+    "final_price": 292.03,
+    "return_pct": -2.4,
+    "outcome_label": "Stopped out at $292.03 — broad AI-driven risk-on overrides SpaceX drain thesis",
+    "note": "IWM closed $292.03 on May 28 (up $1.66, +0.57%), marginally triggering the $292 daily-close stop. DELL's Q1 FY2027 blowout AH print drove broad market risk-on that lifted small-caps through the stop before the SpaceX capital-drain window (roadshow begins June 8) could assert. The structural capital-drain thesis remains valid with the roadshow now 9 days away; entry at $285.12 on May 26, stop at $292.03. Short closed at −2.4%."
+  }
 }
