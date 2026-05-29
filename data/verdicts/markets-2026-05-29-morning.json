@@ -1,0 +1,128 @@
+{
+  "routine": "markets",
+  "date": "2026-05-29",
+  "window": "morning",
+  "generated_at": "2026-05-29T11:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY MEDIUM — PCE Cleared; Iran MoU Pending Signature; Dell AH Warning; Protect the Run",
+    "conviction": "medium",
+    "rationale_short": "Thursday's record closes (SPX 7,563.63, Nasdaq 26,917.47) confirmed the BUY thesis but two warning signs emerged: (1) 30Y had an intraday breach to 5.055% during the PCE digest before settling at 5.03% — trigger being tested rather than cleanly held; (2) Dell sold off −3.93% after-hours on a record $43.8B beat with $24.4B AI orders, the textbook AI-infrastructure sell-the-news pattern. Combined with month-end Friday rebalancing flows, the right Friday plan is protect-the-run: trim partials on spike to SPX 7,580+, hold XLE short at full size (Iran MoU signing by Trump is the binary), keep NVDA at $210 stop, do NOT add net-new size. The Iran MoU signature is the day's single largest potential catalyst.",
+    "supporting_data": [
+      {
+        "label": "SPX record close 7,563.63 (+0.58%) and Nasdaq record close 26,917.47 (+0.91%) — second consecutive record session despite hottest headline PCE since May 2023",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-28-2026"
+      },
+      {
+        "label": "April PCE core 3.3% YoY (consensus match), +0.2% MoM (below 0.3% estimate); headline 3.8% YoY (3-year high); personal saving rate fell to 2.6% (lowest since June 2022)",
+        "url": "https://www.benzinga.com/markets/macro-economic-events/26/05/52835775/us-pce-inflation-report-april-2026"
+      },
+      {
+        "label": "US-Iran 60-day ceasefire MoU agreed pending Trump approval; includes Strait of Hormuz mine-clearance within 30 days; Brent fell from $96.57 intraday high to $93.71 close",
+        "url": "https://www.cnbc.com/2026/05/28/oil-prices-us-strikes-in-iran-revive-strait-of-hormuz-turmoil-fears.html"
+      },
+      {
+        "label": "Dell Q1 FY2027: record $43.8B revenue (+88% YoY), $24.4B AI orders, $16.1B AI server revenue; FY27 AI server revenue guided ~$60B (+144% YoY) — but stock −3.93% AH on sell-the-news",
+        "url": "https://www.benzinga.com/insights/news/26/05/52861382/dell-technologies-q1-2027-earnings-call-complete-transcript"
+      },
+      {
+        "label": "PLTR +7.83% to $137.93 — session's top watchlist move; government AI + defense tailwind from Iran resolution",
+        "url": "https://finance.yahoo.com/quote/PLTR/"
+      },
+      {
+        "label": "30Y UST intraday high 5.055% during PCE digest (brief trigger breach); closed 5.03% — the trigger is being tested, not cleanly held",
+        "url": "https://www.cnbc.com/quotes/US30Y"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7563.63,  "change_pct": 0.58,  "as_of": "2026-05-28T20:00:00Z" },
+    "nasdaq": { "level": 26917.47, "change_pct": 0.91,  "as_of": "2026-05-28T20:00:00Z" },
+    "vix":    { "level": 16.20,    "change_pct": -3.57, "as_of": "2026-05-28T20:00:00Z" },
+    "ust10y": { "level": 4.47,     "change_bps": 0,     "as_of": "2026-05-28T20:00:00Z" },
+    "dxy":    { "level": 99.23,    "change_pct": 0.03,  "as_of": "2026-05-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",         "value": 16.20, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y UST",     "value": 5.03,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",         "value": 99.23, "trigger_above": 100,  "unit": "" },
+    { "name": "Brent Crude", "value": 93.71, "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "$214.28 (+0.79%) — back inside $213-217 accumulation zone; Dell $24.4B AI orders validate Blackwell demand but sell-the-news risk applies; $210 hard stop intact", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "$137.93 (+7.83%) — top mover; government AI + defense from Iran resolution; trim 25-33% on close above $140 to lock gain; hold residual", "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "~$418 — quality anchor; $410 stop; hold", "sentiment": "neutral" },
+    { "ticker": "DELL",  "note": "$317.31 AH (-3.93%) — record $43.8B beat sold off; sell-the-news pattern requires 2-3 weeks consolidation; do NOT buy the dip", "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "~$308 — quality-flight; $290 stop; hold", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$384-388 — PCE entry condition met; target $380-384 on Friday morning softness", "sentiment": "positive" },
+    { "ticker": "TSLA",  "note": "~$441 — risk-on correlation; no new catalyst; hold", "sentiment": "neutral" },
+    { "ticker": "AMD",   "note": "Recovered with semis; Dell AI order volume validates full AI complex but sell-the-news risk applies; hold existing", "sentiment": "neutral" },
+    { "ticker": "BTC",   "note": "$73,461 (-0.11%) — $74,300 support broken; underperforming; do not add until VIX <15 AND 30Y <5.00% AND BTC closes back above $74,300", "sentiment": "negative" },
+    { "ticker": "ETH",   "note": "$2,004 (-0.54%) — tracking BTC", "sentiment": "negative" },
+    { "ticker": "XLE",   "note": "Short at full size; Brent $93.71 (below $97 threshold); Iran MoU Trump signing is the asymmetric upside; raise stop to Brent $97", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "Anything net-new at SPX records",
+      "reason": "9th week up + Core PCE 30-month high + sentiment elevated + month-end Friday = worst possible chase entry",
+      "better_entry": "Pullback to 7,450-7,480 (50-day MA region) or post-FOMC June 16-17 setup"
+    },
+    {
+      "ticker": "DELL on the dip",
+      "reason": "Sell-the-news pattern after record $43.8B beat requires 2-3 weeks of consolidation; same pattern that hit NVDA May 21",
+      "better_entry": "$295-300 pullback OR two consecutive closes above $310 before re-entering"
+    },
+    {
+      "ticker": "BTC below $74,300",
+      "reason": "Broken support + continued ETF outflows + underperforming on risk-on days = institutional money rotating to equities, not crypto",
+      "better_entry": "Require VIX <15 AND 30Y <5.00% AND BTC closes back above $74,300 as prerequisites"
+    },
+    {
+      "ticker": "PLTR above $140 chase",
+      "reason": "Already +7.83% Thursday; chasing a green Friday open is the wrong asymmetry — trim partial rather than add",
+      "better_entry": "$130-133 pullback if it materializes"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "PLTR",
+      "direction": "trim",
+      "thesis": "Lock the +7.83% Thursday gain into Friday open strength; hold the residual through Iran MoU signing event.",
+      "entry": "trim 25-33% on close above $140",
+      "invalidation": "n/a (partial trim)",
+      "conviction": "medium",
+      "horizon": "tactical"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Iran MoU framework + Brent $93.71 + Trump signature pending = highest-asymmetry trade on the book. A signing event today extends downside another 5-8%; no signing today still leaves the framework intact for next week.",
+      "entry": "hold full short",
+      "invalidation": "Brent daily close above $100 OR Iran MoU formally collapses (cover immediately); stop on the short raised to Brent $97",
+      "conviction": "medium-high",
+      "horizon": "1-3 weeks"
+    },
+    {
+      "asset": "SPY",
+      "direction": "trim",
+      "thesis": "Bank partial gains on the core long if the index spikes intraday. Month-end + Dell drag + 30Y test = three reasons to reduce book risk into the weekend.",
+      "entry": "trim 25% on SPX >7,580 intraday",
+      "invalidation": "n/a (partial trim)",
+      "conviction": "medium",
+      "horizon": "tactical"
+    },
+    {
+      "asset": "SPY put-spread hedge",
+      "direction": "long-puts",
+      "thesis": "Maintain the May 28 hedge. VIX at 16.20 keeps insurance cheap; the Trump-signature binary asymmetry justifies the cost.",
+      "entry": "held from May 28",
+      "invalidation": "SPX 7,650+ daily close — cut the hedge",
+      "conviction": "low-medium",
+      "horizon": "4-6 weeks"
+    }
+  ],
+  "bear_case": "Dell's −3.93% AH on a record $43.8B beat is the canary for AI-infrastructure sell-the-news risk spreading. PLTR's +7.83% Thursday is the symmetrically-opposite signal — Iran resolution names getting all the bid while AI infra absorbs the selling. If the 30Y closes above 5.05% Friday on month-end bond buying being insufficient to offset PCE-driven yield back-up, the BUY framework is voided by Tuesday's open. Add the chip-sector sell-the-news pressure from Dell and the path of least resistance into next week is back to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-05-29-morning.mdx"
+}

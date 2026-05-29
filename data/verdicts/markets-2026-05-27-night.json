@@ -1,0 +1,116 @@
+{
+  "routine": "markets",
+  "date": "2026-05-27",
+  "window": "night",
+  "generated_at": "2026-05-27T22:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY MEDIUM — Day 2 Confirmed at 5.01%; High-Conviction Conditional Lives Into Thursday",
+    "conviction": "medium",
+    "rationale_short": "30Y closed 5.01% (−2bps) — Day 2 of the two-session below-5.05% confirmation clock formally complete, the first time in this series the regime trigger clears before a major inflation print. SPX 7,520.36 (+0.02%) and Dow 50,644.28 (+0.36%) set new record closes; Nasdaq held 26,674.73. The XLE short worked as designed: WTI crashed −5.9% to $88.30 on continued Iran ceasefire optimism. NVDA closed $212.60 (−1.05%), one notch below the $213–217 zone but above the $210 hard stop. BUY held at medium — not upgraded — because PCE prints in 11 hours and Morningstar revised the preview to 'energy-driven inflation at 3-year highs' (consensus core 3.3% YoY, headline 3.8% YoY). High-conviction upgrade conditional on PCE core ≤3.3% AND 30Y holding below 5.05% Thursday close.",
+    "supporting_data": [
+      {
+        "label": "30Y closed 5.01% (−2bps) — Day 2 below 5.05% confirmation clock formally complete; high-conviction BUY framework technically active",
+        "url": "https://finance.yahoo.com/quote/%5ETYX/"
+      },
+      {
+        "label": "SPX record close 7,520.36 (+0.02%) and Dow record close 50,644.28 (+0.36%) — second consecutive record session",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-27-2026"
+      },
+      {
+        "label": "WTI closed $88.30 (−6% from prior $93.89) — XLE short executed at open is in strong profit; full-size trigger fired",
+        "url": "https://tradingeconomics.com/commodity/crude-oil"
+      },
+      {
+        "label": "NVDA closed $212.60 (−1.05%) — one notch below the $213–217 accumulation zone but above the $210 hard stop; intraday low $211.40 held",
+        "url": "https://finance.yahoo.com/quote/NVDA/"
+      },
+      {
+        "label": "Morningstar revised PCE preview to 'energy-driven inflation at 3-year highs'; consensus core 3.3% YoY (vs 3.2% March), headline 3.8% YoY",
+        "url": "https://www.morningstar.com/economy/april-pce-report-seen-showing-energy-driven-inflation-rising-3-year-highs"
+      },
+      {
+        "label": "Correction: Dell reports after the close Thursday (call 3:30 PM CDT), not premarket as the May 27 morning brief stated; SNOW also reports after the close Thursday",
+        "url": "https://marketchameleon.com/articles/b/2026/5/14/dell-fiscal-2027-earnings-release-may-28-preview"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7520.36,  "change_pct": 0.02,  "as_of": "2026-05-27T20:00:00Z" },
+    "nasdaq": { "level": 26674.73, "change_pct": 0.07,  "as_of": "2026-05-27T20:00:00Z" },
+    "vix":    { "level": 16.80,    "change_pct": -1.20, "as_of": "2026-05-27T20:00:00Z" },
+    "ust10y": { "level": 4.47,     "change_bps": -4,    "as_of": "2026-05-27T20:00:00Z" },
+    "dxy":    { "level": 99.24,    "change_pct": 0.00,  "as_of": "2026-05-27T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.80, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y UST",      "value": 5.01,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.24, "trigger_above": 100,  "unit": "" },
+    { "name": "WTI Crude",    "value": 88.30, "trigger_above": 95,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "$212.60 (−1.05%) — one notch below $213–217 zone but above $210 hard stop; intraday low $211.40 held; do not add pre-PCE", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "Short executed at open; sitting on ~3-4% gain; WTI close $88.30 fired full-size trigger; scale to full short on Thursday open", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "~$418 — quality anchor; held above $415; no action", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~$308 — quality-flight bid intact; $290 stop", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~$381 — below $378–385 entry zone; wait for Day 3 confirmation post-PCE", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$135 — hold through PCE; no pre-print action", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "~$430 — risk-on correlation; no catalyst", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "~$610 — monitor for upgrade entry post-PCE", "sentiment": "neutral" },
+    { "ticker": "AMZN",  "note": "~$265 — AWS capex thesis intact; SNOW print Thursday night is the direct read-through", "sentiment": "positive" },
+    { "ticker": "BTC",   "note": "~$75,200 — 3-month uptrend vs gold break continues; ETF outflows persist; pre-PCE not for fresh crypto longs", "sentiment": "negative" },
+    { "ticker": "IWM",   "note": "~$285 — approached short zone but no confirmed reversal session; setup pending", "sentiment": "neutral" },
+    { "ticker": "DELL",  "note": "Reports AFTER the close Thursday (call 3:30 PM CDT), correction from May 27 morning brief; AI server segment is direct read-through for NVDA/AMD", "sentiment": "neutral" },
+    { "ticker": "SNOW",  "note": "Reports after the close Thursday; AWS deal possibility flagged; AI infrastructure capex read-through", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $215 pre-PCE",
+      "reason": "Adding above the zone before the inflation print stacks two unresolved binaries onto an already-entered position; PCE binary asymmetry favors patience",
+      "better_entry": "$213–215 post-print only if PCE core ≤3.3% AND 30Y holds below 5.05% in the first 30 minutes; $210 daily close stop intact"
+    },
+    {
+      "ticker": "IWM above $290",
+      "reason": "No confirmed reversal session today; entering above $290 abandons the disciplined $285–288 entry zone",
+      "better_entry": "$285–288 on confirmed reversal session post-PCE only; $292 daily close on two sessions = invalidation"
+    },
+    {
+      "ticker": "BTC at $75,200",
+      "reason": "ETF outflows continuing; 3-month uptrend vs gold break confirmed; pre-PCE risk-off setup",
+      "better_entry": "Post-PCE clarity; require VIX <16 and 30Y <5.00% before re-engaging crypto longs"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Position from May 26 open entry at $218–222 is below water but above the $210 hard stop. Day 2 confirmation supports the thesis; PCE is the binary. Add $213–215 post-print only if PCE core ≤3.3% AND 30Y holds below 5.05% in first 30 minutes.",
+      "entry": "Hold existing position; add $213–215 post-PCE conditional",
+      "invalidation": "$210 daily close",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "WTI close $88.30 fired the full-size trigger. Iran de-escalation continuing is structurally bearish oil. A signed Iran MoU pushes WTI toward $80–85, extending XLE downside 10–15%.",
+      "entry": "Scale to full short on Thursday open",
+      "invalidation": "Brent daily close above $103 OR formal Iran deal collapse — cover immediately",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Russell at ~$285 in proximity to short zone but no confirmed reversal session today; structural setup intact (SpaceX IPO drain, 30Y financing pressure, Warsh FOMC) but execution requires patience.",
+      "entry": "$285–288 on confirmed reversal session post-PCE",
+      "invalidation": "$292 daily close on two consecutive sessions",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "Morningstar's PCE preview revision to '3-year highs' is the most concerning data point of the day. A hot core PCE print at 3.4%+ would immediately void the Day 2 confirmation's signal value and re-engage the May 19 30Y trade. The XLE short profits would also reverse if the print drives a defensive bid in commodities. The market is one bad data point from a sharp -1.5% to -2% gap lower at the open Thursday. If PCE core exceeds 3.4% YoY OR the 30Y closes above 5.10% Thursday, the BUY call is wrong regardless of Day 2 status.",
+  "body_mdx": "data/briefings/markets/2026-05-27-night.mdx"
+}
