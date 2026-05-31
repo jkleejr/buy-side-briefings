@@ -37,8 +37,8 @@ export default function TldrCard({ verdict }: { verdict: MarketsVerdict }) {
   const windowCode = WINDOW_LABEL[verdict.window] ?? verdict.window.toUpperCase();
   const briefingHref = `/briefings/${verdict.routine}/${verdict.date}-${verdict.window}`;
 
-  const snap = verdict.snapshot;
-  const ust30y = verdict.regime_risk.find(
+  const snap = verdict.snapshot ?? {};
+  const ust30y = (verdict.regime_risk ?? []).find(
     (r) => r.name.toLowerCase().includes("30y") || r.name.toLowerCase().startsWith("30y"),
   );
 

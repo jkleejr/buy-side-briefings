@@ -1,0 +1,68 @@
+{
+  "routine": "markets",
+  "date": "2026-05-30",
+  "window": "morning",
+  "generated_at": "2026-05-30T14:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY / SELECTIVE — Weekend Reflection: Strongest Month-End Setup of the Series, One Unsigned Binary",
+    "conviction": "medium",
+    "rationale_short": "Markets are closed (Saturday). No new prints since Friday's record close. This is a reflection briefing: the week ended with SPX at a ninth-straight-weekly record (7,580.06), the 30Y below 5.0% for the first time since May 14, and oil posting its worst month since March 2020 on Iran-ceasefire optimism. The BUY framework is structurally the strongest of the series — but the single unresolved variable is binary and live this weekend: the US-Iran MoU sits on Trump's desk unsigned. Conviction holds at medium, not high, because (1) the Iran signature is a true weekend binary, (2) Day 2 of the 30Y-below-5.0% confirmation sequence cannot print until Monday, and (3) Warsh's first FOMC (June 16-17) with PCE at 3.8% remains the structural gate no rally has cleared.",
+    "supporting_data": [
+      { "label": "US-Iran MoU — tentative 60-day truce extension agreed; reopens Strait of Hormuz with 'unrestricted' shipping and no tolls, mines cleared within 30 days; still awaiting Trump's signature as of the weekend; no agreement on Iran's nuclear stockpile (talks deferred to the 60-day window)", "url": "https://www.aljazeera.com/news/2026/5/28/us-and-iran-reach-tentative-deal-for-60-day-truce-extension-officials-say" },
+      { "label": "Brent fell below $91 and WTI below $88 Friday — Brent down ~19% in May, its worst month since March 2020; WTI down ~16.2%; oil has dropped ~20% from its 2026 peak entirely on ceasefire optimism, before any signature", "url": "https://www.cnbc.com/2026/05/29/oil-price-iran-deal-war-ceasefire-trump.html" },
+      { "label": "SPX closed Friday at a record 7,580.06 (+0.22%) — ninth consecutive winning week; 30Y UST closed 4.97%, first sub-5.0% close since May 14; VIX 15.32", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-29-2026" },
+      { "label": "BTC opened ~$73,382 and ETH ~$2,004 Friday — the week's lowest opens; crypto trades through the weekend, and a signed Iran truce is the most likely catalyst to lift both before Monday's equity open", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-may-29-2026-prices-open-lower-despite-news-of-us-iran-truce-115046286.html" },
+      { "label": "Next catalyst: ISM Manufacturing PMI, Monday June 1 at 10:00 ET — first hard data of June; a print above 50 reinforces the BUY framework into the jobs week", "url": "https://www.fxstreet.com/economic-calendar/event/2e1d69f3-8273-4096-b01b-8d2034d4fade" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7580.06,  "change_pct":  0.22, "as_of": "2026-05-29T20:00:00Z" },
+    "nasdaq": { "level": 26972.62, "change_pct":  0.20, "as_of": "2026-05-29T20:00:00Z" },
+    "vix":    { "level": 15.32,    "change_pct": -2.67, "as_of": "2026-05-29T20:00:00Z" },
+    "ust10y": { "level": 4.45,     "change_bps": -2,    "as_of": "2026-05-29T20:00:00Z" },
+    "dxy":    { "level": 98.89,    "change_pct": -0.13, "as_of": "2026-05-29T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",              "value": 15.32, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",        "value": 4.97,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",              "value": 98.89, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460",     "value": 7580,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",      "value": 90.80, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC",  "note": "~$73,400 over the weekend — week's lowest opens; the one liquid asset that can react to an Iran signing before Monday's equity open. A signed truce + reclaim of $75,000 would be the first broad-risk confirmation; failure to rally on a signature would be a real divergence warning.", "sentiment": "neutral" },
+    { "ticker": "ETH",  "note": "~$2,004 — tracking BTC; projected $2,080-2,180 range for the week; weekend Iran headline is the swing factor.", "sentiment": "neutral" },
+    { "ticker": "NVDA", "note": "$215.25 at Friday close — 30Y confirmation condition (sub-5.0%) met Day 1; the $213-218 add zone stays armed for Monday pending Day 2 of the rate confirmation. $210 daily-close hard stop unchanged.", "sentiment": "positive" },
+    { "ticker": "XLE",  "note": "Short held at 50-75% — Brent's worst month since March 2020 already paid; a signed Iran MoU over the weekend is the trigger to scale to full size at Monday's open.", "sentiment": "negative" },
+    { "ticker": "DELL", "note": "~$421 after Friday's +33% — do NOT chase the gap into Monday; weekend gives the move no chance to consolidate. Read-through via NVDA/AVGO remains the cleaner expression.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "DELL", "reason": "Friday's +33% was the best single session in Dell's post-2018 history; a weekend freeze means the gap can't consolidate before Monday — opening into it is forced-covering crowding risk at peak momentum", "better_entry": "NVDA $213-218 or AVGO $435-445 as read-through; or DELL $380-400 on a consolidation pullback" },
+    { "ticker": "Brent/oil longs", "reason": "Catching the falling knife ahead of a likely signature is fighting the highest-conviction macro trade of the month; a signed MoU sends Brent toward $85-88", "better_entry": "No long entry — XLE short is the correct expression; only revisit oil longs on a Trump rejection that spikes Brent above $97" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Oil has already fallen ~20% from its 2026 peak and posted its worst month since March 2020 purely on ceasefire optimism — before any signature. The asymmetric weekend setup: a signed MoU (base case) reopens Hormuz and sends Brent from ~$90 toward $85-88, unlocking the next leg of XLE downside; the position is already de-risked at 50-75%.",
+      "entry": "Hold 50-75% through the weekend; scale to 100% at Monday's open if Trump signs; add to maximum on a confirmed WTI break below $85",
+      "invalidation": "Brent close above $97 (Trump rejection scenario) — cover the entire position immediately",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Friday's 30Y close at 4.97% met the morning briefing's explicit add condition; DELL's $51.3B AI backlog is the most definitive external Blackwell-demand confirmation of the cycle. The add zone is armed — but the weekend can't print Day 2 of the rate confirmation, so the trade waits for Monday rather than chasing.",
+      "entry": "Add partial $213-218 on Monday softness only after the 30Y holds below 5.00% intraday; do NOT add above $220 until two consecutive sub-5.0% closes confirm",
+      "invalidation": "$210 daily close — exit entire position; re-enter only with Iran signed AND 30Y below 5.00%",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    }
+  ],
+  "bear_case": "A reflection briefing on a closed Saturday is the moment to be most skeptical of a nine-week win streak. Every favorable binary is now priced — AI capex (DELL +33%), rate relief (30Y 4.97%), and an Iran deal that is still only on Trump's desk, not signed. The deal as reported is being characterized as a win for Iran: it reopens Hormuz and starts talks but locks in no constraint on Iran's enriched-uranium stockpile, which means the 60-day clock can expire with nuclear risk fully intact and oil's entire ~20% repricing reversing. Friday's 30Y sub-5.0% close was mechanically aided by month-end bond buying on the last trading day of May; the 5-day average is still above 5.0%, so the regime-clearing read rests on one assisted print. Invalidation level: if Trump publicly rejects the MoU this weekend and Brent gaps above $97 in Sunday-night futures, the BUY framework converts to Step Aside at Monday's open; a daily SPX close below 7,460 with the 30Y back above 5.10% confirms it.",
+  "body_mdx": "data/briefings/markets/2026-05-30-morning.mdx"
+}

@@ -1,0 +1,78 @@
+{
+  "routine": "markets",
+  "date": "2026-05-31",
+  "window": "morning",
+  "generated_at": "2026-05-31T16:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY / SELECTIVE — Week-Ahead: A Catalyst-Dense June Opens Into the Strongest Tape of the Series",
+    "conviction": "medium",
+    "rationale_short": "Markets are closed (Sunday). This is a forward-looking week-ahead briefing positioning into the June 1 open. The setup is the strongest of the series — SPX at records, 30Y sub-5.0%, oil's worst month since 2020 — but June front-loads the densest catalyst slate of the cycle: ISM Manufacturing (Jun 1), the May jobs report (Jun 5), the SpaceX SPCX roadshow (Jun 8) and trade debut (Jun 12), and Warsh's first FOMC (Jun 16-17). Conviction holds at medium because the Iran signature is still pending and every one of these catalysts can independently re-test the BUY thesis. The plan: act on confirmation, not anticipation — scale XLE short on an Iran signing, arm the NVDA add on Day 2 of the 30Y confirmation, and keep the IWM short patient for the SPCX capital-drain window.",
+    "supporting_data": [
+      { "label": "ISM Manufacturing PMI — Monday June 1, 10:00 ET; first hard data of the month; a print above 50 reinforces the BUY framework, a contraction print is the first crack to watch", "url": "https://www.fxstreet.com/economic-calendar/event/2e1d69f3-8273-4096-b01b-8d2034d4fade" },
+      { "label": "May nonfarm payrolls — Friday June 5; the week's decisive macro binary; a cool print (<175K) voids Warsh hike risk and can upgrade conviction, a hot print (>220K) with firm wages hands Warsh cover to hike June 17", "url": "https://www.tradingkey.com/analysis/economic/central-banks/261924394-fed-fomc-kevin-warsh-hawkish-shift-inflation-cpi-treasury-yields-rate-hike-pricing-labor-resilience-policy-pivot-tradingkey" },
+      { "label": "SpaceX SPCX IPO — roadshow begins June 8, pricing June 11, trading June 12; ~$75B raise at a ~$1.75T valuation (the largest IPO in history); drains capital from liquid small-cap allocations first, the core of the IWM short thesis", "url": "https://thetechmarketer.com/spacex-ipo-2026-spcx-nasdaq-valuation-starlink/" },
+      { "label": "Warsh FOMC — June 16-17, decision June 17; first meeting chaired by Kevin Warsh; markets price ~65-96% hold but expect the easing bias removed and a hawkish tilt; PCE at 3.8% YoY is the structural gate no rally has cleared", "url": "https://www.tradingkey.com/analysis/economic/central-banks/261924394-fed-fomc-kevin-warsh-hawkish-shift-inflation-cpi-treasury-yields-rate-hike-pricing-labor-resilience-policy-pivot-tradingkey" },
+      { "label": "US-Iran MoU still pending Trump's signature into the new week — a signing reopens Hormuz and sends Brent toward $85-88; the deal carries no constraint on Iran's nuclear stockpile, deferring that risk into the 60-day talks window", "url": "https://www.aljazeera.com/news/2026/5/28/us-and-iran-reach-tentative-deal-for-60-day-truce-extension-officials-say" },
+      { "label": "Last close (Fri May 29): SPX 7,580.06 record, 30Y 4.97%, VIX 15.32, Brent ~$90.8; BTC ~$73,400 over the weekend", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-29-2026" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7580.06,  "change_pct":  0.22, "as_of": "2026-05-29T20:00:00Z" },
+    "nasdaq": { "level": 26972.62, "change_pct":  0.20, "as_of": "2026-05-29T20:00:00Z" },
+    "vix":    { "level": 15.32,    "change_pct": -2.67, "as_of": "2026-05-29T20:00:00Z" },
+    "ust10y": { "level": 4.45,     "change_bps": -2,    "as_of": "2026-05-29T20:00:00Z" },
+    "dxy":    { "level": 98.89,    "change_pct": -0.13, "as_of": "2026-05-29T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",              "value": 15.32, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",        "value": 4.97,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",              "value": 98.89, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460",     "value": 7580,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",      "value": 90.80, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "$215.25 at last close — $213-218 add zone armed; triggers on Day 2 of the 30Y sub-5.0% confirmation, most likely Monday or Tuesday. $210 daily-close hard stop unchanged.", "sentiment": "positive" },
+    { "ticker": "IWM",  "note": "~$292 — patient short; the SPCX roadshow (June 8) is the structural trigger as ~$75B drains from liquid small-cap allocations. Entry $285-288 only on a confirmed reversal; do not initiate at/above $290.", "sentiment": "negative" },
+    { "ticker": "XLE",  "note": "Short 50-75% — scale to full on an Iran signature; Brent toward $85-88 on a signed Hormuz reopening.", "sentiment": "negative" },
+    { "ticker": "GOOGL","note": "~$390 — PCE (≤3.3%) and 30Y (<5.0%) entry conditions both met; $384-392 zone live for the week; cleanest fresh mega-cap long given NVDA/MSFT are extended.", "sentiment": "positive" },
+    { "ticker": "BTC",  "note": "~$73,400 weekend — watch for an Iran-signing bid; a reclaim of $75,000 is the first broad-risk confirmation, a failure to rally on a signature is a divergence warning into the jobs week.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "DELL", "reason": "+33% Friday with no weekend consolidation; opening the week chasing the gap is peak-momentum crowding risk", "better_entry": "NVDA $213-218 or AVGO $435-445 read-through; DELL $380-400 on a pullback" },
+    { "ticker": "IWM (long)", "reason": "Buying small caps into the SPCX capital-drain window (roadshow June 8, $75B raise) fights the structural flow that pulls liquidity from small-cap allocations first", "better_entry": "No long — the IWM short is the expression; revisit small-cap longs only after SPCX trades and the drain clears" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Friday's 30Y close at 4.97% met the add condition; Day 2 of the sub-5.0% confirmation is the trigger, most likely early in the week. DELL's $51.3B AI backlog is the cycle's most definitive Blackwell-demand confirmation, and the $210 hard stop was never tested.",
+      "entry": "Add partial $213-218 once the 30Y prints a second consecutive sub-5.0% close; do NOT add above $220 before that confirmation",
+      "invalidation": "$210 daily close — exit entire position; re-enter only with Iran signed AND 30Y below 5.00%",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "The SPCX roadshow opens June 8 ahead of a ~$75B raise at a ~$1.75T valuation — the largest IPO in history — and small-cap managers pre-fund from liquid holdings in the sessions before pricing. Russell already lagged at Friday's records (-0.59%); Warsh hike risk into June 17 is the second structural headwind.",
+      "entry": "$285-288 on a confirmed reversal session with above-average volume; do NOT initiate at or above $290",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Oil posted its worst month since March 2020 on ceasefire optimism before any signature. A signed Iran MoU reopens Hormuz and sends Brent from ~$90 toward $85-88, unlocking the next leg of XLE downside; the 50-75% position is already de-risked.",
+      "entry": "Scale 50-75% to 100% on confirmation of Trump's signature; add to maximum on a confirmed WTI break below $85",
+      "invalidation": "Brent close above $97 (Trump rejection) — cover the entire position immediately",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    }
+  ],
+  "bear_case": "The week-ahead risk is that June front-loads four independent ways for a nine-week win streak to break, each landing before Warsh even speaks. ISM Manufacturing (Jun 1) can print a contraction; the May jobs report (Jun 5) can run hot and hand Warsh cover to hike; the SPCX roadshow (Jun 8) begins draining ~$75B from liquid allocations; and the Warsh FOMC (Jun 16-17) is the first meeting of a historically hawkish chair widely expected to strip the easing bias with PCE still at 3.8% YoY. Layered on top is an Iran deal that markets have fully priced but Trump has not signed, with no constraint on Iran's nuclear stockpile. The tape enters this gauntlet at record highs with VIX at 15.32 — the cheapest hedging in weeks, which almost no one is using. Invalidation level: a hot May payroll print (>220K with firm wages) that pushes the 30Y back above 5.10%, or a daily SPX close below 7,460, converts the BUY framework to Step Aside; a June 17 Warsh hike forces an exit of all longs regardless of index level.",
+  "body_mdx": "data/briefings/markets/2026-05-31-morning.mdx"
+}
