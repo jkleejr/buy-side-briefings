@@ -1,0 +1,79 @@
+{
+  "routine": "markets",
+  "date": "2026-06-01",
+  "window": "morning",
+  "generated_at": "2026-06-01T12:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY / SELECTIVE — June Opens Green on Factory Strength, Not the Iran Deal That Didn't Sign",
+    "conviction": "medium",
+    "rationale_short": "Futures point higher into the June 1 open (S&P futures 7,612.25, +0.22%) — but the weekend's base case was wrong: the Iran MoU was NOT signed. Trump called it 'largely negotiated' Saturday, yet it remains unsigned and Iran now publicly disputes the Strait of Hormuz terms, saying the waterway stays under its control. The bid is instead being driven by data: Chicago PMI jumped to 62.7, a four-year high, after a May that lifted the Nasdaq +8%. The framework holds BUY/SELECTIVE at medium because the strength is real but two of the week's confirmations are still incomplete — the 30Y sits right at 5.0% (~4.99%, not a clean Day-2 sub-5.0% confirmation), and ISM Manufacturing at 10:00 ET is unknown at the open. Act on confirmation: NVDA is in the $213-218 add zone on price ($213.35 pre-market) with a COMPUTEX keynote catalyst, but the rate confirmation is borderline — size partial, not full.",
+    "supporting_data": [
+      { "label": "S&P 500 futures 7,612.25 (+0.22%), Dow futures 51,251 (+0.34%), Nasdaq-100 futures 30,473.25 (+0.22%) — building on a May that pushed the Nasdaq Composite +8%, the S&P 500 ~+5%, and the Dow ~+3% to record highs", "url": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-june-1-flat-225422503.html" },
+      { "label": "Chicago PMI jumped to 62.7 in May 2026 — its highest in four years — signaling order books and production plans accelerating; factory strength is offsetting still-elevated yields as the morning's primary bull driver", "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081411199.html" },
+      { "label": "Iran MoU NOT signed: Trump said Saturday the deal is 'largely negotiated' and Hormuz will reopen, but Iran disputes his characterization and says the waterway will remain under its control; Trump reportedly edited terms on enriched uranium — the weekend signature base case did not execute", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-vance-ceasefire-strait-of-hormuz-deal-close/" },
+      { "label": "Oil held its May decline without a relief signature: Brent ~$91.2, WTI below $88 at Friday's close; no further collapse on the unsigned deal and no spike on the Hormuz dispute — the market is in wait-and-see", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+      { "label": "30Y UST ~4.99% (per FRED, May 29) — sitting right at the 5.0% line; NOT a clean Day-2 confirmation of the sub-5.0% regime; 10Y ~4.45%", "url": "https://fred.stlouisfed.org/series/DGS30" },
+      { "label": "NVDA $213.35 pre-market (-0.87%) — inside the $213-218 add zone; Jensen Huang delivers a COMPUTEX 2026 keynote (Sun 11 PM ET) with RTX Spark Superchip and Nvidia-Microsoft Windows-on-Nvidia debuts as fresh catalysts", "url": "https://www.fool.com/investing/2026/05/31/nvda-stock-jensen-huang-keynote-computex/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7612.25,  "change_pct":  0.22, "as_of": "2026-06-01T12:30:00Z" },
+    "nasdaq": { "level": 30473.25, "change_pct":  0.22, "as_of": "2026-06-01T12:30:00Z" },
+    "vix":    { "level": 15.32,    "change_pct":  0.00, "as_of": "2026-05-29T20:00:00Z" },
+    "ust10y": { "level": 4.45,     "change_bps": 0,     "as_of": "2026-06-01T12:30:00Z" },
+    "dxy":    { "level": 98.89,    "change_pct": 0.00,  "as_of": "2026-05-29T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",              "value": 15.32, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",        "value": 4.99,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",              "value": 98.89, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460",     "value": 7612,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",      "value": 91.20, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "$213.35 pre-market (-0.87%) — inside the $213-218 add zone; COMPUTEX keynote (Jensen Huang), RTX Spark Superchip, and Nvidia-Microsoft Windows-on-Nvidia debut are this week's catalysts. Add PARTIAL: the 30Y at ~4.99% is not a clean Day-2 sub-5.0% confirmation. $210 hard stop unchanged.", "sentiment": "positive" },
+    { "ticker": "XLE",  "note": "Short held at 50-75% — do NOT scale to full: the Iran signature that was the scale-up trigger did not happen, and Iran is now disputing Hormuz terms. Hold size until a signature actually prints.", "sentiment": "neutral" },
+    { "ticker": "IWM",  "note": "~$292 — SPCX roadshow (June 8) still the structural short trigger; entry $285-288 only on a confirmed reversal. No new entry at the open.", "sentiment": "negative" },
+    { "ticker": "GOOGL","note": "~$390 — entry conditions (PCE, 30Y) met; $384-392 zone live; cleanest fresh mega-cap long given NVDA/MSFT extended. Scale in on ISM confirmation.", "sentiment": "positive" },
+    { "ticker": "DELL", "note": "~$421 post +33% — first session to consolidate the gap; do NOT chase; read-through via NVDA/AVGO remains cleaner.", "sentiment": "neutral" },
+    { "ticker": "BTC",  "note": "~$73-74k — firmed modestly over the weekend but no decisive Iran-signing bid materialized; still below the $75,000 reclaim that would confirm broad risk appetite.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "XLE (covering/oil longs)", "reason": "The Iran deal did not sign and Hormuz terms are now disputed — fading the oil short here on a 'deal is close' headline is the trap; the asymmetry that justified the short still exists, it just hasn't triggered the scale-up", "better_entry": "Hold the existing 50-75% short; only scale on an actual signature, only cover on Brent above $97" },
+    { "ticker": "NVDA above $220", "reason": "Adding the full size into a COMPUTEX keynote with the 30Y still pinned at 5.0% is anticipation, not confirmation; keynotes are sell-the-news prone", "better_entry": "Partial $213-218 now; complete the add only after a clean 30Y close below 4.97% AND a constructive ISM print" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA is trading inside the $213-218 add zone ($213.35 pre-market) with a COMPUTEX keynote, the RTX Spark Superchip, and the Nvidia-Microsoft Windows-on-Nvidia launch as near-term catalysts, on top of DELL's $51.3B AI backlog confirmation. The only missing piece is a clean 30Y Day-2 confirmation — the yield is at ~4.99%, right at the line — so the add is partial, not full.",
+      "entry": "Add partial $213-218 now; complete to full size only on a 30Y daily close below 4.97% AND an ISM Manufacturing print above 50",
+      "invalidation": "$210 daily close — exit entire position; do not re-enter until the 30Y confirms below 5.00% and Iran is signed",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Oil's ~20% May decline priced a deal that has not been signed, and Iran is now disputing the Hormuz terms. The short's asymmetry is intact but the scale-up trigger (Trump's signature) did not fire over the weekend — hold size and wait rather than chase. A signature still sends Brent toward $85-88; a collapse of talks reverses the thesis.",
+      "entry": "Hold 50-75%; scale to 100% only on a confirmed signature; do NOT add at the open on 'deal is close' headlines",
+      "invalidation": "Brent close above $97 (talks collapse / Hormuz dispute escalates) — cover entire position immediately",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    },
+    {
+      "asset": "GOOGL",
+      "direction": "long",
+      "thesis": "With both entry conditions met (PCE ≤3.3%, 30Y <5.0%) and NVDA/MSFT extended, GOOGL at $384-392 is the cleanest fresh mega-cap long. Chicago PMI's four-year high supports the cyclical-plus-AI advertising thesis; an ISM above 50 is the confirmation to scale in.",
+      "entry": "Initiate one-third at $384-392; add on an ISM Manufacturing print above 50 and SPX holding 7,580",
+      "invalidation": "$378 daily close — thesis paused; re-evaluate on the next 30Y confirmation",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    }
+  ],
+  "bear_case": "The tape is opening green on a four-year-high Chicago PMI while quietly absorbing the fact that the weekend's central bullish binary — a signed Iran deal — failed to materialize, and Iran is now publicly contradicting Trump on who controls the Strait of Hormuz. That is a deterioration, not a confirmation: the oil market's entire ~20% May repricing assumed a signature that has not come, and a public dispute over Hormuz control is exactly the kind of crack that reverses it. The 30Y sitting at ~4.99% is being read as 'below 5.0%,' but it is one basis point of comfort, not a regime change, and ISM Manufacturing at 10:00 ET can undercut the Chicago-PMI optimism within the first trading hour. Entering June at record highs with VIX at 15.32 means the index has no defensive cushion if the Iran dispute escalates or ISM disappoints. Invalidation level: if Brent gaps above $97 on a Hormuz escalation, or SPX closes below 7,460 with the 30Y back above 5.05%, the BUY framework converts to Step Aside; a June 17 Warsh hike forces an exit of all longs regardless of level.",
+  "body_mdx": "data/briefings/markets/2026-06-01-morning.mdx"
+}
