@@ -1,0 +1,123 @@
+{
+  "routine": "markets",
+  "date": "2026-06-01",
+  "window": "night",
+  "generated_at": "2026-06-01T21:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Brent Approaches $97 Trigger; Iran Suspends Talks; 30Y Day-2 Fails",
+    "conviction": "medium",
+    "rationale_short": "Iran suspended peace talks and threatened full Hormuz closure, sending Brent to $94.98 — just $2.02 from the XLE short's mandatory cover trigger. The 30Y re-broke 5.00% intraday on the Iran headline (spiked to 4.518% on the 10Y), failing the Day-2 sub-5.0% confirmation needed for the NVDA add. NVDA itself reversed the morning's chip-curb selloff and closed ~$221 on RTX Spark product depth at COMPUTEX — a positive surprise — but the 30Y condition remains unmet. GOOGL fell to $380.34, below the $384 entry zone floor and approaching the $378 invalidation. Step aside: trim XLE short to ≤25% now; hold NVDA with stop raised to $215; initiate no new longs until Iran clarity and 30Y Day-2 confirmation both arrive."
+  },
+  "snapshot": {
+    "sp500":  { "level": 7599.96,  "change_pct": 0.26, "as_of": "2026-06-01T20:00:00Z" },
+    "nasdaq": { "level": 27086.81, "change_pct": 0.42, "as_of": "2026-06-01T20:00:00Z" },
+    "vix":    { "level": 16.1,     "change_pct": 5.1,  "as_of": "2026-06-01T20:00:00Z" },
+    "ust10y": { "level": 4.48,     "change_bps": 1,    "as_of": "2026-06-01T20:00:00Z" },
+    "dxy":    { "level": 99.1,     "change_pct": 0.21, "as_of": "2026-06-01T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",         "value": 16.1,  "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",   "value": 5.01,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",         "value": 99.1,  "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7460", "value": 7600,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude", "value": 94.98, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Closed ~$221, up ~2.7% from Friday — RTX Spark superchip at COMPUTEX overwhelmed the morning's chip-curb fears by session end. The Malaysia loophole closure was a morning overhang, not a structural reversal; Jensen Huang's product story won the day. The 30Y Day-2 condition failed — do NOT add above $222 until two consecutive sub-5.0% closes. Raise stop from $210 to $215.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "Closed ~$460, up ~2.2% — COMPUTEX N1X co-announcement with NVDA is the catalyst. Still extended from the two-session parabola. Hold with stop at $440; pullback to $435-440 is the next add.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "Closed $380.34, down 2.5% — fell BELOW the $384 entry zone floor; approaching the $378 invalidation. The morning's cleanest-fresh-long thesis is under stress. Hold if already entered but initiate no new buys.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Energy was the second green sector (+3-4%). Brent at $94.98 is $2.02 from the $97 cover trigger. Trim XLE short to ≤25% now — the Iran escalation has narrowed the risk/reward to near parity. Full cover only on Brent close above $97.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$310, down ~0.4% — no COMPUTEX catalyst; quality anchor. Hold with stop at $300.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "~$265, down ~0.5% — underperforming on no specific catalyst; hold.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$72,000 — fell from $73,568 open on Iran uncertainty; well below $75K reclaim threshold. No new entries; cross-asset risk divergence persists.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "~$440-448, holding — less exposed to Malaysia loophole; June earnings remain the primary catalyst. Hold.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$145, roughly flat — government AI thesis intact; no new catalyst today.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $222",
+      "reason": "RTX Spark confirmed product depth but the 30Y Day-2 sub-5.0% trigger failed for the second consecutive session. Adding above $222 without the rate confirmation chases the gap.",
+      "better_entry": "Re-engage the add at $213-220 only once the 30Y prints two consecutive sub-5.0% daily closes AND Brent is below $92."
+    },
+    {
+      "ticker": "GOOGL above $378",
+      "reason": "Fell to $380.34, below the $384 entry zone floor. A close at or below $378 triggers the invalidation.",
+      "better_entry": "Wait for $384 reclaim; only re-enter after Iran backdrop stabilizes and GOOGL closes above $384 for two sessions."
+    },
+    {
+      "ticker": "Energy longs / XLE cover-and-flip",
+      "reason": "Energy was green today (+3-4%) but the thesis for oil longs requires a confirmed Hormuz escalation, not a suspended negotiation. At $94.98 Brent, chasing energy longs into a potential Trump negotiation reversal is asymmetrically risky.",
+      "better_entry": "Brent above $97 confirmed close is the long signal; otherwise hold the trimmed short stub."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (trim)",
+      "direction": "short",
+      "thesis": "Brent settled at $94.98 (+4.24%), $2.02 from the mandatory cover trigger. Iran suspended talks after Israeli attacks in Lebanon, threatening full Hormuz closure. The asymmetry of holding the full short has inverted — cover to ≤25% now to protect against a gap-up through $97 on overnight Iran headlines. Retain stub as an Iran-resolution hedge.",
+      "entry": "Trim from 50-75% to ≤25% at current levels (no need to chase a cover price). Cover remaining stub on Brent close above $97.",
+      "invalidation": "Brent close above $97 — cover stub immediately.",
+      "conviction": "medium",
+      "horizon": "1-3 days (active management required)"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "RTX Spark superchip (Arm CPU + Blackwell GPU + 128GB unified memory) confirms NVDA's expansion beyond datacenter GPU into consumer AI PCs. The morning's chip-curb sell-off was a sentiment overhang the tape rejected by close. Structural AI cycle intact. Hold with raised stop; no add until 30Y confirms two consecutive sub-5.0% closes.",
+      "entry": "Hold existing size; raise stop from $210 to $215. No new adds above $222 until 30Y Day-2 condition met.",
+      "invalidation": "$215 daily close — exit; re-enter only on 30Y Day-2 confirmation AND Brent below $92.",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Russell 2000 fell 0.47% on a session where SPX rose 0.26% — the sixth consecutive session of small-cap underperformance at equity records. SPCX roadshow begins June 8 ($75B institutional raise), draining capital from the most liquid small-cap allocations first. Warsh FOMC June 16-17 is the structural second headwind for leveraged small-cap balance sheets.",
+      "entry": "$285-288 on a confirmed reversal session with above-average volume; do NOT initiate above $290.",
+      "invalidation": "$295 daily close for two consecutive sessions.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "The June 1 session inverted the central macro narrative of the prior nine weeks: Iran has suspended talks, threatened full Hormuz closure, and oil has risen 5-6% in a single session. Brent at $94.98 is a single bad overnight headline from forcing an involuntary cover of the XLE short at a loss. The 30Y's second consecutive failure to close below 5.00% means the rate-confirmation sequence that was supposed to unlock the NVDA add and the high-conviction BUY upgrade has been reset by Iran risk. GOOGL's decline to $380.34 — the morning's 'cleanest fresh long' — illustrates that broad-market breadth is narrower than the index prints suggest: only NVDA/MSFT and energy were green. If Iran rhetoric hardens overnight and Brent opens above $97, the XLE short converts to a loss and the 30Y re-targets 5.05-5.10%, requiring an immediate Step Aside across all positions. Invalidation: Brent closes above $97 with 30Y above 5.05% — the framework converts to bearish; exit all longs simultaneously.",
+  "body_mdx": "data/briefings/markets/2026-06-01-night.mdx"
+}
