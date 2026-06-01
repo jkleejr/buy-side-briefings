@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-05-26",
   "expires_at": "2026-08-31",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["AI", "semis", "foundry", "picks-and-shovels", "thematic", "TSMC", "wafer"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-05-29",
+    "final_price": 423.32,
+    "return_pct": 4.6,
+    "outcome_label": "Target 1 hit at $420 — TSM closed $423.32 on May 29",
+    "note": "TSM surged to $423.32 on May 29 on DELL blowout read-through (+88% YoY revenue) and pre-COMPUTEX AI chip enthusiasm, clearing Target 1 ($420) by $3.32. COMPUTEX June 1 confirmed TSM's foundry role: NVDA's N1X (Arm-architecture Windows AI PC chip, co-developed with MediaTek, manufactured at TSMC) and Vera Rubin entering full production both flow through TSMC fabs. The US Commerce Department's Malaysia chip-curb rule (June 1) briefly pressured TSM to $418.45 as NVDA Blackwell export volume to Chinese entities is partly restricted, but N1X opens an entirely new wafer demand stream. Target 1 profit-take at $420 captured the foundry re-rating from NVDA's $91B demand confirmation."
+  }
 }

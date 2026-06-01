@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-05-26",
   "expires_at": "2026-07-31",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["AI", "semis", "ASIC", "catalyst", "custom-chip", "hyperscaler"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-01",
+    "final_price": 448.88,
+    "return_pct": 8.4,
+    "outcome_label": "Target 1 hit — AVGO intraday high $448.88 on June 1, above $440 target",
+    "note": "AVGO hit an intraday high of $448.88 on June 1 (range $425.51–$448.88), clearing Target 1 ($440) on COMPUTEX momentum and chip-curb relative advantage: the Commerce Department's Malaysia loophole closure targets NVDA Blackwell and AMD MI350x but explicitly does not restrict Broadcom custom ASICs (Google TPU v5p, Meta MTIA, Apple Neural Engine) — all for US hyperscalers exempt from the rule. The morning briefing flagged 'AVGO $425-448 — less directly exposed to the Malaysia loophole; hold for June earnings catalyst.' Return from reference price $414.14 to intraday high $448.88 = +8.4%. A fresh AVGO entry targeting Q3 FY2026 earnings (late July) was initiated today at the chip-curb relative-winner thesis."
+  }
 }
