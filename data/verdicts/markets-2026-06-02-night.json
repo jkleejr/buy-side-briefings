@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-06-02",
+  "window": "night",
+  "generated_at": "2026-06-02T22:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Hot JOLTS + Suspended Iran Talks Keep the Framework Stuck; AI the Only Bid",
+    "conviction": "medium",
+    "rationale_short": "The morning STEP ASIDE call held. JOLTS printed a hot 7.6M April openings (vs ~7.2M consensus), keeping the 30Y pinned near 5.00% for a fourth session without a clean sub-5.0% close. Indices drifted lower from Monday's record — S&P 500 ~-0.14% (~7,589), Nasdaq ~-0.25% (~27,019), Dow ~-0.09%, Russell 2000 ~-0.47% — with breadth narrowing to a handful of AI names: NVDA pushed toward $232 on Vera Rubin entering full production at COMPUTEX, while GOOGL stayed stopped out below $378 and META/AAPL lagged. Iran talks remain suspended with the Hormuz-closure threat live and Brent near $95. None of the two upgrade conditions (Iran de-escalation AND 30Y Day-2 sub-5.0%) is met. Stay stepped aside: hold NVDA (stop $215, no add), hold the ≤25% XLE stub (cover above $97), no new broad-index or rate-sensitive longs until the June 5 payrolls and Iran resolve.",
+    "supporting_data": [
+      { "label": "June 2 close: S&P 500 ~7,589 (-0.14%), Nasdaq ~27,019 (-0.25%), Dow ~51,033 (-0.09%), Russell 2000 -0.47% — a second straight down session off the June 1 record; levels derived from sourced session moves", "url": "https://247wallst.com/investing/2026/06/02/stock-market-live-june-2-2026-sp-500-spy-slips-after-testing-record-highs/" },
+      { "label": "JOLTS: April job openings rose to 7.6M, above the ~7.2M consensus (and the prior 6.9M) — hot enough to keep the Fed hold-and-hawkish, short of the >8M alarm line the morning brief flagged; hires/separations eased to 5.1M/5.0M", "url": "https://www.bls.gov/news.release/jolts.nr0.htm" },
+      { "label": "30Y UST held near 5.00% (≈4.99-5.01% by source), a fourth consecutive session without a clean sub-5.0% close; 10Y ~4.46% — the Day-2 confirmation the NVDA add and BUY upgrade need is still absent", "url": "https://fred.stlouisfed.org/series/DGS30" },
+      { "label": "Iran talks remain suspended over Israel's Lebanon operations; Tehran still weighing a full Strait of Hormuz closure; Brent held near $95 (below the $97 XLE-cover trigger). Trump insists a deal is reachable 'within a week'", "url": "https://www.cnbc.com/2026/06/01/world/live-news/iran-trump-lebanon-war-news" },
+      { "label": "NVDA traded $225-232 as COMPUTEX continued — Vera Rubin data-center platform entered full production (OpenAI, Anthropic, xAI, Dell, Oracle, CoreWeave); HPE rallied; NVDA/MSFT carried a tape where GOOGL (stopped), META (EU DSA) and AAPL lagged", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-02-2026" },
+      { "label": "Week ahead: ADP Employment + ISM Services (June 3), Initial Jobless Claims (June 4), May Non-Farm Payrolls (June 5), then the SPCX roadshow (June 8) and the Warsh FOMC (June 16-17) — the labor gauntlet that resolves the rate question", "url": "https://www.fxstreet.com/economic-calendar" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7589.30,  "change_pct": -0.14, "as_of": "2026-06-02T20:00:00Z" },
+    "nasdaq": { "level": 27019.10, "change_pct": -0.25, "as_of": "2026-06-02T20:00:00Z" },
+    "vix":    { "level": 16.20,    "change_pct":  0.62, "as_of": "2026-06-02T20:00:00Z" },
+    "ust10y": { "level": 4.46,     "change_bps": 0,     "as_of": "2026-06-02T20:00:00Z" },
+    "dxy":    { "level": 99.20,    "change_pct": 0.10,  "as_of": "2026-06-02T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",              "value": 16.20, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",        "value": 5.00,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",              "value": 99.20, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460",     "value": 7589,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",      "value": 95.00, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "$225-232 as Vera Rubin entered full production (OpenAI, Anthropic, xAI, Oracle, CoreWeave) — the tape's clear leader on a down day. Hold; stop $215; no add above $232 until the 30Y prints two consecutive sub-5.0% closes AND Brent below $92.", "sentiment": "positive" },
+    { "ticker": "GOOGL","note": "Stayed below the $378 invalidation triggered at the open; position closed. Re-entry requires two daily closes above $384 with the Iran backdrop stabilized — not in play yet.", "sentiment": "negative" },
+    { "ticker": "META", "note": "~$600 — EU Digital Services Act preliminary breach findings plus a $125-145B AI-capex forecast; no technical floor visible; avoid above $575.", "sentiment": "negative" },
+    { "ticker": "XLE",  "note": "≤25% short stub held — Brent ~$95, still below the $97 mandatory-cover trigger; the hot JOLTS + Hormuz threat keep energy bid. Cover the stub only on a Brent close above $97.", "sentiment": "neutral" },
+    { "ticker": "IWM",  "note": "Russell -0.47%, lagging again; hot JOLTS lifts yields against leveraged small caps and the SPCX roadshow (June 8) is the structural drain. Entry $285-288 on a confirmed reversal.", "sentiment": "negative" },
+    { "ticker": "HPE",  "note": "Rallied on AI-server read-through from the Vera Rubin / RTX Spark cycle; momentum but event-driven — not a fresh entry in a STEP ASIDE tape.", "sentiment": "positive" },
+    { "ticker": "BTC",  "note": "~$73-74k — recovered modestly off the June 1 lows but still below the $75K reclaim; cross-asset risk divergence persists.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "Broad index / rate-sensitive longs (IWM, TLT, REITs)", "reason": "Hot JOLTS (7.6M) plus a Hormuz inflation threat keep the 30Y near 5.00% and June-hike chatter alive; rate-sensitive names face a double headwind into the June 5 payrolls and June 16-17 FOMC", "better_entry": "Wait for a cool NFP and a 30Y close below 4.93% before adding duration, small-caps, or broad beta" },
+    { "ticker": "GOOGL", "reason": "The $378 invalidation triggered at the open; the prior 'cleanest fresh long' is closed and breadth is narrowing", "better_entry": "Two consecutive daily closes above $384 with the Iran backdrop stabilized" },
+    { "ticker": "NVDA above $232", "reason": "Chasing the COMPUTEX/Vera Rubin run with the 30Y still pinned at 5.00% and no Day-2 confirmation is pressing into an unresolved macro", "better_entry": "Re-open the add at $213-220 only after two consecutive 30Y sub-5.0% closes AND Brent below $92" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "On a down day with a hot JOLTS and unresolved Iran risk, NVDA pushed toward $232 as Vera Rubin entered full production for the top AI labs — the one clean bid in a narrowing tape. This is hold-and-protect, not add: the macro argues for guarding gains, and the 30Y Day-2 condition is still unmet.",
+      "entry": "Hold existing size; stop $215; re-open the add ($213-220) only on two consecutive 30Y sub-5.0% closes AND Brent below $92",
+      "invalidation": "$215 daily close — exit entire position",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "XLE (stub)",
+      "direction": "short",
+      "thesis": "The ≤25% stub from the June 1 night trim remains an Iran-resolution hedge: Brent held near $95, just below the $97 mandatory-cover trigger, with talks suspended and the Hormuz-closure threat live. The asymmetry is near parity — keep the stub small, do not add, and let the $97 line decide it.",
+      "entry": "Hold ≤25% stub; begin reducing if Brent closes below $91 for two sessions",
+      "invalidation": "Brent close above $97 — cover the stub immediately",
+      "conviction": "medium",
+      "horizon": "1-5 days"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Russell lagged again (-0.47%) as hot JOLTS lifted yields against leveraged small-cap balance sheets, and the SPCX roadshow (June 8, ~$75B raise) is the structural capital drain ahead. Rates and supply now align against small caps into the jobs week.",
+      "entry": "$285-288 on a confirmed reversal session with above-average volume; do NOT initiate at/above $290",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "Two down sessions off the record are mild, but the composition keeps deteriorating. The market spent May pricing AI capex, rate relief, and an Iran deal; within 48 hours of the June 1 record the rate leg was undercut by a hot JOLTS (7.6M openings holding the 30Y at ~5.00%) and the deal leg was replaced by a suspended negotiation and a threat to close the Strait of Hormuz entirely. A Hormuz closure is a structural inflation shock that would push Warsh's committee toward the hike prediction markets already give >60% odds by December. The index is leaning on a shrinking set of leaders — NVDA near $232 while GOOGL is stopped out, META is down on EU DSA findings, AAPL lags, and the Russell underperforms for a seventh session — the narrow-breadth profile that precedes sharper drawdowns when the leaders finally wobble. Friday's May payrolls are the decisive test: a hot print on top of today's hot JOLTS makes the June 17 FOMC a live hike. Invalidation: Iran talks formally resume AND the 30Y closes below 5.00% for two consecutive sessions returns the framework to HOLD; conversely, Brent above $97 with the 30Y above 5.05%, or an SPX close below 7,460, converts STEP ASIDE to bearish — exit all longs.",
+  "body_mdx": "data/briefings/markets/2026-06-02-night.mdx"
+}
