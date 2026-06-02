@@ -1,0 +1,118 @@
+{
+  "routine": "markets",
+  "date": "2026-06-02",
+  "window": "morning",
+  "generated_at": "2026-06-02T13:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Iran Unresolved; GOOGL Hits Stop; JOLTS Binary at 10 AM",
+    "conviction": "medium",
+    "rationale_short": "Iran talks remain suspended and Brent sits at $94.58 — just $2.42 from the $97 mandatory XLE cover trigger. The 30Y closed again near 5.01% on June 1, making this the third consecutive session without a clean sub-5.0% close; the Day-2 confirmation sequence required to unlock the NVDA add zone and high-conviction BUY upgrade is fully reset. GOOGL fell to $376.42 intraday on June 2, breaching the $378 daily-close invalidation established in the night brief. META is down approximately 4-5% and AAPL is down 1.86%, narrowing the market's leadership to NVDA and MSFT exclusively. JOLTS (April) releases at 10:00 AM ET — a reading above 8M raises Warsh June 17 hike probability and deepens the STEP ASIDE case; below 7M would be equity-friendly but insufficient to upgrade the framework absent Iran and 30Y resolution."
+  },
+  "snapshot": {
+    "sp500":  { "level": 7584.15,  "change_pct": -0.21, "as_of": "2026-06-02T12:30:00Z" },
+    "nasdaq": { "level": 27029.57, "change_pct": -0.21, "as_of": "2026-06-02T12:30:00Z" },
+    "vix":    { "level": 16.05,    "change_pct": 0.00,  "as_of": "2026-06-02T12:30:00Z" },
+    "ust10y": { "level": 4.46,     "change_bps": -2,    "as_of": "2026-06-02T12:30:00Z" },
+    "dxy":    { "level": 99.1,     "change_pct": 0.00,  "as_of": "2026-06-02T12:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",         "value": 16.05, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",   "value": 5.01,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",         "value": 99.1,  "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7460", "value": 7584,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude", "value": 94.58, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "GOOGL",
+      "note": "$376.42 (-1.03%) — breached the $378 daily-close invalidation level established in the June 1 night brief. The 'cleanest fresh long' from last week's framework is now a closed position. No re-entry until $384 reclaim on two consecutive closes with Iran de-escalation confirmed.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$224 — holding COMPUTEX momentum; up modestly from ~$221 June 1 close. RTX Spark narrative intact. Stop raised to $215 per June 1 night brief. No add without 30Y Day-2 sub-5.0% confirmation.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "~$600 (-4-5%) — EU Digital Services Act investigation and AI capex concerns driving rotation. Not on prior watchlist but now relevant as breadth narrows at index records.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "$306.26 (-1.86%) — approaching the $300 stop established in prior briefs. No positive catalyst; quality names under pressure as oil-and-NVDA leadership concentrates.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$452-461 (data inconsistent across sources; trading in a wide range after June 1's COMPUTEX parabola). Hold with stop at $440. Pullback toward $440-450 would re-open the add zone.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Brent $94.58 (-0.42% overnight) — Iran retreated slightly but talks remain suspended. $97 cover trigger is $2.42 away. Hold trimmed stub (≤25%); full cover on Brent close above $97.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$73,764 (+2.4% from June 1 lows) — modest recovery but still below the $75K reclaim threshold. Iran risk ceiling persists; no new entries.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "~$440-448 (range) — less Malaysia-loophole exposed; June earnings remain the primary catalyst. Hold.",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "GOOGL",
+      "reason": "Fell to $376.42 on June 2, below the $378 daily-close invalidation level. The prior long thesis is invalidated. Re-entry requires $384 reclaim on two consecutive sessions with Iran de-escalation.",
+      "better_entry": "$384 reclaim on two consecutive daily closes, with Iran talks formally resumed or MoU signed."
+    },
+    {
+      "ticker": "META above $600",
+      "reason": "EU Digital Services Act preliminary findings signal potential large fines and operational restrictions. AI capex guidance of $125-145B for 2026 is compressing margin outlook. Stock is in a downtrend at index records.",
+      "better_entry": "Below $575 with a confirmed EU regulatory settlement or capex guidance reduction; not before."
+    },
+    {
+      "ticker": "AAPL above $306",
+      "reason": "Down 1.86% to $306.26 with no specific catalyst — a slow-bleed against a narrow-market backdrop. Stop at $300. No COMPUTEX narrative. Quality anchor but not a buy at current levels.",
+      "better_entry": "$295-300 on a confirmed Iran de-escalation with 30Y back below 4.90%."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (short stub)",
+      "direction": "short",
+      "thesis": "Iran talks remain suspended and Brent has retreated only marginally (-0.42% to $94.58 overnight) — the geopolitical premium is not deflating at the pace the base scenario required. The $97 mandatory cover trigger is still just $2.42 away. Retaining a ≤25% stub preserves the hedge value if talks resume and oil reverses toward $88-90; the asymmetry now slightly favors patience on the stub over full cover.",
+      "entry": "Hold existing ≤25% stub from the June 1 night trim instruction. No adds. Cover in full on Brent close above $97. Begin reducing stub if Brent closes below $91 for two sessions.",
+      "invalidation": "Brent daily close above $97 — cover immediately, no exceptions.",
+      "conviction": "medium",
+      "horizon": "1-5 days (Iran-binary-dependent)"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Russell 2000 at ~2,899 has underperformed SPX for six consecutive sessions. SPCX roadshow begins June 8 ($75B institutional raise at ~$1.75T valuation), draining capital from the most liquid small-cap allocations. A hot JOLTS print at 10:00 AM ET today would add Warsh June 17 hike probability as a second structural headwind for leveraged small-cap balance sheets. Entry zone is approaching.",
+      "entry": "$285-288 on a confirmed reversal session with above-average volume. If JOLTS exceeds 8M today, the $289-290 level may offer an early entry. Do NOT initiate above $290.",
+      "invalidation": "$295 daily close for two consecutive sessions.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Holding at ~$224, above the $215 stop established in the June 1 night brief. RTX Spark (Arm CPU + Blackwell GPU + 128GB unified memory) remains the dominant COMPUTEX narrative; chip-curb overhang has not re-emerged. The AI PC hardware cycle thesis is structurally intact. No add until 30Y prints two consecutive sub-5.0% closes — the rate trigger has not been met.",
+      "entry": "Hold existing size with stop at $215. Re-open add zone ($213-220) only after two consecutive 30Y sub-5.0% daily closes AND Brent below $92.",
+      "invalidation": "$215 daily close — exit entire position.",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    }
+  ],
+  "bear_case": "The S&P 500's six-session winning streak from mid-May through June 1 was built on two pillars — Iran MoU optimism and NVDA COMPUTEX momentum — and the first pillar has now collapsed without the index fully acknowledging it. Iran talks are suspended, Brent is $2.42 from a level that would force the XLE short cover and confirm a supply shock, and the 30Y has failed to close below 5.00% for three consecutive sessions. With GOOGL breaking its stop, META down 4-5%, and AAPL selling off at index records, the equal-weight tape diverges sharply from the headline. JOLTS at 10:00 AM ET is the near-term binary: a reading above 8M combined with Friday's NFP (consensus ~100K) printing above 150K would make Warsh's June 17 FOMC a live hike event, collapsing the 30Y sub-5.0% narrative entirely and requiring an exit of all long positions simultaneously. Invalidation of the STEP ASIDE: if Iran talks formally resume AND the 30Y closes below 5.00% for two consecutive sessions, the framework returns to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-06-02-morning.mdx"
+}
