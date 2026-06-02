@@ -34,6 +34,13 @@
   ],
   "created_at": "2026-05-21",
   "expires_at": "2026-08-21",
-  "status": "active",
-  "tags": ["crypto", "BTC", "momentum", "risk-on", "AI-correlation"]
+  "status": "stopped_out",
+  "tags": ["crypto", "BTC", "momentum", "risk-on", "AI-correlation"],
+  "outcome": {
+    "closed_at": "2026-06-02",
+    "final_price": 69503,
+    "return_pct": -9.3,
+    "outcome_label": "Stop triggered — BTC closed below $72K threshold at $69,503",
+    "note": "Bitcoin fell to the $69,350–$69,666 range on June 2, 2026 (CoinGecko: $69,503; CoinDesk: $69,351; Coinbase: $69,666), decisively breaking the $72K daily-close stop. The risk-on liquidity thesis required a macro backdrop — 30Y below 5.00% AND Iran de-escalation — that has not materialized. Three consecutive sessions of 30Y near or above 5.01%, combined with Iran talks explicitly suspended per the June 2 Tasnim agency report, represent the dual-headwind invalidation scenario. BTC slipped below its 20, 50, and 100-day EMAs near $76,400–$76,700, confirming the technical support failure. Return from reference price $76,643 to close $69,503 = -9.3%."
+  }
 }

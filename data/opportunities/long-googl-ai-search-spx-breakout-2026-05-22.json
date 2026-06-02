@@ -38,6 +38,13 @@
   ],
   "created_at": "2026-05-22",
   "expires_at": "2026-07-31",
-  "status": "active",
-  "tags": ["AI", "advertising", "cloud", "search", "megacap", "SPX-conditional"]
+  "status": "stopped_out",
+  "tags": ["AI", "advertising", "cloud", "search", "megacap", "SPX-conditional"],
+  "outcome": {
+    "closed_at": "2026-06-02",
+    "final_price": 373.66,
+    "return_pct": -3.2,
+    "outcome_label": "Stop hit at $373.66 — below $374 daily-close invalidation",
+    "note": "GOOGL traded at $373.66 on June 2, 2026, breaching the $374 formal stop-loss level. The June 2 morning briefing had flagged the stock at $376.42 (-1.03%) as approaching the $378 tactical level from the night brief; by end of session the stock closed at $373.66, triggering the $374 daily-close stop. The structural thesis — Google Cloud AI growth plus AI Overview monetization — remains valid but requires macro clearing conditions (Iran de-escalation AND 30Y two consecutive closes below 5.00%) that have not materialized in three consecutive sessions. Return from reference price $386.00 to close $373.66 = -3.2%. A re-entry requires two consecutive daily closes above $384 with Iran backdrop stabilized."
+  }
 }

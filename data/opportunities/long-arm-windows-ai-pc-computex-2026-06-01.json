@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-06-01",
   "expires_at": "2026-09-30",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["AI", "semis", "ARM", "Windows-PC", "royalties", "COMPUTEX", "catalyst"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-02",
+    "final_price": 408.85,
+    "return_pct": 15.7,
+    "outcome_label": "Target 1 hit — ARM surged +12% on June 2 to $408.85, clearing $385",
+    "note": "ARM Holdings surged 12.06% on June 2, 2026, closing at $408.85, driven by NVIDIA's unveiling of the RTX Spark superchip at COMPUTEX 2026 — an Arm-architecture Windows AI PC processor co-developed with Microsoft and MediaTek, manufactured at TSMC. Multiple Wall Street analysts raised price targets (one from $360 to $425). The position was created June 1 at $353.29; Target 1 ($385) was cleared decisively on the June 2 open gap. Return from reference price $353.29 to close $408.85 = +15.7%. Target 2 ($425) and Target 3 ($485) remain achievable on continued COMPUTEX momentum and ARM's expanding royalty model — however, after a 12%+ single-session move, re-entry should wait for consolidation near $385-395."
+  }
 }

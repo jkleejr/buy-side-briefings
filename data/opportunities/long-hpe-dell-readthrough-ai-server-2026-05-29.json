@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-05-29",
   "expires_at": "2026-07-15",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["AI", "server", "catalyst", "HPE", "DELL-readthrough", "enterprise"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-02",
+    "final_price": 60.24,
+    "return_pct": 39.6,
+    "outcome_label": "Target 2 hit — HPE surged 28% AH on Q2 FY2026 earnings beat; $60.24 clears both $50 (T1) and $58 (T2)",
+    "note": "HPE reported Q2 FY2026 earnings on June 1, 2026 after market close: $0.79 EPS (beat $0.54 estimate by $0.25), $10.68B revenue (beat $9.89B estimate), FY2026 EPS guidance raised to $3.35–3.45 from $2.43 consensus. The stock closed the regular June 1 session at $47.06 (+9.35%) and surged an additional 28% in after-hours trading to approximately $60.24, opening June 2 near that level. This validated the DELL read-through thesis three sessions ahead of the expected Q3 FY2026 earnings catalyst: HPE's own Q2 results confirmed AI server demand is sector-wide, not company-specific. Target 1 ($50) and Target 2 ($58) were both cleared by the AH/June-2 open price. Return from reference price $43.15 to $60.24 = +39.6%."
+  }
 }
