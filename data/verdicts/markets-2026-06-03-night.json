@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-06-03",
+  "window": "night",
+  "generated_at": "2026-06-03T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Brent Crosses $97, XLE Stub Covered; 30Y Holds Day-1; AVGO AH Guidance Miss Weighs on Semis",
+    "conviction": "medium",
+    "rationale_short": "The morning STEP ASIDE call was correct — the S&P 500 fell 0.74% and the Dow shed 621 points as Brent closed at $97.90, crossing the $97 mandatory XLE stub cover trigger. ADP (122K) landed in the base-case range; ISM Services printed 54.5% with the Prices Index hitting 71.3%, the highest reading since August 2022. The 30Y held at 4.965% (Day-1 sub-5.0% confirmed), preventing the full two-condition BEARISH trigger from firing. AVGO's after-hours Q3 AI guidance miss ($16B vs. $17.2B expected) is the first crack in the AI acceleration narrative. STEP ASIDE maintained at medium conviction; Friday's May NFP is the decisive binary."
+  },
+  "supporting_data": [
+    { "label": "S&P 500 fell 0.74% to ~7,553; Dow -620.72 pts (-1.21%) to ~50,687; Nasdaq -0.89% — 9-day win streak broken on Iran escalation and oil spike", "url": "https://www.fool.com/coverage/stock-market-today/2026/06/03/stock-market-today-june-3-markets-end-winning-streak-on-middle-east-escalation-fears/" },
+    { "label": "Brent crude closed at $97.90 (+~$2), crossing the $97 mandatory XLE stub cover trigger; WTI at $95.91 — Iran ballistic missile attacks on Kuwait and Bahrain drove the move", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+    { "label": "30Y Treasury closed at 4.965% (-2.6 bps from June 2's 4.991%) — Day-1 sub-5.0% confirmed; Day-2 (June 4 close) needed for HOLD upgrade eligibility", "url": "https://fred.stlouisfed.org/series/DGS30" },
+    { "label": "ADP May 2026: 122,000 private jobs added (vs. 110K consensus, vs. 105K April) — in the base-case range; annual pay +4.4%", "url": "https://www.cnbc.com/2026/06/03/adp-jobs-report-may-2026-payrolls-increase-by-122000.html" },
+    { "label": "ISM Services PMI May 2026: 54.5% (vs. 53.8 forecast, vs. 53.6 April); Prices Index 71.3% — highest reading since August 2022; services inflation is accelerating, not cooling", "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-5-may-2026-ism-services-pmi-report-302789082.html" },
+    { "label": "AVGO Q3 FY2026 AI semiconductor revenue guidance: $16B vs. $17.2B expected — stock fell ~5-6% AH; CRWD -9-13% AH on sell-the-news despite beating Q1 estimates and raising FY2027 guidance", "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7553.5,  "change_pct": -0.74, "as_of": "2026-06-03T20:00:00Z" },
+    "nasdaq": { "level": 26852.0, "change_pct": -0.89, "as_of": "2026-06-03T20:00:00Z" },
+    "vix":    { "level": 16.27,   "change_pct":  0.43, "as_of": "2026-06-03T20:00:00Z" },
+    "ust10y": { "level": 4.499,   "change_bps":   4,   "as_of": "2026-06-03T20:00:00Z" },
+    "dxy":    { "level": 99.52,   "change_pct":  0.31, "as_of": "2026-06-03T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.27, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.965, "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.52, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7553,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",  "value": 97.90, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Fell to ~$216.80 (-3.36%) on June 3 — approaching the $215 stop from above. AVGO's AH guidance miss may create additional semi headwinds at Thursday's open. Hold existing position; the $215 stop is unconditional.", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "Q2 FY2026 AI semiconductor revenue $10.8B (+143% YoY) was a strong beat, but Q3 AI guidance of $16B vs. $17.2B expected disappointed elevated market expectations; stock fell ~5-6% AH. Absolute growth remains massive (>200% YoY Q3) but the whisper-number miss is real.", "sentiment": "negative" },
+    { "ticker": "CRWD",  "note": "Fell ~9-13% AH despite beating Q1 estimates (EPS $1.10 vs $1.07; revenue $1.39B vs $1.36B) and raising FY2027 guidance. A 4-for-1 stock split announced. Sell-the-news on extended valuations. No entry into the decline.", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "~$438-460 range; N1X/Computex partner thesis intact. Hold existing; stop $440.", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "~$376 — still stopped out below the $378 invalidation. Re-entry requires two consecutive daily closes above $384 with Iran stabilized.", "sentiment": "negative" },
+    { "ticker": "META",  "note": "~$600 — EU DSA preliminary breach findings and AI-capex overhang persist. Avoid above $575.", "sentiment": "negative" },
+    { "ticker": "IWM",   "note": "Russell small-caps fell again in line with the broader selloff; the $285-288 short entry zone is approaching. SPCX roadshow opens Monday June 8 (~$75B raise, the structural capital-drain trigger).", "sentiment": "negative" },
+    { "ticker": "XLE",   "note": "XLE short stub COVERED per the mandatory trigger: Brent closed at $97.90 above the $97 line. No XLE position now. Conditional long flip: if Brent holds above $97 for two consecutive sessions, consider initiating a small XLE long (≤20% prior stub size) with stop at Brent $93.", "sentiment": "neutral" },
+    { "ticker": "BTC",   "note": "~$64,000-66,000 range (estimated; opened below $67K June 3, lowest open since March 30) — extended crypto risk-off. Cross-asset confirmation that risk appetite is not as broad as index levels suggest.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "AVGO", "reason": "Q3 AI guidance miss vs. elevated expectations ($16B vs. $17.2B); fell ~5-6% AH; let the guidance narrative settle before sizing a long", "better_entry": "$440-460 if the next 2 sessions stabilize post-AH; needs 30Y Day-2 confirmation AND Brent back below $95 for a clean entry" },
+    { "ticker": "Broad index / rate-sensitive longs (TLT, REITs, IWM)", "reason": "Brent above $97 re-embeds oil-driven inflation; ISM Services Prices at 71.3% (highest since Aug 2022); forward PE at 22.66x (83rd percentile) with the AI acceleration narrative under first stress", "better_entry": "Two consecutive 30Y sub-5.0% closes AND Brent below $92 AND cool May NFP (<150K) — not before all three" },
+    { "ticker": "NVDA above $218", "reason": "Approaching the $215 stop with AVGO AH guidance miss creating semi headwinds at Thursday open; no add while the stop is this close to being triggered", "better_entry": "Re-open the add at $213-220 only after 30Y Day-2 confirmed AND Brent below $92" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA fell to ~$216.80 (-3.36%) on June 3, closing within $1.80 of the $215 stop. AVGO's after-hours guidance miss ($16B vs. $17.2B Q3 AI semiconductor) introduces semi headwinds at Thursday's open, but the miss is a whisper-number gap on still-enormous absolute growth (>200% YoY Q3) — not a demand collapse. Hold through the noise; the $215 stop is unconditional and non-negotiable.",
+      "entry": "Hold existing size; stop $215 — exit entire position on any daily close below $215. Add only after 30Y Day-2 sub-5.0% confirmed AND Brent below $92, at $213-220.",
+      "invalidation": "$215 daily close — exit entire position immediately",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "The Russell 2000 fell again on June 3 as the selloff broadened beyond AI leaders; IWM is approaching the $285-288 short entry zone. The SpaceX (SPCX) roadshow opens Monday June 8 with a ~$75B raise — the largest IPO on record — creating a capital-drain dynamic from liquid large-cap holdings. The 30Y rates headwind on leveraged small-cap balance sheets is re-intensifying as Brent above $97 keeps inflation premium elevated.",
+      "entry": "$285-288 on a confirmed reversal session with above-average volume; do NOT initiate at/above $290",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "The XLE short stub was covered today per the mandatory trigger: Brent closed at $97.90. The Iran escalation framework has shifted from 'hedge against resolution' to 'directional long thesis': ballistic missiles hit Kuwait and Bahrain, a sea drone struck an oil tanker, US forces struck Qeshm Island. If Brent closes above $97 for two consecutive sessions — confirming $97 as support rather than resistance — a small, defined-risk long XLE position is warranted as the conflict re-embeds a structural oil risk premium.",
+      "entry": "Wait for two consecutive Brent closes above $97 to confirm; enter XLE at current levels with size ≤20% of the prior stub",
+      "invalidation": "Brent closes below $93 on two consecutive sessions — Iran diplomacy resumption or announced ceasefire",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    }
+  ],
+  "bear_case": "The most direct challenge to staying merely STEP ASIDE is the compounding of three simultaneous signals: Brent above $97 re-embedding oil inflation, the ISM Services Prices Index at 71.3% (highest since August 2022), and AVGO's first guidance miss vs. elevated AI expectations. The bond market's refusal to panic — the 30Y held at 4.965% despite oil at $97.90 — is the only constructive signal, and it depends on markets reading the geopolitical oil premium as transient. If that premise breaks (Iran sustains Brent above $100 for multiple sessions), the 30Y cannot hold sub-5.0% and the STEP ASIDE framework collapses to BEARISH. The S&P 500 at 7,553 on a 22.66x forward PE is not priced for a scenario where AI runrate decelerates, oil stays elevated, and NFP Friday prints hot on top of an already-hot JOLTS. Invalidation: if Brent closes above $100 AND the 30Y closes above 5.05% on the same session, exit all longs — STEP ASIDE cannot hold that combination.",
+  "body_mdx": "data/briefings/markets/2026-06-03-night.mdx"
+}
