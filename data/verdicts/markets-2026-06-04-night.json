@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-06-04",
+  "window": "night",
+  "generated_at": "2026-06-04T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — 30Y Day-2 Confirmed; Brent Sub-$97 Day-2; NFP Binary at 8:30 AM Tomorrow",
+    "conviction": "medium",
+    "rationale_short": "Both conditions for the STEP ASIDE→HOLD upgrade fired on June 4: the 30Y Treasury closed at 4.96% (Day-2 sub-5.0% confirmed) and Brent held at $96.97 (second consecutive session below the $97 trigger). The Dow surged 1.73% to a record 51,561.93 as capital rotated from AI semis (AVGO ~-15%) into financials and health care; the S&P gained 0.41% and the Nasdaq lost only -0.09% — a sign of healthy breadth, not AI concentration. NVDA held above the $215 stop at $216.34 despite AVGO's continued selloff. Initial Jobless Claims printed at 225K vs. 214K forecast — the first above-consensus reading in four weeks, a mild labor-softening signal. NFP consensus (FactSet median 105K, range 50K-125K) is constructive for the thesis. HOLD at medium conviction; full upgrade confirmation requires Friday's NFP below 125K with cooling wages."
+  },
+  "supporting_data": [
+    { "label": "S&P 500 closed 7,584.31 (+0.41%); Dow surged 874.86 pts (+1.73%) to record 51,561.93; Nasdaq -0.09% — breadth driven by financials/health-care rotation, not AI concentration", "url": "https://www.fool.com/coverage/stock-market-today/2026/06/04/stock-market-today-june-4-dow-hits-record-as-tech-stocks-falter/" },
+    { "label": "30Y Treasury closed at 4.96% — Day-2 sub-5.0% CONFIRMED; 10Y at 4.49%; both mandatory HOLD upgrade conditions now met", "url": "https://www.federalreserve.gov/releases/h15/" },
+    { "label": "Brent crude at $96.97 (-0.86%) — second consecutive session below the $97 trigger; two-session sub-$97 sequence confirmed; mandatory long-vol posture begins defusing", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+    { "label": "AVGO fell ~15% in regular trading June 4 (from $479.23 June 3 close to ~$407); Nasdaq lost only -0.09% — market continued isolating AVGO's guidance plateau as company-specific, not an AI-sector signal", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261946941-avgo-broadcom-q2-dowjones-nasdaq-ai-stock-tradingkey" },
+    { "label": "Initial Jobless Claims: 225K vs. 214K forecast (prior: 212K) — first above-consensus reading in four weeks; mild labor-softening signal ahead of NFP", "url": "https://tradingeconomics.com/united-states/jobless-claims" },
+    { "label": "May NFP consensus: FactSet median 105K (range 50K-125K), Capital Economics 65K — all sub-150K HOLD threshold; NFP releases Friday June 5 at 8:30 AM ET", "url": "https://insight.factset.com/total-nonfarm-payrolls-for-may-2026-are-projected-to-rise-by-105000" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7584.31,  "change_pct":  0.41, "as_of": "2026-06-04T20:00:00Z" },
+    "nasdaq": { "level": 26830.96, "change_pct": -0.09, "as_of": "2026-06-04T20:00:00Z" },
+    "vix":    { "level": 15.60,    "change_pct": -4.12, "as_of": "2026-06-04T20:00:00Z" },
+    "ust10y": { "level": 4.49,     "change_bps":  0,    "as_of": "2026-06-04T20:00:00Z" },
+    "dxy":    { "level": 99.44,    "change_pct": -0.09, "as_of": "2026-06-04T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 15.60, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.96,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.44, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7584,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",  "value": 96.97, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Closed at $216.34 (range $210.97-$216.80) on June 4. Ex-dividend date today ($0.25/share); dividend-adjusted return is essentially flat. Held above the $215 stop despite AVGO falling ~15% in the same session — confirming the market's continued differentiation between AVGO's custom-ASIC/VMware narrative and NVDA's accelerated-computing platform. Add zone ($213-220) opens only after NFP confirms below 125K with cooling wages.", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "Fell approximately 15% in regular trading June 4 (from $479.23 June 3 close to ~$407), extending the June 3 AH selloff into a two-session drawdown. AI revenue guidance plateau (FY2027 target left unchanged) is being repriced as institutional selling across two sessions — not a one-day flush. Wait for two stabilization sessions before any entry.", "sentiment": "negative" },
+    { "ticker": "CRWD",  "note": "Sell-the-news continued through June 4 regular session; estimated close ~$669-680. Beat + raise + 4-for-1 split not enough to hold the premium built into the valuation into earnings. No entry before valuation resets.", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "Closed at $429.87 on June 4 — below the prior $440 stop level. Stop-on-close rule triggers: MSFT position exits per framework. The N1X/Computex thesis remains intact; re-entry zone at $422-430 after two stabilization sessions provided 30Y holds sub-5.0% and NFP is cool.", "sentiment": "negative" },
+    { "ticker": "GOOGL", "note": "$372.19 on June 4 — still below the $384 two-session re-entry threshold. No position.", "sentiment": "negative" },
+    { "ticker": "META",  "note": "$627.57 on June 4 — above the $575 avoid threshold. EU DSA headwind and AI-capex overhang persist. No entry above $575.", "sentiment": "negative" },
+    { "ticker": "PLTR",  "note": "$143.50 on June 4 (+~9.5% from $131 in prior briefs) — significant outperformer; defense-AI thesis bid by the ongoing Iran war narrative. New demand zone formed at $138-142. HOLD; no chase above $150.", "sentiment": "positive" },
+    { "ticker": "TSM",   "note": "$436.69 on June 4 — holding well despite AVGO's 15% decline; TSM's revenue exposure spans the full chip ecosystem beyond AVGO's custom-ASIC concentration. Computex/Arm demand thesis intact. Hold.", "sentiment": "positive" },
+    { "ticker": "IWM",   "note": "Estimated ~$289 on June 4 — small-caps benefited modestly from 30Y rate relief and the Dow rotation. SPCX roadshow opens Monday June 8 (~$75B); short entry zone $285-288 still in play. Wait for confirmed reversal with above-average volume; best entry window is Monday-Wednesday as SPCX capital drain materializes.", "sentiment": "neutral" },
+    { "ticker": "BTC",   "note": "Plunged below pre-war levels June 4; opened at $64,038, fell to ~$62,000. Cross-asset risk-off signal — crypto behaving as pure risk-on beta, not uncorrelated store of value. BTC's decline is the one persistent bearish cross-asset signal in an otherwise constructive session.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "AVGO",        "reason": "Two-session repricing (~$479 to ~$407) driven by AI guidance plateau narrative; institutional selling pattern has not completed; no clear price-discovery floor yet", "better_entry": "$380-400 after two consecutive stabilization sessions with above-average volume; requires 30Y below 4.90% AND Brent below $93 for clean macro setup" },
+    { "ticker": "NVDA add",    "reason": "At $216.34, NVDA is $1.34 from the $215 unconditional stop; NFP tomorrow is a 3-5% binary swing; no add while stop distance is this thin", "better_entry": "$213-220 add zone opens only after NFP prints below 125K with cooling wages on Friday — not before" },
+    { "ticker": "BTC/ETH",     "reason": "Bitcoin plunged below pre-war levels ($62K); Ethereum below $1,740; crypto risk-off is a cross-asset warning that the HOLD upgrade should not be extrapolated to high-beta risk assets", "better_entry": "BTC needs to reclaim $66K+ with VIX below 14 and Iran risk premium declining for a constructive re-entry setup" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA closed at $216.34 on June 4, ex-dividend, confirming the market continues to isolate AVGO's custom-ASIC/VMware guidance plateau from NVDA's accelerated-computing thesis. With 30Y Day-2 confirmed (4.96%) and Brent below $97 for a second session, the $213-220 add zone officially opens contingent on Friday's NFP. A print below 125K with cooling wages authorizes a small incremental add; a hot print (>165K) tightens the framework back toward STEP ASIDE and closes the add window.",
+      "entry": "Hold existing size; stop $215 unconditional. NFP conditional add: initiate partial add in $213-220 zone only if NFP prints below 125K with cooling wages Friday morning.",
+      "invalidation": "$215 daily close — exit entire position immediately, no exceptions",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "The structural IWM short thesis intensifies into Monday: the SpaceX (SPCX) roadshow opening (~$75B raise, largest IPO on record) creates a capital-drain dynamic as investors redeploy from liquid small and mid-cap holdings into the new issue. The 30Y rate relief (4.96%) is a short-term positive for small-cap balance sheets but the SPCX capital event dominates the 2-4 week horizon. Best entry window: Monday-Wednesday as SPCX capital drain begins registering as IWM selling pressure.",
+      "entry": "$285-288 on a confirmed reversal session with above-average volume; do not initiate above $292. Target initiation Monday-Wednesday.",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLF",
+      "direction": "long",
+      "thesis": "Thursday's Dow record at 51,561.93 (+1.73%) was driven by Goldman Sachs, JPMorgan Chase, and Visa — the primary rotation beneficiaries from AI semis. The 30Y at 4.96% (Day-2 confirmed) improves bank net interest margin dynamics. If NFP Friday prints 65-125K with cooling wages, the rate path further clarifies and financials are the cleanest way to express the HOLD upgrade thesis with lower single-name event risk than tech names heading into the SPCX IPO.",
+      "entry": "Current levels or any dip to 50-day moving average; size ≤25% of total deployed capital.",
+      "invalidation": "NFP >165K on Friday — hot print re-ignites rate-hike risk and reverses the financials rotation thesis",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "The HOLD upgrade rests on two data points — 30Y Day-2 at 4.96% and Brent at $96.97 — both of which are one session old and reversible within hours of a hot NFP print or an Iran headline. The ADP/JOLTS/ISM Prices data stack (ADP 122K, JOLTS 7.6M, ISM Services Prices 71.3% — highest since August 2022) argues for meaningful upside NFP surprise risk that the 65-125K consensus does not fully price. AVGO's two-session 15% decline is the first systematic repricing of AI infrastructure multiples in this cycle; if the guidance-plateau template spreads to NVDA's next earnings (late July), the NVDA long — the framework's primary risk-on thesis — becomes a liability. BTC's plunge below pre-war levels is a leading risk-appetite indicator that the Dow's record close masks. Invalidation: if NFP prints above 165K AND the 30Y closes above 5.00% on Friday, revert HOLD to STEP ASIDE immediately — close XLF, pause NVDA add, tighten NVDA stop to $218.",
+  "body_mdx": "data/briefings/markets/2026-06-04-night.mdx"
+}
