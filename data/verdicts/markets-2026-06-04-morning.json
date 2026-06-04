@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-06-04",
+  "window": "morning",
+  "generated_at": "2026-06-04T09:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — NVDA Recovers Above Stop; Brent Retreats Below $97; 30Y Day-2 + NFP Pending",
+    "conviction": "medium",
+    "rationale_short": "The June 3 night brief's bear scenario did not materialize: NVDA recovered to $227.36 (+4.9% from yesterday's close), confirming AVGO's AI guidance disappointment was company-specific rather than a systemic AI demand signal. Brent retreated to $96.97 — below the $97 mandatory escalation trigger for the first time since the cross — and the 10Y eased to 4.49%, supporting 30Y Day-2 sub-5.0% confirmation. STEP ASIDE maintained at medium conviction: the framework cannot upgrade to HOLD until the 30Y confirms Day-2 sub-5.0% at today's close. Friday's May NFP remains the decisive binary for any directional upgrade."
+  },
+  "supporting_data": [
+    { "label": "ES futures at 7,538.50 (−0.44%) pre-market June 4 — soft but orderly; 86% prediction-market probability of S&P opening lower; S&P 500 June 3 close was 7,553.5", "url": "https://www.lines.com/prediction-markets/finance/spx-opens-up-or-down-on-june-4-2026" },
+    { "label": "NVDA opened at $227.36 (+4.9% from June 3 close of $216.80) on June 4 — well above the $215 unconditional stop; the AVGO AI guidance miss did not spread to NVDA; Schwab: 'Chips Remain Hot'", "url": "https://finance.yahoo.com/quote/NVDA/" },
+    { "label": "AVGO plunged ~13% on June 4 premarket (to ~$413 from $475 June 3 close) — FY2027 AI revenue target left unchanged despite massive Q2 beat (+48% YoY revenue, +143% AI semiconductor sales); AVGO-specific miss, not broad AI demand collapse", "url": "https://stocktwits.com/news-articles/markets/equity/avgo-stock-extends-post-earnings-selloff-analysts-retail-expect-strong-rebound/cZ0Z4eNRey4" },
+    { "label": "Brent crude at $96.97 (−0.86%) on June 4 — below the $97 mandatory escalation trigger for the first time since the June 3 cross; WTI range $93.64–$96.04; oil geopolitical premium easing", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+    { "label": "US 10Y yield eased to 4.49% on June 4 pre-market — constructive for 30Y Day-2 sub-5.0% confirmation; June 3 30Y close was 4.965% (Day-1 confirmed)", "url": "https://tradingeconomics.com/united-states/government-bond-yield" },
+    { "label": "House passed Iran war powers resolution 215-208 — limits Trump's military operations against Iran; first congressional check on war escalation; constructive signal for oil geopolitical premium de-escalation path", "url": "https://www.cnbc.com/amp/2026/06/04/cnbc-daily-open-iran-war-worries-halt-stock-rally.html" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7553.5,  "change_pct": -0.74, "as_of": "2026-06-03T20:00:00Z" },
+    "nasdaq": { "level": 26852.0, "change_pct": -0.89, "as_of": "2026-06-03T20:00:00Z" },
+    "vix":    { "level": 16.27,   "change_pct":  0.43, "as_of": "2026-06-03T20:00:00Z" },
+    "ust10y": { "level": 4.49,    "change_bps":  -1,   "as_of": "2026-06-04T09:00:00Z" },
+    "dxy":    { "level": 99.52,   "change_pct":  0.31, "as_of": "2026-06-03T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.27, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.965, "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.52, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7553,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",  "value": 96.97, "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Opened at $227.36 on June 4 (+4.9% from June 3's $216.80 close) — stop $215 is not in range; the AVGO earnings miss was not read as an NVDA demand signal. Ex-dividend date June 4 ($0.25/share). Add zone reopens at $213–220 after 30Y Day-2 confirmed AND Brent below $92.", "sentiment": "positive" },
+    { "ticker": "AVGO",  "note": "Plunged ~13% on June 4 (to ~$413) after leaving FY2027 AI revenue target unchanged despite a massive Q2 beat ($22.19B revenue, +48% YoY; AI semi +143%). This is a whisper-number / guidance-plateau miss, not a demand collapse. Analysts (Jefferies, Morningstar) raised price targets. Better entry: $405–430 zone after two sessions of stabilization.", "sentiment": "negative" },
+    { "ticker": "CRWD",  "note": "Extended AH selloff into June 4 open (~$669, -10.5% from $747.61 June 3 close) despite Q1 beat and raised FY2027 guidance; 4-for-1 stock split announced. Sell-the-news extended. No entry into the continuing decline.", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "~$438–460 range; N1X/Computex thesis intact. Hold, stop $440.", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "~$376 — still stopped out; re-entry needs two consecutive closes above $384 with Iran risk stabilized.", "sentiment": "negative" },
+    { "ticker": "META",  "note": "~$600 — EU DSA overhang persists. Avoid above $575.", "sentiment": "negative" },
+    { "ticker": "TSM",   "note": "~$416–441; Computex/Arm demand intact; hold the position.", "sentiment": "positive" },
+    { "ticker": "IWM",   "note": "Approaching the $285–288 short entry zone as the broad market softens; SPCX roadshow opens Monday June 8 (~$75B raise, largest IPO on record) — structural capital-drain trigger activates. Wait for confirmed reversal session with above-average volume.", "sentiment": "negative" },
+    { "ticker": "BTC",   "note": "~$63,000–65,500 est. — continued crypto risk-off; below March 30 open; cross-asset confirmation risk appetite is not broad.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "AVGO", "reason": "Selloff extended to ~13% on June 4 as markets price in FY2027 guidance plateau; do not buy into the declining hole before sentiment stabilizes and the guidance narrative settles", "better_entry": "$405–430 if the next 2 sessions hold and 30Y Day-2 is confirmed; requires Brent to demonstrate it stays below $97" },
+    { "ticker": "CRWD", "reason": "Sell-the-news continues (~$669 on June 4) despite beat + raise + split; extended valuation at still-high multiples; the decline may not be finished", "better_entry": "$640–660 zone only after two consecutive stabilization sessions; then reassess vs. fundamentals" },
+    { "ticker": "Broad rate-sensitive longs (TLT, REITs, IWM)", "reason": "30Y Day-2 sub-5.0% not yet confirmed; NFP tomorrow is a binary; forward PE still at 22.66x; Iran war ongoing despite House vote; the upgrade path is identified but the conditions are not yet met", "better_entry": "Two consecutive 30Y sub-5.0% closes AND cool May NFP (<150K) — not before both" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA recovered to $227.36 (+4.9%) on June 4, confirming the $215 stop was not tested and AVGO's AI guidance miss was company-specific. With Vera Rubin in production ramp and NVDA's differentiated position in training/inference accelerators vs. AVGO's custom ASIC/VMware business, the NVDA thesis is intact. Hold existing position; the add zone ($213–220) reopens after 30Y Day-2 sub-5.0% confirmed AND Brent below $92.",
+      "entry": "Hold existing size; stop $215 — exit entire position on any daily close below $215. Add at $213–220 only after 30Y Day-2 confirmed AND Brent below $92.",
+      "invalidation": "$215 daily close — exit entire position immediately",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "The Russell 2000 enters the $285–288 tactical short entry zone as the SPCX roadshow opens Monday June 8 with an estimated ~$75B raise — the largest IPO on record — creating a capital-drain dynamic from liquid large-cap holdings. Small-cap balance sheets carry disproportionate floating-rate debt exposure, and the 30Y rates headwind is not yet resolved. The IWM short is a structural thesis for the next 2–4 weeks, independent of the NFP binary.",
+      "entry": "$285–288 on a confirmed reversal session with above-average volume; do NOT initiate at/above $290",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "hedge",
+      "thesis": "Brent retreated to $96.97 on June 4, pulling back below the $97 trigger and suspending the conditional XLE long flip from the June 3 night brief. The two-session Brent confirmation threshold for initiating XLE long was not met. XLE posture is flat. If Brent re-crosses $97 on any session close, the conditional long setup re-activates immediately at market with size ≤20% prior stub.",
+      "entry": "Flat — monitoring. Re-enter long only if Brent closes above $97 for two consecutive sessions.",
+      "invalidation": "N/A — position not initiated. Brent two-session close above $97 is the re-entry trigger.",
+      "conviction": "low",
+      "horizon": "1-3 weeks"
+    }
+  ],
+  "bear_case": "The constructive morning signals — NVDA recovery, Brent retreat, 10Y easing — rest on a fragile premise: that AVGO's FY2027 AI revenue guidance plateau is company-specific and not a leading indicator of hyperscaler capex deceleration. If AVGO's unchanged FY2027 target proves to be the first data point in a series where AI infrastructure demand growth decelerates at the rate-of-change level (even if absolute revenues remain high), then NVDA's next print faces the same whisper-number dynamic at a 38x forward P/E. The House war powers resolution is not a ceasefire — the 2026 Iran war continues into its fourth month, and any resumed escalation re-crosses Brent above $97, potentially toward $100, within hours of a single Gulf attack headline. The S&P 500 at 7,553 on a 22.66x forward P/E is not priced for a scenario where AI capex growth rate plateaus, oil re-escalates, and May NFP prints hot tomorrow. Invalidation: if Brent closes above $100 AND the 30Y closes above 5.05% on the same session, exit all longs — the STEP ASIDE framework cannot hold that combination.",
+  "body_mdx": "data/briefings/markets/2026-06-04-morning.mdx"
+}
