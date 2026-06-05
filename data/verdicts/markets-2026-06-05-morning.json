@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-06-05",
+  "window": "morning",
+  "generated_at": "2026-06-05T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — FRAMEWORK INTACT; NFP IS THE GATE; BRENT DAY-3 BELOW $97",
+    "conviction": "medium",
+    "rationale_short": "All five HOLD framework conditions remain active heading into Friday's 8:30 AM ET NFP print. Brent entered its third consecutive session below the $97 trigger (~$95.25), the Iran 60-day ceasefire MOU is 'mostly agreed,' and the 10Y yield fell 4bps to 4.46% pre-market. Pre-market setup is mixed — Nasdaq futures negative from AVGO chip-sector spillover, S&P and Dow futures slightly positive on macro improvement. NFP is the session's critical binary: below 125K confirms HOLD and opens the NVDA conditional add; above 165K immediately reverts to STEP ASIDE.",
+    "supporting_data": [
+      { "label": "Brent ~$95.25 — third consecutive session below the $97 trigger; prior framework explicitly defined this sequence as 'accelerates de-escalation thesis'", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+      { "label": "10Y yield 4.46% (-4bps pre-market); 30Y approaching Day-3 sub-5.0% — rate relief extending into NFP", "url": "https://tradingeconomics.com/united-states/government-bond-yield" },
+      { "label": "Iran 60-day ceasefire MOU 'mostly agreed' by U.S. and Iranian negotiators — Brent down ~20% from 2026 peak on ceasefire optimism; unsigned by Trump", "url": "https://www.cnbc.com/2026/05/29/oil-prices-iran-ceasefire-us-trump-strait-hormuz-energy-costs.html" },
+      { "label": "May NFP consensus 85–105K (FactSet/Bloomberg); jobless claims 225K vs. 214K forecast — first above-consensus reading in 4 weeks; labor-softening signals accumulating", "url": "https://insight.factset.com/total-nonfarm-payrolls-for-may-2026-are-projected-to-rise-by-105000" },
+      { "label": "S&P 500 fwd PE 22.7 (83rd percentile vs. 10-year median of 19.85) — elevated valuation limits BUY conviction; hold vs. add new risk", "url": "https://www.gurufocus.com/economic_indicators/6061/sp-500-pe-ratio-with-forward-estimate" },
+      { "label": "SpaceX $135/share ($1.77T valuation); roadshow June 8; $75B raise is largest IPO in history — capital-drain event looms over small-cap positioning starting Monday", "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7584.31, "change_pct":  0.19, "as_of": "2026-06-05T11:30:00Z" },
+    "nasdaq": { "level": 26830.96, "change_pct": -0.20, "as_of": "2026-06-05T11:30:00Z" },
+    "vix":    { "level": 17.0,   "change_pct":  8.97, "as_of": "2026-06-05T11:30:00Z" },
+    "ust10y": { "level": 4.46,   "change_bps": -4,    "as_of": "2026-06-05T11:30:00Z" },
+    "dxy":    { "level": 99.25,  "change_pct": -0.19, "as_of": "2026-06-05T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.0,  "trigger_above": 18,   "unit": ""  },
+    { "name": "30Y Yield",    "value": 4.92,  "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.25, "trigger_above": 100,  "unit": ""  },
+    { "name": "SPX vs 7,460", "value": 7584,  "trigger_below": 7460, "unit": ""  },
+    { "name": "Brent Crude",  "value": 95.25, "trigger_above": 97,   "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "June 4 close $216.34 (ex-div $0.25); above $215 unconditional stop; AVGO isolation confirmed; conditional add at $213-220 opens on NFP <125K with cooling wages", "sentiment": "neutral" },
+    { "ticker": "AVGO", "note": "Two-session repricing from $479.23 to ~$407 (-15%); AI guidance-plateau selloff (FY2027 revenue target unchanged); institutional selling not yet cleared", "sentiment": "negative" },
+    { "ticker": "PLTR", "note": "June 4 close $143.50 (+9.5%); defense-AI outperformer; demand zone $138-142; do not chase above $150", "sentiment": "positive" },
+    { "ticker": "MSFT", "note": "June 4 close $429.87; below $440 stop-on-close — stop triggered per framework; position exited; re-entry $422-430 post-NFP cool print", "sentiment": "negative" },
+    { "ticker": "TSM",  "note": "June 4 close $436.69; semis ex-AVGO resilient; Computex/Arm foundry demand intact; hold", "sentiment": "positive" },
+    { "ticker": "AAPL", "note": "June 4 close $311.52; quality-flight residual; no fresh catalyst; trail stop $295", "sentiment": "neutral" },
+    { "ticker": "GOOGL","note": "June 4 close $372.19; below $384 re-entry threshold; no position", "sentiment": "neutral" },
+    { "ticker": "META", "note": "June 4 close $627.57; above $575 avoid level; EU DSA headwind persists", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "AVGO",       "reason": "Two-session -15% selloff from $479.23; AI revenue guidance plateau (FY2027 target unchanged) not fully digested; no confirmed price-discovery floor; institutional selling pattern active", "better_entry": "$380-400 after two consecutive stabilization sessions with above-average volume" },
+    { "ticker": "NVDA (add)", "reason": "Stop only $1.34 from $215 unconditional level; NFP is a 3-5% binary swing for the stock; do not add while stop distance is thin and event risk is live at 8:30 AM ET", "better_entry": "$213-220 conditional add ONLY if NFP prints below 125K with cooling wages Friday morning — not before" },
+    { "ticker": "BTC/ETH",    "reason": "BTC ~$62K still below pre-war levels; ETH ~$1,740 tracking lower; persistent crypto risk-off is a cross-asset warning that the HOLD upgrade should not be extrapolated to high-beta risk assets", "better_entry": "BTC needs to reclaim $66K+ with VIX below 14 and Iran risk premium declining for a constructive crypto setup" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Closed $216.34 above the $215 unconditional stop through two sessions of AVGO-driven chip-sector pressure, confirming market isolation of the AVGO guidance-plateau narrative from NVDA's accelerated-computing platform (Vera Rubin, RTX Spark). Conditional add at $213-220 is authorized only if NFP prints below 125K with cooling wages.",
+      "entry": "Hold existing size; partial add $213-220 ONLY post-8:30 AM ET if NFP <125K with cooling wages",
+      "invalidation": "$215 daily close — exit entire position unconditionally regardless of macro conditions",
+      "conviction": "medium",
+      "horizon": "4-8 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SpaceX SPCX roadshow opens June 8 ($135/share, $1.77T valuation, $75B raise — largest IPO in history). Institutional holders will redeploy capital from liquid small and mid-cap positions into the offering June 8-12, creating systematic IWM selling pressure that overwhelms any near-term rate-relief tailwind from the 30Y sub-5.0% sequence.",
+      "entry": "$285-288 on a confirmed reversal session with above-average volume; do not initiate above $292; entry window Monday-Wednesday June 8-10",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "GLD",
+      "direction": "long",
+      "thesis": "Iran ceasefire MOU is 'mostly agreed' but unsigned by Trump; Iranian drones struck toward the Strait Thursday. Gold at ~$4,463 is fading the geopolitical risk premium moderately but retains tail-risk hedge value: a deal collapse or Hormuz incident spikes GLD toward $4,600+. Sized as a hedge, not a core position.",
+      "entry": "Current levels; stop $4,350 daily close",
+      "invalidation": "Three consecutive Brent closes below $90 (full structural de-escalation signal) removes the hedge rationale",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "Counter-argument: the HOLD upgrade rests on five conditions, all triggered in a single session (June 4) and one trading day old — each reversible within hours of a single data release. A hot NFP above 165K would void the 30Y sub-5.0% Day-2 sequence before the ink is dry, an outcome consistent with the underlying labor data stack (JOLTS 7.6M, ADP 122K, ISM Services Prices 71.3% — the highest reading since August 2022). The Iran ceasefire MOU carries the same structural fragility as every prior ceasefire moment since May; Iranian ballistic missiles struck Kuwait Thursday and Trump has not signed the 60-day extension. AVGO's two-session 15% AI revenue guidance-plateau repricing is the first systematic de-rating of AI infrastructure multiples in this cycle; if that template spreads to NVDA's late-July earnings, the framework's primary risk-on position becomes a liability timed directly into the SPCX $75B capital-drain event. Invalidation: if NFP prints above 165K AND the 30Y closes above 5.00% Friday, revert HOLD to STEP ASIDE immediately — close XLF, pause NVDA add, tighten NVDA stop to $218.",
+  "body_mdx": "data/briefings/markets/2026-06-05-morning.mdx"
+}
