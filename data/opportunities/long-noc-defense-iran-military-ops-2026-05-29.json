@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-05-29",
   "expires_at": "2026-08-15",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "defense",
     "geopolitics",
@@ -52,5 +52,11 @@
     "GBSD",
     "single-name"
   ],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-05",
+    "final_price": 534.60,
+    "return_pct": -0.4,
+    "outcome_label": "Stop triggered — daily close $534.60, below $535 stop",
+    "note": "Iran ceasefire MOU 'mostly agreed' per CNBC on June 4-5 is compressing the geopolitical premium in defense names. NOC closed at $534.60 on June 4 — one tick below the $535 daily-close stop established at creation. The fundamental thesis (B-21 full-rate production, GBSD milestone, Iran nuclear deterrence premium) remains structurally intact, but the stop was set specifically for the scenario where Iran MOU language advances toward formal agreement and Brent/defense stocks deflate the war premium. The $535 stop was triggered per rule on June 4 close."
+  }
 }

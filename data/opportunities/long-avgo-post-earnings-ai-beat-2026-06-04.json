@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-06-04",
   "expires_at": "2026-08-01",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["earnings", "tech", "AI", "semiconductors", "custom-silicon", "post-earnings", "buy-the-dip"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-05",
+    "final_price": 418.91,
+    "return_pct": -12.6,
+    "outcome_label": "Stop triggered — daily close $418.91, below $435 stop",
+    "note": "The same-session intraday recovery from -13% pre-market ($413) to $479.23 that triggered the long entry failed to hold into the June 4 close. AVGO closed at $418.91, decisively below the $435 daily-close stop. The recovery was a false floor — institutional sellers who panicked pre-market reloaded into the intraday bid. AVGO's AI revenue guidance plateau (FY2027 reiterated at >$100B rather than raised) proved to be structurally meaningful to the marginal buyer in size. Position stopped out in full on June 4 close per rule."
+  }
 }
