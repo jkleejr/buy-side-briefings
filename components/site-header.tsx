@@ -8,6 +8,7 @@ const NAV = [
   { href: "/tech", code: "TECH", label: "Tech" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
   { href: "/tldr", code: "TLDR", label: "TL;DR" },
+  { href: "/crypto-briefings", code: "CRYPTO", label: "Crypto" },
   { href: "/opportunities", code: "OPS", label: "Opportunities" },
   { href: "/digest", code: "WEEK", label: "Week" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },

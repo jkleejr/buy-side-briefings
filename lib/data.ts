@@ -123,6 +123,94 @@ export function getLatestMarketsVerdict(): MarketsVerdict | null {
   return all[0] ?? null;
 }
 
+// ---- Crypto briefings (data/verdicts/crypto-*.json) -----------------------
+// A parallel routine to markets, focused on BTC/ETH. Once-daily cadence
+// (window "daily"). Shares the verdict/conviction vocabulary but carries a
+// crypto-specific snapshot (BTC, ETH, total market cap, BTC dominance,
+// Fear & Greed) instead of the equities snapshot.
+
+export type CryptoSnapshotEntry = {
+  level: number;
+  change_pct?: number;
+  as_of?: string;
+};
+
+export type CryptoSnapshot = {
+  btc?: CryptoSnapshotEntry;
+  eth?: CryptoSnapshotEntry;
+  /** Total crypto market cap, in USD trillions. */
+  total_mcap?: CryptoSnapshotEntry;
+  /** BTC dominance, as a percentage. */
+  btc_dominance?: CryptoSnapshotEntry;
+  /** Crypto Fear & Greed Index, 0-100. */
+  fear_greed?: { value: number; label?: string; as_of?: string };
+};
+
+export type CryptoVerdict = {
+  routine: "crypto";
+  date: string;
+  window: "daily";
+  generated_at: string;
+  is_seed?: boolean;
+  verdict: {
+    code: VerdictCode;
+    emoji: string;
+    label: string;
+    conviction: "low" | "medium" | "high";
+    rationale_short: string;
+    supporting_data: SupportingPoint[];
+  };
+  snapshot: CryptoSnapshot;
+  regime_risk: RegimeIndicator[];
+  watchlist_mentions: WatchlistMention[];
+  dont_buy: DontBuy[];
+  trade_setups: TradeSetup[];
+  bear_case: string;
+  body_mdx: string;
+};
+
+export function getAllCryptoVerdicts(): CryptoVerdict[] {
+  const dir = path.join(DATA_DIR, "verdicts");
+  if (!fs.existsSync(dir)) return [];
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.startsWith("crypto-") && f.endsWith(".json"));
+  const verdicts = files
+    .map((f) => readJson<CryptoVerdict>(path.join(dir, f)))
+    .filter((v): v is CryptoVerdict => v !== null);
+  return verdicts.sort((a, b) => {
+    const t1 = `${b.date}-${b.window}`;
+    const t2 = `${a.date}-${a.window}`;
+    return t1.localeCompare(t2);
+  });
+}
+
+export function getLatestCryptoVerdict(): CryptoVerdict | null {
+  return getAllCryptoVerdicts()[0] ?? null;
+}
+
+/**
+ * Resolve the verdict a briefing's `verdict_ref` points to, dispatching on the
+ * routine prefix (e.g. "markets-..." vs "crypto-..."). Lets the generic
+ * briefing-detail page show the verdict header for either routine.
+ */
+export function getVerdictByRef(
+  ref: string,
+): MarketsVerdict | CryptoVerdict | null {
+  if (ref.startsWith("crypto-")) {
+    return (
+      getAllCryptoVerdicts().find(
+        (v) => `${v.routine}-${v.date}-${v.window}` === ref,
+      ) ?? null
+    );
+  }
+  return (
+    getAllMarketsVerdicts().find(
+      (v) => `${v.routine}-${v.date}-${v.window}` === ref,
+    ) ?? null
+  );
+}
+
 export function getAllBriefings(): BriefingMeta[] {
   const briefingsDir = path.join(DATA_DIR, "briefings");
   if (!fs.existsSync(briefingsDir)) return [];

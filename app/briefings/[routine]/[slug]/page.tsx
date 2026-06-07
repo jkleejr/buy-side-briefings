@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { getAllBriefings, getBriefing, getAllMarketsVerdicts } from "@/lib/data";
+import { getAllBriefings, getBriefing, getVerdictByRef } from "@/lib/data";
 import { getSpxDailyCloses } from "@/lib/markets";
 import { scoreVerdict, type ReturnWindow } from "@/lib/verdict-scoring";
 import {
@@ -98,16 +98,14 @@ export default async function BriefingPage({
   if (!briefing) notFound();
 
   const verdictRef = briefing.verdict_ref;
-  const verdict = verdictRef
-    ? getAllMarketsVerdicts().find(
-        (v) => `${v.routine}-${v.date}-${v.window}` === verdictRef,
-      )
-    : null;
+  const verdict = verdictRef ? getVerdictByRef(verdictRef) : null;
   const color = verdict ? verdictColor(verdict.verdict.code) : null;
 
-  // Only fetch SPX history if we have a verdict to score against.
-  const spxSeries = verdict ? await getSpxDailyCloses(9) : [];
-  const score = verdict ? scoreVerdict(verdict, spxSeries) : null;
+  // SPX scoring only applies to the markets routine; crypto verdicts carry a
+  // crypto snapshot and aren't graded against the S&P 500.
+  const scorable = verdict && verdict.routine === "markets" ? verdict : null;
+  const spxSeries = scorable ? await getSpxDailyCloses(9) : [];
+  const score = scorable ? scoreVerdict(scorable, spxSeries) : null;
 
   return (
     <article className="mx-auto max-w-3xl space-y-4">

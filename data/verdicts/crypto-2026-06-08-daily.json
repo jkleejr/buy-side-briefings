@@ -1,0 +1,78 @@
+{
+  "routine": "crypto",
+  "date": "2026-06-08",
+  "window": "daily",
+  "generated_at": "2026-06-08T13:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Capitulation Near $60K, but No Catalyst Until CPI; AI Is Draining Crypto",
+    "conviction": "medium",
+    "rationale_short": "Bitcoin is nearing $60,000 and Ethereum is approaching $1,700 after a brutal week that took the total crypto market cap down roughly 48% from its peak. The damage is macro, not crypto-specific: Friday's hot 172K jobs print pushed the 30Y back above 5.0% and delayed Fed-cut hopes, the US-Iran conflict is feeding the inflation fear, and capital is rotating from BTC into AI equities. Forced selling compounded it — a disclosed Strategy (MicroStrategy) bitcoin sale, >$3.2B in spot-ETF outflows, ~$7B in liquidations, and a Mt. Gox wallet transfer. STEP ASIDE at medium conviction: the weekend's ~$59,227 BTC low looks like capitulation, but there is no catalyst to buy before May CPI on June 10, and a hot print would confirm higher-for-longer and break $59K. The first technical signal worth respecting is an ETH reclaim of ~$1,674; until then, this is a knife, not a dip.",
+    "supporting_data": [
+      { "label": "Total crypto market cap has fallen ~48% from its 2026 peak; BTC is nearing $60,000 and ETH is approaching $1,700 — the downturn is attributed to the US-Iran conflict feeding inflation and delaying Fed cuts, plus rumors of Strategy (MicroStrategy) selling bitcoin", "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey" },
+      { "label": "Friday's NFP printed 172K vs 85K consensus, breaking the equity framework (SPX -2.64% to 7,383.74, VIX ~20.9, 30Y back above 5.0%); crypto fell hardest as the highest-beta risk asset", "url": "https://www.schwab.com/learn/story/stock-market-update-open" },
+      { "label": "Over the weekend BTC bottomed near ~$59,227 before steadying; ETH broke below $1,900 (down ~11% on the week); roughly $390B in crypto value was erased and ~$7B in leveraged positions liquidated", "url": "https://www.coindesk.com/" },
+      { "label": "Forced-selling overhang: a disclosed Strategy (MicroStrategy) bitcoin sale, more than $3.2B in spot-BTC-ETF outflows, and a large Mt. Gox wallet transfer — supply hitting a market with no fundamental anchor", "url": "https://www.coindesk.com/" },
+      { "label": "Constructive technical tell: a reclaim of resistance near $1,674 could start an ETH recovery phase; the long-term ETH outlook remains constructive, but a near-term catalyst is absent before CPI", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-5-2026-prices-continue-their-descent---5-reasons-why-113631165.html" },
+      { "label": "Next macro binary: May CPI on June 10 (consensus near 4.2% YoY headline) ahead of the Warsh FOMC June 16-17 — the print that decides whether the rate regime that broke crypto eases or hardens", "url": "https://www.investing.com/analysis/cpi-preview-will-sticky-inflation-derail-fed-cuts-and-the-2026-stock-rally-200674989" }
+    ]
+  },
+  "snapshot": {
+    "btc":           { "level": 60000, "change_pct": 1.3,  "as_of": "2026-06-08T13:00:00Z" },
+    "eth":           { "level": 1700,  "change_pct": 0.8,  "as_of": "2026-06-08T13:00:00Z" },
+    "total_mcap":    { "level": 2.20,  "change_pct": 1.0,  "as_of": "2026-06-08T13:00:00Z" },
+    "btc_dominance": { "level": 59.0,  "as_of": "2026-06-08T13:00:00Z" },
+    "fear_greed":    { "value": 18, "label": "Extreme Fear", "as_of": "2026-06-08T13:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "BTC Dominance",  "value": 59.0, "trigger_above": 62,   "unit": "%" },
+    { "name": "Fear & Greed",   "value": 18,   "trigger_below": 20,   "unit": "" },
+    { "name": "VIX",            "value": 20.9, "trigger_above": 18,   "unit": "" },
+    { "name": "DXY",            "value": 99.28,"trigger_above": 100,  "unit": "" },
+    { "name": "BTC vs $59K",    "value": 60000,"trigger_below": 59000,"unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "~$60,000 after a ~$59,227 weekend capitulation low — store-of-value bid failed as the dollar and yields rose and Strategy sold. No long before equities/yields stabilize; a reclaim of $66,000 on falling VIX is the earliest re-risk signal.", "sentiment": "negative" },
+    { "ticker": "ETH", "note": "~$1,700 — broke below $1,900, down ~11% on the week; higher-beta than BTC. The first technical signal is a reclaim of ~$1,674; below it, $1,500 is the next major support.", "sentiment": "negative" },
+    { "ticker": "MSTR", "note": "Strategy's disclosed bitcoin sale is the sentiment shock — the largest corporate BTC holder turning seller removes a structural bid; watch for confirmation of whether selling continues.", "sentiment": "negative" },
+    { "ticker": "COIN", "note": "Exchange/beta proxy — pressured by volume-down, price-down, and ETF outflows; not a place to be long in a de-risking tape.", "sentiment": "negative" },
+    { "ticker": "SOL", "note": "High-beta on BTC; if BTC loses $59K, alts fall harder. No entries until BTC stabilizes.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "BTC/ETH ahead of CPI", "reason": "With the 30Y above 5.0% and May CPI on June 10 unresolved, buying the capitulation before the print front-runs the catalyst that broke the trade; a hot CPI breaks $59K BTC", "better_entry": "Wait for CPI June 10 and a VIX back below 18; require BTC to reclaim $66,000 or ETH to reclaim $1,674 first" },
+    { "ticker": "Altcoins (SOL, XRP, etc.)", "reason": "Alts are higher-beta on BTC and fall faster in liquidation cascades; ~$7B was already liquidated this week", "better_entry": "Only after BTC bases and dominance rolls over from extreme levels" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Cash / stablecoins",
+      "direction": "hedge",
+      "thesis": "Crypto fell ~48% from its peak on a macro break it cannot fight: higher yields, a firm dollar, delayed Fed cuts, and forced selling. With CPI June 10 the next catalyst and no fundamental anchor under price, the highest-expectancy posture is sidelined capital, ready to deploy on confirmation.",
+      "entry": "Hold cash/stables; deploy only after CPI with VIX below 18 and BTC reclaiming $66,000",
+      "invalidation": "A cool CPI + BTC reclaim of $66,000 reopens a starter long",
+      "conviction": "medium",
+      "horizon": "days"
+    },
+    {
+      "asset": "ETH",
+      "direction": "long",
+      "thesis": "ETH near $1,700 is washed out (-11% on the week) and a reclaim of the ~$1,674 resistance is the cleanest technical trigger for a recovery phase; the long-term platform thesis is intact. This is a level-defined starter, not a conviction add, given the hostile macro.",
+      "entry": "Starter only on a daily close back above $1,674 with BTC holding $59K; add on $1,750 reclaim",
+      "invalidation": "Daily close below $1,620 — stand aside; $1,500 is the next support",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "BTC",
+      "direction": "hedge",
+      "thesis": "BTC's break of its store-of-value bid while the dollar rose confirms it is trading as high-beta risk, not a haven. Until the macro regime turns, rallies are to be faded near resistance rather than chased.",
+      "entry": "No long below $66,000; treat $66-68K as resistance to fade if reached before CPI",
+      "invalidation": "Two daily closes above $66,000 on falling VIX flips the near-term bias constructive",
+      "conviction": "low",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "The uncomfortable truth in a ~48%-from-peak drawdown is that crypto has no fundamentals to defend the price — it is pure supply, demand, and narrative, and all three turned at once. The macro that broke it (a hot labor market, the 30Y back above 5.0%, an Iran conflict feeding inflation and delaying Fed cuts) is not resolved, and the supply shock is structural: the largest corporate holder is selling, spot-ETF outflows exceed $3.2B, and a Mt. Gox transfer hangs over the bid. Capital is actively rotating out of bitcoin into AI equities, so even a risk-on bounce may not accrue to crypto. Invalidation level: a hot May CPI on June 10 with the 30Y above 5.05% breaks BTC's $59K capitulation low and targets $52-55K; only a cool CPI with BTC reclaiming $66,000 and VIX below 18 restores a constructive setup.",
+  "body_mdx": "data/briefings/crypto/2026-06-08-daily.mdx"
+}

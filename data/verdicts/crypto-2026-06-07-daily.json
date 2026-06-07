@@ -1,0 +1,66 @@
+{
+  "routine": "crypto",
+  "date": "2026-06-07",
+  "window": "daily",
+  "generated_at": "2026-06-07T18:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Stabilizing Above the Capitulation Low, but No Catalyst Before CPI",
+    "conviction": "medium",
+    "rationale_short": "After Saturday's ~$59,227 capitulation, BTC steadied back toward ~$60,500 and ETH held near ~$1,710 on a quieter Sunday — the forced-selling cascade has paused, but nothing has changed the cause. The macro that broke the trade (a 30Y above 5.0%, a firm dollar, delayed Fed cuts, an active Iran conflict) is unresolved, Strategy's selling and ETF outflows remain an overhang, and total market cap is still ~48% off its peak. The verdict steps back up from bearish to STEP ASIDE: the immediate liquidation risk has eased, but with May CPI on June 10 the next real catalyst and equities reopening Monday into the same hostile regime, this is a stabilization to watch, not to buy. The first constructive triggers are an ETH reclaim of ~$1,674 and a BTC reclaim of $66,000 on falling VIX.",
+    "supporting_data": [
+      { "label": "BTC steadied toward ~$60,500 after Saturday's ~$59,227 low; ETH held near ~$1,710 — the liquidation cascade paused on a quieter weekend session", "url": "https://www.coindesk.com/" },
+      { "label": "Total crypto market cap remains ~48% off its 2026 peak; the cause (US-Iran conflict feeding inflation, delayed Fed cuts, Strategy selling) is unresolved", "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey" },
+      { "label": "Macro overhang into Monday: equities broke Friday (SPX 7,383.74, VIX ~20.9, 30Y above 5.0%) and reopen Monday into the same regime, with the US and Iran still trading strikes near Hormuz", "url": "https://www.cnn.com/2026/06/06/world/live-news/iran-war-trump-israel-lebanon" },
+      { "label": "The constructive technical trigger is an ETH reclaim of ~$1,674; the long-term ETH outlook remains constructive, but a near-term catalyst is absent until May CPI on June 10", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-5-2026-prices-continue-their-descent---5-reasons-why-113631165.html" }
+    ]
+  },
+  "snapshot": {
+    "btc":           { "level": 60500, "change_pct": 1.7,  "as_of": "2026-06-07T18:00:00Z" },
+    "eth":           { "level": 1710,  "change_pct": 0.0,  "as_of": "2026-06-07T18:00:00Z" },
+    "total_mcap":    { "level": 2.16,  "change_pct": 1.8,  "as_of": "2026-06-07T18:00:00Z" },
+    "btc_dominance": { "level": 59.2,  "as_of": "2026-06-07T18:00:00Z" },
+    "fear_greed":    { "value": 17, "label": "Extreme Fear", "as_of": "2026-06-07T18:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "BTC Dominance",  "value": 59.2, "trigger_above": 62,   "unit": "%" },
+    { "name": "Fear & Greed",   "value": 17,   "trigger_below": 20,   "unit": "" },
+    { "name": "VIX",            "value": 20.9, "trigger_above": 18,   "unit": "" },
+    { "name": "DXY",            "value": 99.28,"trigger_above": 100,  "unit": "" },
+    { "name": "BTC vs $59K",    "value": 60500,"trigger_below": 59000,"unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "~$60,500, holding above the $59,227 low — stabilization, not a reversal. A reclaim of $66,000 on falling VIX is the first re-risk signal; a loss of $59K reopens $52-55K.", "sentiment": "neutral" },
+    { "ticker": "ETH", "note": "~$1,710 — coiling under the ~$1,674 reclaim level that would start a recovery phase; the cleanest level-defined trigger in crypto right now.", "sentiment": "neutral" },
+    { "ticker": "MSTR", "note": "The Strategy-selling question hangs over the bid; watch Monday for any disclosure of continued or halted selling.", "sentiment": "negative" },
+    { "ticker": "SOL", "note": "Stabilizing with BTC but still the high-beta loser if the low breaks; no entries until a base confirms.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "BTC/ETH on the bounce", "reason": "A pause in forced selling is not a catalyst; CPI June 10 and Monday's equity reopen into a broken regime can re-test the low", "better_entry": "Require ETH > $1,674 or BTC > $66,000 on falling VIX, ideally after a cool CPI" },
+    { "ticker": "Chasing a Sunday low-volume rally", "reason": "Weekend bounces on thin liquidity frequently fade when equities reopen and real flow returns", "better_entry": "Let Monday's session and the CPI print confirm direction" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Cash / stablecoins",
+      "direction": "hedge",
+      "thesis": "The liquidation risk has eased but the cause has not. With CPI June 10 the next catalyst and equities reopening into the same hostile regime, sidelined capital ready to deploy on a confirmed reclaim is the right posture.",
+      "entry": "Hold cash/stables; deploy on ETH > $1,674 or BTC > $66,000 with VIX below 18",
+      "invalidation": "A cool CPI + reclaim of those levels reopens a starter long",
+      "conviction": "medium",
+      "horizon": "days"
+    },
+    {
+      "asset": "ETH",
+      "direction": "long",
+      "thesis": "ETH is coiling just beneath ~$1,674, the resistance whose reclaim would mark the first technical sign of a recovery phase. A level-defined starter with a tight invalidation is the cleanest way to participate if the bottom is forming.",
+      "entry": "Starter on a daily close above $1,674 with BTC holding $59K; add on $1,750",
+      "invalidation": "Daily close below $1,620 — stand aside; $1,500 next",
+      "conviction": "low",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "A weekend stabilization above the capitulation low is the most seductive trap in a bear market — it invites dip-buyers right before the catalyst that decides direction. Nothing that caused the ~48% drawdown has changed: the 30Y is above 5.0%, the dollar is firm, the Iran conflict is live, and Strategy's selling and ETF outflows remain an overhang. Monday reopens equities into the same broken regime, and CPI lands Wednesday. Invalidation: a daily close below $59,000 BTC confirms the next leg toward $52-55K; only an ETH reclaim of $1,674 and a BTC reclaim of $66,000 on falling VIX — ideally after a cool CPI — signal the low is in.",
+  "body_mdx": "data/briefings/crypto/2026-06-07-daily.mdx"
+}

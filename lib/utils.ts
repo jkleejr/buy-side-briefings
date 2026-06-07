@@ -89,6 +89,7 @@ export function formatLevel(n: number): string {
 
 const ROUTINE_FULL: Record<string, string> = {
   markets: "Markets Briefing",
+  crypto: "Crypto Briefing",
   politics: "Politics Briefing",
   quote: "Quote of the Day",
   "app-ideas": "App Ideas",
@@ -100,6 +101,7 @@ const WINDOW_LABEL: Record<string, string> = {
   morning: "Morning",
   afternoon: "Afternoon",
   night: "Evening",
+  daily: "Daily",
 };
 
 /**

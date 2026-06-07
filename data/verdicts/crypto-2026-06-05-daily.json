@@ -1,0 +1,66 @@
+{
+  "routine": "crypto",
+  "date": "2026-06-05",
+  "window": "daily",
+  "generated_at": "2026-06-05T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Hot Jobs Break Risk; Crypto Leads the Decline as the Highest-Beta Asset",
+    "conviction": "medium",
+    "rationale_short": "The inaugural daily crypto briefing lands on a break day. May payrolls printed 172K versus an 85K consensus, the 30Y pushed back above 5.0%, and US equities cracked (SPX -2.64%, VIX +34% to ~20.9). Crypto did what high-beta risk does into a macro shock — it fell hardest: BTC slid from ~$63,800 to ~$62,000 and ETH from ~$1,768 to ~$1,666 intraday, both at their lowest of the week. With the dollar firm and Fed-cut hopes pushed out, there is no bid to lean on. STEP ASIDE at medium conviction: this is a macro-driven knife, not a dip, and the next real catalyst is May CPI on June 10.",
+    "supporting_data": [
+      { "label": "BTC opened ~$63,812 and fell to ~$62,046 by mid-morning; ETH opened ~$1,768 and fell to ~$1,666 — both the week's lowest, continuing a multi-day descent", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-5-2026-prices-continue-their-descent---5-reasons-why-113631165.html" },
+      { "label": "May NFP 172K vs 85K consensus broke the equity framework — SPX -2.64% to 7,383.74, VIX +34% to ~20.9, 30Y back above 5.0%, the semis' worst day since March 2020", "url": "https://www.schwab.com/learn/story/stock-market-update-open" },
+      { "label": "BTC had already slid below $66,000 earlier in the week even as global stocks hit records — the divergence that warned crypto was the leading edge of the risk-off", "url": "https://www.coindesk.com/" },
+      { "label": "A firm dollar (DXY ~99.3) and the repricing of higher-for-longer removed the store-of-value bid; BTC traded as leveraged risk, not digital gold", "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey" }
+    ]
+  },
+  "snapshot": {
+    "btc":           { "level": 62046, "change_pct": -3.5, "as_of": "2026-06-05T20:00:00Z" },
+    "eth":           { "level": 1666,  "change_pct": -5.8, "as_of": "2026-06-05T20:00:00Z" },
+    "total_mcap":    { "level": 2.30,  "change_pct": -4.0, "as_of": "2026-06-05T20:00:00Z" },
+    "btc_dominance": { "level": 58.5,  "as_of": "2026-06-05T20:00:00Z" },
+    "fear_greed":    { "value": 22, "label": "Extreme Fear", "as_of": "2026-06-05T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "BTC Dominance",  "value": 58.5, "trigger_above": 62,   "unit": "%" },
+    { "name": "Fear & Greed",   "value": 22,   "trigger_below": 20,   "unit": "" },
+    { "name": "VIX",            "value": 20.9, "trigger_above": 18,   "unit": "" },
+    { "name": "DXY",            "value": 99.28,"trigger_above": 100,  "unit": "" },
+    { "name": "BTC vs $60K",    "value": 62046,"trigger_below": 60000,"unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "~$62,000, the week's low — already below $66K before the jobs print, confirming crypto led the risk-off. No long while VIX is above 18 and the dollar is firm.", "sentiment": "negative" },
+    { "ticker": "ETH", "note": "~$1,666 (-5.8%) — higher-beta, falling faster than BTC; $1,600 is the next support to watch.", "sentiment": "negative" },
+    { "ticker": "COIN", "note": "Equity-beta proxy down with the Nasdaq's ~4% drop; no entries in a breaking tape.", "sentiment": "negative" },
+    { "ticker": "SOL", "note": "High-beta alt; leads BTC lower in liquidation episodes. Avoid.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "BTC/ETH on the break", "reason": "A macro break driven by a hot labor print and a 30Y above 5.0% has no quick reversal; buying the first red day catches the knife", "better_entry": "Let the weekend and CPI June 10 clear; require VIX below 18 first" },
+    { "ticker": "Leveraged longs", "reason": "Volatility spiked and liquidations are cascading; leverage into a falling, headline-driven tape is how accounts get wiped", "better_entry": "Spot only, and only after a base forms" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Cash / stablecoins",
+      "direction": "hedge",
+      "thesis": "A hot jobs print broke the rate regime that crypto needs to stay bid. With no fundamental anchor and the dollar firm, sidelined capital is the right posture into the weekend and CPI.",
+      "entry": "Hold cash/stables; reassess after CPI June 10",
+      "invalidation": "VIX below 18 with BTC reclaiming $66,000",
+      "conviction": "medium",
+      "horizon": "days"
+    },
+    {
+      "asset": "BTC",
+      "direction": "hedge",
+      "thesis": "BTC trading as leveraged risk (falling while the dollar rises) means rallies are to be faded until the macro turns. The $60,000 round number is the line that decides whether the slide accelerates.",
+      "entry": "No long above $66K resistance; watch $60,000 as the key support into the weekend",
+      "invalidation": "Daily close below $60,000 opens the high-$50Ks",
+      "conviction": "low",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "Crypto entered Friday already weakening beneath record equities, and the hot jobs print removed any doubt: with the 30Y back above 5.0% and the dollar firm, the highest-beta risk asset has no support and no valuation floor to fall back on. A weekend of thin liquidity plus an unresolved Iran conflict is the wrong backdrop to buy a first red day. Invalidation: a daily close below $60,000 BTC opens the high-$50Ks; only VIX back below 18 with a $66,000 reclaim restores a constructive setup.",
+  "body_mdx": "data/briefings/crypto/2026-06-05-daily.mdx"
+}

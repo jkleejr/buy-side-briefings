@@ -35,6 +35,7 @@ const CODE_LABEL: Record<string, string> = {
 
 const ROUTINE_LABEL: Record<string, string> = {
   markets: "Markets",
+  crypto: "Crypto",
   politics: "Politics",
   quote: "Quote",
   "pre-earnings": "Pre-Earnings",

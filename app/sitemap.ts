@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/track-record",
     "/watchlist",
     "/crypto",
+    "/crypto-briefings",
     "/metals",
     "/indices",
     "/tech",

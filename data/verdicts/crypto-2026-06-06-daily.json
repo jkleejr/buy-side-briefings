@@ -1,0 +1,66 @@
+{
+  "routine": "crypto",
+  "date": "2026-06-06",
+  "window": "daily",
+  "generated_at": "2026-06-06T18:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "bearish",
+    "emoji": "🔴",
+    "label": "BEARISH — Weekend Capitulation: BTC Tags ~$59K, ~$390B Erased, Strategy Turns Seller",
+    "conviction": "medium",
+    "rationale_short": "The Friday break became a weekend capitulation. BTC tagged a low near ~$59,227 and ETH broke below $1,900, extending crypto's weekly decline past 11% as roughly $390B in market value was erased and ~$7B in leveraged positions were liquidated. The selling is now structural, not just macro: Strategy (MicroStrategy) disclosed its first bitcoin sale, spot-BTC-ETF outflows exceeded $3.2B, and a Mt. Gox wallet transfer added supply overhang. With equities closed and the US and Iran trading strikes near Hormuz, there is no stabilizing bid this weekend. BEARISH at medium conviction — actively de-risked, not bottom-fishing — until forced selling exhausts and the macro (CPI June 10) clears.",
+    "supporting_data": [
+      { "label": "BTC bottomed near ~$59,227 over the weekend before steadying; ETH broke below $1,900, lifting the weekly decline past 11%; roughly $390B in crypto value erased and ~$7B in leveraged positions liquidated", "url": "https://www.coindesk.com/" },
+      { "label": "Structural supply shock: Strategy (MicroStrategy) disclosed its first bitcoin sale — the largest corporate holder turning seller — alongside >$3.2B in spot-BTC-ETF outflows and a Mt. Gox wallet transfer", "url": "https://www.coindesk.com/" },
+      { "label": "Macro backdrop hostile and worsening: equities broke Friday (SPX -2.64%, VIX ~20.9, 30Y above 5.0%), and over the weekend the US and Iran exchanged strikes near the Strait of Hormuz, straining the ceasefire", "url": "https://www.cnn.com/2026/06/06/world/live-news/iran-war-trump-israel-lebanon" },
+      { "label": "Total crypto market cap is now down roughly 48% from its 2026 peak — a drawdown with no valuation floor to defend, set by supply, demand, and narrative alone", "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey" }
+    ]
+  },
+  "snapshot": {
+    "btc":           { "level": 59500, "change_pct": -4.0, "as_of": "2026-06-06T18:00:00Z" },
+    "eth":           { "level": 1710,  "change_pct": -2.5, "as_of": "2026-06-06T18:00:00Z" },
+    "total_mcap":    { "level": 2.12,  "change_pct": -3.5, "as_of": "2026-06-06T18:00:00Z" },
+    "btc_dominance": { "level": 59.0,  "as_of": "2026-06-06T18:00:00Z" },
+    "fear_greed":    { "value": 15, "label": "Extreme Fear", "as_of": "2026-06-06T18:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "BTC Dominance",  "value": 59.0, "trigger_above": 62,   "unit": "%" },
+    { "name": "Fear & Greed",   "value": 15,   "trigger_below": 20,   "unit": "" },
+    { "name": "VIX",            "value": 20.9, "trigger_above": 18,   "unit": "" },
+    { "name": "DXY",            "value": 99.28,"trigger_above": 100,  "unit": "" },
+    { "name": "BTC vs $59K",    "value": 59500,"trigger_below": 59000,"unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "Tagged ~$59,227 — capitulation territory, but with Strategy selling and ETF outflows the bid is structurally weaker. A close below $59K opens $52-55K. No long.", "sentiment": "negative" },
+    { "ticker": "ETH", "note": "Broke below $1,900 (~$1,710), -11% on the week; $1,674 is the line that must reclaim before any recovery; below it, $1,500.", "sentiment": "negative" },
+    { "ticker": "MSTR", "note": "Disclosed its first bitcoin sale — the most important single development: the largest corporate buyer is now a seller, removing a structural bid.", "sentiment": "negative" },
+    { "ticker": "SOL", "note": "Down hard in the liquidation cascade; alts always worse in capitulation. Avoid until BTC bases.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "BTC/ETH into the capitulation", "reason": "Forced selling (Strategy, ETF outflows, liquidations) plus a weekend Iran escalation means the supply overhang is not done; capitulation lows are often re-tested", "better_entry": "Wait for forced selling to exhaust and CPI June 10; require a reclaim of $66K BTC / $1,674 ETH" },
+    { "ticker": "Altcoins", "reason": "Liquidation cascades hit alts hardest; ~$7B already wiped", "better_entry": "Only after BTC stabilizes and dominance peaks" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Cash / stablecoins",
+      "direction": "hedge",
+      "thesis": "A structural supply shock (Strategy selling, $3.2B ETF outflows, Mt. Gox) on top of a macro break and a weekend Iran escalation is a capitulation to respect from the sidelines, not to buy into. Preserve capital until forced selling clears.",
+      "entry": "Hold cash/stables; no new risk this weekend",
+      "invalidation": "Forced-selling exhaustion + BTC reclaim of $66,000 on a cool CPI",
+      "conviction": "medium",
+      "horizon": "days"
+    },
+    {
+      "asset": "BTC",
+      "direction": "short",
+      "thesis": "Below the $59K capitulation low, the next air pocket is $52-55K. With the largest corporate holder selling and ETF outflows accelerating, the path of least resistance stays down until the macro turns. Manage tightly given how stretched the move already is.",
+      "entry": "Tactical short/hedge only on a daily close below $59,000; cover into $54-55K",
+      "invalidation": "Reclaim of $62,000 on rising volume — cover; capitulation may be in",
+      "conviction": "low",
+      "horizon": "days"
+    }
+  ],
+  "bear_case": "This is the rare moment when the bear case is the base case: a ~48%-from-peak market with no valuation floor is now facing forced selling from its single largest corporate holder, accelerating ETF outflows, and a Mt. Gox overhang, all while the macro that caused the break (higher-for-longer rates, an Iran conflict feeding inflation) is unresolved and escalating. Capitulation lows tend to be re-tested before they hold. Invalidation: a reclaim of $62,000 on rising volume suggests the low is in; a daily close below $59,000 confirms the next leg toward $52-55K.",
+  "body_mdx": "data/briefings/crypto/2026-06-06-daily.mdx"
+}
