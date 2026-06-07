@@ -1,0 +1,78 @@
+{
+  "routine": "markets",
+  "date": "2026-06-07",
+  "window": "morning",
+  "generated_at": "2026-06-07T16:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Week-Ahead: Into a Triple Gauntlet — SPCX Supply, CPI June 10, Iran — Before Warsh",
+    "conviction": "medium",
+    "rationale_short": "Markets are closed (Sunday). This is a forward-looking week-ahead briefing positioning into the June 8 open, after a week that broke the framework (Friday NFP 172K, SPX through 7,460, VIX ~20.9) and a weekend of US-Iran strikes near Hormuz. The defensive posture stays STEP ASIDE because the week front-loads three sequential risks into the most hostile regime of the series: the SPCX roadshow opens Monday (a ~$75B liquidity drain at a fixed $135), May CPI lands Wednesday June 10 as the decisive inflation binary, and the Iran escalation is an open-ended oil/geopolitical tail — all before the Warsh FOMC on June 16-17. The plan is capital preservation: hold cash, keep the IWM short into the SPCX drain, hedge the Iran oil tail, and let CPI — not the dip — decide when to re-engage.",
+    "supporting_data": [
+      { "label": "SPCX roadshow opens Monday June 8 — SpaceX set a fixed $135/share for 556.6M shares, ~$75B raise at a ~$1.75-1.77T valuation (the largest IPO in history); pricing June 11, Nasdaq debut June 12; the liquidity drain begins this week", "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html" },
+      { "label": "May CPI releases Wednesday June 10 — consensus near 4.2% YoY headline with a milder core (+0.2% m/m vs April's +0.4%); a hot print confirms the higher-for-longer break and makes the June 17 Warsh FOMC a live hike; the S&P is vulnerable to a CPI surprise after Friday's break", "url": "https://www.investing.com/analysis/cpi-preview-will-sticky-inflation-derail-fed-cuts-and-the-2026-stock-rally-200674989" },
+      { "label": "Iran tail open-ended: US and Iran exchanged strikes near Hormuz over the weekend, with Iran calling the US action a 'flagrant violation' of the ceasefire; a Pakistani-mediated channel is deadlocked over $24B in frozen Iranian assets — an unresolved oil/geopolitical risk into the week", "url": "https://www.cnn.com/2026/06/06/world/live-news/iran-war-trump-israel-lebanon" },
+      { "label": "Last close (Fri June 5): SPX 7,383.74 (-2.64%, below the 7,460 floor), Nasdaq 25,709.43 (-4.18%), VIX ~20.9, 30Y 5.007%, 10Y 4.544%; semis worst since March 2020", "url": "https://www.schwab.com/learn/story/stock-market-update-open" },
+      { "label": "Crypto remains broken into the week: BTC bottomed near ~$59,227 and ETH below $1,900 over the weekend; ~$390B erased — cross-asset confirmation that risk appetite has reset, not rotated", "url": "https://www.coindesk.com/" },
+      { "label": "Warsh FOMC June 16-17 is the week's terminal event — after the hot jobs print, the 10Y at 4.54% reflects concern the Fed must tame a hot economy; CPI June 10 sets the tone for whether June 17 is a hawkish hold or a live hike", "url": "https://yelza.com/research/economic-calendar-june-8-12-2026" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7383.74,  "change_pct": -2.64, "as_of": "2026-06-05T20:00:00Z" },
+    "nasdaq": { "level": 25709.43, "change_pct": -4.18, "as_of": "2026-06-05T20:00:00Z" },
+    "vix":    { "level": 20.9,     "change_pct": 33.97, "as_of": "2026-06-05T20:00:00Z" },
+    "ust10y": { "level": 4.544,    "change_bps": 6,     "as_of": "2026-06-05T20:00:00Z" },
+    "dxy":    { "level": 99.28,    "change_pct": -0.16, "as_of": "2026-06-05T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",              "value": 20.9,  "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",        "value": 5.007, "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",              "value": 99.28, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460",     "value": 7384,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",      "value": 91.7,  "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "IWM",  "note": "The week's cleanest expression: the SPCX roadshow opens Monday (~$75B at fixed $135) draining liquid small-cap capital while the rate break hits leveraged balance sheets. Hold the short; manage against a CPI-relief bounce.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "Flat after the $215 stop Friday (low $206.64); the AI product story (Vera Rubin) is intact but the rate regime is hostile. No re-entry until CPI June 10 and a 30Y back below 5.0%; first re-entry watch is $200-206 only on a cool CPI.", "sentiment": "neutral" },
+    { "ticker": "SPCX", "note": "Debuts June 12 at a fixed $135 (~$1.75T). The supply itself is the bearish catalyst for the broad tape this week, not a recommendation to buy the IPO into a risk-off regime.", "sentiment": "neutral" },
+    { "ticker": "XLE",  "note": "≤25% short stub — the Iran escalation makes this a wrong-way hedge; cover above $97. Oil is now an upside-risk asset, not a short, until the conflict de-escalates.", "sentiment": "neutral" },
+    { "ticker": "BTC",  "note": "~$59-62k — broken; institutional outflows persist. A reclaim of $66,000 on a cool CPI and falling VIX is the earliest re-risk signal; no long before that.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "Index / semis dip ahead of CPI", "reason": "With three regime indicators breached and CPI June 10 unresolved, dip-buying before the print front-runs the week's decisive binary into a hostile tape", "better_entry": "Re-engage only after a cool CPI (core ≤0.2% m/m) with VIX below 18 and the 30Y below 5.0%" },
+    { "ticker": "SPCX IPO at $135", "reason": "Buying the largest IPO in history into a risk-off regime with a ~$75B supply overhang and CPI two days before pricing is poor risk/reward; first-day IPO pops fade fast in hostile tapes", "better_entry": "Let it trade and base after June 12; the supply event is a macro headwind to fade via IWM, not an entry" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Cash / T-bills",
+      "direction": "hedge",
+      "thesis": "The week stacks three sequential risks — SPCX supply (Mon), CPI (Wed), and an open Iran tail — into the most hostile regime of the series, all before the Warsh FOMC. Reduced gross and elevated cash is the highest-expectancy posture until CPI resolves the rate question.",
+      "entry": "Hold elevated cash; deploy only after CPI June 10 with VIX below 18 and the 30Y below 5.0%",
+      "invalidation": "A cool CPI that reclaims those levels reopens selective longs (NVDA $200-206, GOOGL on a base)",
+      "conviction": "medium",
+      "horizon": "days"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "The SPCX roadshow (June 8, ~$75B at a fixed $135) is the structural small-cap liquidity drain, and the post-NFP rate break is the macro headwind — both align against leveraged small caps into the week. The short is the cleanest way to express the supply shock.",
+      "entry": "Hold/initiate $285-288; add on a failed bounce into CPI; manage against a cool-CPI relief rally",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "Oil upside (defined risk)",
+      "direction": "long_vol",
+      "thesis": "The weekend US-Iran strikes near Hormuz reopened the energy tail. With talks deadlocked and Energy Secretary Wright tying lower fuel prices to an Iran resolution, a further escalation gaps Brent toward $97-100. Express via defined-risk call spreads to hedge the inflation/oil tail that would deepen the equity break.",
+      "entry": "Small call-spread position; size for a hedge, not a core view, given two-way headline risk",
+      "invalidation": "An Iran de-escalation / asset-release deal sends Brent back toward $85-88 — exit",
+      "conviction": "low",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "The week-ahead risk is that the market has to absorb three sequential blows before it can even reach the Warsh FOMC, and it enters them already broken. Monday brings the start of a ~$75B SPCX liquidity drain; Wednesday brings a CPI that consensus already sees rising toward 4.2% headline; and the Iran conflict — now featuring active US-Iran strikes near Hormuz — is an open-ended oil tail that directly threatens the inflation print and the Fed's hand. The S&P enters this gauntlet below its 7,460 floor with the VIX above 20, the 30Y back above 5.0%, the semis fresh off their worst day since March 2020, and crypto down ~$390B — a tape with no cushion and no clear catalyst to stop the bleed before CPI. If CPI runs hot on June 10, the June 17 FOMC becomes a live hike, the 30Y targets 5.10-5.20%, and SPX 7,250 is the next real support. Invalidation level: a cool CPI (core ≤0.2% m/m) with the 30Y back below 5.0% and VIX below 18 restores a HOLD and reopens NVDA ($200-206) and selective longs; a hot CPI with the 30Y above 5.05%, or an SPX close below 7,300, converts STEP ASIDE to bearish — stay defensive and let the FOMC clear before re-risking.",
+  "body_mdx": "data/briefings/markets/2026-06-07-morning.mdx"
+}
