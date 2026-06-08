@@ -3,7 +3,7 @@ import type { AssetDaily, DayWinner, TradeAction } from "@/lib/asset-daily";
 import { cn, formatLevel, formatPct } from "@/lib/utils";
 import Panel from "./panel";
 
-const HREF: Record<string, string> = { nvda: "/nvidia", btc: "/bitcoin" };
+const HREF: Record<string, string> = { nvda: "/nvidia", btc: "/bitcoin", skhynix: "/skhynix" };
 
 const WINNER: Record<DayWinner, { emoji: string; label: string; text: string }> = {
   bulls: { emoji: "🐂", label: "Bulls", text: "text-[var(--up)]" },
@@ -51,7 +51,7 @@ function CallCard({ d }: { d: AssetDaily }) {
 
       <div className="mt-1 flex items-baseline gap-2 font-mono">
         <span className="text-[15px] font-bold tabular-nums text-[var(--foreground)]">
-          ${formatLevel(d.snapshot.price)}
+          {d.currency_symbol ?? "$"}{formatLevel(d.snapshot.price)}
         </span>
         <span className={cn("text-[11px] font-semibold", changeTone)}>{formatPct(change)}</span>
         <span className={cn("ml-auto text-[10px] uppercase tracking-widest", win.text)}>
@@ -71,10 +71,10 @@ export default function AssetCallsPanel({ calls }: { calls: AssetDaily[] }) {
   return (
     <Panel
       code="CALLS"
-      title="Today's Calls · NVDA + BTC"
-      learn="The standing buy/hold/sell decision and who-made-money-today read for the two single-asset desks. Click through for the full daily dossier — positioning, news, outlook, levels, and catalysts."
+      title="Today's Calls · Asset Desks"
+      learn="The standing buy/hold/sell decision and who-made-money-today read for each single-asset desk. Click through for the full daily dossier — positioning, news, outlook, levels, and catalysts."
     >
-      <div className="grid grid-cols-1 gap-1 p-2 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-1 p-2 sm:grid-cols-2 lg:grid-cols-3">
         {calls.map((d) => (
           <CallCard key={d.asset} d={d} />
         ))}

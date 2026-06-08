@@ -19,12 +19,33 @@ import Panel from "@/components/panel";
 
 export const revalidate = 300;
 
+// Full-width labeled divider that groups the dashboard into scannable sections.
+// Terminal-styled (amber mono label + hairline rule); doubles as a clear
+// section break when panels stack into a single column on mobile.
+function SectionLabel({ title, note }: { title: string; note?: string }) {
+  return (
+    <div className="flex items-center gap-2 px-0.5 pt-2 pb-0.5 lg:col-span-12">
+      <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
+        {title}
+      </span>
+      {note && (
+        <span className="hidden font-mono text-[10px] tracking-wide text-[var(--dim)] sm:inline">
+          · {note}
+        </span>
+      )}
+      <span className="ml-1 h-px flex-1 bg-[var(--border)]" />
+    </div>
+  );
+}
+
 export default function Home() {
   const verdict = getLatestMarketsVerdict();
   const briefings = getAllBriefings();
-  const assetCalls = [getLatestAssetDaily("nvda"), getLatestAssetDaily("btc")].filter(
-    (d): d is NonNullable<typeof d> => d !== null,
-  );
+  const assetCalls = [
+    getLatestAssetDaily("nvda"),
+    getLatestAssetDaily("btc"),
+    getLatestAssetDaily("skhynix"),
+  ].filter((d): d is NonNullable<typeof d> => d !== null);
 
   return (
     <div className="space-y-1">
@@ -36,7 +57,11 @@ export default function Home() {
       )}
 
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
-        {/* Row 1 */}
+        {/* ========================= THE CALL ========================= */}
+        {/* Decision-critical, top of the page: the verdict, today's asset
+            buy/hold/sell calls, the markets snapshot, and live crypto. */}
+        <SectionLabel title="The Call" note="latest verdict & today's decisions" />
+
         {verdict ? (
           <div className="lg:col-span-5">
             <VerdictCard verdict={verdict} />
@@ -59,16 +84,18 @@ export default function Home() {
           <CryptoPanel />
         </div>
 
-        {/* Row 1.5 — single-asset daily calls (NVDA + BTC): the buy/hold/sell
-            and who-won read, linking to the full /nvidia and /bitcoin dossiers */}
+        {/* Today's single-asset desks (NVDA · BTC · SK Hynix) — the
+            buy/hold/sell + who-won read, linking to each full dossier. */}
         {assetCalls.length > 0 && (
           <div className="lg:col-span-12">
             <AssetCallsPanel calls={assetCalls} />
           </div>
         )}
 
-        {/* Row 2 — SPY only on the home page; QQQ + IWM live on /indices,
-            tech stocks on /tech (linked from the nav). */}
+        {/* ========================= MARKETS ========================= */}
+        <SectionLabel title="Markets" note="equities, metals & overnight sessions" />
+
+        {/* SPY only on the home page; QQQ + IWM live on /indices, tech on /tech. */}
         <div className="lg:col-span-9">
           <UsIndicesPanel
             assets={[
@@ -82,23 +109,16 @@ export default function Home() {
         <div className="lg:col-span-3">
           <MetalsPanel />
         </div>
-
-        {/* Row 3 — US breadth & risk internals (the 6 numbers a desk trader scans first) */}
-        <div className="lg:col-span-12">
-          <UsPulsePanel />
-        </div>
-
-        {/* Row 4 — Week-ahead calendar: upcoming earnings + macro releases */}
-        <div className="lg:col-span-12">
-          <CalendarPanel />
-        </div>
-
-        {/* Row 5 — Global markets (overnight & European sessions) */}
         <div className="lg:col-span-12">
           <GlobalMarketsPanel />
         </div>
 
-        {/* Row 5 */}
+        {/* =================== BREADTH, SENTIMENT & RISK =================== */}
+        <SectionLabel title="Breadth, Sentiment & Risk" note="the internals a desk scans first" />
+
+        <div className="lg:col-span-12">
+          <UsPulsePanel />
+        </div>
         <div className="lg:col-span-5">
           <SentimentPanel />
         </div>
@@ -111,17 +131,25 @@ export default function Home() {
           <CyclePanel />
         </div>
 
-        {/* Row 3 — Sector spans 2 rows to fit its 11 entries beside Macro + Briefings */}
+        {/* =================== MACRO, SECTORS & WEEK AHEAD =================== */}
+        <SectionLabel title="Macro, Sectors & Week Ahead" />
+
+        {/* Sector spans 2 rows to sit beside both the Fed panel and the calendar. */}
         <div className="lg:col-span-8">
           <FedPanel />
         </div>
         <div className="lg:col-span-4 lg:row-span-2">
           <SectorRotation />
         </div>
-
-        {/* Row 4 (Briefings sits under Macro, beside the tall Sector column) */}
         <div className="lg:col-span-8">
-          <BriefingList items={briefings} limit={6} />
+          <CalendarPanel />
+        </div>
+
+        {/* ========================= BRIEFINGS ========================= */}
+        <SectionLabel title="Latest Briefings" />
+
+        <div className="lg:col-span-12">
+          <BriefingList items={briefings} limit={8} />
         </div>
       </div>
     </div>
