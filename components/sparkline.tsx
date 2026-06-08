@@ -29,7 +29,7 @@ export default function Sparkline({ points, positive, intraday, color }: Props) 
   const range = max - min || 1;
   const stepX = VIEW_W / (points.length - 1);
 
-  const lineColor = color ?? (positive ? "#0ecb81" : "#f6465d");
+  const lineColor = color ?? (positive ? "#22c55e" : "#ef4444");
   const fill = positive ? "rgba(34, 197, 94, 0.12)" : "rgba(239, 68, 68, 0.12)";
 
   const path = points
@@ -83,7 +83,7 @@ export default function Sparkline({ points, positive, intraday, color }: Props) 
               x2={hoverX}
               y1={0}
               y2={VIEW_H}
-              stroke="#d4881a"
+              stroke="#b45309"
               strokeWidth={0.75}
               strokeDasharray="2 2"
             />
@@ -103,7 +103,7 @@ export default function Sparkline({ points, positive, intraday, color }: Props) 
           Matches the SPY chart's hover style for consistency. */}
       {hoverPoint && formatted && (
         <div
-          className="pointer-events-none absolute top-full z-50 mt-1 rounded-[var(--radius-sm)] border bg-[var(--panel-head)] px-2.5 py-1.5 font-mono text-[11px] text-[var(--foreground)] shadow-[var(--shadow-2)]"
+          className="pointer-events-none absolute top-full z-50 mt-1 border bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]"
           style={{
             borderColor: lineColor,
             [anchorRight ? "right" : "left"]: anchorRight

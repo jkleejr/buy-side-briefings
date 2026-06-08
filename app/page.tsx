@@ -27,16 +27,15 @@ export default function Home() {
   );
 
   return (
-    <div className="space-y-2.5">
+    <div className="space-y-1">
       {verdict?.is_seed && (
-        <div className="rounded-[var(--radius)] border border-[var(--amber)]/40 bg-[var(--amber-soft)] px-3 py-2 text-[11px] text-[var(--amber)]">
+        <div className="border border-[var(--amber-dim)] bg-[rgba(255,165,0,0.05)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
           ⚠ Seed data · Generate a real briefing via Claude and commit to{" "}
-          <code className="rounded bg-[var(--panel-head)] px-1 py-0.5">data/briefings/</code> and{" "}
-          <code className="rounded bg-[var(--panel-head)] px-1 py-0.5">data/verdicts/</code>.
+          <code>data/briefings/</code> and <code>data/verdicts/</code>.
         </div>
       )}
 
-      <div className="grid auto-rows-min grid-cols-1 gap-2.5 lg:grid-cols-12">
+      <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
         {/* Row 1 */}
         {verdict ? (
           <div className="lg:col-span-5">

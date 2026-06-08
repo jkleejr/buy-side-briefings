@@ -23,7 +23,7 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
         <div className="flex items-start gap-3">
           <div
             className={cn(
-              "flex h-14 w-14 shrink-0 items-center justify-center rounded-[var(--radius)] border text-2xl",
+              "flex h-14 w-14 shrink-0 items-center justify-center border text-2xl",
               color.bg,
               color.ring.replace("ring-", "border-"),
             )}
@@ -42,17 +42,17 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
                 {verdict.verdict.conviction.toUpperCase()}
               </span>
             </div>
-            <p className="prose-read mt-1.5 text-[13px] leading-snug">
+            <p className="mt-1.5 text-[11px] leading-snug text-[var(--foreground)]">
               {verdict.verdict.rationale_short}
             </p>
           </div>
         </div>
 
-        <ul className="mt-2.5 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+        <ul className="mt-2 grid grid-cols-1 gap-1 sm:grid-cols-2">
           {verdict.verdict.supporting_data.slice(0, 6).map((d, i) => (
             <li
               key={i}
-              className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--panel-head)]/50 px-2 py-1.5 text-[11px] leading-snug text-[var(--muted)]"
+              className="border border-[var(--border)] bg-black px-1.5 py-1 font-mono text-[10px] text-[var(--foreground)]"
             >
               <span className="mr-1 text-[var(--amber-dim)]">›</span>
               {d.url ? (

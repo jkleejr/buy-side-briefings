@@ -28,10 +28,10 @@ type Props = {
 };
 
 const MARKER_FILL: Record<string, string> = {
-  buy: "#0ecb81",
-  hold: "#ffb224",
+  buy: "#22c55e",
+  hold: "#facc15",
   step_aside: "#fb923c",
-  bearish: "#f6465d",
+  bearish: "#ef4444",
 };
 
 type TooltipPayloadItem = {
@@ -51,9 +51,9 @@ function ChartTooltip({
   if (!p) return null;
   const { day, full, time } = formatChartDate(p.date);
   return (
-    <div className="rounded-[var(--radius-sm)] border border-[var(--border-strong)] bg-[var(--panel-head)] px-2.5 py-1.5 font-mono text-[11px] text-[var(--foreground)] shadow-[var(--shadow-2)]">
-      <div className="font-medium text-[var(--amber)]">{day}</div>
-      <div className="text-[var(--dim)]">{full}</div>
+    <div className="border border-[var(--amber)] bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]">
+      <div className="text-[var(--amber)]">{day}</div>
+      <div className="text-[var(--amber-dim)]">{full}</div>
       {time && <div className="text-[var(--cyan-term)]">{time}</div>}
       <div className="mt-0.5 text-[var(--dim)]">
         SPX{" "}
@@ -93,19 +93,19 @@ export default function VerdictMarkerChart({ series, markers }: Props) {
     <div className="h-[200px] sm:h-[260px] w-full p-2">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={series} margin={{ top: 10, right: 8, left: 0, bottom: 0 }}>
-          <CartesianGrid stroke="#242936" strokeDasharray="2 2" />
+          <CartesianGrid stroke="#1f1f1f" strokeDasharray="2 2" />
           <XAxis
             dataKey="date"
-            tick={{ fill: "#828a9a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
-            tickLine={{ stroke: "#242936" }}
-            axisLine={{ stroke: "#242936" }}
+            tick={{ fill: "#71717a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
+            tickLine={{ stroke: "#262626" }}
+            axisLine={{ stroke: "#262626" }}
             minTickGap={48}
           />
           <YAxis
             domain={[minClose - pad, maxClose + pad]}
-            tick={{ fill: "#828a9a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
-            tickLine={{ stroke: "#242936" }}
-            axisLine={{ stroke: "#242936" }}
+            tick={{ fill: "#71717a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
+            tickLine={{ stroke: "#262626" }}
+            axisLine={{ stroke: "#262626" }}
             width={48}
             tickFormatter={(v) =>
               typeof v === "number" ? v.toLocaleString("en-US", { maximumFractionDigits: 0 }) : ""
@@ -113,12 +113,12 @@ export default function VerdictMarkerChart({ series, markers }: Props) {
           />
           <Tooltip
             content={<ChartTooltip />}
-            cursor={{ stroke: "#d4881a", strokeDasharray: "3 3" }}
+            cursor={{ stroke: "#b45309", strokeDasharray: "3 3" }}
           />
           <Line
             type="monotone"
             dataKey="close"
-            stroke="#ffb224"
+            stroke="#ffa500"
             strokeWidth={1.25}
             dot={false}
             isAnimationActive={false}

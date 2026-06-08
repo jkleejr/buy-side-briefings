@@ -99,9 +99,9 @@ function ChartTooltip({
   if (!active || !payload || payload.length === 0 || !label) return null;
   const { day, full, time } = formatChartDate(label);
   return (
-    <div className="rounded-[var(--radius-sm)] border border-[var(--border-strong)] bg-[var(--panel-head)] px-2.5 py-1.5 font-mono text-[11px] text-[var(--foreground)] shadow-[var(--shadow-2)]">
-      <div className="font-medium text-[var(--amber)]">{day}</div>
-      <div className="text-[var(--dim)]">{full}</div>
+    <div className="border border-[var(--amber)] bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]">
+      <div className="text-[var(--amber)]">{day}</div>
+      <div className="text-[var(--amber-dim)]">{full}</div>
       {intraday && time && <div className="text-[var(--cyan-term)]">{time}</div>}
       <div className="mt-0.5 space-y-0.5">
         {payload.map((p, i) => (
@@ -154,32 +154,32 @@ export default function CompareChartInner({
     <div className="h-[220px] w-full sm:h-[300px]">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 12, right: 12, left: 0, bottom: 0 }}>
-          <CartesianGrid stroke="#242936" strokeDasharray="2 2" />
+          <CartesianGrid stroke="#1f1f1f" strokeDasharray="2 2" />
           <XAxis
             dataKey="date"
-            tick={{ fill: "#828a9a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
-            tickLine={{ stroke: "#242936" }}
-            axisLine={{ stroke: "#242936" }}
+            tick={{ fill: "#71717a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
+            tickLine={{ stroke: "#262626" }}
+            axisLine={{ stroke: "#262626" }}
             minTickGap={56}
           />
           <YAxis
             domain={[minV - pad, maxV + pad]}
-            tick={{ fill: "#828a9a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
-            tickLine={{ stroke: "#242936" }}
-            axisLine={{ stroke: "#242936" }}
+            tick={{ fill: "#71717a", fontSize: 10, fontFamily: "var(--font-geist-mono)" }}
+            tickLine={{ stroke: "#262626" }}
+            axisLine={{ stroke: "#262626" }}
             width={48}
             tickFormatter={(v) => (typeof v === "number" ? v.toFixed(0) : "")}
           />
           <Tooltip
             content={<ChartTooltip intraday={intraday} />}
-            cursor={{ stroke: "#d4881a", strokeDasharray: "3 3" }}
+            cursor={{ stroke: "#b45309", strokeDasharray: "3 3" }}
           />
           {!asRatio && (
             <Legend
               wrapperStyle={{
                 fontFamily: "var(--font-geist-mono)",
                 fontSize: 10,
-                color: "#828a9a",
+                color: "#71717a",
               }}
               iconType="plainline"
             />

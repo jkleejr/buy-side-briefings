@@ -1,53 +1,18 @@
 @import "tailwindcss";
 
-/* ===========================================================================
-   Buy-Side Briefings — design system
-   Direction: modern fintech. Monospace for data (numbers, tickers, tables,
-   labels); proportional sans for prose. Layered cool-dark surfaces, gentle
-   radii, soft elevation, calm motion, accessible contrast.
-   Most components consume these bare custom properties directly, so this file
-   is the single source of truth — restyling here cascades site-wide.
-   =========================================================================== */
-
 :root {
-  /* --- Surfaces (layered, cool near-black) --- */
-  --background: #090a0e;
-  --panel: #101219;        /* base card surface */
-  --panel-head: #171a23;   /* card header / elevated row */
-  --surface-3: #1d212c;    /* inputs, hover fills */
-
-  /* --- Text --- */
-  --foreground: #e9ebf1;   /* primary */
-  --muted: #aeb4c2;        /* secondary prose (AA on dark) */
-  --dim: #828a9a;          /* tertiary labels (lifted from #71717a for contrast) */
-
-  /* --- Lines --- */
-  --border: #242936;       /* subtle, slightly cool */
-  --border-strong: #353c4c;
-
-  /* --- Brand + interactive --- */
-  --amber: #ffb224;        /* brand accent (brighter for contrast) */
-  --amber-dim: #d4881a;    /* code labels / secondary (was #b45309 — failed AA) */
-  --cyan: #38bdf8;
-  --cyan-term: #38bdf8;    /* now defined as a bare prop — fixes 47 dead refs */
-  --accent: #5b8cff;       /* cool interactive accent for focus rings */
-
-  /* --- Semantic market colors (trading-native) --- */
-  --up: #0ecb81;
-  --up-soft: rgba(14, 203, 129, 0.12);
-  --down: #f6465d;
-  --down-soft: rgba(246, 70, 93, 0.12);
-  --amber-soft: rgba(255, 178, 36, 0.12);
-
-  /* --- Radius --- */
-  --radius-sm: 6px;
-  --radius: 10px;
-  --radius-lg: 14px;
-
-  /* --- Elevation --- */
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.45);
-  --shadow-2: 0 8px 28px -10px rgba(0, 0, 0, 0.7);
-  --ring: rgba(91, 140, 255, 0.7);
+  --background: #000000;
+  --foreground: #e4e4e7;
+  --panel: #050505;
+  --panel-head: #0a0a0a;
+  --border: #262626;
+  --border-strong: #3f3f46;
+  --amber: #ffa500;
+  --amber-dim: #b45309;
+  --cyan: #22d3ee;
+  --up: #22c55e;
+  --down: #ef4444;
+  --dim: #71717a;
 }
 
 @theme inline {
@@ -55,8 +20,6 @@
   --color-foreground: var(--foreground);
   --color-panel: var(--panel);
   --color-panel-head: var(--panel-head);
-  --color-surface-3: var(--surface-3);
-  --color-muted: var(--muted);
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
   --color-amber-term: var(--amber);
@@ -65,8 +28,7 @@
   --color-up: var(--up);
   --color-down: var(--down);
   --color-dim: var(--dim);
-  --radius-card: var(--radius);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-mono);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -74,103 +36,17 @@ html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  font-feature-settings: "tnum" 1, "zero" 1, "ss01" 1, "cv05" 1;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Subtle depth: a faint cool glow up top, vignette toward the edges. */
-body {
-  font-size: 13px;
-  line-height: 1.5;
-  background:
-    radial-gradient(1100px 520px at 50% -260px, rgba(91, 140, 255, 0.07), transparent 62%),
-    radial-gradient(900px 600px at 100% 0, rgba(56, 189, 248, 0.04), transparent 60%),
-    var(--background);
-  background-attachment: fixed;
-}
-
-/* Numeric / terminal data uses the mono face + tabular figures. */
-.font-mono,
-code,
-kbd,
-.tabular-nums {
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-feature-settings: "tnum" 1, "zero" 1;
 }
 
-/* Calm, consistent motion on everything interactive. */
-a,
-button,
-[role="button"],
-input,
-select,
-textarea,
-summary,
-.transition-default {
-  transition:
-    color 0.15s ease,
-    background-color 0.15s ease,
-    border-color 0.15s ease,
-    box-shadow 0.18s ease,
-    opacity 0.15s ease,
-    transform 0.12s ease;
+/* Tight, terminal-like baseline */
+body {
+  font-size: 12px;
+  line-height: 1.35;
 }
 
-/* One accessible focus treatment for keyboard users everywhere. */
-:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
-  border-radius: var(--radius-sm);
-}
-
-::selection {
-  background: rgba(255, 178, 36, 0.26);
-  color: var(--foreground);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    transition-duration: 0.001ms !important;
-  }
-}
-
-/* --- Reusable surface primitive ----------------------------------------- */
-/* A rounded, softly elevated card. Components can opt in with class="card",
-   or compose the same look inline. */
-.card {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-1);
-}
-.card-hover {
-  transition: border-color 0.15s ease, box-shadow 0.18s ease, transform 0.12s ease;
-}
-.card-hover:hover {
-  border-color: var(--border-strong);
-  box-shadow: var(--shadow-2);
-}
-
-/* --- Pills / badges ------------------------------------------------------ */
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35em;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.1rem 0.55rem;
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-/* --- Blinking "live" dot ------------------------------------------------- */
+/* Blinking dot for "live" indicators */
 @keyframes term-blink {
   0%, 60% { opacity: 1; }
   61%, 100% { opacity: 0.25; }
@@ -179,33 +55,12 @@ summary,
   animation: term-blink 1.6s steps(2, end) infinite;
 }
 
-/* --- Scrollbars: slim, rounded, subtle ----------------------------------- */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--border-strong) transparent;
-}
-.panel-scroll::-webkit-scrollbar,
-*::-webkit-scrollbar { height: 8px; width: 8px; }
-.panel-scroll::-webkit-scrollbar-thumb,
-*::-webkit-scrollbar-thumb {
-  background: var(--border-strong);
-  border-radius: 999px;
-}
-.panel-scroll::-webkit-scrollbar-thumb:hover,
-*::-webkit-scrollbar-thumb:hover { background: #455066; }
-.panel-scroll::-webkit-scrollbar-track,
-*::-webkit-scrollbar-track { background: transparent; }
+/* Thin scrollbar inside panels */
+.panel-scroll::-webkit-scrollbar { height: 6px; width: 6px; }
+.panel-scroll::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 0; }
+.panel-scroll::-webkit-scrollbar-track { background: transparent; }
 
-/* --- Long-form prose (briefings, dossiers): proportional sans ----------- */
-.prose-read {
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  font-size: 14px;
-  line-height: 1.65;
-  color: var(--muted);
-}
-.prose-read strong { color: var(--foreground); }
-
-/* --- Learn-mode tooltips (CSS-only, toggled by data-learn on <html>) ----- */
+/* Learn-mode tooltips (CSS-only, controlled by data-learn on <html>) */
 .tip-host {
   position: relative;
   display: inline-block;
@@ -213,27 +68,31 @@ summary,
 }
 .tip-bubble {
   position: absolute;
-  top: calc(100% + 6px);
+  top: calc(100% + 4px);
   left: 0;
   z-index: 9999;
   display: none;
   width: max-content;
-  max-width: min(300px, calc(100vw - 24px));
-  border: 1px solid var(--border-strong);
-  background: linear-gradient(180deg, #14171f, #0e1015);
+  /* Viewport-aware: never exceed screen width minus a margin. Works on mobile
+     so the tooltip stays readable even when the host is near the right edge. */
+  max-width: min(280px, calc(100vw - 24px));
+  border: 1px solid var(--amber);
+  background: #000;
   color: var(--foreground);
-  padding: 8px 10px;
-  border-radius: var(--radius-sm);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 1.45;
   font-weight: 400;
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
   text-transform: none;
   letter-spacing: normal;
   white-space: normal;
-  box-shadow: var(--shadow-2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.8);
   pointer-events: none;
 }
+
+/* Touch devices: tap-to-toggle (focus-within already in the spec below). The
+   :focus-within rule fires on tap because tip-host has tabIndex=0. */
 @media (hover: none) {
   [data-learn="on"] .tip-host { cursor: pointer; }
 }
@@ -243,11 +102,12 @@ summary,
 }
 [data-learn="on"] .tip-host {
   cursor: help;
-  border-bottom: 1px dotted var(--amber-dim);
+  border-bottom: 1px dotted var(--amber);
 }
 [data-learn="on"] .tip-host:hover > .tip-bubble,
 [data-learn="on"] .tip-host:focus-within > .tip-bubble {
   display: block;
 }
+/* Bubble stays hidden when learn mode is off */
 [data-learn="off"] .tip-bubble { display: none !important; }
 [data-learn="off"] .tip-host { border-bottom: none; cursor: inherit; }

@@ -14,7 +14,7 @@ export default function SkHynixPage() {
 
   if (series.length === 0) {
     return (
-      <div className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel)] p-6 text-center font-mono text-[11px] text-[var(--dim)]">
+      <div className="border border-[var(--border)] bg-[var(--panel)] p-6 text-center font-mono text-[11px] text-[var(--dim)]">
         No SK Hynix briefings yet.
       </div>
     );

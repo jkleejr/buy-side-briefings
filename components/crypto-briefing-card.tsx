@@ -36,9 +36,14 @@ export default function CryptoBriefingCard({ verdict }: { verdict: CryptoVerdict
   const snap = verdict.snapshot ?? {};
 
   return (
-    <article className="card-hover rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel)] shadow-[var(--shadow-1)]">
+    <article
+      className={cn(
+        "border bg-[var(--panel)] transition-colors hover:border-[var(--amber-dim)]",
+        "border-[var(--border)]",
+      )}
+    >
       {/* Header row: date | verdict pill | full-link */}
-      <header className="flex items-center gap-2 rounded-t-[var(--radius)] border-b border-[var(--border)] bg-gradient-to-b from-[var(--panel-head)] to-[var(--panel)] px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-widest">
+      <header className="flex items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest">
         <span className="text-[var(--amber-dim)]">{day}</span>
         <span className="text-[var(--foreground)]">{md}</span>
         <span className="text-[var(--dim)]">·</span>
@@ -105,7 +110,7 @@ export default function CryptoBriefingCard({ verdict }: { verdict: CryptoVerdict
         </div>
 
         {/* Short rationale */}
-        <p className="prose-read text-[12px] leading-relaxed">
+        <p className="font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
           {verdict.verdict.rationale_short}
         </p>
       </div>
