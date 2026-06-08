@@ -9,8 +9,8 @@ import UsIndicesClient, {
 export const revalidate = 60;
 
 const DEFAULT_ASSETS: IndexAsset[] = [
-  { symbol: "SPY", label: "SPY", sublabel: "S&P 500", color: "#22d3ee" },
-  { symbol: "QQQ", label: "QQQ", sublabel: "Nasdaq 100", color: "#fbbf24" },
+  { symbol: "SPY", label: "SPY", sublabel: "S&P 500", color: "#38bdf8" },
+  { symbol: "QQQ", label: "QQQ", sublabel: "Nasdaq 100", color: "#ffb224" },
   { symbol: "IWM", label: "IWM", sublabel: "Russell 2000", color: "#84cc16" },
 ];
 

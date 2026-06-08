@@ -41,11 +41,11 @@ function ChartTooltip({
   const { day, full, time } = formatChartDate(p.date);
   return (
     <div
-      className="border bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]"
+      className="rounded-[var(--radius-sm)] border bg-[var(--panel-head)] px-2.5 py-1.5 font-mono text-[11px] text-[var(--foreground)] shadow-[var(--shadow-2)]"
       style={{ borderColor: color }}
     >
-      <div className="text-[var(--amber)]">{day}</div>
-      <div className="text-[var(--amber-dim)]">{full}</div>
+      <div className="font-medium text-[var(--foreground)]">{day}</div>
+      <div className="text-[var(--dim)]">{full}</div>
       {intraday && time && <div className="text-[var(--cyan-term)]">{time}</div>}
       <div className="mt-0.5 text-[var(--dim)]">
         {intraday ? "Price" : "Close"}{" "}
@@ -82,12 +82,12 @@ export default function AssetChartInner({ series, color, label, intraday }: Asse
               <stop offset="100%" stopColor={color} stopOpacity={0} />
             </linearGradient>
           </defs>
-          <CartesianGrid stroke="#1f1f1f" strokeDasharray="2 2" vertical={false} />
+          <CartesianGrid stroke="#242936" strokeDasharray="2 2" vertical={false} />
           <XAxis
             dataKey="date"
-            tick={{ fill: "#71717a", fontSize: 9, fontFamily: "var(--font-geist-mono)" }}
+            tick={{ fill: "#828a9a", fontSize: 9, fontFamily: "var(--font-geist-mono)" }}
             tickLine={false}
-            axisLine={{ stroke: "#262626" }}
+            axisLine={{ stroke: "#242936" }}
             minTickGap={56}
           />
           <YAxis
@@ -96,7 +96,7 @@ export default function AssetChartInner({ series, color, label, intraday }: Asse
           />
           <Tooltip
             content={<ChartTooltip color={color} intraday={intraday} />}
-            cursor={{ stroke: "#b45309", strokeDasharray: "3 3" }}
+            cursor={{ stroke: "#d4881a", strokeDasharray: "3 3" }}
           />
           <Area
             type="monotone"

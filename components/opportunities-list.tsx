@@ -87,15 +87,15 @@ export default function OpportunitiesList({ items }: Props) {
   return (
     <div className="space-y-2">
       {/* Filters */}
-      <div className="flex flex-wrap items-center gap-2 border border-[var(--border)] bg-[var(--panel)] p-2 font-mono text-[10px]">
-        <span className="text-[var(--amber-dim)]">FILTER ▸</span>
+      <div className="flex flex-wrap items-center gap-2 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel)] p-2.5 font-mono text-[10px] shadow-[var(--shadow-1)]">
+        <span className="text-[var(--amber-dim)] uppercase tracking-widest">Filter</span>
 
         <select
           value={dirFilter}
           onChange={(e) =>
             setDirFilter(e.target.value as "all" | OpportunityDirection)
           }
-          className="border border-[var(--border)] bg-black px-1.5 py-0.5 text-[var(--foreground)]"
+          className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-3)] px-2 py-1 text-[var(--foreground)]"
         >
           <option value="all">all directions</option>
           <option value="long">long only</option>
@@ -110,7 +110,7 @@ export default function OpportunitiesList({ items }: Props) {
           onChange={(e) =>
             setConvFilter(e.target.value as "all" | OpportunityConviction)
           }
-          className="border border-[var(--border)] bg-black px-1.5 py-0.5 text-[var(--foreground)]"
+          className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-3)] px-2 py-1 text-[var(--foreground)]"
         >
           <option value="all">all conviction</option>
           <option value="high">high conviction</option>
@@ -123,7 +123,7 @@ export default function OpportunitiesList({ items }: Props) {
           placeholder="search ticker, thesis, tag…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="flex-1 min-w-[160px] border border-[var(--border)] bg-black px-1.5 py-0.5 text-[var(--foreground)] placeholder:text-[var(--dim)]"
+          className="min-w-[160px] flex-1 rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-3)] px-2.5 py-1 text-[var(--foreground)] placeholder:text-[var(--dim)]"
         />
 
         <span className="ml-auto text-[var(--dim)]">
@@ -136,10 +136,10 @@ export default function OpportunitiesList({ items }: Props) {
         <div className="flex flex-wrap gap-1 px-1 font-mono text-[10px]">
           <button
             onClick={() => setTagFilter(null)}
-            className={`border px-1.5 py-0.5 uppercase tracking-wider ${
+            className={`rounded-full border px-2.5 py-0.5 uppercase tracking-wider transition-colors ${
               tagFilter === null
-                ? "border-[var(--amber)] text-[var(--amber)]"
-                : "border-[var(--border)] text-[var(--dim)] hover:text-[var(--amber-dim)]"
+                ? "border-[var(--amber)]/40 bg-[var(--amber-soft)] text-[var(--amber)]"
+                : "border-[var(--border)] text-[var(--dim)] hover:bg-[var(--surface-3)] hover:text-[var(--foreground)]"
             }`}
           >
             all
@@ -148,10 +148,10 @@ export default function OpportunitiesList({ items }: Props) {
             <button
               key={t}
               onClick={() => setTagFilter(t === tagFilter ? null : t)}
-              className={`border px-1.5 py-0.5 uppercase tracking-wider ${
+              className={`rounded-full border px-2.5 py-0.5 uppercase tracking-wider transition-colors ${
                 tagFilter === t
-                  ? "border-[var(--amber)] text-[var(--amber)]"
-                  : "border-[var(--border)] text-[var(--dim)] hover:text-[var(--amber-dim)]"
+                  ? "border-[var(--amber)]/40 bg-[var(--amber-soft)] text-[var(--amber)]"
+                  : "border-[var(--border)] text-[var(--dim)] hover:bg-[var(--surface-3)] hover:text-[var(--foreground)]"
               }`}
             >
               {t}
@@ -161,14 +161,14 @@ export default function OpportunitiesList({ items }: Props) {
       )}
 
       {/* Cards */}
-      <div className="grid grid-cols-1 gap-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-2.5 lg:grid-cols-2">
         {filtered.map((o) => (
           <Link
             key={o.id}
             href={`/opportunities/${o.id}`}
-            className="block border border-[var(--border)] bg-[var(--panel)] transition-colors hover:border-[var(--amber-dim)]"
+            className="card-hover block rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel)] shadow-[var(--shadow-1)]"
           >
-            <div className="flex items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[10px] uppercase tracking-wider">
+            <div className="flex items-center gap-2 rounded-t-[var(--radius)] border-b border-[var(--border)] bg-gradient-to-b from-[var(--panel-head)] to-[var(--panel)] px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-wider">
               <span className={directionColor(o.direction)}>
                 {DIRECTION_LABEL[o.direction]}
               </span>
@@ -182,39 +182,33 @@ export default function OpportunitiesList({ items }: Props) {
                 <span className={convictionColor(o.conviction)}>{o.conviction}</span>
               </span>
             </div>
-            <div className="p-2">
-              <div className="font-mono text-[13px] font-semibold text-[var(--foreground)]">
+            <div className="p-2.5">
+              <div className="text-[14px] font-semibold text-[var(--foreground)]">
                 {o.title}
               </div>
-              <div className="mt-1 font-mono text-[11px] leading-snug text-[var(--dim)]">
+              <div className="prose-read mt-1 text-[12px] leading-snug text-[var(--muted)]">
                 {o.catalyst}
               </div>
-              <div className="mt-2 grid grid-cols-3 gap-2 border-t border-[var(--border)] pt-2 font-mono text-[10px]">
+              <div className="mt-2.5 grid grid-cols-3 gap-2 border-t border-[var(--border)] pt-2.5 font-mono text-[10px]">
                 <div>
-                  <div className="text-[var(--amber-dim)] uppercase tracking-wider">
-                    Horizon
-                  </div>
-                  <div className="text-[var(--foreground)]">{o.time_horizon}</div>
+                  <div className="uppercase tracking-wider text-[var(--dim)]">Horizon</div>
+                  <div className="mt-0.5 tabular-nums text-[var(--foreground)]">{o.time_horizon}</div>
                 </div>
                 <div>
-                  <div className="text-[var(--amber-dim)] uppercase tracking-wider">
-                    R/R
-                  </div>
-                  <div className="text-[var(--foreground)]">{o.risk_reward}</div>
+                  <div className="uppercase tracking-wider text-[var(--dim)]">R/R</div>
+                  <div className="mt-0.5 tabular-nums text-[var(--foreground)]">{o.risk_reward}</div>
                 </div>
                 <div>
-                  <div className="text-[var(--amber-dim)] uppercase tracking-wider">
-                    Size
-                  </div>
-                  <div className="text-[var(--foreground)]">{o.position_size_pct}%</div>
+                  <div className="uppercase tracking-wider text-[var(--dim)]">Size</div>
+                  <div className="mt-0.5 tabular-nums text-[var(--foreground)]">{o.position_size_pct}%</div>
                 </div>
               </div>
               {o.tags.length > 0 && (
-                <div className="mt-2 flex flex-wrap gap-1 font-mono text-[9px] uppercase tracking-wider">
+                <div className="mt-2.5 flex flex-wrap gap-1 font-mono text-[9px] uppercase tracking-wider">
                   {o.tags.map((t) => (
                     <span
                       key={t}
-                      className="border border-[var(--border)] bg-black px-1 py-0.5 text-[var(--dim)]"
+                      className="rounded-full border border-[var(--border)] bg-[var(--panel-head)]/60 px-2 py-0.5 text-[var(--dim)]"
                     >
                       {t}
                     </span>
@@ -226,7 +220,7 @@ export default function OpportunitiesList({ items }: Props) {
         ))}
 
         {filtered.length === 0 && (
-          <div className="col-span-full border border-[var(--border)] bg-[var(--panel)] p-6 text-center font-mono text-[11px] text-[var(--dim)]">
+          <div className="col-span-full rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel)] p-6 text-center font-mono text-[11px] text-[var(--dim)]">
             No opportunities match the current filters.
           </div>
         )}

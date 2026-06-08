@@ -75,8 +75,8 @@ export default function BriefingsFilters({ items }: Props) {
 
   return (
     <div className="space-y-1">
-      <div className="border border-[var(--border)] bg-[var(--panel)]">
-        <div className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
+      <div className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel)] shadow-[var(--shadow-1)]">
+        <div className="rounded-t-[var(--radius)] border-b border-[var(--border)] bg-gradient-to-b from-[var(--panel-head)] to-[var(--panel)] px-2.5 py-1.5">
           <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
             Filters
           </span>
@@ -137,7 +137,7 @@ export default function BriefingsFilters({ items }: Props) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="title, date, rationale…"
-              className="flex-1 min-w-[120px] border border-[var(--border)] bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] placeholder:text-[var(--dim)] focus:border-[var(--amber)] focus:outline-none"
+              className="min-w-[120px] flex-1 rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-3)] px-2.5 py-1.5 font-mono text-[11px] text-[var(--foreground)] placeholder:text-[var(--dim)] focus:border-[var(--amber)] focus:outline-none"
             />
             {hasActiveFilter && (
               <button
@@ -147,7 +147,7 @@ export default function BriefingsFilters({ items }: Props) {
                   setCode(null);
                   setQuery("");
                 }}
-                className="border border-[var(--border)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] hover:border-[var(--amber-dim)] hover:text-[var(--amber)]"
+                className="rounded-[var(--radius-sm)] border border-[var(--border)] px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] hover:bg-[var(--surface-3)] hover:text-[var(--foreground)]"
               >
                 Clear
               </button>
@@ -180,10 +180,10 @@ function FilterChip({
       type="button"
       onClick={onClick}
       className={
-        "border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-widest transition-colors " +
+        "rounded-full border px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-widest transition-colors " +
         (active
-          ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-          : "border-[var(--border)] text-[var(--dim)] hover:border-[var(--amber-dim)] hover:text-[var(--amber)]")
+          ? "border-[var(--amber)]/40 bg-[var(--amber-soft)] text-[var(--amber)]"
+          : "border-[var(--border)] text-[var(--dim)] hover:bg-[var(--surface-3)] hover:text-[var(--foreground)]")
       }
     >
       {label}
