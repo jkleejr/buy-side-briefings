@@ -33,14 +33,9 @@ export default function KospiBriefingCard({ verdict }: { verdict: KospiVerdict }
   const snap = verdict.snapshot ?? {};
 
   return (
-    <article
-      className={cn(
-        "border bg-[var(--panel)] transition-colors hover:border-[var(--amber-dim)]",
-        "border-[var(--border)]",
-      )}
-    >
+    <article className="card-hover rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel)] shadow-[var(--shadow-1)]">
       {/* Header row: date | verdict pill | full-link */}
-      <header className="flex items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest">
+      <header className="flex items-center gap-2 rounded-t-[var(--radius)] border-b border-[var(--border)] bg-gradient-to-b from-[var(--panel-head)] to-[var(--panel)] px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-widest">
         <span className="text-[var(--amber-dim)]">{day}</span>
         <span className="text-[var(--foreground)]">{md}</span>
         <span className="text-[var(--dim)]">·</span>
@@ -114,7 +109,7 @@ export default function KospiBriefingCard({ verdict }: { verdict: KospiVerdict }
         </div>
 
         {/* Short rationale */}
-        <p className="font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
+        <p className="prose-read text-[12px] leading-relaxed">
           {verdict.verdict.rationale_short}
         </p>
       </div>

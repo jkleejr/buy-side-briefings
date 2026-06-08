@@ -195,22 +195,22 @@ function BriefingMarkdown({ source }: { source: string }) {
       remarkPlugins={[remarkGfm]}
       components={{
         h2: ({ children }) => (
-          <h2 className="mt-6 mb-2 font-mono text-base font-semibold uppercase tracking-wider text-[var(--amber)]">
+          <h2 className="mt-8 mb-3 border-b border-[var(--border)] pb-1.5 font-mono text-[12px] font-semibold uppercase tracking-widest text-[var(--amber)]">
             {children}
           </h2>
         ),
         h3: ({ children }) => (
-          <h3 className="mt-4 mb-1.5 font-mono text-sm font-semibold tracking-wider text-[var(--amber-dim)]">
+          <h3 className="mt-5 mb-2 font-mono text-[11px] font-semibold uppercase tracking-widest text-[var(--amber-dim)]">
             {children}
           </h3>
         ),
         p: ({ children }) => (
-          <p className="my-2 leading-relaxed text-[var(--foreground)]">{children}</p>
+          <p className="my-3 text-[15px] leading-[1.75] text-[var(--muted)]">{children}</p>
         ),
         a: ({ children, href }) => (
           <a
             href={href}
-            className="text-[var(--cyan-term)] underline underline-offset-4 hover:text-[var(--amber)]"
+            className="text-[var(--cyan-term)] underline underline-offset-4 transition-colors hover:text-[var(--amber)]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -218,27 +218,27 @@ function BriefingMarkdown({ source }: { source: string }) {
           </a>
         ),
         ul: ({ children }) => (
-          <ul className="my-2 list-disc space-y-1 pl-5 text-[var(--foreground)]">{children}</ul>
+          <ul className="my-3 list-disc space-y-1.5 pl-5 text-[15px] leading-[1.75] text-[var(--muted)]">{children}</ul>
         ),
         ol: ({ children }) => (
-          <ol className="my-2 list-decimal space-y-1 pl-5 text-[var(--foreground)]">{children}</ol>
+          <ol className="my-3 list-decimal space-y-1.5 pl-5 text-[15px] leading-[1.75] text-[var(--muted)]">{children}</ol>
         ),
-        li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+        li: ({ children }) => <li className="leading-[1.7]">{children}</li>,
         strong: ({ children }) => (
-          <strong className="font-semibold text-[var(--amber)]">{children}</strong>
+          <strong className="font-semibold text-[var(--foreground)]">{children}</strong>
         ),
         blockquote: ({ children }) => (
-          <blockquote className="my-3 border-l-2 border-[var(--amber-dim)] pl-3 italic text-[var(--dim)]">
+          <blockquote className="my-4 rounded-r-[var(--radius-sm)] border-l-2 border-[var(--amber)] bg-[var(--amber-soft)] px-4 py-2 text-[14px] italic text-[var(--muted)]">
             {children}
           </blockquote>
         ),
         code: ({ children }) => (
-          <code className="border border-[var(--border)] bg-[var(--panel-head)] px-1 py-0.5 text-[12px] text-[var(--amber)]">
+          <code className="rounded border border-[var(--border)] bg-[var(--panel-head)] px-1.5 py-0.5 font-mono text-[12px] text-[var(--amber)]">
             {children}
           </code>
         ),
         table: ({ children }) => (
-          <div className="my-3 overflow-x-auto border border-[var(--border)]">
+          <div className="my-4 overflow-x-auto rounded-[var(--radius-sm)] border border-[var(--border)]">
             <table className="w-full border-collapse font-mono text-[11px]">{children}</table>
           </div>
         ),

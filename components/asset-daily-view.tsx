@@ -24,15 +24,15 @@ const WINNER_META: Record<
     emoji: "🐂",
     label: "BULLS WON TODAY",
     text: "text-[var(--up)]",
-    border: "border-[var(--up)]",
-    bg: "bg-[rgba(34,197,94,0.08)]",
+    border: "border-[var(--up)]/40",
+    bg: "bg-[var(--up-soft)]",
   },
   bears: {
     emoji: "🐻",
     label: "BEARS WON TODAY",
     text: "text-[var(--down)]",
-    border: "border-[var(--down)]",
-    bg: "bg-[rgba(239,68,68,0.08)]",
+    border: "border-[var(--down)]/40",
+    bg: "bg-[var(--down-soft)]",
   },
   flat: {
     emoji: "➖",
@@ -50,20 +50,20 @@ const ACTION_META: Record<
   buy: {
     label: "BUY",
     text: "text-[var(--up)]",
-    border: "border-[var(--up)]",
-    bg: "bg-[rgba(34,197,94,0.08)]",
+    border: "border-[var(--up)]/40",
+    bg: "bg-[var(--up-soft)]",
   },
   hold: {
     label: "HOLD",
     text: "text-[var(--amber)]",
-    border: "border-[var(--amber)]",
-    bg: "bg-[rgba(255,165,0,0.08)]",
+    border: "border-[var(--amber)]/40",
+    bg: "bg-[var(--amber-soft)]",
   },
   sell: {
     label: "SELL",
     text: "text-[var(--down)]",
-    border: "border-[var(--down)]",
-    bg: "bg-[rgba(239,68,68,0.08)]",
+    border: "border-[var(--down)]/40",
+    bg: "bg-[var(--down-soft)]",
   },
 };
 
@@ -99,11 +99,11 @@ function Stat({
         ? "text-[var(--down)]"
         : "text-[var(--foreground)]";
   return (
-    <div className="border border-[var(--border)] bg-black px-2 py-1.5">
-      <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+    <div className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--panel-head)]/50 px-2.5 py-2">
+      <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
         {label}
       </div>
-      <div className={cn("mt-0.5 font-mono text-[13px]", toneCls)}>{value}</div>
+      <div className={cn("mt-1 font-mono text-[14px] font-medium tabular-nums", toneCls)}>{value}</div>
     </div>
   );
 }
@@ -122,19 +122,17 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
   return (
     <div className="space-y-2">
       {/* ============================= HERO ============================= */}
-      <section className="border border-[var(--border-strong)] bg-[var(--panel)]">
+      <section className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border-strong)] bg-gradient-to-b from-[var(--panel-head)] to-[var(--panel)] shadow-[var(--shadow-2)]">
         {/* Price header */}
-        <div className="flex flex-wrap items-end justify-between gap-2 border-b border-[var(--border)] px-3 py-2.5">
+        <div className="flex flex-wrap items-end justify-between gap-3 border-b border-[var(--border)] px-4 py-3.5">
           <div>
-            <div className="flex items-baseline gap-2">
-              <h1 className="font-mono text-2xl font-bold tracking-tight text-[var(--foreground)]">
+            <div className="flex items-baseline gap-2.5">
+              <h1 className="font-mono text-3xl font-bold tracking-tight text-[var(--foreground)]">
                 {today.symbol}
               </h1>
-              <span className="font-mono text-[12px] uppercase tracking-widest text-[var(--dim)]">
-                {today.name}
-              </span>
+              <span className="text-[13px] font-medium text-[var(--dim)]">{today.name}</span>
             </div>
-            <div className="mt-0.5 font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+            <div className="mt-1 font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
               Daily investor brief · {today.date}
               {today.is_seed ? " · seed" : ""}
             </div>
@@ -143,7 +141,13 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
             <div className="font-mono text-3xl font-bold tabular-nums text-[var(--foreground)]">
               {px(snap.price)}
             </div>
-            <div className={cn("font-mono text-[13px] font-semibold", changeTone(snap.change_pct))}>
+            <div
+              className={cn(
+                "font-mono text-[14px] font-semibold tabular-nums",
+                changeTone(snap.change_pct),
+              )}
+            >
+              {snap.change_pct > 0 ? "▲ " : snap.change_pct < 0 ? "▼ " : ""}
               {snap.change_abs !== undefined
                 ? `${snap.change_abs >= 0 ? "+" : ""}${formatLevel(Math.abs(snap.change_abs))} `
                 : ""}
@@ -153,24 +157,24 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
         </div>
 
         {/* The two answers the reader came for */}
-        <div className="grid grid-cols-1 gap-2 p-2 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-2.5 p-2.5 sm:grid-cols-2">
           {/* Who made money today */}
-          <div className={cn("border px-3 py-2.5", win.border, win.bg)}>
+          <div className={cn("rounded-[var(--radius)] border px-3.5 py-3", win.border, win.bg)}>
             <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
               Who made money today
             </div>
-            <div className={cn("mt-1 font-mono text-lg font-bold tracking-wide", win.text)}>
+            <div className={cn("mt-1.5 text-xl font-bold tracking-tight", win.text)}>
               {win.emoji} {win.label}
             </div>
-            <div className="mt-1.5 space-y-0.5 font-mono text-[11px] leading-relaxed">
+            <div className="mt-2 space-y-1 font-mono text-[11px] leading-relaxed">
               <div>
-                <span className="text-[var(--amber-dim)]">LONGS / CALLS </span>
+                <span className="text-[var(--dim)]">LONGS / CALLS </span>
                 <span className={today.day_winner === "bulls" ? "text-[var(--up)]" : "text-[var(--down)]"}>
                   {today.long_pnl ?? (today.day_winner === "bulls" ? "in the money" : "underwater")}
                 </span>
               </div>
               <div>
-                <span className="text-[var(--amber-dim)]">SHORTS / PUTS </span>
+                <span className="text-[var(--dim)]">SHORTS / PUTS </span>
                 <span className={today.day_winner === "bears" ? "text-[var(--up)]" : "text-[var(--down)]"}>
                   {today.short_pnl ?? (today.day_winner === "bears" ? "in the money" : "underwater")}
                 </span>
@@ -179,26 +183,28 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
           </div>
 
           {/* Today's decision */}
-          <div className={cn("border px-3 py-2.5", act.border, act.bg)}>
+          <div className={cn("rounded-[var(--radius)] border px-3.5 py-3", act.border, act.bg)}>
             <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
               Today&apos;s decision
             </div>
-            <div className={cn("mt-1 flex items-baseline gap-2 font-mono", act.text)}>
-              <span className="text-lg font-bold tracking-wide">{act.label}</span>
-              <span className="text-[10px] uppercase tracking-widest text-[var(--dim)]">
+            <div className={cn("mt-1.5 flex items-baseline gap-2", act.text)}>
+              <span className="text-xl font-bold tracking-tight">{act.label}</span>
+              <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
                 {today.decision.conviction} conviction · {today.decision.horizon}
               </span>
             </div>
-            <p className="mt-1.5 font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
+            <p className="prose-read mt-2 text-[13px] leading-relaxed">
               {today.decision.rationale}
             </p>
           </div>
         </div>
 
         {/* Session one-liner */}
-        <div className="border-t border-[var(--border)] px-3 py-1.5 font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
-          <span className="text-[var(--amber-dim)]">TAPE · </span>
-          {today.day_summary}
+        <div className="flex gap-2 border-t border-[var(--border)] bg-[var(--panel)]/40 px-4 py-2.5">
+          <span className="shrink-0 font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+            Tape
+          </span>
+          <p className="prose-read text-[13px] leading-relaxed">{today.day_summary}</p>
         </div>
       </section>
 
@@ -254,12 +260,14 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
             )}
           </div>
           {today.positioning.notable_flow && (
-            <p className="font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
-              <span className="text-[var(--amber-dim)]">NOTABLE FLOW · </span>
+            <p className="prose-read text-[13px] leading-relaxed">
+              <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+                Notable flow ·{" "}
+              </span>
               {today.positioning.notable_flow}
             </p>
           )}
-          <p className="font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
+          <p className="prose-read text-[13px] leading-relaxed">
             {today.what_traders_are_doing}
           </p>
         </div>
@@ -268,21 +276,21 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
       {/* ===================== BULL vs BEAR ===================== */}
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">
         <Panel code="BULL" title="Bull case">
-          <ul className="space-y-1.5 p-2">
+          <ul className="space-y-2 p-2.5">
             {today.bull_case.map((b, i) => (
-              <li key={i} className="flex gap-2 font-mono text-[11px] leading-relaxed">
-                <span className="shrink-0 text-[var(--up)]">▲</span>
-                <span className="text-[var(--foreground)]">{b}</span>
+              <li key={i} className="flex gap-2.5">
+                <span className="mt-0.5 shrink-0 text-[11px] text-[var(--up)]">▲</span>
+                <span className="prose-read text-[13px] leading-relaxed">{b}</span>
               </li>
             ))}
           </ul>
         </Panel>
         <Panel code="BEAR" title="Bear case">
-          <ul className="space-y-1.5 p-2">
+          <ul className="space-y-2 p-2.5">
             {today.bear_case.map((b, i) => (
-              <li key={i} className="flex gap-2 font-mono text-[11px] leading-relaxed">
-                <span className="shrink-0 text-[var(--down)]">▼</span>
-                <span className="text-[var(--foreground)]">{b}</span>
+              <li key={i} className="flex gap-2.5">
+                <span className="mt-0.5 shrink-0 text-[11px] text-[var(--down)]">▼</span>
+                <span className="prose-read text-[13px] leading-relaxed">{b}</span>
               </li>
             ))}
           </ul>
@@ -291,20 +299,20 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
 
       {/* ===================== OUTLOOK ===================== */}
       <Panel code="VIEW" title="Outlook">
-        <div className="grid grid-cols-1 gap-1 p-2 sm:grid-cols-2">
-          <div className="border border-[var(--border)] bg-black px-2 py-1.5">
-            <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+        <div className="grid grid-cols-1 gap-2 p-2.5 sm:grid-cols-2">
+          <div className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--panel-head)]/50 px-3 py-2.5">
+            <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--cyan-term)]">
               Short term · days–weeks
             </div>
-            <p className="mt-1 font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
+            <p className="prose-read mt-1.5 text-[13px] leading-relaxed">
               {today.outlook.short_term}
             </p>
           </div>
-          <div className="border border-[var(--border)] bg-black px-2 py-1.5">
-            <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+          <div className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--panel-head)]/50 px-3 py-2.5">
+            <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--cyan-term)]">
               Long term · months+
             </div>
-            <p className="mt-1 font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
+            <p className="prose-read mt-1.5 text-[13px] leading-relaxed">
               {today.outlook.long_term}
             </p>
           </div>
@@ -369,12 +377,12 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
                       href={n.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-mono text-[11px] leading-relaxed text-[var(--foreground)] hover:text-[var(--cyan-term)]"
+                      className="prose-read text-[13px] leading-relaxed text-[var(--foreground)] hover:text-[var(--cyan-term)]"
                     >
                       {n.label}
                     </a>
                   ) : (
-                    <span className="font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
+                    <span className="prose-read text-[13px] leading-relaxed text-[var(--foreground)]">
                       {n.label}
                     </span>
                   )}
@@ -393,19 +401,17 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
       {/* ===================== DEEP-DIVE ANALYSIS ===================== */}
       {today.analysis && (
         <Panel code="DEEP" title="The full read">
-          <div className="px-3 py-2">
+          <div className="prose-read px-4 py-3 text-[14px]">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
                 h2: ({ children }) => (
-                  <h2 className="mt-4 mb-1.5 font-mono text-sm font-semibold uppercase tracking-wider text-[var(--amber)]">
+                  <h2 className="mt-5 mb-2 font-mono text-[11px] font-semibold uppercase tracking-widest text-[var(--amber)]">
                     {children}
                   </h2>
                 ),
                 p: ({ children }) => (
-                  <p className="my-2 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
-                    {children}
-                  </p>
+                  <p className="my-2.5 leading-[1.7] text-[var(--muted)]">{children}</p>
                 ),
                 a: ({ children, href }) => (
                   <a
@@ -418,13 +424,13 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
                   </a>
                 ),
                 ul: ({ children }) => (
-                  <ul className="my-2 list-disc space-y-1 pl-5 font-mono text-[12px] text-[var(--foreground)]">
+                  <ul className="my-2.5 list-disc space-y-1.5 pl-5 text-[var(--muted)]">
                     {children}
                   </ul>
                 ),
-                li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+                li: ({ children }) => <li className="leading-[1.7]">{children}</li>,
                 strong: ({ children }) => (
-                  <strong className="font-semibold text-[var(--amber)]">{children}</strong>
+                  <strong className="font-semibold text-[var(--foreground)]">{children}</strong>
                 ),
               }}
             >

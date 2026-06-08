@@ -46,23 +46,23 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
             <Link
               href={`/briefings/${b.routine}/${b.slug}`}
               title={fullTitle}
-              className="flex items-center gap-2 px-2 py-2.5 font-mono text-[11px] hover:bg-[var(--panel-head)] sm:py-1.5"
+              className="group flex items-center gap-2 px-2.5 py-2.5 text-[12px] hover:bg-[var(--surface-3)] sm:py-2"
             >
-              <span className="w-9 shrink-0 text-[var(--amber-dim)]">
+              <span className="w-9 shrink-0 font-mono text-[10px] tracking-wider text-[var(--amber-dim)]">
                 {ROUTINE_LABEL[b.routine] ?? b.routine.slice(0, 3).toUpperCase()}
               </span>
               <span className="flex-1 truncate text-[var(--foreground)]">{fullTitle}</span>
               {clock && (
-                <span className="shrink-0 text-[var(--dim)]" title={`Generated ${clock}`}>
+                <span className="shrink-0 font-mono text-[10px] tabular-nums text-[var(--dim)]" title={`Generated ${clock}`}>
                   {clock}
                 </span>
               )}
               {b.is_seed && (
-                <span className="shrink-0 border border-[var(--border)] px-1 text-[9px] uppercase tracking-widest text-[var(--dim)]">
+                <span className="shrink-0 rounded-full border border-[var(--border)] px-1.5 py-0.5 text-[9px] uppercase tracking-widest text-[var(--dim)]">
                   SEED
                 </span>
               )}
-              <span className="shrink-0 text-[var(--cyan-term)]">▸</span>
+              <span className="shrink-0 text-[var(--cyan-term)] transition-transform group-hover:translate-x-0.5">▸</span>
             </Link>
           </li>
         );

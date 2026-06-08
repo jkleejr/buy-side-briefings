@@ -12,9 +12,9 @@ const WINNER: Record<DayWinner, { emoji: string; label: string; text: string }> 
 };
 
 const ACTION: Record<TradeAction, { text: string; border: string; bg: string }> = {
-  buy: { text: "text-[var(--up)]", border: "border-[var(--up)]", bg: "bg-[rgba(34,197,94,0.10)]" },
-  hold: { text: "text-[var(--amber)]", border: "border-[var(--amber)]", bg: "bg-[rgba(255,165,0,0.10)]" },
-  sell: { text: "text-[var(--down)]", border: "border-[var(--down)]", bg: "bg-[rgba(239,68,68,0.10)]" },
+  buy: { text: "text-[var(--up)]", border: "border-[var(--up)]/40", bg: "bg-[var(--up-soft)]" },
+  hold: { text: "text-[var(--amber)]", border: "border-[var(--amber)]/40", bg: "bg-[var(--amber-soft)]" },
+  sell: { text: "text-[var(--down)]", border: "border-[var(--down)]/40", bg: "bg-[var(--down-soft)]" },
 };
 
 function CallCard({ d }: { d: AssetDaily }) {
@@ -28,18 +28,16 @@ function CallCard({ d }: { d: AssetDaily }) {
   return (
     <Link
       href={href}
-      className="block border border-[var(--border)] bg-black px-2.5 py-2 transition-colors hover:border-[var(--amber-dim)] hover:bg-[rgba(255,165,0,0.04)]"
+      className="card-hover block rounded-[var(--radius)] border border-[var(--border)] bg-[var(--panel-head)]/50 px-3 py-2.5"
     >
       <div className="flex items-baseline justify-between gap-2">
         <div className="flex items-baseline gap-1.5">
-          <span className="font-mono text-[13px] font-bold text-[var(--foreground)]">{d.symbol}</span>
-          <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
-            {d.name}
-          </span>
+          <span className="font-mono text-[14px] font-bold text-[var(--foreground)]">{d.symbol}</span>
+          <span className="text-[10px] font-medium text-[var(--dim)]">{d.name}</span>
         </div>
         <span
           className={cn(
-            "shrink-0 border px-1.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-widest",
+            "shrink-0 rounded-full border px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-widest",
             act.text,
             act.border,
             act.bg,
@@ -49,17 +47,20 @@ function CallCard({ d }: { d: AssetDaily }) {
         </span>
       </div>
 
-      <div className="mt-1 flex items-baseline gap-2 font-mono">
-        <span className="text-[15px] font-bold tabular-nums text-[var(--foreground)]">
+      <div className="mt-1.5 flex items-baseline gap-2 font-mono tabular-nums">
+        <span className="text-[16px] font-bold text-[var(--foreground)]">
           ${formatLevel(d.snapshot.price)}
         </span>
-        <span className={cn("text-[11px] font-semibold", changeTone)}>{formatPct(change)}</span>
+        <span className={cn("text-[11px] font-semibold", changeTone)}>
+          {change > 0 ? "▲ " : change < 0 ? "▼ " : ""}
+          {formatPct(change)}
+        </span>
         <span className={cn("ml-auto text-[10px] uppercase tracking-widest", win.text)}>
           {win.emoji} {win.label} won
         </span>
       </div>
 
-      <p className="mt-1 line-clamp-2 font-mono text-[10px] leading-relaxed text-[var(--dim)]">
+      <p className="prose-read mt-1.5 line-clamp-2 text-[12px] leading-relaxed">
         {d.decision.rationale}
       </p>
     </Link>

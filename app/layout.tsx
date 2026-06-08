@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import TickerStrip from "@/components/ticker-strip";
 import { getSiteUrl } from "@/lib/site-url";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -52,7 +57,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-learn="on"
-      className={`${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: learnInitScript }} />
@@ -60,7 +65,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
         <SiteHeader />
         <TickerStrip />
-        <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 sm:px-2 sm:py-2">{children}</main>
+        <main className="mx-auto w-full max-w-[1600px] flex-1 px-2 py-3 sm:px-4 sm:py-4 lg:px-6">{children}</main>
         <SiteFooter />
       </body>
     </html>
