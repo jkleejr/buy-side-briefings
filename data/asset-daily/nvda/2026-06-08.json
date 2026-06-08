@@ -3,82 +3,82 @@
   "symbol": "NVDA",
   "name": "NVIDIA Corp",
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T21:30:00Z",
+  "generated_at": "2026-06-08T20:15:00Z",
   "is_seed": false,
   "day_winner": "bulls",
-  "day_summary": "NVDA bounced +2.78% to $181.20, leading a tech rebound as capital rotated out of crypto and high-beta speculation into the AI bellwether. Bulls and call holders were paid; anyone short into the open got squeezed. But the rally happened on light conviction ahead of Wednesday's CPI — a recovery, not yet an all-clear.",
-  "long_pnl": "+2.78% — calls and longs paid",
-  "short_pnl": "−2.78% — shorts/puts squeezed",
+  "day_summary": "NVDA steadied near $206 (+0.5%), trying to base after a brutal week that took it down ~6.5% and ~13% from the May 14 record of $235.47. Today's bid: a fresh Jensen Huang announcement that NVIDIA is partnering with Korea's LG Group on humanoid robots and data-center architecture, on top of last week's RTX Spark 'superchip' PC push. Dip-buyers edged the session; the week, though, belonged to the bears.",
+  "long_pnl": "+0.5% today — but longs are nursing a ~6.5% weekly loss",
+  "short_pnl": "−0.5% today — shorts gave back a sliver of a profitable week",
   "decision": {
     "action": "buy",
     "conviction": "medium",
     "horizon": "swing · weeks to months",
-    "rationale": "NVDA is the cleanest expression of 2026's defining trade: as crypto capitulates and broad risk de-risks, AI-infrastructure capital is concentrating in the one name that compounds it. The stock reclaimed its breakout after Friday's rate-shock flush and held the 50-day. BUY at medium conviction — but scale in, don't chase: size a starter here and keep dry powder to add on a CPI-driven dip toward $176/$168. A hot CPI on June 10 is the one thing that can re-break high-multiple growth."
+    "rationale": "This is a textbook buy-the-dip in the AI franchise leader. NVDA has reset ~13% from its all-time high while nothing in the fundamentals broke: FY26 revenue was a record $215.94B (+65%), data center grew ~69%, Blackwell is sold out, and management points to ~$1T of AI-chip demand through 2027 in confirmed orders. Wall Street is still Strong Buy with a ~$305 average target (~48% upside). BUY at medium conviction — scale in rather than chase — because the only real risk here is valuation/multiple compression, and the stock just fell 7 of 10 sessions. Add on weakness toward $200 and the 52-week trend; a reclaim of $218 confirms the dip is bought."
   },
   "snapshot": {
-    "price": 181.20,
-    "change_pct": 2.78,
-    "change_abs": 4.90,
-    "prev_close": 176.30,
-    "day_low": 177.10,
-    "day_high": 182.60,
-    "week52_low": 98.40,
-    "week52_high": 186.20,
-    "volume": "214M sh",
-    "market_cap": "$4.42T",
+    "price": 206.20,
+    "change_pct": 0.54,
+    "change_abs": 1.10,
+    "prev_close": 205.10,
+    "day_low": 203.80,
+    "day_high": 208.60,
+    "week52_low": 140.86,
+    "week52_high": 236.54,
+    "volume": "231M sh",
+    "market_cap": "$5.05T",
     "extra": [
-      { "label": "Fwd P/E", "value": "~39x", "tone": "neutral" },
-      { "label": "vs 50-DMA", "value": "+1.9%", "tone": "up" },
-      { "label": "vs ATH", "value": "−2.7%", "tone": "neutral" },
-      { "label": "5-day", "value": "−1.8%", "tone": "down" }
+      { "label": "Fwd P/E", "value": "~31x", "tone": "neutral" },
+      { "label": "From ATH", "value": "−12.4%", "tone": "down" },
+      { "label": "5-day", "value": "−6.5%", "tone": "down" },
+      { "label": "Avg PT", "value": "$305 (+48%)", "tone": "up" }
     ]
   },
   "positioning": {
-    "iv": 48,
-    "iv_note": "elevated into CPI; rich vs. 30-day realized",
-    "put_call": 0.82,
-    "short_interest": "~1.1% of float (low)",
-    "max_pain": "~$180 (Jun monthly)",
-    "notable_flow": "Heavy upside call buying in the Jun/Jul $190–$200 strikes alongside protective put spreads into the CPI print — desks are long the AI thesis but hedging the macro event. Dealers pinned near $180 most of the session before the late lift."
+    "iv": 50,
+    "iv_note": "elevated after the week's drawdown; rich vs. realized",
+    "put_call": 0.92,
+    "short_interest": "~1.0% of float (low)",
+    "max_pain": "~$205 (Jun monthly)",
+    "notable_flow": "Two-sided: dip-buyers reaching for Jun/Jul $220–$240 upside calls on the buy-the-dip thesis, balanced by protective put spreads from holders who rode it down from $235. With short interest negligible, this is long-money repositioning, not a short squeeze."
   },
-  "what_traders_are_doing": "The dominant trade on desks is 'long AI, short everything else' — NVDA has become the place rotation OUT of crypto and speculative tech is landing, which is why it is green on a week the S&P 500 is red. Short interest is negligible and call skew is firm, so positioning is crowded-long; that cuts both ways, cushioning dips but leaving the stock exposed to a sharp shakeout if AI-capex confidence wobbles or CPI runs hot.",
+  "what_traders_are_doing": "Desks are treating the pullback as a quality-on-sale entry rather than a top. The structure is still higher-highs/higher-lows with RSI basing near 50, and trade alerts last week explicitly flagged buying the dip in chip names. The crowd is long and getting longer into weakness; the debate is valuation (≈31x forward, $5T market cap), not demand.",
   "news": [
-    { "label": "Capital is rotating out of bitcoin and high-beta risk into AI equities — NVDA is the primary beneficiary as the AI bellwether even amid a broad-market de-risking", "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey", "source": "TradingKey", "sentiment": "positive" },
-    { "label": "Hyperscaler 2H26 capex guides remain robust — Microsoft, Alphabet, Amazon and Meta data-center spending continues to underwrite NVDA's order book", "url": "https://www.cnbc.com/technology/", "source": "CNBC", "sentiment": "positive" },
-    { "label": "Friday's hot 172K payrolls pushed the 30Y above 5.0% — a direct headwind to ~39x forward growth multiples like NVDA if yields keep rising", "url": "https://www.schwab.com/learn/story/stock-market-update-open", "source": "Schwab", "sentiment": "negative" },
-    { "label": "HBM supply for the Blackwell/Rubin ramp stays tight; SK Hynix's lead in high-bandwidth memory is the key supply constraint and enabler", "url": "https://en.yna.co.kr/", "source": "Yonhap", "sentiment": "neutral" },
-    { "label": "China export-control headlines remain an overhang on the data-center franchise's addressable market", "url": "https://www.reuters.com/technology/", "source": "Reuters", "sentiment": "negative" },
-    { "label": "All eyes on May CPI (June 10) — the print that decides whether the rate regime pressuring high-multiple tech eases or hardens", "url": "https://www.investing.com/analysis/cpi-preview-will-sticky-inflation-derail-fed-cuts-and-the-2026-stock-rally-200674989", "source": "Investing.com", "sentiment": "neutral" }
+    { "label": "June 8: Jensen Huang says NVIDIA is partnering with South Korea's LG Group to develop humanoid robots and advanced data-center architecture — extending the platform beyond GPUs into physical AI", "url": "https://www.cnbc.com/quotes/NVDA", "source": "CNBC", "sentiment": "positive" },
+    { "label": "NVIDIA unveiled the RTX Spark 'superchip' (Blackwell GPU + N1X/N1 CPU) at GTC Taipei and is pushing into PCs with Arm-based laptop silicon for Dell, HP and Microsoft — the stock popped ~6% on the June 1 reveal", "url": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html", "source": "CNBC", "sentiment": "positive" },
+    { "label": "FY2026 was a record: revenue $215.94B (+65% y/y), data center +69%, Blackwell sold out and inference workloads expanding", "url": "https://intellectia.ai/blog/nvda-stock-earnings-analysis-may-2026", "source": "Intellectia", "sentiment": "positive" },
+    { "label": "Management points to ~$1T of AI-chip demand through 2027 in confirmed orders; Microsoft, Amazon, Google and Meta are set to spend $200B+ on AI infrastructure in 2026", "url": "https://intellectia.ai/blog/nvidia-stock-analysis-2026-ai-demand", "source": "Intellectia", "sentiment": "positive" },
+    { "label": "The stock fell 6.2% on June 5 ($218.66 → $205.10) and is down ~13% from the May 14 record of $235.47 — analysts frame it as a buy-the-dip, average target ~$305, consensus Strong Buy", "url": "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/", "source": "MarketBeat", "sentiment": "neutral" },
+    { "label": "Bear watch: at ~31x forward and a ~$5T cap, the valuation is the vulnerability — any wobble in AI capex or earnings delivery risks sharp multiple compression", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261505954-nvda-nvidia-stock-price-2026-2030-tradingkey", "source": "TradingKey", "sentiment": "negative" }
   ],
   "outlook": {
-    "short_term": "Constructive but event-gated. NVDA reclaimed its breakout and the 50-day, and the rotation bid is real, but the move into CPI is on light volume. Base case is choppy consolidation in the $176–$186 band until June 10; a cool CPI opens a run at the $186 ATH, a hot CPI risks a retest of $168.",
-    "long_term": "Bullish. The AI data-center build-out is multi-year, hyperscaler capex is still rising, and the Blackwell→Rubin product cadence sustains pricing power and ~75% gross margins. The risk is not demand but multiple: at ~39x forward, NVDA needs the beat-and-raise cadence to continue and rates to stop rising. Own it as the core AI holding; let valuation and macro dictate the add points."
+    "short_term": "Basing attempt. NVDA is trying to hold $200–$210 after a sharp reset; the LG/robotics headline and a still-Strong-Buy Street give it a bid. A reclaim of $218 confirms the dip is bought and opens a retest of the $235 high; a loss of $200 risks a deeper flush toward the high-$180s.",
+    "long_term": "Bullish. NVIDIA is the toll booth of the AI build-out — record revenue, ~69% data-center growth, Blackwell sold out, a ~$1T confirmed-order backlog through 2027, and an expanding TAM into PCs and physical AI/robotics. The constraint is no longer demand; it's how much multiple investors will pay. Own it as the core AI holding and let valuation set the add points."
   },
   "bull_case": [
-    "AI demand is inelastic and supply-constrained — hyperscaler capex keeps rising into 2H26 and the data-center backlog stretches quarters out.",
-    "NVDA is where capital fleeing crypto and speculative risk is concentrating — the relative-strength leader, green on a red-tape week.",
-    "Blackwell→Rubin product cadence plus ~75% gross margins sustain a beat-and-raise earnings pattern.",
-    "Technically reclaimed the breakout and held the 50-day after Friday's flush — buyers defended support."
+    "Record FY26: $215.94B revenue (+65%), data center +69%, Blackwell sold out — fundamentals never cracked during the pullback.",
+    "~$1T of confirmed AI-chip demand through 2027 and $200B+ hyperscaler capex in 2026 underwrite the order book.",
+    "TAM expansion: RTX Spark superchip pushes NVIDIA into PCs, and the LG partnership extends it into humanoid robots and physical AI.",
+    "Street is Strong Buy (62 analysts) with a ~$305 average target — roughly 48% upside from here; the ~13% dip is the entry."
   ],
   "bear_case": [
-    "At ~39x forward earnings NVDA is rate-sensitive; the 30Y above 5.0% and a hot June 10 CPI could compress the multiple fast.",
-    "Revenue is concentrated in a handful of hyperscalers — any capex digestion or in-house-silicon shift hits hard.",
-    "China export controls and a risk-off macro (US-Iran, broad de-risking) cap the addressable market and risk appetite.",
-    "Crowded long with negligible short interest — little fuel for a squeeze and lots of profit-taking risk on any AI-capex scare."
+    "Valuation is the vulnerability: ~31x forward earnings and a ~$5T market cap leave little room for error.",
+    "Momentum has rolled over — down 7 of the last 10 sessions and ~13% from the ATH; falling knives can keep falling.",
+    "Customer concentration in a few hyperscalers means any AI-capex digestion hits revenue and the multiple at once.",
+    "A broad high-multiple-tech de-rate (rates, risk sentiment) would compress NVDA fastest as the most-owned AI name."
   ],
   "key_levels": [
-    { "label": "Round-number target", "level": "$190", "kind": "resistance" },
-    { "label": "All-time high", "level": "$186.20", "kind": "resistance" },
-    { "label": "Today's pivot", "level": "$181", "kind": "pivot" },
-    { "label": "Friday low / breakout retest", "level": "$176", "kind": "support" },
-    { "label": "50-day moving average", "level": "$168", "kind": "support" },
-    { "label": "Gap fill / major support", "level": "$158", "kind": "support" }
+    { "label": "All-time high (May 14)", "level": "$235.47", "kind": "resistance" },
+    { "label": "Pre-drop level", "level": "$218.66", "kind": "resistance" },
+    { "label": "Round-number resistance", "level": "$210", "kind": "resistance" },
+    { "label": "Today's pivot", "level": "$205", "kind": "pivot" },
+    { "label": "Psychological support / add zone", "level": "$200", "kind": "support" },
+    { "label": "Deeper flush support", "level": "$188", "kind": "support" }
   ],
   "catalysts": [
-    { "date": "2026-06-10", "label": "U.S. May CPI — the macro swing factor for high-multiple tech", "importance": "high" },
-    { "date": "2026-06-16", "label": "FOMC decision (Warsh Fed) begins — rate path", "importance": "high" },
-    { "date": "2026-06-30", "label": "Quarter-end — window-dressing / rebalancing flows", "importance": "medium" },
-    { "date": "2026-08-27", "label": "NVDA Q2 FY27 earnings (approx.) — next beat-and-raise test", "importance": "high" }
+    { "date": "2026-06-25", "label": "Quarter-end — window-dressing / rebalancing flows", "importance": "medium" },
+    { "date": "2026-08-26", "label": "NVDA Q2 FY27 earnings (approx.) — next beat-and-raise test", "importance": "high" },
+    { "date": "Ongoing", "label": "Hyperscaler AI-capex commentary (MSFT · AMZN · GOOGL · META)", "importance": "medium" },
+    { "date": "Ongoing", "label": "Rubin platform ramp & physical-AI/robotics traction (LG, etc.)", "importance": "medium" }
   ],
-  "analysis": "## The setup\n\nNVIDIA went into the weekend as the unusual thing it has become in 2026: a **high-multiple growth stock that trades like a haven within risk assets**. When [Friday's hot jobs print broke the equity tape and pushed the 30Y back above 5.0%](https://www.schwab.com/learn/story/stock-market-update-open), NVDA sold off with everything else — but it was the first thing bought back on Monday, because the market's dominant narrative is that [capital is rotating out of crypto and speculative risk and into AI](https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey). NVDA is the purest way to own that rotation.\n\n## Why BUY, and why scaled\n\nThe **demand story is not in question**: hyperscaler capex is still rising, the Blackwell-to-Rubin cadence protects margins, and HBM supply — gated by [SK Hynix's lead in high-bandwidth memory](https://en.yna.co.kr/) — is tight, not soft. What *is* in question is the **multiple**. At ~39x forward, NVDA is rate-sensitive, and the single biggest swing factor this week is [May CPI on June 10](https://www.investing.com/analysis/cpi-preview-will-sticky-inflation-derail-fed-cuts-and-the-2026-stock-rally-200674989). That is why the call is BUY but *scaled*: a starter here, with dry powder to add into a CPI-driven dip toward $176 or the 50-day at $168.\n\n## What would change the call\n\nA hot CPI that drives the 30Y above ~5.05% and breaks $168 turns this into a HOLD and a wait-for-stabilization — the demand thesis stays intact but the tape would tell you the multiple is still compressing. Conversely, a cool CPI with NVDA reclaiming $186 on rising volume is the green light to size up toward a full position."
+  "analysis": "## The reset, in context\n\nNVIDIA just gave back about **13% from its May 14 record of $235.47**, closing Friday at $205.10 after a [−6.2% session](https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/) and a week that was red 7 days out of 10. The important point: **nothing in the business broke**. This was a valuation cool-down in the most-owned stock on the planet, not a fundamental crack.\n\n## Why the fundamentals say 'buy the dip'\n\nThe numbers are still extraordinary. FY26 revenue hit a record **$215.94B, up 65%**, with [data center growing ~69% and Blackwell sold out](https://intellectia.ai/blog/nvda-stock-earnings-analysis-may-2026). Management points to roughly **$1T of AI-chip demand through 2027 in confirmed orders**, and the [hyperscalers are set to spend $200B+ on AI infrastructure in 2026](https://intellectia.ai/blog/nvidia-stock-analysis-2026-ai-demand). On top of the data-center engine, NVIDIA is widening its TAM: the [RTX Spark 'superchip' pushes it into PCs](https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html), and today's **LG Group partnership** moves it into humanoid robots and physical AI.\n\n## The catch: valuation\n\nThe single risk worth respecting is the multiple. At **~31x forward earnings and a ~$5T market cap**, NVDA prices in a lot of good news, and [any wobble in AI capex could trigger sharp compression](https://www.tradingkey.com/analysis/stocks/us-stocks/261505954-nvda-nvidia-stock-price-2026-2030-tradingkey). That's exactly why the call is BUY but **scaled** — a starter here, adds toward $200 and the 52-week trend, not a chase.\n\n## What would change the call\n\nA reclaim of **$218** confirms the dip is bought and reopens a run at the $235 high. A loss of **$200** turns this into a HOLD and a wait-for-the-base, with the high-$180s the next shelf. The Street, for what it's worth, is still **Strong Buy with a ~$305 average target** — roughly 48% above here."
 }

@@ -3,59 +3,59 @@
   "symbol": "NVDA",
   "name": "NVIDIA Corp",
   "date": "2026-06-05",
-  "generated_at": "2026-06-05T21:30:00Z",
+  "generated_at": "2026-06-05T20:15:00Z",
   "is_seed": false,
   "day_winner": "bears",
-  "day_summary": "NVDA fell −4.65% to $176.30 as a hot 172K payrolls print sent the 30Y above 5.0% and crushed high-multiple growth across the board. Puts and shorts paid; dip-buyers who stepped in early got run over. A rate shock, not a demand problem.",
-  "long_pnl": "−4.65% — longs and calls hit hard",
-  "short_pnl": "+4.65% — shorts/puts paid",
+  "day_summary": "NVDA dropped −6.2% to $205.10 in a heavy de-risking session, the worst day of a rough week that pulled the stock well off its $235 record. Puts and shorts paid; dip-buyers who stepped in early got run over. A valuation cool-down, not a fundamental crack.",
+  "long_pnl": "−6.2% — longs and calls hit hard",
+  "short_pnl": "+6.2% — shorts/puts paid",
   "decision": {
     "action": "hold",
     "conviction": "medium",
     "horizon": "swing · weeks",
-    "rationale": "Don't catch the knife on a macro break day. The selloff is rate-driven, not a crack in the AI thesis, so this is a HOLD — keep core, don't add until the tape stabilizes and the breakout level firms."
+    "rationale": "Don't catch the knife on a −6% day. The AI demand story is intact, so this is a HOLD — keep core, wait for the selling to exhaust and a base to form before adding."
   },
   "snapshot": {
-    "price": 176.30,
-    "change_pct": -4.65,
-    "change_abs": -8.60,
-    "prev_close": 184.90,
-    "day_low": 174.80,
-    "day_high": 183.20,
-    "week52_low": 98.40,
-    "week52_high": 186.20,
-    "volume": "298M sh",
-    "market_cap": "$4.30T"
+    "price": 205.10,
+    "change_pct": -6.20,
+    "change_abs": -13.56,
+    "prev_close": 218.66,
+    "day_low": 203.40,
+    "day_high": 217.90,
+    "week52_low": 140.86,
+    "week52_high": 236.54,
+    "volume": "342M sh",
+    "market_cap": "$5.02T"
   },
   "positioning": {
-    "iv": 52,
-    "put_call": 1.18,
-    "short_interest": "~1.1% of float",
-    "max_pain": "~$182",
-    "notable_flow": "Put buying surged as the jobs print hit; vol bid hard into the close."
+    "iv": 54,
+    "put_call": 1.22,
+    "short_interest": "~1.0% of float",
+    "max_pain": "~$215",
+    "notable_flow": "Put buying surged through the session as momentum names were sold; vol bid into the close."
   },
-  "what_traders_are_doing": "De-risking across high-multiple tech on the rate shock; NVDA was a source of liquidity on the down day even though the AI demand story was unchanged.",
+  "what_traders_are_doing": "Broad de-risking in high-multiple tech; NVDA was a source of liquidity on the down day even though the data-center demand story was unchanged.",
   "news": [
-    { "label": "Hot 172K payrolls (vs 85K consensus) broke the equity framework — SPX −2.64%, VIX ~20.9, 30Y above 5.0%", "url": "https://www.schwab.com/learn/story/stock-market-update-open", "source": "Schwab", "sentiment": "negative" }
+    { "label": "NVDA fell 6.2% ($218.66 → $205.10) in a momentum-tech selloff, extending a pullback from the May 14 record of $235.47", "url": "https://stockinvest.us/stock/NVDA", "source": "StockInvest", "sentiment": "negative" }
   ],
   "outlook": {
-    "short_term": "Defensive into the weekend; watch whether the $176 breakout level holds on a retest.",
-    "long_term": "Unchanged and bullish — a rate-driven drawdown, not a demand crack."
+    "short_term": "Defensive; watch whether $200 holds on a retest.",
+    "long_term": "Unchanged and bullish — a valuation reset, not a demand crack."
   },
   "bull_case": [
-    "Selloff is macro/rate-driven; the AI demand and capex story is intact.",
-    "Held above the 50-day on a brutal tape — buyers defended."
+    "Selloff is multiple-driven; record revenue and the AI order book are intact.",
+    "Still far above the 52-week low; long-term uptrend unbroken."
   ],
   "bear_case": [
-    "~40x forward is the wrong multiple to own when the 30Y is breaking above 5.0%.",
-    "Crowded long; profit-taking can cascade."
+    "~31x forward is the wrong multiple to own into a momentum unwind.",
+    "Most-owned AI name — crowded long, profit-taking can cascade."
   ],
   "key_levels": [
-    { "label": "All-time high", "level": "$186.20", "kind": "resistance" },
-    { "label": "Breakout retest", "level": "$176", "kind": "support" },
-    { "label": "50-day", "level": "$168", "kind": "support" }
+    { "label": "All-time high", "level": "$235.47", "kind": "resistance" },
+    { "label": "Pivot", "level": "$210", "kind": "pivot" },
+    { "label": "Support", "level": "$200", "kind": "support" }
   ],
   "catalysts": [
-    { "date": "2026-06-10", "label": "U.S. May CPI", "importance": "high" }
+    { "date": "2026-08-26", "label": "NVDA Q2 FY27 earnings (approx.)", "importance": "high" }
   ]
 }

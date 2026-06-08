@@ -3,60 +3,59 @@
   "symbol": "NVDA",
   "name": "NVIDIA Corp",
   "date": "2026-06-04",
-  "generated_at": "2026-06-04T21:30:00Z",
+  "generated_at": "2026-06-04T20:15:00Z",
   "is_seed": false,
-  "day_winner": "bulls",
-  "day_summary": "NVDA rose +1.37% to $184.90, printing a fresh intraday high near $186 as AI-capex optimism and HBM-supply headlines lifted the complex. Calls paid; the trend stayed firmly with the bulls.",
-  "long_pnl": "+1.37% — calls and longs paid",
-  "short_pnl": "−1.37% — shorts underwater",
+  "day_winner": "bears",
+  "day_summary": "NVDA slipped −1.6% to $218.66, drifting lower for a third session as the post-record cool-down continued and momentum names came off the boil. Shorts edged it; the slide from the $235 high was orderly but persistent.",
+  "long_pnl": "−1.6% — longs gave ground",
+  "short_pnl": "+1.6% — shorts paid",
   "decision": {
     "action": "hold",
     "conviction": "medium",
     "horizon": "swing · weeks",
-    "rationale": "Trend intact but extended into the ATH and into Friday's jobs report. HOLD core; let it come in before adding — chasing a parabolic move ahead of a macro catalyst is poor risk/reward."
+    "rationale": "Trend still up but losing momentum from the record. HOLD core; let the pullback find a level before adding rather than chasing a stretched name lower."
   },
   "snapshot": {
-    "price": 184.90,
-    "change_pct": 1.37,
-    "change_abs": 2.50,
-    "prev_close": 182.40,
-    "day_low": 182.10,
-    "day_high": 186.00,
-    "week52_low": 98.40,
-    "week52_high": 186.20,
-    "volume": "176M sh",
-    "market_cap": "$4.51T"
+    "price": 218.66,
+    "change_pct": -1.60,
+    "change_abs": -3.55,
+    "prev_close": 222.21,
+    "day_low": 217.40,
+    "day_high": 223.10,
+    "week52_low": 140.86,
+    "week52_high": 236.54,
+    "volume": "198M sh",
+    "market_cap": "$5.35T"
   },
   "positioning": {
     "iv": 46,
-    "put_call": 0.71,
+    "put_call": 0.95,
     "short_interest": "~1.0% of float",
-    "max_pain": "~$180",
-    "notable_flow": "Call-heavy; upside chasing in weekly $185/$190 strikes."
+    "max_pain": "~$220",
+    "notable_flow": "Quiet, balanced flow; modest hedging as the stock eased off the highs."
   },
-  "what_traders_are_doing": "Momentum longs pressing the AI leader into new highs; little hedging on a calm tape — complacent positioning the day before a jobs report.",
+  "what_traders_are_doing": "Profit-taking after the record run; long-term holders sitting tight while fast money trims into the cool-down.",
   "news": [
-    { "label": "AI-capex optimism and tight HBM supply lift the semiconductor complex to fresh highs", "url": "https://www.cnbc.com/technology/", "source": "CNBC", "sentiment": "positive" }
+    { "label": "NVDA continues to ease from its May 14 record of $235.47 as momentum tech consolidates", "url": "https://finance.yahoo.com/quote/NVDA/", "source": "Yahoo Finance", "sentiment": "neutral" }
   ],
   "outlook": {
-    "short_term": "Extended; vulnerable to a macro-driven pullback at Friday's payrolls.",
+    "short_term": "Consolidating lower; support building in the $210–$218 zone.",
     "long_term": "Bullish — secular AI build-out intact."
   },
   "bull_case": [
-    "Fresh highs on rising AI-capex confidence; trend is up.",
-    "HBM supply tightness underscores pricing power."
+    "Orderly pullback from a record on no fundamental news.",
+    "AI order book and data-center growth underpin the trend."
   ],
   "bear_case": [
-    "Extended into the ATH right before a jobs report — poor risk/reward to chase.",
-    "Complacent, call-heavy positioning leaves room for a shakeout."
+    "Momentum fading from the ATH; stretched valuation.",
+    "A break of $210 would accelerate the unwind."
   ],
   "key_levels": [
-    { "label": "All-time high", "level": "$186.20", "kind": "resistance" },
-    { "label": "Pivot", "level": "$182", "kind": "pivot" },
-    { "label": "Breakout support", "level": "$176", "kind": "support" }
+    { "label": "All-time high", "level": "$235.47", "kind": "resistance" },
+    { "label": "Pivot", "level": "$218", "kind": "pivot" },
+    { "label": "Support", "level": "$210", "kind": "support" }
   ],
   "catalysts": [
-    { "date": "2026-06-05", "label": "U.S. May payrolls (NFP)", "importance": "high" },
-    { "date": "2026-06-10", "label": "U.S. May CPI", "importance": "high" }
+    { "date": "2026-08-26", "label": "NVDA Q2 FY27 earnings (approx.)", "importance": "high" }
   ]
 }
