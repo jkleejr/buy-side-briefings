@@ -74,7 +74,7 @@ export default function AssetCallsPanel({ calls }: { calls: AssetDaily[] }) {
       title="Today's Calls · Asset Desks"
       learn="The standing buy/hold/sell decision and who-made-money-today read for each single-asset desk. Click through for the full daily dossier — positioning, news, outlook, levels, and catalysts."
     >
-      <div className="grid grid-cols-1 gap-1 p-2 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-1 p-2">
         {calls.map((d) => (
           <CallCard key={d.asset} d={d} />
         ))}

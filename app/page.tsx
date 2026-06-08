@@ -1,8 +1,8 @@
-import { getAllBriefings, getLatestMarketsVerdict } from "@/lib/data";
+import { getAllBriefings, getLatestMarketsVerdict, getLatestCryptoVerdict } from "@/lib/data";
 import { getLatestAssetDaily } from "@/lib/asset-daily";
 import VerdictCard from "@/components/verdict-card";
 import AssetCallsPanel from "@/components/asset-calls-panel";
-import SnapshotGrid from "@/components/snapshot-grid";
+import MarketKpiStrip from "@/components/market-kpi-strip";
 import RegimeRiskBars from "@/components/regime-risk-bars";
 import BriefingList from "@/components/briefing-list";
 import CryptoPanel from "@/components/crypto-panel";
@@ -40,6 +40,7 @@ function SectionLabel({ title, note }: { title: string; note?: string }) {
 
 export default function Home() {
   const verdict = getLatestMarketsVerdict();
+  const crypto = getLatestCryptoVerdict();
   const briefings = getAllBriefings();
   const assetCalls = [
     getLatestAssetDaily("nvda"),
@@ -56,18 +57,20 @@ export default function Home() {
         </div>
       )}
 
+      {/* At-a-glance market header — fills the top edge-to-edge, no dead space. */}
+      <MarketKpiStrip verdict={verdict} crypto={crypto} />
+
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
         {/* ========================= THE CALL ========================= */}
-        {/* Decision-critical, top of the page: the verdict, today's asset
-            buy/hold/sell calls, the markets snapshot, and live crypto. */}
+        {/* Verdict and today's asset buy/hold/sell calls, side by side. */}
         <SectionLabel title="The Call" note="latest verdict & today's decisions" />
 
         {verdict ? (
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-8">
             <VerdictCard verdict={verdict} />
           </div>
         ) : (
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-8">
             <Panel code="VRDCT" title="Latest Buy Verdict">
               <div className="p-4 text-center font-mono text-[11px] text-[var(--dim)]">
                 No Buy Verdict on file yet.
@@ -75,42 +78,32 @@ export default function Home() {
             </Panel>
           </div>
         )}
-        {verdict && (
+        {assetCalls.length > 0 ? (
           <div className="lg:col-span-4">
-            <SnapshotGrid verdict={verdict} />
-          </div>
-        )}
-        <div className="lg:col-span-3">
-          <CryptoPanel />
-        </div>
-
-        {/* Today's single-asset desks (NVDA · BTC · SK Hynix) — the
-            buy/hold/sell + who-won read, linking to each full dossier. */}
-        {assetCalls.length > 0 && (
-          <div className="lg:col-span-12">
             <AssetCallsPanel calls={assetCalls} />
+          </div>
+        ) : (
+          <div className="lg:col-span-4">
+            <CryptoPanel />
           </div>
         )}
 
         {/* ========================= MARKETS ========================= */}
-        <SectionLabel title="Markets" note="equities, metals & overnight sessions" />
+        {/* Three index charts share one panel (no lonely wide chart), with
+            metals beside; global sessions and live crypto fill the next row. */}
+        <SectionLabel title="Markets" note="US indices, metals, crypto & overnight sessions" />
 
-        {/* SPY only on the home page; QQQ + IWM live on /indices, tech on /tech. */}
         <div className="lg:col-span-9">
-          <UsIndicesPanel
-            assets={[
-              { symbol: "SPY", label: "SPY", sublabel: "S&P 500", color: "#22d3ee" },
-            ]}
-            code="SPY"
-            title="SPY · S&P 500"
-            learn="The single most-watched US equity benchmark — SPDR S&P 500 ETF. Use this as the 'is the market up or down today?' read; full US-indices comparison (SPY · QQQ · IWM) lives on the Indices page."
-          />
+          <UsIndicesPanel />
         </div>
         <div className="lg:col-span-3">
           <MetalsPanel />
         </div>
-        <div className="lg:col-span-12">
+        <div className="lg:col-span-8">
           <GlobalMarketsPanel />
+        </div>
+        <div className="lg:col-span-4">
+          <CryptoPanel />
         </div>
 
         {/* =================== BREADTH, SENTIMENT & RISK =================== */}
