@@ -1,0 +1,63 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-06",
+  "generated_at": "2026-06-06T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "Bitcoin fell −5.35% to ~$60,100 as Friday's risk-off bled into the weekend and the US-Iran escalation removed the one relief valve (lower oil). Shorts and puts paid for a third straight session; every bounce was sold.",
+  "long_pnl": "−5.35% — longs and calls crushed",
+  "short_pnl": "+5.35% — shorts paid",
+  "decision": {
+    "action": "sell",
+    "conviction": "medium",
+    "horizon": "days",
+    "rationale": "Momentum and macro both pointed down with no support in sight. SELL/de-risk: trim into strength, raise cash, and wait for the liquidation cascade to exhaust before even thinking about a level-defined re-entry."
+  },
+  "snapshot": {
+    "price": 60100,
+    "change_pct": -5.35,
+    "change_abs": -3400,
+    "prev_close": 63500,
+    "day_low": 59800,
+    "day_high": 63700,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "$52B (24h)",
+    "market_cap": "$1.19T",
+    "extra": [
+      { "label": "Fear & Greed", "value": "20 · Extreme Fear", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 74,
+    "put_call": 1.51,
+    "short_interest": "funding negative; cascading liquidations",
+    "max_pain": "~$64,000",
+    "notable_flow": "Liquidation cascade accelerated through $62K; vol spiked as spot support gave way."
+  },
+  "what_traders_are_doing": "Risk-off and forced selling; the US-Iran escalation killed the lower-oil relief trade and traders pressed shorts into a vacuum of bids.",
+  "news": [
+    { "label": "Crypto extends its slide as the US-Iran conflict feeds inflation fear and delays Fed cuts; rumors of Strategy selling bitcoin pile on", "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey", "source": "TradingKey", "sentiment": "negative" }
+  ],
+  "outlook": {
+    "short_term": "Downtrend intact; no support until the high-$50Ks.",
+    "long_term": "Bull case on hold until the rate/dollar regime turns."
+  },
+  "bull_case": [
+    "Approaching levels where extreme fear historically marks washouts."
+  ],
+  "bear_case": [
+    "No bid, no floor, and a worsening macro/geopolitical backdrop.",
+    "Forced selling from ETFs and a corporate holder overwhelms demand."
+  ],
+  "key_levels": [
+    { "label": "Resistance", "level": "$63,500", "kind": "resistance" },
+    { "label": "Pivot", "level": "$60,000", "kind": "pivot" },
+    { "label": "Support", "level": "$59,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-10", "label": "U.S. May CPI", "importance": "high" }
+  ]
+}

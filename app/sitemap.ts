@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/watchlist",
     "/crypto",
     "/crypto-briefings",
+    "/bitcoin",
+    "/nvidia",
     "/kospi",
     "/metals",
     "/indices",

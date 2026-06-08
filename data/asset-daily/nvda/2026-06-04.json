@@ -1,0 +1,62 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T21:30:00Z",
+  "is_seed": false,
+  "day_winner": "bulls",
+  "day_summary": "NVDA rose +1.37% to $184.90, printing a fresh intraday high near $186 as AI-capex optimism and HBM-supply headlines lifted the complex. Calls paid; the trend stayed firmly with the bulls.",
+  "long_pnl": "+1.37% — calls and longs paid",
+  "short_pnl": "−1.37% — shorts underwater",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "swing · weeks",
+    "rationale": "Trend intact but extended into the ATH and into Friday's jobs report. HOLD core; let it come in before adding — chasing a parabolic move ahead of a macro catalyst is poor risk/reward."
+  },
+  "snapshot": {
+    "price": 184.90,
+    "change_pct": 1.37,
+    "change_abs": 2.50,
+    "prev_close": 182.40,
+    "day_low": 182.10,
+    "day_high": 186.00,
+    "week52_low": 98.40,
+    "week52_high": 186.20,
+    "volume": "176M sh",
+    "market_cap": "$4.51T"
+  },
+  "positioning": {
+    "iv": 46,
+    "put_call": 0.71,
+    "short_interest": "~1.0% of float",
+    "max_pain": "~$180",
+    "notable_flow": "Call-heavy; upside chasing in weekly $185/$190 strikes."
+  },
+  "what_traders_are_doing": "Momentum longs pressing the AI leader into new highs; little hedging on a calm tape — complacent positioning the day before a jobs report.",
+  "news": [
+    { "label": "AI-capex optimism and tight HBM supply lift the semiconductor complex to fresh highs", "url": "https://www.cnbc.com/technology/", "source": "CNBC", "sentiment": "positive" }
+  ],
+  "outlook": {
+    "short_term": "Extended; vulnerable to a macro-driven pullback at Friday's payrolls.",
+    "long_term": "Bullish — secular AI build-out intact."
+  },
+  "bull_case": [
+    "Fresh highs on rising AI-capex confidence; trend is up.",
+    "HBM supply tightness underscores pricing power."
+  ],
+  "bear_case": [
+    "Extended into the ATH right before a jobs report — poor risk/reward to chase.",
+    "Complacent, call-heavy positioning leaves room for a shakeout."
+  ],
+  "key_levels": [
+    { "label": "All-time high", "level": "$186.20", "kind": "resistance" },
+    { "label": "Pivot", "level": "$182", "kind": "pivot" },
+    { "label": "Breakout support", "level": "$176", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-05", "label": "U.S. May payrolls (NFP)", "importance": "high" },
+    { "date": "2026-06-10", "label": "U.S. May CPI", "importance": "high" }
+  ]
+}

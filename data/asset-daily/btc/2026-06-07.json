@@ -1,0 +1,65 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-07",
+  "generated_at": "2026-06-07T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "Bitcoin slid −1.45% to ~$59,230, printing a weekend capitulation low near $59,227 before steadying. Shorts and puts kept paying; the only longs that survived were the ones that didn't use leverage.",
+  "long_pnl": "−1.45% — longs underwater, leverage liquidated",
+  "short_pnl": "+1.45% — shorts paid again",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "days · event-gated",
+    "rationale": "Capitulation is happening — don't sell into it, but don't buy it either. HOLD: leverage is being wiped and Fear & Greed is at extremes, yet there is no catalyst until CPI. Wait for the bounce to prove itself above $66K."
+  },
+  "snapshot": {
+    "price": 59230,
+    "change_pct": -1.45,
+    "change_abs": -870,
+    "prev_close": 60100,
+    "day_low": 59227,
+    "day_high": 60550,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "$38B (24h)",
+    "market_cap": "$1.17T",
+    "extra": [
+      { "label": "Fear & Greed", "value": "16 · Extreme Fear", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 71,
+    "put_call": 1.42,
+    "short_interest": "funding deeply negative — peak liquidation",
+    "max_pain": "~$62,000",
+    "notable_flow": "The bulk of weekend liquidations hit here; spot bid thin over the weekend amplified the move to the low."
+  },
+  "what_traders_are_doing": "Forced sellers and liquidations dominated a thin weekend tape; disciplined traders sat in cash waiting for the cascade to exhaust.",
+  "news": [
+    { "label": "Weekend capitulation: BTC bottomed near ~$59,227 as ~$7B in leverage was wiped and a Mt. Gox transfer added supply uncertainty", "url": "https://www.coindesk.com/", "source": "CoinDesk", "sentiment": "negative" }
+  ],
+  "outlook": {
+    "short_term": "Capitulation low in place but unconfirmed; risk asymmetric to the downside until CPI.",
+    "long_term": "Unanchored — scarcity thesis intact but no valuation floor in a flows-driven drawdown."
+  },
+  "bull_case": [
+    "Extreme fear and a liquidation washout are the ingredients of a bottom.",
+    "The $59,227 low held into Sunday."
+  ],
+  "bear_case": [
+    "Thin weekend liquidity can overshoot; no fundamental floor.",
+    "ETF outflows and Strategy selling mean the structural bid is gone."
+  ],
+  "key_levels": [
+    { "label": "Re-risk trigger", "level": "$66,000", "kind": "resistance" },
+    { "label": "Pivot", "level": "$60,000", "kind": "pivot" },
+    { "label": "Capitulation low", "level": "$59,227", "kind": "support" },
+    { "label": "Next support", "level": "$55,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-10", "label": "U.S. May CPI", "importance": "high" }
+  ]
+}

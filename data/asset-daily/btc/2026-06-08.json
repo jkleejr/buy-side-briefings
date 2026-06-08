@@ -1,0 +1,84 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "bulls",
+  "day_summary": "Bitcoin steadied +1.3% to ~$60,000 after the weekend's ~$59,227 capitulation low held — a small win for dip-buyers and a relief for anyone short into the bounce. But this is a reflex rally inside a ~48%-from-peak drawdown, on no catalyst, two days before CPI. A green candle, not a bottom confirmed.",
+  "long_pnl": "+1.3% — longs eked out a bounce off the low",
+  "short_pnl": "−1.3% — shorts gave back a little of the week's gains",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "days · event-gated",
+    "rationale": "Step aside, don't chase. The weekend low looks like capitulation, but there is no catalyst to buy before May CPI on June 10, and BTC is trading as high-beta risk while the dollar and yields rise. HOLD: if you own it, don't panic-sell into the capitulation; if you don't, don't buy the knife. Require a reclaim of $66,000 with VIX back below 18 before adding — a hot CPI that breaks $59K targets $52–55K."
+  },
+  "snapshot": {
+    "price": 60000,
+    "change_pct": 1.3,
+    "change_abs": 770,
+    "prev_close": 59230,
+    "day_low": 59180,
+    "day_high": 60850,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "$41B (24h)",
+    "market_cap": "$1.19T",
+    "extra": [
+      { "label": "From peak", "value": "−48%", "tone": "down" },
+      { "label": "BTC dominance", "value": "59.0%", "tone": "neutral" },
+      { "label": "Fear & Greed", "value": "18 · Extreme Fear", "tone": "down" },
+      { "label": "7-day", "value": "−15%", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 68,
+    "iv_note": "DVOL elevated; rich after the liquidation cascade",
+    "put_call": 1.35,
+    "short_interest": "perp funding slightly negative — shorts paying, longs flushed",
+    "max_pain": "~$62,000 (front expiry)",
+    "notable_flow": "~$7B in leveraged positions were liquidated on the week and funding reset negative; spot-BTC-ETF outflows exceeded $3.2B, so derivatives have cleansed but the institutional bid is still leaving. Some bottom-fishing call buying in the $66K–$70K strikes, offset by protective puts into CPI."
+  },
+  "what_traders_are_doing": "The tape is de-risked and waiting. Leverage has been wiped, funding is negative, and Fear & Greed at 18 signals capitulation — but spot ETF outflows show institutions are still net sellers, and the largest corporate holder (Strategy/MSTR) disclosed a bitcoin sale. The marginal trader is sidelined in cash/stables, treating any bounce as a level to fade until CPI clears and BTC reclaims $66K. Capital is actively rotating out of crypto into AI equities like NVIDIA.",
+  "news": [
+    { "label": "Total crypto market cap is down ~48% from its 2026 peak; BTC nearing $60,000 after a ~$59,227 weekend low — macro break, not a crypto-specific crack", "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey", "source": "TradingKey", "sentiment": "negative" },
+    { "label": "More than $3.2B has left spot bitcoin ETFs — the institutional bid that powered 2025–26 has reversed", "url": "https://www.coindesk.com/", "source": "CoinDesk", "sentiment": "negative" },
+    { "label": "Strategy (MicroStrategy) disclosed its first bitcoin sale — the largest corporate holder turning seller is the single biggest sentiment shock", "url": "https://www.coindesk.com/", "source": "CoinDesk", "sentiment": "negative" },
+    { "label": "~$7B in leveraged positions liquidated on the week; a Mt. Gox wallet transfer adds supply uncertainty", "url": "https://www.coindesk.com/", "source": "CoinDesk", "sentiment": "negative" },
+    { "label": "Observers blame the AI boom for draining capital from bitcoin into AI equities — even a risk-on bounce may not accrue to crypto", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-5-2026-prices-continue-their-descent---5-reasons-why-113631165.html", "source": "Yahoo Finance", "sentiment": "negative" },
+    { "label": "May CPI on June 10 is the next binary — a hot print confirms higher-for-longer and risks breaking the $59K low; see the full crypto briefing", "url": "https://www.investing.com/analysis/cpi-preview-will-sticky-inflation-derail-fed-cuts-and-the-2026-stock-rally-200674989", "source": "Investing.com", "sentiment": "neutral" }
+  ],
+  "outlook": {
+    "short_term": "Choppy stabilization near $60K is the base case as the capitulation low holds, but the risk is asymmetric to the downside until CPI. A hot print breaks $59K and opens $52–55K; a cool print plus a $66K reclaim restarts a recovery phase. This is an event-gated tape — position size small until June 10.",
+    "long_term": "Constructive but unanchored. The scarcity/halving supply story and institutional-adoption thesis remain intact over multi-year horizons, but with no cash-flow valuation floor, a ~48% drawdown can overshoot on flows and narrative alone. Bitcoin only resumes its bull case once it trades as digital gold again rather than as leveraged risk — which requires the dollar/rate regime to turn."
+  },
+  "bull_case": [
+    "Capitulation signature: Fear & Greed at 18, ~$7B liquidated, funding reset negative, and the ~$59,227 weekend low held.",
+    "Leverage is cleansed — the derivatives overhang that accelerated the crash has been wiped, a necessary condition for a bottom.",
+    "Long-term scarcity and institutional-adoption thesis intact; extreme fear is a contrarian-constructive signal over long horizons.",
+    "A cool CPI on June 10 could trigger a sharp oversold bounce given how one-sided positioning has become."
+  ],
+  "bear_case": [
+    "No valuation floor — pure supply, demand, and narrative, and all three turned at once.",
+    "Macro is unresolved: 30Y above 5.0%, a firm dollar, and delayed Fed cuts mean BTC is trading as high-beta risk, not a haven.",
+    "Structural supply shock: Strategy selling, >$3.2B in ETF outflows, and a Mt. Gox transfer hang over the bid.",
+    "AI rotation is actively draining capital from crypto into equities like NVIDIA — even a risk-on bounce may bypass bitcoin."
+  ],
+  "key_levels": [
+    { "label": "Re-risk trigger", "level": "$66,000", "kind": "resistance" },
+    { "label": "Prior support, now resistance", "level": "$63,500", "kind": "resistance" },
+    { "label": "Today's pivot", "level": "$60,000", "kind": "pivot" },
+    { "label": "Capitulation low", "level": "$59,000", "kind": "support" },
+    { "label": "Next major support", "level": "$55,000", "kind": "support" },
+    { "label": "Downside target if $59K breaks", "level": "$52,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-10", "label": "U.S. May CPI — the swing factor for the whole risk complex", "importance": "high" },
+    { "date": "2026-06-16", "label": "FOMC decision (Warsh Fed) begins — rate path", "importance": "high" },
+    { "date": "2026-06-27", "label": "Monthly options expiry — large open interest roll", "importance": "medium" },
+    { "date": "Daily", "label": "Spot-BTC-ETF flow prints — watch for outflows to stop", "importance": "medium" }
+  ],
+  "analysis": "## The session\n\nBitcoin did what washed-out markets do: it bounced. A [~$59,227 weekend low](https://www.coindesk.com/) held, funding reset negative, and a +1.3% candle to ~$60,000 paid the dip-buyers and squeezed the latest shorts. But context matters — this is a reflex rally inside a [~48%-from-peak drawdown](https://www.tradingkey.com/analysis/cryptocurrencies/btc/261945885-crypto-bitcoin-btc-price-crashing-usd-strategy-fed-tradingkey), on no catalyst, two days before CPI.\n\n## Why HOLD, not buy\n\nThe **derivatives picture is constructive** — ~$7B liquidated, leverage cleansed, Fear & Greed at 18 — but the **spot picture is not**: [more than $3.2B has left spot ETFs](https://www.coindesk.com/) and [Strategy disclosed a bitcoin sale](https://www.coindesk.com/). When the largest structural buyers turn sellers, capitulation lows get retested. And the macro that broke the trade — a firm dollar, the [30Y above 5.0%](https://www.schwab.com/learn/story/stock-market-update-open) — is unresolved into [May CPI on June 10](https://www.investing.com/analysis/cpi-preview-will-sticky-inflation-derail-fed-cuts-and-the-2026-stock-rally-200674989).\n\n## The line in the sand\n\nDon't panic-sell the capitulation, but don't buy the knife. The earliest re-risk signal is a **reclaim of $66,000 with VIX back below 18**. The invalidation is a **hot CPI that breaks $59,000**, which targets $52–55K. Until June 10, this is a sit-on-your-hands tape — and the cleaner expression of the same macro is [long the AI rotation](https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-5-2026-prices-continue-their-descent---5-reasons-why-113631165.html) that is draining crypto, not the dip in bitcoin itself."
+}

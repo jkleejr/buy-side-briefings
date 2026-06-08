@@ -1,0 +1,63 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "Bitcoin crashed −9.5% to ~$63,500 as a hot 172K US payrolls print sent yields and the dollar higher and broke the risk tape; BTC fell hardest as the highest-beta risk asset. A brutal day for longs; shorts and puts made the week.",
+  "long_pnl": "−9.5% — longs and calls hammered",
+  "short_pnl": "+9.5% — shorts paid big",
+  "decision": {
+    "action": "sell",
+    "conviction": "high",
+    "horizon": "days",
+    "rationale": "The macro framework that supported risk just broke. SELL/de-risk hard: reduce exposure, raise cash, and do not buy the first leg down of a rate shock — high-beta crypto leads to the downside."
+  },
+  "snapshot": {
+    "price": 63500,
+    "change_pct": -9.5,
+    "change_abs": -6700,
+    "prev_close": 70200,
+    "day_low": 62900,
+    "day_high": 70400,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "$61B (24h)",
+    "market_cap": "$1.26T",
+    "extra": [
+      { "label": "Fear & Greed", "value": "27 · Fear", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 70,
+    "put_call": 1.44,
+    "short_interest": "longs liquidated en masse as the print hit",
+    "max_pain": "~$67,000",
+    "notable_flow": "Spot-ETF outflows and the NFP shock triggered the first big liquidation wave; vol exploded."
+  },
+  "what_traders_are_doing": "Wholesale de-risking on the rate shock; BTC was sold as the highest-beta expression of risk, leading the entire complex lower.",
+  "news": [
+    { "label": "Hot 172K payrolls broke the equity framework (SPX −2.64%, VIX ~20.9, 30Y above 5.0%); crypto fell hardest", "url": "https://www.schwab.com/learn/story/stock-market-update-open", "source": "Schwab", "sentiment": "negative" }
+  ],
+  "outlook": {
+    "short_term": "Sharp downtrend; expect follow-through and liquidations.",
+    "long_term": "Thesis intact but irrelevant until the rate regime stabilizes."
+  },
+  "bull_case": [
+    "Violent moves can exhaust quickly once leverage clears."
+  ],
+  "bear_case": [
+    "A rate shock with no Fed relief in sight; BTC trading as pure risk-beta.",
+    "ETF outflows accelerate the down move."
+  ],
+  "key_levels": [
+    { "label": "Resistance", "level": "$70,000", "kind": "resistance" },
+    { "label": "Pivot", "level": "$66,000", "kind": "pivot" },
+    { "label": "Support", "level": "$60,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-10", "label": "U.S. May CPI", "importance": "high" }
+  ]
+}

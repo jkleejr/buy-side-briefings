@@ -1,0 +1,61 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T21:30:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "NVDA fell −4.65% to $176.30 as a hot 172K payrolls print sent the 30Y above 5.0% and crushed high-multiple growth across the board. Puts and shorts paid; dip-buyers who stepped in early got run over. A rate shock, not a demand problem.",
+  "long_pnl": "−4.65% — longs and calls hit hard",
+  "short_pnl": "+4.65% — shorts/puts paid",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "swing · weeks",
+    "rationale": "Don't catch the knife on a macro break day. The selloff is rate-driven, not a crack in the AI thesis, so this is a HOLD — keep core, don't add until the tape stabilizes and the breakout level firms."
+  },
+  "snapshot": {
+    "price": 176.30,
+    "change_pct": -4.65,
+    "change_abs": -8.60,
+    "prev_close": 184.90,
+    "day_low": 174.80,
+    "day_high": 183.20,
+    "week52_low": 98.40,
+    "week52_high": 186.20,
+    "volume": "298M sh",
+    "market_cap": "$4.30T"
+  },
+  "positioning": {
+    "iv": 52,
+    "put_call": 1.18,
+    "short_interest": "~1.1% of float",
+    "max_pain": "~$182",
+    "notable_flow": "Put buying surged as the jobs print hit; vol bid hard into the close."
+  },
+  "what_traders_are_doing": "De-risking across high-multiple tech on the rate shock; NVDA was a source of liquidity on the down day even though the AI demand story was unchanged.",
+  "news": [
+    { "label": "Hot 172K payrolls (vs 85K consensus) broke the equity framework — SPX −2.64%, VIX ~20.9, 30Y above 5.0%", "url": "https://www.schwab.com/learn/story/stock-market-update-open", "source": "Schwab", "sentiment": "negative" }
+  ],
+  "outlook": {
+    "short_term": "Defensive into the weekend; watch whether the $176 breakout level holds on a retest.",
+    "long_term": "Unchanged and bullish — a rate-driven drawdown, not a demand crack."
+  },
+  "bull_case": [
+    "Selloff is macro/rate-driven; the AI demand and capex story is intact.",
+    "Held above the 50-day on a brutal tape — buyers defended."
+  ],
+  "bear_case": [
+    "~40x forward is the wrong multiple to own when the 30Y is breaking above 5.0%.",
+    "Crowded long; profit-taking can cascade."
+  ],
+  "key_levels": [
+    { "label": "All-time high", "level": "$186.20", "kind": "resistance" },
+    { "label": "Breakout retest", "level": "$176", "kind": "support" },
+    { "label": "50-day", "level": "$168", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-10", "label": "U.S. May CPI", "importance": "high" }
+  ]
+}
