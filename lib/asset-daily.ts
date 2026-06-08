@@ -13,7 +13,7 @@ const DATA_DIR = path.resolve(process.cwd(), "data");
 // Each day is one JSON file at data/asset-daily/<asset>/<YYYY-MM-DD>.json.
 // ---------------------------------------------------------------------------
 
-export type AssetId = "nvda" | "btc";
+export type AssetId = "nvda" | "btc" | "skhynix";
 
 /** Who was paid in today's session. */
 export type DayWinner = "bulls" | "bears" | "flat";
@@ -81,6 +81,8 @@ export type AssetDaily = {
   date: string;
   generated_at: string;
   is_seed?: boolean;
+  /** Currency symbol for prices/levels (default "$"). e.g. "₩" for KRW names. */
+  currency_symbol?: string;
 
   /** Who made money today and a one-line read of the session. */
   day_winner: DayWinner;

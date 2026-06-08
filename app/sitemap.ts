@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/bitcoin",
     "/nvidia",
     "/kospi",
+    "/skhynix",
     "/metals",
     "/indices",
     "/tech",

@@ -1,0 +1,79 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T07:00:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+  "day_winner": "bulls",
+  "day_summary": "SK Hynix rose +1.8% to ₩268,000 — green on a red day. While the KOSPI fell ~0.9% on the global risk-off and a weak won, the HBM memory leader was bought as the cleanest Asian beneficiary of the AI capital rotation. Longs and the foreign bid won; this was the relative-strength leader of the whole market.",
+  "long_pnl": "+1.8% — longs paid, outperformed a red KOSPI",
+  "short_pnl": "−1.8% — shorts squeezed against the trend",
+  "decision": {
+    "action": "buy",
+    "conviction": "medium",
+    "horizon": "swing · 1–3 months",
+    "rationale": "SK Hynix is the supply-side twin of the long-AI trade: the lead supplier of high-bandwidth memory (HBM) to Nvidia, with demand that is inelastic to the week's macro. It is showing genuine relative strength — green while the KOSPI and global risk are red — because the AI rotation that is draining crypto flows straight into HBM. BUY at medium conviction, but mind two Korea-specific risks: a won sliding toward 1,400/USD eats foreign-currency returns, and the stock is the index's single biggest swing factor, so it falls hard if HBM pricing or Nvidia capex ever blinks. Own the leader; scale adds on macro-driven dips toward ₩250,000."
+  },
+  "snapshot": {
+    "price": 268000,
+    "change_pct": 1.8,
+    "change_abs": 4700,
+    "prev_close": 263300,
+    "day_low": 262500,
+    "day_high": 269500,
+    "week52_low": 151000,
+    "week52_high": 285000,
+    "volume": "3.9M sh",
+    "market_cap": "₩195T",
+    "extra": [
+      { "label": "USD price", "value": "~$192", "tone": "neutral" },
+      { "label": "vs KOSPI today", "value": "+2.7pp", "tone": "up" },
+      { "label": "From 52w high", "value": "−6.0%", "tone": "neutral" },
+      { "label": "USD/KRW", "value": "₩1,392", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "short_interest": "Foreign-owned ~54% — the marginal buyer/seller",
+    "notable_flow": "Foreign institutions were net buyers of SK Hynix even as they sold the broad KOSPI — a clear rotation into the AI-memory leader. The risk cuts both ways: with foreigners owning ~54% of the float, a won break above 1,400/USD can trigger FX-driven selling regardless of the HBM story."
+  },
+  "what_traders_are_doing": "Desks are treating SK Hynix as the Asian leg of the global 'long AI infrastructure' trade — the memory bottleneck that Nvidia's accelerators can't run without. It is the relative-strength leader of the KOSPI, bought on dips by foreign institutions, while won-sensitive and cyclical names are sold. The crowd is long the HBM cycle; the hedge most traders watch is USD/KRW, not the stock itself.",
+  "news": [
+    { "label": "SK Hynix is the lead supplier of HBM (high-bandwidth memory) to Nvidia — the single biggest beneficiary in Asia of the AI capital rotation, holding green while the KOSPI sells off", "url": "https://en.yna.co.kr/", "source": "Yonhap", "sentiment": "positive" },
+    { "label": "HBM supply for the Blackwell/Rubin accelerator ramp stays tight; SK Hynix's technology lead is the key supply constraint for the whole AI complex", "url": "https://www.reuters.com/technology/", "source": "Reuters", "sentiment": "positive" },
+    { "label": "Foreign investors net-sold the broad KOSPI but net-bought SK Hynix — a rotation into the AI-memory leader within a de-risking tape", "url": "https://www.koreaherald.com/", "source": "Korea Herald", "sentiment": "positive" },
+    { "label": "The won is sliding toward 1,400/USD as the dollar firms — a headwind to foreign-currency returns for the ~54% foreign-owned float", "url": "https://www.koreaherald.com/", "source": "Korea Herald", "sentiment": "negative" },
+    { "label": "Read alongside the daily NVIDIA dossier (the demand side) and the KOSPI briefing (the macro/FX overlay)", "url": "/nvidia", "source": "BSB", "sentiment": "neutral" }
+  ],
+  "outlook": {
+    "short_term": "Constructive relative-strength leader, but FX-gated. SK Hynix should keep outperforming a weak KOSPI on the HBM bid, yet a won break above 1,400/USD can cap or reverse foreign buying regardless. Base case: holds the ₩260,000–₩285,000 band; a clean KOSPI/won stabilization opens a run at the ₩285,000 high.",
+    "long_term": "Bullish. The HBM/AI-memory super-cycle is multi-year, SK Hynix holds the technology lead, and memory pricing power is the strongest it has been in a decade. The risks are concentration (one AI narrative drives the stock and a third of the KOSPI) and FX. Own it as the core Asian AI-infrastructure holding; let the won and Nvidia's capex cadence set the add points."
+  },
+  "bull_case": [
+    "Lead HBM supplier to Nvidia — the memory bottleneck of the entire AI build-out, with demand inelastic to the macro.",
+    "Genuine relative strength: green on a red KOSPI day as the AI rotation flows into memory.",
+    "Strongest memory pricing power in a decade; the Blackwell→Rubin ramp keeps HBM supply tight.",
+    "Foreign institutions are net buyers of the name even while selling the broad index."
+  ],
+  "bear_case": [
+    "~54% foreign-owned and FX-sensitive: a won break above 1,400/USD can drive selling regardless of the HBM story.",
+    "Single-narrative concentration — the stock (and ~a third of the KOSPI) rides on AI memory; an HBM pricing or Nvidia-capex wobble hits hard.",
+    "High-beta to the global semiconductor cycle and to a risk-off tape led by US rates.",
+    "Korea is an energy importer; the US-Iran oil spike pressures the broader market it trades within."
+  ],
+  "key_levels": [
+    { "label": "52-week high", "level": "₩285,000", "kind": "resistance" },
+    { "label": "Round-number resistance", "level": "₩275,000", "kind": "resistance" },
+    { "label": "Today's pivot", "level": "₩268,000", "kind": "pivot" },
+    { "label": "Add zone on dips", "level": "₩250,000", "kind": "support" },
+    { "label": "Trend support", "level": "₩240,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-10", "label": "U.S. May CPI — drives USD/KRW and foreign flows into Korea", "importance": "high" },
+    { "date": "2026-06-16", "label": "FOMC decision (Warsh Fed) — dollar/rate path", "importance": "high" },
+    { "date": "2026-07-24", "label": "SK Hynix Q2 earnings (approx.) — HBM mix & memory pricing", "importance": "high" },
+    { "date": "Ongoing", "label": "Nvidia accelerator capex & HBM order commentary", "importance": "medium" }
+  ],
+  "analysis": "## The two sides of one trade\n\nThe cleanest way to understand SK Hynix in 2026 is as the **supply side of the same trade that NVIDIA is the demand side of**. Nvidia sells the accelerators; SK Hynix makes the [high-bandwidth memory those accelerators cannot run without](https://en.yna.co.kr/). So when capital rotates out of crypto and speculative risk and into AI, it doesn't just buy Nvidia — it buys the memory bottleneck, and SK Hynix is the technology leader there.\n\n## Why it's green on a red day\n\nOn June 8 the KOSPI fell ~0.9% on a weak won and the global risk-off, yet SK Hynix rose +1.8%. That divergence is the whole thesis: [foreign institutions sold the broad index but bought the AI-memory leader](https://www.koreaherald.com/). HBM demand is inelastic to the week's macro, and supply for the Blackwell/Rubin ramp is tight.\n\n## The catch: the won\n\nSK Hynix is **~54% foreign-owned**, which makes it as much an FX instrument as a semiconductor one. With [USD/KRW grinding toward 1,400](https://www.koreaherald.com/), an unhedged dollar investor is also short the won — and a decisive break of 1,400 can trigger foreign selling that overwhelms the HBM bid. That is why the BUY is medium-conviction and scaled, and why the level most traders watch is the currency, not the chart.\n\n## What would change the call\n\nA hot [May CPI on June 10](https://www.investing.com/indices/kospi) that drives the won through 1,400 turns this into a HOLD until the FX stabilizes — the HBM thesis stays intact, but the tape would tell you FX is in control. A cool CPI with the won holding below 1,400 reopens a run at the ₩285,000 high."
+}

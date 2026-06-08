@@ -117,7 +117,8 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
   const act = ACTION_META[today.decision.action];
   const snap = today.snapshot;
   const isCrypto = today.asset === "btc";
-  const px = (n: number) => `$${formatLevel(n)}`;
+  const cur = today.currency_symbol ?? "$";
+  const px = (n: number) => `${cur}${formatLevel(n)}`;
 
   return (
     <div className="space-y-2">

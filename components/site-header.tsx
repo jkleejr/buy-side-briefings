@@ -13,6 +13,7 @@ const NAV = [
   { href: "/crypto-briefings", code: "CRYPTO", label: "Crypto" },
   { href: "/bitcoin", code: "BTC", label: "Bitcoin" },
   { href: "/kospi", code: "KOSPI", label: "KOSPI" },
+  { href: "/skhynix", code: "HYNIX", label: "SK Hynix" },
   { href: "/opportunities", code: "OPS", label: "Opportunities" },
   { href: "/digest", code: "WEEK", label: "Week" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },
