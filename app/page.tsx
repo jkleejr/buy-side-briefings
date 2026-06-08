@@ -1,5 +1,7 @@
 import { getAllBriefings, getLatestMarketsVerdict } from "@/lib/data";
+import { getLatestAssetDaily } from "@/lib/asset-daily";
 import VerdictCard from "@/components/verdict-card";
+import AssetCallsPanel from "@/components/asset-calls-panel";
 import SnapshotGrid from "@/components/snapshot-grid";
 import RegimeRiskBars from "@/components/regime-risk-bars";
 import BriefingList from "@/components/briefing-list";
@@ -20,6 +22,9 @@ export const revalidate = 300;
 export default function Home() {
   const verdict = getLatestMarketsVerdict();
   const briefings = getAllBriefings();
+  const assetCalls = [getLatestAssetDaily("nvda"), getLatestAssetDaily("btc")].filter(
+    (d): d is NonNullable<typeof d> => d !== null,
+  );
 
   return (
     <div className="space-y-1">
@@ -53,6 +58,14 @@ export default function Home() {
         <div className="lg:col-span-3">
           <CryptoPanel />
         </div>
+
+        {/* Row 1.5 — single-asset daily calls (NVDA + BTC): the buy/hold/sell
+            and who-won read, linking to the full /nvidia and /bitcoin dossiers */}
+        {assetCalls.length > 0 && (
+          <div className="lg:col-span-12">
+            <AssetCallsPanel calls={assetCalls} />
+          </div>
+        )}
 
         {/* Row 2 — SPY only on the home page; QQQ + IWM live on /indices,
             tech stocks on /tech (linked from the nav). */}
