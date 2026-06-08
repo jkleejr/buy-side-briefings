@@ -1,0 +1,79 @@
+{
+  "routine": "markets",
+  "date": "2026-06-08",
+  "window": "morning",
+  "generated_at": "2026-06-08T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Fade the Bounce; CPI Wednesday Is the Only Binary That Matters",
+    "conviction": "medium",
+    "rationale_short": "Monday opens with a modest AI-driven NQ relief bounce (+0.6% futures, NVDA recovery at $214, MRVL +7%) but the macro regime has not improved — it has worsened. Iran and Israel exchanged missiles overnight, pushing Brent above $97 and breaching the prior briefing's oil trigger. AMD is -10.86% and TSM -6.69%, confirming no broad semi recovery; only the NVDA ecosystem is bid. Three regime triggers remain breached (VIX above 18, SPX below 7,460, Brent above $97), and CPI Wednesday carries a 67% probability of a hot print above 4.2% YoY. Hold cash, maintain the IWM short, cover any lingering XLE stub above $97, and let Wednesday decide.",
+    "supporting_data": [
+      { "label": "Iran-Israel missile exchange overnight — Brent jumped above $97/barrel, breaching the prior briefing's $97 trigger level; the Strait of Hormuz closure risk is open-ended and a direct inflationary multiplier heading into Wednesday's CPI", "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-dow-futures-085810575.html" },
+      { "label": "May CPI releases Wednesday June 10 — Cleveland Fed nowcast ~4.18% YoY; prediction markets price a 67% probability the print exceeds 4.2% YoY — a hot headline after Friday's 172K NFP would make the June 17 Warsh FOMC a live hike", "url": "https://kalshi.com/markets/kxcpiyoy/inflation/kxcpiyoy-26may" },
+      { "label": "Monday bounce is NVDA-ecosystem-specific: NVDA opened $214.53 and MRVL rose 7% to $281.88 on S&P 500 inclusion + Jensen Huang's $2B NVDA investment; AMD is -10.86% at ~$466 and TSM -6.69% at ~$415 — no broad semi recovery, only AI infrastructure names leading", "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-technology-mrvl-28-5-160949353.html" },
+      { "label": "Three regime triggers still breached: VIX elevated near ~19 (above 18 trigger), SPX futures-implied open ~7,406 (below 7,460 floor), and Brent now above $97 — a fourth trigger tripped on the Iran escalation overnight", "url": "https://www.schwab.com/learn/story/stock-market-update-open" },
+      { "label": "SPCX pricing Thursday June 11 — the ~$75B SpaceX IPO at fixed $135 prices tomorrow and trades Friday; the liquidity drain narrative intensifies into the week's close with the largest IPO in history absorbing institutional capital alongside CPI risk", "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html" },
+      { "label": "S&P 500 forward P/E ~25.6 — above the 25.3 historical average; stretched valuation leaves no margin of safety for a rate-shock repricing; a hot CPI and a live-hike scenario would compress this multiple toward 22-23x quickly", "url": "https://www.gurufocus.com/economic_indicators/6061/sp-500-pe-ratio-with-forward-estimate" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7406.0,  "change_pct": 0.30,  "as_of": "2026-06-08T11:30:00Z" },
+    "nasdaq": { "level": 25863.0, "change_pct": 0.60,  "as_of": "2026-06-08T11:30:00Z" },
+    "vix":    { "level": 19.0,    "change_pct": -9.09, "as_of": "2026-06-08T11:30:00Z" },
+    "ust10y": { "level": 4.55,    "change_bps": 0,     "as_of": "2026-06-08T11:30:00Z" },
+    "dxy":    { "level": 99.50,   "change_pct": 0.22,  "as_of": "2026-06-08T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 19.0,  "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.007, "trigger_above": 5.05, "unit": "%" },
+    { "name": "DXY",          "value": 99.50, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7406,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude",  "value": 97.1,  "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Opened $214.53 today, recovering above the $200-206 re-entry zone from the prior briefing; the AI infrastructure story is intact after Jensen Huang publicly cited the MRVL partnership. Rate regime is still hostile — full re-entry requires a cool CPI + 30Y below 5.0%.", "sentiment": "neutral" },
+    { "ticker": "MRVL", "note": "+7% to ~$281.88 on the CNBC report that Marvell joins the S&P 500 on June 22 + Jensen Huang's $2B NVDA investment and 'next trillion-dollar company' comment. Strong AI custom-silicon narrative. Watch $270 as near-term support.", "sentiment": "positive" },
+    { "ticker": "AMD",  "note": "~$466, down ~10.86% — no bounce in traditional semis; AMD's enterprise and data center mix is less pure-play AI than NVDA/MRVL, and the rate environment punishes leveraged growth. No re-entry before CPI resolution.", "sentiment": "negative" },
+    { "ticker": "TSM",  "note": "~$415, down ~6.69% — geopolitical risk and rate headwind combine; the semi supply chain remains under pressure. Traditional fab names are not participating in Monday's AI-specific bounce.", "sentiment": "negative" },
+    { "ticker": "IWM",  "note": "SPCX pricing Thursday ($75B at $135) is the structural small-cap drain event. The rate environment (30Y above 5.0%) and capital reallocation align against small caps. Maintain the short.", "sentiment": "negative" },
+    { "ticker": "BTC",  "note": "~$62,770, +2.56% — partially recovering from the $59,227 weekend low but still well below the $66,000 re-entry threshold. Iran escalation and oil spike keep macro risk elevated; no long before the $66K reclaim on declining VIX.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "NQ / QQQ on the bounce", "reason": "The NVDA/MRVL rally is an AI-ecosystem catalyst inside a broken macro regime — VIX above 18, SPX below 7,460, Brent above $97, and CPI Wednesday likely hot at 67% probability above 4.2% YoY. Chasing +0.6% NQ risks a hot-CPI whipsaw on Wednesday morning.", "better_entry": "Re-engage only after a cool CPI core ≤0.2% m/m + VIX below 17 + 30Y back below 5.0%; the NVDA $200-206 zone remains the re-entry frame" },
+    { "ticker": "AMD", "reason": "Down ~10.86% with no specific positive catalyst; the rate environment is hostile to leveraged growth and AMD lacks the pure-AI margin story lifting NVDA and MRVL today. Catching a falling knife into a hot-CPI setup is poor risk/reward.", "better_entry": "$430-445 after CPI resolution and a confirmed VIX and rate improvement" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "QQQ / NQ",
+      "direction": "short",
+      "thesis": "Monday's +0.6% NQ bounce is a single-catalyst event (NVDA/MRVL AI news) inside a regime where VIX is above 18, SPX is below 7,460, Brent is above $97, and CPI Wednesday carries 67% probability of a hot print. The bounce is a distribution opportunity, not a re-entry signal; fade it into the Wednesday binary.",
+      "entry": "Short QQQ near current level (~$455-462); stop above last week's high",
+      "invalidation": "NQ sustains above the 19,000 resistance level with a cool CPI (core ≤0.2% m/m) and 30Y back below 5.0%",
+      "conviction": "medium",
+      "horizon": "2-3 days"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SPCX prices Thursday June 11 — the $75B IPO at a fixed $135 is the structural small-cap liquidity drain event; the rate environment (30Y above 5.0%) is the macro headwind. Both remain intact and intensify as the SPCX pricing date approaches.",
+      "entry": "Hold/initiate $285-292; add on any bounce toward $292-295 ahead of SPCX pricing",
+      "invalidation": "$295 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "Brent crude / XLE",
+      "direction": "hedge",
+      "thesis": "Iran-Israel missile exchange sent Brent above $97 — the prior briefing's trigger level. Cover any short XLE stub above $97 as previously dictated. Maintain a small crude call spread as an Iran/oil-inflation tail hedge into CPI; the Hormuz risk is open-ended and directly feeds the inflation print the market is most afraid of.",
+      "entry": "Cover XLE stub; small crude call spread (1-2 week expiry, $99-105 strikes) sized as a hedge only",
+      "invalidation": "An Iran de-escalation or asset-release deal sends Brent back toward $88-90 — exit the tail hedge",
+      "conviction": "low",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "Monday's AI-driven NQ bounce is a single-catalyst event masking a deteriorating macro regime. The Iran-Israel missile exchange overnight sent Brent above $97 — the prior briefing's trigger level — adding a direct inflationary multiplier to a CPI print that prediction markets already price at 67% probability above 4.2% YoY. AMD's -10.86% session confirms no broad semi recovery; only the NVDA ecosystem is bid, and that is a narrative trade in a rate-hostile environment, not a regime change. SPX remains below 7,460, VIX remains above 18, and the 30Y has not broken below 5.0%. If CPI prints hot on Wednesday, the June 17 Warsh FOMC becomes a live hike, the 30Y targets 5.10-5.20%, and SPX 7,250 is the next meaningful support. Invalidation level: a cool CPI (core ≤0.2% m/m) with SPX closing above 7,460 and VIX back below 17 converts the call to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-06-08-morning.mdx"
+}
