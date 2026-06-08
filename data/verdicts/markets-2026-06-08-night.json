@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-06-08",
+  "window": "night",
+  "generated_at": "2026-06-09T01:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — DXY Clears 100; Iran Deal Dead; CPI Wednesday",
+    "conviction": "medium",
+    "rationale_short": "Monday's +0.30% SPX gain is a MU/INTC dead-cat bounce inside a regime that has not improved and has worsened in one dimension: DXY broke above 100 (new trigger breach) while the 30Y sits at 4.999% — literally one basis point from its framework threshold. Iran-Israel ceasefire is reportedly 'no longer feasible,' Brent rose to $96.05 on fresh IDF strikes, and Wednesday's May CPI (Cleveland Fed nowcast 4.18% YoY; ~67% market probability of a print above 4.2%) remains the only catalyst that could alter the framework.",
+    "supporting_data": [
+      { "label": "DXY 100.11 — broke above the 100 regime trigger during Monday's session; a new fifth negative signal in the stack; dollar strength directly compresses Nasdaq multiples and emerging-market risk appetite", "url": "https://www.investing.com/indices/usdollar-historical-data" },
+      { "label": "Brent $96.05 (+3.18%) — Iran-Israel ceasefire deal 'no longer feasible' per Iranian official; IDF struck western and central Iran Monday; Brent within $1 of the $97 regime trigger", "url": "https://www.cnbc.com/amp/2026/06/08/oil-prices-today-us-iran-missile-middle-east-israel-opec.html" },
+      { "label": "30Y UST 4.999% — 0.1bps from the 5.0% framework trigger; a hot CPI print Wednesday would push it through cleanly toward 5.10-5.20%", "url": "https://tradingeconomics.com/united-states/government-bond-yield" },
+      { "label": "Cleveland Fed CPI nowcast 4.18% YoY headline for May; ~67% prediction market probability the print exceeds 4.2% YoY — a confirmation would make June 17 Warsh FOMC a live hike discussion", "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting" },
+      { "label": "SPX 7,405.73 — still 54 points below the 7,460 framework floor; a 0.30% day driven by MU/INTC dead-cat bounces does not constitute a regime repair", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-08-2026" },
+      { "label": "SPCX ($75B SpaceX IPO) prices Thursday June 11 — the capital drain event from liquid small/mid-cap holdings enters its climax this week; IWM structural short thesis intact", "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7405.73, "change_pct": 0.30, "as_of": "2026-06-08T20:00:00Z" },
+    "nasdaq": { "level": 25929.66, "change_pct": 0.86, "as_of": "2026-06-08T20:00:00Z" },
+    "vix":    { "level": 18.50, "change_pct": -13.9, "as_of": "2026-06-08T20:00:00Z" },
+    "ust10y": { "level": 4.536, "change_bps": -1, "as_of": "2026-06-08T20:00:00Z" },
+    "dxy":    { "level": 100.11, "change_pct": 0.83, "as_of": "2026-06-08T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX", "value": 18.5, "trigger_above": 18, "unit": "" },
+    { "name": "30Y UST", "value": 4.999, "trigger_above": 5.00, "unit": "%" },
+    { "name": "DXY", "value": 100.11, "trigger_above": 100, "unit": "" },
+    { "name": "SPX vs 7460 floor", "value": 7406, "trigger_above": 0, "unit": "SPX" },
+    { "name": "Brent", "value": 96.05, "trigger_above": 97, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Dead-cat bounce ~+10% after Friday's -13%; structural unwind not complete at ~273% YTD gain entering the week; not a re-entry", "sentiment": "neutral" },
+    { "ticker": "INTC", "note": "+10.62% to $109.03 on reports Alphabet placed 3M+ TPU order for 2028 manufacturing; partial recovery in semi complex; not a trend reversal", "sentiment": "positive" },
+    { "ticker": "AAPL", "note": "$301.54 (-1.89%) — WWDC 2026 sell-the-news; AI Siri and Apple Intelligence unveiled; stock spiked to $317 intraday then gave back all gains on digest/skepticism", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "~$208 — modest recovery from Friday's ~$206 close; Jensen Huang buyback call; structural bull case intact but no re-entry pre-CPI", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "$391.32 — market-directional; no specific catalyst Monday", "sentiment": "neutral" },
+    { "ticker": "AVGO", "note": "$394.92 — guidance-plateau repricing from $479 continues; stabilizing; not a buy in this regime", "sentiment": "neutral" },
+    { "ticker": "PLTR", "note": "~$135 est. — defense-AI Iran bid vs. rate-hike headwind tension ongoing; watch $130-135 as support", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "QQQ/NQ", "reason": "DXY above 100 is a new compression headwind for Nasdaq multiples; CPI Wednesday carries ~67% probability of a hot print triggering immediate BEARISH conversion; SPCX drain active", "better_entry": "After CPI ≤3.8% YoY core AND SPX reclaims 7,460 on two consecutive closes" },
+    { "ticker": "AAPL", "reason": "WWDC sell-the-news confirmed — closed $301.54 after intraday high of $317; AI Siri reveal failed to hold gains; needs stabilization before re-entry", "better_entry": "$295-300 after two stabilization sessions post-WWDC with confirmed macro improvement" },
+    { "ticker": "BTC/ETH", "reason": "BTC recovering from sub-$60K weekend lows but still below $66K re-entry threshold; DXY above 100 is a structural headwind for crypto; risk-off regime intact", "better_entry": "BTC $66K+ close with VIX below 16 and 30Y below 5.00%" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SPCX $75B IPO pricing Thursday June 11 is the capital drain climax for small caps; DXY broke above 100 adding dollar-strength headwind; 30Y at 4.999% is a single hot CPI print from clearing the 5.0% trigger; Russell 2000 has the highest rate sensitivity in the index complex.",
+      "entry": "Hold/initiate IWM $285-295; add on any failed bounces ahead of Thursday SPCX pricing",
+      "invalidation": "$300 daily close on two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "QQQ",
+      "direction": "short",
+      "thesis": "Wednesday CPI carries ~67% probability of a print above 4.2% YoY; DXY above 100 is a new headwind to Nasdaq multiples; Brent at $96.05 approaching $97 trigger adds inflationary pressure into the CPI/FOMC sequence; MU/INTC dead-cat bounces are a distribution opportunity, not a regime reversal.",
+      "entry": "Short QQQ on any Tuesday bounce toward $455-462; size ≤25% of gross",
+      "invalidation": "June 10 CPI ≤3.5% YoY core with NQ sustaining above 19,200",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "Brent crude call spread",
+      "direction": "hedge",
+      "thesis": "Iran-Israel ceasefire deal reported 'no longer feasible' by Iranian official; IDF struck western/central Iran Monday; Brent at $96.05 is within $1 of the $97 regime trigger. A Hormuz closure event would be an immediate inflationary multiplier into the CPI/FOMC sequence.",
+      "entry": "Small crude call spread (1-2 week expiry, $98-104 strikes); sized as tail hedge only",
+      "invalidation": "Iran-US deal confirmed signed by Trump; Brent retreats below $90 on three consecutive closes",
+      "conviction": "low",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "Monday's +0.30% SPX gain obscures a regime that has not improved and has worsened in one dimension: DXY broke above 100 (new trigger breach), Iran's ceasefire is 'no longer feasible,' Brent rose to $96.05 within $1 of the $97 trigger, the 30Y is 0.1bps from 5.0%, and CPI Wednesday carries ~67% probability of a hot print. The MU/INTC dead-cat bounces (+~10% each) that drove the session's headline gain are a distribution opportunity for desks reducing gross ahead of the week's triple catalyst sequence (CPI, SPCX pricing, PPI) — not a regime repair. The AAPL WWDC sell-the-news (-1.89% after a $317 intraday spike) is the session's tell: narrative is not enough. If May CPI prints ≥4.2% YoY on Wednesday, the 30Y breaks cleanly through 5.0%, the Warsh FOMC June 17 becomes a live hike discussion, and SPX 7,250 is the next meaningful support. Invalidation: if CPI prints ≤3.8% YoY with core ≤0.2% m/m AND SPX closes above 7,460 on CPI day, the call reverts to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-06-08-night.mdx"
+}
