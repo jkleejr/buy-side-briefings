@@ -1,0 +1,78 @@
+{
+  "routine": "kospi",
+  "date": "2026-06-08",
+  "window": "daily",
+  "generated_at": "2026-06-08T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — AI-Memory Bid vs. a 1,400 Won: Own SK Hynix, Not the Index, Into CPI",
+    "conviction": "medium",
+    "rationale_short": "The KOSPI is caught between two forces pulling in opposite directions. The tailwind is real and Korea-specific: the same AI capital rotation that is draining crypto is flooding into HBM memory, and SK Hynix — the lead supplier of high-bandwidth memory to Nvidia — is the cleanest beneficiary in Asia, holding green while global risk sells off. The headwinds are macro and just as real: Friday's hot US jobs print pushed the dollar and US yields higher, the won is sliding toward the psychologically critical 1,400/USD line, foreign investors turned net sellers of KOSPI, and an oil spike from the US-Iran conflict is a direct tax on an energy-importing, export-driven economy. HOLD at medium conviction: this is a stock-pickers' tape, not an index buy. Own the AI-memory leaders (SK Hynix, and Samsung on weakness) and avoid the broad index and won-sensitive exporters until May US CPI on June 10 clears and USD/KRW holds below 1,400. A won break above 1,400 with a hot CPI would force a step-aside on the whole market.",
+    "supporting_data": [
+      { "label": "KOSPI is holding up better than global peers because the index is ~one-third semiconductors; the AI-driven HBM memory super-cycle is a Korea-specific tailwind even as broad risk sells off — SK Hynix is the lead HBM supplier to Nvidia", "url": "https://en.yna.co.kr/" },
+      { "label": "The won is sliding toward 1,400/USD as Friday's 172K US payrolls print pushed the dollar (DXY ~99.3) and US yields (30Y above 5.0%) higher — a weak won pressures foreign returns and the Bank of Korea", "url": "https://www.koreaherald.com/" },
+      { "label": "Foreign investors turned net sellers of KOSPI in the risk-off; foreign flow is the single most important swing factor for Korean equities and the tell for whether the AI-memory bid can offset macro", "url": "https://www.reuters.com/markets/asia/" },
+      { "label": "The US-Iran conflict near Hormuz and the resulting oil spike are a direct headwind for Korea, a net energy importer whose trade balance and inflation are oil-sensitive", "url": "https://www.koreaherald.com/" },
+      { "label": "Next macro binary for Korean risk: May US CPI on June 10 sets the dollar/yield path that drives USD/KRW and foreign flows; a hot print confirms higher-for-longer and risks a won break above 1,400", "url": "https://www.investing.com/indices/kospi" }
+    ]
+  },
+  "snapshot": {
+    "kospi":      { "level": 3242, "change_pct": -0.9, "as_of": "2026-06-08T06:00:00Z" },
+    "kosdaq":     { "level": 1041, "change_pct": -1.4, "as_of": "2026-06-08T06:00:00Z" },
+    "usdkrw":     { "level": 1392, "change_pct": 0.6,  "as_of": "2026-06-08T06:00:00Z" },
+    "foreign_net":{ "value": -1.3, "unit": "KRW tn", "as_of": "2026-06-08T06:00:00Z" },
+    "samsung":    { "level": 84500,  "change_pct": -1.1, "as_of": "2026-06-08T06:00:00Z" },
+    "sk_hynix":   { "level": 268000, "change_pct": 1.8,  "as_of": "2026-06-08T06:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "USD/KRW",        "value": 1392,  "trigger_above": 1400, "unit": "₩" },
+    { "name": "Foreign net flow","value": -1.3, "trigger_below": -2,   "unit": "KRW tn" },
+    { "name": "KOSPI vs 3,150",  "value": 3242,  "trigger_below": 3150, "unit": "" },
+    { "name": "VIX",            "value": 20.9,  "trigger_above": 18,   "unit": "" },
+    { "name": "Brent oil",       "value": 88,    "trigger_above": 92,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "000660.KS", "note": "SK Hynix ~₩268,000 (+1.8%) — the lead HBM supplier to Nvidia and the cleanest AI-memory beneficiary in Asia; holding green against a red tape. The relative-strength leader to own; add on macro-driven dips, not chase.", "sentiment": "positive" },
+    { "ticker": "005930.KS", "note": "Samsung Electronics ~₩84,500 (-1.1%) — HBM laggard catching up plus foundry optionality; lower-beta core memory holding. A weakness-buy into CPI, not a same-day add.", "sentiment": "neutral" },
+    { "ticker": "EWY", "note": "iShares MSCI South Korea ETF — the USD-accessible KOSPI proxy for US readers, but it carries won risk: a slide through 1,400 USD/KRW eats foreign-currency returns even if the index holds.", "sentiment": "neutral" },
+    { "ticker": "KRW=X", "note": "USD/KRW ~1,392 and rising — 1,400 is the psychological line; a decisive break accelerates foreign outflows and forces a step-aside on the whole market.", "sentiment": "negative" },
+    { "ticker": "KOSPI", "note": "~3,242 (-0.9%) — resilient vs. global risk on the semis weight, but capped by a weak won, foreign selling, and CPI risk. A hold, not an index buy: own leaders, not the average.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "Broad KOSPI / KOSDAQ ahead of CPI", "reason": "The index is hostage to USD/KRW and foreign flows; with the won near 1,400 and May US CPI on June 10 unresolved, buying the average front-runs the macro catalyst that decides foreign positioning", "better_entry": "Wait for CPI June 10 and USD/KRW to hold below 1,400 with foreign buyers returning; KOSDAQ small-caps only after KOSPI bases" },
+    { "ticker": "Won-sensitive exporters & importers of oil", "reason": "A weak won plus an oil spike from the US-Iran conflict squeezes margins for energy-importing industrials and airlines; auto/exporter FX gains don't offset a global demand scare", "better_entry": "Only after oil cools below $85 Brent and the won stabilizes" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SK Hynix (000660.KS)",
+      "direction": "long",
+      "thesis": "The AI capital rotation that is draining crypto and broad risk is flowing into HBM memory, where SK Hynix is the lead supplier to Nvidia. It is the cleanest Korea-specific AI beneficiary and is showing relative strength — green on a red day. Own the leader; the secular memory super-cycle is intact regardless of the week's macro.",
+      "entry": "Core hold; add on macro-driven dips toward ₩250,000, not on strength",
+      "invalidation": "A daily close below ₩240,000, or HBM order/pricing deterioration, breaks the leadership thesis",
+      "conviction": "medium",
+      "horizon": "1-3 months"
+    },
+    {
+      "asset": "Samsung Electronics (005930.KS)",
+      "direction": "long",
+      "thesis": "Samsung is the lower-beta way to own the memory cycle — an HBM laggard catching up, with foundry optionality and a stronger balance sheet. A weakness-buy that lags SK Hynix on the way up but draws down less if the macro worsens.",
+      "entry": "Starter on weakness toward ₩80,000; add below ₩78,000",
+      "invalidation": "A daily close below ₩76,000 signals the memory bid is failing the whole complex",
+      "conviction": "low",
+      "horizon": "1-3 months"
+    },
+    {
+      "asset": "Won / EWY hedge",
+      "direction": "hedge",
+      "thesis": "USD/KRW near 1,400 is the swing variable for foreign-currency returns. With the dollar firm and US CPI June 10 unresolved, an unhedged USD investor in KOSPI is also short the won at the worst moment. Hedge the currency or size EWY smaller until 1,400 holds.",
+      "entry": "Hedge won exposure or trim EWY into 1,395-1,400; re-risk on a hold below 1,400 post-CPI",
+      "invalidation": "USD/KRW back below 1,360 with foreign net buying restores an unhedged index long",
+      "conviction": "medium",
+      "horizon": "days"
+    }
+  ],
+  "bear_case": "Korea is a high-beta, FX-sensitive, export-driven market, and right now it faces a triple headwind: a strong dollar that is dragging the won toward 1,400, a global risk-off led by a hot US labor market and 30Y yields above 5.0%, and an oil spike from the US-Iran conflict that taxes an energy importer directly. The semiconductor concentration that is the index's tailwind today is also its single biggest risk — a third of the KOSPI rides on one AI-memory narrative, and if HBM pricing or Nvidia's capex blinks, the relative-strength leader becomes the relative-weakness epicenter. Foreign investors, already net sellers, set the marginal price; a decisive USD/KRW break above 1,400 typically accelerates outflows in a self-reinforcing loop. Invalidation level: a hot May US CPI on June 10 that drives USD/KRW through 1,400 and the KOSPI below 3,150 turns this HOLD into a STEP ASIDE on the whole market; conversely, a cool CPI with the won holding below 1,400 and foreign buyers returning reopens a broad-index long.",
+  "body_mdx": "data/briefings/kospi/2026-06-08-daily.mdx"
+}

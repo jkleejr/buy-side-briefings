@@ -189,17 +189,95 @@ export function getLatestCryptoVerdict(): CryptoVerdict | null {
   return getAllCryptoVerdicts()[0] ?? null;
 }
 
+// ---- KOSPI briefings (data/verdicts/kospi-*.json) -------------------------
+// Korean equity-market routine, daily cadence (window "daily"). Shares the
+// verdict/conviction vocabulary with markets and crypto, but carries a
+// Korea-specific snapshot: the KOSPI and KOSDAQ indices, USD/KRW, net foreign
+// flows, and the large-cap memory leaders (Samsung, SK Hynix) that drive the
+// index.
+
+export type KospiSnapshotEntry = {
+  level: number;
+  change_pct?: number;
+  as_of?: string;
+};
+
+export type KospiSnapshot = {
+  /** KOSPI composite index level. */
+  kospi?: KospiSnapshotEntry;
+  /** KOSDAQ index level. */
+  kosdaq?: KospiSnapshotEntry;
+  /** USD/KRW exchange rate (won per dollar). */
+  usdkrw?: KospiSnapshotEntry;
+  /** Net foreign flow into KOSPI, in KRW trillions (negative = net selling). */
+  foreign_net?: { value: number; unit?: string; as_of?: string };
+  /** Samsung Electronics (005930), in KRW. */
+  samsung?: KospiSnapshotEntry;
+  /** SK Hynix (000660), in KRW. */
+  sk_hynix?: KospiSnapshotEntry;
+};
+
+export type KospiVerdict = {
+  routine: "kospi";
+  date: string;
+  window: "daily";
+  generated_at: string;
+  is_seed?: boolean;
+  verdict: {
+    code: VerdictCode;
+    emoji: string;
+    label: string;
+    conviction: "low" | "medium" | "high";
+    rationale_short: string;
+    supporting_data: SupportingPoint[];
+  };
+  snapshot: KospiSnapshot;
+  regime_risk: RegimeIndicator[];
+  watchlist_mentions: WatchlistMention[];
+  dont_buy: DontBuy[];
+  trade_setups: TradeSetup[];
+  bear_case: string;
+  body_mdx: string;
+};
+
+export function getAllKospiVerdicts(): KospiVerdict[] {
+  const dir = path.join(DATA_DIR, "verdicts");
+  if (!fs.existsSync(dir)) return [];
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.startsWith("kospi-") && f.endsWith(".json"));
+  const verdicts = files
+    .map((f) => readJson<KospiVerdict>(path.join(dir, f)))
+    .filter((v): v is KospiVerdict => v !== null);
+  return verdicts.sort((a, b) => {
+    const t1 = `${b.date}-${b.window}`;
+    const t2 = `${a.date}-${a.window}`;
+    return t1.localeCompare(t2);
+  });
+}
+
+export function getLatestKospiVerdict(): KospiVerdict | null {
+  return getAllKospiVerdicts()[0] ?? null;
+}
+
 /**
  * Resolve the verdict a briefing's `verdict_ref` points to, dispatching on the
- * routine prefix (e.g. "markets-..." vs "crypto-..."). Lets the generic
- * briefing-detail page show the verdict header for either routine.
+ * routine prefix (e.g. "markets-..." vs "crypto-..." vs "kospi-..."). Lets the
+ * generic briefing-detail page show the verdict header for any routine.
  */
 export function getVerdictByRef(
   ref: string,
-): MarketsVerdict | CryptoVerdict | null {
+): MarketsVerdict | CryptoVerdict | KospiVerdict | null {
   if (ref.startsWith("crypto-")) {
     return (
       getAllCryptoVerdicts().find(
+        (v) => `${v.routine}-${v.date}-${v.window}` === ref,
+      ) ?? null
+    );
+  }
+  if (ref.startsWith("kospi-")) {
+    return (
+      getAllKospiVerdicts().find(
         (v) => `${v.routine}-${v.date}-${v.window}` === ref,
       ) ?? null
     );
