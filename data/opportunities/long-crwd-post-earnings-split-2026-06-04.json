@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "4-6 weeks",
-  "current_price": 747.61,
+  "current_price": 671.02,
   "entry": "Buy $720-755 (current zone). The intraday recovery from $669 pre-market to $748 by mid-session signals institutional buyers absorbing the billings-miss fear on strong underlying Q1 FY2027 fundamentals. Ideal entry on any minor pullback to $720-730; do not chase above $760 without a confirmed next-day continuation close.",
   "stop_loss": "$680 daily close (~9.0% below entry midpoint $747) — implies the billings miss (+18% YoY vs analyst estimates for ~22%+) is a genuine demand deceleration signal that precedes ARR deterioration, rather than a one-quarter calendar-timing artifact",
   "targets": [
@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-06-04",
   "expires_at": "2026-07-18",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["earnings", "tech", "cybersecurity", "AI", "split", "post-earnings", "recovery", "catalyst"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-05",
+    "final_price": 671.02,
+    "return_pct": -10.2,
+    "outcome_label": "Stop triggered — CRWD closed $671.02 on June 5, below $680 stop",
+    "note": "CRWD closed at $671.02 on June 5, 2026 (−6.68% on the session), falling through the $680 daily-close stop. The billings miss (+18% YoY vs. ~22% consensus) proved structural: institutional holders re-evaluated the ARR/billings divergence and exited in size the following session. The June 4 intraday recovery from $669 to $748 did not hold into any subsequent close. The 4:1 split record date of June 25 remains a potential re-entry catalyst once the stock stabilizes above $680 — the split mechanics are not broken, but the entry timing was premature. Return from reference price $747.61 to final close $671.02 = −10.2%."
+  }
 }

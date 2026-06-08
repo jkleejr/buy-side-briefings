@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "4-8 weeks",
-  "current_price": 256.52,
+  "current_price": 245.73,
   "entry": "Buy the current consolidation zone at $260-$268. Scale: 60% at current; add 40% on either a pullback to $255 or a confirmed break above $272 on volume.",
   "stop_loss": "$248 daily close (~6.4% below entry midpoint) \u2014 implies AWS growth deceleration or consumer demand cracking",
   "targets": [
@@ -38,7 +38,7 @@
   ],
   "created_at": "2026-05-21",
   "expires_at": "2026-07-31",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "AI",
     "cloud",
@@ -46,5 +46,11 @@
     "megacap",
     "earnings-catalyst"
   ],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-06",
+    "final_price": 245.73,
+    "return_pct": -4.2,
+    "outcome_label": "Stop triggered — AMZN closed $245.73 on June 6, below $248 stop",
+    "note": "AMZN closed at $245.73 on Friday June 6, 2026, breaching the $248 daily-close stop. The macro regime — 30Y at 5.0%, Brent above $97, VIX above 18, and SPCX institutional capital drain — compressed consumer-confidence and cloud spending multiples through the week. The AWS AI thesis remains valid long-term; the stop was triggered by deteriorating macro conditions (four regime triggers breached) rather than any fundamental AWS deterioration. Return from reference price $256.52 to final close $245.73 = −4.2%."
+  }
 }

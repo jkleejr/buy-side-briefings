@@ -7,7 +7,7 @@
   "direction": "short",
   "conviction": "low",
   "time_horizon": "3-6 weeks",
-  "current_price": 411.0,
+  "current_price": 385.0,
   "entry": "Short $408–425 on a relief bounce from the two-session 15% selloff. Best entry: any intraday rip to $415–425 that stalls with declining volume. Do not short below $405 into potential panic-driven demand. Scale: 60% on the first bounce attempt, 40% add at $418–425 if the bounce fails on volume at higher levels.",
   "stop_loss": "$445 daily close (~6.8% above entry midpoint $416.50) — implies institutional buyers treated the June 4 intraday recovery as definitive, the $435 level was a true floor not a false floor, and the market is repricing the stock back toward its pre-earnings base above $460.",
   "targets": [
@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-06-05",
   "expires_at": "2026-07-18",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["semiconductors", "AI", "contrarian", "guidance-plateau", "short", "earnings-fade", "hyperscaler"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-06",
+    "final_price": 385.0,
+    "return_pct": 6.3,
+    "outcome_label": "Target 1 hit — AVGO closed $385 on June 6, at Target 1 level",
+    "note": "AVGO closed at $385.00 on Friday June 6 (intraday range $383.50–$413.80), hitting Target 1 exactly. The June 4 intraday recovery from $413 to $479 proved to be a false floor — institutional sellers who reloaded into the intraday bid drove Phase 2 of the guidance-plateau repricing as modeled. The market confirmed that the FY2027 '>$100B' AI guide reiteration, without a raise, was structurally meaningful to the marginal seller in size. Return from short entry reference $411.00 to final close $385.00 = +6.3% (short position). Target 2 ($355) and Target 3 ($305) remain open for re-entry if AVGO closes below $385 in subsequent sessions."
+  }
 }

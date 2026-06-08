@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "1-2 months",
-  "current_price": 436.2,
+  "current_price": 397.0,
   "entry": "Initiate $434-438 (at/above the cleared $435 Target 1 level; the prior GLD position just closed at this price). Scale: 70% at current; 30% add if GLD pulls back to $428-432 on a brief Iran de-escalation headline. Do NOT chase above $445 on intraday momentum alone.",
   "stop_loss": "$422 daily close (~3.2% below entry midpoint $436) — implies Trump confirms Iran talks remain live AND Brent closes below $90 on two consecutive sessions",
   "targets": [
@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-06-03",
   "expires_at": "2026-08-15",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["macro", "geopolitics", "gold", "safe-haven", "Iran", "Gulf-war", "stagflation"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-06",
+    "final_price": 397.0,
+    "return_pct": -8.9,
+    "outcome_label": "Stop triggered — GLD closed ~$397 (gold ~$4,366/oz) on June 6, below $422 stop",
+    "note": "GLD closed at approximately $397 (gold ~$4,366/oz) on Friday June 6, well below the $422 daily-close stop. The 172K NFP print was interpreted by the market as hot in context of the Warsh hike path, strengthening the USD and pushing real yields higher — this overrode the Iran geopolitical safe-haven bid. Gold fell to a near-YTD low despite the Iran-Israel missile exchange overnight (June 7-8) subsequently re-bidding gold back toward $4,366. The $422 stop was decisively crossed mid-week (June 4-6). Return from reference price $436.20 to final close $397.00 = −8.9%."
+  }
 }
