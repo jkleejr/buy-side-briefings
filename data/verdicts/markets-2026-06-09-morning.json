@@ -1,0 +1,121 @@
+{
+  "routine": "markets",
+  "date": "2026-06-09",
+  "window": "morning",
+  "generated_at": "2026-06-09T13:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Iran Pauses, Not Resolved; Wednesday CPI Unchanged",
+    "conviction": "medium",
+    "rationale_short": "Iran-Israel halted exchanges and Brent fell $2.75 to $93.30, removing the nearest tail risk — but four core regime breaches remain: DXY above 100, SPX below 7,460, VIX above 18, and 30Y at 5.00%. Wednesday's May CPI (consensus +4.2% YoY) is the sole circuit-breaker. Pre-market futures up 0.35% are the predicted pre-CPI positioning bounce — do not chase.",
+    "supporting_data": [
+      {
+        "label": "Brent $93.30 (−2.9%) — Iran/Israel halted attacks after Trump told both to stop shooting; Brent retreats $2.75 from $96.05 but Strait of Hormuz opening 'seen unlikely in June'; oil tail reduced, not eliminated",
+        "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-june-9-2026-oil-prices-slide-1percent-as-iran-and-israel-stop-trading-blows-brent-falls-to-93-3"
+      },
+      {
+        "label": "May CPI consensus +4.2% YoY / +0.3% m/m core (BofA, Deutsche Bank, RBC aligned; Cleveland Fed nowcast 4.18% YoY) — Wednesday 8:30 AM ET binary unchanged; hot print converts STEP ASIDE to BEARISH immediately",
+        "url": "https://www.morningstar.com/economy/may-cpi-forecasts-show-continued-lofty-inflation"
+      },
+      {
+        "label": "DXY ~100.11 — above 100 regime trigger; Iran halt alone insufficient to push DXY below 100 with NFP-driven rate-hike expectations from Friday's 172K jobs print embedded in rate markets",
+        "url": "https://www.investing.com/indices/usdollar-historical-data"
+      },
+      {
+        "label": "SPX 7,405.73 (June 8 close); futures +0.35% → implied open ~7,431 — still 29 points below 7,460 regime floor; pre-CPI bounce does not repair the regime; Polymarket implies 89% probability of a higher open but that is a positioning session, not a trend",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53079165/sp500-june-9-open-up-or-down-polymarket-chip-stocks-iran-ceasefire"
+      },
+      {
+        "label": "NVDA/PLTR/MU/AVGO combined ~$12.97B in insider selling in 2026 — management reducing exposure into AI-name strength ahead of CPI and SPCX capital drain event",
+        "url": "https://www.fool.com/investing/2026/06/09/ai-nvda-pltr-mu-avgo-wall-st-13-billion-warning/"
+      },
+      {
+        "label": "30Y UST ~4.999% — at the 5.0% threshold; hot CPI Wednesday would push it cleanly to 5.10–5.20%, tripping the secondary 5.05% framework trigger and compressing Nasdaq multiples",
+        "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7405.73, "change_pct": 0.30,   "as_of": "2026-06-08T20:00:00Z" },
+    "nasdaq": { "level": 25929.66, "change_pct": 0.86,  "as_of": "2026-06-08T20:00:00Z" },
+    "vix":    { "level": 18.92,   "change_pct": -12.04, "as_of": "2026-06-08T20:15:00Z" },
+    "ust10y": { "level": 4.57,    "change_bps": 3,      "as_of": "2026-06-08T20:00:00Z" },
+    "dxy":    { "level": 100.11,  "change_pct": 0.83,   "as_of": "2026-06-08T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",         "value": 18.92,   "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",   "value": 4.999,   "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",         "value": 100.11,  "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460","value": 7405.73, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent Crude", "value": 93.30,   "trigger_above": 97,   "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "~$208.14 (June 8 close); premarket +~2%; insider selling ($12.97B combined AI-name management team in 2026) weighs; no re-entry pre-CPI; re-entry zone $195–210 watch-only", "sentiment": "neutral" },
+    { "ticker": "MU",    "note": "Premarket +~4% continuation of Monday's dead-cat (+10%); structural reversion not complete after +273% YTD run into last week; avoid; better entry $700–750 post-CPI", "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "$301.54 (June 8 close); WWDC 2026 sell-the-news confirmed; AI Siri spike to $317 gave back; distribution above $300; better entry $295–300", "sentiment": "negative" },
+    { "ticker": "INTC",  "note": "$109.03 (June 8); Alphabet TPU order bounce fading; single-contract catalyst, not a fundamental re-rating; rate environment hostile", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "$394.92 (June 8); stabilizing from $479 but guidance-plateau repricing not complete; not a buy", "sentiment": "negative" },
+    { "ticker": "PLTR",  "note": "~$135 est.; Iran-deal defense-AI bid vs. rate-hike headwind; insider selling in play; watch $130–135 support", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "$415.32 (June 8); Azure AI thesis intact but macro weighs; no active setup", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "$391.32 (June 8 est.); market-directional; no specific catalyst; not a buy in current regime", "sentiment": "neutral" },
+    { "ticker": "ORCL",  "note": "Reports Q4 after Wednesday's close; consensus $1.96 EPS / $19.08B revenue; $553B RPO backlog (up 325% YoY) is the key AI enterprise demand signal for the week; beat on RPO could be a positive catalyst for cloud AI names", "sentiment": "positive" },
+    { "ticker": "IWM",   "note": "SPCX capital drain climax Thursday; DXY above 100 rate headwind; 30Y near 5.0%; maintain short", "sentiment": "negative" },
+    { "ticker": "BTC",   "note": "~$63,564 (June 8 close); recovering from sub-$60K weekend; DXY above 100 is a headwind; below $66K re-entry threshold", "sentiment": "neutral" },
+    { "ticker": "ETH",   "note": "~$1,669; descent channel; DXY headwind; avoid below $2,000", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "QQQ / NQ on the pre-CPI bounce",
+      "reason": "S&P futures +0.35% and chip stocks rallying in premarket are the predicted pre-CPI positioning effect; May CPI consensus +4.2% YoY makes a hot Wednesday print the base case for most banks; buying the bounce risks a Wednesday morning reversal; DXY above 100 compresses Nasdaq multiples structurally",
+      "better_entry": "After CPI prints ≤3.8% YoY core AND VIX closes below 17 AND SPX reclaims 7,460"
+    },
+    {
+      "ticker": "MU (dead-cat continuation)",
+      "reason": "Tuesday's premarket +4% follows Monday's +10% dead-cat after Friday's −13% — this is distribution in a stock up +273% YTD through last week; the structural reversion thesis has not completed; buying the dead-cat into CPI is a timing mistake",
+      "better_entry": "$700–750 after two stabilization sessions post-CPI with confirmed disinflation"
+    },
+    {
+      "ticker": "AAPL near $300",
+      "reason": "WWDC 2026 sell-the-news confirmed: spike to $317 then close at $301.54 (−1.89%); AI narrative alone cannot sustain gains in a regime with four breached indicators; distribution above $300 is the clear pattern",
+      "better_entry": "$295–300 after two stabilization sessions with VIX below 18 and SPX above 7,460"
+    },
+    {
+      "ticker": "BTC / ETH",
+      "reason": "DXY above 100 is a structural dollar-strength headwind for crypto; BTC recovering from sub-$60K but no regime-clearing catalyst; ETH below $2,000",
+      "better_entry": "BTC $66K+ with VIX below 16 and 30Y confirmed below 5.00%"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "QQQ",
+      "direction": "short",
+      "thesis": "Any morning bounce into $455–462 QQQ is the short entry the June 8 night brief flagged. Pre-CPI distribution session: dip-buyers test the tape, and the prior May 19→20 sequence is the pattern to avoid repeating on the long side. May CPI consensus +4.2% YoY; DXY above 100 compresses Nasdaq multiples; AAPL WWDC sell-the-news confirmed the narrative-catalyst limit.",
+      "entry": "Short QQQ on any morning bounce to $455–462; stop above $468",
+      "invalidation": "June 10 CPI ≤3.5% YoY core with NQ sustaining above 19,200 and VIX below 16",
+      "conviction": "medium",
+      "horizon": "1–2 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SPCX $75B IPO pricing Thursday June 11 is the capital drain climax event — institutional allocators have been liquidating liquid small/mid-cap positions since the June 4 roadshow launch. DXY above 100 adds a dollar-strength headwind specific to small caps. The 30Y at 4.999% is one CPI print from breaching 5.0%, the maximum rate pressure for the most rate-sensitive index.",
+      "entry": "Hold/initiate IWM $285–295; add on any failed Tuesday bounce ahead of Thursday's SPCX pricing",
+      "invalidation": "$300 daily close on two consecutive sessions signals SPCX demand absorption is less disruptive than modeled",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "ORCL",
+      "direction": "long",
+      "thesis": "Oracle Q4 reports after Wednesday's close — $553B RPO backlog (up 325% YoY), $1.96 EPS consensus, $19.08B revenue. If RPO guidance accelerates further, ORCL becomes the 'enterprise AI demand is real' proxy trade the market needs ahead of July earnings season. Sized as a catalyst trade only: macro headwinds dominate if CPI is hot.",
+      "entry": "ORCL $170–175 pre-earnings; sizing ≤2% gross given macro overlay risk",
+      "invalidation": "RPO guidance flat or decelerating; revenue below $18.9B; stock closes below $165 post-earnings",
+      "conviction": "low",
+      "horizon": "1 week (event-driven)"
+    }
+  ],
+  "bear_case": "The Iran halt is the first clean positive regime shift in two weeks, and the tape may price it more aggressively than STEP ASIDE anticipates. Markets are in Fear territory (CNN Fear & Greed ~42 as of early June) — a contrarian signal that historically precedes short-covering squeezes. Asian equities stabilized Tuesday and European benchmarks showed modest gains, reducing the overhang of forced global selling. If Trump announces a signed US-Iran MOU before Wednesday's CPI open, Brent could fall to $88–90, DXY could retreat below 100, and VIX could compress to 16–17 — removing three of five regime triggers simultaneously. Bears caught short into that scenario face a rip toward 7,500+. Invalidation: if SPX closes above 7,460 on June 9 with VIX closing below 17, STEP ASIDE reverts to HOLD immediately. If CPI prints ≤3.8% YoY with core ≤0.2% m/m on June 10, shorts cover without debate and NVDA $195–210 re-entry zone reopens.",
+  "body_mdx": "data/briefings/markets/2026-06-09-morning.mdx"
+}
