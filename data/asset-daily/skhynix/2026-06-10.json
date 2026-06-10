@@ -1,0 +1,110 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T22:00:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+  "day_winner": "bears",
+  "day_summary": "SK Hynix plunged 7.54% to ₩2,048,000 — the second wave of heavy selling this week, following Monday's KOSPI circuit-breaker session. Today's catalysts: Broadcom's 14% single-session crash on stale AI guidance, a hot CPI print driving the dollar higher and the won weaker, and Trump pledging fresh Iran airstrikes. The VKOSPI fear index hit a record high. Bears dominated; the HBM thesis is intact but the tape is in full risk-off.",
+  "long_pnl": "−7.54% — longs absorbed the second big selloff in three sessions; stock is now −14.9% from the June 2 ATH",
+  "short_pnl": "+7.54% — Broadcom/CPI/Iran triple trigger paid shorts handsomely",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "swing · 1–3 months",
+    "rationale": "Downgrade from BUY to HOLD. The HBM supply story is unchanged — SK Hynix is still NVIDIA's sole advanced HBM supplier, Blackwell/Rubin demand is intact, and the HBM cycle remains multi-year. But the market does not distinguish right now: Broadcom's AI-spend doubt, a won at ₩1,548/USD, record VKOSPI fear, and $62B+ in cumulative foreign KOSPI outflows mean the near-term tape is toxic. HOLD: if you own it, do not panic-sell a fundamentally sound business into panic. Do not add until (1) USD/KRW stabilizes below ₩1,500, (2) Broadcom's miss is clearly dissociated from HBM demand in the market's mind, and (3) FOMC June 17 resolves without a rate-hike signal. A recovery above ₩2,200,000 resets the add trigger. A break below ₩1,900,000 risks a deeper re-test of the circuit-breaker lows near ₩1,800,000."
+  },
+  "snapshot": {
+    "price": 2048000,
+    "change_pct": -7.54,
+    "change_abs": -167000,
+    "prev_close": 2215000,
+    "day_low": 1992000,
+    "day_high": 2180000,
+    "week52_high": 2407000,
+    "volume": "4.93M sh",
+    "market_cap": "₩1,490T",
+    "extra": [
+      { "label": "USD price (₩1,548)", "value": "~$1,323", "tone": "neutral" },
+      { "label": "vs KOSPI today", "value": "−3.0pp (KOSPI −4.52%)", "tone": "down" },
+      { "label": "From ATH (June 2)", "value": "−14.9%", "tone": "down" },
+      { "label": "USD/KRW", "value": "₩1,548", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "short_interest": "Foreign-owned ~54% of float — the marginal seller in today's session",
+    "notable_flow": "Foreign institutions were aggressive net sellers of SK Hynix alongside the broader KOSPI, which has now seen an estimated $62B+ in cumulative foreign outflows since end-May (Goldman Sachs estimate). The VKOSPI fear index hit a record high, suggesting panic-selling and forced unwinds rather than fundamental repositioning. With 54% foreign ownership, a weaker won at ₩1,548/USD compounds losses for dollar-denominated holders — every 1% won move is an additional 1% hit to returns, independent of the stock."
+  },
+  "what_traders_are_doing": "Desks are in damage-control mode. The market is treating every AI-chip name as guilty by association with Broadcom — even though SK Hynix's HBM is structurally different from Broadcom's networking ASICs. The dominant trade right now is forced selling: FX hedges being unwound as the won breaks toward ₩1,550, margin calls triggered by the second major KOSPI selloff in a week, and global risk-off flows rotating out of all Korean equities. The bull case (HBM is the only memory that fits in NVIDIA's GPUs, supply is tight, demand is inelastic) has not changed — but no one is stepping in to buy until the FX and FOMC uncertainty clears. The watchword is: right thesis, wrong tape.",
+  "news": [
+    {
+      "label": "SK Hynix fell 7.54% to ₩2,048,000; KOSPI declined 4.52%, with SK Hynix underperforming by ~3 percentage points — the stock is a high-beta proxy for AI memory demand confidence",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/261957743-samsung-skhynix-japan-hbm-kospi-tradingkey",
+      "source": "TradingKey",
+      "sentiment": "negative"
+    },
+    {
+      "label": "VKOSPI (South Korea's VIX) hit a record high during the session — a fear-index reading consistent with forced unwinding and margin-driven selling, not fundamental repositioning",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/261957743-samsung-skhynix-japan-hbm-kospi-tradingkey",
+      "source": "TradingKey",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Broadcom (AVGO) −14%: left 2027 AI revenue guidance unchanged, triggering a broad AI-chip selloff; SK Hynix caught in the blast despite serving a different market (GPU HBM vs. custom networking ASICs)",
+      "url": "https://247wallst.com/investing/2026/06/08/the-ishares-korea-etf-ewy-dropped-14-in-its-most-brutal-session-in-six-years-and-it-started-with-broadcom/",
+      "source": "24/7 Wall St.",
+      "sentiment": "negative"
+    },
+    {
+      "label": "May CPI +4.2% YoY strengthened the dollar; USD/KRW rose to ~₩1,548, compounding losses for the ~54% foreign-owned SK Hynix float — a 1% won depreciation = 1% additional return hit for dollar investors",
+      "url": "https://www.cbsnews.com/news/cpi-report-today-may-2026-inflation-iran-war-trump/",
+      "source": "CBS News",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Goldman Sachs estimates $62B+ in cumulative foreign KOSPI outflows since end-May 2026; SK Hynix and Samsung Electronics are the primary vehicles for this de-risking",
+      "url": "https://www.cnbc.com/2026/06/08/kospi-sk-hynix-samsung-electronics-why-foreign-investors-are-selling.html",
+      "source": "CNBC",
+      "sentiment": "negative"
+    },
+    {
+      "label": "The HBM supply thesis is unchanged: SK Hynix remains the sole advanced HBM3E supplier to NVIDIA, demand for Blackwell/Rubin chips is intact, and memory pricing power is the strongest in a decade — fundamental dislocation, not a fundamental break",
+      "url": "https://en.yna.co.kr/",
+      "source": "Yonhap",
+      "sentiment": "positive"
+    }
+  ],
+  "outlook": {
+    "short_term": "Challenging until macro and FX stabilize. The stock has now sold off ~15% from the June 2 ATH in six trading sessions and is entering technically oversold territory. The near-term risk: a hawkish FOMC on June 17 would spike the dollar further, push USD/KRW past ₩1,550, and trigger another leg of foreign selling. The near-term opportunity: a non-hawkish FOMC + any Iran de-escalation would flip the won and likely trigger a sharp short-cover in SK Hynix — the highest-beta AI name on the KOSPI.",
+    "long_term": "Bullish. The HBM/AI-memory super-cycle is multi-year. SK Hynix holds the technology lead with HBM3E and is the only supplier for the most advanced AI accelerators on the planet. Memory pricing power is at a decade high. The risks — FX, AI-spend narrative, Broadcom sympathy — are market-structure risks, not business risks. Own the leader; the dip to ₩2,000,000 and below is the long-term add zone."
+  },
+  "bull_case": [
+    "HBM3E monopoly: SK Hynix is the sole supplier of advanced HBM to NVIDIA — demand for its memory is inelastic to Broadcom's ASIC story.",
+    "Extreme sentiment: VKOSPI at a record high, $62B+ in foreign outflows, and a −15% ATH drawdown in six sessions — textbook panic-selling in a fundamentally intact business.",
+    "The won is a contrarian indicator: when USD/KRW reverses (Iran ceasefire, dovish Fed), foreign-owned Korean names snap back sharply — SK Hynix is the highest-beta vehicle for that trade.",
+    "38 analysts maintain Strong Buy with a ₩2,076,603 consensus price target — still above today's close."
+  ],
+  "bear_case": [
+    "~54% foreign-owned and FX-sensitive: USD/KRW at ₩1,548 compounds losses for dollar investors; a break past ₩1,570 could accelerate forced selling.",
+    "The market cannot distinguish between Broadcom's AI-custom-chip story and SK Hynix's HBM story in a risk-off tape — the stock trades as generic 'AI exposure.'",
+    "Three brutal KOSPI sessions in one week (June 5, 8, 10) have broken the technical structure; the next meaningful support is the June 8 circuit-breaker low near ₩1,800,000–₩1,900,000.",
+    "A hawkish FOMC June 17 would push USD/KRW past ₩1,570 and reprice the entire Korean equity complex lower."
+  ],
+  "key_levels": [
+    { "label": "All-time high (June 2)", "level": "₩2,407,000", "kind": "resistance" },
+    { "label": "Recovery / add trigger", "level": "₩2,200,000", "kind": "resistance" },
+    { "label": "Today's close / pivot", "level": "₩2,048,000", "kind": "pivot" },
+    { "label": "Today's intraday low", "level": "₩1,992,000", "kind": "support" },
+    { "label": "Round-number floor", "level": "₩2,000,000", "kind": "support" },
+    { "label": "Circuit-breaker zone (June 8)", "level": "₩1,800,000–₩1,900,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-17", "label": "FOMC rate decision — hawkish = USD/KRW spike, more KOSPI selling; dovish = won recovery and sharp short-cover in SK Hynix", "importance": "high" },
+    { "date": "2026-07-24", "label": "SK Hynix Q2 2026 earnings (approx.) — HBM pricing, mix, and order-book commentary will re-anchor the fundamental debate", "importance": "high" },
+    { "date": "Ongoing", "label": "NVIDIA accelerator capex & HBM order commentary — the demand anchor for the whole thesis", "importance": "high" },
+    { "date": "Ongoing", "label": "USD/KRW rate — FX is the gating variable for foreign-investor re-entry; watch for ₩1,500 break to the downside as a re-risk signal", "importance": "medium" }
+  ],
+  "analysis": "## When the wrong domino falls on the right business\n\nSK Hynix did nothing wrong today. Its HBM technology lead is intact, NVIDIA's Blackwell/Rubin demand is undiminished, and memory pricing power is the strongest in a decade. Yet the stock fell 7.54% — because [Broadcom cratered 14%](https://247wallst.com/investing/2026/06/08/the-ishares-korea-etf-ewy-dropped-14-in-its-most-brutal-session-in-six-years-and-it-started-with-broadcom/).\n\nThe distinction matters: **Broadcom makes custom networking ASICs** for hyperscalers (Google TPUs, Amazon Trainium) — a market segment that competes with NVIDIA's merchant GPUs. When Broadcom signals its 2027 AI revenue is not accelerating, it is saying that Google and Amazon's *custom build* programs have plateaued. It says nothing about whether those same companies are still buying NVIDIA's Blackwell accelerators — and all evidence says they are, in volume, including the HBM that goes into every Blackwell chip.\n\nBut in a risk-off tape with the [VKOSPI at a record high](https://www.tradingkey.com/analysis/stocks/more/261957743-samsung-skhynix-japan-hbm-kospi-tradingkey), the market does not make such distinctions.\n\n## The FX overlay\n\nWith [54% of SK Hynix's float held by foreign investors](https://www.cnbc.com/2026/06/08/kospi-sk-hynix-samsung-electronics-why-foreign-investors-are-selling.html) and USD/KRW now at **₩1,548** (up from ₩1,392 at the start of this sell-off cycle), the stock is functioning as much as a currency trade as a semiconductor one. [Goldman Sachs estimates $62B+ in cumulative foreign KOSPI outflows since end-May](https://www.cnbc.com/2026/06/08/kospi-sk-hynix-samsung-electronics-why-foreign-investors-are-selling.html). Every step the won takes weaker adds to that exit pressure, regardless of what HBM pricing is doing.\n\n## The trade going forward\n\nTwo gates need to clear before the BUY case re-engages:\n\n1. **FOMC June 17**: A hawkish surprise (rate hike signal) pushes USD/KRW past ₩1,570 and triggers another foreign-selling leg. A hold or dovish shade flips the won and makes SK Hynix a high-beta short-squeeze candidate off extreme oversold readings.\n\n2. **AI demand clarity**: A data point that explicitly dissociates HBM demand from Broadcom's custom-chip narrative — ideally from NVIDIA's own management or hyperscaler capex commentary.\n\nUntil then: HOLD. The business is worth owning; the tape is not worth fighting."
+}

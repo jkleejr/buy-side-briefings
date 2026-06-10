@@ -1,0 +1,114 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "flat",
+  "day_summary": "Bitcoin held the $60,000 floor through a hot CPI print — that was the real story. May CPI came in at +4.2% YoY (in line with estimates, driven by Iran-energy), Nasdaq tumbled 2%, Broadcom plunged 14%, and BTC barely budged: −0.48% to $61,424. The capitulation low of ~$59,227 remains intact. One gate cleared; FOMC on June 17 is the next.",
+  "long_pnl": "−0.48% — a near-flat loss but genuine relative strength vs a −2% Nasdaq; the $60K floor held",
+  "short_pnl": "+0.48% — shorts won the print but not the level; $59K refused to break on the CPI they needed",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "days · FOMC-gated",
+    "rationale": "The CPI test passed. +4.2% YoY was in line (no shock), and core came in at +0.2% MoM — below the +0.3% estimate — confirming this is Iran/energy inflation, not demand-driven. BTC held $60K through Nasdaq -2%, AVGO -14%, and the hottest CPI in three years. That is base-building, not a coincidence. The playbook shifts from 'defensive hold' to 'watchful optimism': HOLD and tighten the re-risk trigger. A close above $65,000 post-FOMC (June 17) upgrades this to BUY, targeting a recovery toward $70,000–$73,000. The bear case remains FOMC turning hawkish — a rate-hike signal would spike the dollar, crack $59K, and open $52–55K. Until June 17, keep position size conservative."
+  },
+  "snapshot": {
+    "price": 61424,
+    "change_pct": -0.48,
+    "change_abs": -296,
+    "prev_close": 61720,
+    "day_low": 60731,
+    "day_high": 62872,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "~$28B (24h)",
+    "market_cap": "$1.22T",
+    "extra": [
+      { "label": "From ATH (~$115K)", "value": "−47%", "tone": "down" },
+      { "label": "BTC dominance", "value": "57.6%", "tone": "neutral" },
+      { "label": "Fear & Greed", "value": "10 · Extreme Fear", "tone": "down" },
+      { "label": "7-day", "value": "−14%", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 65,
+    "iv_note": "DVOL eased slightly from ~68% as the CPI event risk resolved; still elevated relative to 30-day realized",
+    "put_call": 1.28,
+    "short_interest": "perp funding near zero to slightly negative — leverage is clean post-cascade",
+    "max_pain": "~$62,000 (June weekly expiry)",
+    "notable_flow": "Spot ETF outflows continued for the 10th consecutive session ($3.4B+ in the first week of June alone). Derivatives are cleaner — no new leveraged positions rebuilding yet. Some patient accumulation of $64K–$68K call options for July expiry, offset by short-dated puts into FOMC. The net read: the crowd is watching, not trading."
+  },
+  "what_traders_are_doing": "The tape is in 'prove it' mode. The CPI test passed — $60K held, the floor stayed — but no one is chasing the bounce with FOMC six days away. Perp funding is near zero, Fear & Greed at 10, and ETF outflows are still running, which means institutional money has not returned. The marginal player is patient: staying in cash/stables, watching for either a decisive $65K reclaim post-FOMC or another leg down if Warsh signals a hike. The one clear shift today: BTC's +1.5-point relative outperformance vs the Nasdaq is being noticed by cross-asset desks — for the first time in weeks, it didn't trade as the most-leveraged beta.",
+  "news": [
+    {
+      "label": "May CPI +4.2% YoY (in line, highest since May 2023), +0.5% MoM (in line); energy rose 3.9% on the month and 23.5% YoY as Iran conflict sustains oil near $90 — markets were braced, so no surprise selloff in BTC",
+      "url": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html",
+      "source": "CNBC",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Core CPI +0.2% MoM — below the +0.3% estimate; shelter costs rose only 0.3%, half of April's pace — the underlying, non-energy inflation pulse is cooling, which reduces the case for a Fed hike",
+      "url": "https://www.bls.gov/news.release/pdf/cpi.pdf",
+      "source": "BLS",
+      "sentiment": "positive"
+    },
+    {
+      "label": "BTC held $60,731 intraday low on the CPI print and closed at $61,424 — the $59,227 capitulation floor was not retested despite Nasdaq −1.98% and Broadcom −14%",
+      "url": "https://blockchainreporter.net/bitcoin-price-today-btc-holds-61k-ahead-of-the-cpi-report-that-could-decide-everything/",
+      "source": "Blockchain Reporter",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Trump pledged more Iran airstrikes; WTI crude surged 2.07% to $90.03, Brent to $93.10 — geopolitical risk keeps energy inflation entrenched and weighs on all risk assets",
+      "url": "https://www.cbsnews.com/news/cpi-report-today-may-2026-inflation-iran-war-trump/",
+      "source": "CBS News",
+      "sentiment": "negative"
+    },
+    {
+      "label": "US spot Bitcoin ETFs recorded a 10th consecutive session of net outflows; $3.4B left in a single week — the largest weekly redemption since launch; BlackRock's IBIT led with $1.34B weekly outflows",
+      "url": "https://bitcoinfoundation.org/news/crypto-etfs-news/etf-outflows-june-2/",
+      "source": "Bitcoin Foundation",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Crypto Fear & Greed Index at 10 (Extreme Fear) — among the lowest readings of 2026; total crypto market cap $2.21T, BTC dominance 57.6%",
+      "url": "https://www.cryptotimes.io/2026/06/10/bitcoin-and-crypto-market-update-navigating-volatility-amid-etf-outflows-and-market-caution/",
+      "source": "Crypto Times",
+      "sentiment": "negative"
+    }
+  ],
+  "outlook": {
+    "short_term": "Cautiously constructive. The CPI gate cleared with the $60K floor intact — that is the first bullish resolution in weeks. BTC now coils ahead of the FOMC (June 17). A non-hawkish Fed (holding rates, no hike signal) with a dollar rollover could trigger a sharp squeeze of the oversold reading; a hawkish surprise (rate hike signal) breaks $59K and targets $52–55K. The base case is a choppy $60K–$64K range until June 17.",
+    "long_term": "Constructive but unanchored. The scarcity thesis, halving supply dynamics, and institutional-adoption arc remain intact over multi-year horizons. BTC needs the dollar/rate regime to turn — either a Fed pivot, a dollar top, or a geopolitical de-escalation — to resume the structural bull case. At −47% from the all-time high with Fear & Greed at 10, the risk/reward over a 12-month horizon is improving."
+  },
+  "bull_case": [
+    "The $60K floor held through the hottest CPI in three years and a −14% session in AVGO. Confirmed support.",
+    "Core CPI at +0.2% MoM (below est.) shows the Fed's preferred measure of underlying inflation is easing — reduces rate-hike risk.",
+    "Leverage is clean: perp funding near zero, ~$7B+ liquidated in prior weeks, Fear & Greed at 10 — classic contrarian-constructive setup.",
+    "BTC's relative outperformance vs the Nasdaq today is a potential early signal of narrative rotation back toward digital assets."
+  ],
+  "bear_case": [
+    "4.2% YoY CPI keeps the Fed frozen — no rate cuts, no dollar reversal, no macro tailwind until at least FOMC June 17.",
+    "Iran conflict sustaining oil near $90 is structural, not transitory — energy-driven inflation has no near-term cure.",
+    "Ten consecutive ETF outflow sessions mean institutional money is still leaving. A floor without institutional demand is fragile.",
+    "A hawkish FOMC (rate-hike signal or balance-sheet acceleration) breaks $59K and opens the $52–55K target immediately."
+  ],
+  "key_levels": [
+    { "label": "FOMC re-risk trigger", "level": "$65,000", "kind": "resistance" },
+    { "label": "Prior support, now resistance", "level": "$63,500", "kind": "resistance" },
+    { "label": "Today's close / session pivot", "level": "$61,424", "kind": "pivot" },
+    { "label": "Today's intraday low", "level": "$60,731", "kind": "support" },
+    { "label": "Capitulation low (key floor)", "level": "$59,227", "kind": "support" },
+    { "label": "Target if $59K breaks", "level": "$52,000–$55,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-17", "label": "FOMC rate decision (Warsh Fed) — hike signal breaks $59K; hold/cut opens squeeze to $65K+", "importance": "high" },
+    { "date": "2026-06-27", "label": "Monthly options expiry — large open interest roll, max-pain dynamic", "importance": "medium" },
+    { "date": "Daily", "label": "Spot BTC ETF daily flow print — watch for the outflow streak to end", "importance": "medium" },
+    { "date": "Ongoing", "label": "Iran ceasefire / escalation — oil prices drive energy CPI and risk appetite", "importance": "high" }
+  ],
+  "analysis": "## The CPI gate\n\nThe trade everyone feared going into today was this: [hot CPI → dollar spike → BTC breaks $59K → cascade to $52K](https://www.coindesk.com/daybook-us/2026/06/10/the-inflation-scenario-that-could-send-bitcoin-tumbling-below-usd60-000). That trade did not happen. [May CPI came in at +4.2% YoY](https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html) — the highest in three years, and in line with the estimate — but BTC barely budged. While the Nasdaq fell 2% and Broadcom lost 14%, BTC moved just −0.48% and held $60,731 on its intraday low.\n\nThat is the session's story: not the price, but the *resilience*.\n\n## Why it matters that the floor held\n\nThe bulls needed two things from today's CPI to start rebuilding confidence: (1) no massive upside surprise, and (2) the $60K floor intact. They got both. [Core CPI rose just 0.2% on the month](https://www.bls.gov/news.release/pdf/cpi.pdf) — below the 0.3% estimate — confirming that the 4.2% headline is Iran/energy-driven, not a demand-cycle problem the Fed needs to stomp out with rate hikes. The shelter component rose only 0.3%, half of April's pace. The number that the Fed actually targets was soft. That matters more for the rate path than the headline.\n\n## The read on positioning\n\nWith [Extreme Fear at 10/100](https://www.cryptotimes.io/2026/06/10/bitcoin-and-crypto-market-update-navigating-volatility-amid-etf-outflows-and-market-caution/), [10 straight sessions of ETF outflows](https://bitcoinfoundation.org/news/crypto-etfs-news/etf-outflows-june-2/), and perp funding near zero, positioning is as clean as it gets. No one is long with leverage. The question is who's going to *buy* — and the honest answer is: not yet. Institutional money is still leaving via ETFs, and no desk is adding risk with FOMC on June 17 and [Trump pledging more Iran strikes](https://www.cbsnews.com/news/cpi-report-today-may-2026-inflation-iran-war-trump/) with oil at $90.\n\n## The next gate: FOMC June 17\n\nThe Warsh Fed has been hawkish in tone. If June 17 brings a rate-hike signal, the dollar surges, $59K breaks, and the downside opens to $52–55K. If it's a hold with a dovish shade — plausible given the soft core — the dollar rolls, ETF outflows stop, and BTC squeezes hard from oversold. A $65,000 close post-FOMC is the re-risk trigger. Until then, HOLD."
+}

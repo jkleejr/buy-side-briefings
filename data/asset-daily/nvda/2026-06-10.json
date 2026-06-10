@@ -1,0 +1,114 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "NVDA fell 3.31% to ~$201.30, undone by sympathy with Broadcom (AVGO), which plunged 14% after leaving its 2027 AI revenue forecast unchanged — the market read it as a guide-down. Hot CPI and Trump's Iran strike pledge added macro pressure. NVDA tagged its $200 'add zone' intraday ($199.41 low) before closing just above it. Bears ran the session; the bull thesis was not broken.",
+  "long_pnl": "−3.31% — longs took another hit; now down ~15% from the May 14 all-time high of $235.47",
+  "short_pnl": "+3.31% — shorts pressed into the CPI/AVGO double-catalyst and got paid",
+  "decision": {
+    "action": "buy",
+    "conviction": "medium",
+    "horizon": "swing · weeks to months",
+    "rationale": "This is the add zone the previous dossier specified — and the fundamental case is stronger than the tape suggests. Broadcom's cautious outlook is about custom networking ASICs and hyperscaler multi-sourcing, not about GPU data-center demand or HBM. NVIDIA's order book and Blackwell/Rubin ramp are unchanged. At ~$201, NVDA trades at ~30x forward earnings — rich versus the market but not versus a business growing revenue 65% annually with $1T in confirmed forward demand. BUY at medium conviction. Scale in here with a stop on a daily close below $195; a reclaim of $210 confirms the dip is bought and opens a run back toward $220–$235."
+  },
+  "snapshot": {
+    "price": 201.30,
+    "change_pct": -3.31,
+    "change_abs": -6.89,
+    "prev_close": 208.19,
+    "day_low": 199.41,
+    "day_high": 207.22,
+    "week52_low": 140.86,
+    "week52_high": 236.54,
+    "volume": "~310M sh",
+    "market_cap": "$4.93T",
+    "extra": [
+      { "label": "Fwd P/E", "value": "~30x", "tone": "neutral" },
+      { "label": "From ATH ($235.47)", "value": "−14.5%", "tone": "down" },
+      { "label": "Avg analyst PT", "value": "$305 (+52%)", "tone": "up" },
+      { "label": "Options IV", "value": "42% (IV rank 45)", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv": 42,
+    "iv_note": "IV rank 44.53%; coming off the ~50% elevated levels of last week as the CPI event resolves",
+    "put_call": 0.78,
+    "short_interest": "~1.0% of float (negligible)",
+    "max_pain": "~$200 (Jun monthly)",
+    "notable_flow": "Options volume at 2.62M contracts (67% of ADV). The put/call ratio of 0.78 confirms calls dominate — desks are positioning for a bounce, not a crash. Notable: large opening transactions in July $215 and $225 calls (dip-buyers reaching for recovery upside); corresponding hedges with Jun $195 puts. The $200 strike concentrated OI suggests max-pain dynamics may provide a gravitational floor into the June monthly expiry."
+  },
+  "what_traders_are_doing": "Desks are calling this a 'Broadcom misread, not an NVDA problem.' The dominant framework on the buy-side: Broadcom serves hyperscalers building custom AI chips (Google TPUs, Amazon Trainium) — a different market segment than NVIDIA's merchant GPU business. AVGO's unchanged 2027 AI forecast is bearish for the custom-chip segment, not for NVDA's accelerators. The crowd is using the AVGO-induced flush to the $200 add zone as a scale-in opportunity, with tight stops at $195 and eyes on July expiry. Short interest at 1% of float means there is no short squeeze coming — this is long money being patient, not a squeeze trade.",
+  "news": [
+    {
+      "label": "Broadcom (AVGO) fell 14% after its earnings call left the 2027 AI revenue forecast unchanged — the market interpreted stale guidance as an AI-spend deceleration signal, dragging the entire chip sector",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-10-2026",
+      "source": "TheStreet",
+      "sentiment": "negative"
+    },
+    {
+      "label": "NVDA fell 3.31% to ~$201.30 on June 10, underperforming the Nasdaq (−1.98%) and the tech-equipment sector (−2.36%); intraday low of $199.41 — the add zone cited in the June 8 dossier — held",
+      "url": "https://www.tradingkey.com/news/market-movers/261959331-market-movers-nvda-20260610",
+      "source": "TradingKey",
+      "sentiment": "negative"
+    },
+    {
+      "label": "May CPI +4.2% YoY (energy-driven, in line) and Iran strike pledge from Trump hit all risk assets; Dow −953, S&P 500 −1.62%, Nasdaq −1.98%",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-slide-as-cpi-report-lands-us-iran-truce-teeters-215056930.html",
+      "source": "Yahoo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "NVDA's data-center fundamentals are unchanged: $1T forward demand, Blackwell sold out, Rubin platform ramp underway — the Broadcom miss is a networking-ASIC story, not a GPU story",
+      "url": "https://intellectia.ai/blog/nvda-stock-earnings-analysis-may-2026",
+      "source": "Intellectia",
+      "sentiment": "positive"
+    },
+    {
+      "label": "62 analysts maintain Strong Buy on NVDA with a ~$305 average price target — roughly 52% upside from today's close; no analyst downgrades on the Broadcom-driven selloff",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/",
+      "source": "MarketBeat",
+      "sentiment": "positive"
+    },
+    {
+      "label": "OpenAI and Anthropic mega-IPO concerns weighed on public AI stocks; sector rotation fears around crowding put additional pressure on the largest AI names",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-10-2026",
+      "source": "TheStreet",
+      "sentiment": "negative"
+    }
+  ],
+  "outlook": {
+    "short_term": "Basing at the $200 add zone. NVDA needs to hold $195–$200 and then reclaim $210 to confirm the dip is bought. The risk is further sympathy selling if more AI infrastructure names pre-announce weakness, or a hawkish FOMC (June 17) that compresses multiples further. The opportunity: NVDA's own data-center demand has not been revised — this is macro/sympathy selling in the franchise leader, which historically resolves upward.",
+    "long_term": "Bullish — the investment thesis is intact. NVIDIA is the toll-booth of the AI build-out: record FY26 revenue ($215.94B, +65%), Blackwell sold out, Rubin platform beginning to ramp, and an expanding TAM into PCs and physical AI/robotics. The $305 analyst consensus target implies the market will re-rate higher once macro uncertainty clears. Own the dip; let valuation set the size."
+  },
+  "bull_case": [
+    "$200 add zone hit precisely — the prior dossier telegraphed this level, and longs who listened now have a low-risk entry with a defined stop at $195.",
+    "Broadcom's miss is about custom ASICs, not GPUs — NVDA's Blackwell/Rubin demand and hyperscaler order book are unchanged.",
+    "Options market (P/C 0.78, call-heavy flow) signals the smart money is buying the dip for a recovery, not hedging for a crash.",
+    "FY26 record revenue (+65%), $1T forward demand, zero meaningful short interest — fundamentals leave bears with no structural thesis."
+  ],
+  "bear_case": [
+    "A valuation premium of ~30x forward on a $4.93T market cap means even small AI-spend doubt triggers large multiple compression.",
+    "If FOMC June 17 signals a rate hike, high-multiple tech names lead the selloff — NVDA as the most-owned AI name gets hit hardest.",
+    "The AI-spend rotation narrative (custom ASICs, OpenAI/Anthropic building their own silicon) will recur; each cycle erodes GPU demand confidence.",
+    "Momentum is broken — down 14.5% from ATH in under a month; broken momentum stocks can keep grinding lower before buyers commit."
+  ],
+  "key_levels": [
+    { "label": "All-time high (May 14)", "level": "$235.47", "kind": "resistance" },
+    { "label": "Pre-AVGO-selloff close (June 9)", "level": "$208.19", "kind": "resistance" },
+    { "label": "Round-number resistance", "level": "$210", "kind": "resistance" },
+    { "label": "Today's close / session pivot", "level": "$201.30", "kind": "pivot" },
+    { "label": "Add zone / today's intraday low", "level": "$199.41", "kind": "support" },
+    { "label": "Stop / deeper flush level", "level": "$195", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-17", "label": "FOMC rate decision — multiple compression risk if hawkish; relief rally if hold/dovish", "importance": "high" },
+    { "date": "2026-08-26", "label": "NVDA Q2 FY27 earnings (approx.) — next beat-and-raise test for the $305 analyst target", "importance": "high" },
+    { "date": "Ongoing", "label": "Hyperscaler AI-capex commentary and Broadcom follow-through — watch for NVDA-specific data points", "importance": "medium" },
+    { "date": "Ongoing", "label": "Rubin platform ramp and physical-AI/robotics traction (LG partnership, humanoid programs)", "importance": "medium" }
+  ],
+  "analysis": "## The Broadcom misread\n\n[Broadcom's stock fell 14%](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-10-2026) today after leaving its 2027 AI revenue forecast unchanged — the market treated that as a guide-down. The ripple dragged the entire AI-chip complex, including NVDA. But there is a critical distinction: **Broadcom serves the custom-silicon segment** — Google's TPUs, Amazon's Trainium, hyperscalers building their own AI processors. NVIDIA's business is the **merchant GPU accelerator market**, which serves the same hyperscalers and every other enterprise buying AI compute. These are different stories.\n\nBroadcom saying its custom-chip sales won't accelerate in 2027 tells you that the hyperscalers' *in-house* build programs have plateaued. It says nothing about whether they are still buying NVDA's Blackwell and Rubin — and all evidence says they are, in volume.\n\n## Why $200 matters\n\nThe June 8 dossier flagged $200 as the add zone. Today's intraday low was **$199.41** — a textbook test of that level. The close at **~$201.30** confirms it held. With short interest at just 1% of float, this is not a squeeze setup; it is patient accumulation by long-only desks that tracked the level.\n\nThe options market agrees: [P/C ratio at 0.78](https://optioncharts.io/options/NVDA), call-heavy flow, and July $215–$225 upside calls being bought. The IV at 42% is elevated but easing off the recent 50% peak — the risk premium is coming out, which is constructive.\n\n## The one real risk\n\nThe only thesis-level risk is **FOMC on June 17**. If Warsh signals a rate hike, high-multiple tech (30x forward NVDA at the top of the list) faces another compression leg. A close below $195 on a hike signal would change the call to HOLD and wait for the base. Until June 17, the add zone and the unchanged fundamentals say: BUY the dip."
+}
