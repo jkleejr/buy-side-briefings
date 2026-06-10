@@ -1,5 +1,5 @@
 import YahooFinance from "yahoo-finance2";
-import { formatPct } from "@/lib/utils";
+import { formatPct, nowUtcHM } from "@/lib/utils";
 import { TICKER_TIPS } from "@/lib/glossary";
 import Panel from "./panel";
 import Tooltip from "./tooltip";
@@ -129,7 +129,7 @@ export default async function UsPulsePanel() {
   ];
 
   return (
-    <Panel
+    <Panel asOf={nowUtcHM()}
       code="PULSE"
       title="US Pulse · Breadth & Risk Internals"
       learn="The six numbers a US-desk trader scans first thing every morning, beyond SPX. Russell 2K = is the rally broad? RSP−SPY spread = breadth check (equal-weight vs cap-weight). Copper = global growth pulse. HYG = credit stress (early warning before stocks crack). 30Y Yield + TLT = long-duration bond sentiment. Click the title for the full US Pulse detail page with each indicator charted historically."

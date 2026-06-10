@@ -39,6 +39,25 @@
   "created_at": "2026-06-08",
   "expires_at": "2026-06-22",
   "status": "active",
-  "tags": ["oil", "Iran", "Brent", "tail-hedge", "macro", "low-conviction", "escalation", "USO"],
-  "outcome": null
+  "tags": [
+    "oil",
+    "Iran",
+    "Brent",
+    "tail-hedge",
+    "macro",
+    "low-conviction",
+    "escalation",
+    "USO"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 131,
+    "entry_high": 135,
+    "stop": 124,
+    "targets": [
+      143,
+      149,
+      157
+    ]
+  }
 }

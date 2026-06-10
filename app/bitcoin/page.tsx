@@ -1,4 +1,5 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
+import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
 import TechnicalsPanel from "@/components/technicals-panel";
 
@@ -22,6 +23,10 @@ export default function BitcoinPage() {
   }
 
   return (
-    <AssetDailyView series={series} technicals={<TechnicalsPanel symbol="BTC-USD" />} />
+    <AssetDailyView
+      series={series}
+      technicals={<TechnicalsPanel symbol="BTC-USD" />}
+      callRecord={<AssetCallRecord series={series} symbol="BTC-USD" />}
+    />
   );
 }

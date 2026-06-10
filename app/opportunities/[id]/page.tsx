@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllOpportunities, getOpportunity, type Opportunity } from "@/lib/data";
+import { checkOpenOpportunities } from "@/lib/opportunity-check";
+import LiveCheckBadges from "@/components/live-check-badges";
 import Panel from "@/components/panel";
 
 export const revalidate = 300;
@@ -41,6 +43,9 @@ export default async function OpportunityDetailPage({
   const o = getOpportunity(id);
   if (!o) notFound();
 
+  // Live plan-vs-price check for open ideas (empty map for closed ones).
+  const live = (await checkOpenOpportunities([o]))[o.id];
+
   return (
     <article className="mx-auto max-w-4xl space-y-3">
       <Link
@@ -70,6 +75,16 @@ export default async function OpportunityDetailPage({
           <span className="text-[var(--amber-dim)]">CATALYST · </span>
           {o.catalyst}
         </p>
+        {live && (
+          <div className="border border-[var(--border)] bg-[var(--panel)] px-2 py-1.5">
+            <LiveCheckBadges price={live.price} badges={live.badges} />
+            {live.badges.length === 0 && (
+              <span className="ml-2 font-mono text-[9px] uppercase tracking-wider text-[var(--dim)]">
+                no level crossed — plan intact
+              </span>
+            )}
+          </div>
+        )}
       </header>
 
       {/* Trade card */}

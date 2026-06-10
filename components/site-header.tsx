@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LearnToggle from "./learn-toggle";
 import MobileNav from "./mobile-nav";
+import PaletteButton from "./palette-button";
 
 // Ordered by the daily job-to-be-done: today's calls first (dossiers, ops),
 // then context (markets hub), then the audit trail (week, track record).
@@ -50,6 +51,7 @@ export default function SiteHeader() {
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] sm:gap-3">
+          <PaletteButton />
           <LearnToggle />
           <span className="hidden lg:inline">{dateStr}</span>
           <span className="hidden text-[var(--amber-dim)] lg:inline">·</span>

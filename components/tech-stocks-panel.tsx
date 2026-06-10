@@ -1,4 +1,5 @@
 import { getChartSeries, getQuote } from "@/lib/markets";
+import { nowUtcHM } from "@/lib/utils";
 import type { ChartPoint } from "@/lib/chart-ranges";
 import Panel from "./panel";
 import TechStocksClient, {
@@ -44,7 +45,7 @@ export default async function TechStocksPanel() {
   });
 
   return (
-    <Panel
+    <Panel asOf={nowUtcHM()}
       code="TECH"
       title="Major Tech Stocks · Mag 7 + AVGO"
       learn="The eight mega-cap tech names that dominate the S&P 500 (~35% of the index by weight). Watching them together reveals leadership: when MSFT/AAPL/GOOGL hold up but NVDA/AMD/AVGO sell off, the market is rotating to quality within tech; when all eight sell off together, it's risk-off. Hover any ticker for what the company does and the key narratives driving it. Refreshes every 60 seconds."

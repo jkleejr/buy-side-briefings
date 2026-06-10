@@ -5,6 +5,8 @@ import Tooltip from "./tooltip";
 type PanelProps = {
   title: string;
   meta?: React.ReactNode;
+  /** Data vintage, e.g. "14:32 UTC" — rendered after meta as AS OF …. */
+  asOf?: string;
   code?: string;
   learn?: string;
   href?: string;
@@ -15,6 +17,7 @@ type PanelProps = {
 export default function Panel({
   title,
   meta,
+  asOf,
   code,
   learn,
   href,
@@ -66,6 +69,11 @@ export default function Panel({
         {header}
         <div className="ml-auto flex items-center gap-2 text-[10px] uppercase tracking-wider text-[var(--dim)]">
           {meta}
+          {asOf && (
+            <span className="hidden whitespace-nowrap font-mono text-[9px] tracking-widest text-[var(--dim)] sm:inline">
+              AS OF {asOf}
+            </span>
+          )}
         </div>
       </header>
       <div className="min-h-0 flex-1">{children}</div>

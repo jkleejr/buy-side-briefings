@@ -167,3 +167,9 @@ export function verdictColor(code: string): {
       return { bg: "bg-zinc-500/10", text: "text-zinc-400", ring: "ring-zinc-500/30" };
   }
 }
+
+/** Current time as "HH:MM UTC" — stamped at server render, i.e. the moment the data was fetched. */
+export function nowUtcHM(): string {
+  const d = new Date();
+  return `${String(d.getUTCHours()).padStart(2, "0")}:${String(d.getUTCMinutes()).padStart(2, "0")} UTC`;
+}

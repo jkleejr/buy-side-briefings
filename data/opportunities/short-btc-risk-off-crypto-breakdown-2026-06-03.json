@@ -43,6 +43,25 @@
   "created_at": "2026-06-03",
   "expires_at": "2026-06-25",
   "status": "active",
-  "tags": ["crypto", "Bitcoin", "risk-off", "macro", "short", "DXY", "Iran", "low-conviction"],
-  "outcome": null
+  "tags": [
+    "crypto",
+    "Bitcoin",
+    "risk-off",
+    "macro",
+    "short",
+    "DXY",
+    "Iran",
+    "low-conviction"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 65000,
+    "entry_high": 68000,
+    "stop": 72000,
+    "targets": [
+      60000,
+      52000,
+      42000
+    ]
+  }
 }

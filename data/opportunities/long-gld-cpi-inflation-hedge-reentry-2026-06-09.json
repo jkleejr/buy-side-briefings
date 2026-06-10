@@ -43,6 +43,25 @@
   "created_at": "2026-06-09",
   "expires_at": "2026-06-23",
   "status": "active",
-  "tags": ["gold", "GLD", "inflation", "CPI", "Iran", "macro", "low-conviction", "binary-event"],
-  "outcome": null
+  "tags": [
+    "gold",
+    "GLD",
+    "inflation",
+    "CPI",
+    "Iran",
+    "macro",
+    "low-conviction",
+    "binary-event"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 395,
+    "entry_high": 404,
+    "stop": 384,
+    "targets": [
+      415,
+      432,
+      450
+    ]
+  }
 }

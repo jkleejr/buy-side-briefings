@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "4-8 weeks",
-  "current_price": 174.0,
+  "current_price": 174,
   "entry": "Initiate $172-178 (current zone; June 3 morning). Scale: 70% at open; 30% add on any intraday dip to $170-172. Do NOT initiate above $180 — the geopolitical news is live and the stock gaps fast on Iran headlines.",
   "stop_loss": "$162 daily close (~7.5% below entry midpoint $175) — implies a formal Iran ceasefire is announced OR DoD emergency supplemental procurement is cancelled/delayed beyond Q3",
   "targets": [
@@ -43,6 +43,24 @@
   "created_at": "2026-06-03",
   "expires_at": "2026-08-15",
   "status": "active",
-  "tags": ["defense", "Iran", "missiles", "catalyst", "RTX", "Patriot", "interceptors"],
-  "outcome": null
+  "tags": [
+    "defense",
+    "Iran",
+    "missiles",
+    "catalyst",
+    "RTX",
+    "Patriot",
+    "interceptors"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 172,
+    "entry_high": 178,
+    "stop": 162,
+    "targets": [
+      190,
+      205,
+      215
+    ]
+  }
 }

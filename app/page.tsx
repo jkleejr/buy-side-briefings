@@ -1,10 +1,12 @@
 import {
   getAllBriefings,
   getAllMarketsVerdicts,
+  getAllOpportunities,
   getLatestMarketsVerdict,
   getLatestCryptoVerdict,
   getOpportunityStats,
 } from "@/lib/data";
+import { buildPaperPortfolio } from "@/lib/paper-portfolio";
 import { getLatestAssetDaily } from "@/lib/asset-daily";
 import { getSpxDailyCloses } from "@/lib/markets";
 import { aggregateStats, monthsBackFor, scoreVerdict } from "@/lib/verdict-scoring";
@@ -75,6 +77,13 @@ export default async function Home() {
   const hitRate = scored > 0 ? (hits / scored) * 100 : null;
   const { streak_d5 } = aggregateStats(scoredRows);
   const oppStats = getOpportunityStats();
+  const portfolio = buildPaperPortfolio(getAllOpportunities(), spxSeries);
+  const equity = portfolio
+    ? {
+        values: portfolio.points.slice(-60).map((p) => p.strategy),
+        total_pct: portfolio.stats.total_return_pct,
+      }
+    : null;
 
   return (
     <div className="space-y-1">
@@ -95,6 +104,7 @@ export default async function Home() {
         scored={scored}
         streak={streak_d5}
         ops={oppStats}
+        equity={equity}
       />
 
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">

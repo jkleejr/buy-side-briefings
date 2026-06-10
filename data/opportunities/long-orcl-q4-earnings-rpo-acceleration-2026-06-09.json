@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "low",
   "time_horizon": "1 week",
-  "current_price": 211.30,
+  "current_price": 211.3,
   "entry": "Long $208–215 pre-earnings Wednesday June 10 after close. Initiate today (June 9) on any intraday pullback toward $208–212; full position by market close Tuesday. CRITICAL override: if Wednesday's May CPI (8:30 AM ET) prints above +4.5% YoY or above +0.4% m/m core, close this position before ORCL reports — the macro overlay will dominate the earnings catalyst and the stock will be swept lower with the tape regardless of RPO quality. Do not hold through a hot CPI into an after-close earnings print on the same day.",
   "stop_loss": "$196 daily close (~7.3% below entry midpoint $211.50) — implies RPO deceleration below $530B or revenue miss below $18.6B; also triggered if CPI shock forces broad-market deleveraging that overrides the earnings beat",
   "targets": [
@@ -39,6 +39,24 @@
   "created_at": "2026-06-09",
   "expires_at": "2026-06-16",
   "status": "active",
-  "tags": ["ORCL", "earnings", "catalyst", "enterprise-AI", "RPO", "cloud", "low-conviction"],
-  "outcome": null
+  "tags": [
+    "ORCL",
+    "earnings",
+    "catalyst",
+    "enterprise-AI",
+    "RPO",
+    "cloud",
+    "low-conviction"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 208,
+    "entry_high": 215,
+    "stop": 196,
+    "targets": [
+      224,
+      238,
+      252
+    ]
+  }
 }

@@ -7,8 +7,14 @@ import type {
   OpportunityConviction,
   OpportunityDirection,
 } from "@/lib/data";
+import type { LiveCheck } from "@/lib/opportunity-check";
+import LiveCheckBadges from "./live-check-badges";
 
-type Props = { items: Opportunity[] };
+type Props = {
+  items: Opportunity[];
+  /** Live plan-vs-price checks for open ideas, keyed by opportunity id. */
+  live?: Record<string, LiveCheck>;
+};
 
 const DIRECTION_LABEL: Record<OpportunityDirection, string> = {
   long: "LONG",
@@ -53,7 +59,7 @@ function convictionBars(c: OpportunityConviction): string {
   }
 }
 
-export default function OpportunitiesList({ items }: Props) {
+export default function OpportunitiesList({ items, live }: Props) {
   const [dirFilter, setDirFilter] = useState<"all" | OpportunityDirection>("all");
   const [convFilter, setConvFilter] = useState<"all" | OpportunityConviction>("all");
   const [tagFilter, setTagFilter] = useState<string | null>(null);
@@ -186,6 +192,14 @@ export default function OpportunitiesList({ items }: Props) {
               <div className="font-mono text-[13px] font-semibold text-[var(--foreground)]">
                 {o.title}
               </div>
+              {live?.[o.id] && (
+                <div className="mt-1">
+                  <LiveCheckBadges
+                    price={live[o.id].price}
+                    badges={live[o.id].badges}
+                  />
+                </div>
+              )}
               <div className="mt-1 font-mono text-[11px] leading-snug text-[var(--dim)]">
                 {o.catalyst}
               </div>

@@ -1,4 +1,5 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
+import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
 import TechnicalsPanel from "@/components/technicals-panel";
 
@@ -22,6 +23,10 @@ export default function NvidiaPage() {
   }
 
   return (
-    <AssetDailyView series={series} technicals={<TechnicalsPanel symbol="NVDA" />} />
+    <AssetDailyView
+      series={series}
+      technicals={<TechnicalsPanel symbol="NVDA" />}
+      callRecord={<AssetCallRecord series={series} symbol="NVDA" />}
+    />
   );
 }

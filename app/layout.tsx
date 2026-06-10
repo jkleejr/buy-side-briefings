@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
+import CommandPalette from "@/components/command-palette";
+import MobileTabbar from "@/components/mobile-tabbar";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import StaleBanner from "@/components/stale-banner";
@@ -62,8 +64,10 @@ export default function RootLayout({
         <SiteHeader />
         <StaleBanner />
         <TickerStrip />
-        <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 sm:px-2 sm:py-2">{children}</main>
+        <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>
         <SiteFooter />
+        <MobileTabbar />
+        <CommandPalette />
       </body>
     </html>
   );

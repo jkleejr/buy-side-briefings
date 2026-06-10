@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-4 weeks",
-  "current_price": 51.0,
+  "current_price": 51,
   "entry": "Initiate $50.00–51.50 on NFP confirmation (print below 125K with cooling wages at 8:30 AM ET). If NFP fires the bull case, enter at the open or on any post-announcement pullback toward $50. Do not initiate above $52 or before the 8:30 AM print. Scale: 70% at open post-NFP, 30% add on any intraday dip to $50.25–50.75.",
   "stop_loss": "$48.50 daily close (~4.4% below entry midpoint $50.75) — implies NFP was hot and rate relief reverses decisively, OR Iran deal collapses and energy-sector credit stress re-expands through the financial system, OR SPX closes below 7,460.",
   "targets": [
@@ -43,6 +43,25 @@
   "created_at": "2026-06-05",
   "expires_at": "2026-06-26",
   "status": "active",
-  "tags": ["financials", "macro", "NFP", "rate-relief", "Iran", "ETF", "banks", "event-driven"],
-  "outcome": null
+  "tags": [
+    "financials",
+    "macro",
+    "NFP",
+    "rate-relief",
+    "Iran",
+    "ETF",
+    "banks",
+    "event-driven"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 50,
+    "entry_high": 51.5,
+    "stop": 48.5,
+    "targets": [
+      53,
+      55,
+      57
+    ]
+  }
 }

@@ -81,9 +81,15 @@ function buildWindow(
   };
 }
 
-export function scoreVerdict(
-  verdict: MarketsVerdict,
+/**
+ * Score any dated directional call against a daily-close series. The judge
+ * callback decides right/wrong from the window return (null = no opinion).
+ * Markets verdicts and per-asset dossier calls share this core.
+ */
+export function scoreDatedCall(
+  date: string,
   series: DailyClose[],
+  judgeFn: (pct: number | null) => boolean | null,
 ): VerdictScore {
   const empty = (): ReturnWindow => ({
     trading_days: 0,
@@ -93,23 +99,10 @@ export function scoreVerdict(
     pending: true,
   });
 
-  if (series.length === 0) {
-    return {
-      base_date: verdict.date,
-      base_close: null,
-      d1: { ...empty(), trading_days: 1 },
-      d5: { ...empty(), trading_days: 5 },
-      d20: { ...empty(), trading_days: 20 },
-      right_d1: null,
-      right_d5: null,
-      right_d20: null,
-    };
-  }
-
-  const baseIdx = indexAtOrAfter(series, verdict.date);
+  const baseIdx = series.length === 0 ? -1 : indexAtOrAfter(series, date);
   if (baseIdx === -1) {
     return {
-      base_date: verdict.date,
+      base_date: date,
       base_close: null,
       d1: { ...empty(), trading_days: 1 },
       d5: { ...empty(), trading_days: 5 },
@@ -129,10 +122,39 @@ export function scoreVerdict(
     d1,
     d5,
     d20,
-    right_d1: judge(verdict.verdict.code, d1.pct),
-    right_d5: judge(verdict.verdict.code, d5.pct),
-    right_d20: judge(verdict.verdict.code, d20.pct),
+    right_d1: judgeFn(d1.pct),
+    right_d5: judgeFn(d5.pct),
+    right_d20: judgeFn(d20.pct),
   };
+}
+
+export function scoreVerdict(
+  verdict: MarketsVerdict,
+  series: DailyClose[],
+): VerdictScore {
+  return scoreDatedCall(verdict.date, series, (pct) =>
+    judge(verdict.verdict.code, pct),
+  );
+}
+
+/**
+ * Judge a per-asset dossier call: BUY right if the asset is up over the
+ * window, SELL right if down, HOLD informational (not scored) — mirrors how
+ * markets verdicts treat HOLD.
+ */
+export function judgeAssetAction(
+  action: "buy" | "hold" | "sell",
+  pct: number | null,
+): boolean | null {
+  if (pct === null) return null;
+  switch (action) {
+    case "buy":
+      return pct > 0;
+    case "sell":
+      return pct < 0;
+    case "hold":
+      return null;
+  }
 }
 
 /**

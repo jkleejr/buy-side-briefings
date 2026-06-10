@@ -1,4 +1,5 @@
 import { getChartSeries, getQuote, type DailyClose } from "@/lib/markets";
+import { nowUtcHM } from "@/lib/utils";
 import Panel from "./panel";
 import MultiAssetSparkPanel from "./multi-asset-spark-panel";
 
@@ -28,7 +29,7 @@ export default async function MetalsPanel() {
   });
 
   return (
-    <Panel
+    <Panel asOf={nowUtcHM()}
       code="METAL"
       title="Metals"
       learn="Live GLD (gold ETF) and SLV (silver ETF) prices. Gold = classic inflation hedge and crisis asset. Silver = 'high-beta gold' (smaller market + industrial demand amplify moves). Click the title to open the full metals detail page. Refreshes every 60 seconds."

@@ -15,18 +15,43 @@ type OppStats = {
  * right, and what's on right now? Each tile links to the page with the full
  * story (/track-record, /opportunities).
  */
+function MiniCurve({ values }: { values: number[] }) {
+  if (values.length < 2) return null;
+  const W = 96;
+  const H = 18;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const step = W / (values.length - 1);
+  const d = values
+    .map(
+      (v, i) =>
+        `${i === 0 ? "M" : "L"}${(i * step).toFixed(1)},${(H - ((v - min) / range) * H).toFixed(1)}`,
+    )
+    .join(" ");
+  const up = values[values.length - 1] >= values[0];
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="h-[18px] w-full" preserveAspectRatio="none">
+      <path d={d} fill="none" stroke={up ? "#22c55e" : "#ef4444"} strokeWidth={1.25} />
+    </svg>
+  );
+}
+
 export default function TrackGlanceStrip({
   hitRate,
   hits,
   scored,
   streak,
   ops,
+  equity,
 }: {
   hitRate: number | null;
   hits: number;
   scored: number;
   streak: StreakInfo;
   ops: OppStats;
+  /** Paper-portfolio summary: recent equity values + total realized return. */
+  equity?: { values: number[]; total_pct: number } | null;
 }) {
   const streakTone =
     streak.kind === "right"
@@ -111,6 +136,24 @@ export default function TrackGlanceStrip({
             <span className="text-[10px] leading-none text-[var(--dim)]">{t.sub}</span>
           </Link>
         ))}
+        {equity && equity.values.length >= 2 && (
+          <Link
+            href="/track-record"
+            className="flex min-w-[148px] flex-1 shrink-0 flex-col justify-between gap-0.5 px-3 py-1.5 hover:bg-[rgba(255,165,0,0.04)]"
+          >
+            <span className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+              Paper Equity
+            </span>
+            <span
+              className={`text-[15px] font-bold tabular-nums leading-none ${
+                equity.total_pct >= 0 ? "text-[var(--up)]" : "text-[var(--down)]"
+              }`}
+            >
+              {formatPct(equity.total_pct)}
+            </span>
+            <MiniCurve values={equity.values} />
+          </Link>
+        )}
       </div>
     </div>
   );

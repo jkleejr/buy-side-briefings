@@ -1,4 +1,5 @@
 import { getChartSeries, getQuote } from "@/lib/markets";
+import { nowUtcHM } from "@/lib/utils";
 import type { ChartPoint } from "@/lib/chart-ranges";
 import Panel from "./panel";
 import UsIndicesClient, {
@@ -54,7 +55,7 @@ export default async function UsIndicesPanel({
   });
 
   return (
-    <Panel
+    <Panel asOf={nowUtcHM()}
       code={code}
       title={title}
       learn={learn}

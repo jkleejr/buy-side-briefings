@@ -43,6 +43,24 @@
   "created_at": "2026-06-05",
   "expires_at": "2026-08-01",
   "status": "active",
-  "tags": ["defense", "AI", "government", "SpaceX", "catalyst", "demand-zone", "reentry"],
-  "outcome": null
+  "tags": [
+    "defense",
+    "AI",
+    "government",
+    "SpaceX",
+    "catalyst",
+    "demand-zone",
+    "reentry"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 138,
+    "entry_high": 143,
+    "stop": 131,
+    "targets": [
+      155,
+      170,
+      190
+    ]
+  }
 }

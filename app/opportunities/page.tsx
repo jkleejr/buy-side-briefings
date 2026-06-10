@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { getAllOpportunities } from "@/lib/data";
+import { checkOpenOpportunities } from "@/lib/opportunity-check";
 import Panel from "@/components/panel";
 import OpportunitiesList from "@/components/opportunities-list";
 
 export const metadata = { title: "Opportunities — Buy-Side Briefings" };
 export const revalidate = 300;
 
-export default function OpportunitiesPage() {
+export default async function OpportunitiesPage() {
   const items = getAllOpportunities();
+  const live = await checkOpenOpportunities(items);
 
   const activeCount = items.filter((o) => o.status === "active").length;
   const longCount = items.filter((o) =>
@@ -107,7 +109,7 @@ export default function OpportunitiesPage() {
           </div>
         </Panel>
       ) : (
-        <OpportunitiesList items={items} />
+        <OpportunitiesList items={items} live={live} />
       )}
     </div>
   );

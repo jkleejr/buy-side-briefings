@@ -123,6 +123,31 @@ export async function getYieldLevels(): Promise<YieldLevels> {
   }
 }
 
+/**
+ * Lightweight live quotes for arbitrary symbols (used by the opportunity
+ * live-check). Returns a symbol → price map; missing/failed symbols are
+ * simply absent.
+ */
+export async function getLivePrices(
+  symbols: string[],
+): Promise<Record<string, number>> {
+  if (symbols.length === 0) return {};
+  try {
+    const results = (await yahooFinance.quote(symbols)) as YQuote | YQuote[];
+    const arr: YQuote[] = Array.isArray(results) ? results : [results];
+    const out: Record<string, number> = {};
+    for (const q of arr) {
+      if (q?.symbol && typeof q.regularMarketPrice === "number") {
+        out[q.symbol] = q.regularMarketPrice;
+      }
+    }
+    return out;
+  } catch (err) {
+    console.error("[markets] live price fetch failed:", err);
+    return {};
+  }
+}
+
 export type DailyClose = { date: string; close: number };
 
 /**

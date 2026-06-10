@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-4 weeks",
-  "current_price": 363.60,
+  "current_price": 363.6,
   "entry": "Long $358–368 (current zone; GOOGL trading $363.60 with intraday range $357.31–$372.06 on June 10). Scale: 70% at current, 30% add on any intraday dip to $358–362 if it coincides with a VIX compression toward 17 (confirming the macro backdrop, not just a technical flush). Do not initiate above $372 without additional fundamental confirmation. If ORCL disappoints after the close tonight, the size should be reduced by 40% on the open Thursday — the Apple PCC deal supports GOOGL independently, but a broken enterprise AI sentiment harms cloud multiple expansion.",
   "stop_loss": "$345 daily close (~5.1% below entry midpoint $363.60) — implies ORCL RPO guidance disappoints materially AND the Apple PCC arrangement is revealed to be a short-term trial contract rather than a committed multi-year deal AND Iran escalation spikes Brent above $97, reversing the macro relief from today's CPI print.",
   "targets": [
@@ -43,6 +43,26 @@
   "created_at": "2026-06-10",
   "expires_at": "2026-07-08",
   "status": "active",
-  "tags": ["GOOGL", "Google Cloud", "Apple", "Siri", "AI", "cloud", "catalyst", "CPI", "PCC"],
-  "outcome": null
+  "tags": [
+    "GOOGL",
+    "Google Cloud",
+    "Apple",
+    "Siri",
+    "AI",
+    "cloud",
+    "catalyst",
+    "CPI",
+    "PCC"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 358,
+    "entry_high": 368,
+    "stop": 345,
+    "targets": [
+      385,
+      400,
+      420
+    ]
+  }
 }

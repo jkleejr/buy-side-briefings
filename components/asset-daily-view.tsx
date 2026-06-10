@@ -110,13 +110,72 @@ function Stat({
 
 // ---- main view -------------------------------------------------------------
 
+// ---- "what changed since yesterday" ----------------------------------------
+
+function DeltaStrip({ series }: { series: AssetDaily[] }) {
+  const today = series[0];
+  const prev = series[1];
+  if (!prev) return null;
+
+  // Consecutive days (incl. today) the standing call has been the same.
+  let streak = 1;
+  for (let i = 1; i < series.length; i++) {
+    if (series[i].decision.action === today.decision.action) streak += 1;
+    else break;
+  }
+
+  const changes: React.ReactNode[] = [];
+  if (prev.decision.action !== today.decision.action) {
+    changes.push(
+      <span key="call" className="font-bold text-[var(--amber)]">
+        CALL CHANGED: {prev.decision.action.toUpperCase()} ▸ {today.decision.action.toUpperCase()}
+      </span>,
+    );
+  }
+  if (prev.decision.conviction !== today.decision.conviction) {
+    changes.push(
+      <span key="conv" className="text-[var(--foreground)]">
+        conviction {prev.decision.conviction} ▸ {today.decision.conviction}
+      </span>,
+    );
+  }
+  if (prev.day_winner !== today.day_winner) {
+    changes.push(
+      <span key="win" className="text-[var(--foreground)]">
+        session winner {prev.day_winner} ▸ {today.day_winner}
+      </span>,
+    );
+  }
+
+  return (
+    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border border-[var(--border)] bg-[var(--panel)] px-3 py-1.5 font-mono text-[11px]">
+      <span className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+        Δ vs {prev.date}
+      </span>
+      {changes}
+      {prev.decision.action === today.decision.action ? (
+        <span className="text-[var(--dim)]">
+          {changes.length === 0 ? "no change — " : ""}
+          {today.decision.action.toUpperCase()} ({today.decision.conviction}) reaffirmed
+          {streak > 1 ? `, day ${streak} in a row` : ""}
+        </span>
+      ) : (
+        <span className="text-[var(--dim)]">first day of the new call</span>
+      )}
+    </div>
+  );
+}
+
 export default function AssetDailyView({
   series,
   technicals,
+  callRecord,
 }: {
   series: AssetDaily[];
   /** Optional live technical-analysis panel, rendered between Outlook and Key levels. */
   technicals?: React.ReactNode;
+  /** Optional scored call-record panel, rendered after the hero. */
+  callRecord?: React.ReactNode;
 }) {
   const today = series[0];
   const history = series.slice(1);
@@ -209,6 +268,12 @@ export default function AssetDailyView({
           {today.day_summary}
         </div>
       </section>
+
+      {/* ================= WHAT CHANGED SINCE YESTERDAY ================= */}
+      <DeltaStrip series={series} />
+
+      {/* ===================== CALL RECORD (scored) ===================== */}
+      {callRecord}
 
       {/* ============================= SNAPSHOT ============================= */}
       <Panel code="SNAP" title="Snapshot">

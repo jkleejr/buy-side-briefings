@@ -484,6 +484,18 @@ export type OpportunityOutcome = {
   note?: string;
 };
 
+/**
+ * Machine-readable price levels alongside the prose entry/stop/targets —
+ * lets the site auto-check live prices against the plan (stop breached,
+ * target hit, in entry zone) instead of waiting for a manual close.
+ */
+export type OpportunityLevels = {
+  entry_low?: number;
+  entry_high?: number;
+  stop?: number;
+  targets?: number[];
+};
+
 export type Opportunity = {
   id: string;
   title: string;
@@ -510,6 +522,7 @@ export type Opportunity = {
   status: OpportunityStatus;
   tags: string[];
   outcome?: OpportunityOutcome;
+  levels?: OpportunityLevels;
 };
 
 // Daily snapshot of the opportunities slate — written by the morning routine.

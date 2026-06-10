@@ -1,4 +1,5 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
+import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
 import TechnicalsPanel from "@/components/technicals-panel";
 
@@ -25,6 +26,7 @@ export default function SkHynixPage() {
     <AssetDailyView
       series={series}
       technicals={<TechnicalsPanel symbol="000660.KS" currency="₩" />}
+      callRecord={<AssetCallRecord series={series} symbol="000660.KS" />}
     />
   );
 }

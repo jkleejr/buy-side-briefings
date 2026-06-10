@@ -43,6 +43,25 @@
   "created_at": "2026-06-09",
   "expires_at": "2026-06-23",
   "status": "active",
-  "tags": ["AAPL", "short", "WWDC", "sell-the-news", "distribution", "momentum", "low-conviction", "Apple-Intelligence"],
-  "outcome": null
+  "tags": [
+    "AAPL",
+    "short",
+    "WWDC",
+    "sell-the-news",
+    "distribution",
+    "momentum",
+    "low-conviction",
+    "Apple-Intelligence"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 298,
+    "entry_high": 305,
+    "stop": 315,
+    "targets": [
+      290,
+      280,
+      268
+    ]
+  }
 }

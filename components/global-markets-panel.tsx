@@ -1,5 +1,5 @@
 import YahooFinance from "yahoo-finance2";
-import { formatPct } from "@/lib/utils";
+import { formatPct, nowUtcHM } from "@/lib/utils";
 import { TICKER_TIPS } from "@/lib/glossary";
 import Panel from "./panel";
 import Tooltip from "./tooltip";
@@ -60,7 +60,7 @@ export default async function GlobalMarketsPanel() {
   }
 
   return (
-    <Panel
+    <Panel asOf={nowUtcHM()}
       code="GLBL"
       title="Global Markets · Overnight & Sessions"
       learn="The major non-US stock indices, grouped by region. Useful as overnight read: by the time the US market opens at 9:30am ET, Asia has already closed and Europe is mid-session — these tell you what futures will do at the open. Click the title for the full Global Markets detail page with per-region charts."

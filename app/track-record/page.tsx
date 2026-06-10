@@ -20,6 +20,8 @@ import {
   getVerdictExplanation,
   verdictColor,
 } from "@/lib/utils";
+import { buildPaperPortfolio } from "@/lib/paper-portfolio";
+import EquityCurveChart from "@/components/equity-curve-chart";
 import Panel from "@/components/panel";
 import Tooltip from "@/components/tooltip";
 import VerdictMarkerChart, {
@@ -112,6 +114,9 @@ export default async function TrackRecordPage() {
 
   // Same question for the opportunities journal (closed trades only).
   const opps = getAllOpportunities();
+
+  // Paper portfolio: every closed idea taken at stated size, vs holding SPX.
+  const portfolio = buildPaperPortfolio(opps, spxSeries);
   const oppCalib = (["high", "medium", "low"] as Conviction[]).map((conv) => {
     const ofConv = opps.filter((o) => o.conviction === conv);
     const wins = ofConv.filter((o) => o.status === "target_hit").length;
@@ -356,6 +361,129 @@ export default async function TrackRecordPage() {
           </Panel>
         </div>
       </div>
+
+      {/* ---- Paper portfolio: the "are we making money" chart ---- */}
+      {portfolio && (
+        <Panel
+          code="EQTY"
+          title="Paper Portfolio · Every Closed Idea at Stated Size, vs SPX"
+          learn="Simulates an account that took EVERY closed opportunity at its published position size, compounding each trade's recorded return on its close date (amber step line). The dashed cyan line is buying the S&P 500 on the journal's first day and doing nothing — the bar any strategy has to beat. Realized trades only: open ideas aren't marked to market, so the line moves only when a trade closes. Win-rate can flatter; this line can't."
+          meta={
+            <span>
+              {portfolio.stats.start_date} → {portfolio.stats.end_date} ·{" "}
+              {portfolio.stats.trades} CLOSED
+            </span>
+          }
+        >
+          <div className="grid grid-cols-2 divide-x divide-[var(--border)] border-b border-[var(--border)] font-mono sm:grid-cols-5">
+            <div className="px-2 py-1.5">
+              <div className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+                Strategy
+              </div>
+              <div
+                className={`mt-0.5 text-[15px] font-bold tabular-nums ${
+                  portfolio.stats.total_return_pct >= 0
+                    ? "text-[var(--up)]"
+                    : "text-[var(--down)]"
+                }`}
+              >
+                {formatPct(portfolio.stats.total_return_pct)}
+              </div>
+            </div>
+            <div className="px-2 py-1.5">
+              <div className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+                SPX same period
+              </div>
+              <div
+                className={`mt-0.5 text-[15px] font-bold tabular-nums ${
+                  portfolio.stats.spx_return_pct >= 0
+                    ? "text-[var(--up)]"
+                    : "text-[var(--down)]"
+                }`}
+              >
+                {formatPct(portfolio.stats.spx_return_pct)}
+              </div>
+            </div>
+            <div className="px-2 py-1.5">
+              <div className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+                Edge vs SPX
+              </div>
+              <div
+                className={`mt-0.5 text-[15px] font-bold tabular-nums ${
+                  portfolio.stats.total_return_pct >= portfolio.stats.spx_return_pct
+                    ? "text-[var(--up)]"
+                    : "text-[var(--down)]"
+                }`}
+              >
+                {formatPct(
+                  portfolio.stats.total_return_pct - portfolio.stats.spx_return_pct,
+                )}
+              </div>
+            </div>
+            <div className="px-2 py-1.5">
+              <div className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+                Max drawdown
+              </div>
+              <div className="mt-0.5 text-[15px] font-bold tabular-nums text-[var(--down)]">
+                {formatPct(portfolio.stats.max_drawdown_pct)}
+              </div>
+            </div>
+            <div className="px-2 py-1.5">
+              <div className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+                Avg position
+              </div>
+              <div className="mt-0.5 text-[15px] font-bold tabular-nums text-[var(--foreground)]">
+                {portfolio.stats.avg_position_pct.toFixed(1)}%
+              </div>
+            </div>
+          </div>
+          <EquityCurveChart points={portfolio.points} />
+          {(portfolio.stats.best || portfolio.stats.worst) && (
+            <div className="grid grid-cols-1 border-t border-[var(--border)] font-mono text-[11px] sm:grid-cols-2 sm:divide-x sm:divide-[var(--border)]">
+              {portfolio.stats.best && (
+                <div className="px-2 py-1.5">
+                  <span className="text-[9px] uppercase tracking-widest text-[var(--up)]">
+                    Best contribution ·{" "}
+                  </span>
+                  <Link
+                    href={`/opportunities/${portfolio.stats.best.id}`}
+                    className="text-[var(--foreground)] hover:underline"
+                  >
+                    {portfolio.stats.best.ticker}
+                  </Link>{" "}
+                  <span className="text-[var(--up)]">
+                    {formatPct(portfolio.stats.best.contribution_pct)}
+                  </span>{" "}
+                  <span className="text-[var(--dim)]">
+                    ({portfolio.stats.best.weight_pct}% ×{" "}
+                    {formatPct(portfolio.stats.best.return_pct)})
+                  </span>
+                </div>
+              )}
+              {portfolio.stats.worst && (
+                <div className="px-2 py-1.5">
+                  <span className="text-[9px] uppercase tracking-widest text-[var(--down)]">
+                    Worst contribution ·{" "}
+                  </span>
+                  <Link
+                    href={`/opportunities/${portfolio.stats.worst.id}`}
+                    className="text-[var(--foreground)] hover:underline"
+                  >
+                    {portfolio.stats.worst.ticker}
+                  </Link>{" "}
+                  <span className="text-[var(--down)]">
+                    {formatPct(portfolio.stats.worst.contribution_pct)}
+                  </span>{" "}
+                  <span className="text-[var(--dim)]">
+                    ({portfolio.stats.worst.weight_pct}% ×{" "}
+                    {formatPct(portfolio.stats.worst.return_pct)})
+                  </span>
+                </div>
+              )}
+            </div>
+          )}
+        </Panel>
+      )}
 
       {/* ---- Calibration: does stated conviction predict outcomes? ---- */}
       <div className="grid grid-cols-1 gap-1 lg:grid-cols-12">

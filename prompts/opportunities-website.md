@@ -38,6 +38,12 @@ data/
   "entry": "...",
   "stop_loss": "...",
   "targets": ["...", "...", "..."],
+  "levels": {
+    "entry_low": 220.0,
+    "entry_high": 228.0,
+    "stop": 212.0,
+    "targets": [240.0, 252.0, 265.0]
+  },
   "risk_reward": "1:3",
   "position_size_pct": 4,
   "catalyst": "...",
@@ -60,6 +66,7 @@ Allowed enum values:
 - `direction`: long, short, long_vol, short_vol, pair
 - `conviction`: low, medium, high
 - `status`: active, triggered, stopped_out, target_hit, expired, thesis_broken
+- `levels` (REQUIRED for every new opportunity): machine-readable numbers mirroring the prose entry/stop/targets. The website auto-checks live prices against these and badges open ideas (STOP BREACHED / TARGET HIT / IN ENTRY ZONE), so they must match the prose exactly. Omit a field only when it genuinely has no single number (e.g. an SPX-conditional stop on a QQQ trade).
 
 When closing an opportunity, set `status` to one of `target_hit | stopped_out | expired | thesis_broken` AND populate the `outcome` field:
 
