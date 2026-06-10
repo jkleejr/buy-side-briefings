@@ -25,6 +25,12 @@ export type SrLevel = {
   distance_pct: number;
   /** Number of swing points that formed this level (1 for MA/52W levels). */
   touches: number;
+  /** Share of the year's traded volume that changed hands within ±1.5% of
+   *  this level. High = the market has heavy position memory here. Null when
+   *  the feed reports no volume. */
+  volume_pct: number | null;
+  /** Composite strength: touches plus volume memory. Used to rank levels. */
+  strength: number;
 };
 
 export type Technicals = {
@@ -40,6 +46,10 @@ export type Technicals = {
   /** Nearest-first (highest support first, lowest resistance first). */
   support: SrLevel[];
   resistance: SrLevel[];
+  /** Highest-strength level on each side of price, across ALL candidates
+   *  (may sit beyond the nearest-4 shown in the ladder). */
+  strongest_support: SrLevel | null;
+  strongest_resistance: SrLevel | null;
 };
 
 function sma(closes: number[], period: number): number | null {
@@ -175,23 +185,49 @@ export async function getTechnicals(symbol: string): Promise<Technicals | null> 
     dedup.push(c);
   }
 
-  const toSr = (c: { level: number; source: string; touches: number }): SrLevel => ({
-    level: c.level,
-    source: c.source,
-    touches: c.touches,
-    distance_pct: ((c.level - last) / last) * 100,
-  });
+  // Volume-at-price: how much of the year's volume traded within ±1.5% of a
+  // level. Bars whose high/low range overlaps the band count. This is the
+  // "position memory" measure — levels where heavy volume changed hands are
+  // where trapped longs/shorts defend, so they act stronger than levels price
+  // merely spiked through.
+  const totalVolume = bars.reduce((s, b) => s + (b.volume ?? 0), 0);
+  const volumeNear = (level: number): number | null => {
+    if (totalVolume <= 0) return null;
+    let v = 0;
+    for (const b of bars) {
+      const hi = b.high ?? b.close;
+      const lo = b.low ?? b.close;
+      if (lo <= level * 1.015 && hi >= level * 0.985) v += b.volume ?? 0;
+    }
+    return (v / totalVolume) * 100;
+  };
 
-  const support = dedup
-    .filter((c) => c.level < last)
-    .sort((a, b) => b.level - a.level)
-    .slice(0, 4)
-    .map(toSr);
-  const resistance = dedup
-    .filter((c) => c.level > last)
-    .sort((a, b) => a.level - b.level)
-    .slice(0, 4)
-    .map(toSr);
+  const toSr = (c: { level: number; source: string; touches: number }): SrLevel => {
+    const volume_pct = volumeNear(c.level);
+    return {
+      level: c.level,
+      source: c.source,
+      touches: c.touches,
+      distance_pct: ((c.level - last) / last) * 100,
+      volume_pct,
+      // Touches and volume memory on comparable scales: each touch ≈ each
+      // 2% of the year's volume parked at the level.
+      strength: c.touches * 2 + (volume_pct ?? 0),
+    };
+  };
+
+  const allSupports = dedup.filter((c) => c.level < last).map(toSr);
+  const allResistances = dedup.filter((c) => c.level > last).map(toSr);
+
+  const support = [...allSupports].sort((a, b) => b.level - a.level).slice(0, 4);
+  const resistance = [...allResistances].sort((a, b) => a.level - b.level).slice(0, 4);
+
+  // Strongest is picked from the displayed nearest-4 ladder, not from every
+  // candidate — a heavy-volume shelf 70% away is history, not a level you can
+  // trade against today.
+  const byStrength = (a: SrLevel, b: SrLevel) => b.strength - a.strength;
+  const strongest_support = [...support].sort(byStrength)[0] ?? null;
+  const strongest_resistance = [...resistance].sort(byStrength)[0] ?? null;
 
   return {
     symbol,
@@ -205,5 +241,7 @@ export async function getTechnicals(symbol: string): Promise<Technicals | null> 
     week52_low,
     support,
     resistance,
+    strongest_support,
+    strongest_resistance,
   };
 }

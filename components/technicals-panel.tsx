@@ -24,16 +24,32 @@ function rsiRead(rsi: number): { label: string; tone: string } {
   return { label: "neutral", tone: "text-[var(--dim)]" };
 }
 
-function SrRow({ l, kind, currency }: { l: SrLevel; kind: "support" | "resistance"; currency: string }) {
+function SrRow({
+  l,
+  kind,
+  currency,
+  strongest,
+}: {
+  l: SrLevel;
+  kind: "support" | "resistance";
+  currency: string;
+  strongest: boolean;
+}) {
   const tone = kind === "support" ? "text-[var(--up)]" : "text-[var(--down)]";
   return (
-    <tr className="border-t border-[var(--border)]">
-      <td className={cn("px-2 py-0.5 text-[9px] uppercase tracking-widest", tone)}>{kind}</td>
+    <tr className={cn("border-t border-[var(--border)]", strongest && "bg-[rgba(255,165,0,0.05)]")}>
+      <td className={cn("px-2 py-0.5 text-[9px] uppercase tracking-widest", tone)}>
+        {kind}
+        {strongest && <span className="ml-1 text-[var(--amber)]">★</span>}
+      </td>
       <td className={cn("px-2 py-0.5 text-right tabular-nums", tone)}>
         {fmtPrice(l.level, currency)}
       </td>
       <td className="px-2 py-0.5 text-right tabular-nums text-[var(--dim)]">
         {formatPct(l.distance_pct)}
+      </td>
+      <td className="px-2 py-0.5 text-right tabular-nums text-[var(--dim)]">
+        {l.volume_pct === null ? "—" : `${l.volume_pct.toFixed(0)}% vol`}
       </td>
       <td className="px-2 py-0.5 text-right text-[var(--dim)]">
         {l.source === "swing" ? `${l.touches} touch${l.touches > 1 ? "es" : ""}` : l.source}
@@ -66,7 +82,7 @@ export default async function TechnicalsPanel({
     <Panel
       code="TA"
       title={`Technical Analysis · ${symbol}`}
-      learn="Computed live from one year of daily bars — no opinion involved. Trend = where price sits relative to the 50- and 200-day moving averages. RSI-14 above 70 = overbought (rallies tend to stall), below 30 = oversold (bounces tend to start). Support/resistance levels come from clustering the swing highs and lows the market actually respected — more touches = stronger level — plus the major moving averages and 52-week extremes. Use them with the hand-written Key Levels panel: this one is mechanical and always current; that one carries judgment."
+      learn="Computed live from one year of daily bars — no opinion involved. Trend = where price sits relative to the 50- and 200-day moving averages. RSI-14 above 70 = overbought (rallies tend to stall), below 30 = oversold (bounces tend to start). Support/resistance comes from clustering the swing highs and lows the market actually respected (more touches = stronger), plus the major moving averages and 52-week extremes. The vol column is volume-at-price: the share of the year's volume that traded within ±1.5% of the level — heavy volume means position memory, so those levels get defended. ★ marks the strongest level each side of price by touches + volume. Use this with the hand-written Key Levels panel: this one is mechanical and always current; that one carries judgment."
       meta={<span>1Y DAILY · AS OF {t.as_of}</span>}
     >
       {/* ---- headline strip: trend, RSI, 52W position ---- */}
@@ -139,7 +155,13 @@ export default async function TechnicalsPanel({
           <table className="w-full font-mono text-[11px]">
             <tbody>
               {[...t.resistance].reverse().map((l, i) => (
-                <SrRow key={`r${i}`} l={l} kind="resistance" currency={currency} />
+                <SrRow
+                  key={`r${i}`}
+                  l={l}
+                  kind="resistance"
+                  currency={currency}
+                  strongest={l.level === t.strongest_resistance?.level}
+                />
               ))}
               <tr className="border-t border-[var(--border-strong)] bg-[rgba(255,165,0,0.06)]">
                 <td className="px-2 py-0.5 text-[9px] uppercase tracking-widest text-[var(--amber)]">
@@ -148,15 +170,63 @@ export default async function TechnicalsPanel({
                 <td className="px-2 py-0.5 text-right font-bold tabular-nums text-[var(--amber)]">
                   {fmtPrice(t.last_close, currency)}
                 </td>
-                <td className="px-2 py-0.5" colSpan={2} />
+                <td className="px-2 py-0.5" colSpan={3} />
               </tr>
               {t.support.map((l, i) => (
-                <SrRow key={`s${i}`} l={l} kind="support" currency={currency} />
+                <SrRow
+                  key={`s${i}`}
+                  l={l}
+                  kind="support"
+                  currency={currency}
+                  strongest={l.level === t.strongest_support?.level}
+                />
               ))}
             </tbody>
           </table>
         </div>
       </div>
+
+      {/* ---- strongest levels: the ones that matter most ---- */}
+      {(t.strongest_support || t.strongest_resistance) && (
+        <div className="grid grid-cols-1 border-t border-[var(--border)] font-mono sm:grid-cols-2 sm:divide-x sm:divide-[var(--border)]">
+          {t.strongest_support && (
+            <div className="px-2 py-1.5">
+              <div className="text-[9px] uppercase tracking-widest text-[var(--up)]">
+                ★ Strongest support
+              </div>
+              <div className="mt-0.5 text-[13px] font-bold tabular-nums text-[var(--up)]">
+                {fmtPrice(t.strongest_support.level, currency)}
+                <span className="ml-1.5 text-[10px] font-normal text-[var(--dim)]">
+                  {formatPct(t.strongest_support.distance_pct)}
+                </span>
+              </div>
+              <div className="text-[10px] text-[var(--dim)]">
+                {t.strongest_support.touches} swing touch{t.strongest_support.touches > 1 ? "es" : ""}
+                {t.strongest_support.volume_pct !== null &&
+                  ` · ${t.strongest_support.volume_pct.toFixed(0)}% of 1Y volume traded nearby`}
+              </div>
+            </div>
+          )}
+          {t.strongest_resistance && (
+            <div className="px-2 py-1.5">
+              <div className="text-[9px] uppercase tracking-widest text-[var(--down)]">
+                ★ Strongest resistance
+              </div>
+              <div className="mt-0.5 text-[13px] font-bold tabular-nums text-[var(--down)]">
+                {fmtPrice(t.strongest_resistance.level, currency)}
+                <span className="ml-1.5 text-[10px] font-normal text-[var(--dim)]">
+                  {formatPct(t.strongest_resistance.distance_pct)}
+                </span>
+              </div>
+              <div className="text-[10px] text-[var(--dim)]">
+                {t.strongest_resistance.touches} swing touch{t.strongest_resistance.touches > 1 ? "es" : ""}
+                {t.strongest_resistance.volume_pct !== null &&
+                  ` · ${t.strongest_resistance.volume_pct.toFixed(0)}% of 1Y volume traded nearby`}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </Panel>
   );
 }
