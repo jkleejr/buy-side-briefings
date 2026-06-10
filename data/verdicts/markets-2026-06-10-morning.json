@@ -1,0 +1,184 @@
+{
+  "routine": "markets",
+  "date": "2026-06-10",
+  "window": "morning",
+  "generated_at": "2026-06-10T13:20:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — CPI Circuit-Breaker Fires; Iran Escalation Caps the Upgrade",
+    "conviction": "medium",
+    "rationale_short": "May CPI confirmed cooler than the 4.2% consensus, triggering the STEP ASIDE → HOLD upgrade the June 9 night brief committed to on a below-consensus print. S&P futures recovered from a −0.43% pre-market decline (driven by overnight US strikes on Iran's Qeshm Island) to open higher after the 8:30 AM ET print, with the AI trade reigniting on an Apple/Google/NVDA partnership. Iran escalation — US launched fresh 'self-defense strikes' directly in the Strait of Hormuz — is the binding constraint preventing an upgrade to BUY; SPX still below the 7,460 regime floor; ORCL earnings after close remain an evening binary.",
+    "supporting_data": [
+      {
+        "label": "May CPI confirmed 'cooler than expected' vs 4.2% YoY consensus — Dow, S&P 500, Nasdaq jumped on the 8:30 AM ET print; AI trade reignited; STEP ASIDE → HOLD upgrade triggered per June 9 night brief's explicit framework",
+        "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-jump-after-cooler-cpi-inflation-reading-as-ai-trade-reignites-210127820.html"
+      },
+      {
+        "label": "Pre-CPI: S&P 500 futures −0.43%, Nasdaq 100 futures −0.71%, Dow futures −185 pts on overnight US 'self-defense strikes' against Iran's Qeshm Island; post-CPI bounce +0.7% S&P / +0.9% Nasdaq confirms CPI-driven recovery, not momentum chase",
+        "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-sp500-futures-fall-cpi-data-oracle-earnings-why-smci-tsm-crwv-yygh-stocks-in-focus-today/cZ06QDBR7Tg"
+      },
+      {
+        "label": "Apple extending Private Cloud Compute through Google and Nvidia — NVDA Blackwell B200 chips via Google Cloud to power overhauled Siri; NVDA ticked up to ~$210.13 in early trading activating the $195–210 re-entry zone from prior briefs",
+        "url": "https://seekingalpha.com/news/4601876-apple-extends-private-cloud-compute-through-collaboration-with-google-and-nvidia"
+      },
+      {
+        "label": "US military launched 'self-defense strikes' on Iran's Qeshm Island in the Strait of Hormuz overnight after Iran shot down an Apache helicopter off Oman — ceasefire extended April 21 is actively fraying; Brent ~$91.36–91.96, still below $97 regime trigger but oil tail not eliminated",
+        "url": "https://www.nbcnews.com/world/iran/live-blog/us-attacks-iran-rcna349305"
+      },
+      {
+        "label": "SPCX $75B SpaceX IPO pricing Thursday June 11; first trading Friday June 12 — capital drain from institutional liquid-portfolio rebalancing continues; IWM mechanical headwind into tomorrow's pricing climax unchanged",
+        "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
+      },
+      {
+        "label": "S&P 500 estimated ~7,438 post-CPI bounce (+0.7% from 7,386.65 June 9 close) — still 22 points below the 7,460 regime floor; June 9 night brief was explicit: 'gap-open that fades is distribution'; HOLD requires EOD close above 7,460 to advance toward BUY",
+        "url": "https://www.fxempire.com/forecasts/article/s-ai-trade-back-in-focus-today-1568462"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7438.0,  "change_pct":  0.70, "as_of": "2026-06-10T13:15:00Z" },
+    "nasdaq": { "level": 25909.0, "change_pct":  0.90, "as_of": "2026-06-10T13:15:00Z" },
+    "vix":    { "level": 18.10,   "change_pct": -8.59, "as_of": "2026-06-10T13:15:00Z" },
+    "ust10y": { "level": 4.52,    "change_bps": -5,    "as_of": "2026-06-10T13:15:00Z" },
+    "dxy":    { "level": 99.05,   "change_pct": -0.68, "as_of": "2026-06-10T13:15:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.10,   "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.93,    "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.05,   "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7438.0,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 91.96,   "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$210.13 early trading (+1.1% from $207.74 June 9 close) — Apple/Google Private Cloud Compute partnership activates the $195–210 re-entry zone from prior briefs; NVDA Blackwell B200 confirmed for Siri overhaul via Google Cloud; re-entry valid at current levels if CPI prints confirmed ≤3.9% and VIX closes below 18.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$292 est. (was $290.65 June 9 close) — the Apple/Google/NVDA partnership is marginally constructive (better Siri AI), but reveals Apple has no proprietary AI chips for cloud workloads; WWDC distribution still incomplete; better entry $285–295 after two stabilization sessions.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$366 est. (was $363.03 June 9 close) — direct beneficiary of Apple Private Cloud Compute deal (Google Cloud cloud revenue + NVDA chip deployment); partially offsets $84.75B equity offering dilution headwind; watch closely.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$406 est. (was $403.52 June 9 close) — broad tech bounce on cooler CPI; Azure AI thesis intact; no direct catalyst today; no active setup.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$587 est. (was $584.71 June 9 close) — held well through the regime sell-off; rate-hike headwind reduced post-CPI; no active setup in cautious HOLD.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "~$246 est. (was $244.30 June 9 close) — AWS thesis intact; CPI relief is broadly constructive for cloud multiples; no active setup.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "~$400 est. (was $396.84 June 9 close) — SPCX first-day trading Friday is a potential Musk-proxy event in both directions; watch for SPCX pricing reaction tomorrow.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$483 est. (was $479.59 June 9 close) — AI-chip bounce on cooler CPI; no margin premium over NVDA; no active setup.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSM",
+      "note": "~$430 est. (was $427.89 June 9 close) — semiconductor exposure without single-catalyst event; geopolitical risk persistent; watch.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "~$390 est. (was $387.73 June 9 close) — stabilizing; guidance-plateau repricing from Q3 AI guidance miss ($16B vs $17.2B est.) not complete; not a buy.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$129 est. (was $127.72 June 9 close) — insider selling + rate-hike headwind; defense-AI bid remains; watch $125–130 support; no active setup.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ORCL",
+      "note": "$205.81 (June 9 close) — reports Q4 after today's close; $553B RPO backlog (up 325% YoY); $19.10B revenue / $1.96 EPS consensus; a beat on RPO guidance is the enterprise AI demand signal for the week; a miss spreads macro concerns to software multiples.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MU",
+      "note": "~$870 est. (was ~$868 intraday June 9) — dead-cat from $949.28 June 8 close confirmed; structural reversion not complete; better entry $820–860 post-SPCX with confirmed disinflation.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$61,054 live (−2.56% on day; Crypto.com 7:09 AM ET, pre-CPI) — still below $66K re-entry; Iran escalation and residual rate-hike expectations weigh; DXY declining to ~99 is a modest tailwind.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "ETH",
+      "note": "$1,617 live (−3.24% on day; Crypto.com 7:09 AM ET, pre-CPI) — below $2,000; structural weakness unchanged; avoid.",
+      "sentiment": "negative"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "AAPL",
+      "reason": "WWDC distribution (−1.89% June 8, −3.6% June 9) not complete; the Apple/Google/NVDA partnership confirms Apple relies on competitors' hardware for cloud AI — marginally positive for AI narrative, neutral to negative for proprietary-tech premium",
+      "better_entry": "$285–295 after two stabilization sessions with VIX below 18 and SPX confirmed above 7,460"
+    },
+    {
+      "ticker": "MU",
+      "reason": "Dead-cat from $949.28 June 8 close confirmed June 9 (−8.6% intraday to ~$868); structural reversion thesis from the AI-memory bubble is incomplete",
+      "better_entry": "$820–860 post-SPCX pricing on two consecutive stabilization sessions"
+    },
+    {
+      "ticker": "IWM / small caps into SPCX pricing",
+      "reason": "SPCX $75B capital drain pricing tomorrow June 11 — institutional allocators have been liquidating liquid small/mid-cap positions since the June 4 roadshow; the 30Y at ~4.93% (declining but not cleared) is still rate-hostile for the most rate-sensitive index",
+      "better_entry": "Post-SPCX pricing normalization (June 16+) with 30Y confirmed below 4.90% and VIX below 17"
+    },
+    {
+      "ticker": "SPCX (first-day trade June 12)",
+      "reason": "IPO first-day price discovery for the largest IPO in history — $1.75T valuation, $135 fixed-price deal; first-day dynamics are extreme in both directions for mega-IPOs; no edge in first-session intraday noise",
+      "better_entry": "Day 2–5 after float normalization; watch lock-up and allocation dynamics first"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Apple's Private Cloud Compute extension through Google Cloud's NVDA Blackwell B200 fleet confirms NVDA's role in consumer AI at the Apple scale — the largest consumer technology company on earth is now a downstream NVDA customer. The prior brief's $195–210 re-entry zone is active at current ~$210 levels. The June 9 night brief's condition (CPI ≤3.7% with VIX closing below 17) is broadly satisfied by today's cooler-than-expected print and the bouncing tape. Scale into the position on any intraday weakness to $205–208.",
+      "entry": "NVDA $205–212; scale in 50% at current ~$210, add 50% on any intraday fade to $205–208",
+      "invalidation": "Close below $195 — prior brief's active stop; or VIX spikes above 22 on new Iran escalation (Hormuz mining activation)",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "QQQ",
+      "direction": "long",
+      "thesis": "Cover the June 9 QQQ short immediately — the prior brief's explicit invalidation was 'CPI ≤3.7% YoY core with NQ sustaining above 19,200 and VIX closing below 16.' Cooler CPI triggers the cover. A conditional tactical long (small size, ≤2% gross) is valid only if SPX closes above 7,460 today — the prior brief was clear that a gap-open that fades is distribution, not confirmation. Do not initiate the long before the EOD close signal.",
+      "entry": "Cover QQQ short at open; conditional long initiation only on SPX EOD close above 7,460 at market close",
+      "invalidation": "SPX fails to close above 7,460 today — abort the long; or ORCL RPO guidance disappoints after close",
+      "conviction": "low",
+      "horizon": "1–3 sessions (regime-confirmation trade)"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SPCX $75B IPO pricing Thursday June 11 is the capital drain climax event — the largest IPO in history is still drawing down liquid institutional allocations from small/mid-cap. CPI relief reduces but does not eliminate the 30Y rate headwind (~4.93% est.). The cooler CPI does not change the mechanical capital drain dynamic for tomorrow; post-pricing normalization is the exit signal.",
+      "entry": "Hold/initiate IWM $280–292; add on any pre-SPCX bounce ahead of Thursday pricing",
+      "invalidation": "$300 daily close on two consecutive sessions post-SPCX pricing signals demand absorption is less disruptive than modeled",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "The US launching fresh strikes on Iran's Qeshm Island — directly inside the Strait of Hormuz approach — is a qualitative escalation that the CPI relief cannot permanently offset. Iranian sea mines laid in late May are still physically present; one tanker incident or Iranian naval skirmish in the next 48 hours could push Brent above $97 in hours, instantly re-triggering the oil regime flag and forcing a HOLD → STEP ASIDE or BEARISH reversal before ORCL even reports. The S&P 500's estimated bounce to ~7,438 leaves SPX 22 points below the 7,460 regime floor — a gap-open that fades below 7,400 intraday would confirm the CPI relief as fully priced and then some. ORCL earnings after the close are an evening binary: a RPO guidance miss spreads macro concerns to software multiples and undercuts the 'AI capex is real' narrative at exactly the moment the market is re-risking. **Invalidation: If SPX closes above 7,460 today with VIX closing below 17, and ORCL guides RPO acceleration above $600B after the close, HOLD upgrades to BUY immediately. If Brent re-breaches $97 or SPX fades below 7,300 intraday on Iran news, HOLD converts to BEARISH on the next session open.**",
+  "body_mdx": "data/briefings/markets/2026-06-10-morning.mdx"
+}
