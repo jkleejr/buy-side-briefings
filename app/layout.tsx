@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CommandPalette from "@/components/command-palette";
+import KeysRibbon from "@/components/keys-ribbon";
 import MobileTabbar from "@/components/mobile-tabbar";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
@@ -66,7 +67,10 @@ export default function RootLayout({
         <TickerStrip />
         <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>
         <SiteFooter />
+        {/* Footer needs clearance on md+ where the fixed keys ribbon overlays the bottom edge. */}
+        <div className="hidden h-6 md:block" />
         <MobileTabbar />
+        <KeysRibbon />
         <CommandPalette />
       </body>
     </html>

@@ -89,6 +89,14 @@ export default function CommandPalette() {
       }
       if (open || isTypingTarget(e.target) || e.metaKey || e.ctrlKey || e.altKey) return;
 
+      // `?` opens the palette too — it doubles as the shortcut reference,
+      // since every row shows its g-chord.
+      if (e.key === "?") {
+        e.preventDefault();
+        setOpen(true);
+        return;
+      }
+
       const now = Date.now();
       if (pendingG.current && now - pendingG.current < 1200) {
         const dest = DESTINATIONS.find((d) => d.go === e.key.toLowerCase());
@@ -192,7 +200,7 @@ export default function CommandPalette() {
           )}
         </ul>
         <div className="border-t border-[var(--border)] px-3 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
-          ↑↓ move · enter go · outside: g + letter jumps
+          ↑↓ move · enter go · outside: g + letter jumps · ? opens this
         </div>
       </div>
     </div>
