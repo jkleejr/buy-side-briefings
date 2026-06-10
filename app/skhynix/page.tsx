@@ -1,5 +1,6 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
 import AssetDailyView from "@/components/asset-daily-view";
+import TechnicalsPanel from "@/components/technicals-panel";
 
 export const metadata = {
   title: "SK Hynix (000660.KS) — Daily Investor Brief — Buy-Side Briefings",
@@ -20,5 +21,10 @@ export default function SkHynixPage() {
     );
   }
 
-  return <AssetDailyView series={series} />;
+  return (
+    <AssetDailyView
+      series={series}
+      technicals={<TechnicalsPanel symbol="000660.KS" currency="₩" />}
+    />
+  );
 }

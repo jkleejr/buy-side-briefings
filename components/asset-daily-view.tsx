@@ -110,7 +110,14 @@ function Stat({
 
 // ---- main view -------------------------------------------------------------
 
-export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
+export default function AssetDailyView({
+  series,
+  technicals,
+}: {
+  series: AssetDaily[];
+  /** Optional live technical-analysis panel, rendered between Outlook and Key levels. */
+  technicals?: React.ReactNode;
+}) {
   const today = series[0];
   const history = series.slice(1);
   const win = WINNER_META[today.day_winner];
@@ -311,6 +318,9 @@ export default function AssetDailyView({ series }: { series: AssetDaily[] }) {
           </div>
         </div>
       </Panel>
+
+      {/* ===================== TECHNICALS (live, computed) ===================== */}
+      {technicals}
 
       {/* ===================== KEY LEVELS + CATALYSTS ===================== */}
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">
