@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-06-10",
+  "window": "night",
+  "generated_at": "2026-06-10T23:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Morning HOLD Call Was Wrong; Four of Five Regime Triggers Breached",
+    "conviction": "medium",
+    "rationale_short": "The morning HOLD upgrade was premised on a CPI print below the 4.2% consensus; the actual BLS release confirmed 4.2% YoY headline — at the 3-year high consensus, not below it. The initial market bounce was a head-fake that fully reversed as Iran escalation intensified. SPX closed at 7,266.99 (−1.62%), below both the 7,460 regime floor and the morning brief's explicit 7,300 BEARISH trigger. Four of five regime indicators are now in breach (VIX, 30Y, DXY, SPX). Brent at $93.10 — $3.90 below the $97 trigger — is the remaining buffer; until that breaks, STEP ASIDE is the appropriate posture. Raise cash, hold short hedges, avoid new longs.",
+    "supporting_data": [
+      { "label": "S&P 500 7,266.99 (−1.62%), Nasdaq 25,169.50 (−1.98%), Dow −953 pts (−1.87%) — full reversal of the morning CPI bounce; SPX 193 pts below the 7,460 regime floor and 33 pts below the morning brief's explicit 7,300 BEARISH trigger; Industrials −3%+, Tech and Materials −2%+", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-10-2026" },
+      { "label": "May CPI 4.2% YoY (+0.5% m/m SA) — matched the 3-year high consensus, NOT a cooler print; core CPI +0.2% m/m / +2.9% YoY was the only constructive read; morning HOLD upgrade was based on an erroneous interpretation of the initial market bounce", "url": "https://www.bls.gov/news.release/cpi.nr0.htm" },
+      { "label": "Trump pledged to attack Iran 'very hard' on June 10; Iran retaliated with missile and drone strikes on US bases in Jordan — WTI +2.07% to $90.03, Brent +1.8% to $93.10, now only $3.90 below the $97 oil regime trigger", "url": "https://www.indexbox.io/blog/oil-prices-surge-as-trump-warns-of-imminent-attacks-on-iran/" },
+      { "label": "DXY re-breached 100 (100.01, +0.28% from June 9 close of 99.73) — June 9's constructive break below 100 lasted exactly one session; 4 of 5 regime indicators now in breach", "url": "https://blog.oneuptrader.com/analysis/technical-analysis/u-s-dollar-index-dxy-technical-analysis-10-june-2026/" },
+      { "label": "ORCL after-hours −7.4% initial / −4.5% by call end: record Q4 revenue $19.2B (+21% YoY), EPS $2.11 vs $1.89 est., RPO $638B (+$85B sequential); FY2026 capex $55.7B exceeded $50B guidance; FY2027 capex guided ~$70B with $40B planned debt/equity raise — capex blowout eclipsed fundamental beat", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261959450-oracle-record-q4-2026-earnings-report-cloud-data-center-stock-tradingkey" },
+      { "label": "Gold fell 4.44% to $4,071.97 on a geopolitical escalation session — anomalous for a safe-haven asset; consistent with institutional forced deleveraging, not orderly risk-off rotation; margin pressure building beneath the surface", "url": "https://tradingeconomics.com/commodity/gold" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7266.99,  "change_pct": -1.62, "as_of": "2026-06-10T20:00:00Z" },
+    "nasdaq": { "level": 25169.50, "change_pct": -1.98, "as_of": "2026-06-10T20:00:00Z" },
+    "vix":    { "level": 19.87,   "change_pct":  0.35, "as_of": "2026-06-10T19:29:00Z" },
+    "ust10y": { "level": 4.52,    "change_bps": -5,    "as_of": "2026-06-10T20:00:00Z" },
+    "dxy":    { "level": 100.01,  "change_pct":  0.28, "as_of": "2026-06-10T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 19.87,   "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.999,   "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 100.01,  "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7266.99, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 93.10,   "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "~$204.83 (−1.4%) — Apple/Google AI partnership thesis intact but regime deterioration (4/5 triggers breached) limits re-entry conviction; $195 stop in force", "sentiment": "neutral" },
+    { "ticker": "ORCL",  "note": "~$201 est. regular close (−2.4%); AH −7.4% initial / −4.5% by call end on $55.7B capex blowout + $70B FY2027 guided; record RPO $638B (+$85B sequential) and IaaS +93% confirm demand — capex optics, not demand collapse; re-entry zone $185-195 opens on AH stabilization", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "$384.83 (−3.0%) — SPCX first-day Friday creates Musk-proxy volatility in both directions; no clean setup", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "$371.89 (−3.9%) — capex-blowout narrative spreading from ORCL to AI infrastructure names; guidance-plateau repricing incomplete; not a buy", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "$402.25 (−0.3%) — relative outperformer in a down tape; Azure AI thesis intact; no active setup in STEP ASIDE regime", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "$363.60 (~flat) — Apple PCC deal directly positive; $84.75B offering overhang persists; no entry in STEP ASIDE regime", "sentiment": "neutral" },
+    { "ticker": "IWM",   "note": "~$278 est. (−2%) — SPCX $75B pricing tomorrow is the mechanical capital drain climax; maintain the short through the pricing event", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "ORCL (day 1 AH)", "reason": "Capex overhang ($70B FY2027, $40B fundraise) needs one full session of price discovery before the re-entry zone stabilizes; AH volatility band ($185-$192 range) too wide to size accurately on day 1", "better_entry": "$185-195 after AH stabilization and the first regular-session print confirms a floor" },
+    { "ticker": "QQQ/NDX", "reason": "4 of 5 regime indicators in breach; PPI Thursday is the next live binary after a hot CPI headline; SPCX capital drain climax tomorrow morning adds mechanical pressure", "better_entry": "After PPI confirms ≤0.4% m/m AND SPX reclaims 7,380 on two consecutive sessions" },
+    { "ticker": "IWM", "reason": "SPCX $75B pricing Thursday is the mechanical capital drain climax; 30Y at 4.999% is maximum rate pressure; hold the short, do not buy", "better_entry": "Post-SPCX normalization June 16+ with 30Y confirmed below 4.90% on two consecutive sessions" },
+    { "ticker": "AAPL", "reason": "WWDC distribution continues (day 3 of consecutive losses from $317 peak); cloud-AI hardware dependency revealed; regime not cleared", "better_entry": "$275-285 after VIX closes below 17 and SPX confirms above 7,380 on two sessions" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SPCX $75B IPO pricing Thursday June 11 (confirmed $135/share, $1.75T valuation, twice oversubscribed) is the mechanical capital drain climax for small/mid-cap. Institutional allocators committed before today's market action; the pricing proceeds regardless of macro conditions. 30Y at 4.999% applies maximum rate pressure to IWM's most interest-rate-sensitive components. Post-pricing normalization June 16+ is the cover signal, not tomorrow.",
+      "entry": "Hold/initiate $275-285; add on any pre-SPCX bounce Thursday morning",
+      "invalidation": "$300 daily close on two consecutive post-SPCX sessions",
+      "conviction": "medium",
+      "horizon": "2-3 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Active US-Iran military exchanges in the Strait of Hormuz region raise the probability of a tanker incident or mine detonation spiking Brent to $97+ within hours. WTI confirmed directional sensitivity at +2.07% today on Trump's escalation pledge plus a 7.2M barrel inventory draw. Brent is $3.90 from the oil regime trigger. XLE and energy producers provide asymmetric upside as a defined hedge — sized ≤2% gross, not a primary directional position.",
+      "entry": "XLE $87-91; sized ≤2% gross; stop on confirmed Iran ceasefire with Hormuz mine clearance announced",
+      "invalidation": "Brent falls below $88 on confirmed Iran de-escalation; exit immediately",
+      "conviction": "low",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "ORCL",
+      "direction": "long",
+      "thesis": "Oracle's RPO grew $85B sequentially to $638B with IaaS revenue +93% YoY — the strongest enterprise AI demand print of the quarter. The AH sell-off on $70B FY2027 capex guidance is multiple compression, not demand deterioration. The AVGO pattern (strong fundamentals + capex overhang = temporary compression) eventually resolves when capex deployment converts to revenue. Re-entry zone $185-195 opens after AH stabilization; do not size on day 1.",
+      "entry": "$185-195 after AH stabilization; 50% on Thursday open confirmation, 50% reserve for two-session normalization; stop $175 daily close",
+      "invalidation": "Close below $175 on two consecutive sessions; or FY2027 capex revised above $80B in follow-on analyst calls",
+      "conviction": "low",
+      "horizon": "4-8 weeks"
+    }
+  ],
+  "bear_case": "The US-Iran exchange has moved beyond posturing into active mutual military strikes in the Strait of Hormuz region — making a negotiated resolution within days implausible. Gold's 4.44% sell-off on a geopolitical escalation day signals institutional forced deleveraging, not orderly rotation; this pattern historically precedes a second forced-selling wave 1-3 sessions later. SPX closed at 7,267, below the morning brief's explicit 7,300 BEARISH trigger, and the next support zone is 7,200-7,250. A hot May PPI Thursday (≥0.8% m/m) would push the 30Y through 5.0%, compress tech multiples further, and put Warsh in position to acknowledge July hike risk at the June 17 FOMC — a scenario currently priced at roughly 15% probability. Brent at $93.10 is $3.90 from the oil regime trigger; an active military exchange in Hormuz waters is not compatible with gradual oil normalization. Invalidation: if Brent settles back below $90 on confirmed Iran de-escalation and SPX reclaims 7,380 on two consecutive sessions, STEP ASIDE converts to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-06-10-night.mdx"
+}
