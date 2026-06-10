@@ -1,13 +1,20 @@
 import Link from "next/link";
+import { getAllCryptoVerdicts } from "@/lib/data";
 import BigAssetChart from "@/components/big-asset-chart";
 import BigCompareChart from "@/components/big-compare-chart";
+import CryptoBriefingCard from "@/components/crypto-briefing-card";
 import Panel from "@/components/panel";
 import { TICKER_TIPS } from "@/lib/glossary";
 
-export const metadata = { title: "Crypto — Buy-Side Briefings" };
+export const metadata = {
+  title: "Crypto — Buy-Side Briefings",
+  description:
+    "Daily Bitcoin and Ethereum briefings plus live charts. Verdict, conviction, key levels, and the risk-sentiment read.",
+};
 export const revalidate = 60;
 
 export default function CryptoPage() {
+  const verdicts = getAllCryptoVerdicts();
   return (
     <div className="space-y-1">
       <header className="space-y-1 px-1 pb-2">
@@ -21,9 +28,29 @@ export default function CryptoPage() {
           Crypto
         </h1>
         <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Bitcoin · Ethereum · cycle context
+          Daily briefings · live BTC/ETH charts · cycle context
         </p>
       </header>
+
+      {/* ----- Daily crypto briefings (one per day, newest first) ----- */}
+      {verdicts.length > 0 && (
+        <>
+          <div className="grid grid-cols-1 gap-2 pb-1 md:grid-cols-2 xl:grid-cols-3">
+            {verdicts.slice(0, 6).map((v) => (
+              <CryptoBriefingCard key={`${v.date}-${v.window}`} verdict={v} />
+            ))}
+          </div>
+          {verdicts.length > 6 && (
+            <p className="px-1 pb-1 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
+              Older crypto briefings live in the{" "}
+              <Link href="/briefings" className="text-[var(--cyan-term)] hover:underline">
+                briefings archive
+              </Link>
+              .
+            </p>
+          )}
+        </>
+      )}
 
       <BigAssetChart
         symbol="BTC-USD"

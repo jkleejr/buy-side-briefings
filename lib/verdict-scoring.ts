@@ -135,10 +135,20 @@ export function scoreVerdict(
   };
 }
 
-// ---- Aggregate stats over many scored verdicts -----------------------------
+/**
+ * Months of SPX history needed to cover every verdict back to `earliestDate`,
+ * with headroom for the forward windows. Minimum 9.
+ */
+export function monthsBackFor(earliestDate: string | null): number {
+  if (!earliestDate) return 9;
+  const days = Math.max(
+    0,
+    (Date.now() - new Date(earliestDate).getTime()) / 86_400_000,
+  );
+  return Math.max(9, Math.ceil(days / 30) + 2);
+}
 
-type WindowKey = "d1" | "d5" | "d20";
-type RightKey = "right_d1" | "right_d5" | "right_d20";
+// ---- Aggregate stats over many scored verdicts -----------------------------
 
 export type CodeStats = {
   count: number;
@@ -268,4 +278,81 @@ export function aggregateStats(
   }
 
   return { by_code, streak_d5: streak, best_call: best, worst_call: worst };
+}
+
+// ---- Conviction calibration ------------------------------------------------
+
+export type Conviction = "low" | "medium" | "high";
+
+export type ConvictionStats = {
+  count: number;
+  d5_right: number;
+  d5_wrong: number;
+  d5_pending: number;
+  /** +5d hit rate over scored windows, null until something is scored. */
+  hit_pct: number | null;
+  /** Average direction-adjusted +5d return: BUY as-is, BEARISH and STEP ASIDE
+   *  negated, HOLD excluded — "what taking the call was worth." */
+  avg_adj_d5_pct: number | null;
+};
+
+const EMPTY_CONVICTION_STATS: ConvictionStats = {
+  count: 0,
+  d5_right: 0,
+  d5_wrong: 0,
+  d5_pending: 0,
+  hit_pct: null,
+  avg_adj_d5_pct: null,
+};
+
+/**
+ * Does the conviction tag actually predict anything? Group every directional
+ * verdict by its stated conviction and compare +5d hit rates and
+ * direction-adjusted returns. If HIGH doesn't beat MEDIUM/LOW, the tag isn't
+ * earning its place on the page.
+ */
+export function calibrationByConviction(
+  scored: Array<{ v: MarketsVerdict; score: VerdictScore }>,
+): Record<Conviction, ConvictionStats> {
+  const out: Record<Conviction, ConvictionStats> = {
+    low: { ...EMPTY_CONVICTION_STATS },
+    medium: { ...EMPTY_CONVICTION_STATS },
+    high: { ...EMPTY_CONVICTION_STATS },
+  };
+  const sums: Record<Conviction, { sum: number; n: number }> = {
+    low: { sum: 0, n: 0 },
+    medium: { sum: 0, n: 0 },
+    high: { sum: 0, n: 0 },
+  };
+
+  for (const { v, score } of scored) {
+    const code = v.verdict.code;
+    if (code === "hold") continue; // no opinion to calibrate
+    const conv = v.verdict.conviction;
+    const cs = out[conv];
+    if (!cs) continue;
+    cs.count += 1;
+
+    if (score.d5.pending) {
+      cs.d5_pending += 1;
+    } else if (score.right_d5 === true) {
+      cs.d5_right += 1;
+    } else if (score.right_d5 === false) {
+      cs.d5_wrong += 1;
+    }
+
+    if (!score.d5.pending && score.d5.pct !== null) {
+      const adj = code === "buy" ? score.d5.pct : -score.d5.pct;
+      sums[conv].sum += adj;
+      sums[conv].n += 1;
+    }
+  }
+
+  (Object.keys(out) as Conviction[]).forEach((c) => {
+    const scoredN = out[c].d5_right + out[c].d5_wrong;
+    if (scoredN > 0) out[c].hit_pct = (out[c].d5_right / scoredN) * 100;
+    if (sums[c].n > 0) out[c].avg_adj_d5_pct = sums[c].sum / sums[c].n;
+  });
+
+  return out;
 }

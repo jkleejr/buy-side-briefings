@@ -2,18 +2,17 @@ import Link from "next/link";
 import LearnToggle from "./learn-toggle";
 import MobileNav from "./mobile-nav";
 
+// Ordered by the daily job-to-be-done: today's calls first (dossiers, ops),
+// then context (markets hub), then the audit trail (week, track record).
 const NAV = [
   { href: "/", code: "DASH", label: "Dashboard" },
-  { href: "/indices", code: "INDX", label: "Indices" },
-  { href: "/tech", code: "TECH", label: "Tech" },
   { href: "/nvidia", code: "NVDA", label: "NVIDIA" },
-  { href: "/briefings", code: "BRIEF", label: "Briefings" },
-  { href: "/tldr", code: "TLDR", label: "TL;DR" },
-  { href: "/crypto-briefings", code: "CRYPTO", label: "Crypto" },
   { href: "/bitcoin", code: "BTC", label: "Bitcoin" },
-  { href: "/kospi", code: "KOSPI", label: "KOSPI" },
   { href: "/skhynix", code: "HYNIX", label: "SK Hynix" },
   { href: "/opportunities", code: "OPS", label: "Opportunities" },
+  { href: "/briefings", code: "BRIEF", label: "Briefings" },
+  { href: "/crypto", code: "CRYPTO", label: "Crypto" },
+  { href: "/markets", code: "MKTS", label: "Markets" },
   { href: "/digest", code: "WEEK", label: "Week" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist" },

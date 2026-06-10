@@ -1,5 +1,14 @@
-import { getAllBriefings, getLatestMarketsVerdict, getLatestCryptoVerdict } from "@/lib/data";
+import {
+  getAllBriefings,
+  getAllMarketsVerdicts,
+  getLatestMarketsVerdict,
+  getLatestCryptoVerdict,
+  getOpportunityStats,
+} from "@/lib/data";
 import { getLatestAssetDaily } from "@/lib/asset-daily";
+import { getSpxDailyCloses } from "@/lib/markets";
+import { aggregateStats, monthsBackFor, scoreVerdict } from "@/lib/verdict-scoring";
+import TrackGlanceStrip from "@/components/track-glance-strip";
 import VerdictCard from "@/components/verdict-card";
 import AssetCallsPanel from "@/components/asset-calls-panel";
 import MarketKpiStrip from "@/components/market-kpi-strip";
@@ -38,7 +47,7 @@ function SectionLabel({ title, note }: { title: string; note?: string }) {
   );
 }
 
-export default function Home() {
+export default async function Home() {
   const verdict = getLatestMarketsVerdict();
   const crypto = getLatestCryptoVerdict();
   const briefings = getAllBriefings();
@@ -47,6 +56,25 @@ export default function Home() {
     getLatestAssetDaily("btc"),
     getLatestAssetDaily("skhynix"),
   ].filter((d): d is NonNullable<typeof d> => d !== null);
+
+  // Accountability strip: score every verdict against SPX (same math as
+  // /track-record) plus the opportunities journal stats.
+  const allVerdicts = getAllMarketsVerdicts();
+  const earliest = allVerdicts.length ? allVerdicts[allVerdicts.length - 1].date : null;
+  const spxSeries = await getSpxDailyCloses(monthsBackFor(earliest));
+  const scoredRows = allVerdicts.map((v) => ({ v, score: scoreVerdict(v, spxSeries) }));
+  let hits = 0;
+  let scored = 0;
+  for (const { score } of scoredRows) {
+    for (const r of [score.right_d1, score.right_d5, score.right_d20]) {
+      if (r === null) continue;
+      scored += 1;
+      if (r) hits += 1;
+    }
+  }
+  const hitRate = scored > 0 ? (hits / scored) * 100 : null;
+  const { streak_d5 } = aggregateStats(scoredRows);
+  const oppStats = getOpportunityStats();
 
   return (
     <div className="space-y-1">
@@ -59,6 +87,15 @@ export default function Home() {
 
       {/* At-a-glance market header — fills the top edge-to-edge, no dead space. */}
       <MarketKpiStrip verdict={verdict} crypto={crypto} />
+
+      {/* Accountability at a glance: hit rate, streak, what's on the book. */}
+      <TrackGlanceStrip
+        hitRate={hitRate}
+        hits={hits}
+        scored={scored}
+        streak={streak_d5}
+        ops={oppStats}
+      />
 
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
         {/* ========================= THE CALL ========================= */}

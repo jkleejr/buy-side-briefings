@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
+import StaleBanner from "@/components/stale-banner";
 import TickerStrip from "@/components/ticker-strip";
 import { getSiteUrl } from "@/lib/site-url";
 
@@ -59,6 +60,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
         <SiteHeader />
+        <StaleBanner />
         <TickerStrip />
         <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 sm:px-2 sm:py-2">{children}</main>
         <SiteFooter />

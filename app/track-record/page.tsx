@@ -1,9 +1,16 @@
 import Link from "next/link";
-import { getAllMarketsVerdicts, type MarketsVerdict } from "@/lib/data";
+import {
+  getAllMarketsVerdicts,
+  getAllOpportunities,
+  type MarketsVerdict,
+} from "@/lib/data";
 import { getSpxDailyCloses } from "@/lib/markets";
 import {
   aggregateStats,
+  calibrationByConviction,
+  monthsBackFor,
   scoreVerdict,
+  type Conviction,
   type ReturnWindow,
   type VerdictScore,
 } from "@/lib/verdict-scoring";
@@ -70,11 +77,7 @@ export default async function TrackRecordPage() {
   const earliestVerdict = verdicts.length
     ? verdicts[verdicts.length - 1].date
     : null;
-  let monthsBack = 9;
-  if (earliestVerdict) {
-    const days = Math.max(0, (Date.now() - new Date(earliestVerdict).getTime()) / 86_400_000);
-    monthsBack = Math.max(9, Math.ceil(days / 30) + 2);
-  }
+  const monthsBack = monthsBackFor(earliestVerdict);
   const spxSeries = await getSpxDailyCloses(monthsBack);
 
   // Score every verdict against the SPX series.
@@ -103,6 +106,31 @@ export default async function TrackRecordPage() {
 
   // Per-code breakdown, best/worst, current streak — all computed once.
   const stats = aggregateStats(rows);
+
+  // Calibration: does the stated conviction predict outcomes?
+  const calib = calibrationByConviction(rows);
+
+  // Same question for the opportunities journal (closed trades only).
+  const opps = getAllOpportunities();
+  const oppCalib = (["high", "medium", "low"] as Conviction[]).map((conv) => {
+    const ofConv = opps.filter((o) => o.conviction === conv);
+    const wins = ofConv.filter((o) => o.status === "target_hit").length;
+    const losses = ofConv.filter(
+      (o) => o.status === "stopped_out" || o.status === "thesis_broken",
+    ).length;
+    const returns = ofConv
+      .map((o) => o.outcome?.return_pct)
+      .filter((r): r is number => typeof r === "number");
+    return {
+      conv,
+      count: ofConv.length,
+      wins,
+      losses,
+      hit_pct: wins + losses > 0 ? (wins / (wins + losses)) * 100 : null,
+      avg_return:
+        returns.length > 0 ? returns.reduce((a, b) => a + b, 0) / returns.length : null,
+    };
+  });
 
   // Build markers for the chart.
   const markers: VerdictMarker[] = rows.map(({ v, score }) => ({
@@ -325,6 +353,124 @@ export default async function TrackRecordPage() {
                 </div>
               </div>
             </div>
+          </Panel>
+        </div>
+      </div>
+
+      {/* ---- Calibration: does stated conviction predict outcomes? ---- */}
+      <div className="grid grid-cols-1 gap-1 lg:grid-cols-12">
+        <div className="lg:col-span-7">
+          <Panel
+            code="CALIB"
+            title="Calibration · Verdicts by Conviction"
+            learn="Every directional verdict (HOLD excluded) grouped by the conviction it was published with. 'Adj +5d' is the direction-adjusted SPX return at +5 trading days — a BEARISH call that preceded a -2% week counts as +2%. If HIGH-conviction calls don't beat MEDIUM and LOW here, the conviction tag carries no information and should be discounted when reading new briefings."
+          >
+            <table className="w-full font-mono text-[11px]">
+              <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
+                <tr>
+                  <th className="px-2 py-1 text-left font-normal">Conviction</th>
+                  <th className="px-2 py-1 text-right font-normal">N</th>
+                  <th className="px-2 py-1 text-right font-normal">+5d Right</th>
+                  <th className="px-2 py-1 text-right font-normal">+5d Wrong</th>
+                  <th className="px-2 py-1 text-right font-normal">Pending</th>
+                  <th className="px-2 py-1 text-right font-normal">Hit %</th>
+                  <th className="px-2 py-1 text-right font-normal">Adj +5d</th>
+                </tr>
+              </thead>
+              <tbody>
+                {(["high", "medium", "low"] as Conviction[]).map((conv) => {
+                  const cs = calib[conv];
+                  const avg = cs.avg_adj_d5_pct;
+                  const avgCls =
+                    avg === null
+                      ? "text-[var(--dim)]"
+                      : avg > 0
+                        ? "text-[var(--up)]"
+                        : avg < 0
+                          ? "text-[var(--down)]"
+                          : "text-[var(--dim)]";
+                  return (
+                    <tr key={conv} className="border-t border-[var(--border)]">
+                      <td className="px-2 py-0.5 uppercase text-[var(--amber)]">{conv}</td>
+                      <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
+                        {cs.count}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--up)]">{cs.d5_right}</td>
+                      <td className="px-2 py-0.5 text-right text-[var(--down)]">
+                        {cs.d5_wrong}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--dim)]">
+                        {cs.d5_pending}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
+                        {cs.hit_pct === null ? "—" : `${cs.hit_pct.toFixed(0)}%`}
+                      </td>
+                      <td className={`px-2 py-0.5 text-right ${avgCls}`}>
+                        {avg === null ? "—" : formatPct(avg)}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            <p className="px-2 py-1.5 font-mono text-[10px] leading-snug text-[var(--dim)]">
+              The question this table answers: when a briefing says HIGH conviction, is it
+              actually right more often? Until each row has ~10 scored windows, read it as
+              anecdote.
+            </p>
+          </Panel>
+        </div>
+
+        <div className="lg:col-span-5">
+          <Panel
+            code="CALIB-OPS"
+            title="Calibration · Opportunities by Conviction"
+            learn="Closed trade ideas from the Opportunities journal grouped by stated conviction. Wins = target hit; losses = stopped out or thesis broken; expired ideas count in N but not in the hit rate. Avg return uses each closed trade's recorded return."
+          >
+            <table className="w-full font-mono text-[11px]">
+              <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
+                <tr>
+                  <th className="px-2 py-1 text-left font-normal">Conviction</th>
+                  <th className="px-2 py-1 text-right font-normal">N</th>
+                  <th className="px-2 py-1 text-right font-normal">W</th>
+                  <th className="px-2 py-1 text-right font-normal">L</th>
+                  <th className="px-2 py-1 text-right font-normal">Hit %</th>
+                  <th className="px-2 py-1 text-right font-normal">Avg Ret</th>
+                </tr>
+              </thead>
+              <tbody>
+                {oppCalib.map((row) => {
+                  const avgCls =
+                    row.avg_return === null
+                      ? "text-[var(--dim)]"
+                      : row.avg_return > 0
+                        ? "text-[var(--up)]"
+                        : row.avg_return < 0
+                          ? "text-[var(--down)]"
+                          : "text-[var(--dim)]";
+                  return (
+                    <tr key={row.conv} className="border-t border-[var(--border)]">
+                      <td className="px-2 py-0.5 uppercase text-[var(--amber)]">{row.conv}</td>
+                      <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
+                        {row.count}
+                      </td>
+                      <td className="px-2 py-0.5 text-right text-[var(--up)]">{row.wins}</td>
+                      <td className="px-2 py-0.5 text-right text-[var(--down)]">{row.losses}</td>
+                      <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
+                        {row.hit_pct === null ? "—" : `${row.hit_pct.toFixed(0)}%`}
+                      </td>
+                      <td className={`px-2 py-0.5 text-right ${avgCls}`}>
+                        {row.avg_return === null ? "—" : formatPct(row.avg_return)}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            <p className="px-2 py-1.5 font-mono text-[10px] leading-snug text-[var(--dim)]">
+              Same calibration question, applied to the trade journal: do HIGH-conviction
+              ideas win more often and return more when they do?
+            </p>
           </Panel>
         </div>
       </div>
