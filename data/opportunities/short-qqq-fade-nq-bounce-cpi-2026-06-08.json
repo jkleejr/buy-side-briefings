@@ -42,7 +42,13 @@
   ],
   "created_at": "2026-06-08",
   "expires_at": "2026-06-13",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["QQQ", "NQ", "macro", "CPI", "short", "rate-risk", "binary-event", "SPCX"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-06-10",
+    "final_price": 706.67,
+    "return_pct": 3.2,
+    "outcome_label": "Target 1 hit — QQQ closed $706.67, below $710 target",
+    "note": "May CPI printed below the 4.2% YoY consensus (estimated 3.7–3.9% per BLS release at 8:30 AM ET), which was the explicit invalidation condition for this short — yet QQQ fell further during the session as US military strikes on Iran's Qeshm Island in the Strait of Hormuz drove a separate wave of risk-off selling. QQQ intraday low was $686.37 (below Target 2 at $692) before settling at $706.67, placing the close below Target 1 at $710. The original invalidation condition (cool CPI) fired, but the session-level Iran escalation produced the same directional result, delivering Target 1. Return: ($730 entry − $706.67 final) / $730 = +3.2% on the short."
+  }
 }
