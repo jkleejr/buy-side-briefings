@@ -111,3 +111,119 @@ body {
 /* Bubble stays hidden when learn mode is off */
 [data-learn="off"] .tip-bubble { display: none !important; }
 [data-learn="off"] .tip-host { border-bottom: none; cursor: inherit; }
+
+/* ============================================================================
+   PHOSPHOR — CRT terminal realism layer.
+   One concept: this is an amber-phosphor trading screen behind glass. Every
+   token below is tunable from here; dial --crt-* down to 0 to mute an effect
+   without touching any component. Pure-black bg, amber/cyan, mono — unchanged.
+   ========================================================================== */
+:root {
+  --crt-scanline: 0.10;   /* darkness of the scanline bands (0 = off)        */
+  --crt-vignette: 0.45;   /* edge darkening of the glass (0 = off)           */
+  --crt-grain: 0.035;     /* film grain opacity (0 = off)                    */
+  --glow-amber: 0 0 6px rgba(255, 165, 0, 0.35);
+  --glow-up: 0 0 6px rgba(34, 197, 94, 0.38);
+  --glow-down: 0 0 6px rgba(239, 68, 68, 0.38);
+  --glow-cyan: 0 0 6px rgba(34, 211, 238, 0.35);
+}
+
+/* The glass: a single fixed overlay carrying scanlines + vignette, with grain
+   on its ::before. pointer-events:none so it never intercepts clicks. Sits above
+   page content but below the command palette / tooltips (z-9999). */
+.crt-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2px,
+      rgba(0, 0, 0, var(--crt-scanline)) 3px
+    ),
+    radial-gradient(
+      ellipse at center,
+      transparent 55%,
+      rgba(0, 0, 0, var(--crt-vignette)) 100%
+    );
+  animation: crt-flicker 7s steps(60) infinite;
+}
+.crt-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: var(--crt-grain);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@keyframes crt-flicker {
+  0%, 100% { opacity: 1; }
+  48% { opacity: 0.98; }
+  50% { opacity: 0.96; }
+  52% { opacity: 0.99; }
+}
+
+/* Phosphor glow — apply sparingly to hero numbers / live signals only. */
+.glow-amber { text-shadow: var(--glow-amber); }
+.glow-up { text-shadow: var(--glow-up); }
+.glow-down { text-shadow: var(--glow-down); }
+.glow-cyan { text-shadow: var(--glow-cyan); }
+.glow-fg { text-shadow: 0 0 7px rgba(228, 228, 231, 0.22); }
+/* For background-only LED dots, where text-shadow can't reach. */
+.glow-dot-up { box-shadow: 0 0 6px 1px rgba(34, 197, 94, 0.7); }
+.glow-dot-amber { box-shadow: 0 0 6px 1px rgba(255, 165, 0, 0.6); }
+
+/* Boot redraw — a fast phosphor warm-up on page load. Subtle, never gates the
+   read (220ms). Applied to <main>. */
+@keyframes boot-in {
+  0% { opacity: 0; transform: translateY(6px); filter: brightness(1.5); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+.boot-in { animation: boot-in 0.22s ease-out both; }
+
+/* Tick flash — Bloomberg's signature: a cell pulses green/red the moment its
+   value changes, then decays back to transparent. Driven by a class the live
+   ticker toggles on change. */
+@keyframes tick-up {
+  0% { background-color: rgba(34, 197, 94, 0.35); }
+  100% { background-color: transparent; }
+}
+@keyframes tick-down {
+  0% { background-color: rgba(239, 68, 68, 0.35); }
+  100% { background-color: transparent; }
+}
+.tick-up { animation: tick-up 0.8s ease-out; }
+.tick-down { animation: tick-down 0.8s ease-out; }
+
+/* Corner ticks — four L-shaped registration marks framing a hero element, like
+   a calibration overlay. Pure CSS, drawn from the element's own background. */
+.term-corners {
+  --c: rgba(255, 165, 0, 0.55);
+  --s: 9px;  /* arm length */
+  --t: 1px;  /* arm thickness */
+  background-image:
+    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
+    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
+    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
+    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c));
+  background-repeat: no-repeat;
+  background-size:
+    var(--s) var(--t), var(--t) var(--s),
+    var(--s) var(--t), var(--t) var(--s),
+    var(--s) var(--t), var(--t) var(--s),
+    var(--s) var(--t), var(--t) var(--s);
+  background-position:
+    0 0, 0 0,
+    100% 0, 100% 0,
+    0 100%, 0 100%,
+    100% 100%, 100% 100%;
+}
+
+/* Respect users who ask for less motion — kill the moving parts, keep the look. */
+@media (prefers-reduced-motion: reduce) {
+  .crt-screen { animation: none; }
+  .boot-in { animation: none; }
+  .tick-up, .tick-down { animation: none; }
+  .term-blink { animation: none; }
+}

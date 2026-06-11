@@ -65,13 +65,16 @@ export default function RootLayout({
         <SiteHeader />
         <StaleBanner />
         <TickerStrip />
-        <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>
+        <main className="boot-in mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>
         <SiteFooter />
         {/* Footer needs clearance on md+ where the fixed keys ribbon overlays the bottom edge. */}
         <div className="hidden h-6 md:block" />
         <MobileTabbar />
         <KeysRibbon />
         <CommandPalette />
+        {/* CRT glass — scanlines + vignette + grain over everything below the
+            command palette. Tune or disable via --crt-* in globals.css. */}
+        <div className="crt-screen" aria-hidden="true" />
       </body>
     </html>
   );

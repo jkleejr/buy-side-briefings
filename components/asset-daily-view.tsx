@@ -18,12 +18,13 @@ function changeTone(n: number): string {
 
 const WINNER_META: Record<
   DayWinner,
-  { emoji: string; label: string; text: string; border: string; bg: string }
+  { emoji: string; label: string; text: string; glow: string; border: string; bg: string }
 > = {
   bulls: {
     emoji: "🐂",
     label: "BULLS WON TODAY",
     text: "text-[var(--up)]",
+    glow: "glow-up",
     border: "border-[var(--up)]",
     bg: "bg-[rgba(34,197,94,0.08)]",
   },
@@ -31,6 +32,7 @@ const WINNER_META: Record<
     emoji: "🐻",
     label: "BEARS WON TODAY",
     text: "text-[var(--down)]",
+    glow: "glow-down",
     border: "border-[var(--down)]",
     bg: "bg-[rgba(239,68,68,0.08)]",
   },
@@ -38,6 +40,7 @@ const WINNER_META: Record<
     emoji: "➖",
     label: "FLAT — A WASH",
     text: "text-[var(--dim)]",
+    glow: "",
     border: "border-[var(--border-strong)]",
     bg: "bg-[var(--panel-head)]",
   },
@@ -45,23 +48,26 @@ const WINNER_META: Record<
 
 const ACTION_META: Record<
   TradeAction,
-  { label: string; text: string; border: string; bg: string }
+  { label: string; text: string; glow: string; border: string; bg: string }
 > = {
   buy: {
     label: "BUY",
     text: "text-[var(--up)]",
+    glow: "glow-up",
     border: "border-[var(--up)]",
     bg: "bg-[rgba(34,197,94,0.08)]",
   },
   hold: {
     label: "HOLD",
     text: "text-[var(--amber)]",
+    glow: "glow-amber",
     border: "border-[var(--amber)]",
     bg: "bg-[rgba(255,165,0,0.08)]",
   },
   sell: {
     label: "SELL",
     text: "text-[var(--down)]",
+    glow: "glow-down",
     border: "border-[var(--down)]",
     bg: "bg-[rgba(239,68,68,0.08)]",
   },
@@ -189,7 +195,7 @@ export default function AssetDailyView({
   return (
     <div className="space-y-2">
       {/* ============================= HERO ============================= */}
-      <section className="border border-[var(--border-strong)] bg-[var(--panel)]">
+      <section className="term-corners border border-[var(--border-strong)] bg-[var(--panel)]">
         {/* Price header */}
         <div className="flex flex-wrap items-end justify-between gap-2 border-b border-[var(--border)] px-3 py-2.5">
           <div>
@@ -207,7 +213,7 @@ export default function AssetDailyView({
             </div>
           </div>
           <div className="text-right">
-            <div className="font-mono text-3xl font-bold tabular-nums text-[var(--foreground)]">
+            <div className="glow-fg font-mono text-3xl font-bold tabular-nums text-[var(--foreground)]">
               {px(snap.price)}
             </div>
             <div className={cn("font-mono text-[13px] font-semibold", changeTone(snap.change_pct))}>
@@ -226,7 +232,7 @@ export default function AssetDailyView({
             <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
               Who made money today
             </div>
-            <div className={cn("mt-1 font-mono text-lg font-bold tracking-wide", win.text)}>
+            <div className={cn("mt-1 font-mono text-lg font-bold tracking-wide", win.text, win.glow)}>
               {win.emoji} {win.label}
             </div>
             <div className="mt-1.5 space-y-0.5 font-mono text-[11px] leading-relaxed">
@@ -251,7 +257,9 @@ export default function AssetDailyView({
               Today&apos;s decision
             </div>
             <div className={cn("mt-1 flex items-baseline gap-2 font-mono", act.text)}>
-              <span className="text-lg font-bold tracking-wide">{act.label}</span>
+              <span className={cn("text-3xl font-bold leading-none tracking-wide", act.glow)}>
+                {act.label}
+              </span>
               <span className="text-[10px] uppercase tracking-widest text-[var(--dim)]">
                 {today.decision.conviction} conviction · {today.decision.horizon}
               </span>

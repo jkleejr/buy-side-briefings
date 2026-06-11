@@ -7,6 +7,7 @@ const TABS = [
   { href: "/", code: "DASH" },
   { href: "/nvidia", code: "NVDA" },
   { href: "/bitcoin", code: "BTC" },
+  { href: "/skhynix", code: "HYNIX" },
   { href: "/opportunities", code: "OPS" },
   { href: "/track-record", code: "TRACK" },
 ];
@@ -19,7 +20,7 @@ export default function MobileTabbar() {
   const pathname = usePathname();
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-[var(--border-strong)] bg-black pb-[env(safe-area-inset-bottom)] md:hidden">
-      <div className="grid grid-cols-5">
+      <div className="grid grid-cols-6">
         {TABS.map((t) => {
           const active =
             t.href === "/" ? pathname === "/" : pathname.startsWith(t.href);
