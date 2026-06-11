@@ -1,0 +1,159 @@
+{
+  "routine": "markets",
+  "date": "2026-06-11",
+  "window": "morning",
+  "generated_at": "2026-06-11T11:45:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Brent $95.45 Is $1.55 From Regime Trigger; PPI Binary at 8:30 AM ET",
+    "conviction": "medium",
+    "rationale_short": "The US completed its latest Iran strikes overnight, generating a pre-market futures relief rally (ES +0.87%, NQ +1.1%) — but Brent climbed to $95.45 (+2.52%) in the process, closing to within $1.55 of the $97 oil regime trigger. Four of five regime indicators remain in breach: VIX 20.75 (above 18), 30Y ~5.00% (at threshold), SPX 7,267 (193 pts below 7,460 floor), Brent $95.45 (approaching $97). DXY retreated to 99.80 — the sole cleared indicator — but that reversal is contingent on today's 8:30 AM ET May PPI print not re-igniting dollar demand. Consensus is +0.7% m/m headline / +0.4% core; a print at or above consensus keeps the 30Y pinned at 5.0% and prevents any regime recovery. SPCX prices today at $135 (capital drain climax completing), ADBE reports after close (AI-eats-software binary). STEP ASIDE is unchanged from the June 10 night brief: raise cash, hold IWM short, do not add new long exposure until the oil trigger clears and SPX reclaims 7,380.",
+    "supporting_data": [
+      {
+        "label": "US completed latest round of Iran strikes overnight; ES futures +0.87% to ~7,330, NQ futures +1.1% — temporary relief rally, not regime clearance; SPX remains 130 pts below 7,460 floor; Dow futures +0.82%",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-as-us-launches-new-strikes-against-iran-222511976.html"
+      },
+      {
+        "label": "Brent +2.52% to $95.45 on fresh US strikes against Iran — $1.55 from the $97 oil regime trigger; WTI +2.94% to $92.68; Iranian sea mines remain physically present in Strait of Hormuz; one tanker incident closes the gap in a single session",
+        "url": "https://www.cnbc.com/amp/2026/06/11/brent-wti-oil-prices-us-launches-fresh-strikes-on-iran-.html"
+      },
+      {
+        "label": "VIX 20.75 pre-market (−6.6% from June 10 close of 22.22) — declining but still above the 18 regime trigger for a third consecutive session; vol not compressing to safety range despite the relief rally",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-080844506.html"
+      },
+      {
+        "label": "May PPI scheduled 8:30 AM ET today — consensus +0.7% m/m headline / +0.4% core; at-consensus print keeps 30Y pinned near 5.0%; a print ≥0.8% m/m pushes 30Y to 5.10–5.20% and converts STEP ASIDE to BEARISH at open",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm"
+      },
+      {
+        "label": "SPCX confirmed $135/share pricing tonight — $75B capital drain completing; the largest IPO in history prices at target $1.75T valuation; IWM cover signal activates June 16+ post-normalization, not today",
+        "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
+      },
+      {
+        "label": "Investors brace for 'long grind' as Iran war dims near-term ceasefire hopes — US-Iran diplomatic resolution timeline has lengthened materially after both sides conducted direct military strikes on each other's assets on June 10",
+        "url": "https://www.cnbc.com/amp/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7330.0,  "change_pct":  0.87, "as_of": "2026-06-11T11:30:00Z" },
+    "nasdaq": { "level": 25447.0, "change_pct":  1.10, "as_of": "2026-06-11T11:30:00Z" },
+    "vix":    { "level": 20.75,   "change_pct": -6.60, "as_of": "2026-06-11T11:30:00Z" },
+    "ust10y": { "level": 4.52,    "change_bps":  0,    "as_of": "2026-06-11T11:30:00Z" },
+    "dxy":    { "level": 99.80,   "change_pct": -0.21, "as_of": "2026-06-11T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 20.75,   "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.00,    "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.80,   "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7266.99, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 95.45,   "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$200.42 June 10 close (−3.73%); ~$203 pre-market (+1.3%); Apple/Google Private Cloud Compute partnership thesis intact; $195 stop in force; conditional add at $200–205 only on PPI ≤0.4% m/m core AND VIX closing below 18",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ORCL",
+      "note": "Opened $198.50 on June 11 (above the $185–195 re-entry zone from the June 10 night brief); RPO $638B / IaaS +93% demand intact; $70B FY2027 capex overhang still processing; wait for first full regular-session close to confirm the floor before sizing",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ADBE",
+      "note": "Reports Q2 FY2026 after today's close — $5.81 EPS / $6.45B revenue consensus; stock −30% YTD on AI displacement fear; Digital Media ARR growth and Firefly AI monetization commentary is the cleanest 'AI eats software' test of Q2; binary event in both directions",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "~$384 est. — SPCX first-day trading tomorrow is the Musk-proxy event in both directions; avoid sizing today ahead of SPCX pricing; watch for any SPCX-pricing reaction on TSLA at today's close",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$283 est. (WWDC distribution day 4); cloud-AI hardware dependency on NVDA/Google confirmed; better entry $275–285 after regime clears with VIX below 17 and SPX confirmed above 7,380",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "IWM",
+      "note": "SPCX $75B pricing today = mechanical drain climax; maintain IWM short through pricing; cover signal is June 16+ with 30Y confirmed below 4.90% on two sessions and post-SPCX float normalization underway",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$61,996 pre-market (stable; above recent $59K est. lows); DXY at 99.80 is a modest tailwind; still below $66K re-entry threshold; Fed rate uncertainty ahead of June 17 FOMC caps the recovery",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "$371.89 June 10 close (−3.9%); ORCL capex-blowout narrative spreading to AI infrastructure names; guidance-plateau repricing incomplete; better entry $350–360 post-regime normalization",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$402.25 June 10 close (−0.3%, relative outperformer); Azure AI intact; no active setup in STEP ASIDE regime; watch for ADBE earnings read-across to software multiples tonight",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "$363.60 June 10 close (~flat); Apple PCC deal directly constructive (Google Cloud revenue); $84.75B equity offering overhang persists; no entry in STEP ASIDE regime",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "QQQ / NDX on the pre-PPI bounce",
+      "reason": "ES futures +0.87% is an 'Iran strikes completed' relief trade, not regime clearance. May PPI at 8:30 AM ET at consensus (+0.7% m/m) keeps 30Y pinned near 5.0% and prevents any sustained recovery. Four of five regime indicators remain in breach.",
+      "better_entry": "After PPI confirms ≤0.4% m/m core AND SPX reclaims 7,380 on two consecutive sessions with VIX below 18"
+    },
+    {
+      "ticker": "ORCL (before floor confirmation)",
+      "reason": "Opened $198.50, above the $185–195 re-entry zone from the June 10 night brief. The capex overhang ($70B FY2027, $40B planned fundraise) needs one full session of price discovery. Opening above the zone means the market hasn't finished digesting the capex shock.",
+      "better_entry": "$185–195 on any re-test of the AH lows today; or after a two-session confirmation of a floor"
+    },
+    {
+      "ticker": "ADBE pre-earnings",
+      "reason": "Reports Q2 after close today. Stock −30% YTD — a binary event that can move 15%+ in either direction. No edge in pre-earnings positioning when the stock is in an established downtrend and the AI displacement thesis is unresolved by the fundamental data.",
+      "better_entry": "Post-earnings on the first stabilization session if Digital Media ARR growth confirms AI monetization is additive, not substitutive"
+    },
+    {
+      "ticker": "SPCX first-day trade (Friday)",
+      "reason": "Largest IPO in history ($1.75T, $135 fixed-price deal) trades for the first time tomorrow. Mega-IPO first-day mechanics produce extreme intraday swings — no tradable edge without specific allocation knowledge or a clear 2-3 session float-normalization signal.",
+      "better_entry": "Day 3–5 after initial float normalization and lock-up dynamics are visible"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "SPCX $75B IPO prices today at $135 — the mechanical institutional capital drain from liquid small/mid-cap positions reaches its climax event. The pricing proceeds regardless of market conditions; committed allocators cannot withdraw. Post-pricing normalization (June 16+) is the cover signal, not today. 30Y at ~5.0% maintains the rate-hostile backdrop for IWM's most rate-sensitive components through the FOMC on June 17.",
+      "entry": "Hold/initiate $270–282; the overnight futures bounce may push IWM near $278–283 pre-open — add to the short on any SPCX-morning strength before PPI",
+      "invalidation": "$300 daily close on two consecutive post-SPCX sessions signals capital drain absorption was less disruptive than modeled",
+      "conviction": "medium",
+      "horizon": "1–2 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Brent at $95.45 is $1.55 from the $97 oil regime trigger with active US-Iran military operations in Strait of Hormuz waters. Iranian sea mines remain physically present and uncleared. Any tanker incident or IDF strike on Iranian oil infrastructure spikes Brent above $97 within hours. XLE provides asymmetric oil exposure as a defined hedge, sized ≤2% gross — not a primary directional position.",
+      "entry": "XLE $88–92; ≤2% gross; stop on confirmed Iran ceasefire with Hormuz mine clearance announced and Brent settling below $90",
+      "invalidation": "Confirmed Iran ceasefire with Hormuz mine clearance announced; Brent settles below $90 — exit immediately",
+      "conviction": "low",
+      "horizon": "1–2 weeks"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA at $200.42 close (pre-market ~$203) holds the Apple/Google Private Cloud Compute demand thesis intact — NVDA Blackwell B200 for Siri via Google Cloud. The $195 stop level from prior briefs is in force. A cool PPI print today (≤0.4% m/m core) with VIX closing below 18 would activate a higher-conviction add. Do not add before the 8:30 AM ET PPI release — the print is a binary in both directions.",
+      "entry": "Hold existing position; conditional add at $200–205 only on PPI ≤0.4% m/m core AND VIX closing below 18; stop $195 daily close",
+      "invalidation": "Close below $195; or VIX spikes above 22 on Brent breaking $97",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "Brent at $95.45 is $1.55 from the oil regime trigger — the price move was driven by fresh US military strikes on Iran overnight, and Iran responded with new missile and drone attacks on US assets in Jordan and the Persian Gulf. The US's 'completed strikes' framing signals a tactical pause, not a ceasefire; Iranian sea mines remain physically present in the Strait of Hormuz, and a single tanker incident or IDF strike on Iranian oil infrastructure converts STEP ASIDE to BEARISH in a single session. May PPI at 8:30 AM ET at consensus (+0.7% m/m) keeps the 30Y pinned at 5.0% and sets up a difficult June 17 FOMC where Warsh must navigate stagflation dynamics — hot headline inflation driven by oil with below-2% core — without clear policy tools. ADBE reporting after today's close with the stock down 30% YTD introduces a second evening binary: a Digital Media ARR miss would extend the AI-deflation narrative from hardware capex (ORCL, AVGO) to software multiples across the entire AI-adoption stack, hitting MSFT, GOOGL, and META on read-through. Asia closed broadly lower overnight (Nikkei −1.06%, Hang Seng −0.88%), providing no constructive technical floor for the US pre-market bounce. **Invalidation: If PPI prints ≤0.4% m/m core AND Brent settles back below $92 on Iran de-escalation, STEP ASIDE converts to HOLD at tomorrow's open. If Brent breaks $97 intraday, BEARISH verdict activates immediately — do not wait for EOD close.**",
+  "body_mdx": "data/briefings/markets/2026-06-11-morning.mdx"
+}
