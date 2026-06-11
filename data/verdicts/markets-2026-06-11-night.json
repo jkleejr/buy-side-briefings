@@ -1,0 +1,159 @@
+{
+  "routine": "markets",
+  "date": "2026-06-11",
+  "window": "night",
+  "generated_at": "2026-06-11T23:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Iran Deal Signal Clears Oil Trigger; FOMC June 17 Is the New Fulcrum",
+    "conviction": "medium",
+    "rationale_short": "Trump cancelled planned Iran strikes and signaled that VP Vance will sign a peace agreement in Europe this weekend, sending Brent down 6.2% to $89.52 — clearing the framework's primary BEARISH trigger. SPX rallied 1.8% to ~7,395 and the semiconductor complex surged ~8% despite a dramatically hot May PPI (+1.1% m/m vs +0.7% consensus). The morning STEP ASIDE call was wrong directionally. Regime is materially improving — Brent and DXY both cleared, VIX compressing toward 18 — but SPX is still 65 pts below the 7,460 floor, 30Y remains pinned at ~5.00% on the hot PPI, and the Iran signing has not yet been formally confirmed. HOLD: do not chase the 1.8% rip. The next binary is the Iran deal weekend confirmation (signed → SPX likely clears 7,460 at Monday open, verdict upgrades to BUY) versus the June 17 FOMC (if Warsh signals higher-for-longer on PPI 6.5% + CPI 4.2%, 30Y spikes and creates a tactical pullback).",
+    "supporting_data": [
+      {
+        "label": "Trump cancelled planned Iran strikes; VP Vance to sign US-Iran multilateral peace agreement in Europe this weekend — Brent fell 6.2% to $89.52 (from $95.45 pre-market), WTI fell to $85.94 (lowest since April); oil regime trigger ($97) now $7.48 below current price, no longer the primary regime risk",
+        "url": "https://www.tradingkey.com/analysis/commodities/oil/261962044-trump-us-iran-oil-brent-deal-price-hormuz-wti-tradingkey"
+      },
+      {
+        "label": "S&P 500 gained ~1.75% to ~7,395 ('shy of 7.4K'), Dow +930 pts to 50,848.75 (+1.86%), Nasdaq +2.5%, Russell 2000 +3.02% — broad market recovery; Iran deal signal was the dominant driver; 4 of 4 major indices closed higher",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026"
+      },
+      {
+        "label": "May PPI +1.1% m/m (+6.5% YoY) — well above +0.7% consensus; goods PPI +2.8% m/m, the largest single-month goods price advance since December 2009; triggered the morning brief's own BEARISH rule (≥0.8% m/m), yet markets rallied because Iran deal oil collapse removed the inflation source",
+        "url": "https://www.bls.gov/news.release/archives/ppi_06112026.htm"
+      },
+      {
+        "label": "Semiconductor complex surged ~8% (SOX gauge): AMD +8%, Lam Research +12.7%, Intel +10%+, Marvell +11.13% to $280.71, AST SpaceMobile +11.73% — the largest single-day semi rebound since the June 5 selloff; Iran de-escalation reduced geopolitical risk premium on global supply chains and FOMC trajectory",
+        "url": "https://www.zacks.com/stock/news/2935586/stock-market-news-for-jun-11-2026"
+      },
+      {
+        "label": "ORCL fell 8.5% to $184.10 — opened at ~$178.6 (-11.1% from June 10 close on hot PPI + cloud revenue miss), then recovered partially on Iran deal rally; $184.10 is below the $185-195 re-entry zone from the June 10 night brief, establishing a new potential floor",
+        "url": "https://www.gurufocus.com/news/8912769/a-look-at-oracle-corp-orcl-after-85-decline-gf-value-17238-vs-price-18410"
+      },
+      {
+        "label": "ADBE reported beat-and-raise Q2 ($5.96 EPS non-GAAP vs $5.81 est.; $6.62B revenue vs $6.46B est., +13% YoY; raised FY2026 guidance) — AI-displacement thesis disproven by fundamentals; BUT CFO Dan Durn departing June 15, sending AH -5.5%; management instability eclipses the earnings beat",
+        "url": "https://menafn.com/1111247430/Adobe-Stock-Drops-After-Hours-As-CFO-Exit-Eclipses-Strong-Q2-Results-FY26-Guidance"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7395.0,  "change_pct":  1.75, "as_of": "2026-06-11T20:00:00Z" },
+    "nasdaq": { "level": 25798.0, "change_pct":  2.50, "as_of": "2026-06-11T20:00:00Z" },
+    "vix":    { "level": 18.50,   "change_pct": -16.70, "as_of": "2026-06-11T20:00:00Z" },
+    "ust10y": { "level": 4.55,    "change_bps":  3,    "as_of": "2026-06-11T20:00:00Z" },
+    "dxy":    { "level": 99.86,   "change_pct": -0.15, "as_of": "2026-06-11T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.50,   "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.00,    "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.86,   "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7395.0,  "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 89.52,   "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$204.87 (+2.2% from $200.42 June 10 close); Apple/Google PCC demand thesis intact; KKR-Nvidia-Vistra $10B+ infrastructure commitment adds institutional demand signal; Iran deal + VIX compression partially meet the conditional add criteria; hold position, conditional add at $203-210 on Iran deal formal confirmation + VIX closing below 17; stop $195 daily close",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "ORCL",
+      "note": "$184.10 (-8.5% from ~$201 June 10 close); opened ~$178.6 (-11.1%) on PPI shock, recovered partially; now below the $185-195 re-entry zone; RPO $638B + IaaS +93% demand intact but cloud revenue miss and cash flow concerns extended the capex-overhang narrative; re-entry zone shifts to $175-185; stop $170 close",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "ADBE",
+      "note": "Beat-and-raise Q2 ($5.96 EPS, $6.62B revenue); raised FY2026 guidance; AI-displacement thesis disproven — Digital Media ARR growth confirms AI is additive; BUT CFO Dan Durn departure June 15 caused AH -5.5% to ~$170; management instability overhang; wait for post-CFO-exit stabilization at $165-170 before re-entry",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "SPCX first trading day tomorrow — Musk-proxy volatility high in both directions; SPCX priced confirmed at $135; no clean TSLA setup through the debut; watch-only",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "~$385 (+3.5% recovery with broad semi rally); capex-blowout narrative still processing; partial recovery consistent with sector lift, not fundamental re-rating; better entry $350-360 post-regime normalization with 30Y below 4.80%",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "+8% today (~$513 from ~$475); Bank of America raised price target to $560, named 'Top CPU Pick'; benefited from semi sector relief rally and Iran deal risk-off compression; no chase — wait for pullback to $485-500 entry",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "IWM",
+      "note": "~$292 close (+3.02% from ~$283 June 10 close); SPCX drain complete (priced $135); Iran deal reduces rate pressure — cover IWM short now; the thesis (SPCX drain + rate pressure) has fully played out; the June 16+ cover signal from prior briefs is here early",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$62,800 (recovered from ~$59K est. June 10 low); DXY below 100 + Iran deal risk-on = dual tailwind; FOMC June 17 (no cuts) is the cap; still below $66K re-entry threshold for aggressive positioning",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$398-402 est. (flat to slightly lower on the day; underperformed given ADBE CFO exit read-through to software); Azure AI intact; no active setup; ADBE beat confirms AI is additive to software suites, which is a medium-term positive for MSFT",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$367-372 est. (+1-2%); Apple PCC deal (Google Cloud + NVDA Blackwell) intact; $84.75B equity offering overhang persists; no active setup in HOLD regime; constructive read from ADBE digital media ARR",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "ORCL",
+      "reason": "Closed $184.10 (-8.5%), below the $185-195 re-entry zone established by the June 10 night brief; cloud revenue miss expanded the capex-overhang narrative beyond just raw spend levels; free cash flow concerns now dominate the thesis; $184 may not be the floor",
+      "better_entry": "$175-185 after a two-session close confirmation; or on a flush to $170 with a rebound candle; stop at $168 close"
+    },
+    {
+      "ticker": "ADBE (AH flush)",
+      "reason": "AH -5.5% on CFO Dan Durn departure June 15 — do not buy the flush; management instability adds a new negative layer on top of the AI displacement debate; even though the earnings beat disproved the bear thesis, the CFO exit creates a 3-6 month leadership uncertainty overhang",
+      "better_entry": "$165-170 after a stabilization session post-CFO transition; ideally on a volume-exhaustion candle with new management commentary reaffirming FY guidance"
+    },
+    {
+      "ticker": "SPCX (day-1 trade)",
+      "reason": "First trading day tomorrow on Nasdaq. Only a 4% public float, MSCI early-inclusion buy flow starting June 13. Extreme intraday volatility expected with multiple trading halts. No edge without specific allocation knowledge or 2-3 session float normalization signal.",
+      "better_entry": "Day 3-5 after initial float normalization and lock-up dynamics become visible; the structural MSCI passive bid is durable, not a day-1 trade"
+    },
+    {
+      "ticker": "QQQ pre-FOMC",
+      "reason": "Markets have priced the Iran deal optimism. PPI +1.1% m/m (hottest goods inflation since 2009) means Warsh faces a difficult June 17 FOMC. If dot plot signals 'higher for longer' on the combined CPI 4.2% + PPI 6.5% data, 30Y spikes and QQQ trades back down 1.5-2%.",
+      "better_entry": "After FOMC June 17 with a neutral-to-dovish statement; or after Iran deal formally confirmed + 30Y falls below 4.80% on two consecutive sessions"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "TLT (short) / TBT (long)",
+      "direction": "short",
+      "thesis": "May PPI +1.1% m/m (+6.5% YoY) with goods prices +2.8% m/m — the hottest single reading since 2009 — combined with CPI 4.2% YoY leaves Warsh with no policy room to cut at the June 17 FOMC. Even with Brent falling to $89, the supply-chain goods price shock is not oil-dependent and persists for 2-3 months in pipeline data. The 30Y at ~5.00% is likely to remain above 4.80% through FOMC; TLT (long-duration Treasury ETF) faces continued price pressure.",
+      "entry": "Short TLT at $84-86; or long TBT (2x inverse) at $44-46; sized ≤3% gross; stop on TLT closing above $90",
+      "invalidation": "Iran deal formally confirmed over weekend + Brent falls below $82; 30Y falls below 4.70% on two consecutive sessions — inflation expectations reset fully on oil normalization",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "SPX / QQQ conditional long on Iran deal confirmation",
+      "direction": "long",
+      "thesis": "If VP Vance signs the US-Iran peace agreement in Europe this weekend as signaled, Brent likely falls to $82-86, removing both the oil inflation catalyst and the geopolitical risk premium from equities. With Brent cleared, DXY cleared, and VIX compressing toward 17, the primary remaining breach would be SPX still below 7,460. A Monday gap above 7,460 would clear the regime floor and activate a BUY verdict. The setup requires formal deal confirmation — not just Trump statements.",
+      "entry": "Buy QQQ/SPX at Monday's open ONLY on confirmed Iran deal signing (VP Vance statement + Hormuz reopening commitment in the agreement); entry ~7,410-7,460 SPX; do not buy if deal collapses or is delayed",
+      "invalidation": "Iran deal collapses or Brent spikes above $95 before Monday open; or FOMC June 17 delivers hawkish dot plot and 30Y breaks above 5.15%",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA closed $204.87 (+2.2%), holding above the $195 stop level. The Apple/Google Private Cloud Compute demand thesis remains intact; today's KKR-Nvidia-Vistra $10B+ infrastructure commitment adds a new institutional demand vector. Iran deal + VIX compression toward 18 partially meet the prior brief's conditional add criteria. A formal Iran deal this weekend + FOMC neutral statement clears the remaining regime indicators and upgrades NVDA from 'hold' to 'add at $200-210.'",
+      "entry": "Hold existing position; conditional add at $203-210 on Iran deal formal confirmation this weekend + VIX closing below 17 on Monday; stop $195 daily close",
+      "invalidation": "Close below $195 on two consecutive sessions; or FOMC dot plot surprises hawkish (30Y breaks 5.15%) — in that case reduce to minimal sizing",
+      "conviction": "medium",
+      "horizon": "3-6 weeks"
+    }
+  ],
+  "bear_case": "May PPI +1.1% m/m is the hottest goods inflation reading since December 2009. The morning brief's own rule mandated a STEP ASIDE → BEARISH conversion at ≥0.8% m/m; the conversion was forestalled only by Trump's Iran deal signal — a signal with no binding commitment and a signing ceremony that depends on the Ayatollah not withdrawing final approval. If the weekend signing collapses (as the April 21 ceasefire did), Brent snaps back toward $95 within hours, DXY re-breaches 100, and the BEARISH verdict activates at Monday's open. Separately, the Warsh FOMC on June 17 must navigate CPI 4.2% + PPI 6.5% without any dovish cover from oil — the 30Y at 5.00% is incompatible with the SPX reclaiming 7,460 on a sustained basis; history shows SPX struggles to maintain valuation multiples above 22x forward earnings with the 30Y above 4.90%. ADBE's CFO departure is a tail risk for software sector sentiment, as institutional investors may interpret it as signal of internal disagreement over the AI strategy pivot. Invalidation: if Iran deal is formally signed over the weekend with a Hormuz reopening commitment, Brent falls to $82-86, 30Y retreats to 4.70%, and SPX closes above 7,460 for two consecutive sessions — HOLD converts to BUY.",
+  "body_mdx": "data/briefings/markets/2026-06-11-night.mdx"
+}

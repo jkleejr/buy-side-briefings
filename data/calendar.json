@@ -1,41 +1,55 @@
 {
   "events": [
     {
-      "date": "2026-06-11",
-      "label": "May PPI — the next live inflation binary after the hot CPI",
-      "kind": "MACRO",
-      "time_et": "8:30 AM",
-      "tickers": ["QQQ", "TBT", "GLD"],
-      "note": "≥0.8% m/m pushes 30Y through 5.0% and compresses tech multiples; ≤0.4% m/m is the QQQ re-entry precondition"
-    },
-    {
-      "date": "2026-06-11",
-      "label": "SPCX IPO pricing — $135/sh, $75B raise, $1.75T valuation",
+      "date": "2026-06-12",
+      "label": "SPCX first trading day (NASDAQ: SPCX) — 4% float, $135 IPO price",
       "kind": "IPO",
-      "tickers": ["IWM", "ARKK", "TSLA"],
-      "note": "Mechanical capital-drain climax for small/mid-cap; twice oversubscribed, prices regardless of macro"
+      "tickers": ["SPCX", "IWM", "TSLA"],
+      "note": "Only 4% public float + MSCI early-inclusion buy flow starting Jun 13; multiple trading halts expected; no first-day edge without allocation; wait for Day 3-5 float normalization"
     },
     {
       "date": "2026-06-12",
-      "label": "SPCX first trading day",
-      "kind": "IPO",
-      "tickers": ["IWM", "ARKK", "TSLA"],
-      "note": "Musk-proxy volatility in both directions; TSLA has no clean setup through the debut"
+      "label": "UMich June preliminary consumer sentiment (~8:55 AM ET)",
+      "kind": "MACRO",
+      "time_et": "8:55 AM",
+      "tickers": ["QQQ", "XLY"],
+      "note": "Expected weak (~62-65) on elevated gas prices + Iran war; a materially weak read adds pressure to SPX pre-FOMC; a surprise rebound (>70) would be constructive"
     },
     {
-      "date": "2026-06-16",
-      "label": "Post-SPCX normalization window opens",
+      "date": "2026-06-13",
+      "label": "Iran deal signing ceremony in Europe — VP Vance representing US",
+      "kind": "GEO",
+      "tickers": ["XLE", "QQQ", "IWM", "BTC"],
+      "note": "Weekend binary: signed (Hormuz reopening language) → Monday gap above 7,460; verdict BUY. Collapsed → Brent to $95+, BEARISH activates Monday open. MSCI SPCX early inclusion buy flow also begins"
+    },
+    {
+      "date": "2026-06-13",
+      "label": "SPCX MSCI early-inclusion passive buy flow begins",
       "kind": "SIGNAL",
-      "tickers": ["IWM"],
-      "note": "IWM short cover signal: normalization June 16+ with 30Y confirmed below 4.90% on two consecutive sessions"
+      "tickers": ["SPCX", "SPY", "QQQ"],
+      "note": "Estimated $13-18B in index-fund rebalancing over 3-4 weeks; structural new SPX/QQQ bid; magnitude depends on SPCX's initial index weight"
+    },
+    {
+      "date": "2026-06-15",
+      "label": "ADBE CFO Dan Durn departure + transition",
+      "kind": "OTHER",
+      "tickers": ["ADBE", "MSFT", "GOOGL"],
+      "note": "CFO exits June 15; management uncertainty overhang for 3-6 months; ADBE Q2 beat confirmed AI additive (positive read-through), but wait for permanent successor announcement before re-entry"
+    },
+    {
+      "date": "2026-06-15",
+      "label": "Post-Iran deal regime assessment (Monday open)",
+      "kind": "SIGNAL",
+      "tickers": ["QQQ", "SPY", "XLE", "IWM"],
+      "note": "If Iran deal signed: SPX > 7,460 open, BUY verdict. If deal collapsed: Brent to $95+, BEARISH activates. Key binary for the entire next phase of positioning"
     },
     {
       "date": "2026-06-17",
-      "label": "FOMC decision + Warsh press conference",
+      "label": "FOMC decision + Warsh press conference (first as Chair)",
       "kind": "FOMC",
       "time_et": "2:00 PM",
-      "tickers": ["TBT", "IWM", "QQQ", "XLF"],
-      "note": "July hike risk ~15% priced; a hot PPI would put acknowledgment of hikes in play"
+      "tickers": ["TBT", "QQQ", "XLF", "IWM"],
+      "note": "98% hold probability; CPI 4.2% + PPI 6.5% is the backdrop; dot plot and statement language are the movers — neutral statement → 30Y retreats to 4.85%; hawkish dot plot (July hike acknowledgment) → 30Y to 5.10-5.20%; SPX pullback 1.5-2% if hawkish"
     },
     {
       "date": "2026-06-19",
