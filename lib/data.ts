@@ -623,3 +623,30 @@ function normalizeDate(value: unknown): string {
   if (typeof value === "string") return value;
   return "";
 }
+
+// ---------------------------------------------------------------------------
+// Curated catalyst calendar — one-off dated events the Yahoo earnings and
+// FRED macro feeds can't know about (IPO pricings, geopolitical deadlines,
+// product launches). Maintained by the daily markets routine alongside the
+// briefings; the website cross-links each event to open opportunities by
+// ticker.
+// ---------------------------------------------------------------------------
+
+export type CalendarEvent = {
+  date: string; // YYYY-MM-DD
+  label: string;
+  /** Short code chip, e.g. "IPO", "FOMC", "GEO", "HOLIDAY". */
+  kind: string;
+  /** Eastern-time clock string when one exists, e.g. "8:30 AM". */
+  time_et?: string;
+  /** Tickers whose open opportunities hinge on this event. */
+  tickers?: string[];
+  note?: string;
+};
+
+export function getCalendarEvents(): CalendarEvent[] {
+  const file = path.join(DATA_DIR, "calendar.json");
+  const parsed = readJson<{ events: CalendarEvent[] }>(file);
+  if (!parsed?.events) return [];
+  return [...parsed.events].sort((a, b) => a.date.localeCompare(b.date));
+}

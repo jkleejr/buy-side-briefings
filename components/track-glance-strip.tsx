@@ -44,6 +44,7 @@ export default function TrackGlanceStrip({
   streak,
   ops,
   equity,
+  regime,
 }: {
   hitRate: number | null;
   hits: number;
@@ -52,6 +53,8 @@ export default function TrackGlanceStrip({
   ops: OppStats;
   /** Paper-portfolio summary: recent equity values + total realized return. */
   equity?: { values: number[]; total_pct: number } | null;
+  /** Live regime check: named triggers currently in breach. */
+  regime?: { breached: number; total: number } | null;
 }) {
   const streakTone =
     streak.kind === "right"
@@ -69,6 +72,24 @@ export default function TrackGlanceStrip({
           : "text-[var(--dim)]";
 
   const tiles: { href: string; label: string; value: React.ReactNode; sub: string }[] = [
+    ...(regime
+      ? [
+          {
+            href: "#regime",
+            label: "Regime · Live",
+            value: (
+              <span
+                className={
+                  regime.breached > 0 ? "text-[var(--down)]" : "text-[var(--up)]"
+                }
+              >
+                {regime.breached}/{regime.total}
+              </span>
+            ),
+            sub: "triggers in breach now",
+          },
+        ]
+      : []),
     {
       href: "/track-record",
       label: "Verdict Hit Rate",

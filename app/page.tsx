@@ -9,6 +9,7 @@ import {
 import { buildPaperPortfolio } from "@/lib/paper-portfolio";
 import { getLatestAssetDaily } from "@/lib/asset-daily";
 import { getSpxDailyCloses } from "@/lib/markets";
+import { evaluateRegime } from "@/lib/regime";
 import { aggregateStats, monthsBackFor, scoreVerdict } from "@/lib/verdict-scoring";
 import TrackGlanceStrip from "@/components/track-glance-strip";
 import VerdictCard from "@/components/verdict-card";
@@ -77,6 +78,14 @@ export default async function Home() {
   const hitRate = scored > 0 ? (hits / scored) * 100 : null;
   const { streak_d5 } = aggregateStats(scoredRows);
   const oppStats = getOpportunityStats();
+  // Live breach count for the glance strip (panel below re-checks per render).
+  const regime =
+    verdict && verdict.regime_risk.length > 0
+      ? await evaluateRegime(verdict.regime_risk).then((r) => ({
+          breached: r.breached,
+          total: r.rows.length,
+        }))
+      : null;
   const portfolio = buildPaperPortfolio(getAllOpportunities(), spxSeries);
   const equity = portfolio
     ? {
@@ -105,6 +114,7 @@ export default async function Home() {
         streak={streak_d5}
         ops={oppStats}
         equity={equity}
+        regime={regime}
       />
 
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
@@ -163,7 +173,7 @@ export default async function Home() {
           <SentimentPanel />
         </div>
         {verdict && (
-          <div className="lg:col-span-4">
+          <div id="regime" className="scroll-mt-12 lg:col-span-4">
             <RegimeRiskBars indicators={verdict.regime_risk} />
           </div>
         )}

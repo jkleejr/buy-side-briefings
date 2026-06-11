@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { getCalendarEvents, getAllOpportunities } from "@/lib/data";
 import { getUpcomingEarnings } from "@/lib/markets";
 import { getUpcomingReleases } from "@/lib/macro";
 import Panel from "./panel";
@@ -41,13 +43,75 @@ export default async function CalendarPanel() {
     getUpcomingReleases(14),
   ]);
 
+  // Curated catalysts from the briefings (IPO pricings, signal windows, …),
+  // cross-linked to the open ideas that hinge on them. Past events drop off.
+  const events = getCalendarEvents().filter((e) => daysFromToday(e.date) >= 0);
+  const openOpps = getAllOpportunities().filter(
+    (o) => o.status === "active" || o.status === "triggered",
+  );
+
   return (
     <Panel
       code="CAL"
-      title="Week Ahead · Earnings & Macro"
-      learn="The two calendars that matter for short-horizon positioning: (left) upcoming earnings for mega-cap and bellwether stocks — these move the index even if no other news happens; (right) scheduled macro data prints — CPI, Core PCE, NFP, GDP, Retail Sales — and FOMC dates. Anything within the next 14 trading days. Updates every hour."
-      meta={<span>YAHOO + FRED · 14D</span>}
+      title="Week Ahead · Catalysts, Earnings & Macro"
+      learn="Three calendars for short-horizon positioning: (top) curated catalysts from the briefings — IPO pricings, signal windows, geopolitical deadlines — each linked to the open trade ideas that hinge on it; (left) upcoming earnings for mega-cap and bellwether stocks; (right) scheduled macro prints — CPI, Core PCE, NFP, GDP, Retail Sales — and FOMC dates. Anything within the next 14 days."
+      meta={<span>BRIEFINGS + YAHOO + FRED · 14D</span>}
     >
+      {events.length > 0 && (
+        <ul className="divide-y divide-[var(--border)] border-b border-[var(--border)]">
+          {events.map((e) => {
+            const { day, mdy } = formatCalDate(e.date);
+            const badge = dayBadgeText(e.date);
+            const isSoon = daysFromToday(e.date) <= 1;
+            const linked = e.tickers
+              ? openOpps.filter((o) => e.tickers!.includes(o.ticker))
+              : [];
+            return (
+              <li key={`${e.date}-${e.label}`} className="px-2 py-1.5 font-mono">
+                <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-[11px]">
+                  <span className="shrink-0 border border-[var(--border)] bg-black px-1 text-[9px] uppercase tracking-wider text-[var(--cyan-term)]">
+                    {e.kind}
+                  </span>
+                  <span className="min-w-0 flex-1 basis-48 text-[var(--foreground)]">
+                    {e.label}
+                  </span>
+                  <span
+                    className={
+                      "ml-auto shrink-0 text-[10px] " +
+                      (isSoon ? "text-[var(--amber)]" : "text-[var(--dim)]")
+                    }
+                  >
+                    {day} · {mdy}
+                    {e.time_et ? ` · ${e.time_et} ET` : ""} · {badge}
+                  </span>
+                </div>
+                {(e.note || linked.length > 0) && (
+                  <div className="mt-0.5 flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-[10px] leading-snug">
+                    {e.note && <span className="text-[var(--dim)]">{e.note}</span>}
+                    {linked.length > 0 && (
+                      <span className="flex flex-wrap items-baseline gap-1">
+                        <span className="uppercase tracking-wider text-[var(--amber-dim)]">
+                          open ideas ▸
+                        </span>
+                        {linked.map((o) => (
+                          <Link
+                            key={o.id}
+                            href={`/opportunities/${o.id}`}
+                            title={o.title}
+                            className="text-[var(--amber)] hover:underline"
+                          >
+                            {o.ticker}
+                          </Link>
+                        ))}
+                      </span>
+                    )}
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      )}
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-2 sm:divide-x sm:divide-y-0">
         {/* ─── Earnings column ─── */}
         <div className="flex flex-col">

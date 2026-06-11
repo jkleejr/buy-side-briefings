@@ -120,6 +120,14 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
 }
 ```
 
+`regime_risk` feeds a LIVE dashboard panel: the website maps each indicator
+name to a live quote (VIX→^VIX, 30Y→^TYX, 10Y→^TNX, DXY, SPX, Nasdaq, Brent,
+WTI, Gold, Silver, Copper, BTC, HYG) and re-judges breach status against the
+trigger in real time. So: keep names recognizable (include the asset keyword —
+"VIX", "30Y Yield", "DXY", "SPX vs 7,460", "Brent"), and put the exact numeric
+threshold the briefing prose cites in `trigger_above` / `trigger_below` —
+update it the moment the regime framework changes.
+
 ## Step 6 — Write the MDX briefing
 
 Path: `data/briefings/markets/<YYYY-MM-DD>-<window>.mdx`
@@ -153,10 +161,37 @@ Body sections (use the **May 20 morning briefing as a canonical template** — `
 
 **Reference the most recent briefing on disk** for tone, length, and structure. Match it.
 
+## Step 6b — Maintain the catalyst calendar
+
+`data/calendar.json` drives the "Week Ahead · Catalysts" strip on the dashboard
+(events the Yahoo-earnings and FRED-macro feeds can't know about). On every run:
+
+- **Add** any new dated catalyst the briefing cites — IPO pricings, signal
+  windows ("cover signal opens June 16+"), geopolitical deadlines, product
+  events, market holidays. Include `tickers` for any open opportunity that
+  hinges on the event so the website can cross-link them.
+- **Update** events whose date or framing changed.
+- **Remove** events whose date has passed.
+
+```json
+{
+  "events": [
+    {
+      "date": "YYYY-MM-DD",
+      "label": "what happens, with the key number",
+      "kind": "IPO | FOMC | MACRO | GEO | SIGNAL | HOLIDAY | OTHER",
+      "time_et": "8:30 AM",          // optional
+      "tickers": ["IWM", "QQQ"],     // optional — open ideas that hinge on it
+      "note": "what it means for positioning"  // optional
+    }
+  ]
+}
+```
+
 ## Step 7 — Commit and push to deploy
 
 ```bash
-git add data/verdicts/markets-<DATE>-<WINDOW>.json data/briefings/markets/<DATE>-<WINDOW>.mdx
+git add data/verdicts/markets-<DATE>-<WINDOW>.json data/briefings/markets/<DATE>-<WINDOW>.mdx data/calendar.json
 git commit -m "Add <window> briefing for <YYYY-MM-DD>"
 git push origin deploy
 ```
