@@ -10,7 +10,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { formatChartDate } from "@/lib/utils";
+import { formatChartDate, formatChartTick } from "@/lib/utils";
 
 type SeriesPoint = { date: string; close: number };
 
@@ -100,6 +100,7 @@ export default function VerdictMarkerChart({ series, markers }: Props) {
             tickLine={{ stroke: "#262626" }}
             axisLine={{ stroke: "#262626" }}
             minTickGap={48}
+            tickFormatter={(v) => (typeof v === "string" ? formatChartTick(v) : "")}
           />
           <YAxis
             domain={[minClose - pad, maxClose + pad]}

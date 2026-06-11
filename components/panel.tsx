@@ -32,27 +32,27 @@ export default function Panel({
   const header = href ? (
     <Link
       href={href}
-      className="flex flex-1 items-center gap-2 transition-colors hover:bg-[rgba(255,165,0,0.06)]"
+      className="flex min-w-0 flex-1 items-center gap-2 transition-colors hover:bg-[rgba(255,165,0,0.06)]"
       title={`Open ${title} detail page`}
     >
       {code && (
-        <span className="font-mono text-[10px] tracking-widest text-[var(--amber-dim)]">
+        <span className="shrink-0 font-mono text-[10px] tracking-widest text-[var(--amber-dim)]">
           {code}
         </span>
       )}
-      <h3 className="whitespace-nowrap font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
+      <h3 className="truncate font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
         {titleNode}
       </h3>
-      <span className="font-mono text-[10px] text-[var(--cyan-term)]">▸</span>
+      <span className="shrink-0 font-mono text-[10px] text-[var(--cyan-term)]">▸</span>
     </Link>
   ) : (
     <>
       {code && (
-        <span className="font-mono text-[10px] tracking-widest text-[var(--amber-dim)]">
+        <span className="shrink-0 font-mono text-[10px] tracking-widest text-[var(--amber-dim)]">
           {code}
         </span>
       )}
-      <h3 className="whitespace-nowrap font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
+      <h3 className="min-w-0 truncate font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
         {titleNode}
       </h3>
     </>
@@ -65,9 +65,9 @@ export default function Panel({
         className,
       )}
     >
-      <header className="flex items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
+      <header className="flex min-w-0 items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
         {header}
-        <div className="ml-auto flex items-center gap-2 text-[10px] uppercase tracking-wider text-[var(--dim)]">
+        <div className="ml-auto flex shrink-0 items-center gap-2 text-[10px] uppercase tracking-wider text-[var(--dim)]">
           {meta}
           {asOf && (
             <span className="hidden whitespace-nowrap font-mono text-[9px] tracking-widest text-[var(--dim)] sm:inline">

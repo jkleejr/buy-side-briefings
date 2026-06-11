@@ -9,7 +9,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { formatChartDate } from "@/lib/utils";
+import { formatChartDate, formatChartTick } from "@/lib/utils";
 
 type SeriesPoint = { date: string; close: number };
 
@@ -89,6 +89,7 @@ export default function AssetChartInner({ series, color, label, intraday }: Asse
             tickLine={false}
             axisLine={{ stroke: "#262626" }}
             minTickGap={56}
+            tickFormatter={(v) => (typeof v === "string" ? formatChartTick(v, intraday) : "")}
           />
           <YAxis
             domain={[minClose - pad, maxClose + pad]}

@@ -64,12 +64,24 @@ export default function OpportunitiesList({ items, live }: Props) {
   const [convFilter, setConvFilter] = useState<"all" | OpportunityConviction>("all");
   const [tagFilter, setTagFilter] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  const [tagsExpanded, setTagsExpanded] = useState(false);
 
+  // Most-used tags first — the full alphabet of ~100 one-off tags buried the
+  // actual ideas below the fold, so only the top slice shows by default.
   const allTags = useMemo(() => {
-    const s = new Set<string>();
-    for (const o of items) for (const t of o.tags) s.add(t);
-    return Array.from(s).sort();
+    const counts = new Map<string, number>();
+    for (const o of items) for (const t of o.tags) counts.set(t, (counts.get(t) ?? 0) + 1);
+    return Array.from(counts.keys()).sort(
+      (a, b) => counts.get(b)! - counts.get(a)! || a.localeCompare(b),
+    );
   }, [items]);
+
+  const VISIBLE_TAGS = 12;
+  const visibleTags = tagsExpanded ? allTags : allTags.slice(0, VISIBLE_TAGS);
+  // Keep the active filter's pill visible even when it's outside the top slice.
+  if (!tagsExpanded && tagFilter && !visibleTags.includes(tagFilter)) {
+    visibleTags.push(tagFilter);
+  }
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -150,7 +162,7 @@ export default function OpportunitiesList({ items, live }: Props) {
           >
             all
           </button>
-          {allTags.map((t) => (
+          {visibleTags.map((t) => (
             <button
               key={t}
               onClick={() => setTagFilter(t === tagFilter ? null : t)}
@@ -163,6 +175,14 @@ export default function OpportunitiesList({ items, live }: Props) {
               {t}
             </button>
           ))}
+          {allTags.length > VISIBLE_TAGS && (
+            <button
+              onClick={() => setTagsExpanded((s) => !s)}
+              className="border border-[var(--amber-dim)] px-1.5 py-0.5 uppercase tracking-wider text-[var(--amber)]"
+            >
+              {tagsExpanded ? "▴ less" : `+${allTags.length - visibleTags.length} more ▾`}
+            </button>
+          )}
         </div>
       )}
 

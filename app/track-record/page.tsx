@@ -366,11 +366,13 @@ export default async function TrackRecordPage() {
       {portfolio && (
         <Panel
           code="EQTY"
-          title="Paper Portfolio · Every Closed Idea at Stated Size, vs SPX"
+          title="Paper Portfolio vs SPX"
           learn="Simulates an account that took EVERY closed opportunity at its published position size, compounding each trade's recorded return on its close date (amber step line). The dashed cyan line is buying the S&P 500 on the journal's first day and doing nothing — the bar any strategy has to beat. Realized trades only: open ideas aren't marked to market, so the line moves only when a trade closes. Win-rate can flatter; this line can't."
           meta={
             <span>
-              {portfolio.stats.start_date} → {portfolio.stats.end_date} ·{" "}
+              <span className="hidden sm:inline">
+                {portfolio.stats.start_date} → {portfolio.stats.end_date} ·{" "}
+              </span>
               {portfolio.stats.trades} CLOSED
             </span>
           }
@@ -613,7 +615,52 @@ export default async function TrackRecordPage() {
             No verdicts logged yet.
           </div>
         ) : (
-          <div className="overflow-x-auto">
+          <>
+            {/* Mobile: stacked cards — the 8-column table is unreadable at phone width. */}
+            <div className="divide-y divide-[var(--border)] md:hidden">
+              {rows.map(({ v, score }) => {
+                const color = verdictColor(v.verdict.code);
+                const slug = `${v.date}-${v.window}`;
+                return (
+                  <div key={slug} className="px-2 py-1.5 font-mono">
+                    <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider">
+                      <span className="text-[var(--foreground)]">{v.date}</span>
+                      <span className="text-[var(--dim)]">{v.window}</span>
+                      <span className="ml-auto flex gap-1 normal-case">
+                        <RightCell value={score.right_d1} />
+                        <RightCell value={score.right_d5} />
+                        <RightCell value={score.right_d20} />
+                      </span>
+                    </div>
+                    <Link
+                      href={`/briefings/${v.routine}/${slug}`}
+                      className={`mt-0.5 block text-[12px] leading-snug ${color.text}`}
+                    >
+                      {v.verdict.emoji} {v.verdict.label}
+                    </Link>
+                    <div className="mt-0.5 flex gap-3 text-[10px]">
+                      <span>
+                        <span className="text-[var(--dim)]">+1d </span>
+                        <ReturnCell w={score.d1} />
+                      </span>
+                      <span>
+                        <span className="text-[var(--dim)]">+5d </span>
+                        <ReturnCell w={score.d5} />
+                      </span>
+                      <span>
+                        <span className="text-[var(--dim)]">+20d </span>
+                        <ReturnCell w={score.d20} />
+                      </span>
+                    </div>
+                    <p className="mt-1 line-clamp-3 text-[10px] leading-snug text-[var(--dim)]">
+                      {v.verdict.rationale_short}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="hidden overflow-x-auto md:block">
             <table className="w-full font-mono text-[11px]">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
                 <tr>
@@ -678,7 +725,8 @@ export default async function TrackRecordPage() {
                 })}
               </tbody>
             </table>
-          </div>
+            </div>
+          </>
         )}
       </Panel>
 

@@ -1,6 +1,10 @@
 import Link from "next/link";
 import type { BriefingMeta } from "@/lib/data";
-import { formatBriefingTime, formatBriefingTitle } from "@/lib/utils";
+import {
+  formatBriefingTime,
+  formatBriefingTitle,
+  formatBriefingTitleShort,
+} from "@/lib/utils";
 import Panel from "./panel";
 
 const ROUTINE_LABEL: Record<string, string> = {
@@ -51,7 +55,12 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
               <span className="w-9 shrink-0 text-[var(--amber-dim)]">
                 {ROUTINE_LABEL[b.routine] ?? b.routine.slice(0, 3).toUpperCase()}
               </span>
-              <span className="flex-1 truncate text-[var(--foreground)]">{fullTitle}</span>
+              <span className="flex-1 truncate text-[var(--foreground)] sm:hidden">
+                {formatBriefingTitleShort(b)}
+              </span>
+              <span className="hidden flex-1 truncate text-[var(--foreground)] sm:inline">
+                {fullTitle}
+              </span>
               {clock && (
                 <span className="shrink-0 text-[var(--dim)]" title={`Generated ${clock}`}>
                   {clock}

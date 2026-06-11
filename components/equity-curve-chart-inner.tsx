@@ -10,7 +10,7 @@ import {
   YAxis,
 } from "recharts";
 import type { EquityPoint } from "@/lib/paper-portfolio";
-import { formatChartDate } from "@/lib/utils";
+import { formatChartDate, formatChartTick } from "@/lib/utils";
 
 type TooltipPayloadItem = {
   payload?: EquityPoint;
@@ -67,6 +67,7 @@ export default function EquityCurveChart({ points }: { points: EquityPoint[] }) 
             tickLine={{ stroke: "#262626" }}
             axisLine={{ stroke: "#262626" }}
             minTickGap={48}
+            tickFormatter={(v) => (typeof v === "string" ? formatChartTick(v) : "")}
           />
           <YAxis
             domain={[min - pad, max + pad]}

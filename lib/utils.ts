@@ -82,6 +82,30 @@ export function formatChartDate(iso: string): {
   return { day, full, time };
 }
 
+/**
+ * Compact X-axis tick label for charts: "Jun 10" for daily series, "14:30"
+ * (US Eastern) for intraday timestamps. Raw ISO strings on an axis are
+ * unreadable, especially at mobile widths.
+ */
+export function formatChartTick(iso: string, intraday?: boolean): string {
+  const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(iso);
+  const d = isDateOnly ? new Date(`${iso}T12:00:00Z`) : new Date(iso);
+  if (isNaN(d.getTime())) return iso;
+  if (intraday && !isDateOnly) {
+    return d.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+      timeZone: "America/New_York",
+    });
+  }
+  return d.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: isDateOnly ? "UTC" : "America/New_York",
+  });
+}
+
 export function formatLevel(n: number): string {
   if (n >= 1000) return n.toLocaleString("en-US", { maximumFractionDigits: 1 });
   return n.toFixed(2);
@@ -126,6 +150,26 @@ export function formatBriefingTitle(b: {
   });
   const win = b.window ? ` · ${WINDOW_LABEL[b.window] ?? b.window}` : "";
   return `${routineLabel} · ${day}, ${dateStr}${win}`;
+}
+
+/**
+ * Compact variant for narrow screens: "Wed, Jun 10 · Evening". The routine is
+ * already shown as a code chip next to the title, so repeating "Markets
+ * Briefing · " only pushes the date off-screen.
+ */
+export function formatBriefingTitleShort(b: {
+  date: string;
+  window?: string | null;
+}): string {
+  const d = new Date(`${b.date}T12:00:00Z`);
+  const dateStr = d.toLocaleDateString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+  const win = b.window ? ` · ${WINDOW_LABEL[b.window] ?? b.window}` : "";
+  return `${dateStr}${win}`;
 }
 
 /**

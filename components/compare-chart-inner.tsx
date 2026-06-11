@@ -10,7 +10,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { formatChartDate } from "@/lib/utils";
+import { formatChartDate, formatChartTick } from "@/lib/utils";
 
 type ChartPoint = { date: string; close: number };
 
@@ -161,6 +161,7 @@ export default function CompareChartInner({
             tickLine={{ stroke: "#262626" }}
             axisLine={{ stroke: "#262626" }}
             minTickGap={56}
+            tickFormatter={(v) => (typeof v === "string" ? formatChartTick(v, intraday) : "")}
           />
           <YAxis
             domain={[minV - pad, maxV + pad]}
