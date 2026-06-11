@@ -174,10 +174,13 @@ function DeltaStrip({ series }: { series: AssetDaily[] }) {
 
 export default function AssetDailyView({
   series,
+  fundamentals,
   technicals,
   callRecord,
 }: {
   series: AssetDaily[];
+  /** Optional live fundamentals/earnings panel, rendered before Technicals. */
+  fundamentals?: React.ReactNode;
   /** Optional live technical-analysis panel, rendered between Outlook and Key levels. */
   technicals?: React.ReactNode;
   /** Optional scored call-record panel, rendered after the hero. */
@@ -391,6 +394,9 @@ export default function AssetDailyView({
           </div>
         </div>
       </Panel>
+
+      {/* ===================== FUNDAMENTALS (live, evidence layer) ============= */}
+      {fundamentals}
 
       {/* ===================== TECHNICALS (live, computed) ===================== */}
       {technicals}
