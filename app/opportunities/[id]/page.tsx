@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllOpportunities, getOpportunity, type Opportunity } from "@/lib/data";
-import { checkOpenOpportunities } from "@/lib/opportunity-check";
+import { getDailyCloses } from "@/lib/markets";
+import { checkOpenOpportunities, yahooSymbolFor } from "@/lib/opportunity-check";
+import LevelsChart from "@/components/levels-chart";
 import LiveCheckBadges from "@/components/live-check-badges";
 import Panel from "@/components/panel";
 
@@ -46,6 +48,9 @@ export default async function OpportunityDetailPage({
   // Live plan-vs-price check for open ideas (empty map for closed ones).
   const live = (await checkOpenOpportunities([o]))[o.id];
 
+  // Price history for the plan chart — only fetched when levels exist to draw.
+  const series = o.levels ? await getDailyCloses(yahooSymbolFor(o.ticker), 3) : [];
+
   return (
     <article className="mx-auto max-w-4xl space-y-3">
       <Link
@@ -86,6 +91,18 @@ export default async function OpportunityDetailPage({
           </div>
         )}
       </header>
+
+      {/* The plan, drawn: price vs entry zone / stop / targets */}
+      {o.levels && series.length > 0 && (
+        <Panel
+          code="PLAN"
+          title="Price vs Plan"
+          learn="Three months of daily closes with the published plan drawn on top: the shaded amber band is the entry zone, the red dashed line is the stop, the green dashed lines are the targets. One glance answers whether price is drifting toward your entry or your stop."
+          meta={<span>3MO · DAILY</span>}
+        >
+          <LevelsChart series={series} levels={o.levels} />
+        </Panel>
+      )}
 
       {/* Trade card */}
       <Panel code="TRADE" title="Trade Specs">

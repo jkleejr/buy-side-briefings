@@ -2,15 +2,20 @@ import {
   getAllBriefings,
   getAllMarketsVerdicts,
   getAllOpportunities,
+  getCalendarEvents,
   getLatestMarketsVerdict,
   getLatestCryptoVerdict,
   getOpportunityStats,
 } from "@/lib/data";
+import { classifyOpenOpportunities } from "@/lib/opportunity-check";
+import { computeOpenRisk } from "@/lib/risk";
 import { buildPaperPortfolio } from "@/lib/paper-portfolio";
 import { getLatestAssetDaily } from "@/lib/asset-daily";
 import { getSpxDailyCloses } from "@/lib/markets";
 import { evaluateRegime } from "@/lib/regime";
 import { aggregateStats, monthsBackFor, scoreVerdict } from "@/lib/verdict-scoring";
+import PlaybookPanel from "@/components/playbook-panel";
+import RiskPanel from "@/components/risk-panel";
 import TrackGlanceStrip from "@/components/track-glance-strip";
 import VerdictCard from "@/components/verdict-card";
 import AssetCallsPanel from "@/components/asset-calls-panel";
@@ -86,7 +91,15 @@ export default async function Home() {
           total: r.rows.length,
         }))
       : null;
-  const portfolio = buildPaperPortfolio(getAllOpportunities(), spxSeries);
+  // Morning playbook: live plan-state per open idea + catalysts firing today,
+  // plus plan-level book risk (max bleed, exposure, theme concentration).
+  const allOpps = getAllOpportunities();
+  const planChecks = await classifyOpenOpportunities(allOpps);
+  const today = new Date().toISOString().slice(0, 10);
+  const todayEvents = getCalendarEvents().filter((e) => e.date === today);
+  const openRisk = computeOpenRisk(allOpps);
+
+  const portfolio = buildPaperPortfolio(allOpps, spxSeries);
   const equity = portfolio
     ? {
         values: portfolio.points.slice(-60).map((p) => p.strategy),
@@ -121,6 +134,18 @@ export default async function Home() {
         {/* ========================= THE CALL ========================= */}
         {/* Verdict and today's asset buy/hold/sell calls, side by side. */}
         <SectionLabel title="The Call" note="latest verdict & today's decisions" />
+
+        {/* What demands action right now + what the book risks if it all goes wrong. */}
+        {planChecks.length > 0 && (
+          <>
+            <div className="lg:col-span-8">
+              <PlaybookPanel checks={planChecks} todayEvents={todayEvents} />
+            </div>
+            <div className="lg:col-span-4">
+              <RiskPanel risk={openRisk} />
+            </div>
+          </>
+        )}
 
         {verdict ? (
           <div className="lg:col-span-8">
