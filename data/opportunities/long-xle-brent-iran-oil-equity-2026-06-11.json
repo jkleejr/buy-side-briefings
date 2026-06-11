@@ -1,0 +1,68 @@
+{
+  "id": "long-xle-brent-iran-oil-equity-2026-06-11",
+  "title": "Long XLE — Brent $97 Proximity Oil Equity Tail Hedge",
+  "ticker": "XLE",
+  "asset_class": "etf",
+  "category": "macro",
+  "direction": "long",
+  "conviction": "low",
+  "time_horizon": "1-2 weeks",
+  "current_price": 58.25,
+  "entry": "Long $57–59 at market (XLE at $58.25 June 11 open). Size ≤2% gross — this is a defined regime hedge, not a primary directional position. Do NOT chase if XLE gaps above $61 on a Brent spike through $97 without adding fresh catalytic evidence; the asymmetric value is in owning the option before the trigger, not after.",
+  "stop_loss": "$53.50 daily close (~8% below entry at $58.25), OR confirmed Iran ceasefire with official Hormuz mine clearance announced AND Brent settles below $90 for two consecutive sessions. A single day of Brent below $90 absent a signed ceasefire document does not trigger the stop.",
+  "targets": [
+    "$62 — Brent tests $97 intraday without a formal breach; oil service and E&P equities (XOM, CVX, EOG) reprice on compression of the Brent buffer to zero; +6.4% from $58.25 entry",
+    "$66 — Brent breaches $97 on a Hormuz tanker incident, mine detonation, or IDF strike on Iranian oil infrastructure; oil supply-shock premium re-rates the energy sector; +13.3%",
+    "$72 — Hormuz disruption becomes a sustained supply-chain event; Brent settles above $100 for three or more consecutive sessions; energy sector leads in a stagflationary tape with broad risk-off elsewhere; +23.6%"
+  ],
+  "risk_reward": "1:2.9 to third target",
+  "position_size_pct": 2,
+  "catalyst": "US Central Command confirmed completion of fresh Iran strikes overnight June 11, pushing Brent to $95.45 (+2.52%) and WTI to $92.68 (+2.94%). At $95.45, Brent is $1.55 from the morning briefing's primary BEARISH regime trigger at $97. Iranian sea mines physically remain in the Strait of Hormuz — no mine clearance has been announced. The June 11 morning briefing identifies XLE $88–92 as a direct trade setup (Long XLE / WTI Crude Hedge) with the explicit framing: 'XLE provides asymmetric oil upside as a defined regime hedge.' One tanker incident, mine detonation, or IDF strike on Iranian oil infrastructure closes the $1.55 buffer in a single session without warning.",
+  "thesis": "The Brent-to-$97-trigger trade is not about being right on geopolitics — it is about buying the option when the buffer is $1.55 and the event tree has multiple paths to expiration. XLE at $58.25 holds XOM (22% weight), CVX (15%), EOG (8%), COP (7%), and PSX (7%) — the integrated majors and largest E&P names whose revenue and earnings directly benefit from sustained $90+ oil pricing. Unlike USO (front-month WTI futures, roll-cost drag), XLE provides equity operational leverage: at $95 WTI, XOM and CVX generate materially higher free cash flow per share than at $75 WTI, with no futures roll cost and dividend income while the position is held.\n\nThe Iran-Hormuz risk structure is one-directional in the near term. 'Completed strikes' is tactical-pause language, not de-escalation. The US has confirmed multiple rounds of strikes in the past week; Iran has responded with missile attacks on US assets in Jordan and the Persian Gulf; and Iranian sea mines — physical objects requiring mine-clearance vessels and days of coordinated naval operations — remain in the strait. The $1.55 Brent buffer implies that the oil market has already partially priced the strike completion as a relief event. Any reversal of that relief framing (a single tanker incident, a mine-triggered explosion, or an IDF strike on Iranian oil processing facilities) closes the buffer immediately.\n\nThe macro overlay supports the hold. The 30Y at ~5.00% and VIX at 20.75 mean the market is not yet in a full risk-off deleveraging regime. XLE's energy sector offers a rare combination in this tape: positive correlation to the primary geopolitical risk driver (Brent) while providing dividend income and a hedge against the STEP ASIDE → BEARISH transition that a Brent breach would cause. In a portfolio that is net long equities via NVDA, ORCL, and GOOGL, XLE is a non-correlated hedge that performs best precisely when the rest of the book is under pressure.\n\nThe counter-party is the oil bear who argues: (1) Brent at $95.45 already prices the Hormuz risk; a ceasefire could be announced by Thursday and Brent reverts to $85; (2) XLE has returned 43.9% over the past year and is already up significantly on the Iran war premium — late entries are picking up nickels in front of geopolitical steamrollers; (3) the PPI at 8:30 AM ET could print cool, relieving inflation fears and enabling a DXY drop that paradoxically supports de-escalation framing. All three are valid — which is why the position is sized at 2% and the stop is 8% below entry.",
+  "bull_case": "Brent breaches $97 on a Hormuz incident within the week. XLE gaps to $62–65 in a single session as XOM and CVX re-rate to new 12-month earnings highs on a sustained $95+ WTI environment. Warsh June 17 FOMC must navigate stagflation: hot PPI + oil-driven inflation makes an explicit cut impossible, and the energy sector becomes the only sector in the tape generating earnings acceleration. Target 2 ($66) reachable within 5 sessions; Target 3 ($72) on a sustained Hormuz disruption lasting 2+ weeks.",
+  "bear_case": "The Iran 'completed strikes' framing holds for 5–7 days; Trump and Iranian foreign ministry begin backchannel ceasefire talks; Brent retreats from $95.45 toward $88–90 on the diplomatic signal. PPI prints cool, DXY falls below 99, and the risk-off bid to oil evaporates. XLE retraces from $58.25 toward $54–55; stop triggered at $53.50.",
+  "invalidation": "$53.50 daily close, OR Iran ceasefire signed with an official Hormuz mine clearance timeline announced (geopolitical support removed — exit within one session), OR Brent settles below $90 for two consecutive sessions on genuine diplomatic de-escalation",
+  "sources": [
+    {
+      "label": "Brent +2.52% to $95.45, WTI +2.94% to $92.68 — CNBC June 11 oil article",
+      "url": "https://www.cnbc.com/amp/2026/06/11/brent-wti-oil-prices-us-launches-fresh-strikes-on-iran-.html"
+    },
+    {
+      "label": "Investors brace for 'long grind' as Iran war dims ceasefire hopes — CNBC",
+      "url": "https://www.cnbc.com/amp/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html"
+    },
+    {
+      "label": "XLE Energy Select Sector SPDR ETF price — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/XLE/"
+    },
+    {
+      "label": "US CENTCOM Iran strikes completion — Yahoo Finance markets live",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-as-us-launches-new-strikes-against-iran-222511976.html"
+    }
+  ],
+  "created_at": "2026-06-11",
+  "expires_at": "2026-06-25",
+  "status": "active",
+  "tags": [
+    "oil",
+    "energy",
+    "XLE",
+    "Iran",
+    "Brent",
+    "Hormuz",
+    "tail-hedge",
+    "macro",
+    "low-conviction"
+  ],
+  "outcome": null,
+  "levels": {
+    "entry_low": 57.0,
+    "entry_high": 59.0,
+    "stop": 53.5,
+    "targets": [
+      62.0,
+      66.0,
+      72.0
+    ]
+  }
+}

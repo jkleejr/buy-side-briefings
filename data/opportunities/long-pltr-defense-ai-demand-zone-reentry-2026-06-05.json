@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-05",
   "expires_at": "2026-08-01",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "defense",
     "AI",
@@ -52,7 +52,13 @@
     "demand-zone",
     "reentry"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-10",
+    "final_price": 130.21,
+    "return_pct": -8.0,
+    "outcome_label": "Stop triggered — PLTR closed $130.21 on June 10, below the $131 daily-close stop",
+    "note": "PLTR broke through the $131 demand zone support on June 10, closing at $130.21. The SpaceX SPCX federal data infrastructure catalyst did not materialize ahead of the IPO pricing on June 11. The June 10 close was driven by a triple headwind: ORCL's $70B capex announcement spooking high-multiple tech names, VIX spiking to 22.22 at close on Iran escalation, and broad de-grossing of government-AI names. Entry midpoint was $140.50; loss of 8.0% on a 4% position size."
+  },
   "levels": {
     "entry_low": 138,
     "entry_high": 143,

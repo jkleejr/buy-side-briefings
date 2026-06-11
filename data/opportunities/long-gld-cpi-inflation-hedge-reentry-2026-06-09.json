@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-09",
   "expires_at": "2026-06-23",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "gold",
     "GLD",
@@ -53,7 +53,13 @@
     "low-conviction",
     "binary-event"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-10",
+    "final_price": 374.58,
+    "return_pct": -5.9,
+    "outcome_label": "Stop triggered — GLD closed $374.58 on June 10, below the $384 daily-close stop",
+    "note": "Gold suffered a −4.44% single-session selloff on June 10, the worst day in the briefing cycle, driven by institutional forced deleveraging. GLD opened at $380.75 — already below the $384 stop — reached an intraday high of $384.21 (briefly touching the stop level) before collapsing to close at $374.58. Although Iran escalation continues with Brent at $95.45 on June 11, the $384 daily-close stop was definitively breached. Entry midpoint was $399.50; loss of 5.9% on a 2% position size."
+  },
   "levels": {
     "entry_low": 395,
     "entry_high": 404,

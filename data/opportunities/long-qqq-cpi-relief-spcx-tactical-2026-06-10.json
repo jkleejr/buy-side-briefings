@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-10",
   "expires_at": "2026-06-13",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "QQQ",
     "NQ",
@@ -55,7 +55,13 @@
     "regime",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-10",
+    "final_price": 706.67,
+    "return_pct": 0.0,
+    "outcome_label": "Entry condition not met — position never initiated",
+    "note": "The conditional entry required SPX to close above 7,460 on June 10. SPX closed at 7,266.99 — 193 points below the regime floor — as ORCL's post-market $70B capex announcement drove forced deleveraging and VIX spiked to 22.22 at close. Although ORCL's $638B RPO was a beat versus $553B consensus, the fiscal 2027 capital plan spooked markets. Position was never entered; no capital at risk. Reference price $706.67 is the QQQ June 10 open level cited at creation."
+  },
   "levels": {
     "targets": [
       725,

@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-09",
   "expires_at": "2026-06-23",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "AAPL",
     "short",
@@ -53,7 +53,13 @@
     "low-conviction",
     "Apple-Intelligence"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-10",
+    "final_price": 290.0,
+    "return_pct": 3.8,
+    "outcome_label": "Target 1 hit at $290 — WWDC sell-the-news distribution confirmed",
+    "note": "AAPL traded to a June 10 intraday low of $287.38, clearing Target 1 at $290 on the fourth session after the WWDC keynote. The sell-the-news distribution thesis played out cleanly: no Apple Intelligence hardware follow-on announcement, hot macro backdrop (CPI on June 10, Iran escalation, ORCL capex shock) compressed consumer-tech multiples. Pre-market June 11 shows AAPL at ~$283 — thesis continues to play out — but Target 1 is the disciplined first close. Entry midpoint $301.50; gain of 3.8% on a 2% position size."
+  },
   "levels": {
     "entry_low": 298,
     "entry_high": 305,
