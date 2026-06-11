@@ -1,0 +1,148 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-11",
+  "generated_at": "2026-06-11T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "bulls",
+  "day_summary": "Bitcoin broke out +3.34% to $63,565 — its best single-session gain in over a week — as the Iran/US deal-optimism wave that lifted equities snapped BTC above its 50-day moving average and to within $90 of the 200-DMA (~$63,654). The day started ugly: Iran formally closed the Strait of Hormuz and BTC dipped to $61,099. Then US/Iran deal signals reversed everything. Bulls captured the full intraday reversal. The $65,000 FOMC re-risk trigger is now just 2.3% away.",
+  "long_pnl": "+3.34% — longs finally got paid; the best session since late May and a clean 50-DMA reclaim",
+  "short_pnl": "−3.34% — shorts who pressed the Hormuz open dip got squeezed hard on the deal-signal reversal",
+  "decision": {
+    "action": "hold",
+    "conviction": "high",
+    "horizon": "days · FOMC-gated",
+    "rationale": "Upgrading conviction from medium to high; keeping HOLD. Today's +3.34% reclaimed the 50-DMA and pushed BTC to $63,565 — the 200-DMA is at approximately $63,654, meaning BTC is testing a critical technical level. The $65,000 re-risk trigger set in the prior dossier is now just 2.3% away. The setup is increasingly bullish: positioning is clean (perp funding near zero), sentiment is depressed (Fear & Greed 14), and price is recovering from oversold RSI territory. FOMC on June 17 is still the binary event — a hold/dovish tilt with BTC this close to $65K would generate a sharp short-squeeze. HOLD at high conviction; the BUY trigger is a confirmed daily close above $65,000. Iran/Hormuz escalation is the one tail risk: sustained WTI above $90 keeps CPI elevated, keeps the Fed frozen, and is the mechanism by which the bearish FOMC scenario plays out."
+  },
+  "snapshot": {
+    "price": 63565,
+    "change_pct": 3.34,
+    "change_abs": 2055,
+    "prev_close": 61510,
+    "day_low": 61099,
+    "day_high": 63935,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "~$28B (24h est.)",
+    "market_cap": "~$1.26T",
+    "extra": [
+      { "label": "From ATH (~$115K)", "value": "−45%", "tone": "down" },
+      { "label": "BTC dominance", "value": "~57.5%", "tone": "neutral" },
+      { "label": "Fear & Greed", "value": "14 · Extreme Fear", "tone": "down" },
+      { "label": "vs 50-DMA", "value": "+1.9% (above)", "tone": "up" }
+    ]
+  },
+  "positioning": {
+    "iv": 65,
+    "iv_note": "DVOL holding at elevated levels pre-FOMC; today's move was realized-vol driven, not IV expansion",
+    "put_call": 1.28,
+    "short_interest": "perp funding near zero to slightly negative — leverage remains clean post-cascade",
+    "max_pain": "~$62,000 (June weekly)",
+    "notable_flow": "Spot ETF outflows have continued (11th+ consecutive session) though the daily run-rate may be slowing as price recovers. Accumulation noted in July $68K–$72K calls, suggesting patient longs positioning for a post-FOMC recovery. The crowd is watching the 200-DMA test closely — a confirmed daily close above ~$63,654 would be the first technical 'all clear' since early June and likely to accelerate inflows."
+  },
+  "what_traders_are_doing": "The narrative is shifting. For two weeks BTC was 'don't fight the Fed, don't fight the dollar.' Today it traded as a pure risk-on asset in the same risk-on session that lifted equities 1.75–2.54% — and moved proportionally more. The key test: can BTC close above the 200-DMA to confirm the June floor is behind us? The crowd is split — some desks are sizing into positions ahead of FOMC given the clean positioning and oversold RSI; others are waiting for June 17 before committing. The consensus: stop fighting the tape below $63K; the trend is changing.",
+  "news": [
+    {
+      "label": "Iran formally closed the Strait of Hormuz to all oil tankers on June 11 — BTC dipped to $61,099 before reversing sharply as US/Iran deal signals emerged; WTI settled ~$93.44",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026",
+      "source": "TheStreet",
+      "sentiment": "negative"
+    },
+    {
+      "label": "US/Iran deal-is-close signals triggered a broad risk-on reversal — Nasdaq +2.54%, S&P 500 +1.75%, BTC +3.34%; BTC outperformed the Nasdaq, its first session of meaningful positive beta divergence in weeks",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026",
+      "source": "TheStreet",
+      "sentiment": "positive"
+    },
+    {
+      "label": "BTC closed above its 50-day moving average (~$61,900) for the first time since early June — a technically significant reclaim that shifted short-term momentum from bearish to neutral/bullish",
+      "url": "https://www.latestly.com/business/bitcoin-price-today-june-11-2026-btc-price-stable-around-usd-61996-as-traders-await-federal-reserve-policy-direction-7468123.html",
+      "source": "LatestLY",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Spot Bitcoin ETF outflows continued for an 11th+ consecutive session — cumulative outflows for the first two weeks of June now exceed $5.4B; pace may be slowing as price recovers toward $63K+",
+      "url": "https://bitcoinfoundation.org/news/crypto-etfs-news/etf-outflows-june-2/",
+      "source": "Bitcoin Foundation",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Crypto Fear & Greed Index at 14 (Extreme Fear) — historically, sub-15 readings have preceded 30-day recoveries in a majority of instances; paired with clean perp funding and oversold RSI, the contrarian setup is strengthening",
+      "url": "https://milkroad.com/fear-greed/",
+      "source": "Milk Road",
+      "sentiment": "positive"
+    }
+  ],
+  "outlook": {
+    "short_term": "Increasingly constructive. BTC reclaimed its 50-DMA and is testing the 200-DMA at ~$63,654. A confirmed daily close above the 200-DMA opens the path toward the $65,000 FOMC re-risk trigger. Binary remains June 17 FOMC: dovish hold = short-squeeze toward $67–70K; hawkish hike signal = dollar spike, crack $59,227, $52–55K opens. With 6 days to go and positioning the cleanest it has been in weeks, the risk/reward of holding is the best since late May.",
+    "long_term": "Constructive. The supply-side dynamics (post-halving emission), institutional-adoption arc, and scarcity thesis are unchanged. The macro headwind (Iran/oil/Fed) is the temporary overlay. At −45% from the all-time high with Fear & Greed at 14 and a clean positioning slate, the 12-month risk/reward is as favorable as any point in 2026."
+  },
+  "bull_case": [
+    "50-DMA reclaimed on the first meaningful risk-on session in weeks — technical momentum has shifted from bearish to neutral/bullish for the first time since early June.",
+    "200-DMA at ~$63,654 is just $90 above today's close; a close above it is the first 'all-clear' technical signal and would flip it to support.",
+    "Fear & Greed at 14, perp funding near zero, RSI recovering from oversold — textbook contrarian-constructive setup with few sellers left.",
+    "The $65,000 FOMC re-risk trigger is just 2.3% away — one non-hawkish Fed statement from potentially triggering large institutional re-entry."
+  ],
+  "bear_case": [
+    "Iran's Hormuz closure is a structural oil-supply shock — WTI at $93 keeps CPI elevated and the Fed constrained regardless of diplomatic deal signals.",
+    "Spot ETF outflows continued for an 11th+ consecutive session; institutional money has not returned and a floor without institutional demand remains fragile.",
+    "The 200-DMA at ~$63,654 is a firm ceiling; BTC has tested and failed this level multiple times in early June.",
+    "A rate-hike signal from Warsh on June 17 spikes the dollar, cracks $59,227, and opens the $52–55K downside target immediately."
+  ],
+  "key_levels": [
+    {
+      "label": "FOMC re-risk trigger — confirmed BUY signal on a post-FOMC close above this level",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest resistance — 200-DMA zone + today's intraday high; must clear with volume to confirm bull-trend resumption",
+      "level": "$63,654–$63,935",
+      "kind": "resistance"
+    },
+    {
+      "label": "Pre-selloff support — prior swing highs from early June; becomes support once reclaimed",
+      "level": "$66,750–$67,500",
+      "kind": "resistance"
+    },
+    {
+      "label": "50-DMA reclaim — today's close confirmed breakout; now the first line of support",
+      "level": "$61,900",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest support — today's Hormuz-dip low + three-day volume shelf ($60,731–$61,510 range across June 9–11); 50-DMA also now embedded here",
+      "level": "$61,099–$61,510",
+      "kind": "support"
+    },
+    {
+      "label": "Capitulation floor — structural support tested five times; break here opens $52–55K",
+      "level": "$59,227",
+      "kind": "support"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-06-17",
+      "label": "FOMC rate decision — the binary event; hold/dovish opens squeeze to $67–70K; hike signal reopens $52–55K",
+      "importance": "high"
+    },
+    {
+      "date": "2026-06-27",
+      "label": "Monthly options expiry — large open-interest roll; max-pain dynamic around $62,000",
+      "importance": "medium"
+    },
+    {
+      "date": "Daily",
+      "label": "Spot BTC ETF daily flow — watch for the 11-session outflow streak to end; first net-inflow day is a bullish signal",
+      "importance": "medium"
+    },
+    {
+      "date": "Ongoing",
+      "label": "Iran/Hormuz ceasefire vs. escalation — direct driver of WTI price, CPI path, and Fed posture",
+      "importance": "high"
+    }
+  ],
+  "analysis": "## The 50-DMA reclaim\n\nFor two weeks BTC has been trapped below its 50-day moving average — every bounce failing at the level, every session another reminder of the downtrend. Today that changed. BTC rallied +3.34% to $63,565, reclaiming the 50-DMA (~$61,900) cleanly and pushing within $90 of the 200-DMA (~$63,654). That is the first technically meaningful bullish development since early June.\n\nThe catalyst was shared with equities: [Iran's morning announcement of a formal Strait of Hormuz closure](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026) sent BTC down to $61,099 at the open. Then Trump administration and Iranian officials signaled a deal was close — and the full risk-on reversal followed. Nasdaq +2.54%, BTC +3.34%, WTI still elevated at $93.44 with geopolitical premium intact.\n\n## Technical analysis\n\nThe trend read: **shifting from corrective to potentially resuming the bull trend** — confirmation pending a close above the 200-DMA.\n\n**Volume:** Crypto.com exchange volume for June 11 was ~$255M, slightly below the ~$317M of June 10 and ~$312M of June 9. The 50-DMA reclaim came on declining volume, which is a mild concern — but in a geopolitical-news-driven reversal session, volume naturally concentrates at the extremes (morning Hormuz dip, afternoon recovery), and total market 24h volume is estimated ~$28B.\n\n**Momentum:** RSI was at ~35 (oversold) entering today. With the +3.34% move, it is recovering toward neutral. MACD is still negative but narrowing. Recovery from oversold on a clean positioning slate (perp funding near zero, [Fear & Greed at 14](https://milkroad.com/fear-greed/)) is the classic setup that precedes meaningful bounces.\n\n**★ Strongest support: $61,099–$61,510.** This range held as the intraday low three times this week (June 9, 10, 11 — $61,099 being today's Hormuz-panic low). It represents a significant volume shelf with confirmed buyers. The 50-DMA is now embedded in this zone as the first technical backstop. A daily close below $61,099 would signal the bounce has failed.\n\n**★ Strongest resistance: $63,654–$63,935.** The 200-DMA (~$63,654) sits at the lower end; today's intraday high was $63,935. This band has repelled every rally attempt since early June. A confirmed daily close *above* $63,935 — ideally on expanding volume — would be the first genuine bull signal: BTC above both its 50- and 200-DMA for the first time in weeks, with the 200-DMA potentially flipping to support.\n\n**The $65,000 gate.** At $63,565, BTC is 2.3% away from the FOMC re-risk trigger. If FOMC on June 17 delivers anything short of an outright rate-hike signal, the pre-positioning squeeze toward $65K and above would be rapid and sharp — given Fear & Greed at 14 and [11 straight sessions of ETF outflows](https://bitcoinfoundation.org/news/crypto-etfs-news/etf-outflows-june-2/), there are few sellers between here and $67K once $65K clears. That squeeze is the trade to position for.\n\n## The risk that won't resolve overnight\n\nIran's Hormuz closure is not a one-day headline. WTI at $93.44 sustains headline CPI above 4%, which keeps the Warsh Fed frozen. Even if deal signals are real, the structural oil-supply disruption takes weeks to unwind. The bull case requires FOMC to hold without a hike signal — probable on this data, but not certain. The stop at $59,227 is not optional."
+}
