@@ -1,55 +1,47 @@
 {
   "events": [
     {
-      "date": "2026-06-12",
-      "label": "SPCX first trading day (NASDAQ: SPCX) — 4% float, $135 IPO price",
-      "kind": "IPO",
-      "tickers": ["SPCX", "IWM", "TSLA"],
-      "note": "Only 4% public float + MSCI early-inclusion buy flow starting Jun 13; multiple trading halts expected; no first-day edge without allocation; wait for Day 3-5 float normalization"
-    },
-    {
-      "date": "2026-06-12",
-      "label": "UMich June preliminary consumer sentiment (~8:55 AM ET)",
-      "kind": "MACRO",
-      "time_et": "8:55 AM",
-      "tickers": ["QQQ", "XLY"],
-      "note": "Expected weak (~62-65) on elevated gas prices + Iran war; a materially weak read adds pressure to SPX pre-FOMC; a surprise rebound (>70) would be constructive"
-    },
-    {
       "date": "2026-06-13",
-      "label": "Iran deal signing ceremony in Europe — VP Vance representing US",
-      "kind": "GEO",
-      "tickers": ["XLE", "QQQ", "IWM", "BTC"],
-      "note": "Weekend binary: signed (Hormuz reopening language) → Monday gap above 7,460; verdict BUY. Collapsed → Brent to $95+, BEARISH activates Monday open. MSCI SPCX early inclusion buy flow also begins"
-    },
-    {
-      "date": "2026-06-13",
-      "label": "SPCX MSCI early-inclusion passive buy flow begins",
+      "label": "SPCX MSCI early-inclusion passive buy flow begins (Day 2)",
       "kind": "SIGNAL",
       "tickers": ["SPCX", "SPY", "QQQ"],
-      "note": "Estimated $13-18B in index-fund rebalancing over 3-4 weeks; structural new SPX/QQQ bid; magnitude depends on SPCX's initial index weight"
+      "note": "SPCX closed Day 1 at $161.11 (+19.3%); MSCI inclusion flow begins June 13; estimated $13-18B in index-fund rebalancing over 3-4 weeks; Day 3-5 entry window (June 16-18) on pullback to $145-162; stop $130"
+    },
+    {
+      "date": "2026-06-14",
+      "label": "Iran-US peace MOU signing in Geneva — VP Vance + Iran Parliament Speaker Qalibaf",
+      "kind": "GEO",
+      "tickers": ["XLE", "QQQ", "IWM", "BTC", "NVDA"],
+      "note": "Expected Sunday in Geneva (Saturday also possible); agreement includes Hormuz reopening + 60-day ceasefire extension + nuclear framework + 60-day US sanctions relief on Iranian oil; if signed: HOLD → BUY at Monday open; Brent to $82-86; if collapsed: Brent $92-95, BEARISH activates Monday open"
     },
     {
       "date": "2026-06-15",
       "label": "ADBE CFO Dan Durn departure + transition",
       "kind": "OTHER",
       "tickers": ["ADBE", "MSFT", "GOOGL"],
-      "note": "CFO exits June 15; management uncertainty overhang for 3-6 months; ADBE Q2 beat confirmed AI additive (positive read-through), but wait for permanent successor announcement before re-entry"
+      "note": "CFO exits June 15; dual C-suite vacancy with ongoing CEO search; Q2 beat-and-raise confirmed AI additive thesis; watch for volume-exhaustion at $165-172 for entry; management uncertainty overhang 3-6 months"
     },
     {
       "date": "2026-06-15",
-      "label": "Post-Iran deal regime assessment (Monday open)",
+      "label": "Post-Iran deal Monday open — regime binary",
       "kind": "SIGNAL",
-      "tickers": ["QQQ", "SPY", "XLE", "IWM"],
-      "note": "If Iran deal signed: SPX > 7,460 open, BUY verdict. If deal collapsed: Brent to $95+, BEARISH activates. Key binary for the entire next phase of positioning"
+      "tickers": ["QQQ", "SPY", "XLE", "NVDA", "SPCX"],
+      "note": "If signed: SPX gaps above 7,460, BUY verdict, NVDA conditional add activates, SPCX Day 3 entry window $145-162. If collapsed: Brent to $92-95, BEARISH activates immediately. Watch Sunday night futures for first signal."
+    },
+    {
+      "date": "2026-06-16",
+      "label": "FOMC Day 1 begins; SPCX Day 3-5 float normalization entry window",
+      "kind": "FOMC",
+      "tickers": ["TBT", "QQQ", "XLF", "SPCX"],
+      "note": "No FOMC announcement June 16; pre-decision quiet; SPCX Day 3 float normalization entry window opens ($145-162 pullback); markets likely narrow range pre-June 17 decision"
     },
     {
       "date": "2026-06-17",
-      "label": "FOMC decision + Warsh press conference (first as Chair)",
+      "label": "FOMC decision + Warsh press conference — dot plot may be eliminated",
       "kind": "FOMC",
       "time_et": "2:00 PM",
-      "tickers": ["TBT", "QQQ", "XLF", "IWM"],
-      "note": "98% hold probability; CPI 4.2% + PPI 6.5% is the backdrop; dot plot and statement language are the movers — neutral statement → 30Y retreats to 4.85%; hawkish dot plot (July hike acknowledgment) → 30Y to 5.10-5.20%; SPX pullback 1.5-2% if hawkish"
+      "tickers": ["TBT", "TLT", "QQQ", "XLF", "IWM"],
+      "note": "98.2% hold (3.50-3.75%); Warsh plans to eliminate the dot plot — removing forward guidance since 2012; maximum post-meeting volatility; three paths: (1) dot plot eliminated + neutral → relief rally, SPX 7,500+; (2) eliminated + hawkish → 30Y to 5.15-5.25%, SPX 7,280-7,320; (3) partial removal + neutral → modest relief. TBT is the hedge through the presser."
     },
     {
       "date": "2026-06-19",

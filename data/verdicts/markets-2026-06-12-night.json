@@ -1,0 +1,159 @@
+{
+  "routine": "markets",
+  "date": "2026-06-12",
+  "window": "night",
+  "generated_at": "2026-06-12T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — SPCX $161 Validates Float Thesis; Iran Geneva Signing Sunday; Warsh Dot-Plot Kill Rewrites FOMC Risk",
+    "conviction": "medium",
+    "rationale_short": "S&P 500 closed at 7,431.46 (+0.5%) — 28.5 points below the 7,460 regime floor for the second consecutive session. SPCX debuted at $150, spiked to $176.52, and closed at $161.11 (+19.3%), exceeding the morning brief's base-case range and validating the Day 3–5 entry thesis at a revised $145–162 zone. The Iran deal MOU is expected to be signed Sunday in Geneva by VP Vance and Iran's Parliament Speaker Qalibaf — with Hormuz reopening language and 60-day sanctions relief included. If confirmed, HOLD upgrades to BUY at Monday's open. A new structural risk emerged: Warsh plans to eliminate the dot plot at the June 17 FOMC — removing forward guidance since 2012 and amplifying post-meeting market volatility regardless of the rate decision. Morning HOLD call was correct (base case scenario played out). Three of five regime indicators remain in breach: VIX ~18.9 (above 18), 30Y ~5.02% (above 5.00%), SPX below 7,460; Brent and DXY are both cleared. HOLD at medium conviction — BUY conditions are within reach but the Warsh dot-plot elimination introduces a structural unknown that prevents a conviction upgrade.",
+    "supporting_data": [
+      {
+        "label": "SPCX closed $161.11 (+19.34%) on Day 1; opened $150 (11% above $135 IPO), intraday high $176.52, AH $165.51; multiple trading halts as expected; Day 3–5 float normalization entry zone revised to $145–162; MSCI early-inclusion passive flow begins June 13",
+        "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+      },
+      {
+        "label": "SPX 7,431.46 (+0.5%), Dow 51,202.26 (+0.7%, +353 pts), Nasdaq 25,888.84 (+0.31%), Russell 2000 2,943.99 (+0.79%) — broad-based gains; SPX still 28.5 pts below 7,460 regime floor; TSLA closed $400.77 (+5.0%) on Musk-proxy SPCX enthusiasm",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-12-2026"
+      },
+      {
+        "label": "Iran deal MOU expected to be signed Sunday in Geneva by VP Vance and Iran Parliament Speaker Qalibaf; agreement includes Strait of Hormuz reopening, 60-day ceasefire extension, nuclear framework talks, and US sanctions relief on Iranian oil for 60 days; four C-17 aircraft already departed for Europe",
+        "url": "https://www.huffpost.com/entry/us-iran-peace-memorandum_n_6a2be231e4b0942fb77764ba"
+      },
+      {
+        "label": "Warsh plans to eliminate the dot plot at June 17 FOMC — scrapping the 2012 forward-guidance tool; forces markets to price Fed policy without standard signals; sharply amplifies post-meeting volatility; the June 17 decision is a 98.2% hold, but the communication framework change is the new structural risk",
+        "url": "https://247wallst.com/investing/2026/06/03/kevin-warsh-is-about-to-make-a-major-change-to-the-fed-donald-trump-will-cheer-it-on/"
+      },
+      {
+        "label": "UMich preliminary June consumer sentiment 48.9 (vs 44.8 May record low, +9.2%; first increase since February); year-ahead inflation expectations 4.6% (from 4.8% May); long-run 3.4% (from 3.9%); improvement attributed to early-month gas price easing on Iran deal optimism",
+        "url": "https://qz.com/us-consumer-sentiment-june-2026-gas-prices-inflation-061226"
+      },
+      {
+        "label": "DXY 99.80 (cleared below 100 for second consecutive session from 100.04 morning open); Brent ~$86.50 (WTI ~$84.90); gold $4,210.55 (−0.05%); 10Y 4.53% (−2 bps vs June 11 close); 30Y ~5.02% (essentially flat — pipeline goods inflation not solved by Iran oil decline)",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7431.46,  "change_pct":  0.50, "as_of": "2026-06-12T20:00:00Z" },
+    "nasdaq": { "level": 25888.84, "change_pct":  0.31, "as_of": "2026-06-12T20:00:00Z" },
+    "vix":    { "level": 18.90,    "change_pct":  2.16, "as_of": "2026-06-12T20:00:00Z" },
+    "ust10y": { "level": 4.53,     "change_bps": -2,    "as_of": "2026-06-12T20:00:00Z" },
+    "dxy":    { "level": 99.80,    "change_pct": -0.06, "as_of": "2026-06-12T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.90,   "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 5.02,    "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.80,   "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7431.46, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 86.50,   "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "SPCX",
+      "note": "$161.11 close (+19.34% from $135 IPO); Day 1 opened $150, intraday high $176.52, multiple trading halts as predicted; AH $165.51; MSCI early-inclusion flow begins June 13; Day 3–5 entry zone revised to $145–162 pullback (from morning's $130–145); stop revised to $130; low-conviction but structural MSCI bid is real",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "$400.77 close (+5.0% estimated from ~$381-388 June 11 close); SPCX Musk-proxy enthusiasm drove TSLA through $400 for first time in weeks; SPCX AH strength ($165.51) provides continuation catalyst; watch-only until SPCX float normalizes Day 3–5; watch $395 as next support if SPCX pulls back",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$205.16 (+0.14%); holding above $195 stop for fifth consecutive session; Apple/Google PCC demand + KKR $10B+ infrastructure commitment intact; conditional add criteria (Iran signing + VIX <17) still not met; hold existing position through weekend; conditional add $205–215 on deal confirmation + VIX close below 17 Monday",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "$296.52 (+2.3% est. from ~$290 June 11 estimate); quietly advancing — at new recent high; WWDC AI distribution and Apple/Google PCC deal (Siri via Google Cloud + NVDA Blackwell) are the fundamental drivers; approaching prior $285–295 add zone from above; better entry $285–290 on any pullback post-FOMC",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "$361.23 (−1.8% est. from ~$367–372 June 11 estimate); negative drift despite broad market gains; $84.75B equity offering overhang continuing to weigh; Apple PCC deal intact; no active setup in HOLD regime pre-FOMC",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$387.71 (−3.1% est. from ~$400 June 11 estimate); underperforming the broad market; ADBE beat confirms AI additive to software — positive Azure AI read-through, but MSFT itself pulling back; better entry $380–390 on further post-FOMC weakness",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "$564.52 (−2.7% est. from ~$580–590 June 11 estimate); negative drift without specific catalyst; ad-tech multiples face 30Y headwind at 5.02%; FOMC clarity needed before adding; watch $555 support",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ORCL",
+      "note": "$182.77 (−0.7% from $184.10 June 11 close); still below the $185–195 re-entry zone; cloud revenue miss + capex cash flow concerns unresolved; RPO $638B demand intact; two-session close confirmation still needed above $185 before sizing; stop $168 daily close",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "ADBE",
+      "note": "~$170 est. (stabilizing from −6.25% open on CFO Dan Durn departure June 15); Q2 beat-and-raise fundamentals intact (AI additive confirmed); management uncertainty overhang persists; monitor volume behavior around CFO departure date June 15 — volume-exhaustion candle is the entry signal; target $165–172 entry zone",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$63,600 (marginally below the $63,668 morning peak); DXY below 100 + Iran deal risk-on intact; but FOMC June 17 no-cut probability 98.2% is the near-term cap on upside; still below $66K re-entry threshold; Warsh dot-plot elimination creates additional uncertainty for risk assets through June 17",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$514 est. (essentially flat from $513 June 11 close after +8% surge); BofA Top CPU Pick / $560 target intact; no fresh catalyst today; do not chase at current level — wait for $485–500 pullback; the +8% June 11 surge needs digestion before the next leg",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SPCX today / AH chase",
+      "reason": "SPCX closed at $161.11 and is trading at $165.51 in AH — pricing in MSCI inclusion flow that has not yet materialized. With only a 4% public float and the first day's trading setting a high of $176.52, the intraday range proves the stock can swing $25+ in either direction. Day-1 AH premium offers no informational edge on Day 3–5 normalization dynamics. EchoStar's DISH DBS payment risk also showed that the SpaceX correlation trade carries hidden landmines.",
+      "better_entry": "Day 3–5 (June 16–18) pullback to $145–162 after float normalization and MSCI passive flow becomes observable in trade data; stop revised to $130 (below IPO price with modest buffer)"
+    },
+    {
+      "ticker": "GOOGL / MSFT pre-FOMC",
+      "reason": "Both names drifted lower on a +0.5% SPX day — GOOGL at $361.23 (negative drift from ~$367–372 June 11) and MSFT at $387.71 (negative drift from ~$400 June 11). The $84.75B GOOGL equity offering overhang continues to suppress price action; MSFT is underperforming despite the ADBE-confirmed AI-additive thesis. The 30Y at 5.02% remains a valuation headwind for high-multiple software names, and Warsh's dot-plot elimination on June 17 could create a sharp post-meeting re-rating in either direction.",
+      "better_entry": "Post-FOMC June 17 on a neutral Warsh statement; or after Iran deal signed and 30Y retreats to 4.80–4.85%"
+    },
+    {
+      "ticker": "QQQ / SPX index before Iran deal confirmation + FOMC",
+      "reason": "The Friday close at 7,431.46 still embeds Iran deal optimism for an unconfirmed event. FOMC June 17 is now complicated by Warsh's plan to eliminate the dot plot — markets have never priced a post-dot-plot first press conference and will face acute uncertainty about what language replaces the standard guidance framework. Buying broad index exposure here means loading Iran deal risk + FOMC communication-regime-change risk simultaneously.",
+      "better_entry": "Iran deal formally signed Sunday with Hormuz language AND FOMC June 17 delivers a neutral (or interpretable) statement with no hawkish surprise, AND SPX closes above 7,460 on two consecutive sessions"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA at $205.16 holds the Apple/Google Private Cloud Compute demand thesis (Blackwell B200 chips for Siri via Google Cloud) and continues to benefit from the KKR-Nvidia-Vistra $10B+ infrastructure commitment announced June 11. The Iran deal oil collapse removed the geopolitical risk premium from semiconductor supply chains. A formal deal signing this weekend + VIX closing below 17 on Monday constitutes the full activation of the conditional add criteria established in the June 10 night brief and maintained through every subsequent briefing.",
+      "entry": "Hold existing position; conditional add at $205–215 ONLY on Iran deal formally signed Sunday with Hormuz reopening language AND VIX closing below 17 on Monday AND 30Y below 4.90%; stop $195 daily close; do not add before confirmation",
+      "invalidation": "Close below $195 on two consecutive sessions; or Warsh delivers hawkish surprise at June 17 FOMC and 30Y breaks 5.15% — reduce to minimal sizing in that scenario",
+      "conviction": "medium",
+      "horizon": "3–6 weeks"
+    },
+    {
+      "asset": "TLT (short) / TBT (long)",
+      "direction": "short",
+      "thesis": "The 30Y at 5.02% reflects supply-chain goods inflation (PPI goods +2.8% m/m, the largest since December 2009) that persists for 2–3 months regardless of Hormuz reopening — this is not oil-dependent pipeline pressure. The Warsh dot-plot elimination adds a new layer: without the dot plot, markets lose the standard tool for pricing the Fed rate path; if Warsh's first press conference is interpreted as hawkish or opaque, the 30Y could spike to 5.15–5.25% on pure policy-uncertainty premium. TLT faces a binary: neutral Warsh + Iran signed → 30Y retreats to 4.85–4.90%; hawkish Warsh without dot plot → 30Y to 5.15–5.25%.",
+      "entry": "Short TLT at $84–86; or long TBT (2x inverse) at $44–46; ≤3% gross; stop on TLT closing above $90 on two consecutive sessions",
+      "invalidation": "Iran deal formally signed AND Brent falls below $82 AND Warsh June 17 statement explicitly endorses a September cut path — inflation expectations reset fully; cover TLT short immediately; 30Y would retreat toward 4.60–4.75%",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "SPCX",
+      "direction": "long",
+      "thesis": "SPCX's $161 Day 1 close confirms the MSCI early-inclusion bid is real. The structural passive buy flow (estimated $13–18B over 30–45 days) begins June 13 as index funds rebalance to include SPCX weight. The 4% float means even modest institutional demand pressure moves price materially. Day 3–5 (June 16–18) is the normalization window when day-1 allocation flippers exit and the MSCI passive flow begins to dominate marginal price discovery. Entry zone revised upward from morning's $130–145 to $145–162 given the stronger-than-expected Day 1 close.",
+      "entry": "Do not chase AH or Day 2; enter Day 3–5 (June 16–18) pullback to $145–162; ≤2% gross; stop revised to $130 (below IPO price with 3.7% buffer — below here signals institutional distribution exceeds MSCI buy flow)",
+      "invalidation": "SPCX closes below $130 on two consecutive sessions; or Musk announces a secondary offering or lock-up waiver within 60 days",
+      "conviction": "low",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "The Iran-Geneva MOU represents the fourth ceasefire framework in this conflict cycle — structurally identical to the April 7, April 21, and May 29 agreements that each collapsed within 48–96 hours of announcement. Vance's Saturday travel to Europe and reported text finalization by Saturday night are encouraging, but the Ayatollah and IRGC commanders have rejected finalized agreements at the last minute three times previously; Iranian officials as recently as Friday morning stated that final positions were still being negotiated. If the Sunday signing collapses, Brent snaps to $92–95, DXY re-breaches 100, and the BEARISH verdict activates at Monday's open. Separately, the Warsh dot-plot elimination creates a uniquely dangerous FOMC scenario: markets have never priced policy from a Fed Chair who communicates without the standard projection framework, and Warsh's first unscripted press conference without a dot plot could produce policy opacity that forces a reflexive risk-off move regardless of the underlying rate stance — the 30Y could spike above 5.15% on pure forward-guidance uncertainty, even if the rate decision itself is neutral. A deal collapse combined with a hawkish Warsh press conference would be the stagflation-plus-policy-opacity scenario that sends SPX from 7,431 to 7,200 before Juneteenth. **Invalidation: If Iran deal is formally signed Sunday in Geneva with Hormuz reopening language AND Warsh delivers clear, neutral policy communication on June 17 (dot plot or not) AND 30Y remains below 5.10% post-FOMC AND SPX closes above 7,460 for two consecutive sessions — HOLD converts to BUY. If deal collapses AND Brent breaks $92 before Monday open — HOLD converts to STEP ASIDE immediately without waiting for a session close.**",
+  "body_mdx": "data/briefings/markets/2026-06-12-night.mdx"
+}
