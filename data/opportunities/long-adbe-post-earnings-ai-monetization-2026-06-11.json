@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-11",
   "expires_at": "2026-07-09",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "ADBE",
     "Adobe",
@@ -54,7 +54,13 @@
     "low-conviction",
     "post-earnings"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-12",
+    "final_price": 208.98,
+    "return_pct": 0.0,
+    "outcome_label": "Thesis broken — CFO departure; entry zone $240-260 never reached",
+    "note": "ADBE Q2 FY2026 beat all quantitative conditions (EPS $5.96 vs $5.81 consensus, Firefly AI ARR tripled), but CFO Dan Durn announced departure to Marvell effective June 15 AH on June 11. Stock opened June 12 at $208.98 — well below the $240-260 conditional entry zone — invalidating the trade. Dual C-suite vacancy (CFO departing + ongoing CEO search) removed the entry trigger entirely. Position never initiated; no capital at risk. Return: 0.0%."
+  },
   "levels": {
     "entry_low": 240.0,
     "entry_high": 260.0,

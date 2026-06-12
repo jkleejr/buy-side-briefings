@@ -38,7 +38,7 @@
   ],
   "created_at": "2026-06-08",
   "expires_at": "2026-06-22",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "oil",
     "Iran",
@@ -49,7 +49,13 @@
     "escalation",
     "USO"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-12",
+    "final_price": 128.83,
+    "return_pct": -3.1,
+    "outcome_label": "Prose stop triggered — Brent two consecutive closes below $91",
+    "note": "Brent closed $89.52 on June 11 and traded at $86.91 on June 12, meeting the explicit prose stop: 'Brent falls below $91 for two consecutive sessions regardless of geopolitical news flow.' Trump announced Iran 60-day ceasefire framework June 11; Vance-Witkoff signature expected Europe weekend, removing the Hormuz escalation thesis. USO fell from entry midpoint $133.00 to $128.83 = -3.1%. Price stop at $124 was not hit but the stated prose condition overrides."
+  },
   "levels": {
     "entry_low": 131,
     "entry_high": 135,

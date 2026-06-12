@@ -38,7 +38,7 @@
   ],
   "created_at": "2026-06-09",
   "expires_at": "2026-06-16",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "ORCL",
     "earnings",
@@ -48,7 +48,13 @@
     "cloud",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-11",
+    "final_price": 184.10,
+    "return_pct": -12.9,
+    "outcome_label": "Stopped out at $184.10 — $70B capex shock overrode $638B RPO beat",
+    "note": "Oracle Q4 FY2026 reported June 10 AH: RPO $638B beat the $553B consensus (bull thesis proved correct) but management simultaneously announced $70B FY2027 capex — well above the $45-50B market expectation. ORCL closed $184.10 on June 11, triggering the $196 daily-close stop. RPO acceleration was real but the capex ramp dominated the reaction. Short closed at -12.9% from entry midpoint $211.50."
+  },
   "levels": {
     "entry_low": 208,
     "entry_high": 215,

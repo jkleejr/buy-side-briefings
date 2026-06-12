@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-11",
   "expires_at": "2026-06-25",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "oil",
     "energy",
@@ -54,7 +54,13 @@
     "macro",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-12",
+    "final_price": 58.50,
+    "return_pct": 0.4,
+    "outcome_label": "Thesis broken — Brent two consecutive closes below $90 on Iran ceasefire",
+    "note": "Brent closed $89.52 on June 11 and opened $86.91 on June 12, triggering the explicit prose invalidation: 'Brent settles below $90 for two consecutive sessions on genuine diplomatic de-escalation.' Iran 60-day ceasefire framework announced June 11; Hormuz mine clearance expected to follow. XLE opened $58.50 on June 12 vs $58.25 entry, exiting with a minimal +0.4% gain before the full oil-equity de-rating materializes at day close."
+  },
   "levels": {
     "entry_low": 57.0,
     "entry_high": 59.0,
