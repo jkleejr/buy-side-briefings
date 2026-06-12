@@ -1,0 +1,154 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T21:00:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+  "day_winner": "bulls",
+  "day_summary": "SK Hynix gapped up +8.6% to an open of ₩2,281,000 on news of a ₩44.2B HBM4 equipment investment and an extended factory digital twin alliance with NVIDIA Omniverse — then reversed sharply all session to close at the low of the day at ₩2,150,000 (+2.33% net). The ₩2,200,000 recovery trigger — the add-to-full-position signal from prior dossiers — was pierced at the open but abandoned by the close. Longs from yesterday's session are up; everyone who bought above ₩2,200K on the gap is underwater. A bearish reversal (shooting star) candle at key resistance is a technical warning even as the fundamental story deepens.",
+  "long_pnl": "+2.33% — longs from prior session close gained; the ₩2,200K trigger was touched but not sustained",
+  "short_pnl": "−2.33% on prior close; but shorts who faded the gap-up from ₩2,281K down to ₩2,150K were the intraday winners",
+  "decision": {
+    "action": "buy",
+    "conviction": "low",
+    "horizon": "swing · 1–3 months",
+    "rationale": "Maintaining BUY at low conviction. The fundamental picture is unambiguously improving — ₩44.2B in HBM4 equipment capex, a factory digital twin partnership with NVIDIA Omniverse, 60–70% HBM4 allocation secured for the Vera Rubin platform, and ADR SEC clearance expected around June 22 — but the technical picture flashed a warning today: the gap above the ₩2,200K recovery trigger reversed completely, leaving a shooting star candle at resistance. The add-to-full-position trigger must now be a *sustained closing basis* above ₩2,200K, not a gap-up. Hold the base position (entered in the ₩2,100K zone); do not chase. FOMC June 17 and ADR SEC clearance ~June 22 are the next catalysts. Stop at ₩1,900,000 intact."
+  },
+  "snapshot": {
+    "price": 2150000,
+    "change_pct": 2.33,
+    "change_abs": 49000,
+    "prev_close": 2101000,
+    "day_low": 2150000,
+    "day_high": 2304000,
+    "week52_high": 2407000,
+    "volume": "~5.29M sh (above recent avg)",
+    "market_cap": "~₩1,563T",
+    "extra": [
+      { "label": "USD price (est. ₩1,522)", "value": "~$1,412", "tone": "up" },
+      { "label": "Gap-up open / intraday reversal", "value": "+8.6% open → +2.33% close", "tone": "down" },
+      { "label": "From ATH (June 2)", "value": "−10.7%", "tone": "down" },
+      { "label": "₩2,200K trigger", "value": "Breached open; NOT held on close", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "short_interest": "Foreign ownership ~54% of float; prior forced-selling wave appears exhausted; new overhead supply created today by buyers who purchased above ₩2,200K in the gap-up and are now sitting on intraday losses",
+    "notable_flow": "Volume of 5.29M shares is above the recent average (~4.9–5.8M) — the gap-up attracted buyers, but the sell-through all day from ₩2,304K to ₩2,150K suggests significant distribution at the ₩2,200K–₩2,300K zone. This creates an overhead supply problem: a cohort of new buyers is now trapped above ₩2,200K and will sell into any recovery attempt toward that level. The ADR positioning dynamic (US-based desks accumulating ahead of the August listing) may be providing the base, but it isn't strong enough to absorb today's distribution above the recovery trigger."
+  },
+  "what_traders_are_doing": "Two conflicting forces today. (1) **Fundamental buyers** stepped in at the open on the ₩44.2B HBM4 equipment order and factory digital twin news — new supply-side capex and a deepening NVIDIA partnership are unambiguous positives. (2) **Profit-takers and gap-faders** overwhelmed the buyers all day: the stock opened at a level that implied a rapid re-rating to near the June 2 ATH, and the market said 'not yet.' The close at the session low is the market's verdict: the fundamental improvements are real, but they are priced in at ₩2,100K–₩2,200K, not above ₩2,300K. The playbook: hold the base position; wait for a genuine close above ₩2,200K; the ADR SEC clearance ~June 22 is the next potential re-rating event.",
+  "news": [
+    {
+      "label": "SK Hynix placed a ₩44.2 billion order for 'TC Bonder 4.5 Griffin' thermocompression bonding machines with Hanmi Semiconductor — units to be installed at the M15X facility in Cheongju, commissioned by early September 2026; confirms the HBM4 production ramp is fully capitalized",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/sk-hynix-invests-44-2-billion-won-in-hbm4-chip-stacking-gear-as-nvidia/69510034",
+      "source": "Ad-Hoc News",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix's NVIDIA alliance extended to factory digital twins: the company will integrate NVIDIA's cuLitho, CUDA-X, and PhysicsNeMo tools into chip design, and build 'Fab Digital Twins' — virtual replicas of its fabs running on NVIDIA Omniverse — targeting fully autonomous factory operations and higher yields",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/sk-hynix-s-nvidia-alliance-extends-to-digital-twins-as-hbm4-fab-spend/69500219",
+      "source": "Ad-Hoc News",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix secured 60–70% of HBM4 allocation for NVIDIA's Vera Rubin supercomputer platform — cementing its position as the primary AI memory partner for the next GPU generation after HBM3E",
+      "url": "https://cryptobriefing.com/nvidia-sk-hynix-next-gen-ai-chips/",
+      "source": "Crypto Briefing",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bearish reversal candle: SK Hynix gapped up to ₩2,281,000 (+8.6%), peaked at ₩2,304,000, then sold off all session to close at ₩2,150,000 — a shooting star at the ₩2,200K resistance that creates overhead supply and signals the market is not yet ready to sustain the recovery trigger on a closing basis",
+      "url": "https://stockanalysis.com/quote/krx/000660/",
+      "source": "Stock Analysis",
+      "sentiment": "negative"
+    },
+    {
+      "label": "ADR SEC clearance process ongoing — previously expected around June 22; the US listing confirmation would be the catalyst that forces US institutional re-rating and opens passive index-inclusion buying",
+      "url": "https://www.cnbc.com/2026/03/25/sk-hynix-confidential-us-listing-adr-ai-memory.html",
+      "source": "CNBC",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Cautious near-term after the shooting star candle. The overhead supply created by buyers above ₩2,200K will pressure any recovery attempt. FOMC June 17 is the macro gate: a dovish hold likely allows continued won strength and a re-attempt of ₩2,200K; a hike signal spikes USD/KRW and renews foreign selling. ADR SEC clearance expected ~June 22 is the next fundamental catalyst. Watch for a sustained close above ₩2,200K to confirm the recovery trigger.",
+    "long_term": "Strongly bullish. The ₩44.2B HBM4 capex + factory digital twin program + 60–70% Vera Rubin allocation + $14B US ADR = a company in full-scale execution mode on the AI memory super-cycle. SK Hynix's HBM technology monopoly — sole HBM3E supplier for NVIDIA's current-generation GPUs, primary HBM4 partner for the next — is a structural advantage that strengthens each generation. The US ADR closes the valuation gap with Micron. The dip from ₩2,407K ATH to ₩2,150K is a buying opportunity for patient investors with an ADR-rerating horizon."
+  },
+  "bull_case": [
+    "₩44.2B HBM4 equipment order (TC Bonder 4.5 Griffin, commissioned by September): management is fully capitalizing the production ramp — capex of this scale confirms the HBM4 demand visibility is multi-year, not speculative.",
+    "Factory digital twin partnership with NVIDIA Omniverse: every SK Hynix fab eventually runs on NVIDIA infrastructure — this deepens the interdependency beyond memory chips into manufacturing technology.",
+    "60–70% HBM4 allocation for Vera Rubin platform: SK Hynix is locked in as the primary AI memory supplier for the next NVIDIA GPU cycle, extending the HBM3E monopoly into HBM4.",
+    "US ADR SEC clearance expected ~June 22: confirmation unlocks passive buying from US funds, re-rates the valuation toward Micron's US-premium multiple, and opens a new structural demand pool."
+  ],
+  "bear_case": [
+    "Shooting star candle at ₩2,200K–₩2,300K resistance: the gap-up reversal creates overhead supply; buyers who entered above ₩2,200K are underwater and will sell into any recovery attempt at that level.",
+    "The ₩2,200K recovery trigger was technically activated at the open and technically invalidated at the close — a faked-out signal that undermines confidence in the add-to-full thesis.",
+    "FOMC June 17 remains a binary risk: a hike signal spikes USD/KRW back toward ₩1,550+, reactivating foreign selling on the 54%-foreign-owned float.",
+    "Still −10.7% from the June 2 ATH: the formal recovery hasn't begun; the market is distributing into strength, not accumulating into weakness."
+  ],
+  "key_levels": [
+    {
+      "label": "All-time high (June 2) — ultimate recovery target and final proof of cycle resumption",
+      "level": "₩2,407,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "Today's intraday high — top of the gap-up zone; concentration of trapped buyers who purchased above here",
+      "level": "₩2,281,000–₩2,304,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest resistance — ₩2,200,000 recovery trigger: closed above intraday but failed on a closing basis; overhead supply from today's gap-up buyers creates a formidable ceiling; sustained close above here on volume = add to full position",
+      "level": "₩2,200,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "Today's close — at the session low; base of the shooting star; first support to defend",
+      "level": "₩2,150,000",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest support — ₩2,000,000–₩2,101,000 base zone: four-session volume shelf (June 9–12 lows); ₩2,000,000 round number; June 11 and June 10 intraday lows; stop for partial position if broken",
+      "level": "₩2,000,000–₩2,101,000",
+      "kind": "support"
+    },
+    {
+      "label": "Circuit-breaker zone — deeper structural support; full position stop",
+      "level": "₩1,900,000",
+      "kind": "support"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-06-17",
+      "label": "FOMC rate decision — hawkish = USD/KRW spike toward ₩1,550+, renewed foreign selling; dovish = won recovery, short-covering, re-test of ₩2,200K",
+      "importance": "high"
+    },
+    {
+      "date": "~2026-06-22",
+      "label": "SK Hynix ADR SEC clearance expected — confirms August US listing; opens US institutional re-rating and passive index-inclusion flow",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09",
+      "label": "M15X HBM4 TC Bonder 4.5 Griffin commissioned — production ramp milestone; confirms HBM4 mass production timeline",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08",
+      "label": "SK Hynix US ADR debut (~$14B offering) — potential Russell/S&P index inclusion; structural new-buyer event; largest catalyst since the ATH",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-24",
+      "label": "SK Hynix Q2 2026 earnings (approx.) — HBM4 pricing, margin trajectory, and order-book commentary re-anchor the fundamental debate",
+      "importance": "high"
+    },
+    {
+      "date": "Ongoing",
+      "label": "USD/KRW — ₩1,500 break = re-risk confirmation; ₩1,550+ = re-engages foreign selling on the 54%-foreign-owned float",
+      "importance": "medium"
+    }
+  ],
+  "analysis": "## The gap-up that failed: what it tells us\n\nSK Hynix opened June 12 with three legitimate positive catalysts: a ₩44.2 billion HBM4 equipment order, a factory digital twin alliance with NVIDIA Omniverse, and the ongoing secular story of 60–70% HBM4 allocation for NVIDIA's Vera Rubin platform. The market's first reaction was to gap the stock up +8.6% to ₩2,281,000 — above the ₩2,200,000 recovery trigger that prior dossiers identified as the add-to-full-position threshold. The market's final answer: ₩2,150,000 at the close, the low of the day.\n\nThe [₩44.2B TC Bonder 4.5 Griffin order](https://www.ad-hoc-news.de/boerse/news/ueberblick/sk-hynix-invests-44-2-billion-won-in-hbm4-chip-stacking-gear-as-nvidia/69510034) is not a small capex announcement — thermocompression bonding is the critical manufacturing step for HBM chip-stacking, and committing this equipment spend with M15X commissioning by September 2026 means management has HBM4 production on a definitive timeline, not a roadmap. The [NVIDIA Omniverse digital twin integration](https://www.ad-hoc-news.de/boerse/news/ueberblick/sk-hynix-s-nvidia-alliance-extends-to-digital-twins-as-hbm4-fab-spend/69500219) — cuLitho, CUDA-X, PhysicsNeMo, Fab Digital Twins — extends the NVIDIA partnership from product supply into process co-development. These are genuine strategic deepenings.\n\nAnd the market said: 'We know. We priced this at ₩2,100K–₩2,200K. We're not paying ₩2,300K yet.'\n\nThis is a healthy, rational market response — not a rejection of the thesis, but a refusal to pay a recovery premium before the recovery triggers (ADR clearance, FOMC, ₩2,200K close) are actually confirmed. It also creates a problem: the people who bought the gap above ₩2,200K are now underwater, and they will sell into the next recovery attempt toward ₩2,200K. Overhead supply is the new technical reality.\n\n## Technical analysis\n\nThe trend read: **the recovery base is intact but the ₩2,200K ceiling is confirmed; a shooting star candle demands respect as a distribution signal at resistance.**\n\n**The candle pattern:** Open ₩2,281,000, high ₩2,304,000, close ₩2,150,000 (at the session low). This is a textbook shooting star — a long upper wick with almost no lower wick, closing at or near the session low. In classical technical analysis, a shooting star at resistance after an upward gap is one of the higher-reliability bearish reversal signals. It doesn't mean the stock goes straight down; it means buyers above ₩2,200K are trapped and the supply they represent will pressure the stock on any recovery attempt.\n\n**Volume:** 5.29M shares — above the recent 4.9–5.8M average. The above-average volume on the reversal day is the bearish element: it means the distribution was active and institutional, not just thin-session noise. High volume on a reversal candle at resistance confirms the pattern.\n\n**The ₩2,200K zone is now resistance, not merely a target.** Prior dossiers identified ₩2,200,000 as the recovery trigger (add-to-full-position signal) because it represented the prior swing breakdown level and 200-DMA region. Today's gap above it and reversal back below it creates *confirmed resistance* with fresh overhead supply. The zone went from 'target' to 'ceiling.' The add-to-full-position trigger is now: a *sustained closing basis* above ₩2,200K, not just an intraday or gap-up pierce.\n\n**★ Strongest support: ₩2,000,000–₩2,101,000.** This multi-session base (four days of lows in the ₩1,960K–₩2,048K zone, with June 11 and June 12 closing at ₩2,101K and ₩2,150K respectively) remains the primary defense level. A close below ₩2,000,000 changes the technical structure from 'base-building' to 'failed recovery.' The June 11 V-reversal buyers are still in profit above ₩2,101K; they represent a significant natural support base.\n\n**★ Strongest resistance: ₩2,200,000 (now with fresh overhead supply from today's gap-up buyers).** The prior 200-DMA region + recovery trigger + today's gap-up reversal all concentrate at this level. It needs to be cleared on a closing basis, on above-average volume, for the recovery narrative to be confirmed. Until then, it is the ceiling.\n\n**Decision points:** A daily close above ₩2,200K on above-average volume (≥6M shares) = add to full position, target ₩2,407K ATH re-test. A daily close below ₩2,000K = reduce position size and reassess. FOMC June 17 and ADR SEC clearance ~June 22 are the scheduled catalysts that could force either outcome.\n\n## The Fab Digital Twin case — why it matters beyond today's chart\n\nThe NVIDIA Omniverse integration deserves more attention than it gets from the daily price action. When SK Hynix builds 'Fab Digital Twins' — virtual replicas of its fabrication plants running on NVIDIA's physics simulation platform — it is not just adopting a productivity tool. It is creating a dependency: SK Hynix's manufacturing intelligence will be co-developed with and partly owned by NVIDIA infrastructure. Every future-generation HBM process improvement will run on cuLitho and PhysicsNeMo. The two companies are becoming operationally intertwined at the process level, not just the product level.\n\nThis matters for valuation because it raises the switching cost for both parties. NVIDIA cannot easily shift to a different memory supplier without losing the co-developed process knowledge embedded in the digital twin. SK Hynix cannot easily switch to a different AI compute platform without losing the manufacturing optimization data. The partnership is self-reinforcing, and the ₩44.2B equipment investment this week is the financial proof that SK Hynix is committing to the timeline, not just signing partnership agreements."
+}

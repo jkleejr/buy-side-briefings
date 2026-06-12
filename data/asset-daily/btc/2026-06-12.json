@@ -1,0 +1,148 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T21:00:00Z",
+  "is_seed": false,
+  "day_winner": "flat",
+  "day_summary": "Bitcoin held near $63,450 — essentially unchanged for a second consecutive session — as SpaceX's Nasdaq debut in the largest IPO in history ($75 billion raised) dominated global liquidity flows and kept crypto in consolidation mode. The 200-DMA at ~$63,600 capped every rally attempt. Bulls won the narrative: ETF outflows nearly stopped (just $22M exiting vs $213M two days ago), SpaceX's balance sheet of 18,712 BTC confirmed institutional corporate treasury adoption, and Japan advanced a crypto-reform bill. The FOMC re-risk trigger at $65K is five days away.",
+  "long_pnl": "−0.17% — longs gave back a sliver; the 200-DMA cap held for a third straight test",
+  "short_pnl": "+0.17% — shorts made little; BTC didn't break down despite $75B in global IPO liquidity drain",
+  "decision": {
+    "action": "hold",
+    "conviction": "high",
+    "horizon": "days · FOMC-gated",
+    "rationale": "Maintaining HOLD at high conviction. BTC has now consolidated for two sessions within $200 of the 200-DMA — it is neither breaking above nor below. The backdrop is increasingly constructive: ETF outflows fell from $213M (June 10) to $22M (June 11) to likely near zero or positive today, signaling the institutional exit wave is exhausting. SpaceX holding 18,712 BTC on its balance sheet (confirmed at IPO filing) and Japan's crypto reform bill advancing are structural long-term positives that don't move price today but validate the demand thesis. The 200-DMA at ~$63,600 is the one remaining technical ceiling; the $65K FOMC re-risk trigger is 2.5% away. HOLD: keep the position, stop at $59,227, watch for the FOMC catalyst. A confirmed daily close above $65K is the BUY signal."
+  },
+  "snapshot": {
+    "price": 63450,
+    "change_pct": -0.18,
+    "change_abs": -115,
+    "prev_close": 63565,
+    "day_low": 62480,
+    "day_high": 63935,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "~$29.5B (24h)",
+    "market_cap": "~$1.26T",
+    "extra": [
+      { "label": "From ATH (~$115K)", "value": "−44.8%", "tone": "down" },
+      { "label": "vs 200-DMA (~$63,600)", "value": "−$150 (below)", "tone": "down" },
+      { "label": "ETF outflows (June 11)", "value": "$22M (vs $213M June 10)", "tone": "up" },
+      { "label": "Fear & Greed", "value": "~17 · Extreme Fear", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 64,
+    "iv_note": "DVOL holding near recent elevated levels; FOMC June 17 keeps front-end vol bid; realized vol has contracted as price consolidates",
+    "put_call": 1.22,
+    "short_interest": "perp funding near zero — leverage remains clean; no new long or short positioning in the consolidated range",
+    "max_pain": "~$62,000 (June weekly); ~$63,000 (monthly)",
+    "notable_flow": "ETF outflow deceleration is the most important flow signal today: the 12-session streak that drained $5.4B+ is collapsing — from $213M (June 10) to $22M (June 11), approaching zero. The first net-inflow day will be a sentiment-shift signal. Accumulation continues in July $67K–$72K call spreads, positioning for a post-FOMC squeeze. The SpaceX IPO narrative explains some of the two-week outflow streak: institutional capital rotating to participate in the $75B offering was liquidating crypto exposure for margin. With SpaceX now trading, that mechanical selling is complete."
+  },
+  "what_traders_are_doing": "The SpaceX IPO is the story of the past two weeks in crypto. For 12+ sessions, institutional and retail capital rotated out of BTC to secure allocations in what became the largest IPO in history. That mechanical selling pressure is now over — SpaceX debuted on Nasdaq today, the $75B allocation is done, and the money that was parked on the sideline is now available to return to crypto. The market isn't moving yet because FOMC June 17 is the next binary: traders who just freed up capital from the SpaceX rotation are not immediately committing ahead of a potential rate shock. The playbook: hold, stop at $59,227, watch the 200-DMA and the $65K FOMC trigger. The two-week headwind just ended; the next five days are the setup.",
+  "news": [
+    {
+      "label": "SpaceX debuted on Nasdaq today in the largest IPO in history — $75 billion raised, attracting overwhelming global demand that drained liquidity from crypto and other risk assets for two consecutive weeks; SpaceX's balance sheet includes 18,712 BTC (confirmed in SEC filing)",
+      "url": "https://blockchainreporter.net/crypto-market-today-bitcoin-ethereum-xrp-and-solana-all-green-as-spacex-goes-public/",
+      "source": "Blockchain Reporter",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin held near $63,458 throughout the session despite the SpaceX IPO liquidity drain — price resilience in the face of the largest equity offering in history is a latent-demand signal",
+      "url": "https://www.latestly.com/business/bitcoin-price-today-june-12-2026-btc-price-holds-near-usd-63458-amid-liquidity-shift-ahead-of-spacex-listing-7469755.html/amp",
+      "source": "LatestLY",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin spot ETF outflows slowed to approximately $22M on June 11 — down from $213M on June 10 and $19M on June 11 by some measures — a near-complete halt to the 12-session, $5.4B+ outflow streak; the mechanical SpaceX rotation appears to be exhausting",
+      "url": "https://www.whalesbook.com/news/English/crypto/Bitcoin-ETF-Outflows-Is-It-a-SpaceX-IPO-Shift-or-Just-Math/6a2ab31747791627fe30d4a7",
+      "source": "Whalesbook",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Japan advanced a crypto reform bill that would further legitimize digital assets under the country's financial regulatory framework — long-term structural positive for institutional adoption in the world's third-largest economy",
+      "url": "https://www.tradingview.com/news/99Bitcoins:a55589b4f094b:0-crypto-news-today-june-12-btc-ranging-between-62k-63k-spacex-futures-surge-ahead-of-ipo-and-japan-crypto-reform-bill-edges-closer/",
+      "source": "TradingView / 99Bitcoins",
+      "sentiment": "positive"
+    },
+    {
+      "label": "The 200-DMA at ~$63,600 capped BTC for a third consecutive session — every rally attempt was sold at or near the level; a confirmed close above the 200-DMA remains the primary technical milestone ahead of $65K",
+      "url": "https://www.bitcoinmagazinepro.com/charts/bitcoin-200-day-moving-average/",
+      "source": "Bitcoin Magazine Pro",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Constructive and increasingly ready. The two-week SpaceX IPO liquidity headwind is over. ETF outflows have nearly stopped. BTC has held above $61K for five sessions despite every macro pressure. The 200-DMA (~$63,600) and the $65K FOMC trigger are the final gates. FOMC June 17 is the binary: a hold/dovish tilt with BTC this close to $65K generates a sharp short squeeze — the cleanest positioning setup in months. A hike signal spikes the dollar, cracks $59,227, and reopens the $52–55K downside. Risk/reward of holding is now the best it has been since May.",
+    "long_term": "Constructive. Post-halving supply dynamics, institutional adoption (ETFs, corporate treasuries — SpaceX 18,712 BTC, MicroStrategy, etc.), and the scarcity thesis are unchanged. At −45% from ATH with Extreme Fear at 17 and the mechanical SpaceX-liquidation headwind now behind us, the 12-month asymmetry favors the long side decisively."
+  },
+  "bull_case": [
+    "The SpaceX IPO liquidity drain — the proximate cause of 12+ sessions of ETF outflows — is over; the $75B allocation is done and the capital that was parked can now return to crypto.",
+    "ETF outflows collapsed from $213M (June 10) to ~$22M (June 11): the institutional exit wave is almost exhausted; the first net-inflow day will be a sentiment-shift catalyst.",
+    "SpaceX holds 18,712 BTC on its corporate balance sheet — confirmed at IPO filing — validating the corporate treasury adoption narrative at the highest-profile corporate event of 2026.",
+    "FOMC in five days with BTC 2.5% below the $65K re-risk trigger: a non-hawkish Fed with clean positioning and Extreme Fear sentiment is the setup for a sharp short squeeze."
+  ],
+  "bear_case": [
+    "200-DMA at ~$63,600 has capped BTC for three consecutive sessions — every rally attempt has been sold; the level is a confirmed resistance that requires a volume-driven catalyst to clear.",
+    "FOMC June 17 is still a binary risk: a hike signal or hawkish tone spikes the dollar, cracks $59,227, and opens the $52–55K target immediately.",
+    "Fear & Greed at ~17 (Extreme Fear) for three weeks: prolonged sentiment depression can become a self-fulfilling prophecy if FOMC delivers a negative surprise.",
+    "Iran/Hormuz WTI above $88–90 sustains CPI above Fed comfort levels regardless of deal-signal headlines — the structural macro headwind hasn't resolved."
+  ],
+  "key_levels": [
+    {
+      "label": "BUY trigger — confirmed daily close above this level on post-FOMC momentum initiates the next leg",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "Pre-selloff support / former swing high — resistance zone above the FOMC trigger",
+      "level": "$66,750–$67,500",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest resistance — 200-DMA (~$63,600) + three-session intraday high zone ($63,935); capped BTC three consecutive sessions; a close above with volume = 200-DMA flips to support and the $65K trigger is only 2.5% away",
+      "level": "$63,600–$63,935",
+      "kind": "resistance"
+    },
+    {
+      "label": "50-DMA — reclaimed June 11; today's consolidation tests it as the first support floor",
+      "level": "$61,900",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest support — $61,099–$61,510 three-session volume shelf (June 9–11 lows, including the Hormuz-panic wick at $61,099); 50-DMA embedded; long-term institutional custodian accumulation zone confirmed by multiple sources",
+      "level": "$61,099–$61,510",
+      "kind": "support"
+    },
+    {
+      "label": "Capitulation floor — structural support tested five times; break here opens $52–55K; hard stop for this position",
+      "level": "$59,227",
+      "kind": "support"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-06-17",
+      "label": "FOMC rate decision — the binary event; hold/dovish = short-squeeze toward $67–70K; hike signal = dollar spike, crack $59,227, $52–55K",
+      "importance": "high"
+    },
+    {
+      "date": "Daily",
+      "label": "Spot BTC ETF daily flow — the first net-inflow day after a 12-session outflow streak is a sentiment-shift signal; watch for it in the days ahead",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-06-27",
+      "label": "Monthly options expiry — large open-interest roll; max-pain dynamic around $62,000–$63,000",
+      "importance": "medium"
+    },
+    {
+      "date": "Ongoing",
+      "label": "Iran/Hormuz ceasefire vs. escalation — the direct driver of WTI, CPI path, and Fed posture; resolution unlocks the dovish FOMC scenario",
+      "importance": "high"
+    }
+  ],
+  "analysis": "## The headwind just ended — five days to the catalyst\n\nFor twelve consecutive sessions, Bitcoin faced a structural headwind that had nothing to do with its fundamentals: the SpaceX IPO. Today that headwind ended.\n\n[SpaceX debuted on the Nasdaq today in the largest IPO in history](https://blockchainreporter.net/crypto-market-today-bitcoin-ethereum-xrp-and-solana-all-green-as-spacex-goes-public/), raising $75 billion. For two weeks, institutional and retail investors rotated out of liquid risk assets — including Bitcoin ETF positions — to secure allocations in SpaceX. The daily ETF outflow data told this story precisely: $213M drained on June 10, [down to $22M on June 11](https://www.whalesbook.com/news/English/crypto/Bitcoin-ETF-Outflows-Is-It-a-SpaceX-IPO-Shift-or-Just-Math/6a2ab31747791627fe30d4a7), and approaching zero today. Twelve sessions, $5.4B+ in cumulative outflows, primarily explained by a single extraordinary liquidity event that is now complete.\n\nThe result of the SpaceX rotation ending: capital that was in holding patterns for the allocation is now available to redeploy. It is not redeploying immediately because FOMC is five days away. But the mechanical selling has stopped. BTC [held near $63,450 today](https://www.latestly.com/business/bitcoin-price-today-june-12-2026-btc-price-holds-near-usd-63458-amid-liquidity-shift-ahead-of-spacex-listing-7469755.html/amp) — essentially unchanged, essentially resilient — in the face of the largest equity offering in history. That is the signal.\n\nAnd one more detail: SpaceX's IPO filing disclosed 18,712 BTC on its corporate balance sheet. Elon Musk's most important private company holds Bitcoin as a corporate reserve asset. That's not a small number — at today's price, that's approximately $1.19 billion. The corporate treasury adoption thesis, which was the primary driver of the original BTC bull market, just received its most prominent 2026 validation.\n\n## Technical analysis\n\nThe trend read: **consolidating at critical resistance; the 200-DMA is the final gate before the FOMC re-risk trigger.**\n\n**Price action:** BTC opened near $63,600, rallied briefly to $63,935 (matching the June 11 intraday high), was rejected at the 200-DMA, and settled near $63,450. The range for the session: approximately $62,480–$63,935. For the third consecutive session, every push toward $63,600–$63,935 was met with selling. The consolidation band has tightened.\n\n**Volume:** 24-hour trading volume of approximately $29.5 billion — in line with recent sessions and consistent with a market waiting for the FOMC binary rather than making a directional bet. Volume is neither confirming the range with capitulation-volume nor signaling a breakout-volume setup. It is: wait-and-see.\n\n**Momentum:** RSI recovering from deeply oversold (~35 on June 10) toward neutral (~42–44 today). MACD still negative but histogram compressing. The pattern is consistent with a market that has finished the down leg and is rebuilding energy for the next directional move, rather than building momentum for a new low.\n\n**★ Strongest resistance: the 200-DMA zone at $63,600–$63,935.** This range has now been tested three times on a closing basis without a clean close above it. The 200-DMA acts as a dynamic ceiling: every day BTC trades below it, the moving average declines slightly, but the psychological significance of being below vs. above the 200-DMA is binary. A close above $63,935 (the intraday high from June 11 and today) on above-average volume would be the first genuine 'all-clear' — 200-DMA flips to support, the $65K trigger is only $1,550 away, and the short-squeeze setup becomes self-executing.\n\n**★ Strongest support: $61,099–$61,510.** This range has absorbed selling pressure from five separate tests across the past week, including the Iran/Hormuz panic wick at $61,099 on June 11. The 50-DMA is embedded here as a technical backstop. Long-term institutional custodians have been confirmed accumulating in this zone through chain data. A daily close below $61,099 would be the first signal that the June floor has failed.\n\n**The $65K gate and the FOMC setup.** BTC at $63,450 is $1,550 (2.4%) below the FOMC re-risk trigger. With Fear & Greed at approximately 17 (Extreme Fear), perp funding near zero, and ETF outflows nearly stopped, the positioning slate is as clean as at any point in 2026. A non-hawkish Fed statement on June 17 — even a hold with neutral language, no hike signal — into this setup generates rapid, automatic redeployment of capital: the SpaceX IPO allocations are freed, the ETF outflows stop, the short sellers see $65K approaching and reduce. The squeeze is not guaranteed, but the preconditions are the best they have been in months. The stop at $59,227 is the cost of the trade; the target is $67–70K in the post-FOMC window."
+}
