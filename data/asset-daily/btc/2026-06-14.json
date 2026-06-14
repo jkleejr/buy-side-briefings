@@ -1,0 +1,175 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-14",
+  "generated_at": "2026-06-14T22:00:00Z",
+  "is_seed": false,
+  "day_winner": "bulls",
+  "day_summary": "Bitcoin rose 1.26% on Sunday to $65,330 — breaching the $65,000 buy-trigger threshold named in Saturday's dossier — after a two-phase session: 21 hours of tight $63,682–$64,672 consolidation with the 200-DMA zone holding as intraday support (low: $63,683), then a late-session volume surge at 21:00 UTC (275 BTC in one hour, ~4× the day's hourly pace) that vaulted BTC to a session high of $65,479. The short-term holder realized price (~$65,000) has been reclaimed. FOMC is three days away; the evidence stack is the strongest it has been at any point in the June correction.",
+  "long_pnl": "+1.26% — longs held the 200-DMA zone on the intraday dip to $63,683, then rode the 21:00 UTC volume surge through the $65K trigger; the explicit buy-confirmation level from Saturday's dossier has been breached",
+  "short_pnl": "−1.26% — bears squeezed on two counts: the 200-DMA zone held for a second straight session and the $65K resistance that anchored short positioning has been broken; FOMC in three days tightens the risk window further",
+  "decision": {
+    "action": "buy",
+    "conviction": "high",
+    "horizon": "days-to-weeks · FOMC-gated",
+    "rationale": "Upgrading to HIGH conviction BUY. The $65,000 level explicitly named as the buy-confirmation trigger in Saturday's dossier has been breached: BTC spiked to $65,479 intraday and is holding $65,330 at the close of US-hours trading. The evidence stack now has five pillars: (1) $65K trigger hit — the short-term holder realized price (~$65,000) has been reclaimed, structurally reducing selling pressure as recent buyers move back into profit; (2) 200-DMA zone ($63,500–$63,600) held for the second consecutive session (today's low $63,683), cementing the resistance-to-support flip; (3) ETF inflow reversal confirmed — all 13 US spot BTC ETFs posted $85.85M in net inflows on June 12, ending the 13-session, $4.4B outflow streak; (4) FOMC June 17 at 98.2% probability of no rate change, near-zero perp funding, and Fear & Greed at 21 (Extreme Fear) — the most asymmetric FOMC setup of the cycle; (5) Galaxy Digital's bearish cycle targets ($40K–$54K) are being actively invalidated by price action. Primary caveat: Sunday volume (~$100M on Crypto.com vs. $29B+ weekday norms) means the $65K break is not institutionally confirmed until Monday ETF flow data validates it. Stop: $59,480 (June 6 capitulation wick). Add in the $65,300–$65,500 zone. Targets: $67,520 (June 3 swing high) → $70,000 (round number) → $75,500 (June 27 options max pain, ~$8B notional)."
+  },
+  "snapshot": {
+    "price": 65330,
+    "change_pct": 1.26,
+    "change_abs": 811,
+    "prev_close": 64519,
+    "day_high": 65479,
+    "day_low": 63683,
+    "week52_high": 98600,
+    "week52_low": 48200,
+    "volume": "~$100.5M / 1,564 BTC on Crypto.com (Sunday thin — ~1/3 of weekday avg)",
+    "market_cap": "~$1.29T",
+    "extra": [
+      { "label": "$65K trigger (STH realized price)", "value": "BREACHED — $65,479 intraday high", "tone": "up" },
+      { "label": "200-DMA zone (~$63,500–$63,600)", "value": "Held again — low $63,683 (+$83 above zone)", "tone": "up" },
+      { "label": "Fear & Greed Index", "value": "~21 · Extreme Fear (contrarian buy signal)", "tone": "down" },
+      { "label": "ETF net flows (June 12)", "value": "+$85.85M — BlackRock IBIT led at $57.7M", "tone": "up" },
+      { "label": "June 27 options max pain", "value": "~$75,500 (~$8B notional)", "tone": "up" },
+      { "label": "FOMC (June 17)", "value": "98.2% probability of no rate change", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv_note": "Front-end volatility remains bid into the June 17 FOMC binary; $65K call strike on Deribit carried heavy open interest — dealers now delta-hedge upward as price holds above that strike, creating a mechanical bid",
+    "short_interest": "perp funding near zero — leverage slate is clean; the late-session spike to $65,479 was driven by spot volume rather than leverage unwind, making the move structurally healthier than a typical funding-rate squeeze",
+    "max_pain": "~$63,000 (June weekly, expiring this week); ~$75,500 (June 27 quarterly, ~$8B notional)",
+    "notable_flow": "The 21:00 UTC candle on June 14 captured the session's defining flow: 275 BTC traded in a single hour (vs. 18–113 BTC/hr for the preceding 20 hours), driving a $1,277 move from $64,013 to $65,290 open-to-close, with the day's high of $65,479 hit within that candle. Whether this represents a deliberate institutional bid, stop-liquidation of shorts at the $65K level, or pre-FOMC positioning is uncertain — but the resulting price ($65,330 at close) is the highest since June 3. Monday's ETF flow data (BlackRock IBIT, Fidelity FBTC) is the first institutional validation gate for the Sunday spike."
+  },
+  "what_traders_are_doing": "Heading into the most consequential FOMC of the year with Bitcoin above the key $65,000 level for the first time since the June correction began. Sunday's session split into two distinct phases: passive, range-bound positioning through most of the day as BTC consolidated between $63,682 and $64,672 — the 200-DMA zone absorbing the intraday dip for a second consecutive session — followed by an abrupt $1,480 rally compressed into the 21:00 UTC hour (275 BTC, roughly 4× the day's preceding hourly average). The thesis laid out in Saturday's dossier has materially advanced: ETF inflows reversed on June 12 ($85.85M, ending the 13-session bleed), the 200-DMA zone is holding as support for two straight sessions, and $65K has been breached. The positioning setup is as clean as it has been all cycle: perp funding near zero (no crowded longs to flush), Fear & Greed at 21 (maximum contrarian buy signal), and ~$8B in June 27 options notional with max pain at $75,500 pulling 15.6% above current levels. Monday's ETF flow data and Tuesday's pre-FOMC positioning are the next decision points. Galaxy Digital's bear scenario ($40K–$54K) requires FOMC to deliver a hawkish shock — an event CME is pricing at under 2% probability.",
+  "news": [
+    {
+      "label": "Bitcoin breached $65,000 — the short-term holder realized price — in Sunday's late-session spike, with BTC hitting $65,479 intraday and closing the US-hours window at $65,330; this level concentrates the cost basis of wallets that acquired BTC in the past 155 days, and reclaiming it structurally reduces overhead supply pressure",
+      "source": "Crypto.com exchange data / on-chain analysis",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Spot Bitcoin ETFs recorded $85.85M in net inflows on June 12 — BlackRock IBIT led with $57.7M, none of the 13 products posted an outflow — definitively ending the record 13-session, $4.4B outflow streak attributed to SpaceX IPO rotation capital; this is the foundational structural catalyst for the current BUY thesis",
+      "url": "https://news.bitcoin.com/bitcoin-etf-inflows-ethereum-outflows-june-2026/",
+      "source": "Bitcoin News",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Kevin Warsh chairs his first FOMC meeting June 17 — CME FedWatch puts the probability of no rate change at 98.2% at the 3.50%–3.75% target; the meeting includes the Summary of Economic Projections (dot plot) and a Warsh press conference; markets are watching his inflation framework language for signals on any 2026 rate path shift",
+      "url": "https://news.bitcoin.com/warsh-faces-his-first-test-june-17-as-traders-hunt-for-hidden-signals-in-the-feds-dot-plot/",
+      "source": "Bitcoin News",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "CryptoSlate identified Bitcoin's 'weekend wall' at $64,000 ahead of Sunday's session, framing the level as a binary: break it to signal real demand recovery, fail to break and risk a deeper correction; BTC delivered the break, clearing $64K and $65K in the late-session surge",
+      "url": "https://cryptoslate.com/bitcoin-price-challenges-64000-weekend-wall-needing-a-breakout-or-risk-a-deeper-correction/",
+      "source": "CryptoSlate",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Galaxy Digital's bearish cycle analysis (base case: $40K–$46K bottom; shallow bear: $51K–$54K) is being actively challenged by traders following Friday's ETF inflow reversal and Sunday's $65K breach; analyst Michael van de Poppe sees a confirmed $65K+ hold leading to a $72K–$74K recovery leg",
+      "url": "https://crypto.news/can-bitcoin-break-65k-as-traders-challenge-galaxys-bearish-cycle-call/",
+      "source": "Crypto.news",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Fed rate-hike odds reached 68% in early June — the macro overhang that capped BTC since its cycle peak; those odds have since compressed to under 2% ahead of the June 17 FOMC, removing the single biggest structural headwind just as Bitcoin is retesting its key $65K inflection level",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/fed-rate-hike-odds-just-065000322.html",
+      "source": "BeInCrypto / Yahoo Finance",
+      "sentiment": "positive"
+    }
+  ],
+  "outlook": {
+    "short_term": "The trigger is confirmed. BTC is above $65K with FOMC in three days, near-zero perp funding, ETF inflows restored, and Extreme Fear at 21. Monday's price action is the acid test: if BTC holds $65K on the open and Monday ETF flows deliver a second consecutive inflow day, the pre-FOMC setup is complete and the trade is to hold through June 17 with a stop at $59,480. A non-hawkish FOMC hold — the 98.2% base case — triggers the short-squeeze sequence: SpaceX-rotation capital returns to crypto, ETF flows accelerate, short sellers who faded the 200-DMA unwind, and momentum algorithms pile in. First target: $67,520 (June 3 swing high). Second: $70,000 (round number). The derivatives market's gravitational destination by June 27: $75,500 ($8B notional max pain). The watch item before all of that: does the $65K break hold Monday morning or does it get faded back below the STH realized price level?",
+    "long_term": "Structurally constructive. The four pillars from the prior dossier remain intact: SpaceX holds 18,712 BTC as a strategic reserve, spot ETFs have institutionalised the demand base, post-halving supply constraints are deepening, and Galaxy Research's 'shrinking amplitude' thesis means each cycle's correction is shallower than the last. Standard Chartered holds $100K as the year-end target. At −33% from the $98,600 ATH, with Extreme Fear readings and $8B in derivatives notional pulling toward $75,500 by month end, the 12-month risk/reward remains decisively long for investors with the risk tolerance to hold through FOMC binary risk."
+  },
+  "bull_case": [
+    "The $65K short-term holder realized price has been breached intraday ($65,479 high): recent buyers are now in profit and structural selling pressure from that cohort is reduced — a key structural shift from the prior three weeks.",
+    "200-DMA zone ($63,500–$63,600) held as intraday support for a second consecutive session (June 13 low $63,415, June 14 low $63,683) — the textbook resistance-to-support flip is now doubly confirmed.",
+    "FOMC June 17 at 98.2% probability of no rate change, with the leverage slate clean (near-zero perp funding) and Fear & Greed at 21: the most asymmetric FOMC setup of the 2026 cycle for a directional upside move.",
+    "ETF inflows definitively reversed on June 12 ($85.85M, all 13 US spot BTC ETFs positive): the SpaceX IPO rotation headwind is over, and redeployment of sidelined capital is now the directional force.",
+    "June 27 options expiry carries ~$8B notional with max pain near $75,500 — a 15.6% gravitational pull above current levels that dealers must hedge as the underlying approaches from below."
+  ],
+  "bear_case": [
+    "Sunday volume on Crypto.com was ~$100.5M vs. $29B+ on recent weekdays: the $65K break occurred on thin-air volume and requires institutional validation on Monday's open and ETF flow data before it can be treated as confirmed.",
+    "The spike was concentrated in a single 21:00 UTC hour (275 BTC, $18M): this pattern is consistent with stop-liquidation of clustered short orders rather than sustained organic demand — confirmation requires follow-through.",
+    "FOMC June 17 is still a binary: a Warsh hawkish surprise (updated dots signalling 2026 rate hold/hike) spikes DXY, breaks the 200-DMA, and reopens the June 6 low at $59,480 within 24 hours.",
+    "June weekly options max pain near $63,000 creates a near-term downward gravitational pull competing with the June 27 quarterly force — the weekly expiry is a friction point before the bigger monthly magnet can assert itself.",
+    "Galaxy Digital's scenario analysis — a bear cycle ending between $40K and $54K — remains structurally valid until a sustained close above $70K is delivered with volume; the Sunday move alone does not disqualify the longer bear thesis."
+  ],
+  "key_levels": [
+    {
+      "label": "June 27 quarterly options max pain — ~$8B notional; the derivative market's gravitational destination by month end; dealers are structurally short delta above this level and must hedge upward movement; 15.6% above current price",
+      "level": "$75,500",
+      "kind": "resistance"
+    },
+    {
+      "label": "Round number + prior recovery high — major psychological level and dense call option cluster; first consolidation zone in any post-FOMC rally; $4,670 above current",
+      "level": "$70,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "June 3 pre-selloff swing high — the last significant top before the June 4–6 correction; a post-FOMC close above here confirms the corrective structure is over and the next leg of the 2026 bull run has begun; first meaningful post-FOMC price target",
+      "level": "$67,520",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest near-term resistance — today's session high + STH realized price cluster (~$65,000); the 21:00 UTC candle peaked here and was rejected; a Monday close above $65,479 on weekday volume is the institutional confirmation that the Sunday spike was real, not a fakeout; heaviest Deribit call OI concentration near this strike creates dealer delta-hedging tailwind above it",
+      "level": "$65,479",
+      "kind": "resistance"
+    },
+    {
+      "label": "STH realized price / prior BUY trigger — cost basis for the 155-day wallet cohort; reclaimed intraday today; above here reduces structural selling pressure; below here re-creates the overhead supply problem that capped the June recovery attempts",
+      "level": "$65,000",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest support — 200-DMA zone; held for two consecutive sessions (June 13 low $63,415, June 14 low $63,683); former three-session resistance has conclusively flipped to support; a daily close below $63,500 before FOMC is the bull-thesis invalidation signal and the stop-reduce trigger",
+      "level": "$63,500–$63,600",
+      "kind": "support"
+    },
+    {
+      "label": "June 12 session low — demand shelf just below the 200-DMA zone; second line of support; also where ETF inflows resumed on June 12, making it a buyer-validated price point",
+      "level": "$62,833",
+      "kind": "support"
+    },
+    {
+      "label": "June 10–11 volume shelf + 50-DMA confluence (~$61,454) — multiple session lows in this range across two sessions; confirmed institutional accumulation zone; the 50-DMA embedded here adds moving-average support",
+      "level": "$60,730–$61,509",
+      "kind": "support"
+    },
+    {
+      "label": "June 6 capitulation wick — the cycle's deepest panic candle; the hard stop for the current position; a close below here reopens $52–55K and invalidates the entire corrective recovery thesis",
+      "level": "$59,480",
+      "kind": "support"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-06-16",
+      "label": "Monday US spot ETF flow data — the institutional validation gate for Sunday's $65K spike; a second consecutive net-inflow day confirms the structural trend has reversed; watch BlackRock IBIT and Fidelity FBTC specifically; a net outflow on Monday would signal the Sunday move was a fakeout",
+      "importance": "high"
+    },
+    {
+      "date": "2026-06-17",
+      "label": "FOMC rate decision + Kevin Warsh debut dot plot and press conference (98.2% probability of hold at 3.50%–3.75%) — the binary event; a hold/neutral tone triggers the short-squeeze sequence toward $67,520 → $70K; a hawkish dot plot or unexpected rate hike breaks $59,480 and reopens the Galaxy Digital bear scenario",
+      "importance": "high"
+    },
+    {
+      "date": "2026-06-20",
+      "label": "June weekly options expiry — max pain near $63,000; short-term downward gravitational pull that competes with the June 27 monthly max pain at $75,500; BTC must absorb this expiry cleanly to maintain momentum into the final week of June",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-06-27",
+      "label": "Monthly/quarterly options expiry — ~$8B notional, max pain $75,500; the derivatives market's gravitational pull through the remainder of June; dealers must hedge an upward move by buying delta as spot approaches from below; the structural 15.6% upside magnet for the post-FOMC window",
+      "importance": "medium"
+    },
+    {
+      "date": "Ongoing",
+      "label": "Iran/Hormuz ceasefire vs. escalation — direct driver of WTI, CPI path, and Fed posture; resolution removes the remaining structural macro headwind and strengthens the dovish-lean FOMC narrative",
+      "importance": "high"
+    }
+  ],
+  "analysis": "## $65K breached — trigger confirmed, FOMC in three days\n\nSunday, June 14: Bitcoin rose 1.26% to $65,330 in a session that delivered exactly the setup the prior dossier called for, then added a late-session exclamation point. For 21 hours, price moved in a narrow $63,682–$64,672 band, consolidating Friday's gain and testing the 200-DMA zone intraday (low: $63,683) without closing below it. Then, at 21:00 UTC, a single candle changed the picture entirely: 275 BTC traded in 60 minutes — roughly 4× the preceding hourly average — driving BTC from $64,013 to $65,290 (a $1,277 intra-hour move) and setting the day's high at $65,479. At $65,330 heading into the final two hours of the UTC day, the stated buy-confirmation trigger has been hit. Three days from FOMC. The question shifts from whether to buy to whether the Sunday move holds.\n\n## Technical analysis\n\n**Trend read.** Bitcoin has built a sequence of higher lows since the June 6 capitulation wick at $59,480: $60,730–$61,509 (June 10–11 shelf), $62,833 (June 12 low), $63,415 (June 13 intraday low), $63,683 (June 14 intraday low). Today's session extended that sequence above the 200-DMA zone for two consecutive sessions for the first time in the June correction. The primary trend since the $98,600 peak in early 2026 remains a corrective downtrend — but the early-reversal signals are accumulating: 200-DMA zone holding as support, ETF inflows restored, and the STH realized price reclaimed intraday.\n\n**Momentum.** RSI is recovering from deeply oversold conditions at the June 5–6 trough, estimated in the 43–48 range heading into this week — approaching the neutral 50 line but not yet overbought. The MACD histogram is compressing toward a potential bullish cross. The 8-session pattern since June 5 is a textbook coiling base: higher lows, declining daily volatility through the $63,500–$64,700 range, and then today's high-volume candle as the first impulse out of the coil. That pattern resolves either up (FOMC cooperates) or down (FOMC surprises hawkish).\n\n**Volume — the most important context for today's session.** The hourly candle breakdown tells two different stories. For 20 consecutive hours (00:00–20:00 UTC), BTC traded 18–113 BTC/hour — typical Sunday volumes on a single exchange, representing perhaps 1/3 of normal weekday flow. The session was quiet, deliberate, and range-bound. Then the 21:00 UTC candle: 275 BTC / $18M in 60 minutes. That single candle's volume exceeded the combined volume of the six preceding hours. Three interpretations: (a) an institutional player initiating a pre-FOMC position; (b) stop-liquidation of short sellers clustered at the $65K level; or (c) a combination of both (the stops create the liquidity, the buyer absorbs it). All three explanations are bullish in structure — but none constitutes the same confirmation as a sustained multi-hour buy program on Monday weekday volume with ETF flows confirming. The $65K break is real. Whether it is validated is Monday's job.\n\n**★ Strongest resistance: $65,479 — today's session high + STH realized price cluster.** This level concentrates three independent forces: (1) the short-term holder realized price is approximately $65,000, meaning wallets that bought BTC in the past 155 days have their cost basis here — breaching and holding above this level moves that cohort from loss to profit and reduces their incentive to sell; (2) Deribit's $65,000 call strike carries some of the heaviest open interest on the June expiry, meaning dealer delta-hedging creates a mechanical bid as spot approaches from below and a mechanical ceiling as it approaches from above (until the strike is decisively cleared); (3) today's intraday high of $65,479 is the first resistance — a Monday open above $65,479 on volume confirms the Sunday spike was not a fakeout but rather a pre-FOMC accumulation move. The ★ designation is on this level specifically because it is the near-term confirmation gate: above it means the bull thesis is intact and growing; a fakeout below $65,000 resets the picture.\n\n**★ Strongest support: $63,500–$63,600 — the 200-DMA zone.** The evidence: June 13 intraday low of $63,415 (2.9 hours of trading below the zone before recovering); June 14 intraday low of $63,683 (holding above the zone entirely, no close below). Two consecutive sessions of testing the 200-DMA and bouncing. Former resistance for three sessions (June 10–12) has now flipped to support on two tests. The zone is bolstered by the 200-day moving average — a level watched by every systematic fund, risk-model overlay, and macro participant in the market. A daily close below $63,500 before FOMC would be the warning: it would mean the resistance-to-support flip has failed and BTC has re-entered the 200-DMA zone from above, materially increasing the probability that FOMC volatility tests the June 6 low.\n\n**The FOMC setup.** Three days from now, Kevin Warsh delivers his first FOMC decision, dot plot, and press conference. CME FedWatch: 98.2% probability of hold at 3.50%–3.75%. The base case — a hold with a dot plot that doesn't introduce a hike signal — is nearly fully priced in the rates market but not in Bitcoin. With perp funding near zero, Fear & Greed at 21, and short sellers squeezed off the 200-DMA over two sessions, the crowd is positioned defensively. A neutral FOMC hold — what markets expect — is the catalyst for a positioning unwind that pushes BTC toward $67,520 in the first post-decision hours. The tail risk is a hawkish surprise in the dot plot or Warsh's press conference language — a scenario Goldman Sachs has flagged (no rate cuts in 2026) that, if confirmed officially, cracks $59,480 and opens the Galaxy Digital bear scenario.\n\n**Decision points.** (1) Monday open: does BTC hold above $65,000 or fade back below the STH realized price? A Monday open above $65,000 with the first hour holding confirms the Sunday move. (2) Monday ETF flows: second consecutive net-inflow day validates the June 12 reversal as a trend, not a one-day anomaly. (3) Pre-FOMC close Tuesday: where is BTC positioned heading into Wednesday's binary? Above $65K is the best-case setup for a non-hawkish squeeze. (4) FOMC outcome Wednesday: the trade is on or the stop is triggered.\n\n**What invalidates the read.** A confirmed daily close below $63,500 (200-DMA zone) before FOMC — not an intraday wick, but a close — would mean the $65K spike was a bull trap and the corrective structure is reasserting. Below $59,480, every target discussed in this dossier is void and the Galaxy bear scenario must be entertained seriously."
+}
