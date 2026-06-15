@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-08",
   "expires_at": "2026-07-22",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "AI",
     "networking",
@@ -52,7 +52,13 @@
     "semis",
     "MRVL"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-15",
+    "final_price": 300.0,
+    "return_pct": 7.4,
+    "outcome_label": "Target 1 hit at $300",
+    "note": "MRVL opened June 15 at $299.50 and hit $300.72 intraday — Target 1 at $300 breached. The catalyst was the confirmation that Adobe CFO Dan Durn's departure to Marvell is effective June 15, which the market read as validation of Marvell's AI networking platform quality. The S&P 500 inclusion (effective June 22) continues to build the mechanical bid toward Target 2; this close covers Target 1 only. Jensen Huang endorsement and $2B NVDA investment intact."
+  },
   "levels": {
     "entry_low": 272,
     "entry_high": 285,

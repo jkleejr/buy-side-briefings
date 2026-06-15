@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-02",
   "expires_at": "2026-06-25",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "IWM",
     "small-cap",
@@ -54,7 +54,13 @@
     "macro",
     "short"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-15",
+    "final_price": 297.5,
+    "return_pct": -2.8,
+    "outcome_label": "Stop triggered — IWM closed at $297.50",
+    "note": "IWM traded in the $297.00–$298.08 range on June 15 — the $297 daily-close stop was breached. The Iran Islamabad Declaration changed the macro regime: 30Y below 5.00% removes the rate headwind for small-cap leveraged balance sheets (the second FOMC pillar of the thesis), and the risk-on gap-up (+2.3% est. for Russell) in the SPX +1.2% session eliminated the capital-drain pressure that was the trade's first pillar. The SpaceX IPO drain thesis was correct directionally through June 13 but the Iran deal created a simultaneous macro tailwind too large for the small-cap short to absorb."
+  },
   "levels": {
     "entry_low": 287,
     "entry_high": 292,

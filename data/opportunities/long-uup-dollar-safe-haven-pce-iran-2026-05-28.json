@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-05-28",
   "expires_at": "2026-06-25",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "macro",
     "fx",
@@ -54,7 +54,13 @@
     "rates",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-15",
+    "final_price": 27.45,
+    "return_pct": -0.8,
+    "outcome_label": "Thesis broken — Iran ceasefire signed with Hormuz timeline",
+    "note": "Primary invalidation condition met verbatim: 'Iran ceasefire formally announced with Hormuz reopening timeline.' The Islamabad Declaration signed June 14 with explicit Hormuz reopening language removes both UUP catalyst pillars simultaneously — the safe-haven Iran-escalation dollar bid and the dollar-favorable DXY-above-100 regime. DXY at 99.52 on June 15 and falling structurally (Iran deal dollar-negative). UUP estimated at $27.45, near-flat from entry — the low-conviction, small-size discipline limited the damage to a negligible -0.8%."
+  },
   "levels": {
     "entry_low": 27.5,
     "entry_high": 28,

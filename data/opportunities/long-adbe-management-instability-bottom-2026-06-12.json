@@ -38,9 +38,15 @@
   ],
   "created_at": "2026-06-12",
   "expires_at": "2026-08-15",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["ADBE", "Adobe", "contrarian", "management-vacuum", "AI-monetization", "conditional", "software", "low-conviction", "distressed-entry"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-15",
+    "final_price": 175.0,
+    "return_pct": -16.3,
+    "outcome_label": "Stop triggered — gap-down through $190",
+    "note": "ADBE gapped to ~$168 pre-market June 15 (morning briefing est.), well below the $190 daily-close stop. Entry conditions had been met via two consecutive closes above $200 (June 13-14) with no additional C-suite departures, but a new wave of selling — likely freemium model concerns layered on the CFO departure — drove through the stop before the session opened. Effective exit at ~$175 on gap-fill; actual fill likely between $168 and $185."
+  },
   "levels": {
     "entry_low": 200.0,
     "entry_high": 215.0,

@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-12",
   "expires_at": "2026-08-08",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["EWJ", "Japan", "Nikkei", "oil-relief", "AI", "semiconductor", "macro", "BoJ", "international", "medium-conviction"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-15",
+    "final_price": 96.0,
+    "return_pct": 6.3,
+    "outcome_label": "Target 1 hit at $96",
+    "note": "Nikkei 225 surged +5.5% on June 15 on the Iran Islamabad Declaration signing (June 14) reopening Hormuz toll-free. Nikkei cleared 69,700 — well above the 67,000 target condition. All three Target 1 conditions met simultaneously: Iran ceasefire with Hormuz timeline signed, Nikkei above 67,000, and Japan import cost relief now confirmed structural. EWJ hit $96 intraday; closed near that level."
+  },
   "levels": {
     "entry_low": 89.0,
     "entry_high": 93.0,

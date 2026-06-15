@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-03",
   "expires_at": "2026-08-15",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "defense",
     "Iran",
@@ -52,7 +52,13 @@
     "Patriot",
     "interceptors"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-15",
+    "final_price": 176.0,
+    "return_pct": 1.1,
+    "outcome_label": "Thesis broken — Iran Islamabad Declaration signed June 14",
+    "note": "RTX invalidation condition explicitly triggered: 'formal Iran ceasefire announcement with Hormuz opening timeline confirmed.' The Islamabad Declaration signed June 14 by VP Vance and Iran Parliament Speaker Qalibaf includes the toll-free Hormuz reopening and removal of the US naval blockade. RTX was at $183.53 (June 13 close) before the deal announcement; estimated June 15 close ~$176 after the defense-sector selloff. Trade roughly flat from the $174 entry after RTX ran +5.5% during the conflict before the ceasefire erased the war premium."
+  },
   "levels": {
     "entry_low": 172,
     "entry_high": 178,
