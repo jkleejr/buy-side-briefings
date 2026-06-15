@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { todayET } from "@/lib/utils";
 import HeaderNav from "./header-nav";
 import LearnToggle from "./learn-toggle";
 import MobileNav from "./mobile-nav";
@@ -23,8 +24,7 @@ const NAV = [
 ];
 
 export default function SiteHeader() {
-  const now = new Date();
-  const dateStr = now.toISOString().slice(0, 10);
+  const dateStr = todayET();
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-black">
       <div className="mx-auto flex max-w-[1600px] items-center gap-3 px-2 py-1.5 text-[11px]">

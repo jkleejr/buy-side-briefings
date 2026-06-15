@@ -217,3 +217,14 @@ export function nowUtcHM(): string {
   const d = new Date();
   return `${String(d.getUTCHours()).padStart(2, "0")}:${String(d.getUTCMinutes()).padStart(2, "0")} UTC`;
 }
+
+/**
+ * Today's calendar date (YYYY-MM-DD) in US market time (America/New_York).
+ * Use this for any "what day is it now" comparison against briefing/calendar/
+ * dossier dates. Plain `new Date().toISOString()` runs in UTC on Vercel, which
+ * rolls past midnight ~8pm ET and silently shifts "today" forward by a day.
+ * `en-CA` formats as YYYY-MM-DD, and the timeZone option handles DST.
+ */
+export function todayET(): string {
+  return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+}

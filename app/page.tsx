@@ -14,6 +14,7 @@ import { getLatestAssetDaily } from "@/lib/asset-daily";
 import { getSpxDailyCloses } from "@/lib/markets";
 import { evaluateRegime } from "@/lib/regime";
 import { aggregateStats, monthsBackFor, scoreVerdict } from "@/lib/verdict-scoring";
+import { todayET } from "@/lib/utils";
 import PlaybookPanel from "@/components/playbook-panel";
 import RiskPanel from "@/components/risk-panel";
 import TrackGlanceStrip from "@/components/track-glance-strip";
@@ -96,7 +97,7 @@ export default async function Home() {
   // plus plan-level book risk (max bleed, exposure, theme concentration).
   const allOpps = getAllOpportunities();
   const planChecks = await classifyOpenOpportunities(allOpps);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayET();
   const todayEvents = getCalendarEvents().filter((e) => e.date === today);
   const openRisk = computeOpenRisk(allOpps);
 

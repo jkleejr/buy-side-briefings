@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { todayET } from "@/lib/utils";
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
 const FRED_BASE = "https://api.stlouisfed.org/fred/series/observations";
@@ -209,7 +210,7 @@ async function fredReleaseNext(
   id: number,
   apiKey: string,
 ): Promise<string | null> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayET();
   const url = `${FRED_RELEASE_DATES_URL}?release_id=${id}&api_key=${apiKey}&file_type=json&include_release_dates_with_no_data=true&realtime_start=${today}&sort_order=asc&limit=1`;
   try {
     const res = await fetch(url, { next: { revalidate: 21600 } }); // 6h cache

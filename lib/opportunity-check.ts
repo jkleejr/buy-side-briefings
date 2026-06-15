@@ -1,5 +1,6 @@
 import type { Opportunity } from "@/lib/data";
 import { getLivePrices } from "@/lib/markets";
+import { todayET } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
 // Live plan-vs-price check for open opportunities. The journal's `status`
@@ -171,7 +172,7 @@ export async function checkOpenOpportunities(
   );
   const symbols = [...new Set(open.map((o) => yahooSymbolFor(o.ticker)))];
   const prices = await getLivePrices(symbols);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayET();
 
   const out: Record<string, LiveCheck> = {};
   for (const o of open) {
