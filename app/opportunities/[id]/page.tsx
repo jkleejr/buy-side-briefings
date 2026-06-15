@@ -5,6 +5,7 @@ import { getDailyCloses } from "@/lib/markets";
 import { checkOpenOpportunities, yahooSymbolFor } from "@/lib/opportunity-check";
 import LevelsChart from "@/components/levels-chart";
 import LiveCheckBadges from "@/components/live-check-badges";
+import TradePlanCard from "@/components/trade-plan-card";
 import Panel from "@/components/panel";
 
 export const revalidate = 300;
@@ -180,6 +181,9 @@ export default async function OpportunityDetailPage({
           </div>
         </div>
       </Panel>
+
+      {/* #1 — risk-based sizing + reward:risk computed from the numeric levels */}
+      <TradePlanCard opportunity={o} />
 
       <Panel code="WHY" title="Thesis">
         <p className="p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">

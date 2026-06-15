@@ -22,6 +22,7 @@ import {
 } from "@/lib/utils";
 import { buildPaperPortfolio } from "@/lib/paper-portfolio";
 import EquityCurveChart from "@/components/equity-curve-chart";
+import ExpectancyPanel from "@/components/expectancy-panel";
 import Panel from "@/components/panel";
 import Tooltip from "@/components/tooltip";
 import VerdictMarkerChart, {
@@ -486,6 +487,9 @@ export default async function TrackRecordPage() {
           )}
         </Panel>
       )}
+
+      {/* ---- #2 Edge & expectancy: the bottom-line profitability stats ---- */}
+      <ExpectancyPanel opps={opps} />
 
       {/* ---- Calibration: does stated conviction predict outcomes? ---- */}
       <div className="grid grid-cols-1 gap-1 lg:grid-cols-12">

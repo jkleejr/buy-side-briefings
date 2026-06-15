@@ -3,6 +3,7 @@ import { getAllOpportunities } from "@/lib/data";
 import { checkOpenOpportunities } from "@/lib/opportunity-check";
 import Panel from "@/components/panel";
 import OpportunitiesList from "@/components/opportunities-list";
+import RankedOpportunities from "@/components/ranked-opportunities";
 
 export const metadata = { title: "Opportunities — Buy-Side Briefings" };
 export const revalidate = 300;
@@ -74,6 +75,9 @@ export default async function OpportunitiesPage() {
           </div>
         </div>
       </div>
+
+      {/* #3 — rank the open book by expected value per unit of risk */}
+      <RankedOpportunities items={items} />
 
       <Panel code="HOW" title="How to read these">
         <div className="space-y-1.5 p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
