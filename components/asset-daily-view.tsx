@@ -10,6 +10,7 @@ import type {
   KeyLevel,
 } from "@/lib/asset-daily";
 import { cn, formatLevel, formatPct } from "@/lib/utils";
+import LevelsGauge from "./levels-gauge";
 import Panel from "./panel";
 
 // ---- small presentational helpers -----------------------------------------
@@ -255,6 +256,9 @@ export default function AssetDailyView({
             </div>
           </div>
         </div>
+
+        {/* Spatial read of where price sits in its level structure. */}
+        <LevelsGauge price={snap.price} currency={cur} levels={today.key_levels} />
 
         {/* The two answers the reader came for */}
         <div className="grid grid-cols-1 gap-2 p-2 sm:grid-cols-2">

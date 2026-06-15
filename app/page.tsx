@@ -20,6 +20,7 @@ import RiskPanel from "@/components/risk-panel";
 import TrackGlanceStrip from "@/components/track-glance-strip";
 import VerdictCard from "@/components/verdict-card";
 import AssetCallsPanel from "@/components/asset-calls-panel";
+import DecisionBar from "@/components/decision-bar";
 import MarketKpiStrip from "@/components/market-kpi-strip";
 import RegimeRiskBars from "@/components/regime-risk-bars";
 import BriefingList from "@/components/briefing-list";
@@ -98,7 +99,20 @@ export default async function Home() {
   const allOpps = getAllOpportunities();
   const planChecks = await classifyOpenOpportunities(allOpps);
   const today = todayET();
-  const todayEvents = getCalendarEvents().filter((e) => e.date === today);
+  const calendarEvents = getCalendarEvents();
+  const todayEvents = calendarEvents.filter((e) => e.date === today);
+  const upcomingEvents = calendarEvents
+    .filter((e) => e.date >= today)
+    .sort((a, b) => a.date.localeCompare(b.date));
+  const nextCatalyst = upcomingEvents.length
+    ? {
+        label: upcomingEvents[0].label,
+        date: upcomingEvents[0].date,
+        days: Math.round(
+          (Date.parse(upcomingEvents[0].date) - Date.parse(today)) / 86_400_000,
+        ),
+      }
+    : null;
   const openRisk = computeOpenRisk(allOpps);
 
   const portfolio = buildPaperPortfolio(allOpps, spxSeries);
@@ -117,6 +131,9 @@ export default async function Home() {
           <code>data/briefings/</code> and <code>data/verdicts/</code>.
         </div>
       )}
+
+      {/* The answer first: standing call, every desk, and the next catalyst. */}
+      <DecisionBar verdict={verdict} desks={assetCalls} nextCatalyst={nextCatalyst} />
 
       {/* At-a-glance market header — fills the top edge-to-edge, no dead space. */}
       <MarketKpiStrip verdict={verdict} crypto={crypto} />
