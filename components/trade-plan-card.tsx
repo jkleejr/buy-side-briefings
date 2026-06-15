@@ -1,5 +1,5 @@
 import type { Opportunity } from "@/lib/data";
-import { computeTradePlan } from "@/lib/trade-math";
+import { computeTradePlan, kellyFraction } from "@/lib/trade-math";
 import { cn, formatLevel, formatPct } from "@/lib/utils";
 import Panel from "./panel";
 
@@ -11,9 +11,19 @@ const px = (n: number) => `$${formatLevel(n)}`;
  * risk-multiplied plan: reward:risk per target, what the published size really
  * risks, and how big a position 1% book-risk actually implies.
  */
-export default function TradePlanCard({ opportunity }: { opportunity: Opportunity }) {
+export default function TradePlanCard({
+  opportunity,
+  winProb,
+}: {
+  opportunity: Opportunity;
+  /** Calibrated win probability for this idea's conviction (for Kelly sizing). */
+  winProb?: number;
+}) {
   const plan = computeTradePlan(opportunity);
   if (!plan) return null;
+
+  const kelly =
+    winProb != null && plan.bestRR != null ? kellyFraction(winProb, plan.bestRR) : null;
 
   const riskedPer10k = ((plan.bookRiskAtStatedPct / 100) * 10_000).toFixed(0);
   const sizeFlag = plan.bookRiskAtStatedPct > plan.riskBudgetPct * 1.5;
@@ -65,6 +75,23 @@ export default function TradePlanCard({ opportunity }: { opportunity: Opportunit
           </div>
         ))}
       </div>
+
+      {kelly != null && (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 border-t border-[var(--border)] px-2.5 py-1.5 font-mono text-[10px]">
+          <span className="uppercase tracking-widest text-[var(--amber-dim)]">Kelly</span>
+          <span className="text-[var(--foreground)]">
+            full <span className="font-bold tabular-nums">{(kelly * 100).toFixed(1)}%</span>
+          </span>
+          <span className="text-[var(--cyan-term)]">
+            half-Kelly{" "}
+            <span className="font-bold tabular-nums">{((kelly / 2) * 100).toFixed(1)}%</span>
+          </span>
+          <span className="text-[var(--dim)]">
+            at {(winProb! * 100).toFixed(0)}% win × {plan.bestRR?.toFixed(1)}R —{" "}
+            {kelly <= 0 ? "no edge, no bet" : "half-Kelly is the practical default"}
+          </span>
+        </div>
+      )}
 
       {plan.targets.length > 0 && (
         <table className="w-full border-t border-[var(--border)] font-mono text-[11px]">

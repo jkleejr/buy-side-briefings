@@ -11,6 +11,7 @@ import type {
 } from "@/lib/asset-daily";
 import { cn, formatLevel, formatPct } from "@/lib/utils";
 import LevelsGauge from "./levels-gauge";
+import OptionsStructureCard from "./options-structure-card";
 import Panel from "./panel";
 
 // ---- small presentational helpers -----------------------------------------
@@ -380,6 +381,17 @@ export default function AssetDailyView({
           </p>
         </div>
       </Panel>
+
+      {/* #7 — defined-risk options structure from IV + levels ($-quoted desks) */}
+      {cur === "$" && (
+        <OptionsStructureCard
+          price={snap.price}
+          action={today.decision.action}
+          ivPct={today.positioning.iv}
+          levels={today.key_levels}
+          currency={cur}
+        />
+      )}
 
       {/* ===================== BULL vs BEAR ===================== */}
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">

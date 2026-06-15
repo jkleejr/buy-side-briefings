@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllOpportunities, getOpportunity, type Opportunity } from "@/lib/data";
+import { convictionWinProb } from "@/lib/trade-math";
 import { getDailyCloses } from "@/lib/markets";
 import { checkOpenOpportunities, yahooSymbolFor } from "@/lib/opportunity-check";
 import LevelsChart from "@/components/levels-chart";
@@ -183,7 +184,7 @@ export default async function OpportunityDetailPage({
       </Panel>
 
       {/* #1 — risk-based sizing + reward:risk computed from the numeric levels */}
-      <TradePlanCard opportunity={o} />
+      <TradePlanCard opportunity={o} winProb={convictionWinProb(getAllOpportunities())[o.conviction]} />
 
       <Panel code="WHY" title="Thesis">
         <p className="p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">

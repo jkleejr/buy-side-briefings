@@ -81,6 +81,18 @@ export function computeTradePlan(
   };
 }
 
+/**
+ * Kelly-optimal fraction of bankroll for a bet that wins `payoff`R with
+ * probability `winProb` and loses 1R otherwise: f* = p − (1−p)/b. Returns 0
+ * when the edge is non-positive. Half-Kelly is the practical sizing default —
+ * most of the growth, far less of the variance.
+ */
+export function kellyFraction(winProb: number, payoff: number): number {
+  if (!(payoff > 0)) return 0;
+  const f = winProb - (1 - winProb) / payoff;
+  return Math.max(0, Math.min(1, f));
+}
+
 // ---- #2 Edge & expectancy ------------------------------------------------
 
 const CLOSED_STATUSES = ["target_hit", "stopped_out", "thesis_broken", "expired"];
@@ -123,11 +135,30 @@ export type ExpectancyStats = {
   /** Expected return per trade, percent. */
   expectancyPct: number | null;
   sharpe: number | null;
+  /** Expected return per trade in R (realized return ÷ planned stop distance). */
+  expectancyR: number | null;
+  /** Closed trades for which an R could be computed (needed numeric levels). */
+  nR: number;
 };
 
 export function expectancyStats(opps: Opportunity[]): ExpectancyStats {
   const rs = closedReturns(opps);
   const n = rs.length;
+
+  // Realized R per trade = realized return ÷ the planned stop distance, for the
+  // closed trades that carried numeric levels. The cross-trade profitability unit.
+  const rMultiples: number[] = [];
+  for (const o of opps) {
+    if (
+      o.outcome == null ||
+      typeof o.outcome.return_pct !== "number" ||
+      !CLOSED_STATUSES.includes(o.status)
+    )
+      continue;
+    const plan = computeTradePlan(o);
+    if (!plan || !(plan.stopDistPct > 0)) continue;
+    rMultiples.push(o.outcome.return_pct / plan.stopDistPct);
+  }
   const winsArr = rs.filter((r) => r > 0);
   const lossArr = rs.filter((r) => r <= 0);
   const sumWin = winsArr.reduce((a, b) => a + b, 0);
@@ -150,6 +181,8 @@ export function expectancyStats(opps: Opportunity[]): ExpectancyStats {
     profitFactor,
     expectancyPct: n ? mean(rs) : null,
     sharpe: perTradeSharpe(rs),
+    expectancyR: rMultiples.length ? mean(rMultiples) : null,
+    nR: rMultiples.length,
   };
 }
 
