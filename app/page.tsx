@@ -63,6 +63,7 @@ export default async function Home() {
     getLatestAssetDaily("nvda"),
     getLatestAssetDaily("btc"),
     getLatestAssetDaily("skhynix"),
+    getLatestAssetDaily("spcx"),
   ].filter((d): d is NonNullable<typeof d> => d !== null);
 
   // Accountability strip: score every verdict against SPX (same math as

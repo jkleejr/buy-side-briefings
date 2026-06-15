@@ -13,7 +13,7 @@ const DATA_DIR = path.resolve(process.cwd(), "data");
 // Each day is one JSON file at data/asset-daily/<asset>/<YYYY-MM-DD>.json.
 // ---------------------------------------------------------------------------
 
-export type AssetId = "nvda" | "btc" | "skhynix";
+export type AssetId = "nvda" | "btc" | "skhynix" | "spcx";
 
 /** Who was paid in today's session. */
 export type DayWinner = "bulls" | "bears" | "flat";

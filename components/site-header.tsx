@@ -11,6 +11,7 @@ const NAV = [
   { href: "/nvidia", code: "NVDA", label: "NVIDIA" },
   { href: "/bitcoin", code: "BTC", label: "Bitcoin" },
   { href: "/skhynix", code: "HYNIX", label: "SK Hynix" },
+  { href: "/spacex", code: "SPCX", label: "SpaceX" },
   { href: "/opportunities", code: "OPS", label: "Opportunities" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
   { href: "/crypto", code: "CRYPTO", label: "Crypto" },

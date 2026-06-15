@@ -317,10 +317,10 @@ export default function AssetDailyView({
       >
         <div className="space-y-2 p-2">
           <div className="grid grid-cols-2 gap-1 sm:grid-cols-4">
-            {today.positioning.iv !== undefined && (
+            {today.positioning.iv != null && (
               <Stat label={isCrypto ? "Implied vol" : "ATM IV"} value={`${today.positioning.iv}%`} />
             )}
-            {today.positioning.put_call !== undefined && (
+            {today.positioning.put_call != null && (
               <Stat
                 label="Put/Call"
                 value={today.positioning.put_call.toFixed(2)}

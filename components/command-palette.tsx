@@ -16,6 +16,7 @@ const DESTINATIONS: Destination[] = [
   { href: "/nvidia", code: "NVDA", label: "NVIDIA daily brief", go: "n" },
   { href: "/bitcoin", code: "BTC", label: "Bitcoin daily brief", go: "b" },
   { href: "/skhynix", code: "HYNIX", label: "SK Hynix daily brief", go: "h" },
+  { href: "/spacex", code: "SPCX", label: "SpaceX daily brief", go: "s" },
   { href: "/opportunities", code: "OPS", label: "Opportunities", go: "o" },
   { href: "/briefings", code: "BRIEF", label: "Briefings archive", go: "r" },
   { href: "/crypto", code: "CRYPTO", label: "Crypto briefings + charts", go: "c" },

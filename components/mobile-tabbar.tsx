@@ -8,6 +8,7 @@ const TABS = [
   { href: "/nvidia", code: "NVDA" },
   { href: "/bitcoin", code: "BTC" },
   { href: "/skhynix", code: "HYNIX" },
+  { href: "/spacex", code: "SPCX" },
   { href: "/opportunities", code: "OPS" },
   { href: "/track-record", code: "TRACK" },
 ];

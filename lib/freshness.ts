@@ -8,7 +8,7 @@ import { getLatestAssetDaily, type AssetId } from "@/lib/asset-daily";
 // instead of presenting a two-day-old call as today's.
 // ---------------------------------------------------------------------------
 
-const ASSETS: AssetId[] = ["nvda", "btc", "skhynix"];
+const ASSETS: AssetId[] = ["nvda", "btc", "skhynix", "spcx"];
 
 export type Freshness = {
   /** Newest date across markets verdicts and all asset dossiers (YYYY-MM-DD). */

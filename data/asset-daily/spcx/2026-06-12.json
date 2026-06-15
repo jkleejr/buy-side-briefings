@@ -1,0 +1,112 @@
+{
+  "asset": "spcx",
+  "symbol": "SPCX",
+  "name": "SpaceX",
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T20:30:00Z",
+  "is_seed": false,
+  "currency_symbol": "$",
+  "day_winner": "bulls",
+  "day_summary": "SpaceX debuted on the Nasdaq under SPCX in the largest IPO in market history — ~555.6M shares priced at $135, raising ~$75B (lifted to ~$85.7B after the greenshoe), at a ~$1.75T valuation. The stock opened at $150, ripped to an intraday high of $176.52 (~+31% over the offer) and closed at $160.95, up +19.2% over the $135 IPO price. Demand was reportedly ~4x oversubscribed (~$250B in interest), and marquee buyers — Ron Baron (+$1B, ~$25B total stake) and Gina Rinehart (+$1B) — stepped in. Anyone who got the IPO allocation at $135 won the day outright; the open-market chase above $170 is where the risk lives.",
+  "long_pnl": "+19.2% for IPO allocants ($135 → $160.95 close); intraday flippers who sold the $176.52 spike banked ~+31% over the offer",
+  "short_pnl": "n/a — no borrow, no options, no short interest on a Day-1 listing; bears can only watch from the sideline until a chain and float develop",
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "event · 2-4 weeks (float-normalization window)",
+    "rationale": "Day 1 of a record IPO is not the place to chase. The running opportunity thesis (long-spcx-float-normalization-msci-passive) is explicit: do NOT buy into Day-1 chaos — wait for the float-normalization window June 16-18 (Day 3-5), entry zone $130-145, after flippers and greenshoe sellers clear. The +19% close at $160.95 is well above that entry band, so the disciplined call today is HOLD/WAIT, not buy. The MSCI early-inclusion passive bid begins June 13 and should help establish a floor near or above the $135 offer; let it work. Only ~4% float means moves are violent in both directions, and the first real fundamental anchor — earnings ~Sept 2 — is months out. Size any eventual entry small (~2%) with a $118 daily-close stop."
+  },
+  "snapshot": {
+    "price": 160.95,
+    "change_pct": 19.22,
+    "change_abs": 25.95,
+    "prev_close": 135.00,
+    "day_low": 150.00,
+    "day_high": 176.52,
+    "week52_low": 135.00,
+    "week52_high": 176.52,
+    "volume": "very heavy (Day-1 listing turnover)",
+    "market_cap": "~$1.75T",
+    "extra": [
+      { "label": "IPO offer price", "value": "$135", "tone": "neutral" },
+      { "label": "Open", "value": "$150 (+11%)", "tone": "up" },
+      { "label": "Raised (post-greenshoe)", "value": "~$85.7B", "tone": "up" },
+      { "label": "Public float", "value": "~4%", "tone": "neutral" },
+      { "label": "P/Revenue (2025 ~$18.7B)", "value": "~94x", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": null,
+    "iv_note": "Newly listed — no meaningful listed-options history yet; any early chain will be thin and ultra-wide. No IV rank to quote.",
+    "put_call": null,
+    "short_interest": "negligible / not yet established — borrow is scarce on a Day-1 IPO; treat short interest data as not-yet-meaningful",
+    "max_pain": "n/a — no established monthly expiry yet",
+    "notable_flow": "Flow is allocation-and-flip mechanics, not derivatives. IPO allocants who got $135 are sitting on +19%; intraday momentum chased the $176.52 high before a fade into the $160.95 close. The structural story is the ~4% float meeting forced passive demand — MSCI early inclusion begins June 13 — which is why small buy pressure produces outsized moves. Honest read: no put/call ratio or IV figure exists to cite on Day 1."
+  },
+  "what_traders_are_doing": "Two camps. IPO allocants are deciding whether to flip the +19% or hold for the MSCI passive bid; the disciplined ones are holding a core and trimming the spike. Open-market traders who missed the $135 book are debating whether to chase $160-176 or wait for the Day 3-5 float-normalization dip — the running thesis says wait. Marquee long-term holders (Baron, Rinehart) added size, signaling conviction at the franchise level. With no borrow and no real chain, there is no organized bear trade yet; skeptics are simply staying out and pointing at the ~94x revenue multiple.",
+  "news": [
+    {
+      "label": "SpaceX IPO takeaways: SPCX closes at ~$161, jumping ~19% over the $135 offer after a record Nasdaq debut",
+      "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+      "source": "CNBC",
+      "sentiment": "positive"
+    },
+    {
+      "label": "What did SpaceX stock close at after Day 1? SPCX opened $150, hit an intraday high above $176, and closed $160.95 (+19.2%) — the largest IPO ever at a ~$1.75T valuation",
+      "url": "https://www.fool.com/investing/2026/06/12/what-did-spacex-stock-close-at-after-its-first-day-of-trading/",
+      "source": "The Motley Fool",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SPCX soars in historic Nasdaq IPO debut — opened ~$150, touched an intraday high above $176, settled ~+19% over the $135 offer; world's largest IPO",
+      "url": "https://www.timothysykes.com/news/space-exploration-technologies-corp-spcx-news-2026_06_15/",
+      "source": "Timothy Sykes",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SpaceX IPO 2026 guide: ~555.6M shares at $135 raising ~$75B (lifted via greenshoe), ~$1.75T valuation, ~4% public float, MSCI early inclusion from June 13",
+      "url": "https://intellectia.ai/blog/spacex-ipo-2026-guide",
+      "source": "Intellectia",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "SpaceX S-1: 2025 revenue ~$18.7B (+33% YoY) with Starlink driving subscription growth — the ~$1.75T price implies ~94x revenue",
+      "url": "https://fortune.com/2026/05/20/spacex-finally-files-ipo-prospectus-reveals-revenue-is-up-but-losses-are-too/",
+      "source": "Fortune",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Volatile and supply-driven. With only ~4% float and MSCI passive buying beginning June 13, small flows move the price hard in both directions. Expect the classic oversubscribed-IPO pattern: a Day 1-2 spike followed by a Day 3-5 consolidation as flippers and the greenshoe clear. The plan is to skip the chaos and watch the $130-145 float-normalization zone June 16-18, with the $135 offer as the line that defines whether allocation quality holds. A daily close under $118 would invalidate the long thesis.",
+    "long_term": "A genuine megacap space/satellite franchise — Starlink (5M+ subscribers growing ~40%), Starship, and Starshield military work — but priced for a 2029-2032 outcome at ~94x 2025 revenue. The first real fundamental anchor is earnings ~Sept 2, 2026; until then the stock is a story-and-flow vehicle. Long-term bulls (Baron, Rinehart) are positioning for the decade; the valuation demands flawless execution and leaves little margin for a missed Starship milestone or a broad multiple-compression event."
+  },
+  "bull_case": [
+    "Largest IPO in history closed +19.2% over offer at $160.95 — demand was ~4x oversubscribed (~$250B), and marquee buyers (Baron +$1B, Rinehart +$1B) added at the debut.",
+    "Only ~4% public float meets MSCI early-inclusion passive demand starting June 13 — index funds must buy regardless of price, and thin supply amplifies the bid.",
+    "Real, growing fundamentals for an IPO: 2025 revenue ~$18.7B (+33%), Starlink 5M+ subscribers growing ~40%, plus Starship and Starshield optionality.",
+    "Wedbush's Dan Ives framed the listing as a 'watershed moment' for tech — SpaceX legitimizes 'space is investable' and could pull capital into the theme."
+  ],
+  "bear_case": [
+    "~94x 2025 revenue at a ~$1.75T valuation is priced for a 2029-2032 future — any 2026 multiple-compression event hits SPCX harder than established megacaps.",
+    "The intraday fade from $176.52 to a $160.95 close shows the open-market chase already met supply; chasing above $170 on Day 1 is poor risk/reward.",
+    "A ~4% float cuts both ways — the same thinness that powers the upside can produce violent air-pockets on any disappointment.",
+    "First earnings aren't until ~Sept 2; until then there is no fundamental anchor, and a 180-day insider lock-up expiring ~December 2026 looms as future supply."
+  ],
+  "key_levels": [
+    { "label": "Debut intraday high", "level": "$176.52", "kind": "resistance" },
+    { "label": "Day-1 close", "level": "$160.95", "kind": "pivot" },
+    { "label": "Open", "level": "$150", "kind": "support" },
+    { "label": "IPO offer price / thesis line-in-sand", "level": "$135", "kind": "support" },
+    { "label": "Float-normalization entry zone (Jun 16-18)", "level": "$130-145", "kind": "support" },
+    { "label": "Stop-loss (daily close) — long thesis invalidation", "level": "$118", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-13", "label": "MSCI early-inclusion passive bid begins (T+1) — forced index buying into a ~4% float", "importance": "high" },
+    { "date": "2026-06-16", "label": "Float-normalization window opens (Day 3-5) — flippers/greenshoe clearing; watch $130-145 entry zone", "importance": "high" },
+    { "date": "2026-06-17", "label": "FOMC rate decision — macro gate for all high-multiple growth names", "importance": "medium" },
+    { "date": "2026-06-19", "label": "Juneteenth — US market holiday (no session); thins liquidity into Friday", "importance": "low" },
+    { "date": "2026-09-02", "label": "First post-IPO earnings (approx.) — the first true fundamental anchor for the valuation", "importance": "high" },
+    { "date": "2026-12-09", "label": "180-day insider lock-up expiry (approx.) — potential supply overhang", "importance": "medium" }
+  ],
+  "analysis": "## The largest IPO ever printed\n\nSpaceX began trading on the Nasdaq as **SPCX** — the [largest IPO in market history](https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html). About **555.6M shares** priced at **$135**, raising **~$75B** (lifted to **~$85.7B** after the greenshoe) at a **~$1.75T** valuation. The stock [opened at $150, touched an intraday high of $176.52, and closed at $160.95 — up +19.2% over the offer](https://www.fool.com/investing/2026/06/12/what-did-spacex-stock-close-at-after-its-first-day-of-trading/). Demand was ~4x oversubscribed (~$250B), and marquee holders **Ron Baron (+$1B)** and **Gina Rinehart (+$1B)** added at the debut.\n\n## Bulls won Day 1 — but the chase is the risk\n\nIf you got the **$135 allocation**, you won outright: +19% on the close, +31% if you flipped the $176.52 spike. The open-market chase above $170 is a different trade. The intraday fade back to $160.95 shows the momentum bid already met supply.\n\n## The discipline is the thesis\n\nThe running opportunity file is explicit: **do NOT buy Day 1**. The edge is in the **float-normalization window June 16-18** ($130-145 entry), after flippers and the greenshoe clear, with the [MSCI early-inclusion passive bid](https://intellectia.ai/blog/spacex-ipo-2026-guide) (begins **June 13**) helping set a floor near the $135 offer. With only a **~4% float**, flows move price violently both ways. The call today is **HOLD/WAIT at low conviction**: let Day 1-2 froth bleed off, watch $130-145, size small (~2%) with a **$118 daily-close stop**. The first real fundamental check — [2025 revenue ~$18.7B, +33%](https://fortune.com/2026/05/20/spacex-finally-files-ipo-prospectus-reveals-revenue-is-up-but-losses-are-too/) against a ~94x multiple — won't be tested until earnings around **Sept 2**."
+}

@@ -3,7 +3,7 @@ import type { AssetDaily, DayWinner, TradeAction } from "@/lib/asset-daily";
 import { cn, formatLevel, formatPct } from "@/lib/utils";
 import Panel from "./panel";
 
-const HREF: Record<string, string> = { nvda: "/nvidia", btc: "/bitcoin", skhynix: "/skhynix" };
+const HREF: Record<string, string> = { nvda: "/nvidia", btc: "/bitcoin", skhynix: "/skhynix", spcx: "/spacex" };
 
 const WINNER: Record<DayWinner, { emoji: string; label: string; text: string }> = {
   bulls: { emoji: "🐂", label: "Bulls", text: "text-[var(--up)]" },
