@@ -1,7 +1,9 @@
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type {
   AssetDaily,
+  AssetId,
   DayWinner,
   TradeAction,
   NewsItem,
@@ -15,6 +17,16 @@ import Panel from "./panel";
 function changeTone(n: number): string {
   return n > 0 ? "text-[var(--up)]" : n < 0 ? "text-[var(--down)]" : "text-[var(--dim)]";
 }
+
+// Cross-desk reads: the other surfaces an investor in this name should glance at.
+const RELATED: Partial<Record<AssetId, { label: string; href: string }[]>> = {
+  nvda: [{ label: "SK Hynix · HBM supplier", href: "/skhynix" }],
+  skhynix: [{ label: "NVIDIA · key customer", href: "/nvidia" }],
+  btc: [{ label: "Crypto desk", href: "/crypto" }],
+  spcx: [
+    { label: "SPCX trade idea", href: "/opportunities/long-spcx-float-normalization-msci-passive-2026-06-12" },
+  ],
+};
 
 const WINNER_META: Record<
   DayWinner,
@@ -214,6 +226,22 @@ export default function AssetDailyView({
               Daily investor brief · {today.date}
               {today.is_seed ? " · seed" : ""}
             </div>
+            {RELATED[today.asset]?.length ? (
+              <div className="mt-1.5 flex flex-wrap items-center gap-1">
+                <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
+                  Related
+                </span>
+                {RELATED[today.asset]!.map((r) => (
+                  <Link
+                    key={r.href}
+                    href={r.href}
+                    className="border border-[var(--border)] px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)] transition-colors hover:border-[var(--amber-dim)] hover:text-[var(--amber)]"
+                  >
+                    {r.label}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
           </div>
           <div className="text-right">
             <div className="glow-fg font-mono text-3xl font-bold tabular-nums text-[var(--foreground)]">
