@@ -1,52 +1,39 @@
 {
   "events": [
     {
-      "date": "2026-06-15",
-      "label": "ADBE CFO Dan Durn final day — management transition watch",
-      "kind": "OTHER",
-      "tickers": ["ADBE"],
-      "note": "CFO exits June 15; dual C-suite vacancy (CEO search ongoing); Q2 beat-and-raise confirmed AI additive thesis; watch for volume-exhaustion candle at $165-172 as entry signal; management uncertainty overhang 3-6 months; stop $155"
-    },
-    {
-      "date": "2026-06-15",
-      "label": "NVDA conditional add — VIX close below 17 is the trigger today",
-      "kind": "SIGNAL",
-      "tickers": ["NVDA"],
-      "note": "Iran deal signed June 14 (criteria #1 met); VIX 17.68 pre-market, need CLOSE below 17 (criteria #2 not yet met); if VIX closes below 17 today, add NVDA at $210-220; stop $195 daily close; if VIX closes 17.0-17.5, defer to June 16 check-in"
-    },
-    {
       "date": "2026-06-16",
-      "label": "FOMC Day 1 begins; SPCX Day 3 float normalization entry window opens",
+      "label": "FOMC Day 1 begins; SPCX Day 3 float normalization entry window",
       "kind": "FOMC",
       "tickers": ["TBT", "QQQ", "XLF", "SPCX"],
-      "note": "No FOMC announcement June 16; pre-decision quiet; SPCX Day 3 of trading — entry window opens (revised entry zone $155-168 pullback from Day 2 level of $171.72; stop $140); NVDA VIX trigger check-in if not executed June 15"
+      "note": "No FOMC announcement June 16; pre-decision quiet session; SPCX Day 3 of trading — revised entry zone $175-185 pullback (prior $155-168 zone obsolete after Day 2 surged to $192.50); NVDA add NOW active (VIX 16.20 trigger confirmed June 15); if SPCX no pullback by Day 4, skip the normalization position"
     },
     {
       "date": "2026-06-17",
-      "label": "FOMC decision 2:00 PM + Warsh press conference — first as Fed Chair; dot plot status unknown",
+      "label": "FOMC decision 2:30 PM ET + Warsh first press conference — dot plot status TBD",
       "kind": "FOMC",
-      "time_et": "2:00 PM",
+      "time_et": "2:30 PM",
       "tickers": ["TBT", "TLT", "QQQ", "XLF", "IWM", "NVDA"],
-      "note": "98.2% hold at 3.50-3.75%; Warsh may eliminate dot plot; three paths: (1) neutral + dot plot eliminated → SPX 7,600+, BUY conviction to HIGH, reduce TBT 50%; (2) hawkish → 30Y to 5.10-5.25%, BUY to HOLD; (3) dot plot kept + neutral → modest relief. TBT is the hedge through the presser."
+      "note": "99.4% hold at 3.50-3.75%; Warsh may modify or eliminate dot plot at this SEP meeting; CME FedWatch prices 70% probability of year-end hike (most hawkish this cycle); three paths: (1) neutral language → BUY to HIGH conviction, SPX 7,600+, reduce TBT 50%; (2) hawkish/opaque → 30Y to 5.05-5.20%, BUY to HOLD; (3) mixed dot-plot modification + interpretable language → medium-term constructive, BUY medium maintained. Be hedged (TBT) through 2:30 PM"
     },
     {
       "date": "2026-06-19",
-      "label": "US markets closed — Juneteenth",
-      "kind": "HOLIDAY"
+      "label": "US markets closed — Juneteenth; Iran formal signing ceremony in Geneva",
+      "kind": "HOLIDAY",
+      "note": "Market holiday. Iran formal signing ceremony scheduled in Geneva — Iran's Deputy FM confirmed Tehran will not implement the deal until signed; formal signing activates the 60-day implementation window (Hormuz mines clearance, sanctions relief, nuclear framework talks). Signing failure = Brent $88-92+, STEP ASIDE by Monday open. Monitor Sunday evening futures for first signal."
     },
     {
       "date": "2026-08-13",
-      "label": "Iran-US MOU 60-day implementation deadline — Hormuz full reopening + sanctions relief",
+      "label": "Iran-US Islamabad Declaration 60-day deadline — Hormuz full reopening + sanctions relief",
       "kind": "GEO",
       "tickers": ["XLE", "QQQ", "BTC", "NVDA"],
-      "note": "Islamabad Declaration signed June 14; 60-day window expires August 13; Hormuz must be operationally open and US sanctions relief on Iranian oil active by this date; failure = oil spike reversal and energy re-rally; key positioning watch for summer"
+      "note": "Deal operational from June 19 signing; 60-day window expires August 13; Hormuz must be mine-cleared and operationally open for tanker traffic AND US sanctions relief on Iranian oil must be active by this date; failure = oil spike reversal and energy re-rally; key summer positioning watch"
     },
     {
       "date": "2026-09-02",
       "label": "SPCX first earnings as a public company (approx.) — Starlink ARR + Starship cadence",
       "kind": "EARNINGS",
       "tickers": ["SPCX"],
-      "note": "First print since the June 12 IPO; the market has no public model yet, so guidance sets the multiple. Watch Starlink subscriber/ARR growth and Starship launch cadence vs. the ~$1.75T valuation. Binary in both directions; date approximate pending company confirmation."
+      "note": "First print since the June 12 IPO; the market has no public model yet, so guidance sets the multiple. Watch Starlink subscriber/ARR growth and Starship launch cadence vs. the ~$2.5T market cap implied by the $192.50 Day 2 close. Binary in both directions; date approximate pending company confirmation."
     },
     {
       "date": "2026-12-09",

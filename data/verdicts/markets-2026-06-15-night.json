@@ -1,0 +1,164 @@
+{
+  "routine": "markets",
+  "date": "2026-06-15",
+  "window": "night",
+  "generated_at": "2026-06-15T23:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY CONFIRMED — SPX 7,554 First Regime Close; Dow Record; NVDA Add Trigger Active; Warsh FOMC Is the Gate",
+    "conviction": "medium",
+    "rationale_short": "The June 15 morning bull case (55% probability) materialized in full: SPX closed at 7,554.29 — the first close above the 7,460 regime floor since June 9 — and VIX compressed to 16.20, activating the NVDA conditional add trigger for the first time this cycle. The Dow Jones hit an all-time closing record (51,671.03). Iran ships are starting to move through the Strait of Hormuz though mines remain and full flow normalization could take weeks; formal signing ceremony moves to June 19 in Geneva. BUY at medium conviction. HIGH conviction requires a second SPX close above 7,460 on June 16 AND a neutral Warsh FOMC June 17 outcome — both conditions remain outstanding.",
+    "supporting_data": [
+      {
+        "label": "SPX 7,554.29 (+1.65%), Nasdaq 26,683.94 (+3.07%, best single session since March 31), Dow 51,671.03 (+0.92%, +468.77 pts, ALL-TIME RECORD CLOSE) — first SPX close above 7,460 regime floor since June 9; all five regime indicators cleared simultaneously for the first time in this briefing cycle",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-15-2026"
+      },
+      {
+        "label": "VIX 16.20 close (-14.3% from June 12 close of 18.90; -8.4% from today's pre-market 17.68) — first VIX close below 17.00 this cycle; NVDA conditional add trigger fully activated; DXY 97.94 well below 100; 10Y 4.42% (-7 bps); 30Y ~4.85% est. (-12 bps, on Iran deal bond rally)",
+        "url": "https://www.cboe.com/tradable-products/vix/"
+      },
+      {
+        "label": "Trump confirms 'Ships are starting to move, many loaded up with Oil, out of the Strait of Hormuz' — 107-day blockade ends; Brent $83.01 (-4.95%), WTI $80.23 (-5.48%); formal signing ceremony scheduled June 19 in Geneva; Iran's Deputy FM stated Tehran will not implement until signed",
+        "url": "https://www.aljazeera.com/news/2026/6/15/trump-says-ships-starting-to-move-through-strait-of-hormuz"
+      },
+      {
+        "label": "Hormuz reopening caveat: mines remain in the Strait; ship captains cautious about safe passage; analysts warn full oil flow normalization could take weeks or months even with the deal signed — the Brent $83 floor is not structurally guaranteed",
+        "url": "https://www.pbs.org/newshour/amp/world/even-with-a-deal-to-reopen-the-strait-of-hormuz-it-could-take-weeks-or-months-for-oil-to-fully-flow"
+      },
+      {
+        "label": "NVDA $212.46 (+3.5%) — VIX close at 16.20 fully activates the conditional add established June 10: add $210–220 is now executable; Apple/Google Private Cloud Compute demand (Blackwell B200 for Siri) and KKR-Nvidia $10B+ infrastructure commitment intact",
+        "url": "https://www.gurufocus.com/news/8917023/nvidia-corp-nvda-shares-surge-35-what-gf-score-of-96-tells-investors"
+      },
+      {
+        "label": "Warsh opens first FOMC meeting June 16 — rate hold at 3.50–3.75% virtually certain (99.4%); CME FedWatch shows 70% probability of at least one hike by year-end 2026 (hawkish backdrop); dot plot may be modified or eliminated; Warsh press conference June 17 2:30 PM ET is the week's defining risk event",
+        "url": "https://www.fxstreet.com/analysis/kevin-warsh-opens-first-fed-meeting-june-16-with-rate-hold-expected-202606151326"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7554.29,  "change_pct":  1.65,  "as_of": "2026-06-15T20:00:00Z" },
+    "nasdaq": { "level": 26683.94, "change_pct":  3.07,  "as_of": "2026-06-15T20:00:00Z" },
+    "vix":    { "level": 16.20,    "change_pct": -14.29, "as_of": "2026-06-15T20:00:00Z" },
+    "ust10y": { "level": 4.42,     "change_bps": -7,     "as_of": "2026-06-15T20:00:00Z" },
+    "dxy":    { "level": 97.94,    "change_pct": -1.59,  "as_of": "2026-06-15T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.20,   "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.85,    "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 97.94,   "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7554.29, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 83.01,   "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$212.46 (+3.5% from $205.16) — VIX 16.20 close fully activates the conditional add trigger; add $210–220 is NOW executable per the June 10 night brief criteria; Apple/Google PCC demand and KKR-Nvidia $10B+ intact; stop $195 daily close; NVDA late-July earnings is the next medium-term catalyst anchor",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$192.50 (+19.5% from $161.11; Day 2 of trading) — ALL prior entry zones ($145–162 then $155–168) are now obsolete; MSCI passive bid + Iran deal macro tailwind are more powerful than the normalization model assumed; Day 3 (June 16) entry only on a pullback to $175–185; do not chase above $195; if no Day 3 pullback materializes, skip the position",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "~$415 est. (intraday range $407.10–$416.00) — SPCX Day 2 Musk-proxy bid + Iran deal macro continued the June 12 momentum through $400; watch $410 as first support; hold existing; no new add ahead of Warsh FOMC",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$303 est. (+2.2% est. from $296.52) — WWDC AI + Apple/Google PCC deal intact; approaching the prior $285–295 add zone from well above; regime clearance improves the medium-term setup; better entry $290–298 on any post-FOMC pullback",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$396 est. (+2.2% est. from $387.71) — Azure AI thesis intact (ADBE Q2 confirmed AI additive); Warsh FOMC June 17 will determine multi-year 30Y trajectory affecting high-multiple valuation; better entry $385–392 on post-FOMC dip if it occurs",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$370 est. (+2.4% est. from $361.23) — risk-on bid reduces offering overhang pressure; Apple PCC deal intact; $84.75B equity offering remains a structural headwind; hold, no new add until post-FOMC entry at $363–370",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$579 est. (+2.6% est. from $564.52) — 30Y ~4.85% removes the primary ad-tech multiple headwind for the first time this cycle; 70% probability of year-end hike is a medium-term concern; watch $570 as next support on any pullback",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "~$54.60 est. (-5.1% est. from $57.55) — Day 2 of structural Iran oil repricing; WTI $80.23 and Brent $83.01 remove the $85+ embedded premium; mines in Hormuz create a partial offset but the directional repricing is clear; do not buy the dip; XLE short at $54–57 is the active setup",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$66,354 (+0.84% from $65,800 morning level; 5:26 PM EDT) — DXY 97.94 well below 100 + risk-on extends the bid; approaching $67K resistance; Warsh FOMC June 17 is the near-term ceiling on risk assets",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "ETH",
+      "note": "$1,813 (+4.7% from $1,731 morning; 5:26 PM EDT) — meaningful improvement from June 12 close of ~$1,667; still below $2,000 structural level; not actionable long until $2,000 reclaimed, but the risk-on tide is lifting it",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ADBE",
+      "note": "~$167 est. — CFO Dan Durn final day June 15; dual C-suite vacancy (CEO search ongoing) is the active management uncertainty overhang; Q2 beat-and-raise AI fundamentals intact; watch for volume behavior; entry $165–172 on the volume-exhaustion candle; stop $155",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$535 est. (+4.1% est. from ~$514 June 12) — Nasdaq's best day since March 31 lifts all semis; BofA Top CPU Pick / $560 target intact; the +8% June 11 has now digested two sessions; entry $510–525 on any pullback; Warsh FOMC is the gating event",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SPCX above $190",
+      "reason": "SPCX at $192.50 (Day 2) has blown through every stated entry zone — the morning brief warned against Day 2 above $170 and the stock closed $22 above that warning. The MSCI passive bid and Iran deal tailwind are both real, but Day 2 buyers at $192 are paying a 43% premium to the $135 IPO price with no established support levels. The formal signing ceremony is June 19 (Juneteenth, market closed) — any implementation slip in the intervening week could remove the macro tailwind that accelerated Day 2 beyond the normalization model.",
+      "better_entry": "Day 3 (June 16) pullback to $175–185 is the revised zone; if no pullback materializes through Day 4–5, reassess the entry thesis — the original setup was predicated on normalization dynamics that have not occurred."
+    },
+    {
+      "ticker": "XLE / Energy at any near-term bounce",
+      "reason": "WTI $80.23 and Brent $83.01 remove the supply-shock premium that has supported energy equity valuations since April 2026. Mines in the Strait of Hormuz create partial near-term uncertainty, but the structural direction for oil is lower as Hormuz normalizes over coming weeks. H2 2026 energy earnings estimates will face 8–12% cuts at $80 WTI. Any short-term Brent bounce on mine-clearance concerns is a selling opportunity, not a dip-buying entry.",
+      "better_entry": "Re-evaluate XLE long only if Iran deal collapses entirely AND Brent spikes above $92 on two consecutive sessions — that scenario would signal the oil premium is re-pricing in structurally. Otherwise, wait for stabilization at $52–54 over multiple sessions."
+    },
+    {
+      "ticker": "SPX / QQQ at the 7,554 close",
+      "reason": "SPX at 7,554 is the highest close since June 6, priced above 22.7x forward earnings (83rd historical percentile). The BUY regime upgrade is confirmed — but it does not mean chasing the first close above the regime floor. Warsh's FOMC press conference on June 17 is 48 hours away with the market pricing a 70% probability of a year-end hike; a hawkish communication could push SPX back to 7,460–7,490 within a session.",
+      "better_entry": "Buy any intraday pullback to 7,480–7,510 SPX over the next two sessions; that range is the new structural floor once confirmed by a second close above 7,460 on June 16."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "VIX 16.20 close fully activates the NVDA conditional add trigger established in the June 10 night brief — the third and final criteria (VIX close below 17, Iran deal signed, 30Y below 5.00%) are all met simultaneously for the first time. Apple/Google Private Cloud Compute demand (Blackwell B200 for Siri via Google Cloud) and the KKR-Nvidia-Vistra $10B+ infrastructure commitment remain intact. NVDA late-July earnings is the medium-term catalyst anchor; the $195 stop defines the risk; the bull case to $250–275 over 3–6 weeks remains the reward.",
+      "entry": "Add $210–220 (NOW — trigger confirmed); hold existing position above $195 stop; total position sizing ≤5% gross; stop $195 daily close.",
+      "invalidation": "Close below $195 on two consecutive sessions; OR Warsh June 17 delivers hawkish communication AND 30Y breaks above 5.10% within 24 hours — reduce to minimum sizing immediately and wait for $190–200 re-entry.",
+      "conviction": "medium",
+      "horizon": "3–6 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Iran's Hormuz reopening ends the supply-shock premium that has supported energy equity valuations since April 2026. WTI at $80.23 (Day 2 of post-deal pricing) is already repricing from the $89.52 June 11 peak — a cumulative -10.4% in four sessions. XLE was pricing $87–90 WTI for months; the structural convergence toward $80 WTI implies 8–12% H2 2026 earnings estimate cuts across the energy sector. Mines in the Strait create a short-term friction that may temporarily bid Brent toward $85–86, but the direction of travel is structurally lower.",
+      "entry": "Short XLE at $54–57 (scale in through the first hour of June 16 session; Day 2 continuation momentum typically peaks early); ≤3% gross.",
+      "invalidation": "Iran deal collapses entirely AND Brent spikes above $90 on two consecutive sessions — cover immediately; or XLE reclaims $62 on a daily close basis.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "TBT (2x inverse TLT)",
+      "direction": "hedge",
+      "thesis": "The 30Y at ~4.85% est. has cleared well below the 5.00% regime trigger, but Warsh's June 17 FOMC press conference is the highest-stakes Fed communication event since the 2013 Taper Tantrum. The June 17 meeting IS an SEP meeting — a dot plot may appear in some form, but Warsh has signaled he may modify or eliminate the rate forecast component. Without a standard dot plot framework, markets face a first-principles pricing challenge for the Fed rate path. The 70% probability of a year-end hike priced into CME FedWatch shows the market is already skeptical of the neutral-FOMC scenario. TBT is the insurance that makes BUY defensible into June 17.",
+      "entry": "Hold existing TBT at $44–46; do not add on today's bond rally; reduce by 50% only if Warsh June 17 delivers clearly neutral language AND 30Y falls below 4.75% post-presser.",
+      "invalidation": "Warsh press conference explicitly endorses a September cut window AND 30Y falls below 4.70% on the session — cover TBT fully; the disinflation path is confirmed and BUY upgrades to HIGH conviction.",
+      "conviction": "medium",
+      "horizon": "1–2 weeks"
+    }
+  ],
+  "bear_case": "Hormuz reopening faces physical implementation challenges that oil markets are only beginning to price: Iran has laid approximately a dozen mines in the Strait, ship captains may take weeks to decide that safe passage is genuinely restored, and Iran's Deputy Foreign Minister confirmed Tehran will not begin implementation until the formal June 19 signing. If full tanker traffic restoration takes 4–6 weeks rather than days, the Brent decline from $87 to $83 may reverse partially toward $86–88 before the permanent oil price reset occurs — and any Brent bounce re-tests the $97 regime trigger thesis from the wrong direction. Meanwhile, the broader market is priced for perfection: SPX at 7,554 trades at 22.7x forward earnings with CME FedWatch pricing a 70% probability of at least one Fed hike by year-end 2026 — the most hawkish year-end pricing in this cycle. Warsh's first FOMC press conference on June 17 is 48 hours away; without the dot plot as a standard scaffolding tool, a single ambiguous sentence about inflation persistence could push the 30Y back to 5.05–5.20%, converting the Nasdaq's best day since March into a confirmed near-term top. A Warsh hawkish surprise combined with an Iran implementation slip — two individually non-trivial risks occurring simultaneously — sends SPX from 7,554 to 7,280–7,350 before Juneteenth, erasing the entire Iran deal premium. **Invalidation: If SPX closes above 7,460 for a second consecutive session on June 16 AND Warsh June 17 delivers neutral policy communication AND 30Y remains below 5.00% post-presser, BUY conviction upgrades to HIGH and TBT reduces by 50% — those are the two conditions that remain outstanding. If 30Y re-breaches 5.05% within 24 hours of the Warsh press conference AND SPX closes below 7,460, BUY reverts to HOLD immediately — do not wait for a weekly close.**",
+  "body_mdx": "data/briefings/markets/2026-06-15-night.mdx"
+}
