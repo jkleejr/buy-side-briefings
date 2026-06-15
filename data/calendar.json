@@ -1,52 +1,45 @@
 {
   "events": [
     {
-      "date": "2026-06-13",
-      "label": "SPCX MSCI early-inclusion passive buy flow begins (Day 2)",
-      "kind": "SIGNAL",
-      "tickers": ["SPCX", "SPY", "QQQ"],
-      "note": "SPCX closed Day 1 at $161.11 (+19.3%); MSCI inclusion flow begins June 13; estimated $13-18B in index-fund rebalancing over 3-4 weeks; Day 3-5 entry window (June 16-18) on pullback to $145-162; stop $130"
-    },
-    {
-      "date": "2026-06-14",
-      "label": "Iran-US peace MOU signing in Geneva — VP Vance + Iran Parliament Speaker Qalibaf",
-      "kind": "GEO",
-      "tickers": ["XLE", "QQQ", "IWM", "BTC", "NVDA"],
-      "note": "Expected Sunday in Geneva (Saturday also possible); agreement includes Hormuz reopening + 60-day ceasefire extension + nuclear framework + 60-day US sanctions relief on Iranian oil; if signed: HOLD → BUY at Monday open; Brent to $82-86; if collapsed: Brent $92-95, BEARISH activates Monday open"
-    },
-    {
       "date": "2026-06-15",
-      "label": "ADBE CFO Dan Durn departure + transition",
+      "label": "ADBE CFO Dan Durn final day — management transition watch",
       "kind": "OTHER",
-      "tickers": ["ADBE", "MSFT", "GOOGL"],
-      "note": "CFO exits June 15; dual C-suite vacancy with ongoing CEO search; Q2 beat-and-raise confirmed AI additive thesis; watch for volume-exhaustion at $165-172 for entry; management uncertainty overhang 3-6 months"
+      "tickers": ["ADBE"],
+      "note": "CFO exits June 15; dual C-suite vacancy (CEO search ongoing); Q2 beat-and-raise confirmed AI additive thesis; watch for volume-exhaustion candle at $165-172 as entry signal; management uncertainty overhang 3-6 months; stop $155"
     },
     {
       "date": "2026-06-15",
-      "label": "Post-Iran deal Monday open — regime binary",
+      "label": "NVDA conditional add — VIX close below 17 is the trigger today",
       "kind": "SIGNAL",
-      "tickers": ["QQQ", "SPY", "XLE", "NVDA", "SPCX"],
-      "note": "If signed: SPX gaps above 7,460, BUY verdict, NVDA conditional add activates, SPCX Day 3 entry window $145-162. If collapsed: Brent to $92-95, BEARISH activates immediately. Watch Sunday night futures for first signal."
+      "tickers": ["NVDA"],
+      "note": "Iran deal signed June 14 (criteria #1 met); VIX 17.68 pre-market, need CLOSE below 17 (criteria #2 not yet met); if VIX closes below 17 today, add NVDA at $210-220; stop $195 daily close; if VIX closes 17.0-17.5, defer to June 16 check-in"
     },
     {
       "date": "2026-06-16",
-      "label": "FOMC Day 1 begins; SPCX Day 3-5 float normalization entry window",
+      "label": "FOMC Day 1 begins; SPCX Day 3 float normalization entry window opens",
       "kind": "FOMC",
       "tickers": ["TBT", "QQQ", "XLF", "SPCX"],
-      "note": "No FOMC announcement June 16; pre-decision quiet; SPCX Day 3 float normalization entry window opens ($145-162 pullback); markets likely narrow range pre-June 17 decision"
+      "note": "No FOMC announcement June 16; pre-decision quiet; SPCX Day 3 of trading — entry window opens (revised entry zone $155-168 pullback from Day 2 level of $171.72; stop $140); NVDA VIX trigger check-in if not executed June 15"
     },
     {
       "date": "2026-06-17",
-      "label": "FOMC decision + Warsh press conference — dot plot may be eliminated",
+      "label": "FOMC decision 2:00 PM + Warsh press conference — first as Fed Chair; dot plot status unknown",
       "kind": "FOMC",
       "time_et": "2:00 PM",
-      "tickers": ["TBT", "TLT", "QQQ", "XLF", "IWM"],
-      "note": "98.2% hold (3.50-3.75%); Warsh plans to eliminate the dot plot — removing forward guidance since 2012; maximum post-meeting volatility; three paths: (1) dot plot eliminated + neutral → relief rally, SPX 7,500+; (2) eliminated + hawkish → 30Y to 5.15-5.25%, SPX 7,280-7,320; (3) partial removal + neutral → modest relief. TBT is the hedge through the presser."
+      "tickers": ["TBT", "TLT", "QQQ", "XLF", "IWM", "NVDA"],
+      "note": "98.2% hold at 3.50-3.75%; Warsh may eliminate dot plot; three paths: (1) neutral + dot plot eliminated → SPX 7,600+, BUY conviction to HIGH, reduce TBT 50%; (2) hawkish → 30Y to 5.10-5.25%, BUY to HOLD; (3) dot plot kept + neutral → modest relief. TBT is the hedge through the presser."
     },
     {
       "date": "2026-06-19",
       "label": "US markets closed — Juneteenth",
       "kind": "HOLIDAY"
+    },
+    {
+      "date": "2026-08-13",
+      "label": "Iran-US MOU 60-day implementation deadline — Hormuz full reopening + sanctions relief",
+      "kind": "GEO",
+      "tickers": ["XLE", "QQQ", "BTC", "NVDA"],
+      "note": "Islamabad Declaration signed June 14; 60-day window expires August 13; Hormuz must be operationally open and US sanctions relief on Iranian oil active by this date; failure = oil spike reversal and energy re-rally; key positioning watch for summer"
     }
   ]
 }
