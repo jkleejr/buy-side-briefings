@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { getAllOpportunities } from "@/lib/data";
-import { checkOpenOpportunities } from "@/lib/opportunity-check";
+import { checkOpenOpportunities, yahooSymbolFor } from "@/lib/opportunity-check";
+import { getDailyCloses, type DailyClose } from "@/lib/markets";
+import { buildBookCorrelation } from "@/lib/correlation";
 import Panel from "@/components/panel";
 import OpportunitiesList from "@/components/opportunities-list";
 import RankedOpportunities from "@/components/ranked-opportunities";
+import CorrelationMap from "@/components/correlation-map";
 
 export const metadata = { title: "Opportunities — Buy-Side Briefings" };
 export const revalidate = 300;
@@ -11,6 +14,24 @@ export const revalidate = 300;
 export default async function OpportunitiesPage() {
   const items = getAllOpportunities();
   const live = await checkOpenOpportunities(items);
+
+  // Book correlation/beta: how many independent bets the open book really is.
+  const bookTickers = [
+    ...new Set(
+      items
+        .filter((o) => o.status === "active" || o.status === "triggered")
+        .map((o) => o.ticker),
+    ),
+  ].slice(0, 12);
+  const [benchSeries, ...tickerSeries] = await Promise.all([
+    getDailyCloses("QQQ", 6),
+    ...bookTickers.map((t) => getDailyCloses(yahooSymbolFor(t), 6)),
+  ]);
+  const seriesByTicker: Record<string, DailyClose[]> = {};
+  bookTickers.forEach((t, i) => {
+    if (tickerSeries[i]?.length) seriesByTicker[t] = tickerSeries[i];
+  });
+  const correlation = buildBookCorrelation(seriesByTicker, benchSeries, "QQQ");
 
   const activeCount = items.filter((o) => o.status === "active").length;
   const longCount = items.filter((o) =>
@@ -78,6 +99,9 @@ export default async function OpportunitiesPage() {
 
       {/* #3 — rank the open book by expected value per unit of risk */}
       <RankedOpportunities items={items} />
+
+      {/* Correlation/beta — is the book one bet wearing many tickers? */}
+      {correlation && <CorrelationMap data={correlation} />}
 
       <Panel code="HOW" title="How to read these">
         <div className="space-y-1.5 p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">

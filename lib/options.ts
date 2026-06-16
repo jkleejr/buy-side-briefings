@@ -116,3 +116,84 @@ export function suggestOptionStructure(
     ivPct,
   };
 }
+
+// ---- Scenario payoff around a catalyst -----------------------------------
+
+export type ScenarioLeg = {
+  key: "bull" | "base" | "bear";
+  label: string;
+  price: number;
+  /** Percent move from the current price. */
+  pct: number;
+  /** Approximate probability mass for this outcome (null when IV unknown). */
+  prob: number | null;
+};
+
+export type ScenarioSet = {
+  horizonDays: number;
+  anchorLabel: string;
+  expectedMove: number | null;
+  byIV: boolean;
+  longBias: boolean;
+  legs: ScenarioLeg[];
+};
+
+/**
+ * Bull / base / bear price scenarios into a catalyst. With IV, the bull/bear
+ * legs are ±1σ (the ~68% range), tails ~16% each; without IV they fall back to
+ * the nearest resistance/support. `longBias` is for the caller to translate a
+ * price move into position P&L (a short profits on the bear leg).
+ */
+export function computeScenarios(
+  price: number,
+  action: "buy" | "hold" | "sell",
+  levels: KeyLevel[],
+  opts: { ivPct?: number | null; horizonDays: number; anchorLabel: string },
+): ScenarioSet | null {
+  if (!(price > 0)) return null;
+  const ivPct = opts.ivPct ?? null;
+  const em = ivPct != null ? expectedMove(price, ivPct, opts.horizonDays) : null;
+  const byIV = em != null;
+
+  const parsed = levels
+    .map((l) => ({ num: parseLevelNum(l.level) }))
+    .filter((l): l is { num: number } => l.num != null);
+  const resAbove = parsed.filter((l) => l.num > price).sort((a, b) => a.num - b.num)[0];
+  const supBelow = parsed.filter((l) => l.num < price).sort((a, b) => b.num - a.num)[0];
+
+  const up = em != null ? price + em : (resAbove?.num ?? price * 1.06);
+  const dn = em != null ? price - em : (supBelow?.num ?? price * 0.94);
+
+  const legs: ScenarioLeg[] = [
+    {
+      key: "bull",
+      label: byIV ? "Bull · +1σ" : "Bull · resistance",
+      price: up,
+      pct: ((up - price) / price) * 100,
+      prob: byIV ? 16 : null,
+    },
+    {
+      key: "base",
+      label: byIV ? "Base · ~68%" : "Base · flat",
+      price,
+      pct: 0,
+      prob: byIV ? 68 : null,
+    },
+    {
+      key: "bear",
+      label: byIV ? "Bear · −1σ" : "Bear · support",
+      price: dn,
+      pct: ((dn - price) / price) * 100,
+      prob: byIV ? 16 : null,
+    },
+  ];
+
+  return {
+    horizonDays: opts.horizonDays,
+    anchorLabel: opts.anchorLabel,
+    expectedMove: em,
+    byIV,
+    longBias: action === "buy" || action === "hold",
+    legs,
+  };
+}

@@ -12,6 +12,7 @@ import type {
 import { cn, formatLevel, formatPct } from "@/lib/utils";
 import LevelsGauge from "./levels-gauge";
 import OptionsStructureCard from "./options-structure-card";
+import ScenarioPayoffCard from "./scenario-payoff-card";
 import Panel from "./panel";
 
 // ---- small presentational helpers -----------------------------------------
@@ -392,6 +393,16 @@ export default function AssetDailyView({
           currency={cur}
         />
       )}
+
+      {/* Scenario payoff into the next catalyst — uses IV, else nearest levels */}
+      <ScenarioPayoffCard
+        price={snap.price}
+        action={today.decision.action}
+        ivPct={today.positioning.iv}
+        levels={today.key_levels}
+        catalysts={today.catalysts}
+        currency={cur}
+      />
 
       {/* ===================== BULL vs BEAR ===================== */}
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">
