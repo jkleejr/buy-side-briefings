@@ -1,0 +1,164 @@
+{
+  "routine": "markets",
+  "date": "2026-06-16",
+  "window": "morning",
+  "generated_at": "2026-06-16T11:45:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — NVDA Add Trigger Confirmed; SPX Day-2 Regime Close in Play; FOMC June 17 Is the HIGH Conviction Gate",
+    "conviction": "medium",
+    "rationale_short": "VIX's June 15 close at 16.20 fully activated the NVDA conditional add trigger — the third and final gate established June 10 is met. SPX 7,554.29 was the first regime-floor close above 7,460 since June 9, and this morning's futures +0.46% put Day 2 of the back-to-back test in play. NVDA's $25 billion bond sale attracted $85 billion in orders — the largest single AI capital-market confidence signal of 2026 and the clearest institutional endorsement of the late-July earnings setup. SPCX enters Day 3 premarket +11% with options beginning to trade. BUY at medium conviction: the 10Y rising 6 bps to 4.48% is the first signal the post-Iran deal bond rally is fading, 30Y (est. ~4.91%) has narrowed its buffer toward the 5.00% trigger, and Warsh's June 17 press conference with full dot plot is the week's defining event. HIGH conviction requires today's SPX close above 7,460 — the second consecutive confirmation — AND a neutral Warsh FOMC outcome tomorrow.",
+    "supporting_data": [
+      {
+        "label": "SPX 7,554.29 (+1.65%), Dow 51,671.03 ALL-TIME RECORD, Nasdaq 26,683.94 (+3.07%, best since March 31) — June 15 close is the first regime-floor close above 7,460 since June 9; VIX 16.20 fully activated the NVDA add trigger; Day 2 regime test underway with futures +0.46%",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-15-2026"
+      },
+      {
+        "label": "Nvidia $25B bond sale attracted $85B in orders — chipmaker's first debt offering since 2021; 3.4x oversubscribed across seven tranches with 2–30 year maturities; Bloomberg confirms $25B priced (initially targeting ≥$20B); largest single AI debt deal of 2026",
+        "url": "https://www.cnbc.com/2026/06/15/nvidia-plans-to-raise-about-20-billion-first-debt-sale-in-ai-boom.html"
+      },
+      {
+        "label": "FOMC Day 1 opens June 16 — Warsh's first meeting as Fed Chair; rate hold at 3.50–3.75% virtually certain (97.4% CME FedWatch); Warsh press conference June 17 2:30 PM ET with full dot plot is the week's defining event; Goldman Sachs scrapped all 2026 cut forecasts, pushing first cut to June 2027",
+        "url": "https://www.fxstreet.com/analysis/kevin-warsh-opens-first-fed-meeting-june-16-with-rate-hold-expected-202606151326"
+      },
+      {
+        "label": "Goldman Sachs no longer expects Fed rate cuts in 2026 — revised forecast calls for two 25 bps cuts in June and December 2027; Goldman doubled estimated odds of modest rate hikes to 20%; a Reuters poll of 102 economists shows 72 expecting no rate change through year-end 2026",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-07/goldman-sachs-no-longer-expects-fed-interest-rate-cut-this-year-mq44uu26"
+      },
+      {
+        "label": "SPCX Day 3 premarket +11% (~$213 est. from $192.50 Day 2 close) — Bloomberg: stock on track for >50% jump in three sessions from $135 IPO price; SpaceX options begin trading on exchanges for the first time June 16, introducing the first hedging mechanism since the IPO",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-16/spacex-spcx-stock-set-for-more-than-50-jump-in-just-three-sessions"
+      },
+      {
+        "label": "BTC $66,304 (7:33 AM IST June 16) — holding above $66K post-Iran deal amid BlackRock Yield ETF launch; 10Y UST 4.48% (+6 bps from 4.42% June 15 close) signals post-deal bond rally fading ahead of FOMC; Brent ~$83, WTI ~$80 stable; DXY ~97.80 remains cleared below 100",
+        "url": "https://www.latestly.com/business/bitcoin-price-today-june-16-2026-btc-holds-steady-around-usd-66304-amid-geopolitical-relief-and-blackrocks-yield-etf-launch-7475172.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7589.0,  "change_pct":  0.46, "as_of": "2026-06-16T12:30:00Z" },
+    "nasdaq": { "level": 26807.0, "change_pct":  0.46, "as_of": "2026-06-16T12:30:00Z" },
+    "vix":    { "level": 15.90,   "change_pct": -1.85, "as_of": "2026-06-16T12:30:00Z" },
+    "ust10y": { "level": 4.48,    "change_bps":  6,    "as_of": "2026-06-16T12:30:00Z" },
+    "dxy":    { "level": 97.80,   "change_pct": -0.14, "as_of": "2026-06-16T12:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 15.90,  "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.91,   "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 97.80,  "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7589.0, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 83.00,  "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$211.93 pre-market (~flat from $212.46 June 15 close); VIX 16.20 close fully activated the conditional add — add $210–220 is NOW LIVE; $25B bond sale attracted $85B orders — strongest AI capex confidence signal since the KKR-Nvidia infrastructure commitment; Apple/Google PCC (Blackwell B200 for Siri) intact; stop $195 daily close; do not chase above $225 into FOMC",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "~$213 est. (Day 3, +11% premarket from $192.50 Day 2 close); options begin trading June 16 — first hedging mechanism since IPO; prior entry zones $145–162 (IPO week) and $175–185 (Day 2–3) both obsolete; Day 3–5 revised entry only on intraday pullback to $190–205 with protective put; do not chase above $215; if no pullback, skip this entry",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "~$418 est.; SPCX Day 3 Musk-proxy bid continues; FOMC Day 1 creates intraday event risk on macro headlines; hold existing above $405 support; no new add in morning session — confirm FOMC direction first",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$303 est.; WWDC AI + PCC deal (Siri on Blackwell B200 via Google Cloud) intact; regime clearance improves medium-term setup; do not chase at $303; post-FOMC entry $290–298 on any Warsh-driven pullback remains the better risk/reward",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$396 est.; Azure AI thesis intact (ADBE Q2 beat-and-raise confirmed AI additive); Warsh June 17 will determine multi-year 30Y trajectory affecting high-multiple valuation; better entry $385–392 on post-FOMC dip; hold but do not add pre-FOMC",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$370 est.; Apple PCC deal and AI search demand intact; $84.75B equity offering overhang remains a structural headwind on any gap; post-FOMC entry $363–370 preferred; hold, no active add today",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$579 est.; 30Y at ~4.91% est. (up from ~4.85%) is a partial restoration of the multiple headwind that lifted on the Iran deal bond rally; watch $570 intraday support; hold; add on post-FOMC pullback if 30Y stabilizes",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$535 est.; BofA Top CPU Pick / $560 target intact; $1T AI market opportunity framing (MI450 demand) unchanged; no active setup today — FOMC event risk; entry $510–525 on pullback; hold",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$66,304 (June 16 morning, LatestLY confirmed); BlackRock Yield ETF launch adds institutional bid layer; DXY ~97.80 well below 100 is the primary tailwind; approaching $67K resistance; Warsh FOMC June 17 is the near-term ceiling — do not add above $67K pre-FOMC",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "ETH",
+      "note": "~$1,820 est. (from $1,813 June 15 close); holding near $1,820 on risk-on continuation; still below $2,000 structural level; not actionable long until $2,000 reclaimed; tracking BTC direction",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XLE",
+      "note": "~$54 est.; Day 3 of structural Iran oil repricing — WTI ~$80, Brent ~$83; energy sector H2 2026 earnings estimate cuts of 8–12% are not yet reflected in street numbers; XLE short at $54–57 is the active setup; do not buy the dip; mine-clearance uncertainty is not a recovery thesis for energy multiples",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "ADBE",
+      "note": "~$167 est.; CFO Dan Durn departed June 15 (final day); dual C-suite vacancy (CEO search ongoing) is the active management overhang; Q2 beat-and-raise AI fundamentals intact; watch for volume-exhaustion candle as entry signal; target $165–172; stop $155",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SPCX above $210",
+      "reason": "SPCX premarket +11% on Day 3 (~$213 est.) has blown through the $175–185 revised Day 3 entry zone from the June 15 night brief before the session even opens. Options debuting today introduce intraday volatility that makes entry pricing unreliable in the first 60–90 minutes. Bloomberg's '>50% jump in three sessions' headline will attract retail FOMO; that is the exit event for momentum-driven IPO buyers, not the entry signal for disciplined buyers. IPO normalization dynamics have not played out — the MSCI passive bid and Iran deal tailwind have compressed the window without creating a pullback-based entry opportunity.",
+      "better_entry": "Day 3–5 (June 16–18) pullback to $190–205 with protective put using newly available options; if no pullback occurs through Day 5, skip — the original normalization thesis has not materialized and the risk/reward of chasing above $215 is negative."
+    },
+    {
+      "ticker": "SPX / QQQ gap-up at the open",
+      "reason": "Futures +0.46% imply an open at ~7,589, pricing a full second day of Iran deal premium plus the NVDA bond confidence signal at ~22.7x forward earnings. Today is FOMC Day 1 — any position opened at the gap carries 48 hours of Warsh June 17 event risk. The BUY regime is confirmed, but the HIGH conviction upgrade requires Warsh's neutral FOMC outcome before expanding index exposure. Buying the pre-FOMC gap in an overvalued market is paying for two premium events (Iran deal + NVDA) before the third event (Warsh presser) is resolved.",
+      "better_entry": "Any intraday pullback to 7,520–7,540 SPX; that range is the natural consolidation zone following the June 15 close and provides a post-FOMC decision buffer. Alternatively, buy the dip on June 17 post-Warsh presser if he delivers neutral language — that entry has confirmed policy clarity behind it."
+    },
+    {
+      "ticker": "TLT / Long bonds",
+      "reason": "10Y UST rising 6 bps to 4.48% on a day when equities are up only 0.46% is the clearest signal the post-Iran deal bond rally is fading. The 30Y (estimated ~4.91%) has narrowed its buffer toward the 5.00% regime trigger. Today's FOMC opening puts all bond traders on alert. Goldman Sachs has no 2026 rate cut in its forecast, and a Reuters poll shows 72 of 102 economists expect no change through year-end. Buying duration here means owning bonds into the highest-stakes Fed press conference since 2013 with the market already pricing hawkish outcomes.",
+      "better_entry": "Enter TLT only AFTER Warsh June 17 delivers explicitly neutral language AND the 30Y closes below 4.80% on the session — that scenario is the confirmed disinflation pathway; TBT (existing hedge) is the correct pre-FOMC positioning."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "All three conditional add criteria from the June 10 night brief are met simultaneously for the first time: VIX closed below 17 (16.20 June 15 close), Iran deal signed, 30Y below 5.00%. The $25 billion bond offering attracting $85 billion in orders is the strongest public validation of Nvidia's capital-allocation thesis since the KKR-Nvidia infrastructure commitment — the company is funding the AI buildout, not returning cash, which confirms management's conviction in late-2026 and 2027 demand. Apple/Google Private Cloud Compute (Blackwell B200 for Siri via Google Cloud) and the KKR-Nvidia-Vistra power infrastructure commitment remain intact. Late-July earnings is the medium-term catalyst anchor.",
+      "entry": "Add $210–220 NOW (trigger confirmed as of June 15 close); hold existing position; total sizing ≤5% gross; stop $195 daily close. Do not add above $225 — risk/reward narrows materially into FOMC uncertainty.",
+      "invalidation": "Close below $195 on two consecutive sessions; or Warsh June 17 delivers hawkish communication AND 30Y breaks above 5.10% within 24 hours — reduce to minimum sizing immediately and wait for $190–200 re-entry.",
+      "conviction": "medium",
+      "horizon": "3–6 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Day 3 of the Iran oil structural repricing. WTI at ~$80 and Brent at ~$83 (IG International, June 16) remain well below the $87–90 pricing embedded in energy equity valuations through mid-June. Energy sector H2 2026 earnings estimate cuts of 8–12% are structurally inevitable at $80 WTI and have not yet materialized on the Street. Mine-clearance uncertainty in Hormuz creates near-term Brent bounce risk to $85–87, but that bounce is the better short entry, not the exit signal — the fundamental direction of energy earnings at current oil prices is structurally lower.",
+      "entry": "Continue scaling short XLE at $54–57; scale into the first hour of the session; ≤3% gross. If Brent bounces to $85–87 on mine-clearance headlines, use that bounce as an additional entry opportunity on the short side.",
+      "invalidation": "Iran deal collapses entirely AND Brent closes above $90 on two consecutive sessions — cover immediately. Or XLE reclaims $62 on a daily close basis.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "TBT (2x inverse TLT)",
+      "direction": "hedge",
+      "thesis": "The 10Y rising 6 bps to 4.48% on a day of only modest equity gains confirms the post-Iran deal bond rally is fading into FOMC. The 30Y (est. ~4.91%) has narrowed its buffer to the 5.00% regime trigger to fewer than 10 bps — the equivalent of one bad 30Y auction or one hawkish sentence from Warsh. Goldman Sachs expects no 2026 cuts and 20% odds of rate hikes; CME FedWatch prices a 70% probability of at least one year-end hike. This is not a fringe scenario — it is the market consensus. TBT is the hedge that makes the BUY call defensible into Warsh's first press conference.",
+      "entry": "Hold existing TBT at $44–46; do not chase higher. Reduce by 50% only if Warsh June 17 delivers clearly neutral language AND 30Y falls below 4.75% on the post-presser session.",
+      "invalidation": "Warsh press conference explicitly endorses September cut window AND 30Y falls below 4.70% on the June 17 session — cover TBT fully; the disinflation path is confirmed and BUY upgrades to HIGH conviction.",
+      "conviction": "medium",
+      "horizon": "1–2 weeks"
+    }
+  ],
+  "bear_case": "The 10Y rising 6 bps to 4.48% on a day when S&P 500 futures are up only 0.46% is the first signal the post-Iran deal bond rally is exhausting — the 30Y (estimated ~4.91%) has narrowed its buffer to the 5.00% regime trigger from 15 bps to fewer than 10 bps, meaning a single Warsh sentence or a weak 30Y auction could re-breach the regime threshold before the close on June 17. Goldman Sachs has scrapped all 2026 rate cut forecasts and doubled its estimated odds of modest hikes to 20%; a Reuters poll of 102 economists shows 72 expecting no change through year-end — the 70% CME FedWatch probability of a year-end hike is consensus, not a tail scenario. When the dot plot drops at 2:30 PM ET June 17, if the 2026 median shows zero cuts or the 2027 median is above 3.75%, equities at 22.7x forward P/E face a multiple compression of 5–8% regardless of oil disinflation — NVDA's $85B in bond orders cannot offset a structural re-rating of the discount rate. The formal Iran signing takes place on Juneteenth (June 19, market closed), meaning the first real-time market reaction to implementation developments — including potential mine-clearance complications in the Strait — would be Monday June 20, creating a two-day information gap. **If the dot plot shows no 2026 cuts AND the 30Y rises above 5.00% within 24 hours of the June 17 Warsh presser, BUY reverts to HOLD immediately — do not wait for a weekly close. Conversely, if SPX closes above 7,460 today for the second consecutive session AND Warsh June 17 delivers neutral language, BUY upgrades to HIGH conviction and TBT reduces by 50%.**",
+  "body_mdx": "data/briefings/markets/2026-06-16-morning.mdx"
+}
