@@ -29,13 +29,18 @@ function SrRow({
   kind,
   currency,
   strongest,
+  maxVol,
 }: {
   l: SrLevel;
   kind: "support" | "resistance";
   currency: string;
   strongest: boolean;
+  /** Largest volume_pct across the shown ladder, for scaling the profile bar. */
+  maxVol: number;
 }) {
   const tone = kind === "support" ? "text-[var(--up)]" : "text-[var(--down)]";
+  const barPct =
+    l.volume_pct !== null && maxVol > 0 ? Math.max(4, (l.volume_pct / maxVol) * 100) : 0;
   return (
     <tr className={cn("border-t border-[var(--border)]", strongest && "bg-[rgba(255,165,0,0.05)]")}>
       <td className={cn("px-2 py-0.5 text-[9px] uppercase tracking-widest", tone)}>
@@ -48,8 +53,27 @@ function SrRow({
       <td className="px-2 py-0.5 text-right tabular-nums text-[var(--dim)]">
         {formatPct(l.distance_pct)}
       </td>
-      <td className="px-2 py-0.5 text-right tabular-nums text-[var(--dim)]">
-        {l.volume_pct === null ? "—" : `${l.volume_pct.toFixed(0)}% vol`}
+      {/* Volume-at-price: a mini profile bar (length ∝ share of the year's
+          volume parked at this level) plus the number. */}
+      <td className="px-2 py-0.5">
+        {l.volume_pct === null ? (
+          <div className="text-right text-[var(--dim)]">—</div>
+        ) : (
+          <div className="flex items-center justify-end gap-1.5">
+            <div
+              className="hidden h-2 w-14 overflow-hidden bg-[var(--border)] sm:block"
+              title={`${l.volume_pct.toFixed(0)}% of the year's volume traded within ±1.5% of this level`}
+            >
+              <div
+                className="ml-auto h-full bg-[var(--amber-dim)]"
+                style={{ width: `${barPct}%` }}
+              />
+            </div>
+            <span className="w-8 text-right tabular-nums text-[var(--foreground)]">
+              {l.volume_pct.toFixed(0)}%
+            </span>
+          </div>
+        )}
       </td>
       <td className="px-2 py-0.5 text-right text-[var(--dim)]">
         {l.source === "swing" ? `${l.touches} touch${l.touches > 1 ? "es" : ""}` : l.source}
@@ -77,6 +101,12 @@ export default async function TechnicalsPanel({
   const rsi = t.rsi14 === null ? null : rsiRead(t.rsi14);
   const rangePos =
     ((t.last_close - t.week52_low) / (t.week52_high - t.week52_low)) * 100;
+  // Scale the volume-profile bars to the heaviest level shown in the ladder.
+  const maxVol = Math.max(
+    0,
+    ...t.support.map((l) => l.volume_pct ?? 0),
+    ...t.resistance.map((l) => l.volume_pct ?? 0),
+  );
 
   return (
     <Panel
@@ -150,9 +180,18 @@ export default async function TechnicalsPanel({
         {/* ---- support / resistance ladder ---- */}
         <div>
           <div className="bg-[var(--panel-head)] px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
-            Support / resistance ladder
+            Support / resistance ladder · volume at price
           </div>
           <table className="w-full font-mono text-[11px]">
+            <thead className="text-[9px] uppercase tracking-widest text-[var(--dim)]">
+              <tr className="border-b border-[var(--border)]">
+                <th className="px-2 py-1 text-left font-normal">Side</th>
+                <th className="px-2 py-1 text-right font-normal">Level</th>
+                <th className="px-2 py-1 text-right font-normal">Dist</th>
+                <th className="px-2 py-1 text-right font-normal">Vol @ price</th>
+                <th className="px-2 py-1 text-right font-normal">Basis</th>
+              </tr>
+            </thead>
             <tbody>
               {[...t.resistance].reverse().map((l, i) => (
                 <SrRow
@@ -161,6 +200,7 @@ export default async function TechnicalsPanel({
                   kind="resistance"
                   currency={currency}
                   strongest={l.level === t.strongest_resistance?.level}
+                  maxVol={maxVol}
                 />
               ))}
               <tr className="border-t border-[var(--border-strong)] bg-[rgba(255,165,0,0.06)]">
@@ -179,6 +219,7 @@ export default async function TechnicalsPanel({
                   kind="support"
                   currency={currency}
                   strongest={l.level === t.strongest_support?.level}
+                  maxVol={maxVol}
                 />
               ))}
             </tbody>
