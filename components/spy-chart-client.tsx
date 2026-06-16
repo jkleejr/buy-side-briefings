@@ -34,6 +34,7 @@ export default function SpyChartClient({
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [series, setSeries] = useState(initialSeries);
   const [loading, setLoading] = useState(false);
+  const [showVol, setShowVol] = useState(false);
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
@@ -79,7 +80,21 @@ export default function SpyChartClient({
         </span>
         <span className={pctCls}>{pct === null ? "—" : formatPct(pct)}</span>
         <span className="text-[10px] text-[var(--dim)]">· {range}</span>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setShowVol((v) => !v)}
+            aria-pressed={showVol}
+            title="Toggle the volume-at-price profile (horizontal bars showing where volume traded)"
+            className={
+              "border px-1.5 py-0.5 text-[10px] uppercase tracking-widest transition-colors " +
+              (showVol
+                ? "border-[var(--amber)] text-[var(--amber)]"
+                : "border-[var(--border)] text-[var(--dim)] hover:text-[var(--amber)]")
+            }
+          >
+            Vol
+          </button>
           <RangeSelector value={range} onChange={setRange} loading={loading} />
         </div>
       </div>
@@ -89,6 +104,7 @@ export default function SpyChartClient({
           color={color}
           label={symbol}
           intraday={intraday}
+          showVolumeProfile={showVol}
         />
       </div>
     </div>

@@ -4,20 +4,24 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
+  Customized,
   ResponsiveContainer,
   Tooltip,
+  usePlotArea,
   XAxis,
   YAxis,
 } from "recharts";
 import { formatChartDate, formatChartTick } from "@/lib/utils";
 
-type SeriesPoint = { date: string; close: number };
+type SeriesPoint = { date: string; close: number; volume?: number };
 
 export type AssetChartProps = {
   series: SeriesPoint[];
   color: string;
   label: string;
   intraday?: boolean;
+  /** Overlay a horizontal volume-at-price profile (volume bucketed by price). */
+  showVolumeProfile?: boolean;
 };
 
 type TooltipPayloadItem = {
@@ -57,7 +61,15 @@ function ChartTooltip({
   );
 }
 
-export default function AssetChartInner({ series, color, label, intraday }: AssetChartProps) {
+const PROFILE_BINS = 28;
+
+export default function AssetChartInner({
+  series,
+  color,
+  label,
+  intraday,
+  showVolumeProfile,
+}: AssetChartProps) {
   if (series.length === 0) {
     return (
       <div className="flex h-full min-h-[120px] items-center justify-center font-mono text-[10px] text-[var(--dim)]">
@@ -72,6 +84,64 @@ export default function AssetChartInner({ series, color, label, intraday }: Asse
   const pad = (maxClose - minClose) * 0.08 || 1;
   const gradientId = `grad-${label.replace(/[^a-z0-9]/gi, "")}`;
 
+  // Volume-at-price profile: bucket the (padded) price domain into bins and sum
+  // each bar's volume into the bin holding its close. The domain matches the
+  // YAxis below so the bars line up exactly with the price scale.
+  const domainLo = minClose - pad;
+  const domainHi = maxClose + pad;
+  const bins = new Array<number>(PROFILE_BINS).fill(0);
+  let hasVolume = false;
+  if (showVolumeProfile && domainHi > domainLo) {
+    for (const s of series) {
+      if (!s.volume || s.volume <= 0) continue;
+      hasVolume = true;
+      let idx = Math.floor(((s.close - domainLo) / (domainHi - domainLo)) * PROFILE_BINS);
+      idx = Math.max(0, Math.min(PROFILE_BINS - 1, idx));
+      bins[idx] += s.volume;
+    }
+  }
+  const maxBin = Math.max(...bins);
+  const renderProfile = showVolumeProfile && hasVolume && maxBin > 0;
+
+  // The overlay layer. recharts 3 exposes the plotting rect via usePlotArea();
+  // since our YAxis domain is a known linear range, we map price→pixel directly
+  // (top = domainHi, bottom = domainLo). Right-anchored, low opacity so the
+  // price line stays readable; the heaviest band (point of control) is amber.
+  const VolumeProfile = () => {
+    const plot = usePlotArea();
+    if (!plot || plot.height <= 0 || domainHi <= domainLo) return null;
+    const plotRight = plot.x + plot.width;
+    const maxBarW = plot.width * 0.32;
+    const yOf = (price: number) =>
+      plot.y + (1 - (price - domainLo) / (domainHi - domainLo)) * plot.height;
+    return (
+      <g>
+        {bins.map((v, i) => {
+          if (v <= 0) return null;
+          const pBot = domainLo + (i / PROFILE_BINS) * (domainHi - domainLo);
+          const pTop = domainLo + ((i + 1) / PROFILE_BINS) * (domainHi - domainLo);
+          const yTop = yOf(pTop);
+          const yBot = yOf(pBot);
+          const y = Math.min(yTop, yBot);
+          const h = Math.max(1, Math.abs(yBot - yTop) - 1);
+          const w = (v / maxBin) * maxBarW;
+          const isPoc = v === maxBin;
+          return (
+            <rect
+              key={i}
+              x={plotRight - w}
+              y={y}
+              width={w}
+              height={h}
+              fill={isPoc ? "#ffa500" : color}
+              opacity={isPoc ? 0.32 : 0.16}
+            />
+          );
+        })}
+      </g>
+    );
+  };
+
   return (
     <div className="h-[110px] w-full sm:h-[150px]">
       <ResponsiveContainer width="100%" height="100%">
@@ -83,6 +153,7 @@ export default function AssetChartInner({ series, color, label, intraday }: Asse
             </linearGradient>
           </defs>
           <CartesianGrid stroke="#1f1f1f" strokeDasharray="2 2" vertical={false} />
+          {renderProfile && <Customized component={VolumeProfile} />}
           <XAxis
             dataKey="date"
             tick={{ fill: "#71717a", fontSize: 9, fontFamily: "var(--font-geist-mono)" }}
@@ -91,10 +162,7 @@ export default function AssetChartInner({ series, color, label, intraday }: Asse
             minTickGap={56}
             tickFormatter={(v) => (typeof v === "string" ? formatChartTick(v, intraday) : "")}
           />
-          <YAxis
-            domain={[minClose - pad, maxClose + pad]}
-            hide
-          />
+          <YAxis domain={[domainLo, domainHi]} hide />
           <Tooltip
             content={<ChartTooltip color={color} intraday={intraday} />}
             cursor={{ stroke: "#b45309", strokeDasharray: "3 3" }}

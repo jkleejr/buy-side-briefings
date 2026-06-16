@@ -14,7 +14,8 @@ type Destination = {
 const DESTINATIONS: Destination[] = [
   { href: "/", code: "DASH", label: "Dashboard", go: "d" },
   { href: "/stocks", code: "STOCKS", label: "Stocks — single-name desks", go: "e" },
-  { href: "/short-term-ideas", code: "IDEAS", label: "Short Term Ideas — next-session leans", go: "i" },
+  { href: "/short-term-ideas", code: "SHORT", label: "Short Term Ideas — next-session leans", go: "i" },
+  { href: "/long-term-ideas", code: "LONG", label: "Long Term Ideas — structural theses", go: "l" },
   { href: "/nvidia", code: "NVDA", label: "NVIDIA daily brief", go: "n" },
   { href: "/bitcoin", code: "BTC", label: "Bitcoin daily brief", go: "b" },
   { href: "/skhynix", code: "HYNIX", label: "SK Hynix daily brief", go: "h" },
