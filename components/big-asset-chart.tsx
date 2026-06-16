@@ -14,6 +14,8 @@ type Props = {
   learn?: string;
   /** Right-side meta text in the panel header (e.g., "COINBASE"). */
   metaLabel?: string;
+  /** Currency prefix for the price header (default "$"). e.g. "₩" for KRW. */
+  currencySymbol?: string;
 };
 
 const INITIAL_RANGE = "3M" as const;
@@ -31,6 +33,7 @@ export default async function BigAssetChart({
   color,
   learn,
   metaLabel,
+  currencySymbol,
 }: Props) {
   const [series, quote] = await Promise.all([
     getChartSeries(symbol, INITIAL_RANGE),
@@ -54,6 +57,7 @@ export default async function BigAssetChart({
           }}
           symbol={symbol}
           color={color}
+          currencySymbol={currencySymbol}
         />
       </div>
     </Panel>

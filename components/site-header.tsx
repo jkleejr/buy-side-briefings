@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { todayET } from "@/lib/utils";
+import { getLatestMarketsVerdict } from "@/lib/data";
+import { todayET, verdictColor } from "@/lib/utils";
 import HeaderNav from "./header-nav";
 import LearnToggle from "./learn-toggle";
 import MobileNav from "./mobile-nav";
@@ -8,23 +9,22 @@ import PaletteButton from "./palette-button";
 // Ordered by the daily job-to-be-done: today's calls first (dossiers, ops),
 // then context (markets hub), then the audit trail (week, track record).
 const NAV = [
+  // Information first (what helps you decide), then our trades. The long tail
+  // (Crypto, Week, What I Got Wrong, Watchlist, About) lives in the ⌘K palette.
   { href: "/", code: "DASH", label: "Dashboard" },
-  { href: "/nvidia", code: "NVDA", label: "NVIDIA" },
-  { href: "/bitcoin", code: "BTC", label: "Bitcoin" },
-  { href: "/skhynix", code: "HYNIX", label: "SK Hynix" },
-  { href: "/spacex", code: "SPCX", label: "SpaceX" },
-  { href: "/opportunities", code: "OPS", label: "Opportunities" },
-  { href: "/briefings", code: "BRIEF", label: "Briefings" },
-  { href: "/crypto", code: "CRYPTO", label: "Crypto" },
+  { href: "/stocks", code: "STOCKS", label: "Stocks" },
+  { href: "/short-term-ideas", code: "IDEAS", label: "Short Term Ideas" },
   { href: "/markets", code: "MKTS", label: "Markets" },
-  { href: "/digest", code: "WEEK", label: "Week" },
+  { href: "/briefings", code: "BRIEF", label: "Briefings" },
+  { href: "/opportunities", code: "OPS", label: "Opportunities" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },
-  { href: "/watchlist", code: "WATCH", label: "Watchlist" },
-  { href: "/about", code: "ABT", label: "About" },
+  { href: "/desk", code: "DESK", label: "Paper Desk" },
 ];
 
 export default function SiteHeader() {
   const dateStr = todayET();
+  const verdict = getLatestMarketsVerdict();
+  const vc = verdict ? verdictColor(verdict.verdict.code) : null;
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-black">
       <div className="mx-auto flex max-w-[1600px] items-center gap-3 px-2 py-1.5 text-[11px]">
@@ -52,6 +52,31 @@ export default function SiteHeader() {
           <MobileNav items={NAV} />
         </div>
       </div>
+
+      {/* Mobile-only verdict ribbon — rides along inside the sticky header so the
+          standing market call stays pinned while scrolling a long page. */}
+      {verdict && vc && (
+        <Link
+          href={`/briefings/${verdict.routine}/${verdict.date}-${verdict.window}`}
+          className="flex items-center gap-2 border-t border-[var(--border)] bg-[var(--panel)] px-2 py-1 font-mono md:hidden"
+        >
+          <span className="shrink-0 text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+            Call
+          </span>
+          <span className="shrink-0 text-[11px] leading-none">{verdict.verdict.emoji}</span>
+          <span
+            className={`shrink-0 text-[12px] font-bold uppercase leading-none tracking-wide ${vc.text}`}
+          >
+            {verdict.verdict.code.replace(/_/g, " ")}
+          </span>
+          <span className="shrink-0 text-[9px] uppercase tracking-widest text-[var(--dim)]">
+            {verdict.verdict.conviction}
+          </span>
+          <span className="truncate text-[10px] text-[var(--dim)]">
+            {verdict.verdict.rationale_short}
+          </span>
+        </Link>
+      )}
     </header>
   );
 }

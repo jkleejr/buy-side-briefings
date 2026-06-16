@@ -104,7 +104,7 @@ export default function ExpectancyPanel({ opps }: { opps: Opportunity[] }) {
         ))}
       </div>
 
-      <table className="w-full border-t border-[var(--border)] font-mono text-[11px]">
+      <table className="w-full border-t border-[var(--border)] font-mono text-[11px] term-table">
         <thead className="bg-[var(--panel-head)] text-[9px] uppercase tracking-wider text-[var(--dim)]">
           <tr>
             <th className="px-2.5 py-1 text-left font-normal">Conviction</th>

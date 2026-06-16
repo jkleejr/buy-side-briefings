@@ -198,7 +198,7 @@ export default async function TrackRecordPage() {
             title="Performance by Verdict Code"
             learn="For each verdict code, the number issued, +5d hit rate (right / wrong / pending), and average SPX return at +5d. BUY is graded right when SPX is up; BEARISH right when down; STEP ASIDE right when SPX is flat or down (≤+1%). HOLD is informational only and isn't graded."
           >
-            <table className="w-full font-mono text-[11px]">
+            <table className="w-full font-mono text-[11px] term-table">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
                 <tr>
                   <th className="px-2 py-1 text-left font-normal">Code</th>
@@ -499,7 +499,7 @@ export default async function TrackRecordPage() {
             title="Calibration · Verdicts by Conviction"
             learn="Every directional verdict (HOLD excluded) grouped by the conviction it was published with. 'Adj +5d' is the direction-adjusted SPX return at +5 trading days — a BEARISH call that preceded a -2% week counts as +2%. If HIGH-conviction calls don't beat MEDIUM and LOW here, the conviction tag carries no information and should be discounted when reading new briefings."
           >
-            <table className="w-full font-mono text-[11px]">
+            <table className="w-full font-mono text-[11px] term-table">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
                 <tr>
                   <th className="px-2 py-1 text-left font-normal">Conviction</th>
@@ -561,7 +561,7 @@ export default async function TrackRecordPage() {
             title="Calibration · Opportunities by Conviction"
             learn="Closed trade ideas from the Opportunities journal grouped by stated conviction. Wins = target hit; losses = stopped out or thesis broken; expired ideas count in N but not in the hit rate. Avg return uses each closed trade's recorded return."
           >
-            <table className="w-full font-mono text-[11px]">
+            <table className="w-full font-mono text-[11px] term-table">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
                 <tr>
                   <th className="px-2 py-1 text-left font-normal">Conviction</th>
@@ -665,7 +665,7 @@ export default async function TrackRecordPage() {
             </div>
 
             <div className="hidden overflow-x-auto md:block">
-            <table className="w-full font-mono text-[11px]">
+            <table className="w-full font-mono text-[11px] term-table">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
                 <tr>
                   <th className="px-2 py-1 text-left font-normal">Date</th>

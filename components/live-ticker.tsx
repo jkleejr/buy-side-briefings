@@ -17,6 +17,13 @@ type Flash = { dir: "up" | "down"; key: number };
 export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
   const [quotes, setQuotes] = useState<LiveQuote[]>(initial);
   const [flashes, setFlashes] = useState<Record<string, Flash>>({});
+  // Feed health: down = latest fetch failed or returned no usable prices.
+  // lastOk = epoch ms of the last fetch that carried at least one live price.
+  // The first paint comes from the (cached) server render, so we seed lastOk
+  // from it when it has data, but treat an all-null initial as already down.
+  const initialHasPrice = initial.some((q) => q.price != null);
+  const [feedDown, setFeedDown] = useState(!initialHasPrice);
+  const [lastOk, setLastOk] = useState<number | null>(null);
   const prev = useRef<Map<string, number>>(
     new Map(
       initial
@@ -33,9 +40,19 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
       if (typeof document !== "undefined" && document.hidden) return;
       try {
         const res = await fetch("/api/quotes", { cache: "no-store" });
-        if (!res.ok || cancelled) return;
+        if (cancelled) return;
+        if (!res.ok) {
+          setFeedDown(true);
+          return;
+        }
         const data: { quotes: LiveQuote[] } = await res.json();
         if (cancelled) return;
+
+        // A response with zero usable prices means Yahoo failed upstream even
+        // though the route returned 200 — that's still a feed outage.
+        const live = data.quotes.some((q) => q.price != null);
+        setFeedDown(!live);
+        if (live) setLastOk(Date.now());
 
         const next: Record<string, Flash> = {};
         for (const q of data.quotes) {
@@ -50,10 +67,12 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
           }
           prev.current.set(q.symbol, q.price);
         }
-        setQuotes(data.quotes);
+        // Keep the last good prices on an outage rather than blanking the tape.
+        if (live) setQuotes(data.quotes);
         if (Object.keys(next).length) setFlashes((f) => ({ ...f, ...next }));
       } catch {
-        /* transient network error — keep last good quotes, try again next tick */
+        /* transient network error — flag the feed, keep last good quotes */
+        if (!cancelled) setFeedDown(true);
       }
     }
 
@@ -113,10 +132,33 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
             </div>
           );
         })}
-        <span className="ml-auto flex shrink-0 items-center gap-1 text-[10px] uppercase tracking-widest text-[var(--dim)]">
-          <span className="term-blink glow-dot-up inline-block h-1.5 w-1.5 rounded-full bg-[var(--up)]" />
-          YAHOO · 60s
-        </span>
+        {feedDown ? (
+          <span
+            className="ml-auto flex shrink-0 items-center gap-1 text-[10px] uppercase tracking-widest text-[var(--down)]"
+            title={
+              lastOk
+                ? `Yahoo feed unreachable — showing last good prices from ${new Date(lastOk).toLocaleTimeString()}`
+                : "Yahoo feed unreachable — prices below may be stale"
+            }
+          >
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--down)]" />
+            FEED DOWN
+            {lastOk && (
+              <span className="hidden text-[var(--dim)] sm:inline">
+                · LAST{" "}
+                {new Date(lastOk).toLocaleTimeString("en-US", {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </span>
+            )}
+          </span>
+        ) : (
+          <span className="ml-auto flex shrink-0 items-center gap-1 text-[10px] uppercase tracking-widest text-[var(--dim)]">
+            <span className="term-blink glow-dot-up inline-block h-1.5 w-1.5 rounded-full bg-[var(--up)]" />
+            YAHOO · 60s
+          </span>
+        )}
       </div>
     </div>
   );

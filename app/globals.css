@@ -227,3 +227,23 @@ body {
   .tick-up, .tick-down { animation: none; }
   .term-blink { animation: none; }
 }
+
+/* Keyboard focus ring. Without this the browser default outline is invisible on
+   pure black, so tabbing through links/buttons gives no visible cursor. Uses the
+   amber brand color and :focus-visible so it only shows for keyboard users, not
+   on mouse click. Inputs that opt out (focus:outline-none + border highlight)
+   are unaffected. */
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* Data tables: a subtle row-hover band so the eye can track a single row across
+   many tight numeric columns. Opt-in via the `term-table` class so layout
+   tables are unaffected. Colors unchanged — just a faint amber wash on hover. */
+.term-table tbody tr {
+  transition: background-color 0.1s ease;
+}
+.term-table tbody tr:hover {
+  background-color: rgba(255, 165, 0, 0.045);
+}

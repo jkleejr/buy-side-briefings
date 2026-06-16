@@ -189,11 +189,14 @@ function DeltaStrip({ series }: { series: AssetDaily[] }) {
 
 export default function AssetDailyView({
   series,
+  chart,
   fundamentals,
   technicals,
   callRecord,
 }: {
   series: AssetDaily[];
+  /** Optional live price chart (range selector), rendered right under the hero. */
+  chart?: React.ReactNode;
   /** Optional live fundamentals/earnings panel, rendered before Technicals. */
   fundamentals?: React.ReactNode;
   /** Optional live technical-analysis panel, rendered between Outlook and Key levels. */
@@ -313,6 +316,9 @@ export default function AssetDailyView({
           {today.day_summary}
         </div>
       </section>
+
+      {/* ===================== PRICE CHART ===================== */}
+      {chart}
 
       {/* ================= WHAT CHANGED SINCE YESTERDAY ================= */}
       <DeltaStrip series={series} />

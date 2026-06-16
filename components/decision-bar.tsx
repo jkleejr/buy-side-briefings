@@ -56,8 +56,8 @@ export default function DecisionBar({
               Market Call
             </span>
             <div className="flex items-center gap-2">
-              <span className="text-base leading-none">{verdict.verdict.emoji}</span>
-              <span className={cn("text-[15px] font-bold uppercase tracking-wide", vc.text)}>
+              <span className="text-lg leading-none">{verdict.verdict.emoji}</span>
+              <span className={cn("text-[19px] font-bold uppercase tracking-wide", vc.text)}>
                 {verdict.verdict.code.replace(/_/g, " ")}
               </span>
               <span className="text-[9px] uppercase tracking-widest text-[var(--dim)]">

@@ -1,11 +1,18 @@
 import Link from "next/link";
+import { getLatestCryptoVerdict, getLatestMarketsVerdict } from "@/lib/data";
 import Panel from "@/components/panel";
+import MarketKpiStrip from "@/components/market-kpi-strip";
+import UsIndicesPanel from "@/components/us-indices-panel";
+import MetalsPanel from "@/components/metals-panel";
+import SectorRotation from "@/components/sector-rotation";
 
 export const metadata = {
   title: "Markets — Buy-Side Briefings",
   description:
     "Every market depth view in one place: US indices, tech, sectors, breadth, metals, global sessions, macro, crypto, and KOSPI.",
 };
+
+export const revalidate = 300;
 
 type HubLink = {
   href: string;
@@ -89,7 +96,10 @@ const SECTIONS: { title: string; note: string; links: HubLink[] }[] = [
   },
 ];
 
-export default function MarketsHubPage() {
+export default async function MarketsHubPage() {
+  const verdict = getLatestMarketsVerdict();
+  const crypto = getLatestCryptoVerdict();
+
   return (
     <div className="space-y-1">
       <header className="space-y-1 px-1 pb-2">
@@ -106,6 +116,29 @@ export default function MarketsHubPage() {
           Every depth view · charts, internals, macro, world
         </p>
       </header>
+
+      {/* Live snapshot up top — the hub opens on real prices, not a wall of
+          links. Each panel below drills into its own depth page. */}
+      <MarketKpiStrip verdict={verdict} crypto={crypto} />
+      <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
+        <div className="lg:col-span-9">
+          <UsIndicesPanel />
+        </div>
+        <div className="lg:col-span-3">
+          <MetalsPanel />
+        </div>
+        <div className="lg:col-span-12">
+          <SectorRotation />
+        </div>
+      </div>
+
+      <div className="flex items-center gap-2 px-0.5 pt-5 pb-1">
+        <span className="h-1.5 w-1.5 shrink-0 bg-[var(--amber)]" />
+        <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber)]">
+          All Depth Views
+        </span>
+        <span className="ml-1 h-px flex-1 bg-[var(--border-strong)]" />
+      </div>
 
       {SECTIONS.map((section) => (
         <Panel key={section.title} code="HUB" title={section.title} meta={<span>{section.note}</span>}>

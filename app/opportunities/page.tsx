@@ -1,12 +1,20 @@
 import Link from "next/link";
-import { getAllOpportunities } from "@/lib/data";
-import { checkOpenOpportunities, yahooSymbolFor } from "@/lib/opportunity-check";
+import { getAllOpportunities, getCalendarEvents } from "@/lib/data";
+import {
+  checkOpenOpportunities,
+  classifyOpenOpportunities,
+  yahooSymbolFor,
+} from "@/lib/opportunity-check";
+import { computeOpenRisk } from "@/lib/risk";
 import { getDailyCloses, type DailyClose } from "@/lib/markets";
 import { buildBookCorrelation } from "@/lib/correlation";
+import { todayET } from "@/lib/utils";
 import Panel from "@/components/panel";
 import OpportunitiesList from "@/components/opportunities-list";
 import RankedOpportunities from "@/components/ranked-opportunities";
 import CorrelationMap from "@/components/correlation-map";
+import PlaybookPanel from "@/components/playbook-panel";
+import RiskPanel from "@/components/risk-panel";
 
 export const metadata = { title: "Opportunities — Buy-Side Briefings" };
 export const revalidate = 300;
@@ -14,6 +22,13 @@ export const revalidate = 300;
 export default async function OpportunitiesPage() {
   const items = getAllOpportunities();
   const live = await checkOpenOpportunities(items);
+
+  // Live plan-state per open idea + book-level risk (relocated off the home
+  // page — this is where our trades actually live).
+  const planChecks = await classifyOpenOpportunities(items);
+  const openRisk = computeOpenRisk(items);
+  const today = todayET();
+  const todayEvents = getCalendarEvents().filter((e) => e.date === today);
 
   // Book correlation/beta: how many independent bets the open book really is.
   const bookTickers = [
@@ -36,9 +51,6 @@ export default async function OpportunitiesPage() {
   const activeCount = items.filter((o) => o.status === "active").length;
   const longCount = items.filter((o) =>
     ["long", "long_vol"].includes(o.direction),
-  ).length;
-  const shortCount = items.filter((o) =>
-    ["short", "short_vol"].includes(o.direction),
   ).length;
   const highConv = items.filter((o) => o.conviction === "high").length;
 
@@ -96,6 +108,19 @@ export default async function OpportunitiesPage() {
           </div>
         </div>
       </div>
+
+      {/* What needs action right now + what the book risks if it all goes wrong.
+          (Relocated from the home page so the dashboard stays informational.) */}
+      {planChecks.length > 0 && (
+        <div className="grid grid-cols-1 gap-1 lg:grid-cols-12">
+          <div className="lg:col-span-8">
+            <PlaybookPanel checks={planChecks} todayEvents={todayEvents} />
+          </div>
+          <div className="lg:col-span-4">
+            <RiskPanel risk={openRisk} />
+          </div>
+        </div>
+      )}
 
       {/* #3 — rank the open book by expected value per unit of risk */}
       <RankedOpportunities items={items} />

@@ -323,6 +323,54 @@ export async function getUpcomingEarnings(
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
+// ---- Arbitrary-symbol quotes for the paper-trading desk --------------------
+
+export type TradeQuote = {
+  symbol: string;
+  name: string | null;
+  price: number | null;
+  changePct: number | null;
+  currency: string | null;
+};
+
+type YTradeQuote = YQuote & {
+  shortName?: string;
+  longName?: string;
+  currency?: string;
+};
+
+/**
+ * Live quotes for a caller-supplied list of symbols (the paper desk). Returns a
+ * null-filled entry for any symbol Yahoo doesn't recognize so the UI can flag a
+ * bad ticker instead of silently dropping it. Never throws.
+ */
+export async function getTradeQuotes(symbols: string[]): Promise<TradeQuote[]> {
+  if (symbols.length === 0) return [];
+  try {
+    const results = (await yahooFinance.quote(symbols)) as YTradeQuote | YTradeQuote[];
+    const arr: YTradeQuote[] = Array.isArray(results) ? results : [results];
+    return symbols.map((s) => {
+      const q = arr.find((r) => r?.symbol === s);
+      return {
+        symbol: s,
+        name: q?.shortName ?? q?.longName ?? null,
+        price: q?.regularMarketPrice ?? null,
+        changePct: q?.regularMarketChangePercent ?? null,
+        currency: q?.currency ?? null,
+      };
+    });
+  } catch (err) {
+    console.error("[markets] trade quotes fetch failed:", err);
+    return symbols.map((s) => ({
+      symbol: s,
+      name: null,
+      price: null,
+      changePct: null,
+      currency: null,
+    }));
+  }
+}
+
 export async function getQuote(symbol: string): Promise<LiveQuote | null> {
   try {
     const q = (await yahooFinance.quote(symbol)) as YQuote | YQuote[];

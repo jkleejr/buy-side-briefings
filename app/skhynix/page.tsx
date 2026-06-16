@@ -1,6 +1,7 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
 import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
+import BigAssetChart from "@/components/big-asset-chart";
 import TechnicalsPanel from "@/components/technicals-panel";
 
 export const metadata = {
@@ -25,6 +26,17 @@ export default function SkHynixPage() {
   return (
     <AssetDailyView
       series={series}
+      chart={
+        <BigAssetChart
+          symbol="000660.KS"
+          code="HYNIX"
+          title="SK Hynix · Price"
+          color="#22d3ee"
+          metaLabel="KRX"
+          currencySymbol="₩"
+          learn="Live SK Hynix (000660.KS) price in won with a range selector (1D–ALL). Data via Yahoo Finance; the dossier's decision and levels above are point-in-time editorial."
+        />
+      }
       technicals={<TechnicalsPanel symbol="000660.KS" currency="₩" />}
       callRecord={<AssetCallRecord series={series} symbol="000660.KS" />}
     />

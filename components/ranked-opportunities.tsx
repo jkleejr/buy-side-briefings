@@ -33,7 +33,7 @@ export default function RankedOpportunities({
       meta={<span>EV-RANKED · TOP {ranked.length}</span>}
     >
       <div className="overflow-x-auto">
-        <table className="w-full font-mono text-[11px]">
+        <table className="w-full font-mono text-[11px] term-table">
           <thead className="bg-[var(--panel-head)] text-[9px] uppercase tracking-wider text-[var(--dim)]">
             <tr>
               <th className="px-2 py-1 text-left font-normal">#</th>

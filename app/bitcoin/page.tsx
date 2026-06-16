@@ -1,6 +1,7 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
 import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
+import BigAssetChart from "@/components/big-asset-chart";
 import BtcFundamentalsPanel from "@/components/btc-fundamentals-panel";
 import TechnicalsPanel from "@/components/technicals-panel";
 
@@ -26,6 +27,16 @@ export default function BitcoinPage() {
   return (
     <AssetDailyView
       series={series}
+      chart={
+        <BigAssetChart
+          symbol="BTC-USD"
+          code="BTC"
+          title="Bitcoin · Price"
+          color="#22d3ee"
+          metaLabel="USD · 24/7"
+          learn="Live BTC-USD price with a range selector (1D–ALL). Data via Yahoo Finance; the dossier's decision and levels above are point-in-time editorial."
+        />
+      }
       fundamentals={<BtcFundamentalsPanel />}
       technicals={<TechnicalsPanel symbol="BTC-USD" />}
       callRecord={<AssetCallRecord series={series} symbol="BTC-USD" />}

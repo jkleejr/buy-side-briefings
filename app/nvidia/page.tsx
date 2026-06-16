@@ -1,6 +1,7 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
 import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
+import BigAssetChart from "@/components/big-asset-chart";
 import FundamentalsPanel from "@/components/fundamentals-panel";
 import TechnicalsPanel from "@/components/technicals-panel";
 
@@ -26,6 +27,16 @@ export default function NvidiaPage() {
   return (
     <AssetDailyView
       series={series}
+      chart={
+        <BigAssetChart
+          symbol="NVDA"
+          code="NVDA"
+          title="NVIDIA · Price"
+          color="#22d3ee"
+          metaLabel="NASDAQ"
+          learn="Live NVDA price with a range selector (1D–ALL). Data via Yahoo Finance; the dossier's decision and levels above are point-in-time editorial."
+        />
+      }
       fundamentals={<FundamentalsPanel symbol="NVDA" />}
       technicals={<TechnicalsPanel symbol="NVDA" />}
       callRecord={<AssetCallRecord series={series} symbol="NVDA" />}

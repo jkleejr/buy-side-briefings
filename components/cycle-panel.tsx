@@ -1,4 +1,5 @@
 import { getMacroSnapshot } from "@/lib/macro";
+import { todayET } from "@/lib/utils";
 import Panel from "./panel";
 import Tooltip from "./tooltip";
 
@@ -12,7 +13,7 @@ function daysBetween(a: string, b: string): number {
 
 export default async function CyclePanel() {
   const m = await getMacroSnapshot();
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayET();
   const sinceHalving = daysBetween(m.crypto_cycle.last_btc_halving_date, today);
   const untilHalving = daysBetween(today, m.crypto_cycle.next_btc_halving_date);
 

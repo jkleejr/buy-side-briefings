@@ -122,7 +122,7 @@ export default async function BtcFundamentalsPanel() {
           <div className="bg-[var(--panel-head)] px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
             Supply & scarcity
           </div>
-          <table className="w-full font-mono text-[11px]">
+          <table className="w-full font-mono text-[11px] term-table">
             <tbody>
               <Row label="Circulating" value={btc(f.circulatingSupply)} />
               <Row label="Max supply" value="21,000,000 BTC" />
@@ -141,7 +141,7 @@ export default async function BtcFundamentalsPanel() {
           <div className="bg-[var(--panel-head)] px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
             Network security & usage
           </div>
-          <table className="w-full font-mono text-[11px]">
+          <table className="w-full font-mono text-[11px] term-table">
             <tbody>
               <Row
                 label="Hash rate"

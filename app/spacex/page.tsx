@@ -1,6 +1,7 @@
 import { getAssetDailySeries } from "@/lib/asset-daily";
 import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
+import BigAssetChart from "@/components/big-asset-chart";
 import TechnicalsPanel from "@/components/technicals-panel";
 
 export const metadata = {
@@ -25,6 +26,16 @@ export default function SpaceXPage() {
   return (
     <AssetDailyView
       series={series}
+      chart={
+        <BigAssetChart
+          symbol="SPCX"
+          code="SPCX"
+          title="SpaceX · Price"
+          color="#22d3ee"
+          metaLabel="NYSE"
+          learn="Live SPCX price with a range selector (1D–ALL). Data via Yahoo Finance; history only runs back to the June 2026 IPO. The dossier's decision and levels above are point-in-time editorial."
+        />
+      }
       technicals={<TechnicalsPanel symbol="SPCX" currency="$" />}
       callRecord={<AssetCallRecord series={series} symbol="SPCX" />}
     />

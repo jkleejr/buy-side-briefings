@@ -19,6 +19,8 @@ type Props = {
   initialQuote: Quote;
   symbol: string;
   color: string;
+  /** Currency prefix for the price header (default "$"). e.g. "₩" for KRW. */
+  currencySymbol?: string;
 };
 
 export default function SpyChartClient({
@@ -27,6 +29,7 @@ export default function SpyChartClient({
   initialQuote,
   symbol,
   color,
+  currencySymbol = "$",
 }: Props) {
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [series, setSeries] = useState(initialSeries);
@@ -72,7 +75,7 @@ export default function SpyChartClient({
         <span className="text-[var(--foreground)]">
           {price === null
             ? "—"
-            : `$${price.toLocaleString("en-US", { maximumFractionDigits: 2 })}`}
+            : `${currencySymbol}${price.toLocaleString("en-US", { maximumFractionDigits: 2 })}`}
         </span>
         <span className={pctCls}>{pct === null ? "—" : formatPct(pct)}</span>
         <span className="text-[10px] text-[var(--dim)]">· {range}</span>

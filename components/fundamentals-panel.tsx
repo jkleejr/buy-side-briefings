@@ -167,7 +167,7 @@ export default async function FundamentalsPanel({ symbol }: { symbol: string }) 
           <div className="bg-[var(--panel-head)] px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
             Valuation
           </div>
-          <table className="w-full font-mono text-[11px]">
+          <table className="w-full font-mono text-[11px] term-table">
             <tbody>
               <Row label="Trailing P/E" value={ratio(f.trailingPE)} />
               <Row label="Forward P/E" value={ratio(f.forwardPE)} />
@@ -183,7 +183,7 @@ export default async function FundamentalsPanel({ symbol }: { symbol: string }) 
           <div className="bg-[var(--panel-head)] px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
             Growth & profitability
           </div>
-          <table className="w-full font-mono text-[11px]">
+          <table className="w-full font-mono text-[11px] term-table">
             <tbody>
               <Row
                 label="Revenue growth"
@@ -263,7 +263,7 @@ export default async function FundamentalsPanel({ symbol }: { symbol: string }) 
               <div className="bg-[var(--panel-head)] px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
                 EPS surprise · last {f.surprises.length} quarters
               </div>
-              <table className="w-full font-mono text-[11px]">
+              <table className="w-full font-mono text-[11px] term-table">
                 <thead>
                   <tr className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
                     <th className="px-2 py-0.5 text-left">Quarter</th>
@@ -307,7 +307,7 @@ export default async function FundamentalsPanel({ symbol }: { symbol: string }) 
               <div className="bg-[var(--panel-head)] px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
                 Estimate revisions · are they raising or cutting?
               </div>
-              <table className="w-full font-mono text-[11px]">
+              <table className="w-full font-mono text-[11px] term-table">
                 <thead>
                   <tr className="text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
                     <th className="px-2 py-0.5 text-left">Period</th>

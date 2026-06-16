@@ -1,23 +1,11 @@
 import {
   getAllBriefings,
-  getAllMarketsVerdicts,
-  getAllOpportunities,
   getCalendarEvents,
   getLatestMarketsVerdict,
   getLatestCryptoVerdict,
-  getOpportunityStats,
 } from "@/lib/data";
-import { classifyOpenOpportunities } from "@/lib/opportunity-check";
-import { computeOpenRisk } from "@/lib/risk";
-import { buildPaperPortfolio } from "@/lib/paper-portfolio";
 import { getLatestAssetDaily } from "@/lib/asset-daily";
-import { getSpxDailyCloses } from "@/lib/markets";
-import { evaluateRegime } from "@/lib/regime";
-import { aggregateStats, monthsBackFor, scoreVerdict } from "@/lib/verdict-scoring";
 import { todayET } from "@/lib/utils";
-import PlaybookPanel from "@/components/playbook-panel";
-import RiskPanel from "@/components/risk-panel";
-import TrackGlanceStrip from "@/components/track-glance-strip";
 import VerdictCard from "@/components/verdict-card";
 import AssetCallsPanel from "@/components/asset-calls-panel";
 import DecisionBar from "@/components/decision-bar";
@@ -39,12 +27,13 @@ import Panel from "@/components/panel";
 export const revalidate = 300;
 
 // Full-width labeled divider that groups the dashboard into scannable sections.
-// Terminal-styled (amber mono label + hairline rule); doubles as a clear
+// Terminal-styled (amber square + label + hairline rule); doubles as a clear
 // section break when panels stack into a single column on mobile.
 function SectionLabel({ title, note }: { title: string; note?: string }) {
   return (
-    <div className="flex items-center gap-2 px-0.5 pt-2 pb-0.5 lg:col-span-12">
-      <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
+    <div className="flex items-center gap-2 px-0.5 pt-6 pb-1 first:pt-2 lg:col-span-12">
+      <span className="h-1.5 w-1.5 shrink-0 bg-[var(--amber)]" />
+      <span className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber)]">
         {title}
       </span>
       {note && (
@@ -52,12 +41,12 @@ function SectionLabel({ title, note }: { title: string; note?: string }) {
           · {note}
         </span>
       )}
-      <span className="ml-1 h-px flex-1 bg-[var(--border)]" />
+      <span className="ml-1 h-px flex-1 bg-[var(--border-strong)]" />
     </div>
   );
 }
 
-export default async function Home() {
+export default function Home() {
   const verdict = getLatestMarketsVerdict();
   const crypto = getLatestCryptoVerdict();
   const briefings = getAllBriefings();
@@ -68,40 +57,9 @@ export default async function Home() {
     getLatestAssetDaily("spcx"),
   ].filter((d): d is NonNullable<typeof d> => d !== null);
 
-  // Accountability strip: score every verdict against SPX (same math as
-  // /track-record) plus the opportunities journal stats.
-  const allVerdicts = getAllMarketsVerdicts();
-  const earliest = allVerdicts.length ? allVerdicts[allVerdicts.length - 1].date : null;
-  const spxSeries = await getSpxDailyCloses(monthsBackFor(earliest));
-  const scoredRows = allVerdicts.map((v) => ({ v, score: scoreVerdict(v, spxSeries) }));
-  let hits = 0;
-  let scored = 0;
-  for (const { score } of scoredRows) {
-    for (const r of [score.right_d1, score.right_d5, score.right_d20]) {
-      if (r === null) continue;
-      scored += 1;
-      if (r) hits += 1;
-    }
-  }
-  const hitRate = scored > 0 ? (hits / scored) * 100 : null;
-  const { streak_d5 } = aggregateStats(scoredRows);
-  const oppStats = getOpportunityStats();
-  // Live breach count for the glance strip (panel below re-checks per render).
-  const regime =
-    verdict && verdict.regime_risk.length > 0
-      ? await evaluateRegime(verdict.regime_risk).then((r) => ({
-          breached: r.breached,
-          total: r.rows.length,
-        }))
-      : null;
-  // Morning playbook: live plan-state per open idea + catalysts firing today,
-  // plus plan-level book risk (max bleed, exposure, theme concentration).
-  const allOpps = getAllOpportunities();
-  const planChecks = await classifyOpenOpportunities(allOpps);
+  // Next catalyst for the decision bar's countdown.
   const today = todayET();
-  const calendarEvents = getCalendarEvents();
-  const todayEvents = calendarEvents.filter((e) => e.date === today);
-  const upcomingEvents = calendarEvents
+  const upcomingEvents = getCalendarEvents()
     .filter((e) => e.date >= today)
     .sort((a, b) => a.date.localeCompare(b.date));
   const nextCatalyst = upcomingEvents.length
@@ -111,15 +69,6 @@ export default async function Home() {
         days: Math.round(
           (Date.parse(upcomingEvents[0].date) - Date.parse(today)) / 86_400_000,
         ),
-      }
-    : null;
-  const openRisk = computeOpenRisk(allOpps);
-
-  const portfolio = buildPaperPortfolio(allOpps, spxSeries);
-  const equity = portfolio
-    ? {
-        values: portfolio.points.slice(-60).map((p) => p.strategy),
-        total_pct: portfolio.stats.total_return_pct,
       }
     : null;
 
@@ -138,33 +87,10 @@ export default async function Home() {
       {/* At-a-glance market header — fills the top edge-to-edge, no dead space. */}
       <MarketKpiStrip verdict={verdict} crypto={crypto} />
 
-      {/* Accountability at a glance: hit rate, streak, what's on the book. */}
-      <TrackGlanceStrip
-        hitRate={hitRate}
-        hits={hits}
-        scored={scored}
-        streak={streak_d5}
-        ops={oppStats}
-        equity={equity}
-        regime={regime}
-      />
-
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
-        {/* ========================= THE CALL ========================= */}
-        {/* Verdict and today's asset buy/hold/sell calls, side by side. */}
-        <SectionLabel title="The Call" note="latest verdict & today's decisions" />
-
-        {/* What demands action right now + what the book risks if it all goes wrong. */}
-        {planChecks.length > 0 && (
-          <>
-            <div className="lg:col-span-8">
-              <PlaybookPanel checks={planChecks} todayEvents={todayEvents} />
-            </div>
-            <div className="lg:col-span-4">
-              <RiskPanel risk={openRisk} />
-            </div>
-          </>
-        )}
+        {/* ===================== TODAY'S CALL ===================== */}
+        {/* The market verdict and the standing call on each stock you follow. */}
+        <SectionLabel title="Today's Call" note="the verdict & where each name stands" />
 
         {verdict ? (
           <div className="lg:col-span-8">
@@ -189,10 +115,10 @@ export default async function Home() {
           </div>
         )}
 
-        {/* ========================= MARKETS ========================= */}
-        {/* Three index charts share one panel (no lonely wide chart), with
-            metals beside; global sessions and live crypto fill the next row. */}
-        <SectionLabel title="Markets" note="US indices, metals, crypto & overnight sessions" />
+        {/* ===================== MARKET CONTEXT ===================== */}
+        {/* The backdrop for any decision: indices, metals, world, crypto, and
+            the internals a desk scans before acting. */}
+        <SectionLabel title="Market Context" note="indices, world, crypto & the internals" />
 
         <div className="lg:col-span-9">
           <UsIndicesPanel />
@@ -206,10 +132,6 @@ export default async function Home() {
         <div className="lg:col-span-4">
           <CryptoPanel />
         </div>
-
-        {/* =================== BREADTH, SENTIMENT & RISK =================== */}
-        <SectionLabel title="Breadth, Sentiment & Risk" note="the internals a desk scans first" />
-
         <div className="lg:col-span-12">
           <UsPulsePanel />
         </div>
@@ -225,8 +147,8 @@ export default async function Home() {
           <CyclePanel />
         </div>
 
-        {/* =================== MACRO, SECTORS & WEEK AHEAD =================== */}
-        <SectionLabel title="Macro, Sectors & Week Ahead" />
+        {/* =================== MACRO & WHAT'S AHEAD =================== */}
+        <SectionLabel title="Macro & What's Ahead" note="rates, the cycle & the calendar to watch" />
 
         {/* Sector spans 2 rows to sit beside both the Fed panel and the calendar. */}
         <div className="lg:col-span-8">
