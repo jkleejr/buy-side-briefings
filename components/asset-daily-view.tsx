@@ -301,8 +301,12 @@ export default function AssetDailyView({
                 {act.label}
               </span>
               <span className="text-[10px] uppercase tracking-widest text-[var(--dim)]">
-                {today.decision.conviction} conviction · {today.decision.horizon}
+                {today.decision.conviction} conviction
               </span>
+            </div>
+            <div className="mt-1 inline-flex items-center gap-1.5 border border-[var(--border)] bg-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest">
+              <span className="text-[var(--amber-dim)]">Hold for</span>
+              <span className="text-[var(--foreground)]">{today.decision.horizon}</span>
             </div>
             <p className="mt-1.5 font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
               {today.decision.rationale}

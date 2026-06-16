@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { MarketsVerdict } from "@/lib/data";
 import type { AssetDaily } from "@/lib/asset-daily";
-import { cn, formatPct, verdictColor } from "@/lib/utils";
+import { cn, formatPct, verdictColor, verdictHorizon } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
 // "Today's Decision" command bar — the inverted-pyramid answer at the very top
@@ -61,7 +61,7 @@ export default function DecisionBar({
                 {verdict.verdict.code.replace(/_/g, " ")}
               </span>
               <span className="text-[9px] uppercase tracking-widest text-[var(--dim)]">
-                {verdict.verdict.conviction} conv
+                {verdict.verdict.conviction} conv · {verdictHorizon(verdict.verdict.horizon)}
               </span>
             </div>
             <span className="line-clamp-1 text-[10px] text-[var(--dim)]">
@@ -81,7 +81,7 @@ export default function DecisionBar({
                 <Link
                   key={d.asset}
                   href={DESK_HREF[d.asset] ?? "/"}
-                  title={`${d.name} — ${d.decision.action.toUpperCase()} (${d.decision.conviction} conviction)`}
+                  title={`${d.name} — ${d.decision.action.toUpperCase()} (${d.decision.conviction} conviction · horizon ${d.decision.horizon})`}
                   className={cn(
                     "flex items-center gap-1 border px-1.5 py-0.5 text-[10px] hover:bg-[rgba(255,165,0,0.06)]",
                     ACTION_TONE[d.decision.action] ?? "border-[var(--border)] text-[var(--dim)]",

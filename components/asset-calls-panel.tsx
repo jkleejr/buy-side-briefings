@@ -59,6 +59,12 @@ function CallCard({ d }: { d: AssetDaily }) {
         </span>
       </div>
 
+      <div className="mt-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
+        <span className="text-[var(--amber-dim)]">Hold</span> {d.decision.horizon}
+        {" · "}
+        {d.decision.conviction} conv
+      </div>
+
       <p className="mt-1 line-clamp-2 font-mono text-[10px] leading-relaxed text-[var(--dim)]">
         {d.decision.rationale}
       </p>

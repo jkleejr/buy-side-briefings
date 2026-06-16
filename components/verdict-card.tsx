@@ -1,6 +1,12 @@
 import Link from "next/link";
 import type { MarketsVerdict } from "@/lib/data";
-import { cn, formatRelativeTime, getVerdictExplanation, verdictColor } from "@/lib/utils";
+import {
+  cn,
+  formatRelativeTime,
+  getVerdictExplanation,
+  verdictColor,
+  verdictHorizon,
+} from "@/lib/utils";
 import Panel from "./panel";
 import Tooltip from "./tooltip";
 
@@ -36,10 +42,21 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
                 {verdict.verdict.label}
               </Tooltip>
             </div>
-            <div className="mt-0.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
-              Conviction:{" "}
-              <span className="text-[var(--foreground)]">
-                {verdict.verdict.conviction.toUpperCase()}
+            <div className="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
+              <span>
+                Conviction:{" "}
+                <span className="text-[var(--foreground)]">
+                  {verdict.verdict.conviction.toUpperCase()}
+                </span>
+              </span>
+              <span>
+                <Tooltip text="How long this call is meant to hold. Markets verdicts are tactical (days to a couple of weeks) and are scored at +1d / +5d / +20d on the Track Record page.">
+                  Horizon
+                </Tooltip>
+                :{" "}
+                <span className="text-[var(--foreground)]">
+                  {verdictHorizon(verdict.verdict.horizon)}
+                </span>
               </span>
             </div>
             <p className="mt-1.5 text-[11px] leading-snug text-[var(--foreground)]">

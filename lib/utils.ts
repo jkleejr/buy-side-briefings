@@ -111,6 +111,15 @@ export function formatLevel(n: number): string {
   return n.toFixed(2);
 }
 
+/**
+ * Display string for how long a markets verdict is meant to hold. Older
+ * verdicts predate the field; they're tactical day-trader calls scored at
+ * +5d/+20d, so that's the honest fallback.
+ */
+export function verdictHorizon(horizon?: string): string {
+  return horizon && horizon.trim() ? horizon : "Days–2 weeks (tactical)";
+}
+
 const ROUTINE_FULL: Record<string, string> = {
   markets: "Markets Briefing",
   crypto: "Crypto Briefing",

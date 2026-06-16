@@ -56,6 +56,9 @@ export type MarketsVerdict = {
     emoji: string;
     label: string;
     conviction: "low" | "medium" | "high";
+    /** How long the call is meant to hold, e.g. "1-2 weeks". Optional on older
+     *  verdicts — use verdictHorizon() for a display string with a fallback. */
+    horizon?: string;
     rationale_short: string;
     supporting_data: SupportingPoint[];
   };

@@ -9,6 +9,7 @@
     "emoji": "🟢",
     "label": "BUY — NVDA Add Trigger Confirmed; SPX Day-2 Regime Close in Play; FOMC June 17 Is the HIGH Conviction Gate",
     "conviction": "medium",
+    "horizon": "1-2 weeks",
     "rationale_short": "VIX's June 15 close at 16.20 fully activated the NVDA conditional add trigger — the third and final gate established June 10 is met. SPX 7,554.29 was the first regime-floor close above 7,460 since June 9, and this morning's futures +0.46% put Day 2 of the back-to-back test in play. NVDA's $25 billion bond sale attracted $85 billion in orders — the largest single AI capital-market confidence signal of 2026 and the clearest institutional endorsement of the late-July earnings setup. SPCX enters Day 3 premarket +11% with options beginning to trade. BUY at medium conviction: the 10Y rising 6 bps to 4.48% is the first signal the post-Iran deal bond rally is fading, 30Y (est. ~4.91%) has narrowed its buffer toward the 5.00% trigger, and Warsh's June 17 press conference with full dot plot is the week's defining event. HIGH conviction requires today's SPX close above 7,460 — the second consecutive confirmation — AND a neutral Warsh FOMC outcome tomorrow.",
     "supporting_data": [
       {
@@ -38,18 +39,63 @@
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7589.0,  "change_pct":  0.46, "as_of": "2026-06-16T12:30:00Z" },
-    "nasdaq": { "level": 26807.0, "change_pct":  0.46, "as_of": "2026-06-16T12:30:00Z" },
-    "vix":    { "level": 15.90,   "change_pct": -1.85, "as_of": "2026-06-16T12:30:00Z" },
-    "ust10y": { "level": 4.48,    "change_bps":  6,    "as_of": "2026-06-16T12:30:00Z" },
-    "dxy":    { "level": 97.80,   "change_pct": -0.14, "as_of": "2026-06-16T12:30:00Z" }
+    "sp500": {
+      "level": 7589.0,
+      "change_pct": 0.46,
+      "as_of": "2026-06-16T12:30:00Z"
+    },
+    "nasdaq": {
+      "level": 26807.0,
+      "change_pct": 0.46,
+      "as_of": "2026-06-16T12:30:00Z"
+    },
+    "vix": {
+      "level": 15.9,
+      "change_pct": -1.85,
+      "as_of": "2026-06-16T12:30:00Z"
+    },
+    "ust10y": {
+      "level": 4.48,
+      "change_bps": 6,
+      "as_of": "2026-06-16T12:30:00Z"
+    },
+    "dxy": {
+      "level": 97.8,
+      "change_pct": -0.14,
+      "as_of": "2026-06-16T12:30:00Z"
+    }
   },
   "regime_risk": [
-    { "name": "VIX",          "value": 15.90,  "trigger_above": 18,   "unit": "" },
-    { "name": "30Y Yield",    "value": 4.91,   "trigger_above": 5.0,  "unit": "%" },
-    { "name": "DXY",          "value": 97.80,  "trigger_above": 100,  "unit": "" },
-    { "name": "SPX vs 7,460", "value": 7589.0, "trigger_below": 7460, "unit": "" },
-    { "name": "Brent",        "value": 83.00,  "trigger_above": 97,   "unit": "USD/bbl" }
+    {
+      "name": "VIX",
+      "value": 15.9,
+      "trigger_above": 18,
+      "unit": ""
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.91,
+      "trigger_above": 5.0,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 97.8,
+      "trigger_above": 100,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7589.0,
+      "trigger_below": 7460,
+      "unit": ""
+    },
+    {
+      "name": "Brent",
+      "value": 83.0,
+      "trigger_above": 97,
+      "unit": "USD/bbl"
+    }
   ],
   "watchlist_mentions": [
     {
