@@ -19,6 +19,7 @@ const DESTINATIONS: Destination[] = [
   { href: "/ideas-record", code: "IREC", label: "Ideas Track Record — how the ideas did" },
   { href: "/nvidia", code: "NVDA", label: "NVIDIA daily brief", go: "n" },
   { href: "/bitcoin", code: "BTC", label: "Bitcoin daily brief", go: "b" },
+  { href: "/bitcoin/thesis", code: "BTHESIS", label: "Bitcoin Thesis — the standing case for BTC" },
   { href: "/skhynix", code: "HYNIX", label: "SK Hynix daily brief", go: "h" },
   { href: "/spacex", code: "SPCX", label: "SpaceX daily brief", go: "s" },
   { href: "/opportunities", code: "OPS", label: "Opportunities", go: "o" },
