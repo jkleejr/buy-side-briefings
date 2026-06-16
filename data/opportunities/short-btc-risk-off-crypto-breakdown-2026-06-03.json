@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-03",
   "expires_at": "2026-06-25",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "crypto",
     "Bitcoin",
@@ -53,7 +53,13 @@
     "Iran",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-16",
+    "final_price": 66304,
+    "return_pct": 0.5,
+    "outcome_label": "Thesis broken — Iran Islamabad Declaration met explicit invalidation condition; position essentially flat",
+    "note": "Iran Islamabad Declaration signed June 14, 2026 opened the Strait of Hormuz toll-free, meeting the explicit invalidation condition: 'Iran ceasefire confirmed with Hormuz opening timeline.' BTC fell from entry ~$66,667 to a low of $59,130 during the Iran escalation (below T1 of $60,000), but the ceasefire triggered a risk-on reversal. BTC recovered to $66,304 by June 16, essentially flat from the short entry. DXY reversed on safe-haven unwind; ETF outflows thesis disrupted by post-ceasefire risk-on. Short closed at +0.5% — Iran peace removed all primary short drivers before T1 could be formally captured."
+  },
   "levels": {
     "entry_low": 65000,
     "entry_high": 68000,

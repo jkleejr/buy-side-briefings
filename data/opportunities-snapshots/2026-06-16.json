@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16T12:05:00Z",
+  "summary": "TBT hit all 3 targets (+20.2%) and JETS hit T1 (+7.1%) as the Iran Islamabad Declaration and hawkish rates thesis played out simultaneously; BTC short and SPCX conditional long closed via thesis-break (Iran peace removes crypto risk-off driver; SPCX never pulled back to $130-145 entry zone, trading at $207+). Three new opportunities added: TBT re-entry at the T3 breakout ($43-47) as Warsh FOMC opens June 16 with 20% rate-hike odds; long GS as lead-left SPCX underwriter and higher-for-longer NIM beneficiary; long AMD on AI chip supercycle confirmation (Q1 data center +57% YoY). Active slate: 11 positions across rates, financials, semiconductors, defense, energy, and index shorts.",
+  "active_ids": [
+    "long-aapl-post-fomc-dip-wwdc-ai-2026-06-15",
+    "long-adbe-cfo-departure-oversell-2026-06-15",
+    "long-gd-iran-duration-dod-heavy-weapons-2026-06-11",
+    "long-googl-apple-pcc-cloud-revenue-2026-06-10",
+    "long-nvda-apple-google-siri-reentry-2026-06-10",
+    "short-arkk-spacex-rotation-drain-2026-05-21",
+    "short-xle-iran-oil-structural-repricing-2026-06-15",
+    "short-meta-eu-dsa-ai-capex-2026-06-02",
+    "long-tbt-warsh-fomc-hawkish-reentry-2026-06-16",
+    "long-gs-fomc-rate-financials-ib-2026-06-16",
+    "long-amd-ai-chip-fomc-dip-2026-06-16"
+  ],
+  "new_today_ids": [
+    "long-tbt-warsh-fomc-hawkish-reentry-2026-06-16",
+    "long-gs-fomc-rate-financials-ib-2026-06-16",
+    "long-amd-ai-chip-fomc-dip-2026-06-16"
+  ],
+  "closed_today": [
+    {
+      "id": "long-tbt-nfp-fomc-hike-reload-2026-06-01",
+      "status": "target_hit",
+      "final_price": 44.5,
+      "return_pct": 20.2,
+      "note": "All 3 targets hit. TBT surged from entry $35.77 to $44-46 as 30Y held above 4.90%, May NFP ran hot, and Goldman called no 2026 cuts. T3 ($43) formally closes the position; TBT re-entry initiated at the breakout level."
+    },
+    {
+      "id": "long-jets-war-powers-deescalation-2026-06-04",
+      "status": "target_hit",
+      "final_price": 31.0,
+      "return_pct": 7.1,
+      "note": "T1 $31 hit via intraday high of $31.32 on June 15. Brent trigger (2 closes below $92) fired June 11-12; Iran Islamabad Declaration June 14 reopened Hormuz toll-free; Brent fell 4.7% to $83.25. JETS at 52-week high of $31.33, confirming T1 at +7.1% from $28.95 reference."
+    },
+    {
+      "id": "short-btc-risk-off-crypto-breakdown-2026-06-03",
+      "status": "thesis_broken",
+      "final_price": 66304,
+      "return_pct": 0.5,
+      "note": "Iran Islamabad Declaration (June 14) met the explicit invalidation condition 'Iran ceasefire confirmed with Hormuz opening timeline.' BTC fell to $59,130 intraday during Iran escalation (below T1 $60K) but recovered to $66,304 post-ceasefire — essentially flat from entry $66,667. Iran peace removed all primary short drivers."
+    },
+    {
+      "id": "long-spcx-float-normalization-msci-passive-2026-06-12",
+      "status": "thesis_broken",
+      "final_price": 207.43,
+      "return_pct": 0,
+      "note": "Entry zone $130-145 never triggered. SPCX closed Day 1 at $160.95, Day 2 at $177.99, and reached $207+ on Day 3 (today). The anticipated float-normalization pullback below $145 was structurally impossible given unprecedented demand for the $1.75T IPO. No position opened; 0% return."
+    }
+  ],
+  "current_prices": {
+    "long-aapl-post-fomc-dip-wwdc-ai-2026-06-15": 296.40,
+    "long-adbe-cfo-departure-oversell-2026-06-15": 207.0,
+    "long-gd-iran-duration-dod-heavy-weapons-2026-06-11": 360.22,
+    "long-googl-apple-pcc-cloud-revenue-2026-06-10": 370.81,
+    "long-nvda-apple-google-siri-reentry-2026-06-10": 212.45,
+    "short-arkk-spacex-rotation-drain-2026-05-21": 79.63,
+    "short-xle-iran-oil-structural-repricing-2026-06-15": 58.50,
+    "short-meta-eu-dsa-ai-capex-2026-06-02": 593.48,
+    "long-tbt-warsh-fomc-hawkish-reentry-2026-06-16": 44.5,
+    "long-gs-fomc-rate-financials-ib-2026-06-16": 1078.48,
+    "long-amd-ai-chip-fomc-dip-2026-06-16": 547.26
+  }
+}

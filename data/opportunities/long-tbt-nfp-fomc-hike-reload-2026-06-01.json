@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-01",
   "expires_at": "2026-06-25",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "macro",
     "rates",
@@ -53,7 +53,13 @@
     "hedge",
     "structural"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-16",
+    "final_price": 44.5,
+    "return_pct": 20.2,
+    "outcome_label": "Target 3 hit at $43.00 — 30Y yield regime shift confirmed",
+    "note": "TBT surged through all three targets as the Warsh FOMC (June 16-17) approaches with an 8-4 hawkish baseline and 20% rate-hike tail odds. Goldman Sachs called no 2026 cuts (first cut June 2027), and May NFP ran hot. 30Y held elevated above 4.90%, driving TBT from the $35.77 reference price to $44-46 — a 20.2% gain to T3 ($43). TBT continues running above T3 on June 16 as FOMC opens. Formally closed at T3 per system rules; re-entry position initiated at the T3 breakout (see long-tbt-warsh-fomc-hawkish-reentry-2026-06-16)."
+  },
   "levels": {
     "entry_low": 34.8,
     "entry_high": 36.5,

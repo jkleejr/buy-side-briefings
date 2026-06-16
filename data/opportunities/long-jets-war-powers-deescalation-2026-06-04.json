@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-04",
   "expires_at": "2026-08-15",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "airlines",
     "Iran",
@@ -54,7 +54,13 @@
     "war-powers",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-15",
+    "final_price": 31.0,
+    "return_pct": 7.1,
+    "outcome_label": "Target 1 hit at $31.00 — Iran Islamabad Declaration reopens Hormuz, airline cost thesis confirmed",
+    "note": "The Brent trigger (two consecutive closes below $92) fired on June 11-12 with Brent at $89.52 and $86.91 respectively, activating entry near the $28.95 reference price. The Iran Islamabad Declaration (June 14) reopened the Strait of Hormuz toll-free; Brent fell 4.7% to $83.25 on June 15. JETS reached an intraday high of $31.32 on June 15 (new 52-week high of $31.33), confirming T1 at $31.00 hit at +7.1% from the $28.95 reference. Remaining targets ($34.50/$38.50) require sustained Brent below $80."
+  },
   "levels": {
     "stop": 25.5,
     "targets": [
