@@ -1,0 +1,120 @@
+{
+  "asset": "spcx",
+  "symbol": "SPCX",
+  "name": "SpaceX",
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16T15:00:00Z",
+  "is_seed": false,
+  "currency_symbol": "$",
+  "day_winner": "bulls",
+  "day_summary": "SPCX ripped +7.7% on Day 3 of trading to close at $207.43, printing an intraday high of ~$211.75 (+10% from the $192.50 Day 2 close) before settling. Bloomberg ran the headline: SPCX is 'set for more than 50% jump in just three sessions' from the $135 IPO price — the final tally of $207.43 confirms it (+53.7%). The structural float mechanic that has driven every session is still fully in play: MSCI early-inclusion passive buying into a ~4% float with no meaningful short interest and no borrow. Today's session added a new layer: SPCX listed options began trading on Nasdaq for the first time, introducing the first hedging mechanism since the IPO. Initial IV is rich (estimated 80–90% front-week), spreads are wide, and bid-ask in the near-term options chain is uninvestable — but the options debut is a structural milestone that eventually unlocks institutional hedging and short-side discovery.",
+  "long_pnl": "+7.7% on the day (+53.7% from $135 IPO offer); allocants from the $135 IPO are up ~$72/share; Day 2 holders at $192.50 are up ~$15/share",
+  "short_pnl": "n/a — still minimal borrow; options market debuted today but bid-ask spreads are wide and short-side entry via puts is expensive at estimated 80–90% front-week IV",
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "event · 2–4 weeks",
+    "rationale": "Still HOLD/WAIT at low conviction. Day 3 closed at $207.43, confirming that the planned $130–145 dip entry and the revised $190–205 pullback entry from the morning verdict both failed to materialize. The float/MSCI bid overwhelmed every sell attempt. The discipline: new money does NOT chase $207 on Day 3 of a record IPO at ~98x 2025 revenue with no fundamental anchor until Q1 earnings (~Sept 2). The options debut introduces a hedging mechanism but front-week IV at 80–90% makes protective puts prohibitively expensive today. Allocants hold a core and may trim further into strength. If price pulls back to $190–200 intraday, buying with a put hedge (once spreads normalize in 2–3 days) is the next actionable entry. A daily close back below $185 re-opens the $175–185 entry zone. A daily close below $135 invalidates the long thesis."
+  },
+  "snapshot": {
+    "price": 207.43,
+    "change_pct": 7.74,
+    "change_abs": 14.93,
+    "prev_close": 192.50,
+    "day_low": 192.60,
+    "day_high": 211.75,
+    "week52_low": 135.00,
+    "week52_high": 211.75,
+    "volume": "heavy (Day-3 listing turnover)",
+    "market_cap": "~$2.2T",
+    "extra": [
+      { "label": "Since $135 IPO offer", "value": "+53.7%", "tone": "up" },
+      { "label": "Three-session gain since debut", "value": "+29% from $161 debut close", "tone": "up" },
+      { "label": "vs revised $190–205 entry zone", "value": "above — no entry today", "tone": "neutral" },
+      { "label": "Public float", "value": "~4%", "tone": "neutral" },
+      { "label": "P/Revenue (2025 ~$18.7B)", "value": "~98x", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 85,
+    "iv_note": "Front-week IV estimated 80–90% on the options debut — the first-day bid-ask spreads are wide (2–5 points on near-term strikes) and uninvestable for most retail approaches. In 2–3 sessions, as market makers build position and spread-makers compete, near-term IV may normalize to 55–70% and protective puts become viable as a hedging tool for new longs.",
+    "put_call": null,
+    "short_interest": "negligible / minimal borrow — options debut introduces the first mechanism for defined-risk bearish exposure, but no meaningful short interest has been established; the absence of a short book means no gamma-squeeze counterpart but also no short-covering fuel",
+    "max_pain": "n/a — no established monthly expiry cycle yet; first expiry Friday June 20 will set the initial max-pain anchor",
+    "notable_flow": "The dominant flow is still the MSCI passive-inclusion bid into a ~4% float — Day 3 volume at the open confirmed the squeeze dynamic hasn't exhausted. The options debut is a structural milestone: within 5–10 sessions, as put and call OI build, the SPCX options chain will begin anchoring price discovery and introducing real-time market pricing of vol and skew. Today's options flow was dominated by speculative call buying (new product excitement) rather than hedged institutional positioning — the protective put theme is the next trading development to watch."
+  },
+  "what_traders_are_doing": "Allocants are trimming into Day 3 strength while holding a core for the index-inclusion runway. Disciplined new money is standing down — $207 is Day 3 of a record IPO at ~98x revenue, and the options market is not yet providing viable hedging infrastructure. Momentum desks rode the 10% intraday rip to $211.75 and took profits at the high; some rebuilt positions on the pullback to $205–$207 for a late-day hold. The debut of the options chain is drawing attention from volatility desks who are positioning as market makers and earning the wide spread. Near-consensus view: the float/passive-bid mechanic runs until MSCI demand exhausts (likely 2–4 more weeks), options spreads normalize in 3–5 sessions, and the first real entry with a protective put becomes viable at $190–200 on a pullback.",
+  "news": [
+    {
+      "label": "Bloomberg: SpaceX (SPCX) stock set for more than 50% jump in just three sessions — shares rising as much as 10% on Day 3, lifting market value to roughly $2.8T (fully diluted), approximately $100B above Amazon; MSCI inclusion into ~4% float is the structural driver",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-16/spacex-spcx-stock-set-for-more-than-50-jump-in-just-three-sessions",
+      "source": "Bloomberg",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Saxo Bank Options Brief (June 16): SpaceX options go live, FOMC week — first SPCX listed options begin trading on Nasdaq; front-week IV rich; FOMC Day 1 convergence creates a complex trading environment; Saxo notes the week compresses SpaceX options debut, FOMC, Iran accord signing, and Juneteenth into four sessions",
+      "url": "https://www.home.saxo/content/articles/options/options-brief--spacex-options-live-fomc-week--16-june-2026-16062026",
+      "source": "Saxo Bank",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "CNBC IPO takeaways: SPCX closes at $161 jumping 19% after record debut — Day 1 reference close; SpaceX raised $75B in the largest IPO ever; Day 2 close $192.50 (+19.6%); Day 3 tracking +53.7% from $135 IPO price as of today's close",
+      "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+      "source": "CNBC",
+      "sentiment": "positive"
+    },
+    {
+      "label": "FOMC Day 1 opens June 16 with Warsh presiding — rate hold at 3.50–3.75% virtually certain (97.4% CME FedWatch); Warsh press conference June 17 2:30 PM ET is the week's macro gate; a hawkish surprise is the primary FOMC event risk for high-multiple growth names including SPCX",
+      "url": "https://www.fxstreet.com/analysis/kevin-warsh-opens-first-fed-meeting-june-16-with-rate-hold-expected-202606151326",
+      "source": "FXStreet",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Yahoo Finance: SpaceX stock jumps for a second day, now up over 35% since debut (June 15) — MSCI early-inclusion passive buying into ~4% float confirmed as the structural driver; first earnings anchor ~Sept 2, first lock-up supply event ~December 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-jumps-for-second-day-now-up-over-35-since-debut-143317444.html",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "CNBC: SpaceX IPO is a unique hedging challenge for Wall Street — 'What are you going to do, short NASA?' — Wall Street firms flagged lack of borrow, thin float, and no listed options as structural constraints on shorting pre-debut; options debut today resolves the last of those constraints",
+      "url": "https://www.cnbc.com/2026/06/10/spacex-ipo-hedging-challenge-wall-street-short-nasa.html",
+      "source": "CNBC",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Float-squeeze driven and extended. Day 3 at $207.43 (+53.7% from $135 IPO) has pushed well past any fundamental anchor. The MSCI passive bid is still the dominant price-discovery mechanism, and it runs until the inclusion trade exhausts — likely 2–4 more weeks — but the intraday high of $211.75 was rejected on Day 3, which is the first sign of institutional selling into strength. Options debut today; spreads normalize in 3–5 sessions; after normalization, a protective put at the $190–200 pullback zone is the disciplined new entry. New money does not chase $207. FOMC June 17 is the macro gate; Juneteenth June 19 thins Friday liquidity.",
+    "long_term": "Unchanged from Day 1: a real megacap franchise (Starlink 5M+ subs, ~40% growth; Starship; Starshield national-security contracts) but now priced at ~98x 2025 revenue at ~$2.2T — demanding flawless execution for a 2029–2032 payoff. The structural float/passive-inclusion bid is a powerful near-term tailwind; the ~December 2026 lock-up expiry is the first major supply event. First earnings (~Sept 2) is the moment the story must print numbers. Marquee long-term holders (Baron, Rinehart) who bought $1B+ each at the debut are unbothered — they own the decade. New money must be disciplined about entry price."
+  },
+  "bull_case": [
+    "MSCI early-inclusion passive bid (live since June 13) into a ~4% float is overwhelming every sell attempt — Day 3 +7.7% confirms the forced-demand mechanic has at least 2–4 more weeks of runway.",
+    "+53.7% in three sessions is the signal that portfolio managers who missed the IPO are chasing exposure — FOMO and momentum demand are compounding the passive bid.",
+    "Options debut today is a structural milestone: within 5–10 sessions, the options chain provides a hedging mechanism that unlocks institutional participation from players who required options-market infrastructure before entry.",
+    "Bloomberg's market cap of $2.8T (fully diluted, roughly $100B above Amazon) reflects the 'investable space' re-rating narrative — Wedbush's 'watershed moment' framing is pulling broad capital into the sector."
+  ],
+  "bear_case": [
+    "Day 3 at $207.43 is ~98x 2025 revenue ($18.7B) and ~$2.2T market cap — three sessions into a record IPO with no fundamental anchor until ~Sept 2; this is not an earnings story yet.",
+    "The intraday high of $211.75 was rejected — the first meaningful rejection in three sessions — which is the earliest warning signal that institutional selling is beginning to absorb the passive bid.",
+    "Options debut with front-week IV 80–90% means near-term puts are very expensive: the cost of protecting new longs at $207 is prohibitive today and will be for 3–5 sessions until market makers build position.",
+    "FOMC June 17 can jolt all high-multiple growth names; the ~December 2026 lock-up adds a structural supply overhang; and the thin float that drove the squeeze cuts both ways on any vol event."
+  ],
+  "key_levels": [
+    { "label": "Day-3 intraday high (new 52-week high)", "level": "$211.75", "kind": "resistance" },
+    { "label": "Key round-number / pre-FOMC chase cap", "level": "$210", "kind": "resistance" },
+    { "label": "Today's close / Day-3 session pivot", "level": "$207.43", "kind": "pivot" },
+    { "label": "Day-2 close / revised entry shelf", "level": "$192.50", "kind": "support" },
+    { "label": "Pullback entry with options hedge (after spread normalization)", "level": "$190–$200", "kind": "support" },
+    { "label": "IPO debut close — re-opens $175–185 entry zone on a daily close below", "level": "$185", "kind": "support" },
+    { "label": "IPO offer / re-opens $130–145 original plan entry on daily close below", "level": "$135", "kind": "support" },
+    { "label": "Stop-loss (daily close) — long thesis invalidation", "level": "$118", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-16", "label": "SPCX options begin trading on Nasdaq — structural milestone; spreads normalize 3–5 sessions; enables hedged entries and short-side discovery for the first time", "importance": "high" },
+    { "date": "2026-06-17", "label": "FOMC rate decision — macro gate for all high-multiple growth names; Warsh press conference 2:30 PM ET", "importance": "high" },
+    { "date": "2026-06-19", "label": "Juneteenth — US market holiday (no session); thins Friday liquidity post-FOMC", "importance": "low" },
+    { "date": "2026-06-30", "label": "MSCI passive flows expected to exhaust gradually over 2–4 weeks — monitor daily volume for demand deceleration signal", "importance": "medium" },
+    { "date": "2026-09-02", "label": "First post-IPO earnings (approx.) — the first true fundamental anchor for the valuation; Starlink sub count, Starship launch cadence, and Starshield revenue will drive the narrative", "importance": "high" },
+    { "date": "2026-12-09", "label": "180-day insider lock-up expiry (approx.) — first major supply event; potential +5–10% float expansion", "importance": "medium" }
+  ],
+  "analysis": "## Day 3: +53.7% from the IPO offer, and options finally arrive\n\nSPCX closed **$207.43** (+7.74%) on Day 3 of trading — [Bloomberg ran the headline](https://www.bloomberg.com/news/articles/2026-06-16/spacex-spcx-stock-set-for-more-than-50-jump-in-just-three-sessions) calling it 'set for more than 50% jump in just three sessions.' The final tally confirms it: from the $135 IPO price, the stock gained **+53.7% in three sessions**, pushing the fully-diluted market cap to approximately **$2.8T** per Bloomberg — roughly $100B above Amazon. The intraday high of **$211.75** (up 10% from the $192.50 Day 2 close) was the first meaningful rejection in three sessions, which is worth flagging.\n\n## The options debut — a structural inflection\n\nToday is not just Day 3 of a record IPO. [SPCX listed options began trading on Nasdaq for the first time](https://www.home.saxo/content/articles/options/options-brief--spacex-options-live-fomc-week--16-june-2026-16062026), resolving the final constraint flagged in the pre-IPO analysis: Wall Street had no mechanism to hedge or short SPCX. [CNBC noted before the IPO that 'there was no answer to the question of how to short SpaceX'](https://www.cnbc.com/2026/06/10/spacex-ipo-hedging-challenge-wall-street-short-nasa.html) — borrow was scarce, no put market existed. Today that changes. Front-week IV is estimated at 80–90% with wide bid-ask spreads (2–5 points on near-term strikes), which makes protective puts too expensive today for most approaches. But in 3–5 sessions as market makers build position, spreads compress, and the options chain becomes liquid — that is when a hedged entry at **$190–200** becomes the disciplined new-money setup.\n\n## Still no chase — the discipline holds\n\nThe call remains **HOLD/WAIT at low conviction** for new money. Three sessions into a record IPO at **~98x revenue and ~$2.2T market cap**, buying $207 means paying the full passive-bid premium with no fundamental anchor until **~Sept 2 earnings**. The original $130–145 dip entry never came; the revised $190–205 pullback entry from the morning verdict was overrun before the open; the next actionable zone is **$190–200 on a pullback with a protective put** (viable once options spreads normalize). Allocants up ~$72/share from the IPO should be trimming into Day 3 strength and holding a reduced core. The float/passive-bid mechanic is real, powerful, and has 2–4 more weeks of runway — but it is a supply-and-demand phenomenon, not an earnings one, and **FOMC June 17** plus the ~December lock-up are the events that can turn a thin-float melt-up into a thin-float reversal."
+}
