@@ -6,7 +6,9 @@ import {
   type LongTermIdea,
 } from "@/lib/long-term-ideas";
 import { cn } from "@/lib/utils";
+import { scoreIdeas } from "@/lib/idea-scoring";
 import Panel from "@/components/panel";
+import IdeasRecord from "@/components/ideas-record";
 
 export const metadata = {
   title: "Long Term Ideas — Buy-Side Briefings",
@@ -85,8 +87,9 @@ function IdeaCard({ idea }: { idea: LongTermIdea }) {
   );
 }
 
-export default function LongTermIdeasPage() {
+export default async function LongTermIdeasPage() {
   const set = getLatestLongTermIdeas();
+  const { long: record } = await scoreIdeas();
 
   if (!set) {
     return (
@@ -142,10 +145,24 @@ export default function LongTermIdeasPage() {
         </div>
       ))}
 
+      {/* ---- Track record: how past long-term ideas are doing ---- */}
+      <div className="pt-3">
+        <IdeasRecord
+          scored={record}
+          code="REC"
+          title="Long Term · Track Record"
+          intro="Every long-term idea posted, scored by the price move since. These play out over quarters — expect most to read as pending or small for a while."
+        />
+      </div>
+
       <p className="px-1 pt-3 font-mono text-[10px] leading-snug text-[var(--dim)]">
         Multi-quarter to multi-year perspectives — meant to frame the structural case for
-        holding (or avoiding) a name over the long run, not sized recommendations. For the
-        next-session view, see{" "}
+        holding (or avoiding) a name over the long run, not sized recommendations. The full
+        scored history of both horizons is on the{" "}
+        <Link href="/ideas-record" className="text-[var(--cyan-term)] hover:underline">
+          Ideas Track Record
+        </Link>{" "}
+        page; for the next-session view, see{" "}
         <Link href="/short-term-ideas" className="text-[var(--cyan-term)] hover:underline">
           Short Term Ideas
         </Link>

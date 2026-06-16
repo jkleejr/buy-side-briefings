@@ -6,7 +6,9 @@ import {
   type ShortTermIdea,
 } from "@/lib/short-term-ideas";
 import { cn } from "@/lib/utils";
+import { scoreIdeas } from "@/lib/idea-scoring";
 import Panel from "@/components/panel";
+import IdeasRecord from "@/components/ideas-record";
 
 export const metadata = {
   title: "Short Term Ideas — Buy-Side Briefings",
@@ -85,8 +87,9 @@ function IdeaCard({ idea }: { idea: ShortTermIdea }) {
   );
 }
 
-export default function ShortTermIdeasPage() {
+export default async function ShortTermIdeasPage() {
   const set = getLatestShortTermIdeas();
+  const { short: record } = await scoreIdeas();
 
   if (!set) {
     return (
@@ -142,10 +145,24 @@ export default function ShortTermIdeasPage() {
         </div>
       ))}
 
+      {/* ---- Track record: how past short-term ideas actually did ---- */}
+      <div className="pt-3">
+        <IdeasRecord
+          scored={record}
+          code="REC"
+          title="Short Term · Track Record"
+          intro="Every short-term idea posted, scored against the price move since. New ideas show as pending until they've aged a day."
+        />
+      </div>
+
       <p className="px-1 pt-3 font-mono text-[10px] leading-snug text-[var(--dim)]">
         These are quick directional perspectives for the next market day — meant to surface
-        ideas and the reasoning behind a buy or sell, not sized recommendations. The journaled,
-        risk-managed setups live in{" "}
+        ideas and the reasoning behind a buy or sell, not sized recommendations. See the full
+        scored history of both horizons on the{" "}
+        <Link href="/ideas-record" className="text-[var(--cyan-term)] hover:underline">
+          Ideas Track Record
+        </Link>{" "}
+        page; the journaled, risk-managed setups live in{" "}
         <Link href="/opportunities" className="text-[var(--cyan-term)] hover:underline">
           Opportunities
         </Link>
