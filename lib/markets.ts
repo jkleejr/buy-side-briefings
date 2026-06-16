@@ -371,6 +371,50 @@ export async function getTradeQuotes(symbols: string[]): Promise<TradeQuote[]> {
   }
 }
 
+// ---- Symbol search (ticker or company name) for the watchlist add box ------
+
+export type SymbolSearchResult = {
+  symbol: string;
+  name: string;
+  exchange: string | null;
+  type: string | null;
+};
+
+/**
+ * Resolve a free-text query (ticker or company/asset name) to candidate Yahoo
+ * symbols via Yahoo's search endpoint. Drops option contracts; never throws.
+ */
+export async function searchSymbols(query: string): Promise<SymbolSearchResult[]> {
+  const q = query.trim();
+  if (q.length < 1) return [];
+  try {
+    // validateResult:false — Yahoo's search payload often carries fields the
+    // library's strict schema rejects (which would otherwise throw); we read
+    // the fields we need defensively, so skip validation.
+    const res = (await yahooFinance.search(
+      q,
+      { quotesCount: 10, newsCount: 0 },
+      { validateResult: false },
+    )) as { quotes?: Array<Record<string, unknown>> };
+    const quotes = res?.quotes ?? [];
+    return quotes
+      .filter((x) => typeof x.symbol === "string" && x.quoteType !== "OPTION")
+      .map((x) => ({
+        symbol: x.symbol as string,
+        name:
+          (x.shortname as string) ??
+          (x.longname as string) ??
+          (x.symbol as string),
+        exchange: (x.exchange as string) ?? null,
+        type: (x.quoteType as string) ?? null,
+      }))
+      .slice(0, 8);
+  } catch (err) {
+    console.error("[markets] symbol search failed:", err);
+    return [];
+  }
+}
+
 export async function getQuote(symbol: string): Promise<LiveQuote | null> {
   try {
     const q = (await yahooFinance.quote(symbol)) as YQuote | YQuote[];

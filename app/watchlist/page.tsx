@@ -4,6 +4,7 @@ import type { ChartPoint } from "@/lib/chart-ranges";
 import { formatPct } from "@/lib/utils";
 import Panel from "@/components/panel";
 import WatchlistCards, { type WatchQuote } from "@/components/watchlist-cards";
+import TickerSearch from "@/components/ticker-search";
 
 // Curated additions to consider beyond the user-edited watchlist. Grouped by
 // theme. Edit freely. Anything already in data/watchlist.json is auto-filtered
@@ -107,9 +108,12 @@ export default async function WatchlistPage() {
           Watchlist
         </h1>
         <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          {entries.length} tickers · live quotes · hover-readable sparklines · briefing mentions
+          Search any ticker to add it · live quotes · sparklines · briefing mentions
         </p>
       </header>
+
+      {/* Search any ticker/company and add it to your (browser-stored) watchlist. */}
+      <TickerSearch />
 
       <Panel code="HOW" title="How this list is built">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
