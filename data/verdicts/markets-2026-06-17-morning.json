@@ -1,0 +1,164 @@
+{
+  "routine": "markets",
+  "date": "2026-06-17",
+  "window": "morning",
+  "generated_at": "2026-06-17T12:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — Day-2 SPX Regime Confirmed; DXY at 99.57 Is the Warning; Warsh Opens 2:30 PM ET",
+    "conviction": "medium",
+    "rationale_short": "SPX closed at 7,548.60 on June 16 — the second consecutive session above the 7,460 regime floor — meeting the first of two conditions established for HIGH-conviction BUY. The second condition, a neutral Warsh FOMC outcome, resolves at 2:30 PM ET today. BUY at medium conviction is maintained. The morning's critical correction to the prior brief: DXY stands at 99.57, not the estimated 97.80 — the buffer to the 100 regime trigger has compressed to just 0.43 points, and a hawkish dot plot with May CPI at 4.2% could breach it within hours. Hold existing positions; do not expand longs into the Warsh presser.",
+    "supporting_data": [
+      {
+        "label": "SPX 7,548.60 June 16 close (-0.08%) — second consecutive close above 7,460 regime floor; HIGH conviction condition 1 met; Nasdaq -1.15% (26,376.34) and Dow +0.64% (~52,000, second consecutive ATH) confirm value/defensive rotation ahead of FOMC; NQ futures +0.6% pre-market June 17",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-16-2026"
+      },
+      {
+        "label": "DXY 99.57 June 16 close — prior brief estimated 97.80; the Iran deal only pushed the dollar ~0.5 points below 100, not 2+ points; buffer to 100 regime trigger compressed from 2.2 (estimated) to 0.43 (actual); the DXY is the morning's leading risk indicator ahead of Warsh",
+        "url": "https://tradingeconomics.com/united-states/currency"
+      },
+      {
+        "label": "FOMC June 17: rate hold at 3.50–3.75% virtually certain (98.4% CME); Warsh first press conference 2:30 PM ET; May CPI 4.2% — dot plot expected to show zero 2026 cuts; Goldman Sachs assumes Warsh will not submit his own dot; three or more FOMC members may project rate-hike dots",
+        "url": "https://www.indexbox.io/blog/fed-holds-rates-as-inflation-hits-42-warshs-first-fomc-press-conference-in-focus/"
+      },
+      {
+        "label": "NVDA $207.41 (-2.37%) June 16 close — slipped below $210 conditional add zone floor on tech-sector rotation; $25B bond deal ($85B orders) remains the fundamental anchor; stop at $195 intact; add rationale suspended below $210 pending FOMC resolution",
+        "url": "https://stockanalysis.com/stocks/nvda/history/"
+      },
+      {
+        "label": "WTI below $76 per barrel June 17 morning — four consecutive sessions of decline on Iran deal implementation; Brent ~$79 (from $83.17 June 16 close per Investing.com); three-month lows; disinflationary tailwind intact but H2 2026 energy earnings estimate cuts still not in sell-side numbers",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53243117/stock-market-today-dow-jones-futures-tumble-sp-500-gains-as-investors-await-fomc-decision-amkor-la-z-boy-in-focus"
+      },
+      {
+        "label": "CNN Fear & Greed Index at 40 (Fear) as of June 17 — market not in overbought territory; institutional positioning is defensive ahead of Warsh; sentiment at Fear is a mild contrarian positive but does not override the FOMC gate",
+        "url": "https://edition.cnn.com/markets/fear-and-greed"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7548.6,   "change_pct": -0.08, "as_of": "2026-06-16T20:00:00Z" },
+    "nasdaq": { "level": 26376.34, "change_pct": -1.15, "as_of": "2026-06-16T20:00:00Z" },
+    "vix":    { "level": 16.42,    "change_pct": -0.56, "as_of": "2026-06-16T20:00:00Z" },
+    "ust10y": { "level": 4.44,     "change_bps": -3,    "as_of": "2026-06-17T12:30:00Z" },
+    "dxy":    { "level": 99.57,    "change_pct": -0.06, "as_of": "2026-06-16T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",         "value": 16.42, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",   "value": 4.88,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",         "value": 99.57, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460","value": 7548.6,"trigger_below": 7460, "unit": "" },
+    { "name": "Brent",       "value": 79.0,  "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$207.41 June 16 close (-2.37%); broke below $210 conditional add zone floor on tech-sector rotation into FOMC; $25B bond deal ($85B orders) remains the fundamental anchor; stop $195 intact; add suspended — do NOT add below $210 or into FOMC uncertainty; post-FOMC re-entry at $205–215 on neutral Warsh outcome only",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$201.80 June 16 close (+4.8% from $192.50); intraday ATH $225.64 on options debut Day 1 before reversing sharply to $201.80 — a 10.5% intraday reversal from peak; the 'don't buy above $210' warning was vindicated; options IV elevated Day 1 as predicted; pullback to $190–200 zone is now emerging; wait for IV normalization before adding with protective put",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "~$418 est.; FOMC event risk today; hold above $405; no new add pre-Warsh",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "$299.24 June 16 close; WWDC AI + PCC (Siri on Blackwell B200 via Google Cloud) intact; hold; post-FOMC entry $290–298 preferred on any Warsh-driven pullback",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$393 June 17 est. (day range $390.69–$398.39 per Yahoo Finance); Azure AI thesis intact; Warsh's 30Y trajectory determination after today is the multi-year multiple input; better entry $385–392 post-FOMC; hold, no add pre-Warsh",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$370 est.; Apple PCC deal and AI search intact; $84.75B equity offering overhang remains; post-FOMC entry $363–370; hold",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$579 est.; 30Y ~4.88% est. — hold; add on post-FOMC pullback if 30Y stabilizes below 4.90%",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$535 est.; BofA Top CPU Pick / $560 target; INTC +4% pre-market on 18A-P chip node production could drive semi-sector sympathy; entry $510–525 on FOMC pullback; hold",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$66,287 (June 16 open); holding above $66K on BlackRock Yield ETF bid; DXY at 99.57 — not the 97.80 estimated — is the primary headwind; a breach above 100 post-Warsh would be the first real test of the institutional bid thesis; do not add above $67K pre-FOMC",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "ETH",
+      "note": "~$1,795 (June 16 open); still below $2,000 structural level; not actionable long until $2,000 reclaimed",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XLE",
+      "note": "~$55 (June 17); WTI below $76 Day 4 confirms structural Iran oil repricing is on track; active short $53–57; H2 2026 earnings estimate cuts not yet in street numbers — that's the medium-term driver",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "INTC",
+      "note": "+4% pre-market June 17 on 18A-P advanced chip node production announcement; positive AI semi read-through; watch for NVDA/AMD sympathy; not a primary setup but a constructive sector signal",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SPX / QQQ at gap-open above 7,550",
+      "reason": "Entering Warsh's first press conference at 2:30 PM ET with full FOMC event risk at 22.7x forward P/E, with inflation at 4.2% and DXY only 0.43 from the regime trigger. NQ futures +0.6% pre-market implies a tech gap-open — buying that gap means owning a 22.7x valuation through the most important Fed event since 2013. The BUY regime is confirmed; it does not mean buying every gap into a major event risk.",
+      "better_entry": "Any intraday pullback to 7,480–7,530 SPX; or buy the post-FOMC dip on June 17 if Warsh delivers neutral language with DXY holding below 100 — that entry has both confirmed policy clarity and regime safety behind it."
+    },
+    {
+      "ticker": "SPCX above $215",
+      "reason": "SPCX hit intraday ATH $225.64 on June 16 (options Day 1) and reversed sharply to close at $201.80 — a 10.5% intraday range. This is the first options-driven volatility print. Day 2 of options trading (today) continues to see elevated implied volatility that makes hedged entry unreliable until the options market normalizes. The 'don't buy above $210' warning in the prior brief was confirmed by the intraday reversal.",
+      "better_entry": "Pullback to $190–205 with protective put; wait for IV normalization on SPCX options (typically Day 3–5 of trading on a newly listed stock). If no pullback below $210 within 3 sessions, the normalization thesis is challenged and the setup expires."
+    },
+    {
+      "ticker": "BTC above $67K pre-FOMC",
+      "reason": "BTC is holding at ~$66K on the BlackRock Yield ETF institutional bid and Iran-deal dollar weakness. But DXY at 99.57 — not 97.80 as the prior brief estimated — reveals the Iran deal only partially weakened the dollar. A hawkish Warsh presser could push DXY above 100 and simultaneously pressure the crypto bid. The trade is hostage to FOMC today.",
+      "better_entry": "Add BTC post-FOMC if Warsh is neutral AND DXY holds below 100 on the post-presser session. If DXY closes above 100, BTC faces the first real test of the BlackRock institutional bid."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA slipped to $207.41 on June 16, breaking below the $210 lower bound of the conditional add zone. The stop at $195 is intact and the fundamental anchor — the $25B bond sale attracting $85B in orders, Apple/Google PCC demand, and late-July earnings — is unchanged. The add thesis is suspended below $210 until Warsh clarifies the rate path. If the press conference is neutral and NVDA recovers above $210 on the June 17 session, re-engage the add in the $205–215 zone with stop unchanged at $195.",
+      "entry": "Hold existing position; do NOT add below $210 or into FOMC uncertainty. Post-FOMC re-entry: $205–215 on neutral Warsh only. Stop $195 daily close.",
+      "invalidation": "Two consecutive closes below $195; or Warsh hawkish AND 30Y breaks above 5.10% within 24 hours — reduce to minimum sizing and wait for re-entry at $190–200.",
+      "conviction": "medium",
+      "horizon": "3–6 weeks"
+    },
+    {
+      "asset": "TBT (2x inverse TLT)",
+      "direction": "hedge",
+      "thesis": "May CPI at 4.2% gives the dot plot no statistical justification for a 2026 cut projection. Goldman Sachs assumes Warsh will not submit his own dot but at least three FOMC members are expected to project rate hikes. The DXY at 99.57 — 0.43 from the regime trigger — will respond directly to Warsh's tone: a hawkish sentence could simultaneously breach DXY >100 and 30Y >5.00% before the close. TBT is the hedge that makes the BUY call defensible into the most important Fed press conference of 2026.",
+      "entry": "Hold TBT at $44–46; do not chase. Reduce by 50% only if Warsh explicitly endorses a September cut window AND 30Y falls below 4.75% on the post-presser session.",
+      "invalidation": "Warsh endorses September cut AND 30Y falls below 4.70% on the June 17 session — cover TBT fully; BUY upgrades to HIGH conviction.",
+      "conviction": "medium",
+      "horizon": "1–2 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "WTI below $76 on June 17 morning — the fourth consecutive session of declines as the Iran deal reprices global oil supply assumptions. Brent ~$79 is $4 below the June 16 prior close of $83.17 and $18 below the $97 regime trigger. H2 2026 energy earnings estimate cuts of 8–12% have not materialized in sell-side numbers; the XLE multiple still reflects a $87–90 WTI assumption. This is the medium-term driver of the short.",
+      "entry": "Continue scaling short XLE at $53–57. Any Brent bounce to $83–85 on mine-clearance headlines is an additional entry opportunity, not the exit.",
+      "invalidation": "Iran deal collapse AND Brent closes above $90 on two consecutive sessions; or XLE reclaims $62 on a daily close basis.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "The DXY at 99.57 — not the estimated 97.80 in the prior brief — is the morning's defining correction: the Iran deal only pushed the dollar approximately 0.5 points below 100, not the 2.2 points the June 16 morning brief assumed, and at 0.43 from the trigger a single hawkish sentence from Warsh could simultaneously breach both the DXY and 30Y regime thresholds before the close. May CPI at 4.2% leaves the dot plot with no statistical justification for 2026 cut projections; if three or more FOMC members submit hike dots and Warsh's language signals a tightening bias, equities at 22.7x forward P/E face a 4–7% multiple compression that oil disinflation alone cannot offset. The VIX futures term structure — spot 16.42 versus the June futures contract at 18.28 — is the market pricing in exactly this scenario, and a spot VIX close above 18 post-Warsh would simultaneously breach the NVDA add trigger. If SPX closes below 7,460 following the Warsh June 17 presser, BUY reverts to HOLD immediately — do not wait for a second session.",
+  "body_mdx": "data/briefings/markets/2026-06-17-morning.mdx"
+}

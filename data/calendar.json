@@ -1,25 +1,18 @@
 {
   "events": [
     {
-      "date": "2026-06-16",
-      "label": "FOMC Day 1 begins; SPCX Day 3 float normalization entry window",
-      "kind": "FOMC",
-      "tickers": ["TBT", "QQQ", "XLF", "SPCX"],
-      "note": "No FOMC announcement June 16; pre-decision quiet session; SPCX Day 3 of trading — revised entry zone $175-185 pullback (prior $155-168 zone obsolete after Day 2 surged to $192.50); NVDA add NOW active (VIX 16.20 trigger confirmed June 15); if SPCX no pullback by Day 4, skip the normalization position"
-    },
-    {
       "date": "2026-06-17",
-      "label": "FOMC decision 2:30 PM ET + Warsh first press conference — dot plot status TBD",
+      "label": "FOMC decision 2:00 PM ET + Warsh first press conference 2:30 PM ET — dot plot status TBD",
       "kind": "FOMC",
       "time_et": "2:30 PM",
-      "tickers": ["TBT", "TLT", "QQQ", "XLF", "IWM", "NVDA"],
-      "note": "99.4% hold at 3.50-3.75%; Warsh may modify or eliminate dot plot at this SEP meeting; CME FedWatch prices 70% probability of year-end hike (most hawkish this cycle); three paths: (1) neutral language → BUY to HIGH conviction, SPX 7,600+, reduce TBT 50%; (2) hawkish/opaque → 30Y to 5.05-5.20%, BUY to HOLD; (3) mixed dot-plot modification + interpretable language → medium-term constructive, BUY medium maintained. Be hedged (TBT) through 2:30 PM"
+      "tickers": ["TBT", "TLT", "QQQ", "XLF", "IWM", "NVDA", "BTC"],
+      "note": "98.4% hold at 3.50–3.75%; May CPI 4.2% means dot plot expected to show zero 2026 cuts; Goldman assumes Warsh will not submit his own dot; three or more members may project hike dots. Three paths: (1) neutral language → BUY to HIGH conviction, SPX 7,580+, reduce TBT 50%, DXY holds below 100; (2) hawkish hold → DXY tests 100, 30Y tests 5.00%, BUY to HOLD; (3) explicit hike signal → two regime triggers breach simultaneously, BUY to HOLD immediately. TBT is the mandatory hedge through 2:30 PM ET."
     },
     {
       "date": "2026-06-19",
       "label": "US markets closed — Juneteenth; Iran formal signing ceremony in Geneva",
       "kind": "HOLIDAY",
-      "note": "Market holiday. Iran formal signing ceremony scheduled in Geneva — Iran's Deputy FM confirmed Tehran will not implement the deal until signed; formal signing activates the 60-day implementation window (Hormuz mines clearance, sanctions relief, nuclear framework talks). Signing failure = Brent $88-92+, STEP ASIDE by Monday open. Monitor Sunday evening futures for first signal."
+      "note": "Market holiday. Iran formal signing ceremony scheduled in Geneva — Iran's Deputy FM confirmed Tehran will not implement the deal until signed; formal signing activates the 60-day implementation window (Hormuz mines clearance, sanctions relief, nuclear framework talks). Signing failure = Brent $88–92+, STEP ASIDE by Monday open. Monitor Sunday evening futures for first signal. WTI already below $76, Brent ~$79 — the physical market has pre-positioned for successful signing."
     },
     {
       "date": "2026-08-13",
@@ -33,7 +26,7 @@
       "label": "SPCX first earnings as a public company (approx.) — Starlink ARR + Starship cadence",
       "kind": "EARNINGS",
       "tickers": ["SPCX"],
-      "note": "First print since the June 12 IPO; the market has no public model yet, so guidance sets the multiple. Watch Starlink subscriber/ARR growth and Starship launch cadence vs. the ~$2.5T market cap implied by the $192.50 Day 2 close. Binary in both directions; date approximate pending company confirmation."
+      "note": "First print since the June 12 IPO; the market has no public model yet, so guidance sets the multiple. Watch Starlink subscriber/ARR growth and Starship launch cadence vs. the ~$2.65T market cap implied by the $201.80 June 16 close. Binary in both directions; date approximate pending company confirmation."
     },
     {
       "date": "2026-12-09",
