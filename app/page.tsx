@@ -7,7 +7,6 @@ import {
 import { getLatestAssetDaily } from "@/lib/asset-daily";
 import { todayET } from "@/lib/utils";
 import VerdictCard from "@/components/verdict-card";
-import AssetCallsPanel from "@/components/asset-calls-panel";
 import DecisionBar from "@/components/decision-bar";
 import MarketKpiStrip from "@/components/market-kpi-strip";
 import RegimeRiskBars from "@/components/regime-risk-bars";
@@ -89,29 +88,22 @@ export default function Home() {
 
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
         {/* ===================== TODAY'S CALL ===================== */}
-        {/* The market verdict and the standing call on each stock you follow. */}
-        <SectionLabel title="Today's Call" note="the verdict & where each name stands" />
+        {/* The market verdict. Per-name standing calls live on each asset's own
+            dossier page (/nvidia, /bitcoin, /skhynix, /spacex), linked from nav
+            and the DecisionBar strip above — kept off the homepage by design. */}
+        <SectionLabel title="Today's Call" note="the market verdict" />
 
         {verdict ? (
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-12">
             <VerdictCard verdict={verdict} />
           </div>
         ) : (
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-12">
             <Panel code="VRDCT" title="Latest Buy Verdict">
               <div className="p-4 text-center font-mono text-[11px] text-[var(--dim)]">
                 No Buy Verdict on file yet.
               </div>
             </Panel>
-          </div>
-        )}
-        {assetCalls.length > 0 ? (
-          <div className="lg:col-span-4">
-            <AssetCallsPanel calls={assetCalls} />
-          </div>
-        ) : (
-          <div className="lg:col-span-4">
-            <CryptoPanel />
           </div>
         )}
 
