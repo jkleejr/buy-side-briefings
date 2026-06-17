@@ -1,0 +1,125 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17T11:15:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "BTC has slipped below the $65,000 re-risk trigger on FOMC Decision Day, trading at $64,657 on Crypto.com live feed (11:06 UTC) in a $63,663–$65,935 range. This is the first session since the June 15 re-entry call where BTC has definitively lost $65,000 in the morning session. The macro picture is more hawkish than prior estimates: DXY closed at 99.57 on June 16 — only 0.43 points from the 100 regime trigger, not the 97.80 estimated earlier. Rate hike odds for 2026 have surged to 50–68% on prediction markets ahead of Warsh's 2:30 PM ET press conference. BlockchainReporter headlines it plainly: 'Bitcoin $64,881, FOMC Decision Day — rate hike odds hit 50%.' The BTC stop is $63,500 on two consecutive closes. All decisions wait for Warsh.",
+  "long_pnl": "longs from the June 15 re-entry at $65–$66K are now 1–2% offside vs the $64,657 live price; stop at $63,500 daily close is intact; drawdown is manageable but the trigger breach is a yellow flag",
+  "short_pnl": "+~1.5% from June 16 close — shorts who pressed the FOMC event risk and the hike-odds repricing are catching a bid; the crowded long book below $65K is the flush fuel if Warsh delivers hawkish dots",
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "hours · FOMC-gated",
+    "rationale": "HOLD at low conviction (borderline cautious). BTC is below the $65,000 re-risk trigger for the first time since the June 15 BUY call. The trigger breach is a yellow flag, not the stop: the stop on existing position remains a daily close below $63,500 on two consecutive sessions. The macro mechanism that drove the June 15 call is materially weaker than estimated: DXY closed at 99.57 (not 97.80) — only 0.43 points from the 100 trigger — and WTI fell below $76 (Brent ~$79) as the Iran deal oil repricing continues. The rate hike odds repricing (50–68% for 2026) is a real headwind layered on top. Two FOMC outcomes resolve the uncertainty today: (1) Neutral Warsh dot (≥1 cut in median) → dollar falls, BTC reclaims $65K within hours, HOLD upgrades to BUY; (2) Hawkish dot (zero cuts + hike markers) → dollar spikes, the crowded long book flushes below $65K toward $62K–$63K, exit positions before the $63,500 daily close stop triggers. Do not add pre-2:30 PM ET."
+  },
+  "snapshot": {
+    "price": 64657,
+    "change_pct": -1.48,
+    "change_abs": -976,
+    "prev_close": 65633,
+    "day_low": 63663,
+    "day_high": 65935,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "~$19B (24h est.)",
+    "market_cap": "~$1.28T",
+    "extra": [
+      { "label": "From ATH (~$115K)", "value": "−44%", "tone": "down" },
+      { "label": "vs $65K re-risk trigger", "value": "−0.5% (below trigger)", "tone": "down" },
+      { "label": "BTC dominance", "value": "~57%", "tone": "neutral" },
+      { "label": "Fear & Greed", "value": "~35 · Fear", "tone": "down" },
+      { "label": "DXY (actual June 16 close)", "value": "99.57 — 0.43 pts from 100 trigger", "tone": "down" },
+      { "label": "2026 rate hike odds (prediction markets)", "value": "50–68%", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 65,
+    "iv_note": "DVOL at ~65% — the highest since the spring risk-off episode — with FOMC straddles at maximum premium ahead of the 2:30 PM ET presser. The term structure is deeply inverted through June 17: the market is pricing today as a bigger event than the next 30 days combined. Post-Warsh compression to 52–55% is the base case on a neutral outcome; a hawkish surprise with hike dots extends DVOL to 72–78% as the entire risk-off repricing cascade begins.",
+    "put_call": 0.98,
+    "short_interest": "perp funding turned neutral-to-slightly negative overnight — the crowded long book from June 15–16 is being trimmed ahead of the FOMC binary; this is smart money reducing leverage pre-event, not capitulation",
+    "max_pain": "~$64,000 (June weekly expiry)",
+    "notable_flow": "The funding rate flip (positive → neutral/negative) is the single most important positioning signal today: longs are de-leveraging ahead of the FOMC. P/C at 0.98 is the most bearishly-positioned BTC options market since the May capitulation low. The BTC max-pain of $64,000 on the June weekly expiry is directly below current price — dealer positioning is already suggesting a pull toward $64K as the natural expiry gravity. Michael Saylor's Strategy added 1,587 BTC (per AnalyticsInsight June 17) — a structural buy that anchors the $63,500–$64,000 demand zone."
+  },
+  "what_traders_are_doing": "Pre-FOMC de-risk. The smart-money playbook for BTC on FOMC Decision Day with 50–68% hike odds: cut leverage to minimum, own the FOMC straddle, and wait. Perp funding has flipped negative — this means the average leveraged trader has shifted from net long to net short/neutral for the first time since early June. Michael Saylor's Strategy buying 1,587 BTC is the structural-demand anchor in the lower range. The macro traders who drove the June 15 re-entry call are not pressing; they are trimming to minimum sizing, monitoring the $63,500 daily close stop, and waiting for Warsh to reveal the dot plot. If the median shows zero 2026 cuts and any hike markers appear, the long book sells before anyone else can.",
+  "news": [
+    {
+      "label": "Crypto Market Today June 17: Bitcoin $64,881 as FOMC Decision Day arrives — BlockchainReporter: 'rate hike odds hit 50%'; BTC trading in $63,663–$65,935 range as Warsh presides over first FOMC press conference at 2:30 PM ET",
+      "url": "https://blockchainreporter.net/crypto-market-today-bitcoin-slips-to-64881-as-fomc-decision-day-arrives-and-rate-hike-odds-hit-50/",
+      "source": "BlockchainReporter",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Yahoo Finance: 'Fed Rate Hike Odds Just Hit 68%, Is Kevin Warsh Bitcoin's Biggest Problem?' — prediction markets Kalshi and Polymarket pricing 43–68% odds of at least one 2026 hike; the largest macro repricing event for Bitcoin since May 2022",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/fed-rate-hike-odds-just-065000322.html",
+      "source": "Yahoo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "LatestLY: Bitcoin price stable around $65,829 as market pauses ahead of decisive FOMC interest rate decision — BTC holding its range ahead of Warsh's first press conference; a definitive policy outcome expected to break the current deadlock",
+      "url": "https://www.latestly.com/business/bitcoin-price-today-june-17-2026-btc-price-stable-around-usd-65829-as-market-pauses-ahead-of-decisive-fomc-interest-rate-decision-7476716.html",
+      "source": "LatestLY",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Crypto.com exchange live feed (11:06 UTC June 17): BTC_USDT last $64,657 — best bid $64,650.92 / best ask $64,650.93; daily high $66,825, daily low $64,582; tight spread confirms liquid market despite FOMC event-risk compression",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT",
+      "source": "Crypto.com Exchange",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "AnalyticsInsight: Michael Saylor's Strategy adds 1,587 BTC on June 17 — corporate treasury buy anchors the $63,500–$64,000 demand zone on FOMC Decision Day; confirmed structural buyer active below the $65K trigger",
+      "url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-fluctuating-between-65000-to-66000-as-fomc-opens-strategy-adds-1587-btc-hyperliquid-surges-10",
+      "source": "AnalyticsInsight",
+      "sentiment": "positive"
+    },
+    {
+      "label": "CryptoNews: BTC USD grinds sideways on Kevin Warsh's first FOMC day — Binance vs MiCA regulatory backdrop; Warsh's AI-as-disinflationary-force stance could be a surprise dovish variable the market is underpricing",
+      "url": "https://cryptonews.com/news/crypto-news-kevin-warsh-fomc-binance-mica-cz-on-hyperliquid-btc-usd-sideways/",
+      "source": "CryptoNews",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "99Bitcoins: 'Iran Peace Deal Saves Bitcoin Before FOMC' — BTC USD price prediction for Warsh first FOMC; dovish hold scenario pushes BTC toward $67K; hawkish dot flushes below $65K toward $62K–$63K; neutral hold consolidates $63K–$66K",
+      "url": "https://99bitcoins.com/news/presales/btc-usd-price-prediction-fomc-warsh-iran/",
+      "source": "99Bitcoins",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Cautious — FOMC binary with downside skew. BTC below $65K for the first time since the re-entry is a yellow flag, not a red one. The $63,500 daily close stop is not triggered. But with P/C at 0.98, perp funding negative, and rate hike odds at 50–68%, the risk/reward of holding through Warsh without hedging is asymmetric in the bearish direction. A neutral dot resolves the uncertainty fast: BTC reclaims $65K within hours and the $67K path reopens. A hawkish dot (any 2026 hike markers) is the flush event the long book has been dreading — $62K–$63K tests the stop.",
+    "long_term": "Intact but needs confirmation. The macro thesis (Hormuz reopening → oil lower → dollar lower → BTC discount rate falls) still holds structurally. Strategy's continued buying, BlackRock BITA's new institutional demand vector, and spot ETF inflows are structural positives. The FOMC today determines whether the $65K–$67K base becomes the floor for a $70K run, or whether a 2026 hike scenario reprices the macro entirely."
+  },
+  "bull_case": [
+    "Michael Saylor's Strategy added 1,587 BTC on June 17 — corporate treasury demand is a confirmed structural buyer in the $63,500–$65,000 zone.",
+    "DXY closed at 99.57 on June 16 — critically, the dollar is only 0.43 points from the 100 regime trigger; this is far more hawkish than the 97.80 estimate; a neutral Warsh is the only thing keeping DXY below 100.",
+    "Warsh's known interest in AI as a disinflationary force is an underappreciated dovish variable — if he explicitly acknowledges Hormuz/oil/AI disinflation in the presser, BTC reclaims $65K fast.",
+    "BTC's $64,582 session low (Crypto.com) has held multiple tests — the $64,000 max-pain zone and the Strategy buy zone are converging at a natural demand shelf."
+  ],
+  "bear_case": [
+    "BTC is below the $65,000 re-risk trigger for the first time since the June 15 re-entry call — the threshold breach is a regime warning signal that requires prompt resolution post-FOMC.",
+    "Rate hike odds for 2026 at 50–68% on prediction markets represent the largest macro repricing for BTC since the May 2022 tightening cycle began; if dots show hike markers, the dollar spikes and BTC flushes.",
+    "Perp funding flipped negative overnight — the crowded long book from June 15–16 is de-leveraging, removing the covering fuel that amplified the June 15 recovery rally.",
+    "P/C at 0.98 is the most bearishly-positioned BTC options market since the May capitulation low — when options markets are pricing the downside this heavily, the downside tends to happen if the catalyst delivers."
+  ],
+  "key_levels": [
+    { "label": "Next squeeze target / post-FOMC bull scenario", "level": "$70,000", "kind": "resistance" },
+    { "label": "Prior resistance / re-entry key level", "level": "$67,000", "kind": "resistance" },
+    { "label": "Today's session high", "level": "$65,935", "kind": "resistance" },
+    { "label": "Re-risk trigger (breached this session)", "level": "$65,000", "kind": "pivot" },
+    { "label": "Live price (Crypto.com 11:06 UTC)", "level": "$64,657", "kind": "pivot" },
+    { "label": "Max pain / June weekly expiry gravity", "level": "$64,000", "kind": "support" },
+    { "label": "Today's session low", "level": "$63,663", "kind": "support" },
+    { "label": "Stop-loss (two consecutive daily closes below)", "level": "$63,500", "kind": "support" },
+    { "label": "Hawkish-FOMC flush target", "level": "$62,000–$63,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-17", "label": "FOMC rate decision 2:00 PM ET + Warsh press conference 2:30 PM ET — dot plot is the binary; neutral ≥1 cut → BTC reclaims $65K; hawkish zero cuts + hike marker → flush to $62K–$63K stop zone", "importance": "high" },
+    { "date": "2026-06-17", "label": "Strategy adds 1,587 BTC — Michael Saylor corporate treasury buy anchors the $63,500–$64,000 demand zone on FOMC day", "importance": "medium" },
+    { "date": "2026-06-19", "label": "US–Iran deal formal signing — Juneteenth holiday; Hormuz reopening formalized; mine-clearance status is the residual geopolitical risk", "importance": "medium" },
+    { "date": "Daily", "label": "Spot BTC ETF daily flow print — confirm institutional bid holds through FOMC; BlackRock BITA first-week AUM is the structural new demand data point", "importance": "medium" }
+  ],
+  "analysis": "## FOMC Decision Day: the trigger is breached, the stop is not\n\nBitcoin is trading at **$64,657** (Crypto.com live, 11:06 UTC), **below the $65,000 re-risk trigger** that anchored the June 15 BUY call for the first time since that call was made. This is a yellow flag, not a red one. The stop on existing positions (two consecutive daily closes below $63,500) has not been triggered. But the breach matters: it tells you the macro repricing underway in rates markets is real enough to push BTC through a key technical level in pre-FOMC morning trade.\n\n## Why the rate hike odds moved\n\nThe single largest development in the last 24 hours is not a BTC story — it is a rates story. [Prediction markets have pushed the odds of at least one 2026 Fed rate hike to 50–68%](https://finance.yahoo.com/markets/crypto/articles/fed-rate-hike-odds-just-065000322.html), up from the Goldman Sachs 20% estimate cited in last week's briefs. [BofA is flagging at least three FOMC members](https://www.techtimes.com/articles/318527/20260616/federal-reserve-june-2026-meeting-warsh-set-drop-dot-hike-risk-climbs.htm) expected to project 2026 rate hikes on today's dot plot. If any hike dot appears on the June 17 chart, the dollar spikes, risk assets sell, and the crowded BTC long book (P/C 0.98, perp funding just flipped negative) is the most exposed asset in the complex.\n\n## The one structural positive\n\nMichael Saylor's [Strategy added 1,587 BTC today](https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-fluctuating-between-65000-to-66000-as-fomc-opens-strategy-adds-1587-btc-hyperliquid-surges-10) — corporate treasury demand is a confirmed structural buyer in the $63,500–$64,000 zone. This is not a macro argument; it is a supply argument. Saylor buys the dip, every time, at scale. The $64,000 weekly max-pain zone, the Strategy demand shelf, and the $63,500 stop all converge within a $1,000 range — that is the natural FOMC base.\n\n## Decision tree for 2:30 PM ET\n\nNeutral dot (≥1 cut in 2026 median): BTC reclaims $65K within hours, HOLD upgrades to BUY, $67K path reopens.\nHawkish dot (zero cuts + hike markers): Dollar spikes, long book flushes, $62K–$63K tested, stop may trigger on two-day close basis — reduce before $63,500 closes."
+}
