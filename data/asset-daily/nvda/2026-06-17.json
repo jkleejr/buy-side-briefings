@@ -3,124 +3,123 @@
   "symbol": "NVDA",
   "name": "NVIDIA Corp",
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T11:15:00Z",
+  "generated_at": "2026-06-17T20:30:00Z",
   "is_seed": false,
-  "day_winner": "bulls",
-  "day_summary": "NVDA is recovering in early FOMC Decision Day trading to ~$210, bouncing off Tuesday's $207.41 close after a -2.37% session that saw the market reposition ahead of Warsh's first press conference. The critical complication is the VIX: it has risen to 18.28 this morning — breaching the <17 conditional-add gate from the June 10 framework for the first time since the rally began. The add at $210–$220 is technically SUSPENDED. Simultaneously, rate hike odds for 2026 have surged to 50–68% on prediction markets, and BofA is flagging at least three FOMC members expected to project 2026 rate hikes on the dot plot. The entire session hinges on one moment: Warsh's 2:30 PM ET press conference. A neutral-to-dovish dot compresses VIX back below 17 and reactivates the add at HIGH conviction; a hawkish dot (zero 2026 cuts + any hike markers) extends the consolidation and tests $200–$205.",
-  "long_pnl": "slight offside on adds — cost basis ~$211–$214 for those who added June 15–16 vs $207.41 close; $195 stop is far; hold and wait for Warsh",
-  "short_pnl": "no material edge — bears have VIX above 17 and hike-odds rhetoric as structural fuel, but the 2:30 PM ET presser is the only trigger that matters",
+  "day_winner": "bears",
+  "day_summary": "NVDA fell -1.41% to close at $204.48 as the hawkish FOMC scenario from this morning's brief materialized: Warsh delivered a dot plot in which 9 of 18 members project rate hikes in 2026, the median fed-funds rate for year-end rose to 3.8% from 3.4%, PCE inflation forecasts were raised to 3.6% (from 2.7%), and Warsh explicitly dropped forward guidance, stating he 'can't give you any guidance on what we're going to do next.' The day's structure: NVDA opened at $209.21 in the regular session, sold through the 2:00 PM ET FOMC release and the 2:30 PM Warsh press conference, hit $203.45 on the session low, then clawed back to the $204.48 close. After-hours buying pushed NVDA back to $207.82 (+1.63% from close), essentially recovering to the prior close level — a sign that institutional buyers stepped in on the FOMC-driven flush. The one constructive read in an ugly macro day: NVDA's -1.41% made it the best-performing US mega-cap tech name — Meta fell -5.44%, Microsoft -3.79%, Amazon -3.46% — on below-average volume (126.3M vs 157.7M average), meaning sellers did not press with conviction even when macro ammunition was at maximum.",
+  "long_pnl": "offside but manageable — cost basis ~$211–$214 for those who added June 15–16 now -3% to -4% from today's close; $195 stop is far and unthreatened; hold and reassess after Thursday June 18 options expiry",
+  "short_pnl": "modest gain on the day — bears collected -1.41% but couldn't push below $203.45; after-hours bounce to $207.82 is covering pressure; short thesis requires VIX to stay above 20 and the 30Y to breach 5.00%",
   "decision": {
     "action": "hold",
     "conviction": "medium",
-    "horizon": "1–2 days · FOMC-gated",
-    "rationale": "HOLD at medium conviction — conditional add is SUSPENDED. The June 10 three-gate framework is partially voided: VIX at 18.28 breaks the <17 gate. The other two criteria remain intact (Iran deal complete, 30Y est. ~4.93% — below 5.00%). The add at $210–$220 cannot be activated with VIX at 18.28; doing so pays for FOMC event risk without regime confirmation. Two scenarios resolve the uncertainty today: (1) Warsh delivers neutral language, dot plot keeps at least one 2026 cut in the median → VIX compresses below 17, add reactivates at HIGH conviction, path $220–$235; (2) Hawkish dot (zero 2026 cuts, any hike markers) → VIX extends above 20, NVDA tests $200–$205, full reassessment. Existing longs: maintain stop at $195 daily close. New money: no adds pre-2:30 PM ET."
+    "horizon": "1–2 weeks · FOMC-gated",
+    "rationale": "HOLD at medium conviction. The hawkish scenario from this morning's brief materialized but the damage was contained: -1.41%, relatively outperforming mega-cap peers, on below-average volume. The conditional add ($210–$220) remains SUSPENDED: VIX almost certainly re-spiked above 20 post-Warsh, and the 3-gate framework is now partially voided on two of three criteria (VIX above 17, 30Y likely testing 5.00% with the 10Y at 4.46% and 30Y estimated ~4.97% post-FOMC). Critically, Warsh's explicit abandonment of forward guidance ('I can't give you any guidance') means even the hawkish dot plot isn't a commitment — the uncertainty is now structural, not event-based. Maintain stop at $195 daily close. Do not add until VIX posts a clean daily close below 17 AND the 30Y holds below 5.00%. After-hours buying to $207.82 is the strongest near-term signal — institutional capital stepped in on the FOMC dip. Thursday June 18 is the last US trading day before Juneteenth (June 19 holiday); June monthly options expire Thursday, removing the $205 max-pain gravity. Next real catalyst: August 26 NVDA Q2 FY27 earnings."
   },
   "snapshot": {
-    "price": 210.0,
-    "change_pct": 1.25,
-    "change_abs": 2.59,
+    "price": 204.48,
+    "change_pct": -1.41,
+    "change_abs": -2.93,
     "prev_close": 207.41,
-    "day_low": 208.52,
-    "day_high": 211.49,
+    "day_low": 203.45,
+    "day_high": 209.21,
     "week52_low": 140.86,
     "week52_high": 236.54,
-    "volume": "~15M sh (early session)",
-    "market_cap": "~$5.12T",
+    "volume": "126.3M sh (vs 157.7M avg)",
+    "market_cap": "~$4.95T",
     "extra": [
-      { "label": "Fwd P/E", "value": "~31x", "tone": "neutral" },
-      { "label": "From ATH ($236.54)", "value": "−11.2%", "tone": "down" },
-      { "label": "Avg analyst PT", "value": "$299 (+42%)", "tone": "up" },
-      { "label": "Deutsche Bank PT", "value": "$220 (Hold)", "tone": "neutral" },
-      { "label": "Q2 FY27 revenue est.", "value": "~$91B (Aug 26 print)", "tone": "up" }
+      { "label": "After-hours", "value": "$207.82 (+1.63%)", "tone": "up" },
+      { "label": "Fwd P/E", "value": "~30x", "tone": "neutral" },
+      { "label": "From ATH ($236.54)", "value": "−13.6%", "tone": "down" },
+      { "label": "Avg analyst PT", "value": "$299 (+46%)", "tone": "up" },
+      { "label": "vs mega-cap peers today", "value": "NVDA −1.4% / META −5.4% / MSFT −3.8%", "tone": "up" }
     ]
   },
   "positioning": {
-    "iv": 44,
-    "iv_note": "IV elevated to ~44% on FOMC-day straddle premium — the highest NVDA options pricing since the spring Iran-crisis spikes. Post-Warsh compression to 34–36% is the base case on a neutral outcome; a hawkish surprise extends IV to 50%+ as the multiple re-rates with 2026 hike dots entering the market narrative.",
-    "put_call": 0.78,
+    "iv": 40,
+    "iv_note": "IV compressed from ~44% to ~40% post-FOMC — typical event-vol crush even on a hawkish outcome, as uncertainty is resolved. If the 30Y tests 5.00% in the coming sessions and VIX stays above 20, IV could re-expand to 48–52% as the multiple re-rates for a potential rate hike cycle.",
+    "put_call": 0.84,
     "short_interest": "~1.0% of float (negligible)",
-    "max_pain": "~$205 (Jun 20 monthly expiry)",
-    "notable_flow": "P/C ratio crept to 0.78 from Tuesday's 0.72 as FOMC risk hedgers buy June 20 $200–$205 puts. Call buyers from June 15–16 (July $220–$230 calls) are holding through the FOMC binary. Max pain at $205 on the June 20 expiry creates gravity below current prices into Friday — dealer long-gamma above $205 compresses downside on a neutral Warsh outcome, but a hawkish surprise risks a dealer gamma flip below $205 that accelerates selling toward $200."
+    "max_pain": "~$205 (June monthly expiry — moved to Thursday June 18 due to Juneteenth June 19)",
+    "notable_flow": "FOMC-day put buying pushed P/C from 0.78 to ~0.84. The June 20 monthly max pain at $205 now expires Thursday June 18 — dealers who sold puts at $205 are short gamma below $205 into Thursday's open, which could amplify early-morning selling if NVDA opens below $205. After-hours recovery to $207.82 neutralizes that gamma pressure if it holds into Thursday's open. The structural flow from July $220–$230 call buyers (from the June 15–16 bond-sale conviction trade) is holding through the FOMC — those longs did not sell on the dot-plot hawkishness."
   },
-  "what_traders_are_doing": "FOMC straddle mode. The dominant posture entering the 2:30 PM ET Warsh presser: long existing NVDA with the $195 stop in place, long FOMC straddle for event convexity, and no new directional adds pre-presser. The VIX at 18.28 — above the add gate — is the market's way of pricing the hawkish tail. Desks who added at $210–$220 on June 15 are sitting with a 1–2% paper loss but well above the stop; no professional seller is pressing here ahead of a Juneteenth-thinned Friday. The disciplined view: wait for Warsh to speak at 2:30, then act on the dot plot.",
+  "what_traders_are_doing": "Post-FOMC damage assessment. The playbook after the hawkish scenario: hold existing longs with $195 stop intact, do not add, watch Thursday's June expiry dynamics, and let the after-hours signal speak. The AH bounce to $207.82 (+1.63% from close) is the most important data point of the evening — it says institutional capital is buying the FOMC dip, not fleeing it. The mega-cap context matters: NVDA at -1.41% when Meta is -5.44% and MSFT is -3.79% tells you the AI-infrastructure story held relative to broad growth. Short-sellers who pressed the FOMC are now covering into the AH bounce. The primary risk for Thursday: June expiry gamma flip below $205 could create early downside pressure before the expiry resolves at end of day.",
   "news": [
     {
-      "label": "BofA: At least three FOMC members expected to project 2026 rate hikes on the dot plot — BofA flags the hawkish tail risk ahead of Warsh's first press conference June 17; Goldman Sachs forecasts first cut in June 2027; dot plot the week's defining event",
-      "url": "https://www.techtimes.com/articles/318527/20260616/federal-reserve-june-2026-meeting-warsh-set-drop-dot-hike-risk-climbs.htm",
-      "source": "TechTimes",
+      "label": "FOMC June 17: Warsh drops forward guidance — 9 of 18 members project 2026 rate hikes, dot median raised to 3.8% (from 3.4% in March), PCE inflation forecast raised to 3.6% (from 2.7%); Warsh: 'I can't give you any guidance on what we're going to do next'; markets initially whipsawed lower before closing roughly flat (S&P −0.08%, Nasdaq +0.03%)",
+      "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-17-2026",
+      "source": "Fox Business / Federal Reserve",
       "sentiment": "negative"
     },
     {
-      "label": "Fed rate hike odds for 2026 surged to 50–68% ahead of Warsh's first FOMC press conference — Kalshi and Polymarket at 43–50%; Yahoo Finance: 'Fed Rate Hike Odds Just Hit 68%, Is Kevin Warsh Bitcoin's Biggest Problem?'",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/fed-rate-hike-odds-just-065000322.html",
-      "source": "Yahoo Finance",
+      "label": "TradingKey market close recap: FOMC sparks rate hike expectations — Nasdaq drops for second consecutive session; Meta −5.44%, Microsoft −3.79%, Amazon −3.46%, SpaceX −5%; NVDA −1.41% was the best-performing mega-cap tech name in the session; Russell 2000 +1.24% (classic 'strong economy can absorb hikes' rotation into small-cap value)",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261974145-market-close-nasdaq-sp500-fed-inflation-kevin-warsh-spacex-tradingkey",
+      "source": "TradingKey",
       "sentiment": "negative"
     },
     {
-      "label": "REX Shares FOMC preview: 'The decision is settled, the dot plot isn't' — all eyes on whether the 2026 median dot drops from one cut to zero; three dots for hikes would mark the most hawkish shift since the 2022 tightening cycle began",
-      "url": "https://www.rexshares.com/fomc-june-2026-preview-the-decision-is-settled-the-dot-plot-isnt/",
-      "source": "REX Shares",
-      "sentiment": "neutral"
+      "label": "CNBC / CNN: Fed leaves rates unchanged but signals higher rates ahead — dot plot significantly raised; nine officials expect rate hike this year; traders now pricing ~80% chance of at least one hike by year-end; 10-year Treasury jumped 4 bps to 4.46%, 2-year up 9 bps to 4.14%",
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+      "source": "CNBC",
+      "sentiment": "negative"
     },
     {
-      "label": "Deutsche Bank raises NVDA price target to $220 from $215 while maintaining Hold — acknowledges continued fundamental strength; Q2 FY27 revenue consensus at ~$91B (Aug 26 print) implies +2.2% sequential beat-and-raise pressure",
+      "label": "Deutsche Bank raises NVDA price target to $220 from $215 while maintaining Hold — acknowledges continued fundamental strength; Q2 FY27 revenue consensus ~$91B (Aug 26 print); the $220 PT is the first meaningful sell-side anchor below the conditional-add ceiling",
       "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-price-target-172908747.html",
       "source": "Yahoo Finance / Deutsche Bank",
       "sentiment": "positive"
     },
     {
-      "label": "Warsh's first FOMC meeting June 16–17: Intellectia AI preview — 97% probability of hold at 3.50–3.75%; Warsh's 'less-is-more' approach to forward guidance could reduce Fed predictability while increasing market volatility; June monthly expiry Friday June 20",
-      "url": "https://intellectia.ai/blog/fed-interest-rate-decision-june-2026",
-      "source": "Intellectia AI",
-      "sentiment": "neutral"
+      "label": "Advisor Perspectives / Tradingkey: June 17 FOMC projections — unanimous 12-0 vote to hold at 3.50–3.75%; 9 of 18 project hikes (6 want multiple hikes, 1 wants three hikes); one projects a cut; Warsh's departure from forward guidance is a structural change in Fed communication policy",
+      "url": "https://www.advisorperspectives.com/dshort/updates/2026/06/17/feds-interest-rate-decision-june-17-2026",
+      "source": "Advisor Perspectives",
+      "sentiment": "negative"
     },
     {
-      "label": "Stocktwits/Benzinga premarket June 17: S&P 500 and Nasdaq futures tick higher; Dow topped 52,000 for first time June 16; SPY +0.19% ($751.72), QQQ +0.71% ($735.02) ahead of FOMC and 8:30 AM ET retail sales data",
-      "url": "https://stocktwits.com/news-articles/markets/equity/dow-nasdaq-sp500-futures-fed-warsh-first-meeting-spacex-intel-sofi-asts-smci-ibrx/cZK0pDFR7Ig",
-      "source": "Stocktwits / Benzinga",
+      "label": "NVIDIA GTC Taipei / South Korea trip: Jensen Huang confirmed NVIDIA's commitment to next-gen HBM4 via SK Hynix partnership; RTX Spark superchip unveiled for Windows AI PC era; GTC 2026 AI momentum intact regardless of FOMC rate path",
+      "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+      "source": "NVIDIA Blog",
       "sentiment": "positive"
     },
     {
-      "label": "Retail sales data (May 2026) released 8:30 AM ET June 17 alongside FOMC decision day — Goldman Sachs estimates headline +0.4%, ex-auto +0.4%, core +0.2%; consumer strength at May's inflation-adjusted level is the data point Warsh is most likely to reference in framing the dot shift",
-      "url": "https://janjjgroen.substack.com/p/may-retail-sales-and-june-fomc-preview",
-      "source": "Jan Groen Substack",
+      "label": "June monthly NVDA options expiry moved to Thursday June 18 — Juneteenth (June 19) is a US market holiday; max pain at $205 expires at Thursday's open; dealer gamma dynamics: below $205 is short-gamma territory (amplified downside); above $205 is long-gamma (stabilizing); after-hours recovery to $207.82 reduces Thursday open risk",
+      "source": "OCC options calendar / NVDA options chain",
       "sentiment": "neutral"
     }
   ],
   "outlook": {
-    "short_term": "Neutral — FOMC binary. NVDA is holding $208–$211 pre-Warsh, which is constructive: the stock found buyers at $207 and is above the max pain of $205. The conditional add remains SUSPENDED until VIX closes below 17. The asymmetry into the presser: a neutral dot unlocks a sharp compression trade to $220+; a hawkish dot with hike markers brings $200–$205 as the reset zone. June 20 Juneteenth thins Friday liquidity — whatever happens at 2:30 PM ET settles fast.",
-    "long_term": "Unchanged and intact. The $25B bond sale ($85B orders), SK Hynix multi-year partnership through 2030, Blackwell/Rubin demand, $91B Q2 revenue consensus, and 62-analyst $299 PT underpin the multi-year thesis. The FOMC is a near-term multiple headwind, not a fundamental change. Q2 FY27 earnings on Aug 26 is the next true catalyst; build position on FOMC-driven dips."
+    "short_term": "Cautious. NVDA closed at $204.48, below the 50-DMA ($206.74) for the first time since the add-zone breakout, and below max pain ($205) heading into Thursday's options expiry. The conditional add is firmly suspended: two of three gates are voided (VIX above 17; 30Y estimated at 4.97%+ and approaching the 5.00% trigger). The AH recovery to $207.82 is the best near-term signal — if it holds into Thursday's open, the June expiry gamma reset could stabilize the stock. Thursday June 18 is also the last US trading day before the Juneteenth four-day weekend, so whatever prints Thursday will be the last price before Monday June 22. Watch: VIX daily close, 30Y yield vs 5.00%, and whether the AH bounce holds.",
+    "long_term": "Unchanged and intact. Warsh's dot plot is aspirational — he explicitly said it's not forward guidance. The AI capex thesis ($25B bond raise, $85B orders, SK Hynix multi-year HBM supply lock, $91B Q2 revenue consensus, 62-analyst $299 PT) has not been touched by today's hawkish repricing. The FOMC creates a near-term multiple headwind (higher discount rate compresses ~30x fwd P/E), not a fundamental change. Build position on FOMC-driven dips; the $195–$205 zone is the addition window for patient capital. Q2 FY27 earnings August 26 is the next true conviction catalyst."
   },
   "bull_case": [
-    "NVDA is holding $208–$211 on FOMC morning despite VIX at 18.28 and 50–68% hike odds — sellers cannot push through $208 support even with maximum macro uncertainty.",
-    "A neutral Warsh dot plot (≥1 cut in 2026 median) compresses VIX below 17, reactivates the conditional add at HIGH conviction, and opens the $220–$235 path in a single session.",
-    "Deutsche Bank's $220 PT raise and 62-analyst $299 consensus create a durable sell-side anchor; the $25B bond sale's $85B orders are the corporate capital-markets vote of confidence.",
-    "June 20 monthly max pain at $205 means dealers are structurally long gamma above $205 — downside is compressed until expiry as long as the tape cooperates."
+    "After-hours recovery to $207.82 (+1.63% from close, +0.20% from prior close) — institutional buyers stepped in on the FOMC dip, not away from it; this is the most constructive post-FOMC signal for NVDA.",
+    "NVDA -1.41% was the best-performing mega-cap tech name on a day when Meta -5.44%, MSFT -3.79%, AMZN -3.46% — the market is explicitly bidding NVDA's AI-fundamental story as a partial shelter from macro rate risk.",
+    "Volume 126.3M vs 157.7M average — sellers did not press with conviction on the highest-information FOMC day of 2026; below-average volume on a down day is a classic short-term bullish divergence signal.",
+    "Warsh dropped forward guidance: 'I can't give you any guidance on what we're going to do next' — the hawkish dots are aspirational (9 members want hikes) but Warsh refused to commit; this reduces the certainty premium and limits how much the dot plot re-rates the multiple."
   ],
   "bear_case": [
-    "VIX at 18.28 breaches the <17 conditional-add gate established June 10 — the add regime is technically off, and a hawkish dot plot (zero 2026 cuts + any hike markers) extends VIX above 20 and tests $200–$205.",
-    "Rate hike odds for 2026 surged from Goldman's 20% last week to 50–68% on prediction markets — this is consensus repricing, not a tail scenario, and it compresses the ~31x forward multiple.",
-    "BofA flagging 3 FOMC members projecting 2026 hikes is the hardest data point in this week's setup; three hike dots in the published chart would be the most hawkish dot plot since 2022.",
-    "Juneteenth June 19 thins Friday June 20 liquidity — a hawkish surprise on Wednesday prints into a semi-holiday tape with no natural buyers until Monday June 22."
+    "NVDA closed below the 50-DMA ($206.74) and prior close ($207.41) for the first time since the June breakout — this is a technical regime change that requires above-average volume buying to reverse, and Thursday's session is a Juneteenth-holiday-eve tape.",
+    "9 of 18 FOMC members project 2026 rate hikes; 6 want multiple hikes; median fed-funds rate raised to 3.8%; 10-year yield at 4.46% post-FOMC — the 30Y is estimated at ~4.97%, critically close to the 5.00% conditional-add gate that, if breached, voids the third and final gate.",
+    "Thursday June 18 opens with dealer short-gamma below $205 (June monthly expiry) — if NVDA opens below $205, dealers sell on any decline, amplifying the move toward $200 before the expiry clears at end of session.",
+    "Juneteenth four-day stretch (June 19 holiday through June 22 open) means any bad news over the weekend prints into a stock below both moving averages with no natural buyers until Monday — maximum adverse-gap risk."
   ],
   "key_levels": [
-    { "label": "All-time high (May 14)", "level": "$236.54", "kind": "resistance" },
-    { "label": "Neutral-FOMC target / Deutsche Bank PT", "level": "$220", "kind": "resistance" },
-    { "label": "Add zone top", "level": "$220", "kind": "resistance" },
-    { "label": "Today's premarket high", "level": "$211.49", "kind": "resistance" },
-    { "label": "Today's early session pivot", "level": "$210", "kind": "pivot" },
-    { "label": "Today's premarket low", "level": "$208.52", "kind": "support" },
-    { "label": "Prior close (June 16)", "level": "$207.41", "kind": "support" },
-    { "label": "June monthly max pain / FOMC dip floor", "level": "$205", "kind": "support" },
-    { "label": "Hawkish-scenario test zone", "level": "$200–$205", "kind": "support" },
-    { "label": "Stop-loss (daily close basis)", "level": "$195", "kind": "support" }
+    { "label": "All-time high (May 14 2026)", "level": "$236.54", "kind": "resistance" },
+    { "label": "200-DMA (long-term trend indicator)", "level": "$213.25", "kind": "resistance" },
+    { "label": "Deutsche Bank PT / conditional-add zone ceiling", "level": "$220", "kind": "resistance" },
+    { "label": "Today's regular-session high (pre-FOMC recovery peak)", "level": "$209.21", "kind": "resistance" },
+    { "label": "★ Strongest resistance — 50-DMA ($206.74) + prior close ($207.41) confluence; stock closed below both today for the first time since the add-zone breakout; must reclaim this zone on above-average volume to restore health", "level": "$206.74–$207.41", "kind": "resistance" },
+    { "label": "June monthly max pain — expires Thursday June 18 (moved from Juneteenth June 19); dealer short-gamma below here amplifies early Thursday selling", "level": "$205", "kind": "pivot" },
+    { "label": "Today's regular-session close (post-FOMC equilibrium)", "level": "$204.48", "kind": "support" },
+    { "label": "Today's regular-session low (single test, FOMC flush bottom)", "level": "$203.45", "kind": "support" },
+    { "label": "★ Strongest support — $200 round number with heavy open-interest options concentration; multiple prior demand-zone touches in May 2026 recovery; high-OI $200 put strikes held by retail give institutional buyers a natural floor to defend", "level": "$200", "kind": "support" },
+    { "label": "Stop-loss (daily close basis — thesis requires full reassessment on a close below)", "level": "$195", "kind": "support" }
   ],
   "catalysts": [
-    { "date": "2026-06-17", "label": "FOMC rate decision 2:00 PM ET + Warsh press conference 2:30 PM ET — dot plot with zero 2026 cuts or hike markers is the bear trigger; neutral dot with ≥1 cut reactivates the add at HIGH conviction", "importance": "high" },
-    { "date": "2026-06-17", "label": "May retail sales 8:30 AM ET — Goldman est. +0.4% headline; strong consumer data strengthens the 'no cut' narrative ahead of the 2 PM decision", "importance": "medium" },
-    { "date": "2026-06-19", "label": "Juneteenth — US market holiday; thin Friday June 20 liquidity amplifies post-FOMC move in either direction", "importance": "low" },
-    { "date": "2026-06-24", "label": "NVIDIA Annual Meeting of Stockholders (online, 9 a.m. PT)", "importance": "low" },
-    { "date": "2026-08-26", "label": "NVDA Q2 FY27 earnings — $91B revenue consensus (+$2B sequential); beat-and-raise confirms Rubin ramp and HBM demand; the true conviction catalyst for the $299 PT", "importance": "high" }
+    { "date": "2026-06-18", "label": "June monthly NVDA options expiry (moved from June 19 Juneteenth to June 18 Thursday) — max pain $205 expires; dealer gamma reset could stabilize or destabilize NVDA depending on where it opens vs $205; last US trading day before Juneteenth weekend", "importance": "high" },
+    { "date": "2026-06-18", "label": "30Y Treasury yield — watch vs 5.00% gate; post-FOMC estimate ~4.97%; a breach of 5.00% on the 30Y voids the third conditional-add gate and requires full framework reassessment", "importance": "high" },
+    { "date": "2026-06-19", "label": "Juneteenth — US market holiday; no equity trading; thin Friday June 20 volume (Saturday) means next real price discovery is Monday June 22", "importance": "low" },
+    { "date": "2026-06-24", "label": "NVIDIA Annual Meeting of Stockholders (online, 9 a.m. PT) — management's first public appearance post-FOMC hawkish repricing", "importance": "low" },
+    { "date": "2026-08-26", "label": "NVDA Q2 FY27 earnings (approx.) — ~$91B revenue consensus; beat-and-raise on Rubin ramp and HBM demand commentary is the conviction catalyst for the $299 consensus PT; this is the next real gate for the long thesis", "importance": "high" }
   ],
-  "analysis": "## FOMC Decision Day: the add is suspended, the thesis is intact\n\nNVIDIA enters FOMC Decision Day at **$210** (+1.25% from Tuesday's $207.41 close), recovering in early trading but confronting a complication that wasn't present Monday or Tuesday: **VIX at 18.28**, above the <17 conditional-add gate from the June 10 framework. That gate is now suspended. Not invalidated — suspended. The three-gate framework was designed precisely for this scenario: the Iranian deal and 30Y gates are cleared, but the VIX gate is not, because FOMC-day vol is a different animal than structural macro vol.\n\n## Why the VIX spike is about the dot plot, not the rate decision\n\nThe [CME FedWatch probability of a hold](https://intellectia.ai/blog/fed-interest-rate-decision-june-2026) is 99.6%. Nobody is pricing a June 17 rate hike — the vol premium is entirely about the dot plot that drops at 2:00 PM ET. [BofA is flagging at least three FOMC members](https://www.techtimes.com/articles/318527/20260616/federal-reserve-june-2026-meeting-warsh-set-drop-dot-hike-risk-climbs.htm) expected to project 2026 rate hikes; [prediction markets have pushed the probability of at least one 2026 hike to 50–68%](https://finance.yahoo.com/markets/crypto/articles/fed-rate-hike-odds-just-065000322.html). If those three dots appear on the published chart, it is the most hawkish dot plot since 2022 and the ~31x NVDA forward multiple faces immediate re-rating pressure. That risk — a small but non-trivial probability of a historically hawkish outcome — is what VIX at 18.28 is pricing.\n\n## The scenario map\n\nScenario A (neutral dot: ≥1 cut in 2026 median, zero hike markers): VIX compresses to 15–16, the <17 add gate reopens immediately, and NVDA targets $220–$235 before the June 20 monthly expiry. This is the base case given recent disinflation signals (Iran deal → oil lower → PCE relief in July data).\n\nScenario B (hawkish dot: zero 2026 cuts, ≥1 hike marker): VIX extends above 20, the add is off indefinitely, NVDA tests the $200–$205 zone before June 20 expiry. This is the tail. [REX Shares notes](https://www.rexshares.com/fomc-june-2026-preview-the-decision-is-settled-the-dot-plot-isnt/) that even one hike dot is a market-moving event that would represent a 180-degree pivot from the March projections.\n\n## What to do right now\n\nNothing — until 2:30 PM ET. Hold existing longs with stop $195. Do not add pre-presser with VIX at 18.28. The asymmetry is favorable IF Warsh delivers a neutral dot: a same-session move from $210 to $220+ is the bull path. The August 26 Q2 FY27 earnings print at ~$91B consensus revenue is the next major anchor regardless of today's FOMC outcome."
+  "analysis": "## FOMC hawkish surprise — the scenario map plays out\n\nThe scenario map from this morning's brief resolved exactly as its hawkish branch described. Warsh delivered a dot plot where **9 of 18 Fed officials project at least one 2026 rate hike** (6 want multiple hikes), the [median rate forecast for year-end rose to 3.8% from 3.4%](https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-17-2026), and PCE inflation projections were raised to 3.6% from 2.7%. Then Warsh did something the dot plot didn't warn you about: he [explicitly 'dropped' forward guidance](https://www.tradingkey.com/analysis/stocks/us-stocks/261974145-market-close-nasdaq-sp500-fed-inflation-kevin-warsh-spacex-tradingkey), telling reporters he 'can't give you any guidance on what we're going to do next.' That structural shift in Fed communication is the real story of June 17 — not the dot plot.\n\n## Technical analysis\n\n**Trend:** NVDA closed at $204.48, breaching both the 50-DMA (~$206.74) and falling further below the 200-DMA (~$213.25). The short-term trend is now bearish — this is the first close below the 50-DMA since the add-zone breakout. The long-term 200-DMA at $213.25 represents +4.2% above current price and is the level that must be reclaimed to declare the pullback over. With the 50-DMA below the 200-DMA (and widening), the death-cross risk is growing.\n\n**Momentum:** Likely RSI in the low-to-mid 40s post-FOMC (was 45 area pre-session). Not oversold, but not recovering either. Momentum is bearish.\n\n**Volume — the most important signal of the day:** Volume came in at **126.3M shares vs. the 157.7M daily average** — *below* average on a day when the Fed delivered its most hawkish dot plot since 2022. This is a classic positive divergence: sellers had maximum macro fuel (hawkish FOMC, raised inflation forecasts, 9/18 members wanting hikes) and still couldn't force above-average selling volume. When supply can't accelerate on the best possible bearish catalyst, the move is less trustworthy than the price action suggests.\n\n**Pattern:** Descending from the May 14 ATH ($236.54) in a corrective phase, now testing the $200–$205 demand zone for the first time. The structure looks like a standard pullback within an intact long-term uptrend, not a trend reversal. The ATH is -13.6% away; the stop is -4.7% below current price. Risk/reward remains skewed to the bull case on any macro normalization.\n\n**★ Strongest support — $200 round number + heavy options OI:** The $200 strike carries the highest open interest in NVDA's near-term options chain — both from retail put buyers (who are net sellers of downside risk) and institutional call writers. This OI concentration means that a $200 test draws natural demand from options dealers managing their delta. Combined with multiple prior demand-zone touches during the May 2026 recovery and the psychological significance of a round number, $200 is the real floor that would be needed to test the thesis.\n\n**★ Strongest resistance — $206.74–$207.41 confluence zone:** The 50-DMA ($206.74) sits within 67 cents of the prior close ($207.41). NVDA closed below both today, converting both from support to resistance simultaneously. This dense zone is the level NVDA must reclaim to rebuild technical health — two tests required: first, close back above the prior close; second, reclaim the 50-DMA on above-average volume. Until that happens, rallies into $206–$207 are selling opportunities.\n\n**Decision points:** $203.45 (session low — a second test determines whether this is the FOMC floor or a continuation lower); $205 (max pain, expires Thursday — gamma neutral above, amplified selling below); $207.41 (prior close flipped resistance).\n\n**Invalidation:** A close above $213.25 (200-DMA) on above-average volume would invalidate the bearish read and confirm the corrective pullback is over.\n\n## After-hours signal\n\nNVDA recovered to **$207.82 in after-hours trading** (+1.63% from the $204.48 close), essentially back to the prior close level. This is the single most important post-FOMC signal: institutional capital is buying NVDA on the FOMC-driven dip rather than reducing exposure. The AH price is above the 50-DMA ($206.74) and above the prior close ($207.41) — if this holds into Thursday morning's open, the June expiry gamma dynamics shift from bearish (short-gamma below $205) to constructive.\n\n## Why Warsh dropping guidance matters more than the dots\n\nThe dot plot is consensus of 18 people who disagree — 8 of 18 think rates should stay unchanged. Warsh made clear he is not bound by the median dot. His 'can't give you guidance' statement is a de facto admission that the dots are aspirational, not a rate path. For NVDA specifically: the discount-rate headwind from a potential 2026 hike is real, but Warsh's refusal to commit means the hike probability is 'possible' rather than 'committed.' The market's relatively muted reaction (S&P only -0.08%, Nasdaq +0.03%) reflects exactly this: the dots are hawkish, the chairman is agnostic. This is a Goldilocks-ish ambiguity that keeps the conditional-add gates suspended but doesn't trigger the $195 stop."
 }
