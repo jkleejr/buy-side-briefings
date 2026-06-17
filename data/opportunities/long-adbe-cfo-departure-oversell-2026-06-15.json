@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-15",
   "expires_at": "2026-07-27",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["ADBE", "Adobe", "contrarian", "CFO-departure", "oversell", "AI-monetization", "software", "low-conviction", "bottoming"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-17",
+    "final_price": 207.24,
+    "return_pct": 23.0,
+    "outcome_label": "Target 2 hit at $200+",
+    "note": "ADBE reversed sharply from the June 15 CFO departure gap-down. Stock recovered from ~$168 at entry to $207.24 on June 17, clearing both Target 1 ($185) and Target 2 ($200) within two sessions. Selling exhaustion played out exactly as the volume-exhaustion thesis predicted — Q2 beat fundamentals (Firefly ARR tripled) reasserted once panic sellers cleared. Low-conviction contrarian returned +23% in two days."
+  },
   "levels": {
     "entry_low": 162.0,
     "entry_high": 175.0,
