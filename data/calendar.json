@@ -1,18 +1,40 @@
 {
   "events": [
     {
-      "date": "2026-06-17",
-      "label": "FOMC decision 2:00 PM ET + Warsh first press conference 2:30 PM ET — dot plot status TBD",
-      "kind": "FOMC",
-      "time_et": "2:30 PM",
-      "tickers": ["TBT", "TLT", "QQQ", "XLF", "IWM", "NVDA", "BTC"],
-      "note": "98.4% hold at 3.50–3.75%; May CPI 4.2% means dot plot expected to show zero 2026 cuts; Goldman assumes Warsh will not submit his own dot; three or more members may project hike dots. Three paths: (1) neutral language → BUY to HIGH conviction, SPX 7,580+, reduce TBT 50%, DXY holds below 100; (2) hawkish hold → DXY tests 100, 30Y tests 5.00%, BUY to HOLD; (3) explicit hike signal → two regime triggers breach simultaneously, BUY to HOLD immediately. TBT is the mandatory hedge through 2:30 PM ET."
+      "date": "2026-06-18",
+      "label": "Weekly jobless claims + Philly Fed survey + Conference Board LEI — first post-FOMC data",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "note": "Low claims (strong labor) or a hawkish Philly Fed reading could push DXY above 100 and 30Y above 5.00% simultaneously — the dual breach that upgrades STEP_ASIDE to BEARISH. Conference Board Leading Indicators add to the data flow. Watch DXY and 30Y intraday."
     },
     {
       "date": "2026-06-19",
-      "label": "US markets closed — Juneteenth; Iran formal signing ceremony in Geneva",
+      "label": "US markets closed — Juneteenth; Iran formal signing ceremony in Geneva (binary catalyst)",
       "kind": "HOLIDAY",
-      "note": "Market holiday. Iran formal signing ceremony scheduled in Geneva — Iran's Deputy FM confirmed Tehran will not implement the deal until signed; formal signing activates the 60-day implementation window (Hormuz mines clearance, sanctions relief, nuclear framework talks). Signing failure = Brent $88–92+, STEP ASIDE by Monday open. Monitor Sunday evening futures for first signal. WTI already below $76, Brent ~$79 — the physical market has pre-positioned for successful signing."
+      "tickers": ["XLE", "QQQ", "BTC", "NVDA", "SPCX"],
+      "note": "Market closed. Warsh FOMC (June 17) delivered 9 hike dots + hawkish shock; SPX is below the 7,460 regime floor. Iran formal signing is the sole near-term circuit-breaker: success = Brent $73-75, DXY < 99.50, STEP_ASIDE reverts to HOLD by June 20 open. Failure = Brent $86-90, XLE short accelerant, STEP_ASIDE upgrades to BEARISH. Monitor Sunday evening futures for first signal."
+    },
+    {
+      "date": "2026-06-24",
+      "label": "S&P Global flash US PMIs — manufacturing + services (June)",
+      "kind": "MACRO",
+      "time_et": "9:45 AM",
+      "note": "First real-economy data of the post-FOMC cycle. Services PMI > 53 = hawkish pressure on July FOMC hike probability. Services PMI < 50 = recession concern; paradoxically dovish. Key input for July 28-29 FOMC rate hike decision."
+    },
+    {
+      "date": "2026-07-14",
+      "label": "July CPI release (est.) — most important inflation data of the summer",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "tickers": ["TBT", "TLT", "QQQ", "NVDA", "BTC"],
+      "note": "May CPI 4.2% triggered 9 FOMC hike dots and regime breach on June 17. June CPI (released ~July 14) is the next recalibration: if CPI holds ≥ 4.0%, hike probability for July 28-29 FOMC spikes materially; if CPI falls to ≤ 3.7%, the rate path softens and BUY regime can re-open."
+    },
+    {
+      "date": "2026-07-28",
+      "label": "Next FOMC meeting (July 28-29) — rate hike now on the table; 9 of 18 hike dots from June",
+      "kind": "FOMC",
+      "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
+      "note": "Nine of 18 FOMC officials projected at least one 2026 rate hike at the June 17 meeting. A 25-bps hike (3.50-3.75% → 3.75-4.00%) at this meeting is now priced at non-trivial probability. July CPI data (~July 14) is the primary input. Rate hike = BEARISH regime confirmation. Hold = regime-dependent on interim data."
     },
     {
       "date": "2026-08-13",

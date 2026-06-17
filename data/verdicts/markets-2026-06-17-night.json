@@ -1,0 +1,164 @@
+{
+  "routine": "markets",
+  "date": "2026-06-17",
+  "window": "night",
+  "generated_at": "2026-06-17T23:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Warsh Hawkish Shock; Nine Hike Dots; Regime Floor Breached",
+    "conviction": "medium",
+    "rationale_short": "SPX closed at 7,420.10 — 40 points below the 7,460 regime floor — triggering the explicit downgrade established in the morning brief. VIX closed at 18.44, the first close above 18 this cycle, deactivating the NVDA conditional add. Nine of 18 FOMC officials projected at least one 2026 rate hike (the 2026 median rose to 3.8%), the easing bias was stripped, and retail sales beat at +0.9% — all three confirming the hawkish regime shift is structural, not a one-session noise event. The DXY (99.65, 0.35 pts from 100) and 30Y (4.94%, 6 bps from 5.00%) held their thresholds only because WTI fell for a fifth consecutive session; a Thursday breach of both simultaneously would upgrade STEP_ASIDE to BEARISH. Iran formal signing on June 19 (Juneteenth, market closed) is the sole near-term circuit-breaker.",
+    "supporting_data": [
+      {
+        "label": "SPX 7,420.10 (-1.21%), Nasdaq 26,021.66 (-1.34%), Dow 51,492.55 (-0.98%) — SPX 40 pts below 7,460 regime floor; VIX 18.44 (+12.4%), first close above 18 this cycle; both HOLD triggers fired simultaneously; sold into close (distribution pattern)",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-17-2026"
+      },
+      {
+        "label": "Nine of 18 FOMC officials project rate hike in 2026; 2026 median rate raised to 3.8% (from 3.4%); six project two or more hikes; easing bias stripped from statement; Warsh did not submit his own dot; announced task forces to overhaul Fed communications including dot-plot review",
+        "url": "https://finance.yahoo.com/economy/policy/articles/warsh-hawkish-shock-9-fed-180221394.html"
+      },
+      {
+        "label": "10Y UST 4.499% (+7 bps); 2-year yield rocketed higher on hike projections; 30Y UST 4.94% (+6 bps est.) — 6 bps from 5.00% regime trigger; flatter curve signals front-end pricing of hikes more than long-end growth concern",
+        "url": "https://www.cnbc.com/amp/2026/06/17/treasury-yields-investors-await-warsh-fed-decision.html"
+      },
+      {
+        "label": "DXY 99.65 (+0.11%) — held just below 100 regime trigger (0.35-pt buffer) despite hawkish FOMC; oil disinflation (WTI Day 5 lower) capped the dollar move; the thinnest buffer in this cycle; Thursday is the next test session",
+        "url": "https://tradingeconomics.com/united-states/currency"
+      },
+      {
+        "label": "Retail sales May +0.9% (vs +0.5% consensus) — strong consumer validates the Fed's hawkish pause; inflation at 4.2% combined with resilient spending confirms higher-for-longer; the data removes any statistical basis for a dovish pivot",
+        "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
+      },
+      {
+        "label": "WTI ~$75-76 (Day 5 lower), Brent ~$78 — five consecutive sessions of declines; Iran formal signing ceremony scheduled June 19 in Geneva; oil disinflation is the single factor preventing DXY from closing above 100 and 30Y from closing above 5.00%",
+        "url": "https://www.investing.com/commodities/brent-oil"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7420.10,  "change_pct": -1.21, "as_of": "2026-06-17T20:00:00Z" },
+    "nasdaq": { "level": 26021.66, "change_pct": -1.34, "as_of": "2026-06-17T20:00:00Z" },
+    "vix":    { "level": 18.44,    "change_pct": 12.37, "as_of": "2026-06-17T20:00:00Z" },
+    "ust10y": { "level": 4.50,     "change_bps": 7,     "as_of": "2026-06-17T20:00:00Z" },
+    "dxy":    { "level": 99.65,    "change_pct": 0.11,  "as_of": "2026-06-17T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.44, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.94,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.65, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7420.1,"trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 78.0,  "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$205.35 close (range $203.45-$209.21); VIX 18.44 deactivates the conditional add trigger; hold existing at stop $195; add resumes only after VIX closes back below 18 AND NVDA recovers above $210",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$191.82 (-4.9% from $201.80); first decline since IPO; now inside the $190-205 entry zone identified in prior briefs; Iran signing and regime recovery both required before re-entry; protective put strategy justified",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XLE",
+      "note": "$54.59 (-1.4% from $55.36); WTI Day 5 lower; active short continues; H2 2026 earnings cuts not yet in sell-side numbers; Iran signing is the accelerant",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TBT",
+      "note": "30Y 4.94% approaching 5.00% trigger; hold and scale; 9 hike dots are structurally bullish for TBT; do not reduce until 30Y falls back below 4.80%",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$64,881 (-2.56%); DXY 99.65 is the ceiling; institutional bid at $63-64K is the first test level; if DXY closes above 100 Thursday, $63K test likely; Iran signing success on June 19 is the near-term catalyst for recovery",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ETH",
+      "note": "~$1,790 est.; ETH/BTC ratio at multi-month low per MEXC data; not actionable long below $2,000 in a STEP_ASIDE regime",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "~$412 est.; hold above $405; no new add in STEP_ASIDE regime",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$296 est.; WWDC AI/PCC thesis intact; $290-298 post-FOMC entry zone is now active but wait for regime recovery signal (VIX < 18 AND SPX > 7,460)",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$573 est.; 30Y 4.94% headwind for high-multiple; hold, no add in STEP_ASIDE",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$525 est.; BofA Top Pick/$560 target; $510-525 entry zone active; wait for regime recovery before executing",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "~$242 est.; AWS AI demand intact; hold; no active setup in STEP_ASIDE",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$389 est.; Azure AI thesis intact; $385-392 entry zone active; wait for regime recovery",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SPX / QQQ on Thursday morning gap-up",
+      "reason": "The session sold into the close from ~7,500 to 7,420 — the classic distribution pattern. The regime floor (7,460) is now resistance, not support. A Thursday morning bounce to 7,440-7,460 is a test of the gap, not a re-entry signal. No Thursday catalyst exists to fundamentally change the rate path.",
+      "better_entry": "First session after Iran signs successfully AND DXY confirms below 99.50 AND VIX closes below 17 — all three on the same close. That is the regime-recovery entry, not a Thursday morning gap-up."
+    },
+    {
+      "ticker": "NVDA below $200",
+      "reason": "NVDA closed at $205.35 — 4.3% above the $195 hard stop. VIX 18.44 deactivated the conditional add. In STEP_ASIDE with VIX above 18, adding below $200 puts fresh capital within 2.5% of the stop on a day when the Fed has just signaled potential hikes. The thesis is intact; the risk/reward is wrong.",
+      "better_entry": "VIX closes back below 18 AND NVDA recovers above $210 on the same session — then and only then re-engage the conditional add."
+    },
+    {
+      "ticker": "SPCX before Iran signing clarity",
+      "reason": "SPCX is at $191.82 — inside the $190-205 entry zone — but entering into a 3-day holiday weekend with a binary Iran deal catalyst on June 19 (market closed) means waking up Monday to potentially both a hawkish FOMC regime AND an Iran deal failure simultaneously.",
+      "better_entry": "June 20 Monday open IF Iran signs June 19 AND Brent holds below $82. Entry $185-200 with protective put. The entry zone is valid; the sequencing matters."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "TBT (2x inverse TLT)",
+      "direction": "hedge",
+      "thesis": "Nine of 18 FOMC officials projected a 2026 rate hike; the 2026 median rose to 3.8%; the easing bias was stripped. The 30Y closed at 4.94% — 6 bps from the 5.00% regime trigger. Retail sales at +0.9% (vs +0.5% expected) reinforces the sticky-inflation narrative. The FOMC has moved from 'zero cuts' to 'potential hike' — that repricing is worth 10-20 bps on the 30Y from current levels. TBT converts a defensive cash position into an active trade in the STEP_ASIDE regime.",
+      "entry": "Hold TBT at $44-47; scale up 25-30% on any Thursday morning dip to $44-45.",
+      "invalidation": "Iran signs successfully June 19 AND 30Y falls back below 4.80% by June 23 — cover TBT fully; BUY regime re-opens.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "WTI fell for the fifth consecutive session on June 17, approaching $75 per barrel. Brent ~$78 is $19 below the $97 trigger and falling. The Iran formal signing on June 19 — if successful — adds ~1-1.5 million barrels/day of Iranian crude within 60 days. H2 2026 sell-side energy earnings models still embed $87-90 WTI; the multiple compression on XLE names has not begun. FOMC is a secondary factor; the trade is driven by the Iran deal supply timeline.",
+      "entry": "Continue scaling short XLE at $53-57. Any Brent bounce to $82-85 on mine-clearance uncertainty headlines is an additional entry opportunity, not the exit.",
+      "invalidation": "Iran deal collapses AND Brent closes above $90 on two consecutive sessions; or XLE reclaims $62 on a daily close.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "QQQ puts (1-2% OTM, 30-day expiry)",
+      "direction": "hedge",
+      "thesis": "Nasdaq is most exposed to rate-hike multiple compression of the major indices — growth/AI earnings are valued on DCF frameworks most sensitive to 5Y and 10Y rates. In a STEP_ASIDE regime with VIX 18.44, DXY 35 bps from 100, and 30Y 6 bps from 5.00%, the BEARISH tail is not fully priced. QQQ puts at $320-325 strike (1-2% OTM) capture the regime-downgrade scenario without the leverage risk of outright index shorts. VIX at 18.44 keeps premiums elevated but manageable.",
+      "entry": "Buy QQQ puts on any bounce toward Nasdaq 26,300-26,450 (QQQ ~$325-327). Strike $320, expiry 30 days. Size to hedge 25-30% of equity long exposure.",
+      "invalidation": "SPX reclaims 7,460 on a daily close AND VIX falls back below 17 — close puts; regime recovery in progress.",
+      "conviction": "low",
+      "horizon": "1-3 weeks"
+    }
+  ],
+  "bear_case": "Nine hike dots at a 4.2% CPI backdrop signals a regime shift that has not fully repriced equities: SPX at 22x forward P/E with a 3.8% 2026 median rate and no easing bias implies 4-7% downside to fair value (~7,100-7,200), and the DXY at 99.65 and 30Y at 4.94% represent 35-bps and 6-bps proximity to dual regime breaches that would justify an outright BEARISH call. Strong retail sales at +0.9% versus a 0.5% consensus proves the consumer has not responded to 3.50-3.75% funds rate, which means the Fed must do more; Warsh's deliberate policy ambiguity — withholding his own dot, announcing a dot-plot review — creates the worst possible backdrop for equity multiples: neither certainty about the rate path nor a clear signal on when policy normalizes. If DXY closes above 100.10 AND 30Y closes above 4.98% on the same Thursday session, STEP_ASIDE upgrades to BEARISH. If SPX reclaims 7,460 on a daily close following a successful Iran signing on June 19 AND DXY falls below 99.00, STEP_ASIDE reverts to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-06-17-night.mdx"
+}
