@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "name": "AI Conviction Book",
+  "inception": "2026-06-17",
+  "startingCash": 1000000,
+  "cash": 126739.87,
+  "realizedPnL": 0,
+  "updated": "2026-06-17T13:30:00Z",
+  "outlook": "Opening the book. The dominant force is still the AI compute build-out, so the portfolio is overweight the picks-and-shovels of that cycle — NVIDIA as the toll road, the foundry/networking complex around it, and the mega-caps funding the capex — balanced by quality cash machines and a little consumer/financial ballast that holds up if growth wobbles. A measured crypto sleeve rides the macro-liquidity tape (BTC is a HOLD per today's dossier, not a chase). ~13% is kept in cash as dry powder to add into drawdowns rather than buying everything at once.",
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "qty": 723,
+      "avgCost": 207.41,
+      "category": "ai-semis",
+      "lean": "buy",
+      "thesis": "The toll road on AI compute and the single highest-conviction name in the book. Sits at the center of hyperscaler + sovereign capex; the plan is to own it as the core position and accumulate on drawdowns.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "TSM",
+      "name": "TSMC",
+      "qty": 152,
+      "avgCost": 425.83,
+      "category": "ai-semis",
+      "lean": "buy",
+      "thesis": "The foundry chokepoint — every advanced AI chip is built here. First mover on Taiwan/China headlines, which is the main risk, but irreplaceable on a multi-year view.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "qty": 159,
+      "avgCost": 376.71,
+      "category": "ai-semis",
+      "lean": "hold",
+      "thesis": "Custom-ASIC and networking beneficiary as hyperscalers diversify away from merchant GPUs. Captures AI spend that doesn't flow to NVIDIA.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "qty": 78,
+      "avgCost": 507.29,
+      "category": "ai-semis",
+      "lean": "hold",
+      "thesis": "The credible #2 accelerator. Smaller, higher-variance position sized as the asymmetric bet if it takes meaningful inference share.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "qty": 241,
+      "avgCost": 393.83,
+      "category": "big-tech",
+      "lean": "buy",
+      "thesis": "Best-in-class quality compounder with Azure + OpenAI distribution of AI compute. Core mega-cap holding that holds up when growth names wobble.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "qty": 227,
+      "avgCost": 373.25,
+      "category": "big-tech",
+      "lean": "buy",
+      "thesis": "TPUs + Gemini + a search cash machine, and the cheapest of the mega-caps on the AI build-out. Owns its own silicon, which de-risks the NVIDIA dependency.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "qty": 284,
+      "avgCost": 246.0,
+      "category": "big-tech",
+      "lean": "hold",
+      "thesis": "AWS re-acceleration plus in-house Trainium silicon, with retail-margin recovery as free optionality.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "qty": 100,
+      "avgCost": 600.21,
+      "category": "big-tech",
+      "lean": "hold",
+      "thesis": "AI-driven ad efficiency is funding the capex out of a high-free-cash-flow core. Self-financing AI bet rather than a cash-burning one.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "qty": 167,
+      "avgCost": 299.24,
+      "category": "big-tech",
+      "lean": "hold",
+      "thesis": "Defensive mega-cap that holds in a risk-off tape, with on-device AI as longer-dated optionality. Lowers the beta of the book.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "qty": 74,
+      "avgCost": 404.66,
+      "category": "big-tech",
+      "lean": "hold",
+      "thesis": "High-beta sentiment proxy that often moves with crypto. Kept small for upside torque and explicitly sized for the volatility.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPMorgan Chase",
+      "qty": 135,
+      "avgCost": 331.14,
+      "category": "financials",
+      "lean": "hold",
+      "thesis": "Bellwether for credit and the rate cycle; diversifies away from pure tech beta and benefits if the soft-landing read holds.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "WMT",
+      "name": "Walmart",
+      "qty": 289,
+      "avgCost": 121.03,
+      "category": "consumer",
+      "lean": "hold",
+      "thesis": "The cleanest read on the US consumer and ballast that holds up in a slowdown. Defensive anchor for the book.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "qty": 0.9237,
+      "avgCost": 64956.69,
+      "category": "crypto",
+      "lean": "hold",
+      "thesis": "Core crypto sleeve driven by macro liquidity and ETF/treasury demand. Today's dossier reads HOLD, so this is a position to ride — not chase — sized to tolerate the volatility.",
+      "opened": "2026-06-17"
+    },
+    {
+      "symbol": "ETH-USD",
+      "name": "Ethereum",
+      "qty": 17.07,
+      "avgCost": 1756.84,
+      "category": "crypto",
+      "lean": "hold",
+      "thesis": "Higher-beta crypto satellite to the BTC core. Smaller weight reflecting the lower conviction relative to Bitcoin.",
+      "opened": "2026-06-17"
+    }
+  ],
+  "decisions": [
+    { "date": "2026-06-17", "action": "buy", "symbol": "NVDA", "name": "NVIDIA", "qty": 723, "price": 207.41, "conviction": "high", "rationale": "Open the book's anchor position. Highest conviction name — the toll road on AI compute. ~15% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "MSFT", "name": "Microsoft", "qty": 241, "price": 393.83, "conviction": "high", "rationale": "Core quality compounder; Azure + OpenAI distribution of AI compute. ~9.5% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "GOOGL", "name": "Alphabet", "qty": 227, "price": 373.25, "conviction": "high", "rationale": "Cheapest mega-cap on the AI build and owns its own TPU silicon. ~8.5% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "AMZN", "name": "Amazon", "qty": 284, "price": 246.0, "conviction": "medium", "rationale": "AWS re-acceleration + Trainium; retail-margin recovery optionality. ~7% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "META", "name": "Meta Platforms", "qty": 100, "price": 600.21, "conviction": "medium", "rationale": "Self-financing AI bet on high-FCF ad core. ~6% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "TSM", "name": "TSMC", "qty": 152, "price": 425.83, "conviction": "high", "rationale": "Foundry chokepoint for advanced AI chips. ~6.5% weight, accepting the Taiwan-headline risk." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "AVGO", "name": "Broadcom", "qty": 159, "price": 376.71, "conviction": "medium", "rationale": "Custom-ASIC + networking AI spend that bypasses merchant GPUs. ~6% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "AMD", "name": "AMD", "qty": 78, "price": 507.29, "conviction": "medium", "rationale": "Asymmetric #2-accelerator bet; sized small for the variance. ~4% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "AAPL", "name": "Apple", "qty": 167, "price": 299.24, "conviction": "medium", "rationale": "Defensive mega-cap to lower book beta; on-device AI optionality. ~5% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "JPM", "name": "JPMorgan Chase", "qty": 135, "price": 331.14, "conviction": "medium", "rationale": "Credit/rate-cycle bellwether; diversifies tech beta. ~4.5% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "BTC-USD", "name": "Bitcoin", "qty": 0.9237, "price": 64956.69, "conviction": "medium", "rationale": "Open the crypto sleeve. Dossier reads HOLD, so this is a ride-not-chase position. ~6% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "WMT", "name": "Walmart", "qty": 289, "price": 121.03, "conviction": "medium", "rationale": "Consumer ballast / defensive anchor. ~3.5% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "TSLA", "name": "Tesla", "qty": 74, "price": 404.66, "conviction": "low", "rationale": "Small high-beta sentiment proxy for upside torque. ~3% weight." },
+    { "date": "2026-06-17", "action": "buy", "symbol": "ETH-USD", "name": "Ethereum", "qty": 17.07, "price": 1756.84, "conviction": "low", "rationale": "Higher-beta crypto satellite to the BTC core. ~3% weight." }
+  ],
+  "equity": [
+    { "date": "2026-06-17", "equity": 1000000, "cash": 126739.87, "invested": 873260.13 }
+  ]
+}

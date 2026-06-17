@@ -18,6 +18,7 @@ const NAV = [
   { href: "/long-term-ideas", code: "LONG", label: "Long Term" },
   { href: "/markets", code: "MKTS", label: "Markets" },
   { href: "/opportunities", code: "OPS", label: "Opportunities" },
+  { href: "/ai-portfolio", code: "AIPF", label: "AI Portfolio" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },
   { href: "/desk", code: "DESK", label: "Paper Desk" },
 ];
