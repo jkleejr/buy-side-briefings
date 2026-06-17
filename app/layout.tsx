@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
 };
 
-const learnInitScript = `(function(){try{var v=localStorage.getItem('learnMode');document.documentElement.setAttribute('data-learn', v==='off'?'off':'on');}catch(e){document.documentElement.setAttribute('data-learn','on');}})();`;
+const learnInitScript = `(function(){try{var v=localStorage.getItem('learnMode');document.documentElement.setAttribute('data-learn', v==='off'?'off':'on');var vol=localStorage.getItem('volumeMode');document.documentElement.setAttribute('data-volume', vol==='off'?'off':'on');}catch(e){document.documentElement.setAttribute('data-learn','on');document.documentElement.setAttribute('data-volume','on');}})();`;
 
 export default function RootLayout({
   children,
@@ -56,6 +56,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-learn="on"
+      data-volume="on"
       className={`${geistMono.variable} h-full antialiased`}
     >
       <head>

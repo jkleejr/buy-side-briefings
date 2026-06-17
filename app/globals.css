@@ -112,6 +112,11 @@ body {
 [data-learn="off"] .tip-bubble { display: none !important; }
 [data-learn="off"] .tip-host { border-bottom: none; cursor: inherit; }
 
+/* Volume bars on charts (CSS-only, controlled by data-volume on <html>).
+   Bars are always rendered when volume data exists; this hides them globally
+   when the header Volume toggle is off, with no layout shift. */
+[data-volume="off"] .chart-volume-bars { display: none; }
+
 /* ============================================================================
    PHOSPHOR — CRT terminal realism layer.
    One concept: this is an amber-phosphor trading screen behind glass. Every

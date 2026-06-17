@@ -22,6 +22,10 @@ export type AssetChartProps = {
   intraday?: boolean;
   /** Overlay a horizontal volume-at-price profile (volume bucketed by price). */
   showVolumeProfile?: boolean;
+  /** Render a volume histogram along the bottom of the chart. Bars are always
+   *  drawn when volume data exists; the global header toggle (data-volume on
+   *  <html>) hides them via CSS, so the show/hide is instant and site-wide. */
+  showVolume?: boolean;
 };
 
 type TooltipPayloadItem = {
@@ -57,8 +61,22 @@ function ChartTooltip({
           ${p.close.toLocaleString("en-US", { maximumFractionDigits: 2 })}
         </span>
       </div>
+      {p.volume != null && p.volume > 0 && (
+        <div className="text-[var(--dim)]">
+          Vol{" "}
+          <span className="text-[var(--foreground)]">{formatVolume(p.volume)}</span>
+        </div>
+      )}
     </div>
   );
+}
+
+/** Compact volume formatting: 1.2B / 34.5M / 882K. */
+function formatVolume(v: number): string {
+  if (v >= 1e9) return `${(v / 1e9).toLocaleString("en-US", { maximumFractionDigits: 1 })}B`;
+  if (v >= 1e6) return `${(v / 1e6).toLocaleString("en-US", { maximumFractionDigits: 1 })}M`;
+  if (v >= 1e3) return `${(v / 1e3).toLocaleString("en-US", { maximumFractionDigits: 0 })}K`;
+  return v.toLocaleString("en-US");
 }
 
 const PROFILE_BINS = 28;
@@ -69,6 +87,7 @@ export default function AssetChartInner({
   label,
   intraday,
   showVolumeProfile,
+  showVolume,
 }: AssetChartProps) {
   if (series.length === 0) {
     return (
@@ -142,6 +161,56 @@ export default function AssetChartInner({
     );
   };
 
+  // Volume histogram along the bottom ~22% of the plot. Bars are colored by the
+  // day's direction (close vs. prior close) and drawn at low opacity so the
+  // price line stays readable. Aligned to each point's x so they sit under it.
+  const vols = series.map((s) => s.volume ?? 0);
+  const maxVol = Math.max(...vols, 0);
+  const renderVolume = !!showVolume && maxVol > 0;
+
+  const VolumeBars = () => {
+    const plot = usePlotArea();
+    if (!plot || plot.width <= 0 || plot.height <= 0) return null;
+    const n = series.length;
+    if (n === 0) return null;
+    const bandH = plot.height * 0.22;
+    const bottom = plot.y + plot.height;
+    const bandTop = bottom - bandH;
+    const step = n > 1 ? plot.width / (n - 1) : 0;
+    const barW = Math.max(1, (n > 1 ? plot.width / n : plot.width * 0.5) * 0.6);
+    return (
+      <g className="chart-volume-bars">
+        <line
+          x1={plot.x}
+          y1={bandTop}
+          x2={plot.x + plot.width}
+          y2={bandTop}
+          stroke="#1f1f1f"
+          strokeWidth={1}
+        />
+        {series.map((s, i) => {
+          const v = s.volume ?? 0;
+          if (v <= 0) return null;
+          const h = (v / maxVol) * bandH;
+          const cx = n > 1 ? plot.x + i * step : plot.x + plot.width / 2;
+          const prev = i > 0 ? series[i - 1].close : s.close;
+          const up = s.close >= prev;
+          return (
+            <rect
+              key={i}
+              x={cx - barW / 2}
+              y={bottom - h}
+              width={barW}
+              height={h}
+              fill={up ? "#22c55e" : "#ef4444"}
+              opacity={0.32}
+            />
+          );
+        })}
+      </g>
+    );
+  };
+
   return (
     <div className="h-[110px] w-full sm:h-[150px]">
       <ResponsiveContainer width="100%" height="100%">
@@ -154,6 +223,7 @@ export default function AssetChartInner({
           </defs>
           <CartesianGrid stroke="#1f1f1f" strokeDasharray="2 2" vertical={false} />
           {renderProfile && <Customized component={VolumeProfile} />}
+          {renderVolume && <Customized component={VolumeBars} />}
           <XAxis
             dataKey="date"
             tick={{ fill: "#71717a", fontSize: 9, fontFamily: "var(--font-geist-mono)" }}

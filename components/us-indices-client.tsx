@@ -119,6 +119,7 @@ export default function UsIndicesClient({
                   color={a.color}
                   label={a.label}
                   intraday={intraday}
+                  showVolume
                 />
               </div>
             </div>
