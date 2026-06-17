@@ -3,7 +3,6 @@ import { getLatestMarketsVerdict } from "@/lib/data";
 import { todayET, verdictColor } from "@/lib/utils";
 import HeaderNav from "./header-nav";
 import LearnToggle from "./learn-toggle";
-import VolumeToggle from "./volume-toggle";
 import MobileNav from "./mobile-nav";
 import PaletteButton from "./palette-button";
 
@@ -45,7 +44,6 @@ export default function SiteHeader() {
 
         <div className="ml-auto flex shrink-0 items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] sm:gap-3">
           <PaletteButton />
-          <VolumeToggle />
           <LearnToggle />
           <span className="hidden lg:inline">{dateStr}</span>
           <span className="hidden text-[var(--amber-dim)] lg:inline">·</span>

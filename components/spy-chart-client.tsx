@@ -34,7 +34,8 @@ export default function SpyChartClient({
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [series, setSeries] = useState(initialSeries);
   const [loading, setLoading] = useState(false);
-  const [showVol, setShowVol] = useState(false);
+  const [showVolume, setShowVolume] = useState(true);
+  const [showProfile, setShowProfile] = useState(false);
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
@@ -83,17 +84,31 @@ export default function SpyChartClient({
         <div className="ml-auto flex items-center gap-2">
           <button
             type="button"
-            onClick={() => setShowVol((v) => !v)}
-            aria-pressed={showVol}
-            title="Toggle the volume-at-price profile (horizontal bars showing where volume traded)"
+            onClick={() => setShowVolume((v) => !v)}
+            aria-pressed={showVolume}
+            title={showVolume ? "Volume bars: ON. Click to hide." : "Volume bars: OFF. Click to show."}
             className={
               "border px-1.5 py-0.5 text-[10px] uppercase tracking-widest transition-colors " +
-              (showVol
+              (showVolume
                 ? "border-[var(--amber)] text-[var(--amber)]"
                 : "border-[var(--border)] text-[var(--dim)] hover:text-[var(--amber)]")
             }
           >
             Vol
+          </button>
+          <button
+            type="button"
+            onClick={() => setShowProfile((v) => !v)}
+            aria-pressed={showProfile}
+            title="Toggle the volume-at-price profile (horizontal bars showing where volume traded)"
+            className={
+              "border px-1.5 py-0.5 text-[10px] uppercase tracking-widest transition-colors " +
+              (showProfile
+                ? "border-[var(--amber)] text-[var(--amber)]"
+                : "border-[var(--border)] text-[var(--dim)] hover:text-[var(--amber)]")
+            }
+          >
+            Profile
           </button>
           <RangeSelector value={range} onChange={setRange} loading={loading} />
         </div>
@@ -104,7 +119,8 @@ export default function SpyChartClient({
           color={color}
           label={symbol}
           intraday={intraday}
-          showVolumeProfile={showVol}
+          showVolume={showVolume}
+          showVolumeProfile={showProfile}
         />
       </div>
     </div>

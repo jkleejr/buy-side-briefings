@@ -41,6 +41,7 @@ export default function UsIndicesClient({
   const [range, setRange] = useState<ChartRange>(initialRange);
   const [seriesMap, setSeriesMap] = useState(initialSeriesBySymbol);
   const [loading, setLoading] = useState(false);
+  const [showVol, setShowVol] = useState(true);
   const reqId = useRef(0);
   const isFirstMount = useRef(true);
 
@@ -73,12 +74,26 @@ export default function UsIndicesClient({
 
   return (
     <div className="flex h-full flex-col">
-      {/* Shared timeframe selector — chart type comes from the global header toggle. */}
+      {/* Shared timeframe selector + per-row volume toggle. */}
       <div className="flex items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
         <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
           Timeframe ▸
         </span>
         <RangeSelector value={range} onChange={setRange} loading={loading} />
+        <button
+          type="button"
+          onClick={() => setShowVol((v) => !v)}
+          aria-pressed={showVol}
+          title={showVol ? "Volume bars: ON. Click to hide." : "Volume bars: OFF. Click to show."}
+          className={
+            "ml-auto border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-widest transition-colors " +
+            (showVol
+              ? "border-[var(--amber)] text-[var(--amber)]"
+              : "border-[var(--border)] text-[var(--dim)] hover:text-[var(--amber)]")
+          }
+        >
+          Vol
+        </button>
       </div>
 
       {/* Three charts side-by-side on desktop; stacks on mobile */}
@@ -119,7 +134,7 @@ export default function UsIndicesClient({
                   color={a.color}
                   label={a.label}
                   intraday={intraday}
-                  showVolume
+                  showVolume={showVol}
                 />
               </div>
             </div>
