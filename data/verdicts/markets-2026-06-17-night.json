@@ -2,14 +2,14 @@
   "routine": "markets",
   "date": "2026-06-17",
   "window": "night",
-  "generated_at": "2026-06-17T23:30:00Z",
+  "generated_at": "2026-06-18T01:30:00Z",
   "is_seed": false,
   "verdict": {
     "code": "step_aside",
     "emoji": "🟠",
     "label": "STEP ASIDE — Warsh Hawkish Shock; Nine Hike Dots; Regime Floor Breached",
     "conviction": "medium",
-    "rationale_short": "SPX closed at 7,420.10 — 40 points below the 7,460 regime floor — triggering the explicit downgrade established in the morning brief. VIX closed at 18.44, the first close above 18 this cycle, deactivating the NVDA conditional add. Nine of 18 FOMC officials projected at least one 2026 rate hike (the 2026 median rose to 3.8%), the easing bias was stripped, and retail sales beat at +0.9% — all three confirming the hawkish regime shift is structural, not a one-session noise event. The DXY (99.65, 0.35 pts from 100) and 30Y (4.94%, 6 bps from 5.00%) held their thresholds only because WTI fell for a fifth consecutive session; a Thursday breach of both simultaneously would upgrade STEP_ASIDE to BEARISH. Iran formal signing on June 19 (Juneteenth, market closed) is the sole near-term circuit-breaker.",
+    "rationale_short": "SPX closed at 7,420.10 — 40 points below the 7,460 regime floor — triggering the explicit downgrade established in the morning brief. VIX closed at 18.44, the first close above 18 this cycle, deactivating the NVDA conditional add. Nine of 18 FOMC officials projected at least one 2026 rate hike (the 2026 median rose to 3.8%), the easing bias was stripped, and retail sales beat at +0.9% — all three confirming the hawkish regime shift is structural, not a one-session noise event. The DXY (99.65, 0.35 pts from 100) and 30Y (4.94%, 6 bps from 5.00%) held their thresholds only because WTI fell for a fifth consecutive session. POST-CLOSE UPDATE: both Trump and Iranian President Pezeshkian digitally signed the ceasefire memorandum on June 17; Iran's foreign ministry confirmed immediate effect — the Geneva ceremony is cancelled. The Iran circuit-breaker has fired one session early. SPCX entry zone ($190–$200) is now ACTIVE. Oil disinflation is confirmed, capping the DXY and 30Y.",
     "supporting_data": [
       {
         "label": "SPX 7,420.10 (-1.21%), Nasdaq 26,021.66 (-1.34%), Dow 51,492.55 (-0.98%) — SPX 40 pts below 7,460 regime floor; VIX 18.44 (+12.4%), first close above 18 this cycle; both HOLD triggers fired simultaneously; sold into close (distribution pattern)",
@@ -32,8 +32,8 @@
         "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
       },
       {
-        "label": "WTI ~$75-76 (Day 5 lower), Brent ~$78 — five consecutive sessions of declines; Iran formal signing ceremony scheduled June 19 in Geneva; oil disinflation is the single factor preventing DXY from closing above 100 and 30Y from closing above 5.00%",
-        "url": "https://www.investing.com/commodities/brent-oil"
+        "label": "WTI ~$75-76 (Day 5 lower), Brent ~$78 — five consecutive sessions of declines; POST-CLOSE: both presidents digitally signed Iran ceasefire June 17 (Iran FM: 'in effect immediately'); Geneva ceremony June 19 superseded; Strait of Hormuz reopens within 30 days; oil sanctions lifted immediately — oil disinflation now structurally confirmed, capping DXY below 100 and 30Y below 5.00%",
+        "url": "https://www.rappler.com/world/middle-east/us-iran-presidents-sign-ceasefire-deal-june-2026/"
       }
     ]
   },
@@ -59,7 +59,7 @@
     },
     {
       "ticker": "SPCX",
-      "note": "$191.82 (-4.9% from $201.80); first decline since IPO; now inside the $190-205 entry zone identified in prior briefs; Iran signing and regime recovery both required before re-entry; protective put strategy justified",
+      "note": "$191.82 (-4.95% from $201.80); first decline since IPO; inside the $190–$200 entry zone; POST-CLOSE: Iran ceasefire digitally signed June 17 — blocking condition CLEARED; entry framework active; 50% position + $185 put hedge on June 22 Monday open; stop $185 daily close; STEP_ASIDE regime limits size",
       "sentiment": "neutral"
     },
     {
@@ -125,9 +125,9 @@
       "better_entry": "VIX closes back below 18 AND NVDA recovers above $210 on the same session — then and only then re-engage the conditional add."
     },
     {
-      "ticker": "SPCX before Iran signing clarity",
-      "reason": "SPCX is at $191.82 — inside the $190-205 entry zone — but entering into a 3-day holiday weekend with a binary Iran deal catalyst on June 19 (market closed) means waking up Monday to potentially both a hawkish FOMC regime AND an Iran deal failure simultaneously.",
-      "better_entry": "June 20 Monday open IF Iran signs June 19 AND Brent holds below $82. Entry $185-200 with protective put. The entry zone is valid; the sequencing matters."
+      "ticker": "SPCX above $200 before regime recovery",
+      "reason": "CONDITION UPDATE: Iran ceasefire digitally signed June 17 — the binary Iran risk is resolved. SPCX is in the $190–$200 entry zone with Iran cleared AND Brent below $82. The remaining STEP_ASIDE gate (VIX 18.44 above 17, SPX below 7,460) limits position size to 50%. Do NOT chase above $200 until VIX closes below 18 AND SPX reclaims 7,460 on the same close.",
+      "better_entry": "Entry at $190–$200 with $185 June 20 put hedge at 50% size on June 22 Monday open (post-Juneteenth). Add remaining 50% only after VIX closes below 18 AND SPX reclaims 7,460. Brent must hold below $82. Stop: $185 daily close."
     }
   ],
   "trade_setups": [
