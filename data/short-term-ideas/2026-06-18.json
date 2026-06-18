@@ -1,0 +1,93 @@
+{
+  "date": "2026-06-18",
+  "for_session": "2026-06-22",
+  "generated_at": "2026-06-18T11:30:00Z",
+  "is_seed": false,
+  "intro": "Juneteenth-eve morning. The FOMC hawkish shock has been absorbed — SPX held 7,460 (barely at 7,464), NVDA is recovering pre-market, SK Hynix hit new ATHs — but two regime gates are breached (VIX 18.44, DXY 100.23) and the 30Y approaches 5.00%. Today is the last US trading day before Juneteenth; the ideas below are calibrated for the JUNE 22 session (first post-FOMC, post-Juneteenth full session). Iran ceasefire is confirmed and in effect — the geopolitical risk premium is clearing. The macro question is whether VIX can recover below 17 on June 22 to re-activate the conditional-add frameworks. These ideas are binary: the macro regime either stabilizes (most leans activate) or deteriorates (shorts extend, longs reduce). SK Hynix is the one unconditional bull item regardless of US macro regime.",
+  "ideas": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "category": "ai-semis",
+      "lean": "buy",
+      "conviction": "medium",
+      "timeframe": "1-5 days",
+      "idea": "Post-Juneteenth add at $205–$215 if VIX closes below 17 AND DXY holds below 100 on June 22 open.",
+      "why": "NVDA closed the June 18 options expiry day recovering above the 50-DMA ($206.74) in pre-market — a positive technical reset. The June monthly options cleared, removing the short-gamma pressure below $205 that amplified the FOMC dump. The Annual Meeting on June 24 is the week's catalyst: Jensen Huang will be the first megacap CEO to publicly address the Warsh hawkish outcome, and any commentary on AI capex resilience could trigger a PT revision. The conditional add ($205–$215) remains suspended until VIX closes below 17 and DXY closes below 100 on the same session — June 22 is the first day this can resolve.",
+      "trigger": "VIX closes below 17 AND DXY closes below 100 on June 22 → execute add at $205–$215 with stop at $195.",
+      "risk": "VIX stays above 17 through June 22 (macro regime not recovering) or DXY accelerates above 102 (rate-hike narrative entrenching) → hold without adding; do not chase above $215 in any scenario."
+    },
+    {
+      "ticker": "SK HYNIX",
+      "name": "SK Hynix (000660.KS)",
+      "category": "ai-semis",
+      "lean": "buy",
+      "conviction": "high",
+      "timeframe": "1-5 days",
+      "idea": "Hold core and add on any post-Juneteenth KOSPI pullback to ₩2,520,000–₩2,580,000 — the HBM4E catalyst is new and not yet fully priced.",
+      "why": "SK Hynix closed June 18 at ~₩2,685,000 (+10.7%), extending to a new all-time high above the 38-analyst consensus PT of ₩2,690,000. The key new catalyst today: SK Hynix confirmed HBM4E sample shipments in H2 2026 with mass production targeted for 2027 — this was not in prior sell-side models. A PT revision cycle from the current ₩2,690,000 average toward ₩3,000,000–₩3,200,000 is now underway as analysts incorporate HBM4E. This is the unconditional bull idea: the US macro regime (VIX, DXY) does not affect the KRX session timing, and the fundamental catalyst is new information, not re-hashed thesis.",
+      "trigger": "Any post-Juneteenth KOSPI pullback to ₩2,520,000–₩2,580,000 (post-options-expiry consolidation) → add with stop at ₩2,407,000 (prior ATH support).",
+      "risk": "Samsung announces credible HBM4 market-share gain vs SK Hynix; or DXY sustained above 102 drives extended foreign selling of the ~54% foreign-owned float."
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "category": "space",
+      "lean": "buy",
+      "conviction": "low",
+      "timeframe": "3-10 days",
+      "idea": "Complete the 50% position if VIX <18 AND SPX >7,480 at the June 22 open — Iran deal cleared, price in zone.",
+      "why": "The $190–$200 entry framework has all non-macro conditions met: Iran ceasefire confirmed, Brent $78, June 20 weekly options expiry cleared the max-pain gravity, and SPCX is inside the zone. The 50% initial entry should execute either today (if price stays $190–$200) or June 22. The remaining 50% requires the macro regime to improve (VIX <18, SPX >7,480) on June 22 — the Juneteenth weekend will either see the FOMC shock fade (add) or accelerate (hold at 50% only). The Cursor/Anysphere AI acquisition ($60B stock) adds an incremental software layer to the bull thesis that analysts have not yet fully modeled.",
+      "trigger": "June 22 open: VIX <18 AND SPX >7,480 → execute remaining 50% of position at $190–$200 with July put hedge (switching from June to July now that June 20 expiry has passed). Stop $185 daily close.",
+      "risk": "SPCX breaks $185 on a daily close → stop triggers; the STEP_ASIDE regime extends through July; the Chanos valuation risk materializes faster than the passive bid can absorb it."
+    },
+    {
+      "ticker": "BTC-USD",
+      "name": "Bitcoin",
+      "category": "crypto",
+      "lean": "watch",
+      "conviction": "low",
+      "timeframe": "1-4 days",
+      "idea": "Binary resolution by June 22: reclaim $65K (upgrade to buy) or trigger $63,500 stop (exit).",
+      "why": "BTC is at a critical juncture. IBIT posted its first significant daily outflow ($31M June 17) — a new bearish data point that weakens the 'institutional bid is structural' thesis. But the $63,500 two-day stop has not been triggered. The Juneteenth weekend (June 19 US holiday) is the highest-risk window for a thin-tape adverse move. The 8-of-9 post-FOMC weakness pattern means the risk window extends through June 24. The setup resolves: (1) BTC holds above $63,500 through June 22 and reclaims $65,000 → HOLD upgrades to BUY, add; (2) BTC breaks $63,500 on two consecutive daily closes → exit all positions, reassess at $62,000–$63,000.",
+      "trigger": "Daily close above $65,000 → BUY, add with new position. Two consecutive closes below $63,500 → stop triggered, exit. No action between $63,500 and $65,000.",
+      "risk": "Weekend thin-tape adverse headline (Fed speaker, China macro, geopolitical) gaps BTC through $63,500 before June 22 open — cannot hedge the 24/7 market gap risk except by reducing position sizing today."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "category": "big-tech",
+      "lean": "buy",
+      "conviction": "medium",
+      "timeframe": "5-10 days",
+      "idea": "Best post-FOMC dip buy in mega-cap tech — self-funded AI, -5.44% on June 17, entering a recovering macro tape.",
+      "why": "Meta fell -5.44% on June 17 — the worst day for the stock in months — on hawkish FOMC risk repricing. But Meta is the megacap with the cleanest fundamental story: AI capex funded entirely from operations (no debt issuance, no external dependency), strong revenue acceleration, and the cheapest forward multiple in the magnificent-7 post-selloff. At ~$548, Meta is well below where institutional buyers established positions. If VIX normalizes below 17 on June 22, Meta is the highest-beta recovery trade in big tech and the most likely to reclaim losses quickly.",
+      "trigger": "June 22 open + VIX below 18 and recovering → buy META at $545–$560 with stop at $530 daily close.",
+      "risk": "30Y Treasury tests 5.00% post-Juneteenth → multiple compression accelerates for long-duration growth; META's ~25x P/E is more vulnerable than NVDA's AI-fundamental story in a rate-hike repricing."
+    },
+    {
+      "ticker": "XLE",
+      "name": "SPDR Energy Select Sector ETF",
+      "category": "big-tech",
+      "lean": "sell",
+      "conviction": "medium",
+      "timeframe": "3-5 weeks",
+      "idea": "Continue scaling the Iran oil repricing short — Hormuz reopens within 30 days, H2 earnings cuts not yet in numbers.",
+      "why": "Iran ceasefire is confirmed and in effect. Brent at $78 is structurally below the $87–90 embedded in energy equity models at the start of June. With Hormuz scheduled to reopen within 30 days, oil supply increases are now a matter of timeline, not probability. H2 2026 energy sector earnings estimate cuts of 8–12% have not materialized in sell-side consensus — that recognition event (analyst notes revising energy earnings downward) is the medium-term catalyst for XLE downside. The Warsh hawkish FOMC is an incremental tailwind: risk-off sessions hit commodities and energy equities together.",
+      "trigger": "Any Brent bounce to $82–$85 on mine-clearance timeline delays → add to short; Juneteenth-eve thin tape is not the time to add size.",
+      "risk": "Iran deal collapses; Brent closes above $90 on two consecutive sessions → cover all shorts immediately."
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "category": "big-tech",
+      "lean": "buy",
+      "conviction": "low",
+      "timeframe": "3-7 days",
+      "idea": "Post-FOMC dip at $375–$390 — Azure AI monetization continues regardless of rate path.",
+      "why": "Microsoft fell -3.79% on June 17, creating the first meaningful pullback since the SPCX narrative briefly overshadowed it. At ~$378, Azure AI monetization and Copilot attach rates are compounding quietly. Microsoft's recurring enterprise revenue model makes it more resilient to rate hike uncertainty than pure-growth names — the DCF sensitivity is lower because the cash flows are real and current, not projected far-future earnings. The post-FOMC entry window at $375–$390 is the cleanest risk-adjusted entry in big tech for a post-Juneteenth macro recovery.",
+      "trigger": "VIX begins recovering toward 17 on June 22 AND MSFT holds $375 support → buy at $375–$390 with stop at $368 daily close.",
+      "risk": "AI capex-to-monetization lag extends; SPCX narrative continues to pull risk capital away from 'boring' mega-cap tech; rate environment deteriorates further."
+    }
+  ]
+}
