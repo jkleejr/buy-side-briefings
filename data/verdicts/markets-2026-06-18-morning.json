@@ -1,0 +1,164 @@
+{
+  "routine": "markets",
+  "date": "2026-06-18",
+  "window": "morning",
+  "generated_at": "2026-06-18T12:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Iran Relief Gap Into a Hawkish Regime; Last Session Before Juneteenth",
+    "conviction": "medium",
+    "rationale_short": "The June 17 FOMC shock broke the BUY regime: nine of 18 officials projected a 2026 rate hike, the 2026 median rose to 3.8%, and Warsh dropped all forward guidance — SPX closed at 7,420.10 (40 pts below the 7,460 floor) and VIX printed 18.44 (above the 18 threshold). The Iran ceasefire changed the overnight picture: Trump and Pezeshkian digitally signed at the Palace of Versailles on June 17, Pakistan confirmed June 18 that Hormuz will reopen immediately, and WTI fell to ~$75 (sixth consecutive session lower). ES futures are at 7,556.50 pre-market — a potential recapture of the regime floor. HOLD, not BUY: the gap-up is geopolitical relief, not a rate-path improvement; VIX must close below 18, SPX must close above 7,460, and DXY must fall below 99.00 on the same session before BUY is warranted. Tomorrow is Juneteenth (market closed) — today is the last session before a 3-day weekend with Hormuz implementation news flowing in real time.",
+    "supporting_data": [
+      {
+        "label": "SPX 7,420.10 (-1.21%), Nasdaq 26,021.66 (-1.34%), Dow 51,492.55 (-0.98%) June 17 close — SPX 40 pts below 7,460 regime floor; VIX 18.44 (+12.4%), first close above 18 this cycle; sold into close from ~7,500 (distribution pattern); 2Y yield +16 bps to 4.22% confirms front-end hike pricing",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-17-2026"
+      },
+      {
+        "label": "Nine of 18 FOMC officials project at least one 2026 rate hike; six project two or more; 2026 median raised to 3.8% (from 3.4% March); easing bias stripped; Warsh abstained from submitting his own dot and announced task forces to review Fed communications and the dot plot mechanism",
+        "url": "https://www.tradingkey.com/analysis/economic/central-banks/261973912-fed-federal-fomc-2-economic-projections-decision-rates-tradingkey"
+      },
+      {
+        "label": "Trump signed ceasefire at Palace of Versailles (G7 dinner with Macron) and Iranian President Pezeshkian signed digitally June 17; Pakistan confirmed June 18: Hormuz Strait to reopen immediately, US blockade of Iranian ports ceases; Geneva ceremony June 19 superseded by digital signing",
+        "url": "https://www.investing.com/news/world-news/iran-us-agree-to-halt-war-and-reopen-hormuz-sending-oil-prices-tumbling-4741185"
+      },
+      {
+        "label": "ES futures 7,556.50, NQ futures +1.50% pre-market June 18 — Iran relief and short-covering driving the gap-up; Dow futures rising; oil retreating; but this is geopolitical repricing, not rate-path improvement",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-18-2026"
+      },
+      {
+        "label": "WTI crude ~$75/bbl June 18 morning — sixth consecutive session lower; Brent ~$78; IEA projects global oil supply to increase 8 million bpd by 2027 vs demand growth of only 2 million bpd; structural oversupply now confirmed; H2 2026 energy earnings cuts still not in sell-side models",
+        "url": "https://tradingeconomics.com/commodity/crude-oil"
+      },
+      {
+        "label": "Juneteenth June 19, 2026 — NYSE and Nasdaq closed; next US trading session is Monday June 22; today is last session before 3-day weekend; Hormuz implementation headlines (mine clearance, Iranian port logistics) will flow with no US market to price them; asymmetric risk of holding new longs through the holiday",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-open-juneteenth-2026-151925494.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7420.10,  "change_pct": -1.21, "as_of": "2026-06-17T20:00:00Z" },
+    "nasdaq": { "level": 26021.66, "change_pct": -1.34, "as_of": "2026-06-17T20:00:00Z" },
+    "vix":    { "level": 18.44,    "change_pct": 12.37, "as_of": "2026-06-17T20:00:00Z" },
+    "ust10y": { "level": 4.50,     "change_bps": 7,     "as_of": "2026-06-17T20:00:00Z" },
+    "dxy":    { "level": 99.65,    "change_pct": 0.11,  "as_of": "2026-06-17T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.44, "trigger_above": 18,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.94,  "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 99.65, "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7420.1,"trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 78.0,  "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$204.65 June 17 close; opened ~$208.53 June 18 (range $203.08–$209.21 per data); VIX 18.44 keeps the conditional add deactivated; add resumes ONLY after VIX closes below 18 AND NVDA recovers above $210 on the same close; with Juneteenth tomorrow, execute any add Monday June 22, not into a 3-day holiday gap; stop $195 unchanged; thesis intact ($25B bond deal / PCC / late-July earnings)",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$191.82 June 17 close; Iran ceasefire signed June 17 — BLOCKING CONDITION CLEARED; Brent below $82 ✓; entry zone $190–$200 ACTIVE; execute 50% position + $185 June 27 put hedge on Monday June 22 open (post-Juneteenth) per night brief framework; do NOT chase above $200 pre-Juneteenth; add remaining 50% when VIX closes below 18 AND SPX reclaims 7,460; stop $185 daily close",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "~$53–54 est.; WTI $75, Brent $78 — sixth consecutive session lower; Iran signing confirms structural Hormuz reopening with 1–1.5 mm bpd of Iranian crude returning within 60 days; H2 2026 earnings estimate cuts (8–12%) not yet in sell-side numbers; active short continues; Iran implementation accelerates the trade, it does not close it",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TBT",
+      "note": "Hold; 30Y at 4.94% (6 bps from 5.00% trigger); nine hike dots structural; retail sales +0.9% beat validates sticky inflation; oil disinflation partially offsets but does not override the hike signal; do not reduce until 30Y falls below 4.80% on a daily close",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$64,000–$65,000 est. (from $64,881 June 17 close per night brief); DXY 99.65 is the ceiling — needs to break below 99.00 before the institutional bid drives a sustained move; Iran deal is the dollar-weakening catalyst; watch DXY on today's and Monday's close; do not add above $65K pre-Juneteenth",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ETH",
+      "note": "~$1,750 est.; still below $2,000 structural level; ETH/BTC ratio at multi-month low; not actionable long in HOLD regime",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "~$398–400 est. pre-market June 18 (-0.61%); underperforming the ES gap-up — TSLA is not participating in the Iran relief bounce; below $405 prior support level; hold; no add; watch $395 as next support",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$300.66 pre-market June 18 (-0.47%); slightly underperforming the gap-up; WWDC AI/PCC thesis intact; $290–298 post-FOMC entry zone starting to become active; wait for regime recovery (VIX < 18, SPX > 7,460 close) before adding; hold",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "~$567–573 est.; 30Y at 4.94% remains the multiple headwind for high-beta growth; hold; no add in HOLD regime; add only on VIX < 18 AND 30Y < 4.90% simultaneously",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$512.48 (+1.02%) June 18; $510–525 entry zone active; BofA Top Pick/$560 target intact; wait for VIX < 18 close before executing the entry; hold",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$382.30 June 18 (range $377.37–$392.43); $385–392 entry zone approaching; 30Y 4.94% is the multiple headwind; Azure AI thesis intact; wait for regime recovery before adding; hold",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "~$240–242 est.; AWS AI demand intact; hold; no active setup in HOLD regime",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SPX/QQQ at the gap-open above 7,500",
+      "reason": "ES futures at 7,556.50 imply SPX opens ~135 points above the June 17 close of 7,420 — a gap driven by Iran relief and short covering, not a change in the rate path. Buying this gap on the last session before a 3-day Juneteenth weekend means carrying exposure through 72 hours of Hormuz implementation news (mine clearance, Iranian port logistics) with no US market to price those developments. The FOMC hawkish signal — nine hike dots, 2026 median 3.8% — is structural and unchanged. The 7,460 regime floor is now resistance, not confirmed support; a close above it is required, not just an open.",
+      "better_entry": "Monday June 22 open, after Juneteenth, with Hormuz implementation progress confirmed over the weekend AND DXY holding below 99.00 AND VIX below 18 on the June 18 close. That entry combines regime recovery confirmation with cleared geopolitical risk."
+    },
+    {
+      "ticker": "NVDA above $210 until VIX closes below 18",
+      "reason": "NVDA opened at ~$208.53 June 18 — recovering from $204.65 June 17 close but still below the $210 add zone lower bound. VIX at 18.44 (last close) keeps the conditional add trigger deactivated. With Juneteenth tomorrow, adding fresh NVDA capital today means entering the last session before a 3-day weekend without the add trigger being active. The stop at $195 is intact; the thesis is unchanged; the setup requires patience, not urgency.",
+      "better_entry": "VIX closes below 18 today AND NVDA recovers above $210 on the June 18 session → execute the add on Monday June 22 at $205–215. Stop $195 daily close unchanged."
+    },
+    {
+      "ticker": "BTC above $65K pre-Juneteenth",
+      "reason": "BTC at ~$64–65K with DXY at 99.65 — the ceiling remains below 100. The Iran deal is the catalyst for dollar softening but DXY needs to fall below 99.00 before the BlackRock institutional bid can drive a clean breakout. Adding BTC above $65K on the last session before a 3-day weekend means riding implementation risk with no US market as a liquidity backstop if the deal encounters logistical friction.",
+      "better_entry": "Monday June 22 if DXY confirms below 99.00, Hormuz reopening is proceeding per timeline, and VIX holds below 18. Those three simultaneously align the regime recovery with the BTC add thesis."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SPCX",
+      "direction": "long",
+      "thesis": "All three blocking conditions from the June night brief framework are now cleared simultaneously for the first time: Iran ceasefire digitally signed June 17 (Trump + Pezeshkian at Versailles), SPCX inside the $190–$200 entry zone at $191.82, and Brent below $82 ($78). SPCX is the pure-play commercial launch opportunity (Starship, Starlink, military contracts) with a late-2026 revenue acceleration narrative intact. The STEP_ASIDE→HOLD transition limits initial sizing to 50% per the night brief framework. Executing on Monday June 22 post-Juneteenth allows confirmation that Hormuz reopening is proceeding and avoids holiday-gap risk.",
+      "entry": "Execute 50% position at $190–$200 on Monday June 22 open with $185 June 27 put hedge; add remaining 50% when VIX closes below 18 AND SPX reclaims 7,460 on same close; stop $185 daily close.",
+      "invalidation": "Daily close below $185; or Iran deal credibility collapses (Hormuz does not reopen within 2 weeks of June 17); or VIX spikes above 22 post-Juneteenth.",
+      "conviction": "medium",
+      "horizon": "3–6 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "WTI fell to ~$75 per barrel on June 18 morning — the sixth consecutive session lower as the ceasefire reprices supply expectations. Pakistan's June 18 confirmation that Hormuz will reopen immediately starts the clock on 1–1.5 million bpd of Iranian crude returning to market within 60 days. The IEA projects 8 million bpd supply growth by 2027 vs 2 million bpd demand — structural oversupply that H2 2026 sell-side energy models (still at $87–90 WTI) haven't begun to price. The formal implementation is the accelerant, not the exit.",
+      "entry": "Continue scaling short XLE at $52–55; any Brent bounce to $82–85 on Hormuz mine-clearance timing is an additional entry, not an exit.",
+      "invalidation": "Iran deal collapses AND Brent closes above $90 on two consecutive sessions; or XLE reclaims $62 on a daily close.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "TBT (2x inverse TLT)",
+      "direction": "hedge",
+      "thesis": "Nine of 18 FOMC officials project at least one 2026 hike; the 2026 median is 3.8%; Warsh dropped forward guidance and initiated a dot-plot review — removing the policy ceiling that previously anchored the long end. May retail sales +0.9% (vs +0.5% consensus) with CPI at 4.2% gives the Fed statistical cover to follow through. The 30Y at 4.94% is 6 bps from the 5.00% regime trigger; today's Iran-relief equity rally could paradoxically push stocks higher while bond traders sell duration on risk-on flows. TBT converts the HOLD regime into an active income position.",
+      "entry": "Hold TBT at $44–47; scale up 25% on any dip to $44–45 today. Reduce only if 30Y falls below 4.80% on a daily close.",
+      "invalidation": "30Y falls below 4.70% on a daily close — requires oil disinflation to fully overwhelm the FOMC hike signal, which is not the base case through June.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    }
+  ],
+  "bear_case": "The June 18 equity gap-up is geopolitical relief, not a change in the rate path: nine FOMC officials project rate hikes, the 2026 median stands at 3.8%, and retail sales at +0.9% with CPI at 4.2% give the Fed statistical justification to follow through on those dots. The June CPI print (expected early July) is the next inflection — if it comes in above 4.0%, the 30Y breaches 5.00% and VIX closes above 20 in the same session, converting HOLD to STEP_ASIDE immediately. The Juneteenth 3-day weekend carries asymmetric Hormuz risk: mine-clearance timelines, Iranian domestic opposition, or sanctions-removal logistics could generate a deal-credibility gap over the weekend with no US market to absorb it — Monday June 22 could open with both Iran reversal risk and the FOMC hawkish regime still intact, a double-negative targeting SPX 7,300–7,350. If today's session fails to close above 7,460 despite the Iran gap-up, a two-session distribution pattern (7,548 June 16 → 7,420 June 17 → failed recovery June 18) establishes a bearish double-top. If SPX closes above 7,460 today AND VIX closes below 18 AND DXY falls below 99.00 on the same close, HOLD upgrades to BUY immediately going into June 22.",
+  "body_mdx": "data/briefings/markets/2026-06-18-morning.mdx"
+}
