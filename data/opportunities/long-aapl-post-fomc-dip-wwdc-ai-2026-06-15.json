@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-15",
   "expires_at": "2026-08-10",
-  "status": "active",
+  "status": "expired",
   "tags": ["AAPL", "Apple", "WWDC", "AI", "PCC", "Siri", "FOMC", "conditional", "post-FOMC-dip", "medium-conviction"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-18",
+    "final_price": 300.66,
+    "return_pct": 0.0,
+    "outcome_label": "Conditional entry expired — dip never materialized",
+    "note": "Entry required AAPL to pull back to $285–295 on a post-FOMC dip by June 19. The June 17 FOMC was sharply hawkish (9 hike dots, 3.8% median, Warsh dropping forward guidance), but the simultaneous Iran ceasefire at Versailles produced a gap-up that kept AAPL at $300.66 pre-market June 18, counteracting the multiple-compression headwind. With June 19 Juneteenth making today the final trading session, the $285–295 entry zone is unreachable. No trade was executed; return 0.0%."
+  },
   "levels": {
     "entry_low": 285.0,
     "entry_high": 295.0,
