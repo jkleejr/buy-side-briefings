@@ -1,33 +1,49 @@
 {
   "events": [
     {
-      "date": "2026-06-18",
-      "label": "Weekly jobless claims + Philly Fed survey + Conference Board LEI — first post-FOMC data",
-      "kind": "MACRO",
-      "time_et": "8:30 AM",
-      "note": "Low claims (strong labor) or a hawkish Philly Fed reading could push DXY above 100 and 30Y above 5.00% simultaneously — the dual breach that upgrades STEP_ASIDE to BEARISH. Conference Board Leading Indicators add to the data flow. Watch DXY and 30Y intraday."
-    },
-    {
-      "date": "2026-06-19",
-      "label": "US markets closed — Juneteenth; Iran formal signing ceremony in Geneva (binary catalyst)",
-      "kind": "HOLIDAY",
-      "tickers": ["XLE", "QQQ", "BTC", "NVDA", "SPCX"],
-      "note": "Market closed. Warsh FOMC (June 17) delivered 9 hike dots + hawkish shock; SPX is below the 7,460 regime floor. Iran formal signing is the sole near-term circuit-breaker: success = Brent $73-75, DXY < 99.50, STEP_ASIDE reverts to HOLD by June 20 open. Failure = Brent $86-90, XLE short accelerant, STEP_ASIDE upgrades to BEARISH. Monitor Sunday evening futures for first signal."
+      "date": "2026-06-22",
+      "label": "Markets reopen post-Juneteenth; Hormuz Day-5 implementation check; Fed post-blackout speakers begin",
+      "kind": "OTHER",
+      "tickers": ["XLE", "QQQ", "NVDA", "GOOGL", "IWM", "BTC"],
+      "note": "First US equity session since June 18. DXY at the Monday open is the single most important data point — DXY rose to 100.75 on Juneteenth FX session (wrong direction for BUY gate). DXY below 99.00 on close would activate all three BUY conditions (VIX ✅, SPX ✅, DXY ❌→✅). If DXY holds above 100, HOLD low-conviction regime continues. If DXY spikes above 101.5 with SPX below 7,460, HOLD reverts to STEP_ASIDE. Fed post-FOMC blackout lifts this weekend — watch for hawkish Warsh remarks. BTC stop clock expected to confirm at UTC midnight June 19 — any crypto-to-equity correlation selling is an early Monday risk."
     },
     {
       "date": "2026-06-24",
-      "label": "S&P Global flash US PMIs — manufacturing + services (June)",
+      "label": "NVDA Annual Meeting (9 AM PT virtual) + Micron Q3 FY2026 earnings (after close) + S&P Global flash PMIs (9:45 AM ET)",
       "kind": "MACRO",
       "time_et": "9:45 AM",
-      "note": "First real-economy data of the post-FOMC cycle. Services PMI > 53 = hawkish pressure on July FOMC hike probability. Services PMI < 50 = recession concern; paradoxically dovish. Key input for July 28-29 FOMC rate hike decision."
+      "tickers": ["NVDA", "MU", "QQQ", "IWM", "SOXX"],
+      "note": "Triple-catalyst day for the AI-semis complex. (1) NVDA Annual Meeting (9 AM PT): Jensen Huang to address AI demand trajectory, Taiwan $150B spending commitment, and post-$25B-debt-offering capex plan. Q2 guidance $91B is the anchor; HBM demand and Blackwell Ultra cadence are the key signals. (2) Micron Q3 FY2026 (after close): guided record revenue $33.5B ±$0.75B, gross margin ~81%, non-GAAP EPS $19.15 ±$0.40; AI/HBM memory absorbing all production capacity; SK Hynix HBM4E sample confirmation supports beat-and-raise thesis. NVDA Meeting + MU earnings on the same day = maximum AI-semis volatility of the week. (3) S&P Global flash PMIs: Services PMI > 53 = hawkish July FOMC hike pressure; PMI < 50 = paradoxically dovish."
+    },
+    {
+      "date": "2026-06-25",
+      "label": "May 2026 PCE inflation (BEA, 8:30 AM ET) + Weekly jobless claims (8:30 AM ET)",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC", "NVDA", "GOOGL"],
+      "note": "THE week's dominant risk event. Wells Fargo estimates: PCE +0.5% MoM, 4.1% YoY; core PCE +0.3% MoM, 3.4% YoY. A print at or above these estimates validates all 9 FOMC hike dots and could push the 30Y above the 5.00% regime trigger — forcing a HOLD→STEP_ASIDE downgrade. A dramatically soft print (core below 3.0%) = BUY upgrade pathway opens. Have exits and hedges sized before 8:30 AM ET. Simultaneously: weekly jobless claims — low claims = strong labor = hawkish hike odds spike."
+    },
+    {
+      "date": "2026-06-26",
+      "label": "Russell Reconstitution effective at close — ~$11T passive rebalancing",
+      "kind": "OTHER",
+      "tickers": ["IWM", "QQQ"],
+      "note": "Russell 2000 annual reconstitution effective after June 26 close (trading begins June 29). ~$11 trillion in passive assets rebalancing simultaneously. 2026 is the first year of semi-annual reconstitution (June + December). Build positions in newly added names before June 24; take profits before Friday close if PCE on June 25 was hawkish. A hawkish PCE on June 25 + $11T passive rebalancing on June 26 = the most disorderly potential tape of Q3."
+    },
+    {
+      "date": "2026-06-27",
+      "label": "Q1 2026 GDP final revision (BEA, 8:30 AM ET)",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "note": "Final revision to Q1 2026 GDP. Contextual data — rarely moves markets materially, but in the current CPI 4.2% / 9-hike-dot backdrop, an upward GDP revision reinforces the 'Fed can hike without recession' thesis. A downward miss would be paradoxically dovish."
     },
     {
       "date": "2026-07-14",
-      "label": "July CPI release (est.) — most important inflation data of the summer",
+      "label": "June CPI release (est.) — most important inflation data of the summer",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "NVDA", "BTC"],
-      "note": "May CPI 4.2% triggered 9 FOMC hike dots and regime breach on June 17. June CPI (released ~July 14) is the next recalibration: if CPI holds ≥ 4.0%, hike probability for July 28-29 FOMC spikes materially; if CPI falls to ≤ 3.7%, the rate path softens and BUY regime can re-open."
+      "note": "May CPI 4.2% triggered 9 FOMC hike dots and regime breach on June 17. June CPI (released ~July 14) is the next recalibration: if CPI holds ≥ 4.0%, hike probability for July 28-29 FOMC spikes materially; if CPI falls to ≤ 3.7% (aided by Iran-deal oil disinflation), the rate path softens and BUY regime can re-open with high conviction."
     },
     {
       "date": "2026-07-28",
@@ -41,14 +57,14 @@
       "label": "Iran-US Islamabad Declaration 60-day deadline — Hormuz full reopening + sanctions relief",
       "kind": "GEO",
       "tickers": ["XLE", "QQQ", "BTC", "NVDA"],
-      "note": "Deal operational from June 19 signing; 60-day window expires August 13; Hormuz must be mine-cleared and operationally open for tanker traffic AND US sanctions relief on Iranian oil must be active by this date; failure = oil spike reversal and energy re-rally; key summer positioning watch"
+      "note": "Deal operational from June 18 MOU signing; 60-day window expires August 13. Hormuz central route still has ~80 mines as of June 19 — mine-clearance measured in weeks. Nuclear talks postponed (confirmed June 19). Failure to meet the August 13 deadline = oil spike reversal and energy re-rally; key summer positioning watch."
     },
     {
       "date": "2026-09-02",
       "label": "SPCX first earnings as a public company (approx.) — Starlink ARR + Starship cadence",
       "kind": "EARNINGS",
       "tickers": ["SPCX"],
-      "note": "First print since the June 12 IPO; the market has no public model yet, so guidance sets the multiple. Watch Starlink subscriber/ARR growth and Starship launch cadence vs. the ~$2.65T market cap implied by the $201.80 June 16 close. Binary in both directions; date approximate pending company confirmation."
+      "note": "First print since the June 12 IPO. SPCX stop triggered June 18 at $174.90 (daily close below $185 stop); re-entry only on two consecutive closes above $185 on above-average volume. Watch Starlink subscriber/ARR growth and Starship launch cadence. Binary in both directions; date approximate pending company confirmation."
     },
     {
       "date": "2026-12-09",
