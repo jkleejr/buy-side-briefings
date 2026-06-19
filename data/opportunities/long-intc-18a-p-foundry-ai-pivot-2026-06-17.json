@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "low",
   "time_horizon": "2-4 weeks",
-  "current_price": 121.56,
+  "current_price": 133.99,
   "entry": "Enter $115-125 (INTC at $121.56 pre-market June 17, up 3.85% on 18A-P production announcement; intraday range expected $116-129). Enter at the open on June 17 or on any same-day pullback to $116-120. Scale: 80% initial entry at the June 17 open or first-hour consolidation; 20% add only if INTC pulls back to $115-118 within the first week on no new negative 18A news. Do NOT add below $112; that level implies the market is not crediting the production announcement.",
   "stop_loss": "$110 daily close (~9.5% below $121.56 entry; approximately 10% from entry midpoint $118) — implies the 18A-P production announcement is revised downward (yield rates too low for commercial viability), OR Intel Foundry Services fails to announce an anchor hyperscaler customer within 60 days, OR a broader chip sector correction driven by Warsh FOMC June 17 hawkish hike compresses INTC's nascent recovery multiple below the prior April trough",
   "targets": [
@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-17",
   "expires_at": "2026-07-22",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["INTC", "Intel", "foundry", "18A", "AI", "semis", "catalyst", "low-conviction", "turnaround"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-18",
+    "final_price": 133.99,
+    "return_pct": 10.2,
+    "outcome_label": "Target 1 hit at $130",
+    "note": "INTC surged +10.6% on June 18 (from $121.10 close June 17 to $133.99) after Trump confirmed on Truth Social that Apple has agreed to manufacture chips with Intel via the 18A-P foundry node — the exact bull case outcome described in this thesis. INTC cleared the $130 Target 1 (+7% from $121.56 entry reference) decisively, closing at $133.99. Apple-Intel deal confirms 18A-P commercial viability and positions IFS for additional hyperscaler design wins. T2 ($140) and T3 ($155) remain achievable if named customer contracts follow, but T1 exit recorded here per tracking discipline. Sources: Intel Apple Chip Deal Puts Foundry Ambitions In Focus — Yahoo Finance; Apple Strikes Deal with Intel Foundry Services for Chip Production in the U.S. — TechPowerUp."
+  },
   "levels": {
     "entry_low": 115.0,
     "entry_high": 125.0,

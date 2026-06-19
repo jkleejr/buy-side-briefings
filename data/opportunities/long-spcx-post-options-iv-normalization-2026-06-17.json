@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "1-3 weeks",
-  "current_price": 201.80,
+  "current_price": 174.90,
   "entry": "Enter $190-205 on Day 2-5 after options debut (June 17-19). SPCX closed at $201.80 on June 16 after an intraday ATH of $225.64 — a 10.5% range on the first day of options trading. The Day-1 pattern confirms the prior brief's call: IV on a newly-listed options chain opens at elevated levels, producing artificial volatility that resolves over 3-5 sessions. The $190-205 zone is the post-IV-normalization entry. REQUIRED: do NOT buy SPCX naked — pair the position with a July $175 put (or equivalent 12-15% OTM protection) to cap the downside in a still-volatile options environment. Scale: 70% entry at $193-202 on a stabilization session; 30% add on any dip to $190-195 that closes in the upper 40% of range. Do NOT initiate above $210 on Day 2 of options trading.",
   "stop_loss": "$180 daily close (~10% below $200 entry midpoint) — implies SPCX fails to hold the June 15 pre-options-debut support at $192.50, suggesting a structural post-IPO correction rather than temporary IV inflation; or Warsh FOMC June 17 hawkish hike triggers a 5%+ broad equity selloff that compresses SPCX's premium growth multiple; or float fails to normalize within 10 trading days (institutional sellers are distributing, not retail stop-outs)",
   "targets": [
@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-17",
   "expires_at": "2026-07-08",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["SPCX", "SpaceX", "IPO", "options", "IV-normalization", "post-debut", "event", "large-cap"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-18",
+    "final_price": 174.90,
+    "return_pct": -13.3,
+    "outcome_label": "Stop triggered at $180",
+    "note": "SPCX closed at $174.90 on June 18 — $5.10 below the $180 daily close stop. Despite a +1.91% Nasdaq session driven by the Iran deal, the Warsh hawkish regime compressed the 84x-revenue multiple. Bloomberg confirmed 'SpaceX (SPCX) Share Price Extends Two-Day Drop a Week After Largest-Ever IPO.' IV normalization thesis was overwhelmed by rate-repricing. Position exited. Re-entry requires two consecutive closes above $185 on above-average volume, or a $165–175 base with DXY below 99.00 confirmed."
+  },
   "levels": {
     "entry_low": 190.0,
     "entry_high": 205.0,
