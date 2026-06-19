@@ -1,0 +1,140 @@
+{
+  "routine": "markets",
+  "date": "2026-06-19",
+  "window": "morning",
+  "generated_at": "2026-06-19T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Juneteenth Pause; DXY Rising to 100.75; BTC Stop Day 2; First Decision Day is June 22",
+    "conviction": "low",
+    "horizon": "2–3 days · wait for June 22 open",
+    "rationale_short": "US equity and bond markets are closed today for Juneteenth. The macro regime has NOT improved during the holiday: DXY has risen to 100.75 on Juneteenth FX trading (was 100.15 at June 18 close), moving in the WRONG direction for the NVDA conditional-add gate (DXY <100) and for high-multiple names generally. VIX closed at 17.0 on June 18 — at the gate but not through it. Bitcoin is at $62,520 at 11:03 UTC (Crypto.com live), deep below the $63,500 two-day stop level on Day 2; stop execution is expected by UTC midnight (8 PM ET). The sole bright spot: SK Hynix extended to a third consecutive ATH at ₩2,764,000 (+2.94%) on the June 19 KOSPI, confirming the AI memory supply thesis is unimpaired. Hold all equity positions through the holiday. The first decision day is June 22 (Monday): VIX and DXY prints on June 22 will determine whether the NVDA conditional-add activates and whether the broader macro regime has normalized from the June 17 FOMC shock.",
+    "supporting_data": [
+      {
+        "label": "DXY at 100.75 on Juneteenth FX trading — RISING from June 18 close of 100.15; the NVDA conditional-add gate (DXY <100) and the broader macro regime normalization are both moving in the wrong direction over the holiday weekend; if DXY sustains above 100 on June 22, the post-FOMC regime repair is stalling",
+        "url": "https://tradingeconomics.com/united-states/currency"
+      },
+      {
+        "label": "BTC at $62,520 at 11:03 UTC June 19 (Crypto.com live) — Day 2 of the $63,500 two-day stop clock; $980 below stop with ~13 hours to UTC midnight close; Bitcoin spot ETF weekly outflows hit RECORD $1.72B; Fear & Greed Index at 8 (extreme fear, lowest since April 1); stop execution probability: HIGH",
+        "url": "https://bitcoinfoundation.org/news/crypto-etfs-news/etf-outflows-june-2/"
+      },
+      {
+        "label": "SK Hynix closed at ₩2,764,000 (+2.94%) on June 19 KOSPI — third consecutive ATH; KOSPI crossed 9,000 milestone (first time in history) on June 18; HBM4E samples confirmed shipping 'as soon as this month'; the AI memory supply chain is in structural acceleration independent of US macro regime",
+        "url": "https://www.tradingview.com/symbols/KRX-000660/"
+      },
+      {
+        "label": "SPX June 18 close: 7,500.58 (+1.08%); Nasdaq: 26,683.94 (+1.83%); VIX: 17.0 (-7.8%); 10Y UST: 4.49%; 30Y UST: 4.93% (approaching 5.00% gate); regime: 1 of 3 conditional-add gates cleared (SPX >7,460); VIX and DXY gates remain unmet; June 22 is the first diagnostic session",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-18-2026"
+      },
+      {
+        "label": "US markets closed June 19 — Juneteenth federal holiday; NYSE, Nasdaq, and US bond markets all dark; equity futures halt at noon CT (reopened 5 PM CT); bond markets closed (no new UST yield data); first regular session is Monday June 22",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      },
+      {
+        "label": "Iran ceasefire formal signing ceremony in Switzerland June 19 — Strait of Hormuz reopening timeline intact; Brent ~$78; the macro pathway (oil → CPI → DXY peaks) is structurally valid on a 6–8 week lag; does not immediately relieve the DXY above-100 gate that is blocking the conditional-add frameworks",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-as-US-and-Iran-Reach-Deal-to-Reopen-Hormuz.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7500.58,  "change_pct": 1.08,   "as_of": "2026-06-18T20:00:00Z" },
+    "nasdaq": { "level": 26683.94, "change_pct": 1.83,   "as_of": "2026-06-18T20:00:00Z" },
+    "vix":    { "level": 17.0,     "change_pct": -7.80,  "as_of": "2026-06-18T20:00:00Z" },
+    "ust10y": { "level": 4.49,     "change_bps": 2.7,    "as_of": "2026-06-18T20:00:00Z" },
+    "dxy":    { "level": 100.75,   "change_pct": 0.60,   "as_of": "2026-06-19T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.0,   "trigger_above": 17,   "unit": "",        "status": "AT gate — 17.0 (requires <17 close; no new print until June 22)" },
+    { "name": "30Y Yield",    "value": 4.93,   "trigger_above": 5.0,  "unit": "%",       "status": "approaching — 7 bps from trigger; no new print until June 22" },
+    { "name": "DXY",          "value": 100.75, "trigger_above": 100,  "unit": "",        "status": "BREACHED — rising to 100.75 on Juneteenth FX; WORSENING" },
+    { "name": "SPX vs 7,460", "value": 7500.58,"trigger_below": 7460, "unit": "",        "status": "clear — 40.6pts above floor; 1 of 3 gates met" },
+    { "name": "Brent",        "value": 78.0,   "trigger_above": 97,   "unit": "USD/bbl", "status": "clear — Iran ceasefire limits durability of any rally above $82" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$208.82 last close (June 18); pre-market/extended hours June 19 ~$210.33 (thin Juneteenth liquidity); conditional-add SUSPENDED — VIX 17.0 (at gate, not through), DXY 100.75 (gate moving WRONG direction); 1 of 3 gates cleared; Annual Meeting June 24 at 9 AM PT is the event that can override gate failures; stop $195 unchanged; reassess June 22",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "SK HYNIX",
+      "note": "₩2,764,000 June 19 KOSPI close (+2.94%); third consecutive ATH; intraday high ₩2,891,000; HBM4E samples confirmed shipping 'as soon as this month'; stock ₩74,000 above consensus PT (₩2,690,000); PT revision cycle to ₩3.0M+ underway; unconditional BUY at high conviction; stop raised to ₩2,540,000",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$62,520 live (Crypto.com MCP, 11:03 UTC); Day 2 stop clock active — $980 below $63,500 stop with 13h to UTC midnight close; RECORD $1.72B weekly ETF outflows; IBIT 11-day outflow streak; Fear & Greed at 8 (extreme fear); STOP EXECUTION EXPECTED — exit position; re-entry at $60,000–$62,000 after two confirmed closes above",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$174.90 last close (June 18); $185 daily stop TRIGGERED June 18 (-8.82%); STEP_ASIDE mode; no trading today (Juneteenth); June 20 weekly options expiry tomorrow clears gamma headwind; June 22 open is the diagnostic — $165–$175 + recovering volume = stabilization watch begins; two closes above $185 = re-entry signal",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "~$548 est. (down ~5.44% on June 17 FOMC); if VIX closes below 18 on June 22 AND SPX holds 7,460, META is the highest-beta post-FOMC recovery trade in megacap; entry $545–$560 with stop $530 daily close; self-funded AI capex is the cleanest mega-cap fundamental story post-selloff",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$378 est. (down ~3.79% June 17); Azure AI monetization and Copilot attach rates compound regardless of rate path; best risk-adjusted post-FOMC entry in big tech; buy $375–$390, stop $368 daily close; reassess June 22",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "~$53 est.; Iran ceasefire formally signed June 19 in Switzerland — Hormuz reopening on 30-day timeline; Brent at $78 is structurally below $87–90 embedded in energy equity models; H2 2026 earnings estimate cuts (8–12%) not yet in sell-side numbers; extend short at $53–$56",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TBT",
+      "note": "~$45 est. (2x inverse TLT); maintain hedge — 30Y at 4.93% is 7 bps from the 5.00% gate; Warsh's 'no forward guidance' leaves rate trajectory genuinely uncertain; keep TBT hedge until 30Y falls below 4.75% on a confirmed Warsh dovish signal OR Iran CPI data provides unambiguous relief",
+      "sentiment": "negative"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "Any new equity long before June 22 open",
+      "reason": "US markets are closed today (Juneteenth). Extended-hours and pre-market trading on Juneteenth is thin, unrepresentative, and dominated by algorithmic market-making with no institutional participants. DXY is WORSENING to 100.75 on holiday FX — the macro that actually matters (VIX print, SPX level, DXY daily close) can only be confirmed at the June 22 regular session open. Adding risk before the first institutional session post-FOMC is poor risk management.",
+      "better_entry": "June 22 open — confirm VIX closes below 17 AND DXY holds below 100 before executing any conditional adds; Annual Meeting June 24 is the secondary catalyst window."
+    },
+    {
+      "ticker": "BTC / any crypto long",
+      "reason": "Day 2 stop clock is live. BTC at $62,520, $980 below the $63,500 stop, with 13 hours to UTC midnight close, Juneteenth ETF desks dark, Fear & Greed at 8, and a record $1.72B weekly ETF outflow. Adding crypto long in this environment is adding to a confirmed down-trend on the most adverse liquidity conditions of the cycle. The framework is clear: wait for stop resolution, re-entry at $60,000–$62,000 after two confirmed closes above.",
+      "better_entry": "After BTC produces two consecutive UTC daily closes ABOVE $63,500 AND IBIT posts a daily inflow — both signals must coincide before re-engaging the long."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SK HYNIX (000660.KS)",
+      "direction": "long",
+      "thesis": "Three consecutive ATH closes on above-average volume with HBM4E sample shipments confirmed for June 2026 — the product-generation catalyst is not in analyst models and the PT revision cycle (₩2,690,000 consensus → ₩3.0M+) is underway. The KOSPI 9,000 milestone brings passive Korean ETF inflows as a structural bid. This is the only unconditional BUY in the portfolio — US macro regime (VIX, DXY, FOMC) is irrelevant to the KRX trading session and the HBM4E fundamental timeline.",
+      "entry": "Hold core long; add on any KOSPI pullback to ₩2,680,000–₩2,750,000 (session floor support). Stop raised to ₩2,540,000.",
+      "invalidation": "Samsung announces credible HBM4E market-share gain before SK Hynix completes customer qualification; or DXY sustained above 102 driving foreign selling that overwhelms domestic institutional buying.",
+      "conviction": "high",
+      "horizon": "1–3 months"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "The June 18 50-DMA recovery close ($208.82) and Annual Meeting June 24 are the tactical anchors. The fundamental case ($150B Taiwan commitment, $85B bond orders 3.4x oversubscribed, SK Hynix supply locked through 2030, $91B Q2 consensus, $299 PT average) is intact. The conditional add ($205–$215) re-activates June 22 ONLY if VIX closes below 17 AND DXY holds below 100. DXY at 100.75 on Juneteenth makes this less probable — be patient.",
+      "entry": "Hold existing position through June 22; execute conditional add at $205–$215 ONLY if both VIX <17 AND DXY <100 on same session; Annual Meeting June 24 is the second window regardless of macro gates. Stop $195 daily close.",
+      "invalidation": "DXY above 102 sustained for two sessions; 30Y closes above 5.10%; two consecutive closes below $195.",
+      "conviction": "medium",
+      "horizon": "2–3 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Iran ceasefire formally signed June 19 in Switzerland — Hormuz reopening on 30-day timeline; Brent at $78 is structurally $9–12 below the $87–90 embedded in energy equity models at start of June. H2 2026 earnings estimate cuts (8–12%) have not materialized in sell-side consensus. The Warsh hawkish FOMC accelerates the risk-off environment for commodity equities.",
+      "entry": "Scale short XLE at $53–$56; any Brent bounce to $82–$84 on mine-clearance timeline delays is the better short entry. June 22 open is the next sizing decision.",
+      "invalidation": "Iran deal collapses or Hormuz clearance delayed beyond 60 days; Brent closes above $90 on two consecutive sessions.",
+      "conviction": "medium",
+      "horizon": "3–5 weeks"
+    }
+  ],
+  "bear_case": "Three of five macro regime gates remain problematic heading into June 22: DXY at 100.75 (worsening on Juneteenth, not improving), VIX at 17.0 (at gate but not through it), and 30Y at 4.93% (7 bps from the 5.00% trigger). Warsh's 'no forward guidance' posture means any FOMC-adjacent communication event (June 22–26 Fed speaker calendar) can re-accelerate hawkish repricing without a clear dovish signal to anchor expectations. The BTC stop execution (Day 2 active at $62,520) is a risk-sentiment barometer: if the largest liquid risk asset can't hold $63,500 on Day 2 while Juneteenth ETF desks are dark and the Iran ceasefire is fully in effect, the Fed hawkish regime is more durable than the equity recovery from June 18 implied. If SPX opens June 22 below 7,460 (the regime floor), the BUY formally reverts to STEP_ASIDE and position sizing must be reduced across the portfolio. The 30Y approaching 5.00% is the most dangerous near-term trigger — a sustained breach simultaneously voids NVDA's conditional-add framework, compresses SPCX's multiple further, and generates institutional equity-to-bond reallocation headwinds.",
+  "body_mdx": "data/briefings/markets/2026-06-19-morning.mdx"
+}

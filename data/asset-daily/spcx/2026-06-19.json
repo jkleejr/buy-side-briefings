@@ -1,0 +1,129 @@
+{
+  "asset": "spcx",
+  "symbol": "SPCX",
+  "name": "SpaceX",
+  "date": "2026-06-19",
+  "generated_at": "2026-06-19T11:30:00Z",
+  "is_seed": false,
+  "currency_symbol": "$",
+  "day_winner": "flat",
+  "day_summary": "Juneteenth — US equity markets closed. No SPCX trading. SPCX is in STEP_ASIDE mode following the June 18 stop trigger at $174.90 (−8.82% on Day 5 post-IPO). The $185 daily close stop defined in the entry framework was triggered $10.10 below the threshold — the framework is unambiguous: exit position, do not re-enter until two consecutive daily closes above $185 on above-average volume. The Juneteenth holiday creates a 3-day gap (June 19–21) with no equity trading before the June 22 (Monday) reassessment session. Key context during the holiday: (1) No new SPCX price data — last official close $174.90 (June 18); (2) Macro: DXY at 100.75 on Juneteenth FX trading (worsening from 100.15) — the highest-multiple name in the US market (84x 2025 revenue) remains most exposed to rate-discount compression; (3) June 20 weekly options expiry resolves tomorrow — the $195 max-pain structure expires (well above $174.90), clearing the gamma headwind; (4) UFO ETF passive bid still in the 2–4 week window post-IPO (Day 5 to today), but decelerating as the MSCI rebalancing approaches completion. The reassessment window opens June 22: if SPCX opens at $165–$175 on June 22 with recovering volume (above 150M shares), the 3–5 session stabilization watch begins.",
+  "long_pnl": "IPO allocants from $135 are +29.6% at $174.90 — still well in the money with no stop; FOMC-dip buyers from $187–$192 on Days 4–5 are 6–9% offside and have exited per the $185 stop framework; the entry-zone framework ($190–$200) correctly sized the position (50% with put hedge) limiting maximum loss to the defined-risk structure",
+  "short_pnl": "best 2-day post-IPO payoff: Days 4–5 combined −13.3% total decline from Day 3 ATH ($225.64) to June 18 close ($174.90 = −22.5%); Jim Chanos and ex-Nasdaq-chief warnings validated; borrow availability improving means the institutional short book can now scale; stop trigger at $174.90 removes the 'forced exit' cover that the long side provided",
+  "decision": {
+    "action": "step_aside",
+    "conviction": "high",
+    "horizon": "reassessment — wait for June 22 open at $165–$175",
+    "rationale": "STEP ASIDE at HIGH conviction. The $185 daily close stop was triggered at $174.90 on June 18 — $10.10 below the defined threshold. Position is exited. No SPCX trading today (Juneteenth). Framework for re-entry: (1) Monitor June 22 opening price — if SPCX opens above $165 with recovering volume, begin 3–5 session stabilization watch; (2) If SPCX opens below $165 on June 22, the correction is extending and $150 is next (do not catch the falling knife); (3) Re-engage long only after TWO CONSECUTIVE daily closes above $185 on above-average volume — this is the confirmation that the post-stop base has formed; (4) New stop for any re-entry: $165 daily close (replaced the $185 stop which is now resistance, not support); (5) June 20 weekly options expiry clears the $195 max-pain structure — July options at ~55% IV are the preferred hedge for any re-entry. Do not add any SPCX long before June 22 open assessment."
+  },
+  "snapshot": {
+    "price": 174.90,
+    "change_pct": 0.0,
+    "change_abs": 0.0,
+    "prev_close": 174.90,
+    "day_low": 174.90,
+    "day_high": 174.90,
+    "week52_low": 135.00,
+    "week52_high": 225.64,
+    "volume": "0 (US market closed — Juneteenth; last official close $174.90 June 18 — $185 stop triggered)",
+    "market_cap": "~$2.4T (based on June 18 close $174.90, fully diluted)",
+    "extra": [
+      { "label": "Last official close (June 18 US session)", "value": "$174.90 (-8.82% from June 17 close $191.82) — $185 STOP TRIGGERED", "tone": "down" },
+      { "label": "US market status", "value": "CLOSED — Juneteenth federal holiday; no SPCX trading; reopens June 22 (Monday)", "tone": "neutral" },
+      { "label": "Position status", "value": "STEP_ASIDE — $185 daily close stop triggered June 18; framework requires exit; no re-entry before two consecutive closes above $185 on volume", "tone": "down" },
+      { "label": "vs Day 3 ATH ($225.64)", "value": "-22.5% from post-IPO peak", "tone": "down" },
+      { "label": "vs IPO price ($135)", "value": "+29.6% — IPO allocants still well in the money; structural long floor intact", "tone": "up" },
+      { "label": "DXY (Juneteenth FX trading)", "value": "100.75 — worsening from 100.15; highest-multiple name most exposed to rate-discount compression; DXY above 100 is adverse for 84x-revenue SPCX", "tone": "down" },
+      { "label": "June 20 weekly options expiry", "value": "TOMORROW — $195 max pain clears; the gamma headwind (BTC: below max pain, dealers selling to hedge) expires; July options at ~55% IV are the next hedge vehicle for any re-entry", "tone": "neutral" },
+      { "label": "P/Revenue (2025 ~$18.7B rev est.)", "value": "~84x at $174.90 — still the highest valuation multiple in the US market; multiple compression risk remains the primary structural bear concern", "tone": "down" }
+    ]
+  },
+  "positioning": {
+    "iv": 55,
+    "iv_note": "IV stabilized at ~52–58% after the June 18 spike (from ~52% pre-session to ~58% post-$174.90 close). Tomorrow's June 20 weekly expiry resets the options structure: the $185–$195 June puts that were the recommended hedge are well in the money and will expire with P&L; July options at ~52–55% IV will be the new hedge instrument for any re-entry at $165–$175. At $174.90, a July $165 put (new stop-protection level) would cost approximately $8–10 (estimated at current IV), providing defined downside for a re-entry size between now and July expiry.",
+    "put_call": 1.20,
+    "short_interest": "borrow availability continuing to improve on Day 6+ post-IPO — options remain the primary short vehicle but the borrow market is now normalizing; the 'missing shorts skewed the debut run' thesis from StockTwits analyst is tracking; P/C above 1.2 confirms options market has moved to firmly net-bearish; as borrow availability improves and IPO lock-up mechanics fade, the short book can scale toward 3–5% of float (up from near-zero at IPO)",
+    "max_pain": "$195 (June 20 weekly expiry — TOMORROW; SPCX is $20 below max pain; after tomorrow's expiry, this gamma headwind CLEARS and July expiry becomes the new options reference frame; resets at a lower strike, removing the $195 dealer-hedge selling pressure)"
+  },
+  "what_traders_are_doing": "Stop triggered — framework is clear. The professional playbook on Juneteenth: (1) IPO allocants from $135 are +29.6% and have no defined stop — they hold through the volatility and wait for September 2 first earnings print; (2) Days 4/5 FOMC-dip buyers ($187–$192 zone) have exited per the $185 stop; (3) Shorts are holding through the Juneteenth weekend — no covering incentive with DXY at 100.75, 84x revenue multiple, and MSCI passive bid decelerating; (4) June 22 is the diagnostic session: SPCX at $165+ with recovering volume = begin stabilization watch; SPCX breaking $165 = correction extending, next test $150. The next structural catalyst (beyond the stabilization base) is the September 2 first earnings print — that's the event where Starlink subscriber count, Starship progress, and Cursor AI revenue are first disclosed and either validate or break the $2.4T market cap.",
+  "news": [
+    {
+      "label": "Juneteenth — no SPCX trading; US equity markets closed; SPCX in STEP_ASIDE mode after $185 daily close stop triggered at $174.90 on June 18 (−8.82% Day 5 post-IPO); reassessment session is June 22 (Monday); next structural catalyst is September 2 first earnings print",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "source": "NYSE",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "SPCX last close $174.90 on June 18 — Day 5 post-IPO; $185 stop triggered $10.10 below threshold; two-day post-IPO decline extended to -22.5% from Day 3 ATH ($225.64); Bloomberg: 'Share Price Extends Two-Day Drop a Week After Largest-Ever IPO'; IPO allocants from $135 still +29.6%",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-18/spacex-shares-waver-after-posting-first-decline-since-ipo",
+      "source": "Bloomberg",
+      "sentiment": "negative"
+    },
+    {
+      "label": "DXY at 100.75 on Juneteenth FX trading — rising from June 18 close of 100.15; SPCX at 84x 2025 revenue ($18.7B est.) is the highest-multiple name in the US market and the most exposed to discount-rate compression; DXY above 100 is the regime that makes the Chanos 94x-revenue valuation thesis most dangerous",
+      "url": "https://tradingeconomics.com/united-states/currency",
+      "source": "Trading Economics",
+      "sentiment": "negative"
+    },
+    {
+      "label": "June 20 weekly SPCX options expiry tomorrow — $195 max pain clears (SPCX closed $20 below max pain); the dealer gamma selling pressure that amplified the June 18 decline expires tomorrow; July options at ~52–55% IV become the hedge vehicle for any re-entry; the gamma headwind is temporary and ends at 4 PM ET tomorrow",
+      "url": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-drops-after-breaking-3-day-winning-streak-124809291.html",
+      "source": "Yahoo Finance",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Chanos short thesis: SPCX at ~84x 2025 revenue (at $174.90) with net losses; borrow availability improving post-IPO; StockTwits analyst: 'Locked-Up Shares And Missing Shorts Skewed Debut Run' — the mechanical short-constraint that drove Days 1–3 is fading as IPO borrow normalizes; short thesis gaining traction as MSCI passive bid decelerates",
+      "url": "https://stocktwits.com/news-articles/markets/equity/spcx-first-post-ipo-drop-locked-shares-missing-shorts-analyst/cZKjVTaR7eL",
+      "source": "StockTwits",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SpaceX Cursor/Anysphere AI acquisition ($60B stock) confirmed — Cursor coding assistant with 1M+ developer users; adds a recurring-software-revenue layer to the infrastructure franchise; this is the bull catalyst that counterbalances the Chanos valuation argument; September 2 first earnings print will provide the first disclosure of Cursor revenue contribution",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261972394-spacex-stock-forecast-spcx-falls-from-225-to-206-is-the-rally-running-out-tradingkey",
+      "source": "TradingKey",
+      "sentiment": "positive"
+    },
+    {
+      "label": "UFO ETF passive bid (SpaceTitan / ProcureAM) still in 2–4 week MSCI rebalancing window — Day 6 post-IPO; passive bid is decelerating but not exhausted; the June 22 volume data will reveal whether institutional buying has returned or the passive bid is the last marginal buyer; sustained volume above 150M shares/day on June 22 = stabilization signal",
+      "url": "https://www.stocktitan.net/news/UFO/procure-space-etf-ufo-adds-space-x-following-vetta-fi-space-index-drk98bzuc45o.html",
+      "source": "StockTitan / ProcureAM",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Step aside — reassessment pending June 22. The $185 stop was triggered at $174.90; the framework requires exit. June 22 is the first diagnostic: (1) SPCX opens $165–$175 with recovering volume → begin 3–5 session stabilization watch; new stop $165, July put hedge; (2) SPCX opens below $165 → correction extending, next test $150–$160, no action until $150 holds on two sessions; (3) SPCX opens above $185 on gap-up (unlikely given macro) → two-day recovery confirmation needed before re-entry. The June 20 weekly expiry (tomorrow) clears the $195 gamma headwind, giving June 22 a cleaner technical slate. Do not catch the falling knife — disciplined stabilization watching is the playbook.",
+    "long_term": "Generational franchise unchanged. Starlink 5M+ subs growing ~40% annually, Starship, Starshield, Cursor AI ($60B), and the June 12 largest-ever IPO at $135 ($75B raise) define a unique infrastructure-technology franchise. At $174.90 and ~84x 2025 revenue, the valuation is still extreme but compressed from the Day 3 peak of ~94x. September 2 first earnings print is the fundamental anchor: Starlink subscriber count, Starship launch cadence, Cursor AI revenue, and Starshield contract disclosures will either validate or reset the $2.4T market cap. December 9 lock-up expiry is the first major float expansion event. Patient capital at $165–$175 (properly hedged with July puts) is a better structural entry than $190–$200 at IPO launch."
+  },
+  "bull_case": [
+    "June 20 weekly options expiry tomorrow — the $195 max-pain gamma headwind that created mechanical selling pressure below $195 expires at 4 PM ET; June 22 session starts with a clean options slate; this removes one of the three structural headwinds that drove the Day 5 selloff (alongside FOMC hawkish repricing and MSCI bid deceleration).",
+    "Iran ceasefire in effect — Hormuz reopening within 30 days limits DXY rally durability (oil lower → CPI relief → rate-hike rethink → DXY peaks); SPCX's most important near-term macro headwind (DXY above 100 compressing a 84x-revenue multiple) has a medium-term counter-force that makes the current level a better entry than $190–$200.",
+    "MSCI passive bid still in 2–4 week window (Day 6 post-IPO) — passive index rebalancing typically runs 2–4 weeks; if volume recovers above 150M shares on June 22, the MSCI bid is still active and the stabilization thesis is intact; IPO allocants from $135 (+29.6%) have no stop and remain as a structural long floor below $175.",
+    "SpaceX Cursor/Anysphere acquisition ($60B) adds an AI software revenue layer not in the IPO prospectus — recurring developer-tool revenue from 1M+ Cursor users is a new fundamental driver that analysts have not yet incorporated into their models; September 2 earnings is the first opportunity to disclose this contribution."
+  ],
+  "bear_case": [
+    "$185 stop triggered at $174.90 — the framework's own risk management exited the position; a stop trigger after a failed entry ($190–$200 zone) is the clearest technical signal that the near-term thesis is wrong; the next test is whether $165 holds or the correction extends to $150–$160 before the first earnings anchor (September 2).",
+    "DXY at 100.75 on Juneteenth FX trading — the highest-multiple name in the US market (84x revenue, net losses) remains most exposed to Warsh's hawkish dots; if DXY holds above 100 through June 22, the FOMC discount-rate compression on SPCX's multiple continues; a single Warsh hawkish speech between June 22–26 could re-accelerate the selloff.",
+    "MSCI passive bid decelerating — Day 6 post-IPO brings the structural forced-buyer closer to exhaustion; if June 22 volume falls below 100M shares, the passive bid has run its course and the next marginal buyer is retail, not institutional; retail-driven floors are weaker than institutional-driven floors.",
+    "First post-IPO earnings September 2 — SPCX must disclose the actual Starlink subscriber count, Starship cadence, and Cursor AI contribution against a $2.4T market cap (84x revenue); if any metric disappoints versus the implied expectations, the correction from $174.90 has further room to go; the June–August period before earnings is the highest-uncertainty window."
+  ],
+  "key_levels": [
+    { "label": "Street-high analyst PT (Zephirin Group Buy)", "level": "$310", "kind": "resistance" },
+    { "label": "Day-3 intraday ATH (June 16)", "level": "$225.64", "kind": "resistance" },
+    { "label": "Day-4 session high (pre-FOMC peak)", "level": "$213.80", "kind": "resistance" },
+    { "label": "$200 round number — recovery above $200 needed before any re-engagement consideration", "level": "$200", "kind": "resistance" },
+    { "label": "$185 — STOP TRIGGERED; confirmed resistance; two consecutive closes above required for re-entry signal", "level": "$185", "kind": "resistance" },
+    { "label": "Day 5 session high (June 18 US session)", "level": "$188.41", "kind": "resistance" },
+    { "label": "Confirmed Day 5 close — last official price; step_aside mode", "level": "$174.90", "kind": "pivot" },
+    { "label": "Day 5 session low (June 18 US session)", "level": "$172.11", "kind": "support" },
+    { "label": "★ Reassessment zone — if SPCX opens June 22 in this range with recovering volume, begin 3–5 session stabilization watch; new stop for any re-entry: $165 daily close", "level": "$165–$175", "kind": "support" },
+    { "label": "IPO debut close", "level": "$161", "kind": "support" },
+    { "label": "Knife-catch danger zone — do not enter before confirming $165 holds on two sessions", "level": "$150–$160", "kind": "support" },
+    { "label": "IPO offer price — ultimate support; below this = IPO thesis broken", "level": "$135", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-20", "label": "June weekly SPCX options expiry — $195 max pain expires (SPCX is $20 below); after expiry, the $195 gamma headwind clears; July options at ~52–55% IV become the preferred hedge for any re-entry; gamma reset allows June 22 to start with a clean technical slate", "importance": "medium" },
+    { "date": "2026-06-22", "label": "Monday June 22 — first post-Juneteenth session; the diagnostic: if SPCX opens $165–$175 with recovering volume (>150M shares), start stabilization watch; if opens below $165, correction extending and $150 is next; two consecutive closes above $185 remain the re-entry trigger", "importance": "high" },
+    { "date": "2026-09-02", "label": "First post-IPO earnings (approx.) — Starlink sub count, Starship launch revenue, Cursor AI contribution, Starshield contracts; the fundamental anchor event that either validates or resets the $2.4T market cap thesis; the most important single event between now and year-end", "importance": "high" },
+    { "date": "2026-12-09", "label": "180-day insider lock-up expiry — first major float expansion from ~4% to potentially 9–14%; definitive end to the thin-float mechanics that drove Days 1–3; the supply event that permanently normalizes the bid/ask spread and short interest", "importance": "medium" }
+  ]
+}
