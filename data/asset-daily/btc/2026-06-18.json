@@ -3,123 +3,124 @@
   "symbol": "BTC",
   "name": "Bitcoin",
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T11:30:00Z",
+  "generated_at": "2026-06-19T01:30:00Z",
   "is_seed": false,
   "day_winner": "bears",
-  "day_summary": "Bitcoin is trading at $64,145 as of 11:01 UTC June 18 — down -0.57% from yesterday's $64,509 close — in a session defined by post-FOMC ETF redemption pressure and a DXY that has now crossed 100 for the first time since the Iran deal. Today's range so far: $63,689.75–$64,814.27, confirming the $63,500–$64,000 demand shelf is holding but not generating a bullish impulse. The critical data point from June 17's close: spot Bitcoin ETFs bled a combined $82M in a single session — BlackRock's IBIT shed $31M and ARKB lost $44M, with only Fidelity's FBTC bucking the trend at +$14M inflows. These are the first significant IBIT outflows of the cycle, meaning the flagship institutional product is no longer absorbing supply. Today's June 18 candle (11 AM UTC partial) shows volume at $87.8M — well below the $337M June 17 24h total — suggesting a quieter session ahead of Juneteenth. The $63,500 two-day daily-close stop has NOT been triggered: the two-session window requires two consecutive UTC daily closes below $63,500, and yesterday's close was $64,509. Today is the first day of the two-day clock — if BTC closes below $63,500 at 11:59 PM UTC tonight, the second test comes June 19 (a US market holiday but crypto trades 24/7).",
-  "long_pnl": "longs from the June 15 re-entry at $65–$66K are ~2.0–2.5% offside at $64,145; the $63,500 two-day close stop is intact on day one; ETF outflows are a headwind but LTH absorption ($125K BTC in June) remains the structural counter-bid",
-  "short_pnl": "collecting on the FOMC thesis — BTC is below the $65K re-risk trigger for the third consecutive day; ETF outflows from IBIT are the first institutional capitulation signal; the $63,500 stop is the key level — break it on two closes and shorts add to size",
+  "day_summary": "Bitcoin closed the June 18 UTC day at $62,952.75 — down -2.41% from the June 17 UTC close of $64,509.39 — decisively breaching the $63,500 two-day close stop level that defined the thesis. The full-session range was $62,255.77–$64,814.27, with the high reached early in the session (pre-US open) and BTC selling off steadily through the US afternoon in contrast to the S&P 500 (+1.08%) and Nasdaq (+1.91%) Iran-deal rally. This equity/crypto divergence is the session's defining signal: equities traded the Iran geopolitical relief while BTC traded Fed policy, and those are two very different risks. DXY held at 100.15 despite oil's -5% Brent crash, signaling the Fed hawkish pricing (9/18 dot-plot members projecting 2026 hikes) is more durable than the oil-disinflation trade would suggest. The $62,255.77 intraday low tested a new cycle low for the post-FOMC window, and the UTC midnight close at $62,952.75 confirms Day 1 of the two-day stop clock is TRIGGERED. If BTC closes below $63,500 on the June 19 UTC day (midnight-to-midnight UTC — crypto trades 24/7 through the Juneteenth US holiday), the stop executes and the long position exits. Note: live price at time of this brief generation (01:04 UTC June 19) is $63,093, trending slightly above the UTC close — watch overnight closely.",
+  "long_pnl": "longs from the June 15 re-entry at $65–$66K are approximately 5% offside at the UTC close of $62,952; the $63,500 two-day close stop has been triggered on Day 1; the long thesis is now in its final 24 hours — Day 2 determines whether the stop executes; urgency is maximum",
+  "short_pnl": "bears collected a clean -2.41% on June 18 UTC day despite the broader equity Iran-deal rally — the equity/crypto divergence is a bear thesis confirmation; the $62,255 intraday low tested new post-FOMC lows; Day 1 stop clock trigger is the first step toward full thesis validation",
   "decision": {
     "action": "hold",
     "conviction": "low",
-    "horizon": "24–48 hrs · post-FOMC",
-    "rationale": "HOLD at low conviction. BTC is below the $65,000 re-risk trigger for the third consecutive day, and yesterday's ETF data showed the first significant IBIT outflows of the cycle ($31M from BlackRock) — a new bearish data point. However, the $63,500 two-day stop has not been triggered: yesterday's close was $64,509 and today's low ($63,689) is still above the stop level. The 8-of-9 post-FOMC pattern projects the real test in the 7 days following the meeting (June 17–24); we are on day 2. Two conditions resolve the hold: (1) BTC reclaims $65,000 on a UTC daily close → upgrade to BUY; (2) two consecutive UTC daily closes below $63,500 → trigger stop, exit position. The Juneteenth long weekend (June 19 US holiday) means thin liquidity Friday-Saturday; crypto-native vol spikes on no-bid conditions. Do NOT add into this setup — minimum position sizing, stop unchanged at $63,500 two-consecutive-close basis."
+    "horizon": "24 hrs CRITICAL — stop clock Day 1 triggered",
+    "rationale": "HOLD with MAXIMUM URGENCY at low conviction. The June 18 UTC daily close at $62,952.75 triggered Day 1 of the two-day close stop mechanism. The framework is unambiguous: two consecutive UTC daily closes below $63,500 = STOP EXECUTES, EXIT POSITION. Day 2 is June 19 UTC (the Juneteenth US holiday — US ETF desks dark, but crypto trades 24/7). Two scenarios for June 19 UTC close: (1) BTC recovers to a UTC midnight close ABOVE $63,500 → Day 1 stop clock resets, HOLD reprieved; (2) BTC closes below $63,500 a second consecutive UTC midnight → STOP EXECUTES, exit full position, reassess re-entry at $60,000–$62,000. The Juneteenth weekend introduces maximum adverse-gap risk: thin US ETF desk liquidity, no institutional bid coordination, and macro news (Iran deal progress, Fed speakers) prints into no-bid conditions. Do NOT add any size in this environment. Maintain minimum position until Day 2 resolution. If the stop triggers on June 19, the next re-entry level is $60,000–$62,000 on confirmation of a daily close reclaim — not a knife catch."
   },
   "snapshot": {
-    "price": 64145,
-    "change_pct": -0.57,
-    "change_abs": -364,
+    "price": 62952.75,
+    "change_pct": -2.41,
+    "change_abs": -1557,
     "prev_close": 64509,
-    "day_low": 63689.75,
+    "day_low": 62255.77,
     "day_high": 64814.27,
     "week52_low": 48200,
     "week52_high": 98600,
-    "volume": "~$88M partial candle (vs $337M June 17 24h); lower volume expected — Juneteenth-eve US markets",
-    "market_cap": "~$1.27T",
+    "volume": "~4,809 BTC (~$302.8M 24h volume; above the June 17 $337M 24h average on a sell day — active distribution)",
+    "market_cap": "~$1.245T",
     "extra": [
-      { "label": "From ATH (~$115K)", "value": "−44.2%", "tone": "down" },
-      { "label": "vs $65K re-risk trigger", "value": "−1.3% (below trigger, 3rd consecutive day)", "tone": "down" },
-      { "label": "Live price (Crypto.com 11:01 UTC)", "value": "$64,145.47", "tone": "neutral" },
-      { "label": "IBIT ETF outflows June 17", "value": "−$31M (first significant IBIT outflow of cycle)", "tone": "down" },
-      { "label": "Fear & Greed", "value": "~30 · Fear (worsening post-FOMC)", "tone": "down" },
-      { "label": "DXY", "value": "100.23 (crossed 100 post-FOMC)", "tone": "down" }
+      { "label": "UTC daily close (June 18 midnight UTC)", "value": "$62,952.75 — below $63,500 two-day stop; Day 1 triggered", "tone": "down" },
+      { "label": "Live price at 01:04 UTC June 19", "value": "$63,093 (Crypto.com MCP) — slightly above UTC close; watch overnight", "tone": "neutral" },
+      { "label": "vs $65K re-risk trigger", "value": "−3.2% (below trigger, 4th consecutive day)", "tone": "down" },
+      { "label": "vs $63,500 two-day stop", "value": "BREACHED on Day 1 — UTC close $62,952.75; Day 2 (June 19 UTC) is CRITICAL", "tone": "down" },
+      { "label": "Equity/crypto divergence June 18", "value": "SPX +1.08%, Nasdaq +1.91% on Iran deal; BTC -2.41% — BTC is trading Fed policy, not geopolitical relief", "tone": "down" },
+      { "label": "IBIT ETF outflows June 17", "value": "−$31M (first significant IBIT outflow of cycle; June 18 data pending)", "tone": "down" },
+      { "label": "Fear & Greed", "value": "~28 · Fear (worsening; divergence from equity markets in the Iran-deal session is a sentiment tell)", "tone": "down" },
+      { "label": "DXY", "value": "100.15 (held above 100 despite Brent -5% — Fed hawkish pricing dominates the dollar)", "tone": "down" }
     ]
   },
   "positioning": {
-    "iv": 58,
-    "iv_note": "DVOL remains elevated at ~58% post-FOMC. The vol surface is not compressing as cleanly as equity vol because the 8-of-9 post-FOMC weakness pattern keeps tail risk priced in. If BTC fails to reclaim $65K within 48 hours, DVOL could re-expand to 65–70% as the structural rate-hike narrative builds. The June 20 Deribit weekly expiry (max pain ~$64,000) creates a natural near-term support floor — positions expire Friday and dealers will have less gamma pressure afterward.",
-    "put_call": 1.02,
-    "short_interest": "perp funding turned slightly negative — the levered long book is still de-leveraging; P/C rising above 1.0 for the first time since the Iran-deal rally means the options market has flipped to net-bearish; ETF outflows ($82M combined June 17) confirm the institutional selling is not hedged but actual redemptions",
-    "max_pain": "~$64,000 (June weekly options expiry Friday June 20; crypto exchanges do not observe Juneteenth)",
-    "notable_flow": "Two key flows on June 17 that define the June 18 setup: (1) BlackRock IBIT lost $31M in redemptions — first significant daily outflow from the flagship product; ARKB lost $44M; total Bitcoin ETF complex bled $82M on the day. This is a regime change from the 'ETFs absorb all supply' thesis that anchored the $65K support. (2) Long-term holders absorbed 125,000 BTC in June (CoinDesk June 17 data) — but this is a monthly cumulative figure, and daily ETF outflows can overwhelm LTH buying on any given session. The net flow picture is deteriorating at the margin."
+    "iv": 60,
+    "iv_note": "DVOL re-expanded to ~60% on the Day 1 stop-clock trigger — the market is pricing in higher tail risk as BTC diverges from equities in an Iran-deal rally. If BTC closes below $63,500 again on June 19, DVOL could spike to 65–70% as the post-FOMC weakness pattern (8-of-9 meetings) tracks to completion. The June 20 Deribit weekly expiry max pain (~$64,000) is now above the current price — dealer gamma below $64,000 creates a technical overhang, as dealers short $64,000 puts must sell BTC to hedge as price stays below max pain.",
+    "put_call": 1.08,
+    "short_interest": "perp funding turned negative: the levered long book is de-leveraging actively; P/C at 1.08 (above 1.0) confirms the options market has flipped to net-bearish; the combination of negative perp funding + P/C above 1 + UTC close below stop is the weakest technical reading since the June 5 flush",
+    "max_pain": "~$64,000 (June 20 weekly Deribit expiry — crypto does not observe Juneteenth; BTC is now BELOW max pain, creating dealer selling pressure rather than dealer support)",
+    "notable_flow": "Day 1 stop-clock trigger analysis: the June 18 UTC session saw steady distribution from the $64,814 high to the $62,255 low — a $2,559 range compressed into one UTC day on $302.8M volume. The equity/crypto divergence (Nasdaq +1.91% while BTC -2.41%) in an Iran-deal session is the session's most significant data point: the geopolitical tailwind that drove equities was not transmitted to BTC, confirming BTC is currently priced off Fed policy (dollar strength, rate expectations) rather than risk sentiment. June 18 ETF flow data is pending; if IBIT outflows continued from the June 17 pattern ($31M), this would be the 3rd signal of the 5-session reassessment threshold."
   },
-  "what_traders_are_doing": "Damage assessment on day 2 post-FOMC. The playbook: minimum position, stop at $63,500, no adds. The ETF outflow data changed the calculus from 'institutional bid is firm' to 'institutional bid is leaking.' The one structural positive is that today's session volume ($88M through 11 AM UTC) is running well below the $337M June 17 average — sellers are not pressing on day 2. The Juneteenth weekend (June 19 US holiday) creates crypto-specific risk: thin liquidity Friday–Saturday, US ETF desks quiet, any macro headline prints into no-bid conditions. Two scenarios play out before June 22: (1) BTC stabilizes above $64,000 and creeps toward $64,500–$65,000 on low vol → improving setup, hold into June 22; (2) BTC breaks below $63,500 on two closes → stop triggers, exit, reassess at $62,000–$63,000.",
+  "what_traders_are_doing": "Day 1 stop clock is live. Maximum focus on the June 19 UTC midnight close (which is 8pm ET June 19). The Juneteenth long weekend creates the highest-asymmetry 24 hours of the cycle: US ETF desks are dark (no institutional bid coordination), macro news flow is high (Iran Hormuz logistics, Fed speakers, PCE preview), and BTC trades 24/7 through it all. Two professional playbooks: (1) Close-watchers: do nothing through Juneteenth, observe the June 19 UTC midnight close, exit if second close below $63,500; (2) Risk managers: reduce to minimum position size NOW (June 18 after UTC close), buy a June 20 $62,000 put as defined-risk hedge against the Day 2 trigger, hold through the holiday. LTH absorption at $125K BTC in June remains the structural counter-bid — but daily ETF outflows are now the dominant marginal flow signal.",
   "news": [
     {
-      "label": "CoinDesk June 18: Bitcoin and ether ETFs lost $111M combined as rate-cut hopes died — IBIT shed $31M (first significant daily outflow for BlackRock's flagship product), ARKB down $44M; only Fidelity FBTC posted inflows (+$14M); marks a potential regime shift from 'ETFs absorb all supply'",
+      "label": "Bitcoin UTC daily close June 18: $62,952.75 — down -2.41% from June 17 UTC close of $64,509.39; Day 1 of the $63,500 two-day close stop triggered; full session range $62,255.77–$64,814.27; BTC diverged from equities (SPX +1.08%, Nasdaq +1.91%) in the Iran-deal session — BTC is trading Fed policy, not geopolitical relief",
+      "url": "https://www.coindesk.com/price/bitcoin",
+      "source": "CoinDesk / Crypto.com MCP",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Fortune June 18 2026: Bitcoin at $63,908 absorbing FOMC fallout while equities rally — 'S&P 500 is up 1.7% and the Nasdaq is up 3.1% on news of the US-Iran peace deal, yet Bitcoin is red. That divergence defines today's crypto market: equities are trading the Iran deal while Bitcoin is trading Fed policy.'",
+      "url": "https://fortune.com/article/price-of-bitcoin-06-18-2026/",
+      "source": "Fortune",
+      "sentiment": "negative"
+    },
+    {
+      "label": "CoinDesk June 18: Bitcoin and ether ETFs lost $111M combined as rate-cut hopes died — IBIT shed $31M (first significant daily outflow for BlackRock's flagship product), ARKB down $44M; only Fidelity FBTC posted inflows (+$14M); June 18 ETF flow data pending — watch for confirmation of continued IBIT outflows",
       "url": "https://www.coindesk.com/tech/2026/06/18/live-markets-bitcoin-and-ether-etfs-lost-usd111-million-combined-as-rate-cut-hopes-died",
       "source": "CoinDesk",
       "sentiment": "negative"
     },
     {
-      "label": "CryptoTimes June 18: Bitcoin dips, altcoins plunge — full impact of June 2026 FOMC on crypto; BTC down -0.57% as DXY crossed 100 post-Warsh press conference; altcoins underperforming BTC by 3–8% on the FOMC hawkish regime repricing; the 'dollar index at 100' level is the primary crypto headwind",
-      "url": "https://www.cryptotimes.io/2026/06/18/bitcoin-dips-altcoins-plunge-full-impact-of-june-2026-fomc-meeting-on-crypto/",
-      "source": "CryptoTimes",
-      "sentiment": "negative"
-    },
-    {
-      "label": "Intellectia AI June 2026 Bitcoin price recovery analysis: BTC has staged a tentative recovery after the FOMC-driven selloff; structural demand from LTH (125,000 BTC absorbed in June) and corporate treasury buying (Strategy) provides the floor; $63,000–$64,000 is the zone where recovery buyers have historically stepped in",
-      "url": "https://intellectia.ai/blog/bitcoin-price-recovery-june-2026",
-      "source": "Intellectia AI",
-      "sentiment": "neutral"
-    },
-    {
-      "label": "Fidelity FBTC leads Bitcoin ETF inflows with $14M on June 17 as market bleeds $82M — FBTC is bucking the broad redemption trend; suggests the Fidelity investor base (more direct crypto-native) is buying the FOMC dip while the BlackRock IBIT base (macro allocators) is reducing exposure",
-      "url": "https://99bitcoins.com/news/bitcoin-btc/fidelity-fbtc-leads-bitcoin-etf-inflows-post-fomc/",
-      "source": "99Bitcoins",
-      "sentiment": "positive"
-    },
-    {
-      "label": "Iran ceasefire digitally signed June 17 — both presidents confirmed; Strait of Hormuz reopening within 30 days; risk-on tailwind for hard assets; the direct macro pathway: Hormuz open → oil lower → CPI relief → DXY peaks → BTC floor established; near-term DXY at 100.23 still the headwind, but the medium-term trajectory changes",
-      "url": "https://www.rappler.com/world/middle-east/us-iran-presidents-sign-ceasefire-deal-june-2026/",
-      "source": "Rappler / Reuters",
-      "sentiment": "positive"
-    },
-    {
-      "label": "DXY at 100.23 on June 18 pre-market (crossed 100 post-FOMC) — the dollar-crypto inverse correlation means a DXY at 100 is the same headwind level that preceded every BTC correction in 2024–2025; the Warsh hawkish dot plot is the proximate cause; a single soft CPI print could reverse the DXY above-100 regime",
+      "label": "DXY held at 100.15 on June 18 despite Brent -5% crash from Iran ceasefire — the dollar did NOT fall on the oil-disinflation read because Fed hike pricing (9/18 dot-plot members, median 3.8%) is more durable than one FOMC meeting's data; the BTC/DXY inverse correlation means the dollar headwind is persisting longer than the morning thesis assumed",
       "url": "https://tradingeconomics.com/united-states/currency",
       "source": "Trading Economics",
       "sentiment": "negative"
     },
     {
-      "label": "Bitcoin weekly expiry (Deribit/CME) Friday June 20 — max pain ~$64,000; crypto exchanges do not observe Juneteenth; options expiry resolution Friday creates natural bid at $64,000 from dealer delta-hedging; a close near $64,000 Friday would be options-driven confirmation of the demand shelf",
+      "label": "Iran ceasefire MOU formally signed June 18 in France — Hormuz reopening within 30 days; $300B reconstruction plan; Brent crude -5% to ~$78; this is the BTC medium-term bull case (oil → CPI → DXY peaks) but the near-term DXY did not respond as the bull case required",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-as-US-and-Iran-Reach-Deal-to-Reopen-Hormuz.html",
+      "source": "OilPrice.com / Reuters",
+      "sentiment": "positive"
+    },
+    {
+      "label": "June 20 Deribit weekly BTC options expiry — max pain ~$64,000; BTC is now below max pain ($62,952 vs $64,000 max pain); dealers short $64,000 puts must sell BTC to delta-hedge as price stays below max pain (NEGATIVE for BTC unlike the expected supportive dynamic); expiry Friday June 20 (crypto does not observe Juneteenth)",
       "url": "https://www.coinglass.com/etf/bitcoin",
       "source": "CoinGlass / Deribit",
-      "sentiment": "neutral"
+      "sentiment": "negative"
+    },
+    {
+      "label": "Juneteenth US market holiday June 19 — US ETF desks dark; crypto trades 24/7; Day 2 of the two-day stop clock resolves on the June 19 UTC midnight close (8 PM ET June 19); thin no-bid conditions maximize adverse-gap risk from any macro headline; the stop-clock decision is made in the lowest-liquidity window of the cycle",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "source": "NYSE / OCC",
+      "sentiment": "negative"
     }
   ],
   "outlook": {
-    "short_term": "Cautious. BTC is at day 2 of the post-FOMC window — historically the most dangerous 7 days for BTC post-FOMC (8-of-9 meetings see continued weakness). The ETF flow picture deteriorated on June 17 with the first significant IBIT outflows, weakening the 'institutional bid absorbs all supply' thesis. The $63,500–$64,000 demand shelf is holding but not bouncing. Two near-term resolutions: (1) close above $65,000 = thesis restored, upgrade to BUY; (2) two consecutive closes below $63,500 = stop triggers, exit. The Juneteenth weekend (June 19) introduces thin-liquidity risk with crypto trading 24/7 while US ETF desks are dark. June 20 (Friday) weekly options expiry at $64,000 creates a natural anchor for the week.",
-    "long_term": "Framework intact but under greater stress than 48 hours ago. The IBIT outflow data point is the first real test of whether the institutional-access thesis can hold during a hawkish FOMC cycle. Warsh's explicit rejection of forward guidance ('I can't give you any guidance') means the 80% hike probability is not a commitment — a single soft CPI print reverses the DXY above-100 regime and the ETF outflow narrative. LTH absorption of 125,000 BTC in June and Strategy's continued corporate buying are the structural demand anchors that prevent a trend reversal. Medium-term: the Hormuz reopening → oil lower → CPI relief → dollar peaks pathway is the bull case macro sequence."
+    "short_term": "CRITICAL 24 HOURS. Day 1 of the two-day stop clock ($63,500) was triggered on the June 18 UTC close ($62,952.75). Two outcomes: (1) June 19 UTC midnight close ABOVE $63,500 → stop clock resets, thesis reprieved; watch for a recovery bid as the Juneteenth holiday mutes US ETF selling; (2) June 19 UTC midnight close BELOW $63,500 → STOP EXECUTES, exit full position, next re-entry at $60,000–$62,000. The framework is not ambiguous on this. The equity/crypto divergence in the Iran-deal session is the most important June 18 data point — if geopolitical risk relief cannot lift BTC when it lifted the Nasdaq by 1.91%, then BTC's primary headwind (Fed hawkish pricing, DXY at 100) is more dominant than the medium-term bull case macro sequence.",
+    "long_term": "Framework under maximum stress. The IBIT outflow signal (June 17 first significant redemption) combined with the Day 1 stop clock trigger combined with the equity/crypto divergence in a risk-on session represents a three-signal deterioration in the thesis. If Day 2 triggers the stop, the long thesis requires full reassessment: the 'institutional-access thesis' (ETFs absorb all supply) is under its first serious test. The medium-term pathway (Hormuz → oil → CPI → DXY peaks → BTC floor) is still valid but the near-term sequence is running worse than the morning brief projected. Re-entry discipline: $60,000–$62,000 zone on a confirmed daily close, not a knife catch."
   },
   "bull_case": [
-    "Today's session volume through 11 AM UTC ($88M) is running well below the $337M June 17 daily total — sellers are not pressing on post-FOMC day 2; below-average-volume rangebound price action around the demand shelf is the classic 'accumulation at support' pattern.",
-    "Fidelity FBTC posted $14M in inflows on June 17 while the broader ETF complex bled — the crypto-native investor base is actively buying the FOMC dip; this is the demand signal that LTH data alone couldn't provide.",
-    "June 20 weekly options expiry max pain at $64,000 creates dealer buying pressure below current price into Friday's close — even without any directional bid from macro, the options structure provides a natural floor into the weekend.",
-    "Iran ceasefire is in effect — the medium-term macro pathway (Hormuz → oil → CPI → DXY peaks) is now more active than before; every day Hormuz stays open is a day the inflationary pressure that justified Warsh's hawkish dots weakens."
+    "June 19 UTC midnight recovery: BTC is at $63,093 at 01:04 UTC (above the UTC close of $62,952) — a mild overnight bid has materialized; if this extends through the Juneteenth US holiday with thin selling pressure (ETF desks dark), BTC could reclaim $63,500 on the June 19 UTC close and reset the stop clock.",
+    "Iran ceasefire medium-term pathway: Hormuz reopening within 30 days → oil structurally lower → CPI relieves July-August → Fed hike probability drops → DXY peaks and reverses below 100 → BTC crypto-specific bid returns; the sequence is in motion even if the near-term DXY hasn't responded yet.",
+    "LTH absorption: 125,000 BTC absorbed by long-term holders in June (CoinDesk data) means the smart-money base is buying every dip; if ETF outflows stabilize, the LTH bid absorbs the marginal supply and the two-day stop never gets Day 2.",
+    "June 20 weekly expiry: even though BTC is below the $64,000 max pain (which creates dealer hedging selling), the expiry RESOLUTION on June 20 clears the options positioning entirely — post-expiry, the June 22 (Monday) session starts fresh without the Deribit gamma headwind."
   ],
   "bear_case": [
-    "BlackRock IBIT shed $31M on June 17 — the first significant daily outflow from the product that defined the 2025–2026 institutional-access bull run; if IBIT outflows continue for 3–5 sessions, the 'institutional bid is structural' thesis requires major reassessment.",
-    "BTC is below the $65,000 re-risk trigger for the third consecutive day — the level has now been failed three times in a row; three consecutive closes below a key support level is a technical regime change from 'pullback' to 'distribution'; the burden of proof is on the bulls.",
-    "DXY at 100.23 + Warsh dropping forward guidance = the policy uncertainty premium is rising in the dollar, which is the primary macro headwind for BTC; if the 10Y Treasury approaches 4.70% and the 30Y tests 5.00%, the institutional BTC allocation rationale (hedge vs. currency debasement) faces its first serious macro stress test since the ETF launch.",
-    "8-of-9 FOMC meetings see BTC decline in the following week (-11% average) — from $64,145, -11% = ~$57,000, well below the $63,500 stop; the post-FOMC window (June 17–24) is the highest-risk 7 days of the macro calendar for BTC."
+    "Day 1 stop clock triggered: two consecutive UTC daily closes below $63,500 exits the position — and the June 19 Juneteenth window (thin liquidity, ETF desks dark) is the highest-risk 24 hours for getting the second close below $63,500; historically, 8-of-9 post-FOMC windows see BTC decline in the 7 days following the meeting; we are on Day 3.",
+    "BTC diverged from a 1.91% Nasdaq rally driven by a major geopolitical catalyst (Iran ceasefire) — if the best possible macro environment (risk-on + oil crash + geopolitical relief) can't lift BTC, the Fed hawkish pricing is so dominant that nothing short of a Fed U-turn can reverse the trend.",
+    "IBIT outflows beginning (June 17 $31M) + perp funding negative + P/C above 1.0: the three-signal bearish positioning composite has fully flipped from the Iran-deal thesis baseline; institutional demand has not simply paused but is actively reversing.",
+    "BTC daily UTC close at $62,952 is -3.2% below the $65,000 re-risk trigger that has not been reclaimed in 4 consecutive days; technical pattern from $64,814 high to $62,255 low in a single session with $302.8M volume is a distribution pattern, not accumulation at support."
   ],
   "key_levels": [
     { "label": "Bull scenario target if $65K reclaimed cleanly", "level": "$70,000", "kind": "resistance" },
     { "label": "Prior resistance / primary re-entry target", "level": "$67,000", "kind": "resistance" },
-    { "label": "★ Strongest resistance — $65,000 re-risk trigger; failed 3 consecutive days; confirmed resistance until a clean daily close above restores support status", "level": "$65,000", "kind": "resistance" },
-    { "label": "Today's session high (partial day, 11 AM UTC)", "level": "$64,814", "kind": "resistance" },
-    { "label": "Yesterday's close / day-1 post-FOMC equilibrium", "level": "$64,509", "kind": "pivot" },
-    { "label": "Live price as of 11:01 UTC June 18 (Crypto.com)", "level": "$64,145", "kind": "pivot" },
-    { "label": "★ Strongest support — $63,500–$64,000 demand shelf: June weekly max pain ($64,000), two-day close stop ($63,500), Strategy corporate treasury buy zone, and LTH accumulation zone all converge within a $500 band", "level": "$63,500–$64,000", "kind": "support" },
-    { "label": "Today's session low (partial day, 11 AM UTC) — tested once; second test is the tell", "level": "$63,689", "kind": "support" },
-    { "label": "Hawkish-FOMC flush target if two-day stop triggers", "level": "$62,000–$63,000", "kind": "support" }
+    { "label": "★ Strongest resistance — $65,000 re-risk trigger; failed 4 consecutive days; confirmed resistance until a clean daily close above restores support status", "level": "$65,000", "kind": "resistance" },
+    { "label": "June 18 session high (early UTC morning, failed to hold)", "level": "$64,814", "kind": "resistance" },
+    { "label": "June 20 weekly Deribit max pain — BTC is NOW BELOW this; creates dealer hedging selling pressure, not support", "level": "$64,000", "kind": "resistance" },
+    { "label": "★ CRITICAL — $63,500 two-day close stop; BREACHED on June 18 UTC close; Day 2 (June 19 UTC midnight close) is the STOP EXECUTION decision", "level": "$63,500", "kind": "pivot" },
+    { "label": "June 18 UTC daily close — confirmed breach of the stop level", "level": "$62,952.75", "kind": "pivot" },
+    { "label": "June 18 intraday low — tested once; if retested on June 19 with a close below, confirms the flush is accelerating", "level": "$62,255.77", "kind": "support" },
+    { "label": "Post-stop re-entry zone if Day 2 triggers: next institutional demand zone", "level": "$60,000–$62,000", "kind": "support" }
   ],
   "catalysts": [
-    { "date": "2026-06-18", "label": "TODAY UTC daily close — if BTC closes above $63,500, day 1 of the two-day stop clock passes safely; if above $65,000, HOLD upgrades to BUY; if below $63,500, day 1 of the two-day stop clock is triggered", "importance": "high" },
-    { "date": "2026-06-19", "label": "Juneteenth US market holiday — US ETF desks dark; crypto trades 24/7; thin liquidity Friday–Saturday creates maximum adverse-gap risk from weekend macro headlines; June 20 Deribit weekly options expiry at $64,000 max pain", "importance": "medium" },
-    { "date": "2026-06-20", "label": "June weekly BTC options expiry (Deribit) — max pain $64,000; expiry resolution creates potential covering rally or continuation; key level for the week's risk management", "importance": "medium" },
-    { "date": "Daily", "label": "Spot BTC ETF daily flow print — IBIT outflows are the new primary risk signal; consecutive days of IBIT outflows above $50M would require the long thesis to be fully reassessed", "importance": "high" },
-    { "date": "2026-06-22", "label": "Monday June 22 open — first US session after Juneteenth; if BTC has held above $63,500 through the weekend, this is the day to reassess adding; if BTC has broken $63,500 on two consecutive closes, the stop has triggered", "importance": "high" }
+    { "date": "2026-06-19 UTC midnight", "label": "CRITICAL: June 19 UTC midnight close (8 PM ET June 19) — Day 2 of the two-day stop clock; if BTC closes below $63,500 a second consecutive UTC day, the long position EXITS per the framework; Juneteenth US holiday (ETF desks dark) creates the thin-liquidity environment where the Day 2 decision is made", "importance": "high" },
+    { "date": "2026-06-20", "label": "June 20 Deribit/CME weekly BTC options expiry — max pain $64,000 (BTC is BELOW this, creating hedging selling pressure into expiry; after expiry, the gamma headwind clears and the June 22 session starts clean)", "importance": "medium" },
+    { "date": "Daily", "label": "Spot BTC ETF daily flow print — if IBIT outflows continue June 18-19 at $20M+ per day, the 3-5 session reassessment threshold is approaching; consecutive IBIT outflows above $50M/day = full thesis review required", "importance": "high" },
+    { "date": "2026-06-22", "label": "Monday June 22 open — if BTC survived Day 2 (June 19 UTC close above $63,500), this is the reassessment session; if the stop triggered, $60,000–$62,000 is the next re-entry level to watch; ETF flows will be the primary signal", "importance": "high" }
   ]
 }

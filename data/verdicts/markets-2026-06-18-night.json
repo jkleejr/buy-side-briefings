@@ -2,7 +2,7 @@
   "routine": "markets",
   "date": "2026-06-18",
   "window": "night",
-  "generated_at": "2026-06-19T01:30:00Z",
+  "generated_at": "2026-06-19T02:00:00Z",
   "is_seed": false,
   "verdict": {
     "code": "hold",
@@ -96,8 +96,8 @@
     },
     {
       "ticker": "BTC",
-      "reason": "BTC slid from $64,881 (June 17 close) to ~$64,000-64,200 on June 18 despite broad risk-on; crypto-specific weakness persists with DXY above 100. IBIT saw first significant outflow ($31M June 17). The Iran deal does not directly benefit BTC the way it benefits equities.",
-      "better_entry": "Clean daily close above $65,000 with DXY confirmed below 99.00; or June 26 PCE cooling catalyst"
+      "reason": "BTC UTC daily close came in at $62,952.75 (Crypto.com MCP confirmed) — down -2.41% while Nasdaq surged +1.91% on the Iran deal. This equity/crypto divergence is the session's defining signal. The $63,500 two-day close stop was BREACHED on Day 1 (UTC close $62,952). Day 2 of the stop clock is June 19 UTC midnight (8pm ET Juneteenth) — if BTC closes below $63,500 a second consecutive day, the long exits. Live price at 01:04 UTC: $63,093.",
+      "better_entry": "June 19 UTC midnight close ABOVE $63,500 (resets clock); or clean daily close above $65,000 with DXY below 99.00. If Day 2 stop triggers: next re-entry at $60,000–$62,000 on confirmed stabilization."
     }
   ],
   "trade_setups": [
@@ -121,14 +121,14 @@
     },
     {
       "asset": "SPCX",
-      "direction": "long",
-      "thesis": "All three blocking conditions from the prior brief framework remain cleared: Iran deal signed, SPCX in entry zone ($190-205), Brent below $82. Execute 50% of intended position Monday June 22 at open with $185 put hedge; add remaining 50% on confirmation that VIX closes below 17 AND SPX holds above 7,480 by Tuesday June 23.",
-      "entry": "50% position Monday June 22 at $190-205; $185 put hedge; stop $185 daily close",
-      "invalidation": "Daily close below $185; Iran deal collapses; VIX spikes above 22 post-holiday",
-      "conviction": "low",
-      "horizon": "3-6 weeks"
+      "direction": "step_aside",
+      "thesis": "STOP TRIGGERED. SPCX closed at $174.90 on Day 5 (June 18), range $172.11–$188.41 — the $185 daily close stop defined in the entry framework was breached by $10.10. The Iran blocker was cleared but the FOMC hawkish repricing of the highest-multiple name in the US market (94x revenue) overwhelmed the geopolitical tailwind. The MSCI passive bid decelerated on Day 5 and improving short-borrow availability introduced natural sellers. Do NOT execute the Monday June 22 entry — the stop level has failed.",
+      "entry": "STEP ASIDE. Re-entry only on: two consecutive daily closes above $185 on above-average volume; or after a 3–5 session stabilization base at $165–$175; next structured entry at $165–$175 with $160 stop and July put hedge",
+      "invalidation": "N/A — already stepped aside per stop trigger",
+      "conviction": "high",
+      "horizon": "reassessment — no position until $185 confirmed as support on two-day close basis"
     }
   ],
-  "bear_case": "Counter-argument: Today's rally is one leg of a relief trade in a structurally hawkish regime — not a regime change. The Fed's dot plot (nine hike projections, 2026 median 3.8%) is unchanged by the Iran deal; the consumer remains robust at +0.9% May retail sales; and DXY at 100+ signals the market is still pricing tighter, not looser, financial conditions. The Iran MOU is a 14-point framework with a 60-day negotiation window and mine-clearance timelines measured in weeks — Iranian domestic political opposition to any deal that includes 'all types' of sanctions removal is real. If negotiations collapse in July, Brent reclaims $90+ and the entire disinflation thesis that justified today's rally evaporates simultaneously with the Fed remaining hawkish. A 3-day Juneteenth weekend is the highest-asymmetry hold of 2026: the information flow (Hormuz logistics, Iranian parliamentary ratification, mine-clearance timelines) is high; the liquidity to respond is zero. SPX 7,500 with a 21.5x forward P/E while 9 FOMC officials project rate hikes is not a cheap entry. Invalidation level: if SPX breaks below 7,460 on Monday's open on Iran deal complications AND DXY pushes above 101.5, HOLD reverts to STEP_ASIDE and the June 18 close was a distribution top, not a regime-recovery confirmation.",
+  "bear_case": "Counter-argument: Today's equity rally is one leg of a relief trade in a structurally hawkish regime — not a regime change. Two post-close developments underscore the bear case. (1) SPCX $185 stop triggered: SpaceX closed at $174.90 (-8.82%), breaching the $185 daily close stop by $10 — the highest-multiple name in the US market could not hold even with the Iran deal cleared and the entry framework active. If a confirmed geopolitical catalyst can't hold SPCX above its stop, the market's appetite for 84x-revenue growth at a hawkish FOMC is limited. (2) BTC UTC close at $62,952 — Day 1 of the two-day stop clock triggered: Bitcoin diverged from a 1.91% Nasdaq rally, closing well below the $63,500 stop level. Crypto is pricing Fed hawkishness; equities priced Iran relief. These are two different risk frameworks coexisting in the same session. The Fed's dot plot (nine hike projections, 2026 median 3.8%) is unchanged by the Iran deal; DXY held 100.15 despite Brent -5%. The Iran MOU has a 60-day negotiation window with mine-clearance timelines measured in weeks — Iranian domestic opposition is real. A 3-day Juneteenth weekend is the highest-asymmetry hold of 2026. Invalidation: if SPX breaks below 7,460 on Monday's open AND DXY pushes above 101.5, HOLD reverts to STEP_ASIDE. If BTC's Day 2 stop triggers on June 19 UTC midnight, the crypto thesis exits.",
   "body_mdx": "data/briefings/markets/2026-06-18-night.mdx"
 }
