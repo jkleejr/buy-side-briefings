@@ -1,0 +1,133 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-06-20",
+  "generated_at": "2026-06-20T11:30:00Z",
+  "is_seed": false,
+  "day_winner": "flat",
+  "day_summary": "Saturday — US equity markets closed. No official NVDA trading. Last confirmed close: $208.82 on June 18 (first close above 50-DMA $206.74 since the FOMC dump). Two constructive weekend developments: (1) DXY has retreated to ~100.23 on weekend FX trading, down from the Juneteenth intraday high of 101.13 and Thursday settlement of 100.79 — the conditional-add gate (DXY <100) is now 23 basis points away, the closest it has been since June 13; (2) BTC spot ETF (IBIT) outflow streak ended — BlackRock's IBIT led $86M in net Bitcoin ETF inflows (bitcoin.com), removing the institutional crypto-selling narrative that was the secondary bearish regime signal. VIX estimated ~16.78 on weekend basis — gate still cleared (<17). Three-gate conditional-add status going into June 22: (1) VIX gate: CLEARED (~16.78, confirmed 16.40 on June 18 close); (2) SPX gate: CLEARED (7,500.58 on June 18); (3) DXY gate: APPROACHING — ~100.23 weekend FX; needs one session close below 100.00. Micron Q3 earnings (week of June 22-25) are the first post-FOMC semiconductor demand read-through — a MU beat-and-raise with strong HBM commentary would catalyze NVDA before the Annual Meeting. NVDA Annual Meeting June 24 at 9 AM PT: Jensen Huang's first post-FOMC public appearance remains the week's primary catalyst and the override event if DXY gate misses on June 22.",
+  "long_pnl": "holders from the June 15–16 add zone ($211–$214) are ~1.0–2.0% offside at $208.82; the technical position (50-DMA recovery intact) and improving macro (DXY declining, IBIT inflows) strengthen the hold thesis; DXY at 100.23 weekend vs 100.79 Thursday means the single remaining gate is improving; Annual Meeting June 24 is the event that can override any residual gate failure",
+  "short_pnl": "bears capped at $208.82 with no new downside data on the weekend; DXY declining from 100.79 to 100.23 is the weekend's worst development for the bear thesis — if DXY confirms below 100 on June 22, the conditional-add activates and a fresh institutional buying wave materializes; Annual Meeting June 24 is the week's primary short-cover risk event",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "48 hours · June 22 gate decision",
+    "rationale": "HOLD at medium conviction. No new trading data (Saturday). The macro regime is IMPROVING over the weekend: DXY declining to ~100.23 (was 100.79 Thursday, 101.13 intraday high Thursday) — the single remaining conditional-add gate is 23 basis points away from clearing. VIX gate is CLEARED (16.40 June 18 confirmed; weekend estimate 16.78, still below 17). SPX gate is CLEARED (7,500.58). The June 22 decision is now the most consequential session of the post-FOMC recovery: if DXY closes below 100.00 on June 22, ALL THREE conditional-add gates clear simultaneously and the $205–$215 add executes immediately. Do NOT add before the Monday DXY confirmation — but the framework is the closest to full activation since June 13. Annual Meeting June 24 (Jensen Huang first post-FOMC public appearance) is the secondary catalyst: if Jensen signals AI capex resilience explicitly, the add triggers regardless of DXY. Stop unchanged at $195 daily close."
+  },
+  "snapshot": {
+    "price": 208.82,
+    "change_pct": 0.0,
+    "change_abs": 0.0,
+    "prev_close": 208.82,
+    "day_low": 208.82,
+    "day_high": 208.82,
+    "week52_low": 140.86,
+    "week52_high": 236.54,
+    "volume": "0 (US equity markets closed Saturday; last official session June 18)",
+    "market_cap": "~$5.07T (based on June 18 close $208.82)",
+    "extra": [
+      { "label": "Last official close (June 18 US session)", "value": "$208.82 (+2.04% from June 17 close $204.65) — first close above 50-DMA $206.74 since the June 17 FOMC dump; technical recovery confirmation remains valid", "tone": "up" },
+      { "label": "DXY (weekend FX update)", "value": "~100.23 — DOWN from Thursday settlement 100.79 and Juneteenth intraday high 101.13; conditional-add gate (DXY <100) is 23 bps away — closest to clearing since June 13", "tone": "up" },
+      { "label": "VIX (weekend estimate)", "value": "~16.78 — gate CLEARED (<17); confirmed June 18 close at 16.40; equity vol remains normalized post-FOMC shock", "tone": "up" },
+      { "label": "SPX gate status", "value": "CLEARED — 7,500.58 on June 18 (7.3% above the 7,460 gate floor); gate is stable", "tone": "up" },
+      { "label": "Conditional-add gates (June 22 checklist)", "value": "VIX <17: CLEARED (~16.78); SPX >7,460: CLEARED (7,500.58); DXY <100: APPROACHING (100.23, was 100.79 Thursday — improving this weekend)", "tone": "up" },
+      { "label": "IBIT Bitcoin ETF outflow streak ENDED", "value": "BlackRock's IBIT led $86M in net Bitcoin ETF inflows (bitcoin.com) — the secondary bearish regime signal (institutional crypto-selling) has reversed; risk appetite improving", "tone": "up" },
+      { "label": "NVDA Annual Meeting (first post-FOMC Jensen public appearance)", "value": "June 24, 9 AM PT (online) — primary catalyst of the week; AI capex, Rubin/Blackwell ramp, shareholder Q&A", "tone": "up" },
+      { "label": "Micron Q3 earnings (week of June 22-25)", "value": "First post-FOMC semiconductor demand read-through; HBM commentary is direct read-through to NVDA AI demand thesis; beat-and-raise = NVDA catalyst", "tone": "neutral" },
+      { "label": "Avg analyst PT (62 analysts)", "value": "$298.93 (+43.1% from June 18 close)", "tone": "up" }
+    ]
+  },
+  "positioning": {
+    "iv": 36,
+    "iv_note": "IV unchanged at ~36% through weekend. July expiry OI building at $215–$230 call strikes — structural bull positioning for the Annual Meeting catalyst. DXY declining toward 100 and IBIT inflows improving risk appetite; if DXY confirms below 100 on June 22 and the conditional-add executes, IV could compress rapidly toward 33–34% as the position uncertainty resolves. Annual Meeting June 24 will generate the week's maximum options activity: watch for unusual call volume above $220 between now and June 24 as a leading institutional signal.",
+    "put_call": 0.66,
+    "short_interest": "~1.0% of float (negligible; no change)",
+    "max_pain": "July expiry — max pain anchored at ~$210–$215; NVDA at $208.82 is just below the OI cluster; dealer mechanics turn supportive if NVDA trades above $210 on June 22 open. No new June expiry overhang (June monthly cleared on June 18).",
+    "notable_flow": "No new options flow on Saturday. The critical pre-Annual-Meeting positioning window opens Monday June 22: watch July expiry call OI at $215–$225 strikes. If call OI at $215–$225 expands meaningfully before the June 24 Annual Meeting (vs June 22 open OI baseline), it signals institutional conviction in the Jensen-Huang-catalyst thesis. The July $210–$215 max pain zone creates positive dealer gamma above $210 — supportive mechanics if NVDA holds above $210 in the first two hours of June 22."
+  },
+  "what_traders_are_doing": "Patience required but the weekend setup is more constructive than Thursday. The macro gatekeeping framework is converging: DXY at 100.23 is 23 bps from the conditional-add trigger. Professional playbook for the 2-day weekend: (1) Track Sunday night DXY futures (5 PM ET Sunday): if DXY opens the week below 100.50, the June 22 gate-clear becomes highly probable; (2) Monitor Friday night post-close IBIT flow data — if IBIT posted a second consecutive inflow day on June 19 (even a small one), the institutional selling reversal is confirmed; (3) On June 22 open: if DXY closes below 100 AND VIX stays below 17 → execute $205–$215 add immediately, stop $195; (4) Annual Meeting June 24: arrive positioned — if Jensen Huang directly addresses AI capex durability in a hawkish rate environment, the stock can gap above $220 before the end of the week.",
+  "news": [
+    {
+      "label": "DXY declining to ~100.23 on weekend FX trading — down from Thursday Juneteenth settlement 100.79 and intraday high 101.13; the conditional-add gate (DXY <100) is 23 basis points away on Saturday morning, improving materially from the Thursday position",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
+      "source": "Yahoo Finance / ICE",
+      "sentiment": "positive"
+    },
+    {
+      "label": "IBIT Bitcoin ETF outflow streak ENDED: BlackRock's IBIT led $86M in net Bitcoin ETF inflows — reversal of the institutional crypto-selling signal that was the secondary bearish regime indicator; risk sentiment improving heading into June 22",
+      "url": "https://news.bitcoin.com/bitcoin-etf-inflows-ethereum-outflows-june-2026/",
+      "source": "Bitcoin.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVIDIA Annual Meeting of Stockholders: June 24, 2026 at 9 AM PT (virtual) — Jensen Huang's first post-FOMC public appearance; AI capex outlook, Vera Rubin/Blackwell ramp guidance, shareholder Q&A; the event that can override any residual macro-gate failure",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-stockholder-meeting-set-for-june-24-individuals-can-participate-online",
+      "source": "NVIDIA Newsroom",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix officially ships 12-layer HBM4E samples: 48GB capacity, 16Gbps per pin, 20%+ power efficiency improvement — NVDA's primary memory supplier through 2030 is executing on the HBM4E roadmap; the AI hardware supply chain is intact; SK Hynix briefly crossed ₩2,000T market cap this week",
+      "url": "https://news.skhynix.com/12-layer-hbm4e-sample/",
+      "source": "SK Hynix Newsroom",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Micron Technology Q3 earnings (expected week of June 22-25) — first post-FOMC semiconductor earnings print; strong HBM demand commentary from MU is a read-through to NVDA AI demand thesis; MU beat-and-raise would catalyze NVDA ahead of the Annual Meeting",
+      "url": "https://finance.yahoo.com/quote/MU/",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "VIX estimated ~16.78 on weekend basis — gate remains CLEARED (<17 threshold); confirmed June 18 close at 16.40; equity vol has normalized from the post-FOMC June 17 spike (was 18.4 on FOMC-day intraday); two consecutive daily closes below 17 on June 22-23 would confirm regime normalization",
+      "url": "https://streetstats.finance/markets/volatility",
+      "source": "StreetStats / CBOE",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Jensen Huang's 18-day Taiwan–South Korea trip: $150B annual Taiwan spending commitment, Korean robotics and AI deals — the supply chain infrastructure for NVDA's next 5 years is being locked in; the FOMC rate path is secondary to the AI capex supercycle confirmation from this trip",
+      "url": "https://nvidianews.nvidia.com/news/latest",
+      "source": "NVIDIA Newsroom",
+      "sentiment": "positive"
+    },
+    {
+      "label": "10Y UST yield drifting to 4.451% on weekend — down from June 18 close of 4.49%; long-end yields easing removes the bond-selloff headwind for rate-sensitive growth equities; 30Y monitoring critical: was 4.93% on June 18, approaching 5.00% gate",
+      "url": "https://fred.stlouisfed.org/series/VIXCLS",
+      "source": "FRED / US Treasury",
+      "sentiment": "positive"
+    }
+  ],
+  "outlook": {
+    "short_term": "Increasingly constructive. The weekend DXY decline to ~100.23 is the most important 48-hour development: from 100.79 Thursday to 100.23 Saturday, the single remaining gate has moved 56 bps closer to clearing without any new US macro data — this reflects FX markets pricing the Iran ceasefire oil-supply pathway and potential Hormuz flow data. If DXY closes below 100.00 on June 22 (high probability given the weekend trajectory), ALL THREE conditional-add gates clear simultaneously: execute the $205–$215 add with stop $195. The Annual Meeting June 24 is the secondary catalyst — Jensen Huang's direct commentary on AI capex durability in a hawkish-rate environment can generate a $10–$20 single-day move.",
+    "long_term": "Unchanged and strengthening. SK Hynix's 12-layer HBM4E sample shipment confirmation (48GB, 16Gbps per pin) is the supply-chain execution confirmation that NVDA's Vera Rubin rack-scale platform is on schedule. The $150B Taiwan supply commitment, $91B Q2 revenue consensus, $299 average analyst PT, and the AI capex supercycle are all intact. The FOMC hawkish shock creates a near-term multiple headwind (higher discount rate on ~30x P/E), not a structural change. Q2 FY27 earnings ~August 26 is the next conviction anchor."
+  },
+  "bull_case": [
+    "DXY declining to ~100.23 on weekend FX — 56 bps lower than Thursday's settlement of 100.79; the Iran ceasefire oil-supply pathway (Hormuz reopening → oil structurally lower → July CPI relief → Fed rate-hike probability falls → DXY peaks) is gaining real-world confirmation via FX market pricing; if DXY opens June 22 near 100.20, a single session of USD softness triggers the conditional-add.",
+    "IBIT outflow streak ended — BlackRock's IBIT led $86M in net Bitcoin ETF inflows (bitcoin.com); the secondary bearish regime signal (institutional crypto-exit = risk-off macro) has reversed; improving institutional risk appetite is a direct leading indicator for tech equity flows, particularly in high-beta AI names like NVDA.",
+    "SK Hynix officially ships 12-layer HBM4E samples (SK Hynix Newsroom, June 19): 48GB capacity, 16Gbps per pin, 20%+ power efficiency over prior gen — NVDA's primary memory supplier is executing the HBM4E roadmap precisely on schedule; this removes the supply-chain execution risk from NVDA's Vera Rubin production timeline.",
+    "Annual Meeting June 24 is the week's potential market-moving event — Jensen Huang speaking directly on AI capex durability, the Rubin ramp, and rate-environment impact is a unique macro-override event; any explicit statement that AI infrastructure buildout is rate-insensitive would catalyze a PT-revision wave from the 62-analyst consensus at $299."
+  ],
+  "bear_case": [
+    "DXY at 100.23 is improving but not at the gate — a single Warsh hawkish speech or adverse June 22 data print (strong PMI, Fed speaker reaffirming rate-hike probability) could reverse the weekend DXY decline and push back to 100.75+; the gate has not cleared until a confirmed June 22 daily close below 100.00.",
+    "Post-FOMC 8-of-9 pattern: Week 2 (June 22–26) is historically the weakest week in the post-FOMC risk cycle; even if DXY gate clears, institutional positioning momentum is adverse for AI high-beta names in the second post-FOMC week; the pattern has reasserted itself 8 of the last 9 FOMC meetings.",
+    "30Y at 4.93% approaching 5.00% — the bond market's rate expectation hasn't fully normalized; if Warsh Fed speakers use the June 22–26 calendar to reinforce the rate-hike probability (not reduce it), the 30Y could test 5.00% and generate a second wave of AI-sector multiple compression.",
+    "Annual Meeting June 24 is a two-way event: if Jensen's commentary is more cautious than expected (acknowledging rate sensitivity of AI capex budgets, or slower Rubin ramp), the event could catalyze a selloff rather than a rally; pre-Annual-Meeting positioning (long) creates a 'buy the rumor, sell the news' dynamic."
+  ],
+  "key_levels": [
+    { "label": "All-time high (May 14 2026)", "level": "$236.54", "kind": "resistance" },
+    { "label": "200-DMA (long-term trend indicator)", "level": "~$213.25", "kind": "resistance" },
+    { "label": "July expiry max pain (building pre-Annual Meeting)", "level": "$210–$215", "kind": "resistance" },
+    { "label": "DMA-50 / gate for conditional add lower bound", "level": "~$206.74 (50-DMA) / $205 (add zone floor)", "kind": "pivot" },
+    { "label": "★ Last official close (June 18) — 50-DMA recovery confirmation; confirmed support if held June 22", "level": "$208.82", "kind": "pivot" },
+    { "label": "June 17 FOMC-day close (confirmed demand zone)", "level": "$204.65", "kind": "support" },
+    { "label": "June 17 FOMC session low (post-FOMC floor, tested once)", "level": "$203.45", "kind": "support" },
+    { "label": "★ Strongest support — $200 round number; heavy put OI; institutional demand zone", "level": "$200", "kind": "support" },
+    { "label": "Stop-loss — reassessment required on daily close below", "level": "$195", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-22", "label": "Monday June 22 open — conditional-add decision day: DXY at 100.23 weekend means ALL THREE gates could clear on a single June 22 session if DXY closes below 100.00; VIX must stay below 17 on same session; execute $205–$215 add on simultaneous gate clearance; do NOT add if only two of three clear; also watch Micron earnings call for semiconductor demand read-through", "importance": "high" },
+    { "date": "2026-06-24", "label": "NVIDIA Annual Meeting of Stockholders (online, 9 AM PT) — Jensen Huang first post-FOMC public appearance; AI capex durability commentary, Vera Rubin/Blackwell ramp status, HBM4E supply chain confirmation, Q&A on rate environment; this is the override catalyst — executes the add regardless of macro gates if Jensen signals strong fundamental conviction", "importance": "high" },
+    { "date": "2026-06-22 to 06-25", "label": "Micron Q3 earnings — first post-FOMC semiconductor earnings print; HBM demand commentary is direct NVDA AI read-through; also Darden, FedEx, Carnival earnings in week providing macro consumer/transport data context", "importance": "medium" },
+    { "date": "2026-08-26", "label": "NVDA Q2 FY27 earnings (approx.) — ~$91B revenue consensus; Rubin ramp commentary and HBM4E demand guidance; the primary conviction catalyst for the $299 consensus PT", "importance": "high" }
+  ]
+}

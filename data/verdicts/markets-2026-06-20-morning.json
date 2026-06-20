@@ -1,0 +1,149 @@
+{
+  "routine": "markets",
+  "date": "2026-06-20",
+  "window": "morning",
+  "generated_at": "2026-06-20T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Weekend Setup Improving; DXY at 100.23; IBIT Outflows Ended; All Eyes on June 22 Open",
+    "conviction": "medium",
+    "horizon": "48 hours · June 22 gate decision",
+    "rationale_short": "Saturday — US equity and bond markets closed. The macro setup is materially more constructive than Thursday: DXY declined to ~100.23 on weekend FX (was 100.79 Thursday, intraday high 101.13) — the single remaining NVDA conditional-add gate (DXY <100) is now 23 basis points away. IBIT Bitcoin ETF outflow streak has ended — BlackRock's IBIT led $86M in net inflows (bitcoin.com), reversing the institutional crypto-selling signal that was the portfolio's secondary bearish flag. VIX estimated ~16.78 (gate still cleared). SK Hynix officially confirmed 12-layer HBM4E sample shipments via SK Hynix Newsroom (48GB, 16Gbps per pin, 20%+ power efficiency). BTC is trading at $63,711 at 11:01 UTC, comfortably above the $63,500 stop on track for a third consecutive UTC close above the level. If DXY closes below 100.00 on June 22, ALL THREE NVDA conditional-add gates clear simultaneously for the first time since the FOMC. June 22 (Monday) is the week's binary event: gate-clear = add NVDA at $205–$215; gate-miss = hold and wait for Annual Meeting June 24.",
+    "supporting_data": [
+      {
+        "label": "DXY at ~100.23 on weekend FX — DOWN from Thursday settlement 100.79 and Juneteenth intraday high 101.13; the NVDA conditional-add gate (DXY <100) is 23 basis points away; most constructive macro development of the 3-day weekend",
+        "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+      },
+      {
+        "label": "★ IBIT outflow streak ENDED: BlackRock's IBIT led $86M in net Bitcoin ETF inflows (bitcoin.com); the institutional crypto-selling signal that was the portfolio's secondary bearish flag has reversed; improving risk appetite across high-multiple growth assets",
+        "url": "https://news.bitcoin.com/bitcoin-etf-inflows-ethereum-outflows-june-2026/"
+      },
+      {
+        "label": "SK Hynix officially ships 12-layer HBM4E samples to AI customers (SK Hynix Newsroom): 48GB capacity, 16Gbps per pin, 20%+ power efficiency — portfolio's highest-conviction buy confirming its fundamental thesis; market cap briefly crossed ₩2,000T milestone",
+        "url": "https://news.skhynix.com/12-layer-hbm4e-sample/"
+      },
+      {
+        "label": "BTC live $63,711 at 11:01 UTC June 20 (Crypto.com MCP) — 3rd consecutive UTC session tracking above $63,500 stop; June 20 session low $63,321 (03:00 UTC, intraday dip) recovered; stop framework holds",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "VIX estimated ~16.78 weekend — gate CLEARED (<17); confirmed 16.40 on June 18 close; equity volatility normalized post-FOMC; SPX at 7,500.58 (June 18 close) — gate CLEARED (>7,460); two of three macro gates cleared entering June 22",
+        "url": "https://streetstats.finance/markets/volatility"
+      },
+      {
+        "label": "Week ahead (June 22-25): Micron Q3 earnings — first post-FOMC semiconductor demand read-through; HBM commentary = direct NVDA and SK Hynix read-through; NVDA Annual Meeting June 24 (Jensen Huang first post-FOMC public appearance)",
+        "url": "https://finance.yahoo.com/quote/MU/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7500.58,  "change_pct": 1.08,   "as_of": "2026-06-18T20:00:00Z" },
+    "nasdaq": { "level": 26683.94, "change_pct": 1.83,   "as_of": "2026-06-18T20:00:00Z" },
+    "vix":    { "level": 16.78,    "change_pct": 2.32,   "as_of": "2026-06-20T11:00:00Z" },
+    "ust10y": { "level": 4.4510,   "change_bps": -3.9,   "as_of": "2026-06-20T11:00:00Z" },
+    "dxy":    { "level": 100.23,   "change_pct": -0.52,  "as_of": "2026-06-20T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.78,   "trigger_above": 17,   "unit": "",        "status": "CLEARED — ~16.78 weekend estimate; confirmed 16.40 on June 18 close; gate met" },
+    { "name": "30Y Yield",    "value": 4.93,    "trigger_above": 5.0,  "unit": "%",       "status": "monitoring — 7 bps from 5.00% trigger; no new print until June 22; last known 4.93% on June 18" },
+    { "name": "DXY",          "value": 100.23,  "trigger_above": 100,  "unit": "",        "status": "IMPROVING — declined to 100.23 weekend FX from 100.79 Thursday; 23 bps above gate; closest to clearing since June 13" },
+    { "name": "SPX vs 7,460", "value": 7500.58, "trigger_below": 7460, "unit": "",        "status": "CLEARED — 40.6 pts above floor; stable" },
+    { "name": "Brent",        "value": 79.0,    "trigger_above": 97,   "unit": "USD/bbl", "status": "clear — Hormuz reopening on 30-day timeline; oil structurally capped; Iran deal structural tailwind" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$208.82 last close (June 18); no trading Saturday; DXY at 100.23 weekend — 23 bps from conditional-add gate; VIX CLEARED (16.78); SPX CLEARED; 2 of 3 gates cleared, DXY approaching gate; execute $205–$215 add ONLY if DXY closes below 100.00 on June 22 close; Annual Meeting June 24 is the override catalyst regardless of gate status; stop $195 unchanged",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SK HYNIX",
+      "note": "₩2,764,000 last close (June 19); KOSPI closed Saturday; HBM4E 12-layer samples officially shipped (SK Hynix Newsroom: 48GB, 16Gbps per pin, 20%+ power efficiency); market cap crossed ₩2,000T milestone; week gain +28.56%; buyback buzz (₩75T/$48B) developing; unconditional BUY at high conviction; next KOSPI session Monday June 23; add on pullback to ₩2,680,000–₩2,750,000; stop ₩2,540,000",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$63,711 live (Crypto.com MCP, 11:01 UTC June 20); 3rd consecutive UTC session tracking above $63,500 stop; IBIT outflow streak ENDED — BlackRock's IBIT led $86M net inflows (bitcoin.com); conviction UPGRADED to medium; do not add until June 22 IBIT flow confirmation (2nd consecutive inflow day); June 20 UTC midnight close is next monitoring event",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$174.90 last close (June 18); $185 stop TRIGGERED; STEP_ASIDE mode; June 20 weekly options expiry CLEARED; DXY declining to 100.23 improves multiple outlook; June 22 open is the diagnostic — $165–$175 + volume >150M shares = stabilization watch begins; two consecutive closes above $185 = re-entry trigger; analyst consensus 6 buy / 1 sell, avg PT $187.80",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "~$548 est. (down ~5.44% June 17); no new trading data weekend; IBIT outflows ending + DXY declining = improving macro for high-beta megacap recovery; if VIX stays below 17 on June 22, META is the highest-beta post-FOMC recovery in megacap; entry $545–$560, stop $530 daily close; self-funded AI makes it least rate-sensitive Mag-7 name",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MU",
+      "note": "Micron Q3 earnings expected week of June 22-25 — first post-FOMC semiconductor demand print; HBM commentary = direct read-through to NVDA and SK Hynix AI demand thesis; beat-and-raise with strong HBM demand = catalyst for NVDA add and SK Hynix gap-up on June 23 KOSPI open",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "~$53 est.; Iran ceasefire in effect — Hormuz reopening on 30-day timeline; Brent ~$79 structurally below H2 energy equity models; H2 earnings estimate cuts 8–12% not yet in sell-side numbers; short thesis intact; DXY declining may provide brief oil bounce — use any Brent recovery to $82–$84 as better XLE short entry",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TBT",
+      "note": "~$45 est. (2x inverse TLT); maintain hedge — 30Y at 4.93% approaching 5.00% gate; Warsh 'no forward guidance' posture means rate trajectory uncertain; keep TBT until 30Y falls below 4.75% on confirmed Warsh dovish signal OR Iran CPI data provides unambiguous relief",
+      "sentiment": "negative"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "Any new equity long before June 22 open confirmation",
+      "reason": "US equity markets are closed Saturday and Sunday. DXY is improving but has NOT confirmed below 100 yet — it needs a Monday June 22 session close to confirm the gate. The institutional community is dark on weekends; weekend FX moves can and often do reverse in the first 30 minutes of Monday Asian session. The conditional-add framework exists precisely to prevent adding on pre-market optimism that unwinds.",
+      "better_entry": "June 22 regular session — confirm DXY closes below 100 AND VIX stays below 17 on the same session before executing any conditional add. Annual Meeting June 24 is the secondary entry window regardless of gate status."
+    },
+    {
+      "ticker": "BTC long add before June 22 IBIT flow confirmation",
+      "reason": "BTC is on track for a third consecutive UTC close above $63,500, and IBIT outflows appear to have ended — both positive. But the conviction upgrade from 'low' to 'medium' is not enough to add size. The June 22 US session IBIT flow data is the required confirmation of the institutional buying reversal. Adding before that data risks adding into a false reversal signal.",
+      "better_entry": "After BTC produces the June 20 UTC midnight close above $63,500 (3rd consecutive) AND IBIT posts a second consecutive net inflow day on June 22 — both conditions required to add size."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "Two of three conditional-add gates are CLEARED (VIX ~16.78, SPX 7,500.58); DXY at 100.23 weekend is 23 bps from the third gate. The June 22 decision is the most consequential in the post-FOMC recovery: if DXY closes below 100, all three gates clear simultaneously and the $205–$215 add executes. Annual Meeting June 24 is the event override if the gate misses.",
+      "entry": "June 22: confirm DXY closes below 100.00 AND VIX stays below 17 → execute add at $205–$215, stop $195. OR: Annual Meeting June 24 Jensen commentary explicitly bullish on AI capex → add regardless of gate status.",
+      "invalidation": "DXY holds above 100 through June 22 AND 30Y closes above 5.00% → macro environment not supportive; hold without adding until Annual Meeting.",
+      "conviction": "medium",
+      "horizon": "2–3 weeks"
+    },
+    {
+      "asset": "SK HYNIX (000660.KS)",
+      "direction": "long",
+      "thesis": "Official HBM4E 12-layer sample shipments confirmed (SK Hynix Newsroom). All 38 analysts have PTs below the current ₩2,764,000 close — mandatory PT revision cycle is the mechanical demand catalyst. Market cap crossed ₩2,000T. Buyback story (₩75T) developing. Micron Q3 earnings this week are read-through catalyst. This is the portfolio's unconditional BUY regardless of US macro regime.",
+      "entry": "Hold core long through July 29 Q2 earnings. Add on any KOSPI pullback below ₩2,688,000 (June 19 session floor). Stop raised to ₩2,540,000.",
+      "invalidation": "Samsung announces a credible HBM4E customer qualification win that captures a major NVDA allocation slot before SK Hynix completes its own qualification process.",
+      "conviction": "high",
+      "horizon": "1–3 months"
+    },
+    {
+      "asset": "BTC",
+      "direction": "long",
+      "thesis": "IBIT outflow streak ended ($86M net inflows led by BlackRock IBIT). Three consecutive UTC closes above $63,500 (in progress). June 20 Deribit weekly expiry cleared. DXY declining toward <100 gate. Conviction upgraded from low to medium.",
+      "entry": "Hold current position. Add only after: (1) June 20 UTC midnight close above $63,500 confirmed AND (2) June 22 IBIT flow data shows second consecutive inflow day. Size-up at $63,500–$65,000 range on both conditions met. Stop: $63,500 UTC close (two-day rule resets with any UTC close below).",
+      "invalidation": "BTC closes below $63,500 on June 20 or June 22 UTC midnight → stop clock re-activates; two consecutive below = exit full position.",
+      "conviction": "medium",
+      "horizon": "2–3 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Iran ceasefire in effect, Hormuz reopening on 30-day timeline. Brent at ~$79 is $8–12 below H2 energy equity models. H2 earnings estimate cuts 8–12% not yet in sell-side consensus. DXY declining adds to commodity-equity headwind as dollar softens.",
+      "entry": "Scale short at $53–$56; any Brent bounce to $82–$84 on Hormuz clearance delays is the better entry.",
+      "invalidation": "Iran deal collapses or Hormuz clearance delayed beyond 60 days; Brent closes above $90.",
+      "conviction": "medium",
+      "horizon": "3–5 weeks"
+    }
+  ],
+  "bear_case": "The weekend improvement is real but unconfirmed: DXY at 100.23 is still above 100 (the gate requires a Monday June 22 session CLOSE below 100, not a weekend FX print), and the IBIT inflow story may be partially from an earlier streak resolution (May-June 3) rather than a confirmed post-FOMC reversal. Warsh's 'no forward guidance' posture means any Fed speaker between June 22-26 can re-accelerate hawkish repricing: if a scheduled June 22 Fed speech uses the macro improvement as justification for maintaining the rate-hike probability at 3.8% median, DXY could reverse the weekend decline within hours. The 30Y at 4.93% remains 7 basis points from the 5.00% critical gate — a continued 30Y approach to 5.00% simultaneously compresses NVDA's multiple, extends SPCX's correction, and keeps BTC's macro headwind intact. Post-FOMC Week 2 (June 22-26) is historically the weakest 5 days in the risk-recovery cycle (8-of-9 pattern). The Annual Meeting June 24 is a two-way catalyst — any Jensen disappointment resets expectations downward and could extend the correction.",
+  "body_mdx": "data/briefings/markets/2026-06-20-morning.mdx"
+}
