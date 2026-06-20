@@ -2,124 +2,124 @@
   "routine": "markets",
   "date": "2026-06-19",
   "window": "night",
-  "generated_at": "2026-06-19T23:10:00Z",
+  "generated_at": "2026-06-20T01:10:00Z",
   "is_seed": false,
   "verdict": {
-    "code": "step_aside",
-    "emoji": "🟠",
-    "label": "STEP ASIDE — DXY One-Year High; Iran Deal Hit; BTC Stop Day 2 Confirmed",
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD/SELECTIVE — BTC Stop Survives; VIX 16.40 Gates Cleared; DXY One-Year High Remains The Lock",
     "conviction": "medium",
-    "rationale_short": "DXY hit a one-year high of 101.13 during Juneteenth, settling ~100.75 — the 99.00 BUY gate is now 175+ basis points away and the dollar is moving in the wrong direction. Iran-US Switzerland implementation talks were canceled due to Israeli strikes in Lebanon, putting the Hormuz disinflation thesis at risk; Brent rebounded to $80. BTC Day 2 stop clock confirming at UTC midnight ($63,257 at 23:05 UTC, $243 below threshold). Raise cash, maintain XLE short and TBT hedge, hold no new equity index longs until DXY confirms below 100.00 on a Monday close."
+    "rationale_short": "BTC closed the June 19 UTC day at $63,544 — $44 above the $63,500 stop; Day 2 did NOT execute, stop clock resets. VIX confirmed 16.40 on June 18 (not 17.0) — two of three equity gates are now cleared (VIX <17, SPX >7,460). DXY settled 100.79 after a Juneteenth intraday one-year high of 101.13 — the <100 HOLD gate and <99 BUY gate remain blocked. Iran deal on track: Hormuz commercial traffic surging (RFERL), Switzerland talks postponed but not canceled. Regime is HOLD/SELECTIVE: no new equity index longs until DXY confirms below 100.00 on Monday June 22 close; XLE short and TBT rate hedge maintained. Watch June 20 UTC midnight BTC close to confirm stop clock stability."
   },
   "supporting_data": [
     {
-      "label": "DXY 101.13 intraday one-year high on Juneteenth; settled ~100.75 — BUY gate (DXY < 99.00) now 175+ bps away and moving the wrong direction; dollar sustaining above 100 despite Iran deal and Brent -5% June 18",
+      "label": "DXY 101.13 intraday one-year high on Juneteenth; settled 100.79 — HOLD gate (DXY < 100.00) and BUY gate (DXY < 99.00) remain blocked; dollar at one-year high despite Iran deal and Brent -5% on June 18",
       "url": "https://www.tmgm.com/en/analysis/market-news/article/united-states-dollar-index-dxy-eases-from-10113-highs-but-remains-near-yearly-highs-202606190946"
     },
     {
-      "label": "Iran-US Switzerland talks canceled June 19 — JD Vance did not travel; Israeli strikes on Hezbollah infrastructure in Lebanon caused cancelation; Israel-Hezbollah subsequently renewed ceasefire but Iran says deal requires IDF withdrawal from Lebanon which Israel rejects",
-      "url": "https://www.cnbc.com/2026/06/19/us-iran-talks-switzerland-canceled-interim-deal-markets.html"
+      "label": "BTC $63,544.43 UTC midnight June 19 close (Crypto.com MCP hourly candle) — Day 2 stop clock DID NOT EXECUTE; closed $44 above $63,500; stop clock RESETS; live price at 01:03 UTC June 20: $63,508 ($8 above stop); June 20 UTC close is the next key event",
+      "url": "https://finance.yahoo.com/quote/BTC-USD/"
     },
     {
-      "label": "BTC $63,257 live (Crypto.com MCP, 23:05 UTC June 19) — Day 2 stop clock: $243 below $63,500 threshold with 55 min to UTC midnight close; session high $63,371 could not sustain above stop; Day 1 confirmed $62,952 UTC close June 18",
-      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-19-2026-prices-keep-falling-post-fed-decision-123239380.html"
+      "label": "VIX confirmed 16.40 on June 18 close (not 17.0 as initially reported) — the <17 equity gate IS cleared; SPX 7,500 > 7,460 gate IS cleared; DXY gate at <100 UNMET — 2 of 3 conditional gates cleared going into Monday June 22",
+      "url": "https://streetstats.finance/markets/volatility"
     },
     {
-      "label": "Brent crude oil rebounded to ~$80 (+2.6% from June 18 close of $78) on Iran deal uncertainty — partial reversal of the disinflation trade; WTI ~$77; structural supply thesis remains intact but near-term implementation risk elevated",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      "label": "Commercial traffic through the Strait of Hormuz surging after US-Iran MOU (RFERL) — 80 mines still being cleared but the disinflation pathway is gaining real-world confirmation; Brent rebounded to ~$80 on Switzerland talks postponement but structural supply thesis intact",
+      "url": "https://www.rferl.org/a/iran-war-us-hormuz-oil-blockade-gulf-israel/33640284.html"
     },
     {
-      "label": "CME FedWatch: 60.7% probability of October 2026 rate hike, 77% probability by December — highest rate hike odds since before the Iran deal; hawkish pricing is dominating the geopolitical disinflation impulse in every asset class",
+      "label": "US-Iran Switzerland talks postponed June 19 — JD Vance cited logistics; Israel-Hezbollah clashes in Lebanon complicated timing; deal itself intact; Israel-Hezbollah subsequently renewed ceasefire; Iran disinflation pathway on track, execution timeline extended",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-19/vance-delays-swiss-trip-as-white-house-says-talks-never-simple"
+    },
+    {
+      "label": "CME FedWatch: ~60.7% probability of October 2026 rate hike; hawkish pricing dominating geopolitical disinflation impulse; May PCE June 25 (Wells Fargo est. 4.1% YoY) is the next binary macro event",
       "url": "https://www.techtimes.com/articles/318527/20260616/federal-reserve-june-2026-meeting-warsh-set-drop-dot-hike-risk-climbs.htm"
-    },
-    {
-      "label": "CNN Fear & Greed Index fell to 15 — lowest reading since May cycle low; Goldman Sachs cut year-end gold price target to $4,900 from $5,400, reflecting reduced growth/risk outlook post-FOMC",
-      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-19-2026-prices-keep-falling-post-fed-decision-123239380.html"
     }
   ],
   "snapshot": {
     "sp500":  { "level": 7500.58,  "change_pct": 0.00,   "as_of": "2026-06-18T20:00:00Z" },
     "nasdaq": { "level": 26517.93, "change_pct": 0.00,   "as_of": "2026-06-18T20:00:00Z" },
-    "vix":    { "level": 17.0,     "change_pct": 0.00,   "as_of": "2026-06-18T20:00:00Z" },
+    "vix":    { "level": 16.40,    "change_pct": -11.06,  "as_of": "2026-06-18T20:00:00Z" },
     "ust10y": { "level": 4.49,     "change_bps": 0,      "as_of": "2026-06-18T20:00:00Z" },
-    "dxy":    { "level": 100.75,   "change_pct": 0.60,   "as_of": "2026-06-19T21:00:00Z" }
+    "dxy":    { "level": 100.79,   "change_pct": 0.64,   "as_of": "2026-06-19T22:00:00Z" }
   },
   "regime_risk": [
-    { "name": "VIX",          "value": 17.0,   "trigger_above": 18,   "unit": "" },
-    { "name": "30Y Yield",    "value": 4.93,   "trigger_above": 5.00, "unit": "%" },
-    { "name": "DXY",          "value": 100.75, "trigger_above": 100,  "unit": "" },
-    { "name": "SPX vs 7,460", "value": 7500.58,"trigger_below": 7460, "unit": "" },
-    { "name": "Brent",        "value": 80.0,   "trigger_above": 97,   "unit": "USD/bbl" }
+    { "name": "VIX",          "value": 16.40,  "trigger_above": 17,   "unit": "",        "status": "CLEARED — 16.40 < 17 gate; equity vol normalized" },
+    { "name": "30Y Yield",    "value": 4.93,   "trigger_above": 5.00, "unit": "%",       "status": "borderline — 7 bps buffer; May PCE June 25 binary" },
+    { "name": "DXY",          "value": 100.79, "trigger_above": 100,  "unit": "",        "status": "BREACHED — 101.13 one-year intraday high; settled 100.79; HOLD gate (<100) blocked; BUY gate (<99) well blocked" },
+    { "name": "SPX vs 7,460", "value": 7500.58,"trigger_below": 7460, "unit": "",        "status": "CLEARED — 40 pts above floor; gate held on Juneteenth futures" },
+    { "name": "Brent",        "value": 80.0,   "trigger_above": 97,   "unit": "USD/bbl", "status": "cleared — rebounded from $78 on Switzerland postponement; structural supply thesis intact" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "NVDA",
-      "note": "$208.82 June 18 close; Juneteenth range $206.50–$211.39 (thin); Annual Meeting June 24 9AM PT is the week's key fundamental catalyst; conditional add SUSPENDED — DXY 101.13 obliterates the gate; hold existing position; stop $195 daily close unchanged",
+      "note": "$208.82 June 18 close; Annual Meeting June 24 9AM PT is the week's key fundamental catalyst. Gate update: VIX confirmed 16.40 (gate cleared) + SPX 7,500 (gate cleared) = 2 of 3 conditional-add gates now met. Only DXY gate (<100) remains. If DXY confirms below 100.00 on Monday June 22 close, conditional add triggers: $205–$215 zone, stop $195. Hold existing position unchanged.",
       "sentiment": "neutral"
     },
     {
       "ticker": "BTC",
-      "note": "$63,257 live (Crypto.com MCP, 23:05 UTC) — Day 2 stop confirming; $243 below $63,500 threshold; 55 min to UTC close; session high $63,371 rejected; EXIT position on confirmed stop; re-entry: two consecutive UTC closes above $63,500 + DXY below 99.00 + IBIT daily inflow",
-      "sentiment": "negative"
+      "note": "$63,544.43 UTC midnight June 19 close (Crypto.com MCP) — Day 2 stop DID NOT execute. Stop clock RESETS. Live at $63,508 (01:03 UTC June 20; $8 above stop). Hold position; do NOT add. June 20 UTC midnight close is the next key date. Two consecutive closes below $63,500 = full exit.",
+      "sentiment": "neutral"
     },
     {
       "ticker": "ETH",
-      "note": "$1,706.66 live (Crypto.com MCP, 23:05 UTC); range $1,677–$1,718; Morgan Stanley filed ETH/SOL ETFs; spot ETF $12.77M outflow; $1,580 next support per Ali Charts; not actionable",
+      "note": "~$1,700 est. (range $1,677–$1,718 on June 19 session); Morgan Stanley ETH/SOL ETF filings pending; spot ETF outflows ongoing; $1,580 next support per Ali Charts; not actionable — BTC framework governs crypto positioning",
       "sentiment": "negative"
     },
     {
       "ticker": "XLE",
-      "note": "Active short — Brent rebounded to $80 on Iran deal complication; mine-clearance timeline in question; H2 sell-side energy models still embed $87-90 WTI; estimate cuts (8-12%) not yet in street numbers; scale short on any bounce to $82-84 Brent",
+      "note": "Active short maintained — Brent rebounded to $80 on Switzerland talks postponement; structural thesis intact: H2 sell-side energy models embed $87-90 WTI; Hormuz reopening (80 mines being cleared, commercial traffic flowing) forces estimate cuts 8-12%; scale short on any Brent bounce to $82-84",
       "sentiment": "negative"
     },
     {
       "ticker": "TBT",
-      "note": "~$44-45 est.; 30Y at 4.93% (7 bps from 5.00% trigger); October hike 60.7%; maintain rate hedge; May PCE June 25 is the binary event; reduce only if 30Y confirms below 4.75% on dovish signal",
+      "note": "~$44-45 est.; 30Y at 4.93% (7 bps from 5.00% trigger); October hike 60.7%; maintain rate hedge; May PCE June 25 is the binary event — a print at or above 4.0% YoY could push 30Y through 5.00%; reduce only if 30Y confirms below 4.75% on dovish signal",
       "sentiment": "negative"
     },
     {
       "ticker": "MU",
-      "note": "~$143 est.; Q3 FY2026 earnings June 24 after close — EPS consensus upward-revised to $19.72 (from $19.15 guidance); AI/HBM demand absorbing all production capacity; beat-and-raise is base case; 1/3 position at $135-145 is the only offensive long in STEP_ASIDE regime",
+      "note": "~$143 est.; Q3 FY2026 earnings June 24 after close — EPS consensus $19.72 (from $19.15 guidance); AI/HBM demand absorbing all capacity; SK Hynix HBM4E sample confirmation (June 19 KOSPI: ₩2,764K, third consecutive ATH) reinforces the memory pricing cycle; beat-and-raise is base case; 1/3 position at $135-145 is the only offensive long in HOLD/SELECTIVE regime",
       "sentiment": "positive"
     },
     {
       "ticker": "SPCX",
-      "note": "$174.90 June 18 stop trigger; no position; Iran deal uncertainty + Warsh rate repricing = no re-entry; two closes above $185 on above-average volume required",
+      "note": "$174.90 June 18 stop trigger; no position; DXY one-year high at 101.13 + Warsh rate repricing = the 84x-revenue multiple remains under maximum pressure; no re-entry before two consecutive closes above $185 on above-average volume",
       "sentiment": "negative"
     }
   ],
   "dont_buy": [
     {
       "ticker": "QQQ / SPX index longs on Monday gap-up",
-      "reason": "DXY hit 101.13 on Juneteenth — a one-year high — obliterating the 99.00 BUY gate. The Iran deal complication (Switzerland talks canceled, IDF-Lebanon dispute) adds binary geopolitical risk to Monday's open. Rate hike probability at 60.7% for October means every day DXY holds above 100 is another day of compression for high-multiple index exposure. Buying a gap-up on Monday with DXY at 101 means buying into maximum rate premium and maximum geopolitical uncertainty simultaneously.",
-      "better_entry": "DXY confirms below 100.00 on Monday June 22 close with SPX holding above 7,460 — HOLD re-activates. DXY below 99.00 = BUY upgrade."
+      "reason": "DXY hit a Juneteenth one-year high at 101.13, settling 100.79 — the <100.00 HOLD gate remains blocked. The Iran deal Switzerland postponement adds residual geopolitical uncertainty to Monday's open. Rate hike probability at 60.7% for October means every day DXY holds above 100 is continued compression for high-multiple index exposure. Buying a gap-up on Monday with DXY at 100.79 = buying into maximum rate premium.",
+      "better_entry": "DXY confirms below 100.00 on Monday June 22 close with SPX holding above 7,460 — HOLD/SELECTIVE upgrade. DXY below 99.00 = BUY upgrade."
     },
     {
-      "ticker": "BTC",
-      "reason": "Day 2 stop clock confirming at UTC midnight tonight ($63,257 live, $243 below $63,500 threshold). Even at the session high of $63,371, BTC could not sustain above the stop level. IBIT has had consecutive daily outflows. Fear & Greed at 15. DXY at 101. The systematic framework is clear.",
-      "better_entry": "Two consecutive UTC daily closes above $63,500 AND IBIT posts a daily net inflow AND DXY below 99.00 — all three simultaneously before re-engaging the long."
+      "ticker": "BTC adds / averaging down",
+      "reason": "Stop survived by $44 on 1,964 BTC Juneteenth volume — this is not a buy signal. The IBIT 11-day outflow streak is intact, Fear & Greed is at 15, and DXY is at 100.79. The live price at 01:03 UTC June 20 is $63,508 — $8 above the stop. The stop-survival was a technical reprieve on the thinnest tape of 2026, not a reversal. Adding here with the June 20 UTC midnight close unresolved is poor risk discipline.",
+      "better_entry": "Two consecutive UTC daily closes above $63,500 (confirming stop-survived stability) AND IBIT posts a daily net inflow (ending 11-day streak) AND DXY below 99.00 — all three before adding to BTC long."
     },
     {
-      "ticker": "NVDA conditional add above $210",
-      "reason": "Conditional add at $205-215 required DXY below 100 as the macro gate. At 101.13, that gate is structurally blocked for at least the next 5 trading sessions unless there is a dramatic macro shift. Adding into thin Juneteenth liquidity at 101 DXY is poor risk discipline.",
-      "better_entry": "Post-Annual Meeting June 24 if Jensen guides Q2 at or above $91B consensus AND DXY shows any close below 100.50 in the June 22-24 window."
+      "ticker": "NVDA conditional add before June 22 DXY confirmation",
+      "reason": "With DXY at 100.79 (above the <100 gate), the third conditional-add gate is still unmet. Two of three gates cleared (VIX 16.40, SPX 7,500). Do not add before June 22 DXY confirmation. Buying before Monday's DXY print means paying the Juneteenth uncertainty premium without gate confirmation.",
+      "better_entry": "DXY confirms below 100.00 on Monday June 22 session — all three gates simultaneously cleared; $205–$215 conditional add triggers with stop at $195."
     }
   ],
   "trade_setups": [
     {
       "asset": "XLE",
       "direction": "short",
-      "thesis": "Brent rebounded to $80 on Iran deal uncertainty (Switzerland talks canceled; Israeli strikes in Lebanon complicating implementation timeline). The structural thesis — Hormuz reopening adds 1-1.5 Mbpd, forcing H2 2026 sell-side energy earnings cuts of 8-12% — remains intact. The $80 Brent bounce is the better short entry, not the exit. H2 energy sell-side models still embed $87-90 WTI and have not cut estimates.",
-      "entry": "Continue scaling short XLE at $52-55; add on any Brent bounce to $82-84.",
-      "invalidation": "Iran deal fully collapses AND Brent closes above $90 on two consecutive sessions; or XLE reclaims $62 on a daily close.",
+      "thesis": "Brent rebounded to $80 on Switzerland talks postponement but the structural thesis accelerates: Hormuz commercial traffic is already flowing (RFERL confirms surge post-MOU), 80 mines being cleared adds 1–1.5 Mbpd within 30–60 days, H2 2026 energy earnings models still embed $87-90 WTI and have not cut estimates. The $80 Brent bounce is the better short entry, not the exit. Every $5 on Brent above the structural equilibrium ($70-75 with Hormuz open) is addable short.",
+      "entry": "Continue scaling short XLE at $52-55; add on any Brent bounce to $82-84; target $48-50 XLE on $72-75 Brent.",
+      "invalidation": "Iran deal formally collapses AND Brent closes above $90 on two consecutive sessions; or XLE reclaims $62 on a daily close.",
       "conviction": "medium",
       "horizon": "3-5 weeks"
     },
     {
       "asset": "TBT (2x inverse TLT)",
       "direction": "hedge",
-      "thesis": "Warsh's June 17 dot plot (nine hike projections, 3.8% 2026 median) combined with 60.7% October hike probability leaves the 30Y pricing freely at 4.93% — 7 bps from the 5.00% regime trigger. May PCE on June 25 (Wells Fargo est. 4.1% YoY) is the next binary event. A print at or above 4.0% could push the 30Y through 5.00% on the same session. TBT converts STEP_ASIDE positioning into an active income position.",
-      "entry": "Hold TBT at $44-47; scale up 25% on any dip to $44-45 on Monday June 22 open. Reduce only if 30Y falls below 4.75%.",
+      "thesis": "Warsh's June 17 dot plot (nine hike projections, 3.8% 2026 median) combined with 60.7% October hike probability leaves the 30Y pricing freely at 4.93% — 7 bps from the 5.00% regime trigger. May PCE on June 25 (Wells Fargo est. 4.1% YoY) is the next binary event. A print at or above 4.0% could push the 30Y through 5.00% on the same session. TBT converts HOLD/SELECTIVE positioning into an active income position.",
+      "entry": "Hold TBT at $44-47; scale up 25% on any dip to $44-45 on Monday June 22 open. Reduce only if 30Y falls below 4.75% on a confirmed dovish signal.",
       "invalidation": "30Y falls below 4.75% on a confirmed dovish signal — requires oil disinflation to overwhelm the FOMC hike signal; not the current base case before PCE.",
       "conviction": "medium",
       "horizon": "2-3 weeks"
@@ -127,13 +127,13 @@
     {
       "asset": "MU (Micron Technology)",
       "direction": "long",
-      "thesis": "Micron Q3 FY2026 earnings June 24 after close — consensus EPS upward-revised to $19.72 (from $19.15 guidance), reflecting AI/HBM demand absorbing all production capacity. Q2 FY2026 delivered $23.9B revenue (+196% YoY). Q3 $33.5B guidance appears conservative given that trajectory. SK Hynix HBM4E sample confirmation reinforces the memory pricing cycle. This is a stock-specific earnings trade that operates independently of the macro regime; beat-and-raise is the base case.",
-      "entry": "1/3 position at $135-145 before June 24 close; add to full position post-earnings only if guidance beats; stop: Q3 guidance cut or NVDA Annual Meeting disappointment on AI capex.",
+      "thesis": "Micron Q3 FY2026 earnings June 24 after close — consensus EPS $19.72 (upward-revised from $19.15 guidance), reflecting AI/HBM demand absorbing all production capacity. Q2 FY2026 delivered $23.9B revenue (+196% YoY). SK Hynix's June 19 HBM4E sample confirmation (₩2,764K third consecutive ATH) reinforces the memory pricing supercycle. MU is the only stock-specific earnings trade that operates independently of the DXY macro regime. Beat-and-raise is the base case.",
+      "entry": "1/3 position at $135-145 before June 24 close; add to full position post-earnings only if guidance beats; stop: Q3 revenue guidance cut below $31B or NVDA Annual Meeting disappointment on AI capex.",
       "invalidation": "MU Q3 revenue guidance cut below $31B; NVDA Annual Meeting June 24 guidance disappointment; broad AI-semis sell-off on macro shock before earnings.",
-      "conviction": "low",
+      "conviction": "medium",
       "horizon": "1-2 weeks"
     }
   ],
-  "bear_case": "The June 18-19 tape constitutes a diagnostic, not a noise event: a signed geopolitical relief catalyst (US-Iran MOU, Hormuz reopening) produced a +1.91% Nasdaq session, then within 48 hours the implementation talks collapsed and Brent partially reversed — while DXY made a one-year high at 101.13. This is the market's answer to the thesis that the Iran deal would force the dollar lower. The Warsh rate-hike regime is dominating every disinflationary impulse. The bull case for Monday's open requires DXY to reverse 200+ bps in a single session on no new data. The bear case is simpler: DXY holds 100+ through June 25, PCE prints at 4.1% YoY as estimated, 30Y breaches 5.00%, VIX spikes above 18, and all three BUY gates re-close simultaneously in the same session. That scenario takes STEP_ASIDE to outright BEARISH and makes QQQ puts the primary position. Invalidation of the bear case: DXY confirms below 100.00 on Monday June 22 close AND SPX holds above 7,460 — those two simultaneously restore HOLD. DXY below 99.00 restores BUY.",
+  "bear_case": "The June 18-19 tape constitutes a diagnostic, not a noise event. BTC survived the stop by $44 on the thinnest tape of 2026 — not a reversal signal. DXY made a one-year high at 101.13 on Juneteenth despite a signed Iran deal with oil down 5% two days prior — the Warsh rate-hike regime is dominating every disinflationary impulse. The Switzerland talks postponement (Hezbollah/Lebanon complication) adds execution risk to the disinflation timeline. The bull case for Monday requires DXY to reverse below 100.00 on no new data — possible if Hormuz oil flows accelerate and Brent re-tests $76-77, but not guaranteed in the same week the talks were postponed. The bear case is simpler: DXY holds above 100 through June 25, PCE prints at 4.1% YoY as estimated, 30Y breaches 5.00%, VIX spikes back above 18, and the two BUY gates that cleared (VIX, SPX) re-close on the same session. BTC lives to fight another day but $63,508 with IBIT on its 11th outflow day is not a comfortable overnight position. Invalidation: DXY confirms below 100.00 on Monday June 22 close AND SPX holds 7,460 → HOLD confirmed, NVDA conditional add triggers. DXY below 99.00 → BUY upgrade.",
   "body_mdx": "data/briefings/markets/2026-06-19-night.mdx"
 }
