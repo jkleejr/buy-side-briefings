@@ -37,6 +37,7 @@ const ACTION: Record<TradeAction, { text: string; border: string; bg: string }> 
   buy: { text: "text-[var(--up)]", border: "border-[var(--up)]", bg: "bg-[rgba(34,197,94,0.10)]" },
   hold: { text: "text-[var(--amber)]", border: "border-[var(--amber)]", bg: "bg-[rgba(255,165,0,0.10)]" },
   sell: { text: "text-[var(--down)]", border: "border-[var(--down)]", bg: "bg-[rgba(239,68,68,0.10)]" },
+  step_aside: { text: "text-[var(--amber)]", border: "border-[var(--amber)]", bg: "bg-[rgba(255,165,0,0.10)]" },
 };
 
 function StockCard({ def, d }: { def: StockDef; d: AssetDaily | null }) {
@@ -63,8 +64,8 @@ function StockCard({ def, d }: { def: StockDef; d: AssetDaily | null }) {
     );
   }
 
-  const win = WINNER[d.day_winner];
-  const act = ACTION[d.decision.action];
+  const win = WINNER[d.day_winner] ?? WINNER.flat;
+  const act = ACTION[d.decision.action] ?? ACTION.hold;
   const change = d.snapshot.change_pct;
   const changeTone =
     change > 0 ? "text-[var(--up)]" : change < 0 ? "text-[var(--down)]" : "text-[var(--dim)]";
@@ -91,7 +92,7 @@ function StockCard({ def, d }: { def: StockDef; d: AssetDaily | null }) {
             act.bg,
           )}
         >
-          {d.decision.action}
+          {d.decision.action.replace(/_/g, " ")}
         </span>
       </div>
 

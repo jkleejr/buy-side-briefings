@@ -18,8 +18,9 @@ export type AssetId = "nvda" | "btc" | "skhynix" | "spcx";
 /** Who was paid in today's session. */
 export type DayWinner = "bulls" | "bears" | "flat";
 
-/** The standing call for today. */
-export type TradeAction = "buy" | "hold" | "sell";
+/** The standing call for today. Mirrors the briefing verdict vocabulary,
+ * which includes "step_aside" (stand down / no position) alongside buy/hold/sell. */
+export type TradeAction = "buy" | "hold" | "sell" | "step_aside";
 
 export type Conviction = "low" | "medium" | "high";
 

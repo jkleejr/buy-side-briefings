@@ -66,7 +66,7 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
         </div>
 
         <ul className="mt-2 grid grid-cols-1 gap-1 sm:grid-cols-2">
-          {verdict.verdict.supporting_data.slice(0, 6).map((d, i) => (
+          {(verdict.verdict.supporting_data ?? []).slice(0, 6).map((d, i) => (
             <li
               key={i}
               className="border border-[var(--border)] bg-black px-1.5 py-1 font-mono text-[10px] text-[var(--foreground)]"

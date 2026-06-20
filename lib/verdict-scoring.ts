@@ -143,7 +143,7 @@ export function scoreVerdict(
  * markets verdicts treat HOLD.
  */
 export function judgeAssetAction(
-  action: "buy" | "hold" | "sell",
+  action: "buy" | "hold" | "sell" | "step_aside",
   pct: number | null,
 ): boolean | null {
   if (pct === null) return null;
@@ -153,6 +153,8 @@ export function judgeAssetAction(
     case "sell":
       return pct < 0;
     case "hold":
+    case "step_aside":
+      // Non-directional calls — not scored as right or wrong.
       return null;
   }
 }

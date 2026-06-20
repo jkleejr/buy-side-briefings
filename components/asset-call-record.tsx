@@ -13,6 +13,7 @@ const ACTION_TONE: Record<AssetDaily["decision"]["action"], string> = {
   buy: "text-[var(--up)]",
   hold: "text-[var(--amber)]",
   sell: "text-[var(--down)]",
+  step_aside: "text-[var(--amber)]",
 };
 
 function PctCell({ pct, pending }: { pct: number | null; pending: boolean }) {
@@ -76,7 +77,9 @@ export default async function AssetCallRecord({
   const avgBuyD5 =
     buyD5.length > 0 ? buyD5.reduce((a, b) => a + b, 0) / buyD5.length : null;
 
-  const directional = scored.filter(({ d }) => d.decision.action !== "hold").length;
+  const directional = scored.filter(
+    ({ d }) => d.decision.action !== "hold" && d.decision.action !== "step_aside",
+  ).length;
 
   return (
     <Panel
@@ -145,7 +148,7 @@ export default async function AssetCallRecord({
               <tr key={d.date} className="border-t border-[var(--border)]">
                 <td className="px-2 py-0.5 text-[var(--foreground)]">{d.date}</td>
                 <td className={cn("px-2 py-0.5 uppercase", ACTION_TONE[d.decision.action])}>
-                  {d.decision.action}
+                  {d.decision.action.replace(/_/g, " ")}
                 </td>
                 <td className="px-2 py-0.5 uppercase text-[var(--dim)]">
                   {d.decision.conviction.slice(0, 3)}

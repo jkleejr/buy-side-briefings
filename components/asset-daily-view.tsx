@@ -86,6 +86,13 @@ const ACTION_META: Record<
     border: "border-[var(--down)]",
     bg: "bg-[rgba(239,68,68,0.08)]",
   },
+  step_aside: {
+    label: "STEP ASIDE",
+    text: "text-[var(--amber)]",
+    glow: "glow-amber",
+    border: "border-[var(--amber)]",
+    bg: "bg-[rgba(255,165,0,0.08)]",
+  },
 };
 
 function sentimentDot(s?: NewsItem["sentiment"]): string {
@@ -206,8 +213,10 @@ export default function AssetDailyView({
 }) {
   const today = series[0];
   const history = series.slice(1);
-  const win = WINNER_META[today.day_winner];
-  const act = ACTION_META[today.decision.action];
+  // Fall back gracefully if a dossier ever carries an unmapped value, so one
+  // stray field can never crash the whole static build again.
+  const win = WINNER_META[today.day_winner] ?? WINNER_META.flat;
+  const act = ACTION_META[today.decision.action] ?? ACTION_META.hold;
   const snap = today.snapshot;
   const isCrypto = today.asset === "btc";
   const cur = today.currency_symbol ?? "$";
@@ -393,8 +402,10 @@ export default function AssetDailyView({
         </div>
       </Panel>
 
-      {/* #7 — defined-risk options structure from IV + levels ($-quoted desks) */}
-      {cur === "$" && (
+      {/* #7 — defined-risk options structure from IV + levels ($-quoted desks).
+          Skipped on a "step aside" call: a directional spread would contradict
+          a stand-down. */}
+      {cur === "$" && today.decision.action !== "step_aside" && (
         <OptionsStructureCard
           price={snap.price}
           action={today.decision.action}
@@ -404,15 +415,18 @@ export default function AssetDailyView({
         />
       )}
 
-      {/* Scenario payoff into the next catalyst — uses IV, else nearest levels */}
-      <ScenarioPayoffCard
-        price={snap.price}
-        action={today.decision.action}
-        ivPct={today.positioning.iv}
-        levels={today.key_levels}
-        catalysts={today.catalysts}
-        currency={cur}
-      />
+      {/* Scenario payoff into the next catalyst — uses IV, else nearest levels.
+          Also directional, so skipped when the call is to step aside. */}
+      {today.decision.action !== "step_aside" && (
+        <ScenarioPayoffCard
+          price={snap.price}
+          action={today.decision.action}
+          ivPct={today.positioning.iv}
+          levels={today.key_levels}
+          catalysts={today.catalysts}
+          currency={cur}
+        />
+      )}
 
       {/* ===================== BULL vs BEAR ===================== */}
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">
