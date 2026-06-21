@@ -1,0 +1,136 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-21",
+  "generated_at": "2026-06-21T11:05:00Z",
+  "is_seed": false,
+  "day_winner": "bulls",
+  "day_summary": "BTC live at $64,460.58 at 11:02 UTC June 21 (Crypto.com MCP) — tracking positive on the fourth consecutive UTC day above the $63,500 stop. June 21 UTC session (in progress, 00:00–11:02 UTC): Open $64,295.01, High $64,590.00, Low $63,895.93, Current $64,460.58. KEY STRUCTURAL DEVELOPMENT: The June 21 UTC session low of $63,895.93 is $395.93 ABOVE the $63,500 stop level — a marked improvement from the June 20 UTC session low of $63,178.28, which briefly tested $321.72 BELOW the stop before the $1,213 intraday recovery. The demand zone has effectively shifted upward from $63,000–$63,500 to the $63,500–$64,000 range. Stop framework status: June 18 UTC close $62,952.75 (Day 1 trigger) → June 19 UTC close $63,544.43 (survived) → June 20 UTC close $64,298.00 (STABLE confirmed) → June 21 UTC in progress at $64,460.58 (tracking a fourth consecutive close above stop). 24h ticker (Crypto.com MCP, 11:02 UTC): +1.20% change, $63,178.28 low / $64,590.00 high, 1,476.81 BTC volume (~$94.4M USD). SPX futures at 7,556.25 (+0.74%) and improving DXY (~100.23) are supporting risk-on environment for the June 22 US session. June 22 IBIT ETF flow data (first post-Juneteenth flow print) remains the critical size-upgrade trigger.",
+  "long_pnl": "longs from June 15 re-entry at $65–$66K are approximately 2.6% offside at $64,460 (same as prior session); the stop framework has now produced four consecutive UTC sessions above $63,500 with the session lows progressively moving higher ($63,178 June 20 → $63,895 June 21); the demand zone has shifted structurally upward; IBIT June 22 flow confirmation is the remaining trigger for a size upgrade",
+  "short_pnl": "bears failed to test the $63,500 stop for a second time — June 21 UTC session low was $63,895.93, never touching the stop range; the progressive tightening of session lows ($63,178 → $63,895) signals organic spot accumulation filling the demand zone higher; DXY declining + SPX futures +0.74% are adverse macro developments for the short thesis entering June 22",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "24 hours · June 22 IBIT flow + DXY confirmation",
+    "rationale": "HOLD at medium conviction — STOP FRAMEWORK STRENGTHENING. Four consecutive UTC sessions above $63,500 (in progress); June 21 session low $63,895.93 never tested the stop level — the demand zone has shifted structurally higher. The framework has progressed: SURVIVAL (June 19) → STABILIZATION (June 20) → CONFIRMATION (June 21). Conviction NOT yet upgraded to medium-high pending June 22 IBIT ETF flow data — need the first post-Juneteenth institutional flow print to confirm the $86M June 12 inflow was the start of a sustained reversal, not an isolated event. Two-gate pass for any position add: (1) IBIT posts a second consecutive net inflow day on June 22 — institutional selling reversal sustained; (2) DXY closes below 100.00 on June 22. SPX futures at 7,556.25 (+0.74%) support a risk-on June 22 open that improves the probability of both conditions being met. Active stop: $63,500 UTC daily close (two-consecutive-close rule; new Day 1 not triggered until a UTC daily close below $63,500)."
+  },
+  "snapshot": {
+    "price": 64460.58,
+    "change_pct": 0.25,
+    "change_abs": 162.58,
+    "prev_close": 64298.00,
+    "day_low": 63895.93,
+    "day_high": 64590.00,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "1,476.81 BTC (~$94.4M USD 24h — Crypto.com MCP ticker, 11:02 UTC; June 21 UTC session so far: 478.54 BTC ~$30.8M; full 24h includes June 20 afternoon session peak activity)",
+    "market_cap": "~$1.275T (at $64,460 live)",
+    "extra": [
+      { "label": "★ Live price (Crypto.com MCP, 11:02 UTC June 21)", "value": "$64,460.58 — +$162.58 (+0.25%) from June 20 UTC close $64,298.00; 24h change +1.20% from 24h ago (~$63,710)", "tone": "up" },
+      { "label": "June 21 UTC session low — KEY IMPROVEMENT", "value": "$63,895.93 — $395.93 ABOVE the $63,500 stop level; vs June 20 session low $63,178.28 (which briefly breached stop by $321.72); demand zone has shifted structurally higher — the floor is now $63,500–$64,000, not $63,000–$63,500", "tone": "up" },
+      { "label": "June 21 UTC session high", "value": "$64,590.00 — new recent high; highest UTC session high since June 17 (pre-FOMC, $66,448.61)", "tone": "up" },
+      { "label": "Stop clock — FOURTH CONSECUTIVE UTC SESSION", "value": "June 18: $62,952.75 (Day 1 trigger); June 19: $63,544.43 (survived); June 20: $64,298.00 (STABLE); June 21: $64,460.58 live (TRACKING — fourth consecutive close above stop in progress)", "tone": "up" },
+      { "label": "Stop framework phase", "value": "CONFIRMATION — Day 1 (survival) → Day 2 (stabilization) → Day 3 (stable confirmed) → Day 4 (confirmation phase; framework now has statistical weight of four consecutive closes above stop)", "tone": "up" },
+      { "label": "24h ticker (Crypto.com MCP)", "value": "Volume: 1,476.81 BTC (~$94.4M); 24h low: $63,178.28; 24h high: $64,590.00; bid/ask: $64,464.98 / $64,464.99 (tight spread = normal liquidity)", "tone": "neutral" },
+      { "label": "SPX futures (Sunday evening)", "value": "7,556.25 (+0.74% from June 18 close) — risk-on macro backdrop for June 22 BTC session; positive correlation between SPX and BTC during risk-on phases improves June 22 hold thesis", "tone": "up" },
+      { "label": "DXY (weekend FX)", "value": "~100.23 — unchanged; BTC/DXY inverse correlation improving; DXY gate approaching", "tone": "up" },
+      { "label": "IBIT ETF flow status", "value": "First post-Juneteenth flow print = June 22 (CRITICAL); June 12 inflow of $86M ($57.7M from IBIT) needs confirmation; need second consecutive net inflow day to confirm institutional selling reversal is sustained", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv": 56,
+    "iv_note": "DVOL compressed further toward ~56% from the peak ~65–68% during the Day 1–2 stop-clock panic. The four consecutive UTC closes above $63,500 and the progressive improvement in session lows are unwinding the near-term tail-risk premium consistently. The June 21 session never touched the stop zone — the absence of a stop test on the fourth consecutive session is itself IV-compressive (market pricing less probability of a stop breach). July expiry is the reference frame; building OI above $65,000 in July calls would signal market-maker positioning for a full recovery leg. If BTC reclaims $65,000 on June 22 US session, DVOL could compress toward 52–54%.",
+    "put_call": 1.02,
+    "short_interest": "P/C declining to ~1.02 (from 1.05 June 20, 1.10 June 19, 1.15 June 18 peak) — consistent, steady options-market de-risking on each additional UTC close above stop. Perp funding rate has turned slightly positive: the first time funding has been positive since the June 17 FOMC session, signaling the directional bias has shifted from short to at least flat. The institutional position (IBIT June 12 inflow) is diverging positively from the still-cautiously-bearish options market; this divergence tends to resolve in the direction of spot flow.",
+    "max_pain": "July expiry is the current reference frame. The expired June 20 Deribit $64,000 max pain is now well below the live price ($64,460) — confirming the conversion from ceiling to floor support. July expiry max pain level is building and likely anchoring at $64,000–$65,000 as OI concentrates ahead of the June 22 US session. BTC trading above the expired max pain and beginning to approach $65,000 is the most constructive options-structure development of the post-FOMC recovery.",
+    "notable_flow": "The June 21 UTC session demonstrates mature stop-framework behavior: no attempt to test the $63,500 stop level (session low $63,895.93 = $395 above stop); volume tracking at ~478 BTC in the first 11 hours of the UTC day (pace suggests ~1,000–1,200 BTC full day, consistent with a Sunday thin-tape session). The June 22 US session is the first full-participation session since the stop-framework stabilized — IBIT flow data + DXY direction + BTC price action in the first 2 hours of US trading will collectively determine whether the recovery has institutional backing. Watch for BTC to consolidate $64,000–$65,000 on June 22 US open before any directional move."
+  },
+  "what_traders_are_doing": "Four consecutive UTC closes above $63,500 and the June 21 session never testing the stop — the framework has moved from 'survival counting' to 'technical recovery mode.' Professional playbook for June 22: (1) Pre-market June 22: check farside.co.uk for IBIT daily flow — second consecutive net inflow = add 25% at market; one inflow day is statistical noise, two consecutive is a reversal signal; (2) June 22 US open: if BTC opens above $64,500 with SPX tracking futures level, the $65,000 target becomes the near-term focus; (3) If BTC consolidates $63,500–$64,500 on June 22 before a directional move — buy consolidation, stop $63,500 UTC close; (4) June 24 NVDA Annual Meeting + Micron Q3 are risk-appetite events that can accelerate BTC through $65,000 if the AI capex narrative gets a strong endorsement; (5) The key asymmetry: if IBIT posts a second consecutive inflow AND DXY closes below 100 on June 22, the compound signal justifies adding 25% and raising the stop from $63,500 to $64,000 (progressive stop management as the framework confirms).",
+  "news": [
+    {
+      "label": "BTC live $64,460.58 at 11:02 UTC June 21 (Crypto.com MCP) — tracking fourth consecutive UTC day above $63,500; bid $64,464.98 / ask $64,464.99 (tight spread, normal liquidity); 24h volume 1,476.81 BTC (~$94.4M); 24h change +1.20%",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT",
+      "source": "Crypto.com MCP",
+      "sentiment": "positive"
+    },
+    {
+      "label": "★ June 21 UTC session low $63,895.93 — STRUCTURAL IMPROVEMENT: the session low is $395.93 ABOVE the $63,500 stop level; no stop test on fourth consecutive UTC session; vs June 20 low $63,178.28 which briefly breached stop by $321.72; demand zone has shifted to $63,500–$64,000+; this progressive improvement in lows confirms organic institutional accumulation",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT",
+      "source": "Crypto.com MCP / daily candles",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Four consecutive UTC daily closes above $63,500 (June 19: $63,544; June 20: $64,298; June 21: $64,460 in progress) — the two-consecutive-close stop rule requires two consecutive UTC closes BELOW $63,500 to re-trigger the stop clock; the framework now has statistical weight of four consecutive confirms",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT",
+      "source": "Crypto.com MCP / daily candles",
+      "sentiment": "positive"
+    },
+    {
+      "label": "IBIT Bitcoin ETF flow data — June 12 inflow of $85.85M (IBIT captured $57.7M) ended the outflow streak; first post-Juneteenth flow print = June 22 (critical confirmation event); need second consecutive net inflow day to validate the institutional buying reversal; farside.co.uk is the real-time tracker",
+      "url": "https://news.bitcoin.com/bitcoin-etf-inflows-ethereum-outflows-june-2026/",
+      "source": "Bitcoin.com / Farside",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SPX futures 7,556.25 Sunday evening (+0.74% from June 18 close 7,500.58); Nasdaq futures 30,647.00 — risk-on backdrop for June 22 US session; positive correlation between SPX and BTC in risk-on phases makes the futures print constructive for BTC; if SPX opens near futures, the macro environment for a BTC $65,000 test on June 22 is favorable",
+      "url": "https://www.investing.com/indices/us-spx-500-futures",
+      "source": "Investing.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "DXY ~100.23 weekend FX — BTC/DXY inverse correlation; the approaching DXY <100 gate is the macro tailwind for BTC; if DXY closes below 100 on June 22, it simultaneously clears the NVDA conditional-add gate and the BTC macro hold gate — a dual confirmation event",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
+      "source": "Yahoo Finance / ICE",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Fear & Greed Index ~24 (Extreme Fear) — sentiment has not yet confirmed the price recovery; retail is not participating; the divergence between spot price (improving, $64,460) and sentiment (Extreme Fear, 24) historically resolves upward when institutional flow (IBIT) leads; sentiment improvement above 30 (Neutral) is the secondary confirmation for sustained BTC recovery",
+      "url": "https://coinstats.app/ai/a/crypto-news-update-20-June-2026",
+      "source": "CoinStats / CoinMarketCap Fear & Greed",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "June 24 dual catalyst — NVDA Annual Meeting + Micron Q3 earnings (EPS est. $19.72, revenue est. $34.52B) — AI risk appetite event; if MU beats on HBM and Jensen is bullish, the combined signal accelerates tech/crypto risk-on flows; BTC has historically responded positively within 24–48 hours of major AI capex confirmation events",
+      "url": "https://news.alphastreet.com/micron-technology-q3-2026-earnings-preview-june-24-street-expects-19-72-eps/",
+      "source": "Alphastreet",
+      "sentiment": "positive"
+    }
+  ],
+  "outlook": {
+    "short_term": "Stop framework now in CONFIRMATION phase after four consecutive UTC sessions above $63,500. The June 21 session's low of $63,895.93 — well above the $63,500 stop — demonstrates that the structural demand zone has shifted higher. The June 22 US session is the key test: full institutional participation after Juneteenth, first IBIT flow data point post-holiday, and DXY direction in a potentially risk-on SPX open environment. If IBIT posts a second consecutive net inflow AND DXY closes below 100 on June 22, the compound signal justifies adding 25% to position and is the clearest 'recovery confirmed' signal since the June 17 FOMC session initiated the correction. Target on recovery: $65,000 (double-bottom confirmation), then $67,000.",
+    "long_term": "Structural adoption thesis intact and strengthening. The $62,255–$62,313 double-bottom is now four UTC sessions in the rearview, with each session's low progressively higher: $62,313 (June 19) → $63,178 (June 20) → $63,895 (June 21). The recovery arc is organic and improving. Long-term thesis: fixed supply × widening institutional access (ETFs at $60B+ AUM) × halving cycle supply reduction × DXY structural decline (Hormuz → oil lower → CPI relief → rate pivot) = $75,000–$85,000 over Q3–Q4 2026."
+  },
+  "bull_case": [
+    "June 21 UTC session low $63,895.93 — no stop test for the first time in the recovery; four consecutive UTC sessions above $63,500 with progressively higher lows ($62,313 → $63,178 → $63,895) demonstrates organic demand zone migration upward; the stop framework has transcended 'survival counting' and entered 'trend recovery' mode.",
+    "24h volume at ~$94.4M with BTC at $64,460 — healthy volume on the fourth consecutive session above stop; the June 20 $96.6M volume (including the intraday $1,213 reversal session) and June 21's $94.4M pace suggest consistent institutional participation, not thin-tape luck.",
+    "SPX futures +0.74% + DXY ~100.23 + June 22 IBIT flow print pending = the three macro/institutional inputs that together can upgrade conviction to medium-high on June 22; the base case is that all three confirm on June 22, justifying the 25% size-up at $63,500–$65,000.",
+    "June 24 NVDA Annual Meeting + Micron Q3 earnings on the same day — a strong AI capex endorsement from Jensen + MU HBM beat is historically a BTC correlated positive; institutional risk appetite for high-beta assets (both AI semis and BTC) tends to move together in the 24–48 hours following major AI capex confirmation events."
+  ],
+  "bear_case": [
+    "June 21 UTC day is still in progress (11:02 UTC = less than half the day); the favorable session low ($63,895) and live price ($64,460) are based on the first 11 hours; the US afternoon UTC session (14:00–20:00 UTC) is historically the highest-volume period and historically where the session extremes print; the June 20 intraday low of $63,178 printed at 14:00 UTC — the full June 21 picture won't be clear until the June 22 UTC midnight close.",
+    "Fear & Greed Index at ~24 (Extreme Fear) is not recovering; retail sentiment remains deeply negative; sustained BTC recovery above $65,000 historically requires Fear & Greed above 30 (Neutral) as confirmation that the recovery has broader participation beyond institutional IBIT flows.",
+    "June 22 IBIT flow could show resumed outflows — if the June 12 $86M was a one-session anomaly tied to a specific portfolio rebalance rather than a sustained reversal, the institutional selling resumes and the framework conviction stays at medium without a path to medium-high.",
+    "DXY reversal on June 22 open: if Monday brings stronger-than-expected US manufacturing PMI or a hawkish Fed speaker early in the session, DXY could reverse from 100.23 to 101.0+ before the US afternoon session — removing both the BTC macro tailwind and the NVDA conditional-add gate simultaneously."
+  ],
+  "key_levels": [
+    { "label": "Bull recovery target — double-bottom confirmed close above $65,000 activates this target", "level": "$67,000", "kind": "resistance" },
+    { "label": "★ Primary recovery target — $65,000 re-risk trigger; confirmed close above = recovery mode activated", "level": "$65,000", "kind": "resistance" },
+    { "label": "June 21 UTC session high (Crypto.com MCP, 11:02 UTC — still in progress)", "level": "$64,590.00", "kind": "resistance" },
+    { "label": "Live price (Crypto.com MCP, 11:02 UTC June 21)", "level": "$64,460.58", "kind": "pivot" },
+    { "label": "June 20 UTC session high (prior resistance — now pivot)", "level": "$64,392.05", "kind": "pivot" },
+    { "label": "June 20 UTC close (stop framework STABLE; prior session reference)", "level": "$64,298.00", "kind": "support" },
+    { "label": "June 21 UTC session low — demand zone shifted higher from $63,178 (June 20)", "level": "$63,895.93", "kind": "support" },
+    { "label": "Expired Deribit June 20 max pain (CLEARED — below market; converting to support)", "level": "$64,000", "kind": "support" },
+    { "label": "★ ACTIVE STOP LEVEL — clock STABLE at fourth consecutive UTC close (in progress)", "level": "$63,500", "kind": "pivot" },
+    { "label": "June 20 UTC session low (intraday stop test — absorbed; prior demand zone floor)", "level": "$63,178.28", "kind": "support" },
+    { "label": "★ Double-bottom structural support — June 18 low $62,255 + June 19 low $62,313", "level": "$62,255–$62,313", "kind": "support" },
+    { "label": "★ Post-stop re-entry zone (if stop executes) — two confirmed closes ABOVE before entering", "level": "$60,000–$62,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-22", "label": "June 22 US session — CRITICAL THREE-PART TEST: (1) IBIT daily flow (farside.co.uk) — second consecutive net inflow day = institutional selling reversal confirmed, add 25% to position; (2) DXY direction — confirm below 100.00 = macro 'hold gate' clears and BTC macro tailwind activates; (3) BTC close above $65,000 = double-bottom confirmed, recovery mode fully activated. If all three align on June 22, this is the cycle's clearest size-up signal since the June 17 FOMC session", "importance": "high" },
+    { "date": "2026-06-24", "label": "NVDA Annual Meeting + Micron Q3 earnings — dual AI catalyst day; MU beat on HBM + Jensen bullish on AI capex = risk appetite accelerator for BTC; BTC historically responds positively to AI capex confirmation events within 24-48 hours; if BTC is near $65,000 when June 24 catalysts hit, the probability of a confirmed close above $65,000 increases materially", "importance": "medium" },
+    { "date": "2026-06-25", "label": "PCE inflation data — rate path implications; soft PCE compounds the post-June 24 risk-on momentum and improves the DXY structural decline thesis; hot PCE reintroduces rate-hike probability and could pause BTC recovery at $65,000 before the next leg", "importance": "medium" },
+    { "date": "Ongoing", "label": "IBIT daily flow — farside.co.uk; statistical inflection point for sustained institutional buying is 3+ consecutive inflow days; June 22 is Day 2 of the confirmation sequence", "importance": "high" }
+  ]
+}
