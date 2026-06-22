@@ -147,6 +147,37 @@ export interface LockupSnapshot {
   daysToFull: number;
 }
 
+export interface TriggerStatus {
+  /** Most recent close passed in, or null if no data. */
+  price: number | null;
+  /** Is price currently at/above the +30% trigger? */
+  aboveNow: boolean;
+  /** Days at/above the trigger within the lookback window. */
+  daysAbove: number;
+  /** Size of the lookback window actually evaluated (≤10). */
+  lookback: number;
+  /** The condition is met once 5 of any 10 trading days close ≥ trigger. */
+  armed: boolean;
+}
+
+/**
+ * Evaluate the +30%-price accelerator against recent daily closes (most-recent
+ * first). The S-1 condition: Class A ≥ $175.50 on 5 of any 10 trading days frees
+ * an extra 10% of insider shares early. We approximate "trading days" with the
+ * dossier's daily closes — a live read on whether that supply is arming.
+ */
+export function getTriggerStatus(recentCloses: number[]): TriggerStatus {
+  const window = recentCloses.slice(0, 10);
+  const daysAbove = window.filter((p) => p >= SPCX_TRIGGER_PRICE).length;
+  return {
+    price: recentCloses[0] ?? null,
+    aboveNow: (recentCloses[0] ?? 0) >= SPCX_TRIGGER_PRICE,
+    daysAbove,
+    lookback: window.length,
+    armed: daysAbove >= 5,
+  };
+}
+
 /**
  * Annotate the lockup schedule against a reference date. `refIso` should be the
  * current day (yyyy-mm-dd); everything on or before it is "released".

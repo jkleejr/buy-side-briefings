@@ -9,7 +9,11 @@ import { formatLevel, formatPct } from "@/lib/utils";
 // nearest support/resistance and their distance in percent.
 // ---------------------------------------------------------------------------
 
-function parseLevelNum(s: string): number | null {
+function parseLevelNum(s: string | undefined | null): number | null {
+  // Defensive: a dossier can carry a mistyped/missing `level` (e.g. the field
+  // emitted as `value`). One stray entry must never crash the static build —
+  // just drop it from the gauge.
+  if (typeof s !== "string") return null;
   const n = parseFloat(s.replace(/[^0-9.]/g, ""));
   return Number.isFinite(n) ? n : null;
 }

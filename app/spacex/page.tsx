@@ -39,7 +39,7 @@ export default function SpaceXPage() {
       }
       technicals={<TechnicalsPanel symbol="SPCX" currency="$" />}
       callRecord={<AssetCallRecord series={series} symbol="SPCX" />}
-      extra={<SpacexShortPanel />}
+      extra={<SpacexShortPanel recentCloses={series.map((d) => d.snapshot.price)} />}
     />
   );
 }

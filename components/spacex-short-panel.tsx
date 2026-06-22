@@ -1,5 +1,6 @@
 import {
   getSpacexLockup,
+  getTriggerStatus,
   SPCX_IPO_DATE,
   SPCX_IPO_PRICE,
   SPCX_TRIGGER_PCT,
@@ -8,6 +9,35 @@ import {
 } from "@/lib/spacex-lockup";
 import { cn } from "@/lib/utils";
 import Panel from "./panel";
+
+// The standing structural bear case — distinct from the day's bear_case bullets.
+// Sourced from CFRA, Morningstar and S-1 coverage (Jun 2026); see panel footer.
+const BEAR_THREADS: { head: string; body: string }[] = [
+  {
+    head: "Priced for perfection",
+    body: "~100x sales at ~$1.8T leaves zero room for error. CFRA rates it SELL ($115 target); independent fair-value marks cluster $63–$115 — 40–65% below spot.",
+  },
+  {
+    head: "xAI is bleeding",
+    body: "The S-1's $28.5T TAM leans on $22.7T of future AI, yet the AI unit lost $6.36B on $3.2B revenue in 2025. Company-wide net loss was $4.94B — growth at industrial-scale cash burn.",
+  },
+  {
+    head: "Starlink's moat is cracking",
+    body: "Amazon Leo/Kuiper ($10B) undercuts at $50–$100/mo; Starlink is already cutting prices 15–40% abroad. The cash machine faces real margin pressure.",
+  },
+  {
+    head: "Starship gates the story",
+    body: "Rapid-reuse Starship and orbital data centers — both in bull models — are unsolved and not expected before ~2028. Delays also throttle the V3 sats Starlink growth needs.",
+  },
+  {
+    head: "Supply overhang",
+    body: "Insiders (>20% of Class A) unlock in waves; the Q2 (~Aug, +20%) and Q3 (~Nov, +28%) cliffs and the Dec 8 full release dump pre-IPO stock onto a thin float.",
+  },
+  {
+    head: "Key-man concentration",
+    body: "Musk controls governance at two faith-priced, unproven-at-scale companies. A founder-distraction or Tesla-linked shock hits sentiment with no easy hedge.",
+  },
+];
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -43,7 +73,7 @@ function Stat({ label, value, sub }: { label: string; value: string; sub?: strin
  * the spine of the bear / short case — plus how to express it and what the
  * borrow / squeeze risks are. Educational, not advice.
  */
-export default function SpacexShortPanel() {
+export default function SpacexShortPanel({ recentCloses = [] }: { recentCloses?: number[] }) {
   // Reference "today" in UTC (yyyy-mm-dd). Server-rendered; ISR re-runs it.
   const now = new Date();
   const refIso = `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}-${String(
@@ -51,6 +81,7 @@ export default function SpacexShortPanel() {
   ).padStart(2, "0")}`;
 
   const { events, freedPct, next, daysToNext, daysToFull } = getSpacexLockup(refIso);
+  const trig = getTriggerStatus(recentCloses);
 
   return (
     <Panel
@@ -152,10 +183,26 @@ export default function SpacexShortPanel() {
         ))}
       </ul>
 
-      {/* ---- price-trigger wildcard ---- */}
+      {/* ---- price-trigger wildcard (live) ---- */}
       <div className="border-t border-[var(--border)] bg-[rgba(239,68,68,0.05)] px-3 py-2">
-        <div className="font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Wildcard accelerator
+        <div className="flex items-baseline justify-between gap-2">
+          <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+            Wildcard accelerator · live
+          </span>
+          {trig.price != null && (
+            <span
+              className={cn(
+                "shrink-0 border px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-widest",
+                trig.armed
+                  ? "border-[var(--down)] bg-[rgba(239,68,68,0.12)] text-[var(--down)]"
+                  : trig.aboveNow
+                    ? "border-[var(--amber)] text-[var(--amber)]"
+                    : "border-[var(--border)] text-[var(--dim)]",
+              )}
+            >
+              {trig.armed ? "armed" : trig.aboveNow ? "arming" : "not armed"}
+            </span>
+          )}
         </div>
         <p className="mt-1 font-mono text-[10px] leading-relaxed text-[var(--foreground)]">
           An extra <span className="text-[var(--down)]">+{SPCX_TRIGGER_PCT}%</span> frees early — with no
@@ -164,6 +211,49 @@ export default function SpacexShortPanel() {
           trading days. It pulls supply forward into strength but doesn&apos;t change the day-180
           endpoint — a built-in brake on rallies.
         </p>
+        {trig.price != null && (
+          <div className="mt-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-0.5 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
+            <span>
+              Last <span className="tabular-nums text-[var(--foreground)]">${trig.price.toFixed(2)}</span>
+            </span>
+            <span>
+              vs trigger{" "}
+              <span className={cn("tabular-nums", trig.aboveNow ? "text-[var(--down)]" : "text-[var(--up)]")}>
+                {trig.aboveNow ? "+" : ""}
+                {(((trig.price - SPCX_TRIGGER_PRICE) / SPCX_TRIGGER_PRICE) * 100).toFixed(1)}%
+              </span>
+            </span>
+            <span>
+              <span className="tabular-nums text-[var(--foreground)]">{trig.daysAbove}</span>/5 of last{" "}
+              {trig.lookback} days ≥ trigger
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* ---- standing structural bear case ---- */}
+      <div className="border-t border-[var(--border)] px-3 py-2.5">
+        <div className="flex items-baseline justify-between gap-2">
+          <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
+            The structural bear case
+          </span>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--down)]">
+            fair-value $63–$115
+          </span>
+        </div>
+        <ul className="mt-1.5 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+          {BEAR_THREADS.map((t) => (
+            <li key={t.head} className="border border-[var(--border)] bg-black px-2 py-1.5">
+              <div className="flex items-baseline gap-1.5">
+                <span className="shrink-0 text-[var(--down)]">▼</span>
+                <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-[var(--foreground)]">
+                  {t.head}
+                </span>
+              </div>
+              <p className="mt-0.5 font-mono text-[10px] leading-relaxed text-[var(--dim)]">{t.body}</p>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* ---- how to express it + risks ---- */}
