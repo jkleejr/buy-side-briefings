@@ -200,6 +200,7 @@ export default function AssetDailyView({
   fundamentals,
   technicals,
   callRecord,
+  extra,
 }: {
   series: AssetDaily[];
   /** Optional live price chart (range selector), rendered right under the hero. */
@@ -210,6 +211,8 @@ export default function AssetDailyView({
   technicals?: React.ReactNode;
   /** Optional scored call-record panel, rendered after the hero. */
   callRecord?: React.ReactNode;
+  /** Optional asset-specific panel, rendered after the positioning/flow block. */
+  extra?: React.ReactNode;
 }) {
   const today = series[0];
   const history = series.slice(1);
@@ -427,6 +430,9 @@ export default function AssetDailyView({
           currency={cur}
         />
       )}
+
+      {/* ===== ASSET-SPECIFIC PANEL (e.g. SPCX lockup / short setup) ===== */}
+      {extra}
 
       {/* ===================== BULL vs BEAR ===================== */}
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">

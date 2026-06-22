@@ -3,6 +3,7 @@ import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
 import BigAssetChart from "@/components/big-asset-chart";
 import TechnicalsPanel from "@/components/technicals-panel";
+import SpacexShortPanel from "@/components/spacex-short-panel";
 
 export const metadata = {
   title: "SpaceX (SPCX) — Daily Investor Brief — Buy-Side Briefings",
@@ -38,6 +39,7 @@ export default function SpaceXPage() {
       }
       technicals={<TechnicalsPanel symbol="SPCX" currency="$" />}
       callRecord={<AssetCallRecord series={series} symbol="SPCX" />}
+      extra={<SpacexShortPanel />}
     />
   );
 }
