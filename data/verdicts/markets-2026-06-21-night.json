@@ -1,0 +1,140 @@
+{
+  "routine": "markets",
+  "date": "2026-06-21",
+  "window": "night",
+  "generated_at": "2026-06-22T01:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — BTC Day 1 Stop Re-Triggered (June 21 UTC Close $63,313); June 22 UTC Recovering $64,520; Equities Closed Sunday",
+    "conviction": "medium",
+    "rationale_short": "BTC June 21 UTC candle confirmed closed at $63,313 — $187 below the $63,500 stop level (Crypto.com MCP daily candle). Day 1 of the stop clock RE-TRIGGERED for the second time in the recovery sequence. Morning routine tracked $64,460 at 11am UTC with apparent safety; the US afternoon UTC session (14:00–20:00 UTC) delivered a $1,317 sell-off (high $64,590 → low $63,273 → close $63,313). CRITICAL OFFSET: June 22 UTC candle opened at $63,319 and has immediately recovered to $64,520 (2:16am UTC), $1,207 above the stop level. Under the two-consecutive-close rule, the stop has NOT executed — Day 2 close above $63,500 resets the clock. US equities closed all day Sunday; Monday June 22 is the diagnostic session for all four watchlist assets: (1) BTC — June 22 UTC close above $63,500 is the stop-reset condition; (2) NVDA — DXY conditional-add gate at ~100.50 (approaching); (3) SPCX — first equity pricing of 72-hour-old IG ratings; (4) SK Hynix — ADR SEC clearance expected any day the week of June 22. Micron Q3 consensus revised higher overnight: $34.66B revenue / $19.95 EPS (vs morning's $34.52B/$19.72); HBM fully booked through 2026; gross margin expected to break 80%. SPCX received an MSCI CCC (lowest) ESG rating — does not affect IG credit standing but adds governance overlay for ESG-mandated funds. Regime: HOLD/SELECTIVE — no new equity index longs until DXY confirms below 100.00 on June 22 close AND BTC June 22 UTC closes above $63,500."
+  },
+  "supporting_data": [
+    {
+      "label": "★ BTC June 21 UTC candle CLOSED $63,313 — Day 1 stop RE-TRIGGERED (Crypto.com MCP confirmed daily candle); Open $64,295 / High $64,590 / Low $63,273 / Close $63,313; volume 1,683 BTC ($106.6M — elevated vs June 20 1,501 BTC); June 22 UTC already recovering to $64,520 at 2:16am UTC",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT"
+    },
+    {
+      "label": "SK Hynix ADR Nasdaq listing: SEC clearance expected week of June 22 (confirmed — Reuters/WEEX citing people familiar; WEEX: 'SEC Approval Possible in Late June'); actual Nasdaq listing targeting August 2026; ~$14B raise; Seoul Economic Daily June 22 article confirms ADR share price to be set 'only just before debut'",
+      "url": "https://www.weex.com/news/detail/sk-hynix-reportedly-plans-us-adr-listing-as-early-as-august-with-sec-approval-possible-in-late-june-jnls8yu9ghvu1mzk55pqrnd0"
+    },
+    {
+      "label": "Micron Q3 earnings June 24 — UPDATED OVERNIGHT CONSENSUS: revenue $34.66B (vs morning $34.52B), EPS $19.95 (vs morning $19.72); HBM capacity fully booked through 2026; gross margin expected to break 80%; RBC Capital raised PT to $1,200; Strong Buy analyst consensus",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261975340-mu-q3-earnings-preview-june-2026-tradingkey"
+    },
+    {
+      "label": "SPCX investment-grade credit ratings still unpriced (3rd consecutive day): Moody's Baa1, Fitch BBB+, S&P BBB — all stable; June 22 US open is the first and only equity market pricing opportunity; NEW: MSCI assigned SpaceX CCC (lowest ESG rating), citing governance concerns — doesn't affect IG credit but relevant for ESG-mandated institutional funds",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-lands-investment-grade-credit-083755866.html"
+    },
+    {
+      "label": "NVDA conditional-add framework: DXY last confirmed close June 19 ~100.79 (Juneteenth); weekend FX estimate ~100.23–100.50; conditional-add gate (DXY <100.00) approaching; June 18 confirmed close $210.69; VIX 16.40 (CLEARED), SPX 7,500.58 (CLEARED); June 22 DXY close is the final gating event",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+      "label": "BTC stop clock full history (Crypto.com MCP confirmed candles): June 18 $62,952.75 (Day 1) → June 19 $63,544.43 (SURVIVED) → June 20 $64,298.00 (STABLE) → June 21 $63,313.00 (DAY 1 RE-TRIGGERED) → June 22 UTC tracking $64,520 (above stop — stop NOT executed)",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT"
+    }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7500.58,  "change_pct": 0.00,  "as_of": "2026-06-18T20:00:00Z" },
+    "nasdaq": { "level": 26517.93, "change_pct": 0.00,  "as_of": "2026-06-18T20:00:00Z" },
+    "vix":    { "level": 16.40,    "change_pct": -11.06, "as_of": "2026-06-18T20:00:00Z" },
+    "ust10y": { "level": 4.45,     "change_bps": 0,     "as_of": "2026-06-20T22:00:00Z" },
+    "dxy":    { "level": 100.50,   "change_pct": 0.27,  "as_of": "2026-06-21T22:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.40,  "trigger_above": 17,   "unit": "",        "status": "CLEARED — 16.40 < 17 gate; last confirmed June 18 close; SPX futures suggest June 22 open keeps VIX below 17" },
+    { "name": "30Y Yield",    "value": 4.93,   "trigger_above": 5.00, "unit": "%",       "status": "borderline — 7 bps buffer; May PCE June 25 (Wells Fargo est. 4.1% YoY) is the binary; BTC Day 1 stop re-trigger and DXY uncertainty increase the probability of a 30Y test of 5.00% before PCE" },
+    { "name": "DXY",          "value": 100.50, "trigger_above": 100,  "unit": "",        "status": "APPROACHING GATE — last confirmed close June 19 Juneteenth ~100.79; weekend FX estimate ~100.23–100.50; conditional-add gate (<100) is the week's primary binary; June 22 close is the official gating event" },
+    { "name": "SPX vs 7,460", "value": 7500.58,"trigger_below": 7460, "unit": "",        "status": "CLEARED — 40 pts above floor; last confirmed June 18 close; prediction market for June 22 open shows 56% probability DOWN vs 44% UP — slightly less constructive than morning's +0.74% futures reading" },
+    { "name": "Brent",        "value": 80.0,   "trigger_above": 97,   "unit": "USD/bbl", "status": "cleared — structural supply thesis intact; Hormuz commercial traffic growing; DXY declining reflects markets pricing Hormuz disinflation pathway" },
+    { "name": "BTC Stop",     "value": 63313,  "trigger_below": 63500,"unit": "USD",     "status": "DAY 1 RE-TRIGGERED — June 21 UTC closed $63,313 ($187 below stop); June 22 UTC recovering $64,520 (2:16am UTC); two-consecutive-close rule: stop executes only on Day 2 close below $63,500; June 22 UTC close is the existential event" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Last confirmed close $210.69 (June 18). Framework unchanged: conditional-add requires DXY close below 100.00 on June 22, with VIX and SPX gates already cleared. UPDATED: Micron Q3 consensus revised overnight to $34.66B revenue / $19.95 EPS (vs morning's $34.52B/$19.72); HBM fully booked through 2026; gross margin expected >80%; RBC Capital PT raised to $1,200. A higher MU bar actually increases the conviction of the NVDA Annual Meeting + Micron dual-catalyst setup — if MU beats elevated consensus and Jensen reaffirms AI capex durability, the compound signal is stronger. BTC Day 1 re-trigger shifts the intra-week risk-on backdrop from 'improving' to 'cautious hold.' June 22 DXY close is still the primary binary for the conditional-add decision.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "★ MATERIAL DEVELOPMENT: June 21 UTC candle CLOSED $63,313 — Day 1 stop RE-TRIGGERED. Morning routine (11am UTC) showed $64,460 with apparent safety; US afternoon UTC session (14:00-20:00 UTC) delivered $1,317 sell-off to close $187 below the $63,500 stop on elevated volume (1,683 BTC). June 22 UTC immediately recovering to $64,520. FRAMEWORK REQUIREMENT: do NOT exit before June 22 UTC close. If June 22 UTC also closes below $63,500 → stop executes, full exit. If June 22 UTC closes above $63,500 → stop clock resets. Three June 22 inputs: (1) IBIT flow (farside.co.uk) — resumed outflows = exit signal HIGH; (2) DXY <100.00 = macro gate; (3) BTC UTC close >$63,500 = clock reset.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$174.90 June 18 stop trigger; no position. IG ratings (Moody's Baa1, Fitch BBB+, S&P BBB) unpriced for 72+ hours — June 22 is the first equity pricing opportunity. NEW: MSCI CCC (lowest ESG) rating assigned — does not affect IG credit standing but adds governance overlay relevant for ESG-mandated institutions. MACRO CAUTION: prediction market for June 22 SPX open shows 56% DOWN vs 44% UP — slightly less constructive than morning's SPX futures +0.74%; BTC Day 1 re-trigger also reduces the risk-on tailwind score. Framework unchanged: two consecutive daily closes above $185 on above-average volume before re-entry. Scenario guide from morning still applies: gap $185+ → wait for close; $175–$185 >150M shares → stabilization watch; below $175 → continue step-aside.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "000660 (SK Hynix)",
+      "note": "₩2,764,000 June 19 close (third consecutive ATH). CONFIRMED: Multiple sources (Reuters/WEEX) confirm SEC clearance expected week of June 22; Seoul Economic Daily June 22 article confirms ADR share price to be 'set only just before debut' (August). ADR clearance announcement could arrive any day June 22-26 before the June 23 KOSPI open. Micron Q3 consensus revised higher overnight ($34.66B/$19.95 EPS, >80% gross margin) — elevated bar that SK Hynix benefits from if met/exceeded. BUY at HIGH conviction — framework unchanged. Add zone ₩2,688,000–₩2,750,000 on any KOSPI pullback. Stop ₩2,540,000.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Short maintained — Brent ~$80; structural thesis intact. DXY weekend FX ~100.50 (slight reversal from 100.23 morning reading toward the 100.79 Juneteenth confirmed close) — modest headwind for the dollar-denominated oil short but structural oil-supply increase from Hormuz reopening remains the dominant factor. Scale short on any Brent bounce to $82-84.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TBT",
+      "note": "~$44-45 est.; 30Y at 4.93% (7 bps from 5.00% trigger). BTC Day 1 re-trigger adds a minor risk-off signal that could momentarily support Treasuries (lower 30Y yield), but the structural FOMC hike probability (60.7% for October) and the May PCE binary (June 25) maintain the TBT rate hedge thesis. Reduce only if 30Y confirms below 4.75%.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MU",
+      "note": "UPDATED CONSENSUS: $34.66B revenue / $19.95 EPS (revised up from $34.52B/$19.72 in morning routine); HBM capacity fully booked through 2026; gross margin expected to break 80%; RBC Capital PT raised to $1,200; Strong Buy analyst consensus. A higher bar = higher potential impact on the read-through for NVDA and SK Hynix if Micron beats. 1/3 position at $135-145 before earnings remains the only offensive long in HOLD/SELECTIVE regime. Earnings call June 24 at 2:30pm MT.",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "BTC adds before June 22 UTC close confirmation",
+      "reason": "Day 1 stop clock RE-TRIGGERED on June 21 UTC close ($63,313 < $63,500). Under the two-consecutive-close framework, adding before June 22 UTC close is premature — the stop may execute tomorrow if the recovery fails. June 22 UTC is currently at $64,520 (bullish sign) but the US afternoon session (14:00-20:00 UTC) is the highest-risk period, mirroring exactly when yesterday's sell-off occurred.",
+      "better_entry": "June 22 UTC closes above $63,500 AND IBIT shows net inflow on June 22 (farside.co.uk) — both conditions before any BTC add. If BTC also closes above $65,000 on June 22 that is an independent add signal (double-bottom confirmed). Any add before these conditions exposes to stop execution on the same day."
+    },
+    {
+      "ticker": "QQQ / SPX index longs on Monday gap-up",
+      "reason": "DXY has not closed below 100.00 on an official US session — last confirmed close was 100.79 on Juneteenth June 19. Weekend FX does not constitute a gate-confirmed regime change. Additionally, the prediction market for June 22 SPX open now shows 56% probability of opening DOWN vs 44% UP — less constructive than the morning's +0.74% SPX futures reading. BTC Day 1 stop re-trigger adds a risk-off overlay.",
+      "better_entry": "DXY confirms below 100.00 on June 22 US session close with SPX holding above 7,460 AND BTC June 22 UTC closes above $63,500 → HOLD/SELECTIVE confirmed across all assets. DXY below 99.00 → BUY upgrade."
+    },
+    {
+      "ticker": "SPCX re-entry before two closes above $185",
+      "reason": "IG ratings (Moody's Baa1, Fitch BBB+, S&P BBB) are unchanged and positive. MSCI CCC ESG adds a governance overlay that may limit ESG-mandated buyers. More importantly, the slightly weaker macro setup for June 22 (BTC Day 1, prediction market 56% SPX down) means the gap-up scenario toward $185 is less certain than the morning's assessment. The framework remains: two consecutive daily closes above $185 before re-entry.",
+      "better_entry": "Two consecutive daily closes above $185 on above-average volume (>150M shares per session) — then re-engage with July put hedge and stop at $165 daily close. If SPCX gaps above $185 on June 22 IG news but closes below $185, that counts as neither close."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Hormuz commercial traffic is flowing post-US-Iran MOU. DXY declining from 101.13 Juneteenth high toward ~100.50 validates the macro oil-disinflation pathway. H2 2026 energy earnings models still embed $87-90 WTI and have not cut estimates. Brent ~$80 is the current short-term equilibrium; the structural equilibrium with Hormuz fully open is $70-75. The $80 Brent level is the better short entry, not the exit.",
+      "entry": "Continue scaling short XLE at $52-55; add on any Brent bounce to $82-84; target $48-50 XLE on $72-75 Brent.",
+      "invalidation": "Iran deal formally collapses AND Brent closes above $90 on two consecutive sessions; or XLE reclaims $62 on a daily close.",
+      "conviction": "medium",
+      "horizon": "3-5 weeks"
+    },
+    {
+      "asset": "TBT (2x inverse TLT)",
+      "direction": "hedge",
+      "thesis": "Warsh's June 17 dot plot (nine hike projections, 3.8% 2026 median) combined with 60.7% October hike probability leaves the 30Y pricing at 4.93% — 7 bps from the 5.00% regime trigger. May PCE on June 25 (Wells Fargo est. 4.1% YoY) is the next binary event. BTC Day 1 stop re-trigger and SPX futures uncertainty add modest near-term support to rates staying elevated — consistent with the TBT hedge thesis.",
+      "entry": "Hold TBT at $44-47; scale up 25% on any dip to $44-45 on Monday June 22 open. Reduce only if 30Y falls below 4.75% on a confirmed dovish signal.",
+      "invalidation": "30Y falls below 4.75% on a confirmed dovish signal — requires oil disinflation to overwhelm the FOMC hike signal; not the base case before PCE.",
+      "conviction": "medium",
+      "horizon": "2-3 weeks"
+    },
+    {
+      "asset": "MU (Micron Technology)",
+      "direction": "long",
+      "thesis": "Micron Q3 FY2026 earnings June 24 — UPDATED consensus: $34.66B revenue / $19.95 EPS; gross margin expected to break 80%; HBM capacity fully booked through 2026 (RBC Capital PT raised to $1,200). The elevated consensus reflects sell-side confidence in the HBM demand supercycle. MU is the only stock-specific earnings trade that operates independently of the DXY macro regime. Beat-and-raise is the base case; a MU beat also catalyzes NVDA ahead of the Annual Meeting and SK Hynix on June 25 KOSPI open.",
+      "entry": "1/3 position at $135-145 before earnings; add to full position post-earnings only if guidance beats; stop: Q3 revenue guidance cut below $31B.",
+      "invalidation": "MU Q3 revenue guidance cut below $31B; NVDA Annual Meeting June 24 guidance disappointment; broad AI-semis sell-off on macro shock before earnings.",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "BTC Day 1 stop re-triggered on June 21 UTC close ($63,313) is the night's central risk development. The sell-off pattern — from morning's apparent safety ($64,460 at 11am UTC) to close at $63,313 — demonstrates that the US afternoon session (14:00-20:00 UTC) is the framework's structural vulnerability window. June 22 UTC is recovering strongly ($64,520 at 2:16am UTC), but the exact same window (US afternoon, 14:00-20:00 UTC) could deliver a Day 2 close below $63,500 if institutional sellers are not done. The bear case for the week: (1) IBIT shows resumed outflows on June 22 (institutional selling reversal was a single-day anomaly); (2) DXY reverses from the weekend decline back toward 101+ on Monday US session (hawkish Fed speaker, stronger-than-expected manufacturing PMI); (3) BTC June 22 UTC afternoon session mirrors June 21, delivering a second consecutive close below $63,500 → stop executes → full exit. Under the bear scenario: BTC exits at market on the June 22 UTC close (8pm ET Monday); NVDA conditional add is postponed indefinitely (DXY gate + BTC risk-on signal both closed); SPCX IG ratings are priced but the gap-up doesn't hold; SK Hynix faces a gap-down on June 23 KOSPI if Micron consensus of $34.66B turns out to be too high. The dual-catalyst setup (NVDA Annual Meeting + Micron Q3 on June 24) becomes a two-way event rather than a high-conviction long. Invalidation of the bear case: BTC June 22 UTC closes above $63,500 AND IBIT shows net inflows AND DXY closes below 100.00 on June 22 → all three gates clear simultaneously → upgrade from HOLD to BUY across the full watchlist.",
+  "body_mdx": "data/briefings/markets/2026-06-21-night.mdx"
+}
