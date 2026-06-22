@@ -1,0 +1,140 @@
+{
+  "routine": "markets",
+  "date": "2026-06-22",
+  "window": "night",
+  "generated_at": "2026-06-22T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — DXY 101.02 Widens; GOOGL AI Talent Exodus -6.5%; SPCX -16.4% Bond Shock; MU +8.70%; June 24 Dual Catalyst 48h",
+    "conviction": "medium",
+    "rationale_short": "June 22 delivered a bifurcated session: GOOGL -6.5% on dual AI talent departure (Nobel Laureate John Jumper → Anthropic; Gemini VP Noam Shazeer → OpenAI) and SPCX -16.4% on $20B inaugural bond offering reset the risk picture, while MU +8.70% and TSM +6.9% signaled institutional confidence in AI-hardware ahead of June 24 earnings. DXY widened to 101.02 (gate worsened from 100.80), SPX buffer to 7,460 floor compressed to 12.79 pts, and VIX estimated above the 17 gate. HOLD maintained at medium conviction; the June 24 NVDA Annual Meeting + Micron Q3 dual catalyst remains the primary upgrade pathway.",
+    "supporting_data": [
+      {
+        "label": "SPX -0.37% to 7,472.79; Nasdaq -1.32% to 26,166.60; Russell 2000 +2.12%; Dow +0.29% — DXY 101.02 (+0.17%) worsened from 100.80, gate now 102 bps away; SPX floor at 7,460 just 12.79 pts below",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-22-2026"
+      },
+      {
+        "label": "GOOGL -6.5% to $346.47 ($320B market cap lost): Nobel Laureate John Jumper (AlphaFold architect, 9-yr DeepMind veteran) → Anthropic; Noam Shazeer (VP Engineering, Gemini co-lead, $2.7B re-acquired from Character.AI) reported joining OpenAI 4 days prior — dual VP-level departures in 4 days constitute a structural AI talent signal",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261982353-google-googl-alphabet-ai-deepmind-john-jumper-anthropic-openai-tradingkey"
+      },
+      {
+        "label": "SPCX -16.4% to $165.78: SpaceX $20B inaugural bond offering (senior unsecured notes, proceeds to repay xAI bridge loan); $75B IPO + $60B acquisition + $20B debt = $155B capital deployment since Feb 2026; $185 two-consecutive-close re-entry framework fully reset",
+        "url": "https://www.techtimes.com/articles/318874/20260622/spacex-stock-falls-16-20-billion-bond-debut-capital-already-owed.htm"
+      },
+      {
+        "label": "MU +8.70% to $1,133.99 on pre-earnings analyst upgrades: TD Cowen PT $1,500, RBC $1,200, Aletheia $1,600, Bernstein Buy reaffirm; Q3 FY2026 earnings June 24 after close; HBM sold-out through 2026-2027",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261975340-mu-q3-earnings-preview-june-2026-tradingkey"
+      },
+      {
+        "label": "TSM +6.9% to $462.12; NVDA -0.5% to $209.63 (resilient in -1.32% Nasdaq tape); AVGO $411.35 — AI hardware complex outperforming AI software; semiconductor rotation into MU/TSM ahead of June 24 HBM earnings read-through",
+        "url": "https://finance.yahoo.com/quote/TSM/"
+      },
+      {
+        "label": "Russell 2000 +2.12% vs Nasdaq -1.32% — 3.44 ppt spread; Great Rotation from AI software mega-cap to AI hardware and small-cap accelerating; June 26 Russell Reconstitution passive flows (~$11T) being front-run",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-22-2026"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7472.79,  "change_pct": -0.37, "as_of": "2026-06-22T20:00:00Z" },
+    "nasdaq": { "level": 26166.60, "change_pct": -1.32, "as_of": "2026-06-22T20:00:00Z" },
+    "vix":    { "level": 17.50,    "change_pct":  4.30, "as_of": "2026-06-22T20:00:00Z" },
+    "ust10y": { "level": 4.45,     "change_bps":    -1, "as_of": "2026-06-22T20:00:00Z" },
+    "dxy":    { "level": 101.02,   "change_pct":  0.17, "as_of": "2026-06-22T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.50,   "trigger_above": 17,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.93,    "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 101.02,  "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7472.79, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent",        "value": 78.20,   "trigger_above": 97,   "unit": "USD/bbl" },
+    { "name": "BTC Stop",     "value": 65000,   "trigger_below": 63500,"unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "MU",
+      "note": "$1,133.99 close (+8.70%) — institutional pre-earnings accumulation; analyst upgrades TD Cowen $1,500, RBC $1,200, Aletheia $1,600; Q3 FY2026 earnings June 24 after close; consensus $34.66B revenue / $19.95 EPS / >80% gross margin; TSM +6.9% is the sector confirmation; stop two consecutive closes below $1,050; PRIMARY OFFENSIVE LONG",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$209.63 (-0.5%) — resilient in -1.32% Nasdaq tape; 50-DMA ~$207 held as support; Annual Meeting June 24 9 AM PT is the conditional-add override catalyst regardless of DXY gate; stop $195 unchanged; do not add before June 24 pre-open",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "$346.47 (-6.5%); $320B market cap lost in one session; John Jumper (Nobel Laureate, AlphaFold, 9yr DeepMind) → Anthropic; Noam Shazeer (VP Engineering, Gemini co-lead) → OpenAI June 18; structural brain drain signal; no positive catalyst before Q2 earnings (mid-July est.); DO NOT add on dip; short/puts on bounce to $360-380 is the risk-reward",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSM",
+      "note": "$462.12 (+6.9%) — strong pre-MU-earnings positioning; HBM read-through catalyst June 24; ADR process intact; hold through MU earnings; next add on pullback to $445-455; stop $420",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$165.78 (-16.4%) — $20B inaugural bond offering blew out the two-consecutive-close re-entry framework; capital structure risk re-priced: $75B IPO + $60B xAI acquisition + $20B notes = $155B in capital movements since Feb 2026; STEP ASIDE; re-entry only on TWO new consecutive closes above $185 on above-average volume; first earnings Sept 2 est. is the next fundamental clearing event",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "XLE",
+      "note": "$54.05 (-0.02%) — Brent $78.20, essentially flat but thesis intact; Iran roadmap advancing; H2 2026 energy equity models still embed $87-90 WTI; estimate cuts not yet in consensus; scale short on any Brent bounce to $82-84; cover only on Brent two consecutive closes above $90",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$65,000 est. (UTC close est.); stop clock RESET — UTC close above $63,500 confirmed probable based on US morning trading at $65,218 (9:37 AM ET); add 25% at $64,000-$66,000 if IBIT net inflow (farside.co.uk) confirmed for June 22; stop active each subsequent UTC midnight close below $63,500",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "GOOGL",
+      "reason": "Two VP-level AI departures in 4 days is a structural deterioration signal, not noise. Buying at $346 before the narrative consolidates risks additional departure announcements triggering further -5% sessions. No near-term positive catalyst between now and Q2 earnings (mid-July est.).",
+      "better_entry": "After GOOGL Q2 earnings (mid-July) shows AI revenue metrics de-risking the talent narrative. Or: DXY confirmed below 99.00 (BUY upgrade) on a session close — broad market exposure appropriate at that level."
+    },
+    {
+      "ticker": "SPCX",
+      "reason": "$20B bond offering re-priced the capital structure. Stock at $165.78 is below the $185 re-entry threshold and the two-consecutive-close framework must restart from scratch. First public quarterly earnings have not yet been reported.",
+      "better_entry": "Two consecutive daily closes above $185 on above-average volume (minimum 2 trading sessions away). September 2 first earnings report is the fundamental clearing event — position only after the earnings print shows Starlink ARR trajectory."
+    },
+    {
+      "ticker": "NVDA (pre-June 24 Annual Meeting)",
+      "reason": "DXY at 101.02 worsened from 100.80 during Monday's session, now 102 bps above the conditional-add gate. No gate-clearing event is probable before June 24. Adding on June 23 means owning NVDA at $209 with the primary macro headwind intact and no catalytic event yet delivered.",
+      "better_entry": "Pre-June 24 Annual Meeting open (arrive before 9 AM PT June 24, regardless of DXY gate status). Jensen Huang's commentary on AI demand is the override catalyst. Stop $195 unchanged."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "MU",
+      "direction": "long",
+      "thesis": "MU +8.70% to $1,133.99 on analyst upgrades (TD Cowen $1,500, RBC $1,200, Aletheia $1,600) reflects institutional pre-earnings accumulation. Q3 FY2026 reports June 24 after close; consensus $34.66B revenue / $19.95 EPS / >80% gross margin; HBM sold-out through 2026-2027. TSM +6.9% on the same session is the sector confirmation signal. Pre-earnings price action is as bullish as it gets: +8.70% with 2 days to the print in a session where Nasdaq fell 1.32%.",
+      "entry": "Hold existing position; tactical add at $1,100-$1,140 on any June 23 pullback. Do not add after June 24 earnings release until Q3 revenue guidance confirmed above $34.5B.",
+      "invalidation": "MU Q3 revenue guidance cut below $31B; NVDA Annual Meeting disappoints on AI capex direction; broad AI-semis macro sell-off before June 24 close.",
+      "conviction": "medium",
+      "horizon": "1-2 days (event trade into June 24 earnings)"
+    },
+    {
+      "asset": "GOOGL",
+      "direction": "short",
+      "thesis": "Dual VP-level AI departures in 4 days — Noam Shazeer (Gemini co-lead) to OpenAI and Nobel Laureate John Jumper (AlphaFold architect) to Anthropic — constitute a structural degradation signal on Alphabet's AI competitive moat. The market priced $320B in a single session on the Jumper announcement alone; the Shazeer departure went comparatively unnoticed. Additional departures or media consolidation of the narrative risk further multiple compression through mid-July GOOGL Q2 earnings.",
+      "entry": "Short GOOGL at $346-$360 on any reflexive bounce over the next 2 sessions; or buy GOOGL July $340 puts for asymmetric downside.",
+      "invalidation": "GOOGL announces senior AI retention program or executive commitment; DeepMind CEO Demis Hassabis publicly pledges to remain; or DXY collapses below 99.00 (BUY upgrade overrides sector shorts). Stop: GOOGL reclaims $380 on a daily close.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks (through GOOGL Q2 earnings mid-July)"
+    },
+    {
+      "asset": "XLE",
+      "direction": "short",
+      "thesis": "Brent at $78.20 (-1.0% from morning) confirms the Iran 60-day roadmap is structurally advancing. H2 2026 energy equity models still embed $87-90 WTI; sell-side estimate cuts of 8-12% have not materialized. XLE at $54.05 is essentially flat in a risk-off session — suggesting energy has priced in stable oil and will lag further as Hormuz supply normalization approaches.",
+      "entry": "Continue short XLE at $52-55; add on any Brent bounce to $82-84 on Iran headline uncertainty.",
+      "invalidation": "Iran deal formally collapses AND Brent closes above $90 on two consecutive sessions; or XLE reclaims $62 on a daily close.",
+      "conviction": "medium",
+      "horizon": "3-5 weeks"
+    }
+  ],
+  "bear_case": "The GOOGL AI talent exodus is not a 'discounted in one session' event: Noam Shazeer (VP Engineering, Gemini co-lead) departed June 18 and was barely noticed; John Jumper triggered -6.5% on June 22 — the pattern implies each successive disclosure generates a larger reaction as investors recalibrate the talent base deterioration. Combined with DXY at 101.02 (worsening during Monday's session despite constructive Iran news), the macro overlay continues to suppress multiple expansion. The SPX regime floor at 7,460 is now just 12.79 pts below the close — a single bad GDP revision (upward surprise June 23), Trump-Iran escalation, or third GOOGL departure announcement pushes SPX below 7,460 with no intermediate warning level. If PCE on June 25 prints at or above 4.0% YoY, the 30Y breaks 5.00% in the same session and every June 24 AI-semis gain reverses within 24 hours. Bear case invalidation: MU Q3 guidance beats $35B+ AND NVDA Jensen explicitly bullish at Annual Meeting AND PCE June 25 prints below 3.5% YoY → BUY upgrade with high conviction. If SPX closes below 7,460 on June 23, call moves to BEARISH immediately.",
+  "body_mdx": "data/briefings/markets/2026-06-22-night.mdx"
+}
