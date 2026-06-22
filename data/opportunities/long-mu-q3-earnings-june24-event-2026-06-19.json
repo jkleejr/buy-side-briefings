@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-19",
   "expires_at": "2026-07-08",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["MU", "Micron", "memory", "HBM", "AI", "semis", "catalyst", "earnings", "event", "NVDA-readthrough"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-22",
+    "final_price": 1125.0,
+    "return_pct": 0.0,
+    "outcome_label": "Data error at creation — superseded by corrected entry",
+    "note": "The June 19 briefing used incorrect MU price data (~$143 est.); actual MU price was ~$1,125 throughout the June 19-22 period per the June 22 morning briefing correction. Entry, stop, and target levels in this opportunity were based on wrong data. Replaced by long-mu-q3-earnings-corrected-2026-06-22. The thesis (long MU into June 24 earnings) remains valid."
+  },
   "levels": {
     "entry_low": 137.0,
     "entry_high": 145.0,
