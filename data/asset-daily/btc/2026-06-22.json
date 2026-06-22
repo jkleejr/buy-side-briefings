@@ -1,0 +1,127 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T11:15:00Z",
+  "is_seed": false,
+  "day_winner": "bulls",
+  "day_summary": "June 22 UTC candle in progress as of 11:01 UTC: Open $63,319.43, High $64,825.00, Low $63,319.42, Current $64,117.07 (Crypto.com MCP live). STOP CLOCK STATUS: Day 2 in progress after June 21 UTC closed at $63,313 (Day 1 re-triggered). June 22 UTC candle is $617+ above the $63,500 stop at current levels — the stop clock reset appears imminent if this level holds through the UTC midnight close. Volume: 1,196.76 BTC ($76.75M) through 11:01 UTC (about 46% of average daily volume in first 11 hours — on pace for normal-to-light volume day). The June 22 UTC session opened at $63,319 — just $6 above the prior day's Day-1 low of $63,273 — then rallied immediately to $64,825 (session high, at ~3–4am UTC), followed by a controlled pullback to current $64,117. This is the classic 'stop-hunt / forced-flush recovery' pattern: the June 21 afternoon UTC sell-off cleared overlevered longs; the June 22 UTC session opened at the clearing level and rallied immediately. FULL BTC CANDLE HISTORY (Crypto.com MCP confirmed): June 22 in-progress ($63,319 open, $64,825 high, $63,319 low, $64,133 partial close); June 21 $63,313 close (Day 1 re-triggered); June 20 $64,298 (stable); June 19 $63,544 (survived Day 1); June 18 $62,953 (original Day 1, FOMC dump).",
+  "long_pnl": "longs from June 15 re-entry at $65–$66K are approximately 2.9% offside at $64,117 (June 22 current); the stop clock Day 2 is in progress and appears likely to reset (UTC close above $63,500 by $617+); the June 22 rally from $63,319 open to $64,825 high and current $64,117 is the pattern of institutional absorption after the June 21 stop-hunt; if June 22 UTC closes above $63,500, the framework resets and the path to $65,000+ re-opens",
+  "short_pnl": "bears who pressed on June 21's afternoon UTC sell-off ($64,590 → $63,273) are now -$617 from the $63,500 stop level as June 22 UTC trades at $64,117; the Day 2 trajectory suggests the stop will NOT execute; the $62,255–$62,313 double-bottom structural support was never breached even at the June 22 UTC open ($63,319 was $1,064 above the double-bottom)",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "24 hours · June 22 UTC close is the stop-clock decision; must close above $63,500 to reset",
+    "rationale": "HOLD at medium conviction — DAY 2 stop clock in progress; stop reset appears LIKELY (not certain) based on current trajectory. June 22 UTC candle opened at $63,319, rallied to $64,825, now $64,117 at 11:01 UTC. The stop will RESET if June 22 UTC closes above $63,500 — currently $617 above that level. Under the two-consecutive-close rule: if June 22 UTC closes above $63,500, the Day 1 re-trigger is voided and the framework returns to STABLE (same status as June 20). IF JUNE 22 UTC CLOSES BELOW $63,500: stop EXECUTES — full exit required immediately regardless of intraday price. DO NOT exit preemptively before the UTC midnight close (8pm ET). Three June 22 inputs to monitor through the US session: (1) IBIT daily flow (farside.co.uk) — first post-Juneteenth flow print; resumed inflows confirm institutional reversal; outflows = exit signal upgrades to HIGH if concurrent with June 22 UTC close below stop; (2) DXY — still at 100.76, above the macro gate; DXY close below 100 on June 22 is the size-up prerequisite that has not yet materialized; (3) BTC UTC price at 8pm ET (midnight UTC) — the ONLY event that determines stop execution vs. reset."
+  },
+  "snapshot": {
+    "price": 64117.07,
+    "change_pct": 1.27,
+    "change_abs": 804.07,
+    "prev_close": 63313.00,
+    "day_low": 63319.42,
+    "day_high": 64825.00,
+    "week52_low": 48200,
+    "week52_high": 98600,
+    "volume": "1,196.76 BTC ($76.75M through 11:01 UTC — 11 hours into June 22 UTC session; on pace for normal-to-light volume day vs June 21 1,683 BTC)",
+    "market_cap": "~$1.269T (at $64,117 June 22 current)",
+    "extra": [
+      { "label": "★ June 22 UTC candle (Crypto.com MCP, 11:01 UTC — IN PROGRESS)", "value": "Open $63,319.43 / High $64,825.00 / Low $63,319.42 / Current $64,117.07; $617 ABOVE $63,500 stop; pattern: opened at clearing level from June 21 flush, immediately rallied to session high, controlled pullback; volume 1,196 BTC ($76.75M) through 11h", "tone": "up" },
+      { "label": "★ STOP CLOCK STATUS — Day 2, Reset Probable", "value": "Day 1 re-triggered June 21 UTC ($63,313 close); Day 2 in progress June 22 UTC; current price $64,117 = $617 above stop level; two-consecutive-close rule: if June 22 UTC closes above $63,500 → stop clock RESETS to STABLE; if closes below → STOP EXECUTES (full exit)", "tone": "up" },
+      { "label": "Stop clock full sequence (Crypto.com MCP daily candles)", "value": "June 18: $62,952.75 (Day 1, FOMC dump) → June 19: $63,544.43 (SURVIVED) → June 20: $64,298.00 (STABLE) → June 21: $63,313.00 (Day 1 RE-TRIGGERED) → June 22: $64,117 in progress (Day 2 — tracking ABOVE $63,500 — RESET PROBABLE)", "tone": "up" },
+      { "label": "June 22 UTC rally pattern — stop-hunt recovery", "value": "Open $63,319 (just $46 above June 21 session low $63,273); immediate rally to $64,825 session high (approx 3–4am UTC); controlled pullback to $64,117 current; classic institutional accumulation after overlevered-long flush on June 21", "tone": "up" },
+      { "label": "Double-bottom structural support — INTACT", "value": "$62,255–$62,313 (June 18 and 19 session lows); June 22 UTC opened at $63,319 = $1,064 above double-bottom; even at the Day 2 open, the structural floor was never challenged; double-bottom remains the framework anchor below the stop level", "tone": "up" },
+      { "label": "Volume pace (June 22 UTC)", "value": "1,196 BTC ($76.75M) through 11h; extrapolating to full day = ~2,600 BTC; June 21 volume was 1,683 BTC (elevated on sell-off day); normal-to-light June 22 volume on a recovery session is constructive — recovery on declining volume = genuine demand absorption, not panic bid", "tone": "up" },
+      { "label": "DXY (June 22 US session)", "value": "~100.76 — still above 100.00 macro gate; the BTC/DXY inverse correlation means DXY above 100 is a mild headwind; if DXY closes below 100 on June 22 or June 23, it removes the macro headwind that contributed to June 21's afternoon UTC sell-off", "tone": "neutral" },
+      { "label": "IBIT ETF flow (June 22 — highest priority indicator)", "value": "First post-Juneteenth flow print; farside.co.uk shows May 15–29 had 10-session outflow streak ($2.97B out); June 12 confirmed $86M net inflow; June 22 is the next definitive institutional data point — resumed inflows = buy signal; resumed outflows = upgrade exit to HIGH", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv": 56,
+    "iv_note": "DVOL estimated ~56% — essentially unchanged from the Day 1 re-trigger level. The June 22 UTC session's rally from $63,319 to $64,825 has begun to compress IV from the 58–60% post-Day-1 spike, but full compression requires a confirmed UTC close above $63,500. If June 22 UTC closes above $63,500 and the stop clock resets, IV should compress toward 52–54% over June 23–24 as the structural uncertainty resolves. The $64,825 session high is beginning to attract call OI at the $65,000 strike — watch for OI building at $65,000–$67,000 calls as a leading indicator of buy-side conviction that the double-bottom recovery is resuming.",
+    "put_call": 1.04,
+    "short_interest": "P/C estimated ~1.04 (down from 1.08 on June 21 as June 22 UTC recovery reduces near-term tail risk). Perp funding rates likely recovering toward neutral-to-slightly-positive after the brief negative flip during June 21's afternoon sell-off. June 22 US session (14:00–20:00 UTC) is the period that mirrored June 21's sell-off timing — watch funding rate direction during June 22 US afternoon as a leading indicator of whether institutional selling from June 21 is resuming or reversing.",
+    "max_pain": "July expiry max pain anchor rebuilding at $63,000–$65,000 range. The June 22 UTC session high of $64,825 is approaching the $65,000 psychological resistance. A confirmed UTC close above $63,500 + continuation toward $65,000 on June 23 would pull July max pain upward, creating a mechanical bid for BTC in the $63,500–$65,000 range from options dealers. Watch $65,000 call OI on June 22–23 for the institutional conviction signal.",
+    "notable_flow": "The June 21 afternoon UTC sell-off (14:00–20:00 UTC) corresponds to US trading hours — institutional selling from US participants drove the breach. June 22's recovery pattern (opened at the clearing level $63,319, rallied immediately to $64,825, controlled pullback) is consistent with Asian session buyers absorbing the US institutional flush. The critical test is whether June 22 US afternoon session (14:00–20:00 UTC) repeats the selling pattern or shows institutional buy support. A June 22 US session that holds BTC above $63,500 through the US afternoon hours confirms the stop-clock reset."
+  },
+  "what_traders_are_doing": "Day 2 in progress — hold and monitor the June 22 UTC close. Professional playbook: (1) DO NOT exit preemptively before June 22 UTC midnight (8pm ET) — the two-consecutive-close rule requires Day 2 to close below $63,500 for stop execution; currently $617 above that level; premature exit is framework error; (2) Pre-US-market: check IBIT flow on farside.co.uk at 7am ET for the first post-Juneteenth print — if IBIT shows resumed inflows AND June 22 UTC is above $64,000 → stop clock reset is high-confidence; (3) Monitor June 22 US afternoon session (14:00–20:00 UTC) closely — this is the time window that caused the June 21 breach; if BTC holds above $63,500 through June 22 US close, UTC midnight close above $63,500 is the base case; (4) SIZE-UP CONDITIONS: if June 22 UTC closes above $63,500 (stop reset) AND IBIT shows net inflow AND DXY closes below 100.00 on June 22 — add 25% at $63,500–$65,000; ALL THREE conditions must be met before adding; (5) STOP EXECUTION SCENARIO: if BTC trades below $63,000 in the June 22 US afternoon session, the UTC midnight close below $63,500 becomes probable — reduce 50% before June 22 US market close (8pm ET) to avoid the full stop execution at midnight.",
+  "news": [
+    {
+      "label": "★ June 22 UTC candle LIVE (Crypto.com MCP, 11:01 UTC) — Open $63,319.43 / High $64,825.00 / Current $64,117.07; $617 above $63,500 stop; Day 2 of stop clock in progress; stop reset probable if level holds through UTC midnight",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT",
+      "source": "Crypto.com MCP (live)",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Stop clock Day 2 context — two-consecutive-close rule: June 21 UTC closed $63,313 (Day 1); June 22 UTC must close ABOVE $63,500 to reset; currently tracking $64,117 (+$617 above stop); the one-close-below → hold, two-consecutive-closes-below → exit rule is the framework standard",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT",
+      "source": "Crypto.com MCP / daily candles",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin ETF flows historical context — May 15–29 10-session outflow streak removed $2.97B (AUM fell $104.29B → $94.17B); June 12 confirmed $86M IBIT net inflow; June 22 is the first post-Juneteenth flow print and the most important institutional sentiment signal of the cycle",
+      "url": "https://bitbo.io/treasuries/etf-flows/",
+      "source": "Bitbo / ETF tracker",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Micron Q3 earnings June 24 — EPS consensus $19.95, revenue $34.66B (revised up from $34.52B), gross margin expected above 80%; HBM sold-out through 2026 into early 2027; AI risk appetite event for BTC within 24–48 hours of a MU beat; NVDA Annual Meeting on same day",
+      "url": "https://www.investing.com/analysis/microns-soldout-hbm-capacity-makes-june-24-a-makeorbreak-catalyst-200682176",
+      "source": "Investing.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "DXY June 22 US session ~100.76 — above 100 macro gate; BTC/DXY inverse correlation means gate not clearing is a mild headwind; June 21 afternoon sell-off (14:00–20:00 UTC) coincided with DXY spike from risk-off; DXY close below 100 on June 22 or 23 would remove this headwind and qualify as the size-up macro gate",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
+      "source": "Yahoo Finance / ICE",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "SPX opened ~7,487–7,500 on June 22 (below Sunday futures 7,556 by 56–69 pts); VIX ~16.78 intraday; post-FOMC Week 2 historical pattern active — equity market is cautious but not risk-off; BTC recovery despite equity caution signals BTC-specific buying (not purely beta-chasing)",
+      "url": "https://www.cboe.com/tradable-products/vix/",
+      "source": "CBOE / Investing.com",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin price June 2026 context — BTC peaked at $74,444 (May 27, Crypto.com MCP confirmed) before the June FOMC selloff cascade; current $64,117 is 13.9% below May 27 ATH; the structural thesis (fixed supply × ETF access × halving × DXY decline) has not changed; $75,000–$85,000 Q3-Q4 2026 target is dependent on June 22 UTC stop reset confirming the double-bottom recovery",
+      "url": "https://www.bitrue.com/blog/bitcoin-price-june-2026",
+      "source": "Bitrue",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "June 22 UTC close is the single most important event in the BTC framework. Current trajectory (Open $63,319, High $64,825, Current $64,117) strongly favors a stop clock reset. THREE inputs determine the post-reset path: (1) IBIT flow June 22 (farside.co.uk) — resumed inflows confirm institutional buying reversal; (2) DXY — close below 100.00 is the macro size-up gate; (3) June 24 NVDA Annual Meeting + Micron Q3 — AI capex confirmation drives risk appetite for the next BTC leg. If the stop clock resets (June 22 UTC close above $63,500) AND IBIT shows net inflow AND DXY moves toward 100 → add 25% at $63,500–$65,000 with $65,000–$67,000 as the next target range.",
+    "long_term": "The structural thesis remains intact. The double-bottom ($62,255–$62,313) has not been breached in two separate tests (June 18 FOMC dump and June 21 stop-hunt). Fixed supply (21M BTC) × widening institutional access (ETF AUM $94B+) × halving cycle supply reduction × DXY structural decline pathway = $75,000–$85,000 Q3-Q4 2026. The two Day 1 events (June 18 and June 21) are within the normal volatility band for the BTC framework — the two-consecutive-close rule is specifically designed to filter out single-session stop-hunt events exactly like June 21."
+  },
+  "bull_case": [
+    "June 22 UTC candle recovery pattern (open $63,319 → immediate rally to $64,825 → controlled pullback to $64,117) is the institutional accumulation signal — the flush cleared overlevered longs on June 21; June 22's immediate recovery from the clearing level is the demand-side proof that structural buyers absorbed the sell-off at $63,000–$64,000.",
+    "Double-bottom structural support fully intact — June 22 UTC opened at $63,319, which is $1,064 above the $62,255–$62,313 double-bottom; even at the worst point of the stop-clock sequence (Day 2 open), the structural floor was not challenged; this is the most bullish possible outcome from a two-Day-1 sequence.",
+    "June 24 dual catalyst (NVDA Annual Meeting + Micron Q3 $34.66B/$19.95 EPS, >80% gross margin expected) — if June 22 UTC resets the stop clock and June 23 builds back toward $65,000, the June 24 AI capex confirmation (MU beat + Jensen bullish) historically drives BTC +3–6% within 24–48 hours as risk appetite improves.",
+    "IBIT June 22 flow print is the institutional confirmation event — the May 15–29 outflow streak ($2.97B) reversed on June 12 ($86M inflow); if June 22 confirms a second consecutive inflow, it establishes the institutional reversal pattern that historically precedes 4–6 week recovery cycles."
+  ],
+  "bear_case": [
+    "Day 1 re-triggered for the second time in the same recovery cycle — unlike June 18 (FOMC-driven, exogenous shock), June 21's Day 1 occurred during what appeared to be a recovery phase; a stop breach 4 days after the original breach is a more concerning technical signal and suggests structural demand at $63,500–$64,500 is thin.",
+    "June 22 US afternoon session (14:00–20:00 UTC) is the risk window — this is the exact time window that produced the June 21 sell-off ($64,590 → $63,273); if US institutional sellers are positioned to offload again, June 22 UTC close could breach $63,500 despite the strong Asian session recovery.",
+    "IBIT outflow risk — the May 15–29 streak removed $2.97B; if June 22 shows resumed outflows and BTC struggles at $64,000–$65,000, the institutional accumulation thesis that underpins the stop-clock framework is weakened; Day 2 stop + resumed IBIT outflows = full exit signal regardless of current price.",
+    "Volume (1,196 BTC / $76.75M through 11h) is light relative to prior stress sessions — the June 21 sell-off was 1,683 BTC on above-average volume; a recovery on light volume risks failing in the US afternoon session if sellers choose to re-engage at current $64,000–$65,000 levels."
+  ],
+  "key_levels": [
+    { "label": "Double-top recovery target — second close above $65K activates recovery mode", "level": "$67,000", "kind": "resistance" },
+    { "label": "★ Primary recovery target — $65,000 re-risk trigger; confirmed close above = recovery mode", "level": "$65,000", "kind": "resistance" },
+    { "label": "June 22 UTC session high (Crypto.com MCP, 11:01 UTC)", "level": "$64,825", "kind": "resistance" },
+    { "label": "June 22 UTC live price (11:01 UTC — in progress)", "level": "$64,117", "kind": "pivot" },
+    { "label": "★ CRITICAL — June 22 UTC close MUST be ABOVE to reset stop clock", "level": "$63,500", "kind": "pivot" },
+    { "label": "June 22 UTC open / Day 2 open — $46 above June 21 session low", "level": "$63,319.43", "kind": "support" },
+    { "label": "June 21 UTC close — Day 1 re-trigger ($187 below stop)", "level": "$63,313.00", "kind": "support" },
+    { "label": "June 21 UTC session low — demand absorbed here without double-bottom test", "level": "$63,273.01", "kind": "support" },
+    { "label": "★ Double-bottom structural support — June 18 low $62,255 + June 19 low $62,313; INTACT; $1,064 below Day 2 open", "level": "$62,255–$62,313", "kind": "support" },
+    { "label": "★ Post-stop re-entry zone (if stop executes) — two confirmed closes above before entering", "level": "$60,000–$62,000", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-22", "label": "★ June 22 UTC midnight close (8pm ET) — STOP CLOCK DECISION: currently $64,117 (+$617 above $63,500 stop); if close > $63,500 → stop resets, framework returns to STABLE; if close < $63,500 → STOP EXECUTES (full exit); SIZE-UP CONDITIONS for post-reset add: IBIT net inflow (June 22 farside print) + DXY below 100.00 on June 22 close + UTC close above $63,500 → add 25% at $63,500–$65,000", "importance": "high" },
+    { "date": "2026-06-22", "label": "IBIT ETF flow (farside.co.uk, June 22) — first post-Juneteenth institutional flow print; resumed inflows = stop clock reset with institutional backing; resumed outflows = exit signal upgrades to HIGH if concurrent with UTC close risk", "importance": "high" },
+    { "date": "2026-06-24", "label": "NVDA Annual Meeting + Micron Q3 — updated consensus $34.66B revenue / $19.95 EPS / >80% gross margins; dual AI catalyst; MU beat + Jensen bullish = risk appetite accelerator for BTC within 24–48 hours; only relevant if stop clock resets on June 22", "importance": "medium" },
+    { "date": "2026-06-25", "label": "PCE inflation data — soft PCE (core <2.6%) compounds risk-on momentum and accelerates DXY decline below 100; hot PCE reintroduces rate-hike probability and delays recovery", "importance": "medium" }
+  ]
+}

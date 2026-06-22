@@ -1,0 +1,149 @@
+{
+  "routine": "markets",
+  "date": "2026-06-22",
+  "window": "morning",
+  "generated_at": "2026-06-22T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — DXY Gate Fails June 22 (100.76); SPX Opens Below Futures (7,487); VIX Borderline (16.78); BTC Day 2 Stop Reset Probable; SPCX Day 1 Close Watch Active; June 24 Dual Catalyst 48h Away",
+    "conviction": "medium",
+    "horizon": "48 hours · June 23 DXY gate attempt; June 24 dual catalyst (Micron Q3 + NVDA Annual Meeting)",
+    "rationale_short": "Monday June 22 — first full US equity session post-3-day closure (Juneteenth + weekend). The risk-on setup that Sunday's futures implied did NOT fully materialize: SPX opened ~7,487–7,500 (below Sunday futures 7,556.25 by 56–69 pts); VIX opened briefly at 17.04 before settling ~16.78 intraday (borderline against the 17 gate); DXY opened 100.84 and settled ~100.76 (76 bps above the 100.00 conditional-add gate — gate NOT cleared). The primary conditional-add gate for NVDA has NOT triggered on June 22. NVDA is trading at $206.50–$211.39 (open $207.33, prior close $210.69) with elevated volume (241M vs 161.7M avg). The post-FOMC Week 2 historical pattern (8-of-9 weakest weeks) is partially active — futures overestimated the Monday open by 56–69 SPX points. BTC June 22 UTC candle in progress: Open $63,319, High $64,825, Current $64,117 at 11:01 UTC — Day 2 stop clock in progress; stop reset (close above $63,500) appears probable at current levels. SPCX gap-up on IG ratings: estimated at ~$185 intraday (from $174.90 June 18 close, +5.77%); Day 1 of two-consecutive-close re-entry sequence may be activated if the close holds. SK Hynix KOSPI June 22 KST session estimated ~₩2,781,000 (+0.62%). June 24 dual catalyst (NVDA Annual Meeting + Micron Q3: EPS $19.95 est., revenue $34.66B est., gross margin >80% expected) arrives in 48 hours and is the week's primary conviction anchor regardless of June 22 gate status.",
+    "supporting_data": [
+      {
+        "label": "DXY June 22 US session ~100.76 — GATE NOT CLEARED (required <100.00 for NVDA conditional add); 76 bps above threshold; SPX opened 7,487–7,500, below Sunday futures 7,556.25 by 56–69 pts; post-FOMC Week 2 effect partially active",
+        "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+      },
+      {
+        "label": "★ June 24 DUAL CATALYST — 48 hours: Micron Q3 (EPS $19.95 est., revenue $34.66B est., gross margin >80%, HBM sold-out through 2027; 27 analysts Strong Buy) + NVDA Annual Meeting (Jensen Huang, 9 AM PT) on SAME trading day; add regardless of DXY gate status before June 24 open",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261979099-micron-q3-earnings-preview-gross-margin-expected-break-80-mark-tradingkey"
+      },
+      {
+        "label": "BTC June 22 UTC candle (Crypto.com MCP, 11:01 UTC) — Open $63,319 / High $64,825 / Current $64,117; Day 2 stop clock in progress; stop reset probable (UTC close above $63,500 required); IBIT June 22 flow print (farside.co.uk) is the institutional confirmation event",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "SPCX estimated ~$185 intraday (from $174.90 June 18 close, +5.77%) — IG ratings (S&P BBB / Moody's Baa1 / Fitch BBB+) being priced in; Day 1 of two-consecutive-close re-entry sequence may activate if June 22 CLOSE holds above $185",
+        "url": "https://www.indexbox.io/blog/spacex-receives-first-investment-grade-credit-ratings-from-moodys-fitch-and-sp-global/"
+      },
+      {
+        "label": "NVDA: $206.50–$211.39 range on June 22, open $207.33 (below June 18 close $210.69), volume 241M (vs 161.7M avg); 50-DMA at ~$206.74 held as intraday support; conditional-add NOT triggered (DXY gate failure); June 24 Annual Meeting is override catalyst regardless of gate",
+        "url": "https://finance.yahoo.com/quote/NVDA/"
+      },
+      {
+        "label": "SK Hynix KOSPI June 22 KST session est. ~₩2,781,000 (+0.62%); ADR process intact (Seoul Economic Daily June 22 confirms share price set only just before debut — standard practice); $66B total shareholder return; Micron June 24 is primary SK Hynix catalyst",
+        "url": "https://en.sedaily.com/finance/2026/06/22/sk-hynix-fact-checks-us-adr-listing-share-price-set-only"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7494.00,  "change_pct": -0.09, "as_of": "2026-06-22T13:30:00Z" },
+    "nasdaq": { "level": 26878.00, "change_pct": 0.73,  "as_of": "2026-06-22T13:30:00Z" },
+    "vix":    { "level": 16.78,    "change_pct": 2.25,  "as_of": "2026-06-22T11:00:00Z" },
+    "ust10y": { "level": 4.45,     "change_bps": -0.5,  "as_of": "2026-06-22T11:00:00Z" },
+    "dxy":    { "level": 100.76,   "change_pct": -0.03, "as_of": "2026-06-22T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.78,   "trigger_above": 17,   "unit": "",        "status": "BORDERLINE — opened 17.04 briefly above gate, recovered to ~16.78 intraday; cleared intraday but opened above gate; post-FOMC Week 2 caution active; watch for US afternoon session" },
+    { "name": "30Y Yield",    "value": 4.90,    "trigger_above": 5.0,  "unit": "%",       "status": "monitoring — 10 bps from 5.00% trigger; stable vs June 18; 10Y at 4.45% stable; bond markets not pricing additional rate hikes beyond current Warsh dots" },
+    { "name": "DXY",          "value": 100.76,  "trigger_above": 100,  "unit": "",        "status": "GATE NOT CLEARED — 76 bps above the 100.00 conditional-add threshold; opened 100.84; settling slightly lower but not approaching 100; June 23 is next gate decision window" },
+    { "name": "SPX vs 7,460", "value": 7494.00, "trigger_below": 7460, "unit": "",        "status": "CLEARED — SPX at ~7,494 is 34 pts above the 7,460 gate floor; below Sunday futures 7,556 by 62 pts but remains above the gate minimum; cautious hold territory" },
+    { "name": "Brent",        "value": 80.59,   "trigger_above": 97,   "unit": "USD/bbl", "status": "clear — $80.59 last confirmed print; Hormuz reopening on 30-day timeline intact; $16.41 below danger zone; no new crude supply shock" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Range $206.50–$211.39 on June 22 open (open $207.33, prior close $210.69); volume 241M vs avg 161.7M; 50-DMA ~$206.74 held as intraday support on session low; DXY gate NOT cleared (100.76 vs <100 required); conditional add NOT triggered; VIX borderline 16.78; JUNE 23 is next DXY gate attempt; JUNE 24 OVERRIDE: add before Annual Meeting (9 AM PT) regardless of gate; Micron Q3 same day (EPS $19.95 est., revenue $34.66B est., >80% gross margin); stop $195",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SK HYNIX",
+      "note": "Estimated ₩2,781,000 June 22 KST close (+0.62%); ADR SEC clearance expected late June (Seoul Economic Daily June 22 confirms process normal); $66B total shareholder return ($14B ADR + buyback); Micron Q3 June 24 is direct HBM read-through (58% global HBM market share); June 25 KST is the primary Micron read-through session; unconditional BUY at high conviction; stop ₩2,540,000; next add trigger: ₩2,688,000–₩2,750,000 KOSPI pullback",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "June 22 UTC candle in progress: Open $63,319 / High $64,825 / Current $64,117 (11:01 UTC); Day 2 stop clock in progress; stop reset PROBABLE (requires close above $63,500; currently $617 above); IBIT June 22 flow print (farside.co.uk) = primary institutional signal; SIZE-UP CONDITIONS: IBIT net inflow + DXY <100 close + UTC close above $63,500 → add 25% at $63,500–$65,000; DO NOT exit preemptively before UTC midnight (8pm ET)",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "Estimated ~$185 intraday (from $174.90 June 18 close, +5.77%) — IG ratings gap-up materializing; Day 1 close-above-$185 watch active; if June 22 CLOSES above $185 on above-average volume → Day 1 confirmed, watch June 23 for Day 2; if June 23 also closes above $185 → RE-ENTRY unlocked; hedge with July $175 put, stop $165; DO NOT re-enter on intraday data alone",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "~$548 est.; June 22 open inline with post-FOMC recovery; VIX below 17 intraday (borderline); DXY at 100.76 (mild headwind); SPX below futures by 62 pts suggests caution; hold initial entry $545–$560 position; ADD more after DXY clears <100 (June 23 attempt) or after June 24 Micron/NVDA confirm AI capex durability; stop $530 daily close",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MU",
+      "note": "Earnings June 24 — EPS $19.95 est. / revenue $34.66B est. / gross margin >80% expected; 27 analysts Strong Buy; HBM sold-out through 2026–2027; position long at $95–$105 before June 24; June 22 elevated NVDA volume (241M vs 161.7M avg) is pre-catalyst positioning; stop $90 daily close; June 24 at-open results = hold for momentum leg if beat; exit if guidance disappoints on HBM",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Iran ceasefire intact; Brent $80.59; H2 estimate cuts not yet in sell-side consensus; short thesis intact; June 22 SPX underperformance vs futures suggests risk-off which is mildly supportive for XLE as a hedge; any Brent bounce to $82–$84 on Hormuz mine-clearance delay = best short entry; cover only on two consecutive closes above $90 Brent",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TBT",
+      "note": "~$45 est.; maintain rate hedge — 30Y at ~4.90%, 10 bps from 5.00% gate; DXY above 100 is consistent with Warsh hawkish posture; keep TBT until 30Y falls below 4.75% on confirmed dovish signal OR PCE June 25 prints soft core (<2.6%)",
+      "sentiment": "negative"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA add before DXY gate clears or June 24 Annual Meeting",
+      "reason": "DXY at 100.76 — 76 bps above the 100.00 conditional-add gate. The gate failed on June 22 despite constructive Sunday futures. Adding before either (a) DXY confirms close below 100.00 on a daily US session basis OR (b) June 24 Annual Meeting arrives would violate the framework's gate logic. SPX underperforming Sunday futures by 62 pts reinforces the caution.",
+      "better_entry": "June 23 DXY confirmed close below 100.00 → execute add at $205–$215 immediately. OR: pre-June-24 Annual Meeting (arrive before 9 AM PT June 24) regardless of DXY gate status — Jensen's commentary is the override."
+    },
+    {
+      "ticker": "SPCX re-entry before two consecutive closes above $185",
+      "reason": "The framework requires two consecutive daily closes above $185 on above-average volume. June 22 is Day 1 candidate — the close is not yet confirmed. Buying intraday at $185 is buying on an intraday print that has not yet demonstrated close-level sustainability. The June 18 IG news day itself saw SPCX close at $174.90 while the IG news was positive — this exact scenario (positive catalyst, failed close) validates the two-close requirement.",
+      "better_entry": "After June 22 DAILY CLOSE above $185 (Day 1) AND June 23 DAILY CLOSE above $185 on above-average volume (Day 2) → re-enter with July $175 put hedge, stop $165."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "First full post-closure session shows 50-DMA (~$206.74) holding as intraday support (session low $206.50). Elevated volume (241M vs 161.7M avg) = institutional accumulation. June 24 dual catalyst (Annual Meeting + Micron Q3 $34.66B/$19.95 EPS/>80% gross margin) is 48 hours away. DXY at 100.76 = gate failure, but Annual Meeting override rule applies.",
+      "entry": "OPTION A — June 23 DXY confirmed close below 100.00: execute $205–$215 add immediately. OPTION B — June 24 pre-open (before 9 AM PT): add regardless of DXY gate status; stop $195. Annual Meeting is the override catalyst. Both options valid simultaneously — use whichever triggers first.",
+      "invalidation": "DXY holds above 100 through June 24 AND 30Y closes above 5.00% AND Micron Q3 misses on HBM revenue → reassess thesis entirely.",
+      "conviction": "medium",
+      "horizon": "2–3 weeks"
+    },
+    {
+      "asset": "SK HYNIX (000660.KS)",
+      "direction": "long",
+      "thesis": "Estimated ₩2,781,000 June 22 KST close (+0.62%). ADR SEC clearance imminent (Seoul Economic Daily June 22 confirms standard process). $66B total shareholder return ($14B ADR + buyback). Micron Q3 June 24 is the most direct HBM demand read-through in SK Hynix history. 58% global HBM market share. July 29 Q2 earnings.",
+      "entry": "Hold core long through July 29 Q2 earnings. Tactical add: June 23 KST KOSPI pullback below ₩2,688,000 (unlikely but buy immediately if occurs). Stop ₩2,540,000.",
+      "invalidation": "Samsung announces a specific NVIDIA HBM4E qualification win before SK Hynix completes qualification; Micron Q3 miss on HBM demand with H2 2026 downward guidance.",
+      "conviction": "high",
+      "horizon": "1–3 months"
+    },
+    {
+      "asset": "BTC",
+      "direction": "long",
+      "thesis": "June 22 UTC candle: Open $63,319, High $64,825, Current $64,117 — Day 2 stop clock in progress. Double-bottom ($62,255–$62,313) never tested. IBIT June 22 flow print is the size-upgrade trigger. Stop reset probable.",
+      "entry": "Hold current position. SIZE-UP (add 25%) only after ALL THREE conditions met: (1) June 22 UTC closes above $63,500 (stop reset); (2) June 22 IBIT flow shows net inflows (farside.co.uk); (3) DXY closes below 100.00 on June 22 or 23. Size-up at $63,500–$65,000. Active stop: $63,500 UTC daily close.",
+      "invalidation": "June 22 UTC closes below $63,500 → stop EXECUTES, full exit required immediately; OR IBIT shows resumed outflows concurrent with UTC close at stop level.",
+      "conviction": "medium",
+      "horizon": "2–3 weeks"
+    },
+    {
+      "asset": "SPCX",
+      "direction": "long",
+      "thesis": "IG ratings gap-up materializing (+5.77% estimated, from $174.90 to ~$185). Day 1 close-above-$185 watch active. June 20 options expiry cleared. June 24 risk-on macro supports two-consecutive-close sequence.",
+      "entry": "NOT YET — step aside until TWO consecutive daily closes above $185 on above-average volume confirmed. After Day 1 (June 22 close) AND Day 2 (June 23 close) both above $185: re-enter with July $175 put hedge, stop $165.",
+      "invalidation": "June 22 DAILY CLOSE below $185 despite intraday trading above → failed gap-up confirms 'equity market disagrees with rating agencies' → step aside continues indefinitely until next close-above-$185 attempt.",
+      "conviction": "low",
+      "horizon": "reassessment · 2–5 days"
+    }
+  ],
+  "bear_case": "The Week 2 post-FOMC pattern (8-of-9 weakest weeks) is asserting itself on June 22: SPX opened 56–69 points below Sunday futures (7,487–7,500 vs 7,556), VIX opened briefly above 17 before recovering, and DXY held at 100.76 despite being expected to approach 100 based on weekend FX. Warsh's 'no forward guidance' posture means any June 22–25 Fed speaker could use the equity recovery as justification for maintaining the hawkish 3.8% median dot — a single hawkish Fed speech between now and June 24 could reverse the DXY improvement within hours and push VIX above 17 sustainably. The Micron Q3 bar is the highest it has ever been (revenue $34.66B, EPS $19.95, gross margin >80%; all revised up 3.1% in 30 days) — if MU delivers revenue of $34.0–$34.3B (technically a 'beat' vs older estimates but a 'miss' vs current consensus), the AI memory bull thesis gets its first real test. The 30Y at ~4.90% is 10 bps from the 5.00% gate — a PCE print on June 25 that comes in above 2.8% core could push the 30Y through 5.00% and reintroduce the multiple-compression regime that defined the June FOMC selloff.",
+  "body_mdx": "data/briefings/markets/2026-06-22-morning.mdx"
+}

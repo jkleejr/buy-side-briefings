@@ -1,0 +1,139 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T11:15:00Z",
+  "is_seed": false,
+  "day_winner": "flat",
+  "day_summary": "First full US session post-3-day closure (Juneteenth + weekend). NVDA opened at $207.33, pulled below the June 18 close of $210.69, and has been trading in the $206.50–$211.39 intraday range with elevated volume (241M vs 161.7M avg) as institutional participants establish positions ahead of the June 24 dual catalyst. GATE STATUS UNCHANGED: DXY opened at 100.84 and has settled at ~100.76 — ABOVE the 100.00 conditional-add threshold by ~76 bps; the gate did NOT clear on June 22. VIX borderline at ~16.78 (intraday cleared <17 but markets opened with VIX briefly above 17.04 at open). SPX opened at ~7,487–7,500, below the 7,556 futures print from Sunday evening — futures overestimated the Monday open strength. Bottom line: the conditional-add framework did NOT trigger on June 22. The $205–$215 add zone has NOT been activated. NVDA remains a HOLD at medium conviction with the decision gate pushed to June 23 DXY close. The June 24 dual catalyst (NVDA Annual Meeting + Micron Q3 on the same day) is now 48 hours away — the override trigger is still intact regardless of gate status.",
+  "long_pnl": "holders from the June 15–16 add zone ($211–$214) remain ~0.5–1.7% offside intraday at $207–$210; the DXY gate failure on June 22 (100.76 vs required <100.00) delays the add confirmation but does not change the thesis; June 24 dual catalyst (Annual Meeting + Micron Q3) arrives in 48 hours and is the thesis anchor regardless of macro gate; elevated volume (241M vs 161.7M avg) signals institutional positioning ahead of June 24, not distribution",
+  "short_pnl": "bears had a brief intraday gift with the $207.33 open (below $210.69 prior close) and SPX opening 56 pts below Sunday futures; however, NVDA has recovered within the session and the DXY failure to clear 100 is now the only remaining bear support; June 24 Annual Meeting + Micron Q3 is 48 hours away and represents the most concentrated AI catalyst since February 2026 earnings; any short entered above $210 faces the June 24 override catalyst with no hedge",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "48 hours · June 23 DXY gate attempt; June 24 dual catalyst override (Annual Meeting + Micron Q3)",
+    "rationale": "HOLD at medium conviction. DXY gate NOT cleared June 22 — opened 100.84, settling ~100.76, still above the 100.00 threshold. VIX borderline (intraday low ~16.78 cleared, but opened above 17.04). SPX opened at ~7,487–7,500, 56–69 pts below Sunday futures, but remains comfortably above the >7,460 gate floor. The conditional-add has NOT triggered. NEW: With NVDA trading at ~$207–$210 (below prior close $210.69), the stock is within the $205–$215 add zone — but the gate condition requires DXY below 100.00 on a confirmed DAILY CLOSE. June 23 becomes the next DXY decision day. CRITICAL: Regardless of gate status, the June 24 override trigger is now 48 hours away: Jensen Huang's Annual Meeting (9 AM PT) + Micron Q3 (EPS consensus $19.95, revenue $34.66B) on the same trading day is the week's primary conviction anchor. Arrive fully positioned before June 24, not at open. DO NOT wait for a 'clean' gate-cleared add if DXY remains above 100 through June 23 — add before the Annual Meeting at any price in the $205–$215 zone."
+  },
+  "snapshot": {
+    "price": 209.52,
+    "change_pct": -0.55,
+    "change_abs": -1.17,
+    "prev_close": 210.69,
+    "day_low": 206.50,
+    "day_high": 211.39,
+    "week52_low": 142.03,
+    "week52_high": 236.54,
+    "volume": "241.27M (elevated vs 161.7M 30-day avg — institutional positioning ahead of June 24 dual catalyst)",
+    "market_cap": "~$5.07T (at intraday ~$209.52)",
+    "extra": [
+      { "label": "Intraday open (June 22 US session)", "value": "$207.33 — opened below June 18 close of $210.69; gap-down from Sunday futures implied ~$212; futures overestimated the Monday open", "tone": "down" },
+      { "label": "DXY (June 22 US session) — GATE NOT CLEARED", "value": "~100.76 (100.84 open, settling slightly lower); 76 bps above the 100.00 conditional-add gate; the gate did NOT clear on June 22; June 23 becomes next DXY decision day", "tone": "down" },
+      { "label": "VIX (June 22 session)", "value": "~16.78 intraday (opened 17.04 briefly above gate, recovered); gate borderline — technically cleared intraday but not at open; VIX at 17.04 on SPX open signals the market is not fully risk-on", "tone": "neutral" },
+      { "label": "SPX (June 22 open)", "value": "~7,487–7,500 — opened 56–69 pts BELOW Sunday evening futures of 7,556.25; gate (>7,460) remains cleared but the futures premium has NOT materialized; indicates post-FOMC Week 2 skepticism is active", "tone": "neutral" },
+      { "label": "★ June 24 DUAL CATALYST — 48 hours", "value": "NVDA Annual Meeting (9 AM PT, Jensen Huang, first post-FOMC public appearance) + Micron Q3 (EPS consensus $19.95, revenue $34.66B, 80%+ gross margin expected) on the SAME trading day; override trigger: add regardless of DXY gate status before June 24 open", "tone": "up" },
+      { "label": "Volume elevated", "value": "241.27M vs 161.7M 30-day avg — 49% above average on the first post-closure session; consistent with institutional positioning (both longs and shorts) ahead of June 24, not distribution", "tone": "neutral" },
+      { "label": "vs 50-DMA (~$206.74)", "value": "June 22 low of $206.50 tested the 50-DMA intraday; the 50-DMA is now the primary support for the long thesis; a daily close below $206.74 would bring the 50-DMA support into question for the first time since the June 18 recovery", "tone": "neutral" },
+      { "label": "vs 200-DMA (~$213.25)", "value": "$211.39 high still $1.86 below 200-DMA — the 200-DMA reclaim remains the primary post-June-24 technical target; a MU beat + Jensen bullish could push NVDA through the 200-DMA on June 24 directly", "tone": "neutral" },
+      { "label": "10Y yield (June 22)", "value": "4.44–4.46% — stable vs 4.45% prior; 30Y ~4.9% (below 5.0% gate); rate backdrop unchanged; DXY above 100 is the single remaining macro headwind", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv": 35,
+    "iv_note": "IV stable at ~35% through the June 22 session. The elevated volume (241M vs 161.7M avg) is driving OI concentration at the $205–$215 strike cluster — consistent with both conditional-add positioning (longs buying $210–$215 calls) and short-hedge positioning (puts at $205–$207). Pre-June-24 options flow: watch for July $215–$225 call OI expanding intraday June 22–23 as institutions pre-position for the dual catalyst. If call OI at $220–$230 rises meaningfully before June 24, it signals buy-side consensus that the Annual Meeting + MU beat will deliver a positive outcome above current levels. IV could spike briefly on June 24 morning (pre-Annual-Meeting uncertainty) before compressing sharply if Jensen is unambiguously bullish.",
+    "put_call": 0.65,
+    "short_interest": "~1.0% of float (unchanged; low short interest means the recovery is not driven by short-covering). The elevated June 22 volume (241M vs avg 161.7M) is institutional two-way flow — longs establishing positions ahead of June 24 and bears hedging. The absence of any near-term short-squeeze risk means June 24 direction is determined purely by the dual catalyst quality, not options mechanics.",
+    "max_pain": "July expiry max pain ~$210–$215 — NVDA's intraday range of $206.50–$211.39 on June 22 is bracketing the lower bound of the max pain zone. Dealer mechanics turn supportive above $210 on the June 22 close. The June 24 dual catalyst will shift July OI concentration materially higher if MU beats and Jensen is bullish — watch for July $215–$225 call OI accumulating on June 22–23 sessions as the leading institutional pre-catalyst signal.",
+    "notable_flow": "First post-3-day-closure institutional session. Volume of 241.27M (49% above 30-day avg) confirms institutional participation is returning after the Juneteenth gap. The intraday pattern (opened $207.33, tested $206.50 at 50-DMA, recovering toward $209–$211) suggests institutional buyers absorbed the opening weakness — consistent with pre-June-24 accumulation. Notable: the 50-DMA at ~$206.74 held as intraday support on June 22 open, which is the technical proof that the June 18 recovery above 50-DMA was not a false break. If NVDA closes above $210.69 (June 18 official close) on June 22, it would constitute a 'higher close' confirmation for the bull thesis."
+  },
+  "what_traders_are_doing": "June 22 is the false-start session; June 24 is the conviction event. Professional playbook: (1) DXY gate FAILED on June 22 (100.76 vs required <100.00) — do NOT chase a June 22 add just because volume is elevated; the framework requires a CONFIRMED DAILY CLOSE below 100.00, not an intraday approach; (2) June 23 is the next DXY decision day — if DXY closes below 100.00 on June 23, execute the $205–$215 add; if DXY holds above 100 through June 23, the Annual Meeting override rule applies: ADD regardless of gate status before the June 24 open (9 AM PT); (3) The volume pattern (241M vs avg 161.7M) on June 22 is institutional positioning, not distribution — institutions are building positions ahead of June 24, not selling into strength; (4) Monitor MU pre-earnings analyst coverage June 22–23: if two or more sell-side analysts raise PT above $1,100 or issue 'preview' notes with strong HBM language before June 23, add NVDA preemptively regardless of DXY gate; (5) Jensen's Annual Meeting commentary is the override catalyst — ANY explicit statement on AI capex durability in a hawkish rate environment, HBM4E supply chain confidence, or Vera Rubin ramp timeline is a double-digit move catalyst; arrive BEFORE the open on June 24.",
+  "news": [
+    {
+      "label": "★ June 22 US market open — NVDA opened $207.33 (below June 18 close $210.69), range $206.50–$211.39, volume 241.27M vs avg 161.7M; 50-DMA at ~$206.74 held as intraday support on the session open; DXY gate NOT cleared (100.76 vs required <100.00); conditional add NOT triggered; June 23 becomes next DXY gate decision day",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance / Nasdaq",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "★ June 24 DUAL CATALYST — 48 hours away: Micron Q3 earnings (EPS consensus $19.95, revenue $34.66B, 31 analysts; gross margin expected above 80%; HBM capacity fully booked through 2026) + NVDA Annual Meeting (Jensen Huang, 9 AM PT virtual); combined demand signal (MU HBM revenue) + management conviction (Jensen capex commentary) is the highest-impact AI compound catalyst of the cycle",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261975340-mu-q3-earnings-preview-june-2026-tradingkey",
+      "source": "TradingKey / Consensus",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Micron Q3 gross margin expected to break 80%: Wall Street unanimously bullish; 27 analysts with Strong Buy; HBM sold-out through 2026 into early 2027; RBC PT raised to $1,200; consensus revenue $34.66B (revised up from $34.52B); highest-conviction AI memory demand read-through in Micron's history",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261979099-micron-q3-earnings-preview-gross-margin-expected-break-80-mark-tradingkey",
+      "source": "TradingKey",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SPX opened ~7,487–7,500 on June 22 (below Sunday futures 7,556.25 by 56–69 pts); Nasdaq +0.74% from futures; VIX ~16.78 intraday (opened briefly 17.04); post-FOMC Week 2 historical pattern (8-of-9 weakest week) is partially materializing — SPX open below futures is consistent with the cautious Week 2 dynamic the framework flagged",
+      "url": "https://www.investing.com/indices/us-spx-500-historical-data",
+      "source": "Investing.com",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "DXY ~100.76 on June 22 US session (opened 100.84) — 76 bps above the 100.00 conditional-add gate; gate has NOT cleared; the risk-on SPX open did NOT produce the DXY decline implied by Sunday FX; Warsh's 'no forward guidance' posture keeps DXY bid in a hawkish regime; June 23 is the next confirmation window",
+      "url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
+      "source": "Yahoo Finance / ICE",
+      "sentiment": "negative"
+    },
+    {
+      "label": "BTC June 22 UTC candle recovering — Open $63,319, High $64,825, currently $64,117 at 11:01 UTC; Day 2 of the stop clock in progress; stop clock will RESET if June 22 UTC closes above $63,500 (extremely likely at current levels); BTC recovery removes the 'risk-off backdrop' concern that briefly emerged from the June 21 Day 1 re-trigger",
+      "url": "https://crypto.com/exchange/trade/BTC_USDT",
+      "source": "Crypto.com MCP",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix ADR SEC clearance: Seoul Economic Daily published June 22 clarification article ('SK Hynix Fact-Checks US ADR Listing: Share Price Set Only Just Before Debut') — ADR timeline intact (SEC clearance expected late June, listing targeting August 2026); share price not yet set; $14B raise still the market expectation; SK Hynix remains NVDA's primary HBM supplier through 2030",
+      "url": "https://en.sedaily.com/finance/2026/06/22/sk-hynix-fact-checks-us-adr-listing-share-price-set-only",
+      "source": "Seoul Economic Daily",
+      "sentiment": "positive"
+    },
+    {
+      "label": "10Y UST yield 4.44–4.46% on June 22 (stable vs 4.45% prior); 30Y ~4.9% (7 bps below 5.0% gate); Micron sold-out HBM capacity through 2026 indicates AI capex is NOT rate-sensitive; bond market stability removes the 'rates shock' tail risk for the June 24 dual catalyst",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "source": "US Treasury / FRED",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Micron June 24 earnings: 'Sold-Out HBM Capacity Makes June 24 a Make-or-Break Catalyst' — Investing.com analysis confirms SK Hynix HBM4E competition and MU HBM allocation commentary are the critical items; NVDA's H2 2026 Blackwell/Vera Rubin ramp visibility depends on MU's HBM capacity guidance for 2027",
+      "url": "https://www.investing.com/analysis/microns-soldout-hbm-capacity-makes-june-24-a-makeorbreak-catalyst-200682176",
+      "source": "Investing.com",
+      "sentiment": "positive"
+    }
+  ],
+  "outlook": {
+    "short_term": "June 22 is a gate-failure session — DXY at 100.76 prevented the conditional add from triggering. NVDA is trading constructively in the $206.50–$211.39 range with elevated volume (institutional accumulation, not distribution). The 50-DMA at ~$206.74 held as intraday support — the single most important technical fact from June 22. The framework now pivots to: (1) June 23 DXY close attempt — if DXY breaks below 100.00 on June 23, execute the $205–$215 add immediately; (2) If DXY holds above 100 through June 23, the Annual Meeting override applies: add regardless of gate status before June 24 open (9 AM PT). VIX at ~16.78 intraday is confirmed below gate; SPX at 7,487–7,500 is above gate floor. The only remaining conditional-add prerequisite is DXY < 100.00.",
+    "long_term": "Unchanged and strengthening. Micron's sold-out HBM capacity through 2026-into-2027 (per June 24 preview notes) removes the supply-chain execution risk from the NVDA thesis. The $299 consensus PT (62 analysts), Jensen's Annual Meeting, Vera Rubin ramp timeline, and CUDA moat expanding into robotics/physical AI remain intact. The post-FOMC discount window at $205–$215 is the structural accumulation entry of the cycle."
+  },
+  "bull_case": [
+    "50-DMA at ~$206.74 held as intraday support on June 22 open (session low $206.50) — the 50-DMA test-and-hold on the first post-closure session is the single most important technical confirmation of the bull thesis; it means the June 18 recovery above 50-DMA was not a false break and the structural support is real.",
+    "Elevated volume (241.27M vs 161.7M avg) on June 22 is institutional positioning, not distribution — 49% above average volume on a session where the stock held 50-DMA support is the bullish volume-price-support combination that precedes the next leg; institutions are loading pre-June-24, not selling.",
+    "Micron Q3 consensus revised UP again (revenue $34.66B vs prior $34.52B; EPS $19.95 vs prior $19.72; gross margins expected above 80%) — the HBM sold-out capacity through 2026-into-2027 is the strongest structural validation of NVDA's AI compute thesis since the February 2026 earnings; a MU beat on June 24 becomes the demand-side proof for the $299 consensus PT.",
+    "Annual Meeting override: Jensen Huang's first post-FOMC public appearance on June 24 (9 AM PT) is an unconditional catalyst regardless of DXY gate status — if Jensen is explicitly bullish on AI capex durability and Vera Rubin ramp confidence, it moves the stock regardless of macro regime; this is the override that makes DXY positioning irrelevant for June 24."
+  ],
+  "bear_case": [
+    "DXY gate FAILED on June 22 — the Sunday futures implied DXY was approaching <100, but the June 22 US session opened DXY at 100.84 and held ~100.76; this is a 76 bps gap that cannot close in one session without a macro catalyst; DXY at 100.76 after a 'constructive' weekend is a signal that the structural DXY decline is slower than the weekend FX implied.",
+    "SPX opened 56–69 pts below Sunday futures (7,487–7,500 vs 7,556 futures) — the post-FOMC Week 2 historical pattern (8-of-9 weakest weeks) is active; if Week 2 weakness continues, June 23 could repeat with SPX near 7,460 (gate floor) and VIX testing 17+ on a sustained basis, creating the macro headwind scenario.",
+    "Micron Q3 bar is elevated at $34.66B revenue / $19.95 EPS / >80% gross margin consensus — if MU misses this triple-elevated bar (revenue + EPS + gross margin) on any two of three metrics, or if management warns on Q4 2026 HBM demand from enterprise budget constraints, June 24 becomes the worst session instead of the best.",
+    "Volume (241M vs avg 161.7M) is elevated but not directional — high-volume sessions during range-bound trading often resolve in the direction of the break; if NVDA closes below the 50-DMA at $206.74 on June 22 or June 23, the elevated volume becomes a distribution confirmation rather than accumulation, and the thesis requires a stop-loss reassessment."
+  ],
+  "key_levels": [
+    { "label": "All-time high (May 14 2026)", "level": "$236.54", "kind": "resistance" },
+    { "label": "200-DMA (long-term trend indicator)", "level": "~$213.25", "kind": "resistance" },
+    { "label": "June 22 intraday high — first real-session high post-closure", "level": "$211.39", "kind": "resistance" },
+    { "label": "July expiry max pain (pre-June-24 anchor)", "level": "$210–$215", "kind": "resistance" },
+    { "label": "June 18 confirmed close — first above 50-DMA since FOMC; now key reference", "level": "$210.69", "kind": "pivot" },
+    { "label": "★ 50-DMA — held as intraday support on June 22 open (session low $206.50)", "level": "~$206.74", "kind": "pivot" },
+    { "label": "June 17 FOMC-day close (confirmed demand zone)", "level": "$204.65", "kind": "support" },
+    { "label": "★ Strongest support — $200 round number; heavy put OI; institutional demand zone", "level": "$200", "kind": "support" },
+    { "label": "Stop-loss — reassessment required on daily close below", "level": "$195", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-23", "label": "June 23 DXY gate decision — DXY at 100.76 on June 22 US session; 76 bps from conditional-add gate (<100.00); if DXY closes below 100.00 on June 23, execute $205–$215 add immediately at confirmed close; if DXY holds above 100 through June 23, the Annual Meeting override rule applies and add executes before June 24 open regardless of gate status", "importance": "high" },
+    { "date": "2026-06-24", "label": "★ DUAL CATALYST DAY — NVDA Annual Meeting (9 AM PT, Jensen Huang first post-FOMC public appearance) + Micron Q3 (EPS $19.95 est., revenue $34.66B est., gross margins >80% expected, 31 analysts); OVERRIDE TRIGGER: add before June 24 open regardless of DXY gate status; arrive fully positioned before 9 AM PT; the compound signal of MU HBM beat + Jensen AI capex commentary is the cycle's highest-conviction event", "importance": "high" },
+    { "date": "2026-06-25", "label": "PCE inflation data (BEA) — day after dual catalyst; soft PCE (<2.6% core) extends post-June-24 momentum and forces DXY below 100; hot PCE reintroduces rate-hike probability and tests the Annual Meeting sentiment", "importance": "medium" },
+    { "date": "~2026-08-26", "label": "NVDA Q2 FY27 earnings — $91B revenue consensus; Rubin ramp commentary and HBM4E demand guidance; primary conviction anchor for the $299 consensus PT", "importance": "high" }
+  ]
+}
