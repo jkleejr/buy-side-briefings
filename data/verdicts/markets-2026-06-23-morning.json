@@ -1,0 +1,182 @@
+{
+  "routine": "markets",
+  "date": "2026-06-23",
+  "window": "morning",
+  "generated_at": "2026-06-23T10:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — All Three Gates Breached: VIX 17.28, DXY 101.02, BTC $62,325 Stop; SPX Floor 12 Pts; June 24 Dual Catalyst 24h",
+    "conviction": "medium",
+    "horizon": "24 hours · reassess after June 24 MU Q3 earnings + NVDA Annual Meeting",
+    "rationale_short": "Tuesday June 23 opens with all three primary regime gates simultaneously breached — VIX 17.28 (above the 17 add-gate), DXY 101.02 (102 bps above the NVDA conditional-add gate), BTC $62,325 (below the $63,500 UTC-close stop). SPX closed June 22 at 7,472.79, just 12.79 pts above the 7,460 regime floor; ES futures are probing -0.2% into the pre-open. The June 22 session was bifurcated: Great Rotation in full force (Russell 2000 +2.12%, first-ever close above 3,000 vs. Nasdaq -1.32%), AI-hardware accumulation (MU +8.70%, TSM +6.9%) against AI-software selling (GOOGL -6.5%, AMZN -4.8%, MSFT -3%). GOOGL's AI talent drain — John Jumper (Nobel Laureate, AlphaFold) to Anthropic and Noam Shazeer (VP Engineering, Gemini co-lead) to OpenAI — is now a structural narrative, not a one-session event. Brent fell 3.3% to $77.90 on the US Treasury's 60-day Iranian oil license. The STEP_ASIDE posture is appropriate for the 24-hour window before the June 24 dual clearing catalyst: Micron Q3 earnings after close (consensus $34.52B revenue, $19.72 EPS, >81% gross margin) and NVDA Annual Meeting 9 AM PT (Blackwell and Vera production ramp commentary). FedEx Q4 tonight (consensus $5.91 EPS) provides the session's transport read-through. PCE Thursday June 25 (Wells Fargo 4.1% YoY estimate) is the primary binary for the week's regime call. Do not add to positions while all three gates remain breached.",
+    "supporting_data": [
+      {
+        "label": "VIX 17.28 (+2.98%) — above the 17 add-gate; all new long additions suspended under the framework; VIX breached on June 22 close, extending the global tech sell-off (Nikkei -0.6%, DAX -1.32% overnight)",
+        "url": "https://streetstats.finance/markets/volatility"
+      },
+      {
+        "label": "DXY 101.02 (+0.17%) — 102 bps above the 100.00 NVDA conditional-add gate; widened from 100.76 June 22 morning to 101.02 close; Warsh hawkish posture and US-Iran tension anchor the dollar bid",
+        "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+      },
+      {
+        "label": "BTC $62,325 (9:49 UTC June 23) — STOP ALERT: $1,175 below the $63,500 UTC-close stop; June 23 UTC close (midnight UTC = 8pm ET) is the gate; close below $63,500 requires full position exit",
+        "url": "https://www.coindesk.com/price/bitcoin"
+      },
+      {
+        "label": "SPX 7,472.79 (June 22 close, -0.37%) — 12.79 pts above the 7,460 regime floor; ES futures -0.2% pre-open imply open near 7,458, probing the floor",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-22-2026"
+      },
+      {
+        "label": "GOOGL -6.5% (June 22) on AI talent drain: Nobel Laureate John Jumper (AlphaFold, DeepMind 9yr) → Anthropic; Noam Shazeer (VP Engineering, Gemini co-lead) → OpenAI June 18; structural narrative, no positive catalyst before mid-July Q2 earnings",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-sinks-6-amazon-slides-160005432.html"
+      },
+      {
+        "label": "MU Q3 FY2026 earnings June 24 after close: consensus $19.72 EPS / $34.52B revenue / >81% gross margin; MU +8.70% June 22 (institutional pre-earnings accumulation); NVDA Annual Meeting 9 AM PT June 24 = regime upgrade pathway",
+        "url": "https://news.alphastreet.com/micron-technology-q3-2026-earnings-preview-june-24-street-expects-19-72-eps/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7472.79,  "change_pct": -0.37, "as_of": "2026-06-22T20:00:00Z" },
+    "nasdaq": { "level": 26166.60, "change_pct": -1.32, "as_of": "2026-06-22T20:00:00Z" },
+    "vix":    { "level": 17.28,    "change_pct":  2.98, "as_of": "2026-06-23T09:00:00Z" },
+    "ust10y": { "level": 4.48,     "change_bps":     3, "as_of": "2026-06-23T09:00:00Z" },
+    "dxy":    { "level": 101.02,   "change_pct":  0.17, "as_of": "2026-06-22T20:00:00Z" }
+  },
+  "regime_risk": [
+    {
+      "name": "VIX",
+      "value": 17.28,
+      "trigger_above": 17,
+      "unit": "",
+      "status": "BREACHED — 17.28, above the 17 add-gate; all new long additions suspended; Nikkei -0.6%, DAX -1.32% overnight confirm global tech pressure extending the VIX bid"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.93,
+      "trigger_above": 5.0,
+      "unit": "%",
+      "status": "MONITORING — 7 bps from 5.00% trigger; PCE Thursday June 25 (Wells Fargo 4.1% YoY est.) is the binary; hot print pushes 30Y through 5.00% on the same session, forcing BEARISH upgrade"
+    },
+    {
+      "name": "DXY",
+      "value": 101.02,
+      "trigger_above": 100,
+      "unit": "",
+      "status": "BREACHED — 102 bps above the 100.00 conditional-add gate; widened from 100.80 Asian session to 101.02 US close; Warsh hawkish posture and Iran-Hezbollah headline risk anchor the dollar bid"
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7472.79,
+      "trigger_below": 7460,
+      "unit": "",
+      "status": "WATCH — 12.79 pts above the floor; ES futures -0.2% pre-open imply open near 7,458, probing the floor; gap below 7,460 converts STEP_ASIDE to BEARISH immediately"
+    },
+    {
+      "name": "Brent",
+      "value": 77.90,
+      "trigger_above": 97,
+      "unit": "USD/bbl",
+      "status": "CLEAR — $77.90 (-3.3% June 22) on US Treasury 60-day Iranian oil license; Iran now shipping >30M barrels/week; $19.10 below danger zone"
+    },
+    {
+      "name": "BTC Stop",
+      "value": 62325,
+      "trigger_below": 63500,
+      "unit": "USD",
+      "status": "STOP ALERT — $62,325 (9:49 UTC June 23), $1,175 below the $63,500 stop; June 23 UTC close (midnight UTC = 8pm ET) is the gate; if close below $63,500, full exit required immediately"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$208.65 on June 23 (range $207.64-$213.99); all three regime gates breached (VIX 17.28, DXY 101.02, BTC below stop) — conditional add SUSPENDED; Annual Meeting June 24 9 AM PT is the override catalyst (Blackwell/Vera production ramp, AI demand commentary, capital return plans); stop $195 unchanged; do not add before June 24 pre-open",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MU",
+      "note": "$1,133.99 (+8.70% June 22) — largest single-day gain since December 2025; institutional pre-earnings accumulation confirmed; Q3 FY2026 earnings June 24 after close; consensus $19.72 EPS / $34.52B revenue / >81% gross margin; company guided $33.5B ±$0.75B; HBM sold-out through 2026-2027; HOLD through June 24; stop: guidance cut below $31B; primary offensive long",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "$346.47 (June 22 close, -6.5%); AI talent drain structural: John Jumper (Nobel Laureate, AlphaFold architect, 9yr DeepMind) → Anthropic June 22; Noam Shazeer (VP Engineering, Gemini co-lead) → OpenAI June 18; $320B market cap lost in one session; no positive catalyst before Q2 earnings mid-July est.; short/puts on bounce to $360-380; stop $380 daily close",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSM",
+      "note": "$462.12 (+6.9% June 22) — AI hardware rotation confirmation; Nikkei -0.6% overnight may create pullback entry; Micron June 24 = direct HBM read-through; hold through June 24; add $445-455 on June 23 pullback; stop $420",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$165.78 (-16.4% June 22) — third straight daily decline; SpaceX $20B inaugural bond offering priced; two-consecutive-close re-entry framework fully reset; next fundamental clearing event: September 2 est. first quarterly earnings; step aside until TWO new consecutive closes above $185 on above-average volume",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$62,325 (9:49 UTC June 23) — STOP ALERT: $1,175 below the $63,500 UTC-close stop; June 23 UTC close (midnight UTC = 8pm ET) is the binary; if closes below $63,500 → full exit at market required; re-entry only after two consecutive UTC closes above $63,500; monitor IBIT flows (farside.co.uk) for institutional positioning signal",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Short thesis intact — Brent $77.90 (-3.3% June 22) on US Treasury 60-day Iranian oil license; Iran shipping >30M barrels/week; scale short on any Brent bounce to $82-84; cover only on Brent two consecutive closes above $90",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "FDX",
+      "note": "Q4 FY2026 earnings tonight after close; consensus $5.91 EPS / $24.18B revenue; Bernstein sees 30% upside post-Freight spin-off (completed June 1); FY2027 EPS guidance watch ($22.04 est.); transport sector read-through for economic health and Amazon partnership update; not a core position",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA pre-June 24 Annual Meeting",
+      "reason": "All three regime gates are simultaneously breached: VIX 17.28 (>17), DXY 101.02 (>100.00), BTC below stop ($62,325 vs $63,500). Adding NVDA into a deteriorating three-gate regime 24 hours before the primary clearing event violates the framework. The Annual Meeting override catalyst is defined for June 24 pre-open — not June 23.",
+      "better_entry": "Pre-June 24 Annual Meeting open (before 9 AM PT) regardless of gate status — Jensen Huang's commentary on AI demand, Blackwell production ramp, and Taiwan $150B commitment is the override catalyst. Stop $195 unchanged."
+    },
+    {
+      "ticker": "GOOGL",
+      "reason": "Two VP-level AI departures in 4 days is structural, not noise. GOOGL -6.5% on June 22 lost $320B market cap; no positive catalyst before Q2 earnings mid-July est. The departure narrative compounds with each additional disclosure — risk of further -4% to -6% sessions before the Alphabet thesis stabilizes.",
+      "better_entry": "After GOOGL Q2 earnings (mid-July) demonstrate AI revenue trajectory has not degraded. Or: short/puts on bounce to $360-380 is the better-risk-adjusted play vs. a long position."
+    },
+    {
+      "ticker": "QQQ / SPX broad index",
+      "reason": "SPX is 12.79 pts above the 7,460 regime floor; ES futures -0.2% probe the floor pre-open. VIX 17.28, DXY 101.02, and PCE Thursday binary (Wells Fargo 4.1% YoY est.) all argue against adding broad index exposure while all three gates are simultaneously breached.",
+      "better_entry": "After June 24 dual catalyst (MU beat-and-raise + NVDA Annual Meeting bullish) AND June 25 PCE prints below 4.0% core → BUY upgrade with index exposure appropriate. Wait for the catalyst sequence first."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "MU",
+      "direction": "long",
+      "thesis": "MU +8.70% to $1,133.99 June 22 is the cleanest institutional pre-earnings accumulation signal of the week. Q3 FY2026 reports June 24 after close; consensus $19.72 EPS / $34.52B revenue (above company guidance midpoint $33.5B); HBM sold-out through 2026-2027. This stock-specific catalyst operates independently of the VIX, DXY, and BTC gate breaches — the one offensive long permitted in a STEP_ASIDE regime.",
+      "entry": "Hold current position through June 24 earnings. Tactical add at $1,100-$1,140 on any June 23 pullback. Post-earnings: hold if Q3 revenue guidance above $35B; trim/exit if below $33B.",
+      "invalidation": "MU Q3 revenue guidance cut below $31B; NVDA Annual Meeting disappoints on AI capex; broad AI-memory macro sell-off before June 24 close.",
+      "conviction": "medium",
+      "horizon": "1-2 days (event trade through June 24 earnings)"
+    },
+    {
+      "asset": "GOOGL",
+      "direction": "short",
+      "thesis": "Dual VP-level AI departures in 4 days — Noam Shazeer (Gemini co-lead) to OpenAI June 18 and Nobel Laureate John Jumper (AlphaFold, DeepMind 9yr) to Anthropic June 22 — constitute a structural competitive-moat deterioration signal. Each additional departure announcement risks a further -4% to -6% session. Combined with free cash flow -47% YoY in Q1 2026 and $175-185B 2026 capex guidance, the AI monetization-lag thesis is intact through mid-July Q2 earnings.",
+      "entry": "Short GOOGL at $355-375 on any reflexive bounce over June 23-24; or buy GOOGL July $340 puts for asymmetric downside. Target: $320-330 before Q2 earnings.",
+      "invalidation": "GOOGL announces a senior AI retention program with executive commitments; DeepMind CEO Demis Hassabis publicly pledges continuity; or GOOGL reclaims $380 daily close.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks (through GOOGL Q2 earnings mid-July)"
+    },
+    {
+      "asset": "TBT (2x Inverse TLT)",
+      "direction": "long",
+      "thesis": "30Y at ~4.93%, 7 bps from the 5.00% regime trigger. PCE Thursday June 25 at 8:30 AM ET (Wells Fargo 4.1% YoY estimate, 0.3% MoM core) is the binary: a hot print pushes 30Y through 5.00% on the same session, converting STEP_ASIDE to BEARISH and repricing every AI/semis long in the portfolio. TBT converts the binary regime risk into an active income position.",
+      "entry": "Hold TBT at $44-47; scale up 25% on any June 23 dip to $44-45. Exit on confirmed 30Y close below 4.75% (PCE undershoot scenario).",
+      "invalidation": "30Y falls below 4.75% on confirmed US session close — requires PCE undershoot or Iranian oil supply shock to overwhelm the Warsh hawkish signal.",
+      "conviction": "medium",
+      "horizon": "2-3 days (through PCE Thursday June 25)"
+    }
+  ],
+  "bear_case": "The STEP_ASIDE verdict understates the probability of a full BEARISH conversion before June 24's catalysts arrive. ES futures at -0.2% with SPX just 12.79 pts above the 7,460 floor means a single risk-off event Tuesday morning — a third GOOGL departure headline, a Trump-Iran escalation, or a FedEx guidance cut after close — gaps SPX below 7,460 before the Micron earnings and NVDA Annual Meeting have any chance to deliver. BTC at $62,325 is not hovering near the $63,500 stop; it is $1,175 below it — recovery of that magnitude requires a specific catalyst that is absent on a Tuesday with no scheduled macro data. The Brent -3.3% session reduced an inflationary headwind, but $77.90 is still above the disinflation-equilibrium of $70-75 implied by the Iran deal: supply normalization has been priced but not delivered. Counter-argument invalidation: if SPX holds above 7,480 at the June 23 close AND BTC recovers above $63,500 by midnight UTC → HOLD restored. If SPX closes below 7,460 today, call moves to BEARISH immediately.",
+  "body_mdx": "data/briefings/markets/2026-06-23-morning.mdx"
+}
