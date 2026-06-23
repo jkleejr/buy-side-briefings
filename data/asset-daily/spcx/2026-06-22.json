@@ -3,35 +3,35 @@
   "symbol": "SPCX",
   "name": "SpaceX",
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T11:15:00Z",
+  "generated_at": "2026-06-22T23:00:00Z",
   "is_seed": false,
   "currency_symbol": "$",
-  "day_winner": "bulls",
-  "day_summary": "IG ratings priced in on the first equity market session post-72-hour closure. SPCX gapped up from the June 18 close of $174.90 to an estimated open in the $182–$185 range (premarket predicted fair open $182.37, with trading observed at ~$185.00 on June 22 intraday). The day range appears to be ~$172.11 historical low reference through ~$190.00 intraday high, with SPCX recovering meaningfully from the June 18 stop-trigger session. CRITICAL FRAMEWORK STATUS: The $185 daily close stop is still the re-entry gate. SPCX is now in the observation zone: if SPCX closes ABOVE $185 on June 22, that constitutes DAY 1 of the two-consecutive-close requirement. A second close above $185 on June 23 would unlock re-entry. As of dossier generation (11:15 UTC = pre-US market open), the June 22 close is not yet confirmed — the US session has begun (NVDA data shows US markets trading) but the SPCX June 22 close is pending. FRAMEWORK UNCHANGED: two consecutive daily closes above $185 on above-average volume required before re-entry. SPX at ~7,487–7,500 (constructive but below Sunday futures) and VIX at ~16.78 (borderline) are the macro backdrop for the IG rating pricing event.",
+  "day_winner": "bears",
+  "day_summary": "BOND SHOCK — TWO-CONSECUTIVE-CLOSE FRAMEWORK BLOWN OUT. SPCX closed at $165.78 on June 22, down from the official prior close of $174.90 (-5.21%, -$9.12). This masks a brutal intraday reversal: SPCX opened near $185 on IG ratings pricing-in (the gap-up materialized as expected), then CRASHED approximately -16% from the session peak after SpaceX announced a $20 billion inaugural bond offering (senior unsecured notes, proceeds to repay the xAI bridge loan). The intraday pattern: gap to $185 (Day 1 watch activated) → bond offering announcement → collapse to intraday low near $160 → partial recovery to close $165.78. The result: SPCX closed BELOW the $185 two-consecutive-close re-entry gate, BELOW the $174.90 official prior close, and the Day 1 confirmation that the morning dossier was tracking DID NOT materialize as a daily CLOSE. The two-consecutive-close framework is FULLY RESET — it needs TWO NEW CONSECUTIVE CLOSES above $185 from scratch. Capital structure context: $75B IPO (June 12) + $60B Cursor AI acquisition (stock deal) + $20B bond offering = $155B in capital movements in 10 days. The IG ratings floor remains intact (Moody's Baa1, S&P BBB, Fitch BBB+) but the equity market is repricing the capital structure. Step Aside at HIGH conviction maintained.",
   "long_pnl": "IPO allocants from $135 are now +37.0% estimated at $185 (vs +29.6% at $174.90 June 18 close); investors who held through the $185 stop trigger are ~-3.6% from June 17 close $191.82 (improving rapidly as IG ratings are priced in); the estimated $185 intraday trade would constitute the first close above $185 if it holds — Day 1 of the two-consecutive-close re-entry sequence",
   "short_pnl": "bears from the June 18 stop-trigger session (entered or held short at $174.90) are now facing ~$10.10 adverse move back toward $185; the 72-hour unpriced IG rating gap-up has materialized; the $185 daily close stop that triggered on June 18 is now acting as a recovery magnet; the 84x revenue valuation thesis remains intact but the 'franchise quality floor' argument has been reinforced by Moody's Baa1 (above Tesla's Baa3)",
   "decision": {
     "action": "step_aside",
     "conviction": "high",
     "horizon": "reassessment · June 22 close diagnostic + June 23 potential Day 2 confirmation",
-    "rationale": "STEP ASIDE — transitioning from 'step aside' to 'first-close watch.' The IG ratings gap-up has materialized approximately as expected (from $174.90 to ~$185.00). Framework status: (1) If SPCX closes ABOVE $185 on June 22 on above-average volume → DAY 1 confirmed; do NOT re-enter yet; watch for June 23 close above $185; (2) If SPCX closes AT or ABOVE $185 on BOTH June 22 AND June 23 on above-average volume → RE-ENTRY unlocked; buy at market with July $175 put hedge, stop $165; (3) If SPCX closes BELOW $185 on June 22 (after intraday trading above) → step aside continues; a failed daily close above $185 is a bearish signal that validates the 'equity market does not agree with credit agencies' thesis; (4) If SPCX opens and trades below $175 on June 23 → IG ratings fully priced in without sustained buying; correction may be resuming. DO NOT re-enter on June 22 intraday price alone — the framework requires DAILY CLOSE above $185, not intraday."
+    "rationale": "STEP ASIDE at HIGH conviction — framework RESET by bond shock. June 22 CLOSED at $165.78 (below both $185 re-entry gate and prior close $174.90). The intraday gap to $185 materialized as expected, but the $20B bond offering announcement destroyed the daily close confirmation. This is EXACTLY why the two-consecutive-close daily close rule exists — intraday peaks are not re-entry signals. Framework is now fully reset: SPCX must close above $185 on two consecutive days on above-average volume. Capital structure re-pricing is not complete; $155B in 10 days of capital movements requires multiple sessions to fully digest. Re-entry framework restart: Day 1 candidate is now June 23 (if SPCX closes above $185) — this would require a ~+11.6% recovery from $165.78; unlikely without a major catalyst. Most probable re-entry window: post-September 2 first earnings report (once disclosed financials are available). IG ratings floor at $165+ (Moody's Baa1 prevents collapse to $135 IPO price). Maintain step aside — do not touch."
   },
   "snapshot": {
-    "price": 185.00,
-    "change_pct": 5.77,
-    "change_abs": 10.10,
+    "price": 165.78,
+    "change_pct": -5.21,
+    "change_abs": -9.12,
     "prev_close": 174.90,
-    "day_low": 182.00,
-    "day_high": 190.00,
+    "day_low": 159.93,
+    "day_high": 185.00,
     "week52_low": 135.00,
     "week52_high": 225.64,
-    "volume": "Elevated (estimated >150M shares intraday — IG rating gap-up session; exact volume not confirmed at dossier generation)",
-    "market_cap": "~$2.54T (at estimated $185.00, fully diluted)",
+    "volume": "Elevated; high-volume reversal session on bond announcement shock",
+    "market_cap": "~$2.27T (at $165.78, fully diluted)",
     "extra": [
-      { "label": "IG ratings gap-up (72 hours unpriced)", "value": "S&P BBB / Moody's Baa1 / Fitch BBB+ — all three agencies simultaneously; priced in on first equity market session; gap from $174.90 to estimated ~$185 (+5.77%); Moody's Baa1 (above Tesla's Baa3) is the most significant institutional validation since the IPO", "tone": "up" },
-      { "label": "★ FRAMEWORK STATUS — Day 1 Close Watch", "value": "If June 22 closes ABOVE $185 on above-average volume → DAY 1 of two-consecutive-close re-entry sequence confirmed; need June 23 close ALSO above $185 to unlock re-entry; DO NOT re-enter on intraday data alone", "tone": "neutral" },
-      { "label": "Pre-market predicted fair open (June 22)", "value": "$182.37 (+1.42% from prior close $174.90); SPCX has since recovered above $185 intraday; premarket showed orderly recovery rather than gap-and-go, which is consistent with institutional IG-pricing rather than retail FOMO", "tone": "up" },
-      { "label": "SPX June 22 open (~7,487–7,500)", "value": "SPX opened 56–69 pts below Sunday futures 7,556.25; post-FOMC Week 2 effect partially materializing; SPCX recovery despite SPX underperforming futures is a sign that IG rating demand is stock-specific, not purely beta-driven", "tone": "neutral" },
+      { "label": "★ June 22 CLOSE — $165.78 (-5.21% from prior close $174.90)", "value": "Intraday: opened ~$185 on IG ratings gap-up → peak ~$185 → $20B bond offering announced → crashed to session low ~$159.93 → partial recovery to close $165.78; intraday reversal from peak was approximately -16% (the '16.4%' figure used in media); official change from prior close ($174.90) = -5.21%", "tone": "down" },
+      { "label": "★ FRAMEWORK STATUS — FULLY RESET", "value": "Two-consecutive-close framework blown out: SPCX needed to CLOSE above $185 for Day 1 confirmation; it opened near $185 but CLOSED at $165.78 (below $185 and below prior close $174.90); Day 1 did NOT confirm; framework requires TWO NEW CONSECUTIVE CLOSES above $185 from scratch; earliest re-entry: June 24 close above $185 (Day 1) + June 25 close above $185 (Day 2)", "tone": "down" },
+      { "label": "$20B inaugural bond offering — capital structure shock", "value": "Senior unsecured notes; proceeds to repay xAI bridge loan and general corporate uses; announced during June 22 US session; equity market reacted with -~16% intraday reversal; capital deployment since IPO: $75B IPO + $60B Cursor AI acquisition + $20B bonds = $155B in 10 days; net equity dilution + debt load is the repricing catalyst", "tone": "down" },
+      { "label": "SPX June 22 CLOSE (~7,472.79)", "value": "SPX -0.37%; Nasdaq -1.32%; VIX 17.50 (+4.3%); broad market pressure compounded the SPCX bond shock; IG ratings floor prevents complete collapse; $165.78 is $30.78 above IPO close of $161", "tone": "down" },
       { "label": "June 20 weekly options expiry (CLEARED)", "value": "The $195 max-pain gamma headwind is fully expired; July options at ~52% IV are the re-entry hedge vehicle; clean options slate for the June 22 IG pricing event removes any options-amplified mechanical selling", "tone": "up" },
       { "label": "Position status", "value": "STEP ASIDE — transitioning to first-close watch; $185 stop trigger occurred June 18 at $174.90; re-entry requires two consecutive closes above $185 on above-average volume; June 22 is Day 1 candidate", "tone": "neutral" },
       { "label": "Analyst consensus (unchanged)", "value": "6 buy / 1 sell; average 12-month PT $187.80; IG ratings will drive PT revisions to $200+ this week from at least two analysts; first $200+ note triggers the next leg of institutional accumulation", "tone": "up" },
@@ -48,10 +48,16 @@
   "what_traders_are_doing": "Day 1 of the IG ratings pricing event. Professional playbook for June 22–26: (1) DO NOT re-enter on June 22 intraday data — the two-consecutive-close rule requires a DAILY CLOSE above $185, not an intraday print above $185; institutional algorithms are watching the daily close, not the intraday high; (2) If SPCX closes above $185 on June 22 → DAY 1 confirmed; set an alert for June 23 close above $185; monitor volume (need above-average, ideally >100M shares) on BOTH closes; (3) If SPCX closes below $185 on June 22 despite trading above $185 intraday → the 'close matters, not intraday' principle has been validated; step aside continues; a failed close above $185 is more bearish than a failed open above $185; (4) June 24 macro context: if NVDA Annual Meeting and Micron Q3 both deliver positive outcomes, the risk-on environment helps SPCX hold above $185 for the Day 2 confirmation; June 24's dual AI catalyst is the secondary risk-on support for the SPCX re-entry framework; (5) September 2 first earnings is 72 days out — a re-entry between now and September 2 requires comfort with the 72-day fundamental uncertainty window at $2.54T market cap; IG ratings are the floor; September 2 is the ceiling catalyst; (6) Do not let the IG news create false urgency — the framework's two-consecutive-close requirement exists precisely to prevent buying into a gap-up that fails to hold.",
   "news": [
     {
-      "label": "★ IG ratings priced in June 22 — SPCX estimated at ~$185 on first equity market session post-72-hour gap (S&P BBB / Moody's Baa1 / Fitch BBB+); premarket predicted fair open $182.37; gap from $174.90 to ~$185 (+5.77%); Day 1 close-above-$185 watch activated",
-      "url": "https://finance.yahoo.com/quote/SPCX/",
+      "label": "★ June 22 CLOSE $165.78 — SPCX opened ~$185 on IG ratings gap-up, then CRASHED on $20B inaugural bond offering announcement; intraday high ~$185, low ~$159.93, close $165.78; official change: -$9.12 / -5.21% from prior close $174.90; intraday reversal from peak: ~-16%; Yahoo Finance article: 'SpaceX stock tumbles 16.4%, shaving off most IPO gains since debut'; two-consecutive-close framework RESET",
+      "url": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-tumbles-164-shaving-off-most-ipo-gains-since-debut-141725657.html",
       "source": "Yahoo Finance",
-      "sentiment": "positive"
+      "sentiment": "negative"
+    },
+    {
+      "label": "★ $20B inaugural bond offering — senior unsecured notes, proceeds to repay xAI bridge loan; SpaceX $20B bond debut sparks market panic; capital structure: $75B IPO + $60B Cursor AI acquisition + $20B bonds = $155B capital deployed in 10 days; equity market repriced the debt load as dilutive to equity holders despite IG ratings",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261981729-stock-spacex-spcx-elon-musk-xai-gork-cursor-orcl-tradingkey",
+      "source": "TradingKey",
+      "sentiment": "negative"
     },
     {
       "label": "SpaceX investment-grade ratings detail — Moody's Baa1 'exceptional franchise strength' (world's leading orbital launch provider); Fitch BBB+ citing >80% global mass-to-orbit share since 2023; S&P BBB stable; all three agencies simultaneously confirmed IG status within days of the IPO; Moody's Baa1 is above Tesla's Baa3",
@@ -97,7 +103,7 @@
     }
   ],
   "outlook": {
-    "short_term": "SPCX is in the most important 48-hour window since the IPO: (1) June 22 close above $185 → DAY 1 confirmed; (2) June 23 close above $185 → re-entry unlocked (TWO CONSECUTIVE). The June 24 risk-on backdrop (NVDA Annual Meeting + Micron Q3) is the secondary support for holding above $185 through the June 23 close. If both closes materialize, re-enter with July $175 put hedge and stop at $165 daily close. If June 22 closes BELOW $185 despite trading above it intraday, the framework conclusion is: 'equity market disagrees with credit agencies' = step aside continues. The $185 daily CLOSE is the only data point that matters.",
+    "short_term": "June 22 CLOSED at $165.78 — the framework has spoken: the bond offering shock reset the two-consecutive-close sequence. The next 48-72 hours are about capital structure digestion, not re-entry. At $165.78, SPCX is only $4.78 above the IPO close of $161. The $185 re-entry gate requires +$19.22 (+11.6%) recovery before Day 1 can even be observed. Most realistic near-term path: SPCX stabilizes at $160–$170 while the $20B bond offering is priced and distributed (1–2 weeks), then gradually recovers toward $185–$200 as the bond market absorbs the debt load at IG spreads. The IG ratings floor prevents a collapse to the IPO price. Step aside fully; observe from the sidelines.",
     "long_term": "Generational franchise with triple-IG validation (Moody's Baa1, Fitch BBB+, S&P BBB). Starlink at 5M+ subscribers, Starship cost-to-orbit economics, Starshield national security base load, and Cursor AI (1M+ developers, not in IG assessments) are intact. The two events that convert the IG-validated franchise into disclosed financials: September 2 first earnings (Starlink subs, Starship revenue, Cursor AI contribution) and December 9 lock-up expiry (float expansion). IG ratings are the floor; September 2 earnings is the ceiling catalyst."
   },
   "bull_case": [
@@ -117,13 +123,13 @@
     { "label": "Day 3 intraday ATH (June 16)", "level": "$225.64", "kind": "resistance" },
     { "label": "Day 4 session high (June 17 pre-FOMC peak)", "level": "$213.80", "kind": "resistance" },
     { "label": "$200 round number — sustained recovery here signals full IG repricing", "level": "$200", "kind": "resistance" },
-    { "label": "June 22 estimated intraday high (IG ratings gap session)", "level": "$190.00", "kind": "resistance" },
-    { "label": "Analyst average 12-month PT — first IG-adjusted PT revisions to $200+ expected", "level": "$187.80", "kind": "resistance" },
-    { "label": "★ Re-entry gate — two consecutive closes ABOVE this level on above-average volume required; June 22 close is Day 1 candidate", "level": "$185", "kind": "pivot" },
-    { "label": "June 22 estimated open / premarket fair value", "level": "$182.37", "kind": "pivot" },
-    { "label": "June 18 stop-trigger close", "level": "$174.90", "kind": "support" },
-    { "label": "June 18 session low", "level": "$172.11", "kind": "support" },
-    { "label": "Stabilization watch zone — open with >150M shares initiates watch; new stop $165", "level": "$165–$175", "kind": "support" },
+    { "label": "June 22 intraday high (IG ratings gap before bond shock)", "level": "$185.00", "kind": "resistance" },
+    { "label": "Analyst average 12-month PT — first IG-adjusted PT revisions to $200+ expected (still pending)", "level": "$187.80", "kind": "resistance" },
+    { "label": "★ Re-entry gate — TWO NEW consecutive closes above required; framework RESET; earliest Day 1 candidate: June 23 close (requires +11.6% from $165.78)", "level": "$185", "kind": "pivot" },
+    { "label": "June 18 stop-trigger close (prior official close)", "level": "$174.90", "kind": "pivot" },
+    { "label": "June 22 CONFIRMED CLOSE — bond shock reversal", "level": "$165.78", "kind": "pivot" },
+    { "label": "★ IG ratings floor / stabilization zone — bond distribution period (1–2 weeks)", "level": "$160–$170", "kind": "support" },
+    { "label": "June 22 intraday low (bond shock trough)", "level": "$159.93", "kind": "support" },
     { "label": "IPO debut close (June 12)", "level": "$161", "kind": "support" },
     { "label": "IPO offer price — ultimate support; below = IPO thesis broken", "level": "$135", "kind": "support" }
   ],
