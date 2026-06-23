@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-10",
   "expires_at": "2026-07-08",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "GOOGL",
     "Google Cloud",
@@ -54,7 +54,13 @@
     "CPI",
     "PCC"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-23",
+    "final_price": 341.50,
+    "return_pct": -5.9,
+    "outcome_label": "Stopped out — AI talent drain structural invalidation",
+    "note": "June 22 close $346.47 (barely $1.47 above $345 stop); June 23 fell to $341.50 as Noam Shazeer (VP Engineering, Gemini co-lead → OpenAI) and John Jumper (Nobel Laureate, AlphaFold → Anthropic) departures compounded into a structural AI moat deterioration narrative. Combined $320B+ market cap erasure in two sessions. The Apple PCC cloud deal catalyst remains mechanically valid but cannot offset the AI leadership signal embedded in back-to-back VP-level departures. Stop triggered on June 23 daily print below $345."
+  },
   "levels": {
     "entry_low": 358,
     "entry_high": 368,

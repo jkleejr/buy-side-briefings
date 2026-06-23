@@ -50,9 +50,15 @@
   ],
   "created_at": "2026-06-22",
   "expires_at": "2026-07-08",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["MU", "Micron", "memory", "HBM", "AI", "semis", "catalyst", "earnings", "event", "NVDA-readthrough", "corrected-entry"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-23",
+    "final_price": 1200.0,
+    "return_pct": 7.4,
+    "outcome_label": "Target 1 hit at $1,200 — MU–Anthropic HBM supply deal drives pre-earnings breakout",
+    "note": "MU surged from $1,133.99 (June 22 close) to intraday high $1,245.83 on June 23, crossing Target 1 ($1,200) on news that Micron struck a multi-year equity and supply deal with Anthropic — primary HBM, DRAM, and SSD supplier for Claude AI training and inference. Shares +8.5% intraday pre-earnings. Target 1 taken at $1,200 per plan (40% trim); remaining position continues into June 24 Q3 FY2026 earnings (consensus $19.72 EPS / $34.52B revenue). The Anthropic deal independently validates the HBM demand thesis and strengthens the bull case for Target 2 ($1,300) post-earnings."
+  },
   "levels": {
     "entry_low": 1094.0,
     "entry_high": 1140.0,
