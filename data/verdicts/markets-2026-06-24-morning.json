@@ -1,0 +1,95 @@
+{
+  "routine": "markets",
+  "date": "2026-06-24",
+  "window": "morning",
+  "generated_at": "2026-06-24T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — BEARISH Discipline Maintained; Two Upgrade Catalysts In Play Today (NVDA Annual Meeting 9 AM PT + Micron Q3 AH); BTC Day 2 Stop Full-Exit Confirmed at $62,377",
+    "conviction": "medium",
+    "rationale_short": "The BEARISH trigger that fired at June 23's close (SPX ~7,365, SOXX -7.88%, VIX 19.49, KOSPI 'Black Tuesday' -9.99%) has not been cleared by this morning's data — but the two designated upgrade catalysts are on deck today. NVDA Annual Meeting runs 9 AM PT (noon ET, in-session); Micron Q3 FY2026 reports after the close. BTC confirmed its Day 2 stop: Crypto.com live at $62,377 (11:07 UTC), range $61,952–$63,114, well below the $63,500 threshold — full exit gate triggered per the night-brief protocol. The setup is marginally less hostile than yesterday: ES futures +0.13%, Brent at $77.2 (3-month low on Iran supply normalization), Micron rebounding 4.1% in premarket. But the regime bar remains breached: SPX is 95 pts below its 7,460 floor, DXY at 101.38 (above 100 trigger), VIX at 19.49 (above 17 gate). BofA's 3-hike forecast (Sep/Oct/Dec 2026) is the new market rate framework, and today's flash PMI supports it — US Manufacturing 55.7 (49-month high), Composite 52.2. May PCE tomorrow (consensus 4.1% YoY headline) is the dominant risk event. STEP ASIDE upgrades from BEARISH only because both catalysts are in play today — let NVDA + Micron decide before re-risking.",
+    "supporting_data": [
+      { "label": "BofA revised to 3 Fed hikes in 2026 (Sep/Oct/Dec): 'inflation unambiguously worse'; Deutsche Bank also added a September hike; the BofA note on June 22 was the proximate catalyst for the June 23 rout alongside the KOSPI -9.99% circuit breaker", "url": "https://www.cnbc.com/2026/06/22/bank-of-america-sees-3-fed-hikes-in-2026-inflation-unambiguously-worse.html" },
+      { "label": "Flash PMI June 24: US Manufacturing 55.7 (49-month high, fastest since May 2022), Services 51.3, Composite 52.2 (5-month high) — a strong economy validates the BofA hike thesis; employment still declining in manufacturing for second straight month (stagflation watch)", "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/d7a15ea4f43c4e3493db3814db67ad99" },
+      { "label": "BTC Day 2 stop confirmed: Crypto.com live $62,377 at 11:07 UTC June 24, 24h range $61,952–$63,114 — below the $63,500 Day 2 threshold; full BTC exit gate triggered per the two-day stop-clock protocol established June 22", "url": "https://fortune.com/article/price-of-bitcoin-06-23-2026/" },
+      { "label": "SOXX -7.88% on June 23 — NVDA -3.2% to ~$202, MU -11.4% to ~$1,075 (all-time high was $1,213 on June 22), TSM -5.2% to ~$443, ARM -10.1%; ~$1.4T in AI chip market value erased; MU is +4.1% in premarket ahead of Q3 results today", "url": "https://www.startuphub.ai/ai-news/ai-stocks-daily/2026/ai-stocks-2026-06-23" },
+      { "label": "May PCE June 25 — consensus: headline 4.1% YoY (highest since April 2023), core 3.3%; a hot print pushes 30Y above 5.00% trigger same session; tomorrow is the dominant risk event and the regime's decisive binary", "url": "https://www.morningstar.com/economy/may-pce-expected-show-rising-inflation" },
+      { "label": "NVDA Annual Meeting today at 9 AM PT (virtual) and Micron Q3 FY2026 after close are the two designated upgrade catalysts from the June 23 night brief — both clearing would upgrade STEP ASIDE to HOLD on June 25 morning", "url": "https://nvidianews.nvidia.com/news/nvidia-stockholder-meeting-set-for-june-24-individuals-can-participate-online" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7365.00,  "change_pct": -1.44, "as_of": "2026-06-23T20:00:00Z" },
+    "nasdaq": { "level": 25587.00, "change_pct": -2.21, "as_of": "2026-06-23T20:00:00Z" },
+    "vix":    { "level": 19.49,    "change_pct": 12.79, "as_of": "2026-06-23T20:00:00Z" },
+    "ust10y": { "level": 4.48,     "change_bps": 0,     "as_of": "2026-06-23T20:00:00Z" },
+    "dxy":    { "level": 101.38,   "change_pct": 0.36,  "as_of": "2026-06-23T20:00:00Z" },
+    "brent":  { "level": 77.20,    "change_pct": -0.29, "as_of": "2026-06-23T20:00:00Z" },
+    "gold":   { "level": 4100.00,  "change_pct": -0.71, "as_of": "2026-06-24T11:00:00Z" },
+    "btc":    { "level": 62377.63, "change_pct": -0.55, "as_of": "2026-06-24T11:07:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 19.49,   "trigger_above": 17,   "unit": "",        "status": "HARD BREACH — above 17 gate second consecutive session; approaching 20 panic threshold; framework bars new longs" },
+    { "name": "30Y Yield",    "value": 4.94,    "trigger_above": 5.0,  "unit": "%",       "status": "6-BPS BUFFER — May PCE tomorrow (4.1% YoY est.) is the binary; a hot print pushes 30Y through 5.00% same session" },
+    { "name": "DXY",          "value": 101.38,  "trigger_above": 100,  "unit": "",        "status": "HARD BREACH — 138 bps above trigger; BofA 3-hike repricing driving USD strength; PCE undershoot June 25 is sole relief" },
+    { "name": "SPX vs 7,460", "value": 7365.00, "trigger_below": 7460, "unit": "",        "status": "BEARISH TRIGGER ACTIVE — 95 pts below floor; NVDA meeting + MU Q3 are the only same-day reclaim catalysts; 7,300 is next support" },
+    { "name": "BTC",          "value": 62377.63,"trigger_below": 63500,"unit": "USD",     "status": "DAY 2 STOP CONFIRMED — Crypto.com live $62,377 ($1,123 below threshold); full exit gate triggered" },
+    { "name": "Brent",        "value": 77.20,   "trigger_above": 97,   "unit": "USD/bbl", "status": "CLEAR — 3-month low; Iran 60-day oil waiver + Hormuz traffic normalizing; XLE short thesis intact" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Annual Meeting today 9 AM PT virtual (noon ET, in-session); closed ~$202 (-3.2%); meeting focus: Blackwell/Vera production ramp, AI ecosystem; a bullish Jensen on AI demand resets the KOSPI panic narrative; stop $195; do not add before meeting speaks.", "sentiment": "neutral" },
+    { "ticker": "MU",    "note": "+4.1% premarket (~$1,118 est.) after -11.4% flush on June 23; Q3 FY2026 after close today; consensus $34.66B revenue / $19.95 EPS (some revised to $35.75B / $20.83); options pricing 17% move; sold-out HBM4 through 2026-27 is the bull case; stop $990.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Cumulative -16.5% over two sessions (~$341.50); AI talent exodus (Shazeer → OpenAI, Jumper → Anthropic) unresolved; no retention announcement; short/puts on bounces to $355-370 remain the cleanest expression; Q2 earnings (mid-July) is first positive catalyst.", "sentiment": "negative" },
+    { "ticker": "XLE",   "note": "Active short; Brent $77.2 (3-month low), WTI $73.40; Iran 60-day oil waiver + Hormuz normalization advancing; H2 sell-side Brent models embed $87-90, a $10+ gap not yet revised down; add on any Brent bounce to $82-84.", "sentiment": "negative" },
+    { "ticker": "BTC",   "note": "Day 2 stop confirmed at $62,377 (Crypto.com live, 11:07 UTC); full exit gate triggered — no BTC long until regime normalizes; re-entry zone $60,000-$62,000 only after SPX reclaims 7,460 and VIX falls below 17.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SPY / QQQ index dip",
+      "reason": "SPX is 95 pts below its 7,460 regime floor with VIX at 19.49 and DXY at 101.38. The BEARISH trigger has been active since yesterday's close. Both upgrade catalysts (NVDA meeting + Micron Q3) are unresolved as of pre-open. Dip-buying the index before these clear means entering a broken regime without catalyst confirmation.",
+      "better_entry": "After today's Micron Q3 print (if beats and guides above $36B Q4 revenue) AND NVDA confirms AI demand at the meeting — if both clear, SPX reclaiming 7,460 intraday is the signal."
+    },
+    {
+      "ticker": "GOOGL",
+      "reason": "Cumulative -16.5% over two sessions but still ~21x 2026 earnings with FCF -47% YoY and no retention announcement. The moat-discount deepens with each session that passes without Google countering the Shazeer/Jumper departures narrative. No floor until mid-July Q2 earnings.",
+      "better_entry": "After GOOGL Q2 earnings (mid-July) showing AI revenue trajectory. Short/puts on bounces to $355-370 are the better risk expression today."
+    },
+    {
+      "ticker": "BTC / crypto",
+      "reason": "Day 2 stop confirmed at $62,377 — the two-day stop-clock protocol triggered the full exit gate. Institutional outflows, risk-off cross-asset backdrop, and BofA's 3-hike framework are structural headwinds for speculative assets.",
+      "better_entry": "Re-entry zone $60,000-$62,000 only after VIX falls below 17, SPX reclaims 7,460, and Micron/NVDA catalysts deliver."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "MU — hold / conditional add",
+      "direction": "long",
+      "thesis": "The -11.4% pre-earnings flush on June 23 was driven by KOSPI contagion and Samsung HBM4E competition headlines — not company-specific fundamentals. HBM4 is sold out through 2026-27; gross margin consensus is 81.6%. A Q3 beat + Q4 guidance above $36B is the catalyst to re-engage the AI memory trade. The 17% options-implied move gives asymmetric upside if the narrative resets.",
+      "entry": "Hold through close at ~$1,075-$1,118 (premarket level); do not add before the print. Post-earnings add zone: $1,100-$1,150 on a beat-and-raise. Stop $990 on a two-close basis.",
+      "invalidation": "MU Q4 revenue guidance below $33B; any confirmation of Samsung qualifying HBM4E with Nvidia; NVDA Annual Meeting warns AI capex is slowing.",
+      "conviction": "medium",
+      "horizon": "1-2 days through earnings"
+    },
+    {
+      "asset": "GOOGL — short / puts",
+      "direction": "short",
+      "thesis": "Cumulative -16.5% over two sessions on AI talent exodus with no floor without a specific retention announcement. At ~$341, GOOGL is still 21x 2026 earnings with FCF -47% YoY, the buyback cannot support the stock, and the next positive catalyst is mid-July Q2 earnings. Each session without a Google counter-narrative is a moat-discount session.",
+      "entry": "Short GOOGL at $355-370 on any reflexive bounce; alternatively July $330 puts for defined-risk downside.",
+      "invalidation": "GOOGL reclaims $380 on a daily close; Google announces a senior AI retention program with named executive commitments.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLE short / TBT long",
+      "direction": "short",
+      "thesis": "Dual macro hedge: XLE short — Brent $77.2 (3-month low), Iran 60-day oil waiver accelerates supply normalization; H2 sell-side models embed $87-90 Brent, a $10+ estimate gap not yet revised. TBT long — 30Y at 4.94%, 6 bps from the 5.00% trigger; PCE June 25 is the binary; a 4.1%+ headline confirmation pushes it through same session.",
+      "entry": "Hold XLE short ($52-55); scale TBT 25% on dips to $44-45. Hold both into June 25 PCE 8:30 AM ET.",
+      "invalidation": "Iran deal collapses — Brent reclaims $85; PCE undershoots 3.0% core — 30Y falls below 4.75%.",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "Counter-argument: the BEARISH trigger fired at the exact trough of a sector-specific panic — the KOSPI 'Black Tuesday' (-9.99%) and a single BofA research note (not a Fed statement) drove the selloff, not a broad macro deterioration. The Dow fell only 0.09% on June 23, the 10Y yield was flat at 4.48% (bonds were bid), and Brent is at 3-month lows ($77.2) — the disinflation impulse from Iran supply normalization is accelerating precisely when the rate-hike narrative is loudest. Flash PMI Manufacturing at 55.7 is a 49-month high: a strong economy historically supports corporate earnings even in tightening cycles. If NVDA confirms AI demand at the annual meeting and Micron Q3 beats with Q4 guidance above $36B, the KOSPI panic will be re-framed as a single-market valuation correction — not an AI cycle peak. Invalidation: NVDA Annual Meeting explicit AI demand confirmation + Micron Q3 Q4 guidance above $36B → STEP ASIDE converts to HOLD, selective longs re-engage (NVDA $200-208, MU $1,100+). If SPX closes above 7,460 today, the BEARISH trigger was a one-session false break.",
+  "body_mdx": "data/briefings/markets/2026-06-24-morning.mdx"
+}
