@@ -2,7 +2,7 @@
   "routine": "markets",
   "date": "2026-06-23",
   "window": "night",
-  "generated_at": "2026-06-23T23:00:00Z",
+  "generated_at": "2026-06-24T01:10:00Z",
   "is_seed": false,
   "verdict": {
     "code": "bearish",
@@ -17,15 +17,15 @@
       { "label": "KOSPI -9.99% (circuit breaker) — 'Black Tuesday'; largest single-day drop in Korean market history; Samsung + SK Hynix both -12%+; MSCI Developed Markets exclusion + forced AI deleveraging", "url": "https://www.kedglobal.com/korean-stock-market/newsView/ked202606230010" },
       { "label": "GOOGL -10% to ~$341.50 (cumulative -16.5% over 2 sessions) — AI talent exodus structural; Shazeer → OpenAI, Jumper → Anthropic; each session without retention announcement deepens moat-discount", "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-sinks-6-amazon-slides-160005432.html" },
       { "label": "MU -11.4% to ~$1,075; NVDA -3.2% to ~$202; TSM -5.2% to ~$443; SMH ETF -6.5% — semiconductor rout; KOSPI contagion + Samsung HBM4E competition headlines", "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-micron-amd-lead-tech-sell-off-as-ai-trade-cools-125946422.html" },
-      { "label": "BTC UTC close $62,472 (Crypto.com API confirmed) — Open $63,962 / High $64,221 / Low $61,863 / Close $62,472; Day 1 stop ($63,500) activated; 50% reduction executed", "url": "https://fortune.com/article/price-of-bitcoin-06-23-2026/" }
+      { "label": "BTC UTC close $62,724.97 (Crypto.com 1D candlestick confirmed, 01:10 UTC June 24) — Open $64,020 / High $64,278 / Low $61,926 / Close $62,724.97 / Change -2.02%; Day 1 stop ($63,500) confirmed; $775 below stop", "url": "https://fortune.com/article/price-of-bitcoin-06-23-2026/" }
     ]
   },
   "morning_call_grade": {
     "verdict": "CORRECT",
     "morning_call": "STEP_ASIDE",
     "morning_conviction": "high",
-    "outcome_summary": "STEP ASIDE (high conviction) was the right posture. The morning brief explicitly stated 'SPX closes below 7,460 → BEARISH trigger, no waiting' — SPX closed at ~7,365. VIX at 19.49 exceeded the morning's 17.28 warning level. DXY widened from 100.90 to 101.38. BTC Day 1 stop confirmed at $62,472. GOOGL fell another 10%. The Annual Meeting override add for NVDA (prescribed for the June 23 session) was executed at ~$207-213; NVDA closed at ~$202 (-3.2%), creating a ~2-5% mark-to-market loss heading into the Annual Meeting. FedEx Q4 EPS beat topline but FY2027 guidance collapsed 14-15% below consensus — opposite of the 'mild risk-on signal' scenario the morning brief outlined.",
-    "right": ["VIX above 17 gate (19.49 confirmed)", "DXY worsening (101.38 vs 100.90)", "BTC UTC close below $63,500 (confirmed $62,472)", "SPX below 7,460 floor (7,365 confirmed → BEARISH trigger)", "GOOGL continued decline (-10% more, cumulative -16.5%)"],
+    "outcome_summary": "STEP ASIDE (high conviction) was the right posture. The morning brief explicitly stated 'SPX closes below 7,460 → BEARISH trigger, no waiting' — SPX closed at ~7,365. VIX at 19.49 exceeded the morning's 17.28 warning level. DXY widened from 100.90 to 101.38. BTC Day 1 stop confirmed at $62,724.97 (Crypto.com 1D candle). GOOGL fell another 10%. The Annual Meeting override add for NVDA (prescribed for the June 23 session) was executed at ~$207-213; NVDA closed at ~$202 (-3.2%), creating a ~2-5% mark-to-market loss heading into the Annual Meeting. FedEx Q4 EPS beat topline but FY2027 guidance collapsed 14-15% below consensus — opposite of the 'mild risk-on signal' scenario the morning brief outlined.",
+    "right": ["VIX above 17 gate (19.49 confirmed)", "DXY worsening (101.38 vs 100.90)", "BTC UTC close below $63,500 (confirmed $62,724.97, Crypto.com 1D candle)", "SPX below 7,460 floor (7,365 confirmed → BEARISH trigger)", "GOOGL continued decline (-10% more, cumulative -16.5%)"],
     "wrong": ["FedEx Q4 did not provide a mild risk-on signal — FY2027 guidance miss was 14-15% below consensus, triggering AH -5-6%", "No GDP on June 23 — Q1 final estimate is June 25 (corrected from June 22 night brief forecast)"]
   },
   "snapshot": {
@@ -39,7 +39,7 @@
     "wti":    { "level": 73.40,    "change_pct": -1.90, "as_of": "2026-06-23T21:00:00Z" },
     "brent":  { "level": 77.42,    "change_pct": -0.61, "as_of": "2026-06-23T21:00:00Z" },
     "gold":   { "level": 4129.07,  "change_pct": -1.49, "as_of": "2026-06-23T21:00:00Z" },
-    "btc":    { "level": 62472.00, "change_pct": -2.30, "as_of": "2026-06-24T00:00:00Z" },
+    "btc":    { "level": 62724.97, "change_pct": -2.02, "as_of": "2026-06-24T00:00:00Z" },
     "eth":    { "level": 1654.00,  "change_pct": -6.00, "as_of": "2026-06-23T21:00:00Z" }
   },
   "regime_risk": [
@@ -47,7 +47,7 @@
     { "name": "30Y Yield",    "value": 4.94,    "trigger_above": 5.0,  "unit": "%",       "status": "6-BPS BUFFER — PCE + GDP final June 25 8:30 AM ET is the binary; hot PCE (≥4.0%) triggers 30Y through 5.00% same session" },
     { "name": "DXY",          "value": 101.38,  "trigger_above": 100,  "unit": "",        "status": "HARD BREACH (138 BPS) — widening each session from 100.76 Jun 22 to 101.38 Jun 23; PCE undershoot June 25 is sole catalyst" },
     { "name": "SPX vs 7,460", "value": 7365.00, "trigger_below": 7460, "unit": "",        "status": "BEARISH TRIGGER FIRED — 95 pts below floor; morning brief's explicit conversion rule activated; 7,300 is next support" },
-    { "name": "BTC",          "value": 62472.00,"trigger_below": 63500,"unit": "USD",     "status": "DAY 1 STOP CONFIRMED — Crypto.com close $62,472 ($1,028 below stop); 50% reduction executed; Day 2 June 24 UTC midnight = full exit gate" },
+    { "name": "BTC",          "value": 62724.97,"trigger_below": 63500,"unit": "USD",     "status": "DAY 1 STOP CONFIRMED — Crypto.com 1D candle close $62,724.97 ($775 below stop); Day 2 June 24 UTC midnight = full exit gate if also below $63,500" },
     { "name": "Brent",        "value": 77.42,   "trigger_above": 97,   "unit": "USD/bbl", "status": "CLEAR ($19.58 buffer) — Iran supply normalization advancing; WTI 3-month low ~$73.40; XLE short thesis intact" }
   ],
   "watchlist_mentions": [
@@ -55,7 +55,7 @@
     { "ticker": "MU",     "note": "Pre-earnings flush -11.4% to ~$1,075; KOSPI/Samsung HBM4E contagion; Q3 FY2026 earnings June 24 after close ($34.66B/$19.95 EPS est.); -11% dip either prices in risk or creates beat-setup; stop $990", "sentiment": "neutral" },
     { "ticker": "GOOGL",  "note": "Cumulative -16.5% over 2 sessions on AI talent exodus (Shazeer → OpenAI, Jumper → Anthropic); ~$341.50; each session without retention announcement = additional moat-discount session; short/puts active $355-375", "sentiment": "negative" },
     { "ticker": "TSM",    "note": "-5.2% to ~$443; hit 52-wk high intraday before KOSPI crash contagion reversed it; hold through MU June 24 earnings read-through; next add $425-435", "sentiment": "neutral" },
-    { "ticker": "BTC",    "note": "Day 1 stop confirmed at $62,472 UTC close (Crypto.com API); $1,028 below $63,500 stop; 50% position reduction executed; Day 2: June 24 UTC midnight — full exit if below $63,500; re-entry zone $60,000-$62,000", "sentiment": "negative" },
+    { "ticker": "BTC",    "note": "Day 1 stop confirmed at $62,724.97 UTC close (Crypto.com 1D candle); $775 below $63,500 stop; Day 2: June 24 UTC midnight — full exit if also below $63,500; Micron Q3 (June 24 US after close) is sole pathway to reset; re-entry zone $60,000-$62,000", "sentiment": "negative" },
     { "ticker": "SK HYNIX","note": "KOSPI -9.99% 'Black Tuesday'; estimated close ~₩2,569K (-12%); stop ₩2,540K intact; MSCI Developed Markets exclusion removes passive inflow catalyst; hold core; next add June 25 KST post-MU read-through", "sentiment": "negative" },
     { "ticker": "XLE",    "note": "Active short confirmed; Brent $77.42 / WTI $73.40 (3-month lows); Iran supply normalization advancing; H2 estimate gap (~$10) not yet revised by sell-side; add on any Brent bounce to $82-84", "sentiment": "negative" }
   ],
