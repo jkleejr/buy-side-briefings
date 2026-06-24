@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-23",
   "expires_at": "2026-06-28",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["FDX", "FedEx", "earnings", "event", "freight", "logistics", "oil-relief", "Bernstein"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-24",
+    "final_price": 295.70,
+    "return_pct": -9.4,
+    "outcome_label": "Stop triggered: earnings guidance miss",
+    "note": "FDX Q4 FY2026 beat EPS ($6.31 vs $5.92 est.) and revenue ($25.0B vs $24.0B est.) but FY2027 guidance disappointed: EPS $16.90–18.10 vs analyst expectations of ~$20+, citing stranded costs from the Freight spin-off and a new pilot contract. Stock dropped 6.2% AH June 23 to $297.70, then extended to $295.70 pre-market June 24. The invalidation condition 'after-hours FDX falls more than 5%' was triggered at −6.16% AH. Stop at $308 daily close confirmed on June 24 open. Return calculated from $326.20 creation price."
+  },
   "levels": {
     "entry_low": 320.0,
     "entry_high": 332.0,

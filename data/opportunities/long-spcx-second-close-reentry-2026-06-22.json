@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-22",
   "expires_at": "2026-07-20",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["SPCX", "SpaceX", "IPO", "reentry", "float-normalization", "momentum", "MSCI-passive"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-24",
+    "final_price": 156.11,
+    "return_pct": -15.6,
+    "outcome_label": "Stop triggered at $156.11 (June 23 close)",
+    "note": "SPCX fell from $165.78 (June 22 close, just above the $165 stop) to $156.11 on June 23 as the KOSPI 'Black Tuesday' (-9.99%) triggered a global tech contagion that erased most SPCX's post-IPO gains. The stock touched below the $135 IPO price intraday before recovering to close at $156.11 — but that close was below the $165 daily-close stop. The two invalidation conditions were simultaneously met: DXY closed above 101 (101.38) AND SPX closed below 7,460 (7,365). June 24 premarket at $147.11–165.50 confirms the stop zone. Return from $185.0 creation price."
+  },
   "levels": {
     "entry_low": 183.0,
     "entry_high": 195.0,
