@@ -17,6 +17,10 @@ const DESK_HREF: Record<string, string> = {
   btc: "/bitcoin",
   skhynix: "/skhynix",
   spcx: "/spacex",
+  nbis: "/nebius",
+  mu: "/micron",
+  be: "/bloom-energy",
+  crwv: "/coreweave",
 };
 
 const ACTION_TONE: Record<string, string> = {

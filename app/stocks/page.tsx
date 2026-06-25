@@ -24,6 +24,10 @@ const STOCKS: StockDef[] = [
   { id: "nvda", href: "/nvidia", name: "NVIDIA", symbol: "NVDA", blurb: "AI accelerators — the index's center of gravity" },
   { id: "btc", href: "/bitcoin", name: "Bitcoin", symbol: "BTC", blurb: "The macro risk barometer, trading 24/7" },
   { id: "skhynix", href: "/skhynix", name: "SK Hynix", symbol: "HYNIX", blurb: "HBM memory for the AI buildout" },
+  { id: "mu", href: "/micron", name: "Micron", symbol: "MU", blurb: "HBM/DRAM memory — the AI-memory super-cycle" },
+  { id: "nbis", href: "/nebius", name: "Nebius", symbol: "NBIS", blurb: "AI neocloud — compute & power, the AI bottleneck" },
+  { id: "be", href: "/bloom-energy", name: "Bloom Energy", symbol: "BE", blurb: "Fuel cells powering AI data centers — the power bottleneck" },
+  { id: "crwv", href: "/coreweave", name: "CoreWeave", symbol: "CRWV", blurb: "Flagship AI neocloud — GPUs for OpenAI & Anthropic" },
   { id: "spcx", href: "/spacex", name: "SpaceX", symbol: "SPCX", blurb: "Pre-IPO space & satellite franchise" },
 ];
 

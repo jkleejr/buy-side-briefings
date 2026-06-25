@@ -4,6 +4,7 @@ import { getThesis } from "@/lib/theses";
 import AssetCallRecord from "@/components/asset-call-record";
 import AssetDailyView from "@/components/asset-daily-view";
 import BigAssetChart from "@/components/big-asset-chart";
+import BtcFearGreedPanel from "@/components/btc-fear-greed-panel";
 import BtcFundamentalsPanel from "@/components/btc-fundamentals-panel";
 import TechnicalsPanel from "@/components/technicals-panel";
 
@@ -64,7 +65,12 @@ export default function BitcoinPage() {
             learn="Live BTC-USD price with a range selector (1D–ALL). Data via Yahoo Finance; the dossier's decision and levels above are point-in-time editorial."
           />
         }
-        fundamentals={<BtcFundamentalsPanel />}
+        fundamentals={
+          <>
+            <BtcFundamentalsPanel />
+            <BtcFearGreedPanel />
+          </>
+        }
         technicals={<TechnicalsPanel symbol="BTC-USD" />}
         callRecord={<AssetCallRecord series={series} symbol="BTC-USD" />}
       />

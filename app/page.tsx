@@ -53,6 +53,10 @@ export default function Home() {
     getLatestAssetDaily("nvda"),
     getLatestAssetDaily("btc"),
     getLatestAssetDaily("skhynix"),
+    getLatestAssetDaily("mu"),
+    getLatestAssetDaily("nbis"),
+    getLatestAssetDaily("be"),
+    getLatestAssetDaily("crwv"),
     getLatestAssetDaily("spcx"),
   ].filter((d): d is NonNullable<typeof d> => d !== null);
 

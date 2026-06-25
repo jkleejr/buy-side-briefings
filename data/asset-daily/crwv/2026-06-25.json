@@ -1,0 +1,105 @@
+{
+  "asset": "crwv",
+  "symbol": "CRWV",
+  "name": "CoreWeave",
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T14:40:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "CoreWeave is having a hard session — $100.88, down 4.58% (-$4.84) from a $105.72 prior close, trading $98.25–$104.54 on heavy 21.6M-share volume and probing the $100 round number. There was no fresh company headline; the slide is the same risk-off rotation out of high-multiple, cash-burning AI-infrastructure names that hit Nebius today, with capital favoring 'cheaper' AI plays after Micron's blowout. CRWV is now ~42% below its $173.35 52-week high even though the business keeps scaling: Q1 2026 revenue more than doubled to $2.08B, the contracted-power base is ~3.5GW, and the revenue backlog sits at a staggering $99.4B (OpenAI, Anthropic, and a $21B Meta deal among the anchors). The bears won the tape today; the debate is whether the de-rating is healthy or a warning on the debt-funded buildout model.",
+  "long_pnl": "Longs from the lows ($63.80 52-week low) are still well ahead, but anyone who chased the $173 highs is down ~42% and took another 4.6% hit today; the name has spent 2026 giving back its post-IPO euphoria even as revenue compounds.",
+  "short_pnl": "Shorts pressing the 'great business, broken stock' thesis had another green day — the failure at $104 and slide through $100 rewarded fading rallies in the most capital-intensive AI neocloud, though a $99.4B backlog makes the structural short a high-wire act.",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "1–2 quarters · into the Q2 2026 print (~early Aug) and proof the capex is being financed without crippling dilution",
+    "rationale": "HOLD at medium conviction — high-variance. CoreWeave is the largest pure-play AI neocloud: Q1 revenue $2.08B (+112% YoY), FY26 guidance of $12–13B, ~3.5GW of contracted power, and a $99.4B backlog anchored by OpenAI, Anthropic and a $21B Meta agreement. That is exactly the compute bottleneck our Situational Awareness desk argues the AI buildout runs into — and CRWV is one of Aschenbrenner's disclosed longs. But the model is brutally capital-hungry: a $740M quarterly net loss (widening), a $31–35B 2026 capex plan, and heavy reliance on debt and GPU-backed financing. The stock's ~42% drawdown from the highs is the market repricing that risk, not the demand. Own it small as the flagship neocloud, add on washouts toward the $90s/$80s, and treat the financing cadence — not the backlog — as the swing factor. This is a position sized for volatility, not conviction-maxed."
+  },
+  "snapshot": {
+    "price": 100.88,
+    "change_pct": -4.58,
+    "change_abs": -4.84,
+    "prev_close": 105.72,
+    "day_low": 98.25,
+    "day_high": 104.54,
+    "week52_low": 63.80,
+    "week52_high": 173.35,
+    "volume": "21.6M sh",
+    "market_cap": "~$55.0B",
+    "extra": [
+      { "label": "★ Revenue backlog", "value": "$99.4B contracted (OpenAI, Anthropic, $21B Meta deal)", "tone": "up" },
+      { "label": "★ Q1 2026 revenue", "value": "$2.08B, +112% YoY (vs $1.97B est)", "tone": "up" },
+      { "label": "FY26 revenue guide", "value": "$12–13B", "tone": "up" },
+      { "label": "Contracted power", "value": "~3.5 GW — the AI bottleneck, secured", "tone": "up" },
+      { "label": "Q1 net loss", "value": "-$740M (widened from -$315M YoY)", "tone": "down" },
+      { "label": "2026 capex plan", "value": "$31–35B — debt/dilution risk is the core overhang", "tone": "down" },
+      { "label": "Drawdown", "value": "~-42% from $173.35 52-week high", "tone": "down" },
+      { "label": "Situational Awareness", "value": "Disclosed Aschenbrenner long (see /situational-awareness)", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv": 75,
+    "iv_note": "Implied vol is high (~75%) and deserved — CRWV is a young, heavily-traded post-IPO name that swings on macro risk appetite and financing headlines. Premium is rich on both sides; defined-risk structures beat naked options here.",
+    "put_call": 1.2,
+    "short_interest": "Elevated short interest typical of a richly-valued, lock-up-era AI name; squeeze risk on any major contract or financing-relief headline.",
+    "max_pain": "~$100 (round-number gravity right at the current level)",
+    "notable_flow": "Put demand picked up as the stock lost $104 then $100; downside hedging and directional puts led the tape on the -4.6% slide. The $100 strike aligns with max pain and the round number — a magnet into the next expiry."
+  },
+  "what_traders_are_doing": "Treating CRWV as the high-beta sentiment proxy for the AI-compute buildout. Playbook: (1) respect the volatility — size for a ~75% IV name that can move ±5% with no news, as it did today; (2) the $100 round number is the line in the sand — a daily close below opens the $90s and a retest toward $80; holding it keeps the base intact; (3) the real catalyst is financing, not demand — watch how the $31–35B capex gets funded (debt, GPU-backed facilities, equity) and any commentary on free-cash-flow timing at the Q2 print; (4) pair-trade lens — CRWV and NBIS move together as the neocloud complex; divergence between them often signals a single-name financing story; (5) cross-reference /situational-awareness — CRWV is a disclosed Aschenbrenner long and a tell for the picks-and-shovels thesis.",
+  "news": [
+    {
+      "label": "★ CoreWeave Q1 2026: revenue $2.08B (vs $1.97B est), more than doubled YoY; net loss widened to $740M",
+      "url": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
+      "source": "CNBC",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "CoreWeave reports strong Q1 2026: $99.4B revenue backlog, ~3.5GW contracted power, FY26 guide $12–13B",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-First-Quarter-2026-Results/",
+      "source": "CoreWeave IR",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Backlog supported by $40B+ in new customer commitments including a $21B multi-year Meta Platforms deal",
+      "url": "https://simplywall.st/stocks/us/software/nasdaq-crwv/coreweave/future",
+      "source": "Simply Wall St",
+      "sentiment": "positive"
+    },
+    {
+      "label": "CoreWeave races AWS and Azure to stand up Nvidia-GPU data centers for OpenAI and Anthropic; 2026 capex guided to $31–35B",
+      "url": "https://finance.yahoo.com/quote/CRWV/",
+      "source": "Yahoo Finance",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Volatile and sentiment-driven, with $100 the pivotal level. With no company catalyst until the Q2 print, CRWV trades as a high-beta read on AI-infrastructure risk appetite and rate sensitivity. Expect wide swings; reclaiming $105–$110 signals the dip is bought, losing $98 opens the $90s.",
+    "long_term": "Potentially one of the best-positioned AI neoclouds — a $99.4B backlog and 3.5GW of power are the literal scarce inputs of the AI era. But the long-term return depends entirely on financing a $31–35B-per-year buildout without diluting holders into the ground or over-levering against fast-depreciating GPUs. If CoreWeave converts the backlog to free cash flow before the balance sheet strains, the upside is large; if capital markets tighten, the model is fragile. High reward, real risk — a deliberately small, high-conviction sleeve."
+  },
+  "bull_case": [
+    "$99.4B revenue backlog — extraordinary multi-year visibility anchored by OpenAI, Anthropic and a $21B Meta deal.",
+    "Revenue compounding fast: Q1 $2.08B (+112% YoY); FY26 guide $12–13B.",
+    "~3.5GW of contracted power — CoreWeave owns the exact compute-and-power bottleneck of the AI buildout.",
+    "Deep relationships with the frontier labs that are the highest-quality AI demand on earth.",
+    "A disclosed Aschenbrenner / Situational Awareness long and the flagship public neocloud."
+  ],
+  "bear_case": [
+    "Capital-destructive today: a -$740M quarterly net loss that is widening, not narrowing.",
+    "$31–35B 2026 capex funded heavily by debt and GPU-backed financing — the core balance-sheet risk.",
+    "GPU assets depreciate fast; a demand or pricing air-pocket could strand capacity and crush returns.",
+    "Customer concentration in a few hyperscalers/labs; renegotiation or in-housing would hit hard.",
+    "~42% drawdown shows the market is repricing the financing risk — momentum can stay negative."
+  ],
+  "key_levels": [
+    { "label": "52-week high", "level": "$173.35", "kind": "resistance" },
+    { "label": "Session high", "level": "$104.54", "kind": "resistance" },
+    { "label": "Round-number pivot", "level": "$100.00", "kind": "pivot" },
+    { "label": "Session low — first support", "level": "$98.25", "kind": "support" },
+    { "label": "52-week low (deep support)", "level": "$63.80", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-08-05", "label": "Q2 2026 earnings — capex financing & FCF-timing commentary", "importance": "high" },
+    { "date": "2026-09-15", "label": "OpenAI / Meta data-center buildout milestones", "importance": "medium" }
+  ],
+  "analysis": "CoreWeave is the purest, largest public bet on the AI-compute bottleneck — and the cleanest illustration of that bet's central tension. On one side: a $99.4B backlog, 3.5GW of contracted power, revenue doubling to $2.08B, and the frontier labs (OpenAI, Anthropic) plus a $21B Meta deal as customers. On the other: a widening $740M quarterly loss and a $31–35B annual capex plan funded with debt against GPUs that depreciate on a hardware clock. The market spent 2026 repricing that second half, taking the stock ~42% off its highs, and today's -4.6% is more of the same risk-off rotation rather than a demand problem. For the copy-trade thesis our Situational Awareness desk tracks, CRWV is a core holding and a tell: it is exactly the picks-and-shovels exposure Aschenbrenner favors, expressed at the most capital-intensive end of the spectrum. Own it small, let $100 prove itself, add on washouts into the $90s/$80s, and judge the next leg on the financing path, not the backlog — the backlog is not the question."
+}

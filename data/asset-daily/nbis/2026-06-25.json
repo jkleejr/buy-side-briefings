@@ -1,0 +1,104 @@
+{
+  "asset": "nbis",
+  "symbol": "NBIS",
+  "name": "Nebius Group",
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T14:30:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "Nebius is having a rough session — $259.66, down 5.66% (-$15.59) from a $275.25 prior close, trading in a wide $249.21–$276.15 band on 14.7M shares. There was no company-specific bad-news headline; the move is risk-off rotation out of the most expensive, highest-beta AI-infrastructure names, compounded by Micron's blowout pulling capital toward 'cheaper' AI-memory expressions. NBIS remains a hyper-growth story — Q1 FY26 revenue was $399M (+684% YoY), FY26 guidance is $3.0–3.4B revenue at ~40% adj. EBITDA margin, the contracted backlog is ~$47B, and contracted power exceeds 3.5GW — but at a $65.9B market cap the stock trades on backlog and faith, so on a risk-off day it gives back the most. Bears won the tape today.",
+  "long_pnl": "Longs are still up enormously over 12 months (NBIS ranged from a $43.89 low to a $299.86 high) but gave back ~5.7% today; anyone who chased the $276 area this week is underwater on the week as the name digests its run.",
+  "short_pnl": "Shorts and tactical faders had a clean green day — the rejection from $276 and slide to $249 rewarded fading strength in the most stretched AI-cloud name, though the structural short remains dangerous against a $47B backlog and a $2B Nvidia strategic investment.",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "1–2 quarters · into the Q2 FY26 print (~Aug 2026) and proof of capex-to-revenue conversion",
+    "rationale": "HOLD at medium conviction — high-variance. Nebius is arguably the purest public proxy for the 'AI buildout is bottlenecked on compute and power' thesis: an AI-native neocloud growing revenue ~7x YoY, with a ~$47B backlog anchored by Microsoft and Meta, a $27B Meta agreement, a $2B Nvidia strategic investment, and >3.5GW of contracted power. That is exactly the bottleneck Aschenbrenner's Situational Awareness fund is long elsewhere — yet notably NBIS did NOT appear in his Q1 2026 13F, a gap worth watching. The catch is the price: a $65.9B cap on ~$3B of FY26 revenue, funded by an enormous $20–25B FY26 capex plan that implies heavy financing and dilution risk. This is a position to own small and add on washouts, not to chase. Today's -5.7% is sentiment, not a thesis break; sizing discipline matters more here than entry timing."
+  },
+  "snapshot": {
+    "price": 259.66,
+    "change_pct": -5.66,
+    "change_abs": -15.59,
+    "prev_close": 275.25,
+    "day_low": 249.21,
+    "day_high": 276.15,
+    "week52_low": 43.89,
+    "week52_high": 299.86,
+    "volume": "14.7M sh",
+    "market_cap": "~$65.9B",
+    "extra": [
+      { "label": "★ Q1 FY26 revenue", "value": "$399M, +684% YoY (AI-cloud +841%)", "tone": "up" },
+      { "label": "★ Contracted backlog", "value": "~$47B (Microsoft, Meta anchors)", "tone": "up" },
+      { "label": "FY26 revenue guide", "value": "$3.0–3.4B, ~40% adj. EBITDA margin", "tone": "up" },
+      { "label": "FY26 capex plan", "value": "$20–25B — huge buildout, financing/dilution risk", "tone": "neutral" },
+      { "label": "Strategic backing", "value": "$27B Meta agreement · $2B Nvidia investment", "tone": "up" },
+      { "label": "Contracted power", "value": ">3.5 GW — the AI bottleneck, secured", "tone": "up" },
+      { "label": "Situational Awareness 13F", "value": "NOT a disclosed holding as of Q1 2026 — watch", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv": 80,
+    "iv_note": "Implied vol is high (~80%) and justified — NBIS is a young, momentum-driven name with wide daily ranges. Options are expensive; defined-risk structures are preferable to naked premium on either side.",
+    "put_call": 1.1,
+    "short_interest": "Elevated short interest typical of a richly-valued, fast-moving AI name; squeeze risk on any major contract headline.",
+    "max_pain": "~$250 (front-month gravity near today's session low)",
+    "notable_flow": "Put demand picked up as the stock lost $270 then $260; protective and directional puts dominated the tape on the -5.7% slide. Watch the $250 strike — it aligns with both max pain and today's low."
+  },
+  "what_traders_are_doing": "Treating NBIS as a high-beta sentiment proxy for the AI-infrastructure trade. Playbook: (1) respect the volatility — size positions for an 80% IV name that can move ±6% with no news, as it did today; (2) buy washouts, don't chase rips — the $249 area (today's low, near max pain) is the first place to look for support; (3) watch the capex-funding cadence — a $20–25B build on ~$3B of revenue means equity/debt raises are the key risk, and any dilution headline is a near-term overhang; (4) track the Situational Awareness angle — if Aschenbrenner's next 13F shows a NBIS position initiated, that is a sentiment tailwind for the copy-trade thesis; (5) levels: hold $249 and the uptrend is intact, lose it and $230 then the $200 round number come into play.",
+  "news": [
+    {
+      "label": "★ Nebius Q1 FY26: revenue $399M (+684% YoY); AI-cloud revenue +841%; FY26 guide reiterated at $3.0–3.4B",
+      "url": "https://futurumgroup.com/insights/nebius-q1-fy-2026-earnings-show-ai-cloud-capacity-scaling/",
+      "source": "Futurum Group",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Nebius revenue surges nearly eightfold as the AI-infrastructure race intensifies; ~$47B contracted backlog",
+      "url": "https://finance.biggo.com/news/9AeHJJ4BpwxG186NJeXm",
+      "source": "BigGo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Q1 2026 results detail: $27B Meta agreement, $2B Nvidia strategic investment, >3.5GW contracted power, FY26 capex raised to $20–25B",
+      "url": "https://w.media/nebius-q1-2026-revenue-soars-on-ai-and-cloud-demand/",
+      "source": "w.media",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Nebius Group N.V. Form 6-K (Q1 FY2026) — primary filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926064092/nbis-20260331xex99d1.htm",
+      "source": "SEC EDGAR",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "Volatile and sentiment-driven. With no fresh catalyst until the Q2 print, NBIS will trade as a high-beta read on AI-infrastructure risk appetite. Expect wide swings; $249 is the line that separates 'healthy pullback' from 'trend damage,' and reclaiming $276 would signal the dip is bought.",
+    "long_term": "If Nebius converts its ~$47B backlog and 3.5GW of power into the guided revenue ramp without crippling dilution, it is one of the best-positioned pure-play AI neoclouds — the literal compute-and-power bottleneck the AI buildout depends on. The bet hinges on execution and financing: the $20–25B capex plan is both the bull case (scale) and the bear case (cash burn). High reward, high risk — a deliberately small, conviction sleeve."
+  },
+  "bull_case": [
+    "Revenue compounding ~7x YoY ($399M in Q1 FY26) — among the fastest growth in public tech.",
+    "~$47B contracted backlog anchored by Microsoft and Meta gives rare demand visibility for a young company.",
+    ">3.5GW of contracted power — Nebius owns the exact bottleneck (power + compute) the AI buildout is short of.",
+    "Validation from a $27B Meta agreement and a $2B Nvidia strategic investment.",
+    "A pure, liquid public proxy for the Situational Awareness 'pick-and-shovels' AI-infrastructure thesis."
+  ],
+  "bear_case": [
+    "Extreme valuation: ~$65.9B cap on ~$3B FY26 revenue leaves no margin for error.",
+    "$20–25B FY26 capex implies large debt/equity raises — dilution and financing risk are the core overhang.",
+    "High beta and ~80% IV — the stock can fall 6%+ on sentiment alone, as it did today.",
+    "Customer concentration in a handful of hyperscalers; any AI-capex digestion hits neoclouds early.",
+    "Notably absent from Aschenbrenner's Q1 2026 13F despite fitting his thesis — smart money may see the price as the problem."
+  ],
+  "key_levels": [
+    { "label": "52-week high", "level": "$299.86", "kind": "resistance" },
+    { "label": "Recent / session high", "level": "$276.15", "kind": "resistance" },
+    { "label": "Last / pivot", "level": "$259.66", "kind": "pivot" },
+    { "label": "Session low / max-pain support", "level": "$249.21", "kind": "support" },
+    { "label": "Round-number support below", "level": "$230", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-08-12", "label": "Q2 FY26 earnings — proof of capex-to-revenue conversion", "importance": "high" },
+    { "date": "2026-08-14", "label": "Next 13F window — does Situational Awareness initiate NBIS?", "importance": "medium" }
+  ],
+  "analysis": "Nebius is the cleanest public expression of the thesis our Situational Awareness desk lays out: the scarce inputs in the AI era are compute and power, and Nebius has locked up both — >3.5GW of contracted power and a ~$47B backlog with the largest hyperscalers. The irony tracked on this desk is that Aschenbrenner, whose fund is long the picks-and-shovels everywhere else, did not show NBIS in his Q1 2026 13F — most likely because the valuation does the bottleneck no favors at ~22x forward revenue. Today's -5.7% is a sentiment flush, not a thesis break, and it came on a day capital rotated toward Micron's 'cheaper' AI-memory beat. The investment question is not whether Nebius is well-positioned — it plainly is — but whether it can fund a $20–25B buildout without diluting holders into the ground. Own it small, add on washouts toward $249 and below, and let execution (not price momentum) drive any add."
+}

@@ -1,0 +1,103 @@
+{
+  "asset": "mu",
+  "symbol": "MU",
+  "name": "Micron Technology",
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T14:30:00Z",
+  "is_seed": false,
+  "day_winner": "flat",
+  "day_summary": "First full session after Micron's blowout fiscal-Q3 print (reported after the close June 24). The numbers were a clean beat across the board — EPS $25.11 vs ~$19.95–$20.28 consensus, revenue $41.46B vs ~$34.66B — with a Q4 guide that stunned the Street: revenue $50.0B ± $1.0B, GAAP gross margin ~86%, non-GAAP EPS $31.00 ± $1.00. Yet MU opened higher to $1,083, faded to $991, and is changing hands at $1,048.51, essentially flat (-0.31%) on the day. That muted reaction off a monster beat is the whole story: after a 52-week run from $103 to $1,213, a great quarter was already in the tape. The fundamental win went to the bulls; the session itself was a volatile wash.",
+  "long_pnl": "Anyone long into the print is sitting on enormous gains — MU is up roughly 10x off its 52-week low ($103.38) — but added little today; the post-earnings pop was sold into, leaving longs flat on the session even after a guide to $50B in quarterly revenue.",
+  "short_pnl": "Shorts pressing the 'priced for perfection' thesis got their first small win: despite the beat, MU couldn't hold its $1,083 high and faded to roughly unchanged, rewarding fade-the-news positioning intraday — though the structural short remains painful against an 86% gross-margin guide.",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "1–2 quarters · into the fiscal-Q4 print (~late Sept 2026) and the HBM4 ramp",
+    "rationale": "HOLD at medium conviction. The business is firing on every cylinder — CEO Sanjay Mehrotra says memory tightness is 'locked in to persist beyond calendar 2027,' the Q4 guide implies ~$50B revenue at ~86% gross margin, and HBM is effectively sold out into 2027. On forward earnings the stock is not expensive (a ~$31 quarterly EPS run-rate puts the P/E in the low double digits). But the tape just told you the obvious beat was discounted: a 10x run and a flat reaction to a blowout is classic late-cycle behavior. New money should wait for a pullback toward the $950–$1,000 shelf or a confirmed breakout over $1,083; existing holders ride the cycle but keep a trailing stop, because memory is still a cyclical and this is the part of the cycle where the prints are best. The read-through to SK Hynix (our existing HBM desk) is strongly positive."
+  },
+  "snapshot": {
+    "price": 1048.51,
+    "change_pct": -0.31,
+    "change_abs": -3.26,
+    "prev_close": 1051.77,
+    "day_low": 991.10,
+    "day_high": 1083.32,
+    "week52_low": 103.38,
+    "week52_high": 1213.56,
+    "volume": "57.3M sh",
+    "market_cap": "~$1.18T",
+    "extra": [
+      { "label": "★ Fiscal Q3 EPS", "value": "$25.11 actual vs ~$19.95–$20.28 est (beat ~24%)", "tone": "up" },
+      { "label": "★ Fiscal Q3 revenue", "value": "$41.46B actual vs ~$34.66B est (record)", "tone": "up" },
+      { "label": "★ Q4 guide (revenue)", "value": "$50.0B ± $1.0B — sequential record", "tone": "up" },
+      { "label": "Q4 guide (gross margin)", "value": "~86% GAAP — memory-cycle peak economics", "tone": "up" },
+      { "label": "Q4 guide (EPS)", "value": "$31.00 ± $1.00 non-GAAP", "tone": "up" },
+      { "label": "Reaction", "value": "Flat (-0.31%) despite the beat — already priced after a 10x run", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv": 50,
+    "iv_note": "Implied vol was bid into the print and is crushing today now that the event risk has passed — a textbook post-earnings vol collapse from elevated levels back toward the 45–55% range. Premium sellers who held through the report are the winners; long-gamma buyers paid up for a move that didn't sustain.",
+    "put_call": 0.7,
+    "short_interest": "Short interest modest (low single-digit % of float); the pain trade has been being short, not long.",
+    "max_pain": "~$1,000 (round-number gravity for the front weekly after the vol crush)",
+    "notable_flow": "Heavy two-way flow around the $1,000 and $1,050 strikes; call buyers chased the $1,083 open before the fade, then put buyers stepped in on the rejection. The flat close on huge volume (57M shares) is distribution-on-good-news — worth watching."
+  },
+  "what_traders_are_doing": "The pros are treating this as a 'sell the news on a sold-out story' setup, not a thesis break. Playbook: (1) do not chase strength — the blowout beat produced a flat tape, so let it come to you at the $950–$1,000 support shelf; (2) use the read-through — a $50B Micron guide at 86% margins is bullish confirmation for SK Hynix and the broader HBM/AI-memory complex (cross-check our /skhynix desk); (3) respect the cycle — memory is cyclical and this is peak-earnings season, so size for a name that can de-rate hard the moment guidance ever softens; (4) levels that matter: a daily close back above $1,083 re-opens the highs, a loss of $991 (today's low) opens $950 then $900.",
+  "news": [
+    {
+      "label": "★ Micron reports record fiscal Q3: EPS $25.11 vs ~$20 est, revenue $41.46B; guides Q4 to $50B revenue and ~86% gross margin",
+      "url": "https://www.stocktitan.net/news/MU/micron-technology-inc-reports-record-results-for-the-third-quarter-6f50161e5zxh.html",
+      "source": "StockTitan",
+      "sentiment": "positive"
+    },
+    {
+      "label": "CEO Sanjay Mehrotra: memory market tightness 'locked in to persist beyond calendar 2027' as AI buildout pivots the industry to HBM",
+      "url": "https://www.cnbc.com/2026/06/24/micron-mu-earnings-report-q3-2026.html",
+      "source": "CNBC",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Q3 earnings preview framed June 24 as a make-or-break catalyst — HBM sold out, gross margin expected to break 80%",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261975340-mu-q3-earnings-preview-june-2026-tradingkey",
+      "source": "TradingKey",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Live Q3 recap and outlook: focus on HBM4 demand, Nvidia's Vera Rubin platform, and whether peak margins can hold",
+      "url": "https://www.thestreet.com/latest-news/micron-mu-q3-2026-earnings-call-updates",
+      "source": "TheStreet",
+      "sentiment": "neutral"
+    }
+  ],
+  "outlook": {
+    "short_term": "The path of least resistance near term is sideways-to-choppy. The beat was discounted, IV is collapsing, and the stock needs to digest a 10x advance. Expect a range between the $991 session low and the $1,083 session high until the next catalyst; a decisive break of either end sets the next leg.",
+    "long_term": "Structurally constructive. If memory tightness really does persist beyond 2027 and HBM4 ramps into Nvidia's next platform, Micron is printing peak-cycle cash at high margins and the forward multiple is undemanding. The risk is not the next two quarters but the eventual cycle turn — memory always mean-reverts. Own it as a cyclical with a plan to trim into euphoria, not a buy-and-forget compounder."
+  },
+  "bull_case": [
+    "Blowout Q3 and a Q4 guide to ~$50B revenue at ~86% gross margin — peak-cycle economics few semis names can match.",
+    "HBM effectively sold out into 2027; CEO says tightness persists 'beyond calendar 2027,' giving rare multi-year demand visibility.",
+    "Leverage to the AI buildout via HBM4 and Nvidia's Vera Rubin platform — the AI trade expressed through memory, not just logic.",
+    "Cheap on forward earnings: a ~$31 quarterly EPS run-rate puts the P/E in the low double digits despite the run.",
+    "Positive read-through to the entire memory complex (SK Hynix, Sandisk) confirming the AI-memory super-cycle."
+  ],
+  "bear_case": [
+    "A 10x run from $103 to $1,213 means a lot of good news is already in the price — today's flat reaction to a blowout proves it.",
+    "Memory is cyclical; 86% gross margins are a cycle peak, not a baseline, and the stock will de-rate the moment guidance softens.",
+    "Distribution-on-good-news (flat close, 57M shares) can mark a near-term top.",
+    "Customer concentration and the risk of an AI-capex digestion phase that hits memory demand first.",
+    "Any HBM4 yield or qualification stumble vs. SK Hynix/Samsung would dent the premium narrative."
+  ],
+  "key_levels": [
+    { "label": "52-week high", "level": "$1,213.56", "kind": "resistance" },
+    { "label": "Post-earnings session high", "level": "$1,083.32", "kind": "resistance" },
+    { "label": "Last / pivot", "level": "$1,048.51", "kind": "pivot" },
+    { "label": "Round-number / max-pain shelf", "level": "$1,000", "kind": "support" },
+    { "label": "Session low — first support", "level": "$991.10", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-09-23", "label": "Fiscal Q4 2026 earnings (guide implies ~$50B revenue)", "importance": "high" },
+    { "date": "2026-07-15", "label": "HBM4 qualification / ramp updates into Nvidia Vera Rubin", "importance": "medium" }
+  ],
+  "analysis": "Micron's fiscal Q3 was about as good as a memory print gets — a 24% EPS beat, record revenue, and a sequential guide to $50B at 86% gross margin — and the stock did nothing. That divergence is the actionable signal. When a clean blowout off a sold-out order book produces a flat tape after a 10x run, the market is telling you the cycle's good news is largely discounted and that future returns come from the *duration* of the up-cycle, not its existence. The bull case is genuinely strong and, importantly, cheap on forward numbers; the bear case is simply that you are buying peak earnings in a cyclical. The right posture for most investors is to hold, let the $950–$1,000 shelf prove itself, and use Micron as the cleanest confirmation that the AI-memory super-cycle our SK Hynix desk has tracked is real and broadening."
+}
