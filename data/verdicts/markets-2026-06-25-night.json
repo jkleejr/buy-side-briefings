@@ -1,0 +1,95 @@
+{
+  "routine": "markets",
+  "date": "2026-06-25",
+  "window": "night",
+  "generated_at": "2026-06-25T23:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — PCE In-Line; AAPL/MSFT Memory Pass-Through Confirms AI Demand; Russell Recon Tomorrow",
+    "conviction": "medium",
+    "rationale_short": "May PCE printed headline 4.1% (in-line) and core 3.4% (1 bp above 3.3% consensus) — exactly the morning brief's 'broadly in-line → HOLD maintained' scenario. SPX finished at 7,357.49 (-0.01%). The session's defining development: Apple announced price increases on iPhone, iPad, and Mac citing higher memory costs; Microsoft raised Xbox prices on the same rationale. AAPL fell ~6.5% and MSFT fell 5.1% to $354.32, while MU closed at $1,165.94 (above premarket $1,083 washout). GDP Q1 third estimate revised up to 2.1% annualized from 1.6% — the mild hawkish add-on the morning brief flagged. The 30Y fell 8 bps to 4.848% despite in-line PCE, expanding the buffer to the 5.00% trigger from 7 bps to 15.2 bps. Regime improving but not cleared. Russell Reconstitution at June 26 close is tomorrow's dominant structural event.",
+    "supporting_data": [
+      { "label": "May PCE: Headline 4.1% YoY (in-line with 4.1% consensus); Core 3.4% YoY (1 bp above 3.3% consensus). Monthly PCE +0.4%. Highest headline since April 2023; highest core since October 2023. Exactly the 'broadly in-line → HOLD maintained' scenario from the morning brief.", "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html" },
+      { "label": "GDP Q1 Third (Final) Estimate: 2.1% annualized — upward revision from 1.6% second estimate (+0.5pp), driven by a large downward revision to import growth (21.1% → 11.8%). Morning brief explicitly flagged 'upward revision above 2.0% adds hawkish overlay' — confirmed.", "url": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-1st" },
+      { "label": "AAPL fell ~6.5% and MSFT fell 5.1% to $354.32 after both companies announced consumer hardware price increases citing higher memory costs. MU closed $1,165.94 (above premarket $1,083 washout) — the most direct real-world confirmation of Micron's $50B Q4 demand thesis: OEMs passing memory costs to consumers rather than canceling orders.", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-25-2026" },
+      { "label": "30Y Treasury fell 8 bps to 4.848% despite in-line PCE — bond market pricing the disinflation direction (WTI $69.84 below $70 for second session; Iran normalization; GDP import revision lower). Buffer to 5.00% trigger expanded from 7 bps this morning to 15.2 bps at close.", "url": "https://www.cnbc.com/quotes/US10Y" },
+      { "label": "BTC intraday low $59,334 (opened $60,983) — new recent low; exit gate remains firmly active ($4,000 below $63,500 threshold). Risk appetite has NOT improved despite PCE in-line and AI hardware confirmation. ETH intraday low $1,561.", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-june-25-2026-bitcoin-hits-its-lowest-levels-in-years-125308371.html" },
+      { "label": "Russell Reconstitution effective at June 26 close: MU and AMD reclassified to 'fully Growth' (Growth ETFs must add by close); SpaceX added to Russell 1000; ~$11T passive rebalancing creates the highest-volatility close of Q3. All hedge positions must be sized before 3 PM ET June 26.", "url": "https://www.lseg.com/en/media-centre/press-releases/ftse-russell/2026/ftse-russell-begins-june-2026-semi-annual-russell-us-indexes-reconstitution" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7357.49,  "change_pct": -0.01, "as_of": "2026-06-25T20:00:00Z" },
+    "nasdaq": { "level": 25358.60, "change_pct": -0.46, "as_of": "2026-06-25T20:00:00Z" },
+    "vix":    { "level": 18.63,    "change_pct": -4.42, "as_of": "2026-06-25T20:00:00Z" },
+    "ust10y": { "level": 4.38,     "change_bps": -7,    "as_of": "2026-06-25T20:00:00Z" },
+    "dxy":    { "level": 101.43,   "change_pct": -0.17, "as_of": "2026-06-25T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.63,   "trigger_above": 17,   "unit": "" },
+    { "name": "30Y Yield",    "value": 4.848,   "trigger_above": 5.0,  "unit": "%" },
+    { "name": "DXY",          "value": 101.43,  "trigger_above": 100,  "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7357.49, "trigger_below": 7460, "unit": "" },
+    { "name": "BTC",          "value": 59500,   "trigger_below": 63500,"unit": "USD" },
+    { "name": "Brent",        "value": 72.50,   "trigger_above": 97,   "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU",   "note": "Closed $1,165.94 — above premarket $1,083 washout, below formal add zone $1,200-$1,250 (PCE core 3.4% > 3.2% threshold). AAPL/MSFT consumer hardware price increases directly confirm demand thesis. Russell reclassified to 'fully Growth' — systematic bid at June 26 close. Recalibrated entry $1,150-1,200 partial (50%); stop $1,100 two-close basis.", "sentiment": "positive" },
+    { "ticker": "QCOM", "note": "Closed $206.96 — held all of the +12% Dragonfly/Meta premarket gain through the full session. $185 support; $220 next resistance. Inference hardware story validated.", "sentiment": "positive" },
+    { "ticker": "AAPL", "note": "Fell ~6.5% to ~$274 on iPhone/iPad/Mac price increase announcement citing higher memory costs. Demand elasticity unknown until Q2 earnings (mid-July). Not a buy-the-dip candidate: ~23x 2026 earnings at new lower price, but demand impact unquantified. No new entry before earnings.", "sentiment": "negative" },
+    { "ticker": "MSFT", "note": "Closed $354.32 (-5.1% from $373.20) on Xbox hardware price increase due to higher memory costs. AI software multiple already compressed; hardware price increases add consumer demand risk. Re-entry post-Q2 earnings confirming Azure AI acceleration only.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "Estimated ~$197 (-2% with Mag7 selling). AI demand intact — AAPL/MSFT price increases confirm the capex cycle. Regime add zone remains $205+ on SPX > 7,460 + VIX < 17. Do not size before regime clears.", "sentiment": "neutral" },
+    { "ticker": "GOOGL","note": "Estimated ~$340 (-2.5% with Mag7 selling). QCOM+Meta data center partnership is structural Google Cloud headwind. AI talent exodus unresolved. Short/puts entered from $355-370 zone remain in the money. No positive catalyst before Q2 earnings (mid-July).", "sentiment": "negative" },
+    { "ticker": "XLE",  "note": "Short thesis intact: WTI $69.84 (second session below $70); Brent ~$72.50. Iran Hormuz normalization advancing. Trail stop at $56. Reduce 50% of position before 3 PM ET June 26 — Russell Reconstitution creates unpredictable last-hour sector flows.", "sentiment": "negative" },
+    { "ticker": "BTC",  "note": "Intraday low $59,334 — new recent low for the exit-gate period; opened $60,983; close est. ~$59,500. Exit gate remains firmly active ($4,000 below $63,500 threshold). Re-entry requires SPX > 7,460 AND VIX < 17.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "AAPL",
+      "reason": "Fell ~6.5% on iPhone/iPad/Mac price increase citing higher memory costs. The core question — what happens to iPhone unit demand at higher prices — is unanswerable before Q2 earnings (mid-July). At ~$274, still ~23x 2026 earnings on potentially compressed volumes. Not a value entry.",
+      "better_entry": "Post-Q2 earnings (mid-July) confirming price increases have not materially damaged unit volumes. Two consecutive closes above $290 on positive earnings reaction."
+    },
+    {
+      "ticker": "MSFT",
+      "reason": "Closed $354.32 (-5.1%). Xbox price increases add a consumer hardware headwind to existing AI software multiple compression. FCF margins under pressure from AI investment. At $354, still ~30x 2026 earnings.",
+      "better_entry": "Post-Q2 earnings confirming Azure AI revenue acceleration above 40% growth. Two consecutive closes above $375 with improving AI software metrics."
+    },
+    {
+      "ticker": "NVDA",
+      "reason": "Down ~2% to ~$197 with Mag7 selling. AI demand thesis is intact, but regime framework requires SPX > 7,460 and VIX < 17 before sizing aggressively. Three consecutive sessions below 7,460 have not changed that requirement.",
+      "better_entry": "Buy above $205 only on SPX close above 7,460 AND VIX close below 17. Scale 50% at entry, 50% on first pullback to $203-205."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "MU — entry zone recalibrated to current range",
+      "direction": "long",
+      "thesis": "AAPL raising iPhone/iPad/Mac prices and MSFT raising Xbox prices citing higher memory costs is the strongest possible real-world confirmation of Micron's $50B Q4 guidance. OEMs are raising consumer prices rather than canceling memory orders. MU closed $1,165.94, above the premarket $1,083 washout. The Russell reclassification to 'fully Growth' creates systematic buying at the June 26 reconstitution close.",
+      "entry": "Buy $1,150-1,200 (50% size) with stop $1,100 on two-close basis. Scale to full size only on VIX < 17 + SPX > 7,460 close. Do not chase the last-hour reconstitution bid on June 26.",
+      "invalidation": "Two consecutive closes below $1,100. Samsung HBM4E qualification with NVDA confirmed. Any hyperscaler cutting AI capex guidance.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLE — hold short, reduce before June 26 reconstitution close",
+      "direction": "short",
+      "thesis": "WTI at $69.84 for the second consecutive session below $70; Brent ~$72.50. Iran Hormuz normalization advancing under the 60-day US-Iran license framework (August 13 deadline). Sell-side H2 Brent models at $87-90 represent a $14+ estimate gap not yet revised down. Russell Reconstitution creates unpredictable last-hour sector ETF flows — reduce before 3 PM ET June 26.",
+      "entry": "Hold existing short. Trail stop to $56. Take 50% profit ahead of June 26 reconstitution close. Re-enter below $53 post-reconstitution if oil decline resumes.",
+      "invalidation": "Iran deal collapses or Hormuz re-blockade — Brent reclaims $85. OPEC+ announces emergency production cut.",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "GOOGL — short / July puts",
+      "direction": "short",
+      "thesis": "GOOGL fell ~2.5% today with broader Mag7 selling. AI talent exodus (Shazeer, Jumper) unresolved. QCOM+Meta data center partnership is a structural Google Cloud market-share headwind. No positive catalyst before mid-July Q2 earnings. Short entered from the $355-370 zone is in the money.",
+      "entry": "Hold existing short. Add on any reflexive bounce toward $348-355. July $320 puts as defined-risk alternative. Exit before Q2 earnings to avoid binary risk on the upside.",
+      "invalidation": "GOOGL closes above $365 on two consecutive sessions. Google announces a named AI executive retention program with specific commitments.",
+      "conviction": "medium",
+      "horizon": "2-3 weeks"
+    }
+  ],
+  "bear_case": "The in-line PCE print (core 3.4% — above 3.3% consensus, not below) represents persistent above-comfort-zone inflation for the second consecutive month. The GDP upward revision to 2.1% removes the 'weak growth = Fed caution' narrative — a stronger economy with persistent inflation maximizes the Fed's justification for BofA's September hike. AAPL and MSFT raising consumer hardware prices citing memory costs is not just a bullish AI memory signal; it is a consumer price inflation signal that flows directly into June and July CPI. BTC hitting an intraday low of $59,334 while SPX sits effectively unchanged confirms underlying risk appetite is deteriorating, not improving. Three consecutive sessions below 7,460 with VIX above 17 and DXY above 100 has converted 7,460 from support to resistance. Institutions may use Russell Reconstitution liquidity on June 26 to reduce gross exposure into quarter-end rather than add it. If SPX closes below 7,300 after the June 26 close, HOLD reverts to STEP ASIDE and the BEARISH framework extends into Q3. Invalidation: SPX closes above 7,460 AND VIX closes below 17 simultaneously on any session before June 30.",
+  "body_mdx": "data/briefings/markets/2026-06-25-night.mdx"
+}
