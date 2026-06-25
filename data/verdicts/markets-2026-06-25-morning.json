@@ -1,0 +1,96 @@
+{
+  "routine": "markets",
+  "date": "2026-06-25",
+  "window": "morning",
+  "generated_at": "2026-06-25T11:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Micron & Qualcomm Confirm AI Demand Cycle Is Intact; PCE at 8:30 AM ET Is the Final Regime Gate",
+    "conviction": "medium",
+    "rationale_short": "Two overnight AI demand confirmations arrived in sequence: Micron Q3 FY2026 crushed consensus at $41.5B revenue (+20% beat over $34.66B est.), EPS $25.11 vs $19.95, Q4 guidance $50B ± $1B (vs ~$42.9B est., +17% guide beat) with HBM4 in production for NVIDIA Vera Rubin since March and supply sold out through 2026. Separately, Qualcomm debuted its Dragonfly data center portfolio (C1000 CPU + AI300 inference accelerator) with Meta as its first major customer, targeting $15B in data center revenue by 2029; QCOM +12% premarket. Asia reversed the 'Black Tuesday' KOSPI panic: KOSPI +5.42% to 8,930, Nikkei 225 +4.61% to 72,366. ES futures +0.7%, NQ +2.1% as of 6:25 AM EDT. Oil extends its decline (WTI $69.42, Brent ~$73) — the most powerful near-term disinflation input heading into today's May PCE print. Verdict remains HOLD at medium conviction because three regime indicators are still breached pre-open: VIX premarket ~18.32 (above 17 gate, down from 19.49 close), DXY 101.27 (above 100 gate), and ES futures imply an SPX open of ~7,409 — still 51 pts below the 7,460 floor. PCE releases at 8:30 AM ET (consensus: 4.1% YoY headline / 3.3% core); Q1 GDP Third Estimate also at 8:30 AM ET. Cold PCE core below 3.2% → HOLD upgrades to BUY same session. Hot core above 3.5% → trim new MU/NVDA adds within 45 minutes. BTC at $61,285 remains below the $63,500 exit gate.",
+    "supporting_data": [
+      { "label": "Micron Q3 FY2026: $41.5B revenue (vs $34.66B est., +20% beat); EPS $25.11 vs $19.95; Q4 guidance $50B ± $1B (vs ~$42.9B est.); GAAP gross margin 84.6%; HBM4 in production for NVIDIA Vera Rubin since March; 2026 HBM supply fully booked. The most decisive AI memory demand confirmation of this cycle.", "url": "https://www.fool.com/investing/2026/06/24/micron-just-guided-for-a-staggering-50-billion-in/" },
+      { "label": "Qualcomm Dragonfly debut (June 24): C1000 CPU, AI300 inference accelerator, Meta signed as first major data center customer; $15B data center revenue target by 2029, $40B non-handset revenue by 2029 (vs $22B prior). QCOM +12% premarket. Second same-day AI demand confirmation alongside Micron.", "url": "https://www.cnbc.com/2026/06/24/qualcomm-data-center-cpu-meta.html" },
+      { "label": "KOSPI +5.42% to 8,930.30; Nikkei 225 +4.61% to 72,366.34 — sharp Asian recovery confirms June 23 'Black Tuesday' was driven by MSCI rebalancing technicals, not a read on US AI fundamentals. ES futures +0.7%, NQ futures +2.1% as of 6:25 AM EDT.", "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-as-micron-qualcomm-ease-ai-jitters-232650645.html" },
+      { "label": "WTI crude $69.42/bbl (-1.31%); Brent ~$72.64–$73.72 — multi-month lows as Hormuz tanker traffic accelerates under US-Iran 60-day license framework. Oil's descent below $70 is the dominant disinflation wildcard heading into May PCE (8:30 AM ET).", "url": "https://tradingeconomics.com/commodity/crude-oil" },
+      { "label": "May PCE (8:30 AM ET): consensus headline 4.1% YoY / core 3.3% YoY. Q1 GDP Third Estimate co-releases at 8:30 AM ET (second estimate was 1.6% annualized). Cold PCE core below 3.2% → BUY upgrade same session. Hot core above 3.5% → STEP ASIDE; trim MU/NVDA within 45 minutes.", "url": "https://www.morningstar.com/economy/may-pce-expected-show-rising-inflation" },
+      { "label": "Regime still breached pre-open: VIX premarket ~18.32 (above 17 gate; June 24 close 19.49); DXY 101.27 (above 100 gate; June 24 close 101.59); ES futures imply ~7,409 SPX open — 51 pts below 7,460 floor. Russell reconstitution at June 26 close adds structural volatility context for next two sessions.", "url": "https://www.lseg.com/en/media-centre/press-releases/ftse-russell/2026/russell-reconstitution-2026-schedule" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7358.22,  "change_pct": -0.10, "as_of": "2026-06-24T20:00:00Z" },
+    "nasdaq": { "level": 25476.44, "change_pct": -0.43, "as_of": "2026-06-24T20:00:00Z" },
+    "vix":    { "level": 19.49,    "change_pct": 0.00,  "as_of": "2026-06-24T20:00:00Z" },
+    "ust10y": { "level": 4.45,     "change_bps": -4,    "as_of": "2026-06-25T11:00:00Z" },
+    "dxy":    { "level": 101.27,   "change_pct": -0.12, "as_of": "2026-06-25T11:00:00Z" },
+    "brent":  { "level": 73.05,    "change_pct": -5.20, "as_of": "2026-06-24T20:00:00Z" },
+    "gold":   { "level": 3987.00,  "change_pct": -3.07, "as_of": "2026-06-24T20:00:00Z" },
+    "btc":    { "level": 61285.75, "change_pct": -2.30, "as_of": "2026-06-25T10:54:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.32,   "trigger_above": 17,   "unit": "",        "status": "BREACH — premarket ~18.32 (down from 19.49 June 24 close on futures rally); above 17 gate; approaching threshold of normalization but two consecutive daily closes below 17 are required to clear; 20 remains next panic level" },
+    { "name": "30Y Yield",    "value": 4.93,    "trigger_above": 5.0,  "unit": "%",       "status": "7-BPS BUFFER — PCE (8:30 AM ET, consensus 4.1% YoY) is the binary; a hot core print (above 3.5%) pushes 30Y through 5.00% same session and confirms BofA 3-hike framework" },
+    { "name": "DXY",          "value": 101.27,  "trigger_above": 100,  "unit": "",        "status": "BREACH — 127 bps above trigger; easing slightly from 101.59 June 24 close on pre-PCE positioning; cold PCE is the sole near-term relief catalyst" },
+    { "name": "SPX vs 7,460", "value": 7358.22, "trigger_below": 7460, "unit": "",        "status": "BREACH — 102 pts below floor at June 24 close; ES +0.7% implies ~7,409 open (51 pts below floor); reclaiming 7,460 on cold PCE is the upgrade trigger" },
+    { "name": "BTC",          "value": 61285.75,"trigger_below": 63500,"unit": "USD",     "status": "EXIT GATE ACTIVE — $2,214 below threshold; Day 2 full exit triggered June 24; no re-entry until SPX > 7,460 AND VIX < 17" },
+    { "name": "Brent",        "value": 73.05,   "trigger_above": 97,   "unit": "USD/bbl", "status": "CLEAR — $23.95 buffer; WTI below $70; Hormuz normalization accelerating under 60-day Iran license; XLE short thesis intact" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU",   "note": "Q3 FY2026: $41.5B revenue (+20% beat), EPS $25.11, Q4 guide $50B ± $1B (+17% guide beat), GAAP GM 84.6%. AH surge to ~$1,199 (+14.6%). Premarket June 25: ~$1,083 (gave back AH gains on PCE uncertainty; roughly flat from ~$1,082 regular close). Add zone $1,200-$1,250 remains — post-PCE only. Stop $1,050 two-close basis.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Premarket ~$199-201 (roughly flat from $200.81 June 24 close). MU's $50B Q4 guide confirms Vera Rubin HBM4 demand is intact; Jensen 'AI ROI answered' at Annual Meeting. Not gapping meaningfully — market awaiting PCE clearance. Add above $205 post-PCE confirmation only. Stop $195 unchanged.", "sentiment": "positive" },
+    { "ticker": "QCOM", "note": "+12% premarket on Dragonfly data center debut (C1000 CPU + AI300 accelerator) with Meta as launch customer. $15B data center revenue target by 2029. First serious inference-at-scale challenger to NVDA. Watch $180 as first resistance; pre-PCE add is speculative.", "sentiment": "positive" },
+    { "ticker": "GOOGL","note": "Bounced +2.1% to $348.79 on June 24 with no new catalyst. QCOM+Meta data center partnership is an incremental negative for GOOGL Cloud market share narrative. AI talent exodus (Shazeer, Jumper) unresolved. Short/puts at $355-370 remain the active expression; no structural floor before mid-July Q2 earnings.", "sentiment": "negative" },
+    { "ticker": "XLE",  "note": "Short thesis intact; WTI $69.42 (-1.31%), Brent $73.05 (June 24 close). Iran Hormuz normalization accelerating. Trail stop to $56 from prior brief; consider partial profit-taking on a bounce to Brent $75-76.", "sentiment": "negative" },
+    { "ticker": "BTC",  "note": "$61,285.75 at 10:54 UTC June 25 (down -2.30% from ~$62,729 June 24). Day 2 exit gate active. No re-entry until SPX > 7,460 AND VIX < 17. BTC tracking risk-off cross-asset backdrop; BofA 3-hike framework is a structural headwind for speculative assets.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "QQQ / SPY at the gap-up open",
+      "reason": "PCE releases at 8:30 AM ET — buying the NQ +2.1% gap-up before the print risks a -1.5% to -2.5% reversal if core reads above 3.5%. ES futures imply ~7,409 open (still 51 pts below the 7,460 regime floor). Entering longs in a still-breached regime before the decisive binary event is the one scenario the framework explicitly bars.",
+      "better_entry": "Post-PCE only. Cold core below 3.2% + SPX gap above 7,460 = BUY signal. Buy the confirmation, not the gap."
+    },
+    {
+      "ticker": "MU at premarket levels (~$1,083)",
+      "reason": "MU's fundamentals are unambiguously strong, but the stock gave back its entire AH surge by morning ($1,083 premarket vs $1,199 AH high = -9.7%) — a clear signal the market is pricing PCE risk into the name. Adding near regular-hours close levels (~$1,082) forgoes the margin of safety against a hot print and a rapid reversal toward $1,000.",
+      "better_entry": "Post-PCE at $1,200-$1,250 if core reads cold (below 3.2%) and MU reclaims AH levels. Stop $1,050 on a two-close basis."
+    },
+    {
+      "ticker": "GOOGL",
+      "reason": "Bounced +2.1% to $348.79 on June 24 with no new positive catalyst. QCOM+Meta data center partnership is a mild new negative for GOOGL Cloud narrative. No structural floor until mid-July Q2 earnings confirm AI monetization. At ~$348, still ~20x 2026 earnings with FCF -47% YoY.",
+      "better_entry": "Short/puts at $355-370 remain the active trade. Post-Q2 earnings (mid-July) for any long re-entry after AI revenue trajectory is confirmed."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "MU — conditional long post-PCE",
+      "direction": "long",
+      "thesis": "The most decisive AI memory demand confirmation in this cycle: Q3 $41.5B revenue (+20% beat), Q4 $50B guidance (+17% guide beat), GAAP GM 84.6%, HBM4 in production for NVIDIA Vera Rubin since March, supply sold out through 2026-27. The premarket pullback from $1,199 AH to $1,083 is PCE uncertainty, not fundamental deterioration. The thesis is intact — the entry is the question.",
+      "entry": "Buy at $1,200-$1,250 ONLY after PCE core prints below 3.2% and MU reclaims AH levels. If PCE hot: no new adds; watch $1,050 as a secondary entry on a two-day washout. Stop $1,050 on a two-close basis.",
+      "invalidation": "PCE core above 3.5% → close within 45 minutes; multiple compression overrides AI demand confirmation at elevated multiples. Samsung HBM4E qualification with NVDA confirmed. Any hyperscaler guidance cutting AI capex.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "GOOGL — short / July puts",
+      "direction": "short",
+      "thesis": "GOOGL cumulative -14.5% over two sessions on AI talent exodus (Shazeer → OpenAI, Jumper → Anthropic) with no structural floor. The QCOM+Meta data center win is an incremental negative: Meta is now multi-sourcing AI infrastructure away from Google Cloud. At ~$348, GOOGL trades ~20x 2026 earnings with FCF -47% YoY. No positive catalyst before mid-July Q2 earnings.",
+      "entry": "Short at $355-370 on any reflexive post-PCE relief pop. July $330 puts as defined-risk alternative. Size down if PCE prints cold (regime improving means bears have less tailwind).",
+      "invalidation": "GOOGL reclaims $380 on a daily close. Google announces a named AI executive retention program with specific commitments (counters the Shazeer/Jumper narrative directly).",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "TBT long / XLE short — hold into PCE",
+      "direction": "short",
+      "thesis": "TBT benefits from hot PCE (30Y approaching 5.00% trigger, 7 bps away); XLE short rides Hormuz normalization (WTI below $70, Brent $73). Both are active hedges against the prevailing regime risk; both are invalidated by cold PCE. Hold both positions through the 8:30 AM ET print and reassess immediately. Oil declining below $70 accelerates XLE short thesis regardless of PCE.",
+      "entry": "Hold TBT long (scale 25% on dips to $44-45); hold XLE short ($52-55 zone; trail stop to $56). Reassess both within 90 minutes of PCE. Cold PCE → exit TBT; hot PCE → add TBT and hold XLE.",
+      "invalidation": "PCE core below 3.0% → exit TBT immediately (30Y falls below 4.75%). Iran deal collapses — Brent reclaims $85 → exit XLE short.",
+      "conviction": "medium",
+      "horizon": "1 day (PCE decision binary) + 1-2 weeks (XLE)"
+    }
+  ],
+  "bear_case": "Counter-argument: the MU and QCOM confirmations represent hardware-layer AI demand — they do not change the monetary policy framework. BofA's 3-hike forecast (Sep/Oct/Dec 2026) and Deutsche Bank's September hike addition predate both catalysts and remain the dominant rate pricing input. If May PCE prints 4.1% YoY headline and 3.3% core — exactly consensus — the 30Y tests 5.00%, DXY resumes its rise, and the AI multiple compression that began June 22 continues regardless of Micron's $50B guide. The KOSPI +5.42% recovery does not undo the structural MSCI reweighting that triggered the June 23 panic; it reflects one session of technical relief. More telling: MU gave back its entire AH surge by morning ($1,083 premarket vs $1,199 AH high), and NVDA did not gap meaningfully higher on MU's $50B Q4 guide — the market is not ready to pay up on AI hardware before the rate regime clears. Q1 GDP Third Estimate at 8:30 AM ET (prior: 1.6% annualized, downward-revised from 2.0%) adds a growth-softening data point that could complicate the risk-on narrative. Invalidation: PCE core above 3.5% → HOLD reverts to STEP ASIDE; trim MU/NVDA within 45 minutes. If SPX fails to reclaim 7,460 by June 25 close even on a cold PCE print, the regime breach is structural and BEARISH framework extends into Q3.",
+  "body_mdx": "data/briefings/markets/2026-06-25-morning.mdx"
+}
