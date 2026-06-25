@@ -3,115 +3,102 @@
   "symbol": "BTC",
   "name": "Bitcoin",
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T11:05:00Z",
+  "generated_at": "2026-06-24T23:30:00Z",
   "is_seed": false,
   "day_winner": "bears",
-  "day_summary": "STOP CLOCK DAY 2 IN PROGRESS — STOP EXECUTION NEAR-CERTAIN TONIGHT. Crypto.com MCP live (11:03 UTC June 24): BTC_USDT Open $62,730.89 / High $63,114.64 / Low $62,418.62 / Current $62,426.53 / Change ~0.00% / Volume $141.4M. The June 24 UTC candle has 13 hours remaining; the session high of $63,114 is $386 below the $63,500 stop trigger. For the stop to reset, BTC needs to rally +1.7% from current levels before midnight UTC (8 PM ET). The June 24 NVDA Annual Meeting (9 AM PT) and Micron Q3 results (after US close) are the only risk-on catalysts capable of driving that move. With BTC stuck at $62,400–$62,700 through the overnight and Asia session, the probability of a stop reset is very low. The structural framework: June 23 UTC close was $62,724.97 (Day 1 confirmed, $775 below stop); June 24 is Day 2 — if June 24 UTC closes below $63,500, STOP EXECUTES: FULL EXIT required, no exceptions. The intraday double-bottom breach ($61,926 on June 23) and three Day-1 triggers in six sessions confirm structural deterioration.",
-  "long_pnl": "longs from the $63,500–$65,000 accumulation zone are 2–4% offside; Day 2 stop clock in progress with 13 hours remaining; at $62,426 the June 24 UTC close is tracking $1,074 below the stop trigger; full exit required at midnight UTC (8 PM ET) if price holds below $63,500",
-  "short_pnl": "bears who initiated shorts on the June 23 double-bottom breach ($61,926) or Day 1 confirmation ($62,724) are now profitable; the June 24 session high ($63,114) tested resistance and was rejected; next target $60,000 round number if daily close confirms below $62,255 double-bottom",
+  "day_summary": "STOP EXECUTED — FULL EXIT CONFIRMED. Day 2 of the stop clock resolved as predicted: BTC closed the June 24 UTC midnight candle at approximately $62,729 — well below the $63,500 stop trigger. Stop executed per framework: FULL EXIT required, no exceptions. The intraday high during the regular US session reached only $63,239 (Crypto.com exchange 24h data), still $261 below the $63,500 trigger — Micron Q3's massive AH beat pushed the session high but was insufficient to reset the clock. After the UTC midnight close, BTC accelerated lower: selling to an AH low of $59,105 before recovering to ~$60,770 as of 01:04 UTC June 25. The post-stop deterioration confirms the structural breakdown thesis. Three Day-1 triggers in six sessions + double-bottom breach + stop execution + post-stop dump = STRUCTURAL REGIME CHANGE confirmed. Re-entry framework: two consecutive UTC daily closes ABOVE $62,000 from within the $59,000–$62,000 zone required before any re-entry consideration.",
+  "long_pnl": "the UTC midnight stop executed at ~$62,729; investors who exited per framework at or before midnight UTC locked in near breakeven on the day; longs who did not exit before midnight are now carrying losses to the $60,770 current price (AH) or worse if held through the $59,105 low; the framework stop saved capital — post-stop BTC dump to $59,105 proves the exit was correct; do NOT re-enter on this bounce without two consecutive UTC closes above $62,000",
+  "short_pnl": "bears who initiated on the Day 1 confirmation ($62,724) or double-bottom breach ($61,926) are now profitable with BTC at $60,770 and a post-stop low of $59,105; next target $59,000–$60,000 if structure continues; the stop execution confirms the $63,500–$64,000 demand zone has failed structurally",
   "decision": {
     "action": "sell",
     "conviction": "high",
-    "horizon": "today — June 24 UTC midnight close (8 PM ET) is the stop clock decision; current price $62,426 is $1,074 below the $63,500 stop trigger with 13 hours remaining; STOP EXECUTION near-certain",
-    "rationale": "SELL at HIGH conviction — STOP CLOCK DAY 2 NEAR-CERTAIN EXECUTION. Crypto.com MCP live at 11:03 UTC June 24: BTC $62,426, session high only $63,114 (still $386 below $63,500 stop). With the June 24 UTC candle 13 hours from close, BTC needs a +1.7% rally from current levels to reset the stop. The structural setup argues against that rally: (1) all MAs remain bearish, (2) double-bottom was breached intraday June 23 ($61,926), (3) three Day-1 triggers in six sessions, (4) ETF outflows ongoing, (5) Micron Q3 results arrive at ~4:30 PM ET (20:30 UTC) = AFTER the midnight UTC close (20:00 UTC). PRESCRIBED FRAMEWORK ACTION: Exit remaining 50% position. Full exit required at or before midnight UTC tonight."
+    "horizon": "stop executed — FULL EXIT CONFIRMED at UTC midnight; monitoring $59,000–$62,000 zone for two-consecutive-close re-entry signal; earliest re-entry: two UTC daily closes above $62,000",
+    "rationale": "SELL at HIGH conviction — STOP EXECUTED. The June 24 UTC midnight close confirmed Day 2 below $63,500: framework protocol executed, FULL EXIT required and confirmed. The session high during US hours reached only $63,239 (Micron's massive AH beat drove a risk-on spike) — $261 short of the $63,500 reset trigger. After UTC midnight, BTC accelerated lower to $59,105 (AH low) before partially recovering to $60,770 as of 01:04 UTC June 25. Post-stop dump of ~$2,629 from the midnight close confirms the structural breakdown. The framework is now in WAIT mode: DO NOT re-enter based on any single session bounce. Re-entry requires two consecutive UTC daily closes ABOVE $62,000 from within the $59,000–$62,000 zone. Earliest possible re-entry: June 26 UTC close if June 25 and June 26 both close above $62,000 — currently not the base case."
   },
   "snapshot": {
-    "price": 62426.53,
-    "change_pct": 0.0,
-    "change_abs": -4.47,
+    "price": 60770.34,
+    "change_pct": -2.96,
+    "change_abs": -1854.63,
     "prev_close": 62724.97,
-    "day_low": 62418.62,
-    "day_high": 63114.64,
+    "day_low": 59105.15,
+    "day_high": 63239.17,
     "week52_low": 48200,
     "week52_high": 98600,
-    "volume": "~$141.4M (Crypto.com exchange, mid-session at 11:03 UTC); ~$11.8B 24h total market volume",
-    "market_cap": "~$1.24T (at $62,426 / 19.83M circulating supply)",
+    "volume": "~5,244 BTC ($318.6M on Crypto.com exchange 24h); ~$22–25B total market 24h volume (elevated on stop-trigger event)",
+    "market_cap": "~$1.205T (at $60,770 / 19.83M circulating supply)",
     "extra": [
-      { "label": "★ STOP CLOCK DAY 2 IN PROGRESS — EXECUTION NEAR-CERTAIN", "value": "June 23 UTC close $62,724.97 = Day 1 confirmed (third in six sessions). June 24 UTC candle current: Open $62,730.89 / High $63,114.64 / Low $62,418.62 / Price $62,426.53 at 11:03 UTC. Session high $63,114 is $386 below the $63,500 stop trigger. 13 hours remain. Stop execution probability: >90%. Framework action: FULL EXIT required at or before midnight UTC (8 PM ET)", "tone": "down" },
-      { "label": "Crypto.com MCP live data (11:03 UTC June 24)", "value": "BTC_USDT ticker: Last $62,426.53 / Bid $62,424.12 / Ask $62,424.13 / 24h High $63,114.64 / 24h Low $61,952.89 / Volume 2,263.3 BTC ($141.4M) / Change +0.00%", "tone": "neutral" },
-      { "label": "June 24 UTC candle vs June 23 UTC candle", "value": "June 23: Open $64,020 / High $64,278 / Low $61,926 / Close $62,724.97 (Day 1, -2.02%). June 24 mid-session: Open $62,730.89 / High $63,114.64 / Low $62,418.62 / Current $62,426 (on pace for Day 2 below $63,500)", "tone": "down" },
-      { "label": "Micron Q3 timing vs UTC close — critical note", "value": "Micron Q3 results arrive at ~4:30 PM ET (20:30 UTC). The June 24 UTC midnight close is 20:00 UTC. Micron arrives 30 MINUTES AFTER the UTC close — any BTC risk-on move from MU beat affects June 25 UTC candle only, not June 24. There is no risk-on catalyst before midnight UTC tonight.", "tone": "down" },
-      { "label": "Post-stop re-entry framework", "value": "After full exit at midnight UTC: re-entry requires two consecutive UTC daily closes ABOVE $62,000 from within the $60,000–$62,000 zone; the double-bottom ($62,255–$62,313) has been decisively breached intraday; the new structural support zone is $60,000–$61,926 (June 23 intraday low); do NOT re-enter until new support is confirmed by two consecutive closes", "tone": "neutral" },
-      { "label": "Three Day-1 triggers in six sessions — regime signal", "value": "June 18 (FOMC): Day 1 → June 19: Reset. June 21: Day 1 re-triggered → June 22: RESET. June 23: Day 1 confirmed ($62,724.97). June 24: Day 2 in progress. Three separate Day-1 events in six sessions signals the $63,500–$64,000 structural demand zone is failing, not just being tested periodically.", "tone": "down" }
+      { "label": "★ STOP EXECUTED — FULL EXIT CONFIRMED AT UTC MIDNIGHT", "value": "June 24 UTC midnight close: ~$62,729 (Day 2 below $63,500 confirmed). Framework: FULL EXIT required. Session high $63,239 — $261 below trigger; even Micron's massive AH beat was insufficient to reset the clock. Post-midnight dump: BTC fell to $59,105 low before partially recovering to $60,770 (01:04 UTC June 25). Stop execution was correct — post-stop dump of ~$2,900 from midnight close proves the structural breakdown.", "tone": "down" },
+      { "label": "Crypto.com MCP live (01:04 UTC June 25)", "value": "BTC_USDT: Last $60,770 / Bid $60,767 / Ask $60,767 / 24h High $63,239 / 24h Low $59,105 / Volume 5,244 BTC ($318.6M) / Change -0.0346 (-3.46%)", "tone": "down" },
+      { "label": "Micron AH beat — provided temporary spike to $63,239 but FELL SHORT", "value": "Micron's massive Q3 beat ($41.5B revenue vs. $34.66B consensus) drove a risk-on AH spike in BTC to $63,239 — the closest approach to the $63,500 trigger all session. The $63,239 high was hit at approximately 20:30–21:00 UTC (AH trading window). Still $261 below the trigger. After the initial spike, BTC reversed and accelerated lower through midnight UTC and into $59,105 post-stop.", "tone": "down" },
+      { "label": "Post-stop dump — $59,105 AH low confirms structural breakdown", "value": "After UTC midnight close (stop execution), BTC dropped from ~$62,729 to $59,105 — a post-stop decline of ~$3,624 (-5.8%). This is the signature of a structural breakdown: the stop trigger acted as support during the session; once broken on a closing basis, sell-stops and algo liquidation accelerated. Current $60,770 is a partial recovery from the $59,105 low. No support until $59,000–$60,000 zone.", "tone": "down" },
+      { "label": "Re-entry framework — two consecutive UTC closes above $62,000", "value": "Post-stop re-entry protocol: (1) Wait for BTC to establish a new floor in the $59,000–$62,000 zone; (2) Two consecutive UTC daily closes ABOVE $62,000 from within this zone = Day 1 re-entry signal; (3) Do NOT re-enter on the June 25 UTC candle regardless of price action — one bounce is not confirmation; (4) Monitor IBIT flows daily; resumed institutional ETF inflows are prerequisite for any high-conviction re-entry; (5) PCE June 25 8:30 AM ET — cold PCE (core below 3.2%) is a necessary but insufficient condition for re-entry; cold PCE could support risk assets but BTC still needs two confirmed UTC closes above $62,000.", "tone": "neutral" },
+      { "label": "Three Day-1 triggers + stop execution = regime change confirmed", "value": "June 18 (FOMC): Day 1 → reset. June 21: Day 1 → reset. June 23: Day 1 confirmed. June 24: Day 2 → STOP EXECUTES. Three separate Day-1 events in six sessions followed by stop execution is a definitive structural regime change signal. The $63,500–$64,000 demand zone has failed completely. The new structural range is $59,000–$62,000 pending re-establishment of support.", "tone": "down" }
     ]
   },
   "positioning": {
-    "iv": 60,
-    "iv_note": "IV elevated to ~60% as Day 2 stop clock tracking below $63,500. Put/call ratio ~1.20, elevated; bearish options flow building for $60,000–$62,000 range. Stop execution tonight = IV spike then compression as $60,000 becomes the next focus. Market pricing ~90% probability of stop execution based on current distance from trigger.",
-    "put_call": 1.20,
-    "short_interest": "Perp funding rates: slightly negative from June 23 risk-off flush. Negative funding is a contrarian signal but NOT a reversal signal when structural trend is confirmed bearish. Three Day-1 triggers override any short-term contrarian funding signal.",
-    "max_pain": "July expiry max pain shifted to $60,000–$62,000 after double-bottom breach. Prior anchor $63,000–$65,000 is now overhead resistance. The $60,000 strike has the heaviest put OI concentration — the market's next target on stop execution.",
-    "notable_flow": "Crypto.com live: 2,263 BTC volume ($141.4M) through 11:03 UTC — tracking toward a light-volume day vs June 23's 2,940 BTC ($184.4M). Low volume on a near-flat day after the June 23 selloff is NOT a bullish signal — it indicates indecision, not accumulation."
+    "iv": 65,
+    "iv_note": "IV spiked to ~65% post-stop execution as structural breakdown concerns drive put buying. Put/call ratio elevated to ~1.35 as the market prices in continued downside toward $58,000–$60,000. The $59,105 post-stop low is the first reference for near-term support. IV compression requires a two-consecutive-close confirmation above $62,000 — not the current price action.",
+    "put_call": 1.35,
+    "short_interest": "Perp funding rates turned negative again after the post-stop dump — shorts are now paying a funding cost, a classic contrarian signal. However, negative funding is NOT a reversal signal in a confirmed structural breakdown with three Day-1 triggers. The bear trend has structural momentum that outweighs short-term contrarian mechanics.",
+    "max_pain": "July expiry max pain has shifted to $58,000–$61,000 post-stop. The $60,000 strike carries the heaviest put OI concentration — the market's near-term target. The $59,105 AH low has already tested the $60,000 psychological level. A close below $59,000 would confirm the move is targeting deeper support at $57,500.",
+    "notable_flow": "Crypto.com exchange 24h volume: 5,244 BTC ($318.6M) — significantly elevated from the 2,263 BTC morning reading, reflecting stop-trigger event selling. IBIT flows (Farside) for June 24 not yet reported; June 22–23 flows pending. Continued ETF outflows would confirm institutional distribution and add conviction to the structural breakdown read."
   },
-  "what_traders_are_doing": "STOP EXECUTION PROTOCOL — professional playbook for June 24: (1) EXIT remaining 50% position NOW at $62,400–$62,430 market; (2) Set a reminder for 7:45 PM ET (23:45 UTC) — 15 minutes before midnight UTC; confirm full exit before midnight; (3) DO NOT watch the NVDA Annual Meeting hoping for cross-asset risk-on — Micron Q3 arrives AFTER the midnight UTC close; no intraday catalyst available; (4) Post-stop: monitor IBIT flows daily; watch for two consecutive UTC closes above $62,000 from the $60,000–$62,000 zone as the re-entry signal; do NOT re-enter based on a single session bounce; (5) If BTC miraculously closes above $63,500 tonight (third reset): full thesis reassessment required — three Day-1 triggers and a double-bottom breach are structural damage that requires new confirmation before re-entry.",
+  "what_traders_are_doing": "POST-STOP PROTOCOL: (1) FULL EXIT was required at UTC midnight — if executed correctly, you are now flat BTC; if not, exit NOW at market ($60,770 est.) — do not wait for a bounce; (2) Monitor IBIT daily flows at farside.co.uk; (3) Watch for two consecutive UTC daily closes above $62,000 from the $59,000–$62,000 zone as the re-entry confirmation; (4) PCE June 25 8:30 AM ET — cold PCE is positive for risk assets but alone insufficient for BTC re-entry; (5) Do NOT chase a bounce to $62,000–$62,500 — that level is now overhead resistance, not support; (6) The next structural re-entry window, if confirmed, would target $62,500–$63,500 on a two-session confirmation break.",
   "news": [
     {
-      "label": "★ STOP CLOCK DAY 2 IN PROGRESS — Crypto.com MCP live at 11:03 UTC: $62,426 / High $63,114 (still $386 below $63,500 stop); 13 hours remain; full exit required at midnight UTC (8 PM ET) if no recovery above $63,500; stop execution probability >90%",
+      "label": "★ STOP EXECUTED — BTC UTC midnight close ~$62,729 (Day 2 below $63,500 confirmed). Framework: FULL EXIT. Post-midnight dump to $59,105 low, currently $60,770 at 01:04 UTC June 25. Three Day-1 triggers in six sessions + structural double-bottom breach = regime change confirmed.",
       "url": "https://crypto.com/exchange/trade/BTC_USDT",
-      "source": "Crypto.com MCP (live, 11:03 UTC June 24)",
+      "source": "Crypto.com MCP (live, 01:04 UTC June 25)",
       "sentiment": "negative"
     },
     {
-      "label": "June 23 UTC close confirmed at $62,724.97 — Day 1 of stop clock confirmed (third time in six sessions); double-bottom structural support ($62,255–$62,313) breached intraday ($61,926); recovery to $62,724 close held above double-bottom on closing basis but structural damage is done",
-      "url": "https://crypto.com/exchange/trade/BTC_USDT",
-      "source": "Crypto.com MCP (1D candle data)",
-      "sentiment": "negative"
-    },
-    {
-      "label": "Micron Q3 timing note — results arrive ~4:30 PM ET (20:30 UTC), which is 30 minutes AFTER the June 24 UTC midnight close (20:00 UTC); any BTC risk-on from Micron beat only affects June 25 UTC candle; tonight's stop clock resolves entirely on the current session's price action",
-      "url": "https://finance.yahoo.com/quote/MU/",
+      "label": "BTC 24h high $63,239 — Micron AH beat ($41.5B revenue, Q4 guide $50B) drove a temporary risk-on spike at ~20:30–21:00 UTC; high reached $63,239 but fell $261 short of the $63,500 reset trigger; after the initial spike BTC reversed and accelerated lower through midnight UTC to $59,105 post-stop low.",
+      "url": "https://finance.yahoo.com/technology/live/tech-stocks-live-micron-stock-jumps-over-12-on-earnings-beat-after-tumbling-earlier-this-week-143422690.html",
       "source": "Yahoo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "PCE May data June 25 8:30 AM ET — consensus 4.1% YoY; cold PCE (core below 3.2%) is a necessary but insufficient condition for BTC re-entry; two consecutive UTC closes above $62,000 from the $59,000–$62,000 zone remain the framework requirement regardless of PCE outcome.",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-24-2026",
+      "source": "TheStreet",
       "sentiment": "neutral"
     },
     {
-      "label": "Bitcoin ETF tracker — 13 consecutive outflow days (May 15–June 3) removed $4.33B / 59,400 BTC; June 22–23 flow data pending from farside.co.uk; continued outflows would confirm institutional distribution; resumed IBIT inflows are prerequisite for any high-conviction long re-entry",
+      "label": "IBIT ETF flows — 13+ consecutive outflow days through early June removed $4.33B / 59,400 BTC; June 22–24 flows not yet reported; resumed institutional ETF inflows are prerequisite for any high-conviction long re-entry; watch farside.co.uk daily.",
       "url": "https://farside.co.uk/bitcoin-etf-flow-all-data-in-one-chart/",
       "source": "Farside Investors",
       "sentiment": "negative"
-    },
-    {
-      "label": "All 14 moving averages bearish — no MA support until significantly lower prices; 29 of 30 technical indicators bearish per CoinCodex; BTC in confirmed short-term downtrend; no oversold signal providing mechanical bounce floor",
-      "url": "https://coincodex.com/crypto/bitcoin/",
-      "source": "CoinCodex",
-      "sentiment": "negative"
-    },
-    {
-      "label": "KOSPI June 24 recovered +3.26% to 8,471.02 — one-session resolution of Korea panic; this is modestly positive for BTC risk sentiment but insufficient to drive the required +1.7% rally to $63,500 before midnight UTC without additional catalysts",
-      "url": "https://www.asiae.co.kr/en/article/market-overview/2026062416035277261",
-      "source": "Asia Business Daily",
-      "sentiment": "neutral"
     }
   ],
   "outlook": {
-    "short_term": "STOP EXECUTION IS TONIGHT. The June 24 UTC candle has 13 hours remaining with BTC at $62,426 — $1,074 below the $63,500 stop trigger. The session high of $63,114 is the closest BTC has approached the trigger and it was rejected. Micron Q3 results arrive AFTER the midnight UTC close. Execute the full exit before 8 PM ET. Post-stop: target re-entry zone $60,000–$62,000 on two consecutive UTC closes above $62,000.",
-    "long_term": "Structurally intact on a 2–4 year view. Fixed supply (21M hard cap) × widening ETF access × halving supply reduction (April 2024) × eventual DXY decline remains the thesis. The near-term stop execution protects capital until a new structural floor is established. Re-entry in the $60,000–$62,000 zone would represent a better risk-reward entry than holding through a confirmed structural breakdown."
+    "short_term": "Post-stop BTC is in the $59,000–$62,000 structural re-evaluation zone. The $59,105 AH low is the first test of new support. Two consecutive UTC daily closes above $62,000 are required before any re-entry. PCE June 25 is a necessary but insufficient catalyst for re-entry — cold PCE could provide a relief bounce to $61,500–$62,500 but that alone does not reset the structural breakdown. Monitor: IBIT daily flows, June 25 and June 26 UTC closes relative to $62,000.",
+    "long_term": "Structurally intact on a 2–4 year view. Fixed supply (21M hard cap) × widening ETF access × halving supply reduction (April 2024) × eventual DXY decline remains the thesis. The near-term stop execution protects capital until a new structural floor is established. The $59,000–$62,000 zone, if confirmed by two-session closes above $62,000, would represent a better risk-reward entry than holding through a confirmed structural breakdown at $63,500."
   },
   "bull_case": [
-    "Micron Q3 beat-and-raise (tonight ~4:30 PM ET) could drive risk-on across all assets on June 25 UTC candle — while it doesn't save tonight's stop clock, a massive HBM beat could reset BTC toward $64,000–$65,000 on June 25; if June 25 UTC candle opens and closes above $63,500, the re-entry framework activates",
-    "KOSPI +3.26% June 24 recovery — the fastest possible one-session resolution of the double-circuit-breaker event; BTC showing partial de-coupling (only -2.02% on June 23 vs KOSPI -9.99%); if risk sentiment globally normalizes, BTC should follow",
-    "Perp funding negative — shorts carrying a funding cost; if BTC holds $62,400 through the morning and funding remains negative, short squeeze risk builds during the US session; combined with Annual Meeting risk-on could challenge $63,500"
+    "Micron's $50B Q4 guidance confirms the AI capex cycle — a broader risk-on environment in equities (SPX through 7,460 on cold PCE June 25) could drive BTC toward $62,000–$62,500 for a re-entry test; if June 25 AND June 26 UTC candles both close above $62,000, the re-entry framework activates",
+    "Post-stop dump to $59,105 is an exhaustion move — the selling accelerated mechanically after the stop trigger; if IBIT flows resume inflows and cold PCE drives risk-on, a two-session recovery from $59,105 to above $62,000 is achievable in the June 25–26 window",
+    "Perp funding negative — shorts carrying a cost; if BTC stabilizes at $59,000–$60,000 and funding remains negative, short-squeeze risk builds; combined with cold PCE risk-on, a squeeze could challenge $62,000–$63,000 within 48 hours"
   ],
   "bear_case": [
-    "Stop clock Day 2 executing tonight — the mathematical reality is $1,074 below the trigger with the highest-impact risk-on catalyst (Micron Q3) arriving after the close; the stop EXECUTES at midnight UTC (8 PM ET); exit before then",
-    "Three Day-1 triggers in six sessions is a regime change signal — structural demand at $63,500–$64,000 is failing; even after tonight's stop execution, the $60,000–$62,000 re-entry zone may face pressure if ETF outflows continue",
-    "All 14 moving averages bearish with no momentum oversold floor — BTC can continue declining from $62,426 toward $60,000 without a technical reversal signal; the bear trend has room to run"
+    "Post-stop structural breakdown is confirmed — the $63,500 demand zone has failed on a closing basis (three Day-1 triggers + Day 2 execution); the post-stop dump to $59,105 is the structural target becoming the new range; $58,000–$59,000 is the next support level; bearish until two consecutive UTC closes above $62,000",
+    "Hot PCE June 25 (core above 3.5%) = DXY strength, risk-off, 30Y tests 5.00%; worst-case scenario for BTC re-entry: post-stop price at $60,770 + risk-off macro = $57,500–$58,500 range; ETF outflows continuing = institutional distribution in progress",
+    "All major moving averages overhead and bearish — no mechanical bounce floor; BTC can continue declining from $60,770 toward $57,500 without a technical reversal signal; the bear trend has structural momentum that requires two consecutive confirmed closes to arrest"
   ],
   "key_levels": [
     { "label": "20-EMA overhead — major resistance for any meaningful recovery", "level": "$65,021", "kind": "resistance" },
-    { "label": "Session high (June 24 UTC, 11:03 UTC) — bears defended this level", "level": "$63,114", "kind": "resistance" },
-    { "label": "★ STOP CLOCK trigger — June 24 UTC close above = stop reset; close below = STOP EXECUTES (full exit)", "level": "$63,500", "kind": "pivot" },
-    { "label": "June 24 UTC open", "level": "$62,731", "kind": "pivot" },
-    { "label": "June 23 UTC confirmed close — Day 1 anchor", "level": "$62,725", "kind": "pivot" },
-    { "label": "★ Current price (11:03 UTC) — $1,074 below stop trigger; 13 hours remaining", "level": "$62,426", "kind": "pivot" },
-    { "label": "★ Double-bottom structural floor (June 18 + June 19 lows) — breached intraday June 23 ($61,926); must hold on daily close basis", "level": "$62,255–$62,313", "kind": "support" },
-    { "label": "June 23 intraday low — new near-term floor", "level": "$61,926", "kind": "support" },
-    { "label": "Round number / psychological support — post-stop target", "level": "$60,000", "kind": "support" },
-    { "label": "June cycle low — backstop if $60K fails", "level": "$59,100", "kind": "support" }
+    { "label": "Stop clock trigger (failed — now overhead resistance)", "level": "$63,500", "kind": "resistance" },
+    { "label": "24h high — Micron spike peak; overhead resistance zone", "level": "$63,239", "kind": "resistance" },
+    { "label": "UTC midnight close (stop execution level)", "level": "$62,729", "kind": "resistance" },
+    { "label": "★ Re-entry gate — two consecutive UTC closes above = Day 1 re-entry signal", "level": "$62,000", "kind": "pivot" },
+    { "label": "Current AH price (01:04 UTC June 25)", "level": "$60,770", "kind": "pivot" },
+    { "label": "★ Round number / psychological support — heavy put OI", "level": "$60,000", "kind": "support" },
+    { "label": "★ 24h AH low — post-stop structural test", "level": "$59,105", "kind": "support" },
+    { "label": "June cycle low — backstop if $59,105 fails", "level": "$59,000–$59,100", "kind": "support" },
+    { "label": "Next major support if $59,000 fails", "level": "$57,500", "kind": "support" }
   ],
   "catalysts": [
-    { "date": "2026-06-24", "label": "★ June 24 UTC midnight close (8 PM ET) — STOP CLOCK DAY 2 RESOLUTION: current price $62,426 / $1,074 below stop trigger; session high $63,114 already below trigger; STOP EXECUTION near-certain; full exit required before 8 PM ET; Micron Q3 arrives AFTER UTC close (~4:30 PM ET = 20:30 UTC)", "importance": "high" },
-    { "date": "2026-06-25", "label": "June 25 UTC candle — first post-stop re-entry evaluation window; if Micron Q3 beat drove BTC above $63,500 after-hours, and June 25 closes above $63,500, that is Day 1 of the re-entry two-consecutive-close confirmation", "importance": "medium" },
-    { "date": "2026-06-25", "label": "PCE inflation (BEA) — core PCE <2.6% = DXY decline, risk-on; core PCE >2.8% = rate-hike risk, DXY strength, BTC headwind; key macro gating factor for any post-stop re-entry thesis", "importance": "medium" }
+    { "date": "2026-06-25", "label": "PCE May (BEA) 8:30 AM ET — cold PCE (core below 3.2%) is necessary but insufficient for BTC re-entry; cold PCE + two UTC closes above $62,000 = re-entry framework activates; hot PCE = $57,500–$58,500 target; IBIT flows will be the confirming signal", "importance": "medium" },
+    { "date": "2026-06-25 to 2026-06-26", "label": "Two consecutive UTC daily closes above $62,000 — the ONLY quantitative re-entry signal; earliest possible activation: June 25 and June 26 UTC closes both above $62,000; do NOT re-enter before this confirmation", "importance": "high" }
   ],
-  "analysis": "## Technical analysis\n\n**Trend:** BTC remains in a confirmed short-term downtrend. All 14 moving averages above current price, all signaling sell. The June 24 UTC session (mid-day at 11:03 UTC) is tracking a near-flat consolidation around $62,400–$62,700.\n\n**Momentum:** 29 of 30 technical indicators bearish per CoinCodex. RSI not yet oversold. No mechanical bounce floor from momentum extremes.\n\n**Volume:** 2,263 BTC ($141.4M) through 11:03 UTC — tracking lighter than June 23's 2,940 BTC ($184.4M). Low volume consolidation below a structural trigger is indecision, not accumulation.\n\n**Strongest support — $62,255–$62,313 double-bottom (★):** Held on a closing basis through June 23 (close $62,724 > $62,255 floor) despite the $61,926 intraday breach. A daily close below $62,255 would signal $60,000 as the next target.\n\n**Strongest resistance — $63,500 stop trigger (★):** Now functioning as the primary resistance level. Every rally attempt in June 24 has failed to clear $63,114. The trigger is $386 above the session high — technically within reach but contextually improbable.\n\n**Decision point:** $63,500 (stop clock midnight UTC). The June 24 UTC close resolves the framework.\n\n**Invalidation:** A June 24 UTC close above $63,500 resets the stop clock for the third time — but after three Day-1 triggers and a double-bottom intraday breach, a full thesis reassessment would be mandatory even on a reset."
+  "analysis": "## Technical analysis\n\n**Trend:** BTC confirmed a structural breakdown on June 24 with stop execution at the UTC midnight close (~$62,729). Post-stop dump to $59,105 (AH low) accelerated the decline. Currently $60,770 at 01:04 UTC June 25. All major moving averages overhead and bearish.\n\n**The Stop Clock Resolution:** The June 24 24h high of $63,239 was reached at approximately 20:30–21:00 UTC on the Micron AH beat — still $261 short of the $63,500 reset trigger. The failure to reach the trigger on the most powerful risk-on catalyst of the session is the most bearish technical signal possible: even maximum risk-on was insufficient.\n\n**Post-stop structure:** $59,000–$62,000 is the new structural trading range. The $59,105 AH low is the first test. Two consecutive closes above $62,000 from within this range is the re-entry gate. Until then, the framework remains FLAT/CASH on BTC.\n\n**Re-entry framework:** (1) Watch for two consecutive UTC daily closes above $62,000; (2) Monitor IBIT flows daily for institutional re-engagement; (3) Cold PCE is a necessary catalyst but not sufficient alone; (4) Do not chase any single-session bounce above $62,000 — two closes are required."
 }
