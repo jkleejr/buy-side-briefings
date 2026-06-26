@@ -1,0 +1,97 @@
+{
+  "routine": "markets",
+  "date": "2026-06-26",
+  "window": "night",
+  "generated_at": "2026-06-26T23:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Reconstitution Bid Failed; Five-Session Nasdaq Bleed; NFP Binary July 2",
+    "conviction": "medium",
+    "rationale_short": "The morning's STEP ASIDE call was correct on direction — SPX closed at 7,354.02 (-0.05%), its fifth consecutive session below 7,460 — but wrong on the two headline narratives. First, NVDA fell 1.64% to $192.53 despite being the #1 Russell 3000 constituent and the primary target of the record $334B closing cross; the passive Growth ETF bid was overwhelmed by active tech selling, confirming institutional distribution rather than accumulation. Second, the Hormuz oil panic reversed entirely: Brent crude settled at $71.99 (-4.34%), below even the June 25 close of ~$72.50, as more tankers exited the Strait and Trump labeled the drone strike a 'foolish violation of our Ceasefire Agreement.' The inflation risk headlined in the morning brief did not materialize. The net regime: five of six indicators remain breached (VIX 18.89, DXY 101.25, SPX below 7,460, BTC at new intraday low $58,189); the oil reversal preserves the disinflation narrative but does not clear any gate. The week's dominant event is the June Non-Farm Payrolls report, pulled forward to Thursday July 2 (markets closed July 3), with consensus at +172K and any strong read cementing BofA's three-hike framework into a 3-day holiday weekend gap.",
+    "supporting_data": [
+      { "label": "SPX 7,354.02 (-0.05%), Nasdaq 25,297.62 (-0.24%) — fifth consecutive losing session; S&P down 1.73% on the week. Russell 2000 +0.71% (reconstitution flows boosted small-caps while mega-cap Growth fell).", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-26-2026" },
+      { "label": "NVDA closed $192.53 (-1.64%) — below June 25 close — despite being #1 in Russell 3000 Growth ETF reconstitution. Record $334.027B closing cross in 1.63 seconds on Nasdaq could not arrest the active selling. MU -2.1%, AMD -2.6%, WDC -10.52% on the same session.", "url": "https://finance.yahoo.com/markets/stocks/articles/record-trading-volume-nasdaq-closing-203600825.html" },
+      { "label": "Brent crude settled $71.99 (-4.34%), WTI $69.23 (-3.74%) — Hormuz premarket panic spike to $74.43 fully reversed. More tankers exited Hormuz despite the drone strike; Trump called attack a 'foolish violation of our Ceasefire Agreement.' Oil disinflation thesis survives.", "url": "https://www.cnbc.com/2026/06/26/oil-prices-middle-east-iran-strait-of-hormuz-opec-iraq-wti-brent-crude.html" },
+      { "label": "BTC intraday low $58,189 (new multi-month low); US spot Bitcoin ETF outflows $692M on June 25 — largest single-day redemption since May 27. Exit gate Day 4 active ($63,500 threshold). Speculative risk appetite absent.", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-26-2026-june-hasnt-been-kind-to-crypto-prices-122928758.html" },
+      { "label": "UMich Consumer Sentiment final June: 49.5 (vs 48.9 preliminary, vs ~50.0 consensus) — second-lowest reading since the 1970s. 36% of respondents cite inflation as the greater risk for the year ahead; high prices drew spontaneous complaints from more than half of all respondents for a third consecutive month.", "url": "https://qz.com/university-michigan-consumer-sentiment-june-2026-062626" },
+      { "label": "Non-Farm Payrolls June report pulled forward to Thursday July 2 (markets closed July 3, Independence Day observed) — consensus +172K NFP, 4.3% unemployment, +0.3% wages. Strong print cements BofA's three-hike framework into a holiday weekend gap; weak print raises recession concern. Either scenario is directionally negative for growth tech.", "url": "https://www.cnbc.com/2026/06/26/stock-market-next-week-outlook-for-june-29-july-3-2026.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7354.02,  "change_pct": -0.05, "as_of": "2026-06-26T20:00:00Z" },
+    "nasdaq": { "level": 25297.62, "change_pct": -0.24, "as_of": "2026-06-26T20:00:00Z" },
+    "vix":    { "level": 18.89,    "change_pct": 0.00,  "as_of": "2026-06-26T20:00:00Z" },
+    "ust10y": { "level": 4.40,     "change_bps": 2,     "as_of": "2026-06-26T20:00:00Z" },
+    "dxy":    { "level": 101.25,   "change_pct": -0.18, "as_of": "2026-06-26T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.89,   "trigger_above": 17,    "unit": "",        "status": "BREACH — 18.89, unchanged from premarket; no improvement across the full session; two consecutive closes below 17 still required to clear the gate; 20 is next panic threshold" },
+    { "name": "30Y Yield",    "value": 4.848,   "trigger_above": 5.00,  "unit": "%",       "status": "15.2-BPS BUFFER — oil reversal removes Hormuz inflation risk; 10Y edged +2 bps to 4.40%; 30Y essentially unchanged; buffer intact heading into NFP week" },
+    { "name": "DXY",          "value": 101.25,  "trigger_above": 100,   "unit": "",        "status": "BREACH — 101.25 (slight improvement from 101.43 June 25 close); still 125 bps above 100 trigger; DXY gave back intraday Hormuz spike; gradual easing continues" },
+    { "name": "SPX vs 7,460", "value": 7354.02, "trigger_below": 7460,  "unit": "",        "status": "BREACH — 106 pts below floor; third consecutive daily close making a lower low; 7,300 is the escalation level to BEARISH" },
+    { "name": "BTC",          "value": 58189,   "trigger_below": 63500, "unit": "USD",     "status": "EXIT GATE ACTIVE — Day 4; new intraday low $58,189; $5,311 below $63,500 threshold; no re-entry without two consecutive UTC closes above $62,000" },
+    { "name": "Brent",        "value": 71.99,   "trigger_above": 97,    "unit": "USD/bbl", "status": "CLEAR — $71.99 close, actually below June 25 close of $72.50; morning Hormuz spike to $74.43 fully reversed; $25.01 buffer to main trigger; XLE short thesis partially restored" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Closed $192.53 (-1.64%), below June 25 close, despite being the #1 Russell 3000 Growth ETF reconstitution target. The passive bid was overwhelmed. No add until SPX > 7,460 and VIX < 17 simultaneously. Re-base zone $188-192; stop two-close basis below $185.", "sentiment": "negative" },
+    { "ticker": "MU",    "note": "Fell ~2.1% on June 26 despite Russell Growth reclassification passive bid; Morningstar supply glut thesis created institutional overhang that mechanical buying couldn't overcome. Near-term AI demand thesis intact but multiple has a new ceiling. Wait for $1,100-1,150 re-entry zone post-reconstitution noise.", "sentiment": "neutral" },
+    { "ticker": "AMD",   "note": "Fell ~2.6% despite Russell Growth reclassification. Follows MU in reconstitution failure pattern. AI inference demand thesis intact but active selling overwhelms passive bid in current regime.", "sentiment": "neutral" },
+    { "ticker": "WDC",   "note": "Western Digital -10.52% on June 26 — significant pullback after MU-driven AI memory enthusiasm. WDC has HDD exposure that doesn't benefit from AI HBM demand the same way NAND/DRAM does. Potential read-through: memory AI trade is narrowing to pure-play HBM (MU) not broader storage.", "sentiment": "negative" },
+    { "ticker": "AVGO",  "note": "Closed ~$380.00 (range $372.70-$389.93) — semis held better than pure memory names. AI networking/custom ASIC demand thesis intact. Watch $370 as support; better add zone than NVDA in current regime.", "sentiment": "neutral" },
+    { "ticker": "SPCX",  "note": "Russell 1000 addition completed; stock showed mid-day strength (+1.5% at one point). The two-close re-entry framework ($185) has not been met — this remains a mechanical bid event, not a fundamental clearance. First earnings (Starlink ARR, Starship cadence) are the real entry gate.", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "Continued weakness after June 25's ~6.5% decline on hardware price increases. No specific June 26 close data, but the negative overhang from unit demand uncertainty persists. No entry before mid-July Q2 earnings.", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "Continued weakness after June 25's -5.1% on Xbox/hardware price increases. AI software thesis intact but hardware headline compression adds noise. No entry before Q2 earnings confirming Azure AI acceleration.", "sentiment": "negative" },
+    { "ticker": "GOOGL", "note": "Short/puts thesis from June 25 intact. AI talent losses (Shazeer→OpenAI, Jumper→Anthropic) unresolved. QCOM+Meta data center headwind structural. No positive catalyst before Q2 earnings. Hold existing short.", "sentiment": "negative" },
+    { "ticker": "BTC",   "note": "Intraday low $58,189 — new multi-month low. $692M ETF outflows on June 25 largest since May 27. Day 4 of exit gate. No re-entry: two consecutive UTC closes above $62,000 required before any crypto position.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA at current levels ($192.53)",
+      "reason": "The largest passive buying event in Russell history — $334B in 1.63 seconds — could not arrest the selling. NVDA opened at $202.17 (up 4.5% from the June 25 close) but closed at $192.53 (-1.64%), nearly $10 below the open. This intraday reversal confirms institutions are using reconstitution liquidity to reduce gross exposure, not add it. The AI demand thesis remains intact — Micron's $50B Q4 guide still holds — but multiple headwinds are now compounding: OpenAI IPO delay, Morningstar MU supply-glut overhang, and five consecutive Nasdaq losing sessions.",
+      "better_entry": "Buy above $205 on simultaneous SPX > 7,460 and VIX < 17 close. Scale 50% at entry; 50% on first pullback. Re-base zone $188-192 provides a lower-risk entry if regime clears."
+    },
+    {
+      "ticker": "QQQ / XLK into holiday week",
+      "reason": "Five consecutive Nasdaq losing sessions (-1.73% on the week for SPX). VIX 18.89, no regime clearing. NFP on Thursday July 2 is a binary event: a strong print (+200K, wages +0.4%) locks in BofA's three-hike framework with markets closed July 3 — no ability to hedge the gap into July 7. A weak print (<130K) raises recession concerns that further compress growth multiples. Entering broad tech ETFs into this setup means owning unhedged NFP risk over a 3-day holiday.",
+      "better_entry": "Post-NFP July 7 if: (1) NFP prints in the 130-190K range (Goldilocks), (2) VIX closes below 17, and (3) SPX sustains above 7,400 into the week. All three conditions must be met before sizing index ETFs."
+    },
+    {
+      "ticker": "BTC at $58,000-59,000",
+      "reason": "Intraday low $58,189 is a new multi-month low, down ~7.6% from the $63,000 area where the exit gate was first triggered. US spot Bitcoin ETF outflows of $692M on June 25 were the largest since May 27 — institutional redemption, not tax-loss selling. BTC's failure to recover despite AI hardware demand confirmation (Micron's $50B guide) and PCE in-line signals that speculative risk appetite is independently deteriorating, not merely tracking macro.",
+      "better_entry": "No re-entry until two consecutive UTC closes above $62,000. That requires a $3,800+ sustained recovery from current levels. Do not buy the dip into a confirmed downtrend with negative ETF flow."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "IWM long / QQQ short — small-cap vs. mega-cap pair",
+      "direction": "pair",
+      "thesis": "Russell 2000 gained +0.71% on June 26 while Nasdaq fell -0.24% — the reconstitution created a structural small-cap bid that outperformed mega-cap Growth despite all three Growth ETF reconstitution beneficiaries (NVDA, MU, AMD) falling. Quarter-end window dressing (June 29-30) institutionally supports large-cap defensive and small-cap exposure over concentrated Nasdaq. The pair removes broad market beta and captures the regime-driven rotation from AI mega-cap toward value/small-cap that has been unfolding since June 23.",
+      "entry": "Buy IWM at 208-212 (Monday open). Short QQQ at 448-455 (Monday open). Equal dollar size. Stop: IWM falls below 204 on two-close basis OR QQQ closes above 465 (implies SPX > 7,460, invalidating the rotation thesis).",
+      "invalidation": "NVDA reclaims $205+ with sustained volume AND SPX closes above 7,460 — would signal Growth ETF rotation resuming rather than the small-cap divergence continuing.",
+      "conviction": "medium",
+      "horizon": "3-5 trading days (through quarter-end June 30)"
+    },
+    {
+      "asset": "QQQ July 11 $450 puts — short tech into NFP",
+      "direction": "short",
+      "thesis": "Five consecutive Nasdaq losing sessions with no regime clearing. NFP on Thursday July 2 is binary: strong print (+200K, wages +0.4%) cements BofA three-hike framework, compressing growth multiples further into a 3-day holiday weekend gap; weak print (<130K) triggers recession fears that accelerate Nasdaq selling. Defined-risk puts provide protection through the July 3-6 gap and the July 7 return. July 11 expiry gives time for the post-NFP repricing to fully develop.",
+      "entry": "Buy QQQ July 11 $450 puts at Monday open. Alternative: short QQQ outright at 448-455 with stop at 465. Size 10-15% of gross. These puts are cheap on a five-session losing streak with an upcoming binary macro event.",
+      "invalidation": "QQQ closes above $465 (implies SPX regains ~7,460 regime floor). NFP prints Goldilocks (+140-180K, wages +0.2-0.3%) and VIX closes below 17 simultaneously.",
+      "conviction": "medium",
+      "horizon": "1-2 weeks (through July 7 NFP reaction)"
+    },
+    {
+      "asset": "TLT — tactical long on NFP downside hedge",
+      "direction": "long",
+      "thesis": "If NFP prints weak (<130K) or wages miss (+0.1-0.2%), the BofA three-hike framework loses credibility and treasuries rally. TLT also benefits from any flight-to-safety following a strong NFP (growth scare via hike expectations → eventual recession pricing). The oil reversal — Brent settling at $71.99, back below June 25 close — removes the Hormuz inflation premium and supports the disinflation narrative that holds 30Y below 5.00%. TLT provides a natural hedge to QQQ puts if NFP is actually Goldilocks and tech bounces.",
+      "entry": "Buy TLT at market Monday open. Small size 5-7% of gross. Stop: NFP strong (+220K+, wages +0.4%) AND 30Y yields break above 4.90% in the two sessions following the release.",
+      "invalidation": "Strong NFP with wages above 0.4% month-over-month — 30Y yield moves toward 5.00% trigger; exit immediately.",
+      "conviction": "low",
+      "horizon": "Through NFP reaction (July 2-7)"
+    }
+  ],
+  "bear_case": "The reconstitution's failure is the session's most important signal, and the market is not fully pricing what it implies. If $334B in passive Growth ETF buying — the largest liquidity event in Nasdaq closing-cross history — cannot produce a net positive close in NVDA, MU, or AMD, then the active selling overhang in mega-cap tech is larger than the passive buying program. Quarter-end window dressing (June 29-30) provides a smaller and more discretionary bid that faces the same headwind. Five consecutive Nasdaq losing sessions and a weekly SPX decline of 1.73% establish a pattern: every attempted recovery has been sold. The NFP on July 2 — with markets closed July 3 — is particularly dangerous: a strong employment print (+200K, wages +0.4%) arrives into a 3-day weekend gap with no ability to rebalance. SPX reopening July 7 with the full weight of a near-certain September hike, an intact OpenAI IPO delay, and a Nasdaq that failed to hold five consecutive recovery attempts would establish 7,300 as resistance rather than support. If SPX closes below 7,300 at any point before July 7, the STEP ASIDE framework escalates to BEARISH and the BofA hike-cycle framework extends into a full-year headwind for growth multiples. Invalidation: SPX closes above 7,460 AND VIX closes below 17 simultaneously — STEP ASIDE reverts to HOLD. NFP prints 130-180K with wages +0.2-0.3% (Goldilocks) — regime conditions stabilize.",
+  "body_mdx": "data/briefings/markets/2026-06-26-night.mdx"
+}
