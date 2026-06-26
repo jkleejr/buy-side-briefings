@@ -1,0 +1,93 @@
+{
+  "date": "2026-06-26",
+  "for_session": "2026-06-29",
+  "generated_at": "2026-06-26T11:00:00Z",
+  "is_seed": false,
+  "intro": "June 29 session opens in the wake of two seismic events: KOSPI 'Black Friday' −5.81% (circuit breakers x2, SK Hynix −8.36%) and Russell Reconstitution (effective June 26 4 PM ET close, NVDA becomes Russell #1 at $4.8T, MU/AMD fully Growth, SpaceX Russell 1000 added). The verdict for June 29 hinges entirely on whether the Russell Reconstitution systematic flows cleared the three regime gates at Friday's close: SPX > 7,460 AND VIX < 17 AND DXY < 100. If gates cleared: add NVDA above $205, upgrade verdict to BUY. If gates failed: HOLD with step-aside risk below SPX 7,300. Ideas below reflect both scenarios.",
+  "ideas": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "category": "ai-semis",
+      "lean": "buy",
+      "conviction": "medium",
+      "timeframe": "1-3 days",
+      "idea": "Russell Reconstitution aftermath — add above $205 ONLY IF SPX closed above 7,460 AND VIX closed below 17 on Friday's reconstitution close. Do NOT add if only one gate cleared. Hold from $196.87 stop $195 two-close basis if gates did not clear.",
+      "why": "NVDA is now the largest constituent in the Russell 1000/3000 universe at $4.8T — the first session after reconstitution historically sees continued passive inflows as ETFs fine-tune weights. NVDA paid its $0.25/share quarterly dividend on June 26 (2,400% increase from $0.01); $80B buyback active. The fundamental thesis — HBM demand, hyperscaler capex, AI inference scaling — is unambiguously intact per Micron's $50B Q4 guide and AAPL/MSFT consumer price pass-through.",
+      "trigger": "Open June 29 above $205 IF Friday SPX close > 7,460 AND VIX close < 17. If Friday close failed gates, hold — next add trigger is the first session both gates clear simultaneously at a daily close.",
+      "risk": "KOSPI contagion extends to US premarket Monday; SPX gaps below 7,300 at Friday close; any hyperscaler announcing AI capex cuts before June 29 open."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "category": "ai-semis",
+      "lean": "buy",
+      "conviction": "medium",
+      "timeframe": "3-7 days",
+      "idea": "Russell Growth reclassification dip-buy: MU was reclassified to fully Growth at Friday's reconstitution close — Growth ETFs (IWF, VONG, SCHG) added MU at 4 PM ET Friday. The reconstitution premium may partially unwind Monday morning (typical 1-3 day fade). Buy the dip to $1,150–$1,200 range if one materializes.",
+      "why": "$50B Q4 FY2026 revenue guide is the strongest earnings beat of the 2026 AI cycle. HBM4 capacity sold out through 2026. AAPL/MSFT consumer hardware price increases confirm memory cost pass-through at OEM tier. Samsung has not qualified HBM4E yet — MU has an 18-month structural lead. The Growth reclassification means MU now appears in every large-cap Growth index permanently, not just as a reconstitution event.",
+      "trigger": "MU opens Monday below $1,200 (reconstitution premium fade) → add. If MU opens above $1,250 with no pullback, wait for $1,200 entry. Stop $1,050 two-close basis.",
+      "risk": "Samsung announces HBM4E qualification on same timeline as MU; hot July PCE driving tech multiple compression; hyperscaler Q2 commentary signaling demand softening."
+    },
+    {
+      "ticker": "SKHYNIX",
+      "name": "SK Hynix Inc.",
+      "category": "ai-semis",
+      "lean": "watch",
+      "conviction": "medium",
+      "timeframe": "1-2 days",
+      "idea": "Critical stop proximity watch: KST close June 26 was ₩2,673,000, just ₩133,000 (4.97%) above the ₩2,540,000 stop (two consecutive KST daily closes required). June 27 KST session is the first regime test after KOSPI 'Black Friday.' Do NOT add — monitor for stop breach and ADR announcement.",
+      "why": "The structural thesis (HBM3E sole-source for NVIDIA, ADR clearance imminent) is unchanged. The near-term risk is forced stop-out: a second −5% KST session June 27 would bring ₩2,540,000 into range on the first close. Retail net buy ₩11.55T on June 26 (record) is a contrarian indicator — retail capitulation is typically a bottom signal, but the institutional/foreign selling (₩9.82T net sell) may persist until the ADR announcement absorbs supply.",
+      "trigger": "Watch June 27 KST close: if ₩2,673,000 holds or recovers → hold; if closes below ₩2,600,000 (first close toward stop) → tighten mental stop, prepare to exit on second close below ₩2,540,000. ADR SEC clearance announcement → remove stop, hold for announcement premium.",
+      "risk": "Two consecutive KST closes below ₩2,540,000 → mandatory exit. Third circuit-breaker session in five days would accelerate institutional selling beyond retail absorption capacity."
+    },
+    {
+      "ticker": "BTC-USD",
+      "name": "Bitcoin / US Dollar",
+      "category": "crypto",
+      "lean": "sell",
+      "conviction": "medium",
+      "timeframe": "2-5 days",
+      "idea": "Remain FLAT/CASH. Re-entry clock not activated on June 26. Session high $60,767 was $1,233 below the $62,000 gate — and declining vs June 25's $61,967 high (which was only $33 below gate). The distribution ceiling is falling. Russell Reconstitution equity flows at 4 PM ET Friday may have produced a BTC spike at the UTC daily close — check June 26 20:00 UTC candle close. Only a confirmed CLOSE above $62,000 activates Day 1 of the two-day re-entry clock.",
+      "why": "BTC open $59,802 / high $60,767 / current $59,397 at 11:02 UTC on June 26. KOSPI −5.81% risk-off continues to suppress crypto. The declining session highs pattern (3 consecutive sessions where high < prior session high relative to $62,000 gate) is a distribution signal, not consolidation. Without re-entry clock activation, the risk-reward of re-entering BTC is negative.",
+      "trigger": "Check June 26 20:00 UTC candle close: if close > $62,000 → Day 1 activated, next check is June 27 20:00 UTC close. If June 27 also closes > $62,000 → re-entry confirmed, buy. If either close fails → clock resets. Do not re-enter on intraday moves above $62,000.",
+      "risk": "Correlated equity risk-on Monday (Russell Reconstitution aftermath) drives BTC above $62,000 before re-entry clock can activate — being flat means missing the first leg of a recovery move."
+    },
+    {
+      "ticker": "SPCX",
+      "name": "Procure Space ETF",
+      "category": "space",
+      "lean": "watch",
+      "conviction": "high",
+      "timeframe": "5-10 days",
+      "idea": "STEP ASIDE HIGH conviction maintained. Bond settlement was June 26 — the formal ~10-12 business day distribution window is now underway. Clearance estimated July 7-10. The $150 floor is under structural selling pressure from bond distribution mechanics every session. Monitor for first closing breach below $150.",
+      "why": "The $25B SpaceX bond ($89B demand, 3.6x oversubscribed) settled June 26. Distribution to $89B in demand from $25B supply requires ~10-12 business days of allocation and clearing — every bid in SPCX is absorbed by bond demand at better yield. SpaceX Russell 1000 addition at Friday's close is a one-time event that does NOT change the distribution mechanics. The re-entry gate ($185 two consecutive closes) requires September 2 earnings as the next catalyst.",
+      "trigger": "Watch for first closing breach below $150: if SPCX closes below $150 on ANY Monday-Friday → distribution absorbing all support; SPCX is approaching distribution overhang exhaustion point; step aside means no position. Re-entry: two consecutive closes above $185 after bond distribution window clears (est. July 7-10).",
+      "risk": "SpaceX announces a major mission or contract that drives SPCX above $185 before bond distribution clears — being flat means missing a spike. $150 holds as floor through distribution — opportunity cost of being flat. Tail risk: bond distribution creates cascading selling that takes SPCX to $130s before recovery."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc.",
+      "category": "big-tech",
+      "lean": "watch",
+      "conviction": "low",
+      "timeframe": "2-4 weeks",
+      "idea": "Low-conviction watch: Meta as the Qualcomm Dragonfly anchor customer. If regime gates clear (SPX > 7,460 AND VIX < 17 at any daily close), META becomes the best-risk-adjusted addition in big-tech — it is the cheapest full-stack AI company at current multiples relative to revenue growth. Do not add while regime gates are breached.",
+      "why": "META is the reported anchor customer for Qualcomm's Dragonfly AI chip (next-generation inference silicon), suggesting a hedge against NVIDIA dependence that the market has not fully priced. META Reality Labs losses are decelerating while Threads/Instagram AI engagement metrics are accelerating. On a PEG basis META trades at a discount to MSFT and GOOGL. The KOSPI/VIX regime environment is the sole obstacle.",
+      "trigger": "Both SPX > 7,460 AND VIX < 17 close simultaneously (regime cleared) → add META on the following session open. Price target: 10% above entry on 4-week horizon. Stop: 7% below entry.",
+      "risk": "Regime gates remain breached through July → META drifts lower with broader tech; FTC/EU regulatory action on Meta AI data practices; Qualcomm Dragonfly delayed or relationship reported inaccurately."
+    },
+    {
+      "ticker": "XLE",
+      "name": "Energy Select Sector SPDR Fund",
+      "category": "big-tech",
+      "lean": "sell",
+      "conviction": "medium",
+      "timeframe": "1-3 weeks",
+      "idea": "Hold XLE short — trail stop to $55 from prior $56. WTI and Brent both below $70 for second consecutive session. Hormuz normalization is materializing. Consider partial profit-taking (25%) if Brent approaches $65-$67.",
+      "why": "Brent $69.42 and WTI both below $70 on June 25 close. KOSPI −5.81% risk-off adds global GDP growth concern = further energy demand pressure. Hormuz normalization is reducing the geopolitical premium that was supporting energy prices. The macro regime (VIX 18.63, DXY 101.43) is consistent with continued risk-off energy underperformance. XLE short is the cleanest risk-reward in the portfolio entering June 29.",
+      "trigger": "Hold short. Trail stop to $55. If Brent drops to $65-$67 → take 25% profit. Full exit only if Iran deal collapses and Brent reclaims $80+.",
+      "risk": "Iran deal collapses — Brent reclaims $85 → exit XLE short immediately; OPEC+ emergency unannounced cut; US-Iran escalation beyond current framework."
+    }
+  ]
+}
