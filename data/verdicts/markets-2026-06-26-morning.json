@@ -1,0 +1,97 @@
+{
+  "routine": "markets",
+  "date": "2026-06-26",
+  "window": "morning",
+  "generated_at": "2026-06-26T10:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Hormuz Drone Strike Reverses Oil Bear Thesis; KOSPI Circuit Breaker; Russell Recon Close Creates Whipsaw",
+    "conviction": "medium",
+    "rationale_short": "Three compounding overnight developments push the morning framework from HOLD to STEP ASIDE. First, an Iranian drone struck a cargo vessel in the Strait of Hormuz Thursday evening, pausing the UN ship evacuation and driving Brent crude from $72.50 (June 25 close) to $74.43 premarket — directly reversing the 'Hormuz normalization' disinflation narrative that anchored the prior three briefings. Second, Asian markets accelerated their selloff: KOSPI fell 5.81% to 8,411 (intraday -8%, triggering a 20-minute circuit breaker), Nikkei 225 fell 4.40% to 69,185. Third, MU slipped ~4% premarket after Morningstar warned AI memory revenue could peak in 2028 then halve by 2029-2030 due to supply glut — the first institutional bear case against the blowout MU earnings. Separately, NYT reported OpenAI may delay its IPO to 2027, sending SoftBank (largest OpenAI backer) -13% in Tokyo. ES futures -0.5% imply SPX open ~7,322 (138 pts below 7,460 regime floor); NQ futures -1.2%. All four primary regime gates remain breached for the third consecutive session. NVDA provides the session's lone counter-signal: opened at $202.17 (up from $193.53 June 25 close) as Growth ETFs position ahead of the Russell Reconstitution effective at today's 4 PM close, where NVDA now holds the #1 slot in the Russell 3000. Verdict: STEP ASIDE — do not chase the morning trend in either direction; let Russell reconstitution noise clear before re-evaluating Monday. UMich Consumer Sentiment final release (10 AM ET; preliminary 48.9) is today's only macro catalyst before the close.",
+    "supporting_data": [
+      { "label": "ES futures -0.5% → SPX implied open ~7,322 (138 pts below 7,460 regime floor); NQ futures -1.2%; Dow futures -67 pts (-0.1%). KOSPI -5.81% to 8,411.21 (intraday -8%, 20-minute circuit breaker triggered); Nikkei 225 -4.40% to 69,185. Tech rout intensifying in Asia for a second leg down from the June 23 MSCI event.", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-26-2026" },
+      { "label": "Iranian drone strikes cargo vessel in Strait of Hormuz (Thursday evening); UN pauses ship evacuation plan under Iran 'transit fee' demands; Brent crude rallied from $72.50 (June 25 close) to $74.43 premarket (+2.66%) — the single most damaging overnight development for the inflation/disinflation narrative anchoring the prior briefings.", "url": "https://www.euronews.com/2026/06/25/cargo-ship-hit-by-projectile-in-hormuz-as-iran-issues-renewed-passage-warning" },
+      { "label": "VIX 18.89 (+1.40% from 18.63 June 25 close), DXY 101.40, SPX below 7,460 floor, BTC $60,124 (below $63,500 exit gate) — all four primary regime indicators remain simultaneously breached for the third consecutive session with no clearing catalyst before the close.", "url": "https://streetstats.finance/markets/volatility" },
+      { "label": "MU premarket -4% (~$1,120 from $1,165.94 close): Morningstar warns AI memory cycle peaks ~2028, then 50%+ revenue drop by 2029-2030 as supply glut overwhelms demand — 'memory chips trade like commodities.' Morningstar raised MU fair value to $850 from $455 but called the long-term setup structurally cyclical, not secular growth.", "url": "https://stocktwits.com/news-articles/markets/equity/mu-revenue-halve-2030-retail-bullish/cZ1cKBzR7gf" },
+      { "label": "NYT: OpenAI may delay IPO to 2027 — SoftBank (largest OpenAI backer, $50B+ committed) fell 13% in Tokyo. AI IPO pipeline slowdown compresses near-term AI monetization timeline, raising the risk that current semis and AI infrastructure multiples are priced for a liquidity event that may not arrive on schedule.", "url": "https://www.bloomberg.com/news/articles/2026-06-25/asia-stocks-set-for-choppy-open-on-tech-volatility-markets-wrap" },
+      { "label": "Russell Reconstitution effective at today's 4 PM close: NVDA now #1 in Russell 3000/1000 Growth; MU reclassified to fully Growth; AAPL/AMZN/MSFT weightings shift toward Value. ~$11T benchmarked to Russell; estimated $200B+ traded at the close. NVDA opened $202.17 (up from $193.53 June 25 close) as Growth ETFs pre-position — creates last-hour passive bid that dominates the tape.", "url": "https://www.lseg.com/en/insights/ftse-russell/russell-reconstitution-june-2026-larger-leaders-stronger-small-caps" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7357.49,  "change_pct": -0.01, "as_of": "2026-06-25T20:00:00Z" },
+    "nasdaq": { "level": 25358.60, "change_pct": -0.46, "as_of": "2026-06-25T20:00:00Z" },
+    "vix":    { "level": 18.89,    "change_pct": 1.40,  "as_of": "2026-06-26T10:30:00Z" },
+    "ust10y": { "level": 4.39,     "change_bps": 1,     "as_of": "2026-06-26T10:30:00Z" },
+    "dxy":    { "level": 101.40,   "change_pct": -0.03, "as_of": "2026-06-26T10:30:00Z" },
+    "brent":  { "level": 74.43,    "change_pct": 2.66,  "as_of": "2026-06-26T10:30:00Z" },
+    "btc":    { "level": 60124,    "change_pct": 0.55,  "as_of": "2026-06-26T10:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 18.89,   "trigger_above": 17,   "unit": "",        "status": "BREACH — premarket 18.89 (+1.40% from 18.63 June 25 close); well above 17 gate; Hormuz-driven risk-off preventing normalization; two consecutive closes below 17 still required; 20 remains the next panic threshold" },
+    { "name": "30Y Yield",    "value": 4.848,   "trigger_above": 5.0,  "unit": "%",       "status": "15.2-BPS BUFFER — unchanged from June 25 close; Hormuz-driven oil spike adds upside inflation risk if sustained; bond market has not yet priced Hormuz escalation fully" },
+    { "name": "DXY",          "value": 101.40,  "trigger_above": 100,  "unit": "",        "status": "BREACH — 140 bps above trigger; Hormuz-driven oil spike is net DXY-positive (energy import demand); only 3-bps improvement from June 25 close of 101.43" },
+    { "name": "SPX vs 7,460", "value": 7322,    "trigger_below": 7460, "unit": "",        "status": "BREACH — ES futures imply ~7,322 open (138 pts below floor); failed to reclaim 7,460 for three consecutive sessions; floor converting to resistance; close below 7,300 today escalates to BEARISH" },
+    { "name": "BTC",          "value": 60124,   "trigger_below": 63500,"unit": "USD",     "status": "EXIT GATE ACTIVE — Day 3; $3,376 below $63,500 threshold; intraday low Thursday $59,334 made new recent low; speculative risk appetite not recovering" },
+    { "name": "Brent",        "value": 74.43,   "trigger_above": 97,   "unit": "USD/bbl", "status": "WATCH — $22.57 to main trigger; Iranian drone strike reverses Hormuz normalization; up from $72.50 (+2.66%); if UN evacuation permanently halted next key watch level is $78-80; XLE short thesis partially invalidated" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Opened June 26 at $202.17, range $200.00-$203.77 (up from $193.53 June 25 close, +4.5%). Russell reconstitution Growth ETF bid is the primary driver — NVDA is now #1 in the Russell 3000. AI demand thesis unaffected by broader selloff. Tactical long entry window 1-3 PM ET for reconstitution. Stop $193 two-close.", "sentiment": "positive" },
+    { "ticker": "MU",   "note": "Premarket -4% (~$1,120 from $1,165.94 close) on Morningstar supply glut 2029-2030 warning. Russell reclassified to fully Growth = passive bid at close. Near-term AI demand intact (AAPL/MSFT confirming memory pass-through). Recalibrated entry: wait for reconstitution noise to clear; prefer $1,100-$1,150 entry zone Monday if Morningstar thesis does not spread.", "sentiment": "neutral" },
+    { "ticker": "QCOM", "note": "No specific premarket print; held $206.96 June 25 close (all of +12% Dragonfly/Meta surge). Broader tech selloff could pull QCOM lower. $185 support; no new add in current regime environment.", "sentiment": "neutral" },
+    { "ticker": "AAPL", "note": "Fell ~6.5% June 25 on iPhone/iPad/Mac price increases citing higher memory costs. Still ~23x 2026 earnings at ~$274 with unquantified unit demand impact. No entry before mid-July Q2 earnings.", "sentiment": "negative" },
+    { "ticker": "MSFT", "note": "June 25 close $354.32-355.66 range (partial recovery). Azure AI acceleration thesis intact; hardware price increases add consumer headwind. No entry before Q2 earnings confirming AI cloud acceleration above 40% growth.", "sentiment": "neutral" },
+    { "ticker": "GOOGL","note": "Continued weakness on AI talent exodus (Shazeer, Jumper) and QCOM+Meta data center headwind. Short/puts entered at $355-370 zone remain in the money. No positive catalyst before mid-July Q2 earnings.", "sentiment": "negative" },
+    { "ticker": "XLE",  "note": "Iranian drone strike on Hormuz cargo vessel DIRECTLY reverses XLE short thesis. Brent from $72.50 to $74.43 premarket. Exit short — stop at $56 should be triggered or near-triggered. Do not flip long yet. Need Brent to hold $76 and Hormuz escalation confirmed sustained before energy longs justified.", "sentiment": "negative" },
+    { "ticker": "BTC",  "note": "$60,124 premarket (up slightly from $59,795 June 25 UTC close). Exit gate Day 3 active. No re-entry: requires two consecutive UTC closes above $62,000. Thursday intraday low $59,334 set new recent low — risk appetite not recovering.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "QQQ / SPY at the open",
+      "reason": "NQ futures -1.2%, ES -0.5%. KOSPI triggered circuit breaker at -8% intraday. Nikkei -4.40%. OpenAI IPO delay saps AI ecosystem sentiment; XLK -1.6% premarket. All four regime indicators breached simultaneously. Morning trend is down with no clearing catalyst before the Russell reconstitution close. Buying the open gifts an unfavorable entry into the highest-volatility close of Q3.",
+      "better_entry": "Monday open post-reconstitution. If SPX closes above 7,400 today despite morning selling, that is the first constructive signal — but still 60 pts below the 7,460 regime floor. Wait for clean two-close sequence above 7,460 before sizing broad index exposure."
+    },
+    {
+      "ticker": "MU at premarket levels (~$1,120)",
+      "reason": "Premarket -4% on Morningstar supply glut 2029-2030 warning. Sentiment fragile: the blowout fundamentals were priced at $1,166 and the new long-term bear thesis creates overhang. Russell reconstitution passive bid at close creates intraday whipsaw that makes entry timing treacherous — and the bid is for Growth ETFs, not fundamentally motivated buyers.",
+      "better_entry": "Monday post-reconstitution, $1,100-$1,150 entry zone. If Morningstar's thesis spreads to additional sell-side analysts, re-evaluate the add zone. One bearish analyst view is containable; a consensus shift is not."
+    },
+    {
+      "ticker": "Energy longs (XLE, XOM, CVX) on Hormuz spike",
+      "reason": "Brent at $74.43 reflects an Iranian drone strike — a geopolitical bid, not a fundamental demand shift. The US-Iran 60-day license framework may still re-engage diplomatically. OPEC+ is still suppressing supply ceilings. Chasing the Hormuz spike into oil longs risks a sharp reversal on any ceasefire or diplomatic signal.",
+      "better_entry": "Long energy only on Brent confirmed above $78 for two consecutive sessions with no sign of de-escalation. The Hormuz situation must prove durable before oil longs are justified structurally."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA — tactical long on Russell reconstitution bid",
+      "direction": "long",
+      "thesis": "NVDA is now the #1 constituent in the Russell 3000 and Russell 1000 Growth indexes. Growth ETFs benchmarked to ~$11T in Russell assets must mechanically buy NVDA by the 4 PM close — the bid is passive, systematic, and non-discretionary. NVDA already opened $202.17 (up from $193.53 June 25 close, +4.5%) as early-mover ETFs position. AI demand fundamentals are intact: Micron's $50B Q4 guide confirms Vera Rubin HBM4 demand. Reconstitution passive flow must clear regardless of sentiment.",
+      "entry": "Buy $200-205 between 1-3 PM ET (before reconstitution passive flow peaks at 3:30-4 PM). Scale 50% position. Do not chase the 4 PM print itself — most reconstitution premium is captured by 3:30 PM. Stop $193 on two-close basis.",
+      "invalidation": "NVDA falls below $195 on high volume before 1 PM ET, signaling broader selling overwhelms the reconstitution bid. OpenAI delay more severe than 2027 (e.g., indefinite), disrupting Vera Rubin timeline.",
+      "conviction": "medium",
+      "horizon": "1-2 trading days"
+    },
+    {
+      "asset": "QQQ July puts — short tech heading into reconstitution",
+      "direction": "short",
+      "thesis": "NQ futures -1.2% on AI valuation concerns, OpenAI IPO delay, and KOSPI circuit breaker. No clearing catalyst between now and the reconstitution close; the reconstitution itself creates volatility, not a trend reversal. Puts provide defined risk into an unknown close and capture continued multiple compression risk through quarter-end.",
+      "entry": "QQQ July 18 $455 puts at the open. Alternative: short XLK at open (-1.6% premarket). Stop: QQQ closes above $465 (implies SPX reclaims ~7,460 regime floor). Size 10-15% of gross.",
+      "invalidation": "UMich Consumer Sentiment final (10 AM ET) significantly beats 48.9 preliminary AND Hormuz attack confirmed contained within hours — SPX reverses and closes above 7,400.",
+      "conviction": "medium",
+      "horizon": "1-3 trading days"
+    },
+    {
+      "asset": "XLE — exit short; monitor for pivot",
+      "direction": "short",
+      "thesis": "The XLE short thesis was predicated on Hormuz normalization and declining Brent. The Iranian drone strike directly invalidates that premise. Brent rose from $72.50 to $74.43 overnight (+2.66%). Stop at $56 should be triggered or near-triggered. Exit the short. Do not flip long immediately — Brent needs to hold $76-78 for two consecutive sessions before a durable XLE long setup emerges.",
+      "entry": "EXIT remaining XLE short at open (stop $56 should activate). No new entry until Hormuz situation resolves. Monitor: if Brent breaks $78 and holds for two sessions with no diplomatic signal, XLE long at $55-57 becomes a candidate.",
+      "invalidation": "Iran publicly withdraws 'transit fee' demands and UN resumes evacuation plan — Brent falls back below $72 within 48 hours; re-enter XLE short at $55-57.",
+      "conviction": "low",
+      "horizon": "Monitor through weekend; reassess Monday"
+    }
+  ],
+  "bear_case": "Counter-argument: The Hormuz drone strike represents a direct breach of the Iran-US normalization framework, and if Iran extends 'transit fee' enforcement beyond a single incident — which the UN evacuation pause suggests is possible — Brent toward $80-85 by July Fourth reintroduces the CPI upside risk the market believed was resolved by the Iranian shipping deal. A $10/bbl sustained rise in Brent adds approximately 0.3-0.5 pp to headline CPI within 45 days, enough to shift BofA's September hike from 'possible' to 'certain.' OpenAI delaying its IPO to 2027 removes a primary catalyst for AI multiple expansion: if OpenAI cannot IPO, what does that signal for the monetization timeline of NVDA's Vera Rubin, CRWV's $99B backlog, and MU's $50B Q4 guidance? KOSPI triggering a circuit breaker for the second time in four sessions — after a +5.42% 'recovery' on June 25 — suggests the June 23 MSCI-driven decline was not the low. If SPX closes below 7,300 today, three straight failed recoveries above 7,460 convert the floor to resistance and the STEP ASIDE framework escalates to BEARISH for the week of June 30. Invalidation: Iran publicly retracts 'transit fee' demands AND Brent falls back below $72 within 48 hours — then thesis reverts to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-06-26-morning.mdx"
+}
