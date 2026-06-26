@@ -70,12 +70,18 @@ type CalEvents = {
   price?: { shortName?: string; longName?: string; regularMarketPrice?: number };
 };
 
-export async function getEarningsSchedule(): Promise<EarningsSchedule> {
-  const watch = getWatchlist();
-  const now = Date.now();
+type SettledEarnings =
+  | { kind: "dated"; entry: EarningsEntry }
+  | { kind: "none"; symbol: string; label: string };
 
-  const settled = await Promise.all(
-    watch.map(async ({ symbol, label }) => {
+// Fetch + normalize the next-earnings read for an arbitrary set of names. Shared
+// by the watchlist schedule (/earnings) and the per-desk lookup (/stocks).
+async function fetchEarningsItems(
+  items: { symbol: string; label: string }[],
+): Promise<SettledEarnings[]> {
+  const now = Date.now();
+  return Promise.all(
+    items.map(async ({ symbol, label }) => {
       try {
         const sum = (await yahooFinance.quoteSummary(symbol, {
           modules: ["calendarEvents", "price"],
@@ -129,6 +135,10 @@ export async function getEarningsSchedule(): Promise<EarningsSchedule> {
       }
     }),
   );
+}
+
+export async function getEarningsSchedule(): Promise<EarningsSchedule> {
+  const settled = await fetchEarningsItems(getWatchlist());
 
   const entries = settled
     .filter((r): r is { kind: "dated"; entry: EarningsEntry } => r.kind === "dated")
@@ -140,6 +150,20 @@ export async function getEarningsSchedule(): Promise<EarningsSchedule> {
     .map(({ symbol, label }) => ({ symbol, label }));
 
   return { asOf: new Date().toISOString(), entries, noDate };
+}
+
+/**
+ * Next-earnings entry keyed by symbol, for an arbitrary set of names (e.g. the
+ * single-name desks on /stocks). Symbols Yahoo can't date simply drop out, so
+ * the caller renders a date only when one is actually known.
+ */
+export async function getNextEarnings(
+  items: { symbol: string; label: string }[],
+): Promise<Map<string, EarningsEntry>> {
+  const settled = await fetchEarningsItems(items);
+  const map = new Map<string, EarningsEntry>();
+  for (const r of settled) if (r.kind === "dated") map.set(r.entry.symbol, r.entry);
+  return map;
 }
 
 /** Compact revenue formatter: $91.7B, $815M. */

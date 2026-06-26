@@ -6,6 +6,7 @@ import {
   type DayWinner,
   type TradeAction,
 } from "@/lib/asset-daily";
+import { getNextEarnings, countdownBadge, type EarningsEntry } from "@/lib/earnings";
 import { cn, formatLevel, formatPct } from "@/lib/utils";
 
 export const metadata = {
@@ -31,6 +32,46 @@ const STOCKS: StockDef[] = [
   { id: "spcx", href: "/spacex", name: "SpaceX", symbol: "SPCX", blurb: "Pre-IPO space & satellite franchise" },
 ];
 
+// Yahoo symbol to fetch each desk's next earnings date from. SK Hynix is the
+// Korean listing. BTC (crypto) and SPCX (pre-IPO) have no standard earnings —
+// they get an explicit note instead, in NO_EARNINGS.
+const EARNINGS_SYMBOL: Partial<Record<AssetId, string>> = {
+  nvda: "NVDA",
+  skhynix: "000660.KS",
+  mu: "MU",
+  nbis: "NBIS",
+  be: "BE",
+  crwv: "CRWV",
+};
+const NO_EARNINGS: Partial<Record<AssetId, string>> = {
+  btc: "Crypto — no earnings",
+  spcx: "Pre-IPO — no scheduled report",
+};
+
+function EarningsLine({ entry, note }: { entry?: EarningsEntry | null; note?: string }) {
+  if (entry) {
+    const d = entry.daysUntil;
+    const tone =
+      d <= 7 ? "text-[var(--amber)]" : d <= 30 ? "text-[var(--cyan-term)]" : "text-[var(--dim)]";
+    return (
+      <div className="mt-2 flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest">
+        <span className="text-[var(--dim)]">Next earnings</span>
+        <span className={cn("font-semibold", tone)}>{entry.date}</span>
+        <span className={tone}>· {countdownBadge(d)}</span>
+        {entry.isEstimate && <span className="text-[var(--dim)]">est.</span>}
+      </div>
+    );
+  }
+  if (note) {
+    return (
+      <div className="mt-2 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
+        <span className="text-[var(--dim)]">Next earnings</span> · {note}
+      </div>
+    );
+  }
+  return null;
+}
+
 const WINNER: Record<DayWinner, { emoji: string; label: string; text: string }> = {
   bulls: { emoji: "🐂", label: "Bulls", text: "text-[var(--up)]" },
   bears: { emoji: "🐻", label: "Bears", text: "text-[var(--down)]" },
@@ -44,7 +85,17 @@ const ACTION: Record<TradeAction, { text: string; border: string; bg: string }> 
   step_aside: { text: "text-[var(--amber)]", border: "border-[var(--amber)]", bg: "bg-[rgba(255,165,0,0.10)]" },
 };
 
-function StockCard({ def, d }: { def: StockDef; d: AssetDaily | null }) {
+function StockCard({
+  def,
+  d,
+  earnings,
+  noEarnings,
+}: {
+  def: StockDef;
+  d: AssetDaily | null;
+  earnings?: EarningsEntry | null;
+  noEarnings?: string;
+}) {
   // No dossier on file yet — still link through, just say so.
   if (!d) {
     return (
@@ -61,6 +112,7 @@ function StockCard({ def, d }: { def: StockDef; d: AssetDaily | null }) {
           </span>
         </div>
         <p className="mt-1 font-mono text-[11px] leading-relaxed text-[var(--dim)]">{def.blurb}</p>
+        <EarningsLine entry={earnings} note={noEarnings} />
         <div className="mt-2 font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)]">
           No dossier yet · open desk ▸
         </div>
@@ -122,6 +174,8 @@ function StockCard({ def, d }: { def: StockDef; d: AssetDaily | null }) {
         {d.decision.rationale}
       </p>
 
+      <EarningsLine entry={earnings} note={noEarnings} />
+
       <div className="mt-2 font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] group-hover:text-[var(--amber)]">
         Full analysis ▸
       </div>
@@ -129,7 +183,14 @@ function StockCard({ def, d }: { def: StockDef; d: AssetDaily | null }) {
   );
 }
 
-export default function StocksHubPage() {
+export default async function StocksHubPage() {
+  // Live next-earnings dates for the desks that report (skips BTC/SPCX).
+  const earningsItems = STOCKS.filter((s) => EARNINGS_SYMBOL[s.id]).map((s) => ({
+    symbol: EARNINGS_SYMBOL[s.id]!,
+    label: s.name,
+  }));
+  const earnings = await getNextEarnings(earningsItems);
+
   const stocks = STOCKS.map((def) => ({ def, d: getLatestAssetDaily(def.id) }));
 
   return (
@@ -151,14 +212,25 @@ export default function StocksHubPage() {
 
       <div className="grid grid-cols-1 gap-1 sm:grid-cols-2">
         {stocks.map(({ def, d }) => (
-          <StockCard key={def.id} def={def} d={d} />
+          <StockCard
+            key={def.id}
+            def={def}
+            d={d}
+            earnings={EARNINGS_SYMBOL[def.id] ? earnings.get(EARNINGS_SYMBOL[def.id]!) : null}
+            noEarnings={NO_EARNINGS[def.id]}
+          />
         ))}
       </div>
 
       <p className="px-1 pt-2 font-mono text-[10px] leading-snug text-[var(--dim)]">
         Each desk is a once-per-day dossier: who made money today, the standing
         buy/hold/sell call, positioning, news, outlook, key levels, and catalysts.
-        Click any card for the full read.
+        Click any card for the full read. Next-earnings dates are live from Yahoo — see
+        the{" "}
+        <Link href="/earnings" className="text-[var(--cyan-term)] hover:underline">
+          full earnings calendar
+        </Link>{" "}
+        for the whole watchlist with EPS &amp; revenue consensus.
       </p>
     </div>
   );
