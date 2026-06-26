@@ -4,15 +4,23 @@
       "date": "2026-06-26",
       "label": "Russell Reconstitution effective at close — ~$11T passive rebalancing",
       "kind": "OTHER",
-      "tickers": ["IWM", "QQQ", "MU", "AMD", "SPCX"],
-      "note": "Russell US Indexes reconstitution effective after June 26 close (new indexes live June 29). ~$11T in passive assets rebalancing simultaneously. Key 2026 changes: MU and AMD reclassified to 'fully Growth' (Russell Growth ETFs must add by close); SpaceX (SPCX) added to Russell 1000; 62 companies added to Russell 1000 (43 from Russell 2000, 15 from outside universe, 4 IPOs). PCE in-line (June 25 actual: 4.1% headline / 3.4% core) did not clear the regime — HOLD posture persists into reconstitution. MU gets systematic Growth ETF inflows at the close. Reduce all hedge positions before 3 PM ET. If SPX closes above 7,460 AND VIX below 17 at close, HOLD → BUY upgrade triggers."
+      "tickers": ["IWM", "QQQ", "MU", "AMD", "NVDA", "SPCX"],
+      "note": "Russell US Indexes reconstitution effective after June 26 close (new indexes live June 29). ~$11T in passive assets rebalancing; estimated $200B+ traded at the close. Key 2026 changes: NVDA is now #1 in Russell 3000/1000 Growth (was #3 in 2025); MU and AMD reclassified to 100% Growth; AAPL/AMZN/MSFT weightings shift toward Value; SpaceX (SPCX) added to Russell 1000. Morning context: verdict is STEP ASIDE — Hormuz drone strike (Brent $74.43), KOSPI circuit breaker (-5.81%), OpenAI IPO delay, and Morningstar MU supply-glut warning all compound the negative morning tone. NVDA opened $202.17 (+4.5%) as Growth ETFs pre-position. MU premarket ~-4%. Best NVDA entry window is 1-3 PM ET before the final-hour passive flow peaks. Exit all hedge positions before 3 PM ET. Close below 7,300 escalates to BEARISH."
     },
     {
       "date": "2026-06-26",
-      "label": "SK Hynix Nasdaq ADR — SEC clearance expected by end of week",
+      "label": "University of Michigan final June consumer sentiment (10:00 AM ET)",
+      "kind": "MACRO",
+      "time_et": "10:00 AM",
+      "tickers": ["SPY", "QQQ", "XLY"],
+      "note": "Final June reading; preliminary was 48.9, up from May's 44.8 all-time low. Year-ahead inflation expectations fell to 4.6% in the prelim (from 4.8%). A beat above 50.0 would provide modest positive sentiment support on a Hormuz/KOSPI risk-off morning. A miss below 48.0 confirms consumer conditions are deteriorating and adds to the STEP_ASIDE bear case."
+    },
+    {
+      "date": "2026-06-26",
+      "label": "SK Hynix Nasdaq ADR — SEC clearance window closes this week",
       "kind": "OTHER",
       "tickers": ["000660", "MU", "NVDA", "SOXX"],
-      "note": "SK Hynix Nasdaq ADR listing: SEC clearance expected by June 26. UPDATE: Micron's $41.5B Q3 revenue beat (June 24 AH) and $50B Q4 guide confirm HBM demand is accelerating — direct read-through for SK Hynix. SK Hynix fell ~12% in KOSPI 'Black Tuesday' (June 23); MU's blowout validates HBM demand and supports recovery. If MU beat-and-raise holds through Thursday PCE, ADR clearance this week is a re-entry catalyst (~$14B raise, Nasdaq debut targeting August 2026). If PCE disappoints, wait for PCE before adding exposure."
+      "note": "SK Hynix Nasdaq ADR listing: SEC clearance was expected by June 26. Micron's $41.5B Q3 FY2026 revenue beat and $50B Q4 guide confirm HBM demand is accelerating — read-through for SK Hynix. However: KOSPI circuit breaker on June 26 (-5.81%) and Morningstar supply glut warning (June 26) add near-term overhang. If SEC clearance received this week, ADR listing targets August 2026 (~$14B raise). Monitor for SEC clearance announcement."
     },
     {
       "date": "2026-06-30",
@@ -78,6 +86,13 @@
       "kind": "OTHER",
       "tickers": ["SPCX"],
       "note": "~180 days after the June 12 debut, early investors and insiders can sell, materially expanding the ~4% public float. Lock-up expiries are a known supply overhang for hot IPOs; the $20B bond offering (June 22) already changed the capital structure risk profile — the lock-up expiry adds equity supply overhang on top. Exact date pending the prospectus's stated terms."
+    },
+    {
+      "date": "2027-01-01",
+      "label": "OpenAI IPO — target window shifts to H1 2027 after 2026 delay",
+      "kind": "OTHER",
+      "tickers": ["MSFT", "NVDA"],
+      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off -13% on the delay (SoftBank is a major pre-IPO investor). Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst and adds uncertainty to AI infrastructure spending trajectories. Monitor for filing date announcement as a potential AI sentiment catalyst. Date is approximate placeholder for H1 2027 window."
     }
   ]
 }
