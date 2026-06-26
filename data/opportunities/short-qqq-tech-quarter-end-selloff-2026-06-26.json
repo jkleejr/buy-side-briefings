@@ -1,0 +1,54 @@
+{
+  "id": "short-qqq-tech-quarter-end-selloff-2026-06-26",
+  "title": "Short QQQ — Tech Quarter-End Selloff: Reconstitution Volatility + OpenAI Delay",
+  "ticker": "QQQ",
+  "asset_class": "etf",
+  "category": "macro",
+  "direction": "short",
+  "conviction": "medium",
+  "time_horizon": "1-5 trading days",
+  "current_price": 462.0,
+  "entry": "Short QQQ at open ($458–468 implied open given NQ futures -1.2% from 25,358.60 close). Alternative: buy QQQ July 18 $455 puts at open for defined-risk exposure. Do NOT short into the 3:00–4:00 PM reconstitution window — the passive bid distorts the close and creates an unpredictable tape. If the open gap is larger than 2% (QQQ opens below $452), wait for a dead-cat bounce to $455–460 before entering the short. Size 3% gross.",
+  "stop_loss": "$478 daily close (~SPX reclaims 7,460 regime floor and VIX closes below 17 simultaneously) — implies the reconstitution close catalyzed a genuine trend reversal rather than a mechanical price distortion, and the morning STEP ASIDE framework is obsolete. A $478 QQQ close maps approximately to SPX 7,450–7,460.",
+  "targets": [
+    "$440 — NQ loses the 24,500 psychological level; VIX closes above 20; KOSPI circuit breaker + OpenAI IPO delay triggers a second wave of multiple compression; -4.8% from $462 entry",
+    "$420 — SPX closes below 7,300 for two sessions, triggering BEARISH escalation in the morning briefing framework; Hormuz sustained above $78 Brent adds to inflation fears; -9.1%",
+    "$395 — full Q3 risk-off: BofA September hike priced as certain (not just probable), 30Y clears 5.00%, VIX above 25; -14.5%"
+  ],
+  "risk_reward": "1:3.0 to third target from $462 entry, $478 stop",
+  "position_size_pct": 3,
+  "catalyst": "Three compounding catalysts converge on June 26: (1) NQ futures -1.2% premarket on OpenAI IPO delay to 2027 (removes the near-term AI monetization catalyst that justified current multiples on NVDA, CRWV, NBIS), KOSPI triggering a second circuit breaker in four sessions, and Hormuz drone attack adding Brent upside risk to the inflation picture; (2) June 30 quarter-end institutional rebalancing continues through the week — portfolios that over-allocated to AI/tech in Q2 sell on rebalance; (3) the Russell Reconstitution on June 26 creates a volatile, distorted close that historically leaves price-discovery gaps filled in the subsequent session. All four of the morning regime indicators remain breached (VIX, DXY, SPX, BTC).",
+  "thesis": "The STEP ASIDE regime is not a neutral outcome for QQQ. Four of six regime indicators remain in breach (VIX above 17, DXY above 100, SPX below 7,460 floor, BTC exit gate Day 3 active) as of June 26 premarket. This is a structurally weak tape where QQQ's continued elevation reflects the reconstitution passive bid — a mechanical, non-discretionary price action — rather than improving fundamentals.\n\nThe OpenAI IPO delay to 2027 is a medium-term multiple headwind that the market has not fully repriced. The current valuation of NVDA (Vera Rubin demand), CRWV ($99B backlog), MU (Q4 $50B guidance), and related AI-infrastructure names embeds an assumption that AI monetization is imminent. A 12-month slip in the ecosystem's landmark IPO resets that timeline. Not a catastrophic event, but a negative catalyst for the AI-multiple-compression thesis that has been building since the FOMC hawkish shock.\n\nThe KOSPI pattern is the canary. KOSPI triggered circuit breakers for the second time in four sessions — after a +5.42% 'recovery' on June 25 that held for exactly one session. This is not localized Korean selling; Samsung and SK Hynix are declining again, suggesting the memory/AI chip re-rating is not a one-session event. If the KOSPI pattern continues into next week, it creates a negative read-through for US AI/semis multiples that has not yet been absorbed in QQQ pricing.\n\nThe quarter-end (June 30) institutional rebalancing adds a structural sell flow through the week: portfolios that allocated to AI/tech in Q2 are trimming into the rebalance cycle. This is calendar-driven selling that runs regardless of macro. Together with the reconstitution distortion on June 26 (which can create artificial closes that reverse on the following session), the setup favors a short entry at the open with a defined stop above the regime floor.\n\nCounter-party argument: the reconstitution passive bid on June 26 could overwhelm all selling and create a genuine close-of-quarter rally that persists into July. If SPX closes above 7,460 on June 26 with VIX below 17, the STEP ASIDE framework reverts immediately to BUY, and this short should be exited. The $478 stop captures precisely this scenario.",
+  "bull_case": "Russell reconstitution creates a violent short-squeeze at 3:30 PM on June 26 — QQQ rallies from $452 open to $470 close. The strong close triggers buy-on-close orders from institutional rebalancers who are long AI/tech. July 1 opens up as quarter-end buy programs execute. Short is stopped at $478. Total loss: -3.5% on 3% position = -0.1% gross impact.",
+  "bear_case": "QQQ fails to reclaim the morning gap by noon on June 26. The reconstitution close is strong for NVDA specifically (the #1 Russell constituent) but does not lift the broader tech tape — the distortion is single-name, not index-wide. June 30 quarter-end arrives with portfolios still over-allocated to AI. SPX closes below 7,300 on June 30, triggering the BEARISH escalation in the morning framework. QQQ to $420 (Target 2) within the week.",
+  "invalidation": "$478 QQQ daily close; OR SPX closes above 7,460 AND VIX closes below 17 on the same session; OR Hormuz attack confirmed as isolated and Iran publicly retracts transit fee demands within 48 hours (risk-off reverts); OR June 30 UMich final consumer sentiment beats 52.0 (consumer resilience argues against multiple compression)",
+  "sources": [
+    {
+      "label": "NQ futures -1.2% premarket June 26, implied NQ open ~25,054; OpenAI IPO delay to 2027 — Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/asia-stocks-set-for-choppy-open-on-tech-volatility-markets-wrap"
+    },
+    {
+      "label": "KOSPI second circuit breaker in 4 sessions — TheStreet/TradingEconomics",
+      "url": "https://tradingeconomics.com/south-korea/stock-market"
+    },
+    {
+      "label": "Hormuz drone strike — Iranian IRGC hits cargo vessel, IMO pauses evacuation plan — Euronews/CNN",
+      "url": "https://www.euronews.com/2026/06/25/cargo-ship-hit-by-projectile-in-hormuz-as-iran-issues-renewed-passage-warning"
+    },
+    {
+      "label": "Russell Reconstitution June 2026 effective date and $200B+ close estimate — LSEG",
+      "url": "https://www.lseg.com/en/insights/ftse-russell/russell-reconstitution-june-2026-larger-leaders-stronger-small-caps"
+    }
+  ],
+  "created_at": "2026-06-26",
+  "expires_at": "2026-07-07",
+  "status": "active",
+  "tags": ["QQQ", "Nasdaq", "tech", "short", "reconstitution", "quarter-end", "OpenAI", "macro", "AI-multiples"],
+  "outcome": null,
+  "levels": {
+    "entry_low": 458.0,
+    "entry_high": 468.0,
+    "stop": 478.0,
+    "targets": [440.0, 420.0, 395.0]
+  }
+}

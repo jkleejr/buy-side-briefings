@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-18",
   "expires_at": "2026-08-22",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["MSFT", "Microsoft", "Azure", "AI", "cloud", "Copilot", "FOMC-dip", "mega-cap", "momentum"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-26",
+    "final_price": 355.66,
+    "return_pct": -6.1,
+    "outcome_label": "Stop triggered — daily close below $360",
+    "note": "MSFT closed at $355.66 on June 25, breaching the $360 daily-close stop. Multiple headwinds converged: Warsh FOMC 9-hike path compressed mega-cap multiples; Xbox hardware price increase announced alongside Apple's broader consumer hardware repricing raised demand risk for the consumer segment; broader tech selloff driven by OpenAI IPO delay to 2027 (removing a near-term AI monetization catalyst) weighed on Azure growth-multiple pricing. The $378.91 reference entry to $355.66 stop exit produced -6.1%."
+  },
   "levels": {
     "entry_low": 375.0,
     "entry_high": 388.0,

@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-15",
   "expires_at": "2026-07-13",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["XLE", "energy", "oil", "Iran", "short", "macro", "sector", "repricing", "Hormuz"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-26",
+    "final_price": 56.50,
+    "return_pct": -0.9,
+    "outcome_label": "Thesis broken — Hormuz normalization thesis inverted",
+    "note": "An Iranian IRGC drone struck a cargo vessel in the Strait of Hormuz on June 25 evening, damaging the bridge and prompting the IMO to pause the UN ship evacuation plan. Iran issued demands for 'transit fees.' Brent rose from $72.50 to $74.43 overnight (+$1.93). The structural premise of this short — sustained Hormuz normalization driving Brent toward $65 — is directly contradicted. June 26 morning briefing called for exit at the open. XLE gapped back to approximately $56.50, roughly erasing the gains accumulated since June 15. Position closed at near-breakeven on thesis reversal."
+  },
   "levels": {
     "entry_low": 55.0,
     "entry_high": 58.0,

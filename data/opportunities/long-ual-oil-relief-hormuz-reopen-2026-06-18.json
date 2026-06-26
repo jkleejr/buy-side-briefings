@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-18",
   "expires_at": "2026-07-18",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["UAL", "airlines", "oil", "fuel-relief", "Iran", "Hormuz", "ceasefire", "consumer", "catalyst"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-26",
+    "final_price": 134.37,
+    "return_pct": 13.1,
+    "outcome_label": "Target 1 hit and exceeded; closed above $128",
+    "note": "UAL reached $134.37 on June 26 (range $130.54–$138.44), well above Target 1 of $128. The fuel-cost relief thesis played out: WTI declined from conflict-peak ~$90 to the $74–78 range, generating an estimated $1.5B+ annualized tailwind. Target 1 exit triggered. Notably, the Hormuz re-escalation (drone attack June 25) poses future risk to the oil-decline thesis, but Target 1 was cleanly cleared before that inflection. Stop at $108 was never threatened. Position closed at +13.1% from $118.80 reference entry."
+  },
   "levels": {
     "entry_low": 115.0,
     "entry_high": 122.0,

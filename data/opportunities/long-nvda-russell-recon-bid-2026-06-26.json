@@ -1,0 +1,50 @@
+{
+  "id": "long-nvda-russell-recon-bid-2026-06-26",
+  "title": "Long NVDA — Russell Reconstitution Mechanical Bid (1-2 Days)",
+  "ticker": "NVDA",
+  "asset_class": "equity",
+  "category": "catalyst",
+  "direction": "long",
+  "conviction": "medium",
+  "time_horizon": "1-2 trading days",
+  "current_price": 202.17,
+  "entry": "Buy $200–205 between 1:00–3:00 PM ET today (June 26). Scale 50% initial position; do not chase pre-1 PM as broader morning selloff (NQ -1.2% premarket) could offer cheaper fills. The 4 PM reconstitution passive flow peaks at 3:30 PM — most of the premium is captured by entering before 3:30, not by chasing the 4 PM print itself. Do NOT enter above $207 intraday.",
+  "stop_loss": "$193 on two-daily-close basis — below the pre-reconstitution open and the June 10 re-entry zone floor. A two-session close below $193 implies the broader AI multiple compression has overwhelmed the mechanical bid, and the reconstitution premium has been fully absorbed without follow-through.",
+  "targets": [
+    "$210 — intraday Target 1: capture the reconstitution premium before 4 PM close; take 50% off at $210 if hit between 3:30–4:00 PM ET on June 26",
+    "$218 — next-session hold: if NVDA closes the reconstitution day strong ($205+), hold remaining 50% for a $218 target as the AI Vera Rubin demand narrative and Micron $50B Q4 guidance read-through sustain momentum into the following week",
+    "$228 — blue-sky: reconstitution premium holds into the following week; sell-side upgrades on NVDA #1 Russell 3000 status; +12.8% from $202 open"
+  ],
+  "risk_reward": "1:3.2 to third target from $202 entry, $193 stop",
+  "position_size_pct": 3,
+  "catalyst": "NVDA moves from #3 to #1 constituent in the Russell 3000 and Russell 1000 Growth indexes in the June 2026 semi-annual reconstitution, effective at the 4 PM ET June 26 close. With approximately $11 trillion benchmarked to Russell indexes and $2T+ in Growth ETFs specifically, NVDA's weighting increase creates a mandatory systematic purchase that must execute by close regardless of intraday direction. NVDA opened June 26 at $202.17 (up from $193.53 June 25 close) as early-mover ETFs pre-position. The reconstitution bid is augmenting fundamentally strong AI demand: Micron's $50B Q4 guidance confirms Vera Rubin HBM4 demand remains unabated.",
+  "thesis": "This is not a fundamental thesis — it is a mechanical flow trade. The Russell Reconstitution is the first semi-annual event under the new FTSE Russell methodology and is estimated to move $200B+ at today's 4 PM close. NVDA's promotion to the #1 slot in both the Russell 3000 and the Russell 1000 Growth creates a non-discretionary purchase requirement from every Growth ETF that benchmarks against the Russell indexes. The bid is blind to macro: it does not care about Hormuz, VIX, or OpenAI IPO delays. It must execute by 4 PM.\n\nThe setup is asymmetric because the pre-positioning has already started (NVDA opened at $202.17, up 4.5% from yesterday's $193.53) but the bulk of the passive flow executes in the final 30 minutes of trading (3:30–4:00 PM ET). Entering at 1–3 PM captures the second phase of pre-positioning without chasing the initial gap, and the 3:30 PM peak is the logical exit for the tactical portion of the trade. The AI demand narrative provides a legitimate fundamental backdrop — this is not a hollow mechanical trade in a structurally deteriorating name.\n\nThe risk is that the morning selloff (NQ -1.2% premarket, KOSPI circuit breaker, OpenAI IPO delay) overwhelms the reconstitution bid before 1 PM, pushing NVDA below $195 and creating a weaker entry condition. The $193 stop on two closes captures this scenario: if the reconstitution bid fails to hold $193 on a closing basis, it signals that broader selling pressure is larger than the $200B+ passive flow, and the trade thesis has failed. Position sized at 3% to reflect the short 1-2 day horizon — no overnight risk beyond one session.",
+  "bull_case": "NVDA trades between $200–205 through 2 PM ET as morning weakness abates. At 3:00 PM the passive bid begins accelerating — NVDA clears $208 into close. Target 1 ($210) hit intraday at 3:45 PM. Position half-closed. Remaining 50% held overnight as NVDA closes at $212, up 5% on reconstitution day. Monday June 29 NVDA opens at $218 as post-reconstitution coverage upgrades cite new #1 index weight. Target 2 ($218) taken. AI narrative + Micron HBM4 confirmation supports residual position toward $228.",
+  "bear_case": "Morning selloff extends: NVDA fails to hold $200 after the open. At 1:30 PM, NQ futures remain -1.5%, NVDA slips to $196 despite the reconstitution bid. By 2:30 PM, institutional selling from risk-off rotation exceeds the passive flow. NVDA closes at $195 — below the intraday low of the open but above the $193 two-close stop. On Monday, if the macro doesn't improve, NVDA slides to $191 and the stop triggers. Small loss on a mechanical trade that was overwhelmed by macro.",
+  "invalidation": "$193 daily close on any session; OR OpenAI announces indefinite IPO postponement (disrupts Vera Rubin demand timeline beyond 2027); OR VIX spikes above 24 intraday on June 26 (macro overwhelms reconstitution bid); OR NVDA falls below $195 on high volume before 1 PM ET",
+  "sources": [
+    {
+      "label": "Russell Reconstitution June 2026 — Larger Leaders, Stronger Small-Caps — LSEG",
+      "url": "https://www.lseg.com/en/insights/ftse-russell/russell-reconstitution-june-2026-larger-leaders-stronger-small-caps"
+    },
+    {
+      "label": "NVDA opened at $202.17 June 26, range $200–$203.77, up from $193.53 June 25 close — TipRanks/AI chip stocks rising",
+      "url": "https://www.tipranks.com/news/why-ai-chip-stocks-nvda-amd-intc-are-rising-today-june-26-2026"
+    },
+    {
+      "label": "Micron $50B Q4 2026 guidance confirms Vera Rubin HBM4 demand — Morningstar/Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/mu-revenue-halve-2030-retail-bullish/cZ1cKBzR7gf"
+    }
+  ],
+  "created_at": "2026-06-26",
+  "expires_at": "2026-06-30",
+  "status": "active",
+  "tags": ["NVDA", "reconstitution", "passive-flow", "Russell", "AI", "semis", "short-term", "catalyst"],
+  "outcome": null,
+  "levels": {
+    "entry_low": 200.0,
+    "entry_high": 205.0,
+    "stop": 193.0,
+    "targets": [210.0, 218.0, 228.0]
+  }
+}

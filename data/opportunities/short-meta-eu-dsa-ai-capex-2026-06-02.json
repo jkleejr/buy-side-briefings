@@ -38,7 +38,6 @@
   ],
   "created_at": "2026-06-02",
   "expires_at": "2026-07-15",
-  "status": "active",
   "tags": [
     "META",
     "EU-DSA",
@@ -47,7 +46,14 @@
     "megacap",
     "short"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-26",
+    "final_price": 544.19,
+    "return_pct": 9.7,
+    "outcome_label": "Target 1 hit at $555; price continued to $544.19",
+    "note": "META declined from $602.45 reference entry to $544.19 (June 25–26), clearing Target 1 at $555 by approximately $11. Decline driven by: EU DSA enforcement escalation, AI capex scrutiny, and broader tech multiple compression from Warsh FOMC hawkish shock (9 hike dots). The $555 target was exceeded before the trailing stop at $635 was ever tested. Short position closed with Target 1 captured at +9.7%."
+  },
+  "status": "target_hit",
   "levels": {
     "entry_low": 595,
     "entry_high": 612,
