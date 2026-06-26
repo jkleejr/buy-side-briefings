@@ -186,6 +186,55 @@ export function getThemeBreakdown(p: Portfolio): ThemeSlice[] {
     .sort((a, b) => b.value - a.value);
 }
 
+export type UpcomingFiling = {
+  /** e.g. "Q2 2026". */
+  report: string;
+  /** Quarter-end the filing will cover (ISO date). */
+  period_end: string;
+  /** SEC deadline — 45 days after quarter-end (ISO date). */
+  expected_by: string;
+  /** Calendar days from `now` until the deadline (negative = overdue). */
+  days_out: number;
+  type: string;
+};
+
+const DAY_MS = 86_400_000;
+
+/**
+ * The next `count` quarterly 13F windows from `now`. A 13F-HR is due within 45
+ * days of each calendar quarter-end, and this fund has historically filed right
+ * at that deadline — so we generate the schedule from the cadence rather than
+ * hardcoding dates that would go stale. 13D/13G stakes are event-driven and
+ * can land any day; they are not part of this predictable calendar.
+ */
+export function getUpcomingFilings(count = 4, now: Date = new Date()): UpcomingFiling[] {
+  // Calendar quarter-ends as [monthIndex, day].
+  const quarterEnds: [number, number][] = [
+    [2, 31], // Mar 31
+    [5, 30], // Jun 30
+    [8, 30], // Sep 30
+    [11, 31], // Dec 31
+  ];
+  const startYear = now.getUTCFullYear();
+  const out: UpcomingFiling[] = [];
+  for (let y = startYear; out.length < count && y <= startYear + 4; y++) {
+    for (const [m, d] of quarterEnds) {
+      const end = new Date(Date.UTC(y, m, d));
+      const due = new Date(end.getTime() + 45 * DAY_MS);
+      if (due < now) continue; // already past its deadline
+      out.push({
+        report: `Q${Math.floor(m / 3) + 1} ${y}`,
+        period_end: end.toISOString().slice(0, 10),
+        expected_by: due.toISOString().slice(0, 10),
+        days_out: Math.ceil((due.getTime() - now.getTime()) / DAY_MS),
+        type: "13F-HR",
+      });
+      if (out.length >= count) break;
+    }
+  }
+  return out;
+}
+
 /** Compact USD formatter: $1.57B, $878M, $13.1M. */
 export function fmtUsd(v: number): string {
   if (v >= 1e9) return `$${(v / 1e9).toFixed(2)}B`;

@@ -4,6 +4,7 @@ import {
   getCopyBook,
   getPutBook,
   getThemeBreakdown,
+  getUpcomingFilings,
   fmtUsd,
 } from "@/lib/situational-awareness";
 import { getThesis } from "@/lib/theses";
@@ -55,6 +56,9 @@ export default function SituationalAwarenessPage() {
 
   // AUM trajectory, oldest → newest, for the growth strip.
   const trail = [...portfolio.filings].reverse();
+
+  // Forward-looking calendar of the next quarterly 13F deadlines.
+  const upcoming = getUpcomingFilings(4);
 
   return (
     <div className="mx-auto max-w-5xl space-y-1">
@@ -171,6 +175,52 @@ export default function SituationalAwarenessPage() {
         <p className="border-t border-[var(--border)] px-2 py-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
           Notional includes option lines reported at the underlying&apos;s value, so it
           overstates capital. Directionally, the book has compounded fast.
+        </p>
+      </Panel>
+
+      {/* Next filings due ------------------------------------------------ */}
+      <Panel code="CALENDAR" title="Next filings — when the book updates next">
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse font-mono text-[11px]">
+            <thead>
+              <tr className="border-b border-[var(--border)] text-[9px] uppercase tracking-widest text-[var(--dim)]">
+                <th className="px-2 py-1 text-left">Filing</th>
+                <th className="px-2 py-1 text-left">Covers quarter end</th>
+                <th className="px-2 py-1 text-left">Expected by</th>
+                <th className="px-2 py-1 text-right">Countdown</th>
+              </tr>
+            </thead>
+            <tbody>
+              {upcoming.map((f, i) => (
+                <tr key={f.report} className="border-b border-[var(--border)] last:border-0">
+                  <td className="px-2 py-1 font-semibold text-[var(--amber)]">
+                    {f.type} · {f.report}
+                  </td>
+                  <td className="px-2 py-1 text-[var(--dim)]">{f.period_end}</td>
+                  <td
+                    className="px-2 py-1"
+                    style={{ color: i === 0 ? "var(--cyan-term)" : "var(--foreground)" }}
+                  >
+                    {f.expected_by}
+                    {i === 0 && (
+                      <span className="ml-1 text-[9px] uppercase tracking-widest text-[var(--cyan-term)]">
+                        ◂ next
+                      </span>
+                    )}
+                  </td>
+                  <td className="px-2 py-1 text-right text-[var(--foreground)]">
+                    {f.days_out} days
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="border-t border-[var(--border)] px-2 py-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
+          A 13F-HR is due within 45 days of each quarter-end; this fund files right at
+          the deadline. Dates are the SEC deadline, not a confirmed file date. Interim
+          13D/13G stakes (like the Nebius line above) are event-driven and can land any
+          day — those show up in the NEWEST panel as they hit EDGAR.
         </p>
       </Panel>
 
