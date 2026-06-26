@@ -1,7 +1,7 @@
 ---
 title: The Situational Awareness Thesis
 subtitle: How Leopold Aschenbrenner is trading the road to AGI — and what it means to shadow him
-updated: "2026-06-24"
+updated: "2026-06-25"
 summary: Leopold Aschenbrenner — the ex-OpenAI researcher whose 2024 essay "Situational Awareness" argued AGI arrives by ~2027 — turned that worldview into a hedge fund. The trade is not the AI models; it is the physical bottleneck behind them: electricity, datacenters, and the memory/compute that feed them. Here is the thesis, the actual book from his SEC filings, how to copy it honestly, and where it could break.
 ---
 
@@ -31,6 +31,8 @@ The fund's [Q1 2026 13F](https://www.sec.gov/cgi-bin/browse-edgar?action=getcomp
 - **Bitcoin miners → AI hosts** — the cleverest part of the thesis. [Miners already own interconnected, power-dense, cooled sites](https://blockspace.media/insight/situational-awareness-lp-bitcoin-miner-longs/); re-pointing that capacity at AI inference is faster than building greenfield. The book holds IREN, Core Scientific, Riot, CleanSpark, Bitfarms, Bitdeer and HIVE.
 - **AI compute / neoclouds** — CoreWeave, Applied Digital, WhiteFiber and SharonAI: GPU capacity sold by the hour.
 - **Memory & storage** — Sandisk and Micron (common + calls): the thesis that an inference build-out is as memory-hungry as it is GPU-hungry.
+
+**The most current move — a new neocloud long.** After that 13F, the fund's freshest disclosure is a [Schedule 13G filed May 27, 2026 revealing a 5.6% stake in Nebius Group (NBIS)](https://www.benzinga.com/trading-ideas/movers/26/05/52827719/nebius-stock-jumps-after-situational-awareness-hedge-fund-reveals-stake) — 12.41M Class A shares, crossing the 5% threshold around May 19. Nebius is another AI neocloud, so this doubles down on the same compute bucket as CoreWeave; the reveal sent the stock up roughly 12% and put Situational Awareness among Nebius's largest holders next to BlackRock. Because a 13D/13G is filed within days of crossing 5% rather than 45 days after quarter-end, it is the freshest window into the book between 13Fs — and at the current quote the stake is worth more than any single line in the Q1 13F.
 
 On the short side, the fund held [**$8B+ of notional put exposure across semiconductors**](https://blockspace.media/insight/situational-awareness-lp-bitcoin-miner-longs/) at quarter-end — the VanEck Semiconductor ETF (SMH), Nvidia, Oracle, Broadcom, AMD, plus Micron, TSMC, ASML, Intel and Corning. Read this not as "he hates chips" but as a hedge on the *crowded, expensively-priced* expression of AI, funded by conviction in the *cheap, overlooked* expression.
 

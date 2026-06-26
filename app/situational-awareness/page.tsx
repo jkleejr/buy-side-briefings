@@ -70,8 +70,8 @@ export default function SituationalAwarenessPage() {
           Leopold Aschenbrenner · the AGI picks-and-shovels fund
         </p>
         <p className="font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
-          Tracked from public SEC 13F filings · snapshot {portfolio.as_of} · filed{" "}
-          {portfolio.filed}
+          Tracked from public SEC filings · 13F snapshot {portfolio.as_of} · latest
+          disclosure {portfolio.latest_disclosure ?? portfolio.filed}
         </p>
       </header>
 
@@ -82,6 +82,56 @@ export default function SituationalAwarenessPage() {
         <Stat label="Copy-Book Longs" value={`${copyBook.length} names`} tone="var(--up)" />
         <Stat label="Long Notional" value={fmtUsd(copyTotal)} tone="var(--up)" />
       </div>
+
+      {/* Most current signal — post-13F 13D/13G disclosures --------------- */}
+      {portfolio.recent_disclosures && portfolio.recent_disclosures.length > 0 && (
+        <Panel
+          code="NEWEST"
+          title="Most current signal — disclosed since the Q1 13F"
+        >
+          <div className="divide-y divide-[var(--border)]">
+            {portfolio.recent_disclosures.map((d) => (
+              <div key={d.ticker ?? d.name} className="space-y-1.5 p-2">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5">
+                  <span className="font-mono text-[13px] font-semibold text-[var(--up)]">
+                    {d.ticker ? `${d.ticker} · ` : ""}
+                    {d.name}
+                  </span>
+                  <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)]">
+                    {d.form} · filed {d.filed}
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-1 sm:grid-cols-4">
+                  <Stat label="Stake of company" value={`${d.pct_of_class}%`} tone="var(--amber)" />
+                  <Stat label="Shares" value={d.shares.toLocaleString()} />
+                  <Stat
+                    label={`Value @ ${d.ref_price_date}`}
+                    value={fmtUsd(d.est_value)}
+                    tone="var(--up)"
+                  />
+                  <Stat label="Crossed 5% on" value={d.event_date} />
+                </div>
+                <p className="font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
+                  {d.note}
+                </p>
+                <a
+                  href={d.source_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block font-mono text-[10px] text-[var(--cyan-term)] hover:underline"
+                >
+                  SEC {d.form} →
+                </a>
+              </div>
+            ))}
+          </div>
+          <p className="border-t border-[var(--border)] px-2 py-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
+            A 13D/13G is filed within days of crossing a 5% stake — far fresher than
+            the 45-day-lagged 13F. Value is marked at the noted price; the filing
+            itself reports shares and percent, not dollars.
+          </p>
+        </Panel>
+      )}
 
       {/* TL;DR ----------------------------------------------------------- */}
       {thesis?.meta.summary && (

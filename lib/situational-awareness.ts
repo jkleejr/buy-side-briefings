@@ -38,17 +38,51 @@ export type Filing = {
   value: number;
 };
 
+/**
+ * A disclosure that POST-DATES the latest 13F — a 13D/13G filed when the fund
+ * crosses a 5% ownership threshold, which surfaces days after the event instead
+ * of 45 days after quarter-end. This is the most current window we get into the
+ * book between quarterly filings.
+ */
+export type RecentDisclosure = {
+  ticker: string | null;
+  name: string;
+  /** SEC form, e.g. "SCHEDULE 13G". */
+  form: string;
+  filed: string;
+  /** Date the fund crossed the threshold that required the filing. */
+  event_date: string;
+  shares: number;
+  /** % of the issuer's class owned. */
+  pct_of_class: number;
+  theme: Theme;
+  copy: boolean;
+  /** Price used to mark the stake, and its date. 13D/G report no dollar value. */
+  ref_price: number;
+  ref_price_date: string;
+  /** shares × ref_price. */
+  est_value: number;
+  /** Price on the day the stake was revealed (for context on the move). */
+  disclosure_price?: number;
+  source_url: string;
+  note: string;
+};
+
 export type Portfolio = {
   fund: string;
   manager: string;
   as_of: string;
   filed: string;
+  /** Date of the most recent disclosure of any kind (may post-date the 13F). */
+  latest_disclosure?: string;
   source: string;
   source_url: string;
   total_value: number;
   long_count: number;
   caveats: string[];
   positions: Position[];
+  /** 13D/13G stakes disclosed since the latest 13F. Newest first. */
+  recent_disclosures?: RecentDisclosure[];
   filings: Filing[];
 };
 

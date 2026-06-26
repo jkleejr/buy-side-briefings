@@ -3,6 +3,7 @@
   "manager": "Leopold Aschenbrenner",
   "as_of": "2026-03-31",
   "filed": "2026-05-18",
+  "latest_disclosure": "2026-05-27",
   "source": "SEC Form 13F-HR (CIK 0002045724)",
   "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002045724&type=13F-HR",
   "total_value": 13676657577,
@@ -56,6 +57,25 @@
     { "ticker": "MU", "name": "Micron Technology", "side": "long", "value": 5865578, "shares": 17362, "theme": "memory", "copy": true },
     { "ticker": "GLW", "name": "Corning", "side": "long", "value": 718330, "shares": 5283, "theme": "semis", "copy": false },
     { "ticker": "NVDA", "name": "NVIDIA", "side": "long", "value": 497912, "shares": 2855, "theme": "semis", "copy": false }
+  ],
+  "recent_disclosures": [
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group N.V.",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-05-27",
+      "event_date": "2026-05-19",
+      "shares": 12410060,
+      "pct_of_class": 5.6,
+      "theme": "compute",
+      "copy": true,
+      "ref_price": 273.60,
+      "ref_price_date": "2026-06-25",
+      "est_value": 3395392416,
+      "disclosure_price": 233.60,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2045724/000093583626000303/primary_doc.xml",
+      "note": "Brand-new position disclosed AFTER the Q1 13F. The fund crossed 5% of AI neocloud Nebius around May 19, 2026 (filed May 27) — 12.41M Class A shares, 5.6% of the company, ranking it alongside BlackRock as a top holder. NBIS jumped ~12% on the reveal. A clean, copyable directional long that doubles down on the neocloud/compute bucket next to CoreWeave, Applied Digital and WhiteFiber. At the current ~$273.60 mark this stake is worth ~$3.4B — larger than any single line in the Q1 13F."
+    }
   ],
   "filings": [
     { "report": "Q1 2026", "as_of": "2026-03-31", "filed": "2026-05-18", "positions": 42, "value": 13676657577 },
