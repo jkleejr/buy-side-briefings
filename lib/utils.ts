@@ -17,7 +17,10 @@ export function formatRelativeTime(iso: string): string {
   return `${days}d ago`;
 }
 
-export function formatPct(n: number): string {
+export function formatPct(n: number | null | undefined): string {
+  // Defensive: a single missing/non-finite value must never crash the static
+  // build (the whole site is one prerender). Render an em-dash instead.
+  if (n === null || n === undefined || !Number.isFinite(n)) return "—";
   const sign = n > 0 ? "+" : "";
   return `${sign}${n.toFixed(2)}%`;
 }
@@ -106,7 +109,9 @@ export function formatChartTick(iso: string, intraday?: boolean): string {
   });
 }
 
-export function formatLevel(n: number): string {
+export function formatLevel(n: number | null | undefined): string {
+  // Defensive: one malformed level must not crash the static build.
+  if (n === null || n === undefined || !Number.isFinite(n)) return "—";
   if (n >= 1000) return n.toLocaleString("en-US", { maximumFractionDigits: 1 });
   return n.toFixed(2);
 }
