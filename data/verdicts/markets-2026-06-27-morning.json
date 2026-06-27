@@ -1,0 +1,87 @@
+{
+  "routine": "markets",
+  "date": "2026-06-27",
+  "window": "morning",
+  "generated_at": "2026-06-27T10:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Weekend Review: SK Hynix ADR Confirmed July 10; NVDA Stop Day 1 Active; BTC Day 5 Exit Gate; June 29 Is the Binary",
+    "conviction": "medium",
+    "horizon": "Through June 29 close — step aside converts to HOLD (NVDA stop reset) or escalates to BEARISH (stop trigger + SPX fails 7,300) depending on Monday's close.",
+    "rationale_short": "Saturday morning weekend review with US and Korean equity markets closed. No new macro catalysts capable of clearing the three breached regime gates (SPX 7,354 / VIX 18.41 / DXY 101.27) before Monday's June 29 open. The dominant weekend development is STRUCTURAL POSITIVE: SK Hynix officially confirmed its Nasdaq ADR listing for July 10 ($29.4B offering, 17.79M shares, underwriters BofA/Goldman/Citigroup/JPMorgan) — the largest ADR in history if fully subscribed. This validates the HBM4 supply chain at the highest possible institutional level and materially reduces the NVDA Stop Day 1 risk by adding underwriter stabilization demand to the KOSPI circuit-breaker recovery narrative. Against this structural positive, two binary events dominate the June 29–July 2 window: (1) NVDA Stop Day 2 — June 29 close below $195 triggers mandatory full exit from the structural long; (2) NFP July 2 (consensus +172K) into a 3-day July 4 holiday gap with no hedging window. BTC remains at $60,429 (Day 5 exit gate, re-entry clock not activated). SPCX step-aside continues with Nasdaq 100 inclusion expected July 7 (~$4.3B passive) as the next passive catalyst. Verdict: STEP ASIDE at medium conviction. Let regime gates clear before adding. Monitor June 29 closes on NVDA, KOSPI, and SPX as the framework-setting events for the July 2–July 10 window.",
+    "supporting_data": [
+      { "label": "SK Hynix Nasdaq ADR listing confirmed July 10 — 17.79M shares, ~₩45.45T (~$29.4B), underwriters BofA/Goldman/Citigroup/JPMorgan; largest ADR in history if fully subscribed; board resolution June 24; Nasdaq ADR July 10, KRX new shares July 29. HBM4 demand validation at institutional underwriting scale.", "url": "https://www.techtimes.com/articles/318997/20260625/sk-hynix-confirms-nasdaq-listing-seeking-29-billion-record-adr-offering.htm" },
+      { "label": "NVDA Stop Day 1 active — June 26 close $192.53 < $195 two-close stop threshold; June 29 is Day 2: close above $195 resets stop, close below $195 = mandatory full exit. Russell Reconstitution failure (record $334B passive bid produced lower close) is the dominant technical signal heading into Monday.", "url": "https://finance.yahoo.com/quote/NVDA/" },
+      { "label": "BTC Day 5 exit gate — Crypto.com MCP: current $60,429 (11:03 UTC June 27); June 27 candle O$60,104/H$60,581/L$59,877; $1,571 below $62,000 re-entry gate; IBIT outflows $692M on June 25 (largest since May 27); re-entry clock not activated.", "url": "https://crypto.com/exchange/trade/BTC_USDT" },
+      { "label": "Regime gates — all three still breached: VIX 18.41 (above 17 gate; marginally improved from 18.89 June 26 close), DXY 101.27 (above 100 gate), SPX 7,354 (106 pts below 7,460 floor). Sixth consecutive session with no regime clearance. No weekend catalyst capable of clearing any gate before Monday open.", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "NFP July 2 binary (consensus +172K, 4.3% UE, +0.3% wages MoM); markets closed July 3; Fed Chair Warsh speaks July 1 (Portugal, 9:30 AM ET). Strong print (+200K) cements BofA three-hike framework into 3-day holiday gap; weak print (<130K) raises recession concerns. Both tails negative for current regime assets.", "url": "https://www.cnbc.com/2026/06/26/stock-market-next-week-outlook-for-june-29-july-3-2026.html" },
+      { "label": "SPCX bond distribution ongoing (formal settlement June 26; clearance est. July 7–10); Nasdaq 100 inclusion expected July 7 (~$4.3B passive inflows coinciding with clearance window). Step-aside posture unchanged. SpaceX Starpipe Texas natural gas pipeline filing reflects Starship operational commitment.", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261986935-spcx-stock-analysis-bond-demand-june-2026-tradingkey" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7354.02, "change_pct": -0.05, "as_of": "2026-06-26T20:00:00Z" },
+    "nasdaq": { "level": 25297.62, "change_pct": -0.24, "as_of": "2026-06-26T20:00:00Z" },
+    "vix":    { "level": 18.41, "change_pct": -2.54, "as_of": "2026-06-27T10:00:00Z" },
+    "ust10y": { "level": 4.38, "change_bps": -1, "as_of": "2026-06-27T10:00:00Z" },
+    "dxy":    { "level": 101.27, "change_pct": 0.02, "as_of": "2026-06-27T10:00:00Z" },
+    "brent":  { "level": 71.99, "change_pct": -4.34, "as_of": "2026-06-26T20:00:00Z" },
+    "btc":    { "level": 60429, "change_pct": 0.54, "as_of": "2026-06-27T11:03:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX", "value": 18.41, "trigger_above": 17, "unit": "", "status": "BREACH — weekend level ~18.41 (down from 18.89 June 26 close; -0.48 improvement); still 1.41 pts above 17 gate; the marginal compression is time-decay not risk-appetite recovery; two consecutive closes below 17 still required; 20 remains the next panic threshold; NVDA Stop Day 2 (June 29) or adverse NFP (July 2) could push VIX toward 20-22" },
+    { "name": "30Y Yield", "value": 4.848, "trigger_above": 5.0, "unit": "%", "status": "15.2-BPS BUFFER — approximately unchanged from June 26 close; oil disinflation (Brent $71.99, Hormuz normalization intact) is preserving this buffer; NFP July 2 strong print (+200K) would compress this buffer by 5–10 bps as BofA three-hike framework gains probability; watch for any June 27 weekend Treasury auction or Fed speaker developments" },
+    { "name": "DXY", "value": 101.27, "trigger_above": 100, "unit": "", "status": "BREACH — 127 bps above trigger; marginally improved from 101.25 June 26 close; SK Hynix ADR ($29.4B offering priced in USD) creates slight USD demand that may support DXY near current levels; continued oil disinflation and Hormuz normalization are modest DXY headwinds; below 100 requires macro regime shift or Fed rate cut pricing" },
+    { "name": "SPX vs 7,460", "value": 7354, "trigger_below": 7460, "unit": "", "status": "BREACH — 106 pts below floor; June 26 close 7,354.02 (five consecutive sessions below 7,460); no weekend catalyst to gap SPX above 7,460 on Monday open; SK Hynix ADR positive may provide 0.2–0.4% tailwind on Monday but insufficient to clear the 1.44% gap to 7,460; floor is now resistance; close below 7,300 on June 29 escalates to BEARISH" },
+    { "name": "BTC", "value": 60429, "trigger_below": 63500, "unit": "USD", "status": "EXIT GATE ACTIVE — Day 5; $3,071 below $63,500 threshold; Crypto.com MCP live: $60,429 at 11:03 UTC June 27; re-entry clock not activated ($1,571 below $62,000 gate); Day 5 close est. $60,000–$61,000; no catalyst for $62,000 close today" },
+    { "name": "Brent", "value": 71.99, "trigger_above": 97, "unit": "USD/bbl", "status": "WATCH — $25.01 to main trigger; Hormuz ceasefire June 17 holding; June 26 Hormuz drone strike panic fully reversed (Brent fell from $74.43 premarket to $71.99 close, −4.34%); no new escalation over the weekend; oil disinflation is the one macro positive preserving the 30Y buffer from 5.00%; monitor Iran ceasefire compliance 60-day window" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Stop Day 1 active — June 26 close $192.53 < $195 threshold. June 29 is the binary: close above $195 → stop reset, medium conviction HOLD resumes; close below $195 → FULL EXIT. No add at any level before stop resolution. SK Hynix ADR (July 10) validates HBM4 demand but does not clear regime gates. Regime add trigger: $205 ONLY when SPX > 7,460 AND VIX < 17 simultaneously.", "sentiment": "neutral" },
+    { "ticker": "SKHYNIX", "note": "ADR Nasdaq July 10 CONFIRMED — $29.4B offering, underwriters BofA/Goldman/Citigroup/JPMorgan. June 26 KST close ₩2,673,000 (−8.36%). Stop ₩2,540,000 unchanged. June 29 KST open is the first live read of ADR catalyst: expect ₩2,700,000–₩2,800,000 on underwriter stabilization + ADR premium demand. Add zone ₩2,800,000–₩2,850,000 on June 29 KST two-session KOSPI stabilization confirmation.", "sentiment": "positive" },
+    { "ticker": "BTC-USD", "note": "Day 5 exit gate. Live: $60,429 (11:03 UTC June 27). Re-entry clock not activated ($1,571 below $62,000 gate). Mild +0.54% Saturday recovery on low volume (643 BTC/$38.9M) — noise, not signal. Remain flat/cash. Watch June 27 20:00 UTC close (Day 5 locked in). IBIT June 26 flow data pending farside.co.uk publication.", "sentiment": "negative" },
+    { "ticker": "SPCX", "note": "Step aside HIGH conviction. Last close $152.15 (June 26, −0.50%). Bond distribution ongoing (formal settlement June 26; clearance est. July 7–10). NEW: Nasdaq 100 inclusion July 7 (~$4.3B passive inflows). IG floor ($150) held four consecutive closes. Monitor June 29 volume for clearance pace. Re-entry: two closes above $185 after volume normalization below 5M shares/day.", "sentiment": "neutral" },
+    { "ticker": "MU", "note": "No new data since June 26 (−2.1% on Russell Reconstitution session). $50B Q4 FY2026 guide intact. Russell Growth reclassification permanent. SK Hynix ADR confirmation of HBM demand validates MU's fundamental case. Watch Monday open for dip below $1,200 as add opportunity. Stop $1,050 two-close basis.", "sentiment": "positive" },
+    { "ticker": "META", "note": "No new weekend catalyst. Cheapest full-stack AI megacap on PEG basis. Qualcomm Dragonfly AI chip anchor customer. Do not add before SPX > 7,460 AND VIX < 17 simultaneously. Low conviction watch at current levels.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA below $195 before June 29 close",
+      "reason": "Stop Day 1 is active. Buying before the June 29 stop resolution adds risk precisely when the framework may mandate exit. Two consecutive closes below $195 = mandatory full exit. Adding at $192 increases the loss per share if June 29 also closes below $195 and the exit is executed.",
+      "better_entry": "Add $205+ ONLY when: (1) June 29 closes above $195 (stop reset); (2) SPX > 7,460 AND VIX < 17 simultaneously at a daily close; (3) Both gates cleared. These conditions are not expected to be met before NFP July 2."
+    },
+    {
+      "ticker": "BTC re-entry below $62,000",
+      "reason": "Day 5 exit gate active. IBIT outflows $692M June 25 (largest since May 27) confirm institutional exit. Two consecutive UTC closes above $62,000 required before any re-entry consideration. From current $60,429, reaching $62,000 requires +2.60% with no catalyst.",
+      "better_entry": "Re-entry ONLY on: two consecutive UTC closes above $62,000 AND resumed net IBIT daily inflows for 3+ consecutive days. Earliest realistic window: June 29–July 1 if macro stabilizes, or post-NFP July 2 if Goldilocks print."
+    },
+    {
+      "ticker": "SPCX before bond distribution clears",
+      "reason": "Bond distribution mechanics are the dominant supply force — every $89B in bond demand above the $25B supply creates sustained dealer distribution. The IG floor ($150) is under intraday pressure (two breaches: $147.11, $148.51). Nasdaq 100 inclusion July 7 is a one-time passive event that will face the same distribution absorption as the June 26 Russell 1000 addition.",
+      "better_entry": "Two consecutive closes above $185 AFTER confirmed volume normalization below 5M shares/day for 2–3 sessions (est. July 7–10 clearance). September 2 first earnings as full position catalyst."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SK Hynix (000660.KS) — long on ADR catalyst, June 29 KST stabilization",
+      "direction": "long",
+      "thesis": "The Nasdaq ADR listing confirmation (July 10, $29.4B, underwriters BofA/Goldman/Citigroup/JPMorgan) is the most powerful structural positive catalyst for SK Hynix since the HBM4 supply shortage was first identified. Underwriter desks are now financially incentivized to stabilize the stock above the ADR pricing range for the next 13 days. The June 26 circuit-breaker session (−8.36%) was macro-driven forced selling — not fundamental deterioration. The record retail net buy (₩11.55T on June 26) is the contrarian bottom signal. The ADR announcement on top of retail capitulation is the highest-conviction near-term recovery setup in the current cycle.",
+      "entry": "Buy June 29 KST open if KOSPI opens above 8,500 and SK Hynix opens above ₩2,700,000. Scale 50% position. Add remaining 50% on KOSPI two-session stabilization above 8,500. Stop ₩2,540,000 on two consecutive KST closes below (unchanged).",
+      "invalidation": "June 29 KST opens below ₩2,600,000 on US premarket risk-off (NVDA stop trigger, NFP pre-positioning, additional KOSPI contagion); Samsung announces HBM4E NVIDIA qualification simultaneously; SPX June 29 US close below 7,300.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks (through ADR listing July 10 and Q2 KST earnings July 29)"
+    },
+    {
+      "asset": "BTC — watch for re-entry clock Day 1 on June 29 UTC close",
+      "direction": "flat",
+      "thesis": "BTC is in the flat/cash step-aside zone. The higher-low pattern ($58,100 → $58,325 → $59,877) is the first constructive technical signal in five sessions. The re-entry clock requires TWO consecutive UTC closes above $62,000. June 29 UTC close is the first session after the weekend where a US equity risk-on open (SK Hynix ADR positive, NVDA stop reset scenario, SPX recovery) could provide the macro catalyst to push BTC above $62,000 for the first time since June 23.",
+      "entry": "Watch June 29 20:00 UTC candle close. If close above $62,000 → Day 1 of re-entry clock. Then watch June 30 20:00 UTC close: if also above $62,000 → re-enter BTC. Size 50% of prior position. Stop: close below $60,000 on two consecutive closes after re-entry. Do NOT re-enter on intraday moves above $62,000 — only confirmed daily closes count.",
+      "invalidation": "June 29 UTC close below $62,000 (re-entry clock inactive); NVDA stop triggers on June 29 US close (risk-off contagion); NFP July 2 strong print (+200K) into 3-day holiday gap.",
+      "conviction": "low",
+      "horizon": "1–2 weeks (dependent on two-day $62,000 gate activation)"
+    }
+  ],
+  "bear_case": "The weekend produced no macro catalyst capable of clearing the three regime gates (SPX +1.44% needed to 7,460; VIX -1.41 pts needed below 17; DXY -1.27 pts needed below 100). Five consecutive sessions with all three gates breached without recovery is the dominant technical signal — this is NOT a consolidation pattern, it is a distribution pattern. The SK Hynix ADR positive masks two critical risks: (1) the ADR is DILUTIVE (17.79M new shares, ~2.45% dilution to existing holders) and will be priced at a discount to market; (2) the ADR filing week (July 7 pricing supplement) overlaps with NFP July 2 adverse print risk into the July 4–6 holiday gap — if NFP prints +220K and BofA three-hike becomes consensus, KOSPI selling resumes on July 7 KST exactly as the ADR pricing is being finalized. The NVDA Stop Day 2 binary on June 29 represents the most consequential single event: if NVDA's 24.3B diluted-share position exits at $192 (full stop trigger), it removes the largest single passive/active long in the Russell 1000 Growth index from the order book — the selling pressure from the full NVDA long unwind would weigh on SPX's ability to recover to 7,460 in any near-term window. If June 29 close: NVDA below $195 AND SPX below 7,300 AND BTC below $58,100, the framework escalates from STEP ASIDE to BEARISH for the July 2–10 window. Invalidation: June 29 closes NVDA above $200 (gap above stop) AND SPX above 7,420 (approaching floor) AND VIX below 17 — then the six-session regime breach resolves and verdict upgrades to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-06-27-morning.mdx"
+}

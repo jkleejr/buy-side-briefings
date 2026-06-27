@@ -1,0 +1,138 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-06-27",
+  "generated_at": "2026-06-27T10:00:00Z",
+  "is_seed": false,
+  "day_winner": "bears",
+  "day_summary": "SATURDAY WEEKEND REVIEW — US MARKETS CLOSED; STOP DAY 1 STILL ACTIVE; NO NEW NVDA CATALYST; JUNE 29 BINARY SESSION UNCHANGED. No US equity trading on June 27 (Saturday). NVDA's last confirmed close remains $192.53 (June 26, −2.20%), with Stop Day 1 still active ($195 threshold breached). The weekend brought no macro developments capable of clearing the three regime gates before Monday's June 29 open. VIX marginally compressed to ~18.41 (from 18.89 June 26 close) — still 1.41 pts above the 17 gate. DXY eased to 101.27 (from 101.25 — essentially flat). SPX 7,354 — 106 pts below the 7,460 floor. All three regime gates remain simultaneously breached for the sixth consecutive session. The primary weekend development for NVDA's supply chain is positive but timing-distant: SK Hynix officially confirmed its Nasdaq ADR listing for July 10 ($29.4B offering, 17.79M new shares) — the HBM4 supply chain is structurally intact. However, this does NOT clear NVDA's stop framework or regime gates. NFP July 2 (consensus +172K) remains the next binary macro event with markets closed July 3 (Independence Day observed). The reconstitution failure signal from June 26 is the dominant technical read heading into Monday: $334B in passive buying produced a lower close — that distribution narrative is unchanged over the weekend.",
+  "long_pnl": "longs at $200–$205 remain underwater at $192.53; Stop Day 1 clock is live — one June 29 close below $195 triggers full exit; the weekend provided no recovery catalyst and no regime gate clearance; longs have a binary outcome on Monday: June 29 close above $195 resets stop to inactive, below $195 mandates exit; the SK Hynix ADR confirmation (July 10 Nasdaq) is a positive read-through for HBM demand but provides no near-term price support for NVDA before June 29 close",
+  "short_pnl": "bears from the June 26 close of $192.53 preserved their position over the weekend; stop Day 1 active means the institutional long exit framework is one session from triggering; if June 29 closes below $195, forced long exits structurally increase the supply overhang; the regime gate analysis (SPX 106 pts below floor, VIX 1.41 pts above gate) supports continued distribution; the weekend provided no positive catalyst to close out short positions",
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "HOLD at LOW conviction — UNCHANGED from June 26 night. Stop Day 1 is active ($192.53 June 26 close < $195 threshold). June 29 is the binary: close above $195 → stop resets to inactive; close below $195 → FULL EXIT mandatory (two consecutive closes below $195 = two-close stop triggered). Do NOT add at any level before the June 29 close resolves the stop. Regime gates (SPX > 7,460 AND VIX < 17) remain simultaneously breached — no add before both clear.",
+    "rationale": "HOLD at LOW conviction — weekend confirmation of June 26 framework. No US equity trading June 27 (Saturday). The stop Day 1 clock established on the June 26 close ($192.53 < $195) is active. The weekend brought no clearing catalyst: VIX marginally lower at 18.41 (still above 17 gate); DXY 101.27 (still above 100 gate); SPX futures suggest no gap-up open that would immediately reclaim 7,460. SK Hynix ADR confirmation (Nasdaq July 10, $29.4B) validates the HBM4 supply chain underlying the NVDA bull case — but this structural positive does NOT change the near-term stop/regime framework. The NFP July 2 binary (consensus +172K, markets closed July 3) remains the macro event that must be navigated AFTER June 29's binary close resolution. Framework unchanged: do NOT add before SPX > 7,460 AND VIX < 17 simultaneously at a daily close."
+  },
+  "snapshot": {
+    "price": 192.53,
+    "change_pct": 0.00,
+    "change_abs": 0.00,
+    "prev_close": 192.53,
+    "day_low": null,
+    "day_high": null,
+    "week52_low": 142.03,
+    "week52_high": 236.54,
+    "volume": "NO TRADING — Saturday June 27. US equity markets closed. Last traded: June 26 (volume est. 80–100M shares on reconstitution close). Next trading session: Monday June 29.",
+    "market_cap": "~$4.68T (at $192.53 June 26 close / ~24.3B diluted shares)",
+    "extra": [
+      {
+        "label": "★ STOP DAY 1 STILL ACTIVE — ONE JUNE 29 CLOSE BELOW $195 = FULL EXIT",
+        "value": "Stop Day 1 was activated on the June 26 close ($192.53 < $195 two-close stop threshold). Today (Saturday) has no trading and therefore no stop resolution. The stop remains at Day 1 status. Monday June 29 is the binary: (A) June 29 close ABOVE $195 → stop resets to inactive; medium conviction HOLD resumes; (B) June 29 close BELOW $195 → FULL EXIT triggered (two consecutive closes below $195 = mandatory exit). Buffer from current last-close to stop threshold: $2.47 (1.28% above $195 required for stop reset). Do NOT add at any level before June 29 resolution.",
+        "tone": "down"
+      },
+      {
+        "label": "★ REGIME GATES — ALL THREE STILL BREACHED; MARGINAL VIX IMPROVEMENT INSUFFICIENT",
+        "value": "Weekend macro check (Saturday June 27): VIX ~18.41 (down from 18.89 June 26 close; still 1.41 pts above 17 gate — two consecutive closes below 17 still required before any regime clearance). DXY 101.27 (fractionally improved from 101.25; still above 100 gate). SPX 7,354 last close (106 pts below 7,460 floor; no futures indication of gap-up to reclaim floor on Monday). All three gates remain simultaneously breached. Sixth consecutive session with no regime clearance. The partial VIX compression (+0.48 improvement from 18.89 to 18.41) is noise, not a clearing signal.",
+        "tone": "down"
+      },
+      {
+        "label": "SK HYNIX ADR CONFIRMED — NASDAQ JULY 10 LISTING; HBM SUPPLY CHAIN VALIDATES NVDA DEMAND",
+        "value": "The weekend's most significant development for NVDA's fundamental case: SK Hynix officially confirmed its Nasdaq ADR listing for July 10 (new share listing July 29). The $29.4B offering (17.79M new shares) would be the largest ADR offering in history if fully subscribed, surpassing Alibaba's $21.8B 2014 IPO. This validates SK Hynix's HBM4 supply chain (58% market share in a sold-out 2026 HBM market) and by extension confirms NVDA's Vera Rubin Blackwell GPU platform demand from the primary memory supplier. The ADR timing (July 10 listing, July 29 new shares) provides a structural demand catalyst for SK Hynix that may stabilize the HBM supply chain narrative before NVDA's Q2 FY27 earnings (~Aug 26, $91B guidance). This is a structural positive for NVDA's long-term demand thesis — not a near-term price catalyst before June 29.",
+        "tone": "up"
+      },
+      {
+        "label": "NFP JULY 2 — BINARY MACRO EVENT INTO 3-DAY HOLIDAY GAP; FRAMEWORK UNCHANGED",
+        "value": "June Non-Farm Payrolls (pulled forward from July 3 holiday) release Thursday July 2 at 8:30 AM ET. Consensus: +172K NFP, 4.3% unemployment, +0.3% wages MoM. Markets closed July 3 (Independence Day observed). A strong print (+200K, wages +0.4%) cements BofA's three-hike framework into the July 4–6 holiday gap with no hedging window. A weak print (<130K) raises recession concerns that compress growth multiples. NFP binary is the macro gate AFTER June 29 stop resolution — do not hold through NFP with an unresolved stop trigger.",
+        "tone": "neutral"
+      },
+      {
+        "label": "Q2 FY27 EARNINGS — ~LATE AUGUST 2026; $91B GUIDANCE; STRUCTURAL RE-ENTRY ANCHOR",
+        "value": "NVDA Q2 FY27 earnings expected ~late August 2026 (est. ~Aug 26). Q2 revenue guidance $91B. Vera Rubin Blackwell ramp, HBM4E allocation (now anchored by SK Hynix ADR July 10 supply-chain validation), and gross margin trajectory are the key disclosure items. If June 29 stop triggers and position is exited, Q2 FY27 earnings is the primary re-entry catalyst window. Re-entry post-stop would require: SPX > 7,460 AND VIX < 17 simultaneously + NVDA > $205 on above-average volume. Analyst consensus PT $299–$303 remains intact.",
+        "tone": "up"
+      }
+    ]
+  },
+  "positioning": {
+    "iv": 39,
+    "iv_note": "IV ~39% (estimated Saturday; marginally compressed from 40% June 26 close as the weekend's lack of negative catalyst allows time-decay to work). Put/call ratio estimated ~0.73 (slightly lower as institutional put-buyers pause over the weekend; structural call bias on $91B Q2 guide persists). $190–$195 put OI remains the heaviest concentration — the stop zone is the max-pain anchor. July expiry max pain estimated $188–$195 (broader range as the stop Day 1 uncertainty creates bi-modal OI between recovery puts and acceleration puts). Next live IV read: Monday June 29 premarket.",
+    "put_call": 0.73,
+    "short_interest": "Short interest estimated ~1.1% of float (unchanged from June 26 estimated level; no short-selling on Saturday). The reconstitution failure confirmation from June 26 — $334B passive buying producing a lower close — provides the cleanest short thesis of the 2026 cycle. New shorts established at the June 26 reconstitution close ($155–$158 distribution zone) are profitable at $192.53. The stop Day 1 clock is the key binary for shorts: June 29 close below $195 removes the structural long position from the order book and removes the primary short-squeeze risk. Shorts need to manage around NFP July 2 binary.",
+    "max_pain": "~$190–$198 (July expiry) — unchanged from June 26 estimate. Below $188 on a closing basis, dealer long-gamma disappears and the 'air pocket' to $183 (April correction low) opens. The stop zone ($195) remains the July expiry max-pain fulcrum.",
+    "notable_flow": "No Saturday trading — no flow data to report. Last significant flow: record $334.027B Nasdaq closing cross on June 26 Russell Reconstitution, executed in 1.63 seconds and fully absorbed by active institutional selling. IBIT (NVDA has no direct ETF equivalent but AI semiconductor flows are correlated) — watch Monday open for any NVDA-specific sector ETF positioning (XLK, SOXX, VGT) that may signal whether June 29 will see continuation selling or stabilization."
+  },
+  "what_traders_are_doing": "SATURDAY STOP DAY 1 PROTOCOL — JUNE 29 IS THE BINARY SESSION: (1) No action required today (Saturday — US markets closed); hold existing position at current parameters; (2) June 29 open watch: premarket NVDA above $197 = favorable setup for stop reset; below $193 = heightened stop trigger risk on the session close; (3) Do NOT add NVDA at any level before June 29 close resolves the stop — the Stop Day 1 clock means adding increases exposure precisely at the moment the framework may mandate exit; (4) If June 29 closes above $195: stop resets to inactive; medium conviction HOLD resumes; next add framework requires SPX > 7,460 AND VIX < 17 simultaneously; (5) If June 29 closes below $195: FULL EXIT per two-close stop protocol; execute exit at June 29 close or June 30 open if overnight gap exacerbates; (6) Do NOT hold through NFP July 2 with an unresolved stop trigger — the NFP binary into a 3-day holiday gap creates the worst possible macro context for managing a stop-risk position; (7) Q2 FY27 earnings (~Aug 26, $91B revenue guide) is the structural re-entry window if stop triggers; SK Hynix ADR July 10 confirmation validates the HBM4 demand underlying the NVDA bull case for Q2.",
+  "news": [
+    {
+      "label": "★ STOP DAY 1 PROTOCOL IN FORCE — June 26 close $192.53 < $195 two-close stop threshold; second consecutive close below $195 on June 29 = FULL EXIT mandatory. No weekend development changes the stop framework. Last traded price $192.53 (June 26, −2.20%). US markets closed June 27 (Saturday).",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "★ SK Hynix confirms Nasdaq ADR listing for July 10 (new share listing July 29); $29.4B offering (17.79M new shares); board resolution June 24. If fully subscribed, largest ADR offering in history, surpassing Alibaba's $21.8B 2014 IPO. HBM4 supply chain validation — SK Hynix is NVDA's primary HBM4 supplier for the Vera Rubin Blackwell platform. The ADR announcement directly confirms institutional conviction in HBM demand.",
+      "url": "https://www.techtimes.com/articles/318997/20260625/sk-hynix-confirms-nasdaq-listing-seeking-29-billion-record-adr-offering.htm",
+      "source": "TechTimes",
+      "sentiment": "positive"
+    },
+    {
+      "label": "VIX marginally compressed to ~18.41 (from 18.89 June 26 close) — still 1.41 pts above the 17 regime clearance gate. DXY 101.27. 10Y yield ~4.38% (stable). No US equity catalyst over the weekend capable of gapping SPX above 7,460. Sixth consecutive session with all three regime gates breached heading into Monday June 29.",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/",
+      "source": "Yahoo Finance / CBOE",
+      "sentiment": "negative"
+    },
+    {
+      "label": "NFP June report Thursday July 2 (markets closed July 3, Independence Day): consensus +172K NFP, 4.3% unemployment, +0.3% wages MoM. Fed Chair Warsh speaks July 1 (Portugal, 9:30 AM ET). The NFP binary and holiday gap define the macro landscape for the week of June 29 — stop resolution on June 29 is the prerequisite for any NFP positioning.",
+      "url": "https://www.cnbc.com/2026/06/26/stock-market-next-week-outlook-for-june-29-july-3-2026.html",
+      "source": "CNBC",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Brent crude ~$71–72 (stable from June 26 close of $71.99) — Hormuz drone strike reversal fully absorbed; no new escalation over the weekend. Iran ceasefire formally signed June 17. Oil disinflation narrative preserved: Brent below $75 limits the PCE upside risk that would cement BofA's three-hike framework. Net positive for NVDA in the 30Y/rate framework but insufficient to clear VIX below 17.",
+      "url": "https://finance.yahoo.com/quote/BZ%3DF/",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVDA analyst consensus: 58 Buy / 1 Sell; 12-month price target ~$299–$303 (+55% from $192.53). Micron $50B Q4 HBM4 guide intact. AAPL/MSFT consumer hardware price increases citing memory costs remain valid demand confirmation signals. The fundamental bull case is structurally unchanged by the technical stop framework and KOSPI circuit-breaker events.",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance / Street consensus",
+      "sentiment": "positive"
+    }
+  ],
+  "outlook": {
+    "short_term": "June 29 (Monday) is the sole focus. The weekend produced no catalyst capable of gapping NVDA decisively above $195 at the open. Three scenarios: (A) NVDA opens above $197 June 29 → favorable stop reset setup; if close also above $195, stop resets to inactive; medium conviction HOLD resumes; (B) NVDA opens $193–$196 → stop resolution ambiguous until close; do NOT add intraday; (C) NVDA opens below $193 → gap-down into stop zone; if close below $195, FULL EXIT triggered (Day 2 = two consecutive closes below $195). NFP July 2 binary creates the worst possible context for holding an unresolved stop trigger into the holiday weekend. If stop triggers June 29, exit before NFP.",
+    "long_term": "Structural thesis at maximum conviction. SK Hynix ADR Nasdaq July 10 listing directly validates HBM4 demand (the memory architecture underlying NVDA's entire GB200/Vera Rubin platform). Micron $50B Q4 HBM4 guide + AAPL/MSFT memory pass-through confirms demand at OEM tier. Q2 FY27 earnings (~Aug 26, $91B revenue guidance) is the next primary catalyst window. Analyst consensus PT $299–$303 (+55% from $192.53). The fundamental premium is intact; the technical/positioning regime is not aligned for adding. Re-entry framework post-stop: SPX > 7,460 AND VIX < 17 simultaneously + NVDA > $205 on above-average volume."
+  },
+  "bull_case": [
+    "SK Hynix ADR Nasdaq July 10 listing confirmed — the $29.4B offering is the single most significant validation of HBM4 institutional demand since Micron's $50B Q4 guide; underwriters BofA/Goldman/Citigroup/JPMorgan collectively represent the institutional confidence in the HBM supply chain that directly feeds NVDA's Vera Rubin Blackwell platform; this structural positive is not yet priced into NVDA at $192.53 and represents the primary re-entry catalyst alongside Q2 FY27 earnings",
+    "Oil Brent stable at $71–72 (Hormuz normalization holding; no new escalation over the weekend) preserves the disinflation narrative that limits 30Y below 5.00%; if NFP July 2 prints Goldilocks (+140–180K, wages +0.2–0.3%), BofA's three-hike framework loses its tightest anchor and VIX could compress below 17 — clearing the regime gate for the first time since June 18",
+    "June 29 open positioning: if Asian markets (Nikkei, KOSPI) stabilize on the SK Hynix ADR positive catalyst overnight, the risk-on read-through to US premarket could gap NVDA toward $197–$200, making the stop reset scenario (B) the base case rather than a tail scenario; a +2.4% gap-up from $192.53 would be well within normal Monday reconstitution-aftermath volatility"
+  ],
+  "bear_case": [
+    "Stop Day 1 is live with no weekend recovery: six consecutive sessions with all three regime gates breached + the June 26 Russell Reconstitution failure (largest passive buying event in Nasdaq history producing a LOWER close) = the structural institutional selling overhang is measured in hundreds of billions; one more close below $195 on June 29 forces the full exit and removes the primary structural long position from the order book",
+    "NFP July 2 binary amplifies the stop Day 1 risk: if June 29 closes just below $195 (Day 2 of two-close stop), the position is forced to exit heading into the NFP binary on July 2 with markets closed July 3 — the holiday gap means any adverse NFP surprise arrives July 7 with full force and no ability to hedge over the July 4–6 weekend; this makes holding through an unresolved stop trigger into NFP the highest-risk possible position configuration",
+    "The reconstitution distribution ceiling is now established at $202.17 (June 26 open = highest price since the reconstitution event was absorbed) — active sellers waited with $334B+ of supply above $202; any attempted rally toward $202 before Q2 earnings faces the institutional overhang that sold an unprecedented passive bid in a single session; the June 29 binary outcome (stop reset or stop trigger) is the only lever available before Q2 earnings"
+  ],
+  "key_levels": [
+    { "label": "All-time high (May 14, 2026)", "level": "$236.54", "kind": "resistance" },
+    { "label": "200-DMA — bull/bear regime line", "level": "~$213", "kind": "resistance" },
+    { "label": "50-DMA — first resistance on any bounce", "level": "~$207", "kind": "resistance" },
+    { "label": "Regime add trigger (SPX > 7,460 + VIX < 17 required simultaneously)", "level": "$205", "kind": "resistance" },
+    { "label": "Russell Reconstitution open (June 26 session high — confirmed distribution ceiling)", "level": "$202.17", "kind": "resistance" },
+    { "label": "June 25 confirmed close", "level": "$196.87", "kind": "resistance" },
+    { "label": "★ STOP ZONE — two-close basis; STOP DAY 1 ACTIVATED on June 26 close $192.53", "level": "$195", "kind": "support" },
+    { "label": "★ June 26 confirmed close / last traded price (STOP DAY 1)", "level": "$192.53", "kind": "pivot" },
+    { "label": "Re-base zone — potential accumulation on SPX regime clearance", "level": "$188–$192", "kind": "support" },
+    { "label": "June consolidation zone / prior gap fill", "level": "$185", "kind": "support" },
+    { "label": "April correction low — structural backstop", "level": "$183", "kind": "support" }
+  ],
+  "catalysts": [
+    { "date": "2026-06-29", "label": "★ BINARY SESSION — STOP DAY 2 vs. STOP RESET: June 29 close below $195 = FULL EXIT (two-close stop triggered, Day 2 confirmed); June 29 close above $195 = stop resets to inactive, medium conviction HOLD resumes. No add before this session resolves.", "importance": "high" },
+    { "date": "2026-07-02", "label": "June Non-Farm Payrolls: consensus +172K, 4.3% UE, +0.3% wages; markets closed July 3; Fed Chair Warsh speaks July 1 (Portugal). Strong print (+200K) cements BofA three-hike framework into 3-day holiday gap; weak print (<130K) raises recession concerns. Both tails negative for NVDA in current regime.", "importance": "high" },
+    { "date": "2026-07-10", "label": "SK Hynix Nasdaq ADR listing — $29.4B offering (17.79M shares); largest ADR in history if fully subscribed; BofA/Goldman/Citigroup/JPMorgan as underwriters; positive read-through for HBM4 demand thesis underlying NVDA Vera Rubin platform.", "importance": "medium" },
+    { "date": "~2026-08-26", "label": "NVDA Q2 FY27 earnings — ~$91B revenue guidance; Vera Rubin ramp; HBM4E allocation (SK Hynix/Micron); gross margin trajectory; primary fundamental re-entry catalyst if stop triggers and position is exited.", "importance": "high" }
+  ],
+  "analysis": "## Technical analysis (Saturday June 27 — weekend review)\n\n**No trading June 27 (Saturday).** All levels and signals carry forward from the June 26 confirmed close.\n\n**Stop Day 1 status:** $192.53 (June 26 close) < $195 (two-close stop threshold). Day 1 active. Day 2 = June 29 close. Two consecutive closes below $195 = mandatory full exit.\n\n**Reconstitution failure signal (confirmed):** The June 26 $334.027B Nasdaq closing cross — the largest in exchange history — produced a lower close than the prior session. Active sellers absorbed every passive reconstitution bid. The $202.17 open is the confirmed distribution ceiling. This signal is the most bearish structural development in the current NVDA cycle and is unchanged by the weekend.\n\n**SK Hynix ADR (positive read-through):** ADR Nasdaq July 10 listing confirmed. The supply-chain validation does not change the technical framework but strengthens the fundamental re-entry thesis post-stop.\n\n**Regime:** SPX 7,354 (−106 pts below 7,460), VIX ~18.41 (above 17), DXY 101.27 (above 100). No weekend catalyst to clear any of the three gates. Sixth consecutive breach session.\n\n**June 29 setup:** The binary session will be determined by Asian premarket signals (Nikkei, KOSPI reaction to SK Hynix ADR positive) and US futures at Sunday evening open. A SK Hynix ADR-driven Asia rally could provide the gap-up needed for stop reset — but this is not guaranteed."
+}
