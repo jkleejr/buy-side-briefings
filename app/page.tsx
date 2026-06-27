@@ -11,18 +11,10 @@ import { todayET } from "@/lib/utils";
 import ForYouFeed from "@/components/for-you-feed";
 import VerdictCard from "@/components/verdict-card";
 import DecisionBar from "@/components/decision-bar";
-import MarketKpiStrip from "@/components/market-kpi-strip";
+import MarketPulseStrip from "@/components/market-pulse-strip";
 import RegimeRiskBars from "@/components/regime-risk-bars";
 import BriefingList from "@/components/briefing-list";
-import CryptoPanel from "@/components/crypto-panel";
-import SentimentPanel from "@/components/sentiment-panel";
-import SectorRotation from "@/components/sector-rotation";
 import FedPanel from "@/components/fed-panel";
-import CyclePanel from "@/components/cycle-panel";
-import UsIndicesPanel from "@/components/us-indices-panel";
-import MetalsPanel from "@/components/metals-panel";
-import GlobalMarketsPanel from "@/components/global-markets-panel";
-import UsPulsePanel from "@/components/us-pulse-panel";
 import CalendarPanel from "@/components/calendar-panel";
 import Panel from "@/components/panel";
 
@@ -102,14 +94,25 @@ export default function Home() {
       {/* The answer first: standing call, every desk, and the next catalyst. */}
       <DecisionBar verdict={verdict} desks={assetCalls} nextCatalyst={nextCatalyst} />
 
-      {/* At-a-glance market header — fills the top edge-to-edge, no dead space. */}
-      <MarketKpiStrip verdict={verdict} crypto={crypto} />
-
       <div className="grid auto-rows-min grid-cols-1 gap-1 lg:grid-cols-12">
+        {/* ===================== MARKET PULSE ===================== */}
+        {/* The chart-free tape that gates every call: the key numbers, then the
+            live regime triggers. Deep charts/context live on the dedicated
+            pages (/markets, /indices, /crypto, /metals), reachable from nav. */}
+        <SectionLabel title="Market Pulse" note="the tape that gates every call" />
+
+        <div className="lg:col-span-12">
+          <MarketPulseStrip verdict={verdict} crypto={crypto} />
+        </div>
+        {verdict && (
+          <div id="regime" className="scroll-mt-12 lg:col-span-12">
+            <RegimeRiskBars indicators={verdict.regime_risk} />
+          </div>
+        )}
+
         {/* ===================== TODAY'S CALL ===================== */}
         {/* The market verdict. Per-name standing calls live on each asset's own
-            dossier page (/nvidia, /bitcoin, /skhynix, /spacex), linked from nav
-            and the DecisionBar strip above — kept off the homepage by design. */}
+            dossier page, linked from nav and the DecisionBar strip above. */}
         <SectionLabel title="Today's Call" note="the market verdict" />
 
         {verdict ? (
@@ -126,57 +129,21 @@ export default function Home() {
           </div>
         )}
 
-        {/* ===================== MARKET CONTEXT ===================== */}
-        {/* The backdrop for any decision: indices, metals, world, crypto, and
-            the internals a desk scans before acting. */}
-        <SectionLabel title="Market Context" note="indices, world, crypto & the internals" />
+        {/* =================== WHAT'S AHEAD =================== */}
+        <SectionLabel title="What's Ahead" note="rates & the calendar to watch" />
 
-        <div className="lg:col-span-9">
-          <UsIndicesPanel />
-        </div>
-        <div className="lg:col-span-3">
-          <MetalsPanel />
-        </div>
-        <div className="lg:col-span-8">
-          <GlobalMarketsPanel />
-        </div>
-        <div className="lg:col-span-4">
-          <CryptoPanel />
-        </div>
-        <div className="lg:col-span-12">
-          <UsPulsePanel />
+        <div className="lg:col-span-7">
+          <CalendarPanel />
         </div>
         <div className="lg:col-span-5">
-          <SentimentPanel />
-        </div>
-        {verdict && (
-          <div id="regime" className="scroll-mt-12 lg:col-span-4">
-            <RegimeRiskBars indicators={verdict.regime_risk} />
-          </div>
-        )}
-        <div className="lg:col-span-3">
-          <CyclePanel />
-        </div>
-
-        {/* =================== MACRO & WHAT'S AHEAD =================== */}
-        <SectionLabel title="Macro & What's Ahead" note="rates, the cycle & the calendar to watch" />
-
-        {/* Sector spans 2 rows to sit beside both the Fed panel and the calendar. */}
-        <div className="lg:col-span-8">
           <FedPanel />
-        </div>
-        <div className="lg:col-span-4 lg:row-span-2">
-          <SectorRotation />
-        </div>
-        <div className="lg:col-span-8">
-          <CalendarPanel />
         </div>
 
         {/* ========================= BRIEFINGS ========================= */}
         <SectionLabel title="Latest Briefings" />
 
         <div className="lg:col-span-12">
-          <BriefingList items={briefings} limit={8} />
+          <BriefingList items={briefings} limit={6} />
         </div>
       </div>
     </div>
