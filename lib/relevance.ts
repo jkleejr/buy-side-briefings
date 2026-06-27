@@ -116,9 +116,11 @@ function toRelevance(d: AssetDaily): HolderRelevance {
     price: d.snapshot.price,
     changePct: d.snapshot.change_pct,
     currencySymbol: d.currency_symbol ?? "$",
-    holderLine: firstSentences(d.decision.rationale),
-    topBull: d.bull_case[0] ?? "",
-    topBear: d.bear_case[0] ?? "",
+    // Prefer the routine's purpose-written holder line; fall back to deriving
+    // it from the rationale and the bull/bear essays for older dossiers.
+    holderLine: d.so_what?.line?.trim() || firstSentences(d.decision.rationale),
+    topBull: d.so_what?.bull?.trim() || d.bull_case[0] || "",
+    topBear: d.so_what?.bear?.trim() || d.bear_case[0] || "",
     date: d.date,
   };
 }

@@ -317,6 +317,101 @@ function RelevanceCard({
   );
 }
 
+type BookDigestData = {
+  total: number;
+  uncoveredCount: number;
+  counts: Record<HolderRelevance["action"], number>;
+  pnl: { abs: number; n: number } | null;
+  standout: {
+    symbol: string;
+    href?: string;
+    action: HolderRelevance["action"];
+    conviction: HolderRelevance["conviction"];
+    line: string;
+  } | null;
+};
+
+/** Top-of-feed synthesis: the whole book in a glance. */
+function BookDigest({ d }: { d: BookDigestData }) {
+  const posture = (
+    [
+      ["BUY", d.counts.buy, "text-[var(--up)]"],
+      ["HOLD", d.counts.hold, "text-[var(--amber)]"],
+      ["SELL", d.counts.sell, "text-[var(--down)]"],
+      ["STAND ASIDE", d.counts.step_aside, "text-[var(--dim)]"],
+    ] as const
+  ).filter(([, n]) => n > 0);
+
+  return (
+    <div className="border border-[var(--amber-dim)] bg-black">
+      <div className="flex items-baseline justify-between border-b border-[var(--amber-dim)] px-2 py-1">
+        <span className="text-[9px] uppercase tracking-widest text-[var(--amber)]">
+          ▣ Your book today
+        </span>
+        <span className="text-[9px] tracking-widest text-[var(--dim)]">
+          {d.total} HOLDING{d.total === 1 ? "" : "S"}
+        </span>
+      </div>
+      <div className="space-y-1.5 px-2 py-1.5">
+        {/* posture */}
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-[11px]">
+          <span className="text-[9px] uppercase tracking-widest text-[var(--dim)]">posture</span>
+          {posture.map(([label, n, cls], i) => (
+            <span key={label} className="tabular-nums">
+              {i > 0 && <span className="mr-2 text-[var(--border-strong)]">·</span>}
+              <span className={`font-bold ${cls}`}>{n}</span>{" "}
+              <span className={cls}>{label}</span>
+            </span>
+          ))}
+          {d.uncoveredCount > 0 && (
+            <span className="text-[var(--dim)]">
+              <span className="mr-2 text-[var(--border-strong)]">·</span>
+              {d.uncoveredCount} no desk
+            </span>
+          )}
+        </div>
+
+        {/* aggregate unrealized P&L (USD positions with shares + cost basis) */}
+        {d.pnl && (
+          <div className="text-[11px]">
+            <span className="text-[9px] uppercase tracking-widest text-[var(--dim)]">
+              unrealized
+            </span>{" "}
+            <span className={`font-bold tabular-nums ${pctTone(d.pnl.abs)}`}>
+              {d.pnl.abs >= 0 ? "+" : "−"}${Math.abs(d.pnl.abs).toLocaleString("en-US", { maximumFractionDigits: 0 })}
+            </span>{" "}
+            <span className="text-[var(--dim)]">
+              across {d.pnl.n} position{d.pnl.n === 1 ? "" : "s"} with a cost basis
+            </span>
+          </div>
+        )}
+
+        {/* the one thing that wants attention */}
+        {d.standout && (
+          <div className="flex items-start gap-1.5 text-[11px] leading-snug">
+            <span className="shrink-0 text-[var(--amber)]">▶</span>
+            <span>
+              <span
+                className={`mr-1 border px-1 py-px text-[9px] font-bold tracking-widest ${actionClasses(d.standout.action)}`}
+              >
+                {ACTION_LABEL[d.standout.action]}
+              </span>
+              {d.standout.href ? (
+                <Link href={d.standout.href} className="font-bold text-[var(--foreground)] hover:underline">
+                  {d.standout.symbol}
+                </Link>
+              ) : (
+                <span className="font-bold text-[var(--foreground)]">{d.standout.symbol}</span>
+              )}{" "}
+              <span className="text-[var(--dim)]">{d.standout.line}</span>
+            </span>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function ForYouFeed({
   relevance,
   liteRelevance = [],
@@ -395,6 +490,83 @@ export default function ForYouFeed({
 
     return { chipsFor, bookMacro };
   }, [macroSignals, holdings]);
+
+  // Resolve a best price + currency per holding (dossier close, else live quote).
+  const resolved = useMemo(() => {
+    const m = new Map<string, { price: number | null; currency: string }>();
+    for (const { h, rel } of deep)
+      m.set(h.symbol.toUpperCase(), {
+        price: Number.isFinite(rel.price) ? rel.price : null,
+        currency: rel.currencySymbol,
+      });
+    for (const { h, rel } of lite)
+      m.set(h.symbol.toUpperCase(), {
+        price: Number.isFinite(rel.price) ? rel.price : quotes[rel.symbol]?.price ?? null,
+        currency: rel.currencySymbol,
+      });
+    for (const h of uncovered)
+      m.set(h.symbol.toUpperCase(), {
+        price: quotes[h.symbol.toUpperCase()]?.price ?? null,
+        currency: "$",
+      });
+    return m;
+  }, [deep, lite, uncovered, quotes]);
+
+  // Synthesize the whole book: posture mix, aggregate unrealized P&L, and the
+  // single most actionable call. The glance that reduces the rest to detail.
+  const digest = useMemo<BookDigestData>(() => {
+    const calls = [...deep, ...lite];
+    const counts: Record<HolderRelevance["action"], number> = {
+      buy: 0,
+      hold: 0,
+      sell: 0,
+      step_aside: 0,
+    };
+    for (const { rel } of calls) counts[rel.action] += 1;
+
+    const aRank: Record<HolderRelevance["action"], number> = {
+      sell: 3,
+      buy: 2,
+      step_aside: 1,
+      hold: 0,
+    };
+    const cRank: Record<HolderRelevance["conviction"], number> = { high: 3, medium: 2, low: 1 };
+    let standout: BookDigestData["standout"] = null;
+    let best = 0;
+    for (const { rel } of calls) {
+      if (aRank[rel.action] === 0) continue; // a plain hold isn't a callout
+      const score = aRank[rel.action] * 10 + cRank[rel.conviction];
+      if (score > best) {
+        best = score;
+        standout = {
+          symbol: rel.symbol,
+          href: rel.href,
+          action: rel.action,
+          conviction: rel.conviction,
+          line: rel.holderLine,
+        };
+      }
+    }
+
+    // Aggregate unrealized only across USD positions that have shares + basis.
+    let abs = 0;
+    let n = 0;
+    for (const h of holdings) {
+      if (h.costBasis == null || h.shares == null) continue;
+      const r = resolved.get(h.symbol.toUpperCase());
+      if (!r || r.price == null || r.currency !== "$") continue;
+      abs += (r.price - h.costBasis) * h.shares;
+      n += 1;
+    }
+
+    return {
+      total: holdings.length,
+      uncoveredCount: uncovered.length,
+      counts,
+      pnl: n > 0 ? { abs, n } : null,
+      standout,
+    };
+  }, [deep, lite, uncovered, holdings, resolved]);
 
   // Fetch live quotes for names without a dossier price: all uncovered, plus
   // any lite read missing a snapshot.
@@ -547,6 +719,9 @@ export default function ForYouFeed({
           </div>
         ) : (
           <>
+            {/* the glance: posture, P&L, the one thing to watch */}
+            <BookDigest d={digest} />
+
             {/* macro on your book — which active pressures touch your names */}
             {bookMacro.length > 0 && (
               <div className="border border-[var(--amber-dim)] bg-[rgba(255,165,0,0.04)]">

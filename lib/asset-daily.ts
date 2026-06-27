@@ -100,6 +100,20 @@ export type AssetDaily = {
     rationale: string;
   };
 
+  /**
+   * First-class holder-facing translation — the "so what for me?" written by
+   * the routine. When present the For You feed prefers these over deriving the
+   * holder line from `rationale` and the bull/bear essays. All optional and
+   * backward-compatible; older dossiers fall back to the derived version.
+   */
+  so_what?: {
+    /** One line: what today's call means for someone who holds this. */
+    line: string;
+    /** Tight one-liner each side (vs. the longer bull_case/bear_case essays). */
+    bull?: string;
+    bear?: string;
+  };
+
   snapshot: AssetSnapshot;
   positioning: Positioning;
   what_traders_are_doing: string;

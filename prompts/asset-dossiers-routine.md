@@ -115,7 +115,8 @@ the rest of the run.
 
 `asset, symbol, name, date, generated_at, is_seed, currency_symbol?, day_winner
 (bulls|bears|flat), day_summary, long_pnl?, short_pnl?, decision{action(buy|hold|
-sell), conviction(low|medium|high), horizon, rationale}, snapshot{price, change_pct,
+sell), conviction(low|medium|high), horizon, rationale}, so_what?{line, bull?, bear?},
+snapshot{price, change_pct,
 change_abs?, prev_close?, day_high?, day_low?, week52_high?, week52_low?, volume?,
 market_cap?, extra[]?}, positioning{iv?, iv_note?, put_call?, short_interest?,
 max_pain?, notable_flow?}, what_traders_are_doing, news[], outlook{short_term,
@@ -123,3 +124,11 @@ long_term}, bull_case[], bear_case[], key_levels[], catalysts[], analysis?`
 
 > Note: the positioning panel now tolerates `null` IV / put-call, so newly-listed
 > names (like SPCX) render cleanly without a fake options chain.
+
+> **so_what** (recommended on every dossier): write `so_what.line` as one plain
+> sentence answering "what does today's call mean if I hold this?" — no jargon,
+> the same register as the briefings. `so_what.bull` / `so_what.bear` are tight
+> one-liners (vs. the longer `bull_case` / `bear_case` essays). The home-page For
+> You feed prefers these; if omitted it falls back to the first sentence of
+> `rationale` and `bull_case[0]` / `bear_case[0]`. Lite dossiers don't need it —
+> their `rationale` + `bull` / `bear` already serve that role.

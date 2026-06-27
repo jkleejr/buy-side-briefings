@@ -17,8 +17,8 @@
   },
   "snapshot": {
     "price": 192.53,
-    "change_pct": 0.00,
-    "change_abs": 0.00,
+    "change_pct": 0,
+    "change_abs": 0,
     "prev_close": 192.53,
     "day_low": null,
     "day_high": null,
@@ -116,23 +116,88 @@
     "The reconstitution distribution ceiling is now established at $202.17 (June 26 open = highest price since the reconstitution event was absorbed) — active sellers waited with $334B+ of supply above $202; any attempted rally toward $202 before Q2 earnings faces the institutional overhang that sold an unprecedented passive bid in a single session; the June 29 binary outcome (stop reset or stop trigger) is the only lever available before Q2 earnings"
   ],
   "key_levels": [
-    { "label": "All-time high (May 14, 2026)", "level": "$236.54", "kind": "resistance" },
-    { "label": "200-DMA — bull/bear regime line", "level": "~$213", "kind": "resistance" },
-    { "label": "50-DMA — first resistance on any bounce", "level": "~$207", "kind": "resistance" },
-    { "label": "Regime add trigger (SPX > 7,460 + VIX < 17 required simultaneously)", "level": "$205", "kind": "resistance" },
-    { "label": "Russell Reconstitution open (June 26 session high — confirmed distribution ceiling)", "level": "$202.17", "kind": "resistance" },
-    { "label": "June 25 confirmed close", "level": "$196.87", "kind": "resistance" },
-    { "label": "★ STOP ZONE — two-close basis; STOP DAY 1 ACTIVATED on June 26 close $192.53", "level": "$195", "kind": "support" },
-    { "label": "★ June 26 confirmed close / last traded price (STOP DAY 1)", "level": "$192.53", "kind": "pivot" },
-    { "label": "Re-base zone — potential accumulation on SPX regime clearance", "level": "$188–$192", "kind": "support" },
-    { "label": "June consolidation zone / prior gap fill", "level": "$185", "kind": "support" },
-    { "label": "April correction low — structural backstop", "level": "$183", "kind": "support" }
+    {
+      "label": "All-time high (May 14, 2026)",
+      "level": "$236.54",
+      "kind": "resistance"
+    },
+    {
+      "label": "200-DMA — bull/bear regime line",
+      "level": "~$213",
+      "kind": "resistance"
+    },
+    {
+      "label": "50-DMA — first resistance on any bounce",
+      "level": "~$207",
+      "kind": "resistance"
+    },
+    {
+      "label": "Regime add trigger (SPX > 7,460 + VIX < 17 required simultaneously)",
+      "level": "$205",
+      "kind": "resistance"
+    },
+    {
+      "label": "Russell Reconstitution open (June 26 session high — confirmed distribution ceiling)",
+      "level": "$202.17",
+      "kind": "resistance"
+    },
+    {
+      "label": "June 25 confirmed close",
+      "level": "$196.87",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ STOP ZONE — two-close basis; STOP DAY 1 ACTIVATED on June 26 close $192.53",
+      "level": "$195",
+      "kind": "support"
+    },
+    {
+      "label": "★ June 26 confirmed close / last traded price (STOP DAY 1)",
+      "level": "$192.53",
+      "kind": "pivot"
+    },
+    {
+      "label": "Re-base zone — potential accumulation on SPX regime clearance",
+      "level": "$188–$192",
+      "kind": "support"
+    },
+    {
+      "label": "June consolidation zone / prior gap fill",
+      "level": "$185",
+      "kind": "support"
+    },
+    {
+      "label": "April correction low — structural backstop",
+      "level": "$183",
+      "kind": "support"
+    }
   ],
   "catalysts": [
-    { "date": "2026-06-29", "label": "★ BINARY SESSION — STOP DAY 2 vs. STOP RESET: June 29 close below $195 = FULL EXIT (two-close stop triggered, Day 2 confirmed); June 29 close above $195 = stop resets to inactive, medium conviction HOLD resumes. No add before this session resolves.", "importance": "high" },
-    { "date": "2026-07-02", "label": "June Non-Farm Payrolls: consensus +172K, 4.3% UE, +0.3% wages; markets closed July 3; Fed Chair Warsh speaks July 1 (Portugal). Strong print (+200K) cements BofA three-hike framework into 3-day holiday gap; weak print (<130K) raises recession concerns. Both tails negative for NVDA in current regime.", "importance": "high" },
-    { "date": "2026-07-10", "label": "SK Hynix Nasdaq ADR listing — $29.4B offering (17.79M shares); largest ADR in history if fully subscribed; BofA/Goldman/Citigroup/JPMorgan as underwriters; positive read-through for HBM4 demand thesis underlying NVDA Vera Rubin platform.", "importance": "medium" },
-    { "date": "~2026-08-26", "label": "NVDA Q2 FY27 earnings — ~$91B revenue guidance; Vera Rubin ramp; HBM4E allocation (SK Hynix/Micron); gross margin trajectory; primary fundamental re-entry catalyst if stop triggers and position is exited.", "importance": "high" }
+    {
+      "date": "2026-06-29",
+      "label": "★ BINARY SESSION — STOP DAY 2 vs. STOP RESET: June 29 close below $195 = FULL EXIT (two-close stop triggered, Day 2 confirmed); June 29 close above $195 = stop resets to inactive, medium conviction HOLD resumes. No add before this session resolves.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-02",
+      "label": "June Non-Farm Payrolls: consensus +172K, 4.3% UE, +0.3% wages; markets closed July 3; Fed Chair Warsh speaks July 1 (Portugal). Strong print (+200K) cements BofA three-hike framework into 3-day holiday gap; weak print (<130K) raises recession concerns. Both tails negative for NVDA in current regime.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-10",
+      "label": "SK Hynix Nasdaq ADR listing — $29.4B offering (17.79M shares); largest ADR in history if fully subscribed; BofA/Goldman/Citigroup/JPMorgan as underwriters; positive read-through for HBM4 demand thesis underlying NVDA Vera Rubin platform.",
+      "importance": "medium"
+    },
+    {
+      "date": "~2026-08-26",
+      "label": "NVDA Q2 FY27 earnings — ~$91B revenue guidance; Vera Rubin ramp; HBM4E allocation (SK Hynix/Micron); gross margin trajectory; primary fundamental re-entry catalyst if stop triggers and position is exited.",
+      "importance": "high"
+    }
   ],
-  "analysis": "## Technical analysis (Saturday June 27 — weekend review)\n\n**No trading June 27 (Saturday).** All levels and signals carry forward from the June 26 confirmed close.\n\n**Stop Day 1 status:** $192.53 (June 26 close) < $195 (two-close stop threshold). Day 1 active. Day 2 = June 29 close. Two consecutive closes below $195 = mandatory full exit.\n\n**Reconstitution failure signal (confirmed):** The June 26 $334.027B Nasdaq closing cross — the largest in exchange history — produced a lower close than the prior session. Active sellers absorbed every passive reconstitution bid. The $202.17 open is the confirmed distribution ceiling. This signal is the most bearish structural development in the current NVDA cycle and is unchanged by the weekend.\n\n**SK Hynix ADR (positive read-through):** ADR Nasdaq July 10 listing confirmed. The supply-chain validation does not change the technical framework but strengthens the fundamental re-entry thesis post-stop.\n\n**Regime:** SPX 7,354 (−106 pts below 7,460), VIX ~18.41 (above 17), DXY 101.27 (above 100). No weekend catalyst to clear any of the three gates. Sixth consecutive breach session.\n\n**June 29 setup:** The binary session will be determined by Asian premarket signals (Nikkei, KOSPI reaction to SK Hynix ADR positive) and US futures at Sunday evening open. A SK Hynix ADR-driven Asia rally could provide the gap-up needed for stop reset — but this is not guaranteed."
+  "analysis": "## Technical analysis (Saturday June 27 — weekend review)\n\n**No trading June 27 (Saturday).** All levels and signals carry forward from the June 26 confirmed close.\n\n**Stop Day 1 status:** $192.53 (June 26 close) < $195 (two-close stop threshold). Day 1 active. Day 2 = June 29 close. Two consecutive closes below $195 = mandatory full exit.\n\n**Reconstitution failure signal (confirmed):** The June 26 $334.027B Nasdaq closing cross — the largest in exchange history — produced a lower close than the prior session. Active sellers absorbed every passive reconstitution bid. The $202.17 open is the confirmed distribution ceiling. This signal is the most bearish structural development in the current NVDA cycle and is unchanged by the weekend.\n\n**SK Hynix ADR (positive read-through):** ADR Nasdaq July 10 listing confirmed. The supply-chain validation does not change the technical framework but strengthens the fundamental re-entry thesis post-stop.\n\n**Regime:** SPX 7,354 (−106 pts below 7,460), VIX ~18.41 (above 17), DXY 101.27 (above 100). No weekend catalyst to clear any of the three gates. Sixth consecutive breach session.\n\n**June 29 setup:** The binary session will be determined by Asian premarket signals (Nikkei, KOSPI reaction to SK Hynix ADR positive) and US futures at Sunday evening open. A SK Hynix ADR-driven Asia rally could provide the gap-up needed for stop reset — but this is not guaranteed.",
+  "so_what": {
+    "line": "If you hold NVDA, the call is do-nothing into Monday: HOLD on low conviction with the $195 stop-loss clock already running — you are waiting on the next session to tell you whether the uptrend resets or it is time to trim, not adding here.",
+    "bull": "OEMs raising hardware prices to cover memory costs is real demand confirmation — the AI-memory thesis you own NVDA for is intact.",
+    "bear": "Price closed below the $195 stop line with the regime gates still breached; one more weak close and the discipline is to trim, not add."
+  }
 }
