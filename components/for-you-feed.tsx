@@ -2,10 +2,10 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import type { SymbolSearchResult, TradeQuote } from "@/lib/markets";
+import type { SymbolSearchResult, TradeQuote, CompanyProfile } from "@/lib/markets";
 import type { HolderRelevance } from "@/lib/relevance";
 import type { MacroSignal } from "@/lib/macro-signals";
-import { FACTOR_META, materialFactors, type Factor } from "@/lib/factors";
+import { FACTOR_META, materialFactors, factorsFromProfile, type Factor } from "@/lib/factors";
 import { useHoldings, type Holding } from "@/lib/holdings";
 import { formatPct } from "@/lib/utils";
 import Panel from "./panel";
@@ -161,6 +161,34 @@ function PnlLine({
       {priceNote && <span className="text-[var(--dim)]"> · {priceNote}</span>}
     </div>
   );
+}
+
+// A one-line, data-grounded read for an uncovered name: sector/industry + beta,
+// plus which of today's active macro pressures actually touch it.
+function explainUncovered(
+  profile: CompanyProfile | undefined,
+  activeChips: Factor[],
+): string | null {
+  if (!profile || (!profile.sector && !profile.industry)) return null;
+  const desc = [profile.sector, profile.industry].filter(Boolean).join(" · ");
+  const betaNote =
+    profile.beta == null
+      ? null
+      : profile.beta >= 1.3
+        ? `high-beta (β ${profile.beta.toFixed(1)})`
+        : profile.beta <= 0.8
+          ? `low-beta (β ${profile.beta.toFixed(1)})`
+          : `β ${profile.beta.toFixed(1)}`;
+  const head = [desc, betaNote].filter(Boolean).join(" · ");
+  if (activeChips.length) {
+    const names = activeChips.map((f) => FACTOR_META[f].pressureHeadline.toLowerCase());
+    const joined =
+      names.length === 1
+        ? names[0]
+        : `${names.slice(0, -1).join(", ")} & ${names[names.length - 1]}`;
+    return `${head} — today's ${joined} weigh on it.`;
+  }
+  return `${head} — macro is quiet for it today.`;
 }
 
 /** Small amber pressure chips for the macro factors hitting a given name. */
@@ -430,6 +458,9 @@ export default function ForYouFeed({
   const [searching, setSearching] = useState(false);
 
   const [quotes, setQuotes] = useState<Record<string, TradeQuote>>({});
+  // Sector / industry / beta per uncovered symbol — drives a generic factor
+  // read so any held ticker gets an explanation, not just the curated names.
+  const [profiles, setProfiles] = useState<Record<string, CompanyProfile>>({});
   const [editing, setEditing] = useState<string | null>(null);
   // Symbols the user has asked for a desk on (mirrored to localStorage so the
   // ask survives a read-only prod runtime that can't write the queue file).
@@ -467,6 +498,18 @@ export default function ForYouFeed({
     return { deep: dp, lite: lt, uncovered: unc };
   }, [holdings, relevance, liteRelevance]);
 
+  // A name's factor exposure: the curated map first, else inferred from its
+  // sector/beta profile. This is what lets any held ticker get a macro read.
+  const factorsForSym = useCallback(
+    (symbol: string): Factor[] => {
+      const curated = materialFactors(symbol);
+      if (curated.length) return curated;
+      const p = profiles[symbol.toUpperCase()];
+      return p ? factorsFromProfile(p) : [];
+    },
+    [profiles],
+  );
+
   // Cross active macro pressures with each holding's factor exposure.
   const { chipsFor, bookMacro } = useMemo(() => {
     const pressures = macroSignals.filter((s) => s.state === "pressure");
@@ -475,21 +518,21 @@ export default function ForYouFeed({
     const activeFactors = new Set(pressures.map((s) => s.factor));
 
     const chipsFor = (symbol: string): Factor[] =>
-      materialFactors(symbol).filter((f) => activeFactors.has(f));
+      factorsForSym(symbol).filter((f) => activeFactors.has(f));
 
     const bookMacro = Array.from(activeFactors)
       .map((factor) => ({
         factor,
         note: noteByFactor.get(factor) ?? "",
         names: holdings
-          .filter((h) => materialFactors(h.symbol).includes(factor))
+          .filter((h) => factorsForSym(h.symbol).includes(factor))
           .map((h) => h.symbol.toUpperCase()),
       }))
       .filter((row) => row.names.length > 0)
       .sort((a, b) => b.names.length - a.names.length);
 
     return { chipsFor, bookMacro };
-  }, [macroSignals, holdings]);
+  }, [macroSignals, holdings, factorsForSym]);
 
   // Resolve a best price + currency per holding (dossier close, else live quote).
   const resolved = useMemo(() => {
@@ -598,6 +641,39 @@ export default function ForYouFeed({
       cancelled = true;
     };
   }, [quoteSyms]);
+
+  // Fetch sector/beta profiles for uncovered names not already in the curated
+  // factor map — that's what gives them a real macro read + explanation.
+  const profileSyms = useMemo(
+    () =>
+      uncovered
+        .map((h) => h.symbol.toUpperCase())
+        .filter((sym) => materialFactors(sym).length === 0 && !profiles[sym]),
+    [uncovered, profiles],
+  );
+
+  useEffect(() => {
+    if (profileSyms.length === 0) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(`/api/profile?symbols=${encodeURIComponent(profileSyms.join(","))}`, {
+          cache: "no-store",
+        });
+        if (!res.ok) return;
+        const data: { profiles: CompanyProfile[] } = await res.json();
+        if (cancelled) return;
+        const map: Record<string, CompanyProfile> = {};
+        for (const p of data.profiles) map[p.symbol.toUpperCase()] = p;
+        setProfiles((prev) => ({ ...prev, ...map }));
+      } catch {
+        /* ignore — row just falls back to "no desk yet" */
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [profileSyms]);
 
   // search (debounced)
   useEffect(() => {
@@ -784,6 +860,7 @@ export default function ForYouFeed({
                   const p = pnl(q?.price, h);
                   const asked = requested.has(h.symbol.toUpperCase());
                   const chips = chipsFor(h.symbol);
+                  const explanation = explainUncovered(profiles[h.symbol.toUpperCase()], chips);
                   return (
                     <div key={h.symbol} className="px-2 py-1.5">
                       <div className="flex items-baseline gap-2 text-[12px]">
@@ -809,6 +886,11 @@ export default function ForYouFeed({
                           ✕
                         </button>
                       </div>
+                      {explanation && (
+                        <div className="mt-1 text-[11px] leading-snug text-[var(--foreground)]">
+                          {explanation}
+                        </div>
+                      )}
                       <div className="mt-0.5 flex items-baseline gap-2 text-[10px]">
                         {p && (
                           <span className={`tabular-nums ${pctTone(p.pct)}`}>

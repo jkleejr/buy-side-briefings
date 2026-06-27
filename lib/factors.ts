@@ -123,3 +123,36 @@ export function materialFactors(symbol: string): Factor[] {
 export function hasFactorModel(symbol: string): boolean {
   return canonicalSymbol(symbol) in EXPOSURE;
 }
+
+// ---------------------------------------------------------------------------
+// Generic fallback: derive factors from a name's sector + beta (via Yahoo) so
+// ANY held ticker gets a real macro read, not just the curated names above.
+// ---------------------------------------------------------------------------
+
+const SECTOR_FACTORS: Record<string, Factor[]> = {
+  Technology: ["risk", "rates"],
+  "Communication Services": ["risk", "rates"],
+  "Consumer Cyclical": ["risk", "rates"],
+  "Real Estate": ["rates", "risk"],
+  "Financial Services": ["rates", "risk"],
+  Energy: ["oil", "risk"],
+  "Basic Materials": ["oil", "dollar"],
+  Industrials: ["risk"],
+  Healthcare: ["risk"],
+  Utilities: ["rates"],
+  "Consumer Defensive": [], // defensive — low macro sensitivity
+};
+
+export type ProfileLike = {
+  sector?: string | null;
+  industry?: string | null;
+  beta?: number | null;
+};
+
+/** Factor exposure inferred from a company's sector and beta. */
+export function factorsFromProfile(p: ProfileLike): Factor[] {
+  const base = p.sector && SECTOR_FACTORS[p.sector] ? [...SECTOR_FACTORS[p.sector]] : ["risk"];
+  // A high-beta name is risk-on whatever its sector; make sure that shows.
+  if (p.beta != null && p.beta >= 1.2 && !base.includes("risk")) base.push("risk");
+  return Array.from(new Set(base)) as Factor[];
+}

@@ -371,6 +371,49 @@ export async function getTradeQuotes(symbols: string[]): Promise<TradeQuote[]> {
   }
 }
 
+// ---- Company profile (sector / industry / beta) ----------------------------
+
+export type CompanyProfile = {
+  symbol: string;
+  name: string | null;
+  sector: string | null;
+  industry: string | null;
+  beta: number | null;
+};
+
+/**
+ * Sector / industry / beta for a list of symbols, via Yahoo quoteSummary. Lets
+ * the For You feed generate a real factor-based read for ANY ticker the user
+ * holds — not just the hand-curated names. Per-symbol try/catch; never throws.
+ */
+export async function getProfiles(symbols: string[]): Promise<CompanyProfile[]> {
+  const list = Array.from(
+    new Set(symbols.map((s) => s.trim().toUpperCase()).filter(Boolean)),
+  ).slice(0, 20);
+  return Promise.all(
+    list.map(async (symbol): Promise<CompanyProfile> => {
+      try {
+        const sum = (await yahooFinance.quoteSummary(symbol, {
+          modules: ["assetProfile", "summaryDetail", "price"],
+        })) as {
+          assetProfile?: { sector?: string; industry?: string };
+          summaryDetail?: { beta?: number };
+          price?: { shortName?: string; longName?: string };
+        };
+        return {
+          symbol,
+          name: sum?.price?.shortName ?? sum?.price?.longName ?? null,
+          sector: sum?.assetProfile?.sector ?? null,
+          industry: sum?.assetProfile?.industry ?? null,
+          beta: typeof sum?.summaryDetail?.beta === "number" ? sum.summaryDetail.beta : null,
+        };
+      } catch {
+        return { symbol, name: null, sector: null, industry: null, beta: null };
+      }
+    }),
+  );
+}
+
 // ---- Symbol search (ticker or company name) for the watchlist add box ------
 
 export type SymbolSearchResult = {
