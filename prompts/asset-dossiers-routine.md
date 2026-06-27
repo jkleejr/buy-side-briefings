@@ -71,6 +71,46 @@ Also add **Micron** and **Nebius** to the asset loop each US trading day:
 Everything else (schema in `lib/asset-daily.ts`, the `data/asset-daily/<asset>/`
 layout, commit + push to `deploy`) is identical to the existing assets.
 
+## Lite coverage queue — desks requested from the For You feed
+
+The home-page "For You" feed lets a user add any ticker. When they ask for
+coverage on a name we don't run a deep desk for, it lands in
+`data/coverage-queue.json` as `{ "symbol", "name", "requestedAt", "status":
+"queued" }`. Each run, after the deep desks above:
+
+1. Read `data/coverage-queue.json`. For every entry with `status: "queued"`,
+   write a **lite dossier** to `data/asset-lite/<SYMBOL>.json` (uppercase
+   symbol, e.g. `data/asset-lite/PLTR.json`), then flip that entry's `status`
+   to `"lite"`.
+2. Re-write the lite dossier for any name whose file already exists and whose
+   queue `status` is `"lite"`, so the read stays current (same daily cadence).
+
+A lite dossier is intentionally lighter than a deep one — no positioning,
+levels, or dedicated page. Shape (see `lib/lite-dossier.ts`):
+
+```
+{
+  "symbol": "PLTR",                 // uppercase, matches the holding
+  "name": "Palantir Technologies",
+  "date": "<YYYY-MM-DD>",
+  "generated_at": "<ISO>",
+  "is_seed": false,                 // true only for placeholder seeds
+  "decision": { "action": "buy|hold|sell|step_aside",
+                "conviction": "low|medium|high",
+                "rationale": "1-2 plain sentences — the so-what for a holder" },
+  "bull": "the single strongest bull point",
+  "bear": "the single strongest bear point",
+  "snapshot": { "price": 0, "change_pct": 0, "currency_symbol": "$" },  // optional
+  "factors": ["rates","risk","dollar","crypto","oil"]   // optional; the subset that moves it
+}
+```
+
+Keep `rationale` honest: if a name is outside competence, say so and set a
+low-conviction `hold`/`step_aside` rather than inventing a view. Promotion to a
+deep desk (the table above) is a human call, never automatic. Commit
+`data/asset-lite/` and the updated `data/coverage-queue.json` to `deploy` with
+the rest of the run.
+
 ## Schema fields (from lib/asset-daily.ts)
 
 `asset, symbol, name, date, generated_at, is_seed, currency_symbol?, day_winner

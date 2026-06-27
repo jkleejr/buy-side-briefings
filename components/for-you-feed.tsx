@@ -12,12 +12,15 @@ import Panel from "./panel";
 
 // ---------------------------------------------------------------------------
 // "For You" — the so-what-for-me layer. Reads the user's holdings (this browser)
-// and, for every covered name, shows the desk's standing call distilled to one
-// holder-facing line + the strongest bull/bear point, plus a P&L read when a
-// cost basis is set. Uncovered holdings get a slim live-price row (deeper
-// coverage lands in a later phase). Pure client composition over data the build
-// already produced — nothing here can break the static build.
+// and answers what today means for THEIR book, in three tiers:
+//   • deep desk  — a hand-built daily dossier (NVDA, BTC, …): full call + P&L
+//   • lite desk  — a routine-written read for a requested name: call + bull/bear
+//   • uncovered  — live price + macro factor chips, with a "request a desk" ask
+// Pure client composition over data the build already produced; the request
+// button posts to the coverage queue the daily routine reads.
 // ---------------------------------------------------------------------------
+
+const REQUESTS_KEY = "bsb_coverage_requests_v1";
 
 const ACTION_LABEL: Record<HolderRelevance["action"], string> = {
   buy: "BUY",
@@ -40,7 +43,7 @@ function actionClasses(action: HolderRelevance["action"]): string {
 }
 
 function pctTone(n: number | null | undefined): string {
-  return n == null
+  return n == null || !Number.isFinite(n)
     ? "text-[var(--dim)]"
     : n > 0
       ? "text-[var(--up)]"
@@ -62,10 +65,10 @@ function fmtPrice(n: number, sym: string): string {
   return `${sym}${n.toLocaleString("en-US", { maximumFractionDigits: 2 })}`;
 }
 
-// P&L vs the user's cost basis, using the best price we have. Covered names use
-// the dossier's last close (labeled by date); uncovered use a live quote.
+// P&L vs the user's cost basis, using the best price available.
 function pnl(price: number | null | undefined, h: Holding) {
-  if (price == null || h.costBasis == null || h.costBasis <= 0) return null;
+  if (price == null || !Number.isFinite(price) || h.costBasis == null || h.costBasis <= 0)
+    return null;
   const pct = ((price - h.costBasis) / h.costBasis) * 100;
   const abs = h.shares != null ? (price - h.costBasis) * h.shares : null;
   return { pct, abs };
@@ -133,12 +136,12 @@ function SizeEditor({
 
 function PnlLine({
   price,
-  date,
+  priceNote,
   h,
   sym,
 }: {
-  price: number | undefined;
-  date?: string;
+  price: number | null | undefined;
+  priceNote?: string;
   h: Holding;
   sym: string;
 }) {
@@ -155,7 +158,7 @@ function PnlLine({
           {fmtPrice(Math.abs(p.abs), sym)}
         </span>
       )}
-      {date && <span className="text-[var(--dim)]"> · at {date} close</span>}
+      {priceNote && <span className="text-[var(--dim)]"> · {priceNote}</span>}
     </div>
   );
 }
@@ -178,11 +181,149 @@ function FactorChips({ factors }: { factors: Factor[] }) {
   );
 }
 
+/** Full "so what" card — shared by deep desks and lite reads. */
+function RelevanceCard({
+  rel,
+  h,
+  chips,
+  liveQuote,
+  onRemove,
+  isEditing,
+  onEdit,
+  onCloseEdit,
+  onSaveSize,
+}: {
+  rel: HolderRelevance;
+  h: Holding;
+  chips: Factor[];
+  liveQuote?: TradeQuote;
+  onRemove: () => void;
+  isEditing: boolean;
+  onEdit: () => void;
+  onCloseEdit: () => void;
+  onSaveSize: (patch: Partial<Pick<Holding, "shares" | "costBasis">>) => void;
+}) {
+  const isLite = rel.tier === "lite";
+  // Deep desks carry a last-close from the dossier; lite reads may need a quote.
+  const price = Number.isFinite(rel.price) ? rel.price : liveQuote?.price ?? null;
+  const changePct = Number.isFinite(rel.changePct)
+    ? rel.changePct
+    : liveQuote?.changePct ?? null;
+  const win = winnerChip(rel.dayWinner);
+  const priceNote = isLite
+    ? `lite read · ${rel.date}`
+    : `at ${rel.date} close`;
+
+  return (
+    <div className="border border-[var(--border)] bg-black p-2.5">
+      {/* header: ticker + standing call */}
+      <div className="flex items-baseline justify-between gap-2">
+        {rel.href ? (
+          <Link
+            href={rel.href}
+            className="flex items-baseline gap-1.5 hover:underline"
+            title={`Open the ${rel.name} desk`}
+          >
+            <span className="text-[13px] font-bold text-[var(--foreground)]">{rel.symbol}</span>
+            <span className="truncate text-[9px] uppercase tracking-widest text-[var(--dim)]">
+              {rel.name}
+            </span>
+          </Link>
+        ) : (
+          <span className="flex items-baseline gap-1.5">
+            <span className="text-[13px] font-bold text-[var(--foreground)]">{rel.symbol}</span>
+            <span className="truncate text-[9px] uppercase tracking-widest text-[var(--dim)]">
+              {rel.name}
+            </span>
+          </span>
+        )}
+        <div className="flex shrink-0 items-center gap-1.5">
+          {isLite && (
+            <span className="border border-[var(--border-strong)] px-1 py-0.5 text-[8.5px] font-bold tracking-widest text-[var(--dim)]">
+              LITE
+            </span>
+          )}
+          <span
+            className={`border px-1.5 py-0.5 text-[10px] font-bold tracking-widest ${actionClasses(rel.action)}`}
+          >
+            {ACTION_LABEL[rel.action]}
+          </span>
+          <button
+            type="button"
+            onClick={onRemove}
+            title={`Remove ${rel.symbol}`}
+            className="text-[11px] text-[var(--dim)] hover:text-[var(--down)]"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+
+      {/* price + day read */}
+      <div className="mt-1 flex items-baseline gap-2">
+        <span className="text-[14px] font-bold tabular-nums text-[var(--foreground)]">
+          {price != null ? fmtPrice(price, rel.currencySymbol) : "—"}
+        </span>
+        <span className={`text-[11px] font-semibold tabular-nums ${pctTone(changePct)}`}>
+          {changePct == null ? "—" : formatPct(changePct)}
+        </span>
+        {!isLite && (
+          <span className={`ml-auto text-[9px] tracking-widest ${win.cls}`}>{win.label}</span>
+        )}
+      </div>
+
+      {/* macro pressures hitting this name today */}
+      {chips.length > 0 && (
+        <div className="mt-1.5">
+          <FactorChips factors={chips} />
+        </div>
+      )}
+
+      {/* the so-what */}
+      <div className="mt-1.5 text-[12px] leading-snug text-[var(--foreground)]">
+        {rel.holderLine}
+      </div>
+
+      {/* strongest bull / bear */}
+      <div className="mt-2 space-y-1 text-[10.5px] leading-snug">
+        {rel.topBull && (
+          <div className="flex gap-1.5">
+            <span className="shrink-0 font-bold text-[var(--up)]">BULL</span>
+            <span className="text-[var(--dim)]">{rel.topBull}</span>
+          </div>
+        )}
+        {rel.topBear && (
+          <div className="flex gap-1.5">
+            <span className="shrink-0 font-bold text-[var(--down)]">BEAR</span>
+            <span className="text-[var(--dim)]">{rel.topBear}</span>
+          </div>
+        )}
+      </div>
+
+      {/* P&L + size editor */}
+      <PnlLine price={price} priceNote={priceNote} h={h} sym={rel.currencySymbol} />
+      {isEditing ? (
+        <SizeEditor h={h} onSave={onSaveSize} onClose={onCloseEdit} />
+      ) : (
+        <button
+          type="button"
+          onClick={onEdit}
+          className="mt-1.5 text-[10px] text-[var(--amber-dim)] hover:text-[var(--amber)]"
+        >
+          {h.costBasis != null ? "edit size" : "+ add shares / cost basis"}
+        </button>
+      )}
+    </div>
+  );
+}
+
 export default function ForYouFeed({
   relevance,
+  liteRelevance = [],
   macroSignals = [],
 }: {
   relevance: HolderRelevance[];
+  liteRelevance?: HolderRelevance[];
   macroSignals?: MacroSignal[];
 }) {
   const { mounted, holdings, add, remove, update } = useHoldings();
@@ -193,27 +334,45 @@ export default function ForYouFeed({
   const [open, setOpen] = useState(false);
   const [searching, setSearching] = useState(false);
 
-  // live quotes for uncovered holdings
   const [quotes, setQuotes] = useState<Record<string, TradeQuote>>({});
-  // which card's size editor is open
   const [editing, setEditing] = useState<string | null>(null);
+  // Symbols the user has asked for a desk on (mirrored to localStorage so the
+  // ask survives a read-only prod runtime that can't write the queue file).
+  const [requested, setRequested] = useState<Set<string>>(new Set());
 
-  // Resolve each holding to its covered relevance (by alias) or null.
-  const { covered, uncovered } = useMemo(() => {
-    const cov: Array<{ h: Holding; rel: HolderRelevance }> = [];
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(REQUESTS_KEY);
+      const arr: Array<{ symbol: string }> = raw ? JSON.parse(raw) : [];
+      setRequested(new Set(arr.map((r) => r.symbol.toUpperCase())));
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  // Bucket holdings into deep desk → lite desk → uncovered.
+  const { deep, lite, uncovered } = useMemo(() => {
+    const dp: Array<{ h: Holding; rel: HolderRelevance }> = [];
+    const lt: Array<{ h: Holding; rel: HolderRelevance }> = [];
     const unc: Holding[] = [];
     for (const h of holdings) {
       const sym = h.symbol.toUpperCase();
-      const rel = relevance.find((r) => r.aliases.includes(sym));
-      if (rel) cov.push({ h, rel });
-      else unc.push(h);
+      const deepRel = relevance.find((r) => r.aliases.includes(sym));
+      if (deepRel) {
+        dp.push({ h, rel: deepRel });
+        continue;
+      }
+      const liteRel = liteRelevance.find((r) => r.aliases.includes(sym));
+      if (liteRel) {
+        lt.push({ h, rel: liteRel });
+        continue;
+      }
+      unc.push(h);
     }
-    return { covered: cov, uncovered: unc };
-  }, [holdings, relevance]);
+    return { deep: dp, lite: lt, uncovered: unc };
+  }, [holdings, relevance, liteRelevance]);
 
-  // Cross active macro pressures with each holding's factor exposure. This is
-  // the "so what for me?" of macro: a rate move only surfaces against the
-  // rate-sensitive names the user actually owns.
+  // Cross active macro pressures with each holding's factor exposure.
   const { chipsFor, bookMacro } = useMemo(() => {
     const pressures = macroSignals.filter((s) => s.state === "pressure");
     const noteByFactor = new Map<Factor, string>();
@@ -223,7 +382,6 @@ export default function ForYouFeed({
     const chipsFor = (symbol: string): Factor[] =>
       materialFactors(symbol).filter((f) => activeFactors.has(f));
 
-    // One banner row per active factor that hits at least one held name.
     const bookMacro = Array.from(activeFactors)
       .map((factor) => ({
         factor,
@@ -238,17 +396,22 @@ export default function ForYouFeed({
     return { chipsFor, bookMacro };
   }, [macroSignals, holdings]);
 
-  // Fetch prices for uncovered holdings (covered prices come from the dossier).
+  // Fetch live quotes for names without a dossier price: all uncovered, plus
+  // any lite read missing a snapshot.
+  const quoteSyms = useMemo(() => {
+    const s = new Set(uncovered.map((h) => h.symbol.toUpperCase()));
+    for (const { rel } of lite) if (!Number.isFinite(rel.price)) s.add(rel.symbol);
+    return Array.from(s);
+  }, [uncovered, lite]);
+
   useEffect(() => {
-    const syms = uncovered.map((h) => h.symbol);
-    if (syms.length === 0) return;
+    if (quoteSyms.length === 0) return;
     let cancelled = false;
     (async () => {
       try {
-        const res = await fetch(
-          `/api/price?symbols=${encodeURIComponent(syms.join(","))}`,
-          { cache: "no-store" },
-        );
+        const res = await fetch(`/api/price?symbols=${encodeURIComponent(quoteSyms.join(","))}`, {
+          cache: "no-store",
+        });
         if (!res.ok) return;
         const data: { quotes: TradeQuote[] } = await res.json();
         if (cancelled) return;
@@ -256,13 +419,13 @@ export default function ForYouFeed({
         for (const q of data.quotes) map[q.symbol.toUpperCase()] = q;
         setQuotes((p) => ({ ...p, ...map }));
       } catch {
-        /* ignore — slim row just shows no price */
+        /* ignore — row just shows no price */
       }
     })();
     return () => {
       cancelled = true;
     };
-  }, [uncovered]);
+  }, [quoteSyms]);
 
   // search (debounced)
   useEffect(() => {
@@ -274,9 +437,7 @@ export default function ForYouFeed({
     setSearching(true);
     const t = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, {
-          cache: "no-store",
-        });
+        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, { cache: "no-store" });
         const data: { results: SymbolSearchResult[] } = await res.json();
         setResults(data.results ?? []);
         setOpen(true);
@@ -299,13 +460,41 @@ export default function ForYouFeed({
     [add],
   );
 
-  const coveredCount = relevance.length;
+  // Ask the daily routine to start a desk on an uncovered name. Records to the
+  // coverage queue (best-effort) and always mirrors to localStorage.
+  const requestDesk = useCallback(async (h: Holding) => {
+    const sym = h.symbol.toUpperCase();
+    setRequested((prev) => new Set(prev).add(sym));
+    try {
+      const raw = localStorage.getItem(REQUESTS_KEY);
+      const arr: Array<{ symbol: string; name: string; requestedAt: string }> = raw
+        ? JSON.parse(raw)
+        : [];
+      if (!arr.some((r) => r.symbol.toUpperCase() === sym)) {
+        arr.unshift({ symbol: sym, name: h.name, requestedAt: new Date().toISOString() });
+        localStorage.setItem(REQUESTS_KEY, JSON.stringify(arr));
+      }
+    } catch {
+      /* ignore */
+    }
+    try {
+      await fetch("/api/coverage-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ symbol: sym, name: h.name }),
+      });
+    } catch {
+      /* persisted in localStorage regardless */
+    }
+  }, []);
+
+  const deepCount = relevance.length;
 
   return (
     <Panel
       code="FORYOU"
       title="Your book — so what for you?"
-      learn="Add the tickers you actually own. For names we run a daily desk on, you get the standing call distilled to one line plus the strongest bull and bear point — and a P&L read if you add your cost basis. Holdings are stored in this browser only; nothing leaves your device."
+      learn="Add the tickers you actually own. Names with a daily desk get the standing call distilled to one line plus the strongest bull and bear point (and a P&L read if you add a cost basis). For anything else you get a live price and the macro pressures hitting it — and you can ask the desk to start covering it. Holdings stay in this browser only."
     >
       <div className="space-y-2 p-2 font-mono">
         {/* add box */}
@@ -331,9 +520,7 @@ export default function ForYouFeed({
                     onClick={() => onAdd(r)}
                     className="flex w-full items-baseline gap-2 px-2 py-1.5 text-left text-[12px] hover:bg-[rgba(255,165,0,0.1)]"
                   >
-                    <span className="w-20 shrink-0 font-bold text-[var(--amber)]">
-                      {r.symbol}
-                    </span>
+                    <span className="w-20 shrink-0 font-bold text-[var(--amber)]">{r.symbol}</span>
                     <span className="truncate text-[var(--foreground)]">{r.name}</span>
                     <span className="ml-auto shrink-0 text-[9px] uppercase tracking-widest text-[var(--dim)]">
                       {r.type} {r.exchange ? `· ${r.exchange}` : ""}
@@ -354,8 +541,8 @@ export default function ForYouFeed({
               Add what you own to see what today actually means for your book.
             </div>
             <div className="mt-1 text-[10px] text-[var(--dim)]">
-              {coveredCount} names have a daily desk — the rest get a live price for
-              now. Stored in this browser only.
+              {deepCount} names have a daily desk; add anything else and request a desk for it.
+              Stored in this browser only.
             </div>
           </div>
         ) : (
@@ -391,114 +578,27 @@ export default function ForYouFeed({
               </div>
             )}
 
-            {/* covered holdings — the rich "so what" cards */}
-            {covered.length > 0 && (
+            {/* deep + lite desks — the rich "so what" cards */}
+            {(deep.length > 0 || lite.length > 0) && (
               <div className="grid grid-cols-1 gap-1 lg:grid-cols-2">
-                {covered.map(({ h, rel }) => {
-                  const win = winnerChip(rel.dayWinner);
-                  return (
-                    <div
-                      key={h.symbol}
-                      className="border border-[var(--border)] bg-black p-2.5"
-                    >
-                      {/* header: ticker + call badge */}
-                      <div className="flex items-baseline justify-between gap-2">
-                        <Link
-                          href={rel.href}
-                          className="flex items-baseline gap-1.5 hover:underline"
-                          title={`Open the ${rel.name} desk`}
-                        >
-                          <span className="text-[13px] font-bold text-[var(--foreground)]">
-                            {rel.symbol}
-                          </span>
-                          <span className="truncate text-[9px] uppercase tracking-widest text-[var(--dim)]">
-                            {rel.name}
-                          </span>
-                        </Link>
-                        <div className="flex shrink-0 items-center gap-1.5">
-                          <span
-                            className={`border px-1.5 py-0.5 text-[10px] font-bold tracking-widest ${actionClasses(rel.action)}`}
-                          >
-                            {ACTION_LABEL[rel.action]}
-                          </span>
-                          <button
-                            type="button"
-                            onClick={() => remove(h.symbol)}
-                            title={`Remove ${rel.symbol}`}
-                            className="text-[11px] text-[var(--dim)] hover:text-[var(--down)]"
-                          >
-                            ✕
-                          </button>
-                        </div>
-                      </div>
-
-                      {/* price + day read */}
-                      <div className="mt-1 flex items-baseline gap-2">
-                        <span className="text-[14px] font-bold tabular-nums text-[var(--foreground)]">
-                          {fmtPrice(rel.price, rel.currencySymbol)}
-                        </span>
-                        <span
-                          className={`text-[11px] font-semibold tabular-nums ${pctTone(rel.changePct)}`}
-                        >
-                          {formatPct(rel.changePct)}
-                        </span>
-                        <span className={`ml-auto text-[9px] tracking-widest ${win.cls}`}>
-                          {win.label}
-                        </span>
-                      </div>
-
-                      {/* macro pressures hitting this name today */}
-                      {chipsFor(h.symbol).length > 0 && (
-                        <div className="mt-1.5">
-                          <FactorChips factors={chipsFor(h.symbol)} />
-                        </div>
-                      )}
-
-                      {/* the so-what */}
-                      <div className="mt-1.5 text-[12px] leading-snug text-[var(--foreground)]">
-                        {rel.holderLine}
-                      </div>
-
-                      {/* strongest bull / bear */}
-                      <div className="mt-2 space-y-1 text-[10.5px] leading-snug">
-                        {rel.topBull && (
-                          <div className="flex gap-1.5">
-                            <span className="shrink-0 font-bold text-[var(--up)]">BULL</span>
-                            <span className="text-[var(--dim)]">{rel.topBull}</span>
-                          </div>
-                        )}
-                        {rel.topBear && (
-                          <div className="flex gap-1.5">
-                            <span className="shrink-0 font-bold text-[var(--down)]">BEAR</span>
-                            <span className="text-[var(--dim)]">{rel.topBear}</span>
-                          </div>
-                        )}
-                      </div>
-
-                      {/* P&L + size editor */}
-                      <PnlLine price={rel.price} date={rel.date} h={h} sym={rel.currencySymbol} />
-                      {editing === h.symbol ? (
-                        <SizeEditor
-                          h={h}
-                          onSave={(patch) => update(h.symbol, patch)}
-                          onClose={() => setEditing(null)}
-                        />
-                      ) : (
-                        <button
-                          type="button"
-                          onClick={() => setEditing(h.symbol)}
-                          className="mt-1.5 text-[10px] text-[var(--amber-dim)] hover:text-[var(--amber)]"
-                        >
-                          {h.costBasis != null ? "edit size" : "+ add shares / cost basis"}
-                        </button>
-                      )}
-                    </div>
-                  );
-                })}
+                {[...deep, ...lite].map(({ h, rel }) => (
+                  <RelevanceCard
+                    key={h.symbol}
+                    rel={rel}
+                    h={h}
+                    chips={chipsFor(h.symbol)}
+                    liveQuote={quotes[rel.symbol]}
+                    onRemove={() => remove(h.symbol)}
+                    isEditing={editing === h.symbol}
+                    onEdit={() => setEditing(h.symbol)}
+                    onCloseEdit={() => setEditing(null)}
+                    onSaveSize={(patch) => update(h.symbol, patch)}
+                  />
+                ))}
               </div>
             )}
 
-            {/* uncovered holdings — slim live-price rows, no dead end */}
+            {/* uncovered holdings — live price, macro chips, request-a-desk */}
             {uncovered.length > 0 && (
               <div className="border border-[var(--border)] bg-black">
                 <div className="border-b border-[var(--border)] px-2 py-1 text-[9px] uppercase tracking-widest text-[var(--dim)]">
@@ -507,39 +607,53 @@ export default function ForYouFeed({
                 {uncovered.map((h) => {
                   const q = quotes[h.symbol.toUpperCase()];
                   const p = pnl(q?.price, h);
+                  const asked = requested.has(h.symbol.toUpperCase());
+                  const chips = chipsFor(h.symbol);
                   return (
-                    <div
-                      key={h.symbol}
-                      className="flex items-baseline gap-2 px-2 py-1.5 text-[12px]"
-                    >
-                      <span className="w-16 shrink-0 font-bold text-[var(--foreground)]">
-                        {h.symbol}
-                      </span>
-                      <span className="truncate text-[10px] text-[var(--dim)]">{h.name}</span>
-                      {chipsFor(h.symbol).length > 0 && (
-                        <FactorChips factors={chipsFor(h.symbol)} />
-                      )}
-                      <span className="ml-auto shrink-0 tabular-nums text-[var(--foreground)]">
-                        {q?.price != null ? fmtPrice(q.price, "$") : "—"}
-                      </span>
-                      <span
-                        className={`w-16 shrink-0 text-right text-[11px] tabular-nums ${pctTone(q?.changePct ?? null)}`}
-                      >
-                        {q?.changePct == null ? "—" : formatPct(q.changePct)}
-                      </span>
-                      {p && (
-                        <span className={`shrink-0 text-[10px] tabular-nums ${pctTone(p.pct)}`}>
-                          {formatPct(p.pct)} vs basis
+                    <div key={h.symbol} className="px-2 py-1.5">
+                      <div className="flex items-baseline gap-2 text-[12px]">
+                        <span className="w-16 shrink-0 font-bold text-[var(--foreground)]">
+                          {h.symbol}
                         </span>
-                      )}
-                      <button
-                        type="button"
-                        onClick={() => remove(h.symbol)}
-                        title={`Remove ${h.symbol}`}
-                        className="shrink-0 text-[11px] text-[var(--dim)] hover:text-[var(--down)]"
-                      >
-                        ✕
-                      </button>
+                        <span className="truncate text-[10px] text-[var(--dim)]">{h.name}</span>
+                        {chips.length > 0 && <FactorChips factors={chips} />}
+                        <span className="ml-auto shrink-0 tabular-nums text-[var(--foreground)]">
+                          {q?.price != null ? fmtPrice(q.price, "$") : "—"}
+                        </span>
+                        <span
+                          className={`w-16 shrink-0 text-right text-[11px] tabular-nums ${pctTone(q?.changePct)}`}
+                        >
+                          {q?.changePct == null ? "—" : formatPct(q.changePct)}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => remove(h.symbol)}
+                          title={`Remove ${h.symbol}`}
+                          className="shrink-0 text-[11px] text-[var(--dim)] hover:text-[var(--down)]"
+                        >
+                          ✕
+                        </button>
+                      </div>
+                      <div className="mt-0.5 flex items-baseline gap-2 text-[10px]">
+                        {p && (
+                          <span className={`tabular-nums ${pctTone(p.pct)}`}>
+                            {formatPct(p.pct)} vs your basis
+                          </span>
+                        )}
+                        <span className="ml-auto">
+                          {asked ? (
+                            <span className="text-[var(--up)]">✓ desk requested</span>
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={() => requestDesk(h)}
+                              className="text-[var(--amber-dim)] hover:text-[var(--amber)]"
+                            >
+                              request a daily desk →
+                            </button>
+                          )}
+                        </span>
+                      </div>
                     </div>
                   );
                 })}

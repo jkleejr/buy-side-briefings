@@ -6,6 +6,7 @@ import {
   type Conviction,
   type DayWinner,
 } from "@/lib/asset-daily";
+import { getAllLiteDossiers, type LiteDossier } from "@/lib/lite-dossier";
 
 // ---------------------------------------------------------------------------
 // The "so what for me?" layer (Phase 1).
@@ -60,11 +61,15 @@ const ALIASES: Record<AssetId, string[]> = {
 
 /** One covered holding's distilled relevance — everything a feed card needs. */
 export type HolderRelevance = {
-  asset: AssetId;
+  /** "deep" = a hand-built daily desk; "lite" = a generic routine-written read. */
+  tier: "deep" | "lite";
+  /** Present only for deep desks. */
+  asset?: AssetId;
   /** Canonical display symbol from the dossier (e.g. "NVDA", "000660.KS"). */
   symbol: string;
   name: string;
-  href: string;
+  /** Deep desks link to their page; lite reads have no page (no dead click). */
+  href?: string;
   /** Symbols a user-entered ticker can match on (uppercased). */
   aliases: string[];
 
@@ -99,6 +104,7 @@ function firstSentences(text: string, maxSentences = 2, cap = 240): string {
 
 function toRelevance(d: AssetDaily): HolderRelevance {
   return {
+    tier: "deep",
     asset: d.asset,
     symbol: d.symbol,
     name: d.name,
@@ -117,9 +123,35 @@ function toRelevance(d: AssetDaily): HolderRelevance {
   };
 }
 
-/** Relevance for every covered name that has a dossier on file. */
+/** Relevance for every deep desk that has a dossier on file. */
 export function getCoveredRelevance(): HolderRelevance[] {
   return COVERED.map(getLatestAssetDaily)
     .filter((d): d is AssetDaily => d !== null)
     .map(toRelevance);
+}
+
+function liteToRelevance(d: LiteDossier): HolderRelevance {
+  const sym = d.symbol.toUpperCase();
+  return {
+    tier: "lite",
+    symbol: sym,
+    name: d.name,
+    href: undefined,
+    aliases: [sym],
+    action: d.decision.action,
+    conviction: d.decision.conviction,
+    dayWinner: "flat",
+    price: d.snapshot?.price ?? NaN,
+    changePct: d.snapshot?.change_pct ?? NaN,
+    currencySymbol: d.snapshot?.currency_symbol ?? "$",
+    holderLine: firstSentences(d.decision.rationale),
+    topBull: d.bull ?? "",
+    topBear: d.bear ?? "",
+    date: d.date,
+  };
+}
+
+/** Relevance for every routine-written lite dossier on file. */
+export function getLiteRelevance(): HolderRelevance[] {
+  return getAllLiteDossiers().map(liteToRelevance);
 }

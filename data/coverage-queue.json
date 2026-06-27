@@ -1,0 +1,4 @@
+{
+  "_comment": "Tickers a user asked the For You feed to start a desk on. The daily-asset-dossiers routine reads this, writes data/asset-lite/<SYMBOL>.json for each queued name, and flips its status to 'lite'. See prompts/asset-dossiers-routine.md.",
+  "requests": []
+}
