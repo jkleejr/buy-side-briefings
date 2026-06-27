@@ -5,7 +5,9 @@ import {
   getLatestCryptoVerdict,
 } from "@/lib/data";
 import { getLatestAssetDaily } from "@/lib/asset-daily";
+import { getCoveredRelevance } from "@/lib/relevance";
 import { todayET } from "@/lib/utils";
+import ForYouFeed from "@/components/for-you-feed";
 import VerdictCard from "@/components/verdict-card";
 import DecisionBar from "@/components/decision-bar";
 import MarketKpiStrip from "@/components/market-kpi-strip";
@@ -49,6 +51,7 @@ export default function Home() {
   const verdict = getLatestMarketsVerdict();
   const crypto = getLatestCryptoVerdict();
   const briefings = getAllBriefings();
+  const relevance = getCoveredRelevance();
   const assetCalls = [
     getLatestAssetDaily("nvda"),
     getLatestAssetDaily("btc"),
@@ -83,6 +86,11 @@ export default function Home() {
           <code>data/briefings/</code> and <code>data/verdicts/</code>.
         </div>
       )}
+
+      {/* So what for me? — the personalized layer. Reads the user's holdings
+          (this browser) and translates each desk's call into what it means for
+          their book. Sits above the market-wide view by design. */}
+      <ForYouFeed relevance={relevance} />
 
       {/* The answer first: standing call, every desk, and the next catalyst. */}
       <DecisionBar verdict={verdict} desks={assetCalls} nextCatalyst={nextCatalyst} />
