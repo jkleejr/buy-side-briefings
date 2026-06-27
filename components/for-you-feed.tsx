@@ -4,6 +4,8 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { SymbolSearchResult, TradeQuote } from "@/lib/markets";
 import type { HolderRelevance } from "@/lib/relevance";
+import type { MacroSignal } from "@/lib/macro-signals";
+import { FACTOR_META, materialFactors, type Factor } from "@/lib/factors";
 import { useHoldings, type Holding } from "@/lib/holdings";
 import { formatPct } from "@/lib/utils";
 import Panel from "./panel";
@@ -158,10 +160,30 @@ function PnlLine({
   );
 }
 
+/** Small amber pressure chips for the macro factors hitting a given name. */
+function FactorChips({ factors }: { factors: Factor[] }) {
+  if (factors.length === 0) return null;
+  return (
+    <span className="flex flex-wrap gap-1">
+      {factors.map((f) => (
+        <span
+          key={f}
+          title={`${FACTOR_META[f].pressureHeadline} — active in today's regime`}
+          className="border border-[var(--amber-dim)] px-1 py-px text-[8.5px] font-bold tracking-widest text-[var(--amber)]"
+        >
+          {FACTOR_META[f].chip}
+        </span>
+      ))}
+    </span>
+  );
+}
+
 export default function ForYouFeed({
   relevance,
+  macroSignals = [],
 }: {
   relevance: HolderRelevance[];
+  macroSignals?: MacroSignal[];
 }) {
   const { mounted, holdings, add, remove, update } = useHoldings();
 
@@ -188,6 +210,33 @@ export default function ForYouFeed({
     }
     return { covered: cov, uncovered: unc };
   }, [holdings, relevance]);
+
+  // Cross active macro pressures with each holding's factor exposure. This is
+  // the "so what for me?" of macro: a rate move only surfaces against the
+  // rate-sensitive names the user actually owns.
+  const { chipsFor, bookMacro } = useMemo(() => {
+    const pressures = macroSignals.filter((s) => s.state === "pressure");
+    const noteByFactor = new Map<Factor, string>();
+    for (const s of pressures) if (!noteByFactor.has(s.factor)) noteByFactor.set(s.factor, s.note);
+    const activeFactors = new Set(pressures.map((s) => s.factor));
+
+    const chipsFor = (symbol: string): Factor[] =>
+      materialFactors(symbol).filter((f) => activeFactors.has(f));
+
+    // One banner row per active factor that hits at least one held name.
+    const bookMacro = Array.from(activeFactors)
+      .map((factor) => ({
+        factor,
+        note: noteByFactor.get(factor) ?? "",
+        names: holdings
+          .filter((h) => materialFactors(h.symbol).includes(factor))
+          .map((h) => h.symbol.toUpperCase()),
+      }))
+      .filter((row) => row.names.length > 0)
+      .sort((a, b) => b.names.length - a.names.length);
+
+    return { chipsFor, bookMacro };
+  }, [macroSignals, holdings]);
 
   // Fetch prices for uncovered holdings (covered prices come from the dossier).
   useEffect(() => {
@@ -311,6 +360,37 @@ export default function ForYouFeed({
           </div>
         ) : (
           <>
+            {/* macro on your book — which active pressures touch your names */}
+            {bookMacro.length > 0 && (
+              <div className="border border-[var(--amber-dim)] bg-[rgba(255,165,0,0.04)]">
+                <div className="border-b border-[var(--amber-dim)] px-2 py-1 text-[9px] uppercase tracking-widest text-[var(--amber)]">
+                  ⚠ Macro on your book · today's regime
+                </div>
+                <div className="divide-y divide-[var(--border)]">
+                  {bookMacro.map((row) => (
+                    <div key={row.factor} className="px-2 py-1.5">
+                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                        <span className="text-[11px] font-bold tracking-wide text-[var(--amber)]">
+                          {FACTOR_META[row.factor].pressureHeadline}
+                        </span>
+                        <span className="text-[10px] text-[var(--dim)]">
+                          weighs on {row.names.length} of your names:
+                        </span>
+                        <span className="text-[10px] font-semibold text-[var(--foreground)]">
+                          {row.names.join(" · ")}
+                        </span>
+                      </div>
+                      {row.note && (
+                        <div className="mt-0.5 text-[10px] leading-snug text-[var(--dim)]">
+                          {row.note}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* covered holdings — the rich "so what" cards */}
             {covered.length > 0 && (
               <div className="grid grid-cols-1 gap-1 lg:grid-cols-2">
@@ -366,6 +446,13 @@ export default function ForYouFeed({
                           {win.label}
                         </span>
                       </div>
+
+                      {/* macro pressures hitting this name today */}
+                      {chipsFor(h.symbol).length > 0 && (
+                        <div className="mt-1.5">
+                          <FactorChips factors={chipsFor(h.symbol)} />
+                        </div>
+                      )}
 
                       {/* the so-what */}
                       <div className="mt-1.5 text-[12px] leading-snug text-[var(--foreground)]">
@@ -429,6 +516,9 @@ export default function ForYouFeed({
                         {h.symbol}
                       </span>
                       <span className="truncate text-[10px] text-[var(--dim)]">{h.name}</span>
+                      {chipsFor(h.symbol).length > 0 && (
+                        <FactorChips factors={chipsFor(h.symbol)} />
+                      )}
                       <span className="ml-auto shrink-0 tabular-nums text-[var(--foreground)]">
                         {q?.price != null ? fmtPrice(q.price, "$") : "—"}
                       </span>

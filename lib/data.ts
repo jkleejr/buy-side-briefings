@@ -21,6 +21,8 @@ export type RegimeIndicator = {
   trigger_above?: number;
   trigger_below?: number;
   unit?: string;
+  /** Free-form narrative read of where this indicator sits vs. its trigger. */
+  status?: string;
 };
 
 export type WatchlistMention = {
