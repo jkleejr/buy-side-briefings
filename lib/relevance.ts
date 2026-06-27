@@ -61,8 +61,10 @@ const ALIASES: Record<AssetId, string[]> = {
 
 /** One covered holding's distilled relevance — everything a feed card needs. */
 export type HolderRelevance = {
-  /** "deep" = a hand-built daily desk; "lite" = a generic routine-written read. */
+  /** "deep" = a hand-built daily desk; "lite" = a generic routine/AI read. */
   tier: "deep" | "lite";
+  /** Badge for lite cards — "LITE" (routine) or "AI" (on-demand). */
+  sourceLabel?: string;
   /** Present only for deep desks. */
   asset?: AssetId;
   /** Canonical display symbol from the dossier (e.g. "NVDA", "000660.KS"). */
@@ -136,6 +138,7 @@ function liteToRelevance(d: LiteDossier): HolderRelevance {
   const sym = d.symbol.toUpperCase();
   return {
     tier: "lite",
+    sourceLabel: "LITE",
     symbol: sym,
     name: d.name,
     href: undefined,

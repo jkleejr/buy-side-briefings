@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { SymbolSearchResult, TradeQuote, CompanyProfile } from "@/lib/markets";
 import type { HolderRelevance } from "@/lib/relevance";
@@ -21,6 +21,75 @@ import Panel from "./panel";
 // ---------------------------------------------------------------------------
 
 const REQUESTS_KEY = "bsb_coverage_requests_v1";
+const LITE_READ_KEY = "bsb_lite_read_v1";
+
+// Shape returned by /api/lite-read (mirrors lib/lite-read LiteRead; typed here
+// so the client never imports that server module / the Anthropic SDK).
+type LiteReadDTO = {
+  symbol: string;
+  name: string;
+  action: HolderRelevance["action"];
+  conviction: HolderRelevance["conviction"];
+  rationale: string;
+  bull: string;
+  bear: string;
+  price: number | null;
+  changePct: number | null;
+  date: string;
+};
+
+function readToRelevance(r: LiteReadDTO): HolderRelevance {
+  const sym = r.symbol.toUpperCase();
+  return {
+    tier: "lite",
+    sourceLabel: "AI",
+    symbol: sym,
+    name: r.name,
+    href: undefined,
+    aliases: [sym],
+    action: r.action,
+    conviction: r.conviction,
+    dayWinner: "flat",
+    price: r.price ?? NaN,
+    changePct: r.changePct ?? NaN,
+    currencySymbol: "$",
+    holderLine: r.rationale,
+    topBull: r.bull,
+    topBear: r.bear,
+    date: r.date,
+  };
+}
+
+// Today in the user's local (≈ET) date, for a once-per-day read cache.
+function clientToday(): string {
+  return new Date().toLocaleDateString("en-CA");
+}
+
+function loadCachedReads(): Record<string, HolderRelevance> {
+  try {
+    const raw = localStorage.getItem(LITE_READ_KEY);
+    const obj: Record<string, LiteReadDTO> = raw ? JSON.parse(raw) : {};
+    const today = clientToday();
+    const out: Record<string, HolderRelevance> = {};
+    for (const [sym, r] of Object.entries(obj)) {
+      if (r && r.date === today) out[sym.toUpperCase()] = readToRelevance(r);
+    }
+    return out;
+  } catch {
+    return {};
+  }
+}
+
+function saveCachedRead(r: LiteReadDTO) {
+  try {
+    const raw = localStorage.getItem(LITE_READ_KEY);
+    const obj = raw ? JSON.parse(raw) : {};
+    obj[r.symbol.toUpperCase()] = r;
+    localStorage.setItem(LITE_READ_KEY, JSON.stringify(obj));
+  } catch {
+    /* ignore */
+  }
+}
 
 const ACTION_LABEL: Record<HolderRelevance["action"], string> = {
   buy: "BUY",
@@ -239,7 +308,7 @@ function RelevanceCard({
     : liveQuote?.changePct ?? null;
   const win = winnerChip(rel.dayWinner);
   const priceNote = isLite
-    ? `lite read · ${rel.date}`
+    ? `${(rel.sourceLabel ?? "lite").toLowerCase()} read · ${rel.date}`
     : `at ${rel.date} close`;
 
   return (
@@ -266,9 +335,9 @@ function RelevanceCard({
           </span>
         )}
         <div className="flex shrink-0 items-center gap-1.5">
-          {isLite && (
+          {isLite && rel.sourceLabel && (
             <span className="border border-[var(--border-strong)] px-1 py-0.5 text-[8.5px] font-bold tracking-widest text-[var(--dim)]">
-              LITE
+              {rel.sourceLabel}
             </span>
           )}
           <span
@@ -465,6 +534,10 @@ export default function ForYouFeed({
   // Symbols the user has asked for a desk on (mirrored to localStorage so the
   // ask survives a read-only prod runtime that can't write the queue file).
   const [requested, setRequested] = useState<Set<string>>(new Set());
+  // On-demand AI holder reads for uncovered names, keyed by uppercase symbol.
+  const [aiReads, setAiReads] = useState<Record<string, HolderRelevance>>({});
+  const [aiLoading, setAiLoading] = useState<Set<string>>(new Set());
+  const aiAttempted = useRef<Set<string>>(new Set());
 
   useEffect(() => {
     try {
@@ -473,6 +546,11 @@ export default function ForYouFeed({
       setRequested(new Set(arr.map((r) => r.symbol.toUpperCase())));
     } catch {
       /* ignore */
+    }
+    const cached = loadCachedReads();
+    if (Object.keys(cached).length) {
+      setAiReads(cached);
+      for (const s of Object.keys(cached)) aiAttempted.current.add(s);
     }
   }, []);
 
@@ -497,6 +575,49 @@ export default function ForYouFeed({
     }
     return { deep: dp, lite: lt, uncovered: unc };
   }, [holdings, relevance, liteRelevance]);
+
+  // An uncovered name upgrades to a full card once its on-demand AI read lands;
+  // the rest stay as bare rows with a "get an AI read" ask.
+  const { aiCovered, stillUncovered } = useMemo(() => {
+    const cov: Array<{ h: Holding; rel: HolderRelevance }> = [];
+    const rest: Holding[] = [];
+    for (const h of uncovered) {
+      const rel = aiReads[h.symbol.toUpperCase()];
+      if (rel) cov.push({ h, rel });
+      else rest.push(h);
+    }
+    return { aiCovered: cov, stillUncovered: rest };
+  }, [uncovered, aiReads]);
+
+  // Request an on-demand AI read for one uncovered name. Caches per-day in
+  // localStorage; degrades silently (row stays uncovered) when unavailable.
+  const fetchAiRead = useCallback(
+    async (symbol: string) => {
+      const sym = symbol.toUpperCase();
+      if (aiReads[sym] || aiLoading.has(sym)) return;
+      aiAttempted.current.add(sym);
+      setAiLoading((p) => new Set(p).add(sym));
+      try {
+        const res = await fetch(`/api/lite-read?symbol=${encodeURIComponent(sym)}`, {
+          cache: "no-store",
+        });
+        const data: { ok: boolean; read?: LiteReadDTO } = await res.json();
+        if (data?.ok && data.read) {
+          saveCachedRead(data.read);
+          setAiReads((p) => ({ ...p, [sym]: readToRelevance(data.read!) }));
+        }
+      } catch {
+        /* ignore — row stays uncovered */
+      } finally {
+        setAiLoading((p) => {
+          const n = new Set(p);
+          n.delete(sym);
+          return n;
+        });
+      }
+    },
+    [aiReads, aiLoading],
+  );
 
   // A name's factor exposure: the curated map first, else inferred from its
   // sector/beta profile. This is what lets any held ticker get a macro read.
@@ -558,7 +679,7 @@ export default function ForYouFeed({
   // Synthesize the whole book: posture mix, aggregate unrealized P&L, and the
   // single most actionable call. The glance that reduces the rest to detail.
   const digest = useMemo<BookDigestData>(() => {
-    const calls = [...deep, ...lite];
+    const calls = [...deep, ...lite, ...aiCovered];
     const counts: Record<HolderRelevance["action"], number> = {
       buy: 0,
       hold: 0,
@@ -604,12 +725,12 @@ export default function ForYouFeed({
 
     return {
       total: holdings.length,
-      uncoveredCount: uncovered.length,
+      uncoveredCount: stillUncovered.length,
       counts,
       pnl: n > 0 ? { abs, n } : null,
       standout,
     };
-  }, [deep, lite, uncovered, holdings, resolved]);
+  }, [deep, lite, aiCovered, stillUncovered, holdings, resolved]);
 
   // Fetch live quotes for names without a dossier price: all uncovered, plus
   // any lite read missing a snapshot.
@@ -829,10 +950,10 @@ export default function ForYouFeed({
               </div>
             )}
 
-            {/* deep + lite desks — the rich "so what" cards */}
-            {(deep.length > 0 || lite.length > 0) && (
+            {/* deep + lite desks + AI reads — the rich "so what" cards */}
+            {(deep.length > 0 || lite.length > 0 || aiCovered.length > 0) && (
               <div className="grid grid-cols-1 gap-1 lg:grid-cols-2">
-                {[...deep, ...lite].map(({ h, rel }) => (
+                {[...deep, ...lite, ...aiCovered].map(({ h, rel }) => (
                   <RelevanceCard
                     key={h.symbol}
                     rel={rel}
@@ -849,18 +970,20 @@ export default function ForYouFeed({
               </div>
             )}
 
-            {/* uncovered holdings — live price, macro chips, request-a-desk */}
-            {uncovered.length > 0 && (
+            {/* uncovered holdings — live price, macro chips, AI read + desk ask */}
+            {stillUncovered.length > 0 && (
               <div className="border border-[var(--border)] bg-black">
                 <div className="border-b border-[var(--border)] px-2 py-1 text-[9px] uppercase tracking-widest text-[var(--dim)]">
                   Also in your book · no desk yet
                 </div>
-                {uncovered.map((h) => {
-                  const q = quotes[h.symbol.toUpperCase()];
+                {stillUncovered.map((h) => {
+                  const sym = h.symbol.toUpperCase();
+                  const q = quotes[sym];
                   const p = pnl(q?.price, h);
-                  const asked = requested.has(h.symbol.toUpperCase());
+                  const asked = requested.has(sym);
+                  const loadingRead = aiLoading.has(sym);
                   const chips = chipsFor(h.symbol);
-                  const explanation = explainUncovered(profiles[h.symbol.toUpperCase()], chips);
+                  const explanation = explainUncovered(profiles[sym], chips);
                   return (
                     <div key={h.symbol} className="px-2 py-1.5">
                       <div className="flex items-baseline gap-2 text-[12px]">
@@ -897,7 +1020,18 @@ export default function ForYouFeed({
                             {formatPct(p.pct)} vs your basis
                           </span>
                         )}
-                        <span className="ml-auto">
+                        <span className="ml-auto flex items-center gap-3">
+                          {loadingRead ? (
+                            <span className="text-[var(--cyan)]">analyzing…</span>
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={() => fetchAiRead(sym)}
+                              className="text-[var(--cyan)] hover:text-[var(--foreground)]"
+                            >
+                              get an AI read →
+                            </button>
+                          )}
                           {asked ? (
                             <span className="text-[var(--up)]">✓ desk requested</span>
                           ) : (
