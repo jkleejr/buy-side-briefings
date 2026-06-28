@@ -1,36 +1,38 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import type {
   HomeData,
   BriefView,
   MarketRow,
+  MetricCard,
   SectorRow,
   WireRow,
   CalRow,
+  ArchiveRow,
   TickerCard,
 } from "@/lib/home-terminal";
 
 // ---------------------------------------------------------------------------
 // Terminal homepage — a two-column Bloomberg-style brief reader.
-//   left rail  : brand, morning/evening switch, live markets, session status,
-//                next scheduled brief
-//   main column: the selected brief (sentiment, headline, key points, key
-//                signal, tickers to watch) + today's context (sector
-//                performance, wire headlines, week-ahead calendar)
+//   left rail  : brand + date, morning/evening switch, brief archive, live
+//                market pulse, session status
+//   main column: the selected brief (metric strip, outlook, headline, clickable
+//                key points → source articles, key signal, tickers to watch) +
+//                today's context (sector performance, wire headlines, calendar)
 // All data is server-fetched and passed in; the only client state is which
 // brief (morning / evening) is in view.
 // ---------------------------------------------------------------------------
 
-function Pct({ pct, big = false }: { pct: number | null; big?: boolean }) {
+function Pct({ pct }: { pct: number | null }) {
   if (pct === null || !Number.isFinite(pct))
     return <span className="text-[var(--dim)]">—</span>;
   const up = pct >= 0;
   return (
     <span className={up ? "text-[var(--up)]" : "text-[var(--down)]"}>
       {up ? "▲" : "▼"}
-      {Math.abs(pct).toFixed(2)}%{big ? "" : ""}
+      {Math.abs(pct).toFixed(2)}%
     </span>
   );
 }
@@ -41,16 +43,10 @@ function sentColor(code: string): string {
   return "text-[var(--amber)]";
 }
 
-function shortDate(dateLabel: string): string {
-  // "Saturday, June 27, 2026" -> "Sat · Jun 27"
-  const parts = dateLabel.split(", ");
-  if (parts.length < 2) return dateLabel;
-  const wd = parts[0].slice(0, 3);
-  const md = parts[1].replace(
-    /^(\w{3})\w*/,
-    (_m, a) => a, // June -> Jun
-  );
-  return `${wd} · ${md}`;
+function dirColor(dir: "up" | "down" | "flat"): string {
+  if (dir === "up") return "text-[var(--up)]";
+  if (dir === "down") return "text-[var(--down)]";
+  return "text-[var(--foreground)]";
 }
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -59,29 +55,6 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
       <span className="h-1 w-1 bg-[var(--amber-dim)]" />
       {children}
     </div>
-  );
-}
-
-// --- live ET clock ---------------------------------------------------------
-
-function LiveClock() {
-  const [t, setT] = useState<string>("");
-  useEffect(() => {
-    const tick = () => {
-      const now = new Date().toLocaleTimeString("en-US", {
-        hour12: false,
-        timeZone: "America/New_York",
-      });
-      setT(now);
-    };
-    tick();
-    const id = setInterval(tick, 1000);
-    return () => clearInterval(id);
-  }, []);
-  return (
-    <span className="tabular-nums text-[var(--dim)]">
-      {t || "--:--:--"} <span className="text-[var(--amber-dim)]">ET</span>
-    </span>
   );
 }
 
@@ -133,7 +106,7 @@ function BriefSwitch({
           {title}
         </span>
         <span className="block truncate text-[10px] text-[var(--dim)]">
-          {brief ? `${brief.timeLabel} · ${shortDate(brief.dateLabel)}` : "—"}
+          {brief ? brief.timeLabel : "—"}
         </span>
       </span>
       {active && (
@@ -143,29 +116,45 @@ function BriefSwitch({
   );
 }
 
-function MarketsList({ markets }: { markets: MarketRow[] }) {
+function ArchiveList({ archive }: { archive: ArchiveRow[] }) {
+  if (!archive.length) return null;
   return (
     <div>
-      <SectionLabel>Markets</SectionLabel>
-      <div>
-        {markets.map((m) => (
-          <div
-            key={m.code}
-            className="flex items-baseline justify-between border-b border-[var(--border)]/60 py-1.5"
-          >
-            <div className="min-w-0">
-              <div className="text-[12px] font-bold text-[var(--amber)]">{m.code}</div>
-              <div className="truncate text-[9px] uppercase tracking-wide text-[var(--dim)]">
-                {m.name}
-              </div>
+      <SectionLabel>Archive</SectionLabel>
+      <div className="space-y-3">
+        {archive.map((a, i) => (
+          <Link key={i} href={a.href} className="group block">
+            <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-[var(--dim)]">
+              <span className={a.window === "morning" ? "text-[var(--amber)]" : "text-[var(--cyan)]"}>
+                {a.window === "morning" ? "☀" : "☾"}
+              </span>
+              {a.dayLabel}
             </div>
-            <div className="text-right">
-              <div className="tabular-nums text-[12px] text-[var(--foreground)]">
-                {m.level}
-              </div>
-              <div className="text-[11px] tabular-nums">
-                <Pct pct={m.pct} />
-              </div>
+            <div className="mt-0.5 text-[12px] leading-snug text-[#a1a1aa] group-hover:text-[var(--foreground)]">
+              {a.headline}
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MarketPulse({ pulse }: { pulse: MarketRow[] }) {
+  return (
+    <div>
+      <SectionLabel>Market Pulse</SectionLabel>
+      <div className="grid grid-cols-2 gap-px bg-[var(--border)]">
+        {pulse.map((m) => (
+          <div key={m.code} className="bg-[var(--background)] p-2.5">
+            <div className="text-[10px] font-bold uppercase tracking-wide text-[var(--amber)]">
+              {m.code}
+            </div>
+            <div className="mt-1 tabular-nums text-[18px] font-bold leading-none text-[var(--foreground)]">
+              {m.level}
+            </div>
+            <div className="mt-1.5 text-[11px] tabular-nums">
+              <Pct pct={m.pct} />
             </div>
           </div>
         ))}
@@ -218,12 +207,8 @@ function Sidebar({
         <div className="text-[15px] font-bold uppercase tracking-[0.28em] text-[var(--amber)]">
           Buy-Side
         </div>
-        <div className="mt-1 flex items-center gap-2 text-[10px] uppercase tracking-widest">
-          <span className="flex items-center gap-1 text-[var(--up)]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--up)] term-blink" />
-            Live
-          </span>
-          <LiveClock />
+        <div className="mt-1 text-[10px] uppercase tracking-[0.2em] text-[var(--dim)]">
+          {data.todayLabel}
         </div>
       </div>
 
@@ -240,33 +225,41 @@ function Sidebar({
         />
       </div>
 
-      <MarketsList markets={data.markets} />
+      <ArchiveList archive={data.archive} />
+      <MarketPulse pulse={data.pulse} />
       <StatusList status={data.status} />
-
-      <div className="mt-auto border border-[var(--amber-dim)]/60 bg-[rgba(255,165,0,0.04)] p-3">
-        <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-[var(--amber)]">
-          <span>☀</span> Next Brief
-        </div>
-        <div className="mt-1 text-[13px] font-bold text-[var(--foreground)]">
-          {data.nextBrief.when}
-        </div>
-        <div className="mt-0.5 truncate text-[11px] text-[var(--dim)]">
-          {data.nextBrief.note}
-        </div>
-      </div>
     </aside>
   );
 }
 
 // --- main column sections --------------------------------------------------
 
-function SentimentBar({ brief }: { brief: BriefView }) {
+function MetricStrip({ metrics }: { metrics: MetricCard[] }) {
+  if (!metrics.length) return null;
+  return (
+    <div className="grid grid-cols-2 gap-px border border-[var(--border)] bg-[var(--border)] sm:grid-cols-4">
+      {metrics.map((m) => (
+        <div key={m.label} className="bg-[var(--background)] px-4 py-3">
+          <div className="text-[10px] uppercase tracking-widest text-[var(--dim)]">
+            {m.label}
+          </div>
+          <div className={`mt-1.5 tabular-nums text-[24px] font-bold leading-none ${dirColor(m.dir)}`}>
+            {m.value}
+          </div>
+          <div className="mt-1.5 text-[11px] tabular-nums text-[var(--dim)]">{m.sub}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function OutlookBar({ brief }: { brief: BriefView }) {
   const { pct, label } = brief.sentiment;
   return (
     <div>
       <div className="mb-1 flex items-center justify-between">
         <span className="text-[10px] uppercase tracking-[0.22em] text-[var(--dim)]">
-          Market Sentiment
+          Outlook
         </span>
         <span
           className={`text-[12px] font-bold uppercase tracking-widest ${sentColor(brief.code)}`}
@@ -276,19 +269,52 @@ function SentimentBar({ brief }: { brief: BriefView }) {
       </div>
       <div className="relative h-1.5 w-full overflow-hidden rounded-sm bg-[#111]">
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--down)] via-[var(--amber)] to-[var(--up)]" />
-        <div
-          className="absolute inset-y-0 right-0 bg-black/75"
-          style={{ left: `${pct}%` }}
-        />
-        <div
-          className="absolute inset-y-0 w-px bg-white/90"
-          style={{ left: `${pct}%` }}
-        />
+        <div className="absolute inset-y-0 right-0 bg-black/75" style={{ left: `${pct}%` }} />
+        <div className="absolute inset-y-0 w-px bg-white/90" style={{ left: `${pct}%` }} />
       </div>
       <div className="mt-1 flex items-center justify-between text-[9px] uppercase tracking-[0.18em] text-[var(--dim)]">
         <span>Bearish</span>
         <span>Neutral</span>
         <span>Bullish</span>
+      </div>
+    </div>
+  );
+}
+
+function KeyPoints({ brief }: { brief: BriefView }) {
+  if (!brief.keyPoints.length) return null;
+  return (
+    <div>
+      <SectionLabel>Key Points</SectionLabel>
+      <div className="space-y-1.5">
+        {brief.keyPoints.map((kp, i) => {
+          const inner = (
+            <div className="grid grid-cols-[84px_1fr_16px] items-center gap-3 border border-[var(--border)] bg-[var(--panel)] px-3 py-3 transition-colors group-hover:border-[var(--border-strong)] group-hover:bg-[var(--panel-head)] sm:grid-cols-[120px_1fr_16px]">
+              <div className="text-[10px] uppercase leading-tight tracking-widest text-[var(--amber)]">
+                {kp.label}
+              </div>
+              <div className="truncate text-[13px] text-[#d4d4d8]">{kp.text}</div>
+              <span className="text-right text-[13px] text-[var(--dim)] group-hover:text-[var(--amber)]">
+                ›
+              </span>
+            </div>
+          );
+          return kp.url ? (
+            <a
+              key={i}
+              href={kp.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block"
+            >
+              {inner}
+            </a>
+          ) : (
+            <div key={i} className="group block">
+              {inner}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -312,12 +338,8 @@ function TickerGrid({ tickers }: { tickers: TickerCard[] }) {
                   : "border-[var(--down)]/25 bg-[var(--down)]/[0.04]",
               ].join(" ")}
             >
-              <div className="text-[13px] font-bold text-[var(--foreground)]">
-                {t.label}
-              </div>
-              <div className="mt-1 tabular-nums text-[13px] text-[#a1a1aa]">
-                {t.price}
-              </div>
+              <div className="text-[13px] font-bold text-[var(--foreground)]">{t.label}</div>
+              <div className="mt-1 tabular-nums text-[13px] text-[#a1a1aa]">{t.price}</div>
               <div className="mt-2 text-[12px] tabular-nums">
                 <Pct pct={t.pct} />
               </div>
@@ -329,13 +351,7 @@ function TickerGrid({ tickers }: { tickers: TickerCard[] }) {
   );
 }
 
-function BriefReader({
-  brief,
-  other,
-}: {
-  brief: BriefView;
-  other: BriefView | null;
-}) {
+function BriefReader({ brief, other }: { brief: BriefView; other: BriefView | null }) {
   const isMorning = brief.window === "morning";
   return (
     <div className="space-y-7">
@@ -364,41 +380,20 @@ function BriefReader({
         <span className="text-[11px] text-[var(--dim)]">{brief.readMin} min read</span>
       </div>
 
-      <SentimentBar brief={brief} />
+      <MetricStrip metrics={brief.metrics} />
+
+      <OutlookBar brief={brief} />
 
       <h1 className="font-display max-w-[24ch] text-[30px] font-extrabold leading-[1.06] tracking-tight text-white sm:text-[40px]">
         {brief.headline}
       </h1>
 
-      <p className="max-w-[68ch] text-[15px] leading-relaxed text-[#a1a1aa]">
-        {brief.lede}
-      </p>
+      <p className="max-w-[68ch] text-[15px] leading-relaxed text-[#a1a1aa]">{brief.lede}</p>
 
-      {brief.keyPoints.length > 0 && (
-        <div>
-          <SectionLabel>Key Points</SectionLabel>
-          <div className="divide-y divide-[var(--border)]">
-            {brief.keyPoints.map((kp) => (
-              <div
-                key={kp.label}
-                className="grid grid-cols-[84px_1fr] gap-3 py-3 sm:grid-cols-[110px_1fr]"
-              >
-                <div className="pt-0.5 text-right text-[10px] uppercase leading-tight tracking-widest text-[var(--amber)]">
-                  {kp.label}
-                </div>
-                <div className="border-l border-[var(--border-strong)] pl-3 text-[14px] leading-snug text-[#d4d4d8]">
-                  {kp.text}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      <KeyPoints brief={brief} />
 
       <div className="border-l-2 border-[var(--amber)] bg-[rgba(255,165,0,0.05)] px-4 py-3">
-        <div className="text-[10px] uppercase tracking-widest text-[var(--amber)]">
-          Key Signal
-        </div>
+        <div className="text-[10px] uppercase tracking-widest text-[var(--amber)]">Key Signal</div>
         <div className="mt-1 text-[16px] font-semibold leading-snug text-white">
           {brief.keySignal}
         </div>
@@ -413,12 +408,9 @@ function BriefReader({
         >
           <div className="min-w-0">
             <div className="text-[10px] uppercase tracking-widest text-[var(--dim)]">
-              {other.window === "morning" ? "Morning" : "Evening"} Brief ·{" "}
-              {other.dateLabel}
+              {other.window === "morning" ? "Morning" : "Evening"} Brief · {other.dateLabel}
             </div>
-            <div className="mt-0.5 truncate text-[15px] text-[#d4d4d8]">
-              {other.headline}
-            </div>
+            <div className="mt-0.5 truncate text-[15px] text-[#d4d4d8]">{other.headline}</div>
           </div>
           <span className="text-[18px] text-[var(--dim)]">›</span>
         </Link>
@@ -428,13 +420,10 @@ function BriefReader({
 }
 
 function SectorPerformance({ sectors }: { sectors: SectorRow[] }) {
-  const maxAbs = Math.max(
-    1,
-    ...sectors.map((s) => Math.abs(s.pct ?? 0)),
-  );
+  const maxAbs = Math.max(1, ...sectors.map((s) => Math.abs(s.pct ?? 0)));
   return (
     <div>
-      <SectionLabel>S&amp;P 500 Sector Performance · 1D</SectionLabel>
+      <SectionLabel>S&amp;P 500 Sectors · 1D</SectionLabel>
       <div className="space-y-1.5">
         {sectors.map((s) => {
           const pct = s.pct ?? 0;
@@ -446,9 +435,7 @@ function SectorPerformance({ sectors }: { sectors: SectorRow[] }) {
               className="grid grid-cols-[42px_minmax(0,1fr)_56px] items-center gap-2 text-[12px] sm:grid-cols-[48px_120px_minmax(0,1fr)_56px]"
             >
               <span className="font-bold text-[var(--amber)]">{s.code}</span>
-              <span className="hidden truncate text-[var(--dim)] sm:block">
-                {s.name}
-              </span>
+              <span className="hidden truncate text-[var(--dim)] sm:block">{s.name}</span>
               <span className="relative h-2.5 w-full bg-[#0c0c0c]">
                 {up ? (
                   <span
@@ -494,12 +481,8 @@ function WireHeadlines({ wire }: { wire: WireRow[] }) {
                 {w.tag}
               </div>
               <div className="flex items-start gap-2">
-                <span
-                  className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${toneDot(w.tone)}`}
-                />
-                <span className="text-[14px] leading-snug text-[#d4d4d8]">
-                  {w.headline}
-                </span>
+                <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${toneDot(w.tone)}`} />
+                <span className="text-[14px] leading-snug text-[#d4d4d8]">{w.headline}</span>
               </div>
             </div>
           );
@@ -538,15 +521,10 @@ function EconCalendar({ calendar }: { calendar: CalRow[] }) {
       <SectionLabel>Economic Calendar · Week Ahead</SectionLabel>
       <div className="divide-y divide-[var(--border)]">
         {calendar.map((c, i) => (
-          <div
-            key={i}
-            className="grid grid-cols-[52px_1fr_auto] items-center gap-3 py-3"
-          >
+          <div key={i} className="grid grid-cols-[52px_1fr_auto] items-center gap-3 py-3">
             <div className="text-[10px] uppercase tracking-widest text-[var(--amber)]">
               {c.day}
-              <div className="text-[9px] tracking-normal text-[var(--dim)]">
-                {c.dateLabel}
-              </div>
+              <div className="text-[9px] tracking-normal text-[var(--dim)]">{c.dateLabel}</div>
             </div>
             <div className="min-w-0">
               <div className="text-[14px] text-[var(--foreground)]">{c.label}</div>
