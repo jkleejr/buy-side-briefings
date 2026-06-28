@@ -325,7 +325,7 @@ function TickerGrid({ tickers }: { tickers: TickerCard[] }) {
   return (
     <div>
       <SectionLabel>Tickers to Watch</SectionLabel>
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-2">
         {tickers.map((t) => {
           const up = (t.pct ?? 0) >= 0;
           return (
@@ -348,6 +348,31 @@ function TickerGrid({ tickers }: { tickers: TickerCard[] }) {
         })}
       </div>
     </div>
+  );
+}
+
+function KeySignal({ text }: { text: string }) {
+  return (
+    <div className="border-l-2 border-[var(--amber)] bg-[rgba(255,165,0,0.05)] px-4 py-3">
+      <div className="text-[10px] uppercase tracking-widest text-[var(--amber)]">Key Signal</div>
+      <div className="mt-1 text-[15px] font-semibold leading-snug text-white">{text}</div>
+    </div>
+  );
+}
+
+function ReadFullBriefing({ href }: { href: string }) {
+  return (
+    <Link
+      href={href}
+      className="group flex items-center justify-between gap-3 border border-[var(--amber)]/50 bg-[rgba(255,165,0,0.06)] px-4 py-3.5 transition-colors hover:border-[var(--amber)] hover:bg-[rgba(255,165,0,0.12)]"
+    >
+      <span className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-widest text-[var(--amber)]">
+        <span aria-hidden>▤</span> Read the full briefing
+      </span>
+      <span className="text-[16px] text-[var(--amber)] transition-transform group-hover:translate-x-0.5">
+        →
+      </span>
+    </Link>
   );
 }
 
@@ -384,22 +409,24 @@ function BriefReader({ brief, other }: { brief: BriefView; other: BriefView | nu
 
       <OutlookBar brief={brief} />
 
-      <h1 className="font-display max-w-[24ch] text-[30px] font-extrabold leading-[1.06] tracking-tight text-white sm:text-[40px]">
-        {brief.headline}
-      </h1>
-
-      <p className="max-w-[68ch] text-[15px] leading-relaxed text-[#a1a1aa]">{brief.lede}</p>
-
-      <KeyPoints brief={brief} />
-
-      <div className="border-l-2 border-[var(--amber)] bg-[rgba(255,165,0,0.05)] px-4 py-3">
-        <div className="text-[10px] uppercase tracking-widest text-[var(--amber)]">Key Signal</div>
-        <div className="mt-1 text-[16px] font-semibold leading-snug text-white">
-          {brief.keySignal}
+      {/* Headline + lede on the left; the right rail fills the whitespace with
+          the brief's punchline (key signal) and the tickers to watch. */}
+      <div className="grid gap-6 lg:grid-cols-12">
+        <div className="space-y-5 lg:col-span-7">
+          <h1 className="font-display text-[30px] font-extrabold leading-[1.06] tracking-tight text-white sm:text-[40px]">
+            {brief.headline}
+          </h1>
+          <p className="text-[15px] leading-relaxed text-[#a1a1aa]">{brief.lede}</p>
+        </div>
+        <div className="space-y-4 lg:col-span-5">
+          <KeySignal text={brief.keySignal} />
+          <TickerGrid tickers={brief.tickers} />
         </div>
       </div>
 
-      <TickerGrid tickers={brief.tickers} />
+      <ReadFullBriefing href={brief.href} />
+
+      <KeyPoints brief={brief} />
 
       {other && (
         <Link
