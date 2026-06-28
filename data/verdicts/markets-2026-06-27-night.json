@@ -1,0 +1,157 @@
+{
+  "routine": "markets",
+  "date": "2026-06-27",
+  "window": "night",
+  "generated_at": "2026-06-28T01:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — Saturday Night: BTC $60,024 Confirmed; All Gates Breached; NVDA Stop Day 1 Live; June 29 Is the Binary",
+    "conviction": "medium",
+    "rationale_short": "A quiet Saturday with no US equity or KRX trading leaves the regime from Friday's close unchanged and every gate still breached. The night's only confirmed data point: Crypto.com MCP locked BTC's June 27 UTC daily candle at $60,024.33 — a lower close than the morning routine's partial read of $60,241.43 and $79 below the June 26 close. The shooting star reversal spread (session high $60,948 to close $60,024) widened to $924, the most bearish candle structure of the five-session distribution window. VIX confirmed at 18.41 (down 0.48 from Friday's 18.89 close — noise, not a clearing signal; still 1.41 pts above the 17 gate). SPX 7,354.02 and DXY 101.27 are unchanged from Friday. All three US-equity regime gates remain simultaneously breached for the sixth consecutive session. NVDA Stop Day 1 is active — the June 26 close of $192.53 was below the $195 two-close stop threshold — and June 29 (Monday) is the binary session: a close above $195 resets the stop; a close below $195 triggers mandatory full exit. SK Hynix's Nasdaq ADR listing (July 10, $29.4B, BofA/Goldman/Citigroup/JPMorgan underwriters) remains the sole confirmed structural positive from the weekend. The week of June 29 has three binary events in five sessions: NVDA stop resolution (June 29 close), NFP (July 2), and markets-closed gap (July 3). Do not add exposure before NVDA's stop resolves on June 29.",
+    "supporting_data": [
+      { "label": "BTC June 27 UTC daily close CONFIRMED $60,024.33 (−$78.77, −0.13% from June 26 close $60,103.10) via Crypto.com MCP. Day 5 exit gate locked. Shooting star: session high $60,948 / close $60,024 — $924 reversal spread. Re-entry gate $62,000 is $1,975.67 above the confirmed close. Correction from morning partial read of $60,241.43.", "url": "https://crypto.com/exchange/trade/BTC_USDT" },
+      { "label": "VIX confirmed 18.41 (down 0.48 from Friday close 18.89) — still 1.41 pts above 17 gate; two consecutive closes below 17 required. SPX 7,354.02 (Friday close, 106 pts below 7,460 regime floor). DXY ~101.27. All three US-equity regime gates remain simultaneously breached.", "url": "https://seekingalpha.com/article/4918267-the-1-minute-market-report-june-27-2026" },
+      { "label": "NVDA Stop Day 1 active: June 26 close $192.53 < $195 two-close stop threshold. June 29 is the binary — close above $195 = stop resets to inactive; close below $195 = FULL EXIT mandatory (two consecutive closes below $195 = two-close stop triggered). Do NOT add at any level before June 29 close resolves the stop.", "url": "https://finance.yahoo.com/quote/NVDA/" },
+      { "label": "SK Hynix Nasdaq ADR listing confirmed July 10, $29.4B offering (17.79M new shares). Underwriters: BofA, Goldman Sachs, Citigroup, JPMorgan. KRX closed Saturday. If fully subscribed, largest ADR in history (surpassing Alibaba's $21.8B 2014 IPO). Underwriter stabilization mandate is now active for the June 27–July 10 window.", "url": "https://www.cnbc.com/2026/06/24/sk-hynix-nasdaq-adr-listing-south-korea.html" },
+      { "label": "June Non-Farm Payrolls Thursday July 2 (markets closed July 3, Independence Day): consensus +172K NFP, 4.3% UE, +0.3% wages MoM. Nasdaq and SPX down 3% and 2% on the week. Small/microcap rotation outperforming large-cap — IWM +0.71% vs Nasdaq −0.24% Friday. NFP binary into 3-day holiday gap is the macro risk for the full week of June 29.", "url": "https://www.cnbc.com/2026/06/26/stock-market-next-week-outlook-for-june-29-july-3-2026.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7354.02,  "change_pct": -0.05, "as_of": "2026-06-26T20:00:00Z" },
+    "nasdaq": { "level": 25297.62, "change_pct": -0.24, "as_of": "2026-06-26T20:00:00Z" },
+    "vix":    { "level": 18.41,    "change_pct": -2.54, "as_of": "2026-06-27T20:00:00Z" },
+    "ust10y": { "level": 4.38,     "change_bps": -2,    "as_of": "2026-06-27T20:00:00Z" },
+    "dxy":    { "level": 101.27,   "change_pct": 0.02,  "as_of": "2026-06-27T20:00:00Z" }
+  },
+  "regime_risk": [
+    {
+      "name": "VIX",
+      "value": 18.41,
+      "trigger_above": 17,
+      "unit": "",
+      "status": "BREACH — 18.41 (confirmed weekend level, down 0.48 from Friday's 18.89 close); noise-level improvement, not a clearing signal; two consecutive CLOSES below 17 required to clear the gate; the 0.48-pt weekend compression is entirely attributable to time-decay on options over the Saturday/Sunday gap, not to any structural fear reduction"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.84,
+      "trigger_above": 5.00,
+      "unit": "%",
+      "status": "CLEAR — 16-bps buffer to 5.00% trigger; 10Y 4.38% (stable, eased 2 bps from Friday's 4.40%); Brent $71–72 (Hormuz normalization holding, no new escalation Saturday); oil disinflation narrative intact; NFP July 2 is the next test of the 30Y trigger ceiling"
+    },
+    {
+      "name": "DXY",
+      "value": 101.27,
+      "trigger_above": 100,
+      "unit": "",
+      "status": "BREACH — 101.27 (marginal ease from Friday's 101.25); still 127 bps above 100 trigger; DXY gradual easing has stalled in the 101.25–101.27 range; no weekend catalyst to break below 100"
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7354.02,
+      "trigger_below": 7460,
+      "unit": "",
+      "status": "BREACH — 106 pts below 7,460 floor; sixth consecutive session with all gates breached; third consecutive daily close making a lower low; no US trading Saturday; 7,300 is the escalation level to BEARISH if SPX closes below on a Monday session"
+    },
+    {
+      "name": "BTC",
+      "value": 60024.33,
+      "trigger_below": 63500,
+      "unit": "USD",
+      "status": "EXIT GATE ACTIVE — Day 5 CONFIRMED; June 27 UTC final close $60,024.33 (corrected from morning partial $60,241.43); shooting star $924 reversal spread; $1,975.67 below $62,000 re-entry gate; no re-entry without two consecutive UTC closes above $62,000; close only $24 above $60,000 psychological floor"
+    },
+    {
+      "name": "Brent",
+      "value": 71.99,
+      "trigger_above": 97,
+      "unit": "USD/bbl",
+      "status": "CLEAR — ~$71–72 (stable from June 26 close of $71.99); Hormuz normalization fully absorbed; Iran ceasefire June 17 holding; $25+ buffer to $97 trigger; no weekend escalation; oil disinflation preserves PCE narrative"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Stop Day 1 active — last close $192.53 (June 26), below $195 two-close stop threshold. No US trading Saturday. June 29 is the binary: close above $195 = stop resets to inactive; close below $195 = Day 2 = FULL EXIT. Do NOT add before June 29 resolution. SK Hynix ADR confirmation is a structural positive for HBM demand but does not clear the stop framework. All three regime gates still breached.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "June 27 UTC confirmed close $60,024.33 (Day 5 exit gate). Shooting star $924 reversal spread at $61,000 resistance. Close only $24 above $60,000 psychological floor — a June 29 open with any negative catalyst could breach $60,000. Re-entry requires two consecutive UTC closes above $62,000 + IBIT resumed inflows 3+ days. No re-entry before NFP July 2.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "000660.KS",
+      "note": "SK Hynix — KRX closed Saturday. Last close ₩2,673,000 (June 26, −8.36%). ADR Nasdaq July 10 confirmed ($29.4B, BofA/Goldman/Citigroup/JPMorgan underwriters — strongest institutional stabilization mandate possible for the June 27–July 10 window). Stop ₩2,540,000 (two-close basis) unchanged but probability of triggering reduced materially by underwriter mandate. June 29 KST open is the first live read.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "SpaceX ETF — US markets closed Saturday. Last close $152.15 (June 26, −0.50%). Bond distribution Day 4 volume 126.91M (declining from peak). Nasdaq 100 inclusion expected July 7 (~$4.3B QQQ/QQQM passive inflows) — coincides with distribution clearance est. July 7–10. Step aside unchanged. IG floor ($150) held on close four consecutive sessions. June 29 volume below 80M shares = normalization on track.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "IWM",
+      "note": "Russell 2000 — small-cap rotation underway: IWM +0.71% Friday vs Nasdaq −0.24%; quarter-end window dressing (June 29–30) institutionally supports small-cap over mega-cap Growth. The IWM long / QQQ short pair trade from Friday's setup remains valid for the June 29–30 window.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "QQQ",
+      "note": "Nasdaq 100 ETF — five consecutive losing sessions; Nasdaq down ~3% on the week. NFP binary July 2 into 3-day holiday gap creates unhedgeable risk for long positions. SPCX Nasdaq 100 inclusion July 7 (~$4.3B QQQ inflows from SPCX weight) is the next structural development but doesn't change the short-term bearish regime.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TLT",
+      "note": "20Y+ Treasury ETF — tactical long thesis intact. 10Y eased 2 bps to 4.38% over the weekend; Brent at $71–72 removes Hormuz inflation premium; NFP downside miss scenario (<130K, wages +0.1–0.2%) would drive TLT higher. Small hedge against QQQ short or NVDA stop trigger. Stop: NFP strong (+220K+, wages +0.4%) AND 30Y break above 4.90%.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA below $195 before June 29 close",
+      "reason": "Stop Day 1 is active. Adding before June 29 resolution increases exposure at the precise moment the framework may mandate full exit. The largest passive buying event in Russell history ($334B, June 26) could not arrest NVDA's decline — active institutional selling absorbed the entire passive reconstitution bid. The reconstitution failure confirmation ($202.17 open → $192.53 close) is the most bearish structural signal of the 2026 NVDA cycle. Weekend brought no clearing catalyst.",
+      "better_entry": "After June 29 close resolution: if close > $195, stop resets to inactive and medium-conviction HOLD resumes. Add zone requires SPX > 7,460 AND VIX < 17 simultaneously at a daily close plus NVDA > $205 on above-average volume. If stop triggers (June 29 close < $195), wait for Q2 FY27 earnings (~Aug 26, $91B revenue guide) as the re-entry catalyst."
+    },
+    {
+      "ticker": "BTC at $60,000–$60,100",
+      "reason": "Confirmed June 27 UTC close $60,024.33 is Day 5 of the exit gate — five consecutive closes below $63,500. The shooting star at $61,000 ($924 reversal spread from high to close) is the most bearish candle of the distribution window. The close of $60,024.33 is only $24 above the $60,000 psychological floor. IBIT outflows $692M June 25 — largest since May 27 — with June 26 flow data still pending publication. Buying into a confirmed downtrend with institutional redemptions ongoing and the NFP binary (July 2) creating holiday gap risk is not a framework-compliant entry.",
+      "better_entry": "Two consecutive UTC closes above $62,000 + IBIT net daily inflows for 3+ consecutive days. Earliest realistic activation: June 29 if cross-asset risk-on (SK Hynix ADR + NVDA stop reset) drives BTC above $62,000. Do not re-enter before NFP July 2 regardless of near-term price action."
+    },
+    {
+      "ticker": "QQQ / XLK into June 29–July 2 window",
+      "reason": "Five consecutive Nasdaq losing sessions; Nasdaq down ~3% on the week. NVDA stop binary (June 29) creates tech-sector overhang for the week's first session. NFP July 2 binary into 3-day holiday gap is unhedgeable. Strong print (+200K, wages +0.4%) cements BofA three-hike framework with no ability to rebalance over July 4–6 weekend. Weak print (<130K) raises recession concerns compressing growth multiples. Both NFP tails are negative for growth-concentrated index ETFs in the current regime.",
+      "better_entry": "Post-NFP July 7 if: (1) NFP prints Goldilocks (+130–180K, wages +0.2–0.3%), (2) VIX closes below 17, and (3) SPX sustains above 7,460 into the week. All three conditions must be met simultaneously before sizing index ETFs."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "IWM long / QQQ short — small-cap vs. mega-cap pair into quarter-end",
+      "direction": "pair",
+      "thesis": "Small-cap rotation thesis from Friday is intact for Monday June 29 and Tuesday June 30 quarter-end window dressing. IWM +0.71% vs Nasdaq −0.24% on Friday (reconstitution flows boosted small-caps while mega-cap Growth fell). Quarter-end institutional rebalancing (June 29–30) supports large-cap defensive and small-cap exposure over concentrated Nasdaq mega-cap. The pair removes broad market beta and captures the regime-driven rotation from AI mega-cap toward value/small-cap. NVDA stop binary (June 29 close) is the primary invalidation risk — if stop triggers, tech-sector growth selling amplifies the pair trade; if stop resets, the pair loses its catalyst.",
+      "entry": "Buy IWM at Monday open (est. 208–212). Short QQQ at Monday open (est. 448–455). Equal dollar size. Stop: IWM falls below 204 on two-close basis OR QQQ closes above 465 (implies SPX > 7,460, invalidating rotation thesis).",
+      "invalidation": "NVDA reclaims $205+ with sustained volume AND SPX closes above 7,460 — would signal Growth ETF rotation resuming. Alternatively, a large macro shock (geopolitical, surprise Fed statement) that collapses the size premium.",
+      "conviction": "medium",
+      "horizon": "2–3 trading days (through quarter-end June 30)"
+    },
+    {
+      "asset": "QQQ July 11 $450 puts — short tech into NFP binary",
+      "direction": "short",
+      "thesis": "Five consecutive Nasdaq losing sessions with no regime clearing. NFP July 2 is binary: strong print (+200K, wages +0.4%) cements BofA three-hike framework, compressing growth multiples into a 3-day holiday gap; weak print (<130K) triggers recession fears that accelerate Nasdaq selling. Defined-risk puts provide protection through the July 3–6 gap and the July 7 return to market. July 11 expiry gives time for the post-NFP repricing to fully develop. NVDA stop trigger (if June 29 closes < $195) would add incremental bearish pressure on Nasdaq and widen the put spread's mark-to-market gain.",
+      "entry": "Buy QQQ July 11 $450 puts at Monday open. Alternative: short QQQ outright at 448–455 with stop at 465. Size 10–15% of gross. IV is elevated but normalized slightly over the weekend — entry on Monday is better than Friday's close.",
+      "invalidation": "QQQ closes above $465 (implies SPX regains ~7,460 regime floor). NFP prints Goldilocks (+140–180K, wages +0.2–0.3%) AND VIX closes below 17 simultaneously.",
+      "conviction": "medium",
+      "horizon": "1–2 weeks (through July 7 NFP reaction)"
+    },
+    {
+      "asset": "TLT — tactical long on NFP downside hedge",
+      "direction": "long",
+      "thesis": "10Y eased 2 bps over the weekend to 4.38%; Brent $71–72 removes the Hormuz inflation premium; oil disinflation supports the narrative holding 30Y below 5.00%. If NFP prints weak (<130K) or wages miss (+0.1–0.2%), the BofA three-hike framework loses credibility and treasuries rally. TLT also provides flight-to-safety in a growth-scare scenario. Small position provides natural hedge against the QQQ short if NFP is actually Goldilocks and tech bounces.",
+      "entry": "Buy TLT at market Monday open. Small size 5–7% of gross. Stop: NFP strong (+220K+, wages +0.4%) AND 30Y yields break above 4.90% in the two sessions following the release.",
+      "invalidation": "Strong NFP with wages above 0.4% month-over-month — 30Y yield moves toward 5.00% trigger; exit immediately.",
+      "conviction": "low",
+      "horizon": "Through NFP reaction (July 2–7)"
+    }
+  ],
+  "bear_case": "Saturday confirmed what Friday signaled: the institutional selling overhang in mega-cap tech has not exhausted. BTC's June 27 UTC close of $60,024.33 — $217 lower than the morning partial read — is the cleaner bearish signal. The shooting star ($924 high-to-close reversal spread) at $61,000 resistance means sellers are present well below the $62,000 re-entry gate. The $60,024.33 close is only $24 above the $60,000 psychological floor — a gap-down opening June 29 from any negative catalyst (weak Asian markets, NVDA stop trigger, surprise Fed commentary) could breach $60,000 for the first time since early 2026. The equity regime is equally sober: six consecutive sessions with all three gates breached (SPX below 7,460, VIX above 17, DXY above 100); the Nasdaq is down ~3% on the week with active tech selling overcoming both the largest passive buying event in Russell history ($334B reconstitution, June 26) and the oil disinflation macro tailwind. NVDA's stop Day 1 clock adds a structural binary to Monday's session — if June 29 closes below $195, the forced long exit removes the primary institutional buy-side support from the order book and structurally increases supply overhang into the NFP week. The NFP on July 2 — with markets closed July 3 — is the worst possible macro context for unresolved stop risk: a strong print (+200K, wages +0.4%) into a 3-day holiday gap arrives when longs who held through the NVDA stop trigger can only exit at the July 7 open, potentially at materially worse levels. Escalation threshold: SPX below 7,300 on any Monday close converts the regime from STEP ASIDE to BEARISH and would require reassessing all long positions. Invalidation: SPX closes above 7,460 AND VIX closes below 17 simultaneously — STEP ASIDE reverts to HOLD. NFP prints Goldilocks (+130–180K, wages +0.2–0.3%) — regime conditions stabilize and the June 29–30 quarter-end window dressing creates a recovery setup.",
+  "body_mdx": "data/briefings/markets/2026-06-27-night.mdx"
+}
