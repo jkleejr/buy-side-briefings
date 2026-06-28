@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
+import { Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import CommandPalette from "@/components/command-palette";
+import HideOnHome from "@/components/hide-on-home";
 import KeysRibbon from "@/components/keys-ribbon";
 import MobileTabbar from "@/components/mobile-tabbar";
 import SiteHeader from "@/components/site-header";
@@ -13,6 +14,15 @@ import { getSiteUrl } from "@/lib/site-url";
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// Display sans — used ONLY for large brief headlines on the homepage reader.
+// The terminal stays all-mono everywhere else; this is the single editorial
+// accent that matches the redesign.
+const inter = Inter({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["700", "800"],
 });
 
 const SITE_URL = getSiteUrl();
@@ -56,13 +66,15 @@ export default function RootLayout({
     <html
       lang="en"
       data-learn="on"
-      className={`${geistMono.variable} h-full antialiased`}
+      className={`${geistMono.variable} ${inter.variable} h-full antialiased`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: learnInitScript }} />
       </head>
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
-        <SiteHeader />
+        <HideOnHome>
+          <SiteHeader />
+        </HideOnHome>
         <StaleBanner />
         <TickerStrip />
         <main className="boot-in mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>

@@ -46,6 +46,14 @@ body {
   line-height: 1.35;
 }
 
+/* Editorial display sans — homepage brief headlines only. Everything else
+   stays mono. Falls back to a system grotesque if the webfont hasn't loaded. */
+.font-display {
+  font-family: var(--font-display), "Inter", ui-sans-serif, system-ui, -apple-system,
+    "Helvetica Neue", Arial, sans-serif;
+  font-feature-settings: normal;
+}
+
 /* Blinking dot for "live" indicators */
 @keyframes term-blink {
   0%, 60% { opacity: 1; }
