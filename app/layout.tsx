@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import CommandPalette from "@/components/command-palette";
-import HideOnHome from "@/components/hide-on-home";
 import KeysRibbon from "@/components/keys-ribbon";
 import MobileTabbar from "@/components/mobile-tabbar";
 import SiteHeader from "@/components/site-header";
@@ -72,9 +71,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: learnInitScript }} />
       </head>
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
-        <HideOnHome>
-          <SiteHeader />
-        </HideOnHome>
+        <SiteHeader />
         <StaleBanner />
         <TickerStrip />
         <main className="boot-in mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>

@@ -202,7 +202,7 @@ function Sidebar({
   setView: (v: "morning" | "evening") => void;
 }) {
   return (
-    <aside className="flex flex-col gap-5 border-[var(--border)] p-3 lg:sticky lg:top-2 lg:h-[calc(100vh-1.5rem)] lg:self-start lg:overflow-y-auto lg:border-r panel-scroll">
+    <aside className="flex flex-col gap-5 border-[var(--border)] p-3 lg:sticky lg:top-10 lg:h-[calc(100vh-3rem)] lg:self-start lg:overflow-y-auto lg:border-r panel-scroll">
       <div>
         <div className="text-[15px] font-bold uppercase tracking-[0.28em] text-[var(--amber)]">
           Buy-Side
