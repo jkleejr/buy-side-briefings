@@ -1,0 +1,152 @@
+{
+  "routine": "markets",
+  "date": "2026-06-28",
+  "window": "night",
+  "generated_at": "2026-06-29T01:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🔴",
+    "label": "STEP ASIDE — Sunday Night: BTC Day 6 LOCKED at $59,578; Samsung Blue House $648B CONFIRMED; NVDA Stop Day 1 Active; Monday June 29 Is the Most Critical Session of the 2026 Cycle",
+    "conviction": "high",
+    "rationale_short": "Sunday delivered two binary resolutions. First: BTC's June 28 UTC daily candle confirmed CLOSED at $59,578.35 (−$445.98, −0.74% from June 27's $60,024.33 close) — Day 6 of the exit gate is now LOCKED. Six consecutive UTC daily closes below $63,500. Session low $58,888.80 is the lowest BTC close since Q1 2026. Re-entry gate ($62,000) is now $2,421.65 (+4.07%) above confirmed close; do not re-enter before two consecutive UTC closes above $62,000 AND IBIT inflows resuming. Second: Samsung Blue House ceremony CONFIRMED June 29 KST — President Lee Jae-myung hosted Samsung Chairman Jay Y. Lee + SK Group Chairman Tae-won Choi at '3 Mega-Projects National Report Meeting'; Samsung committed 1,000T won ($648B): AI semiconductor fabs, AI data centers, batteries, displays; new Honam southwest cluster; largest corporate investment in Korean history. The Samsung confirmation is the only structural positive in tonight's dossier — it materially raises NVDA stop-reset probability from ~40% to ~60–65% and sets up SK Hynix for the strongest KOSPI open of the 2026 cycle. US equity levels unchanged from Friday: SPX 7,354.02 (−0.05%), Nasdaq 25,297.62 (−0.24%), VIX 18.41, UST10Y 4.38%, DXY 101.27. All three US-equity regime gates remain simultaneously breached (seventh consecutive session). Monday June 29 resolves four binaries in a single session: (1) NVDA stop Day 2 — close above $195 = reset, close below $195 = FULL EXIT mandatory; (2) SK Hynix KST open — first live price discovery for the confirmed Blue House catalyst; (3) SPCX bond distribution Day 5 — critical volume read; (4) Quarter-end rebalancing begins (JPMorgan estimates ~$165B in stock sales settling June 30). Conviction upgrade to HIGH: BTC Day 6 LOCKED is a definitive exit-gate trigger; do not re-enter crypto or add tech longs until June 29 closes resolve.",
+    "supporting_data": [
+      { "label": "BTC June 28 UTC daily candle CONFIRMED CLOSED: O$60,028.41 / H$60,547.56 / L$58,888.80 / C$59,578.35 (−$445.98, −0.74% from June 27 close $60,024.33); volume 2,095.54 BTC ($124.8M). Day 6 exit gate LOCKED. Session low $58,888 = lowest BTC print since early 2026. Re-entry gate $62,000 is $2,421.65 (+4.07%) above confirmed close. June 29 partial candle as of 01:04 UTC: $59,481.50. Source: Crypto.com MCP confirmed close.", "url": "https://crypto.com/exchange/trade/BTC_USDT" },
+      { "label": "Samsung Blue House ceremony CONFIRMED June 29 KST: President Lee Jae-myung hosted Samsung Chairman Jay Y. Lee + SK Group Chairman Tae-won Choi at '3 Mega-Projects National Report Meeting'; Samsung committed 1,000T won ($648B): AI semiconductor fabs, AI data centers, batteries, displays; new Honam southwest cluster. NVDA read-through: $226B+ Samsung AI data centers = demand validation at national-strategic scale. SK Hynix read-through: HBM demand + ADR underwriter political backing + presidential endorsement.", "url": "https://www.koreatimes.co.kr/southkorea/politics/20260628/samsung-sk-hynix-to-unveil-investment-plans-this-week-presidential-office" },
+      { "label": "NVDA Stop Day 1 active — close $192.53 (June 26) < $195 two-close stop threshold. Samsung Blue House confirmation raises June 29 stop-reset probability to ~60–65% (from ~40% pre-weekend). June 29 binary: close above $195 = stop resets inactive, medium HOLD resumes; close below $195 = FULL EXIT mandatory. Do NOT add before June 29 resolution. All three US-equity regime gates breached simultaneously for seventh consecutive session.", "url": "https://finance.yahoo.com/quote/NVDA/" },
+      { "label": "IBIT outflows CONFIRMED — $444.5M June 26 (seventh consecutive day of net outflows); weekly outflow $1.79B. US Bitcoin ETF aggregate: nine consecutive sessions of outflows. Fear & Greed Index June 28: 18 (Extreme Fear). Deribit June 26–27 quarterly expiry settled: $10.63B combined BTC+ETH; max pain $72K failed (settled ~$60K); 80% ($8.6B) expired OTM; P/C ratio 0.63.", "url": "https://farside.co.uk/bitcoin-etf-flow/" },
+      { "label": "US PCE inflation May 2026: 4.1% YoY — hotter than expected; dominant macro headwind for risk assets. Quarter-end equity rebalancing: JPMorgan estimates ~$165B in stock sales settling June 30. SPX 7,354.02, Nasdaq 25,297.62, VIX 18.41, UST10Y 4.38%, DXY 101.27 — all unchanged from Friday June 26 close (US markets closed Sunday). BTC Q2 2026: −12% (second consecutive losing quarter).", "url": "https://www.cnbc.com/2026/06/26/stock-market-next-week-outlook-for-june-29-july-3-2026.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7354.02,  "change_pct": -0.05, "as_of": "2026-06-26T20:00:00Z" },
+    "nasdaq": { "level": 25297.62, "change_pct": -0.24, "as_of": "2026-06-26T20:00:00Z" },
+    "vix":    { "level": 18.41,    "change_pct": 0.00,  "as_of": "2026-06-28T20:00:00Z" },
+    "ust10y": { "level": 4.38,     "change_bps": 0,     "as_of": "2026-06-28T20:00:00Z" },
+    "dxy":    { "level": 101.27,   "change_pct": 0.00,  "as_of": "2026-06-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    {
+      "name": "VIX",
+      "value": 18.41,
+      "trigger_above": 17,
+      "unit": "",
+      "status": "BREACH — 18.41 (unchanged from Saturday; no US trading Sunday; seventh consecutive session above the 17 gate; 1.41 pts above threshold; two consecutive CLOSES below 17 required to clear; Samsung Blue House risk-on catalyst on Monday June 29 KST could compress VIX toward 17.5 but full gate clearance not expected in a single session)"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.84,
+      "trigger_above": 5.00,
+      "unit": "%",
+      "status": "CLEAR — 16-bps buffer to 5.00% trigger; 10Y 4.38% (unchanged from Friday); PCE 4.1% is the primary inflation headwind but has been absorbed without breaking the 30Y ceiling; Brent ~$71–72 (Hormuz normalization holding, no weekend escalation); NFP July 2 is the next test of the 30Y trigger ceiling"
+    },
+    {
+      "name": "DXY",
+      "value": 101.27,
+      "trigger_above": 100,
+      "unit": "",
+      "status": "BREACH — 101.27 (unchanged; still 127 bps above 100 trigger; Samsung Blue House June 29 KST may modestly weaken DXY via KRW strength but the magnitude is insufficient to clear the gate; DXY has been stalled in the 101.25–101.27 band for two sessions)"
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7354.02,
+      "trigger_below": 7460,
+      "unit": "",
+      "status": "BREACH — 106 pts below 7,460 floor; seventh consecutive session with gate breached; no US trading Sunday; Samsung Blue House confirmation is the most powerful single risk-on catalyst for a Monday open since the HBM4 thesis emerged — but 106 pts of gap to the regime threshold means full gate clearance on June 29 requires extraordinary demand; 7,300 is the escalation level to BEARISH if SPX closes below on any session"
+    },
+    {
+      "name": "BTC",
+      "value": 59578.35,
+      "trigger_below": 63500,
+      "unit": "USD",
+      "status": "EXIT GATE LOCKED — Day 6 CONFIRMED; June 28 UTC final close $59,578.35 (O$60,028 / H$60,547 / L$58,888); −$445.98 (−0.74%) from June 27 close; sixth consecutive UTC daily close below $63,500; re-entry gate $62,000 is $2,421.65 (+4.07%) above confirmed close; session low $58,888.80 = lowest BTC print since early 2026; two consecutive UTC closes above $62,000 + IBIT inflows resuming required before any re-entry"
+    },
+    {
+      "name": "Brent",
+      "value": 71.99,
+      "trigger_above": 97,
+      "unit": "USD/bbl",
+      "status": "CLEAR — ~$71–72 (unchanged from Friday; Hormuz normalization holding; no weekend escalation; $25+ buffer to $97 trigger; oil disinflation preserves 30Y buffer and moderates PCE inflation expectations)"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Stop Day 1 active — last close $192.53 (June 26), below $195 two-close stop threshold. Samsung Blue House CONFIRMED June 29 KST ($648B): raises stop-reset probability from ~40% to ~60–65%. June 29 US close is the binary: above $195 = stop resets inactive; below $195 = Stop Day 2 = FULL EXIT mandatory. Do NOT add before June 29 resolution. All three regime gates still breached (VIX 18.41, DXY 101.27, SPX 7,354). Do NOT hold through NFP July 2 with an unresolved stop trigger.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "June 28 UTC confirmed close $59,578.35 — Day 6 exit gate LOCKED. Six consecutive closes below $63,500. Session low $58,888.80 is the lowest BTC print since early 2026. Re-entry requires two consecutive UTC closes above $62,000 (+$2,421 / +4.07% from confirmed close) + IBIT net inflows resuming for 3+ days. Fear & Greed 18 (Extreme Fear). IBIT outflows $444.5M June 26 (seventh consecutive day). No re-entry before NFP July 2 clears the macro binary.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "000660.KS",
+      "note": "SK Hynix — KRX closed Sunday. Last KST close ₩2,673,000 (June 26, −8.36%). Samsung Blue House CONFIRMED June 29 KST ($648B): strongest possible positive catalyst for June 29 KST open. Three simultaneous institutional supports: (1) Samsung $226B+ AI data center demand validates HBM4E thesis; (2) ADR underwriter stabilization mandate (BofA/Goldman/Citigroup/JPMorgan); (3) Korean presidential endorsement eliminates forced-liquidation cascade risk. BUY June 29 KST open IF KOSPI above 8,500 AND SK Hynix opens above ₩2,700,000. Stop ₩2,540,000 unchanged.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "SpaceX ETF — US markets closed Sunday. Last close $152.15 (June 26, −0.50%). Bond distribution Day 5 is Monday June 29 (first post-reconstitution pure-distribution session). Samsung Blue House risk-on provides modest Monday tailwind. Critical volume read: below 80M shares = clearance on track for July 7; above 150M = extended distribution. IG floor $150 held four consecutive sessions. Step aside HIGH conviction unchanged. Nasdaq 100 inclusion July 7 (~$4.3B QQQ/QQQM) coincides with clearance window.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "IWM",
+      "note": "Russell 2000 — quarter-end rebalancing (June 29–30) supports small-cap over mega-cap Growth. IWM +0.71% Friday vs Nasdaq −0.24%. JPMorgan estimates ~$165B in equity sales settling June 30 (largest quarterly rebalancing of 2026). Samsung Blue House risk-on on Monday morning is the single most powerful cross-sector catalyst for the June 29 open. IWM long / QQQ short pair remains valid for the June 29–30 window.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "QQQ",
+      "note": "Nasdaq 100 ETF — five consecutive losing sessions; Nasdaq −3% on the week. NFP binary July 2 into 3-day holiday gap creates unhedgeable risk. NVDA stop binary June 29 (close above/below $195) is the single largest tech-sector swing factor for Monday. SPCX Nasdaq 100 inclusion July 7 (~$4.3B passive inflows) is the next structural positive but doesn't change the near-term bearish regime. Quarter-end rebalancing (~$165B equity sales) adds institutional selling pressure June 29–30.",
+      "sentiment": "negative"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "BTC at $59,000–$60,000 (Day 6 LOCKED)",
+      "reason": "Six consecutive UTC daily closes below $63,500. Day 6 exit gate is LOCKED — the framework does not allow re-entry until two consecutive UTC closes above $62,000 AND IBIT inflows resume for 3+ consecutive days. The June 28 session low $58,888.80 is a new multi-month low. Fear & Greed at 18 (Extreme Fear). IBIT outflows seventh consecutive day ($444.5M June 26, weekly $1.79B). Negative dealer gamma regime (from Deribit June 26-27 expiry settlement at $60K vs max pain $72K) persists — dealers remain short gamma below $68K, amplifying moves in either direction. Any bounce toward $60,500–$61,000 is a distribution-sell opportunity, not a re-entry signal.",
+      "better_entry": "Two consecutive UTC closes above $62,000 (current gap: $2,421.65 / +4.07%) + IBIT daily inflows for 3+ consecutive days. Earliest realistic re-entry window: post-NFP July 7 IF cross-asset risk-on from Samsung catalyst sustains and spot ETF flows reverse. Do not re-enter before NFP July 2 regardless of near-term price action."
+    },
+    {
+      "ticker": "NVDA below $195 before June 29 US close",
+      "reason": "Stop Day 1 active. Adding before June 29 resolution increases exposure at the precise moment the framework may mandate full exit. The June 26 Russell Reconstitution failure ($202.17 open → $192.53 close on the largest passive buying event in Russell history) is the most bearish structural signal of the 2026 NVDA cycle. Samsung Blue House CONFIRMED is the most powerful positive catalyst since HBM4E thesis emergence — but it does NOT clear the stop framework and does NOT suspend the exit trigger. June 29 close remains the binary.",
+      "better_entry": "After June 29 US close resolution: if close > $195, stop resets inactive, medium-conviction HOLD resumes. Add zone requires SPX > 7,460 AND VIX < 17 simultaneously at a daily close plus NVDA > $205 on above-average volume. If stop triggers (June 29 close < $195), wait for Q2 FY27 earnings (~Aug 26, $91B revenue guide) as the primary re-entry catalyst."
+    },
+    {
+      "ticker": "QQQ / XLK into June 29–July 4 window",
+      "reason": "Five consecutive Nasdaq losing sessions; Nasdaq −3% on the week. NVDA stop binary (June 29) creates tech-sector overhang for Monday. Quarter-end rebalancing (~$165B JPMorgan estimate) settles June 30 — institutional selling pressure on mega-cap Growth concentrated in Monday-Tuesday window. NFP July 2 binary into 3-day holiday gap is unhedgeable. Both NFP tails are negative for growth-concentrated index ETFs in the current regime: strong print (+200K) cements BofA three-hike framework; weak print (<130K) raises recession concerns compressing growth multiples.",
+      "better_entry": "Post-NFP July 7 if: (1) NFP prints Goldilocks (+130–180K, wages +0.2–0.3%), (2) VIX closes below 17 on two consecutive sessions, and (3) SPX sustains above 7,460. All three conditions must be met simultaneously before sizing index ETFs."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SK Hynix (000660.KS) — Samsung Blue House confirmed entry",
+      "direction": "long",
+      "thesis": "Samsung Blue House CONFIRMED June 29 KST ($648B / 1,000T won): $226B+ AI data centers + $194B semiconductor plants + presidential endorsement. SK Hynix benefits: (1) Samsung AI data center demand = HBM4E demand validation at national scale; (2) ADR underwriter stabilization mandate (BofA/Goldman/Citigroup/JPMorgan) now backed by presidential endorsement — most powerful institutional support structure in SK Hynix history; (3) Historical precedent: post-dual-circuit-breaker KOSPI (2020 COVID, 2022 MSCI) = +15–20% within 10 sessions. BUY June 29 KST open. Scale 50% position on open; add 50% after June 30 KOSPI stabilization.",
+      "entry": "Buy 50% at June 29 KST open IF: KOSPI opens above 8,500 AND SK Hynix opens above ₩2,700,000. Do NOT enter if open is below ₩2,600,000. Add remaining 50% on June 30 KST close above 8,500 for two consecutive sessions.",
+      "invalidation": "June 29 KST close below ₩2,540,000 (Stop Day 1 activates). Samsung semiconductor plant ($194B Honam) reinterpreted as pure HBM4E competition rather than demand validation. US premarket adverse (NVDA stop trigger, SPX below 7,300) contagion to KOSPI.",
+      "conviction": "high",
+      "horizon": "Through ADR Nasdaq listing July 10; full exit review on Q2 KST earnings July 29"
+    },
+    {
+      "asset": "IWM long / QQQ short — quarter-end rebalancing pair",
+      "direction": "pair",
+      "thesis": "Quarter-end institutional rebalancing (June 29–30): JPMorgan estimates ~$165B in equity sales settling June 30 — selling concentrated in mega-cap Growth (QQQ/XLK) while window-dressing supports small-cap. IWM +0.71% vs Nasdaq −0.24% on Friday. The pair removes broad market beta and captures the rotation from AI mega-cap toward value/small-cap. Samsung Blue House risk-on on Monday morning is the single most powerful cross-sector catalyst of the 2026 cycle — if it drives KOSPI +4–6% and US premarket higher, both legs of the pair are valid (small-cap gaps up, mega-cap distribution selling into strength). NVDA stop binary (June 29 close) is the key risk: stop trigger amplifies QQQ short; stop reset narrows the short side.",
+      "entry": "Buy IWM at Monday open (est. 208–212). Short QQQ at Monday open (est. 448–455). Equal dollar size. Stop: IWM falls below 204 on two-close basis OR QQQ closes above 465 (implies SPX > 7,460, invalidating rotation thesis).",
+      "invalidation": "Samsung catalyst drives SPX above 7,460 AND VIX below 17 simultaneously (full regime clearance). NVDA reclaims $205+ with sustained volume. JPMorgan rebalancing flow estimate proves smaller than expected.",
+      "conviction": "medium",
+      "horizon": "2–3 trading sessions (through quarter-end June 30)"
+    },
+    {
+      "asset": "QQQ July 11 $450 puts — short tech into NFP binary",
+      "direction": "short",
+      "thesis": "Five consecutive Nasdaq losing sessions; Nasdaq −3% on the week. NFP July 2 is binary: strong print (+200K, wages +0.4%) cements BofA three-hike framework, compressing growth multiples into a 3-day holiday gap; weak print (<130K) triggers recession fears accelerating Nasdaq selling. Defined-risk puts provide protection through the July 3–6 holiday gap and the July 7 return to market. NVDA stop trigger on June 29 (if close below $195) adds incremental bearish tech pressure. Quarter-end selling (June 29–30) front-loads the Nasdaq distribution before the NFP gap.",
+      "entry": "Buy QQQ July 11 $450 puts at Monday open. Alternative: short QQQ outright at 448–455 with stop at 465. Size 10–15% of gross. IV is elevated but Samsung risk-on on Monday may compress entry costs modestly vs. Friday close.",
+      "invalidation": "QQQ closes above $465 (implies SPX regains ~7,460 regime floor AND Samsung catalyst fully absorbed). NFP prints Goldilocks (+140–180K, wages +0.2–0.3%) AND VIX closes below 17 simultaneously on July 2.",
+      "conviction": "medium",
+      "horizon": "1–2 weeks (through July 7 NFP reaction and holiday gap resolution)"
+    }
+  ],
+  "bear_case": "Sunday's confirmed data leaves no ambiguity: BTC's exit gate is locked at Day 6, the US equity regime has been simultaneously in breach for seven sessions, and the macro headwinds (PCE 4.1%, IBIT outflows seventh consecutive day at $444.5M, Fear & Greed at 18) are structural rather than episodic. The Deribit June 26-27 quarterly settlement at ~$60K vs. max pain $72K — with 80% of $10.63B expiring worthless — is the clearest evidence that the crypto options market is fully repricing to a new structural range below $63,500, not a temporary dislocation. BTC Q2 2026 closed at −12%, the second consecutive losing quarter — a statistical rarity that historically signals extended distribution, not near-term reversal. The Samsung Blue House confirmation is the lone bull case, but it is a 10-year Korean national plan announced on a Sunday when US markets cannot respond in real time. The NVDA stop Day 1 clock — which started on Friday's June 26 close at $192.53 — means Monday's close either resets the framework or triggers a forced institutional exit of one of the year's most-crowded AI longs, adding supply overhang into the NFP week. Quarter-end rebalancing (~$165B JPMorgan estimates settling June 30) creates two sessions of concentrated mega-cap selling immediately after the weekend. The escalation signal is clear: SPX below 7,300 on any June 29 close converts the regime from STEP ASIDE to BEARISH, requiring reassessment of all long positions. The NFP July 2 binary into the July 3-6 holiday gap is the final risk amplifier — a strong print cements BofA's three-hike framework with no ability to rebalance over the long weekend. Invalidation: SPX closes above 7,460 AND VIX closes below 17 simultaneously; BTC posts two consecutive UTC closes above $62,000 with IBIT inflows resuming; NFP prints Goldilocks. All three simultaneously would convert STEP ASIDE to HOLD across all watchlist names.",
+  "body_mdx": "data/briefings/markets/2026-06-28-night.mdx"
+}
