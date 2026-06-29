@@ -1,0 +1,165 @@
+{
+  "routine": "markets",
+  "date": "2026-06-29",
+  "window": "night",
+  "generated_at": "2026-06-29T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — AI Re-Rating + SCOTUS; SPX 24 Pts Short; NVDA Exit Triggered",
+    "conviction": "medium",
+    "rationale_short": "Nasdaq surged +2.07% on three catalysts not in the morning brief: SCOTUS upheld Federal Reserve independence (Lisa Cook ruling), Alphabet joined the Dow (+5%, driving it above 52,000 for the first time in history), and Iran stand-down persisted. SPX closed at 7,436 — 24 pts below the 7,460 regime floor — and NVDA closed $0.03 below $195 (Stop Day 2 TRIGGERED: mandatory full exit). The market absorbed $165B of quarter-end selling and still delivered Nasdaq's strongest session in three weeks. Upgrade from STEP ASIDE to HOLD at medium conviction. Tomorrow's Q2 close is the first realistic gate-clearing session; NFP July 2 (consensus 114K–130K) is the week's decisive binary.",
+    "supporting_data": [
+      {
+        "label": "Nasdaq +2.07% to 25,820 — strongest session in 3+ weeks; GOOGL +5% (first Dow day), TSM +3.4%, META +3%, AMZN +2.6%; AI re-rating broadened from semis to software/services",
+        "url": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-june-29-224230573.html"
+      },
+      {
+        "label": "SCOTUS upheld Federal Reserve independence (Lisa Cook case) — removes tail risk of political interference in monetary policy; reinforces Warsh's data-driven rate path as institutional bedrock",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-29-2026"
+      },
+      {
+        "label": "Dow closed above 52,000 for first time in history (+307 pts, +0.59%); Alphabet's first Dow day with ~7x Verizon's prior price-weighting drove the record milestone",
+        "url": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-june-29-224230573.html"
+      },
+      {
+        "label": "SPX closed 7,436 (+1.12%) — market absorbed JPMorgan's $165B quarter-end selling estimate and still delivered +1.12%; 24 pts below 7,460 gate; tomorrow's Q2 close window dressing is the gate-clearing candidate",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-29-2026"
+      },
+      {
+        "label": "NVDA $194.97 — Stop Day 2 TRIGGERED ($0.03 below $195 threshold); session high $195.55 cleared the gate intraday but active selling above $195 overwhelmed demand into the close; mandatory full exit per framework",
+        "url": "https://finance.yahoo.com/quote/NVDA/"
+      },
+      {
+        "label": "BTC $60,370 (+1.91%) — Day 8 exit gate; session high $60,784; still $1,630 below $62,000 re-entry gate; SCOTUS + AI re-rating + Iran stand-down produced the best BTC candle since the exit gate activated but no gate clearance",
+        "url": "https://crypto.com/exchange/trade/spot/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7436.0,   "change_pct": 1.12,  "as_of": "2026-06-29T20:00:00Z" },
+    "nasdaq": { "level": 25820.15, "change_pct": 2.07,  "as_of": "2026-06-29T20:00:00Z" },
+    "vix":    { "level": 16.41,    "change_pct": -13.11, "as_of": "2026-06-29T11:07:00Z" },
+    "ust10y": { "level": 4.37,     "change_bps": 0,     "as_of": "2026-06-29T20:00:00Z" },
+    "dxy":    { "level": 101.33,   "change_pct": 0.00,  "as_of": "2026-06-29T20:00:00Z" }
+  },
+  "regime_risk": [
+    {
+      "name": "VIX",
+      "value": 16.41,
+      "trigger_above": 17,
+      "unit": ""
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.87,
+      "trigger_above": 5.00,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 101.33,
+      "trigger_above": 100,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7436.0,
+      "trigger_below": 7460,
+      "unit": ""
+    },
+    {
+      "name": "BTC",
+      "value": 60370.0,
+      "trigger_below": 63500,
+      "unit": "USD"
+    },
+    {
+      "name": "Brent",
+      "value": 72.91,
+      "trigger_above": 97,
+      "unit": "USD/bbl"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Stop Day 2 TRIGGERED — $194.97 close, $0.03 below $195 threshold. Mandatory full exit per framework. Session high $195.55 intraday; active selling above $195 absorbed the threshold for the third consecutive catalyst session. Do NOT re-enter before: SPX > 7,460 + VIX < 17 (simultaneous closes) + NVDA > $200 on volume. Alternatively: Aug 26 Q2 FY27 earnings ($91B guide) as fundamental re-entry.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "First day as Dow component — +5%; SCOTUS Fed independence ruling reinforces AI infrastructure spend timeline. Structural institutional demand from price-weighted Dow ETF rebalancing extends over 2–4 weeks. Entry zone: $345–355 pullback. Night briefing's primary new long idea.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSM",
+      "note": "+3.40% on Winbond AI chip partnership; HBM4 supply chain thesis confirming. TSM ADR did not follow the June 29 KOSPI sell-on-Samsung pattern — constructive read-through for the AI semi thesis.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$60,370 (+1.91%) — Day 8 exit gate; session high $60,784. Strongest candle since gate activated. Still $1,630 below $62,000 re-entry. Two consecutive UTC closes above $62,000 AND IBIT inflows resuming required. No re-entry before post-NFP July 7.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "Nasdaq-100 inclusion effective July 7 (~$4.3B passive inflows from QQQ/QQQM). SCOTUS ruling indirectly positive — reduces institutional risk-off that had been depressing speculative valuations. Bond distribution framework still active; check June 29 final volume. SK Hynix ADR listing July 10 is a secondary catalyst for the space/tech infrastructure theme.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CMCSA",
+      "note": "+20–25% on NBCUniversal + Sky tax-free spin-off announcement (timeline: ~1 year). Largest US media restructuring in a decade. CHTR +14.5% on read-through. Briefly drew capital from AI names at the open; monitor for mean reversion as the multi-year spinoff timeline extends.",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA",
+      "reason": "Stop Day 2 TRIGGERED at $194.97 — $0.03 below the $195 mandatory exit threshold. Framework requires full exit at Monday's close. Adding any NVDA position before the exit process completes (Tuesday morning) means entering at the precise moment the framework mandates institutional selling. Session high $195.55 confirms active supply above $195 absorbed the strongest macro backdrop in weeks.",
+      "better_entry": "SPX > 7,460 AND VIX < 17 (both closing simultaneously) AND NVDA > $200 on above-average volume. Alternatively: August 26 Q2 FY27 earnings ($91B guide) as the fundamental re-entry catalyst."
+    },
+    {
+      "ticker": "BTC",
+      "reason": "Day 8 exit gate — session high $60,784 is $1,216 below the $62,000 re-entry threshold at the intraday peak. The strongest macro risk-on session in weeks (SCOTUS + AI re-rating + Iran stand-down + Dow record) produced a session high that confirms structural distribution above $61,000.",
+      "better_entry": "Two consecutive UTC closes above $62,000 AND IBIT daily inflows positive for 3+ consecutive days. Earliest realistic window: July 7–8 post-NFP if Goldilocks print."
+    },
+    {
+      "ticker": "IWM",
+      "reason": "The morning brief's IWM long / QQQ short pair trade was a losing setup: IWM +0.07% vs. QQQ/Nasdaq +2.07%. The AI re-rating and GOOGL Dow inclusion drove concentrated mega-cap tech outperformance — the exact opposite of the rotation thesis. Tomorrow's Q2 close window dressing is likely to extend large-cap tech's outperformance over small-cap.",
+      "better_entry": "Post-NFP July 2 if Goldilocks print confirms no further rate hikes and small-cap Q2 earnings recovery. Requires VIX < 17 close AND SPX > 7,460 AND NFP not locking in the BofA three-hike framework."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "GOOGL",
+      "direction": "long",
+      "thesis": "Alphabet's Dow addition gives it ~7x Verizon's prior price-weighting, creating sustained institutional demand across every Dow-linked rebalancing over the next 2–4 weeks. SCOTUS upheld Fed independence, reinforcing AI infrastructure spend timelines. GOOGL is the AI platform name best positioned to benefit from a stable Fed governance framework (long-duration valuation intact). The +5% day-1 move has a rebalancing tail that extends across multiple sessions.",
+      "entry": "Pullback to $345–352. 50% at entry, 50% on revisit to $345.",
+      "invalidation": "SPX closes below 7,300 (regime escalates to BEARISH) OR GOOGL closes below $340 on above-average volume.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks (through Q2 earnings season)"
+    },
+    {
+      "asset": "NVDA July 11 $190 puts",
+      "direction": "short",
+      "thesis": "Stop Day 2 triggered at $194.97 — mandatory full exit creates institutional selling at Tuesday's open. Session high $195.55 shows active supply above $195 that absorbed the strongest macro day of the cycle. Forced-exit dynamics can produce 5%+ intraday ranges (precedent: June 26 NVDA opened $202, closed $192.53 on the year's highest-volume session). NVDA July 11 $190 puts provide defined risk through the NFP binary and July 4 gap.",
+      "entry": "NVDA July 11 $190 puts at Tuesday open. Size 8–10% of gross. Alternative: short NVDA at $193–196 with stop at $202.",
+      "invalidation": "NVDA reclaims $200 on above-average volume AND SPX simultaneously closes above 7,460 — signals forced exit has been absorbed by fresh buyers. Exit immediately.",
+      "conviction": "medium",
+      "horizon": "Through July 7 post-holiday return"
+    },
+    {
+      "asset": "TLT / 30Y UST",
+      "direction": "hedge",
+      "thesis": "NFP consensus July 2 is 114K–130K — a range with bad tails on both sides through the July 4 holiday gap. A weak print (<90K) collapses the BofA three-hike narrative; a strong print (>150K) drives 30Y toward 4.90% and equity multiples compress. No hedging opportunity July 3–6 — TLT is the only vehicle through the binary gap. VIX compression today (pre-market 16.41 vs. 18.89 Friday close) reduces put premiums, improving TLT entry vs. Friday.",
+      "entry": "Maintain or add TLT at Tuesday open. 5–7% of gross.",
+      "invalidation": "Strong NFP (+150K+, wages +0.4%) — exit TLT immediately. Goldilocks NFP + VIX < 17 + SPX > 7,460 all simultaneously — exit TLT and shift to net long.",
+      "conviction": "medium",
+      "horizon": "Through July 7"
+    }
+  ],
+  "bear_case": "NVDA's Stop Day 2 trigger is the bear case's strongest data point. The session high was $195.55 — the stop cleared intraday — but the close was $194.97, $0.03 below the mandatory exit threshold. This means NVDA's demand at the most favorable macro backdrop in weeks (SCOTUS + AI re-rating + Iran stand-down + Dow record) was insufficient to sustain a $195 close. The #1 Russell Growth constituent and AI hardware bellwether could not hold $195 on what may be 2026's strongest macro day — confirming active institutional selling above $195 has now absorbed three consecutive positive catalysts (reconstitution $334B June 26, Samsung Blue House $648B June 29, SCOTUS/AI re-rating June 29). SPX at 7,436 is 24 points below the 7,460 regime floor after this strongest session in weeks; if three simultaneous tailwinds cannot close the gate, a strong NFP (>150K, wages +0.4%) on July 2 locks in the BofA three-hike framework over a 3-day holiday gap — and July 7 opens gap-down into an earnings season with compressed multiples. Invalidation: SPX closes above 7,460 AND VIX closes below 17 simultaneously on June 30 (Q2 close) — regime formally clears and HOLD upgrade is validated. NFP July 2 Goldilocks (90–150K, wages +0.2%) AND SPX sustains above 7,460 on July 7 — BUY upgrade viable for the first time since early June.",
+  "body_mdx": "data/briefings/markets/2026-06-29-night.mdx"
+}
