@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "4-8 weeks",
-  "current_price": 1078.48,
+  "current_price": 887.33,
   "entry": "Enter $1,050-1,090 (GS near 52-week high of $1,093; a FOMC-day dip is the entry). Scale: 70% initial entry at current levels or first pullback; add 30% on any Warsh-hawkish dip to $1,060-1,070 on June 17. Do NOT chase above $1,095 on Day 1 — wait for opening rotation to confirm direction. ≤3% gross.",
   "stop_loss": "$990 daily close (~7.5% below $1,070 entry midpoint) — implies Warsh June 17 signals rate cuts in 2026, OR Goldman Q2 earnings miss badly on IB revenue in late July, OR broad equity market selloff of 5%+ drives financial sector de-rating",
   "targets": [
@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-16",
   "expires_at": "2026-08-15",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["financials", "GS", "rates", "FOMC", "macro", "IB", "IPO", "higher-for-longer", "Warsh"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-29",
+    "final_price": 990.0,
+    "return_pct": -7.5,
+    "outcome_label": "Stop triggered — GS fell from $1,106 ATH (June 22) to $887.33 by June 29",
+    "note": "GS reached an all-time high of $1,106.37 on June 22 before a sharp multi-session decline. By June 29 GS is at $887.33, well below the $990 stop level. The hawkish IB fee thesis was directionally correct in the short run (ATH on June 22) but the broader equity selloff driven by KOSPI distribution, quarter-end rebalancing ($165B institutional selling), and NVDA stop cascade dragged financials into the stop zone. Exit at stop level $990 vs $1,070 entry midpoint."
+  },
   "levels": {
     "entry_low": 1050.0,
     "entry_high": 1090.0,

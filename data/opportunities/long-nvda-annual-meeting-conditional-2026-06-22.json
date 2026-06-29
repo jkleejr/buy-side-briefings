@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-4 weeks",
-  "current_price": 210.1,
+  "current_price": 195.15,
   "entry": "Enter $205–215 conditional on EITHER (1) DXY US session close below 100.00 on June 22 (macro gate cleared — NVDA conditional add unlocked for all three gate conditions), OR (2) Jensen Huang at the NVDA Annual Meeting June 24, 9 AM PT virtual, explicitly addresses AI demand as strong/accelerating ('demand is extraordinary,' '$200B+ infrastructure year confirmed,' 'Taiwan $150B procurement on track'). Both conditions are gate-clearing events. Do NOT add on an intraday DXY dip — only the 4 PM ET US session close counts for condition (1). If neither condition triggers by June 24 close, this opportunity remains open but un-entered; re-assess after MU earnings print and PCE June 25.",
   "stop_loss": "$195 daily close — below the June 10 re-entry zone floor and the primary HOLD-regime support level; implies a macro regime shift to STEP_ASIDE (DXY > 101 or SPX < 7,460 on a daily close) that removes the framework supporting NVDA longs",
   "targets": [
@@ -46,9 +46,15 @@
   ],
   "created_at": "2026-06-22",
   "expires_at": "2026-07-15",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["NVDA", "Nvidia", "AI", "catalyst", "Annual-Meeting", "DXY-gate", "semis", "conditional-add"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-29",
+    "final_price": 192.53,
+    "return_pct": -8.4,
+    "outcome_label": "Stop triggered — NVDA June 26 close $192.53 < $195 stop",
+    "note": "NVDA closed at $192.53 on June 26, breaching the $195 daily-close stop. Stop Day 2 (June 29) pre-market at $195.15, but June 26 close already triggered the stop. Stop Day cascade driven by KOSPI -5.81% sell-on-Samsung Blue House blueprint and $165B quarter-end institutional selling. DXY never cleared the 99.00 gate. Full exit at $192.53 vs $210.10 entry midpoint."
+  },
   "levels": {
     "entry_low": 205.0,
     "entry_high": 215.0,

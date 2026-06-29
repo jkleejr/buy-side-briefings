@@ -1,0 +1,54 @@
+{
+  "id": "short-qqq-puts-nfp-binary-2026-06-29",
+  "title": "Short QQQ via July 11 $450 Puts — NFP Binary + Quarter-End Defined Risk",
+  "ticker": "QQQ",
+  "asset_class": "options",
+  "category": "macro",
+  "direction": "short",
+  "conviction": "medium",
+  "time_horizon": "1-2 weeks",
+  "current_price": 468.0,
+  "entry": "Buy QQQ July 11 $450 strike put options at Monday June 29 open (est. QQQ $465–472 at open). Iran stand-down compressed implied vol pre-market — VIX fell from 18.41 (Friday close) to 16.41 pre-market — meaning put premiums are meaningfully cheaper than Friday. Enter 6% of gross in put premium. Do not chase QQQ above $475 (approaching the stop threshold and entering the regime-clear zone); do not enter below $458 (QQQ has already moved in your favor, premium cost rises with delta). Optimal entry: first 30 minutes of session, before the Iran bid fully digests.",
+  "stop_loss": "QQQ daily close above $478 — this maps to SPX reclaiming the 7,460 regime floor simultaneously with VIX closing below 17. If BOTH gates clear on the same session, the STEP ASIDE framework upgrades to HOLD and the QQQ directional short thesis is structurally invalidated. At $478, you are paying to be short a market that has confirmed the recovery. Exit puts immediately on a $478+ close; the time decay on July 11 expiry accelerates with 12 days to go, and holding through regime confirmation is a dual loss (theta + delta).",
+  "targets": [
+    "$440 — NQ loses the 24,500 psychological level; VIX closes above 20; KOSPI circuit-breaker reaction on Samsung Blue House rejection reads through to Nasdaq tech multiples; QQQ puts from $468 to $440 = -5.9% on underlying; July 11 $450 puts with ~11 DTE and QQQ at $440 approximate $12-15 premium (+150-200% from ~$5 entry cost estimate); cover 40% of put position",
+    "$420 — SPX closes below 7,300 for two consecutive sessions, triggering BEARISH escalation in the morning briefing framework; NFP July 2 prints below 90K (recession signal) AND quarter-end selling completes with no regime gate clearing; QQQ July 11 $450 puts with QQQ at $420 = $30 intrinsic + time value; +500%+ on put premium; cover 40%",
+    "$395 — full Q3 risk-off: BofA September hike priced as certain (not just probable), 30Y clears 5.00%, VIX above 25; QQQ at $395 in 12 days would require a severe multi-catalyst breakdown; put premium would be intrinsic $55+; leave final 20% open through expiry"
+  ],
+  "risk_reward": "1:4.5 to Target 2 (options-adjusted, assuming ~$5 entry premium and $30 intrinsic value at Target 2)",
+  "position_size_pct": 6,
+  "catalyst": "Two converging catalysts create a defined-window short opportunity: (1) NFP for June 2026 releases July 2 (Thursday) with consensus at 114K below soft-landing corridor floor; both tails are negative for Nasdaq (weak print = recession, hot print = BofA three-hike framework locked in through the July 4 holiday gap). (2) $165B in quarter-end equity selling (JPMorgan estimate) settles June 30 — mechanically concentrated in large-cap Growth (QQQ/XLK), the same names driving the Iran-stand-down pre-market bid. The Iran bid absorbed by quarter-end selling creates a timing asymmetry: buy the rumor (pre-market Iran bid lifts QQQ) and sell the fact (institutional rebalancing presses QQQ through June 30). The July 11 expiry captures both the June 30 quarter-end close and the NFP binary.",
+  "thesis": "QQQ puts are the risk-efficient expression of a short Nasdaq thesis in the current regime. The existing short-qqq-tech-quarter-end-selloff-2026-06-26 is a directional outright short; this position uses defined-risk options structure to express the same directional view with three improvements: (1) the July 11 expiry is specifically calibrated to capture both the June 30 quarter-end settlement and the July 2 NFP binary in a single options contract window; (2) VIX at 16.41 pre-market represents a meaningful compression from Friday's 18.41 close — put premiums are 10-15% cheaper than they were Friday, making Monday the optimal entry point for options buyers; (3) defined risk (put premium only) avoids the forced-exit mechanics of a directional short if SPX spikes above 7,460 on the regime-gate clear.\n\nFive consecutive Nasdaq losing sessions heading into June 29 establish the distribution pattern. The QQQ ATH was $745 on June 2; the current level near $468 represents a -37% drawdown in a market that has VIX at 16 — a paradox that suggests the 'true' VIX-implied fair value is substantially lower, and a VIX normalization event could produce outsized downside. The KOSPI sell-on-Samsung Blue House (-3.05% on the largest possible positive fundamental catalyst in Korean semiconductor history) is the most bearish single data point: it confirms that institutional distribution is absorbing every positive catalyst at scale, including globally correlated ones. If this pattern holds in the US session, the Iran stand-down bid that has lifted ES +1.4% pre-market will be sold into aggressively by the $165B quarter-end rebalancers.\n\nThe NFP binary creates the clearest terminal condition. A Goldilocks print (110-150K, wages +0.2-0.3%) would partially stabilize QQQ but not drive it through the $478 stop threshold — the BofA three-hike path remains intact, compressing tech multiples even in the soft-landing scenario. A weak print (<90K) is explicitly bearish for QQQ as it triggers recession-fear selling in high-multiple growth names. A hot print (>150K) triggers BofA three-hike lock-in, which has historically driven QQQ sharply lower via rate-hike multiple compression. All three major NFP outcomes are either neutral or negative for QQQ. This makes the July 11 $450 puts an unusually risk-efficient way to position for NFP over the July 4 holiday gap.\n\nThe counter-party is the QQQ bull who argues: (1) the Iran stand-down is a genuine de-escalation that removes the geopolitical risk premium; (2) VIX at 16.41 confirms the worst-case is priced out; (3) quarter-end selling is front-loaded and the July 1 re-investment cycle begins immediately after. These are real risks that justify the options structure over an outright short: if QQQ gaps to $478 and clears the regime gate, put holders absorb only the premium cost, while outright short sellers face a gap-up loss plus margin pressure.",
+  "bull_case": "Iran stand-down bid is larger than the $165B rebalancing flow. QQQ closes June 30 above $472, completing the quarter-end without triggering the bear scenario. NFP July 2 prints Goldilocks (125K, wages +0.2%). VIX closes at 14.5. QQQ at $475 on July 2 close — puts expire worthless. Full premium loss (6% position = 6% gross cost). But the TLT position (long) partially offsets as rate rally from Goldilocks boosts bonds modestly.",
+  "bear_case": "Quarter-end selling ($165B institutional) overwhelms Iran stand-down bid in the afternoon. QQQ fades from $468 open to close near $455 on June 29. NVDA stop Day 2 triggers (close < $195) — forced exit of a crowded long into a selling session. QQQ falls to $445 by June 30 quarter-end. NFP prints 78K on July 2 — recession read. Puts at $30+ intrinsic on July 2 before the July 3 holiday close. QQQ opens July 7 at $430 (holiday-gap gap-down). Full Target 2 scenario.",
+  "invalidation": "QQQ daily close above $478 (SPX reclaims 7,460 AND VIX closes below 17 simultaneously — exit puts before close); OR NFP July 2 prints Goldilocks (110-150K, wages +0.2-0.3%) AND VIX closes below 16 on July 2 (risk-on confirmed through the event); OR QQQ puts lose more than 60% of premium before June 30 quarter-end close (market has not moved in your favor and theta decay is accelerating)",
+  "sources": [
+    {
+      "label": "NFP June 2026 consensus 114K — below soft-landing corridor floor — FXStreet economic calendar",
+      "url": "https://www.fxstreet.com/economic-calendar/event/9cdf56fd-99e4-4026-aa99-2b6c0ca92811"
+    },
+    {
+      "label": "JPMorgan $165B quarter-end equity selling estimate — $55B US pensions, $60B Japan GPIF, $40B Norges Bank, $25B SNB — Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-could-sell-165bn-worth-123854574.html"
+    },
+    {
+      "label": "KOSPI -3.05% intraday -5.81% on Samsung Blue House $648B announcement — fourth catalyst failure since June 22 — Rappler",
+      "url": "https://www.rappler.com/technology/south-korea-samsung-sk-hynix-ai-chip-drive-june-29-2026/"
+    },
+    {
+      "label": "VIX 16.41 pre-market June 29 — first reading below 17 gate, Iran stand-down compresses IV — TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-29-2026"
+    }
+  ],
+  "created_at": "2026-06-29",
+  "expires_at": "2026-07-11",
+  "status": "active",
+  "tags": ["QQQ", "options", "puts", "NFP", "macro", "quarter-end", "defined-risk", "holiday-gap", "Nasdaq", "tech-short"],
+  "outcome": null,
+  "levels": {
+    "entry_low": 458.0,
+    "entry_high": 472.0,
+    "stop": 478.0,
+    "targets": [440.0, 420.0, 395.0]
+  }
+}

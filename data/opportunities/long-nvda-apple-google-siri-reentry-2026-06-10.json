@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-4 weeks",
-  "current_price": 207.77,
+  "current_price": 195.15,
   "entry": "Scale 50% at $205–210 (current zone); reserve 50% for any intraday fade to $205–208. Do not chase above $215 without an ORCL RPO beat tonight confirming AI infrastructure demand. The $205–212 zone has been the re-entry target since the May 21 stopout at $204; it now has dual confirmation from (1) CPI printing below 4.2% consensus and (2) Apple deploying NVDA Blackwell B200 via Google Cloud for the overhauled Siri. Entry is valid through the June 10 session close. If SPX fades below 7,380 intraday (bear case activating), reduce entry size to 50% and set a tighter near-term stop at $200.",
   "stop_loss": "$195 daily close — below the re-entry zone floor and the level explicitly cited in the prior brief framework; implies ORCL disappoints materially on RPO guidance (enterprise AI demand broken), Iran escalates to a Hormuz tanker incident spiking Brent above $97, and SPX breaks below 7,300 simultaneously. The $195 stop also sits just below NVDA's June 9 intraday low of $199.34, providing a clean technical invalidation level.",
   "targets": [
@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-10",
   "expires_at": "2026-07-08",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "NVDA",
     "AI",
@@ -55,7 +55,13 @@
     "re-entry",
     "catalyst"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-29",
+    "final_price": 192.53,
+    "return_pct": -7.3,
+    "outcome_label": "Stop triggered — NVDA June 26 close $192.53 < $195 stop",
+    "note": "NVDA closed at $192.53 on June 26, breaching the $195 daily-close stop set at the June 10 re-entry. Created on WWDC Apple-Siri-Google-Cloud catalyst; thesis was fundamentally sound but the regime deteriorated further in late June as KOSPI sold off -3.05% on Samsung Blue House and Russell reconstitution passive bid ($334B) failed to hold price. Full exit at $192.53 vs $207.77 entry."
+  },
   "levels": {
     "entry_low": 205,
     "entry_high": 210,

@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-4 weeks",
-  "current_price": 27.34,
+  "current_price": 28.35,
   "entry": "Enter $27.20–27.80 (UUP at ~$27.34 corresponding to DXY 100.15 on June 18 close). Scale: 60% initial at current levels on the Juneteenth holiday or Monday June 22 open; 40% add if DXY closes above 100.50 on Monday June 22 session (confirming the rate premium is sustaining into the first post-Juneteenth session). Do NOT add above $28.00 — at that DXY level (~104) the near-term move is largely captured. Reduce the position by 50% if DXY closes below 99.00 at any point (the BUY upgrade is firing and this hedge becomes a drag); exit fully if DXY closes below 98.50 on two consecutive sessions.",
   "stop_loss": "$26.50 daily close (~3.0% below $27.34 entry) — implies DXY has broken decisively below 99.00, the BUY upgrade regime condition is met, and the macro framework has shifted to risk-on. At this level, the Iran deal disinflation has finally overwhelmed the Warsh rate premium in FX markets. This is the exact scenario in which the long equity positions (NVDA add, GOOGL, META) activate — the UUP stop and the equity adds are designed to be simultaneous events that net-hedge the portfolio transition from HOLD to BUY.",
   "targets": [
@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-19",
   "expires_at": "2026-07-18",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["UUP", "DXY", "dollar", "Warsh", "FOMC", "PCE", "macro", "FX", "rate-hedge", "hawkish"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-29",
+    "final_price": 28.20,
+    "return_pct": 3.1,
+    "outcome_label": "Target 1 hit at $28.20 — DXY sustained above 101 through June quarter-end",
+    "note": "UUP reached $28.35 by June 22 and has held above $28.20 (Target 1) as DXY maintained 101.33 through June 29. The Warsh hawkish rate regime plus the $165B quarter-end institutional selling sustaining dollar demand delivered Target 1. DXY never closed below 99.00 (the BUY upgrade gate), confirming the thesis that the rate premium would dominate any geopolitical disinflation. Exit Target 1 at $28.20 vs $27.34 entry, +3.1%."
+  },
   "levels": {
     "entry_low": 27.20,
     "entry_high": 27.80,
