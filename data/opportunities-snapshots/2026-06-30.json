@@ -1,0 +1,75 @@
+{
+  "date": "2026-06-30",
+  "generated_at": "2026-06-30T09:30:00Z",
+  "summary": "Q2 final day. Three positions close: NVDA reconstitution long expires as Stop Day 2 forced-exit threshold triggers ($194.97 June 29, -3.7%); IWM Great Rotation conditional never initiated (PCE 4.1% and VIX above 17 prevented 2-of-3 gate clearance, 0% impact); GOOGL AI talent drain short closed thesis-broken as Dow inclusion creates a structural counter-catalyst and morning briefing pivots to a long entry zone ($345–352, -2.7%). Three new positions open: short NVDA July 11 $190 puts on reconstitution exhaustion signal ($193.85, medium conviction, 8%); long GOOGL on Dow inclusion institutional buying tail ($350.80, medium conviction, 4%); long XLF on SCOTUS Fed independence ruling and BofA 3-hike NIM expansion thesis ($53.76, medium conviction, 3%). Book now at 19 active positions. Active book is balanced: 10 long, 7 short, 1 long-vol (TLT), 1 short-vol (QQQ puts as binary). NFP Thursday July 2 (consensus 170K) is the next macro binary.",
+  "active_ids": [
+    "long-amd-ai-chip-fomc-dip-2026-06-16",
+    "long-btc-post-stop-reentry-60k-conditional-2026-06-19",
+    "long-ewj-japan-oil-ai-recovery-2026-06-25",
+    "long-gd-iran-duration-dod-heavy-weapons-2026-06-11",
+    "long-mu-post-q3-earnings-2026-06-24",
+    "long-qcom-dragonfly-data-center-2026-06-25",
+    "long-tsm-ai-wafer-rout-reentry-2026-06-24",
+    "short-aapl-hardware-price-demand-compression-2026-06-26",
+    "short-arkk-spacex-rotation-drain-2026-05-21",
+    "short-gld-real-rates-pce-bofa-2026-06-25",
+    "short-hyg-credit-spread-bofa-3-hike-2026-06-24",
+    "short-ita-ceasefire-defense-repricing-2026-06-18",
+    "short-qqq-tech-quarter-end-selloff-2026-06-26",
+    "long-tlt-nfp-weak-print-hedge-2026-06-29",
+    "short-qqq-puts-nfp-binary-2026-06-29",
+    "long-cmcsa-nbcu-spinoff-catalyst-2026-06-29",
+    "long-googl-dow-inclusion-2026-06-30",
+    "short-nvda-stop-day2-puts-2026-06-30",
+    "long-xlf-scotus-rate-path-2026-06-30"
+  ],
+  "new_today_ids": [
+    "long-googl-dow-inclusion-2026-06-30",
+    "short-nvda-stop-day2-puts-2026-06-30",
+    "long-xlf-scotus-rate-path-2026-06-30"
+  ],
+  "closed_today": [
+    {
+      "id": "long-nvda-russell-recon-bid-2026-06-26",
+      "status": "expired",
+      "final_price": 194.97,
+      "return_pct": -3.7,
+      "note": "1-2 day reconstitution flow trade reached its planned expiry date. NVDA never cleared Target 1 ($210); Stop Day 2 forced-exit framework (June 29 close $194.97 < $195 threshold) and sustained institutional selling overwhelmed the passive reconstitution bid. Two-close stop at $193 was not formally triggered (June 29 close $194.97 > $193). Expired June 30 with NVDA at $194.97 (June 29 close)."
+    },
+    {
+      "id": "long-iwm-great-rotation-rut-3000-2026-06-23",
+      "status": "thesis_broken",
+      "final_price": 299.48,
+      "return_pct": 0.0,
+      "note": "Required 2-of-3 conditional gates to clear within 5 trading days (by June 27). Only Gate 1 cleared (MU Q3 beat ✓). Gate 2 failed: PCE printed 4.1% YoY on June 25 vs the required ≤3.8% threshold. Gate 3 failed: VIX never closed below 17.0 for two consecutive sessions (est. June 29 close ~17.65). Entry was never initiated per the conditional framework. Position closed per the built-in invalidation clause with zero P&L impact."
+    },
+    {
+      "id": "short-googl-ai-talent-drain-2026-06-23",
+      "status": "thesis_broken",
+      "final_price": 350.80,
+      "return_pct": -2.7,
+      "note": "Alphabet's addition to the Dow Jones Industrial Average (effective June 29, 2026) created a 2-4 week institutional rebalancing buying tail that is now the dominant near-term GOOGL driver. GOOGL surged +5% on Dow Day 1 (June 29) to ~$357, absorbing and reversing the AI talent drain momentum. The $375 formal stop was not hit, but the Dow inclusion represents an unanticipated structural catalyst that directly competes with the talent drain thesis over the same 2-4 week horizon. Morning briefing (June 30) identifies GOOGL $345-352 pullback as a long entry zone. Closing to initiate the Dow inclusion long thesis."
+    }
+  ],
+  "current_prices": {
+    "long-amd-ai-chip-fomc-dip-2026-06-16": 540.26,
+    "long-btc-post-stop-reentry-60k-conditional-2026-06-19": 59399.0,
+    "long-ewj-japan-oil-ai-recovery-2026-06-25": 93.01,
+    "long-gd-iran-duration-dod-heavy-weapons-2026-06-11": 349.18,
+    "long-mu-post-q3-earnings-2026-06-24": 1145.28,
+    "long-qcom-dragonfly-data-center-2026-06-25": 189.39,
+    "long-tsm-ai-wafer-rout-reentry-2026-06-24": 431.55,
+    "short-aapl-hardware-price-demand-compression-2026-06-26": 286.0,
+    "short-arkk-spacex-rotation-drain-2026-05-21": 77.80,
+    "short-gld-real-rates-pce-bofa-2026-06-25": 368.40,
+    "short-hyg-credit-spread-bofa-3-hike-2026-06-24": 79.93,
+    "short-ita-ceasefire-defense-repricing-2026-06-18": 238.0,
+    "short-qqq-tech-quarter-end-selloff-2026-06-26": 468.0,
+    "long-tlt-nfp-weak-print-hedge-2026-06-29": 87.36,
+    "short-qqq-puts-nfp-binary-2026-06-29": 468.0,
+    "long-cmcsa-nbcu-spinoff-catalyst-2026-06-29": 28.44,
+    "long-googl-dow-inclusion-2026-06-30": 350.80,
+    "short-nvda-stop-day2-puts-2026-06-30": 193.85,
+    "long-xlf-scotus-rate-path-2026-06-30": 53.76
+  }
+}

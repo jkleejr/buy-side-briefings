@@ -38,9 +38,15 @@
   ],
   "created_at": "2026-06-26",
   "expires_at": "2026-06-30",
-  "status": "active",
+  "status": "expired",
   "tags": ["NVDA", "reconstitution", "passive-flow", "Russell", "AI", "semis", "short-term", "catalyst"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-30",
+    "final_price": 194.97,
+    "return_pct": -3.7,
+    "outcome_label": "Expired at plan horizon",
+    "note": "1-2 day reconstitution flow trade reached its planned expiry date. NVDA never cleared Target 1 ($210); Stop Day 2 forced-exit framework (June 29 close $194.97 < $195 threshold) and sustained institutional selling overwhelmed the passive reconstitution bid. Two-close stop at $193 was not formally triggered (June 29 close $194.97 > $193). Expired June 30 with NVDA at $194.97 (June 29 close)."
+  },
   "levels": {
     "entry_low": 200.0,
     "entry_high": 205.0,

@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-23",
   "expires_at": "2026-07-21",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["IWM", "Russell2000", "small-cap", "macro", "great-rotation", "conditional", "rate-sensitive", "PCE"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-30",
+    "final_price": 299.48,
+    "return_pct": 0.0,
+    "outcome_label": "Conditional entry gates not cleared by June 27",
+    "note": "Required 2-of-3 conditional gates to clear within 5 trading days (by June 27). Only Gate 1 cleared (MU Q3 beat ✓). Gate 2 failed: PCE printed 4.1% YoY on June 25 vs the required ≤3.8% threshold. Gate 3 failed: VIX never closed below 17.0 for two consecutive sessions (est. June 29 close ~17.65). Entry was never initiated per the conditional framework. Position closed per the built-in invalidation clause with zero P&L impact."
+  },
   "levels": {
     "entry_low": 294.0,
     "entry_high": 302.0,
