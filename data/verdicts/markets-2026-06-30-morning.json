@@ -1,0 +1,166 @@
+{
+  "routine": "markets",
+  "date": "2026-06-30",
+  "window": "morning",
+  "generated_at": "2026-06-30T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — VIX Gate Cleared; SPX 20 Pts from 7,460; Q2 Close Window Dressing Today",
+    "conviction": "medium",
+    "horizon": "1-2 sessions (through NFP July 2)",
+    "rationale_short": "June 29 delivered the strongest macro session of the 2026 correction: Nasdaq +2.07%, SCOTUS upheld Fed independence, GOOGL first Dow day +5%, Dow > 52,000, VIX closed 16.41 — below the 17 gate for the first time. Regime upgrade: STEP ASIDE → HOLD. One gate cleared (VIX < 17 confirmed). SPX closed 7,440 — 20 pts below the 7,460 gate. Q2 2026 closes today; quarter-end window dressing is the mechanism to push SPX through the final gate. If SPX closes above 7,460 AND VIX remains below 17 simultaneously at today's close, the full regime clears and tomorrow upgrades to BUY. Do NOT add full positions before tonight's close confirmation. NFP July 2 (~110K consensus) into the 3-day July 4-6 holiday gap is the binary that governs July 5+ positioning regardless of today's regime outcome.",
+    "supporting_data": [
+      {
+        "label": "VIX 16.41 confirmed close June 29 — first close below 17 since regime shifted; one of two simultaneous regime gates now formally cleared; regime upgrade: STEP ASIDE → HOLD",
+        "url": "https://www.barchart.com/stocks/quotes/VIX/overview"
+      },
+      {
+        "label": "SPX 7,440.43 confirmed close June 29 (+1.18%) — 20 pts below 7,460 regime gate; Q2 2026 quarter-end window dressing today is the mechanism for simultaneous gate clearance; if SPX closes above 7,460 tonight, both gates clear simultaneously for the first time since May 14 ATH",
+        "url": "https://finance.yahoo.com/quote/%5EGSPC/history/"
+      },
+      {
+        "label": "SCOTUS upheld Fed independence (Lisa Cook ruling June 29) + GOOGL first Dow day +5% + Dow > 52,000 + Nasdaq +2.07% — strongest US macro session of 2026 correction; SPX up 9% YTD entering Q2 close; only 3% from all-time high",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-29-2026"
+      },
+      {
+        "label": "BTC $59,339.47 (Crypto.com MCP, 11:01 UTC June 30) — Day 9 exit gate; $2,660.53 below $62,000 re-entry threshold; volume deceleration (986 BTC in 11 hrs vs June 29's 3,433 BTC) is the most constructive structural signal of the nine-session distribution window",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "SK Hynix June 30 KST stop nearly triggered — day low ₩2,541,000 (₩1,000 above ₩2,540,000 mandatory stop); V-recovery to ₩2,742,000 intraday; ADR underwriter mandate (BofA/Goldman/Citigroup/JPMorgan) demonstrably absorbed the flush; KOSPI June 29 confirmed 8,395 (below 8,500 re-entry threshold); June 30 close unconfirmed",
+        "url": "https://finance.yahoo.com/quote/000660.KS/"
+      },
+      {
+        "label": "June NFP consensus ~110K (BofA, July 2 release) — deceleration from May 172K; FOMC June 17 hawkish hold 3.50-3.75% (Warsh first meeting; median year-end 3.80%, cuts to 2027-2028); Q1 2026 GDP +1.6% second estimate; JPMorgan $165B quarter-end equity selling concentrated June 29-30",
+        "url": "https://finance.biggo.com/news/f8a3f90c-9547-4640-bcdc-5dd7d551f4d8"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7440.43,  "change_pct": 1.18,   "as_of": "2026-06-29T20:00:00Z" },
+    "nasdaq": { "level": 25820.14, "change_pct": 2.07,   "as_of": "2026-06-29T20:00:00Z" },
+    "vix":    { "level": 16.41,    "change_pct": -10.87, "as_of": "2026-06-29T20:00:00Z" },
+    "ust10y": { "level": 4.37,     "change_bps": -1,     "as_of": "2026-06-29T20:00:00Z" },
+    "dxy":    { "level": 101.33,   "change_pct": 0.06,   "as_of": "2026-06-29T20:00:00Z" }
+  },
+  "regime_risk": [
+    {
+      "name": "VIX",
+      "value": 16.41,
+      "trigger_above": 17,
+      "unit": ""
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.87,
+      "trigger_above": 5.00,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 101.33,
+      "trigger_above": 100,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7440.43,
+      "trigger_below": 7460,
+      "unit": ""
+    },
+    {
+      "name": "BTC",
+      "value": 59339.47,
+      "trigger_below": 63500,
+      "unit": "USD"
+    },
+    {
+      "name": "Brent",
+      "value": 72.01,
+      "trigger_above": 97,
+      "unit": "USD/bbl"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "MANDATORY FULL EXIT at 9:30 AM ET open — Stop Day 2 triggered June 29 (close $194.97, $0.03 below $195 threshold). Execute at whatever price the market provides. Do NOT wait. Three consecutive catalyst sessions absorbed by institutional supply above $195. Re-entry gate: SPX > 7,460 AND VIX < 17 simultaneously at close AND NVDA > $200 on volume — partial clearance does NOT activate. If both SPX/VIX gates simultaneously close today (quarter-end window dressing), re-entry activates for NVDA at $200+ on July 5. NFP July 2 gates any re-entry regardless.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "Day 9 exit gate — $59,339.47 at 11:01 UTC (Crypto.com MCP confirmed). $2,660.53 below $62,000 re-entry threshold. Volume deceleration (986 BTC in 11 hrs vs June 29's 3,433 BTC) is the most constructive structural signal of the nine-session distribution window. Q2 close window dressing in US session (13:30 UTC) is the intraday catalyst but +4.48% required to reach gate — probability <10%. Flat/cash. No re-entry before NFP July 2 even if Day 1 gate activates.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "000660.KS",
+      "note": "SK Hynix — stop ₩2,540,000 nearly triggered on June 30 KST (day low ₩2,541,000 = ₩1,000 margin). V-recovery to ₩2,742,000 (above ₩2,700,000 re-entry threshold) intraday — consistent with ADR underwriter stabilization. KOSPI June 29 confirmed 8,395 (below 8,500 re-entry gate). June 30 KST close UNCONFIRMED — verify before any action. Hold LOW conviction.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "Bond distribution Day 6 — est. +7.15% to $164.19 on Q2 window dressing + early Nasdaq 100 pre-positioning (July 7 effective, 7 days away). IG floor $150 held ($151.74 day low). Still $20.81 below $185 re-entry gate. Step aside HIGH conviction unchanged. Volume est. 60-80M (normalizing). Do NOT re-enter on single-session spike.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "SPX",
+      "note": "7,440.43 June 29 close (20 pts below 7,460 regime gate). VIX cleared at 16.41. Q2 window dressing today is the mechanism for simultaneous gate clearance. If SPX closes above 7,460 AND VIX remains < 17 at today's close: regime clears for first time since May 14 ATH; tomorrow's verdict upgrades to BUY medium. Watch 4 PM ET close. FOMC June 17 hawkish (Warsh, 3.80% median year-end, cuts to 2027-2028) limits upside multiple expansion but SCOTUS ruling + Q2 close dynamics provide today's intraday support.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MU",
+      "note": "Micron Technology — Q3 FY2026 +15.7% earnings beat (post-June 26 close). HBM4 sold out through 2026. $50B Q4 guide (40%+ beat). If regime gates clear today (SPX > 7,460 AND VIX < 17), MU is the first AI semi re-entry: buy dip below $1,200. HBM demand validated by both US-listed earnings AND Samsung $226B AI data center commitment.",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA before confirmed June 30 close",
+      "reason": "Mandatory exit is at the open, not after. Any intraday move above $195-$200 driven by Q2 window dressing does NOT reset the stop and is NOT a re-entry signal. The mandatory exit framework is binary: exit at open, then re-enter only if SPX > 7,460 AND VIX < 17 simultaneously at close AND NVDA > $200 on volume.",
+      "better_entry": "After today's 4 PM ET close: if SPX > 7,460 AND VIX < 17 simultaneously, re-entry activates for NVDA at $200+ on July 5 (post-NFP). If gates don't close simultaneously today, August 26 Q2 FY27 earnings ($91B guide) is the next structural entry."
+    },
+    {
+      "ticker": "SK Hynix (000660.KS) before confirmed close data",
+      "reason": "Stop ₩2,540,000 was tested at ₩2,541,000 (₩1,000 margin) on June 30 KST. Close is UNCONFIRMED. No action until confirmed close data is verified. If close below ₩2,540,000: Stop Day 1 triggered — prepare mandatory full exit protocol.",
+      "better_entry": "Confirmed June 30 KST close above ₩2,700,000 AND KOSPI close above 8,500 simultaneously → upgrade BUY MEDIUM; add 50% on July 1 KST open. If close unconfirmed by US open, maintain HOLD LOW and defer all action."
+    },
+    {
+      "ticker": "BTC at $59,339",
+      "reason": "Day 9 exit gate. Volume deceleration is constructive but the gate is $2,660 away and NFP July 2 into 3-day holiday gap prevents re-entry regardless of gate status. False start into holiday gap = zero hedging ability for 3 days.",
+      "better_entry": "Two consecutive UTC closes above $62,000 AND IBIT daily net inflows for 3+ consecutive days. With NFP July 2 and July 4-6 holiday gap, no realistic re-entry window before July 7. Monitor IBIT flow data (farside.co.uk T+2)."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SPX index (long) — regime gate close watch",
+      "direction": "long",
+      "thesis": "SPX at 7,440 is 20 pts below the 7,460 regime gate with VIX already cleared at 16.41. Q2 2026 quarter-end window dressing (fund managers buying to show positions at Q2 close) historically pushes large-cap indices 0.5-1.5% on the last session of the quarter. SPX +0.27% gets to 7,460. If today's close clears both gates simultaneously for the first time since May 14 ATH, the regime upgrade to full BUY is the session-end catalyst. A long SPX position (via SPY, QQQ, or index futures) at the open, sized 15-20% of gross, captures the window-dressing regime-gate close.",
+      "entry": "Buy SPY at open (est. $372-$375 range). Stop: close below 7,400 (regime gate failure). Target: SPX close above 7,460 = full regime clearance; partial take 50% at SPX 7,455 intraday.",
+      "invalidation": "SPX closes below 7,400 OR VIX closes above 17 again; either gate failure removes the regime upgrade thesis. NVDA forced-exit selling at open creating broader AI tech selloff.",
+      "conviction": "medium",
+      "horizon": "1 session (today's close is the binary)"
+    },
+    {
+      "asset": "MU (Micron Technology) — post-earnings dip buy",
+      "direction": "long",
+      "thesis": "Micron Q3 FY2026 +15.7% earnings beat is the most powerful HBM supercycle validation of the cycle. HBM4 sold out through 2026. $50B Q4 guide (40%+ beat). Samsung $226B AI data centers independently validates the $50B Q4 guide at national-government scale. If regime gates clear today (SPX > 7,460 AND VIX < 17), MU is the first-add AI semi on the re-entry list. Buy the dip below $1,200 (post-gap, if MU pulls back from the initial +15.7% reaction).",
+      "entry": "Buy MU below $1,200 on June 30 or July 1. Stop: $1,050 on two consecutive closes below. Target: $1,400+ on Q4 FY26 earnings confirmation (September 2026). Size: 25-40% of full position.",
+      "invalidation": "Regime gates remain breached (SPX fails to close above 7,460 today); NFP July 2 adverse print (+200K strong) cements BofA three-hike framework; MU gaps to $1,300+ with no pull-to-entry-zone.",
+      "conviction": "medium",
+      "horizon": "3-4 months (through Q4 FY26 earnings September 2026)"
+    },
+    {
+      "asset": "QQQ July 18 $465 calls — regime clearance leverage",
+      "direction": "long",
+      "thesis": "If both SPX/VIX regime gates clear simultaneously at today's June 30 close, the market structure shifts from STEP ASIDE to BUY for the first time in 7+ weeks. QQQ July 18 $465 calls (17 DTE) offer leveraged exposure to that regime upgrade. Entry ONLY after 4 PM ET close confirms both gates. IV compression from VIX 16.41 (vs. prior 18-20 range) makes call premiums more attractive than they were three weeks ago. Size: 5-8% of gross, defined risk.",
+      "entry": "Buy QQQ July 18 $465 calls AT CLOSE today ONLY IF SPX > 7,460 AND VIX < 17 simultaneously at 4 PM ET close. Do NOT buy before close — the gates must confirm. Stop: QQQ closes below $455 after entry.",
+      "invalidation": "SPX closes at or below 7,460 today (gate not cleared); VIX closes above 17 again; NFP July 2 adverse print reverses regime upgrade before calls can profit.",
+      "conviction": "low",
+      "horizon": "2 weeks (through July 18 expiry)"
+    }
+  ],
+  "bear_case": "The dominant bear case for June 30 is structural, not sentimental. NVDA closed $194.97 on June 29 — $0.03 below the $195 mandatory exit threshold — on the best macro day of the 2026 correction cycle. The institutional distribution pattern above $195 that has absorbed three consecutive major catalysts (June 26 reconstitution, June 29 Samsung/SCOTUS, June 29 AI re-rating) is not a momentum pattern; it is active selling by entities with a known supply overhang. The forced exit today adds to that supply at the open. Meanwhile, FOMC June 17 hawkish pivot (Warsh, 3.80% median year-end rate, cuts pushed to 2027-2028) removes the rate-cut tailwind that drove the May recovery from $183 to $205+. The $165B quarter-end selling program (JPMorgan estimate) is concentrated today — the majority was absorbed on June 29 (Nasdaq +2.07%) but residual selling continues. If SPX cannot sustain a close above 7,460 today into the residual $165B selling program on a day when there is also NVDA forced-exit pressure, then the 7,300 bearish escalation level becomes the next decision point before NFP. BTC at $59,339 (−1.24%, Day 9 gate) confirms that cross-asset risk appetite has not fully recovered. SK Hynix stop nearly triggered (₩2,541,000 vs. ₩2,540,000 threshold) adds Korea-specific stress signal. Invalidation: SPX closes above 7,460 AND VIX closes below 17 simultaneously today — upgrade to BUY medium. Both gates clearing at Q2 close would mark the first full regime clearance since May 14 ATH.",
+  "body_mdx": "data/briefings/markets/2026-06-30-morning.mdx"
+}
