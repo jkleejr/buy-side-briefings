@@ -3,24 +3,24 @@
   "symbol": "NVDA",
   "name": "NVIDIA Corp",
   "date": "2026-06-30",
-  "generated_at": "2026-06-30T22:15:00Z",
+  "generated_at": "2026-07-01T01:45:00Z",
   "is_seed": false,
 
   "day_winner": "bulls",
-  "day_summary": "NVDA rallied +1.72% to $198.32 on quarter-end risk-on — but the exit executed at the open as mandated, and the $200 re-entry gate held as resistance. SPX closed ~7,525, clearing the regime gate for the first time since the May 14 ATH, but NVDA still sits $1.68 below the threshold that would trigger a re-entry signal.",
+  "day_summary": "NVDA rallied est. +1.72% to ~$198.32 (estimated; low confidence on exact close) on quarter-end risk-on — exit executed at the open as mandated. CRITICAL CORRECTION VS MORNING BRIEF: SPX closed 7,449.36 (+0.79%) — 11 points BELOW the 7,460 regime gate (NOT cleared). VIX closed 17.65 — ABOVE 17 threshold (NOT cleared). $200 NVDA gate also uncleared. All three re-entry gates remain locked for the 9th consecutive session. Day winner is BULLS on price action alone, but structural position is unchanged: flat/cash.",
   "long_pnl": "Longs who held through the stop-day exit missed a +1.72% day — exit was mandatory after Stop Day 2 triggered at yesterday's $194.97 close ($0.03 below the $195 stop line).",
   "short_pnl": "Shorts gave back ground on the quarter-end rally; puts expired worthless on a tape that gapped higher into the close of Q2.",
 
   "decision": {
     "action": "step_aside",
     "conviction": "high",
-    "horizon": "FLAT/CASH — Exit protocol fully executed at the June 30 open (Stop Day 2 triggered). SPX cleared the 7,460 regime gate (~7,525 close), but NVDA at $198.32 is $1.68 below the $200 volume-confirmed re-entry threshold. All three gates must clear simultaneously: (1) SPX > 7,460 on closing basis ✓, (2) VIX < 17 on closing basis ✓ (est. ~16), (3) NVDA > $200 on above-average volume (>200M shares) ✗. NFP on July 2 into a 3-day holiday gap (July 4–6) keeps macro risk elevated. Earliest viable full re-entry: July 7–8 post-NFP resolution."
+    "horizon": "FLAT/CASH — Exit protocol fully executed at the June 30 open (Stop Day 2 triggered). Q2 close did NOT clear the regime gates: (1) SPX > 7,460 ✗ (closed 7,449.36 — 11 pts short; 9th consecutive session below gate), (2) VIX < 17 ✗ (closed 17.65 — above gate for 9th consecutive session), (3) NVDA > $200 on above-average volume (>200M shares) ✗ (est. close ~$198, below gate; est. vol ~185M below threshold). All three gates must clear simultaneously. NFP July 2 into 3-day holiday gap (July 4–6). Earliest viable full re-entry: July 7–8 post-NFP resolution if Goldilocks print."
   },
 
   "so_what": {
-    "line": "Exit is done — you're in cash. NVDA bounced but the $200 gate is still locked; wait for NVDA > $200 on heavy volume after NFP clears.",
-    "bull": "SPX regime gate finally cleared; if NVDA breaks $200 with volume after NFP, the re-entry signal is live.",
-    "bear": "Bounced on quarter-end window dressing, not fundamental news; $200 acted as hard cap today and macro uncertainty rises into NFP/holiday gap."
+    "line": "Exit is done — you're in cash. Q2 closed without clearing the SPX gate (7,449 vs 7,460) or VIX gate (17.65 vs <17); NVDA bounced but $200 held as cap. All three re-entry gates remain locked into the NFP binary.",
+    "bull": "Nasdaq +1.52% was its best Q2 since 2020; if NFP is Goldilocks (130–170K, wages +0.2%), all three gates could clear simultaneously on July 7 — the re-entry setup is building.",
+    "bear": "Q2 closed with two macro gates still locked; SPX missed 7,460 by 11 pts and VIX stayed above 17 despite the best quarterly tape in five years — that's a ceiling signal, not a floor signal."
   },
 
   "snapshot": {
@@ -36,9 +36,9 @@
     "market_cap": "~$4.84T",
     "extra": [
       { "label": "Exit executed", "value": "Open ~$194.97 (Stop Day 2)", "tone": "neutral" },
-      { "label": "SPX regime gate", "value": "~7,525 — CLEARED ✓ (>7,460)", "tone": "up" },
-      { "label": "VIX estimate", "value": "~16.0 — CLEARED ✓ (<17)", "tone": "up" },
-      { "label": "NVDA re-entry gate", "value": "$200 on >200M vol — NOT cleared ✗", "tone": "down" },
+      { "label": "SPX regime gate", "value": "7,449.36 — NOT CLEARED ✗ (11 pts below 7,460; 9th consecutive miss)", "tone": "down" },
+      { "label": "VIX close", "value": "17.65 — NOT CLEARED ✗ (above 17 gate; 9th consecutive session)", "tone": "down" },
+      { "label": "NVDA re-entry gate", "value": "$200 on >200M vol — NOT cleared ✗ (est. close ~$198, est. vol ~185M)", "tone": "down" },
       { "label": "ATH (May 14, 2026)", "value": "$236.54", "tone": "neutral" },
       { "label": "Distance to $200 gate", "value": "$1.68 below (-0.84%)", "tone": "down" },
       { "label": "Next macro risk", "value": "NFP July 2 + holiday gap July 4–6", "tone": "neutral" }
@@ -58,12 +58,12 @@
 
   "news": [
     {
-      "label": "Q2 best quarter for US equities in six years — SPX +8.1% for the quarter, clearing the 7,460 regime gate",
+      "label": "Q2 best quarter for US equities since 2020 — SPX +9.55% YTD; Nasdaq +12.79% Q2; Dow 52,319.20 at second consecutive record. BUT: SPX June 30 close 7,449.36 — still 11 pts BELOW 7,460 regime gate. Gate not cleared.",
       "source": "Bloomberg",
       "sentiment": "positive"
     },
     {
-      "label": "NVDA closes Q2 at $198.32, up +1.72% on quarter-end risk-on; touched $200.01 intraday before reversing",
+      "label": "NVDA est. closes Q2 near $198 (estimated; low confidence on exact print), up ~+1.72% on quarter-end risk-on; SPX +0.79% to 7,449.36 (Nasdaq +1.52% to 26,213.72); intraday est. touched $200 area before reversing",
       "source": "Market data",
       "sentiment": "positive"
     },
@@ -90,18 +90,18 @@
   ],
 
   "outlook": {
-    "short_term": "NVDA stalled at $200 on quarter-end — that level is the re-entry gate and the market knows it. NFP July 2 into a 3-day holiday gap creates asymmetric risk: a hot number could reprice rates and pressure growth; a cool number could be the catalyst for the $200 break. Until NVDA closes above $200 on >200M shares, remain in cash per protocol.",
+    "short_term": "Q2 closed with all three re-entry gates locked: SPX 7,449.36 (vs 7,460 gate; 11 pts short), VIX 17.65 (vs <17 gate), and NVDA est. ~$198 on est. ~185M vol (vs $200 and >200M gate). NFP July 2 into a 3-day holiday gap creates the next binary: a Goldilocks print (130–170K, wages +0.2%) could clear all three gates simultaneously on July 7; a hot print (>200K) locks in BofA's three-hike path and pushes VIX back above 18. Remain flat/cash per protocol.",
     "long_term": "The AI infrastructure cycle remains intact. Blackwell ramp, sovereign AI spending, and hyperscaler capex all point to sustained NVDA revenue growth through 2026–2027. The question is not if NVDA re-tests ATH, but when. The stop-day exit preserves capital to re-enter at a cleaner technical setup rather than riding a potentially deeper retracement."
   },
 
   "bull_case": [
-    "SPX regime gate cleared for the first time since the May 14 ATH — macro setup is improving and risk appetite is returning.",
+    "Nasdaq posted +1.52% on the Q2 close (best quarter since 2020) and SPX at 7,449 is only 11 pts from the 7,460 gate — the macro setup is the closest to re-entry conditions since the stop-day exit; one Goldilocks NFP print could clear all three gates simultaneously.",
     "Blackwell supply constraints mean any incremental demand update is a positive surprise; next earnings catalyst (late July) could drive a $200+ breakout.",
     "NVDA bounced from $194.53 intraday, holding well above the June 26 correction low of $192.53 — the technical base is strengthening."
   ],
 
   "bear_case": [
-    "$200 capped the rally on the highest-liquidity quarter-end day in months — if that level can't break on favorable conditions, macro headwinds may be stiffer than they appear.",
+    "$200 capped the estimated rally on the highest-liquidity quarter-end day in months — and SPX still couldn't close above 7,460 nor VIX below 17. If two of three macro gates can't clear on the best quarterly close in five years, the distributional ceiling may be sturdier than it looks.",
     "NFP July 2 into holiday gap means the next 5 trading days carry elevated two-way macro risk with reduced liquidity to absorb shocks.",
     "The stop-day exit was triggered precisely because the stock couldn't hold $195 at end-of-day June 29 — underlying demand is not yet confirmed strong enough for a sustained $200+ move."
   ],
@@ -128,5 +128,5 @@
     { "date": "2026-07-30", "label": "FOMC July meeting — rate path update affects growth/AI multiple", "importance": "medium" }
   ],
 
-  "analysis": "## Technical analysis\n\n**Trend:** NVDA remains in a recovery channel from the $142.03 52-week low, but the rally has stalled in a $188–$200 consolidation range for the past two weeks. The May 14 ATH at $236.54 is $38.22 away — meaningful overhead supply exists at every $10 increment ($200, $210, $220). Today's close of $198.32 keeps NVDA inside this consolidation box.\n\n**Momentum:** RSI estimated ~52 (neutral; not overbought). The quarter-end +1.72% day is welcome but did not produce a momentum breakout — volume at ~185M shares is below the >200M threshold required for a re-entry signal. MACD is flat-positive, suggesting consolidation rather than trending impulse.\n\n**Volume:** ~185M shares traded — below average. This is critical: the re-entry gate explicitly requires above-average volume (>200M) on a $200+ close. Today's volume confirms the market is not yet prepared to make a sustained commitment above $200. Quarter-end rebalancing flows inflate the volume denominator for recent sessions.\n\n**Key levels with evidence:**\n- **★ Strongest resistance: $200.** Acted as the precise intraday high lid ($200.01) on the best quarter-end tape in six years. Has rejected NVDA three times in the past two weeks. The re-entry protocol designates $200 as the gate — the market is treating it as a meaningful level.\n- **★ Strongest support: $192.53** (June 26 correction low). Held on the highest-volume day of the past month (Russell reconstitution). Has not been retested since; represents the floor of the current consolidation base.\n\n**Protocol status:** Stop Day 2 triggered on June 29 ($194.97, $0.03 below $195 stop line). Exit executed at the June 30 open per mandatory protocol. Three re-entry gates: (1) SPX > 7,460 ✓ cleared today; (2) VIX < 17 ✓ cleared today (~16 est.); (3) NVDA > $200 on >200M shares ✗ not yet cleared. Gates (1) and (2) are open for the first time since the May 14 ATH; gate (3) is the only remaining barrier.\n\n**Risk:** NFP July 2 into a 3-day US holiday gap (July 4–6) means the re-entry gate cannot be tested again until July 7 at the earliest. A hot NFP print could reprice rates and re-open the VIX/SPX gates; a cold print could accelerate the $200 break. Position: cash."
+  "analysis": "## Technical analysis\n\n**Trend:** NVDA remains in a recovery channel from the $142.03 52-week low, but the rally has stalled in a $188–$200 consolidation range for the past two weeks. The May 14 ATH at $236.54 is $38.22 away — meaningful overhead supply exists at every $10 increment ($200, $210, $220). Today's close of $198.32 keeps NVDA inside this consolidation box.\n\n**Momentum:** RSI estimated ~52 (neutral; not overbought). The quarter-end +1.72% day is welcome but did not produce a momentum breakout — volume at ~185M shares is below the >200M threshold required for a re-entry signal. MACD is flat-positive, suggesting consolidation rather than trending impulse.\n\n**Volume:** ~185M shares traded — below average. This is critical: the re-entry gate explicitly requires above-average volume (>200M) on a $200+ close. Today's volume confirms the market is not yet prepared to make a sustained commitment above $200. Quarter-end rebalancing flows inflate the volume denominator for recent sessions.\n\n**Key levels with evidence:**\n- **★ Strongest resistance: $200.** Acted as the precise intraday high lid ($200.01) on the best quarter-end tape in six years. Has rejected NVDA three times in the past two weeks. The re-entry protocol designates $200 as the gate — the market is treating it as a meaningful level.\n- **★ Strongest support: $192.53** (June 26 correction low). Held on the highest-volume day of the past month (Russell reconstitution). Has not been retested since; represents the floor of the current consolidation base.\n\n**Protocol status:** Stop Day 2 triggered on June 29 ($194.97, $0.03 below $195 stop line). Exit executed at the June 30 open per mandatory protocol. Three re-entry gates — ALL REMAIN UNCLEARED for the 9th consecutive session: (1) SPX > 7,460 ✗ closed 7,449.36 (11 pts short); (2) VIX < 17 ✗ closed 17.65; (3) NVDA > $200 on >200M shares ✗ est. close ~$198 on est. ~185M vol. NFP July 2 is the next gate-clearing catalyst; earliest viable simultaneous clearance: July 7.\n\n**Risk:** NFP July 2 into a 3-day US holiday gap (July 4–6) means the re-entry gate cannot be tested again until July 7 at the earliest. A hot NFP print could reprice rates and re-open the VIX/SPX gates; a cold print could accelerate the $200 break. Position: cash."
 }
