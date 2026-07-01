@@ -1,0 +1,92 @@
+{
+  "routine": "markets",
+  "date": "2026-07-01",
+  "window": "night",
+  "generated_at": "2026-07-02T01:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Dual Gate Cleared; NFP Binary Gatekeeping July 7 BUY Upgrade",
+    "conviction": "medium",
+    "rationale_short": "Both regime gates cleared simultaneously for the first time in ten sessions — SPX closed at 7,483.23 (above 7,460) and VIX closed at 16.45 (below 17), formally activating the morning's conditional BUY trigger. However, the conditional BUY requires NFP confirmation: June payrolls (consensus 100–115K; ADP missed at 98K) print tomorrow at 8:30 AM ET before a 3-day unhedgeable July 4 holiday gap. HOLD is maintained with specific longs (META AI cloud, GOOGL Dow tail, NVDA half-size) and QQQ puts as binary hedge. BUY upgrade activates on July 7 if NFP is Goldilocks (80–120K, wages +0.2–0.3%)."
+  },
+  "supporting_data": [
+    { "label": "SPX 7,483.23 (+0.45%) + VIX 16.45 — both regime gates cleared simultaneously for the first time in ten sessions; ten-session distributional ceiling formally broken", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-july-1-2026-nasdaq-futures-slip-after-strongest-quarter-since-2020" },
+    { "label": "META $612.91 (+8.88%) — Bloomberg: Meta building AI cloud business to sell excess compute capacity to developers; day's defining narrative catalyst; XLC sector leadership", "url": "https://www.bloomberg.com/news/articles/2026-07-01/meta-is-building-a-cloud-business-to-sell-excess-ai-compute" },
+    { "label": "ADP June 98,000 (vs. 110K forecast; May: 122K); annual pay +4.4% — miss points to Goldilocks NFP range; NFP consensus revised to 100–115K for July 2", "url": "https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html" },
+    { "label": "ISM Manufacturing June 53.3 (vs. consensus 54.0; May: 54.0) — 11th consecutive expansion month; Prices Paid fell sharply to 73.0 from 82.1; most significant disinflation sub-index signal since Q1", "url": "https://tradingeconomics.com/united-states/business-confidence" },
+    { "label": "WTI $68.06 (-2.07%); Q2 WTI -30% — largest quarterly oil decline since 2020; Iran peace talks in Doha advancing; Hormuz normalization accelerating; oil disinflation is the single most durable regime support", "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-july-1-2026/" },
+    { "label": "NVDA $200.09 — re-entry criteria technically met: SPX >7,460 ✅ VIX <17 ✅ NVDA >$200 ✅; half-size position initiated per morning framework; full re-entry awaits Goldilocks NFP July 7", "url": "https://finance.yahoo.com/quote/NVDA/" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7483.23, "change_pct":  0.45, "as_of": "2026-07-01T20:00:00Z" },
+    "nasdaq": { "level": 26040.03, "change_pct": -0.66, "as_of": "2026-07-01T20:00:00Z" },
+    "vix":    { "level": 16.45,   "change_pct": -6.80, "as_of": "2026-07-01T20:00:00Z" },
+    "ust10y": { "level": 4.40,    "change_bps":  3,    "as_of": "2026-07-01T20:00:00Z" },
+    "dxy":    { "level": 100.95,  "change_pct": -0.27, "as_of": "2026-07-01T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.45,   "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7483.23, "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",          "value": 100.95,  "trigger_above": 100,   "unit": "" },
+    { "name": "BTC",          "value": 57500,   "trigger_below": 63500, "unit": "$" },
+    { "name": "30Y Yield",    "value": 4.84,    "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",        "value": 70.50,   "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "META",  "note": "$612.91 (+8.88%) — Bloomberg: Meta building AI cloud business; Q2 earnings July 29 is the first confirmation event where management must quantify the cloud business opportunity; add on pullback to $575–595", "sentiment": "positive" },
+    { "ticker": "NVDA",  "note": "$200.09 — re-entry criteria met by $0.09 margin; half-size position per morning framework; do NOT add full size into NFP binary; full re-entry after Goldilocks NFP July 7", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "$357.89 (+1.29%) — Day 3 of Dow rebalancing institutional bid; XLC sector co-leadership with META; ISM 53.3 expansion supports Google Cloud AI infrastructure thesis", "sentiment": "positive" },
+    { "ticker": "TSLA",  "note": "~$408 est. — Q2 delivery report (consensus 406,024 vehicles) due July 2 alongside NFP; beat = constructive for TSLA post-holiday; miss alongside hot NFP = worst-case July 7 open", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~$276 est. — lagging on Nasdaq -0.66% tech selloff session; hardware overhang unchanged; no July 1 catalyst; avoid", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA (full size)",
+      "reason": "Re-entry criteria technically met ($200.09) by 9 cents on a Nasdaq -0.66% session (tech profit-taking after H1's 80%+ semi gains). Half-size per morning framework is appropriate; full-size addition into NFP binary with 3-day holiday gap is excess risk.",
+      "better_entry": "Full position after Goldilocks NFP July 7 with NVDA sustaining above $200 through the gap. Alternatively, August 26 Q2 FY27 earnings ($91B guide) as the fundamental clearing event."
+    },
+    {
+      "ticker": "BTC",
+      "reason": "Day 12 exit gate at ~$57,500; declined on dual-gate-clearance session; structural speculative capital distribution persists through Goldilocks setups; 3-day July 4 gap makes positions unmanageable.",
+      "better_entry": "Two consecutive UTC closes above $62,000 AND IBIT daily inflows positive for 3+ consecutive days; earliest July 8–9 post-Goldilocks NFP"
+    },
+    {
+      "ticker": "QQQ (unprotected)",
+      "reason": "NFP binary (consensus 100–115K; ADP 98K) through 3-day unhedgeable July 4 gap; hot print tail (>150K) at Nasdaq P/E ~28x implies 12–15% correction risk that cannot be managed Thursday close through Monday open.",
+      "better_entry": "Post-Goldilocks NFP July 7 if SPX holds above 7,460 AND VIX stays below 17 through the holiday weekend"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "META",
+      "direction": "long",
+      "thesis": "Bloomberg's report that Meta is building an AI cloud business to sell excess compute capacity transforms the market's framing of META's $50B+ AI infrastructure spend from cost to incremental revenue opportunity. The pivot to selling excess compute externally (model hosting and/or neocloud-style raw compute) converts a capital-allocation overhang into a new hyperscaler narrative. Q2 earnings July 29 is the first event where management must quantify the cloud business timeline and revenue potential. XLC sector leadership confirmed today with META +8.88% and GOOGL +1.29% on the same session.",
+      "entry": "Pullback to $575–595; initiate new long; add at $565 if offered; hold existing above $600",
+      "invalidation": "SPX closes below 7,300 (broad regime deterioration) OR META reverses below $555 on above-average volume",
+      "conviction": "medium",
+      "horizon": "3–4 weeks (through July 29 Q2 earnings)"
+    },
+    {
+      "asset": "GOOGL",
+      "direction": "long",
+      "thesis": "Day 3 of the Dow rebalancing institutional bid (Alphabet's ~7x Verizon price-weighting creates sustained demand across all Dow-linked ETF/fund rebalancing for 2–4 weeks). GOOGL +1.29% on XLC sector leadership session. ISM 53.3 expansion and Prices Paid 73.0 (disinflation) support Google Cloud's enterprise AI spend thesis. Q2 earnings mid-July adds fundamental catalyst on top of the mechanical Dow rebalancing window.",
+      "entry": "Hold existing from $345–352 per prior setups; add on pullback to $350–355",
+      "invalidation": "SPX closes below 7,300 OR GOOGL closes below $340 on above-average volume",
+      "conviction": "medium",
+      "horizon": "2–4 weeks"
+    },
+    {
+      "asset": "QQQ July 18 puts",
+      "direction": "hedge",
+      "thesis": "June NFP (tomorrow, 8:30am ET; consensus 100–115K; ADP 98K) is a binary event through a 3-day unhedgeable July 4 holiday gap. ADP's 98K miss makes Goldilocks the statistical base case (50%), but the tail of a surprise hot print (>150K, wages +0.4%) driven by government hiring or seasonal adjustments through the gap at Nasdaq ~28x P/E remains the portfolio's primary unhedged risk. Maintain existing puts at 2–3% of gross; do not add size given ADP miss already reduced the hot-print probability.",
+      "entry": "Maintain existing QQQ July 18 puts (2–3% of gross); do not size up",
+      "invalidation": "Goldilocks NFP (80–120K, wages +0.2–0.3%) July 2 — exit puts at July 7 open; shift to net long if SPX >7,460 AND VIX <17 sustained on July 7",
+      "conviction": "low",
+      "horizon": "Through July 7"
+    }
+  ],
+  "bear_case": "Tech profit-taking (Nasdaq -0.66%) on the same session where regime gates cleared for the first time in ten sessions signals that the two-speed market structure (XLC/XLF up; XLK/semis down) is a rotation risk, not a signal that the AI capex cycle's beneficiaries are entering a sustained re-rating. H1 2026's semiconductor leaders gained 80%+ in six months; at Nasdaq P/E ~28x, those valuations require Q2 earnings to confirm acceleration rather than plateau. The ISM miss (53.3 vs. 54.0 consensus; May's 54.0 high-water mark not eclipsed) combined with ADP (98K vs. 110K) establishes a pattern where every 2026 data point is arriving below Wall Street's forecasts — a pattern that historically precedes earnings disappointment. If NFP prints hot tomorrow (>150K, wages +0.4%) through the 3-day July 4 gap at Nasdaq ~28x P/E, the July 1 dual-gate clearance becomes a false breakout and SPX returns below 7,460 before the market can respond. Invalidation: NFP prints 80–120K (Goldilocks), wages +0.2–0.3%, unemployment ≤4.3% — the bear case collapses, the BUY activates July 7, and Q3 earnings season (GOOGL, META, MSFT, AMZN mid-to-late July) becomes the primary long-conviction driver. If SPX holds above 7,460 through July 7 and VIX stays below 17, the ten-session gate struggle retrospectively reads as a bottoming process, not distribution.",
+  "body_mdx": "data/briefings/markets/2026-07-01-night.mdx"
+}

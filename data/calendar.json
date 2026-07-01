@@ -1,55 +1,40 @@
 {
   "events": [
     {
-      "date": "2026-07-01",
-      "label": "ISM Manufacturing PMI June 2026 — ACTUAL: 54.0 (37-month high; beat consensus 53.0)",
-      "kind": "MACRO",
-      "time_et": "10:00 AM",
-      "tickers": ["IWM", "QQQ", "SPY", "NVDA", "TSM"],
-      "note": "June ISM Manufacturing printed 54.0 — 37-month high; 6th consecutive month above 50; beat consensus 53.0. Bull case from June 30 night brief (25% probability, ISM >52) triggered. SPX cleared 7,460 regime gate intraday for first time in 9 sessions. 10Y yield rose +10bps to 4.47% on the inflationary read (Prices Paid sub-index was 82.1 in May). Flash S&P Global PMI was 55.7 — official ISM slightly below but still at 37-month high. Manufacturing expansion has run 6 consecutive months; AI capex cycle and Iran stand-down supply chain normalization confirmed."
-    },
-    {
       "date": "2026-07-02",
-      "label": "June Non-Farm Payrolls 8:30 AM ET — consensus ~100K (vs. May 172K revised); markets open",
+      "label": "June NFP 8:30 AM ET — consensus 100–115K (ADP: 98K miss vs. 110K); TSLA Q2 deliveries (consensus 406K)",
       "kind": "MACRO",
       "time_et": "8:30 AM",
-      "tickers": ["TBT", "TLT", "QQQ", "IWM", "DXY", "BTC"],
-      "note": "June employment report. REVISED consensus: ~100K (Capital Economics: 130K) — sharp deceleration from May's 172K revised. ADP May was 122K; preliminary June weekly run-rate ~123K implied. THREE SCENARIOS: (1) STRONG (>150K, wages +0.4%) = BofA three-hike path (Sep/Oct/Dec 2026) locked in over 3-day unhedgeable July 4 gap; DXY spikes; SPX gaps lower July 7 — HOLD degrades to STEP ASIDE/BEARISH. (2) GOLDILOCKS (90–130K, wages +0.2%) = regime confirms; BUY upgrade viable for July 7; GOOGL long expands; NVDA re-entry window opens if SPX >7,460 + VIX <17 on July 7. (3) WEAK (<90K, wages flat) = recession fears emerge; TLT long pays; growth tech faces further selling. Markets closed July 3 — NFP reaction prints into a 3-day weekend gap; no ability to hedge July 3–6."
-    },
-    {
-      "date": "2026-07-02",
-      "label": "TSLA Q2 2026 deliveries report (est. 396,500–420,000 vehicles)",
-      "kind": "OTHER",
-      "tickers": ["TSLA"],
-      "note": "Tesla Q2 2026 delivery report lands same morning as June NFP. Consensus range: 396,500–420,000 vehicles. Beat = constructive for TSLA and EV sentiment; miss alongside a strong NFP = double negative for July 7 open. Musk 'trillionaire restoration' from June 29 (SpaceX/TSLA) already in the price; delivery beat needed to sustain above $420. Watch for gross margin commentary (any hints via production data)."
+      "tickers": ["TBT", "TLT", "QQQ", "IWM", "DXY", "BTC", "TSLA"],
+      "note": "June employment report. Consensus now 100–115K (revised lower from 170K on ADP 98K miss). ADP June: 98,000 (vs. 110K estimate; May: 122K; annual pay +4.4%). Unemployment rate expected 4.3%. THREE SCENARIOS: (1) GOLDILOCKS (80–120K, wages +0.2–0.3%) = BUY activates July 7; DXY breaks <100; NVDA full re-entry; SPCX passive +$4.3B tailwind. (2) WEAK (<80K) = growth scare; TLT long pays; BUY delayed to CPI resolution July 14. (3) HOT (>150K, wages +0.4%) = BofA 3-hike path (Sep/Oct/Dec 2026) locked in through 3-day unhedgeable July 4 gap; SPX gaps lower July 7; HOLD degrades. Markets closed July 3 — NFP reaction plays into a 3-day weekend gap. TSLA Q2 deliveries due same morning: consensus 406,024 vehicles (+12% vs. Q1); beat = constructive; miss + hot NFP = double negative July 7 open."
     },
     {
       "date": "2026-07-03",
       "label": "US Market Holiday — Independence Day observed (July 4 falls on Saturday)",
       "kind": "HOLIDAY",
-      "note": "US equity markets closed Friday July 3 as July 4, 2026 falls on a Saturday. 3-day weekend gap (July 3–6). The June NFP report prints Thursday July 2 — any repricing accumulates over the full 3-day gap before July 7 open. Use July 2 close as the last chance to hedge or reduce before the gap."
+      "note": "US equity markets closed Friday July 3. 3-day weekend gap (July 3–6). June NFP prints Thursday July 2 — any repricing accumulates over the full gap before July 7 open. QQQ puts or TLT held through July 2 are the only active hedges during the gap."
     },
     {
       "date": "2026-07-07",
-      "label": "SPCX added to Nasdaq-100 Index — ~$4.3B forced passive inflows from QQQ/QQQM; post-NFP holiday return",
+      "label": "SPCX added to Nasdaq-100 (~$4.3B forced passive inflows from QQQ/QQQM); post-NFP holiday return",
       "kind": "OTHER",
       "tickers": ["SPCX", "QQQ", "QQQM"],
-      "note": "Dual catalyst day: (1) SPCX (SpaceX) inclusion in Nasdaq-100 effective July 7 — QQQ/QQQM forced to buy ~$4.3B of SPCX at index weight. Mechanical passive-flow catalyst. ISM 54.0 and manufacturing expansion are constructive for launch infrastructure demand. (2) July 7 open reflects the full NFP repricing accumulated over the July 4 3-day gap — if NFP was strong, gap-down; if Goldilocks, potential gap-up into earnings season. Two simultaneous catalysts (NFP repricing + SPCX passive flow) create higher-than-normal volatility. NVDA re-entry window opens IF SPX >7,460 AND VIX <17 simultaneously AND NVDA >$200 on volume. GOOGL and META pre-earnings buildup begins."
+      "note": "Dual catalyst day: (1) SPCX Nasdaq-100 inclusion effective July 7 — QQQ/QQQM forced to buy ~$4.3B of SPCX at index weight; mechanical passive-flow catalyst. (2) July 7 open reflects full NFP repricing over the 3-day July 4 gap. Goldilocks NFP: opens constructively; VIX Day 2 sub-17 confirmation = formal BUY with medium conviction; NVDA full re-entry; begin Q2 earnings positioning (GOOGL, META, MSFT, AMZN mid-to-late July). Hot NFP: gap-down into earnings season with compressed multiples. SPX must hold 7,460 and VIX must stay below 17 on July 7 for dual-gate Day 2 confirmation."
     },
     {
       "date": "2026-07-08",
-      "label": "FOMC Minutes from June 17 meeting (est.) — first post-dot-plot-removal release",
+      "label": "FOMC Minutes from June 17 meeting (est.) — first post-dot-plot-removal release; SK Hynix ADR listing context",
       "kind": "FOMC",
       "time_et": "2:00 PM",
       "tickers": ["TBT", "TLT", "QQQ", "BTC"],
-      "note": "Minutes from the June 17 FOMC meeting (est. release ~3 weeks after meeting). First FOMC at which Warsh removed the dot plot. SCOTUS upheld Fed independence June 29 — minutes will reveal the internal rate debate with full institutional certainty now restored. ISM 54.0 July 1 (37-month high) provides hawkish data context — the June 17 committee had May ISM of 54.0 too; unanimous hawkish tone = BofA 3-hike forecast solidified. Any dissent or hike-pause language = dovish surprise and rate relief. Key input for Q3 positioning heading into the July 14 CPI print."
+      "note": "Minutes from the June 17 FOMC meeting (est. release ~3 weeks after meeting). First FOMC at which Warsh removed the dot plot. SCOTUS upheld Fed independence June 29 — minutes reveal the internal rate debate with full institutional certainty restored. ISM June 53.3 + Prices Paid 73.0 (disinflation) and ADP 98K provide the June data context the June 17 committee did not have. Hawkish tone = BofA 3-hike forecast solidified; any dovish dissent = summer rate-cut optionality opens. SK Hynix ADR listing (first US capital-markets clearing of HBM4 demand thesis) expected around this date — positive read-through for TSM, AVGO, NVDA."
     },
     {
       "date": "2026-07-10",
-      "label": "SK Hynix ADR Nasdaq listing — $29.4B offering, 17.79M shares (potentially largest ADR in history)",
+      "label": "SK Hynix ADR Nasdaq listing — $29.4B offering, 17.79M shares",
       "kind": "OTHER",
       "tickers": ["000660.KS", "QQQ", "TSM", "NVDA"],
-      "note": "SK Hynix Nasdaq ADR listing — $29.4B offering (17.79M shares). Underwriters: BofA, Goldman Sachs, Citigroup, JPMorgan. ISM 54.0 (July 1) confirms the manufacturing/AI capex cycle that underpins HBM4 demand — constructive for ADR pricing. TSM +1% on July 1 ISM day is a positive read-through. Underwriter stabilization mandate (BofA/Goldman/Citigroup/JPMorgan) provides ADR floor support. HBM4 demand thesis: NVDA H200/B100 requires SK Hynix as primary supplier; ADR is first US capital markets clearing of that thesis. TSM, AVGO, NVDA read-through is constructive if ADR prices above consensus."
+      "note": "SK Hynix Nasdaq ADR listing — $29.4B offering (17.79M shares). Underwriters: BofA, Goldman Sachs, Citigroup, JPMorgan. ISM 53.3 (July 1) confirms the manufacturing/AI capex cycle underpinning HBM4 demand — constructive for ADR pricing. TSM and NVDA read-through is constructive if ADR prices above consensus. HBM4 demand thesis: NVDA H200/B100 requires SK Hynix as primary supplier; ADR is the first US capital-markets clearing of that thesis. Underwriter stabilization mandate provides ADR floor support."
     },
     {
       "date": "2026-07-14",
@@ -57,21 +42,42 @@
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "NVDA", "MU", "BTC"],
-      "note": "June CPI is the next major inflation recalibration after May PCE (June 25, 4.1% YoY). US-Iran stand-down confirmed June 29 — Brent at $72–73/bbl, Hormuz normalization intact. ISM 54.0 with high Prices Paid (May: 82.1) raises risk of sticky goods inflation even as energy deflates. June CPI captures the first full month of Iran peace normalization. If CPI falls to 3.5% or below, the BofA 3-hike framework weakens and July 28 FOMC hike probability collapses. If CPI holds at 4.0%+, September hike is locked in. July 14 is the critical regime-reset date for H2 2026 positioning."
+      "note": "June CPI is the next major inflation recalibration after the July 2 NFP. ISM Prices Paid fell sharply to 73.0 from 82.1 in May (July 1 data) — the most significant manufacturing disinflation read since Q1. WTI -30% in Q2 (largest quarterly decline since 2020) captures the first full month of Iran peace normalization. If CPI falls to 3.5% or below: BofA 3-hike framework weakens materially, July 28 FOMC hike probability collapses, BUY conviction upgrades to HIGH for earnings season. If CPI holds at 4.0%+: September hike locked in, multiple compression risk resumes. CPI is the regime-defining data event of the summer."
+    },
+    {
+      "date": "2026-07-22",
+      "label": "TSLA Q2 2026 earnings (est.) — after market close",
+      "kind": "EARNINGS",
+      "tickers": ["TSLA"],
+      "note": "Q2 earnings follow the July 2 delivery report (consensus 406,024 vehicles). Management commentary on gross margin, Robotaxi timeline, and FSD revenue will determine whether the Q2 delivery beat translates to an earnings catalyst. Musk 'trillionaire restoration' from June 29 (SpaceX/TSLA) in context; delivery beat needed to sustain above $420 heading into earnings."
     },
     {
       "date": "2026-07-28",
-      "label": "FOMC meeting (July 28-29) — rate hike on the table",
+      "label": "FOMC meeting (July 28-29) — rate hike on the table; BofA calls 3 hikes (Sep/Oct/Dec)",
       "kind": "FOMC",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
-      "note": "Nine of 18 FOMC officials projected at least one 2026 rate hike at the June 17 meeting (Warsh's first as Chair). BofA calls for three hikes (Sep/Oct/Dec). ISM 54.0 (July 1, 37-month high) combined with high Prices Paid validates the hawkish case. A 25-bps hike (3.50–3.75% → 3.75–4.00%) at this meeting is a non-trivial probability if June CPI (~July 14) disappoints. SCOTUS upheld Fed independence June 29 — Warsh can hike without political interference. June CPI (~July 14) is the primary input."
+      "note": "Nine of 18 FOMC officials projected at least one 2026 rate hike at the June 17 meeting (Warsh's first as Chair). BofA calls for three hikes (Sep/Oct/Dec). ISM June 53.3 with Prices Paid 73.0 (down from 82.1) and WTI at $68 (-30% Q2) give the committee mixed signals — expansion but with material disinflation. June CPI (~July 14) is the primary input: below 3.5% = hike probability collapses; 4.0%+ = September hike effectively locked in. SCOTUS upheld Fed independence June 29 — Warsh can move without political pressure."
+    },
+    {
+      "date": "2026-07-29",
+      "label": "META Q2 2026 earnings — AI cloud business first confirmation; Q2 earnings season peak week",
+      "kind": "EARNINGS",
+      "tickers": ["META", "GOOGL", "MSFT", "AMZN"],
+      "note": "Bloomberg reported July 1 that Meta is building an AI cloud business to sell excess compute capacity to developers (hosted models and/or raw compute, similar to CoreWeave). META surged +8.88% on the report. Q2 earnings July 29 is the first event where management must quantify the cloud business timeline, potential revenue, and go-to-market plan — the market is pricing substantial optionality ahead of this date. GOOGL, MSFT, and AMZN also report in mid-to-late July. Peak Q3 earnings risk window — positions should be established heading into the first week of July (post-NFP July 7) to capture the pre-earnings buildup. META AI cloud announcement is the single most important new narrative catalyst of July 2026."
     },
     {
       "date": "2026-08-13",
       "label": "Iran-US Islamabad Declaration 60-day deadline — Hormuz full reopening + sanctions relief",
       "kind": "GEO",
       "tickers": ["XLE", "QQQ", "BTC", "NVDA"],
-      "note": "Deal operational from June 18 MOU signing; 60-day window expires August 13. June 29 US-Iran 'stand down' confirmed — both sides agreed to halt tit-for-tat attacks ahead of technical talks. Brent at $72.25 (July 1), Hormuz normalization proceeding. If August 13 deadline met with full Hormuz clearance, WTI could extend to $65–67 — extend XLE short and exit TBT. Failure = oil spike reversal and energy re-rally. The oil-crash pace is ahead of schedule relative to the original June 18 MOU framework."
+      "note": "Deal operational from June 18 MOU signing; 60-day window expires August 13. Iranian exports have already surged past 40 million barrels (July 1 data) as the stand-down takes hold. WTI fell to $68.06 on July 1 (-30% Q2, largest quarterly decline since 2020) — oil normalization is proceeding ahead of the original MOU schedule. If August 13 deadline met with full Hormuz clearance and confirmed sanctions relief, WTI could extend to $62–65. Failure or reversal = oil spike reversal and energy re-rally; Brent trigger returns to focus ($97 threshold). Current Brent ~$70.50 = $26+ buffer; the risk is asymmetric to the downside for oil prices."
+    },
+    {
+      "date": "2026-08-26",
+      "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle fundamental clearing event",
+      "kind": "EARNINGS",
+      "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
+      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration; any deceleration in the guide would challenge the entire 2026 AI-infrastructure re-rating. NVDA re-entry (half-size July 1 conditional; full size July 7 if Goldilocks NFP) is explicitly positioned around this date as the ultimate confirmation catalyst. TSM, AMD, AVGO all read-through from the NVDA earnings report."
     },
     {
       "date": "2026-09-02",
