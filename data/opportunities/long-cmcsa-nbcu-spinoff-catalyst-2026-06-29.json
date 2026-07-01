@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-29",
   "expires_at": "2026-09-30",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["CMCSA", "Comcast", "NBCUniversal", "spinoff", "media", "broadband", "catalyst", "event", "sum-of-parts", "de-conglomeration"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-06-30",
+    "final_price": 24.81,
+    "return_pct": -13.5,
+    "outcome_label": "Stop triggered — spinoff premium fully reversed",
+    "note": "CMCSA closed at $24.81 on June 30, below the $25.00 stop trigger. The 25% pre-market spike on the June 29 announcement fully reversed within one trading session. Despite Deutsche Bank (Buy, $32 PT) and Rosenblatt (Buy, $31 PT) upgrades on June 30, institutional selling overwhelmed the analyst upgrade bid, returning CMCSA to near its pre-announcement close (~$23–24). The market concluded that the media spinoff is being executed from weakness (Peacock losses, linear decline) rather than strength — pricing NBCUniversal SpinCo as a liability rather than an asset. Stop was correct; the $25 floor did not hold."
+  },
   "levels": {
     "entry_low": 27.5,
     "entry_high": 30.5,

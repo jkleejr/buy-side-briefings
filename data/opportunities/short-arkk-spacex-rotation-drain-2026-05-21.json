@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-05-21",
   "expires_at": "2026-07-05",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "event",
     "IPO",
@@ -51,7 +51,13 @@
     "capital-rotation",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-01",
+    "final_price": 70.0,
+    "return_pct": 6.7,
+    "outcome_label": "Target 1 hit at $70 — SpaceX capital drain confirmed",
+    "note": "ARKK fell through the $70 first target as the SpaceX IPO capital rotation materialized on schedule. SPCX began trading June 12, draining capital from ARK's innovation basket as institutional portfolios rotated into the pure-play SpaceX position. As of July 1, ARKK trades at $68.56 — below target 1 ($70) and approaching target 2 ($64). The 40% cover at ~$70 per the target instructions booked +6.7% on the covered tranche. Remaining position into July 5 expiry at $68.56 for additional upside toward $64."
+  },
   "levels": {
     "entry_low": 73,
     "entry_high": 77,
