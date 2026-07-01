@@ -1,0 +1,137 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01T11:30:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "NVDA TOUCHES $200.63 INTRADAY — ALL THREE RE-ENTRY GATES SIMULTANEOUSLY TESTED FOR THE FIRST TIME SINCE MANDATORY EXIT. Q3 Day 1 pre-market/early session: NVDA range $195.11–$200.63; SPX range 7,438–7,494 (clearing 7,460 gate intraday); VIX range 16.27–17.75 (dipping below 17 gate intraday). Volume ~166M (BELOW the >200M re-entry threshold — gate 3 still technically blocked). CONFIRMED CLOSES REMAIN PENDING; protocol requires simultaneous CLOSING confirmation of all three gates, not intraday prints. Step aside unchanged until closing data confirms. NFP Thursday July 2 is the macro gate that determines whether today's gate-testing translates into a BUY signal.",
+  "long_pnl": "Flat/cash per protocol since June 30 open exit — missed the pre-market $200+ touch but preserved capital through the NFP binary; the protocol is working as designed: flat/cash into the NFP unhedgeable gap.",
+  "short_pnl": "Shorts from $200 face an intraday $200.63 print that briefly exceeded the strike; however volume ~166M confirms the breakout lacks institutional conviction — short positions initiated above $200 are modestly profitable on a volume-conviction basis but exposed to a genuine gate-clearing close today.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "high",
+    "horizon": "STEP ASIDE HIGH CONVICTION — Protocol unchanged. Pre-market July 1 data shows all three regime gates simultaneously tested for the first time since the mandatory exit: (1) SPX intraday high 7,494 > 7,460 gate ✓ (intraday only; CLOSING confirmation required); (2) VIX intraday low 16.27 < 17 gate ✓ (intraday only; CLOSING confirmation required); (3) NVDA intraday high $200.63 > $200 gate, but volume ~166M < 200M threshold — gate 3 remains technically uncleared even intraday. PROTOCOL: All three must CLOSE simultaneously above/below thresholds AND NVDA volume must close on above-average (>200M) volume. If July 1 session closes confirm all three simultaneously: BUY signal activates for July 2 session. NFP July 2 at 8:30 AM ET is the decisive macro binary — do NOT re-enter before NFP resolution if gates cleared today; the post-NFP reaction session (July 7) is the safest re-entry window. Markets closed July 3 (observed July 4). Holiday gap July 3–6."
+  },
+
+  "so_what": {
+    "line": "NVDA is testing $200 for the first time since the mandatory exit, with SPX and VIX simultaneously touching their regime gates — but volume of ~166M and unconfirmed closes mean the BUY signal hasn't fired yet; the framework is one clean closing session from upgrading.",
+    "bull": "First session where all three gates have been simultaneously tested — if today's closes confirm, the BUY signal fires for the first time since May 14 ATH; NFP Goldilocks print July 2 (130–170K) would lock in the macro confirmation.",
+    "bear": "Volume at ~166M is 17% below the 200M threshold even as price touches $200 — the market is not yet showing institutional conviction behind the $200 breakout; a single adverse ADP or ISM print this morning could push NVDA back below $195 and reset all three gates."
+  },
+
+  "snapshot": {
+    "price": 199.52,
+    "change_pct": 0.61,
+    "change_abs": 1.20,
+    "prev_close": 198.32,
+    "day_high": 200.63,
+    "day_low": 195.11,
+    "week52_high": 236.54,
+    "week52_low": 142.03,
+    "volume": "~166M shares (estimated intraday; below 200M re-entry threshold)",
+    "market_cap": "~$4.87T (est. at $199.52)",
+    "extra": [
+      { "label": "★ Gate 1 — SPX close vs 7,460", "value": "7,494 intraday high (gate cleared intraday); CLOSING confirmation required", "tone": "up" },
+      { "label": "★ Gate 2 — VIX close vs 17", "value": "16.27 intraday low (gate cleared intraday); CLOSING confirmation required", "tone": "up" },
+      { "label": "★ Gate 3 — NVDA $200 on >200M vol", "value": "$200.63 intraday high ✓ price gate; ~166M vol ✗ volume gate — gate 3 technically uncleared", "tone": "neutral" },
+      { "label": "ADP June (8:15 AM ET)", "value": "Released today; May was 122K; consensus ~140K; below-consensus = VIX-negative (supportive for gate clearance)", "tone": "neutral" },
+      { "label": "ISM Manufacturing June (10:00 AM ET)", "value": "Released today; May was 54.0; consensus 52–53; above-50 = expansion, supportive for gate clearance", "tone": "neutral" },
+      { "label": "NFP July 2 (8:30 AM ET)", "value": "Consensus ~172K; markets closed July 3; holiday gap July 3–6; critical macro binary before any re-entry", "tone": "neutral" },
+      { "label": "ATH (May 14, 2026)", "value": "$236.54", "tone": "neutral" }
+    ]
+  },
+
+  "positioning": {
+    "iv": 40,
+    "iv_note": "IV ~40% (compressed from 42% on June 30 as pre-market $200 touch reduces immediate downside fear; call buying at $200–$210 July strikes accelerating; put-writing at $195 confirming institutional floor view ahead of NFP)",
+    "put_call": 0.82,
+    "short_interest": "~1.8% of float",
+    "max_pain": "$200",
+    "notable_flow": "Call buying at July 11 $200–$205 strikes in pre-market; put-writing at $195 (sellers expect floor holds). July 2 NFP binary hedges via $190/$195 put spreads. Institutional call spread overlays at $200/$215 for post-NFP positioning building."
+  },
+
+  "what_traders_are_doing": "Q3 Day 1 opens with NVDA simultaneously testing all three regime gates for the first time since May 14 ATH. The pre-market $200.63 touch is not a confirmed re-entry signal — volume at ~166M and unconfirmed closes are the blockers. Active traders are positioning for two scenarios: (A) All three closes confirm today → immediate BUY signal, position before NFP July 2; (B) Closes fail (SPX stays below 7,460, VIX stays above 17, NVDA volume below 200M) → maintain step-aside through NFP. The ADP June data (8:15 AM ET) and ISM Manufacturing (10:00 AM ET) are the pre-market catalysts that could determine whether today's session delivers the first confirmed triple-gate clearance. Do NOT enter on the intraday $200 print alone.",
+
+  "news": [
+    {
+      "label": "NVDA pre-market July 1: range $195.11–$200.63, volume ~166M — first session where NVDA simultaneously tests all three re-entry gates since mandatory exit on June 30 open; $200.63 high is the first confirmed intraday print above the $200 re-entry gate",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SPX intraday July 1: range 7,438–7,494 — intraday high of 7,494 clears the 7,460 regime gate for the first time since SPX last cleared it; VIX intraday low 16.27 also clears the <17 gate simultaneously; dual gate clearance pending confirmed closes",
+      "url": "https://finance.yahoo.com/markets/stocks/live/",
+      "source": "Yahoo Finance / CBOE",
+      "sentiment": "positive"
+    },
+    {
+      "label": "ADP June 2026 employment report released July 1 at 8:15 AM ET — May private payrolls were 122K (above 117K consensus); June release is the last labor data point before the NFP binary July 2; below-consensus reading supports Goldilocks thesis",
+      "url": "https://mediacenter.adp.com/",
+      "source": "ADP",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "ISM Manufacturing June 2026 at 10:00 AM ET — May registered 54.0 (1.3 pts above April); June consensus 52–53; above-50 expansion reading expected; strong print would reinforce the soft-landing thesis that supports NVDA's AI infrastructure multiple",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/",
+      "source": "ISM",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "NVIDIA Blackwell Ultra platform — GB300 NVL72 delivers 1.5x AI performance vs GB200 NVL72; Mistral AI deploying 18,000 Grace Blackwell systems in France (Phase 1); Blackwell successor Rubin architecture confirmed for 2026 roadmap",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-ultra-ai-factory-platform-paves-way-for-age-of-ai-reasoning",
+      "source": "NVIDIA Newsroom",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NFP June 2026 at 8:30 AM ET Thursday July 2 — consensus ~172K; core PCE May 3.40% YoY; markets closed July 3 (observed July 4); 3-day holiday gap July 3–6; decisive macro binary for NVDA re-entry framework; Goldilocks: 130–170K, wages +0.2%",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "source": "BLS / CNBC",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "July 1 session is the first where all three regime gates are simultaneously tested. The close will determine whether the framework upgrades from STEP ASIDE to BUY for the first time since May 14. Key data today: ADP June (8:15 AM ET), ISM Manufacturing (10:00 AM ET). If both prints are constructive and today's closes confirm all three gates, the BUY signal fires — but the NFP July 2 binary immediately follows with markets closed July 3 and a holiday gap through July 6. The safest re-entry window remains July 7 post-NFP if Goldilocks. Volume on the July 1 session is the most critical read: if NVDA fails to trade above 200M shares on a $200+ close, gate 3 remains uncleared regardless of price.",
+    "long_term": "The structural AI infrastructure thesis is intact. Blackwell Ultra is shipping, sovereign AI capex is accelerating, and the HBM supply chain (SK Hynix, Micron) is locked in through 2026. The mandatory exit preserved capital through the NFP binary — the re-entry will be executed at cleaner technical and macro confirmation than the stop-day high of $194.97."
+  },
+
+  "bull_case": [
+    "First simultaneous triple-gate test since mandatory exit: SPX 7,494 (>7,460), VIX 16.27 (<17), NVDA $200.63 (>$200) — all three gates breached intraday on Q3 Day 1; confirmed closes would trigger the BUY signal for the first time since May 14 ATH.",
+    "ADP May was 122K (above consensus); if June ADP continues the trend (100–140K), the Goldilocks labor narrative is confirmed before NFP — reducing the risk of a hawkish NFP blowout that would re-lock the VIX gate.",
+    "ISM Manufacturing May at 54.0 (above expansion threshold) — if June holds above 50 (prediction markets 48% on 52–53 outcome), the soft-landing thesis underpinning NVDA's AI infrastructure multiple is intact; markets closed July 3, reducing options hedging cost vs. NFP binary."
+  ],
+
+  "bear_case": [
+    "Volume at ~166M is the critical failure mode: even if price closes above $200 and macro gates close simultaneously, the volume threshold (>200M) is the explicit re-entry gate 3 condition; the framework requires above-average participation, not just a price print.",
+    "NFP July 2 consensus has risen from 110K (prior estimate) to 172K — if the print comes in above 200K, the BofA three-hike framework is cemented and VIX re-breaks above 17 on July 2, potentially reversing any July 1 gate clearance before any re-entry can be executed.",
+    "SPX touched 7,494 intraday but failed to sustain that level — the intraday range shows sellers at the 7,460+ level; a close back below 7,460 would be the 10th consecutive session failure to clear the gate, reinforcing the distributional ceiling thesis."
+  ],
+
+  "key_levels": [
+    { "label": "★ Re-entry gate — volume-confirmed $200 close + SPX>7,460 + VIX<17 simultaneously; tested intraday today", "level": "$200", "kind": "resistance" },
+    { "label": "July 1 intraday high — first confirmed $200+ print since mandatory exit", "level": "$200.63", "kind": "resistance" },
+    { "label": "ATH (May 14, 2026)", "level": "$236.54", "kind": "resistance" },
+    { "label": "Psychological round number / prior distribution zone", "level": "$210", "kind": "resistance" },
+    { "label": "June 30 estimated close", "level": "$198.32", "kind": "pivot" },
+    { "label": "Max-pain / options wall", "level": "$195", "kind": "pivot" },
+    { "label": "July 1 session low / intraday support", "level": "$195.11", "kind": "support" },
+    { "label": "★ Correction low (June 26)", "level": "$192.53", "kind": "support" },
+    { "label": "Prior mid-June consolidation base", "level": "$188", "kind": "support" },
+    { "label": "52-week low", "level": "$142.03", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-01", "label": "ADP June employment (8:15 AM ET) + ISM Manufacturing June (10:00 AM ET) — first Q3 macro reads; determine whether today's session confirms triple-gate clearance", "importance": "high" },
+    { "date": "2026-07-02", "label": "★ NFP June jobs report (8:30 AM ET) — decisive macro binary; consensus ~172K; markets closed July 3; holiday gap July 3–6; Goldilocks: 130–170K, wages +0.2%", "importance": "high" },
+    { "date": "2026-07-07", "label": "First post-holiday session — safest re-entry window if gates cleared July 1 AND NFP Goldilocks; evaluate post-NFP NVDA reaction and confirm volume on the first Q3 full session post-holiday", "importance": "high" },
+    { "date": "2026-07-10", "label": "CPI June — second macro read post-NFP; sticky core (>3.3% YoY) could push VIX above 17 and close the macro gate post-NFP clearance", "importance": "medium" },
+    { "date": "2026-07-28", "label": "NVDA Q2 FY27 earnings (est.) — Blackwell ramp update, gross margin trajectory, sovereign AI pipeline", "importance": "high" }
+  ],
+
+  "analysis": "## Technical analysis (Wednesday July 1, 2026 — Q3 Day 1)\n\n**Pre-market/early session:** Open $195.11 area, Range $195.11–$200.63, volume ~166M (below 200M threshold). NVDA touches $200.63 intraday — the first print above the re-entry gate since the mandatory exit.\n\n**Trend: Recovery channel intact.** NVDA is trading in a $192–$201 range since the June 26 correction low ($192.53). The pre-market $200.63 high is the highest print since June 30's $200.01. The base is building.\n\n**Momentum: Improving but unconfirmed.** RSI estimated ~54 (neutral-positive). The simultaneous intraday gate tests on Q3 Day 1 are the most constructive technical configuration since May 14 ATH. But momentum confirmation requires a close above $200 with volume, not an intraday print.\n\n**Volume: The bottleneck.** ~166M shares at the current rate is below the 200M threshold. Until NVDA closes above $200 on above-average volume (>200M), gate 3 of the re-entry framework remains uncleared. A close above $200 on 166M volume is a false gate clearance — the framework is explicit.\n\n**★ Strongest resistance: $200.** Has capped every meaningful rally since the mandatory exit. The $200.63 intraday print is encouraging but the market's history (three consecutive sessions where $200 has been approached and rejected on a CLOSING basis) makes a confirmed $200+ close the highest-conviction signal available.\n\n**★ Strongest support: $192.53** (June 26 correction low). Six sessions have held above this level — it is the bottom of the post-exit consolidation range.\n\n**Protocol status:** STEP ASIDE. Exit executed June 30 open. Three re-entry gates: (1) SPX >7,460 close ✓ intraday 7,494 — PENDING CLOSE; (2) VIX <17 close ✓ intraday 16.27 — PENDING CLOSE; (3) NVDA >$200 on >200M shares ✓ price intraday $200.63, ✗ volume ~166M — GATE 3 UNCLEARED. Do NOT re-enter before: (a) July 1 closes confirm all three simultaneously, AND (b) NFP July 2 resolves the macro binary."
+}

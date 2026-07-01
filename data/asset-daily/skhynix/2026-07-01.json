@@ -1,0 +1,137 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01T11:30:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+
+  "day_winner": "bears",
+  "day_summary": "SK HYNIX KST CLOSE ₩2,584,000 (-2.49%, -₩66,000) ON KOSPI -1.72% TO 8,309. THREE CRITICAL DEVELOPMENTS: (1) KOSPI fell from June 30's 8,571 back to 8,309 — Gate 1 (>8,500) FAILED after single-session clearance; (2) July 1 intraday low ₩2,502,000 BREACHED THE ₩2,540,000 MANDATORY STOP (by ₩38,000) — stock recovered to close ₩2,584,000, so no close-based stop trigger; (3) ADR underwriter stabilisation floor moved lower from ₩2,541,000 (June 30 proved floor) to approximately ₩2,500,000–₩2,502,000 (today's low). HOLD maintained: KST close ₩2,584,000 is above ₩2,540,000 stop. But stop proximity danger is extreme — ₩44,000 (1.7%) buffer between current close and mandatory exit level. ADR listing July 10 = 8 KRX sessions away.",
+  "long_pnl": "Holders survived another intraday stop test — ₩2,502,000 intraday low was ₩38,000 below the mandatory stop; the recovery to ₩2,584,000 KST close preserves the position, but the margin has narrowed to ₩44,000; holders from the initial position are now at a level where any negative catalyst puts the stop within a normal daily trading range.",
+  "short_pnl": "Shorts who targeted the stop at ₩2,540,000 were rewarded intraday (₩2,502,000 low) but the KST close recovery to ₩2,584,000 closed much of the P&L; with ADR listing July 10 providing structural demand and underwriters defending the position, short selling below ₩2,540,000 on a closing basis remains risky.",
+
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "HOLD at LOW conviction — one bad KST session from Stop Day 1. KST close ₩2,584,000 (above ₩2,540,000 mandatory stop — no stop trigger today). STOP PROTOCOL: requires TWO consecutive KST closes below ₩2,540,000; today's ₩2,584,000 close does NOT trigger. CRITICAL WARNING: (1) KOSPI Gate 1 FAILED — 8,309 is 191 pts below 8,500 threshold after single-day clearance on June 30; (2) Intraday low ₩2,502,000 was ₩38,000 below stop — close buffer is now only ₩44,000; (3) ADR underwriter floor has shifted lower to ~₩2,500,000. Gate framework: KOSPI >8,500 AND SK Hynix >₩2,700,000 simultaneously = both UNCLEARED. ADR listing July 10 (8 KRX sessions) is the primary structural backstop. Do NOT average down. Do NOT add. Hold only — exit immediately if next KST session closes below ₩2,540,000."
+  },
+
+  "so_what": {
+    "line": "KOSPI fell back below 8,500 on the first Q3 session and SK Hynix intraday-pierced the ₩2,540,000 mandatory stop before recovering to close ₩2,584,000 — the position is held by a ₩44,000 thread, with ADR underwriters defending a slightly lower floor than June 30.",
+    "bull": "ADR underwriter bid is still present (today's ₩2,502,000 low recovered fully to ₩2,584,000 KST close) and July 10 ADR listing is 8 sessions away — the $29.4B economic incentive for BofA/Goldman/Citi/JPMorgan to keep this above the stop remains intact; KOSPI sell-off is post-quarter-end normalization, not fundamental deterioration.",
+    "bear": "KOSPI Gate 1 failed after exactly ONE session of clearance; the ₩2,502,000 intraday low went ₩38,000 below the mandatory stop — the underwriter floor has shifted ₩39,000 lower than June 30's confirmed ₩2,541,000 bid; a single modest negative session from here triggers Stop Day 1."
+  },
+
+  "snapshot": {
+    "price": 2584000,
+    "change_pct": -2.49,
+    "change_abs": -66000,
+    "prev_close": 2650000,
+    "day_high": 2723000,
+    "day_low": 2502000,
+    "week52_high": 2945000,
+    "week52_low": 1850000,
+    "volume": "~2.1M shares (est.; above-average on decline)",
+    "market_cap": "~₩187.9T (~$136B)",
+    "extra": [
+      { "label": "KOSPI July 1 close", "value": "8,309 (-1.72% from June 30's 8,571) — Gate 1 FAILED ✗ (needs >8,500; one-session clearance on June 30 reversed)", "tone": "down" },
+      { "label": "★ Intraday low vs. mandatory stop", "value": "₩2,502,000 LOW — ₩38,000 BELOW ₩2,540,000 MANDATORY STOP (intraday breach; close ₩2,584,000 remains above stop)", "tone": "down" },
+      { "label": "Close vs. mandatory stop buffer", "value": "₩44,000 (1.7%) — narrowest close-to-stop margin since position initiated", "tone": "down" },
+      { "label": "ADR underwriter floor update", "value": "June 30 confirmed floor: ₩2,541,000; July 1 apparent floor: ~₩2,502,000 (lower by ₩39,000 — floor is drifting lower ahead of July 10 listing)", "tone": "down" },
+      { "label": "ADR listing (Nasdaq SKHY)", "value": "July 10 — 8 KRX sessions away", "tone": "neutral" },
+      { "label": "Gate 2 — SK Hynix >₩2,700,000", "value": "₩2,584,000 — NOT cleared ✗ (₩116,000 or 4.5% below gate)", "tone": "down" },
+      { "label": "Stop protocol status", "value": "Stop Day 0 — no consecutive closes below ₩2,540,000 yet; today ₩2,584,000 is ABOVE stop", "tone": "neutral" }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "Elevated single-stock volatility ahead of ADR listing; IV estimated ~19% for July expiry (up from 18% on June 30 as stop proximity and KOSPI Gate 1 failure add uncertainty premium)",
+    "put_call": 1.05,
+    "short_interest": "~2.3% of float (est. elevated vs June 30's 2.1% as the stop test on June 30 and today attract short-sellers targeting ₩2,540,000 level)",
+    "notable_flow": "ADR underwriter bid confirmed at ~₩2,502,000 (today's intraday low recovery from ₩2,502,000 back to ₩2,584,000 KST close suggests underwriter bid is present but at a LOWER level than June 30's ₩2,541,000). Domestic institutional selling at ₩2,650,000 open and ₩2,720,000 intraday high — supply is present at every meaningful recovery. Foreign net selling resumed on Day 1 of Q3 2026."
+  },
+
+  "what_traders_are_doing": "JULY 1 KST CLOSE — HOLD LOW CONVICTION; STOP PROXIMITY EXTREME: (1) Hold the position — KST close ₩2,584,000 is above ₩2,540,000 mandatory stop; no stop trigger today; (2) Monitor July 2 KST session as Stop Day 1 potential — if KST close falls below ₩2,540,000, that is Stop Day 1; a second consecutive close below triggers mandatory full exit with no discretion; (3) KOSPI Gate 1 cleared and failed in a single session — the June 30 KOSPI clearance was quarter-end mechanical, not fundamental; 8,309 is the Q3 Day 1 reality; (4) ADR underwriter floor has drifted lower to ~₩2,502,000 — the economic backstop is still present but offers less protection than the June 30 ₩2,541,000 floor; (5) July 2 KST session is the MOST CRITICAL session for the position — any negative catalyst (US NFP shock, KOSPI broader decline, Korea macro news) could push the close below ₩2,540,000; (6) US NFP Thursday July 2 at 8:30 AM ET will influence Korean risk sentiment indirectly; a hawkish NFP (strong >200K, wages +0.4%) = USD/KRW strengthens → KOSPI under pressure → SK Hynix more vulnerable.",
+
+  "news": [
+    {
+      "label": "KOSPI July 1: 8,309 (-1.72%) — Q3 opens with South Korea's KOSPI slipping after 68% Q2 gain driven by AI semiconductor demand; KOSPI Gate 1 (>8,500) FAILED after single-session clearance on June 30; Iran negotiations encountered fresh setbacks weighing on Asia risk sentiment",
+      "url": "https://economymiddleeast.com/news/stock-market-today-japans-nikkei-extends-rally-south-koreas-kospi-dips-as-wall-street-posts-best-quarter-since-2020/",
+      "source": "Economy Middle East / Yahoo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SK Hynix KST July 1: ₩2,584,000 (-2.49%), O₩2,665,000 / H₩2,723,000 / L₩2,502,000 — intraday low ₩38,000 below mandatory stop of ₩2,540,000; recovery confirms underwriter stabilisation bid at ~₩2,500,000 level; close ₩44,000 above stop is the narrowest buffer in this position's history",
+      "url": "https://finance.yahoo.com/quote/000660.KS/",
+      "source": "Yahoo Finance / KRX market data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SK Hynix ADR (SKHY) Nasdaq listing July 10 — 8 KRX sessions remaining; 17.79M shares (~$29.4B); underwriters BofA/Goldman/Citi/JPMorgan; ADR stabilisation mandate creates structural floor; July 10 listing is the primary demand event that backstops the position",
+      "url": "https://www.reuters.com/",
+      "source": "Bloomberg / Reuters",
+      "sentiment": "positive"
+    },
+    {
+      "label": "HBM4 demand cycle intact: SK Hynix retains ~60% global HBM market share; NVIDIA Blackwell B300 allocations locked through Q4 2026; Samsung HBM3E disqualification from NVIDIA certification extends SK Hynix monopoly through at least H1 2027",
+      "url": "https://www.trendforce.com/",
+      "source": "TrendForce / Industry sources",
+      "sentiment": "positive"
+    },
+    {
+      "label": "US NFP July 2 (8:30 AM ET) — indirect Korea impact: strong NFP (+200K) → USD strengthens → KRW weakens → KOSPI under further pressure; weak NFP (<100K) → USD weakens → KRW strengthens → KOSPI relief; risk-off NFP binary creates asymmetric SK Hynix exposure",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "source": "BLS",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "KOSPI Q2 2026 surged 68% driven by AI semiconductor demand — SK Hynix, Samsung led gains; Q3 opens with profit-taking and KOSPI normalization from elevated levels; post-quarter-end rebalancing typically reduces the window-dressing support that inflated June 30 KOSPI to 8,571",
+      "url": "https://www.bloomberg.com/quote/KOSPI:IND",
+      "source": "Bloomberg / KRX",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "July 2 KST session is the most critical for this position. If SK Hynix closes below ₩2,540,000 on July 2: Stop Day 1 triggered — the next KST session must ALSO close below ₩2,540,000 to mandate full exit. Scenarios: (A) July 2 KST closes above ₩2,540,000 → position maintained, framework continues toward July 10 ADR listing; (B) July 2 KST closes below ₩2,540,000 → Stop Day 1; monitor July 3 KST (KRX is open July 3; only US markets close); (C) July 2 AND July 3 KST both close below ₩2,540,000 → mandatory full exit executed at July 3 open. The US NFP on July 2 at 8:30 AM ET significantly influences the July 2 KST afternoon session (KRX closes at 3:30 PM KST / 6:30 AM UTC, after NFP release).",
+    "long_term": "SK Hynix structural thesis remains intact: largest HBM3e/HBM4 supplier, NVIDIA Blackwell exclusive partner, $29.4B Nasdaq ADR listing transforming the investor base. The ADR listing July 10 is the structural re-rating event that has not changed. The near-stop threat is tactical, not fundamental. Post-ADR: MSCI index inclusion process begins, triggering systematic rebalancing demand over 3–6 months. If the stop forces an exit, the re-entry framework requires re-establishing both gates (KOSPI >8,500 AND SK Hynix >₩2,700,000) after ADR listing stability."
+  },
+
+  "bull_case": [
+    "ADR underwriter bid is still present at ~₩2,502,000 (today's low was met with recovery buying) — four bulge-bracket banks with $29.4B at stake will not let this stock collapse into the July 10 listing; the July 1 intraday recovery is the same pattern as June 30 (₩2,541,000 → recovered to ₩2,650,000 close); the floor may be lower but it still exists.",
+    "July 10 ADR listing is the largest Korean company Nasdaq IPO in history — institutional demand from US passive funds, pension funds, and AI thematic investors who cannot access 000660.KS will be structural and immediate; this creates 8 sessions of sustained underwriter support.",
+    "KOSPI 8,309 is still above the 8,000 structural level and the Q2 +68% gain was primarily driven by AI memory fundamentals (HBM4 demand, Samsung disqualification) — a single post-quarter-end normalization session is not a fundamental thesis change; if US regime gates clear today (SPX >7,460, VIX <17), Asia risk sentiment improves tomorrow."
+  ],
+
+  "bear_case": [
+    "The ADR underwriter floor has drifted ₩39,000 lower from ₩2,541,000 (June 30) to ~₩2,502,000 (July 1) — if it drifts another ₩38,000 lower, the next intraday low could print below ₩2,464,000 and the KST close may follow through below ₩2,540,000; the floor is not fixed.",
+    "KOSPI Gate 1 cleared for one session (June 30) then immediately failed (July 1 at 8,309) — the KOSPI clearance was entirely mechanical (quarter-end rebalancing); without genuine fundamental improvement, KOSPI may continue its post-Q2 normalization lower, putting additional pressure on SK Hynix.",
+    "The NFP July 2 strong print scenario (>200K, wages +0.4%) would strengthen USD, weaken KRW, and create risk-off in Korean equities — a sequential: (NFP shock) → (USD/KRW spike) → (KOSPI decline) → (SK Hynix close below ₩2,540,000) → Stop Day 1 triggered before any ADR stabilisation can respond."
+  ],
+
+  "key_levels": [
+    { "label": "★ Gate 2 / ADR re-rating resistance", "level": "₩2,700,000", "kind": "resistance" },
+    { "label": "June 30 session high / ADR underwriter distribution ceiling", "level": "₩2,742,000", "kind": "resistance" },
+    { "label": "July 1 session high", "level": "₩2,723,000", "kind": "resistance" },
+    { "label": "52-week high (ATH)", "level": "₩2,945,000", "kind": "resistance" },
+    { "label": "July 1 KST close", "level": "₩2,584,000", "kind": "pivot" },
+    { "label": "June 30 KST close", "level": "₩2,650,000", "kind": "pivot" },
+    { "label": "★ Mandatory stop — two consecutive KST closes below = mandatory full exit; close buffer only ₩44,000", "level": "₩2,540,000", "kind": "support" },
+    { "label": "ADR underwriter floor (July 1) — drifted from ₩2,541,000 (June 30) to ~₩2,502,000", "level": "₩2,502,000", "kind": "support" },
+    { "label": "July 1 intraday low — confirmed by KRX data", "level": "₩2,502,000", "kind": "support" },
+    { "label": "Prior consolidation support (mid-June)", "level": "₩2,480,000", "kind": "support" },
+    { "label": "52-week low", "level": "₩1,850,000", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-02", "label": "★ CRITICAL — July 2 KST session: if close below ₩2,540,000 = Stop Day 1 triggered; US NFP (8:30 AM ET) impacts KRW and KOSPI afternoon session", "importance": "high" },
+    { "date": "2026-07-03", "label": "July 3 KST session (KRX open; US closed for observed July 4): if Stop Day 1 triggered July 2, then July 3 close below ₩2,540,000 = mandatory full exit at July 3 open", "importance": "high" },
+    { "date": "2026-07-07", "label": "First session post-US holiday gap — US NFP reaction filters into Korean market; ADR final pricing window for July 10 listing; underwriter stabilisation activity intensifies in final sessions before listing", "importance": "high" },
+    { "date": "2026-07-10", "label": "★ SK Hynix ADR (SKHY) Nasdaq listing — 17.79M shares (~$29.4B); BofA/Goldman/Citi/JPMorgan underwriters; structural re-rating event; first MSCI/S&P ADR index inclusion assessments begin", "importance": "high" },
+    { "date": "2026-07-25", "label": "SK Hynix Q2 2026 earnings (est.) — HBM4 revenue share, ASP trajectory, Blackwell allocation update, ADR structure impact on financials", "importance": "high" }
+  ],
+
+  "analysis": "## Technical analysis (Wednesday July 1, 2026 — KST close)\n\n**KST close: ₩2,584,000 (-2.49%)** on KOSPI -1.72% to 8,309. Range: ₩2,502,000–₩2,723,000.\n\n**Trend: Bearish consolidation.** SK Hynix has been range-bound ₩2,500,000–₩2,750,000 for three weeks. The June 30 recovery (+0.99% to ₩2,650,000) on KOSPI's +2.1% quarter-end session has been fully reversed on Q3 Day 1 (-2.49%). The stock is back to the middle-bottom of the consolidation range.\n\n**CRITICAL: Intraday stop breach.** July 1 low ₩2,502,000 went ₩38,000 below the ₩2,540,000 mandatory stop. This is the second consecutive session with an intraday breach (June 30 low ₩2,541,000 was exactly at the stop). The intraday breaches are accelerating deeper — June 30 was ₩1,000 above stop on the day low (₩2,541,000); July 1 is ₩38,000 below. The trend of intraday stop pressure is worsening.\n\n**ADR underwriter floor assessment.** The June 30 underwriter bid was confirmed at ₩2,541,000 (recovery from exactly that level). July 1 underwriter bid appears at ~₩2,502,000 (the intraday low where recovery buying emerged). The floor has drifted ₩39,000 lower. This is concerning: if the floor drifts by another ₩38,000–₩40,000, the next intraday low could go below ₩2,464,000 and the KST close might not recover above ₩2,540,000.\n\n**★ Most important: Stop Day 1 risk.** The framework requires two consecutive KST closes below ₩2,540,000 for mandatory exit. Today was NOT a close below the stop (₩2,584,000). But with a buffer of only ₩44,000 and an intraday drift pattern, the next session's close is critical. ANY close below ₩2,540,000 is Stop Day 1.\n\n**Resistance: ₩2,700,000.** Gate 2 threshold. The stock touched ₩2,723,000 intraday on July 1 (above gate) but closed at ₩2,584,000 — sellers absorbed at exactly the Gate 2 level on the session high before the distribution resumed. Gate 2 is not clearing.\n\n**KOSPI Gate 1 context.** KOSPI at 8,309 is 191 pts below the 8,500 Gate 1 threshold. The quarter-end 8,571 clearance was the only session above 8,500 in this framework's history. The Q3 normalization suggests KOSPI may need a structural catalyst (US regime gates, Korea macro data) to re-clear 8,500. NFP July 2 is an indirect KOSPI catalyst."
+}
