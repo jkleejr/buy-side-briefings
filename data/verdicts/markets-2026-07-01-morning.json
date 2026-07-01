@@ -1,0 +1,172 @@
+{
+  "routine": "markets",
+  "date": "2026-07-01",
+  "window": "morning",
+  "generated_at": "2026-07-01T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — H2 Opens With 9th Gate Failure; 10Y at 4.46% Is New Headwind; Fear & Greed 27 (Fear) Prevents Escalation",
+    "conviction": "medium",
+    "rationale_short": "H2 2026 opens with nine consecutive failures to clear both regime gates (SPX below 7,460; VIX above 17). The 10Y yield rose to 4.46% overnight (+9 bps from June 30's 4.37% close), a new hawkish headwind compressing Nasdaq's ~28x P/E multiple, with the 30Y approaching the 5.00% trigger. BTC fell to $58,644 (Crypto.com live, 11:06 UTC July 1) — Day 11 of the exit gate — with Bitcoin spot ETFs recording $4.5B in June outflows, their worst month since launch. Q2 window-dressing support has expired as of the June 30 close, removing the primary mechanical tailwind that sustained SPX through Q2's final weeks. Two catalysts arrive today: ADP Employment at 8:15am ET (May 122K private jobs) and ISM Manufacturing at 10am ET (May 54%; prediction markets see June at 52-53%). The more decisive binary is NFP July 2 at 8:30am ET, unhedgeable through a 3-day July 4 holiday gap. HOLD is maintained — not escalated to STEP ASIDE — because the Fear & Greed Index hit 27 (Fear) as of June 30, a contrarian signal that meaningful pessimism has been priced in. BUY upgrade requires SPX closing above 7,460 AND VIX closing below 17 simultaneously, confirmed by Goldilocks NFP (130-170K, wages +0.2-0.3%) on July 2.",
+    "supporting_data": [
+      {
+        "label": "SPX 7,449.36 June 30 close — 11 pts below 7,460 regime floor; 9th consecutive session failing to close above gate; Q2 window-dressing expired; no mechanical tailwind for July 1",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-30-2026"
+      },
+      {
+        "label": "VIX ~17.65 June 30 close — above 17 gate for 9th consecutive session; NFP uncertainty suppressing compression; July 4 holiday gap removes the usual pre-holiday volatility crush",
+        "url": "https://finance.yahoo.com/quote/%5EVIX/history/"
+      },
+      {
+        "label": "BTC $58,644 live (Crypto.com MCP 11:06 UTC July 1) — Day 11 exit gate; 24h range $57,802-$59,468; Bitcoin spot ETF June outflows $4.5B = worst month since January 2024 launch",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "10Y UST 4.46% July 1 pre-market (Trading Economics) — up +9 bps from June 30's 4.37% close; new hawkish headwind on H2's opening day; 30Y approaching 5.00% trigger",
+        "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+      },
+      {
+        "label": "Fear & Greed Index 27 (Fear) as of June 30 — prevents escalation to STEP ASIDE; market has priced in substantial downside; historically above-average 12-month forward returns from Fear readings below 30",
+        "url": "https://feargreedmeter.com/fear-and-greed-index"
+      },
+      {
+        "label": "ISM Manufacturing June due 10am ET today (May 54%; prediction markets 52-53% for June) + NFP July 2 8:30am ET (prior 172K) — two sequential binaries through 3-day unhedgeable July 4 holiday gap",
+        "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7449.36,  "change_pct": 0.79,  "as_of": "2026-06-30T21:00:00Z" },
+    "nasdaq": { "level": 26213.72, "change_pct": 1.52,  "as_of": "2026-06-30T21:00:00Z" },
+    "vix":    { "level": 17.65,    "change_pct": 0.0,   "as_of": "2026-06-30T21:00:00Z" },
+    "ust10y": { "level": 4.46,     "change_bps": 9,     "as_of": "2026-07-01T10:00:00Z" },
+    "dxy":    { "level": 101.2,    "change_pct": 0.0,   "as_of": "2026-07-01T10:00:00Z" }
+  },
+  "regime_risk": [
+    {
+      "name": "VIX",
+      "value": 17.65,
+      "trigger_above": 17,
+      "unit": "",
+      "status": "breach",
+      "sessions_in_breach": 9
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7449.36,
+      "trigger_above": 7460,
+      "unit": "",
+      "status": "breach",
+      "sessions_in_breach": 9
+    },
+    {
+      "name": "DXY",
+      "value": 101.2,
+      "trigger_above": 100,
+      "unit": "",
+      "status": "breach",
+      "sessions_in_breach": 11
+    },
+    {
+      "name": "BTC Day 11",
+      "value": 58644,
+      "trigger_below": 63500,
+      "unit": "$",
+      "status": "breach",
+      "sessions_in_breach": 11
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.90,
+      "trigger_above": 5.0,
+      "unit": "%",
+      "status": "approaching",
+      "sessions_in_breach": 0
+    },
+    {
+      "name": "Brent",
+      "value": 72.56,
+      "trigger_above": 97,
+      "unit": "$",
+      "status": "clear",
+      "sessions_in_breach": 0
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$198.32 (+1.72%) pre-market July 1; intraday range $195.11-$200.63; open $197.24. Approaching $200 re-entry threshold — June 30 Stop Day 2 forced exit appears to have been absorbed by the session's broad AI semi recovery (AMD +7.7%, Intel +6%). The $200.63 intraday high touches the gate but does NOT satisfy the re-entry framework, which requires a CLOSE above $200 on above-average volume AND simultaneous SPX > 7,460 AND VIX < 17. All three gates uncleared as of July 1 open.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "Dow inclusion Day 3. Alphabet's ~7x Verizon price-weighting creates sustained institutional demand across all Dow-linked rebalancing — 2-4 week tail still active as of July 1. XLC sector leadership (+3.1% June 30). Google Cloud guiding $175-185B in 2026 capex with AI as primary driver. Pullback to $345-352 remains primary entry zone.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Day 11 exit gate. $58,644 live (Crypto.com MCP 11:06 UTC July 1). 24h range: $57,802-$59,468. June spot ETF outflows: $4.5B (worst month since January 2024 launch). NFP binary tomorrow + 3-day July 4 holiday gap = no re-entry window before July 7. Re-entry: two consecutive UTC daily closes above $62,000 AND IBIT inflows positive for 3+ consecutive days.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AMD",
+      "note": "+7.7% June 30 — strongest semi performer of the Q2 final session alongside Intel (+6%) and Sandisk (+10.9%). AI semi recovery thesis confirming at the sector level. ISM Manufacturing at 10am ET today is the key near-term catalyst — print above 52 validates continued AI infrastructure demand. Entry on pullback post-ISM clarity.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSM",
+      "note": "Asia semis read-through: Nikkei +0.9%, HSI -0.6% on June 30 close. HBM4 demand thesis intact. SK Hynix ADR listing July 8 is next sector catalyst. No adverse Taiwan/China headlines overnight. Cleanest semi expression heading into Q3.",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA",
+      "reason": "Approaching but not through the $200 re-entry threshold ($198.32 current, high $200.63 intraday). The framework requires all three gates simultaneously on a closing basis: SPX > 7,460 AND VIX < 17 AND NVDA > $200 on above-average volume. Both macro gates are still uncleared (9th consecutive session). An intraday touch of $200.63 does not satisfy the framework — only a CLOSE counts. Entering before the trifecta risks being caught in the forced-exit supply that drove NVDA to $192-194 on Stop Days.",
+      "better_entry": "All three conditions simultaneously on a close: SPX > 7,460 AND VIX < 17 AND NVDA > $200 on above-average volume. ISM > 54 today + both macro gates clearing = the earliest credible BUY trigger. Alternative fundamental reset: August 25 Q2 FY27 earnings (~$91B guidance expected)."
+    },
+    {
+      "ticker": "BTC",
+      "reason": "Day 11 exit gate. $58,644 at 11:06 UTC July 1. Bitcoin spot ETFs recorded $4.5B in June outflows — the worst monthly performance since launch. NFP binary July 2 through 3-day unhedgeable July 4 holiday gap. Both NFP tails are negative for speculative assets: weak print = growth scare; strong print = BofA three-hike path. No re-entry window before July 7.",
+      "better_entry": "Two consecutive UTC daily closes above $62,000 AND IBIT daily inflows positive for 3+ consecutive days. Earliest realistic window: July 7-8 post-NFP if Goldilocks print (130-170K, wages +0.2-0.3%)."
+    },
+    {
+      "ticker": "QQQ unhedged",
+      "reason": "NFP July 2 binary arrives tomorrow (8:30am ET), unhedgeable through 3-day July 4 holiday gap. Strong print (>200K) locks in BofA's three-hike path with no exit window; weak print (<130K) triggers growth-scare multiple compression. At Nasdaq P/E ~28x, three-hike repricing = 12-15% correction math. 10Y rising to 4.46% today adds incremental pressure to growth multiples.",
+      "better_entry": "Post-NFP July 7 if Goldilocks (130-170K, wages +0.2-0.3%) AND SPX sustains above 7,460 AND VIX closes below 17. QQQ July 18 $455 puts at today's open provide defined-risk protection if holding longs through the gap."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SOXX",
+      "direction": "short",
+      "thesis": "Conditional on ISM Manufacturing printing below 50.0 at 10am ET today. A contractionary read directly challenges the $690B AI semiconductor capex narrative — hyperscaler spend guidance loses its fundamental anchor if US manufacturing enters contraction. Semis lead indices down 2-3x on negative macro data. Do NOT enter before the 10am ET print. If ISM prints 50-52, hold; if ISM > 52, setup is cancelled.",
+      "entry": "Buy SOXX July 18 puts or short SOXX only if ISM < 50.0 at 10am ET. Size 8-10% of gross. Enter within 15 minutes of ISM release.",
+      "invalidation": "ISM prints above 52 OR NVDA closes above $200 on above-average volume post-ISM. Exit immediately on either condition.",
+      "conviction": "medium (conditional on ISM < 50)",
+      "horizon": "Through July 7 post-NFP"
+    },
+    {
+      "asset": "GOOGL",
+      "direction": "long",
+      "thesis": "Alphabet's Dow inclusion Day 3 — the ~7x Verizon price-weighting creates sustained institutional demand across all Dow-linked rebalancing for 2-4 more weeks. Google Cloud guiding $175-185B 2026 AI capex. XLC sector leadership (+3.1% June 30) confirms communication services as the primary rotation destination. Q2 earnings mid-July provide the fundamental catalyst anchor.",
+      "entry": "Pullback to $345-352. 50% at entry, 50% on revisit to $345. Stop at $339.",
+      "invalidation": "SPX closes below 7,300 (BEARISH escalation) OR GOOGL closes below $340 on above-average volume.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks (through Q2 earnings mid-July)"
+    },
+    {
+      "asset": "TLT",
+      "direction": "long",
+      "thesis": "NFP July 2 creates a binary through a 3-day holiday gap with no hedging window July 3-6. TLT benefits from the weak-print scenario (growth scare → flight to quality → rate-cut repricing). The 10Y rising to 4.46% today provides a better TLT entry than prior sessions — buying duration on a yield spike is the correct sequencing. Iran ceasefire + Brent stable at $72 supports the underlying disinflation narrative.",
+      "entry": "Buy TLT at open. 5-7% of gross. Today's yield spike to 4.46% improves the entry vs. June 30.",
+      "invalidation": "Strong NFP (>190K, wages +0.4%) — exit TLT immediately July 7. Goldilocks NFP + SPX > 7,460 + VIX < 17 simultaneously — exit TLT and shift to net long.",
+      "conviction": "low",
+      "horizon": "Through July 7"
+    }
+  ],
+  "bear_case": "Counter-argument: the 10Y yield rising to 4.46% (+9 bps) on H2's opening day is the session's most important overnight development, and the one most likely to be underweighted by the bulls. At Nasdaq P/E ~28x, every 10 basis points of yield expansion erodes the fair-value floor by 3-4%. The 30Y is tracking toward 4.90-4.95%, within 5-10 bps of the 5.00% trigger that would add a third concurrent regime breach. Nine consecutive gate failures now extend into Q3 without the mechanical window-dressing support that anchored Q2's final sessions. BTC at $58,644 on Day 11 — with Bitcoin spot ETFs recording their worst monthly performance since launch — signals that speculative capital is systematically reducing risk alongside equity headline strength. The US is investigating 60 countries for forced-labor tariff violations, a new 10-12.5% tariff overhang whose full market impact has not been priced. A strong NFP tomorrow (>200K) arrives through a 3-day unhedgeable July 4 gap, locking in BofA's three-hike path with no exit available. Invalidation: SPX closes above 7,460 AND VIX closes below 17 simultaneously today, followed by Goldilocks NFP (130-170K, wages +0.2%) on July 2 — BUY upgrade validated with multi-week conviction into Q3 earnings.",
+  "body_mdx": "data/briefings/markets/2026-07-01-morning.mdx"
+}
