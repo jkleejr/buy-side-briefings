@@ -46,9 +46,15 @@
   ],
   "created_at": "2026-07-01",
   "expires_at": "2026-08-30",
-  "status": "active",
+  "status": "target_hit",
   "tags": ["META", "Zuckerberg", "Q2-earnings", "AI-inference", "XLC", "ad-spend", "ism-expansion", "catalyst", "Q3-guidance"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-01",
+    "final_price": 612.0,
+    "return_pct": 7.0,
+    "outcome_label": "Target 1 hit at $612",
+    "note": "META surged +7.0% from $572 entry to $612.10 intraday high on July 1, clearing Target 1 ($600) by 2.0%. The move was driven by XLC sector momentum on ISM Manufacturing 54.0 (37-month high) and Bloomberg AI cloud-compute demand commentary that hit at market open. 40% of position taken at Target 1; remaining 60% held into the Q2 earnings catalyst on July 29."
+  },
   "levels": {
     "entry_low": 563.0,
     "entry_high": 578.0,
