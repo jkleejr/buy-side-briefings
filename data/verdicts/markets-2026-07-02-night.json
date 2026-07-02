@@ -1,0 +1,93 @@
+{
+  "routine": "markets",
+  "date": "2026-07-02",
+  "window": "night",
+  "generated_at": "2026-07-02T23:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — 57K NFP Growth Scare; SPX Below 7,460 Gate; VIX Holds; SPCX $7.3B Bid July 7",
+    "conviction": "medium",
+    "rationale_short": "June NFP printed 57K (vs. 110K consensus, below the 80K Goldilocks floor) — the 10%-probability weak scenario materialized, eliminating the Goldilocks BUY upgrade path. SPX closed ~7,453, seven points below the 7,460 regime floor, resetting the dual-gate framework. VIX held at 16.81 (below 17) and July 28 FOMC hike probability collapsed from 33% to ~19.4%, providing rate relief; that rate relief is insufficient against growth-scare headwinds through the 3-day unhedgeable July 4 holiday gap. The SPCX $7.3B forced buying on July 7 (Nasdaq-100 inclusion) is the primary re-entry catalyst; no new positions before July 7 open.",
+    "supporting_data": [
+      { "label": "NFP June 57K (vs. 110K consensus; April -31K, May -43K revisions = -74K net); participation rate dropped to 61.5% from 61.8% — growth scare confirmed", "url": "https://www.bls.gov/news.release/empsit.nr0.htm" },
+      { "label": "SPX ~7,453 (-0.40%) — 7 points below 7,460 regime floor; Day 1 dual-gate clearance fails; SPX/VIX confirmation sequence must restart July 7", "url": "https://www.investing.com/indices/us-spx-500-historical-data" },
+      { "label": "VIX 16.81 (+1.33%) — holds below 17 gate; one half of the dual gate remains intact; regime not formally in distribution", "url": "https://finance.yahoo.com/quote/%5EVIX/history/" },
+      { "label": "July 28 FOMC hike probability collapsed to ~19.4% from 33% pre-NFP — weak labor market neutralizes Warsh's 'inflation too high' hawkishness; July hike effectively off the table", "url": "https://polymarket.com/event/fed-decision-in-july-181" },
+      { "label": "KOSPI -4.45% circuit breaker; SK Hynix -10.96% (Apple/CXMT/YMTC mobile DRAM narrative) — Korean HBM4 complex selloff extends US AI semiconductor distribution", "url": "https://www.bloomberg.com/quote/KOSPI:IND" },
+      { "label": "SPCX Nasdaq-100 forced buying ~$7.3B on July 7 ($4.3B QQQ/QQQM + $3B Russell reweighting) — mechanical floor unchanged; primary July 7 re-entry trigger", "url": "https://moneymorning.com/2026/07/01/spacex-spcx-nasdaq-100-inclusion-july-7-lockup-expiry-2026" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7453.0,  "change_pct": -0.40, "as_of": "2026-07-02T20:00:00Z" },
+    "nasdaq": { "level": 25831.0, "change_pct": -0.80, "as_of": "2026-07-02T20:00:00Z" },
+    "vix":    { "level": 16.81,   "change_pct":  1.33, "as_of": "2026-07-02T20:00:00Z" },
+    "ust10y": { "level": 4.47,    "change_bps": -2,    "as_of": "2026-07-02T20:00:00Z" },
+    "dxy":    { "level": 100.64,  "change_pct": -0.68, "as_of": "2026-07-02T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.81,  "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7453.0, "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",          "value": 100.64, "trigger_above": 100,   "unit": "" },
+    { "name": "BTC Gate 1",   "value": 62500,  "trigger_below": 62000, "unit": "$" },
+    { "name": "30Y Yield",    "value": 4.84,   "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",        "value": 69.50,  "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "$194.84 (-1.39%); Korea circuit breaker extends HBM4/advanced-packaging concern; $200 gate failed for third consecutive session; stop-monitor at $195 now at risk; no new positions below the gate", "sentiment": "negative" },
+    { "ticker": "META",  "note": "$583.50 (-4.81%); AI cloud premium partially reversed; NOW AT the $575–595 'better entry' zone cited in prior briefings; rate-cut narrative from 57K NFP is a long-term positive for META's cloud multiple; Q2 earnings July 29 is the fundamental clearing event", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "480,126 Q2 deliveries (vs. 406K consensus, +25% YoY, best-ever Q2) — stock still fell ~7.49%; classic sell-the-news on a growth scare session; Q2 earnings (~July 22) is next catalyst", "sentiment": "negative" },
+    { "ticker": "SPCX",  "note": "~$156 est. close (from ~$163 pre-market); $7.3B forced buying July 7 unchanged; dip from $163 to $156 improves the entry for the mechanical bid", "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "$390.79 (+1.69%); rate relief from weak NFP is the direct multiple positive for Microsoft; Azure AI intact; Q2 earnings late July", "sentiment": "positive" },
+    { "ticker": "AMD",   "note": "~$507 (-4.3%); Korea shock most acute in mid-tier semis; no standalone catalyst; distribution continues; avoid", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA (any add)",
+      "reason": "NVDA at $194.84 is below the $195 stop-monitor and well below the $200 re-entry gate. Korea circuit breaker (SK Hynix -10.96%) extends the AI semiconductor supply chain selloff. Day 3 of the $200 gate failure — alongside broader semi sector weakness (Micron -7%, Applied Materials -7.4%, AMD -4.3%) — indicates structural distribution. The 3-day holiday gap prohibits managing any new position.",
+      "better_entry": "$200 closing basis simultaneously with SPX >7,460 AND VIX <17 on above-average volume — earliest July 7 if SPCX bid lifts the full index. August 26 Q2 FY27 earnings ($91B guide) as the fundamental clearing event."
+    },
+    {
+      "ticker": "TSLA",
+      "reason": "480K Q2 deliveries (18% beat vs. 406K consensus, best-ever Q2) yet TSLA fell ~7.49% — the most emphatic sell-the-news pattern of the quarter. Growth scare narrative from 57K NFP overwhelms even blowout fundamental performance; the stock is pricing in economic uncertainty for EV demand through the holiday gap.",
+      "better_entry": "Q2 earnings (~July 22) with explicit guidance on FSD revenue ramp and Q3 delivery outlook. Structural beat is real; the multiple requires macro stabilization to sustain above $420."
+    },
+    {
+      "ticker": "BTC",
+      "reason": "BTC recovering toward ~$62,500 est. (potentially crossing the $62K gate for Day 1), but one session's recovery does not satisfy the two consecutive UTC midnight closes above $62,000 AND IBIT inflows positive for 3+ days required for re-entry. 3-day holiday gap prohibits managing positions opened today.",
+      "better_entry": "Two consecutive UTC midnight closes above $62,000 AND IBIT daily inflows positive for 3+ days. Earliest July 8–9 if the rate-relief narrative sustains post-holiday."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SPCX",
+      "direction": "long",
+      "thesis": "SPCX dipped from ~$163 pre-market to ~$156 by close, improving the entry for the $7.3B mechanical forced buying on July 7 (Nasdaq-100 inclusion: $4.3B from QQQ/QQQM rebalancing + $3B Russell reweighting). The forced flow executes on a calendar date regardless of macro conditions — neither the 57K NFP growth scare nor the Korea semiconductor shock alters the index rebalancing mandate. Tesla's December 2020 S&P 500 inclusion template: forced-flow events can move inclusion-day stocks 8–15% before stabilizing.",
+      "entry": "Initiate at ~$156 est.; add on any dip below $150 through the holiday gap. Do not chase the July 7 opening spike — the inclusion day is often a 'sell the spike' event after the forced flow completes.",
+      "invalidation": "SPCX reverses below $145 on above-average volume (forced flow already priced or lockup expiry selling dominates); OR SPX gaps below 7,300 on July 7 open (macro overwhelms the mechanical bid).",
+      "conviction": "medium",
+      "horizon": "3–5 trading days (through July 7 Nasdaq-100 forced buying execution)"
+    },
+    {
+      "asset": "META",
+      "direction": "long",
+      "thesis": "META at $583.50 (-4.81%) is now at the 'better entry' zone of $575–595 cited in briefings since July 1. The AI cloud business announcement (Bloomberg, July 1) remains structurally intact; the pullback reflects sector rotation, not a retraction of the cloud narrative. The 57K NFP weakness paradoxically strengthens the META thesis: rate cuts back on the table lower the discount rate applied to META's $50B+ AI infrastructure spend, and the rate-relief narrative expands the multiple for a $60B+ annual FCF machine. Q2 earnings July 29 is the first management quantification of the cloud business opportunity.",
+      "entry": "Initiate new long at $575–595 (at target entry zone); add at $565 if offered through the holiday gap. Do not chase above $600 before July 7 macro confirmation.",
+      "invalidation": "SPX closes below 7,300 (regime deterioration) OR META reverses below $555 on above-average volume (cloud narrative retracted or Q2 warning issued).",
+      "conviction": "medium",
+      "horizon": "3–4 weeks (through July 29 Q2 earnings)"
+    },
+    {
+      "asset": "AMD",
+      "direction": "short",
+      "thesis": "AMD fell 4.3% on July 2 alongside Micron (-7%) and Applied Materials (-7.4%) in the semiconductor sector's worst session in months. Korea's circuit breaker (KOSPI -4.45%, SK Hynix -10.96%) on the Apple/CXMT/YMTC mobile DRAM narrative extends AI supply chain uncertainty that the broader complex has not yet fully repriced from H1's 80%+ gains. AMD has no standalone catalyst before Q2 earnings (late July), lacks NVDA's Blackwell AI-specificity, and is most exposed to the Dow-vs-Nasdaq rotation (value/defensives outperforming) that July 2's ATH session confirmed.",
+      "entry": "Short AMD at market (~$507) or on a weak July 7 open bounce; put spread or direct short. Size 15–20% of portfolio hedge allocation.",
+      "invalidation": "SPCX $7.3B bid lifts all growth/tech names and AMD closes above $540; OR NVDA reclaims $200 on volume, reversing the sector. If SPX reclaims 7,460 AND VIX falls below 16.5, cover the short.",
+      "conviction": "low",
+      "horizon": "1–2 weeks"
+    }
+  ],
+  "bear_case": "NFP printing 57K with -74K combined revisions to April-May signals employment is deteriorating faster than the 'soft landing' narrative acknowledges. At Nasdaq P/E ~28x, the risk of simultaneous slowing growth and sticky inflation (June CPI ~July 14) creates a stagflation scenario — the worst multiple environment for long-duration growth equities. TSLA's sell-the-news pattern (480K delivery beat vs. 406K consensus, stock still -7.49%) is the market's clearest signal: premium multiples cannot absorb growth scare narratives regardless of fundamental performance. The Korea semiconductor circuit breaker (KOSPI -4.45%, SK Hynix -10.96%) demonstrates that AI supply chain confidence is more fragile than June's 80%+ gains implied. If SPX reclaims 7,460 on July 7, the bear case is wrong.",
+  "body_mdx": "data/briefings/markets/2026-07-02-night.mdx"
+}
