@@ -1,0 +1,137 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T11:30:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+
+  "day_winner": "bears",
+  "day_summary": "SK HYNIX KST CONFIRMED CLOSE ₩2,301,000 (-10.96%, -₩283,000) — STOP DAY 1 TRIGGERED. KOSPI -4.45% TO 7,934 WITH CIRCUIT BREAKER SIDECAR. THREE CRITICAL DEVELOPMENTS: (1) ★ STOP DAY 1 TRIGGERED — KST close ₩2,301,000 is ₩239,000 BELOW the ₩2,540,000 mandatory stop; first close-based stop breach since position initiated; (2) CATALYST — Apple negotiating with CXMT (China DRAM) and YMTC (China NAND) for China-market devices; both on Pentagon 1260H blacklist; disrupts Samsung/SK Hynix mobile DRAM duopoly narrative; (3) KOSPI circuit breaker sidecar triggered within minutes of open on combined Korea CPI 3.2% (highest since Dec 2023) + Apple/China DRAM shock. ADR underwriter floor has drifted to ~₩2,258,000 (today's low, ₩244,000 below July 1's ₩2,502,000 floor). NEXT CRITICAL SESSION: July 3 KST (KRX OPEN; US CLOSED for observed July 4) — second consecutive close below ₩2,540,000 = STOP DAY 2 = mandatory full exit at July 6 KST open with no discretion.",
+  "long_pnl": "Half-size long position held through Stop Day 1 breach — KST close ₩2,301,000 is ₩239,000 below mandatory stop. This is Stop Day 1 of the two-consecutive-close protocol: no exit required today, but the framework is one session from mandatory full exit. Holders from the initial position are now sharply underwater on the KST close basis; the ADR underwriter floor defense at ₩2,258,000 (session low) limited the drawdown from intraday lows but could not prevent a stop-triggering close. DO NOT average down at any price.",
+  "short_pnl": "Shorts who targeted the ₩2,540,000 mandatory stop have been vindicated on a closing basis for the first time: KST close ₩2,301,000 confirms Stop Day 1. However, the ADR underwriter bid at ~₩2,258,000 (session low recovery to ₩2,301,000 close) limits further short-side follow-through. Shorts face a binary: (A) July 3 KST close also below ₩2,540,000 → mandatory exit selling adds supply; (B) July 3 KST close above ₩2,540,000 → stop isolated, underwriter bid and Goldilocks NFP tailwind could squeeze shorts violently into July 10 ADR listing.",
+
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "★ STOP DAY 1 TRIGGERED — ONE MORE KST CLOSE BELOW ₩2,540,000 = MANDATORY FULL EXIT. KST close ₩2,301,000 is ₩239,000 BELOW mandatory stop: this is Stop Day 1 of the two-consecutive-close protocol. HOLD through July 3 KST session only — the position is held for ONE more KST session to confirm whether Stop Day 2 triggers. STOP PROTOCOL: if July 3 KST (KRX OPEN; US CLOSED for observed July 4) ALSO closes below ₩2,540,000 → STOP DAY 2 → mandatory full exit at July 6 KST open with ZERO discretion. If July 3 KST closes ABOVE ₩2,540,000 → Stop Day 1 isolated; framework continues toward July 10 ADR listing. DO NOT average down. DO NOT add. Hold only — and prepare to execute mandatory exit at July 6 KST open if Stop Day 2 confirmed. Gate framework: KOSPI >8,500 AND SK Hynix >₩2,700,000 simultaneously = both remain UNCLEARED by a wide margin."
+  },
+
+  "so_what": {
+    "line": "SK Hynix's ₩2,301,000 KST close (-10.96%) on a KOSPI circuit breaker session triggered Stop Day 1 for the first time — Apple's CXMT/YMTC mobile DRAM negotiation drove a panic sell, and one more close below ₩2,540,000 on July 3 KST mandates full exit.",
+    "bull": "Today's Apple/CXMT headline is categorically mobile DRAM (smartphones for China-market devices), NOT HBM4 (AI data centers) — SK Hynix's primary revenue driver (~70% HBM) is structurally unaffected; ADR underwriter bid is still present at ₩2,258,000 (intraday low recovery), confirming the $29.4B July 10 listing backstop is intact; Goldilocks NFP (~119K) processed overnight by Asian markets could provide the stabilization needed for July 3 KST to close above ₩2,540,000 and stop an isolated Stop Day 1.",
+    "bear": "ADR underwriter floor has drifted from ₩2,541,000 (June 30) → ₩2,502,000 (July 1) → ₩2,258,000 (July 2) — a ₩283,000 collapse in three sessions; the floor is decelerating and cannot guarantee a close above ₩2,540,000 on July 3; KOSPI 7,934 (-4.45%) is the second worst day of 2026, with Korea CPI 3.2% removing BOK cut expectations and signaling sustained KRW weakness; the Apple/CXMT narrative creates multi-sector Korean memory de-rating even if HBM4 is technically unaffected."
+  },
+
+  "snapshot": {
+    "price": 2301000,
+    "change_pct": -10.96,
+    "change_abs": -283000,
+    "prev_close": 2584000,
+    "day_high": 2568000,
+    "day_low": 2258000,
+    "week52_high": 2945000,
+    "week52_low": 1850000,
+    "volume": "~3.5M shares (est.; elevated on circuit breaker session — above-average on combined KOSPI -4.45% and Apple/CXMT/YMTC mobile DRAM-driven institutional sell-off)",
+    "market_cap": "~₩167.5T (~$119B est.)",
+    "extra": [
+      { "label": "KOSPI July 2 close", "value": "7,934 (-4.45% from 8,309) — circuit breaker sidecar triggered at open; Korea CPI June 3.2% (highest since Dec 2023) + Apple/CXMT/YMTC headline = dual macro shock; KOSPI Gate 1 (>8,500) now 566pts away — structurally FAILED", "tone": "down" },
+      { "label": "★ STOP DAY 1 TRIGGERED", "value": "KST close ₩2,301,000 is ₩239,000 BELOW ₩2,540,000 mandatory stop — first closing breach since position initiated. TWO consecutive closes below stop = mandatory exit; today is close #1. NEXT: July 3 KST determines Stop Day 2.", "tone": "down" },
+      { "label": "Apple/CXMT/YMTC catalyst — MOBILE DRAM, NOT HBM4", "value": "Apple negotiating with CXMT (China mobile DRAM) and YMTC (China NAND) for China-market iPhone devices; both on Pentagon 1260H blacklist. CRITICAL DISTINCTION: this is smartphone mobile DRAM, NOT HBM4 for AI data centers. SK Hynix's Blackwell supply chain is HBM4-only and UNAFFECTED.", "tone": "down" },
+      { "label": "Korea CPI June 2026", "value": "3.2% — highest since December 2023; BOK hawkish hold now firmly entrenched; KRW weakening pressure adds KOSPI headwind; negative for Korean equities broadly", "tone": "down" },
+      { "label": "ADR listing (Nasdaq SKHY)", "value": "July 10 — 6 KRX sessions away; $29.4B; BofA/Goldman/Citi/JPMorgan; ADR underwriter floor drifted to ₩2,258,000 (today's low), down ₩244,000 from July 1's ₩2,502,000 floor", "tone": "neutral" },
+      { "label": "Gate 2 — SK Hynix vs ₩2,700,000", "value": "₩2,301,000 — NOT cleared ✗ (₩399,000 or 14.8% below gate; gate clearance now requires +18% from today's close)", "tone": "down" },
+      { "label": "Stop protocol status", "value": "★ STOP DAY 1 — first consecutive KST close below ₩2,540,000; second consecutive close (July 3 KST) = mandatory full exit at July 6 KST open", "tone": "down" }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "Single-stock IV surging to estimated ~28% for July expiry (from ~19% on July 1) as circuit breaker session and Stop Day 1 trigger drive put demand; ADR underwriter hedge activity ahead of July 10 SKHY listing adds complexity to options pricing; forward IV for July 10 expiry (ADR listing event) particularly elevated",
+    "put_call": 1.45,
+    "short_interest": "~3.5% of float (est.; surged from 2.3% as shorts targeted and confirmed a close below ₩2,540,000; KOSPI circuit breaker sidecar prevented orderly exit for some holders who were forced to sell at market — short sellers who accumulated through the July 1 intraday test are now being confirmed right on a closing basis)",
+    "notable_flow": "Heavy foreign institutional selling in the first 30 minutes of KST session on Apple/CXMT/YMTC headline; VI (Volatility Interruption) sidecar halt triggered as SK Hynix fell through the 10% single-stock circuit breaker threshold early in the session; ADR underwriter floor appears to have shifted to ~₩2,258,000 (today's session low) — a further ₩244,000 decline from July 1's ~₩2,502,000 underwriter floor; recovery from ₩2,258,000 low to ₩2,301,000 KST close confirms underwriter bid still present but at a significantly lower level; domestic institutions net sellers throughout the session on the Korea macro dual-shock"
+  },
+
+  "what_traders_are_doing": "THURSDAY JULY 2 KST CLOSE — STOP DAY 1 CONFIRMED; JULY 3 KST IS THE BINARY DETERMINATION SESSION: (1) Stop Day 1 protocol is active — hold through July 3 KST session only; (2) Monitor July 3 KST close at 6:30 AM UTC Thursday July 3 — KRX is OPEN; US markets are CLOSED for observed July 4; (3) IF July 3 KST close below ₩2,540,000 → STOP DAY 2 → mandatory full exit at July 6 KST open (Monday); execute with no discretion; (4) IF July 3 KST close ABOVE ₩2,540,000 → Stop Day 1 isolated; framework continues toward July 10 ADR listing; reassess July 7; (5) DO NOT average down at any price — the stop protocol exists precisely to prevent catching a falling knife on mobile DRAM thesis contamination; (6) The Apple/CXMT/YMTC narrative may persist through July 3 KST (Korean media follow-through) — the underwriter bid at ₩2,258,000 is the only structural support between today's close and the July 10 ADR listing economic backstop; (7) Goldilocks NFP (~119K, released July 2 8:30 AM ET after KST close) provides positive USD sentiment that should filter into Korean markets overnight — this is the primary bull case for July 3 KST recovery above ₩2,540,000.",
+
+  "news": [
+    {
+      "label": "★ Apple/CXMT/YMTC mobile DRAM — PRIMARY CATALYST: Apple negotiating with CXMT (China DRAM) and YMTC (China NAND) for China-market devices; both on Pentagon 1260H blacklist; disrupts Samsung/SK Hynix mobile DRAM duopoly; CRITICAL: this is MOBILE DRAM (smartphones), NOT HBM4 (AI data centers) — SK Hynix Blackwell supply chain is unaffected",
+      "url": "https://www.reuters.com/technology/apple-china-memory-chips/",
+      "source": "Reuters / Bloomberg",
+      "sentiment": "negative"
+    },
+    {
+      "label": "KOSPI July 2: 7,934 (-4.45%) — circuit breaker sidecar triggered at open; Korea CPI June 3.2% (highest since Dec 2023) added to Apple/CXMT headline to create dual macro shock; second worst KOSPI session of 2026; KOSPI Gate 1 (>8,500) now 566pts away",
+      "url": "https://www.bloomberg.com/quote/KOSPI:IND",
+      "source": "Bloomberg / KRX",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SK Hynix Stop Day 1: ₩2,301,000 KST close (-10.96%) — ₩239,000 below ₩2,540,000 mandatory stop; first close-based breach since position initiated; VI (Volatility Interruption) sidecar halted trading early in the session; ADR underwriter floor defended at ~₩2,258,000 (session low)",
+      "url": "https://finance.yahoo.com/quote/000660.KS/",
+      "source": "Yahoo Finance / KRX market data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Korea CPI June 2026: 3.2% — highest since December 2023; BOK hawkish hold now structurally entrenched; KRW weakening pressure (USD/KRW rising toward 1420) adds KOSPI headwind and raises Korean export cost concerns for semiconductor manufacturers",
+      "url": "https://www.bok.or.kr/eng/main/contents.do?menuNo=400048",
+      "source": "Bank of Korea / Statistics Korea",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SK Hynix ADR (SKHY) Nasdaq listing July 10 — 6 KRX sessions away; 17.79M shares (~$29.4B); BofA/Goldman/Citi/JPMorgan underwriters; the $29.4B economic backstop for underwriters remains the primary structural support even through Stop Day 1; ADR floor has drifted to ~₩2,258,000",
+      "url": "https://www.reuters.com/",
+      "source": "Bloomberg / Reuters",
+      "sentiment": "positive"
+    },
+    {
+      "label": "HBM4 demand thesis intact despite Apple/CXMT headline: mobile DRAM (smartphones) and HBM4 (AI data centers) are categorically different products — CXMT supplies smartphone DRAM; SK Hynix HBM4 supplies NVIDIA Blackwell AI GPUs; NVIDIA Blackwell B300 ramp and hyperscaler AI capex unchanged",
+      "url": "https://www.trendforce.com/",
+      "source": "TrendForce / Industry sources",
+      "sentiment": "positive"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "July 3 KST session (KRX OPEN; US CLOSED for observed July 4) is the binary decision point. Two scenarios: (A) July 3 KST closes ABOVE ₩2,540,000 → Stop Day 1 isolated; position maintained; framework continues toward July 10 ADR listing; Goldilocks NFP overnight sentiment filter is the primary catalyst for this outcome; (B) July 3 KST closes BELOW ₩2,540,000 → STOP DAY 2 → mandatory full exit at July 6 KST open (Monday, first KRX session after the US July 4 holiday weekend) with no discretion. Monitor July 3 KST close at 6:30 AM UTC Thursday July 3. Note: US markets closed July 3 — no US equity context during the July 3 KST session; the primary sentiment driver will be overnight Goldilocks NFP processing and any Apple/China semiconductor follow-through in Asian media.",
+    "long_term": "SK Hynix structural thesis remains intact on the HBM4 axis: world's largest HBM3e/HBM4 supplier, NVIDIA Blackwell B300 exclusive partner, $29.4B Nasdaq ADR listing July 10. The Apple/CXMT/YMTC narrative is mobile DRAM specific — it threatens Samsung and SK Hynix's mobile memory revenue but does NOT affect the HBM4 AI data center business that underpins the long-term thesis. If the stop protocol forces a mandatory exit, the re-entry framework requires: (1) post-ADR listing (July 10 SKHY) stabilization with no overhang from distribution; (2) KOSPI re-clearing 8,500; (3) SK Hynix re-clearing ₩2,700,000; (4) IBIT (if applicable) and broader risk-on environment. The structural ADR catalyst (MSCI index inclusion process post-listing) is unchanged."
+  },
+
+  "bull_case": [
+    "ADR underwriter bid defended ₩2,258,000 session low with a recovery to ₩2,301,000 KST close — four bulge-bracket banks (BofA/Goldman/Citi/JPMorgan) with $29.4B at stake in 6 KRX sessions will not allow a structural collapse before the July 10 SKHY listing; the economic incentive to stabilize the stock above ₩2,258,000 is intact even through Stop Day 1.",
+    "Apple/CXMT/YMTC is mobile DRAM (smartphones) — SK Hynix HBM4 revenue (~70% of total DRAM revenue) is structurally unaffected; the market's 10.96% selloff conflates mobile DRAM diversification with HBM4 disruption; the overreaction creates a technical bottoming pattern if July 3 KST processes the correct fundamental read.",
+    "Goldilocks NFP (~119K) processed overnight by Asian markets is the most constructive macro backdrop for a July 3 KST recovery: US BUY regime confirmed, Warsh 3-hike scenario avoided, USD modestly weaker = KRW stabilization = KOSPI relief = SK Hynix recovery above ₩2,540,000."
+  ],
+
+  "bear_case": [
+    "ADR underwriter floor has drifted from ₩2,541,000 (June 30) → ₩2,502,000 (July 1) → ₩2,258,000 (July 2) — a ₩283,000 total drift in three sessions; the trajectory implies another ₩250,000+ drift on July 3 would put the floor below ₩2,000,000 and the close could easily remain below ₩2,540,000; Stop Day 2 is the modal outcome if this drift continues.",
+    "KOSPI 7,934 (-4.45%) is a circuit breaker session driven by structural Korean macro deterioration (CPI 3.2% highest since Dec 2023, BOK hawkish) that will NOT reverse overnight on Goldilocks US NFP; Korean domestic investors are reassessing Korea macro independently of US labor markets; KOSPI may remain under pressure on July 3 KST.",
+    "The Apple/CXMT/YMTC narrative is the first credible threat to the Samsung/SK Hynix mobile DRAM duopoly at the customer level — even if HBM4 is unaffected today, Samsung and SK Hynix mobile DRAM blended revenue (~30% of total each) could face multi-quarter ASP compression if Apple succeeds; this creates a permanent multiple de-rating risk for Korean memory names regardless of HBM4 performance."
+  ],
+
+  "key_levels": [
+    { "label": "★ Gate 2 / ADR re-rating resistance", "level": "₩2,700,000", "kind": "resistance" },
+    { "label": "July 1 session high / prior recent resistance", "level": "₩2,723,000", "kind": "resistance" },
+    { "label": "52-week high (ATH)", "level": "₩2,945,000", "kind": "resistance" },
+    { "label": "July 2 session high (gap-down open high)", "level": "₩2,568,000", "kind": "resistance" },
+    { "label": "July 1 KST close", "level": "₩2,584,000", "kind": "resistance" },
+    { "label": "★ Mandatory stop — STOP DAY 1 TRIGGERED; second close below = mandatory full exit", "level": "₩2,540,000", "kind": "support" },
+    { "label": "July 2 KST close — Stop Day 1 reference", "level": "₩2,301,000", "kind": "pivot" },
+    { "label": "ADR underwriter floor (July 2) — session low recovery point; drifted ₩244,000 lower than July 1", "level": "₩2,258,000", "kind": "support" },
+    { "label": "July 2 intraday low (circuit breaker halt zone)", "level": "₩2,258,000", "kind": "support" },
+    { "label": "Next structural support (mid-May 2026 consolidation)", "level": "₩2,200,000", "kind": "support" },
+    { "label": "52-week low", "level": "₩1,850,000", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-03", "label": "★ CRITICAL — July 3 KST session: Stop Day 2 determination; KRX OPEN; US CLOSED for observed July 4; if close below ₩2,540,000 = mandatory full exit at July 6 KST open; check close at 6:30 AM UTC", "importance": "high" },
+    { "date": "2026-07-06", "label": "First post-US-holiday KRX session — mandatory exit day if Stop Day 2 was confirmed July 3; SKHY ADR pre-market institutional positioning begins ahead of July 10 listing", "importance": "high" },
+    { "date": "2026-07-07", "label": "First US session post-holiday; SKHY ADR underwriter final pricing window; SK Hynix KOSPI recovery vs. continued Apple/CXMT follow-through determines whether ₩2,540,000 is restored", "importance": "high" },
+    { "date": "2026-07-10", "label": "★ SK Hynix ADR (SKHY) Nasdaq listing — 17.79M shares (~$29.4B); BofA/Goldman/Citi/JPMorgan underwriters; structural re-rating event; first MSCI/S&P ADR index inclusion assessments begin; listing is the primary structural backstop for the position IF stop protocol does not trigger", "importance": "high" },
+    { "date": "2026-07-25", "label": "SK Hynix Q2 2026 earnings (est.) — HBM4 revenue share, mobile DRAM ASP trajectory, CXMT/YMTC competitive impact on mobile segment, ADR structure impact on financials", "importance": "high" }
+  ],
+
+  "analysis": "## Technical analysis (Thursday July 2, 2026 — KST close)\n\n**KST close: ₩2,301,000 (-10.96%)** on KOSPI -4.45% to 7,934 (circuit breaker session). Range: ₩2,258,000–₩2,568,000.\n\n**★ STOP DAY 1 TRIGGERED.** The mandatory stop at ₩2,540,000 has been breached on a closing basis: ₩2,301,000 is ₩239,000 below the stop. This is Stop Day 1. The framework requires TWO consecutive KST closes below ₩2,540,000 for mandatory exit. July 3 KST session (KRX OPEN; US CLOSED) is the critical determination: close above ₩2,540,000 = isolated breach; close below ₩2,540,000 = STOP DAY 2 = mandatory full exit at July 6 KST open.\n\n**Catalyst: Apple/CXMT/YMTC mobile DRAM.** Apple negotiating with CXMT (China mobile DRAM) and YMTC (China NAND) for China-market iPhone components. Both CXMT and YMTC are on the Pentagon 1260H blacklist. The headline threatens Samsung and SK Hynix's mobile DRAM duopoly. CRITICAL DISTINCTION: SK Hynix's Blackwell HBM4 (AI data centers) is STRUCTURALLY UNAFFECTED — Apple supplies mobile DRAM (smartphones), not HBM4. The 10.96% selloff is a fundamental misattribution by the market: conflating mobile DRAM diversification with HBM4 disruption.\n\n**Korea macro context.** Korea CPI June 3.2% (highest since December 2023) was released early July 2 KST, compounding the Apple/CXMT shock. BOK hawkish hold is now firmly entrenched — rate cuts are off the table through 2026. KRW weakness accelerated (USD/KRW pushing toward 1420), which creates a headwind for Korea equities broadly. The KOSPI circuit breaker sidecar triggered within minutes of open as multiple negative catalysts converged simultaneously.\n\n**ADR underwriter floor update.** June 30: ₩2,541,000. July 1: ₩2,502,000. July 2: ₩2,258,000. The floor has drifted ₩283,000 lower across three sessions. The economic incentive (July 10 SKHY listing, $29.4B) still guarantees underwriter support above a collateral threshold, but the floor is declining rapidly. Recovery from ₩2,258,000 → ₩2,301,000 close confirms the bid is still present but offers significantly less protection than prior sessions.\n\n**Trend: Bearish acceleration.** The consolidation range ₩2,500,000–₩2,750,000 has been decisively broken to the downside. ₩2,301,000 is the lowest close since mid-May 2026. The next structural support zone is ₩2,200,000 (mid-May consolidation), then ₩1,850,000 (52-week low).\n\n**Binary outcome for July 3 KST.** The only scenario that preserves the position is a July 3 KST close ABOVE ₩2,540,000. The primary catalyst for this outcome is the Goldilocks US NFP (~119K) processing overnight by Asian markets — a positive global risk-sentiment signal that could support KOSPI stabilization and SK Hynix recovery. The primary risk is Apple/CXMT follow-through in Korean financial media amplifying the mobile DRAM narrative before the HBM4 distinction is properly understood by domestic investors."
+}

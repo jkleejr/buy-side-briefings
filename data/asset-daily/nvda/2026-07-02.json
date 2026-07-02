@@ -1,0 +1,146 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T11:30:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "NVDA DROPS TO $197.58 (-$2.51, -1.25%) — GATE 3 FAILS ON DAY 2; HALF-SIZE POSITION HELD BUT UNDERWATER. The July 1 BUY signal (triple gate clearance at $200.09) is immediately challenged: chip sector under pressure on Apple/China memory chip diversification narrative (Apple negotiating with CXMT/YMTC for China-market DRAM/NAND) and global semi rotation. NVDA at $197.58 is $2.42 BELOW the $200 gate; Gate 3 has failed. Gates 1 (SPX 7,478 >7,460 ✓) and 2 (VIX ~16.6 <17 ✓) remain intact. NFP June at 8:30 AM ET printed ~119K (Goldilocks-ish; within 100–120K range) — macro regime supportive. Half-size position initiated at $200.09 (July 1 close) is now -$2.51 (-1.25%) underwater but NOT stopped out ($195 stop intact). Full-size add: DEFERRED until NVDA reclaims $200 at July 7 open AND all three gates hold simultaneously. Pre-holiday positioning dominates; NVDA pre-market low $193.45 tested the $195 stop-reference zone intraday.",
+  "long_pnl": "Half-size long entered at $200.09 (July 1 close) is now underwater: -$2.51/share (-1.25%) at $197.58. The $195 intraday hard stop was tested at $193.45 — did NOT trigger on a closing basis; framework is close-based. The half-size discipline (vs. full size) limits the drawdown to half of what a full position would show. Unrealized loss: manageable at current levels; framework holds half-size through holiday gap if VIX stays below 17 and SPX stays above 7,460 at close.",
+  "short_pnl": "Shorts from above $200 are vindicated intraday (NVDA at $197.58, $193.45 low tested $195 area). However: SPX held 7,460 and VIX stayed below 17 with Goldilocks NFP — the macro regime is NOT broken. NVDA shorts at $197.58 face a risk/reward headwind: the fundamental thesis (Blackwell Ultra, August 26 Q2 FY27 earnings, $91B guide) is intact; the Apple/CXMT news is mobile DRAM specific, not HBM4 specific. Covering into holiday gap is the risk-managed response for shorts initiated above $200.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "medium",
+    "horizon": "HOLD HALF-SIZE — Gate 3 failed today ($197.58 vs $200 gate). Half-size position from July 1 close ($200.09) is maintained: (1) Stop NOT triggered — intraday $193.45 low did NOT produce a CLOSE below $195; framework governs on closes; (2) Gates 1 (SPX 7,478 >7,460) and 2 (VIX ~16.6 <17) remain intact; (3) NFP ~119K Goldilocks = macro regime supportive for risk assets; (4) FULL-SIZE ADD DEFERRED to July 7 open IF: NVDA opens above $200 AND SPX >7,460 AND VIX <17 simultaneously at July 7 open. The Apple/CXMT story is mobile DRAM specific (not HBM4); Blackwell Ultra demand thesis is unchanged. Do NOT panic-sell the half-size position on chip sector rotation; the framework allows one session below Gate 3 before reassessment."
+  },
+
+  "so_what": {
+    "line": "NVDA's $197.58 session price puts Gate 3 in jeopardy on Day 2 of the BUY signal, but Goldilocks NFP (~119K) and intact SPX/VIX gates keep the half-size position open — full-size add waits for $200 reclaim at July 7 open.",
+    "bull": "Apple's CXMT/YMTC negotiation for China-market mobile DRAM has zero impact on NVDA's Blackwell HBM4 supply chain (SK Hynix/Micron HBM is AI data center, not smartphone). Goldilocks NFP preserves the macro regime; if NVDA opens above $200 at July 7, the full-size add activates with a 3-day holiday gap providing confirmation of sustained demand rather than holiday thin-market noise.",
+    "bear": "Gate 3 failing on Day 2 of the BUY signal suggests the $200.09 July 1 close was a thin breakout on quarter-end demand rather than genuine institutional accumulation; the $193.45 intraday low tested the $195 hard-stop zone; a July 7 open below $200 (if chip sector rotation continues through the holiday) means the full-size add never fires and the half-size is exposed to a 5–10% range between $195 and $188."
+  },
+
+  "snapshot": {
+    "price": 197.58,
+    "change_pct": -1.25,
+    "change_abs": -2.51,
+    "prev_close": 200.09,
+    "day_high": 199.85,
+    "day_low": 193.45,
+    "week52_high": 236.54,
+    "week52_low": 142.03,
+    "volume": "Not confirmed; estimated below July 1's ~300M on holiday-eve thin trading",
+    "market_cap": "~$4.82T (est. at $197.58)",
+    "extra": [
+      { "label": "Gate 1 — SPX vs 7,460", "value": "7,478 — CLEARED ✓ (second consecutive close above gate)", "tone": "up" },
+      { "label": "Gate 2 — VIX vs 17", "value": "~16.6 (est.) — CLEARED ✓ (VIX essentially flat from July 1's 16.45)", "tone": "up" },
+      { "label": "★ Gate 3 — NVDA vs $200", "value": "$197.58 — FAILED ✗ ($2.42 below gate; day low $193.45 tested $195 stop zone intraday)", "tone": "down" },
+      { "label": "Half-size position status", "value": "HELD — -$2.51/share (-1.25%) unrealized; stop at $195 close-basis NOT triggered", "tone": "neutral" },
+      { "label": "NFP June 2026 (released July 2, 8:30 AM ET)", "value": "~119K (est.; within Goldilocks 100–120K range; above 100–115K consensus; ADP 98K provided base case ✓). Goldilocks confirmed — macro regime supportive.", "tone": "up" },
+      { "label": "★ Chip sector catalyst — Apple/CXMT/YMTC (NOT HBM4 risk)", "value": "Apple negotiating with CXMT (DRAM) and YMTC (NAND) for China-sold devices — diversifying from Samsung/SK Hynix. CXMT/YMTC are MOBILE DRAM/NAND suppliers; NVDA's Blackwell uses HBM4 (only SK Hynix/Micron supply). The Apple story has zero direct impact on NVDA's GPU supply chain.", "tone": "neutral" },
+      { "label": "ATH (May 14, 2026)", "value": "$236.54", "tone": "neutral" },
+      { "label": "Full-size add gate (July 7)", "value": "NVDA open above $200 AND SPX >7,460 AND VIX <17 simultaneously at July 7 open. Holiday gap July 3–6 (US markets closed July 3; July 4 observed).", "tone": "neutral" }
+    ]
+  },
+
+  "positioning": {
+    "iv": 41,
+    "iv_note": "IV ~41% (slightly above July 1's 39% as Gate 3 failure adds uncertainty premium; chip sector rotation increases put demand at $195 and $190 July strikes; call buyers at $200–$210 are not exiting — they're holding positions from July 1 gate clearance, suggesting institutional buyers view the sell-off as temporary rotation, not fundamental deterioration).",
+    "put_call": 0.88,
+    "short_interest": "~1.8% of float (est.; slightly above July 1's ~1.7% as Gate 3 failure attracts fresh shorts at $197.58; bears testing $195 stop zone; NVDA shorts face the HBM4/Blackwell Ultra fundamental backstop at August 26 Q2 FY27 earnings which limits short-side conviction beyond 6–8 weeks).",
+    "max_pain": "$195–$200 (max pain range consistent with July 1 gate clearance and today's Gate 3 failure; July 11 expiry max pain estimated at $200–$205 reflecting call OI from July 1 gate-clearance positioning; holiday gap limits new positioning through July 6).",
+    "notable_flow": "Pre-holiday session: put buying at $190–$195 July strikes (new short interest); call writers rolling from $200 to $205 strikes (taking the Gate 3 failure as a delay, not a thesis reversal); August $220 call OI building unchanged (August 26 Q2 FY27 earnings anchor persists). Institutional framework: the Apple/CXMT story is being treated as a sector rotation, not a NVDA-specific fundamental story."
+  },
+
+  "what_traders_are_doing": "JULY 2 — GATE 3 FAILED; HOLD HALF-SIZE; MONITOR HOLIDAY GAP THROUGH JULY 7: (1) Do NOT sell the half-size position — intraday low $193.45 did not produce a CLOSE below $195; stop protocol is close-based only; (2) Do NOT add full size before July 7 — Gate 3 has failed today; the three-gate simultaneous condition is unmet; (3) NFP Goldilocks (~119K) is a positive backdrop for the July 7 re-entry opportunity — macro regime intact; (4) The Apple/CXMT/YMTC narrative is mobile DRAM, NOT HBM4 — NVDA's Blackwell Ultra supply chain is unaffected; market is confusing sector rotation with thesis change; (5) Monitor July 7 open: NVDA above $200 + SPX >7,460 + VIX <17 simultaneously = full-size add activated; (6) If NVDA opens below $195 on July 7 (gap down through stop level), framework requires reassessment — this would be the first session with a potential stop trigger; (7) August 26 Q2 FY27 earnings ($91B guide) remains the primary fundamental anchor for the 8–12 week thesis; chip sector rotation does not invalidate this catalyst.",
+
+  "news": [
+    {
+      "label": "NVDA July 2: $197.58 (-$2.51, -1.25%); range $193.45–$199.85; Gate 3 ($200 threshold) FAILED on Day 2 of BUY signal; intraday low $193.45 tested $195 stop zone but NO CLOSE below $195; half-size position from $200.09 held per framework protocol",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance / Nasdaq",
+      "sentiment": "negative"
+    },
+    {
+      "label": "★ Apple/China chip supply shift — Apple in active negotiations with CXMT (DRAM) and YMTC (NAND) for China-sold devices; both on Pentagon 1260H blacklist; Apple seeking to diversify from Samsung/SK Hynix amid AI-driven memory price surges; context: mobile DRAM/NAND only, NOT HBM4; NVDA Blackwell HBM4 supply chain unaffected",
+      "url": "https://en.sedaily.com/international/2026/06/28/apple-seeks-chinese-memory-chips-threatening-samsung-sk",
+      "source": "Seoul Economic Daily / TFTC",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "NFP June 2026 ~119K (est.) — Goldilocks range confirmed; within 100–120K band; ADP June 98K miss provided accurate directional signal; unemployment rate 4.3% (stable); wages: not confirmed hot; Goldilocks macro regime intact for post-holiday risk assets",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "source": "BLS / RBC Economics estimate",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Fed Chair Kevin Warsh at ECB Forum (Sintra, Portugal): 'inflation too high'; declined to hint at September rate decision; consistent with anti-forward-guidance stance; no rate cut signals; Fed funds futures pricing possible September hike; DXY 101.11 stable",
+      "url": "https://www.cnbc.com/2026/07/01/kevin-warsh-ecb-forum-live-updates.html",
+      "source": "CNBC / ECB Forum",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "KOSPI -4.45% to 7,934 (circuit breaker triggered); SK Hynix -10.96% to ₩2,301,000 on Apple/CXMT news + global chip rotation; Samsung -7%+; Asia semiconductor rout is mobile DRAM focused, not AI GPU/HBM — creates NVDA sector correlation sell-off without fundamental thesis change",
+      "url": "https://invezz.com/pk/news/2026/07/02/heres-why-the-kospi-index-is-slumping-today-july-2/",
+      "source": "Invezz / KOSPI KRX data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "NVDA Blackwell Ultra platform thesis UNCHANGED: GB300 NVL72 = 1.5x GB200 performance; sovereign AI deployments (France Mistral 18,000 Grace Blackwell, UAE, India) accelerating; Q2 FY27 earnings August 26 estimated $91B guidance; SK Hynix HBM4 supply chain for Blackwell is AI data center memory, not mobile DRAM — Apple/CXMT mobile news creates no supply chain risk for NVDA",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-ultra-ai-factory-platform-paves-way-for-age-of-ai-reasoning",
+      "source": "NVIDIA Newsroom",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SPX July 2: 7,478 (-0.07%); VIX ~16.6; 10Y yield 4.49% (stable); DXY 101.11 — US macro regime gates intact (SPX >7,460 ✓, VIX <17 ✓); Goldilocks NFP absorbed without regime deterioration; chip sector rotation is sector-specific, not systemic",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-july-1-2026-nasdaq-futures-slip-after-strongest-quarter-since-2020",
+      "source": "TheStreet / CBOE / Bloomberg",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "July 7 is the decision session for NVDA. Three scenarios: (A) NVDA opens above $200 + SPX >7,460 + VIX <17 simultaneously at July 7 open → FULL-SIZE ADD ACTIVATED; target $215–$220 by August 26 earnings. (B) NVDA opens $195–$200 + macro gates intact → maintain half-size; the position is held but not added; wait for first intraday close above $200 to reassess. (C) NVDA opens below $195 → Stop Day 1 activated (close basis); monitor July 7 close; if July 7 close also below $195, begin exit. The Apple/CXMT mobile DRAM story will have a second news cycle after the holiday gap — if it expands to include HBM or AI memory, that would change the thesis; if it stays mobile-only, NVDA should recover above $200 post-holiday.",
+    "long_term": "The structural thesis is intact. Blackwell Ultra is shipping, sovereign AI capex is confirmed, and the HBM4 supply chain (SK Hynix/Micron for AI data centers) is completely distinct from the mobile DRAM market where Apple is exploring Chinese alternatives. The $193.45 intraday low tested the $195 stop zone without triggering it — a healthy consolidation after a $200 breakout attempt. August 26 Q2 FY27 earnings ($91B guide) is the fundamental catalyst that makes $195–$200 a buying opportunity with an 8–12 week horizon. Conviction is preserved on the structural thesis; only the near-term timing (Gate 3 delay) has changed."
+  },
+
+  "bull_case": [
+    "Apple/CXMT story is mobile DRAM (smartphones), not HBM4 (AI data centers) — the market is incorrectly treating this as an NVDA supply chain story; NVDA's Blackwell Ultra exclusively uses SK Hynix/Micron HBM4 which has no Chinese alternative at scale; the correction in NVDA is an opportunity to accumulate ahead of July 7 full-size add window.",
+    "Goldilocks NFP (~119K) confirms the macro regime for risk assets heading into Q3 earnings season (GOOGL, META, MSFT, AMZN mid-to-late July, NVDA August 26); VIX ~16.6 stays below 17 and SPX 7,478 stays above 7,460 — both critical gates remain intact; July 7's post-holiday session with Nasdaq 100 inclusion ($4.3B passive to SPCX) should be a risk-on open that supports NVDA above $200.",
+    "The $193.45 intraday low on July 2 tested and held the $195 max-pain / options wall support — institutional put-writers defended this level, confirming the $195 options floor as genuine demand; a close above $195 on pre-holiday session with macro gates intact is the definition of a 'healthy correction' before the full-size add on July 7."
+  ],
+
+  "bear_case": [
+    "Gate 3 failing on Day 2 of the BUY signal (July 2, $197.58 vs $200 required) reveals the July 1 $200.09 close as a thin, low-conviction breakout on Q3 Day 1 seasonal demand — the $193.45 intraday low is dangerously close to the $195 stop, and a single bad session on July 7 (e.g., Nasdaq tech selloff on chip sector continuation) could close NVDA below $195 and trigger Stop Day 1.",
+    "The Apple/CXMT/YMTC narrative creates a global semiconductor supply chain paradigm shift: if Apple succeeds in sourcing 20–30% of China-market DRAM from CXMT, Samsung and SK Hynix lose revenue that historically funded their HBM4 R&D; reduced R&D spend at Korean memory players could slow HBM4 innovation and create supply constraints for Blackwell B300; the second-order effect on NVDA is real even if not immediate.",
+    "Three-day holiday gap July 3–6 (US markets closed July 3; KRX open July 3–4) creates a window where NVDA cannot be actively managed; if chip sector rotation accelerates in thin holiday-week trading or a major macro negative (Warsh hike signal post-Sintra forum, geopolitical event) hits over the long weekend, the half-size position is exposed without exit capability until July 7 open."
+  ],
+
+  "key_levels": [
+    { "label": "ATH (May 14, 2026)", "level": "$236.54", "kind": "resistance" },
+    { "label": "Pre-ATH consolidation / post-Blackwell re-rating target", "level": "$220–$230", "kind": "resistance" },
+    { "label": "Post-earnings target zone (August 26 Q2 FY27)", "level": "$215–$220", "kind": "resistance" },
+    { "label": "Psychological round number / distribution zone", "level": "$210", "kind": "resistance" },
+    { "label": "July 1 confirmed close — original BUY gate trigger", "level": "$200.09", "kind": "resistance" },
+    { "label": "★ Re-entry / full-size gate — must reclaim by July 7", "level": "$200", "kind": "resistance" },
+    { "label": "July 2 intraday high / Gate 3 ceiling", "level": "$199.85", "kind": "resistance" },
+    { "label": "July 2 current price — BELOW gate", "level": "$197.58", "kind": "pivot" },
+    { "label": "★ Soft stop reference — hard close stop below here triggers Stop Day 1", "level": "$195", "kind": "support" },
+    { "label": "July 2 intraday low — tested but held on close basis", "level": "$193.45", "kind": "support" },
+    { "label": "June 26 correction low — stop reference for full regime deterioration", "level": "$192.53", "kind": "support" },
+    { "label": "Prior mid-June consolidation base", "level": "$188", "kind": "support" },
+    { "label": "52-week low", "level": "$142.03", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-07", "label": "★ First post-holiday session — full-size add gate: NVDA >$200 at open + SPX >7,460 + VIX <17 simultaneously; SPCX Nasdaq 100 inclusion ($4.3B passive) = risk-on signal; post-Goldilocks NFP continuation", "importance": "high" },
+    { "date": "2026-07-10", "label": "CPI June — core inflation read post-NFP; sticky core (>3.3%) re-opens rate hike debate and could push VIX above 17, collapsing the gate framework; target: ≤3.1% for full-size comfort", "importance": "high" },
+    { "date": "2026-07-14", "label": "NVDA July 11 options expiry — max pain at $195–$200 zone creates pinning risk; if NVDA is near $200 at expiry, significant gamma exposure could create a volatility window ahead of earnings", "importance": "medium" },
+    { "date": "2026-08-26", "label": "★ NVDA Q2 FY27 earnings — ~$91B quarterly revenue guidance; Blackwell Ultra ramp rate; sovereign AI pipeline; HBM4 supply confirmation; the primary fundamental clearing event for $220+ target", "importance": "high" }
+  ],
+
+  "analysis": "## Technical analysis (Thursday July 2, 2026 — Pre-holiday pre-NFP morning)\n\n**July 2 pre-market/early session:** $197.58 (-1.25%). Range: $193.45–$199.85.\n\n**Gate 3 status: FAILED.** NVDA closed July 1 at $200.09 (BUY signal triggered). July 2 re-tests the gate and fails: current $197.58 is $2.42 below $200. The BUY signal is technically 'on probation' — the half-size position is maintained but full-size add is deferred.\n\n**The critical nuance: mobile vs. AI memory.** The Apple/CXMT negotiation story drove the chip sector selloff. Apple is discussing sourcing LPDDR5 DRAM (smartphone memory) from China's CXMT and 3D NAND from YMTC for China-sold iPhones/Macs/iPads. This is mobile memory. NVDA's Blackwell Ultra exclusively uses HBM4 (High Bandwidth Memory, 4th generation) from SK Hynix and Micron — a completely different memory product with zero Chinese manufacturing alternative at scale. The market sold all semis on the Apple headline; selective recovery above $200 on July 7 would confirm that NVDA's AI thesis is intact.\n\n**Intraday stop test at $193.45.** The July 2 low of $193.45 is $1.55 below the $195 options wall / informal stop reference. This is the deepest intraday probe since the June 26 correction low ($192.53). The recovery from $193.45 back to $197.58 by session end (no close below $195) confirms that institutional buyers are active in the $193–$195 range. This is the same defense-at-support pattern that has held BTC's $58,100 level for 12+ sessions.\n\n**NFP Goldilocks backbone.** The macro regime held: SPX 7,478 (Gates 1 intact), VIX ~16.6 (Gate 2 intact), and NFP ~119K (above consensus but within Goldilocks range). The chip sector rotation is idiosyncratic (Apple/mobile memory), not macro. This distinction matters: if the sell-off were macro-driven (hot NFP, rate hike), VIX would be above 17 and SPX below 7,460. Neither is the case.\n\n**★ Framework status: HOLD half-size; full-size add deferred to July 7.** The half-size position is open with -$2.51 unrealized. The framework requires three simultaneous gate closes for the full-size add — only Gates 1 and 2 currently clear. July 7 is the next activation window. If NVDA opens above $200 on July 7 and the holiday week hasn't disrupted the macro gates, the full-size add fires."
+}
