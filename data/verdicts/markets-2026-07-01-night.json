@@ -30,7 +30,7 @@
     { "name": "VIX",          "value": 16.45,   "trigger_above": 17,    "unit": "" },
     { "name": "SPX vs 7,460", "value": 7483.23, "trigger_above": 7460,  "unit": "" },
     { "name": "DXY",          "value": 100.95,  "trigger_above": 100,   "unit": "" },
-    { "name": "BTC",          "value": 57500,   "trigger_below": 63500, "unit": "$" },
+    { "name": "BTC",          "value": 60029,   "trigger_below": 63500, "unit": "$" },
     { "name": "30Y Yield",    "value": 4.84,    "trigger_above": 5.0,   "unit": "%" },
     { "name": "Brent",        "value": 70.50,   "trigger_above": 97,    "unit": "$" }
   ],
@@ -39,7 +39,8 @@
     { "ticker": "NVDA",  "note": "$200.09 — re-entry criteria met by $0.09 margin; half-size position per morning framework; do NOT add full size into NFP binary; full re-entry after Goldilocks NFP July 7", "sentiment": "positive" },
     { "ticker": "GOOGL", "note": "$357.89 (+1.29%) — Day 3 of Dow rebalancing institutional bid; XLC sector co-leadership with META; ISM 53.3 expansion supports Google Cloud AI infrastructure thesis", "sentiment": "positive" },
     { "ticker": "TSLA",  "note": "~$408 est. — Q2 delivery report (consensus 406,024 vehicles) due July 2 alongside NFP; beat = constructive for TSLA post-holiday; miss alongside hot NFP = worst-case July 7 open", "sentiment": "neutral" },
-    { "ticker": "AAPL",  "note": "~$276 est. — lagging on Nasdaq -0.66% tech selloff session; hardware overhang unchanged; no July 1 catalyst; avoid", "sentiment": "negative" }
+    { "ticker": "AAPL",  "note": "~$276 est. — lagging on Nasdaq -0.66% tech selloff session; hardware overhang unchanged; no July 1 catalyst; avoid", "sentiment": "negative" },
+    { "ticker": "BTC",  "note": "$60,029 UTC close (+2.40%) — V-reversal from $57,802 intraday low (false $58,100 support breach) to $61,327 intraday high; close $60,029 most constructive session in 11 days; still $1,971 below $62,000 re-entry gate; flat/cash maintained; watch NFP July 2 for Goldilocks gate-1 attempt", "sentiment": "neutral" }
   ],
   "dont_buy": [
     {
@@ -49,8 +50,8 @@
     },
     {
       "ticker": "BTC",
-      "reason": "Day 12 exit gate at ~$57,500; declined on dual-gate-clearance session; structural speculative capital distribution persists through Goldilocks setups; 3-day July 4 gap makes positions unmanageable.",
-      "better_entry": "Two consecutive UTC closes above $62,000 AND IBIT daily inflows positive for 3+ consecutive days; earliest July 8–9 post-Goldilocks NFP"
+      "reason": "UTC close $60,029 (+2.40%) — V-reversal session, strongest in 11 days, but still $1,971 below the $62,000 re-entry gate (11th consecutive UTC close below gate); structural IBIT redemptions ($4.5B June outflow) not reversed by one session; 3-day July 4 gap makes positions unmanageable; intraday $61,327 high did not close above $61,000 support-turned-resistance.",
+      "better_entry": "Two consecutive UTC closes above $62,000 AND IBIT daily inflows positive for 3+ consecutive days; earliest July 7–8 post-Goldilocks NFP"
     },
     {
       "ticker": "QQQ (unprotected)",
