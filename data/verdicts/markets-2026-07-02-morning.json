@@ -1,0 +1,93 @@
+{
+  "routine": "markets",
+  "date": "2026-07-02",
+  "window": "morning",
+  "generated_at": "2026-07-02T13:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — NVDA Below $200 Gate; Warsh July Hike 33%; NFP Binary at 8:30 AM ET",
+    "conviction": "medium",
+    "rationale_short": "July 1's dual gate clearance remains technically valid (SPX ~7,492 pre-market; Day 2 confirmation pending) but three overnight developments block a BUY upgrade. (1) NVDA gapped to $197.18 — $2.82 below the $200 re-entry gate met by 9 cents yesterday — as Asia's semiconductor selloff (Nikkei −2.47% to 68,733) extends H1 profit-taking into Q3; the half-size from $200.09 is underwater. (2) Fed Chair Warsh's ECB Sintra remarks confirmed the July 28 FOMC is a live rate-hike meeting: 'inflation too high,' 'prices too high,' decision in 4 weeks — rate futures ~33% July hike probability, 10Y testing 4.47–4.50%. (3) June NFP (consensus 100–115K; ADP 98K miss) prints at 8:30 AM ET before a 3-day unhedgeable July 4 gap. Do NOT add longs. Maintain QQQ July 18 puts. Stop-monitor NVDA half-size at $195. Post-Goldilocks NFP + NVDA reclaim of $200 = BUY upgrade July 7 with SPCX Nasdaq-100 inclusion ($4.3B forced buying) as structural tailwind."
+  },
+  "supporting_data": [
+    { "label": "NVDA $197.18 (range $193.45–$199.85 July 2) — $2.82 below $200 re-entry gate; half-size from $200.09 July 1 underwater; Nikkei −2.47% to 68,733 (Tokyo Electron −6.2%, Advantest −6.7%) extends Asia semi profit-taking into Q3", "url": "https://finance.yahoo.com/quote/NVDA/" },
+    { "label": "Fed Chair Warsh ECB Sintra: 'inflation too high,' 'prices too high,' July 28 FOMC rate decision 'in 4 weeks,' no forward guidance — first explicit July-hike signal from the new Chair", "url": "https://www.cnbc.com/2026/07/01/kevin-warsh-ecb-forum-live-updates.html" },
+    { "label": "Euronews: 'US Federal Reserve expected to decide on rate hike in four weeks, Warsh says' — rate futures ~33% July 28 hike probability; 10Y yield testing 4.47–4.50% ceiling (prior briefing flagged this as Nasdaq multiple compression threshold at P/E ~28x)", "url": "https://www.euronews.com/business/2026/07/01/us-federal-reserve-expected-to-decide-on-rate-hike-in-four-weeks-warsh-says" },
+    { "label": "June NFP consensus 100–115K (ADP June: 98K, below 110K est.; annual pay +4.4%) — binary at 8:30 AM ET today before 3-day unhedgeable July 4 holiday gap; hot print (>150K, wages +0.4%) pushes July hike to >50% and 10Y above 4.50%", "url": "https://www.kiplinger.com/investing/economy/jobs-report-june-2026-what-to-expect" },
+    { "label": "SPCX (SpaceX) joins Nasdaq-100 effective July 7 — ~$4.3B forced passive buying from QQQ/QQQM rebalancing + ~$3B Russell reweight; largest forced-flow event since TSLA S&P 500 inclusion 2020; mechanical bid independent of NFP outcome", "url": "https://seekingalpha.com/news/4607865-spacex-to-join-nasdaq-100-effective-july-7-2026" },
+    { "label": "BTC $60,117 (range $57,891–$60,377 July 2) — Day 13 exit gate; still $1,883 below $62,000 re-entry; holiday gap prevents new positions from today's close through July 7 open; structural IBIT June outflow pattern not confirmed reversed", "url": "https://www.cryptotimes.io/2026/07/02/bitcoin-price-prediction-july-2026-will-btc-go-up-or-crash/" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7492.4,  "change_pct":  0.12, "as_of": "2026-07-02T13:30:00Z" },
+    "nasdaq": { "level": 25960.0, "change_pct": -0.31, "as_of": "2026-07-02T13:30:00Z" },
+    "vix":    { "level": 17.1,    "change_pct":  3.95, "as_of": "2026-07-02T13:30:00Z" },
+    "ust10y": { "level": 4.48,    "change_bps":  8,    "as_of": "2026-07-02T13:00:00Z" },
+    "dxy":    { "level": 101.32,  "change_pct":  0.37, "as_of": "2026-07-02T13:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 17.1,   "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7492.4, "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",          "value": 101.32, "trigger_above": 100,   "unit": "" },
+    { "name": "BTC",          "value": 60117,  "trigger_below": 63500, "unit": "$" },
+    { "name": "30Y Yield",    "value": 4.87,   "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",        "value": 70.00,  "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "$197.18 (range $193.45–$199.85) — gapped $2.82 below $200 re-entry gate; half-size from $200.09 July 1 is underwater; Asia semi selloff (Nikkei chip names −6% to −11%) extends the pattern; stop-monitor at $195; full re-entry requires NVDA >$200 + SPX >7,460 + VIX <17 simultaneously post-Goldilocks NFP", "sentiment": "negative" },
+    { "ticker": "META",  "note": "~$610 est. — holding AI cloud business announcement gains (+8.88% July 1); Bloomberg narrative intact heading into July 29 Q2 earnings; pullback to $575–595 remains ideal entry; July 29 = first event management quantifies the cloud business opportunity", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "~$357 est. — Day 4 of Dow rebalancing institutional bid; mechanical Dow-linked demand continues 2–4 weeks; ISM expansion + META cloud validation support Google Cloud thesis; Q2 earnings mid-July catalyst", "sentiment": "positive" },
+    { "ticker": "TSLA",  "note": "~$405 est. — Q2 delivery report due today alongside NFP; consensus 406,024 vehicles (Bloomberg: 396,465; IR: 406,024); beat = constructive for TSLA; miss + hot NFP = worst-case double negative July 7 open; prior Q1 miss (358K vs. 365K est.) raises execution risk", "sentiment": "neutral" },
+    { "ticker": "BTC",   "note": "$60,117 (range $57,891–$60,377) — Day 13 exit gate; recovering overnight but $1,883 below $62,000 gate; holiday gap creates unmanageable risk; two consecutive UTC closes above $62,000 + IBIT inflows 3+ days required for re-entry", "sentiment": "neutral" },
+    { "ticker": "SPCX",  "note": "~$163 est. — Nasdaq-100 inclusion July 7 ($4.3B QQQ/QQQM forced buying + $3B Russell reweight); largest index forced-flow event since TSLA S&P 500 2020; buy-the-dip setup ahead of mechanical bid; short-term structural long", "sentiment": "positive" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA (incremental)",
+      "reason": "Re-entry criteria collapsed overnight: NVDA at $197.18, $2.82 below $200 gate met by only 9 cents on July 1. The Nikkei's −2.47% chip-led selloff signals Asia is pricing a fresh wave of H1 profit-taking. Half-size position from yesterday is underwater. Adding while NVDA is below the gate, NFP unresolved, Warsh confirmed a live July hike, and 10Y is testing 4.50% violates every risk management principle in the prior framework.",
+      "better_entry": "NVDA reclaims $200 with above-average volume AND SPX >7,460 AND VIX <17 simultaneously — confirmed post-Goldilocks NFP, earliest July 7 open. August 26 Q2 FY27 earnings ($91B guide) remains the fundamental clearing event."
+    },
+    {
+      "ticker": "QQQ/SPY (unprotected)",
+      "reason": "June NFP at 8:30 AM ET today (consensus 100–115K; ADP 98K) before a 3-day unhedgeable July 4 holiday gap. Warsh's confirmed July 28 live FOMC meeting means a hot NFP (>150K, wages +0.4%) pushes July hike probability to 50%+. At Nasdaq P/E ~28x, that combination implies 12–15% correction through a gap where no adjustment is possible Thursday close through July 7 open. QQQ July 18 puts at 2–3% of gross are mandatory coverage.",
+      "better_entry": "Post-Goldilocks NFP July 7 if SPX >7,460 AND VIX <17 sustained; SPCX $7.3B forced buying adds structural floor"
+    },
+    {
+      "ticker": "BTC",
+      "reason": "Day 13 exit gate at $60,117 — $1,883 below the $62,000 re-entry gate. Overnight recovery (+0.15%) does not reverse structural distribution. Holiday gap (July 3 observed, July 4, through July 6) means positions opened before today's close cannot be managed through the weekend. IBIT structural June outflow pattern not confirmed reversed by one session's price action.",
+      "better_entry": "Two consecutive UTC closes above $62,000 AND IBIT daily inflows positive for 3+ consecutive days. Earliest: July 8–9 post-Goldilocks NFP."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "META",
+      "direction": "long",
+      "thesis": "Bloomberg's July 1 report that Meta is building a cloud compute business to sell excess AI infrastructure capacity to external developers creates a durable valuation catalyst. The setup between now and Q2 earnings July 29 is the market pricing the optionality before management quantifies the cloud business timeline, revenue model, and product form on the call. XLC sector leadership (META +8.88% July 1) confirms institutional conviction. The pullback to $575–595 has not yet been offered — the stock is holding near $610 on the AI cloud narrative, making any dip toward the entry zone actionable.",
+      "entry": "Pullback to $575–595; initiate new long; add at $565 if offered; hold existing above $600",
+      "invalidation": "SPX closes below 7,300 (broad regime deterioration) OR META reverses below $555 on above-average volume",
+      "conviction": "medium",
+      "horizon": "3–4 weeks (through July 29 Q2 earnings)"
+    },
+    {
+      "asset": "SPCX (SpaceX)",
+      "direction": "long",
+      "thesis": "SpaceX joins the Nasdaq-100 effective Tuesday July 7 — the fastest inclusion in the benchmark's history, 15 trading days post-IPO. Passive funds tracking QQQ and QQQM must buy ~$4.3B in SPCX shares; Russell reweighting adds ~$3B. This is the largest forced-flow event since Tesla's S&P 500 inclusion in 2020, and the mechanical bid is scheduled independently of today's NFP outcome. Buying today at ~$163 captures exposure to a forced flow that executes regardless of the holiday gap's macro repricing.",
+      "entry": "Initiate small position at current levels (~$163 est.); add on any post-NFP dip below $155",
+      "invalidation": "Hot NFP (>150K) triggers broad risk-off that overrides the mechanical bid magnitude; OR SPCX reverses below $145 on above-average volume",
+      "conviction": "medium",
+      "horizon": "3–5 trading days (through July 7 Nasdaq-100 inclusion)"
+    },
+    {
+      "asset": "QQQ July 18 puts",
+      "direction": "hedge",
+      "thesis": "June NFP at 8:30 AM ET today (consensus 100–115K; ADP 98K) is a binary event landing before a 3-day unhedgeable July 4 holiday gap. Warsh's Sintra remarks confirmed July 28 as a live rate-hike meeting; rate futures now price ~33% probability. A hot print (>150K, wages +0.4%) pushes hike probability to 50%+ and forces 10Y above 4.50% through a gap where Nasdaq at P/E ~28x cannot respond. ADP's 98K miss reduces (but does not eliminate) the hot-print tail; maintain existing puts, do not add size.",
+      "entry": "Maintain existing QQQ July 18 puts (2–3% of gross); do not size up given ADP miss narrowed the hot-print tail",
+      "invalidation": "Goldilocks NFP (80–120K, wages +0.2–0.3%) today — exit puts at July 7 open; shift to net long if SPX >7,460 AND VIX <17 AND NVDA >$200 on July 7",
+      "conviction": "low",
+      "horizon": "Through July 7"
+    }
+  ],
+  "bear_case": "Warsh's confirmation that the July 28 FOMC is a live rate-hike meeting — 'inflation too high,' 'prices too high,' rate decision 'in four weeks,' no forward guidance — represents the structural risk the July 1 dual gate clearance missed pricing. Rate futures at ~33% July hike probability imply the market has partially repriced, but a hot NFP today would sharply accelerate that move. The 10Y yield is testing 4.47–4.50% this morning — the ceiling prior briefings flagged explicitly as dangerous for Nasdaq multiples at P/E ~28x — and a two-standard-deviation NFP print above 150K could push yield firmly above 4.50%, bring July hike probability above 50%, and render July 1's dual gate clearance a false breakout before the 3-day holiday gap provides any ability to respond. The Nikkei's −2.47% decline on Asia semiconductor selloff is the clearest current signal that profit-taking in the AI/semis complex is not finished; H1's 80%+ semiconductor gains leave a large distributable float. NVDA at $197.18 — below the $200 gate despite yesterday's three-criteria clearance — is the tape confirming the semis-led rally has not yet established a durable floor. Invalidation: NFP prints 80–120K (Goldilocks), wages +0.2–0.3%, unemployment ≤4.3% — July hike probability falls toward 15%, 10Y retreats below 4.35%, NVDA reclaims $200, and the July 7 open with SPCX Nasdaq-100 forced buying ($7.3B combined with Russell) becomes the highest-conviction long entry of Q3. If SPX holds >7,460 AND VIX stays <17 through July 7, the dual gate clearance is confirmed as a sustained breakout and the bear case formally closes.",
+  "body_mdx": "data/briefings/markets/2026-07-02-morning.mdx"
+}
