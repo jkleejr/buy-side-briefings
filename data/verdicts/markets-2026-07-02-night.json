@@ -2,7 +2,7 @@
   "routine": "markets",
   "date": "2026-07-02",
   "window": "night",
-  "generated_at": "2026-07-02T23:00:00Z",
+  "generated_at": "2026-07-03T01:15:00Z",
   "is_seed": false,
   "verdict": {
     "code": "hold",
@@ -35,7 +35,8 @@
     { "name": "Brent",        "value": 69.50,  "trigger_above": 97,    "unit": "$" }
   ],
   "watchlist_mentions": [
-    { "ticker": "NVDA",  "note": "$194.84 (-1.39%); Korea circuit breaker extends HBM4/advanced-packaging concern; $200 gate failed for third consecutive session; stop-monitor at $195 now at risk; no new positions below the gate", "sentiment": "negative" },
+    { "ticker": "NVDA",  "note": "~$193.70 close (-3.19%), AH $197.10 (+1.91% — above $195 stop threshold); Gate 3 ($200) failed second consecutive session; Stop Day 1 confirmed; AH recovery above $195 constructive but does not satisfy close-based protocol; July 7 close determines Stop Day 2; no new positions before July 7 resolution", "sentiment": "neutral" },
+    { "ticker": "SK HYNIX",  "note": "₩2,301,000 July 2 KST close (-10.96%); July 3 KST IN PROGRESS at ₩2,560,000 (opened ₩2,665,000, range ₩2,502K–₩2,723K) — above ₩2,540,000 stop threshold; Stop Day 2 tracking favorable; ADR listing July 10 ($29.4B) structurally intact", "sentiment": "positive" },
     { "ticker": "META",  "note": "$583.50 (-4.81%); AI cloud premium partially reversed; NOW AT the $575–595 'better entry' zone cited in prior briefings; rate-cut narrative from 57K NFP is a long-term positive for META's cloud multiple; Q2 earnings July 29 is the fundamental clearing event", "sentiment": "neutral" },
     { "ticker": "TSLA",  "note": "480,126 Q2 deliveries (vs. 406K consensus, +25% YoY, best-ever Q2) — stock still fell ~7.49%; classic sell-the-news on a growth scare session; Q2 earnings (~July 22) is next catalyst", "sentiment": "negative" },
     { "ticker": "SPCX",  "note": "~$156 est. close (from ~$163 pre-market); $7.3B forced buying July 7 unchanged; dip from $163 to $156 improves the entry for the mechanical bid", "sentiment": "positive" },
