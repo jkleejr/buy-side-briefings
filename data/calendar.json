@@ -1,11 +1,18 @@
 {
   "events": [
     {
+      "date": "2026-07-04",
+      "label": "BTC Gate 2 — July 4 UTC midnight close ($62,000 threshold); US markets closed (Independence Day)",
+      "kind": "SIGNAL",
+      "tickers": ["BTC", "IBIT"],
+      "note": "Gate 1 likely fired on July 3 UTC midnight close (BTC $62,170 intraday high; ascending-low structure intact). Gate 2 = July 4 UTC midnight close above $62,000 (8 PM ET July 4). Both gates must clear AND at least one confirmed positive IBIT daily net inflow before US market re-entry at July 6 open. US markets closed July 4 (Independence Day, actual). Gate 2 is the determining check for BTC re-entry eligibility."
+    },
+    {
       "date": "2026-07-06",
-      "label": "US markets reopen post-holiday — first dual-gate SPX/VIX restart attempt; KOSPI +4.65% Korea bounce in hand",
+      "label": "US markets reopen — SPCX pre-inclusion buying; dual-gate Day 1 restart; BTC Gate 2 confirmation check",
       "kind": "OTHER",
-      "tickers": ["QQQ", "SPY", "NVDA", "SPCX"],
-      "note": "First US equity session after the July 3–5 holiday gap. KOSPI +4.65% (July 3, complete circuit-breaker reversal) removed the Korea semiconductor contagion tail risk. VIX final close July 2 was 16.15 (not 16.81 as estimated). SPX must close above 7,460 AND VIX below 17 on July 6 close for dual-gate Day 1 to restart. SPCX Nasdaq-100 effective July 7 — passive funds rebalance at July 6 close, creating pre-inclusion demand on Monday. NVDA must also close above $200 with above-average volume on the same session as the dual-gate clearance for full-size semiconductor re-entry."
+      "tickers": ["QQQ", "SPY", "NVDA", "SPCX", "BTC", "IBIT"],
+      "note": "Holiday tape: ES futures ~7,555 (+102pts vs July 2 SPX close ~7,453; 95pts above 7,460 gate). DAX +2.2% and Stoxx 600 +1.4% (record close) removed Europe contagion risk. NVDA touched $200.06 intraday (holiday tape only; needs US closing confirmation). BTC Gate 1 likely fired (July 3 UTC midnight close); Gate 2 (July 4 UTC midnight) determines BTC re-entry eligibility at July 6 open. SPCX pre-inclusion buying begins at July 6 close (index funds must buy before July 7 effective date). Dual-gate Day 1: SPX must close >7,460 AND VIX <17. NVDA full-size add: needs July 6 close >$200 + SPX >7,460 + VIX <17 simultaneously. JPMorgan raised S&P 500 target to 7,800 from 7,200 (+5.5% from holiday ES levels). DXY 100.70 approaching 100 break — sub-100 on July 6 = all six regime indicators clearing simultaneously for the first time this cycle."
     },
     {
       "date": "2026-07-07",

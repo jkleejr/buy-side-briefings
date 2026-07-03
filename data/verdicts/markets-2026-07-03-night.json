@@ -1,0 +1,92 @@
+{
+  "routine": "markets",
+  "date": "2026-07-03",
+  "window": "night",
+  "generated_at": "2026-07-04T01:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Holiday Gap Closes Constructively; ES 7,555; July 6 = BUY Trigger Day",
+    "conviction": "medium",
+    "rationale_short": "US markets closed July 3 (observed Independence Day). ES futures finished the holiday session at ~7,555 — 102pts above last cash close (SPX ~7,453) and 95pts above the 7,460 regime floor. Europe staged its strongest session since mid-June: DAX +2.2% (25,580), Stoxx 600 +1.4% (record close). NVDA touched $200.06 intraday on thin holiday tape — first print at the re-entry gate. BTC intraday high $62,170; UTC Gate 1 midnight close likely fired. HOLD maintained: all gates must confirm on July 6 US cash-market closing basis. BUY upgrade is tracking for July 6.",
+    "supporting_data": [
+      { "label": "ES futures ~7,555 — 95pts above 7,460 regime floor; +102pts vs July 2 SPX close (~7,453); most constructive holiday tape since SPCX IPO", "url": "https://www.investing.com/indices/us-spx-500-futures" },
+      { "label": "Europe record session: DAX +2.2% (25,580), FTSE +1.7% (10,652), Stoxx 600 +1.4% record close — Europe contagion risk removed ahead of July 6 open", "url": "https://www.home.saxo/content/articles/macro/market-quick-take---3-july-2026-03072026" },
+      { "label": "BTC intraday high $62,170 on July 3 — UTC Gate 1 midnight close likely above $62,000; Gate 2 = July 4 UTC midnight close required before re-entry", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-july-3-2026-green-july-off-to-a-solid-start-131639758.html" },
+      { "label": "NVDA $200.06 intraday on holiday tape — first gate-level print in the distribution cycle; needs July 6 US closing confirmation (volume too thin to count)", "url": "https://finance.yahoo.com/quote/NVDA/" },
+      { "label": "ETH +5.6% intraday to ~$1,730 — rate-cut narrative from 57K NFP lifting risk assets; BTC/ETH correlation constructive", "url": "https://sundayguardianlive.com/business/bitcoin-price-today-july-3-2026-btc-climbs-above-61800-ethereum-surges-over-5-as-weak-us-jobs-report-boosts-fed-rate-cut-expectations-225614/" },
+      { "label": "DXY 100.70 weakening; Gold ~$4,200 extending rate-relief bid; JPMorgan raised S&P 500 target to 7,800 from 7,200 (+5.5% further upside from ES holiday levels)", "url": "https://www.elitetrader.com/et/threads/daily-market-wrap-july-3-2026-dxy-plunges-on-weak-nfp-gold-surges-past-4-100-oil-holds-near-68.390399/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7453.0,  "change_pct": -0.40, "as_of": "2026-07-02T20:00:00Z" },
+    "nasdaq": { "level": 25831.0, "change_pct": -0.80, "as_of": "2026-07-02T20:00:00Z" },
+    "vix":    { "level": 16.15,   "change_pct": -2.65, "as_of": "2026-07-02T20:00:00Z" },
+    "ust10y": { "level": 4.47,    "change_bps": -2,    "as_of": "2026-07-02T20:00:00Z" },
+    "dxy":    { "level": 100.70,  "change_pct": -0.08, "as_of": "2026-07-03T19:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.15,  "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7555,   "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",          "value": 100.70, "trigger_above": 100,   "unit": "" },
+    { "name": "BTC Gate 1",   "value": 62050,  "trigger_below": 62000, "unit": "$" },
+    { "name": "30Y Yield",    "value": 4.84,   "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",        "value": 71.0,   "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "$200.06 intraday on holiday tape — first gate-level touch since the distribution cycle began; range $192.36–$200.06; July 6 close >$200 + SPX >7,460 + VIX <17 = full-size add confirmed; Stop Day 2 determination at July 6 close: <$195 = mandatory exit July 7 open", "sentiment": "neutral" },
+    { "ticker": "SPCX",  "note": "~$157.69 (Day 9 paused — holiday); Nasdaq-100 inclusion effective July 7 (Day 10); pre-inclusion demand builds at July 6 close; do NOT chase the July 7 opening spike — sell into the forced-flow completion; re-enter on pullback to $150–155", "sentiment": "positive" },
+    { "ticker": "BTC",   "note": "Intraday high $62,170 on July 3; UTC Gate 1 midnight close likely above $62,000; Gate 2 = July 4 UTC midnight close above $62,000 required; IBIT inflow confirmation also required; earliest US re-entry July 6 open if both gates + IBIT confirmed", "sentiment": "positive" },
+    { "ticker": "META",  "note": "$583.50 (July 2 close, unchanged through holiday); at the $575–595 better entry zone; AI cloud narrative intact; rate-relief from 57K NFP expands multiple for $60B+ FCF machine; Q2 earnings July 29", "sentiment": "positive" },
+    { "ticker": "AMD",   "note": "~$507 (July 2 close); short-hedge candidate conditional on July 6 failing 7,460; no standalone catalyst before late-July Q2 earnings; distribution cycle intact", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "BTC",
+      "reason": "Gate 1 likely fired (July 3 UTC midnight close est. above $62,000 based on $62,170 intraday high) but Gate 2 has not yet occurred. Gate 2 = July 4 UTC midnight close above $62,000 (8 PM ET July 4). The two-gate sequence is designed to prevent entry on single-session momentum. IBIT inflow data is unavailable through the holiday weekend.",
+      "better_entry": "Gate 2 = July 4 UTC midnight close above $62,000 (8 PM ET July 4). If confirmed, earliest US-market entry is July 6 open — verify IBIT inflows before initiating. Do not buy before Gate 2 confirms regardless of intraday price action July 4–5."
+    },
+    {
+      "ticker": "NVDA (full-size)",
+      "reason": "NVDA's $200.06 intraday print on holiday tape is the first gate-level touch since the distribution cycle began — but holiday volume is a fraction of a normal session (<10% of the 100M+ daily average). The gate framework requires a US closing basis print above $200 simultaneously with SPX >7,460 AND VIX <17. Stop Day 2 pending: July 6 close below $195 = mandatory exit July 7 open.",
+      "better_entry": "July 6 US close — check all three conditions at 3:45 PM ET: NVDA >$200, SPX >7,460, VIX <17. All three simultaneously on a closing basis = full-size add. August 26 Q2 FY27 earnings ($91B guide) is the next gate if July 6 fails."
+    },
+    {
+      "ticker": "QQQ/SPY (chasing the gap)",
+      "reason": "ES futures at ~7,555 imply a +100pt gap-up at the July 6 open. Chasing a holiday-tape gap before full-size institutional re-entry validates the level is the pattern that creates whipsaw losses. Sellers who absorbed TSLA's -7.49% decline, Korea's circuit breaker, and AI semi distribution over June have not yet returned to their desks. The July 6 open is NOT the trade; the July 6 close is.",
+      "better_entry": "July 6 US close above 7,460 simultaneously with VIX below 17. If confirmed, shift to net-long positioning at July 7 open ahead of the $7.3B SPCX forced flow."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SPCX",
+      "direction": "long",
+      "thesis": "SpaceX joins the Nasdaq-100 effective July 7 — forcing $4.3B in QQQ/QQQM rebalancing plus ~$3B Russell reweighting ($7.3B total mechanical demand). Index funds begin buying at the July 6 close to minimize tracking error, creating pre-inclusion demand today. SPCX at ~$157.69 has improved from the $163 pre-market July 2 level. The Tesla December 2020 S&P 500 inclusion template: forced-flow events can move stocks 8–15% on inclusion day. Do NOT hold through the July 7 spike — sell the forced-flow completion and re-enter on pullback.",
+      "entry": "Hold existing position; add on any July 6 open dip to $150–155. Sell into the July 7 inclusion-day spike; do not hold above $175. Re-enter on any post-inclusion pullback to $150–155 (est. July 8–9).",
+      "invalidation": "SPCX reverses below $145 on above-average volume (forced flow fully priced) OR SPX fails to hold 7,460 on July 6 close.",
+      "conviction": "medium",
+      "horizon": "3–4 trading days (through July 7 inclusion)"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "NVDA's $200.06 intraday touch is the first gate-level print in the distribution cycle. The China H200 export re-approval (DOC/BIS reportedly clearing 10 Chinese firms) removes the largest near-term revenue overhang (~$7–10B annualized). Korea's complete circuit-breaker reversal confirms HBM4 AI supply chain is not in a structural break. Full-size conditional add contingent on July 6 US closing-basis triple-gate: NVDA >$200, SPX >7,460, VIX <17 simultaneously.",
+      "entry": "Hold half-size. Full-size add ONLY at July 6 US close if all three gates clear simultaneously. Stop Day 2: July 6 close <$195 = mandatory exit July 7 open at market.",
+      "invalidation": "July 6 close below $195 (mandatory exit). OR SPX fails 7,460. OR VIX spikes above 17.",
+      "conviction": "low",
+      "horizon": "Binary July 6; if activated, through August 26 Q2 FY27 earnings"
+    },
+    {
+      "asset": "AMD",
+      "direction": "short",
+      "thesis": "AMD closed -4.3% to ~$507 on July 2 alongside Micron (-7%) and Applied Materials (-7.4%). The holiday tape recovery provides tactical reprieve but no standalone catalyst. AMD lacks NVDA's Blackwell AI-specificity and H200 China narrative, has no catalyst before Q2 earnings (late July), and is maximally exposed to Dow-vs-Nasdaq rotation the 57K NFP growth-scare regime produces. Activate ONLY if July 6 fails dual-gate Day 1 clearance. Suspend if SPX >7,460 at close.",
+      "entry": "Short AMD at ~$507 or on any July 6 open bounce to $515–520, ONLY IF SPX fails to close above 7,460. Put spread or direct short; size 15–20% of hedge allocation. Do not activate if July 6 dual-gate clears.",
+      "invalidation": "SPX reclaims 7,460 on July 6 close AND VIX holds below 17 (cover immediately). OR NVDA reclaims $200 on volume. OR AMD closes above $540.",
+      "conviction": "low",
+      "horizon": "1–2 weeks (conditional on July 6 failure outcome)"
+    }
+  ],
+  "bear_case": "The holiday tape's constructive readings — ES at 7,555, Europe records, NVDA's $200.06 touch — all occurred in thin, low-participation markets. The same force driving the bull case (57K NFP = rate cuts) also signals the US economy is deteriorating faster than the soft-landing consensus acknowledges. At Nasdaq P/E ~28x, simultaneous slowing growth and sticky June CPI (July 14 — energy-CPI base effects from Iranian oil normalization may not appear until July data; Cleveland Fed nowcasts remain elevated) creates a stagflation scenario where rate-cut and growth narratives contradict each other. Holiday-tape ES at 7,555 reflects an absence of sellers, not a presence of committed buyers — when those sellers return on July 6 with the 57K growth scare fresh, the gap-up becomes the distribution zone, not the re-entry zone. If SPX reclaims 7,460 on July 6 and holds, the bear case is wrong.",
+  "body_mdx": "data/briefings/markets/2026-07-03-night.mdx"
+}
