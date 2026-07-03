@@ -1,0 +1,93 @@
+{
+  "routine": "markets",
+  "date": "2026-07-03",
+  "window": "morning",
+  "generated_at": "2026-07-03T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Independence Day Holiday; Markets Closed; Korea KOSPI +4.65% Bounce; Await July 6 Reopening + July 7 SPCX $7.3B Bid",
+    "conviction": "medium",
+    "rationale_short": "US equity markets (NYSE, Nasdaq) are closed Friday July 3 in observance of Independence Day (July 4 falls on Saturday). No new positions can be initiated or managed today. Overnight, Asia staged a broad recovery: KOSPI +4.65% (complete reversal of Thursday's -4.45% circuit breaker, driven by Samsung and SK Hynix triggering an upside sidecar halt), Nikkei +1.36%, Hang Seng +1.57%, ASX +1.39% — the first coordinated green session since the Korea semiconductor shock. VIX closed the July 2 session at 16.15 (-2.65%), healthier than the night brief's 16.81 estimate, confirming the regime gate is intact going into the holiday. BTC trades ~$61,678 (+2.06%) — approaching but still below the $62,000 re-entry gate; DXY drifts to ~100.78 (-0.08%), remaining marginally above 100. The two defining events of next week: (1) Monday July 6 — first US trading day post-holiday; dual-gate sequence restart attempt (SPX must close >7,460 AND VIX <17); (2) Tuesday July 7 — SPCX Nasdaq-100 inclusion with ~$7.3B in forced passive inflows, the largest single index forced-flow event since Tesla's S&P 500 inclusion in December 2020. June CPI on July 14 is the summer's regime-defining macro event. HOLD maintained until SPX reclaims 7,460 AND VIX holds below 17 on a confirmed closing basis."
+  },
+  "supporting_data": [
+    { "label": "NYSE and Nasdaq closed July 3, 2026 — Independence Day observed (July 4 falls on Saturday); next US equity trading Monday July 6; no positions can be added or managed today", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-closed-fourth-july-173527672.html" },
+    { "label": "KOSPI +4.65% Friday; Samsung and SK Hynix led gains, triggering an upside 'sidecar' halt — complete reversal of Thursday's -4.45% circuit breaker; Korea recovery removes the most acute overnight contagion risk for US semis at the July 6 open", "url": "https://www.cnbc.com/2026/07/03/stock-market-today-live-updates.html" },
+    { "label": "VIX final close July 2: 16.15 (-2.65%) — healthier than the night brief's 16.81 estimate; confirms the regime gate is intact through the holiday weekend; sub-17 print going into the holiday gap is the key bullish constant", "url": "https://finance.yahoo.com/quote/%5EVIX/history/" },
+    { "label": "SPCX joins Nasdaq-100 effective July 7 — $4.3B QQQ/QQQM forced rebalancing + $3B Russell reweighting = $7.3B mechanical demand; fastest index inclusion since IPO in Nasdaq-100 history; funds rebalance at July 6 close, creating pre-inclusion demand on Monday", "url": "https://seekingalpha.com/news/4607865-spacex-to-join-nasdaq-100-effective-july-7-2026" },
+    { "label": "BTC ~$61,678 (+2.06% on July 3) — approaching but still below $62,000 re-entry gate; if July 3 UTC midnight close above $62K, Day 1 of two-close sequence initiates; monitor July 4–5 UTC closes; earliest US-market entry July 6 if gate sequence completes", "url": "https://fortune.com/article/price-of-bitcoin-07-02-2026/" },
+    { "label": "June CPI release scheduled July 14, 2026 at 8:30 AM ET — summer's regime-defining event; ISM Prices Paid fell to 73.0 (from 82.1) and WTI at 4.25-month lows provide disinflation input case; CPI ≤3.5% = rate-cut cycle confirmed; CPI ≥4.0% = stagflation risk for Nasdaq at P/E ~28x", "url": "https://robinhood.com/us/en/prediction-markets/economics/events/inflation-in-june-2026-cpi-yoy-jul-14-2026/" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7453.0,  "change_pct": -0.40, "as_of": "2026-07-02T20:00:00Z" },
+    "nasdaq": { "level": 25831.0, "change_pct": -0.80, "as_of": "2026-07-02T20:00:00Z" },
+    "vix":    { "level": 16.15,   "change_pct": -2.65, "as_of": "2026-07-02T20:00:00Z" },
+    "ust10y": { "level": 4.47,    "change_bps": -2,    "as_of": "2026-07-02T20:00:00Z" },
+    "dxy":    { "level": 100.78,  "change_pct": -0.08, "as_of": "2026-07-03T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.15,  "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7453.0, "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",          "value": 100.78, "trigger_above": 100,   "unit": "" },
+    { "name": "BTC Gate 1",   "value": 61678,  "trigger_below": 62000, "unit": "$" },
+    { "name": "30Y Yield",    "value": 4.84,   "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",        "value": 69.50,  "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "~$194.84 (July 2 close, -1.39%); Day 4 of the $200 re-entry gate failure; Korea KOSPI +4.65% with Samsung/SK Hynix leading provides first constructive sentiment read-through for US semis; however NVDA remains $5.16 below the $200 gate and US markets are closed today; July 6 open is next gate test; stop-monitor at $195 close-basis", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "$583.50 (July 2 close, -4.81%); squarely in the $575–595 'better entry' zone; AI cloud narrative (Bloomberg July 1) intact through the holiday gap; rate-cut probability rising from 57K NFP benefits the META multiple; Q2 earnings July 29 is the fundamental clearing event; no change to position thesis", "sentiment": "neutral" },
+    { "ticker": "SPCX",  "note": "~$156 (July 2 close); Nasdaq-100 inclusion July 7 unchanged; $7.3B forced buying ($4.3B QQQ/QQQM + $3B Russell) executes at July 6 close/July 7 open; Korea recovery and VIX below 17 improve the macro context for the inclusion-day event; any holiday-gap dip below $150 is a buyable entry", "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "~$390.79 (July 2 close, +1.69%); best large-cap tech performer on July 2; rate relief from 57K NFP is the direct multiple positive for MSFT; Azure AI intact; Q2 earnings late July; constructive into the holiday", "sentiment": "positive" },
+    { "ticker": "AMD",   "note": "~$507 (July 2 close, -4.3%); Korea bounce provides tactical sentiment relief but the AI semi distribution cycle from 80%+ H1 gains is not over; no standalone catalyst before Q2 earnings late July; short hedge candidate remains active", "sentiment": "negative" },
+    { "ticker": "TSM",   "note": "~$455 (July 2 close est., -1.5%); KOSPI +4.65% Friday is a direct positive for TSM through HBM4 supply chain read — SK Hynix's bounce validates the HBM4 demand thesis the circuit breaker session had called into question; SK Hynix ADR Nasdaq listing July 10 is the formal US capital-markets pricing of the AI memory narrative", "sentiment": "positive" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA (any add)",
+      "reason": "Day 4 of the $200 gate failure. NVDA closed at $194.84 on July 2, $5.16 below the re-entry threshold. US markets are closed today — the gate cannot be tested until July 6 open. Even if the Korea KOSPI +4.65% bounce provides sentiment tailwind, NVDA needs SPX >7,460 AND VIX <17 AND NVDA >$200 simultaneously on a US closing basis before full-size addition is warranted. No Asia session reading substitutes for a US closing confirmation.",
+      "better_entry": "July 6 close — if NVDA closes above $200 with SPX >7,460 AND VIX <17 simultaneously. Full-size gate resets at that point. Check all three at 3:45 PM ET July 6 before adding. August 26 Q2 FY27 earnings ($91B guide confirmation) remains the fundamental clearing event if gates continue to fail."
+    },
+    {
+      "ticker": "BTC",
+      "reason": "BTC at ~$61,678 is $322 below the $62,000 re-entry gate. Today's +2.06% is encouraging but the protocol requires two consecutive UTC midnight closes above $62,000 AND IBIT positive daily inflows for 3+ days — neither condition is satisfied. If July 3 UTC midnight close exceeds $62K, that initiates only Day 1. Day 2 requires July 4–5 UTC closes also above $62K.",
+      "better_entry": "Two consecutive UTC midnight closes above $62,000 AND IBIT positive daily inflows for 3+ days. Monitor July 3–5 UTC midnight closes. Earliest US-market entry: July 6 open if the two-gate sequence completes through the holiday weekend."
+    },
+    {
+      "ticker": "TSLA",
+      "reason": "Fell 7.49% on July 2 despite delivering 480,126 vehicles in Q2 (+25% YoY, 18% above 406K consensus, best-ever Q2) — the most emphatic sell-the-news pattern of the quarter. Growth scare from 57K NFP overwhelmed exceptional fundamental execution. No catalyst between now and Q2 earnings (~July 22) with FSD revenue guidance and Q3 delivery outlook.",
+      "better_entry": "Q2 earnings (~July 22) with explicit FSD revenue recognition at scale and Q3 guide >450K. The 480K delivery beat is real; the multiple requires macro stabilization to re-rate above $420."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SPCX",
+      "direction": "long",
+      "thesis": "Nasdaq-100 inclusion effective July 7 forces $4.3B in QQQ/QQQM rebalancing + $3B Russell reweighting = $7.3B in mechanical passive demand. Funds must execute by July 6 close, creating pre-inclusion buying pressure on Monday. SPCX at ~$156 (from ~$163 pre-market July 2) gives a materially improved entry. Korea KOSPI +4.65% and VIX at 16.15 reduce the macro headwind for the inclusion-day event. Tesla S&P 500 December 2020 inclusion template shows 8–15% move potential on the forcing day.",
+      "entry": "Position at ~$156 est. or any holiday-gap dip below $150. Do not chase the July 7 opening spike — sell into forced-flow completion; re-enter on any post-inclusion pullback to $150–155.",
+      "invalidation": "SPCX reverses below $145 on above-average volume (forced flow already priced or lockup expiry selling dominates) OR SPX gaps below 7,300 on July 6 open (macro overwhelms mechanical bid).",
+      "conviction": "medium",
+      "horizon": "3–5 trading days (through July 7 Nasdaq-100 inclusion)"
+    },
+    {
+      "asset": "META",
+      "direction": "long",
+      "thesis": "META at $583.50 is squarely in the $575–595 'better entry' zone targeted in prior briefings. Bloomberg AI cloud narrative (July 1) is structurally intact through the holiday gap. 57K NFP weakness adds rate-cut optionality that lowers the discount rate on META's $50B+ AI infrastructure spend. Q2 earnings July 29 is the first management quantification of the cloud business revenue model. FCF $60B+ annual makes META maximally rate-resilient.",
+      "entry": "Initiate or add at $575–595; add at $565 if offered through the holiday weekend. Stop: $555 on above-average volume close.",
+      "invalidation": "SPX closes below 7,300 OR META reverses below $555 on above-average volume (cloud narrative retracted or Q2 warning issued).",
+      "conviction": "medium",
+      "horizon": "3–4 weeks (through July 29 Q2 earnings)"
+    },
+    {
+      "asset": "AMD",
+      "direction": "short",
+      "thesis": "AMD closed -4.3% to ~$507 on July 2 — worst semi session in months. Korea one-day bounce provides tactical relief but does not end the AI semi distribution cycle. AMD has no HBM4 differentiation, no standalone catalyst before Q2 earnings late July, and is structurally most exposed to the Dow/value rotation that a growth-scare regime produces. The most liquid, tradeable short hedge in the semi complex with no specific positive catalyst imminent.",
+      "entry": "Short AMD at ~$507 or on any July 6 open bounce to $515–520. Put spread or direct short. Size 15–20% of hedge allocation.",
+      "invalidation": "SPCX $7.3B bid lifts all tech/growth and AMD closes above $540 on volume; OR NVDA reclaims $200, triggering a broad semi reversal; OR SPX reclaims 7,460 AND VIX falls below 16.5.",
+      "conviction": "low",
+      "horizon": "1–2 weeks"
+    }
+  ],
+  "bear_case": "The holiday-gap pause provides no fundamental relief from the structural problems July 2 identified. NFP printing 57K with -74K combined revisions to April and May signals employment deteriorating faster than the soft-landing consensus acknowledges. At Nasdaq P/E ~28x, simultaneous slowing growth and sticky June CPI (July 14 — Cleveland Fed nowcasts elevated; Ameriprise forecasts higher) creates a stagflation scenario: the worst multiple environment for long-duration growth equities, where neither rate-cut optimism nor growth narrative provides durable support. TSLA's -7.49% on a 480K delivery beat (18% above 406K consensus, best-ever Q2) is the regime's clearest signal: premium multiples cannot absorb growth-scare narratives regardless of fundamental execution quality. Korea's +4.65% one-day bounce after a -4.45% circuit breaker session is historically consistent with counter-trend rallies that do not end distribution cycles — the distributable float from 80%+ H1 AI semi gains remains large. Counter-argument: VIX closing at 16.15 rather than the night brief's estimated 16.81 is a materially better outcome; if July 6 opens with SPCX bid lifting SPX back above 7,460 and VIX holds below 17, the bear case closes and BUY upgrades for July 7 confirmation. If SPX reclaims 7,460 by July 6 close, the call is wrong.",
+  "body_mdx": "data/briefings/markets/2026-07-03-morning.mdx"
+}
