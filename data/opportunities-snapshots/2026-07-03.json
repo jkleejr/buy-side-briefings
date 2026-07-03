@@ -1,0 +1,81 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T12:05:00Z",
+  "summary": "NFP June 2026 (57K, vs 114K consensus) triggered two stops on July 2 — long-MU (Apple/CXMT/YMTC mobile DRAM sourcing killed the memory demand thesis, -11.5%) and short-MSFT (Warsh hike probability collapsed, rate-relief trade lifted MSFT above stop, -5.9%) — while GD hit Target 1 at $362 on July 1 (+7.0%). US markets closed today (July 4 observed); three new ideas generated for the reopening July 7: META long re-entry at the $583 post-T1 pullback, AMD short on NFP growth-scare distribution, and AMZN long on AWS defensive quality + rate-relief re-rating. TSLA $392.24 sits just $2.24 above its $390 stop — monitor closely on the July 7 open. SPCX Nasdaq-100 inclusion ($7.3B forced buying) on July 7 is the dominant near-term catalyst for the active slate.",
+  "active_ids": [
+    "long-amd-ai-chip-fomc-dip-2026-06-16",
+    "long-avgo-ism-ai-hardware-reentry-2026-07-01",
+    "long-btc-post-stop-reentry-60k-conditional-2026-06-19",
+    "long-ewj-japan-oil-ai-recovery-2026-06-25",
+    "long-googl-dow-inclusion-2026-06-30",
+    "long-qcom-dragonfly-data-center-2026-06-25",
+    "long-spcx-nasdaq100-inclusion-july7-2026-07-02",
+    "long-tbt-warsh-sintra-july-hike-2026-07-02",
+    "long-tlt-nfp-weak-print-hedge-2026-06-29",
+    "long-tsla-delivery-beat-conditional-2026-07-01",
+    "long-tsm-ai-wafer-rout-reentry-2026-06-24",
+    "long-xlf-scotus-rate-path-2026-06-30",
+    "short-aapl-hardware-price-demand-compression-2026-06-26",
+    "short-gld-real-rates-pce-bofa-2026-06-25",
+    "short-hyg-credit-spread-bofa-3-hike-2026-06-24",
+    "short-ita-ceasefire-defense-repricing-2026-06-18",
+    "short-nvda-stop-day2-puts-2026-06-30",
+    "short-qqq-puts-nfp-binary-2026-06-29",
+    "short-qqq-tech-quarter-end-selloff-2026-06-26",
+    "long-meta-ai-cloud-q2-earnings-2026-07-03",
+    "short-amd-semi-distribution-nfp-growth-scare-2026-07-03",
+    "long-amzn-aws-defensive-cloud-rate-relief-2026-07-03"
+  ],
+  "new_today_ids": [
+    "long-meta-ai-cloud-q2-earnings-2026-07-03",
+    "short-amd-semi-distribution-nfp-growth-scare-2026-07-03",
+    "long-amzn-aws-defensive-cloud-rate-relief-2026-07-03"
+  ],
+  "closed_today": [
+    {
+      "id": "long-gd-iran-duration-dod-heavy-weapons-2026-06-11",
+      "status": "target_hit",
+      "final_price": 362.0,
+      "return_pct": 7.0,
+      "note": "Target 1 hit at $362 on July 1; GD extended to $373.54 on July 2. 40% of position taken at T1 per plan; remaining 60% can hold toward T2 ($385) and T3 ($415) as DOD supplemental and NDAA FY2027 catalysts develop."
+    },
+    {
+      "id": "long-mu-post-q3-earnings-2026-06-24",
+      "status": "stopped_out",
+      "final_price": 975.56,
+      "return_pct": -11.5,
+      "note": "Apple sourcing deals with CXMT and YMTC for mobile DRAM (announced July 1-2) triggered a memory complex selloff. MU closed $975.56 on July 2 — breaching both the $1,000 half-cut trigger and the $990 two-session stop floor in a single session, warranting full exit."
+    },
+    {
+      "id": "short-msft-warsh-rate-hike-multiple-compression-2026-07-02",
+      "status": "stopped_out",
+      "final_price": 390.79,
+      "return_pct": -5.9,
+      "note": "NFP 57K collapsed Warsh July hike probability to near zero. MSFT was best large-cap tech +1.69% on rate relief, closing $390.79 and breaching the $388 stop on the first trading session. Created and stopped in the same day."
+    }
+  ],
+  "current_prices": {
+    "long-amd-ai-chip-fomc-dip-2026-06-16": 507.0,
+    "long-avgo-ism-ai-hardware-reentry-2026-07-01": 369.34,
+    "long-btc-post-stop-reentry-60k-conditional-2026-06-19": 61678.0,
+    "long-ewj-japan-oil-ai-recovery-2026-06-25": 93.0,
+    "long-googl-dow-inclusion-2026-06-30": 359.0,
+    "long-qcom-dragonfly-data-center-2026-06-25": 184.21,
+    "long-spcx-nasdaq100-inclusion-july7-2026-07-02": 156.0,
+    "long-tbt-warsh-sintra-july-hike-2026-07-02": 35.20,
+    "long-tlt-nfp-weak-print-hedge-2026-06-29": 87.0,
+    "long-tsla-delivery-beat-conditional-2026-07-01": 392.24,
+    "long-tsm-ai-wafer-rout-reentry-2026-06-24": 455.0,
+    "long-xlf-scotus-rate-path-2026-06-30": 55.29,
+    "short-aapl-hardware-price-demand-compression-2026-06-26": 270.0,
+    "short-gld-real-rates-pce-bofa-2026-06-25": 375.0,
+    "short-hyg-credit-spread-bofa-3-hike-2026-06-24": 80.0,
+    "short-ita-ceasefire-defense-repricing-2026-06-18": 244.0,
+    "short-nvda-stop-day2-puts-2026-06-30": 194.84,
+    "short-qqq-puts-nfp-binary-2026-06-29": 458.0,
+    "short-qqq-tech-quarter-end-selloff-2026-06-26": 458.0,
+    "long-meta-ai-cloud-q2-earnings-2026-07-03": 583.50,
+    "short-amd-semi-distribution-nfp-growth-scare-2026-07-03": 507.0,
+    "long-amzn-aws-defensive-cloud-rate-relief-2026-07-03": 243.04
+  }
+}

@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-11",
   "expires_at": "2026-08-15",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "defense",
     "GD",
@@ -54,7 +54,13 @@
     "escalation",
     "medium-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-01",
+    "final_price": 362.0,
+    "return_pct": 7.0,
+    "outcome_label": "Target 1 hit at $362",
+    "note": "GD reached $362.86 on July 1, touching Target 1 at $362 as DOD supplemental defense budget momentum continued and the Iran conflict duration thesis remained intact. GD extended further to $373.54 on July 2. Per trade plan, 40% of position was taken at Target 1; remaining 60% can be held toward Target 2 ($385) and Target 3 ($415) as the DOD supplemental and NDAA FY2027 catalysts develop through August."
+  },
   "levels": {
     "entry_low": 333.0,
     "entry_high": 345.0,

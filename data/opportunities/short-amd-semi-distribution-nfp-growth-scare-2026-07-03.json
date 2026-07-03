@@ -1,0 +1,54 @@
+{
+  "id": "short-amd-semi-distribution-nfp-growth-scare-2026-07-03",
+  "title": "Short AMD — NFP 57K Growth Scare: Data Center Capex Multiple Compression",
+  "ticker": "AMD",
+  "asset_class": "equity",
+  "category": "macro",
+  "direction": "short",
+  "conviction": "medium",
+  "time_horizon": "1-3 weeks",
+  "current_price": 507.0,
+  "entry": "Short AMD $503–518 (AMD at $507 July 2 close, -1.20% on an already-weak tape). AMD has been down 4 consecutive sessions from its recent highs and is trading below the long-AMD opportunity's entry zone ($525–550), signaling that the stock has shifted from accumulation to distribution. Do NOT short above $525 — above that level AMD has reclaimed the entry zone of the existing long opportunity and the distribution thesis weakens. Do NOT short below $490 — below that level AMD has already moved substantially in the short direction and incremental risk/reward compresses. Size 3% gross (medium conviction; growth-scare thesis has macro support from NFP 57K but AMD's EPYC CPU franchise provides structural earnings floor). Enter at the open July 7, after the SPCX Nasdaq-100 inclusion bounce provides a better entry on any temporary tech-wide lift.",
+  "stop_loss": "$532 daily close — approximately 4.3% above the $510 entry midpoint. A close at $532 implies one of: (1) SPCX Nasdaq-100 inclusion on July 7 triggered a squeeze that carried AMD back through its prior resistance at $525, invalidating the distribution signal; (2) AMD announces a material positive catalyst — a hyperscaler data center GPU order win above $5B or an EPYC Rome next-generation design win at a major cloud provider — that reasserts fundamental demand above the cyclical-growth-scare narrative; (3) a hot July 7-8 macro catalyst (ISM Services beat, strong consumer credit) reverts the NFP growth-scare narrative. Exit immediately on a $532 close.",
+  "targets": [
+    "$480 — data center capex growth scare compresses AMD's AI GPU multiple; Nasdaq loses the 24,500 psychological level on growth-recession fears; AMD at $480 tests the June 2026 pre-reconstitution floor; -5.9% from $510 midpoint; cover 40%",
+    "$458 — AMD Q2 2026 earnings guidance cut (expected late July): if enterprise IT spend is weakening per the NFP signal, AMD's EPYC server CPU attach rate to new server builds slows; AMD multiple compresses from current ~25x to ~22x forward earnings; -10.2% from $510; cover 40%",
+    "$432 — full growth-scare scenario: Fed re-opens September cut discussion explicitly, confirming the 57K NFP is structural; AI hyperscalers signal data center capex pause in August 2026 commentary; AMD tests the May 2026 lows; -15.3%; hold final 20% into late July"
+  ],
+  "risk_reward": "1:3.1 to third target from $510 entry midpoint, $532 stop",
+  "position_size_pct": 3,
+  "catalyst": "The NFP June 2026 print of 57K (vs 114K consensus) is the primary macro catalyst: the weakest payroll since early 2020 raises the probability of enterprise IT spend deceleration in H2 2026, which directly impacts AMD's two largest revenue streams — data center GPU (MI300X/MI325X for AI workloads) and EPYC server CPUs. AMD's data center revenue was growing 80%+ YoY in Q1 2026; a meaningful deceleration in enterprise compute capex would compress both the growth rate and the forward multiple at the same time. AMD at $507 trades at approximately 25x forward earnings — a multiple that prices in uninterrupted AI data center GPU demand. The 57K NFP signal, combined with AMD's 4-day distribution pattern and the existing active long-AMD opportunity failing to reach its entry zone ($525-550), creates a 1-3 week window for a short-side trade.",
+  "thesis": "AMD's current price of $507 represents a notable disconnect from the NFP growth-scare signal. While the Nasdaq as a whole fell -0.80% on July 2, AMD's -1.20% decline was modest relative to what a 57K payroll print implies for enterprise IT spending. AMD is more exposed to enterprise capex cyclicality than NVDA (which is dominated by hyperscaler AI training spend that is more insulated from small-and-midsize enterprise hiring cycles) or AAPL (consumer hardware). AMD's EPYC CPU revenue is sold primarily into new server builds and cloud hyperscaler rack deployments — both of which are sensitive to enterprise budget cycles that respond to labor market signals with a 6-9 month lag.\n\nThe distribution pattern is the primary technical signal. AMD has been down 4 consecutive sessions and is trading below the long-AMD opportunity's entry zone ($525-550), which was established on June 16 as the 'wait for the dip' level. The fact that AMD has now spent multiple sessions BELOW the intended entry zone — without triggering the stop at $495 — signals that the stock is in distribution: sellers are present at every rally attempt above $510, and buyers are not willing to step in at the intended accumulation zone. This is the technical precondition for a distribution-to-markdown sequence in Wyckoff terms, particularly when the macro backdrop (57K NFP) is confirming a slowdown in the sector's demand drivers.\n\nThe SPCX Nasdaq-100 inclusion on July 7 creates a tactical entry opportunity: the $7.3B in forced passive buying on Monday will temporarily lift AMD and the broader Nasdaq. This lift should be used as the short entry window — the inclusion-driven rally is mechanical and non-fundamental. AMD's inclusion weight in QQQ is approximately 2.5%, meaning QQQ's $4.3B inflow implies approximately $107M of passive AMD buying on July 7. This mechanical bid dissipates immediately after the open, leaving AMD exposed to the underlying growth-scare distribution thesis.\n\nThe counter-party is the AMD structural bull who argues: EPYC is taking server CPU market share from Intel at an accelerating rate; MI300X AI GPU demand from cloud hyperscalers (Microsoft Azure, Google Cloud) is supply-constrained through 2026; and AMD at 25x forward earnings is cheap relative to its 40%+ earnings growth trajectory. These arguments are correct for the medium-term — this is not a structural short. It is a 1-3 week multiple compression trade driven by the NFP growth scare, calibrated against AMD's specific cyclical exposure to enterprise capex. The stop is defined at $532 to capture the scenario where the SPCX inclusion or a positive macro catalyst (ISM Services beat) reverts the thesis before earnings.",
+  "bull_case": "SPCX Nasdaq-100 inclusion on July 7 creates a broad Nasdaq rally that carries AMD through $525. A major hyperscaler (Microsoft or Google) announces expanded MI325X procurement for H2 2026 in a conference presentation or 8-K filing the week of July 7. AMD reclaims its long-opportunity entry zone $525-550. Short stopped out at $532. Full loss: -4.3% on 3% position = -0.13% gross. The long-AMD opportunity simultaneously enters its entry zone, partially offsetting the short loss.",
+  "bear_case": "July 7 SPCX inclusion lift fades by 10 AM as institutional sellers use the mechanical passive bid to exit AMD positions accumulated at $525-550 in June. AMD closes July 7 below $500, confirming the distribution thesis. NFP growth-scare narrative is reinforced by ISM Services missing consensus the following week. AMD tests $480 (T1) by July 14. AMD Q2 earnings preview notes (sell-side estimates) begin citing enterprise IT spend caution. T2 at $458 reached by late July, just before AMD reports Q2 earnings.",
+  "invalidation": "$532 AMD daily close; OR hyperscaler MI325X/MI350X procurement announcement above $5B for H2 2026 delivery; OR AMD Q2 2026 earnings pre-announcement showing data center revenue above $8B (confirms AI demand insulated from enterprise capex cycle); OR EPYC server CPU win at a new major deployment that implies structural market share continuation regardless of macro; OR ISM Manufacturing and Services both beat consensus decisively in the week of July 7 (growth-scare thesis fundamentally refuted)",
+  "sources": [
+    {
+      "label": "AMD stock price $507.00, -1.20% July 2, 2026 — Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/AMD/"
+    },
+    {
+      "label": "NFP June 2026: 57K jobs (vs 114K consensus) — BLS Employment Situation Summary, July 2, 2026",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+    },
+    {
+      "label": "AMD Q1 2026 data center revenue $3.7B, +80% YoY — AMD Investor Relations",
+      "url": "https://ir.amd.com/news-releases/news-release-details/amd-reports-first-quarter-2026-financial-results"
+    },
+    {
+      "label": "SPCX Nasdaq-100 inclusion July 7: $7.3B forced passive buying — buy-side briefings morning edition July 3, 2026",
+      "url": "https://finance.yahoo.com/quote/SPCX/"
+    }
+  ],
+  "created_at": "2026-07-03",
+  "expires_at": "2026-07-25",
+  "status": "active",
+  "tags": ["AMD", "semis", "data-center", "growth-scare", "NFP", "macro", "short", "distribution", "EPYC", "MI300X"],
+  "outcome": null,
+  "levels": {
+    "entry_low": 503.0,
+    "entry_high": 518.0,
+    "stop": 532.0,
+    "targets": [480.0, 458.0, 432.0]
+  }
+}

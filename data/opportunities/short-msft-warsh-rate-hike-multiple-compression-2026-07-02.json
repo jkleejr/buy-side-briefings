@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-07-02",
   "expires_at": "2026-07-25",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["MSFT", "Warsh", "rate-hike", "multiple-compression", "10Y", "Nasdaq", "macro", "short", "Azure", "growth-compression"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-02",
+    "final_price": 390.79,
+    "return_pct": -5.9,
+    "outcome_label": "Stopped out — $388 daily close breached",
+    "note": "NFP June 2026 printed 57K (vs 114K consensus) on July 2 — the weakest payroll since early 2020. Warsh July FOMC hike probability collapsed from 33% to near zero. The rate-hike compression thesis that underpinned this short was invalidated in a single session. MSFT was the best-performing large-cap tech name +1.69% on the rate-relief trade, closing at $390.79 and breaching the $388 stop. Full loss on a 2% position."
+  },
   "levels": {
     "entry_low": 365.0,
     "entry_high": 375.0,
