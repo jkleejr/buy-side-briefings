@@ -1,10 +1,11 @@
 {
   "events": [
     {
-      "date": "2026-07-03",
-      "label": "US Market Holiday — Independence Day observed (July 4 falls on Saturday)",
-      "kind": "HOLIDAY",
-      "note": "US equity markets closed Friday July 3. 3-day weekend gap (July 3–6). June NFP printed 57K on July 2 (vs. 110K consensus; -74K net revisions to April-May) — growth-scare scenario. Any repricing accumulates over the full gap before July 7 open. QQQ July 18 puts are the only active hedges through the gap."
+      "date": "2026-07-06",
+      "label": "US markets reopen post-holiday — first dual-gate SPX/VIX restart attempt; KOSPI +4.65% Korea bounce in hand",
+      "kind": "OTHER",
+      "tickers": ["QQQ", "SPY", "NVDA", "SPCX"],
+      "note": "First US equity session after the July 3–5 holiday gap. KOSPI +4.65% (July 3, complete circuit-breaker reversal) removed the Korea semiconductor contagion tail risk. VIX final close July 2 was 16.15 (not 16.81 as estimated). SPX must close above 7,460 AND VIX below 17 on July 6 close for dual-gate Day 1 to restart. SPCX Nasdaq-100 effective July 7 — passive funds rebalance at July 6 close, creating pre-inclusion demand on Monday. NVDA must also close above $200 with above-average volume on the same session as the dual-gate clearance for full-size semiconductor re-entry."
     },
     {
       "date": "2026-07-07",
