@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-04",
+  "for_session": "2026-07-06",
+  "generated_at": "2026-07-04T11:30:00Z",
+  "is_seed": false,
+  "intro": "July 4 (US Independence Day, Saturday) — US markets closed. Double holiday closure (July 3 early close + July 4 full closure) gives four calendar days of gap risk before July 6 reopening. The BIG development: BTC Gate 1 CONFIRMED — July 3 UTC midnight close was $62,579.40, clearing $62,000 for the first time in 14 sessions. Gate 2 is now TRACKING LIVE: current BTC price $62,491 with intraday low $62,331 ($331 above $62,000); 13 hours remain in the July 4 UTC session. Gate 3 (IBIT inflow confirmation) has a 5-day consecutive inflow streak per pre-holiday data — earliest official T+2 read is July 6 AM. If Gate 2 confirms at 00:00 UTC July 5, BTC re-entry activates for July 6 US open. NVDA VIX 15.78 spot (vs. 16.0 estimate) marginally improves Stop Day 2 odds — but the Stop Day 2 binary is at July 6 US CLOSE, not today. SPCX Day 9 is July 6 (delayed one calendar day by July 4 Saturday closure); Nasdaq 100 inclusion Day 10 remains July 7. SK Hynix next KRX session July 6 (9:00 AM KST = 00:00 UTC July 6). All July 7 activation gates remain intact from July 3 framework — July 6 is still the binary determination session for NVDA, BTC, and SPCX volume.",
+  "ideas": [
+    {
+      "ticker": "BTC-USD",
+      "name": "Bitcoin",
+      "category": "crypto",
+      "lean": "buy",
+      "conviction": "high",
+      "timeframe": "Gate 2 tracking tonight (00:00 UTC July 5); re-entry July 6 US open if Gates 1+2+3 confirmed",
+      "idea": "Gate 1 CONFIRMED: July 3 UTC midnight close $62,579.40 cleared $62,000. Gate 2 TRACKING: current session (July 4 UTC) price $62,491, intraday low $62,331 — $331 above the $62,000 threshold with 13 hours remaining. Gate 3 LIKELY: 5-day consecutive IBIT inflow streak prior to July 3–4 holiday closure; earliest official confirmation is July 6 AM. IF Gate 2 confirms tonight (00:00 UTC July 5, BTC close at or above $62,000) AND Gate 3 confirmed at July 6 open: re-entry activated at July 6 US open. Entry size: 20–25% of crypto allocation. DO NOT enter if Gate 2 fails (BTC below $62,000 at 00:00 UTC July 5) — reset sequence. The two-gate protocol exists specifically to filter holiday-thin momentum spikes from sustained institutional demand; Gate 2 confirmation in a holiday tape with low volume makes it MORE rigorous, not less.",
+      "why": "Gate 1 confirmed on a session that opened at $62,579.40 — the market is now holding ABOVE $62,000, not testing from below. Ascending daily-low structure intact: July 1 $57,802 → July 2 $59,584 → July 3 $61,232 → July 4 open $62,579. VIX spot 15.78 and BUY regime intact provides the macro backdrop for institutional re-entry. Holiday-thin tape means each BTC purchase has outsized price impact — the fact that $62,000 is holding despite thin liquidity is a positive signal, not a warning. IBIT 5-day inflow streak predates the holiday gap (last confirmed July 1–3 per Bloomberg ETF data); resumption of inflows at July 6 US open would be the institutional demand confirmation Gate 3 requires.",
+      "trigger": "Monitor BTC price at 00:00 UTC July 5 (midnight UTC): ABOVE $62,000 = Gate 2 confirmed, re-entry activated for July 6 US open. BELOW $62,000 = Gate 2 fails, reset entire sequence to watch-only. At July 6 US open (9:30 AM ET): verify IBIT had positive net inflow on any of the July 1–3 sessions per Bloomberg terminal or ETF.com. If confirmed: buy BTC-USD at July 6 market open. Stop: $59,000 (two consecutive closes below $59,000 trigger exit). Target: $75,000–$85,000 through Q3 2026.",
+      "risk": "BTC retreats below $62,000 on remaining July 4 UTC session on holiday-thin profit-taking (Gate 2 fails); IBIT shows net outflows on July 1–3 when confirmed at July 6 open (Gate 3 fails); holiday-thin tape amplifies any negative headline into a cascade; Korea-contagion crypto-market event over holiday weekend (crypto never closes); Gate 1+2 confirm but institutional demand does not materialize at July 6 open (IBIT flat/outflow)."
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "category": "ai-semis",
+      "lean": "hold",
+      "conviction": "low",
+      "timeframe": "Stop Day 2 binary at July 6 US close; full-size add gate July 7 open if Stop Day 1 isolated",
+      "idea": "Hold half-size through July 6 US close. Stop Day 2 determination is at the July 6 US CLOSE — not the holiday tape. VIX spot 15.78 (vs. 16.0 in the framework estimate) marginally improves the risk backdrop going into July 6. NVDA OTC/ADR carry from July 3 US pre-market: ~$194.83, which is -$0.17 below the $195 stop on an intraday basis but the stop is measured at the CLOSE, not intraday. Key catalyst for July 6 open: H200 China licensing — policy was authorized January 16, 2026 (BIS rule, 25% tariff, case-by-case licensing) but China has NOT yet permitted imports; any July 6 news of China issuing the first H200 import licenses would be a massive positive catalyst. July 7 full-size add gate: NVDA close above $195 July 6 AND NVDA above $200 at 9:25 AM ET July 7 AND SPX futures >7,460 AND VIX pre-open <17 simultaneously.",
+      "why": "The Stop Day 2 binary has not changed. $194.83 carry is within normal gap-open volatility for July 6 — a morning upside gap to $197–$200 on China H200 news or general post-holiday relief rally is entirely plausible. VIX at 15.78 instead of 16.0 means the Goldilocks backdrop is actually better than estimated going into July 6. The H200 China situation is the most important variable: BIS authorized case-by-case export licenses on January 16, 2026, with a 25% tariff and a national security review pathway. As of July 4, zero H200 units have entered China under the new framework, but any first-mover license approval would unlock $7–10B in annualized China revenue not modeled in Street estimates. The July 6 US close is what matters — not the holiday gap carry.",
+      "trigger": "July 6 US close ABOVE $195 = Stop Day 1 isolated, hold into July 7 add check. July 6 US close AT OR BELOW $195 = Stop Day 2 = MANDATORY FULL EXIT at July 7 open, zero discretion, no averaging, no hope. July 7 add check at 9:25 AM ET: NVDA above $200 AND SPX futures >7,460 AND VIX pre-open <17 simultaneously — all three required. If one fails: hold half-size only through Q2 FY27 earnings August 26.",
+      "risk": "July 6 US close below $195 (any close at or below $195 = Stop Day 2 = mandatory full exit July 7 open); China H200 import licenses NOT issued before earnings (removes the primary re-rating catalyst for Q3); new negative semiconductor headline over July 4–5 weekend gap; SPX breaks below 7,460 on unexpected Monday catalyst; VIX spikes above 17 at July 6 open."
+    },
+    {
+      "ticker": "SK HYNIX",
+      "name": "SK Hynix",
+      "category": "ai-semis",
+      "lean": "hold",
+      "conviction": "medium",
+      "timeframe": "T-4 KRX sessions to July 10 ADR listing (SKHY, Nasdaq); next session July 6 KST",
+      "idea": "Stop Day 1 ISOLATED (July 3 KST close ₩2,552,000 +10.88%). Hold half-size into July 10 Nasdaq SKHY ADR listing ($29.4B). KRX does not trade weekends — next session is July 6 (9:00 AM KST = 00:00 UTC July 6). No new Apple/CXMT/YMTC announcements over the holiday weekend per current data. ADR listing T-4 KRX sessions remaining (July 6, 7, 8, 9 before July 10 listing). Full-size add still requires BOTH gates simultaneously: KOSPI >8,500 (currently 8,088.34, 5.1% below) AND SK Hynix >₩2,700,000 (currently 5.8% below). Stop reset: new Stop Day 1 would require a FUTURE KST close below ₩2,540,000. The ADR underwriter ceiling (₩2,723,000 July 3 intraday high) remains the practical upside ceiling until offering price is finalized. DO NOT average down below ₩2,540,000.",
+      "why": "The forced-short-covering reversal from ₩2,301,000 to ₩2,552,000 (+10.88%) in a single session confirms the ADR underwriter is actively managing the position into the July 10 listing. Apple/CXMT/YMTC story has not expanded to HBM4 — SK Hynix's structural thesis (dominant HBM4 supplier for NVDA Blackwell B300, $29.4B Nasdaq ADR listing, future MSCI inclusion) is unchanged. KOSPI recovery to 8,088 on July 3 (+5.76%) shows the Korean market macro stabilization is underway even if Gate 1 (>8,500) has not yet cleared. Holiday period (no KRX trading July 5–6 KST) means the July 6 KST open will be the first print in 72+ hours — gap risk exists in both directions but ADR underwriter bid is expected to limit downside near ₩2,552,000.",
+      "trigger": "July 6 KST open (9:00 AM KST): monitor first 30 minutes. If KOSPI opens above 8,500 AND SK Hynix opens above ₩2,700,000 simultaneously: full-size add on the July 6 KST close. If either gate not met: hold half-size, no action. New Stop Day 1 trigger: any KST close below ₩2,540,000 (reset stop protocol). ADR listing July 10: monitor SKHY opening price — should reflect ₩2,552,000 carry converted to USD at current KRW/USD rate.",
+      "risk": "Apple/CXMT/YMTC negotiations confirmed as done deal over July 4–5 weekend (risk: market re-prices mobile DRAM more severely on July 6 KST open); July 6 KST open below ₩2,540,000 = new Stop Day 1 triggered immediately; KOSPI fails to approach 8,500 (Gate 1 unreachable in T-4 sessions); ADR listing pricing below Gate 2 (₩2,700,000 equivalent) signals underwriter retreat."
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "category": "space",
+      "lean": "watch",
+      "conviction": "high",
+      "timeframe": "Day 9 volume check July 6; Nasdaq 100 inclusion Day 10 July 7; re-entry gate est. $185 July 9–11",
+      "idea": "Step aside HIGH conviction — DO NOT BUY. Day 9 (July 6) volume check is the primary clearance indicator: target below 20M in first hour (9:30–10:30 AM ET) and below 30M for the full Day 9 session. Day 9 was delayed one calendar day by the double holiday closure (July 3 abbreviated session + July 4 Saturday closure). Day 10 (July 7): ~$4.3B QQQ/QQQM passive inflows from Nasdaq 100 effective inclusion — DO NOT re-enter on the Day 10 inclusion spike. IG floor buffer improved: ~$12 margin above $150 IG floor (vs. $6.46 on July 2 AH), reducing Korea-contagion tail risk materially. Reference carry ~$162 (pre-market indication, not official close). Re-entry gate: volume below 5M/day for 2–3 consecutive sessions (est. Day 11–12, July 8–9) THEN two consecutive closes above $185.",
+      "why": "Korea-contagion risk that was the primary July 3 tail risk (KOSPI -10.88% creating IG floor pressure) has substantially resolved: KOSPI +5.76% July 3, IG buffer now ~$12. July 6 US open should start in the $157–$162 range without Korea-shock overhang. Bond distribution mechanics: Day 9 is critical because the QQQ/QQQM inclusion demand (Day 10) can mask true distribution volume if distribution sellers front-run the passive inflows — this is why Day 9 volume (before inclusion day) is the cleaner signal. The Russell 1000 June 26 template remains the base case: Day 4 inclusion spike to $158.40 intraday, $152.15 close, fully absorbed with no secondary distribution wave.",
+      "trigger": "Day 9 (July 6 9:30 AM ET): first-hour volume target <20M; full-day target <30M. If Day 9 clears: Day 10 (July 7) = watch only, DO NOT enter on inclusion spike. Day 11+ (July 8+): monitor daily volume; clearance = below 5M/day for 2–3 sessions. Post-clearance re-entry gate: two consecutive closes above $185. Alert: if SPCX gaps below $154 at July 6 open (IG buffer narrows to <$4), heightened monitoring required — framework reassessment if $150 is tested.",
+      "risk": "Day 9 (July 6) volume above 40M on negative news (Starship incident, SpaceX regulatory item, or broad risk-off); $150 IG floor tested on July 6 open due to residual contagion or new negative catalyst; Day 10 (July 7) inclusion demand absorbed intraday, closing below July 6 close, extending distribution; bond distribution second wave post-clearance delays re-entry gate past July 14."
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "category": "big-tech",
+      "lean": "buy",
+      "conviction": "medium",
+      "timeframe": "2–4 weeks (through Q2 2026 earnings late July); add session July 7",
+      "idea": "GOOGL position from July 2 open entry held through the holiday gap. July 6 = hold session (US is open but expect light holiday-hangover volume). July 7 = add session: add GOOGL on any dip to $350–$355 at 9:25 AM ET July 7. Dow rebalancing systematic demand from 44+ Dow-tracking ETFs remains active (Dow inclusion effective June 30; rebalancing spans 5–7 sessions, with July 7 being approximately Day 5 of demand flows). VIX 15.78 and SPX 7,483 confirm the macro backdrop for continued post-holiday institutional demand. Goldilocks NFP (119K) + US BUY regime = ideal ad market backdrop through Q2 2026 earnings late July.",
+      "why": "GOOGL's Dow inclusion creates price-weighting rebalancing demand (~7x Verizon's prior weighting) — any dip between sessions is systematically purchased by Dow-tracking ETFs. Korea shock has zero direct impact on GOOGL. Q2 2026 earnings (late July) is the first full quarter reflecting AI Search monetization at scale and Dow inclusion flows. Holiday hangover volume on July 6 may create a below-market-hours dip that reverses on July 7 institutional return. Stop: $339 (below June 30 low). Target: $380–$390 pre-Q2 earnings.",
+      "trigger": "July 6: hold, no action. July 7 open at 9:25 AM ET: add GOOGL at any dip to $350–$355. If GOOGL opens above $360 and no dip materializes in first hour: do not chase, wait for natural pullback within 1–2 weeks. Stop: $339. Target: $380–$390.",
+      "risk": "DOJ antitrust search remedies (user choice screen) materially reduce Search revenue before Q2 earnings; AI Mode Search cannibalizes ad clicks faster than AI ad placement compensates; SPX breaks below 7,460 on unexpected July 6 catalyst; GOOGL Q2 earnings miss on Cloud AI revenue."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "category": "big-tech",
+      "lean": "buy",
+      "conviction": "medium",
+      "timeframe": "2–4 weeks (through Q2 2026 earnings late July); add session July 7",
+      "idea": "META position from July 2 open entry held through the holiday gap. July 6 = hold session. July 7 = add on any weakness. META's AI ad targeting improvements compound across 3.3B daily active users with zero semiconductor supply chain exposure to any geopolitical risk identified in this framework. VIX 15.78 and Goldilocks NFP confirm the US consumer spending backdrop for sustained ad revenue. Q2 2026 earnings (late July) is the first full AI-feature quarter at scale — setup for 'beat and raise.' FCF $60B+ annual makes META the most rate-resistant large-cap AI name in the Warsh hawkish hold environment.",
+      "why": "META has NO exposure to Korean memory, NO semiconductor supply chain complexity, NO meaningful geopolitical trade risk, and NO dependency on H200 China policy outcomes. Every macro risk identified in this framework (Korea shock, NVDA stop, BTC gates) is zero-impact on META's revenue model. Q2 2026 is the first full quarter of AI-at-scale monetization — Llama 4 open-source flywheel and AI Ads targeting at 3.3B user scale. Holiday hangover on July 6 may create a below-fair-value dip that reverses at July 7 institutional return.",
+      "trigger": "July 6: hold, no action. July 7 open: add META on any weakness. Stop: prior week low. Target: new ATH before Q2 earnings.",
+      "risk": "EU AI Act creates unexpectedly large discriminatory compliance costs; Apple iOS ATT 3.0 restricts cross-app targeting further; Q2 earnings miss on ad revenue; SPX breaks below 7,460 on unexpected Monday catalyst."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "category": "ai-semis",
+      "lean": "buy",
+      "conviction": "medium",
+      "timeframe": "3–4 months (through Q4 FY26 earnings September 2026); entry at July 6 open on Korea-sympathetic dip",
+      "idea": "Buy MU at $1,150–$1,200 at July 6 open or intraday on any Korea-sympathetic dip. Apple/CXMT/YMTC mobile DRAM story is a MICRON POSITIVE: mobile DRAM share shifting to CXMT (Pentagon 1260H blacklisted) amplifies US government AI procurement mandate for Micron's Idaho HBM4 — DoD cannot use CXMT. $50B Q4 FY26 guide confirmed; HBM4 sold out through 2026. July 6 US open is the first post-holiday session and may produce a sympathetic dip if Korean semiconductor sector contagion lingers before KOSPI's July 3 recovery is fully priced by US investors. MU has NO stop protocol, NO gate conditions, NO ADR mechanics — cleanest entry setup of any AI semi.",
+      "why": "KOSPI +5.76% July 3 (SK Hynix +10.88%) has not yet been fully processed by US equity markets due to the holiday closure. When US markets open July 6, the Korean recovery news should be neutral-to-positive for MU's Korea-sympathetic price correlation. Any brief dip below $1,200 in the first 30 minutes of July 6 trading is a gift entry for the structural HBM4/DoD thesis. MU's Idaho CHIPS Act fab is DoD-compliant by jurisdiction of manufacture — CXMT blacklist amplification makes this MORE valuable, not less. $50B Q4 FY26 guide is confirmed and not modeled to decelerate.",
+      "trigger": "July 6 open: buy MU at $1,150–$1,200 on any Korea-sympathetic dip in first 30–60 minutes of trading. If MU opens above $1,200 and no dip materializes in first hour: wait for natural pullback within 1–2 weeks. Do not chase above $1,250. Stop: $1,100. Target: $1,350–$1,400 through September Q4 FY26 earnings.",
+      "risk": "HBM demand peaks H1 2027 earlier than expected; Samsung aggressive HBM4 pricing to defend NVIDIA share; MU Q4 FY26 guide miss at September earnings; Korea semiconductor contagion extends to US DRAM on new HBM4-specific negative headline; MU opens above $1,250 on gap-up (no dip entry available)."
+    }
+  ]
+}

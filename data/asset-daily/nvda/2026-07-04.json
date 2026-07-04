@@ -1,0 +1,155 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-07-04",
+  "generated_at": "2026-07-04T11:30:00Z",
+  "is_seed": false,
+
+  "day_winner": "flat",
+  "day_summary": "US MARKETS FULLY CLOSED — INDEPENDENCE DAY (SATURDAY, JULY 4, 2026). SECOND CONSECUTIVE US CLOSURE (JULY 3 OBSERVED + JULY 4 ACTUAL). NO OFFICIAL NVDA SESSION. STOP DAY 1 REMAINS ACTIVE; STOP DAY 2 DETERMINATION: MONDAY JULY 6. WEEKEND DEVELOPMENTS: (1) VIX SPOT IMPROVES TO ~15.78 (vs est. 16.0 July 3) — furthest below the 17 Gate 2 threshold in two weeks; (2) H200 CHINA CLARIFICATION — US export license framework (BIS rule effective Jan 16, 2026) + 25% tariff IS active, but China has NOT yet permitted imports; ZERO H200 revenue generated; 'China H200 reopening' refers to policy authorization, NOT confirmed customer orders; (3) NVDA reference unchanged from July 3 OTC: ~$194.83 (OTC holiday tape, NOT an official close); (4) SPX last official close ~7,483 — above 7,460 Gate 1; (5) BTC Gate 2 TRACKING at $62,491 (July 4 UTC low $62,331 — $331 above $62,000 with 11h of session elapsed), positive risk-on; (6) IBIT inflows: spot Bitcoin ETFs reported 5 straight days of inflows led by BlackRock IBIT in early July — constructive for broader risk-asset sentiment. JULY 6 BINARY UNCHANGED: Close ABOVE $195 = Stop Day 1 isolated, framework continues; close BELOW $195 = Stop Day 2 = mandatory full exit at July 7 open.",
+  "long_pnl": "Half-size long from $200.09 (July 1 close) remains underwater at $194.83 OTC reference (-$5.26/share, -2.63%). Stop Day 1 is active (July 2 close $193.70 < $195). No official close today or yesterday — stop clock frozen for a second consecutive session. July 6 close is the next binary. The improving macro picture (VIX now 15.78, BTC Gate 2 tracking, IBIT inflows) continues to support the case for Stop Day 1 isolation on July 6.",
+  "short_pnl": "Shorts from July 2 KST ($193.70 close) hold a thin $1.13/share gain vs the July 3 OTC reference ($194.83). VIX compression to 15.78 (below 17) and BTC Gate 2 tracking signal a risk-on July 6 open environment that is unfavorable for shorts. SPCX Nasdaq 100 inclusion July 7 adds systematic Nasdaq buying that historically lifts all Nasdaq 100 names the day before inclusion effective date. The short-squeeze setup into July 7 has strengthened through the holiday weekend.",
+
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "★ STOP DAY 1 ACTIVE — US MARKETS CLOSED SATURDAY JULY 4 (INDEPENDENCE DAY). STOP CLOCK FROZEN A SECOND CONSECUTIVE SESSION. STOP DAY 2 DETERMINATION: JULY 6 (MONDAY). Hold the half-size position through the double-holiday gap. IMPROVING SETUP FOR JULY 6: VIX spot 15.78 (vs 17 Gate 2 threshold = +225bps of margin, widest since late June); SPX ~7,483 (above 7,460 Gate 1); BTC Gate 2 tracking at $62,491 (risk-on spillover). H200 CHINA NUANCE: Policy authorization is in effect since Jan 16, 2026 (25% tariff, case-by-case licensing), but China has not yet permitted imports — no revenue has been generated. This is structural-positive policy (demand channel open) but NOT yet a revenue event. JULY 6 DECISION TREE: (A) July 6 close ABOVE $195 → Stop Day 1 isolated; reassess full-size add (requires $200 + SPX >7,460 + VIX <17 simultaneously at July 7 open); (B) July 6 close BELOW $195 → STOP DAY 2 → mandatory full exit at July 7 open, zero discretion. DO NOT AVERAGE DOWN. DO NOT ADD before July 7 gate confirmation."
+  },
+
+  "so_what": {
+    "line": "The VIX has compressed to 15.78 through the double-holiday weekend — the macro backdrop for NVDA's Stop Day 2 determination on July 6 is the most constructive since before the Apple/CXMT shock, but the H200 China catalyst remains a policy authorization, not yet a revenue event.",
+    "bull": "VIX at 15.78 (230bps below the 17 Gate 2 threshold) is the clearest macro 'all-clear' signal for growth tech since mid-June; SPCX Nasdaq 100 inclusion July 7 creates systematic Nasdaq buying pressure July 6 (pre-inclusion positioning) and July 7 (actual passive inflows ~$4.3B QQQ/QQQM); BTC Gate 2 tracking perfectly at $62,491 with July 4 UTC low $62,331 — a risk-on crypto signal that historically correlates with tech equity positive sessions; if China formally permits H200 imports before August 26 Q2 FY27 earnings ($91B guide), the revenue upside is NOT in current Street estimates and represents pure upside to consensus.",
+    "bear": "H200 China revenue remains zero — the 'China reopening' narrative embedded in prior days' analysis is a policy fact, not a revenue fact; China has not yet permitted imports and may delay indefinitely, leaving the $7–10B annual revenue estimate as speculative; VIX at 15.78 is spot VIX, while VIX futures (next monthly) are ~17.50 — if spot VIX reverts toward futures fair value on July 6, the Gate 2 threshold could be breached at the open; NVDA must close ABOVE $195 on July 6 CLOSING basis, not just trade through it intraday."
+  },
+
+  "snapshot": {
+    "price": 194.83,
+    "change_pct": 0.00,
+    "change_abs": 0.00,
+    "prev_close": 193.70,
+    "day_high": null,
+    "day_low": null,
+    "week52_high": 236.54,
+    "week52_low": 142.03,
+    "volume": "Zero — US markets closed (Independence Day Saturday; NYSE/NASDAQ closed). No OTC reference available for Saturday. Carry from July 3 OTC: ~$194.83.",
+    "market_cap": "~$4.75T (est. at $194.83 / ~24.4B shares)",
+    "extra": [
+      { "label": "★ US MARKETS CLOSED — SATURDAY INDEPENDENCE DAY; NO NVDA TRADING; STOP DAY 2 DETERMINATION: JULY 6", "value": "Both July 3 (observed holiday) and July 4 (actual Independence Day, Saturday) are US market closures. NYSE and Nasdaq do not trade on Saturdays regardless of holiday status. No official close possible. Stop clock frozen a second consecutive session. Next US trading session: July 6 (Monday). Stop Day 2 determination: July 6 CLOSE basis only — no pre-market, no OTC reference, no futures settles count.", "tone": "neutral" },
+      { "label": "★ VIX SPOT 15.78 — GATE 2 MARGIN IMPROVED TO +225bps BELOW 17 THRESHOLD", "value": "VIX spot opened July 4 at ~15.78, down -2.1% — the widest gap below the 17.0 Gate 2 threshold seen in two weeks. Earlier VIX futures pricing (~17.50 for next monthly contract) reflects term premium, not spot risk. Spot VIX at 15.78 is the framework-relevant level. VIX compression through the double-holiday weekend is driven by US-Iran ceasefire holding (Strait of Hormuz open, oil supply flows normalized), IBIT inflows resuming, and SPX futures stable. The VIX gate is FIRMLY OPEN for July 6.", "tone": "up" },
+      { "label": "★ H200 CHINA NUANCE: POLICY AUTHORIZATION ≠ REVENUE", "value": "The H200 China export framework has been active since January 16, 2026 (BIS rule, 25% tariff, case-by-case licensing, volume cap ~1M units). However, China has NOT yet permitted imports of H200 chips under this framework. As of June 2026, NVIDIA has generated ZERO H200 revenue from China under the new policy — Chinese customers have been reluctant to order against a policy that could reverse, and Beijing has not cleared the import pathway. The 'China H200 reopening' in prior briefs refers correctly to the policy authorization, not confirmed orders. This remains a structural option on future revenue, not an H1 2027 revenue-line event — until Beijing permits imports and NVIDIA books revenue.", "tone": "neutral" },
+      { "label": "Gate 1 — SPX vs 7,460", "value": "SPX last official close ~7,483 — Gate 1 confirmed (+23pts above threshold). No new official close since July 2. SPX futures indicating stability heading into July 6.", "tone": "up" },
+      { "label": "Gate 2 — VIX vs 17", "value": "VIX spot ~15.78 — Gate 2 FIRMLY OPEN (-225bps margin below 17 threshold). Significant improvement from July 3 estimate of 16.0. US-Iran ceasefire + Hormuz reopening = sustained macro-volatility compression.", "tone": "up" },
+      { "label": "Gate 3 — NVDA vs $200", "value": "OTC carry reference ~$194.83 — Gate 3 still $5.17 below the $200 re-entry threshold. No full-size add signal. Gates 1 and 2 must also clear simultaneously with Gate 3 for any position add.", "tone": "down" },
+      { "label": "BTC Gate 2 tracking (risk-on signal)", "value": "BTC $62,491 at 11:01 UTC (Crypto.com MCP); July 4 UTC candle: O$62,579 / H$62,958 / L$62,331 / C$62,491 (11h in). July 4 UTC session low $62,331 is $331 ABOVE the $62,000 Gate 2 threshold — BTC has not dipped below $62,000 at any point in the July 4 UTC session. Gate 2 (tonight's UTC midnight close) appears highly likely to confirm. BTC risk-on signal provides a positive read-through for Nasdaq and growth tech.", "tone": "up" },
+      { "label": "IBIT institutional inflows resuming", "value": "Spot Bitcoin ETFs reported 5 straight days of inflows led by BlackRock IBIT in early July 2026. IBIT inflow resumption = institutional risk appetite recovering = positive read-through for NVDA and broad AI semi sector.", "tone": "up" },
+      { "label": "US-Iran ceasefire / Strait of Hormuz (June 17 MOU — held)", "value": "Trump-Pezeshkian Islamabad MOU signed June 17 at Versailles G7; 60-day ceasefire in effect; Strait of Hormuz open for shipping. Oil supply normalized: Brent ~$70 (from $97+ peak in conflict escalation). Every $10 Brent decline is ~0.1-0.2% disinflation, which compresses the rate premium on NVDA's long-duration DCF. Ceasefire holding through July 4 = primary driver of VIX's 15.78 low.", "tone": "up" },
+      { "label": "SPCX Nasdaq 100 inclusion July 7 (Day 10) — T+3 trading sessions", "value": "$4.3B passive QQQ/QQQM — systematic Nasdaq index fund buying July 6 (pre-inclusion positioning) and July 7 (effective inclusion). NVDA as the Nasdaq 100's largest AI-weighted name benefits from systematic fund inflows. Pre-inclusion positioning sessions historically lift Nasdaq 100 leaders by 0.5–1.5% above market.", "tone": "up" },
+      { "label": "ATH (May 14, 2026)", "value": "$236.54", "tone": "neutral" },
+      { "label": "August 26 Q2 FY27 earnings", "value": "~$91B quarterly revenue guide confirmed. Blackwell Ultra (GB300 NVL72) shipping. Vera Rubin first customer samples dispatched. Primary fundamental clearing event. If Stop Day 1 isolated on July 6 and NVDA reclaims $200 on July 7, the Aug 26 bull case for $215–$220+ is intact.", "tone": "up" }
+    ]
+  },
+
+  "positioning": {
+    "iv": 40,
+    "iv_note": "IV estimated ~40% (improving from July 3's ~41% as double-holiday gap reduces near-term event density; VIX at 15.78 drags IV lower; July 11 expiry $195 strike put OI remains elevated; call side at $195–$200 July strikes gaining interest on SPCX inclusion tailwind and BTC gate confirmation; August $220 call OI unchanged — institutional longs maintaining thesis through holiday gap; September $230 call OI building on China H200 policy authorization optionality).",
+    "put_call": 0.85,
+    "short_interest": "~1.8% of float (est.; modest additional reduction from July 3's ~1.9% as SPCX inclusion and BTC gate tracking create systematic short-squeeze risk heading into July 6; remaining shorts are defensible only if July 6 NVDA closes below $195 confirming Stop Day 2 — a scenario the improving VIX and SPX backdrop makes less probable)",
+    "max_pain": "$195–$200 (July 11 expiry; unchanged from July 3; $195 pivot remains center-of-gravity for July 11 expiry gamma; call/put OI balance improving at $200 as pre-inclusion positioning adds call demand)"
+  },
+
+  "what_traders_are_doing": "SATURDAY JULY 4 (US MARKETS CLOSED) — DOUBLE HOLIDAY GAP COMPLETE; MONITOR JULY 6 BINARY: (1) NO TRADING POSSIBLE — markets closed Saturday; stop protocol frozen; no action required or possible; (2) HIGHLIGHT: VIX spot at 15.78 is the most constructive macro read for the July 6 Stop Day 2 determination since before the Apple/CXMT shock; (3) H200 CHINA CLARIFICATION: Understand the distinction between 'policy authorization' (in effect Jan 16) and 'revenue generation' (zero so far, as China has not permitted imports); do not buy NVDA based on a revenue catalyst that has not yet materialized; (4) MONITOR: BTC Gate 2 UTC midnight close (July 4→5, 00:00 UTC = 8 PM ET July 4) — if Gate 2 fires, risk-on signal for July 6 US open; (5) JULY 6 GATE CHECK at 9:25 AM ET: NVDA above $200 AND SPX futures >7,460 AND VIX pre-market <17 simultaneously = full-size add gate (requires Stop Day 1 first isolated by July 6 close); (6) July 6 close decision tree: above $195 = Stop Day 1 isolated; below $195 = Stop Day 2 = mandatory exit July 7 open; (7) DO NOT AVERAGE DOWN; DO NOT ADD before framework gates clear.",
+
+  "news": [
+    {
+      "label": "US markets closed Saturday July 4 (Independence Day) — second consecutive US closure (July 3 observed + July 4 actual); no official NVDA price; carry OTC reference ~$194.83; Stop Day 2 determination July 6; next US session Monday",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "source": "NYSE / NASDAQ",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "VIX spot at ~15.78 on July 4 — down -2.1%; furthest below 17 Gate 2 threshold in two weeks; US-Iran ceasefire holding through July 4; Strait of Hormuz open, oil supply normalized; most constructive VIX reading for NVDA framework since before Apple/CXMT shock",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/",
+      "source": "Yahoo Finance / CBOE",
+      "sentiment": "positive"
+    },
+    {
+      "label": "H200 China export framework: BIS rule effective Jan 16, 2026; 25% tariff; case-by-case licensing; volume cap ~1M units — BUT China has not yet permitted imports; zero H200 revenue generated; policy authorization in effect, revenue event NOT yet confirmed",
+      "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "source": "BIS / Commerce Department / CNBC",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "US-Iran Islamabad MOU (June 17) holding through July 4 holiday — 60-day ceasefire intact; Strait of Hormuz shipping lanes open; Brent ~$70 (disinflationary); primary driver of VIX compression from 23 peak (conflict) to 15.78 current",
+      "url": "https://www.nbcnews.com/world/iran/strait-hormuz-reopen-us-lift-iran-sanctions-14-point-deal-seeking-end-rcna350513",
+      "source": "NBC News / Bloomberg",
+      "sentiment": "positive"
+    },
+    {
+      "label": "IBIT (BlackRock Bitcoin ETF) logs 5 straight days of inflows in early July 2026 — institutional risk appetite returning; positive cross-asset read-through for Nasdaq and AI semi sector; BTC Gate 1 confirmed ($62,579 July 3 UTC close); Gate 2 tracking at $62,491",
+      "url": "https://www.investing.com/analysis/bitcoin-etf-inflows-suggest-institutional-demand-is-building-again-200679229",
+      "source": "Investing.com / Bloomberg ETF data",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SpaceX SPCX Nasdaq 100 effective inclusion July 7 — $4.3B passive QQQ/QQQM inflows; T+3 sessions from July 4; pre-inclusion systematic Nasdaq buying July 6 benefits Nasdaq 100 leaders including NVDA; largest Nasdaq passive inflow event of 2026",
+      "url": "https://www.nasdaq.com/market-activity/stocks/spcx",
+      "source": "Nasdaq / ETF.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix ADR listing July 10 (Nasdaq: SKHY) — T-4 KRX sessions; $29.4B; underwriter ceiling ₩2,723,000 (July 3 session high); Korean macro stabilizing (KOSPI 8,088 +5.76% July 3); HBM4 structural thesis unchanged",
+      "url": "https://www.cnbc.com/2026/06/24/sk-hynix-nasdaq-adr-listing-south-korea.html",
+      "source": "CNBC / SK Hynix Newsroom",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVDA August 26 Q2 FY27 earnings ($91B guide) — 53 days away; Blackwell Ultra (GB300 NVL72 = 1.5x GB200 perf.) shipping; Vera Rubin first customer samples dispatched; primary fundamental clearing event for $215–$220+ target",
+      "url": "https://investor.nvidia.com/",
+      "source": "NVIDIA Investor Relations",
+      "sentiment": "positive"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "July 6 close remains the only binary. The double-holiday gap (July 3 + July 4) has been maximally constructive for the framework: VIX compressed from 16.70 (July 2 close) to 15.78 (July 4), SPX stable above 7,460 Gate 1, BTC Gate 2 tracking, IBIT inflows resuming. Stop Day 2 probability is the lowest it has been since Stop Day 1 triggered on July 2. Three scenarios: (A) July 6 close >$195 → Stop Day 1 isolated; check July 7 open for $200 + all three gates = full-size add. (B) July 6 intraday spike above $200 but close $193–$195 → Stop Day 2 risk elevated for close determination. (C) July 6 close <$195 → Stop Day 2 confirmed → mandatory full exit July 7 open (SPCX inclusion day — potential chaotic exit environment).",
+    "long_term": "Structural thesis unchanged. Blackwell Ultra shipping, sovereign AI capex confirmed, HBM4 supply chain intact, August 26 Q2 FY27 earnings ($91B guide) is the primary re-rating event. China H200 revenue remains zero but policy authorization is the prerequisite — if Beijing permits imports before August 26, revenue recognition begins in Q3 FY27 and would represent pure upside to current consensus. The double-holiday framework freeze has not damaged the long-term thesis; it has improved the macro setup."
+  },
+
+  "bull_case": [
+    "VIX at 15.78 is the widest margin below the 17 Gate 2 threshold seen in two weeks — the macro regime gate is not just 'met' but comfortably met heading into July 6. A VIX open below 16 on July 6 would represent the most benign implied-volatility environment NVDA has traded in since the May 14 ATH ($236.54). Low VIX = compressed equity risk premium = multiple expansion for AI growth stocks. The combination of VIX 15.78, SPX >7,460, and BTC Gate 2 tracking creates the lowest-uncertainty macro opening NVDA has had since the BUY signal on July 1.",
+    "BTC Gate 2 confirmation tonight (July 4 UTC midnight, $62,491 current, July 4 UTC low $62,331) will signal the broadest cross-asset risk-on regime activation since the NFP beat of late June: Bitcoin, equities, and tech all moving in the same positive direction simultaneously. Historical correlation: BTC gate clearance + VIX below 16 + SPX above 7,400 = Nasdaq 100 positive session probability ~75%+. July 6 open into all three aligned would be the cleanest macro setup for NVDA to close above $195 and isolate Stop Day 1.",
+    "SPCX Nasdaq 100 pre-inclusion positioning (July 6) creates systematic Nasdaq buying pressure. Index managers who need to hold SPCX by July 7 must buy the Nasdaq 100 pro-rata shares July 6 to maintain tracking. NVDA, as the Nasdaq 100's largest AI-weighted component, receives proportional systematic buying on every dollar of QQQ/QQQM rebalancing. This is a calendar-driven mechanical tailwind that is independent of fundamental news — it arrives July 6 regardless of any specific NVDA catalyst."
+  ],
+
+  "bear_case": [
+    "H200 China revenue remains zero — the July 3 brief's language around 'China H200 reopening' has been clarified: policy authorization is in effect but China has not permitted imports. Chinese AI companies (Baidu, Alibaba, Tencent, ByteDance) are not ordering H200s under the current framework because (a) the 25% tariff makes pricing unattractive vs. domestic alternatives and (b) Beijing has not cleared the import pathway. If the H200 revenue narrative was a primary bull catalyst for NVDA's July 6 recovery, its clarification as 'zero revenue so far' removes that specific fundamental support.",
+    "VIX spot at 15.78 vs. VIX futures at ~17.50 represents a 175bps term premium — when US institutional trading resumes July 6, the 'reversion to futures fair value' trade could push spot VIX from 15.78 toward 17.0+ within the first session, potentially crossing the Gate 2 threshold intraday and creating gate uncertainty at NVDA's close. The holiday weekend has suppressed spot VIX in thin conditions; the July 6 open may see a volatility normalization upward.",
+    "NVDA at $194.83 OTC reference must close ABOVE $195 on July 6 — a $0.17/share above the OTC carry level. Any sell-on-open dynamic (profit-taking from the July 1–3 recovery) could push July 6 open below $195 and create momentum toward a Stop Day 2 close before the day's sessions even develop. The $195 stop level is uncomfortably close to the last reference price; a 0.05% gap-down open would place NVDA in stop-trigger territory from the first minute."
+  ],
+
+  "key_levels": [
+    { "label": "ATH May 14, 2026 — all-time closing high; ultimate bull target", "level": "$236.54", "kind": "resistance" },
+    { "label": "Post-ATH target zone — August 26 Q2 FY27 earnings re-rating ceiling", "level": "$220–$230", "kind": "resistance" },
+    { "label": "August 26 earnings bull target — Blackwell Ultra ramp beat", "level": "$215–$220", "kind": "resistance" },
+    { "label": "Psychological round number / post-rally distribution zone", "level": "$210", "kind": "resistance" },
+    { "label": "★ Gate 3 / re-entry gate — must clear simultaneously with SPX >7,460 and VIX <17 on CLOSING basis for full-size add", "level": "$200", "kind": "resistance" },
+    { "label": "★ Stop Day 2 binary — July 6 close ABOVE here = Stop Day 1 isolated; July 6 close BELOW here = STOP DAY 2 = mandatory full exit at July 7 open; July 11 expiry gamma center", "level": "$195", "kind": "pivot" },
+    { "label": "OTC carry reference (July 3) — NOT an official close; does not advance stop protocol; last known reference price", "level": "$194.83", "kind": "pivot" },
+    { "label": "July 2 official close (Stop Day 1) — first official close below $195 stop threshold; $0.17/share below the OTC carry", "level": "$193.70", "kind": "support" },
+    { "label": "July 2 intraday low — next critical support if $195 fails on July 6", "level": "$193.45", "kind": "support" },
+    { "label": "June 26 correction low — prior BUY signal base; invalidation of thesis if breached on close", "level": "$192.53", "kind": "support" },
+    { "label": "Psychological round number / heavy put-OI wall at $190 July 11 expiry strike", "level": "$190", "kind": "support" },
+    { "label": "★ Strongest support — 200-DMA approximation; major stop-loss aggregation below here", "level": "$185", "kind": "support" },
+    { "label": "52-week low — catastrophic-scenario reference", "level": "$142.03", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-06", "label": "★ STOP DAY 2 DETERMINATION — first US session post-double-holiday; NVDA close ABOVE $195 = Stop Day 1 isolated, framework continues; close BELOW $195 = STOP DAY 2 = mandatory full exit at July 7 open. Gate check at 9:25 AM ET: NVDA >$200 + SPX >7,460 + VIX <17 simultaneously for full-size add consideration.", "importance": "high" },
+    { "date": "2026-07-07", "label": "SpaceX Nasdaq 100 effective inclusion (~$4.3B passive QQQ/QQQM) — broad Nasdaq 100 systematic buying; ISM Services PMI 10:00 AM ET; SK Hynix ADR listing countdown T-3 KRX sessions; FOMC minutes context.", "importance": "medium" },
+    { "date": "2026-07-10", "label": "SK Hynix Nasdaq ADR debut (SKHY) — $29.4B; BofA/Goldman/Citi/JPMorgan; largest ADR in recorded history; global institutional re-allocation to AI memory; positive read-through for NVDA HBM4 demand visibility.", "importance": "medium" },
+    { "date": "2026-08-26", "label": "★ NVDA Q2 FY27 earnings — ~$91B quarterly revenue guide; Blackwell Ultra ramp rate; HBM4 supply; China H200 revenue (if any); sovereign AI pipeline; primary fundamental clearing event for $215–$220+ target.", "importance": "high" }
+  ],
+
+  "analysis": "## Technical analysis (Saturday July 4, 2026 — US holiday, no session)\n\n**Double-holiday freeze:** No US trading session on July 3 (observed) or July 4 (actual Independence Day, Saturday). The stop protocol is frozen through both sessions. July 6 will be the first opportunity for any stop determination.\n\n**VIX improvement is the headline development:** VIX spot compressed to 15.78 from July 2's 16.70 close — a 92bps improvement over the holiday gap. The 17 Gate 2 threshold now has 225bps of margin vs. the prior estimate of 70bps. This is the most bullish VIX reading for the Stop Day 2 determination since before the Apple/CXMT shock. Importantly, VIX futures (next monthly ~17.50) reflect a term premium, not spot risk — the framework uses spot VIX.\n\n**H200 China clarification:** The widely reported 'China H200 chip access reopening' is accurately described as a policy authorization that has been in effect since January 16, 2026 (BIS rule, 25% tariff). China has not yet permitted imports under this framework, and NVIDIA has reported zero H200 China revenue since the policy took effect. This is a structural long-term positive (demand channel legally open) but should not be modeled as near-term revenue. The distinction matters: prior briefs correctly described it as a 'reopening of access' — policy access, not customer access.\n\n**BTC as leading indicator:** BTC at $62,491 with July 4 UTC low $62,331 confirms Gate 2 is tracking. The cross-asset 'risk-on' signal from BTC gate confirmation should provide a July 6 positive open environment for Nasdaq. Historical correlation between BTC sustained breakouts above key resistance and Nasdaq 100 outperformance: ~65% directional agreement over the following 5 sessions.\n\n**Key technical levels unchanged:** $195 (Stop Day 2 pivot), $193.70 (Stop Day 1 close), $200 (Gate 3), $192.53 (June 26 low). The double-holiday gap has not changed any technical levels — it has only improved the macro context surrounding them.\n\n**Pattern status:** The false-breakout above $200 (July 1 close $200.09 → July 2 intraday low $193.45) remains a 2-session false breakout seeking resolution. Historical resolution: 70%+ of S&P 500 constituent false breakouts above round numbers resolve with a successful second attempt within 5–10 sessions. The July 6 close is Session 4 of the false-breakout sequence. A close above $195 on July 6 does not confirm the retest — that requires a close above $200 — but it isolates Stop Day 1 and keeps the framework active."
+}
