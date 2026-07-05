@@ -1,0 +1,189 @@
+{
+  "asset": "spcx",
+  "symbol": "SPCX",
+  "name": "SpaceX",
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T11:30:00Z",
+  "is_seed": false,
+  "currency_symbol": "$",
+  "day_winner": "flat",
+  "day_summary": "US MARKETS CLOSED — SUNDAY JULY 5, 2026. THIRD CONSECUTIVE US CLOSURE (JULY 3 ABBREVIATED SESSION + JULY 4 SATURDAY + JULY 5 SUNDAY). BOND DISTRIBUTION DAY 9 DELAYED A SECOND ADDITIONAL SESSION — RESUMES MONDAY JULY 6. STEP ASIDE HIGH CONVICTION UNCHANGED. REFERENCE: ~$162.00 (PRE-MARKET INDICATION; NOT OFFICIAL CLOSE). COUNTDOWN: NASDAQ 100 EFFECTIVE INCLUSION JULY 7 (DAY 10, ~$4.3B PASSIVE) = T+1 TRADING SESSION FROM MONDAY. NIGHT DEVELOPMENTS: (1) ★ BTC GATE 2 CONFIRMED ✓ — BTC $62,782 AT 11:01 UTC JULY 5 (CRYPTO.COM MCP); GLOBAL RISK-ON SIGNAL; (2) NVDA OTC $197.16 (ABOVE $195 STOP THRESHOLD) — MOST CONSTRUCTIVE US CHIP SECTOR READ SINCE BEFORE STOP DAY 1; (3) VIX ~15.78 — LOWER VIX ON INCLUSION DAY (JULY 7) = MORE CONSTRUCTIVE INCLUSION SPIKE THAN RUSSELL 1000 JUNE 26 TEMPLATE (VIX ~18); (4) NO SPCX-SPECIFIC NEWS — NO STARSHIP INCIDENTS, NO REGULATORY ITEMS, NO STARLINK DISRUPTIONS; FUNDAMENTAL THESIS INTACT; (5) 62% PROBABILITY UPWARD SPX OPEN JULY 6 (PREDICTION MARKETS) — IMPROVES DAY 9 VOLUME ENVIRONMENT (FEWER SELLERS INTO A RISING MARKET). IG FLOOR $150: $162 REFERENCE = $12 BUFFER (UNCHANGED). DO NOT RE-ENTER ON JULY 7 INCLUSION SPIKE. RE-ENTRY GATE: $185 (EST. ACTIVATION JULY 9–11).",
+
+  "long_pnl": "Zero position (step aside). IPO allocants from $135 sit at $162.00 reference (+20.0% from IPO vs. +26.6% at Day 7 close $170.86). Step-aside discipline has avoided the distribution drawdown. The triple-holiday closure (July 3 abbreviated + July 4 Saturday + July 5 Sunday) has preserved zero capital at risk through the most uncertain 3-session window of the distribution cycle. Re-entry gate $185 is $23.00 (12.7%) above $162.00 reference.",
+  "short_pnl": "Bears from June 22 IPO-day close ($165.78) hold $3.78/share gain vs $162.00 reference (-2.3%). Day 7 spike shorts ($170–$173) strongly profitable. Nasdaq 100 inclusion July 7 (Day 10, ~$4.3B passive) is the primary short-squeeze risk T+1 session away. VIX at 15.78 (vs. ~18 on Russell 1000 June 26 inclusion day) increases probability of a stronger-than-template inclusion spike. Shorts must decide before Monday open whether to hold through $4.3B inclusion event in a lower-VIX, BTC-risk-on, NVDA-positive environment.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "high",
+    "horizon": "STEP ASIDE HIGH CONVICTION — UNCHANGED. Triple-holiday closure (July 3 abbreviated + July 4 Saturday + July 5 Sunday) has extended Day 9 bond distribution by two additional sessions from the July 2 brief's forecast. Day 9 RESUMES Monday July 6; Day 10 = July 7 (Nasdaq 100 effective inclusion, ~$4.3B passive QQQ/QQQM). Re-entry gate: TWO consecutive closes above $185 AFTER confirmed volume normalization below 5M shares/day for 2–3 sessions. $162.00 reference is $23.00 (−12.7%) below gate. IG floor $150 intact — $162.00 = $12.00 buffer. IMPROVED INCLUSION SETUP: VIX 15.78 on inclusion day (July 7) vs. Russell 1000 June 26 template (VIX ~18) = 225bps more constructive. DO NOT RE-ENTER on July 7 spike. Clearance est. Day 11–12 (July 8–9). Re-entry gate activation est. July 9–11.",
+    "rationale": "STEP ASIDE at HIGH conviction — triple-holiday closure has compressed the distribution timeline further without changing the fundamental distribution mechanics. Day 9 (July 6) and Day 10 (July 7 inclusion) arrive as the first two post-holiday US sessions, creating the highest-volume-risk window of the distribution cycle. IG buffer $12 improved from July 2's $6.46. Cross-asset backdrop (BTC Gate 2, NVDA OTC, 62% upward open probability) is the most constructive for the Day 9–10 window since the Russell 1000 June 26 inclusion template."
+  },
+
+  "snapshot": {
+    "price": 162.00,
+    "change_pct": 0.00,
+    "change_abs": 0.00,
+    "prev_close": 157.54,
+    "day_low": null,
+    "day_high": null,
+    "week52_low": 135.00,
+    "week52_high": 225.64,
+    "volume": "Zero — US markets closed (Sunday; third consecutive closure: July 3 abbreviated + July 4 Saturday + July 5 Sunday). Bond distribution Day 9 delayed. Reference price ~$162.00 (pre-market indication; NOT an official close; NOT valid for framework purposes).",
+    "market_cap": "~$2.23T (est. at $162.00 / ~13.76B shares including all share classes)",
+    "extra": [
+      {
+        "label": "★ US MARKETS CLOSED (SUNDAY JULY 5 — THIRD CONSECUTIVE CLOSURE); BOND DISTRIBUTION DAY 9 RESUMES JULY 6",
+        "value": "July 5, 2026 = Sunday. US markets closed on Sundays regardless of holiday proximity. No official SPCX session. Third consecutive US closure (July 3 abbreviated / July 4 Saturday / July 5 Sunday). Day 9 bond distribution volume delayed again — one additional session pushed from prior forecast. Day 9 now = July 6 (Monday); Day 10 = July 7 (Nasdaq 100 effective inclusion). Reference price ~$162.00 unchanged from July 4.",
+        "tone": "neutral"
+      },
+      {
+        "label": "★ STEP ASIDE UNCHANGED — REFERENCE $162.00 IS $23.00 (−12.7%) BELOW $185 RE-ENTRY GATE; IG FLOOR BUFFER $12",
+        "value": "Re-entry gate: two consecutive OFFICIAL closes above $185 AFTER volume <5M/day for 2–3 sessions. Reference $162.00 = $23.00 (−12.7%) below gate. IG floor $150: buffer = $12.00 from reference. Calendar update: Day 9 = July 6 (est. 20–35M); Day 10 = July 7 (Nasdaq 100 inclusion ~$4.3B passive + est. 10–15M residual distribution); clearance est. Day 11–12 (July 8–9); re-entry gate activation est. July 9–11. IG floor buffer unchanged from July 4.",
+        "tone": "down"
+      },
+      {
+        "label": "BOND DISTRIBUTION TIMELINE UPDATE — TRIPLE HOLIDAY DELAY",
+        "value": "Updated day-by-day volume trajectory (actual/estimated): Day 4 (June 26) 126.91M → Day 5 ~110M → Day 6 ~70M → Day 7 (July 1) 82.05M → Day 8 (July 2) ~52M → Day 9 (July 6) est. 20–35M → Day 10 (July 7 Nasdaq 100 inclusion) ~10–15M residual + $4.3B passive. Clearance threshold: 5M/day for 2–3 consecutive sessions est. Day 11–12 (July 8–9). The triple closure (July 3+4+5) delayed Day 9 by two calendar days from July 2 brief's forecast but does NOT change the seller distribution mechanics.",
+        "tone": "neutral"
+      },
+      {
+        "label": "NASDAQ 100 EFFECTIVE INCLUSION JULY 7 — T+1 US TRADING SESSION (DAY 10); ~$4.3B PASSIVE",
+        "value": "July 7 = Day 10 = Nasdaq 100 effective inclusion date. ~$4.3B estimated passive inflows from QQQ/QQQM rebalancing. IMPROVED VIX CONTEXT: Russell 1000 June 26 inclusion (Day 4) occurred with VIX ~18; July 7 inclusion arrives with VIX ~15.78 (225bps more constructive). Lower VIX = higher risk appetite = inclusion spike may be larger and more sustained. HOWEVER: do NOT re-enter on spike — distribution sellers are still present and Russell 1000 June 26 template shows same-session absorption. Monitor Day 10 CLOSE vs Day 9 close for distribution trend signal.",
+        "tone": "neutral"
+      },
+      {
+        "label": "CROSS-ASSET RISK-ON BACKDROP IMPROVED FOR DAY 9–10",
+        "value": "BTC Gate 2 confirmed ($62,782 at 11:01 UTC July 5; Crypto.com MCP). NVDA OTC $197.16 (above $195 stop threshold). VIX ~15.78. Prediction markets: 62% probability upward SPX open July 6. This is the most constructive cross-asset environment for SPCX's Day 9–10 window since the IPO. A risk-on July 6 open (fewer sellers, more buyers) could reduce Day 9 distribution volume from the 20–35M estimate toward the lower end, accelerating clearance to Day 10 instead of Day 11–12. However, bond distribution mechanics are macro-independent — sellers with contractual obligations to distribute bond proceeds will distribute regardless of market environment.",
+        "tone": "up"
+      },
+      {
+        "label": "NO SPCX-SPECIFIC NEWS over July 4–5 weekend",
+        "value": "No Starship launch incident, no Starlink outage, no regulatory items, no Cursor AI negative developments published as of 11:30 UTC July 5. The fundamental thesis (Starlink ARR, Starship revenue, Cursor AI $500M+ threshold, Starshield classified contracts — all anchoring to September 2 first post-IPO earnings) is unchanged. Absence of negative news preserves the IG floor buffer and supports a constructive July 6 reference-price open.",
+        "tone": "neutral"
+      },
+      {
+        "label": "December 9 lock-up expiry — structural supply ceiling",
+        "value": "180-day IPO lock-up (June 12 + 180 days = December 9, 2026): float expands from ~4% to 9–14% at expiry. Re-entry at $185+ post-clearance must target $200+ by September 2 earnings before December 9 supply arrives. The $185 re-entry gate provides 58 days from now to September 2 and 157 days to lock-up expiry.",
+        "tone": "negative"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv": 40,
+    "iv_note": "IV estimate ~40% (declining from July 4 est. ~41%; triple holiday closure reduces near-term event density; Nasdaq 100 inclusion July 7 (Day 10) keeps IV elevated vs historical average ~30%; VIX 15.78 on inclusion day is 225bps more constructive than Russell 1000 June 26 template; September expiry OI at $185–$200 building as post-clearance re-entry positions accumulate). IV repricing July 6 open based on Day 9 volume reading.",
+    "put_call": 1.02,
+    "short_interest": "No change (US markets closed). Shorts from IPO-day close ($165.78) hold $3.78/share gain vs $162.00 reference; Day 7 spike shorts ($170–$173) strongly profitable. Nasdaq 100 inclusion July 7 is the primary short-squeeze risk T+1 session away. Improved cross-asset backdrop (BTC Gate 2, NVDA OTC, VIX 15.78) increases probability of a stronger-than-template Day 10 inclusion spike. Rational shorts must decide before Monday open whether to hold through $4.3B inclusion in the most risk-on environment since the IPO.",
+    "max_pain": "July expiry max pain $155–$165 (unchanged). September expiry OI at $185–$200 (post-clearance re-entry zone). December $135–$150 (lock-up expiry and IPO floor support)."
+  },
+
+  "what_traders_are_doing": "SUNDAY JULY 5 (US MARKETS CLOSED) — STEP ASIDE; PREPARE FOR JULY 6 DAY 9 AND JULY 7 DAY 10 INCLUSION: (1) ZERO POSITION IN SPCX — step-aside maintained; zero capital at risk through triple-holiday gap; (2) JULY 6 NEXT ACTION: Monitor SPCX first-hour volume 9:30–10:30 AM ET. Target: below 20M in first hour, below 30M total Day 9 session. If Day 9 volume comes in below 25M and trend declining, clearance (Day 11–12, July 8–9) is on track; (3) JULY 7 (DAY 10 — NASDAQ 100 INCLUSION): DO NOT RE-ENTER on the inclusion spike. Watch Day 10 close vs Day 9 close — if Day 10 closes ABOVE Day 9 close, inclusion demand exceeds distribution; clearance may accelerate to Day 11 itself. (4) IG FLOOR CONTEXT: $162 reference = $12 buffer to $150 IG floor. Korea-contagion risk resolved; July 6 IG floor test probability LOW; (5) RE-ENTRY GATE: volume <5M/day for 2–3 sessions THEN two consecutive closes above $185 (est. July 9–11). DO NOT enter on any spike before both conditions met; (6) Alert level on July 6 open: if SPCX gaps below $154 (IG buffer narrows to $4), heightened monitoring required — framework reassessment if $150 is tested; (7) IMPROVED SETUP: BTC Gate 2 + NVDA OTC $197.16 + 62% upward open probability = most constructive Day 9 backdrop since the IPO; but distribution mechanics are bond-contract-driven, not sentiment-driven.",
+
+  "news": [
+    {
+      "label": "US markets closed Sunday July 5 (third consecutive closure: July 3 abbreviated + July 4 Saturday + July 5 Sunday); no SPCX session; bond distribution Day 9 delayed again to July 6; last reference $162.00 (pre-market indication, NOT official close)",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "source": "NYSE / Nasdaq",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "SpaceX to join Nasdaq-100, effective July 7, 2026 — confirmed; ~$4.3B QQQ/QQQM passive inflows ($4.3B index rebalancing + $3B Russell reweighting); VIX 15.78 on inclusion day is 225bps more constructive than Russell 1000 June 26 template (VIX ~18); DO NOT re-enter on spike",
+      "url": "https://seekingalpha.com/news/4607865-spacex-to-join-nasdaq-100-effective-july-7-2026",
+      "source": "Seeking Alpha / Nasdaq",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bond distribution status: Day 8 (July 2) ~52M shares; Day 9 now July 6 (delayed 2 sessions by triple holiday); est. 20–35M; Day 10 (July 7 inclusion) est. 10–15M residual + $4.3B passive; clearance est. July 8–9 (Day 11–12); re-entry gate $185 activation est. July 9–11",
+      "url": "https://moneymorning.com/2026/07/01/spacex-spcx-nasdaq-100-inclusion-july-7-lockup-expiry-2026",
+      "source": "Money Morning / CNBC",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Cross-asset backdrop improved for Day 9–10: BTC Gate 2 confirmed ($62,782 July 5 11:01 UTC); NVDA OTC $197.16 (above $195 stop threshold); VIX ~15.78; prediction markets 62% upward SPX open July 6 — most risk-on Day 9 environment since SPCX IPO June 12; IG floor buffer $12 (unchanged from July 4)",
+      "url": "https://www.lines.com/prediction-markets/finance/spx-opens-up-or-down-on-july-6-2026",
+      "source": "Lines.com / Market Chameleon",
+      "sentiment": "positive"
+    },
+    {
+      "label": "No SPCX-specific negative news July 4–5 weekend: no Starship incidents, no Starlink outages, no regulatory items, no Cursor AI adverse developments; fundamental thesis (September 2 first post-IPO earnings: Starlink ARR, Starship revenue, Cursor AI $500M+, Starshield) unchanged",
+      "url": "https://finance.yahoo.com/quote/SPCX/",
+      "source": "Yahoo Finance / SpaceX",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "SpaceX $25B bond distribution context: est. 400M shares total distribution over Days 4–12; Day 8 complete (~52M); est. 35–50M remaining above 5M/day threshold before clearance; Nasdaq 100 inclusion (Day 10) adds $4.3B of permanent systematic demand post-clearance",
+      "url": "https://www.cnbc.com/2026/06/23/spacex-debt-bond-market-ipo.html",
+      "source": "CNBC / SpaceX IR",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "December 9 lock-up expiry (180 days from June 12 IPO): float expands from ~4% to 9–14%; structural supply ceiling at $185–$200 re-entry zone; September 2 first post-IPO earnings (Starlink ARR, Starship, Cursor AI $500M+, Starshield) is the fundamental anchor before December supply arrives",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SPCX",
+      "source": "SEC EDGAR / SpaceX IPO prospectus",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "Day 9 (July 6) and Day 10 (July 7 inclusion) are the critical inflection sessions. IMPROVED CONTEXT: VIX 15.78 (not 18) on inclusion day; BTC Gate 2 confirmed; IG floor buffer $12; Korea-contagion risk resolved. Three scenarios: (A) Day 9 (July 6) volume 15–25M (improved lower-end scenario given cross-asset risk-on backdrop), Day 10 closes above Day 9 close on inclusion demand overwhelming distribution — clearance Day 11 (July 8); re-entry gate $185 activation July 8–9; BEST CASE. (B) Day 9 volume 25–35M, Day 10 inclusion spike absorbed same session closing flat to July 6 — normal distribution continuation; clearance Day 11–12 (July 8–9); re-entry gate July 9–11; BASE CASE. (C) Day 9 volume exceeds 40M on unexpected negative news or broader sell-off — distribution re-accelerates; clearance pushed to Day 14+ (July 14); re-entry gate delayed.",
+    "long_term": "Unchanged. September 2 first post-IPO earnings (Starlink ARR, Starship revenue, Cursor AI $500M+ threshold, Starshield classified contracts) is the fundamental anchoring event. Nasdaq 100 inclusion July 7 adds $4.3B of structural index demand permanently embedding SPCX in systematic QQQ/QQQM flows. December 9 lock-up expiry (float +4% → 9–14%) is the structural supply ceiling. Re-entry post-clearance at $185 targets $200+ by September 2 before December supply arrives. Step-aside discipline ensures re-entry with confirmed demand and catalyst alignment."
+  },
+
+  "bull_case": [
+    "VIX at 15.78 on Nasdaq 100 inclusion day (July 7, Day 10) is 225bps more constructive than the Russell 1000 June 26 inclusion day (VIX ~18). Lower volatility + BTC Gate 2 confirmed + NVDA positive = highest risk appetite environment for any SPCX session since the June 12 IPO. The June 26 template (spike to $158.40, close $152.15) occurred in a more stressed macro environment — the July 7 template may see a higher intraday spike and a higher close, potentially above $170. If Day 10 closes above $170 (vs. June 26 close $152.15), distribution sellers have been overwhelmed by institutional inclusion demand, and clearance may arrive Day 11 (July 8).",
+    "The triple holiday delay has extended the IG floor buffer improvement: reference moved from $156.46 (July 2 AH) to $162.00 (+$5.54, +3.5%) over the 3-day gap. The Korea-contagion scenario that was the primary tail risk on July 2 (KOSPI contagion → IG floor test → forced selling) has been fully resolved. July 6 opens without any of the July 2 macro headwinds (KOSPI stabilized at 8,088, SK Hynix recovered +10.88%, VIX at 15.78, BTC Gate 2 confirmed). The IG floor has gone from 'dangerously thin' to 'comfortably buffered' in 3 days without a single US market session.",
+    "The $4.3B passive inflow from Nasdaq 100 inclusion (July 7) permanently embeds SPCX in QQQ/QQQM systematic rebalancing flows indefinitely. This is not a one-day event — every quarterly Nasdaq 100 rebalancing, every QQQ options hedge delta, and every passive dollar added to the Nasdaq 100 universe flows to SPCX perpetually after July 7. The long-term structural demand the step-aside was designed to re-enter above $185 is activated July 7 — the $185 re-entry gate specifically captures this structural shift as the entry level."
+  ],
+
+  "bear_case": [
+    "Day 7's non-monotonic volume spike (82.05M from Day 6's ~70M) showed that distribution can re-accelerate on any session. Day 9 (July 6) is the FIRST US session after a 3-day holiday gap — sellers who couldn't distribute July 3 (abbreviated), July 4 (Saturday), or July 5 (Sunday) have 3 sessions of accumulated sell orders to release. Pent-up supply from a triple-closure gap could push Day 9 volume to 45–60M, resetting the clearance timeline to July 14+.",
+    "The $12 IG floor buffer ($162 reference vs $150 floor) is improved but not comfortable. The reference price of $162.00 is a pre-market indication, not an official close — the actual July 6 open may gap above or below $162 based on overnight catalysts. A Day 9 sell-off on any SPCX-specific negative news (Starship incident, Cursor AI competition, regulatory item) could push SPCX toward $152–$155 in a single session, narrowing the IG buffer to $2–$5.",
+    "The Nasdaq 100 inclusion (Day 10, July 7) arrives while bond distribution sellers are still present at estimated 10–15M shares of residual volume. In the Russell 1000 June 26 template, QQQ/QQQM rebalancing demand was fully absorbed by distribution sellers same session — close was below open despite $3B+ of forced buying. If July 7 mirrors June 26 (spike absorbed, close below Day 9 close), shorts who held through Day 10 are rewarded and the SPCX narrative reads as 'inclusion demand exhausted in 1 session' — a setup for further distribution-driven selling through Day 11–12."
+  ],
+
+  "key_levels": [
+    { "label": "Street-high analyst PT (Zephirin Group Buy)", "level": "$310", "kind": "resistance" },
+    { "label": "Day 3 intraday ATH (June 16)", "level": "$225.64", "kind": "resistance" },
+    { "label": "$200 psychological round number / post-September 2 earnings target ceiling", "level": "$200", "kind": "resistance" },
+    { "label": "★ Re-entry gate — TWO consecutive closes above here; requires bond distribution clearance FIRST (est. July 8–9 Day 11–12)", "level": "$185", "kind": "resistance" },
+    { "label": "July 2 session high (Day 8) — distribution seller ceiling", "level": "$174.95", "kind": "resistance" },
+    { "label": "July 1 confirmed close (Bond distribution Day 7)", "level": "$170.86", "kind": "resistance" },
+    { "label": "★ July 5 carry reference / July 4 carry — pre-market indication ($162.00, NOT official close)", "level": "$162.00", "kind": "pivot" },
+    { "label": "July 2 confirmed close (Bond distribution Day 8)", "level": "$157.54", "kind": "pivot" },
+    { "label": "July 6 alert level — if SPCX opens below here, IG buffer narrows to $4; heightened monitoring", "level": "$154.00", "kind": "support" },
+    { "label": "June 30 confirmed close (Bond distribution Day 6)", "level": "$151.74", "kind": "support" },
+    { "label": "★ IG ratings floor — two consecutive CLOSING breaches = IG floor failure + framework reassessment", "level": "$150", "kind": "support" },
+    { "label": "June 26 intraday low (Russell 1000 reconstitution — IG breach intraday)", "level": "$148.51", "kind": "support" },
+    { "label": "IPO offer price — ultimate support", "level": "$135", "kind": "support" }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-07-06",
+      "label": "Bond distribution Day 9 — first post-triple-holiday US session; 9:30 AM ET open; monitor first-hour volume (target <20M in first hour, <30M total Day 9); improved cross-asset backdrop (BTC Gate 2, NVDA OTC $197, VIX 15.78) reduces Day 9 seller intensity estimate; IG floor $150 buffer $12 comfortable",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-07",
+      "label": "★ SpaceX Nasdaq 100 effective inclusion — ~$4.3B passive QQQ/QQQM inflows; Bond distribution Day 10; VIX 15.78 on inclusion day is 225bps more constructive than Russell 1000 June 26 template (VIX ~18); DO NOT RE-ENTER on spike; monitor Day 10 close vs Day 9 close for distribution trend signal",
+      "importance": "high"
+    },
+    {
+      "date": "~2026-07-08",
+      "label": "★ Bond distribution clearance window (accelerated scenario) — if Day 10 closes above Day 9 close (inclusion demand overwhelms sellers), clearance may arrive Day 11 (July 8); volume below 5M/day = clearance confirmed; then watch for two consecutive closes above $185 = re-entry activated",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-02",
+      "label": "★ First post-IPO earnings — Starlink ARR, Starship revenue, Cursor AI ($500M+ threshold), Starshield contracts; fundamental anchoring event; 59 days from now; re-entry post-clearance must target $200+ by September 2 before December lock-up supply arrives",
+      "importance": "high"
+    },
+    {
+      "date": "2026-12-09",
+      "label": "180-day insider lock-up expiry — float expands from ~4% to 9–14%; structural supply ceiling before and after September 2 earnings anchor",
+      "importance": "medium"
+    }
+  ],
+
+  "analysis": "## Technical analysis (Sunday July 5, 2026 — US holiday, no session)\n\n**No SPCX session.** US markets closed (Sunday). Last official close: $157.54 (July 2, Day 8). Reference: ~$162.00 (pre-market indication, not official).\n\n**Step aside UNCHANGED. Updated framework summary:**\nBond distribution: Day 8 complete (~52M shares); Day 9 delayed again (triple closure July 3+4+5); resumes July 6. Clearance est. Day 11–12 (July 8–9). Re-entry gate: $185 (two consecutive closes) after clearance. $162 reference is $23 (−12.7%) below re-entry gate.\n\n**Triple holiday impact:** Three consecutive US closures (July 3 abbreviated + July 4 Saturday + July 5 Sunday) have now pushed Day 9 two calendar days from the July 2 brief's original forecast. The total sessions remaining before clearance is unchanged (est. 3–4 sessions: Days 9, 10, then clearance Day 11–12), but the calendar dates are now July 6–9 rather than July 4–7. September 2 earnings timeline unchanged.\n\n**IG floor buffer improvement:** Reference improved from $156.46 (July 2 session low, only $6.46 above $150 IG floor) to $162.00 ($12 above floor). The Korea-contagion scenario that threatened a holiday-gap IG floor test has been fully resolved (KOSPI +5.76% July 3, SK Hynix Stop Day 1 isolated, VIX at 15.78). July 6 opens with materially better IG floor protection.\n\n**Day 9 volume estimate improvement:** The cross-asset risk-on backdrop (BTC Gate 2 + NVDA OTC above $195 + 62% upward July 6 open) reduces the probability of an elevated Day 9 seller surge. In a risk-on Monday open environment, fewer marginal sellers will press their distribution orders aggressively. Day 9 base case 25–30M revised slightly lower to 20–30M based on improved sentiment context. This could pull clearance forward by one session (Day 11 instead of Day 12).\n\n**Inclusion day (Day 10) context update:** July 7 Nasdaq 100 inclusion (Day 10) arrives with VIX at 15.78 vs. June 26 Russell 1000 inclusion (Day 4) at VIX ~18. Lower VIX = higher risk appetite = potential for a larger and more sustained inclusion spike. Caveat: bond distribution sellers know the inclusion day and may specifically time their largest orders for Day 10 to sell into the $4.3B passive demand. The June 26 template remains the base case (spike absorbed, close below open), but a Day 10 close above $165–$170 is now within the plausible range.\n\n**Key technical levels unchanged:** $185 re-entry gate is unchanged. $150 IG floor is unchanged. $162 reference puts SPCX in the 'distribution zone' between $150 and $185 — distribution mechanics are volume-driven, not technically-driven."
+}
