@@ -144,7 +144,7 @@ function MarketPulse({ pulse }: { pulse: MarketRow[] }) {
   return (
     <div>
       <SectionLabel>Market Pulse</SectionLabel>
-      <div className="grid grid-cols-2 gap-px bg-[var(--border)]">
+      <div className="grid grid-cols-2 gap-px bg-[var(--border)] [&>*:last-child:nth-child(odd)]:col-span-2">
         {pulse.map((m) => (
           <div key={m.code} className="bg-[var(--background)] p-2.5">
             <div className="text-[10px] font-bold uppercase tracking-wide text-[var(--amber)]">

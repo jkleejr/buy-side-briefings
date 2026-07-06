@@ -100,13 +100,14 @@ export type HomeData = {
   calendar: CalRow[];
 };
 
-// --- left-rail market pulse (2x2 grid) -------------------------------------
+// --- left-rail market pulse (2-col grid) ------------------------------------
 
 const PULSE_LIST: Array<{ symbol: string; code: string; name: string }> = [
-  { symbol: "^GSPC", code: "SPX", name: "S&P 500" },
-  { symbol: "^NDX", code: "NDX", name: "Nasdaq 100" },
+  { symbol: "SPY", code: "SPY", name: "S&P 500 ETF" },
   { symbol: "BTC-USD", code: "BTC", name: "Bitcoin" },
   { symbol: "GC=F", code: "GC", name: "Gold" },
+  { symbol: "CL=F", code: "OIL", name: "Crude Oil (WTI)" },
+  { symbol: "NVDA", code: "NVDA", name: "NVIDIA" },
 ];
 
 const SECTOR_LIST: Array<{ symbol: string; code: string; name: string }> = [
