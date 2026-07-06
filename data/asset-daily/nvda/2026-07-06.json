@@ -3,147 +3,200 @@
   "symbol": "NVDA",
   "name": "NVIDIA Corp",
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T11:15:00Z",
+  "generated_at": "2026-07-06T22:00:00Z",
   "is_seed": false,
 
   "day_winner": "flat",
-  "day_summary": "★ STOP DAY 2 DETERMINATION DAY — JULY 6 US CLOSE. PRE-MARKET 7:03 AM ET: $195.33 (+$0.50, +0.26% FROM JULY 5 OTC EVENING $194.83). PRE-MARKET VWAP RANGE: HIGH $198.60 / LOW $195.05 — THE $195 STOP THRESHOLD HAS ALREADY BEEN TESTED INTRADAY IN PRE-MARKET ($195.05 = $0.05 ABOVE TRIGGER). CROSS-ASSET MORNING READ: (1) BTC $62,849.58 AT 11:03 UTC (CRYPTO.COM MCP) — DOWN $964 (-1.51%) FROM JULY 5 UTC CLOSE $63,813; SESSION OPENED $63,640, PEAKED $63,922 AT 01:00 UTC, DECLINING CONTINUOUSLY SINCE; IBIT GATE 3 STILL UNCONFIRMED; (2) SK HYNIX KRX JULY 6 CLOSE ₩2,343,000 (-3.38%, -₩82,000 FROM ₩2,425,000 JULY 3) — STOP DAY 2 TRIGGERED, MANDATORY FULL EXIT JULY 7 KST OPEN; (3) E-MINI NQ FUTURES +1.55% HEADING INTO US OPEN — SPCX NASDAQ 100 PRE-INCLUSION SYSTEMATIC BID (EFFECTIVE JULY 7) CREATES MECHANICAL NASDAQ BUYING TODAY; (4) VIX 15.81 (LAST CONFIRMED JULY 3). TODAY IS THE BINARY: CLOSE ABOVE $195 = STOP DAY 1 ISOLATED; CLOSE AT/BELOW $195 = STOP DAY 2 = MANDATORY FULL EXIT JULY 7 OPEN.",
+  "day_summary": "NVDA JULY 6 OFFICIAL CLOSE: $195.84 (+$1.01, +0.52% FROM $194.83 PREV CLOSE). STOP DAY 1 ISOLATED — CLOSE ABOVE $195 HOLDS. INTRADAY LOW: $194.00 (STOP THRESHOLD TESTED, RECOVERED). INTRADAY HIGH: $197.55 (GATE 3 NOT CLEARED — $200 NOT REACHED). VOLUME: 56.51M (35% OF 160.2M AVERAGE — EXTREMELY LIGHT). KEY STORY: SEMIANALYSIS PUBLISHED KYBER NVL144 RACK DELAYED 2027→2028 (PCB MIDPLANE ISSUE); NVIDIA DENIED ('ROADMAP IS INTACT'); STOCK WHIPSAWED $194.00→$197.55→$195.84. SECTOR: AMD +7.7%, BROADCOM +4.4%, SOX +3.2% — NVDA WAS THE WEAKEST LARGE-CAP CHIP ON A DAY SEMICONDUCTORS BROADLY RIPPED. THE KYBER OVERHANG ABSORBED THE ENTIRE SPCX MECHANICAL BID AND BTC RISK-ON TAILWIND. GATE 3 ($200) UNCLEARED — TODAY WAS THE BEST POSSIBLE SETUP TO CLEAR IT AND NVDA COULD NOT DELIVER.",
 
-  "long_pnl": "Half-size long from $200.09 (July 1 close) sits at -$4.76/share (-2.38%) vs pre-market reference $195.33. Pre-market high $198.60 would narrow the loss to -$1.49/share (-0.74%) if NVDA can hold those levels at the open. The pre-market low of $195.05 was tested this morning — $0.05 above the mandatory stop threshold. Today's official close is the binary determination: a close above $195 keeps the half-size position alive into August 26 Q2 FY27 earnings.",
-  "short_pnl": "Shorts from July 2 close ($193.70) are underwater vs pre-market $195.33 by -$1.63/share (-0.84%). Shorts who pressed the Stop Day 1 close ($193.70) face a SPCX pre-inclusion Nasdaq bid at today's open (NQ futures +1.55%) that could push NVDA further above $195 into the morning session. Short pain accelerates above $197-$198. However, if the open fades and the official close falls at or below $195, Stop Day 2 activates and forced NVDA longs exit July 7 — creating a secondary short tailwind.",
+  "long_pnl": "Half-size long from $200.09 (July 1 close) sits at -$4.25/share (-2.12%) at the $195.84 close. The intraday low of $194.00 temporarily put longs at -$6.09/share (-3.04%) before recovery. Stop Day 1 is now isolated (close $195.84 > $195 threshold), so the hold protocol continues through August 26 Q2 FY27 earnings. However, NVDA's +0.52% on a day AMD rallied +7.7% represents significant relative underperformance — the $4.25/share gap to breakeven was not narrowed despite the best possible cross-asset setup.",
+  "short_pnl": "Bears who entered near July 5 OTC high ($200.06) hold a +$4.22/share gain at $195.84. Bears on Stop Day 1 close ($193.70) are up +$2.14/share. Today's Kyber delay report briefly validated the bear case (intraday low $194.00), but NVIDIA's denial and sector strength (AMD +7.7%) blocked a decisive break. Stop Day 1 isolation removes the next forced-exit catalyst — shorts must now wait for a new stop-protocol trigger.",
 
   "decision": {
     "action": "hold",
     "conviction": "medium",
-    "horizon": "★ STOP DAY 2 DETERMINATION: JULY 6 US CLOSE. PRE-MARKET $195.33 — $0.33 ABOVE STOP THRESHOLD. HOLD HALF-SIZE. Three cross-asset inputs as of 11:15 UTC: (1) BTC $62,849 — down $964 from overnight, IBIT Gate 3 unconfirmed; (2) SK Hynix Stop Day 2 TRIGGERED (₩2,343,000 close); (3) NQ futures +1.55% SPCX pre-inclusion bid — most constructive pre-open Nasdaq setup since before the stop sequence. JULY 6 BINARY: close ABOVE $195 = Stop Day 1 isolated; close AT/BELOW $195 = STOP DAY 2 = mandatory full exit July 7 open, zero discretion. Gate check at 9:25 AM ET: NVDA >$200 AND SPX >7,460 AND VIX <17 for July 7 full-size add. DO NOT AVERAGE DOWN. DO NOT ADD before July 7 gate confirmation."
+    "horizon": "HOLD HALF-SIZE through August 26 Q2 FY27 earnings. Stop Day 1 ISOLATED: official July 6 close $195.84 above $195 threshold. Gate 3 NOT cleared: intraday high $197.55 < $200 — full-size add gate not met despite the best possible setup (SPCX mechanical bid + BTC risk-on + SPX strength). CONVICTION STAYS MEDIUM: On the day AMD gained +7.7% and SOX +3.2%, NVDA mustered only +0.52% on 56.51M shares (35% of average). Kyber overhang is absorbing every tailwind. Next gate check: July 7 close must be ABOVE $200 + SPX >7,460 + VIX <17 simultaneously for full-size add consideration. Until Gate 3 clears on a closing basis, HOLD HALF-SIZE. DO NOT AVERAGE DOWN. DO NOT ADD below $200.",
+    "rationale": "Stop Day 1 isolated (close $195.84 above $195). Intraday dip to $194.00 tested the stop threshold but closing-basis protocol holds. Gate 3 ($200) uncleared despite optimum conditions — SPCX inclusion bid, BTC recovering to $64,700, SPX strength. The Kyber NVL144 delay report (SemiAnalysis) is the new bearish overhang: even with NVIDIA's denial, the stock underperformed AMD by 7.2 percentage points. Volume of 56.51M (35% of average) shows institutional conviction was absent in both directions. Hold half-size; no add until $200 gate confirmed on closing basis."
   },
 
   "so_what": {
-    "line": "NVDA is $0.33 above the Stop Day 2 trigger in pre-market ($195.33), with BTC declining $964 from overnight, SK Hynix Stop Day 2 confirmed on KRX, and a 10-hour declining BTC session — but NQ futures up 1.55% from SPCX Nasdaq 100 pre-inclusion positioning provides a mechanical Nasdaq bid at today's open that is independent of risk sentiment.",
-    "bull": "NQ futures +1.55% heading into July 6 open is the strongest pre-open Nasdaq backdrop in this stop sequence — SPCX Nasdaq 100 pre-inclusion positioning forces QQQ/QQQM managers to buy all Nasdaq 100 names today including NVDA proportionally; options max pain at $195 (July 11 expiry) creates a market-maker delta-hedge floor precisely at the stop threshold — as NVDA approaches $195 from above, options market-makers mechanically buy shares; Rubin architecture pulled 2 quarters early, Blackwell Ultra sold out, $91B Q2 FY27 guide confirmed — the fundamental picture entering today is the strongest in the framework period; pre-market $195.33 shows a thin but real buffer above the stop level with 2.5 hours to the official open.",
-    "bear": "BTC is down $964 (-1.51%) in 10 straight declining hours from $63,813 to $62,849 — the overnight risk-on backdrop that anchored the July 5 evening brief has materially deteriorated; pre-market VWAP low already tested $195.05 in a thin 2.5M-share session — when the official open brings 10-15M shares/hour, the same sellers will press harder on the $195 stop line; SK Hynix KRX close of ₩2,343,000 is not noise — it represents global AI semiconductor institutional selling through a stop threshold, and the same global tech funds who are selling SK Hynix on KRX also hold NVDA."
+    "line": "Stop Day 1 is isolated — the $195.84 close saved the position from a mandatory exit — but today's story is one of failure: NVDA had every tailwind to clear $200 (SPCX inclusion bid, BTC at $64K, SOX +3.2%) and peaked at $197.55.",
+    "bull": "The $194.00 intraday low held on a closing basis despite a damaging Kyber headline — buyers appeared and defended. The August 26 Q2 FY27 earnings at ~$91B guide remains the primary re-rating event: a beat makes the Kyber delay narrative irrelevant and re-rates the stock toward $220+. Analyst consensus is 73 Buys, $301.62 avg target.",
+    "bear": "NVDA was the weakest large-cap semiconductor on a day the SOX gained 3.2% — AMD +7.7%, Broadcom +4.4%, and NVDA couldn't even clear $198. On the best possible macro setup day, NVDA underperformed by ~6.7pp vs AMD. The Kyber delay overhang is a real institutional sentiment headwind that the NVIDIA denial did not erase."
   },
 
   "snapshot": {
-    "price": 195.33,
-    "change_pct": 0.26,
-    "change_abs": 0.50,
+    "price": 195.84,
+    "change_pct": 0.52,
+    "change_abs": 1.01,
     "prev_close": 194.83,
-    "day_high": 198.60,
-    "day_low": 195.05,
+    "day_high": 197.55,
+    "day_low": 194.00,
     "week52_high": 236.54,
     "week52_low": 157.34,
-    "volume": "PRE-MARKET (7:03 AM ET): ~2.5M shares. US official session opens 9:30 AM ET. Full-day volume TBD.",
-    "market_cap": "~$4.76T (est. at $195.33 / ~24.4B shares)",
+    "volume": "56.51M shares (35% of 160.2M average — extremely thin; recovery from $194.00 to $195.84 on low volume is NOT institutional confirmation; light volume on stop-day close is a bearish signal for the recovery's durability)",
+    "market_cap": "~$4.82T (at $195.84 / ~24.4B shares)",
     "extra": [
-      { "label": "★ STOP DAY 2 BINARY — JULY 6 US CLOSE (4:00 PM ET)", "value": "Close ABOVE $195 = Stop Day 1 isolated, hold through August 26 Q2 FY27 earnings. Close AT/BELOW $195 = STOP DAY 2 = mandatory full exit at July 7 open, zero discretion. Pre-market $195.33 is $0.33 above the threshold. Pre-market range: $198.60 high / $195.05 low ($0.05 above threshold already tested).", "tone": "neutral" },
-      { "label": "★ NQ FUTURES +1.55% — SPCX PRE-INCLUSION NASDAQ BID (EFFECTIVE JULY 7)", "value": "E-mini NQ futures +1.55% heading into July 6 US open. SPCX Nasdaq 100 effective inclusion July 7 forces QQQ/QQQM managers to buy all Nasdaq 100 names pro-rata today. NVDA as the index's largest AI-weighted component receives the largest absolute dollar mechanical bid. This is contractually mandated buying — independent of risk sentiment and NVDA-specific news.", "tone": "up" },
-      { "label": "Gate 1 — SPX vs 7,460", "value": "SPX last official close 7,483.24 (July 2). E-mini S&P futures +0.63% suggests open ~7,530-7,540. Gate 1 firmly intact.", "tone": "up" },
-      { "label": "Gate 2 — VIX vs 17", "value": "VIX last confirmed spot 15.81 (July 3). Gate 2 firmly open with 219bps margin. VIX futures ~17.68 (term premium; spot expected near 15-16 at open).", "tone": "up" },
-      { "label": "Gate 3 — NVDA vs $200", "value": "Pre-market high $198.60 — Gate 3 requires NVDA open above $200 AND SPX >7,460 AND VIX <17 simultaneously at 9:25 AM ET. Pre-market ceiling of $198.60 means Gate 3 requires an additional +$1.40 from the pre-market high. Possible but not pre-market confirmed.", "tone": "down" },
-      { "label": "★ BTC DECLINING — 10-HOUR DESCENDING SESSION TO $62,849 (11:03 UTC)", "value": "BTC $62,849.58 (Crypto.com MCP, 11:03 UTC) — down $963.19 (-1.51%) from July 5 close $63,813.77. July 6 session structure: open $63,640 → peak $63,922 (01:00 UTC) → $62,849 now (declining for 10 straight hours). IBIT Gate 3 unconfirmed. BTC remains above Gate 2 ($62,000) with $849 buffer — Gate 2 intact. But the overnight decline reduces cross-asset support vs July 5 evening brief.", "tone": "down" },
-      { "label": "★ SK HYNIX STOP DAY 2 CONFIRMED — MANDATORY EXIT JULY 7 KST OPEN", "value": "SK Hynix KRX July 6 close: ₩2,343,000 (-3.38%, -₩82,000). Confirms July 3 close was ₩2,425,000 (below ₩2,540,000 stop — Stop Day 1 triggered July 3). July 6 close below stop = Stop Day 2 confirmed. MANDATORY FULL EXIT at July 7 KST open. ADR listing July 10 does NOT override mandatory stop protocol. Cross-asset signal: global AI semiconductor institutional selling is confirmed across both US and Korean markets.", "tone": "down" },
-      { "label": "Rubin architecture + Blackwell Ultra + Nicholas Parker — fundamentals intact", "value": "Rubin pulled ~2 quarters ahead of schedule. Blackwell Ultra sold out through mid-2026. FY26 revenue $215.9B (+65% YoY). Nicholas Parker (from MSFT) as field operations head. $91B Q2 FY27 guide unchanged. No new negative fundamental developments.", "tone": "up" },
-      { "label": "ATH (May 14, 2026)", "value": "$236.54", "tone": "neutral" },
-      { "label": "August 26 Q2 FY27 earnings", "value": "~$91B quarterly revenue guide confirmed.", "tone": "up" }
+      {
+        "label": "★ STOP DAY 1 ISOLATED — CLOSE $195.84 ABOVE $195 THRESHOLD",
+        "value": "July 6 official close $195.84 (+$1.01, +0.52%) is $0.84 above the $195 stop threshold. Stop Day 1 is isolated; Stop Day 2 determination removed. HOLD half-size through August 26 Q2 FY27 earnings. Intraday low of $194.00 (briefly $1.00 below stop) is NOT framework-determinative — only the official closing price counts.",
+        "tone": "up"
+      },
+      {
+        "label": "★ GATE 3 NOT CLEARED — $197.55 INTRADAY HIGH < $200; BEST POSSIBLE SETUP FAILED",
+        "value": "July 6 intraday high: $197.55. Gate 3 requires CLOSING above $200 + SPX >7,460 + VIX <17 simultaneously. Today had every favorable input: SPCX Nasdaq 100 mechanical bid, BTC recovering from $61,305 to $64,700, SPX strength. Despite all tailwinds, NVDA peaked at $197.55 — $2.45 below the $200 gate. Kyber overhang absorbed every positive catalyst. Gate 3 uncleared: NO full-size add until July 7+ close above $200.",
+        "tone": "down"
+      },
+      {
+        "label": "KYBER NVL144 DELAY — THE DAY'S DEFINING STORY: SemiAnalysis vs NVIDIA",
+        "value": "SemiAnalysis published over the July 4 holiday weekend: Kyber NVL144 rack-scale system (144 chips per unit) delayed 2027→2028 due to PCB midplane manufacturing challenges. NVIDIA responded: 'Our roadmap is intact.' Stock whipsawed from $194.00 low (on report) to $197.55 high (on denial) before settling at $195.84. Net effect: the overhang is now priced as real uncertainty regardless of denial. Sources: Reuters, GuruFocus, ZeroHedge, Seeking Alpha, Bloomberg.",
+        "tone": "down"
+      },
+      {
+        "label": "SECTOR UNDERPERFORMANCE — AMD +7.7%, BROADCOM +4.4%, SOX +3.2% vs NVDA +0.52%",
+        "value": "NVDA was the worst-performing large-cap semiconductor on the day. The Philadelphia Semiconductor Index (SOX) gained 3.2%; AMD +7.7%, Broadcom +4.4%. NVDA's +0.52% represents ~6.7 percentage points of underperformance vs AMD. Kyber delay was the specific headwind. Source: 24/7 Wall St ('How Nvidia Became The Black Sheep Of The Chip Stock Rally').",
+        "tone": "down"
+      },
+      {
+        "label": "VOLUME: 56.51M (35% OF 160.2M AVERAGE) — EXTREMELY LIGHT; LOW CONVICTION",
+        "value": "July 6 volume: 56.51M shares vs 160.2M average — only 35% of normal. Recovery from $194.00 to $195.84 not confirmed by strong institutional buying. Institutional players largely stayed away from the stock in both directions. Light volume on a stop-day recovery is a warning: strong institutional support would require 130M+ share sessions.",
+        "tone": "down"
+      },
+      {
+        "label": "Gate 1 — SPX vs 7,460 (INTACT)",
+        "value": "SOX +3.2%, strong tech session. SPX >7,460 Gate 1 confirmed intact. Gate 2 (VIX <17) also intact given risk-on semiconductor environment.",
+        "tone": "up"
+      },
+      {
+        "label": "Gate 3 — NVDA vs $200 (UNCLEARED)",
+        "value": "Intraday high $197.55. Gate 3 uncleared. Next opportunity: July 7 close must be ABOVE $200 + SPX >7,460 + VIX <17 simultaneously. Kyber narrative must clear before institutional buyers defend $200 on a closing basis.",
+        "tone": "down"
+      },
+      {
+        "label": "BTC JULY 6: V-REVERSAL — $61,305 LOW → $64,700 HIGH; cross-asset net positive",
+        "value": "BTC July 6: opened $63,640 → crashed $61,305.94 (13:00 UTC; Strategy sold 3,588 BTC/$216M) → recovered to $64,700.99 (21:00 UTC; ~$450M short squeeze). BTC at ~$64,200 at 22:00 UTC. Gates 1+2 intact. Gate 3 (IBIT) unconfirmed. BTC's positive resolution is a net tailwind for NVDA July 7 open.",
+        "tone": "up"
+      },
+      {
+        "label": "Valar Atomics Partnership + AI Compute Partnership Program",
+        "value": "NVDA partnering with Valar Atomics for water-conserving Utah data center (AI compute). AI Compute Partnership: NVIDIA uses balance sheet to help cloud firms buy GPUs for a share of revenues. Incremental positive for monetization of compute infrastructure.",
+        "tone": "up"
+      },
+      {
+        "label": "Analyst consensus: 73 Buys / 1 Hold / 0 Sells; $301.62 avg 12-mo target; RSI 44.57",
+        "value": "Average 12-month price target: $301.62 (+54% from $195.84). China Renaissance Buy/$319 (June 5). Goldman Sachs flags AI beneficiary rotation risk but maintains bullish long-term. RSI (14): 44.57 — neutral/mild-sell territory, no bounce signal.",
+        "tone": "up"
+      },
+      {
+        "label": "August 26 Q2 FY27 earnings — $91B guide; 51 days away",
+        "value": "$91B quarterly revenue guide confirmed. Primary fundamental clearing event. Kyber narrative resolved on earnings call regardless of prior news cycle.",
+        "tone": "up"
+      },
+      {
+        "label": "ATH (May 14, 2026)",
+        "value": "$236.54",
+        "tone": "neutral"
+      }
     ]
   },
 
   "positioning": {
-    "iv": 42,
-    "iv_note": "IV estimated ~42% (elevated heading into Stop Day 2 binary; $195 strike straddle (July 11 expiry) at maximum activity — options market pricing the binary at today's close; $195 put and call OI both elevated as market-makers hedge the pin; pre-market $195.05 low confirms aggressive put-side activity; SK Hynix Stop Day 2 confirmation adds cross-sector vol premium; $200 call OI likely rolling to lower strikes as the pre-market ceiling $198.60 suggests $200 less probable today).",
-    "put_call": 0.95,
-    "short_interest": "~1.8% of float (est.; short interest building at $195-$198 after successive OTC fades; pre-market sellers at $195 consistent with Stop Day 2 thesis shorts; covering targets: $193.70 / $190 / $185; squeeze risk above $200 if Gate 3 confirmed)",
-    "max_pain": "$195 (July 11 expiry — max pain converges exactly with the stop threshold; market-makers have maximum incentive to keep NVDA near $195 through July 11, which may provide a mechanical floor at the close today)"
+    "iv": 41,
+    "iv_note": "IV estimated ~41% (elevated; Kyber delay/denial whipsaw increases binary uncertainty; July 11 expiry $195 puts re-bid on intraday $194 touch; $200 call OI elevated as gate level; intraday $194 low likely triggered put buying; August $220 calls unchanged — institutional thesis holders unmoved).",
+    "put_call": 0.88,
+    "short_interest": "~1.8% of float (est.; slight increase as Kyber overhang creates new short conviction; shorts at $197–$200 during denial rally are now profitable; stop-loss for new shorts: $200; covering targets: $190 / $185)",
+    "max_pain": "$195 (July 11 expiry; stock settled near max-pain centroid — consistent with market-maker hedging at the stop-threshold level)"
   },
 
-  "what_traders_are_doing": "MONDAY JULY 6 MORNING (PRE-MARKET 7:03 AM ET; US OPEN IN ~2.5H): (1) ★ STOP DAY 2 BINARY: July 6 official CLOSE (4:00 PM ET) is the ONLY data point that matters — pre-market $195.33 is encouraging but non-binding; (2) WATCH 9:25 AM ET: If NVDA >$200 AND SPX futures >7,460 AND VIX pre-open <17 simultaneously → July 7 full-size add gate. From pre-market $195.33 requires +$4.67 to Gate 3; (3) WATCH 9:30 AM ET OPEN: NQ futures +1.55% from SPCX pre-inclusion bid should provide systematic Nasdaq lift — NVDA as largest AI-weight receives biggest pro-rata share; (4) WATCH 10:00 AM ET: Services PMI + IBIT Gate 3 verification window. Goldilocks PMI = demand narrative confirmed; IBIT positive inflow = BTC re-entry activated; (5) WATCH 4:00 PM ET: The CLOSE. Only the close matters for Stop Day 2; (6) SK HYNIX UPDATE: Prepare July 7 KST open exit logistics (Stop Day 2 confirmed, mandatory full exit). This does NOT trigger automatic NVDA exit; (7) DO NOT AVERAGE DOWN NVDA. DO NOT ADD before July 7 gate confirmation.",
+  "what_traders_are_doing": "JULY 6 POST-CLOSE ($195.84) — STOP DAY 1 ISOLATED, GATE 3 UNCLEARED: (1) ★ HOLD HALF-SIZE: Stop Day 1 isolated. No mandatory exit. Hold through August 26 unless new stop trigger activates. DO NOT AVERAGE DOWN. DO NOT ADD below $200. (2) KYBER NARRATIVE WATCH: SemiAnalysis report unretracted. NVIDIA denial did not drive a bullish close — stock underperformed AMD by 7.2pp. Watch for tier-1 analyst notes on Kyber delay validity — any bank agreeing with SemiAnalysis = material downside risk. (3) GATE 3 CHECK JULY 7: Close above $200 + SPX >7,460 + VIX <17 simultaneously at 9:25 AM ET. Today's failure to clear $200 despite SPCX bid lowers probability without Kyber resolution. (4) SECTOR RELATIVE: AMD +7.7% today. If the SOX/AMD rotation continues July 7 and NVDA again underperforms, that is a strong institutional sell signal for NVDA specifically. (5) BTC SUPPORTIVE: BTC recovered to $64,700 (V-reversal from $61,305). Positive cross-asset read for July 7 open. (6) VOLUME WATCH: 56.51M today (35% of average). July 7 needs 100M+ volume to confirm any directional institutional move.",
 
   "news": [
     {
-      "label": "NVDA pre-market July 6: $195.33 (+$0.50, +0.26%); pre-market VWAP range $198.60 high / $195.05 low — $195 stop threshold already tested; Stop Day 2 determination at today's US close",
-      "url": "https://marketchameleon.com/Overview/NVDA/Stock-Price-Action/Premarket-VWAP",
-      "source": "MarketChameleon / Nasdaq pre-market",
-      "sentiment": "neutral"
-    },
-    {
-      "label": "E-mini NQ futures +1.55% heading into July 6 US open — SPCX Nasdaq 100 pre-inclusion positioning (effective July 7); NVDA as largest Nasdaq 100 AI-weight receives maximum mechanical bid today from QQQ/QQQM rebalancing",
-      "url": "https://seekingalpha.com/news/4607865-spacex-to-join-nasdaq-100-effective-july-7-2026",
-      "source": "Seeking Alpha / Nasdaq",
-      "sentiment": "positive"
-    },
-    {
-      "label": "BTC $62,849.58 at 11:03 UTC (Crypto.com MCP live) — down $964 (-1.51%) from July 5 UTC close $63,813; 10-hour declining session from $63,922 peak; IBIT Gate 3 still unconfirmed; BTC above Gate 2 ($62,000) with $849 buffer",
-      "url": "https://crypto.com/exchange/trade/BTC_USDT",
-      "source": "Crypto.com Exchange MCP (confirmed 11:03 UTC July 6)",
+      "label": "SemiAnalysis report: Kyber NVL144 rack system delayed 2027→2028 (PCB midplane manufacturing challenges); NVIDIA denies — 'Our roadmap is intact'; stock whipsawed $194.00→$197.55→$195.84",
+      "url": "https://finance.yahoo.com/technology/articles/nvidia-kyber-nvl144-rack-delayed-131605413.html",
+      "source": "Reuters / Yahoo Finance",
       "sentiment": "negative"
     },
     {
-      "label": "SK Hynix KRX July 6 close ₩2,343,000 (-3.38%) — STOP DAY 2 TRIGGERED; confirms July 3 close ₩2,425,000 was already below stop; mandatory SK Hynix full exit July 7 KST open; AI semiconductor selling pressure spreading across markets",
-      "url": "https://finance.yahoo.com/quote/000660.KS/",
-      "source": "Yahoo Finance / KRX",
+      "label": "NVDA the 'black sheep of the chip stock rally': AMD +7.7%, Broadcom +4.4%, SOX +3.2% while NVDA only +0.52% on 56.51M shares (35% avg volume)",
+      "url": "https://247wallst.com/investing/2026/07/06/how-nvidia-became-the-black-sheep-of-the-chip-stock-rally/",
+      "source": "24/7 Wall St.",
       "sentiment": "negative"
     },
     {
-      "label": "NVIDIA Rubin architecture pulled ~2 quarters ahead of 2027 schedule; Blackwell Ultra sold out through mid-2026; FY26 revenue $215.9B (+65% YoY); $91B Q2 FY27 guide confirmed; structural AI infrastructure moat intact",
-      "url": "https://intellectia.ai/blog/nvidia-stock-analysis-july-2026",
-      "source": "Intellectia.ai / NVIDIA Newsroom",
-      "sentiment": "positive"
-    },
-    {
-      "label": "NVIDIA Nicholas Parker (from MSFT) named field operations head (July 2) — enterprise GTM scale-up ahead of August 26 Q2 FY27 earnings; Vera Rubin platform + Halos for Robotics announcements intact",
-      "url": "https://nvidianews.nvidia.com/news/latest",
-      "source": "NVIDIA Newsroom",
-      "sentiment": "positive"
-    },
-    {
-      "label": "AI semiconductor sector underperformance narrative building July 2026: NVDA +~5% YTD vs S&P 500 +~10% YTD; NVDA, AMD, INTC under scrutiny; sentiment headwind but no fundamental deterioration in Blackwell demand",
-      "url": "https://intellectia.ai/blog/ai-semiconductor-stocks-july-2026",
-      "source": "Intellectia.ai",
+      "label": "NVIDIA rises after refuting Kyber AI rack delay — shares climbed on denial but failed to sustain above $197.55; settled $195.84",
+      "url": "https://seekingalpha.com/news/4611750-nvidia-rises-as-it-refutes-report-of-next-gen-delay",
+      "source": "Seeking Alpha",
       "sentiment": "neutral"
+    },
+    {
+      "label": "Kyber NVL144 delay sends Asian PCB stocks sliding — Bloomberg reports Asian tech supply chain names fell on the report",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-06/nvidia-ai-server-delay-report-sends-asian-pcb-stocks-sliding",
+      "source": "Bloomberg",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Valar Atomics partners with NVIDIA — water-conserving Utah data center for AI compute; AI Compute Partnership Program announced",
+      "url": "https://finance.yahoo.com/technology/ai/articles/valar-atomics-partners-nvidia-nvda-163737419.html",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "BTC July 6: dramatic V-reversal from $61,305 low (Strategy 3,588 BTC sale) to $64,700 high ($450M short squeeze) — positive cross-asset read for NVDA July 7",
+      "url": "https://www.coindesk.com/tech/2026/07/06/live-markets-bitcoin-pops-to-usd63-900-then-reverses-as-week-begins",
+      "source": "CoinDesk / Crypto.com MCP",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Analyst consensus: 73 Buys / 1 Hold / 0 Sells; $301.62 avg 12-mo target (+54% upside); China Renaissance Buy at $319 (June 5, 2026)",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/",
+      "source": "MarketBeat",
+      "sentiment": "positive"
     }
   ],
 
   "outlook": {
-    "short_term": "Three scenarios for July 6 US close: (A) NVDA opens above $195 on NQ +1.55% SPCX pre-inclusion Nasdaq bid, holds through close at $196-$199 → Stop Day 1 isolated; July 7 full-size add gate requires NVDA >$200 + SPX >7,460 + VIX <17 at 9:25 AM ET. BASE CASE — pre-market $195.33 is marginal support; NQ futures tailwind is real. (B) NVDA opens near $195, intraday cross-asset selling (SK Hynix, BTC declining) drags close at or below $195 → STOP DAY 2 → mandatory full exit July 7 open. BEAR CASE — meaningfully elevated given pre-market $195.05 low already tested. (C) NVDA opens and holds above $200 on Services PMI Goldilocks + IBIT Gate 3 + NQ inclusion bid → Gates 1+2+3 simultaneously → July 7 full-size add activated. BEST CASE — requires +$4.67 from pre-market high $198.60.",
-    "long_term": "Structural thesis intact. Blackwell Ultra sold out, Rubin pulled 2 quarters early, Nicholas Parker enterprise build, sovereign AI capex $100B+. August 26 Q2 FY27 earnings at $91B guide is the re-rating event. The stop protocol is position management — not thesis invalidation."
+    "short_term": "Stop Day 1 isolated (July 6 close $195.84). Next trigger: July 7 close above $200 + SPX >7,460 + VIX <17 = Gate 3 cleared → full-size add. Kyber narrative is the primary overhang: until a credible source (tier-1 analyst note, NVIDIA investor event, earnings call) definitively puts the delay to rest, NVDA will struggle to sustain above $200 even in favorable macro environments. Short-term range: $192–$200. August 26 Q2 FY27 earnings (~$91B guide) is the primary re-rating catalyst.",
+    "long_term": "Structural thesis unchanged: Blackwell Ultra ramp, Vera Rubin platform sampling, sovereign AI capex $100B+, Nicholas Parker field operations, exclusive HBM4 supply with SK Hynix. Stop-protocol hold is position management, not thesis abandonment. FY26 revenue $215.94B (+65% YoY). Q2 FY27 at $91B guide implies continued hypergrowth. Kyber delay (2027→2028 product) is a 2028 risk, not a 2026 earnings risk — the August 26 earnings remains the primary fundamental clearing event."
   },
 
   "bull_case": [
-    "NQ futures up +1.55% heading into July 6 open creates the highest pre-open Nasdaq bid of the distribution cycle, driven by SPCX Nasdaq 100 pre-inclusion systematic buying that QQQ/QQQM managers must complete today. NVDA as the Nasdaq 100's single largest AI-weighted component receives the proportionally largest dollar amount of this mechanical bid — creating intraday support that is contractually mandated and completely independent of NVDA-specific news or risk sentiment. The SPCX pre-inclusion bid may be the decisive force that holds NVDA above $195 through today's close.",
-    "Options max pain for July 11 expiry sits exactly at $195 — the same level as the stop threshold. Market-makers who are net short gamma at $195 have a strong financial incentive to keep NVDA near this level through their delta-hedging activity: as NVDA approaches $195 from above, market-makers automatically buy shares to maintain delta neutrality, creating a mechanical floor precisely at the stop threshold. This convergence of options mechanics and position management framework levels at a single price is an unusual structural positive for the $195 floor today.",
-    "Rubin architecture pulling 2 quarters early, Blackwell Ultra sold out through mid-2026, Nicholas Parker enterprise GTM build, and $91B Q2 FY27 guide confirmed — the fundamental picture is the strongest it has been in this framework period. The Stop Day 1/2 sequence is a position management response to a 2-session official price decline, not a fundamental signal. The $215.9B FY26 revenue at 65% YoY growth rate is not at risk from a pre-market session at $195.33."
+    "Stop Day 1 isolated at $195.84 — the close held despite a Kyber delay headline, an intraday dip to $194.00, and a sector ripping 3-8%. Buyers appeared at $194.00 and defended on a closing basis. With the Stop Day 2 overhang removed, NVDA enters a cleaner framework period where new institutional accumulation can build ahead of August 26 earnings without forced-exit mechanics pressuring the stock. The $194 low is now confirmed support.",
+    "AMD +7.7% and SOX +3.2% vs NVDA +0.52% creates a coiled-spring setup: NVDA is now cheap relative to peers on any relative valuation metric. If Kyber delay is debunked or the 2028 timeline is recognized as irrelevant to 2026-2027 earnings, NVDA should snap back toward the sector average. A single positive Kyber development (NVIDIA investor presentation, supply chain confirmation from TSMC or Foxconn) could drive a 5-8% single-day move.",
+    "August 26 Q2 FY27 earnings at ~$91B guide is 51 days away. NVIDIA has beaten consensus for 7 consecutive quarters. If Blackwell Ultra demand tracks above guide (likely, given sovereign AI capex acceleration and Vera Rubin sampling), the earnings beat re-rates the stock above $220. The Kyber delay (2028 product) is irrelevant to Q2 FY27 revenue — investors will see through it on earnings day."
   ],
 
   "bear_case": [
-    "SK Hynix's KRX July 6 close at ₩2,343,000 (-3.38%, ₩197,000 below the ₩2,540,000 stop threshold) is the clearest cross-asset evidence that global AI semiconductor institutional sellers are active. SK Hynix and NVDA share the same fundamental demand driver (AI data center GPU/HBM build cycle) and are held by the same global tech funds. When the KRX AI memory leader experiences a 3.38% institutional sell-off through its stop threshold on the day before a $29.4B ADR listing, it signals that global managers are reducing AI semiconductor exposure broadly — not protecting it.",
-    "BTC at $62,849 has declined for 10 consecutive hours from the $63,922 peak (01:00 UTC) — a sustained institutional sell-off through the overnight session. A BTC price that peaked at 1 AM UTC and has been declining for 10 hours entering the US open is NOT the 'most constructive cross-asset backdrop' described in yesterday's evening brief — it is a risk-off signal that has been building for the entire overnight session. When US institutional markets open and IBIT Gate 3 remains unconfirmed, the BTC declining trend is the most dominant single cross-asset data point.",
-    "Pre-market VWAP low $195.05 = $0.05 above the stop threshold, in a thin 2.5M-share session. When the US official session opens with full volume (10-15M shares/first hour), the same sellers who pushed NVDA to $195.05 in pre-market will press with 5-6x more shares. The pre-market test of $195.05 is a warning signal that institutional sellers have pre-positioned at the stop threshold — not a floor confirmation."
+    "NVDA was the worst-performing large-cap semiconductor on the best possible setup day: SPCX systematic bid, BTC V-reversal, SOX +3.2%. The stock managed +0.52% on 35% of average volume. This is now a repeated pattern — NVDA has failed to close above $200 despite three separate attempts. Distribution sellers at $197–$200 are more committed than buyers, and the Kyber narrative gives them a fundamental justification that buyers cannot easily rebut without an NVIDIA investor event.",
+    "The Kyber NVL144 delay represents a structural product risk: 2028 instead of 2027 for the next-gen rack architecture. This has implications for enterprise capex cycles (customers may delay orders pending clarity) and competitive positioning vs AMD MI400 series. Goldman Sachs flagged the risk of NVDA losing 'top AI beneficiary' status. RSI at 44.57 provides no technical bounce signal — the stock is not oversold enough to generate a mechanical snap-back.",
+    "Volume of 56.51M (35% of average) is not 'sellers exhausted' — it's institutional absence. Institutional players who drive 100-200M share sessions on strong NVDA days were not buying today. The close at $195.84 on minimal volume is a weak-handed, retail-driven recovery. One institutional selling day with volume above 150M shares and a close below $195 would immediately reactivate the stop protocol."
   ],
 
   "key_levels": [
-    { "label": "ATH May 14, 2026 — ultimate bull target", "level": "$236.54", "kind": "resistance" },
-    { "label": "Post-ATH earnings re-rating ceiling", "level": "$220–$230", "kind": "resistance" },
-    { "label": "August 26 earnings bull target", "level": "$215–$220", "kind": "resistance" },
-    { "label": "Psychological round number / distribution zone", "level": "$210", "kind": "resistance" },
-    { "label": "★ Gate 3 / full-size add gate — close above + SPX >7,460 + VIX <17 simultaneously", "level": "$200", "kind": "resistance" },
-    { "label": "Pre-market VWAP high July 6 (6:07 AM ET)", "level": "$198.60", "kind": "resistance" },
-    { "label": "★ Stop Day 2 binary — close ABOVE = Stop Day 1 isolated; close AT/BELOW = mandatory full exit July 7 open; pre-market low $195.05 tested this level", "level": "$195", "kind": "pivot" },
-    { "label": "★ Pre-market reference July 6 6:07 AM ET — $0.33 above stop threshold", "level": "$195.33", "kind": "pivot" },
-    { "label": "July 5 OTC evening carry / July 6 opening reference", "level": "$194.83", "kind": "pivot" },
-    { "label": "July 2 official close (Stop Day 1)", "level": "$193.70", "kind": "support" },
-    { "label": "Psychological round number / heavy put OI wall", "level": "$190", "kind": "support" },
-    { "label": "★ Strongest support — 200-DMA approximation", "level": "$185", "kind": "support" },
+    { "label": "ATH May 14, 2026 — ultimate bull target; requires Kyber resolution + Gate 3 clearance + earnings beat", "level": "$236.54", "kind": "resistance" },
+    { "label": "Post-ATH target zone — analyst consensus $301 implies $220–$230 as intermediate target on August earnings beat", "level": "$220–$230", "kind": "resistance" },
+    { "label": "Pre-Kyber momentum high zone — reclaiming here requires Kyber resolution + Gate 3 confirmed", "level": "$210–$215", "kind": "resistance" },
+    { "label": "Psychological round number / prior reaction zone — multi-session seller engagement above here", "level": "$205", "kind": "resistance" },
+    { "label": "★ Strongest resistance — Gate 3 level; sellers absorbed three consecutive tests ($200.06 OTC July 5, $197.55 official July 6); heavy $200 call OI; must CLOSE above here + SPX >7,460 + VIX <17 for full-size add", "level": "$200", "kind": "resistance" },
+    { "label": "Today's intraday high — immediate ceiling; Kyber denial bounce exhausted here; failed recovery candle", "level": "$197.55", "kind": "resistance" },
+    { "label": "★ Stop threshold / framework pivot — Stop Day 1 isolated at $0.84 above; stop protocol suspended; must close BELOW here to reactivate Stop Day 2", "level": "$195", "kind": "pivot" },
+    { "label": "Today's official close — new framework reference; $0.84 above stop threshold", "level": "$195.84", "kind": "pivot" },
+    { "label": "★ Strongest support — today's intraday low; stop threshold tested here intraday; buyers defended on closing basis; visible to all market participants as a tested support zone", "level": "$194.00", "kind": "support" },
+    { "label": "Stop Day 1 official close (July 2) — prior framework low; close below here would represent new structural low for the framework period", "level": "$193.70", "kind": "support" },
+    { "label": "Prior June correction low / buy-signal base — close below here invalidates intermediate-term bull thesis", "level": "$192.53", "kind": "support" },
+    { "label": "200-day SMA — confirmed ~$190.32; structurally bullish above; critical institutional stop-loss trigger if breached on close", "level": "$190.32", "kind": "support" },
+    { "label": "Psychological support / heavy put-OI wall — significant OI at $190 strike across August/September expiries", "level": "$190", "kind": "support" },
+    { "label": "Deep pullback support — prior swing low; capitulation target in stop-protocol failure scenario", "level": "$185", "kind": "support" },
     { "label": "52-week low", "level": "$157.34", "kind": "support" }
   ],
 
   "catalysts": [
-    { "date": "2026-07-06", "label": "★ STOP DAY 2 DETERMINATION — July 6 US close. Pre-market $195.33 ($0.33 above stop). CLOSE ABOVE $195 = Stop Day 1 isolated; CLOSE AT/BELOW $195 = STOP DAY 2 = mandatory full exit at July 7 open. Gate check 9:25 AM ET: NVDA >$200 + SPX >7,460 + VIX <17 for full-size add gate.", "importance": "high" },
-    { "date": "2026-07-06", "label": "Services PMI 10:00 AM ET + IBIT Gate 3 check + SPCX pre-inclusion Nasdaq bid (NQ +1.55%) — triple simultaneous catalyst window at open", "importance": "high" },
-    { "date": "2026-07-07", "label": "SpaceX Nasdaq 100 effective inclusion (~$4.3B QQQ/QQQM passive); SK Hynix mandatory exit at KST open; NVDA full-size add gate check at 9:25 AM ET (only if July 6 close >$195)", "importance": "high" },
-    { "date": "2026-07-10", "label": "SK Hynix Nasdaq ADR debut (SKHY) — positive HBM4 demand visibility read-through for NVDA", "importance": "medium" },
-    { "date": "2026-08-26", "label": "★ NVDA Q2 FY27 earnings — ~$91B quarterly revenue guide; primary fundamental clearing event", "importance": "high" }
+    { "date": "2026-07-07", "label": "Gate 3 check at 9:25 AM ET: NVDA close ABOVE $200 + SPX >7,460 + VIX <17 simultaneously = full-size add activated. Also: watch for tier-1 analyst notes on Kyber delay validity.", "importance": "high" },
+    { "date": "2026-07-07", "label": "SK Hynix Nasdaq ADR debut (SKHY) — $29.4B; positive read-through for NVDA HBM4 demand visibility if SKHY prices above ₩2,343,000 KRX equivalent", "importance": "medium" },
+    { "date": "2026-07-10", "label": "SKHY first trading day on Nasdaq — global semiconductor sentiment bellwether; watch SKHY open vs offering price as AI memory demand signal", "importance": "medium" },
+    { "date": "2026-07-28", "label": "FOMC meeting — rate decision; dovish surprise = Nasdaq/AI bull; hawkish = headwind", "importance": "medium" },
+    { "date": "2026-08-26", "label": "★ NVDA Q2 FY27 earnings — ~$91B quarterly revenue guide; Kyber narrative resolved on call; primary fundamental clearing event", "importance": "high" }
   ],
 
-  "analysis": "## Technical analysis (Monday July 6, 2026 — pre-market morning brief, 11:15 UTC / 7:15 AM ET)\n\n**Current state:** NVDA pre-market $195.33 at 6:07 AM ET. Pre-market VWAP range: $198.60 high / $195.05 low. The $195 stop threshold has been tested intraday in pre-market ($195.05). US official session opens in ~2.25 hours.\n\n**Stop Day 2 probability assessment:** Elevated relative to yesterday evening. Key deterioration: pre-market ceiling $198.60 vs Sunday OTC ceiling $200.06 — each successive session is producing a lower high. Pre-market low $195.05 represents active institutional sellers at the stop threshold even in a thin pre-market session. Base case remains Stop Day 1 isolation (close above $195), but the margin has narrowed.\n\n**Cross-asset morning matrix (as of 11:15 UTC):**\n- BTC: $62,849 (-$964 from last night) — 10-hour declining session, IBIT unconfirmed (BEARISH vs last night)\n- SK Hynix: ₩2,343,000 (Stop Day 2 confirmed, mandatory exit) — BEARISH cross-sector\n- NQ futures: +1.55% (SPCX pre-inclusion) — BULLISH, strongest pre-open Nasdaq tailwind in this framework\n- VIX: 15.81 (last confirmed) — BULLISH, Gate 2 intact\n- SPX futures: +0.63% — BULLISH macro\n\n**NQ +1.55% SPCX pre-inclusion dynamics:** SPCX Nasdaq 100 effective inclusion on July 7 requires QQQ/QQQM managers to be fully weighted in all Nasdaq 100 names before the July 7 open. NVDA as the index's largest AI-weight receives the largest absolute dollar bid from this mechanical rebalancing. Importantly, this is contractual — QQQ/QQQM managers cannot choose not to buy. The bid starts at 9:30 AM ET today and runs throughout the session.\n\n**Options $195 max pain floor:** July 11 expiry max pain at $195 creates an automatic market-maker delta-hedge floor at the stop threshold. This is the most structurally favorable piece of options positioning for the NVDA bull case today — market-makers act as automatic buyers near $195."
+  "analysis": "## Technical analysis (July 6, 2026 — official US close)\n\n**Trend:** NVDA is above its 200-day SMA (~$190.32), which keeps the structural uptrend technically intact. The stock is in a $192–$200 consolidation box that it has failed to break above in three consecutive tests (July 1 official close was $200.09 entering the position; every session since has been below the $200 gate). The structure is neutral-to-deteriorating within a technically intact long-term uptrend.\n\n**Momentum:** RSI at 44.57 is neutral/mild-sell territory — not oversold (no bounce signal), not overbought (no reversal signal). The RSI read provides no directional edge; relative performance and volume tell a clearer story.\n\n**Pattern:** A descending resistance pattern has formed at $197–$200 across three tests: OTC $200.06 (July 5, faded to $194.83); today's intraday high $197.55 (faded to $195.84). Each recovery attempt reaches a lower high. This is classic distribution, occurring just above the $195 stop threshold.\n\n**Volume — the most important signal today:** 56.51M shares (35% of 160.2M average) is the critical data point. On a day the SOX gained 3.2% with AMD running +7.7%, NVDA's recovery from $194.00 to $195.84 on 56.51M shares shows no institutional participation. In strong NVDA sessions, volume runs 130–200M+. The recovery from the intraday low on 35% of average volume is not institutional accumulation — it is retail stop-hunting and short covering. Volume is DIVERGING bearishly from even the modest price recovery.\n\n**Strongest support — $194.00 (today's intraday low):** Buyers appeared at $194.00 and defended the close above $195. This is now confirmed tested support. The caveat: buyers were defending a news-catalyst stop-hunt (Kyber denial drove the bounce). If $194.00 is re-tested on a neutral news day, the defense may be weaker.\n\n**Strongest resistance — $200 (Gate 3 / seller zone):** Three consecutive failed tests: (1) July 5 OTC $200.06 faded to $194.83; (2) July 6 intraday $197.55 faded to $195.84. The Kyber delay narrative adds fundamental justification to what was already strong technical resistance at the $200 round number with elevated call OI. This is the highest-confidence resistance in the framework: sellers at $197–$200 are specifically identified, motivated (trapped buyers and fresh Kyber shorts), and have proven capable of absorbing the SPCX inclusion mechanical bid.\n\n**Decision points:** The framework is now binary at a higher level: Can NVDA close above $200 on July 7 or beyond (Gate 3)? If yes → full-size add. If no → hold half-size through August 26 earnings. The Kyber narrative is the key variable — it need not be proven true; the uncertainty alone suppresses institutional buying in the $197–$200 zone.\n\n**Invalidation of the bear read:** A July 7 close above $200 on volume >150M shares, ideally accompanied by a tier-1 analyst note confirming Kyber delay is non-material to 2026-2027 earnings, would invalidate the distribution pattern and activate Gate 3. Absent both volume confirmation and Kyber clarity, the $200 level remains a seller-defended ceiling."
 }
