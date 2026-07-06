@@ -7,7 +7,7 @@
   "direction": "short",
   "conviction": "medium",
   "time_horizon": "1-5 trading days",
-  "current_price": 462.0,
+  "current_price": 712.0,
   "entry": "Short QQQ at open ($458–468 implied open given NQ futures -1.2% from 25,358.60 close). Alternative: buy QQQ July 18 $455 puts at open for defined-risk exposure. Do NOT short into the 3:00–4:00 PM reconstitution window — the passive bid distorts the close and creates an unpredictable tape. If the open gap is larger than 2% (QQQ opens below $452), wait for a dead-cat bounce to $455–460 before entering the short. Size 3% gross.",
   "stop_loss": "$478 daily close (~SPX reclaims 7,460 regime floor and VIX closes below 17 simultaneously) — implies the reconstitution close catalyzed a genuine trend reversal rather than a mechanical price distortion, and the morning STEP ASIDE framework is obsolete. A $478 QQQ close maps approximately to SPX 7,450–7,460.",
   "targets": [
@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-26",
   "expires_at": "2026-07-07",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["QQQ", "Nasdaq", "tech", "short", "reconstitution", "quarter-end", "OpenAI", "macro", "AI-multiples"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-06",
+    "final_price": 712.0,
+    "return_pct": -54.1,
+    "outcome_label": "Stopped out — regime cleared",
+    "note": "SPX >7,460 AND VIX <17 simultaneously confirmed as of July 2–3; QQQ at $712.60 on July 6. Stop conditions definitively met. Reference price stored in file ($462) was erroneous — QQQ 52-week low is $549.58; return_pct computed from that reference price per spec and does not reflect actual trade P&L."
+  },
   "levels": {
     "entry_low": 458.0,
     "entry_high": 468.0,

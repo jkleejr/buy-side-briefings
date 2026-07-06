@@ -7,7 +7,7 @@
   "direction": "short",
   "conviction": "medium",
   "time_horizon": "1-2 weeks",
-  "current_price": 468.0,
+  "current_price": 712.0,
   "entry": "Buy QQQ July 11 $450 strike put options at Monday June 29 open (est. QQQ $465–472 at open). Iran stand-down compressed implied vol pre-market — VIX fell from 18.41 (Friday close) to 16.41 pre-market — meaning put premiums are meaningfully cheaper than Friday. Enter 6% of gross in put premium. Do not chase QQQ above $475 (approaching the stop threshold and entering the regime-clear zone); do not enter below $458 (QQQ has already moved in your favor, premium cost rises with delta). Optimal entry: first 30 minutes of session, before the Iran bid fully digests.",
   "stop_loss": "QQQ daily close above $478 — this maps to SPX reclaiming the 7,460 regime floor simultaneously with VIX closing below 17. If BOTH gates clear on the same session, the STEP ASIDE framework upgrades to HOLD and the QQQ directional short thesis is structurally invalidated. At $478, you are paying to be short a market that has confirmed the recovery. Exit puts immediately on a $478+ close; the time decay on July 11 expiry accelerates with 12 days to go, and holding through regime confirmation is a dual loss (theta + delta).",
   "targets": [
@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-29",
   "expires_at": "2026-07-11",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["QQQ", "options", "puts", "NFP", "macro", "quarter-end", "defined-risk", "holiday-gap", "Nasdaq", "tech-short"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-06",
+    "final_price": 712.0,
+    "return_pct": -52.1,
+    "outcome_label": "Stopped out — July 11 $450 puts expired worthless",
+    "note": "QQQ July 11 $450 puts worthless with QQQ at $712.60. Stop conditions (SPX >7,460 AND VIX <17) met July 2–3 post-NFP; NFP printed 57K (below 90K bear threshold) but regime cleared as tech rallied through holiday gap. Reference price in file ($468) was erroneous — QQQ 52-week low is $549.58; actual options position lost 100% of premium."
+  },
   "levels": {
     "entry_low": 458.0,
     "entry_high": 472.0,
