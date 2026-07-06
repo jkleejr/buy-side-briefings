@@ -1,0 +1,95 @@
+{
+  "routine": "markets",
+  "date": "2026-07-06",
+  "window": "night",
+  "generated_at": "2026-07-06T22:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — Dual-gate Day 1 CLEARED (SPX 7,537 +0.72%, Dow ATH 53K); ISM Services Goldilocks 54.0%; NVDA Stop Day 2 survived ~$195.84; BTC $62K floor at risk overnight",
+    "conviction": "medium",
+    "rationale_short": "Dual-gate Day 1 confirmed: SPX closed at 7,537 (+77pts above the 7,460 threshold) with VIX holding below 17, activating the BUY regime as the July 3 night brief's base-case projected. ISM Services at 54.0% delivered the Goldilocks read (cool from 54.5%) that kept the 30Y below 5.00%, preserving the rate-cut narrative intact. NVDA Stop Day 2 narrowly survived (~$195.84 close, +$0.84 above the $195 threshold) — Stop Day 1 isolated. Conviction held at MEDIUM: BTC reversed −$2,200 from the $63,900 overnight high to ~$61,677 intraday (approaching the $62,000 structural floor), and Strategy's disclosed $216M BTC Monetization sale signals the largest corporate BTC treasury has become a recurring seller."
+  },
+  "supporting_data": [
+    { "label": "SPX 7,537.43 (+0.72%) — Dual-gate Day 1 CLEARED: closed 77pts above 7,460 regime floor; Dow Jones new closing ATH 53,056 (+0.29%); Nasdaq 26,121.16 (+1.12%); Russell 2000 3,009.54 (+0.45%, reclaimed 3,000 — breadth expansion positive", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-6-2026" },
+    { "label": "ISM Services PMI June 54.0% — GOLDILOCKS: slight cool from 54.5% prior; Employment expanded for first time in 4 months (+3.3pt to 51.2%); Business Activity 55.4%; New Orders 55.1%; 30Y held below 5.00% critical threshold (~4.985%)", "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-june-2026-ism-services-pmi-report-302817275.html" },
+    { "label": "BTC reversed from $63,900 overnight high → ~$61,677 US session intraday low (−$2,223); Strategy disclosed 3,588 BTC sold for $216M ($60,200 avg) via new 'BTC Monetization Program' to fund Digital Credit dividends — largest corporate BTC treasury now a recurring seller", "url": "https://www.coindesk.com/tech/2026/07/06/live-markets-bitcoin-pops-to-usd63-900-then-reverses-as-week-begins" },
+    { "label": "NVDA Stop Day 2 SURVIVED — close ~$195.84 (+0.37%), narrowly above $195.00 Stop Day 2 threshold by $0.84; Stop Day 1 isolated; full-size add gate opens July 7 at 9:25 AM ET ONLY if NVDA >$200 + SPX >7,460 + VIX <17 simultaneously", "url": "https://stockanalysis.com/stocks/nvda/history/" },
+    { "label": "SPCX fell −3.4% to $156.45 (from $162 carry) heading into July 7 Nasdaq-100 inclusion; Day 9 bond distribution pressure prevailed over pre-inclusion positioning; $4.3B QQQ/QQQM forced buy still executes tomorrow at close regardless of price", "url": "https://tradingeconomics.com/spcx:us" },
+    { "label": "10Y UST ~4.47%; 30Y ~4.985% (below 5.00% trigger); Gold $4,158 (−0.28%); WTI $67.83–$69.20; Brent $71.30–$72.49; Dell +7.7% (Trump White House event); Intel +3% (~$124)", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-6-2026" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7537.43,  "change_pct":  0.72, "as_of": "2026-07-06T20:00:00Z" },
+    "nasdaq": { "level": 26121.16, "change_pct":  1.12, "as_of": "2026-07-06T20:00:00Z" },
+    "vix":    { "level": 14.90,    "change_pct": -5.57, "as_of": "2026-07-06T20:00:00Z" },
+    "ust10y": { "level": 4.47,     "change_bps":  1,    "as_of": "2026-07-06T20:00:00Z" },
+    "dxy":    { "level": 100.62,   "change_pct": -0.16, "as_of": "2026-07-06T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",               "value": 14.90,   "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460",      "value": 7537.43, "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",               "value": 100.62,  "trigger_above": 100,   "unit": "" },
+    { "name": "BTC ($62K floor)",  "value": 61800,   "trigger_below": 62000, "unit": "$" },
+    { "name": "30Y Yield",         "value": 4.985,   "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",             "value": 71.90,   "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",    "note": "~$195.84 close (+0.37%) — STOP DAY 2 NARROWLY SURVIVED ($0.84 above $195.00 threshold). Stop Day 1 isolated. Full-size add gate opens July 7 at 9:25 AM ET: NVDA must open >$200 AND SPX >7,460 AND VIX <17 simultaneously. Any pre-market print below $195 overnight invalidates the gate and triggers mandatory half-size-only hold through August 26 Q2 FY27 earnings ($91B guide).", "sentiment": "neutral" },
+    { "ticker": "META",    "note": "~$600 (+2.98% from $583.50 carry) — BEST large-cap AI session of the post-holiday period. Zero semiconductor/Korea exposure. ISM-cool and 57K NFP rate-cut narrative expands the multiple on a $60B+ annual FCF machine. Q2 2026 earnings late July is first AI-at-scale quarter. Hold; add on any July 7 weakness.", "sentiment": "positive" },
+    { "ticker": "GOOGL",   "note": "~$371 (+1.82% from ~$364 carry) — rate-relief bid; ISM Services validates Search and Cloud AI narrative. Q2 earnings late July. The morning's $350–$355 add-on-dip gate did not trigger; monitor July 7 open for better entry.", "sentiment": "positive" },
+    { "ticker": "AAPL",    "note": "~$274 (+1.31%) — participated in the broad Nasdaq rally but China/CXMT/YMTC overhang persists. Structurally avoid adding; let existing positions ride on macro tailwind.", "sentiment": "neutral" },
+    { "ticker": "SPCX",    "note": "$156.45 (−3.4% from $162 carry) — Day 9 distribution dominated the session; the pre-market +1% bid did not hold. $4.3B QQQ/QQQM forced buy executes at July 7 close. Watch for inclusion spike above $175 tomorrow — DO NOT enter on spike. Re-entry gate: two consecutive closes above $185 on above-average volume (est. July 9–11). Alert: if July 7 spike fails to lift SPCX above $165 despite $4.3B forced buy, re-evaluate gate downward.", "sentiment": "neutral" },
+    { "ticker": "BTC-USD", "note": "~$61,677 US session intraday low — CRITICAL: UTC midnight close (8 PM ET July 6) determines if Gates 1+2 remain intact ($62,000 floor). Strategy's 3,588 BTC/$216M sale (disclosed today) via BTC Monetization Program = largest corporate BTC treasury now a recurring quarterly seller. IBIT Gate 3 unconfirmed. Monitor BTC until 8 PM ET: above $62,000 UTC close = Gates intact; below = full framework reset required.", "sentiment": "negative" },
+    { "ticker": "DELL",    "note": "+7.7% — Trump White House event promoting Dell computers at a joint NYSE/Nasdaq opening bell ceremony. Political catalyst; not fundamental. Monitor for follow-through or fade.", "sentiment": "positive" },
+    { "ticker": "INTC",    "note": "~$124 (+3%) — continuing its comeback trajectory. No fundamental shift; participating in broad Nasdaq risk-on session.", "sentiment": "positive" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "BTC (before tonight's UTC midnight close confirmation)",
+      "reason": "BTC reversed −$2,200 from the $63,900 overnight high to ~$61,677 intraday, breaching the $62,000 structural floor on an intraday basis. Tonight's UTC midnight close (8 PM ET July 6) is the decisive gate: if BTC closes below $62,000, Gates 1+2 reset and the entire two-gate accumulation confirmation sequence requires restarting. Strategy's $216M BTC Monetization Program (3,588 BTC, avg $60,200) signals the world's largest corporate BTC treasury is now a recurring seller. IBIT Gate 3 remains unconfirmed.",
+      "better_entry": "Monitor BTC price until 8 PM ET tonight. If UTC midnight close holds above $62,000: Gates 1+2 intact, IBIT Gate 3 still required before US-market re-entry. If BTC closes below $62,000: stand aside, reset the gate sequence, wait for a new two-consecutive-UTC-midnight-close confirmation above $62,000 before re-evaluating."
+    },
+    {
+      "ticker": "SPCX (July 7 inclusion-day spike)",
+      "reason": "SPCX heads into $4.3B forced buy at $156.45 — 12.7% below the $185 re-entry gate. Day 9 distribution prevailed over the pre-inclusion bid. Historical Nasdaq-100 inclusions (Palantir, Strategy) peaked on or before inclusion dates. The float remains only 3–5% of shares outstanding — forced buyers elevate the price temporarily, but existing holders use the volume to exit. The inclusion spike is a SELL event, not an entry signal.",
+      "better_entry": "July 7: watch the inclusion-day spike but do NOT enter above $175. Post-inclusion: monitor for two consecutive closes above $185 on above-average volume (est. July 9–11). If SPCX fails to spike above $165 on the $4.3B buy — that signals overwhelming distribution and warrants re-evaluating the gate level downward."
+    },
+    {
+      "ticker": "NVDA (full-size before July 7 gates confirmed)",
+      "reason": "Stop Day 2 survived by a $0.84 margin — the thinnest framework survival of this cycle. The full-size add gate requires all four conditions simultaneously at 9:25 AM ET July 7: NVDA >$200, SPX >7,460, VIX <17, July 6 close >$195. Any overnight weakness below $195 in after-hours or pre-market makes this a Stop Day 2 retrospective, triggering mandatory full exit at July 7 open.",
+      "better_entry": "July 7 open at 9:25 AM ET: verify all four gates simultaneously. NVDA pre-market above $200 + SPX futures >7,460 + VIX <17 = full-size add activated. Any single failure = hold half-size only through August 26 Q2 FY27 earnings. Do not average down on Stop Day 2 proximity."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SPX / QQQ",
+      "direction": "long",
+      "thesis": "Dual-gate Day 1 cleared. The July 3 night brief's base-case scenario (60% probability) played out precisely: SPX held above 7,460, VIX sub-17, BUY regime activated. Dow Jones new ATH at 53,056 confirms broad market participation beyond AI semis. ISM Services Goldilocks preserves the 57K NFP rate-cut narrative. July 7 SPCX inclusion provides $4.3B mechanical Nasdaq demand at the close regardless of macro. Dual-gate Day 2 clearance tomorrow upgrades conviction to HIGH for the full Q2 earnings season starting with PepsiCo (July 9).",
+      "entry": "Hold existing longs through July 7 close. Add on any pre-inclusion dip toward SPX 7,490–7,510 in the first hour. Target: SPX 7,700 through July earnings season. Dual-gate Day 2 clearance (SPX >7,460 AND VIX <17 at July 7 close) = upgrade to HIGH conviction.",
+      "invalidation": "SPX fails to close above 7,460 on July 7 (Dual-gate Day 2 failure — revert to HOLD); VIX spikes above 17 on hawkish FOMC minutes July 8; 10Y UST breaks above 4.60%.",
+      "conviction": "medium",
+      "horizon": "1–3 weeks through July earnings season"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "long — conditional full-size add",
+      "thesis": "Stop Day 2 survived with the thinnest margin of the framework period. SPCX Nasdaq-100 inclusion tomorrow drives a Nasdaq-wide bid that historically lifts the complex. Q2 FY27 earnings August 26 ($91B guide) remains the structural re-rating event. China H200 authorization (DOC/BIS reportedly clearing 10 Chinese firms) intact over the holiday gap. Full-size add requires all four conditions simultaneously at 9:25 AM ET July 7: NVDA >$200, SPX >7,460, VIX <17, July 6 close confirmed above $195.",
+      "entry": "July 7 open at 9:25 AM ET ONLY if all four gates simultaneously met. Add to full-size (double existing half-size). Stop: $195. Target 1: $215 before August 26 earnings. Target 2: $240+ post-earnings if $91B guide confirmed.",
+      "invalidation": "NVDA pre-market below $195 overnight (Stop Day 2 retrospective — mandatory full exit at July 7 open, zero discretion); NVDA opens July 7 below $200 (hold half-size only); FOMC minutes push VIX above 17.",
+      "conviction": "low",
+      "horizon": "Binary July 7 9:25 AM ET; hold through August 26 if activated"
+    },
+    {
+      "asset": "SPCX",
+      "direction": "short — post-inclusion fade",
+      "thesis": "SPCX enters the $4.3B forced buy day at $156.45 — already 3.4% below the morning carry after distribution sellers prevailed on Day 9. High-profile Nasdaq-100 additions (Palantir, Strategy) peaked on or before inclusion dates. Float is only 3–5% — forced buyers elevate price temporarily, but distribution sellers use the volume to exit. The inclusion spike is the exit opportunity for trapped holders, not an entry.",
+      "entry": "July 7: sell SPCX or buy puts at any spike above $175 on the inclusion bid. Size: 10–15% hedge allocation. Target: $150–155 post-inclusion pullback (est. July 8–10).",
+      "invalidation": "SPCX closes above $185 on two consecutive sessions with above-average volume (distribution cleared — full reversal of the Don't Buy thesis); secondary offering materially expands the float.",
+      "conviction": "low",
+      "horizon": "1–2 weeks post-inclusion fade"
+    }
+  ],
+  "bear_case": "BTC's reversal from $63,900 to ~$61,677 is the session's most significant regime warning. Tonight's UTC midnight close (8 PM ET) is the decisive gate — with BTC at risk of resetting the two-gate framework entirely. Strategy's $216M BTC Monetization disclosure (3,588 BTC, $60,200 avg) confirms the largest corporate BTC treasury has pivoted from accumulator to recurring seller: if this program executes quarterly at $200–300M per tranche, it represents 1,500–2,000+ BTC of recurring institutional supply into every rally. NVDA's $0.84 Stop Day 2 survival margin means any overnight pre-market dip below $195 triggers the mandatory full exit at July 7 open. The FOMC minutes on July 8, written from the committee's June 17 data backdrop (pre-57K NFP, pre-ISM), will likely read more hawkish relative to current market pricing — potentially repricing the July 28 hike probability back toward 25–30% and compressing the Nasdaq P/E ~28x multiple that underpins the dual-gate BUY thesis. June CPI on July 14 at 4.2% (May baseline) remains the regime's ultimate arbiter. Invalidation: if BTC holds above $62,000 on tonight's UTC midnight close AND SPX closes above 7,460 on July 7 (Dual-gate Day 2), the near-term bear case weakens materially. If both conditions fail simultaneously, the call reverts to HOLD pending June CPI July 14.",
+  "body_mdx": "data/briefings/markets/2026-07-06-night.mdx"
+}

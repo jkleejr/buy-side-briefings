@@ -1,104 +1,98 @@
 {
   "events": [
     {
-      "date": "2026-07-04",
-      "label": "BTC Gate 2 — July 4 UTC midnight close ($62,000 threshold); US markets closed (Independence Day)",
-      "kind": "SIGNAL",
-      "tickers": ["BTC", "IBIT"],
-      "note": "Gate 1 likely fired on July 3 UTC midnight close (BTC $62,170 intraday high; ascending-low structure intact). Gate 2 = July 4 UTC midnight close above $62,000 (8 PM ET July 4). Both gates must clear AND at least one confirmed positive IBIT daily net inflow before US market re-entry at July 6 open. US markets closed July 4 (Independence Day, actual). Gate 2 is the determining check for BTC re-entry eligibility."
-    },
-    {
-      "date": "2026-07-06",
-      "label": "US markets reopen — SPCX pre-inclusion buying; dual-gate Day 1 restart; BTC Gate 2 confirmation check",
-      "kind": "OTHER",
-      "tickers": ["QQQ", "SPY", "NVDA", "SPCX", "BTC", "IBIT"],
-      "note": "Holiday tape: ES futures ~7,555 (+102pts vs July 2 SPX close ~7,453; 95pts above 7,460 gate). DAX +2.2% and Stoxx 600 +1.4% (record close) removed Europe contagion risk. NVDA touched $200.06 intraday (holiday tape only; needs US closing confirmation). BTC Gate 1 likely fired (July 3 UTC midnight close); Gate 2 (July 4 UTC midnight) determines BTC re-entry eligibility at July 6 open. SPCX pre-inclusion buying begins at July 6 close (index funds must buy before July 7 effective date). Dual-gate Day 1: SPX must close >7,460 AND VIX <17. NVDA full-size add: needs July 6 close >$200 + SPX >7,460 + VIX <17 simultaneously. JPMorgan raised S&P 500 target to 7,800 from 7,200 (+5.5% from holiday ES levels). DXY 100.70 approaching 100 break — sub-100 on July 6 = all six regime indicators clearing simultaneously for the first time this cycle."
-    },
-    {
       "date": "2026-07-07",
-      "label": "SPCX added to Nasdaq-100 (~$7.3B forced passive inflows: $4.3B QQQ/QQQM + $3B Russell); post-57K NFP holiday return",
+      "label": "SPCX added to Nasdaq-100 (~$4.3B QQQ/QQQM forced buy at close); Dual-gate Day 2 attempt",
       "kind": "OTHER",
-      "tickers": ["SPCX", "QQQ", "QQQM"],
-      "note": "Dual catalyst day: (1) SPCX Nasdaq-100 inclusion effective July 7 — QQQ/QQQM forced to buy ~$4.3B of SPCX at index weight; $3B Russell reweighting adds; $7.3B total mechanical demand regardless of macro conditions. (2) July 7 open reflects full repricing of 57K NFP growth scare (vs. 110K consensus) over 3-day July 4 gap. SPX closed July 2 at ~7,453 (7 points below 7,460 regime floor); VIX 16.81 (held below 17). For dual-gate Day 1 restart: SPX must close >7,460 AND VIX <17 on July 7. NVDA must close above $200 with above-average volume for full re-entry. SPCX entry improved from $163 pre-market to ~$156 close on July 2. 57K NFP: July 28 FOMC hike probability collapsed to ~19.4% from 33% — rate-relief tailwind for July 7 open."
+      "tickers": ["SPCX", "QQQ", "QQQM", "NVDA"],
+      "note": "SPCX heads into inclusion at $156.45 (July 6 close) — 12.7% below the $185 re-entry gate after Day 9 distribution prevailed. $4.3B QQQ/QQQM forced passive buy executes at the July 7 close regardless of macro. Sell any inclusion-day spike above $175; DO NOT enter on the spike. NVDA full-size add gate: check at 9:25 AM ET (NVDA >$200 + SPX >7,460 + VIX <17 simultaneously). Dual-gate Day 2: SPX must again close above 7,460 AND VIX below 17 for HIGH conviction upgrade. BTC UTC midnight close from July 6 (8 PM ET) is the overnight gate check that precedes this session."
     },
     {
       "date": "2026-07-08",
-      "label": "FOMC Minutes from June 17 meeting (est. ~2 PM ET) — first post-dot-plot-removal release",
+      "label": "FOMC June 17 minutes (~2 PM ET) — written pre-57K NFP; potentially hawkish relative to current pricing",
       "kind": "FOMC",
       "time_et": "2:00 PM",
       "tickers": ["TBT", "TLT", "QQQ", "BTC"],
-      "note": "Minutes from the June 17 FOMC meeting (est. release ~3 weeks after). First FOMC at which Warsh removed the dot plot. Context has shifted materially: 57K NFP (July 2) versus the June 17 committee's data backdrop. July 28 hike probability ~19.4% (down from 33% pre-NFP). Hawkish minutes (inflation focus, 3-hike path supported) = July 28 probability bounces back toward 25–30%. Dovish tone (data dependence, growth concern noted) = September rate-cut pricing accelerates. ISM June 53.3, Prices Paid 73.0, WTI -30% Q2 are the post-June-17 data the committee did not have. SK Hynix ADR listing expected around this date — first US capital-markets clearing of HBM4 demand thesis; positive read-through for TSM, AVGO, NVDA."
+      "note": "Minutes from the June 17 FOMC meeting. Written before 57K NFP (July 2) and before ISM Services 54.0% (July 6). Nine of 18 officials projected at least one 2026 hike at June 17. Current July 28 hike probability is ~19% — if the minutes read hawkish (inflation focus, 3-hike path maintained), probability could bounce back toward 25-30%, compressing Nasdaq multiple at P/E ~28x and putting the 30Y through 5.00% temporarily. Dovish tone (data dependence, growth concerns flagged) = September cut confirmed. Plan for 2 PM ET volatility. SK Hynix ADR listing context building toward July 10."
+    },
+    {
+      "date": "2026-07-09",
+      "label": "PepsiCo (PEP) Q2 2026 earnings — Q2 earnings season kickoff; consumer demand barometer",
+      "kind": "EARNINGS",
+      "time_et": "Pre-market",
+      "tickers": ["PEP"],
+      "note": "PepsiCo is the first significant Q2 2026 earnings report. A beat with raised guidance = consumer demand held up despite 57K NFP growth scare, supporting the soft-landing narrative and BUY regime. A miss or lowered guidance = growth-scare confirms, risk-off pressure before CPI July 14. Sets the tone for the consumer-staples read heading into Q2 earnings season peak (META, GOOGL, MSFT, AMZN all reporting late July)."
     },
     {
       "date": "2026-07-10",
-      "label": "SK Hynix ADR Nasdaq listing — $29.4B offering, 17.79M shares",
+      "label": "SK Hynix (SKHY) Nasdaq ADR listing — $29.4B offering; Delta Air Lines (DAL) Q2 earnings",
       "kind": "OTHER",
-      "tickers": ["000660.KS", "QQQ", "TSM", "NVDA"],
-      "note": "SK Hynix Nasdaq ADR listing — $29.4B offering (17.79M shares). Underwriters: BofA, Goldman Sachs, Citigroup, JPMorgan. Context: Korea circuit breaker session July 2 (KOSPI -4.45%, SK Hynix -10.96%) on Apple/CXMT/YMTC mobile DRAM narrative — separate from HBM4 (AI), but created sentiment overhang on the Korean semiconductor complex. ADR listing at/above $29.4B offering price = institutional vote of confidence in HBM4 demand thesis; below = circuit-breaker narrative confirmed as a broader HBM4 concern. TSM and NVDA read-through constructive if ADR prices above consensus. Underwriter stabilization mandate provides ADR floor."
+      "tickers": ["000660.KS", "TSM", "NVDA", "DAL"],
+      "note": "Two sector clearing events: (1) SK Hynix SKHY Nasdaq ADR listing ($29.4B, 17.79M shares; underwriters BofA, Goldman, Citi, JPMorgan). ADR pricing above offering = institutional vote of confidence in HBM4 demand thesis; constructive for NVDA, TSM, AVGO. Below = Korea circuit breaker HBM4 concern confirmed. SK Hynix mandatory KRX exit executed at July 7 KST open per Stop Day 2 protocol. (2) Delta Air Lines Q2 earnings tests whether 57K NFP growth scare is filtering into travel demand — strong bookings support consumer resilience thesis."
     },
     {
       "date": "2026-07-14",
-      "label": "June CPI release (est. 8:30 AM ET) — regime-defining event for summer; 57K NFP makes CPI the summer's most important data",
+      "label": "June CPI release (est. 8:30 AM ET) — regime-defining; May baseline 4.2%; ISM Prices Paid fell 9.1pt in June",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "NVDA", "MU", "BTC"],
-      "note": "June CPI is now the regime-defining event following 57K NFP (July 2). With rate cuts back on the table for 2026 (July 28 hike probability ~19.4%) and growth-scare pricing in equities, CPI determines whether the regime is 'rate cuts + growth recovery' (bullish) or 'sticky inflation + slowing growth' (stagflation — worst multiple environment). Input-cost context: ISM Prices Paid 73.0 from 82.1 in May (9.1-point drop); WTI at $66.50 (-30%+ Q2 — largest quarterly decline since 2020); June CPI captures first full month of Iranian oil normalization. Scenario A: CPI ≤3.5% — rate cuts for 2026 confirmed, BofA 3-hike framework withdrawn, BUY upgrades to HIGH conviction for full earnings season. Scenario B: CPI 4.0%+ — stagflation risk; STEP ASIDE or BEARISH warranted even with weak NFP."
+      "note": "June CPI is the summer's regime-defining event. Context: ISM Services Prices Paid dropped to 73.0 from 82.1 in May; WTI averaged $66-70 in June (first full month of Iranian oil normalization); May CPI was 4.2% YoY. Scenario A: CPI ≤3.5% → rate-cut cycle confirmed; BUY upgrades to HIGH conviction regardless; full earnings season adds activated. Scenario B: CPI ≥4.0% → stagflation risk; STEP ASIDE or BEARISH warranted even with weak NFP. Scenario C: 3.5-4.0% → maintain MEDIUM conviction BUY. The Strategy BTC Monetization Program ($216M/$60,200 avg) adds a crypto-specific overhang if CPI surprises hawkish (rate hold = BTC headwinds)."
     },
     {
       "date": "2026-07-22",
       "label": "TSLA Q2 2026 earnings (est.) — after market close; 480K delivery beat sets the floor",
       "kind": "EARNINGS",
       "tickers": ["TSLA"],
-      "note": "Q2 earnings follow the July 2 delivery report: 480,126 vehicles delivered (vs. 406,024 consensus; +25% YoY; best-ever Q2). Despite the blowout beat, TSLA fell ~7.49% on July 2 (sell-the-news + growth scare). Q2 earnings call (~July 22) is the fundamental clearing event: need gross margin recovery (>25%), FSD revenue recognition at scale, and Q3 delivery guide >450K for the stock to re-rate above $420. Weak gross margin (<22%) or no FSD clarity = $393 July 2 close is the near-term top. The delivery beat is confirmed; the financial execution is not yet validated."
+      "note": "Q2 earnings follow the July 2 delivery report: 480,126 vehicles delivered (vs. 406,024 consensus; +25% YoY; best-ever Q2). Despite the blowout beat, TSLA fell ~7.49% on July 2 (sell-the-news + growth scare). Q2 earnings call (~July 22) is the fundamental clearing event: need gross margin recovery (>25%), FSD revenue recognition at scale, and Q3 delivery guide >450K for the stock to re-rate above $420. Weak gross margin (<22%) or no FSD clarity = $393 July 2 close is the near-term top."
     },
     {
       "date": "2026-07-28",
-      "label": "FOMC meeting (July 28-29) — hike probability ~19.4% after 57K NFP; June CPI (~Jul 14) is the determining input",
+      "label": "FOMC meeting (July 28-29) — hike probability ~19% after 57K NFP; June CPI (~Jul 14) is the determining input",
       "kind": "FOMC",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
-      "note": "July 28 FOMC hike probability collapsed from 33% (Warsh's Sintra hawkishness) to ~19.4% after 57K NFP (July 2). Policymakers expected to hold while monitoring CPI trajectory. June CPI (~July 14) is the primary input: CPI ≤3.5% = hike probability collapses further, rate cuts discussed; CPI 4.0%+ = September hike back on the table. Nine of 18 officials projected at least one 2026 hike at June 17 meeting; 57K NFP shifts that calculus toward a pause. SCOTUS upheld Fed independence June 29 — Warsh can move in either direction without political pressure."
+      "note": "July 28 FOMC hike probability ~19% after 57K NFP collapse. June CPI July 14 is the primary input. CPI ≤3.5% = hike probability collapses further; CPI 4.0%+ = September hike back on the table. SCOTUS upheld Fed independence June 29 — Warsh can move in either direction without political pressure. Strategy BTC Monetization Program adds crypto-specific rate sensitivity: higher-for-longer = BTC downside; cuts confirmed = BTC positive."
     },
     {
       "date": "2026-07-29",
       "label": "META Q2 2026 earnings — AI cloud business first quantification; earnings season peak week",
       "kind": "EARNINGS",
       "tickers": ["META", "GOOGL", "MSFT", "AMZN"],
-      "note": "Bloomberg reported July 1 that Meta is building an AI cloud business to sell excess compute capacity (META surged +8.88%). META gave back -4.81% on July 2 to $583.50 (now at the $575–595 'better entry' zone). Q2 earnings July 29 is the first event where management must quantify the cloud business timeline, revenue model, and go-to-market plan. The July 2 NFP-driven rate-relief narrative (rate cuts for 2026 back on the table) is actually META-positive: lower discount rates expand the multiple for a $60B+ annual FCF machine with a new cloud revenue stream. GOOGL, MSFT, and AMZN also report in mid-to-late July — peak Q3 earnings risk window."
+      "note": "META Q2 earnings July 29 is the first event where management must quantify the cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). META +2.98% on July 6 on rate-relief bid. Q2 earnings is the first AI-at-scale quarter. GOOGL, MSFT, and AMZN also report in mid-to-late July — peak Q2 earnings risk window. ISM Services 54.0% (July 6) validates the Search and Cloud AI expansion narrative."
     },
     {
       "date": "2026-08-13",
       "label": "Iran-US Islamabad Declaration 60-day deadline — Hormuz full reopening + sanctions relief",
       "kind": "GEO",
       "tickers": ["XLE", "QQQ", "BTC", "NVDA"],
-      "note": "Deal operational from June 18 MOU signing; 60-day window expires August 13. WTI fell to $66.50 on July 2 (4.25-month low; -30%+ Q2, largest quarterly decline since 2020) — oil normalization is proceeding ahead of the original MOU schedule. If August 13 deadline met with full Hormuz clearance and confirmed sanctions relief, WTI could extend to $62–65. Failure or reversal = oil spike reversal and energy re-rally; Brent trigger returns to focus ($97 threshold). Current Brent ~$69.50 = $27.50 buffer; risk is asymmetric to the downside for oil prices."
+      "note": "Deal operational from June 18 MOU signing; 60-day window expires August 13. WTI averaged $66-70 in June (Brent $71.30-$72.49 on July 6). If August 13 deadline met with full Hormuz clearance and sanctions relief, WTI could extend to $62-65. Failure or reversal = oil spike reversal; Brent $97 trigger returns to focus. Current Brent ~$71.90 = $25.10 buffer."
     },
     {
       "date": "2026-08-26",
       "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle fundamental clearing event",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. NVDA has failed the $200 re-entry gate for three consecutive sessions (July 2 close: $194.84); Korea circuit breaker (SK Hynix -10.96%) extended AI semiconductor distribution. The $200 gate failure means the July 7 post-SPCX attempt is the next gate test; August 26 earnings remains the ultimate fundamental clearing event. Any Q2 deceleration in the guide vs. $91B challenges the entire 2026 AI-infrastructure re-rating. TSM, AMD, AVGO all read-through from NVDA earnings."
+      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. NVDA Stop Day 2 survived July 6 by $0.84 margin — half-size hold maintained. Full-size add gate opens at July 7 open if NVDA >$200 + SPX >7,460 + VIX <17 simultaneously. August 26 earnings remains the ultimate fundamental clearing event for the AI-infrastructure re-rating. TSM, AMD, AVGO all read-through from NVDA."
     },
     {
       "date": "2026-09-02",
       "label": "SPCX first earnings as a public company (approx.) — Starlink ARR + Starship cadence",
       "kind": "EARNINGS",
       "tickers": ["SPCX"],
-      "note": "First earnings print since the June 12 IPO. SPCX confirmed in Russell 1000 and Nasdaq-100 (effective July 7). Capital structure: $75B IPO + $60B xAI acquisition + $20B bond offering = $155B in obligations. First earnings (Starlink subscriber/ARR growth, Starship launch cadence, cash burn rate) is the fundamental clearing event. Two consecutive closes above $185 on above-average volume required before re-entry; SPCX closed July 2 at ~$156."
+      "note": "First earnings print since June 12 IPO. SPCX Nasdaq-100 effective July 7. Re-entry gate: two consecutive closes above $185 on above-average volume (est. July 9-11 earliest, given $156.45 July 6 close). First earnings (Starlink subscriber/ARR growth, Starship launch cadence, cash burn) is the fundamental clearing event after the inclusion-day distribution pattern."
     },
     {
       "date": "2026-12-09",
       "label": "SPCX 180-day IPO lock-up expiry (approx.) — insider/early-investor float unlock",
       "kind": "OTHER",
       "tickers": ["SPCX"],
-      "note": "~180 days after the June 12 debut, early investors and insiders can sell, materially expanding the ~4% public float. Lock-up expiries are a known supply overhang for hot IPOs; the $20B bond offering (June 22) already changed the capital structure risk profile — the lock-up expiry adds equity supply overhang on top. Exact date pending the prospectus's stated terms."
+      "note": "~180 days after the June 12 debut, early investors and insiders can sell, materially expanding the ~4% public float. Lock-up expiries are a known supply overhang for hot IPOs. The $20B bond offering (June 22) already changed the capital structure risk profile — the lock-up expiry adds equity supply overhang."
     },
     {
       "date": "2027-01-01",
       "label": "OpenAI IPO — target window shifts to H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": ["MSFT", "NVDA"],
-      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off -13% on the delay. Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst and adds uncertainty to AI infrastructure spending trajectories. Monitor for filing date announcement as a potential AI sentiment catalyst. Date is approximate placeholder for H1 2027 window."
+      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off -13% on the delay. Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst and adds uncertainty to AI infrastructure spending trajectories."
     }
   ]
 }
