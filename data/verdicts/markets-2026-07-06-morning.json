@@ -2,139 +2,133 @@
   "routine": "markets",
   "date": "2026-07-06",
   "window": "morning",
-  "generated_at": "2026-07-06T10:00:00Z",
+  "generated_at": "2026-07-06T11:15:00Z",
   "is_seed": false,
   "verdict": {
-    "code": "buy",
-    "emoji": "🟢",
-    "label": "BUY — KOSPI +5.76% CONFIRMS ASIA RISK-ON; NVDA PRE-MARKET $197.14 (ABOVE $195 STOP); BTC GATE 1+2 CONFIRMED; IBIT GATE 3 VERIFICATION T-0H; SPCX $4.3B INCLUSION T+1; SK HYNIX STOP DAY 1 TRIGGERED (₩2,343,000 < ₩2,540,000)",
-    "conviction": "medium",
-    "rationale_short": "Triple-holiday gap resolves into the strongest coordinated Asia session in weeks: KOSPI +5.76%, Nikkei +1.47%, Hang Seng +1.28%, Stoxx 600 +0.69% to a 52-week high. NVDA pre-market prints $197.14 — $2.14 above the $195 Stop Day 2 determination threshold — the first pre-market above $195 since Stop Day 1 triggered July 2. BTC is in the $62,600–$63,900 range with Gates 1 and 2 confirmed; IBIT Gate 3 (institutional inflow confirmation) is the sole remaining re-entry gate to verify at the US open. SPCX +1% pre-market (~$162–163) ahead of $4.3B Nasdaq 100 forced-buying inclusion effective July 7. VIX at 15.81 — 219bps below the 17 Gate 2 threshold — with ISM Services PMI (10:00 AM ET; previous 54.5) as the key intraday macro catalyst. COMPLICATION: SK Hynix KST July 6 session closed at ₩2,343,000 (-3.38%), BELOW the ₩2,540,000 Stop Day 1 threshold — prior brief's data uncertainty resolves bearishly. Semiconductor-specific weakness amid KOSPI +5.76% broad rally is a concerning divergence. ACTIVATION SEQUENCE: (1) IBIT Gate 3 at US open ~9:30–10:00 AM ET; (2) NVDA July 6 close vs $195 (Stop Day 2 binary); (3) ISM Services 10:00 AM ET (prior 54.5 — Goldilocks if cooling); (4) SPCX watch only, no entry.",
-    "supporting_data": [
-      {
-        "label": "KOSPI +5.76% (July 6, 2026 KST session) — strongest Asia coordinated rally since Korea circuit breaker reversal on July 3; Nikkei +1.47%, Hang Seng +1.28%, CSI 300 +1.15%, ASX +1.37%; Stoxx 600 +0.69% to 52-week high; DAX +0.85%; global risk-on tone ahead of first US session post-triple-holiday",
-        "url": "https://www.cnbc.com/2026/07/03/stock-market-today-live-updates.html"
-      },
-      {
-        "label": "NVDA pre-market $197.14 (+$2.31 from $194.83 July 2 close); above $195 Stop Day 2 threshold; July 5 OTC session range $192.36–$200.06 (peak $200.06 confirms buyers at gate); Stop Day 2 determination at July 6 US CLOSE only; full-size add gate: July 7 open with NVDA >$200 AND SPX >7,460 AND VIX <17 simultaneously; Q2 FY27 earnings August 26 ($91B guide) is the structural re-rating event",
-        "url": "https://finance.yahoo.com/quote/NVDA/"
-      },
-      {
-        "label": "BTC ~$62,600–$63,900 range on July 6 (two-week high $63,900 reached overnight); Gate 1 ✓ July 3 close $62,579 / Gate 2 ✓ July 4 close $63,015; six consecutive UTC session floors above $62,000; IBIT in 10-day outflow streak through July 3 (-$40.43M July 3; $221.7M total ETF inflow July 3 led by FBTC/ARKB — NOT IBIT); Gate 3 verification required at July 6 US open",
-        "url": "https://bitcoinfoundation.org/news/bitcoin/btc-price-july-6/"
-      },
-      {
-        "label": "SPCX +1% pre-market on July 6 at ~$162–163 (IPO June 12 at $161); Nasdaq 100 inclusion effective July 7 = $4.3B QQQ/QQQM forced buying into 3–5% public float; total inclusion flow est. up to $27B across all passive trackers; Motley Fool July 6: 'This Is a Much Bigger Catalyst for Shares on July 7'; Day 9 bond distribution commences today",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-shares-rise-ahead-nasdaq-110241089.html"
-      },
-      {
-        "label": "VIX 15.81 (July 3 close carry) — 219bps below 17 Gate 2 threshold; SPX carry 7,483 (above 7,460 Gate 1); US-Iran Islamabad MOU ceasefire holding; Brent ~$70 disinflationary; prediction markets 62–70% upward SPX open July 6 (lines.com, Polymarket); 30Y ~4.98% (2bps from 5.00% trigger — ISM Services is the key stress test)",
-        "url": "https://finance.yahoo.com/quote/%5EVIX/"
-      },
-      {
-        "label": "ISM Non-Manufacturing PMI due July 6, 10:00 AM ET (previous 54.5 = strong expansion; consensus ~51.3–51.5); S&P Global Services PMI 9:45 AM ET (previous 50.7; forecast 51.3); both released Monday due to Independence Day postponement; print >54 reprices September cut probability downward; print ≤52 confirms Goldilocks disinflation + rate-relief bid for long-duration tech",
-        "url": "https://www.investing.com/news/stock-market-news/services-pmi-and-ism-nonmanufacturing-pmi-among-economic-data-due-monday-93CH-4775300"
-      }
-    ]
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — SK Hynix STOP DAY 2 CONFIRMED (₩2,343,000 close, MANDATORY EXIT JULY 7 KST OPEN); NVDA STOP DAY 2 BINARY TODAY (pre-mkt $195.33, threshold $195 at US CLOSE); BTC Gate 2 INTACT ($62,849 / $849 above $62,000) but 10-hour declining session; SPCX Day 9 Opens T-2H15M; NQ Futures +1.55%",
+    "conviction": "high",
+    "rationale_short": "The most consequential pre-open reading of the framework period: SK Hynix Stop Day 2 is confirmed by KRX close (₩2,343,000 — second consecutive close below ₩2,540,000 threshold). Mandatory full exit at July 7 KST open (9:00 AM KST = 00:00 UTC July 7) with zero discretion. Stop Day 1 was July 3 (₩2,425,000 close < ₩2,540,000); July 6 close ₩2,343,000 confirms Stop Day 2 — the two-close protocol is triggered. This is the lead story of the July 6 morning session. NVDA Stop Day 2 binary: pre-market $195.33 (6:07 AM ET) is $0.33 above the $195 stop threshold. The determination is at the OFFICIAL US CLOSE (4:00 PM ET), not pre-market. NQ futures +1.55% (pre-Nasdaq-100-inclusion bid for SPCX Day 10 tomorrow) provides a constructive macro backdrop but NVDA's pre-market cushion of only $0.33 above the stop level is thin. If NVDA closes above $195 today: Stop Day 1 isolated, hold; July 7 add gate applies (NVDA >$200 + SPX >7,460 + VIX <17 at 9:25 AM ET). If NVDA closes at or below $195: Stop Day 2 confirmed → mandatory full exit at July 7 US open, zero discretion. BTC at $62,849 (11:03 UTC Crypto.com MCP) is down $964 / -1.51% from yesterday's $63,813 peak over a 10-hour declining session. Gate 2 ($62,000) remains intact with $849 of buffer. Gate 3 (IBIT net inflow confirmation) remains unconfirmed — verify at 9:30 AM ET US open. SPCX Bond Distribution Day 9 opens in T-2h15m (9:30 AM ET) — first US session after triple-holiday gap (July 3 abbreviated + July 4 Saturday + July 5 Sunday). Day 9 estimate revised to 20–30M (from lowered 15–30M) on BTC declining $964. Day 10 = tomorrow July 7 Nasdaq 100 inclusion (~$4.3B passive). IG floor $150 buffer $12 intact. Do NOT re-enter SPCX on Day 10 inclusion spike. Regime gates: BUY regime intact (SPX 7,483 > 7,460 Gate 1; VIX ~15.78 < 17 Gate 2). PORTFOLIO SEQUENCING TODAY: (1) 9:30 AM ET = IBIT inflow check → BTC re-entry decision + SPCX Day 9 volume monitoring begins; (2) 9:45 AM ET = Services PMI (Goldilocks baseline); (3) Throughout session = SPCX Day 9 volume tracking (target: <12M first 30 min); (4) 4:00 PM ET = NVDA Stop Day 2 official determination. TOMORROW JULY 7 SEQUENCING: (1) 00:00 UTC = SK Hynix mandatory full exit at KST open (9:00 AM KST); (2) 9:25 AM ET = NVDA full-size add gate check (if Stop Day 1 isolated); (3) All session = SPCX Day 10 Nasdaq 100 inclusion — watch only, DO NOT re-enter."
   },
+  "supporting_data": [
+    { "label": "★ SK HYNIX STOP DAY 2 CONFIRMED — ₩2,343,000 KRX CLOSE (–3.38% / –₩82,000); SECOND CONSECUTIVE CLOSE BELOW ₩2,540,000 THRESHOLD; MANDATORY FULL EXIT JULY 7 KST OPEN (9:00 AM KST = 00:00 UTC JULY 7); ZERO DISCRETION; Stop Day 1 (July 3): ₩2,425,000 < ₩2,540,000; Stop Day 2 (July 6): ₩2,343,000 < ₩2,540,000 — two-close stop protocol triggered; prior July 5 brief noted ₩2,552,000 carry; July 6 KST open gap-down confirms July 3 close was ₩2,425,000 (not ₩2,552,000), resolving the data discrepancy", "url": "https://finance.yahoo.com/quote/000660.KS/" },
+    { "label": "NVDA STOP DAY 2 BINARY — pre-market $195.33 (6:07 AM ET / 10:07 UTC); ONLY $0.33 above $195 stop threshold; NQ futures +1.55% supports recovery but determination is at OFFICIAL 4:00 PM ET US CLOSE; if close >$195: Stop Day 1 isolated, hold, July 7 full-size add gate (NVDA >$200 + SPX >7,460 + VIX <17 at 9:25 AM ET); if close ≤$195: Stop Day 2 = mandatory full exit July 7 US open zero discretion; Nicholas Parker (MSFT) field ops hire + Vera Rubin + Halos for Robotics catalysts intact over triple-holiday gap", "url": "https://finance.yahoo.com/quote/NVDA/" },
+    { "label": "BTC $62,849.58 (11:03 UTC / 7:03 AM ET, Crypto.com MCP) — down $964 / –1.51% from $63,813.77 overnight peak; 10-hour declining session from 01:00 UTC high $63,922 → $62,849; Gate 1 ✓ (July 3 UTC close $62,579.40); Gate 2 ✓ (July 4 UTC close $63,015.67); Gate 3 (IBIT net inflow) UNCONFIRMED — verify at 9:30 AM ET US open; BTC still $849 above Gate 2 $62,000 threshold; stop $58,100; target 1 $65,000; target 2 $70,000", "url": "https://crypto.com/exchange/trade/BTC_USDT" },
+    { "label": "SPCX BOND DISTRIBUTION DAY 9 — opens T-2H15M (9:30 AM ET July 6); first US session after triple-holiday gap; Day 9 volume estimate 20–30M (revised from lowered 15–30M; BTC declining $964 partially walks back overnight risk-on discount); NQ +1.55% pre-inclusion bid partially offsets; SPCX Nasdaq 100 EFFECTIVE INCLUSION TOMORROW (July 7, Day 10, ~$4.3B QQQ/QQQM passive); DO NOT re-enter on Day 10 spike; IG floor $150 buffer $12 intact; re-entry gate $185 est. activation July 9–11", "url": "https://finance.yahoo.com/quote/SPCX/" },
+    { "label": "NQ FUTURES +1.55% — pre-Nasdaq-100-inclusion bid (SPCX effective July 7); most constructive macro signal this morning partially offsetting BTC decline; suggests institutional pre-positioning for tomorrow's $4.3B QQQ/QQQM passive; VIX ~15.78 (below 17 gate); SPX 7,483 (July 2 close, above 7,460 gate); BUY regime intact; UST10Y 4.46% (-3bps from July 3); DXY 100.78 (–0.33%)", "url": "https://finance.yahoo.com/quote/%5EGSPC/" },
+    { "label": "IBIT GATE 3 STILL UNCONFIRMED — IBIT was in 10-day outflow streak as of July 2 (-$40.43M); total spot BTC ETF +$221.7M on July 3 was FBTC/ARKB-led, NOT IBIT; Gate 3 requires IBIT specifically to show net positive inflow; DO NOT enter BTC before verifying IBIT at 9:30 AM ET US open via Bloomberg ETF terminal or etf.com IBIT flow data; two-gate protocol (Gates 1+2 confirmed) is insufficient — Gate 3 is the mandatory final activation condition", "url": "https://finance.yahoo.com/quote/IBIT/" }
+  ],
   "snapshot": {
-    "sp500":  { "level": 7483.0,   "change_pct":  0.07, "as_of": "2026-07-02T20:00:00Z", "note": "Carry — last official US close July 2. ES futures ~+0.3–0.5% on Asia strength; prediction markets 62–70% upward open July 6." },
-    "nasdaq": { "level": 25832.67, "change_pct": -0.80, "as_of": "2026-07-02T20:00:00Z", "note": "Carry — last official US close July 2. NQ positive pre-market on SPCX +1% pre-inclusion bid + NVDA $197.14 above stop." },
-    "vix":    { "level": 15.81,    "change_pct": -2.11, "as_of": "2026-07-03T00:00:00Z", "note": "Carry — July 3 close. 219bps below 17 Gate 2 threshold. VIX futures ~17.50 term premium. Sub-16 spot heading into SPCX inclusion = constructive." },
-    "ust10y": { "level": 4.46,     "change_bps":  -2,   "as_of": "2026-07-03T00:00:00Z", "note": "Carry — July 3. ISM Services 10:00 AM ET will reprice. Below 4.50% ceiling; rate-relief narrative from 57K NFP intact." },
-    "dxy":    { "level": 100.86,   "change_pct": -0.08, "as_of": "2026-07-03T12:00:00Z", "note": "Carry — marginal breach above 100 (52W high 101.80); softening dollar = constructive for risk assets and BTC." }
+    "sp500":  { "level": 7483.0,   "change_pct":  0.07,  "as_of": "2026-07-02T20:00:00Z" },
+    "nasdaq": { "level": 25832.67, "change_pct": -0.80,  "as_of": "2026-07-02T20:00:00Z" },
+    "vix":    { "level": 15.78,    "change_pct": -2.11,  "as_of": "2026-07-04T11:00:00Z" },
+    "ust10y": { "level": 4.46,     "change_bps":  -3,    "as_of": "2026-07-03T00:00:00Z" },
+    "dxy":    { "level": 100.78,   "change_pct": -0.33,  "as_of": "2026-07-03T12:00:00Z" }
   },
   "regime_risk": [
-    { "name": "VIX",          "value": 15.81,  "trigger_above": 17,    "unit": "" },
-    { "name": "SPX vs 7,460", "value": 7483.0, "trigger_above": 7460,  "unit": "" },
-    { "name": "DXY",          "value": 100.86, "trigger_above": 100,   "unit": "" },
-    { "name": "BTC Gate 2",   "value": 62600,  "trigger_below": 62000, "unit": "$" },
-    { "name": "30Y Yield",    "value": 4.98,   "trigger_above": 5.0,   "unit": "%" },
-    { "name": "Brent",        "value": 70.0,   "trigger_above": 97,    "unit": "$" }
+    { "name": "VIX",                   "value": 15.78,   "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460",          "value": 7483.0,  "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",                   "value": 100.78,  "trigger_above": 100,   "unit": "" },
+    { "name": "BTC Gate 2 ($62,000)",  "value": 62849.58,"trigger_below": 62000, "unit": "$" },
+    { "name": "30Y Yield",             "value": 4.98,    "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",                 "value": 70.60,   "trigger_above": 97,    "unit": "$" }
   ],
   "watchlist_mentions": [
-    {
-      "ticker": "NVDA",
-      "note": "$197.14 pre-market (+$2.31 from $194.83 July 2 close); FIRST PRE-MARKET ABOVE $195 since Stop Day 1 triggered July 2. Stop Day 2 DETERMINATION = July 6 US CLOSE: close >$195 = Stop Day 1 isolated (hold; add gate July 7 at 9:25 AM ET with NVDA >$200 + SPX >7,460 + VIX <17 simultaneously); close ≤$195 = mandatory full exit July 7 open, zero discretion. Q2 FY27 earnings August 26 ($91B guide).",
-      "sentiment": "positive"
-    },
-    {
-      "ticker": "BTC-USD",
-      "note": "~$62,600–$63,900 (two-week high $63,900 touched overnight, July 6). Gate 1 ✓ $62,579 (July 3 close) | Gate 2 ✓ $63,015 (July 4 close) | Gate 3 PENDING. IBIT: 11th consecutive outflow day on July 3 (-$40.43M); total spot ETF +$221.7M July 3 was FBTC/ARKB-led. Gate 3 = IBIT positive net inflow at July 6 US open. If confirmed: re-entry 20–25% at market (~$62,600–$63,900). Stop: $58,100. Target: $65K–$70K.",
-      "sentiment": "positive"
-    },
-    {
-      "ticker": "SPCX",
-      "note": "~$162–163 pre-market (+1%); Nasdaq 100 inclusion effective July 7 ($4.3B QQQ/QQQM + up to $27B total passive). STEP ASIDE maintained. Day 9 bond distribution commences today. Do NOT enter on July 7 inclusion spike. Re-entry gate: volume <5M/day for 2–3 sessions post-clearance + two consecutive closes above $185. Est. activation July 9–11.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "SK HYNIX / SKHY",
-      "note": "₩2,343,000 (July 6 KST session, -3.38%) — STOP DAY 1 TRIGGERED (below ₩2,540,000 threshold). Prior brief's data uncertainty resolved bearishly: ₩2,425,000 actual July 3 close → ₩2,343,000 July 6 (-3.38%). Semiconductor-specific weakness amid KOSPI +5.76% broad rally = concerning divergence (HBM4 production / Apple CXMT concerns). ADR July 10 (SKHY) T-3 sessions. Monitor July 7 KST close vs ₩2,540,000 for Stop Day 2 determination.",
-      "sentiment": "negative"
-    },
-    {
-      "ticker": "META",
-      "note": "Carry position from July 2 open entry; ATH range. AI ad targeting 3.3B DAU; FCF $60B+; zero Korea/semiconductor exposure. KOSPI +5.76% + VIX 15.81 = maximum risk-on backdrop for FCF multiple expansion. Q2 earnings late July. Hold through July 6.",
-      "sentiment": "positive"
-    },
-    {
-      "ticker": "GOOGL",
-      "note": "Carry position from July 2 open entry ~$358–$364. Dow systematic rebalancing demand Day 8+. Goldilocks ad narrative intact. Add on July 7 dip to $350–$355 at 9:25 AM ET. Target $380–$390 pre-Q2 earnings.",
-      "sentiment": "positive"
-    }
+    { "ticker": "SK HYNIX", "note": "STOP DAY 2 CONFIRMED — KRX closed ₩2,343,000 (–3.38% / –₩82,000 from ₩2,425,000 July 3 close). Two consecutive closes below ₩2,540,000 threshold: Stop Day 1 July 3 (₩2,425,000) + Stop Day 2 July 6 (₩2,343,000). MANDATORY FULL EXIT at July 7 KST open (9:00 AM KST = 00:00 UTC July 7). Zero discretion. No averaging, no hope holds, no partial exit — full position liquidation at July 7 open market price. Post-exit: evaluate SKHY (Nasdaq ADR, July 10 listing) as a separate instrument on its own merits after the KRX position is flat.", "sentiment": "negative" },
+    { "ticker": "NVDA",     "note": "Pre-market $195.33 (6:07 AM ET) — ONLY $0.33 above $195 stop threshold. Stop Day 2 binary: close today above $195 = Stop Day 1 isolated, hold half-size, July 7 full-size add gate applies; close at or below $195 = Stop Day 2 confirmed → mandatory full exit July 7 US open zero discretion. NQ futures +1.55% is constructive but thin $0.33 pre-market cushion makes this the most uncertain Stop Day 2 determination of the framework. Nicholas Parker (MSFT) field ops hire + Vera Rubin + Halos for Robotics: all intact over triple-holiday gap. Full-size add gate July 7: NVDA >$200 AND SPX >7,460 AND VIX <17 simultaneously at 9:25 AM ET.", "sentiment": "neutral" },
+    { "ticker": "BTC-USD",  "note": "$62,849.58 (11:03 UTC, Crypto.com MCP) — down $964 / –1.51% from $63,813.77 overnight peak. Gate 1 ✓ (July 3 UTC close $62,579.40). Gate 2 ✓ (July 4 UTC close $63,015.67). Gate 3 (IBIT) UNCONFIRMED — IBIT was in 10-day outflow streak; verify at 9:30 AM ET. 10-hour declining session but Gate 2 intact ($849 above $62,000). Re-entry at 9:30 AM ET IF IBIT confirms positive inflow. Size: 20–25% crypto allocation. Stop: $58,100. Target 1: $65,000. Target 2: $70,000.", "sentiment": "neutral" },
+    { "ticker": "SPCX",     "note": "~$162.00 reference (pre-market); step aside HIGH conviction; Bond Distribution Day 9 opens 9:30 AM ET; 3-session triple-holiday pent-up supply; Day 9 estimate 20–30M; Day 10 = TOMORROW July 7 Nasdaq 100 inclusion (~$4.3B passive); DO NOT buy Day 10 spike; IG floor $150 buffer $12; re-entry gate $185 est. July 9–11; monitor first 30 min volume (target <12M for low-end Day 9).", "sentiment": "neutral" },
+    { "ticker": "GOOGL",    "note": "Carry ~$364 (last July 2 close); hold July 6 (post-holiday session; light volume); add July 7 on dip $350–$355 at 9:25 AM ET; stop $339; target $380–$390 pre-Q2 earnings late July; Services PMI 9:45 AM ET today = Goldilocks read directly validates Search and Cloud AI narrative.", "sentiment": "positive" },
+    { "ticker": "META",     "note": "Carry ATH range; hold July 6; add July 7 on any weakness at open; zero Korea/semiconductor/geopolitical exposure; AI ad targeting at 3.3B DAU; Q2 2026 earnings late July = first AI-at-scale quarter; FCF $60B+ annual; stop prior week low; target new ATH before Q2 earnings.", "sentiment": "positive" }
   ],
   "dont_buy": [
     {
-      "ticker": "BTC (before IBIT Gate 3 confirmation)",
-      "reason": "IBIT was in an 11-day outflow streak through July 3 (-$40.43M on July 3; ~-$2.24B cumulative). Total spot BTC ETF +$221.7M on July 3 was FBTC/ARKB-led, NOT IBIT. Framework requires IBIT specifically to show positive net inflow. BTC is already at $62,600–$63,900 above Gate 2 — entering before IBIT confirmation risks a false start without institutional anchor.",
-      "better_entry": "July 6 US open: verify IBIT net inflow at Bloomberg ETF terminal / etf.com / farside.co.uk. If IBIT positive: activate re-entry at market, 20–25% allocation, stop $58,100, target $65K–$70K. If IBIT still outflow: hold cash, re-check July 7. Reset gate if BTC closes below $62,000 UTC midnight."
+      "ticker": "SK HYNIX (any add)",
+      "reason": "Stop Day 2 confirmed. Two consecutive KRX closes below ₩2,540,000 stop threshold (July 3: ₩2,425,000; July 6: ₩2,343,000). The two-close stop protocol mandates full exit — not a partial exit, not an average-down, not a wait-and-see. Mandatory full exit at July 7 KST open (9:00 AM KST = 00:00 UTC July 7). Zero discretion. Adding to a position with a confirmed two-close stop is a protocol violation with no valid rationale.",
+      "better_entry": "Post-exit: wait for SKHY (Nasdaq ADR, July 10 listing) to season for 1–2 weeks post-listing. Evaluate as a separate instrument at its own listing price. If SKHY lists above the equivalent of ₩2,700,000 KRX gate price and holds for 2–3 sessions, re-evaluate re-entry into the ADR. Do NOT re-enter KRX position until a new stop framework is established at a higher threshold."
     },
     {
-      "ticker": "SPCX (Day 9 + pre-inclusion)",
-      "reason": "Bond distribution Day 9 commences today (delayed 3 days by triple-holiday). Pre-market +1% reflects pre-inclusion positioning, not fundamental clearance. Nasdaq 100 inclusion executes at July 7 close — the spike is a SELL event (Russell 1000 June 26 template shows same-session absorption). IG floor buffer ~$12; $150 IG floor is structural support.",
-      "better_entry": "July 6 full-day volume <30M = clearance on pace. July 7: watch only, do not enter on inclusion spike. Post-clearance: two consecutive closes above $185 on above-average volume. Est. July 9–11."
+      "ticker": "BTC (without Gate 3)",
+      "reason": "Gate 3 (IBIT net inflow confirmation) remains unconfirmed. BTC declining $964 (–1.51%) from yesterday's $63,813 to $62,849 this morning does not invalidate Gates 1+2 but adds uncertainty to the re-entry timing. IBIT was in a 10-day outflow streak as of July 2 (-$40.43M). Total spot BTC ETF inflows of +$221.7M on July 3 were led by FBTC/ARKB — NOT IBIT. Gate 3 specifically requires IBIT to show net positive inflow. The two-gate protocol (Gates 1+2 confirmed) is not sufficient for re-entry without Gate 3 institutional demand confirmation.",
+      "better_entry": "July 6 US open (9:30 AM ET): verify IBIT net inflow data (Bloomberg ETF terminal or etf.com). If IBIT shows positive net inflow: BUY BTC-USD at market open. Size: 20–25% crypto allocation. Stop: $58,100. If IBIT remains in outflow: hold-watch, do not enter. Reset gate sequence if BTC closes below $62,000 on any UTC midnight session."
     },
     {
-      "ticker": "SK Hynix (Stop Day 1 active — ₩2,343,000)",
-      "reason": "Stop Day 1 triggered: July 6 KST close ₩2,343,000 is ₩197,000 below the ₩2,540,000 threshold. Semiconductor-specific weakness (-3.38%) on a day KOSPI gained +5.76% signals semi-specific headwinds. ADR listing July 10 provides underwriter support but the stop framework is non-discretionary.",
-      "better_entry": "July 7 KST close: above ₩2,540,000 = Stop Day 1 isolated, hold half-size. Below ₩2,540,000 = Stop Day 2 = mandatory full exit July 8 open. Full-size add gate: KOSPI >8,500 AND SK Hynix >₩2,700,000 simultaneously."
+      "ticker": "SPCX",
+      "reason": "Bond distribution Day 9 opens in T-2h15m. Reference $162.00 is $23 (–12.7%) below $185 re-entry gate. Do NOT buy the July 7 Nasdaq 100 inclusion spike (~$4.3B QQQ/QQQM passive, Day 10 tomorrow) — distribution sellers use inclusion volume as exit opportunity (Russell 1000 June 26 template). Clearance (volume <5M/day for 2–3 sessions) est. July 8–9 must precede any entry.",
+      "better_entry": "Day 9 (today July 6) full-day volume <30M = clearance tracking on pace. Day 10 (July 7): watch only, do not enter. Post-clearance: volume <5M/day for 2–3 sessions (est. July 8–9) THEN two consecutive closes above $185 on above-average volume. Est. activation July 9–11. Alert: SPCX gap below $154 at July 6 open = heightened monitoring required."
     },
     {
-      "ticker": "AMD (semi distribution ongoing)",
-      "reason": "AMD -4.3% on July 2 alongside MU -7% and AMAT -7.4%. SK Hynix -3.38% on July 6 KST despite KOSPI +5.76% confirms semiconductor distribution is not resolved by broad equity strength. No standalone AMD catalyst before Q2 earnings (late July); no HBM4 AI-specificity.",
-      "better_entry": "Q2 earnings (late July) — entry on post-earnings dip below $480 with confirmed MI350X AI demand guidance. Short hedge candidate in the interim."
+      "ticker": "NVDA (full-size)",
+      "reason": "Stop Day 2 determination is at July 6 US CLOSE (4:00 PM ET). Pre-market $195.33 is only $0.33 above the $195 stop threshold. Even if Stop Day 1 isolated (July 6 close >$195): full-size add requires NVDA >$200 AND SPX >7,460 AND VIX <17 simultaneously at 9:25 AM ET July 7. Only four conditions met simultaneously unlock full-size — any single failure means hold half-size only through August 26 Q2 FY27 earnings.",
+      "better_entry": "July 7 open at 9:25 AM ET ONLY if: (1) July 6 US close >$195 (Stop Day 1 isolated); AND (2) NVDA opens above $200; AND (3) SPX futures >7,460; AND (4) VIX pre-open <17. All four simultaneously. If any one fails: hold half-size only."
     }
   ],
   "trade_setups": [
     {
       "asset": "BTC",
-      "direction": "long — Gate 3 re-entry at open",
-      "thesis": "Gate 1 (July 3 UTC close $62,579) ✓ and Gate 2 (July 4 UTC close $63,015) ✓. BTC at two-week high, $62,600–$63,900 range on July 6. Six consecutive UTC session floors above $62,000 = ascending structural accumulation. IBIT Gate 3 is the final activation gate — first IBIT trading day in 4 days. Post-halving supply shock (450 BTC/day reduced miner selling) compounds. 60–65% September cut probability adds rate-relief tail.",
-      "entry": "July 6 US open: verify IBIT positive net inflow. If confirmed: 20–25% allocation at market ($62,600–$63,900). Stop: $58,100 (-7.1%). Target 1: $65,000 (+3.8%). Target 2: $70,000 (+11.8%). Add to 40% on sustained IBIT inflow through July 7.",
-      "invalidation": "IBIT net outflow July 6 (Gate 3 fails — hold, do not enter); BTC UTC midnight close below $62,000 after re-entry; FOMC July 28 hold + hawkish tone drives BTC below $60,000",
-      "conviction": "high",
-      "horizon": "Gate 3 verify at US open; 4–8 week hold to $65K–$70K if confirmed"
+      "direction": "long — Gate 3 PENDING (IBIT verify at 9:30 AM ET US open)",
+      "thesis": "Gate 1 ✓ (July 3 UTC close $62,579.40). Gate 2 ✓ (July 4 UTC close $63,015.67 — $1,015 above threshold). BTC declining $964 (–1.51%) from overnight peak but Gate 2 intact ($849 above $62,000). 10-hour declining session from 01:00 UTC $63,922 → $62,849.58. Gate 3 (IBIT): IBIT in 10-day outflow streak as of July 2; verify at July 6 US open. Post-halving supply shock (450 BTC/day permanently reduced) compounds daily. If Gate 3 confirms at 9:30 AM ET today: re-entry activated at market open.",
+      "entry": "July 6 US open (9:30 AM ET) if IBIT net inflow confirmed. Size: 20–25% crypto allocation. Stop: $58,100. Target 1: $65,000. Target 2: $70,000 (4–8 weeks).",
+      "invalidation": "IBIT shows net outflows (Gate 3 fails — hold-watch, do not enter); BTC closes below $62,000 on any UTC midnight session (Gates 1+2 reset); BTC closes below $58,100 after re-entry.",
+      "conviction": "medium",
+      "horizon": "Gate 3 verify July 6 US open; re-entry July 6 open if confirmed; 4–8 week hold to $65K–$70K"
     },
     {
       "asset": "NVDA",
-      "direction": "long — hold half-size; Stop Day 2 binary at today's close",
-      "thesis": "Pre-market $197.14 above $195 stop reinforces Stop Day 1 isolation thesis. KOSPI +5.76% and SPCX Nasdaq 100 inclusion bid provide Nasdaq macro tailwind. $200 level has confirmed buyers (OTC day peak $200.06 July 5). August 26 Q2 FY27 earnings ($91B guide) is the primary fundamental re-rating event. Full-size add requires all four gates at July 7 open.",
-      "entry": "Hold half-size through July 6 close. Add to full-size at July 7 open ONLY if: (1) July 6 close >$195; (2) NVDA opens >$200; (3) SPX futures >7,460; (4) VIX pre-open <17 — all four simultaneously at 9:25 AM ET. Stop Day 2: July 6 close ≤$195 = mandatory full exit July 7 open, zero discretion.",
-      "invalidation": "July 6 US close ≤$195 (mandatory Stop Day 2 exit); ISM Services hot print drives VIX above 17; SPX fails 7,460 at July 6 close",
+      "direction": "hold half-size — Stop Day 2 binary at July 6 US close",
+      "thesis": "Pre-market $195.33 — only $0.33 above $195 stop threshold. The official US close at 4:00 PM ET is the determination. NQ futures +1.55% suggests constructive environment for NVDA recovery above $195. Nicholas Parker (MSFT) field ops hire + Vera Rubin platform + Halos for Robotics: all intact over triple-holiday gap. H200 China policy authorization ≠ revenue (zero imports). If Stop Day 1 isolated: full-size add gate July 7 open.",
+      "entry": "Hold existing half-size through July 6 close. July 7 open: add to full-size ONLY if all four gates met simultaneously at 9:25 AM ET (NVDA >$200, SPX >7,460, VIX <17, July 6 close >$195). Stop reference: $195 at July 6 US close.",
+      "invalidation": "July 6 US close at or below $195 = Stop Day 2 = mandatory full exit July 7 US open zero discretion; SPX closes below 7,460; VIX spikes above 17.",
       "conviction": "medium",
-      "horizon": "Binary July 6 close; if Stop Day 1 isolated, hold through August 26 Q2 FY27 earnings"
+      "horizon": "Stop Day 2 binary July 6 US close; full-size add gate July 7 open; core hold through August 26 Q2 FY27 earnings"
     },
     {
-      "asset": "AMD",
-      "direction": "short / put spread — semi distribution hedge",
-      "thesis": "AMD -4.3% on July 2 (MU -7%, AMAT -7.4%). SK Hynix -3.38% on July 6 KST despite KOSPI +5.76% broad rally confirms semiconductor-specific distribution is ongoing. AMD has no HBM4 AI differentiation, no pre-earnings catalyst, and maximum exposure to AI valuation derating. Most liquid, low-correlation short hedge in the semi complex.",
-      "entry": "Short AMD or buy AMD put spread at ~$507 or on any July 6 open bounce to $515–520. Size: 15–20% of hedge allocation. Target 1: $480. Target 2: $455 (Q2 earnings level).",
-      "invalidation": "NVDA reclaims $200 on volume driving semi complex; SPCX $4.3B inclusion lifts all Nasdaq growth; AMD closes above $540 on above-average volume; ISM Services prints <50 (recessionary = long Treasuries, not semis)",
-      "conviction": "low",
-      "horizon": "1–2 weeks into Q2 earnings season"
+      "asset": "SK HYNIX",
+      "direction": "sell — mandatory full exit at July 7 KST open (9:00 AM KST = 00:00 UTC July 7)",
+      "thesis": "Stop Day 2 confirmed. KRX close ₩2,343,000 (–3.38% / –₩82,000) = second consecutive close below ₩2,540,000 stop threshold. Stop Day 1: July 3 close ₩2,425,000 < ₩2,540,000. Stop Day 2: July 6 close ₩2,343,000 < ₩2,540,000. Two-close protocol triggered. Prior July 5 brief noted ₩2,552,000 carry — the July 6 close (-₩82,000 from ₩2,425,000) mathematically resolves the July 5 data discrepancy (July 3 actual close was ₩2,425,000, not ₩2,552,000). Stop Day 1 was July 3. Stop Day 2 is July 6.",
+      "entry": "EXIT — sell full position at July 7 KST open (9:00 AM KST). No averaging down, no partial hold, no hope trade. Execute at market price at KST open. Post-exit: evaluate SKHY (Nasdaq ADR, July 10 listing) as a separate instrument after the KRX position is flat.",
+      "invalidation": "Protocol is mandatory — no invalidation conditions. The only way to not exit at July 7 KST open is if the position has already been exited before then.",
+      "conviction": "high",
+      "horizon": "Exit July 7 KST open (00:00 UTC July 7)"
+    },
+    {
+      "asset": "GOOGL",
+      "direction": "hold — add July 7",
+      "thesis": "Position held through triple-holiday gap. NQ futures +1.55% confirms the pre-July-7 institutional return bid that validates the July 7 dip-add thesis. Services PMI at 9:45 AM ET July 6 = Goldilocks read directly validates Search and Cloud AI narrative. Dow systematic rebalancing demand active. Q2 2026 earnings late July thesis unchanged.",
+      "entry": "Hold July 6. Add July 7 open at 9:25 AM ET: buy on dip to $350–$355. If no dip materializes in first hour: do not chase above $360. Stop: $339. Target: $380–$390 pre-Q2 earnings.",
+      "invalidation": "DOJ antitrust remedies materially reduce Search revenue; SPX closes below 7,460; AI Mode cannibalizes ad clicks faster than AI ad placement compensates.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks (through Q2 2026 earnings late July)"
+    },
+    {
+      "asset": "META",
+      "direction": "hold — add July 7",
+      "thesis": "Position held through triple-holiday gap. Zero Korea/semiconductor/geopolitical exposure. AI ad targeting at 3.3B DAU. FCF $60B+ annual. Q2 2026 earnings late July = first AI-at-scale quarter. Most rate-resistant large-cap AI name in Warsh hawkish hold environment.",
+      "entry": "Hold July 6. Add July 7 open: buy on any weakness at open or in first 30 minutes. Stop: prior week low. Target: new ATH before Q2 earnings.",
+      "invalidation": "EU AI Act compliance costs exceed $3B; Apple iOS ATT 3.0 restricts cross-app targeting; Q2 earnings miss; SPX below 7,460.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks (through Q2 2026 earnings late July)"
+    },
+    {
+      "asset": "SPCX",
+      "direction": "watch — DO NOT enter",
+      "thesis": "Step aside HIGH conviction. Day 9 opens in T-2h15m. Reference $162.00 = $23 (–12.7%) below $185 re-entry gate. Day 10 tomorrow = Nasdaq 100 inclusion (~$4.3B passive). DO NOT re-enter on Day 10 spike. IG floor buffer $12 intact. Clearance est. Day 11–12 (July 8–9). Re-entry gate est. July 9–11.",
+      "entry": "Day 9 (today) volume <30M full-day = clearance on pace. Day 10 (July 7): watch only. Post-clearance: volume <5M/day for 2–3 sessions THEN two consecutive closes above $185. Alert: gap below $154 = heightened monitoring required.",
+      "invalidation": "Day 9 volume above 40M (re-acceleration); SPCX gaps below $154; $150 IG floor breached.",
+      "conviction": "high",
+      "horizon": "Re-entry gate est. July 9–11"
+    },
+    {
+      "asset": "MU",
+      "direction": "long — entry at July 6 open on any Korea-sympathetic dip",
+      "thesis": "Korea shock resolved (SK Hynix Stop Day 2 is a protocol exit, not fundamental deterioration). Apple/CXMT/YMTC mobile DRAM story is a MU structural positive — DoD cannot use CXMT by law, amplifying US procurement mandate for Idaho HBM4. $50B Q4 FY26 guide confirmed; HBM4 sold out through 2026. No stop protocol, no gate conditions — cleanest AI-semi entry in portfolio.",
+      "entry": "July 6 open: buy MU at $1,150–$1,200 on any Korea-sympathetic dip in first 30–60 minutes. If MU opens above $1,200 and no dip materializes in first hour: wait for natural pullback. Stop: $1,100. Target: $1,350–$1,400 through September Q4 FY26 earnings.",
+      "invalidation": "MU opens above $1,250 on gap-up (do not chase); HBM demand peaks H1 2027 earlier than expected; Samsung aggressive HBM4 pricing; NVDA Stop Day 2 triggers creating sympathetic MU selling July 7.",
+      "conviction": "medium",
+      "horizon": "3–4 months (through Q4 FY26 earnings September 2026)"
     }
   ],
-  "bear_case": "The BUY verdict's dependency on broad Asia strength obscures semiconductor-specific structural deterioration: SK Hynix declined -3.38% to ₩2,343,000 on the same July 6 session that KOSPI gained +5.76% — the most pronounced intra-market divergence of this cycle, confirming that memory/HBM4 weakness is decoupled from the broader Asian equity recovery. IBIT recorded its 11th consecutive outflow day on July 3 while aggregate spot ETF flows were positive, structurally indicating institutional money is still retreating from BTC exposure even as retail-driven funds (FBTC, ARKB) absorb supply; a 12th consecutive IBIT outflow on July 6 would confirm Gate 3 is structurally failing, not just delayed by the holiday. The ISM Services PMI risk is asymmetric: the prior reading of 54.5 is above the 52-level threshold the market currently prices as 'Goldilocks'; a repeat print near 54 would force the market to price out the 60–65% September cut probability, compressing long-duration tech multiples at Nasdaq P/E ~28x. Fed Chair Warsh's June 17 'unambiguous commitment to price stability' language plus a hot ISM Services eliminates the rate-relief pillar entirely. Counter-argument: NVDA pre-market $197.14 + KOSPI +5.76% + VIX 15.81 represent the strongest pre-open framework in this 12-session period. If SPX closes above 7,460 AND NVDA holds above $195 on July 6, the bear case is invalidated. If SPX fails 7,460 by July 6 close, the call is wrong.",
+  "bear_case": "The July 6 morning session is the most consequential single-session binary cluster of this framework period: SK Hynix Stop Day 2 confirmed + NVDA Stop Day 2 determination pending + BTC declining 10 hours + SPCX Day 9 pent-up supply opening. Any one of these resolving negatively creates isolated portfolio stress; multiple simultaneous negative resolutions create cross-asset portfolio compression. The specific bear-case scenario: (1) NVDA closes at or below $195 today (Stop Day 2 = mandatory July 7 exit, removing the half-size NVDA position at the worst possible time — day before full-size add gate); (2) BTC Gate 3 (IBIT) fails at 9:30 AM ET today (IBIT still in outflow — no BTC re-entry, missing the constructive $62,849 entry level); (3) SPCX Day 9 volume surges above 40M (triple-holiday pent-up sellers overwhelm the NQ +1.55% tailwind); (4) SK Hynix mandatory exit July 7 KST open executes at a gap-down price below ₩2,343,000 if overnight macro deteriorates (SK Hynix closed –3.38% today — further weakness overnight would compound exit losses). The 'deceptive surface' scenario: NQ futures +1.55% creates a constructive opening tape that masks underlying deterioration in BTC (declining 10 hours to $62,849) and SK Hynix (Stop Day 2 confirmed) — the pre-Nasdaq-100-inclusion NQ bid is a SPCX-Day-10-specific phenomenon, not a broad portfolio uplift signal. NVDA's $0.33 pre-market cushion above $195 could evaporate on a single Services PMI disappointment at 9:45 AM ET.",
   "body_mdx": "data/briefings/markets/2026-07-06-morning.mdx"
 }
