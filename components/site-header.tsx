@@ -14,8 +14,6 @@ const NAV = [
   { href: "/", code: "DASH", label: "Dashboard" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
   { href: "/stocks", code: "STOCKS", label: "Stocks" },
-  { href: "/short-term-ideas", code: "SHORT", label: "Short Term" },
-  { href: "/long-term-ideas", code: "LONG", label: "Long Term" },
   { href: "/markets", code: "MKTS", label: "Markets" },
   { href: "/earnings", code: "EARN", label: "Earnings" },
   { href: "/opportunities", code: "OPS", label: "Opportunities" },

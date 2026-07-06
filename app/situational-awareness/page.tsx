@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   getSituationalAwarenessPortfolio,
   getCopyBook,
@@ -253,11 +252,7 @@ export default function SituationalAwarenessPage() {
         </a>
         , which lag ~45 days and omit shorts, swaps and private positions. This is a
         map of where the fund&apos;s disclosed capital sits — not a live mirror.
-        Educational only — not investment advice. See the{" "}
-        <Link href="/long-term-ideas" className="text-[var(--cyan-term)] hover:underline">
-          long-term ideas
-        </Link>{" "}
-        for our own structural theses.
+        Educational only — not investment advice.
       </p>
     </div>
   );

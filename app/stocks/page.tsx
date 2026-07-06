@@ -3,7 +3,6 @@ import {
   getLatestAssetDaily,
   type AssetDaily,
   type AssetId,
-  type DayWinner,
   type TradeAction,
 } from "@/lib/asset-daily";
 import { getNextEarnings, countdownBadge, type EarningsEntry } from "@/lib/earnings";
@@ -72,12 +71,6 @@ function EarningsLine({ entry, note }: { entry?: EarningsEntry | null; note?: st
   return null;
 }
 
-const WINNER: Record<DayWinner, { emoji: string; label: string; text: string }> = {
-  bulls: { emoji: "🐂", label: "Bulls", text: "text-[var(--up)]" },
-  bears: { emoji: "🐻", label: "Bears", text: "text-[var(--down)]" },
-  flat: { emoji: "➖", label: "Flat", text: "text-[var(--dim)]" },
-};
-
 const ACTION: Record<TradeAction, { text: string; border: string; bg: string }> = {
   buy: { text: "text-[var(--up)]", border: "border-[var(--up)]", bg: "bg-[rgba(34,197,94,0.10)]" },
   hold: { text: "text-[var(--amber)]", border: "border-[var(--amber)]", bg: "bg-[rgba(255,165,0,0.10)]" },
@@ -120,7 +113,6 @@ function StockCard({
     );
   }
 
-  const win = WINNER[d.day_winner] ?? WINNER.flat;
   const act = ACTION[d.decision.action] ?? ACTION.hold;
   const change = d.snapshot.change_pct;
   const changeTone =
@@ -158,9 +150,6 @@ function StockCard({
           {formatLevel(d.snapshot.price)}
         </span>
         <span className={cn("text-[12px] font-semibold", changeTone)}>{formatPct(change)}</span>
-        <span className={cn("ml-auto text-[10px] uppercase tracking-widest", win.text)}>
-          {win.emoji} {win.label} won
-        </span>
       </div>
 
       <div className="mt-1.5 flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
