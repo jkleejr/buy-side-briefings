@@ -16,7 +16,6 @@ const DESK_HREF: Record<string, string> = {
   nvda: "/nvidia",
   btc: "/bitcoin",
   skhynix: "/skhynix",
-  spcx: "/spacex",
   nbis: "/nebius",
   mu: "/micron",
   be: "/bloom-energy",

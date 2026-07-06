@@ -2,14 +2,14 @@
 
 The `daily-asset-dossiers` cloud routine (claude.ai/code/routines, runs ~21:45 UTC)
 generates the single-asset dossiers rendered at `/nvidia`, `/bitcoin`, `/skhynix`,
-`/spacex`, `/micron`, `/nebius`, `/bloom-energy`, and `/coreweave`. **The routine
+`/micron`, `/nebius`, `/bloom-energy`, and `/coreweave`. **The routine
 prompt lives in the cloud account, not in this repo** — this file is the in-repo
 source of truth. To change what the routine does, edit the cloud prompt to match
 this file; paste the sections below in directly.
 
 ## Each run, in order
 
-1. Generate a dossier for **all eight desks** in the table below (BTC every day;
+1. Generate a dossier for **all seven desks** in the table below (BTC every day;
    the equities on their trading-session cadence — but still emit a "weekend
    review" file dated for the day even when markets are closed, carrying the last
    confirmed close forward, as the existing Saturday dossiers do).
@@ -21,14 +21,13 @@ this file; paste the sections below in directly.
    `data/coverage-queue.json`; commit; **push to `deploy`** so Vercel ships. Files
    on disk that aren't pushed never reach the site.
 
-## The eight desks
+## The seven desks
 
 | asset id | symbol | page | currency | cadence | beat |
 |----------|--------|------|----------|---------|------|
 | `nvda`    | NVDA      | /nvidia       | $ (USD) | US sessions | AI-compute bellwether |
 | `btc`     | BTC       | /bitcoin      | $ (USD) | every day   | on-chain fields; weekends too |
 | `skhynix` | 000660.KS | /skhynix      | ₩ (KRW) | KRX sessions| HBM/AI-memory twin of NVDA |
-| `spcx`    | SPCX      | /spacex       | $ (USD) | US sessions | IPO'd 2026-06-12; Starlink/Starship megacap |
 | `mu`      | MU        | /micron       | $ (USD) | US sessions | HBM/DRAM, AI-memory super-cycle; SK Hynix twin |
 | `nbis`    | NBIS      | /nebius       | $ (USD) | US sessions | AI neocloud; the Situational Awareness bottleneck play |
 | `be`      | BE        | /bloom-energy | $ (USD) | US sessions | fuel cells for AI data centers; Aschenbrenner's top long |
@@ -40,14 +39,6 @@ per the table. Schema is `lib/asset-daily.ts` (fields listed at the bottom).
 
 ## Per-desk beat notes
 
-> **SpaceX** (`spcx`, /spacex) — IPO'd June 12, 2026 (largest IPO ever — $135
-> offer, ~$75B raised, ~$1.75T valuation). Newly listed, so little/no options
-> chain or full 52-week history — set unknown positioning fields (`iv`,
-> `put_call`) to `null` with an honest note rather than inventing them. Anchor key
-> levels on the IPO range (offer $135, debut high $176.52, debut close $160.95).
-> Cross-reference TSLA (Musk proxy) and the AI/risk-on tape. Catalysts: first
-> earnings (~Sept 2, 2026), 180-day lock-up expiry (~Dec 9, 2026).
->
 > **Micron** (`mu`, /micron) — the HBM/DRAM leader and the cleanest read-through
 > to our SK Hynix desk. Track the AI-memory super-cycle, gross-margin trajectory,
 > HBM4 ramp into Nvidia's Vera Rubin, and the fiscal-quarter prints. Fiscal Q3
@@ -127,7 +118,7 @@ max_pain?, notable_flow?}, what_traders_are_doing, news[], outlook{short_term,
 long_term}, bull_case[], bear_case[], key_levels[], catalysts[], analysis?`
 
 > Note: the positioning panel now tolerates `null` IV / put-call, so newly-listed
-> names (like SPCX) render cleanly without a fake options chain.
+> names render cleanly without a fake options chain.
 
 > **so_what** (required on every deep dossier — the For You feed is the home page):
 > write `so_what.line` as one plain

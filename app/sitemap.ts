@@ -32,7 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/coreweave",
     "/kospi",
     "/skhynix",
-    "/spacex",
     "/situational-awareness",
     "/metals",
     "/indices",

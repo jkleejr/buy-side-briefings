@@ -54,7 +54,6 @@ const CANONICAL: Record<string, string> = {
   "000660.KS": "SKHYNIX",
   "000660": "SKHYNIX",
   HXSCL: "SKHYNIX",
-  SPACEX: "SPCX",
 };
 
 export function canonicalSymbol(symbol: string): string {
@@ -72,7 +71,6 @@ const EXPOSURE: Record<string, Exposure> = {
   NBIS: { rates: 3, risk: 3 },
   CRWV: { rates: 3, risk: 3 },
   BE: { rates: 3, risk: 3 },
-  SPCX: { risk: 3, rates: 2 },
   BTC: { crypto: 3, risk: 3, dollar: 2 },
 
   // --- common uncovered names (so a holding gets a macro read pre-desk) ---

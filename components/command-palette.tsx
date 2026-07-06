@@ -22,7 +22,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/nebius", code: "NBIS", label: "Nebius daily brief — AI neocloud" },
   { href: "/bloom-energy", code: "BE", label: "Bloom Energy daily brief — fuel cells for AI data centers" },
   { href: "/coreweave", code: "CRWV", label: "CoreWeave daily brief — flagship AI neocloud" },
-  { href: "/spacex", code: "SPCX", label: "SpaceX daily brief", go: "s" },
   { href: "/opportunities", code: "OPS", label: "Opportunities", go: "o" },
   { href: "/desk", code: "DESK", label: "Paper Desk — trade fake money", go: "p" },
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness — Aschenbrenner's AI fund, copy-trade book" },

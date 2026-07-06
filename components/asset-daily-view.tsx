@@ -26,9 +26,6 @@ const RELATED: Partial<Record<AssetId, { label: string; href: string }[]>> = {
   nvda: [{ label: "SK Hynix · HBM supplier", href: "/skhynix" }],
   skhynix: [{ label: "NVIDIA · key customer", href: "/nvidia" }],
   btc: [{ label: "Crypto desk", href: "/crypto" }],
-  spcx: [
-    { label: "SPCX trade idea", href: "/opportunities/long-spcx-float-normalization-msci-passive-2026-06-12" },
-  ],
 };
 
 const WINNER_META: Record<
@@ -431,7 +428,7 @@ export default function AssetDailyView({
         />
       )}
 
-      {/* ===== ASSET-SPECIFIC PANEL (e.g. SPCX lockup / short setup) ===== */}
+      {/* ===== ASSET-SPECIFIC PANEL (optional per-desk extra) ===== */}
       {extra}
 
       {/* ===================== BULL vs BEAR ===================== */}

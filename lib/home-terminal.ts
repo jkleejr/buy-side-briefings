@@ -127,7 +127,6 @@ const ASSET_IDS: AssetId[] = [
   "nvda",
   "btc",
   "skhynix",
-  "spcx",
   "mu",
   "nbis",
   "be",

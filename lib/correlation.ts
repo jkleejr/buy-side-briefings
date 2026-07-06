@@ -2,7 +2,7 @@ import type { DailyClose } from "@/lib/markets";
 
 // ---------------------------------------------------------------------------
 // Book correlation & beta. The open ideas can look diversified by ticker while
-// being one bet by factor (e.g. NVDA / SK Hynix / SPCX are all AI-beta). This
+// being one bet by factor (e.g. NVDA / SK Hynix / Micron are all AI-beta). This
 // computes pairwise return correlation and beta to a benchmark, plus an
 // "effective number of independent bets" so hidden concentration is visible.
 //

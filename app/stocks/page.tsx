@@ -11,7 +11,7 @@ import { cn, formatLevel, formatPct } from "@/lib/utils";
 export const metadata = {
   title: "Stocks — Buy-Side Briefings",
   description:
-    "Single-name desks: our standing buy/hold/sell call and full daily analysis for NVIDIA, Bitcoin, SK Hynix, and SpaceX.",
+    "Single-name desks: our standing buy/hold/sell call and full daily analysis for NVIDIA, Bitcoin, SK Hynix, and more.",
 };
 
 export const revalidate = 300;
@@ -28,12 +28,11 @@ const STOCKS: StockDef[] = [
   { id: "nbis", href: "/nebius", name: "Nebius", symbol: "NBIS", blurb: "AI neocloud — compute & power, the AI bottleneck" },
   { id: "be", href: "/bloom-energy", name: "Bloom Energy", symbol: "BE", blurb: "Fuel cells powering AI data centers — the power bottleneck" },
   { id: "crwv", href: "/coreweave", name: "CoreWeave", symbol: "CRWV", blurb: "Flagship AI neocloud — GPUs for OpenAI & Anthropic" },
-  { id: "spcx", href: "/spacex", name: "SpaceX", symbol: "SPCX", blurb: "Pre-IPO space & satellite franchise" },
 ];
 
 // Yahoo symbol to fetch each desk's next earnings date from. SK Hynix is the
-// Korean listing. BTC (crypto) and SPCX (pre-IPO) have no standard earnings —
-// they get an explicit note instead, in NO_EARNINGS.
+// Korean listing. BTC (crypto) has no standard earnings — it gets an explicit
+// note instead, in NO_EARNINGS.
 const EARNINGS_SYMBOL: Partial<Record<AssetId, string>> = {
   nvda: "NVDA",
   skhynix: "000660.KS",
@@ -44,7 +43,6 @@ const EARNINGS_SYMBOL: Partial<Record<AssetId, string>> = {
 };
 const NO_EARNINGS: Partial<Record<AssetId, string>> = {
   btc: "Crypto — no earnings",
-  spcx: "Pre-IPO — no scheduled report",
 };
 
 function EarningsLine({ entry, note }: { entry?: EarningsEntry | null; note?: string }) {
@@ -173,7 +171,7 @@ function StockCard({
 }
 
 export default async function StocksHubPage() {
-  // Live next-earnings dates for the desks that report (skips BTC/SPCX).
+  // Live next-earnings dates for the desks that report (skips BTC).
   const earningsItems = STOCKS.filter((s) => EARNINGS_SYMBOL[s.id]).map((s) => ({
     symbol: EARNINGS_SYMBOL[s.id]!,
     label: s.name,

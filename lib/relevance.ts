@@ -31,7 +31,6 @@ const COVERED: AssetId[] = [
   "nbis",
   "crwv",
   "be",
-  "spcx",
 ];
 
 /** Dossier page for each covered asset (kept in sync with the app/ routes). */
@@ -43,7 +42,6 @@ const HREF: Record<AssetId, string> = {
   nbis: "/nebius",
   crwv: "/coreweave",
   be: "/bloom-energy",
-  spcx: "/spacex",
 };
 
 // What a user might type for each covered name. Matched case-insensitively
@@ -56,7 +54,6 @@ const ALIASES: Record<AssetId, string[]> = {
   nbis: ["NBIS"],
   crwv: ["CRWV"],
   be: ["BE"],
-  spcx: ["SPCX", "SPACEX"],
 };
 
 /** One covered holding's distilled relevance — everything a feed card needs. */
