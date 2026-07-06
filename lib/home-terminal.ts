@@ -108,6 +108,7 @@ const PULSE_LIST: Array<{ symbol: string; code: string; name: string }> = [
   { symbol: "GC=F", code: "GC", name: "Gold" },
   { symbol: "CL=F", code: "OIL", name: "Crude Oil (WTI)" },
   { symbol: "NVDA", code: "NVDA", name: "NVIDIA" },
+  { symbol: "^VIX", code: "VIX", name: "Volatility Index" },
 ];
 
 const SECTOR_LIST: Array<{ symbol: string; code: string; name: string }> = [
