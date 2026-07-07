@@ -2,14 +2,14 @@
   "routine": "markets",
   "date": "2026-07-06",
   "window": "night",
-  "generated_at": "2026-07-06T22:15:00Z",
+  "generated_at": "2026-07-07T01:15:00Z",
   "is_seed": false,
   "verdict": {
     "code": "buy",
     "emoji": "🟢",
-    "label": "BUY — Dual-gate Day 1 CLEARED (SPX 7,537 +0.72%, Dow ATH 53K); ISM Services Goldilocks 54.0%; NVDA Stop Day 2 survived ~$195.84; BTC $62K floor at risk overnight",
+    "label": "BUY — Dual-gate Day 1 CLEARED (SPX 7,537 +0.72%, Dow ATH 53K); ISM Services Goldilocks 54.0%; NVDA Stop Day 2 survived $195.84; BTC Gate 2 midnight confirmed ~$64K; SKHY exit ₩2,450K (+4.6%)",
     "conviction": "medium",
-    "rationale_short": "Dual-gate Day 1 confirmed: SPX closed at 7,537 (+77pts above the 7,460 threshold) with VIX holding below 17, activating the BUY regime as the July 3 night brief's base-case projected. ISM Services at 54.0% delivered the Goldilocks read (cool from 54.5%) that kept the 30Y below 5.00%, preserving the rate-cut narrative intact. NVDA Stop Day 2 narrowly survived (~$195.84 close, +$0.84 above the $195 threshold) — Stop Day 1 isolated. Conviction held at MEDIUM: BTC reversed −$2,200 from the $63,900 overnight high to ~$61,677 intraday (approaching the $62,000 structural floor), and Strategy's disclosed $216M BTC Monetization sale signals the largest corporate BTC treasury has become a recurring seller."
+    "rationale_short": "Dual-gate Day 1 confirmed: SPX closed at 7,537 (+77pts above the 7,460 threshold) with VIX holding below 17, activating the BUY regime. ISM Services 54.0% Goldilocks kept the 30Y below 5.00%. NVDA Stop Day 1 isolated at $195.84 — Stop Day 2 removed. Overnight: BTC UTC midnight close ~$64,000 confirmed Gate 2 ($2,000 buffer vs $62K floor); SK Hynix KRX July 7 opened ~₩2,450,000 (+4.6%, mandatory exit executed better than expected); SPX futures +0.21%, Nasdaq +1.35%. BTC now $63,966 (Crypto.com MCP, 01:09 UTC). FOMC minutes Wednesday July 8 is the next regime risk event. Conviction MEDIUM."
   },
   "supporting_data": [
     { "label": "SPX 7,537.43 (+0.72%) — Dual-gate Day 1 CLEARED: closed 77pts above 7,460 regime floor; Dow Jones new closing ATH 53,056 (+0.29%); Nasdaq 26,121.16 (+1.12%); Russell 2000 3,009.54 (+0.45%, reclaimed 3,000 — breadth expansion positive", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-6-2026" },
@@ -30,7 +30,7 @@
     { "name": "VIX",               "value": 14.90,   "trigger_above": 17,    "unit": "" },
     { "name": "SPX vs 7,460",      "value": 7537.43, "trigger_above": 7460,  "unit": "" },
     { "name": "DXY",               "value": 100.62,  "trigger_above": 100,   "unit": "" },
-    { "name": "BTC ($62K floor)",  "value": 61800,   "trigger_below": 62000, "unit": "$" },
+    { "name": "BTC ($62K floor)",  "value": 63966,   "trigger_below": 62000, "unit": "$" },
     { "name": "30Y Yield",         "value": 4.985,   "trigger_above": 5.0,   "unit": "%" },
     { "name": "Brent",             "value": 71.90,   "trigger_above": 97,    "unit": "$" }
   ],
@@ -40,7 +40,7 @@
     { "ticker": "GOOGL",   "note": "~$371 (+1.82% from ~$364 carry) — rate-relief bid; ISM Services validates Search and Cloud AI narrative. Q2 earnings late July. The morning's $350–$355 add-on-dip gate did not trigger; monitor July 7 open for better entry.", "sentiment": "positive" },
     { "ticker": "AAPL",    "note": "~$274 (+1.31%) — participated in the broad Nasdaq rally but China/CXMT/YMTC overhang persists. Structurally avoid adding; let existing positions ride on macro tailwind.", "sentiment": "neutral" },
     { "ticker": "SPCX",    "note": "$156.45 (−3.4% from $162 carry) — Day 9 distribution dominated the session; the pre-market +1% bid did not hold. $4.3B QQQ/QQQM forced buy executes at July 7 close. Watch for inclusion spike above $175 tomorrow — DO NOT enter on spike. Re-entry gate: two consecutive closes above $185 on above-average volume (est. July 9–11). Alert: if July 7 spike fails to lift SPCX above $165 despite $4.3B forced buy, re-evaluate gate downward.", "sentiment": "neutral" },
-    { "ticker": "BTC-USD", "note": "~$61,677 US session intraday low — CRITICAL: UTC midnight close (8 PM ET July 6) determines if Gates 1+2 remain intact ($62,000 floor). Strategy's 3,588 BTC/$216M sale (disclosed today) via BTC Monetization Program = largest corporate BTC treasury now a recurring quarterly seller. IBIT Gate 3 unconfirmed. Monitor BTC until 8 PM ET: above $62,000 UTC close = Gates intact; below = full framework reset required.", "sentiment": "negative" },
+    { "ticker": "BTC-USD", "note": "$63,966 (01:09 UTC July 7, Crypto.com MCP) — UTC MIDNIGHT CLOSE GATE 2 CONFIRMED: ~$64,000 at 00:00 UTC July 7, $2,000+ above $62,000 threshold. V-reversal from $61,305 bear trap complete; Strategy 3,588 BTC sale fully resolved. Gate 3 (IBIT daily flow for July 6) is the morning check — check farside.co.uk/btc/ before 9:30 AM ET. IF positive IBIT → re-entry at ~$63,900–$64,200. Target 1: $65,000; Target 2: $70,000.", "sentiment": "positive" },
     { "ticker": "DELL",    "note": "+7.7% — Trump White House event promoting Dell computers at a joint NYSE/Nasdaq opening bell ceremony. Political catalyst; not fundamental. Monitor for follow-through or fade.", "sentiment": "positive" },
     { "ticker": "INTC",    "note": "~$124 (+3%) — continuing its comeback trajectory. No fundamental shift; participating in broad Nasdaq risk-on session.", "sentiment": "positive" }
   ],
@@ -90,6 +90,6 @@
       "horizon": "1–2 weeks post-inclusion fade"
     }
   ],
-  "bear_case": "BTC's reversal from $63,900 to ~$61,677 is the session's most significant regime warning. Tonight's UTC midnight close (8 PM ET) is the decisive gate — with BTC at risk of resetting the two-gate framework entirely. Strategy's $216M BTC Monetization disclosure (3,588 BTC, $60,200 avg) confirms the largest corporate BTC treasury has pivoted from accumulator to recurring seller: if this program executes quarterly at $200–300M per tranche, it represents 1,500–2,000+ BTC of recurring institutional supply into every rally. NVDA's $0.84 Stop Day 2 survival margin means any overnight pre-market dip below $195 triggers the mandatory full exit at July 7 open. The FOMC minutes on July 8, written from the committee's June 17 data backdrop (pre-57K NFP, pre-ISM), will likely read more hawkish relative to current market pricing — potentially repricing the July 28 hike probability back toward 25–30% and compressing the Nasdaq P/E ~28x multiple that underpins the dual-gate BUY thesis. June CPI on July 14 at 4.2% (May baseline) remains the regime's ultimate arbiter. Invalidation: if BTC holds above $62,000 on tonight's UTC midnight close AND SPX closes above 7,460 on July 7 (Dual-gate Day 2), the near-term bear case weakens materially. If both conditions fail simultaneously, the call reverts to HOLD pending June CPI July 14.",
+  "bear_case": "OVERNIGHT UPDATE: BTC's UTC midnight close at ~$64,000 resolved the primary overnight risk (the $62,000 gate held decisively). The remaining bear cases: (1) FOMC MINUTES WEDNESDAY JULY 8 — written from the June 17 committee meeting backdrop (pre-57K NFP), minutes may read more hawkish than current market pricing, potentially repricing the July 28 rate-cut probability and compressing the Nasdaq P/E ~28x multiple that underpins the dual-gate BUY thesis. (2) NVDA KYBER OVERHANG — after-hours ~$195.28 shows zero institutional accumulation. The Kyber NVL144 delay narrative (SemiAnalysis unretracted) means NVDA faces Gate 3 ($200 closing basis) as a seller-defended ceiling. On the best possible setup day (SPCX inclusion bid, AMD +7.7%, SOX +3.2%), NVDA managed +0.52% on 35% of average volume. (3) STRATEGY RECURRING SELLER — Strategy's BTC Monetization Program (3,588 BTC/$216M from this cycle) is a now-disclosed quarterly recurring seller program into every BTC rally. Structural overhang on future IBIT flows. (4) June CPI July 14 at 4.2% (May baseline) remains the ultimate regime arbiter — any upside surprise resets the entire rate-cut narrative.",
   "body_mdx": "data/briefings/markets/2026-07-06-night.mdx"
 }
