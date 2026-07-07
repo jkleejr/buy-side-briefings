@@ -38,9 +38,15 @@
   ],
   "created_at": "2026-06-19",
   "expires_at": "2026-08-01",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["BTC", "crypto", "macro", "DXY", "conditional", "post-stop", "Warsh", "rate-regime", "watchlist"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-07",
+    "final_price": 64034.0,
+    "return_pct": 0,
+    "outcome_label": "Invalidated — DXY gate never cleared within 3-week window",
+    "note": "DXY at 100.85 on July 7 never closed below the required 99.00 re-entry gate during the 3-week validity window (June 19 → July 8 expiry). The conditional entry was never triggered and the position was never opened. BTC rallied to $64,034 — well above the $60K–$62K conditional entry zone — without the macro precondition being met. Thesis broken per explicit invalidation clause; the Warsh rate premium remained intact throughout the window."
+  },
   "levels": {
     "entry_low": 60000.0,
     "entry_high": 62000.0,

@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-26",
   "expires_at": "2026-08-22",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["AAPL", "Apple", "hardware", "DRAM", "demand", "consumer", "short", "catalyst", "AI-cost-push"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-07",
+    "final_price": 292.0,
+    "return_pct": -7.4,
+    "outcome_label": "Stopped out — AAPL closed above $292 stop",
+    "note": "AAPL reclaimed and surged far past the $292 stop level; confirmed at $308.63 on July 2 close and $312.65 on July 7. JPMorgan's 'overly amplified' assessment proved correct: Apple's installed base loyalty and the aspirational upgrade cycle absorbed the $200–300 hardware price increases without measurable near-term volume destruction. The demand-destruction thesis did not materialize within the expected window. Loss: 7.4% from $272 entry to $292 stop level."
+  },
   "levels": {
     "entry_low": 268.0,
     "entry_high": 278.0,

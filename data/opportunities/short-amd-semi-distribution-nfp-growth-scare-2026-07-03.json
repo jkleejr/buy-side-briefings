@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-07-03",
   "expires_at": "2026-07-25",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["AMD", "semis", "data-center", "growth-scare", "NFP", "macro", "short", "distribution", "EPYC", "MI300X"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-07",
+    "final_price": 549.0,
+    "return_pct": 0,
+    "outcome_label": "Never entered — AMD surged above $525 hard cap before July 7 open",
+    "note": "AMD rallied from $507 (July 2 close) to $549+ by July 6, blowing well through the $525 hard cap specified as 'Do NOT short above $525.' The SPCX/Nasdaq-100 inclusion tailwind and broad AI semi strength carried AMD beyond the entry window before the planned July 7 open short. The EPYC and MI300X structural bull thesis prevailed over the NFP growth-scare multiple-compression narrative. Position never entered; return 0%."
+  },
   "levels": {
     "entry_low": 503.0,
     "entry_high": 518.0,

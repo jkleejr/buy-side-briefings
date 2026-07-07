@@ -42,9 +42,15 @@
   ],
   "created_at": "2026-06-25",
   "expires_at": "2026-07-18",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["GLD", "gold", "real-rates", "PCE", "BofA", "3-hike", "macro", "safe-haven", "short"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-07",
+    "final_price": 385.73,
+    "return_pct": -5.4,
+    "outcome_label": "Stopped out — GLD breached $382 daily close",
+    "note": "Gold continued its rally to $4,150 by July 7 (GLD ~$385.73 at open), definitively breaching the $382 daily close stop. The real-rate compression thesis did not materialize: rather than gold selling off as BofA's 3-hike path embedded, the market re-rated gold as a stagflation hedge — the combination of rate hikes into a slowing economy (NFP 57K) proved more bullish for gold than bearish. The Iran ceasefire geopolitical premium also failed to deflate. Loss: ~5.4% from $366 entry midpoint to $385.73 stop-out price."
+  },
   "levels": {
     "entry_low": 360.0,
     "entry_high": 372.0,

@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-07",
+  "generated_at": "2026-07-07T12:05:00Z",
+  "summary": "Two shorts stopped out today (GLD –5.4%, AAPL –7.4%) and two theses broken with no loss (BTC DXY-gate conditional expired unactivated; AMD never entered above $525 cap); three new ideas added — BTC three-gate long on confirmed IBIT $209M Gate 3, conditional short-SPCX post-inclusion fade, and long-DAL pre-Q2 earnings July 10. Market backdrop: SPCX Nasdaq-100 inclusion day with $4.3B forced QQQ buy at today's close, NVDA Kyber NVL144 delay hammering Korean semis (KOSPI –4.9%, Samsung –7.7%, SK Hynix –6.7%), FOMC minutes hawkish risk tomorrow.",
+  "active_ids": [
+    "long-amd-ai-chip-fomc-dip-2026-06-16",
+    "long-amzn-aws-defensive-cloud-rate-relief-2026-07-03",
+    "long-avgo-ism-ai-hardware-reentry-2026-07-01",
+    "long-btc-three-gate-reentry-2026-07-07",
+    "long-dal-q2-earnings-summer-travel-2026-07-07",
+    "long-ewj-japan-oil-ai-recovery-2026-06-25",
+    "long-googl-dow-inclusion-2026-06-30",
+    "long-iwm-rate-relief-small-cap-rotation-2026-07-06",
+    "long-meta-ai-cloud-q2-earnings-2026-07-03",
+    "long-msft-ai-monetization-fomc-minutes-2026-07-06",
+    "long-spcx-nasdaq100-inclusion-july7-2026-07-02",
+    "long-tbt-warsh-sintra-july-hike-2026-07-02",
+    "long-tlt-nfp-weak-print-hedge-2026-06-29",
+    "long-tsla-delivery-beat-conditional-2026-07-01",
+    "long-tsm-ai-wafer-rout-reentry-2026-06-24",
+    "long-xlf-scotus-rate-path-2026-06-30",
+    "short-hyg-credit-spread-bofa-3-hike-2026-06-24",
+    "short-ita-ceasefire-defense-repricing-2026-06-18",
+    "short-mu-hbm4-dram-distribution-2026-07-06",
+    "short-nvda-stop-day2-puts-2026-06-30",
+    "short-spcx-post-inclusion-fade-2026-07-07"
+  ],
+  "new_today_ids": [
+    "long-btc-three-gate-reentry-2026-07-07",
+    "short-spcx-post-inclusion-fade-2026-07-07",
+    "long-dal-q2-earnings-summer-travel-2026-07-07"
+  ],
+  "closed_today": [
+    {
+      "id": "long-btc-post-stop-reentry-60k-conditional-2026-06-19",
+      "status": "thesis_broken",
+      "final_price": 64034.0,
+      "return_pct": 0,
+      "note": "DXY at 100.85 on July 7 never closed below the 99.00 re-entry gate within the 3-week validity window (June 19 → July 8). Position was never opened; conditional entry never triggered."
+    },
+    {
+      "id": "short-amd-semi-distribution-nfp-growth-scare-2026-07-03",
+      "status": "thesis_broken",
+      "final_price": 549.0,
+      "return_pct": 0,
+      "note": "AMD surged from $507 (July 2) to $549+ by July 6, above the $525 hard cap. SPCX inclusion tailwind and AI semi strength prevented entry. Position never opened."
+    },
+    {
+      "id": "short-gld-real-rates-pce-bofa-2026-06-25",
+      "status": "stopped_out",
+      "final_price": 385.73,
+      "return_pct": -5.4,
+      "note": "Gold rallied to $4,150 (GLD ~$385.73) on stagflation re-rating; $382 daily close stop breached. Real-rate compression thesis did not materialize as gold re-rated as a stagflation hedge."
+    },
+    {
+      "id": "short-aapl-hardware-price-demand-compression-2026-06-26",
+      "status": "stopped_out",
+      "final_price": 292.0,
+      "return_pct": -7.4,
+      "note": "AAPL surged to $312.65 on July 7 (confirmed $308.63 on July 2), well above $292 stop. Apple's installed base loyalty absorbed hardware price increases without the demand destruction expected."
+    }
+  ],
+  "current_prices": {
+    "long-amd-ai-chip-fomc-dip-2026-06-16": 549.0,
+    "long-amzn-aws-defensive-cloud-rate-relief-2026-07-03": 243.0,
+    "long-avgo-ism-ai-hardware-reentry-2026-07-01": 373.0,
+    "long-btc-three-gate-reentry-2026-07-07": 64034.0,
+    "long-dal-q2-earnings-summer-travel-2026-07-07": 95.0,
+    "long-ewj-japan-oil-ai-recovery-2026-06-25": 94.0,
+    "long-googl-dow-inclusion-2026-06-30": 362.0,
+    "long-iwm-rate-relief-small-cap-rotation-2026-07-06": 298.9,
+    "long-meta-ai-cloud-q2-earnings-2026-07-03": 600.29,
+    "long-msft-ai-monetization-fomc-minutes-2026-07-06": 389.0,
+    "long-spcx-nasdaq100-inclusion-july7-2026-07-02": 156.45,
+    "long-tbt-warsh-sintra-july-hike-2026-07-02": 33.96,
+    "long-tlt-nfp-weak-print-hedge-2026-06-29": 85.47,
+    "long-tsla-delivery-beat-conditional-2026-07-01": 425.0,
+    "long-tsm-ai-wafer-rout-reentry-2026-06-24": 454.0,
+    "long-xlf-scotus-rate-path-2026-06-30": 56.12,
+    "short-hyg-credit-spread-bofa-3-hike-2026-06-24": 79.86,
+    "short-ita-ceasefire-defense-repricing-2026-06-18": 250.65,
+    "short-mu-hbm4-dram-distribution-2026-07-06": 984.0,
+    "short-nvda-stop-day2-puts-2026-06-30": 197.16,
+    "short-spcx-post-inclusion-fade-2026-07-07": 156.45
+  }
+}
