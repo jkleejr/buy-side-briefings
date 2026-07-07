@@ -1,0 +1,140 @@
+{
+  "routine": "markets",
+  "date": "2026-07-07",
+  "window": "morning",
+  "generated_at": "2026-07-07T10:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Kyber NVL144 confirmed delayed to 2028 (PCB manufacturing failure, SemiAnalysis); KOSPI –4.9% / Samsung –7.7% / SK Hynix –6.7%; NQ futures –0.9%; NVDA pre-mkt $197.16 — full-size add gate NOT triggered ($200 threshold); IBIT Gate 3 CONFIRMED ($209M July 6 inflow, 11-day outflow streak broken, $266M total); BTC $64,034; SPCX Nasdaq-100 $4.3B inclusion close; FOMC minutes Wed July 8",
+    "conviction": "medium",
+    "rationale_short": "The July 7 morning bifurcates: one high-conviction BUY (BTC) and one hold across the board on semiconductors. IBIT Gate 3 is confirmed — BlackRock's IBIT recorded $209M net inflows on July 6, breaking an 11-day outflow streak, with total US spot Bitcoin ETF inflows reaching $266M. The three-gate BTC re-entry framework is fully satisfied (Gate 1: July 3 UTC close $62,579; Gate 2: July 4 UTC close $63,015; Gate 3: IBIT $209M July 6), activating BTC re-entry at 9:30 AM ET. BTC has V-recovered from the $61,677 July 6 intraday bear trap (Strategy $216M disclosure) to $64,034 (+0.76%), with $450M in short liquidations providing mechanical upside. On the negative side: SemiAnalysis confirmed Nvidia's Kyber NVL144 rack system is delayed 12+ months to 2028 due to PCB midplane manufacturing failures (78-layer orthogonal board), cascading into KOSPI –4.9%, Samsung –7.7%, and SK Hynix –6.7% overnight. NVDA pre-market is $197.16 — the full-size add gate ($200 simultaneously at 9:25 AM ET) is NOT triggered; hold half-size only through August 26 Q2 FY27 earnings. BUY regime remains technically intact (SPX futures above 7,460, VIX 14.9), but the Kyber-driven semi headwind limits the call to HOLD. FOMC minutes Wednesday July 8 is the next regime risk (9/18 members supported rate hike at June meeting)."
+  },
+  "supporting_data": [
+    {
+      "label": "IBIT Gate 3 CONFIRMED — $209M IBIT net inflows July 6; 11-day outflow streak broken; total US spot BTC ETF $266M; BTC three-gate re-entry framework fully satisfied; re-entry activated 9:30 AM ET",
+      "url": "https://cryptobriefing.com/blackrock-ibit-bitcoin-etf-inflows-july-6/"
+    },
+    {
+      "label": "Nvidia Kyber NVL144 delayed to 2028 — PCB midplane (78-layer orthogonal) manufacturing failure confirmed by SemiAnalysis July 6; NVL72x2 back-to-back rack cancelled; NVL576 constrained; 12+ month slip from original 2027 Vera Rubin Ultra window",
+      "url": "https://www.cnbc.com/2026/07/06/nvidia-kyber-rack-system-delays-manufacturing-taiwan-rubin-chips-.html"
+    },
+    {
+      "label": "KOSPI –4.9% / Samsung Electronics –7.7% / SK Hynix –6.7% overnight KST session; semiconductor sector-specific selloff on Kyber NVL144 news; NQ futures –0.9%, ES futures –0.1% pre-market; Dow futures +0.2%",
+      "url": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-july-7-225645420.html"
+    },
+    {
+      "label": "BTC $64,034 (+0.76%) — V-recovery from July 6 $61,677 intraday bear trap; $450M short liquidations above $62K; ETF inflows $266M total ($209M IBIT Gate 3); 24h volume +104.7% above average",
+      "url": "https://www.cryptotimes.io/2026/07/07/bitcoin-swiftly-rebounds-above-63000-with-266m-spot-etf-inflow-boost/"
+    },
+    {
+      "label": "SPCX Nasdaq-100 inclusion effective today — $4.3B QQQ/QQQM forced buy executes at close; float only 3–5%; historical Palantir/Strategy inclusions peaked on or before inclusion date",
+      "url": "https://seekingalpha.com/news/4607865-spacex-to-join-nasdaq-100-effective-july-7-2026"
+    },
+    {
+      "label": "FOMC minutes Wednesday July 8 — June 17 meeting; 9/18 members supported rate hike; June CPI July 14 (consensus ~4.2%); PepsiCo earnings Thursday July 9; Delta Air Lines Friday July 10; SKHY Nasdaq ADR $29B listing Friday July 10",
+      "url": "https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-07-06/"
+    }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7537.0,   "change_pct": -0.1, "as_of": "2026-07-07T13:00:00Z" },
+    "nasdaq": { "level": 26121.0,  "change_pct": -0.9, "as_of": "2026-07-07T13:00:00Z" },
+    "vix":    { "level": 14.90,    "change_pct":  0.0, "as_of": "2026-07-06T20:00:00Z" },
+    "ust10y": { "level": 4.48,     "change_bps":   1,  "as_of": "2026-07-07T10:00:00Z" },
+    "dxy":    { "level": 100.85,   "change_pct":  0.23,"as_of": "2026-07-07T10:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                  "value": 14.90,  "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460",         "value": 7537.0, "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",                  "value": 100.85, "trigger_above": 100,   "unit": "" },
+    { "name": "BTC ($62K floor)",     "value": 64034,  "trigger_below": 62000, "unit": "$" },
+    { "name": "30Y Yield",            "value": 4.985,  "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",                "value": 72.0,   "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Pre-market $197.16 (range $195.05–$198.60) — full-size add gate NOT triggered ($200 threshold). Hold half-size only through August 26 Q2 FY27 earnings ($91B guide). Kyber NVL144 delay to 2028 adds fundamental headwind to annual cadence narrative. Stop: $195 at any US close → mandatory full exit following morning. Watch pre-market trajectory at 9:25 AM ET before commitment.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "$64,034 (+0.76%) — GATE 3 CONFIRMED. Three-gate protocol fully satisfied: Gate 1 ✓ (July 3 UTC close $62,579), Gate 2 ✓ (July 4 UTC close $63,015), Gate 3 ✓ (IBIT $209M July 6). V-recovery from $61,677 bear trap complete. Re-entry activated at 9:30 AM ET US open. Size: 20–25% crypto allocation. Stop: $58,100. Target 1: $65,000. Target 2: $70,000.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$156.45 (July 6 close) → Nasdaq-100 inclusion day. $4.3B QQQ/QQQM forced buy executes at close. Step aside HIGH conviction. DO NOT enter on inclusion spike — historical precedent (Palantir, MSTR) says peak on/before inclusion date. $150 IG floor buffer $6.45. Re-entry gate: two consecutive closes above $185 on above-average volume (est. July 9–11). Monitor inclusion volume as distribution signal.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$600 (July 6 close +2.98%) — best large-cap AI performer of the post-holiday period. Hold and add on any July 7 weakness. Zero semiconductor/Korea exposure insulates against today's Kyber selloff. Q2 2026 earnings July 29 = first AI-at-scale quarter. Dow futures +0.2% supports defensive large-cap bid into META. Stop: prior week low.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SK HYNIX / SKHY",
+      "note": "KRX mandatory full exit executed at 9:00 AM KST (00:00 UTC July 7). KRX position now FLAT. SK Hynix trading –6.7% in KST session today (Kyber delay cascade + SKHY IPO overhang). SKHY (Nasdaq ADR) lists Thursday July 10 — $29B offering, largest foreign IPO ever. DO NOT front-run the SKHY IPO; evaluate as a separate instrument at listing after KRX is flat.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MU",
+      "note": "HBM4 DRAM competitor to SK Hynix. Kyber NVL144 delay creates uncertainty on near-term HBM4 rack volumes (NVL144 was the primary vehicle for Vera Rubin Ultra HBM4 deployment). $50B Q4 FY26 guide intact; HBM4 sold out through 2026. Monitor for dip buy below $1,100 if semi selloff deepens; long thesis intact but wait for Kyber impact scope to clarify.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$371 (July 6 close +1.82%) — hold through today; Services PMI validation of Search/Cloud AI narrative intact. ISM Services 54.0% Goldilocks on July 6 directly supports GOOGL Q2 revenue thesis. Q2 2026 earnings late July. Not a semiconductor name; insulated from Kyber selloff. Add on dips $355–$360 if market opens down on NQ futures weakness.",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA (full-size)",
+      "reason": "Full-size add gate NOT triggered: pre-market $197.16 is $2.84 below the $200 threshold required at 9:25 AM ET. The Kyber NVL144 delay to 2028 adds new fundamental headwind — NVDA's annual cadence was a core multiple driver; a 12+ month slip on the flagship rack system creates a gap in hyperscaler capex planning. The four-gate protocol must be satisfied simultaneously (NVDA >$200 AND SPX >7,460 AND VIX <17 AND July 6 close >$195) before adding full-size.",
+      "better_entry": "Hold half-size. Full-size add: all four gates simultaneously at 9:25 AM ET on any given morning. If NVDA consolidates above $200 for two sessions with VIX below 17, re-evaluate. Stop: $195 at any US close. If triggered today: Stop Day 2 = mandatory full exit July 8 US open, zero discretion."
+    },
+    {
+      "ticker": "SOX / SMH (semi ETFs)",
+      "reason": "Kyber NVL144 delay cascades across the entire semi complex: AVGO (AI ASICs sharing the NVL144 ecosystem), MRVL (networking silicon), KLA/AMAT (fab equipment for NVL144 production). KOSPI –4.9%, Samsung –7.7% overnight confirms global semi re-pricing is underway. Adding broad SMH into a confirmed fundamental headwind is low-conviction risk when the Kyber delay scope is still being digested.",
+      "better_entry": "Wait for post-Kyber clarity. If SOX holds its 50-day moving average and NVDA stabilizes above $200 on closing basis for two sessions, re-evaluate SMH entry on the next dip. Better entry: SMH below $260 with VIX below 16 and SOX breadth recovering."
+    },
+    {
+      "ticker": "SPCX (inclusion-day spike)",
+      "reason": "SPCX enters Day 10 (Nasdaq-100 inclusion day) at $156.45 — 12.7% below the $185 re-entry gate after Day 9 distribution sellers dominated. The $4.3B forced buy executes at close regardless of price, but historical Nasdaq-100 additions (Palantir December 2024, Strategy December 2024) peaked on or before their inclusion dates and declined 15–25% in the following month. Locked-up holders use forced-buy volume as their best exit window.",
+      "better_entry": "Watch Day 10 inclusion spike but DO NOT enter above $175. Post-inclusion clearance: volume <5M/day for 2–3 sessions (est. July 8–9), then two consecutive closes above $185 on above-average volume. $150 IG floor is the catastrophic stop level — a gap below $154 requires re-evaluating the entire re-entry gate framework."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "BTC",
+      "direction": "long — Gate 3 CONFIRMED, re-entry activated at 9:30 AM ET",
+      "thesis": "Three-gate BTC re-entry framework fully satisfied for the first time in this cycle. Gate 1 ✓ (July 3 UTC close $62,579.40). Gate 2 ✓ (July 4 UTC close $63,015 — demand held through US market holiday). Gate 3 ✓ ($209M IBIT net inflow July 6 — institutional demand re-engaged, 11-day outflow streak broken, $266M total US spot BTC ETF). V-recovery from the Strategy-triggered $61,677 bear trap to $64,034 with $450M in short liquidations providing mechanical upside. Post-halving 450 BTC/day supply reduction is a structural compounding tail.",
+      "entry": "9:30 AM ET US open: buy BTC-USD at market. Size: 20–25% crypto allocation. Stop: $58,100. Target 1: $65,000. Target 2: $70,000 (4–8 weeks).",
+      "invalidation": "BTC closes any UTC midnight session below $62,000 (Gates 1+2 reset — mandatory full exit, restart gate sequence from scratch); IBIT reverts to net outflows next session (reduce to 50% size); BTC closes below $58,100 after entry (stop-loss exit, no averaging).",
+      "conviction": "high",
+      "horizon": "Re-entry 9:30 AM ET today; 4–8 week hold to $65K–$70K"
+    },
+    {
+      "asset": "SPCX",
+      "direction": "short — post-inclusion fade (initiated at close)",
+      "thesis": "SPCX enters the $4.3B forced-buy inclusion day at $156.45 after Day 9 distribution sellers prevailed. Historical precedent: Palantir and Strategy both peaked on or before their respective Nasdaq-100 inclusion dates and declined 15–25% in the following month. Float is only 3–5% — forced buyers elevate price temporarily, but locked-up holders use inclusion volume as the optimal exit window. The spike is the distribution event; the post-inclusion clearance is when the float exhausts.",
+      "entry": "July 7 market close: if SPCX spikes above $175 on the $4.3B inclusion buy, initiate short or buy puts. Size: 10–15% hedge allocation. Target: $150–$155 (est. July 8–10). Stop: SPCX two consecutive closes above $185 on above-average volume (clearance signal — close the short).",
+      "invalidation": "SPCX clears $185 on two consecutive sessions above average volume (distribution done — exit short); secondary offering materially expands float (changes supply/demand dynamic).",
+      "conviction": "low",
+      "horizon": "1–2 weeks post-inclusion fade"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "hold half-size — four-gate check at 9:25 AM ET",
+      "thesis": "July 6 close $195.84 isolated Stop Day 1. Pre-market $197.16 is below the $200 full-size add gate. Kyber NVL144 delay to 2028 is a genuine fundamental headwind — annual cadence was NVDA's core multiple support, and a 12-month rack delay creates a cap-ex planning gap for hyperscaler customers. The Q2 FY27 earnings guide ($91B revenue August 26) remains the structural re-rating event. If the four-gate check at 9:25 AM ET passes (all simultaneously), add to full-size — but the current pre-market trajectory does not support it.",
+      "entry": "9:25 AM ET: if (NVDA >$200) AND (SPX >7,460) AND (VIX <17) AND (July 6 close >$195) simultaneously → add to full-size. Currently NOT triggered. Hold half-size. Stop: $195 at any US close → mandatory full exit following morning, zero discretion.",
+      "invalidation": "NVDA closes below $195 today (Stop Day 2 — mandatory full exit July 8 US open); FOMC minutes hawkish spike lifts VIX above 17; Kyber delay expands to Blackwell Ultra supply constraints (SemiAnalysis follow-up).",
+      "conviction": "medium",
+      "horizon": "Binary 9:25 AM ET check; hold half-size through August 26 Q2 FY27 earnings if gate not met"
+    }
+  ],
+  "bear_case": "FOMC minutes Wednesday July 8 represent the highest-probability regime disruption in the next 72 hours. The June 17 committee meeting was split (9/18 members supported rate hike appropriate for 2026), and the minutes were written before the 57K NFP soft jobs print — they will read more hawkish than current market pricing, which has already priced the July hike probability down to 20%. A hawkish minutes read, even without a policy change, could push VIX through 17 and break the dual-gate BUY regime after only one session of activation. The Kyber NVL144 delay is not merely a manufacturing setback — SemiAnalysis has a near-perfect supply chain track record, and a 78-layer PCB midplane failure is the type of fundamental constraint that does not resolve in two quarters. If hyperscaler customers (Microsoft, Google, AWS) begin pushing out rack orders as a result of Vera Rubin Ultra slipping, NVDA's August 26 earnings guide revision risk rises materially. SKHY's $29B Nasdaq ADR IPO on July 10 is the largest foreign IPO ever — it absorbs institutional capital from the AI/memory complex (NVDA, MU, TSM) into a competing semi-adjacent vehicle. If SPX fails to hold 7,460 on July 7 close (Dual-gate Day 2 failure), the entire BUY regime reverts to HOLD.",
+  "body_mdx": "data/briefings/markets/2026-07-07-morning.mdx"
+}
