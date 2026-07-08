@@ -1,13 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-07-07",
-      "label": "SPCX added to Nasdaq-100 (~$4.3B QQQ/QQQM forced buy at close); Dual-gate Day 2 attempt",
-      "kind": "OTHER",
-      "tickers": ["SPCX", "QQQ", "QQQM", "NVDA"],
-      "note": "SPCX heads into inclusion at $156.45 (July 6 close) — 12.7% below the $185 re-entry gate after Day 9 distribution prevailed. $4.3B QQQ/QQQM forced passive buy executes at the July 7 close regardless of macro. Sell any inclusion-day spike above $175; DO NOT enter on the spike. NVDA full-size add gate: check at 9:25 AM ET (NVDA >$200 + SPX >7,460 + VIX <17 simultaneously). Dual-gate Day 2: SPX must again close above 7,460 AND VIX below 17 for HIGH conviction upgrade. BTC UTC midnight close from July 6 (8 PM ET) is the overnight gate check that precedes this session."
-    },
-    {
       "date": "2026-07-08",
       "label": "FOMC June 17 minutes (~2 PM ET) — written pre-57K NFP; potentially hawkish relative to current pricing",
       "kind": "FOMC",
@@ -24,11 +17,19 @@
       "note": "PepsiCo is the first significant Q2 2026 earnings report. A beat with raised guidance = consumer demand held up despite 57K NFP growth scare, supporting the soft-landing narrative and BUY regime. A miss or lowered guidance = growth-scare confirms, risk-off pressure before CPI July 14. Sets the tone for the consumer-staples read heading into Q2 earnings season peak (META, GOOGL, MSFT, AMZN all reporting late July)."
     },
     {
-      "date": "2026-07-10",
-      "label": "SK Hynix (SKHY) Nasdaq ADR listing — $29.4B offering; Delta Air Lines (DAL) Q2 earnings",
+      "date": "2026-07-09",
+      "label": "SKHY ADR pricing (after US close) — SK Hynix $28B Nasdaq offering; watch vs $158.14/ADS reference price",
       "kind": "OTHER",
-      "tickers": ["000660.KS", "TSM", "NVDA", "DAL"],
-      "note": "Two sector clearing events: (1) SK Hynix SKHY Nasdaq ADR listing ($29.4B, 17.79M shares; underwriters BofA, Goldman, Citi, JPMorgan). ADR pricing above offering = institutional vote of confidence in HBM4 demand thesis; constructive for NVDA, TSM, AVGO. Below = Korea circuit breaker HBM4 concern confirmed. SK Hynix mandatory KRX exit executed at July 7 KST open per Stop Day 2 protocol. (2) Delta Air Lines Q2 earnings tests whether 57K NFP growth scare is filtering into travel demand — strong bookings support consumer resilience thesis."
+      "time_et": "After close",
+      "tickers": ["SKHY", "TSM", "NVDA", "AVGO"],
+      "note": "SKHY ADR prices after the US close on July 9. Reference price: ~$158.14/ADS (= KRX ₩242,500 at ₩1,533.44/USD basis, July 3 close). >$165.26/ADS = above reference; strong institutional demand confirmed, re-entry activated at July 10 open. $158–$165 = fair, enter 50% with add on stability. <$158 = demand miss after KOSPI circuit-breaker pressure; wait. $7B in cornerstone investor commitments (Baillie Gifford, Coatue, SAP). ~1,000-institution roadshow. FOMC minutes July 8 is the swing risk to pricing environment."
+    },
+    {
+      "date": "2026-07-10",
+      "label": "SKHY Nasdaq ADR debut (largest foreign IPO); Delta Air Lines (DAL) Q2 earnings",
+      "kind": "OTHER",
+      "tickers": ["SKHY", "TSM", "NVDA", "DAL"],
+      "note": "Two sector clearing events: (1) SKHY debut — opening print vs IPO price is the HBM4 demand thesis clearing event. >$175 opening = strong demand, full-size entry activated. $165–$175 = fair demand, enter 50%. <$165 = demand miss; KOSPI circuit-breaker narrative extends to ADR; wait. KRX mandatory exit executed July 7 KST. (2) DAL Q2 tests whether 57K NFP growth scare is filtering into travel demand — strong bookings support consumer resilience. MSCI World inclusion timeline for SKHY begins at listing."
     },
     {
       "date": "2026-07-14",
