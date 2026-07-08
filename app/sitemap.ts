@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/kospi",
     "/situational-awareness",
     "/ai-bubble",
+    "/market-history",
     "/metals",
     "/indices",
     "/tech",
