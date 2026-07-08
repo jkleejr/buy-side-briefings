@@ -13,16 +13,6 @@ type Destination = {
 
 const DESTINATIONS: Destination[] = [
   { href: "/", code: "DASH", label: "Dashboard", go: "d" },
-  { href: "/stocks", code: "STOCKS", label: "Stocks — single-name desks", go: "e" },
-  { href: "/nvidia", code: "NVDA", label: "NVIDIA daily brief", go: "n" },
-  { href: "/bitcoin", code: "BTC", label: "Bitcoin daily brief", go: "b" },
-  { href: "/bitcoin/thesis", code: "BTHESIS", label: "Bitcoin Thesis — the standing case for BTC" },
-  { href: "/skhynix", code: "HYNIX", label: "SK Hynix daily brief", go: "h" },
-  { href: "/micron", code: "MU", label: "Micron daily brief — AI-memory super-cycle" },
-  { href: "/nebius", code: "NBIS", label: "Nebius daily brief — AI neocloud" },
-  { href: "/bloom-energy", code: "BE", label: "Bloom Energy daily brief — fuel cells for AI data centers" },
-  { href: "/coreweave", code: "CRWV", label: "CoreWeave daily brief — flagship AI neocloud" },
-  { href: "/opportunities", code: "OPS", label: "Opportunities", go: "o" },
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness — Aschenbrenner's AI fund, copy-trade book" },
   { href: "/ai-bubble", code: "BUBBLE", label: "AI Bubble — is this a bubble, and what breaks first?", go: "a" },
   { href: "/briefings", code: "BRIEF", label: "Briefings archive", go: "r" },
@@ -30,7 +20,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/markets", code: "MKTS", label: "Markets hub", go: "m" },
   { href: "/earnings", code: "EARN", label: "Earnings calendar — schedule for the names you track" },
   { href: "/track-record", code: "TRACK", label: "Track record + calibration", go: "t" },
-  { href: "/postmortem", code: "WRONG", label: "What I Got Wrong — misses & losses", go: "x" },
   { href: "/digest", code: "WEEK", label: "Week in review", go: "g" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist", go: "w" },
   { href: "/kospi", code: "KOSPI", label: "KOSPI briefings", go: "k" },
@@ -41,7 +30,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
   { href: "/metals", code: "MTLS", label: "Metals — gold & silver" },
-  { href: "/opportunities/history", code: "HIST", label: "Opportunities history" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 

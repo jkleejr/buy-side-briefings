@@ -448,12 +448,9 @@ export default async function TrackRecordPage() {
                   <span className="text-[9px] uppercase tracking-widest text-[var(--up)]">
                     Best contribution ·{" "}
                   </span>
-                  <Link
-                    href={`/opportunities/${portfolio.stats.best.id}`}
-                    className="text-[var(--foreground)] hover:underline"
-                  >
+                  <span className="text-[var(--foreground)]">
                     {portfolio.stats.best.ticker}
-                  </Link>{" "}
+                  </span>{" "}
                   <span className="text-[var(--up)]">
                     {formatPct(portfolio.stats.best.contribution_pct)}
                   </span>{" "}
@@ -468,12 +465,9 @@ export default async function TrackRecordPage() {
                   <span className="text-[9px] uppercase tracking-widest text-[var(--down)]">
                     Worst contribution ·{" "}
                   </span>
-                  <Link
-                    href={`/opportunities/${portfolio.stats.worst.id}`}
-                    className="text-[var(--foreground)] hover:underline"
-                  >
+                  <span className="text-[var(--foreground)]">
                     {portfolio.stats.worst.ticker}
-                  </Link>{" "}
+                  </span>{" "}
                   <span className="text-[var(--down)]">
                     {formatPct(portfolio.stats.worst.contribution_pct)}
                   </span>{" "}

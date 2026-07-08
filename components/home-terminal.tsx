@@ -37,12 +37,6 @@ function Pct({ pct }: { pct: number | null }) {
   );
 }
 
-function sentColor(code: string): string {
-  if (code === "buy") return "text-[var(--up)]";
-  if (code === "bearish") return "text-[var(--down)]";
-  return "text-[var(--amber)]";
-}
-
 function dirColor(dir: "up" | "down" | "flat"): string {
   if (dir === "up") return "text-[var(--up)]";
   if (dir === "down") return "text-[var(--down)]";
@@ -253,34 +247,6 @@ function MetricStrip({ metrics }: { metrics: MetricCard[] }) {
   );
 }
 
-function OutlookBar({ brief }: { brief: BriefView }) {
-  const { pct, label } = brief.sentiment;
-  return (
-    <div>
-      <div className="mb-1 flex items-center justify-between">
-        <span className="text-[10px] uppercase tracking-[0.22em] text-[var(--dim)]">
-          Outlook
-        </span>
-        <span
-          className={`text-[12px] font-bold uppercase tracking-widest ${sentColor(brief.code)}`}
-        >
-          {label}
-        </span>
-      </div>
-      <div className="relative h-1.5 w-full overflow-hidden rounded-sm bg-[#111]">
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--down)] via-[var(--amber)] to-[var(--up)]" />
-        <div className="absolute inset-y-0 right-0 bg-black/75" style={{ left: `${pct}%` }} />
-        <div className="absolute inset-y-0 w-px bg-white/90" style={{ left: `${pct}%` }} />
-      </div>
-      <div className="mt-1 flex items-center justify-between text-[9px] uppercase tracking-[0.18em] text-[var(--dim)]">
-        <span>Bearish</span>
-        <span>Neutral</span>
-        <span>Bullish</span>
-      </div>
-    </div>
-  );
-}
-
 function KeyPoints({ brief }: { brief: BriefView }) {
   if (!brief.keyPoints.length) return null;
   return (
@@ -407,13 +373,11 @@ function BriefReader({ brief, other }: { brief: BriefView; other: BriefView | nu
 
       <MetricStrip metrics={brief.metrics} />
 
-      <OutlookBar brief={brief} />
-
       {/* Headline + lede on the left; the right rail fills the whitespace with
           the brief's punchline (key signal) and the tickers to watch. */}
       <div className="grid gap-6 lg:grid-cols-12">
         <div className="space-y-5 lg:col-span-7">
-          <h1 className="font-display text-[30px] font-extrabold leading-[1.06] tracking-tight text-white sm:text-[40px]">
+          <h1 className="font-display text-[22px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[28px]">
             {brief.headline}
           </h1>
           <p className="text-[15px] leading-relaxed text-[#a1a1aa]">{brief.lede}</p>

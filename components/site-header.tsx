@@ -13,10 +13,8 @@ const NAV = [
   // (Crypto, Week, What I Got Wrong, Watchlist, About) lives in the ⌘K palette.
   { href: "/", code: "DASH", label: "Dashboard" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
-  { href: "/stocks", code: "STOCKS", label: "Stocks" },
   { href: "/markets", code: "MKTS", label: "Markets" },
   { href: "/earnings", code: "EARN", label: "Earnings" },
-  { href: "/opportunities", code: "OPS", label: "Opportunities" },
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness" },
   { href: "/ai-bubble", code: "BUBBLE", label: "AI Bubble" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },
