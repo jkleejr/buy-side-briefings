@@ -107,6 +107,16 @@ function readJson<T>(filePath: string): T | null {
   }
 }
 
+// Some generator runs write supporting_data at the file's top level instead of
+// inside verdict — accept both so key points/wire don't silently vanish.
+function normalizeMarketsVerdict(v: MarketsVerdict): MarketsVerdict {
+  const top = (v as { supporting_data?: SupportingPoint[] }).supporting_data;
+  if (!v.verdict.supporting_data?.length && top?.length) {
+    v.verdict.supporting_data = top;
+  }
+  return v;
+}
+
 export function getAllMarketsVerdicts(): MarketsVerdict[] {
   const dir = path.join(DATA_DIR, "verdicts");
   if (!fs.existsSync(dir)) return [];
@@ -115,7 +125,8 @@ export function getAllMarketsVerdicts(): MarketsVerdict[] {
     .filter((f) => f.startsWith("markets-") && f.endsWith(".json"));
   const verdicts = files
     .map((f) => readJson<MarketsVerdict>(path.join(dir, f)))
-    .filter((v): v is MarketsVerdict => v !== null);
+    .filter((v): v is MarketsVerdict => v !== null)
+    .map(normalizeMarketsVerdict);
   return verdicts.sort((a, b) => {
     const t1 = `${b.date}-${b.window}`;
     const t2 = `${a.date}-${a.window}`;

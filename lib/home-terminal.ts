@@ -4,7 +4,6 @@ import {
   getCalendarEvents,
   type MarketsVerdict,
 } from "@/lib/data";
-import { getAssetDailySeries, type AssetId } from "@/lib/asset-daily";
 
 // ---------------------------------------------------------------------------
 // Home terminal data assembly.
@@ -123,16 +122,6 @@ const SECTOR_LIST: Array<{ symbol: string; code: string; name: string }> = [
   { symbol: "XLE", code: "XLE", name: "Energy" },
   { symbol: "XLRE", code: "XLRE", name: "Real Estate" },
   { symbol: "XLU", code: "XLU", name: "Utilities" },
-];
-
-const ASSET_IDS: AssetId[] = [
-  "nvda",
-  "btc",
-  "skhynix",
-  "mu",
-  "nbis",
-  "be",
-  "crwv",
 ];
 
 // Map a verdict watchlist ticker to a Yahoo symbol the quote API understands.
@@ -272,7 +261,7 @@ function marketStatus(): StatusRow[] {
   ];
 }
 
-// --- wire headlines (from the freshest dossier news per desk) ---------------
+// --- wire headlines (from recent markets-verdict source links) --------------
 
 const SOURCE_TAG: Record<string, string> = {
   "yahoo finance": "YHOO",
@@ -298,28 +287,31 @@ function sourceTag(source: string | undefined): string {
   return source.replace(/[^A-Za-z]/g, "").slice(0, 4).toUpperCase() || "WIRE";
 }
 
-function buildWire(): WireRow[] {
+function urlHost(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  try {
+    return new URL(url).hostname.replace(/^www\./, "").split(".")[0];
+  } catch {
+    return undefined;
+  }
+}
+
+function buildWire(verdicts: MarketsVerdict[]): WireRow[] {
   const out: WireRow[] = [];
   const seen = new Set<string>();
-  for (const id of ASSET_IDS) {
-    const latest = getAssetDailySeries(id)[0];
-    if (!latest) continue;
-    for (const n of latest.news ?? []) {
-      const clean = n.label.replace(/^★\s*/, "").trim();
+  for (const v of verdicts) {
+    for (const s of v.verdict.supporting_data ?? []) {
+      const clean = s.label.replace(/^★\s*/, "").trim();
       const key = clean.slice(0, 60).toLowerCase();
       if (seen.has(key)) continue;
       seen.add(key);
+      const host = urlHost(s.url);
       out.push({
-        source: n.source ?? "Wire",
-        tag: sourceTag(n.source),
+        source: host ?? "Wire",
+        tag: sourceTag(host),
         headline: clampText(clean, 130),
-        tone:
-          n.sentiment === "positive"
-            ? "pos"
-            : n.sentiment === "negative"
-              ? "neg"
-              : "neutral",
-        url: n.url,
+        tone: "neutral",
+        url: s.url,
       });
       if (out.length >= 8) return out;
     }
@@ -522,7 +514,7 @@ export async function getHomeData(): Promise<HomeData> {
     evening,
     defaultView,
     sectors,
-    wire: buildWire(),
+    wire: buildWire(verdicts),
     calendar,
   };
 }
