@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-07-08",
+  "window": "night",
+  "generated_at": "2026-07-08T23:45:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Regime Survived by Thread; FOMC Reprices to No Cuts Until 2027",
+    "conviction": "medium",
+    "rationale_short": "The dual-gate BUY regime survived July 8's worst-case dual-shock (Iran kinetic exchange + hawkish FOMC minutes) by the thinnest margin in framework history — 22 SPX points and 0.10 VIX units — saved by China's surprise H200 chip approval which reversed the intraday chip selloff. FOMC minutes confirmed no rate cuts until Q2 2027 with September hike probability jumping to 68.8%, a structural hawkish repricing that fundamentally changes the discount rate for long-duration AI assets. BTC Gate 2 ($62,000 UTC midnight floor) is under immediate risk at ~$61,963; June CPI on July 14 is the next regime-defining binary. Morning call graded substantially WRONG on direction, capping conviction at medium.",
+    "supporting_data": [
+      { "label": "SPX 7,482.71 (–0.28%) / VIX 16.90 — dual-gate intact by 22pts and 0.10 VIX units; thinnest survival margin in framework history", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-8-2026" },
+      { "label": "FOMC minutes: no rate cuts until Q2 2027; September hike probability 68.8% (from 62% prior day); December 85.3%", "url": "https://www.forbes.com/sites/tylerroush/2026/07/08/fed-minutes-signal-no-interest-rate-cuts-until-2027-as-renewed-iran-conflict-spikes-rate-hike-odds/" },
+      { "label": "NVDA ~+3.47% to ~$203 on Beijing greenlighting H200 sales to Alibaba, ByteDance, DeepSeek — stop deactivated, Gate 3 confirmed", "url": "https://finance.yahoo.com/technology/ai/articles/beijing-greenlights-nvidia-chinese-tech-154250136.html" },
+      { "label": "AVGO +6.48% to $394.80 on Broadcom-Apple custom chip partnership extended to 2031", "url": "https://www.benzinga.com/trading-ideas/movers/26/07/60276440/broadcom-stock-climbs-on-report-of-apple-chip-deal-extension-to-2031" },
+      { "label": "Brent $78.02 (+5.2%), WTI $73.52 (+4.4%) — Iran ceasefire gone; Hormuz supply premium sustained into Q3", "url": "https://www.cnbc.com/2026/07/08/oil-prices-brent-wti-iran-us-hormuz.html" },
+      { "label": "BTC ~$61,963 — Gate 2 ($62,000 UTC midnight close floor) under immediate pressure; mandatory $58,100 stop if breached", "url": "https://fortune.com/article/price-of-bitcoin-07-08-2026/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7482.71,  "change_pct": -0.28, "as_of": "2026-07-08T20:00:00Z" },
+    "nasdaq": { "level": 25870.65, "change_pct":  0.20, "as_of": "2026-07-08T20:00:00Z" },
+    "vix":    { "level": 16.90,    "change_pct":  8.54, "as_of": "2026-07-08T20:00:00Z" },
+    "ust10y": { "level": 4.50,     "change_bps":  1,    "as_of": "2026-07-08T20:00:00Z" },
+    "dxy":    { "level": 101.07,   "change_pct":  0.05, "as_of": "2026-07-08T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX", "value": 16.90, "trigger_above": 17, "unit": "" },
+    { "name": "30Y Yield", "value": 5.10, "trigger_above": 5.00, "unit": "%" },
+    { "name": "DXY", "value": 101.07, "trigger_above": 100, "unit": "" },
+    { "name": "SPX vs 7,460", "value": 7482.71, "trigger_below": 7460, "unit": "" },
+    { "name": "Brent", "value": 78.02, "trigger_above": 97, "unit": "USD" },
+    { "name": "BTC", "value": 61963, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "~+3.47% to ~$203; China H200 approval reversed bearish stop scenario; Gate 3 ($200 close) confirmed; stop at $195 remains active", "sentiment": "positive" },
+    { "ticker": "AVGO", "note": "+6.48% to $394.80; Apple-Broadcom custom chip partnership extended to 2031; standout outperformer", "sentiment": "positive" },
+    { "ticker": "TSM", "note": "+1.49% to $439.00; recovering with chip complex on China H200 news; SKHY debut Friday is key read-through", "sentiment": "positive" },
+    { "ticker": "AMD", "note": "-0.74% to $512.27; underperforming chip peers despite China H200 approval; DeepSeek inference exposure weighs", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "~$61,963 — dangerously close to Gate 2 ($62,000 UTC midnight floor); 24h low $61,723; mandatory exit at $58,100 stop if breached", "sentiment": "negative" },
+    { "ticker": "XLE", "note": "energy sector outperformed; Brent $78.02 / WTI $73.52; Hormuz supply premium sustained; only structural long in Iran environment", "sentiment": "positive" }
+  ],
+  "dont_buy": [
+    { "ticker": "BTC full-size", "reason": "UTC midnight close near Gate 2 ($62,000); 24h low $61,723 already violated the threshold intraday; FOMC hawkishness removes near-term catalyst for recovery", "better_entry": "$58,000–$60,000 if Gate 2 breaches and mandatory exit triggers; or confirmation of UTC midnight close above $62,500 for two consecutive sessions" },
+    { "ticker": "SPCX", "reason": "Inclusion-day distribution pattern unresolved at $158.77 peak; oil/FOMC headwinds compress growth multiples; no two-session close above $185 on above-average volume achieved", "better_entry": "Two consecutive closes above $185 on above-average volume; earliest July 11; first earnings (approx. September 2) is the fundamental clearing event" },
+    { "ticker": "AMD", "reason": "Underperforming peers (-0.74%) even as NVDA +3.47% and AVGO +6.48%; DeepSeek inference chip thesis partially invalidated; no H200 approval benefit (AMD not CUDA ecosystem)", "better_entry": "Below $490 with DeepSeek story stable for 2+ sessions; AMD Q2 earnings (late July) needed for Instinct MI demand clarity" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE / Energy Majors (XOM, CVX, COP)",
+      "direction": "long",
+      "thesis": "Iran ceasefire gone; US-Iran kinetic exchange ongoing; Hormuz 'SEVERE' threat rating sustained. Brent $78 is pricing partial disruption — not a full closure. A sustained Hormuz disruption targets $85-95+. Energy sector is the only sector that benefits fundamentally from this macro scenario. XLE performed well even as the broader market was under pressure.",
+      "entry": "XLE at current levels (~$55); add on dips toward $52 if oil retraces on back-channel ceasefire signals",
+      "invalidation": "Brent closes below $72 on confirmed ceasefire restoration; Iran-US back-channel deal announced",
+      "conviction": "medium",
+      "horizon": "1-3 weeks through Iran-Hormuz resolution binary"
+    },
+    {
+      "asset": "TBT Long / TLT Puts — Short Long-Duration Bonds",
+      "direction": "short",
+      "thesis": "FOMC minutes confirmed no rate cuts until Q2 2027; September hike probability at 68.8%; December at 85.3%. The 30Y yield above 5.00% is the regime breach that compresses terminal valuations for AI-infrastructure and crypto assets. TLT (20+ year Treasury ETF) is the cleanest short expression of the 'higher for longer, potentially higher' rate framework that June FOMC minutes confirmed.",
+      "entry": "TBT at current levels; TLT August puts at $92-93 strike (5-7% OTM); 10-15% portfolio allocation",
+      "invalidation": "June CPI ≤3.5% on July 14 — would confirm disinflation trajectory and collapse September hike probability below 40%",
+      "conviction": "medium",
+      "horizon": "Through July 14 CPI; close/reassess after print"
+    },
+    {
+      "asset": "NVDA — Maintain Half-Size Hold",
+      "direction": "long",
+      "thesis": "China H200 approval (Beijing greenlighting <200K H200 chips to Alibaba/ByteDance/DeepSeek for training workloads) reversed the July 8 bearish stop scenario. NVDA confirmed Gate 3 ($200 close) on the session. The August 26 earnings ($91B Q2 FY27 guide) remains the fundamental clearing event. Full-size entry requires: VIX below 15 AND September hike probability below 30% AND two consecutive Gate 3 confirmations.",
+      "entry": "Hold existing half-size from prior entry; no add until full-size gate requirements met",
+      "invalidation": "NVDA closes below $195 on any session; June CPI ≥4.0% on July 14 forcing September hike as base case",
+      "conviction": "medium",
+      "horizon": "Through August 26 NVDA Q2 FY27 earnings"
+    }
+  ],
+  "bear_case": "The FOMC minutes confirmed a structural repricing that markets were not fully pricing: no rate cuts until Q2 2027 with a September hike at 68.8% probability represents 'higher for longer, potentially higher' — a framework that compresses P/E multiples for the AI-infrastructure complex (NVDA at ~$203 implies 22x+ forward P/E) and zero-coupon crypto assets simultaneously. The dual-gate's survival by 22 SPX points and 0.10 VIX units was the thinnest possible margin, and it survived only because of a single idiosyncratic positive catalyst (China H200 approval) that may not repeat. Forward risk: June CPI arrives July 14 against a backdrop of Brent crude averaging $72+ in June's final weeks — higher than the $66-70 average assumed in prior CPI models — threatening a print ≥4.0% that would simultaneously validate the September hike and break both dual-gate thresholds. BTC's UTC midnight close near Gate 2 adds a second simultaneous breach risk before CPI. If SPX falls below 7,460 with VIX above 17 on any session before July 14, the BEARISH regime returns without a China-approval-class reversal available. If SPX reclaims 7,520 with VIX declining below 15 and June CPI prints ≤3.5% on July 14, the structural bear case fails — the call is wrong.",
+  "body_mdx": "data/briefings/markets/2026-07-08-night.mdx"
+}
