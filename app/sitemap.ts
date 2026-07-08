@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/kospi",
     "/skhynix",
     "/situational-awareness",
+    "/ai-bubble",
     "/metals",
     "/indices",
     "/tech",

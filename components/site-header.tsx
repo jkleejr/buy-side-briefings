@@ -18,6 +18,7 @@ const NAV = [
   { href: "/earnings", code: "EARN", label: "Earnings" },
   { href: "/opportunities", code: "OPS", label: "Opportunities" },
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness" },
+  { href: "/ai-bubble", code: "BUBBLE", label: "AI Bubble" },
   { href: "/track-record", code: "TRACK", label: "Track Record" },
   { href: "/desk", code: "DESK", label: "Paper Desk" },
 ];
