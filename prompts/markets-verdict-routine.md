@@ -14,7 +14,7 @@ to match this file.
   session, setup into tomorrow. Writes `data/verdicts/markets-<TODAY>-night.json`.
 
 Both: schema-by-example (read a recent same-window verdict file and match its
-keys exactly), JSON.parse-validate before committing, commit + push to `deploy`
+keys exactly; verdict.headline = plain-English news-first home title, ~90 chars, no prices/percentages/jargon), JSON.parse-validate before committing, commit + push to `deploy`
 (push is mandatory — Vercel deploys from it; rebase-and-retry on rejection).
 Never fabricate prices or URLs; lower conviction and say so when sourcing is thin.
 

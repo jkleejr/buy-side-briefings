@@ -8,6 +8,7 @@
     "code": "hold",
     "emoji": "🟡",
     "label": "HOLD — Kyber NVL144 confirmed delayed to 2028 (PCB manufacturing failure, SemiAnalysis); KOSPI –4.9% / Samsung –7.7% / SK Hynix –6.7%; NQ futures –0.9%; NVDA pre-mkt $197.16 — full-size add gate NOT triggered ($200 threshold); IBIT Gate 3 CONFIRMED ($209M July 6 inflow, 11-day outflow streak broken, $266M total); BTC $64,034; SPCX Nasdaq-100 $4.3B inclusion close; FOMC minutes Wed July 8",
+    "headline": "Nvidia's next-gen rack delay slams Asian chip stocks ahead of Fed minutes",
     "conviction": "medium",
     "rationale_short": "The July 7 morning bifurcates: one high-conviction BUY (BTC) and one hold across the board on semiconductors. IBIT Gate 3 is confirmed — BlackRock's IBIT recorded $209M net inflows on July 6, breaking an 11-day outflow streak, with total US spot Bitcoin ETF inflows reaching $266M. The three-gate BTC re-entry framework is fully satisfied (Gate 1: July 3 UTC close $62,579; Gate 2: July 4 UTC close $63,015; Gate 3: IBIT $209M July 6), activating BTC re-entry at 9:30 AM ET. BTC has V-recovered from the $61,677 July 6 intraday bear trap (Strategy $216M disclosure) to $64,034 (+0.76%), with $450M in short liquidations providing mechanical upside. On the negative side: SemiAnalysis confirmed Nvidia's Kyber NVL144 rack system is delayed 12+ months to 2028 due to PCB midplane manufacturing failures (78-layer orthogonal board), cascading into KOSPI –4.9%, Samsung –7.7%, and SK Hynix –6.7% overnight. NVDA pre-market is $197.16 — the full-size add gate ($200 simultaneously at 9:25 AM ET) is NOT triggered; hold half-size only through August 26 Q2 FY27 earnings. BUY regime remains technically intact (SPX futures above 7,460, VIX 14.9), but the Kyber-driven semi headwind limits the call to HOLD. FOMC minutes Wednesday July 8 is the next regime risk (9/18 members supported rate hike at June meeting)."
   },
@@ -38,19 +39,69 @@
     }
   ],
   "snapshot": {
-    "sp500":  { "level": 7537.0,   "change_pct": -0.1, "as_of": "2026-07-07T13:00:00Z" },
-    "nasdaq": { "level": 26121.0,  "change_pct": -0.9, "as_of": "2026-07-07T13:00:00Z" },
-    "vix":    { "level": 14.90,    "change_pct":  0.0, "as_of": "2026-07-06T20:00:00Z" },
-    "ust10y": { "level": 4.48,     "change_bps":   1,  "as_of": "2026-07-07T10:00:00Z" },
-    "dxy":    { "level": 100.85,   "change_pct":  0.23,"as_of": "2026-07-07T10:00:00Z" }
+    "sp500": {
+      "level": 7537.0,
+      "change_pct": -0.1,
+      "as_of": "2026-07-07T13:00:00Z"
+    },
+    "nasdaq": {
+      "level": 26121.0,
+      "change_pct": -0.9,
+      "as_of": "2026-07-07T13:00:00Z"
+    },
+    "vix": {
+      "level": 14.9,
+      "change_pct": 0.0,
+      "as_of": "2026-07-06T20:00:00Z"
+    },
+    "ust10y": {
+      "level": 4.48,
+      "change_bps": 1,
+      "as_of": "2026-07-07T10:00:00Z"
+    },
+    "dxy": {
+      "level": 100.85,
+      "change_pct": 0.23,
+      "as_of": "2026-07-07T10:00:00Z"
+    }
   },
   "regime_risk": [
-    { "name": "VIX",                  "value": 14.90,  "trigger_above": 17,    "unit": "" },
-    { "name": "SPX vs 7,460",         "value": 7537.0, "trigger_above": 7460,  "unit": "" },
-    { "name": "DXY",                  "value": 100.85, "trigger_above": 100,   "unit": "" },
-    { "name": "BTC ($62K floor)",     "value": 64034,  "trigger_below": 62000, "unit": "$" },
-    { "name": "30Y Yield",            "value": 4.985,  "trigger_above": 5.0,   "unit": "%" },
-    { "name": "Brent",                "value": 72.0,   "trigger_above": 97,    "unit": "$" }
+    {
+      "name": "VIX",
+      "value": 14.9,
+      "trigger_above": 17,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,460",
+      "value": 7537.0,
+      "trigger_above": 7460,
+      "unit": ""
+    },
+    {
+      "name": "DXY",
+      "value": 100.85,
+      "trigger_above": 100,
+      "unit": ""
+    },
+    {
+      "name": "BTC ($62K floor)",
+      "value": 64034,
+      "trigger_below": 62000,
+      "unit": "$"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 4.985,
+      "trigger_above": 5.0,
+      "unit": "%"
+    },
+    {
+      "name": "Brent",
+      "value": 72.0,
+      "trigger_above": 97,
+      "unit": "$"
+    }
   ],
   "watchlist_mentions": [
     {
