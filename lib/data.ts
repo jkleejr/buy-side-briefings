@@ -57,6 +57,9 @@ export type MarketsVerdict = {
     code: VerdictCode;
     emoji: string;
     label: string;
+    /** Plain-English news headline (no prices/percentages/jargon) for the home
+     *  page title. Optional on older verdicts — the UI derives one from label. */
+    headline?: string;
     conviction: "low" | "medium" | "high";
     /** How long the call is meant to hold, e.g. "1-2 weeks". Optional on older
      *  verdicts — use verdictHorizon() for a display string with a fallback. */

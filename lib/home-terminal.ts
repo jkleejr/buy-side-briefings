@@ -168,10 +168,25 @@ function sentimentFor(code: string): { label: string; pct: number } {
   }
 }
 
-function headlineFromLabel(label: string): string {
+// The verdict label packs the whole tape into one string ("HOLD — Kyber
+// delayed; KOSPI –4.9%; NVDA pre-mkt $197…"). The homepage title wants the
+// story, not the tape: prefer the routine-written verdict.headline; otherwise
+// take the label's first clause that still reads as news once prices,
+// percentages, and parentheticals are stripped.
+function headlineOf(v: MarketsVerdict): string {
+  const written = v.verdict.headline?.trim();
+  if (written) return clampText(written, 110);
+
+  const label = v.verdict.label;
   const idx = label.indexOf("—");
-  const h = idx >= 0 ? label.slice(idx + 1) : label;
-  return h.trim();
+  const tape = (idx >= 0 ? label.slice(idx + 1) : label).trim();
+  const clauses = tape
+    .split(";")
+    .map((c) => c.replace(/\([^)]*\)/g, "").replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+  // First clause with no price/percent tokens is the newsiest one.
+  const newsy = clauses.find((c) => !/[$₩€£%]/.test(c) && !/\d[\d,]*\.\d/.test(c));
+  return clampText(newsy ?? clauses[0] ?? tape, 110);
 }
 
 function clampText(text: string, maxChars: number): string {
@@ -396,7 +411,7 @@ function buildBrief(
     metrics: buildMetrics(v),
     sentiment: sentimentFor(v.verdict.code),
     code: v.verdict.code,
-    headline: headlineFromLabel(v.verdict.label),
+    headline: headlineOf(v),
     lede: clampText(v.verdict.rationale_short, 360),
     keyPoints,
     keySignal: v.verdict.supporting_data?.[0]
@@ -469,7 +484,7 @@ export async function getHomeData(): Promise<HomeData> {
     .map((v) => ({
       window: v.window === "morning" ? "morning" : "evening",
       dayLabel: dayLabelOf(v.date),
-      headline: clampText(headlineFromLabel(v.verdict.label), 70),
+      headline: clampText(headlineOf(v), 70),
       href: `/briefings/${v.routine}/${v.date}-${v.window}`,
     }));
 
