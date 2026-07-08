@@ -323,7 +323,7 @@ export async function getUpcomingEarnings(
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
-// ---- Arbitrary-symbol quotes for the paper-trading desk --------------------
+// ---- Arbitrary-symbol quotes (For You feed, ticker search) ------------------
 
 export type TradeQuote = {
   symbol: string;
@@ -340,7 +340,7 @@ type YTradeQuote = YQuote & {
 };
 
 /**
- * Live quotes for a caller-supplied list of symbols (the paper desk). Returns a
+ * Live quotes for a caller-supplied list of symbols. Returns a
  * null-filled entry for any symbol Yahoo doesn't recognize so the UI can flag a
  * bad ticker instead of silently dropping it. Never throws.
  */

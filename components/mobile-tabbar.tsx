@@ -7,19 +7,18 @@ const TABS = [
   { href: "/", code: "DASH" },
   { href: "/stocks", code: "STOCKS" },
   { href: "/opportunities", code: "OPS" },
-  { href: "/desk", code: "DESK" },
   { href: "/track-record", code: "TRACK" },
 ];
 
 /**
- * Sticky bottom tab bar for phones — the five daily destinations one thumb
+ * Sticky bottom tab bar for phones — the daily destinations one thumb
  * away. Hidden on md+ where the header nav is visible.
  */
 export default function MobileTabbar() {
   const pathname = usePathname();
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-[var(--border-strong)] bg-black pb-[env(safe-area-inset-bottom)] md:hidden">
-      <div className="grid grid-cols-5">
+      <div className="grid grid-cols-4">
         {TABS.map((t) => {
           const active =
             t.href === "/" ? pathname === "/" : pathname.startsWith(t.href);

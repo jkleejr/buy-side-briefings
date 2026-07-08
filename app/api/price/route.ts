@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { getTradeQuotes } from "@/lib/markets";
 
-// Live quotes for the paper-trading desk. Accepts up to 40 comma-separated
-// symbols (?symbols=AAPL,BTC-USD,GC=F) and returns price + day change + name.
-// Short cache so the desk's polling stays cheap but near-live.
+// Live quotes for client widgets (For You feed, ticker search). Accepts up to
+// 40 comma-separated symbols (?symbols=AAPL,BTC-USD,GC=F) and returns price +
+// day change + name. Short cache so client polling stays cheap but near-live.
 export const revalidate = 30;
 
 export async function GET(req: Request) {
