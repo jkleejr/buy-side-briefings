@@ -13,7 +13,6 @@ type Props = {
   /** Two (or more) assets to compare. */
   assets: AssetSpec[];
   /** Hover explanation shown on the panel title. */
-  learn?: string;
   /** If true, plot the ratio (assets[0]/assets[1]) instead of two lines. */
   asRatio?: boolean;
   /** Right-side meta text. */
@@ -30,7 +29,6 @@ export default async function BigCompareChart({
   code,
   title,
   assets,
-  learn,
   asRatio,
   metaLabel,
 }: Props) {
@@ -46,7 +44,6 @@ export default async function BigCompareChart({
     <Panel
       code={code}
       title={title}
-      learn={learn}
       meta={metaLabel ? <span>{metaLabel}</span> : undefined}
     >
       <ComparePanelClient

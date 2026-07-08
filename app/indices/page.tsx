@@ -2,7 +2,6 @@ import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
 import UsIndicesPanel from "@/components/us-indices-panel";
 import Panel from "@/components/panel";
-import { TICKER_TIPS } from "@/lib/glossary";
 
 export const metadata = { title: "US Indices — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -33,7 +32,6 @@ export default function IndicesPage() {
         code="SPY"
         title="SPY — S&P 500 ETF (the broad market)"
         color="#22d3ee"
-        learn={TICKER_TIPS["SPY"]}
         metaLabel="500 LARGEST US COMPANIES · CAP-WEIGHTED"
       />
 
@@ -42,7 +40,6 @@ export default function IndicesPage() {
         code="QQQ"
         title="QQQ — Nasdaq 100 ETF (tech-heavy growth)"
         color="#fbbf24"
-        learn={TICKER_TIPS["QQQ"]}
         metaLabel="100 LARGEST NON-FIN NASDAQ NAMES"
       />
 
@@ -51,7 +48,6 @@ export default function IndicesPage() {
         code="IWM"
         title="IWM — Russell 2000 ETF (small-cap domestic economy)"
         color="#84cc16"
-        learn={TICKER_TIPS["IWM"]}
         metaLabel="~85% US REVENUE · BREADTH READ"
       />
 

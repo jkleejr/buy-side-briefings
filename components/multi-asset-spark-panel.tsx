@@ -8,10 +8,8 @@ import {
   type ChartPoint,
 } from "@/lib/chart-ranges";
 import { formatPct } from "@/lib/utils";
-import { TICKER_TIPS } from "@/lib/glossary";
 import RangeSelector from "./range-selector";
 import Sparkline from "./sparkline";
-import Tooltip from "./tooltip";
 
 type Asset = { symbol: string; label: string };
 type Quote = { price: number | null; changePct: number | null };
@@ -79,14 +77,13 @@ export default function MultiAssetSparkPanel({
             : down
               ? "text-[var(--down)]"
               : "text-[var(--dim)]";
-          const tip = TICKER_TIPS[a.symbol] ?? TICKER_TIPS[a.label] ?? "";
           return (
             <div
               key={a.symbol}
               className="grid grid-cols-[auto_1fr_auto] items-center gap-2 px-2 py-1.5 font-mono text-[11px]"
             >
               <span className="text-[var(--amber-dim)]">
-                {tip ? <Tooltip text={tip}>{a.label}</Tooltip> : a.label}
+                {a.label}
               </span>
               <span className="text-[var(--foreground)]">
                 {price === null

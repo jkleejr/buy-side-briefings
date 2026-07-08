@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import Tooltip from "./tooltip";
 
 type PanelProps = {
   title: string;
@@ -8,7 +7,6 @@ type PanelProps = {
   /** Data vintage, e.g. "14:32 UTC" — rendered after meta as AS OF …. */
   asOf?: string;
   code?: string;
-  learn?: string;
   href?: string;
   className?: string;
   children: React.ReactNode;
@@ -19,16 +17,13 @@ export default function Panel({
   meta,
   asOf,
   code,
-  learn,
   href,
   className,
   children,
 }: PanelProps) {
-  const titleNode = learn ? <Tooltip text={learn}>{title}</Tooltip> : title;
-
   // When href is provided, both the code-prefix and the title (and a chevron)
   // are wrapped in a Link so clicking anywhere on the header opens the dedicated
-  // detail page. The hover-tooltip still works because it sits inside the link.
+  // detail page.
   const header = href ? (
     <Link
       href={href}
@@ -41,7 +36,7 @@ export default function Panel({
         </span>
       )}
       <h3 className="truncate font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
-        {titleNode}
+        {title}
       </h3>
       <span className="shrink-0 font-mono text-[10px] text-[var(--cyan-term)]">▸</span>
     </Link>
@@ -53,7 +48,7 @@ export default function Panel({
         </span>
       )}
       <h3 className="min-w-0 truncate font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
-        {titleNode}
+        {title}
       </h3>
     </>
   );

@@ -2,7 +2,6 @@ import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
 import GlobalMarketsPanel from "@/components/global-markets-panel";
 import Panel from "@/components/panel";
-import { TICKER_TIPS } from "@/lib/glossary";
 
 export const metadata = { title: "Global Markets — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -42,7 +41,6 @@ export default function GlobalPage() {
         code="N225"
         title="Nikkei 225 — Japan"
         color="#ef4444"
-        learn={TICKER_TIPS["^N225"]}
         metaLabel="TOKYO · GLOBAL TECH + AUTOS"
       />
 
@@ -51,7 +49,6 @@ export default function GlobalPage() {
         code="HSI"
         title="Hang Seng — Hong Kong (China gateway)"
         color="#f472b6"
-        learn={TICKER_TIPS["^HSI"]}
         metaLabel="HONG KONG · CHINA TECH PROXY"
       />
 
@@ -60,7 +57,6 @@ export default function GlobalPage() {
         code="SSE"
         title="Shanghai Composite — China A-shares"
         color="#fb923c"
-        learn={TICKER_TIPS["000001.SS"]}
         metaLabel="SHANGHAI · MAINLAND CHINA"
       />
 
@@ -69,7 +65,6 @@ export default function GlobalPage() {
         code="KOSPI"
         title="KOSPI — South Korea (Samsung & SK Hynix)"
         color="#84cc16"
-        learn={TICKER_TIPS["^KS11"]}
         metaLabel="SEOUL · GLOBAL MEMORY-CHIP DUOPOLY"
       />
 
@@ -87,7 +82,6 @@ export default function GlobalPage() {
         code="DAX"
         title="DAX — Germany's industrial heart"
         color="#fbbf24"
-        learn={TICKER_TIPS["^GDAXI"]}
         metaLabel="FRANKFURT · INDUSTRIALS + AUTOS + CHEMICALS"
       />
 
@@ -96,7 +90,6 @@ export default function GlobalPage() {
         code="FTSE"
         title="FTSE 100 — UK (mostly a global play)"
         color="#22d3ee"
-        learn={TICKER_TIPS["^FTSE"]}
         metaLabel="LONDON · ENERGY + MINERS + GLOBAL CONSUMER"
       />
 
@@ -105,7 +98,6 @@ export default function GlobalPage() {
         code="CAC"
         title="CAC 40 — France (luxury proxy)"
         color="#a78bfa"
-        learn={TICKER_TIPS["^FCHI"]}
         metaLabel="PARIS · LUXURY + PHARMA + ENERGY"
       />
 
@@ -114,7 +106,6 @@ export default function GlobalPage() {
         code="STOXX"
         title="Euro Stoxx 50 — pan-Eurozone benchmark"
         color="#60a5fa"
-        learn={TICKER_TIPS["^STOXX50E"]}
         metaLabel="EUROZONE · BROAD BLUE-CHIP"
       />
 
@@ -132,7 +123,6 @@ export default function GlobalPage() {
         code="NIFTY"
         title="Nifty 50 — India"
         color="#a78bfa"
-        learn={TICKER_TIPS["^NSEI"]}
         metaLabel="MUMBAI · IT SERVICES + BANKS"
       />
 
@@ -141,7 +131,6 @@ export default function GlobalPage() {
         code="BVSP"
         title="Bovespa — Brazil (EM commodity play)"
         color="#22c55e"
-        learn={TICKER_TIPS["^BVSP"]}
         metaLabel="SÃO PAULO · IRON ORE + OIL + BANKS"
       />
 
@@ -150,7 +139,6 @@ export default function GlobalPage() {
         code="TSX"
         title="S&P/TSX Composite — Canada"
         color="#ef4444"
-        learn={TICKER_TIPS["^GSPTSE"]}
         metaLabel="TORONTO · ENERGY + BANKS + MINERS"
       />
 

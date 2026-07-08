@@ -3,12 +3,10 @@ import type { MarketsVerdict } from "@/lib/data";
 import {
   cn,
   formatRelativeTime,
-  getVerdictExplanation,
   verdictColor,
   verdictHorizon,
 } from "@/lib/utils";
 import Panel from "./panel";
-import Tooltip from "./tooltip";
 
 export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
   const color = verdictColor(verdict.verdict.code);
@@ -18,7 +16,6 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
     <Panel
       code="VRDCT"
       title="Latest Buy Verdict"
-      learn="The headline call — buy / hold / step aside / bearish — with conviction, a one-line rationale, and 4–6 cited supporting points. Hand-written by the analyst (not algorithmic) and time-stamped so the call can be audited later."
       meta={
         <span>
           {verdict.date} {verdict.window} · {formatRelativeTime(verdict.generated_at)}
@@ -38,9 +35,7 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
           </div>
           <div className="min-w-0 flex-1">
             <div className={cn("font-mono text-base font-bold uppercase tracking-wide", color.text)}>
-              <Tooltip text={getVerdictExplanation(verdict.verdict.code)}>
-                {verdict.verdict.label}
-              </Tooltip>
+              {verdict.verdict.label}
             </div>
             <div className="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
               <span>
@@ -50,9 +45,7 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
                 </span>
               </span>
               <span>
-                <Tooltip text="How long this call is meant to hold. Markets verdicts are tactical (days to a couple of weeks) and are scored at +1d / +5d / +20d on the Track Record page.">
-                  Horizon
-                </Tooltip>
+                Horizon
                 :{" "}
                 <span className="text-[var(--foreground)]">
                   {verdictHorizon(verdict.verdict.horizon)}

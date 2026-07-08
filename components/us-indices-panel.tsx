@@ -15,16 +15,12 @@ const DEFAULT_ASSETS: IndexAsset[] = [
   { symbol: "IWM", label: "IWM", sublabel: "Russell 2000", color: "#84cc16" },
 ];
 
-const DEFAULT_LEARN =
-  "The three most-watched US equity benchmarks on one row: SPY (S&P 500 — the broad market), QQQ (Nasdaq 100 — tech-heavy growth), IWM (Russell 2000 — small-cap domestic economy). Watching all three reveals what SPY alone hides — when SPY rises but IWM lags, the rally is narrow; when IWM leads, the rally is broad.";
-
 const INITIAL_RANGE = "3M" as const;
 
 type Props = {
   assets?: IndexAsset[];
   code?: string;
   title?: string;
-  learn?: string;
 };
 
 /**
@@ -37,7 +33,6 @@ export default async function UsIndicesPanel({
   assets = DEFAULT_ASSETS,
   code = "INDX",
   title = "US Indices · SPY · QQQ · IWM",
-  learn = DEFAULT_LEARN,
 }: Props = {}) {
   const [seriesArr, quoteArr] = await Promise.all([
     Promise.all(assets.map((a) => getChartSeries(a.symbol, INITIAL_RANGE))),
@@ -58,7 +53,6 @@ export default async function UsIndicesPanel({
     <Panel asOf={nowUtcHM()}
       code={code}
       title={title}
-      learn={learn}
       meta={<span>NYSE ARCA · YAHOO</span>}
     >
       <UsIndicesClient

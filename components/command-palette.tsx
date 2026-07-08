@@ -16,8 +16,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness — Aschenbrenner's AI fund, copy-trade book" },
   { href: "/ai-bubble", code: "BUBBLE", label: "AI Bubble — is this a bubble, and what breaks first?", go: "a" },
   { href: "/briefings", code: "BRIEF", label: "Briefings archive", go: "r" },
-  { href: "/crypto", code: "CRYPTO", label: "Crypto briefings + charts", go: "c" },
-  { href: "/markets", code: "MKTS", label: "Markets hub", go: "m" },
   { href: "/earnings", code: "EARN", label: "Earnings calendar — schedule for the names you track" },
   { href: "/track-record", code: "TRACK", label: "Track record + calibration", go: "t" },
   { href: "/digest", code: "WEEK", label: "Week in review", go: "g" },

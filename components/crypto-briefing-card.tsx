@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { CryptoVerdict } from "@/lib/data";
-import { cn, formatLevel, formatPct, verdictColor, getVerdictExplanation } from "@/lib/utils";
-import Tooltip from "./tooltip";
+import { cn, formatLevel, formatPct, verdictColor } from "@/lib/utils";
 
 function formatDate(date: string): { day: string; md: string } {
   const d = new Date(`${date}T12:00:00Z`);
@@ -50,9 +49,7 @@ export default function CryptoBriefingCard({ verdict }: { verdict: CryptoVerdict
         <span className="text-[var(--cyan-term)]">DAILY</span>
         <span className="text-[var(--dim)]">·</span>
         <span className={cn("font-bold", color.text)}>
-          <Tooltip text={getVerdictExplanation(verdict.verdict.code)}>
-            {verdict.verdict.emoji} {verdict.verdict.code.toUpperCase().replace("_", " ")}
-          </Tooltip>
+          {verdict.verdict.emoji} {verdict.verdict.code.toUpperCase().replace("_", " ")}
         </span>
         <span className="text-[var(--dim)]">·</span>
         <span className="text-[var(--foreground)]">{verdict.verdict.conviction}</span>

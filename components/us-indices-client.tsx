@@ -10,8 +10,6 @@ import {
 import { formatPct } from "@/lib/utils";
 import RangeSelector from "./range-selector";
 import AssetChart from "./asset-chart";
-import Tooltip from "./tooltip";
-import { TICKER_TIPS } from "@/lib/glossary";
 
 export type IndexAsset = {
   symbol: string;
@@ -110,12 +108,11 @@ export default function UsIndicesClient({
             : down
               ? "text-[var(--down)]"
               : "text-[var(--dim)]";
-          const tip = TICKER_TIPS[a.symbol] ?? "";
           return (
             <div key={a.symbol} className="flex min-w-0 flex-col">
               <div className="flex flex-wrap items-baseline gap-x-2 px-2 pt-1.5 font-mono text-[11px]">
                 <span className="text-[var(--amber-dim)]">
-                  {tip ? <Tooltip text={tip}>{a.label}</Tooltip> : a.label}
+                  {a.label}
                 </span>
                 <span className="truncate text-[10px] text-[var(--dim)]">
                   {a.sublabel}

@@ -863,7 +863,6 @@ export default function ForYouFeed({
     <Panel
       code="FORYOU"
       title="Your book — so what for you?"
-      learn="Add the tickers you actually own. Names with a daily desk get the standing call distilled to one line plus the strongest bull and bear point (and a P&L read if you add a cost basis). For anything else you get a live price and the macro pressures hitting it — and you can ask the desk to start covering it. Holdings stay in this browser only."
     >
       <div className="space-y-2 p-2 font-mono">
         {/* add box */}

@@ -2,7 +2,6 @@ import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
 import FedPanel from "@/components/fed-panel";
 import Panel from "@/components/panel";
-import { TICKER_TIPS } from "@/lib/glossary";
 
 export const metadata = { title: "Macro — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -33,7 +32,6 @@ export default function MacroPage() {
         code="10Y"
         title="10-Year Treasury Yield"
         color="#22d3ee"
-        learn={TICKER_TIPS["^TNX"]}
         metaLabel="YIELD · %"
       />
 
@@ -42,7 +40,6 @@ export default function MacroPage() {
         code="30Y"
         title="30-Year Treasury Yield"
         color="#a78bfa"
-        learn={TICKER_TIPS["^TYX"]}
         metaLabel="YIELD · %"
       />
 
@@ -51,7 +48,6 @@ export default function MacroPage() {
         code="TLT"
         title="20+ Year Treasury Bond ETF"
         color="#fbbf24"
-        learn={TICKER_TIPS["TLT"]}
         metaLabel="PRICE · INVERSE TO LONG YIELDS"
       />
 
@@ -60,7 +56,6 @@ export default function MacroPage() {
         code="DXY"
         title="US Dollar Index"
         color="#cbd5e1"
-        learn={TICKER_TIPS["DXY"]}
         metaLabel="USD vs 6-CURRENCY BASKET"
       />
 

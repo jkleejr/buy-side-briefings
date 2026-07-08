@@ -32,7 +32,6 @@ export default async function MetalsPanel() {
     <Panel asOf={nowUtcHM()}
       code="METAL"
       title="Metals"
-      learn="Live GLD (gold ETF) and SLV (silver ETF) prices. Gold = classic inflation hedge and crisis asset. Silver = 'high-beta gold' (smaller market + industrial demand amplify moves). Click the title to open the full metals detail page. Refreshes every 60 seconds."
       href="/metals"
       meta={<span>YAHOO</span>}
     >

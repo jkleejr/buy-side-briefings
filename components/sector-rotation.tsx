@@ -1,8 +1,6 @@
 import YahooFinance from "yahoo-finance2";
 import { formatPct } from "@/lib/utils";
-import { SECTOR_TIPS } from "@/lib/glossary";
 import Panel from "./panel";
-import Tooltip from "./tooltip";
 
 const yahooFinance = new YahooFinance({
   suppressNotices: ["yahooSurvey", "ripHistorical"],
@@ -62,7 +60,6 @@ export default async function SectorRotation() {
     <Panel
       code="SECT"
       title="Sector Rotation · 11 ETFs"
-      learn="The 11 S&P sector ETFs (Tech = XLK, Financials = XLF, etc.) sorted by today's move. 'Today' is the intraday change. '~50d' is the % change vs. the 50-day moving average — a longer-horizon trend reading. Click the title for the full Sectors detail page with per-sector charts and rotation framework."
       href="/sectors"
       meta={<span>SORT ▾ TODAY</span>}
     >
@@ -81,14 +78,13 @@ export default async function SectorRotation() {
             const downToday = (r.pct ?? 0) < 0;
             const upTrend = (r.m1 ?? 0) > 0;
             const downTrend = (r.m1 ?? 0) < 0;
-            const tip = SECTOR_TIPS[r.symbol] ?? "";
             return (
               <tr key={r.symbol} className="border-t border-[var(--border)]">
                 <td className="px-2 py-0.5 text-[var(--foreground)]">
-                  {tip ? <Tooltip text={tip}>{r.label}</Tooltip> : r.label}
+                  {r.label}
                 </td>
                 <td className="px-2 py-0.5 text-[var(--amber-dim)]">
-                  {tip ? <Tooltip text={tip}>{r.symbol}</Tooltip> : r.symbol}
+                  {r.symbol}
                 </td>
                 <td
                   className={

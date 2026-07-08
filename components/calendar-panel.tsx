@@ -54,7 +54,6 @@ export default async function CalendarPanel() {
     <Panel
       code="CAL"
       title="Week Ahead · Catalysts, Earnings & Macro"
-      learn="Three calendars for short-horizon positioning: (top) curated catalysts from the briefings — IPO pricings, signal windows, geopolitical deadlines — each linked to the open trade ideas that hinge on it; (left) upcoming earnings for mega-cap and bellwether stocks; (right) scheduled macro prints — CPI, Core PCE, NFP, GDP, Retail Sales — and FOMC dates. Anything within the next 14 days."
       meta={<span>BRIEFINGS + YAHOO + FRED · 14D</span>}
     >
       {events.length > 0 && (

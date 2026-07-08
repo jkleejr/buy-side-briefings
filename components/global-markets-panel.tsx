@@ -1,8 +1,6 @@
 import YahooFinance from "yahoo-finance2";
 import { formatPct, nowUtcHM } from "@/lib/utils";
-import { TICKER_TIPS } from "@/lib/glossary";
 import Panel from "./panel";
-import Tooltip from "./tooltip";
 
 const yahooFinance = new YahooFinance({
   suppressNotices: ["yahooSurvey", "ripHistorical"],
@@ -63,7 +61,6 @@ export default async function GlobalMarketsPanel() {
     <Panel asOf={nowUtcHM()}
       code="GLBL"
       title="Global Markets · Overnight & Sessions"
-      learn="The major non-US stock indices, grouped by region. Useful as overnight read: by the time the US market opens at 9:30am ET, Asia has already closed and Europe is mid-session — these tell you what futures will do at the open. Click the title for the full Global Markets detail page with per-region charts."
       href="/global"
       meta={<span>YAHOO · 60s</span>}
     >
@@ -81,7 +78,6 @@ export default async function GlobalMarketsPanel() {
                   const pct = q?.regularMarketChangePercent ?? null;
                   const up = (pct ?? 0) > 0;
                   const down = (pct ?? 0) < 0;
-                  const tip = TICKER_TIPS[idx.symbol] ?? TICKER_TIPS[idx.label] ?? "";
                   const pctCls = up
                     ? "text-[var(--up)]"
                     : down
@@ -90,7 +86,7 @@ export default async function GlobalMarketsPanel() {
                   return (
                     <tr key={idx.symbol} className="border-t border-[var(--border)] first:border-t-0">
                       <td className="px-2 py-0.5 text-[var(--foreground)]">
-                        {tip ? <Tooltip text={tip}>{idx.label}</Tooltip> : idx.label}
+                        {idx.label}
                       </td>
                       <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
                         {price === null

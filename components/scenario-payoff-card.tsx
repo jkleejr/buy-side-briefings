@@ -49,7 +49,6 @@ export default function ScenarioPayoffCard({
     <Panel
       code="SCEN"
       title="Scenario Payoff · Into the Catalyst"
-      learn="Bull / base / bear outcomes into the next dated catalyst. With listed IV the bull and bear legs are ±1 expected move (the ~68% range, ~16% in each tail); without IV they fall back to the nearest resistance and support. 'P&L / $10k' applies the price move to the standing position — a short profits when price falls. This converts the catalyst into a risk/reward you can size against, instead of a directional guess."
       meta={
         <span>
           {next ? `T−${days}d` : "≈30d"}

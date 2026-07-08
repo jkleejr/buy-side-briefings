@@ -2,7 +2,6 @@ import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
 import SectorRotation from "@/components/sector-rotation";
 import Panel from "@/components/panel";
-import { SECTOR_TIPS } from "@/lib/glossary";
 import { getQuote } from "@/lib/markets";
 
 export const metadata = { title: "Sectors — Buy-Side Briefings" };
@@ -72,7 +71,6 @@ export default async function SectorsPage() {
           code={s.symbol}
           title={s.label}
           color={s.color}
-          learn={SECTOR_TIPS[s.symbol]}
           metaLabel={s.symbol === featured[0].symbol ? "TODAY'S LEADER" : undefined}
         />
       ))}

@@ -2,7 +2,6 @@ import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
 import BigCompareChart from "@/components/big-compare-chart";
 import Panel from "@/components/panel";
-import { TICKER_TIPS } from "@/lib/glossary";
 
 export const metadata = { title: "Metals — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -30,7 +29,6 @@ export default function MetalsPage() {
         code="GLD"
         title="Gold ETF (GLD)"
         color="#fbbf24"
-        learn={TICKER_TIPS["GLD"]}
         metaLabel="NYSE ARCA · YAHOO"
       />
 
@@ -39,7 +37,6 @@ export default function MetalsPage() {
         code="SLV"
         title="Silver ETF (SLV)"
         color="#cbd5e1"
-        learn={TICKER_TIPS["SLV"]}
         metaLabel="NYSE ARCA · YAHOO"
       />
 
@@ -51,7 +48,6 @@ export default function MetalsPage() {
           { symbol: "SLV", label: "SLV", color: "#cbd5e1" },
         ]}
         asRatio
-        learn="GLD / SLV price ratio, normalized to 100 at the start of the window. Classic precious-metals signal: when the ratio rises, gold is outperforming silver — typically a risk-off / safe-haven signal because silver is more industrial. When the ratio falls, silver is leading — usually a risk-on / reflation tape. Historical mean is around 70–85."
         metaLabel="RATIO · NORMALIZED 100"
       />
 

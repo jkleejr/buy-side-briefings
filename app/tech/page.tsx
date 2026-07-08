@@ -2,7 +2,6 @@ import Link from "next/link";
 import BigAssetChart from "@/components/big-asset-chart";
 import TechStocksPanel from "@/components/tech-stocks-panel";
 import Panel from "@/components/panel";
-import { TICKER_TIPS } from "@/lib/glossary";
 
 export const metadata = { title: "Major Tech Stocks — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -55,7 +54,6 @@ export default function TechPage() {
           code={t.symbol}
           title={`${t.symbol} — ${t.label}`}
           color={t.color}
-          learn={TICKER_TIPS[t.symbol]}
         />
       ))}
 

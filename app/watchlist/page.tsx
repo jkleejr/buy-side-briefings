@@ -147,7 +147,6 @@ export default async function WatchlistPage() {
         <Panel
           code="ADD?"
           title="Suggested additions"
-          learn="A curated list of tickers you could consider adding to data/watchlist.json — organized by theme. Each entry shows live price + day % change and a one-line reason for the pick. Filter automatically excludes anything already on your list. To add a ticker: open data/watchlist.json, append the entry, commit + push, the watchlist re-renders within ~2 minutes."
         >
           <div className="divide-y divide-[var(--border)]">
             {suggestionCategories.map((cat) => (

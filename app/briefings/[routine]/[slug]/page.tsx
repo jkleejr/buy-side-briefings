@@ -9,12 +9,10 @@ import {
   cn,
   formatBriefingTitle,
   formatPct,
-  getVerdictExplanation,
   verdictColor,
   formatRelativeTime,
 } from "@/lib/utils";
 import Panel from "@/components/panel";
-import Tooltip from "@/components/tooltip";
 
 export const revalidate = 300;
 
@@ -35,12 +33,10 @@ export async function generateMetadata({
 
 function ScoreCell({
   label,
-  tip,
   w,
   isRight,
 }: {
   label: string;
-  tip: string;
   w: ReturnWindow;
   isRight: boolean | null;
 }) {
@@ -70,7 +66,7 @@ function ScoreCell({
   return (
     <div className="border border-[var(--border)] bg-black px-2 py-1.5">
       <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
-        <Tooltip text={tip}>{label}</Tooltip>
+        {label}
       </div>
       <div className={`mt-0.5 font-mono text-[16px] ${cls}`}>
         {w.pending ? "—" : pct === null ? "—" : formatPct(pct)}
@@ -81,12 +77,6 @@ function ScoreCell({
     </div>
   );
 }
-
-const HORIZON_TIPS = {
-  d1: "S&P 500 return 1 trading day after the verdict date — the fastest sanity check on whether the call was right.",
-  d5: "S&P 500 return 5 trading days (~one calendar week) after the verdict. The 'did this week move the way the call implied' window.",
-  d20: "S&P 500 return 20 trading days (~one calendar month) after the verdict. The horizon most short-term calls really play out over.",
-};
 
 export default async function BriefingPage({
   params,
@@ -146,9 +136,7 @@ export default async function BriefingPage({
           >
             <span>{verdict.verdict.emoji}</span>
             <span className="font-semibold uppercase tracking-wide">
-              <Tooltip text={getVerdictExplanation(verdict.verdict.code)}>
-                {verdict.verdict.label}
-              </Tooltip>
+              {verdict.verdict.label}
             </span>
             <span className="text-[10px] text-[var(--dim)]">
               · generated {formatRelativeTime(verdict.generated_at)}
@@ -165,14 +153,12 @@ export default async function BriefingPage({
         <Panel
           code="SCORE"
           title="Was this call right?"
-          learn="The verdict's directional record vs. SPX over the next 1, 5, and 20 trading days. Updates as time passes — windows show 'pending' until enough trading days have elapsed. Hold calls aren't directional so they show 'informational' rather than right/wrong."
         >
           <div className="grid grid-cols-1 gap-1 p-2 sm:grid-cols-3">
-            <ScoreCell label="+1d" tip={HORIZON_TIPS.d1} w={score.d1} isRight={score.right_d1} />
-            <ScoreCell label="+5d" tip={HORIZON_TIPS.d5} w={score.d5} isRight={score.right_d5} />
+            <ScoreCell label="+1d" w={score.d1} isRight={score.right_d1} />
+            <ScoreCell label="+5d" w={score.d5} isRight={score.right_d5} />
             <ScoreCell
               label="+20d"
-              tip={HORIZON_TIPS.d20}
               w={score.d20}
               isRight={score.right_d20}
             />

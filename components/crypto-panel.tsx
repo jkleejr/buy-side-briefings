@@ -32,8 +32,6 @@ export default async function CryptoPanel() {
     <Panel asOf={nowUtcHM()}
       code="CRYPT"
       title="Crypto"
-      learn="Live BTC and ETH prices from Yahoo Finance (a blended price across major exchanges). Pick a timeframe to view different windows of price action. Click the title to open the full crypto detail page. Refreshes every 60 seconds."
-      href="/crypto"
       meta={<span>YAHOO</span>}
     >
       <MultiAssetSparkPanel

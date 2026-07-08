@@ -68,58 +68,6 @@ body {
 .panel-scroll::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 0; }
 .panel-scroll::-webkit-scrollbar-track { background: transparent; }
 
-/* Learn-mode tooltips (CSS-only, controlled by data-learn on <html>) */
-.tip-host {
-  position: relative;
-  display: inline-block;
-  vertical-align: baseline;
-}
-.tip-bubble {
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  z-index: 9999;
-  display: none;
-  width: max-content;
-  /* Viewport-aware: never exceed screen width minus a margin. Works on mobile
-     so the tooltip stays readable even when the host is near the right edge. */
-  max-width: min(280px, calc(100vw - 24px));
-  border: 1px solid var(--amber);
-  background: #000;
-  color: var(--foreground);
-  padding: 6px 8px;
-  font-size: 11px;
-  line-height: 1.45;
-  font-weight: 400;
-  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
-  text-transform: none;
-  letter-spacing: normal;
-  white-space: normal;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.8);
-  pointer-events: none;
-}
-
-/* Touch devices: tap-to-toggle (focus-within already in the spec below). The
-   :focus-within rule fires on tap because tip-host has tabIndex=0. */
-@media (hover: none) {
-  [data-learn="on"] .tip-host { cursor: pointer; }
-}
-.tip-bubble--right {
-  left: auto;
-  right: 0;
-}
-[data-learn="on"] .tip-host {
-  cursor: help;
-  border-bottom: 1px dotted var(--amber);
-}
-[data-learn="on"] .tip-host:hover > .tip-bubble,
-[data-learn="on"] .tip-host:focus-within > .tip-bubble {
-  display: block;
-}
-/* Bubble stays hidden when learn mode is off */
-[data-learn="off"] .tip-bubble { display: none !important; }
-[data-learn="off"] .tip-host { border-bottom: none; cursor: inherit; }
-
 /* ============================================================================
    PHOSPHOR — CRT terminal realism layer.
    One concept: this is an amber-phosphor trading screen behind glass. Every

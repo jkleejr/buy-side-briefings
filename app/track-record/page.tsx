@@ -17,26 +17,18 @@ import {
 import {
   formatBriefingTitle,
   formatPct,
-  getVerdictExplanation,
   verdictColor,
 } from "@/lib/utils";
 import { buildPaperPortfolio } from "@/lib/paper-portfolio";
 import EquityCurveChart from "@/components/equity-curve-chart";
 import ExpectancyPanel from "@/components/expectancy-panel";
 import Panel from "@/components/panel";
-import Tooltip from "@/components/tooltip";
 import VerdictMarkerChart, {
   type VerdictMarker,
 } from "@/components/verdict-marker-chart";
 
 export const metadata = { title: "Track Record — Buy-Side Briefings" };
 export const revalidate = 600;
-
-const HORIZON_TIPS: Record<"d1" | "d5" | "d20", string> = {
-  d1: "S&P 500 return 1 trading day after the verdict date — the fastest sanity check on whether the call was right.",
-  d5: "S&P 500 return 5 trading days (~one calendar week) after the verdict. The 'did this week move the way the call implied' window.",
-  d20: "S&P 500 return 20 trading days (~one calendar month) after the verdict. The horizon most short-term calls really play out over.",
-};
 
 function ReturnCell({ w }: { w: ReturnWindow }) {
   if (w.pending) {
@@ -152,7 +144,6 @@ export default async function TrackRecordPage() {
       <Panel
         code="CHART"
         title="SPX · Verdicts Overlaid"
-        learn="The S&P 500 daily close (amber line) with a colored dot at each verdict date. Green dots = BUY calls, yellow = HOLD, orange = STEP ASIDE, red = BEARISH. Hover a dot's date on the X-axis to see the SPX level. The whole point: at a glance, see whether the calls landed where the index turned."
         meta={<span>{monthsBack}MO · DAILY</span>}
       >
         <VerdictMarkerChart series={spxSeries} markers={markers} />
@@ -177,9 +168,7 @@ export default async function TrackRecordPage() {
         })}
         <div className="border border-[var(--border)] bg-[var(--panel)] px-2 py-1.5">
           <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
-            <Tooltip text="Across every completed +1d/+5d/+20d window for every verdict, the percentage that was directionally correct. 'Hold' verdicts aren't included (they're not directional calls). Wait for ~20+ verdicts before reading the number seriously — small samples are noisy.">
-              Hit rate
-            </Tooltip>
+            Hit rate
           </div>
           <div className="mt-0.5 font-mono text-[18px] text-[var(--foreground)]">
             {hitRate === null ? "—" : `${hitRate.toFixed(0)}%`}
@@ -196,7 +185,6 @@ export default async function TrackRecordPage() {
           <Panel
             code="PERF"
             title="Performance by Verdict Code"
-            learn="For each verdict code, the number issued, +5d hit rate (right / wrong / pending), and average SPX return at +5d. BUY is graded right when SPX is up; BEARISH right when down; STEP ASIDE right when SPX is flat or down (≤+1%). HOLD is informational only and isn't graded."
           >
             <table className="w-full font-mono text-[11px] term-table">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
@@ -264,7 +252,6 @@ export default async function TrackRecordPage() {
           <Panel
             code="HILO"
             title="Best & Worst Call · Streak"
-            learn="The verdict with the strongest direction-adjusted +20d outcome (BEST), the verdict with the worst outcome (WORST), and the current consecutive same-result streak at the +5d window (STREAK). Direction-adjusted means a +5% SPX move counts as +5% for a BUY call but -5% for a BEARISH call. Requires +20d windows to be completed."
           >
             <div className="divide-y divide-[var(--border)]">
               {/* Best */}
@@ -279,9 +266,7 @@ export default async function TrackRecordPage() {
                       className="mt-0.5 block font-mono text-[12px] text-[var(--foreground)] hover:underline"
                     >
                       {stats.best_call.v.verdict.emoji}{" "}
-                      <Tooltip text={getVerdictExplanation(stats.best_call.v.verdict.code)}>
-                        {stats.best_call.v.verdict.label}
-                      </Tooltip>
+                      {stats.best_call.v.verdict.label}
                     </Link>
                     <div className="font-mono text-[10px] text-[var(--dim)]">
                       {formatBriefingTitle({
@@ -313,9 +298,7 @@ export default async function TrackRecordPage() {
                       className="mt-0.5 block font-mono text-[12px] text-[var(--foreground)] hover:underline"
                     >
                       {stats.worst_call.v.verdict.emoji}{" "}
-                      <Tooltip text={getVerdictExplanation(stats.worst_call.v.verdict.code)}>
-                        {stats.worst_call.v.verdict.label}
-                      </Tooltip>
+                      {stats.worst_call.v.verdict.label}
                     </Link>
                     <div className="font-mono text-[10px] text-[var(--dim)]">
                       {formatBriefingTitle({
@@ -368,7 +351,6 @@ export default async function TrackRecordPage() {
         <Panel
           code="EQTY"
           title="Paper Portfolio vs SPX"
-          learn="Simulates an account that took EVERY closed opportunity at its published position size, compounding each trade's recorded return on its close date (amber step line). The dashed cyan line is buying the S&P 500 on the journal's first day and doing nothing — the bar any strategy has to beat. Realized trades only: open ideas aren't marked to market, so the line moves only when a trade closes. Win-rate can flatter; this line can't."
           meta={
             <span>
               <span className="hidden sm:inline">
@@ -491,7 +473,6 @@ export default async function TrackRecordPage() {
           <Panel
             code="CALIB"
             title="Calibration · Verdicts by Conviction"
-            learn="Every directional verdict (HOLD excluded) grouped by the conviction it was published with. 'Adj +5d' is the direction-adjusted SPX return at +5 trading days — a BEARISH call that preceded a -2% week counts as +2%. If HIGH-conviction calls don't beat MEDIUM and LOW here, the conviction tag carries no information and should be discounted when reading new briefings."
           >
             <table className="w-full font-mono text-[11px] term-table">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
@@ -553,7 +534,6 @@ export default async function TrackRecordPage() {
           <Panel
             code="CALIB-OPS"
             title="Calibration · Opportunities by Conviction"
-            learn="Closed trade ideas from the Opportunities journal grouped by stated conviction. Wins = target hit; losses = stopped out or thesis broken; expired ideas count in N but not in the hit rate. Avg return uses each closed trade's recorded return."
           >
             <table className="w-full font-mono text-[11px] term-table">
               <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
@@ -606,7 +586,6 @@ export default async function TrackRecordPage() {
       <Panel
         code="LOG"
         title="All Verdicts · Forward Returns vs SPX"
-        learn="Every Buy Verdict ever published, time-stamped and audited against SPX. Columns +1d/+5d/+20d are the S&P 500 return that many trading days after the verdict. ✓/✗ marks whether the call was directionally right. Hold rows are informational only — they're not directional calls so they can't be right or wrong."
       >
         {rows.length === 0 ? (
           <div className="p-3 text-center font-mono text-[11px] text-[var(--dim)]">
@@ -666,13 +645,13 @@ export default async function TrackRecordPage() {
                   <th className="px-2 py-1 text-left font-normal">Win</th>
                   <th className="px-2 py-1 text-left font-normal">Verdict</th>
                   <th className="px-2 py-1 text-right font-normal">
-                    <Tooltip text={HORIZON_TIPS.d1}>+1d</Tooltip>
+                    +1d
                   </th>
                   <th className="px-2 py-1 text-right font-normal">
-                    <Tooltip text={HORIZON_TIPS.d5}>+5d</Tooltip>
+                    +5d
                   </th>
                   <th className="px-2 py-1 text-right font-normal">
-                    <Tooltip text={HORIZON_TIPS.d20}>+20d</Tooltip>
+                    +20d
                   </th>
                   <th className="px-2 py-1 text-center font-normal">Right?</th>
                   <th className="px-2 py-1 text-left font-normal">Rationale</th>
@@ -693,9 +672,7 @@ export default async function TrackRecordPage() {
                         >
                           <span>{v.verdict.emoji}</span>
                           <span>
-                            <Tooltip text={getVerdictExplanation(v.verdict.code)}>
-                              {v.verdict.label}
-                            </Tooltip>
+                            {v.verdict.label}
                           </span>
                         </Link>
                       </td>

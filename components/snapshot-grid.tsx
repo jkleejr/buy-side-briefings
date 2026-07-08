@@ -1,8 +1,6 @@
 import type { MarketsVerdict } from "@/lib/data";
 import { formatLevel, formatPct } from "@/lib/utils";
-import { TICKER_TIPS } from "@/lib/glossary";
 import Panel from "./panel";
-import Tooltip from "./tooltip";
 
 type Row = {
   label: string;
@@ -26,7 +24,6 @@ export default function SnapshotGrid({ verdict }: { verdict: MarketsVerdict }) {
     <Panel
       code="SNAP"
       title="Market Snapshot · Briefing Time"
-      learn="The major index and rate levels captured at the moment the briefing was written — what the analyst was actually looking at. Differs from the live ticker at the top of the page, which is real-time."
     >
       <table className="w-full font-mono text-[11px]">
         <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
@@ -47,11 +44,10 @@ export default function SnapshotGrid({ verdict }: { verdict: MarketsVerdict }) {
               : down
                 ? "text-[var(--down)]"
                 : "text-[var(--dim)]";
-            const tip = TICKER_TIPS[r.label] ?? "";
             return (
               <tr key={r.label} className="border-t border-[var(--border)]">
                 <td className="px-2 py-1 text-[var(--amber-dim)]">
-                  {tip ? <Tooltip text={tip}>{r.label}</Tooltip> : r.label}
+                  {r.label}
                 </td>
                 <td className="px-2 py-1 text-right text-[var(--foreground)]">
                   {r.level !== undefined ? formatLevel(r.level) : "—"}

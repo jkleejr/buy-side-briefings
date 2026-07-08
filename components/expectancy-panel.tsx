@@ -87,7 +87,6 @@ export default function ExpectancyPanel({ opps }: { opps: Opportunity[] }) {
     <Panel
       code="EDGE"
       title="Edge & Expectancy"
-      learn="The bottom-line profitability stats for the closed trade journal. Expectancy = average return per trade (the number that, times trades, is your P&L). Profit factor = total winnings ÷ total losses; above 1.0 makes money, above 2.0 is strong. Payoff ratio = average win ÷ average loss; a high payoff lets you profit below a 50% win rate. Sharpe here is per-trade (mean ÷ standard deviation of returns) — consistency, not just size. Read these together: a low win rate with a high payoff is a perfectly good system."
       meta={<span>{s.n} CLOSED</span>}
     >
       <div className="grid grid-cols-2 divide-x divide-y divide-[var(--border)] font-mono sm:grid-cols-3 sm:divide-y-0 lg:grid-cols-6">

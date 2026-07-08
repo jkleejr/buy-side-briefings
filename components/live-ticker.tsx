@@ -2,9 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { formatPct } from "@/lib/utils";
-import { TICKER_TIPS } from "@/lib/glossary";
 import type { LiveQuote } from "@/lib/markets";
-import Tooltip from "./tooltip";
 
 type Flash = { dir: "up" | "down"; key: number };
 
@@ -94,7 +92,6 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
         {quotes.map((q) => {
           const up = (q.changePct ?? 0) > 0;
           const down = (q.changePct ?? 0) < 0;
-          const tip = TICKER_TIPS[q.symbol] ?? TICKER_TIPS[q.label] ?? "";
           const flash = flashes[q.symbol];
           const flashCls = flash
             ? flash.dir === "up"
@@ -112,7 +109,7 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
               key={`${q.symbol}-${flash?.key ?? 0}`}
               className={`flex shrink-0 items-baseline gap-2 px-1 ${flashCls}`}
             >
-              {tip ? <Tooltip text={tip}>{labelEl}</Tooltip> : labelEl}
+              {labelEl}
               <span className="text-[var(--foreground)]">
                 {q.price === null
                   ? "—"

@@ -84,7 +84,6 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
     <Panel
       code="BRIEF"
       title="Recent Briefings"
-      learn="Archive of the most recent analyst write-ups. Each entry links to the full long-form briefing with citations, tables, and a mandatory bear case. Routine codes: MKT = markets, POL = politics, ERN = pre-earnings."
       meta={
         <Link href="/briefings" className="text-[var(--cyan-term)] hover:underline">
           ALL ▸

@@ -1,7 +1,6 @@
 import { getMacroSnapshot } from "@/lib/macro";
 import { todayET } from "@/lib/utils";
 import Panel from "./panel";
-import Tooltip from "./tooltip";
 
 export const revalidate = 3600;
 
@@ -19,14 +18,13 @@ export default async function CyclePanel() {
 
   const tile = (
     label: string,
-    tip: string,
     value: React.ReactNode,
     hint: string,
     cls = "text-[var(--foreground)]",
   ) => (
     <div className="px-2 py-1.5">
       <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--amber-dim)]">
-        <Tooltip text={tip}>{label}</Tooltip>
+        {label}
       </div>
       <div className={`mt-0.5 font-mono text-[14px] ${cls}`}>{value}</div>
       <div className="font-mono text-[10px] text-[var(--dim)]">{hint}</div>
@@ -50,12 +48,10 @@ export default async function CyclePanel() {
     <Panel
       code="CYCLE"
       title="Cycle Position & Real Economy"
-      learn="Long-horizon indicators — where we are in the broader economic and crypto cycles. Useful for the 'big picture' question: is this early-cycle expansion, late-cycle euphoria, or recession setup? Doesn't change day-to-day, but sets the backdrop for everything else."
     >
       <div className="grid grid-cols-3 divide-x divide-[var(--border)]">
         {tile(
           "ISM Mfg",
-          "Institute for Supply Management Manufacturing PMI. A survey of factory purchasing managers covering new orders, production, employment, and prices. Above 50 = manufacturing expanding. Below 50 = contracting. Leading indicator for the goods economy.",
           m.growth.ism_manufacturing ?? "—",
           m.growth.ism_manufacturing === null
             ? ""
@@ -66,7 +62,6 @@ export default async function CyclePanel() {
         )}
         {tile(
           "ISM Svc",
-          "ISM Services PMI — same survey methodology as Manufacturing but for the services economy (~70% of US GDP). Above 50 = expansion, below = contraction. Watched alongside Mfg PMI to gauge breadth of growth or weakness.",
           m.growth.ism_services ?? "—",
           m.growth.ism_services === null
             ? ""
@@ -77,7 +72,6 @@ export default async function CyclePanel() {
         )}
         {tile(
           "GDP q/q ann.",
-          "Gross Domestic Product growth, quarter-over-quarter, annualized (i.e., what the rate would be if that quarter's pace held for a full year). The headline 'how fast is the economy growing' number. Reported by the BEA roughly a month after the quarter ends.",
           m.growth.gdp_qoq_annualized_pct === null
             ? "—"
             : `${m.growth.gdp_qoq_annualized_pct.toFixed(1)}%`,
@@ -86,9 +80,7 @@ export default async function CyclePanel() {
       </div>
       <div className="border-t border-[var(--border)] px-2 py-1.5">
         <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--amber-dim)]">
-          <Tooltip text="Every ~4 years (roughly every 210,000 blocks), the Bitcoin mining reward is cut in half — the 'halving'. Historically, BTC has rallied 12–18 months after each halving, peaked, then crashed. Tracking T+days since the last halving is a rough shorthand for where we are in the crypto cycle.">
-            BTC Halving Cycle
-          </Tooltip>
+          BTC Halving Cycle
         </div>
         <div className="mt-0.5 font-mono text-[11px] text-[var(--foreground)]">
           {m.crypto_cycle.cycle_position_label}

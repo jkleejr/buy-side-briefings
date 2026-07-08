@@ -2,7 +2,6 @@ import Link from "next/link";
 import { getLatestMarketsVerdict } from "@/lib/data";
 import { todayET, verdictColor } from "@/lib/utils";
 import HeaderNav from "./header-nav";
-import LearnToggle from "./learn-toggle";
 import MobileNav from "./mobile-nav";
 import PaletteButton from "./palette-button";
 
@@ -13,7 +12,6 @@ const NAV = [
   // (Crypto, Week, What I Got Wrong, Watchlist, About) lives in the ⌘K palette.
   { href: "/", code: "DASH", label: "Dashboard" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
-  { href: "/markets", code: "MKTS", label: "Markets" },
   { href: "/earnings", code: "EARN", label: "Earnings" },
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness" },
   { href: "/ai-bubble", code: "BUBBLE", label: "AI Bubble" },
@@ -41,7 +39,6 @@ export default function SiteHeader() {
 
         <div className="ml-auto flex shrink-0 items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] sm:gap-3">
           <PaletteButton />
-          <LearnToggle />
           <span className="hidden lg:inline">{dateStr}</span>
           <span className="hidden text-[var(--amber-dim)] lg:inline">·</span>
           <span className="flex items-center gap-1">

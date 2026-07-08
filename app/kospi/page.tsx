@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { getAllKospiVerdicts } from "@/lib/data";
-import { cn, formatLevel, formatPct, verdictColor, getVerdictExplanation } from "@/lib/utils";
+import { cn, formatLevel, formatPct, verdictColor } from "@/lib/utils";
 import KospiBriefingCard from "@/components/kospi-briefing-card";
-import Tooltip from "@/components/tooltip";
 
 export const metadata = {
   title: "KOSPI — Korean Market News & Updates — Buy-Side Briefings",
@@ -59,9 +58,7 @@ export default function KospiPage() {
                 <>
                   <span className="text-[var(--dim)]">·</span>
                   <span className={cn("font-bold", color.text)}>
-                    <Tooltip text={getVerdictExplanation(latest.verdict.code)}>
-                      {latest.verdict.emoji} {latest.verdict.code.toUpperCase().replace("_", " ")}
-                    </Tooltip>
+                    {latest.verdict.emoji} {latest.verdict.code.toUpperCase().replace("_", " ")}
                   </span>
                 </>
               )}

@@ -3,7 +3,6 @@ import BigAssetChart from "@/components/big-asset-chart";
 import BigCompareChart from "@/components/big-compare-chart";
 import UsPulsePanel from "@/components/us-pulse-panel";
 import Panel from "@/components/panel";
-import { TICKER_TIPS } from "@/lib/glossary";
 
 export const metadata = { title: "US Pulse — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -38,7 +37,6 @@ export default function PulsePage() {
           { symbol: "SPY", label: "SPY", color: "#22d3ee" },
         ]}
         asRatio
-        learn="Equal-weight S&P (RSP) divided by cap-weight S&P (SPY), normalized to 100 at the start of the window. Rising = the average stock outperforming the mega-caps (broad rally). Falling = mega-caps lifting the index while the average stock lags (narrow rally — historically fragile). The trend matters more than the absolute level."
         metaLabel="RATIO · NORMALIZED 100"
       />
 
@@ -55,7 +53,6 @@ export default function PulsePage() {
         code="RUT"
         title="Russell 2000 — Small Caps"
         color="#22d3ee"
-        learn={TICKER_TIPS["^RUT"]}
         metaLabel="BROAD US ECONOMY READ"
       />
 
@@ -64,7 +61,6 @@ export default function PulsePage() {
         code="RSP"
         title="S&P 500 Equal Weight (vs cap-weight SPY = breadth)"
         color="#84cc16"
-        learn={TICKER_TIPS["RSP"]}
         metaLabel="BREADTH PROXY"
       />
 
@@ -73,7 +69,6 @@ export default function PulsePage() {
         code="COPPER"
         title="Copper Futures — Dr. Copper"
         color="#fb923c"
-        learn={TICKER_TIPS["HG=F"]}
         metaLabel="GLOBAL GROWTH PULSE"
       />
 
@@ -82,7 +77,6 @@ export default function PulsePage() {
         code="HYG"
         title="High-Yield Corporate Bond ETF"
         color="#ef4444"
-        learn={TICKER_TIPS["HYG"]}
         metaLabel="CREDIT STRESS SIGNAL"
       />
 

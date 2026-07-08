@@ -8,10 +8,8 @@ import {
   type ChartPoint,
 } from "@/lib/chart-ranges";
 import { formatPct } from "@/lib/utils";
-import { TICKER_TIPS } from "@/lib/glossary";
 import RangeSelector from "./range-selector";
 import Sparkline from "./sparkline";
-import Tooltip from "./tooltip";
 
 export type TechAsset = { symbol: string; label: string; sublabel: string };
 export type TechQuote = { price: number | null; changePct: number | null };
@@ -84,13 +82,12 @@ export default function TechStocksClient({
             : down
               ? "text-[var(--down)]"
               : "text-[var(--dim)]";
-          const tip = TICKER_TIPS[a.symbol] ?? "";
           return (
             <div key={a.symbol} className="flex flex-col gap-1 px-2 py-1.5">
               {/* Price header */}
               <div className="flex flex-wrap items-baseline gap-x-2 font-mono text-[11px]">
                 <span className="text-[var(--amber-dim)]">
-                  {tip ? <Tooltip text={tip}>{a.label}</Tooltip> : a.label}
+                  {a.label}
                 </span>
                 <span className="truncate text-[10px] text-[var(--dim)]">{a.sublabel}</span>
               </div>

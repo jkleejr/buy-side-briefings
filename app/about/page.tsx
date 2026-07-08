@@ -49,12 +49,6 @@ export default function AboutPage() {
               policy &amp; macro, real-economy data, BTC halving cycle clock.
             </li>
           </ul>
-          <p>
-            Everything has a hover-to-learn explanation — toggle{" "}
-            <span className="text-[var(--amber)]">Learn ON</span> in the top right, then
-            hover any underlined term (ticker, indicator, panel title) for a plain-English
-            explainer.
-          </p>
         </div>
       </Panel>
 

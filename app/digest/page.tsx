@@ -7,10 +7,8 @@ import {
   verdictColor,
   formatBriefingTitle,
   formatRelativeTime,
-  getVerdictExplanation,
 } from "@/lib/utils";
 import Panel from "@/components/panel";
-import Tooltip from "@/components/tooltip";
 import VerdictMarkerChart, { type VerdictMarker } from "@/components/verdict-marker-chart";
 
 export const metadata = { title: "Week in Review — Buy-Side Briefings" };
@@ -148,7 +146,6 @@ export default async function DigestPage() {
       <Panel
         code="WK-CHART"
         title="SPX · This Week with Verdicts"
-        learn="The S&P 500 daily close over the past two weeks, with a colored dot at each verdict date logged in the trailing 7 days. Use it to visually check whether the calls landed where the index turned."
         meta={<span>2W · DAILY</span>}
       >
         <VerdictMarkerChart series={spxSlice} markers={markers} />
@@ -158,7 +155,6 @@ export default async function DigestPage() {
       <Panel
         code="VRDCTS"
         title={`Verdicts logged · last ${WINDOW_DAYS} days`}
-        learn="Each verdict published in the trailing 7 days, newest first. Click any title to open the full briefing. The right-side cells show SPX returns at +1, +5, and +20 trading days, with ✓/✗ marks for whether the call was directionally right."
       >
         {scored.length === 0 ? (
           <div className="p-4 text-center font-mono text-[11px] text-[var(--dim)]">
@@ -185,9 +181,7 @@ export default async function DigestPage() {
                     >
                       <span>{v.verdict.emoji}</span>
                       <span>
-                        <Tooltip text={getVerdictExplanation(v.verdict.code)}>
-                          {v.verdict.label}
-                        </Tooltip>
+                        {v.verdict.label}
                       </span>
                     </Link>
                     <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">

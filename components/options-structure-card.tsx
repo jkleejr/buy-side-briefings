@@ -66,7 +66,6 @@ export default function OptionsStructureCard({
     <Panel
       code="OPTS"
       title="Options Structure · Defined Risk"
-      learn="A vertical debit spread built from the standing call and the key levels: buy the near leg, sell a leg at the directional target. Your max loss is the debit you pay (a live-chain number), your max gain is the width minus that debit if price reaches the short strike by expiry. Spreads beat owning shares when you want defined risk and leverage to a specific move, and they cut the cost (and theta) of a long single option. 'Expected move' is the ~1σ range IV implies over the expiry — if the target is more than one expected move away, the spread is a long shot; tighten the short strike or extend expiry."
       meta={<span>{s.conditional ? "CONDITIONAL" : "STANDING CALL"}</span>}
     >
       <div className="flex flex-wrap items-center gap-2 border-b border-[var(--border)] px-3 py-2 font-mono">

@@ -177,7 +177,6 @@ export default function TickerSearch() {
     <Panel
       code="ADD"
       title="Search & add a ticker"
-      learn="Search any ticker or company name (data via Yahoo). Click a result to add it to your watchlist — stored in this browser. Each card shows the live price, day change, and a 5-day sparkline; click a card to open its full chart."
     >
       <div className="space-y-2 p-2 font-mono">
         {/* search box */}

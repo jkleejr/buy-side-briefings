@@ -54,8 +54,6 @@ export const metadata: Metadata = {
   },
 };
 
-const learnInitScript = `(function(){try{var v=localStorage.getItem('learnMode');document.documentElement.setAttribute('data-learn', v==='off'?'off':'on');}catch(e){document.documentElement.setAttribute('data-learn','on');}})();`;
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -64,12 +62,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-learn="on"
       className={`${geistMono.variable} ${inter.variable} h-full antialiased`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: learnInitScript }} />
-      </head>
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
         <SiteHeader />
         <StaleBanner />

@@ -1,9 +1,7 @@
 import type { RegimeIndicator } from "@/lib/data";
 import { evaluateRegime, type RegimeStatus } from "@/lib/regime";
-import { getRegimeTip } from "@/lib/glossary";
 import { cn, nowUtcHM } from "@/lib/utils";
 import Panel from "./panel";
-import Tooltip from "./tooltip";
 
 const STATUS_LABEL: Record<RegimeStatus, string> = {
   breached: "BREACHED",
@@ -45,7 +43,6 @@ export default async function RegimeRiskBars({
     <Panel
       code="RISK"
       title="Regime Triggers · Live"
-      learn="The named regime triggers from the latest briefing (DXY above 100, SPX below the regime floor, …), each re-checked against the live tape instead of the values frozen at publish time. BREACHED = the trigger condition is met right now; NEAR = within 2% of the level; HOLDING = comfortably on the safe side. The breach count is the single number that gates how much risk the briefings say to carry. Hover an indicator name for what it measures."
       meta={
         <span
           className={cn(
@@ -69,12 +66,11 @@ export default async function RegimeRiskBars({
               : r.trigger_above !== undefined
                 ? Math.min(100, Math.max(0, (shown / trigger) * 100))
                 : Math.min(100, Math.max(0, (trigger / shown) * 100));
-          const tip = getRegimeTip(r.name);
           return (
             <li key={r.name} className="px-2 py-1.5 font-mono">
               <div className="flex items-baseline gap-2 text-[11px]">
                 <span className="truncate text-[var(--foreground)]">
-                  {tip ? <Tooltip text={tip}>{r.name}</Tooltip> : r.name}
+                  {r.name}
                 </span>
                 <span
                   className={cn(

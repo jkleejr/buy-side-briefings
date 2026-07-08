@@ -11,7 +11,6 @@ type Props = {
   /** Hex color for the line. */
   color: string;
   /** Learn-mode hover explanation. */
-  learn?: string;
   /** Right-side meta text in the panel header (e.g., "COINBASE"). */
   metaLabel?: string;
   /** Currency prefix for the price header (default "$"). e.g. "₩" for KRW. */
@@ -31,7 +30,6 @@ export default async function BigAssetChart({
   code,
   title,
   color,
-  learn,
   metaLabel,
   currencySymbol,
 }: Props) {
@@ -44,7 +42,6 @@ export default async function BigAssetChart({
     <Panel
       code={code}
       title={title}
-      learn={learn}
       meta={metaLabel ? <span>{metaLabel}</span> : undefined}
     >
       <div className="min-h-[240px] sm:min-h-[320px]">
