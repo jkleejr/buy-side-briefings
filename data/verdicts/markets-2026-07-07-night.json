@@ -1,0 +1,102 @@
+{
+  "routine": "markets",
+  "date": "2026-07-07",
+  "window": "night",
+  "generated_at": "2026-07-08T01:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — Dual-gate intact (SPX 7,503 > 7,460, VIX 15.57 < 17); NVDA Gate 3 failed 4th time; BTC at $62,880 (Gate 2 $880 above floor); KOSPI circuit breaker; 30Y > 5%; FOMC minutes July 8 is the binary",
+    "conviction": "medium",
+    "rationale_short": "The dual-gate BUY regime is technically intact: SPX closed 7,503.85 (+43 points above the 7,460 threshold) and VIX 15.57 (below 17). However, conditions do not support adding. NVDA Gate 3 ($200 close) failed for the fourth consecutive session — the SpaceX NQ inclusion day inverted the thesis by requiring NQ rebalancing to SELL existing constituents to fund SPCX. Nasdaq fell -1.16%; NVDA's $190.63 intraday low set a new framework low. BTC drifted from the $64K probe to $62,880 (Gate 2 at $62,000 intact by $880). KOSPI triggered a circuit breaker (-4.91% close / -8.22% intraday) on Samsung earnings miss + DeepSeek AI concerns + leveraged ETF unwind. The 30Y yield crossed above 5.00% (regime risk threshold). FOMC minutes Wednesday July 8 at 2:00 PM ET is the decisive binary: hawkish (9/18 June officials for rate hike) = VIX spike, regime risk for both NVDA stop and BTC Gate 2; neutral/dovish = tech recovery and Gate 3/SKHY setup reloads. Hold all positions as-is into FOMC. Conviction MEDIUM."
+  },
+  "supporting_data": [
+    { "label": "SPX 7,503.85 (-0.45%) — dual-gate intact; 43pts above 7,460 threshold; Dow Jones -0.31%; Nasdaq 25,818.69 (-1.16%) — chip sector rout; Russell 2000 held ~3,000", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-7-2026" },
+    { "label": "NVDA $196.25 (+0.36%) — Gate 3 failed 4th consecutive time; intraday high $198.41 ($1.59 below $200); intraday low $190.63 (NEW framework low); Goldman 'compelling' 21.7x forward P/E note; stop threshold held ($196.25 > $195); volume 124.04M", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262015350-nvidia-nvda-stock-forecast-july-2026-kyber-denial-goldman-tradingkey" },
+    { "label": "SpaceX (SPCX) -29% on Nasdaq-100 inclusion day — NQ rebalancing sold existing constituents to fund forced SPCX buy; $4.3B forced passive inflow into SPCX applied proportional selling pressure to NVDA and other NQ components; inclusion day inverted the mechanical catalyst thesis", "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-joins-nasdaq-100-july-133000124.html" },
+    { "label": "KOSPI circuit breaker triggered 1:51 PM KST July 7 — index -8.22% intraday, -4.91% close (7,656.31); Samsung -6.92%, SK Hynix -6.06% (CONFIRMED close ₩2,201,000); Samsung earnings miss + DeepSeek AI concerns + leveraged ETF forced selling; FSS to tighten leveraged ETF rules; 6th KOSPI circuit breaker of 2026", "url": "https://www.koreajoongangdaily.com/business/kospi-trading-halted-after-circuit-breaker-follows-sellside-sidecar/12759341" },
+    { "label": "BTC $62,880 (Crypto.com MCP, 02:12 UTC July 8 / 10:12 PM ET July 7); 24h range $62,657–$64,252; -1.52%; Gate 2 ($62,000) intact; $64K rejected; CoinDesk: ETF inflows Monday; Strategy $216M BTC sale (largest ever); Coinbase Premium 50th consecutive negative day", "url": "https://www.coindesk.com/markets/2026/07/07/bitcoin-drops-after-a-run-at-usd64-000-shrugging-off-strategy-s-usd213-million-btc-sale" },
+    { "label": "30Y Treasury yield above 5.00% (regime risk threshold breached); UST10Y 4.49% (+1bp); DXY 100.91 (flat); VIX 15.57; FOMC minutes July 8 at 2:00 PM ET from hawkish June meeting (9/18 officials for rate hike; easing bias dropped)", "url": "https://www.cnbc.com/2026/07/07/us-treasury-yields-investors-await-trade-deficit-data-.html" }
+  ],
+  "snapshot": {
+    "sp500":  { "level": 7503.85,  "change_pct": -0.45, "as_of": "2026-07-07T20:00:00Z" },
+    "nasdaq": { "level": 25818.69, "change_pct": -1.16, "as_of": "2026-07-07T20:00:00Z" },
+    "vix":    { "level": 15.57,    "change_pct":  4.49, "as_of": "2026-07-07T20:00:00Z" },
+    "ust10y": { "level": 4.49,     "change_bps":  1,    "as_of": "2026-07-07T20:00:00Z" },
+    "dxy":    { "level": 100.91,   "change_pct":  0.03, "as_of": "2026-07-07T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",               "value": 15.57,   "trigger_above": 17,    "unit": "" },
+    { "name": "SPX vs 7,460",      "value": 7503.85, "trigger_above": 7460,  "unit": "" },
+    { "name": "DXY",               "value": 100.91,  "trigger_above": 100,   "unit": "" },
+    { "name": "BTC ($62K floor)",  "value": 62880,   "trigger_below": 62000, "unit": "$" },
+    { "name": "30Y Yield",         "value": 5.02,    "trigger_above": 5.0,   "unit": "%" },
+    { "name": "Brent",             "value": 71.50,   "trigger_above": 97,    "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",       "note": "$196.25 close (+0.36%) — GATE 3 FAILED (4th consecutive). Intraday low $190.63 = new framework low (breached July 6 $194.00 intraday support). Stop threshold ($195) held on CLOSING basis ($196.25 > $195). Goldman: 'compelling' at 21.7x forward P/E. SpaceX NQ inclusion inverted the mechanical catalyst — rebalancing sold NVDA to fund SPCX. Volume 124.04M (above 100M credibility threshold but below 146.97M avg). Action: hold half-size. FOMC minutes July 8 = stop risk if VIX spikes above 17 on hawkish outcome. Gate 3 check repeats on next session above $200 + SPX >7,460 + VIX <17 simultaneously.", "sentiment": "neutral" },
+    { "ticker": "BTC-USD",    "note": "$62,880 (Crypto.com MCP, 10:12 PM ET). Gate 2 ($62,000) intact: $880 buffer. Failed $64,252 push (CoinDesk: 'drops after run at $64K'). Coinbase Premium 50-day negative streak (record). Strategy $216M BTC sale (largest ever). ETF inflows July 7 confirmed (CoinDesk). IBIT July 7 specific figure TBD (check farside.co.uk/btc/ at US open July 8). BTC options call-heavy (6,065 calls / 3,465 puts) for FOMC minutes. Hold re-entry. Stop: $58,100 UTC midnight close. FOMC minutes binary: dovish = sprint to $65K; hawkish = Gate 2 test.", "sentiment": "neutral" },
+    { "ticker": "000660.KS",  "note": "₩2,201,000 CONFIRMED (-6.06%). Mandatory exit ₩2,450,000 executed at KST open — validated. KOSPI circuit breaker day. Record Q2 earnings sell-the-news. FSS to tighten leveraged ETF rules. SKHY ADR on track: pricing July 9 (after US close), debut July 10. $7B cornerstone (Baillie Gifford, Coatue, SAP); 'explosive demand' from ~1,000 institutions. Implied KRX-to-ADR discount: ~9% (₩220,100 implied vs ₩242,500 reference). FLAT. Do not re-enter KRX until post-SKHY listing.", "sentiment": "neutral" },
+    { "ticker": "SPCX",       "note": "SPCX -29% on its Nasdaq-100 inclusion day (July 7). This is the archetypal post-inclusion fade: $4.3B forced passive buy overwhelmed by distribution sellers who had accumulated on the pre-inclusion run. SPCX failed to hold above $165 despite the $4.3B forced buy — consistent with the July 6 night brief's bear case ('SPCX fails to spike above $165 on the $4.3B buy = overwhelming distribution'). The 'post-inclusion fade' short thesis from the July 6 night brief is confirmed. Now watch for: two consecutive closes above $185 on above-average volume before any re-entry. Current: distribution clearing in progress.", "sentiment": "negative" },
+    { "ticker": "SKHY",       "note": "SKHY Nasdaq ADR pricing July 9 (after US close). Debut July 10. $7B cornerstone investors. ~1,000-institution roadshow with 'explosive demand.' Implied IPO price ~$165.26/ADR (= ₩242,500 at relevant KRW/USD). KRX close ₩2,201,000 implies ~₩220,100/ADR — a ~9% discount to the IPO reference. FOMC minutes July 8 is the risk event between now and SKHY pricing. Watch: SKHY opening price vs $165.26 on July 10. >$175 = re-entry activated. <$165 = demand miss, wait.", "sentiment": "positive" },
+    { "ticker": "KOSPI",      "note": "7,656.31 (-4.91%). Circuit breaker triggered 1:51 PM KST. -8.22% intraday (6th circuit breaker of 2026). Samsung -6.92%, SK Hynix -6.06%. FSS to tighten leveraged ETF rules. July 8-9 are the final KRX sessions before SKHY listing — structural ADR dilution + post-circuit-breaker overhang. Monitor for stabilization. A KOSPI close above 8,000 on July 8 would be a significant signal that the circuit-breaker was mechanical (not fundamental) and the leverage unwind has cleared.", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA (full-size before Gate 3 confirmed)",
+      "reason": "Gate 3 failed for the FOURTH consecutive session on the highest-probability mechanical setup (SpaceX NQ inclusion day). The intraday $190.63 low is the new framework low — sellers are willing to press NVDA to the 200-day SMA vicinity on Gate 3 approach days. FOMC minutes July 8 creates stop risk: hawkish outcome could push NVDA below $195 on a closing basis, triggering mandatory half-size exit. After four consecutive Gate 3 failures, adding at $196.25 before Gate 3 is confirmed would be averaging down against a seller-defended ceiling.",
+      "better_entry": "Gate 3 only: NVDA must CLOSE above $200 + SPX >7,460 + VIX <17 simultaneously. Next opportunity: July 8 close (post-FOMC minutes). Only add at that close if ALL three conditions are simultaneously met on a confirmed official close. Any intraday print above $200 does not count. Do not add below $200."
+    },
+    {
+      "ticker": "SPCX (any level near current)",
+      "reason": "SPCX fell 29% on its inclusion day despite a $4.3B forced passive buy — the July 6 night brief warned this would happen ('inclusion spike is a SELL event') and the thesis confirmed precisely. SPCX failed to hold above $165 on the $4.3B forced buy, confirming the 'overwhelming distribution' bear scenario. The post-inclusion price is now significantly below the pre-inclusion carry, and distribution sellers are still present. The pattern is confirmed: this is not a buy until distribution clears.",
+      "better_entry": "Two consecutive closes above $185 on above-average volume after the inclusion-day volatility clears (est. July 9-11). If SPCX cannot sustain two consecutive closes above $185 in the 1-2 weeks post-inclusion, the thesis reversal is complete and re-entry gate should be revised further down."
+    },
+    {
+      "ticker": "KRX 000660.KS (until post-SKHY listing)",
+      "reason": "KOSPI circuit breaker day (-4.91% close / -8.22% intraday). ADR dilution pressure continues through July 9 (final KRX session before SKHY listing). Leveraged ETF forced selling is an unpredictable amplification risk for the July 8-9 sessions — FSS tightening helps medium-term but not immediately. Re-entering KRX now creates risk of being caught in another circuit-breaker event before SKHY pricing.",
+      "better_entry": "Re-enter via SKHY Nasdaq ADR at $165.26/ADR on July 10 debut. Clean USD denomination, no KRX circuit-breaker risk, cornerstone investor support at offering price, MSCI World inclusion timeline begins. Watch SKHY opening price July 10: >$175/ADR = strong demand, re-entry activated."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "SPX / QQQ",
+      "direction": "hold existing longs",
+      "thesis": "Dual-gate technically intact (SPX 7,503 > 7,460, VIX 15.57 < 17). But the session was weak: Nasdaq -1.16% on DeepSeek AI concerns + Samsung miss + SPCX inclusion rebalancing. 30Y yield above 5% is a new regime risk trigger. FOMC minutes July 8 is the next binary. July earnings season starting (PepsiCo July 9, broader Q2 releases): if reports beat and guide up, the macro backdrop recovers despite FOMC hawkishness. Hold through July 8 FOMC minutes, then reassess.",
+      "entry": "Hold existing longs. Do not add until FOMC minutes resolved (July 8 post-2:00 PM ET). Post-minutes: if SPX closes above 7,460 + VIX below 17 = maintain BUY regime. If SPX closes below 7,460 or VIX above 17 = revert to HOLD regime and reduce risk exposure.",
+      "invalidation": "SPX closes below 7,460 (dual-gate failure); VIX spikes above 17 on FOMC minutes; 30Y yield sustains above 5.00% for 3+ sessions (regime-compression).",
+      "conviction": "medium",
+      "horizon": "Through July 8 FOMC minutes binary, then through July earnings season"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "hold half-size — Gate 3 check repeats",
+      "thesis": "Four Gate 3 failures. Goldman 21.7x forward P/E 'compelling.' Stop threshold held ($196.25 > $195). Intraday $190.63 low establishes the range for FOMC-stress scenarios. August 26 Q2 FY27 earnings ($91B guide) is the structural clearing event. Hold half-size through FOMC minutes July 8 — if minutes are hawkish and NVDA closes below $195, execute mandatory exit at that day's close.",
+      "entry": "No new entry. Hold half-size. Gate 3 check: NVDA close ABOVE $200 + SPX >7,460 + VIX <17 simultaneously on any future session = full-size add at that close.",
+      "invalidation": "NVDA closes below $195 (mandatory half-size exit, no discretion). VIX above 17 on FOMC minutes (regime change, hold half-size at best).",
+      "conviction": "medium",
+      "horizon": "Hold through August 26 Q2 FY27 earnings if stop not triggered"
+    },
+    {
+      "asset": "BTC",
+      "direction": "hold re-entry — FOMC minutes binary",
+      "thesis": "Three-gate framework confirmed. Gate 2 ($62,000 UTC midnight close) intact at $62,880. Failed $64K push is a technical setback, not a framework invalidation. FOMC minutes July 8 is the dominant near-term variable. BTC options call-heavy (6,065 vs 3,465 puts) ahead of minutes, positioning for less-hawkish outcome — same dynamic that benefits QQQ. Coinbase Premium 50-day negative streak is the structural warning.",
+      "entry": "Hold re-entry at 20–25% allocation. Post-FOMC minutes: if neutral/dovish = add to 25–30%, raise stop to $62,000. If hawkish and BTC approaches $62,000 = reduce to 10–15% allocation and watch midnight UTC close closely. Stop: $58,100 UTC midnight close basis.",
+      "invalidation": "UTC midnight close below $62,000 (Gate 2 breach) = exit at $58,100 stop. IBIT July 7 flows confirmed negative = downgrade to LOW conviction.",
+      "conviction": "medium",
+      "horizon": "FOMC minutes July 8 binary; Target 1 $65K; Target 2 $70K (4-8 weeks)"
+    },
+    {
+      "asset": "SKHY (Nasdaq ADR — July 10 debut)",
+      "direction": "evaluate re-entry at debut",
+      "thesis": "$7B cornerstone commitment (Baillie Gifford, Coatue, SAP). ~1,000-institution roadshow with 'explosive demand.' Largest ADR in history ($28.21B). HSBC: 20% Day 1 premium potential. Record SK Hynix Q2 earnings confirming HBM4 thesis. ~9% discount between KRX implied ADR price (₩220,100) and offering reference (₩242,500) creates IPO arbitrage incentive. Rubin full production (NVDA) directly validates HBM4 revenue. MSCI World inclusion timeline begins at listing.",
+      "entry": "Pricing July 9 after US close. If priced in-range ($165.26/ADR equivalent): enter at opening on July 10. Watch opening price vs IPO price. >$175/ADR (+6%) = strong demand confirmed, full allocation. $165-$175 = fair, enter 50% with add on 1-2 day stability. <$165 = demand miss, wait.",
+      "invalidation": "FOMC minutes July 8 hawkish shock suppresses SKHY pricing below range (<$165.26/ADR = demand miss). Broader Nasdaq selloff >3% on July 8 = delay re-entry.",
+      "conviction": "medium",
+      "horizon": "Medium-term through MSCI World inclusion (2-3 quarters post-listing)"
+    }
+  ],
+  "bear_case": "The session produced three simultaneous warning signals that share a structural root: (1) NVDA Gate 3 failed for the fourth consecutive time as NQ rebalancing sold existing constituents to fund SPCX, (2) KOSPI triggered a circuit breaker (-8.22% intraday) on leveraged ETF forced selling, and (3) BTC failed the $64K push while the Coinbase Premium extended its record 50-day negative streak. The common thread: mechanical and systematic forces (NQ rebalancing, leveraged ETF feedback loops, spot-vs-ETF divergence) are dominating price action in AI semiconductors and crypto. These mechanisms work in reverse equally well: a hawkish FOMC minutes tomorrow (June dot plot: 9/18 officials for rate hike) could trigger VIX above 17 — which simultaneously invalidates the dual-gate regime, pressures NVDA toward the $195 stop threshold, and tests BTC's $62,000 Gate 2 floor. The 30Y yield crossing above 5.00% is the new regime risk signal on the table. If sustained above 5% through July 28 FOMC, the implied discount rate for NVDA's $91B earnings guide and BTC's store-of-value thesis both compress materially. The circuit-breaker KOSPI session and SPCX's 29% inclusion-day crash are the clearest signals that the July 7 session was structurally dislocated, not trend-defining — but the FOMC minutes tomorrow will determine whether it was a one-day anomaly or the start of a new down phase.",
+  "body_mdx": "data/briefings/markets/2026-07-07-night.mdx"
+}
