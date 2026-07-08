@@ -38,9 +38,15 @@
   ],
   "created_at": "2026-07-07",
   "expires_at": "2026-07-16",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["SPCX", "ETF", "post-inclusion", "fade", "Nasdaq-100", "QQQ", "event-driven", "short", "mean-reversion"],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-08",
+    "final_price": 156.45,
+    "return_pct": 0,
+    "outcome_label": "Never entered — conditional gate ($165 close) not met",
+    "note": "SPCX closed July 7 at $156.45, below the $165 conditional-entry threshold explicitly stated in the trade setup. The forced QQQ rebalancing ($4.3B) was pre-arb'd down by sophisticated index arbitrageurs ahead of the close, preventing the spike from materializing at the required level. The trade was never initiated; P&L impact is zero. A second factor: the Iran kinetic exchange on July 8 creates broad risk-off conditions that would further suppress SPCX as a high-multiple AI-infrastructure ETF, making the short-side thesis stale in any case."
+  },
   "levels": {
     "entry_low": 165.0,
     "entry_high": 178.0,
