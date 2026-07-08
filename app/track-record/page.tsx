@@ -654,7 +654,6 @@ export default async function TrackRecordPage() {
                     +20d
                   </th>
                   <th className="px-2 py-1 text-center font-normal">Right?</th>
-                  <th className="px-2 py-1 text-left font-normal">Rationale</th>
                 </tr>
               </thead>
               <tbody>
@@ -668,13 +667,16 @@ export default async function TrackRecordPage() {
                       <td className="px-2 py-1">
                         <Link
                           href={`/briefings/${v.routine}/${slug}`}
-                          className={`inline-flex items-center gap-1.5 ${color.text} hover:underline`}
+                          className={`flex items-start gap-1.5 ${color.text} hover:underline`}
                         >
                           <span>{v.verdict.emoji}</span>
-                          <span>
+                          <span className="line-clamp-2 leading-snug">
                             {v.verdict.label}
                           </span>
                         </Link>
+                        <p className="mt-1 line-clamp-3 text-[10px] leading-snug text-[var(--dim)]">
+                          {v.verdict.rationale_short}
+                        </p>
                       </td>
                       <td className="px-2 py-1 text-right">
                         <ReturnCell w={score.d1} />
@@ -691,9 +693,6 @@ export default async function TrackRecordPage() {
                           <RightCell value={score.right_d5} />
                           <RightCell value={score.right_d20} />
                         </div>
-                      </td>
-                      <td className="max-w-md px-2 py-1 text-[var(--foreground)]">
-                        {v.verdict.rationale_short}
                       </td>
                     </tr>
                   );
