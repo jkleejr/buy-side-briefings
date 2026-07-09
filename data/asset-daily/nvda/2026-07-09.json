@@ -1,0 +1,204 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09T22:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "GATE 3 ACTIVATED — BUT BEARS OWNED THE SESSION. NVDA FELL $3.76 (-1.84%) TO ~$200.36 ON A DAY NASDAQ SURGED +1.30%, UNDERPERFORMING BY 314 BASIS POINTS AS CAPITAL ROTATED HARD INTO MEMORY. MICRON EXPLODED +8.87% ON JENSEN HUANG'S ENDORSEMENT OF A $3B AI MEMORY BUILDOUT — FUNDS THAT SOLD NVDA BOUGHT MU. DESPITE THE UGLY PRICE ACTION, ALL THREE GATE 3 CONDITIONS CLOSED IN-RANGE SIMULTANEOUSLY FOR THE FIRST TIME: PRICE $200.36 >$200 ✓, SPX 7,543.64 >7,460 ✓, VIX 16.90 <17 ✓. THE GATE IS OPEN. ADD HALF TO FULL AT THURSDAY'S OPEN — BUT SIZE FOR THE MISS: $0.36 OF CLEARANCE IS NOT CONVICTION.",
+  "long_pnl": "Longs down 1.84% on the session; half-size holders caught a $3.76/share draw against the MU rotation.",
+  "short_pnl": "Shorts collected 1.84% on the day; covering near $198.97 intraday low was the trade of the session.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "low",
+    "horizon": "1–4 weeks",
+    "rationale": "Gate 3 ACTIVATED: NVDA $200.36 >$200 ✓ + SPX 7,543.64 >7,460 ✓ + VIX 16.90 <17 ✓. All three conditions cleared simultaneously for the first time. Protocol: add half-size to full-size position at July 10 open. New stop: daily close below $195. Conviction is LOW — gate clearance is $0.36 (razor-thin), price action was bearish on activation day, and the MU rotation is active. Watch the $200 level on Thursday open; if NVDA opens below $200 and stays there, the gate re-tests."
+  },
+
+  "so_what": {
+    "line": "Gate 3 is open — add to full size at Thursday's open, new stop $195 close, but size for the miss: this is a marginal trigger.",
+    "bull": "All three Gate 3 conditions cleared simultaneously; $119B buyback + 18x PE + AI capex supercycle intact.",
+    "bear": "Fell 1.84% on a +1.30% Nasdaq day; MU rotation siphoning capital; gate clearance is $0.36 — one weak open re-tests the trigger."
+  },
+
+  "snapshot": {
+    "price": 200.36,
+    "change_pct": -1.84,
+    "change_abs": -3.76,
+    "prev_close": 204.12,
+    "day_high": 204.46,
+    "day_low": 198.97,
+    "week52_high": 236.54,
+    "week52_low": 161.61,
+    "volume": "~$6.5B est. (above avg)",
+    "market_cap": "~$4.88T",
+    "extra": [
+      { "label": "GATE 3 STATUS", "value": "✓ ACTIVATED (first time) — add to full size", "tone": "up" },
+      { "label": "Gate 3: NVDA >$200", "value": "$200.36 ✓ (+$0.36 clearance)", "tone": "up" },
+      { "label": "Gate 3: SPX >7,460", "value": "7,543.64 ✓ (+83.64 clearance)", "tone": "up" },
+      { "label": "Gate 3: VIX <17", "value": "16.90 ✓ (-0.10 clearance)", "tone": "up" },
+      { "label": "MU rotation driver", "value": "MU +8.87% ($3B AI memory / Jensen endorsement)", "tone": "down" },
+      { "label": "vs. Nasdaq", "value": "NVDA -1.84% vs NDX +1.30% → -314 bps underperformance", "tone": "down" },
+      { "label": "Forward P/E", "value": "~18x (sector low for mega-cap AI)", "tone": "neutral" },
+      { "label": "Buyback auth.", "value": "$119B remaining", "tone": "up" },
+      { "label": "SPX close", "value": "7,543.64", "tone": "up" },
+      { "label": "Nasdaq close", "value": "26,206.89 (+1.30%)", "tone": "up" },
+      { "label": "Dow close", "value": "52,487.41", "tone": "up" },
+      { "label": "VIX", "value": "16.90 (Iran war premium fading)", "tone": "up" },
+      { "label": "UST 10Y", "value": "4.58%", "tone": "neutral" },
+      { "label": "Brent crude", "value": "~$77", "tone": "neutral" },
+      { "label": "Note: July 8 correction", "value": "Prior dossier used intraday price $196.93; MacroTrends confirms July 8 actual close $204.12", "tone": "neutral" }
+    ]
+  },
+
+  "positioning": {
+    "iv": 42,
+    "iv_note": "IV mid-range; not elevated despite -1.84% session — market treating today's dip as rotation, not distribution.",
+    "put_call": 0.95,
+    "short_interest": "~0.9% of float (low; AI darling status keeps short interest contained)",
+    "max_pain": "~$200",
+    "notable_flow": "Heavy call buying in MU coincided with NVDA put buying intraday — classic rotation hedge. Net NVDA options flow leaned defensive. $200 strike had elevated put open interest — the market knew this was the line."
+  },
+
+  "what_traders_are_doing": "Memory rotation dominated. Funds that sold NVDA bought MU after Jensen Huang's $3B AI memory investment endorsement and Micron's upside earnings surprise (+8.87%). NVDA options traders positioned defensively around $200 — puts active at the gate level. The $198.97 intraday low held, printing what technicians will call a session hammer. Smart money is watching Thursday open: a gap above $202 validates Gate 3; a gap below $200 means the gate re-tests and the add-to-full protocol pauses.",
+
+  "news": [
+    {
+      "label": "Gate 3 ACTIVATED: NVDA $200.36, SPX 7,543.64, VIX 16.90 — all three conditions met simultaneously for first time",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Micron surges +8.87% on Jensen Huang's $3B AI memory investment endorsement — capital rotates from NVDA to MU",
+      "source": "Bloomberg / Reuters",
+      "sentiment": "negative"
+    },
+    {
+      "label": "NVDA underperforms Nasdaq by 314 bps (-1.84% vs NDX +1.30%) on rotation-driven session",
+      "sentiment": "negative"
+    },
+    {
+      "label": "NVIDIA authorized $119B buyback program — largest in US corporate history",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Iran war risk premium fades; VIX drops below 17 for first time since geopolitical escalation — key Gate 3 unlock",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVDA trades at ~18x forward P/E — lowest valuation among mega-cap AI names",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Big Tech AI capex guidance reaffirmed by hyperscalers: MSFT, AMZN, GOOGL all hold H2 2026 spend plans",
+      "sentiment": "positive"
+    },
+    {
+      "label": "UST 10Y stable at 4.58% — no rate-driven multiple compression threat near-term",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "Gate 3 activation triggers the add-to-full-size protocol at Thursday's open. The test: can NVDA hold $200 when the MU excitement fades? The $198.97 intraday low held — if that base firms, the next resistance cluster is $204–$207. New stop on full position: daily close below $195. Conviction is LOW given the razor-thin gate clearance ($0.36) and the bearish relative performance on activation day — size accordingly.",
+    "long_term": "The long-term thesis is intact and strengthening. NVDA's $119B buyback authorization, ~18x forward PE (cheap for AI capex beneficiary), and Blackwell GPU demand runway through 2027 make this a cornerstone AI infrastructure holding. The VIX dropping below 17 signals the Iran war risk premium is fading — a structural tailwind for multiple expansion. The medium-term target remains $210–$215 (post-Gate 3 projection); the ATH at $236.54 is the 12-month ambition if AI capex holds."
+  },
+
+  "bull_case": [
+    "Gate 3 ACTIVATED for the first time — the add-to-full protocol is live; three independent conditions cleared simultaneously (price, index, volatility).",
+    "$119B buyback authorization — largest ever authorized in US corporate history — creates a structural bid under the stock through 2027.",
+    "Valuation is historically cheap for NVDA: 18x forward PE vs. 30x+ for other AI infrastructure names; multiple expansion is the free variable.",
+    "VIX sub-17 signals the Iran war premium is fading; lower geopolitical volatility = higher risk asset multiples.",
+    "Hyperscaler AI capex is reaccelerating into H2 2026 (MSFT, AMZN, GOOGL all maintained guidance); Blackwell GPU demand is the direct beneficiary.",
+    "The MU rotation (+8.87%) validates the AI memory buildout thesis — the same demand surge that lifts Micron will eventually flow back through to NVDA GPU demand."
+  ],
+
+  "bear_case": [
+    "Gate 3 clearance is $0.36 — one soft Thursday open below $200 re-tests the trigger and delays full-size entry.",
+    "NVDA underperformed Nasdaq by 314 bps on a broad rally day — that's distribution, not rotation. Funds may be trimming.",
+    "MU rotation is active and could continue through AI memory excitement; capital that left NVDA may not return immediately.",
+    "Bears owned the tape on Gate 3 activation day — bearish signal for follow-through; the $204.46 high was rejected hard.",
+    "UST 10Y at 4.58% remains elevated; any rate-driven multiple contraction hits growth names hardest.",
+    "July 8 data error in prior dossier ($196.93 used vs. actual $204.12 close) reflects the difficulty of real-time data in this name — reinforces LOW conviction."
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Gate 3 anchor / session hammer low",
+      "level": "$198.97–$200.00",
+      "kind": "support"
+    },
+    {
+      "label": "Full-position stop (daily close basis)",
+      "level": "$195.00",
+      "kind": "support"
+    },
+    {
+      "label": "200-DMA / structural floor",
+      "level": "~$190.00",
+      "kind": "support"
+    },
+    {
+      "label": "52-week low / ultimate downside anchor",
+      "level": "$161.61",
+      "kind": "support"
+    },
+    {
+      "label": "★ Intraday high / gap zone (breakout needed)",
+      "level": "$204.00–$205.00",
+      "kind": "resistance"
+    },
+    {
+      "label": "Post-Gate 3 medium-term target",
+      "level": "$207.00–$213.00",
+      "kind": "resistance"
+    },
+    {
+      "label": "Pre-Iran selloff pivot (July 7 close)",
+      "level": "~$218.00",
+      "kind": "pivot"
+    },
+    {
+      "label": "52-week high / ATH",
+      "level": "$236.54",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-07-10",
+      "label": "Thursday open — Gate 3 re-test: does NVDA gap above $200 or re-test $198.97 low?",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-10",
+      "label": "SKHYV (SK Hynix ADS when-issued) begins trading — AI memory sentiment read-through for NVDA demand",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-07-13",
+      "label": "SKHY regular-way trading begins (SK Hynix US ADS) — full AI memory sentiment reset for semis",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-07-22",
+      "label": "NVDA Q2 FY2027 earnings expected (est.) — Blackwell ramp guidance is the key variable",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-29",
+      "label": "FOMC meeting — rate decision and forward guidance; 4.58% 10Y is already discounted",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-01",
+      "label": "US-Iran diplomatic deadline / ceasefire review — VIX re-spike risk if talks collapse",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## NVDA July 9, 2026 — Gate 3 Activation Day\n\n### Gate 3: The Trigger\nFor the first time since the Gate 3 framework was established, all three conditions closed in-range simultaneously:\n- **NVDA close $200.36 > $200** ✓ (clearance: $0.36)\n- **SPX close 7,543.64 > 7,460** ✓ (clearance: 83.64 points)\n- **VIX close 16.90 < 17** ✓ (clearance: 0.10 vol points)\n\nThe protocol: add from half-size to full-size at **Thursday July 10 open**. New stop: **daily close below $195**.\n\nThe caveat: this is the tightest possible gate activation. A $0.36 price clearance, a 0.10 VIX clearance — one soft open on Thursday and the trigger re-tests. Size for the miss.\n\n### Price Action: Bears Owned the Activation Day\nNVDA fell $3.76 (-1.84%) on a day when the Nasdaq gained +1.30% — that's **314 bps of underperformance**. The session printed:\n- Open: $204.35 (in-line with prior close)\n- High: $204.46 (rejected immediately — weak)\n- Low: $198.97 (breached $200 intraday; recovered by close)\n- Close: ~$200.36 (barely above the gate level)\n\nThe intraday chart shows a session hammer — high-volume selling from the open, capitulation to $198.97, then recovery back above $200 by 3:30pm. The $200 level acted as a magnet, then as support. Technicians will note the hammer as a reversal signal; the bear counter is that the recovery volume needs confirmation Thursday.\n\n### MU Rotation: The Driver\nMicron (+8.87%) dominated the semis tape after Jensen Huang endorsed a $3B AI memory investment, and Micron's earnings showed AI memory demand accelerating. Funds rotated:\n- SOLD: NVDA (the GPU play)\n- BOUGHT: MU (the memory play)\n\nThis is a temporary, thematic rotation — not structural. The same AI capex surge that lifts memory demand is the demand tailwind for NVDA GPUs. The rotation likely reverses within 1–3 sessions as memory excitement fades.\n\n### Note: July 8 Data Correction\nThe prior dossier (July 8) recorded NVDA close as $196.93. MacroTrends confirms the actual July 8 close was **$204.12** — a $7.19 discrepancy. The likely cause: the routine captured an intraday price during the Iran-driven selloff before the afternoon recovery. Today's dossier uses $204.12 as the July 8 baseline, making today's change -$3.76 (-1.84%).\n\nNote: despite $204.12 clearing the Gate 3 $200 price condition on July 8, VIX was elevated above 17 from the Iran war — Gate 3 failed July 8 on the VIX condition.\n\n### Technical Structure\n- **Support**: $198.97–$200.00 (session hammer zone, Gate 3 anchor) is the first line. $195 is the new stop level. $190 is the 200-DMA structural floor.\n- **Resistance**: $204.00–$205.00 (intraday high, gap to fill) is the immediate ceiling. Clearing $207 puts the $210–$215 target in play.\n- **Momentum**: RSI is in recovery territory from the Iran war selloff; MACD is bullish but weakening on today's underperformance. Net: momentum constructive but not confirming.\n\n### Valuation Context\n~18x forward P/E is historically cheap for NVDA. During the 2024–2025 AI supercycle, NVDA traded at 30–40x forward. At 18x, the market is pricing in either slowing growth or sustained macro risk — both of which appear to be fading. The $119B buyback creates a structural bid. If earnings (expected ~July 22) confirm Blackwell ramp, the multiple re-rates to 25x+ and the stock prints $240+.\n"
+}
