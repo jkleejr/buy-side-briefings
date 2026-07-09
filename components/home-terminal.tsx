@@ -11,7 +11,6 @@ import type {
   WireRow,
   CalRow,
   ArchiveRow,
-  TickerCard,
 } from "@/lib/home-terminal";
 
 // ---------------------------------------------------------------------------
@@ -19,8 +18,8 @@ import type {
 //   left rail  : brand + date, morning/evening switch, brief archive, live
 //                market pulse, session status
 //   main column: the selected brief (metric strip, outlook, headline, clickable
-//                key points → source articles, key signal, tickers to watch) +
-//                today's context (sector performance, wire headlines, calendar)
+//                key points → source articles) + today's context (sector
+//                performance, wire headlines, calendar)
 // All data is server-fetched and passed in; the only client state is which
 // brief (morning / evening) is in view.
 // ---------------------------------------------------------------------------
@@ -286,46 +285,6 @@ function KeyPoints({ brief }: { brief: BriefView }) {
   );
 }
 
-function TickerGrid({ tickers }: { tickers: TickerCard[] }) {
-  if (!tickers.length) return null;
-  return (
-    <div>
-      <SectionLabel>Tickers to Watch</SectionLabel>
-      <div className="grid grid-cols-2 gap-2">
-        {tickers.map((t) => {
-          const up = (t.pct ?? 0) >= 0;
-          return (
-            <div
-              key={t.symbol}
-              className={[
-                "border p-3",
-                up
-                  ? "border-[var(--up)]/25 bg-[var(--up)]/[0.04]"
-                  : "border-[var(--down)]/25 bg-[var(--down)]/[0.04]",
-              ].join(" ")}
-            >
-              <div className="text-[13px] font-bold text-[var(--foreground)]">{t.label}</div>
-              <div className="mt-1 tabular-nums text-[13px] text-[#a1a1aa]">{t.price}</div>
-              <div className="mt-2 text-[12px] tabular-nums">
-                <Pct pct={t.pct} />
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-function KeySignal({ text }: { text: string }) {
-  return (
-    <div className="border-l-2 border-[var(--amber)] bg-[rgba(255,165,0,0.05)] px-4 py-3">
-      <div className="text-[10px] uppercase tracking-widest text-[var(--amber)]">Key Signal</div>
-      <div className="mt-1 text-[15px] font-semibold leading-snug text-white">{text}</div>
-    </div>
-  );
-}
-
 function ReadFullBriefing({ href }: { href: string }) {
   return (
     <Link
@@ -373,19 +332,11 @@ function BriefReader({ brief, other }: { brief: BriefView; other: BriefView | nu
 
       <MetricStrip metrics={brief.metrics} />
 
-      {/* Headline + lede on the left; the right rail fills the whitespace with
-          the brief's punchline (key signal) and the tickers to watch. */}
-      <div className="grid gap-6 lg:grid-cols-12">
-        <div className="space-y-5 lg:col-span-7">
-          <h1 className="font-display text-[22px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[28px]">
-            {brief.headline}
-          </h1>
-          <p className="text-[15px] leading-relaxed text-[#a1a1aa]">{brief.lede}</p>
-        </div>
-        <div className="space-y-4 lg:col-span-5">
-          <KeySignal text={brief.keySignal} />
-          <TickerGrid tickers={brief.tickers} />
-        </div>
+      <div className="max-w-3xl space-y-5">
+        <h1 className="font-display text-[22px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[28px]">
+          {brief.headline}
+        </h1>
+        <p className="text-[15px] leading-relaxed text-[#a1a1aa]">{brief.lede}</p>
       </div>
 
       <ReadFullBriefing href={brief.href} />
