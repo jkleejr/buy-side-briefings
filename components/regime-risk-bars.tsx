@@ -74,7 +74,7 @@ export default async function RegimeRiskBars({
                 </span>
                 <span
                   className={cn(
-                    "shrink-0 border bg-black px-1 text-[9px] uppercase tracking-wider",
+                    "shrink-0 border bg-[var(--background)] px-1 text-[9px] uppercase tracking-wider",
                     STATUS_CLS[status],
                   )}
                 >

@@ -99,7 +99,7 @@ function ChartTooltip({
   if (!active || !payload || payload.length === 0 || !label) return null;
   const { day, full, time } = formatChartDate(label);
   return (
-    <div className="border border-[var(--amber)] bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]">
+    <div className="border border-[var(--amber)] bg-[var(--background)] px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(30,29,26,0.15)]">
       <div className="text-[var(--amber)]">{day}</div>
       <div className="text-[var(--amber-dim)]">{full}</div>
       {intraday && time && <div className="text-[var(--cyan-term)]">{time}</div>}

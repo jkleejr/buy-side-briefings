@@ -62,7 +62,7 @@ export default function VerdictCard({ verdict }: { verdict: MarketsVerdict }) {
           {(verdict.verdict.supporting_data ?? []).slice(0, 6).map((d, i) => (
             <li
               key={i}
-              className="border border-[var(--border)] bg-black px-1.5 py-1 font-mono text-[10px] text-[var(--foreground)]"
+              className="border border-[var(--border)] bg-[var(--background)] px-1.5 py-1 font-mono text-[10px] text-[var(--foreground)]"
             >
               <span className="mr-1 text-[var(--amber-dim)]">›</span>
               {d.url ? (

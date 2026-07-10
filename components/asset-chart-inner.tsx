@@ -49,7 +49,7 @@ function ChartTooltip({
   const { day, full, time } = formatChartDate(p.date);
   return (
     <div
-      className="border bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]"
+      className="border bg-[var(--background)] px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(30,29,26,0.15)]"
       style={{ borderColor: color }}
     >
       <div className="text-[var(--amber)]">{day}</div>

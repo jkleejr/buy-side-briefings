@@ -15,7 +15,7 @@ export default function HeaderNav({ items }: { items: NavItem[] }) {
 
   return (
     <div className="relative hidden min-w-0 flex-1 md:block">
-      <nav className="flex items-center gap-3 overflow-x-auto pr-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <nav className="flex items-baseline gap-5 overflow-x-auto pr-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {items.map((item) => {
           const active =
             item.href === "/"
@@ -26,20 +26,19 @@ export default function HeaderNav({ items }: { items: NavItem[] }) {
               key={item.href}
               href={item.href}
               aria-current={active ? "page" : undefined}
-              className={`shrink-0 whitespace-nowrap font-mono uppercase tracking-wider ${
+              className={`shrink-0 whitespace-nowrap pb-0.5 text-[13px] tracking-[0.04em] ${
                 active
-                  ? "text-[var(--amber)]"
-                  : "text-[var(--dim)] hover:text-[var(--amber)]"
+                  ? "border-b-2 border-[var(--amber)] font-bold text-[var(--foreground)]"
+                  : "border-b-2 border-transparent text-[var(--dim)] hover:text-[var(--foreground)]"
               }`}
             >
-              <span className="text-[var(--amber-dim)]">{item.code}</span>{" "}
-              <span>{item.label}</span>
+              {item.label}
             </Link>
           );
         })}
       </nav>
       {/* Right-edge fade signals there are more items past the scroll edge. */}
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-6 bg-gradient-to-l from-black to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-6 bg-gradient-to-l from-[var(--background)] to-transparent" />
     </div>
   );
 }

@@ -181,7 +181,7 @@ export default function TickerSearch() {
       <div className="space-y-2 p-2 font-mono">
         {/* search box */}
         <div className="relative">
-          <div className="flex items-center gap-2 border border-[var(--border)] bg-black px-2 py-1.5 focus-within:border-[var(--amber)]">
+          <div className="flex items-center gap-2 border border-[var(--border)] bg-[var(--background)] px-2 py-1.5 focus-within:border-[var(--amber)]">
             <span className="text-[11px] text-[var(--amber)]">⌕</span>
             <input
               value={query}
@@ -194,7 +194,7 @@ export default function TickerSearch() {
           </div>
 
           {open && results.length > 0 && (
-            <ul className="absolute z-20 mt-0.5 max-h-72 w-full overflow-y-auto border border-[var(--amber-dim)] bg-black shadow-[0_8px_30px_rgba(0,0,0,0.8)]">
+            <ul className="absolute z-20 mt-0.5 max-h-72 w-full overflow-y-auto border border-[var(--amber-dim)] bg-[var(--background)] shadow-[0_8px_30px_rgba(30,29,26,0.15)]">
               {results.map((r) => (
                 <li key={`${r.symbol}-${r.exchange}`}>
                   <button
@@ -231,7 +231,7 @@ export default function TickerSearch() {
               return (
                 <div
                   key={it.symbol}
-                  className="border border-[var(--border)] bg-black px-2.5 py-2"
+                  className="border border-[var(--border)] bg-[var(--background)] px-2.5 py-2"
                 >
                   <div className="flex items-baseline justify-between gap-2">
                     <Link

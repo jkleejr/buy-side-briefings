@@ -134,7 +134,7 @@ export default function CommandPalette() {
       onClick={() => setOpen(false)}
     >
       <div
-        className="mx-auto max-w-lg border border-[var(--amber-dim)] bg-black shadow-[0_8px_40px_rgba(0,0,0,0.9)]"
+        className="mx-auto max-w-lg border border-[var(--amber-dim)] bg-[var(--background)] shadow-[0_8px_40px_rgba(30,29,26,0.18)]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center gap-2 border-b border-[var(--border)] px-3 py-2">

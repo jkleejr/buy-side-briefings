@@ -17,7 +17,7 @@ const TABS = [
 export default function MobileTabbar() {
   const pathname = usePathname();
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-[var(--border-strong)] bg-black pb-[env(safe-area-inset-bottom)] md:hidden">
+    <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-[var(--border-strong)] bg-[var(--background)] pb-[env(safe-area-inset-bottom)] md:hidden">
       <div className="grid grid-cols-4">
         {TABS.map((t) => {
           const active =

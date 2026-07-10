@@ -2,17 +2,16 @@ import Link from "next/link";
 
 export default function SiteFooter() {
   return (
-    <footer className="border-t border-[var(--border)] bg-black">
-      <div className="mx-auto flex max-w-[1600px] flex-wrap items-center gap-x-3 gap-y-1 px-2 py-1.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
-        <span className="text-[var(--amber-dim)]">DSCLM</span>
-        <span className="basis-full normal-case tracking-normal text-[var(--dim)] sm:basis-auto sm:flex-1">
-          Educational analysis only. Not investment advice. Past performance does not guarantee
-          future results.
+    <footer className="border-t border-[var(--foreground)] bg-[var(--background)]">
+      <div className="mx-auto flex max-w-[1600px] flex-wrap items-baseline gap-x-4 gap-y-1 px-4 py-3 text-[12.5px] italic text-[var(--dim)] sm:px-6">
+        <span className="basis-full sm:basis-auto sm:flex-1">
+          Educational analysis only. Not investment advice. Past performance does not
+          guarantee future results.
         </span>
-        <span className="ml-auto flex gap-3">
-          <Link href="/about" className="hover:text-[var(--amber)]">ABOUT</Link>
-          <Link href="/privacy" className="hover:text-[var(--amber)]">PRIVACY</Link>
-          <Link href="/terms" className="hover:text-[var(--amber)]">TERMS</Link>
+        <span className="ml-auto flex gap-4 not-italic text-[11px] uppercase tracking-[0.18em]">
+          <Link href="/about" className="hover:text-[var(--amber)]">About</Link>
+          <Link href="/privacy" className="hover:text-[var(--amber)]">Privacy</Link>
+          <Link href="/terms" className="hover:text-[var(--amber)]">Terms</Link>
         </span>
       </div>
     </footer>

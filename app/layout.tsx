@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import CommandPalette from "@/components/command-palette";
-import KeysRibbon from "@/components/keys-ribbon";
 import MobileTabbar from "@/components/mobile-tabbar";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
@@ -10,41 +8,30 @@ import StaleBanner from "@/components/stale-banner";
 import TickerStrip from "@/components/ticker-strip";
 import { getSiteUrl } from "@/lib/site-url";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-// Display sans — used ONLY for large brief headlines on the homepage reader.
-// The terminal stays all-mono everywhere else; this is the single editorial
-// accent that matches the redesign.
-const inter = Inter({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["700", "800"],
-});
+// Journal design: one system serif family site-wide (Charter / Iowan Old
+// Style / Georgia, declared in globals.css) — no webfonts to load.
 
 const SITE_URL = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "BSB Terminal — Buy-Side Briefings",
-    template: "%s — Buy-Side Briefings",
+    default: "Buy-Side — Market Briefings",
+    template: "%s — Buy-Side",
   },
   description:
     "Opinionated, cited, auditable market briefings. Tells you when NOT to buy as much as when to buy. Not investment advice.",
   openGraph: {
     type: "website",
     siteName: "Buy-Side Briefings",
-    title: "BSB Terminal — Buy-Side Briefings",
+    title: "Buy-Side — Market Briefings",
     description:
       "Opinionated, cited, auditable market briefings. Buy-side voice — tells you when NOT to buy as much as when to buy.",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BSB Terminal — Buy-Side Briefings",
+    title: "Buy-Side — Market Briefings",
     description:
       "Opinionated, cited, auditable market briefings. Buy-side voice — tells you when NOT to buy.",
   },
@@ -60,24 +47,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistMono.variable} ${inter.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
         <SiteHeader />
         <StaleBanner />
         <TickerStrip />
-        <main className="boot-in mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>
+        <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 pb-14 sm:px-2 sm:py-2 md:pb-2">{children}</main>
         <SiteFooter />
-        {/* Footer needs clearance on md+ where the fixed keys ribbon overlays the bottom edge. */}
-        <div className="hidden h-6 md:block" />
         <MobileTabbar />
-        <KeysRibbon />
         <CommandPalette />
-        {/* CRT glass — scanlines + vignette + grain over everything below the
-            command palette. Tune or disable via --crt-* in globals.css. */}
-        <div className="crt-screen" aria-hidden="true" />
       </body>
     </html>
   );

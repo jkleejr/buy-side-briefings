@@ -103,7 +103,7 @@ export default function Sparkline({ points, positive, intraday, color }: Props) 
           Matches the SPY chart's hover style for consistency. */}
       {hoverPoint && formatted && (
         <div
-          className="pointer-events-none absolute top-full z-50 mt-1 border bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]"
+          className="pointer-events-none absolute top-full z-50 mt-1 border bg-[var(--background)] px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(30,29,26,0.15)]"
           style={{
             borderColor: lineColor,
             [anchorRight ? "right" : "left"]: anchorRight

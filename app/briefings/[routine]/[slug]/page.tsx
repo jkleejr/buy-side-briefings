@@ -64,7 +64,7 @@ function ScoreCell({
         ? "text-[var(--up)]"
         : "text-[var(--down)]";
   return (
-    <div className="border border-[var(--border)] bg-black px-2 py-1.5">
+    <div className="border border-[var(--border)] bg-[var(--background)] px-2 py-1.5">
       <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
         {label}
       </div>

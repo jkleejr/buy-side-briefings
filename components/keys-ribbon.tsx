@@ -24,7 +24,7 @@ export default function KeysRibbon() {
       type="button"
       onClick={() => document.dispatchEvent(new CustomEvent("bsb:palette"))}
       title="Command palette (⌘K) — or press g then a letter to jump"
-      className="fixed inset-x-0 bottom-0 z-40 hidden cursor-pointer items-center gap-x-4 overflow-x-hidden border-t border-[var(--border)] bg-black px-2 py-1 text-left font-mono text-[9px] uppercase tracking-widest md:flex"
+      className="fixed inset-x-0 bottom-0 z-40 hidden cursor-pointer items-center gap-x-4 overflow-x-hidden border-t border-[var(--border)] bg-[var(--background)] px-2 py-1 text-left font-mono text-[9px] uppercase tracking-widest md:flex"
     >
       {HINTS.map((h) => (
         <span key={h.keys} className="shrink-0 whitespace-nowrap">

@@ -68,7 +68,7 @@ export default async function CalendarPanel() {
             return (
               <li key={`${e.date}-${e.label}`} className="px-2 py-1.5 font-mono">
                 <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-[11px]">
-                  <span className="shrink-0 border border-[var(--border)] bg-black px-1 text-[9px] uppercase tracking-wider text-[var(--cyan-term)]">
+                  <span className="shrink-0 border border-[var(--border)] bg-[var(--background)] px-1 text-[9px] uppercase tracking-wider text-[var(--cyan-term)]">
                     {e.kind}
                   </span>
                   <span className="min-w-0 flex-1 basis-48 text-[var(--foreground)]">

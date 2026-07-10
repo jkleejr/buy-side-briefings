@@ -163,7 +163,7 @@ function SizeEditor({
           inputMode="decimal"
           value={shares}
           onChange={(e) => setShares(e.target.value)}
-          className="w-20 border border-[var(--border)] bg-black px-1.5 py-0.5 text-[var(--foreground)] focus:border-[var(--amber)] focus:outline-none"
+          className="w-20 border border-[var(--border)] bg-[var(--background)] px-1.5 py-0.5 text-[var(--foreground)] focus:border-[var(--amber)] focus:outline-none"
           placeholder="—"
         />
       </label>
@@ -173,7 +173,7 @@ function SizeEditor({
           inputMode="decimal"
           value={cost}
           onChange={(e) => setCost(e.target.value)}
-          className="w-24 border border-[var(--border)] bg-black px-1.5 py-0.5 text-[var(--foreground)] focus:border-[var(--amber)] focus:outline-none"
+          className="w-24 border border-[var(--border)] bg-[var(--background)] px-1.5 py-0.5 text-[var(--foreground)] focus:border-[var(--amber)] focus:outline-none"
           placeholder="—"
         />
       </label>
@@ -312,7 +312,7 @@ function RelevanceCard({
     : `at ${rel.date} close`;
 
   return (
-    <div className="border border-[var(--border)] bg-black p-2.5">
+    <div className="border border-[var(--border)] bg-[var(--background)] p-2.5">
       {/* header: ticker + standing call */}
       <div className="flex items-baseline justify-between gap-2">
         {rel.href ? (
@@ -440,7 +440,7 @@ function BookDigest({ d }: { d: BookDigestData }) {
   ).filter(([, n]) => n > 0);
 
   return (
-    <div className="border border-[var(--amber-dim)] bg-black">
+    <div className="border border-[var(--amber-dim)] bg-[var(--background)]">
       <div className="flex items-baseline justify-between border-b border-[var(--amber-dim)] px-2 py-1">
         <span className="text-[9px] uppercase tracking-widest text-[var(--amber)]">
           ▣ Your book today
@@ -867,7 +867,7 @@ export default function ForYouFeed({
       <div className="space-y-2 p-2 font-mono">
         {/* add box */}
         <div className="relative">
-          <div className="flex items-center gap-2 border border-[var(--border)] bg-black px-2 py-1.5 focus-within:border-[var(--amber)]">
+          <div className="flex items-center gap-2 border border-[var(--border)] bg-[var(--background)] px-2 py-1.5 focus-within:border-[var(--amber)]">
             <span className="text-[11px] text-[var(--amber)]">＋</span>
             <input
               value={query}
@@ -880,7 +880,7 @@ export default function ForYouFeed({
           </div>
 
           {open && results.length > 0 && (
-            <ul className="absolute z-20 mt-0.5 max-h-72 w-full overflow-y-auto border border-[var(--amber-dim)] bg-black shadow-[0_8px_30px_rgba(0,0,0,0.8)]">
+            <ul className="absolute z-20 mt-0.5 max-h-72 w-full overflow-y-auto border border-[var(--amber-dim)] bg-[var(--background)] shadow-[0_8px_30px_rgba(30,29,26,0.15)]">
               {results.map((r) => (
                 <li key={`${r.symbol}-${r.exchange}`}>
                   <button
@@ -971,7 +971,7 @@ export default function ForYouFeed({
 
             {/* uncovered holdings — live price, macro chips, AI read + desk ask */}
             {stillUncovered.length > 0 && (
-              <div className="border border-[var(--border)] bg-black">
+              <div className="border border-[var(--border)] bg-[var(--background)]">
                 <div className="border-b border-[var(--border)] px-2 py-1 text-[9px] uppercase tracking-widest text-[var(--dim)]">
                   Also in your book · no desk yet
                 </div>

@@ -1,79 +1,41 @@
 import Link from "next/link";
-import { getLatestMarketsVerdict } from "@/lib/data";
-import { todayET, verdictColor } from "@/lib/utils";
+import { todayET } from "@/lib/utils";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
 import PaletteButton from "./palette-button";
 
-// Ordered by the daily job-to-be-done: today's calls first (dossiers, ops),
-// then context (markets hub), then the audit trail (week, track record).
+// Ordered by the daily job-to-be-done: today's read first, then the archive,
+// then standing reports, then the audit trail.
 const NAV = [
-  // Information first (what helps you decide), then our trades. The long tail
-  // (Crypto, Week, What I Got Wrong, Watchlist, About) lives in the ⌘K palette.
-  { href: "/", code: "DASH", label: "Dashboard" },
+  { href: "/", code: "TODAY", label: "Today" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
   { href: "/earnings", code: "EARN", label: "Earnings" },
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness" },
   { href: "/ai-bubble", code: "BUBBLE", label: "AI Bubble" },
   { href: "/market-history", code: "HIST", label: "Market History" },
-  { href: "/track-record", code: "TRACK", label: "Track Record" },
+  { href: "/track-record", code: "TRACK", label: "Record" },
 ];
 
 export default function SiteHeader() {
   const dateStr = todayET();
-  const verdict = getLatestMarketsVerdict();
-  const vc = verdict ? verdictColor(verdict.verdict.code) : null;
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-black">
-      <div className="mx-auto flex max-w-[1600px] items-center gap-3 px-2 py-1.5 text-[11px]">
-        <Link href="/" className="flex shrink-0 items-baseline gap-2">
-          <span className="font-mono text-[12px] font-bold uppercase tracking-widest text-[var(--amber)]">
-            BSB
-          </span>
-          <span className="hidden font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] sm:inline">
-            Buy-Side Briefings · Terminal
+    <header className="sticky top-0 z-50 border-b border-[var(--foreground)] bg-[var(--background)]">
+      <div className="mx-auto flex max-w-[1600px] items-baseline gap-5 px-4 py-2.5 text-[13px] sm:px-6">
+        <Link href="/" className="shrink-0">
+          <span className="text-[16px] font-bold tracking-[0.14em] [font-variant:small-caps]">
+            Buy-Side
           </span>
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
         <HeaderNav items={NAV} />
 
-        <div className="ml-auto flex shrink-0 items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] sm:gap-3">
+        <div className="ml-auto flex shrink-0 items-baseline gap-3 text-[12px] italic text-[var(--dim)]">
           <PaletteButton />
           <span className="hidden lg:inline">{dateStr}</span>
-          <span className="hidden text-[var(--amber-dim)] lg:inline">·</span>
-          <span className="flex items-center gap-1">
-            <span className="term-blink glow-dot-up inline-block h-1.5 w-1.5 rounded-full bg-[var(--up)]" />
-            <span className="text-[var(--up)]">SESSION</span>
-          </span>
           <MobileNav items={NAV} />
         </div>
       </div>
-
-      {/* Mobile-only verdict ribbon — rides along inside the sticky header so the
-          standing market call stays pinned while scrolling a long page. */}
-      {verdict && vc && (
-        <Link
-          href={`/briefings/${verdict.routine}/${verdict.date}-${verdict.window}`}
-          className="flex items-center gap-2 border-t border-[var(--border)] bg-[var(--panel)] px-2 py-1 font-mono md:hidden"
-        >
-          <span className="shrink-0 text-[9px] uppercase tracking-widest text-[var(--amber-dim)]">
-            Call
-          </span>
-          <span className="shrink-0 text-[11px] leading-none">{verdict.verdict.emoji}</span>
-          <span
-            className={`shrink-0 text-[12px] font-bold uppercase leading-none tracking-wide ${vc.text}`}
-          >
-            {verdict.verdict.code.replace(/_/g, " ")}
-          </span>
-          <span className="shrink-0 text-[9px] uppercase tracking-widest text-[var(--dim)]">
-            {verdict.verdict.conviction}
-          </span>
-          <span className="truncate text-[10px] text-[var(--dim)]">
-            {verdict.verdict.rationale_short}
-          </span>
-        </Link>
-      )}
     </header>
   );
 }

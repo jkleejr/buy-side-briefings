@@ -40,7 +40,7 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
           />
           {/* Slide-down menu */}
           <nav
-            className="fixed inset-x-0 top-[40px] z-50 flex flex-col border-y border-[var(--amber)] bg-black shadow-2xl md:hidden"
+            className="fixed inset-x-0 top-[40px] z-50 flex flex-col border-y border-[var(--amber)] bg-[var(--background)] shadow-2xl md:hidden"
             aria-label="Mobile navigation"
           >
             {items.map((item) => (

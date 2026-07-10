@@ -29,14 +29,14 @@ function ChartTooltip({
   const { day, full } = formatChartDate(p.date);
   const fmt = (v: number) => `${v >= 100 ? "+" : ""}${(v - 100).toFixed(1)}%`;
   return (
-    <div className="border border-[var(--amber)] bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(0,0,0,0.8)]">
+    <div className="border border-[var(--amber)] bg-[var(--background)] px-2 py-1 font-mono text-[11px] text-[var(--foreground)] shadow-[0_4px_14px_rgba(30,29,26,0.15)]">
       <div className="text-[var(--amber)]">{day}</div>
       <div className="text-[var(--amber-dim)]">{full}</div>
       <div className="mt-0.5 text-[var(--dim)]">
-        Strategy <span className="text-[#ffa500]">{fmt(p.strategy)}</span>
+        Strategy <span className="text-[var(--amber)]">{fmt(p.strategy)}</span>
       </div>
       <div className="text-[var(--dim)]">
-        SPX <span className="text-[#22d3ee]">{fmt(p.spx)}</span>
+        SPX <span className="text-[var(--cyan)]">{fmt(p.spx)}</span>
       </div>
     </div>
   );

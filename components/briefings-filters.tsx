@@ -137,7 +137,7 @@ export default function BriefingsFilters({ items }: Props) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="title, date, rationale…"
-              className="flex-1 min-w-[120px] border border-[var(--border)] bg-black px-2 py-1 font-mono text-[11px] text-[var(--foreground)] placeholder:text-[var(--dim)] focus:border-[var(--amber)] focus:outline-none"
+              className="flex-1 min-w-[120px] border border-[var(--border)] bg-[var(--background)] px-2 py-1 font-mono text-[11px] text-[var(--foreground)] placeholder:text-[var(--dim)] focus:border-[var(--amber)] focus:outline-none"
             />
             {hasActiveFilter && (
               <button

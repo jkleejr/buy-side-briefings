@@ -1,18 +1,32 @@
 @import "tailwindcss";
 
+/* ============================================================================
+   JOURNAL — one serif family, ink on white, hairline rules.
+   The redesign's rule: every character on the site comes from the same serif
+   stack. Hierarchy is size, weight, and italic — never a font switch. Labels
+   are uppercase + letterspaced; datelines and sources are italic; data is bold
+   lining tabular figures. Green/red are reserved strictly for direction;
+   --amber (kept name, new value) is the single working accent.
+   ========================================================================== */
+
 :root {
-  --background: #000000;
-  --foreground: #e4e4e7;
-  --panel: #050505;
-  --panel-head: #0a0a0a;
-  --border: #262626;
-  --border-strong: #3f3f46;
-  --amber: #ffa500;
-  --amber-dim: #b45309;
-  --cyan: #22d3ee;
-  --up: #22c55e;
-  --down: #ef4444;
-  --dim: #71717a;
+  --background: #ffffff;
+  --foreground: #1e1d1a;
+  --panel: #faf9f5;
+  --panel-head: #f3f1ea;
+  --border: #e7e5df;
+  --border-strong: #d5d1c6;
+  /* Accent tokens keep their legacy names so every component re-themes from
+     here alone: --amber is now the lapis working accent, --cyan the oxblood
+     secondary (evening editions, comparison series). */
+  --amber: #2f4f9e;
+  --amber-dim: #6b7aa3;
+  --cyan: #8d3b34;
+  --up: #157f3d;
+  --down: #c93030;
+  --dim: #6f6d66;
+  --serif: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Times New Roman", serif;
 }
 
 @theme inline {
@@ -28,136 +42,70 @@
   --color-up: var(--up);
   --color-down: var(--down);
   --color-dim: var(--dim);
-  --font-sans: var(--font-geist-mono);
-  --font-mono: var(--font-geist-mono);
+  /* One family everywhere — sans/mono utilities resolve to the same serif. */
+  --font-sans: var(--serif);
+  --font-mono: var(--serif);
 }
 
 html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  font-feature-settings: "tnum" 1, "zero" 1;
+  font-family: var(--serif);
+  /* Lining figures so prices don't dance; tabular so columns align. */
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
-/* Tight, terminal-like baseline */
 body {
-  font-size: 12px;
-  line-height: 1.35;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
-/* Editorial display sans — homepage brief headlines only. Everything else
-   stays mono. Falls back to a system grotesque if the webfont hasn't loaded. */
+/* Display role — same family, used at headline sizes. Kept as a class so the
+   markup that opted into a display face doesn't need to change. */
 .font-display {
-  font-family: var(--font-display), "Inter", ui-sans-serif, system-ui, -apple-system,
-    "Helvetica Neue", Arial, sans-serif;
-  font-feature-settings: normal;
+  font-family: var(--serif);
+  font-variant-numeric: lining-nums;
 }
 
-/* Blinking dot for "live" indicators */
+/* Blinking dot for "live" indicators — quieter than the terminal version. */
 @keyframes term-blink {
   0%, 60% { opacity: 1; }
-  61%, 100% { opacity: 0.25; }
+  61%, 100% { opacity: 0.35; }
 }
 .term-blink {
-  animation: term-blink 1.6s steps(2, end) infinite;
+  animation: term-blink 2s steps(2, end) infinite;
 }
 
 /* Thin scrollbar inside panels */
 .panel-scroll::-webkit-scrollbar { height: 6px; width: 6px; }
-.panel-scroll::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 0; }
+.panel-scroll::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
 .panel-scroll::-webkit-scrollbar-track { background: transparent; }
 
-/* ============================================================================
-   PHOSPHOR — CRT terminal realism layer.
-   One concept: this is an amber-phosphor trading screen behind glass. Every
-   token below is tunable from here; dial --crt-* down to 0 to mute an effect
-   without touching any component. Pure-black bg, amber/cyan, mono — unchanged.
-   ========================================================================== */
-:root {
-  --crt-scanline: 0.10;   /* darkness of the scanline bands (0 = off)        */
-  --crt-vignette: 0.45;   /* edge darkening of the glass (0 = off)           */
-  --crt-grain: 0.035;     /* film grain opacity (0 = off)                    */
-  --glow-amber: 0 0 6px rgba(255, 165, 0, 0.35);
-  --glow-up: 0 0 6px rgba(34, 197, 94, 0.38);
-  --glow-down: 0 0 6px rgba(239, 68, 68, 0.38);
-  --glow-cyan: 0 0 6px rgba(34, 211, 238, 0.35);
-}
+/* --- Legacy terminal effect classes, neutralized ---------------------------
+   The CRT/phosphor layer is gone. These classes remain defined (no-ops or
+   quiet equivalents) so older markup renders cleanly without a sweep. */
+.glow-amber, .glow-up, .glow-down, .glow-cyan, .glow-fg { text-shadow: none; }
+.glow-dot-up, .glow-dot-amber { box-shadow: none; }
+.boot-in { animation: none; }
 
-/* The glass: a single fixed overlay carrying scanlines + vignette, with grain
-   on its ::before. pointer-events:none so it never intercepts clicks. Sits above
-   page content but below the command palette / tooltips (z-9999). */
-.crt-screen {
-  position: fixed;
-  inset: 0;
-  z-index: 60;
-  pointer-events: none;
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 2px,
-      rgba(0, 0, 0, var(--crt-scanline)) 3px
-    ),
-    radial-gradient(
-      ellipse at center,
-      transparent 55%,
-      rgba(0, 0, 0, var(--crt-vignette)) 100%
-    );
-  animation: crt-flicker 7s steps(60) infinite;
-}
-.crt-screen::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: var(--crt-grain);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-@keyframes crt-flicker {
-  0%, 100% { opacity: 1; }
-  48% { opacity: 0.98; }
-  50% { opacity: 0.96; }
-  52% { opacity: 0.99; }
-}
-
-/* Phosphor glow — apply sparingly to hero numbers / live signals only. */
-.glow-amber { text-shadow: var(--glow-amber); }
-.glow-up { text-shadow: var(--glow-up); }
-.glow-down { text-shadow: var(--glow-down); }
-.glow-cyan { text-shadow: var(--glow-cyan); }
-.glow-fg { text-shadow: 0 0 7px rgba(228, 228, 231, 0.22); }
-/* For background-only LED dots, where text-shadow can't reach. */
-.glow-dot-up { box-shadow: 0 0 6px 1px rgba(34, 197, 94, 0.7); }
-.glow-dot-amber { box-shadow: 0 0 6px 1px rgba(255, 165, 0, 0.6); }
-
-/* Boot redraw — a fast phosphor warm-up on page load. Subtle, never gates the
-   read (220ms). Applied to <main>. */
-@keyframes boot-in {
-  0% { opacity: 0; transform: translateY(6px); filter: brightness(1.5); }
-  100% { opacity: 1; transform: none; filter: none; }
-}
-.boot-in { animation: boot-in 0.22s ease-out both; }
-
-/* Tick flash — Bloomberg's signature: a cell pulses green/red the moment its
-   value changes, then decays back to transparent. Driven by a class the live
-   ticker toggles on change. */
+/* Tick flash — kept: a cell pulses faintly green/red when its value changes. */
 @keyframes tick-up {
-  0% { background-color: rgba(34, 197, 94, 0.35); }
+  0% { background-color: rgba(21, 127, 61, 0.16); }
   100% { background-color: transparent; }
 }
 @keyframes tick-down {
-  0% { background-color: rgba(239, 68, 68, 0.35); }
+  0% { background-color: rgba(201, 48, 48, 0.14); }
   100% { background-color: transparent; }
 }
 .tick-up { animation: tick-up 0.8s ease-out; }
 .tick-down { animation: tick-down 0.8s ease-out; }
 
-/* Corner ticks — four L-shaped registration marks framing a hero element, like
-   a calibration overlay. Pure CSS, drawn from the element's own background. */
+/* Corner ticks — registration marks, redrawn in ink. */
 .term-corners {
-  --c: rgba(255, 165, 0, 0.55);
-  --s: 9px;  /* arm length */
-  --t: 1px;  /* arm thickness */
+  --c: rgba(30, 29, 26, 0.4);
+  --s: 9px;
+  --t: 1px;
   background-image:
     linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
     linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
@@ -176,30 +124,21 @@ body {
     100% 100%, 100% 100%;
 }
 
-/* Respect users who ask for less motion — kill the moving parts, keep the look. */
 @media (prefers-reduced-motion: reduce) {
-  .crt-screen { animation: none; }
-  .boot-in { animation: none; }
-  .tick-up, .tick-down { animation: none; }
   .term-blink { animation: none; }
+  .tick-up, .tick-down { animation: none; }
 }
 
-/* Keyboard focus ring. Without this the browser default outline is invisible on
-   pure black, so tabbing through links/buttons gives no visible cursor. Uses the
-   amber brand color and :focus-visible so it only shows for keyboard users, not
-   on mouse click. Inputs that opt out (focus:outline-none + border highlight)
-   are unaffected. */
+/* Keyboard focus ring in the working accent. */
 :focus-visible {
   outline: 2px solid var(--amber);
   outline-offset: 2px;
 }
 
-/* Data tables: a subtle row-hover band so the eye can track a single row across
-   many tight numeric columns. Opt-in via the `term-table` class so layout
-   tables are unaffected. Colors unchanged — just a faint amber wash on hover. */
+/* Data tables: faint accent wash on row hover so the eye can track a row. */
 .term-table tbody tr {
   transition: background-color 0.1s ease;
 }
 .term-table tbody tr:hover {
-  background-color: rgba(255, 165, 0, 0.045);
+  background-color: rgba(47, 79, 158, 0.05);
 }

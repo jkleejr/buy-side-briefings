@@ -117,28 +117,28 @@ export default function AboutPage() {
               verdict code</span>. The four possibilities, and what each means:
             </p>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-              <div className="border border-[var(--border)] bg-black p-2">
+              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
                 <div className="font-mono text-[14px] text-[var(--up)]">🟢 BUY</div>
                 <div className="mt-1 text-[11px] text-[var(--dim)]">
                   Actively bullish. Direction: expect SPX up over the briefing&apos;s
                   horizon. Includes named entry levels and invalidation.
                 </div>
               </div>
-              <div className="border border-[var(--border)] bg-black p-2">
+              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
                 <div className="font-mono text-[14px] text-[var(--amber)]">🟡 HOLD</div>
                 <div className="mt-1 text-[11px] text-[var(--dim)]">
                   No directional call. Either the setup is unclear or both bull and bear
                   cases balance out. Informational — not graded right or wrong.
                 </div>
               </div>
-              <div className="border border-[var(--border)] bg-black p-2">
-                <div className="font-mono text-[14px] text-[#fb923c]">🟠 STEP ASIDE</div>
+              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
+                <div className="font-mono text-[14px] text-[#b45309]">🟠 STEP ASIDE</div>
                 <div className="mt-1 text-[11px] text-[var(--dim)]">
                   Cautious — not actively short, but explicitly not chasing. Graded right
                   if SPX is flat or down (you didn&apos;t miss meaningful upside).
                 </div>
               </div>
-              <div className="border border-[var(--border)] bg-black p-2">
+              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
                 <div className="font-mono text-[14px] text-[var(--down)]">🔴 BEARISH</div>
                 <div className="mt-1 text-[11px] text-[var(--dim)]">
                   Actively negative. Direction: expect SPX down. May include a specific
@@ -205,7 +205,7 @@ export default function AboutPage() {
                 <span className="text-[var(--down)]">BEARISH</span> — right if SPX is down.
               </li>
               <li>
-                <span className="text-[#fb923c]">STEP ASIDE</span> — right if SPX is flat or
+                <span className="text-[#b45309]">STEP ASIDE</span> — right if SPX is flat or
                 down (i.e., you didn&apos;t miss meaningful upside).
               </li>
               <li>
