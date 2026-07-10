@@ -31,8 +31,6 @@ const SYMBOL_RULES: Array<{ match: string[]; symbol: string }> = [
   { match: ["dxy", "dollar"], symbol: "DX-Y.NYB" },
   { match: ["spx", "s&p"], symbol: "^GSPC" },
   { match: ["nasdaq", "ndx"], symbol: "^NDX" },
-  { match: ["brent"], symbol: "BZ=F" },
-  { match: ["wti", "crude"], symbol: "CL=F" },
   { match: ["gold"], symbol: "GC=F" },
   { match: ["silver"], symbol: "SI=F" },
   { match: ["copper"], symbol: "HG=F" },

@@ -105,7 +105,6 @@ const PULSE_LIST: Array<{ symbol: string; code: string; name: string }> = [
   { symbol: "SPY", code: "SPY", name: "S&P 500 ETF" },
   { symbol: "BTC-USD", code: "BTC", name: "Bitcoin" },
   { symbol: "GC=F", code: "GC", name: "Gold" },
-  { symbol: "CL=F", code: "OIL", name: "Crude Oil (WTI)" },
   { symbol: "NVDA", code: "NVDA", name: "NVIDIA" },
   { symbol: "^VIX", code: "VIX", name: "Volatility Index" },
 ];

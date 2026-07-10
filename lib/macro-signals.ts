@@ -36,7 +36,6 @@ const RULES: Array<{
   { match: /dxy|dollar/i, factor: "dollar", label: "US dollar (DXY)" },
   { match: /spx|s&p|7,?460/i, factor: "risk", label: "S&P regime line" },
   { match: /btc|bitcoin/i, factor: "crypto", label: "Bitcoin" },
-  { match: /brent|wti|oil/i, factor: "oil", label: "Oil (Brent)" },
 ];
 
 /** First sentence / clause of the status narrative, capped for a chip-line. */

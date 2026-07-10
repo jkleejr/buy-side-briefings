@@ -37,7 +37,7 @@ Run searches in parallel where possible. Stay under ~20 searches. If a topic isn
 - S&P 500, Nasdaq, Dow, Russell, VIX — current levels + intraday/recent % change
 - ES/NQ futures if relevant
 - 10Y / 30Y Treasury yields
-- DXY, WTI/Brent oil, gold, silver
+- DXY, gold, silver
 - BTC, ETH
 
 **Stocks to check:** NVDA, GOOGL, AAPL, MSFT, META, AMZN, TSLA, AMD, TSM, AVGO, PLTR. Note any that moved meaningfully.
@@ -121,10 +121,10 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
 ```
 
 `regime_risk` feeds a LIVE dashboard panel: the website maps each indicator
-name to a live quote (VIX→^VIX, 30Y→^TYX, 10Y→^TNX, DXY, SPX, Nasdaq, Brent,
-WTI, Gold, Silver, Copper, BTC, HYG) and re-judges breach status against the
+name to a live quote (VIX→^VIX, 30Y→^TYX, 10Y→^TNX, DXY, SPX, Nasdaq,
+Gold, Silver, Copper, BTC, HYG) and re-judges breach status against the
 trigger in real time. So: keep names recognizable (include the asset keyword —
-"VIX", "30Y Yield", "DXY", "SPX vs 7,460", "Brent"), and put the exact numeric
+"VIX", "30Y Yield", "DXY", "SPX vs 7,460", "Gold"), and put the exact numeric
 threshold the briefing prose cites in `trigger_above` / `trigger_below` —
 update it the moment the regime framework changes.
 

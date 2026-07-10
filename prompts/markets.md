@@ -28,7 +28,7 @@ Run web_search queries in parallel where possible. Stay under ~20 searches. If a
 - S&P 500, Nasdaq, Dow, Russell, VIX — current levels + intraday/recent % change
 - ES/NQ futures if relevant
 - 10Y / 2Y Treasury yields
-- DXY, WTI/Brent oil, gold
+- DXY, gold
 
 **Stocks to check:** NVDA, GOOGL, AAPL, MSFT, META, AMZN, TSLA, AMD, TSM, AVGO. Note any that moved meaningfully.
 

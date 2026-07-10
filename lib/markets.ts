@@ -23,7 +23,6 @@ const TICKER_STRIP: Array<{ symbol: string; label: string }> = [
   { symbol: "BTC-USD", label: "BTC" },
   { symbol: "ETH-USD", label: "ETH" },
   { symbol: "GC=F", label: "Gold" },
-  { symbol: "CL=F", label: "WTI" },
 ];
 
 type YQuote = {
