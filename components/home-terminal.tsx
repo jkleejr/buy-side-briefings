@@ -288,29 +288,31 @@ function Sectors({ sectors }: { sectors: SectorRow[] }) {
   return (
     <div>
       <SectionRule>Sectors · 1D</SectionRule>
-      <table className="w-full border-collapse">
-        <tbody>
-          {sectors.map((s) => {
-            const pct = s.pct ?? 0;
-            const up = pct >= 0;
-            const w = Math.max(2, Math.min(64, (Math.abs(pct) / maxAbs) * 64));
-            return (
-              <tr key={s.code} className="border-b border-[var(--border)]">
-                <td className="py-2 pr-2 text-[14px] text-[#3c3a34]">{s.name}</td>
-                <td className="w-[72px] py-2">
-                  <span
-                    className={`inline-block h-2 align-middle ${up ? "bg-[var(--up)]" : "bg-[var(--down)]"}`}
-                    style={{ width: `${w}px` }}
-                  />
-                </td>
-                <td className="py-2 pl-2 text-right text-[14px]">
-                  <Pct pct={s.pct} />
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      {/* Two newspaper columns so eleven rows don't tower over the band. */}
+      <div className="sm:columns-2 sm:gap-12">
+        {sectors.map((s) => {
+          const pct = s.pct ?? 0;
+          const up = pct >= 0;
+          const w = Math.max(2, Math.min(80, (Math.abs(pct) / maxAbs) * 80));
+          return (
+            <div
+              key={s.code}
+              className="grid break-inside-avoid grid-cols-[1fr_88px_64px] items-center gap-2 border-b border-[var(--border)] py-2"
+            >
+              <span className="text-[14px] text-[#3c3a34]">{s.name}</span>
+              <span>
+                <span
+                  className={`inline-block h-2 align-middle ${up ? "bg-[var(--up)]" : "bg-[var(--down)]"}`}
+                  style={{ width: `${w}px` }}
+                />
+              </span>
+              <span className="text-right text-[14px]">
+                <Pct pct={s.pct} />
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -369,16 +371,20 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
           <InBrief points={current.keyPoints.slice(0, 3)} />
           <Tape metrics={current.metrics} />
 
+          {/* Read row — evidence + wire pair off against the week ahead, which
+              is the only long module on the right so the columns end together. */}
           <div className="grid gap-12 pt-10 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
             <div className="space-y-11">
               <Evidence points={current.keyPoints.slice(3)} />
               <Wire wire={data.wire} />
             </div>
-            <div className="space-y-11">
-              <WeekAhead calendar={data.calendar} />
-              <Sectors sectors={data.sectors} />
-              <PreviousEditions archive={data.archive} />
-            </div>
+            <WeekAhead calendar={data.calendar} />
+          </div>
+
+          {/* Reference band — full width so no column is left holding air. */}
+          <div className="grid gap-12 pt-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
+            <Sectors sectors={data.sectors} />
+            <PreviousEditions archive={data.archive} />
           </div>
         </>
       ) : (
