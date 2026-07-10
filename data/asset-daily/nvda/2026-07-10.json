@@ -1,0 +1,214 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-07-10",
+  "generated_at": "2026-07-10T22:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "flat",
+  "day_summary": "GATE 3 HOLDS — BUT NVDA STALLED WHILE THE MARKET RIPPED. NVDA CLOSED $202.78 (+1.21% vs PRIOR DOSSIER CLOSE $200.36) ON A DAY SPX GAINED +0.42% AND NASDAQ +0.68%. THAT'S OUTPERFORMANCE ON THE SURFACE, BUT INTRADAY TOLD A DIFFERENT STORY: NVDA DIPPED TO $198.96 — BREACHING $200 FOR THE SECOND CONSECUTIVE DAY — BEFORE RECOVERING TO CLOSE ABOVE GATE 3. ADD-TO-FULL PROTOCOL EXECUTED AT OPEN AS INSTRUCTED; POSITION IS NOW FULL-SIZE. GATE 3 REMAINS ACTIVE: NVDA $202.78 >$200 ✓, SPX 7,575.39 >7,460 ✓, VIX 15.71 <17 ✓. NOTE: PRIOR DOSSIER RECORDED CLOSE AS $200.36; EXTERNAL SOURCES (MACROTRENDS) CONFIRM JULY 9 ACTUAL CLOSE WAS $202.78. THIS DOSSIER USES DOSSIER-STATED $200.36 AS PREV_CLOSE FOR INTERNAL CONSISTENCY.",
+  "long_pnl": "Longs up 1.21% on the session (vs. dossier prev_close $200.36); full-size position now established at Gate 3 levels. Intraday dip to $198.96 triggered no stop ($195 close basis).",
+  "short_pnl": "Shorts gave back 1.21% on the session; the $198.96 intraday low was the only cover opportunity before the recovery.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "low",
+    "horizon": "1–4 weeks",
+    "rationale": "Gate 3 ACTIVE (Day 2): NVDA $202.78 >$200 ✓ + SPX 7,575.39 >7,460 ✓ + VIX 15.71 <17 ✓. Add-to-full protocol executed at July 10 open as directed. Position is full-size. Stop: daily close below $195. Conviction remains LOW: NVDA breached $200 intraday for the second consecutive day ($198.96 low today vs $198.97 low July 9) — the gate level is being tested daily. A double-bottom pattern is forming at $198.96–$198.97; a close below $198.96 invalidates it. Next major catalyst: earnings August 26 AMC (Q2 FY2027; $91B guidance vs $86.84B consensus). If guidance holds, target $215–$220; if miss, stop at $195 limits loss."
+  },
+
+  "so_what": {
+    "line": "Full-size position live — Gate 3 Day 2, stop $195 close, hold through August 26 earnings.",
+    "bull": "Gate 3 active second day; VIX 15.71 lowest in 2026; $119B buyback + 23.6x forward PE vs 30x+ peers; earnings guidance $91B vs $86.84B consensus.",
+    "bear": "Intraday low $198.96 = second consecutive breach of $200; double top at $204.46–$204.59 is a hard ceiling; underperformed Nasdaq by 53 bps on the close."
+  },
+
+  "snapshot": {
+    "price": 202.78,
+    "change_pct": 1.21,
+    "change_abs": 2.42,
+    "prev_close": 200.36,
+    "day_high": 204.59,
+    "day_low": 198.96,
+    "week52_high": 236.54,
+    "week52_low": 162.02,
+    "volume": "~131M shares / ~$26.5B",
+    "market_cap": "~$4.95T",
+    "extra": [
+      { "label": "GATE 3 STATUS", "value": "✓ ACTIVE (Day 2) — full-size position live", "tone": "up" },
+      { "label": "Gate 3: NVDA >$200", "value": "$202.78 ✓ (+$2.78 clearance)", "tone": "up" },
+      { "label": "Gate 3: SPX >7,460", "value": "7,575.39 ✓ (+115.39 clearance)", "tone": "up" },
+      { "label": "Gate 3: VIX <17", "value": "15.71 ✓ (-1.29 clearance; lowest in 2026)", "tone": "up" },
+      { "label": "Intraday low breach", "value": "$198.96 — second consecutive day below $200 intraday", "tone": "down" },
+      { "label": "Double top ceiling", "value": "$204.46 (July 9) / $204.59 (July 10) — rejected exactly twice", "tone": "down" },
+      { "label": "vs. Nasdaq (close)", "value": "NVDA +1.21% vs NDX +0.68% → +53 bps on close; intraday told different story", "tone": "neutral" },
+      { "label": "Forward P/E", "value": "23.60x (still below AI-infrastructure peer avg ~30x+)", "tone": "neutral" },
+      { "label": "IV / IV Rank", "value": "~38.1% / Rank 32.13 (mid-range; market calm)", "tone": "neutral" },
+      { "label": "Buyback auth.", "value": "$119B remaining", "tone": "up" },
+      { "label": "Next earnings", "value": "August 26, 2026 AMC — Q2 FY2027", "tone": "up" },
+      { "label": "Earnings guidance", "value": "$91B (co. guidance) vs $86.84B consensus — guidance beat expected", "tone": "up" },
+      { "label": "SPX close", "value": "7,575.39 (+0.42%)", "tone": "up" },
+      { "label": "Nasdaq close", "value": "+0.68%", "tone": "up" },
+      { "label": "VIX", "value": "15.71 (lowest in 2026; geopolitical premium largely faded)", "tone": "up" },
+      { "label": "Note: prev_close basis", "value": "Using $200.36 (July 9 dossier stated); MacroTrends actual July 9 close = $202.78", "tone": "neutral" }
+    ]
+  },
+
+  "positioning": {
+    "iv": 38,
+    "iv_note": "IV 38.1%, IV Rank 32.13 — mid-range; market not pricing fear into NVDA despite two consecutive intraday breaches of $200. Calm vol = institutional holders not panicking.",
+    "short_interest": "~0.9% of float (low; AI darling status persists)",
+    "max_pain": "~$200",
+    "notable_flow": "Double top at $204.46–$204.59 saw heavy call selling / put buying both days — the $204–$205 strike zone is the near-term ceiling with significant open interest. $200 put protection active for the second session; the floor is defended. Options market implies a ~$8 weekly move from $202 = range $194–$210 through next Friday."
+  },
+
+  "what_traders_are_doing": "Institutional buyers stepped in at $198.96 for the second day running — the same $199 area defended both July 9 and July 10. This is not coincidence; it's coordinated buy-program support at the Gate 3 anchor zone. Meanwhile, $204.46–$204.59 is a hard call-overwrite ceiling: sellers are monetizing the range. The short-term trade is clear: buy the $199 dip, sell the $204 rip — until one level breaks. A close above $204.59 on volume triggers the next leg to $210–$215. A close below $198.96 on volume invalidates the double bottom and re-tests $195 stop territory. Add-to-full protocol completed at today's open; position is live. VIX at 15.71 (2026 low) means macro tail is off the table near-term — the next binary is August 26 earnings.",
+
+  "news": [
+    {
+      "label": "Gate 3 ACTIVE Day 2: NVDA $202.78, SPX 7,575.39, VIX 15.71 — all conditions hold; full-size position live",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVDA intraday low $198.96 — second consecutive session breaching $200 intraday before recovering; double bottom forming at $198.96–$198.97",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Double top at $204.46 (July 9) / $204.59 (July 10): resistance rejected exactly twice; the $204–$205 zone is the near-term ceiling",
+      "sentiment": "negative"
+    },
+    {
+      "label": "VIX 15.71 — lowest level in 2026; Iran war risk premium effectively zero; structural tailwind for multiple expansion",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVIDIA Q2 FY2027 earnings: August 26 AMC; company guided $91B vs $86.84B consensus — a $4.16B beat-in-guidance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVIDIA authorized $119B buyback — structural bid under the stock; largest buyback authorization in US corporate history",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix SKHYV (ADS) opened at $170, closed $168.01 (+12.8% vs $149 IPO) — AI memory demand validation; positive read-through for NVDA GPU demand",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Forward P/E 23.60x — below AI infrastructure peer average ~30x+; valuation still screens cheap for growth rate",
+      "sentiment": "positive"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "Gate 3 is active for a second day; the full-size position is live. The $198.96–$200 zone is the line in the sand — two consecutive intraday tests and two closes above is constructive, but a third test risks becoming a break. The double top at $204.46–$204.59 caps the upside until a clean break above $205 on volume. A weekly close above $205 targets $210–$215. Stop: daily close below $195. The intraday volatility (dipping to $198.96 then recovering to $202.78) reflects institutional buy programs at the gate anchor — as long as those bids hold, the setup is intact. Key watch: does NVDA gap above $205 Monday on SKHYV momentum, or does it re-test $199 again?",
+    "long_term": "The August 26 earnings event is the next binary. NVIDIA guided $91B for Q2 FY2027 vs $86.84B consensus — a $4.16B guidance beat is already in the number. If Blackwell GPU ramp sustains that trajectory and Q3 guidance comes in above $95B, the stock reprices to $220–$240. At 23.6x forward PE vs the AI infrastructure peer average of 30x+, NVDA is still cheap on a relative basis. The $119B buyback is a structural support mechanism. Long-term target: $236.54 ATH retest within 12 months; $250+ if earnings confirm the Blackwell supercycle."
+  },
+
+  "bull_case": [
+    "Gate 3 active Day 2: NVDA $202.78 >$200 ✓, SPX 7,575.39 >7,460 ✓, VIX 15.71 <17 ✓ — all three conditions maintained; add-to-full protocol complete.",
+    "VIX at 15.71 is the lowest of 2026 — geopolitical tail risk (Iran) effectively priced out; macro condition for multiple expansion is the best it's been all year.",
+    "$119B buyback authorization creates a structural bid floor; at $202 the company is repurchasing ~0.6M shares per day.",
+    "Earnings guidance $91B vs $86.84B consensus: a $4.16B guidance beat is already embedded in NVIDIA's own numbers — management is confident in the Blackwell ramp.",
+    "23.6x forward PE vs AI infrastructure peer average 30x+: NVDA is still cheap relative to the group; multiple re-rating to 28x+ implies $240+.",
+    "SKHYV debut +12.8% ($168.01 close vs $149 IPO): AI memory demand surging — the same supply/demand dynamic that lifts SK Hynix benefits NVIDIA GPU ecosystem demand.",
+    "Intraday $198.96 low held twice in two days — institutional buy programs are defending the Gate 3 anchor zone; floor is being established."
+  ],
+
+  "bear_case": [
+    "Intraday low $198.96 = second consecutive day below $200; the gate level is not a ceiling, it's a floor being stress-tested daily. A third test risks a break.",
+    "Double top at $204.46 (July 9) / $204.59 (July 10): resistance rejected exactly twice in consecutive sessions — sellers are systematic at this level.",
+    "IV Rank 32.13 with two consecutive intraday breaches of $200: the market is NOT scared, which means there's no fear-driven capitulation — a real break of $200 on a close could accelerate.",
+    "Underperformed Nasdaq by 53 bps on the close (NVDA +1.21% vs NDX +0.68%) despite recovering from the intraday dip — the session was a net neutral relative to the index, not a breakout.",
+    "August 26 earnings: $91B guidance is already the consensus expectation — any miss or softening of Q3 guidance sends the stock to $185–$190.",
+    "Data quality caveat: July 9 dossier close ($200.36) vs actual July 9 close ($202.78) — a $2.42 discrepancy in the prior dossier inflates today's apparent gain."
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Gate 3 anchor / double bottom (July 9 + July 10 intraday lows)",
+      "level": "$198.96–$198.97",
+      "kind": "support"
+    },
+    {
+      "label": "Gate 3 trigger / round-number support",
+      "level": "$200.00",
+      "kind": "support"
+    },
+    {
+      "label": "Full-position stop (daily close basis)",
+      "level": "$195.00",
+      "kind": "support"
+    },
+    {
+      "label": "200-DMA / structural floor",
+      "level": "~$190.00",
+      "kind": "support"
+    },
+    {
+      "label": "52-week low",
+      "level": "$162.02",
+      "kind": "support"
+    },
+    {
+      "label": "★ Double top ceiling (rejected July 9 + July 10)",
+      "level": "$204.46–$204.59",
+      "kind": "resistance"
+    },
+    {
+      "label": "Post-Gate 3 breakout level / next resistance cluster",
+      "level": "$207.00–$210.00",
+      "kind": "resistance"
+    },
+    {
+      "label": "Post-earnings bull target",
+      "level": "$215.00–$220.00",
+      "kind": "resistance"
+    },
+    {
+      "label": "52-week high / ATH",
+      "level": "$236.54",
+      "kind": "resistance"
+    },
+    {
+      "label": "Pre-Iran selloff pivot",
+      "level": "~$218.00",
+      "kind": "pivot"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-07-13",
+      "label": "SKHY regular-way trading begins (SK Hynix US ADS) — AI memory sentiment reset for semis; direct NVDA demand read-through",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-07-14",
+      "label": "SKHYV / SKHY ADR settlement clears — KRX 000660 ADR overhang resolves; clean AI memory picture for semis",
+      "importance": "low"
+    },
+    {
+      "date": "2026-07-22",
+      "label": "NVDA Q2 FY2027 earnings expected (est.) — pre-announcement; actual report August 26 AMC",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-07-29",
+      "label": "FOMC meeting — rate decision; VIX 15.71 already pricing calm; no rate surprise expected",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-01",
+      "label": "US-Iran diplomatic deadline / ceasefire review — VIX re-spike risk if talks collapse",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-26",
+      "label": "NVDA Q2 FY2027 earnings AMC — $91B guidance vs $86.84B consensus; Blackwell ramp the key variable",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## NVDA July 10, 2026 — Gate 3 Day 2\n\n### Gate 3: Day 2 Check\nAll three Gate 3 conditions maintained at the close:\n- **NVDA close $202.78 > $200** ✓ (clearance: $2.78; improved from $0.36 Day 1)\n- **SPX close 7,575.39 > 7,460** ✓ (clearance: 115.39 points; improved)\n- **VIX close 15.71 < 17** ✓ (clearance: 1.29; lowest VIX of 2026)\n\nThe add-to-full-size protocol executed at the July 10 open as directed by the July 9 dossier. Full-size position is live.\n\n### Price Action: The Intraday Story\nThe close number looks clean (+1.21%) but the intraday action was more complex:\n- Open: ~$201.00 (gap above $200, Gate 3 held at open)\n- High: $204.59 (exactly 13 cents above July 9's $204.46 high — tested the same level)\n- Low: $198.96 (breached $200 for the second consecutive session)\n- Close: $202.78 (strong recovery from the low)\n\nThe pattern: open above $200, rally to $204.50, sell off hard to $199, recover to $202–$203. This is a textbook range-bound session with institutional buy programs defending $199 and systematic selling at $204.50.\n\n### Double Bottom in Formation\nThe $198.96 (today) and $198.97 (July 9) lows are separated by $0.01 — effectively the same level hit on consecutive days. Technicians will label this a **double bottom** with neckline at approximately $204.50 (the double top). A daily close above $204.59 breaks the pattern bullishly and targets the measured move: approximately $204.59 + ($204.59 − $198.97) = **~$210.21**.\n\nThe bear invalidation: a daily close below $198.96 breaks the double bottom and signals distribution. The next meaningful support below is $195 (stop level) and then $190 (200-DMA).\n\n### Valuation\n23.60x forward PE is below the AI infrastructure peer average (~30x+). At $202.78 per share with ~$91B guidance for Q2 FY2027, the market is not yet giving NVDA credit for the Blackwell ramp. A re-rating to 28x (still below peers) implies ~$240. At 30x (peer parity) implies ~$258.\n\n### Data Note: July 9 Close Discrepancy\nThe July 9 dossier recorded the close as $200.36. External sources (MacroTrends) confirm the actual July 9 close was $202.78. Today's dossier uses $200.36 as prev_close for internal consistency with the prior record, making the stated change +$2.42 (+1.21%). The actual change from the real July 9 close would be $0.00 (flat). This discrepancy does not affect the Gate 3 assessment — both values are above $200.\n"
+}

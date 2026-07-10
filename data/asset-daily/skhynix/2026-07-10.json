@@ -1,0 +1,202 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS / SKHYV",
+  "name": "SK Hynix",
+  "date": "2026-07-10",
+  "generated_at": "2026-07-10T22:00:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+
+  "day_winner": "bulls",
+  "day_summary": "SKHYV DEBUT: +12.8% ON DAY ONE — RE-ENTRY SIGNAL TRIGGERED. THE JULY 9 DECISION TREE ACTIVATED: SKHYV OPENED AT $170 (>$165 THRESHOLD), CONFIRMING THE RE-ENTRY SIGNAL ON THE US-LISTED VEHICLE. SKHYV CLOSED $168.01 VS $149 IPO PRICE (+$19.01, +12.76%). KRX 000660 SOLD OFF -0.27% (₩2,180,000) ON CLASSIC 'SELL THE NEWS' FOLLOWING YESTERDAY'S +5.30% RIP — BUT THE SKHYV STORY IS THE ONE THAT MATTERS. CEO KWAK NOO-HYUN DECLARED 'THE WORST-EVER MEMORY SUPPLY SHORTAGE IN 2027; DEMAND WILL OUTSTRIP SUPPLY BEYOND 2030.' KOSPI SURGED +2.52% (7,475.94) ON AI MEMORY TAILWINDS. DECISION: BUY SKHY/SKHYV (NOT KRX 000660 — ADR OVERHANG THROUGH JULY 14 SETTLEMENT).",
+  "long_pnl": "SKHYV holders up +12.76% on IPO price ($149→$168.01). KRX 000660 holders down -0.27% (₩2,186,000→₩2,180,000) — 'sell the news' after yesterday's +5.30% pre-listing surge.",
+  "short_pnl": "KRX shorts collected -0.27% on a thin session; SKHYV shorts were destroyed on debut — anyone short the ADS vs IPO is down 12.76%.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "medium",
+    "horizon": "1–6 months",
+    "rationale": "SKHYV debut triggered re-entry signal per July 9 decision tree: open $170 > $165 threshold ✓. Vehicle: SKHY (regular-way, July 13 onward) or SKHYV (when-issued, already trading). NOT KRX 000660 — ADR mechanics create overhang through July 14 settlement date; direct SKHY/SKHYV is the cleaner entry. Initial position: 50% of intended allocation at current levels ($168.01 close). Second tranche: on a re-test of $165 (IPO price + 10.7% = prior support / re-entry zone) or add at SKHY regular-way open July 13. Stop: SKHYV/SKHY daily close below $149 (IPO price — gives back the full debut premium; indicates structural demand failure). Conviction MEDIUM: CEO commentary ('worst-ever 2027 supply shortage'), AI memory demand thesis, and KOSPI +2.52% all validate the bull case; the 16.4% premium of SKHYV implied value to KRX 000660 creates convergence risk as ADR overhang clears."
+  },
+
+  "so_what": {
+    "line": "Re-entry signal triggered — buy SKHY/SKHYV (not KRX 000660), 50% now, 50% on July 13 open or $165 re-test; stop $149 close.",
+    "bull": "CEO: 'worst-ever memory supply shortage 2027; demand outstrips supply beyond 2030'; SKHYV +12.8% debut validates premium AI memory positioning; KOSPI +2.52% confirms Korea AI cycle intact.",
+    "bear": "KRX 000660 -0.27% = sell the news; SKHYV implied KRX equivalent ₩2,539,000 is 16.4% above KRX close (₩2,180,000) — convergence risk as ADR overhang clears July 14."
+  },
+
+  "snapshot": {
+    "price": 2180000,
+    "change_pct": -0.27,
+    "change_abs": -6000,
+    "prev_close": 2186000,
+    "day_high": 2305000,
+    "day_low": 2166000,
+    "week52_high": 2987000,
+    "week52_low": 1850000,
+    "volume": "~4.83M shares (KRX)",
+    "market_cap": "~₩1,553.4T (~$1.03T at KRW/USD 1,511.17)",
+    "extra": [
+      { "label": "SKHYV (ADS, Nasdaq when-issued)", "value": "$168.01 close / +$19.01 (+12.76%) vs $149 IPO", "tone": "up" },
+      { "label": "SKHYV open", "value": "$170 (>$165 re-entry threshold — signal triggered ✓)", "tone": "up" },
+      { "label": "SKHYV high / low", "value": "$177.00 / $166.19", "tone": "up" },
+      { "label": "SKHYV implied KRX equivalent", "value": "$168.01 × 10 × 1,511.17 = ~₩2,539,000 (16.4% premium to KRX ₩2,180,000)", "tone": "up" },
+      { "label": "KRX 000660 close", "value": "₩2,180,000 (-0.27%) — sell the news after July 9 +5.30%", "tone": "down" },
+      { "label": "KOSPI close", "value": "7,475.94 (+2.52%) — Korean market surged on AI memory tailwinds", "tone": "up" },
+      { "label": "Samsung Electronics", "value": "₩285,000 (+2.52%) — AI memory peer confirming sector bid", "tone": "up" },
+      { "label": "KRW/USD rate", "value": "1,511.17 (used for all USD conversions)", "tone": "neutral" },
+      { "label": "CEO commentary", "value": "Kwak Noo-hyun: 'Worst-ever memory supply shortage 2027; demand outstrips supply beyond 2030'", "tone": "up" },
+      { "label": "ADR overhang note", "value": "KRX 000660 ADR settlement July 14 — until then, SKHY/SKHYV is the preferred vehicle", "tone": "neutral" },
+      { "label": "SKHY regular-way", "value": "Begins trading July 13 on Nasdaq", "tone": "up" }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "SKHYV options not yet active (when-issued debut day; options market opens with regular-way SKHY July 13). KRX 000660 implied vol elevated from listing mechanics — not a clean signal. Watch SKHY options chain from July 14 onward for positioning reads.",
+    "short_interest": "SKHYV: near-zero (debut day, no established borrow market). KRX 000660: low (~0.3% of float; Korean short rules limit aggressive shorting on IPO week).",
+    "notable_flow": "IPO allocation holders selling into the open ($177 high) — typical debut-day distribution. Long-only funds buying the $166–$168 zone (near IPO price +10%). The $165 level (implied re-entry threshold) attracted buyers into the close, establishing it as near-term support. Volume was debut-heavy and not yet interpretable as a signal; watch July 13 regular-way first full trading day for real positioning."
+  },
+
+  "what_traders_are_doing": "Two distinct trades happening simultaneously: (1) IPO flippers cashing out — the $177 intraday high was hit at the open as IPO allocation holders sold into strength; by the close, SKHYV had settled $9 off the high at $168.01. (2) Long-only AI memory funds accumulating — the $166–$168 zone saw steady institutional buying as funds that wanted exposure but missed IPO allocation built positions in the secondary market. The close at $168.01 vs $149 IPO represents a clean +12.76% debut for those who got allocations; for the market, it validates the AI memory demand story at a $1.68B implied market cap for just the ADS float. KRX 000660 at ₩2,180,000 is the 'sell the news' trade — the market was pricing in the SKHYV listing excitement yesterday (+5.30%); with that catalyst delivered, the KRX stock drifted -0.27%. The real call is that the CEO's 2027 supply shortage commentary is the fundamental anchor — not the listing mechanics.",
+
+  "news": [
+    {
+      "label": "SKHYV (SK Hynix ADS when-issued) debuts +12.76% at $168.01 vs $149 IPO price; opened $170, hit $177 high",
+      "sentiment": "positive"
+    },
+    {
+      "label": "CEO Kwak Noo-hyun: 'Worst-ever memory supply shortage in 2027; AI demand will outstrip supply beyond 2030' — strongest supply-shortage guidance in company history",
+      "sentiment": "positive"
+    },
+    {
+      "label": "KOSPI surges +2.52% to 7,475.94 — Korean market lifted by AI memory sector tailwinds; Samsung +2.52% confirming sector bid",
+      "sentiment": "positive"
+    },
+    {
+      "label": "KRX 000660 -0.27% (₩2,180,000) — sell the news after July 9 +5.30% pre-listing surge; ADR overhang through July 14 settlement",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SKHYV implied KRX equivalent (~₩2,539,000) trades at 16.4% premium to KRX close (₩2,180,000) — ADS demand validates global AI memory thesis",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SKHY regular-way trading begins July 13 on Nasdaq — first full session after when-issued debut; clean price discovery from Monday",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "HBM4 memory for AI accelerators: SK Hynix confirmed as primary supplier for NVIDIA Blackwell next generation — direct demand linkage to NVDA GPU cycle",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Crypto Clarity Act advancing in US Senate — macro risk-on environment benefits Korean tech; won't move SKHYV directly but reflects global AI capex sentiment",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The re-entry signal is active. Initial 50% position should be established at current levels ($168 range) or on the SKHY July 13 regular-way open. The second 50% adds on a re-test of $165 (IPO price + ~10.7% = natural first support for debut-day buyers) or adds at the July 13 open if it holds. Stop: SKHY/SKHYV close below $149 (IPO price — below this, the debut premium is fully returned and demand has failed). Near-term target: $177 (July 10 intraday high) on a re-test; $185–$190 on a breakout above $177. Watch the ADR convergence trade: SKHYV implied KRX value (₩2,539,000) vs KRX actual (₩2,180,000) — the 16.4% gap should narrow as ADR overhang clears July 14. If it narrows by KRX rising rather than SKHYV falling, the trade works cleanly.",
+    "long_term": "The CEO commentary ('worst-ever 2027 supply shortage; demand beyond 2030') is the fundamental pillar. If SK Hynix is right about supply/demand through 2030, this stock at ₩2,180,000 is dramatically undervalued vs the ₩2,987,000 52-week high. The HBM4 / NVDA Blackwell supply chain lock-in is a 3–5 year competitive moat. Long-term target: ₩2,600,000–₩2,800,000 (retest of 52-week highs) on a 6–12 month horizon, or SKHY $185–$200 (US ADS equivalent). The US listing via SKHY is the preferred vehicle for global AI memory exposure given liquidity and tax treatment advantages over direct KRX access."
+  },
+
+  "bull_case": [
+    "CEO declared 'worst-ever memory supply shortage in 2027; demand outstrips supply beyond 2030' — strongest demand-supply guidance in company history; SK Hynix is supply-constrained, not demand-constrained.",
+    "SKHYV debut +12.76% validates global demand for AI memory exposure; 7x oversubscribed at IPO confirms institutional conviction before the stock ever traded.",
+    "HBM4 primary supplier to NVIDIA Blackwell generation — direct, structural linkage to the largest AI infrastructure buildout in history.",
+    "KOSPI +2.52% and Samsung +2.52% on the same day: Korean AI memory sector is in synchronized bull move; not a single-stock story.",
+    "SKHYV implied KRX equivalent (₩2,539,000) is 16.4% above KRX price (₩2,180,000): the US market is pricing in a 16.4% fundamental re-rating vs KRX consensus — and that gap may persist as US AI investors command a premium.",
+    "US listing provides access to a new liquidity pool (US long-only funds, ETF inclusion, retail AI investors) that could sustain a structural premium to KRX."
+  ],
+
+  "bear_case": [
+    "KRX 000660 -0.27% on debut day = sell the news; the +5.30% pre-listing surge yesterday pulled forward buying; KRX holders who bought July 8–9 are already in the red.",
+    "SKHYV implied KRX equivalent (₩2,539,000) trades 16.4% above KRX reality (₩2,180,000) — if this gap narrows via SKHYV/SKHY falling rather than KRX rising, US ADS holders lose.",
+    "ADR overhang through July 14: KRX 000660 holders converting to SKHY ADS create supply pressure; the KRX discount to ADS implied value persists until July 14 settlement clears.",
+    "HBM4 memory supply shortage narrative is priced in: the market already knows SK Hynix is supply-constrained; the question is whether the actual 2027 numbers beat the narrative.",
+    "KRW/USD 1,511.17 is a headwind for USD-denominated returns: if KRW depreciates further, USD returns lag KRX performance.",
+    "SKHYV options market nonexistent on debut day: no IV data, no options-aware positioning signal; the $168 close could be IPO-day hype that fades before real price discovery on July 13."
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Double bottom (KRX: July 7 + July 8 intraday lows)",
+      "level": "₩2,076,000–₩2,091,000",
+      "kind": "support"
+    },
+    {
+      "label": "KRX round-number / recent pivot",
+      "level": "₩2,100,000",
+      "kind": "support"
+    },
+    {
+      "label": "SKHYV/SKHY IPO price (ADS stop level)",
+      "level": "$149.00 (SKHYV/SKHY)",
+      "kind": "support"
+    },
+    {
+      "label": "SKHYV/SKHY re-entry threshold / debut-day support zone",
+      "level": "$165.00–$166.19 (SKHYV)",
+      "kind": "support"
+    },
+    {
+      "label": "★ July 10 intraday high / near-term resistance ceiling (KRX)",
+      "level": "₩2,305,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "SKHYV/SKHY debut high / first resistance",
+      "level": "$177.00 (SKHYV)",
+      "kind": "resistance"
+    },
+    {
+      "label": "ADS implied KRX-parity level (convergence target)",
+      "level": "~₩2,539,000 / ~$185 (SKHY)",
+      "kind": "resistance"
+    },
+    {
+      "label": "KRX 52-week high",
+      "level": "₩2,987,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "KRX pre-listing pivot (July 9 close)",
+      "level": "₩2,186,000",
+      "kind": "pivot"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-07-13",
+      "label": "SKHY regular-way trading begins (Nasdaq) — first full price-discovery session; clean options chain opens; real institutional positioning starts",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-14",
+      "label": "SKHYV / SKHY ADR settlement clears — KRX 000660 ADR overhang resolves; SKHYV implied premium vs KRX should converge",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-22",
+      "label": "NVDA Q2 FY2027 earnings (est.) — read-through for HBM4/AI memory demand from SK Hynix's largest customer",
+      "importance": "high"
+    },
+    {
+      "date": "2026-07-29",
+      "label": "FOMC meeting — rate decision; USD strength risk for KRW/USD if Fed stays hawkish",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-26",
+      "label": "NVDA Q2 FY2027 earnings AMC — Blackwell GPU ramp guidance directly sets HBM4 demand outlook for SK Hynix 2027",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-01",
+      "label": "SK Hynix Q2 2026 earnings (est.) — first earnings with SKHY listed on Nasdaq; expect analyst coverage initiation",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## SK Hynix July 10, 2026 — SKHYV Debut Day\n\n### The Trade: SKHY/SKHYV, Not KRX 000660\nThe July 9 decision tree activated cleanly. SKHYV opened at $170 — above the $165 re-entry threshold — triggering the BUY signal on the US-listed vehicle. This is the critical nuance: **buy SKHY/SKHYV, not KRX 000660**. The ADR conversion mechanics create supply overhang through July 14 settlement. After July 14, the vehicles should converge, but until then the US ADS is the cleaner trade.\n\n### SKHYV Debut: The Numbers\n- **IPO price**: $149.00\n- **Day 1 open**: $170 (+$21, +14.1%)\n- **Day 1 high**: $177.00 (+$28, +18.8%)\n- **Day 1 low**: $166.19 (+$17.19, +11.5%)\n- **Day 1 close**: $168.01 (+$19.01, +12.76%)\n\nThe distribution pattern: IPO flippers sold into the open ($177 high), the stock gave back ~$11 to $166 (near the $165 threshold), then recovered to $168 close. This is textbook debut-day mechanics. The close at $168 vs $165 support is constructive.\n\n### The 16.4% Premium: Convergence Trade\nSKHYV close $168.01 implies a KRX equivalent of:\n$168.01 (ADS) × 10 (ADS/share ratio) × 1,511.17 (KRW/USD) = **~₩2,539,000**\n\nVs. KRX actual close: **₩2,180,000**\n\nPremium: **~₩359,000 / +16.4%**\n\nThis premium has two possible resolutions:\n1. **KRX converges up** (bull case): KRX 000660 re-rates to reflect global AI memory demand; gap narrows as KRX buyers follow the ADS price signal → long both vehicles\n2. **SKHYV converges down** (bear case): IPO premium fades; SKHYV settles toward KRX parity → early ADS buyers lose 14%\n\nThe CEO commentary ('worst-ever 2027 shortage') argues for scenario (1), but the July 14 ADR settlement clearing is the near-term catalyst. Watch the KRX close vs SKHYV implied on July 14–15.\n\n### CEO Commentary: The Fundamental Pillar\nKwak Noo-hyun's declaration — 'worst-ever memory supply shortage in 2027; demand will outstrip supply beyond 2030' — is the most bullish supply-side commentary from any major semiconductor CEO in 2026. This is not a management beat of a quarterly number; it's a multi-year supply/demand structural call from the CEO of the world's second-largest memory chip maker.\n\nIf accurate, SK Hynix's HBM4 production — pre-committed to NVIDIA, AMD, and Google — runs at full capacity at premium prices through at least 2029. The pricing power implication: NAND and DRAM margins that haven't been seen since the 2017-2018 supercycle.\n\n### KRX Action: Sell the News\nKRX 000660 closed ₩2,180,000 (-0.27%) — small decline on the listing day after +5.30% yesterday. This is expected: the SKHYV listing excitement was priced into KRX yesterday; today's KRX holders who bought July 9 took profit. The ₩2,166,000 intraday low held above the double bottom zone (₩2,076,000–₩2,091,000), keeping the technical structure intact.\n"
+}
