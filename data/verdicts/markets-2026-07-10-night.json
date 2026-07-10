@@ -1,0 +1,145 @@
+{
+  "routine": "markets",
+  "date": "2026-07-10",
+  "window": "night",
+  "generated_at": "2026-07-11T01:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — SKHYV clears $162 gate ($168 close); NVDA full-size authorized; Hormuz shutdown + CPI July 14 block the upgrade",
+    "conviction": "medium",
+    "rationale_short": "July 10 delivered the two bullish gate completions the July 9 night briefing required: SKHYV closed $168.01 (+12.8% above the $149 IPO), clearing the $162 constructive threshold and authorizing 50% SKHY entry for Monday's open; and NVDA closed ~$209.76 (est. +4%), completing two consecutive closes above $200 and authorizing full-size per the four-gate protocol. The dual-gate buffer expanded to 115 points (SPX 7,575.39), VIX compressed to 15.84, and DAL confirmed travel-demand resilience with a Q2 beat. HOLD is maintained—not upgraded to BUY—because Trump declared the ceasefire 'OVER' on July 10 with Hormuz tanker traffic 'effectively grinding to a halt' per Al Jazeera, introducing a 2-4 week oil-supply shock lag that could spike WTI above $85 and blow through the CPI forecast range. With the regime binary (June CPI) four days away, holding the gate-authorized positions without adding gross exposure is the correct posture.",
+    "supporting_data": [
+      {
+        "label": "SKHYV closed $168.01 (+12.8% above $149 IPO, opened at $170) — above the July 9 briefing's $162 constructive threshold; 50% SKHY entry for Monday July 13 authorized per protocol",
+        "url": "https://www.investing.com/equities/sk-hynix-adr"
+      },
+      {
+        "label": "NVDA ~$209.76 est. (+4%) — second consecutive close above $200; four-gate protocol complete; full-size position authorized; stop $195 remains active",
+        "url": "https://finance.yahoo.com/news/live/stock-market-today-friday-july-10-dow-sp-nasdaq-113921604.html"
+      },
+      {
+        "label": "SPX 7,575.39 (+0.42%), Nasdaq 26,281.61 (+0.29%) — dual-gate buffer expanded from 83 to 115 points above 7,460 floor; S&P and Nasdaq notch positive week",
+        "url": "https://finance.yahoo.com/news/live/stock-market-today-friday-july-10-dow-sp-nasdaq-113921604.html"
+      },
+      {
+        "label": "DAL Q2 2026: EPS $1.56 vs $1.51 consensus; revenue $17.7B vs $17.5B; full-year guidance reaffirmed $6.50-$7.50 — travel demand confirmed despite highest-ever quarterly fuel expense; stock -4% sell-the-news",
+        "url": "https://news.alphastreet.com/delta-air-lines-posts-19-revenue-jump-in-q2-2026-beats-on-eps/"
+      },
+      {
+        "label": "VIX 15.84 (confirmed, est. -6.3%) — most compressed since July 6; well below 17 regime trigger; two-session vol compression intact post-Iran shock",
+        "url": "https://fred.stlouisfed.org/series/VIXCLS"
+      },
+      {
+        "label": "Trump declares Iran ceasefire 'OVER' on July 10; Hormuz tanker traffic 'effectively grinding to a halt' (Al Jazeera July 10) — Hormuz closure tail builds ahead of CPI July 14",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-10/trump-says-iran-ceasefire-over-but-talks-on-deal-to-continue"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7575.39, "change_pct": 0.42, "as_of": "2026-07-10T20:00:00Z" },
+    "nasdaq": { "level": 26281.61, "change_pct": 0.29, "as_of": "2026-07-10T20:00:00Z" },
+    "vix":    { "level": 15.84, "change_pct": -6.28, "as_of": "2026-07-10T20:00:00Z" },
+    "ust10y": { "level": 4.54, "change_bps": -4, "as_of": "2026-07-10T20:00:00Z" },
+    "dxy":    { "level": 101.00, "change_pct": 0.10, "as_of": "2026-07-10T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX", "value": 15.84, "trigger_above": 17, "unit": "" },
+    { "name": "SPX vs 7,460 dual-gate", "value": 7575.39, "trigger_below": 7460, "unit": "" },
+    { "name": "30Y Yield", "value": 5.06, "trigger_above": 5.00, "unit": "%" },
+    { "name": "DXY", "value": 101.00, "trigger_above": 100, "unit": "" },
+    { "name": "Brent", "value": 75.50, "trigger_above": 97, "unit": "$" },
+    { "name": "BTC Gate 2 ($62K floor)", "value": 64500, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$209.76 (est. +4% from $201.69 July 9 close). SECOND CONSECUTIVE CLOSE ABOVE $200 → FULL-SIZE ADD AUTHORIZED per four-gate protocol. Gate check: SPX >7,460 ✅, VIX <17 ✅, NVDA >$200 ✅, prior close >$195 ✅. Stop: close below $195 remains in force. August 26 Q2 FY27 earnings ($91B guide) is the fundamental clearing event.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SKHYV",
+      "note": "Opened $170 (+14.1% above $149 IPO), closed $168.01 (+12.8%). ABOVE $162 constructive threshold from July 9 briefing → 50% SKHY allocation for Monday July 13 regular trading authorized. Did NOT clear $175 strong-demand threshold → hold at 50%, not full allocation, until CPI July 14 resolves rate trajectory. Stop: SKHY close below $125.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "~$625 (est. +6% July 10). Best weekly performance since early 2024 (+15% on the week). AI cloud compute narrative (Meta building AI cloud to sell excess compute) driving institutional flows. July 29 Q2 earnings is the first quantification event. Constructive; do not chase above $640 without CPI confirmation.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "$400.23 (confirmed, range $395.70-$401.67 July 10). Minor pullback from $403.24 July 9 close. Apple $30B+ chip deal thesis intact. Morningstar 'Cheap Stocks' add unchanged. Stop $360, target $420 intact. Cleanest AI long.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$555.20 (confirmed July 10, +1.1% from ~$549 July 9). Consolidating after the July 9 +7.2% surge. No chase above $555; better entry still at $520-530 pullback. Q2 earnings late July for Instinct MI300X demand data.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "DAL",
+      "note": "Q2 2026: EPS $1.56 vs $1.51, revenue $17.7B vs $17.5B, full-year guide reaffirmed $6.50-$7.50. Stock fell 4% despite beat — sell-the-news pattern consistent with over-elevated expectations. Do not buy the dip; wait for stabilization.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "$126.79 (confirmed July 10). DoD AI thesis intact. Q2 earnings early August. Hold existing position; no new add until CPI clarity.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "~$64,500 (est. close; opened $63,184, rose to $64,380 at 8:39am ET). Up ~3% on the week. Gate 2 ($62,000 floor) clear by ~$2,500 buffer. Two consecutive UTC midnight closes above $63,000 achieved (est.) — full-size add conditions approaching but not formally completed. No add until confirmed close data.",
+      "sentiment": "positive"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "SKHY (full allocation)",
+      "reason": "SKHYV closed $168.01 — above the $162 constructive threshold (50% entry authorized) but below the $175 strong-demand threshold (full allocation). Hormuz escalation and CPI July 14 binary create a regime risk that could reverse the AI memory thesis quickly. Full allocation before CPI outcome invites maximum exposure at the peak uncertainty point.",
+      "better_entry": "After CPI July 14: if CPI ≤3.5% AND SKHY sustains above $162 into the week, upgrade to full allocation. Alternatively: SKHY closing above $175 for two consecutive sessions on above-average volume."
+    },
+    {
+      "ticker": "DAL (dip buy)",
+      "reason": "DAL beat on EPS ($1.56 vs $1.51) and revenue ($17.7B vs $17.5B), yet sold off 4% — a sell-the-news reaction that signals distribution at current valuations. Record quarterly fuel expense was disclosed alongside the beat, and forward guidance already embedded that cost. Buying the post-beat dip chases negative momentum in an airline stock with an unresolved Hormuz oil-price tail risk.",
+      "better_entry": "DAL stabilization over 2-3 sessions post-earnings, with WTI confirmed below $73 and Hormuz tension de-escalating. Q3 pre-announcement in October is the next fundamental catalyst."
+    },
+    {
+      "ticker": "TLT / long-duration bonds",
+      "reason": "10Y UST eased only slightly to 4.54% on July 10 — insufficient to signal a trend reversal in rates. 30Y estimated above 5.00% for the fourth consecutive session. Cleveland Fed June CPI nowcast remains near 4%, and the September FOMC hike probability is still above 60%. Adding duration longs before the July 14 CPI print risks a –3-5% loss on a hot print.",
+      "better_entry": "After June CPI on July 14. If CPI ≤3.5%, September hike probability collapses and TLT becomes a buy. Do not add duration ahead of the print."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA",
+      "direction": "long",
+      "thesis": "The four-gate protocol is complete: NVDA closed ~$209.76 (est.) on July 10 — the second consecutive session above $200, with SPX >7,460 and VIX <17. Full-size position add is authorized per the protocol established July 6. The August 26 Q2 FY27 earnings ($91B revenue guide) is the fundamental clearing event; the prior period's China H200 approval and SKHY/MU HBM4 demand signals all reinforce NVDA's data-center thesis through the summer.",
+      "entry": "Add to full size (target 20-25% allocation) at next market open (July 13) near $205-210. Stop: close below $195 triggers mandatory full exit at next open. Target 1: $225 (pre-earnings momentum). Target 2: $250+ on confirmed $91B Q2 beat August 26.",
+      "invalidation": "NVDA close below $195. SPX closes below 7,460. CPI ≥4.5% on July 14 (AI multiple compression). Hormuz-driven WTI spike above $85 (inflation shock).",
+      "conviction": "medium",
+      "horizon": "4-8 weeks through August 26 Q2 FY27 earnings"
+    },
+    {
+      "asset": "SKHY (SK Hynix ADR)",
+      "direction": "long",
+      "thesis": "SKHYV's $168.01 close (+12.8% from $149 IPO) confirms the July 9 briefing's constructive threshold was cleared — institutional demand was real, not bookbuilding theater. The 50% entry protocol is triggered for Monday July 13 regular trading at open. Micron's concurrent $3B US supply-chain investment (July 9) reinforces that HBM4 demand is a 2026-2027 multi-year capex commitment. MSCI World inclusion eligibility clock starts July 13, providing a passive-inflow tailwind over the next 2-3 quarters.",
+      "entry": "Enter 50% SKHY allocation at July 13 market open (~$165-170 anticipated range). Stop: close below $125. Target: $180-200 on MSCI World inclusion passive inflows. Upgrade to full allocation if SKHY sustains above $175 for two sessions post-CPI.",
+      "invalidation": "SKHY closes below $149 IPO price on Monday. CPI ≥4.5% on July 14. NVDA Rubin supply-chain delay confirmed.",
+      "conviction": "medium",
+      "horizon": "Medium-term through MSCI World inclusion (est. 2-3 quarters post-listing)"
+    },
+    {
+      "asset": "TBT / XLE (dual hedge — rates + Hormuz tail)",
+      "direction": "hedge",
+      "thesis": "Two independent tail risks both resolve on July 14 CPI: (1) Rate risk: 10Y eased to only 4.54% on July 10; the 30Y remains above 5.00% for an estimated fourth consecutive session. If CPI prints ≥4.0%, the September hike probability spikes above 75% and TLT falls 3-5% — TBT captures this move. (2) Hormuz tail: Trump declared the ceasefire 'OVER' on July 10; Al Jazeera confirmed tanker traffic is 'effectively grinding to a halt.' If Hormuz disruption becomes inventory-visible in the next 2-3 weeks, WTI could spike above $80-85 — XLE captures the energy-equity premium while hedging against broad market downside from an oil shock.",
+      "entry": "TBT: hold existing position / add at current levels (10-12% portfolio allocation). XLE: add 5-7% geopolitical hedge at current levels. Stop TBT: June CPI ≤3.5% on July 14 (close immediately). Stop XLE: confirmed Iran-US ceasefire with Hormuz reopening. Target TBT: 30Y tests 5.25-5.35% on confirmed September hike.",
+      "invalidation": "CPI ≤3.5% on July 14 (close TBT immediately). Iran-US ceasefire announced with Hormuz reopened (trim XLE hedge, maintain core XLE energy equity position).",
+      "conviction": "medium",
+      "horizon": "TBT: through July 14 CPI; XLE hedge: through Hormuz resolution"
+    }
+  ],
+  "bear_case": "The session's most important signal may be the one the bulls are ignoring: DAL reported an earnings beat — stronger revenue, reaffirmed guidance — and fell 4%. This is a market pricing maximum perfection into each print and punishing anything short of a clear acceleration. If DAL's sell-the-news pattern at a record-fuel-expense quarter is the template for Q2 reporting season, then NVDA's full-size add protocol completing on July 10 and August 26 becoming the key event creates a 6-week window where the stock needs to hold $200+ without a fundamental catalyst — in a macro environment where Hormuz tanker traffic is 'effectively grinding to a halt' (Al Jazeera), Trump has declared the ceasefire 'OVER,' and the Cleveland Fed's June CPI nowcast is ~4%. The oil disruption lag is the critical mechanism: if Hormuz tanker clearance has stalled since Tuesday (July 7), US crude inventories will reflect the supply gap by late July, pushing WTI back above $80 and reigniting the inflation expectations that CPI July 14 cannot yet show. A hot CPI print (≥4.0%) combined with a Hormuz-driven WTI spike above $80 would produce a rapid regime reversal: September hike becomes base case, 30Y pushes toward 5.35%, AI multiples compress, and the dual-gate floor at 7,460 — currently 115 points below — becomes the key support to watch. Counter-argument invalidation: if CPI July 14 prints ≤3.5% AND a back-channel Iran ceasefire is announced before July 17, the HOLD upgrades to BUY at high conviction and the gate-authorized positions are confirmed. If SPX closes below 7,460 or VIX closes above 17 before July 14, the regime reverts to BEARISH regardless of SKHYV or NVDA price action.",
+  "body_mdx": "data/briefings/markets/2026-07-10-night.mdx"
+}

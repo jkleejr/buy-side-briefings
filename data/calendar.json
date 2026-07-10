@@ -1,26 +1,33 @@
 {
   "events": [
     {
-      "date": "2026-07-10",
-      "label": "SKHYV when-issued trading begins (SK Hynix ADR, IPO price $149); DAL Q2 earnings (pre-market)",
+      "date": "2026-07-13",
+      "label": "SKHY regular trading begins on Nasdaq — SK Hynix ADR full debut; SKHYV closed $168.01 (+12.8%); 50% SKHY entry authorized at open",
       "kind": "OTHER",
-      "tickers": ["SKHY", "TSM", "NVDA", "AVGO", "DAL"],
-      "note": "Two July 10 clearing events: (1) SKHYV when-issued trading — first public market test of SK Hynix ADR at $149 IPO price. Evaluation thresholds: >$162 (+9%) = constructive demand signal, enter SKHY 50% allocation for Monday; >$175 (+17%) = strong demand confirmed, full allocation; <$149 = demand miss in public market. 7x oversubscribed, $26.5B raised (record foreign IPO). Cornerstone investors include Baillie Gifford, Coatue, Situational Awareness Partners ($7B combined). MSCI World inclusion clock starts July 13. (2) DAL Q2 earnings — first major airline read with WTI at $71.74 (-2.42% July 9); a beat with raised guidance = travel demand resilient and oil tailwind acknowledged; a miss = growth scare bleeding into premium consumer spending."
+      "tickers": ["SKHY", "TSM", "NVDA", "MU", "AVGO"],
+      "note": "SKHYV when-issued session July 10 RESULT: opened $170, closed $168.01 (+12.8% above $149 IPO; 'soared 13%' in debut). ABOVE the $162 constructive threshold → 50% SKHY entry at Monday July 13 open is authorized per protocol. BELOW the $175 strong-demand threshold → full allocation NOT yet authorized; wait for CPI July 14 and two closes above $175 post-CPI. SKHY regular trading begins July 13. MSCI World inclusion eligibility clock starts July 13. Reference price for Monday: $168.01 SKHYV close. Evaluation: SKHY holds above $162 → position intact; falls below $155 → re-evaluate; closes below $149 → demand miss in regular market, exit."
     },
     {
       "date": "2026-07-13",
-      "label": "SKHY regular trading begins on Nasdaq — SK Hynix ADR full debut; MSCI World inclusion clock starts",
-      "kind": "OTHER",
-      "tickers": ["SKHY", "TSM", "NVDA", "MU", "AVGO"],
-      "note": "SK Hynix ($28B offering, 7x oversubscribed, priced at $149/ADS on July 9) begins regular Nasdaq trading under SKHY on July 13 (after when-issued SKHYV session July 10). MSCI World inclusion eligibility clock starts at listing — typically 2-3 quarters to achieve inclusion, triggering passive inflows. Opening price vs. $149 IPO and subsequent session trajectory defines the institutional AI memory demand premium. Full entry activated if SKHY sustains above $162 through first week of trading."
+      "label": "Iran-US diplomatic talks expected in Switzerland (weekend / early week) — ceasefire 'OVER,' Hormuz tanker halt ongoing",
+      "kind": "GEO",
+      "tickers": ["XLE", "TBT", "TLT", "QQQ", "NVDA", "SKHY"],
+      "note": "Trump declared the ceasefire 'OVER' on July 10 while agreeing to continue talks with Iran. Qatari and Pakistani mediators active; next round of US-Iran talks expected in Switzerland. Al Jazeera July 10: Hormuz tanker traffic 'effectively grinding to a halt' — no large vessel crossed the US-coordinated route since July 7. Oil spot (WTI $71.2) has not yet priced the supply disruption; 2-4 week inventory lag before drawdown is visible. A ceasefire/Hormuz reopening announcement over the weekend or Monday would spike equity futures, send oil lower, and improve June CPI forward outlook. Watch for: any IRGC statement on tanker clearance, any back-channel ceasefire signal from Qatar."
     },
     {
       "date": "2026-07-14",
-      "label": "June CPI release (8:30 AM ET) — Cleveland Fed nowcast ~3.96% YoY; FOMC September hike 68.8%",
+      "label": "June CPI release (8:30 AM ET) — Cleveland Fed nowcast ~4.0% YoY; Continuum Economics: gasoline –9.2% may soften headline; core +0.3% MoM est.",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "NVDA", "MU", "SKHY", "BTC"],
-      "note": "June CPI is the summer's regime-defining binary. Context: May CPI 4.2%; Cleveland Fed June nowcast ~3.96% YoY (directional disinflation); FOMC September hike probability 68.8% (from minutes July 8); WTI averaged $71-74 in June (Brent $75-78); ISM Prices Paid fell to 73.0 from 82.1. Scenario A: CPI ≤3.5% → September hike probability collapses; 30Y retreats below 5.00%; BUY upgrades to HIGH conviction; full NVDA/AVGO/SKHY adds activated. Scenario B: CPI ≥4.0% → September hike becomes base case; STEP ASIDE/BEARISH warranted; TLT short target achieved. Scenario C: 3.5-4.0% → maintain MEDIUM HOLD into July 28 FOMC. Do not add gross exposure before the print."
+      "note": "June CPI is the summer's regime-defining binary. Updated context: May CPI 4.2%; Cleveland Fed June nowcast ~4.0% YoY; Continuum Economics preview (Jul 14) projects gasoline –9.2% pulling energy down 4.4% — headline may soften despite core at +0.3% MoM. FOMC September hike probability ~60-65%; 30Y above 5.00% for 4th consecutive session. Hormuz tanker halt (since Jul 7) is a CPI tailwind risk for July CPI (not June). Scenario A (CPI ≤3.5%): September hike probability collapses; 30Y retreats below 5.00%; BUY upgrades to HIGH conviction; full NVDA/AVGO/SKHY adds activated; close TBT immediately. Scenario B (CPI ≥4.0%): September hike becomes base case; STEP ASIDE/BEARISH warranted; TLT short target achieved; trim AI longs. Scenario C (3.5-4.0%): maintain MEDIUM HOLD into July 28 FOMC."
+    },
+    {
+      "date": "2026-07-15",
+      "label": "JPM, GS, WFC Q2 bank earnings pre-market; post-CPI regime reset session",
+      "kind": "EARNINGS",
+      "tickers": ["JPM", "GS", "WFC", "TBT", "TLT"],
+      "note": "First major bank Q2 prints following June CPI. Banks are positioned to benefit from higher rates (NIM expansion) but face loan-loss risk if the rate environment begins to pressure credit quality. A clean JPM/GS beat with stable credit quality = 'higher for longer is not recessionary' → constructive for AI longs. NIM miss or rising provisions = growth scare signal. Arrives the day after CPI, when the regime framework for July-August will have been reset by the June print."
     },
     {
       "date": "2026-07-22",
