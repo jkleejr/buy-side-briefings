@@ -226,6 +226,16 @@ export function verdictColor(code: string): {
   }
 }
 
+/**
+ * Honest read-time in minutes from the actual text (~200 wpm). The homepage
+ * used to estimate from the verdict summary alone, promising "5 min" over a
+ * 5,000-word briefing — always compute from the words the reader will face.
+ */
+export function readMinutes(text: string): number {
+  const words = text.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
 /** Current time as "HH:MM UTC" — stamped at server render, i.e. the moment the data was fetched. */
 export function nowUtcHM(): string {
   const d = new Date();

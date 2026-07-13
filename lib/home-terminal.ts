@@ -1,9 +1,11 @@
 import { getTradeQuotes } from "@/lib/markets";
 import {
   getAllMarketsVerdicts,
+  getBriefing,
   getCalendarEvents,
   type MarketsVerdict,
 } from "@/lib/data";
+import { readMinutes as readMinutesOfText } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
 // Home terminal data assembly.
@@ -84,6 +86,10 @@ export type CalRow = {
   kind: string;
   note?: string;
   timeET?: string;
+  /** The week's binary event — the one the timeline marks hot. */
+  hot?: boolean;
+  /** Whole days until the event (0 = today). */
+  tMinus?: number;
 };
 
 export type HomeData = {
@@ -216,12 +222,15 @@ function shortLabel(s: string): string {
   return label.toUpperCase().slice(0, 18);
 }
 
+// Honest read-time: count the words the briefing page will actually show —
+// the full body (authored .mdx or synthesized) plus the verdict summary and
+// sourced points. The old estimate counted only the summary and promised
+// "5 min" over a 5,000-word night brief.
 function readMinutes(v: MarketsVerdict): number {
-  const parts: string[] = [v.verdict.rationale_short];
+  const body = getBriefing(v.routine, `${v.date}-${v.window}`)?.body ?? "";
+  const parts: string[] = [body, v.verdict.rationale_short];
   for (const s of v.verdict.supporting_data ?? []) parts.push(s.label);
-  for (const r of v.regime_risk ?? []) if (r.status) parts.push(r.status);
-  const words = parts.join(" ").split(/\s+/).filter(Boolean).length;
-  return Math.max(2, Math.round(words / 200));
+  return Math.max(2, readMinutesOfText(parts.join(" ")));
 }
 
 function dateLabelOf(date: string): string {
@@ -494,26 +503,34 @@ export async function getHomeData(): Promise<HomeData> {
     }));
 
   const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
-  const calendar: CalRow[] = getCalendarEvents()
-    .filter((e) => e.date >= today)
-    .slice(0, 6)
-    .map((e) => {
-      const d = new Date(`${e.date}T12:00:00Z`);
-      return {
-        day: d
-          .toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" })
-          .toUpperCase(),
-        dateLabel: d.toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-          timeZone: "UTC",
-        }),
-        label: e.label,
-        kind: e.kind,
-        note: e.note,
-        timeET: e.time_et,
-      };
-    });
+  const upcoming = getCalendarEvents().filter((e) => e.date >= today);
+  // The week's binary — the first macro-regime event ahead. Marked hot on the
+  // timeline so the countdown is legible at a glance.
+  const BINARY_KINDS = new Set(["MACRO", "FOMC", "CPI", "NFP", "PCE"]);
+  const hotDate = upcoming.find((e) => BINARY_KINDS.has(e.kind.toUpperCase()))?.date;
+  const calendar: CalRow[] = upcoming.slice(0, 6).map((e) => {
+    const d = new Date(`${e.date}T12:00:00Z`);
+    const tMinus = Math.max(
+      0,
+      Math.round((Date.parse(e.date) - Date.parse(today)) / 86_400_000),
+    );
+    return {
+      day: d
+        .toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" })
+        .toUpperCase(),
+      dateLabel: d.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        timeZone: "UTC",
+      }),
+      label: e.label,
+      kind: e.kind,
+      note: e.note,
+      timeET: e.time_et,
+      hot: BINARY_KINDS.has(e.kind.toUpperCase()) && e.date === hotDate,
+      tMinus,
+    };
+  });
 
   const todayLabel = new Date()
     .toLocaleDateString("en-US", {

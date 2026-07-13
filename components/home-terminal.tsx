@@ -194,6 +194,68 @@ function Wire({ wire }: { wire: WireRow[] }) {
   );
 }
 
+// --- the week, on a clock (Idea 04) -------------------------------------------
+// A horizontal timeline of the dated catalysts, with the binary event marked
+// hot — the at-a-glance layer; the detailed card list keeps the notes below.
+
+function timelineLabel(label: string): string {
+  const cut = label.split(/\s+[—–]\s+|\s*\(/)[0].trim();
+  return cut.length > 44 ? `${cut.slice(0, 44).trim()}…` : cut;
+}
+
+function WeekTimeline({ calendar }: { calendar: CalRow[] }) {
+  // One node per date — two catalysts can share a day (the card list below
+  // keeps both); prefer the hot one so the binary never gets shadowed.
+  const byDate = new Map<string, CalRow>();
+  for (const c of calendar) {
+    const key = `${c.day}-${c.dateLabel}`;
+    const existing = byDate.get(key);
+    if (!existing || (c.hot && !existing.hot)) byDate.set(key, c);
+  }
+  const nodes = Array.from(byDate.values()).slice(0, 5);
+  if (nodes.length < 2) return null;
+  return (
+    <div className="overflow-x-auto">
+      <div className="relative grid min-w-[560px] auto-cols-fr grid-flow-col pt-1">
+        <div className="absolute left-[8%] right-[8%] top-[46px] h-[2px] bg-[var(--border-strong)]" />
+        {nodes.map((c, i) => (
+          <div key={i} className="relative px-2 text-center">
+            <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--faint)]">
+              {c.day}
+            </div>
+            <div
+              className={`font-mono text-[19px] font-semibold tabular-nums leading-[1.15] ${
+                c.hot ? "text-[var(--down)]" : "text-[var(--foreground)]"
+              }`}
+            >
+              {c.dateLabel.replace(/^[A-Za-z]+ /, "")}
+            </div>
+            <div
+              className={`relative z-[1] mx-auto my-2 h-[11px] w-[11px] rounded-full border-2 border-[var(--background)] ${
+                c.hot
+                  ? "bg-[var(--down)] shadow-[0_0_0_4px_color-mix(in_srgb,var(--down)_20%,transparent)]"
+                  : "bg-[var(--border-strong)]"
+              }`}
+            />
+            <div
+              className={`mx-auto max-w-[150px] text-[12px] leading-[1.35] ${
+                c.hot ? "font-semibold text-[var(--foreground)]" : "text-[var(--dim)]"
+              }`}
+            >
+              {timelineLabel(c.label)}
+              {c.hot && (
+                <b className="mt-1 block font-mono text-[9.5px] font-bold uppercase tracking-[0.12em] text-[var(--down)]">
+                  {c.tMinus === 0 ? "today" : `T−${c.tMinus}`} · the binary
+                </b>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // --- right column ----------------------------------------------------------------
 
 function WeekAhead({ calendar }: { calendar: CalRow[] }) {
@@ -201,7 +263,7 @@ function WeekAhead({ calendar }: { calendar: CalRow[] }) {
   const hot = new Set(["CPI", "FOMC", "NFP", "PCE", "GEO"]);
   return (
     <div>
-      <SectionRule>The week ahead</SectionRule>
+      <SectionRule>Catalysts in detail</SectionRule>
       {calendar.map((c, i) => (
         <div
           key={i}
@@ -323,7 +385,15 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
 
           <Hero brief={current} />
 
-          {/* What matters + the week ahead — the two forward-looking modules. */}
+          {/* The week on a clock — full-width glance layer above the columns. */}
+          {data.calendar.length >= 2 && (
+            <div className="pt-12">
+              <SectionRule>The week ahead</SectionRule>
+              <WeekTimeline calendar={data.calendar} />
+            </div>
+          )}
+
+          {/* What matters + catalyst detail — the two forward-looking modules. */}
           <div className="grid gap-12 pt-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
             <WhatMatters points={current.keyPoints} />
             <WeekAhead calendar={data.calendar} />

@@ -456,14 +456,9 @@ function synthesizeBriefingBody(v: SynthesizableVerdict): string {
     v.verdict.rationale_short,
   );
 
-  const points = v.verdict.supporting_data ?? [];
-  if (points.length) {
-    out.push("", "## Key points", "");
-    for (const p of points) {
-      const label = p.label.replace(/^★\s*/, "");
-      out.push(p.url ? `- [${label}](${p.url})` : `- ${label}`);
-    }
-  }
+  // Supporting points are NOT synthesized into the body — the briefing page's
+  // evidence tier renders them (with sources) above the full read, so writing
+  // them here would print every point twice.
 
   const setups = v.trade_setups ?? [];
   if (setups.length) {
