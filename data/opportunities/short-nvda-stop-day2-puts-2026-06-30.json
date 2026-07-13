@@ -42,8 +42,15 @@
   ],
   "created_at": "2026-06-30",
   "expires_at": "2026-07-11",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["NVDA", "options", "puts", "reconstitution", "AI", "semis", "short", "catalyst", "defined-risk"],
+  "outcome": {
+    "closed_at": "2026-07-10",
+    "final_price": 210.96,
+    "return_pct": -8.8,
+    "outcome_label": "Stop triggered — NVDA closed $210.96 on July 10",
+    "note": "NVDA closed $210.96 on July 10, breaching the $200 daily-close stop. The reconstitution exhaustion thesis failed: TSMC Q2 revenue +36% ($39.6B) and SKHY 7x oversubscription reset the AI semis multiple, pulling NVDA from $196 to $210+ in 9 sessions. The July 11 $190 puts expired deeply OTM and worthless. Actual loss was approximately 100% of put premium (~5% of notional, capped at premium paid per the defined-risk structure). The -8.8% return_pct reflects the directional adverse move on the underlying ($193.85 → $210.96)."
+  },
   "levels": {
     "entry_low": 191.0,
     "entry_high": 196.0,
