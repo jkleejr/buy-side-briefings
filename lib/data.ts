@@ -309,49 +309,79 @@ export function getVerdictByRef(
 }
 
 export function getAllBriefings(): BriefingMeta[] {
-  const briefingsDir = path.join(DATA_DIR, "briefings");
-  if (!fs.existsSync(briefingsDir)) return [];
-  const routines = fs.readdirSync(briefingsDir).filter((d) => {
-    return fs.statSync(path.join(briefingsDir, d)).isDirectory();
-  });
   const verdictsDir = path.join(DATA_DIR, "verdicts");
-  const all: BriefingMeta[] = [];
-  for (const routine of routines) {
-    const dir = path.join(briefingsDir, routine);
-    const files = fs.readdirSync(dir).filter((f) => f.endsWith(".mdx"));
-    for (const file of files) {
-      const slug = file.replace(/\.mdx$/, "");
-      const raw = fs.readFileSync(path.join(dir, file), "utf-8");
-      const { data } = matter(raw);
-      const verdictRef: string | undefined = data.verdict_ref;
-      let generatedAt: string | undefined;
-      let verdictCode: VerdictCode | undefined;
-      let verdictRationale: string | undefined;
-      if (verdictRef) {
-        const verdictPath = path.join(verdictsDir, `${verdictRef}.json`);
-        const v = readJson<{
-          generated_at?: string;
-          verdict?: { code?: VerdictCode; rationale_short?: string };
-        }>(verdictPath);
-        if (v?.generated_at) generatedAt = v.generated_at;
-        if (v?.verdict?.code) verdictCode = v.verdict.code;
-        if (v?.verdict?.rationale_short) verdictRationale = v.verdict.rationale_short;
+  const byKey = new Map<string, BriefingMeta>();
+
+  // 1. Authored .mdx briefings — the richest editions, source of truth for
+  //    title/window when both a file and its verdict exist.
+  const briefingsDir = path.join(DATA_DIR, "briefings");
+  if (fs.existsSync(briefingsDir)) {
+    const routines = fs
+      .readdirSync(briefingsDir)
+      .filter((d) => fs.statSync(path.join(briefingsDir, d)).isDirectory());
+    for (const routine of routines) {
+      const dir = path.join(briefingsDir, routine);
+      const files = fs.readdirSync(dir).filter((f) => f.endsWith(".mdx"));
+      for (const file of files) {
+        const slug = file.replace(/\.mdx$/, "");
+        const raw = fs.readFileSync(path.join(dir, file), "utf-8");
+        const { data } = matter(raw);
+        const verdictRef: string | undefined = data.verdict_ref;
+        let generatedAt: string | undefined;
+        let verdictCode: VerdictCode | undefined;
+        let verdictRationale: string | undefined;
+        if (verdictRef) {
+          const v = readJson<{
+            generated_at?: string;
+            verdict?: { code?: VerdictCode; rationale_short?: string };
+          }>(path.join(verdictsDir, `${verdictRef}.json`));
+          if (v?.generated_at) generatedAt = v.generated_at;
+          if (v?.verdict?.code) verdictCode = v.verdict.code;
+          if (v?.verdict?.rationale_short) verdictRationale = v.verdict.rationale_short;
+        }
+        byKey.set(`${routine}/${slug}`, {
+          slug,
+          routine,
+          date: normalizeDate(data.date),
+          window: data.window,
+          title: data.title ?? `${routine} ${slug}`,
+          verdict_ref: verdictRef,
+          is_seed: data.is_seed,
+          generated_at: generatedAt,
+          verdict_code: verdictCode,
+          verdict_rationale: verdictRationale,
+        });
       }
-      all.push({
-        slug,
-        routine,
-        date: normalizeDate(data.date),
-        window: data.window,
-        title: data.title ?? `${routine} ${slug}`,
-        verdict_ref: verdictRef,
-        is_seed: data.is_seed,
-        generated_at: generatedAt,
-        verdict_code: verdictCode,
-        verdict_rationale: verdictRationale,
-      });
     }
   }
-  return all.sort((a, b) => {
+
+  // 2. Verdict-only days — the automation ships a verdict JSON but no .mdx.
+  //    Surface them as briefings too (the page synthesizes a body from the
+  //    verdict) so the homepage links resolve and the archive stays complete.
+  const verdicts = [
+    ...getAllMarketsVerdicts(),
+    ...getAllCryptoVerdicts(),
+    ...getAllKospiVerdicts(),
+  ];
+  for (const v of verdicts) {
+    const slug = `${v.date}-${v.window}`;
+    const key = `${v.routine}/${slug}`;
+    if (byKey.has(key)) continue;
+    byKey.set(key, {
+      slug,
+      routine: v.routine,
+      date: v.date,
+      window: v.window,
+      title: `${v.routine} ${slug}`,
+      verdict_ref: `${v.routine}-${slug}`,
+      is_seed: v.is_seed,
+      generated_at: v.generated_at,
+      verdict_code: v.verdict.code,
+      verdict_rationale: v.verdict.rationale_short,
+    });
+  }
+
+  return Array.from(byKey.values()).sort((a, b) => {
     const aKey = `${a.date}-${a.window ?? ""}`;
     const bKey = `${b.date}-${b.window ?? ""}`;
     return bKey.localeCompare(aKey);
@@ -360,19 +390,109 @@ export function getAllBriefings(): BriefingMeta[] {
 
 export function getBriefing(routine: string, slug: string): Briefing | null {
   const file = path.join(DATA_DIR, "briefings", routine, `${slug}.mdx`);
-  if (!fs.existsSync(file)) return null;
-  const raw = fs.readFileSync(file, "utf-8");
-  const { data, content } = matter(raw);
+  if (fs.existsSync(file)) {
+    const raw = fs.readFileSync(file, "utf-8");
+    const { data, content } = matter(raw);
+    return {
+      slug,
+      routine,
+      date: normalizeDate(data.date),
+      window: data.window,
+      title: data.title ?? `${routine} ${slug}`,
+      verdict_ref: data.verdict_ref,
+      is_seed: data.is_seed,
+      body: content,
+    };
+  }
+  // No hand-written .mdx on disk. Under verdict-only automation most days ship
+  // just a verdict JSON, so synthesize a readable briefing from its structured
+  // fields — otherwise the homepage "Full briefing" link 404s.
+  const ref = `${routine}-${slug}`;
+  const v = getVerdictByRef(ref);
+  if (!v) return null;
   return {
     slug,
     routine,
-    date: normalizeDate(data.date),
-    window: data.window,
-    title: data.title ?? `${routine} ${slug}`,
-    verdict_ref: data.verdict_ref,
-    is_seed: data.is_seed,
-    body: content,
+    date: v.date,
+    window: v.window,
+    title: `${routine} ${slug}`,
+    verdict_ref: ref,
+    is_seed: v.is_seed,
+    body: synthesizeBriefingBody(v),
   };
+}
+
+/** Fields the briefing synthesizer needs — the shared subset of every verdict. */
+type SynthesizableVerdict = {
+  date: string;
+  window: string;
+  verdict: {
+    emoji?: string;
+    label: string;
+    rationale_short: string;
+    supporting_data?: SupportingPoint[];
+  };
+  trade_setups?: TradeSetup[];
+  dont_buy?: DontBuy[];
+  bear_case?: string;
+};
+
+/**
+ * Render a verdict's structured fields as briefing markdown. Used only as the
+ * fallback body when a day has a verdict but no authored .mdx. Mirrors the shape
+ * of a real briefing (verdict → key points → setups → bear case) so the page
+ * reads consistently with hand-written editions.
+ */
+function synthesizeBriefingBody(v: SynthesizableVerdict): string {
+  const out: string[] = [];
+  out.push(
+    `> Auto-generated from the ${v.date} ${v.window} market verdict. ` +
+      `Educational analysis only — not investment advice.`,
+    "",
+    `## Verdict — ${[v.verdict.emoji, v.verdict.label].filter(Boolean).join(" ")}`,
+    "",
+    v.verdict.rationale_short,
+  );
+
+  const points = v.verdict.supporting_data ?? [];
+  if (points.length) {
+    out.push("", "## Key points", "");
+    for (const p of points) {
+      const label = p.label.replace(/^★\s*/, "");
+      out.push(p.url ? `- [${label}](${p.url})` : `- ${label}`);
+    }
+  }
+
+  const setups = v.trade_setups ?? [];
+  if (setups.length) {
+    out.push("", "## Trade setups");
+    for (const s of setups) {
+      out.push(
+        "",
+        `### ${s.asset} — ${s.direction} · ${s.conviction} conviction · ${s.horizon}`,
+        "",
+        s.thesis,
+        "",
+        `**Entry:** ${s.entry}`,
+        "",
+        `**Invalidation:** ${s.invalidation}`,
+      );
+    }
+  }
+
+  if (v.bear_case) {
+    out.push("", "## Bear case", "", v.bear_case);
+  }
+
+  const avoid = v.dont_buy ?? [];
+  if (avoid.length) {
+    out.push("", "## What we're avoiding", "");
+    for (const d of avoid) {
+      out.push(`- **${d.ticker}** — ${d.reason} _Better entry: ${d.better_entry}_`);
+    }
+  }
+
+  return out.join("\n");
 }
 
 // ---- Watchlist (user-editable file at data/watchlist.json) ----------------
