@@ -5,7 +5,6 @@ import Link from "next/link";
 import type {
   HomeData,
   BriefView,
-  MetricCard,
   SectorRow,
   WireRow,
   CalRow,
@@ -110,44 +109,6 @@ function Hero({ brief }: { brief: BriefView }) {
         Read {brief.window === "morning" ? "this morning's" : "tonight's"} briefing
         <span className="text-[var(--dim)]">· {brief.readMin} min →</span>
       </Link>
-    </div>
-  );
-}
-
-// --- tape ----------------------------------------------------------------------
-
-function Tape({ metrics }: { metrics: MetricCard[] }) {
-  if (!metrics.length) return null;
-  return (
-    <div
-      className="mt-10 flex flex-wrap border-b border-[var(--border)]"
-      style={{ borderTop: "1px solid var(--foreground)" }}
-    >
-      {metrics.map((m) => (
-        <div
-          key={m.label}
-          className="min-w-[140px] flex-1 border-r border-[var(--border)] p-4 last:border-r-0"
-        >
-          <div className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-[var(--dim)]">
-            {m.label}
-          </div>
-          <div className="mt-1.5 font-mono text-[22px] font-semibold tabular-nums">
-            {m.value}
-            <span
-              className={[
-                "ml-2 text-[12.5px] font-normal",
-                m.dir === "up"
-                  ? "text-[var(--up)]"
-                  : m.dir === "down"
-                    ? "text-[var(--down)]"
-                    : "text-[var(--dim)]",
-              ].join(" ")}
-            >
-              {m.sub}
-            </span>
-          </div>
-        </div>
-      ))}
     </div>
   );
 }
@@ -361,7 +322,6 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
           )}
 
           <Hero brief={current} />
-          <Tape metrics={current.metrics} />
 
           {/* What matters + the week ahead — the two forward-looking modules. */}
           <div className="grid gap-12 pt-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
