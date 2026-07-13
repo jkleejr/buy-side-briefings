@@ -2,13 +2,13 @@
   "routine": "markets",
   "date": "2026-07-13",
   "window": "morning",
-  "generated_at": "2026-07-13T11:10:00Z",
+  "generated_at": "2026-07-13T11:30:00Z",
   "is_seed": false,
   "verdict": {
     "code": "step_aside",
     "emoji": "🟠",
     "label": "STEP ASIDE — Iran ceasefire collapsed; fresh US-Iran strikes overnight; Hormuz closure disputed; WTI +4% to ~$74; BTC $62,953 (Gate 2 at $62K nearly tested — 24h low $62,489); SKHY Seoul -13% / Kospi circuit-breaker; ES futures -0.51%; hold NVDA $195 stop / reduce SKHY to 25%; XLE/TBT hedges intact; CPI+Warsh+bank triple-stack July 14",
-    "headline": "Iran ceasefire collapse and BTC Gate 2 pressure turn Monday's dual authorization into a risk-management pause",
+    "headline": "Iran strikes Hormuz shipping lanes as markets brace for Tuesday's inflation verdict",
     "conviction": "medium",
     "horizon": "Through July 14 CPI/Warsh/bank triple-stack; regime reassessment post-print",
     "rationale_short": "(1) ★★ IRAN CEASEFIRE COLLAPSED — US and Iranian forces exchanged strikes over the weekend; Iran claims the Strait of Hormuz is closed while US Central Command disputes this. The Islamabad MOU framework (June 18) is effectively in tatters following Trump's July 10 'OVER' declaration and fresh July 12-13 exchanges. US sea drones were deployed offensively for the first time; Iran struck US military facilities in Kuwait, Bahrain, Jordan, Oman, and Qatar. Brent +2.8-4.1% to ~$78-79; WTI +2.5-4.2% to ~$73-74 pre-market (CNBC July 13). CRITICAL: This oil move loads into JULY CPI (August BLS release), not tomorrow's June print. June CPI remains the 'last clean read' before the disruption — but if WTI breaks $80 before July 17, September hike probability spikes from ~60% toward 80%+, structurally re-pricing AI multiples. (2) ★★ BTC GATE 2 PRESSURE — BTC $62,953 (Crypto.com live 11:01 UTC July 13; 24h range $62,489-$64,428; -1.44% 24h). Gate 2 ($62,000 floor) tested within $489 on the 24h low — the closest approach since protocol initiation. No new BTC adds under any scenario. If BTC closes below $62,000: mandatory defensive adjustment protocol triggers. Soft June CPI → $65K-$68K target. Hot CPI or hawkish Warsh → Gate 2 test resumes. (3) ★ SKHY FIRST REGULAR TRADING DAY / SEOUL SHOCK — SK Hynix fell 13% in Seoul Monday morning, triggering a brief Kospi circuit-breaker (Kospi -8%). SKHY ADR in the US is holding materially better: day range $166.19-$177.00 (Investing.com July 13). The 50% authorization from the July 9 protocol is conditionally downgraded to 25% for Monday's open — enter only if SKHY ADR holds above $162 (constructive threshold) through 10:00 AM ET. Full 50% upgrade requires two consecutive closes above $175 post-CPI July 14 AND CPI ≤3.5%. MSCI World inclusion eligibility clock starts today. (4) ★ ES/NQ FUTURES NEGATIVE — S&P 500 futures (ES) -0.51%, Nasdaq 100 futures (NQ) -1.24% pre-market (Yahoo Finance July 13). Chipmakers lead the drag: NVDA ~$205 pre-market (-2% from $209.76 July 10 close). Full-size add is authorized and remains so, but do not add in the first 30 minutes given volatility; stop remains close below $195. No add above $215 pre-CPI. (5) ★ TSMC +36% Q2 REVENUE — the dominant bull counterpoint: TSMC Q2 2026 revenue surged 36% YoY to NT$1.27T ($39.6B); June alone +68% YoY (Bloomberg July 13). AI demand at the foundry level is structurally intact and accelerating. This validates NVDA's Q2 FY27 $91B revenue guide and the HBM4 AI memory thesis (SKHY, MU). Geopolitics is a multiple headwind, not a demand headwind. (6) ★ JULY 14 TRIPLE-STACK — June CPI at 8:30 AM ET (consensus: -0.2% MoM / ~3.9% YoY; BUY trigger requires ≤3.5% YoY), Fed Chair Warsh House testimony 10 AM ET (Fed revised 2026 inflation forecast to 3.6%), and JPM/BAC/GS/WFC/C earnings pre-open — all within 90 minutes. Options: GS 6%, C 5.5%, WFC 5.5%, BAC 4.5%, JPM 4.4% implied moves. NIM direction = key financial sector regime signal. Iran oil spike adds a fourth wildcard to the stack."
@@ -115,6 +115,16 @@
       "ticker": "BTC-USD",
       "note": "$62,953 (Crypto.com live 11:01 UTC July 13; 24h range $62,489-$64,428; -1.44% 24h). Gate 2 ($62,000 floor) tested within $489 on session low — closest approach since protocol initiation. No new adds under any scenario. Close below $62,000 = mandatory defensive adjustment. Soft June CPI July 14 → September hike probability falls → $65K-$68K target. Hot CPI or Warsh hawkish → Gate 2 breach risk through July 15.",
       "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$126.79 (July 10 close). Hold existing. DoD AI contract thesis may benefit from escalating Iran defense budget environment. No new add until VIX sub-17. Q2 earnings early August.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Iran/Hormuz escalation is now base case. Brent +4% to ~$79; CENTCOM struck 140 Iranian targets Sunday. Hold 8-10% tactical hedge through Hormuz resolution. If WTI breaks $80, increase to 12%. Stop: confirmed Hormuz fully reopened with normal tanker traffic + Brent below $72.",
+      "sentiment": "positive"
     }
   ],
   "dont_buy": [
@@ -132,6 +142,11 @@
       "ticker": "Bank stocks (JPM, BAC, GS, WFC, C) pre-earnings",
       "reason": "All five report July 14 pre-open, stacked with CPI and Warsh debut testimony. Iran oil spike adds a fourth wildcard: higher oil → inflation → Fed hawkishness → credit quality risk — which simultaneously complicates the NIM expansion narrative. Options pricing 4.4-6% implied moves. The Iran dimension means the range of outcomes is wider than the options market is pricing.",
       "better_entry": "Post-CPI, post-earnings open July 14. If CPI ≤3.5% AND JPM/BAC NIM stable or expanding → financials as a tactical long at post-earnings opens. Hot CPI OR NIM miss → avoid sector through July 28-29 FOMC."
+    },
+    {
+      "ticker": "TLT / long-duration bonds",
+      "reason": "10Y UST at ~4.57% heading into a week where Iran oil spike will structurally load higher inflation into August CPI. Warsh testifies 90 minutes after June CPI with a revised 3.6% 2026 inflation forecast under an active Hormuz kinetic conflict. Core June CPI is sticky at ~2.9% YoY. Duration longs face two sequential inflation shocks (June CPI release + July CPI loading now from the oil spike) within 45 days. 30Y above 5.00% reflects a market that is not pricing duration as safe haven.",
+      "better_entry": "After CPI July 14 AND Warsh testimony. If CPI ≤3.5% AND Warsh signals a data-dependent pause or no further 2026 hikes → TLT becomes a tactical long. Do not add duration before that dual confirmation."
     }
   ],
   "trade_setups": [
