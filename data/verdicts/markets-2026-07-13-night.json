@@ -1,0 +1,88 @@
+{
+  "routine": "markets",
+  "date": "2026-07-13",
+  "window": "night",
+  "generated_at": "2026-07-13T20:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE / DEFENSIVE TILT",
+    "conviction": "medium",
+    "rationale_short": "May 15 playbook re-engaged: 30Y crossed back above the 5.0% trigger, oil spiked 9.4% on Iran Strait of Hormuz blockade, gold sold off alongside equities (deleveraging, not rotation), and chipmakers led the downside. Two of four regime triggers confirmed. Hold cash and reduce gross; let Tuesday's CPI determine whether this upgrades to BEARISH.",
+    "supporting_data": [
+      { "label": "30Y Treasury 5.101% (+3bps) — recrossed the 5.0% regime trigger that fired on May 15", "url": "https://www.cnbc.com/2026/07/13/treasury-yields-faltering-us-iran-ceasefire-bond-markets.html" },
+      { "label": "WTI Crude +9.42% to $78.14 — largest single-day surge since April; Trump reinstated Strait of Hormuz blockade + 20% tariff", "url": "https://finance.yahoo.com/markets/articles/p-500-nasdaq-futures-decline-095349478.html" },
+      { "label": "Gold -2% to ~$4,020 — fell alongside equities; deleveraging fingerprint, not flight-to-safety (same pattern as May 15)", "url": "https://www.cnbc.com/select/the-price-of-gold-today-july-13-2026/" },
+      { "label": "AMD -4%, MU -4%, SK Hynix -9% — chipmakers led downside; AI/semis capex anxiety reactivated with Iran chip-export risk", "url": "https://finance.yahoo.com/markets/articles/p-500-nasdaq-futures-decline-095349478.html" },
+      { "label": "VIX 16.89 — approaching 18 regime trigger; elevated vs Friday but not yet confirmed breach", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
+      { "label": "BTC -3.3% to $62,049; ETH -2.9% to $1,766 — crypto risk-off on geopolitical shock", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-july-13-2026-strong-price-openings-backtracking-this-morning-133042462.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7515.34,  "change_pct":  -0.79, "as_of": "2026-07-13T21:00:00Z" },
+    "nasdaq": { "level": 25873.18, "change_pct":  -1.55, "as_of": "2026-07-13T21:00:00Z" },
+    "vix":    { "level": 16.89,    "change_pct":   null,  "as_of": "2026-07-13T21:00:00Z" },
+    "ust10y": { "level": 4.59,     "change_bps":   3,    "as_of": "2026-07-13T21:00:00Z" },
+    "dxy":    { "level": 100.93,   "change_pct":  -0.02, "as_of": "2026-07-13T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                   "value": 16.89,  "trigger_above": 18,   "unit": "",  "status": "approaching" },
+    { "name": "30Y Yield",             "value": 5.101,  "trigger_above": 5.0,  "unit": "%", "status": "breached" },
+    { "name": "WTI Crude 1-day chg",   "value": 9.42,   "trigger_above": 8.0,  "unit": "%", "status": "breached" },
+    { "name": "Gold-equity co-decline", "value": -2.0,   "trigger_below": -1.5, "unit": "%", "status": "breached" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Touched $202 intraday, closed $210.96; chip sector epicenter of the selloff", "sentiment": "negative" },
+    { "ticker": "AMD",   "note": "-4% — led downside alongside MU; memory + AI demand concerns reignited",         "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "$316.47 — relative defensive bid; less AI-capex exposed than semis",             "sentiment": "neutral" },
+    { "ticker": "META",  "note": "$656.75 — down but held better than semis; growth software, not hardware",        "sentiment": "neutral" },
+    { "ticker": "TSM",   "note": "$430.45 — TSMC reports Thursday; will be the AI capex demand verdict for the week", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "$384.45 — AI networking trade under same pressure as NVDA/AMD",                    "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "SOXX", "reason": "AMD -4%, MU -4%, SK Hynix -9% today; semis face rate reset + Iran chip-export risk + AI capex uncertainty simultaneously", "better_entry": "post-CPI confirm + SOXX >$240 with VIX <17" },
+    { "ticker": "NVDA", "reason": "Intraday low $202 before closing $210.96 — flush not complete; TSMC Thursday is the real AI capex verdict", "better_entry": "$200-205 on capitulation OR $222 breakout with VIX <17" },
+    { "ticker": "IWM",  "reason": "Small caps face 30Y >5% structural headwind — same thesis as May 15 high-conviction IWM short; asymmetric risk if Tuesday CPI is hot", "better_entry": "wait for post-CPI direction before committing either way" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Energy is the only clear beneficiary of the Iran/oil shock. WTI +9.42% to $78.14 while XLE sits at $55.08 represents lagged sector catch-up. High-oil, rising-yield regime inflects energy FCF strongly; geopolitical premium may prove stickier than consensus.",
+      "entry": "$54.50-55.50 on any near-term pullback",
+      "invalidation": "$52.50 daily close",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLK",
+      "direction": "short",
+      "thesis": "Tech ETF -1.53% to $182.93 today. Elevated yields + oil inflation = worst macro regime for high-multiple growth. Iran semiconductor export risk adds sector-specific pressure. CPI risk asymmetrically bad for tech.",
+      "entry": "$182-185 on any bounce",
+      "invalidation": "$190 daily close",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "SOXX",
+      "direction": "short",
+      "thesis": "AMD -4%, MU -4%, SK Hynix -9%; semis led today's downside with specific chip-supply narrative. If CPI hot Tuesday, the May 15 SOXX short setup repeats. Conditional — do not enter before CPI.",
+      "entry": "post-CPI confirm; $235-240 on bounce",
+      "invalidation": "$245 daily close",
+      "conviction": "low",
+      "horizon": "1 week"
+    }
+  ],
+  "bear_case": "Counter-argument: Iran oil spikes historically mean-revert within 48-72 hours once diplomatic channels open or markets recognize the Strait of Hormuz disruption is a tariff, not supply destruction. The 30Y at 5.101% is +3bps from Friday, not the +12bps shock of May 15. June CPI will capture a month when WTI fell -20.4%, likely printing below consensus; a cool number Tuesday could trigger a violent intraday reversal. Banks reporting strong Q2 NII and resilient credit would replicate the May 20 BUY upgrade dynamic where the Step Aside resolved in three sessions. VIX at 16.89 has not confirmed regime break. Invalidation level: if SPX reclaims 7,600 by Wednesday with VIX below 17 and 30Y retreating below 4.90%, the Iran shock was a one-day overshoot and the call is wrong.",
+  "morning_call_grade": "no_briefing_today",
+  "week_ahead": {
+    "catalysts": [
+      { "date": "2026-07-14", "label": "June CPI + JPM/BAC/WFC/GS/C earnings + Fed Chair Warsh House testimony", "directional_bias": "Binary — cool CPI = bounce, hot CPI = BEARISH upgrade" },
+      { "date": "2026-07-15", "label": "June PPI + Warsh Senate testimony + MS/BLK/JNJ/ASML earnings", "directional_bias": "Consolidation; directional cue set by Tuesday" },
+      { "date": "2026-07-16", "label": "Retail sales + TSMC Q2 earnings + Netflix earnings", "directional_bias": "Pivotal for chips — TSMC guides on AI capex demand outlook" },
+      { "date": "2026-07-17", "label": "No major scheduled catalysts", "directional_bias": "Risk reduction / positioning ahead of next week" }
+    ]
+  },
+  "body_mdx": "data/briefings/markets/2026-07-13-night.mdx"
+}
