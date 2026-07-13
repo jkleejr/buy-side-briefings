@@ -1,32 +1,107 @@
 @import "tailwindcss";
 
 /* ============================================================================
-   JOURNAL — one serif family, ink on white, hairline rules.
-   The redesign's rule: every character on the site comes from the same serif
-   stack. Hierarchy is size, weight, and italic — never a font switch. Labels
-   are uppercase + letterspaced; datelines and sources are italic; data is bold
-   lining tabular figures. Green/red are reserved strictly for direction;
-   --amber (kept name, new value) is the single working accent.
+   JOURNAL II — "Design Notes" theme (approved 2026-07-13).
+   Warm ink-on-paper with a serif editorial voice and a monospace UTILITY face
+   for the small stuff: eyebrows, labels, chips, sources, and lined-up data.
+   Hierarchy is size + weight + italic within the serif; the mono carries the
+   instrument-panel role. Warm paper ground, hairline rules, lapis working
+   accent, oxblood secondary. Green/red are reserved strictly for direction.
+   The full palette is token-level so the whole site re-themes from here —
+   including the dark ground, which mirrors every token below.
    ========================================================================== */
 
 :root {
-  --background: #ffffff;
-  --foreground: #1e1d1a;
-  --panel: #faf9f5;
-  --panel-head: #f3f1ea;
-  --border: #e7e5df;
-  --border-strong: #d5d1c6;
+  --background: #faf8f2;      /* warm paper */
+  --foreground: #1f1d19;      /* ink */
+  --panel: #f3f0e7;           /* warm raised fill */
+  --panel-head: #ece8dc;
+  --border: #e4dfd4;          /* hairline rule */
+  --border-strong: #cbc5b7;
   /* Accent tokens keep their legacy names so every component re-themes from
-     here alone: --amber is now the lapis working accent, --cyan the oxblood
+     here alone: --amber is the lapis working accent, --cyan the oxblood
      secondary (evening editions, comparison series). */
   --amber: #2f4f9e;
   --amber-dim: #6b7aa3;
   --cyan: #8d3b34;
-  --up: #157f3d;
-  --down: #c93030;
-  --dim: #6f6d66;
+  --up: #2f7d4f;
+  --down: #b0392f;
+  --dim: #6d6a62;
+  --faint: #98938a;
+  /* Ink scale for body copy at graded softness (tokenized so dark mode maps). */
+  --ink-soft: #2b2924;
+  --ink-2: #3c3a34;
+  --ink-3: #4c4a43;
+  --warn: #b06a1e;            /* seed / stale amber */
   --serif: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
     "Times New Roman", serif;
+  --mono: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+/* Dark ground — every token remapped; components reference the vars at runtime
+   so they follow the viewer's OS preference with no per-component work. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #16150f;
+    --foreground: #ece6d9;
+    --panel: #201d16;
+    --panel-head: #26231b;
+    --border: #302d24;
+    --border-strong: #423e32;
+    --amber: #93a9e2;
+    --amber-dim: #8695bd;
+    --cyan: #d68d80;
+    --up: #6cbe84;
+    --down: #e28579;
+    --dim: #a29c8d;
+    --faint: #7d7869;
+    --ink-soft: #d8d2c4;
+    --ink-2: #c3bdb0;
+    --ink-3: #b0a99c;
+    --warn: #d89a4a;
+  }
+}
+
+/* Explicit theme overrides — a future in-page toggle stamps data-theme on the
+   root and must win over the OS media query in both directions. */
+:root[data-theme="light"] {
+  --background: #faf8f2;
+  --foreground: #1f1d19;
+  --panel: #f3f0e7;
+  --panel-head: #ece8dc;
+  --border: #e4dfd4;
+  --border-strong: #cbc5b7;
+  --amber: #2f4f9e;
+  --amber-dim: #6b7aa3;
+  --cyan: #8d3b34;
+  --up: #2f7d4f;
+  --down: #b0392f;
+  --dim: #6d6a62;
+  --faint: #98938a;
+  --ink-soft: #2b2924;
+  --ink-2: #3c3a34;
+  --ink-3: #4c4a43;
+  --warn: #b06a1e;
+}
+:root[data-theme="dark"] {
+  --background: #16150f;
+  --foreground: #ece6d9;
+  --panel: #201d16;
+  --panel-head: #26231b;
+  --border: #302d24;
+  --border-strong: #423e32;
+  --amber: #93a9e2;
+  --amber-dim: #8695bd;
+  --cyan: #d68d80;
+  --up: #6cbe84;
+  --down: #e28579;
+  --dim: #a29c8d;
+  --faint: #7d7869;
+  --ink-soft: #d8d2c4;
+  --ink-2: #c3bdb0;
+  --ink-3: #b0a99c;
+  --warn: #d89a4a;
 }
 
 @theme inline {
@@ -42,9 +117,10 @@
   --color-up: var(--up);
   --color-down: var(--down);
   --color-dim: var(--dim);
-  /* One family everywhere — sans/mono utilities resolve to the same serif. */
   --font-sans: var(--serif);
-  --font-mono: var(--serif);
+  /* The utility face is now a real monospace — every `font-mono` label,
+     eyebrow, chip and data figure across the site picks this up. */
+  --font-mono: var(--mono);
 }
 
 html,

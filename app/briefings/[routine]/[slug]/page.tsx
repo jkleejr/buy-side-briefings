@@ -6,13 +6,12 @@ import { getAllBriefings, getBriefing, getVerdictByRef } from "@/lib/data";
 import { getSpxDailyCloses } from "@/lib/markets";
 import { scoreVerdict, type ReturnWindow } from "@/lib/verdict-scoring";
 import {
-  cn,
   formatBriefingTitle,
   formatPct,
-  verdictColor,
   formatRelativeTime,
 } from "@/lib/utils";
 import Panel from "@/components/panel";
+import type { RegimeIndicator } from "@/lib/data";
 
 export const revalidate = 300;
 
@@ -89,7 +88,6 @@ export default async function BriefingPage({
 
   const verdictRef = briefing.verdict_ref;
   const verdict = verdictRef ? getVerdictByRef(verdictRef) : null;
-  const color = verdict ? verdictColor(verdict.verdict.code) : null;
 
   // SPX scoring only applies to the markets routine; crypto verdicts carry a
   // crypto snapshot and aren't graded against the S&P 500.
@@ -122,28 +120,12 @@ export default async function BriefingPage({
             </>
           )}
         </div>
-        <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+        <h1 className="font-serif text-[27px] font-semibold leading-[1.15] tracking-[-0.01em] text-[var(--foreground)] sm:text-[31px]">
           {formatBriefingTitle(briefing)}
         </h1>
-        {verdict && color && (
-          <div
-            className={cn(
-              "mt-2 inline-flex items-center gap-2 border px-2 py-1 font-mono text-[12px]",
-              color.text,
-              color.ring.replace("ring-", "border-"),
-              color.bg,
-            )}
-          >
-            <span>{verdict.verdict.emoji}</span>
-            <span className="font-semibold uppercase tracking-wide">
-              {verdict.verdict.label}
-            </span>
-            <span className="text-[10px] text-[var(--dim)]">
-              · generated {formatRelativeTime(verdict.generated_at)}
-            </span>
-          </div>
-        )}
       </header>
+
+      {verdict && <VerdictHead verdict={verdict} />}
 
       <div className="briefing-body">
         <BriefingMarkdown source={briefing.body} />
@@ -242,5 +224,122 @@ function BriefingMarkdown({ source }: { source: string }) {
     >
       {source}
     </ReactMarkdown>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Verdict head — the "split verdict": a short stance, a plain-English
+// standfirst, and the regime levels as scannable chips. Replaces the old
+// run-on all-caps label (which also printed twice).
+// ---------------------------------------------------------------------------
+
+const STANCE: Record<string, { label: string; bg: string }> = {
+  buy: { label: "Buy", bg: "#2f7d4f" },
+  hold: { label: "Hold", bg: "#b8842a" },
+  step_aside: { label: "Step aside", bg: "#b06a1e" },
+  aside: { label: "Step aside", bg: "#b06a1e" },
+  bearish: { label: "Bearish", bg: "#b0392f" },
+};
+
+/** First sentence of a longer rationale, for a standfirst fallback. */
+function firstSentence(text: string | undefined): string {
+  if (!text) return "";
+  const clean = text.replace(/^\([0-9]+\)\s*/, "").replace(/^★+\s*/, "").trim();
+  const m = clean.match(/^.*?[.!?](?=\s|$)/);
+  return (m ? m[0] : clean).trim();
+}
+
+/** Shorten a regime indicator's name to a chip label: "SPX vs 7,460 …" → "SPX". */
+function chipName(name: string): string {
+  return name
+    .replace(/\([^)]*\)/g, "")
+    .split(/\s+(?:vs|Gate|Yield|dual|floor)/i)[0]
+    .trim();
+}
+
+function chipValue(value: number, unit?: string): string {
+  if (unit === "%") return `${value}%`;
+  if (unit === "$")
+    return value >= 1000 ? `$${(value / 1000).toFixed(1)}k` : `$${value}`;
+  return value >= 1000 ? value.toLocaleString("en-US") : String(value);
+}
+
+function RegimeChips({ regime }: { regime?: RegimeIndicator[] }) {
+  const rows = (regime ?? []).slice(0, 6);
+  if (!rows.length) return null;
+  return (
+    <div className="mt-5 flex flex-wrap gap-2">
+      {rows.map((r, i) => {
+        const breached =
+          (r.trigger_above != null && r.value >= r.trigger_above) ||
+          (r.trigger_below != null && r.value <= r.trigger_below);
+        const gate =
+          r.trigger_above != null
+            ? `≥ ${chipValue(r.trigger_above, r.unit)}`
+            : r.trigger_below != null
+              ? `≤ ${chipValue(r.trigger_below, r.unit)}`
+              : null;
+        return (
+          <span
+            key={i}
+            className="inline-flex items-baseline gap-2 rounded-sm border border-[var(--border-strong)] bg-[var(--panel)] px-2.5 py-1.5 font-mono text-[11.5px] tabular-nums"
+          >
+            <span className="text-[9.5px] uppercase tracking-[0.1em] text-[var(--faint)]">
+              {chipName(r.name)}
+            </span>
+            <span
+              className="font-semibold"
+              style={{ color: breached ? "var(--down)" : "var(--foreground)" }}
+            >
+              {chipValue(r.value, r.unit)}
+            </span>
+            {gate && <span className="text-[var(--faint)]">{gate}</span>}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
+function VerdictHead({
+  verdict,
+}: {
+  verdict: {
+    verdict: {
+      code: string;
+      conviction: string;
+      rationale_short: string;
+      headline?: string;
+    };
+    regime_risk?: RegimeIndicator[];
+    generated_at: string;
+  };
+}) {
+  const stance = STANCE[verdict.verdict.code] ?? { label: verdict.verdict.code, bg: "#6d6a62" };
+  const standfirst =
+    verdict.verdict.headline?.trim() || firstSentence(verdict.verdict.rationale_short);
+  return (
+    <section className="border-b border-[var(--border)] pb-5">
+      <div className="flex flex-wrap items-center gap-3">
+        <span
+          className="rounded-sm px-2.5 py-1 font-mono text-[12px] font-bold uppercase tracking-[0.08em] text-white"
+          style={{ background: stance.bg }}
+        >
+          {stance.label}
+        </span>
+        <span className="font-mono text-[12px] capitalize text-[var(--dim)]">
+          {verdict.verdict.conviction} conviction
+        </span>
+        <span className="ml-auto font-mono text-[11px] text-[var(--faint)]">
+          generated {formatRelativeTime(verdict.generated_at)}
+        </span>
+      </div>
+      {standfirst && (
+        <p className="mt-4 max-w-[54ch] text-[19px] italic leading-[1.5] text-[var(--ink-3)]">
+          {standfirst}
+        </p>
+      )}
+      <RegimeChips regime={verdict.regime_risk} />
+    </section>
   );
 }

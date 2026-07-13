@@ -132,7 +132,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="border border-[var(--border)] bg-[var(--background)] p-2">
-                <div className="font-mono text-[14px] text-[#b45309]">🟠 STEP ASIDE</div>
+                <div className="font-mono text-[14px] text-[var(--warn)]">🟠 STEP ASIDE</div>
                 <div className="mt-1 text-[11px] text-[var(--dim)]">
                   Cautious — not actively short, but explicitly not chasing. Graded right
                   if SPX is flat or down (you didn&apos;t miss meaningful upside).
@@ -205,7 +205,7 @@ export default function AboutPage() {
                 <span className="text-[var(--down)]">BEARISH</span> — right if SPX is down.
               </li>
               <li>
-                <span className="text-[#b45309]">STEP ASIDE</span> — right if SPX is flat or
+                <span className="text-[var(--warn)]">STEP ASIDE</span> — right if SPX is flat or
                 down (i.e., you didn&apos;t miss meaningful upside).
               </li>
               <li>

@@ -310,13 +310,19 @@ function urlHost(url: string | undefined): string | undefined {
   }
 }
 
-function buildWire(verdicts: MarketsVerdict[]): WireRow[] {
+// Key a supporting-data point the same way in both the wire and the exclude
+// set, so "what matters today" and "on the wire" can't surface the same item.
+function wireKey(label: string): string {
+  return label.replace(/^★\s*/, "").trim().slice(0, 60).toLowerCase();
+}
+
+function buildWire(verdicts: MarketsVerdict[], exclude?: Set<string>): WireRow[] {
   const out: WireRow[] = [];
-  const seen = new Set<string>();
+  const seen = new Set<string>(exclude ?? []);
   for (const v of verdicts) {
     for (const s of v.verdict.supporting_data ?? []) {
       const clean = s.label.replace(/^★\s*/, "").trim();
-      const key = clean.slice(0, 60).toLowerCase();
+      const key = wireKey(s.label);
       if (seen.has(key)) continue;
       seen.add(key);
       const host = urlHost(s.url);
@@ -519,6 +525,13 @@ export async function getHomeData(): Promise<HomeData> {
     })
     .toUpperCase();
 
+  // The wire is "everything else recent" — exclude the points already shown as
+  // key points in the two featured briefings so the homepage never repeats.
+  const featuredKeys = new Set<string>();
+  for (const v of [morningV, eveningV])
+    for (const s of v?.verdict.supporting_data ?? [])
+      featuredKeys.add(wireKey(s.label));
+
   return {
     todayLabel,
     pulse,
@@ -528,7 +541,7 @@ export async function getHomeData(): Promise<HomeData> {
     evening,
     defaultView,
     sectors,
-    wire: buildWire(verdicts),
+    wire: buildWire(verdicts, featuredKeys),
     calendar,
   };
 }
