@@ -1,0 +1,95 @@
+{
+  "routine": "markets",
+  "date": "2026-07-14",
+  "window": "night",
+  "generated_at": "2026-07-14T23:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD / SELECTIVE — CPI clears near-term hike; 30Y unmoved, IBM bifurcates tech",
+    "headline": "CPI 3.5% triggers the morning BUY gate; four-condition upgrade stalls on VIX and the long end",
+    "conviction": "medium",
+    "rationale_short": "June CPI printed -0.4% MoM / 3.5% YoY — exactly at the morning's BUY gate — and July Fed hike probability collapsed from 40%+ to 20%. Tech and crypto rallied: NVDA +3.7%, BTC Gate 2 reset at $64,434. But the 30Y barely moved (5.097% vs 5.101%), Russell declined -0.83% despite the broad rally, and IBM's -25% crash (enterprise software budgets redirecting to AI hardware) is a new cross-sector risk for tomorrow. AI hardware and crypto are clear buys on dips; enterprise software and small caps are not.",
+    "supporting_data": [
+      { "label": "June CPI -0.4% MoM, 3.5% YoY vs 3.8% consensus — morning BUY gate triggered; core CPI 2.6% vs 2.9% consensus", "url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm" },
+      { "label": "July Fed hike probability fell to ~20% from 40%+ on CPI undershoot — Treasuries rally; 2Y -14bps to 4.14%", "url": "https://www.bloomberg.com/news/articles/2026-07-14/treasuries-rally-as-cool-cpi-data-cuts-july-fed-hike-bets-to-20" },
+      { "label": "BTC $64,434 (+3.8%); ETH $1,875 (+6.1%) — Gate 2 breach protocol LIFTED; crypto risk-on confirmed", "url": "https://fortune.com/article/price-of-bitcoin-07-14-2026/" },
+      { "label": "30Y UST ~5.097% — barely moved (-0.4bps) despite a massive CPI beat; long end signaling 'no July hike but no rate relief either'", "url": "https://www.cnbc.com/2026/07/14/treasury-yields-rise-as-fed-rate-hike-expectations-grow.html" },
+      { "label": "IBM -25% worst day on record; CEO: clients redirecting software/consulting budgets to AI hardware — ServiceNow -7%, Salesforce -5%, Accenture -8%, Cognizant -7%", "url": "https://www.cnbc.com/2026/07/14/ibm-warns-second-quarter-earnings-fell-short-of-expectations.html" },
+      { "label": "Russell 2000 -0.83% vs SPX +0.40% and Nasdaq +0.90% — small caps underperformed despite the CPI beat; 30Y stubbornness is the structural headwind", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-14-dow-sp-500-nasdaq-070833816.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7545.4,  "change_pct":  0.40,  "as_of": "2026-07-14T21:00:00Z" },
+    "nasdaq": { "level": 26106.0, "change_pct":  0.90,  "as_of": "2026-07-14T21:00:00Z" },
+    "vix":    { "level": 16.48,   "change_pct":  -2.43, "as_of": "2026-07-14T21:00:00Z" },
+    "ust10y": { "level": 4.582,   "change_bps":  -1,    "as_of": "2026-07-14T21:00:00Z" },
+    "dxy":    { "level": 100.91,  "change_pct":  -0.02, "as_of": "2026-07-14T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 16.48,  "trigger_above": 18,    "unit": "" },
+    { "name": "30Y Yield",    "value": 5.097,  "trigger_above": 5.0,   "unit": "%" },
+    { "name": "BTC Gate 2",   "value": 64434,  "trigger_below": 62000, "unit": "$" },
+    { "name": "SPX vs 7,460", "value": 7545,   "trigger_below": 7460,  "unit": "" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "$211.10 (+3.7%) — CPI relief rally; back above $210; TSMC Thursday is the next gate", "sentiment": "positive" },
+    { "ticker": "BTC",   "note": "$64,434 (+3.8%) — Gate 2 breach protocol LIFTED; no BTC entry barrier active", "sentiment": "positive" },
+    { "ticker": "ETH",   "note": "$1,875 (+6.1%) — outperformed BTC on rate-cut optimism; crypto risk-on confirmed", "sentiment": "positive" },
+    { "ticker": "IBM",   "note": "-25% worst day on record; CEO Arvind Krishna confirmed clients redirecting software/consulting budgets to AI hardware — a negative read-through for enterprise software broadly", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "$385.90 (-1.3%) — IBM read-across pressure on enterprise software/consulting; Azure AI adds some insulation but not complete", "sentiment": "negative" },
+    { "ticker": "META",  "note": "$659.38 (+0.4%) — defensive tech holding; Q2 earnings July 29 next catalyst; least enterprise-software exposed of mega-caps", "sentiment": "positive" },
+    { "ticker": "AAPL",  "note": "$315.62 (-0.5%) — modest decline; relative defense vs software names; consumer-focused", "sentiment": "neutral" },
+    { "ticker": "AMZN",  "note": "$247.89 (+0.2%) — modest gain; AWS insulated from IBM software-to-hardware shift; cloud infrastructure is a beneficiary, not a victim", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "$396.00 (+0.3%) — modest recovery; Q2 earnings ~July 22 next catalyst; BTC correlation positive today", "sentiment": "neutral" },
+    { "ticker": "AMD",   "note": "~+4% rebound on CPI relief — back into mid-$550s; TSMC Thursday validates or invalidates the AI hardware demand thesis", "sentiment": "positive" },
+    { "ticker": "TSM",   "note": "~$421 (-2%) — testing $420 support pre-earnings Thursday; June revenue +67.9% YoY is strong backdrop; pre-earnings positioning", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "$127.97 (range $126.20-130.72) — DoD AI thesis intact; IBM enterprise software read-through limited for government-facing AI", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "Enterprise software (NOW, CRM, ACN)", "reason": "IBM -25% confirmed clients redirecting budgets from software/consulting to AI hardware. ServiceNow -7%, Salesforce -5%, Accenture -8%, Cognizant -7% on read-across. This is a structural budget reallocation, not one-quarter noise.", "better_entry": "Post-IBM full Q2 earnings call July 22; need clarity that software budget cuts are temporary rather than a cycle shift to AI infrastructure" },
+    { "ticker": "IWM (small caps)", "reason": "Russell -0.83% today despite SPX +0.40% and a massive CPI beat. The 30Y barely moved (-0.4bps to 5.097%) — bond market is NOT pricing in rate relief for long duration. IBM's warning signals enterprise IT cuts; small-cap software/services are disproportionately exposed.", "better_entry": "30Y below 4.80% sustained AND Brent below $75 on close; both conditions simultaneously" },
+    { "ticker": "TLT / long-duration bonds", "reason": "2Y fell 14bps on 'no July hike' signal; 30Y fell 0.4bps — dramatic yield-curve steepening. Bond market is buying the near-term rate story but NOT the long-run disinflation story. August CPI will capture the WTI +9.4% spike from July 13.", "better_entry": "August CPI (est. Aug 13) confirming oil shock did not embed in core inflation; and Brent below $75 on close" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA / QQQ",
+      "direction": "long",
+      "thesis": "CPI 3.5% closes the near-term hike window and re-opens the rate-relief runway for AI hardware multiples. NVDA +3.7% to $211.10 confirms directional sensitivity to rate expectations. TSMC's June revenue (+67.9% YoY) is the fundamental backdrop; Thursday's TSMC earnings call is the next gate — sustained H2 AI capex guidance clears the path to NVDA $220+. IBM's software-to-hardware budget shift is actually a demand tailwind for AI semiconductor companies.",
+      "entry": "$210-215 for NVDA on any pullback; QQQ above 450 on any CPI-follow-through dip",
+      "invalidation": "NVDA daily close below $200 OR TSMC guides H2 AI capex below current consensus on Thursday",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Trim from 8-10% to 5-6% allocation. June CPI showed energy prices fell in June; that data is backward-looking. Brent opened July 14 above $87 as the Iran Hormuz blockade remained active. August CPI will carry the oil shock. Energy FCF remains elevated at current prices. Reduce but do not exit: maintain the hedge with optionality if the Iran standoff persists.",
+      "entry": "Current levels at 5-6% allocation; trim further if Brent closes below $75 on confirmed diplomatic de-escalation",
+      "invalidation": "Confirmed Iran diplomatic resolution with Hormuz shipping at 70%+ of pre-blockade levels AND Brent below $70",
+      "conviction": "medium",
+      "horizon": "2-3 weeks"
+    },
+    {
+      "asset": "IWM",
+      "direction": "short",
+      "thesis": "Small caps underperformed the broad market again (-0.83% vs SPX +0.40%) despite a massive CPI beat that should have benefited rate-sensitive names. The 30Y barely moved (5.097% vs 5.101% prior) — the bond market is not pricing long-end rate relief. IBM's profit warning compounds the risk: enterprise software and IT services budget reallocation is a structural headwind for small-cap software/services companies disproportionately represented in IWM.",
+      "entry": "$215-220 on any CPI-momentum bounce",
+      "invalidation": "IWM daily close above $225 OR 30Y sustains below 4.80% for two consecutive sessions",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "Counter-thesis: today's CPI print was the most bullish macro data point in six weeks. Core CPI at 2.6% YoY (vs 2.9% consensus) and headline -0.4% MoM are not soft prints — they are disinflationary surprise events that eliminate July hike as a credible scenario and recalibrate market pricing. Goldman Sachs posted its best quarter in history; JPMorgan profits jumped 41%; bank earnings season is constructive. BTC Gate 2 was reset decisively at $64,434. IBM's warning is an outlier in a strong quarter — one company shifting its product narrative, not a signal that AI hardware demand is collapsing (the shift to hardware spending from software is explicitly bullish for NVDA/AMD/AVGO). The 30Y at 5.097% is a lagged indicator; the front-end move (2Y -14bps) is the leading signal, and historically front-end rallies precede long-end rallies by 3-8 weeks. The HOLD verdict may be premature conservatism. Invalidation: if SPX fails to hold above 7,500 by Friday close with VIX re-engaging above 17, today's rally was a dead-cat bounce in a deteriorating trend.",
+  "morning_call_grade": "mixed_leaning_correct",
+  "week_ahead": {
+    "catalysts": [
+      { "date": "2026-07-15", "label": "June PPI (8:30 AM ET) + Warsh Senate Banking testimony + MS/BLK/JNJ/ASML Q2 earnings", "directional_bias": "Second consecutive soft inflation print = BUY upgrade more likely; PPI hot = HOLD maintained" },
+      { "date": "2026-07-16", "label": "TSMC Q2 earnings + Retail Sales + Netflix Q2 earnings", "directional_bias": "TSMC is the AI capex verdict; June revenue +67.9% YoY is the backdrop; guidance is what matters" },
+      { "date": "2026-07-17", "label": "No major scheduled catalysts", "directional_bias": "Positioning; direction set by TSMC/PPI combination" },
+      { "date": "2026-07-22", "label": "TSLA Q2 earnings (est.) + IBM full Q2 call", "directional_bias": "TSLA gross margin and FSD clarity; IBM call provides full context on enterprise budget shift" }
+    ]
+  },
+  "body_mdx": "data/briefings/markets/2026-07-14-night.mdx"
+}

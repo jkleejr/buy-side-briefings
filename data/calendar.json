@@ -1,77 +1,54 @@
 {
   "events": [
     {
-      "date": "2026-07-14",
-      "label": "June CPI (8:30 AM ET) — FactSet consensus ~3.8% YoY (range 3.75-3.90%); BUY gate requires ≤3.5%",
-      "kind": "MACRO",
-      "time_et": "8:30 AM",
-      "tickers": ["TBT", "TLT", "QQQ", "NVDA", "MU", "SKHY", "BTC"],
-      "note": "June CPI is the summer's regime-defining binary. FactSet consensus: -0.1% MoM / ~3.8% YoY; gasoline -10% in June (ceasefire-era Hormuz reopening) drives headline step-down from 4.2% May. BTC Gate 2 BREACHED ($61,821 24h low < $62,000 floor) pre-print. Scenario A (CPI ≤3.5%): BUY upgrade activated at 9:31 AM; Gate 2 reset condition met; full NVDA/AVGO/SKHY adds; close TBT immediately. Scenario B (3.5-3.9%): STEP ASIDE maintained; muddle-through; Warsh determines next move. Scenario C (≥3.9%): BEARISH escalation; 30Y through 5.15%; reduce all longs. CRITICAL: June CPI captures pre-Hormuz-shock prices. July CPI (August BLS) carries the real pass-through from July 13 WTI +9.4% spike."
-    },
-    {
-      "date": "2026-07-14",
-      "label": "Fed Chair Warsh House Financial Services testimony (10:00 AM ET) — debut Congressional appearance; July hike probability ~50%",
-      "kind": "FOMC",
-      "time_et": "10:00 AM",
-      "tickers": ["TBT", "TLT", "IWM", "QQQ", "BTC"],
-      "note": "Warsh's first semiannual monetary policy address to Congress arrives with CPI data in hand (released 90 min prior). Fed revised 2026 inflation forecast to 3.6%. July hike probability at ~50% heading in. Key signal: any 'live July meeting' language = 30Y re-accelerates immediately. Warsh is known for avoiding forward guidance — the testimony likely won't commit explicitly. Senate Banking follows Wednesday post-PPI."
-    },
-    {
-      "date": "2026-07-14",
-      "label": "JPM, BAC, GS, WFC, C Q2 2026 earnings — ALL pre-market; JPM beat: EPS $6.14 vs $5.59 est.",
-      "kind": "EARNINGS",
-      "tickers": ["JPM", "GS", "BAC", "WFC", "C"],
-      "note": "JPMorgan Q2 2026 EPS $6.14 vs $5.59 consensus (+9.84% beat). All five major US banks report pre-open July 14. Key metrics: NIM direction (expanding = higher-for-longer is not recessionary; contracting = Q3 credit cycle warning), loan-loss provisions, and Dimon H2 2026 macro commentary. Options pricing 4.4-6% implied moves — do not buy before earnings call NIM/credit guidance."
-    },
-    {
       "date": "2026-07-15",
-      "label": "June PPI (8:30 AM ET) — post-CPI producer inflation read; Warsh Senate Banking testimony",
+      "label": "June PPI (8:30 AM ET) — second consecutive inflation read post-CPI; Warsh Senate Banking testimony",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "MS", "BLK"],
-      "note": "Follow-on to June CPI. MS, BLK, JNJ also report Q2 earnings. Warsh moves to Senate Banking Committee. Directional cue from Tuesday's CPI print and bank call commentary sets the tone for Wednesday's session."
+      "note": "Follow-on to June CPI (-0.4% MoM / 3.5% YoY undershoot). If PPI also soft: two-consecutive-disinflation sequence opens BUY upgrade pathway; July hike probability already at 20%. Warsh moves to Senate Banking Committee for second Congressional day. MS, BLK, JNJ, ASML Q2 earnings add read on trading revenues and AI capex. ASML is a secondary semiconductor read-through for NVDA/TSM direction."
     },
     {
       "date": "2026-07-16",
-      "label": "TSMC Q2 2026 earnings pre-market — AI capex cycle fundamental clearing event; Netflix also reports",
+      "label": "TSMC Q2 2026 earnings (2:00 PM ET) — AI capex cycle verdict; Retail Sales; Netflix Q2",
       "kind": "EARNINGS",
       "tickers": ["TSM", "NVDA", "AMD", "AVGO", "NFLX"],
-      "note": "TSMC Q2 2026 is the most important print of the week for the AI/semis complex. Revenue guidance and H2 AI datacenter commentary is the fundamental clearing event for NVDA ($200-205 entry gate), AMD, and AVGO positioning. Retail sales data (8:30 AM ET) adds macro context for consumer health. Netflix Q2 earnings also Thursday."
+      "note": "TSMC Q2 2026 is the most important print of the week. June revenue +67.9% YoY is the backdrop; H2 AI datacenter guidance is the clearing event for NVDA ($210-215 entry zone), AMD, and AVGO positioning. Wall Street treating this as a health check for the entire AI boom. Stock testing $420 support pre-earnings; options pricing ~4% move. Retail sales (8:30 AM ET) adds macro context for consumer health. Netflix Q2 is a streaming/AI content signal."
     },
     {
       "date": "2026-07-22",
-      "label": "TSLA Q2 2026 earnings (est.) — after market close; 480K delivery beat sets the floor",
+      "label": "TSLA Q2 2026 earnings (est.) + IBM full Q2 earnings call — dual clearing events",
       "kind": "EARNINGS",
-      "tickers": ["TSLA"],
-      "note": "Q2 earnings follow the July 2 delivery report: 480,126 vehicles delivered (vs. 406,024 consensus; +25% YoY; best-ever Q2). Despite the blowout beat, TSLA fell ~7.49% on July 2 (sell-the-news + growth scare). Q2 earnings call (~July 22) is the fundamental clearing event: need gross margin recovery (>25%), FSD revenue recognition at scale, and Q3 delivery guide >450K for the stock to re-rate above $420. Weak gross margin (<22%) or no FSD clarity = $393 July 2 close is the near-term top."
+      "tickers": ["TSLA", "IBM"],
+      "note": "TSLA: Q2 earnings follow the blowout July 2 delivery report (480K vs 406K consensus). Need gross margin recovery (>25%), FSD revenue recognition at scale, Q3 delivery guide >450K for re-rate above $420. IBM: full Q2 call gives context on the software-to-hardware budget rotation that caused IBM's -25% worst day on record July 14. CEO attributed miss to clients redirecting software/consulting budgets to AI hardware (servers, storage, memory). If structural, enterprise software (ServiceNow, Salesforce, Accenture) faces multi-quarter headwinds."
     },
     {
       "date": "2026-07-28",
-      "label": "FOMC meeting (July 28-29) — July hike probability elevated to ~50% post-Iran shock; CPI/Warsh July 14 determine the final odds",
+      "label": "FOMC meeting (Jul 28-29) — July hike probability now ~20%; no-hike expected; September language is the signal",
       "kind": "FOMC",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
-      "note": "July hike probability rose to ~50% as of July 14 morning on Iran-driven oil inflation and 30Y above 5%. June 17 FOMC minutes confirmed: no cuts until Q2 2027; September hike probability 68.8%. The June CPI release (July 14) and Warsh's Congressional testimony (July 14-15) are the primary inputs. CPI ≤3.5% would collapse July hike probability toward 10%; CPI ≥3.9% + hawkish Warsh would confirm July hike as plausible. SCOTUS upheld Fed independence June 29 — Warsh can move in either direction without political constraint."
+      "note": "June CPI undershoot (-0.4% MoM / 3.5% YoY) collapsed July hike probability from 40%+ to ~20% on July 14. No July hike now the strong base case. The FOMC statement language on September and the 2026 dot-plot update will be the market signal. If dots shift September hike lower: BUY upgrade likely. If dots maintain September hike risk: 30Y re-accelerates. Warsh's two Congressional testimonies (July 14-15) set the backdrop for no escalation."
     },
     {
       "date": "2026-07-29",
-      "label": "META Q2 2026 earnings — AI cloud business first quantification; peak Q2 earnings week",
+      "label": "META Q2 2026 earnings — AI cloud business first quantification; peak Q2 earnings week (GOOGL, MSFT, AMZN also)",
       "kind": "EARNINGS",
       "tickers": ["META", "GOOGL", "MSFT", "AMZN"],
-      "note": "META Q2 earnings July 29 is the first event where management must quantify the cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). Q2 earnings is the first AI-at-scale quarter. GOOGL, MSFT, and AMZN also report in mid-to-late July — peak Q2 earnings risk window. ISM Services 54.0% (July 6) validates the Search and Cloud AI expansion narrative."
+      "note": "META Q2 earnings July 29 is the first event where management must quantify the AI cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). GOOGL, MSFT, and AMZN also report in late July — peak Q2 earnings risk window. IBM's enterprise software warning (July 14) adds a risk factor: MSFT Azure consulting and enterprise software could face read-across pressure. META's ad-driven model is insulated from IBM's enterprise IT budget rotation."
     },
     {
       "date": "2026-08-13",
-      "label": "July CPI release (est. Aug 13) — captures full WTI +9.4% spike (Jul 13) + Hormuz blockade oil pass-through; also Iran 60-day MOU deadline",
+      "label": "July CPI release (est. Aug 13) — captures WTI +9.4% spike (Jul 13) + Iran Hormuz blockade oil pass-through",
       "kind": "MACRO",
       "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA"],
-      "note": "June CPI (July 14) captures pre-Hormuz-shock prices. July CPI will be the FIRST month to reflect the WTI +9.4% spike of July 13 and the ongoing Strait disruption. If the Hormuz blockade persists through late July, July CPI could surprise significantly to the upside relative to June. This is the real inflation inflection event for H2 2026. Also approximately the Iran-US 60-day MOU deadline (original Islamabad Declaration framework, now voided — but diplomatic context remains relevant for oil pricing)."
+      "note": "June CPI (July 14) captured pre-Hormuz-shock prices and printed -0.4% MoM / 3.5% YoY. July CPI will be the FIRST month to reflect the WTI +9.4% spike of July 13 and the ongoing Strait disruption. If the Hormuz blockade persists through late July, July CPI could surprise significantly to the upside relative to June — erasing the July 14 disinflation narrative. This is the real inflation inflection event for H2 2026. The 30Y's failure to rally meaningfully on July 14 (only -0.4bps) suggests the bond market is already pricing this risk."
     },
     {
       "date": "2026-08-26",
       "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle fundamental clearing event",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. NVDA at ~$205-208 pre-market July 14; hard stop at close below $195. TSMC Q2 July 16 is the next intermediate gate. Iran chip-export risk and rate headwinds add near-term pressure. Full-size add gate: NVDA 2 consecutive closes above $210 + SPX >7,550 + VIX <17."
+      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. IBM's July 14 warning (clients shifting software/consulting budgets to AI hardware) is a demand tailwind. TSMC Q2 (July 16) is the intermediate gate. Full-size add gate for NVDA: two consecutive closes above $215 + VIX <16 + TSMC Thursday confirming H2 AI capex."
     },
     {
       "date": "2026-09-02",
