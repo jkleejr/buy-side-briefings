@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "low",
   "time_horizon": "3-6 weeks",
-  "current_price": 35.50,
+  "current_price": 34.15,
   "entry": "Long TBT $34.50–$36.50 at July 2 open (TBT at $35.50, corresponding to TLT ~$86.40 July 1 close). Entry is most efficient on the open before NFP (8:30 AM ET) prints — if NFP is hot, TBT gaps up 5–8% immediately on the 10Y spike; if NFP is soft, TBT dips to $33–34 providing a better entry for the structural Warsh hike thesis. Both entry windows are valid but the pre-NFP entry captures the optionality of a hot print with smaller size risk. Do NOT enter above $38 — above that level the 10Y has already moved to ~4.65% and the near-term risk/reward compresses. Size 2% of gross. This is a low-conviction structural rate-path trade, not an NFP directional bet.",
   "stop_loss": "TBT daily close below $32.00 — implies TLT has rallied above $91 (10Y falling below 4.15%), which would occur only if: (1) NFP prints below 80K today, triggering recession-fear flight-to-quality; (2) Warsh explicitly reverses his Sintra hawkish signal at the July 16 FOMC press conference, confirming a hold and signaling September rate cut; or (3) a significant geopolitical de-escalation (Iran second ceasefire, Ukraine deal) drives a global risk-off-into-Treasuries bid that overwhelms the domestic rate-hike thesis. Below $32, the rate compression scenario has definitively reasserted and TBT's 2x leverage creates accelerating loss; exit immediately.",
   "targets": [
@@ -43,12 +43,28 @@
   "created_at": "2026-07-02",
   "expires_at": "2026-07-25",
   "status": "active",
-  "tags": ["TBT", "TLT", "Warsh", "rate-hike", "10Y", "Treasury", "macro", "Sintra", "inverse-ETF", "leveraged", "NFP"],
+  "tags": [
+    "TBT",
+    "TLT",
+    "Warsh",
+    "rate-hike",
+    "10Y",
+    "Treasury",
+    "macro",
+    "Sintra",
+    "inverse-ETF",
+    "leveraged",
+    "NFP"
+  ],
   "outcome": null,
   "levels": {
-    "entry_low": 34.50,
-    "entry_high": 36.50,
-    "stop": 32.00,
-    "targets": [39.0, 43.0, 48.0]
+    "entry_low": 34.5,
+    "entry_high": 36.5,
+    "stop": 32.0,
+    "targets": [
+      39.0,
+      43.0,
+      48.0
+    ]
   }
 }

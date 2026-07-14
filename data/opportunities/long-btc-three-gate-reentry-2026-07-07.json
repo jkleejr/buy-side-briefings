@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "high",
   "time_horizon": "4-8 weeks",
-  "current_price": 64034.0,
+  "current_price": 62795.0,
   "entry": "Long BTC $62,500–$65,500 at the July 7 open or on any intraday dip into this zone (BTC at $64,034 per morning briefing). All three protocol gates are confirmed: Gate 1 and Gate 2 (two consecutive UTC midnight closes above $62,000 established the stabilization band) and Gate 3 (IBIT recorded $209M in net inflows as of July 6, confirming institutional accumulation is active, not retreating). Enter 60% of position at or near current price ($62,500–$65,500); reserve 40% to add on any dip toward $61,000–$62,500 that holds the lower gate for two sessions. Do NOT add below $60,000 — two consecutive daily closes below that level would signal the stabilization structure has failed.",
   "stop_loss": "$58,100 on two consecutive UTC midnight closes below $60,000 (early warning: single close below $60,000). The $58,100 level sits below the BlackRock IBIT accumulated-cost-basis range and implies BTC has broken through every meaningful near-term support including the three-gate stabilization zone. A single-session dip below $60,000 is possible on the FOMC minutes risk (July 8) — do NOT stop out on a one-day flush if the close recovers above $60,000 within 24 hours. The two-close rule is intentional: prevent a stop-hunt from triggering the exit.",
   "targets": [
@@ -43,12 +43,26 @@
   "created_at": "2026-07-07",
   "expires_at": "2026-09-01",
   "status": "active",
-  "tags": ["BTC", "crypto", "macro", "IBIT", "three-gate", "institutional", "rate-regime", "NFP", "Kyber-delay"],
+  "tags": [
+    "BTC",
+    "crypto",
+    "macro",
+    "IBIT",
+    "three-gate",
+    "institutional",
+    "rate-regime",
+    "NFP",
+    "Kyber-delay"
+  ],
   "outcome": null,
   "levels": {
     "entry_low": 62500.0,
     "entry_high": 65500.0,
     "stop": 58100.0,
-    "targets": [68000.0, 73000.0, 82000.0]
+    "targets": [
+      68000.0,
+      73000.0,
+      82000.0
+    ]
   }
 }

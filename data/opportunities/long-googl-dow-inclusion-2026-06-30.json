@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-4 weeks",
-  "current_price": 350.80,
+  "current_price": 352.51,
   "entry": "Long $345–352 (GOOGL at $350.80 June 30, pulling back from Dow Day 1 spike to ~$357 on June 29). Entry is the pullback from the Day 1 inclusion premium — the optimal buy zone is the first retracement after the announcement-day spike, which historically captures the institutional rebalancing tail at a more favorable level than the Day 1 close. Scale: 70% initial on June 30; add 30% on any further dip to $345–347 if the pullback extends into July 1. Do NOT initiate above $358 — above that level Dow Day 1 premium has not fully reset and the entry is chasing the spike rather than buying the tail.",
   "stop_loss": "$339 daily close (~3.1% below $350.80) — below this level either (1) a third VP-level AI departure has been announced and institutional selling pressure is exceeding the Dow rebalancing bid, (2) the Dow inclusion premium is fully exhausted ahead of schedule (less than 1 week of tail vs the typical 2-4 week window), or (3) a negative macro catalyst has overwhelmed the mechanical buying; at $339, the thesis that Dow inclusion creates a sustained 2-4 week bid is no longer operative",
   "targets": [
@@ -43,11 +43,25 @@
   "created_at": "2026-06-30",
   "expires_at": "2026-07-28",
   "status": "active",
-  "tags": ["GOOGL", "Alphabet", "Dow", "inclusion", "long", "catalyst", "institutional", "rebalancing", "mechanical"],
+  "tags": [
+    "GOOGL",
+    "Alphabet",
+    "Dow",
+    "inclusion",
+    "long",
+    "catalyst",
+    "institutional",
+    "rebalancing",
+    "mechanical"
+  ],
   "levels": {
     "entry_low": 345.0,
     "entry_high": 352.0,
     "stop": 339.0,
-    "targets": [365.0, 380.0, 395.0]
+    "targets": [
+      365.0,
+      380.0,
+      395.0
+    ]
   }
 }

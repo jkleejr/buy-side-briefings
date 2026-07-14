@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "4-6 weeks",
-  "current_price": 979.30,
+  "current_price": 937.0,
   "entry": "Long MU $955–995 at Monday July 13 open. MU is in a day-range of $954.13–$998.00 on July 13 as the market digests the SKHY debut (closed $168.01, +12.7% above $149 IPO price) alongside TSMC Q2 revenue +36% ($39.6B). Enter at market in the $955-995 zone; do not chase above $1,000 pre-CPI (July 14 release) as rate-hike concerns may generate an intraday reversal. Reserve 30% of allocation for a post-CPI add on July 14 if June CPI prints ≤3.5% (rate-relief read through benefits high-multiple tech including MU at ~30x forward earnings).",
   "stop_loss": "$880 daily close — approximately 10.1% below the $979 midpoint. A close at $880 would imply one of: (1) a hyperscaler pre-announcement of AI capex reduction (Google/Microsoft/AWS guiding lower on compute infrastructure); (2) MU-specific demand signal weakness — a channel check or sell-side survey suggesting HBM4 orders from NVDA are being rescheduled into H1 2027; (3) September rate hike probability rising above 85% triggering a broad high-multiple compression that disproportionately affects MU at 30x forward earnings; (4) BTC Gate 2 ($62,000) breach triggering a broader risk-off that pulls semi stocks below the July 9 lows ($925 MU level). Exit on a $880 close, no exceptions.",
   "targets": [
@@ -47,12 +47,26 @@
   "created_at": "2026-07-13",
   "expires_at": "2026-08-29",
   "status": "active",
-  "tags": ["MU", "Micron", "HBM4", "memory", "AI", "semis", "SKHY", "TSMC", "thematic"],
+  "tags": [
+    "MU",
+    "Micron",
+    "HBM4",
+    "memory",
+    "AI",
+    "semis",
+    "SKHY",
+    "TSMC",
+    "thematic"
+  ],
   "outcome": null,
   "levels": {
     "entry_low": 955.0,
     "entry_high": 995.0,
     "stop": 880.0,
-    "targets": [1055.0, 1130.0, 1200.0]
+    "targets": [
+      1055.0,
+      1130.0,
+      1200.0
+    ]
   }
 }

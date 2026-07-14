@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "6-10 weeks",
-  "current_price": 375.0,
+  "current_price": 387.15,
   "entry": "Long $368–385 (AVGO at ~$375 on July 1, consolidating flat after the June correction from $410+). Entry is the retest of the June 2026 base after the prior AVGO long positions (June 1, June 4) were closed on stops during the FOMC-driven correction. ISM 54.0 is the re-entry signal: manufacturing expansion at a 37-month high directly validates the hyperscaler AI infrastructure investment cycle that drives AVGO's custom ASIC and networking revenue. Scale: 70% initial on July 1–2; 30% add if AVGO dips to $368–372 post-NFP. Do NOT initiate above $390 — above that level the post-ISM premium has exceeded the first trade zone and the entry is chasing ISM euphoria rather than rebuying the base.",
   "stop_loss": "$348 daily close (~7.2% below $375) — implies (1) NFP July 2 prints a recession signal (<80K) that forces hyperscalers to defer AI capex guidance, directly threatening AVGO's custom ASIC design win revenue timeline; (2) a hyperscaler (Meta, Google, Microsoft, Amazon) announces a pause or reduction in AI infrastructure capex at an upcoming conference or investor day, removing the demand signal that the ISM 54.0 expansion thesis validates; or (3) Broadcom Q3 2026 earnings (scheduled September) pre-announce revenue below the $15.9B consensus, indicating AI networking orders have plateaued ahead of the next-gen transition.",
   "targets": [
@@ -43,12 +43,26 @@
   "created_at": "2026-07-01",
   "expires_at": "2026-09-20",
   "status": "active",
-  "tags": ["AVGO", "Broadcom", "AI-networking", "custom-ASIC", "hyperscaler", "ISM-expansion", "semiconductors", "reentry", "Tomahawk"],
+  "tags": [
+    "AVGO",
+    "Broadcom",
+    "AI-networking",
+    "custom-ASIC",
+    "hyperscaler",
+    "ISM-expansion",
+    "semiconductors",
+    "reentry",
+    "Tomahawk"
+  ],
   "outcome": null,
   "levels": {
     "entry_low": 368.0,
     "entry_high": 385.0,
     "stop": 348.0,
-    "targets": [402.0, 432.0, 462.0]
+    "targets": [
+      402.0,
+      432.0,
+      462.0
+    ]
   }
 }

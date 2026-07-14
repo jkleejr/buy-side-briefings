@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-5 weeks",
-  "current_price": 55.73,
+  "current_price": 55.08,
   "entry": "Long XLE at US market open July 8 ($54.50–$57.50 range based on +2% premarket move from $54.64 July 7 close). Scale: 60% at open, 40% on any intraday pullback to $54.50–$55.50 if the initial risk-off broad market selloff temporarily drags XLE below the premarket level. Do NOT chase above $58 — above that level the one-day Iran premium is fully priced and risk/reward degrades. The XLE energy names (Diamondback Energy, Occidental, Valero) are already up >2% premarket; if the opening spike exceeds $58, wait for a 1–2 session consolidation before entering.",
   "stop_loss": "$51.00 on two consecutive daily closes below $51 — implies either a confirmed ceasefire agreement materially de-escalates Hormuz risk (Brent falls back below $72) OR the broader market selloff drives energy stocks down with the tape regardless of the oil premium (recession demand-destruction fears dominate supply-side pricing). Below $51 the energy macro argument is broken on one of these two channels. Do not exit on a single day's close below $51 — oil shocks are volatile and a one-day stop-through can reverse; require confirmation on day 2.",
   "targets": [
@@ -43,12 +43,27 @@
   "created_at": "2026-07-08",
   "expires_at": "2026-08-12",
   "status": "active",
-  "tags": ["XLE", "energy", "oil", "Iran", "Hormuz", "macro", "geopolitical", "Brent", "WTI", "supply-shock"],
+  "tags": [
+    "XLE",
+    "energy",
+    "oil",
+    "Iran",
+    "Hormuz",
+    "macro",
+    "geopolitical",
+    "Brent",
+    "WTI",
+    "supply-shock"
+  ],
   "outcome": null,
   "levels": {
-    "entry_low": 54.50,
-    "entry_high": 57.50,
-    "stop": 51.00,
-    "targets": [61.0, 65.0, 72.0]
+    "entry_low": 54.5,
+    "entry_high": 57.5,
+    "stop": 51.0,
+    "targets": [
+      61.0,
+      65.0,
+      72.0
+    ]
   }
 }

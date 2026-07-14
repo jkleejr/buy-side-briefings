@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "low",
   "time_horizon": "2-4 weeks",
-  "current_price": 94.0,
+  "current_price": 94.55,
   "entry": "Long $92-96 (EWJ at ~$94 on June 25; Nikkei 225 closed +4.61% on June 25 as Japan recovers from Iran-conflict energy shock). Scale: 60% initial in the $92-95 range on June 25 or the morning of June 26; 40% add on any pullback to $91-93 on the June 26 Russell reconstitution volatility spill-over if the rebalancing creates a temporary dip in Asia-linked ETFs. Do NOT enter above $97 — at that level the Nikkei single-day recovery is fully priced.",
   "stop_loss": "$89 daily close (~4.3% below $93 midpoint) — implies Brent oil reverses back above $80-82 on Hormuz implementation delay, erasing the energy import relief thesis for Japan, OR the yen strengthens materially (below 145 USD/JPY) on a risk-off event that simultaneously hurts Japanese export earnings, OR MU's HBM4 revenue confirmation proves to not translate to DRAM/HBM demand from Japanese supply chain names (Renesas, TDK, Murata)",
   "targets": [
@@ -43,12 +43,28 @@
   "created_at": "2026-06-25",
   "expires_at": "2026-07-23",
   "status": "active",
-  "tags": ["EWJ", "Japan", "Nikkei", "oil", "energy", "AI", "HBM4", "MU", "macro", "ETF", "Hormuz"],
+  "tags": [
+    "EWJ",
+    "Japan",
+    "Nikkei",
+    "oil",
+    "energy",
+    "AI",
+    "HBM4",
+    "MU",
+    "macro",
+    "ETF",
+    "Hormuz"
+  ],
   "outcome": null,
   "levels": {
     "entry_low": 92.0,
     "entry_high": 96.0,
     "stop": 89.0,
-    "targets": [98.0, 103.0, 110.0]
+    "targets": [
+      98.0,
+      103.0,
+      110.0
+    ]
   }
 }

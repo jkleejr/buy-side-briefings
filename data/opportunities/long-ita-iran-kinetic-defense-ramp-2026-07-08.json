@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "4-8 weeks",
-  "current_price": 245.11,
+  "current_price": 239.06,
   "entry": "Long ITA at US market open July 8 ($243–$252 range; July 8 intraday range confirmed $243.80–$251.49 per Yahoo Finance). This is the direct thesis inversion of the short-ITA position that was closed today as thesis_broken. Scale: 60% at open in the $243–$248 range (day's risk-off low zone), 40% add on any pullback to $243–$245 if the opening trade sees a broad-market-correlated selloff. Do NOT initiate above $253 — above that level the ITA war premium is already recalibrating toward the $250.65 June 16 peak and the risk of a 'buy the news, sell the kinetic' reversal increases.",
   "stop_loss": "$225 on two consecutive daily closes — implies either (a) the Iran kinetic exchange is resolved within 48–72 hours via emergency ceasefire (Hormuz threat de-escalated; ITA war premium deflates back toward ceasefire-pricing baseline), or (b) the broader market selloff drives defense stocks down with the tape as recession fears overwhelm the defense-spending narrative. Below $225 the kinetic-exchange defense thesis is structurally broken. The two-close requirement avoids stopping out on a single risk-off spike.",
   "targets": [
@@ -43,12 +43,28 @@
   "created_at": "2026-07-08",
   "expires_at": "2026-08-29",
   "status": "active",
-  "tags": ["ITA", "defense", "aerospace", "long", "Iran", "kinetic", "war-premium", "procurement", "RTX", "LMT", "macro"],
+  "tags": [
+    "ITA",
+    "defense",
+    "aerospace",
+    "long",
+    "Iran",
+    "kinetic",
+    "war-premium",
+    "procurement",
+    "RTX",
+    "LMT",
+    "macro"
+  ],
   "outcome": null,
   "levels": {
     "entry_low": 243.0,
     "entry_high": 252.0,
     "stop": 225.0,
-    "targets": [265.0, 285.0, 305.0]
+    "targets": [
+      265.0,
+      285.0,
+      305.0
+    ]
   }
 }

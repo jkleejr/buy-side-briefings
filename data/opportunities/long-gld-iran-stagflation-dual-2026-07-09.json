@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "3-6 weeks",
-  "current_price": 383.0,
+  "current_price": 377.01,
   "entry": "GLD at July 9 US open ($378–$388 range, tracking gold at $4,115 pre-market July 9 per Yahoo Finance). Add to position on any pullback toward $370 if Brent temporarily retreats below $75 on an Iran ceasefire rumor — the stagflation pillar remains even if Iran de-escalates. Do not exceed 5% total position size including adds. Do not chase above $395 at open (Iranian headlines spike intraday prices above fair value; wait for a stable open).",
   "stop_loss": "$362 daily close — implies both pillars of the gold thesis have been simultaneously removed: (1) Iran de-escalation confirmed with a formal ceasefire and Hormuz reopened under international monitoring (removes the geopolitical premium), AND (2) June CPI on July 14 undershoots meaningfully (core below 3.8%), reversing the September hike trajectory and the stagflation narrative. A $362 GLD close corresponds to gold below $3,880, a level that would require both a geopolitical resolution and a disinflation confirmation. Single-pillar de-escalation (Iran only, or Fed only) does not trigger the stop.",
   "targets": [
@@ -19,7 +19,11 @@
     "entry_low": 370.0,
     "entry_high": 388.0,
     "stop": 362.0,
-    "targets": [395.0, 415.0, 445.0]
+    "targets": [
+      395.0,
+      415.0,
+      445.0
+    ]
   },
   "risk_reward": "1:1.9 at Target 1; 1:4.0 at Target 2; 1:9.3 at Target 3",
   "position_size_pct": 4,
@@ -29,15 +33,38 @@
   "bear_case": "A surprise Iran-US ceasefire agreement is reached over the July 9-10 weekend (possibly mediated by Qatar or Oman — the same channel that opened prior nuclear negotiations). Brent immediately drops to $73-74. Simultaneously, June CPI on July 14 prints 3.8% (below the 4.2% consensus), driven by shelter disinflation and weak energy comps from May 2026. Gold sells off from $4,115 to $3,900-3,950 on the dual-pillar de-escalation. GLD would fall from $383 to $363-370, approaching the $362 stop.",
   "invalidation": "$362 GLD daily close — requires simultaneous Iran ceasefire confirmation AND June CPI below 3.8%; OR Iran-US direct negotiations announced that include Hormuz demilitarization commitment (structural removal of the oil supply risk); OR Fed Chair Warsh gives a speech explicitly taking September hike off the table before the July 14 CPI (extremely unlikely given Warsh's documented hawkish posture and pattern of withholding forward guidance).",
   "sources": [
-    {"label": "Iran Day 2 — US strikes ~90 targets; Iran retaliates — CNN", "url": "https://www.cnn.com/2026/07/09/middleeast/iran-us-ceasefire-attacks-resume-intl-hnk"},
-    {"label": "Brent $77.60 (-0.5%) — Yahoo Finance pre-market July 9", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-9-us-strikes-iran-223149196.html"},
-    {"label": "FOMC September hike 68.8% — Polymarket", "url": "https://polymarket.com/event/fed-decision-in-september-762"},
-    {"label": "30Y Treasury above 5.00% — CNBC", "url": "https://www.cnbc.com/amp/2026/07/07/us-treasury-yields-investors-await-trade-deficit-data-.html"},
-    {"label": "Gold $4,115 (+0.80%) — Yahoo Finance pre-market July 9", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-9-us-strikes-iran-223149196.html"}
+    {
+      "label": "Iran Day 2 — US strikes ~90 targets; Iran retaliates — CNN",
+      "url": "https://www.cnn.com/2026/07/09/middleeast/iran-us-ceasefire-attacks-resume-intl-hnk"
+    },
+    {
+      "label": "Brent $77.60 (-0.5%) — Yahoo Finance pre-market July 9",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-9-us-strikes-iran-223149196.html"
+    },
+    {
+      "label": "FOMC September hike 68.8% — Polymarket",
+      "url": "https://polymarket.com/event/fed-decision-in-september-762"
+    },
+    {
+      "label": "30Y Treasury above 5.00% — CNBC",
+      "url": "https://www.cnbc.com/amp/2026/07/07/us-treasury-yields-investors-await-trade-deficit-data-.html"
+    },
+    {
+      "label": "Gold $4,115 (+0.80%) — Yahoo Finance pre-market July 9",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-9-us-strikes-iran-223149196.html"
+    }
   ],
   "created_at": "2026-07-09",
   "expires_at": "2026-08-20",
   "status": "active",
-  "tags": ["gold", "Iran", "geopolitical", "FOMC", "stagflation", "inflation hedge", "safe haven"],
+  "tags": [
+    "gold",
+    "Iran",
+    "geopolitical",
+    "FOMC",
+    "stagflation",
+    "inflation hedge",
+    "safe haven"
+  ],
   "outcome": null
 }

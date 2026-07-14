@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "2-4 weeks",
-  "current_price": 141.13,
+  "current_price": 144.74,
   "entry": "Long XOM $138–145 at Monday July 13 open. XOM is the highest-quality way to hold the Iran/Hormuz oil spike: unlike the broader XLE ETF (already in the book), XOM specifically benefits through Permian Basin production (~4.3M BOE/day, entirely onshore US — zero Hormuz exposure) and its 18B cubic feet/day Freeport LNG export capacity (Asian buyers sourcing alternatives to Persian Gulf piped gas bid up spot LNG, directly improving XOM's export margins). Enter 60% at open, hold 40% for any intraday pullback toward $138 on a market-wide risk-off flush if the SPX opens sharply lower. Do not initiate above $147 — at that level the intraday oil-spike premium has fully repriced XOM and the risk/reward compresses.",
   "stop_loss": "$128 daily close — at that level WTI has likely returned sustainably below $65 (ceasefire confirmed + Hormuz fully reopened + OPEC+ releasing strategic reserves), which removes the Hormuz supply-disruption premium entirely and returns XOM to fair value under the prior $65-70 WTI equilibrium. A $128 close also implies the upstream oil-price thesis has been invalidated without the countervailing LNG-spot thesis materializing.",
   "targets": [
@@ -47,12 +47,26 @@
   "created_at": "2026-07-13",
   "expires_at": "2026-08-08",
   "status": "active",
-  "tags": ["XOM", "energy", "oil", "Iran", "Hormuz", "LNG", "Permian", "macro", "geopolitical"],
+  "tags": [
+    "XOM",
+    "energy",
+    "oil",
+    "Iran",
+    "Hormuz",
+    "LNG",
+    "Permian",
+    "macro",
+    "geopolitical"
+  ],
   "outcome": null,
   "levels": {
     "entry_low": 138.0,
     "entry_high": 145.0,
     "stop": 128.0,
-    "targets": [152.0, 161.0, 171.0]
+    "targets": [
+      152.0,
+      161.0,
+      171.0
+    ]
   }
 }

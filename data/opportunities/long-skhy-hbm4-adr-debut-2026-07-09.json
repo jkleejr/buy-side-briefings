@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "3-6 weeks",
-  "current_price": 158.26,
+  "current_price": 152.35,
   "entry": "Evaluate at July 10 Nasdaq debut open. Entry framework per institutional demand signal: ≥$175 (≥10.6% above $158.26 indicative) = full 5% allocation — confirms pricing absorbed with premium intact; $165–$175 = 50% starter position at open, add if it holds $165 through first hour; <$165 = demand miss — do not enter, wait for a secondary base formation (3-day consolidation above $155) before reassessing. Do not chase intraday above $185 on debut day (debut spikes often retrace 5-10% before the secondary base forms).",
   "stop_loss": "$140 daily close — implies either (a) debut-day institutional sellers overwhelm the 7x oversubscribed demand signal, breaking the supply/demand balance; (b) HBM4 demand news between pricing and MSCI inclusion cycle turns negative (Rubin delay, NVDA capex reduction); or (c) Nasdaq-100 decline >3% on debut day creates index-level selling pressure that overrides the demand thesis. At $140 the HBM4 pure-play premium is structurally broken regardless of subsequent catalysts.",
   "targets": [
@@ -19,7 +19,11 @@
     "entry_low": 165.0,
     "entry_high": 185.0,
     "stop": 140.0,
-    "targets": [175.0, 195.0, 230.0]
+    "targets": [
+      175.0,
+      195.0,
+      230.0
+    ]
   },
   "risk_reward": "1:1.5 at Target 1 (from $165 entry); 1:3.8 at Target 2; 1:8.0 at Target 3",
   "position_size_pct": 5,
@@ -29,15 +33,38 @@
   "bear_case": "SKHY debuts below indicative ($158.26) — possibly at $150-155 — on 'soft commitment' unwinding from investors who signed up for the roadshow but back out at pricing. The 7x oversubscription was real but at the $158 indicative level; the final pricing (tonight) might disappoint if bookrunners price too aggressively. Alternatively, June CPI on July 14 prints ≥4.5%, re-igniting the September FOMC hike and compressing all growth multiples including SKHY's. A debut below $155 and continuation below $150 would suggest the demand signal was institutional posturing rather than committed capital.",
   "invalidation": "$140 SKHY daily close; OR SKHY debuts below $155 and closes the debut session below $155 (demand-miss signal, do not enter); OR June CPI July 14 prints ≥4.5% triggering September hike probability above 85% (growth multiple compression across all AI semis); OR NVDA announces Rubin/Vera Rubin Ultra HBM4 production delay beyond Q4 2026 (removes the primary HBM4 demand catalyst).",
   "sources": [
-    {"label": "SKHY 7x oversubscription — Korea JoongAng Daily/Bloomberg", "url": "https://www.koreajoongangdaily.com/business/sk-hynix-adr-draws-sevenfold-demand-ahead-of-nasdaq-debut-bloomberg/12763815"},
-    {"label": "SK Hynix Nasdaq ADR listing — KuCoin analysis", "url": "https://www.kucoin.com/blog/en-sk-hynix-nasdaq-adr-listing-historical-28b-offering-set-to-reshape-ai-semiconductor-market-on-july-10-2026"},
-    {"label": "SKHY pricing set for July 9 — BigGo Finance", "url": "https://finance.biggo.com/news/467ea716-14e1-4c1d-8ac1-301a905bd145"},
-    {"label": "SK Hynix ADR guide — Moomoo", "url": "https://www.moomoo.com/us/learn/detail-sk-hynix-adr-skhy-2026-listing-u-s-investors-guide-to-memory-stocks-118310-0"},
-    {"label": "TradingKey — SK Hynix, Samsung, HBM demand context", "url": "https://www.tradingkey.com/analysis/stocks/more/261995477-samsung-skhynix-adr-sndk-koixia-dram-mu-hbm-tradingkey"}
+    {
+      "label": "SKHY 7x oversubscription — Korea JoongAng Daily/Bloomberg",
+      "url": "https://www.koreajoongangdaily.com/business/sk-hynix-adr-draws-sevenfold-demand-ahead-of-nasdaq-debut-bloomberg/12763815"
+    },
+    {
+      "label": "SK Hynix Nasdaq ADR listing — KuCoin analysis",
+      "url": "https://www.kucoin.com/blog/en-sk-hynix-nasdaq-adr-listing-historical-28b-offering-set-to-reshape-ai-semiconductor-market-on-july-10-2026"
+    },
+    {
+      "label": "SKHY pricing set for July 9 — BigGo Finance",
+      "url": "https://finance.biggo.com/news/467ea716-14e1-4c1d-8ac1-301a905bd145"
+    },
+    {
+      "label": "SK Hynix ADR guide — Moomoo",
+      "url": "https://www.moomoo.com/us/learn/detail-sk-hynix-adr-skhy-2026-listing-u-s-investors-guide-to-memory-stocks-118310-0"
+    },
+    {
+      "label": "TradingKey — SK Hynix, Samsung, HBM demand context",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/261995477-samsung-skhynix-adr-sndk-koixia-dram-mu-hbm-tradingkey"
+    }
   ],
   "created_at": "2026-07-09",
   "expires_at": "2026-08-20",
   "status": "active",
-  "tags": ["HBM4", "AI memory", "ADR", "Korea", "semiconductor", "SKHY", "MSCI inclusion"],
+  "tags": [
+    "HBM4",
+    "AI memory",
+    "ADR",
+    "Korea",
+    "semiconductor",
+    "SKHY",
+    "MSCI inclusion"
+  ],
   "outcome": null
 }

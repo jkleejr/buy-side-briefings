@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "medium",
   "time_horizon": "1-2 weeks",
-  "current_price": 95.0,
+  "current_price": 86.01,
   "entry": "Long DAL $92–$97 ahead of Q2 2026 earnings on July 10 (Thursday pre-market). DAL is trading near all-time highs (~$95) on the combination of record summer travel demand and WTI crude oil at $69/barrel — the lowest since early 2026 and significantly below the ~$75–78 range of Q1/Q2 filing periods. Enter 70% of position today (July 7) at $92–$97; reserve 30% to add on any market-wide weakness related to Korea semiconductor selloff or FOMC minutes jitters (July 8) that pulls DAL below $93 without a company-specific catalyst. Do NOT buy above $99 — at that level the earnings are likely already priced and incremental upside is compressed.",
   "stop_loss": "$87 daily close (~8–9% below $95 entry midpoint). A close at $87 implies one of: (1) oil prices re-spike above $80 on a geopolitical event, erasing the fuel-cost tailwind; (2) DAL pre-announces a revenue shortfall or the Q2 earnings miss consensus EPS of $1.48 materially (above 15% miss); (3) macro risk-off driven by FOMC minutes or Korea selloff cascades into broad consumer discretionary selling. The $87 level sits below DAL's 50-day moving average and represents a clean technical break of the summer travel rally.",
   "targets": [
@@ -42,13 +42,33 @@
   ],
   "created_at": "2026-07-07",
   "expires_at": "2026-07-21",
-  "status": "active",
-  "tags": ["DAL", "airlines", "earnings", "Q2-2026", "oil", "travel", "catalyst", "consumer", "summer-travel"],
-  "outcome": null,
+  "status": "stopped_out",
+  "tags": [
+    "DAL",
+    "airlines",
+    "earnings",
+    "Q2-2026",
+    "oil",
+    "travel",
+    "catalyst",
+    "consumer",
+    "summer-travel"
+  ],
+  "outcome": {
+    "closed_at": "2026-07-14",
+    "final_price": 86.01,
+    "return_pct": -9.46,
+    "outcome_label": "Stop triggered at $86.01",
+    "note": "WTI surged to $79.56 intraday on July 14 as Iran ceasefire was declared 'over' by Trump July 13, erasing the fuel-cost tailwind that underpinned the DAL thesis (original thesis required WTI at $69). DAL closed below the $87 stop level. Oil approaching the $80 September hike trip wire negates any further summer travel earnings uplift."
+  },
   "levels": {
     "entry_low": 92.0,
     "entry_high": 97.0,
     "stop": 87.0,
-    "targets": [102.0, 108.0, 115.0]
+    "targets": [
+      102.0,
+      108.0,
+      115.0
+    ]
   }
 }

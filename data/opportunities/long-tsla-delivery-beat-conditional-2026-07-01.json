@@ -7,7 +7,7 @@
   "direction": "long",
   "conviction": "low",
   "time_horizon": "1-3 weeks",
-  "current_price": 418.0,
+  "current_price": 393.06,
   "entry": "CONDITIONAL LONG — initiate ONLY if Q2 2026 deliveries published July 2 (premarket) exceed the Wall Street consensus of 406,024 vehicles. If deliveries beat, buy at the July 2 open in the $410–428 zone. Do NOT initiate before delivery data is published. If deliveries miss (below 406K), do not enter — the miss will be compounded by NFP risk in the same session. If both deliveries beat AND NFP is Goldilocks (90–130K, wages +0.2–0.3%), initiate full position; if beat but NFP is hot (>150K), initiate only 50% and evaluate through the 3-day gap. Size 2% of gross — this is a binary event bet, not a thesis-driven position.",
   "stop_loss": "$390 daily close (~6.7% below $418) — if Q2 deliveries disappoint OR the NFP print on July 2 triggers BofA 3-hike repricing that overwhelms the delivery beat, exit on the first confirming daily close below $390. A miss on deliveries: exit immediately at market on the July 2 open without waiting for end of day. The stop is not a thesis-recovery opportunity — a delivery miss means the thesis is wrong from the start.",
   "targets": [
@@ -47,12 +47,26 @@
   "created_at": "2026-07-01",
   "expires_at": "2026-07-22",
   "status": "active",
-  "tags": ["TSLA", "Tesla", "Q2-deliveries", "binary-event", "EV", "autonomous", "conditional", "Robotaxi", "low-conviction"],
+  "tags": [
+    "TSLA",
+    "Tesla",
+    "Q2-deliveries",
+    "binary-event",
+    "EV",
+    "autonomous",
+    "conditional",
+    "Robotaxi",
+    "low-conviction"
+  ],
   "outcome": null,
   "levels": {
     "entry_low": 410.0,
     "entry_high": 428.0,
     "stop": 390.0,
-    "targets": [448.0, 478.0, 518.0]
+    "targets": [
+      448.0,
+      478.0,
+      518.0
+    ]
   }
 }
