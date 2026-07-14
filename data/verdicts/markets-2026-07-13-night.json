@@ -2,12 +2,13 @@
   "routine": "markets",
   "date": "2026-07-13",
   "window": "night",
-  "generated_at": "2026-07-13T20:00:00Z",
+  "generated_at": "2026-07-14T01:15:00Z",
   "is_seed": false,
   "verdict": {
     "code": "step_aside",
     "emoji": "🟠",
     "label": "STEP ASIDE / DEFENSIVE TILT",
+    "headline": "Iran blockades the Strait of Hormuz, sending oil surging and stocks lower",
     "conviction": "medium",
     "rationale_short": "May 15 playbook re-engaged: 30Y crossed back above the 5.0% trigger, oil spiked 9.4% on Iran Strait of Hormuz blockade, gold sold off alongside equities (deleveraging, not rotation), and chipmakers led the downside. Two of four regime triggers confirmed. Hold cash and reduce gross; let Tuesday's CPI determine whether this upgrades to BEARISH.",
     "supporting_data": [
@@ -16,7 +17,7 @@
       { "label": "Gold -2% to ~$4,020 — fell alongside equities; deleveraging fingerprint, not flight-to-safety (same pattern as May 15)", "url": "https://www.cnbc.com/select/the-price-of-gold-today-july-13-2026/" },
       { "label": "AMD -4%, MU -4%, SK Hynix -9% — chipmakers led downside; AI/semis capex anxiety reactivated with Iran chip-export risk", "url": "https://finance.yahoo.com/markets/articles/p-500-nasdaq-futures-decline-095349478.html" },
       { "label": "VIX 16.89 — approaching 18 regime trigger; elevated vs Friday but not yet confirmed breach", "url": "https://finance.yahoo.com/quote/%5EVIX/" },
-      { "label": "BTC -3.3% to $62,049; ETH -2.9% to $1,766 — crypto risk-off on geopolitical shock", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-july-13-2026-strong-price-openings-backtracking-this-morning-133042462.html" }
+      { "label": "BTC -3.3% to $62,049 close; live 9pm ET: $62,482 — barely holding Gate 2 ($62K floor); Brent crude climbed above $83 AH as Iran blockade goes live Tuesday 4pm ET", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-july-13-2026-strong-price-openings-backtracking-this-morning-133042462.html" }
     ]
   },
   "snapshot": {
@@ -37,7 +38,7 @@
     { "ticker": "AMD",   "note": "-4% — led downside alongside MU; memory + AI demand concerns reignited",         "sentiment": "negative" },
     { "ticker": "AAPL",  "note": "$316.47 — relative defensive bid; less AI-capex exposed than semis",             "sentiment": "neutral" },
     { "ticker": "META",  "note": "$656.75 — down but held better than semis; growth software, not hardware",        "sentiment": "neutral" },
-    { "ticker": "TSM",   "note": "$430.45 — TSMC reports Thursday; will be the AI capex demand verdict for the week", "sentiment": "neutral" },
+    { "ticker": "TSM",   "note": "$430.45 — TSMC released June 2026 revenue tonight: +67.9% YoY for the month, H1 +35.6% YoY — strong AI chip demand confirmation. Full Q2 earnings call Thursday July 17. Stock rose ~1% on the data. Still the capex demand verdict for the week.", "sentiment": "positive" },
     { "ticker": "AVGO",  "note": "$384.45 — AI networking trade under same pressure as NVDA/AMD",                    "sentiment": "negative" }
   ],
   "dont_buy": [
@@ -49,7 +50,7 @@
     {
       "asset": "XLE",
       "direction": "long",
-      "thesis": "Energy is the only clear beneficiary of the Iran/oil shock. WTI +9.42% to $78.14 while XLE sits at $55.08 represents lagged sector catch-up. High-oil, rising-yield regime inflects energy FCF strongly; geopolitical premium may prove stickier than consensus.",
+      "thesis": "Energy is the only clear beneficiary of the Iran/oil shock. WTI +9.42% to $78.14 while XLE sits at $55.08 represents lagged sector catch-up; Brent pushed above $83 after hours as the blockade goes live Tuesday 4pm ET. High-oil, rising-yield regime inflects energy FCF strongly; geopolitical premium may prove stickier than consensus.",
       "entry": "$54.50-55.50 on any near-term pullback",
       "invalidation": "$52.50 daily close",
       "conviction": "medium",
@@ -74,13 +75,13 @@
       "horizon": "1 week"
     }
   ],
-  "bear_case": "Counter-argument: Iran oil spikes historically mean-revert within 48-72 hours once diplomatic channels open or markets recognize the Strait of Hormuz disruption is a tariff, not supply destruction. The 30Y at 5.101% is +3bps from Friday, not the +12bps shock of May 15. June CPI will capture a month when WTI fell -20.4%, likely printing below consensus; a cool number Tuesday could trigger a violent intraday reversal. Banks reporting strong Q2 NII and resilient credit would replicate the May 20 BUY upgrade dynamic where the Step Aside resolved in three sessions. VIX at 16.89 has not confirmed regime break. Invalidation level: if SPX reclaims 7,600 by Wednesday with VIX below 17 and 30Y retreating below 4.90%, the Iran shock was a one-day overshoot and the call is wrong.",
+  "bear_case": "Counter-argument: Iran oil spikes historically mean-revert within 48-72 hours once diplomatic channels open or markets recognize the Strait of Hormuz disruption is a tariff, not supply destruction. The 30Y at 5.101% is +3bps from Friday, not the +12bps shock of May 15. June CPI will capture a month when WTI fell ~10%, likely printing headline negative MoM and ~3.8% YoY — a meaningful beat of the 4.2% May level. Consensus expects -0.1% MoM / 3.8% YoY, with core at ~2.9% — if it prints at or below consensus the risk-off tone reverses fast. TSMC's June revenue tonight (+67.9% YoY) signals AI chip demand remains robust and could be the catalyst that overcomes the geopolitical narrative if CPI cooperates. Banks reporting strong Q2 NII and resilient credit would replicate the May 20 BUY upgrade dynamic where the Step Aside resolved in three sessions. VIX at 16.89 has not confirmed regime break. Invalidation level: if SPX reclaims 7,600 by Wednesday with VIX below 17 and 30Y retreating below 4.90%, the Iran shock was a one-day overshoot and the call is wrong.",
   "morning_call_grade": "no_briefing_today",
   "week_ahead": {
     "catalysts": [
-      { "date": "2026-07-14", "label": "June CPI + JPM/BAC/WFC/GS/C earnings + Fed Chair Warsh House testimony", "directional_bias": "Binary — cool CPI = bounce, hot CPI = BEARISH upgrade" },
+      { "date": "2026-07-14", "label": "June CPI (8:30am ET) + JPM/BAC/WFC/GS/C earnings pre-open + Fed Chair Warsh House testimony", "directional_bias": "Binary — cool CPI = bounce, hot CPI = BEARISH upgrade; Iran blockade goes live 4pm ET" },
       { "date": "2026-07-15", "label": "June PPI + Warsh Senate testimony + MS/BLK/JNJ/ASML earnings", "directional_bias": "Consolidation; directional cue set by Tuesday" },
-      { "date": "2026-07-16", "label": "Retail sales + TSMC Q2 earnings + Netflix earnings", "directional_bias": "Pivotal for chips — TSMC guides on AI capex demand outlook" },
+      { "date": "2026-07-16", "label": "Retail sales + Netflix earnings; TSMC full Q2 call (AI capex demand outlook)", "directional_bias": "Pivotal for chips — TSMC June revenue beat (+67.9% YoY) raises bar for the call" },
       { "date": "2026-07-17", "label": "No major scheduled catalysts", "directional_bias": "Risk reduction / positioning ahead of next week" }
     ]
   },
