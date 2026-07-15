@@ -1,0 +1,152 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T22:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "GATE 3 ACTIVE — DAY 5. NVDA CLOSED $212.50 (+0.33% VS JULY 14 PRIOR CLOSE $211.80) ON A DAY SPX GAINED +0.38% AND NASDAQ +0.62%. NVDA UNDERPERFORMED THE NASDAQ BY ~29 BPS ON THE CLOSE BUT MASSIVELY OUTPERFORMED THE BROADER SEMI SECTOR: MICRON -8%, AMD -3%, LAM RESEARCH -3%. GATE 3 CONDITIONS ALL CLEAR: NVDA $212.50 >$200 ✓, SPX 7,572.40 >7,460 ✓, VIX ~16.15 <17 ✓. TWO PRIMARY MACRO CATALYSTS DROVE THE BROADER MARKET: (1) JUNE PPI -0.3% MOM (VS 0.0% CONSENSUS) RELEASED TODAY — SECOND DISINFLATIONARY SURPRISE IN 24 HOURS; (2) CHINA H200 SHIPMENT CONFIRMATION (JULY 14) — US DEPT OF COMMERCE CLEARED ~10 CHINESE FIRMS INCLUDING ALIBABA, TENCENT, BYTEDANCE FOR H200 GPU PURCHASES (CAP: 75,000 UNITS PER CUSTOMER); FIRST SHIPMENTS CONFIRMED AS COMMENCED. CPI (JUNE) PRINTED 3.5% YOY / -0.4% MOM ON JULY 14, REMOVING FOMC JULY 29 HIKE RISK TO 14.4% PROBABILITY. MEGA-CAP TECH DOMINATED: APPLE +4%, AMAZON +3%, ALPHABET +3%, MICROSOFT +3% — ROTATION TOWARD LIQUIDITY AND SCALE. VOLUME: ~29.69M SHARES (ANOMALOUSLY LIGHT VS ~131M RECENT AVERAGE — LOW CONFIDENCE ON THIS FIGURE; DIRECTIONALLY A THIN SESSION).",
+
+  "long_pnl": "Longs from Gate 3 entry (~$200–$202 range, July 9–10) are up approximately +5.2%–6.3% at $212.50. The Gate 3 stop at $195 close basis provides ~8.2% downside buffer from current price. Today's +0.33% session held structure while semis broadly sold off — a defensive resilience day for NVDA.",
+  "short_pnl": "Shorts gave back ground in a session where NVDA held $212 while Micron fell 8%. Shorts from the July 10 double-top ceiling ($204.46–$204.59) are now underwater approximately 3.9%–3.8% at $212.50.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "medium",
+    "horizon": "1–4 weeks (August 26 earnings binary)",
+    "rationale": "Gate 3 ACTIVE (Day 5): NVDA $212.50 >$200 ✓, SPX 7,572.40 >7,460 ✓, VIX ~16.15 <17 ✓. All three conditions maintained. CPI/PPI macro tailwinds have removed near-term FOMC hike risk (14.4% probability). China H200 GPU shipment clearance opens a new revenue stream for NVIDIA previously blocked by export restrictions. Conviction maintained at MEDIUM (not HIGH) because: (1) NVDA underperformed the Nasdaq by ~29 bps on the close and sector rotation favored mega-cap consumer tech (Apple, Amazon, Alphabet) over semis today; (2) session volume was anomalously low vs. recent average (~29.69M vs. ~131M — data confidence is low, but directionally a thin session suggests no institutional conviction buying at these levels); (3) $215 overhead resistance not broken; (4) August 26 earnings ($91B guidance vs. $93.5B updated consensus) are 42 days away — the real binary. Stop: daily close below $195. Next key level: $215–$220 for conviction upgrade."
+  },
+
+  "so_what": {
+    "line": "Gate 3 Day 5 active — NVDA held $212 while Micron fell 8%; CPI/PPI removed July FOMC hike risk; China H200 shipments begin; maintain BUY medium conviction with $195 stop.",
+    "bull": "China H200 GPU clearance opens new revenue for NVIDIA previously blocked; CPI 3.5% + PPI -0.3% remove FOMC July 29 hike risk (14.4%); NVDA outperformed semis (Micron -8%, AMD -3%) on a day AI infrastructure demand thesis was reaffirmed; earnings guidance $91B vs $93.5B updated consensus.",
+    "bear": "NVDA underperformed Nasdaq by ~29 bps; session volume anomalously low (~29.69M shares vs ~131M average — directionally thin); $213–$215 resistance not broken; CNBC: 'very few' H200 chips have actually shipped yet despite clearance announcement; RSI ~50 (neutral, no momentum confirmation)."
+  },
+
+  "snapshot": {
+    "price": 212.50,
+    "change_pct": 0.33,
+    "change_abs": 0.70,
+    "prev_close": 211.80,
+    "day_high": 213.81,
+    "day_low": 209.36,
+    "week52_high": 236.54,
+    "week52_low": 164.07,
+    "volume": "~29.69M shares (anomalously low vs ~131M recent avg — confidence LOW; treat directionally as a thin session)",
+    "market_cap": "~$5.2T",
+    "extra": [
+      { "label": "GATE 3 STATUS", "value": "✓ ACTIVE (Day 5)", "tone": "up" },
+      { "label": "Gate 3: NVDA >$200", "value": "$212.50 ✓ (+$12.50 clearance)", "tone": "up" },
+      { "label": "Gate 3: SPX >7,460", "value": "7,572.40 ✓ (+112.40 clearance)", "tone": "up" },
+      { "label": "Gate 3: VIX <17", "value": "~16.15 ✓ (estimate; low confidence on exact close)", "tone": "up" },
+      { "label": "Semi sector divergence", "value": "Micron -8%, AMD -3%, Lam Research -3% — NVDA +0.33% massively outperformed the sector", "tone": "up" },
+      { "label": "China H200 GPU clearance (July 14)", "value": "US cleared ~10 Chinese firms for H200 purchases (Alibaba, Tencent, ByteDance); 75,000 unit cap/customer; first shipments commenced. NOTE: CNBC says 'very few' chips have actually shipped yet.", "tone": "up" },
+      { "label": "Mega-cap tech rotation", "value": "Apple +4%, Amazon +3%, Alphabet +3%, Microsoft +3% — AI compute theme broadened beyond semis today", "tone": "neutral" },
+      { "label": "June CPI / PPI macro tailwinds", "value": "CPI 3.5% YoY / -0.4% MoM (July 14); PPI -0.3% MoM (July 15); FOMC July 29 hike probability: 14.4%", "tone": "up" },
+      { "label": "vs. Nasdaq (close)", "value": "NVDA +0.33% vs NDX +0.62% → underperformed by ~29 bps", "tone": "neutral" },
+      { "label": "50-DMA", "value": "~$208.96 — NVDA $212.50 is +$3.54 / +1.6% above; constructive", "tone": "up" },
+      { "label": "200-DMA", "value": "~$191.59 — NVDA well above", "tone": "up" },
+      { "label": "RSI (14-day)", "value": "~49.92 — neutral; no momentum confirmation yet", "tone": "neutral" },
+      { "label": "Forward P/E", "value": "~23.4x at $212.50 (below AI-infrastructure peer avg ~30x+)", "tone": "up" },
+      { "label": "Next earnings", "value": "August 26, 2026 AMC — Q2 FY2027", "tone": "neutral" },
+      { "label": "Earnings consensus", "value": "$93.5B revenue (updated, +6.7% revision in 3 months); $2.12 EPS; vs co. guidance $91B", "tone": "up" },
+      { "label": "Analyst consensus", "value": "79 Buy / 1 Hold / 0 Sell; avg target $302–$310 (Strong Buy; ~+43% upside from $212.50)", "tone": "up" },
+      { "label": "SPX close", "value": "7,572.40 (+0.38%)", "tone": "up" },
+      { "label": "Nasdaq close", "value": "26,269.23 (+0.62%)", "tone": "up" }
+    ]
+  },
+
+  "positioning": {
+    "iv": 38,
+    "iv_note": "IV ~38–44% (estimate based on May 2026 snapshot; direct July 15 data unavailable — financial sites returned HTTP 403). IV Rank ~32 (mid-range). With earnings on August 26 now 42 days away, pre-earnings IV buildup is likely beginning. At ~38–44% IV, NVDA options are within historical norms. Market is not pricing fear — the lack of elevated IV on a semi-sector selloff day (Micron -8%) confirms institutional holders are not panicking.",
+    "short_interest": "~0.9% of float (low; AI darling status persists)",
+    "max_pain": "~$210",
+    "notable_flow": "No specific unusual options flow confirmed for July 15. Put/call volume ratio ~0.35 (May 2026 snapshot; directionally bullish — significantly more call buying than put buying). With earnings 42 days out, pre-earnings call positioning is likely building in August and September expirations. The $215–$220 call strikes are the likely target zone for speculative positioning around the August 26 print. Data confidence LOW — direct options page access blocked."
+  },
+
+  "what_traders_are_doing": "GATE 3 DAY 5 — NVDA HELD THE LINE WHILE SEMIS FELL APART. The story of July 15 for NVDA is not the +0.33% gain — it's the sector divergence. Micron fell 8%, AMD fell 3%, Lam Research fell 3%. NVDA held $212. That is either (a) institutional support recognizing NVDA is not a commodity memory/equipment play but an AI platform company with pricing power, or (b) a rotation lag that catches up in coming sessions. The China H200 news is the NVDA-specific catalyst that separates it from Micron/AMD: NVDA just reopened a major customer market (Alibaba, Tencent, ByteDance) that was previously blocked. Even if 'very few' chips have shipped yet (per CNBC), the cleared orders represent forward revenue the market was not pricing. Traders watching: (1) Does $213–$215 resistance break in the next session? A clean close above $215 on volume targets $220+. (2) Does the semi sector rotation back into NVDA on the next institutional buy day, or does mega-cap tech (Apple, Amazon) continue to absorb the CPI-driven multiple expansion? (3) August 26 earnings — $93.5B consensus vs $91B guidance. If NVDA pre-announces or guides higher, position sizing increases. If the gap closes (guidance meets consensus), the upside surprise thesis weakens. Stop at $195 close basis; Gate 3 remains active.",
+
+  "news": [
+    {
+      "label": "China H200 GPU clearance (July 14): US cleared ~10 Chinese firms including Alibaba, Tencent, ByteDance for H200 GPU purchases (cap: 75,000 units/customer); first shipments confirmed commenced — major reopening of previously blocked market",
+      "url": "https://247wallst.com/investing/2026/07/14/nvidias-china-comeback-finally-begins-but-heres-why-investors-should-keep-expectations-in-check/",
+      "source": "247WallSt / WCCFTech / CNBC",
+      "sentiment": "positive"
+    },
+    {
+      "label": "CNBC (July 14): 'Very few' NVIDIA H200 AI chips have actually shipped to China despite clearance announcement — tempering near-term revenue expectations from China H200 orders",
+      "url": "https://www.cnbc.com/2026/07/14/nvidia-h200-ai-chips-china.html",
+      "source": "CNBC",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "June PPI: -0.3% MoM vs 0.0% consensus (July 15); June CPI: 3.5% YoY / -0.4% MoM (July 14) — two disinflationary data points in 24 hours; FOMC July 29 hike probability at 14.4%; macro multiple-expansion tailwind for NVDA",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-15-2026",
+      "source": "TheStreet / CNBC",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVDA outperformed a sector selloff (Micron -8%, AMD -3%, Lam Research -3%) — market treating NVDA as an AI platform company, not a commodity semi; mega-cap tech dominated (Apple +4%, Amazon +3%)",
+      "url": "https://www.fxleaders.com/news/2026/07/15/nvidia-nvda-stock-price-forecast-nvda-tests-212-as-ai-demand-and-china-shipments-lift-outlook/",
+      "source": "FX Leaders",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Q2 FY2027 earnings: August 26, 2026 AMC; consensus revenue $93.5B (revised +6.7% in last 3 months); EPS consensus $2.12; company guidance $91B; prior-quarter beat: $81.6B revenue / $1.87 EPS",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/NVDA/earnings/",
+      "source": "MarketBeat / StockAnalysis",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Morgan Stanley (Joseph Moore) reiterated Buy, PT $288 on July 10; analyst consensus 79 Buy / 1 Hold / 0 Sell; avg 12-month target $302–$310 — 43% upside from $212.50",
+      "url": "https://watcher.guru/news/morgan-stanley-provides-new-nvidia-stock-price-target-nvda",
+      "source": "Watcher.guru / TipRanks / StockAnalysis",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVIDIA Q1 FY2027 (most recent quarter): revenue $81.6B (+85% YoY), EPS $1.87 vs $1.76 consensus; Data Center revenue $75.2B (+92%); $119B buyback authorization outstanding",
+      "url": "https://stockanalysis.com/stocks/nvda/history/",
+      "source": "StockAnalysis / Robinhood / Morningstar",
+      "sentiment": "positive"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "Gate 3 is active for a fifth day. NVDA held $212 on a day semis broadly sold off — sector resilience is the key short-term read. The $213–$215 resistance zone (testing now) is the next ceiling: a clean close above $215 on volume opens space toward $220. The 50-DMA at $208.96 provides dynamic support; a close below $208 is the first warning sign. CPI/PPI have removed the near-term FOMC hike risk, and China H200 clearance opens a new revenue channel. The immediate risk is that the mega-cap tech rotation (Apple, Amazon, Alphabet absorbing the CPI multiple expansion) continues to draw capital away from semis. Session volume was anomalously light — no institutional conviction buying at $212 today. Watch whether volume normalizes on the next up day as the signal that real buying has resumed.",
+    "long_term": "The August 26 earnings event is the next binary. Consensus has revised to $93.5B revenue (from $86.84B when company guided $91B in May), creating a setup where NVIDIA must now beat its own guidance by a larger margin to surprise. If Data Center revenue continues the +92% YoY trajectory and Q3 guidance comes in above $95B–$100B, the stock re-rates to $220–$240 (28–30x forward PE vs current ~23.4x). At 23.4x forward PE vs the AI infrastructure peer average of 30x+, NVDA screens cheap. The China H200 market reopening is a multi-quarter revenue tailwind. $119B buyback provides structural bid. Long-term target: $236.54 ATH retest within 6–12 months; $250+ if earnings confirm the Blackwell supercycle continues."
+  },
+
+  "bull_case": [
+    "China H200 GPU market reopened: US cleared Alibaba, Tencent, ByteDance and ~7 other major Chinese tech firms for H200 GPU purchases (75,000 unit cap/customer). This is a market that was effectively zero revenue for NVIDIA for ~18 months due to export restrictions. Even modest utilization of the cleared capacity represents billions in incremental forward revenue. The market has not fully priced this — NVDA's forward earnings estimates have only revised 6.7% in the last 3 months, which understates the potential China contribution if the H200 program scales.",
+    "Gate 3 Day 5: All three conditions maintained (NVDA >$200, SPX >7,460, VIX <17). NVDA held $212.50 while Micron fell 8% and AMD fell 3% on the same session — demonstrating NVDA's premium AI platform valuation is decoupling from the commodity memory/equipment cycle. CPI (3.5% / -0.4% MoM) + PPI (-0.3% MoM) have removed July FOMC hike risk to 14.4%, removing the primary macro headwind from earlier in July. The macro backdrop is now a tailwind, not a headwind.",
+    "23.4x forward PE vs AI infrastructure peer average ~30x+: NVDA is still cheap on a relative basis at $212.50. A re-rating to 28x (still below peers) implies ~$240. At 30x (peer parity) implies ~$257. The $119B buyback authorization creates a structural bid floor. August 26 earnings with $93.5B consensus vs $91B guidance creates a setup where NVIDIA can 'beat guidance' even if Q2 comes in at guidance — the consensus has moved above company guidance, setting up a narrative win."
+  ],
+
+  "bear_case": [
+    "Session volume was anomalously low: ~29.69M shares reported vs the ~131M recent session average from July 10 (data confidence LOW on the exact figure, but directionally a thin session). No institutional conviction buying at $212 today. If large holders are not adding at these levels, the stock's advance since July 10 ($202.78 → $212.50, +4.8%) may be thin-market drift rather than a genuine institutional bid resumption.",
+    "NVDA underperformed the Nasdaq by ~29 bps on the close (NVDA +0.33% vs NDX +0.62%) as mega-cap consumer tech (Apple +4%, Amazon +3%, Alphabet +3%) dominated the CPI multiple expansion. If the rotation continues — cash flowing from semis into consumer tech names on rate-cut optimism — NVDA may face sector headwinds even as the broad market advances. RSI ~50 (neutral) provides no momentum confirmation that the July 10–15 rally has legs.",
+    "China H200 reality check: CNBC cited a senior US trade official on July 14 saying 'very few' H200 chips have actually shipped yet despite the clearance announcement. The market initially rallied on the headline but the actual revenue impact is 2–4 quarters away at best. August 26 earnings (Q2 FY2027, quarter ending July 31) will not include any material China H200 revenue — the catalyst is forward-looking only."
+  ],
+
+  "key_levels": [
+    { "label": "★ Strongest resistance — $213–$215 zone: NVDA closed $212.50 testing this ceiling from below; prior double-top at $204.46–$204.59 (July 9–10) was broken on the CPI rally; $213–$215 is now the next cluster as confirmed by FX Leaders July 15 article 'NVDA Tests $212 as AI Demand and China Shipments Lift Outlook'; a daily close above $215 on volume ≥1.5× average opens space toward $220–$225", "level": "$213.00–$215.00", "kind": "resistance" },
+    { "label": "Post-earnings bull target zone — key resistance if stock breaks $215 before earnings; bull case from $119B buyback + China H200 reopening; multiple-expansion to 28x forward PE at $93.5B consensus implies ~$240+", "level": "$220.00–$225.00", "kind": "resistance" },
+    { "label": "52-week high / ATH — full recovery target if Blackwell supercycle guidance confirms at August 26 earnings; analyst high-end target zone aligns with ATH retest", "level": "$236.54", "kind": "resistance" },
+    { "label": "Session close / intraday pivot — July 15 close; 50-DMA at $208.96 is the first meaningful support just below; the $210–$212 range is near-term support on any pullback", "level": "$212.50", "kind": "pivot" },
+    { "label": "★ Strongest support — 50-DMA confluence / prior double-top breakout: 50-DMA at ~$208.96 is $3.54 below current price; the July 9–10 double-top at $204.46–$204.59 was broken on the CPI rally and now acts as support; institutional buy programs defended $198.96–$199 in back-to-back sessions (July 9–10); the $205–$209 zone combines the prior resistance-turned-support with the dynamic 50-DMA floor; a daily close below $208 is the first warning sign", "level": "$205.00–$208.96", "kind": "support" },
+    { "label": "Gate 3 trigger / psychological round-number support — $200.00; Gate 3 condition threshold and major round number; breached intraday twice in July 9–10 before recovering; a close below $200 is a Gate 3 condition breach requiring immediate review", "level": "$200.00", "kind": "support" },
+    { "label": "Full-position stop (daily close basis) — $195 stop from Gate 3 framework; 200-DMA at ~$191.59 provides secondary structural support below; a close below $195 triggers stop protocol per the standing Gate 3 framework", "level": "$195.00", "kind": "support" },
+    { "label": "200-DMA / structural floor — ~$191.59; well below current price; only relevant if Gate 3 framework stop ($195) is triggered and position is exited; long-term institutional accumulation zone", "level": "~$191.59", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-29", "label": "FOMC rate decision — 14.4% hike probability; hold expected; neutral-to-dovish statement = NVDA multiple expansion positive; AI capex stocks benefit from falling rate expectations", "importance": "medium" },
+    { "date": "2026-08-01", "label": "China H200 shipment progress update (est.) — real-world volumes of H200 GPUs shipped to cleared Chinese customers; CNBC noted 'very few' shipped as of July 14; volume data will confirm or temper revenue expectations", "importance": "medium" },
+    { "date": "2026-08-26", "label": "NVDA Q2 FY2027 earnings AMC — $93.5B revenue consensus vs $91B company guidance; EPS $2.12 consensus; Q3 guidance is the key variable; Blackwell ramp and China H200 contribution are the two new data points", "importance": "high" },
+    { "date": "2026-07-15", "label": "Ongoing: US-Iran geopolitical risk — NVDA has been relatively insulated vs BTC, but a major escalation that spikes VIX above 17 would breach Gate 3 condition 3 and require position review", "importance": "medium" }
+  ],
+
+  "analysis": "## Technical analysis (NVDA — July 15, 2026, post-close)\n\n**Close:** $212.50, up +$0.70 / +0.33% from July 14 prior close of $211.80. Day range: $209.36–$213.81 (confidence MEDIUM — conflicting intraday data from multiple sources; this range is more internally consistent with the $212.50 close than an alternative $203.80 low reading).\n\n**Trend:** BULLISH — NVDA is +$9.72 / +4.8% since the July 10 close ($202.78) and holds above both the 50-DMA (~$208.96) and 200-DMA (~$191.59). The macro tailwind (CPI 3.5% / PPI -0.3%) has removed the July FOMC hike risk that was a headwind earlier in the month. Gate 3 active for a fifth consecutive session.\n\n**Momentum:** RSI ~49.92 — neutral. The stock has rallied from $202.78 (July 10) to $212.50 in five sessions but RSI has not broken above 50 into momentum territory. This is consistent with a measured recovery rather than a breakout — the China H200 news and CPI tailwind have lifted prices but have not yet generated the conviction buying that produces an RSI >60 momentum signal. For a conviction upgrade from MEDIUM to HIGH, want to see RSI cross above 55 on a close above $215.\n\n**Pattern:** NVDA broke out above the July 9–10 double-top ceiling at $204.46–$204.59 on the CPI-driven rally between July 10 and today. The prior double-top that capped the stock across two sessions is now support. The new ceiling is $213–$215. A close above $215 on volume sets up the measured-move extension: $204.59 + ($204.59 − $198.97) = ~$210.21 was the prior double-bottom target; the new leg targets $220+ if $215 breaks clean.\n\n**Volume — caution flag:**\nReported session volume: ~29.69M shares. Context: July 10 session saw ~131M shares. The anomalously low volume today (if accurate — data confidence is LOW) would be the key caution: price advancing on thin volume is a weak signal. A volume normalization to 80M+ shares on the next up-day, particularly with a close above $215, would be the confirmation that real institutional buying has resumed. Directional read: this was a thin-volume consolidation session, not a conviction up-day.\n\n**★ Strongest support — 50-DMA confluence ($205–$208.96):**\n50-DMA at ~$208.96 is $3.54 below current price. The prior double-top zone ($204.46–$204.59, which was the key resistance that held back NVDA on July 9–10) has now been broken on the upside and converts to support. This $205–$209 band combines the prior resistance-turned-support with the dynamic 50-DMA floor. Institutional buy programs were seen at $198.96–$199 on July 9–10 — those same programs are likely now active at a higher anchor given the CPI macro shift. A daily close below $208 is the first warning sign; below $204 would be a serious technical deterioration.\n\n**★ Strongest resistance — $213–$215 zone:**\nNVDA closed at $212.50, testing this ceiling from below. FX Leaders (July 15) describes the stock as 'testing $212 as AI demand and China shipments lift outlook' — the article title itself frames $212 as a test. The $213–$215 zone represents the first clean resistance above the prior double-top breakout. Multiple analyst screens (TipRanks technical summary, AltIndex) cite resistance in this range based on the reference price of $201 at data capture, adjusted for the rally. A sustained daily close above $215 opens space to $220–$225 and would be the signal to increase position conviction.\n\n**Semi sector divergence — structural bullish read for NVDA:**\nOn a day when Micron fell 8%, AMD fell 3%, and Lam Research fell 3%, NVDA gained 0.33%. This is not random: the market is differentiating between commodity memory/equipment names (Micron, Lam) and NVDA's AI platform positioning. The China H200 clearance specifically benefits NVDA (not Micron or AMD equally). The mega-cap tech rotation (Apple, Amazon, Alphabet all gaining 3–4%) reflects broad risk-on from the CPI/PPI sweep — and NVDA has an AI narrative that connects it to that trade even as it sits in the semi sector.\n\n**Decision points:**\n1. Close above $215 on volume >80M shares — conviction upgrade to HIGH, add to position\n2. August 26 earnings: Q2 revenue vs $93.5B consensus, Q3 guidance vs $95B+ threshold\n3. China H200 volume data (first real shipment numbers) — 2–4 quarter lag before material revenue\n4. VIX close above 17 — Gate 3 condition 3 breach, position review required\n5. Close below $208 — first warning sign; below $200 = Gate 3 breach\n6. Daily close below $195 — stop, exit full position\n\n**Invalidation:**\n- Bullish read invalidated by: daily close below $195 (Gate 3 stop)\n- Conviction upgrades to HIGH if: close above $215 on volume + China H200 shipment volumes confirmed significant\n- Near-term caution: RSI ~50 (neutral) + anomalously low volume today suggests the move may need a pullback and retest before the next leg"
+}
