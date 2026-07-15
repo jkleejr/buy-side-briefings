@@ -48,7 +48,13 @@
   ],
   "created_at": "2026-07-14",
   "expires_at": "2026-07-28",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["macro", "rate-creep", "FOMC", "CPI", "muddle-through", "tech", "QQQ", "short"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-14",
+    "final_price": 716.0,
+    "return_pct": -1.23,
+    "outcome_label": "Thesis broken — CPI ≤3.5% triggered invalidation at July 14 open",
+    "note": "June CPI printed 3.5% YoY at 8:30 AM ET on July 14, exactly triggering the explicit invalidation condition ('CPI ≤3.5% confirmed at 8:30 AM — close immediately at 9:31 AM open'). QQQ gapped up on the inflation beat; estimated exit at ~$716 at the 9:31 AM open, vs $707.27 entry reference. The muddle-through scenario never materialized — CPI delivered the bull surprise, September hike probability fell to 44.5%, and QQQ ultimately closed at $721.30 on July 14. Loss of 1.23% on a 2% position size."
+  }
 }

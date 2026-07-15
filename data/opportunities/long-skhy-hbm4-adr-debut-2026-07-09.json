@@ -56,7 +56,7 @@
   ],
   "created_at": "2026-07-09",
   "expires_at": "2026-08-20",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "HBM4",
     "AI memory",
@@ -66,5 +66,11 @@
     "SKHY",
     "MSCI inclusion"
   ],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-15",
+    "final_price": 193.92,
+    "return_pct": 27.3,
+    "outcome_label": "Target 1 ($175) and approaching Target 2 ($195) — closed at $193.92",
+    "note": "SKHY debuted on Nasdaq July 10 at $170 open with strong institutional demand. Target 1 ($175) was hit within the first trading session as expected from the 7x oversubscribed demand signal. By July 15 SKHY reached $193.92, within $1.08 of Target 2 ($195). ASML's Q2 beat-and-raise earnings (€9.3B revenue, guide raised to €43–45B) on July 15 reinforced the AI semiconductor supercycle thesis. Closing the position near Target 2 to lock in +27.3% from the $152.35 reference price (+14.1% from $170 debut entry). The MSCI inclusion structural tailwind remains but further upside captured in the new ASML long opportunity."
+  }
 }
