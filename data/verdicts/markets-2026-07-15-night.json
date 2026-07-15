@@ -1,0 +1,101 @@
+{
+  "routine": "markets",
+  "date": "2026-07-15",
+  "window": "night",
+  "generated_at": "2026-07-15T23:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD / SELECTIVE — Two Consecutive Disinflation Prints; TSMC Is Thursday's Gate",
+    "headline": "PPI beats, AAPL hits ATH on China AI approval, but WTI tests $80.58 and September hike probability climbs to 49%",
+    "conviction": "medium",
+    "rationale_short": "June PPI printed -0.3% MoM / 5.5% YoY — a second consecutive disinflationary beat — alongside Apple's China AI approval lifting AAPL to a new all-time high (+4%). Morgan Stanley Q2 was a record blowout. Two of three morning conditions met; WTI tested $80.58 intraday (September hike trip wire) before settling near $79.85, and VIX closed at 15.65 — fractionally above the 15.00 BUY threshold. September hike probability rose from 44.5% to 49% on the oil-inflation read-through. TSMC Q2 Thursday at 2pm ET is the week's definitive AI capex resolution event.",
+    "supporting_data": [
+      { "label": "PPI -0.3% MoM / 5.5% YoY vs consensus -0.1%/6.2% — gasoline -12.0% in June; two consecutive disinflation beats (CPI + PPI)", "url": "https://www.bls.gov/news.release/archives/ppi_07152026.htm" },
+      { "label": "WTI intraday high $80.58 — September hike trip wire tested; September rate hike probability rose to ~49% from 44.5%", "url": "https://www.cnbc.com/2026/07/15/gold-slips-as-oil-rally-keeps-inflation-rate-outlook-on-investors-radar.html" },
+      { "label": "VIX 15.65 (-5.03% from 16.50) — two-week low; fractionally above 15.00 BUY threshold", "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-15-dow-sp-nasdaq-091813320.html" },
+      { "label": "AAPL +4% to $327.50 new all-time high — China Apple Intelligence approval (Alibaba Qwen model); market cap approaching $5 trillion", "url": "https://macdailynews.com/2026/07/15/apple-shares-hit-new-all-time-closing-and-intraday-highs-2/" },
+      { "label": "Morgan Stanley Q2: EPS $3.46 vs $2.89 est; revenues $21.35B vs $19.38B; stock trading revenues +69% — third consecutive bank record", "url": "https://www.gurufocus.com/news/8960879/morgan-stanley-ms-reports-record-q2-earnings-exceeds-market-expectations" },
+      { "label": "TSMC Q2 earnings Thursday 2pm ET — $39.5B revenue / EPS $3.87 consensus; June revenue +67.9% YoY backdrop; ~5% implied move", "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-earnings-preview-why-190000466.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7572.40,  "change_pct":  0.38,  "as_of": "2026-07-15T20:00:00Z" },
+    "nasdaq": { "level": 26269.23, "change_pct":  0.62,  "as_of": "2026-07-15T20:00:00Z" },
+    "vix":    { "level": 15.65,    "change_pct": -5.03,  "as_of": "2026-07-15T20:00:00Z" },
+    "ust10y": { "level": 4.62,     "change_bps":  4,     "as_of": "2026-07-15T20:00:00Z" },
+    "dxy":    { "level": 100.49,   "change_pct": -0.27,  "as_of": "2026-07-15T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",          "value": 15.65,  "trigger_above": 18,    "unit": "" },
+    { "name": "30Y Yield",    "value": 5.10,   "trigger_above": 5.0,   "unit": "%" },
+    { "name": "WTI Crude",    "value": 79.85,  "trigger_above": 80.0,  "unit": "USD/bbl" },
+    { "name": "10Y Yield",    "value": 4.62,   "trigger_above": 4.70,  "unit": "%" },
+    { "name": "BTC Gate 2",   "value": 65200,  "trigger_below": 62000, "unit": "$" },
+    { "name": "SPX vs 7,460", "value": 7572,   "trigger_below": 7460,  "unit": "" },
+    { "name": "Sep Hike Prob","value": 49,     "trigger_above": 60,    "unit": "%" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AAPL",  "note": "$327.50 (+4%) — new all-time high; China Apple Intelligence approval via Alibaba Qwen model; market cap approaching $5T; 15th intraday record of 2026", "sentiment": "positive" },
+    { "ticker": "NVDA",  "note": "$212.50 (+0.33%) — consolidating; ASML Q2 beat-and-raise confirmed upstream AI capex; TSMC Thursday is the next gate for $220+ target", "sentiment": "positive" },
+    { "ticker": "TSM",   "note": "$451.79 — significant pre-earnings move on ASML beat; Q2 earnings Thursday 2pm ET; $39.5B revenue / EPS $3.87 consensus; ~5% implied move; do not add above current levels pre-print", "sentiment": "positive" },
+    { "ticker": "META",  "note": "~$680 (+3.07%) — mega-cap participation in AAPL-led rally; Q2 earnings July 29; least Iran-exposed and least enterprise-software-exposed of mega-caps", "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "~$397 (+2.78%) — recovered from IBM enterprise overhang; Azure AI narrative holding; Q2 earnings late July", "sentiment": "positive" },
+    { "ticker": "AMZN",  "note": "~$255 (+3.02%) — AWS cloud infrastructure beneficiary of IBM hardware-over-software shift; mega-cap leader today", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "+3.17% — mega-cap recovery; Q2 earnings late July alongside MSFT, META, AMZN", "sentiment": "positive" },
+    { "ticker": "AMD",   "note": "~$548 (flat-to-slightly-lower); AH ~$528 — ASML beat confirms demand; TSMC Thursday is the week's AMD gate; pullback in AH is not a fundamental signal", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "$132.54 (+3.6%) — VIX below 16 allows participation; DoD AI thesis intact; government-facing AI insulated from IBM enterprise read", "sentiment": "positive" },
+    { "ticker": "AVGO",  "note": "$373.90 — broadly flat; TSMC Thursday will directionally reset semis; wait for that catalyst", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "~$400 (+~1%) — modest participation; Q2 earnings July 22; gross margin recovery and FSD clarity are the real catalysts", "sentiment": "neutral" },
+    { "ticker": "MS",    "note": "$230.31 — Q2 EPS $3.46 vs $2.89 est; revenues $21.35B vs $19.38B; stock trading +69%; bank earnings season definitively constructive", "sentiment": "positive" },
+    { "ticker": "SPCX",  "note": "~$135.27 — intraday all-time low $132.75, first close at/near $135 IPO price; $4.9B net loss 2025 + $4.28B loss Q1 2026; hype-to-fundamentals repricing in progress", "sentiment": "negative" }
+  ],
+  "dont_buy": [
+    { "ticker": "SPCX", "reason": "First close at/below $135 IPO price; all-time low $132.75 intraday. Net losses $4.9B (2025) and $4.28B (Q1 2026). IPO hype-to-fundamentals repricing in progress; lock-up expiry December 2026 adds supply overhang. No near-term catalyst to stop the derating.", "better_entry": "First earnings print (approx. Sept 2) confirming Starlink ARR growth and improving cash burn trajectory. $115-120 range for risk-tolerant investors with 12+ month horizon." },
+    { "ticker": "Enterprise Software (NOW, CRM, ACN)", "reason": "IBM's structural budget rotation from software/consulting to AI hardware (confirmed July 14) is multi-quarter. IBM full Q2 earnings call July 22 is the clearing event. Enterprise software names remain in a read-across negative regime until IBM's CEO explicitly addresses whether the budget shift is one-quarter or multi-year.", "better_entry": "Post-IBM July 22 full call — need explicit CEO guidance that software budget cuts are temporary, not structural." },
+    { "ticker": "TLT / long-duration bonds", "reason": "WTI tested $80.58 today (Iran blockade + 5th consecutive night of strikes); August CPI (est. Aug 13) will be the first release to fully capture the July 13-15 oil shock. 30Y at ~5.10% — refusing to rally through two consecutive disinflation prints — confirms the bond market is pricing oil-driven August CPI risk. September hike probability at 49% and rising.", "better_entry": "August CPI confirms oil shock did not embed in core; Brent below $75 on confirmed Iran normalization." },
+    { "ticker": "IWM", "reason": "Russell 2000 recovered slightly (+0.4%) today after -0.83% yesterday, but structural headwinds persist: 30Y above 5.00%, WTI $80 test raises September hike risk for small-cap floating-rate borrowers, IBM enterprise IT cuts are disproportionately small-cap headwinds. The IWM recovery is momentum-following, not fundamental resolution.", "better_entry": "30Y below 4.80% sustained AND September hike probability falls below 30%; both simultaneously." }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "WTI reached an intraday high of $80.58 — the September hike trip wire defined in prior briefings — before settling near $79.85. Even at close, the WTI $80 level was tested on the highest-conviction Iran escalation day yet (naval blockade + 5th consecutive night of strikes). August CPI will embed this oil shock regardless of where WTI closes today. XLE provides energy FCF exposure and the most direct hedge against September hike repricing.",
+      "entry": "Increase allocation from 5-6% to 10-12% given the $80 intraday test. Add further to 12-15% if WTI closes above $80 for two consecutive sessions. Reduce to 5% only on confirmed Iran diplomatic resolution with WTI below $70.",
+      "invalidation": "Confirmed Iran-US ceasefire + Hormuz shipping at 70%+ of pre-blockade levels + WTI closing below $70 for two sessions",
+      "conviction": "high",
+      "horizon": "3-6 weeks through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "NVDA / AMD — conditional on TSMC Q2",
+      "direction": "long",
+      "thesis": "TSMC reports Thursday (2pm ET) with June revenue +67.9% YoY as the backdrop and $39.5B Q2 revenue / EPS $3.87 as consensus. ASML's Q2 beat-and-raise (€9.33B, guidance raised to €43-45B) is the most direct upstream AI demand signal possible. If TSMC's H2 AI datacenter capex guidance exceeds current consensus, it validates NVDA $220+ and AMD $600+ targets and converts this briefing's HOLD to a full BUY for AI hardware names. TSM pre-earnings positioning has lifted the stock to $451; the more efficient add point is NVDA/AMD post-TSMC confirmation.",
+      "entry": "Hold NVDA at current $212-215. Add NVDA/AMD at the Thursday post-earnings open if H2 AI capex guidance beats. Do not add TSM above $451 pre-print (paying full options-implied premium).",
+      "invalidation": "TSMC H2 AI capex guidance below current consensus OR TSMC gross margin guidance below 65%",
+      "conviction": "medium",
+      "horizon": "1-3 weeks"
+    },
+    {
+      "asset": "IWM puts / short Russell 2000",
+      "direction": "short",
+      "thesis": "WTI's $80 test raises September hike probability to 49% — the 30Y at ~5.10% has been above the 5.00% trigger for four straight sessions and is the most important regime signal of the week. Small-cap floating-rate borrowers face asymmetric headwinds as September hike risk builds. IBM's enterprise software/consulting budget cuts are disproportionately a small-cap headwind. IWM puts (90-day, 5% OTM) provide portfolio insurance against the scenario where September hike probability crosses 60% post-August CPI.",
+      "entry": "$218-225 on any TSMC-fueled risk rally to enter or extend the short at better levels",
+      "invalidation": "IWM daily close above $230 OR 30Y sustains below 4.80% for two sessions OR September hike probability falls below 30%",
+      "conviction": "medium",
+      "horizon": "4-8 weeks through August CPI and July 28-29 FOMC"
+    }
+  ],
+  "bear_case": "The WTI intraday test of $80.58 is not dismissible as noise — it is a structural regime signal the HOLD framework partially absorbs but does not fully account for. September hike probability has now risen three days in a row (20% → 44.5% → 49%) driven entirely by energy, and the path to 60% — the threshold that would formally convert HOLD to STEP ASIDE — is shorter than any single disinflation print can offset. The 30Y at 5.10% for four consecutive sessions, refusing to rally through CPI + PPI double-beat, is the bond market explicitly saying it already prices August oil-shock CPI. If TSMC's Thursday print disappoints on H2 AI capex guidance (geopolitical risk to Taiwan, ASML equipment delivery delays, hyperscaler capex guidance revisions), the AI hardware bull thesis re-tests July 8-9 lows in a single session and the Iran + September hike backdrop means no rescue from the macro side. Invalidation: if SPX closes below 7,460 by end of Thursday's session with VIX re-engaging above 17, the HOLD call is wrong — step aside, reduce gross, and wait for August CPI clarity.",
+  "morning_call_grade": "mostly_correct",
+  "week_ahead": {
+    "catalysts": [
+      { "date": "2026-07-16", "label": "TSMC Q2 earnings (2pm ET) + Retail Sales (8:30 AM ET) + Netflix Q2", "directional_bias": "TSMC H2 AI capex guidance is the week's binary: beat = HOLD upgrades to BUY for AI hardware; miss = STEP ASIDE for semis broad" },
+      { "date": "2026-07-17", "label": "No major scheduled catalysts", "directional_bias": "Positioning day; TSMC-driven momentum or risk reduction dominates" },
+      { "date": "2026-07-20", "label": "IBM enterprise read-through watching; no top-tier macro", "directional_bias": "Enterprise software names in read-across regime — IBM sell-side downgrades likely if July 22 call is not decisive" },
+      { "date": "2026-07-22", "label": "TSLA Q2 earnings (est.) + IBM full Q2 earnings call", "directional_bias": "IBM CEO must clarify: one-quarter or multi-year budget rotation. TSLA: gross margin >25% required for re-rate above $420." },
+      { "date": "2026-07-28", "label": "FOMC meeting (Jul 28-29) — no July hike expected; September language is the signal", "directional_bias": "FOMC dot-plot language on September and H2 is the next major regime signal; Warsh 'no tolerance' framework remains in place" }
+    ]
+  },
+  "body_mdx": "data/briefings/markets/2026-07-15-night.mdx"
+}
