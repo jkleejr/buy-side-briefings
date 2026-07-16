@@ -2,17 +2,31 @@
   "events": [
     {
       "date": "2026-07-16",
-      "label": "TSMC Q2 2026 earnings (2:00 PM ET) — AI capex cycle verdict; Retail Sales (8:30 AM); Netflix Q2",
+      "label": "TSMC Q2 results known (record beat: $40.2B / EPS $4.31 / GM 67.7% / capex $60-64B / wafer hike 5-10% all nodes); management call 2pm ET; Netflix Q2 AH (~4pm ET); PayPal $53B Stripe/Advent bid",
       "kind": "EARNINGS",
-      "tickers": ["TSM", "NVDA", "AMD", "AVGO", "NFLX"],
-      "note": "TSMC Q2 2026 is the week's most important print. June revenue +67.9% YoY is the backdrop. Wall Street consensus: $39.5B revenue (+~45% YoY), EPS $3.87, gross margin 65.5-67.5%. TSMC raised 2026 capex to high end of $52-56B range; reiterated >30% YoY revenue growth for full year. ASML's Q2 beat-and-raise (€9.33B, guidance €43-45B) is the upstream demand confirmation — the most constructive AI capex signal this quarter. TSM closed at $451.79 on July 15 (up 7%+ on ASML beat + earnings-eve positioning). H2 AI datacenter guidance is the clearing event: beat = HOLD → BUY for NVDA ($220+), AMD ($580+), AVGO; miss = STEP ASIDE for semis. Retail Sales (8:30 AM ET) adds macro context. Netflix Q2 is a streaming/AI content signal."
+      "tickers": ["TSM", "NVDA", "AMD", "AVGO", "NFLX", "PYPL"],
+      "note": "TSMC Q2 results confirmed ~2 AM ET: revenue $40.2B (record, +36% YoY), EPS $4.31 vs $3.87 consensus (+11%), gross margin 67.7%, net income +77.4% YoY — 5th consecutive record quarterly profit. FY 2026 guidance raised to >40% USD (from >30%). 2026 CapEx raised to $60-64B (from $52-56B). CRITICAL: TSMC confirmed wafer price hike 5-10% across ALL advanced nodes (3nm, 5nm, AND 7nm = 74% of wafer revenue) — broader than prior 3nm-only reports. Clients: NVDA, AMD, AAPL, QCOM, AVGO. NVDA premarket -7.2% ($197). Korea Kospi -7.3%. Management call 2pm ET is the day's decisive event. Netflix Q2 after close: est. EPS $0.79, revenue $12.57B. Stripe/Advent bid $60.50/share (~$53B) for PayPal announced; PYPL +18%; Polymarket 82% deal-close probability."
+    },
+    {
+      "date": "2026-07-16",
+      "label": "PayPal (PYPL) — Stripe / Advent International $60.50/share acquisition bid (~$53B)",
+      "kind": "OTHER",
+      "tickers": ["PYPL"],
+      "note": "Stripe and Advent International jointly bid $60.50/share (~$53B total enterprise value) to acquire PayPal, backed by ~$50B in committed debt financing. Combined entity would process an estimated $3.7 trillion in annual payment volume. PYPL +18% on July 16. Board meeting to formally respond expected July 20. Deal spread implies DOJ antitrust risk on Stripe-PayPal combination; Polymarket 82% deal-close probability. Largest proposed fintech M&A deal in years."
     },
     {
       "date": "2026-07-22",
-      "label": "TSLA Q2 2026 earnings (est.) + IBM full Q2 earnings call — dual clearing events",
+      "label": "TSLA Q2 2026 earnings (after close) + IBM full Q2 earnings call + GOOGL Q2 earnings (after close) — triple clearing event",
       "kind": "EARNINGS",
-      "tickers": ["TSLA", "IBM"],
-      "note": "TSLA: Q2 earnings follow the blowout July 2 delivery report (480K vs 406K consensus). Need gross margin recovery (>25%), FSD revenue recognition at scale, Q3 delivery guide >450K for re-rate above $420. IBM: full Q2 call gives context on the software-to-hardware budget rotation that caused IBM's -25% worst day on record July 14. CEO attributed miss to clients redirecting software/consulting budgets to AI hardware (servers, storage, memory). If structural, enterprise software (ServiceNow, Salesforce, Accenture) faces multi-quarter headwinds."
+      "tickers": ["TSLA", "IBM", "GOOGL"],
+      "note": "TSLA: Q2 earnings follow the blowout July 2 delivery report (480K vs 406K consensus). Need gross margin recovery (>25%), FSD revenue recognition at scale, Q3 delivery guide >450K for re-rate above $420. IBM: full Q2 call gives context on the software-to-hardware budget rotation that caused IBM's -25% worst day on record July 14. CEO must clarify: one-quarter or multi-year? GOOGL Q2: AI Overviews monetization, Search share vs AI competitors, and capex trajectory are the market-moving variables. AMD AI Day runs July 22-23 concurrently (MI400 roadmap)."
+    },
+    {
+      "date": "2026-07-22",
+      "label": "AMD AI Day — San Francisco (Jul 22-23) — MI400 roadmap, competitive positioning vs NVDA",
+      "kind": "OTHER",
+      "tickers": ["AMD", "NVDA"],
+      "note": "AMD's annual AI event in San Francisco runs July 22-23. First major deep-dive on the MI400 series roadmap since Computex. UBS raised AMD PT to $700, Rosenblatt to $665. The TSMC wafer price hike (5-10% across all advanced nodes) complicates AMD's margin picture but TSMC's capex raise to $60-64B expands fab capacity available to AMD. Event could be a re-rating catalyst if AMD provides hyperscaler win disclosures alongside competitive NVDA commentary. Context: NVDA's wafer hike exposure (GB200/H100 on 4nm/5nm nodes) may create an opening for AMD's MI400 cost positioning."
     },
     {
       "date": "2026-07-28",
@@ -40,7 +54,7 @@
       "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle fundamental clearing event",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. IBM's July 14 warning (clients shifting software/consulting budgets to AI hardware) is a demand tailwind. TSMC Q2 (July 16) is the intermediate gate. Full-size add gate for NVDA: two consecutive closes above $215 + VIX <16 + TSMC Thursday confirming H2 AI capex."
+      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. TSMC Q2 (July 16) confirmed the AI demand thesis with $40.2B revenue and FY guidance raised to >40% USD — but TSMC's 5-10% wafer price hike across ALL advanced nodes (including 5nm, NVDA's primary manufacturing node) introduces a 2-4pp gross margin headwind for NVDA that management must address. NVDA -7.2% premarket July 16 on the wafer hike announcement. Full-size add gate for NVDA: sustained close above $200 + wafer hike impact clarified in NVDA guidance + VIX <16."
     },
     {
       "date": "2026-09-02",
