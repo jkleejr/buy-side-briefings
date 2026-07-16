@@ -2,13 +2,13 @@
   "routine": "markets",
   "date": "2026-07-15",
   "window": "night",
-  "generated_at": "2026-07-15T23:30:00Z",
+  "generated_at": "2026-07-16T01:09:00Z",
   "is_seed": false,
   "verdict": {
     "code": "hold",
     "emoji": "🟡",
     "label": "HOLD / SELECTIVE — Two Consecutive Disinflation Prints; TSMC Is Thursday's Gate",
-    "headline": "PPI beats, AAPL hits ATH on China AI approval, but WTI tests $80.58 and September hike probability climbs to 49%",
+    "headline": "Apple surges to a new record after China clears its artificial intelligence features",
     "conviction": "medium",
     "rationale_short": "June PPI printed -0.3% MoM / 5.5% YoY — a second consecutive disinflationary beat — alongside Apple's China AI approval lifting AAPL to a new all-time high (+4%). Morgan Stanley Q2 was a record blowout. Two of three morning conditions met; WTI tested $80.58 intraday (September hike trip wire) before settling near $79.85, and VIX closed at 15.65 — fractionally above the 15.00 BUY threshold. September hike probability rose from 44.5% to 49% on the oil-inflation read-through. TSMC Q2 Thursday at 2pm ET is the week's definitive AI capex resolution event.",
     "supporting_data": [
@@ -32,7 +32,7 @@
     { "name": "30Y Yield",    "value": 5.10,   "trigger_above": 5.0,   "unit": "%" },
     { "name": "WTI Crude",    "value": 79.85,  "trigger_above": 80.0,  "unit": "USD/bbl" },
     { "name": "10Y Yield",    "value": 4.62,   "trigger_above": 4.70,  "unit": "%" },
-    { "name": "BTC Gate 2",   "value": 65200,  "trigger_below": 62000, "unit": "$" },
+    { "name": "BTC Gate 2",   "value": 64643,  "trigger_below": 62000, "unit": "$" },
     { "name": "SPX vs 7,460", "value": 7572,   "trigger_below": 7460,  "unit": "" },
     { "name": "Sep Hike Prob","value": 49,     "trigger_above": 60,    "unit": "%" }
   ],
