@@ -1,67 +1,67 @@
 {
   "events": [
     {
-      "date": "2026-07-16",
-      "label": "TSMC Q2 results known (record beat: $40.2B / EPS $4.31 / GM 67.7% / capex $60-64B / wafer hike 5-10% all nodes); management call 2pm ET; Netflix Q2 AH (~4pm ET); PayPal $53B Stripe/Advent bid",
-      "kind": "EARNINGS",
-      "tickers": ["TSM", "NVDA", "AMD", "AVGO", "NFLX", "PYPL"],
-      "note": "TSMC Q2 results confirmed ~2 AM ET: revenue $40.2B (record, +36% YoY), EPS $4.31 vs $3.87 consensus (+11%), gross margin 67.7%, net income +77.4% YoY — 5th consecutive record quarterly profit. FY 2026 guidance raised to >40% USD (from >30%). 2026 CapEx raised to $60-64B (from $52-56B). CRITICAL: TSMC confirmed wafer price hike 5-10% across ALL advanced nodes (3nm, 5nm, AND 7nm = 74% of wafer revenue) — broader than prior 3nm-only reports. Clients: NVDA, AMD, AAPL, QCOM, AVGO. NVDA premarket -7.2% ($197). Korea Kospi -7.3%. Management call 2pm ET is the day's decisive event. Netflix Q2 after close: est. EPS $0.79, revenue $12.57B. Stripe/Advent bid $60.50/share (~$53B) for PayPal announced; PYPL +18%; Polymarket 82% deal-close probability."
+      "date": "2026-07-17",
+      "label": "WTI weekly settlement — formal $80 trip wire; NFLX AH overhang opens Friday",
+      "kind": "MACRO",
+      "tickers": ["XLE", "TLT", "QQQ", "IWM"],
+      "note": "WTI intraday-breached $80 for the second consecutive session (July 15 and July 16) but settled below the trigger both times (~$79.85 and ~$79.63 respectively). A Friday settlement above $80 is the formal trip wire that converts STEP ASIDE to BEARISH check and mandates XLE escalation to 15%. A settlement below $79 would partially relieve the two-day intraday breach pattern. Low volume positioning day; NFLX Q3 guidance miss (revenue $12.86B vs $13.01B est) weighs on consumer tech at the open."
     },
     {
-      "date": "2026-07-16",
-      "label": "PayPal (PYPL) — Stripe / Advent International $60.50/share acquisition bid (~$53B)",
+      "date": "2026-07-20",
+      "label": "PayPal (PYPL) board response to Stripe/Advent $60.50/share (~$53B) acquisition bid",
       "kind": "OTHER",
       "tickers": ["PYPL"],
-      "note": "Stripe and Advent International jointly bid $60.50/share (~$53B total enterprise value) to acquire PayPal, backed by ~$50B in committed debt financing. Combined entity would process an estimated $3.7 trillion in annual payment volume. PYPL +18% on July 16. Board meeting to formally respond expected July 20. Deal spread implies DOJ antitrust risk on Stripe-PayPal combination; Polymarket 82% deal-close probability. Largest proposed fintech M&A deal in years."
+      "note": "Stripe and Advent International jointly bid $60.50/share (~$53B total enterprise value) on July 16 to acquire PayPal. PYPL surged +18% on the announcement. Board is expected to formally respond by July 20. Combined entity would process an estimated $3.7 trillion in annual payment volume. Deal-spread arbitrage active; Polymarket 82% deal-close probability. DOJ antitrust risk on Stripe-PayPal combination is the primary deal-break scenario. If board responds positively, deal-arb spread narrows and PYPL may rerate toward $60+ range."
     },
     {
       "date": "2026-07-22",
       "label": "TSLA Q2 2026 earnings (after close) + IBM full Q2 earnings call + GOOGL Q2 earnings (after close) — triple clearing event",
       "kind": "EARNINGS",
       "tickers": ["TSLA", "IBM", "GOOGL"],
-      "note": "TSLA: Q2 earnings follow the blowout July 2 delivery report (480K vs 406K consensus). Need gross margin recovery (>25%), FSD revenue recognition at scale, Q3 delivery guide >450K for re-rate above $420. IBM: full Q2 call gives context on the software-to-hardware budget rotation that caused IBM's -25% worst day on record July 14. CEO must clarify: one-quarter or multi-year? GOOGL Q2: AI Overviews monetization, Search share vs AI competitors, and capex trajectory are the market-moving variables. AMD AI Day runs July 22-23 concurrently (MI400 roadmap)."
+      "note": "TSLA: Q2 earnings follow the blowout July 2 delivery report (480K vs 406K consensus). Need gross margin recovery (>25%, from sub-15% in Q1) and FSD revenue recognition at scale for re-rate above $420. IBM: full Q2 call gives context on the software-to-hardware budget rotation that caused IBM's -25% worst day on record July 14. CEO must clarify: one-quarter or multi-year? GOOGL Q2: AI Overviews monetization, Search share vs AI competitors, and capex trajectory are the market-moving variables. Triple-report Wednesday is the largest single earnings day remaining in Q2 — sets the tone heading into FOMC week."
     },
     {
       "date": "2026-07-22",
       "label": "AMD AI Day — San Francisco (Jul 22-23) — MI400 roadmap, competitive positioning vs NVDA",
       "kind": "OTHER",
       "tickers": ["AMD", "NVDA"],
-      "note": "AMD's annual AI event in San Francisco runs July 22-23. First major deep-dive on the MI400 series roadmap since Computex. UBS raised AMD PT to $700, Rosenblatt to $665. The TSMC wafer price hike (5-10% across all advanced nodes) complicates AMD's margin picture but TSMC's capex raise to $60-64B expands fab capacity available to AMD. Event could be a re-rating catalyst if AMD provides hyperscaler win disclosures alongside competitive NVDA commentary. Context: NVDA's wafer hike exposure (GB200/H100 on 4nm/5nm nodes) may create an opening for AMD's MI400 cost positioning."
+      "note": "AMD's annual AI event in San Francisco runs July 22-23. First major deep-dive on the MI400 series roadmap since Computex. UBS raised AMD PT to $700, Rosenblatt to $665. AMD closed at $529.14 (–3.46%) on July 16 on TSMC wafer hike impact. The event could be a re-rating catalyst if AMD provides hyperscaler win disclosures and competitive NVDA pricing commentary. Context: NVDA staged a dramatic intraday recovery on July 16 from $197 premarket to ~$208-210 close — NVDA's relative AI positioning strength makes AMD's AI Day case harder to make. Do not add AMD above $530 ahead of the event."
     },
     {
       "date": "2026-07-28",
-      "label": "FOMC meeting (Jul 28-29) — July hike probability now ~20%; no-hike expected; September language is the signal",
+      "label": "FOMC meeting (Jul 28-29) — July hike probability ~20%; September language is the critical signal",
       "kind": "FOMC",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
-      "note": "June CPI undershoot (-0.4% MoM / 3.5% YoY) collapsed July hike probability from 40%+ to ~20% on July 14. No July hike now the strong base case. The FOMC statement language on September and the 2026 dot-plot update will be the market signal. If dots shift September hike lower: BUY upgrade likely. If dots maintain September hike risk: 30Y re-accelerates. Warsh's two Congressional testimonies (July 14-15) set the backdrop for no escalation."
+      "note": "July hike base case remains no-hike (~20% probability). The September language in the FOMC statement and dot-plot update is the market-moving variable. September hike probability has risen from 44.5% (pre-July 15 CPI/PPI prints) to approximately 58% as of July 16 close — driven entirely by WTI double-testing $80 intraday and Iran Hormuz blockade loading into August CPI. If Warsh's dot-plot signals September hike clearly: 30Y re-accelerates, IWM headwinds worsen, BUY conditions pushed back to post-August CPI. If dots hold September in question: rate relief window opens."
     },
     {
       "date": "2026-07-29",
-      "label": "META Q2 2026 earnings — AI cloud business first quantification; peak Q2 earnings week (GOOGL, MSFT, AMZN also)",
+      "label": "META Q2 2026 earnings — AI cloud business first quantification; peak Q2 earnings week (MSFT, AMZN also)",
       "kind": "EARNINGS",
-      "tickers": ["META", "GOOGL", "MSFT", "AMZN"],
-      "note": "META Q2 earnings July 29 is the first event where management must quantify the AI cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). GOOGL, MSFT, and AMZN also report in late July — peak Q2 earnings risk window. IBM's enterprise software warning (July 14) adds a risk factor: MSFT Azure consulting and enterprise software could face read-across pressure. META's ad-driven model is insulated from IBM's enterprise IT budget rotation."
+      "tickers": ["META", "MSFT", "AMZN"],
+      "note": "META Q2 earnings July 29 is the first event where management must quantify the AI cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). MSFT and AMZN also report in late July — peak Q2 earnings risk window. IBM's enterprise software warning (July 14) adds a risk factor for MSFT Azure enterprise consulting revenue. META's ad-driven model is insulated from IBM's enterprise IT budget rotation. GOOGL reports July 22 (earlier than prior, in the triple-event session)."
     },
     {
       "date": "2026-08-13",
-      "label": "July CPI release (est. Aug 13) — captures WTI +9.4% spike (Jul 13) + Iran Hormuz blockade oil pass-through",
+      "label": "July CPI release (est. Aug 13) — captures WTI $80 double-test (Jul 15-16) + Iran Hormuz blockade oil pass-through",
       "kind": "MACRO",
-      "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA"],
-      "note": "June CPI (July 14) captured pre-Hormuz-shock prices and printed -0.4% MoM / 3.5% YoY. July CPI will be the FIRST month to reflect the WTI +9.4% spike of July 13 and the ongoing Strait disruption. If the Hormuz blockade persists through late July, July CPI could surprise significantly to the upside relative to June — erasing the July 14 disinflation narrative. This is the real inflation inflection event for H2 2026. The 30Y's failure to rally meaningfully on July 14 (only -0.4bps) suggests the bond market is already pricing this risk."
+      "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA", "IWM"],
+      "note": "June CPI (July 14) captured pre-Hormuz-shock prices and printed -0.4% MoM / 3.5% YoY. July CPI will be the FIRST month to reflect the WTI +9.4% spike of July 13 and the ongoing Strait disruption. WTI has now intraday-breached $80 for two consecutive sessions (July 15-16), settling just below the trip wire both times. Even at $79.63 settlement, the July 13-16 WTI range represents a significant positive energy contribution to July CPI. 30Y above 5.00% for five consecutive sessions is the bond market front-running August CPI. September hike probability at 58% and approaching 60% formal trigger."
     },
     {
       "date": "2026-08-26",
       "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle fundamental clearing event",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. TSMC Q2 (July 16) confirmed the AI demand thesis with $40.2B revenue and FY guidance raised to >40% USD — but TSMC's 5-10% wafer price hike across ALL advanced nodes (including 5nm, NVDA's primary manufacturing node) introduces a 2-4pp gross margin headwind for NVDA that management must address. NVDA -7.2% premarket July 16 on the wafer hike announcement. Full-size add gate for NVDA: sustained close above $200 + wafer hike impact clarified in NVDA guidance + VIX <16."
+      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. TSMC Q2 (July 16) confirmed the AI demand thesis with $40.2B revenue and FY guidance raised to >40% USD — and TSMC's supply shortage for N3/N5 nodes extending into 2027 is demand-bullish. However, the 5-10% wafer price hike across ALL advanced nodes (including 5nm, NVDA's primary manufacturing node) introduces a 2-4pp gross margin headwind that management must address on the August 26 call. NVDA demonstrated exceptional relative strength July 16 — recovering from $197 premarket to ~$208-210 close despite SMH –4% — signaling the market views NVDA's AI positioning as insulated from commodity-chip selloff. Full-size add gate: sustained close above $210 + wafer hike impact clarified + VIX below 15."
     },
     {
       "date": "2026-09-02",
       "label": "SPCX first earnings as a public company (approx.) — Starlink ARR + Starship cadence",
       "kind": "EARNINGS",
       "tickers": ["SPCX"],
-      "note": "First earnings print since June 12 IPO. SPCX Nasdaq-100 effective July 7; inclusion-day distribution confirmed at $158.77 peak. Re-entry gate: two consecutive closes above $185 on above-average volume. First earnings (Starlink subscriber/ARR growth, Starship launch cadence, cash burn) is the fundamental clearing event after the inclusion-day distribution pattern. Lock-up expiry December 9 adds supply overhang."
+      "note": "First earnings print since June 12 IPO. SPCX touched an intraday all-time low of $132.75 on July 15 (below $135 IPO price) — down 30%+ from June 16 ATH of $225.64. 27 of 31 analysts still carry Buy ratings; the sell-side downgrade cycle has barely begun. December 2026 lock-up expiry adds supply overhang. Re-entry gate: first earnings print (Starlink ARR growth, Starship launch cadence, cash burn) is the fundamental clearing event. Net losses are structural ($4.9B in 2025, $4.28B in Q1 2026). Better entry $115-120 for risk-tolerant 12-month investors."
     },
     {
       "date": "2026-12-09",

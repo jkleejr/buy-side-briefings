@@ -1,0 +1,85 @@
+{
+  "routine": "markets",
+  "date": "2026-07-16",
+  "window": "night",
+  "generated_at": "2026-07-16T21:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — WTI Double-Test + VIX Reset + Netflix Guidance Miss",
+    "conviction": "medium",
+    "rationale_short": "WTI crude tested $80+ intraday for a second consecutive session before settling at ~$79.63 — the formal daily settlement trigger was narrowly avoided again, but the two-day intraday breach pattern is the market's verdict that the $80 trip wire will not hold indefinitely. VIX climbed to 16.73 (+6.76%), moving further from the 15.00 BUY threshold and erasing yesterday's progress. Netflix Q3 guidance came in below consensus on both revenue and EPS, killing the evening bullish signal the morning brief identified as necessary for a constructive Friday. None of the three conditions for a BUY upgrade were met; the setup for the coming week deteriorates toward peak Q2 earnings risk with September hike probability approaching 60%.",
+    "supporting_data": [
+      { "label": "WTI intraday crossed $80 for second consecutive session; settled ~$79.63 — formal settlement trigger narrowly avoided again but two-day breach pattern signals regime at the edge", "url": "https://sundayguardianlive.com/business/brent-crude-oil-price-today-july-16-brent-climbs-above-85-wti-crosses-80-after-us-strikes-on-iran-raise-oil-supply-concerns-check-latest-brent-crude-wti-oil-rates-today-238394/" },
+      { "label": "VIX 16.73 (+6.76%) — two-week low from yesterday reversed; moving away from 15.00 BUY threshold; all three BUY upgrade conditions failed", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-16-dow-sp-500-nasdaq-chip-stocks-slide-103116735.html" },
+      { "label": "Nasdaq –1.47% to 25,881.95; SMH –4%; ARM –5%+; Micron –8%; Intel –4%+; AMD –3.46% to $529.14 — second consecutive session of semiconductor-led selling", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-16-2026" },
+      { "label": "Netflix Q2: revenue $12.56B (miss vs $12.59B consensus); EPS $0.80 (beat vs $0.79); Q3 guidance $12.86B vs $13.01B est; EPS guidance $0.82 vs $0.84 — both Q3 lines missed; shares fell AH", "url": "https://www.cnbc.com/2026/07/16/netflix-nflx-earnings-q2-2026.html" },
+      { "label": "TSM fell 4%+ on its own record Q2 beat ($40.2B revenue, +77% net income) — sell-the-news confirms the AI hardware trade is saturated near-term; TSMC call: supply shortage for N3/N5 extends into 2027", "url": "https://ca.investing.com/news/company-news/taiwan-semiconductor-manufacturing-co-ltd-tsm-q2-2026-earnings-call-highlights-strong--4737378" },
+      { "label": "September hike probability approaching 60%; 30Y UST above 5.00% for 5th consecutive session; gold –2.1% to ~$3,975; risk-off cross-asset alignment", "url": "https://money.com/fed-rate-hike-probability/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7533.77,  "change_pct": -0.51, "as_of": "2026-07-16T20:00:00Z" },
+    "nasdaq": { "level": 25881.95, "change_pct": -1.47, "as_of": "2026-07-16T20:00:00Z" },
+    "vix":    { "level": 16.73,    "change_pct": 6.76,  "as_of": "2026-07-16T20:00:00Z" },
+    "ust10y": { "level": 4.57,     "change_bps": -5,    "as_of": "2026-07-16T20:00:00Z" },
+    "dxy":    { "level": 100.54,   "change_pct": 0.05,  "as_of": "2026-07-16T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                      "value": 16.73,   "trigger_above": 18,    "unit": ""     },
+    { "name": "30Y Yield",                "value": 5.10,    "trigger_above": 5.00,  "unit": "%"    },
+    { "name": "WTI",                      "value": 79.63,   "trigger_above": 80.00, "unit": "$/bbl"},
+    { "name": "SPX vs 7,460",             "value": 7533.77, "trigger_below": 7460,  "unit": ""     },
+    { "name": "September Hike Prob",      "value": 58,      "trigger_above": 60,    "unit": "%"    },
+    { "name": "BTC Gate 2",               "value": 64200,   "trigger_below": 62000, "unit": ""     }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Dramatic intraday reversal: premarket –7.2% ($197) → session recovery to ~$208–210 on TSMC call supply-shortage language; 'Defies market trends amidst semiconductor selloff'; hard stop $195 never tested", "sentiment": "neutral" },
+    { "ticker": "AMD",   "note": "Closed $529.14 (–3.46% from $548); hit by TSMC 5nm wafer hike; thinner margin buffer than NVDA; AMD AI Day (Jul 22-23) is the next re-rating catalyst", "sentiment": "negative" },
+    { "ticker": "TSM",   "note": "Record Q2 ($40.2B revenue; +77% net income) but stock fell 4%+ — classic sell-the-news after a 7% pre-earnings run; TSMC call: supply shortage for N3/N5 extends into 2027", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~+0.33% to ~$328.58; resilient in semi selloff; China AI approval thesis extended; approaching $5T market cap", "sentiment": "positive" },
+    { "ticker": "META",  "note": "–1.59% to ~$669; some risk-off contagion from semis selloff; Q2 earnings July 29 next catalyst", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "~–0.07%; essentially flat — defensive in tech selloff; Q2 earnings July 22", "sentiment": "neutral" },
+    { "ticker": "NFLX",  "note": "Q2 revenue $12.56B (miss vs $12.59B), EPS $0.80 (beat vs $0.79); Q3 guidance $12.86B vs $13.01B est; stock fell AH — no bullish Friday signal", "sentiment": "negative" },
+    { "ticker": "XLE",   "note": "Maintain 10–12%; WTI double-tested $80 intraday again; settlement $79.63 narrowly below mandatory-add trigger; escalate to 15% if Friday settlement exceeds $80", "sentiment": "positive" },
+    { "ticker": "IWM",   "note": "–0.06% (~$295.59); September hike probability approaching 60%; 30Y above 5.00% for 5th session; puts thesis intact and strengthening", "sentiment": "negative" },
+    { "ticker": "PYPL",  "note": "+18% on Stripe/Advent $60.50/share (~$53B) acquisition bid; board response expected July 20; fintech M&A standout in an otherwise weak tape", "sentiment": "positive" }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA above $210",   "reason": "TSMC call confirmed supply shortage through 2027 (demand bullish) but did not provide specific wafer hike effective-date H2 2027 confirmation; TSM itself fell 4%+ on a record beat; August 26 NVDA Q2 FY27 is the fundamental clearing event",       "better_entry": "Post-NVDA Q2 FY27 (est. Aug 26) with explicit wafer pass-through cost guidance; or $190–195 with stop at $185 if Friday tape worsens" },
+    { "ticker": "SMH / semi ETFs",   "reason": "Sector –4% on the session; ARM –5%, MU –8%, INTC –4%+ — wafer hike costs across 74% of TSMC wafer revenue not yet reflected in sell-side forward EPS estimates; next fundamental catalyst is NVDA Q2 FY27 (Aug 26)", "better_entry": "Post-NVDA Q2 FY27 with $91B run-rate confirmation; or post-August CPI if oil shock doesn't embed in core inflation"                              },
+    { "ticker": "TLT / long-duration","reason": "WTI double-intraday-tested $80 for two consecutive sessions; 30Y above 5.00% for 5th session; September hike probability approaching 60%; August CPI oil-shock loading locked in regardless of daily settlement",                             "better_entry": "August CPI below 3.3% YoY with sustained WTI below $75 on Iran normalization AND September hike probability falls below 30%"                   }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE vs. TLT (long/short pair)",
+      "direction": "pair",
+      "thesis": "WTI $80 has been tested intraday for two consecutive sessions. The formal settlement trigger has been avoided twice by less than $0.40 each time. The Iran Hormuz blockade — now in its fourth day — ensures July CPI (est. August 13) will carry a significant oil-shock component regardless of daily settlements. XLE provides energy FCF exposure and directly hedges the September hike repricing path. TLT short captures the 30Y stubbornly above 5.00% for five consecutive sessions. Pair: long XLE at 12% of portfolio; short TLT 5% notional.",
+      "entry": "Long XLE at current levels. Short TLT above $88. Mandatory XLE escalation to 15% if WTI closes above $80 at Friday weekly settlement.",
+      "invalidation": "Iran-US ceasefire with Hormuz at 70%+ pre-blockade flow AND WTI below $70 for two consecutive sessions.",
+      "conviction": "high",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "SMH (short / puts)",
+      "direction": "short",
+      "thesis": "TSMC wafer price hike (5–10% across 74% of wafer revenue, including 5nm and 7nm) is not yet reflected in sell-side forward EPS estimates for NVDA, AMD, ARM, or Intel. SMH fell –4% on the day; the sector enters a 5-week post-earnings digest window with no fundamental re-rating until NVDA Q2 FY27 (est. Aug 26). September hike probability approaching 60% applies a valuation multiple discount to high-P/E semis.",
+      "entry": "SMH August expiry puts, 5% OTM from current level; or short SMH on any intraday bounce above $230.",
+      "invalidation": "TSMC call transcript confirms wafer hike effective H2 2027 or later AND VIX compresses below 15 on sustained vol contraction.",
+      "conviction": "medium",
+      "horizon": "2–4 weeks through NVDA Q2 FY27 (est. Aug 26)"
+    },
+    {
+      "asset": "IWM (puts)",
+      "direction": "hedge",
+      "thesis": "September hike probability approaching 60% as WTI sustains near $80 and loads into August CPI. Small-cap floating-rate borrowers face asymmetric headwinds vs. large-cap. Russell 2000 –0.06% today held up due to non-semi composition, but the structural September hike tail risk is highest in small-cap. 30Y above 5.00% for five sessions signals the bond market is already pricing the oil pass-through.",
+      "entry": "90-day IWM puts at 5–7% OTM on any intraday rally; $218–225 entry zone. 3–5% portfolio allocation.",
+      "invalidation": "September hike probability falls below 30% OR IWM daily close above $230 OR 30Y below 4.80% sustained.",
+      "conviction": "medium",
+      "horizon": "4–8 weeks through August CPI and July 28–29 FOMC"
+    }
+  ],
+  "bear_case": "Counter-thesis: the WTI double intraday test at $80 is not a settlement breach — crude settled at ~$79.63, replicating July 15's pattern of testing and failing to hold the $80 level. Two consecutive fails to hold $80 at settlement suggests $80 is resistance, not a sustained regime shift. TSMC's Q2 call produced no H2 2026 wafer-hike-effective-date confirmation, and the supply-shortage language ('extends into 2027') is unambiguously demand-bullish. NVDA staged a dramatic intraday recovery from $197 premarket to ~$208–210 — on a day when ARM fell 5% and Micron fell 8% — a relative-strength signal that the market is ring-fencing NVDA's AI positioning from the commodity-chip selloff. SPX at 7,533 holds 74 points above the 7,460 base-case support with no breadth deterioration in non-semi names (AAPL +0.33%, GOOGL flat, AMZN –0.43%). Netflix's Q3 guidance miss reflects peak content amortization timing, not demand collapse; subscribers and engagement trends remain intact. If SPX closes above 7,600 on Monday with VIX below 16, the STEP ASIDE call was too early by two sessions.",
+  "body_mdx": "data/briefings/markets/2026-07-16-night.mdx"
+}
