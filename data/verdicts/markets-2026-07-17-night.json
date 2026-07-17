@@ -1,0 +1,88 @@
+{
+  "routine": "markets",
+  "date": "2026-07-17",
+  "window": "night",
+  "generated_at": "2026-07-18T01:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "bearish",
+    "emoji": "🔴",
+    "label": "BEARISH — Both Formal Triggers Fired; Moonshot II",
+    "headline": "S&P 500 closes below 7,460 as WTI settles $82.49; Moonshot AI Kimi K3 delivers a second DeepSeek shock",
+    "conviction": "medium",
+    "rationale_short": "Both primary STEP ASIDE → BEARISH trip wires activated simultaneously on Friday: SPX closed 7,457 (below the 7,460 formal support trigger) and WTI settled $82.49 (first formal breach of the $80 trip wire). A second DeepSeek-class shock arrived mid-session — Moonshot AI's Kimi K3, a 2.8-trillion-parameter open-weight model priced at $15/M output tokens vs. $50/M for US frontier models, undermined the AI capex demand thesis for GPU vendors. September hike probability reversed from 38% (morning post-CPI level) to approximately 69% on the oil surge. VIX closed 17.76 — below the 18 trigger — and NVDA held its $195 hard stop, preventing a high-conviction BEARISH call; medium conviction reflects the two formal triggers alongside meaningful non-breach in secondary indicators.",
+    "supporting_data": [
+      { "label": "SPX closed 7,457 — 3 pts below the 7,460 formal STEP ASIDE → BEARISH trigger; Nasdaq –1.40% to 25,520; weekly S&P –1.6%, Nasdaq –2.9%", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html" },
+      { "label": "WTI settled $82.49 (+4.5%) — first formal breach of the $80 settlement trip wire; Brent $88.10 (+4.6%); oil +10%+ for the week on Iran Hormuz escalation", "url": "https://www.cnbc.com/2026/07/17/oil-price-today-brent-wti.html" },
+      { "label": "Moonshot AI Kimi K3: 2.8T-parameter open-weight model at $15/M output tokens vs. $50/M for Fable 5 — second DeepSeek shock; AMD –7%, GOOGL –4.4%, Nasdaq –1.4%", "url": "https://www.bloomberg.com/news/articles/2026-07-17/what-is-moonshot-ai-why-china-s-new-model-is-roiling-markets" },
+      { "label": "September Fed hike probability reversed to ~69% (25bps + 50bps combined) from 38% morning post-CPI level — oil shock overwhelmed the June disinflation data", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" },
+      { "label": "GOOGL –4.4% on Gemini 3.5 Pro delay reports; Q2 earnings July 22 risk now elevated with competitive AI narrative deteriorating heading into the print", "url": "https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-ai-surprises-investors-fueling-tech-rout-mroxm71p" },
+      { "label": "30Y UST 7th consecutive session above 5.00%; NFLX closed $68.69 (–7.6%), extending 52-week lows; VIX 17.76 (+6.2%) — approaching but not breaching 18 trigger", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7457.0,   "change_pct": -1.02, "as_of": "2026-07-17T20:00:00Z" },
+    "nasdaq": { "level": 25520.0,  "change_pct": -1.40, "as_of": "2026-07-17T20:00:00Z" },
+    "vix":    { "level": 17.76,    "change_pct": 6.16,  "as_of": "2026-07-17T20:00:00Z" },
+    "ust10y": { "level": 4.55,     "change_bps": -2,    "as_of": "2026-07-17T20:00:00Z" },
+    "dxy":    { "level": 100.78,   "change_pct": 0.06,  "as_of": "2026-07-17T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                 "value": 17.76,  "trigger_above": 18,    "unit": ""      },
+    { "name": "30Y Yield",           "value": 5.09,   "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "WTI",                 "value": 82.49,  "trigger_above": 80.00, "unit": "$/bbl" },
+    { "name": "SPX vs 7,460",        "value": 7457,   "trigger_below": 7460,  "unit": ""      },
+    { "name": "September Hike Prob", "value": 69,     "trigger_above": 60,    "unit": "%"     },
+    { "name": "BTC Gate 2",          "value": 62900,  "trigger_below": 62000, "unit": ""      }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "Closed $203.31 (–2.0%); held $195 hard stop — the most critical AI-cycle sentinel is intact; Moonshot AI adds demand disruption risk; no add until $195 stop or NVDA Q2 FY27 Aug 26", "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "Closed $334.14 (+0.3%) — only major mega-cap to close green; China AI approval thesis intact; relative safe-haven in full risk-off tape; maintain", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "Closed ~$648 (–4.4%) — Gemini 3.5 Pro delay + Moonshot AI competitive threat + Q2 earnings July 22 risk elevated; worst-positioned mega-cap entering earnings week", "sentiment": "negative" },
+    { "ticker": "AMD",   "note": "Closed ~$492 (–7.0%) — largest mega-tech decline; Moonshot AI second DeepSeek shock + TSMC wafer hike compound; AMD AI Day July 22-23 must address both", "sentiment": "negative" },
+    { "ticker": "META",  "note": "Closed $646 (–2.8%); ad-model most insulated from Moonshot AI demand disruption; Q2 July 29 next catalyst; hold selectively", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "Closed $394 (–1.7%); Azure AI narrative intact; Moonshot AI not a direct Azure competitive threat short-term; Q2 late July", "sentiment": "neutral" },
+    { "ticker": "NFLX",  "note": "Closed $68.69 (–7.6%); extending AH losses from Q3 guidance miss; 52-week low; no near-term catalyst before Q3 earnings (est. October); avoid", "sentiment": "negative" },
+    { "ticker": "TSLA",  "note": "Closed ~$385 (–3.8%); pre-Q2 earnings positioning; July 22 AH gross margin >25% and FSD revenue remain re-rate gates; hold current position", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "Closed ~$57.49 (+0.83%); WTI $82.49 formal trigger breached; mandatory 15% allocation in force; long thesis confirmed for August CPI loading", "sentiment": "positive" },
+    { "ticker": "PYPL",  "note": "Board rejected Stripe/Advent $53B bid as inadequate per Reuters; deal-arb spread widened; formal board meeting July 20; likely gap lower Monday morning as M&A premium partially unwinds", "sentiment": "negative" },
+    { "ticker": "PLTR",  "note": "~$132 (mixed); DoD AI thesis structurally insulated — US government AI spending may accelerate in response to Moonshot AI threat from China", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "GOOGL", "reason": "Gemini 3.5 Pro delay + Moonshot AI frontier-level competition + Q2 earnings July 22 risk — deteriorating AI competitive narrative into the week's largest earnings event", "better_entry": "Post-Q2 July 22 with Moonshot AI market-share impact addressed and Gemini timeline restored; or $620 with stop $610" },
+    { "ticker": "AMD",   "reason": "AMD –7% on Moonshot AI plus TSMC wafer hike; AMD AI Day July 22-23 must now rebut a second DeepSeek shock in addition to wafer margin compression; sell-side downgrades likely pre-event", "better_entry": "Post-AMD AI Day July 22-23 with MI400 roadmap clarity; or post-NVDA Q2 FY27 August 26" },
+    { "ticker": "NFLX",  "reason": "$68.69 close extends 52-week lows; Q3 guidance missed both revenue and EPS lines; no near-term catalyst; operating margin declining YoY", "better_entry": "Q3 earnings (est. October) with margin recovery and ad-revenue acceleration confirmation" },
+    { "ticker": "SMH/SOXX", "reason": "Semiconductor ETF in position-clearing with Moonshot AI adding demand disruption risk; AMD –7%, AVGO ~–3%; 5-week dead zone to NVDA Q2 FY27 Aug 26", "better_entry": "Post-NVDA Q2 FY27 Aug 26 with wafer cost quantification and Moonshot AI demand impact assessed" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (long) / TLT (short)",
+      "direction": "pair",
+      "thesis": "WTI settled $82.49 — formal $80 trip wire breached for the first time. Brent $88.10. Both exceed thresholds that structurally embed an oil-shock component into August CPI regardless of subsequent daily prints. XLE provides energy FCF exposure. TLT short captures the 30Y stubbornly above 5.00% for a 7th consecutive session and September hike probability reversed from 38% to ~69% on the oil surge. Pair: XLE already at mandatory 15% allocation; short TLT above $88–89.",
+      "entry": "XLE at 15% mandatory allocation (escalated at open per morning mandate). Short TLT above $88–89. Maintain.",
+      "invalidation": "Iran-US ceasefire confirmed with Hormuz at 70%+ pre-blockade flow AND WTI below $75 for two consecutive sessions.",
+      "conviction": "high",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "GOOGL puts",
+      "direction": "short",
+      "thesis": "GOOGL –4.4% on Gemini 3.5 Pro delay plus the Moonshot AI Kimi K3 competitive threat — a frontier-class open-weight model at 70% pricing discount to US frontier equivalents. GOOGL Q2 earnings arrive July 22 with the stock now carrying an execution-miss narrative and a Chinese competitor narrative simultaneously. The competitive premium that justified GOOGL's forward multiple is explicitly challenged.",
+      "entry": "August expiry GOOGL puts, 5–7% OTM from ~$648. 3–4% portfolio allocation.",
+      "invalidation": "GOOGL closes above $680 on Q2 beat with Gemini timeline clearly restored; or Moonshot AI benchmark verification fails independent peer review.",
+      "conviction": "medium",
+      "horizon": "Through July 22 Q2 earnings"
+    },
+    {
+      "asset": "SMH puts (short semiconductor ETF)",
+      "direction": "short",
+      "thesis": "Moonshot AI Kimi K3 is the second DeepSeek shock of 2026 — a 2.8T-parameter open-weight model at 70% pricing discount to US frontier models threatens to compress hyperscaler AI inference demand for expensive GPU clusters. AMD fell 7%. TSMC wafer hike costs still unmodeled in sell-side EPS for chip designers. No fundamental catalyst until NVDA Q2 FY27 est. August 26.",
+      "entry": "SMH August expiry puts, 5–7% OTM. Or short SMH above $220 on any intraday bounce. 3–5% portfolio allocation.",
+      "invalidation": "Moonshot AI benchmarks fail independent verification AND NVDA intraday recovery above $210 sustained AND VIX closes below 16.",
+      "conviction": "medium",
+      "horizon": "2–5 weeks through NVDA Q2 FY27 (est. Aug 26)"
+    }
+  ],
+  "bear_case": "Counter-thesis: the formal trigger breaches — SPX at 7,457 and WTI at $82.49 — occurred on a Friday, a characteristically low-volume session with mechanically exaggerated moves. SPX is only 3 points below the 7,460 trigger — within a normal half-day swing. WTI's $82.49 settlement is the first formal breach after two consecutive near-misses; the oil market is notoriously volatile around geopolitical events, and prior Iran escalation rounds produced 48-hour spikes that reversed entirely. NVDA's $203.31 close held the $195 hard stop — the most critical AI-cycle sentinel is intact. BTC Gate 2 at $62,000 is intact. Moonshot AI's Kimi K3 parallels the DeepSeek January 2025 announcement, which produced a single-day panic before the AI infrastructure thesis recovered fully within three weeks — the infrastructure build argument proved durable against cost-reduction narratives. June CPI 0.0% MoM and PPI –0.3% are structural disinflation that don't reverse on a single oil week. If weekend diplomacy produces any Iran de-escalation signal and WTI gaps below $79 Sunday, the BEARISH call will have marked the weekly panic low. Invalidation: If WTI falls below $79 by Monday open AND SPX closes above 7,480 with VIX below 17, the BEARISH verdict is wrong and STEP ASIDE resumes.",
+  "body_mdx": "data/briefings/markets/2026-07-17-night.mdx"
+}

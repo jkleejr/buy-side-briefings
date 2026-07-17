@@ -1,60 +1,53 @@
 {
   "events": [
     {
-      "date": "2026-07-17",
-      "label": "WTI weekly settlement (2:30 PM ET) — formal $80 trip wire (third consecutive approach); Iran Day 6 escalates to Bushehr nuclear plant; NFLX 52-week low AH",
-      "kind": "MACRO",
-      "tickers": ["XLE", "TLT", "QQQ", "IWM"],
-      "note": "WTI at ~$79.74 premarket (+1%), Brent $85.95 (+2.04%) — third consecutive intraday approach to the $80 formal trip wire. Prior sessions settled below ($79.85 on July 15; $79.63 on July 16). Formal settlement prints at 2:30 PM ET — the session binary. US struck Iranian infrastructure for a sixth consecutive night including near the Bushehr nuclear power plant; Iran retaliated on US bases in Kuwait and Jordan — most acute Hormuz escalation yet. Hormuz transit fallen 62% to 4.1M bpd. Oil up >10% for the week. NFLX down 8-9% AH to ~$67.97 (52-week low since September 2024) after Q3 guidance miss on both revenue ($12.86B vs $13.01B) and EPS ($0.82 vs $0.84). Asia semiconductor rout: Nikkei –5.2%, TSMC Taipei –7.3%, Taiwan Exchange –6%+, Kioxia –16%, SoftBank –9%+. Verdict: STEP ASIDE (high conviction). Mandatory: XLE escalation to 15% if WTI settles above $80 at 2:30 PM ET today."
-    },
-    {
       "date": "2026-07-20",
-      "label": "PayPal (PYPL) board formal meeting — Stripe/Advent $60.50/share (~$53B) bid deemed inadequate; board seeking $70+",
+      "label": "PayPal (PYPL) board formal response to Stripe/Advent $53B bid — board views offer as inadequate; seeking $70+ per Reuters",
       "kind": "OTHER",
       "tickers": ["PYPL"],
-      "note": "Stripe and Advent International jointly bid $60.50/share (~$53B total enterprise value) on July 16. PYPL surged +18% on the announcement. Board formally viewed the bid as inadequate and meets July 20 to respond. Analysts project a negotiated $70+ target. Deal-spread widened on the inadequate-bid signal. Combined entity would process ~$3.7 trillion annual payment volume. DOJ antitrust risk on the Stripe-PayPal combination is the primary deal-break scenario. If board rejects outright rather than counter-proposing, PYPL retraces toward $55-58 range. If formal counter-proposal emerges at $68-72, deal-arb spread re-tightens."
+      "note": "Stripe and Advent International jointly bid $60.50/share (~$53B) on July 16; PYPL surged +18%. Board signaled the offer is inadequate per Reuters/SeekingAlpha (July 17 AH). Formal board response at July 20 meeting. Board is weighing price (seeks $70+), financing certainty, and regulatory timeline (DOJ antitrust on Stripe-PayPal). If board issues formal counter-proposal at $68-72: M&A arb spread re-tightens. If board formally rejects outright: PYPL likely retraces toward $55-58 range. Monday gap lower is the base case given Friday AH signal. PayPal's July 28 earnings report becomes the next fundamental read on the core checkout business."
     },
     {
       "date": "2026-07-22",
-      "label": "TSLA Q2 2026 earnings (after close) + IBM full Q2 earnings call + GOOGL Q2 earnings (after close) — triple clearing event",
+      "label": "TSLA Q2 2026 earnings (AH) + IBM full Q2 earnings call + GOOGL Q2 earnings (AH) — triple clearing event; BEARISH regime context",
       "kind": "EARNINGS",
       "tickers": ["TSLA", "IBM", "GOOGL"],
-      "note": "TSLA: Q2 earnings follow the blowout July 2 delivery report (480K vs 406K consensus). Need gross margin recovery (>25%, from sub-15% in Q1) and FSD revenue recognition at scale for re-rate above $420. IBM: full Q2 call gives context on the software-to-hardware budget rotation that caused IBM's -25% worst day on record July 14. CEO must clarify: one-quarter or multi-year? GOOGL Q2: AI Overviews monetization, Search share vs AI competitors, and capex trajectory are the market-moving variables. Triple-report Wednesday is the largest single earnings day remaining in Q2 — sets the tone heading into FOMC week."
+      "note": "The week's defining risk event — now arriving in a BEARISH regime (SPX below 7,460; WTI $82.49 formal breach). TSLA: Q2 follow-on to blowout July 2 delivery report (480K vs 406K); gross margin >25% (from sub-15% in Q1) and FSD revenue recognition are the re-rate gates to above $410. IBM: CEO must clarify whether the enterprise budget rotation is one-quarter or multi-year — that answer drives NOW, CRM, ACN direction. GOOGL: now significantly complicated by (1) Gemini 3.5 Pro months-behind-schedule delay and (2) Moonshot AI Kimi K3 competitive threat at 70% pricing discount to US frontier models. GOOGL must address AI competitive narrative, Search market-share data, and capex trajectory. A weak GOOGL print on any of these dimensions would extend the BEARISH regime. A triple-beat (TSLA margin + IBM one-quarter + GOOGL AI monetization) is the only path to BEARISH → STEP ASIDE re-assessment."
     },
     {
       "date": "2026-07-22",
-      "label": "AMD AI Day — San Francisco (Jul 22-23) — MI400 roadmap, competitive positioning vs NVDA",
+      "label": "AMD AI Day (San Francisco, Jul 22-23) — MI400 roadmap vs. NVDA; now must address Moonshot AI Kimi K3 second DeepSeek shock",
       "kind": "OTHER",
       "tickers": ["AMD", "NVDA"],
-      "note": "AMD's annual AI event in San Francisco runs July 22-23. First major deep-dive on the MI400 series roadmap since Computex. UBS raised AMD PT to $700, Rosenblatt to $665. AMD closed at $529.14 (–3.46%) on July 16 on TSMC wafer hike impact. The event could be a re-rating catalyst if AMD provides hyperscaler win disclosures and competitive NVDA pricing commentary. Context: NVDA staged a dramatic intraday recovery on July 16 from $197 premarket to ~$208-210 close — NVDA's relative AI positioning strength makes AMD's AI Day case harder to make. Do not add AMD above $530 ahead of the event."
+      "note": "AMD's annual AI event in San Francisco runs July 22-23. Context has materially changed from prior brief: AMD fell ~7% on July 17 due to the Moonshot AI Kimi K3 second DeepSeek shock on top of TSMC wafer hike margin pressure. AMD AI Day now must address both simultaneously: (1) MI400 roadmap vs. NVDA H100/Blackwell and (2) GPU cluster inference demand thesis in a world where Chinese open-weight frontier models price at $15/M output tokens vs. $50/M for US equivalents. AMD AI Day closes ($529.14 July 16 → ~$492 July 17) make hyperscaler win disclosures the essential element — competitive pricing or win announcements are the only credible response to the Moonshot AI demand-disruption narrative. UBS PT $700, Rosenblatt $665 on AMD; both may face revision given the Moonshot II shock. Do not add AMD above $495 ahead of the event."
     },
     {
       "date": "2026-07-28",
-      "label": "FOMC meeting (Jul 28-29) — July hike probability ~20%; September language is the critical signal",
+      "label": "FOMC meeting (Jul 28-29) — July hike ~33.7%; September hike probability ~69% post-WTI $82 breach; September language is the critical signal",
       "kind": "FOMC",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
-      "note": "July hike base case remains no-hike (~15-20% probability — collapsed from 46% after June CPI 0.0% MoM and PPI –0.3% on July 14). The September language in the FOMC statement and dot-plot update is the market-moving variable. September hike probability reduced to ~38% as of July 17 morning (post-CPI/PPI disinflation repricing) but remains elevated relative to pre-July 13 levels (~25%) due to WTI three-day approach to $80 and Iran Day 6 Hormuz disruption embedding into August CPI. If Warsh's dot-plot signals September hike clearly: 30Y re-accelerates, IWM headwinds worsen, BUY conditions pushed back to post-August CPI. If dots hold September in question: rate relief window opens. Key watch: August 13 July CPI is the primary input that will move September probability in either direction."
+      "note": "July hike base case is elevated — CME FedWatch shows ~33.7% probability of a July hike (reversed from 15-20% earlier this week after June CPI 0.0% MoM, as WTI formal $82.49 breach overwhelmed the June CPI relief). September hike probability is now ~69% combined (51% for 25bps + 18% for 50bps), up from 38% at the July 17 morning open and 58% at July 16 close. The September language in the FOMC statement and dot-plot update is the market-moving variable. If Warsh's dot-plot signals September 25bps clearly: 30Y re-accelerates, IWM headwinds worsen, BUY conditions pushed back to post-August CPI. If dots retain September ambiguity: rate relief window opens. Key watch: August 13 July CPI is the primary input; WTI $82.49 settlement and Brent $88.10 will fully load into July energy components — the August CPI oil-shock is structurally embedded."
     },
     {
       "date": "2026-07-29",
-      "label": "META Q2 2026 earnings — AI cloud business first quantification; peak Q2 earnings week (MSFT, AMZN also)",
+      "label": "META Q2 2026 earnings — AI cloud business quantification; MSFT + AMZN also; peak Q2 earnings week",
       "kind": "EARNINGS",
       "tickers": ["META", "MSFT", "AMZN"],
-      "note": "META Q2 earnings July 29 is the first event where management must quantify the AI cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). MSFT and AMZN also report in late July — peak Q2 earnings risk window. IBM's enterprise software warning (July 14) adds a risk factor for MSFT Azure enterprise consulting revenue. META's ad-driven model is insulated from IBM's enterprise IT budget rotation. GOOGL reports July 22 (earlier than prior, in the triple-event session)."
+      "note": "META Q2 earnings July 29 is the first event where management must quantify the AI cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). MSFT and AMZN also report in late July — peak Q2 earnings risk window. IBM's enterprise software warning (July 14) adds a risk factor for MSFT Azure enterprise consulting revenue. META's ad-driven model is most insulated from Moonshot AI Kimi K3 demand disruption — Chinese open-weight inference disruption primarily threatens GPU cluster spend, not ad-optimization models. GOOGL reports July 22 (earlier, in the triple-event session). PYPL board rejection of Stripe/Advent bid could weigh on fintech sentiment by July 29."
     },
     {
       "date": "2026-08-13",
-      "label": "July CPI release (est. Aug 13) — captures WTI $80 double-test (Jul 15-16) + Iran Hormuz blockade oil pass-through",
+      "label": "July CPI release (est. Aug 13) — WTI $82.49 formal breach + Brent $88.10 Hormuz premium fully embedded; most consequential macro print of 2026",
       "kind": "MACRO",
       "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA", "IWM"],
-      "note": "June CPI (July 14) captured pre-Hormuz-shock prices and printed 0.0% MoM core / 2.6% YoY (vs 2.8% prior); PPI –0.3% (steepest since April 2020). July CPI will be the FIRST month to fully reflect WTI's July 13-17 spike (up >10% for the week by July 17) and the ongoing Strait disruption. WTI has intraday-approached $80 for three consecutive sessions (July 15, 16, 17 premarket at ~$79.74); Brent at $85.95 on July 17; Hormuz transit fallen 62% to 4.1M bpd from ~10.8M bpd pre-crisis. 30Y above 5.00% for six consecutive sessions. September hike probability ~38% as of July 17 morning (reduced from 58% by June CPI/PPI disinflation, but still elevated vs pre-crisis ~25%). August CPI is the first potential de-escalation event for rate expectations — requires WTI reversal to sub-$75 on Iran normalization and no core services acceleration."
+      "note": "July CPI is the first release to fully capture the WTI formal $82.49 settlement (July 17) and the ongoing Iran Hormuz blockade at 4.1M bpd (62% below pre-crisis norm of 10.8M bpd). Brent at $88.10 on July 17 settlement represents the peak single-day print of the conflict. WTI weekly gain >10% for the week ending July 17 is historically significant. The FOMC is pricing ~69% probability of a September hike as of July 17 close — August CPI is the primary input that will confirm or reverse that pricing. Bull scenario (August CPI <3.2% YoY with oil-shock not embedding in core): September hike probability collapses, BUY conditions open. Bear scenario (August CPI >3.5% YoY with WTI oil-shock passing through to services/transportation): September 50bps probability jumps, BEARISH regime extends. June CPI 0.0% MoM demonstrated that prior oil shocks did not embed; the July shock magnitude ($82.49, +10% weekly) is larger."
     },
     {
       "date": "2026-08-26",
-      "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle fundamental clearing event",
+      "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle clearing event; now must address Moonshot AI demand disruption",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. TSMC Q2 (July 16) confirmed the AI demand thesis with $40.2B revenue and FY guidance raised to >40% USD — and TSMC's supply shortage for N3/N5 nodes extending into 2027 is demand-bullish. However, the 5-10% wafer price hike across ALL advanced nodes (including 5nm, NVDA's primary manufacturing node) introduces a 2-4pp gross margin headwind that management must address on the August 26 call. NVDA demonstrated exceptional relative strength July 16 — recovering from $197 premarket to ~$208-210 close despite SMH –4% — signaling the market views NVDA's AI positioning as insulated from commodity-chip selloff. Full-size add gate: sustained close above $210 + wafer hike impact clarified + VIX below 15."
+      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. TSMC Q2 (July 16) confirmed AI demand thesis with supply shortage for N3/N5 nodes extending into 2027. However, three new risk factors exist vs. prior NVDA brief: (1) TSMC 5-10% wafer price hike across 74% of wafer revenue = 2-4pp gross margin headwind management must quantify; (2) Moonshot AI Kimi K3 (July 17) is a frontier-class open-weight model at 70% pricing discount that challenges hyperscaler GPU cluster inference demand; (3) September hike probability at ~69% applies a discount-rate headwind to NVDA's 37x forward multiple. NVDA held the $195 hard stop through the July 14-17 selloff — the stock's relative strength despite AMD –7%, GOOGL –4.4% on July 17 is notable. Full-size add gate: sustained close above $210 + wafer hike impact clarified + Moonshot AI demand impact quantified + VIX below 15."
     },
     {
       "date": "2026-09-02",
