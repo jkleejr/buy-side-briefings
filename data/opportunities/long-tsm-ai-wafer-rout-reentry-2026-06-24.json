@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-24",
   "expires_at": "2026-08-22",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "TSM",
     "TSMC",
@@ -54,7 +54,14 @@
     "NVDA-readthrough",
     "reentry"
   ],
-  "outcome": null,
+  "current_price": 409.74,
+  "outcome": {
+    "closed_at": "2026-07-17",
+    "final_price": 409.74,
+    "return_pct": -2.6,
+    "outcome_label": "Stop hit at $409.74 — TSMC Taipei -7.3% contagion erased ADR",
+    "note": "TSM ADR closed at $409.74 on July 17, below the $420 stop. TSMC Taipei fell -7.3% on sell-the-news AI infrastructure derating and TSMC wafer cost concerns (5-10% hike across 5nm nodes entering analyst model revision cycle). The Q2 earnings beat (July 17) was overshadowed by the wafer cost hike disclosure and AI position-clearing dynamic. Second time this opportunity has closed on a stop; the AI wafer demand thesis remains intact long-term but the near-term tactical window is closed."
+  },
   "levels": {
     "entry_low": 435.0,
     "entry_high": 460.0,

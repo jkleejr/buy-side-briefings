@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-25",
   "expires_at": "2026-07-23",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "EWJ",
     "Japan",
@@ -56,7 +56,14 @@
     "ETF",
     "Hormuz"
   ],
-  "outcome": null,
+  "current_price": 89.5,
+  "outcome": {
+    "closed_at": "2026-07-17",
+    "final_price": 89.5,
+    "return_pct": -5.2,
+    "outcome_label": "Thesis invalidated — Brent above $80 for multiple sessions; Nikkei -5.2%",
+    "note": "The explicit invalidation condition was met: Brent crude closed above $80 for two consecutive sessions (now at $85.95 after US struck Iranian oil tanker). Japan's oil import relief thesis is structurally reversed — the ceasefire that was the original catalyst collapsed. Simultaneously, Nikkei fell -5.2% on July 17 (steepest since March) on TSMC Taipei -7.3% AI semi contagion, removing both pillars of the dual-catalyst thesis. Position exited at ~$89.50, near the $89 stop level."
+  },
   "levels": {
     "entry_low": 92.0,
     "entry_high": 96.0,

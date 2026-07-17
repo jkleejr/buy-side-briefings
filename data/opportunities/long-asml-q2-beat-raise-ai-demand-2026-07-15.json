@@ -48,7 +48,14 @@
   ],
   "created_at": "2026-07-15",
   "expires_at": "2026-09-12",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["ASML", "EUV", "lithography", "AI-semis", "catalyst", "beat-and-raise", "semiconductor-equipment"],
-  "outcome": null
+  "current_price": 1768.72,
+  "outcome": {
+    "closed_at": "2026-07-17",
+    "final_price": 1768.72,
+    "return_pct": -3.9,
+    "outcome_label": "Stop hit — semi position-clearing wiped post-earnings premium",
+    "note": "ASML premarket ~$1,768.72 on July 17, below the $1,790 stop. The semiconductor position-clearing selloff (Nikkei -5.2%, TSMC Taipei -7.3%, NVDA cumulative -10.5%) erased the Q2 beat-and-raise premium within 48 hours of entry. TSMC wafer cost hike concerns (5-10% across 5nm nodes) hitting sell-side models overwhelmed the demand confirmation from the earnings report."
+  }
 }

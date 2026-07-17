@@ -56,7 +56,7 @@
   ],
   "created_at": "2026-07-09",
   "expires_at": "2026-08-13",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "AI semis",
     "SMH",
@@ -65,5 +65,12 @@
     "regime shift",
     "semiconductor ETF"
   ],
-  "outcome": null
+  "current_price": 570.0,
+  "outcome": {
+    "closed_at": "2026-07-17",
+    "final_price": 570.0,
+    "return_pct": -6.3,
+    "outcome_label": "Stop hit — AI semi position-clearing phase invalidated regime-shift thesis",
+    "note": "SMH was at $590.77 on July 16 (at stop level) and VanEck SMH fell approximately -3.4% premarket on July 17 to ~$570, well below the $590 stop. The regime-shift thesis (SKHY debut → AI semi re-rating) was overwhelmed by a Bloomberg-described 'position-clearing' dynamic as TSMC wafer cost hikes (5-10%) began flowing into sell-side models for NVDA, AMD, ARM, QCOM. TSMC Taipei fell -7.3%, Nikkei -5.2%. The SKHY debut premium has been fully erased. This is the second long-SMH stop-out in the book; the bear case for the next 5 weeks (NVDA Q2 dead zone through Aug 26) now outweighs the bull case."
+  }
 }

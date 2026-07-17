@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-30",
   "expires_at": "2026-07-28",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "GOOGL",
     "Alphabet",
@@ -54,6 +54,14 @@
     "rebalancing",
     "mechanical"
   ],
+  "current_price": 678.0,
+  "outcome": {
+    "closed_at": "2026-07-17",
+    "final_price": 395.0,
+    "return_pct": 10.4,
+    "outcome_label": "Target 3 hit — GOOGL at $678, all targets ($365/$380/$395) cleared",
+    "note": "GOOGL reached $678 per the July 17 morning briefing — well above all three targets. All three price targets ($365 T1, $380 T2, $395 T3) were cleared during the 2-4 week institutional Dow rebalancing window plus the Q2 earnings beat. The opportunity captured the full mechanical bid from Dow inclusion (7x Verizon price-weighting), reinforced by Google Cloud Q2 revenue and Gemini monetization momentum. Closed at T3 basis ($395); GOOGL has continued significantly beyond the stated targets."
+  },
   "levels": {
     "entry_low": 345.0,
     "entry_high": 352.0,
