@@ -137,10 +137,14 @@ export default function LevelsChart({
   // overhead is real history but says nothing about the next move, and every
   // extra band is one more thing obscuring the candles.
   const perSide = compact ? 1 : ZONES_PER_SIDE;
-  const zones = useMemo(
-    () => (analysis ? pickRelevantZones(analysis.zones, analysis.price, perSide) : []),
-    [analysis, perSide],
-  );
+  const zones = useMemo(() => {
+    if (!analysis) return [];
+    // "Nearby" is relative to how far this window travels: 10% is a long way
+    // on a quiet quarter and nothing across 25 years.
+    const spanPct = ((analysis.high - analysis.low) / analysis.price) * 100;
+    const maxDist = Math.min(60, Math.max(10, spanPct * 0.4));
+    return pickRelevantZones(analysis.zones, analysis.price, perSide, maxDist);
+  }, [analysis, perSide]);
 
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
@@ -150,11 +154,32 @@ export default function LevelsChart({
     // axis now matches exactly what gets drawn.
     const lo = Math.min(analysis.low, analysis.price, ...zones.map((z) => z.lo));
     const hi = Math.max(analysis.high, analysis.price, ...zones.map((z) => z.hi));
-    const pad = (hi - lo) * 0.06 || 1;
-    const y = (v: number) =>
-      PAD_T + (1 - (v - (lo - pad)) / (hi + pad - (lo - pad))) * (H - PAD_T - PAD_B);
+
+    // Long windows span orders of magnitude — NVDA's full history runs 0.03 to
+    // 236, a 7,000x range that flattens 25 years into a line on the bottom
+    // axis. Above a few multiples, switch to log so equal % moves get equal
+    // vertical space, which is how a price chart should read anyway.
+    const useLog = lo > 0 && hi / lo > 4;
+    const plotH = H - PAD_T - PAD_B;
+
+    let y: (v: number) => number;
+    if (useLog) {
+      const l0 = Math.log(lo);
+      const l1 = Math.log(hi);
+      const padL = (l1 - l0) * 0.06 || 1;
+      const a = l0 - padL;
+      const b = l1 + padL;
+      y = (v: number) =>
+        PAD_T + (1 - (Math.log(Math.max(v, Number.EPSILON)) - a) / (b - a)) * plotH;
+    } else {
+      const pad = (hi - lo) * 0.06 || 1;
+      const a = lo - pad;
+      const b = hi + pad;
+      y = (v: number) => PAD_T + (1 - (v - a) / (b - a)) * plotH;
+    }
+
     const x = (i: number) => PAD_L + (i / (bars.length - 1)) * (W - PAD_L - PAD_R);
-    return { x, y };
+    return { x, y, useLog };
   }, [bars, analysis, zones, H, PAD_R]);
 
   const labelYs = useMemo(() => {
@@ -182,6 +207,17 @@ export default function LevelsChart({
     },
     [bars, scale],
   );
+
+  // "99.7% to support" is technically true on a 25-year window and useless as
+  // a readout — a level that far away tells you nothing about the next move.
+  const nearestDrawn = zones.filter((z) => z.mid < (analysis?.price ?? 0))[0];
+  const headline = !analysis
+    ? ""
+    : analysis.inside && zones.includes(analysis.inside)
+      ? `inside a ${analysis.inside.touches}× zone`
+      : nearestDrawn
+        ? `${Math.abs(nearestDrawn.distPct).toFixed(1)}% to support`
+        : "no level nearby";
 
   // Unique per instance — two charts on one page must not share a clip path.
   const clipId = `lvl-clip-${symbol.replace(/[^A-Za-z0-9]/g, "")}-${variant}`;
@@ -237,11 +273,7 @@ export default function LevelsChart({
         )}
         {analysis && (
           <span className="ml-auto font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">
-            {analysis.inside
-              ? `inside a ${analysis.inside.touches}× zone`
-              : analysis.nearestSupport
-                ? `${Math.abs(analysis.nearestSupport.distPct).toFixed(1)}% to support`
-                : "no support below"}
+            {headline}
           </span>
         )}
       </div>
@@ -250,8 +282,8 @@ export default function LevelsChart({
         <div className="flex flex-wrap items-center gap-2 pb-2">
           <RangeSelector value={range} onChange={setRange} loading={!bars && !error} />
           <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
-            {INTRADAY_RANGES.has(range) ? "intraday bars" : BAR_INTERVAL[range]} · levels
-            re-derived for this window
+            {INTRADAY_RANGES.has(range) ? "intraday bars" : BAR_INTERVAL[range]} ·{" "}
+            {scale?.useLog ? "log scale" : "levels re-derived for this window"}
           </span>
         </div>
       )}

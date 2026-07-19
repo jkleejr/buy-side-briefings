@@ -241,7 +241,12 @@ export function pickRelevantZones(
   zones: LevelZone[],
   price: number,
   perSide = 2,
+  maxDistPct = Infinity,
 ): LevelZone[] {
+  // Anything past the cutoff isn't a level you can trade against. NVDA's full
+  // history otherwise draws "support" at $0.42 — a real 1999 low, and 99.8%
+  // below the price. Better to show nothing than to label that a level.
+  zones = zones.filter((z) => Math.abs(z.distPct) <= maxDistPct);
   const score = (z: LevelZone) => {
     const distance = Math.abs(z.distPct);
     // Small nudges only — proximity still dominates the ordering.
