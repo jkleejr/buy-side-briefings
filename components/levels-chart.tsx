@@ -22,14 +22,6 @@ const SIZES = {
   compact: { H: 190, padR: 104, gap: 22, labelSize: 9, subSize: 7.5 },
 } as const;
 
-/**
- * A compact tile answers "where's the floor, where's the ceiling" — not the
- * full map. Volatile names derive many zones (BTC: 13), and more labels than
- * the short tile can stack collapse into an illegible pile, so keep only the
- * ones nearest the price.
- */
-const MAX_COMPACT_ZONES = 5;
-
 /** Band weight scales with touch count — a 12-touch shelf must outweigh a 2. */
 const zoneAlpha = (touches: number) => Math.min(0.44, 0.09 + touches * 0.032);
 const zoneColor = (z: LevelZone) =>
@@ -42,6 +34,12 @@ type Props = {
   variant?: "full" | "compact";
   /** Display name shown in compact mode (e.g. "S&P 500" for SPY). */
   title?: string;
+  /**
+   * Friendly names for the switcher, keyed by symbol. Without it the buttons
+   * read as raw tickers — fine for a watchlist, less so for a homepage where
+   * "Bitcoin" beats "BTC-USD".
+   */
+  labels?: Record<string, string>;
 };
 
 export default function LevelsChart({
@@ -49,6 +47,7 @@ export default function LevelsChart({
   initialSymbol,
   variant = "full",
   title,
+  labels,
 }: Props) {
   const { H, padR: PAD_R, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
   const compact = variant === "compact";
@@ -98,14 +97,21 @@ export default function LevelsChart({
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
 
+  // How many labels the margin can stack before layoutLabelYs runs out of room
+  // and clamps them on top of each other. Derived from the actual geometry so
+  // it stays correct if the chart is resized or the type changes.
+  const maxZones = Math.max(3, Math.floor((H - PAD_T - PAD_B - 6) / LABEL_GAP));
+
   const zones = useMemo(() => {
     if (!analysis) return [];
-    if (!compact) return analysis.zones;
+    if (analysis.zones.length <= maxZones) return analysis.zones;
+    // Too many to label legibly — keep the ones nearest the price, which are
+    // the ones that can actually be hit. BTC derives 13 over a year.
     return [...analysis.zones]
       .sort((a, b) => Math.abs(a.distPct) - Math.abs(b.distPct))
-      .slice(0, MAX_COMPACT_ZONES)
+      .slice(0, maxZones)
       .sort((a, b) => b.mid - a.mid);
-  }, [analysis, compact]);
+  }, [analysis, maxZones]);
 
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
@@ -119,7 +125,7 @@ export default function LevelsChart({
   }, [bars, analysis, zones, H, PAD_R]);
 
   const labelYs = useMemo(() => {
-    if (!analysis || !scale) return [];
+    if (!scale) return [];
     return layoutLabelYs(
       zones.map((z) => scale.y(z.mid)),
       PAD_T + 10,
@@ -168,23 +174,30 @@ export default function LevelsChart({
             )}
           </span>
         ) : (
-          <div className="flex flex-wrap border border-[var(--border-strong)]">
-            {symbols.map((s) => (
-              <button
-                key={s}
-                type="button"
-                onClick={() => setSymbol(s)}
-                aria-pressed={s === symbol}
-                className={`border-r border-[var(--border-strong)] px-2.5 py-1 font-mono text-[10px] font-bold tracking-[0.1em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-                  s === symbol
-                    ? "bg-[var(--amber)] text-[var(--background)]"
-                    : "text-[var(--dim)] hover:bg-[var(--panel)]"
-                }`}
-              >
-                {s}
-              </button>
-            ))}
-          </div>
+          <>
+            <div className="flex flex-wrap border border-[var(--border-strong)]">
+              {symbols.map((s) => (
+                <button
+                  key={s}
+                  type="button"
+                  onClick={() => setSymbol(s)}
+                  aria-pressed={s === symbol}
+                  className={`border-r border-[var(--border-strong)] px-2.5 py-1 font-mono text-[10px] font-bold tracking-[0.1em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                    s === symbol
+                      ? "bg-[var(--amber)] text-[var(--background)]"
+                      : "text-[var(--dim)] hover:bg-[var(--panel)]"
+                  }`}
+                >
+                  {labels?.[s] ?? s}
+                </button>
+              ))}
+            </div>
+            {analysis && (
+              <span className="font-mono text-[15px] font-semibold tabular-nums text-[var(--foreground)]">
+                {analysis.price.toLocaleString("en-US", { maximumFractionDigits: 2 })}
+              </span>
+            )}
+          </>
         )}
         {analysis && (
           <span className="ml-auto font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">

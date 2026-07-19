@@ -198,11 +198,12 @@ function Wire({ wire }: { wire: WireRow[] }) {
 // The three benchmarks the homepage carries: the broad market, the AI
 // bellwether every briefing tracks, and crypto. BTC-USD is the symbol the
 // quote API understands; the ticker strip already uses it.
-const LEVEL_TILES = [
-  { symbol: "SPY", title: "S&P 500" },
-  { symbol: "NVDA", title: "Nvidia" },
-  { symbol: "BTC-USD", title: "Bitcoin" },
-] as const;
+const CHART_SYMBOLS = ["SPY", "NVDA", "BTC-USD"];
+const CHART_LABELS: Record<string, string> = {
+  SPY: "S&P 500",
+  NVDA: "Nvidia",
+  "BTC-USD": "Bitcoin",
+};
 
 // --- the week, on a clock (Idea 04) -------------------------------------------
 // A horizontal timeline of the dated catalysts, with the binary event marked
@@ -531,25 +532,12 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
             </div>
           )}
 
-          {/* Three benchmarks as small multiples — the broad market, the AI
-              bellwether, and crypto — each with the levels it's trading between.
-              Same chart as the watchlist, in its compact variant. */}
+          {/* One full-size chart with a switcher. Three side-by-side tiles put
+              the zone labels below legibility, so this trades breadth for a
+              chart you can actually read. */}
           <div className="pt-12">
-            <SectionRule>Where the majors are trading</SectionRule>
-            <div className="grid gap-6 lg:grid-cols-3">
-              {LEVEL_TILES.map((t) => (
-                <LevelsChart
-                  key={t.symbol}
-                  symbols={[t.symbol]}
-                  variant="compact"
-                  title={t.title}
-                />
-              ))}
-            </div>
-            <p className="pt-2 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
-              1Y daily · bands are support &amp; resistance derived from swing pivots ·
-              opacity = times tested
-            </p>
+            <SectionRule>Charts</SectionRule>
+            <LevelsChart symbols={CHART_SYMBOLS} labels={CHART_LABELS} />
           </div>
 
           {/* What matters + catalyst detail — the two forward-looking modules. */}
