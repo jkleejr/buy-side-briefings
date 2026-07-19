@@ -195,14 +195,20 @@ function Wire({ wire }: { wire: WireRow[] }) {
   );
 }
 
-// The three benchmarks the homepage carries: the broad market, the AI
-// bellwether every briefing tracks, and crypto. BTC-USD is the symbol the
-// quote API understands; the ticker strip already uses it.
-const CHART_SYMBOLS = ["SPY", "NVDA", "BTC-USD"];
+// The benchmarks the homepage carries: the broad market, the AI bellwether
+// every briefing tracks, crypto, the fear gauge, and the metal.
+//
+// ^GSPC is the index itself, not SPY — charting the ETF meant the page showed
+// "S&P 500 743.29" a few inches under a ticker strip reading 7,457.69. These
+// are the same symbols the ticker and pulse rail already use, so every number
+// on the homepage now comes from one place.
+const CHART_SYMBOLS = ["^GSPC", "NVDA", "BTC-USD", "^VIX", "GC=F"];
 const CHART_LABELS: Record<string, string> = {
-  SPY: "S&P 500",
+  "^GSPC": "S&P 500",
   NVDA: "Nvidia",
   "BTC-USD": "Bitcoin",
+  "^VIX": "VIX",
+  "GC=F": "Gold",
 };
 
 // --- the week, on a clock (Idea 04) -------------------------------------------

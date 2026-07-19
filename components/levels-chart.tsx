@@ -219,6 +219,21 @@ export default function LevelsChart({
         ? `${Math.abs(nearestDrawn.distPct).toFixed(1)}% to support`
         : "no level nearby";
 
+  // Intraday windows need the time of the last bar; daily and longer only the
+  // date — "last bar Jul 17, 2026 09:30" is noise on a monthly chart.
+  const lastBar = bars?.[bars.length - 1];
+  const lastBarLabel = lastBar
+    ? new Date(lastBar.date).toLocaleString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        ...(INTRADAY_RANGES.has(range)
+          ? ({ hour: "numeric", minute: "2-digit", timeZoneName: "short" } as const)
+          : {}),
+        timeZone: INTRADAY_RANGES.has(range) ? "America/New_York" : "UTC",
+      })
+    : "—";
+
   // Unique per instance — two charts on one page must not share a clip path.
   const clipId = `lvl-clip-${symbol.replace(/[^A-Za-z0-9]/g, "")}-${variant}`;
 
@@ -494,6 +509,12 @@ export default function LevelsChart({
         <span>Band opacity = times tested</span>
         <span className="text-[var(--faint)]">
           Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
+        </span>
+        {/* Where the numbers come from and how fresh they are — the symbol is
+            named because "Gold" could reasonably mean spot, GLD or futures. */}
+        <span className="basis-full text-[var(--faint)] normal-case tracking-normal">
+          Source: Yahoo Finance · {symbol} · last bar {lastBarLabel}
+          {" · "}quotes may be delayed
         </span>
       </div>
       )}
