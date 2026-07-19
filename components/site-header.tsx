@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { todayET } from "@/lib/utils";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
@@ -21,13 +20,9 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--foreground)] bg-[var(--background)]">
       <div className="mx-auto flex max-w-[1600px] items-baseline gap-5 px-4 py-2.5 text-[13px] sm:px-6">
-        <Link href="/" className="shrink-0">
-          <span className="text-[16px] font-bold tracking-[0.14em] [font-variant:small-caps]">
-            Buy-Side
-          </span>
-        </Link>
-
-        {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
+        {/* Inline nav (tablet+) with active-route highlight + overflow fade.
+            The nav's first item is TODAY → "/", so home stays reachable
+            without a wordmark. */}
         <HeaderNav items={NAV} />
 
         <div className="ml-auto flex shrink-0 items-baseline gap-3 text-[12px] italic text-[var(--dim)]">
