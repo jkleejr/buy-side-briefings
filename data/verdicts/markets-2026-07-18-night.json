@@ -1,0 +1,96 @@
+{
+  "routine": "markets",
+  "date": "2026-07-18",
+  "window": "night",
+  "generated_at": "2026-07-19T01:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — No Hormuz Ceasefire; Three Formal Triggers Intact; GOOGL July 22 Is the Reset Gate",
+    "headline": "No Iran ceasefire reached as markets brace for the most important earnings week of the year",
+    "conviction": "medium",
+    "rationale_short": "Saturday produced no material change to the risk framework. Markets are closed; the last print is Friday's close (SPX 7,457.69, three formal triggers active). CONFIRMED: Iranian FM Araghchi met Omani FM Busaidi in Muscat today — RESULT: NO DEAL. Iran agreed only to further technical talks while blaming US pressure on Oman for preventing agreement. The IRGC kept Hormuz closed. US struck Iranian infrastructure in Jask (Bonji desalination plant) on July 18. Trump's ultimatum deadline passed with zero Iranian compliance. The Hormuz binary the morning brief flagged resolved to the bearish outcome. BTC is the sole positive signal: close $64,840 (+1.4%), live $64,778 at ~9pm ET, Gate 2 ($62,000) intact with $2,778 cushion — decoupling from the semi complex for a third consecutive session. Kimi K3 open weights ship July 27, extending the AI-capex-ROI uncertainty window. Conviction is medium rather than high because the Sunday futures open is the first clean post-Muscat-failure read on oil, and two binary events in the next 48 hours — PYPL board July 20, GOOGL Q2 July 22 AMC — could independently reset the tape in either direction. STEP ASIDE is the correct posture into Sunday evening and Monday open.",
+    "supporting_data": [
+      { "label": "CONFIRMED: Araghchi met Omani FM Busaidi in Muscat today (Saturday July 18) — RESULT: NO DEAL; sides agreed only to further technical talks; Iran blamed US pressure on Oman for blocking agreement; IRGC kept Hormuz closed", "url": "https://iranwire.com/en/news/154895-araghchi-says-iran-oman-talks-on-hormuz-continue-as-irgc-keeps-strait-closed/" },
+      { "label": "US struck Iranian infrastructure in Jask, Hormozgan Province on July 18 — hit Bonji desalination plant, disrupting water for ~10,000 people; Iran did not commit to halting Hormuz attacks; Trump's deadline passed with no compliance", "url": "https://www.cbsnews.com/live-updates/us-iran-war-trump-ceasefire-attacks-strait-of-hormuz/" },
+      { "label": "SPX last print: 7,457.69 (–1.01% Friday July 17); Nasdaq 25,520.24 (–1.40%); Dow 52,146.42 (–406.55); three of four formal framework triggers active (SPX below 7,460, WTI above $80, VIX above 18)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html" },
+      { "label": "Brent $88.09 (+4.58%), WTI $82.47 (+4.46%) at Friday July 17 close — both above formal triggers; oil +14%+ for the week on Hormuz escalation; weekend futures unavailable (markets closed Saturday)", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+      { "label": "BTC July 18 candle: open $63,941, close $64,840, high $64,871, low $63,886 (+1.4%); live at $64,778 at ~9pm ET; Gate 2 ($62,000) intact with $2,778 cushion; decoupling from semi complex for third consecutive session (Crypto.com MCP live)", "url": "https://crypto.com/exchange/trade/BTC_USDT" },
+      { "label": "Kimi K3 beat Claude Fable 5 in Frontend Code Arena benchmark (1,679 vs. 1,631); open weights ship July 27 — independent community evaluation will determine if pricing-efficiency advantage holds; BenchLM confirmation pending", "url": "https://benchlm.ai/blog/posts/kimi-3-release-data-coming-soon" },
+      { "label": "PayPal board views $53B Stripe/Advent bid ($60.50/sh) as inadequate; formal board meeting July 20; PYPL ~$55 (spread ~$5.50); Monday binary: engage → $58–59 target; reject → $45–48 downside", "url": "https://finance.yahoo.com/markets/stocks/articles/exclusive-paypal-board-sees-stripe-222532613.html" },
+      { "label": "GOOGL Q2 earnings July 22 AMC — the single most important clearing event for the Kimi K3 AI-fatigue narrative; Cloud beat + AI Overviews monetization = direct refutation of DeepSeek-2.0 thesis; miss = accelerates position-clearing", "url": "https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals" },
+      { "label": "Bitcoin and crypto market defying gravity Saturday — total market cap $2.19T; Fear & Greed Index in extreme fear zone (25-35); BTC holding as risk-off signal even as equities sold off sharply into weekend", "url": "https://www.cryptotimes.io/2026/07/18/bitcoin-and-the-crypto-market-is-defying-gravity-right-now-heres-why/" },
+      { "label": "2026 Strait of Hormuz crisis Wikipedia: Trump ceasefire declared 'OVER' on July 12 at NATO summit; Iran-Oman mediation channel destroyed same day; Hormuz tanker traffic at multi-month low (~7 vessels/day vs. 13 prior)", "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7457.69,  "change_pct": -1.01, "as_of": "2026-07-17T20:00:00Z", "note": "Last close Friday July 17; markets closed Saturday" },
+    "nasdaq": { "level": 25520.24, "change_pct": -1.40, "as_of": "2026-07-17T20:00:00Z", "note": "Last close Friday July 17; markets closed Saturday" },
+    "vix":    { "level": 18.77,    "change_pct": 12.19, "as_of": "2026-07-17T20:00:00Z", "note": "Last close Friday July 17; markets closed Saturday" },
+    "ust10y": { "level": 4.56,     "change_bps": -1,    "as_of": "2026-07-17T20:00:00Z", "note": "Last close Friday July 17" },
+    "dxy":    { "level": 100.72,   "change_pct": 0.18,  "as_of": "2026-07-17T20:00:00Z", "note": "Last close Friday July 17" }
+  },
+  "regime_risk": [
+    { "name": "SPX vs 7,460 trigger",      "value": 7457.69, "trigger_below": 7460,  "unit": ""        },
+    { "name": "WTI vs $80 trigger",        "value": 82.47,   "trigger_above": 80.00, "unit": "$/bbl"   },
+    { "name": "VIX vs 18 trigger",         "value": 18.77,   "trigger_above": 18.00, "unit": ""        },
+    { "name": "30Y Yield",                 "value": 5.10,    "trigger_above": 5.00,  "unit": "%"       },
+    { "name": "Brent crude",               "value": 88.09,   "trigger_above": 85.00, "unit": "$/bbl"   },
+    { "name": "BTC Gate 2",                "value": 64778,   "trigger_below": 62000, "unit": "$"       },
+    { "name": "Hormuz tanker traffic",     "value": 7,       "trigger_below": 10,    "unit": "vessels/day" },
+    { "name": "September Hike Prob",       "value": 69,      "trigger_above": 60,    "unit": "%"       }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",     "note": "Last print ~$203 (–2.0% Friday). Hard stop $195 intact — the most critical AI-cycle sentinel has not broken. Kimi K3 open weights July 27 add near-term uncertainty. DO NOT ADD. Next clearing event: GOOGL Q2 July 22 (sector proxy read), then NVDA Q2 FY27 est. Aug 26.", "sentiment": "negative" },
+    { "ticker": "GOOGL",    "note": "THE EVENT OF THE WEEK. Q2 July 22 AMC. EPS est. $2.87 (+23.8% YoY); Google Cloud +63% YoY Q1. GOOGL flat Thursday while NVDA –7%+ — market is pricing it as the cleanest AI-monetization test. A Cloud beat directly refutes the Kimi K3 AI-fatigue thesis. A miss accelerates position-clearing into August. Highest-conviction setup this week.", "sentiment": "positive" },
+    { "ticker": "AMD",      "note": "AMD AI Day July 22-23 must address Kimi K3 efficiency challenge + TSMC wafer hike simultaneously. Q2 Aug 4. Gross margin ~50% vs. NVDA ~75% amplifies dual cost/demand risk. No add before AI Day.", "sentiment": "negative" },
+    { "ticker": "AAPL",     "note": "Reclaimed global #1 market cap from NVDA/MSFT; DOJ antitrust settlement talks slightly negative near-term but removes long-tail overhang. Relative safe-haven in this tape. Hold above $320.", "sentiment": "positive" },
+    { "ticker": "META",     "note": "$10B compute lease to Anthropic confirmed — direct real-time refutation of 'AI capex is slowing' narrative. Hyperscalers restructuring to compute-as-service, not cutting. Q2 July 29. Hold.", "sentiment": "positive" },
+    { "ticker": "XLE",      "note": "Mandatory 15% allocation in force. Brent $88.09, WTI $82.47 — both formal triggers active. Muscat mediation channel eliminated July 12; Iran struck Oman. Sunday futures open is first clean read post-weekend. Stop: ceasefire confirmed + WTI two consecutive closes below $70.", "sentiment": "positive" },
+    { "ticker": "BTC-USD",  "note": "$64,778 at ~9pm ET Saturday (+1.38%). Gate 2 ($62,000) holding with ~$2,778 cushion. BTC decoupling from semi selloff for third consecutive session — cross-asset resilience is notable in a Fear & Greed 'extreme fear' (25-35) tape. Maintain hold; no add above $65K.", "sentiment": "neutral" },
+    { "ticker": "PYPL",     "note": "Board meeting July 20. Board views $53B bid ($60.50/sh) as inadequate per Reuters. PYPL at ~$55 (spread ~$5.50). Binary event Monday: engage → $58–59; reject → $45–48. No position change before Monday pre-open.", "sentiment": "neutral" },
+    { "ticker": "NFLX",     "note": "52-week low ~$68. Q3 guidance missed both lines. No catalyst before October. Avoid.", "sentiment": "negative" },
+    { "ticker": "IWM",      "note": "30Y yield above 5% for 8th consecutive session; WTI above $80 formal trigger; September hike probability ~69%. IWM puts thesis intact. Hold puts; do not add over weekend.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (long at mandatory 15%)",
+      "direction": "long — maintain; add to 20% only on Sunday futures Brent open above $90",
+      "thesis": "Muscat mediation channel was destroyed on July 12 when Iran struck Oman hours after diplomatic talks. No active bilateral framework exists to resolve the Hormuz blockade. Brent $88.09 and WTI $82.47 are both above formal regime-trigger levels. Sunday evening futures open is the first clean post-weekend read — watch for any gap move driven by over-the-weekend developments. The August CPI oil-shock component is mathematically locked in regardless of subsequent daily prints: the average through July 17 already embeds the shock. XLE is the only working hedge in this tape.",
+      "entry": "Hold at 15%. Add to 20% only on Brent Sunday open above $90 confirming continued escalation. Do NOT reduce unless Iran ceasefire is confirmed with Hormuz at 70%+ pre-blockade transit volume AND WTI closes below $70 for two consecutive sessions.",
+      "invalidation": "Credible ceasefire framework announced over Sunday with Hormuz reopening and Brent collapsing below $80. Reduce from 15% to 8% on confirmation.",
+      "conviction": "high",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "GOOGL (earnings-catalyst long)",
+      "direction": "long — buy Monday July 21 pre-close; report July 22 AMC",
+      "thesis": "Alphabet is the single most important clearing event for the Kimi K3 AI-fatigue narrative. Google Cloud +63% YoY in Q1; AI Overviews is the direct revenue bridge from AI investment to search monetization. GOOGL closed flat Thursday while NVDA fell 7%+ — the market has already pre-positioned it as the least-exposed mega-cap to AI capex-ROI destruction. A strong Cloud beat + Q3 guidance can re-rate the entire sector 3–5% in a session and restore HOLD/BUY posture for the broader framework.",
+      "entry": "Buy GOOGL Monday July 21 pre-close (3–5% portfolio). Stop below prior support. Target $210–215 on a strong beat with Cloud guidance uplift.",
+      "invalidation": "GOOGL misses Cloud estimates or provides weak Q3 guidance — validates Kimi K3 demand-destruction narrative. Cut immediately on miss.",
+      "conviction": "medium-high",
+      "horizon": "July 22 AMC through July 23 open reaction"
+    },
+    {
+      "asset": "SMH puts (short semiconductor ETF)",
+      "direction": "short / hedge — maintain; do NOT add ahead of AMD AI Day",
+      "thesis": "SOX in official bear market (–20%+ from June high; –11% for the week). Kimi K3 open weights July 27 extend the AI-efficiency uncertainty window for another 9 days. AMD AI Day July 22-23 is the next fundamental signal; do NOT add new short exposure ahead of it — AMD could deliver enough positive AI-demand data to trigger a tradeable squeeze. Cover shorts immediately if GOOGL beats Cloud estimates July 22 and AMD AI Day is constructive.",
+      "entry": "Maintain August expiry puts. No new short exposure until AMD AI Day passes. Cover all exposure if GOOGL Cloud beats + AMD AI Day positive.",
+      "invalidation": "GOOGL Cloud beat + AMD AI Day positive guidance → semis stage 5%+ relief rally; exit short immediately above prior SOX support levels.",
+      "conviction": "medium",
+      "horizon": "Through AMD AI Day July 22-23; reassess post-GOOGL earnings"
+    },
+    {
+      "asset": "PYPL (event-driven binary — Monday July 20)",
+      "direction": "conditional — watch board response Monday pre-open",
+      "thesis": "PayPal board meeting July 20. $60.50/share ($53B) offer from Stripe/Advent. Board views bid as inadequate per Reuters Friday evening. PYPL at ~$55 implies $5.50 deal spread. Monday binary: board formally engages → $58–59 target, tighten stop; board rejects → stock to $45–48 and the spread unwinds. Pure event-driven trade — no fundamental thesis change required.",
+      "entry": "Do NOT add before Monday open. If board engages: buy $56–57, target $59.50, stop $53. If board rejects: avoid, wait for $46–48 stabilization.",
+      "invalidation": "Board rejection followed by failure to hold $48; avoid entirely.",
+      "conviction": "medium (binary event)",
+      "horizon": "Monday July 20 open reaction through any formal announcement"
+    }
+  ],
+  "bear_case": "Counter-thesis for Monday upgrade to HOLD or BUY: Five simultaneous signals could reverse the STEP ASIDE call. (1) IRAN SUNDAY SURPRISE — Any credible ceasefire signal emerging Sunday evening before futures open would collapse Brent 5–8% and provide broad relief. The market is pricing substantial risk premium; asymmetric upside on any diplomatic de-escalation. (2) GOOGL JULY 22 FULL RESET — The strongest single counter-catalyst in the framework: GOOGL Cloud +63% Q1 trend continuing into Q2, with AI Overviews monetization explicitly quantified in guidance, directly refutes the Kimi K3 AI-fatigue thesis on fundamentals. A beat and strong Q3 guidance restores HOLD for the full framework. (3) KIMI K3 BENCHMARK CHALLENGE — BenchLM, Simon Willison, and NxCode all noted Kimi K3's benchmark is domain-specific (Frontend Code) and does not represent a sweep. If community testing of the July 27 open weights shows significant quality degradation on general tasks, the DeepSeek-2.0 narrative loses its core premise. (4) BTC STRENGTH AS LEADING INDICATOR — BTC decoupling from the semi complex for a third consecutive session in 'extreme fear' (F&G 25-35) is a meaningful cross-asset divergence. In prior correction cycles (April 2025 Liberation Day flush; January DeepSeek shock), BTC weakness preceded risk-asset capitulation; BTC strength here suggests retail hasn't fully exited equities and a floor may be closer than the formal trigger breaches imply. (5) PYPL BOARD ENGAGES — A PYPL deal announcement Monday is a pure M&A premium event ($53B transaction) and provides a one-day positive news cycle for risk appetite independent of the macro/geopolitical drivers. Invalidation conditions for STEP ASIDE → upgrade: SPX two consecutive closes above 7,480 AND Brent below $83 AND VIX below 17. Any two of three on Monday = upgrade to HOLD/SELECTIVE.",
+  "body_mdx": "data/briefings/markets/2026-07-18-night.mdx"
+}
