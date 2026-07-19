@@ -12,12 +12,23 @@ import { deriveLevels, layoutLabelYs, type LevelZone } from "@/lib/levels";
 // reserves those strictly for direction, which is what the candle bodies carry.
 
 const W = 900;
-const H = 340;
 const PAD_L = 8;
-const PAD_R = 132;
 const PAD_T = 14;
 const PAD_B = 20;
-const LABEL_GAP = 26;
+
+/** Full study view vs. the homepage's small multiples. */
+const SIZES = {
+  full: { H: 340, padR: 132, gap: 26, labelSize: 10.5, subSize: 9 },
+  compact: { H: 190, padR: 104, gap: 22, labelSize: 9, subSize: 7.5 },
+} as const;
+
+/**
+ * A compact tile answers "where's the floor, where's the ceiling" — not the
+ * full map. Volatile names derive many zones (BTC: 13), and more labels than
+ * the short tile can stack collapse into an illegible pile, so keep only the
+ * ones nearest the price.
+ */
+const MAX_COMPACT_ZONES = 5;
 
 /** Band weight scales with touch count — a 12-touch shelf must outweigh a 2. */
 const zoneAlpha = (touches: number) => Math.min(0.44, 0.09 + touches * 0.032);
@@ -27,9 +38,20 @@ const zoneColor = (z: LevelZone) =>
 type Props = {
   symbols: string[];
   initialSymbol?: string;
+  /** Small-multiple mode: shorter, no symbol switcher, headed by a title. */
+  variant?: "full" | "compact";
+  /** Display name shown in compact mode (e.g. "S&P 500" for SPY). */
+  title?: string;
 };
 
-export default function LevelsChart({ symbols, initialSymbol }: Props) {
+export default function LevelsChart({
+  symbols,
+  initialSymbol,
+  variant = "full",
+  title,
+}: Props) {
+  const { H, padR: PAD_R, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
+  const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -76,26 +98,35 @@ export default function LevelsChart({ symbols, initialSymbol }: Props) {
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
 
+  const zones = useMemo(() => {
+    if (!analysis) return [];
+    if (!compact) return analysis.zones;
+    return [...analysis.zones]
+      .sort((a, b) => Math.abs(a.distPct) - Math.abs(b.distPct))
+      .slice(0, MAX_COMPACT_ZONES)
+      .sort((a, b) => b.mid - a.mid);
+  }, [analysis, compact]);
+
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
-    const lo = Math.min(analysis.low, ...analysis.zones.map((z) => z.lo));
-    const hi = Math.max(analysis.high, ...analysis.zones.map((z) => z.hi));
+    const lo = Math.min(analysis.low, ...zones.map((z) => z.lo));
+    const hi = Math.max(analysis.high, ...zones.map((z) => z.hi));
     const pad = (hi - lo) * 0.06 || 1;
     const y = (v: number) =>
       PAD_T + (1 - (v - (lo - pad)) / (hi + pad - (lo - pad))) * (H - PAD_T - PAD_B);
     const x = (i: number) => PAD_L + (i / (bars.length - 1)) * (W - PAD_L - PAD_R);
     return { x, y };
-  }, [bars, analysis]);
+  }, [bars, analysis, zones, H, PAD_R]);
 
   const labelYs = useMemo(() => {
     if (!analysis || !scale) return [];
     return layoutLabelYs(
-      analysis.zones.map((z) => scale.y(z.mid)),
+      zones.map((z) => scale.y(z.mid)),
       PAD_T + 10,
       H - PAD_B - 6,
       LABEL_GAP,
     );
-  }, [analysis, scale]);
+  }, [zones, scale, H, LABEL_GAP]);
 
   const onMove = useCallback(
     (ev: React.PointerEvent<SVGSVGElement>) => {
@@ -116,29 +147,45 @@ export default function LevelsChart({ symbols, initialSymbol }: Props) {
   const hoveredBar = hover && bars ? bars[hover.i] : null;
   const hoveredZone =
     hoveredBar && analysis
-      ? analysis.zones.find((z) => hoveredBar.close >= z.lo && hoveredBar.close <= z.hi) ?? null
+      ? zones.find((z) => hoveredBar.close >= z.lo && hoveredBar.close <= z.hi) ?? null
       : null;
 
   return (
     <div>
       <div className="flex flex-wrap items-baseline gap-2 pb-2">
-        <div className="flex flex-wrap border border-[var(--border-strong)]">
-          {symbols.map((s) => (
-            <button
-              key={s}
-              type="button"
-              onClick={() => setSymbol(s)}
-              aria-pressed={s === symbol}
-              className={`border-r border-[var(--border-strong)] px-2.5 py-1 font-mono text-[10px] font-bold tracking-[0.1em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-                s === symbol
-                  ? "bg-[var(--amber)] text-[var(--background)]"
-                  : "text-[var(--dim)] hover:bg-[var(--panel)]"
-              }`}
-            >
-              {s}
-            </button>
-          ))}
-        </div>
+        {compact ? (
+          <span className="font-mono text-[11px] font-bold tracking-[0.1em] text-[var(--foreground)]">
+            {symbol}
+            {title && (
+              <span className="ml-2 font-sans text-[12px] font-normal not-italic text-[var(--dim)]">
+                {title}
+              </span>
+            )}
+            {analysis && (
+              <span className="ml-2 font-mono text-[12px] font-semibold tabular-nums text-[var(--foreground)]">
+                {analysis.price.toLocaleString("en-US", { maximumFractionDigits: 2 })}
+              </span>
+            )}
+          </span>
+        ) : (
+          <div className="flex flex-wrap border border-[var(--border-strong)]">
+            {symbols.map((s) => (
+              <button
+                key={s}
+                type="button"
+                onClick={() => setSymbol(s)}
+                aria-pressed={s === symbol}
+                className={`border-r border-[var(--border-strong)] px-2.5 py-1 font-mono text-[10px] font-bold tracking-[0.1em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                  s === symbol
+                    ? "bg-[var(--amber)] text-[var(--background)]"
+                    : "text-[var(--dim)] hover:bg-[var(--panel)]"
+                }`}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        )}
         {analysis && (
           <span className="ml-auto font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">
             {analysis.inside
@@ -152,12 +199,14 @@ export default function LevelsChart({ symbols, initialSymbol }: Props) {
 
       <div className="relative border border-[var(--border)] bg-[var(--panel)]">
         {!bars && !error && (
-          <div className="flex h-[240px] items-center justify-center font-mono text-[11px] text-[var(--faint)]">
+          <div className="flex items-center justify-center font-mono text-[11px] text-[var(--faint)]"
+            style={{ height: compact ? 150 : 240 }}>
             Loading {symbol}…
           </div>
         )}
         {error && (
-          <div className="flex h-[240px] items-center justify-center px-4 text-center font-mono text-[11px] text-[var(--warn)]">
+          <div className="flex items-center justify-center px-4 text-center font-mono text-[11px] text-[var(--warn)]"
+            style={{ height: compact ? 150 : 240 }}>
             {error}
           </div>
         )}
@@ -169,11 +218,11 @@ export default function LevelsChart({ symbols, initialSymbol }: Props) {
               viewBox={`0 0 ${W} ${H}`}
               className="block w-full"
               role="img"
-              aria-label={`${symbol} daily candles over the last year with ${analysis.zones.length} derived support and resistance zones`}
+              aria-label={`${symbol} daily candles over the last year with ${zones.length} derived support and resistance zones`}
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
             >
-              {analysis.zones.map((z, i) => {
+              {zones.map((z, i) => {
                 const yt = scale.y(z.hi);
                 const yb = scale.y(z.lo);
                 return (
@@ -201,17 +250,17 @@ export default function LevelsChart({ symbols, initialSymbol }: Props) {
                       y={labelYs[i] + 3}
                       fill="var(--foreground)"
                       fontFamily="var(--mono)"
-                      fontSize={10.5}
+                      fontSize={labelSize}
                       fontWeight={600}
                     >
                       {z.lo}–{z.hi}
                     </text>
                     <text
                       x={W - PAD_R + 9}
-                      y={labelYs[i] + 14}
+                      y={labelYs[i] + (compact ? 12 : 14)}
                       fill={zoneColor(z)}
                       fontFamily="var(--mono)"
-                      fontSize={9}
+                      fontSize={subSize}
                     >
                       {z.touches}× · {z.distPct > 0 ? "+" : ""}
                       {z.distPct}%
@@ -308,12 +357,14 @@ export default function LevelsChart({ symbols, initialSymbol }: Props) {
         )}
 
         {bars && !analysis && (
-          <div className="flex h-[240px] items-center justify-center px-4 text-center font-mono text-[11px] text-[var(--faint)]">
+          <div className="flex items-center justify-center px-4 text-center font-mono text-[11px] text-[var(--faint)]"
+            style={{ height: compact ? 150 : 240 }}>
             Not enough history to derive levels for {symbol}.
           </div>
         )}
       </div>
 
+      {!compact && (
       <div className="flex flex-wrap gap-4 px-1 pt-2 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
         <span>
           <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--ceiling)] opacity-50" />
@@ -326,6 +377,7 @@ export default function LevelsChart({ symbols, initialSymbol }: Props) {
         <span>Band opacity = times tested</span>
         <span className="text-[var(--faint)]">Levels derived from swing pivots · 1Y daily</span>
       </div>
+      )}
     </div>
   );
 }

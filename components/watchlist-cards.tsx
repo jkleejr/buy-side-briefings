@@ -13,7 +13,7 @@ import {
 import { formatPct, verdictColor } from "@/lib/utils";
 import Panel from "./panel";
 import RangeSelector from "./range-selector";
-import Sparkline from "./sparkline";
+import Candles from "./candles";
 
 export type WatchQuote = {
   price: number | null;
@@ -163,9 +163,11 @@ export default function WatchlistCards({
                   )}
                 </div>
 
-                {/* Sparkline — hover for day/date/time/price popup */}
-                <div className="relative h-12 w-full">
-                  <Sparkline
+                {/* Candles — hover for day/date/time/OHLC popup. Taller than the
+                    old sparkline: intraday ranges pack ~160 bars in here and
+                    bodies vanish without the vertical room. */}
+                <div className="relative h-20 w-full">
+                  <Candles
                     points={series}
                     positive={up}
                     intraday={INTRADAY_RANGES.has(range)}

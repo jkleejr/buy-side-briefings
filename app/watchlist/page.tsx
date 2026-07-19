@@ -109,7 +109,7 @@ export default async function WatchlistPage() {
           Watchlist
         </h1>
         <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Search any ticker to add it · live quotes · sparklines · briefing mentions
+          Search any ticker to add it · live quotes · candles · briefing mentions
         </p>
       </header>
 
@@ -135,8 +135,8 @@ export default async function WatchlistPage() {
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           Edit{" "}
           <code className="text-[var(--amber)]">data/watchlist.json</code> in the repo to
-          add or remove names. Pick a timeframe to refresh every card&apos;s sparkline.
-          Hover any chart for the day · date · time · price popup. The latest briefing
+          add or remove names. Pick a timeframe to refresh every card&apos;s candles.
+          Hover any chart for the day · date · time · OHLC popup. The latest briefing
           that mentioned the ticker (in either Watchlist Mentions or Don&apos;t Buy) is
           linked at the bottom of each card.
         </p>
