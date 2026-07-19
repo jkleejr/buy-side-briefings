@@ -1,8 +1,14 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { ChartPoint } from "@/lib/chart-ranges";
-import { deriveLevels, layoutLabelYs, type LevelZone } from "@/lib/levels";
+import { INTRADAY_RANGES, type ChartPoint, type ChartRange } from "@/lib/chart-ranges";
+import {
+  deriveLevels,
+  layoutLabelYs,
+  pickRelevantZones,
+  type LevelZone,
+} from "@/lib/levels";
+import RangeSelector from "./range-selector";
 
 // Candles with derived support/resistance behind them (Design Note 12B-04).
 // The wicks are the argument: you see price poke into a zone and get pushed
@@ -18,12 +24,29 @@ const PAD_B = 20;
 
 /** Full study view vs. the homepage's small multiples. */
 const SIZES = {
-  full: { H: 340, padR: 132, gap: 26, labelSize: 10.5, subSize: 9 },
+  full: { H: 460, padR: 132, gap: 26, labelSize: 10.5, subSize: 9 },
   compact: { H: 190, padR: 104, gap: 22, labelSize: 9, subSize: 7.5 },
 } as const;
 
-/** Band weight scales with touch count — a 12-touch shelf must outweigh a 2. */
-const zoneAlpha = (touches: number) => Math.min(0.44, 0.09 + touches * 0.032);
+/** Bar interval per range — mirrors RANGE_PARAMS in lib/markets.ts. */
+const BAR_INTERVAL: Record<string, string> = {
+  "1D": "5-minute bars",
+  "5D": "30-minute bars",
+  "1M": "daily bars",
+  "3M": "daily bars",
+  "1Y": "daily bars",
+  "5Y": "weekly bars",
+  ALL: "monthly bars",
+};
+
+/** How many levels to show either side of the price. */
+const ZONES_PER_SIDE = 2;
+
+// A filled band heavy enough to encode strength swamps the candles behind it,
+// so weight moved to the rule: the fill is only a faint hint of the zone's
+// width, and thickness carries how many times the level was tested.
+const zoneAlpha = (touches: number) => Math.min(0.13, 0.05 + touches * 0.008);
+const zoneWeight = (touches: number) => Math.min(2.6, 1 + touches * 0.16);
 const zoneColor = (z: LevelZone) =>
   z.kind === "resistance" ? "var(--ceiling)" : "var(--floor)";
 
@@ -52,6 +75,7 @@ export default function LevelsChart({
   const { H, padR: PAD_R, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
   const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
+  const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -59,28 +83,33 @@ export default function LevelsChart({
   // reads as "loading" without synchronously clearing state inside the effect
   // (which triggers a cascading re-render — see react-hooks/set-state-in-effect).
   const [loaded, setLoaded] = useState<{
-    symbol: string;
+    key: string;
     bars: ChartPoint[] | null;
     error: string | null;
   } | null>(null);
 
+  // Levels are derived from whatever window is on screen, so switching the
+  // range re-reads support/resistance for that horizon rather than pinning
+  // year-scale levels onto an intraday chart.
+  const key = `${symbol}|${range}`;
+
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/chart?symbol=${encodeURIComponent(symbol)}&range=1Y`)
+    fetch(`/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((j) => {
         if (cancelled) return;
         const data: ChartPoint[] = j?.data ?? [];
         setLoaded({
-          symbol,
+          key,
           bars: data.length ? data : null,
-          error: data.length ? null : "No price history available for this symbol.",
+          error: data.length ? null : "No price history for this symbol and range.",
         });
       })
       .catch(() => {
         if (!cancelled)
           setLoaded({
-            symbol,
+            key,
             bars: null,
             error: "Couldn't load price history. Try again shortly.",
           });
@@ -88,35 +117,43 @@ export default function LevelsChart({
     return () => {
       cancelled = true;
     };
-  }, [symbol]);
+  }, [symbol, range, key]);
 
-  // Stale payloads from a previous symbol never render.
-  const current = loaded?.symbol === symbol ? loaded : null;
+  // Stale payloads from a previous symbol/range never render.
+  const current = loaded?.key === key ? loaded : null;
   const bars = current?.bars ?? null;
   const error = current?.error ?? null;
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
 
-  // How many labels the margin can stack before layoutLabelYs runs out of room
-  // and clamps them on top of each other. Derived from the actual geometry so
-  // it stays correct if the chart is resized or the type changes.
-  const maxZones = Math.max(3, Math.floor((H - PAD_T - PAD_B - 6) / LABEL_GAP));
-
-  const zones = useMemo(() => {
-    if (!analysis) return [];
-    if (analysis.zones.length <= maxZones) return analysis.zones;
-    // Too many to label legibly — keep the ones nearest the price, which are
-    // the ones that can actually be hit. BTC derives 13 over a year.
-    return [...analysis.zones]
-      .sort((a, b) => Math.abs(a.distPct) - Math.abs(b.distPct))
-      .slice(0, maxZones)
-      .sort((a, b) => b.mid - a.mid);
-  }, [analysis, maxZones]);
+  // Only the levels in play: a couple either side of the price. A ceiling 60%
+  // overhead is real history but says nothing about the next move, and every
+  // extra band is one more thing obscuring the candles.
+  const perSide = compact ? 1 : ZONES_PER_SIDE;
+  const zones = useMemo(
+    () => (analysis ? pickRelevantZones(analysis.zones, analysis.price, perSide) : []),
+    [analysis, perSide],
+  );
 
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
-    const lo = Math.min(analysis.low, ...zones.map((z) => z.lo));
-    const hi = Math.max(analysis.high, ...zones.map((z) => z.hi));
+
+    // Intraday feeds carry the occasional bad print, and one spike drags the
+    // axis so far that every real candle collapses into a band at the bottom
+    // (SPY's 1D high came through 5% above the next-highest bar). Drop the
+    // most extreme bar or two before setting the domain, then widen it back to
+    // cover the levels and the live price so nothing meaningful is cropped.
+    // A trimmed wick is clipped by the plot rather than escaping it.
+    const lows = bars.map((b) => b.low ?? b.close).sort((a, b) => a - b);
+    const highs = bars.map((b) => b.high ?? b.close).sort((a, b) => a - b);
+    const trim = bars.length >= 20 ? Math.max(1, Math.round(bars.length * 0.01)) : 0;
+
+    const lo = Math.min(lows[trim], analysis.price, ...zones.map((z) => z.lo));
+    const hi = Math.max(
+      highs[highs.length - 1 - trim],
+      analysis.price,
+      ...zones.map((z) => z.hi),
+    );
     const pad = (hi - lo) * 0.06 || 1;
     const y = (v: number) =>
       PAD_T + (1 - (v - (lo - pad)) / (hi + pad - (lo - pad))) * (H - PAD_T - PAD_B);
@@ -149,6 +186,9 @@ export default function LevelsChart({
     },
     [bars, scale],
   );
+
+  // Unique per instance — two charts on one page must not share a clip path.
+  const clipId = `lvl-clip-${symbol.replace(/[^A-Za-z0-9]/g, "")}-${variant}`;
 
   const hoveredBar = hover && bars ? bars[hover.i] : null;
   const hoveredZone =
@@ -210,6 +250,16 @@ export default function LevelsChart({
         )}
       </div>
 
+      {!compact && (
+        <div className="flex flex-wrap items-center gap-2 pb-2">
+          <RangeSelector value={range} onChange={setRange} loading={!bars && !error} />
+          <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
+            {INTRADAY_RANGES.has(range) ? "intraday bars" : BAR_INTERVAL[range]} · levels
+            re-derived for this window
+          </span>
+        </div>
+      )}
+
       <div className="relative border border-[var(--border)] bg-[var(--panel)]">
         {!bars && !error && (
           <div className="flex items-center justify-center font-mono text-[11px] text-[var(--faint)]"
@@ -230,25 +280,49 @@ export default function LevelsChart({
               ref={svgRef}
               viewBox={`0 0 ${W} ${H}`}
               className="block w-full"
+              style={{ minHeight: compact ? undefined : 420 }}
               role="img"
-              aria-label={`${symbol} daily candles over the last year with ${zones.length} derived support and resistance zones`}
+              aria-label={`${symbol} ${range} candlestick chart with ${zones.length} derived support and resistance levels`}
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
             >
+              <defs>
+                <clipPath id={clipId}>
+                  <rect
+                    x={PAD_L}
+                    y={PAD_T}
+                    width={W - PAD_L - PAD_R}
+                    height={H - PAD_T - PAD_B}
+                  />
+                </clipPath>
+              </defs>
               {zones.map((z, i) => {
                 const yt = scale.y(z.hi);
                 const yb = scale.y(z.lo);
+                const ym = scale.y(z.mid);
                 return (
                   <g key={`${z.mid}-${i}`}>
+                    {/* Faint hint of how wide the zone is... */}
                     <rect
                       x={PAD_L}
                       y={yt}
                       width={W - PAD_L - PAD_R}
-                      height={Math.max(2.5, yb - yt)}
+                      height={Math.max(2, yb - yt)}
                       fill={zoneColor(z)}
                       opacity={zoneAlpha(z.touches)}
                     />
-                    {/* Leader from the band to its nudged label. */}
+                    {/* ...and a rule you can actually read the level off,
+                        thickening with the number of tests. */}
+                    <line
+                      x1={PAD_L}
+                      x2={W - PAD_R}
+                      y1={ym}
+                      y2={ym}
+                      stroke={zoneColor(z)}
+                      strokeWidth={zoneWeight(z.touches)}
+                      opacity={0.9}
+                    />
+                    {/* Leader from the rule to its nudged label. */}
                     <line
                       x1={W - PAD_R}
                       x2={W - PAD_R + 5}
@@ -282,6 +356,7 @@ export default function LevelsChart({
                 );
               })}
 
+              <g clipPath={`url(#${clipId})`}>
               {bars.map((b, i) => {
                 const o = b.open ?? b.close;
                 const hi = b.high ?? b.close;
@@ -312,6 +387,7 @@ export default function LevelsChart({
                   </g>
                 );
               })}
+              </g>
 
               {hover && (
                 <>
@@ -388,7 +464,9 @@ export default function LevelsChart({
           Support
         </span>
         <span>Band opacity = times tested</span>
-        <span className="text-[var(--faint)]">Levels derived from swing pivots · 1Y daily</span>
+        <span className="text-[var(--faint)]">
+          Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
+        </span>
       </div>
       )}
     </div>
