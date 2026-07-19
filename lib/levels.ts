@@ -36,6 +36,56 @@ function clusterTolerance(bars: ChartPoint[], price: number): number {
 /** A level needs corroboration — a single touch is noise. */
 const MIN_TOUCHES = 2;
 
+/** A wick longer than this many median bar-ranges is treated as a bad print. */
+const MAX_WICK_MULTIPLE = 6;
+
+function median(xs: number[]): number {
+  const s = [...xs].sort((a, b) => a - b);
+  const m = Math.floor(s.length / 2);
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+}
+
+/**
+ * Repair implausible highs/lows before anything reads them.
+ *
+ * Intraday feeds carry bad prints at the session boundary — SPY's 30-minute
+ * bars at 20:30/21:00 UTC (the closing auction) came through with wicks 20–40×
+ * the median bar range, e.g. a high of 787.52 on a bar whose body sat at 743.
+ * Those do two kinds of damage: they draw as tall spikes out of the candles,
+ * and because pivots read high/low they invent support and resistance that
+ * never traded.
+ *
+ * A wick beyond MAX_WICK_MULTIPLE median ranges from the bar's own body is
+ * clamped back to that bound. Genuinely large bars survive — the yardstick is
+ * the series' own typical range, not an absolute figure.
+ */
+export function sanitizeBars(bars: ChartPoint[]): ChartPoint[] {
+  const ranges = bars
+    .filter((b) => b.high != null && b.low != null && b.close > 0)
+    .map((b) => (b.high! - b.low!) / b.close);
+  if (ranges.length < 8) return bars;
+
+  const med = median(ranges);
+  if (!(med > 0)) return bars;
+
+  let repaired = 0;
+  const out = bars.map((b) => {
+    if (b.high == null || b.low == null) return b;
+    const open = b.open ?? b.close;
+    const bodyTop = Math.max(open, b.close);
+    const bodyBot = Math.min(open, b.close);
+    const cap = b.close * med * MAX_WICK_MULTIPLE;
+
+    const high = Math.min(b.high, bodyTop + cap);
+    const low = Math.max(b.low, bodyBot - cap);
+    if (high === b.high && low === b.low) return b;
+    repaired += 1;
+    return { ...b, high, low };
+  });
+
+  return repaired ? out : bars;
+}
+
 export type LevelZone = {
   /** Bottom / top of the band the touches span. */
   lo: number;

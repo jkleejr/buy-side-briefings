@@ -6,6 +6,7 @@ import {
   deriveLevels,
   layoutLabelYs,
   pickRelevantZones,
+  sanitizeBars,
   type LevelZone,
 } from "@/lib/levels";
 import RangeSelector from "./range-selector";
@@ -121,8 +122,14 @@ export default function LevelsChart({
 
   // Stale payloads from a previous symbol/range never render.
   const current = loaded?.key === key ? loaded : null;
-  const bars = current?.bars ?? null;
   const error = current?.error ?? null;
+
+  // Repair bad prints once, up front, so the candles and the derived levels
+  // both read the same corrected series.
+  const bars = useMemo(
+    () => (current?.bars ? sanitizeBars(current.bars) : null),
+    [current],
+  );
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
 
@@ -138,22 +145,11 @@ export default function LevelsChart({
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
 
-    // Intraday feeds carry the occasional bad print, and one spike drags the
-    // axis so far that every real candle collapses into a band at the bottom
-    // (SPY's 1D high came through 5% above the next-highest bar). Drop the
-    // most extreme bar or two before setting the domain, then widen it back to
-    // cover the levels and the live price so nothing meaningful is cropped.
-    // A trimmed wick is clipped by the plot rather than escaping it.
-    const lows = bars.map((b) => b.low ?? b.close).sort((a, b) => a - b);
-    const highs = bars.map((b) => b.high ?? b.close).sort((a, b) => a - b);
-    const trim = bars.length >= 20 ? Math.max(1, Math.round(bars.length * 0.01)) : 0;
-
-    const lo = Math.min(lows[trim], analysis.price, ...zones.map((z) => z.lo));
-    const hi = Math.max(
-      highs[highs.length - 1 - trim],
-      analysis.price,
-      ...zones.map((z) => z.hi),
-    );
+    // sanitizeBars already clamped the bad prints, so the true extremes of the
+    // corrected series are trustworthy — no percentile trimming needed, and the
+    // axis now matches exactly what gets drawn.
+    const lo = Math.min(analysis.low, analysis.price, ...zones.map((z) => z.lo));
+    const hi = Math.max(analysis.high, analysis.price, ...zones.map((z) => z.hi));
     const pad = (hi - lo) * 0.06 || 1;
     const y = (v: number) =>
       PAD_T + (1 - (v - (lo - pad)) / (hi + pad - (lo - pad))) * (H - PAD_T - PAD_B);
