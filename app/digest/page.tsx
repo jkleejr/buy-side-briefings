@@ -43,6 +43,11 @@ export default async function DigestPage() {
 
   const weekly = all.filter((v) => v.date >= startStr);
 
+  // The window label is wall-clock, so it reads as fully current even when the
+  // feed stopped days ago. Surface how far the verdicts actually reach.
+  const endStr = endDate.toISOString().slice(0, 10);
+  const coveredThrough = weekly[0]?.date ?? null;
+
   // Fetch ~2 months of SPX so we have room around the verdicts for the chart.
   const spxSeries = await getSpxDailyCloses(2);
 
@@ -97,6 +102,9 @@ export default async function DigestPage() {
         </h1>
         <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
           {fmtRange(startDate, endDate)} · trailing {WINDOW_DAYS} days
+          {coveredThrough && coveredThrough !== endStr
+            ? ` · verdicts through ${coveredThrough}`
+            : ""}
         </p>
       </header>
 

@@ -786,3 +786,32 @@ export function getCalendarEvents(): CalendarEvent[] {
   if (!parsed?.events) return [];
   return [...parsed.events].sort((a, b) => a.date.localeCompare(b.date));
 }
+
+/**
+ * Past catalysts. calendar.json is rewritten daily and pruned of anything
+ * before today, so history only survives here — backfilled from that file's
+ * git revisions and appended to as events age out. Lets the homepage timeline
+ * scroll backwards instead of starting abruptly at today.
+ */
+export function getCalendarArchive(): CalendarEvent[] {
+  const file = path.join(DATA_DIR, "calendar-archive.json");
+  const parsed = readJson<{ events: CalendarEvent[] }>(file);
+  if (!parsed?.events) return [];
+  return [...parsed.events].sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/**
+ * The full catalyst timeline — archived past plus upcoming, de-duped on the
+ * boundary (an event can sit in both files the day it ages out).
+ */
+export function getCalendarTimeline(): CalendarEvent[] {
+  const seen = new Set<string>();
+  const out: CalendarEvent[] = [];
+  for (const e of [...getCalendarArchive(), ...getCalendarEvents()]) {
+    const sig = `${e.date}|${e.kind}|${e.label.slice(0, 24)}`;
+    if (seen.has(sig)) continue;
+    seen.add(sig);
+    out.push(e);
+  }
+  return out.sort((a, b) => a.date.localeCompare(b.date));
+}

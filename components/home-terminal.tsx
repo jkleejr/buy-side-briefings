@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type {
   HomeData,
@@ -203,56 +203,183 @@ function timelineLabel(label: string): string {
   return cut.length > 44 ? `${cut.slice(0, 44).trim()}…` : cut;
 }
 
-function WeekTimeline({ calendar }: { calendar: CalRow[] }) {
+function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
   // One node per date — two catalysts can share a day (the card list below
   // keeps both); prefer the hot one so the binary never gets shadowed.
   const byDate = new Map<string, CalRow>();
-  for (const c of calendar) {
+  for (const c of timeline) {
     const key = `${c.day}-${c.dateLabel}`;
     const existing = byDate.get(key);
     if (!existing || (c.hot && !existing.hot)) byDate.set(key, c);
   }
-  const nodes = Array.from(byDate.values()).slice(0, 5);
+  const nodes = Array.from(byDate.values());
+  const firstAhead = nodes.findIndex((n) => !n.past);
+
+  const scroller = useRef<HTMLDivElement>(null);
+
+  // Where the present sits, in pixels. Columns are a fixed NODE_W, so this is
+  // index math rather than a DOM measurement — offsetLeft isn't trustworthy on
+  // first paint (webfonts can still be settling) and would park us at the far
+  // edge of the archive. One node of the past stays visible as a hint that
+  // there's more behind.
+  const presentX = Math.max(0, (firstAhead - 1) * NODE_W);
+
+  // Open on the present, not at the start of the archive. Jumps without
+  // animating so the page doesn't visibly slide on load.
+  //
+  // Re-asserted after paint and again once webfonts land: setting scrollLeft
+  // once on mount gets clobbered as the strip's final width resolves, which
+  // leaves it pinned to the far right (the Jan 2027 end) instead of on today.
+  useEffect(() => {
+    const el = scroller.current;
+    if (!el || firstAhead <= 0) return;
+
+    let raf = 0;
+    const park = () => {
+      raf = requestAnimationFrame(() => {
+        el.scrollLeft = presentX;
+      });
+    };
+
+    park();
+    const fonts = (document as Document & { fonts?: FontFaceSet }).fonts;
+    fonts?.ready.then(park);
+    window.addEventListener("load", park);
+
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("load", park);
+    };
+  }, [firstAhead, presentX]);
+
+  const page = (dir: -1 | 1) => {
+    const el = scroller.current;
+    if (!el) return;
+    el.scrollBy({
+      left: dir * Math.max(NODE_W * 2, el.clientWidth * 0.75),
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+    });
+  };
+
+  const toPresent = () => {
+    const el = scroller.current;
+    if (!el || firstAhead < 0) return;
+    el.scrollTo({
+      left: presentX,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+    });
+  };
+
   if (nodes.length < 2) return null;
+  const behind = firstAhead < 0 ? nodes.length : firstAhead;
+  const ahead = nodes.length - behind;
+
   return (
-    <div className="overflow-x-auto">
-      <div className="relative grid min-w-[560px] auto-cols-fr grid-flow-col pt-1">
-        <div className="absolute left-[8%] right-[8%] top-[46px] h-[2px] bg-[var(--border-strong)]" />
-        {nodes.map((c, i) => (
-          <div key={i} className="relative px-2 text-center">
-            <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--faint)]">
-              {c.day}
-            </div>
+    <div>
+      <div className="mb-1 flex items-baseline gap-2">
+        <span className="font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--faint)]">
+          {behind} behind · {ahead} ahead
+        </span>
+        <div className="ml-auto flex items-center gap-1">
+          <TimelineButton label="Scroll to earlier catalysts" onClick={() => page(-1)}>
+            ‹
+          </TimelineButton>
+          <button
+            type="button"
+            onClick={toPresent}
+            className="border border-[var(--border-strong)] px-2 py-[3px] font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+          >
+            Today
+          </button>
+          <TimelineButton label="Scroll to later catalysts" onClick={() => page(1)}>
+            ›
+          </TimelineButton>
+        </div>
+      </div>
+
+      <div
+        ref={scroller}
+        className="overflow-x-auto overscroll-x-contain"
+        tabIndex={0}
+        role="group"
+        aria-label="Catalyst timeline — scroll for past and upcoming events"
+      >
+        <div className="relative grid auto-cols-[170px] grid-flow-col pt-1">
+          <div className="absolute left-0 right-0 top-[46px] h-[2px] bg-[var(--border-strong)]" />
+          {nodes.map((c, i) => (
             <div
-              className={`font-mono text-[19px] font-semibold tabular-nums leading-[1.15] ${
-                c.hot ? "text-[var(--down)]" : "text-[var(--foreground)]"
-              }`}
+              key={`${c.dateLabel}-${i}`}
+              data-node
+              className={`relative px-2 text-center ${c.past ? "opacity-45" : ""}`}
             >
-              {c.dateLabel.replace(/^[A-Za-z]+ /, "")}
-            </div>
-            <div
-              className={`relative z-[1] mx-auto my-2 h-[11px] w-[11px] rounded-full border-2 border-[var(--background)] ${
-                c.hot
-                  ? "bg-[var(--down)] shadow-[0_0_0_4px_color-mix(in_srgb,var(--down)_20%,transparent)]"
-                  : "bg-[var(--border-strong)]"
-              }`}
-            />
-            <div
-              className={`mx-auto max-w-[150px] text-[12px] leading-[1.35] ${
-                c.hot ? "font-semibold text-[var(--foreground)]" : "text-[var(--dim)]"
-              }`}
-            >
-              {timelineLabel(c.label)}
-              {c.hot && (
-                <b className="mt-1 block font-mono text-[9.5px] font-bold uppercase tracking-[0.12em] text-[var(--down)]">
-                  {c.tMinus === 0 ? "today" : `T−${c.tMinus}`} · the binary
-                </b>
+              {/* Where the past meets the future — a hairline the eye can find. */}
+              {i === firstAhead && i > 0 && (
+                <span
+                  aria-hidden
+                  className="absolute -left-px top-0 bottom-0 border-l border-dashed border-[var(--amber-dim)]"
+                />
               )}
+              <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--faint)]">
+                {c.day}
+              </div>
+              <div
+                className={`font-mono text-[19px] font-semibold tabular-nums leading-[1.15] ${
+                  c.hot ? "text-[var(--down)]" : "text-[var(--foreground)]"
+                }`}
+              >
+                {c.dateLabel.replace(/^[A-Za-z]+ /, "")}
+              </div>
+              <div
+                className={`relative z-[1] mx-auto my-2 h-[11px] w-[11px] rounded-full border-2 border-[var(--background)] ${
+                  c.hot
+                    ? "bg-[var(--down)] shadow-[0_0_0_4px_color-mix(in_srgb,var(--down)_20%,transparent)]"
+                    : "bg-[var(--border-strong)]"
+                }`}
+              />
+              <div
+                className={`mx-auto max-w-[150px] text-[12px] leading-[1.35] ${
+                  c.hot ? "font-semibold text-[var(--foreground)]" : "text-[var(--dim)]"
+                }`}
+              >
+                {timelineLabel(c.label)}
+                {c.hot && (
+                  <b className="mt-1 block font-mono text-[9.5px] font-bold uppercase tracking-[0.12em] text-[var(--down)]">
+                    {c.tMinus === 0 ? "today" : `T−${c.tMinus}`} · the binary
+                  </b>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
+  );
+}
+
+const NODE_W = 170;
+
+function TimelineButton({
+  label,
+  onClick,
+  children,
+}: {
+  label: string;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={label}
+      className="border border-[var(--border-strong)] px-2 py-[2px] font-mono text-[13px] leading-none text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+    >
+      {children}
+    </button>
   );
 }
 
@@ -385,11 +512,12 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
 
           <Hero brief={current} />
 
-          {/* The week on a clock — full-width glance layer above the columns. */}
-          {data.calendar.length >= 2 && (
+          {/* The catalyst run — full-width glance layer above the columns.
+              Scrolls both ways, so it's no longer only "the week ahead". */}
+          {data.timeline.length >= 2 && (
             <div className="pt-12">
-              <SectionRule>The week ahead</SectionRule>
-              <WeekTimeline calendar={data.calendar} />
+              <SectionRule>The road ahead</SectionRule>
+              <WeekTimeline timeline={data.timeline} />
             </div>
           )}
 

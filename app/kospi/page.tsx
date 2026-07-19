@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getAllKospiVerdicts } from "@/lib/data";
 import { cn, formatLevel, formatPct, verdictColor } from "@/lib/utils";
 import KospiBriefingCard from "@/components/kospi-briefing-card";
+import { FreshnessNotice } from "@/components/stale-banner";
+import { getKospiFreshness } from "@/lib/freshness";
 
 export const metadata = {
   title: "KOSPI — Korean Market News & Updates — Buy-Side Briefings",
@@ -27,6 +29,7 @@ export default function KospiPage() {
 
   return (
     <div className="space-y-3">
+      <FreshnessNotice freshness={getKospiFreshness()} noun="KOSPI reads" />
       <header className="space-y-1 px-1 pb-2">
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           KOSPI · Korean market

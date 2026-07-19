@@ -1,4 +1,4 @@
-import { getAllMarketsVerdicts } from "@/lib/data";
+import { getAllKospiVerdicts, getAllMarketsVerdicts } from "@/lib/data";
 
 // ---------------------------------------------------------------------------
 // Data freshness. The markets-verdict briefings are generated daily and
@@ -16,10 +16,8 @@ export type Freshness = {
   is_stale: boolean;
 };
 
-export function getDataFreshness(): Freshness {
-  const verdicts = getAllMarketsVerdicts();
-  const latest = verdicts[0]?.date ?? null;
-
+/** Age a YYYY-MM-DD date into a Freshness, relative to today (UTC). */
+function freshnessOf(latest: string | null, staleAfterDays: number): Freshness {
   if (!latest) {
     return { latest_date: null, days_old: 0, is_stale: false };
   }
@@ -29,7 +27,23 @@ export function getDataFreshness(): Freshness {
   const latestMs = Date.parse(`${latest}T00:00:00Z`);
   const days_old = Math.max(0, Math.round((todayUtc.getTime() - latestMs) / 86_400_000));
 
-  // Verdicts publish twice a day, 7 days a week, so anything older than
-  // yesterday is genuinely behind — no weekend allowance needed.
-  return { latest_date: latest, days_old, is_stale: days_old >= 2 };
+  return { latest_date: latest, days_old, is_stale: days_old >= staleAfterDays };
+}
+
+/**
+ * Site-wide freshness, driven by the markets verdict — the feed behind the home
+ * page and the briefings archive. Verdicts publish twice a day, 7 days a week,
+ * so anything older than yesterday is genuinely behind — no weekend allowance.
+ */
+export function getDataFreshness(): Freshness {
+  return freshnessOf(getAllMarketsVerdicts()[0]?.date ?? null, 2);
+}
+
+/**
+ * Freshness of the KOSPI feed, which /kospi renders on its own and which the
+ * site-wide banner does not cover. It publishes far less often than the markets
+ * verdict, so it only reads as stale after a full week.
+ */
+export function getKospiFreshness(): Freshness {
+  return freshnessOf(getAllKospiVerdicts()[0]?.date ?? null, 7);
 }

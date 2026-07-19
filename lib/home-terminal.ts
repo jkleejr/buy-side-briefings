@@ -3,6 +3,8 @@ import {
   getAllMarketsVerdicts,
   getBriefing,
   getCalendarEvents,
+  getCalendarTimeline,
+  type CalendarEvent,
   type MarketsVerdict,
 } from "@/lib/data";
 import { readMinutes as readMinutesOfText } from "@/lib/utils";
@@ -88,8 +90,10 @@ export type CalRow = {
   timeET?: string;
   /** The week's binary event — the one the timeline marks hot. */
   hot?: boolean;
-  /** Whole days until the event (0 = today). */
+  /** Whole days until the event — negative once it's behind us (0 = today). */
   tMinus?: number;
+  /** True for events already past; the timeline dims them. */
+  past?: boolean;
 };
 
 export type HomeData = {
@@ -103,6 +107,8 @@ export type HomeData = {
   sectors: SectorRow[];
   wire: WireRow[];
   calendar: CalRow[];
+  /** Full catalyst run — archived past through everything known ahead. */
+  timeline: CalRow[];
 };
 
 // --- left-rail market pulse (2-col grid) ------------------------------------
@@ -441,8 +447,17 @@ function buildBrief(
 
 export async function getHomeData(): Promise<HomeData> {
   const verdicts = getAllMarketsVerdicts();
-  const morningV = verdicts.find((v) => v.window === "morning") ?? null;
-  const eveningV = verdicts.find((v) => v.window === "night") ?? null;
+
+  // Both editions must come from the same day. Picking each window
+  // independently pairs whatever the newest morning is with whatever the
+  // newest night is — which drift apart the moment one run is missed, and the
+  // AM/PM toggle then presents two different days as one day's two editions.
+  // An edition missing for the latest day stays null (the toggle hides it) and
+  // the older one still surfaces under "Previous editions".
+  const latestDate = verdicts[0]?.date ?? null;
+  const latest = latestDate ? verdicts.filter((v) => v.date === latestDate) : [];
+  const morningV = latest.find((v) => v.window === "morning") ?? null;
+  const eveningV = latest.find((v) => v.window === "night") ?? null;
 
   const watchTickers = new Set<string>();
   for (const v of [morningV, eveningV]) {
@@ -508,12 +523,9 @@ export async function getHomeData(): Promise<HomeData> {
   // timeline so the countdown is legible at a glance.
   const BINARY_KINDS = new Set(["MACRO", "FOMC", "CPI", "NFP", "PCE"]);
   const hotDate = upcoming.find((e) => BINARY_KINDS.has(e.kind.toUpperCase()))?.date;
-  const calendar: CalRow[] = upcoming.slice(0, 6).map((e) => {
+
+  const toRow = (e: CalendarEvent): CalRow => {
     const d = new Date(`${e.date}T12:00:00Z`);
-    const tMinus = Math.max(
-      0,
-      Math.round((Date.parse(e.date) - Date.parse(today)) / 86_400_000),
-    );
     return {
       day: d
         .toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" })
@@ -528,9 +540,18 @@ export async function getHomeData(): Promise<HomeData> {
       note: e.note,
       timeET: e.time_et,
       hot: BINARY_KINDS.has(e.kind.toUpperCase()) && e.date === hotDate,
-      tMinus,
+      tMinus: Math.round((Date.parse(e.date) - Date.parse(today)) / 86_400_000),
+      past: e.date < today,
     };
-  });
+  };
+
+  // The detail list stays forward-only and capped — it's the reading layer.
+  const calendar: CalRow[] = upcoming.slice(0, 6).map(toRow);
+
+  // The timeline is the scrubbing layer: every catalyst we know of, behind and
+  // ahead, so it can be scrolled in both directions rather than starting flat
+  // at today. Uncapped — the archive is ~30 events a month, not unbounded.
+  const timeline: CalRow[] = getCalendarTimeline().map(toRow);
 
   const todayLabel = new Date()
     .toLocaleDateString("en-US", {
@@ -560,5 +581,6 @@ export async function getHomeData(): Promise<HomeData> {
     sectors,
     wire: buildWire(verdicts, featuredKeys),
     calendar,
+    timeline,
   };
 }
