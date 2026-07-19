@@ -8,6 +8,7 @@ import PaletteButton from "./palette-button";
 const NAV = [
   { href: "/", code: "TODAY", label: "Today" },
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
+  { href: "/watchlist", code: "WATCH", label: "Watchlist" },
   { href: "/earnings", code: "EARN", label: "Earnings" },
   { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness" },
   { href: "/ai-bubble", code: "BUBBLE", label: "AI Bubble" },
