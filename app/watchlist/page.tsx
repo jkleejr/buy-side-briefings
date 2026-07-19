@@ -5,6 +5,7 @@ import { formatPct } from "@/lib/utils";
 import Panel from "@/components/panel";
 import WatchlistCards, { type WatchQuote } from "@/components/watchlist-cards";
 import TickerSearch from "@/components/ticker-search";
+import LevelsChart from "@/components/levels-chart";
 
 // Curated additions to consider beyond the user-edited watchlist. Grouped by
 // theme. Edit freely. Anything already in data/watchlist.json is auto-filtered
@@ -114,6 +115,21 @@ export default async function WatchlistPage() {
 
       {/* Search any ticker/company and add it to your (browser-stored) watchlist. */}
       <TickerSearch />
+
+      {entries.length > 0 && (
+        <Panel code="LEVELS" title="Support & resistance">
+          <div className="p-2">
+            <p className="pb-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
+              A year of daily candles with the levels the price keeps turning at. Zones
+              are derived from the bars themselves — a swing pivot is a bar that is the
+              high or low of its 11-bar window, pivots within 1.8% are the same level,
+              and the number of touches is its strength. Nothing is hand-drawn. Hover
+              for the date and price.
+            </p>
+            <LevelsChart symbols={symbols} initialSymbol={symbols[0]} />
+          </div>
+        </Panel>
+      )}
 
       <Panel code="HOW" title="How this list is built">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
