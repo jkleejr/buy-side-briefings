@@ -2,10 +2,17 @@
   "events": [
     {
       "date": "2026-07-20",
-      "label": "PayPal (PYPL) board formal response to Stripe/Advent $53B bid — board views offer as inadequate; seeking $70+ per Reuters",
+      "label": "PayPal (PYPL) board formal response to Stripe/Advent $53B bid — board views offer as inadequate; outcome pending as of Monday open",
       "kind": "OTHER",
       "tickers": ["PYPL"],
-      "note": "Stripe and Advent International jointly bid $60.50/share (~$53B) on July 16; PYPL surged +18%. Board signaled the offer is inadequate per Reuters/SeekingAlpha (July 17 AH). Formal board response at July 20 meeting. Board is weighing price (seeks $70+), financing certainty, and regulatory timeline (DOJ antitrust on Stripe-PayPal). If board issues formal counter-proposal at $68-72: M&A arb spread re-tightens. If board formally rejects outright: PYPL likely retraces toward $55-58 range. Monday gap lower is the base case given Friday AH signal. PayPal's July 28 earnings report becomes the next fundamental read on the core checkout business."
+      "note": "Stripe and Advent International jointly bid $60.50/share (~$53B) on July 16; PYPL surged +18%. Board formally views the offer as inadequate (Reuters/SeekingAlpha July 17-18). Board meeting July 20 to issue formal response. Binary: board engages with counter-terms → spread tightens to $58-60 (risk-arb entry $56-57, target $59.50, stop $53); board formally rejects → stock likely reverts to $45-48. Do not add before announcement. PayPal's July 28 earnings report is the next fundamental read on the core checkout business. JPMorgan/Morgan Stanley provided ~$50B financing package to Stripe/Advent, giving bidders credibility."
+    },
+    {
+      "date": "2026-07-20",
+      "label": "Qatar 10-day ceasefire proposal — Hormuz reopening under Iranian control; first credible de-escalation signal since July 8",
+      "kind": "GEO",
+      "tickers": ["XLE", "TLT", "QQQ", "BTC"],
+      "note": "Qatar proposed a 10-day ceasefire framework to Iran and Washington; central term is Hormuz reopening under Iranian management control. Trump stated Iran is 'very, very badly damaged' — strongest US confidence signal since the conflict began. No agreement reached as of Monday morning July 20; Iran has not formally responded. If accepted: Brent likely gaps below $85-88, September hike prob falls below 50%, equity relief 2-4%. If rejected or ignored: Brent extends toward $95-100; September hike reverses toward 75%. Every prior ceasefire attempt in this conflict (including July 8) failed within hours of announcement — track record warrants caution. Outcome could be known Monday or persist as open question into July 22."
     },
     {
       "date": "2026-07-22",
@@ -23,10 +30,10 @@
     },
     {
       "date": "2026-07-28",
-      "label": "FOMC meeting (Jul 28-29) — July hike ~33.7%; September hike probability ~69% post-WTI $82 breach; September language is the critical signal",
+      "label": "FOMC meeting (Jul 28-29) — July hike probability ~11%; September hike probability ~65%; Brent $90 keeps August CPI risk elevated",
       "kind": "FOMC",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
-      "note": "July hike base case is elevated — CME FedWatch shows ~33.7% probability of a July hike (reversed from 15-20% earlier this week after June CPI 0.0% MoM, as WTI formal $82.49 breach overwhelmed the June CPI relief). September hike probability is now ~69% combined (51% for 25bps + 18% for 50bps), up from 38% at the July 17 morning open and 58% at July 16 close. The September language in the FOMC statement and dot-plot update is the market-moving variable. If Warsh's dot-plot signals September 25bps clearly: 30Y re-accelerates, IWM headwinds worsen, BUY conditions pushed back to post-August CPI. If dots retain September ambiguity: rate relief window opens. Key watch: August 13 July CPI is the primary input; WTI $82.49 settlement and Brent $88.10 will fully load into July energy components — the August CPI oil-shock is structurally embedded."
+      "note": "As of July 20 morning: July hold probability 88.8% (July hike ~11.2%) per CME FedWatch — a significant drop from 33.7% earlier in the week as markets absorbed June CPI 0.0% MoM. September hike probability compressed from 69% (Friday July 17) to approximately 65% on Qatar ceasefire signals, but remains above the 60% formal regime-risk threshold. Brent at $90.32 on July 20 embeds a larger August CPI oil-shock than the $82.49 July 17 settlement. The September language in the FOMC statement is the market-moving variable: hawkish dots signal = 30Y re-accelerates, IWM headwinds worsen; dovish September ambiguity = rate relief window opens. Key watch: August CPI (est. Aug 13) is the primary FOMC input; WTI above $80 for 10+ consecutive sessions now fully loads into August energy components."
     },
     {
       "date": "2026-07-29",
@@ -36,11 +43,18 @@
       "note": "META Q2 earnings July 29 is the first event where management must quantify the AI cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). MSFT and AMZN also report in late July — peak Q2 earnings risk window. IBM's enterprise software warning (July 14) adds a risk factor for MSFT Azure enterprise consulting revenue. META's ad-driven model is most insulated from Moonshot AI Kimi K3 demand disruption — Chinese open-weight inference disruption primarily threatens GPU cluster spend, not ad-optimization models. GOOGL reports July 22 (earlier, in the triple-event session). PYPL board rejection of Stripe/Advent bid could weigh on fintech sentiment by July 29."
     },
     {
+      "date": "2026-07-27",
+      "label": "Kimi K3 full open-weight model weights public release — second AI narrative wave risk; largest open-source AI model ever by parameter count",
+      "kind": "OTHER",
+      "tickers": ["NVDA", "AMD", "SMH", "GOOGL", "MSFT"],
+      "note": "Moonshot AI scheduled to release the full Kimi K3 model weights (2.8 trillion parameters) publicly on July 27 — five days after AMD AI Day (July 22-23) and one week after GOOGL/TSLA earnings. This creates a second AI efficiency narrative wave: if GOOGL/TSLA/AMD AI Day fail to fully close the AI-capex-ROI debate on July 22-23, the open-weight release enables independent benchmark testing and deployment at scale that will re-activate the DeepSeek-style demand-disruption thesis. On initial launch (July 17), Kimi K3 matched or outperformed US frontier models at $15/M output tokens vs. $50/M — a 70% pricing discount that challenges hyperscaler GPU cluster inference economics. July 27 release timing means semiconductor sector has a narrow window (July 22-26) to recover from the bear market before the second wave. If July 22 earnings confirm AI demand thesis, July 27 open-weight release will be less impactful; if July 22 disappoints, July 27 could extend the bear market further."
+    },
+    {
       "date": "2026-08-13",
-      "label": "July CPI release (est. Aug 13) — WTI $82.49 formal breach + Brent $88.10 Hormuz premium fully embedded; most consequential macro print of 2026",
+      "label": "July CPI release (est. Aug 13) — Brent $90.32 breach + WTI $84.49 + Hormuz premium; most consequential macro print of 2026",
       "kind": "MACRO",
       "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA", "IWM"],
-      "note": "July CPI is the first release to fully capture the WTI formal $82.49 settlement (July 17) and the ongoing Iran Hormuz blockade at 4.1M bpd (62% below pre-crisis norm of 10.8M bpd). Brent at $88.10 on July 17 settlement represents the peak single-day print of the conflict. WTI weekly gain >10% for the week ending July 17 is historically significant. The FOMC is pricing ~69% probability of a September hike as of July 17 close — August CPI is the primary input that will confirm or reverse that pricing. Bull scenario (August CPI <3.2% YoY with oil-shock not embedding in core): September hike probability collapses, BUY conditions open. Bear scenario (August CPI >3.5% YoY with WTI oil-shock passing through to services/transportation): September 50bps probability jumps, BEARISH regime extends. June CPI 0.0% MoM demonstrated that prior oil shocks did not embed; the July shock magnitude ($82.49, +10% weekly) is larger."
+      "note": "July CPI is the first release to fully capture the WTI formal $82.49 settlement (July 17) and Brent's $90.32 breach (July 20) amid the ongoing Iran Hormuz blockade at ~7 vessels/day (vs. 13 pre-crisis). Brent at $90.32 on July 20 is the new conflict peak. The FOMC is pricing ~65% probability of a September hike as of July 20 — August CPI is the primary input that will confirm or reverse that pricing. Bull scenario (August CPI <3.2% YoY with oil-shock not embedding in core): September hike probability collapses, BUY conditions open. Bear scenario (August CPI >3.5% YoY with WTI/Brent oil-shock passing through to services/transportation): September 50bps probability jumps, BEARISH regime extends through Q4. June CPI 0.0% MoM demonstrated that prior oil shocks did not embed; the July shock magnitude (Brent $90, WTI $84+, 10+ consecutive sessions above formal triggers) is structurally larger and more sustained than any prior 2026 oil event."
     },
     {
       "date": "2026-08-26",
