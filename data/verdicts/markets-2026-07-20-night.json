@@ -1,0 +1,87 @@
+{
+  "routine": "markets",
+  "date": "2026-07-20",
+  "window": "night",
+  "generated_at": "2026-07-21T00:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE — VIX Breaks Below 17; AMD-Microsoft Helios Counters Kimi K3; Wednesday Binary",
+    "conviction": "medium",
+    "rationale_short": "S&P 500 closed 7,443 — 17 points below the 7,460 formal trigger — extending the breach into a second session. VIX fell to 16.50, first close below both the 18 and 17 formal thresholds since the Hormuz crisis began, and September hike probability compressed to 48.7%, below 50% for the first time. AMD surged 3.83% on the Microsoft Azure Helios deployment announcement — the first hard hyperscaler demand evidence countering the Kimi K3 AI-capex-disruption thesis since July 17. WTI settled $82.21, below the $84+ morning spike but still $2.21 above the $80 formal trigger. STEP ASIDE maintained at medium conviction: the regime is materially improving across two key triggers, but SPX has not closed above 7,460 and oil remains formally breached.",
+    "supporting_data": [
+      { "label": "VIX 16.50 (–7.1%) — first close below 17 since Hormuz crisis escalated; both the 18 and 17 formal thresholds neutralized in a single session", "url": "https://finance.yahoo.com/quote/%5EVIX/history/" },
+      { "label": "September hike probability 48.7% — first close below 50%; compressed from 65% at morning open and 69% on July 17; 60% formal trigger neutralized; July hold 86.7%", "url": "https://en.bloomingbit.io/feed/news/115025" },
+      { "label": "AMD +3.83% to ~$511 on Microsoft Azure Helios Rackscale deployment — AMD MI-series + EPYC to power large-scale AI inference in Azure; first hyperscaler win directly rebutting Kimi K3 AI-capex-disruption thesis", "url": "https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/" },
+      { "label": "S&P 500 closed 7,443 (–0.19%); Dow –0.59% to 51,839; Nasdaq –0.05% to 25,508 — SPX 17 pts below 7,460 formal trigger; second consecutive breach session", "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-july-20-dow-sp-500-nasdaq-111429441.html" },
+      { "label": "WTI settled $82.21 (–0.34%); pulled back from $84.49 Monday morning peak; Brent $87.72 (–0.44%) — below $90 intraday high; both still above formal triggers ($80/$85)", "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-july-20-2026/" },
+      { "label": "GOOGL +1.52% to ~$658 despite $4.67B EU antitrust fine; AVGO +3.1%; Broadcom +2%; Micron +1.9%; Intel +2.1% — broad semiconductor recovery despite SPX ending lower", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262039497-alphabet-googl-stock-week-review-july-20-2026-eu-android-earnings-tradingkey" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7443.28,  "change_pct": -0.19, "as_of": "2026-07-20T20:00:00Z" },
+    "nasdaq": { "level": 25508.07, "change_pct": -0.05, "as_of": "2026-07-20T20:00:00Z" },
+    "vix":    { "level": 16.50,    "change_pct": -7.11, "as_of": "2026-07-20T20:00:00Z" },
+    "ust10y": { "level": 4.57,     "change_bps": 0,     "as_of": "2026-07-20T20:00:00Z" },
+    "dxy":    { "level": 100.725,  "change_pct": -0.04, "as_of": "2026-07-20T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                 "value": 16.50,  "trigger_above": 18,    "unit": ""      },
+    { "name": "30Y Yield",           "value": 5.03,   "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "WTI",                 "value": 82.21,  "trigger_above": 80.00, "unit": "$/bbl" },
+    { "name": "SPX vs 7,460",        "value": 7443,   "trigger_below": 7460,  "unit": ""      },
+    { "name": "September Hike Prob", "value": 48.7,   "trigger_above": 60,    "unit": "%"     },
+    { "name": "BTC Gate 2",          "value": 64800,  "trigger_below": 62000, "unit": ""      }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AMD",   "note": "Closed ~$511 (+3.83%); Microsoft Azure Helios deployment announced — AMD MI-series + EPYC to power large-scale AI inference; AMD AI Day Day 1 tomorrow in San Francisco; enters the event with a genuine hyperscaler win behind it", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "Closed ~$658 (+1.52%); EU $4.67B antitrust fine absorbed without stock damage; July 22 Q2 AH earnings remain the week's defining catalyst; pre-close Monday long from morning brief is working", "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "Reclaimed $400 on co-announcement of AMD Helios Azure deployment; Azure AI infrastructure narrative reinforced by concrete deployment timeline; Q2 late July", "sentiment": "positive" },
+    { "ticker": "AVGO",  "note": "Closed ~$386 (+3.1%); chip recovery bid; custom silicon thesis intact alongside AMD Helios win; await NVDA Q2 FY27 Aug 26 clearing event", "sentiment": "positive" },
+    { "ticker": "NVDA",  "note": "Closed $203.81 (+0.4%); flat recovery; hard stop $195 intact; dead zone to Aug 26 NVDA Q2 FY27; Kimi K3 open-weight release July 27 adds a second narrative wave", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "Closed $324.91 (–2.7% from $334.14 Friday); lost relative safe-haven bid as risk sentiment partially normalized on chip recovery; China AI approval thesis still intact; maintain above $315", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "Closed $372.52 (–3.25% from ~$385 Friday); pre-Q2 earnings selling continues; July 22 AH: gross margin >15% (from ~14% Q1) is the base case; >18-20% is the re-rate gate", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "Est. ~$656; ad-model most insulated from Kimi K3 demand disruption; $10B Anthropic compute lease is live counter-evidence to AI-capex-slowing thesis; Q2 July 29", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "Held ~$58-59; WTI $82.21, Brent $87.72 — both above formal triggers; 20% allocation in force through August CPI; oil below $84-90 intraday peak but structurally elevated", "sentiment": "positive" },
+    { "ticker": "PYPL",  "note": "Board formally rejected Stripe/Advent $60.50/share bid as inadequate; treating as negotiating position rather than final refusal; likely traded $52-55; pending counter-offer dynamics", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "Est. ~$134-136; DoD AI thesis structurally insulated; US government AI spend may accelerate in response to Moonshot AI threat from China", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    { "ticker": "NVDA", "reason": "Kimi K3 open-weight model weights public release July 27 creates a second AI narrative wave immediately after AMD AI Day; TSMC wafer hike (5-10% on 5nm/4nm) still unquantified in sell-side EPS; hard stop $195 defines the dead zone to NVDA Q2 FY27 est. Aug 26", "better_entry": "Post-NVDA Q2 FY27 Aug 26 with wafer hike impact clarified and Kimi K3 demand impact assessed; or $190-195 on capitulation with VIX reversal below 16" },
+    { "ticker": "AMD", "reason": "AMD +3.83% on one Microsoft contract; AMD AI Day Day 1 (July 21) is where real competitive roadmap trades; buying after a 3.83% one-contract-news move gives up the AMD AI Day event premium", "better_entry": "Post-AMD AI Day Day 1 (July 21) with MI400 roadmap and additional hyperscaler wins disclosed; pull back to $495-500 on AMD AI Day disappointment" },
+    { "ticker": "TSLA", "reason": "Down 3.25% Monday ahead of July 22 Q2 AH; earnings binary risk is high (gross margin >15% base, >18-20% to re-rate); adding into the print rather than waiting for the reaction extends risk asymmetrically", "better_entry": "Post-July 22 Q2 with confirmed gross margin >15% and FSD revenue recognition; or below $350 on a miss with stop $340" },
+    { "ticker": "NFLX", "reason": "Still at 52-week lows (~$68-70 range); Q3 guidance miss overhang; no catalyst before October Q3; broader market and semiconductor recovery is not lifting NFLX", "better_entry": "Q3 earnings (est. October 2026) with operating margin recovery and ad-revenue acceleration" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "GOOGL (carry into July 22 Q2 earnings)",
+      "direction": "long",
+      "thesis": "The pre-close Monday GOOGL long from the morning brief is working (+1.52% to ~$658); GOOGL enters July 22 Q2 AH with a constructive setup: Cloud backlog $462B (40%+ QoQ), 43/53 analysts Strong Buy, EU fine ($4.67B) absorbed, and AMD's Microsoft Helios deal materially reduces the Kimi K3 AI-capex-disruption pressure on Google Cloud. The session's VIX 16.50 and September hike compression provide a more supportive macro backdrop for a cloud-beat reaction than the July 17 BEARISH framework implied.",
+      "entry": "Hold existing GOOGL position (entered pre-close Monday at ~$648). Stop $635. Target $685-$700 on strong Cloud beat with positive Q3 AI revenue guide.",
+      "invalidation": "GOOGL Q2 misses Cloud revenue estimates OR management confirms Gemini 3.5 Pro delay persists into H1 2027. Exit immediately on miss.",
+      "conviction": "medium",
+      "horizon": "Through July 22 AH and July 23 open reaction"
+    },
+    {
+      "asset": "XLE (maintain 20% allocation)",
+      "direction": "long",
+      "thesis": "WTI settled $82.21 — still $2.21 above the $80 formal trigger; Brent $87.72 — still above $85 formal threshold. The intraday Brent $90+ breach followed by a $87.72 settlement reflects volatile whipsaw rather than structural reversal. Qatar's ceasefire proposal has not been accepted; Iran-US military exchanges continued Monday. August CPI oil-shock is structurally embedded regardless of daily WTI fluctuations from this level.",
+      "entry": "Maintain XLE at 20% (executed at open per morning mandate). Reduce to 8% only on Iran ceasefire confirmed with Hormuz reopening AND WTI two consecutive closes below $70.",
+      "invalidation": "Iran-US ceasefire formally agreed; Hormuz transit exceeds 10 vessels/day; WTI two consecutive closes below $70.",
+      "conviction": "medium",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts (reduce to 50% size) / TLT short (maintain)",
+      "direction": "hedge",
+      "thesis": "September hike probability at 48.7% — below 50% for the first time — materially reduces the IWM rate-sensitivity tail thesis. However, WTI at $82.21 means August CPI oil pass-through risk is not zero; if WTI spikes back above $85 this week, September prob will reverse. Reduce IWM puts to 50% original size to reflect reduced-but-real tail risk. TLT short above $88-89 maintained: 30Y still above 5.00% for the 10th+ session.",
+      "entry": "Reduce IWM August puts to 50% of original size. Maintain TLT short above $88-89. Reassess fully after FOMC July 28-29.",
+      "invalidation": "WTI closes below $79 AND September hike prob confirms below 40% AND VIX stays below 16. Exit remaining IWM puts and close TLT short on all three simultaneous.",
+      "conviction": "low",
+      "horizon": "Through FOMC July 28-29"
+    }
+  ],
+  "bear_case": "The VIX compression to 16.50 and September hike probability fall to 48.7% are single-session moves on light summer-Monday volume, reactive to Qatar ceasefire optionality rather than evidence of structural resolution. WTI at $82.21 is one Brent overnight spike away from $87-90 again — the $90 intraday print on Monday morning itself demonstrates this vulnerability. The IRGC has previously struck Qatar's own LNG assets in Hormuz, making the Qatar mediator role precarious; if Iran escalates against Qatari infrastructure, September hike probability could reverse through 60% within hours as oil spikes $5-8. AMD's Microsoft Helios win is one deployment contract for H2 2026 — it does not quantify or refute Kimi K3 AI demand disruption at scale. GOOGL's $4.67B EU antitrust fine introduces a new legal overhang entering Q2 earnings, and a Cloud miss on July 22 would overwhelm any vol-compression tailwind. If WTI gaps above $87 AND GOOGL Cloud misses by more than 3% on July 22, the STEP ASIDE call is wrong and BEARISH resumes. Invalidation: If WTI closes above $87 this week AND September hike probability reverses above 60%, STEP ASIDE → BEARISH re-escalation is warranted.",
+  "body_mdx": "data/briefings/markets/2026-07-20-night.mdx"
+}
