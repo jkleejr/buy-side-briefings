@@ -46,7 +46,7 @@
   ],
   "created_at": "2026-07-01",
   "expires_at": "2026-07-22",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "TSLA",
     "Tesla",
@@ -58,7 +58,13 @@
     "Robotaxi",
     "low-conviction"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-20",
+    "final_price": 380.04,
+    "return_pct": -4.1,
+    "outcome_label": "Stop triggered — rate-shock overwhelmed delivery beat",
+    "note": "Q2 deliveries of ~480K confirmed a beat above the 406K consensus, but the Iran-crisis rate-hike repricing (September hike prob rising to 65%, 30Y above 5.00% for 8+ sessions) overwhelmed the thesis. TSLA fell well below the $390 daily-close stop during the mid-July escalation and has traded at $380–385 since. Formalizing the stop-out today at $380.04, ahead of Q2 financial results July 22 (remaining event risk)."
+  },
   "levels": {
     "entry_low": 410.0,
     "entry_high": 428.0,

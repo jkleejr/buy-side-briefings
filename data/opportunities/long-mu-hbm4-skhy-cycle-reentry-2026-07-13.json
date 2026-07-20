@@ -46,7 +46,7 @@
   ],
   "created_at": "2026-07-13",
   "expires_at": "2026-08-29",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "MU",
     "Micron",
@@ -58,7 +58,13 @@
     "TSMC",
     "thematic"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-20",
+    "final_price": 880.0,
+    "return_pct": -11.1,
+    "outcome_label": "Stop at $880 triggered — SOX bear market + Kimi K3 disruption narrative",
+    "note": "MU traded as low as $804 intraday on July 20 (range $804–$903) and settled around $849, well below the $880 daily-close stop trigger. The SOX entered an official bear market (–20%+ from June high) on the semiconductor position-clearing wave that began July 14–17. The Kimi K3 open-source AI model disruption thesis — claiming frontier AI performance at 70% compute cost reduction — has not been refuted and the full open-weight release July 27 adds a second structural overhang. MU's stop at $880 is the structural exit level. Exit recorded at $880 (stop trigger price); current market price $848.95."
+  },
   "levels": {
     "entry_low": 955.0,
     "entry_high": 995.0,
