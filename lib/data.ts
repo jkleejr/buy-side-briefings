@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import { verdictHeadline as headlineFor } from "@/lib/verdict-headline";
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
 
@@ -96,6 +97,12 @@ export type BriefingMeta = {
   verdict_code?: VerdictCode;
   /** Short rationale from the linked verdict — useful for client-side search. */
   verdict_rationale?: string;
+  /**
+   * The verdict's plain-English headline — the one-line "what you need to know"
+   * the routines write for the home page. Surfaced in the archive so a row
+   * says what the briefing is about, not just when it was published.
+   */
+  verdict_headline?: string;
 };
 
 export type Briefing = BriefingMeta & {
@@ -330,14 +337,21 @@ export function getAllBriefings(): BriefingMeta[] {
         let generatedAt: string | undefined;
         let verdictCode: VerdictCode | undefined;
         let verdictRationale: string | undefined;
+        let verdictHeadline: string | undefined;
         if (verdictRef) {
           const v = readJson<{
             generated_at?: string;
-            verdict?: { code?: VerdictCode; rationale_short?: string };
+            verdict?: {
+              code?: VerdictCode;
+              rationale_short?: string;
+              headline?: string;
+              label?: string;
+            };
           }>(path.join(verdictsDir, `${verdictRef}.json`));
           if (v?.generated_at) generatedAt = v.generated_at;
           if (v?.verdict?.code) verdictCode = v.verdict.code;
           if (v?.verdict?.rationale_short) verdictRationale = v.verdict.rationale_short;
+          verdictHeadline = headlineFor(v?.verdict);
         }
         byKey.set(`${routine}/${slug}`, {
           slug,
@@ -350,6 +364,7 @@ export function getAllBriefings(): BriefingMeta[] {
           generated_at: generatedAt,
           verdict_code: verdictCode,
           verdict_rationale: verdictRationale,
+          verdict_headline: verdictHeadline,
         });
       }
     }
@@ -378,6 +393,7 @@ export function getAllBriefings(): BriefingMeta[] {
       generated_at: v.generated_at,
       verdict_code: v.verdict.code,
       verdict_rationale: v.verdict.rationale_short,
+      verdict_headline: headlineFor(v.verdict),
     });
   }
 

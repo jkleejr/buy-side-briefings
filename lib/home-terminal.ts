@@ -8,6 +8,7 @@ import {
   type MarketsVerdict,
 } from "@/lib/data";
 import { readMinutes as readMinutesOfText } from "@/lib/utils";
+import { clampText, verdictHeadline } from "@/lib/verdict-headline";
 
 // ---------------------------------------------------------------------------
 // Home terminal data assembly.
@@ -179,35 +180,8 @@ function sentimentFor(code: string): { label: string; pct: number } {
   }
 }
 
-// The verdict label packs the whole tape into one string ("HOLD — Kyber
-// delayed; KOSPI –4.9%; NVDA pre-mkt $197…"). The homepage title wants the
-// story, not the tape: prefer the routine-written verdict.headline; otherwise
-// take the label's first clause that still reads as news once prices,
-// percentages, and parentheticals are stripped.
 function headlineOf(v: MarketsVerdict): string {
-  const written = v.verdict.headline?.trim();
-  if (written) return clampText(written, 110);
-
-  const label = v.verdict.label;
-  const idx = label.indexOf("—");
-  const tape = (idx >= 0 ? label.slice(idx + 1) : label).trim();
-  const clauses = tape
-    .split(";")
-    .map((c) => c.replace(/\([^)]*\)/g, "").replace(/\s+/g, " ").trim())
-    .filter(Boolean);
-  // First clause with no price/percent tokens is the newsiest one.
-  const newsy = clauses.find((c) => !/[$₩€£%]/.test(c) && !/\d[\d,]*\.\d/.test(c));
-  return clampText(newsy ?? clauses[0] ?? tape, 110);
-}
-
-function clampText(text: string, maxChars: number): string {
-  const t = text.trim();
-  if (t.length <= maxChars) return t;
-  const cut = t.slice(0, maxChars);
-  const lastDot = cut.lastIndexOf(". ");
-  if (lastDot > maxChars * 0.5) return cut.slice(0, lastDot + 1);
-  const lastSpace = cut.lastIndexOf(" ");
-  return cut.slice(0, lastSpace > 0 ? lastSpace : maxChars).trim() + "…";
+  return verdictHeadline(v.verdict, 110) ?? v.verdict.label;
 }
 
 function firstClause(s: string): string {

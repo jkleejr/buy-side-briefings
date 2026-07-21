@@ -7,9 +7,7 @@ import type {
   HomeData,
   BriefView,
   SectorRow,
-  WireRow,
   CalRow,
-  ArchiveRow,
   KeyPoint,
 } from "@/lib/home-terminal";
 
@@ -21,8 +19,8 @@ import type {
 //   tape          : the metric strip as a ruled row of figures
 //   what matters  : the briefing's key points, each sourced — one place, no echo
 //   week ahead    : the calendar, paired beside what-matters
-//   on the wire   : recent headlines OTHER than today's points (deduped upstream)
-//   sectors / past: reference band
+//   charts        : the majors, with derived support/resistance
+//   sectors       : reference band
 // No verdict / buy-sell call is rendered here — the homepage informs; the
 // desk's stance lives inside the briefing pages.
 // ---------------------------------------------------------------------------
@@ -155,42 +153,6 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
           );
         })}
       </div>
-    </div>
-  );
-}
-
-// --- on the wire (recent headlines other than today's points) ----------------
-
-function Wire({ wire }: { wire: WireRow[] }) {
-  if (!wire.length) return null;
-  return (
-    <div>
-      <SectionRule>On the wire</SectionRule>
-      {wire.map((w, i) => {
-        const row = (
-          <div className="grid grid-cols-[54px_1fr] gap-3 border-t border-[var(--border)] py-3 first:border-t-0">
-            <span className="pt-0.5 font-mono text-[10px] font-semibold tracking-[0.06em] text-[var(--amber)]">
-              {w.tag}
-            </span>
-            <span className="text-[14.5px] leading-snug text-[var(--ink-soft)]">
-              {w.headline}
-            </span>
-          </div>
-        );
-        return w.url ? (
-          <a
-            key={i}
-            href={w.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="-mx-3 block rounded-sm px-3 hover:bg-[var(--panel)]"
-          >
-            {row}
-          </a>
-        ) : (
-          <div key={i}>{row}</div>
-        );
-      })}
     </div>
   );
 }
@@ -475,29 +437,6 @@ function Sectors({ sectors }: { sectors: SectorRow[] }) {
   );
 }
 
-function PreviousEditions({ archive }: { archive: ArchiveRow[] }) {
-  if (!archive.length) return null;
-  return (
-    <div>
-      <SectionRule>Previous editions</SectionRule>
-      {archive.map((a, i) => (
-        <Link
-          key={i}
-          href={a.href}
-          className="-mx-3 block rounded-sm border-t border-[var(--border)] px-3 py-3 first:border-t-0 hover:bg-[var(--panel)]"
-        >
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--dim)]">
-            {a.window === "morning" ? "☀" : "☾"} {a.dayLabel}
-          </span>
-          <span className="mt-1 block text-[14.5px] leading-snug text-[var(--ink-2)]">
-            {a.headline}
-          </span>
-        </Link>
-      ))}
-    </div>
-  );
-}
-
 // --- shell -----------------------------------------------------------------------
 
 export default function HomeTerminal({ data }: { data: HomeData }) {
@@ -550,12 +489,6 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
           <div className="grid gap-12 pt-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
             <WhatMatters points={current.keyPoints} />
             <WeekAhead calendar={data.calendar} />
-          </div>
-
-          {/* The wire (recent headlines, distinct from today's points) + past. */}
-          <div className="grid gap-12 pt-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
-            <Wire wire={data.wire} />
-            <PreviousEditions archive={data.archive} />
           </div>
 
           {/* Reference band — sectors run full width across the two columns. */}

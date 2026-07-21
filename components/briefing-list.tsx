@@ -55,11 +55,21 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
               <span className="w-9 shrink-0 text-[var(--amber-dim)]">
                 {ROUTINE_LABEL[b.routine] ?? b.routine.slice(0, 3).toUpperCase()}
               </span>
-              <span className="flex-1 truncate text-[var(--foreground)] sm:hidden">
-                {formatBriefingTitleShort(b)}
-              </span>
-              <span className="hidden flex-1 truncate text-[var(--foreground)] sm:inline">
-                {fullTitle}
+              {/* Date line, then what the briefing is actually about. The
+                  headline is the point of the row — the date only says when. */}
+              <span className="flex min-w-0 flex-1 flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-2">
+                <span className="truncate text-[var(--foreground)] sm:hidden">
+                  {formatBriefingTitleShort(b)}
+                </span>
+                <span className="hidden shrink-0 text-[var(--foreground)] sm:inline">
+                  {fullTitle}
+                </span>
+                {b.verdict_headline && (
+                  <span className="truncate text-[var(--dim)]">
+                    <span className="hidden sm:inline">· </span>
+                    {b.verdict_headline}
+                  </span>
+                )}
               </span>
               {clock && (
                 <span className="shrink-0 text-[var(--dim)]" title={`Generated ${clock}`}>
