@@ -233,13 +233,11 @@ export default function LevelsChart({
   // toggling should reveal and hide lines, not rescale the chart under you.
   const levelsOn = compact || showLevels;
 
-  // The right gutter exists to hold the level labels, and it has to be wide:
-  // "66,157.96–70,000.00" runs to within 3 units of the frame. With the levels
-  // off there is nothing to hold, and reserving 132 of 900 units left a seventh
-  // of the chart blank — so the series takes that width back and keeps only a
-  // margin. Candles and drawings both position against the same plot width, so
-  // they stretch together and a trendline stays over the bars it was drawn on.
-  const PAD_R = levelsOn ? PAD_R_LABELS : PAD_R_BARE;
+  // Toggling S/R must never resize the plot — the series stays where it is and
+  // the level labels draw INSIDE the right edge (with a halo) instead of in a
+  // reserved gutter. Only the compact variant, whose levels are always on and
+  // which has no toggle, keeps the dedicated label gutter.
+  const PAD_R = compact ? PAD_R_LABELS : PAD_R_BARE;
 
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
@@ -773,10 +771,11 @@ export default function LevelsChart({
                       strokeWidth={zoneWeight(z.touches)}
                       opacity={0.9}
                     />
-                    {/* Leader from the rule to its nudged label. */}
+                    {/* Leader from the rule to its nudged label — outward into
+                        the gutter (compact) or inward over the plot (full). */}
                     <line
                       x1={W - PAD_R}
-                      x2={W - PAD_R + 5}
+                      x2={W - PAD_R + (compact ? 5 : -5)}
                       y1={scale.y(z.mid)}
                       y2={labelYs[i]}
                       stroke={zoneColor(z)}
@@ -784,21 +783,29 @@ export default function LevelsChart({
                       opacity={0.55}
                     />
                     <text
-                      x={W - PAD_R + 9}
+                      x={W - PAD_R + (compact ? 9 : -9)}
                       y={labelYs[i] + 3}
+                      textAnchor={compact ? "start" : "end"}
                       fill="var(--foreground)"
                       fontFamily="var(--mono)"
                       fontSize={labelSize}
                       fontWeight={600}
+                      stroke={compact ? undefined : "var(--background)"}
+                      strokeWidth={compact ? undefined : 3}
+                      paintOrder={compact ? undefined : "stroke"}
                     >
                       {fmtLevel(z.lo)}–{fmtLevel(z.hi)}
                     </text>
                     <text
-                      x={W - PAD_R + 9}
+                      x={W - PAD_R + (compact ? 9 : -9)}
                       y={labelYs[i] + (compact ? 12 : 14)}
+                      textAnchor={compact ? "start" : "end"}
                       fill={zoneColor(z)}
                       fontFamily="var(--mono)"
                       fontSize={subSize}
+                      stroke={compact ? undefined : "var(--background)"}
+                      strokeWidth={compact ? undefined : 2.5}
+                      paintOrder={compact ? undefined : "stroke"}
                     >
                       tested {z.touches}× · {z.distPct > 0 ? "+" : ""}
                       {z.distPct}%
@@ -1048,7 +1055,6 @@ export default function LevelsChart({
               <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
               Support
             </span>
-            <span>A level is a price the market kept turning at</span>
           </>
         )}
         {mode === "line" && (
@@ -1056,13 +1062,6 @@ export default function LevelsChart({
             <i className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px] bg-[var(--foreground)]" />
             Close
           </span>
-        )}
-        {levelsOn && (
-          <>
-            <span className="text-[var(--faint)]">
-              Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
-            </span>
-          </>
         )}
         {/* Where the numbers come from and how fresh they are — the symbol is
             named because "Gold" could reasonably mean spot, GLD or futures. */}
