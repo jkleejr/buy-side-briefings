@@ -463,7 +463,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
     <div className="mx-auto max-w-[1100px] px-4 pb-14 sm:px-6">
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--foreground)] pt-4">
         <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--dim)]">
-          {view === "morning" ? "Morning briefing" : "Evening briefing"}
+          {view === "morning" ? "Morning briefing" : "Night briefing"}
           {current ? ` · ${current.timeLabel}` : ""}
         </span>
         <span className="flex items-center gap-3 font-mono text-[11.5px] text-[var(--dim)]">
@@ -522,7 +522,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
         <span>Every claim links to its source. Compiled twice daily.</span>
         <span>
           {view === "morning"
-            ? "Evening edition follows at 20:00 ET"
+            ? "Night edition follows at 20:00 ET"
             : "Morning edition follows at 06:00 ET"}
         </span>
       </div>

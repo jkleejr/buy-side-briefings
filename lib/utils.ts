@@ -128,8 +128,7 @@ const ROUTINE_FULL: Record<string, string> = {
   "demand-signals": "Demand Signals",
 };
 
-/** Display name for a briefing window. "night" reads as "Evening" on the
- *  site — the data key predates the wording. */
+/** Display name for a briefing window. */
 export function windowLabel(w: string): string {
   return WINDOW_LABEL[w] ?? w;
 }
@@ -137,7 +136,7 @@ export function windowLabel(w: string): string {
 const WINDOW_LABEL: Record<string, string> = {
   morning: "Morning",
   afternoon: "Afternoon",
-  night: "Evening",
+  night: "Night",
   daily: "Daily",
 };
 
@@ -165,7 +164,7 @@ export function formatBriefingTitle(b: {
 }
 
 /**
- * Date-first line for list rows: "Monday, July 20, 2026 · Evening".
+ * Date-first line for list rows: "Monday, July 20, 2026 · Night".
  * Same as formatBriefingTitle without the routine prefix — every briefing in
  * the archive is a markets one, so "Markets Briefing · " on all 121 rows was
  * pure repetition pushing the date rightward.
@@ -187,7 +186,7 @@ export function formatBriefingDateLine(b: {
 }
 
 /**
- * Compact variant for narrow screens: "Wed, Jun 10 · Evening". The routine is
+ * Compact variant for narrow screens: "Wed, Jun 10 · Night". The routine is
  * already shown as a code chip next to the title, so repeating "Markets
  * Briefing · " only pushes the date off-screen.
  */
