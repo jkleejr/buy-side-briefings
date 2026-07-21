@@ -942,6 +942,8 @@ export default function LevelsChart({
 
       {!compact && (
       <div className="flex flex-wrap gap-4 px-1 pt-2 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
+        {/* Only the level vocabulary is gated — with S/R off there are no bands
+            to explain. The source line below always shows. */}
         {levelsOn && (
           <>
             <span>
@@ -952,24 +954,12 @@ export default function LevelsChart({
               <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
               Support
             </span>
-            <span>Band opacity = times tested</span>
+            <span>A level is a price the market kept turning at</span>
             <span className="text-[var(--faint)]">
               Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
             </span>
           </>
         )}
-        <span>
-          <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--ceiling)] opacity-50" />
-          Resistance
-        </span>
-        <span>
-          <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
-          Support
-        </span>
-        <span>A level is a price the market kept turning at</span>
-        <span className="text-[var(--faint)]">
-          Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
-        </span>
         {/* Where the numbers come from and how fresh they are — the symbol is
             named because "Gold" could reasonably mean spot, GLD or futures. */}
         <span className="basis-full text-[var(--faint)] normal-case tracking-normal">
