@@ -63,10 +63,12 @@ const BAR_INTERVAL: Record<string, string> = {
 /** How many levels to show either side of the price. */
 const ZONES_PER_SIDE = 2;
 
-/** Share of the plot given to the volume pane when it's on. */
+/**
+ * Share of the plot height the volume bars rise into, measured from the
+ * baseline. Volume is an overlay, not a pane — the price scale is unaffected
+ * by it, so toggling volume never moves a candle.
+ */
 const VOL_FRACTION = 0.2;
-/** Gap between the price area and the volume pane. */
-const VOL_GAP = 10;
 
 /** Level prices with thousands separators — "7,421.82" scans, "7421.82" doesn't. */
 function fmtLevel(v: number): string {
@@ -238,10 +240,10 @@ export default function LevelsChart({
     // axis. Above a few multiples, switch to log so equal % moves get equal
     // vertical space, which is how a price chart should read anyway.
     const useLog = lo > 0 && hi / lo > 4;
-    // The volume pane eats the bottom of the plot, so the price scale has to be
-    // told about it — otherwise candles draw straight through the bars.
-    const volH = volumeOn ? (H - PAD_T - PAD_B) * VOL_FRACTION : 0;
-    const plotH = H - PAD_T - PAD_B - volH - (volumeOn ? VOL_GAP : 0);
+    // Price always owns the whole plot. Volume is drawn over the bottom of it
+    // rather than carving out a pane, so switching volume on and off leaves
+    // every candle exactly where it was.
+    const plotH = H - PAD_T - PAD_B;
 
     let y: (v: number) => number;
     if (useLog) {
@@ -261,16 +263,17 @@ export default function LevelsChart({
 
     const x = (i: number) => PAD_L + (i / (bars.length - 1)) * (W - PAD_L - PAD_R);
 
-    // Volume pane: baseline at the bottom, bars grown upward from it.
-    const volTop = PAD_T + plotH + (volumeOn ? VOL_GAP : 0);
-    const volBase = H - PAD_B;
+    // Volume overlay: baseline at the foot of the plot, bars grown upward into
+    // the bottom VOL_FRACTION of it.
+    const volBase = PAD_T + plotH;
+    const volTop = volBase - plotH * VOL_FRACTION;
     const volY = (v: number) =>
       maxVolume > 0
         ? volBase - Math.max(v > 0 ? 1 : 0, (v / maxVolume) * (volBase - volTop))
         : volBase;
 
     return { x, y, useLog, volTop, volBase, volY };
-  }, [bars, analysis, zones, H, PAD_R, volumeOn, maxVolume]);
+  }, [bars, analysis, zones, H, PAD_R, maxVolume]);
 
   // One "M…L…" through the closes. Built here rather than inline so it isn't
   // re-joined on every hover — the crosshair sets state on pointer move.
@@ -791,8 +794,9 @@ export default function LevelsChart({
 
               {volumeOn && (
                 <g>
-                  {/* Baseline, then a bar per session. Direction matches the
-                      candle above it so the two read as one column. */}
+                  {/* Baseline, then a bar per session, drawn before the price
+                      so candles and the line sit over the top. Direction
+                      matches the bar above it so the two read as one column. */}
                   <line
                     x1={PAD_L}
                     x2={W - PAD_R}
@@ -820,7 +824,10 @@ export default function LevelsChart({
                         width={bw}
                         height={Math.max(0.5, scale.volBase - top)}
                         fill={up ? "var(--up)" : "var(--down)"}
-                        opacity={0.4}
+                        // Lighter than the old dedicated pane: these now sit
+                        // under the price action rather than beside it, and
+                        // shouldn't compete with it.
+                        opacity={0.26}
                       />
                     );
                   })}
