@@ -120,11 +120,12 @@ export default async function WatchlistPage() {
         <Panel code="LEVELS" title="Support & resistance">
           <div className="p-2">
             <p className="pb-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
-              A year of daily candles with the levels the price keeps turning at. Zones
-              are derived from the bars themselves — a swing pivot is a bar that is the
-              high or low of its 11-bar window, pivots within 1.8% are the same level,
-              and the number of touches is its strength. Nothing is hand-drawn. Hover
-              for the date and price.
+              Daily candles with the levels the price keeps turning at. A level is
+              derived from the bars themselves — a swing pivot is a bar that is the high
+              or low of the bars around it, pivots at effectively the same price are one
+              level, and how many times it was tested is its strength. So &ldquo;tested
+              4×&rdquo; means the market turned there four times in the window on screen.
+              Nothing is hand-drawn. Hover any bar for its date, price and volume.
             </p>
             <LevelsChart symbols={symbols} initialSymbol={symbols[0]} />
           </div>

@@ -68,6 +68,14 @@ const VOL_FRACTION = 0.2;
 /** Gap between the price area and the volume pane. */
 const VOL_GAP = 10;
 
+/** Level prices with thousands separators — "7,421.82" scans, "7421.82" doesn't. */
+function fmtLevel(v: number): string {
+  return v.toLocaleString("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+}
+
 /** Compact volume for a tooltip: 1.2B, 44.6M, 12.4K. */
 function fmtVolume(v: number): string {
   const abs = Math.abs(v);
@@ -410,10 +418,10 @@ export default function LevelsChart({
   const headline = !analysis
     ? ""
     : analysis.inside && zones.includes(analysis.inside)
-      ? `inside a ${analysis.inside.touches}× zone`
+      ? `inside a level tested ${analysis.inside.touches}×`
       : nearestDrawn
-        ? `${Math.abs(nearestDrawn.distPct).toFixed(1)}% to support`
-        : "no level nearby";
+        ? `${Math.abs(nearestDrawn.distPct).toFixed(1)}% above support`
+        : "no tested level nearby";
 
   // Intraday windows need the time of the last bar; daily and longer only the
   // date — "last bar Jul 17, 2026 09:30" is noise on a monthly chart.
@@ -489,7 +497,7 @@ export default function LevelsChart({
           </>
         )}
         {analysis && (
-          <span className="ml-auto font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">
+          <span className="ml-auto shrink-0 whitespace-nowrap font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">
             {headline}
           </span>
         )}
@@ -689,7 +697,7 @@ export default function LevelsChart({
                       fontSize={labelSize}
                       fontWeight={600}
                     >
-                      {z.lo}–{z.hi}
+                      {fmtLevel(z.lo)}–{fmtLevel(z.hi)}
                     </text>
                     <text
                       x={W - PAD_R + 9}
@@ -698,7 +706,7 @@ export default function LevelsChart({
                       fontFamily="var(--mono)"
                       fontSize={subSize}
                     >
-                      {z.touches}× · {z.distPct > 0 ? "+" : ""}
+                      tested {z.touches}× · {z.distPct > 0 ? "+" : ""}
                       {z.distPct}%
                     </text>
                   </g>
@@ -840,7 +848,7 @@ export default function LevelsChart({
               <div
                 className="pointer-events-none absolute z-[3] whitespace-nowrap border border-[var(--border-strong)] bg-[var(--background)] px-2 py-1 font-mono text-[10.5px] leading-[1.45]"
                 style={{
-                  left: `min(calc(100% - 168px), ${(hover.x / W) * 100}% + 12px)`,
+                  left: `min(calc(100% - 288px), ${(hover.x / W) * 100}% + 12px)`,
                   top: `max(4px, calc(${(hover.y / H) * 100}% - 38px))`,
                 }}
               >
@@ -882,7 +890,7 @@ export default function LevelsChart({
                   <>
                     <br />
                     <span style={{ color: zoneColor(hoveredZone) }}>
-                      in {hoveredZone.lo}–{hoveredZone.hi} · {hoveredZone.touches}×
+                      in a level tested {hoveredZone.touches}×
                     </span>
                   </>
                 )}
@@ -909,6 +917,7 @@ export default function LevelsChart({
           <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
           Support
         </span>
+        <span>A level is a price the market kept turning at</span>
         <span>Band opacity = times tested</span>
         <span className="text-[var(--faint)]">
           Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
