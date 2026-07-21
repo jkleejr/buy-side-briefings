@@ -979,7 +979,8 @@ export default function LevelsChart({
                 }}
               >
                 <b className="text-[11.5px]">{hoveredBar.close.toFixed(2)}</b>{" "}
-                {(((hoveredBar.close - analysis.price) / analysis.price) * 100).toFixed(1)}%
+                {/* change vs the first bar of the current range, not today's price */}
+                {(((hoveredBar.close - bars[0].close) / bars[0].close) * 100).toFixed(1)}%
                 <br />
                 <span className="text-[var(--faint)]">
                   {new Date(hoveredBar.date).toLocaleString("en-US", {
