@@ -1057,12 +1057,6 @@ export default function LevelsChart({
             </span>
           </>
         )}
-        {mode === "line" && (
-          <span>
-            <i className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px] bg-[var(--foreground)]" />
-            Close
-          </span>
-        )}
         {/* Where the numbers come from and how fresh they are — the symbol is
             named because "Gold" could reasonably mean spot, GLD or futures. */}
         <span className="basis-full text-[var(--faint)] normal-case tracking-normal">
