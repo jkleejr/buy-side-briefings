@@ -163,13 +163,28 @@ Body sections (use the **May 20 morning briefing as a canonical template** — `
 
 ## Step 6b — Maintain the catalyst calendar
 
-`data/calendar.json` drives the "Week Ahead · Catalysts" strip on the dashboard
-(events the Yahoo-earnings and FRED-macro feeds can't know about). On every run:
+`data/calendar.json` drives the "Week Ahead · Catalysts" strip on the dashboard.
 
-- **Add** any new dated catalyst the briefing cites — IPO pricings, signal
-  windows ("cover signal opens June 16+"), geopolitical deadlines, product
-  events, market holidays. Include `tickers` for any open opportunity that
-  hinges on the event so the website can cross-link them.
+**Two feeds are merged in automatically** (`lib/calendar-feeds.ts`), so you do
+not need to write these by hand:
+
+- **Macro prints and FOMC decisions** — CPI, PPI, PCE, the jobs report and every
+  2026 FOMC meeting arrive from FRED and a published Fed table. FRED's dates win
+  over yours: if you write a release anyway, it is matched to the feed by keyword
+  and moved onto the real date, keeping your wording. So write one only when you
+  have framing worth carrying (what the print decides, what level it invalidates)
+  — never as a bare date.
+- **Watchlist earnings** — next earnings date for every watchlist name, from
+  Yahoo. Don't type these either; add a row only to say what the print hinges on.
+
+Spend your budget on what no feed can know. On every run:
+
+- **Add** any new dated catalyst the briefing cites — model and product releases
+  (open-weight drops, chip launches, AI days), IPO pricings and lock-up expiries,
+  signal windows ("cover signal opens June 16+"), geopolitical deadlines, court
+  and regulatory dates, market holidays. These are the point of the strip; the
+  homepage reserves its first detail slots for them. Include `tickers` for any
+  open opportunity that hinges on the event so the website can cross-link them.
 - **Update** events whose date or framing changed.
 - **Remove** events whose date has passed.
 
