@@ -981,17 +981,20 @@ export default function LevelsChart({
 
             {hover && hoveredBar && (
               <div
-                // Pinned to the top of the plot rather than following the
-                // cursor's y — the readout used to sit at the hover point and
-                // cover the very candles it described. It still tracks the
-                // crosshair horizontally; the dot on the line marks the exact
-                // point, so the box can stay up out of the way.
+                // Follows the hover point vertically but never sits on it: the
+                // box floats a gap ABOVE the dot (translateY(-100% - gap) puts
+                // its bottom edge above the point regardless of how many rows it
+                // has), so it clears the line/candle it describes. When the
+                // point is high enough that floating above would clip the top,
+                // it flips below instead.
                 className="pointer-events-none absolute z-[3] whitespace-nowrap border border-[var(--border-strong)] bg-[var(--background)] px-2 py-1 font-mono text-[10.5px] leading-[1.45]"
                 style={{
                   left: `min(calc(100% - 288px), ${(hover.x / W) * 100}% + 12px)`,
-                  // Clears the Resistance/Support legend that overlays the same
-                  // top-right corner when levels are shown; otherwise hugs the top.
-                  top: !compact && levelsOn ? "26px" : "8px",
+                  top: `${(hover.y / H) * 100}%`,
+                  transform:
+                    hover.y / H < 0.34
+                      ? "translateY(14px)"
+                      : "translateY(calc(-100% - 14px))",
                 }}
               >
                 <b className="text-[11.5px]">{hoveredBar.close.toFixed(2)}</b>{" "}
