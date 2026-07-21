@@ -95,6 +95,21 @@ function fmtVolume(v: number): string {
   return v.toLocaleString();
 }
 
+// Futures report volume as a count of contracts, not dollars — gold trades a
+// few thousand a day, so it reads as "679" next to Bitcoin's dollar volume in
+// the billions. For these symbols the tooltip shows dollar notional instead:
+// contracts × contract size × price, prefixed with $ so it can't be mistaken
+// for the raw count. A COMEX gold contract is 100 troy ounces.
+const CONTRACT_SIZE: Record<string, number> = {
+  "GC=F": 100,
+};
+
+/** Volume for the tooltip: dollar notional for futures, native count otherwise. */
+function volumeLabel(volume: number, price: number, symbol: string): string {
+  const size = CONTRACT_SIZE[symbol];
+  return size ? `$${fmtVolume(volume * size * price)}` : fmtVolume(volume);
+}
+
 // The rule carries everything now that the zone band is gone: its thickness
 // encodes how many times the level was tested.
 const zoneWeight = (touches: number) => Math.min(2.6, 1 + touches * 0.16);
@@ -1028,7 +1043,12 @@ export default function LevelsChart({
                   <>
                     <br />
                     <span className="text-[var(--dim)]">
-                      Vol {fmtVolume(hoveredBar.volume as number)}
+                      Vol{" "}
+                      {volumeLabel(
+                        hoveredBar.volume as number,
+                        hoveredBar.close,
+                        symbol,
+                      )}
                     </span>
                   </>
                 )}
