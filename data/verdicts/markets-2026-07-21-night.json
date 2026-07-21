@@ -1,0 +1,101 @@
+{
+  "routine": "markets",
+  "date": "2026-07-21",
+  "window": "night",
+  "generated_at": "2026-07-22T03:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Semis led S&P above 7,480 for the first time; oil re-escalated on Iran tanker attack",
+    "label": "SPX closes at 7,509 on memory-led chip surge; WTI rises to $84 on Iran strike and Houthi embargo; GOOGL/TSLA binary tonight",
+    "rationale_short": "The S&P 500 closed at 7,509, the first close above the 7,480 formal trigger, starting the two-session upgrade clock — but the day's cross-asset read is split. Memory stocks powered the advance: Micron surged 12% after Morgan Stanley forecast 25% memory-price gains, and the semiconductor sector gauge rose 5.2%. AMD reversed a +4% premarket Rosenblatt gap to close -1.4%, entering AMD AI Day from a position of weakness. WTI settled near $84.42 — up $2.13 from morning — after Iran attacked a tanker in the Strait of Hormuz and Houthi militants declared a maritime embargo against Saudi Arabia, adding roughly 2.5M bbl/day to the supply-disruption risk. GOOGL and TSLA report after Wednesday's close; the outcome sets the regime for the next four weeks.",
+    "supporting_data": [
+      { "label": "★★★ S&P 500 closed 7,509.20 (+0.89%) — first close above 7,480 formal upgrade trigger; Nasdaq +1.29% to 25,837; Dow +0.74% to 52,224; snapped three-session losing streak; semiconductor sector gauge (SOXQ) +5.2%", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-21-2026" },
+      { "label": "★★★ Micron (MU) +7–12% on Morgan Stanley 25% memory-price forecast; Sandisk +14%; memory/HBM demand rally structurally distinct from GPU/inference narrative — AI training demand is separate from Kimi K3 efficiency-disruption thesis", "url": "https://www.fool.com/coverage/stock-market-today/2026/07/21/stock-market-today-july-21-micron-surges-12-as-semiconductor-strength-lifts-nasdaq/" },
+      { "label": "★★★ WTI settled ~$84.42 (+$2.13 from $82.29 morning) after Iran attacked a tanker in Strait of Hormuz Tuesday; Houthis declared maritime embargo against Saudi Arabia (~2.5M bbl/day at risk); oil regime WORSENED on the same session equity bulls cleared 7,480", "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-july-21-2026/" },
+      { "label": "★★ AMD closed -1.39% to ~$503.57 — gave back full +4% Rosenblatt Top Pick premarket gap; enters AMD Advancing AI 2026 (Day 1 July 22 / Lisa Su keynote July 23) below Monday's $511 close; cautionary intraday reversal for high-profile event", "url": "https://www.fool.com/coverage/stock-market-today/2026/07/21/stock-market-today-july-21-micron-surges-12-as-semiconductor-strength-lifts-nasdaq/" },
+      { "label": "★★ Gold $4,082.73 (+1.86%) rising simultaneously with the equity rally — safe-haven bid and risk-asset bid coexisting signals that geopolitical risk premium remains embedded; DXY ~100.90 (-0.02%)", "url": "https://www.riotimesonline.com/gold-silver-precious-metals-tuesday-july-21-2026/" },
+      { "label": "★★ September hike probability ~48.7% unchanged; July hold 83.4%; FOMC July 28-29 is the rate-setting clearing event; 30Y above 5.00% formal trigger for 12th+ consecutive session", "url": "https://www.kucoin.com/news/flash/cme-fedwatch-july-and-september-rate-hike-probabilities" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7509.20,  "change_pct": 0.89,  "as_of": "2026-07-21T20:00:00Z" },
+    "nasdaq": { "level": 25837.21, "change_pct": 1.29,  "as_of": "2026-07-21T20:00:00Z" },
+    "vix":    { "level": 17.50,    "change_pct": 6.1,   "as_of": "2026-07-21T20:00:00Z" },
+    "ust10y": { "level": 4.59,     "change_bps": 1,     "as_of": "2026-07-21T20:00:00Z" },
+    "dxy":    { "level": 100.90,   "change_pct": -0.02, "as_of": "2026-07-21T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                  "value": 17.50,   "trigger_above": 17,    "unit": ""      },
+    { "name": "WTI vs $79 trigger",   "value": 84.42,   "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude",          "value": 89.80,   "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",            "value": 5.01,    "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob",  "value": 48.7,    "trigger_above": 60,    "unit": "%"     },
+    { "name": "SPX vs 7,480 trigger", "value": 7509.20, "trigger_below": 7480,  "unit": ""      },
+    { "name": "BTC Gate 2",           "value": 67200,   "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU",   "note": "★★★ +7–12% session on Morgan Stanley 25% memory-price forecast. Closed ~$982. HBM and DRAM demand from AI training is structural and separate from the Kimi K3 GPU/inference-efficiency disruption narrative.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "+1.41% to $207.29. Underperformed the sector rally. Hard stop $195 intact. Dead zone: AMD AI Day (Jul 22–23) → Kimi K3 open weights (Jul 27) → NVDA Q2 FY27 Aug 26. Do not add.", "sentiment": "negative" },
+    { "ticker": "AMD",  "note": "-1.39% to ~$503.57. GAVE BACK the full +4% Rosenblatt Top Pick premarket gap. Enters AMD Advancing AI 2026 (Day 1 July 22, Lisa Su keynote July 23 9:30am PT) from below Monday's $511 close. Cautionary reversal — AMD AI Day information premium was not sufficient to hold a high-profile analyst upgrade gap.", "sentiment": "negative" },
+    { "ticker": "GOOGL","note": "+0.64% to ~$660. Modest advance into the July 22 Q2 AH binary. Position intact from Monday $648 entry. Cloud backlog $462B; 43/53 analysts Strong Buy; KeyBanc PT $445; Citizens JMP Buy/$515. Polymarket: GOOGL historical Q2 beat rate 77.78%. Stop $635.", "sentiment": "positive" },
+    { "ticker": "TSLA", "note": "+1.96% to ~$380.54. Pre-earnings drift higher. 480K deliveries known; gross margin gate (>15% base, >18-20% re-rate above $410) resolves tonight. Options imply 7.6% swing. $550M bearish options position outstanding per Benzinga. Do not add pre-print.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "+2.98% to ~$414.60 — strongest Mag-7 close Tuesday. Azure AI tailwind from AMD Helios co-announcement July 20 intact. Q2 July 29. Hold.", "sentiment": "positive" },
+    { "ticker": "XLE",  "note": "★ 20% allocation in force. WTI rose to ~$84.42 on Iran tanker attack + Houthi maritime embargo against Saudi Arabia. Oil thesis STRENGTHENED by dual supply-shock vectors. Hold through August CPI.", "sentiment": "positive" },
+    { "ticker": "AAPL", "note": "est. ~$328-330 (+1% from $324.91 Monday close). Partial recovery from Monday's –2.7% derating. China AI approval thesis intact. Maintain above $315.", "sentiment": "positive" },
+    { "ticker": "META", "note": "est. ~$660-665 (modest positive in broad rally). Most insulated Mag-7 from Kimi K3 and Hormuz. $10B Anthropic compute lease. Q2 July 29. Hold.", "sentiment": "positive" },
+    { "ticker": "BTC-USD", "note": "est. ~$67,200 at close (five-week high per Sunday Guardian; morning was $66,311). Gate 2 ($62,000) firmly intact. Risk appetite recovering with equity rally.", "sentiment": "positive" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $210",
+      "reason": "AMD AI Day Day 1 July 22 and Lisa Su keynote July 23 precede Kimi K3 open-weight release July 27 — the two-event window is too compressed to add exposure. TSMC wafer hike (5-10%) still unquantified in sell-side EPS.",
+      "better_entry": "Post-NVDA Q2 FY27 Aug 26 with wafer hike margin impact clarified; or $190-195 on position-clearing capitulation with VIX reversal below 16."
+    },
+    {
+      "ticker": "AMD above $510 at AMD AI Day Day 1 open",
+      "reason": "AMD failed to hold its +4% premarket Rosenblatt upgrade gap on July 21, closing -1.39% at $503. The market demonstrated it cannot hold a high-profile analyst gap without fresh product information. Lisa Su's keynote — the actual information delivery — is July 23, not July 22. Buying an AMD AI Day Day 1 open gap repeats the same premarket-exhaustion pattern.",
+      "better_entry": "Post-Lisa Su keynote (July 23 9:30am PT) with MI450 roadmap, hyperscaler wins, and Kimi K3 response confirmed; or $490-495 on Day 1 disappointment."
+    },
+    {
+      "ticker": "TSLA pre-earnings add",
+      "reason": "480K deliveries known; gross margin (>15% base, >18-20% re-rate) is the unknown that resolves tonight AMC. Options imply 7.6% swing; $550M bearish options position outstanding. Adding pre-print extends binary risk on a metric entirely unknown until the print.",
+      "better_entry": "Post-July 22 Q2 with confirmed gross margin >15% and FSD revenue recognition; or below $350 on a miss."
+    },
+    {
+      "ticker": "MU after +12% single-session gap",
+      "reason": "Micron's surge responded to a Morgan Stanley price FORECAST, not actual HBM or DRAM pricing data. Buying a 12% gap into a forecasted outcome creates asymmetric downside if Q4 memory pricing comes in below the 25% estimate.",
+      "better_entry": "Next Micron earnings (late August) with actual HBM and DRAM pricing data; or pullback to $880-900 on broad market profit-taking."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "GOOGL",
+      "direction": "long",
+      "thesis": "Pre-close Monday GOOGL long (~$648 entry, now ~$660) remains intact entering July 22 Q2 AH. AMD's Microsoft Helios deal has already absorbed the AI-demand-disruption narrative that would have dominated the Cloud call; Cloud backlog $462B (40%+ QoQ); 43/53 analysts Strong Buy; KeyBanc PT $445; Citizens JMP Buy/$515. Polymarket gives GOOGL 77.78% historical beat probability against EPS of $2.89.",
+      "entry": "Hold existing position (~$648 Monday entry, now ~$660). Stop $635. Target $685-700 on Cloud beat + Q3 AI revenue guide.",
+      "invalidation": "GOOGL Q2 misses Cloud revenue estimates OR management confirms Gemini 3.5 Pro delay persists into H1 2027 OR Moonshot AI competitive impact on Search share explicitly disclosed. Exit immediately on Cloud miss.",
+      "conviction": "medium",
+      "horizon": "Through July 22 AH and July 23 open reaction"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "WTI settled ~$84.42 — up $2.13 from morning's $82.29 — after Iran attacked a tanker in the Strait of Hormuz and Houthi militants declared a maritime embargo against Saudi Arabia, adding ~2.5M bbl/day to the supply-disruption risk. Dual supply-shock vectors (Hormuz restriction + Houthi embargo) make August CPI oil pass-through structurally more embedded than the morning's framing implied.",
+      "entry": "Maintain 20% XLE (confirmed at Monday open). Reduce to 8% ONLY on Iran ceasefire formally accepted with Hormuz reopening AND WTI two consecutive closes below $70.",
+      "invalidation": "Iran-US ceasefire formally agreed; Hormuz transit exceeds 10 vessels/day; WTI two consecutive closes below $70.",
+      "conviction": "medium",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "September hike probability ~48.7% unchanged from morning — rate-shock tail risk has not compressed further. WTI's re-escalation to $84.42 on Iran/Houthi news embeds additional August CPI oil pass-through risk. 30Y above 5.00% for 12th+ consecutive session. Maintain IWM August puts at 50% of original size; TLT short above $88-89. FOMC July 28-29 is the rate-setting clearing event.",
+      "entry": "Maintain IWM August puts at 50% of original size. Maintain TLT short above $88-89. Reassess after FOMC July 28-29.",
+      "invalidation": "WTI closes below $79 AND September hike prob confirms below 40% AND VIX closes below 16 for second consecutive session. Exit positions simultaneously on all three.",
+      "conviction": "low",
+      "horizon": "Through FOMC July 28-29"
+    }
+  ],
+  "bear_case": "Counter-thesis: The July 21 rally was memory-led short-covering, not broad AI infrastructure confirmation. Micron's 12% surge responded to a Morgan Stanley price forecast, not actual pricing data, while the two most consequential AI stocks — NVDA (+1.4%) and AMD (-1.4%) — significantly underperformed the 5.2% sector gain. AMD's intraday reversal from +4% premarket to a -1.4% close is a direct warning signal: if the market cannot hold a gap on a Rosenblatt Top Pick upgrade with a $175 price-target increase, the bar for AMD AI Day Day 1 to sustain a gap is materially higher. WTI rising to $84.42 on the same session SPX cleared 7,480 is a split signal — equity bulls are pricing in earnings relief while oil markets are pricing in further Hormuz escalation via a new Houthi maritime embargo against Saudi Arabia. A GOOGL Cloud miss on July 22 AMC would immediately test whether the 7,480 SPX break was structural or a one-session short-squeeze overshoot, resetting the upgrade clock to zero and extending the STEP ASIDE regime into a fifth week. Invalidation: if GOOGL Cloud revenue growth exceeds 22% YoY and TSLA gross margin exceeds 15%, the double-beat confirms the July 21 SPX break was structural, not a squeeze.",
+  "body_mdx": "data/briefings/markets/2026-07-21-night.mdx"
+}
