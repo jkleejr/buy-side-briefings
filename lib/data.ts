@@ -548,8 +548,8 @@ export type RecentMention = {
   routine: string;
   note: string;
   sentiment: "positive" | "neutral" | "negative";
-  verdict_code: VerdictCode;
-  verdict_label: string;
+  /** The briefing's plain-English headline — what happened, not a call. */
+  verdict_headline?: string;
 };
 
 /**
@@ -574,8 +574,7 @@ export function getRecentMentionsByTicker(
         routine: v.routine,
         note: m.note,
         sentiment: m.sentiment,
-        verdict_code: v.verdict.code,
-        verdict_label: v.verdict.label,
+        verdict_headline: headlineFor(v.verdict),
       });
     }
     for (const d of v.dont_buy ?? []) {
@@ -587,8 +586,7 @@ export function getRecentMentionsByTicker(
         routine: v.routine,
         note: `Don't buy — ${d.reason}. Better entry ${d.better_entry}.`,
         sentiment: "negative",
-        verdict_code: v.verdict.code,
-        verdict_label: v.verdict.label,
+        verdict_headline: headlineFor(v.verdict),
       });
     }
     if (map.size === wanted.size) break; // every ticker matched

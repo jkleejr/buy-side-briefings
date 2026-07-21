@@ -9,14 +9,11 @@ import {
   getVerdictByRef,
 } from "@/lib/data";
 import { getSpxDailyCloses, type DailyClose } from "@/lib/markets";
-import { scoreVerdict, type ReturnWindow } from "@/lib/verdict-scoring";
 import {
   formatBriefingTitle,
-  formatPct,
   formatRelativeTime,
   readMinutes,
 } from "@/lib/utils";
-import Panel from "@/components/panel";
 import type { RegimeIndicator, SupportingPoint } from "@/lib/data";
 
 export const revalidate = 300;
@@ -36,53 +33,6 @@ export async function generateMetadata({
   return { title: formatBriefingTitle(briefing) };
 }
 
-function ScoreCell({
-  label,
-  w,
-  isRight,
-}: {
-  label: string;
-  w: ReturnWindow;
-  isRight: boolean | null;
-}) {
-  const pct = w.pct;
-  const cls =
-    pct === null
-      ? "text-[var(--dim)]"
-      : pct > 0
-        ? "text-[var(--up)]"
-        : pct < 0
-          ? "text-[var(--down)]"
-          : "text-[var(--dim)]";
-  const verdict =
-    w.pending
-      ? "pending"
-      : isRight === null
-        ? "informational"
-        : isRight
-          ? "right"
-          : "wrong";
-  const verdictCls =
-    isRight === null
-      ? "text-[var(--dim)]"
-      : isRight
-        ? "text-[var(--up)]"
-        : "text-[var(--down)]";
-  return (
-    <div className="border border-[var(--border)] bg-[var(--background)] px-2 py-1.5">
-      <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
-        {label}
-      </div>
-      <div className={`mt-0.5 font-mono text-[16px] ${cls}`}>
-        {w.pending ? "—" : pct === null ? "—" : formatPct(pct)}
-      </div>
-      <div className={`font-mono text-[10px] uppercase tracking-widest ${verdictCls}`}>
-        {verdict}
-      </div>
-    </div>
-  );
-}
-
 export default async function BriefingPage({
   params,
 }: {
@@ -95,11 +45,9 @@ export default async function BriefingPage({
   const verdictRef = briefing.verdict_ref;
   const verdict = verdictRef ? getVerdictByRef(verdictRef) : null;
 
-  // SPX scoring only applies to the markets routine; crypto verdicts carry a
-  // crypto snapshot and aren't graded against the S&P 500.
-  const scorable = verdict && verdict.routine === "markets" ? verdict : null;
-  const spxSeries = scorable ? await getSpxDailyCloses(9) : [];
-  const score = scorable ? scoreVerdict(scorable, spxSeries) : null;
+  // The regime figure still wants SPX closes; nothing is graded against them.
+  const spxSeries =
+    verdict && verdict.routine === "markets" ? await getSpxDailyCloses(9) : [];
 
   const points = verdict?.verdict.supporting_data ?? [];
   const fullReadMin = readMinutes(briefing.body);
@@ -176,28 +124,6 @@ export default async function BriefingPage({
         </div>
       )}
 
-      {verdict && score && (
-        <Panel
-          code="SCORE"
-          title="Was this call right?"
-        >
-          <div className="grid grid-cols-1 gap-1 p-2 sm:grid-cols-3">
-            <ScoreCell label="+1d" w={score.d1} isRight={score.right_d1} />
-            <ScoreCell label="+5d" w={score.d5} isRight={score.right_d5} />
-            <ScoreCell
-              label="+20d"
-              w={score.d20}
-              isRight={score.right_d20}
-            />
-          </div>
-          {score.base_close !== null && (
-            <div className="border-t border-[var(--border)] px-2 py-1 font-mono text-[10px] text-[var(--dim)]">
-              SPX base close {score.base_date} ·{" "}
-              {score.base_close.toLocaleString("en-US", { maximumFractionDigits: 2 })}
-            </div>
-          )}
-        </Panel>
-      )}
     </article>
   );
 }
@@ -305,14 +231,6 @@ function Tier({
     </section>
   );
 }
-
-const STANCE: Record<string, { label: string; bg: string }> = {
-  buy: { label: "Buy", bg: "#2f7d4f" },
-  hold: { label: "Hold", bg: "#b8842a" },
-  step_aside: { label: "Step aside", bg: "#b06a1e" },
-  aside: { label: "Step aside", bg: "#b06a1e" },
-  bearish: { label: "Bearish", bg: "#b0392f" },
-};
 
 /** First sentence of a longer rationale, for a headline fallback. */
 function firstSentence(text: string | undefined): string {
@@ -461,8 +379,6 @@ function VerdictHead({
 }: {
   verdict: {
     verdict: {
-      code: string;
-      conviction: string;
       rationale_short: string;
       headline?: string;
     };
@@ -472,22 +388,12 @@ function VerdictHead({
   bullets: string[];
   next: { token: string; day: string } | null;
 }) {
-  const stance = STANCE[verdict.verdict.code] ?? { label: verdict.verdict.code, bg: "#6d6a62" };
   const headline =
     verdict.verdict.headline?.trim() || firstSentence(verdict.verdict.rationale_short);
   return (
     <div className="pt-2">
       <div className="flex flex-wrap items-center gap-3">
-        <span
-          className="rounded-sm px-2.5 py-1 font-mono text-[12px] font-bold uppercase tracking-[0.08em] text-white"
-          style={{ background: stance.bg }}
-        >
-          {stance.label}
-        </span>
-        <span className="font-mono text-[12px] capitalize text-[var(--dim)]">
-          {verdict.verdict.conviction} conviction
-        </span>
-        <span className="ml-auto font-mono text-[11px] text-[var(--faint)]">
+        <span className="font-mono text-[11px] text-[var(--faint)]">
           generated {formatRelativeTime(verdict.generated_at)}
         </span>
       </div>

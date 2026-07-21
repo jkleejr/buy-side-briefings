@@ -10,7 +10,7 @@ import {
   type ChartRange,
   type ChartPoint,
 } from "@/lib/chart-ranges";
-import { formatPct, verdictColor } from "@/lib/utils";
+import { formatPct } from "@/lib/utils";
 import Panel from "./panel";
 import RangeSelector from "./range-selector";
 import Candles from "./candles";
@@ -180,9 +180,9 @@ export default function WatchlistCards({
                     <div className="flex items-baseline gap-2 font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
                       <Link
                         href={`/briefings/${mention.routine}/${mention.date}-${mention.window}`}
-                        className={`${verdictColor(mention.verdict_code).text} hover:underline`}
+                        className="text-[var(--amber)] hover:underline"
                       >
-                        ▸ {mention.verdict_label}
+                        ▸ {mention.verdict_headline ?? "Briefing"}
                       </Link>
                       <span className="text-[var(--dim)]">
                         {mention.date} {mention.window ?? ""}

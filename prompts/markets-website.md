@@ -11,7 +11,7 @@ Briefings should read like a **professional research note**, not a blog post or 
 - **Third-person analytical voice.** Avoid "I think," "my view," "a smart bear of MY call would say." Use "the data suggests," "the setup implies," "counter-argument:" etc.
 - **No meta or introspective phrases.** Avoid "the most uncomfortable observation," "am I getting too confident," "honest watch," "the meta thing is," "gut check." These belong in a personal blog, not a research note.
 - **Lead with the call and the data.** Every section opens with a finding or claim, not a framing.
-- **Bear case as counter-thesis.** The bear-case section is the strongest argument *against* the verdict, written as if a different desk wrote it. Do not write it as your own self-doubt.
+- **Bear case as counter-thesis.** The bear-case section is the strongest argument *against* the read, written as if a different desk wrote it. Do not write it as your own self-doubt.
 - **Invalidation level explicitly stated** at the end of every directional call: "If SPX reclaims X, the call is wrong."
 - **Italics for ticker names or terminology only.** Not for emphasis on personal feeling.
 
@@ -42,7 +42,7 @@ Run searches in parallel where possible. Stay under ~20 searches. If a topic isn
 
 **Stocks to check:** NVDA, GOOGL, AAPL, MSFT, META, AMZN, TSLA, AMD, TSM, AVGO, PLTR. Note any that moved meaningfully.
 
-**Sentiment / positioning (required for the verdict):**
+**Sentiment / positioning (required):**
 - VIX level + term structure
 - AAII bull/bear if available; CNN Fear & Greed
 - High-yield credit spreads
@@ -51,15 +51,25 @@ Run searches in parallel where possible. Stay under ~20 searches. If a topic isn
 
 **News scan:** AI/semis/quantum headlines. Fed/macro. Politics affecting markets. Earnings today. China/Iran/oil geopolitics.
 
-## Step 3 — Form the verdict
+## Step 3 — Form the read
 
-Pick exactly ONE:
-- 🟢 **buy** — risk-reward favors adding longs; sentiment NOT over-bullish; breadth healthy
-- 🟡 **hold** — pick names carefully; broad-index exposure unattractive; mixed signals
-- 🟠 **step_aside** — wait for better entry; raise cash; don't chase rips; conditions deteriorating
-- 🔴 **bearish** — actively short, hedge, reduce gross; conditions hostile to longs
+**Do not issue a standing buy/hold/step-aside/bearish verdict.** That framing is
+retired: the site no longer tracks or grades a daily call, and nothing renders
+one. Your job is to say what happened and what it means.
 
-The verdict MUST be backed by 4–6 specific data points with **inline source citations** (markdown links). No vibes. No "feels overbought." If you can't cite a number, don't use it.
+Write `verdict.headline` — what actually happened, in plain English, ~90
+characters, no prices or jargon. This is the line the home page and the archive
+lead with, so it carries the session.
+
+A directional call is allowed, but only when the tape genuinely warrants one —
+a level breaking, a catalyst resolving, a setup invalidating. When you make one,
+put it in `rationale_short` as a sentence in context ("...which argues for
+waiting until X confirms"), not as a code or a label. Most sessions do not
+warrant one. Silence is a valid output; a manufactured call is not.
+
+The read MUST be backed by 4–6 specific data points with **inline source
+citations** (markdown links). No vibes. No "feels overbought." If you can't cite
+a number, don't use it.
 
 ## Step 4 — Form 2–3 trade setups with mixed direction
 
@@ -83,11 +93,9 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
   "generated_at": "ISO 8601 timestamp UTC",
   "is_seed": false,
   "verdict": {
-    "code": "buy" | "hold" | "step_aside" | "bearish",
-    "emoji": "🟢" | "🟡" | "🟠" | "🔴",
-    "label": "BUY DAY / SELECTIVE — short headline",
-    "conviction": "low" | "medium" | "high",
-    "rationale_short": "1-3 sentence summary of the call",
+    "headline": "plain-English news headline, ~90 chars, no prices or jargon",
+    "label": "short tape summary — no BUY/HOLD/STEP ASIDE prefix",
+    "rationale_short": "1-3 sentence read; include a directional call ONLY if the tape warrants one",
     "supporting_data": [
       { "label": "data point with number", "url": "source URL" }
     ]
@@ -225,6 +233,11 @@ git push origin deploy
 - If a market is closed (weekend, holiday) and the cron still fires, write a *reflection* briefing focused on what's known since the last close + what to position for next session. Mark `"window": "morning"` and adjust the methodology note.
 - If the `git push` fails, retry once. If it fails again, leave the commit locally and exit with a clear log line — do not amend, do not force-push.
 
-## Conviction calibration — important
+## Calibration — important
 
-Look at the track record at `data/verdicts/` to see how recent calls scored. **Avoid procyclical conviction inflation** — don't firm to "high" on day 2 of a trend; that's the pattern that caught us May 18 (high-conviction STEP ASIDE at the intraday low). Conviction `high` requires: (1) the prior call was right at +1d, AND (2) the new data confirms the same direction, AND (3) no contradicting cross-asset signal. Otherwise default to `medium`.
+The failure mode this replaces was procyclical conviction inflation: firming a
+call on day 2 of a trend, which is what caught us on May 18 (a high-conviction
+STEP ASIDE printed at the intraday low). The same discipline applies to the
+directional calls you still make in `rationale_short` — read the last few days
+in `data/verdicts/` first, and if the only new evidence is that the trend
+continued, say the trend continued rather than escalating the language.
