@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { getAllKospiVerdicts } from "@/lib/data";
-import { cn, formatLevel, formatPct, verdictColor } from "@/lib/utils";
+import { cn, formatLevel, formatPct } from "@/lib/utils";
 import KospiBriefingCard from "@/components/kospi-briefing-card";
 import { FreshnessNotice } from "@/components/stale-banner";
 import { getKospiFreshness } from "@/lib/freshness";
+import { verdictHeadline } from "@/lib/verdict-headline";
 
 export const metadata = {
   title: "KOSPI — Korean Market News & Updates — Buy-Side Briefings",
@@ -24,7 +25,6 @@ function sentimentColor(s: "positive" | "neutral" | "negative"): string {
 export default function KospiPage() {
   const verdicts = getAllKospiVerdicts();
   const latest = verdicts[0] ?? null;
-  const color = latest ? verdictColor(latest.verdict.code) : null;
   const snap = latest?.snapshot ?? {};
 
   return (
@@ -57,14 +57,6 @@ export default function KospiPage() {
               <span className="text-[var(--amber)]">Latest market update</span>
               <span className="text-[var(--dim)]">·</span>
               <span className="text-[var(--foreground)]">{latest.date}</span>
-              {color && (
-                <>
-                  <span className="text-[var(--dim)]">·</span>
-                  <span className={cn("font-bold", color.text)}>
-                    {latest.verdict.emoji} {latest.verdict.code.toUpperCase().replace("_", " ")}
-                  </span>
-                </>
-              )}
               <Link
                 href={`/briefings/${latest.routine}/${latest.date}-${latest.window}`}
                 className="ml-auto text-[var(--cyan-term)] hover:underline"
@@ -115,8 +107,8 @@ export default function KospiPage() {
                   />
                 )}
               </div>
-              <h2 className={cn("font-mono text-[13px] font-bold leading-snug", color?.text)}>
-                {latest.verdict.label}
+              <h2 className="font-mono text-[13px] font-bold leading-snug text-[var(--foreground)]">
+                {verdictHeadline(latest.verdict) ?? latest.verdict.rationale_short}
               </h2>
               <p className="font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
                 {latest.verdict.rationale_short}

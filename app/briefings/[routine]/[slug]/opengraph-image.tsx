@@ -1,25 +1,13 @@
 import { ImageResponse } from "next/og";
 import { getBriefing, getAllMarketsVerdicts } from "@/lib/data";
 import { formatBriefingTitle } from "@/lib/utils";
+import { verdictHeadline } from "@/lib/verdict-headline";
 
 export const runtime = "nodejs"; // needs fs to read briefing files
 export const alt = "Buy-Side Briefings — Markets verdict";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Verdict-code → hex color, matching the in-app palette.
-const CODE_COLOR: Record<string, string> = {
-  buy: "#22c55e",
-  hold: "#facc15",
-  step_aside: "#fb923c",
-  bearish: "#ef4444",
-};
-const CODE_EMOJI: Record<string, string> = {
-  buy: "🟢",
-  hold: "🟡",
-  step_aside: "🟠",
-  bearish: "🔴",
-};
 
 export default async function BriefingOgImage({
   params,
@@ -58,12 +46,11 @@ export default async function BriefingOgImage({
       )
     : null;
 
-  const code = verdict?.verdict.code ?? "hold";
-  const label = verdict?.verdict.label ?? "Briefing";
-  const emoji = verdict?.verdict.emoji ?? CODE_EMOJI[code] ?? "🟡";
-  const conviction = verdict?.verdict.conviction?.toUpperCase() ?? "";
   const rationale = verdict?.verdict.rationale_short ?? "";
-  const accentColor = CODE_COLOR[code] ?? "#facc15";
+  // The share card now leads with the news headline instead of a stance.
+  const headline = verdictHeadline(verdict?.verdict, 90) ?? "Briefing";
+  // One accent for every card now that the stance no longer colours it.
+  const accentColor = "#93a9e2";
   const title = formatBriefingTitle(briefing);
 
   return new ImageResponse(
@@ -116,28 +103,15 @@ export default async function BriefingOgImage({
               display: "flex",
               alignItems: "center",
               gap: 28,
-              fontSize: 84,
+              fontSize: 60,
               fontWeight: 700,
               lineHeight: 1.0,
               color: accentColor,
               textTransform: "uppercase",
             }}
           >
-            <span style={{ fontSize: 96 }}>{emoji}</span>
-            <span>{label}</span>
+            <span>{headline}</span>
           </div>
-          {conviction && (
-            <div
-              style={{
-                fontSize: 26,
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                color: "#71717a",
-              }}
-            >
-              Conviction: <span style={{ color: "#e4e4e7" }}>{conviction}</span>
-            </div>
-          )}
           {rationale && (
             <div
               style={{

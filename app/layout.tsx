@@ -47,7 +47,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <head>
+        {/* Stamps the saved theme before first paint. Without it the page
+            renders at the OS preference and then snaps to the chosen one — a
+            white flash for anyone who picked dark. Inline and synchronous on
+            purpose: it has to run before the body paints. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem("bsb:theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t}}catch(e){}`,
+          }}
+        />
+      </head>
       <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
         <SiteHeader />
         <StaleBanner />

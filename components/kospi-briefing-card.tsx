@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { KospiVerdict } from "@/lib/data";
-import { cn, formatLevel, formatPct, verdictColor } from "@/lib/utils";
+import { cn, formatLevel, formatPct } from "@/lib/utils";
+import { verdictHeadline } from "@/lib/verdict-headline";
 
 function formatDate(date: string): { day: string; md: string } {
   const d = new Date(`${date}T12:00:00Z`);
@@ -25,7 +26,6 @@ function SnapItem({ label, value, change }: { label: string; value: string; chan
 }
 
 export default function KospiBriefingCard({ verdict }: { verdict: KospiVerdict }) {
-  const color = verdictColor(verdict.verdict.code);
   const { day, md } = formatDate(verdict.date);
   const briefingHref = `/briefings/${verdict.routine}/${verdict.date}-${verdict.window}`;
 
@@ -44,12 +44,6 @@ export default function KospiBriefingCard({ verdict }: { verdict: KospiVerdict }
         <span className="text-[var(--foreground)]">{md}</span>
         <span className="text-[var(--dim)]">·</span>
         <span className="text-[var(--cyan-term)]">DAILY</span>
-        <span className="text-[var(--dim)]">·</span>
-        <span className={cn("font-bold", color.text)}>
-          {verdict.verdict.emoji} {verdict.verdict.code.toUpperCase().replace("_", " ")}
-        </span>
-        <span className="text-[var(--dim)]">·</span>
-        <span className="text-[var(--foreground)]">{verdict.verdict.conviction}</span>
         <Link
           href={briefingHref}
           className="ml-auto text-[var(--cyan-term)] hover:underline"
@@ -61,8 +55,8 @@ export default function KospiBriefingCard({ verdict }: { verdict: KospiVerdict }
       {/* Body */}
       <div className="space-y-1.5 px-2 py-2">
         {/* Headline label */}
-        <h3 className={cn("font-mono text-[13px] font-bold leading-snug", color.text)}>
-          {verdict.verdict.label}
+        <h3 className="font-mono text-[13px] font-bold leading-snug text-[var(--foreground)]">
+          {verdictHeadline(verdict.verdict) ?? verdict.verdict.rationale_short}
         </h3>
 
         {/* Snapshot strip */}

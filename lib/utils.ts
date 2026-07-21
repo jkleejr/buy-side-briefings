@@ -116,14 +116,6 @@ export function formatLevel(n: number | null | undefined): string {
   return n.toFixed(2);
 }
 
-/**
- * Display string for how long a markets verdict is meant to hold. Older
- * verdicts predate the field; they're tactical day-trader calls scored at
- * +5d/+20d, so that's the honest fallback.
- */
-export function verdictHorizon(horizon?: string): string {
-  return horizon && horizon.trim() ? horizon : "Days–2 weeks (tactical)";
-}
 
 const ROUTINE_FULL: Record<string, string> = {
   markets: "Markets Briefing",
@@ -135,6 +127,12 @@ const ROUTINE_FULL: Record<string, string> = {
   "pre-earnings": "Pre-Earnings Brief",
   "demand-signals": "Demand Signals",
 };
+
+/** Display name for a briefing window. "night" reads as "Evening" on the
+ *  site — the data key predates the wording. */
+export function windowLabel(w: string): string {
+  return WINDOW_LABEL[w] ?? w;
+}
 
 const WINDOW_LABEL: Record<string, string> = {
   morning: "Morning",
@@ -162,8 +160,30 @@ export function formatBriefingTitle(b: {
     year: "numeric",
     timeZone: "UTC",
   });
-  const win = b.window ? ` · ${WINDOW_LABEL[b.window] ?? b.window}` : "";
+  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
   return `${routineLabel} · ${day}, ${dateStr}${win}`;
+}
+
+/**
+ * Date-first line for list rows: "Monday, July 20, 2026 · Evening".
+ * Same as formatBriefingTitle without the routine prefix — every briefing in
+ * the archive is a markets one, so "Markets Briefing · " on all 121 rows was
+ * pure repetition pushing the date rightward.
+ */
+export function formatBriefingDateLine(b: {
+  date: string;
+  window?: string | null;
+}): string {
+  const d = new Date(`${b.date}T12:00:00Z`);
+  const day = d.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
+  const dateStr = d.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
+  return `${day}, ${dateStr}${win}`;
 }
 
 /**
@@ -182,49 +202,10 @@ export function formatBriefingTitleShort(b: {
     day: "numeric",
     timeZone: "UTC",
   });
-  const win = b.window ? ` · ${WINDOW_LABEL[b.window] ?? b.window}` : "";
+  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
   return `${dateStr}${win}`;
 }
 
-/**
- * Plain-English explanation of what each verdict code means and how it's
- * graded. Surfaced as a hover-tooltip wherever a verdict label is displayed.
- */
-const VERDICT_EXPLANATIONS: Record<string, string> = {
-  buy: "🟢 BUY — actively bullish. The analyst expects SPX up over the briefing's horizon (typically days to weeks). Usually paired with named entry levels and an invalidation. Graded RIGHT if SPX is up at the +1d/+5d/+20d marks.",
-  hold: "🟡 HOLD — no directional call. Either the setup is unclear or the bull and bear cases balance out. Informational rather than positioning advice; not graded right or wrong because there's no directional bet to score.",
-  step_aside:
-    "🟠 STEP ASIDE — cautious. Not actively short, but explicitly not chasing. 'Take some risk off, don't add new longs, wait for better entry.' Graded RIGHT if SPX is flat or down (i.e., you didn't miss meaningful upside by stepping aside).",
-  bearish:
-    "🔴 BEARISH — actively negative. The analyst expects SPX down. Often paired with a specific short, hedge, or inverse-ETF idea. Graded RIGHT if SPX is down at the +1d/+5d/+20d marks.",
-};
-
-export function getVerdictExplanation(code: string): string {
-  return (
-    VERDICT_EXPLANATIONS[code] ??
-    `Verdict code "${code}". Hover the labels on the dashboard or About page for an explanation.`
-  );
-}
-
-export function verdictColor(code: string): {
-  bg: string;
-  text: string;
-  ring: string;
-} {
-  switch (code) {
-    case "buy":
-      return { bg: "bg-emerald-500/10", text: "text-emerald-400", ring: "ring-emerald-500/30" };
-    case "hold":
-      return { bg: "bg-amber-500/10", text: "text-amber-400", ring: "ring-amber-500/30" };
-    case "step_aside":
-    case "aside":
-      return { bg: "bg-orange-500/10", text: "text-orange-400", ring: "ring-orange-500/30" };
-    case "bearish":
-      return { bg: "bg-red-500/10", text: "text-red-400", ring: "ring-red-500/30" };
-    default:
-      return { bg: "bg-zinc-500/10", text: "text-zinc-400", ring: "ring-zinc-500/30" };
-  }
-}
 
 /**
  * Honest read-time in minutes from the actual text (~200 wpm). The homepage

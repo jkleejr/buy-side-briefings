@@ -26,11 +26,11 @@ export default function AboutPage() {
           <p>
             The whole site is built around <span className="text-[var(--amber)]">one
             question per session</span>: <em>given everything happening right now, what
-            should I do?</em> The answer is a single time-stamped verdict (BUY, HOLD, STEP
-            ASIDE, or BEARISH) with conviction, cited data, and a mandatory bear case.
+            actually matters?</em> The answer is a time-stamped read — what happened,
+            the cited data behind it, and a mandatory bear case.
           </p>
           <p>
-            Three layers of context surround that verdict:
+            Three layers of context surround that read:
           </p>
           <ul className="ml-3 list-disc space-y-1 pl-2 text-[var(--foreground)] marker:text-[var(--amber-dim)]">
             <li>
@@ -87,8 +87,8 @@ export default function AboutPage() {
               <code className="border border-[var(--border)] bg-[var(--panel-head)] px-1 text-[var(--amber)]">
                 data/verdicts/&lt;routine&gt;-&lt;date&gt;-&lt;window&gt;.json
               </code>{" "}
-              — the structured verdict (code, conviction, supporting data, trade setups,
-              bear case, market snapshot).
+              — the structured record (headline, supporting data, trade setups,
+              bear case, market snapshot, regime levels).
             </li>
           </ul>
           <p>
@@ -107,57 +107,33 @@ export default function AboutPage() {
         </div>
       </Panel>
 
-      {/* ----- Section 3: How the verdict works ----- */}
-      <Panel code="VRDCT" title="How the verdict works">
+      {/* ----- Section 3: What a briefing carries ----- */}
+      <Panel code="BRIEF" title="What a briefing carries">
         <div className="space-y-3 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
-          <div className="space-y-2">
-            <p>
-              Every Markets briefing ends in <span className="text-[var(--amber)]">one
-              verdict code</span>. The four possibilities, and what each means:
-            </p>
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
-                <div className="font-mono text-[14px] text-[var(--up)]">🟢 BUY</div>
-                <div className="mt-1 text-[11px] text-[var(--dim)]">
-                  Actively bullish. Direction: expect SPX up over the briefing&apos;s
-                  horizon. Includes named entry levels and invalidation.
-                </div>
-              </div>
-              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
-                <div className="font-mono text-[14px] text-[var(--amber)]">🟡 HOLD</div>
-                <div className="mt-1 text-[11px] text-[var(--dim)]">
-                  No directional call. Either the setup is unclear or both bull and bear
-                  cases balance out. Informational — not graded right or wrong.
-                </div>
-              </div>
-              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
-                <div className="font-mono text-[14px] text-[var(--warn)]">🟠 STEP ASIDE</div>
-                <div className="mt-1 text-[11px] text-[var(--dim)]">
-                  Cautious — not actively short, but explicitly not chasing. Graded right
-                  if SPX is flat or down (you didn&apos;t miss meaningful upside).
-                </div>
-              </div>
-              <div className="border border-[var(--border)] bg-[var(--background)] p-2">
-                <div className="font-mono text-[14px] text-[var(--down)]">🔴 BEARISH</div>
-                <div className="mt-1 text-[11px] text-[var(--dim)]">
-                  Actively negative. Direction: expect SPX down. May include a specific
-                  short, hedge, or pair trade.
-                </div>
-              </div>
-            </div>
-          </div>
+          <p>
+            A briefing is a read on the session, not a standing buy or sell call.
+            Earlier editions ended in a single graded verdict — 🟢 BUY / 🟡 HOLD /
+            🟠 STEP ASIDE / 🔴 BEARISH — scored against SPX returns at +1, +5 and
+            +20 days. That framing is retired. Past briefings keep the verdicts
+            they were written with, but the site no longer organises itself
+            around them, and nothing is graded.
+          </p>
+          <p className="text-[var(--amber-dim)]">
+            A directional call still appears when one is genuinely warranted —
+            it just isn&apos;t the point, and there is no obligation to produce
+            one every session.
+          </p>
 
           <div className="space-y-2">
-            <p className="text-[var(--amber-dim)]">What each verdict comes with:</p>
+            <p className="text-[var(--amber-dim)]">What each briefing comes with:</p>
             <ul className="ml-3 list-disc space-y-1 pl-2 marker:text-[var(--amber-dim)]">
               <li>
-                <span className="text-[var(--amber)]">Conviction</span> — low / medium /
-                high. Not every call is high-conviction; honest hedging is part of the
-                discipline.
+                <span className="text-[var(--amber)]">Headline</span> — what actually
+                happened, in plain English. No prices, no jargon.
               </li>
               <li>
                 <span className="text-[var(--amber)]">Rationale</span> — one or two
-                sentences capturing the core thesis.
+                sentences capturing the core read.
               </li>
               <li>
                 <span className="text-[var(--amber)]">Supporting data</span> — 4–6 cited
@@ -165,12 +141,12 @@ export default function AboutPage() {
               </li>
               <li>
                 <span className="text-[var(--amber)]">Mandatory bear case</span> — the
-                strongest argument <em>against</em> the call. Written into the briefing
-                schema so it can&apos;t be skipped.
+                strongest argument <em>against</em> the read. Written into the schema
+                so it can&apos;t be skipped.
               </li>
               <li>
                 <span className="text-[var(--amber)]">Trade setups</span> (optional) — named
-                asset, direction, entry, invalidation, conviction, time horizon.
+                asset, direction, entry, invalidation, time horizon.
               </li>
               <li>
                 <span className="text-[var(--amber)]">&ldquo;Don&apos;t buy&rdquo; list</span>{" "}
@@ -179,43 +155,14 @@ export default function AboutPage() {
               </li>
               <li>
                 <span className="text-[var(--amber)]">Market snapshot</span> — index/rate
-                levels captured at the moment the briefing was written, so the call is
+                levels captured at the moment the briefing was written, so the read is
                 anchored to a specific tape.
               </li>
-            </ul>
-          </div>
-
-          <div className="space-y-2">
-            <p className="text-[var(--amber-dim)]">How a verdict gets graded:</p>
-            <p>
-              Every verdict is scored automatically against SPX returns at
-              three windows: <span className="text-[var(--amber)]">+1 trading day</span>,{" "}
-              <span className="text-[var(--amber)]">+5 trading days</span>, and{" "}
-              <span className="text-[var(--amber)]">+20 trading days</span>. The scoring
-              rules:
-            </p>
-            <ul className="ml-3 list-disc space-y-1 pl-2 marker:text-[var(--amber-dim)]">
               <li>
-                <span className="text-[var(--up)]">BUY</span> — right if SPX is up over the
-                window.
-              </li>
-              <li>
-                <span className="text-[var(--down)]">BEARISH</span> — right if SPX is down.
-              </li>
-              <li>
-                <span className="text-[var(--warn)]">STEP ASIDE</span> — right if SPX is flat or
-                down (i.e., you didn&apos;t miss meaningful upside).
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">HOLD</span> — informational, not
-                graded.
+                <span className="text-[var(--amber)]">Regime levels</span> — the SPX floor
+                and VIX gate in play, with where the tape sat against them.
               </li>
             </ul>
-            <p>
-              Windows show <span className="text-[var(--dim)]">pending</span> until enough
-              trading days have elapsed. The aggregate hit rate becomes meaningful around
-              ~20 verdicts — below that, treat it as anecdote, not signal.
-            </p>
           </div>
         </div>
       </Panel>

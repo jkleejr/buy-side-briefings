@@ -63,10 +63,12 @@ const BAR_INTERVAL: Record<string, string> = {
 /** How many levels to show either side of the price. */
 const ZONES_PER_SIDE = 2;
 
-/** Share of the plot given to the volume pane when it's on. */
+/**
+ * Share of the plot height the volume bars rise into, measured from the
+ * baseline. Volume is an overlay, not a pane — the price scale is unaffected
+ * by it, so toggling volume never moves a candle.
+ */
 const VOL_FRACTION = 0.2;
-/** Gap between the price area and the volume pane. */
-const VOL_GAP = 10;
 
 /** Level prices with thousands separators — "7,421.82" scans, "7421.82" doesn't. */
 function fmtLevel(v: number): string {
@@ -107,6 +109,14 @@ type Props = {
    * "Bitcoin" beats "BTC-USD".
    */
   labels?: Record<string, string>;
+  /**
+   * Whether the volume pane and the derived levels start switched on. Both
+   * default off: the chart opens as plain price, and the overlays are there
+   * when you go looking for them. A page built around the levels (the
+   * watchlist panel is titled for them) turns them back on.
+   */
+  defaultVolume?: boolean;
+  defaultLevels?: boolean;
 };
 
 export default function LevelsChart({
@@ -115,13 +125,19 @@ export default function LevelsChart({
   variant = "full",
   title,
   labels,
+  defaultVolume = false,
+  defaultLevels = false,
 }: Props) {
   const { H, padR: PAD_R, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
   const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
-  const [showVolume, setShowVolume] = useState(true);
-  const [showLevels, setShowLevels] = useState(true);
+  const [showVolume, setShowVolume] = useState(defaultVolume);
+  const [showLevels, setShowLevels] = useState(defaultLevels);
+  // Candles carry direction bar by bar; the line carries shape. On a long
+  // window the bodies get thin enough that the shape is what you're reading
+  // anyway, so let it be read directly.
+  const [mode, setMode] = useState<"candle" | "line">("candle");
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -224,10 +240,10 @@ export default function LevelsChart({
     // axis. Above a few multiples, switch to log so equal % moves get equal
     // vertical space, which is how a price chart should read anyway.
     const useLog = lo > 0 && hi / lo > 4;
-    // The volume pane eats the bottom of the plot, so the price scale has to be
-    // told about it — otherwise candles draw straight through the bars.
-    const volH = volumeOn ? (H - PAD_T - PAD_B) * VOL_FRACTION : 0;
-    const plotH = H - PAD_T - PAD_B - volH - (volumeOn ? VOL_GAP : 0);
+    // Price always owns the whole plot. Volume is drawn over the bottom of it
+    // rather than carving out a pane, so switching volume on and off leaves
+    // every candle exactly where it was.
+    const plotH = H - PAD_T - PAD_B;
 
     let y: (v: number) => number;
     if (useLog) {
@@ -247,16 +263,29 @@ export default function LevelsChart({
 
     const x = (i: number) => PAD_L + (i / (bars.length - 1)) * (W - PAD_L - PAD_R);
 
-    // Volume pane: baseline at the bottom, bars grown upward from it.
-    const volTop = PAD_T + plotH + (volumeOn ? VOL_GAP : 0);
-    const volBase = H - PAD_B;
+    // Volume overlay: baseline at the foot of the plot, bars grown upward into
+    // the bottom VOL_FRACTION of it.
+    const volBase = PAD_T + plotH;
+    const volTop = volBase - plotH * VOL_FRACTION;
     const volY = (v: number) =>
       maxVolume > 0
         ? volBase - Math.max(v > 0 ? 1 : 0, (v / maxVolume) * (volBase - volTop))
         : volBase;
 
     return { x, y, useLog, volTop, volBase, volY };
-  }, [bars, analysis, zones, H, PAD_R, volumeOn, maxVolume]);
+  }, [bars, analysis, zones, H, PAD_R, maxVolume]);
+
+  // One "M…L…" through the closes. Built here rather than inline so it isn't
+  // re-joined on every hover — the crosshair sets state on pointer move.
+  const closePath = useMemo(() => {
+    if (!bars || !scale) return "";
+    return bars
+      .map(
+        (b, i) =>
+          `${i ? "L" : "M"}${scale.x(i).toFixed(1)},${scale.y(b.close).toFixed(1)}`,
+      )
+      .join("");
+  }, [bars, scale]);
 
   const labelYs = useMemo(() => {
     if (!scale) return [];
@@ -583,6 +612,23 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
+            onClick={() => setMode((m) => (m === "line" ? "candle" : "line"))}
+            aria-pressed={mode === "line"}
+            title={
+              mode === "line"
+                ? "Switch to candles — open, high, low and close per bar"
+                : "Switch to a line through the closes"
+            }
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              mode === "line"
+                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+            }`}
+          >
+            Line
+          </button>
+          <button
+            type="button"
             onClick={() => setShowVolume((v) => !v)}
             disabled={!hasVolume}
             aria-pressed={volumeOn}
@@ -661,8 +707,8 @@ export default function LevelsChart({
               role="img"
               aria-label={
                 levelsOn
-                  ? `${symbol} ${range} candlestick chart with ${zones.length} derived support and resistance levels`
-                  : `${symbol} ${range} candlestick chart, support and resistance hidden`
+                  ? `${symbol} ${range} ${mode === "line" ? "line" : "candlestick"} chart with ${zones.length} derived support and resistance levels`
+                  : `${symbol} ${range} ${mode === "line" ? "line" : "candlestick"} chart, support and resistance hidden`
               }
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
@@ -748,8 +794,9 @@ export default function LevelsChart({
 
               {volumeOn && (
                 <g>
-                  {/* Baseline, then a bar per session. Direction matches the
-                      candle above it so the two read as one column. */}
+                  {/* Baseline, then a bar per session, drawn before the price
+                      so candles and the line sit over the top. Direction
+                      matches the bar above it so the two read as one column. */}
                   <line
                     x1={PAD_L}
                     x2={W - PAD_R}
@@ -777,24 +824,41 @@ export default function LevelsChart({
                         width={bw}
                         height={Math.max(0.5, scale.volBase - top)}
                         fill={up ? "var(--up)" : "var(--down)"}
-                        opacity={0.4}
+                        // Lighter than the old dedicated pane: these now sit
+                        // under the price action rather than beside it, and
+                        // shouldn't compete with it.
+                        opacity={0.26}
                       />
                     );
                   })}
-                  <text
-                    x={W - PAD_R + 9}
-                    y={scale.volTop + 9}
-                    fill="var(--faint)"
-                    fontFamily="var(--mono)"
-                    fontSize={8.5}
-                  >
-                    vol · peak {fmtVolume(maxVolume)}
-                  </text>
                 </g>
               )}
 
               <g clipPath={`url(#${clipId})`}>
-              {bars.map((b, i) => {
+              {mode === "line" ? (
+                <>
+                  {/* Drawn twice: a wider stroke in the panel colour first, so
+                      the line reads as sitting on top of the bands rather than
+                      dissolving into them, then the line itself over it. */}
+                  <path
+                    d={closePath}
+                    fill="none"
+                    stroke="var(--panel)"
+                    strokeWidth={4}
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d={closePath}
+                    fill="none"
+                    stroke="var(--foreground)"
+                    strokeWidth={2}
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                  />
+                </>
+              ) : (
+              bars.map((b, i) => {
                 const o = b.open ?? b.close;
                 const hi = b.high ?? b.close;
                 const lo = b.low ?? b.close;
@@ -823,8 +887,22 @@ export default function LevelsChart({
                     />
                   </g>
                 );
-              })}
+              })
+              )}
               </g>
+
+              {/* Outside the clip: x(last) lands exactly on the right edge, so
+                  a clipped dot would lose its outer half. */}
+              {mode === "line" && bars.length > 0 && (
+                <circle
+                  cx={scale.x(bars.length - 1)}
+                  cy={scale.y(bars[bars.length - 1].close)}
+                  r={4.5}
+                  fill="var(--foreground)"
+                  stroke="var(--panel)"
+                  strokeWidth={2}
+                />
+              )}
 
               {hover && (
                 <>
@@ -955,6 +1033,16 @@ export default function LevelsChart({
               Support
             </span>
             <span>A level is a price the market kept turning at</span>
+          </>
+        )}
+        {mode === "line" && (
+          <span>
+            <i className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px] bg-[var(--foreground)]" />
+            Close
+          </span>
+        )}
+        {levelsOn && (
+          <>
             <span className="text-[var(--faint)]">
               Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
             </span>

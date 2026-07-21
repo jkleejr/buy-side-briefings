@@ -2,6 +2,7 @@ import { todayET } from "@/lib/utils";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
 import PaletteButton from "./palette-button";
+import ThemeToggle from "./theme-toggle";
 
 // Ordered by the daily job-to-be-done: today's read first, then the archive,
 // then standing reports, then the audit trail.
@@ -27,6 +28,7 @@ export default function SiteHeader() {
 
         <div className="ml-auto flex shrink-0 items-baseline gap-3 text-[12px] italic text-[var(--dim)]">
           <PaletteButton />
+          <ThemeToggle />
           <span className="hidden lg:inline">{dateStr}</span>
           <MobileNav items={NAV} />
         </div>
