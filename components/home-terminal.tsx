@@ -194,6 +194,18 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
   const nodes = Array.from(byDate.values());
   const firstAhead = nodes.findIndex((n) => !n.past);
 
+  // Which nodes open a new week. The calendar is sparse — Fri 17 can be
+  // followed by Tue 21 — so this compares the Monday each date belongs to
+  // rather than looking for a Monday node that may not exist.
+  const weekStart = (iso: string) => {
+    const d = new Date(`${iso}T12:00:00Z`);
+    d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+    return d.toISOString().slice(0, 10);
+  };
+  const startsWeek = nodes.map(
+    (n, i) => i > 0 && weekStart(n.date) !== weekStart(nodes[i - 1].date),
+  );
+
   const scroller = useRef<HTMLDivElement>(null);
 
   // Where the present sits, in pixels. Columns are a fixed NODE_W, so this is
@@ -300,6 +312,15 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
                 <span
                   aria-hidden
                   className="absolute -left-px top-0 bottom-0 border-l border-dashed border-[var(--amber-dim)]"
+                />
+              )}
+              {/* Start of a new week. Same hairline, lighter, so the today
+                  divider still reads as the primary one — and never doubled
+                  up when a week happens to start on the same edge. */}
+              {startsWeek[i] && i !== firstAhead && (
+                <span
+                  aria-hidden
+                  className="absolute -left-px top-0 bottom-0 border-l border-dashed border-[var(--amber-dim)] opacity-45"
                 />
               )}
               <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--faint)]">

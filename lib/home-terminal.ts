@@ -83,6 +83,9 @@ export type WireRow = {
 };
 
 export type CalRow = {
+  /** ISO date (YYYY-MM-DD) — the timeline needs it to spot week boundaries,
+   *  which the display labels alone can't give it when days are skipped. */
+  date: string;
   day: string;
   dateLabel: string;
   label: string;
@@ -501,6 +504,7 @@ export async function getHomeData(): Promise<HomeData> {
   const toRow = (e: CalendarEvent): CalRow => {
     const d = new Date(`${e.date}T12:00:00Z`);
     return {
+      date: e.date,
       day: d
         .toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" })
         .toUpperCase(),
