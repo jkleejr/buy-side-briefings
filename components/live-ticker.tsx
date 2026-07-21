@@ -88,7 +88,13 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
 
   return (
     <div className="w-full border-b border-[var(--border)] bg-[var(--panel-head)]">
-      <div className="panel-scroll mx-auto flex max-w-[1600px] flex-nowrap items-center gap-x-5 overflow-x-auto px-2 py-1 font-mono text-[11px] md:flex-wrap md:gap-y-1 md:overflow-visible">
+      <div className="mx-auto flex max-w-[1600px] items-center gap-x-3 px-2 py-1">
+        {/* One line, always. It used to wrap at md and up, so narrowing a
+            desktop window pushed the tape onto a second row and shoved the
+            page down. It now scrolls sideways instead — quotes slide off the
+            end and come back when the window widens. min-w-0 is what lets the
+            flex child actually shrink below its content width. */}
+        <div className="panel-scroll flex min-w-0 flex-1 flex-nowrap items-center gap-x-5 overflow-x-auto font-mono text-[11px]">
         {quotes.map((q) => {
           const up = (q.changePct ?? 0) > 0;
           const down = (q.changePct ?? 0) < 0;
@@ -129,9 +135,12 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
             </div>
           );
         })}
+        </div>
+
+        {/* Outside the scroller so it stays put while the tape moves under it. */}
         {feedDown ? (
           <span
-            className="ml-auto flex shrink-0 items-center gap-1 text-[10px] uppercase tracking-widest text-[var(--down)]"
+            className="flex shrink-0 items-center gap-1 font-mono text-[10px] uppercase tracking-widest text-[var(--down)]"
             title={
               lastOk
                 ? `Yahoo feed unreachable — showing last good prices from ${new Date(lastOk).toLocaleTimeString()}`
@@ -151,9 +160,18 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
             )}
           </span>
         ) : (
-          <span className="ml-auto flex shrink-0 items-center gap-1 text-[10px] uppercase tracking-widest text-[var(--dim)]">
-            <span className="term-blink glow-dot-up inline-block h-1.5 w-1.5 rounded-full bg-[var(--up)]" />
-            YAHOO · 60s
+          // The dot alone carries it: green and blinking means live. The
+          // source and cadence move to the tooltip rather than spending
+          // characters on the bar.
+          <span
+            className="flex shrink-0 items-center"
+            title="Live — Yahoo Finance, refreshed every 60s"
+          >
+            <span
+              role="img"
+              aria-label="Live prices from Yahoo Finance, refreshed every 60 seconds"
+              className="term-blink glow-dot-up inline-block h-1.5 w-1.5 rounded-full bg-[var(--up)]"
+            />
           </span>
         )}
       </div>
