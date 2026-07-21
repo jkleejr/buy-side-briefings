@@ -127,7 +127,9 @@ export default async function WatchlistPage() {
               4×&rdquo; means the market turned there four times in the window on screen.
               Nothing is hand-drawn. Hover any bar for its date, price and volume.
             </p>
-            <LevelsChart symbols={symbols} initialSymbol={symbols[0]} />
+            {/* Levels on by default here — the panel is titled for them and
+                the paragraph above explains them. */}
+            <LevelsChart symbols={symbols} initialSymbol={symbols[0]} defaultLevels />
           </div>
         </Panel>
       )}

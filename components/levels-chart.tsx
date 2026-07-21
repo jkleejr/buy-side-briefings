@@ -107,6 +107,14 @@ type Props = {
    * "Bitcoin" beats "BTC-USD".
    */
   labels?: Record<string, string>;
+  /**
+   * Whether the volume pane and the derived levels start switched on. Both
+   * default off: the chart opens as plain price, and the overlays are there
+   * when you go looking for them. A page built around the levels (the
+   * watchlist panel is titled for them) turns them back on.
+   */
+  defaultVolume?: boolean;
+  defaultLevels?: boolean;
 };
 
 export default function LevelsChart({
@@ -115,13 +123,15 @@ export default function LevelsChart({
   variant = "full",
   title,
   labels,
+  defaultVolume = false,
+  defaultLevels = false,
 }: Props) {
   const { H, padR: PAD_R, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
   const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
-  const [showVolume, setShowVolume] = useState(true);
-  const [showLevels, setShowLevels] = useState(true);
+  const [showVolume, setShowVolume] = useState(defaultVolume);
+  const [showLevels, setShowLevels] = useState(defaultLevels);
   // Candles carry direction bar by bar; the line carries shape. On a long
   // window the bodies get thin enough that the shape is what you're reading
   // anyway, so let it be read directly.
@@ -814,15 +824,6 @@ export default function LevelsChart({
                       />
                     );
                   })}
-                  <text
-                    x={W - PAD_R + 9}
-                    y={scale.volTop + 9}
-                    fill="var(--faint)"
-                    fontFamily="var(--mono)"
-                    fontSize={8.5}
-                  >
-                    vol · peak {fmtVolume(maxVolume)}
-                  </text>
                 </g>
               )}
 
