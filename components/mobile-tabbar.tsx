@@ -7,7 +7,7 @@ const TABS = [
   { href: "/", code: "DASH" },
   { href: "/briefings", code: "BRIEF" },
   { href: "/earnings", code: "EARN" },
-  { href: "/track-record", code: "TRACK" },
+  { href: "/watchlist", code: "WATCH" },
 ];
 
 /**

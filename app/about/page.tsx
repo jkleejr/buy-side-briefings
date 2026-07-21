@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Panel from "@/components/panel";
 
 export const metadata = { title: "About — Buy-Side Briefings" };
@@ -22,7 +21,7 @@ export default function AboutPage() {
             <span className="text-[var(--amber)]">Buy-Side Briefings</span> is a daily morning
             read for self-directed investors. One page, terminal-dense, organized like a
             professional trader&apos;s screen: live market data above the fold, opinionated
-            editorial commentary alongside, public track record below.
+            editorial commentary alongside, and the catalysts ahead below.
           </p>
           <p>
             The whole site is built around <span className="text-[var(--amber)]">one
@@ -101,9 +100,9 @@ export default function AboutPage() {
           </p>
           <p>
             <span className="text-[var(--amber-dim)]">Persistence.</span> Briefings and
-            verdicts live as plain files in the repo. They accumulate over time. The
-            track-record chart and ledger automatically read all of them — there&apos;s no
-            database, no separate &quot;publishing&quot; step beyond committing the file.
+            verdicts live as plain files in the repo. They accumulate over time, and the
+            archive reads all of them — there&apos;s no database, no separate
+            &quot;publishing&quot; step beyond committing the file.
           </p>
         </div>
       </Panel>
@@ -189,8 +188,7 @@ export default function AboutPage() {
           <div className="space-y-2">
             <p className="text-[var(--amber-dim)]">How a verdict gets graded:</p>
             <p>
-              The <Link href="/track-record" className="text-[var(--cyan-term)] hover:underline">Track
-              Record</Link> page automatically scores every verdict against SPX returns at
+              Every verdict is scored automatically against SPX returns at
               three windows: <span className="text-[var(--amber)]">+1 trading day</span>,{" "}
               <span className="text-[var(--amber)]">+5 trading days</span>, and{" "}
               <span className="text-[var(--amber)]">+20 trading days</span>. The scoring

@@ -58,7 +58,7 @@ export default async function OgImage() {
               color: "#ffa500",
             }}
           >
-            Buy-side voice. Real track record.
+            Buy-side voice. Cited every day.
           </div>
         </div>
 

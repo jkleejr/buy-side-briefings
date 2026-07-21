@@ -9,8 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/briefings",
-    "/digest",
-    "/track-record",
     "/watchlist",
     "/macro",
     "/earnings",
@@ -23,7 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/market-history",
     "/metals",
     "/indices",
-    "/tech",
     "/about",
     "/privacy",
     "/terms",

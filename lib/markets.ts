@@ -151,8 +151,9 @@ export type DailyClose = { date: string; close: number };
 
 /**
  * Fetch daily closes for any Yahoo symbol over the requested window. Used for
- * the homepage asset charts and the track-record SPX chart. Adds a 30-day
- * forward pad so forward-return windows are queryable for recent verdicts.
+ * the homepage asset charts and verdict scoring on the briefing pages. Adds a
+ * 30-day forward pad so forward-return windows are queryable for recent
+ * verdicts.
  */
 export async function getDailyCloses(
   symbol: string,
