@@ -20,12 +20,9 @@ const DESTINATIONS: Destination[] = [
   { href: "/earnings", code: "EARN", label: "Earnings calendar — schedule for the names you track" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist", go: "w" },
   { href: "/kospi", code: "KOSPI", label: "KOSPI briefings", go: "k" },
-  { href: "/indices", code: "INDX", label: "US indices" },
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
-  { href: "/pulse", code: "PULSE", label: "US pulse — breadth & credit" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
-  { href: "/metals", code: "MTLS", label: "Metals — gold & silver" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 
