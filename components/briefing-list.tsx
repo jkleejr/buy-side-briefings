@@ -1,20 +1,11 @@
 import Link from "next/link";
 import type { BriefingMeta } from "@/lib/data";
 import {
+  formatBriefingDateLine,
   formatBriefingTime,
-  formatBriefingTitle,
   formatBriefingTitleShort,
 } from "@/lib/utils";
 import Panel from "./panel";
-
-const ROUTINE_LABEL: Record<string, string> = {
-  markets: "MKT",
-  politics: "POL",
-  quote: "QTE",
-  "app-ideas": "APP",
-  "pre-earnings": "ERN",
-  "demand-signals": "DMD",
-};
 
 type Props = {
   items: BriefingMeta[];
@@ -43,18 +34,15 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
   const body = (
     <ul className="divide-y divide-[var(--border)]">
       {list.map((b) => {
-        const fullTitle = formatBriefingTitle(b);
+        const dateLine = formatBriefingDateLine(b);
         const clock = formatBriefingTime(b.generated_at);
         return (
           <li key={`${b.routine}-${b.slug}`}>
             <Link
               href={`/briefings/${b.routine}/${b.slug}`}
-              title={fullTitle}
+              title={dateLine}
               className="flex items-center gap-2 px-2 py-2.5 font-mono text-[11px] hover:bg-[var(--panel-head)] sm:py-1.5"
             >
-              <span className="w-9 shrink-0 text-[var(--amber-dim)]">
-                {ROUTINE_LABEL[b.routine] ?? b.routine.slice(0, 3).toUpperCase()}
-              </span>
               {/* Date line, then what the briefing is actually about. The
                   headline is the point of the row — the date only says when. */}
               <span className="flex min-w-0 flex-1 flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-2">
@@ -62,7 +50,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
                   {formatBriefingTitleShort(b)}
                 </span>
                 <span className="hidden shrink-0 text-[var(--foreground)] sm:inline">
-                  {fullTitle}
+                  {dateLine}
                 </span>
                 {b.verdict_headline && (
                   <span className="truncate text-[var(--dim)]">

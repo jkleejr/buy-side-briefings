@@ -165,6 +165,28 @@ export function formatBriefingTitle(b: {
 }
 
 /**
+ * Date-first line for list rows: "Monday, July 20, 2026 · Evening".
+ * Same as formatBriefingTitle without the routine prefix — every briefing in
+ * the archive is a markets one, so "Markets Briefing · " on all 121 rows was
+ * pure repetition pushing the date rightward.
+ */
+export function formatBriefingDateLine(b: {
+  date: string;
+  window?: string | null;
+}): string {
+  const d = new Date(`${b.date}T12:00:00Z`);
+  const day = d.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
+  const dateStr = d.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
+  return `${day}, ${dateStr}${win}`;
+}
+
+/**
  * Compact variant for narrow screens: "Wed, Jun 10 · Evening". The routine is
  * already shown as a code chip next to the title, so repeating "Markets
  * Briefing · " only pushes the date off-screen.
