@@ -26,9 +26,9 @@ export default function HeaderNav({ items }: { items: NavItem[] }) {
               key={item.href}
               href={item.href}
               aria-current={active ? "page" : undefined}
-              className={`shrink-0 whitespace-nowrap pb-0.5 text-[13px] tracking-[0.04em] ${
+              className={`shrink-0 whitespace-nowrap pb-0.5 font-mono text-[12px] tracking-[0.02em] ${
                 active
-                  ? "border-b-2 border-[var(--amber)] font-bold text-[var(--foreground)]"
+                  ? "border-b-2 border-[var(--amber)] font-semibold text-[var(--foreground)]"
                   : "border-b-2 border-transparent text-[var(--dim)] hover:text-[var(--foreground)]"
               }`}
             >

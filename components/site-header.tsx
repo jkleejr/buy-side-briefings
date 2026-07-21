@@ -20,13 +20,17 @@ export default function SiteHeader() {
   const dateStr = todayET();
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--foreground)] bg-[var(--background)]">
-      <div className="mx-auto flex max-w-[1600px] items-baseline gap-5 px-4 py-2.5 text-[13px] sm:px-6">
+      {/* The chrome wears the monospace utility face, not the reading serif.
+          The tape sitting directly under this nav is already mono, as is every
+          label, chip and eyebrow on the site — the nav was the one piece of
+          instrumentation still set in Charter, which muddies at 13px. */}
+      <div className="mx-auto flex max-w-[1600px] items-baseline gap-5 px-4 py-2.5 font-mono text-[12px] sm:px-6">
         {/* Inline nav (tablet+) with active-route highlight + overflow fade.
             The nav's first item is TODAY → "/", so home stays reachable
             without a wordmark. */}
         <HeaderNav items={NAV} />
 
-        <div className="ml-auto flex shrink-0 items-baseline gap-3 text-[12px] italic text-[var(--dim)]">
+        <div className="ml-auto flex shrink-0 items-baseline gap-3 font-mono text-[10.5px] tracking-[0.1em] text-[var(--dim)]">
           <PaletteButton />
           <ThemeToggle />
           <span className="hidden lg:inline">{dateStr}</span>
