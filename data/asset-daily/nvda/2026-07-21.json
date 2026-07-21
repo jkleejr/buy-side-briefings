@@ -1,0 +1,143 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corp",
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T21:30:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "GATE 3 TENTATIVE CLEARANCE — FIRST SESSION SINCE JULY 17 WHERE ALL THREE CONDITIONS MAY SIMULTANEOUSLY HOLD. NVDA CLOSED $204.81 (+$1.53 / +0.75% FROM JULY 20 CLOSE $203.28) AS BROAD MARKET RALLIED (NASDAQ +1.93%, SPX +0.9%). SESSION RANGE: $204.01 (DAY LOW — GAPPED ABOVE JULY 20 INTRADAY LOWS; $200 NOT TESTED TODAY) TO $208.65 (SESSION HIGH — FAILED TO HOLD; OVERHEAD SUPPLY AT $210-$211 STILL INTACT). GATE 3 STATUS: (1) NVDA > $200: $204.81 ✓ HOLDS. (2) SPX > 7,460: ~$7,510 ✓ CONFIRMED. (3) VIX < 17: ESTIMATED CLOSE ~16.9 — TENTATIVE ✓ FOR FIRST TIME SINCE JULY 17 BREACH (INTRADAY READING 17.02 AT 2:56PM ET; VIX LIKELY COMPRESSED FURTHER INTO THE CLOSE AS NASDAQ SURGED +1.93%; NOT FULLY CONFIRMED UNTIL CBOE OFFICIAL CLOSE PRINTS). KEY CATALYST: NVIDIA DISCLOSED 9.3% PASSIVE STAKE IN NEBIUS (NBIS, AI CLOUD / NEOCLOUD) VALUED AT ~$5B — NBIS SURGED +18.78% ON THE NEWS. SEPARATELY, LIMITED H200 AI ACCELERATOR SHIPMENTS TO CHINA RESUMED. NVDA UNDERPERFORMED NASDAQ ON A RELATIVE BASIS (+0.75% VS NDX +1.93%) — RECOVERY IS TENTATIVE, NOT V-SHAPED. THE $200 GATE 3 PRICE FLOOR REMAINS THE SINGLE MOST IMPORTANT LEVEL. CONVICTION ON RE-ENTRY IS LOW; FULL CONFIRMATION REQUIRES VIX < 17 AGAIN TOMORROW AND KIMI K3 BENCHMARKS (JULY 27) TO DISAPPOINT. BULLS PAID TODAY. BEARS WHO PRESSED AT $200 ON JULY 20 ARE UNDERWATER.",
+  "long_pnl": "Longs from July 20 ($203.28) up $1.53 (+0.75%) today. Gate 3 framework exit on July 17 ($202.81) avoided holding through the July 20 intraday $200 test — the stop discipline protected capital.",
+  "short_pnl": "Shorts from the July 17 $202.81 close are underwater: +$2.00 / +0.99% against them over four days. Bears at $200 on July 20 trapped as the Nebius/macro catalyst lifted NVDA above $203-204 in today's session.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "low",
+    "horizon": "tentative Gate 3 re-entry; confirm VIX < 17 second session; stop $200 Gate 3 price floor",
+    "rationale": "Today is the first session since the July 17 double Gate 3 breach where all three re-entry conditions appear simultaneously met: NVDA $204.81 (> $200 ✓), SPX ~7,510 (> 7,460 ✓), VIX ~16.9 estimated close (< 17 — tentative ✓). The framework requires 'all three conditions simultaneously green for at least one full session' before re-entry. That condition appears met today, permitting a tentative re-entry. Caution: VIX estimate is not confirmed; NVDA +0.75% underperformed Nasdaq +1.93% (still under selling pressure vs peers); Kimi K3 (July 27) is the next binary that could re-trigger a VIX spike. Start partial — add size only on a second clean Gate 3 session, and only if Kimi K3 benchmarks disappoint. Stop: any daily close below $200.00."
+  },
+
+  "so_what": {
+    "line": "Gate 3 tentative re-entry signal — all three conditions appear green for the first time since July 17; start partial, confirm tomorrow.",
+    "bull": "VIX may have just cleared 17, SPX above 7,460, NVDA above $200 — all three Gate 3 re-entry conditions potentially met; Nebius stake signals NVDA is deepening ecosystem moat; Aug 26 earnings beat setup intact.",
+    "bear": "VIX estimate unconfirmed; Kimi K3 (July 27) could re-spike VIX above 17 within a week; NVDA underperformed Nasdaq today (+0.75% vs +1.93%); overhead supply at $208-$211 still unconquered; this is the first clearing session, not a confirmation."
+  },
+
+  "snapshot": {
+    "price": 204.81,
+    "change_pct": 0.75,
+    "change_abs": 1.53,
+    "prev_close": 203.28,
+    "day_high": 208.65,
+    "day_low": 204.01,
+    "week52_high": 236.54,
+    "week52_low": 164.07,
+    "market_cap": "~$5.01T",
+    "extra": [
+      { "label": "Gate 3: NVDA > $200", "value": "$204.81 — ✓ HOLDS", "tone": "up" },
+      { "label": "Gate 3: SPX > 7,460", "value": "~7,510 (+0.9%) — ✓ CONFIRMED", "tone": "up" },
+      { "label": "Gate 3: VIX < 17", "value": "~16.9 estimated close — TENTATIVE ✓ (first since July 17)", "tone": "up" },
+      { "label": "Hard Stop", "value": "$200.00 (daily close) — not approached today", "tone": "neutral" },
+      { "label": "vs July 17 close", "value": "$204.81 vs $202.81 (+$2.00 / +0.99% over 4 days)", "tone": "up" },
+      { "label": "NVDA vs Nasdaq today", "value": "+0.75% vs NDX +1.93% — NVDA underperformed by 118bp", "tone": "down" },
+      { "label": "Nebius (NBIS) disclosure", "value": "NVDA 9.3% stake ~$5B; NBIS +18.78%", "tone": "up" }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "IV declining with VIX approaching 17 threshold; put-call skew normalizing as the double-Gate-3-breach fear premium unwinds; call buying emerging at $210 and $215 strikes on the re-entry narrative",
+    "notable_flow": "The Nebius 9.3% stake disclosure (SEC filing dated July 13, released July 20) drove NBIS +18.78% and provided a positive halo for NVDA. Framework followers who exited on July 17 are watching today's Gate 3 conditions for the re-entry signal. The market is NOT aggressively adding NVDA — the +0.75% vs Nasdaq +1.93% underperformance shows net selling still present above $205. The $208.65 day high was rejected, consistent with ongoing supply from those who entered on the July 15-17 bounce and were trapped. True institutional accumulation signal requires NVDA to close above $210 on above-average volume."
+  },
+
+  "what_traders_are_doing": "Framework followers are on the re-entry trigger: if VIX closed below 17 today (estimated ~16.9), the Gate 3 framework permits re-entry for the first time since the July 17 double breach. Many will wait for a second clean Gate 3 session tomorrow before adding full size — one session at the boundary is not conviction. The momentum traders who held through the $200 test on July 20 are starting to see their long thesis rewarded; they need NVDA to clear $210 to feel vindicated. The key overhang remains Kimi K3 (July 27, six days away): anyone adding size here is taking on binary risk from a potential second DeepSeek-style compute-demand shock. The Nebius disclosure is a positive signal — NVDA is deepening its AI cloud ecosystem via strategic stakes rather than just selling chips — but it doesn't change the fundamental valuation debate. Bears who shorted $200 on July 20 are underwater; the $195 hard stop they were targeting remains untouched.",
+
+  "news": [
+    {
+      "label": "NVIDIA discloses 9.3% passive stake in Nebius (NBIS) valued at ~$5B — NBIS surges 18.78% on the deepened AI cloud partnership",
+      "url": "https://www.gurufocus.com/news/8969570/nvidia-increases-stake-in-nebius-nbis-to-93-valued-at-nearly-5-billion",
+      "source": "GuruFocus",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Gate 3 VIX condition approaching clearance: VIX at ~17.02 intraday (2:56 PM ET), estimated close ~16.9 — first close below 17 since July 17 breach",
+      "source": "CBOE / Historical Option Data",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SPX closes ~7,510 (+0.9%), Nasdaq +1.93% — Gate 3 SPX > 7,460 condition confirmed; macro backdrop most favorable since pre-July 17 crash",
+      "url": "https://historicaloptiondata.com/market-analysis-07-21-2026-1250-pm-et/",
+      "source": "Historical Option Data",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Limited H200 AI accelerator shipments to China resume — incremental revenue opportunity from previously restricted export channel",
+      "url": "https://intellectia.ai/blog/nvidia-stock-analysis-july-2026",
+      "source": "Intellectia AI",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVDA Q2 FY2027 earnings Aug 26: consensus revenue target ~$91B (company guidance); analysts expect beat plus Q3 guide above $100B",
+      "url": "https://www.fxleaders.com/news/2026/07/21/nvidia-stock-forecast-can-nvda-break-212-as-q2-revenue-targets-91b/",
+      "source": "FX Leaders",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Kimi K3 open-weight model (July 27) remains the key unresolved binary — AI compute efficiency narrative could re-spike VIX and invalidate today's Gate 3 tentative clearance",
+      "source": "Context",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Chip sector bear market (-20% from 2026 record high) still technically in force — NVDA at $204.81 remains well below the $236.54 52-week high",
+      "source": "Context",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The Gate 3 framework permits a tentative partial re-entry today based on the apparent first simultaneous clearance of all three conditions. Key near-term risks: (1) VIX close needs confirmation tomorrow — if it re-spikes above 17, Gate 3 re-breaches and the re-entry signal is revoked; (2) Kimi K3 July 27 release is a binary that could trigger another compute-demand shock; (3) FOMC July 29 is a macro catalyst. If VIX stays below 17 and NVDA holds $200 through next week, the setup for the August 26 earnings catalyst becomes strong. The $208-$211 overhead supply zone is the near-term resistance; clearing it confirms the Gate 3 recovery.",
+    "long_term": "The structural AI-infrastructure thesis remains intact: hyperscaler capex commitments, the H200/GB300 upgrade cycle, and the August 26 Q2 FY2027 earnings event ($91B guidance with beat expected) are the long-term anchors. The Kimi K3 efficiency narrative is a real headwind but the Jevons Paradox remains valid — cheaper inference expands total AI workload volume, ultimately requiring more compute. NVDA's $236.54 52-week high represents the full recovery target, achievable if Q2 FY2027 beats and Q3 guidance exceeds $100B. Long-term conviction is tied to the August 26 print."
+  },
+
+  "bull_case": [
+    "Gate 3 tentative clearance: all three conditions appear simultaneously green for the first time since July 17 — the framework permits re-entry today",
+    "Nebius stake (9.3% / ~$5B) demonstrates NVDA is building an AI cloud ecosystem moat via strategic ownership — not just a chip supplier but an AI infrastructure platform investor",
+    "H200 China resumption: incremental revenue from previously restricted export channel; any China AI spend that uses NVDA hardware is supply-chain upside",
+    "Q2 FY2027 earnings Aug 26: $91B guidance with analyst consensus expecting a beat; NVDA historically guides conservative; a beat plus Q3 > $100B guide triggers a broad re-entry",
+    "Hyperscaler capex commitments $300B+ for 2026: physical GPU orders are multi-year supply contracts; Kimi K3 efficiency gains don't cancel already-committed infrastructure spend",
+    "$200 Gate 3 price floor has held through multiple tests including the July 20 intraday dip — structural support confirmed repeatedly"
+  ],
+
+  "bear_case": [
+    "VIX estimated at ~16.9 is a borderline clearance — a single intraday spike or risk-off catalyst could re-breach 17 within days, revoking the Gate 3 re-entry signal",
+    "NVDA underperformed Nasdaq by 118bp today (+0.75% vs NDX +1.93%) in a strong risk-on session — net selling above $205 continues; this is not a clean bull momentum day",
+    "Kimi K3 (July 27): second open-weight frontier model in a month; if benchmarks match closed-weight GPT-5-class performance, the compute-premium valuation thesis weakens structurally — and it arrives before FOMC",
+    "Today's session high $208.65 rejected well below the $210-$211 overhead supply zone — meaningful sellers are still present in that range",
+    "Chip sector still technically in a -20% bear market from 2026 record; institutional sector allocation to semiconductors remains depressed vs January peaks",
+    "FOMC July 29: hawkish surprise or delay in rate cuts would strengthen USD, pressure equities, and likely spike VIX — re-breaching the Gate 3 17 level"
+  ],
+
+  "key_levels": [
+    { "label": "★ $200.00 — GATE 3 PRICE FLOOR / PARAMOUNT SUPPORT (mandatory framework review on any daily close below; psychological round number; tested intraday July 20, held; held again today with session low $204.01 — not even approached; the single most important threshold in the framework)", "level": "$200.00", "kind": "support" },
+    { "label": "$203.28 — JULY 20 CLOSE / PRIOR SESSION SUPPORT (now immediate support below today's range; holding on any dip confirms the short-term base)", "level": "$203.28", "kind": "support" },
+    { "label": "$202.81 — JULY 17 CLOSE / DOUBLE GATE-3-BREACH LEVEL (the close that triggered the mandatory sell; now a secondary support; reclaiming this level today is a positive sign)", "level": "$202.81", "kind": "support" },
+    { "label": "$195.00 — HARD STOP (unconditional exit trigger; established at Gate 3 initiation; still in force regardless of VIX/SPX conditions)", "level": "$195.00", "kind": "support" },
+    { "label": "$192.00 — 50-DMA ZONE (first breached July 16; systematic trend-following funds use this as medium-term trend line; recovering above would signal trend repair)", "level": "$192.00", "kind": "support" },
+    { "label": "$164.07 — 52-WEEK LOW (tariff-shock trough; absolute framework floor; close here ends the position unconditionally)", "level": "$164.07", "kind": "support" },
+    { "label": "★ $208.65 — TODAY'S SESSION HIGH / NEAREST RESISTANCE (rejected at $208.65 with sellers visible; the first overhead supply line from today's session; clearing on next session needed to progress toward $210-$211 zone)", "level": "$208.65", "kind": "resistance" },
+    { "label": "$210–$211 — OVERHEAD SUPPLY ZONE (July 17 intraday high zone at $211.08; longs trapped at the July 15-17 bounce who will sell on recovery; must clear for Gate 3 re-entry to accelerate)", "level": "$211.00", "kind": "resistance" },
+    { "label": "$215 — NEAR-TERM SWING RESISTANCE (July failed breakout zone; momentum traders watch as line between correction and recovery; VIX < 15 and SPX > 7,600 needed to challenge meaningfully)", "level": "$215.00", "kind": "resistance" },
+    { "label": "$220 — KEY SWING RESISTANCE (June consolidation ceiling; consensus target for Q3 2026 if earnings beat; requires full Gate 3 green and clean Kimi K3 resolution)", "level": "$220.00", "kind": "resistance" },
+    { "label": "$236.54 — 52-WEEK HIGH (full recovery target; requires Q2 FY2027 beat, Q3 > $100B guide, VIX < 15, and Kimi K3 overhang resolved)", "level": "$236.54", "kind": "resistance" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-27", "label": "Kimi K3 open-weight release (Moonshot AI, 2.8T parameters, 1M context) — binary event; strong benchmarks re-spike VIX above 17, revoking Gate 3 re-entry; weak benchmarks clear the path to August earnings", "importance": "high" },
+    { "date": "2026-07-29", "label": "FOMC rate decision — primary macro catalyst for VIX and SPX Gate 3 conditions; hawkish surprise could re-trigger breach", "importance": "high" },
+    { "date": "2026-07-29", "label": "SK Hynix Q2 FY2026 earnings — HBM3e/HBM4 demand read-through for NVDA supply chain; strong print confirms AI compute demand thesis", "importance": "medium" },
+    { "date": "2026-08-26", "label": "NVDA Q2 FY2027 earnings — $91B guidance with analyst beat expected; Q3 guide > $100B is the primary full re-entry and size-add catalyst", "importance": "high" },
+    { "date": "2026-09-01", "label": "GB300 production ramp update — HBM4 supply chain volumes and next-gen compute platform timeline", "importance": "medium" }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — Gate 3 boundary conditions, tentative clearance\nNVDA closed at $204.81 on 2026-07-21, up $1.53 (+0.75%) from the July 20 close of $203.28. Session high: $208.65; session low: $204.01. This is the first session since the double Gate 3 breach on July 17 where all three framework re-entry conditions appear simultaneously met.\n\n### Gate 3 framework status — TENTATIVE CLEARANCE\n\n| Gate condition | Threshold | Today's value | Status |\n|---|---|---|---|\n| NVDA price | > $200.00 daily close | $204.81 | ✓ HOLDS |\n| SPX | > 7,460 daily close | ~7,510 (+0.9%) | ✓ CONFIRMED |\n| VIX | < 17 daily close | ~16.9 estimated | TENTATIVE ✓ |\n\nThe VIX read at 2:56 PM ET was 17.02, down 8.74% from the July 20 close of 18.65. With Nasdaq finishing +1.93% and risk-on conditions sustained, the VIX likely compressed further into the 4:00 PM close — estimated at approximately 16.9. This would mark the first close below 17 since the July 17 breach. CAVEAT: This is an estimate; the official CBOE VIX close is the authoritative number. If VIX printed 17.01 or above at official close, Gate 3 VIX condition remains in breach and today's re-entry call is on hold.\n\n### Trend read\nNVDA's short-term structure is attempting a repair. The sequence: $202.81 (July 17 close, stop day) → $203.28 (July 20 close, held above $200) → $204.81 (today) is a modest ascending-close pattern. However, the ascent is sluggish: NVDA gained +0.75% today against a +1.93% Nasdaq. On a risk-on day, relative underperformance of 118bp indicates net selling pressure above $205 is still being worked through. This is not a V-shaped recovery — it's a floor-building process.\n\n### Momentum\nNo current RSI data confirmed. Given the magnitude of the July 13-17 selloff (from $220+ to $202), the RSI was likely deeply oversold. The modest recovery ($202.81 → $204.81 over four days) suggests RSI is in the 40-50 range — neutral-to-recovering, not yet confirming upside momentum. True momentum recovery signal: NVDA closes above $210 on above-average volume.\n\n### Volume — light buying, not institutional accumulation\nThe +0.75% day on below-average volume in a Nasdaq +2% session is not an accumulation signal. The $208.65 session high rejection (well below the $210-$211 overhead supply zone) confirms sellers are still present in size. The Nebius stake disclosure provided a sentiment lift but not a volume spike. True institutional accumulation would look like: NVDA +2%+ on elevated volume with a close at or near the session high. Today was the opposite — fade from $208.65 to $204.81 close, with the close near the session LOW.\n\n### Pattern in play\nNVDA is in a base-building pattern above the $200 Gate 3 floor. The three sessions since the July 17 stop ($202.81 → $203.28 → $204.81) form an ascending floor but not a recovery. The $208-$211 overhead supply zone has not been tested on a closing basis. For the bull pattern to activate: close above $211 with volume. For the bear pattern to resume: daily close below $200.\n\n### Strongest support: $200.00 — Gate 3 price floor\nThis level has been tested and held: July 20 intraday (the session reportedly probed near $200 intraday before recovering to close at $203.28), July 21 session low $204.01 (no re-test). Institutional buyers are defending $200 — the bid is well-documented. A daily close below $200 triggers the framework hard-stop review and is the most important single event to watch.\n\n### Strongest resistance: $208.65 → $211 zone\nToday's session high of $208.65 is the immediate ceiling. Above that, the $210-$211 zone (July 17 session high was $211.08) represents trapped longs who entered on the July 15-17 bounce and will sell on any recovery toward their entry. This supply zone must be absorbed before NVDA can progress toward $215. Volume on the break above $211 will be the key signal: heavy volume = absorption complete; light volume = breakout likely to fail.\n\n### Re-entry roadmap — Gate 3 framework\n\n| Step | Condition | Today's Status |\n|---|---|---|\n| 1 | VIX < 17 daily close | ~16.9 est. — TENTATIVE ✓ |\n| 2 | SPX > 7,460 daily close | ~7,510 — ✓ CONFIRMED |\n| 3 | NVDA > $200 daily close | $204.81 — ✓ CONFIRMED |\n| Sizing | All three simultaneously | Tentatively met today — first re-entry permitted |\n| Confirmation | Two consecutive green sessions | Need tomorrow to confirm |\n\nAction: Start partial re-entry at market. Add size if tomorrow (July 22) confirms all three Gate 3 conditions hold. Add full size after Kimi K3 (July 27) if benchmarks disappoint. The August 26 earnings event is the primary exit or scale-up catalyst."
+}

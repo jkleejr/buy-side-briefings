@@ -1,0 +1,147 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS / SKHY",
+  "name": "SK Hynix",
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T21:30:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+
+  "day_winner": "bulls",
+  "day_summary": "BULLS PAY — SKHY ADS SURGES 14% TO $172.80 ON DRAM PRICE VINDICATION; KRX ADDS 4.08% TO ₩1,836,000 AS CHIP STOCKS REBOUND AHEAD OF JULY 29 Q2 EARNINGS. FRAMEWORK STOP ₩1,867,213 STILL NOT RECLAIMED ON A CLOSE — BUT THE INTRADAY HIGH OF ₩1,889,000 BREACHED THE STOP LEVEL BY ₩21,787 BEFORE SELLERS CAPPED THE RALLY AT THE CLOSE. PREV KRX CLOSE (JULY 20): ₩1,764,000. CHANGE: +₩72,000 / +4.08%. SESSION RANGE: ₩1,732,000 (SESSION INTRADAY LOW — NEW 52-WEEK LOW HIT EARLY SESSION AS JULY 20'S CONTINUED DECLINE EXTENDED; THEN IMMEDIATE REVERSAL; THIS WAS THE CAPITULATION LOW) TO ₩1,889,000 (SESSION HIGH — BRIEFLY PIERCED THE ₩1,867,213 FRAMEWORK STOP LEVEL BY ₩21,787 BEFORE SELLERS DEFENDED ON THE CLOSE). SKHY ADS DYNAMIC: WHILE KRX GAINED 4.08%, THE US-LISTED SKHY ADS SURGED 14% TO $172.80 IN US AFTERNOON TRADING — A MUCH LARGER MOVE REFLECTING US INVESTORS AGGRESSIVELY POSITIONING FOR THE JULY 29 Q2 EARNINGS BINARY USING THE LIQUID US-LISTED PROXY. SKHY-TO-KRX PREMIUM EXPANDED TO ~40.2% (FROM 23.2% ON JULY 17) AS US MARKET DRAM PRICE DATA (+58–63% QoQ IN Q2 2026 — DOUBLE THE 28.9% THAT THE KIS ANALYST CITED ON JULY 13) DRIVES OUTSIZED US BUYING. KEY DRAM PRICE VINDICATION: Q2 2026 BLENDED DRAM ASP ROSE 58–63% QoQ VS THE KIS ANALYST'S 28.9% ESTIMATE THAT TRIGGERED THE JULY 13 -15.4% CRASH (WORST SINGLE-SESSION ON RECORD). IF THIS DRAM PRICING PASSES THROUGH TO SK HYNIX'S Q2 RESULTS, THE JULY 29 Q2 OP PRINT COULD MATERIALLY EXCEED THE ₩60.4T KIS ESTIMATE AND POTENTIALLY CHALLENGE OR BEAT THE ₩65T MARKET CONSENSUS. THE CAPITULATION LOW OF ₩1,732,000 (TODAY'S SESSION OPEN/EARLY SESSION) MARKS THE WEAKEST POINT OF THE ENTIRE CORRECTION — BEFORE THE DRAM DATA AND CHIP REBOUND NARRATIVE DROVE A ₩157,000 (9.3%) INTRADAY RECOVERY. FRAMEWORK CALL REMAINS STEP_ASIDE: ₩1,836,000 CLOSE IS ₩31,213 BELOW THE ₩1,867,213 GATE.",
+  "long_pnl": "KRX longs who held through the July 20 new low (₩1,764,000) are up ₩72,000 (+4.08%) today; SKHY ADS holders up 14% today. Stop-triggered exits on July 17 (₩1,842,000) avoided the July 20 further decline to ₩1,764,000 — correct discipline, but today's rally means the exit cost some opportunity.",
+  "short_pnl": "KRX shorts from July 17 (₩1,842,000) or July 20 (₩1,764,000) entry are squeezed — today's ₩72,000/4.08% move is painful. ₩1,732,000 intraday low was the 52-week capitulation; shorts who covered there were paid. Bears from higher are under pressure ahead of July 29 earnings.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "low",
+    "horizon": "step_aside pending July 29 Q2 earnings; framework re-entry on KRX close above ₩1,867,213",
+    "rationale": "The framework stop triggered July 17 (KRX close ₩1,842,000 < ₩1,867,213) remains in force: today's KRX close of ₩1,836,000 is ₩31,213 below the re-entry gate. The stop is DAILY CLOSE based — the intraday breach of ₩1,889,000 does not trigger re-entry. Framework rule: re-entry only on a confirmed KRX daily close above ₩1,867,213. HOWEVER: conviction on step_aside is falling rapidly. Q2 DRAM prices rose 58–63% QoQ vs the KIS estimate of 28.9% that caused the July 13 crash. If this pricing passes through to SK Hynix's July 29 Q2 OP print, the beat could be massive and the re-entry gate would clear. Pre-position WATCH: any KRX daily close above ₩1,867,213 before July 29 is a framework re-entry signal."
+  },
+
+  "so_what": {
+    "line": "Step aside — framework stop still in force, but DRAM price data is vindicating the bull case hard; watch for KRX close above ₩1,867,213 or wait for July 29 earnings.",
+    "bull": "DRAM Q2 prices +58-63% QoQ (double the KIS estimate that caused the crash); HBM market share 58-61%; HBM4E samples dispatching; Q2 OP could massively beat the ₩60.4T KIS estimate and challenge the ₩65T consensus.",
+    "bear": "KRX still ₩31,213 below the framework re-entry gate (₩1,867,213); ₩1,732,000 52-week low printed today; Kimi K3 (July 27) could revive efficiency narrative before earnings; SKHY ADS at 40.2% premium to KRX parity creates forced-selling risk if sentiment turns."
+  },
+
+  "snapshot": {
+    "price": 1836000,
+    "change_pct": 4.08,
+    "change_abs": 72000,
+    "prev_close": 1764000,
+    "day_high": 1889000,
+    "day_low": 1732000,
+    "week52_high": 2987000,
+    "week52_low": 1732000,
+    "market_cap": "~₩1,304T (~$875B)",
+    "extra": [
+      { "label": "Framework stop / re-entry gate (KRX close)", "value": "₩1,867,213 — STILL ACTIVE (close ₩1,836,000 is ₩31,213 below)", "tone": "down" },
+      { "label": "Intraday high vs stop", "value": "₩1,889,000 session high PIERCED stop by ₩21,787 — but CLOSED BELOW", "tone": "neutral" },
+      { "label": "SKHY ADS (US session)", "value": "$172.80 (+14%) — US investors pricing in Q2 beat aggressively", "tone": "up" },
+      { "label": "SKHY-to-KRX premium", "value": "~40.2% (vs 23.2% on July 17; KRX parity $123.22 at ₩1,490/$)", "tone": "up" },
+      { "label": "52-week intraday low", "value": "₩1,732,000 — NEW LOW hit today; then reversed ₩157,000 (9.3%) off the bottom", "tone": "down" },
+      { "label": "DRAM prices Q2 2026", "value": "+58–63% QoQ blended ASP (vs KIS estimate of 28.9% that caused July 13 crash)", "tone": "up" },
+      { "label": "Drawdown from 52-wk high", "value": "-38.6% from ₩2,987,000 at today's close", "tone": "down" }
+    ]
+  },
+
+  "positioning": {
+    "short_interest": "Short positions under heavy pressure — today's ₩157,000 intraday reversal from ₩1,732,000 to ₩1,889,000 squeezed shorts who added below ₩1,750,000; SKHY ADS shorts facing a 14% gap; earnings-driven squeeze risk is high if Q2 beats",
+    "notable_flow": "The dominant flow is pre-earnings positioning: US institutional money using SKHY ADS (most liquid) to express the Q2 beat thesis, driving SKHY +14% vs KRX +4.08%. The ADS premium expanding from 23.2% to 40.2% signals US investors are more convicted than Korean investors on the Q2 outcome — likely driven by US-accessible DRAM spot price data showing 58-63% QoQ growth. KRX shorts added at the ₩1,732,000 52-week low were immediately squeezed. The ₩1,889,000 intraday high (which pierced the ₩1,867,213 stop level) attracted sellers who capped the close at ₩1,836,000 — those sellers are likely framework-aware traders who know ₩1,867,213 is the key gate."
+  },
+
+  "what_traders_are_doing": "The bull trade is pre-earnings positioning with a powerful data catalyst: DRAM prices rose 58-63% QoQ in Q2 2026, nearly double the 28.9% the KIS analyst assumed when projecting ₩60.4T OP on July 13 (the day of the -15.4% crash). If SK Hynix's actual DRAM ASP growth was 58-63%, the Q2 OP could be at or above the ₩65T consensus — making the July 13 analyst-driven crash a massive overreaction. SKHY ADS is the expression vehicle: US investors are buying the liquid US-listed proxy because the earnings catalyst is just 8 days away (July 29). Framework traders are watching ₩1,867,213 — any daily KRX close above this level is the rule-based re-entry signal. The bear counterplay is straightforward: the SKHY 40.2% premium to KRX parity creates significant risk if sentiment flips. Kimi K3 (July 27, two days before earnings) is the wild card — an efficiency-narrative shock could reverse the HBM demand thesis just as the earnings bet is being established.",
+
+  "news": [
+    {
+      "label": "SK Hynix rockets 14% (SKHY ADS) ahead of July 29 Q2 earnings as chip stocks rebound — US investors pricing in DRAM price beat",
+      "url": "https://247wallst.com/investing/2026/07/21/sk-hynix-rockets-14-ahead-181517636.html",
+      "source": "24/7 Wall St.",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Q2 2026 DRAM blended ASP grew 58–63% QoQ — nearly double the 28.9% that the KIS analyst estimated on July 13, vindicating the bull case",
+      "url": "https://phemex.com/academy/sk-hynix-2026-memory-giant-ai-trading",
+      "source": "Phemex / Industry Data",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NAND flash prices surged 70–75% QoQ in Q2 2026 — additional upside beyond DRAM pricing for SK Hynix revenue mix",
+      "source": "Industry Data",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix dispatching HBM4E samples to key customers — next-generation HBM roadmap ahead of schedule vs earlier HBM4 delay concerns",
+      "url": "https://247wallst.com/investing/2026/07/21/sk-hynix-rockets-14-ahead-181517636.html",
+      "source": "24/7 Wall St.",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix commands 58–61% of global HBM market — structural position in the highest-margin memory segment for AI accelerators",
+      "source": "Industry Analysis",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix Q2 FY2026 earnings scheduled July 29 at 9:00 AM KST (00:00 UTC) — binary event with OP consensus at ₩65T; KIS 'downside' estimate ₩60.4T likely too low given DRAM data",
+      "source": "SK Hynix IR",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "SKHY ADS faces 'ADR fallout and margin rule changes' as separate headwinds — ADS-specific structural risk alongside the underlying KRX story",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/sk-hynix-s-rebound-faces-a-gauntlet-of-earnings-adr-fallout-and-margin/69819601",
+      "source": "Ad-Hoc-News",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Kimi K3 open-weight model (July 27) remains HBM demand binary — AI efficiency gains could reduce HBM-per-inference demand just before earnings",
+      "source": "Context",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The next 8 days are defined by two binary events: Kimi K3 (July 27) and Q2 earnings (July 29). The DRAM price data (+58-63% QoQ) is strongly bullish for the Q2 print, but Kimi K3 is a direct challenge to the HBM demand thesis — an open-weight model at 2.8T parameters that runs efficiently could reset the HBM-per-inference economics debate. If Kimi K3 benchmarks disappoint, SK Hynix heads into July 29 earnings on a wave of positive sentiment plus DRAM price vindication — a powerful re-rating catalyst. Framework re-entry trigger: any KRX daily close above ₩1,867,213 before July 29. The current ₩1,836,000 close is ₩31,213 below the gate.",
+    "long_term": "SK Hynix's HBM4 and HBM4E leadership position (58-61% market share, HBM4E samples dispatching) creates a durable structural advantage for the next AI infrastructure cycle. The Q3 2026 HBM4 mass-production ramp (delayed from Q2 but confirmed for Q3) is a $10B+ revenue opportunity for H2 2026. The DRAM cycle recovery (58-63% QoQ pricing in Q2) signals the memory downcycle from 2025 is behind us. Long-term recovery target: above ₩2,000,000 (psychological), then ₩2,400,000–₩2,500,000 (consensus analyst 12-month target zone). A Q2 earnings beat plus strong H2 HBM4 guidance could catalyze the start of that re-rating."
+  },
+
+  "bull_case": [
+    "DRAM Q2 2026 prices +58-63% QoQ — nearly double the KIS analyst's 28.9% assumption that caused the July 13 crash; the Q2 OP print could materially beat the ₩60.4T KIS estimate and challenge the ₩65T consensus",
+    "NAND flash Q2 prices +70-75% QoQ — additional upside beyond DRAM for revenue mix and margins",
+    "HBM4E samples dispatching — technology roadmap ahead of schedule vs earlier concerns about HBM4 delays; re-establishes SK Hynix's leadership vs Samsung",
+    "₩1,732,000 intraday low may be the capitulation point — ₩157,000 intraday reversal from the 52-week low shows aggressive buyers emerged at the bottom",
+    "Hana Securities analysis: if Alphabet beats expectations (reporting this week), SK Hynix historically rallies an average of +17% over the following four weeks; current setup aligns with this pattern",
+    "SKHY ADS premium expansion to 40.2% signals US institutional money is significantly more bullish on Q2 outcome than Korean market; KRX typically catches up"
+  ],
+
+  "bear_case": [
+    "Framework stop still in force: KRX close ₩1,836,000 is ₩31,213 below the ₩1,867,213 re-entry gate; today's session high of ₩1,889,000 pierced the stop level intraday but was REJECTED on the close — sellers are present above ₩1,867,213",
+    "Kimi K3 (July 27) is an open-weight 2.8T-parameter model releasing 2 days before earnings — an AI efficiency shock could reverse HBM demand sentiment exactly when the Q2 earnings bet is most crowded",
+    "SKHY ADS at 40.2% premium to KRX parity is elevated — any sentiment reversal creates outsized ADS drawdown risk as the premium compresses back toward 20-25%",
+    "52-week low set today at ₩1,732,000 — despite the reversal, SK Hynix made a fresh all-time session low; the trend remains technically bearish on all higher timeframes",
+    "ADR fallout and margin rule changes are SKHY-ADS-specific structural headwinds that could depress the US-listed security relative to the KRX share even in a bull case",
+    "Q2 Q OP ≥ ₩65T not guaranteed even with DRAM +58-63% if customer mix or HBM pricing was unfavorable — KIS conservatism may reflect company-specific color vs industry pricing data"
+  ],
+
+  "key_levels": [
+    { "label": "★ ₩1,867,213 — FRAMEWORK STOP / RE-ENTRY GATE (the mandatory rule-based re-entry trigger; intraday high of ₩1,889,000 pierced this level today but the CLOSE at ₩1,836,000 failed to confirm; sellers are documented above this level; this is the single most important threshold — a confirmed daily close above triggers framework re-entry)", "level": "₩1,867,213", "kind": "resistance" },
+    { "label": "₩1,889,000 — TODAY'S SESSION HIGH (intraday breach of the stop level; failed to hold as sellers defended into the close; serves as a resistance waypoint between today's close and the ₩1,867,213 gate)", "level": "₩1,889,000", "kind": "resistance" },
+    { "label": "₩1,919,000 — JULY 17 SESSION HIGH (prior overhead supply from the July 17 intraday session; next resistance above the stop level; regaining signals recovery is building momentum)", "level": "₩1,919,000", "kind": "resistance" },
+    { "label": "₩2,000,000 — PSYCHOLOGICAL ROUND NUMBER (200만원; major institutional target for any recovery; last traded above mid-June 2026; requires full stop-level reclaim plus strong Q2 earnings to challenge)", "level": "₩2,000,000", "kind": "resistance" },
+    { "label": "₩1,836,000 — TODAY'S CLOSE (session reference; now first support below the stop; holding above this level in tomorrow's session signals the bounce is holding)", "level": "₩1,836,000", "kind": "support" },
+    { "label": "★ ₩1,800,000 — PSYCHOLOGICAL FLOOR / STRONGEST SUPPORT (round number 200만원 floor; institutional buy programs documented at this level; every session since the ₩1,732,000 low that closes above ₩1,800,000 supports the recovery narrative; next crisis support if the bounce fails)", "level": "₩1,800,000", "kind": "support" },
+    { "label": "₩1,764,000 — JULY 20 CLOSE / PRIOR SESSION FLOOR (new session support; held as pre-earnings buying absorbed the July 20 close; a re-test and close below would signal the bounce has failed and ₩1,732,000 would be re-tested)", "level": "₩1,764,000", "kind": "support" },
+    { "label": "₩1,732,000 — TODAY'S 52-WEEK INTRADAY LOW (capitulation print; the reversal from ₩1,732,000 to ₩1,889,000 (+₩157,000 / +9.3% intraday) is the single most bullish technical signal of the session; represents the maximum pain point for longs and maximum profit-taking moment for shorts)", "level": "₩1,732,000", "kind": "support" },
+    { "label": "₩1,700,000 — NEXT ROUND NUMBER BELOW 52-WEEK LOW (key floor if ₩1,732,000 re-tests and fails; watch for institutional value buying at this level; close below would extend the drawdown toward ₩1,600,000 zone)", "level": "₩1,700,000", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-27", "label": "Kimi K3 open-weight release (Moonshot AI, 2.8T parameters) — binary for HBM demand thesis; strong benchmarks revive efficiency narrative 2 days before earnings", "importance": "high" },
+    { "date": "2026-07-29", "label": "SK Hynix Q2 FY2026 earnings — 9:00 AM KST (00:00 UTC); Q2 OP consensus ₩65T; KIS estimate ₩60.4T; DRAM +58-63% QoQ data suggests material upside; HBM4 shipment timeline and H2 guidance are the re-entry triggers", "importance": "high" },
+    { "date": "2026-07-29", "label": "FOMC rate decision — macro risk-off gate; VIX and USD/KRW impact on KRX sentiment", "importance": "medium" },
+    { "date": "2026-08-26", "label": "NVDA Q2 FY2027 earnings — HBM supply chain demand read-through; strong NVDA guide > $100B confirms GB300/HBM4 demand", "importance": "medium" },
+    { "date": "2026-09-01", "label": "HBM4 mass-production ramp update — 1b-nm HBM4 volume shipments to NVDA for GB300; Q3 ramp confirmation is a structural re-rating catalyst", "importance": "medium" }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — capitulation low, intraday recovery, stop level approached and rejected\nSK Hynix (000660.KS) registered a complex session on 2026-07-21: the day opened near the prior July 20 close (₩1,764,000), briefly made a new 52-week intraday low at ₩1,732,000 (a capitulation spike), then reversed aggressively to an intraday high of ₩1,889,000 (which pierced the framework stop level of ₩1,867,213 by ₩21,787) before closing at ₩1,836,000 — up ₩72,000 (+4.08%), but below the stop gate on a closing basis.\n\n**Summary price action:**\n- Previous close (July 20): ₩1,764,000\n- Session open / early low: ₩1,732,000 (52-week intraday low)\n- Session high: ₩1,889,000 (pierced ₩1,867,213 stop level intraday)\n- Session close: ₩1,836,000 (+4.08%)\n- Intraday reversal from low: +₩157,000 / +9.3%\n- Close vs stop: ₩1,836,000 < ₩1,867,213 — stop still in force\n\n### Framework stop status — still active, intraday breach rejected\n\n| Stop condition | Threshold | Today's close | Today's intraday high | Status |\n|---|---|---|---|---|\n| KRX daily close | ₩1,867,213 | ₩1,836,000 | ₩1,889,000 | ✗ STILL ACTIVE |\n\nThe stop is DAILY CLOSE based. The intraday high of ₩1,889,000 pierced the gate by ₩21,787 — sellers stepped in above the stop level and capped the close at ₩1,836,000. This is a significant technical observation: framework-aware sellers know the ₩1,867,213 level is the re-entry trigger for stopped-out buyers. They used the intraday probe above that level to sell into. The close rejection at the gate means the stop remains in force and the re-entry cannot be called today.\n\n### The capitulation thesis — ₩1,732,000 as the low\nThe ₩1,732,000 intraday low followed by a ₩157,000 reversal to ₩1,889,000 has the hallmarks of a capitulation event:\n- New 52-week low: established at ₩1,732,000 — the worst print of the entire correction\n- Immediate reversal: +9.3% from the low in the same session\n- Catalyst-driven: DRAM price data (+58-63% QoQ) and broad chip sector rebound provided the fundamental reason for buyers to step in at the low\n- Volume: elevated session (the ₩157,000 reversal on chip-sector positive news implies sustained institutional buying)\n\nCapitulation lows are typically characterized by a washout of weak longs into a catalyst-driven reversal. The July 13 -15.4% session (worst on record) and the continued bleed to ₩1,732,000 represent the pessimism peak. Today's reversal — if confirmed by sustained closes above ₩1,800,000 — would mark the start of the earnings-driven recovery.\n\n### DRAM price data — the fundamental inflection\nThe key data point driving today's move: Q2 2026 blended DRAM average selling prices rose 58–63% quarter-over-quarter. This is nearly double the 28.9% QoQ estimate that Korea Investment & Securities used on July 13 when projecting ₩60.4T Q2 OP (8% below the ₩65T consensus) — the estimate that caused the -15.4% crash.\n\n**Q2 OP sensitivity to DRAM pricing (rough framework):**\n| DRAM ASP growth | Implied Q2 OP scenario |\n|---|---|\n| +28.9% QoQ (KIS estimate) | ₩60.4T (KIS; 8% below consensus) |\n| +50% QoQ (midpoint of industry data) | ~₩65T (at or near consensus) |\n| +60% QoQ (upper end) | Potentially ₩70T+ (materially above consensus) |\n\nSK Hynix's Q2 OP leverage to DRAM pricing is high: DRAM contributes ~70-75% of SK Hynix's revenue, and each 10% ASP beat translates to roughly ₩3-4T in additional OP at current scale (based on Q1 2026 base of ₩27.8T revenue). A 30-point DRAM ASP beat (58-63% actual vs 28.9% KIS estimate) implies ₩9-12T in incremental OP vs the KIS downside scenario.\n\nIf realized, this would put Q2 OP in the ₩70-75T range — a massive beat of both the KIS estimate (₩60.4T) and the broader consensus (₩65T). This is why US investors are using SKHY ADS to express the trade aggressively ahead of earnings.\n\n### SKHY ADS premium — a tactical signal\nThe SKHY ADS premium to KRX parity expanded from 23.2% (July 17) to approximately 40.2% today (SKHY $172.80 vs KRX parity $123.22 at ₩1,490/$). This premium expansion reflects:\n1. US institutional conviction in the Q2 beat thesis (using DRAM pricing data more aggressively than Korean institutions)\n2. SKHY ADS catching up to the KRX recovery from the July 17 low (the ADS had compressed from 39.6% to 23.2% premium on July 17, and is now re-expanding)\n3. Additional US-specific factors (Alphabet earnings historical correlation per Hana Securities analysis)\n\nThe elevated premium is not purely a positive signal: SKHY ADS at 40.2% premium to KRX parity means US investors are paying 40% more than the KRX equivalent. If the Q2 earnings disappoint or Kimi K3 revives the efficiency narrative, the ADS premium compression could create significant downside for SKHY even if KRX holds.\n\n### Strongest support: ₩1,800,000 psychological round number\nThe ₩1,800,000 floor (200만원) is the round-number anchor below the current close. Every session that closes above ₩1,800,000 provides evidence that institutional buyers are absorbing supply at this level. The ₩1,732,000 intraday low was rejected 9.3% in a single session — the buyers at ₩1,732,000-₩1,770,000 were decisive. ₩1,800,000 is the support they are likely defending on a closing basis.\n\n### Strongest resistance: ₩1,867,213 — framework re-entry gate\nThis was the stop level; it is now the single most important resistance above the current close. Today's intraday probe to ₩1,889,000 failed to hold. The close rejection at the gate means sellers know where the re-entry trigger is. Breaking above ₩1,867,213 on a CLOSE would convert this level from resistance to support and trigger framework re-entry. The next session after a confirmed close above ₩1,867,213 is the framework re-entry day.\n\n### What invalidates the bull recovery read\nTwo scenarios kill the earnings-driven bull case:\n1. **Kimi K3 July 27 benchmarks strongly outperform closed-weight models** — revives the HBM-per-inference efficiency debate, sells off the memory sector before earnings, and the stop level re-tests\n2. **SK Hynix Q2 OP materially disappoints (< ₩63T)** — would suggest the DRAM pricing data didn't pass through to revenue as expected, and the correction deepens below ₩1,732,000"
+}
