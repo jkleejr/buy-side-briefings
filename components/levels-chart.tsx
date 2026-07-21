@@ -122,6 +122,10 @@ export default function LevelsChart({
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
   const [showVolume, setShowVolume] = useState(true);
   const [showLevels, setShowLevels] = useState(true);
+  // Candles carry direction bar by bar; the line carries shape. On a long
+  // window the bodies get thin enough that the shape is what you're reading
+  // anyway, so let it be read directly.
+  const [mode, setMode] = useState<"candle" | "line">("candle");
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -257,6 +261,18 @@ export default function LevelsChart({
 
     return { x, y, useLog, volTop, volBase, volY };
   }, [bars, analysis, zones, H, PAD_R, volumeOn, maxVolume]);
+
+  // One "M…L…" through the closes. Built here rather than inline so it isn't
+  // re-joined on every hover — the crosshair sets state on pointer move.
+  const closePath = useMemo(() => {
+    if (!bars || !scale) return "";
+    return bars
+      .map(
+        (b, i) =>
+          `${i ? "L" : "M"}${scale.x(i).toFixed(1)},${scale.y(b.close).toFixed(1)}`,
+      )
+      .join("");
+  }, [bars, scale]);
 
   const labelYs = useMemo(() => {
     if (!scale) return [];
@@ -583,6 +599,23 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
+            onClick={() => setMode((m) => (m === "line" ? "candle" : "line"))}
+            aria-pressed={mode === "line"}
+            title={
+              mode === "line"
+                ? "Switch to candles — open, high, low and close per bar"
+                : "Switch to a line through the closes"
+            }
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              mode === "line"
+                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+            }`}
+          >
+            Line
+          </button>
+          <button
+            type="button"
             onClick={() => setShowVolume((v) => !v)}
             disabled={!hasVolume}
             aria-pressed={volumeOn}
@@ -661,8 +694,8 @@ export default function LevelsChart({
               role="img"
               aria-label={
                 levelsOn
-                  ? `${symbol} ${range} candlestick chart with ${zones.length} derived support and resistance levels`
-                  : `${symbol} ${range} candlestick chart, support and resistance hidden`
+                  ? `${symbol} ${range} ${mode === "line" ? "line" : "candlestick"} chart with ${zones.length} derived support and resistance levels`
+                  : `${symbol} ${range} ${mode === "line" ? "line" : "candlestick"} chart, support and resistance hidden`
               }
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
@@ -794,7 +827,30 @@ export default function LevelsChart({
               )}
 
               <g clipPath={`url(#${clipId})`}>
-              {bars.map((b, i) => {
+              {mode === "line" ? (
+                <>
+                  {/* Drawn twice: a wider stroke in the panel colour first, so
+                      the line reads as sitting on top of the bands rather than
+                      dissolving into them, then the line itself over it. */}
+                  <path
+                    d={closePath}
+                    fill="none"
+                    stroke="var(--panel)"
+                    strokeWidth={4}
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d={closePath}
+                    fill="none"
+                    stroke="var(--foreground)"
+                    strokeWidth={2}
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                  />
+                </>
+              ) : (
+              bars.map((b, i) => {
                 const o = b.open ?? b.close;
                 const hi = b.high ?? b.close;
                 const lo = b.low ?? b.close;
@@ -823,8 +879,22 @@ export default function LevelsChart({
                     />
                   </g>
                 );
-              })}
+              })
+              )}
               </g>
+
+              {/* Outside the clip: x(last) lands exactly on the right edge, so
+                  a clipped dot would lose its outer half. */}
+              {mode === "line" && bars.length > 0 && (
+                <circle
+                  cx={scale.x(bars.length - 1)}
+                  cy={scale.y(bars[bars.length - 1].close)}
+                  r={4.5}
+                  fill="var(--foreground)"
+                  stroke="var(--panel)"
+                  strokeWidth={2}
+                />
+              )}
 
               {hover && (
                 <>
@@ -955,6 +1025,16 @@ export default function LevelsChart({
               Support
             </span>
             <span>A level is a price the market kept turning at</span>
+          </>
+        )}
+        {mode === "line" && (
+          <span>
+            <i className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px] bg-[var(--foreground)]" />
+            Close
+          </span>
+        )}
+        {levelsOn && (
+          <>
             <span className="text-[var(--faint)]">
               Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
             </span>
