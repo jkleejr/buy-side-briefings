@@ -164,7 +164,16 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
 // "S&P 500 743.29" a few inches under a ticker strip reading 7,457.69. These
 // are the same symbols the ticker and pulse rail already use, so every number
 // on the homepage now comes from one place.
-const CHART_SYMBOLS = ["^GSPC", "NVDA", "BTC-USD", "^VIX", "GC=F", "^KS11", "SNDK"];
+const CHART_SYMBOLS = [
+  "^GSPC",
+  "NVDA",
+  "BTC-USD",
+  "^VIX",
+  "GC=F",
+  "^KS11",
+  "SNDK",
+  "RIOT",
+];
 const CHART_LABELS: Record<string, string> = {
   "^GSPC": "S&P 500",
   NVDA: "Nvidia",
@@ -173,6 +182,7 @@ const CHART_LABELS: Record<string, string> = {
   "GC=F": "Gold",
   "^KS11": "KOSPI",
   SNDK: "SanDisk",
+  RIOT: "Riot",
 };
 
 // --- the week, on a clock (Idea 04) -------------------------------------------
