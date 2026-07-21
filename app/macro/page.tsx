@@ -1,7 +1,18 @@
 import Link from "next/link";
-import BigAssetChart from "@/components/big-asset-chart";
 import FedPanel from "@/components/fed-panel";
+import LevelsChart from "@/components/levels-chart";
 import Panel from "@/components/panel";
+
+// The rates instruments, in the order the story runs: short end of the curve
+// the Fed steers, the long end the market sets, the bond price that inverts
+// them, and the dollar that prices all of it against everyone else.
+const MACRO_SYMBOLS = ["^TNX", "^TYX", "TLT", "DX-Y.NYB"];
+const MACRO_LABELS: Record<string, string> = {
+  "^TNX": "10Y Yield",
+  "^TYX": "30Y Yield",
+  TLT: "TLT",
+  "DX-Y.NYB": "Dollar",
+};
 
 export const metadata = { title: "Macro — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -27,37 +38,15 @@ export default function MacroPage() {
       {/* The dashboard MACRO panel rendered full-width for the snapshot view. */}
       <FedPanel />
 
-      <BigAssetChart
-        symbol="^TNX"
-        code="10Y"
-        title="10-Year Treasury Yield"
-        color="#22d3ee"
-        metaLabel="YIELD · %"
-      />
-
-      <BigAssetChart
-        symbol="^TYX"
-        code="30Y"
-        title="30-Year Treasury Yield"
-        color="#a78bfa"
-        metaLabel="YIELD · %"
-      />
-
-      <BigAssetChart
-        symbol="TLT"
-        code="TLT"
-        title="20+ Year Treasury Bond ETF"
-        color="#fbbf24"
-        metaLabel="PRICE · INVERSE TO LONG YIELDS"
-      />
-
-      <BigAssetChart
-        symbol="DX-Y.NYB"
-        code="DXY"
-        title="US Dollar Index"
-        color="#cbd5e1"
-        metaLabel="USD vs 6-CURRENCY BASKET"
-      />
+      {/* Same chart as the homepage: candles, derived levels, drawing tools.
+          All four carry real OHLC from Yahoo. Only TLT reports traded volume —
+          yields and the dollar index are calculated, so every bar reads zero
+          and the chart disables its own Vol button for them. */}
+      <Panel code="RATES" title="Rates, bonds & the dollar">
+        <div className="p-2">
+          <LevelsChart symbols={MACRO_SYMBOLS} labels={MACRO_LABELS} />
+        </div>
+      </Panel>
 
       <Panel code="EDU" title="How to read this page">
         <div className="space-y-3 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
@@ -126,13 +115,18 @@ export default function MacroPage() {
           <div>
             <div className="text-[var(--amber)]">How to use the charts on this page</div>
             <p className="mt-1">
-              Each chart has the full timeframe selector{" "}
+              Pick an instrument, then a timeframe{" "}
               <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
                 1D · 5D · 1M · 3M · 1Y · 5Y · ALL
               </span>{" "}
-              — for macro, the multi-year view is usually most useful because rate
-              cycles move on quarter-and-longer timescales. Hover any chart for
-              the exact value on a given date.
+              — for macro the multi-year view is usually most useful, because rate
+              cycles move on quarter-and-longer timescales. Hover any bar for its
+              date, open, high, low and close.{" "}
+              <span className="text-[var(--amber)]">S/R</span> derives the levels
+              the price kept turning at, and{" "}
+              <span className="text-[var(--amber)]">Vol</span> overlays traded
+              volume — available on TLT only, since yields and the dollar index
+              are calculated rather than traded and report no volume.
             </p>
           </div>
         </div>

@@ -1,7 +1,27 @@
 import Link from "next/link";
-import BigAssetChart from "@/components/big-asset-chart";
 import GlobalMarketsPanel from "@/components/global-markets-panel";
+import LevelsChart from "@/components/levels-chart";
 import Panel from "@/components/panel";
+
+// One chart per region rather than one per index — the page's argument is that
+// the session moves west, so the indices belong grouped by when they trade.
+// Every one of these carries real OHLC and real volume from Yahoo.
+const ASIA = ["^N225", "^HSI", "000001.SS", "^KS11"];
+const EUROPE = ["^GDAXI", "^FTSE", "^FCHI", "^STOXX50E"];
+const EM = ["^NSEI", "^BVSP", "^GSPTSE"];
+const LABELS: Record<string, string> = {
+  "^N225": "Nikkei",
+  "^HSI": "Hang Seng",
+  "000001.SS": "Shanghai",
+  "^KS11": "KOSPI",
+  "^GDAXI": "DAX",
+  "^FTSE": "FTSE 100",
+  "^FCHI": "CAC 40",
+  "^STOXX50E": "Stoxx 50",
+  "^NSEI": "Nifty 50",
+  "^BVSP": "Bovespa",
+  "^GSPTSE": "TSX",
+};
 
 export const metadata = { title: "Global Markets — Buy-Side Briefings" };
 export const revalidate = 60;
@@ -34,39 +54,10 @@ export default function GlobalPage() {
           Big down in Asia → US futures usually open red. Big up → US futures
           green.
         </p>
+        <div className="border-t border-[var(--border)] p-2">
+          <LevelsChart symbols={ASIA} labels={LABELS} />
+        </div>
       </Panel>
-
-      <BigAssetChart
-        symbol="^N225"
-        code="N225"
-        title="Nikkei 225 — Japan"
-        color="#ef4444"
-        metaLabel="TOKYO · GLOBAL TECH + AUTOS"
-      />
-
-      <BigAssetChart
-        symbol="^HSI"
-        code="HSI"
-        title="Hang Seng — Hong Kong (China gateway)"
-        color="#f472b6"
-        metaLabel="HONG KONG · CHINA TECH PROXY"
-      />
-
-      <BigAssetChart
-        symbol="000001.SS"
-        code="SSE"
-        title="Shanghai Composite — China A-shares"
-        color="#fb923c"
-        metaLabel="SHANGHAI · MAINLAND CHINA"
-      />
-
-      <BigAssetChart
-        symbol="^KS11"
-        code="KOSPI"
-        title="KOSPI — South Korea (Samsung & SK Hynix)"
-        color="#84cc16"
-        metaLabel="SEOUL · GLOBAL MEMORY-CHIP DUOPOLY"
-      />
 
       <Panel code="EUROPE" title="Europe · the morning US gets">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
@@ -75,39 +66,10 @@ export default function GlobalPage() {
           European-specific news. Watch the DAX for German industrial / China-demand
           sensitivity; FTSE for energy and commodity exposure.
         </p>
+        <div className="border-t border-[var(--border)] p-2">
+          <LevelsChart symbols={EUROPE} labels={LABELS} />
+        </div>
       </Panel>
-
-      <BigAssetChart
-        symbol="^GDAXI"
-        code="DAX"
-        title="DAX — Germany's industrial heart"
-        color="#fbbf24"
-        metaLabel="FRANKFURT · INDUSTRIALS + AUTOS + CHEMICALS"
-      />
-
-      <BigAssetChart
-        symbol="^FTSE"
-        code="FTSE"
-        title="FTSE 100 — UK (mostly a global play)"
-        color="#22d3ee"
-        metaLabel="LONDON · ENERGY + MINERS + GLOBAL CONSUMER"
-      />
-
-      <BigAssetChart
-        symbol="^FCHI"
-        code="CAC"
-        title="CAC 40 — France (luxury proxy)"
-        color="#a78bfa"
-        metaLabel="PARIS · LUXURY + PHARMA + ENERGY"
-      />
-
-      <BigAssetChart
-        symbol="^STOXX50E"
-        code="STOXX"
-        title="Euro Stoxx 50 — pan-Eurozone benchmark"
-        color="#60a5fa"
-        metaLabel="EUROZONE · BROAD BLUE-CHIP"
-      />
 
       <Panel code="EM" title="Emerging markets · the growth lane">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
@@ -116,31 +78,10 @@ export default function GlobalPage() {
           commodity play. Both decoupling from US has been notable in 2024–2026
           as the dollar weakened.
         </p>
+        <div className="border-t border-[var(--border)] p-2">
+          <LevelsChart symbols={EM} labels={LABELS} />
+        </div>
       </Panel>
-
-      <BigAssetChart
-        symbol="^NSEI"
-        code="NIFTY"
-        title="Nifty 50 — India"
-        color="#a78bfa"
-        metaLabel="MUMBAI · IT SERVICES + BANKS"
-      />
-
-      <BigAssetChart
-        symbol="^BVSP"
-        code="BVSP"
-        title="Bovespa — Brazil (EM commodity play)"
-        color="#22c55e"
-        metaLabel="SÃO PAULO · IRON ORE + OIL + BANKS"
-      />
-
-      <BigAssetChart
-        symbol="^GSPTSE"
-        code="TSX"
-        title="S&P/TSX Composite — Canada"
-        color="#ef4444"
-        metaLabel="TORONTO · ENERGY + BANKS + MINERS"
-      />
 
       <Panel code="EDU" title="How to use the global session">
         <div className="space-y-3 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
