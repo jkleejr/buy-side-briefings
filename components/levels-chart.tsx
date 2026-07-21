@@ -698,6 +698,20 @@ export default function LevelsChart({
       )}
 
       <div className="relative border border-[var(--border)] bg-[var(--panel)]">
+        {/* S/R legend overlays the top-right of the plot instead of sitting
+            in the caption row below the chart. */}
+        {!compact && levelsOn && bars && analysis && scale && (
+          <div className="pointer-events-none absolute right-2 top-2 z-[2] flex gap-4 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
+            <span>
+              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--ceiling)] opacity-50" />
+              Resistance
+            </span>
+            <span>
+              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
+              Support
+            </span>
+          </div>
+        )}
         {!bars && !error && (
           <div className="flex items-center justify-center font-mono text-[11px] text-[var(--faint)]"
             style={{ height: compact ? 150 : 240 }}>
@@ -1043,20 +1057,6 @@ export default function LevelsChart({
 
       {!compact && (
       <div className="flex flex-wrap gap-4 px-1 pt-2 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
-        {/* Only the level vocabulary is gated — with S/R off there are no bands
-            to explain. The source line below always shows. */}
-        {levelsOn && (
-          <>
-            <span>
-              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--ceiling)] opacity-50" />
-              Resistance
-            </span>
-            <span>
-              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
-              Support
-            </span>
-          </>
-        )}
         {/* Where the numbers come from and how fresh they are — the symbol is
             named because "Gold" could reasonably mean spot, GLD or futures. */}
         <span className="basis-full text-[var(--faint)] normal-case tracking-normal">
