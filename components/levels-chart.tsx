@@ -918,7 +918,6 @@ export default function LevelsChart({
           Support
         </span>
         <span>A level is a price the market kept turning at</span>
-        <span>Band opacity = times tested</span>
         <span className="text-[var(--faint)]">
           Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
         </span>
