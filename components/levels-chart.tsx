@@ -95,10 +95,8 @@ function fmtVolume(v: number): string {
   return v.toLocaleString();
 }
 
-// A filled band heavy enough to encode strength swamps the candles behind it,
-// so weight moved to the rule: the fill is only a faint hint of the zone's
-// width, and thickness carries how many times the level was tested.
-const zoneAlpha = (touches: number) => Math.min(0.13, 0.05 + touches * 0.008);
+// The rule carries everything now that the zone band is gone: its thickness
+// encodes how many times the level was tested.
 const zoneWeight = (touches: number) => Math.min(2.6, 1 + touches * 0.16);
 const zoneColor = (z: LevelZone) =>
   z.kind === "resistance" ? "var(--ceiling)" : "var(--floor)";
@@ -703,11 +701,11 @@ export default function LevelsChart({
         {!compact && levelsOn && bars && analysis && scale && (
           <div className="pointer-events-none absolute right-2 top-2 z-[2] flex gap-4 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
             <span>
-              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--ceiling)] opacity-50" />
+              <i className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px] bg-[var(--ceiling)]" />
               Resistance
             </span>
             <span>
-              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
+              <i className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px] bg-[var(--floor)]" />
               Support
             </span>
           </div>
@@ -760,22 +758,12 @@ export default function LevelsChart({
                 </clipPath>
               </defs>
               {levelsOn && zones.map((z, i) => {
-                const yt = scale.y(z.hi);
-                const yb = scale.y(z.lo);
                 const ym = scale.y(z.mid);
                 return (
                   <g key={`${z.mid}-${i}`}>
-                    {/* Faint hint of how wide the zone is... */}
-                    <rect
-                      x={PAD_L}
-                      y={yt}
-                      width={W - PAD_L - PAD_R}
-                      height={Math.max(2, yb - yt)}
-                      fill={zoneColor(z)}
-                      opacity={zoneAlpha(z.touches)}
-                    />
-                    {/* ...and a rule you can actually read the level off,
-                        thickening with the number of tests. */}
+                    {/* Just the rule you read the level off, thickening with the
+                        number of tests. The band that used to fill the zone's
+                        width is gone — the line alone marks where price turned. */}
                     <line
                       x1={PAD_L}
                       x2={W - PAD_R}
