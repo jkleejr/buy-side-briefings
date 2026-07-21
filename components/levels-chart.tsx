@@ -77,6 +77,10 @@ const ZONES_PER_SIDE = 2;
  */
 const VOL_FRACTION = 0.2;
 
+/** RSI pane geometry, in viewBox units — height and the gap above it. */
+const RSI_H = 96;
+const RSI_GAP = 16;
+
 /** Level prices with thousands separators — "7,421.82" scans, "7421.82" doesn't. */
 function fmtLevel(v: number): string {
   return v.toLocaleString("en-US", {
@@ -108,6 +112,39 @@ const CONTRACT_SIZE: Record<string, number> = {
 function volumeLabel(volume: number, price: number, symbol: string): string {
   const size = CONTRACT_SIZE[symbol];
   return size ? `$${fmtVolume(volume * size * price)}` : fmtVolume(volume);
+}
+
+const RSI_PERIOD = 14;
+
+/**
+ * Wilder's RSI over the close series. Returns one value (0–100) per bar, null
+ * for the first RSI_PERIOD bars where there isn't enough history to seed the
+ * average. Momentum above 70 is conventionally "overbought", below 30
+ * "oversold".
+ */
+function computeRSI(closes: number[], period = RSI_PERIOD): (number | null)[] {
+  const out: (number | null)[] = closes.map(() => null);
+  if (closes.length <= period) return out;
+
+  let gain = 0;
+  let loss = 0;
+  for (let i = 1; i <= period; i++) {
+    const d = closes[i] - closes[i - 1];
+    if (d >= 0) gain += d;
+    else loss -= d;
+  }
+  let avgGain = gain / period;
+  let avgLoss = loss / period;
+  out[period] = avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss);
+
+  // Wilder smoothing: each new bar rolls the average forward by one.
+  for (let i = period + 1; i < closes.length; i++) {
+    const d = closes[i] - closes[i - 1];
+    avgGain = (avgGain * (period - 1) + (d > 0 ? d : 0)) / period;
+    avgLoss = (avgLoss * (period - 1) + (d < 0 ? -d : 0)) / period;
+    out[i] = avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss);
+  }
+  return out;
 }
 
 // The rule carries everything now that the zone band is gone: its thickness
@@ -154,6 +191,7 @@ export default function LevelsChart({
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
   const [showVolume, setShowVolume] = useState(defaultVolume);
   const [showLevels, setShowLevels] = useState(defaultLevels);
+  const [showRSI, setShowRSI] = useState(false);
   // Candles carry direction bar by bar; the line carries shape. On a long
   // window the bodies get thin enough that the shape is what you're reading
   // anyway, so let it be read directly.
@@ -332,6 +370,22 @@ export default function LevelsChart({
   const toX = useCallback((n: number) => PAD_L + n * plotW, [plotW]);
   const toY = useCallback((n: number) => PAD_T + n * plotH, [plotH]);
 
+  // RSI momentum in its own pane below the price. Unlike volume it can't share
+  // the price scale (it's 0–100), so it gets a real pane — but the pane is
+  // ADDED below rather than carved out of the price plot, so toggling it grows
+  // the chart downward and never moves a candle. No toolbar on the compact
+  // variant, so it stays off there.
+  const rsi = useMemo(
+    () => (bars ? computeRSI(bars.map((b) => b.close)) : []),
+    [bars],
+  );
+  const rsiOn = showRSI && !compact;
+  const rsiTop = H - PAD_B + RSI_GAP;
+  const rsiBottom = rsiTop + RSI_H;
+  const viewH = H + (rsiOn ? RSI_GAP + RSI_H : 0);
+  const rsiY = (v: number) =>
+    rsiBottom - (Math.max(0, Math.min(100, v)) / 100) * RSI_H;
+
   const [tool, setTool] = useState<DrawTool>("none");
   const [color, setColor] = useState<DrawColorId>("blue");
 
@@ -361,13 +415,16 @@ export default function LevelsChart({
       if (!svg) return [0, 0];
       const r = svg.getBoundingClientRect();
       const vx = ((clientX - r.left) / r.width) * W;
-      const vy = ((clientY - r.top) / r.height) * H;
+      // Convert against the full viewBox height (which grows with the RSI
+      // pane), then normalise to the price plot — otherwise drawings drift once
+      // the pane is on.
+      const vy = ((clientY - r.top) / r.height) * viewH;
       return [
         Math.max(0, Math.min(1, (vx - PAD_L) / plotW)),
         Math.max(0, Math.min(1, (vy - PAD_T) / plotH)),
       ];
     },
-    [plotW, plotH, H],
+    [plotW, plotH, viewH],
   );
 
   // The live stroke lives in a ref as well as state: the window listeners below
@@ -691,6 +748,24 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
+            onClick={() => setShowRSI((v) => !v)}
+            disabled={!bars || bars.length <= RSI_PERIOD}
+            aria-pressed={rsiOn}
+            title={
+              !bars || bars.length <= RSI_PERIOD
+                ? "Not enough bars to compute RSI on this range"
+                : "Show or hide the RSI momentum pane"
+            }
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              rsiOn
+                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+            }`}
+          >
+            RSI
+          </button>
+          <button
+            type="button"
             onClick={() => setExpanded((v) => !v)}
             className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
           >
@@ -742,7 +817,7 @@ export default function LevelsChart({
           <>
             <svg
               ref={svgRef}
-              viewBox={`0 0 ${W} ${H}`}
+              viewBox={`0 0 ${W} ${viewH}`}
               className="block w-full"
               role="img"
               aria-label={
@@ -943,13 +1018,75 @@ export default function LevelsChart({
                 />
               )}
 
+              {rsiOn && (
+                <g>
+                  {/* Overbought / oversold guides at 70 and 30, a faint midline
+                      at 50, and the RSI line itself. Drawn as one polyline over
+                      the segment where RSI is defined (nulls at the head). */}
+                  {[70, 50, 30].map((lvl) => (
+                    <line
+                      key={`rsi-guide-${lvl}`}
+                      x1={PAD_L}
+                      x2={W - PAD_R}
+                      y1={rsiY(lvl)}
+                      y2={rsiY(lvl)}
+                      stroke="var(--border-strong)"
+                      strokeWidth={lvl === 50 ? 0.6 : 0.9}
+                      strokeDasharray={lvl === 50 ? "1 4" : "4 3"}
+                      opacity={lvl === 50 ? 0.6 : 0.85}
+                    />
+                  ))}
+                  <path
+                    d={rsi
+                      .map((v, i) =>
+                        v == null
+                          ? ""
+                          : `${i === 0 || rsi[i - 1] == null ? "M" : "L"}${scale.x(i).toFixed(1)},${rsiY(v).toFixed(1)}`,
+                      )
+                      .join("")}
+                    fill="none"
+                    stroke="var(--amber)"
+                    strokeWidth={1.4}
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                  />
+                  <text
+                    x={W - PAD_R + 4}
+                    y={rsiY(70) + 3}
+                    fill="var(--faint)"
+                    fontFamily="var(--mono)"
+                    fontSize={8}
+                  >
+                    70
+                  </text>
+                  <text
+                    x={W - PAD_R + 4}
+                    y={rsiY(30) + 3}
+                    fill="var(--faint)"
+                    fontFamily="var(--mono)"
+                    fontSize={8}
+                  >
+                    30
+                  </text>
+                  <text
+                    x={PAD_L}
+                    y={rsiTop - 4}
+                    fill="var(--faint)"
+                    fontFamily="var(--mono)"
+                    fontSize={8.5}
+                  >
+                    RSI {RSI_PERIOD}
+                  </text>
+                </g>
+              )}
+
               {hover && (
                 <>
                   <line
                     x1={hover.x}
                     x2={hover.x}
                     y1={PAD_T}
-                    y2={H - PAD_B}
+                    y2={rsiOn ? rsiBottom : H - PAD_B}
                     stroke="var(--faint)"
                     strokeWidth={1}
                     strokeDasharray="3 3"
@@ -963,6 +1100,16 @@ export default function LevelsChart({
                     stroke="var(--panel)"
                     strokeWidth={2}
                   />
+                  {rsiOn && rsi[hover.i] != null && (
+                    <circle
+                      cx={hover.x}
+                      cy={rsiY(rsi[hover.i] as number)}
+                      r={3.5}
+                      fill="var(--amber)"
+                      stroke="var(--panel)"
+                      strokeWidth={1.5}
+                    />
+                  )}
                 </>
               )}
               {/* Annotations, drawn last so they sit above candles and levels. */}
@@ -1005,7 +1152,7 @@ export default function LevelsChart({
                 className="pointer-events-none absolute z-[3] whitespace-nowrap border border-[var(--border-strong)] bg-[var(--background)] px-2 py-1 font-mono text-[10.5px] leading-[1.45]"
                 style={{
                   left: `min(calc(100% - 288px), ${(hover.x / W) * 100}% + 12px)`,
-                  top: `${(hover.y / H) * 100}%`,
+                  top: `${(hover.y / viewH) * 100}%`,
                   transform:
                     hover.y / H < 0.34
                       ? "translateY(14px)"
@@ -1049,6 +1196,14 @@ export default function LevelsChart({
                         hoveredBar.close,
                         symbol,
                       )}
+                    </span>
+                  </>
+                )}
+                {rsiOn && rsi[hover.i] != null && (
+                  <>
+                    <br />
+                    <span className="text-[var(--dim)]">
+                      RSI {(rsi[hover.i] as number).toFixed(1)}
                     </span>
                   </>
                 )}
