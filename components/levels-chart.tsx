@@ -43,6 +43,13 @@ const PAD_L = 8;
 const PAD_T = 14;
 const PAD_B = 20;
 
+/**
+ * Right margin when no level labels need holding — just enough that the last
+ * bar isn't jammed against the frame. The price is at the right edge, so a
+ * little room there reads as "now, with room to run" rather than as a cut-off.
+ */
+const PAD_R_BARE = 40;
+
 /** Full study view vs. the homepage's small multiples. */
 const SIZES = {
   full: { H: 460, padR: 132, gap: 26, labelSize: 10.5, subSize: 9 },
@@ -128,7 +135,7 @@ export default function LevelsChart({
   defaultVolume = false,
   defaultLevels = false,
 }: Props) {
-  const { H, padR: PAD_R, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
+  const { H, padR: PAD_R_LABELS, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
   const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
@@ -225,6 +232,14 @@ export default function LevelsChart({
   // it keeps them. Note the y-scale below still accounts for hidden zones:
   // toggling should reveal and hide lines, not rescale the chart under you.
   const levelsOn = compact || showLevels;
+
+  // The right gutter exists to hold the level labels, and it has to be wide:
+  // "66,157.96–70,000.00" runs to within 3 units of the frame. With the levels
+  // off there is nothing to hold, and reserving 132 of 900 units left a seventh
+  // of the chart blank — so the series takes that width back and keeps only a
+  // margin. Candles and drawings both position against the same plot width, so
+  // they stretch together and a trendline stays over the bars it was drawn on.
+  const PAD_R = levelsOn ? PAD_R_LABELS : PAD_R_BARE;
 
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
