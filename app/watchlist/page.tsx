@@ -67,6 +67,14 @@ export default async function WatchlistPage() {
   const symbols = entries.map((e) => e.symbol);
   const mentionsMap = getRecentMentionsByTicker(symbols);
 
+  // The switcher shows raw tickers, which is fine for NVDA or AMD but useless
+  // for a foreign listing like "000660.KS". Label only the symbols that aren't
+  // plain tickers (anything with a dot), so those read as "SK Hynix" / "Samsung"
+  // while the US names stay compact.
+  const chartLabels = Object.fromEntries(
+    entries.filter((e) => e.symbol.includes(".")).map((e) => [e.symbol, e.label]),
+  );
+
   // Filter suggestions to drop any tickers already in the user's watchlist.
   const ownedSet = new Set(symbols);
   const suggestionCategories = SUGGESTIONS.map((cat) => ({
@@ -129,7 +137,12 @@ export default async function WatchlistPage() {
             </p>
             {/* Levels on by default here — the panel is titled for them and
                 the paragraph above explains them. */}
-            <LevelsChart symbols={symbols} initialSymbol={symbols[0]} defaultLevels />
+            <LevelsChart
+              symbols={symbols}
+              initialSymbol={symbols[0]}
+              labels={chartLabels}
+              defaultLevels
+            />
           </div>
         </Panel>
       )}
