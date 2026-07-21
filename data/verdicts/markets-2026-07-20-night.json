@@ -2,12 +2,13 @@
   "routine": "markets",
   "date": "2026-07-20",
   "window": "night",
-  "generated_at": "2026-07-21T00:10:00Z",
+  "generated_at": "2026-07-21T01:11:28Z",
   "is_seed": false,
   "verdict": {
     "code": "step_aside",
     "emoji": "🟠",
     "label": "STEP ASIDE — VIX Breaks Below 17; AMD-Microsoft Helios Counters Kimi K3; Wednesday Binary",
+    "headline": "Microsoft picks AMD to power new Azure AI infrastructure in boost for chip sector",
     "conviction": "medium",
     "rationale_short": "S&P 500 closed 7,443 — 17 points below the 7,460 formal trigger — extending the breach into a second session. VIX fell to 16.50, first close below both the 18 and 17 formal thresholds since the Hormuz crisis began, and September hike probability compressed to 48.7%, below 50% for the first time. AMD surged 3.83% on the Microsoft Azure Helios deployment announcement — the first hard hyperscaler demand evidence countering the Kimi K3 AI-capex-disruption thesis since July 17. WTI settled $82.21, below the $84+ morning spike but still $2.21 above the $80 formal trigger. STEP ASIDE maintained at medium conviction: the regime is materially improving across two key triggers, but SPX has not closed above 7,460 and oil remains formally breached.",
     "supporting_data": [
@@ -32,7 +33,7 @@
     { "name": "WTI",                 "value": 82.21,  "trigger_above": 80.00, "unit": "$/bbl" },
     { "name": "SPX vs 7,460",        "value": 7443,   "trigger_below": 7460,  "unit": ""      },
     { "name": "September Hike Prob", "value": 48.7,   "trigger_above": 60,    "unit": "%"     },
-    { "name": "BTC Gate 2",          "value": 64800,  "trigger_below": 62000, "unit": ""      }
+    { "name": "BTC Gate 2",          "value": 65621,  "trigger_below": 62000, "unit": ""      }
   ],
   "watchlist_mentions": [
     { "ticker": "AMD",   "note": "Closed ~$511 (+3.83%); Microsoft Azure Helios deployment announced — AMD MI-series + EPYC to power large-scale AI inference; AMD AI Day Day 1 tomorrow in San Francisco; enters the event with a genuine hyperscaler win behind it", "sentiment": "positive" },
