@@ -136,6 +136,12 @@ const ROUTINE_FULL: Record<string, string> = {
   "demand-signals": "Demand Signals",
 };
 
+/** Display name for a briefing window. "night" reads as "Evening" on the
+ *  site — the data key predates the wording. */
+export function windowLabel(w: string): string {
+  return WINDOW_LABEL[w] ?? w;
+}
+
 const WINDOW_LABEL: Record<string, string> = {
   morning: "Morning",
   afternoon: "Afternoon",
@@ -162,7 +168,7 @@ export function formatBriefingTitle(b: {
     year: "numeric",
     timeZone: "UTC",
   });
-  const win = b.window ? ` · ${WINDOW_LABEL[b.window] ?? b.window}` : "";
+  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
   return `${routineLabel} · ${day}, ${dateStr}${win}`;
 }
 
@@ -182,7 +188,7 @@ export function formatBriefingTitleShort(b: {
     day: "numeric",
     timeZone: "UTC",
   });
-  const win = b.window ? ` · ${WINDOW_LABEL[b.window] ?? b.window}` : "";
+  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
   return `${dateStr}${win}`;
 }
 

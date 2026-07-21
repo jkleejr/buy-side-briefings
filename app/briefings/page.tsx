@@ -12,7 +12,7 @@ export default function BriefingsArchivePage() {
           Briefings archive
         </h1>
         <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Every briefing published · filter by routine · verdict · search
+          Every briefing published · filter by routine · search
         </p>
       </header>
       <BriefingsFilters items={items} />
