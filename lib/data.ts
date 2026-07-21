@@ -794,6 +794,12 @@ export type CalendarEvent = {
   /** Tickers whose open opportunities hinge on this event. */
   tickers?: string[];
   note?: string;
+  /**
+   * Where the event came from. "catalyst" is the routine's hand-written
+   * calendar — the Kimi K3 / AI Day / lock-up material that is the point of the
+   * strip. The rest are mechanical feeds merged in to fill the gaps.
+   */
+  source?: "catalyst" | "fomc" | "macro" | "earnings";
 };
 
 export function getCalendarEvents(): CalendarEvent[] {
@@ -827,7 +833,69 @@ export function getCalendarTimeline(): CalendarEvent[] {
     const sig = `${e.date}|${e.kind}|${e.label.slice(0, 24)}`;
     if (seen.has(sig)) continue;
     seen.add(sig);
-    out.push(e);
+    out.push({ source: "catalyst", ...e });
   }
   return out.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/**
+ * Everything the strip should know about: the routine's catalysts, plus the
+ * scheduled earnings and macro prints it was never meant to write by hand.
+ *
+ * The routine describes the same releases in its own words, and not always on
+ * the right day — its "July CPI release" sat on Aug 13 where the actual BLS
+ * date is Aug 12. Matching on date alone missed that and showed the print
+ * twice, so releases are paired on their keyword within a few days: the
+ * authored label survives (it carries the framing) on the feed's date (which is
+ * authoritative).
+ */
+export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> {
+  const { getEarningsEvents, getFomcEvents, getMacroReleases } = await import(
+    "@/lib/calendar-feeds"
+  );
+
+  const authored = getCalendarTimeline().map((e) => ({ ...e }));
+  const [earnings, macro] = await Promise.all([
+    getEarningsEvents(from),
+    getMacroReleases(from),
+  ]);
+  const fomc = getFomcEvents(from);
+
+  const RELEASE_WORDS = ["cpi", "ppi", "pce", "jobs", "payroll", "fomc"];
+  const wordOf = (label: string) =>
+    RELEASE_WORDS.find((w) => label.toLowerCase().includes(w));
+  const daysApart = (a: string, b: string) =>
+    Math.abs(Date.parse(a) - Date.parse(b)) / 86_400_000;
+
+  const swallowed = new Set<CalendarEvent>();
+  for (const feed of [...fomc, ...macro]) {
+    const w = wordOf(feed.label);
+    if (!w) continue;
+    const twin = authored.find(
+      (a) => a.date >= from && wordOf(a.label) === w && daysApart(a.date, feed.date) <= 4,
+    );
+    if (twin) {
+      twin.date = feed.date;
+      twin.time_et = twin.time_et ?? feed.time_et;
+      swallowed.add(feed);
+    }
+  }
+
+  const authoredDates = new Set(authored.map((e) => e.date));
+  const merged = [
+    ...authored,
+    ...fomc.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
+    ...macro.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
+    ...earnings,
+  ];
+
+  const seen = new Set<string>();
+  return merged
+    .filter((e) => {
+      const sig = `${e.date}|${e.source}|${e.label.slice(0, 24)}`;
+      if (seen.has(sig)) return false;
+      seen.add(sig);
+      return true;
+    })
+    .sort((a, b) => a.date.localeCompare(b.date));
 }

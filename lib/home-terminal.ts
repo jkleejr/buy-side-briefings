@@ -2,8 +2,8 @@ import { getTradeQuotes } from "@/lib/markets";
 import {
   getAllMarketsVerdicts,
   getBriefing,
-  getCalendarEvents,
-  getCalendarTimeline,
+  getCalendarArchive,
+  getMergedTimeline,
   type CalendarEvent,
   type MarketsVerdict,
 } from "@/lib/data";
@@ -98,6 +98,8 @@ export type CalRow = {
   tMinus?: number;
   /** True for events already past; the timeline dims them. */
   past?: boolean;
+  /** Where it came from — "catalyst" is the routine's hand-written material. */
+  source?: "catalyst" | "fomc" | "macro" | "earnings";
 };
 
 export type HomeData = {
@@ -495,7 +497,11 @@ export async function getHomeData(): Promise<HomeData> {
     }));
 
   const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
-  const upcoming = getCalendarEvents().filter((e) => e.date >= today);
+
+  // Authored catalysts plus the scheduled earnings and macro prints the routine
+  // was never meant to type by hand.
+  const merged = await getMergedTimeline(today);
+  const upcoming = merged.filter((e) => e.date >= today);
   // The week's binary — the first macro-regime event ahead. Marked hot on the
   // timeline so the countdown is legible at a glance.
   const BINARY_KINDS = new Set(["MACRO", "FOMC", "CPI", "NFP", "PCE"]);
@@ -520,16 +526,30 @@ export async function getHomeData(): Promise<HomeData> {
       hot: BINARY_KINDS.has(e.kind.toUpperCase()) && e.date === hotDate,
       tMinus: Math.round((Date.parse(e.date) - Date.parse(today)) / 86_400_000),
       past: e.date < today,
+      source: e.source,
     };
   };
 
-  // The detail list stays forward-only and capped — it's the reading layer.
-  const calendar: CalRow[] = upcoming.slice(0, 6).map(toRow);
+  // The detail list is the reading layer, so it guarantees the routine's
+  // catalysts a place rather than letting a busy earnings week crowd them out —
+  // eighteen names report in six weeks and would otherwise fill it entirely.
+  // Chronological within the selection, so it still reads as a calendar.
+  const nextCatalysts = upcoming.filter((e) => e.source === "catalyst").slice(0, 4);
+  const nextOther = upcoming.filter((e) => e.source !== "catalyst").slice(0, 4);
+  const calendar: CalRow[] = [...nextCatalysts, ...nextOther]
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .slice(0, 7)
+    .map(toRow);
 
-  // The timeline is the scrubbing layer: every catalyst we know of, behind and
+  // The timeline is the scrubbing layer: everything we know of, behind and
   // ahead, so it can be scrolled in both directions rather than starting flat
-  // at today. Uncapped — the archive is ~30 events a month, not unbounded.
-  const timeline: CalRow[] = getCalendarTimeline().map(toRow);
+  // at today.
+  const timeline: CalRow[] = [
+    ...getCalendarArchive().map((e) => ({ ...e, source: "catalyst" as const })),
+    ...upcoming,
+  ]
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .map(toRow);
 
   const todayLabel = new Date()
     .toLocaleDateString("en-US", {
