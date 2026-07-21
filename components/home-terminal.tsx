@@ -266,15 +266,10 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
   };
 
   if (nodes.length < 2) return null;
-  const behind = firstAhead < 0 ? nodes.length : firstAhead;
-  const ahead = nodes.length - behind;
 
   return (
     <div>
       <div className="mb-1 flex items-baseline gap-2">
-        <span className="font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--faint)]">
-          {behind} behind · {ahead} ahead
-        </span>
         <div className="ml-auto flex items-center gap-1">
           <TimelineButton label="Scroll to earlier catalysts" onClick={() => page(-1)}>
             ‹
@@ -493,7 +488,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
               Scrolls both ways, so it's no longer only "the week ahead". */}
           {data.timeline.length >= 2 && (
             <div className="pt-12">
-              <SectionRule>The road ahead</SectionRule>
+              <SectionRule>Schedule</SectionRule>
               <WeekTimeline timeline={data.timeline} />
             </div>
           )}
