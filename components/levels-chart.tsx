@@ -147,6 +147,53 @@ function computeRSI(closes: number[], period = RSI_PERIOD): (number | null)[] {
   return out;
 }
 
+/**
+ * Standard EMA over the closes, SMA-seeded (the StockCharts / TradingView
+ * convention): the first value is the simple average of the first `period`
+ * closes, then each bar is close·k + prevEMA·(1−k) with k = 2/(period+1).
+ * Null until there are `period` bars — a 200-EMA simply doesn't draw on a
+ * window shorter than 200 bars rather than starting from thin data.
+ */
+function computeEMA(closes: number[], period: number): (number | null)[] {
+  const out: (number | null)[] = closes.map(() => null);
+  if (closes.length < period) return out;
+  const k = 2 / (period + 1);
+  let sum = 0;
+  for (let i = 0; i < period; i++) sum += closes[i];
+  let ema = sum / period;
+  out[period - 1] = ema;
+  for (let i = period; i < closes.length; i++) {
+    ema = closes[i] * k + ema * (1 - k);
+    out[i] = ema;
+  }
+  return out;
+}
+
+// The four EMAs and their colours. Distinct mid-tone hues — legible on both the
+// paper and dark grounds — deliberately outside the green/red (direction) and
+// lapis/oxblood (levels) families so the ribbon never reads as either.
+const EMA_CONFIGS: Array<{ period: number; color: string }> = [
+  { period: 9, color: "#d99a2a" }, // amber
+  { period: 20, color: "#3f8fd4" }, // blue
+  { period: 50, color: "#8f5ae0" }, // violet
+  { period: 200, color: "#d64f97" }, // magenta
+];
+
+/** "M…L…" path over a series, skipping the null (insufficient-history) head. */
+function seriesPath(
+  vals: (number | null)[],
+  xf: (i: number) => number,
+  yf: (v: number) => number,
+): string {
+  return vals
+    .map((v, i) =>
+      v == null
+        ? ""
+        : `${i === 0 || vals[i - 1] == null ? "M" : "L"}${xf(i).toFixed(1)},${yf(v).toFixed(1)}`,
+    )
+    .join("");
+}
+
 // The rule carries everything now that the zone band is gone: its thickness
 // encodes how many times the level was tested.
 const zoneWeight = (touches: number) => Math.min(2.6, 1 + touches * 0.16);
@@ -192,6 +239,7 @@ export default function LevelsChart({
   const [showVolume, setShowVolume] = useState(defaultVolume);
   const [showLevels, setShowLevels] = useState(defaultLevels);
   const [showRSI, setShowRSI] = useState(false);
+  const [showEMA, setShowEMA] = useState(false);
   // Candles carry direction bar by bar; the line carries shape. On a long
   // window the bodies get thin enough that the shape is what you're reading
   // anyway, so let it be read directly.
@@ -380,6 +428,22 @@ export default function LevelsChart({
     [bars],
   );
   const rsiOn = showRSI && !compact;
+
+  // EMAs overlay the price directly (same scale as the candles). Each is
+  // computed once; only those with enough bars on this window produce a line,
+  // so a short range quietly shows fewer of them (e.g. no 200 on a 3-month
+  // view) rather than drawing a stub off partial data.
+  const emas = useMemo(() => {
+    if (!bars) return [];
+    const closes = bars.map((b) => b.close);
+    return EMA_CONFIGS.map((cfg) => ({
+      ...cfg,
+      values: computeEMA(closes, cfg.period),
+      hasData: bars.length >= cfg.period,
+    }));
+  }, [bars]);
+  const emaOn = showEMA && !compact;
+  const activeEmas = emaOn ? emas.filter((e) => e.hasData) : [];
   const rsiTop = H - PAD_B + RSI_GAP;
   const rsiBottom = rsiTop + RSI_H;
   const viewH = H + (rsiOn ? RSI_GAP + RSI_H : 0);
@@ -766,6 +830,24 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
+            onClick={() => setShowEMA((v) => !v)}
+            disabled={!bars || bars.length < EMA_CONFIGS[0].period}
+            aria-pressed={emaOn}
+            title={
+              !bars || bars.length < EMA_CONFIGS[0].period
+                ? "Not enough bars to compute an EMA on this range"
+                : "Show or hide the 9 / 20 / 50 / 200 EMAs"
+            }
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              emaOn
+                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+            }`}
+          >
+            EMA
+          </button>
+          <button
+            type="button"
             onClick={() => setExpanded((v) => !v)}
             className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
           >
@@ -798,6 +880,21 @@ export default function LevelsChart({
               <i className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px] bg-[var(--floor)]" />
               Support
             </span>
+          </div>
+        )}
+        {/* EMA legend at the top-left, opposite the S/R legend, so the two
+            never overlap. Only the EMAs actually drawn on this window appear. */}
+        {activeEmas.length > 0 && (
+          <div className="pointer-events-none absolute left-2 top-2 z-[2] flex gap-3 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
+            {activeEmas.map((e) => (
+              <span key={`ema-key-${e.period}`}>
+                <i
+                  className="mr-1.5 inline-block h-[2px] w-3.5 align-[3px]"
+                  style={{ background: e.color }}
+                />
+                EMA {e.period}
+              </span>
+            ))}
           </div>
         )}
         {!bars && !error && (
@@ -1004,6 +1101,24 @@ export default function LevelsChart({
               })
               )}
               </g>
+
+              {/* EMA ribbon, clipped to the plot and drawn over the price. */}
+              {activeEmas.length > 0 && (
+                <g clipPath={`url(#${clipId})`}>
+                  {activeEmas.map((e) => (
+                    <path
+                      key={`ema-${e.period}`}
+                      d={seriesPath(e.values, scale.x, scale.y)}
+                      fill="none"
+                      stroke={e.color}
+                      strokeWidth={1.3}
+                      strokeLinejoin="round"
+                      strokeLinecap="round"
+                      opacity={0.95}
+                    />
+                  ))}
+                </g>
+              )}
 
               {/* Outside the clip: x(last) lands exactly on the right edge, so
                   a clipped dot would lose its outer half. */}
