@@ -63,6 +63,21 @@ const BAR_INTERVAL: Record<string, string> = {
 /** How many levels to show either side of the price. */
 const ZONES_PER_SIDE = 2;
 
+/** Share of the plot given to the volume pane when it's on. */
+const VOL_FRACTION = 0.2;
+/** Gap between the price area and the volume pane. */
+const VOL_GAP = 10;
+
+/** Compact volume for a tooltip: 1.2B, 44.6M, 12.4K. */
+function fmtVolume(v: number): string {
+  const abs = Math.abs(v);
+  if (abs >= 1e12) return `${(v / 1e12).toFixed(2)}T`;
+  if (abs >= 1e9) return `${(v / 1e9).toFixed(2)}B`;
+  if (abs >= 1e6) return `${(v / 1e6).toFixed(1)}M`;
+  if (abs >= 1e3) return `${(v / 1e3).toFixed(1)}K`;
+  return v.toLocaleString();
+}
+
 // A filled band heavy enough to encode strength swamps the candles behind it,
 // so weight moved to the rule: the fill is only a faint hint of the zone's
 // width, and thickness carries how many times the level was tested.
@@ -97,6 +112,7 @@ export default function LevelsChart({
   const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
+  const [showVolume, setShowVolume] = useState(true);
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -153,6 +169,19 @@ export default function LevelsChart({
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
 
+  // VIX is a calculated index: every bar reports volume 0. Intraday equity bars
+  // are also zero outside regular hours, which is real rather than broken — so
+  // require a majority of bars to have traded before showing the pane.
+  const maxVolume = useMemo(
+    () => (bars ? Math.max(0, ...bars.map((b) => b.volume ?? 0)) : 0),
+    [bars],
+  );
+  const hasVolume = useMemo(() => {
+    if (!bars || maxVolume <= 0) return false;
+    return bars.filter((b) => (b.volume ?? 0) > 0).length >= bars.length * 0.25;
+  }, [bars, maxVolume]);
+  const volumeOn = showVolume && hasVolume && !compact;
+
   // Only the levels in play: a couple either side of the price. A ceiling 60%
   // overhead is real history but says nothing about the next move, and every
   // extra band is one more thing obscuring the candles.
@@ -180,7 +209,10 @@ export default function LevelsChart({
     // axis. Above a few multiples, switch to log so equal % moves get equal
     // vertical space, which is how a price chart should read anyway.
     const useLog = lo > 0 && hi / lo > 4;
-    const plotH = H - PAD_T - PAD_B;
+    // The volume pane eats the bottom of the plot, so the price scale has to be
+    // told about it — otherwise candles draw straight through the bars.
+    const volH = volumeOn ? (H - PAD_T - PAD_B) * VOL_FRACTION : 0;
+    const plotH = H - PAD_T - PAD_B - volH - (volumeOn ? VOL_GAP : 0);
 
     let y: (v: number) => number;
     if (useLog) {
@@ -199,8 +231,17 @@ export default function LevelsChart({
     }
 
     const x = (i: number) => PAD_L + (i / (bars.length - 1)) * (W - PAD_L - PAD_R);
-    return { x, y, useLog };
-  }, [bars, analysis, zones, H, PAD_R]);
+
+    // Volume pane: baseline at the bottom, bars grown upward from it.
+    const volTop = PAD_T + plotH + (volumeOn ? VOL_GAP : 0);
+    const volBase = H - PAD_B;
+    const volY = (v: number) =>
+      maxVolume > 0
+        ? volBase - Math.max(v > 0 ? 1 : 0, (v / maxVolume) * (volBase - volTop))
+        : volBase;
+
+    return { x, y, useLog, volTop, volBase, volY };
+  }, [bars, analysis, zones, H, PAD_R, volumeOn, maxVolume]);
 
   const labelYs = useMemo(() => {
     if (!scale) return [];
@@ -527,6 +568,24 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
+            onClick={() => setShowVolume((v) => !v)}
+            disabled={!hasVolume}
+            aria-pressed={volumeOn}
+            title={
+              hasVolume
+                ? "Show or hide the volume pane"
+                : `${symbol} reports no traded volume`
+            }
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              volumeOn
+                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+            }`}
+          >
+            Vol
+          </button>
+          <button
+            type="button"
             onClick={() => setExpanded((v) => !v)}
             className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
           >
@@ -536,6 +595,7 @@ export default function LevelsChart({
           <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
             {INTRADAY_RANGES.has(range) ? "intraday bars" : BAR_INTERVAL[range]} ·{" "}
             {scale?.useLog ? "log scale" : "levels re-derived for this window"}
+            {!hasVolume && bars && " · no traded volume"}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
         </div>
@@ -645,6 +705,53 @@ export default function LevelsChart({
                 );
               })}
 
+              {volumeOn && (
+                <g>
+                  {/* Baseline, then a bar per session. Direction matches the
+                      candle above it so the two read as one column. */}
+                  <line
+                    x1={PAD_L}
+                    x2={W - PAD_R}
+                    y1={scale.volBase}
+                    y2={scale.volBase}
+                    stroke="var(--border-strong)"
+                    strokeWidth={1}
+                    opacity={0.7}
+                  />
+                  {bars.map((b, i) => {
+                    const v = b.volume ?? 0;
+                    if (v <= 0) return null;
+                    const o = b.open ?? b.close;
+                    const up = b.close >= o;
+                    const bw = Math.max(
+                      1,
+                      ((W - PAD_L - PAD_R) / bars.length) * 0.62,
+                    );
+                    const top = scale.volY(v);
+                    return (
+                      <rect
+                        key={`v-${b.date}`}
+                        x={scale.x(i) - bw / 2}
+                        y={top}
+                        width={bw}
+                        height={Math.max(0.5, scale.volBase - top)}
+                        fill={up ? "var(--up)" : "var(--down)"}
+                        opacity={0.4}
+                      />
+                    );
+                  })}
+                  <text
+                    x={W - PAD_R + 9}
+                    y={scale.volTop + 9}
+                    fill="var(--faint)"
+                    fontFamily="var(--mono)"
+                    fontSize={8.5}
+                  >
+                    vol · peak {fmtVolume(maxVolume)}
+                  </text>
+                </g>
+              )}
+
               <g clipPath={`url(#${clipId})`}>
               {bars.map((b, i) => {
                 const o = b.open ?? b.close;
@@ -741,13 +848,36 @@ export default function LevelsChart({
                 {(((hoveredBar.close - analysis.price) / analysis.price) * 100).toFixed(1)}%
                 <br />
                 <span className="text-[var(--faint)]">
-                  {new Date(hoveredBar.date).toLocaleDateString("en-US", {
+                  {new Date(hoveredBar.date).toLocaleString("en-US", {
+                    weekday: "short",
                     month: "short",
                     day: "numeric",
                     year: "numeric",
-                    timeZone: "UTC",
+                    ...(INTRADAY_RANGES.has(range)
+                      ? ({ hour: "numeric", minute: "2-digit" } as const)
+                      : {}),
+                    timeZone: INTRADAY_RANGES.has(range) ? "America/New_York" : "UTC",
                   })}
                 </span>
+                {hoveredBar.open != null &&
+                  hoveredBar.high != null &&
+                  hoveredBar.low != null && (
+                    <>
+                      <br />
+                      <span className="text-[var(--dim)]">
+                        O {hoveredBar.open.toFixed(2)} · H {hoveredBar.high.toFixed(2)} · L{" "}
+                        {hoveredBar.low.toFixed(2)}
+                      </span>
+                    </>
+                  )}
+                {(hoveredBar.volume ?? 0) > 0 && (
+                  <>
+                    <br />
+                    <span className="text-[var(--dim)]">
+                      Vol {fmtVolume(hoveredBar.volume as number)}
+                    </span>
+                  </>
+                )}
                 {hoveredZone && (
                   <>
                     <br />
