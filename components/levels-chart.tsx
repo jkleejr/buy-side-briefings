@@ -113,6 +113,7 @@ export default function LevelsChart({
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
   const [showVolume, setShowVolume] = useState(true);
+  const [showLevels, setShowLevels] = useState(true);
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -194,6 +195,12 @@ export default function LevelsChart({
     const maxDist = Math.min(60, Math.max(10, spanPct * 0.4));
     return pickRelevantZones(analysis.zones, analysis.price, perSide, maxDist);
   }, [analysis, perSide]);
+
+  // Levels are derived, not observed — worth being able to take them off and
+  // read the price action on its own. The compact variant has no toolbar, so
+  // it keeps them. Note the y-scale below still accounts for hidden zones:
+  // toggling should reveal and hide lines, not rescale the chart under you.
+  const levelsOn = compact || showLevels;
 
   const scale = useMemo(() => {
     if (!bars || !analysis) return null;
@@ -407,7 +414,7 @@ export default function LevelsChart({
   // "99.7% to support" is technically true on a 25-year window and useless as
   // a readout — a level that far away tells you nothing about the next move.
   const nearestDrawn = zones.filter((z) => z.mid < (analysis?.price ?? 0))[0];
-  const headline = !analysis
+  const headline = !analysis || !levelsOn
     ? ""
     : analysis.inside && zones.includes(analysis.inside)
       ? `inside a ${analysis.inside.touches}× zone`
@@ -435,7 +442,7 @@ export default function LevelsChart({
 
   const hoveredBar = hover && bars ? bars[hover.i] : null;
   const hoveredZone =
-    hoveredBar && analysis
+    hoveredBar && analysis && levelsOn
       ? zones.find((z) => hoveredBar.close >= z.lo && hoveredBar.close <= z.hi) ?? null
       : null;
 
@@ -586,6 +593,24 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
+            onClick={() => setShowLevels((v) => !v)}
+            disabled={!analysis}
+            aria-pressed={levelsOn}
+            title={
+              analysis
+                ? "Show or hide the derived support and resistance levels"
+                : `No levels derived for ${symbol} on this range`
+            }
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              levelsOn
+                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+            }`}
+          >
+            S/R
+          </button>
+          <button
+            type="button"
             onClick={() => setExpanded((v) => !v)}
             className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
           >
@@ -594,7 +619,11 @@ export default function LevelsChart({
 
           <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
             {INTRADAY_RANGES.has(range) ? "intraday bars" : BAR_INTERVAL[range]} ·{" "}
-            {scale?.useLog ? "log scale" : "levels re-derived for this window"}
+            {scale?.useLog
+              ? "log scale"
+              : levelsOn
+                ? "levels re-derived for this window"
+                : "levels hidden"}
             {!hasVolume && bars && " · no traded volume"}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
@@ -622,7 +651,11 @@ export default function LevelsChart({
               viewBox={`0 0 ${W} ${H}`}
               className="block w-full"
               role="img"
-              aria-label={`${symbol} ${range} candlestick chart with ${zones.length} derived support and resistance levels`}
+              aria-label={
+                levelsOn
+                  ? `${symbol} ${range} candlestick chart with ${zones.length} derived support and resistance levels`
+                  : `${symbol} ${range} candlestick chart, support and resistance hidden`
+              }
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
               onPointerDown={onPointerDown}
@@ -645,7 +678,7 @@ export default function LevelsChart({
                   />
                 </clipPath>
               </defs>
-              {zones.map((z, i) => {
+              {levelsOn && zones.map((z, i) => {
                 const yt = scale.y(z.hi);
                 const yb = scale.y(z.lo);
                 const ym = scale.y(z.mid);
@@ -901,18 +934,22 @@ export default function LevelsChart({
 
       {!compact && (
       <div className="flex flex-wrap gap-4 px-1 pt-2 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
-        <span>
-          <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--ceiling)] opacity-50" />
-          Resistance
-        </span>
-        <span>
-          <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
-          Support
-        </span>
-        <span>Band opacity = times tested</span>
-        <span className="text-[var(--faint)]">
-          Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
-        </span>
+        {levelsOn && (
+          <>
+            <span>
+              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--ceiling)] opacity-50" />
+              Resistance
+            </span>
+            <span>
+              <i className="mr-1.5 inline-block h-2.5 w-2.5 align-[-1px] bg-[var(--floor)] opacity-50" />
+              Support
+            </span>
+            <span>Band opacity = times tested</span>
+            <span className="text-[var(--faint)]">
+              Nearest {ZONES_PER_SIDE} levels each side · derived from swing pivots
+            </span>
+          </>
+        )}
         {/* Where the numbers come from and how fresh they are — the symbol is
             named because "Gold" could reasonably mean spot, GLD or futures. */}
         <span className="basis-full text-[var(--faint)] normal-case tracking-normal">
