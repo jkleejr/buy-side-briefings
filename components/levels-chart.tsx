@@ -1,6 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from "react";
 import { INTRADAY_RANGES, type ChartPoint, type ChartRange } from "@/lib/chart-ranges";
 import {
   deriveLevels,
@@ -10,6 +17,19 @@ import {
   type LevelZone,
 } from "@/lib/levels";
 import RangeSelector from "./range-selector";
+import {
+  appendPoint,
+  colorValue,
+  DRAW_COLORS,
+  drawingsServerSnapshot,
+  drawingsSnapshot,
+  freehandPath,
+  saveDrawings,
+  subscribeDrawings,
+  type DrawColorId,
+  type DrawTool,
+  type Shape,
+} from "@/lib/chart-drawings";
 
 // Candles with derived support/resistance behind them (Design Note 12B-04).
 // The wicks are the argument: you see price poke into a zone and get pushed
@@ -192,8 +212,123 @@ export default function LevelsChart({
     );
   }, [zones, scale, H, LABEL_GAP]);
 
+  // --- drawing ---------------------------------------------------------------
+  // Shapes are normalised to the plot rect, so they hold their place when the
+  // chart is expanded or the window resized. Scoped per symbol+range: a line
+  // drawn on NVDA's 3M is meaningless on Bitcoin's 1Y.
+  const plotW = W - PAD_L - PAD_R;
+  const plotH = H - PAD_T - PAD_B;
+  const toX = useCallback((n: number) => PAD_L + n * plotW, [plotW]);
+  const toY = useCallback((n: number) => PAD_T + n * plotH, [plotH]);
+
+  const [tool, setTool] = useState<DrawTool>("none");
+  const [color, setColor] = useState<DrawColorId>("blue");
+
+  // Saved drawings come from an external store so the server can render "none"
+  // and the client adopt the stored set after mount — reading localStorage
+  // during render mismatched hydration on the toolbar, which paints before any
+  // price data arrives.
+  const getSnapshot = useCallback(() => drawingsSnapshot(symbol, range), [symbol, range]);
+  const shapes = useSyncExternalStore(
+    subscribeDrawings,
+    getSnapshot,
+    drawingsServerSnapshot,
+  );
+
+  const [draftState, setDraft] = useState<{ key: string; shape: Shape } | null>(null);
+  const draft = draftState?.key === key ? draftState.shape : null;
+
+  const commit = useCallback(
+    (next: Shape[]) => saveDrawings(symbol, range, next),
+    [symbol, range],
+  );
+
+  /** Pointer position as a fraction of the plot rect, clamped to it. */
+  const norm = useCallback(
+    (clientX: number, clientY: number): [number, number] => {
+      const svg = svgRef.current;
+      if (!svg) return [0, 0];
+      const r = svg.getBoundingClientRect();
+      const vx = ((clientX - r.left) / r.width) * W;
+      const vy = ((clientY - r.top) / r.height) * H;
+      return [
+        Math.max(0, Math.min(1, (vx - PAD_L) / plotW)),
+        Math.max(0, Math.min(1, (vy - PAD_T) / plotH)),
+      ];
+    },
+    [plotW, plotH, H],
+  );
+
+  // The live stroke lives in a ref as well as state: the window listeners below
+  // are attached once per gesture, so they must not close over a stale draft.
+  const live = useRef<Shape | null>(null);
+  const [dragging, setDragging] = useState(false);
+
+  const onPointerDown = useCallback(
+    (ev: React.PointerEvent<SVGSVGElement>) => {
+      if (tool === "none") return;
+      const [x, y] = norm(ev.clientX, ev.clientY);
+      const shape: Shape =
+        tool === "line"
+          ? { kind: "line", x1: x, y1: y, x2: x, y2: y, color }
+          : { kind: "free", pts: [[x, y]], color };
+      live.current = shape;
+      setDraft({ key, shape });
+      setDragging(true);
+    },
+    [tool, norm, key, color],
+  );
+
+  // Move and release are tracked on the window rather than the SVG, so a stroke
+  // that leaves the plot — or a mouse released outside it — still finishes
+  // cleanly instead of leaving a dangling draft.
+  useEffect(() => {
+    if (!dragging) return;
+
+    const onWinMove = (e: PointerEvent) => {
+      const cur = live.current;
+      if (!cur) return;
+      const [x, y] = norm(e.clientX, e.clientY);
+      // Spread in both branches — rebuilding the freehand shape from scratch
+      // dropped its colour on the first move, so every stroke came out blue.
+      const next: Shape =
+        cur.kind === "line"
+          ? { ...cur, x2: x, y2: y }
+          : { ...cur, pts: appendPoint(cur.pts, [x, y]) };
+      live.current = next;
+      setDraft({ key, shape: next });
+    };
+
+    const onWinUp = () => {
+      const cur = live.current;
+      live.current = null;
+      setDragging(false);
+      setDraft(null);
+      // A click without a drag isn't a shape — drop zero-length marks.
+      const meaningful =
+        cur &&
+        (cur.kind === "free"
+          ? cur.pts.length > 1
+          : Math.hypot(cur.x2 - cur.x1, cur.y2 - cur.y1) > 0.01);
+      if (cur && meaningful) commit([...shapes, cur]);
+    };
+
+    window.addEventListener("pointermove", onWinMove);
+    window.addEventListener("pointerup", onWinUp);
+    window.addEventListener("pointercancel", onWinUp);
+    return () => {
+      window.removeEventListener("pointermove", onWinMove);
+      window.removeEventListener("pointerup", onWinUp);
+      window.removeEventListener("pointercancel", onWinUp);
+    };
+  }, [dragging, norm, key, shapes, commit]);
+
   const onMove = useCallback(
     (ev: React.PointerEvent<SVGSVGElement>) => {
+      // Crosshair is suppressed while a drawing tool is armed — one pointer
+      // can't sensibly do both.
+      if (tool !== "none" || dragging) return;
+
       const svg = svgRef.current;
       if (!svg || !bars || !scale) return;
       const r = svg.getBoundingClientRect();
@@ -205,8 +340,28 @@ export default function LevelsChart({
       );
       setHover({ i, x: scale.x(i), y: scale.y(bars[i].close) });
     },
-    [bars, scale],
+    [bars, scale, tool, dragging],
   );
+
+  const undo = useCallback(() => commit(shapes.slice(0, -1)), [shapes, commit]);
+  const clearAll = useCallback(() => commit([]), [commit]);
+
+  // --- expand ----------------------------------------------------------------
+  const [expanded, setExpanded] = useState(false);
+  useEffect(() => {
+    if (!expanded) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setExpanded(false);
+    };
+    window.addEventListener("keydown", onKey);
+    // Stop the page scrolling behind the overlay.
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [expanded]);
 
   // "99.7% to support" is technically true on a 25-year window and useless as
   // a readout — a level that far away tells you nothing about the next move.
@@ -244,7 +399,13 @@ export default function LevelsChart({
       : null;
 
   return (
-    <div>
+    <div
+      className={
+        expanded
+          ? "fixed inset-0 z-[100] overflow-auto bg-[var(--background)] p-4 sm:p-6"
+          : undefined
+      }
+    >
       <div className="flex flex-wrap items-baseline gap-2 pb-2">
         {compact ? (
           <span className="font-mono text-[11px] font-bold tracking-[0.1em] text-[var(--foreground)]">
@@ -296,9 +457,86 @@ export default function LevelsChart({
       {!compact && (
         <div className="flex flex-wrap items-center gap-2 pb-2">
           <RangeSelector value={range} onChange={setRange} loading={!bars && !error} />
+
+          {/* Drawing tools. Crosshair is the resting state so the chart still
+              reads normally; arming a tool takes the pointer over. */}
+          <div className="flex border border-[var(--border-strong)]">
+            {(
+              [
+                ["none", "Crosshair", "✛"],
+                ["line", "Straight line", "╱"],
+                ["free", "Freehand", "✎"],
+              ] as const
+            ).map(([t, label, glyph]) => (
+              <button
+                key={t}
+                type="button"
+                title={label}
+                aria-label={label}
+                aria-pressed={tool === t}
+                onClick={() => setTool(t)}
+                className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[11px] leading-5 last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                  tool === t
+                    ? "bg-[var(--amber)] text-[var(--background)]"
+                    : "text-[var(--dim)] hover:bg-[var(--panel)]"
+                }`}
+              >
+                {glyph}
+              </button>
+            ))}
+          </div>
+
+          {/* Ink colour. Shown only when a drawing tool is armed — it means
+              nothing while the crosshair is active. */}
+          {tool !== "none" && (
+            <div className="flex items-center gap-1 border border-[var(--border-strong)] px-1 py-0.5">
+              {DRAW_COLORS.map((c) => (
+                <button
+                  key={c.id}
+                  type="button"
+                  title={c.label}
+                  aria-label={`${c.label} ink`}
+                  aria-pressed={color === c.id}
+                  onClick={() => setColor(c.id)}
+                  className={`h-4 w-4 rounded-full border ${
+                    color === c.id
+                      ? "border-[var(--foreground)] ring-1 ring-[var(--foreground)]"
+                      : "border-[var(--border-strong)]"
+                  }`}
+                  style={{ background: c.value }}
+                />
+              ))}
+            </div>
+          )}
+
+          <button
+            type="button"
+            onClick={undo}
+            disabled={!shapes.length}
+            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+          >
+            Undo
+          </button>
+          <button
+            type="button"
+            onClick={clearAll}
+            disabled={!shapes.length}
+            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+          >
+            Clear
+          </button>
+          <button
+            type="button"
+            onClick={() => setExpanded((v) => !v)}
+            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+          >
+            {expanded ? "Exit ✕" : "Expand ⤢"}
+          </button>
+
           <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
             {INTRADAY_RANGES.has(range) ? "intraday bars" : BAR_INTERVAL[range]} ·{" "}
             {scale?.useLog ? "log scale" : "levels re-derived for this window"}
+            {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
         </div>
       )}
@@ -323,11 +561,19 @@ export default function LevelsChart({
               ref={svgRef}
               viewBox={`0 0 ${W} ${H}`}
               className="block w-full"
-              style={{ minHeight: compact ? undefined : 420 }}
               role="img"
               aria-label={`${symbol} ${range} candlestick chart with ${zones.length} derived support and resistance levels`}
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
+              onPointerDown={onPointerDown}
+              style={{
+                minHeight: compact ? undefined : expanded ? undefined : 420,
+                cursor: tool === "none" ? "crosshair" : "cell",
+                touchAction: tool === "none" ? undefined : "none",
+                // Without this a drag highlights the zone labels instead of drawing.
+                userSelect: tool === "none" ? undefined : "none",
+                WebkitUserSelect: tool === "none" ? undefined : "none",
+              }}
             >
               <defs>
                 <clipPath id={clipId}>
@@ -454,6 +700,33 @@ export default function LevelsChart({
                   />
                 </>
               )}
+              {/* Annotations, drawn last so they sit above candles and levels. */}
+              <g clipPath={`url(#${clipId})`} pointerEvents="none">
+                {[...shapes, ...(draft ? [draft] : [])].map((sh, i) =>
+                  sh.kind === "line" ? (
+                    <line
+                      key={i}
+                      x1={toX(sh.x1)}
+                      y1={toY(sh.y1)}
+                      x2={toX(sh.x2)}
+                      y2={toY(sh.y2)}
+                      stroke={colorValue(sh.color)}
+                      strokeWidth={1.8}
+                      strokeLinecap="round"
+                    />
+                  ) : (
+                    <path
+                      key={i}
+                      d={freehandPath(sh.pts, toX, toY)}
+                      fill="none"
+                      stroke={colorValue(sh.color)}
+                      strokeWidth={1.8}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  ),
+                )}
+              </g>
             </svg>
 
             {hover && hoveredBar && (
