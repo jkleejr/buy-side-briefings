@@ -151,8 +151,8 @@ function computeRSI(closes: number[], period = RSI_PERIOD): (number | null)[] {
  * Standard EMA over the closes, SMA-seeded (the StockCharts / TradingView
  * convention): the first value is the simple average of the first `period`
  * closes, then each bar is close·k + prevEMA·(1−k) with k = 2/(period+1).
- * Null until there are `period` bars — a 200-EMA simply doesn't draw on a
- * window shorter than 200 bars rather than starting from thin data.
+ * Null until there are `period` bars — a 50-EMA simply doesn't draw on a
+ * window shorter than 50 bars rather than starting from thin data.
  */
 function computeEMA(closes: number[], period: number): (number | null)[] {
   const out: (number | null)[] = closes.map(() => null);
@@ -176,7 +176,6 @@ const EMA_CONFIGS: Array<{ period: number; color: string }> = [
   { period: 9, color: "#d99a2a" }, // amber
   { period: 20, color: "#3f8fd4" }, // blue
   { period: 50, color: "#8f5ae0" }, // violet
-  { period: 200, color: "#d64f97" }, // magenta
 ];
 
 /** "M…L…" path over a series, skipping the null (insufficient-history) head. */
@@ -431,8 +430,8 @@ export default function LevelsChart({
 
   // EMAs overlay the price directly (same scale as the candles). Each is
   // computed once; only those with enough bars on this window produce a line,
-  // so a short range quietly shows fewer of them (e.g. no 200 on a 3-month
-  // view) rather than drawing a stub off partial data.
+  // so a very short range quietly shows fewer of them (e.g. no 50 on a
+  // one-month view) rather than drawing a stub off partial data.
   const emas = useMemo(() => {
     if (!bars) return [];
     const closes = bars.map((b) => b.close);
@@ -836,7 +835,7 @@ export default function LevelsChart({
             title={
               !bars || bars.length < EMA_CONFIGS[0].period
                 ? "Not enough bars to compute an EMA on this range"
-                : "Show or hide the 9 / 20 / 50 / 200 EMAs"
+                : "Show or hide the 9 / 20 / 50 EMAs"
             }
             className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
               emaOn
