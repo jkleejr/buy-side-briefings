@@ -1,0 +1,148 @@
+{
+  "routine": "markets",
+  "date": "2026-07-22",
+  "window": "morning",
+  "generated_at": "2026-07-22T11:35:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "⚠️",
+    "headline": "Iran peace talks stall as Rubio says Tehran not serious, pushing oil to new highs",
+    "label": "Brent $94 new conflict high; Rubio kills ceasefire hope; GOOGL/TSLA binary AH — all three upgrade conditions uncleared",
+    "conviction": "low",
+    "horizon": "Through July 22-23 earnings prints and FOMC July 28-29",
+    "rationale_short": "Oil re-escalated to the highest levels since the Iran conflict began — Brent $94.20, WTI $87.56 (+3.8%) — after Secretary Rubio said Iran is 'not serious' about ceasefire and the U.S. conducted its 11th consecutive overnight airstrike on Iranian positions. The July 21 ceasefire optimism (Qatar's 10-day framework, Brent pulling from $90.32 to $88.01) has fully reversed: Iran's demand to control Strait of Hormuz traffic is now characterized by Washington as a non-starter, making near-term resolution structurally harder than yesterday's brief assumed. AMD Advancing AI 2026 Day 1 opened in San Francisco with the full MI400/MI500 lineup revealed (432GB HBM4, 2.9 exaflops FP4; MI500 claims 1,000x AI performance uplift), but Dr. Lisa Su's defining keynote is July 23 at 9:30 AM PT — do not add ahead of the hyperscaler demand confirmation. The session's binary: GOOGL Q2 and TSLA Q2 both report AH tonight as the first Magnificent Seven prints of the cycle, alongside Intel Q2. GOOGL Cloud (63% growth last quarter, $462B backlog) and TSLA gross margin (480K Q2 deliveries confirmed; >15% base case, >18-20% re-rate gate) are the two unknowns that reset the risk framework tomorrow morning. Three formal upgrade conditions remain uncleared: VIX 17.41 (above 17), WTI $87.56 (above $79), SPX futures implying open ~7,478 (below 7,480 trigger). BTC $66,037 at 11:01 UTC (Gate 2 $62,000 intact) holds as the primary cross-asset risk-appetite indicator through 11 consecutive equity-stress sessions.",
+    "supporting_data": [
+      {
+        "label": "★★★ Brent $94.20 (+3.5%), WTI $87.56 (+3.8%) — new conflict highs; Rubio: Iran 'not serious' about talks; 11th consecutive US overnight airstrike; Hormuz traffic control is core sticking point",
+        "url": "https://www.cnbc.com/2026/07/22/oil-prices-iran-war-macro-rubio-brent-wti.html"
+      },
+      {
+        "label": "★★★ Rubio warns of Tehran Hormuz global fallout risk escalating; 11th consecutive night of US strikes on Iran; ceasefire framework not accepted",
+        "url": "https://www.cnbc.com/2026/07/22/us-iran-war-trump-hormuz-.html"
+      },
+      {
+        "label": "★★★ GOOGL Q2 + TSLA Q2 + INTC Q2 all AH tonight — first Magnificent Seven prints of cycle; GOOGL Cloud 63% growth/$462B backlog; TSLA 480K Q2 deliveries confirmed; gross margin binary",
+        "url": "https://finance.yahoo.com/markets/live/earnings-live-second-quarter-results-tesla-google-july-115324842.html"
+      },
+      {
+        "label": "★★ AMD Advancing AI 2026 Day 1 opens San Francisco; MI400 full lineup revealed (432GB HBM4, 2.9 exaflops FP4); MI500 claims 1,000x AI performance; Dr. Lisa Su keynote July 23 9:30 AM PT is the defining hyperscaler demand event",
+        "url": "https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/"
+      },
+      {
+        "label": "★★ S&P 500 futures -0.3%, Nasdaq-100 futures -0.7% premarket Wednesday; Polymarket bets S&P opens lower; VIX 17.41 (+2.11%) — above 17 formal trigger; oil spike driving vol premium",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-22-dow-sp-500-nasdaq-alphabet-tesla-083644887.html"
+      },
+      {
+        "label": "★★ BTC $66,037 (Crypto.com, 11:01 UTC July 22); 24h range $65,693–$66,964; -0.22% 24h; Gate 2 ($62,000) untouched through 11 consecutive equity-stress sessions",
+        "url": "https://crypto.com/exchange/trade/spot/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7500.0,  "change_pct": 0.76, "as_of": "2026-07-21T20:00:00Z", "note": "Estimated July 21 close (chip recovery session: SOXQ +4.27%, AMD +4%, Nasdaq-100 futures had been +1.38% premarket); futures -0.3% imply ~7,478 open Wednesday; 7,480 formal upgrade trigger barely out of reach for third consecutive morning" },
+    "nasdaq": { "level": 25891.0, "change_pct": 1.50, "as_of": "2026-07-21T20:00:00Z", "note": "Estimated July 21 close (Nasdaq-100 led chip recovery); futures -0.7% imply ~25,710 open Wednesday" },
+    "vix":    { "level": 17.41,   "change_pct": 2.11, "as_of": "2026-07-22T11:30:00Z", "note": "Premarket July 22 — above 17 formal trigger; oil-spike inflation premium driving vol bid; est. July 21 close ~17.05 (down from 18.83 premarket July 21 as chips rallied intraday)" },
+    "ust10y": { "level": 4.63,    "change_bps": 5,    "as_of": "2026-07-22T11:00:00Z", "note": "Up 5bps on Brent $94 oil-inflation pass-through; stagflation narrative re-emerging; 30Y est. ~5.10% (above 5.00% trigger)" },
+    "dxy":    { "level": 100.95,  "change_pct": 0.03, "as_of": "2026-07-22T11:00:00Z", "note": "Marginal safe-haven bid on Iran escalation; gold est. ~$4,030" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                  "value": 17.41,  "trigger_above": 17,    "unit": ""      },
+    { "name": "WTI vs $79 trigger",   "value": 87.56,  "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude",          "value": 94.20,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield (est.)",     "value": 5.10,   "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob",  "value": 48.7,   "trigger_above": 60,    "unit": "%"     },
+    { "name": "SPX vs 7,480 trigger", "value": 7478.0, "trigger_below": 7480,  "unit": ""      },
+    { "name": "BTC Gate 2",           "value": 66037,  "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMD",
+      "note": "AMD Advancing AI 2026 Day 1 open today (July 22, San Francisco). Full MI400 lineup revealed: 432GB HBM4, 2.9 exaflops FP4 performance; MI500 claims 1,000x AI performance uplift. Keynote: Dr. Lisa Su July 23 9:30 AM PT — the defining hyperscaler demand confirmation event (Microsoft Azure Helios win is anchor exhibit). Do NOT add ahead of Lisa Su keynote; wait for MI400 hyperscaler demand confirmation and Kimi K3 counter-narrative to be addressed. AMD Q2 Aug 4 is the fundamental EPS confirmation.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "★★★ Q2 earnings AH tonight — first Magnificent Seven print of the cycle. Cloud: 63% growth last quarter, $462B backlog. KeyBanc PT $445; Citizens JMP Buy/$515. 43/53 analysts Strong Buy. EU $4.67B fine absorbed without stock break. Pre-close Monday long (~$648 entry) holds into the print. Stop $635, target $685-700 on Cloud beat + Q3 AI revenue guide above consensus. Binary: Cloud revenue vs. Gemini-driven search share disclosure.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Q2 earnings AH tonight alongside GOOGL. Q2 deliveries: 480,126 units confirmed. Revenue consensus $26.4B, EPS $0.54. The unknown variable: gross margin — >15% base case, >18-20% re-rate gate above $410, <15% triggers stop. Options imply 7.6% swing. Do not add pre-print. Existing position: hold, stop at $350.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Avoid. Kimi K3 open-weight release July 27 creates a second AI narrative wave five days after AMD AI Day keynote (July 23). TSMC wafer hike (5-10% on 5nm/4nm) unquantified in sell-side EPS. Hard stop $195 intact. Do not add until post-NVDA Q2 FY27 Aug 26 with wafer hike impact clarified.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "XLE",
+      "note": "★★★ 20% allocation fully confirmed. WTI $87.56/Brent $94.20 at new conflict highs — Rubio 'not serious' comment has fully reversed the July 21 ceasefire optimism. Iran's demand to control Hormuz traffic is the formal sticking point; resolution requires Iran to concede this entirely. 11th consecutive night of US strikes. Hold 20% through August CPI. Reduce to 8% ONLY on confirmed ceasefire + Hormuz reopening + WTI two consecutive closes below $70.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "$66,037 at 11:01 UTC July 22 (Crypto.com). 24h range $65,693–$66,964; -0.22% 24h. Gate 2 ($62,000) never threatened through 11 consecutive equity-stress sessions. Leading cross-asset indicator that institutional risk appetite has not structurally broken. No add above $67K before GOOGL/TSLA print clarity tonight.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "INTC",
+      "note": "Intel Q2 reports AH tonight alongside GOOGL/TSLA. Watch for data center AI revenue and Intel 18A foundry ramp progress. Secondary catalyst for the chip complex; AMD AI Day Day 1 narrative may overshadow. No position; monitor for foundry progress signal.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "AMD above $530 pre-keynote",
+      "reason": "AMD Advancing AI 2026 keynote is tomorrow July 23 (Dr. Lisa Su, 9:30 AM PT) — today (Day 1) is industry demos and channel partner meetings, not the hyperscaler demand confirmation. Buying ahead of the keynote extends binary risk on MI400 customer wins and the Kimi K3 counter-argument. TSMC wafer hike impact on AMD cost structure also unquantified.",
+      "better_entry": "Post-Lisa Su keynote (July 23) with MI400 hyperscaler wins confirmed. Post-AMD Q2 Aug 4 for fundamental EPS confirmation."
+    },
+    {
+      "ticker": "GOOGL (add pre-print)",
+      "reason": "Q2 print is AH tonight. Cloud revenue miss OR Gemini 3.5 Pro delay disclosure OR search market share compression from AI competitors could send GOOGL back to $620-630 and invalidate the weekly trade structure. Adding pre-print extends binary risk with asymmetric downside that hasn't been resolved.",
+      "better_entry": "Post-Q2 AH print with Cloud beat confirmed and Q3 AI revenue guide above consensus. Or below $620 on a miss for longer-term entry."
+    },
+    {
+      "ticker": "TSLA pre-earnings",
+      "reason": "480K Q2 deliveries are known; gross margin binary is entirely unresolved until tonight's print. Options imply 7.6% swing. Adding pre-print creates asymmetric downside on a metric that determines the re-rate thesis.",
+      "better_entry": "Post-July 22 Q2 AH with gross margin >15% and FSD revenue recognition confirmed. Or below $350 on a miss with confirmed stop trigger."
+    },
+    {
+      "ticker": "New oil-linked longs at Brent $94+",
+      "reason": "XLE 20% allocation is already fully invested as the conviction position. Adding more oil exposure at new conflict highs creates asymmetric downside on a geopolitical event outside the model — a surprise Iran acceptance of the Qatar ceasefire framework could send WTI -10-15% in a single session.",
+      "better_entry": "Existing 20% XLE holds as the full conviction position. New oil exposure only on a confirmed Hormuz transit collapse below 15 ships/day AND WTI sustained above $90."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "GOOGL",
+      "direction": "long",
+      "thesis": "Q2 binary AH tonight. Pre-close long (~$648 Monday entry) enters the print with Cloud 63% growth/$462B backlog as tailwinds. AMD's Microsoft Helios win (July 20) has partially de-risked the AI-competitive narrative that could have dominated the call. 43/53 analysts Strong Buy; KeyBanc PT $445; Citizens JMP Buy/$515. GM Q2 beat established a constructive earnings-season backdrop.",
+      "entry": "Hold existing position (~$648 Monday entry). Stop $635. Target $685-700 on Cloud beat + Q3 AI revenue guide above consensus.",
+      "invalidation": "GOOGL Q2 Cloud revenue misses consensus OR management discloses Gemini 3.5 Pro delay extending into H1 2027 OR search market share compression from AI alternatives explicitly quantified on the call.",
+      "conviction": "medium",
+      "horizon": "Through July 22 AH print and July 23 open reaction"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "WTI $87.56/Brent $94.20 at new conflict highs. Rubio 'not serious' comment eliminates the near-term ceasefire scenario; Iran's Hormuz traffic control demand is the core sticking point requiring full Iranian concession to resolve. August CPI oil-shock structurally embedded at WTI above $80 for 12+ sessions.",
+      "entry": "Hold 20% XLE. Reduce to 8% ONLY on confirmed ceasefire with Hormuz reopening AND WTI two consecutive closes below $70.",
+      "invalidation": "Iran-US ceasefire formally agreed with Hormuz transit exceeding 10 vessels/day; WTI two consecutive closes below $70.",
+      "conviction": "medium",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "Brent $94 re-embeds August CPI oil pass-through risk at more severe levels than yesterday. 30Y est. ~5.10% remains above 5.00% trigger. July hike probability at 16.6% (CME FedWatch, July 21 data) keeps rate-shock tail risk contained but not eliminated. September hike probability ~48.7% (July 21 data; not confirmed updated for July 22). IWM put size remains at 50% of original. FOMC July 28-29 is the rate-setting clearing event.",
+      "entry": "Maintain IWM August puts at 50% size. Maintain TLT short above $88-89. Reassess after FOMC July 28-29.",
+      "invalidation": "WTI closes below $79 AND September hike prob confirms below 40% AND VIX closes below 16. Exit all simultaneously.",
+      "conviction": "low",
+      "horizon": "Through FOMC July 28-29"
+    }
+  ],
+  "bear_case": "Counter-thesis: The oil spike to Brent $94/WTI $87.56 is the most severe escalation since the Hormuz conflict began and is now structurally harder to resolve. Rubio's 'not serious' characterization — if it reflects a hardened US position rather than negotiating posture — means the ceasefire timeline extends well beyond the FOMC window and embeds persistent oil-inflation pass-through into September CPI. The earnings binary tonight is the most dangerous session of the cycle: a GOOGL Cloud miss OR TSLA gross margin below 15% individually warrants trade stops; both simultaneously with oil at Brent $94 would create a 5-of-7 regime risk count and argue for shifting from STEP ASIDE to BEARISH with mandatory position reduction across all risk assets. VIX at 17.41 (above 17 trigger for the second consecutive session) confirms that Monday's brief sub-17 VIX close was a single-session flicker, not a structural vol-regime improvement. If SPX opens below 7,400 on combined earnings misses and oil escalation, the bear case activates without requiring a second session confirmation. Invalidation: Iran formally accepts the Qatar framework within 48 hours AND GOOGL/TSLA both beat consensus tonight.",
+  "body_mdx": "data/briefings/markets/2026-07-22-morning.mdx"
+}
