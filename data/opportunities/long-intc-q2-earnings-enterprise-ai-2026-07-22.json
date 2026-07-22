@@ -1,0 +1,60 @@
+{
+  "id": "long-intc-q2-earnings-enterprise-ai-2026-07-22",
+  "title": "Long INTC — Q2 FY2026 Earnings Eve: Enterprise AI Demand Bellwether",
+  "ticker": "INTC",
+  "asset_class": "equity",
+  "category": "catalyst",
+  "direction": "long",
+  "conviction": "medium",
+  "time_horizon": "2-5 days",
+  "current_price": 101.0,
+  "entry": "$97–104 zone (intraday July 22; optimal below $100 for maximum stop distance). INTC surged 8% on Tuesday July 22 on three pre-earnings catalysts: Xeon 8000 MT/s RDIMM performance gains, 18A foundry yield confirmed at 85% (from 65%), and Apple/Microsoft confirmed as foundry partners. Do not chase above $104; wait for a retest of $99–101 if the session opens extended.",
+  "stop_loss": "$91 daily close (~9.9% below $101 reference) — at $91, the entire Tuesday 8% surge has been fully reversed, which implies either (1) a negative pre-announcement or channel check leaked after hours before the July 23 AH report, (2) the broader NVDA/AMD semi complex collapses on a macro trigger (VIX above 22, SPX through 7,380) pulling INTC down regardless of company fundamentals, or (3) the 18A yield figure of '85%' is disclosed as preliminary test-lot data rather than production volume. Below $91, the thesis is broken and the position should be exited same session without waiting for the earnings call.",
+  "targets": [
+    "$110 — Q2 EPS above consensus $0.22; data center revenue beats on Xeon AI inference workload demand; 18A yield guidance maintained or raised on call; options-implied 15% upside from $97 Tuesday close; cover 40% on the post-earnings open gap-up",
+    "$118 — 18A foundry yield confirmed above 85% in production-volume wafers (not test lots); second hyperscaler foundry win formally announced beyond Apple/Microsoft; full-year EPS guidance raised above current Street model; Enterprise AI inference demand from Xeon Scalable creates a durable new revenue vector separate from GPU compute; cover 40%",
+    "$128 — Blue-sky: INTC announces a third major foundry customer (Meta or Broadcom ASIC program); 18A positioned as viable TSMC N3 alternative; foundry narrative shifts from 'turnaround story' to 'AI infrastructure platform with two revenue streams (products + foundry)'; hold final 20%"
+  ],
+  "levels": {
+    "entry_low": 97.0,
+    "entry_high": 104.0,
+    "stop": 91.0,
+    "targets": [110.0, 118.0, 128.0]
+  },
+  "risk_reward": "1:2.5",
+  "position_size_pct": 3,
+  "catalyst": "Intel reports Q2 FY2026 AH Thursday July 23, 2026. Three catalysts on Tuesday July 22 drove an 8% pre-earnings surge: (1) Xeon 8000 MT/s RDIMMs with +20% memory bandwidth and +25% performance vs. prior generation, production beginning Aug–Sep 2026; (2) 18A process node yield confirmed at 85% — doubling from the 65% baseline that had previously made 18A uncompetitive; (3) Apple and Microsoft formally confirmed as foundry partners. Options imply a 15% swing in either direction. Analyst consensus: revenue $14.4B, non-GAAP EPS $0.22. INTC is up 163% YTD as of July 2026.",
+  "thesis": "Intel's operational turnaround entered a verification phase on July 22 with three simultaneous pre-earnings disclosures that collectively answer the market's three most urgent questions about the thesis: Is Xeon gaining AI workload share? (Yes — Xeon 8000 memory bandwidth improvements target inference inference efficiency at scale.) Is 18A a real foundry node? (Yes — 85% yield on 18A is the threshold at which cost-per-chip begins to approach TSMC N3 parity.) Do hyperscalers trust INTC as a foundry? (Yes — Apple and Microsoft are confirmed customers.) The Q2 AH earnings call on July 23 is the formal market event that either validates or stress-tests these disclosures with actual revenue data.\n\nThe 18A yield doubling from 65% to 85% is the single most important data point in the pre-earnings window. At 65% yield, 18A was structurally uncompetitive: too many defects per wafer made it more expensive than TSMC alternatives, limiting customer interest to captive or strategic pilots. At 85% yield, cost parity becomes achievable at volume — meaning 18A can compete for third-party foundry revenue on economics rather than just relationship or national-security grounds. If the Q2 call confirms that 85% is production-representative (not a hand-optimized test lot), the addressable foundry market for INTC expands from an estimated $2B captive opportunity to a $15B+ competitive pool. That delta is not priced at $101.\n\nThe enterprise AI demand angle is analytically distinct from the foundry narrative and matters independently. NVDA's GPU compute dominates AI training workloads; INTC's Xeon Scalable is positioned in the inference compute segment — specifically the large-model inference deployments where cost-per-token economics make discrete GPU compute prohibitively expensive. Google's reported deployment of INTC-based enterprise AI workloads (referenced in the July 22 surge context alongside the GOOGL earnings preview) is the real-world validation that Xeon inference is not theoretical. If Q2 data center segment revenue exceeds Street estimates on Xeon AI inference volumes, it demonstrates that the AI demand cycle extends to the full compute stack, not just training GPUs — a narrative that benefits AMD, NVDA, and INTC simultaneously but that INTC captures with the most asymmetric upside given its lower current valuation multiple relative to the others.\n\nThe binary risk is real and specifically acute tonight: GOOGL Q2 and TSLA Q2 both report July 22 AH, and the market's read on AI infrastructure demand from GOOGL's Cloud segment will set the overnight tone for INTC's session on July 23. A GOOGL Cloud miss (below 20% YoY growth) would raise Kimi K3 demand-disruption concerns that pressure all AI infrastructure names including INTC — potentially gapping INTC down before its own earnings even open. The $91 stop handles this scenario; the risk is that a GOOGL-driven pre-earnings selloff stops the INTC trade out before July 23 AH regardless of INTC's own fundamental quality.",
+  "bull_case": "INTC Q2 EPS above $0.22 consensus; data center revenue beats on Xeon AI inference; 18A yield confirmed above 85% in production-volume runs; management raises full-year guidance; a third foundry customer is named. Options-implied 15% upside from $97 Tuesday close = $112 first target. Blue-sky T3 of $128 requires the foundry narrative to fully shift from turnaround to sustainable platform — a 60–90 day process that begins with tonight's call.",
+  "bear_case": "Q2 EPS below $0.22 consensus on weaker-than-expected data center demand; 18A yield of '85%' qualified as 'test lots, not production volume'; foundry revenue guidance reduced; GOOGL Cloud simultaneously misses driving semi-sector risk-off. In this scenario the stock reverses the full 8% Tuesday surge and tests pre-surge base at $90–91. The broader macro context (VIX 18.77, September hike at 69%, WTI at $87.56) also creates an asymmetric downside environment if earnings disappoint.",
+  "invalidation": "$91 daily close (full reversal of Tuesday's 8% surge); OR Q2 EPS materially below $0.22 consensus; OR 18A yield disclosed as test-lot-only (not production volume); OR foundry revenue guidance cut vs. Street model; OR AMD Lisa Su keynote (July 23, 9:30am PT) reveals competitive foundry wins that undercut INTC's positioning; OR GOOGL Cloud miss tonight re-activates AI demand destruction narrative that drags the entire semi sector lower before INTC's July 23 earnings.",
+  "sources": [
+    {
+      "label": "Intel INTC surged 8% Tuesday on three catalysts — TradingKey July 22",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262045233-intel-intc-stock-surged-8-percent-july-22-2026-xeon-google-earnings-tradingkey"
+    },
+    {
+      "label": "INTC Q2 2026 earnings preview: 18A foundry, Apple/Microsoft partnerships — TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262042520-intel-intc-earnings-preview-july-23-2026-18a-foundry-apple-microsoft-tradingkey"
+    },
+    {
+      "label": "Intel Q2 earnings Thursday; options price 15% swing — TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262041092-intel-intc-q2-2026-earnings-preview-july-23-163-percent-ytd-tradingkey"
+    }
+  ],
+  "created_at": "2026-07-22",
+  "expires_at": "2026-07-28",
+  "status": "active",
+  "tags": [
+    "INTC",
+    "Intel",
+    "earnings",
+    "enterprise-AI",
+    "foundry",
+    "18A",
+    "semiconductor",
+    "Xeon",
+    "catalyst"
+  ],
+  "outcome": null
+}

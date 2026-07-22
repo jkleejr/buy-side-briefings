@@ -52,7 +52,7 @@
   ],
   "created_at": "2026-07-14",
   "expires_at": "2026-08-12",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "oil",
     "WTI",
@@ -63,5 +63,11 @@
     "CPI",
     "September-hike"
   ],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-22",
+    "final_price": 127.0,
+    "return_pct": 7.8,
+    "outcome_label": "Target 1 hit at $127",
+    "note": "USO crossed Target 1 ($127) on July 22 as WTI surged to $87.56 (+3.8%) — the worst print of the US-Iran crisis phase — after Secretary Rubio declared Iran 'not serious' about peace talks and the US executed its 11th consecutive evening of strikes. WTI at $87.56 is $4.56 above the $83 prose condition embedded in Target 1. USO reached $128.85 intraday, decisively clearing the $127 first-target level."
+  }
 }
