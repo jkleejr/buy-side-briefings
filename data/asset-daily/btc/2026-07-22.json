@@ -1,0 +1,137 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T21:50:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "BTC JULY 22 SESSION (WEDNESDAY): $65,921.39 REFERENCE (20:00 UTC CRYPTO.COM 1H CANDLE CLOSE; TIER 1 VERIFIED). PREV REFERENCE (JULY 21 DOSSIER): $66,402.26. CHANGE: -$480.87 / -0.724% — BEARS WIN AS BTC OPENS ABOVE THE PRIOR REFERENCE, PEAKS AT $66,742.99, THEN STEADILY SELLS OFF THROUGH THE US SESSION TO CLOSE JUST BELOW THE KEY $66,000 SUPPORT LEVEL. SESSION RANGE (FROM 20:00 UTC JULY 21 REFERENCE CLOSE): $65,545.03 (SESSION LOW, 13:00 UTC CANDLE — US MORNING, ~9:00 AM EDT; BUYERS ABSORBED THE DIP AND RECOVERED $376 BY REFERENCE) TO $66,742.99 (SESSION HIGH, 00:00 UTC CANDLE — OVERNIGHT; FIRST PRINT ABOVE $66,700 FOR THE CURRENT RALLY CYCLE). SESSION NARRATIVE — FOUR PHASES: (1) OVERNIGHT EXTENSION / PEAK (JULY 21 20:00–JULY 22 01:00 UTC): BTC EXTENDED FROM THE $66,402 REFERENCE TO A PEAK OF $66,742.99 AT 00:00 UTC — BUILDING ON THE JULY 21 ETF MOMENTUM INTO LATE NIGHT TRADING. VOLUME LIGHT AT 55-124 BTC/HOUR, CONFIRMING THE OVERNIGHT ADVANCE WAS MOMENTUM EXTENSION RATHER THAN NEW INSTITUTIONAL BUYING. (2) OVERNIGHT DISTRIBUTION AND FADE (02:00–07:00 UTC): FROM THE $66,742 PEAK, BTC BEGAN A SLOW GRIND LOWER — $66,562 (01:00), $66,439 (01:00), $66,318 (02:00), $66,211 (03:00), $66,379 (04:00 BRIEF RECOVERY), $66,379-$66,209 (05:00-06:00). VOLUME MODERATE AT 26-55 BTC/HOUR. MIDDLE EAST TENSIONS (ESCALATING US-IRAN CONFLICT) CREATED RISK-OFF UNDERCURRENT. (3) US MORNING SELLOFF TO SESSION LOW (07:00–13:00 UTC / 3:00–9:00 AM EDT): THE MOST MEANINGFUL DECLINE OF THE SESSION. BTC BROKE THROUGH $66,000 AT 07:00 UTC ($65,842 CLOSE), CONTINUED TO $65,797 (14:00 UTC), $65,947 (13:00 UTC — RECOVERY ATTEMPT), $65,634 (12:00 UTC), $65,948 (13:00 UTC), THEN HIT THE SESSION LOW OF $65,545.03 IN THE 13:00 UTC CANDLE (CLOSE $65,947, LOW $65,555). BUYERS DEFENDED AROUND $65,545-$65,600. BROADER MARKET CONTEXT: DOW AND SPX SLIPPING AS TRADERS BRACED FOR ALPHABET AND TESLA EARNINGS AFTER CLOSE; OIL PRICES RISING ON MIDDLE EAST ESCALATION. (4) US AFTERNOON RECOVERY TO REFERENCE (14:00–20:00 UTC / 10:00 AM – 4:00 PM EDT): GRADUAL RECOVERY FROM THE $65,545 LOW: $65,797 (14:00), $66,051 (15:00), $66,234 (16:00), $66,022 (17:00), $65,895 (18:00), $65,932 (19:00), $65,921 (20:00 UTC REFERENCE). THE RECOVERY STALLED AT $66,234 AT 16:00 UTC — UNABLE TO RECLAIM $66,000 ON A SUSTAINED CLOSING BASIS. THE 20:00 UTC REFERENCE OF $65,921.39 IS TECHNICALLY BELOW THE CRITICAL $66,000 SUPPORT LEVEL — A BEARISH CLOSE. KEY CONTEXT: ETF INFLOW STREAK EXTENDS TO SIXTH CONSECUTIVE DAY (CUMULATIVE $928M+ OVER 6 SESSIONS — $203M ADDED ON JULY 21), BUT TODAY'S CANDLES SHOW THE ETF BID WAS OFFSET BY RISK-OFF SELLING (MIDDLE EAST, EARNINGS UNCERTAINTY). BEARS WIN THE SESSION BY -0.724%, BUT THE $65,000 PSYCHOLOGICAL FLOOR WAS NEVER THREATENED (SESSION LOW $65,545, $545 ABOVE THE FLOOR).",
+
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "hold existing longs; watch $65,000 as invalidation level; ETF inflow streak is structural bid; re-evaluate if $65,000 is tested",
+    "rationale": "BTC is in a mild bear session (-0.724%) but the structural bull thesis remains intact. The reference close at $65,921.39 is technically below the $66,000 support level (established July 21), which is a near-term bearish signal — however, the marginal nature of the breach ($79 below $66,000) and the sustained ETF inflow streak (6th consecutive day, $928M+ cumulative) argue against abandoning longs. Hold existing positions. The $65,000 psychological floor (today's low was $65,545 — $545 of cushion) is the key invalidation level. If today's $66,000 break triggers further selling toward $65,000, a close below $65,000 would be the exit signal. The Kimi K3 (July 27) and FOMC (July 29) risk calendar remains unchanged."
+  },
+
+  "so_what": {
+    "line": "Hold longs — marginal $66K break at reference close, but ETF bid and $65K floor intact; watch if $66K reconverts to resistance or support on the next session.",
+    "bull": "ETF inflow streak extended to 6th consecutive day ($928M+ cumulative); $65,545 session low confirmed buyers at $65,500-$65,600; Crypto Fear & Greed Index rising; $65,000 floor untested.",
+    "bear": "Reference close at $65,921 is below $66,000 — yesterday's 'strongest support' was lost at the reference; risk-off from Middle East and earnings uncertainty could extend the selloff; new five-week high printed yesterday but not sustained ($66,742 vs July 21's $66,963 high)."
+  },
+
+  "snapshot": {
+    "price": 65921.39,
+    "change_pct": -0.724,
+    "change_abs": -480.87,
+    "prev_close": 66402.26,
+    "day_high": 66742.99,
+    "day_low": 65545.03,
+    "volume": "~1,153 BTC / ~$76.1M (estimated 24h from Crypto.com hourly data)",
+    "market_cap": "~$1.31T",
+    "extra": [
+      { "label": "20:00 UTC reference (verified)", "value": "$65,921.39 (Crypto.com 1H candle, 65.37 BTC volume)", "tone": "neutral" },
+      { "label": "$66,000 support at reference close", "value": "LOST — reference $65,921 is $79 below $66,000 (marginal break)", "tone": "down" },
+      { "label": "Session high", "value": "$66,742.99 (00:00 UTC overnight) — could not hold above $66,700", "tone": "neutral" },
+      { "label": "Session low vs $65,000 floor", "value": "$65,545.03 (13:00 UTC) — $545 above the psychological floor; floor not threatened", "tone": "up" },
+      { "label": "ETF inflow streak", "value": "6th consecutive day — $928M+ cumulative (structural bid intact)", "tone": "up" },
+      { "label": "Middle East risk-off", "value": "US-Iran escalation driving oil +4%+ and broad risk-off; BTC correlation weight", "tone": "down" },
+      { "label": "24h trading volume", "value": "~$13.21B (below average; thinner volume on the decline = bears not aggressive)", "tone": "neutral" }
+    ]
+  },
+
+  "positioning": {
+    "short_interest": "Perp funding remains slightly positive (mild long bias); the -0.724% session does not create significant short squeeze risk yet; new shorts added at $66,700 are up $821 per BTC on the day",
+    "notable_flow": "The session's volume profile tells a bearish-but-not-aggressive story: the session high ($66,742) was made on light overnight volume (55-124 BTC/hour); the selloff to $65,545 was on moderate volume (54-88 BTC/hour); the recovery to $65,921 was on mixed volume (65-161 BTC/hour). Critically, the ETF inflow streak continues — the structural daily bid from institutional ETF buyers is absorbing selling pressure without allowing a deeper drawdown. The 20:00 UTC reference candle (65.37 BTC, close $65,921) showed buyers present but unable to reclaim $66,000. Two scenarios for tomorrow: ETF inflows on July 22 confirmed large (possible late CoinDesk data) → buyers push through $66,000 again; or Middle East escalation continues driving risk-off → $65,000 test develops."
+  },
+
+  "what_traders_are_doing": "The dominant strategy remains long-the-momentum, but today's session introduces tactical complications. The $66,000 breach at the reference close forces longs to decide: add to the dip at $65,921 with a tight stop at $65,000, or hold the existing position and wait for $66,000 reclaim. Most holders are doing the latter — the ETF inflow streak gives them confidence the structural bid will reassert. Short sellers who opened at the $66,742 overnight high are sitting on +$821 unrealized gains (1.23%) — they must decide whether to cover before Kimi K3 (July 27) adds volatility or hold for a larger move. The tactical battle is at $66,000: if tomorrow's session opens above $66,000 and holds, the July 22 break is a bear trap and longs are vindicated. If tomorrow opens below $66,000 and fails to reclaim it, the breach becomes a resistance conversion and the $65,000 test becomes likely.",
+
+  "news": [
+    {
+      "label": "Bitcoin and Ethereum open higher Wednesday before losing steam — BTC peaks at $66,742 overnight then gives back gains as Middle East and earnings uncertainty weighs",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-july-22-2026-both-cryptos-open-higher-before-losing-steam-153454067.html",
+      "source": "Yahoo Finance",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "US spot Bitcoin ETF inflow streak extends to sixth consecutive day — $928M+ cumulative; structural institutional bid absorbing daily selling pressure despite risk-off session",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-prediction-btc-recovery-holds-as-etf-inflows-persist-202607221209",
+      "source": "FXStreet",
+      "sentiment": "positive"
+    },
+    {
+      "label": "BTC/USD signal: Bitcoin targets $70K as ETF inflows and open interest jump — longer-term bull thesis intact despite today's -0.72% reference close",
+      "url": "https://www.dailyforex.com/forex-technical-analysis/2026/07/btcusd-signal-22-july-2026/247880",
+      "source": "DailyForex",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Crypto Fear and Greed Index rising as ETF inflows persist — market sentiment improving despite risk-off from Middle East tensions",
+      "url": "https://invezz.com/news/2026/07/22/bitcoin-price-prediction-as-etf-inflows-crypto-fear-and-greed-index-jumps/",
+      "source": "Invezz",
+      "sentiment": "positive"
+    },
+    {
+      "label": "US-Iran conflict escalation drives oil prices above +4% — geopolitical risk-off pressure on all risk assets including Bitcoin; Middle East hostilities began late February 2026",
+      "source": "Market context",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Alphabet and Tesla earnings after close (July 22) — market uncertainty held back risk assets; Alphabet AI capex result is the key read-through for crypto sentiment (tech risk-on/off correlation)",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-22/s-p-futures-fall-as-traders-brace-for-alphabet-tesla-earnings",
+      "source": "Bloomberg",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Kimi K3 open-weight release July 27 remains binary risk for cross-asset sentiment — AI compute efficiency narrative would reverse the tech risk-on that has been fueling BTC's correlation rally",
+      "source": "Context",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The $66,000 reference close breach is a tactical warning signal — not an invalidation but a caution. Tomorrow's (July 23) session will be defined by: (1) Whether Alphabet's AI capex disclosure (after close tonight) drives a risk-on tech rally that lifts BTC above $66,000; (2) Whether the ETF inflow streak's July 22 data confirms (typically published next day) maintaining the structural bid. BTC needs to re-close above $66,000 within 1-2 sessions to avoid the resistance-conversion scenario. The $65,000 psychological floor remains critical — three tests above $65,000 (July 20 session low $63,764, today's low $65,545) without a close below confirm that level as support for the structural uptrend. Kimi K3 (July 27) is five days away and remains the primary binary.",
+    "long_term": "BTC's path to $67,000–$70,000 depends on the ETF inflow streak sustaining (structural institutional bid), the Fed's rate path (FOMC July 29), and continued US Crypto Clarity Act progress. At $65,921, BTC is recovering from mid-July lows ($62,500–$63,000) but the $66,743 high today fell short of yesterday's five-week high of $66,963 — the new high momentum is stalling. Long-term holders from $62,500–$63,000 still have a clean +5.4% cost basis advantage."
+  },
+
+  "bull_case": [
+    "ETF inflow streak extends to 6th consecutive day ($928M+ cumulative) — as long as daily net inflows continue, the structural bid absorbs selling pressure and compresses drawdowns",
+    "$65,545 session low held comfortably above $65,000 — $455 of cushion to the psychological floor; buyers stepped in decisively at $65,545 without needing $65,000 to act",
+    "Today's decline (-0.724%) is modest consolidation after three consecutive bull sessions; RSI likely ~58 (below yesterday's 61.49 but still bullish territory) — no momentum collapse",
+    "Crypto Fear and Greed Index rising (per Invezz); broader institutional sentiment improving; US Crypto Clarity Act legislative progress creating long-horizon institutional demand",
+    "Alphabet AI capex print tonight — if strong, tech risk-on rally tomorrow lifts BTC above $66,000 and validates the July 22 dip as a bear trap"
+  ],
+
+  "bear_case": [
+    "Reference close at $65,921 is below the $66,000 support established yesterday as 'strongest support' — support has converted to resistance at the reference close; each failed attempt to reclaim $66,000 on a closing basis adds to the resistance",
+    "Today's session high ($66,742) is lower than yesterday's session high ($66,963) — lower highs developing; if session lows also compress, a descending triangle forms above $65,000",
+    "Middle East US-Iran escalation: oil prices rising 4%+ is a risk-off signal that historically precedes risk-asset drawdowns; BTC's cross-asset correlation to equities means SPX/Nasdaq weakness drags BTC",
+    "Volume at 20:00 UTC reference candle: 65.37 BTC — buyers present but not aggressive; ETF inflows may be diminishing (day 6 of streak, each day's inflow was reported smaller than the previous)",
+    "Kimi K3 (July 27) arriving 5 days from now; if the AI efficiency narrative re-ignites, tech risk-off would hit BTC hard at exactly the time Alphabet earnings have reset expectations"
+  ],
+
+  "key_levels": [
+    { "label": "★ $66,000 — FORMER STRONGEST SUPPORT / NOW KEY RESISTANCE (established at the July 21 European-open breakout; lost at the 20:00 UTC reference close today ($65,921); 3 hourly closes above $66,000 during the recovery phase (15:00, 16:00 UTC) but failed to hold; this level is now the single most important near-term test — close back above $66,000 = bear trap; fail to reclaim = resistance confirmed)", "level": "$66,000", "kind": "resistance" },
+    { "label": "$66,742.99 — TODAY'S SESSION HIGH (first rejection below $66,750; sellers active in the $66,700-$66,743 zone; break above needed to re-establish the uptrend momentum)", "level": "$66,742.99", "kind": "resistance" },
+    { "label": "$66,963.90 — JULY 21 SESSION HIGH / FIVE-WEEK HIGH (the recent peak; today's high at $66,742 did NOT exceed this level — lower high confirmed for the first time in the rally; breaking above $66,963 is required to resume the five-week high momentum)", "level": "$66,963.90", "kind": "resistance" },
+    { "label": "$67,000 — PSYCHOLOGICAL ROUND NUMBER / OPTIONS OI CLUSTER (prior analysis documented 270-BTC distribution here on July 21; overhead supply until ETF bid fully absorbs it)", "level": "$67,000", "kind": "resistance" },
+    { "label": "$68,000 — NEXT MACRO TARGET (June 2026 swing high; requires $66,000 reclaim and $66,963 high break first)", "level": "$68,000", "kind": "resistance" },
+    { "label": "★ $65,000 — PSYCHOLOGICAL FLOOR / STRONGEST SUPPORT (today's session low $65,545 held $545 above this level; round number; close below would signal bull momentum has broken; the single most important downside level — invalidation trigger for the current uptrend)", "level": "$65,000", "kind": "support" },
+    { "label": "$65,921.39 — TODAY'S REFERENCE CLOSE (immediate support; a gap-down open below this level tomorrow on heavy volume signals accelerating selling)", "level": "$65,921.39", "kind": "support" },
+    { "label": "$65,545.03 — TODAY'S SESSION LOW (confirmed buyer defense at this level; tested intraday with buyers stepping in $455 above $65,000; secondary support if $65,921 fails)", "level": "$65,545.03", "kind": "support" },
+    { "label": "$65,380.37 — JULY 21 20:00 UTC REFERENCE (prior reference baseline; a close below this level signals the three-session uptrend has reversed)", "level": "$65,380.37", "kind": "support" },
+    { "label": "$64,537.00 — JULY 19 REFERENCE (the start of the current bull run; break below this level invalidates the multi-session uptrend and signals a return to the $62,500-$63,000 support zone)", "level": "$64,537.00", "kind": "support" }
+  ],
+
+  "catalysts": [
+    { "date": "2026-07-22", "label": "Alphabet Q2 2026 earnings after close — AI capex disclosure is the risk-on/risk-off signal for tech-correlated crypto; strong hyperscaler AI spend = BTC tailwind tomorrow", "importance": "medium" },
+    { "date": "2026-07-27", "label": "Kimi K3 open-weight AI model release (Moonshot AI) — binary risk event for BTC cross-asset risk sentiment; efficiency narrative would reverse the AI/tech momentum that has been lifting BTC", "importance": "medium" },
+    { "date": "2026-07-29", "label": "FOMC rate decision — primary macro catalyst for USD, risk assets, and BTC correlation; hawkish surprise = USD strength = BTC headwind", "importance": "high" },
+    { "date": "2026-08-01", "label": "US Crypto Clarity Act — ongoing legislative progress; regulatory certainty structurally expands the eligible ETF investor pool and supports the inflow streak", "importance": "high" }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — $66,000 support lost at reference close; bear trap or trend reversal?\nBitcoin closed the 20:00 UTC reference candle at $65,921.39 on 2026-07-22, down $480.87 (-0.724%) from the July 21 reference of $66,402.26. Session high: $66,742.99 (00:00 UTC overnight). Session low: $65,545.03 (13:00 UTC candle, ~9 AM EDT). The session was technically bearish at the reference: BTC made a lower high vs. yesterday ($66,742 vs. $66,963) and closed below the $66,000 level identified yesterday as 'strongest support.' However, the bearishness is marginal — the close is only $79 below $66,000, and the session low stayed $455 above the $65,000 psychological floor.\n\n### Trend read — short-term stall, not reversal\nBTC's three-session uptrend (July 19-21) is stalling. The evidence:\n- July 21 session high $66,963 → July 22 session high $66,742 (-$221): **lower high**\n- July 21 reference close $66,402 → July 22 reference close $65,921 (-$481): **lower close**\n- But: July 22 session low $65,545 vs. July 21 session low $65,056 (+$489): **higher low**\n\nThe combination of lower high + lower close but higher low is a mixed technical signal. It suggests a consolidation-within-an-uptrend rather than a trend reversal. The uptrend is intact as long as $65,000 holds.\n\n### Momentum — RSI pullback, not collapse\nRSI likely pulled back from yesterday's 61.49 to approximately 55-58 today — still in bullish territory but losing momentum. The RSI decline from 61 → 57 on a -0.72% session is proportional consolidation, not a momentum collapse (which would require RSI to break below 50). The ETF inflow structural bid is providing a floor under the momentum indicator decline.\n\n### Volume — light selling, structural bid holding\nThe key volume reading: the session's heaviest candle was the 13:00 UTC (9 AM EDT) recovery candle at 87.92 BTC — buyers, not sellers, generated the day's peak volume. The selling from $66,742 to $65,545 occurred on moderate volume (25-85 BTC/hour), not the 270-BTC distribution spike seen on July 21. This means today's decline is **thin-volume selling** absorbed by **structural ETF bid buying** — the bears are not as aggressive as the July 21 distribution pattern.\n\nVolume comparison (today vs. July 21):\n- Session low candle today (13:00 UTC): 87.92 BTC (moderate)\n- July 21 distribution candle (17:00 UTC): 270.17 BTC (3× heavier)\n- Conclusion: today's selling was 1/3 the intensity of yesterday's distribution — bears are not pressing\n\n### Pattern in play — consolidation within the uptrend\nBTC is in a consolidation phase after the five-week high. The pattern: probe high ($66,963 yesterday, $66,742 today), distribution/selling at the high, recovery to the mid-$65,000s, then partial recovery. This is a multi-day distribution-at-resistance pattern that is either: (a) bear trap — sellers exhaust at $66,700-$66,963, bulls absorb, and $67,000 breaks cleanly; or (b) distribution top — sellers are consistently capping rallies at $66,700-$66,963 and the pattern ultimately fails below $65,000. The discriminating factor is ETF inflow data for today (Tuesday's data published Wednesday) and Alphabet's AI capex (tonight).\n\n### The $66,000 level — support lost, resistance pending\nYesterday's analysis identified $66,000 as the 'strongest support' based on: multiple tests during the July 21 session (including the 270-BTC distribution wave), the level holding for several hours. Today's reference close at $65,921 is $79 below this level — a marginal close-below. The key question is whether this is:\n1. **Temporary close below**: the level temporarily failed but buyers will reclaim it next session (bear trap scenario; ETF bid restores $66,000 as support)\n2. **Resistance conversion**: sellers are consistently using $66,000 as a take-profit level; each hourly close above $66,000 is sold (today's 15:00 and 16:00 UTC closes above $66,000 were eventually given back)\n\nThe 20:00 UTC reference close determines the official daily close for this framework. Until a reference close above $66,000 is reestablished, $66,000 is technically resistance.\n\n### Strongest support: $65,000 — psychological floor, untested\nToday's session low of $65,545 held $455 above $65,000. The psychological round number has not been tested in this uptrend (the prior test was the July 19-20 period when BTC rebounded from ~$64,500). A test of $65,000 and hold would actually be constructive — it would establish a clean double-bottom-like structure with buyers documented at the level. A close BELOW $65,000 invalidates the uptrend.\n\n### Strongest resistance: $66,963.90 — five-week high, documented sellers\nThe July 21 five-week high of $66,963.90 remains the key ceiling. Today's lower high ($66,742) confirms sellers are active in the $66,700-$66,963 zone. A clean close above $66,963 on expanding volume would be the breakout confirmation. Until then, this zone caps the advance.\n\n### What would invalidate the bull read\nA daily reference close below $65,000. That level has $455 of cushion from today's session low. An intraday breach to $65,000 with recovery is acceptable; a 20:00 UTC reference close below $65,000 signals the bulls have lost control and a test of $63,000-$64,500 becomes likely."
+}
