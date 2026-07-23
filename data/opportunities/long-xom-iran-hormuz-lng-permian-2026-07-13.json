@@ -46,7 +46,7 @@
   ],
   "created_at": "2026-07-13",
   "expires_at": "2026-08-08",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "XOM",
     "energy",
@@ -58,7 +58,13 @@
     "macro",
     "geopolitical"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-22",
+    "final_price": 152.0,
+    "return_pct": 4.9,
+    "outcome_label": "Target 1 hit at $152",
+    "note": "XOM reached $154.45 on the July 22 close, clearing Target 1 ($152) as WTI surged to $90.14 — the highest print of the US-Iran conflict phase — following Trump's civilian infrastructure ultimatum and overnight Saudi tanker attacks. Return computed from $144.96 reference entry to $152.0 first target = +4.9%."
+  },
   "levels": {
     "entry_low": 138.0,
     "entry_high": 145.0,
