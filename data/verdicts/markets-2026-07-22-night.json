@@ -2,12 +2,24 @@
   "routine": "markets",
   "date": "2026-07-22",
   "window": "night",
-  "generated_at": "2026-07-23T01:30:00Z",
+  "generated_at": "2026-07-23T01:15:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "GOOGL Cloud surged 82% but stock fell on capex hike; TSLA missed badly on margins",
-    "label": "Split earnings night: AI infrastructure confirmed at scale, spending alarm issued, TSLA structurally impaired",
-    "rationale_short": "Alphabet's Google Cloud accelerating to 82% year-over-year growth — the strongest AI infrastructure quarter on record — validated the hyperscaler capex thesis, but the company raised 2026 capital expenditure guidance to $195-205B (a $15B increase, with CFO Ashkenazi committing to another significant increase in 2027), sending shares down approximately 5% in extended trading on spending-efficiency concerns. Tesla missed badly on gross margin (16.8% vs. 19.4% consensus), confirming the bear-case trigger identified in the morning brief; operating income fell 57% year-over-year and operating margin collapsed to 1.4%, pointing to structural cost pressure rather than a one-quarter anomaly. AMD's Advancing AI Day 1 delivered substantially more than developer sessions — confirming EPYC Venice on TSMC 2nm, MI455X as the Helios-rack accelerator at $5-5.5M pricing, and Microsoft Azure as the H2 2026 anchor customer — which drove AMD up 9.8% and independently validated AI hardware buildout. VIX compressing from 18.77 to 16.64 (first close below 17) and SPX achieving its second consecutive close above 7,480 are the session's most important regime data points; two of three formal upgrade conditions are now met, but WTI still at $86.85 and September hike probability reaching 78% prevent the formal upgrade and keep Thursday's open as the next stress test."
+    "code": "step_aside",
+    "emoji": "🟠",
+    "label": "STEP ASIDE (CONDITIONAL) — SPX Day 2 of 2 Above 7,480; VIX First Close Below 17; GOOGL/TSLA AH Selling Blocks Formal Upgrade; Oil at Crisis Highs",
+    "headline": "Alphabet and Tesla slipped after hours as heavy AI spending plans alarmed investors",
+    "conviction": "medium",
+    "rationale_short": "Alphabet's Google Cloud accelerating to 82% year-over-year growth — the strongest AI infrastructure quarter on record — validated the hyperscaler capex thesis, but the company raised 2026 capital expenditure guidance to $195-205B (a $15B increase, with CFO Ashkenazi committing to another significant increase in 2027), sending shares down approximately 5% in extended trading on spending-efficiency concerns. Tesla missed badly on gross margin (16.8% vs. 19.4% consensus), confirming the bear-case trigger identified in the morning brief; operating income fell 57% year-over-year and operating margin collapsed to 1.4%, pointing to structural cost pressure rather than a one-quarter anomaly. AMD's Advancing AI Day 1 delivered substantially more than developer sessions — confirming EPYC Venice on TSMC 2nm, MI455X as the Helios-rack accelerator at $5-5.5M pricing, and Microsoft Azure as the H2 2026 anchor customer — which drove AMD up 9.8% and independently validated AI hardware buildout. VIX compressing from 18.77 to 16.64 (first close below 17) and SPX achieving its second consecutive close above 7,480 are the session's most important regime data points; two of three formal upgrade conditions are now met, but WTI still at $86.85 and September hike probability reaching 78% prevent the formal upgrade and keep Thursday's open as the next stress test.",
+    "supporting_data": [
+      { "label": "★★★ SPX 7,498.96 (-0.14%) — second consecutive close above 7,480 upgrade trigger; Nasdaq -0.57% to 25,690 on mega-cap tech weakness ahead of GOOGL/TSLA prints", "url": "https://www.fool.com/coverage/stock-market-today/2026/07/22/stock-market-today-july-22-nasdaq-slides-prior-to-tesla-and-alphabet-s-earnings-after-market-close/" },
+      { "label": "★★★ AMD +9.8% to $553 — Advancing AI Day 1: EPYC Venice 2nm confirmed, MI455X Helios rack at $5-5.5M, Microsoft Azure anchor customer H2 2026; Lisa Su keynote July 23 9:30am PT is next catalyst", "url": "https://www.fool.com/coverage/stock-market-today/2026/07/22/stock-market-today-july-22-super-micro-computer-surges-on-record-q4-orders-and-surprise-margin-beat/" },
+      { "label": "★★★ GOOGL AH -5%: Cloud +82% YoY beat ($24.77B vs $22.50B est.), but capex raised to $195-205B with 2027 increase pledged — spending overhang caps multiple expansion", "url": "https://www.gurufocus.com/news/8971168/tesla-tsla-and-alphabet-googl-earnings-awaited-as-futures-point-lower" },
+      { "label": "★★★ TSLA AH -3-5%: Gross margin 16.8% vs 19.4% consensus; operating income -57% YoY; operating margin 1.4% — structural miss, not one-quarter event", "url": "https://247wallst.com/investing/2026/07/22/live-will-tesla-crush-tonights-q2-earnings-after-big-delivery-volume-beat/" },
+      { "label": "★★ SMCI +22-26%: preliminary Q4 revenue guidance $11-12.5B, gross margins 15-17% (2x prior outlook), $60B in new AI server orders — session's biggest single-stock move", "url": "https://www.fool.com/coverage/stock-market-today/2026/07/22/stock-market-today-july-22-super-micro-computer-surges-on-record-q4-orders-and-surprise-margin-beat/" },
+      { "label": "★★ Oil: US forces struck Iran for 11th consecutive night; Brent toward $94-95/bbl; September Fed hike probability rose to 78% on oil-driven inflation fears", "url": "https://worldoil.com/news/2026/7/22/oil-rallies-toward-95-amid-escalating-u-s-iran-conflict/" },
+      { "label": "VIX 16.64 — first close below 17 formal threshold; BTC $66,054 at 9pm ET (Crypto.com live); Gate 2 ($62,000) intact with ~$4,054 buffer", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-july-22-221042092.html" }
+    ]
   },
   "snapshot": {
     "sp500":  { "level": 7498.96, "change_pct": -0.14, "as_of": "2026-07-22T20:00:00Z" },
@@ -23,23 +35,25 @@
     { "name": "30Y Yield",            "value": 5.073,  "trigger_above": 5.00,  "unit": "%"     },
     { "name": "September Hike Prob",  "value": 78,     "trigger_above": 70,    "unit": "%"     },
     { "name": "SPX vs 7,480",         "value": 7498.96,"trigger_below": 7480,  "unit": ""      },
-    { "name": "BTC Gate 2",           "value": 66509,  "trigger_below": 62000, "unit": "$"     }
+    { "name": "BTC Gate 2",           "value": 66054,  "trigger_below": 62000, "unit": "$"     }
   ],
   "watchlist_mentions": [
     { "ticker": "GOOGL", "note": "Q2 Cloud +82% YoY, revenue $119.8B beat, EPS $9.11 vs $2.89 (Anthropic GAAP mark-up); capex raised to $195-205B — stock AH -5%; capex alarm overwrote the operational beat. Exit or hold near stop — do not add in AH.", "sentiment": "neutral" },
-    { "ticker": "TSLA", "note": "Q2 gross margin 16.8% vs 19.4% consensus — confirmed miss below the 18% floor. Operating income -57% YoY; operating margin 1.4%. AH -3%. Structural pressure, not a one-quarter event.", "sentiment": "negative" },
-    { "ticker": "AMD", "note": "Day 1 confirmed EPYC Venice 2nm + MI455X in Helios rack + $5-5.5M pricing + Microsoft Azure anchor customer shipping H2 2026. Closed +9.8% at $553. Lisa Su keynote Jul 23 9:30am PT is the next catalyst.", "sentiment": "positive" },
-    { "ticker": "NVDA", "note": "AH ~$213.76 (up from ~$207-212 regular-session close). AMD Day 1 hardware validation is indirectly bullish for AI capex thesis. Still in dead zone ahead of Kimi K3 Jul 27 and NVDA Q2 FY27 Aug 26. Hard stop $195 intact.", "sentiment": "neutral" },
-    { "ticker": "XLE",  "note": "WTI $86.85 / Brent $94.13 — oil remains at crisis cycle highs. 20% allocation thesis intact. No ceasefire signal; Rubio 'not serious' statement unchanged.", "sentiment": "positive" },
-    { "ticker": "INTC", "note": "~$104.80 range on July 22; reports Q2 AH tomorrow July 23 with 15% options-implied move. Enterprise semiconductor demand bellwether.", "sentiment": "neutral" },
-    { "ticker": "AVGO", "note": "$395.67 (+2.37% Wednesday). Custom silicon thesis intact; AMD Day 1 Helios validation is a positive read-through.", "sentiment": "positive" },
-    { "ticker": "TSM",  "note": "$422.03 (-0.61% Wednesday). Wafer hike pricing unquantified; EPYC Venice 2nm launch confirms AMD is a growing TSMC customer alongside NVDA.", "sentiment": "neutral" },
-    { "ticker": "BTC",  "note": "~$66,509; Gate 2 ($62,000) intact with $4,509 buffer. Risk appetite cautious but no multi-asset risk-off activation.", "sentiment": "neutral" }
+    { "ticker": "TSLA",  "note": "Q2 gross margin 16.8% vs 19.4% consensus — confirmed miss below the 18% floor. Operating income -57% YoY; operating margin 1.4%. AH -3-5%. Structural pressure, not a one-quarter event.", "sentiment": "negative" },
+    { "ticker": "AMD",   "note": "Day 1 confirmed EPYC Venice 2nm + MI455X in Helios rack + $5-5.5M pricing + Microsoft Azure anchor customer shipping H2 2026. Closed +9.8% at $553. Lisa Su keynote Jul 23 9:30am PT is the next catalyst.", "sentiment": "positive" },
+    { "ticker": "SMCI",  "note": "+22-26% on $60B AI server orders + gross margin 15-17% guidance (double prior outlook). Q4 revenue guide $11-12.5B. Validates the AI infrastructure buildout thesis independently of GOOGL capex concerns.", "sentiment": "positive" },
+    { "ticker": "NVDA",  "note": "AH ~$213.76 (up from ~$207-212 regular-session close). AMD Day 1 hardware validation is indirectly bullish for AI capex thesis. Still in dead zone ahead of Kimi K3 Jul 27 and NVDA Q2 FY27 Aug 26. Hard stop $195 intact.", "sentiment": "neutral" },
+    { "ticker": "XLE",   "note": "WTI $86.85 / Brent $94.13 — oil at crisis cycle highs, 11th consecutive night of US strikes on Iran. 20% allocation thesis intact. No ceasefire signal; Rubio 'not serious' statement unchanged.", "sentiment": "positive" },
+    { "ticker": "INTC",  "note": "~$104.80 range on July 22; reports Q2 AH Thursday July 23 with 15% options-implied move. Enterprise semiconductor demand bellwether.", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "$395.67 (+2.37% Wednesday). Custom silicon thesis intact; AMD Day 1 Helios validation is a positive read-through.", "sentiment": "positive" },
+    { "ticker": "TSM",   "note": "$422.03 (-0.61% Wednesday). Wafer hike pricing unquantified; EPYC Venice 2nm launch confirms AMD is a growing TSMC customer alongside NVDA.", "sentiment": "neutral" },
+    { "ticker": "RDDT",  "note": "-9% on reports Reddit is reconsidering its $60M/year Google AI content deal; frustration that AI Overviews reduced referral traffic. Down ~27% YTD. New fault line in AI content economy.", "sentiment": "negative" },
+    { "ticker": "BTC",   "note": "$66,054 at 9pm ET (Crypto.com live, -0.81% on day). Gate 2 ($62,000) intact with ~$4,054 buffer. Risk appetite cautious but no multi-asset risk-off activation.", "sentiment": "neutral" }
   ],
   "dont_buy": [
     {
       "ticker": "TSLA",
-      "reason": "Gross margin 16.8% vs 19.4% consensus is a structural miss: operating expenses rose 47% while vehicle ASP fell and regulatory credit revenue declined. Operating income collapsed 57% to $398M (1.4% margin vs 3.4% a year ago). The AH -3% decline likely underestimates the full re-rating.",
+      "reason": "Gross margin 16.8% vs 19.4% consensus is a structural miss: operating expenses rose 47% while vehicle ASP fell and regulatory credit revenue declined. Operating income collapsed 57% to $398M (1.4% margin vs 3.4% a year ago). The AH decline likely underestimates the full re-rating.",
       "better_entry": "Post-FOMC (Jul 28-29) with a credible cost-reduction plan confirmed; or $340-350 on forced selling that matches the morning brief's miss-scenario entry target."
     },
     {
@@ -66,7 +80,7 @@
     {
       "asset": "XLE",
       "direction": "long",
-      "thesis": "WTI settled at $86.85 and Brent at $94.13 — both remain at crisis cycle highs with no ceasefire signal following Rubio's 'not serious' statement. The dual supply-shock (Hormuz restriction + Houthi Saudi maritime embargo at ~2.5M bbl/day) is structurally active. August CPI oil pass-through risk is embedded at the most elevated level of the conflict. September hike probability reaching 78% validates oil's inflation-embedding effect.",
+      "thesis": "WTI settled at $86.85 and Brent at $94.13 — both at crisis cycle highs with no ceasefire signal following Rubio's 'not serious' statement. The dual supply-shock (Hormuz restriction + Houthi Saudi maritime embargo at ~2.5M bbl/day) is structurally active. August CPI oil pass-through risk is embedded at the most elevated level of the conflict. September hike probability reaching 78% validates oil's inflation-embedding effect.",
       "entry": "Maintain 20% XLE. Reduce to 8% ONLY on Iran ceasefire formally agreed AND Hormuz transit exceeds 10 vessels/day AND WTI two consecutive closes below $70.",
       "invalidation": "Iran-US ceasefire formally agreed with Hormuz reopening; WTI two consecutive closes below $70.",
       "conviction": "medium",
@@ -82,6 +96,6 @@
       "horizon": "Through FOMC Jul 28-29 and August CPI (est. Aug 13)"
     }
   ],
-  "bear_case": "Counter-thesis: The GOOGL print is the worst kind of beat — operationally exceptional (Cloud 82%, $514B backlog) but fundamentally re-priced downward because the capital commitment required to sustain it is now $195-205B in 2026 alone, with CFO Ashkenazi explicitly promising 'another significant increase' in 2027. This is the same pattern that cost META multiple expansion for two quarters: the market is not discounting the AI business, it is discounting the payback horizon. TSLA's 16.8% gross margin (against a 19.4% consensus that had already been upgraded from a 15% base case) is not a weather event — operating expenses rose 47% in a quarter where ASP fell and regulatory credits declined. The SPX second close at 7,498.96 is 19 points above the 7,480 threshold; Thursday opens with GOOGL -5% and TSLA -3% AH pressure, which alone could push the implied SPX open below 7,480, resetting the upgrade clock on day two. September hike probability at 78% entering FOMC Jul 28-29 means even a 'on hold in July' decision is read as hawkish if September language is not explicitly dovish. If SPX closes below 7,460 Thursday AND September hike probability crosses 80%, the two-close upgrade cycle resets and the formal BEARISH conversion pathway becomes warranted. Invalidation: If Lisa Su's Jul 23 keynote delivers at least one additional hyperscaler win beyond Microsoft AND SPX holds 7,460 at Thursday's close, the GOOGL capex and TSLA margin miss remain company-specific headwinds rather than systemic signals.",
+  "bear_case": "Counter-thesis: The GOOGL print is the worst kind of beat — operationally exceptional (Cloud 82%, $514B backlog) but fundamentally re-priced downward because the capital commitment required to sustain it is now $195-205B in 2026 alone, with CFO Ashkenazi explicitly promising 'another significant increase' in 2027. This is the same pattern that cost META multiple expansion for two quarters: the market is not discounting the AI business, it is discounting the payback horizon. TSLA's 16.8% gross margin (against a 19.4% consensus that had already been upgraded from a 15% base case) is not a weather event — operating expenses rose 47% in a quarter where ASP fell and regulatory credits declined. The SPX second close at 7,498.96 is 19 points above the 7,480 threshold; Thursday opens with GOOGL -5% and TSLA -3-5% AH pressure, which alone could push the implied SPX open below 7,480, resetting the upgrade clock on day two. September hike probability at 78% entering FOMC Jul 28-29 means even a 'on hold in July' decision is read as hawkish if September language is not explicitly dovish. If SPX closes below 7,460 Thursday AND September hike probability crosses 80%, the two-close upgrade cycle resets and the formal BEARISH conversion pathway becomes warranted. Invalidation: If Lisa Su's Jul 23 keynote delivers at least one additional hyperscaler win beyond Microsoft AND SPX holds 7,460 at Thursday's close, the GOOGL capex and TSLA margin miss remain company-specific headwinds rather than systemic signals.",
   "body_mdx": "data/briefings/markets/2026-07-22-night.mdx"
 }
