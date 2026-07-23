@@ -15,6 +15,9 @@ export type MacroSnapshot = {
     funds_effective: number | null;
     last_change_date?: string;
     last_change_action?: string;
+    /** Net move this cycle, e.g. "−75bp" — update by hand when the Fed moves. */
+    cycle_label?: string;
+    cycle_hint?: string;
     next_fomc_date: string;
     next_fomc_label: string;
     balance_sheet_trillions: number | null;
@@ -23,16 +26,23 @@ export type MacroSnapshot = {
   };
   inflation: {
     cpi_yoy_pct: number | null;
+    cpi_mom_pct?: number | null;
     cpi_release_date: string;
     core_cpi_yoy_pct: number | null;
+    pce_yoy_pct?: number | null;
     core_pce_yoy_pct: number | null;
     core_pce_release_date: string;
+    /** CUUR0000SA0R — what a 1982-84 dollar buys today, in cents. */
+    purchasing_power_cents?: number | null;
+    purchasing_power_yoy_pct?: number | null;
   };
   labor: {
     unemployment_rate_pct: number | null;
     unemployment_release_date: string;
     nonfarm_payrolls_thousands: number | null;
     nonfarm_release_date: string;
+    participation_rate_pct?: number | null;
+    wage_growth_yoy_pct?: number | null;
   };
   growth: {
     ism_manufacturing: number | null;
@@ -41,6 +51,11 @@ export type MacroSnapshot = {
     ism_services_release_date: string;
     gdp_qoq_annualized_pct: number | null;
     gdp_release_date: string;
+    gdp_quarter_label?: string;
+    retail_sales_yoy_pct?: number | null;
+    retail_sales_release_date?: string;
+    industrial_production_yoy_pct?: number | null;
+    industrial_production_release_date?: string;
   };
   sentiment: {
     aaii_bull_pct: number | null;
@@ -92,21 +107,52 @@ async function fredLatest(seriesId: string, apiKey: string): Promise<{ value: nu
   }
 }
 
-async function fredYoY(seriesId: string, apiKey: string): Promise<{ value: number | null; date: string | null }> {
-  // Pull last 13 observations to compute YoY % change.
+async function fredYoY(
+  seriesId: string,
+  apiKey: string,
+): Promise<{ value: number | null; mom: number | null; date: string | null }> {
+  // Pull last 13 observations to compute YoY (and MoM) % change.
   const url = `${FRED_BASE}?series_id=${seriesId}&api_key=${apiKey}&file_type=json&limit=13&sort_order=desc`;
+  try {
+    const res = await fetch(url, { next: { revalidate: 3600 } });
+    if (!res.ok) return { value: null, mom: null, date: null };
+    const json = (await res.json()) as FredResponse;
+    const obs = json.observations ?? [];
+    if (obs.length < 13) return { value: null, mom: null, date: obs[0]?.date ?? null };
+    const latest = parseFloat(obs[0].value);
+    const monthAgo = parseFloat(obs[1].value);
+    const yearAgo = parseFloat(obs[12].value);
+    if (!Number.isFinite(latest) || !Number.isFinite(yearAgo) || yearAgo === 0) {
+      return { value: null, mom: null, date: obs[0].date };
+    }
+    const mom =
+      Number.isFinite(monthAgo) && monthAgo !== 0
+        ? ((latest - monthAgo) / monthAgo) * 100
+        : null;
+    return { value: ((latest - yearAgo) / yearAgo) * 100, mom, date: obs[0].date };
+  } catch {
+    return { value: null, mom: null, date: null };
+  }
+}
+
+async function fredMoMChange(
+  seriesId: string,
+  apiKey: string,
+): Promise<{ value: number | null; date: string | null }> {
+  // Latest observation minus the prior one — for level series like payrolls.
+  const url = `${FRED_BASE}?series_id=${seriesId}&api_key=${apiKey}&file_type=json&limit=2&sort_order=desc`;
   try {
     const res = await fetch(url, { next: { revalidate: 3600 } });
     if (!res.ok) return { value: null, date: null };
     const json = (await res.json()) as FredResponse;
     const obs = json.observations ?? [];
-    if (obs.length < 13) return { value: null, date: obs[0]?.date ?? null };
+    if (obs.length < 2) return { value: null, date: obs[0]?.date ?? null };
     const latest = parseFloat(obs[0].value);
-    const yearAgo = parseFloat(obs[12].value);
-    if (!Number.isFinite(latest) || !Number.isFinite(yearAgo) || yearAgo === 0) {
+    const prior = parseFloat(obs[1].value);
+    if (!Number.isFinite(latest) || !Number.isFinite(prior)) {
       return { value: null, date: obs[0].date };
     }
-    return { value: ((latest - yearAgo) / yearAgo) * 100, date: obs[0].date };
+    return { value: latest - prior, date: obs[0].date };
   } catch {
     return { value: null, date: null };
   }
@@ -121,24 +167,42 @@ export async function getMacroSnapshot(): Promise<MacroSnapshot> {
     fedFunds,
     cpiYoY,
     coreCpiYoY,
+    pceYoY,
     corePceYoY,
+    purchasingPowerYoY,
+    purchasingPowerLevel,
     unemployment,
+    payrollsChange,
+    participation,
+    wagesYoY,
     balanceSheet,
     ust2y,
     ust10y,
     spread2s10s,
     real10y,
+    gdp,
+    retailYoY,
+    indproYoY,
   ] = await Promise.all([
     fredLatest("DFF", apiKey),
     fredYoY("CPIAUCSL", apiKey),
     fredYoY("CPILFESL", apiKey),
+    fredYoY("PCEPI", apiKey),
     fredYoY("PCEPILFE", apiKey),
+    fredYoY("CUUR0000SA0R", apiKey),
+    fredLatest("CUUR0000SA0R", apiKey),
     fredLatest("UNRATE", apiKey),
+    fredMoMChange("PAYEMS", apiKey),
+    fredLatest("CIVPART", apiKey),
+    fredYoY("CES0500000003", apiKey),
     fredLatest("WALCL", apiKey),
     fredLatest("DGS2", apiKey),
     fredLatest("DGS10", apiKey),
     fredLatest("T10Y2Y", apiKey),
     fredLatest("DFII10", apiKey),
+    fredLatest("A191RL1Q225SBEA", apiKey),
+    fredYoY("RSAFS", apiKey),
+    fredYoY("INDPRO", apiKey),
   ]);
 
   const balanceSheetTrillions =
@@ -156,15 +220,41 @@ export async function getMacroSnapshot(): Promise<MacroSnapshot> {
     inflation: {
       ...manual.inflation,
       cpi_yoy_pct: cpiYoY.value ?? manual.inflation.cpi_yoy_pct,
+      cpi_mom_pct: cpiYoY.mom ?? manual.inflation.cpi_mom_pct,
       cpi_release_date: cpiYoY.date ?? manual.inflation.cpi_release_date,
       core_cpi_yoy_pct: coreCpiYoY.value ?? manual.inflation.core_cpi_yoy_pct,
+      pce_yoy_pct: pceYoY.value ?? manual.inflation.pce_yoy_pct,
       core_pce_yoy_pct: corePceYoY.value ?? manual.inflation.core_pce_yoy_pct,
       core_pce_release_date: corePceYoY.date ?? manual.inflation.core_pce_release_date,
+      purchasing_power_cents:
+        purchasingPowerLevel.value ?? manual.inflation.purchasing_power_cents,
+      purchasing_power_yoy_pct:
+        purchasingPowerYoY.value ?? manual.inflation.purchasing_power_yoy_pct,
     },
     labor: {
       ...manual.labor,
       unemployment_rate_pct: unemployment.value ?? manual.labor.unemployment_rate_pct,
       unemployment_release_date: unemployment.date ?? manual.labor.unemployment_release_date,
+      nonfarm_payrolls_thousands:
+        payrollsChange.value !== null
+          ? Math.round(payrollsChange.value)
+          : manual.labor.nonfarm_payrolls_thousands,
+      nonfarm_release_date: payrollsChange.date ?? manual.labor.nonfarm_release_date,
+      participation_rate_pct: participation.value ?? manual.labor.participation_rate_pct,
+      wage_growth_yoy_pct: wagesYoY.value ?? manual.labor.wage_growth_yoy_pct,
+    },
+    growth: {
+      ...manual.growth,
+      gdp_qoq_annualized_pct: gdp.value ?? manual.growth.gdp_qoq_annualized_pct,
+      gdp_quarter_label: gdp.date
+        ? `Q${Math.floor(parseInt(gdp.date.slice(5, 7), 10) / 3) + 1} ${gdp.date.slice(0, 4)}`
+        : manual.growth.gdp_quarter_label,
+      retail_sales_yoy_pct: retailYoY.value ?? manual.growth.retail_sales_yoy_pct,
+      retail_sales_release_date: retailYoY.date ?? manual.growth.retail_sales_release_date,
+      industrial_production_yoy_pct:
+        indproYoY.value ?? manual.growth.industrial_production_yoy_pct,
+      industrial_production_release_date:
+        indproYoY.date ?? manual.growth.industrial_production_release_date,
     },
     yields: {
       ust2y: ust2y.value,

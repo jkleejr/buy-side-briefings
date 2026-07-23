@@ -1,6 +1,6 @@
 import Link from "next/link";
-import FedPanel from "@/components/fed-panel";
 import LevelsChart from "@/components/levels-chart";
+import MacroSections from "@/components/macro-sections";
 import Panel from "@/components/panel";
 
 // The rates instruments, in the order the story runs: short end of the curve
@@ -31,12 +31,14 @@ export default function MacroPage() {
           Fed &amp; Macro
         </h1>
         <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          The rates story · long bonds · dollar · inflation · jobs
+          Rates &amp; policy · inflation &amp; purchasing power · growth · jobs
         </p>
       </header>
 
-      {/* The dashboard MACRO panel rendered full-width for the snapshot view. */}
-      <FedPanel />
+      {/* The four macro pillars, each a tile grid fed live from FRED with
+          data/macro.json as the manual fallback. The homepage keeps the
+          compact FedPanel snapshot; this page is the full read. */}
+      <MacroSections />
 
       {/* Same chart as the homepage: candles, derived levels, drawing tools.
           All four carry real OHLC from Yahoo. Only TLT reports traded volume —
@@ -109,6 +111,50 @@ export default function MacroPage() {
               recessions by 6–18 months. When positive and steep, normal expansion.
               When flat (0–25bps), late-cycle caution. The most-watched single
               indicator on the page above for recession-risk signaling.
+            </p>
+          </div>
+
+          <div>
+            <div className="text-[var(--amber)]">CPI, PCE and your purchasing power</div>
+            <p className="mt-1">
+              CPI is the price of a fixed basket of goods; PCE re-weights as
+              people substitute (chicken when beef gets pricey), so it usually
+              runs cooler — and <span className="text-[var(--amber)]">core PCE
+              is the number the Fed actually targets at 2%</span>. The
+              &quot;Dollar Buys&quot; tile is the same story flipped around:
+              instead of prices going up, it shows your dollar shrinking — what
+              a dollar buys today measured against a 1982-84 dollar. Real Wages
+              is the tile that answers &quot;am I actually getting ahead?&quot;
+              — pay raises minus inflation.
+            </p>
+          </div>
+
+          <div>
+            <div className="text-[var(--amber)]">Growth: GDP is the rearview, ISM is the windshield</div>
+            <p className="mt-1">
+              GDP tells you how fast the economy grew last quarter — important
+              but backward-looking and heavily revised. The ISM surveys ask
+              purchasing managers whether business is picking up or slowing
+              *right now*: above 50 means expansion, below 50 contraction, and
+              sub-45 has historically meant recession. Retail sales (what
+              consumers spend, ~2/3 of GDP) and industrial production round out
+              the activity picture. Growth running hot while inflation is above
+              target is what keeps the Fed from cutting.
+            </p>
+          </div>
+
+          <div>
+            <div className="text-[var(--amber)]">Jobs: the Fed&apos;s other mandate</div>
+            <p className="mt-1">
+              Unemployment and payrolls (NFP — net jobs added per month) are
+              the Fed&apos;s second mandate next to stable prices. Watch the
+              combination: rising unemployment plus weak payrolls pushes the
+              Fed toward cuts even with inflation sticky. Participation is the
+              share of adults working or job-hunting — a falling participation
+              rate can make unemployment look better than the labor market
+              really is, because people who stop looking aren&apos;t counted
+              as unemployed. Wage growth feeds back into inflation: pay rising
+              much faster than ~3% makes services inflation hard to tame.
             </p>
           </div>
 
