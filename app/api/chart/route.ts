@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
-import { getChartSeries, CHART_RANGES, type ChartRange } from "@/lib/markets";
+import {
+  getChartSeries,
+  getChartSeriesWithWarmup,
+  CHART_RANGES,
+  type ChartRange,
+} from "@/lib/markets";
 
 export const revalidate = 60;
 
@@ -16,6 +21,17 @@ export async function GET(req: Request) {
       { error: `invalid range, must be one of ${CHART_RANGES.join(", ")}` },
       { status: 400 },
     );
+  }
+
+  // warmup=1 prepends indicator warm-up history and reports where the visible
+  // window starts, so clients can draw full-width EMAs/RSI over `data` while
+  // displaying only data.slice(visibleFrom).
+  if (searchParams.get("warmup") === "1") {
+    const { data, visibleFrom } = await getChartSeriesWithWarmup(
+      symbol,
+      rangeParam as ChartRange,
+    );
+    return NextResponse.json({ symbol, range: rangeParam, data, visibleFrom });
   }
 
   const data = await getChartSeries(symbol, rangeParam as ChartRange);

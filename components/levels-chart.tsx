@@ -252,6 +252,8 @@ export default function LevelsChart({
   const [loaded, setLoaded] = useState<{
     key: string;
     bars: ChartPoint[] | null;
+    /** Index where the visible window starts — everything before is EMA/RSI warm-up. */
+    visibleFrom: number;
     error: string | null;
   } | null>(null);
 
@@ -262,7 +264,7 @@ export default function LevelsChart({
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}`)
+    fetch(`/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}&warmup=1`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((j) => {
         if (cancelled) return;
@@ -270,6 +272,7 @@ export default function LevelsChart({
         setLoaded({
           key,
           bars: data.length ? data : null,
+          visibleFrom: typeof j?.visibleFrom === "number" ? j.visibleFrom : 0,
           error: data.length ? null : "No price history for this symbol and range.",
         });
       })
@@ -278,6 +281,7 @@ export default function LevelsChart({
           setLoaded({
             key,
             bars: null,
+            visibleFrom: 0,
             error: "Couldn't load price history. Try again shortly.",
           });
       });
@@ -291,10 +295,17 @@ export default function LevelsChart({
   const error = current?.error ?? null;
 
   // Repair bad prints once, up front, so the candles and the derived levels
-  // both read the same corrected series.
-  const bars = useMemo(
+  // both read the same corrected series. The full fetch (warm-up + window) is
+  // kept for the indicators; everything drawn as price uses only the visible
+  // window, so the warm-up bars never appear on screen.
+  const allBars = useMemo(
     () => (current?.bars ? sanitizeBars(current.bars) : null),
     [current],
+  );
+  const visibleFrom = current?.visibleFrom ?? 0;
+  const bars = useMemo(
+    () => (allBars ? allBars.slice(visibleFrom) : null),
+    [allBars, visibleFrom],
   );
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
@@ -422,25 +433,29 @@ export default function LevelsChart({
   // ADDED below rather than carved out of the price plot, so toggling it grows
   // the chart downward and never moves a candle. No toolbar on the compact
   // variant, so it stays off there.
+  // Indicators are computed over the FULL fetch — warm-up bars included — then
+  // sliced to the visible window. That's what makes an EMA-50 span an entire
+  // one-month view: the average is already converged before the first bar on
+  // screen, instead of seeding from the window and fading in partway across.
   const rsi = useMemo(
-    () => (bars ? computeRSI(bars.map((b) => b.close)) : []),
-    [bars],
+    () =>
+      allBars ? computeRSI(allBars.map((b) => b.close)).slice(visibleFrom) : [],
+    [allBars, visibleFrom],
   );
   const rsiOn = showRSI && !compact;
 
-  // EMAs overlay the price directly (same scale as the candles). Each is
-  // computed once; only those with enough bars on this window produce a line,
-  // so a very short range quietly shows fewer of them (e.g. no 50 on a
-  // one-month view) rather than drawing a stub off partial data.
+  // EMAs overlay the price directly (same scale as the candles). An EMA only
+  // goes missing when the asset itself is younger than the period (fewer total
+  // bars than the EMA needs, warm-up included).
   const emas = useMemo(() => {
-    if (!bars) return [];
-    const closes = bars.map((b) => b.close);
+    if (!allBars) return [];
+    const closes = allBars.map((b) => b.close);
     return EMA_CONFIGS.map((cfg) => ({
       ...cfg,
-      values: computeEMA(closes, cfg.period),
-      hasData: bars.length >= cfg.period,
+      values: computeEMA(closes, cfg.period).slice(visibleFrom),
+      hasData: closes.length >= cfg.period,
     }));
-  }, [bars]);
+  }, [allBars, visibleFrom]);
   const emaOn = showEMA && !compact;
   const activeEmas = emaOn ? emas.filter((e) => e.hasData) : [];
   const rsiTop = H - PAD_B + RSI_GAP;
@@ -812,10 +827,10 @@ export default function LevelsChart({
           <button
             type="button"
             onClick={() => setShowRSI((v) => !v)}
-            disabled={!bars || bars.length <= RSI_PERIOD}
+            disabled={!allBars || allBars.length <= RSI_PERIOD}
             aria-pressed={rsiOn}
             title={
-              !bars || bars.length <= RSI_PERIOD
+              !allBars || allBars.length <= RSI_PERIOD
                 ? "Not enough bars to compute RSI on this range"
                 : "Show or hide the RSI momentum pane"
             }
@@ -830,10 +845,10 @@ export default function LevelsChart({
           <button
             type="button"
             onClick={() => setShowEMA((v) => !v)}
-            disabled={!bars || bars.length < EMA_CONFIGS[0].period}
+            disabled={!allBars || allBars.length < EMA_CONFIGS[0].period}
             aria-pressed={emaOn}
             title={
-              !bars || bars.length < EMA_CONFIGS[0].period
+              !allBars || allBars.length < EMA_CONFIGS[0].period
                 ? "Not enough bars to compute an EMA on this range"
                 : "Show or hide the 9 / 20 / 50 EMAs"
             }

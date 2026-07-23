@@ -230,39 +230,107 @@ export type ChartBar = {
   volume?: number;
 };
 
+async function fetchChartBars(
+  symbol: string,
+  sinceMs: number,
+  interval: string,
+): Promise<ChartBar[]> {
+  const result = (await yahooFinance.chart(symbol, {
+    period1: new Date(sinceMs),
+    interval: interval as never,
+  })) as { quotes?: YahooQuoteBar[] };
+  const quotes = result?.quotes ?? [];
+  return quotes
+    .filter((q): q is YahooQuoteBar & { date: Date; close: number } =>
+      q.close != null && q.date != null,
+    )
+    .map((q) => {
+      const bar: ChartBar = {
+        // Keep full ISO datetime so intraday ranges retain the hour/minute.
+        date: q.date.toISOString(),
+        close: q.close,
+      };
+      if (q.open != null) bar.open = q.open;
+      if (q.high != null) bar.high = q.high;
+      if (q.low != null) bar.low = q.low;
+      if (q.volume != null) bar.volume = q.volume;
+      return bar;
+    })
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
 export async function getChartSeries(
   symbol: string,
   range: ChartRange,
 ): Promise<ChartBar[]> {
   const { days, interval } = RANGE_PARAMS[range];
   try {
-    const now = Date.now();
-    const start = new Date(now - days * 86_400_000);
-    const result = (await yahooFinance.chart(symbol, {
-      period1: start,
-      interval: interval as never,
-    })) as { quotes?: YahooQuoteBar[] };
-    const quotes = result?.quotes ?? [];
-    return quotes
-      .filter((q): q is YahooQuoteBar & { date: Date; close: number } =>
-        q.close != null && q.date != null,
-      )
-      .map((q) => {
-        const bar: ChartBar = {
-          // Keep full ISO datetime so intraday ranges retain the hour/minute.
-          date: q.date.toISOString(),
-          close: q.close,
-        };
-        if (q.open != null) bar.open = q.open;
-        if (q.high != null) bar.high = q.high;
-        if (q.low != null) bar.low = q.low;
-        if (q.volume != null) bar.volume = q.volume;
-        return bar;
-      })
-      .sort((a, b) => a.date.localeCompare(b.date));
+    return await fetchChartBars(symbol, Date.now() - days * 86_400_000, interval);
   } catch (err) {
     console.error(`[markets] chart series fetch failed for ${symbol} ${range}:`, err);
     return [];
+  }
+}
+
+/**
+ * Extra calendar days fetched BEFORE the visible window when the caller wants
+ * indicator warm-up — enough history that a 50-period EMA (and 14-period RSI)
+ * is converged by the first visible bar, so the lines span the whole window
+ * instead of fading in partway across. Sized for ~110 extra bars at each
+ * range's interval. ALL already reaches back to inception, so there is nothing
+ * earlier to fetch.
+ */
+const WARMUP_DAYS: Record<ChartRange, number> = {
+  "1D": 7,
+  "5D": 14,
+  "1M": 160,
+  "3M": 160,
+  "1Y": 160,
+  "5Y": 800,
+  ALL: 0,
+};
+
+export type ChartSeriesWithWarmup = {
+  /** Warm-up bars followed by the visible window, oldest first. */
+  data: ChartBar[];
+  /** Index of the first bar inside the visible window. */
+  visibleFrom: number;
+};
+
+/** Calendar day in New York for an ISO timestamp — session identity for intraday bars. */
+function etDay(iso: string): string {
+  return new Date(iso).toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+}
+
+export async function getChartSeriesWithWarmup(
+  symbol: string,
+  range: ChartRange,
+): Promise<ChartSeriesWithWarmup> {
+  const { days, interval } = RANGE_PARAMS[range];
+  const now = Date.now();
+  try {
+    const data = await fetchChartBars(
+      symbol,
+      now - (days + WARMUP_DAYS[range]) * 86_400_000,
+      interval,
+    );
+    if (!data.length) return { data, visibleFrom: 0 };
+
+    let visibleFrom: number;
+    if (range === "1D") {
+      // "1D" means the last trading session, not the last 24-48 hours — the
+      // padded fetch can span two sessions midweek, so cut at the ET day of
+      // the final bar.
+      const lastDay = etDay(data[data.length - 1].date);
+      visibleFrom = data.findIndex((b) => etDay(b.date) === lastDay);
+    } else {
+      const cutoff = new Date(now - days * 86_400_000).toISOString();
+      visibleFrom = data.findIndex((b) => b.date >= cutoff);
+    }
+    return { data, visibleFrom: Math.max(0, visibleFrom) };
+  } catch (err) {
+    console.error(`[markets] warmup chart fetch failed for ${symbol} ${range}:`, err);
+    return { data: [], visibleFrom: 0 };
   }
 }
 
