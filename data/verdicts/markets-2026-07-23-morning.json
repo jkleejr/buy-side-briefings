@@ -1,0 +1,147 @@
+{
+  "routine": "markets",
+  "date": "2026-07-23",
+  "window": "morning",
+  "generated_at": "2026-07-23T12:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "AMD wins hyperscaler AI deals with OpenAI, Meta and Microsoft in landmark keynote",
+    "label": "Hold — AMD hyperscaler crown confirmed at $553; WTI $90+ is the new danger line",
+    "conviction": "medium",
+    "horizon": "Through INTC Q2 AH today; re-assess post-FOMC July 28-29",
+    "rationale_short": "AMD's Lisa Su keynote delivered the hyperscaler demand confirmation the AI trade required: OpenAI + Meta committed 12GW of AMD accelerator capacity, with Microsoft Azure and Oracle named as early Helios rack customers at $5-5.5M/rack. All four major hyperscalers are now AMD Helios customers — the most significant demand confirmation of the AI infrastructure cycle. But GOOGL's -4% premarket reaction to $195-205B capex guidance (FCF -$5.9B) and TSLA's gross-margin miss at 16.8% vs. 19.5% consensus drag the Magnificent Seven complex. WTI at $90.14 — the highest level of the US-Iran conflict phase — on Trump's bridge/power-plant ultimatum is the new macro danger line. VIX improvement to 16.64 (below the 17 formal trigger) reduces the regime to 4/7 breached from 5/7, but WTI at $90+ makes August CPI the most adverse oil-shock setup of the cycle entering next week's FOMC.",
+    "supporting_data": [
+      {
+        "label": "★★★ AMD Lisa Su keynote: OpenAI + Meta = 12GW combined AMD accelerator capacity confirmed; MSFT Azure + Oracle named early Helios rack ($5-5.5M) customers; stock ~$553 — largest single hyperscaler demand confirmation of the AI infrastructure cycle",
+        "url": "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-lisa-su-advancing-ai-2026-recap-2026-07-22"
+      },
+      {
+        "label": "★★★ WTI $90.14 (+3.8% premarket) — highest level of US-Iran conflict phase; Trump: 'we will bomb one bridge or power plant' for each Hormuz attack; tanker attacks off Saudi Arabia overnight; Brent est. ~$96.80",
+        "url": "https://www.cnbc.com/2026/07/23/oil-prices-today-wti-brent-trump-iran-hormuz.html"
+      },
+      {
+        "label": "★★★ GOOGL Q2: Cloud +82% to $24.8B (blew past 63% consensus); revenue $119.8B beat; EPS $9.11 — BUT capex raised to $195-205B full-year (from $180-190B), FCF -$5.9B (first negative quarter); stock -4% premarket",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-q2-2026-earnings-revenue-203058727.html"
+      },
+      {
+        "label": "★★★ TSLA Q2: Revenue $28.24B beat (+25.5% YoY); gross margin 16.8% vs ~19.5% consensus (clear miss against a raised bar); non-GAAP EPS $0.33 (39% below estimates); operating margin 1.4% vs 4.1% a year ago",
+        "url": "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html"
+      },
+      {
+        "label": "★★ VIX 16.64 (-2.40%) — fell below 17 formal trigger for the first time since WTI/Iran crisis phase began; regime improves to 4/7 breached from 5/7; TSLA and GOOGL capex concerns may re-pressure volatility",
+        "url": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html"
+      },
+      {
+        "label": "★★ ECB holds at 2.25% (95% probability, non-projection meeting); Lagarde press conference at 2:30pm CET — September rate-path commentary is the only EUR/USD catalyst",
+        "url": "https://www.fxleaders.com/news/2026/07/23/ecb-interest-rate-decision-july-23-2026-what-to-expect-from-lagarde-and-eur-usd/"
+      },
+      {
+        "label": "★★★ INTC Q2 AH today: $14.4B revenue / $0.10 EPS consensus; options imply 12% swing; 18A foundry yield and first named hyperscaler foundry customer are the signal events; 186% YTD — enterprise semi demand bellwether for today's close",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262042520-intel-intc-earnings-preview-july-23-2026-18a-foundry-apple-microsoft-tradingkey"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7498.96,  "change_pct": -0.14, "as_of": "2026-07-22T20:00:00Z" },
+    "nasdaq": { "level": 25690.90, "change_pct": -0.57, "as_of": "2026-07-22T20:00:00Z" },
+    "vix":    { "level": 16.64,    "change_pct": -2.40, "as_of": "2026-07-23T12:00:00Z" },
+    "ust10y": { "level": 4.660,    "change_bps": 3,     "as_of": "2026-07-23T12:00:00Z" },
+    "dxy":    { "level": 101.10,   "change_pct": 0.15,  "as_of": "2026-07-23T12:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                  "value": 16.64,  "trigger_above": 17,    "unit": ""      },
+    { "name": "WTI vs $79 trigger",   "value": 90.14,  "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude",          "value": 96.80,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",            "value": 5.09,   "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob",  "value": 71,     "trigger_above": 60,    "unit": "%"     },
+    { "name": "SPX vs 7,480 trigger", "value": 7499,   "trigger_below": 7480,  "unit": ""      },
+    { "name": "BTC Gate 2",           "value": 65695,  "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMD",
+      "note": "~$553 (entering Thursday session). Lisa Su confirmed Helios rack at $5-5.5M; OpenAI + Meta combined 12GW AMD accelerator capacity; MSFT Azure and Oracle named early Helios customers. All four major hyperscalers are now AMD Helios customers — the clearest competitive re-rating vs. Nvidia in the AI infrastructure cycle. Stock pulled back from a +4% premarket gap on Day 1; today's keynote confirmation is the investable event. Entry at $553 or on pullback to $530-540. Stop $510. Target $600 on first-volume-order announcements; $650+ if Nvidia Aug 26 earnings confirm AMD share loss.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$635-640 premarket (-4% from ~$660 Wednesday close). Cloud +82% to $24.8B blew away the 63% estimate; GAAP EPS $9.11 (Anthropic stake mark-up contributed as expected). The capex hike to $195-205B full-year (from $180-190B) and FCF of -$5.9B is the market's complaint. The Cloud result is structurally bullish; the capex overhang is a multiple question. Entry from Monday ~$648 is testing the $635 stop. Hold above $635 close; trim 50% if $635 breaks on close.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Gross margin 16.8% vs ~19.5% consensus — a structural miss against a materially raised bar. Revenue $28.24B beat (+25.5% YoY) and 480K deliveries (record quarter) were the positives. Non-GAAP EPS $0.33 was 39% below consensus. Operating margin plunged to 1.4% from 4.1% a year ago; regulatory credit revenue declined. The quality of the bull case has deteriorated. Avoid; next investable level ~$340-350 or post-Q3 gross-margin recovery above 18%.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "INTC",
+      "note": "Reports Q2 AH today. Consensus: $14.4B revenue / $0.10 EPS / ~39% gross margin. Options imply 12% swing. Key signals: (1) 18A manufacturing yield progression; (2) additional named external foundry customer beyond Fortinet; (3) AI infrastructure demand commentary from Pat Gelsinger. 186% YTD — enterprise semiconductor demand bellwether. Do not add ahead of the print; the options swing is too wide.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "AMD's hyperscaler wins (12GW from OpenAI+Meta; MSFT Azure; Oracle all named) structurally reduce NVDA's monopoly positioning ahead of Q2 FY27 earnings Aug 26. Dead zone persists: Kimi K3 open weights July 27, INTC AH today, FOMC next week. Hard stop $195 intact. Do not add into AMD's confirmed hyperscaler wins — wait for NVDA's own demand commentary Aug 26 to quantify AMD share loss.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "XLE",
+      "note": "★ 20% allocation in force. WTI $90.14 — highest of the US-Iran conflict phase. Trump's 'bomb one bridge/power plant per Hormuz attack' is the most dangerous escalation of the crisis. Tanker attacks off Saudi Arabia overnight. Dual supply-shock (Hormuz restriction + Houthi maritime embargo) now compounded by threat of direct US infrastructure strikes inside Iran. Oil thesis at peak strength. Maintain full allocation.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$65,695 (Crypto.com, 11:02 UTC July 23); 24h range $65,348-$66,396; 24h change -0.51%. Gate 2 ($62,000) intact with $3,695 buffer. BTC softening modestly with risk appetite mixed — GOOGL/TSLA overhang weighing. AMD hyperscaler confirmation supports AI-cycle risk appetite, capping BTC downside. Watch $65,000 as near-term support; Gate 2 not at risk.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "TSLA below $380",
+      "reason": "Gross margin at 16.8% vs ~19.5% consensus is a structural miss — not a beat that was priced in wrong, but genuine margin deterioration as average selling prices fell and regulatory credit revenue declined simultaneously with record delivery volumes. Operating margin at 1.4% (from 4.1% a year ago) signals EV pricing power has eroded at scale.",
+      "better_entry": "Post-Q3 print if gross margin recovers above 18%; or $340-350 on capitulation and full narrative reset."
+    },
+    {
+      "ticker": "NVDA above $205",
+      "reason": "AMD now has all four major hyperscalers confirmed as Helios customers — OpenAI, Meta, MSFT Azure, Oracle — with 12GW of committed AMD capacity from OpenAI+Meta alone. That is the most credible hyperscaler diversification away from Nvidia in the history of AI infrastructure. Kimi K3 open weights arrive July 27; NVDA Q2 FY27 is Aug 26. Four-week event-risk window with maximum AMD competitive overhang.",
+      "better_entry": "Post-NVDA Q2 FY27 Aug 26 with confirmed data-center revenue growth above 100% YoY and explicit commentary on AMD share dynamics; or $190-195 on capitulation with VIX reversal below 15."
+    },
+    {
+      "ticker": "GOOGL pre-close below $635",
+      "reason": "The capex hike to $195-205B (from $180-190B) and FCF of -$5.9B in Q2 shifts the narrative from cash-generative AI leverage to pure capex story. While Cloud +82% is structurally bullish, the valuation re-rate lower is a multiple compression risk. The $635 stop from Monday's entry is the line — Cloud beat is already reflected.",
+      "better_entry": "Fresh entry at $610-615 if $635 stop triggers and Cloud +70%+ Q3 guide materializes; or hold above $635 close for the second qualifying session."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AMD",
+      "direction": "long",
+      "thesis": "Lisa Su's keynote delivered the definitive hyperscaler demand confirmation: OpenAI + Meta = 12GW of AMD accelerator capacity; MSFT Azure and Oracle named early Helios rack customers at $5-5.5M/rack. All four major hyperscalers are now AMD Helios customers. The addressable market for Helios racks is now validated with real named-customer demand signals at commercial pricing. AMD at ~$553 is pricing in the keynote confirmation but not the full competitive re-rating vs. NVDA that will only be quantified at Nvidia's Aug 26 earnings.",
+      "entry": "Long at $553 or on pullback to $530-540. Stop $510 (below Day 1 pre-keynote intraday low). Target $600 on first Helios volume-order announcements; $650+ on Nvidia Aug 26 confirming AMD share loss.",
+      "invalidation": "Microsoft Azure cancels or delays Helios deployment; OpenAI 12GW commitment is revealed as non-binding; MI400 production yields fall materially below 60% in first runs. Exit immediately on any of these.",
+      "conviction": "medium",
+      "horizon": "4-6 weeks through NVDA Q2 FY27 Aug 26"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "WTI $90.14 is the highest print of the US-Iran conflict phase. Trump's bridge/power-plant ultimatum removes the de-escalation safety valve that anchored oil below $90 for the prior ten sessions. Tanker attacks off Saudi Arabia compound the Hormuz restriction. August CPI oil pass-through at $90+ WTI is the most severe scenario of the crisis; FOMC July 28-29 faces this as the dominant inflation input.",
+      "entry": "Maintain 20% XLE allocation (established Monday). Reduce to 8% ONLY on Iran ceasefire formally agreed with Hormuz reopening confirmed AND WTI two consecutive closes below $70. Partial reduce at WTI two closes below $80.",
+      "invalidation": "Iran-US formal ceasefire agreed; Hormuz transit exceeds 10 vessels/day; WTI two consecutive closes below $70.",
+      "conviction": "high",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "WTI at $90.14 is the highest oil print of the US-Iran conflict phase. September hike probability ~71% (above 60% trigger). FOMC July 28-29 faces the most adverse oil-inflation backdrop of the crisis. 30Y yield ~5.09% (above 5.00% trigger). Four of seven regime indicators remain in formal breach. TSLA gross margin miss signals consumer stress at the margin. If INTC misses AH today, five of seven indicators breach again with oil at $90.",
+      "entry": "IWM August puts at full original size. Maintain TLT short above $87-88. Reassess after INTC AH print tonight and FOMC July 28-29.",
+      "invalidation": "WTI closes below $79 AND September hike probability confirms below 40% AND VIX closes below 15 for two consecutive sessions. Exit all hedge positions simultaneously on all three.",
+      "conviction": "medium",
+      "horizon": "Through FOMC July 28-29 and August CPI (est. Aug 13)"
+    }
+  ],
+  "bear_case": "Counter-thesis: WTI at $90.14 is the highest print of the US-Iran conflict phase, and Trump's 'bomb one bridge/power plant per Hormuz attack' posture removes the de-escalation safety valve that markets have counted on since the ceasefire frayed in early July. At $90+ WTI, August CPI oil pass-through becomes a near-certainty within a single FOMC meeting cycle; September hike probability at ~71% means the market is pricing a rate-hike path into an already-stressed consumer (TSLA gross margin at 1.4% operating margin on record deliveries). GOOGL's FCF turning negative (-$5.9B) on $44.9B capex in a single quarter marks the first sign AI infrastructure spending is outrunning cash generation; $195-205B full-year capex guidance implies the market had materially underestimated 2026 AI burn rates. AMD's hyperscaler wins (12GW, Helios at $5.5M/rack) are the strongest bull argument in the market today, but they translate to cash flows 18-24 months out; WTI at $90 is hitting cost structures and consumer spending in real time. If INTC misses AH tonight and guides to underwhelming 18A yields, the AI infrastructure thesis faces a dual credibility test: hyperscaler capex commitments are real (GOOGL, AMD wins), but foundry execution and end-demand returns remain unproven. Bear case trigger: WTI closes above $93 (where OPEC historically signals supply-response failure), OR INTC 18A yields land materially below expectations with no second major hyperscaler foundry win named, OR VIX re-breaches 17 with WTI above $90 simultaneously. Any two of these three triggers warrants moving to step_aside.",
+  "body_mdx": "data/briefings/markets/2026-07-23-morning.mdx"
+}
