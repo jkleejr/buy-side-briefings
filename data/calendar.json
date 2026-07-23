@@ -1,67 +1,60 @@
 {
   "events": [
     {
-      "date": "2026-07-23",
-      "label": "AMD Lisa Su keynote 9:30am PT (Day 2) + Intel Q2 AH — hardware confirmed, keynote adds hyperscaler wins",
-      "kind": "EARNINGS",
-      "tickers": ["AMD", "INTC", "NVDA", "MSFT"],
-      "note": "Lisa Su keynote at 9:30am PT / 12:30pm ET is the commercial partnership event following Day 1's hardware confirmations: EPYC Venice (first x86 2nm server CPU), MI455X in Helios rack with 31TB HBM4 at $5-5.5M pricing, and Microsoft Azure confirmed as H2 2026 anchor customer. Meta, OpenAI, xAI, Oracle, Cohere, and Red Hat were all present at Day 1 — keynote expected to add hyperscaler commitment announcements beyond Microsoft and deliver explicit Kimi K3 inference-economics counter-arguments. AMD closed +9.8% at $553 on Day 1 alone. Intel (INTC) Q2 AH: options imply 15% move; consensus $14.4B revenue / $0.22 non-GAAP EPS; enterprise semiconductor demand bellwether — guidance cut signals CapEx risk, guidance raise confirms AI demand thesis extends beyond hyperscalers. IBM also reports July 23 (94.4% historical beat rate, enterprise tech bellwether). Context: GOOGL Cloud +82% YoY beat sets a high bar for all AI-infrastructure reads; SPX 7,498.96 second qualifying close achieved; VIX 16.64 (first close below 17 formal trigger)."
-    },
-    {
       "date": "2026-07-27",
-      "label": "Kimi K3 full open-weight model weights public release — second AI narrative wave; 2.8T parameter model",
+      "label": "Kimi K3 full open-weight model release — 2.8T parameter model; second AI efficiency wave",
       "kind": "OTHER",
       "tickers": ["NVDA", "AMD", "SMH", "GOOGL", "MSFT"],
-      "note": "Moonshot AI releases full Kimi K3 model weights (2.8 trillion parameters) publicly on July 27 — five days after GOOGL Q2 (Cloud +82%) and AMD Advancing AI Day 1 (MI455X/Helios confirmed shipping). Context has shifted since the prior briefing: GOOGL Cloud 82% growth is the strongest AI-demand confirmation on record, which reduces the likelihood that Kimi K3 efficiency arguments dominate the narrative. However, AMD Day 1's Helios at $5-5.5M and GOOGL's $195-205B capex commitment have refocused attention on the ROI question — and open-weight inference efficiency models (Kimi K3 at 70% pricing discount) directly challenge the hyperscaler inference-capex ROI thesis. Do not add NVDA or AMD into July 27 regardless of AMD keynote outcomes — Kimi K3 open weights are a known binary event risk on any GPU-exposed position."
+      "note": "Moonshot AI releases full Kimi K3 model weights (2.8 trillion parameters) publicly on July 27. Context has shifted significantly: INTC Q2 beat (DC+AI +59%, $16.1B revenue) and AMD's confirmed hyperscaler sweep (all four major hyperscalers) reduce the likelihood that Kimi K3 efficiency arguments dominate. However, GOOGL's -7% on capex concerns and Brent $100 have put the market in risk-off posture entering Monday — open-weight inference-efficiency models (Kimi K3 at 70% pricing discount vs. API providers) still directly challenge the hyperscaler inference-capex ROI thesis. The AMD keynote 'sell the news' dynamic (-3.85% despite confirmed hyperscaler wins) suggests the market may respond similarly to any AI efficiency narrative that complicates the infrastructure-demand story. Do not add NVDA or AMD into July 27 — the open-weight release is binary event risk on any GPU-exposed position."
     },
     {
       "date": "2026-07-28",
-      "label": "FOMC meeting (Jul 28-29) — September hike probability 78%; most hawkish oil-inflation backdrop of the cycle",
+      "label": "FOMC meeting (Jul 28-29) — September hike 82%; markets pricing non-trivial July hike probability",
       "kind": "FOMC",
-      "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC"],
-      "note": "As of July 22 night: July hold probability ~83%; September hike probability ~78% — crossed the 70% formal BEARISH threshold (was 69% this morning, 48.7% two days ago) on WTI $86.85 and the structural oil pass-through risk from the Iran-US conflict. FOMC enters with WTI/Brent at crisis highs ($86.85/$94.13) and dual supply-shock (Hormuz restriction + Houthi Saudi maritime embargo) structurally active. The September language in the FOMC statement is the single most market-moving variable of the week: dovish September language = September hike probability collapses toward 50%, immediate rate-relief across IWM, TLT, and risk assets. Hawkish September language = probability jumps toward 85%+, extending the rate-shock regime through Q3. The FOMC must decide whether to acknowledge Brent $94.13 as a transitory or structurally embedding inflation signal — that language distinction moves all assets. Critical: any statement that does not explicitly close the door on September is read as hawkish given 78% market pricing."
+      "tickers": ["TBT", "TLT", "QQQ", "IWM", "BTC", "XLE"],
+      "note": "As of July 23 close: July hold still expected (95%+) but Forbes reporting markets now price non-trivial July hike probability. September hike probability reached 82% after Brent crude crossed $100 for the first time since May 26 and 10Y Treasury yield topped 4.7% (highest since January 2025). FOMC enters with Brent $100.69 / WTI $92.19, 30Y at 5.188%, and SPX 28 points from the formal BEARISH conversion threshold at 7,380. The September language in the FOMC statement is now the single most market-moving variable of the year: dovish September language (characterize Brent $100 as transitory) = September hike probability collapses toward 45-55%, IWM/TLT relief; hawkish September language (acknowledge oil embedding in CPI) = September hike probability jumps to 90%+, formal BEARISH regime activation likely via SPX below 7,380. The FOMC must adjudicate whether Brent $100 oil is transitory (as it was in 2022 post-Ukraine) or structurally embedding from a multi-year Iran conflict — that distinction moves all assets for the balance of 2026."
     },
     {
       "date": "2026-07-29",
-      "label": "META Q2 2026 earnings — AI cloud business quantification; MSFT Q2 + AMZN Q2 also; peak Q2 earnings week",
+      "label": "FOMC Rate Decision + META Q2 + MSFT Q2 + AMZN Q2 — peak Q2 season density",
       "kind": "EARNINGS",
-      "tickers": ["META", "MSFT", "AMZN"],
-      "note": "META Q2 earnings July 29 is the first event requiring management to quantify the AI cloud business (Bloomberg July 1: Meta building AI cloud to sell excess compute). Context: GOOGL raised 2026 capex to $195-205B and committed to 2027 increases — META's AI cloud ambitions raise the same capex-ROI question. MSFT Azure must validate the AMD Helios deployment narrative with actual Azure AI revenue growth; AMD Day 1 confirmed MSFT as anchor customer, so MSFT must now show the revenue impact. AMZN AWS is the third major hyperscaler read on AI demand after GOOGL (82% growth). Also July 29: FOMC rate decision (4pm ET) — the rate decision plus three Mag-7 prints is the highest-density single session of Q2 season. A triple beat (META AI cloud revenue + MSFT Azure AI + AMZN AWS) alongside dovish FOMC September language is the single scenario that fully validates the upgrade cycle."
+      "tickers": ["META", "MSFT", "AMZN", "TLT", "IWM"],
+      "note": "FOMC rate decision (2pm ET) plus three Magnificent Seven earnings after close. Context as of July 23: GOOGL fell -7% on capex concerns ($195-205B, 2027 increase committed); META, MSFT, and AMZN now face the same capex-ROI scrutiny. META Q2 (first to quantify Bloomberg-reported AI cloud-to-third-parties business) is the key. MSFT Azure must validate AMD Helios anchor-customer narrative with actual AI revenue growth. AMZN AWS is the third hyperscaler AI demand read after GOOGL (82%) and INTC enterprise DC+AI (+59%). GOOGL's experience suggests that even massive AI demand beats are overridden by capex concerns — META and MSFT must show credible capex ROI to avoid the same fate. If FOMC is dovish AND all three Mag-7 beats AI demand thesis, this is the single session that can reopen the upgrade cycle from its current zero-reset. If FOMC hawkish + any two disappointments, SPX tests 7,280-7,320 range."
     },
     {
       "date": "2026-08-13",
-      "label": "July CPI release (est. Aug 13) — WTI $86.85 + Brent $94.13 at crisis highs; most consequential macro print of 2026",
+      "label": "July CPI (est.) — WTI $92.19 + Brent $100.69 embedding; September hike at 82%",
       "kind": "MACRO",
       "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA", "IWM"],
-      "note": "July CPI is the first release to fully capture WTI at $86.85 and Brent at $94.13 — the crisis highs of the Iran-US conflict — amid the Hormuz blockade and Houthi maritime embargo against Saudi Arabia (~2.5M bbl/day at risk). September hike probability at 78% entering FOMC Jul 28-29 means the August CPI print directly determines whether September becomes near-certain or retreats. Bull scenario (July CPI ≤3.2% YoY with oil-shock not embedding in core): September hike probability collapses below 50%. Bear scenario (July CPI ≥3.5% YoY): September 50bps probability jumps toward 90%, BEARISH regime extends through Q4. Critical: WTI rose from ~$82 to $86.85 within a single session's oil shock (July 22 morning), and has remained elevated — August CPI captures the full Rubio 'not serious' escalation period. The GOOGL capex alarm ($195-205B) and TSLA margin miss (16.8%) are partly driven by the same cost-push inflation environment the August CPI will confirm or deny."
+      "note": "July CPI is the first release to fully capture WTI at $92.19 and Brent at $100.69 — the new conflict-phase highs as of July 23. September hike probability at 82% means a CPI print above 3.5% YoY would make September near-certain (90%+ probability). Gasoline prices follow Brent with a 2-3 week lag, so the July 23 $100 Brent crossing fully embeds in the August CPI gasoline component. The August 13 CPI print is the clearing event that determines whether the September hike is 25bps (inflation moderating despite oil) or 50bps (inflation re-accelerating on energy pass-through). Bull scenario (July CPI ≤3.2% YoY with oil-shock not embedding in core): September hike probability collapses below 50%, rate-relief regime opens. Bear scenario (July CPI ≥3.5% YoY): September 50bps probability approaches 90%, BEARISH regime confirmed through Q4."
     },
     {
       "date": "2026-08-26",
-      "label": "NVDA Q2 FY27 earnings (est.) — $91B revenue guide; AI capex cycle clearing event; addresses Moonshot AI + TSMC wafer hike + AMD competition",
+      "label": "NVDA Q2 FY27 earnings (est.) — must address AMD hyperscaler sweep + Kimi K3 + TSMC wafer hike",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "NVDA's Q2 FY27 earnings is the fundamental clearing event for the AI capex thesis. $91B revenue guidance represents sequential acceleration. Context updated July 22: (1) AMD Day 1 confirmed MI455X in Helios rack with 31TB HBM4 shipping H2 2026 with Microsoft Azure anchor — AMD is now a confirmed NVDA competitor in the hyperscaler rack market, not just aspirational; (2) GOOGL raised 2026 capex to $195-205B and committed to a further increase in 2027 — the hyperscaler spend environment is extraordinary, which is a tailwind for NVDA; (3) TSMC wafer hike (5-10% on 2nm/3nm) affects both NVDA and AMD; (4) Kimi K3 open weights release July 27 will have occurred 30 days prior — demand impact must be quantified. The hard stop at $195 has held; do not add until post-Q2 FY27 print with all four risk factors (AMD competitive impact, Kimi K3 demand, TSMC wafer hike margin, capex ROI timeline) addressed in management guidance."
+      "note": "NVDA Q2 FY27 is the fundamental clearing event for the AI GPU thesis. $91B revenue guidance represents sequential acceleration. Context updated July 23: (1) AMD keynote confirmed all four major hyperscalers (OpenAI, Meta, MSFT Azure, Oracle, Anthropic 2GW) as Helios customers — the most credible competitive diversification from Nvidia in the AI cycle's history; (2) INTC Q2 Data Center +59% shows enterprise AI demand is broad-based, reducing single-vendor concentration risk; (3) Kimi K3 full open weights released July 27 — demand impact must be quantified; (4) TSMC wafer hike unresolved; (5) Brent $100 and September hike at 82% create macro headwinds for growth multiples. Hard stop $195 intact; do not add until Q2 FY27 addresses all five factors with data."
     },
     {
       "date": "2026-09-02",
-      "label": "SPCX first earnings as a public company (approx.) — Starlink ARR + Starship cadence",
+      "label": "SPCX first earnings as public company (approx.) — Starlink ARR + Starship cadence",
       "kind": "EARNINGS",
       "tickers": ["SPCX"],
-      "note": "First earnings print since June 12 IPO. SPCX touched an intraday all-time low of $132.75 on July 15 (below $135 IPO price) — down 30%+ from June 16 ATH of $225.64. 27 of 31 analysts still carry Buy ratings; the sell-side downgrade cycle has barely begun. December 2026 lock-up expiry adds supply overhang. Re-entry gate: first earnings print (Starlink ARR growth, Starship launch cadence, cash burn) is the fundamental clearing event. Net losses are structural ($4.9B in 2025, $4.28B in Q1 2026). Better entry $115-120 for risk-tolerant 12-month investors."
+      "note": "First earnings print since June 12 IPO. Re-entry gate $115-120 for risk-tolerant 12-month investors. Net losses structural ($4.9B in 2025). December 2026 lock-up expiry adds supply overhang. Watch Starlink ARR growth and Starship launch cadence as primary metrics."
     },
     {
       "date": "2026-12-09",
       "label": "SPCX 180-day IPO lock-up expiry (approx.) — insider/early-investor float unlock",
       "kind": "OTHER",
       "tickers": ["SPCX"],
-      "note": "~180 days after the June 12 debut, early investors and insiders can sell, materially expanding the ~4% public float. Lock-up expiries are a known supply overhang for hot IPOs. The $20B bond offering (June 22) already changed the capital structure risk profile — the lock-up expiry adds equity supply overhang."
+      "note": "~180 days after the June 12 debut. Lock-up expiries are a known supply overhang for hot IPOs. Early investors and insiders can sell, materially expanding the ~4% public float."
     },
     {
       "date": "2027-01-01",
       "label": "OpenAI IPO — target window shifts to H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": ["MSFT", "NVDA"],
-      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off -13% on the delay. Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst and adds uncertainty to AI infrastructure spending trajectories."
+      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off -13% on the delay. Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst."
     }
   ]
 }
