@@ -1,0 +1,153 @@
+{
+  "routine": "markets",
+  "date": "2026-07-24",
+  "window": "morning",
+  "generated_at": "2026-07-24T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "headline": "New tariffs on 99.4% of US imports land on FOMC week with six regime indicators still breached",
+    "label": "Step Aside — Trump tariff escalation + Asia rout + Brent $100 = protect capital before July 29 META/MSFT capex verdict",
+    "conviction": "medium",
+    "horizon": "Through FOMC July 28-29 and META/MSFT/AMZN earnings July 29-30",
+    "rationale_short": "Friday's pre-open is a fragile tentative bounce (+0.2% ES) against a compounding adverse backdrop: Trump's next phase of tariffs — 10-12.5% on 60 countries covering 99.4% of US imports — went into effect this morning, backfilling a blanket tariff the Supreme Court deemed unlawful, simultaneously adding a fresh stagflationary input on top of Brent crude above $100 and a September rate-hike probability of 82%. Asia bore the brunt overnight: Nikkei -2.9%, KOSPI -5% (sidecar circuit-breaker triggered), MSCI Asia Pacific -2.2%. Six of seven regime indicators remain in formal breach. SPX is 28 points from the 7,380 level that converts the regime to formal BEARISH. Intel's Thursday-night blowout — revenue $16.1B vs. $14.4B consensus, EPS $0.42 vs. $0.22 — validated AI demand breadth, but the stock reversed in after-hours trading from the $110 spike, limiting its lifting power for Friday's open. The week ahead is the most consequential of the year: FOMC July 28-29, META and MSFT reporting July 29 after close, Amazon July 30 — all facing the same AI-capex-ROI scrutiny that took Alphabet -7% on Thursday.",
+    "supporting_data": [
+      {
+        "label": "★★★ Trump tariffs effective today: 10-12.5% on 60 countries covering 99.4% of US imports — backfills Supreme Court-invalidated blanket tariff; stagflationary oil + tariff double-input hits August CPI setup entering FOMC week",
+        "url": "https://finance.yahoo.com/economy/policy/article/trumps-next-phase-of-global-tariffs-goes-into-effect-affecting-994-of-us-imports-210032314.html"
+      },
+      {
+        "label": "★★★ Nikkei -2.9%, KOSPI -5% (sidecar curbs triggered), MSCI Asia Pacific -2.2% overnight — spill from Thursday's Mag 7 $797B rout + Brent $100; Asian bond markets also selling as inflation risk premium re-prices",
+        "url": "https://investinglive.com/news/investinglive-asia-pacific-market-moving-news-24-july-2026-asian-equities-slapped-down"
+      },
+      {
+        "label": "★★★ Six of seven regime indicators in formal breach: VIX 19.38 (above 17), WTI $92.19 (above $79), Brent $100.40 (above $85), 30Y 5.188% (above 5.00%), September hike prob 82% (above 70%); SPX 7,408 is 28 points from 7,380 BEARISH threshold",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html"
+      },
+      {
+        "label": "★★★ FOMC July 28-29: 79.5% hold, 19.4% July hike probability — first time this year July hike has carried near-20% odds; META, MSFT, AMZN all report July 29-30 facing same AI capex ROI scrutiny that took GOOGL -7%",
+        "url": "https://www.forbes.com/sites/simonmoore/2026/07/23/markets-see-chance-fed-hikes-next-week-at-july-meeting/"
+      },
+      {
+        "label": "★★★ INTC Q2 blowout: Revenue $16.13B vs $14.42B consensus (+25% YoY fastest in 15 years); non-GAAP EPS $0.42 vs $0.22; Data Center & AI +59%; Q3 guided $16.3B mid — AI demand breadth confirmed beyond hyperscalers; stock reversed in AH from $110 spike on $11B net loss",
+        "url": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html"
+      },
+      {
+        "label": "★★ ES +0.2% / NQ +0.1% pre-market Friday — tentative dead-cat bounce insufficient to clear 6/7 regime breaches; Brent $100.40 overnight (slight pullback from $100.69 settle); AXP Q2 in-line at $4.40 EPS / $19.70B revenue (consumer credit holds but no upside surprise)",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-7-24-american-express-stock/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7408.30,  "change_pct": -1.21, "as_of": "2026-07-23T20:00:00Z" },
+    "nasdaq": { "level": 25137.69, "change_pct": -2.15, "as_of": "2026-07-23T20:00:00Z" },
+    "vix":    { "level": 19.38,    "change_pct": 16.47,  "as_of": "2026-07-23T20:00:00Z" },
+    "ust10y": { "level": 4.71,     "change_bps": -2,    "as_of": "2026-07-24T11:00:00Z" },
+    "dxy":    { "level": 101.55,   "change_pct": 0.05,  "as_of": "2026-07-24T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                        "value": 19.38,  "trigger_above": 17,    "unit": ""      },
+    { "name": "WTI vs $79 trigger",         "value": 92.19,  "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude",                "value": 100.40, "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",                  "value": 5.188,  "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob",        "value": 82,     "trigger_above": 70,    "unit": "%"     },
+    { "name": "SPX vs 7,380 BEARISH level", "value": 7408.3, "trigger_below": 7380,  "unit": ""      },
+    { "name": "BTC Gate 2",                 "value": 65030,  "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "INTC",
+      "note": "Blowout Q2: Revenue $16.13B (+25% YoY) vs $14.42B consensus; non-GAAP EPS $0.42 vs $0.22; Data Center & AI +59%; Q3 guided $16.3B midpoint. Apple and Microsoft confirmed as 18A foundry partners. Stock spiked to ~$110 in AH before reversing on $11B net loss. Friday opening range $112-118 is the entry window. Stop $105. Target $130-140 through FOMC. The AI demand validation from INTC is the week's most important bull signal — enterprise data-center spending is broad, not just hyperscaler.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$529.48 Thursday close (-3.85%) on sell-the-news; pre-market Friday ~$540 (+0.31%). Hyperscaler fundamentals remain intact: 12GW OpenAI+Meta, MSFT Azure, Oracle, Anthropic 2GW. The post-keynote sell-off is a 'digestion' consolidation, not a fundamental reversal. $525-540 is the near-term support zone. Do not add before FOMC (July 28-29); reenter $525-535 if FOMC is dovish. Target $580-600 after FOMC clarity.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$209 Thursday close (-1.56%). Dead zone intact through Aug 26: Kimi K3 open weights July 27, FOMC July 28-29, AMD competitive data embedded. Pre-market Friday broadly flat. Hard stop $195 intact. Do not add. The tariff headwind adds a new cost-structure risk for AI server imports. Wait for NVDA Q2 FY27 Aug 26.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "$319.69 Thursday close (-14.52%) — now BELOW the $340-350 capitulation entry from the night brief. Gross margin 16.8% and -14.5% single-day move on record deliveries rarely stabilizes in one session. Do NOT catch this falling knife. The next level is $295-310 if institutional forced selling continues or SPX tests the 7,380 BEARISH threshold. The EV price war + $100 Brent (fuel cost offset thesis) make the Q3 gross-margin recovery case harder, not easier.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "Reports July 29 AH alongside MSFT. With GOOGL -7% on capex concerns ($195-205B, FCF -$5.9B), META faces an identical AI capex ROI scrutiny template. Meta's AI cloud ambitions (Bloomberg July 1) will be the pivot question. Hold existing positions; DO NOT add ahead of July 29. AXP's in-line result confirms premium consumer spending holds, which is mildly supportive for META ad revenue, but the capex question dominates.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~-7% Thursday close (to ~$610-615 range). Capex alarm ($195-205B, 2027 increase committed) is a multiple-compression regime that does not resolve in one session. Entry at $610-615 if the level holds and META/MSFT July 29 prints avoid capex-driven selloffs. Stop $595. Cloud +82% is the structural bull; the valuation re-rate is the tactical headwind.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "XLE",
+      "note": "★ 20% allocation in force. WTI $92.19, Brent $100.40 — both above their respective triggers. New tariffs compound the oil import cost story. August CPI pass-through at Brent $100+ is a near-mathematical certainty. Maintain full 20% allocation. Reduce to 12% only on WTI two consecutive closes below $80. Full reduce to 8% only on Iran-US ceasefire AND Hormuz transit confirmed AND WTI below $70 two consecutive closes.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$65,029.96 (Fortune, 5:45 AM ET July 24). Gate 2 ($62,000) intact with $3,030 buffer. Tariff headwind is dollar-neutral (DXY flat) so crypto has no macro tailwind or headwind today. $64,000-$66,800 range has held for one week. Watch $63,000-64,000 as the critical support zone; a close below $63,000 with SPX testing 7,380 would trigger a multi-asset risk-off cascade assessment.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$321.66 Thursday close (-1.30%). China AI approval thesis intact; not in the direct AI capex crossfire like GOOGL/META. Minimal exposure to tariff headwind in the short term. Q2 earnings upcoming late July/early August. Hold above $315. The 10-12.5% tariff on Taiwan and China adds a manufacturing input risk to the longer-term supply chain — minor for FY26 guidance.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "TSLA below $340",
+      "reason": "TSLA closed at $319.69 (-14.52%) — now below the $340-350 capitulation entry target from the prior brief, meaning forced institutional selling has overshot even the bear-case entry level. With Brent at $100 (removing EV's fuel-cost tailwind) and gross margin at 16.8% (structural deterioration), catching this here is a knife catch. The $11B net loss at INTC (despite beating on revenue) signals that even AI-cycle winners have balance-sheet headwinds; TSLA's balance sheet is weaker.",
+      "better_entry": "$295-310 if SPX tests the 7,380 BEARISH threshold and institutional forced-selling completes; or post-Q3 earnings if gross margin recovers above 18% and FCF returns to positive."
+    },
+    {
+      "ticker": "META / MSFT before July 29 close",
+      "reason": "GOOGL's -7% reaction to capex $195-205B (FCF -$5.9B) sets the template for the AI capex overhang multiple-compression trade. META's July 1 AI cloud announcement and MSFT's Azure 40% growth guide will face identical investor scrutiny: are returns on AI capex visible within 12-18 months? With new tariffs on 99.4% of US imports adding to input costs, margin guidance is the new battleground.",
+      "better_entry": "Post-July 29 AH print with FCF commentary demonstrating positive AI ROI; or at FOMC-dovish reprieve if September hike probability falls below 55%."
+    },
+    {
+      "ticker": "NVDA above $205",
+      "reason": "Dead zone through August 26 is now compounded: Kimi K3 open weights July 27 (open-source efficiency narrative), FOMC July 28-29, new tariffs on AI server imports (10-12.5% on Taiwan-made components). AMD confirmed all four hyperscalers as Helios customers with 12GW of capacity committed — competitive diversification from NVDA is the highest it has been in the AI era.",
+      "better_entry": "Post-NVDA Q2 FY27 (August 26) with confirmed data-center revenue growth and explicit AMD share commentary; or $190-195 on capitulation with VIX reversal below 15."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "INTC",
+      "direction": "long",
+      "thesis": "Intel's Q2 results were the most important positive data point of the week: revenue $16.13B (+25% YoY, fastest in 15 years) against a $14.42B consensus; non-GAAP EPS $0.42 nearly doubled the $0.22 estimate; Data Center & AI segment grew 59% YoY; Q3 guided to $16.3B midpoint above consensus. Apple and Microsoft confirmed as 18A foundry partners. The AH reversal from $110 (on the $11B GAAP net loss) was a valuation adjustment, not a fundamental repudiation. This is the clearest validation that enterprise AI demand has broadened beyond the four major hyperscalers into the broader corporate infrastructure cycle.",
+      "entry": "Long INTC at the Friday opening range $112-118. Stop $105 (below the pre-earnings AH range). Target $130-140 through FOMC July 28-29 if rate language is not explicitly hawkish. Reduce 50% above $125 ahead of the FOMC decision.",
+      "invalidation": "Q3 guidance revised below $15.5B mid-quarter; 18A yield data disappoints materially; or SPX closes below 7,380 triggering formal BEARISH regime (broad tape selloff overrides single-stock thesis).",
+      "conviction": "medium",
+      "horizon": "2-3 weeks through FOMC July 28-29 and August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "XLE",
+      "direction": "long",
+      "thesis": "Brent crude at $100.40 is above the $100 threshold that has historically triggered CPI pass-through to gasoline prices within 2-3 weeks. WTI $92.19. The new Trump tariffs (10-12.5% on 60 countries covering 99.4% of US imports) compound the inflationary input: oil shock + tariff shock entering August CPI (est. August 13) and FOMC week is the most adverse stagflationary setup of this briefing series. September rate hike probability at 82%.",
+      "entry": "Maintain 20% XLE allocation (established earlier this week). Reduce to 12% at WTI two consecutive closes below $80. Full reduce to 8% ONLY on Iran-US ceasefire formally agreed AND Hormuz transit exceeds 10 vessels/day AND WTI two consecutive closes below $70.",
+      "invalidation": "Iran-US formal ceasefire agreed with Hormuz reopening confirmed; WTI two consecutive closes below $70.",
+      "conviction": "high",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "FOMC July 28-29 carries 19.4% probability of a July hike — highest of the cycle — combined with new tariffs on 99.4% of US imports and Brent above $100. Six of seven regime indicators are in formal breach. SPX at 7,408 is 28 points from the formal BEARISH threshold at 7,380. IWM is the most rate-sensitive index instrument; TLT short profits if the long end re-prices hawkishly post-FOMC. This hedge is sized to protect against a formal BEARISH regime conversion.",
+      "entry": "IWM August puts at full original size. Maintain TLT short above $87-88. Reassess after FOMC July 28-29 decision and META/MSFT/AMZN July 29-30 earnings.",
+      "invalidation": "WTI closes below $79 AND September hike probability confirms below 50% post-FOMC AND VIX closes below 15 for two consecutive sessions. Exit all simultaneously on all three conditions.",
+      "conviction": "medium",
+      "horizon": "Through FOMC July 28-29 and August CPI (est. Aug 13)"
+    }
+  ],
+  "bear_case": "Counter-thesis: The bear case now has three mutually reinforcing legs where before it had two. The oil shock (Brent $100.40, first close above $100 since May 26) and the September rate hike trajectory (82%) were already in place when Thursday closed with SPX 28 points from the formal BEARISH threshold. Today, new tariffs on 99.4% of US imports — a stagflationary input that arrives simultaneously with an oil shock and FOMC week — make the August CPI print nearly mathematically certain to be adverse, regardless of whether oil retreats to $95 in the next two weeks. GOOGL's -7% on $195-205B capex guidance was the first confirmation that the market is beginning to price AI infrastructure spending as a multiple-compression event, not a growth-re-rating event; META (July 29) and MSFT (July 29) report into the same investor framework with the same question unanswered. If either META or MSFT guides to 2027 capex increases — as GOOGL's CFO did — the AI capex overhang trade could erase another $500-800B in Mag 7 market cap in a single session, pushing SPX through the 7,380 BEARISH threshold. INTC's earnings blowout is the lone structural bull argument, but it is an 18-24 month revenue story; the tariff, rate, and capex headwinds are hitting cost structures in real time. Bear case trigger: SPX closes below 7,380 (formal BEARISH regime activation), OR META/MSFT guide to 2027 capex increases replicating GOOGL's -7% reaction on July 29, OR FOMC July 28-29 statement signals September hike as the base case (probability above 90%). Any one of these three triggers warrants moving from STEP ASIDE to BEARISH/DEFENSIVE.",
+  "body_mdx": "data/briefings/markets/2026-07-24-morning.mdx"
+}
