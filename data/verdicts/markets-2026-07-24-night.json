@@ -1,0 +1,154 @@
+{
+  "routine": "markets",
+  "date": "2026-07-24",
+  "window": "night",
+  "generated_at": "2026-07-25T01:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil drops on US-Iran peace talks signal; INTC earnings reversal stings; SPX holds the line",
+    "label": "Cautious — oil diplomacy eases the setup; FOMC + Mag-7 capex verdict July 29 is the clearing event",
+    "rationale_short": "Oil fell 3-4% (WTI $89.31, Brent $96.78) on a CNBC report that Pakistan and China are brokering new US-Iran talks — the first concrete diplomatic signal of the conflict phase — easing August CPI pressure and pulling VIX to 17.96 from Thursday's 19.38. SPX held 7,411.98 above the 7,380 BEARISH threshold; Dow outperformed (+235 pts on AAPL +3.5%) while Nasdaq lagged (-0.64%) as INTC reversed its full +12% earnings pop to close down 7.89% at $92.32 on foundry external-demand scrutiny. No directional call is appropriate before FOMC July 29 (Chair Warsh press conference 2:30pm ET) and META/MSFT reports the same evening; the oil diplomacy signal is a process, not a ceasefire, and could reverse on any Trump escalation or failed negotiation.",
+    "supporting_data": [
+      {
+        "label": "★★★ Pakistan-China push for US-Iran talks sends WTI -3.1% to $89.31, Brent -3.9% to $96.78 — largest single-day oil decline since late June; Brent below $100 for first time since Wednesday; first concrete diplomatic off-ramp signal of the conflict phase",
+        "url": "https://www.cnbc.com/2026/07/24/oil-price-trump-hormuz-red-sea-iran-war.html"
+      },
+      {
+        "label": "★★★ INTC reversed ALL of Thursday night's +12% AH earnings surge to close -7.89% at $92.32 — foundry external customer concentration (only Apple and Microsoft named) overwhelmed the $16.13B revenue beat; morning brief stop $105 violated",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/07/24/stock-market-today-july-24-intel-reverses-gains-on-foundry-and-ai-spending-concerns/"
+      },
+      {
+        "label": "★★★ SPX 7,411.98 (+0.05%), Dow +235pts on AAPL +3.5%, Nasdaq -0.64% — SPX held BEARISH threshold (7,380); blue-chip rotation confirmed; week closed without BEARISH conversion",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html"
+      },
+      {
+        "label": "★★★ VIX fell to 17.96 from 19.38 (-7.3% daily) — closest to the 17.00 upgrade trigger since Thursday's re-breach; Treasury yields slid as oil fell; one qualifying sub-17 close still required to start Day 1 of 2 on the upgrade clock",
+        "url": "https://www.cnbc.com/2026/07/24/treasury-yields-bonds-us-debt.html"
+      },
+      {
+        "label": "★★★ FOMC July 28-29 (Chair Warsh; no dot plot); META Q2 + MSFT Q2 July 29 AH; AAPL Q2 + AMZN Q2 July 30 AH — peak event density of 2026; September hike prob estimated ~74% (down from 82% Thursday on oil retreat, still above 70% trigger)",
+        "url": "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html"
+      },
+      {
+        "label": "★★ Europe recovered on oil's intraday retreat: DAX +1.36% to 25,099, FTSE +0.91% to 10,736, CAC +0.88% to 8,372 — first positive European session since Monday; Pakistan-China diplomacy is the global risk-reduction catalyst",
+        "url": "https://www.armstrongeconomics.com/market-talk/market-talk-july-24-2026/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7411.98,  "change_pct": 0.05,  "as_of": "2026-07-24T20:00:00Z" },
+    "nasdaq": { "level": 24975.82, "change_pct": -0.64, "as_of": "2026-07-24T20:00:00Z" },
+    "vix":    { "level": 17.96,    "change_pct": -7.33, "as_of": "2026-07-24T20:00:00Z" },
+    "ust10y": { "level": 4.65,     "change_bps": -8,    "as_of": "2026-07-24T20:00:00Z" },
+    "dxy":    { "level": 101.46,   "change_pct": -0.09, "as_of": "2026-07-24T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                        "value": 17.96,  "trigger_above": 17,    "unit": ""      },
+    { "name": "WTI vs $79 trigger",         "value": 89.31,  "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude",                "value": 96.78,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",                  "value": 5.11,   "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob",        "value": 74,     "trigger_above": 70,    "unit": "%"     },
+    { "name": "SPX vs 7,380 BEARISH level", "value": 7411.98,"trigger_below": 7380,  "unit": ""      },
+    { "name": "BTC Gate 2",                 "value": 65674,  "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AAPL",
+      "note": "★ Star of the session: +3.5% to ~$332.92, driving the Dow's 235-point recovery. China AI approval intact; oil retreat reduces supply-chain input cost concerns; pre-Q2 positioning building (reports July 30 AH). Hold above $315. July 30 is the next catalyst — watch for China revenue commentary and iPhone AI monetization.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "INTC",
+      "note": "Painful reversal: -7.89% to $92.32, erasing the entire +12% AH earnings surge. Foundry external customer concentration (Apple and Microsoft named as 18A partners, but limited third-party external bookings) overwhelmed the revenue beat. The morning brief's $105 stop was violated. The Q2 data point (DC+AI +59%, $16.13B revenue) remains a valid enterprise AI demand signal, but the foundry thesis requires external customer diversification to hold at current valuation. Do not re-enter until Q3 external bookings demonstrate multi-customer diversification.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$539.69 (+1.9% from Thursday's $529.48) — recovered modestly as INTC's Q2 data (+59% DC+AI) validated the enterprise AI infrastructure thesis AMD has been building. All four major hyperscalers remain confirmed Helios customers. Do not add before FOMC (July 28-29). Kimi K3 Monday is binary event risk for the open-weight narrative. Re-entry: $525-535 on FOMC dovish outcome.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$206.66 (-1.0%). Dead zone intact and potentially extended: Kimi K3 (2.8T param open-weight release Monday), FOMC July 28-29, INTC reversal as a precedent for AI infrastructure demand scrutiny. Hard stop $195 intact. Short thesis emerging for FOMC week (see Trade Setups). Do not add. Q2 FY27 August 26 is the next fundamental clearing event.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "$312.84 (-2.1%) — fourth consecutive losing session since Q2 miss. Below every prior capitulation-entry target. Gross margin 16.8% structural miss + FCF negative + $100+ Brent fuel-cost-offset removal = thesis for Q3 gross-margin recovery is weakened, not strengthened. Oil's retreat to WTI $89 provides marginal EV cost relief but does not address operating leverage or pricing pressure. Do not enter. $295-310 is the next level on continued forced selling.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$320-321 (+0.58%). Modest recovery from Thursday's -7% selloff. The $195-205B capex concern and FCF turning negative are not resolved in one session. META and MSFT on July 29 will determine whether GOOGL's reaction was company-specific or a sector template. Entry: $305-315 on META/MSFT AI capex ROI confirmation; stop $295.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$635 (-0.64%). Pre-earnings caution. Reports July 29 AH — first Mag-7 AI capex test after GOOGL's -7% reaction. Meta's AI cloud third-party monetization (Bloomberg July 1 report) will be the pivot question. Hold existing; do not add ahead of July 29.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$406 (-0.06%). Essentially flat. Reports July 29 AH alongside META. AMD Helios anchor customer (keynote-confirmed); INTC 18A foundry partner. Azure AI revenue growth must validate the capex commitment. GOOGL's template applies here: 2027 capex commentary is the risk. Hold; no add ahead of July 29.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XLE",
+      "note": "WTI fell to $89.31 (-3.1%), Brent to $96.78 (-3.9%) on peace talks signal. Recommendation: reduce from 20% to 12-15%. August CPI oil embedding is partially reduced (Brent below $100) but not eliminated (WTI still $10+ above $79 trigger). Full exit only on confirmed ceasefire + Hormuz transit reopening.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$65,674 (-0.62%). Gate 2 ($62,000) intact with $3,674 buffer — modest improvement from Thursday's $2,997 narrowest-buffer. Oil retreat = reduced macro inflation/rate risk-off headwind for crypto. Range $64,000-$66,800 held a full week. Watch $64,000 as critical support; a break there with SPX testing 7,380 would signal multi-asset risk-off cascade.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "INTC below $95",
+      "reason": "The foundry external-demand concern that triggered Friday's -7.89% reversal to $92.32 is not a one-session reaction. Only Apple and Microsoft were named as 18A external customers on Thursday's call; third-party external revenue remains limited and the foundry model requires multi-customer validation to support its premium valuation. The morning brief's stop at $105 was violated by $12.68. Re-entering after a stop-out into the same thesis within the same week requires a meaningfully higher bar of confirmation.",
+      "better_entry": "Post-Q3 2026 earnings if external foundry bookings demonstrate customer diversification beyond Apple and Microsoft; or if 18A yield data confirms volume production economics ahead of schedule at lower cost than TSMC 2nm."
+    },
+    {
+      "ticker": "NVDA above $200",
+      "reason": "Kimi K3's 2.8T parameter open-weight release on Monday creates binary weekend risk. INTC's -7.89% reversal demonstrates that the market will sell AI infrastructure names on business-model concerns even when demand beats expectations — a pattern repeated twice now (GOOGL -7% on capex, INTC -8% on foundry demand). NVDA faces four overlapping risk events in nine trading sessions: Kimi K3 (Monday), FOMC (July 29), three Mag-7 capex reports (July 29-30), and then NVDA Q2 FY27 (August 26).",
+      "better_entry": "Post-NVDA Q2 FY27 (August 26, est.) with confirmed data-center revenue growth against explicit AMD hyperscaler share commentary; or $188-193 on capitulation with VIX closing below 15 for two consecutive sessions."
+    },
+    {
+      "ticker": "TSLA below $315",
+      "reason": "Four consecutive losing sessions (-14.52% Thursday, -2.1% Friday) since the Q2 gross-margin miss. At $312.84, TSLA is below every prior capitulation-entry target this briefing series has identified. The structural thesis for Q3 recovery — gross margin above 18%, FCF positive — requires at least two quarters of validation. Oil's WTI retreat to $89 provides marginal EV fuel-cost tailwind but does not address the pricing-versus-cost operating-leverage problem.",
+      "better_entry": "$295-310 if SPX tests the 7,380 BEARISH threshold post-FOMC and institutional forced-selling completes; or post-Q3 earnings (late October) if gross margin recovers above 18% and FCF turns positive."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (reduce 20% → 12-15%)",
+      "direction": "long",
+      "thesis": "Brent crude fell to $96.78 on the Pakistan-China diplomatic signal for US-Iran talks — a meaningful risk reduction but not a ceasefire. August CPI oil pass-through is partially reduced (Brent below $100) but not eliminated (WTI $89.31 is still $10.31 above the $79 trigger). Trimming from 20% to 12-15% preserves the upside if oil spikes back on talks failure while reducing exposure to a further retreat if diplomatic progress accelerates toward a ceasefire framework.",
+      "entry": "Reduce from 20% to 12-15% at Friday close or Monday open. Add back to 20% if Brent re-crosses $100 on confirmed talks failure or Trump escalation. Reduce further to 8% only on Iran-US ceasefire formally announced AND Hormuz transit above 10 vessels/day AND WTI two consecutive closes below $70.",
+      "invalidation": "Iran-US formal ceasefire announced with Hormuz reopening confirmed; WTI two consecutive closes below $70.",
+      "conviction": "medium",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "September hike probability remains approximately 74% (est.) even after oil's Friday retreat — still above the 70% regime-breach trigger. FOMC Chair Warsh's July 29 press conference is the session where rate language either closes or extends the September window. META and MSFT report the same evening, creating the single highest-density day of the year for rate + capex risk. The IWM/TLT hedge must not be unwound before both the FOMC statement and all three Mag-7 July 29-30 prints have cleared.",
+      "entry": "Maintain IWM August puts at full original size. Maintain TLT short above $87.50. Reassess AFTER FOMC July 29 decision AND META/MSFT July 29 AH prints — both must clear before re-evaluating size.",
+      "invalidation": "FOMC explicitly closes September door (September hike probability falls below 55%) AND Brent holds below $90 for three sessions AND META/MSFT both beat on AI capex ROI improving quarter-over-quarter. All three simultaneously required.",
+      "conviction": "medium",
+      "horizon": "Through FOMC July 28-29 and August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "NVDA short",
+      "direction": "short",
+      "thesis": "Kimi K3's 2.8T parameter open-weight model release on Monday July 27 is the cleanest downside binary for NVDA heading into the weekend — Moonshot AI's model offers approximately 70% inference pricing discount vs. API providers, directly challenging hyperscaler inference capex ROI. INTC's -7.89% reversal on foundry external-demand concerns demonstrates that the market will sell AI infrastructure names on business-model questions even when demand beats consensus — a pattern now confirmed twice (GOOGL -7%, INTC -8%). NVDA at $206.66 faces a four-event dead zone in nine sessions, none of which is unambiguously positive.",
+      "entry": "Short NVDA at $204-208. Stop above $216 (prior week's high; short-squeeze resistance level). Target $190-196. Half a standard position given NVDA's volatility and short-squeeze potential on a FOMC-dovish relief rally.",
+      "invalidation": "Kimi K3 releases below benchmark performance on a key dimension (removing the inference-efficiency narrative); FOMC is explicitly dovish with September closed; NVDA pre-announces strong Q2 FY27 datacenter demand ahead of August 26.",
+      "conviction": "low",
+      "horizon": "Through Kimi K3 (Jul 27) and FOMC (Jul 29); reassess after both events"
+    }
+  ],
+  "bear_case": "The Pakistan-China diplomatic push for US-Iran talks is a soft signal from a mediating third party with limited coercive leverage over either Washington or Tehran — Trump's 'major military punishment' threat for future Hormuz attacks was not withdrawn on Friday, and Brent at $96.78 remains $12 above the $85 regime trigger and $7 above the $90 level that sustains the August CPI oil pass-through thesis. INTC's -7.89% reversal despite the largest revenue beat of the quarter demonstrates a pattern the briefing series has now confirmed twice: the market will reprice AI infrastructure names aggressively on business-model scrutiny even when top-line demand is strong (GOOGL -7% on capex, INTC -8% on foundry external demand); META and MSFT report into this exact framework on July 29. If Chair Warsh's FOMC statement acknowledges that tariff-on-99.4%-of-imports is not transitory, September hike probability re-prices above 80%, immediately reversing the oil dip's rate-relief benefit. Bear case invalidation: Iran formally agrees to ceasefire framework talks (formal agreement, not diplomatic signals) AND Brent holds below $90 for two consecutive sessions AND FOMC July 29 statement explicitly removes September from the base case (probability falls below 55%). All three simultaneously required.",
+  "body_mdx": "data/briefings/markets/2026-07-24-night.mdx"
+}
