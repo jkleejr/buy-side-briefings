@@ -48,7 +48,13 @@
   ],
   "created_at": "2026-07-21",
   "expires_at": "2026-08-14",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["TSLA", "Tesla", "earnings", "gross-margin", "conditional", "catalyst", "robotaxi", "Optimus", "low-conviction"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-23",
+    "final_price": 325.0,
+    "return_pct": -12.1,
+    "outcome_label": "Stop triggered — Q2 gross margin structural miss at 16.8% vs. 19.5% consensus",
+    "note": "TSLA closed at $319.69 on July 23 (-14.52%), well below the $325 stop. Although the conditional entry trigger was met (Q2 gross margin of 16.8% > 15% threshold), the 16.8% gross margin was a structural miss vs. the 19.5% consensus, operating expenses rose +47% YoY, FCF turned negative, and Brent at $100.40 simultaneously eliminated the EV fuel-cost tailwind. The stop order at $325 was triggered; actual close was $319.69. Mag-7 collective shed $797B in market cap on the session."
+  }
 }

@@ -40,9 +40,16 @@
       "url": "https://finance.yahoo.com/quote/XLE/history/"
     }
   ],
+  "status": "target_hit",
+  "outcome": {
+    "closed_at": "2026-07-24",
+    "final_price": 66.0,
+    "return_pct": 16.3,
+    "outcome_label": "Target 2 hit — Brent $100.40; US 12 consecutive nights of Iran strikes",
+    "note": "XLE advanced steadily from $56.74 entry (July 8) as the US-Iran conflict escalated through 12 consecutive nights of airstrikes. T1 ($61) hit approximately July 14-17 as Brent passed $85 on naval interdiction risks. T2 ($65) hit July 23-24 with Brent at $100.40 (first close above $100 since May 26) and WTI at $92.19. 80% of position covered (40% at T1, 40% at T2). Morning briefing July 24 recommends maintaining 20% XLE allocation for August CPI pass-through — T3 ($72) remains possible if Hormuz escalation intensifies. Final 20% held."
+  },
   "created_at": "2026-07-08",
   "expires_at": "2026-08-12",
-  "status": "active",
   "tags": [
     "XLE",
     "energy",
@@ -55,7 +62,6 @@
     "WTI",
     "supply-shock"
   ],
-  "outcome": null,
   "levels": {
     "entry_low": 54.5,
     "entry_high": 57.5,

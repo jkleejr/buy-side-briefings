@@ -44,7 +44,13 @@
   ],
   "created_at": "2026-07-23",
   "expires_at": "2026-08-14",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["META", "earnings", "AMD", "Helios", "AI-infrastructure", "advertising", "catalyst", "Q2-earnings"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-23",
+    "final_price": 648.0,
+    "return_pct": -4.6,
+    "outcome_label": "Stop triggered — GOOGL capex template contagion + Mag-7 selloff",
+    "note": "META closed at $627.52 on July 23 (-3.87%), driven by GOOGL's -7% AI capex overhang reaction establishing the template for all Mag-7 names, TSLA's -14.52% collapse, and the $797B collective Mag-7 market cap destruction. The $648 stop was triggered intraday. The short setup into META's July 29 earnings is now more constructive than a long: identical AI capex ROI scrutiny + new tariffs on hardware infrastructure cost uncertainty."
+  }
 }

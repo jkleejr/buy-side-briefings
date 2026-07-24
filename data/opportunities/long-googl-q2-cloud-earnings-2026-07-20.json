@@ -38,7 +38,7 @@
   ],
   "created_at": "2026-07-20",
   "expires_at": "2026-07-27",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "GOOGL",
     "Alphabet",
@@ -49,7 +49,13 @@
     "pre-earnings",
     "mega-cap"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-23",
+    "final_price": 628.0,
+    "return_pct": -3.1,
+    "outcome_label": "Stop triggered — $195-205B capex guidance with FCF turning negative",
+    "note": "GOOGL fell -6.17% on July 23 (close ~$608) after Q2 earnings revealed $195-205B AI capex guidance and FCF turning negative for the first time. Cloud growth was strong (+82% YoY) but the capex-overhang template established by this result is now the market's framework for META and MSFT (both reporting July 29). The $628 stop was triggered intraday; exit at $628. Short GOOGL or post-FOMC long re-entry at $595-610 is now the cleaner setup."
+  },
   "levels": {
     "entry_low": 645.0,
     "entry_high": 658.0,

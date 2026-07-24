@@ -44,7 +44,13 @@
   ],
   "created_at": "2026-07-23",
   "expires_at": "2026-09-30",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": ["SMCI", "AMD", "Helios", "AI-server", "hyperscaler", "rack-ODM", "infrastructure", "thematic"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-24",
+    "final_price": 31.20,
+    "return_pct": 0.0,
+    "outcome_label": "Thesis broken — opportunity created with incorrect price data",
+    "note": "The July 23 opportunity was created with current_price $82 and entry zone $76-86; the actual SMCI market price on July 23-24 was $24-31 per multiple sources. The stock was at $24.29 on July 20 and rose to $31.20 on July 24 on a preliminary Q4 results announcement (record $60B+ backlog, gross margin guidance 15-17%). The stated entry zone ($76-86) was never reachable at the actual market price and the $67 stop was below the entire valid price range. The AMD Helios rack-demand thesis remains directionally valid, but a properly-priced SMCI opportunity requires entry at $28-34 with a stop near $22 — see fresh setup if warranted."
+  }
 }

@@ -44,7 +44,7 @@
   ],
   "created_at": "2026-07-22",
   "expires_at": "2026-07-28",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "INTC",
     "Intel",
@@ -56,5 +56,11 @@
     "Xeon",
     "catalyst"
   ],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-24",
+    "final_price": 112.0,
+    "return_pct": 10.9,
+    "outcome_label": "Target 1 hit — Q2 blowout confirmed; DCAI +59%; stock opens $112-118",
+    "note": "INTC Q2 delivered revenue $16.13B vs $14.42B consensus (+25% YoY, fastest growth in ~15 years), non-GAAP EPS $0.42 vs $0.22 (near-double), Data Center & AI +59% YoY, Q3 guided to $16.3B midpoint above consensus. Apple and Microsoft confirmed as 18A foundry partners. Stock spiked to ~$110 AH before reversing on $11B GAAP net loss (impairments/restructuring); Friday July 24 open range $112-118 confirms T1 at $110 cleared and 40% covered. Remaining position approaching T2 ($118) ahead of FOMC July 28-29."
+  }
 }
