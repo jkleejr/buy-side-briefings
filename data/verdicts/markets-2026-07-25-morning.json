@@ -1,0 +1,153 @@
+{
+  "routine": "markets",
+  "date": "2026-07-25",
+  "window": "morning",
+  "generated_at": "2026-07-25T11:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "headline": "Oil drops on Iran diplomacy as markets brace for the Fed and four major earnings this week",
+    "label": "Step Aside — oil diplomacy trims 1 breach to 5-of-7; FOMC July 29 + META/MSFT same evening is the week's clearing event",
+    "conviction": "medium",
+    "horizon": "Through FOMC July 28-29 and Mag-7 earnings July 29-30",
+    "rationale_short": "Saturday morning read-in after the most constructive single session in two weeks: WTI closed at $89.31 (-3.1%) and Brent at $96.78 (-3.9%), the largest oil decline since late June, triggered by a CNBC report that Pakistan and China are pushing for new US-Iran peace talks. VIX fell to 17.96 from Thursday's 19.38; SPX held at 7,411.98, preserving a 31.98-point buffer above the 7,380 formal BEARISH threshold; Dow gained 235 points on AAPL's +3.5% session. The oil retreat reduces active regime breaches from six to five: WTI ($89.31, above $79 trigger), Brent ($96.78, above $85 trigger), 30Y yield (5.11%, above 5.00% trigger), VIX (17.96, above 17.00 trigger), and September hike probability (~74%, above 70% trigger) all remain in formal breach; SPX and BTC Gate 2 ($64,085 live, Crypto.com 11:02 UTC) are intact. The diplomatic signal is from a third-party mediator with limited coercive leverage — Trump has not withdrawn his 'major military punishment' threat, and WTI remains $10+ above the $79 clean-trigger level; any Iran escalation or failed negotiation re-triggers the Brent-above-$100, August-CPI-pass-through chain instantly. No directional addition is appropriate before the 72-hour window that resolves every open question simultaneously: FOMC July 28-29 (Chair Warsh press conference July 29 at 2:30pm ET; no dot plot); META Q2 AH and MSFT Q2 AH both July 29 evening; AAPL Q2 AH and AMZN Q2 AH July 30. This is the highest-density event sequence of 2026. INTC's -7.89% reversal on Friday (erasing the entire +12% AH earnings surge from Thursday) despite a $1.71B revenue beat confirms a pattern now running three consecutive earnings reactions: GOOGL -7% on $195-205B capex (July 23), INTC -8% on foundry external-demand scrutiny (July 24) — META and MSFT report into this exact investor framework on July 29. Kimi K3 (Moonshot AI, 2.8T parameter open-weight model) releases Monday July 27, a binary event for NVDA's inference pricing moat ahead of FOMC. The week ahead is the clearing event for every regime indicator currently in breach — FOMC either pushes September probability above 80% (hawkish) or below 55% (confirms the oil retreat's relief), and Mag-7 AI capex guidance either validates the GOOGL template or breaks the pattern. Either outcome represents a larger directional move than current positioning justifies attempting to front-run.",
+    "supporting_data": [
+      {
+        "label": "★★★ Pakistan and China push for US-Iran peace talks: WTI -3.1% to $89.31, Brent -3.9% to $96.78 — largest single-session oil decline since late June; first concrete diplomatic signal of the conflict phase; Brent below $100 for first time since Wednesday",
+        "url": "https://www.cnbc.com/2026/07/24/oil-price-trump-hormuz-red-sea-iran-war.html"
+      },
+      {
+        "label": "★★★ FOMC July 28-29 (Chair Warsh, no dot plot) + META Q2 + MSFT Q2 all July 29; AAPL Q2 + AMZN Q2 July 30 — highest-density 72-hour event window of 2026; September hike probability ~74% (down from 82% Thursday, still above 70% regime trigger)",
+        "url": "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html"
+      },
+      {
+        "label": "★★★ INTC -7.89% on Friday to $92.32, erasing all of Thursday's +12% AH earnings surge — foundry external customer concentration overwhelmed the $16.13B revenue beat; market pattern confirmed: AI infrastructure names sold on business-model scrutiny even when top-line demand is strong (GOOGL -7% July 23, INTC -8% July 24)",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/07/24/stock-market-today-july-24-intel-reverses-gains-on-foundry-and-ai-spending-concerns/"
+      },
+      {
+        "label": "★★★ SPX 7,411.98 (+0.05%), Dow +235pts on AAPL +3.5%, Nasdaq -0.64%, VIX 17.96 (-7.3%) — Friday close held above 7,380 BEARISH threshold; one sub-17 VIX close still needed to start Day 1 of 2 on the upgrade clock",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html"
+      },
+      {
+        "label": "★★ Kimi K3 (Moonshot AI, 2.8T parameter open-weight) expected Monday July 27 — 70% inference pricing discount vs. API providers is a direct challenge to hyperscaler inference capex ROI; binary NVDA risk before FOMC; open-weight release Monday is not guaranteed to be delayed past weekend",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html"
+      },
+      {
+        "label": "★★ BTC $64,085 live (Crypto.com, 11:02 UTC July 25) — 24h range $63,723–$65,138, down -1.33% from $65,674 Friday close; testing $64,000 support floor; Gate 2 ($62,000) intact with $2,085 buffer; AH drift confirms weekend risk-off posture",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7411.98,  "change_pct":  0.05, "as_of": "2026-07-24T20:00:00Z" },
+    "nasdaq": { "level": 24975.82, "change_pct": -0.64, "as_of": "2026-07-24T20:00:00Z" },
+    "vix":    { "level": 17.96,    "change_pct": -7.33, "as_of": "2026-07-24T20:00:00Z" },
+    "ust10y": { "level": 4.65,     "change_bps": -8,    "as_of": "2026-07-24T20:00:00Z" },
+    "dxy":    { "level": 101.46,   "change_pct": -0.09, "as_of": "2026-07-24T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "VIX",                        "value": 17.96,  "trigger_above": 17,    "unit": ""      },
+    { "name": "WTI vs $79 trigger",         "value": 89.31,  "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude",                "value": 96.78,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",                  "value": 5.11,   "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob",        "value": 74,     "trigger_above": 70,    "unit": "%"     },
+    { "name": "SPX vs 7,380 BEARISH level", "value": 7411.98,"trigger_below": 7380,  "unit": ""      },
+    { "name": "BTC Gate 2",                 "value": 64085,  "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$206.66 Friday close (-1.0%). Binary Kimi K3 risk Monday July 27: Moonshot AI's 2.8T parameter open-weight model offers ~70% inference-cost reduction vs. API providers — a direct challenge to the inference-capex-ROI argument that supports NVDA's premium data-center multiples. Hard stop $195 intact. NVDA short thesis (from night brief) remains live at $204-208 with stop above $216. Do not add long positions. Dead zone through August 26 Q2 FY27 earnings is compounded by FOMC July 29, three Mag-7 capex reports July 29-30, and the INTC pattern confirming the market's willingness to sell AI infrastructure on business-model scrutiny.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "~$635 Friday close (-0.64%). Reports July 29 AH alongside MSFT and the same day as the FOMC press conference — the highest-density single session of 2026. GOOGL's -7% reaction to $195-205B capex with FCF turning negative is the investor template; Meta's AI cloud third-party monetization announcement (Bloomberg July 1) will face identical ROI scrutiny. AXP's in-line Q2 ($4.40 EPS) confirms premium consumer spending holds, providing mild ad-revenue tailwind, but the capex question dominates. Hold existing positions; do not add ahead of July 29 close.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$406 Friday close (-0.06%). Reports July 29 AH alongside META. Azure AI revenue growth must quantitatively justify the capex commitment; 2027 capex commentary is the risk that replicates GOOGL's -7% reaction. AMD Helios anchor customer (keynote-confirmed); INTC 18A foundry partner. Hold existing; no additions ahead of July 29.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "★ ~$332.92 Friday close (+3.5%) — was the session's standout, driving the Dow's 235-point recovery. Reports July 30 AH alongside AMZN. China AI approval thesis intact; minimal direct exposure to AI infrastructure capex scrutiny that hit GOOGL, INTC; tariff input risk is a longer-term supply chain concern, not a Q2 near-term guide risk. Hold above $315. The Friday +3.5% session suggests institutional rotation to quality defensives into FOMC week — a pattern that typically strengthens in the 2 days before the decision.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "WTI $89.31 (-3.1%), Brent $96.78 (-3.9%) on peace-talk signal. Recommendation from night brief: reduce from 20% to 12-15% at Monday open. August CPI oil pass-through is partially reduced (Brent below $100) but not eliminated (WTI still $10+ above $79 trigger). Add back to 20% if Brent re-crosses $100 on talks failure or Trump escalation; Iran escalation is still the base risk. Full exit to 8% only on formal ceasefire AND Hormuz transit confirmed AND WTI below $70 for two consecutive closes.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$320-321 Friday close (+0.58%). Modest Friday bounce after Thursday's -7% capex selloff. The $195-205B capex concern (FCF negative) is not resolved; META and MSFT July 29 will determine whether GOOGL's reaction was company-specific or a sector-wide AI capex multiple-compression template. Cloud +82% is the structural bull; the valuation re-rate is the tactical overhang. Entry: $305-315 on META/MSFT AI capex ROI confirmation; stop $295.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "INTC",
+      "note": "$92.32 Friday close (-7.89%) — full reversal of Thursday's +12% AH earnings surge. Morning brief's $105 stop was violated by $12.68. The Q2 data point (DC+AI +59%, $16.13B revenue) remains a valid enterprise AI demand signal, but the foundry external-customer-concentration concern (only Apple and Microsoft named as 18A partners) requires multi-customer validation to rebuild the investment thesis. Do not re-enter until Q3 external foundry bookings demonstrate diversification beyond two customers.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "$312.84 Friday close (-2.1%), fourth consecutive losing session since Q2 gross-margin miss. Below every prior capitulation-entry target in this briefing series. WTI retreat to $89 provides marginal EV fuel-cost tailwind but does not address the operating leverage, pricing pressure, or FCF-negative structural concerns. Do not enter. $295-310 remains the next level on continued institutional forced-selling.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$64,085 live (Crypto.com, 11:02 UTC July 25), down -1.33% from $65,674 Friday close; 24h range $63,723–$65,138. Gate 2 ($62,000) intact with $2,085 buffer. Weekend drift toward $64,000 support demands attention: a close below $64,000 entering FOMC week with SPX testing 7,380 would signal a multi-asset risk-off cascade. Oil retreat (WTI $89.31) is marginally dollar-neutral to slightly positive for crypto risk appetite, but FOMC week uncertainty overrides any macro tailwind from oil. $64,000-$65,000 is the critical support zone.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "META / MSFT before July 29 close",
+      "reason": "GOOGL's -7% capex reaction is the investor template for Tuesday's META and MSFT prints. Both companies face the same AI capex ROI scrutiny, the same FCF-versus-investment question, and the same hyperscaler-spending-visibility framework that repriced GOOGL by $112B in a single session. Buying before the reports forces exposure to the most concentrated binary event risk in the 2026 calendar — FOMC same day, two Mag-7 results same evening.",
+      "better_entry": "Post-July 29 AH prints: if META and MSFT demonstrate positive AI ROI with FCF improving quarter-over-quarter, STEP ASIDE regime lifts and re-entry at market price is appropriate. If they replicate GOOGL's template, the regime converts to BEARISH and a lower entry becomes available."
+    },
+    {
+      "ticker": "NVDA above $200",
+      "reason": "Kimi K3 (Monday), FOMC (July 29), META/MSFT capex reports (July 29), AAPL/AMZN (July 30), and NVDA Q2 FY27 (August 26) are five overlapping risk events in nine trading sessions. INTC's -7.89% reversal on foundry external-demand concerns confirms the market's willingness to sell AI infrastructure names on business-model questions even when demand beats consensus — a pattern now confirmed three times in five sessions.",
+      "better_entry": "Post-NVDA Q2 FY27 (August 26) with confirmed data-center revenue growth and explicit AMD share commentary; or $188-195 on FOMC-week capitulation with VIX closing below 15 for two consecutive sessions."
+    },
+    {
+      "ticker": "INTC below $95",
+      "reason": "The stop at $105 from the morning brief was violated by $12.68 when Friday's -7.89% reversal confirmed foundry external-demand concerns. Re-entering after a stop-out within the same week requires a meaningfully higher bar of confirmation. The Q2 demand validation is real but insufficient to offset the thesis invalidation on external foundry bookings.",
+      "better_entry": "Post-Q3 2026 earnings if external foundry bookings demonstrate customer diversification beyond Apple and Microsoft; or if 18A yield confirms volume production ahead of schedule and below TSMC 2nm cost structure."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (maintain 12-15%)",
+      "direction": "long",
+      "thesis": "Oil's Friday retreat from Brent $100 to $96.78 is constructive but not a ceasefire: WTI at $89.31 remains $10.31 above the $79 regime trigger, and August CPI pass-through is partially reduced but not eliminated. The Pakistan-China diplomatic push has no binding coercive leverage over Washington or Tehran. The 12-15% allocation (trimmed from 20% per the night brief) preserves upside if Brent re-spikes on failed talks or Trump escalation while reducing exposure to a further oil retreat if diplomatic progress accelerates toward a formal ceasefire framework ahead of FOMC.",
+      "entry": "Maintain 12-15% XLE allocation established at Friday close or Monday open. Add back to 20% if Brent re-crosses $100 on confirmed talks failure or Trump escalation. Reduce further to 8% only on Iran-US ceasefire formally announced AND Hormuz transit above 10 vessels/day AND WTI two consecutive closes below $70.",
+      "invalidation": "Iran-US formal ceasefire agreed with Hormuz reopening confirmed; WTI two consecutive closes below $70.",
+      "conviction": "medium",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "September hike probability remains ~74% — above the 70% regime-breach trigger — even after the oil retreat. FOMC Chair Warsh's July 29 press conference is the session where rate language either closes or extends the September window. If the FOMC statement acknowledges that tariffs on 99.4% of US imports are non-transitory — the honest assessment of the input — September probability re-prices above 80%, reversing the oil retreat's rate-relief benefit. META and MSFT report the same evening: the capex-ROI scrutiny that took GOOGL -7% creates a second vector for SPX to test the 7,380 BEARISH threshold on July 29.",
+      "entry": "Maintain IWM August puts at full original size. Maintain TLT short above $87.50. Reassess AFTER both the FOMC July 29 statement AND the META/MSFT July 29 AH prints have cleared — do not unwind ahead of either.",
+      "invalidation": "FOMC explicitly closes September (probability below 55%) AND Brent holds below $90 for three consecutive sessions AND META/MSFT both beat on AI capex ROI demonstrating FCF improvement quarter-over-quarter. All three simultaneously required.",
+      "conviction": "medium",
+      "horizon": "Through FOMC July 28-29 and Mag-7 earnings July 29-30"
+    },
+    {
+      "asset": "NVDA short",
+      "direction": "short",
+      "thesis": "Kimi K3's 2.8T parameter open-weight model (expected Monday July 27) is the single largest near-term catalyst for NVDA's inference pricing moat: Moonshot AI has demonstrated ~70% inference pricing discount vs. API providers, directly challenging the ROI justification for hyperscaler inference capex. INTC's -7.89% Friday reversal despite the largest revenue beat of the quarter confirms the market will sell AI infrastructure on business-model scrutiny — a pattern repeated and now statistically significant (GOOGL -7%, TSLA -14%, INTC -8% in four consecutive earnings sessions).",
+      "entry": "Short NVDA at $204-208 (from night brief). Stop above $216. Target $190-196. Half position given NVDA's short-squeeze potential on any FOMC-dovish relief rally.",
+      "invalidation": "Kimi K3 releases below benchmark on a key inference dimension (open-weight efficiency narrative breaks); FOMC statement explicitly closes September (probability below 55%); NVDA pre-announces strong Q2 FY27 datacenter bookings ahead of August 26.",
+      "conviction": "low",
+      "horizon": "Through Kimi K3 (July 27) and FOMC (July 29); reassess after both events"
+    }
+  ],
+  "bear_case": "The oil diplomacy signal is the most important positive development in two weeks — but the path from a Pakistan-China third-party mediation signal to a formal Iran-US ceasefire runs through three actors who have shown no capacity for diplomatic restraint: Trump (who retains the threat of 'major military punishment'), Tehran (which denied involvement in the Hormuz attacks), and the Houthis (who operate semi-independently of Iranian command-and-control). The structural bear case entering the most event-dense week of 2026 has three simultaneous trigger paths: (1) FOMC July 29 statement acknowledges that tariffs on 99.4% of US imports are non-transitory and signals September hike as the base case — September probability re-prices above 80% from 74%, reversing the oil-retreat's rate-relief benefit and pushing the 30Y yield back toward 5.25%+; (2) META or MSFT guides to 2027 capex increases replicating GOOGL's FCF-negative trajectory — AI capex overhang trade erases another $400-700B in Mag-7 market cap on July 29, pushing SPX through the 7,380 BEARISH threshold (31.98 points of buffer, the thinnest since Thursday); (3) Iran diplomacy fails — Trump tweets escalation, Houthis attack another tanker — Brent re-crosses $100 and the August CPI pass-through thesis is fully reactivated within 48 hours. Any ONE of these three paths activates the BEARISH regime; all three converging simultaneously (non-negligible probability given the event density) represents a 200+ point SPX drawdown in a single session. Bear case invalidation requires simultaneously: FOMC closes September explicitly, Brent holds below $90 for two consecutive sessions post-FOMC, and META/MSFT both report AI capex ROI improvement quarter-over-quarter. That is an asymmetrically narrow exit from the bear scenario relative to the three entry triggers.",
+  "body_mdx": "data/briefings/markets/2026-07-25-morning.mdx"
+}
