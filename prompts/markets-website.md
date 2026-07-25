@@ -108,7 +108,7 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
     "dxy":    { "level": 00.00,  "change_pct": 0.00, "as_of": "ISO 8601" }
   },
   "regime_risk": [
-    { "name": "VIX", "value": 0, "trigger_above": 18, "unit": "" }
+    { "name": "30Y Yield", "value": 0.0, "trigger_above": 5.0, "unit": "%" }
   ],
   "watchlist_mentions": [
     { "ticker": "AAPL", "note": "...", "sentiment": "positive" | "neutral" | "negative" }
@@ -129,12 +129,18 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
 ```
 
 `regime_risk` feeds a LIVE dashboard panel: the website maps each indicator
-name to a live quote (VIX→^VIX, 30Y→^TYX, 10Y→^TNX, DXY, SPX, Nasdaq,
-Gold, Silver, Copper, BTC, HYG) and re-judges breach status against the
-trigger in real time. So: keep names recognizable (include the asset keyword —
-"VIX", "30Y Yield", "DXY", "SPX vs 7,460", "Gold"), and put the exact numeric
-threshold the briefing prose cites in `trigger_above` / `trigger_below` —
-update it the moment the regime framework changes.
+name to a live quote (30Y→^TYX, 10Y→^TNX, DXY, SPX, Nasdaq, Gold, Silver,
+Copper, BTC, HYG) and re-judges breach status against the trigger in real
+time. So: keep names recognizable (include the asset keyword — "30Y Yield",
+"DXY", "SPX vs 7,460", "Gold"), and put the exact numeric threshold the
+briefing prose cites in `trigger_above` / `trigger_below` — update it the
+moment the regime framework changes.
+
+**Never include a VIX row.** The VIX gate was retired on 2026-07-25: VIX
+belongs in `snapshot` as data, not in `regime_risk` as a trigger, and the
+briefing prose must not treat any VIX level as a formal regime threshold.
+The site filters VIX rows out of the regime display, so a VIX entry here is
+dead weight at best and a stale-framework signal at worst.
 
 ## Step 6 — Write the MDX briefing
 

@@ -27,6 +27,13 @@ keys exactly; verdict.headline = plain-English news-first home title, ~90 chars,
 (push is mandatory — Vercel deploys from it; rebase-and-retry on rejection).
 Never fabricate prices or URLs; say so plainly when sourcing is thin.
 
+**No VIX gate (2026-07-25).** VIX stays in `snapshot` as a data point, but it
+is NOT a regime indicator: never include a VIX row in `regime_risk`, never
+cite a VIX threshold as a formal trigger in the briefing prose, and do not
+carry the old "VIX above 17" breach forward from pre-July-25 briefings — the
+regime framework runs on the remaining indicators, and breach counts are
+denominated accordingly (what was "5 of 7" with a VIX breach becomes "4 of 6").
+
 **History (2026-07-07):** these routines previously also generated per-asset
 dossiers under `data/asset-daily/` for the single-name desk pages. Those pages
 were removed and the dossier steps were stripped from both cloud prompts — the

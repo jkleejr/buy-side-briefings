@@ -52,13 +52,11 @@ export default async function BriefingPage({
   const points = verdict?.verdict.supporting_data ?? [];
   const fullReadMin = readMinutes(briefing.body);
 
-  // The regime picture: SPX vs its floor (10 sessions up to the briefing date)
-  // and the VIX gate. Drawn from numbers the verdict already carries.
+  // The regime picture: SPX vs its floor (10 sessions up to the briefing
+  // date). Drawn from numbers the verdict already carries. The VIX gate was
+  // retired 2026-07-25 — VIX rows in older verdicts are filtered out below.
   const spxGate = verdict?.regime_risk?.find(
     (r) => /spx/i.test(r.name) && r.trigger_below != null,
-  );
-  const vixGate = verdict?.regime_risk?.find(
-    (r) => /vix/i.test(r.name) && r.trigger_above != null,
   );
   const chartSeries = spxGate
     ? spxSeries.filter((d) => d.date <= briefing.date).slice(-10)
@@ -105,7 +103,7 @@ export default async function BriefingPage({
           </Tier>
 
           {chartSeries.length >= 4 && spxGate && (
-            <RegimeFigure series={chartSeries} floor={spxGate} vix={vixGate} />
+            <RegimeFigure series={chartSeries} floor={spxGate} />
           )}
 
           {points.length > 0 && (
@@ -326,7 +324,8 @@ function RegimeChips({
   regime?: RegimeIndicator[];
   next: { token: string; day: string } | null;
 }) {
-  const rows = (regime ?? []).slice(0, 6);
+  // VIX gate retired 2026-07-25 — drop VIX rows from any verdict, old or new.
+  const rows = (regime ?? []).filter((r) => !/vix/i.test(r.name)).slice(0, 6);
   if (!rows.length && !next) return null;
   return (
     <div className="mt-5 flex flex-wrap gap-2">
@@ -531,18 +530,17 @@ function FullRead({ body }: { body: string }) {
 
 // ---------------------------------------------------------------------------
 // One picture per briefing — SPX vs its regime floor over the ten sessions
-// into the briefing, plus the VIX gate as a gauge. No new data: the floor and
-// gate are the verdict's own regime_risk numbers.
+// into the briefing. No new data: the floor is the verdict's own regime_risk
+// number. (The VIX gauge that used to share this figure was retired with the
+// VIX gate on 2026-07-25.)
 // ---------------------------------------------------------------------------
 
 function RegimeFigure({
   series,
   floor,
-  vix,
 }: {
   series: DailyClose[];
   floor: RegimeIndicator;
-  vix?: RegimeIndicator;
 }) {
   const closes = series.map((d) => d.close);
   const latest = closes[closes.length - 1];
@@ -565,16 +563,8 @@ function RegimeFigure({
   const area = `${line} L${W},${H} L0,${H} Z`;
   const floorY = y(floorLevel);
 
-  const vixVal = vix?.value;
-  const vixGate = vix?.trigger_above;
-  const vixPct =
-    vixVal != null && vixGate != null
-      ? Math.min(100, (vixVal / (vixGate * 1.15)) * 100)
-      : null;
-  const vixBreached = vixVal != null && vixGate != null && vixVal >= vixGate;
-
   return (
-    <figure className="my-0 grid gap-6 border-y border-[var(--border)] py-5 sm:grid-cols-[1.5fr_1fr] sm:items-center">
+    <figure className="my-0 border-y border-[var(--border)] py-5">
       <div>
         <svg
           viewBox={`0 0 ${W} ${H}`}
@@ -621,36 +611,6 @@ function RegimeFigure({
           · {closes.length}-session close
         </figcaption>
       </div>
-      {vixVal != null && vixGate != null && vixPct != null && (
-        <div className="text-center">
-          <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--faint)]">
-            VIX gate
-          </div>
-          <div
-            className="mt-1 font-mono text-[28px] font-semibold tabular-nums"
-            style={{ color: vixBreached ? "var(--down)" : "var(--foreground)" }}
-          >
-            {vixVal.toFixed(1)}
-          </div>
-          <div className="font-mono text-[11px] text-[var(--dim)]">
-            breaches at {vixGate.toFixed(1)}
-          </div>
-          <div className="mx-auto mt-3 h-[7px] max-w-[220px] overflow-hidden rounded-full bg-[var(--border)]">
-            <div
-              className="h-full rounded-full"
-              style={{
-                width: `${vixPct}%`,
-                background: vixBreached ? "var(--down)" : "var(--up)",
-              }}
-            />
-          </div>
-          <div className="mt-2 font-mono text-[11px] text-[var(--dim)]">
-            {vixBreached
-              ? `${(vixVal - vixGate).toFixed(1)} pts through the gate`
-              : `${(vixGate - vixVal).toFixed(1)} pts of headroom`}
-          </div>
-        </div>
-      )}
     </figure>
   );
 }

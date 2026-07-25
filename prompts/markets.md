@@ -92,7 +92,7 @@ Structure:
       {"name": "🏛️ Politics, Fed & Macro", "value": "<key macro/Fed/political moves>", "inline": false},
       {"name": "🚫 Don't Buy Right Now", "value": "<2-4 over-extended names with warning sign + better entry>", "inline": false},
       {"name": "🐻 Bearish Setups Watchlist", "value": "<1-2 shorts/hedges/inverse — entry/stop/conviction/horizon>", "inline": false},
-      {"name": "⚠️ Regime Risk Indicators", "value": "<4-6 current readings vs trigger thresholds — e.g., 'VIX 14.8 → flips bearish above 18'>", "inline": false},
+      {"name": "⚠️ Regime Risk Indicators", "value": "<4-6 current readings vs trigger thresholds — e.g., '30Y 5.11% → flips bearish above 5.00%'. No VIX gate: VIX is reported as data in the snapshot, never as a trigger>", "inline": false},
       {"name": "🧭 Positioning View", "value": "<today's tactical thesis; first sentence must state day-type call>", "inline": false},
       {"name": "🔭 Strategic Outlook (Days–Weeks Ahead)", "value": "<forward framework: theme / sector tilts / risk regime / bias>", "inline": false},
       {"name": "🎯 Trade Setups", "value": "<2-3 ideas, ≥1 short/hedge/pair, full format with entry/stop/conviction/horizon>", "inline": false},
