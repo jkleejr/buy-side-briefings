@@ -160,7 +160,7 @@ export default function AboutPage() {
               </li>
               <li>
                 <span className="text-[var(--amber)]">Regime levels</span> — the SPX floor
-                and VIX gate in play, with where the tape sat against them.
+                in play, with where the tape sat against it.
               </li>
             </ul>
           </div>
