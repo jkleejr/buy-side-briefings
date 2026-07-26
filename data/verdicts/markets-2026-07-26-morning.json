@@ -1,0 +1,152 @@
+{
+  "routine": "markets",
+  "date": "2026-07-26",
+  "window": "morning",
+  "generated_at": "2026-07-26T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "headline": "Houthi missiles hit Saudi Arabia's last oil export hub ahead of the Fed and Mag-7 earnings",
+    "label": "Step Aside — 4 of 6 breached; Yanbu-Jizan attack re-loads August CPI oil-shock setup; FOMC July 29 + Mag-7 four-name sweep is the week's clearing event",
+    "conviction": "medium",
+    "horizon": "Through FOMC July 29 and Mag-7 earnings July 29-30",
+    "rationale_short": "Sunday morning read-in: No US equity session since Friday July 24 close (SPX 7,411.98, 31.98 pts above the 7,380 formal BEARISH threshold). The weekend's defining development is the Houthi Saturday strike on Saudi Aramco's Jizan refinery (400,000 bpd, ablaze; fire confirmed by NASA satellite at 4:17am local) and Yanbu — Saudi Arabia's sole remaining crude export terminal after Hormuz closed. Two ballistic missiles targeting Yanbu were intercepted by a Patriot battery deployed in Saudi Arabia; no confirmed production disruption at Yanbu has been released by Aramco as of Sunday morning, though the attack attempt is structurally significant regardless of intercept success. Yanbu is the western terminus of the East-West Pipeline running at a record 7 million bpd since Hormuz was effectively closed; any confirmed damage would compound rather than supplement the Hormuz disruption. Brent crude rose to $100.69 in weekend trading, fully reversing Friday's 3.9% Pakistan-China peace-talk-driven relief; WTI is tracking at $92.19. The conflict has simultaneously metastasized beyond the Iran-US bilateral: the Caspian Pipeline Consortium (CPC) suspended crude loadings at its Black Sea terminal following tanker attacks, disrupting approximately 80% of Kazakhstan's seaborne oil exports. The attack pattern — Houthi strikes on Saudi oil infrastructure directly timed to a diplomatic-progress signal — demonstrates willingness to eliminate off-ramps, and the Friday period represented the first 24-hour window without US airstrikes on Iran in roughly two weeks; regional mediators have tabled a 10-day ceasefire proposal, but neither Washington nor Tehran has publicly accepted, and Iran's preconditions (Hezbollah-Lebanon ceasefire, non-negotiable ballistic missile program) remain US red lines. Regime breach count: 4 of 6 breached. WTI ($92.19 weekend, trigger_below $79) and Brent ($100.69 weekend, trigger_above $85) are deeply breached in live trading. 30Y yield (5.11% Friday close, trigger_above 5.00%) remains in breach. September hike probability has repriced from 74% pre-attack to 82% on CME FedWatch — sharpest one-week re-pricing of 2026 — and above the 70% trigger. FOMC July 29 itself carries a 35% probability of a July hike, not just September; the hold baseline (65%) is the assumption, but Warsh's press conference language with Brent above $100 as the input is the market's real focal point. SPX (7,411.98, trigger_below 7,380) and BTC Gate 2 ($64,515 live, Crypto.com 11:01 UTC Sunday) remain intact. BTC +0.73% on the Sunday session from its low reflects conflict-phase pricing already embedded — crypto has stopped reacting to individual escalations. The week ahead is the single most event-dense of 2026: Kimi K3 open weights (2.8T params, 1.4TB, Modified MIT, 6.3x faster decoding via Kimi Delta Attention) go live TONIGHT at 8pm ET (00:00 UTC July 27) — the largest open-weight model ever, outperforming Claude Opus 4.8 and GPT-5.5 on coding/agents with a 1M-token context window, requiring only 4-8x H100s minimum; this is a direct challenge to NVDA's inference pricing moat before the FOMC meeting opens Tuesday. Durable Goods Monday (est. +1.6% vs. prior -4.5%); FOMC decision Wednesday July 29 at 2:00pm ET; META Q2 AH (EPS est $7.23, Rev est $60.3B) and MSFT Q4 FY26 AH (EPS est $4.24, Rev est $87.6B, Azure AI guidance the key variable) both Wednesday evening same session as the Warsh press conference; AAPL Q2 AH, AMZN Q2 AH, and Q2 GDP advance estimate (est. +2-3% annualized vs. Q1 positive) all Thursday July 30. The GOOGL -7% capex reaction (July 23), INTC -7.89% foundry reversal (July 24), and TSLA -14.52% margin miss are the investor template — three consecutive earnings sessions have confirmed the market reprices AI infrastructure on business-model scrutiny even when top-line beats consensus. MSFT faces an additional overhang: FY27 CapEx could reach $262B (from $104B in the first three quarters of FY26), a scale that directly replicates GOOGL's FCF-negative trajectory if Azure AI monetization cannot quantitatively justify the spend. No directional long equity exposure is appropriate before FOMC and both Wednesday Mag-7 prints clear.",
+    "supporting_data": [
+      {
+        "label": "★★★ Houthi strikes Jizan Aramco refinery (400k bpd, ablaze) and Yanbu — Saudi Arabia's ONLY crude export corridor after Hormuz closed — Brent $100.69 and WTI $92.19 in weekend trading; two Yanbu ballistic missiles intercepted by Patriot; Jizan fire NASA-confirmed; CPC Black Sea loadings also suspended (80% Kazakhstan seaborne exports disrupted); first 24h without US-Iran strikes signals pause but no ceasefire framework agreed",
+        "url": "https://www.washingtonpost.com/world/2026/07/25/houthis-claim-attack-saudi-oil-refinery-iran-war-widens-red-sea/"
+      },
+      {
+        "label": "★★★ September hike probability 82% on CME FedWatch (surged from <53% one week ago); July FOMC itself: hold 65%, hike 35%; FOMC July 28-29 (Chair Warsh, no dot plot) — Warsh press conference 2:30pm ET July 29 with Brent above $100 as input baseline is the rate-language inflection; a tightening-bias reintroduction in the statement is the base-case risk",
+        "url": "https://www.cnbc.com/2026/07/23/fed-interest-rate-odds-oil-jobless-claims.html"
+      },
+      {
+        "label": "★★★ META Q2 (EPS est $7.23, Rev est $60.3B; 6 consecutive EPS beats, 87% prediction-market beat probability) + MSFT Q4 FY26 (EPS est $4.24, Rev est $87.6B; FY27 CapEx est $262B is the key risk; Azure 40% growth must justify the spend) both report Wednesday July 29 AH same session as FOMC press conference — GOOGL -7% is the investor template",
+        "url": "https://news.alphastreet.com/meta-platforms-meta-q2-2026-preview-eps-est-7-23-reports-july-29/amp/"
+      },
+      {
+        "label": "★★★ Kimi K3 open weights live TONIGHT 8pm ET (00:00 UTC July 27): 2.8T params, ~50B active per token (MoE), 1M-token context, 1.4TB download, Modified MIT license, 4-8x H100 minimum; Frontend Code Arena #1 overall at 1,679 pts (beats Claude Fable 5 at 1,631, GPT-5.6 Sol at 1,618); direct NVDA inference pricing moat challenge before FOMC opens",
+        "url": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems"
+      },
+      {
+        "label": "★★★ AAPL Q2 AH (EPS est $1.89, Rev est $108.9B) + AMZN Q2 AH (AWS est +32% growth; EPS est $1.82, Rev est $196.7B) + Q2 GDP advance (est. +2-3% ann.) all Thursday July 30; Durable Goods Monday est. +1.6% vs. prior -4.5%; S&P 500 Q2 earnings tracking +38% YoY per FactSet entering the busiest week of 2026",
+        "url": "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html"
+      },
+      {
+        "label": "★★ BTC $64,515 live (Crypto.com, 11:01 UTC July 26); 24h range $64,036-$64,599; +0.73% on Sunday session; Gate 2 ($62,000) intact with $2,515 buffer; weekend stability through Aramco attack confirms conflict-phase pricing fully embedded; primary downside path: SPX Monday gap below 7,380 with Brent above $105 triggers multi-asset risk-off cascade toward Gate 2",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7411.98,  "change_pct":  0.05, "as_of": "2026-07-24T20:00:00Z" },
+    "nasdaq": { "level": 24975.82, "change_pct": -0.64, "as_of": "2026-07-24T20:00:00Z" },
+    "vix":    { "level": 17.96,    "change_pct": -7.33, "as_of": "2026-07-24T20:00:00Z" },
+    "ust10y": { "level": 4.65,     "change_bps": -8,    "as_of": "2026-07-24T20:00:00Z" },
+    "dxy":    { "level": 101.46,   "change_pct": -0.09, "as_of": "2026-07-24T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "WTI vs $79 trigger",         "value": 92.19,   "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude",                "value": 100.69,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",                  "value": 5.11,    "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob",        "value": 82,      "trigger_above": 70,    "unit": "%"     },
+    { "name": "SPX vs 7,380 BEARISH level", "value": 7411.98, "trigger_below": 7380,  "unit": ""      },
+    { "name": "BTC Gate 2",                 "value": 64515,   "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$206.66 Friday close (-1.0%). Kimi K3 open weights go live TONIGHT at 8pm ET — the single clearest near-term binary event for NVDA's inference pricing moat. K3's 2.8T parameter MoE model with 6.3x faster decoding and a 1M-token context window hits #1 on Frontend Code Arena (1,679 pts, beating Claude Fable 5 at 1,631 and GPT-5.6 Sol at 1,618) at open-source cost structure; the 4-8x H100 minimum hardware bar means institutional on-prem inference adopters get a material capability upgrade without additional cloud spend. Five overlapping risk events in nine sessions: Kimi K3 tonight, FOMC July 29, META/MSFT July 29 AH, AAPL/AMZN July 30 AH, NVDA Q2 FY27 August 26. Three consecutive AI infrastructure earnings repricing events (GOOGL -7%, TSLA -14.52%, INTC -7.89%) confirm the pattern is statistically significant. Maintain short $204-208, stop above $216, target $190-196. Half position given short-squeeze risk on any FOMC-dovish relief rally.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "~$635 Friday close (-0.64%), -10% YTD. Reports Wednesday July 29 AH — same session as FOMC press conference at 2:30pm ET and MSFT. EPS estimate $7.23, revenue estimate $60.3B (BofA $60.6B); 6 consecutive EPS beats; prediction markets assign 87% probability of a beat. Operating margin consensus ~41%, a notable compression from the 48% peak in Q4 2024 — the first real signal AI infrastructure spend is biting profitability. GOOGL's -7% on $195-205B capex with FCF turning negative is the investor template; Meta's AI cloud third-party monetization (Bloomberg July 1) faces identical ROI scrutiny. A beat on top-line without disciplined cost guidance is unlikely to sustain a rally. Hold existing; do not add before July 29 close.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$406 Friday close (-0.06%), -19% YTD near a 1-year low. Reports Wednesday July 29 AH alongside META. EPS est $4.24 (+16% YoY), revenue est $87.6B (+15% YoY); 46 of 51 analysts rate Buy with a mean target of $544.92. Azure grew 40% last quarter vs. AWS 28% — Azure AI revenue growth must justify the spend. The critical variable: FY27 CapEx guidance is projected to reach $262B (from $104B in the first three quarters of FY26), a trajectory that directly replicates GOOGL's FCF-negative dynamic if AI monetization can't quantitatively keep pace. Analysts call current levels an 'incremental buying opportunity' if Azure guidance holds — but the GOOGL template is equally asymmetric on the downside. Hold existing; no additions ahead of July 29 close.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$332.92 Friday close (+3.5%), best session of the week — institutional rotation to quality defensives into FOMC week. Reports Thursday July 30 AH alongside AMZN. EPS est $1.89, revenue est $108.9B. Minimal direct AI infrastructure capex scrutiny exposure. China AI approval thesis intact. The Yanbu attack is an indirect long-cycle supply chain headwind, not a Q2 guide risk. Institutional quality-defensive rotation pattern typically holds through the two sessions before the FOMC decision. Hold above $315.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Brent $100.69 and WTI $92.19 in weekend trading following the Yanbu-Jizan Aramco attacks, reversing Friday's $96.78/$89.31 closes. Night brief's recommendation: add back from 12-15% to 18-20% at Monday open stands and is reinforced. Yanbu handles approximately 92% of Saudi seaborne crude exports (Kpler data) after Hormuz was effectively closed; the intercept of two ballistic missiles by Patriot is partially constructive but does not eliminate future strike attempts or the Yanbu vulnerability premium. CPC Black Sea suspension compounds the supply disruption globally. August CPI oil pass-through thesis fully re-activated. Full exit remains conditional on formal Iran-US ceasefire AND Hormuz transit confirmed above 10 vessels/day AND WTI two consecutive closes below $70. If Yanbu terminal damage is confirmed in Saudi Aramco's formal assessment, consider 25% tactical allocation.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$320-321 Friday close (+0.58%). Partial recovery from July 23's -7% capex-driven selloff. META and MSFT Wednesday AH definitively answer whether GOOGL's reaction was company-specific or a sector-wide AI capex multiple-compression template. If META operating margin compresses and MSFT guides $262B FY27 CapEx, GOOGL's FCF concerns are validated as a structural sector repricing, not a company-specific event. Oil-shock FOMC week adds rate headwinds across all long-duration growth names. Entry: $305-315 only after META/MSFT AI capex ROI confirmation July 29; stop $295.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "INTC",
+      "note": "$92.32 Friday close (-7.89%), full reversal of the entire +12% AH earnings surge. No re-entry until Q3 external foundry bookings demonstrate customer diversification beyond Apple and Microsoft. The Q2 DC+AI +59% revenue beat is a valid enterprise AI demand signal but insufficient to offset the foundry external-demand thesis invalidation. Morning brief's $105 stop was violated by $12.68. Do not re-enter before Q3 2026 earnings.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "$312.84 Friday close (-2.1%), four consecutive losing sessions since Q2 gross-margin miss. WTI at $92.19 weekend removes any marginal EV fuel-cost tailwind from Friday's oil retreat. Gross margin 16.8%, FCF negative, below every capitulation-entry target in this briefing series. Do not enter. $295-310 remains the next capitulation level on continued institutional forced-selling.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$64,515 live (Crypto.com, 11:01 UTC July 26); 24h range $64,036-$64,599; +0.73% on Sunday session. Gate 2 ($62,000) intact with $2,515 buffer. Weekend stability through the Aramco attack confirms crypto has fully priced the conflict phase and is no longer reacting to individual escalations. Primary downside path: SPX Monday gap below 7,380 with Brent above $105 triggers multi-asset risk-off cascade toward Gate 2. Hold; do not add until SPX holds 7,380 through the FOMC decision Wednesday.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "Any directional long equity ahead of FOMC + Mag-7 prints",
+      "reason": "The 31.98-point buffer above the formal BEARISH threshold (SPX 7,380) enters Monday morning with Brent at $100.69, WTI at $92.19, and September hike probability at 82%. Monday's gap-open is the first real-time test of that buffer since Friday's close. Adding directional long exposure now is pre-event positioning into the year's most concentrated binary risk window: Kimi K3 tonight, FOMC July 29, META/MSFT July 29 AH, AAPL/AMZN July 30 AH.",
+      "better_entry": "Post-FOMC July 29 decision AND both META/MSFT AH prints clearing. If FOMC explicitly closes September (probability below 55%) AND Brent retreats below $90 AND META/MSFT demonstrate improving AI capex ROI with FCF improvement quarter-over-quarter, re-entry at market is appropriate. If those conditions do not hold simultaneously, BEARISH conversion and SPX 7,250-7,300 is the next level."
+    },
+    {
+      "ticker": "NVDA above $200",
+      "reason": "Kimi K3 open weights tonight, FOMC-week oil-shock premium, and the three-consecutive-session AI infrastructure repricing pattern create no favorable entry window. K3's #1 coding benchmark performance at open-source cost structure directly challenges the inference pricing moat supporting NVDA's premium data-center multiples. Five overlapping risk events in nine sessions with no clear positive catalyst before August 26 Q2 FY27 earnings.",
+      "better_entry": "Post-NVDA Q2 FY27 (August 26) with confirmed data-center revenue growth against explicit AMD hyperscaler share commentary; or $188-193 on FOMC-week capitulation with a clear dovish Fed signal and Kimi K3 benchmark underperformance confirmation."
+    },
+    {
+      "ticker": "TSLA below $315",
+      "reason": "Four consecutive losing sessions since Q2 gross-margin miss. WTI at $92.19 removes the marginal EV fuel-cost tailwind. Gross margin 16.8%, FCF negative. The Q3 gross margin recovery above 18% is the structural re-entry condition.",
+      "better_entry": "$295-310 on FOMC-week forced-selling completion, or post-Q3 2026 earnings if gross margin recovers above 18% and FCF turns positive."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (add back from 12-15% → 18-20%)",
+      "direction": "long",
+      "thesis": "The Yanbu-Jizan Aramco attacks Saturday reverse the morning brief's 'trim to 12-15%' recommendation. Yanbu handles ~92% of Saudi seaborne crude exports (Kpler) after Hormuz was effectively closed; the Patriot intercept of two Yanbu ballistic missiles is partially constructive but does not eliminate the vulnerability premium or future strike risk. Brent at $100.69 and WTI at $92.19 in weekend trading fully re-activate the August CPI pass-through thesis. CPC Black Sea suspension adds a second global supply disruption vector. The peace-talk-driven Friday retreat was the right tactical trim; the Aramco escalation is the structural re-entry signal.",
+      "entry": "Add back from 12-15% to 18-20% at Monday open. Maintain through FOMC and Mag-7 earnings. Full exit to 8% remains conditional on formal Iran-US ceasefire AND Hormuz transit confirmed above 10 vessels/day AND WTI two consecutive closes below $70. If Yanbu export capacity confirmed production-impacted by Saudi Aramco's damage assessment, consider 25% tactical allocation.",
+      "invalidation": "Iran-US formal ceasefire agreed AND Yanbu damage confirmed as cosmetic with no export capacity reduction AND WTI two consecutive closes below $70.",
+      "conviction": "medium-high",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "September hike probability has repriced to 82% with Brent at $100.69. FOMC July 29 now enters an oil-shock context: Warsh acknowledging tariffs on 99.4% of US imports plus $100+ Brent as non-transitory is the base case for hawkish language that closes SPX's 31.98-point BEARISH buffer. 30Y yield at 5.11% (above the 5.00% trigger) with oil re-accelerating makes a move toward 5.25-5.35% the FOMC-week baseline.",
+      "entry": "Maintain IWM August puts at full original size. Maintain TLT short above $87.50. Do not reduce before FOMC statement AND both META/MSFT July 29 AH prints clear.",
+      "invalidation": "FOMC explicitly closes September (probability below 55%) AND Brent falls below $90 for two consecutive sessions AND Yanbu export terminal confirmed undamaged with no production impact. All three simultaneously required.",
+      "conviction": "medium-high",
+      "horizon": "Through FOMC July 29 and August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "NVDA short",
+      "direction": "short",
+      "thesis": "Kimi K3 open weights tonight (8pm ET) is the single clearest near-term binary event for NVDA's inference pricing moat. K3 hits #1 on Frontend Code Arena at 1,679 pts (beating Claude Fable 5 at 1,631 and GPT-5.6 Sol at 1,618) with a Modified MIT license and a 4-8x H100 minimum bar — institutional on-prem inference adopters can match top-tier API providers without additional cloud spend. Three-cycle AI infrastructure repricing pattern (GOOGL -7%, TSLA -14.52%, INTC -7.89%) is statistically significant.",
+      "entry": "Maintain short $204-208, stop above $216, target $190-196. Half position size given NVDA's short-squeeze potential on any FOMC-dovish relief.",
+      "invalidation": "Kimi K3 benchmarks underperform on a key inference efficiency dimension tonight; FOMC explicitly closes September; NVDA pre-announces strong Q2 FY27 datacenter bookings ahead of August 26.",
+      "conviction": "low",
+      "horizon": "Through Kimi K3 (tonight July 26) and FOMC (July 29); reassess after both events"
+    }
+  ],
+  "bear_case": "The Yanbu-Jizan Aramco strike Saturday is the most structurally significant escalation of the conflict cycle precisely because it targets Saudi Arabia's last functioning crude export infrastructure: Yanbu handles ~92% of Saudi seaborne crude exports (Kpler) since Hormuz was effectively closed, and two ballistic missiles targeting it were intercepted by Patriot — Patriot intercept is not a firewall against repeated or modified strike attempts, and the Jizan refinery fire (400,000 bpd) is confirmed with no intercept. Simultaneously, the CPC Black Sea suspension has disrupted ~80% of Kazakhstan's seaborne oil exports, adding a second global supply-disruption vector the market had not priced. The first 24-hour period without US airstrikes on Iran (Friday) was not a ceasefire but a tempo adjustment; regional mediators have tabled a 10-day ceasefire proposal that requires Iran to accept conditions (Hezbollah-Lebanon ceasefire precondition; non-negotiable ballistic missile program) that are US red lines. The formal BEARISH regime conversion requires SPX to close below 7,380 (31.98 points of buffer entering Monday). Monday's path runs through four simultaneous pressure vectors: Brent at $100.69 gap-up means the 30Y yield-above-5.25% move is the FOMC-week baseline, not a risk scenario; September hike probability at 82% means Warsh's July 29 statement reintroducing tightening bias closes the SPX buffer before Thursday's GDP print; Kimi K3 tonight creates an NVDA and semiconductor complex repricing catalyst that propagates through Nasdaq before the FOMC meeting opens Tuesday; and META plus MSFT report the same evening as the FOMC press conference in the GOOGL capex template — with MSFT FY27 CapEx potentially at $262B, the scale of AI infrastructure commitment that drove GOOGL's FCF-negative reaction is now a baseline expectation, not a surprise. A 'Brent holding above $105 + FOMC hawkish hold acknowledging September + META/MSFT both guide to GOOGL-template capex' combination is a direct path to SPX 7,200-7,250 by July 31. Bear case invalidation requires all four simultaneously: formal Iran-US ceasefire agreed; Yanbu damage confirmed cosmetic with no export capacity reduction; FOMC explicitly closes September (probability below 55%); META and MSFT both demonstrate improving AI capex ROI with FCF improvement quarter-over-quarter. The probability of all four clearing in the next 96 hours is near zero.",
+  "body_mdx": "data/briefings/markets/2026-07-26-morning.mdx"
+}
