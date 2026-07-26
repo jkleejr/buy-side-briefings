@@ -26,10 +26,10 @@ export default function BlackSwanPage() {
     <div className="mx-auto max-w-3xl space-y-1">
       <header className="space-y-1 px-1 pb-1">
         <Link
-          href="/"
+          href="/books"
           className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
         >
-          ◂ DASHBOARD
+          ◂ BOOKS
         </Link>
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           {meta.title}
