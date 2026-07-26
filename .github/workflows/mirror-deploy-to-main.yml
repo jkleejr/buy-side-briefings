@@ -1,0 +1,40 @@
+# Keeps `main` in step with `deploy`.
+#
+# Vercel builds production from `deploy`, so every publish — hand-made commits
+# and the nightly briefing routines alike — lands there. `main` is the branch
+# GitHub shows by default, so it should read as the project's history rather
+# than a stale snapshot. Without this, the two drift apart silently (it reached
+# 55 commits once).
+#
+# Direction is one-way: deploy -> main, never the reverse.
+
+name: Mirror deploy to main
+
+on:
+  push:
+    branches: [deploy]
+
+permissions:
+  contents: write
+
+# Two pushes landing close together (e.g. a routine plus a manual commit)
+# would otherwise race; queue them instead of cancelling, so no commit is
+# skipped.
+concurrency:
+  group: mirror-deploy-to-main
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # A plain (non-force) push: main only ever trails deploy, so this is
+      # always a fast-forward. If it ever fails, that means someone committed
+      # directly to main — surfacing that as a red X is the point, since
+      # silently forcing would throw their work away.
+      - name: Fast-forward main to the pushed commit
+        run: git push origin ${{ github.sha }}:refs/heads/main
