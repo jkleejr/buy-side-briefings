@@ -23,6 +23,7 @@ const DESTINATIONS: Destination[] = [
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
+  { href: "/black-swan", code: "SWAN", label: "Black Swan — Taleb's framework, fact-checked and applied", go: "b" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 
