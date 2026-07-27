@@ -1,0 +1,155 @@
+{
+  "routine": "markets",
+  "date": "2026-07-26",
+  "window": "night",
+  "generated_at": "2026-07-27T01:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Iran and US both pause attacks, reversing weekend oil spike ahead of FOMC week",
+    "label": "Hold — 2 of 6 indicators breached; US-Iran mutual pause collapses the Aramco oil spike; FOMC Jul 29 + META/MSFT capex verdict is the formal clearing event",
+    "conviction": "medium",
+    "rationale_short": "The weekend's most bearish scenario — Brent above $100 entering FOMC week — has reversed sharply. Iran announced it will suspend attacks so long as the US also refrains from striking, and the US has stood down for a second consecutive night; Iranian and Omani deputy foreign ministers met in Tehran through the weekend with talks described as 'constructive.' Brent crude collapsed from Saturday night's $100+ level to around $87-92 in Sunday evening futures trading (October delivery, most active contract: $87.48), the largest weekend reversal of the conflict cycle, and Nasdaq 100 futures are +1.2% with S&P 500 futures +0.7% and Dow futures up 294 points ahead of Monday's open. US equity markets did not trade Sunday — the snapshot remains frozen at Thursday's official close (SPX 7,411.98; Nasdaq 24,975.82). Regime indicator breach count falls to 2 of 6 (Brent October at $87.48 remains above $85; 30Y yield at 5.11% remains above 5.00%) from Saturday's 4 of 6; the September hike probability (~74-82% at Thursday/Friday's peak with Brent above $100) is repricing lower as oil retreats — estimated toward 65-70% — likely falling at or below the 70% regime trigger when bond markets open Monday, which would reduce the breach count to 1 of 6. BTC is $65,171 live (Crypto.com, 9pm ET Sunday), up from $64,485 Saturday night, with Gate 2 ($62,000) intact by a $3,171 buffer, confirming crypto participated in the risk-on rotation. Kimi K3 open weights were released at exactly 8pm ET Sunday (00:00 UTC July 27) — the 2.8-trillion-parameter model, the largest open-weight release in history, carries a Modified MIT license and 6.3× faster decoding; Monday morning will price its inference-efficiency impact on NVDA's moat before the FOMC meeting opens. Three critical caveats before scaling back to full equity exposure: (1) The US-Iran pause is a contingent de-escalation, not a formal ceasefire — Houthis have not stood down and the Saturday Aramco strikes on Jizan and Yanbu remain unresolved in terms of refinery production impact; any Trump escalation or failed Omani shuttle-diplomacy session can re-spike Brent within hours; (2) FOMC July 28-29 (Chair Warsh, no dot plot) is the formal clearing event — with Brent still above $85 and the structural tariff-on-99.4%-of-imports inflation floor intact, the base case remains a hawkish hold with September guidance maintaining probability near 65-70%; (3) META/MSFT both report July 29 AH into the GOOGL -7% capex template — AI infrastructure multiple compression is a live risk that has now been confirmed in three consecutive earnings cycles. Scaling from step_aside to hold is appropriate: the oil emergency has substantially reversed, Monday's gap risk has flipped from down to up, and the regime is within one indicator of a cautious-buy upgrade. Hold existing positions; add directional longs only after the FOMC statement and both META/MSFT July 29 AH prints clear cleanly.",
+    "supporting_data": [
+      {
+        "label": "★★★ Bloomberg: US and Iran pause military strikes — Iran suspends attacks contingent on US reciprocation; US refrains from striking for a second consecutive night; Iranian and Omani deputy FMs meet in Tehran, call talks 'constructive'; Brent collapses from $100+ to $87-92 in Sunday futures — largest weekend reversal of the conflict cycle",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-26/oil-tumbles-as-us-and-iran-pause-military-strikes-markets-wrap"
+      },
+      {
+        "label": "★★★ Bloomberg oil report: Brent September delivery -4.9% to $92.02; Brent October (most active) -4.6% to $87.48; Nasdaq 100 futures +1.2%, S&P 500 futures +0.7%, Dow futures +294 pts; dollar edged lower vs. major peers as haven demand unwinds ahead of FOMC week",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-26/latest-oil-market-news-and-analysis-for-july-27"
+      },
+      {
+        "label": "★★★ CNBC: WTI, Brent slide as Iran reportedly may halt attacks — WTI approximately $84-87 range in Sunday futures, off from Thursday's $89.31 close; Brent below $90 on most-active contract; oil retreat removes August CPI re-acceleration risk that dominated Saturday's read",
+        "url": "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html"
+      },
+      {
+        "label": "★★★ Kimi K3 open weights released 00:00 UTC July 27 (8pm ET Sunday) — 2.8T params, 1.4TB total weight, Modified MIT license, 6.3× faster decoding via Kimi Delta Attention; 16 of 896 experts active per token (~50B active params); natively runs on NVDA Blackwell and AMD MI400; largest open-weight model release in history; NVDA inference-pricing moat impact prices Monday at open",
+        "url": "https://www.techtimes.com/articles/321551/20260725/kimi-k3-open-weights-arrive-sunday-self-hosting-cuts-china-data-risk-api-never-can.htm"
+      },
+      {
+        "label": "★★★ FOMC July 28-29 (Chair Warsh, no dot plot); September hike probability was ~74-82% with Brent above $100 (Thursday-Saturday); oil collapse reprices toward 65-70% — potential regime improvement to 1 of 6 breached if September falls below 70% trigger Monday; META + MSFT July 29 AH + AAPL + AMZN July 30 AH = highest event-density week of 2026",
+        "url": "https://www.cnbc.com/2026/07/23/fed-interest-rate-odds-oil-jobless-claims.html"
+      },
+      {
+        "label": "★★ FX Leaders: Dow Jones futures rise above 52K as US-Iran ceasefire hopes trigger risk-on rally; S&P 500 futures +0.7%, Nasdaq 100 futures +1.2% in Sunday premarket — gap-risk for Monday flipped from down to up vs. Saturday's read",
+        "url": "https://www.fxleaders.com/news/2026/07/26/dow-jones-futures-rise-above-52k-as-us-iran-ceasefire-hopes-trigger-a-risk-on-rally/"
+      },
+      {
+        "label": "★★ CNBC live updates: Stock futures climb, oil prices fall as US and Iran pause attacks — Monday morning set for risk-on open with oil as the primary relief driver; AI capex and FOMC remain the key event risks for the session and week",
+        "url": "https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7411.98,  "change_pct":  0.05, "as_of": "2026-07-24T20:00:00Z" },
+    "nasdaq": { "level": 24975.82, "change_pct": -0.64, "as_of": "2026-07-24T20:00:00Z" },
+    "vix":    { "level": 17.96,    "change_pct": -7.33, "as_of": "2026-07-24T20:00:00Z" },
+    "ust10y": { "level": 4.65,     "change_bps": -8,    "as_of": "2026-07-24T20:00:00Z" },
+    "dxy":    { "level": 101.46,   "change_pct": -0.09, "as_of": "2026-07-24T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "WTI vs $79 trigger",         "value": 85.7,   "trigger_below": 79.00, "unit": "$/bbl" },
+    { "name": "Brent crude (Oct futures)",   "value": 87.48,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",                   "value": 5.11,   "trigger_above": 5.00,  "unit": "%"     },
+    { "name": "September Hike Prob (est.)",  "value": 68,     "trigger_above": 70,    "unit": "%"     },
+    { "name": "SPX vs 7,380 BEARISH level",  "value": 7411.98,"trigger_below": 7380,  "unit": ""      },
+    { "name": "BTC Gate 2",                  "value": 65171,  "trigger_below": 62000, "unit": "$"     }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "XLE",
+      "note": "Saturday's 'add back to 18-20%' recommendation is now REVERSED. With Brent October at $87.48 and the US-Iran mutual pause in place, Saturday's Aramco-driven re-entry thesis is substantially invalidated. Trim back from 18-20% toward 12-15% at Monday's open. The oil thesis is not dead — Brent remains above $85, the Yanbu and Jizan damage assessments are unresolved, and the US-Iran pause is contingent — but the emergency re-loading of August CPI risk that drove Saturday's add-back has reversed. Retain the 12-15% position as insurance against pause breakdown. Full exit still requires formal Iran-US ceasefire AND Hormuz transit confirmed above 10 vessels/day AND WTI two consecutive closes below $70.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$206.66 Thursday close. Kimi K3 open weights have now released (8pm ET Sunday, 2.8T params, Modified MIT license, 6.3× faster decoding). Monday open is the first real price discovery on the inference-efficiency thesis. Short $204-208 / stop $216 / target $190-196 (half position) — maintained. Five sequential risk events in nine sessions: Kimi K3 pricing (Monday), FOMC (July 28-29), META/MSFT capex (July 29 AH), AAPL/AMZN (July 30 AH), NVDA Q2 FY27 (August 26). If Monday's open holds $206+ despite Kimi K3, the inference-pricing moat narrative is proving more durable than the short thesis assumes — tighten stop toward $210.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "~$635 Thursday close. Reports July 29 AH — same session as FOMC decision and MSFT. Sunday's oil-driven relief rally should provide a constructive pre-earnings tape if it holds into Tuesday. The GOOGL -7% capex reaction remains the template; whether META's AI cloud third-party monetization narrative (Bloomberg July 1) can differentiate from GOOGL's pure-infrastructure-spend read is the pivotal question. Hold existing; no additions before July 29 close. Oil relief reduces the macro headwind but does not change the company-specific capex ROI scrutiny.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$406 Thursday close. Reports July 29 AH alongside META. Azure AI revenue growth and 2027 capex guidance are the dual risk variables. Oil relief should ease the rate-headwind component of the pre-earnings discount. Hold; no additions before July 29 close. The FOMC statement at 2pm ET July 29 lands approximately six hours before the MSFT print — hawkish language compounds capex scrutiny, dovish language releases it.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$332.92 Thursday close. Oil retreat benefits AAPL on supply-chain input cost optics and reduces the rate-headwind that pressures high-multiple defensives. Reports July 30 AH alongside AMZN. Thursday's +3.5% quality-rotation outperformance should extend into Monday given the broader oil-relief risk-on setup. Hold above $315; do not sell into Monday's gap-up.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "$312.84 Thursday close. Oil retreat from $89.31 to ~$85-87 provides marginal EV fuel-cost tailwind and removes one of the bear arguments. However, gross margin 16.8% structural miss and FCF negative are not resolved by oil price relief. Four consecutive losing sessions. Do not enter before Q3 earnings confirm gross-margin recovery above 18% and FCF turns positive. Oil-relief Monday gap-up does not change the structural thesis.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$320-321 Thursday close. Oil relief removes the rate-headwind component of the post-capex selloff discount. META and MSFT July 29 AH will determine whether GOOGL's -7% reaction was company-specific or the sector template. Entry: $305-315 after META/MSFT AI capex ROI confirmation July 29; stop $295.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$65,171 live (Crypto.com, 9pm ET Sunday July 26), up from $64,485 Saturday night (+1.07%); 24h range $64,290-$65,584. Gate 2 ($62,000) intact with $3,171 buffer. BTC's rise alongside the oil-driven risk-on rotation confirms crypto is tracking macro sentiment closely this cycle. If Monday's equity open holds gains and SPX crosses 7,450, the path toward $68,000 opens; conversely, any reversal of the Iran pause that re-spikes oil toward $95+ would trigger the multi-asset risk-off cascade toward Gate 2.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "INTC",
+      "note": "$92.32 Thursday close (-7.89%). No regime change from the Sunday oil news — the foundry external-demand thesis invalidation is company-specific. Remain sidelined until Q3 2026 earnings demonstrate multi-customer 18A external foundry diversification.",
+      "sentiment": "negative"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "XLE above 15% allocation",
+      "reason": "Saturday's emergency re-entry signal (Aramco attack, Brent above $100) has been substantially reversed. Brent October futures at $87.48 on the US-Iran mutual pause remove the acute August CPI re-acceleration thesis. Adding above 15% allocation now means buying oil exposure into a de-escalation narrative with unclear durability, not a supply-emergency re-entry.",
+      "better_entry": "Add above 15% if: (a) Iran-US pause breaks down with confirmed US or Iranian strikes resuming AND Brent crosses $95; or (b) Yanbu terminal damage is assessed as materially production-impairing by Saudi Aramco. Otherwise maintain 12-15% through FOMC week."
+    },
+    {
+      "ticker": "NVDA above $200",
+      "reason": "Kimi K3 is live. Monday morning prices the 2.8T parameter, 6.3× faster-decoding inference-efficiency story. The short thesis is now in active discovery phase — the risk/reward above $200 is unfavorable into a week with FOMC, META/MSFT capex prints, and the open-weight model having just released.",
+      "better_entry": "Post-NVDA Q2 FY27 (August 26) with confirmed data-center revenue growth and explicit AMD hyperscaler share commentary; or $188-193 on FOMC-week capitulation."
+    },
+    {
+      "ticker": "Directional long additions before FOMC clears",
+      "reason": "The regime has improved from 4 of 6 to 2 of 6 breached, but the two remaining binary events — FOMC statement (July 29, 2pm ET) and META/MSFT capex prints (July 29 AH) — have not cleared. Adding directional equity exposure before both events is pre-positioning into the year's peak binary risk window on an unresolved pause, not a formal ceasefire.",
+      "better_entry": "Post-FOMC statement (July 29, 2pm ET) AND both META/MSFT AH prints if: FOMC is not explicitly hawkish on September AND at least one of META/MSFT demonstrates AI capex ROI improving quarter-over-quarter. If those conditions hold, scaling to full equity exposure is warranted."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "XLE (trim from 18-20% back to 12-15%)",
+      "direction": "long",
+      "thesis": "Saturday's Aramco-driven add-back to 18-20% is reversed by Sunday's US-Iran mutual pause. Brent October futures at $87.48 — down from $100+ in under 48 hours — remove the emergency supply-disruption premium that justified the 18-20% allocation. Trimming to 12-15% preserves exposure to a pause breakdown while reducing the cost of holding through a further oil decline if formal ceasefire talks advance. The Yanbu and Jizan damage assessments from Saturday's Aramco strikes are still unresolved and could reverse the de-escalation narrative.",
+      "entry": "Trim from 18-20% to 12-15% at Monday open. Hold 12-15% through FOMC week. Re-add above 15% only if Iran-US pause breaks down with confirmed renewed strikes AND Brent crosses $95. Reduce to 8% on formal ceasefire AND Hormuz transit confirmed AND WTI two consecutive closes below $70.",
+      "invalidation": "Iran-US pause breaks down with confirmed resumed strikes; Yanbu terminal damage confirmed production-impairing; Brent spikes back above $97.",
+      "conviction": "medium",
+      "horizon": "Through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "IWM puts / TLT short",
+      "direction": "hedge",
+      "thesis": "Reduce size modestly given the regime improvement from 4 to 2 of 6. September hike probability is repricing toward 65-70% (estimated) as oil falls — approaching the 70% regime trigger from above. If September probability falls below 70% on Monday's bond open, the TLT short's primary thesis (oil-driven rate acceleration) weakens. However, FOMC July 29 remains live and Chair Warsh's press conference language on September is still the key inflection. 30Y at 5.11% (above 5.00%) and Brent still above $85 are non-trivial supports for maintaining the hedge at partial size through the FOMC decision.",
+      "entry": "Reduce IWM August puts from full size to 60% ahead of Monday open; retain TLT short above $87.50 but tighten stop. Reassess AFTER FOMC July 29 decision and META/MSFT July 29 AH prints.",
+      "invalidation": "FOMC explicitly closes September window (probability below 55%) AND Brent holds below $85 for two consecutive sessions AND META/MSFT demonstrate improving AI capex ROI FCF quarter-over-quarter. All three simultaneously required.",
+      "conviction": "low",
+      "horizon": "Through FOMC July 28-29"
+    },
+    {
+      "asset": "NVDA short",
+      "direction": "short",
+      "thesis": "Kimi K3 open weights are live as of 8pm ET Sunday. Monday open is the first real price discovery event for the NVDA inference-pricing moat narrative. Maintain short $204-208, stop $216, target $190-196 (half position). If NVDA holds $206+ by Monday close despite Kimi K3, the market is pricing the open-weight efficiency story as manageable — reassess conviction.",
+      "entry": "Maintain short $204-208. If Monday open gaps below $200 on Kimi K3 reaction, consider covering 50% of short and resetting after the FOMC decision (July 29) provides clearer macro backdrop.",
+      "invalidation": "Kimi K3 benchmark performance proves materially below frontier on a key efficiency dimension; FOMC is explicitly dovish and closes September; NVDA Monday close above $212.",
+      "conviction": "low",
+      "horizon": "Through FOMC (Jul 29); reassess after Kimi K3 and FOMC clear"
+    }
+  ],
+  "bear_case": "The US-Iran mutual pause is contingent and fragile: Iran's offer is explicitly conditional on US reciprocation, and neither side has signed any formal ceasefire framework. The Houthis have not stood down and the Saudi Aramco attacks on Jizan (400,000 bpd refinery, ablaze) and Yanbu (East-West Pipeline terminus) from Saturday remain unresolved in terms of confirmed production impact — if Saudi Aramco's damage assessment confirms meaningful export capacity reduction at Yanbu, Brent can re-spike to $95-100 within a single session regardless of US-Iran bilateral signals. Monday's FOMC opening (July 28) and Tuesday's decision (July 29) land into a geopolitical situation that can reverse in hours, not days. On the fundamental side: Brent at $87.48 (most active October contract) is still $2.48 above the $85 regime trigger — the structural inflation pass-through from elevated oil prices is not eliminated by one weekend's de-escalation, and Chair Warsh has made clear that tariff-on-99.4%-of-imports is the baseline supply-shock that drives the September rate probability; oil reversing from $100 to $87 eases but does not eliminate that logic. Three specific bear triggers: (1) Iran-US pause breaks on any single escalatory incident — Trump retaliatory strike or Houthi direct hit on US naval asset — which re-activates the 4-of-6 breach count and Brent above $100 simultaneously with FOMC in active session; (2) Kimi K3's inference-efficiency benchmarks Monday prompt a market reassessment of NVDA's moat that spreads to a broader AI infrastructure sell-off, pressuring SPX toward the 7,380 BEARISH threshold before Tuesday's close; (3) FOMC July 29 statement explicitly acknowledges that the oil pause is 'not durable' as the Fed's inflation baseline, keeping September probability above 70% and preventing the regime from reaching 1 of 6. All three scenarios are individually plausible and any one of them alone is sufficient to revert to step_aside before week's end.",
+  "body_mdx": "data/briefings/markets/2026-07-26-night.mdx"
+}
