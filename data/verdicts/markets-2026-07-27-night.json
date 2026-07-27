@@ -1,0 +1,85 @@
+{
+  "routine": "markets",
+  "date": "2026-07-27",
+  "window": "night",
+  "generated_at": "2026-07-28T01:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Iran gap fully erased as NVDA circular AI financing fears revive bubble concern",
+    "label": "Gap-fill Monday: tech rotates down, Dow defends on oil; upgrade clock stays at zero",
+    "rationale_short": "The 1%+ pre-market gap on the US-Iran pause was entirely retraced by close, with SPX ending essentially flat at 7,413 — 67 points below the 7,480 upgrade threshold that briefly appeared within reach at the open. A WSJ/Bloomberg report revealing Nvidia in talks to backstop $250B in OpenAI data center financing revived circular AI financing concerns that, combined with Kimi K3's open-weight inference challenge and CXMT's $487B Shanghai IPO debut, sent NVDA -5% and AMD -5%, dragging Nasdaq into the red. AAPL overtook NVDA as the largest US company by market cap, confirming a rotation toward visible AI monetization over AI infrastructure capital spend. The FOMC Wednesday decision plus Mag-7 earnings remain the week's clearing event; no directional add is warranted before those catalysts resolve."
+  },
+  "snapshot": {
+    "sp500":  { "level": 7413.18, "change_pct":  0.02, "as_of": "2026-07-27T21:00:00Z" },
+    "nasdaq": { "level": 24932.08, "change_pct": -0.18, "as_of": "2026-07-27T21:00:00Z" },
+    "vix":    { "level": 16.85,   "change_pct": -6.18, "as_of": "2026-07-27T21:00:00Z" },
+    "ust10y": { "level": 4.65,    "change_bps":  0,    "as_of": "2026-07-27T21:00:00Z" },
+    "dxy":    { "level": 101.30,  "change_pct": -0.16, "as_of": "2026-07-27T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.10, "trigger_above": 5.0,  "unit": "%" },
+    { "name": "Brent",               "value": 90.28,"trigger_above": 85.0, "unit": "$/bbl" },
+    { "name": "WTI",                 "value": 82.62,"trigger_above": 79.0, "unit": "$/bbl" },
+    { "name": "September Hike Prob", "value": 78,   "trigger_above": 70,   "unit": "%" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Dropped ~5% to ~$196 on WSJ/Bloomberg circular AI financing report (NVDA in talks to backstop $250B in OpenAI data center lease payments). Combined with Kimi K3 inference moat challenge: two compounding short arguments confirmed in price action. Hard stop above $216 maintained.", "sentiment": "negative" },
+    { "ticker": "AMD",  "note": "~$512 (-5.2%) in NVDA sympathy; hyperscaler AI capex ROI narrative hit by circular financing doubts. Do not add before FOMC July 29 + MSFT Azure guidance.", "sentiment": "negative" },
+    { "ticker": "AAPL", "note": "$336.50 (+1.1%); overtook NVDA as largest US company by market cap. Oil retreat + DXY pullback constructive for China supply chain. Q2 reports July 30 AH. Hold above $315.", "sentiment": "positive" },
+    { "ticker": "GOOGL","note": "~$326-328 (+1-2%); communication services sector gained. META and MSFT July 29 AH will confirm whether GOOGL's -7% was company-specific. Entry $305-315 post-clarity. Stop $295.", "sentiment": "positive" },
+    { "ticker": "META", "note": "Communication sector gainer; approximately flat-to-positive on the day. Reports July 29 AH (EPS est $7.23, Rev est $60.3B). AI ad ROI vs $40B+ AI spend is the swing variable. Hold; no add pre-print.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Approximate range $390-395 (AI capex overhang); reports July 29 AH alongside META. Azure AI growth vs. FY27 CapEx est $262B is the binary — circular financing context now compounds MSFT's capex scrutiny. Hold; no add pre-print.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "~$310 (continuing post-earnings weakness). Gross margin structural miss unchanged. No entry. Next support $295-310.", "sentiment": "negative" },
+    { "ticker": "PLTR", "note": "$131.53 (+3.7%); DoD AI spending secular; insulated from AI circular financing concerns. Reports August 3 AH — options pricing a 15% earnings swing. Hold.", "sentiment": "positive" },
+    { "ticker": "TSM",  "note": "$403.41; CXMT IPO signals China memory competition intensifying, but TSMC's leading-edge node moat (2nm for AAPL/AMD/NVDA) is differentiated. Hold above $390.", "sentiment": "neutral" },
+    { "ticker": "AVGO", "note": "$391.98; custom silicon thesis intact; revenue from design wins not NVDA-style guarantee structures. Circular financing concern less relevant. Hold above $380.", "sentiment": "neutral" }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $196",
+      "reason": "Circular financing concern (NVDA backstopping $250B OpenAI financing so OpenAI can buy NVDA chips) + Kimi K3 inference moat challenge + CXMT Chinese chip competition = three concurrent short arguments confirmed by today's -5% session. The WSJ-level reporting on circular financing elevates this from analyst concern to public market event risk.",
+      "better_entry": "Post-NVDA Q2 FY27 (August 26) with confirmed data-center revenue growth and explicit circular financing disclosure on the call; or $188-193 on capitulation with VIX closing below 15 for two consecutive sessions."
+    },
+    {
+      "ticker": "AMD above $512",
+      "reason": "NVDA circular financing concerns are repricing the entire hyperscaler AI capex ROI thesis. AMD needs MSFT Azure guidance (July 29) and FOMC to clear before the thesis can be re-entered. Two compounding catalysts (circular financing + Kimi K3 inference efficiency) have not been resolved.",
+      "better_entry": "Entry conditional on MSFT Azure guidance above 42% growth AND FOMC explicitly dovish on September AND AMD holds $490 support. Stop $475."
+    },
+    {
+      "ticker": "Memory names (WDC/MU) post-CXMT",
+      "reason": "CXMT's $487B market cap debut (+466% on first day in Shanghai) signals China entering DRAM and NAND at government-backed scale. Sandisk -11% today is the market's initial assessment. Supply pressure from a well-capitalized state-backed entrant is a multi-quarter earnings headwind for US memory names.",
+      "better_entry": "Post-Q3 assessment of CXMT actual production ramp vs. capacity announcements; or after WDC/MU demonstrate pricing power resilience in their next quarterly results."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "FOMC rates binary — TBT long / TLT short pair",
+      "direction": "pair",
+      "thesis": "Wednesday's FOMC statement (2pm ET, Warsh press conference 2:30pm) is the year's highest-information event: Brent at $90, September hike at ~78%, Durable Goods missing badly (0.3% vs. 2.5% expected), and today's gap-fade sending a bearish signal. If Warsh explicitly closes September (probability below 55%), TLT rallies and TBT short profits. If he acknowledges September as live with $90 Brent and tariffs still embedding, the 30Y breaks 5.20% and TBT long profits. Both outcomes are clear; the entry is 24 hours before the decision.",
+      "entry": "Build small TBT long and TLT/IWM puts pair at equal weights into Tuesday July 28 close. Let FOMC decide which side converts to a directional position. Close the losing leg within 30 minutes of the Wednesday 2pm statement.",
+      "invalidation": "FOMC statement is fully ambiguous — neither explicitly acknowledges nor explicitly closes September — leaving 10Y unchanged at 4.65% ±3bps; pair trade produces no directional signal and should be flattened.",
+      "conviction": "medium",
+      "horizon": "Through FOMC July 29; convert survivor leg to 2-3 week hold through August CPI (est. Aug 13)"
+    },
+    {
+      "asset": "NVDA",
+      "direction": "short",
+      "thesis": "Today's session added a material new driver to the existing short thesis: WSJ/Bloomberg confirmed Nvidia is in talks to backstop $250B in OpenAI data center financing — the definition of circular AI financing, where NVDA effectively lends OpenAI the money to buy NVDA chips. This is not an analyst hypothesis; it is WSJ-reported active deal negotiation. Combined with Kimi K3 open-weight inference efficiency and CXMT Chinese memory competition, the bearish stack has three confirmed, independent drivers entering the August 26 Q2 FY27 earnings date.",
+      "entry": "Maintain short at $195-200 with stop above $216 (prior week high). Target $185-192 on FOMC hawkish hold plus MSFT/META capex disappointment. Half-position only — FOMC dovish surprise remains the one significant squeeze risk.",
+      "invalidation": "FOMC explicitly dovish (September probability below 55%) AND MSFT Azure guidance confirms AI capex ROI trajectory with credible FCF improvement. If both land Wednesday AH, cover immediately and reassess.",
+      "conviction": "medium",
+      "horizon": "Through FOMC July 29 and MSFT earnings July 29 AH; full reassessment at NVDA Q2 FY27 (August 26)"
+    },
+    {
+      "asset": "AAPL",
+      "direction": "long",
+      "thesis": "AAPL overtook NVDA as the largest US company by market cap today — institutional rotation from AI infrastructure capital spend to visible AI monetization is confirmed in price, not just in analyst preference. The thesis: DXY pullback on international revenue, oil retreat on supply chain cost relief, China iPhone AI integration, services gross margin expansion. Q2 reports July 30 AH. If China iPhone beats AND services margin holds above 73% AND Q3 guidance is above $107B, AAPL enters a breakout above $340 with material institutional reallocation from chip names.",
+      "entry": "Existing holders: maintain above $315 stop. Fresh entry: $330-336 with stop $318. Scale up post-Q2 AH July 30 if thesis confirms. Target $355-375 by Q3 earnings.",
+      "invalidation": "Q2 July 30 AH shows China iPhone units below consensus OR services gross margin compresses below 72% OR Q3 revenue guidance below $105B. If any single condition fails, reduce to half-size.",
+      "conviction": "medium",
+      "horizon": "Entry now; primary resolution event July 30 AH; 1-2 quarter hold if thesis confirms"
+    }
+  ],
+  "bear_case": "The gap-fade is more information than the closing print suggests: SPX opened at 7,487 — 7 points above the formal upgrade threshold — and closed at 7,413, a 74-point intraday reversal, even as the Iran pause remained intact through the full session. If the best possible geopolitical catalyst (a mutual US-Iran strike halt) cannot hold a single session's gap, the market is telling the analyst that four simultaneous regime breaches (30Y, Brent, WTI, September hike probability) are not relieved by a verbal de-escalation alone. The NVDA circular financing story is structurally more bearish than Kimi K3: if NVDA is backstopping $250B in OpenAI financing so OpenAI can lease the data center to run the models that generate the demand signal that justifies NVDA's next order, then AI infrastructure demand is not organically measurable from the outside, which is what the bears have been arguing since January 2026. CXMT's $487B debut adds a supply-side competitor the consensus had not priced for the memory sector. If Wednesday's FOMC acknowledges September as live (Brent at $90 and tariffs still embedding) and either META or MSFT prints AI capex without visible ROI acceleration, SPX tests the 7,380 BEARISH conversion level for the first time since last week. Bear case composite path: FOMC hawkish hold → 30Y breaks 5.20% → MSFT/META capex disappointment → NVDA extends lower toward $185-190 → SPX closes below 7,380 (formal BEARISH conversion) → Q2 GDP Thursday below +2% → target SPX 7,200-7,250. Bear case invalidation: formal Iran-US ceasefire (written, not verbal) AND FOMC explicitly closes September AND both META/MSFT demonstrate improving AI capex ROI QoQ. If SPX reclaims 7,480 on two consecutive closes, the call is wrong.",
+  "body_mdx": "data/briefings/markets/2026-07-27-night.mdx"
+}
