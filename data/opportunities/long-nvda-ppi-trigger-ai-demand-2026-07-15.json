@@ -48,7 +48,13 @@
   ],
   "created_at": "2026-07-15",
   "expires_at": "2026-08-12",
-  "status": "active",
+  "status": "stopped_out",
   "tags": ["NVDA", "AI", "PPI-trigger", "conditional", "macro", "rate-relief", "semis"],
-  "outcome": null
+  "outcome": {
+    "closed_at": "2026-07-27",
+    "final_price": 196.51,
+    "return_pct": -7.3,
+    "outcome_label": "Stop hit at $198 — NVDA closed $196.51 on July 27",
+    "note": "NVDA fell ~5% on July 27 to $196.51 on WSJ/Bloomberg confirmation of circular financing deal — $250B OpenAI data center backstop + $350B chip purchase financing in negotiation. The $198 daily-close stop was triggered. Compounded on July 28 by China beginning mass production of DUV lithography machines (ASML −8.4% Amsterdam) and KOSPI −10.8%. Three concurrent independent short arguments confirmed; position closed at stop. Full re-assessment required after NVDA Q2 FY27 earnings Aug 26."
+  }
 }

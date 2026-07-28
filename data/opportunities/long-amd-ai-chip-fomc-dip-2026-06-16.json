@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-06-16",
   "expires_at": "2026-08-22",
-  "status": "active",
+  "status": "stopped_out",
   "tags": [
     "semiconductor",
     "AI",
@@ -53,7 +53,13 @@
     "MI300",
     "FOMC-dip"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-28",
+    "final_price": 494.95,
+    "return_pct": -10.9,
+    "outcome_label": "Stop hit at $495 — AMD closed $494.95 on July 28",
+    "note": "AMD fell -5.17% on July 28 to $494.95, breaching the $495 daily-close stop. The NVDA circular financing narrative ($250B OpenAI backstop, confirmed WSJ/Bloomberg July 27) repriced hyperscaler AI capex ROI sector-wide. The July 28 Asia chip rout (KOSPI -10.8%, SK Hynix -14.7%, ASML -8.4% on China DUV mass production) cascaded into US semis. The AI GPU supercycle thesis is structurally challenged by circular financing opacity; AMD MI400 roadmap (August Hot Chips) remains a potential re-entry catalyst if circular financing narrative resolves."
+  },
   "levels": {
     "entry_low": 525.0,
     "entry_high": 550.0,
