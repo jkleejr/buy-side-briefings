@@ -5,9 +5,38 @@
   "generated_at": "2026-07-28T01:00:00Z",
   "is_seed": false,
   "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
     "headline": "Iran gap fully erased as NVDA circular AI financing fears revive bubble concern",
-    "label": "Gap-fill Monday: tech rotates down, Dow defends on oil; upgrade clock stays at zero",
-    "rationale_short": "The 1%+ pre-market gap on the US-Iran pause was entirely retraced by close, with SPX ending essentially flat at 7,413 — 67 points below the 7,480 upgrade threshold that briefly appeared within reach at the open. A WSJ/Bloomberg report revealing Nvidia in talks to backstop $250B in OpenAI data center financing revived circular AI financing concerns that, combined with Kimi K3's open-weight inference challenge and CXMT's $487B Shanghai IPO debut, sent NVDA -5% and AMD -5%, dragging Nasdaq into the red. AAPL overtook NVDA as the largest US company by market cap, confirming a rotation toward visible AI monetization over AI infrastructure capital spend. The FOMC Wednesday decision plus Mag-7 earnings remain the week's clearing event; no directional add is warranted before those catalysts resolve."
+    "label": "Hold — 4 of 6 indicators breached; gap-fill Monday confirms regime ceiling at 7,480; FOMC Jul 29 + META/MSFT capex is the clearing event",
+    "conviction": "medium",
+    "rationale_short": "The 1%+ pre-market gap on the US-Iran pause was entirely retraced by close, with SPX ending essentially flat at 7,413 — 67 points below the 7,480 upgrade threshold that briefly appeared within reach at the open. A WSJ/Bloomberg report revealing Nvidia in talks to backstop $250B in OpenAI data center financing revived circular AI financing concerns that, combined with Kimi K3's open-weight inference challenge and CXMT's $487B Shanghai IPO debut, sent NVDA -5% and AMD -5%, dragging Nasdaq into the red. AAPL overtook NVDA as the largest US company by market cap, confirming a rotation toward visible AI monetization over AI infrastructure capital spend. The FOMC Wednesday decision plus Mag-7 earnings remain the week's clearing event; no directional add is warranted before those catalysts resolve.",
+    "supporting_data": [
+      {
+        "label": "★★★ Washington Post: Dow rises on oil retreat, Sandisk -11% on memory weakness; S&P 500 +0.02% to 7,413, Nasdaq -0.18% to 24,932 — gap-fill Monday as Iran pause fails to hold opening gains through the full session",
+        "url": "https://www.washingtonpost.com/business/2026/07/27/wall-street-stocks-dow-nasdaq/504db546-89f8-11f1-8912-d71e69d679d7_story.html"
+      },
+      {
+        "label": "★★★ Bloomberg: Nvidia's $750B in deals reignite circular AI financing fears — NVDA in talks to backstop $250B OpenAI data center financing (NVDA lends OpenAI the money to buy NVDA chips); NVDA -5%, AMD -5%; Jim Chanos: 'Nvidia is effectively financing its own chip sales'",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-27/nvidia-s-750-billion-deals-revive-fear-of-ai-circular-financing"
+      },
+      {
+        "label": "★★★ Bloomberg: Nvidia in talks to back OpenAI lease of $500B data center — original WSJ/Bloomberg report on the $250B guarantee structure; 10-gigawatt Ohio facility; Nvidia separately negotiating $350B in OpenAI direct chip financing",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-26/nvidia-in-talks-on-250-billion-backing-for-openai-hub-wsj-says"
+      },
+      {
+        "label": "★★★ CNBC: CXMT China market debut — chipmaker surges 466% in Shanghai to ~$488B market cap, largest China A-share IPO since AgBank 2010; Sandisk -11% as US memory names price new well-capitalized state-backed DRAM/NAND competitor",
+        "url": "https://www.cnbc.com/2026/07/27/cxmt-china-market-debut-chipmaker-ipo.html"
+      },
+      {
+        "label": "★★ Axios: Nvidia reignites circular AI concerns as it weighs OpenAI financing guarantee — contextual analysis of the systemic risk if AI demand signals are not independently measurable from NVDA's own balance-sheet support",
+        "url": "https://www.axios.com/2026/07/27/nvidia-openai-financing-ai-jensen-huang-ssi"
+      },
+      {
+        "label": "★★ Yahoo Finance live: Stock market today July 27 — Dow, S&P 500, Nasdaq intraday recap; Durable Goods Orders 0.3% vs 2.5% expected miss; AAPL overtakes NVDA as largest US company by market cap during session",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-july-27-dow-sp-500-nasdaq-080412540.html"
+      }
+    ]
   },
   "snapshot": {
     "sp500":  { "level": 7413.18, "change_pct":  0.02, "as_of": "2026-07-27T21:00:00Z" },
@@ -38,7 +67,7 @@
     {
       "ticker": "NVDA above $196",
       "reason": "Circular financing concern (NVDA backstopping $250B OpenAI financing so OpenAI can buy NVDA chips) + Kimi K3 inference moat challenge + CXMT Chinese chip competition = three concurrent short arguments confirmed by today's -5% session. The WSJ-level reporting on circular financing elevates this from analyst concern to public market event risk.",
-      "better_entry": "Post-NVDA Q2 FY27 (August 26) with confirmed data-center revenue growth and explicit circular financing disclosure on the call; or $188-193 on capitulation with VIX closing below 15 for two consecutive sessions."
+      "better_entry": "Post-NVDA Q2 FY27 (August 26) with confirmed data-center revenue growth and explicit circular financing disclosure on the call; or $188-193 on capitulation following FOMC explicitly dovish on September AND MSFT Azure guidance confirming AI capex ROI trajectory."
     },
     {
       "ticker": "AMD above $512",
