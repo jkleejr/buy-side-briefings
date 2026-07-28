@@ -56,9 +56,15 @@ const PAD_B = 20;
  */
 const PAD_R_BARE = 40;
 
-/** Full study view vs. the homepage's small multiples. */
+/**
+ * Full study view vs. the homepage's small multiples.
+ *
+ * `gap` is the minimum vertical distance between two level labels, and it has
+ * to clear the whole two-line block or adjacent labels touch: the full view's
+ * plate is 27 units tall, so 26 was a unit short of its own label height.
+ */
 const SIZES = {
-  full: { H: 460, padR: 132, gap: 26, labelSize: 10.5, subSize: 9 },
+  full: { H: 460, padR: 132, gap: 31, labelSize: 10.5, subSize: 9 },
   compact: { H: 190, padR: 104, gap: 22, labelSize: 9, subSize: 7.5 },
 } as const;
 
@@ -1042,14 +1048,16 @@ export default function LevelsChart({
                   />
                 </clipPath>
               </defs>
-              {levelsOn && zones.map((z, i) => {
-                const ym = scale.y(z.mid);
-                return (
-                  <g key={`${z.mid}-${i}`}>
-                    {/* Just the rule you read the level off, thickening with the
-                        number of tests. The band that used to fill the zone's
-                        width is gone — the line alone marks where price turned. */}
+              {/* Just the rule you read the level off, thickening with the
+                  number of tests. The band that used to fill the zone's width is
+                  gone — the line alone marks where price turned. The rules
+                  belong UNDER the price; their labels are drawn after it. */}
+              {levelsOn &&
+                zones.map((z, i) => {
+                  const ym = scale.y(z.mid);
+                  return (
                     <line
+                      key={`zr-${z.mid}-${i}`}
                       x1={PAD_L}
                       x2={W - PAD_R}
                       y1={ym}
@@ -1058,48 +1066,8 @@ export default function LevelsChart({
                       strokeWidth={zoneWeight(z.touches)}
                       opacity={0.9}
                     />
-                    {/* Leader from the rule to its nudged label — outward into
-                        the gutter (compact) or inward over the plot (full). */}
-                    <line
-                      x1={W - PAD_R}
-                      x2={W - PAD_R + (compact ? 5 : -5)}
-                      y1={scale.y(z.mid)}
-                      y2={labelYs[i]}
-                      stroke={zoneColor(z)}
-                      strokeWidth={0.8}
-                      opacity={0.55}
-                    />
-                    <text
-                      x={W - PAD_R + (compact ? 9 : -9)}
-                      y={labelYs[i] + 3}
-                      textAnchor={compact ? "start" : "end"}
-                      fill="var(--foreground)"
-                      fontFamily="var(--mono)"
-                      fontSize={labelSize}
-                      fontWeight={600}
-                      stroke={compact ? undefined : "var(--background)"}
-                      strokeWidth={compact ? undefined : 3}
-                      paintOrder={compact ? undefined : "stroke"}
-                    >
-                      {fmtLevel(z.lo)}–{fmtLevel(z.hi)}
-                    </text>
-                    <text
-                      x={W - PAD_R + (compact ? 9 : -9)}
-                      y={labelYs[i] + (compact ? 12 : 14)}
-                      textAnchor={compact ? "start" : "end"}
-                      fill={zoneColor(z)}
-                      fontFamily="var(--mono)"
-                      fontSize={subSize}
-                      stroke={compact ? undefined : "var(--background)"}
-                      strokeWidth={compact ? undefined : 2.5}
-                      paintOrder={compact ? undefined : "stroke"}
-                    >
-                      tested {z.touches}× · {z.distPct > 0 ? "+" : ""}
-                      {z.distPct}%
-                    </text>
-                  </g>
-                );
-              })}
+                  );
+                })}
 
               {/* Fibonacci grid, drawn under the price so the candles stay the
                   subject. Geometry off one swing — quieter than S/R, which are
@@ -1327,6 +1295,76 @@ export default function LevelsChart({
                   stroke="var(--panel)"
                   strokeWidth={2}
                 />
+              )}
+
+              {/* Level labels, drawn after the price rather than beside their
+                  rules underneath it — sharing that group meant the last few
+                  bars painted straight through the text, which on a chart whose
+                  price sits at the right edge is exactly where the labels are.
+                  The full view has no gutter (the plot runs to the frame so
+                  toggling S/R never reflows it), so each label gets an opaque
+                  plate to sit on; the compact view has a real gutter and needs
+                  none. */}
+              {levelsOn && zones.length > 0 && (
+                <g pointerEvents="none">
+                  {zones.map((z, i) => {
+                    const y = labelYs[i];
+                    const price = `${fmtLevel(z.lo)}–${fmtLevel(z.hi)}`;
+                    const sub = `tested ${z.touches}× · ${z.distPct > 0 ? "+" : ""}${z.distPct}%`;
+                    // Mono advance width is a reliable ~0.62em, so the plate can
+                    // be sized from the character count without measuring.
+                    const textW = Math.max(price.length * labelSize, sub.length * subSize) * 0.62;
+                    return (
+                      <g key={`zl-${z.mid}-${i}`}>
+                        {/* Leader from the rule to its nudged label — outward
+                            into the gutter (compact) or inward over the plot. */}
+                        <line
+                          x1={W - PAD_R}
+                          x2={W - PAD_R + (compact ? 5 : -5)}
+                          y1={scale.y(z.mid)}
+                          y2={y}
+                          stroke={zoneColor(z)}
+                          strokeWidth={0.8}
+                          opacity={0.55}
+                        />
+                        {!compact && (
+                          <rect
+                            x={W - PAD_R - 15 - textW}
+                            y={y - 8}
+                            width={textW + 12}
+                            height={27}
+                            fill="var(--panel)"
+                            opacity={0.94}
+                            stroke={zoneColor(z)}
+                            strokeWidth={0.6}
+                            strokeOpacity={0.4}
+                          />
+                        )}
+                        <text
+                          x={W - PAD_R + (compact ? 9 : -9)}
+                          y={y + 3}
+                          textAnchor={compact ? "start" : "end"}
+                          fill="var(--foreground)"
+                          fontFamily="var(--mono)"
+                          fontSize={labelSize}
+                          fontWeight={600}
+                        >
+                          {price}
+                        </text>
+                        <text
+                          x={W - PAD_R + (compact ? 9 : -9)}
+                          y={y + (compact ? 12 : 14)}
+                          textAnchor={compact ? "start" : "end"}
+                          fill={zoneColor(z)}
+                          fontFamily="var(--mono)"
+                          fontSize={subSize}
+                        >
+                          {sub}
+                        </text>
+                      </g>
+                    );
+                  })}
+                </g>
               )}
 
               {/* Fib labels last, so they read over the candles rather than
