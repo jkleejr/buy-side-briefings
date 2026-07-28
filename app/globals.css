@@ -35,6 +35,12 @@
   --warn: #b06a1e;            /* seed / stale amber */
   --ceiling: #2f4f9e;         /* chart: resistance / overhead — the lapis pole */
   --floor: #8d3b34;           /* chart: support / underfoot — the oxblood pole */
+  /* Fibonacci grid: a bronze family of its own, deliberately outside both the
+     direction (green/red) and the level (lapis/oxblood) poles, so a fib line is
+     never mistaken for a tested level. Gold for the 61.8% — it is the golden
+     ratio, and it earns the emphasis. */
+  --fib: #857149;
+  --fib-strong: #9d7615;
   --serif: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
     "Times New Roman", serif;
   --mono: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, Consolas,
@@ -64,6 +70,8 @@
     --warn: #d89a4a;
     --ceiling: #93a9e2;
     --floor: #d68d80;
+    --fib: #b0a06e;
+    --fib-strong: #d3bb5a;
   }
 }
 
@@ -89,6 +97,8 @@
   --warn: #b06a1e;
   --ceiling: #2f4f9e;
   --floor: #8d3b34;
+  --fib: #857149;
+  --fib-strong: #9d7615;
 }
 :root[data-theme="dark"] {
   --background: #16150f;
@@ -110,6 +120,8 @@
   --warn: #d89a4a;
   --ceiling: #93a9e2;
   --floor: #d68d80;
+  --fib: #b0a06e;
+  --fib-strong: #d3bb5a;
 }
 
 @theme inline {

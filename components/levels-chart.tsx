@@ -16,6 +16,12 @@ import {
   sanitizeBars,
   type LevelZone,
 } from "@/lib/levels";
+import {
+  deriveFibonacci,
+  nearestFibLevel,
+  type FibAnalysis,
+  type FibLevel,
+} from "@/lib/fibonacci";
 import RangeSelector from "./range-selector";
 import {
   appendPoint,
@@ -199,6 +205,31 @@ const zoneWeight = (touches: number) => Math.min(2.6, 1 + touches * 0.16);
 const zoneColor = (z: LevelZone) =>
   z.kind === "resistance" ? "var(--ceiling)" : "var(--floor)";
 
+// The fib grid is deliberately quieter than S/R: those are levels the market
+// actually turned at, these are geometry drawn off one swing. The three the user
+// trades — 38.2 / 50 / 61.8 — carry full weight, the 0/100 anchors and the 23.6
+// are hairlines, and 61.8 alone gets the gold because it is the golden ratio.
+const fibColor = (l: FibLevel) =>
+  l.ratio === 0.618 ? "var(--fib-strong)" : "var(--fib)";
+const fibWeight = (l: FibLevel) => (l.ratio === 0.618 ? 1.5 : l.major ? 1.1 : 0.7);
+const fibOpacity = (l: FibLevel) => (l.major ? 0.95 : 0.55);
+/** Anchors and extensions are dashed; the retracements traders watch are solid. */
+const fibDash = (l: FibLevel) =>
+  l.kind === "extension" ? "5 4" : l.major ? undefined : "2 4";
+
+/** One line naming the swing the grid hangs off and how far price has come back. */
+function describeFib(fib: FibAnalysis): string {
+  const leg = fib.direction === "up" ? "low→high" : "high→low";
+  const back =
+    fib.retraced == null || fib.retraced <= 0
+      ? "no pullback yet"
+      : `${(fib.retraced * 100).toFixed(1)}% retraced`;
+  const target = fib.extensions.find((l) => l.ratio === 1.618);
+  return `fib anchored to the ${leg} swing · ${back}${
+    target ? ` · 161.8% target ${fmtLevel(target.price)}` : ""
+  }`;
+}
+
 type Props = {
   symbols: string[];
   initialSymbol?: string;
@@ -239,6 +270,7 @@ export default function LevelsChart({
   const [showLevels, setShowLevels] = useState(defaultLevels);
   const [showRSI, setShowRSI] = useState(false);
   const [showEMA, setShowEMA] = useState(false);
+  const [showFib, setShowFib] = useState(false);
   // Candles carry direction bar by bar; the line carries shape. On a long
   // window the bodies get thin enough that the shape is what you're reading
   // anyway, so let it be read directly.
@@ -310,6 +342,12 @@ export default function LevelsChart({
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
 
+  // Anchored to the dominant swing in the VISIBLE window, so the grid re-derives
+  // on every range and symbol change rather than being a drawing that goes stale
+  // the moment price makes a new high.
+  const fib = useMemo(() => (bars ? deriveFibonacci(bars) : null), [bars]);
+  const fibOn = showFib && !compact && !!fib;
+
   // VIX is a calculated index: every bar reports volume 0. Intraday equity bars
   // are also zero outside regular hours, which is real rather than broken — so
   // require a majority of bars to have traded before showing the pane.
@@ -354,8 +392,25 @@ export default function LevelsChart({
     // sanitizeBars already clamped the bad prints, so the true extremes of the
     // corrected series are trustworthy — no percentile trimming needed, and the
     // axis now matches exactly what gets drawn.
-    const lo = Math.min(analysis.low, analysis.price, ...zones.map((z) => z.lo));
-    const hi = Math.max(analysis.high, analysis.price, ...zones.map((z) => z.hi));
+    let lo = Math.min(analysis.low, analysis.price, ...zones.map((z) => z.lo));
+    let hi = Math.max(analysis.high, analysis.price, ...zones.map((z) => z.hi));
+
+    // Retracements always land inside the swing, so they need no room. Extension
+    // targets project BEYOND it by definition — leave the domain alone and every
+    // one of them clips off the top, which defeats the point of drawing a target.
+    // So the domain opens up to fit them. This is the one overlay that rescales
+    // the plot, and deliberately: a target you can't see isn't a target. The
+    // price action still keeps at least half the height, and anything past that
+    // stays clipped and is named in the caption instead of flattening the candles.
+    if (fibOn && fib && fib.extensions.length) {
+      const room = hi - lo;
+      const targets = fib.extensions.map((e) => e.price);
+      const tHi = Math.max(...targets);
+      const tLo = Math.min(...targets);
+      if (tHi > hi) hi = Math.min(tHi, hi + room);
+      // Down-leg targets can project through zero; the axis stops there.
+      if (tLo < lo) lo = Math.max(tLo, lo - room, 0);
+    }
 
     // Long windows span orders of magnitude — NVDA's full history runs 0.03 to
     // 236, a 7,000x range that flattens 25 years into a line on the bottom
@@ -395,7 +450,7 @@ export default function LevelsChart({
         : volBase;
 
     return { x, y, useLog, volTop, volBase, volY };
-  }, [bars, analysis, zones, H, PAD_R, maxVolume]);
+  }, [bars, analysis, zones, H, PAD_R, maxVolume, fibOn, fib]);
 
   // One "M…L…" through the closes. Built here rather than inline so it isn't
   // re-joined on every hover — the crosshair sets state on pointer move.
@@ -643,6 +698,13 @@ export default function LevelsChart({
     hoveredBar && analysis && levelsOn
       ? zones.find((z) => hoveredBar.close >= z.lo && hoveredBar.close <= z.hi) ?? null
       : null;
+  const hoveredFib =
+    hoveredBar && fib && fibOn ? nearestFibLevel(fib, hoveredBar.close) : null;
+
+  // What the grid is anchored to and how far the pullback has come — the two
+  // things you need to trust a fib. The 161.8% target is named here as well as
+  // drawn, since it's the one level that can project off the top of the scale.
+  const fibSummary = fibOn && fib ? describeFib(fib) : null;
 
   return (
     <div
@@ -862,6 +924,24 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
+            onClick={() => setShowFib((v) => !v)}
+            disabled={!fib}
+            aria-pressed={fibOn}
+            title={
+              fib
+                ? `Fibonacci retracements on the ${fib.direction === "up" ? "low→high" : "high→low"} swing in view — 23.6 / 38.2 / 50 / 61.8%, plus extension targets`
+                : `No clear swing to anchor a Fibonacci grid on this window`
+            }
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              fibOn
+                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+            }`}
+          >
+            Fib
+          </button>
+          <button
+            type="button"
             onClick={() => setExpanded((v) => !v)}
             className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
           >
@@ -876,6 +956,7 @@ export default function LevelsChart({
                 ? "levels re-derived for this window"
                 : "levels hidden"}
             {!hasVolume && bars && " · no traded volume"}
+            {fibSummary && ` · ${fibSummary}`}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
         </div>
@@ -932,9 +1013,12 @@ export default function LevelsChart({
               className="block w-full"
               role="img"
               aria-label={
-                levelsOn
+                (levelsOn
                   ? `${symbol} ${range} ${mode === "line" ? "line" : "candlestick"} chart with ${zones.length} derived support and resistance levels`
-                  : `${symbol} ${range} ${mode === "line" ? "line" : "candlestick"} chart, support and resistance hidden`
+                  : `${symbol} ${range} ${mode === "line" ? "line" : "candlestick"} chart, support and resistance hidden`) +
+                (fibOn && fib
+                  ? `, Fibonacci retracements anchored to the ${fib.direction === "up" ? "low to high" : "high to low"} swing`
+                  : "")
               }
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
@@ -1016,6 +1100,104 @@ export default function LevelsChart({
                   </g>
                 );
               })}
+
+              {/* Fibonacci grid, drawn under the price so the candles stay the
+                  subject. Geometry off one swing — quieter than S/R, which are
+                  levels the market actually turned at. */}
+              {fibOn && fib && scale && (
+                <g>
+                  {/* The golden pocket: 38.2–61.8%, the band most reversals in a
+                      healthy trend land inside. A wash, not a fill. */}
+                  {(() => {
+                    const a = fib.levels.find((l) => l.ratio === 0.382);
+                    const b = fib.levels.find((l) => l.ratio === 0.618);
+                    if (!a || !b) return null;
+                    const y1 = scale.y(a.price);
+                    const y2 = scale.y(b.price);
+                    return (
+                      <rect
+                        x={PAD_L}
+                        y={Math.min(y1, y2)}
+                        width={W - PAD_L - PAD_R}
+                        height={Math.abs(y2 - y1)}
+                        fill="var(--fib-strong)"
+                        opacity={0.07}
+                      />
+                    );
+                  })()}
+
+                  {/* The leg the whole grid hangs off, so you can check the
+                      anchor rather than take the levels on faith. */}
+                  <line
+                    x1={scale.x(fib.start.index)}
+                    y1={scale.y(fib.start.price)}
+                    x2={scale.x(fib.end.index)}
+                    y2={scale.y(fib.end.price)}
+                    stroke="var(--fib)"
+                    strokeWidth={1}
+                    strokeDasharray="4 4"
+                    opacity={0.7}
+                  />
+                  {fib.pullback && fib.extensions.length > 0 && (
+                    <line
+                      x1={scale.x(fib.end.index)}
+                      y1={scale.y(fib.end.price)}
+                      x2={scale.x(fib.pullback.index)}
+                      y2={scale.y(fib.pullback.price)}
+                      stroke="var(--fib)"
+                      strokeWidth={1}
+                      strokeDasharray="4 4"
+                      opacity={0.45}
+                    />
+                  )}
+                  {[fib.start, fib.end, ...(fib.extensions.length && fib.pullback ? [fib.pullback] : [])].map(
+                    (p, i) => (
+                      <circle
+                        key={`fib-anchor-${i}`}
+                        cx={scale.x(p.index)}
+                        cy={scale.y(p.price)}
+                        r={2.6}
+                        fill="var(--fib-strong)"
+                        stroke="var(--panel)"
+                        strokeWidth={1}
+                      />
+                    ),
+                  )}
+
+                  {fib.levels.map((l) => (
+                    <line
+                      key={`fib-${l.ratio}`}
+                      x1={PAD_L}
+                      x2={W - PAD_R}
+                      y1={scale.y(l.price)}
+                      y2={scale.y(l.price)}
+                      stroke={fibColor(l)}
+                      strokeWidth={fibWeight(l)}
+                      strokeDasharray={fibDash(l)}
+                      opacity={fibOpacity(l)}
+                    />
+                  ))}
+
+                  {/* Targets sit beyond the swing and can fall off the top of
+                      the scale — clipped, because letting them set the domain
+                      would squash the price action for the sake of a projection. */}
+                  <g clipPath={`url(#${clipId})`}>
+                    {fib.extensions.map((l) => (
+                      <line
+                        key={`fibx-${l.ratio}`}
+                        x1={PAD_L}
+                        x2={W - PAD_R}
+                        y1={scale.y(l.price)}
+                        y2={scale.y(l.price)}
+                        stroke={fibColor(l)}
+                        strokeWidth={fibWeight(l)}
+                        strokeDasharray={fibDash(l)}
+                        opacity={0.5}
+                      />
+                    ))}
+                  </g>
+                </g>
+              )}
 
               {volumeOn && (
                 <g>
@@ -1145,6 +1327,42 @@ export default function LevelsChart({
                   stroke="var(--panel)"
                   strokeWidth={2}
                 />
+              )}
+
+              {/* Fib labels last, so they read over the candles rather than
+                  under them. Left edge — the right is the S/R gutter. */}
+              {fibOn && fib && scale && (
+                <g pointerEvents="none">
+                  {[...fib.levels, ...fib.extensions].map((l) => {
+                    const y = scale.y(l.price);
+                    // An extension projected off the top of the scale has no
+                    // line to label; the caption carries its price instead.
+                    if (y < PAD_T + 4 || y > H - PAD_B - 2) return null;
+                    return (
+                      <text
+                        key={`fib-lbl-${l.kind}-${l.ratio}`}
+                        x={PAD_L + 5}
+                        y={y - 3.5}
+                        fontFamily="var(--mono)"
+                        fontSize={l.major ? labelSize : subSize + 1}
+                        stroke="var(--panel)"
+                        strokeWidth={2.5}
+                        paintOrder="stroke"
+                      >
+                        <tspan
+                          fill={fibColor(l)}
+                          fontWeight={l.major ? 700 : 500}
+                          opacity={l.major ? 1 : 0.85}
+                        >
+                          {l.kind === "extension" ? `↗ ${l.label}` : l.label}
+                        </tspan>
+                        <tspan fill="var(--dim)" dx={6}>
+                          {fmtLevel(l.price)}
+                        </tspan>
+                      </text>
+                    );
+                  })}
+                </g>
               )}
 
               {rsiOn && (
@@ -1341,6 +1559,14 @@ export default function LevelsChart({
                     <br />
                     <span style={{ color: zoneColor(hoveredZone) }}>
                       in a level tested {hoveredZone.touches}×
+                    </span>
+                  </>
+                )}
+                {hoveredFib && (
+                  <>
+                    <br />
+                    <span style={{ color: fibColor(hoveredFib) }}>
+                      at the {hoveredFib.label} fib — {hoveredFib.note}
                     </span>
                   </>
                 )}
