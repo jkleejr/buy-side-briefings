@@ -1,0 +1,151 @@
+{
+  "routine": "markets",
+  "date": "2026-07-29",
+  "window": "morning",
+  "generated_at": "2026-07-29T11:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🟠",
+    "headline": "SK Hynix record Q2 fails to arrest five-day chip selloff; FOMC binary (2pm ET) and META/MSFT AH earnings are today's clearing events",
+    "label": "Step Aside — SK Hynix +257% YoY revenue, 76% OM, HBM4 mass production launched yet stock -8-13% on missed inflated estimates; Brent $89.53 (day 4 above $85 regime trigger, re-surging); FOMC announces 2pm ET — Warsh's September language (hike prob 75-82%) is the market binary; META (9% implied move) and MSFT (7% implied move) report AH tonight; BTC 24h low $62,727 touched within $727 of Gate 2",
+    "conviction": "high",
+    "rationale_short": "Wednesday morning delivers the week's primary clearing event: FOMC decision at 2pm ET (Warsh press conference 2:30pm) with September hike probability at 75-82% per CME FedWatch — the hold is fully priced, the language is not. Warsh inherits Brent crude at $89.53 (fourth consecutive session above the $85 formal regime trigger, re-surging overnight on continued Iran military action), a 30-year yield at 5.12%, and two dissents at the July meeting (first multiple dissents since 1993), conditions that make an explicitly dovish statement analytically difficult. SK Hynix's Q2 2026 results were structurally landmark — revenue +257% YoY to 79.3T won, operating margin 76%, HBM4 mass production launched — yet the stock fell 8-13% because the results missed sky-high analyst estimates (expected: 84T won revenue, 64T won operating profit), crystallizing the theme that expectations are structurally above fundamentals across the AI infrastructure trade even when the fundamentals are excellent. AMD recovers slightly (+1.03% premarket to $459) while MU is -5%+ and Intel -4%+, extending the five-day semiconductor selloff. META and MSFT report AH tonight — options pricing 9% and 7% implied moves respectively — delivering the AI capex ROI clarity event that defines the Magnificent 7 bull/bear narrative for Q3. BTC stabilized at $64,495 (Crypto.com, 11:03 UTC) but the 24h session low of $62,727 touched within $727 of Gate 2 ($62,000). Step aside; do not add directional tech or semiconductor exposure before 2pm ET. Convert to action post-FOMC statement.",
+    "supporting_data": [
+      {
+        "label": "★★★ SK Hynix Q2 2026 record results — revenue +257% YoY to 79.3T won, OP +557% to 60.5T won (76% margin), HBM4 mass production launched — yet stock fell 8-13% as results missed analyst estimates (84T won rev expected); triple shock of NVDA circular financing, CXMT competition, and expectations overhang confirmed as structural, not tactical",
+        "url": "https://www.cnbc.com/2026/07/29/sk-hynix-earnings-profit-revenue-hbm-memory.html"
+      },
+      {
+        "label": "★★★ FOMC announces at 2pm ET today — expected hold at 3.50-3.75% (5th consecutive); September hike probability 75-82% per CME FedWatch; two dissents at July meeting (first multiple dissents since 1993); Warsh press conference 2:30pm ET is the language binary that markets are actually trading",
+        "url": "https://www.cnbc.com/2026/07/28/warsh-fed-rate-decision-trump-powell-analysis.html"
+      },
+      {
+        "label": "★★★ META Q2 AH tonight (EPS est $7.18, Rev est $60.2B; options pricing 9% move) and MSFT Q4 FY26 AH tonight (EPS est $4.24, Rev est $87.6B, Azure growth est 40%+; options pricing 7% move) — AI capex ROI vs GOOGL -7% template; both reports define Q3 technology sector narrative",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-29/microsoft-meta-earnings-face-a-market-growing-skeptical-of-ai"
+      },
+      {
+        "label": "★★★ Brent crude $89.53 this morning (as of 5:05 AM ET, Fortune) — fourth consecutive session above $85 formal regime trigger; Iran military action continuing despite diplomatic talks; oil re-surges from Tuesday's $87-88 close; WTI estimated ~$84-85 (above $79 trigger); three of six regime indicators remain breached entering FOMC day",
+        "url": "https://fortune.com/article/price-of-oil-07-29-2026/"
+      },
+      {
+        "label": "★★ BTC $64,495.96 live (Crypto.com, 11:03 UTC July 29); 24h session low $62,726.80 touched within $727 of Gate 2 ($62,000); semiconductor selloff enters day 5: MU -5%+, Intel -4%+ premarket; AMD +1.03% recovery to $459 tentative; CNN Fear & Greed 37 (Fear) as of July 28",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "★★ ES futures +0.2%, NQ futures +0.3% pre-market (Yahoo Finance July 29 live blog); Dow futures -0.2%; implied SPX open ~7,443; 30Y yield at 5.12% (above 5.00% trigger); September hike probability 75-82% — mildly constructive futures open insufficient offset against two simultaneous high-information clearing events",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-29-dow-sp-500-nasdaq-082009165.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7428.78,  "change_pct": 0.2,  "as_of": "2026-07-28T20:00:00Z" },
+    "nasdaq": { "level": 24876.91, "change_pct": 0.3,  "as_of": "2026-07-28T20:00:00Z" },
+    "vix":    { "level": 18.2,     "change_pct": 0.0,  "as_of": "2026-07-28T20:00:00Z" },
+    "ust10y": { "level": 4.60,     "change_bps": -2,   "as_of": "2026-07-29T11:00:00Z" },
+    "dxy":    { "level": 101.52,   "change_pct": 0.0,  "as_of": "2026-07-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "Brent crude",               "value": 89.53,   "trigger_above": 85.00,  "unit": "$/bbl" },
+    { "name": "WTI crude",                 "value": 84.76,   "trigger_above": 79.00,  "unit": "$/bbl" },
+    { "name": "30Y Yield",                 "value": 5.12,    "trigger_above": 5.00,   "unit": "%" },
+    { "name": "September Hike Prob",       "value": 78,      "trigger_above": 70,     "unit": "%" },
+    { "name": "SPX vs 7,380 BEARISH level","value": 7428.78, "trigger_below": 7380,   "unit": "" },
+    { "name": "BTC Gate 2",                "value": 64495,   "trigger_below": 62000,  "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$197 (slight recovery from premarket weakness) — circular financing narrative ($250B OpenAI backstop + $350B chip financing, WSJ/Bloomberg confirmed) remains the single largest overhang. SK Hynix's record Q2 results that still missed inflated estimates suggest expectations reset has further to run even for irreplaceable AI names. Stop $216; no add before August 26 Q2 FY27 earnings. FOMC dovish hold + MSFT Azure >42% are necessary (not sufficient) conditions for the re-entry thesis.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$459 (+1.03% premarket recovery) — the modest rebound after four consecutive -5-9% sessions may reflect oversold conditions rather than thesis resolution. Three unresolved inputs — CXMT Chinese DRAM competition, NVDA circular financing repricing of hyperscaler AI capex reliability, MSFT Azure guidance binary tonight — all directly affect AMD's MI400 thesis. Wait for FOMC + MSFT Azure >42% simultaneously before re-entry. Stop $430.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "000660.KS",
+      "note": "SK Hynix: Q2 revenue 79.3T won (+257% YoY), operating profit 60.5T won (+557% YoY), 76% OM — landmark results. Stock still fell 8-13% because consensus estimates were 84T won revenue and 64T won OP. HBM4 mass production has launched and multi-year supply agreements with ~10 customers signed. Long-term thesis intact; near-term multiple compression is expectations-driven. Do not add until expectations cycle resets (Q3 2026 results, earliest October).",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$337 — quality rotation thesis continues. Reports Thursday July 30 AH (EPS est $1.89, Rev est $108.9B). Zero exposure to circular financing, DUV competition, or hyperscaler AI capex ROI debate. DXY stability is neutral for international revenue. Options pricing 4% move for AH Thursday. Hold above $315; fresh entry $334-338 with stop $318.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$393 — reports AH tonight. EPS est $4.24 (+16% YoY), Rev est $87.6B (+15% YoY); Azure growth est 40%+ (watch for >42% vs GOOGL cloud's deceleration); FY27 capex guidance ($262B est) vs FCF trajectory is the market-moving binary. Options pricing 7% move. Two consecutive -7% tech earnings templates (GOOGL) have lowered the bar but also raised scrutiny. No add before tonight's print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$593 — reports AH tonight. EPS est $7.18, Rev est $60.2B (+27% YoY); operating margin from Q1's 41.4% base is the key metric; AI capex vs ad monetization ROI is the narrative binary. Options pricing 9% move — highest implied vol of the Mag-7 earnings week. DXY stability neutral for international ad revenue. No add before tonight's print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MU",
+      "note": "-5%+ premarket — SK Hynix's 'sell the news' reaction on record earnings confirms that the expectations reset cycle for AI memory is ongoing even with fundamental demand intact. CXMT Chinese DRAM competition and China DUV lithography timeline acceleration remain unresolved structural headwinds. Do not add until Q3 2026 earnings confirm pricing power resilience.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "~$376 (slight decline in line with sector) — custom silicon thesis (META, Google, AAPL design wins) remains structurally differentiated from NVDA circular financing. Broadcom's revenue model is not closed-loop AI demand; its design-win customers are paying Broadcom for chips, not the other way around. Hold above $370; selloff is sector contamination. Broadcom Q3 FY26 expected early September.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$64,495.96 live (Crypto.com, 11:03 UTC July 29); 24h range $62,726.80-$64,753.24; +1.65% 24h. The 24h low of $62,726.80 was within $727 of Gate 2 ($62,000) — the closest approach since the Iran conflict began. BTC has stabilized but the proximity test is a warning signal. Primary tail risk: FOMC hawkish language at 2pm ET → SPX tests 7,380 → multi-asset correlation tightens → Gate 2 re-tested. Do not add crypto before FOMC.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "NVDA above $200",
+      "reason": "Three concurrent, confirmed, independent short arguments remain active simultaneously: (1) WSJ/Bloomberg circular financing ($250B OpenAI backstop + $350B chip financing = Nvidia lending money to its own customer to buy Nvidia chips), (2) Kimi K3 open-weight inference efficiency challenge (ranked #1 Frontend Code Arena, $0.30/1M token pricing), (3) China DUV/CXMT accelerating domestic memory production threatening supply chain reliability. SK Hynix's record Q2 that still triggered a -8-13% stock decline shows the market is not done repricing AI infrastructure expectations, and NVDA's position atop the AI supply chain makes it the primary target. FOMC hawkish hold today could reverse yesterday's $197 recovery entirely.",
+      "better_entry": "Post-NVDA Q2 FY27 August 26 with explicit circular financing disclosure on the call AND confirmed organic (non-backstopped) data center revenue growth. Or $185-192 on capitulation if FOMC is hawkish AND MSFT Azure disappoints tonight."
+    },
+    {
+      "ticker": "MU / memory names ahead of FOMC + earnings",
+      "reason": "SK Hynix delivered the best possible Q2 result (revenue +257% YoY, 76% OM, HBM4 mass production) and the stock still fell 8-13% because analyst estimates had already priced in something even better (84T won vs 79.3T won actual). This 'sell the news on record earnings' reaction means the expectations reset cycle has further to run. MU is now -5%+ premarket — and Micron's exposure to CXMT Chinese DRAM competition is greater than SK Hynix's because Micron lacks SK Hynix's dominant HBM market share as a buffer. Adding MU ahead of FOMC and tonight's META/MSFT earnings prints is fighting the information curve from the wrong side.",
+      "better_entry": "Post-FOMC (if dovish hold) AND post-META/MSFT (if both demonstrate improving AI capex ROI QoQ). Entry only at the July 30 open if both clearing events are constructive. Stop at today's premarket level (approximately $85-87 range if tracking SK Hynix's selloff pattern)."
+    },
+    {
+      "ticker": "Semiconductor ETFs (SMH/SOXX) before 2pm ET",
+      "reason": "SMH has fallen more than 12% in four sessions; the Philadelphia Semiconductor Index is approaching correction territory. Today's session faces three simultaneous binary events that have not cleared: (1) FOMC language on September — a hawkish hold re-anchors the rate path that prices AI capex investment decisions; (2) MSFT Azure guidance — AMD and NVDA's most important near-term demand signal; (3) META AI ad ROI vs $40B+ capex — the commercial justification anchor for AI infrastructure spend. Adding SMH before 2pm ET is purchasing a position in front of three unresolved binary events with no information edge.",
+      "better_entry": "Post-FOMC July 29 close AND post-META/MSFT AH. If FOMC is explicitly dovish (September probability drops below 65%) AND MSFT Azure growth confirms >42% AND META operating margin holds above 40%, re-entry at the July 30 open with stop at Wednesday's pre-FOMC low."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "FOMC rates binary (TBT long / TLT long pair)",
+      "direction": "pair",
+      "thesis": "The FOMC statement at 2pm ET (Warsh press conference 2:30pm) is the year's single highest-information rate event. Warsh inherits: Brent at $89.53 (four sessions above the $85 regime trigger, re-surging on Iran), 30Y at 5.12% (above 5.00% trigger), September hike probability at 78%, and two dissents at the July meeting — the first multiple dissents since 1993. These inputs make an explicitly dovish statement analytically difficult. The pair trades both outcomes: hawkish (September explicitly live, oil inflation acknowledged) → TBT long, 30Y tests 5.20%-5.25%, SPX tests 7,380; dovish (September de-emphasized, Iran diplomatic progress assumed) → TLT long, 10Y falls below 4.50%, tech/semis attempt relief rally. One leg converts to directional within 30 minutes of the 2pm statement.",
+      "entry": "Build equal-weight TBT long / TLT long pair into the morning session — at least 60 minutes before 2pm ET. Do not wait for the statement. Let FOMC July 29 2pm decide which leg converts to directional. Close the losing leg within 30 minutes of the statement. Hold the winner for 2-3 weeks through August CPI (est. Aug 13).",
+      "invalidation": "FOMC statement is genuinely ambiguous — acknowledges both inflation risk and soft growth without explicitly signaling September either way; 10Y holds 4.58-4.62% post-statement. Flatten both legs within 60 minutes.",
+      "conviction": "high",
+      "horizon": "Entry this morning; resolution at 2pm ET; convert survivor to August CPI hold (est. Aug 13)"
+    },
+    {
+      "asset": "AAPL long",
+      "direction": "long",
+      "thesis": "AAPL has absorbed three consecutive sessions of quality-rotation buying as institutional capital moves from AI infrastructure capex to visible AI monetization revenue. The stock is insulated from the three concurrent semiconductor short arguments: no circular financing exposure, no DUV competition exposure, no hyperscaler AI capex ROI dependency. DXY stability is neutral for international revenue. Reports Thursday July 30 AH (EPS est $1.89, Rev est $108.9B); China iPhone units and services gross margin are the key metrics. If FOMC is dovish tonight and META/MSFT clear the AI capex template, AAPL is the primary beneficiary of the regime improvement as the highest-quality AI monetization play.",
+      "entry": "Existing holders: maintain above $315 stop. Fresh entry: $334-338 with stop $318. Scale up post-Q2 AH July 30 if China iPhone units beat consensus AND services gross margin holds above 73% AND Q3 revenue guidance above $107B. Target $355-375 by Q3 earnings.",
+      "invalidation": "Q2 July 30 AH: China iPhone units miss consensus OR services gross margin compresses below 72% OR Q3 revenue guidance below $105B. Any single condition fails → reduce to half-size immediately. Alternatively, FOMC hawkish hold that pushes 10Y above 4.75% AND sustains oil above $90 introduces supply-chain and rate headwind to the AAPL thesis.",
+      "conviction": "medium",
+      "horizon": "Entry now; primary resolution July 30 AH; 1-2 quarter hold if thesis confirms"
+    },
+    {
+      "asset": "SMH puts / AMD short",
+      "direction": "short",
+      "thesis": "SK Hynix's 'sell the news' reaction on record Q2 earnings (revenue +257% YoY, 76% OM, HBM4 mass production launched) proves that the expectations reset cycle for AI semiconductor names is structural, not a trading overshoot. When the best possible fundamental outcome still triggers an 8-13% stock decline, the sector's multiple-compression process is not complete. AMD's recovery (+1.03% premarket) is tentative and pre-event; the MSFT Azure guidance tonight is AMD's most important near-term demand signal. SMH August puts capture the NVDA earnings binary on August 26 and the ongoing expectations reset.",
+      "entry": "SMH August puts at current level (track Tuesday close ~$235-240 area). Or short AMD near $459 with stop at $480 (Monday intraday low area). Target AMD $410-420 on FOMC hawkish hold + MSFT Azure guidance disappointing. Cover or reduce if FOMC explicitly closes September AND MSFT Azure confirms >42% growth with improving FCF trajectory.",
+      "invalidation": "FOMC explicitly closes September (probability drops below 65%) AND MSFT Azure guidance confirms AI capex ROI with FCF improvement QoQ AND META operating margin holds above 41%. All three required simultaneously to flip bullish on semis. Single condition alone is insufficient.",
+      "conviction": "medium",
+      "horizon": "Through FOMC July 29 and META/MSFT AH; primary reassessment at NVDA Q2 FY27 August 26"
+    }
+  ],
+  "bear_case": "Counter-argument: The semiconductor selloff is approaching exhaustion territory after five consecutive sessions of losses across the US, Korean, and Japanese markets. AMD has fallen approximately 12% in four sessions; SK Hynix's actual Q2 numbers (revenue +257% YoY, 76% operating margin, HBM4 mass production started) demonstrate that AI infrastructure demand is converting to record profits at an accelerating rate — the 'missed estimates' narrative is an analyst expectations-management failure, not a fundamental deterioration. The futures are mildly positive (ES +0.2%, NQ +0.3%), AMD is recovering, and European stocks are holding firm despite the chip selloff. If FOMC delivers a clean hold without explicitly endorsing September as live — which is analytically defensible if Warsh focuses on the slowing Durable Goods data (Monday miss: 0.3% vs 2.5% expected) rather than oil — and if both META and MSFT tonight demonstrate improving AI capex ROI margins (the threshold is modest given GOOGL's negative template), the entire five-day selloff resolves as a classic overreaction to three compounding noise signals. The SK Hynix HBM4 mass production announcement is a fundamental positive for AI infrastructure demand visibility that the market will be forced to reprice. Counter-argument invalidation: If SPX reclaims 7,500 on the post-FOMC Wednesday close and AMD closes above $475, the step-aside call is wrong. If FOMC is explicitly dovish (September probability drops below 65%) AND MSFT Azure confirms >45% growth with credible ROI trajectory, the step-aside call is wrong.",
+  "body_mdx": "data/briefings/markets/2026-07-29-morning.mdx"
+}
