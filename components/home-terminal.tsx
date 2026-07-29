@@ -167,6 +167,7 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
 const CHART_SYMBOLS = [
   "^GSPC",
   "NVDA",
+  "AAPL",
   "MU",
   "BTC-USD",
   "^VIX",
@@ -178,6 +179,7 @@ const CHART_SYMBOLS = [
 const CHART_LABELS: Record<string, string> = {
   "^GSPC": "S&P 500",
   NVDA: "Nvidia",
+  AAPL: "Apple",
   MU: "Micron",
   "BTC-USD": "Bitcoin",
   "^VIX": "VIX",
