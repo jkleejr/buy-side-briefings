@@ -1,46 +1,46 @@
 {
   "events": [
     {
-      "date": "2026-07-29",
-      "label": "FOMC Decision (2pm ET) + Warsh press conf (2:30pm) + META Q2 AH + MSFT Q4 FY26 AH — most event-dense session of 2026",
-      "kind": "FOMC",
-      "tickers": ["META", "MSFT", "TLT", "TBT", "IWM", "QQQ"],
-      "note": "Updated July 28 night: FOMC rate decision 2pm ET, Warsh press conference 2:30pm, then META Q2 AH and MSFT Q4 FY26 AH in the same session. Warsh inherits: (1) Brent $84.09 — first close below $85 regime trigger since Iran conflict began; (2) WTI $79.26, $0.26 above $79 clearance threshold; (3) 30Y at 5.10% (still above 5.00% trigger); (4) September hike prob ~70% near the formal trigger; (5) Durable Goods +0.3% vs. +2.5% expected (dovish). The language on September — not the hold decision itself — is the true binary. Dovish (September de-emphasized): TLT rally, upgrade clock potentially starts Day 1 if SPX closes above 7,480. Hawkish (September explicitly live): 30Y tests 5.20%, SPX tests 7,380 BEARISH threshold. THEN: META Q2 (EPS est $7.18, Rev est $60.22B; operating margin vs. AI capex is the swing) and MSFT Q4 FY26 (Azure 40%+ growth vs. $262B FY27 CapEx — GOOGL −7% template risk if capex guides without credible AI ROI). MSFT Azure guidance at 42%+ is the chip sector's most important near-term demand signal: it determines whether NVDA circular financing is product financing (demand real) or closed-loop demand subsidization (demand artificial)."
-    },
-    {
       "date": "2026-07-30",
-      "label": "AAPL Q2 AH + AMZN Q2 AH + Q2 GDP Advance Estimate (8:30 AM ET) — final Mag-7 and first GDP read",
+      "label": "Q2 GDP Advance Estimate (8:30 AM ET) + AAPL Q2 AH + AMZN Q2 AH — post-MSFT-beat, post-META-miss resolution",
       "kind": "EARNINGS",
       "tickers": ["AAPL", "AMZN", "QQQ", "IWM", "SPY"],
-      "note": "Updated July 28 night: Three catalysts in one session. Q2 GDP advance estimate at 8:30am ET (est. +2–3% annualized) — below +2% opens stagflation discussion; above +3% eases hard-landing concern. AAPL Q2 AH: AAPL hit a NEW ALL-TIME CLOSING HIGH at $340.08 Tuesday (+1.0%), now largest US company by market cap. Quality rotation into AAPL is confirmed in two consecutive sessions. China iPhone units, services gross margin (est. >73%), and Q3 revenue guidance (est. >$107B) are the three confirmation metrics. EPS est $1.89, Rev est $108.9B. Brent clearing $85 is directly constructive for China supply chain costs. AMZN Q2 AH: AWS est. +32% growth — if AWS confirms AI inference demand is volume-additive (Kimi K3 day-0 hosted on Together AI and Modal), AMZN's inference-demand beneficiary thesis strengthens. EPS est $1.82, Rev est $196.7B. If AAPL China beats AND AMZN AWS confirms +30%+ AI demand growth AND Q2 GDP above +2%: upgrade clock potentially Day 2 by Friday July 31 close."
+      "note": "Updated July 29 night: Three clearing events in one session. MSFT AH +7.57% to $420 provides a gap-open tailwind; META AH −9.64% to $529 provides a gap-down overhang. Q2 GDP at 8:30am ET (est. +2–3% annualized): below +2% opens stagflation concern alongside 30Y at 5.193% (highest since 2007); above +3% eases hard-landing concern. AAPL Q2 AH (EPS est $1.89, Rev est $108.9B): China iPhone units and services gross margin determine whether the quality rotation trade holds — oil at $90.74 is a mild supply chain cost headwind. AMZN Q2 AH (AWS est. >32%): if AWS confirms AI inference demand as volume-additive (Kimi K3 day-0 on Together AI/Modal), AMZN strengthens as inference beneficiary alongside MSFT. SPX formal BEARISH conversion (7,316 close) means Thursday's close relative to 7,380 is the first critical threshold test. Bull case (20%): both AAPL/AMZN beat AND GDP >3% AND no Iran escalation → SPX reclaims 7,380 Thursday. Base case (40%): SPX recovers toward 7,350–7,380 but does not clear the threshold. Bear case (40%): AAPL China miss or AMZN AWS disappoints → SPX extends below 7,250."
     },
     {
       "date": "2026-07-31",
-      "label": "PCE deflator + Employment Cost Index — June inflation embedded in end-of-month data",
+      "label": "PCE deflator + Employment Cost Index (8:30 AM ET) — June oil shock and tariff pass-through embedded",
       "kind": "MACRO",
       "tickers": ["TBT", "TLT", "IWM", "QQQ"],
-      "note": "Updated July 28 night: PCE captures June Brent $97–100 oil inputs (2–3 week lag to gasoline component) plus early tariff pass-through from Trump's 10–12.5% duties on 99.4% of US imports (effective July 24). Employment Cost Index is the Fed's preferred wage inflation measure. An above-consensus PCE or ECI re-anchors the August 13 CPI concern even if FOMC was dovish Wednesday. By Friday's close, the briefing will know FOMC language, five Mag-7 Q2 prints, and one GDP advance read — the full information set to determine whether the regime formally upgrades, holds Step Aside, or converts to BEARISH."
+      "note": "Updated July 29 night: PCE captures June Brent $97–100 average (peak weeks fully embedded; June CPI data already showed elevated oil pass-through). Warsh's 9-3 FOMC vote with three hike dissents makes PCE an even higher-stakes read than it was entering Wednesday. If PCE >3.5% YoY, September hike probability re-prices back above the 70% formal trigger even after Wednesday's post-FOMC repricing to 58%. Employment Cost Index: Fed's preferred wage inflation measure; above-consensus in a 5.193% 30Y environment (highest since 2007) is an explicit hike endorsement. End-of-month rebalancing adds volatility. By Friday close: the brief will have FOMC language, five Mag-7 Q2 prints, one GDP read, and PCE data — sufficient to determine whether the SPX BEARISH conversion (7,316 close Wednesday) is sustained or reversing."
     },
     {
       "date": "2026-08-03",
-      "label": "PLTR Q2 2026 earnings AH — options pricing a 15% swing",
+      "label": "PLTR Q2 2026 earnings AH — options pricing a 15% swing; post-Iran DoD context",
       "kind": "EARNINGS",
       "tickers": ["PLTR"],
-      "note": "Palantir reports Q2 2026 AH on August 3. Options market is pricing approximately a 15% earnings swing. PLTR insulated from AI circular financing narrative due to government contract revenue base (DoD AI spending secular). Key metrics: AIP commercial ARR growth, U.S. commercial customer count, and government contract expansion. DoD AI spending trajectory is independent of hyperscaler capex ROI debates. Weekend geopolitical risk (Iran ceasefire status) shapes Monday's pre-Palantir opening posture."
+      "note": "Updated July 29 night: PLTR reports Q2 2026 AH Monday August 3. Options pricing approximately 15% earnings swing. Context has shifted: Iran's IRGC missile attack on US forces in Jordan (July 29) is a direct DoD AI spending tailwind — heightened US-Iran conflict raises the Pentagon's AI decision-intelligence and drone-defense spending urgency, both PLTR AIP use cases. Key metrics: AIP commercial ARR growth, U.S. commercial customer count, and government contract expansion. DoD AI spending is secular and Iran escalation should not be construed as a negative for PLTR specifically — it is a structural positive. Weekend geopolitical window (Iran next move after Jordan attack) shapes Monday's broader opening risk posture."
     },
     {
       "date": "2026-08-13",
-      "label": "July CPI (est.) — Brent oil shock + Trump tariffs on 99.4% of imports; dual inflation embedding",
+      "label": "July CPI (est.) — Iran attack re-surge and Brent $90.74 + Trump tariffs on 99.4% of imports",
       "kind": "MACRO",
       "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA", "IWM"],
-      "note": "Updated July 28 night: Two major inflation inputs, with Brent's July 28 clearance below $85 adding a new context. (1) Brent crude averaged ~$97–100 for multiple sessions before the Iran mutual pause; the July 14–24 high-Brent period is already embedded in July gasoline CPI. Tuesday's $84.09 Brent close means the retreat from $100.69 (Saturday July 26) to $84.09 (Tuesday July 28) will reduce the July gasoline component. Net July CPI oil contribution: still materially positive (the high-Brent period dominates the monthly average) but the retreat may limit pass-through to 3.0–3.5% vs. the 3.8%+ scenario if Brent had stayed above $90. (2) Trump's 10–12.5% tariffs on 99.4% of US imports (effective July 24) remain the second inflationary input. A July CPI print above 3.5% YoY still makes September near-certain regardless of Brent's current trajectory. Bull scenario (CPI ≤2.8%): oil pass-through was front-loaded and Brent's retreat dominates; September probability falls below 40%. Bear scenario (CPI ≥3.8%): dual oil+tariff pass-through exceeds expectations; September 50bps probability above 90%."
+      "note": "Updated July 29 night: July CPI now embeds a more complex Brent trajectory than previously modeled. The Iran attack on Jordan (July 29) sent Brent to $90.74 (+7.9%) after the brief $84.09 Tuesday clearance. July Brent average includes: July 1–27 range of $95–88 (declining from the peak), the brief $84.09 clearance on July 28, and the re-surge to $90.74+ on July 29. Net July oil contribution to CPI: materially positive. Additionally, FOMC's 9-3 hawkish vote (three members wanting to hike NOW) suggests the Fed's own inflation read supports a September hike if CPI is above 3.0–3.5%. Trump tariffs on 99.4% of US imports (effective July 24) are a second CPI input. A July CPI print above 3.5% YoY makes September near-certain regardless of Warsh's Jackson Hole framing. Bull scenario (CPI ≤2.8%): oil retreat dominates; September probability falls below 40%. Bear scenario (CPI ≥3.8%): dual oil+tariff pass-through; September 50bps probability above 90%."
     },
     {
       "date": "2026-08-26",
-      "label": "NVDA Q2 FY27 earnings (est.) — circular financing disclosure + AMD hyperscaler sweep + Kimi K3 + CXMT questions",
+      "label": "NVDA Q2 FY27 earnings (est.) — circular financing disclosure; MSFT Azure 43% changes context",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "Updated July 28 night: NVDA Q2 FY27 is the fundamental clearing event for the AI GPU thesis. $91B revenue guidance represents sequential acceleration. NVDA recovered +0.4% Tuesday as institutional differentiation narrowed the AI chip trade to NVDA specifically while AMD fell 8.85%, Micron fell 8.4%. On the Q2 FY27 call, five questions must be addressed: (1) Circular financing disclosure — WSJ/Bloomberg active negotiation on $250B OpenAI backstop; analysts will press on whether Q2 revenue includes demand directly or indirectly financed by NVDA itself; (2) AMD hyperscaler diversification — all four major hyperscalers named as MI400 (Helios) customers; NVDA must quantify how much demand is AI-native vs. defensively captured; (3) Kimi K3 inference efficiency challenge (2.8T parameters, 70% API discount) — impact on per-token compute density and H100/H200 demand from inference-focused buyers; (4) CXMT Chinese DRAM competition — HBM3E demand is directly tied to NVDA data center orders; if CXMT is producing at government-backed scale, how does this affect the NVDA memory-order pipeline?; (5) China DUV lithography mass production — domestic Chinese tools accelerate CXMT's production ramp, tightening NVDA's China-exposure risk. Hard stop $216 intact."
+      "note": "Updated July 29 night: MSFT Azure 43% growth (July 29 beat) is the most important pre-NVDA data point. If Azure's 43% growth is coming from external enterprises (not NVDA-loan-funded customers), then NVDA's demand story gains credibility — the AI infrastructure customers are real and paying with their own capital. On the Q2 FY27 call, five questions remain: (1) Circular financing disclosure — WSJ/Bloomberg active ($250B OpenAI backstop); MSFT Azure 43% partially validates that demand is organic but NVDA must address the OpenAI structure directly; (2) AMD hyperscaler diversification — MSFT Azure 43% confirms hyperscaler demand is real, which should reduce the AMD diversification risk to NVDA; (3) Kimi K3 inference efficiency — still a structural efficiency challenge to H-series per-token compute requirements; (4) CXMT Chinese DRAM competition — unchanged headwind; (5) China DUV lithography mass production — unchanged. Hard stop $216 intact."
+    },
+    {
+      "date": "2026-08-27",
+      "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote on September FOMC path",
+      "kind": "FOMC",
+      "tickers": ["TLT", "TBT", "QQQ", "IWM", "SPY", "GLD"],
+      "note": "Added July 29 night: Jackson Hole Economic Policy Symposium, Jackson, Wyoming. Chair Warsh speaks. After the July 29 FOMC 9-3 vote (three members wanted to hike NOW) and the 30Y reaching 5.193% (highest since 2007), Warsh's Jackson Hole speech is the most anticipated Fed communication since the hiking cycle began. September FOMC is September 16–17. The August 13 CPI print (arriving two weeks before Jackson Hole) will define the framing. If Warsh uses Jackson Hole to signal September as the live meeting for the first hike, rates will reprice sharply. If he signals patience, 30Y should retrace from 5.19% toward 4.90%–5.00%. This is the event the market has been positioning around since the July 9 first dissent."
     },
     {
       "date": "2026-09-02",
@@ -61,7 +61,7 @@
       "label": "OpenAI IPO — target window shifts to H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": ["MSFT", "NVDA"],
-      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off −13% on the delay. Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst. Note: the NVDA circular financing story (July 27–28) — NVDA in talks to backstop $250B in OpenAI data center financing — adds complexity to the OpenAI IPO timeline if the guarantee structure is disclosed in S-1 filings."
+      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off −13% on the delay. Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst. Note: NVDA's circular financing story ($250B OpenAI backstop; July 27–28 WSJ/Bloomberg) — NVDA in talks to backstop OpenAI data center financing — adds complexity to the OpenAI IPO timeline if the guarantee structure is disclosed in S-1 filings. MSFT Azure 43% Q4 FY26 growth (July 29) strengthens MSFT's strategic position heading into any OpenAI IPO."
     }
   ]
 }

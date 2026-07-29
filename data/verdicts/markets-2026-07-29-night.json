@@ -1,0 +1,153 @@
+{
+  "routine": "markets",
+  "date": "2026-07-29",
+  "window": "night",
+  "generated_at": "2026-07-30T02:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Iran launches surprise attack; hawkish Fed and META collapse convert the market to BEARISH",
+    "label": "BEARISH conversion — SPX 7,316 below 7,380 threshold; Iran IRGC missiles on US Jordan base shattered ceasefire and sent Brent +7.9% to $90.74; FOMC 9-3 hawkish hold drove 30Y to 5.193% (highest since 2007); META Q2 EPS $6.18 missed $7.18 est with 31% operating margin (from 43%); MSFT Azure 43% beat provides Thursday morning offset (AH +7.57%)",
+    "rationale_short": "The session delivered a triple shock: Iran's Revolutionary Guard launched ballistic missiles at US forces in Jordan, shattering the mutual pause that had briefly cleared Brent below $85 on Tuesday; the FOMC voted 9-3 with three members preferring an immediate hike, driving the 30-year yield to 5.193% — its highest since 2007; and META's operating margin collapsed 12 points to 31% as Q2 AI capex reached $31 billion, with EPS missing by $1.00 per share. The S&P 500 closed at 7,316, below the 7,380 BEARISH threshold for the first time in this regime framework. MSFT Azure at 43% growth (a beat of the critical 42% threshold) and the resulting AH rally (+7.57%) provide Thursday's open-side offset, but the directional lean entering tomorrow is bearish until Iran, 30-year yields at 18-year highs, and the META AI capex ROI pattern resolve.",
+    "supporting_data": [
+      {
+        "label": "★★★ SPX 7,316.15 (−1.52%), Dow 51,594 (−2.19%, −1,153 pts), Nasdaq 24,443 (−1.74%), Russell 2000 2,906 (−1.61%) — S&P 500 formally below 7,380 BEARISH threshold for first time in this regime framework; triple catalyst: Iran attack + FOMC hawkish hold + META miss",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-29-2026"
+      },
+      {
+        "label": "★★★ FOMC 9-3 vote to hold at 3.50%–3.75% — three dissenters (Hammack/Cleveland, Kashkari/Minneapolis, Logan/Dallas) all voted for immediate +25bps hike; 30Y Treasury rose 9bps to 5.193%, highest since 2007; 10Y +7bps to 4.677%; September hike probability repriced to ~58% as Warsh's short statement was ambiguous on forward path",
+        "url": "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html"
+      },
+      {
+        "label": "★★★ Iran IRGC launched ballistic missiles at US forces in Jordan — all intercepted; Trump threatened to 'hit them hard'; Brent surged 7.9% to $90.74/bbl (re-breaching $85 regime trigger after Tuesday's brief clearance); WTI +6.6% to $84.46 (re-breaching $79 trigger); ceasefire pause shattered",
+        "url": "https://www.aljazeera.com/news/2026/7/29/iran-attacks-us-bases-in-middle-east-as-trump-meets-netanyahu"
+      },
+      {
+        "label": "★★★ META Q2 2026: Rev $60.8B (+28% YoY, beat); EPS $6.18 MISS vs $7.18 est (−13% YoY); operating margin 31% (vs 43% Q2 2025, −12ppt compression); Q2 capex $31.08B; costs +55% YoY to $42B; META AH −9.64% to $529.15 from $585.61 close — GOOGL −7% template applied and exceeded",
+        "url": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html"
+      },
+      {
+        "label": "★★★ MSFT Q4 FY26: Rev $90.01B (+18%, beat $87.62B est); EPS $4.74 (beat $4.24 est); Azure +43% constant currency (beat critical 42% threshold); AI ARR $37B+ (+123% YoY); Intelligent Cloud $39.3B vs $38.1B est; MSFT AH +7.57% to $420.11 — confirms organic AI demand is real despite META's capex-without-margin profile",
+        "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html"
+      },
+      {
+        "label": "★★ Gold $4,049 (+0.27% safe-haven bid); DXY 101.29 (−0.12%); BTC ~$64,200 (recovered from post-FOMC dip, gate 2 at $62,000 intact); NVDA +1.02% (~$199) — second consecutive session outperforming the ecosystem as institutions maintain differentiation; AMD flat (~$459) — MSFT Azure 43% stabilized the AI demand narrative for semis",
+        "url": "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7316.15, "change_pct": -1.52, "as_of": "2026-07-29T20:00:00Z" },
+    "nasdaq": { "level": 24443.0, "change_pct": -1.74, "as_of": "2026-07-29T20:00:00Z" },
+    "vix":    { "level": 22.0,    "change_pct": 20.88, "as_of": "2026-07-29T20:00:00Z" },
+    "ust10y": { "level": 4.677,   "change_bps": 7,     "as_of": "2026-07-29T20:00:00Z" },
+    "dxy":    { "level": 101.29,  "change_pct": -0.12, "as_of": "2026-07-29T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "Brent crude",                "value": 90.74,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "WTI crude",                  "value": 84.46,  "trigger_above": 79.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",                  "value": 5.19,   "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob",        "value": 58,     "trigger_above": 70,    "unit": "%" },
+    { "name": "SPX vs 7,380 BEARISH level", "value": 7316,   "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",                 "value": 64200,  "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "MSFT",
+      "note": "$390.54 regular close (−0.77%), then AH +7.57% to $420.11 — Azure 43% at constant currency beat the 42% critical threshold and the 40% consensus estimate; revenue $90.01B beat $87.62B; EPS $4.74 beat $4.24; AI annualized revenue $37B+ (+123% YoY). This is the single most important data point of the week: MSFT Azure's 43% growth directly refutes the circular financing thesis by confirming organic AI demand at hyperscaler scale. Thursday gap open toward $415–420 is the expected open price. Hold; fresh entry at $405–415 with stop at $390.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "$585.61 regular close (−1.33%), then AH −9.64% to $529.15 — Q2 operating margin collapsed to 31% from 43% in Q2 2025; EPS $6.18 missed $7.18 estimate; Q2 capex was $31.08 billion; costs +55% YoY to $42B. Free cash flow dwindled as AI infrastructure spending is not yet accreting to per-share earnings. The GOOGL −7% template was applied and exceeded. Do not buy the AH dip until META demonstrates operating leverage — the earliest plausible entry is post-Q3 2026 earnings (October). Short setup for the near term.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$199.35 (+1.02%) — second consecutive session closing green while the broad market sold off significantly. Institutional differentiation is now a confirmed pattern: NVDA is being treated as the architecturally irreplaceable name in a sector where the ecosystem periphery continues repricing. MSFT Azure 43% is partially validating NVDA's demand story (if Azure hyperscaler AI demand is real, NVDA chips serving that demand are real revenue). But the circular financing concern (WSJ/Bloomberg active) is not resolved; August 26 Q2 FY27 remains the clearing event. Stop $216 unchanged. No add before August 26.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$459 (−0.02%) — essentially flat on a day when the market fell 1.5-2%; MSFT Azure 43% directly validated AMD's MI400 hyperscaler thesis, as Azure is one of the confirmed MI400 deployment platforms. The AMD bear case (hyperscaler AI capex ROI doubt) weakens if Azure confirms demand. Entry conditions improving: FOMC delivered its statement, MSFT Azure confirms 43% growth. Reassess AMD entry at Thursday's open if MSFT gap confirms the Azure thesis. Stop $440. Do not add before seeing Thursday's AAPL/AMZN prints.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$336.5 (−0.15%) — minimal selloff relative to the broad market; holds well above $315 support. Reports Q2 AH Thursday July 30. EPS est $1.89, Rev est $108.9B; China iPhone units and services gross margin are the key metrics. Oil back at $90.74 is mildly negative for China manufacturing costs (reverses Tuesday's brief cost tailwind). DXY stable at 101.29 is neutral for international revenue. Tomorrow's Q2 AH is the primary catalyst for AAPL entering the next quarter. Hold; add on a Q3 revenue guidance above $107B print.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "~$231 (+0.06%) — steady on a down market day; reports Q2 AH Thursday July 30 alongside AAPL. AWS growth est. +32%; Kimi K3 inference demand (day-0 hosted on Together AI and Modal) is a positive volume signal. If AWS confirms AI inference demand is volume-additive — meaning inference workloads are a net-new revenue category, not a cannibalization of existing compute — AMZN becomes the inference-demand beneficiary thesis alongside MSFT. Hold; entry conditions improve if AWS confirms >30% growth Thursday.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "~$378 (+0.55%) — outperformed the market; META's custom ASIC deal with Broadcom is the primary connection point. META's massive AI capex ($31B in Q2 alone) is actually REVENUE for Broadcom's custom silicon group — the capex that is destroying META's margins is direct Broadcom revenue. Hold above $370.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSM",
+      "note": "$392.31 (−1.70%) — sold off with the broader market; MSFT Azure 43% confirmation is a positive demand signal for TSMC's advanced node utilization. No new China DUV news today. Hold above $390; thesis unchanged.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$127.5 (−2.81%) — modest selloff in line with risk-off; DoD AI spending secular thesis is insulated from both the META margin story and the Iran geopolitical risk (DoD spending rises with Iran escalation, not falls). Reports Q2 AH August 3. Options pricing 15% swing. Hold through earnings.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$64,200 (recovered from post-FOMC drop) — BTC initially dropped on the FOMC hawkish 3-dissent read, then recovered as Warsh's ambiguous statement removed the worst September hike tail risk. September hike probability fell from 75-82% to ~58%. Gate 2 ($62,000) remains intact. Iran escalation is mildly negative for BTC through geopolitical risk correlation but the FOMC dovish-ish language is a partial offset. Do not add before AAPL/AMZN Thursday.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "META at or near AH levels ($529)",
+      "reason": "META's Q2 2026 result represents a structural regime change in its AI investment thesis: operating margin at 31% versus 43% a year ago means the AI infrastructure buildout is materially destroying per-share earnings even as revenue grows 28%. Q2 capex alone was $31.08 billion — more in one quarter than many companies spend in a year. EPS declined 13% year-over-year despite double-digit revenue growth. The forward guidance ($61–64B Q3 revenue) implies mid-to-high 20s percent growth, which is a deceleration from Q2's 28% and does not address the margin path. Buying the AH dip at $529 is catching a falling knife in a name with no operating leverage pathway established.",
+      "better_entry": "Post-Q3 2026 AH (October earnings): entry is defensible only if META shows operating margin recovery toward 38–40% and capex moderates. The earliest re-entry condition is Q3 2026 showing capex below $28B in the quarter AND operating margin re-expansion above 36%."
+    },
+    {
+      "ticker": "SMH / semiconductor ETF exposure above Friday's close",
+      "reason": "META's margin collapse is now the second major Magnificent 7 AI capex disappointment (after GOOGL −7% from last week), and it directly raises the question that has hung over the entire semiconductor complex: if the hyperscalers' AI capex is not converting to per-share earnings, how long will AI infrastructure spending at this level be sustained? MSFT Azure 43% is a counterweight, but META's result today is the dominant negative signal for the sector's narrative. NVDA circular financing + META margin collapse + oil at $90 is not a setup to build a sector position.",
+      "better_entry": "Post-AAPL/AMZN Thursday AH and post-PCE Friday close. If AAPL China iPhone units beat AND AMZN AWS confirms AI inference demand growth AND PCE does not re-accelerate above 3.5%, the AI demand narrative reconstruction is underway and SMH re-entry with stop at Tuesday's close becomes defensible."
+    },
+    {
+      "ticker": "Oil-sensitive financials and industrials",
+      "reason": "Brent at $90.74 and Iran attacking US forces in Jordan with Trump threatening retaliation creates a tail risk that oil tests $95–100 before a new diplomatic de-escalation. Financials are rate-sensitive (30Y at 5.193%, highest since 2007) and oil-exposed industrials face cost-push headwinds. This is not the environment to add broad exposure.",
+      "better_entry": "After Iran's next diplomatic move — Oman-mediated talks must resume and produce a written commitment (not a verbal pause) for oil to retrace sustainably. Or post-July 31 PCE if inflation data argues Warsh's September decision is genuinely contested."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "MSFT long",
+      "direction": "long",
+      "thesis": "Azure 43% constant currency growth (beat the critical 42% threshold) is the most important AI demand confirmation of the Q2 earnings cycle so far. MSFT reported $90.01B in revenue (+18%), beat EPS ($4.74 vs $4.24), and confirmed AI ARR at $37B+ (+123% YoY). This is not a marginal beat — it is a definitive demonstration that AI cloud demand is organic, not circular-loan-driven, and that hyperscaler AI investment is generating real incremental revenue. The market priced a 7.57% after-hours rally. Thursday's gap open is the setup: buy the open toward $415–420 with a hard stop at the regular-session close of $390.54.",
+      "entry": "Buy MSFT at Thursday's open (~$415–420 gap target). Stop at $390.54 (today's regular close). Scale in rather than full-size at the open given potential morning volatility. Target $440–450 by NVDA August 26 on continued AI demand validation.",
+      "invalidation": "If AAPL Q2 AH Thursday delivers a significant miss on China iPhone units or AMZN AWS disappoints below 28% growth, sector rotation reverses and MSFT could give back half the gap. Stop $390.54 is firm — a close back below today's regular session price voids the setup.",
+      "conviction": "medium",
+      "horizon": "Entry Thursday open; primary reassessment post-AAPL/AMZN AH Thursday evening; 4-6 week hold if thesis confirms"
+    },
+    {
+      "asset": "XLE long / energy sector long",
+      "direction": "long",
+      "thesis": "Iran launched ballistic missiles at US forces in Jordan — all intercepted, but Trump's language ('hit them hard') signals a potential retaliatory strike. The ceasefire framework that briefly cleared Brent below $85 on Tuesday is formally shattered. Brent closed at $90.74 (+7.9%), WTI at $84.46 (+6.6%). The Iran-Hormuz risk premium was partially priced out on Tuesday's 'ceasefire progress' narrative; that de-pricing was premature. If Trump retaliates or Iran escalates further, Brent tests $95–100. The XLE (Energy Select Sector ETF) is the direct beneficiary — energy companies' earnings are directly levered to $90+ oil.",
+      "entry": "XLE at Thursday's open with stop at Monday July 27's close (approximately $87 area). Scale up if Brent confirms hold above $90 through Thursday's US close. Target XLE toward $92–95 if Iran does not de-escalate within 48 hours.",
+      "invalidation": "Iran's diplomatic back-channel (Oman-mediated) produces a written ceasefire commitment and explicit Hormuz guarantees within 24-48 hours, causing Brent to retreat below $87. Cover fully on a Brent daily close below $87.",
+      "conviction": "medium",
+      "horizon": "Entry Thursday open; daily monitoring of Iran-Jordan-US developments; 1-2 week hold or until Brent/ceasefire resolution"
+    },
+    {
+      "asset": "META short / put",
+      "direction": "short",
+      "thesis": "META's Q2 2026 result established a structural negative setup: operating margin 31% (versus 43% Q2 2025), EPS declining 13% year-over-year despite 28% revenue growth, and Q2 capex of $31.08 billion with guidance for continued AI infrastructure acceleration. The GOOGL −7% template was not just applied — it was exceeded. META closed the regular session at $585.61 and fell to $529.15 AH (−9.64%). Thursday's gap-down open toward $530 is the entry point for a short position. The fundamental thesis: META's AI capex cycle is destroying per-share earnings with no stated inflection point or operating leverage milestone. Free cash flow is dwindling. Q3 guidance ($61–64B) implies deceleration from Q2's 28% without any margin recovery path indicated.",
+      "entry": "Short META at Thursday's open near $530 (gap-down from $585.61 regular close). Stop at $560 (above today's regular close, which would imply the market decided AH reaction was an overreaction). Target $480–500 by October Q3 earnings if the margin compression story is confirmed.",
+      "invalidation": "If AAPL's Thursday AH results trigger a broad AI monetization relief rally and META's management team provides a credible capex moderation path in a supplemental press release or analyst call, cover on a daily close above $560.",
+      "conviction": "medium",
+      "horizon": "Entry Thursday open; reassessment at META Q3 October earnings"
+    }
+  ],
+  "bear_case": "Counter-argument: The evening's most important data point is MSFT Azure at 43% constant currency growth — the definitive refutation of the circular financing thesis. If the AI demand driving Azure's 43% growth is real (and Azure's external customer base is not NVDA-funded), then the concern that AI infrastructure investment is circular and unsustainable is overstated. Iran's missile attack on Jordan was fully intercepted by US forces with no casualties reported, and Trump's 'hit them hard' language is consistent with past posturing that did not produce open military escalation. The ceasefire framework can be quickly reinstated if both parties return to the Oman channel. META's margin collapse, while severe, is a company-specific capital allocation decision — not a demand signal that AI infrastructure spending is about to contract. Tomorrow's catalysts (AAPL Q2, AMZN AWS, Q2 GDP) could all surprise positively, and MSFT's +7.57% AH gap is a real morning lift for the technology sector. If SPX reclaims 7,380 on Thursday's close, AND AAPL beats China iPhone consensus AND AMZN AWS confirms AI inference demand above 30%, the BEARISH conversion is a single-session false signal.",
+  "body_mdx": "data/briefings/markets/2026-07-29-night.mdx"
+}
