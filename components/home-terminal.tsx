@@ -173,6 +173,7 @@ const CHART_SYMBOLS = [
   "^VIX",
   "GC=F",
   "^KS11",
+  "000660.KS",
   "SNDK",
   "RIOT",
 ];
@@ -185,6 +186,9 @@ const CHART_LABELS: Record<string, string> = {
   "^VIX": "VIX",
   "GC=F": "Gold",
   "^KS11": "KOSPI",
+  // Quoted in won, unlike every other price chart here — the label says so,
+  // because a bare "570,000" reads as dollars next to Nvidia and Micron.
+  "000660.KS": "SK Hynix (KRW)",
   SNDK: "SanDisk",
   RIOT: "Riot",
 };

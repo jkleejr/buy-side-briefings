@@ -93,11 +93,20 @@ const VOL_FRACTION = 0.2;
 const RSI_H = 96;
 const RSI_GAP = 16;
 
-/** Level prices with thousands separators — "7,421.82" scans, "7421.82" doesn't. */
+/**
+ * Level prices with thousands separators — "7,421.82" scans, "7421.82" doesn't.
+ *
+ * Above 100,000 the cents are dropped. A zone label is two of these joined by a
+ * dash, so on a won-quoted name like SK Hynix (~1,400,000) the decimals pushed
+ * the plate to "1,995,000.00–2,006,000.00" — wide enough to bury a fifth of the
+ * candles behind it, to report a precision the won doesn't trade in. Nothing at
+ * US-equity or index scale reaches the threshold, so those labels are unchanged.
+ */
 function fmtLevel(v: number): string {
+  const digits = Math.abs(v) >= 100_000 ? 0 : 2;
   return v.toLocaleString("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
   });
 }
 
