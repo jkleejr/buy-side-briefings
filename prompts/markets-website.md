@@ -14,6 +14,9 @@ Briefings should read like a **professional research note**, not a blog post or 
 - **Bear case as counter-thesis.** The bear-case section is the strongest argument *against* the read, written as if a different desk wrote it. Do not write it as your own self-doubt.
 - **Levels that would change the picture, explicitly stated** at the end of every read: "If SPX reclaims X, this read no longer holds." State the level; do not turn it into an instruction.
 - **Italics for ticker names or terminology only.** Not for emphasis on personal feeling.
+- **Density over length.** The reader's time is the scarce resource, not the
+  page. Two sentences carrying four numbers beat two paragraphs carrying the
+  same four.
 
 The window for this briefing is **{{WINDOW}}**:
 - **morning** — pre-market open prep (US Eastern morning). Focus: overnight news, futures, today's catalysts.
@@ -175,6 +178,56 @@ Body sections (the **May 20 morning briefing** — `data/briefings/markets/2026-
 > section. All of that is retired. Take the rhythm and the depth from the
 > template; take the section list from below, which is authoritative.
 
+### Length — a hard budget, not a suggestion
+
+Briefings had drifted to a **23-minute read** (morning ~3,500 words, night
+~5,550). That is not depth, it is repetition: the same MSFT number appeared in
+the read, the recap, the tape view and the stock list, four times in four
+voices. Budget:
+
+| | words | reads in |
+|---|---|---|
+| **morning** | **1,500–1,900** | ~8 min |
+| **night** | **2,100–2,600** | ~11 min |
+
+Per section, as a ceiling — under is fine, over is not:
+
+| section | words |
+|---|---|
+| The Read | 200 |
+| Snapshot (table) | 120 |
+| What changed / What happened | 260 |
+| Window-specific tape view | 260 |
+| Major Stocks | 220 |
+| Regime Risk (table) | 120 |
+| Stretched Here | 150 |
+| Situations Worth Watching | 220 |
+| Strategic Outlook (night) | 300 |
+| The Other Side | 90 |
+
+**How to cut without losing anything.** The budget is met by removing
+repetition and throat-clearing, never by dropping a number or a citation. In
+order:
+
+- **Say it once.** Every fact belongs to exactly one section. If MSFT's Azure
+  print is the lead, the stock list says "MSFT — see the read" or omits it.
+  Cross-reference; do not restate.
+- **Tables carry data, prose carries meaning.** A level, a change and a
+  threshold belong in a table row. Reserve sentences for what the number
+  implies — that is the part a table cannot hold.
+- **Cut the run-up.** "It is worth noting that", "the key question becomes",
+  "as discussed above", "this brings us to" — delete on sight and start at the
+  claim.
+- **One sentence, one job.** Every sentence should carry a number, a source, or
+  a consequence. A sentence doing none of those is padding.
+- **No scenario tables that restate each other.** Base/bull/bear needs a line
+  each with a level and a probability, not a paragraph each.
+
+Precision is not the thing being cut. Keep every citation, every level, every
+probability. The 4–6 sourced data points behind the read are a floor, not a
+target — a shorter briefing with the same evidence is the goal, and a briefing
+that hits the word count by dropping evidence has failed the brief.
+
 1. `> **Methodology note:**` — one-line description of when/how generated
 2. `*<Window> briefing. Educational analysis only — not investment advice.*`
 3. `## 🎯 The Read — <plain-English summary of the session>` — 1-paragraph read + bullet-point supporting data with inline `[label](url)` citations. **No verdict, no BUY/SELL/HOLD/STEP ASIDE label, no emoji stance marker, no conviction rating.** The heading states what happened, not what to do.
@@ -188,10 +241,15 @@ Body sections (the **May 20 morning briefing** — `data/briefings/markets/2026-
 11. (night only) `## 🔭 Strategic Outlook — Next 5 Trading Days`
 12. `## 🪞 The Other Side (counter-argument)` — 2–3 sentences, ends with the level that would flip the read
 
-**Reference the most recent briefing on disk** for tone, length, and structure —
-but only for those. If it contains a buy/sell/hold verdict heading, a conviction
-rating, or a "Don't Buy" section, it predates the current rules: match its craft,
-not its framing. The section list above wins over anything found on disk.
+**Reference the most recent briefing on disk** for *voice* — the analytical
+register, the way a claim is stated and sourced. Nothing else.
+
+Do not copy its length: every briefing written before 2026-07-30 runs two to
+three times the budget above, and "match the most recent briefing" is precisely
+how it got there — each one inheriting the last one's word count. Do not copy
+its framing either: an old briefing with a buy/sell/hold heading, a conviction
+rating or a "Don't Buy" section predates the current rules. **The budget and the
+section list above win over anything found on disk.**
 
 ## Step 6b — Maintain the catalyst calendar
 
