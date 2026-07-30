@@ -74,6 +74,18 @@ export const EXTENSION_RATIOS: FibRatio[] = [
   { ratio: 1.618, label: "161.8%", note: "φ, the golden extension — primary target", major: true },
 ];
 
+/**
+ * Extra ratios drawn only on a hand-placed grid, projecting the leg past both
+ * of its own ends. Negative ratios continue past the point the drag finished
+ * on; ratios above 1 run back past where it started.
+ */
+export const MANUAL_EXTENSION_RATIOS: FibRatio[] = [
+  { ratio: -0.618, label: "161.8%", note: "φ projected past the end of the swing", major: true },
+  { ratio: -0.272, label: "127.2%", note: "√φ projected past the end of the swing", major: false },
+  { ratio: 1.272, label: "127.2%", note: "√φ projected back past the swing's start", major: false },
+  { ratio: 1.618, label: "161.8%", note: "φ projected back past the swing's start", major: true },
+];
+
 export type FibPoint = { index: number; price: number };
 
 export type FibLevel = FibRatio & {
@@ -263,45 +275,36 @@ export function fibFromAnchors(
   const price = bars[bars.length - 1].close;
   if (!(price > 0) || !(Math.abs(span) > 0)) return null;
 
-  const direction = span > 0 ? "up" : "down";
-  const retrace = (r: number) => b.price - span * r;
+  // Level(r) = B − span·r. r=0 sits on B (where the drag ended), r=1 on A
+  // (where it began). Ratios outside [0,1] therefore land beyond the leg on
+  // either side, which is how a drawn grid earns levels above *and* below
+  // whichever way you dragged — no pullback required, and no dependence on what
+  // price did afterwards. That matters for a tool: what you draw is what you
+  // get, and it stays put.
+  const level = (r: number) => b.price - span * r;
 
   const levels: FibLevel[] = RETRACEMENT_RATIOS.map((r) => ({
     ...r,
-    price: retrace(r.ratio),
+    price: level(r.ratio),
     kind: "retracement" as const,
   }));
 
-  const bIdx = Math.max(0, Math.min(bars.length - 1, b.index));
-  const pullback = findPullback(bars, { index: bIdx, price: b.price }, direction);
-  const retraced = pullback ? (b.price - pullback.price) / span : null;
-
-  const extensions: FibLevel[] =
-    pullback && retraced !== null && retraced >= MIN_PULLBACK
-      ? EXTENSION_RATIOS.flatMap((r) => [
-          {
-            ...r,
-            price: pullback.price + span * r.ratio,
-            kind: "extension" as const,
-            side: "with" as const,
-          },
-          {
-            ...r,
-            price: pullback.price - span * r.ratio,
-            kind: "extension" as const,
-            side: "against" as const,
-            note: `${r.note} — mirrored below the pullback`,
-          },
-        ]).filter((e) => e.price > 0)
-      : [];
+  const extensions: FibLevel[] = MANUAL_EXTENSION_RATIOS.map((r) => ({
+    ...r,
+    price: level(r.ratio),
+    kind: "extension" as const,
+    // "with" continues past the end of the drag; "against" runs back past its
+    // start. Purely a label for the chart's arrows.
+    side: (r.ratio < 0 ? "with" : "against") as "with" | "against",
+  })).filter((e) => e.price > 0);
 
   return {
-    direction,
+    direction: span > 0 ? "up" : "down",
     start: a,
     end: b,
-    pullback,
+    pullback: null,
     span,
-    retraced,
+    retraced: null,
     priceRatio: (b.price - price) / span,
     levels,
     extensions,

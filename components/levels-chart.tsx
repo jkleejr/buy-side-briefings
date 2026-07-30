@@ -26,7 +26,6 @@ import {
   type LevelZone,
 } from "@/lib/levels";
 import {
-  deriveFibonacci,
   fibFromAnchors,
   nearestFibLevel,
   type FibAnalysis,
@@ -243,15 +242,16 @@ const fibDash = (l: FibLevel) =>
 
 /** One line naming the swing the grid hangs off and how far price has come back. */
 function describeFib(fib: FibAnalysis): string {
-  const leg = fib.direction === "up" ? "low→high" : "high→low";
-  const back =
-    fib.retraced == null || fib.retraced <= 0
-      ? "no pullback yet"
-      : `${(fib.retraced * 100).toFixed(1)}% retraced`;
-  const target = fib.extensions.find((l) => l.ratio === 1.618);
-  return `fib anchored to the ${leg} swing · ${back}${
-    target ? ` · 161.8% target ${fmtLevel(target.price)}` : ""
-  }`;
+  const dir = fib.direction === "up" ? "up" : "down";
+  const where =
+    fib.priceRatio >= 0 && fib.priceRatio <= 1
+      ? `price at ${(fib.priceRatio * 100).toFixed(1)}% of the leg`
+      : fib.priceRatio < 0
+        ? "price beyond the end of the leg"
+        : "price back past the start of the leg";
+  return `fib drawn ${dir} · ${fmtLevel(fib.start.price)} → ${fmtLevel(
+    fib.end.price,
+  )} · ${where}`;
 }
 
 type Props = {
@@ -439,18 +439,24 @@ export default function LevelsChart({
     [fibDraft, fibAnchors, key],
   );
 
-  const fib = useMemo(() => {
-    if (!bars) return null;
-    // A hand-drawn swing is built against the WHOLE series, not the slice on
-    // screen. Measuring it against the viewport made the grid shift as you
-    // zoomed — the pullback would fall outside the window and the extension
-    // targets would change or vanish under you. A swing you placed is a fact
-    // about the data; only the auto-detected one is supposed to follow the eye.
-    if (manualAnchors && allBars) {
-      return fibFromAnchors(allBars, manualAnchors.a, manualAnchors.b);
-    }
-    return deriveFibonacci(bars);
-  }, [bars, allBars, manualAnchors]);
+  /**
+   * The Fibonacci grid is a drawing, not a derivation. There is no automatic
+   * swing: the chart used to pick the window's dominant leg for you, which
+   * meant the grid silently re-anchored every time you zoomed — a different
+   * answer to a question you never asked. Now nothing appears until you drag
+   * one, and what you drew stays exactly where you put it.
+   *
+   * Built against the whole series (not the slice on screen) and anchored by
+   * bar index + price, so zooming and panning move the chart underneath it
+   * rather than moving it.
+   */
+  const fib = useMemo(
+    () =>
+      manualAnchors && allBars
+        ? fibFromAnchors(allBars, manualAnchors.a, manualAnchors.b)
+        : null,
+    [allBars, manualAnchors],
+  );
   const fibOn = showFib && !compact && !!fib;
 
   // VIX is a calculated index: every bar reports volume 0. Intraday equity bars
@@ -1266,15 +1272,21 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
-            onClick={() => setShowFib((v) => !v)}
-            disabled={!fib}
+            onClick={() => {
+              const next = !showFib;
+              setShowFib(next);
+              // Turning the grid on with nothing drawn would show an empty
+              // chart, so it arms the tool; turning it off releases it.
+              if (next && !manualAnchors) setTool("fib");
+              else if (!next && tool === "fib") setTool("none");
+            }}
             aria-pressed={fibOn}
             title={
               fib
-                ? `Fibonacci retracements on the ${fib.direction === "up" ? "low→high" : "high→low"} swing in view — 23.6 / 38.2 / 50 / 61.8%, plus extension targets`
-                : `No clear swing to anchor a Fibonacci grid on this window`
+                ? "Hide the Fibonacci grid you drew"
+                : "Drag a swing on the chart to place a Fibonacci grid — levels fill in between the two points and project past both ends"
             }
-            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
               fibOn
                 ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
                 : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
@@ -1300,7 +1312,7 @@ export default function LevelsChart({
             {!hasVolume && bars && " · no traded volume"}
             {bodiesCollapse && bars && " · 24h market — bodies run from the prior close"}
             {fibSummary && ` · ${fibSummary}`}
-            {fib?.manual && fibOn && " · swing set by hand"}
+            {showFib && !fib && tool === "fib" && " · drag a swing to place the grid"}
             {liveView && bars && ` · zoomed to ${bars.length} bars — double-click to reset`}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
@@ -1746,8 +1758,11 @@ export default function LevelsChart({
                           fontWeight={l.major ? 700 : 500}
                           opacity={l.major ? 1 : 0.85}
                         >
+                          {/* Arrow from geometry, not from the ratio's sign: a
+                              level below the 0% line reads ↘ whichever way the
+                              swing was drawn. */}
                           {l.kind === "extension"
-                            ? `${l.side === "against" ? "↘" : "↗"} ${l.label}`
+                            ? `${l.price < fib.end.price ? "↘" : "↗"} ${l.label}`
                             : l.label}
                         </tspan>
                         <tspan fill="var(--dim)" dx={6}>
