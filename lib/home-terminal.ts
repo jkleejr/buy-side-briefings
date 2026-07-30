@@ -374,6 +374,29 @@ function buildMetrics(v: MarketsVerdict): MetricCard[] {
 
 // --- brief views -----------------------------------------------------------
 
+/**
+ * The briefing body's own inline citations, as a stand-in for a verdict that
+ * shipped without `supporting_data`.
+ *
+ * The routine writes the read as prose with `[label](url)` markdown links, so
+ * the articles behind the day are already there — just in the MDX rather than
+ * the JSON. Pulled in document order, deduped by URL, and skipping the
+ * one-word anchors ("Reuters", "here") that carry no claim on their own.
+ */
+function citedLinksFromBody(v: MarketsVerdict): Array<{ label: string; url?: string }> {
+  const body = getBriefing(v.routine, `${v.date}-${v.window}`)?.body ?? "";
+  const out: Array<{ label: string; url?: string }> = [];
+  const seen = new Set<string>();
+  for (const m of body.matchAll(/\[([^\]]{12,200})\]\((https?:\/\/[^)\s]+)\)/g)) {
+    const label = m[1].replace(/[*_`]/g, "").trim();
+    const url = m[2];
+    if (seen.has(url) || label.split(/\s+/).length < 3) continue;
+    seen.add(url);
+    out.push({ label, url });
+  }
+  return out;
+}
+
 function buildBrief(
   v: MarketsVerdict,
   window: "morning" | "evening",
@@ -381,7 +404,16 @@ function buildBrief(
 ): BriefView {
   // Key points come from the verdict's supporting_data — each carries a source
   // URL so the reader can open the underlying article / research.
-  const keyPoints: KeyPoint[] = (v.verdict.supporting_data ?? [])
+  //
+  // With a fallback, because one missing field used to blank the whole column:
+  // the 2026-07-30 night verdict shipped with no `supporting_data` at all, and
+  // "What matters today" rendered null, which collapsed the two-column grid and
+  // slid the catalyst list into its place. The briefing body carries the same
+  // sourced links inline, so it can stand in rather than leaving a hole.
+  const sourced = (v.verdict.supporting_data ?? []).filter((sd) => sd?.label);
+  const keyPoints: KeyPoint[] = (
+    sourced.length ? sourced : citedLinksFromBody(v)
+  )
     .slice(0, 6)
     .map((sd) => ({
       label: shortLabel(sd.label),

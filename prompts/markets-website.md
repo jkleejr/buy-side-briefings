@@ -74,6 +74,15 @@ The read MUST be backed by 4–6 specific data points with **inline source
 citations** (markdown links). No vibes. No "feels overbought." If you can't cite
 a number, don't use it.
 
+**`verdict.supporting_data` is required — never omit it, never ship it empty.**
+It is not documentation of your reasoning; it is the content of the home page.
+Those 4–6 entries render as the day's articles in the left column, each one a
+link the reader opens. The 2026-07-30 night verdict left the field off and the
+entire section disappeared from the site. Retiring the buy/hold/step-aside code
+retired *the call*, not the evidence: `headline`, `label`, `rationale_short` and
+`supporting_data` all remain mandatory. Write every entry with a real `label`
+carrying a number and a real `url`.
+
 ## Step 4 — Identify 2–3 situations worth watching
 
 For each: asset, what is happening, the levels that define it, what would confirm
@@ -107,7 +116,7 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
   "verdict": {
     "headline": "plain-English news headline, ~90 chars, no prices or jargon",
     "label": "short tape summary — no BUY/HOLD/STEP ASIDE prefix",
-    "rationale_short": "1-3 sentence read; include a directional call ONLY if the tape warrants one",
+    "rationale_short": "1-3 sentence read; what it means and what would change it",
     "supporting_data": [
       { "label": "data point with number", "url": "source URL" }
     ]

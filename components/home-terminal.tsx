@@ -621,10 +621,19 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
             <LevelsChart symbols={CHART_SYMBOLS} labels={CHART_LABELS} />
           </div>
 
-          {/* What matters + catalyst detail — the two forward-looking modules. */}
+          {/* What matters + catalyst detail — the two forward-looking modules.
+              The day's articles read on the left, the dated catalysts on the
+              right. Catalysts are pinned to column two: when "what matters"
+              rendered nothing (a verdict shipped without supporting_data), the
+              catalyst list became the first grid item and slid into the wide
+              left column, which read as the articles section having vanished —
+              because it had. Pinning keeps the page's shape independent of
+              whether one feed came through. */}
           <div className="grid gap-12 pt-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
             <WhatMatters points={current.keyPoints} />
-            <WeekAhead calendar={data.calendar} />
+            <div className="lg:col-start-2">
+              <WeekAhead calendar={data.calendar} />
+            </div>
           </div>
 
           {/* Reference band — sectors run full width across the two columns. */}
