@@ -174,6 +174,7 @@ const CHART_SYMBOLS = [
   "DX-Y.NYB",
   "JPY=X",
   "GC=F",
+  "CL=F",
   "^KS11",
   "000660.KS",
   "SNDK",
@@ -192,6 +193,10 @@ const CHART_LABELS: Record<string, string> = {
   // line going up is the yen getting *weaker*. "Yen ▲" would read backwards.
   "JPY=X": "USD/JPY",
   "GC=F": "Gold",
+  // WTI front-month, which is the barrel the briefings quote ("WTI settled
+  // $82.21"). Spelled out rather than "WTI" so the row stays readable to
+  // someone who doesn't trade crude; the ticker is in the chart's source line.
+  "CL=F": "Crude Oil",
   "^KS11": "KOSPI",
   // Quoted in won, unlike every other price chart here — the label says so,
   // because a bare "570,000" reads as dollars next to Nvidia and Micron.
