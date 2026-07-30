@@ -238,6 +238,17 @@ async function fetchChartBars(
   const result = (await yahooFinance.chart(symbol, {
     period1: new Date(sinceMs),
     interval: interval as never,
+    // Regular session only. Yahoo defaults to including pre- and post-market
+    // bars, which on an hourly NVDA chart meant ~16 bars a day spanning
+    // 4am–7pm ET instead of the 7 the session actually has. Those extra bars
+    // are thin, erratic and jump against each other, which is what made the
+    // intraday charts look full of holes.
+    //
+    // No symbol classification needed: Yahoo reports a 24-hour regular session
+    // for crypto and FX, so BTC-USD and JPY=X keep every bar (measured — 482
+    // and 333 respectively, unchanged), while equities and indices drop to
+    // their real session.
+    includePrePost: false,
   })) as { quotes?: YahooQuoteBar[] };
   const quotes = result?.quotes ?? [];
   return quotes
