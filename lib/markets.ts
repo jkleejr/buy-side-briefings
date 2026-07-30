@@ -192,9 +192,9 @@ export function getSpxDailyCloses(monthsBack: number = 9): Promise<DailyClose[]>
 // in chart-ranges.ts so client components can import them without dragging
 // the (server-only) yahoo-finance2 dependency into the browser bundle.
 
-export type { ChartRange } from "./chart-ranges";
+export type { ChartRange, ChartInterval } from "./chart-ranges";
 export { CHART_RANGES } from "./chart-ranges";
-import type { ChartRange } from "./chart-ranges";
+import type { ChartRange, ChartInterval } from "./chart-ranges";
 
 const RANGE_PARAMS: Record<
   ChartRange,
@@ -290,6 +290,33 @@ const WARMUP_DAYS: Record<ChartRange, number> = {
   ALL: 0,
 };
 
+/**
+ * Warm-up sized per bar size rather than per window, in calendar days that hold
+ * roughly 110 bars. The old table assumed daily bars: asking for a 1M window at
+ * 30-minute resolution would have requested 32 + 160 days of history, and Yahoo
+ * refuses 30-minute data past 60 days — the whole chart would have come back
+ * empty rather than merely un-warmed.
+ */
+const WARMUP_DAYS_FOR_INTERVAL: Record<ChartInterval, number> = {
+  "5m": 3,
+  "30m": 12,
+  "1h": 23,
+  "1d": 160,
+  "1wk": 800,
+  "1mo": 0,
+};
+
+/**
+ * How far back Yahoo will serve each intraday size at all. Requests past these
+ * error out, so the total lookback is clamped rather than left to fail. Sat
+ * just inside the documented cliff (60 / 730 days) to leave room for weekends.
+ */
+const MAX_LOOKBACK_DAYS: Partial<Record<ChartInterval, number>> = {
+  "5m": 58,
+  "30m": 58,
+  "1h": 720,
+};
+
 export type ChartSeriesWithWarmup = {
   /** Warm-up bars followed by the visible window, oldest first. */
   data: ChartBar[];
@@ -305,15 +332,18 @@ function etDay(iso: string): string {
 export async function getChartSeriesWithWarmup(
   symbol: string,
   range: ChartRange,
+  intervalOverride?: ChartInterval,
 ): Promise<ChartSeriesWithWarmup> {
-  const { days, interval } = RANGE_PARAMS[range];
+  const { days } = RANGE_PARAMS[range];
+  const interval = intervalOverride ?? RANGE_PARAMS[range].interval;
+  const warmup = intervalOverride
+    ? WARMUP_DAYS_FOR_INTERVAL[interval]
+    : WARMUP_DAYS[range];
+  const cap = MAX_LOOKBACK_DAYS[interval] ?? Number.POSITIVE_INFINITY;
+  const lookback = Math.min(days + warmup, cap);
   const now = Date.now();
   try {
-    const data = await fetchChartBars(
-      symbol,
-      now - (days + WARMUP_DAYS[range]) * 86_400_000,
-      interval,
-    );
+    const data = await fetchChartBars(symbol, now - lookback * 86_400_000, interval);
     if (!data.length) return { data, visibleFrom: 0 };
 
     let visibleFrom: number;

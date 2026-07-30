@@ -8,7 +8,16 @@ import {
   useState,
   useSyncExternalStore,
 } from "react";
-import { INTRADAY_RANGES, type ChartPoint, type ChartRange } from "@/lib/chart-ranges";
+import {
+  INTERVAL_LABELS,
+  INTERVAL_SHORT,
+  RANGE_INTERVALS,
+  defaultInterval,
+  isIntradayInterval,
+  type ChartInterval,
+  type ChartPoint,
+  type ChartRange,
+} from "@/lib/chart-ranges";
 import {
   deriveLevels,
   layoutLabelYs,
@@ -67,17 +76,6 @@ const SIZES = {
   full: { H: 460, padR: 132, gap: 31, labelSize: 10.5, subSize: 9 },
   compact: { H: 190, padR: 104, gap: 22, labelSize: 9, subSize: 7.5 },
 } as const;
-
-/** Bar interval per range — mirrors RANGE_PARAMS in lib/markets.ts. */
-const BAR_INTERVAL: Record<string, string> = {
-  "1D": "5-minute bars",
-  "5D": "30-minute bars",
-  "1M": "daily bars",
-  "3M": "daily bars",
-  "1Y": "daily bars",
-  "5Y": "weekly bars",
-  ALL: "monthly bars",
-};
 
 /** How many levels to show either side of the price. */
 const ZONES_PER_SIDE = 2;
@@ -281,6 +279,17 @@ export default function LevelsChart({
   const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
+
+  // Bar size. Held as a pin like the candle/line mode: null follows the range's
+  // default, so moving 1M → 1Y doesn't strand you on an interval that window
+  // can't serve. An explicit pick survives only while the new range still
+  // offers it, which resolveInterval on the server enforces too.
+  const [intervalPin, setIntervalPin] = useState<ChartInterval | null>(null);
+  const intervalOptions = RANGE_INTERVALS[range];
+  const interval: ChartInterval =
+    intervalPin && intervalOptions.includes(intervalPin)
+      ? intervalPin
+      : defaultInterval(range);
   const [showVolume, setShowVolume] = useState(defaultVolume);
   const [showLevels, setShowLevels] = useState(defaultLevels);
   const [showRSI, setShowRSI] = useState(false);
@@ -310,11 +319,14 @@ export default function LevelsChart({
   // Levels are derived from whatever window is on screen, so switching the
   // range re-reads support/resistance for that horizon rather than pinning
   // year-scale levels onto an intraday chart.
-  const key = `${symbol}|${range}`;
+  const key = `${symbol}|${range}|${interval}`;
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}&warmup=1`)
+    fetch(
+      `/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}` +
+        `&interval=${interval}&warmup=1`,
+    )
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((j) => {
         if (cancelled) return;
@@ -338,7 +350,7 @@ export default function LevelsChart({
     return () => {
       cancelled = true;
     };
-  }, [symbol, range, key]);
+  }, [symbol, range, interval, key]);
 
   // Stale payloads from a previous symbol/range never render.
   const current = loaded?.key === key ? loaded : null;
@@ -735,10 +747,10 @@ export default function LevelsChart({
         month: "short",
         day: "numeric",
         year: "numeric",
-        ...(INTRADAY_RANGES.has(range)
+        ...(isIntradayInterval(interval)
           ? ({ hour: "numeric", minute: "2-digit", timeZoneName: "short" } as const)
           : {}),
-        timeZone: INTRADAY_RANGES.has(range) ? "America/New_York" : "UTC",
+        timeZone: isIntradayInterval(interval) ? "America/New_York" : "UTC",
       })
     : "—";
 
@@ -824,6 +836,40 @@ export default function LevelsChart({
       {!compact && (
         <div className="flex flex-wrap items-center gap-2 pb-2">
           <RangeSelector value={range} onChange={setRange} loading={!bars && !error} />
+
+          {/* Bar size. Only the sizes this window can actually be drawn at —
+              Yahoo won't serve 30-minute bars past 60 days, and an hourly year
+              is 2,000 candles of mush — so the options change with the range
+              rather than offering a pick that would fail or be unreadable. */}
+          {intervalOptions.length > 1 && (
+            <div className="flex items-center gap-1">
+              <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
+                Bars
+              </span>
+              <div
+                className="flex border border-[var(--border-strong)]"
+                role="group"
+                aria-label="Bar size"
+              >
+              {intervalOptions.map((iv) => (
+                <button
+                  key={iv}
+                  type="button"
+                  onClick={() => setIntervalPin(iv)}
+                  aria-pressed={iv === interval}
+                  title={`${INTERVAL_LABELS[iv]} bars`}
+                  className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] normal-case tracking-[0.11em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                    iv === interval
+                      ? "bg-[var(--amber)] text-[var(--background)]"
+                      : "text-[var(--dim)] hover:bg-[var(--panel)]"
+                  }`}
+                >
+                  {INTERVAL_SHORT[iv]}
+                </button>
+              ))}
+              </div>
+            </div>
+          )}
 
           {/* Drawing tools. Crosshair is the resting state so the chart still
               reads normally; arming a tool takes the pointer over. */}
@@ -1010,7 +1056,7 @@ export default function LevelsChart({
           </button>
 
           <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
-            {INTRADAY_RANGES.has(range) ? "intraday bars" : BAR_INTERVAL[range]} ·{" "}
+            {INTERVAL_LABELS[interval]} bars ·{" "}
             {scale?.useLog
               ? "log scale"
               : levelsOn
@@ -1624,10 +1670,10 @@ export default function LevelsChart({
                     month: "short",
                     day: "numeric",
                     year: "numeric",
-                    ...(INTRADAY_RANGES.has(range)
+                    ...(isIntradayInterval(interval)
                       ? ({ hour: "numeric", minute: "2-digit" } as const)
                       : {}),
-                    timeZone: INTRADAY_RANGES.has(range) ? "America/New_York" : "UTC",
+                    timeZone: isIntradayInterval(interval) ? "America/New_York" : "UTC",
                   })}
                 </span>
                 {hoveredBar.high != null && hoveredBar.low != null && (

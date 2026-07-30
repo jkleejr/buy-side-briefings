@@ -5,6 +5,7 @@ import {
   CHART_RANGES,
   type ChartRange,
 } from "@/lib/markets";
+import { resolveInterval } from "@/lib/chart-ranges";
 
 export const revalidate = 60;
 
@@ -26,12 +27,20 @@ export async function GET(req: Request) {
   // warmup=1 prepends indicator warm-up history and reports where the visible
   // window starts, so clients can draw full-width EMAs/RSI over `data` while
   // displaying only data.slice(visibleFrom).
+  // An interval the range can't serve falls back to that range's default rather
+  // than 400-ing: the pairing is a data-availability fact (Yahoo caps 30-minute
+  // bars at 60 days), not user error, and a chart that renders beats one that
+  // errors because a stale query string outlived a range change.
+  const range = rangeParam as ChartRange;
+  const interval = resolveInterval(range, searchParams.get("interval"));
+
   if (searchParams.get("warmup") === "1") {
     const { data, visibleFrom } = await getChartSeriesWithWarmup(
       symbol,
-      rangeParam as ChartRange,
+      range,
+      interval,
     );
-    return NextResponse.json({ symbol, range: rangeParam, data, visibleFrom });
+    return NextResponse.json({ symbol, range: rangeParam, interval, data, visibleFrom });
   }
 
   const data = await getChartSeries(symbol, rangeParam as ChartRange);
