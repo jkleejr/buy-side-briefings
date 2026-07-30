@@ -103,10 +103,17 @@ function Hero({ brief }: { brief: BriefView }) {
       </p>
       <Link
         href={brief.href}
-        className="mt-6 inline-flex items-center gap-2 font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--amber)]"
+        className="mt-6 inline-flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--amber)]"
       >
-        Read {brief.window === "morning" ? "this morning's" : "tonight's"} briefing
-        <span className="text-[var(--dim)]">· {brief.readMin} min →</span>
+        {/* The label is one unit: without nowrap the phone broke it after
+            "MORNING'S" and stranded the read-time on its own line, which read
+            as two separate links. */}
+        <span className="whitespace-nowrap">
+          Read {brief.window === "morning" ? "this morning's" : "tonight's"} briefing
+        </span>
+        <span className="whitespace-nowrap text-[var(--dim)]">
+          · {brief.readMin} min →
+        </span>
       </Link>
     </div>
   );
@@ -237,13 +244,14 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
   );
 
   const scroller = useRef<HTMLDivElement>(null);
+  const nodeW = useNodeWidth();
 
   // Where the present sits, in pixels. Columns are a fixed NODE_W, so this is
   // index math rather than a DOM measurement — offsetLeft isn't trustworthy on
   // first paint (webfonts can still be settling) and would park us at the far
   // edge of the archive. One node of the past stays visible as a hint that
   // there's more behind.
-  const presentX = Math.max(0, (firstAhead - 1) * NODE_W);
+  const presentX = Math.max(0, (firstAhead - 1) * nodeW);
 
   // Open on the present, not at the start of the archive. Jumps without
   // animating so the page doesn't visibly slide on load.
@@ -277,7 +285,7 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
     const el = scroller.current;
     if (!el) return;
     el.scrollBy({
-      left: dir * Math.max(NODE_W * 2, el.clientWidth * 0.75),
+      left: dir * Math.max(nodeW * 2, el.clientWidth * 0.75),
       behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
         ? "auto"
         : "smooth",
@@ -324,7 +332,10 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
         role="group"
         aria-label="Catalyst timeline — scroll for past and upcoming events"
       >
-        <div className="relative grid auto-cols-[170px] grid-flow-col pt-1">
+        <div
+          className="relative grid grid-flow-col pt-1"
+          style={{ gridAutoColumns: `${nodeW}px` }}
+        >
           <div className="absolute left-0 right-0 top-[46px] h-[2px] bg-[var(--border-strong)]" />
           {nodes.map((c, i) => (
             <div
@@ -385,7 +396,31 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
   );
 }
 
+/**
+ * Timeline column width. 170px shows about six days on a laptop, but only two
+ * on a 390px phone — a strip of mostly empty gutter that hides the week it
+ * exists to show. 124px fits three days there and still leaves the label room
+ * to breathe.
+ *
+ * The scroll maths below multiplies by this, so the value has to be the same
+ * number the grid is laid out with. Hence a hook rather than a media query in
+ * the class list: CSS alone would silently desync `presentX` and park the strip
+ * on the wrong day.
+ */
 const NODE_W = 170;
+const NODE_W_NARROW = 124;
+
+function useNodeWidth(): number {
+  const [narrow, setNarrow] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 639px)");
+    const sync = () => setNarrow(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+  return narrow ? NODE_W_NARROW : NODE_W;
+}
 
 function TimelineButton({
   label,

@@ -778,14 +778,21 @@ export default function LevelsChart({
           </span>
         ) : (
           <>
-            <div className="flex flex-wrap border border-[var(--border-strong)]">
+            {/* Always one row, scrolled rather than wrapped. Thirteen symbols
+                wrapped into three ragged rows on a 390px screen, and because
+                the buttons are joined by shared borders the broken-off ends
+                read as a rendering fault rather than as a second row.
+                Not gated on a breakpoint: the same mess appears on a tablet,
+                just one row later. Where the row does fit there is nothing to
+                scroll, so wide screens look exactly as they did. */}
+            <div className="panel-scroll flex min-w-0 max-w-full flex-nowrap overflow-x-auto overscroll-x-contain border border-[var(--border-strong)]">
               {symbols.map((s) => (
                 <button
                   key={s}
                   type="button"
                   onClick={() => setSymbol(s)}
                   aria-pressed={s === symbol}
-                  className={`border-r border-[var(--border-strong)] px-2.5 py-1 font-mono text-[10px] font-bold tracking-[0.1em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                  className={`shrink-0 whitespace-nowrap border-r border-[var(--border-strong)] px-2.5 py-2 font-mono text-[10px] font-bold tracking-[0.1em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] sm:py-1 ${
                     s === symbol
                       ? "bg-[var(--amber)] text-[var(--background)]"
                       : "text-[var(--dim)] hover:bg-[var(--panel)]"
