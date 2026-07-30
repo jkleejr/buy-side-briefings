@@ -289,7 +289,10 @@ export default function LevelsChart({
   // Candles carry direction bar by bar; the line carries shape. On a long
   // window the bodies get thin enough that the shape is what you're reading
   // anyway, so let it be read directly.
-  const [mode, setMode] = useState<"candle" | "line">("candle");
+  //
+  // null means "follow the data" — see `bodiesCollapse` below. Clicking the
+  // toggle pins a choice, and a pinned choice outranks the automatic one.
+  const [modePin, setModePin] = useState<"candle" | "line" | null>(null);
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -375,6 +378,35 @@ export default function LevelsChart({
     return bars.filter((b) => (b.volume ?? 0) > 0).length >= bars.length * 0.25;
   }, [bars, maxVolume]);
   const volumeOn = showVolume && hasVolume && !compact;
+
+  /**
+   * True when the bars have no meaningful open/close spread — the candle body
+   * carries no information and the chart renders as a picket fence of wicks.
+   *
+   * Spot FX is the case that forces this. The market never closes, so Yahoo's
+   * daily "open" is last night's close: USD/JPY prints bodies of 1–15% of the
+   * day's range where the S&P and the dollar index run 37–84%. Drawn as
+   * candles that is a row of hairlines, which reads as missing data rather
+   * than as a quiet day.
+   *
+   * Measured on the median so one flat holiday session can't trip it, and on
+   * the visible window so the answer matches what's on screen.
+   */
+  const bodiesCollapse = useMemo(() => {
+    if (!bars || bars.length < 10) return false;
+    const ratios = bars
+      .map((b) => {
+        const range = (b.high ?? b.close) - (b.low ?? b.close);
+        if (!(range > 0)) return null;
+        return Math.abs(b.close - (b.open ?? b.close)) / range;
+      })
+      .filter((r): r is number => r !== null)
+      .sort((a, b) => a - b);
+    if (ratios.length < 10) return false;
+    return ratios[Math.floor(ratios.length / 2)] < 0.2;
+  }, [bars]);
+
+  const mode: "candle" | "line" = modePin ?? (bodiesCollapse ? "line" : "candle");
 
   // Only the levels in play: a couple either side of the price. A ceiling 60%
   // overhead is real history but says nothing about the next move, and every
@@ -850,11 +882,13 @@ export default function LevelsChart({
           </button>
           <button
             type="button"
-            onClick={() => setMode((m) => (m === "line" ? "candle" : "line"))}
+            onClick={() => setModePin(mode === "line" ? "candle" : "line")}
             aria-pressed={mode === "line"}
             title={
               mode === "line"
-                ? "Switch to candles — open, high, low and close per bar"
+                ? bodiesCollapse
+                  ? "Switch to candles — this series has no real open, so the bodies will be flat"
+                  : "Switch to candles — open, high, low and close per bar"
                 : "Switch to a line through the closes"
             }
             className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
@@ -971,6 +1005,7 @@ export default function LevelsChart({
                 ? "levels re-derived for this window"
                 : "levels hidden"}
             {!hasVolume && bars && " · no traded volume"}
+            {bodiesCollapse && bars && " · 24h market, no daily open"}
             {fibSummary && ` · ${fibSummary}`}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
