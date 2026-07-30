@@ -225,13 +225,21 @@ function timelineLabel(label: string): string {
 }
 
 function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
-  // One node per date — two catalysts can share a day (the card list below
-  // keeps both); prefer the hot one so the binary never gets shadowed.
+  // One node per date, but a day is rarely one event. July 30 carried the PCE
+  // print *and* Apple's and Amazon's results; the strip showed PCE alone,
+  // because the node kept the hot row and dropped the rest — so the biggest
+  // earnings of the quarter were invisible on the schedule while sitting in
+  // the data the whole time.
+  //
+  // The lead is still the hot row (the binary must never be shadowed). What
+  // changed is that the others on that date are carried alongside it.
   const byDate = new Map<string, CalRow>();
+  const alsoOn = new Map<string, CalRow[]>();
   for (const c of timeline) {
     const key = `${c.day}-${c.dateLabel}`;
     const existing = byDate.get(key);
     if (!existing || (c.hot && !existing.hot)) byDate.set(key, c);
+    alsoOn.set(key, [...(alsoOn.get(key) ?? []), c]);
   }
   const nodes = Array.from(byDate.values());
   const firstAhead = nodes.findIndex((n) => !n.past);
@@ -247,6 +255,33 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
   const startsWeek = nodes.map(
     (n, i) => i > 0 && weekStart(n.date) !== weekStart(nodes[i - 1].date),
   );
+
+  /**
+   * The tickers reporting on this date, for a second line under the lead.
+   *
+   * Only rows from the earnings feed (`source: "earnings"`) — those are the
+   * ones that get shadowed, and a ticker is what you scan a schedule for.
+   * Authored catalysts are long prose and already read in the detail list
+   * below; putting one here truncated to "Q2 GDP Advance Estimate (8:30 AM…"
+   * spent the whole line saying nothing.
+   *
+   * Anything the lead already names is dropped, so a node never reads
+   * "AAPL Q2 AH … · AAPL".
+   */
+  const reportingOn = (c: CalRow): string[] => {
+    const key = `${c.day}-${c.dateLabel}`;
+    const lead = timelineLabel(c.label).toLowerCase();
+    const seen = new Set<string>();
+    return (alsoOn.get(key) ?? [])
+      .filter((o) => o !== c && o.source === "earnings")
+      .map((o) => timelineLabel(o.label).split(/\s+/)[0])
+      .filter((t) => {
+        if (!t || seen.has(t) || lead.includes(t.toLowerCase())) return false;
+        seen.add(t);
+        return true;
+      })
+      .slice(0, 4);
+  };
 
   const scroller = useRef<HTMLDivElement>(null);
   const nodeW = useNodeWidth();
@@ -393,6 +428,14 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
                 }`}
               >
                 {timelineLabel(c.label)}
+                {/* Everything else happening that day. Quieter than the lead,
+                    but present — a schedule that hides Amazon's results behind
+                    a macro print isn't a schedule. */}
+                {reportingOn(c).length > 0 && (
+                  <span className="mt-1 block font-mono text-[9.5px] leading-tight text-[var(--faint)]">
+                    {reportingOn(c).join(" · ")} earnings
+                  </span>
+                )}
                 {c.hot && (
                   <b className="mt-1 block font-mono text-[9.5px] font-bold uppercase tracking-[0.12em] text-[var(--down)]">
                     {c.tMinus === 0 ? "today" : `T−${c.tMinus}`}
