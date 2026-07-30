@@ -184,7 +184,6 @@ const CHART_SYMBOLS = [
   "CL=F",
   "^KS11",
   "000660.KS",
-  "SNDK",
 ];
 const CHART_LABELS: Record<string, string> = {
   "^GSPC": "S&P 500",
@@ -207,7 +206,6 @@ const CHART_LABELS: Record<string, string> = {
   // Quoted in won, unlike every other price chart here — the label says so,
   // because a bare "570,000" reads as dollars next to Nvidia and Micron.
   "000660.KS": "SK Hynix (KRW)",
-  SNDK: "SanDisk",
 };
 
 // --- the week, on a clock (Idea 04) -------------------------------------------
