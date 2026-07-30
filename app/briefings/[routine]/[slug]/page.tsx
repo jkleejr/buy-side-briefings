@@ -8,7 +8,6 @@ import {
   getCalendarEvents,
   getVerdictByRef,
 } from "@/lib/data";
-import { getSpxDailyCloses, type DailyClose } from "@/lib/markets";
 import {
   formatBriefingTitle,
   formatRelativeTime,
@@ -45,22 +44,8 @@ export default async function BriefingPage({
   const verdictRef = briefing.verdict_ref;
   const verdict = verdictRef ? getVerdictByRef(verdictRef) : null;
 
-  // The regime figure still wants SPX closes; nothing is graded against them.
-  const spxSeries =
-    verdict && verdict.routine === "markets" ? await getSpxDailyCloses(9) : [];
-
   const points = verdict?.verdict.supporting_data ?? [];
   const fullReadMin = readMinutes(briefing.body);
-
-  // The regime picture: SPX vs its floor (10 sessions up to the briefing
-  // date). Drawn from numbers the verdict already carries. The VIX gate was
-  // retired 2026-07-25 — VIX rows in older verdicts are filtered out below.
-  const spxGate = verdict?.regime_risk?.find(
-    (r) => /spx/i.test(r.name) && r.trigger_below != null,
-  );
-  const chartSeries = spxGate
-    ? spxSeries.filter((d) => d.date <= briefing.date).slice(-10)
-    : [];
 
   return (
     <article className="mx-auto max-w-3xl space-y-4">
@@ -101,10 +86,6 @@ export default async function BriefingPage({
               next={nextCatalyst(briefing.date)}
             />
           </Tier>
-
-          {chartSeries.length >= 4 && spxGate && (
-            <RegimeFigure series={chartSeries} floor={spxGate} />
-          )}
 
           {points.length > 0 && (
             <Tier label={`${readMinutes(points.map((p) => p.label).join(" "))} min · the evidence`}>
@@ -528,89 +509,3 @@ function FullRead({ body }: { body: string }) {
   );
 }
 
-// ---------------------------------------------------------------------------
-// One picture per briefing — SPX vs its regime floor over the ten sessions
-// into the briefing. No new data: the floor is the verdict's own regime_risk
-// number. (The VIX gauge that used to share this figure was retired with the
-// VIX gate on 2026-07-25.)
-// ---------------------------------------------------------------------------
-
-function RegimeFigure({
-  series,
-  floor,
-}: {
-  series: DailyClose[];
-  floor: RegimeIndicator;
-}) {
-  const closes = series.map((d) => d.close);
-  const latest = closes[closes.length - 1];
-  const floorLevel = floor.trigger_below as number;
-  const above = latest - floorLevel;
-  const tone = above >= 0 ? "var(--up)" : "var(--down)";
-
-  const W = 320;
-  const H = 120;
-  const TOP = 12;
-  const BOT = 104;
-  const min = Math.min(...closes, floorLevel);
-  const max = Math.max(...closes);
-  const pad = Math.max((max - min) * 0.08, 1);
-  const y = (v: number) =>
-    BOT - ((v - (min - pad)) / (max + pad - (min - pad))) * (BOT - TOP);
-  const x = (i: number) =>
-    closes.length > 1 ? (i / (closes.length - 1)) * W : W;
-  const line = closes.map((c, i) => `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${y(c).toFixed(1)}`).join(" ");
-  const area = `${line} L${W},${H} L0,${H} Z`;
-  const floorY = y(floorLevel);
-
-  return (
-    <figure className="my-0 border-y border-[var(--border)] py-5">
-      <div>
-        <svg
-          viewBox={`0 0 ${W} ${H}`}
-          className="h-[120px] w-full"
-          role="img"
-          aria-label={`S&P 500 over its last ten sessions against the ${floorLevel.toLocaleString("en-US")} regime floor`}
-        >
-          <defs>
-            <linearGradient id="spx-fill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor={tone} stopOpacity="0.18" />
-              <stop offset="100%" stopColor={tone} stopOpacity="0" />
-            </linearGradient>
-          </defs>
-          <line
-            x1="0"
-            y1={floorY}
-            x2={W}
-            y2={floorY}
-            stroke="var(--down)"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-            opacity="0.7"
-          />
-          <text
-            x="4"
-            y={Math.min(floorY + 13, H - 4)}
-            fontFamily="var(--mono)"
-            fontSize="9"
-            fill="var(--down)"
-          >
-            FLOOR {floorLevel.toLocaleString("en-US")}
-          </text>
-          <path d={area} fill="url(#spx-fill)" />
-          <path d={line} fill="none" stroke={tone} strokeWidth="2" />
-          <circle cx={x(closes.length - 1)} cy={y(latest)} r="3.5" fill={tone} />
-        </svg>
-        <figcaption className="mt-2 font-mono text-[11px] tracking-[0.02em] text-[var(--dim)]">
-          SPX {latest.toLocaleString("en-US", { maximumFractionDigits: 0 })} ·{" "}
-          <span style={{ color: tone }}>
-            {above >= 0 ? "+" : "−"}
-            {Math.abs(Math.round(above)).toLocaleString("en-US")}{" "}
-            {above >= 0 ? "over" : "below"} the regime floor
-          </span>{" "}
-          · {closes.length}-session close
-        </figcaption>
-      </div>
-    </figure>
-  );
-}

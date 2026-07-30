@@ -476,19 +476,23 @@ function synthesizeBriefingBody(v: SynthesizableVerdict): string {
   // evidence tier renders them (with sources) above the full read, so writing
   // them here would print every point twice.
 
+  // Situations, not positions. The JSON still carries direction/conviction/entry
+  // because other parts of the site read the shape, but the page describes what
+  // is happening and the levels that define it — the reader decides whether to
+  // act on it. See the house rule in prompts/markets-website.md.
   const setups = v.trade_setups ?? [];
   if (setups.length) {
-    out.push("", "## Trade setups");
+    out.push("", "## Situations worth watching");
     for (const s of setups) {
       out.push(
         "",
-        `### ${s.asset} — ${s.direction} · ${s.conviction} conviction · ${s.horizon}`,
+        `### ${s.asset} — ${s.horizon}`,
         "",
         s.thesis,
         "",
-        `**Entry:** ${s.entry}`,
+        `**Levels in play:** ${s.entry}`,
         "",
-        `**Invalidation:** ${s.invalidation}`,
+        `**What would break it:** ${s.invalidation}`,
       );
     }
   }

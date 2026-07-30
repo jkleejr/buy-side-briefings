@@ -6,10 +6,13 @@ is the site's content backbone — the home page hero, the headlines, the market
 snapshot, the regime levels and (on days with no MDX) the entire briefing body
 all come from it, so these files must keep being written.
 
-**No standing verdict.** The buy / hold / step_aside / bearish code is retired:
-nothing renders it and nothing grades it. Write `verdict.headline` (what
-happened, plain English) and `rationale_short` (the read). A directional call
-belongs in `rationale_short` only when the tape warrants one — see
+**No verdict, and no buy/sell/hold call anywhere.** The buy / hold / step_aside
+/ bearish code is retired, and as of 2026-07-30 so is the softer version of it:
+the site does not tell readers what to do with their money. Write
+`verdict.headline` (what happened, plain English) and `rationale_short` (the
+read — what it means and what would change it). Describe the tape; do not
+instruct the reader. If a sentence could be rewritten as "so buy X" or "so sell
+X", rewrite it as what the evidence shows instead — see
 `prompts/markets-website.md` Step 3. **The routine
 prompts live in the cloud account, not in this repo** — this file is the
 in-repo source of truth. To change what a routine does, edit the cloud prompt
