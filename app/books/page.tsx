@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getThesis } from "@/lib/theses";
+import ProseMarkdown from "@/components/prose-markdown";
 import Panel from "@/components/panel";
 
 export const metadata = {
@@ -52,40 +53,49 @@ export default function BooksPage() {
         </p>
       </header>
 
-      <Panel code="SHELF" title="Standing reports from books">
-        <ul className="divide-y divide-[var(--border)]">
-          {entries.map((entry) => (
-            <li key={entry.slug}>
-              <Link
-                href={`/${entry.slug}`}
-                className="block px-3 py-3 transition-colors hover:bg-[rgba(255,165,0,0.06)]"
-              >
-                <div className="flex min-w-0 items-baseline gap-2">
-                  <h2 className="font-mono text-[13px] font-semibold tracking-tight text-[var(--amber)]">
-                    {entry.book}
-                  </h2>
-                  <span className="shrink-0 font-mono text-[10px] text-[var(--cyan-term)]">▸</span>
-                </div>
-                <p className="mt-0.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
-                  {entry.author} · {entry.published}
+      {/* The reports read here rather than behind a link. Each book used to
+          own a route, which made this page a table of contents that existed
+          only to send you one click further for the thing you came for — and
+          with a single book on the shelf, a contents page for one chapter. */}
+      {entries.map((entry) => {
+        const { meta, body } = entry.thesis!;
+        return (
+          <section key={entry.slug} className="space-y-1">
+            <div className="px-1 pt-3">
+              <h2 className="font-mono text-[15px] font-semibold tracking-tight text-[var(--amber)]">
+                {entry.book}
+              </h2>
+              <p className="mt-0.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
+                {entry.author} · {entry.published}
+              </p>
+              <p className="mt-2 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
+                {entry.note}
+              </p>
+            </div>
+
+            {meta.summary && (
+              <Panel code="TL;DR" title="The short version">
+                <p className="p-2 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
+                  {meta.summary}
                 </p>
-                <p className="mt-2 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
-                  {entry.note}
-                </p>
-                <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)]">
-                  Read {entry.thesis!.meta.title}
-                  {entry.thesis!.meta.updated && (
-                    <span className="text-[var(--dim)]">
-                      {" "}
-                      · revised {entry.thesis!.meta.updated}
-                    </span>
-                  )}
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Panel>
+              </Panel>
+            )}
+
+            <Panel
+              code="REPORT"
+              title={
+                meta.updated
+                  ? `${meta.title} · revised ${meta.updated}`
+                  : meta.title
+              }
+            >
+              <article className="px-3 py-2">
+                <ProseMarkdown>{body}</ProseMarkdown>
+              </article>
+            </Panel>
+          </section>
+        );
+      })}
 
       <p className="px-1 pt-2 font-mono text-[10px] leading-snug text-[var(--dim)]">
         Each report is a standing document, revised when the evidence moves — not a dated call.

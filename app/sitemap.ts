@@ -19,7 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ai-bubble",
     "/market-history",
     "/books",
-    "/black-swan",
     "/about",
     "/privacy",
     "/terms",
