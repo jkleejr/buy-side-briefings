@@ -137,7 +137,7 @@ export function getBojEvents(from: string): CalendarEvent[] {
     const close = new Date(`${m.date}T12:00:00Z`).getUTCDate();
     return {
       date: m.date,
-      label: `BoJ decision (${open}–${close})`,
+      label: `Bank of Japan (BoJ) decision (${open}–${close})`,
       kind: "BOJ",
       note: "Bank of Japan policy statement — lands overnight ET",
       source: "boj",

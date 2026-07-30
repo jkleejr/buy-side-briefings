@@ -215,7 +215,14 @@ const CHART_LABELS: Record<string, string> = {
 // hot — the at-a-glance layer; the detailed card list keeps the notes below.
 
 function timelineLabel(label: string): string {
-  const cut = label.split(/\s+[—–]\s+|\s*\(/)[0].trim();
+  // Drop the trailing parenthetical — the day span on "FOMC decision (28–29)",
+  // the "(est.)" on an unconfirmed earnings date — but only a trailing one.
+  // Cutting at the *first* "(" turned "Bank of Japan (BoJ) decision" into
+  // "Bank of Japan", eating the word that says what the event is.
+  const cut = label
+    .split(/\s+[—–]\s+/)[0]
+    .replace(/\s*\([^()]*\)\s*$/, "")
+    .trim();
   return cut.length > 44 ? `${cut.slice(0, 44).trim()}…` : cut;
 }
 
@@ -337,7 +344,13 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
           style={{ gridAutoColumns: `${nodeW}px` }}
         >
           <div className="absolute left-0 right-0 top-[46px] h-[2px] bg-[var(--border-strong)]" />
-          {nodes.map((c, i) => (
+          {nodes.map((c, i) => {
+            // Red marks a rate decision, not "the binary". The binary is still
+            // just one day (see BINARY_KINDS in lib/home-terminal), but a
+            // central bank meeting reads at the same weight on the strip, so
+            // BoJ gets the colour without claiming the title.
+            const accent = c.hot || c.kind.toUpperCase() === "BOJ";
+            return (
             <div
               key={`${c.dateLabel}-${i}`}
               data-node
@@ -364,32 +377,33 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
               </div>
               <div
                 className={`font-mono text-[19px] font-semibold tabular-nums leading-[1.15] ${
-                  c.hot ? "text-[var(--down)]" : "text-[var(--foreground)]"
+                  accent ? "text-[var(--down)]" : "text-[var(--foreground)]"
                 }`}
               >
                 {c.dateLabel.replace(/^[A-Za-z]+ /, "")}
               </div>
               <div
                 className={`relative z-[1] mx-auto my-2 h-[11px] w-[11px] rounded-full border-2 border-[var(--background)] ${
-                  c.hot
+                  accent
                     ? "bg-[var(--down)] shadow-[0_0_0_4px_color-mix(in_srgb,var(--down)_20%,transparent)]"
                     : "bg-[var(--border-strong)]"
                 }`}
               />
               <div
                 className={`mx-auto max-w-[150px] text-[12px] leading-[1.35] ${
-                  c.hot ? "font-semibold text-[var(--foreground)]" : "text-[var(--dim)]"
+                  accent ? "font-semibold text-[var(--down)]" : "text-[var(--dim)]"
                 }`}
               >
                 {timelineLabel(c.label)}
                 {c.hot && (
                   <b className="mt-1 block font-mono text-[9.5px] font-bold uppercase tracking-[0.12em] text-[var(--down)]">
-                    {c.tMinus === 0 ? "today" : `T−${c.tMinus}`} · the binary
+                    {c.tMinus === 0 ? "today" : `T−${c.tMinus}`}
                   </b>
                 )}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
