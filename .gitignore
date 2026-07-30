@@ -24,6 +24,15 @@
 .DS_Store
 *.pem
 
+# editor / IDE — local preferences, not the project's
+.vscode/
+.idea/
+*.swp
+
+# scratch
+/tmp/
+*.local.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*
