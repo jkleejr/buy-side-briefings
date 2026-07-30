@@ -172,6 +172,7 @@ const CHART_SYMBOLS = [
   "BTC-USD",
   "^VIX",
   "DX-Y.NYB",
+  "JPY=X",
   "GC=F",
   "^KS11",
   "000660.KS",
@@ -187,6 +188,9 @@ const CHART_LABELS: Record<string, string> = {
   "^VIX": "VIX",
   // Same symbol the ticker strip and /macro use — one dollar number sitewide.
   "DX-Y.NYB": "Dollar",
+  // Labelled as the pair, not "Yen", because the quote is dollars-per-yen: the
+  // line going up is the yen getting *weaker*. "Yen ▲" would read backwards.
+  "JPY=X": "USD/JPY",
   "GC=F": "Gold",
   "^KS11": "KOSPI",
   // Quoted in won, unlike every other price chart here — the label says so,
