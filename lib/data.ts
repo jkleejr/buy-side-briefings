@@ -797,7 +797,7 @@ export type CalendarEvent = {
    * calendar — the Kimi K3 / AI Day / lock-up material that is the point of the
    * strip. The rest are mechanical feeds merged in to fill the gaps.
    */
-  source?: "catalyst" | "fomc" | "macro" | "earnings";
+  source?: "catalyst" | "fomc" | "boj" | "macro" | "earnings";
 };
 
 export function getCalendarEvents(): CalendarEvent[] {
@@ -848,7 +848,7 @@ export function getCalendarTimeline(): CalendarEvent[] {
  * authoritative).
  */
 export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> {
-  const { getEarningsEvents, getFomcEvents, getMacroReleases } = await import(
+  const { getEarningsEvents, getFomcEvents, getBojEvents, getMacroReleases } = await import(
     "@/lib/calendar-feeds"
   );
 
@@ -858,15 +858,18 @@ export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> 
     getMacroReleases(from),
   ]);
   const fomc = getFomcEvents(from);
+  const boj = getBojEvents(from);
 
-  const RELEASE_WORDS = ["cpi", "ppi", "pce", "jobs", "payroll", "fomc"];
+  // "boj" is here so a hand-written "BoJ meeting" catalyst absorbs the feed row
+  // rather than printing beside it, the same way the FOMC pair already works.
+  const RELEASE_WORDS = ["cpi", "ppi", "pce", "jobs", "payroll", "fomc", "boj"];
   const wordOf = (label: string) =>
     RELEASE_WORDS.find((w) => label.toLowerCase().includes(w));
   const daysApart = (a: string, b: string) =>
     Math.abs(Date.parse(a) - Date.parse(b)) / 86_400_000;
 
   const swallowed = new Set<CalendarEvent>();
-  for (const feed of [...fomc, ...macro]) {
+  for (const feed of [...fomc, ...boj, ...macro]) {
     const w = wordOf(feed.label);
     if (!w) continue;
     const twin = authored.find(
@@ -883,6 +886,7 @@ export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> 
   const merged = [
     ...authored,
     ...fomc.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
+    ...boj.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
     ...macro.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
     ...earnings,
   ];

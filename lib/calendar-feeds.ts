@@ -33,6 +33,30 @@ const FOMC_2026: Array<{ date: string; through: string }> = [
 ];
 
 /**
+ * Bank of Japan Monetary Policy Meetings, from boj.or.jp's own published
+ * schedule. Eight a year, like the FOMC, and equally rarely moved.
+ *
+ * Dated on the SECOND day, not the first the way FOMC_2026 is, because that is
+ * the day the statement lands and the day the yen actually moves. `from` is the
+ * opening day, so the label can still show the full span.
+ *
+ * The decision is announced during the Tokyo lunch hour, which is the previous
+ * evening in New York — so the row carries no `time_et`. Putting a clock on it
+ * would either be wrong (a Tokyo time on an ET strip) or read as an intraday US
+ * event, when in practice you wake up to it.
+ */
+const BOJ_2026: Array<{ from: string; date: string }> = [
+  { from: "2026-01-22", date: "2026-01-23" },
+  { from: "2026-03-18", date: "2026-03-19" },
+  { from: "2026-04-27", date: "2026-04-28" },
+  { from: "2026-06-15", date: "2026-06-16" },
+  { from: "2026-07-30", date: "2026-07-31" },
+  { from: "2026-09-17", date: "2026-09-18" },
+  { from: "2026-10-29", date: "2026-10-30" },
+  { from: "2026-12-17", date: "2026-12-18" },
+];
+
+/**
  * FRED release IDs for the prints that actually move a session. Deliberately
  * short: every extra release is another row competing with the catalysts.
  */
@@ -102,6 +126,21 @@ export function getFomcEvents(from: string): CalendarEvent[] {
       kind: "FOMC",
       time_et: "2:00 PM",
       source: "fomc",
+    };
+  });
+}
+
+/** BoJ policy decisions from the table above, forward of `from`. */
+export function getBojEvents(from: string): CalendarEvent[] {
+  return BOJ_2026.filter((m) => m.date >= from).map((m) => {
+    const open = new Date(`${m.from}T12:00:00Z`).getUTCDate();
+    const close = new Date(`${m.date}T12:00:00Z`).getUTCDate();
+    return {
+      date: m.date,
+      label: `BoJ decision (${open}–${close})`,
+      kind: "BOJ",
+      note: "Bank of Japan policy statement — lands overnight ET",
+      source: "boj",
     };
   });
 }

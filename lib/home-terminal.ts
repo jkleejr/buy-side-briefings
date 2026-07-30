@@ -99,7 +99,7 @@ export type CalRow = {
   /** True for events already past; the timeline dims them. */
   past?: boolean;
   /** Where it came from — "catalyst" is the routine's hand-written material. */
-  source?: "catalyst" | "fomc" | "macro" | "earnings";
+  source?: "catalyst" | "fomc" | "boj" | "macro" | "earnings";
 };
 
 export type HomeData = {

@@ -412,7 +412,7 @@ function TimelineButton({
 
 function WeekAhead({ calendar }: { calendar: CalRow[] }) {
   if (!calendar.length) return null;
-  const hot = new Set(["CPI", "FOMC", "NFP", "PCE", "GEO"]);
+  const hot = new Set(["CPI", "FOMC", "BOJ", "NFP", "PCE", "GEO"]);
   return (
     <div>
       <SectionRule>Catalysts in detail</SectionRule>
