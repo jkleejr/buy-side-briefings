@@ -171,6 +171,7 @@ const CHART_SYMBOLS = [
   "MU",
   "BTC-USD",
   "^VIX",
+  "DX-Y.NYB",
   "GC=F",
   "^KS11",
   "000660.KS",
@@ -184,6 +185,8 @@ const CHART_LABELS: Record<string, string> = {
   MU: "Micron",
   "BTC-USD": "Bitcoin",
   "^VIX": "VIX",
+  // Same symbol the ticker strip and /macro use — one dollar number sitewide.
+  "DX-Y.NYB": "Dollar",
   "GC=F": "Gold",
   "^KS11": "KOSPI",
   // Quoted in won, unlike every other price chart here — the label says so,
