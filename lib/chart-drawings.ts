@@ -31,7 +31,12 @@ export type Shape =
   | ({ kind: "line"; x1: number; y1: number; x2: number; y2: number } & Styled)
   | ({ kind: "free"; pts: Array<[number, number]> } & Styled);
 
-export type DrawTool = "none" | "line" | "free";
+/**
+ * "fib" is a tool but not a shape: it sets the Fibonacci grid's anchors rather
+ * than adding to `shapes`, so it never reaches storage. It lives in this union
+ * because it competes for the same pointer.
+ */
+export type DrawTool = "none" | "line" | "free" | "fib";
 
 const STORAGE_PREFIX = "bsb.drawings.v1";
 /** Guard against a runaway pointer filling storage with one enormous path. */

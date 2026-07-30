@@ -27,6 +27,7 @@ import {
 } from "@/lib/levels";
 import {
   deriveFibonacci,
+  fibFromAnchors,
   nearestFibLevel,
   type FibAnalysis,
   type FibLevel,
@@ -79,6 +80,16 @@ const SIZES = {
 
 /** How many levels to show either side of the price. */
 const ZONES_PER_SIDE = 2;
+
+/**
+ * Floor on how far a zoom can go in. Below about a dozen bars the derived
+ * levels and the Fibonacci swing are being computed from noise, and the candles
+ * are wide enough to read as blocks rather than a series.
+ */
+const MIN_VISIBLE_BARS = 12;
+
+/** Wheel notch → zoom factor. Gentle enough that a trackpad flick isn't a leap. */
+const ZOOM_STEP = 1.18;
 
 /**
  * Share of the plot height the volume bars rise into, measured from the
@@ -295,6 +306,21 @@ export default function LevelsChart({
   const [showRSI, setShowRSI] = useState(false);
   const [showEMA, setShowEMA] = useState(false);
   const [showFib, setShowFib] = useState(false);
+  /**
+   * Hand-placed Fibonacci anchors, held in DATA space — an index into `allBars`
+   * and a price — not in screen or viewport coordinates. That is what lets the
+   * grid stay welded to the bars it was drawn on while you zoom and pan around
+   * it. Tagged with the series key so it drops when the picture changes.
+   */
+  const [fibAnchors, setFibAnchors] = useState<{
+    key: string;
+    a: { index: number; price: number };
+    b: { index: number; price: number };
+  } | null>(null);
+  const [fibDraft, setFibDraft] = useState<{
+    a: { index: number; price: number };
+    b: { index: number; price: number };
+  } | null>(null);
   // Candles carry direction bar by bar; the line carries shape. On a long
   // window the bodies get thin enough that the shape is what you're reading
   // anyway, so let it be read directly.
@@ -365,17 +391,66 @@ export default function LevelsChart({
     [current],
   );
   const visibleFrom = current?.visibleFrom ?? 0;
-  const bars = useMemo(
-    () => (allBars ? allBars.slice(visibleFrom) : null),
-    [allBars, visibleFrom],
+
+  /**
+   * The slice of `allBars` actually on screen, as [from, to) indices.
+   *
+   * null means "the window as fetched" — from `visibleFrom` to the end, which
+   * is what the range button asked for. Zooming out walks `from` back into the
+   * warm-up bars, which are already downloaded for the EMA/RSI runway, so
+   * pulling back past the window costs nothing and shows real history rather
+   * than empty gutter.
+   */
+  // Tagged with the series it was measured against. A symbol/range/interval
+  // change makes the indices meaningless, and comparing the tag drops them
+  // without a reset effect — the same trick `loaded` uses above, and for the
+  // same reason (setState inside an effect cascades a second render).
+  const [view, setView] = useState<{ key: string; from: number; to: number } | null>(
+    null,
   );
+  const liveView = view?.key === key ? view : null;
+
+  const total = allBars?.length ?? 0;
+  const clampedView = useMemo(() => {
+    if (!total) return { from: 0, to: 0 };
+    if (!liveView) return { from: Math.min(visibleFrom, total - 1), to: total };
+    const from = Math.max(0, Math.min(liveView.from, total - MIN_VISIBLE_BARS));
+    const to = Math.max(from + MIN_VISIBLE_BARS, Math.min(liveView.to, total));
+    return { from, to };
+  }, [liveView, total, visibleFrom]);
+
+  const bars = useMemo(
+    () => (allBars ? allBars.slice(clampedView.from, clampedView.to) : null),
+    [allBars, clampedView],
+  );
+
 
   const analysis = useMemo(() => (bars ? deriveLevels(bars) : null), [bars]);
 
   // Anchored to the dominant swing in the VISIBLE window, so the grid re-derives
   // on every range and symbol change rather than being a drawing that goes stale
   // the moment price makes a new high.
-  const fib = useMemo(() => (bars ? deriveFibonacci(bars) : null), [bars]);
+  const manualAnchors = useMemo(
+    () =>
+      fibDraft ??
+      (fibAnchors && fibAnchors.key === key
+        ? { a: fibAnchors.a, b: fibAnchors.b }
+        : null),
+    [fibDraft, fibAnchors, key],
+  );
+
+  const fib = useMemo(() => {
+    if (!bars) return null;
+    // A hand-drawn swing is built against the WHOLE series, not the slice on
+    // screen. Measuring it against the viewport made the grid shift as you
+    // zoomed — the pullback would fall outside the window and the extension
+    // targets would change or vanish under you. A swing you placed is a fact
+    // about the data; only the auto-detected one is supposed to follow the eye.
+    if (manualAnchors && allBars) {
+      return fibFromAnchors(allBars, manualAnchors.a, manualAnchors.b);
+    }
+    return deriveFibonacci(bars);
+  }, [bars, allBars, manualAnchors]);
   const fibOn = showFib && !compact && !!fib;
 
   // VIX is a calculated index: every bar reports volume 0. Intraday equity bars
@@ -456,25 +531,14 @@ export default function LevelsChart({
     // sanitizeBars already clamped the bad prints, so the true extremes of the
     // corrected series are trustworthy — no percentile trimming needed, and the
     // axis now matches exactly what gets drawn.
-    let lo = Math.min(analysis.low, analysis.price, ...zones.map((z) => z.lo));
-    let hi = Math.max(analysis.high, analysis.price, ...zones.map((z) => z.hi));
+    const lo = Math.min(analysis.low, analysis.price, ...zones.map((z) => z.lo));
+    const hi = Math.max(analysis.high, analysis.price, ...zones.map((z) => z.hi));
 
-    // Retracements always land inside the swing, so they need no room. Extension
-    // targets project BEYOND it by definition — leave the domain alone and every
-    // one of them clips off the top, which defeats the point of drawing a target.
-    // So the domain opens up to fit them. This is the one overlay that rescales
-    // the plot, and deliberately: a target you can't see isn't a target. The
-    // price action still keeps at least half the height, and anything past that
-    // stays clipped and is named in the caption instead of flattening the candles.
-    if (fibOn && fib && fib.extensions.length) {
-      const room = hi - lo;
-      const targets = fib.extensions.map((e) => e.price);
-      const tHi = Math.max(...targets);
-      const tLo = Math.min(...targets);
-      if (tHi > hi) hi = Math.min(tHi, hi + room);
-      // Down-leg targets can project through zero; the axis stops there.
-      if (tLo < lo) lo = Math.max(tLo, lo - room, 0);
-    }
+    // Extension targets deliberately do NOT open the domain. They project beyond
+    // the swing by definition, so fitting them stretched the axis until the
+    // candles were a strip along the bottom — turning the FIB toggle into a
+    // "squash the price action" button. The scale now answers only to price, and
+    // targets outside the frame clip at the edge; zoom out to bring them in.
 
     // Long windows span orders of magnitude — NVDA's full history runs 0.03 to
     // 236, a 7,000x range that flattens 25 years into a line on the bottom
@@ -487,6 +551,9 @@ export default function LevelsChart({
     const plotH = H - PAD_T - PAD_B;
 
     let y: (v: number) => number;
+    // Inverse of y — turns a pointer position back into a price, which is what
+    // the Fibonacci draw tool anchors on.
+    let yInv: (py: number) => number;
     if (useLog) {
       const l0 = Math.log(lo);
       const l1 = Math.log(hi);
@@ -495,11 +562,13 @@ export default function LevelsChart({
       const b = l1 + padL;
       y = (v: number) =>
         PAD_T + (1 - (Math.log(Math.max(v, Number.EPSILON)) - a) / (b - a)) * plotH;
+      yInv = (py: number) => Math.exp(a + (1 - (py - PAD_T) / plotH) * (b - a));
     } else {
       const pad = (hi - lo) * 0.06 || 1;
       const a = lo - pad;
       const b = hi + pad;
       y = (v: number) => PAD_T + (1 - (v - a) / (b - a)) * plotH;
+      yInv = (py: number) => a + (1 - (py - PAD_T) / plotH) * (b - a);
     }
 
     const x = (i: number) => PAD_L + (i / (bars.length - 1)) * (W - PAD_L - PAD_R);
@@ -513,8 +582,8 @@ export default function LevelsChart({
         ? volBase - Math.max(v > 0 ? 1 : 0, (v / maxVolume) * (volBase - volTop))
         : volBase;
 
-    return { x, y, useLog, volTop, volBase, volY };
-  }, [bars, analysis, zones, H, PAD_R, maxVolume, fibOn, fib]);
+    return { x, y, yInv, useLog, volTop, volBase, volY };
+  }, [bars, analysis, zones, H, PAD_R, maxVolume]);
 
   // One "M…L…" through the closes. Built here rather than inline so it isn't
   // re-joined on every hover — the crosshair sets state on pointer move.
@@ -558,8 +627,10 @@ export default function LevelsChart({
   // screen, instead of seeding from the window and fading in partway across.
   const rsi = useMemo(
     () =>
-      allBars ? computeRSI(allBars.map((b) => b.close)).slice(visibleFrom) : [],
-    [allBars, visibleFrom],
+      allBars
+        ? computeRSI(allBars.map((b) => b.close)).slice(clampedView.from, clampedView.to)
+        : [],
+    [allBars, clampedView.from, clampedView.to],
   );
   const rsiOn = showRSI && !compact;
 
@@ -571,10 +642,10 @@ export default function LevelsChart({
     const closes = allBars.map((b) => b.close);
     return EMA_CONFIGS.map((cfg) => ({
       ...cfg,
-      values: computeEMA(closes, cfg.period).slice(visibleFrom),
+      values: computeEMA(closes, cfg.period).slice(clampedView.from, clampedView.to),
       hasData: closes.length >= cfg.period,
     }));
-  }, [allBars, visibleFrom]);
+  }, [allBars, clampedView.from, clampedView.to]);
   const emaOn = showEMA && !compact;
   const activeEmas = emaOn ? emas.filter((e) => e.hasData) : [];
   const rsiTop = H - PAD_B + RSI_GAP;
@@ -624,6 +695,106 @@ export default function LevelsChart({
     [plotW, plotH, viewH],
   );
 
+  // ---- zoom & pan ---------------------------------------------------------
+  // Scroll zooms the time axis around the cursor; dragging with the crosshair
+  // pans. The price scale is not controlled directly — it re-fits whatever bars
+  // end up on screen, which is what makes zooming feel like it reveals detail
+  // rather than just stretching the picture.
+
+  /** Fraction (0–1) across the plot for a client x, clamped to the plot. */
+  const plotFrac = useCallback(
+    (clientX: number) => {
+      const el = svgRef.current;
+      if (!el) return 0.5;
+      const r = el.getBoundingClientRect();
+      const scaleX = r.width / W;
+      const left = r.left + PAD_L * scaleX;
+      const width = (W - PAD_L - PAD_R) * scaleX;
+      if (width <= 0) return 0.5;
+      return Math.max(0, Math.min(1, (clientX - left) / width));
+    },
+    [PAD_R],
+  );
+
+  const zoomAt = useCallback(
+    (deltaY: number, clientX: number) => {
+      if (compact || !total) return;
+      const cur = clampedView;
+      const span = cur.to - cur.from;
+      const factor = deltaY > 0 ? ZOOM_STEP : 1 / ZOOM_STEP;
+      const nextSpan = Math.round(
+        Math.max(MIN_VISIBLE_BARS, Math.min(total, span * factor)),
+      );
+      if (nextSpan === span) return;
+      // Hold the bar under the cursor still, so zooming reads as moving toward
+      // the thing you're pointing at rather than toward the middle.
+      const frac = plotFrac(clientX);
+      const anchor = cur.from + frac * span;
+      let from = Math.round(anchor - frac * nextSpan);
+      from = Math.max(0, Math.min(from, total - nextSpan));
+      setView({ key, from, to: from + nextSpan });
+    },
+    [compact, total, clampedView, plotFrac, key],
+  );
+
+  // Registered by hand, non-passive. React routes onWheel through a passive
+  // root listener, so preventDefault() there is ignored and the page scrolls
+  // away underneath the cursor instead of the chart zooming.
+  useEffect(() => {
+    const el = svgRef.current;
+    if (!el || compact) return;
+    const handler = (e: WheelEvent) => {
+      // Let a horizontal trackpad gesture and browser page-zoom through.
+      if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+      e.preventDefault();
+      zoomAt(e.deltaY, e.clientX);
+    };
+    el.addEventListener("wheel", handler, { passive: false });
+    return () => el.removeEventListener("wheel", handler);
+  }, [zoomAt, compact]);
+
+  /**
+   * Pointer position → an anchor in data space: an absolute index into
+   * `allBars` plus the price under the cursor. Storing anchors this way (rather
+   * than as screen or 0–1 viewport coordinates, which is how freehand shapes
+   * work) is what keeps a drawn Fibonacci grid pinned to its bars through zoom
+   * and pan.
+   */
+  const dataPoint = useCallback(
+    (clientX: number, clientY: number) => {
+      const el = svgRef.current;
+      if (!el || !scale || !bars || !bars.length) return null;
+      const r = el.getBoundingClientRect();
+      const span = clampedView.to - clampedView.from;
+      const i = Math.round(plotFrac(clientX) * (span - 1));
+      const py = ((clientY - r.top) / r.height) * viewH;
+      return {
+        index: clampedView.from + Math.max(0, Math.min(span - 1, i)),
+        price: scale.yInv(py),
+      };
+    },
+    [scale, bars, clampedView, plotFrac, viewH],
+  );
+
+  const fibDrag = useRef<{ a: { index: number; price: number } } | null>(null);
+
+  const pan = useRef<{ x: number; from: number; span: number } | null>(null);
+
+  const onPanMove = useCallback(
+    (clientX: number) => {
+      const p = pan.current;
+      const el = svgRef.current;
+      if (!p || !el) return;
+      const r = el.getBoundingClientRect();
+      const pxPerBar = (r.width * ((W - PAD_L - PAD_R) / W)) / p.span;
+      if (!(pxPerBar > 0)) return;
+      const shift = Math.round((p.x - clientX) / pxPerBar);
+      const from = Math.max(0, Math.min(p.from + shift, total - p.span));
+      setView({ key, from, to: from + p.span });
+    },
+    [total, PAD_R, key],
+  );
+
   // The live stroke lives in a ref as well as state: the window listeners below
   // are attached once per gesture, so they must not close over a stale draft.
   const live = useRef<Shape | null>(null);
@@ -631,7 +802,26 @@ export default function LevelsChart({
 
   const onPointerDown = useCallback(
     (ev: React.PointerEvent<SVGSVGElement>) => {
-      if (tool === "none") return;
+      // Crosshair is the resting state, so that's the one that pans — arming a
+      // drawing tool takes the gesture over, exactly as it already did.
+      if (tool === "none") {
+        if (compact || !total) return;
+        pan.current = {
+          x: ev.clientX,
+          from: clampedView.from,
+          span: clampedView.to - clampedView.from,
+        };
+        setDragging(true);
+        return;
+      }
+      if (tool === "fib") {
+        const p = dataPoint(ev.clientX, ev.clientY);
+        if (!p) return;
+        fibDrag.current = { a: p };
+        setFibDraft({ a: p, b: p });
+        setDragging(true);
+        return;
+      }
       const [x, y] = norm(ev.clientX, ev.clientY);
       const shape: Shape =
         tool === "line"
@@ -641,7 +831,7 @@ export default function LevelsChart({
       setDraft({ key, shape });
       setDragging(true);
     },
-    [tool, norm, key, color],
+    [tool, norm, key, color, compact, total, clampedView, dataPoint],
   );
 
   // Move and release are tracked on the window rather than the SVG, so a stroke
@@ -651,6 +841,15 @@ export default function LevelsChart({
     if (!dragging) return;
 
     const onWinMove = (e: PointerEvent) => {
+      if (pan.current) {
+        onPanMove(e.clientX);
+        return;
+      }
+      if (fibDrag.current) {
+        const p = dataPoint(e.clientX, e.clientY);
+        if (p) setFibDraft({ a: fibDrag.current.a, b: p });
+        return;
+      }
       const cur = live.current;
       if (!cur) return;
       const [x, y] = norm(e.clientX, e.clientY);
@@ -665,6 +864,24 @@ export default function LevelsChart({
     };
 
     const onWinUp = () => {
+      if (pan.current) {
+        pan.current = null;
+        setDragging(false);
+        return;
+      }
+      if (fibDrag.current) {
+        const a = fibDrag.current.a;
+        fibDrag.current = null;
+        setDragging(false);
+        setFibDraft((d) => {
+          // A click with no drag isn't a swing — keep whatever was there.
+          if (d && Math.abs(d.b.index - a.index) >= 2 && d.b.price !== a.price) {
+            setFibAnchors({ key, a, b: d.b });
+          }
+          return null;
+        });
+        return;
+      }
       const cur = live.current;
       live.current = null;
       setDragging(false);
@@ -686,7 +903,7 @@ export default function LevelsChart({
       window.removeEventListener("pointerup", onWinUp);
       window.removeEventListener("pointercancel", onWinUp);
     };
-  }, [dragging, norm, key, shapes, commit]);
+  }, [dragging, norm, key, shapes, commit, onPanMove, dataPoint]);
 
   const onMove = useCallback(
     (ev: React.PointerEvent<SVGSVGElement>) => {
@@ -709,7 +926,13 @@ export default function LevelsChart({
   );
 
   const undo = useCallback(() => commit(shapes.slice(0, -1)), [shapes, commit]);
-  const clearAll = useCallback(() => commit([]), [commit]);
+  // Clear wipes the hand-placed Fibonacci swing too. Both are "things I drew on
+  // this chart"; having one button leave the other behind reads as a bug.
+  const clearAll = useCallback(() => {
+    commit([]);
+    setFibAnchors(null);
+    setFibDraft(null);
+  }, [commit]);
 
   // --- expand ----------------------------------------------------------------
   const [expanded, setExpanded] = useState(false);
@@ -769,6 +992,14 @@ export default function LevelsChart({
   // things you need to trust a fib. The 161.8% target is named here as well as
   // drawn, since it's the one level that can project off the top of the scale.
   const fibSummary = fibOn && fib ? describeFib(fib) : null;
+
+  /**
+   * Anchor index → the index the x-scale speaks. An auto-derived swing is
+   * already measured against the visible slice; a hand-drawn one is measured
+   * against the whole series (so it can't drift while you zoom), so it has to
+   * be shifted into the window before it can be drawn.
+   */
+  const fibX = (i: number) => (fib?.manual ? i - clampedView.from : i);
 
   return (
     <div
@@ -879,6 +1110,7 @@ export default function LevelsChart({
                 ["none", "Crosshair", "✛"],
                 ["line", "Straight line", "╱"],
                 ["free", "Freehand", "✎"],
+                ["fib", "Drag a Fibonacci swing", "𝑓"],
               ] as const
             ).map(([t, label, glyph]) => (
               <button
@@ -887,7 +1119,10 @@ export default function LevelsChart({
                 title={label}
                 aria-label={label}
                 aria-pressed={tool === t}
-                onClick={() => setTool(t)}
+                onClick={() => {
+                  setTool(t);
+                  if (t === "fib") setShowFib(true);
+                }}
                 className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[11px] leading-5 last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
                   tool === t
                     ? "bg-[var(--amber)] text-[var(--background)]"
@@ -933,7 +1168,7 @@ export default function LevelsChart({
           <button
             type="button"
             onClick={clearAll}
-            disabled={!shapes.length}
+            disabled={!shapes.length && !manualAnchors}
             className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
           >
             Clear
@@ -1065,6 +1300,8 @@ export default function LevelsChart({
             {!hasVolume && bars && " · no traded volume"}
             {bodiesCollapse && bars && " · 24h market — bodies run from the prior close"}
             {fibSummary && ` · ${fibSummary}`}
+            {fib?.manual && fibOn && " · swing set by hand"}
+            {liveView && bars && ` · zoomed to ${bars.length} bars — double-click to reset`}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
         </div>
@@ -1131,6 +1368,7 @@ export default function LevelsChart({
               onPointerMove={onMove}
               onPointerLeave={() => setHover(null)}
               onPointerDown={onPointerDown}
+              onDoubleClick={() => setView(null)}
               style={{
                 minHeight: compact ? undefined : expanded ? undefined : 420,
                 cursor: tool === "none" ? "crosshair" : "cell",
@@ -1199,9 +1437,9 @@ export default function LevelsChart({
                   {/* The leg the whole grid hangs off, so you can check the
                       anchor rather than take the levels on faith. */}
                   <line
-                    x1={scale.x(fib.start.index)}
+                    x1={scale.x(fibX(fib.start.index))}
                     y1={scale.y(fib.start.price)}
-                    x2={scale.x(fib.end.index)}
+                    x2={scale.x(fibX(fib.end.index))}
                     y2={scale.y(fib.end.price)}
                     stroke="var(--fib)"
                     strokeWidth={1}
@@ -1210,9 +1448,9 @@ export default function LevelsChart({
                   />
                   {fib.pullback && fib.extensions.length > 0 && (
                     <line
-                      x1={scale.x(fib.end.index)}
+                      x1={scale.x(fibX(fib.end.index))}
                       y1={scale.y(fib.end.price)}
-                      x2={scale.x(fib.pullback.index)}
+                      x2={scale.x(fibX(fib.pullback.index))}
                       y2={scale.y(fib.pullback.price)}
                       stroke="var(--fib)"
                       strokeWidth={1}
@@ -1224,7 +1462,7 @@ export default function LevelsChart({
                     (p, i) => (
                       <circle
                         key={`fib-anchor-${i}`}
-                        cx={scale.x(p.index)}
+                        cx={scale.x(fibX(p.index))}
                         cy={scale.y(p.price)}
                         r={2.6}
                         fill="var(--fib-strong)"
@@ -1254,7 +1492,7 @@ export default function LevelsChart({
                   <g clipPath={`url(#${clipId})`}>
                     {fib.extensions.map((l) => (
                       <line
-                        key={`fibx-${l.ratio}`}
+                        key={`fibx-${l.side}-${l.ratio}`}
                         x1={PAD_L}
                         x2={W - PAD_R}
                         y1={scale.y(l.price)}
@@ -1494,7 +1732,7 @@ export default function LevelsChart({
                     if (y < PAD_T + 4 || y > H - PAD_B - 2) return null;
                     return (
                       <text
-                        key={`fib-lbl-${l.kind}-${l.ratio}`}
+                        key={`fib-lbl-${l.kind}-${l.side ?? "r"}-${l.ratio}`}
                         x={PAD_L + 5}
                         y={y - 3.5}
                         fontFamily="var(--mono)"
@@ -1508,7 +1746,9 @@ export default function LevelsChart({
                           fontWeight={l.major ? 700 : 500}
                           opacity={l.major ? 1 : 0.85}
                         >
-                          {l.kind === "extension" ? `↗ ${l.label}` : l.label}
+                          {l.kind === "extension"
+                            ? `${l.side === "against" ? "↘" : "↗"} ${l.label}`
+                            : l.label}
                         </tspan>
                         <tspan fill="var(--dim)" dx={6}>
                           {fmtLevel(l.price)}

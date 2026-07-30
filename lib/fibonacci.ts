@@ -79,6 +79,14 @@ export type FibPoint = { index: number; price: number };
 export type FibLevel = FibRatio & {
   price: number;
   kind: "retracement" | "extension";
+  /**
+   * Which way an extension projects off the pullback. "with" runs in the swing's
+   * own direction (the classical target); "against" mirrors it on the far side,
+   * so a grid carries targets above *and* below rather than only where the leg
+   * happened to be pointing. Undefined on retracements, which sit inside the
+   * leg by construction.
+   */
+  side?: "with" | "against";
 };
 
 export type FibAnalysis = {
@@ -99,6 +107,8 @@ export type FibAnalysis = {
   levels: FibLevel[];
   /** Empty until the pullback clears MIN_PULLBACK — see the constant. */
   extensions: FibLevel[];
+  /** True when the reader set the anchors by hand instead of auto-detection. */
+  manual?: boolean;
 };
 
 /**
@@ -192,14 +202,28 @@ export function deriveFibonacci(bars: ChartPoint[]): FibAnalysis | null {
   const pullback = findPullback(bars, b, direction);
   const retraced = pullback ? (b.price - pullback.price) / span : null;
 
-  // Standard three-point extension: project the A→B distance from C.
+  // Standard three-point extension: project the A→B distance from C — and then
+  // the same distance the other way. A swing tells you how far this market
+  // travels in a leg; that measure is just as valid pointing down as up, and a
+  // grid that only ever projects one way silently assumes the trend continues.
+  // Mirrored levels are marked "against" so the chart can draw them quieter.
   const extensions: FibLevel[] =
     pullback && retraced !== null && retraced >= MIN_PULLBACK
-      ? EXTENSION_RATIOS.map((r) => ({
-          ...r,
-          price: pullback.price + span * r.ratio,
-          kind: "extension" as const,
-        }))
+      ? EXTENSION_RATIOS.flatMap((r) => [
+          {
+            ...r,
+            price: pullback.price + span * r.ratio,
+            kind: "extension" as const,
+            side: "with" as const,
+          },
+          {
+            ...r,
+            price: pullback.price - span * r.ratio,
+            kind: "extension" as const,
+            side: "against" as const,
+            note: `${r.note} — mirrored below the pullback`,
+          },
+        ]).filter((e) => e.price > 0)
       : [];
 
   return {
@@ -212,6 +236,76 @@ export function deriveFibonacci(bars: ChartPoint[]): FibAnalysis | null {
     priceRatio: (b.price - price) / span,
     levels,
     extensions,
+  };
+}
+
+/**
+ * The same grid, but anchored to two points the reader chose rather than to the
+ * swing the window happens to contain.
+ *
+ * Auto-detection answers "what is the dominant leg here", which is the right
+ * default and wrong the moment you care about a leg it didn't pick. The maths is
+ * identical from A and B onward — only the anchors differ — so this shares
+ * everything below the swing and simply skips `findSwing`.
+ *
+ * The pullback (point C) is still measured from the bars, because extensions
+ * project from where price actually turned, not from where the reader clicked.
+ * With no qualifying pullback the grid is retracements only, exactly as the
+ * automatic path behaves.
+ */
+export function fibFromAnchors(
+  bars: ChartPoint[],
+  a: FibPoint,
+  b: FibPoint,
+): FibAnalysis | null {
+  if (!bars.length) return null;
+  const span = b.price - a.price;
+  const price = bars[bars.length - 1].close;
+  if (!(price > 0) || !(Math.abs(span) > 0)) return null;
+
+  const direction = span > 0 ? "up" : "down";
+  const retrace = (r: number) => b.price - span * r;
+
+  const levels: FibLevel[] = RETRACEMENT_RATIOS.map((r) => ({
+    ...r,
+    price: retrace(r.ratio),
+    kind: "retracement" as const,
+  }));
+
+  const bIdx = Math.max(0, Math.min(bars.length - 1, b.index));
+  const pullback = findPullback(bars, { index: bIdx, price: b.price }, direction);
+  const retraced = pullback ? (b.price - pullback.price) / span : null;
+
+  const extensions: FibLevel[] =
+    pullback && retraced !== null && retraced >= MIN_PULLBACK
+      ? EXTENSION_RATIOS.flatMap((r) => [
+          {
+            ...r,
+            price: pullback.price + span * r.ratio,
+            kind: "extension" as const,
+            side: "with" as const,
+          },
+          {
+            ...r,
+            price: pullback.price - span * r.ratio,
+            kind: "extension" as const,
+            side: "against" as const,
+            note: `${r.note} — mirrored below the pullback`,
+          },
+        ]).filter((e) => e.price > 0)
+      : [];
+
+  return {
+    direction,
+    start: a,
+    end: b,
+    pullback,
+    span,
+    retraced,
+    priceRatio: (b.price - price) / span,
+    levels,
+    extensions,
+    manual: true,
   };
 }
 
