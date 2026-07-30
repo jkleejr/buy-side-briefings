@@ -406,7 +406,12 @@ export default function LevelsChart({
     return ratios[Math.floor(ratios.length / 2)] < 0.2;
   }, [bars]);
 
-  const mode: "candle" | "line" = modePin ?? (bodiesCollapse ? "line" : "candle");
+  // Candles by default again. This used to fall back to a line whenever
+  // `bodiesCollapse` was true, because the bodies were hairlines — but that was
+  // treating the symptom. Now the body is measured from the prior close on
+  // those series, so the candles carry the day's move and there is nothing to
+  // route around.
+  const mode: "candle" | "line" = modePin ?? "candle";
 
   // Only the levels in play: a couple either side of the price. A ceiling 60%
   // overhead is real history but says nothing about the next move, and every
@@ -894,7 +899,7 @@ export default function LevelsChart({
             title={
               mode === "line"
                 ? bodiesCollapse
-                  ? "Switch to candles — this series has no real open, so the bodies will be flat"
+                  ? "Switch to candles — body measured from the prior close, since this market has no daily open"
                   : "Switch to candles — open, high, low and close per bar"
                 : "Switch to a line through the closes"
             }
@@ -1012,7 +1017,7 @@ export default function LevelsChart({
                 ? "levels re-derived for this window"
                 : "levels hidden"}
             {!hasVolume && bars && " · no traded volume"}
-            {bodiesCollapse && bars && " · 24h market, no daily open"}
+            {bodiesCollapse && bars && " · 24h market — bodies run from the prior close"}
             {fibSummary && ` · ${fibSummary}`}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
           </span>
@@ -1235,7 +1240,12 @@ export default function LevelsChart({
                   {bars.map((b, i) => {
                     const v = b.volume ?? 0;
                     if (v <= 0) return null;
-                    const o = b.open ?? b.close;
+                    // Same direction rule as the candle body above, so a bar
+                    // and its volume never disagree about the day.
+                    const o =
+                      bodiesCollapse && i > 0
+                        ? bars[i - 1].close
+                        : (b.open ?? b.close);
                     const up = b.close >= o;
                     const bw = Math.max(
                       1,
@@ -1285,7 +1295,16 @@ export default function LevelsChart({
                 </>
               ) : (
               bars.map((b, i) => {
-                const o = b.open ?? b.close;
+                // Where the body starts. Normally the session open — but on a
+                // series whose open is unusable (see bodiesCollapse) that field
+                // would draw a hairline that hides the day's actual move, so
+                // the body runs from the previous close instead. That is the
+                // standard reading for a market that never closes: the bar
+                // shows where price went since the last one.
+                const o =
+                  bodiesCollapse && i > 0
+                    ? bars[i - 1].close
+                    : (b.open ?? b.close);
                 const hi = b.high ?? b.close;
                 const lo = b.low ?? b.close;
                 const up = b.close >= o;
@@ -1611,17 +1630,21 @@ export default function LevelsChart({
                     timeZone: INTRADAY_RANGES.has(range) ? "America/New_York" : "UTC",
                   })}
                 </span>
-                {hoveredBar.open != null &&
-                  hoveredBar.high != null &&
-                  hoveredBar.low != null && (
-                    <>
-                      <br />
-                      <span className="text-[var(--dim)]">
-                        O {hoveredBar.open.toFixed(2)} · H {hoveredBar.high.toFixed(2)} · L{" "}
-                        {hoveredBar.low.toFixed(2)}
-                      </span>
-                    </>
-                  )}
+                {hoveredBar.high != null && hoveredBar.low != null && (
+                  <>
+                    <br />
+                    <span className="text-[var(--dim)]">
+                      {/* Don't quote an open the chart doesn't believe. On a
+                          collapsed series the feed's open is noise, so the
+                          tooltip drops it rather than printing a number that
+                          contradicts the body drawn above it. */}
+                      {!bodiesCollapse && hoveredBar.open != null && (
+                        <>O {hoveredBar.open.toFixed(2)} · </>
+                      )}
+                      H {hoveredBar.high.toFixed(2)} · L {hoveredBar.low.toFixed(2)}
+                    </span>
+                  </>
+                )}
                 {(hoveredBar.volume ?? 0) > 0 && (
                   <>
                     <br />
