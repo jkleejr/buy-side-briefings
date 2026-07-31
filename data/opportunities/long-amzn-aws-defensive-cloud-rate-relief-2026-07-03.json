@@ -42,7 +42,7 @@
   ],
   "created_at": "2026-07-03",
   "expires_at": "2026-08-21",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "AMZN",
     "AWS",
@@ -54,7 +54,13 @@
     "Q2-earnings",
     "AI-infrastructure"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-31",
+    "final_price": 260.0,
+    "return_pct": 12.1,
+    "outcome_label": "Target 1 hit at $260",
+    "note": "AMZN intraday reached $260.05 on July 30 following Q2 2026 earnings: AWS grew 37% YoY to $42.2B — the fastest in 18 quarters — vastly exceeding the $29B target 1 catalyst. AI and chip businesses each exceeded $25B annual run rates. Operating income of $27.5B (~$110B annualized) confirmed the fundamental thesis. Stock is pre-market at ~$268 on July 31; target 1 locked in at $260 on the July 30 intraday print. Return computed from creation price of $232."
+  },
   "levels": {
     "entry_low": 238.0,
     "entry_high": 250.0,

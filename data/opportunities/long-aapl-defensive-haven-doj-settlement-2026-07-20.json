@@ -38,7 +38,7 @@
   ],
   "created_at": "2026-07-20",
   "expires_at": "2026-09-15",
-  "status": "active",
+  "status": "thesis_broken",
   "tags": [
     "AAPL",
     "Apple",
@@ -50,7 +50,13 @@
     "mega-cap",
     "contrarian"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-07-31",
+    "final_price": 309.0,
+    "return_pct": -8.3,
+    "outcome_label": "Thesis broken — Q3 triple miss",
+    "note": "Apple Q3 FY2026 earnings (reported July 30 AH) produced three simultaneous misses: services $30.74B vs $31.22B estimate, China $18.82B vs $19.6B estimate, and Q4 guidance +9–11% vs 12% consensus. AAPL opened July 31 pre-market at ~$309 (−7.2% from ~$332 July 30 close), well below the $319 daily-close stop. The 'defensive mega-cap haven' thesis was premised on AAPL's insulation from Kimi K3 disruption and DOJ settlement optionality. Neither held: services deceleration is not a one-quarter event at this breadth, and China share loss signals structural pressure not covered by the DOJ narrative. Position exited based on pre-market print at $309 consistent with thesis_broken invalidation clause."
+  },
   "levels": {
     "entry_low": 330.0,
     "entry_high": 340.0,
