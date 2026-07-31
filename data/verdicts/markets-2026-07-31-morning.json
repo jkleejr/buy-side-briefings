@@ -1,0 +1,142 @@
+{
+  "routine": "markets",
+  "date": "2026-07-31",
+  "window": "morning",
+  "generated_at": "2026-07-31T12:45:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "headline": "Amazon's blowout cloud quarter and cooling inflation clear the path for an equity recovery",
+    "label": "BUY (medium conviction) — 3 of 6 triggers active (Brent crude, WTI crude, 30Y yield — all trending lower); AMZN AWS +37% (18-quarter high) double-validates cloud AI ROI alongside MSFT Azure +43%; GDP +1.5% + Core PCE +0.1% MoM drove September hike prob to ~40%; AAPL triple-miss AH (-6%) and NVDA circular financing (Aug 26) are the residual risk legs",
+    "conviction": "medium",
+    "horizon": "1-2 weeks",
+    "rationale_short": "The macro clearing sequence prescribed across prior briefings is complete: GDP Q2 advance +1.5% annualized (well below 2.1% consensus) and Core PCE June +0.1% MoM (below 0.2% expected) delivered a double-soft print that drove September hike probability from 58% to approximately 40%, collapsing DXY to 100.12 (-0.75%) and compressing the VIX further to 17.09. AMZN AWS $42.2B (+37% YoY, fastest in 18 quarters, far ahead of the 31.6% estimate) completes the cloud AI ROI double-validation alongside MSFT's Azure +43% — the two largest hyperscalers have now simultaneously confirmed that enterprise AI compute demand is organic and generating infrastructure revenue at scale. SPX closed July 30 at 7,416, maintaining its reclaim above the 7,380 BEARISH-conversion threshold, with ES futures +0.5% and NQ futures +1.2% pointing toward continuation on Friday. The regime count has improved to 3 of 6 indicators breached (Brent crude ~$86, WTI ~$82, 30Y yield ~5.05%), down from 4 of 6 the prior morning, with all three residual breaches trending lower. Limiting factors preventing maximum conviction: AAPL's three simultaneous AH misses (services $30.74B vs $31.22B estimate, China $18.82B vs $19.67B, Q4 guidance +9-11% vs >12% consensus) open a quality-rotation headwind at the open; and NVDA's circular financing structure ($250B OpenAI backstop + $350B chip financing) remains unresolved until the Aug 26 Q2 FY27 call. Add to AI monetization leaders (MSFT, AMZN) on open weakness; monitor AAPL $315 as the structural dividing line; NVDA flat through Aug 26.",
+    "supporting_data": [
+      {
+        "label": "★★★ AMZN Q2 2026: AWS $42.2B (+37% YoY, fastest in 18 quarters, beat 31.6% estimate); net sales $200.6B (+20%, first $200B quarter); operating income $27.5B (+43% YoY, beat $23.57B estimate); AWS operating margin 39.4% (+650bps YoY); AI and custom chip each >$25B annual run rate at triple-digit growth; AMZN AH +9.5% to ~$257",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-q2-2026-earnings-aws-204411872.html"
+      },
+      {
+        "label": "★★★ GDP Q2 2026 advance +1.5% annualized (vs 2.1% consensus, prior Q1 +2.1%); real GDP growth slowed as tariffs and Iran war headwinds offset consumer spending and investment gains; print cleared the prior briefing's <1.8% soft threshold",
+        "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026"
+      },
+      {
+        "label": "★★★ Core PCE June +0.1% MoM (below 0.2% expected, prior +0.3%) / +3.3% YoY (down from 3.4% May); headline PCE -0.1% MoM (first monthly decline in 6 years, Iran ceasefire drove energy cost reduction); September hike probability collapsed toward ~40%; DXY -0.75% to 100.12, VIX compressed to 17.09",
+        "url": "https://www.advisorperspectives.com/dshort/updates/2026/07/30/core-pce-inflation-at-3-3-in-june-edging-down-from-may"
+      },
+      {
+        "label": "★★ AAPL Q3 FY26 AH: Rev $109.42B beat (+16% YoY), EPS $2.02 beat (+29% YoY, includes $0.11/share non-recurring tariff refund) — but services $30.74B missed $31.22B estimate, Greater China $18.82B missed $19.67B estimate, Q4 guidance +9-11% missed >12% consensus; Tim Cook's final earnings call as CEO (John Ternus succeeds Sept 1); stock -6%+ AH to ~$313",
+        "url": "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html"
+      },
+      {
+        "label": "★★ SPX 7,416 (+1.36%), Nasdaq 25,122 (+2.78%, best session since June): MSFT +16.7% (Azure $100B annual revenue milestone, AI ARR $37B +123% YoY) drove the Thursday recovery; SPX sustained above 7,380 threshold; ES futures +0.5%, NQ futures +1.2% Friday premarket",
+        "url": "https://www.washingtonpost.com/business/2026/07/30/wall-street-stocks-dow-nasdaq/bcf77714-8c54-11f1-8912-d71e69d679d7_story.html"
+      },
+      {
+        "label": "★ Fed 9-3 hold (July 29, 3.50-3.75%); Hammack/Kashkari/Logan dissented for 25bp hike; Chair Warsh condition-based communication; September hike probability now ~40% (down from 77-82% pre-GDP/PCE peak); next FOMC September 15-16",
+        "url": "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7416.0,   "change_pct": 1.36,  "as_of": "2026-07-30T20:00:00Z" },
+    "nasdaq": { "level": 25122.18, "change_pct": 2.78,  "as_of": "2026-07-30T20:00:00Z" },
+    "vix":    { "level": 17.09,    "change_pct": -2.3,  "as_of": "2026-07-31T12:30:00Z" },
+    "ust10y": { "level": 4.67,     "change_bps": 0,     "as_of": "2026-07-31T12:30:00Z" },
+    "dxy":    { "level": 100.12,   "change_pct": -0.75, "as_of": "2026-07-31T12:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "Brent crude",         "value": 86.00, "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "WTI crude",           "value": 82.00, "trigger_above": 79.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",           "value": 5.05,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 40.0,  "trigger_above": 70.0,  "unit": "%" },
+    { "name": "SPX vs 7,380",        "value": 7416,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 63951, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMZN",
+      "note": "~$253-257 (AH from $237.53 regular close, +7-9%). AWS $42.2B (+37% YoY) — fastest in 18 quarters — surpassed the 31.6% estimate by a wide margin and confirms AI infrastructure demand at the hyperscaler layer is organic and accelerating. AWS operating income $16.6B at 39.4% margin (+650bps YoY). AI and custom chip ARR each exceeded $25B at triple-digit growth, making AWS a multi-revenue-line AI story. The $5.75 GAAP EPS includes a $53.4B Anthropic investment gain — non-recurring; use operating income (+43% YoY) as the clean metric. Scale on Friday's open dip toward $250-253; $250 is near-term support. Do not chase above $260 at the open. Stop $245. Target $270 into NVDA Aug 26 call.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$313-319 (AH from $333.78 regular close, -6%+). Three simultaneous misses: services $30.74B (vs $31.22B), Greater China $18.82B (vs $19.67B), Q4 guidance +9-11% (vs >12% consensus). EPS $2.02 includes a $0.11/share non-recurring tariff refund. iPhone $54.25B beat and Mac $10.35B beat provided the headline outperformance, but all three quality-rotation thesis metrics missed. Tim Cook's final call as CEO; John Ternus succession Sept 1. Watch $315 on Friday open — break below on high volume is the structural thesis damage signal. No new positions; existing holders reassess at Q4 FY26 earnings (October 2026).",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$455.92 (July 30 close, +16.7% — largest single-day gain in years). Azure $100B annual revenue milestone (+41% YoY) at 43% cc quarterly growth with AI ARR $37B (+123% YoY) from enterprise customers. The premium multiple is now justified by a demonstrated pricing mechanism absent in META and GOOGL. Add $445-455 on any Friday intraday giveback; stop $432 (Thursday gap-open support); target $475-480 on the AI cloud re-rating continuation into the next MSFT FY27 Q1 report.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$193.97 (July 30 close, +2.1%). AWS +37% and Azure +43% provide the strongest dual organic AI demand validation yet — necessary but not sufficient to clear the circular financing overhang. WSJ/Bloomberg confirmed $600B structure ($250B OpenAI backstop + $350B chip financing) is unresolved. Hard stop $216; no add before Aug 26 Q2 FY27 call. The question remains whether hyperscaler AI demand is organically funded by customers' own capital or NVDA-backstopped — Aug 26 is when that question must be answered.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "$532.81 (July 30 close, -9% session, -9.64% AH original print). Q2 FCF -93% ($784M from ~$12B trailing 8-quarter average); operating margin 31% vs 43% prior year; costs +55% YoY; 2026 capex guidance raised with explicit multi-year AI 'maximization' commitment. The structural short thesis is unchanged — management has stated the FCF trough extends through 2027. No FCF recovery visible before Q3 FY26 (October). Short on bounces toward $545-555; stop $570; target $490-500 on continued compression.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "$385.53 (July 30). META's elevated capex ($31B in Q2 alone) plus AMZN AI and custom chip ARR each exceeding $25B are simultaneous direct tailwinds for Broadcom's custom ASIC design-win thesis. Unlike NVDA, AVGO receives direct payments from customers; no circular demand structure. Hold above $370.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$127 (July 30 close). Reports Q2 FY26 AH on Monday Aug 3 — options pricing ~15% implied swing. US-Iran military strikes on IRGC sites reinforce DoD AI spending urgency in decision-intelligence and drone-defense (core PLTR AIP use cases). The DoD AI budget acceleration is the structural tailwind; the Monday print will either validate it at the revenue line or not. Hold through earnings; do not add ahead of the event given the 15% implied move uncertainty.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$63,951 (Crypto.com live, 11:03 UTC July 31; -0.92% from $65,347 overnight high). Gate 2 ($62,000) intact but the overnight drawdown of ~$1,400 narrows the buffer to ~$1,951. Double-soft macro print (GDP + Core PCE) + September hike probability collapsing toward 40% + DXY falling to 100.12 is the most constructive BTC rate environment since mid-July. Risk: Iran truce breakdown over the weekend re-introduces risk-off correlation and could pressure BTC toward Gate 2. Hold above $62,000; do not add into the weekend without an Iran stability confirmation.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "AAPL below $325",
+      "reason": "Three simultaneous misses (services, China, Q4 guidance) in the same report damage the quality-rotation thesis construct at every pillar simultaneously. The AH decline to $313-319 prices the single quarter's miss; it does not yet price a structural services deceleration if the Q4 guidance midpoint (+10%) marks a durable step-down from the 16-18% services growth run rate. EPS also included $0.11/share in non-recurring tariff refund. The GOOGL pattern (single-quarter miss followed by sustained multiple compression as capex commitments widened) is the relevant template.",
+      "better_entry": "Post-Q4 FY26 earnings (October 2026) if: services growth reaccelerates above 15% YoY AND China iPhone units stabilize with Huawei share loss halted AND Q1 FY27 guidance exceeds $112B. Alternatively: $305-310 on a broad regime selloff that reprices quality names indiscriminately below 7,200 SPX."
+    },
+    {
+      "ticker": "META on any bounce toward $545-555",
+      "reason": "Management has explicitly committed to AI 'maximization' through 2027 while FCF collapsed 93% in Q2 to $784M. The AH and July 30 session close ($532.81) price the single-quarter miss — not the multi-quarter FCF trough embedded in the stated capex schedule (2026 full-year guidance raised). The GOOGL -7% template is the wrong comp: META's FCF collapse is 6x worse and the capex commitment more explicitly forward-dated.",
+      "better_entry": "Post-Q3 FY26 earnings (October 2026) if FCF recovers above $6B/quarter AND management signals deceleration below $50B annualized capex. Or $475-480 on a regime selloff that reprices risk assets broadly."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AMZN — open dip entry",
+      "direction": "long",
+      "thesis": "AWS $42.2B (+37%, fastest in 18 quarters) confirms AI infrastructure demand is organic and accelerating at the hyperscaler layer. The AI and custom chip businesses each exceed $25B annualized run rates at triple-digit growth, making AWS a multi-line AI revenue story rather than a single-product cyclical bet. At the AH level (~$253-257), the $53.4B Anthropic investment gain artificially inflated GAAP EPS; the clean operating income (+43% YoY, 39.4% AWS margin) is the investable signal. Initial open sellers who entered the AH spike provide the dip.",
+      "entry": "Scale on Friday's open dip toward $250-253; $250 is near-term support. Stop $245 (pre-AH close $237.53 provides structural backstop). Do not chase above $260 at open — let the spike flush. Target $270 by end of August into NVDA Aug 26 Q2 FY27 call.",
+      "invalidation": "Friday close below $245 (dip-buyers fail to hold); or if AMZN management commentary on the morning analyst call signals AWS Q3 2026 guidance below 33% YoY.",
+      "conviction": "medium-high",
+      "horizon": "3-4 weeks; primary reassessment at NVDA Aug 26 Q2 FY27 call"
+    },
+    {
+      "asset": "AAPL — $315 structural watch",
+      "direction": "short (conditional)",
+      "thesis": "Three simultaneous misses from AAPL's highest-margin and highest-growth segments (services, China, Q4 guidance) represent a potential structural inflection in the quality-rotation thesis, not a single-quarter overshoot. The AH decline to $313-319 is the first pricing leg. A regular-session break below $315 on above-average volume would signal institutional selling to exit quality-rotation positions — a mechanism structurally distinct from normal earnings gap-fills. The $315 level represents two years of services-multiple support.",
+      "entry": "No position until Friday open; watch $315. Break below $315 on volume >2x average = conditional short entry, stop $325, target $295-300 by Q4 FY26 earnings. If AAPL stabilizes above $320-322, treat three misses as noise and do not short — wait for October.",
+      "invalidation": "AAPL opens above $322 and holds; or a broad AMZN-driven tech surge lifts all names including AAPL above $330 before institutional sellers engage.",
+      "conviction": "low",
+      "horizon": "2-5 sessions; reassess at Q4 FY26 earnings (October 2026)"
+    },
+    {
+      "asset": "MSFT — add on intraday giveback",
+      "direction": "long",
+      "thesis": "Azure $100B annual revenue at 43% cc growth combined with AI ARR $37B (+123% YoY) from enterprise customers is the highest-quality AI monetization data print of this earnings cycle. Thursday's +16.7% gap-up and hold validated premium multiple expansion for demonstrable AI pricing power. Friday profit-taking from Thursday's AH and regular-session buyers creates the add opportunity.",
+      "entry": "Add $445-455 on Friday giveback; stop $432 (Thursday gap-open support zone); target $475-480 into the AI cloud re-rating cycle and the next MSFT FY27 Q1 report.",
+      "invalidation": "30Y yield spikes above 5.20% on a hawkish surprise reversing today's PCE softness; or MSFT loses $440 intraday on September hike probability resurgence above 60%.",
+      "conviction": "medium",
+      "horizon": "2-4 weeks"
+    }
+  ],
+  "bear_case": "The primary tail scenario: Q2 Employment Cost Index, also released at 8:30 AM ET today alongside PCE, prints above 1.1% QoQ — the wage inflation signal that the prior night brief identified as the single remaining rate-path binary. If ECI exceeds consensus materially, September hike probability re-accelerates above 70% despite the soft GDP and PCE, converting the AMZN-driven AH enthusiasm into a rate-driven open reversal. The benign VIX (17.09) and DXY collapse (100.12, -0.75%) implied by pre-market moves are consistent with an in-line or soft ECI, but the print has not yet been independently confirmed in this brief. The secondary bear scenario: AAPL's three-miss AH report becomes the headline that institutional Friday sellers act on — AAPL's ~7% SPX weighting means sustained forced selling from quality-rotation exits could pull the index back below 7,380 on Friday's close, re-triggering the BEARISH conversion that Thursday's session appeared to structurally clear. A third tail: Iran ceasefire breakdown over the weekend reverses the headline PCE disinflation tailwind by pushing Brent back above $90 into next week, resetting the rate-path calculus regardless of today's soft data. The bear case is invalidated if SPX closes above 7,380 on Friday, ECI confirms benign, and AAPL stabilizes above $315.",
+  "body_mdx": "data/briefings/markets/2026-07-31-morning.mdx"
+}
