@@ -1,0 +1,120 @@
+{
+  "routine": "markets",
+  "date": "2026-07-31",
+  "window": "morning",
+  "generated_at": "2026-07-31T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "AMZN's 37% AWS beat meets the 30Y at a 19-year high before the ECI",
+    "label": "AMZN +13% pre-market vs AAPL −7.2%; 30Y at 5.23% (highest since 2007) is the overnight structural development; ECI at 8:30 AM ET determines whether September tops 70% or retreats; SPX 7,380 is Day 2 of its regime test",
+    "rationale_short": "Amazon's AWS grew 37% year-over-year — fastest in 18 quarters — sending Nasdaq futures up 1.1% overnight, but the 30Y has already moved to 5.23% (a new 19-year high, 11bps above Thursday's close) before the ECI release. The Q2 Employment Cost Index at 8:30 AM ET is the session's binary: at or below 0.8% QoQ and September probability retreats from ~63%, giving AMZN's pre-market momentum room to carry; at or above 1.1% and September re-prices above the 70% formal trigger, the 30Y extends, and SPX 7,380 — Day 2 of its required regime reversal — faces pressure from the rate side simultaneously with AAPL's pre-market drag.",
+    "supporting_data": [
+      { "label": "AMZN Q2: AWS $42.2B (+37%, fastest in 18 quarters); pre-market +13% to ~$268; AI and custom chip businesses each >$25B annual run rate — dual cloud confirmation with MSFT Azure 43%", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-31-2026" },
+      { "label": "AAPL pre-market −7.2% to ~$309; services $30.74B miss, China $18.82B miss, Q4 guidance +9-11% miss — three simultaneous failures on the quality-rotation decision metrics identified in prior briefings", "url": "https://www.benzinga.com/markets/prediction-markets/26/07/60829343/sp500-july-31-open-up-or-down-polymarket-amazon-microsoft-apple-ai-earnings" },
+      { "label": "30Y yield 5.23% overnight — highest since 2007 (19 years); 10Y 4.67%; 30Y is 23bps above the 5.00% formal breach trigger and 3bps above Wednesday's 5.193% prior cycle high", "url": "https://tradingeconomics.com/united-states/government-bond-yield" },
+      { "label": "September hike probability ~63% pre-ECI, recovered from 45% (post-PCE Thursday); FOMC voted 9-3 on July 29 with three dissents for immediate hike; ECI at or above 1.1% QoQ restores September above the 70% formal trigger", "url": "https://www.forbes.com/sites/simonmoore/2026/07/29/september-rate-hike-becomes-most-likely-outcome-according-to-markets/" },
+      { "label": "BTC $63,864 (−1.05% live, Crypto.com 7:12 AM ET); ETH $1,884 (−1.74%); BTC day range $63,551–$65,367; Gate 2 ($62,000) buffer narrowed to ~$1,864 as 30Y tightening adds headwind", "url": "https://www.coingabbar.com/en/crypto-currency-news/crypto-news-today-31-july-bitcoin-eth-grvt-defi-uniswap-gains" },
+      { "label": "Brent ~$89/bbl (Iran ceasefire pause eased from $89.50; WTI ~$84); both above formal triggers; oil breach day 8; weekend Iran countermove risk remains", "url": "https://www.bloomberg.com/news/articles/2026-07-30/latest-oil-market-news-and-analysis-for-july-31" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7416.0,  "change_pct": 1.36,  "as_of": "2026-07-30T20:00:00Z" },
+    "nasdaq": { "level": 24809.0, "change_pct": 1.50,  "as_of": "2026-07-30T20:00:00Z" },
+    "vix":    { "level": 17.09,   "change_pct": -2.3,  "as_of": "2026-07-31T11:00:00Z" },
+    "ust10y": { "level": 4.67,    "change_bps": 0,     "as_of": "2026-07-31T11:00:00Z" },
+    "dxy":    { "level": 100.08,  "change_pct": -0.80, "as_of": "2026-07-31T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "Brent crude",         "value": 89.0,  "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "WTI crude",           "value": 84.0,  "trigger_above": 79.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",           "value": 5.23,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 63.0,  "trigger_above": 70.0,  "unit": "%" },
+    { "name": "SPX vs 7,380",        "value": 7416,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 63864, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMZN",
+      "note": "~$268 pre-market (+13%). AWS $42.2B (+37%, fastest in 18 quarters). AI + custom chip run rates each >$25B annually at triple-digit growth. Q2 GAAP EPS of $5.75 included $53.4B Anthropic unrealized gain; operating income $27.5B is the fundamental metric. $250 is the first gap-fill support.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$309 pre-market (−7.2% from $333.43). Services $30.74B miss ($31.22B est.), China $18.82B miss ($19.67B est.), Q4 guidance +9-11% miss (>12% consensus). iPhone $54.25B beat. Three simultaneous misses on the quality-rotation gatekeepers. $315 is the structural dividing line; below $305 on high volume signals sustained damage.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$455.92 prior close (+16.7% Thursday). Azure $100B annual run rate gap consolidated. At ~35x forward earnings with 30Y at 5.23%, the Thursday premium faces a rate headwind entering Friday. Support: $430–440.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$193.97 prior close. AMZN AWS 37% + MSFT Azure 43% together are the strongest dual pre-earnings organic demand confirmation the series has seen. Circular-financing disclosure ($250B OpenAI backstop) still unaddressed. $216 stop unchanged. No add before August 26.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$127 prior close. Q2 earnings AH Monday August 3; options pricing ~15% swing. US retaliatory IRGC strikes reinforce DoD AI urgency. Weekend Iran countermove window shapes Monday opening risk.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "$385.53 prior close. META $31B capex + AMZN AI chips >$25B annual run rate = two simultaneous custom silicon demand signals. Reports in September.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "~$325 prior close. AWS 37% + Azure 43% reduce systemic AI contagion risk but don't address GOOGL's AI capex-without-margin problem. Neutral into next catalyst.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSM",
+      "note": "~$375 prior close (−4.5% Thursday). AWS/Azure demand constructive for N3/N2 utilization. Thursday's selloff may reflect Taiwan geopolitical repricing on US-Iran escalation spillover risk.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$63,864 live (Crypto.com 7:12 AM ET, −1.05%). Day range $63,551–$65,367. Gate 2 ($62,000) buffer narrowed to ~$1,864. 30Y at 5.23% and Iran weekend risk are the two overnight headwinds.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "AAPL at open",
+      "reason": "Three simultaneous misses (services $30.74B, China $18.82B, Q4 guidance +9-11%) are the exact metrics identified in prior briefings as the quality-rotation gatekeepers. The pre-market at ~$309 prices the headline quarter; it does not price a sustained services deceleration or structural China headwind extending through Q4 FY26.",
+      "better_entry": "Post-Q4 FY26 earnings (October 2026) if services growth reaccelerates above 15% YoY. Or $305–310 on a regime-driven broad selloff that reprices quality names without fundamental differentiation."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Q2 ECI binary — 30Y direction",
+      "direction": "pair",
+      "thesis": "The Q2 Employment Cost Index at 8:30 AM ET is the remaining rate-path uncertainty after Thursday's soft PCE and GDP. September probability is at ~63% pre-print — below the 70% trigger but elevated. A print above 1.1% QoQ restores September above 70% and likely extends 30Y beyond 5.25%, which is a new 19-year high above an already-high starting point. A print at 0.8% or below reverses the overnight 30Y move and validates Thursday's soft-landing re-pricing. The ECI, not the earnings queue, determines Friday's bond direction.",
+      "entry": "Watch the 30Y move within 15 minutes of 8:30 AM ET as the signal: above 5.30% indicates hot; below 5.10% indicates soft. The print resolves the setup; the 30Y level is the market's real-time translation.",
+      "invalidation": "ECI 0.9–1.0% QoQ (consensus range): September holds at 60–65%, no directional break in bonds.",
+      "conviction": "medium",
+      "horizon": "Resolves within 30 minutes of 8:30 AM ET July 31"
+    },
+    {
+      "asset": "SPX 7,380 — Day 2 regime confirmation",
+      "direction": "long",
+      "thesis": "Thursday's close at 7,416 was Day 1 of a required two-session hold above 7,380 for a formal BEARISH regime reversal. Day 2 is today. The regime framework has reversed on one-session reclaims before. End-of-month flows typically amplify the direction of the close. A hot ECI and AAPL's pre-market drag are the two inputs most likely to force a close below 7,380, returning the regime to BEARISH. A soft ECI removes the primary risk and allows AMZN's momentum to carry.",
+      "entry": "The level is a regime marker, not a trade entry. The confirming level is a Friday close above 7,380; the invalidating level is a Friday close below it.",
+      "invalidation": "Friday close below 7,380 returns the regime to BEARISH; two consecutive closes above would be required again to reverse.",
+      "conviction": "medium",
+      "horizon": "Resolves at Friday's 4 PM ET close"
+    },
+    {
+      "asset": "AMZN — gap evaluation",
+      "direction": "long",
+      "thesis": "AMZN is +13% pre-market on AWS 37%. The GAAP EPS of $5.75 was inflated by a $53.4B Anthropic unrealized gain; operating income of $27.5B (~$110B annualized) is the fundamental metric. At $268 pre-market, the AWS AI thesis is priced alongside the Anthropic stake at a full market value. The AWS operating earnings justify approximately $245–255 without the one-time gain — that range is Friday's gap-fill anchor if ECI comes in hot and multiple compression sets in.",
+      "entry": "The $250–255 range is where the operating earnings thesis holds without the Anthropic gain. $260 is the first interim resistance post-ECI. The pre-market $268 embeds both.",
+      "invalidation": "ECI above 1.1% QoQ takes September above 70% and compresses multiples broadly; watch AMZN below $245 in that scenario.",
+      "conviction": "medium",
+      "horizon": "Near-term: intraday Friday; medium-term: through NVDA August 26 earnings"
+    }
+  ],
+  "bear_case": "Thursday's PCE soft reading (Core +0.1% MoM) and GDP miss (+1.5% vs +2.1%) compressed September hike odds to 45% in one session — a move that priced in a soft ECI to follow. The 30Y has already moved to 5.23% overnight (highest since 2007) without the ECI data, suggesting the bond market is not treating Thursday as a regime shift. If the Q2 ECI prints above 1.1% QoQ, September probability jumps above 70%, the 30Y extends toward 5.30–5.35%, and SPX loses 7,380 on Day 2, reverting the regime to BEARISH. AAPL's −7.2% pre-market adds a Nasdaq headwind that doesn't need ECI to be real. The read does not hold if SPX closes below 7,380 today.",
+  "body_mdx": "data/briefings/markets/2026-07-31-morning.mdx"
+}
