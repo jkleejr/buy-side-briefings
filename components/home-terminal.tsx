@@ -257,30 +257,45 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
   );
 
   /**
-   * The tickers reporting on this date, for a second line under the lead.
+   * The rest of the day, as short names for a second line under the lead.
    *
-   * Only rows from the earnings feed (`source: "earnings"`) — those are the
-   * ones that get shadowed, and a ticker is what you scan a schedule for.
-   * Authored catalysts are long prose and already read in the detail list
-   * below; putting one here truncated to "Q2 GDP Advance Estimate (8:30 AM…"
-   * spent the whole line saying nothing.
+   * Two kinds qualify. Central-bank decisions come first — a rate decision is
+   * the most consequential thing on any day it lands, and it must never be
+   * shadowed by whatever else shares the date (the Bank of Japan's July 31
+   * decision disappeared behind an Employment Cost Index catalyst). Then the
+   * tickers reporting, because a ticker is what you scan a schedule for.
    *
-   * Anything the lead already names is dropped, so a node never reads
-   * "AAPL Q2 AH … · AAPL".
+   * Authored catalysts are deliberately excluded: they are long prose that
+   * already reads in the detail list below, and truncated to fit here they say
+   * nothing while crowding out the rows that do.
    */
-  const reportingOn = (c: CalRow): string[] => {
+  const alsoToday = (c: CalRow): string[] => {
     const key = `${c.day}-${c.dateLabel}`;
     const lead = timelineLabel(c.label).toLowerCase();
+    const rest = (alsoOn.get(key) ?? []).filter((o) => o !== c);
     const seen = new Set<string>();
-    return (alsoOn.get(key) ?? [])
-      .filter((o) => o !== c && o.source === "earnings")
+    const take = (name: string) => {
+      if (!name || seen.has(name) || lead.includes(name.toLowerCase())) return false;
+      seen.add(name);
+      return true;
+    };
+
+    const banks = rest
+      .filter((o) => o.source === "boj" || o.source === "fomc")
+      .map((o) => (o.source === "boj" ? "BoJ decision" : "FOMC decision"))
+      .filter(take);
+
+    const tickers = rest
+      .filter((o) => o.source === "earnings")
       .map((o) => timelineLabel(o.label).split(/\s+/)[0])
-      .filter((t) => {
-        if (!t || seen.has(t) || lead.includes(t.toLowerCase())) return false;
-        seen.add(t);
-        return true;
-      })
-      .slice(0, 4);
+      .filter((t) => t.length >= 2 && take(t));
+
+    // Composed as segments so "earnings" is said once for the whole ticker
+    // group: "BoJ decision · AAPL · AMZN earnings", not a bare "RIOT" and not
+    // "AAPL earnings · AMZN earnings".
+    const segments: string[] = [...banks];
+    if (tickers.length) segments.push(`${tickers.slice(0, 3).join(" · ")} earnings`);
+    return segments.slice(0, 3);
   };
 
   const scroller = useRef<HTMLDivElement>(null);
@@ -431,9 +446,9 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
                 {/* Everything else happening that day. Quieter than the lead,
                     but present — a schedule that hides Amazon's results behind
                     a macro print isn't a schedule. */}
-                {reportingOn(c).length > 0 && (
+                {alsoToday(c).length > 0 && (
                   <span className="mt-1 block font-mono text-[9.5px] leading-tight text-[var(--faint)]">
-                    {reportingOn(c).join(" · ")} earnings
+                    {alsoToday(c).join(" · ")}
                   </span>
                 )}
                 {c.hot && (

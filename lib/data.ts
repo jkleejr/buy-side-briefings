@@ -887,10 +887,21 @@ export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> 
   }
 
   const authoredDates = new Set(authored.map((e) => e.date));
+
+  // Central-bank decisions are never dropped for sharing a date. They used to
+  // be: any authored catalyst on the same day removed them, so the Bank of
+  // Japan's July 31 decision vanished the moment the night routine wrote a
+  // catalyst for the 31st. A rate decision is a fixed, scheduled fact — it does
+  // not stop happening because something else also happens that day.
+  //
+  // Genuine duplicates are still caught upstream by the keyword pass: an
+  // authored row that actually says "BoJ" or "FOMC" absorbs the feed row and
+  // keeps the authored wording. What the date rule was removing was the
+  // *unrelated* collision, which is exactly the case worth keeping.
   const merged = [
     ...authored,
-    ...fomc.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
-    ...boj.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
+    ...fomc.filter((e) => !swallowed.has(e)),
+    ...boj.filter((e) => !swallowed.has(e)),
     ...macro.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
     ...earnings,
   ];
