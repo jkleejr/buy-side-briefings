@@ -285,7 +285,20 @@ Spend your budget on what no feed can know. On every run:
   homepage reserves its first detail slots for them. Include `tickers` for any
   open opportunity that hinges on the event so the website can cross-link them.
 - **Update** events whose date or framing changed.
-- **Remove** events whose date has passed.
+- **Retire** events whose date has passed — by MOVING them to
+  `data/calendar-archive.json`, never by deleting them. Cut the object out of
+  `data/calendar.json` and append it to the `events` array in the archive,
+  keeping the label, note and tickers intact. Add the outcome to the label if
+  the briefing established one ("FOMC decision — held 3.50–3.75%, 9-3 vote").
+
+  **Why this matters:** the strip renders archive + calendar together, so the
+  archive is the only record of what already happened. It was last written on
+  2026-07-19 and events were simply deleted after that, which left the schedule
+  blank from July 18 to July 30 — the Fed decision, and Microsoft, Alphabet,
+  Meta, Amazon and Apple all reporting, none of it on the page a day later. The
+  earnings feed cannot fill that in: Yahoo reports each company's *next* date,
+  so the moment a company reports, the date you are looking at is gone. If it
+  is not archived on the day, it is lost.
 
 ```json
 {

@@ -285,10 +285,14 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
       .map((o) => (o.source === "boj" ? "BoJ decision" : "FOMC decision"))
       .filter(take);
 
+    // Matched on kind, not source: an earnings row can arrive from the Yahoo
+    // feed ("AMZN earnings") or as an archived catalyst carrying the outcome
+    // ("AMZN Q2 2026 earnings AH — AWS +37% YoY"). Both start with the ticker,
+    // which is the only part that fits on this line.
     const tickers = rest
-      .filter((o) => o.source === "earnings")
-      .map((o) => timelineLabel(o.label).split(/\s+/)[0])
-      .filter((t) => t.length >= 2 && take(t));
+      .filter((o) => o.kind.toUpperCase() === "EARNINGS")
+      .map((o) => timelineLabel(o.label).split(/[\s,]+/)[0].replace(/[^A-Z0-9.]/gi, ""))
+      .filter((t) => /^[A-Z][A-Z0-9.]{0,5}$/.test(t) && take(t));
 
     // Composed as segments so "earnings" is said once for the whole ticker
     // group: "BoJ decision · AAPL · AMZN earnings", not a bare "RIOT" and not

@@ -115,9 +115,25 @@ export async function getMacroReleases(
   return per.flat();
 }
 
-/** FOMC decisions from the table above, forward of `from`. */
+/**
+ * How far back the fixed central-bank tables still report. The schedule is a
+ * record of the week, not only a countdown: a Fed decision that landed three
+ * days ago is the most useful thing on the strip for reading what just moved,
+ * and dropping it the morning after left a fortnight of blank days behind
+ * today. The tables are static, so looking back costs nothing.
+ */
+const CENTRAL_BANK_LOOKBACK_DAYS = 45;
+
+function lookbackFrom(from: string): string {
+  const d = new Date(`${from}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() - CENTRAL_BANK_LOOKBACK_DAYS);
+  return d.toISOString().slice(0, 10);
+}
+
+/** FOMC decisions from the table above — recent past included. */
 export function getFomcEvents(from: string): CalendarEvent[] {
-  return FOMC_2026.filter((m) => m.date >= from).map((m) => {
+  const since = lookbackFrom(from);
+  return FOMC_2026.filter((m) => m.date >= since).map((m) => {
     const d = new Date(`${m.date}T12:00:00Z`);
     const day = d.getUTCDate();
     return {
@@ -130,9 +146,10 @@ export function getFomcEvents(from: string): CalendarEvent[] {
   });
 }
 
-/** BoJ policy decisions from the table above, forward of `from`. */
+/** BoJ policy decisions from the table above — recent past included. */
 export function getBojEvents(from: string): CalendarEvent[] {
-  return BOJ_2026.filter((m) => m.date >= from).map((m) => {
+  const since = lookbackFrom(from);
+  return BOJ_2026.filter((m) => m.date >= since).map((m) => {
     const open = new Date(`${m.from}T12:00:00Z`).getUTCDate();
     const close = new Date(`${m.date}T12:00:00Z`).getUTCDate();
     return {
