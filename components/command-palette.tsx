@@ -23,8 +23,17 @@ const DESTINATIONS: Destination[] = [
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
-  { href: "/books", code: "BOOKS", label: "Books — standing reports from investing books", go: "b" },
-  { href: "/books", code: "SWAN", label: "Black Swan — Taleb's framework, fact-checked and applied" },
+  // One row, not two. A separate "SWAN" entry pointing at /books read as a
+  // page of its own long after the route was folded into Books — the palette
+  // is where people learn what pages exist, so a row is a claim that one does.
+  // The book is named in the label instead, which is what the filter matches
+  // on, so typing "black swan" or "taleb" still lands here.
+  {
+    href: "/books",
+    code: "BOOKS",
+    label: "Books — standing reports: The Black Swan (Taleb), fact-checked and applied",
+    go: "b",
+  },
   { href: "/about", code: "ABT", label: "About" },
 ];
 
