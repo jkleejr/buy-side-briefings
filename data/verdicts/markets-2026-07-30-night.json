@@ -2,27 +2,52 @@
   "routine": "markets",
   "date": "2026-07-30",
   "window": "night",
-  "generated_at": "2026-07-31T02:30:00Z",
+  "generated_at": "2026-07-31T01:15:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "GDP softens, AWS surges 37%, SPX reclaims the bear threshold on Day 1",
-    "label": "Regime threshold reclaimed: GDP +1.5%, Core PCE +0.1% MoM, AMZN AWS 37% drove SPX to 7,416; AAPL services miss and 30Y at 5.12% are Friday's tests",
-    "rationale_short": "GDP Q2 advance +1.5% (below 2.1% consensus) and Core PCE +0.1% MoM (below 0.2% expected) together drove September hike probability sharply lower; Amazon's AWS grew 37% year-over-year — fastest in 18 quarters and far beyond the 31.6% estimate — completing the cloud AI ROI validation alongside MSFT's 43%. The S&P 500 closed at 7,416, reclaiming the 7,380 threshold one session after Wednesday's formal conversion. AAPL's services revenue ($30.74B vs $31.22B estimate), Greater China ($18.82B vs $19.67B), and Q4 guidance (+9-11% vs >12% consensus) all missed; shares fell 4-7.8% after hours. Friday's Q2 Employment Cost Index at 8:30 AM ET is the rate path's next binary — a hot print resets today's gains."
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Stocks rebound as soft GDP cools rate fears and Amazon cloud smashes forecasts",
+    "label": "HOLD — SPX 7,416 reclaims the 7,380 threshold; GDP +1.5% (soft), Core PCE +0.1% MoM (cool) collapsed September hike odds; AMZN AWS +37% (18-quarter high) and MSFT +16% drove Nasdaq's best day since June; AAPL services miss and 30Y still at 5.12% are Friday's tests",
+    "conviction": "medium",
+    "rationale_short": "GDP Q2 advance +1.5% (below 2.1% consensus) and Core PCE +0.1% MoM (below 0.2% expected) together drove September hike probability sharply lower; Amazon's AWS grew 37% year-over-year — fastest in 18 quarters and far beyond the 31.6% estimate — completing the cloud AI ROI validation alongside MSFT's 43%. Microsoft surged ~16%, its largest single-day gain in years, driving the Nasdaq Composite to 25,122 — its best session since June. The S&P 500 closed at 7,416, reclaiming the 7,380 threshold one session after Wednesday's formal conversion. AAPL's services revenue ($30.74B vs $31.22B estimate), Greater China ($18.82B vs $19.67B), and Q4 guidance (+9-11% vs >12% consensus) all missed; shares fell 4-7% after hours. Friday's Q2 Employment Cost Index at 8:30 AM ET is the rate path's next binary — a hot print resets today's gains.",
+    "supporting_data": [
+      {
+        "label": "★★★ SPX 7,416 (+1.36%), Nasdaq 25,122.18 (+2.78%, best day since June), driven by MSFT +16% record single-day gain on Azure $100B annual revenue milestone — S&P 500 formally reclaims 7,380 regime threshold",
+        "url": "https://www.washingtonpost.com/business/2026/07/30/wall-street-stocks-dow-nasdaq/bcf77714-8c54-11f1-8912-d71e69d679d7_story.html"
+      },
+      {
+        "label": "★★★ AMZN Q2 2026: AWS $42.2B (+37% YoY, fastest in 18 quarters, beat 31.6% estimate); net sales $200.6B (+20%); EPS $5.75 (more than triple consensus); AI and Chips each >$25B annual run rate; AMZN AH +7-9%",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-q2-2026-earnings-aws-204411872.html"
+      },
+      {
+        "label": "★★★ GDP Q2 2026 advance +1.5% (below ~2.1% consensus); Core PCE June +0.1% MoM (below 0.2% expected); September hike probability drops sharply from 58% to ~45%; DXY 100.88 (-0.40%)",
+        "url": "https://www.fxpremiere.com/us-dollar-and-treasury-market-forecast-30-31-july-2026/"
+      },
+      {
+        "label": "★★★ AAPL Q3 FY26 AH: EPS $2.02 beat $1.89; Rev $109.42B beat $108.65B — but services $30.74B miss $31.22B, Greater China $18.82B miss $19.67B, Q4 guidance +9-11% miss >12% consensus; stock -6%+ AH",
+        "url": "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html"
+      },
+      {
+        "label": "★★ Brent $87.30 (-0.9% from $90.74 spike), WTI $83.70; both above formal triggers ($85/$79) but pullback from Wednesday spike as Middle East shipments continued uninterrupted; Iran did not immediately escalate",
+        "url": "https://sundayguardianlive.com/business/brent-crude-oil-price-today-july-30-brent-falls-to-8730-wti-slips-near-84-as-us-iran-conflict-intensifies-check-latest-brent-crude-wti-oil-rates-today-249417/"
+      }
+    ]
   },
   "snapshot": {
-    "sp500":  { "level": 7416.0,  "change_pct": 1.36,  "as_of": "2026-07-30T20:00:00Z" },
-    "nasdaq": { "level": 24809.0, "change_pct": 1.50,  "as_of": "2026-07-30T20:00:00Z" },
-    "vix":    { "level": 17.50,   "change_pct": -15.3, "as_of": "2026-07-30T20:00:00Z" },
-    "ust10y": { "level": 4.67,    "change_bps": -3,    "as_of": "2026-07-30T20:00:00Z" },
-    "dxy":    { "level": 100.98,  "change_pct": -0.3,  "as_of": "2026-07-30T20:00:00Z" }
+    "sp500":  { "level": 7416.0,   "change_pct": 1.36,  "as_of": "2026-07-30T20:00:00Z" },
+    "nasdaq": { "level": 25122.18, "change_pct": 2.78,  "as_of": "2026-07-30T20:00:00Z" },
+    "vix":    { "level": 17.50,    "change_pct": -15.3, "as_of": "2026-07-30T20:00:00Z" },
+    "ust10y": { "level": 4.67,     "change_bps": -3,    "as_of": "2026-07-30T20:00:00Z" },
+    "dxy":    { "level": 100.88,   "change_pct": -0.4,  "as_of": "2026-07-30T20:00:00Z" }
   },
   "regime_risk": [
-    { "name": "Brent crude",          "value": 89.50, "trigger_above": 85.00, "unit": "$/bbl" },
-    { "name": "WTI crude",            "value": 84.50, "trigger_above": 79.00, "unit": "$/bbl" },
-    { "name": "30Y Yield",            "value": 5.12,  "trigger_above": 5.00,  "unit": "%" },
-    { "name": "September Hike Prob",  "value": 45.0,  "trigger_above": 70.0,  "unit": "%" },
-    { "name": "SPX vs 7,380",         "value": 7416,  "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",           "value": 65000, "trigger_below": 62000, "unit": "$" }
+    { "name": "Brent crude",         "value": 87.30, "trigger_above": 85.00, "unit": "$/bbl" },
+    { "name": "WTI crude",           "value": 83.70, "trigger_above": 79.00, "unit": "$/bbl" },
+    { "name": "30Y Yield",           "value": 5.12,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 45.0,  "trigger_above": 70.0,  "unit": "%" },
+    { "name": "SPX vs 7,380",        "value": 7416,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 65347, "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
@@ -32,12 +57,12 @@
     },
     {
       "ticker": "AMZN",
-      "note": "Regular close $237.53 (+4.8%); AH $256.97 (+9.12%). AWS $42.2B (+37%, fastest in 18 quarters). AI + custom chip businesses each >$25B annual run rate at triple-digit growth. AWS margins up 650bps YoY. The AH level is Friday's opening reference.",
+      "note": "Regular close $237.53 (+4.8%); AH $253-257 (+7-9%). AWS $42.2B (+37%, fastest in 18 quarters). AI + custom chip businesses each >$25B annual run rate at triple-digit growth. AWS margins up 650bps YoY. The AH level is Friday's opening reference.",
       "sentiment": "positive"
     },
     {
       "ticker": "AAPL",
-      "note": "Regular close $333.78 (-1.3%); AH -4-7.8% to ~$319. Services $30.74B missed $31.22B; Greater China $18.82B missed $19.67B; Q4 guidance +9-11% missed >12% consensus. iPhone and total revenue beat. Three simultaneous misses hit the quality-rotation thesis at the same time.",
+      "note": "Regular close $333.78 (-1.3%); AH -6%+ to ~$313-319. Services $30.74B missed $31.22B; Greater China $18.82B missed $19.67B; Q4 guidance +9-11% missed >12% consensus. iPhone and total revenue beat. Three simultaneous misses hit the quality-rotation thesis at the same time. Tim Cook's final earnings call as CEO (John Ternus takes over Sept 1).",
       "sentiment": "negative"
     },
     {
@@ -67,14 +92,14 @@
     },
     {
       "ticker": "BTC",
-      "note": "~$65,000 estimated close. Soft GDP + cool PCE + AMZN beat constructive; VIX pullback to 17.5 reduced risk-off correlation pressure. Gate 2 ($62,000) intact with ~$3,000 buffer. Weekend Iran risk is the primary tail.",
+      "note": "$65,347 (live Crypto.com, 9:10pm ET). Day range $63,683-$65,347. Soft GDP + cool PCE + AMZN beat constructive; VIX pullback to 17.5 reduced risk-off correlation pressure. Gate 2 ($62,000) intact with ~$3,350 buffer. Weekend Iran risk is the primary tail.",
       "sentiment": "positive"
     }
   ],
   "dont_buy": [
     {
       "ticker": "AAPL on post-AH bounce",
-      "reason": "Services ($30.74B miss), China ($18.82B miss), and Q4 guidance shortfall (+9-11% vs >12%) all miss simultaneously — the same three metrics the morning brief identified as the quality-rotation decision gates. AH at $319 prices the quarter's miss; it does not yet price a sustained services deceleration if Q4 guidance is structurally below the prior growth rate.",
+      "reason": "Services ($30.74B miss), China ($18.82B miss), and Q4 guidance shortfall (+9-11% vs >12%) all miss simultaneously — the same three metrics the morning brief identified as the quality-rotation decision gates. AH at $313-319 prices the quarter's miss; it does not yet price a sustained services deceleration if Q4 guidance is structurally below the prior growth rate.",
       "better_entry": "Post-Q4 FY26 earnings (October 2026): only if services growth reaccelerates above 15% YoY AND Q1 FY27 guidance exceeds $112B. Or $305-310 on a regime selloff that reprices quality names indiscriminately."
     }
   ],
@@ -91,8 +116,8 @@
     {
       "asset": "AMZN — post-AH level entry",
       "direction": "long",
-      "thesis": "AWS 37% is the fastest growth in 18 quarters. The AI and custom chip businesses each exceeded $25B annual run rates at triple-digit growth, making AWS AI a material revenue line for the first time. At $256.97 AH, the thesis is AWS demand compounding alongside MSFT's Azure into the NVDA Aug 26 call. The level at which the AWS AI story justifies the AH price without the Anthropic one-time gain ($53.4B in Q2 GAAP net income) is closer to $245-250 — Friday open sellers provide the dip.",
-      "entry": "Scale on Friday's open dip from $257 AH; $250 is near-term support; $260 is the first resistance. Target $270 by end of August on NVDA Aug 26 confirmation.",
+      "thesis": "AWS 37% is the fastest growth in 18 quarters. The AI and custom chip businesses each exceeded $25B annual run rates at triple-digit growth, making AWS AI a material revenue line for the first time. At ~$253-257 AH, the thesis is AWS demand compounding alongside MSFT's Azure into the NVDA Aug 26 call. The level at which the AWS AI story justifies the AH price without the Anthropic one-time gain ($53.4B in Q2 GAAP net income) is closer to $245-250 — Friday open sellers provide the dip.",
+      "entry": "Scale on Friday's open dip from AH levels; $250 is near-term support; $260 is the first resistance. Target $270 by end of August on NVDA Aug 26 confirmation.",
       "invalidation": "ECI above 1.1% QoQ re-prices September hike probability above 70% and collapses the multiple expansion premise. Or Friday close below $245.",
       "conviction": "medium",
       "horizon": "Near-term: post-ECI Friday open; medium-term: through NVDA Aug 26"
@@ -100,13 +125,13 @@
     {
       "asset": "AAPL — services miss monitoring setup",
       "direction": "short",
-      "thesis": "The quality-rotation thesis that supported AAPL's premium multiple was built on services margin expansion. Q3 FY26 hit three misses simultaneously: services ($30.74B), China ($18.82B), Q4 guidance (+9-11%). The AH move to $319 is the first pricing leg. The question is whether Friday's regular open converges toward the AH level or buyers emerge at $320-325 on iPhone strength and reject the services story as a one-quarter miss.",
+      "thesis": "The quality-rotation thesis that supported AAPL's premium multiple was built on services margin expansion. Q3 FY26 hit three misses simultaneously: services ($30.74B), China ($18.82B), Q4 guidance (+9-11%). The AH move to $313-319 is the first pricing leg. The question is whether Friday's regular open converges toward the AH level or buyers emerge at $320-325 on iPhone strength and reject the services story as a one-quarter miss.",
       "entry": "No position until Friday's open; watch $320 as the structural dividing line. A break below $315 on Friday's open on high volume is the structural thesis damage signal.",
       "invalidation": "If AAPL opens and stabilizes above $322-325, the market is treating the triple miss as noise rather than thesis damage. Revisit at Q4 FY26 earnings (October 2026).",
       "conviction": "low",
       "horizon": "Near-term: 2-5 sessions; reassess at Q4 FY26 earnings"
     }
   ],
-  "bear_case": "Q2 Employment Cost Index at 8:30 AM ET July 31 prints above 1.1% QoQ — the Fed's most direct wage-inflation signal — restoring September hike probability above 70% despite today's soft GDP and PCE. In that scenario, 30Y extending above 5.25% converts the single-session equity relief into a rate-driven reversal, with AAPL's -4-7.8% AH print adding a Nasdaq headwind. US retaliatory strikes on Iran IRGC sites risk a countermove over the weekend that pushes Brent back toward $93. If SPX closes below 7,380 on Friday, today's reclaim was a one-session technical bounce rather than a regime reversal. The read no longer holds if SPX loses 7,380 on Friday's close.",
+  "bear_case": "Q2 Employment Cost Index at 8:30 AM ET July 31 prints above 1.1% QoQ — the Fed's most direct wage-inflation signal — restoring September hike probability above 70% despite today's soft GDP and PCE. In that scenario, 30Y extending above 5.25% converts the single-session equity relief into a rate-driven reversal, with AAPL's -6%+ AH print adding a Nasdaq headwind. US retaliatory strikes on Iran IRGC sites risk a countermove over the weekend that pushes Brent back toward $93. If SPX closes below 7,380 on Friday, today's reclaim was a one-session technical bounce rather than a regime reversal. The read no longer holds if SPX loses 7,380 on Friday's close.",
   "body_mdx": "data/briefings/markets/2026-07-30-night.mdx"
 }
