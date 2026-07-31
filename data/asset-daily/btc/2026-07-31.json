@@ -1,0 +1,198 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T21:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "STEP-ASIDE SURVIVES OPTIONS EXPIRY — BTC REFERENCE CLOSE $62,961.99 (−$1,811.31 / −2.80% FROM JULY 30 REFERENCE $64,773.30): THE $9.6B MONTHLY OPTIONS EXPIRY (FAR LARGER THAN YESTERDAY'S DOSSIER ESTIMATED ~$1.2B — THE JULY END-OF-MONTH DERIBIT EXPIRY IS THE LARGEST OF THE CALENDAR) SETTLED AT 08:00 UTC WITH MAX PAIN AT $64,000 AND PUT/CALL RATIO OF 0.28. BTC BRIEFLY CROSSED $65,000 AT 01:00 UTC ($65,411.23 HIGH — DRIVEN BY THE AMAZON AWS +36.7% AFTER-HOURS EUPHORIA) BUT COULD NOT SUSTAIN ABOVE THE REFERENCE-CLOSE THRESHOLD: THE FRAMEWORK'S 20:00 UTC REFERENCE-CLOSE MECHANISM CORRECTLY PREVENTED A PREMATURE RE-ENTRY SIGNAL. THE EXPIRY PIN MECHANICS THEN DOMINATED: OPTIONS MARKET MAKERS MANAGING $9.6B IN NOTIONAL EXPOSURE KEPT PRICE BELOW $64,000 AT SETTLEMENT, AND POST-EXPIRY SELLING (MONTH-END REBALANCING, SYSTEMATIC POSITION TRIMMING FROM MULTI-ASSET FUNDS) PUSHED BTC TO A DAY LOW OF $62,485.17 AT 15:00 UTC BEFORE A PARTIAL RECOVERY TO THE $62,961.99 REFERENCE CLOSE. THE TWO FRAMEWORK CONDITIONS: (1) REFERENCE CLOSE $62,961.99 < $65,000 — ACTIVE, GAP $2,038.01 (WIDENED FROM $226.70 ON JULY 30 TO $2,038.01 TODAY — 9× LARGER); (2) ETF FLOWS NEGATIVE — ACTIVE (LAST 48H NET OUTFLOWS; JULY 2026 MONTHLY INFLOWS ONLY $205M — A RECORD MONTHLY LOW). HOWEVER, BITCOIN PRESERVED ITS JULY 2026 MONTHLY GAIN: +7.4% (FROM ~$58,600 AT JUNE 30 TO TODAY'S $62,962), SURVIVING THE FOMC HAWKISH HOLD, THE COLDCARD SECURITY SCARE, THE DEEPSEEK AI-CHIP NARRATIVE, AND NOW THE $9.6B MONTHLY OPTIONS EXPIRY. THE MACRO DIVERGENCE IS NOTABLE: US EQUITIES BOOMED (S&P 500 +0.91% TO 7,505.66; NASDAQ +1.1%; AMAZON +9%+ ON AWS +36.7%) WHILE BTC SOLD OFF — A DECOUPLING THAT REFLECTS OPTIONS-EXPIRY-SPECIFIC MECHANICS RATHER THAN FUNDAMENTAL DETERIORATION. AUGUST OUTLOOK IS CAUTIOUS: COINDESK REPORTS THE $60,000 PUT IS THE 'TOP TRADE' AMONG AUGUST PROTECTION BUYERS.",
+
+  "long_pnl": "Framework step-aside traders who exited at the July 24 activation (~$65,000 reference close) have avoided a net decline of approximately −$2,038 / −3.14% to today's $62,962 reference close. The step-aside has now protected through two major expiry events and a $2,038 gap expansion from the threshold. The brief intraday touch of $65,411 at 01:00 UTC (which would have been a false re-entry signal if triggered on an intraday basis rather than a reference close) validated the reference-close discipline — the framework did not trigger a premature re-entry on a momentum spike that promptly reversed.",
+
+  "short_pnl": "BTC perp funding shorts and options put buyers had a profitable expiry day: the $9.6B notional in July 31 Deribit contracts settled at ~$63,823 (below the $64,000 max pain, close enough for max pain dynamics to dominate); post-settlement selling to $62,485.17 (day low) generated additional short-side returns. $60,000 put protection buyers for August are the emerging dominant sentiment — CoinDesk identifies these as the 'top trade' entering August.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "medium",
+    "horizon": "Step-aside continues — both conditions remain active; reference close $62,961.99 is $2,038.01 below the $65,000 threshold (gap widened 9× from July 30's $226.70); ETF flows are net negative for the last 48h; August $60K put protection demand signals cautious sentiment; next reference-close window: August 1 (Saturday) is the next UTC daily close but BTC is 7-days-a-week — first meaningful catalyst window is the US PCE / jobs data week and the post-options-expiry directional print",
+    "rationale": "Framework Condition 1 (reference close > $65,000): NOT MET — $62,961.99 is $2,038.01 below the threshold. The gap has WIDENED from $226.70 (July 30) to $2,038.01 (July 31), a 9× expansion in a single session. The $65,411.23 intraday touch at 01:00 UTC (before the US session opened) was a momentum spike on Amazon AWS euphoria that was immediately reversed by the $9.6B options expiry mechanics — the reference-close framework correctly filtered this out. Framework Condition 2 (positive ETF flows): NOT MET — last 48h net outflows; July 2026 monthly total ETF inflows of only $205M (record monthly low per CoinDesk). Medium conviction: the step-aside rule is clear and both conditions are decisively unmet, but the July monthly gain (+7.4%) preserved through these headwinds suggests underlying demand above $60,000."
+  },
+
+  "so_what": {
+    "line": "Step-aside survives: reference close $62,961.99 vs $65,000 threshold (gap now $2,038.01); the $9.6B options expiry (9× larger than yesterday's estimate) pinned and then pushed BTC below $64,000; ETF inflows hit a record monthly low of $205M for July.",
+    "bull": "July monthly gain of +7.4% preserved despite the $9.6B expiry headwind and record-low ETF inflows — forced-selling fuel is spent; the $65,411 intraday touch at 01:00 UTC proves demand exists above $65,000 when macro conditions support it; Amazon AWS +36.7% and hyperscaler AI capex eventually drives institutional BTC allocation as risk appetite normalizes post-expiry",
+    "bear": "$60,000 puts are the top August trade (CoinDesk); ETF inflows at record monthly low ($205M for all of July); step-aside gap widened 9× in one session ($226.70 → $2,038.01); month-end rebalancing, $9.6B options pin, and ETF outflows converged to push BTC lower on the final day of July while equities boomed — macro decoupling suggests crypto-specific headwinds beyond the general risk appetite"
+  },
+
+  "snapshot": {
+    "price": 62961.99,
+    "change_pct": -2.80,
+    "change_abs": -1811.31,
+    "prev_close": 64773.30,
+    "day_high": 65411.23,
+    "day_low": 62485.17,
+    "volume": "~$35B notional globally (estimated; elevated on expiry day with $9.6B Deribit options settling at 08:00 UTC)",
+    "market_cap": "~$1.25T",
+    "extra": [
+      {
+        "label": "$65,411.23 intraday high (01:00 UTC) — BTC briefly crossed $65,000 but could not sustain to the reference close",
+        "value": "At 01:00 UTC (9 PM EDT July 30), BTC touched $65,411.23 — above the $65,000 framework re-entry threshold — driven by Amazon AWS +36.7% after-hours euphoria that briefly spilled into crypto. However, this occurred (1) before the 20:00 UTC reference-close window, and (2) before the 08:00 UTC Deribit monthly expiry. The reference-close discipline correctly prevented a false re-entry: the $65,411 spike reversed immediately and BTC spent the rest of the UTC day declining toward the expiry pin and then through it. The intraday touch validates that buyers exist above $65,000 but cannot sustain a close there against $9.6B in expiry mechanics.",
+        "tone": "neutral"
+      },
+      {
+        "label": "$9.6B Deribit monthly expiry — 08:00 UTC settlement with max pain $64,000 / put-call 0.28",
+        "value": "The July 31 Deribit monthly options expiry settled 149,000 BTC contracts with $9.6B notional — dramatically larger than the '~$1.2B' estimate in yesterday's dossier, which referenced the weekly expiry sizing rather than the end-of-month annual/monthly expiry. The put/call ratio of 0.28 going into expiry meant call OI dominated: market makers were short calls and needed price BELOW strike levels to minimize their delta hedge losses. The max pain level ($64,000) served as the settlement anchor. Post-expiry, the pin was released and price fell further on month-end rebalancing to the $62,485.17 day low.",
+        "tone": "down"
+      },
+      {
+        "label": "July 2026 Bitcoin ETF inflows: $205M (record monthly low) — weakest institutional demand month on record",
+        "value": "US spot Bitcoin ETFs pulled in only $205M in net inflows for all of July 2026 — the lowest monthly total since the ETF products launched. Compared to peak months (January–March 2025 $1–3B+ monthly), July's $205M represents near-zero institutional demand on a relative basis. The final 48 hours of July saw net outflows as multi-asset fund managers engaged in month-end rebalancing (systematic trimming of crypto positions to lock in July's +7.4% gain). Condition 2 of the BTC step-aside framework (positive ETF flows) remains in breach.",
+        "tone": "down"
+      },
+      {
+        "label": "Bitcoin preserves July 2026 monthly gain of +7.4% despite expiry-day −2.80% selloff",
+        "value": "Despite today's −2.80% reference-close decline, Bitcoin ends July 2026 up approximately +7.4% from the June 30 reference close (~$58,600). The July gain survived: the FOMC hawkish hold (July 29 fed hike scare), the Coldcard hardware wallet security scare, the DeepSeek AI-chip narrative (brief AI risk-off), and the $9.6B monthly options expiry pin. The monthly gain preservation is a bullish signal: BTC held its July gains despite maximum headwinds on the final trading day. CoinDesk confirms: 'Bitcoin holds onto July gain as forced-selling fuel was already spent.'",
+        "tone": "neutral"
+      },
+      {
+        "label": "Macro divergence — equities boomed, BTC declined: S&P 500 +0.91%, Nasdaq +1.1%, NVDA Gate 3 cleared — while BTC −2.80%",
+        "value": "July 31 saw the sharpest BTC/equities divergence of the framework period: S&P 500 +0.91% to 7,505.66 (4-day high), Nasdaq +1.1%, NVDA Gate 3 all-cleared — while BTC declined −2.80% to $62,962. This decoupling is best explained by options-expiry mechanics (equities don't have the same end-of-month expiry pin effect), month-end BTC rebalancing, and ETF outflows specific to crypto. It does NOT represent a fundamental deterioration in BTC's macro thesis — the Amazon AWS +36.7% and hyperscaler AI capex cycle that drove equities higher will eventually translate to institutional crypto allocation as risk appetite normalizes post-expiry.",
+        "tone": "down"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv": 52,
+    "iv_note": "Post-expiry IV typically compresses briefly then re-prices for the next catalyst; estimated 52% (slight compression from pre-expiry levels as the expiry event risk has passed; August directional catalyst not yet identified)",
+    "put_call": 0.28,
+    "short_interest": "Perp funding rates estimated negative or near-zero (consistent with bearish or neutral spot demand on expiry day); CME basis compressed; $60,000 put protection for August becoming the dominant options positioning trade (CoinDesk: '$60,000 put leads the pack as mood swings bearish for August')",
+    "max_pain": "$64,000",
+    "notable_flow": "The $9.6B Deribit monthly expiry (149K BTC contracts, put/call 0.28) was the dominant flow event: call-heavy positioning into expiry forced market makers to suppress price near max pain ($64,000) at settlement; post-expiry, the removal of MM hedging and month-end systematic rebalancing drove the decline from ~$63,800 at settlement to $62,485 day low; $60,000 August put protection is the emerging dominant trade — represents a $2,961 risk/reward from today's close vs. the put strike"
+  },
+
+  "what_traders_are_doing": "THREE STRATEGIES: (1) STEP-ASIDE CONTINUATION — framework traders remain in step-aside; both conditions decisively unmet after today ($62,962 reference close vs $65,000 threshold; ETF flows negative); the 9× gap expansion from July 30 ($226.70 → $2,038.01) means re-entry is now weeks rather than days away absent a powerful catalytic event; (2) AUGUST PUT PROTECTION — traders buying August $60,000 puts as 'top trade' (per CoinDesk); the thesis: BTC July gain (+7.4%) may retrace in August if ETF inflows don't recover and macro risk-off returns; the $60,000 put at $2,962 out-of-the-money provides significant downside protection at lower premium post-expiry; (3) LONG-BIAS POST-EXPIRY DIP BUYERS — counter-trend traders buying the post-expiry dip at $62,485 (day low) citing: forced-selling fuel spent (CoinDesk); July monthly gain preserved; Amazon AI capex cycle as eventual BTC institutional demand driver; stop below $60,000 (next major round number).",
+
+  "news": [
+    {
+      "label": "Bitcoin slides on the final day of July while equities boom — CoinDesk: BTC fell while S&P 500 +0.91% and Nasdaq +1.1% (Amazon AWS +36.7% driving equities); the macro decoupling is expiry-specific; BTC holds July monthly gain (+7.4%) despite final-day selloff; forced-selling fuel described as 'already spent'",
+      "url": "https://www.coindesk.com/markets/2026/07/31/bitcoin-ether-fall-equities-rally-with-broader-crypto-market-on-track-for-best-month-in-a-year",
+      "source": "CoinDesk",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin price slips below $64,000 as $9.6B options expiry settles — CryptoTimes: 149,000 BTC contracts, $9.6B notional, max pain $64,000, put/call 0.28; Deribit settlement 08:00 UTC; post-settlement price near $63,824; expiry pin mechanics dominated the first half of the UTC trading day",
+      "url": "https://www.cryptotimes.io/2026/07/31/bitcoin-price-slips-below-64000-as-9-6b-options-expiry-settles/",
+      "source": "CryptoTimes",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin holds onto July gain as forced-selling fuel was already spent — CoinDesk: BTC's July +7.4% monthly gain preserved despite the final-day −2.80% selloff; analysts note the negative drivers (FOMC hawkish hold, Coldcard scare, DeepSeek narrative, $9.6B expiry) have largely cleared; CoinDesk Bitcoin July price gain 'survives hawkish Fed, AI meltdown and Coldcard fallout'",
+      "url": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
+      "source": "CoinDesk",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin ETFs on track for their smallest monthly inflows ever — CoinDesk (July 30): July 2026 spot BTC ETF inflows total only $205M (lowest since launch); multi-asset fund managers engaged in systematic month-end rebalancing (trimming crypto to lock in July gains); ETF flow recovery dependent on US jobs data and clearer Federal Reserve rate path",
+      "url": "https://www.coindesk.com/daybook-us/2026/07/30/bitcoin-etfs-on-track-for-the-smallest-monthly-inflows-ever",
+      "source": "CoinDesk",
+      "sentiment": "negative"
+    },
+    {
+      "label": "$60,000 put leads August protection trade as mood swings bearish — CoinDesk: after $9.6B options expiry, the dominant August positioning trade is buying $60,000 put protection; BTC is $62,962 at reference close, making the $60K put $2,962 out-of-the-money (4.7% downside to the put strike); bearish August sentiment represents a sentiment shift from the 'near re-entry' optimism of July 29–30",
+      "url": "https://www.coindesk.com/daybook-us/2026/07/31/bitcoin-usd60-000-put-leads-the-pack-as-mood-swings-bearish-for-august",
+      "source": "CoinDesk",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin (BTCUSD) fluctuated significantly on July 31 — TradingKey market movers: BTC opened near $64,775, reached $65,411 at 01:00 UTC, then declined through the Deribit settlement to a day low of $62,485; reference close $62,962 (-2.80%); key variables: monthly options expiry mechanics, month-end rebalancing, weak ETF inflows",
+      "url": "https://www.tradingkey.com/news/market-movers/262066434-market-movers-btcusd-20260731",
+      "source": "TradingKey",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "Both step-aside conditions are decisively unmet after today's expiry-day selloff. The gap has widened to $2,038.01 — from the narrowest (July 30, $226.70) to a level that requires a 3.24% recovery from the reference close just to reach the threshold. The post-expiry overhang (open interest rolled from July to August) and record-low ETF inflows ($205M for July) suggest August begins with weak structural support. The first August catalyst windows: US nonfarm payrolls (early August) and the August 12 CPI print (key FOMC rate path input). If CPI is below consensus, the September FOMC hike narrative fades, ETF inflows could recover, and the $65,000 threshold becomes relevant again. If CPI is above expectations, September hike probability rises and the $60,000 put trade gains traction.",
+    "long_term": "Bitcoin's long-term macro thesis remains intact: the AI infrastructure capex super-cycle (confirmed by Amazon AWS +36.7% and Microsoft Azure +43%) eventually drives institutional demand for scarce, non-correlated stores of value as hyperscaler balance sheets expand. The July monthly gain (+7.4%) preserved through maximum headwinds validates the $58,600–$65,000 base. The step-aside framework will re-engage when both conditions are simultaneously met: reference close > $65,000 AND positive ETF flows. The timing depends on macro clarity (August CPI, September FOMC path) and institutional positioning recovery from the record-low July ETF inflow baseline."
+  },
+
+  "bull_case": [
+    "July monthly gain +7.4% preserved through the $9.6B options expiry, FOMC hawkish hold, Coldcard security scare, and DeepSeek AI narrative — the 'forced-selling fuel is already spent' (CoinDesk) and August begins without the concentrated negative catalyst stack that characterized July; structural support above $60,000 has not been tested this month",
+    "The $65,411.23 intraday touch at 01:00 UTC (above the $65,000 framework threshold) proves demand exists at and above the re-entry level when macro conditions support it; the Amazon AWS +36.7% euphoria briefly pushed BTC through the threshold — with the $9.6B expiry behind us, the next equivalent macro catalyst could achieve a sustained close above $65,000",
+    "Amazon AWS +36.7% and Meta capex $130–145B confirm the AI infrastructure capex super-cycle is accelerating; institutional investors deploying capital into AI infrastructure also tend to allocate to Bitcoin as a macro diversifier; the hyperscaler capex wave is an eventual tailwind for BTC institutional demand",
+    "Post-expiry, the options positioning resets: $60,000 put buyers provide a structural floor (market makers delta-hedging long against $60K puts create buy orders below $62,000); BTC has not tested $60,000 at any point in July 2026 — the range is $58,600 (June 30) to $65,411 (July 31 intraday)"
+  ],
+
+  "bear_case": [
+    "$60,000 put is the top August protection trade (CoinDesk) — representing market consensus that BTC faces $2,961 downside from today's $62,962 reference close (4.7% to the $60,000 put strike); if institutional positioning tilts toward put protection in August, the self-reinforcing delta hedging dynamic pushes price toward the strike",
+    "Step-aside gap widened 9× in a single session ($226.70 → $2,038.01): the July 30 narrative of 'closest to re-entry since step-aside activation' has reversed completely; both conditions are now decisively unmet and the ETF flow condition (net outflows, record-low July monthly at $205M) may take multiple weeks of positive inflows to recover",
+    "July 2026 spot BTC ETF inflows of $205M (record monthly low) reflect the institutional risk appetite for crypto at current macro conditions (VIX 16–17 range, FOMC hawkish hold, 40% September hike probability); without ETF flow recovery, the Condition 2 breach persists even if BTC price recovers toward $65,000",
+    "BTC decoupled from equities on the final day of July (BTC −2.80% while S&P 500 +0.91%): the macro divergence signals that crypto-specific headwinds (options expiry, ETF outflows, month-end rebalancing) are dominating over the general risk-on environment driven by AI capex earnings; these crypto-specific headwinds do not automatically resolve with a positive equities open"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest resistance — $65,000: framework re-entry threshold (Condition 1); also the psychological round number and the level where BTC briefly traded intraday (01:00 UTC high $65,411) before reversing; 6 consecutive reference closes below $65,000 (July 24–31); the most watched BTC level in the step-aside framework",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$65,411: today's intraday high (01:00 UTC) — the highest BTC has reached in the framework period; rejection here on the Amazon AWS euphoria spike signals the $65,000–$65,411 zone is supply; any future attempt to break $65,000 must clear this intraday high to confirm a genuine breakout rather than another wick",
+      "level": "$65,411",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,000: Deribit July 31 options max pain level; settlement anchor for $9.6B in contracts; now a reference level for the post-expiry reset (has the max pain dynamic cleared, or does OI rolled to August maintain a $64,000 pin?); resistance on any recovery attempt",
+      "level": "$64,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest support — $62,485: today's intraday low (15:00 UTC); the post-expiry, post-pin, month-end-rebalancing-completed demand zone; buyers at this level are taking the 'forced-selling fuel is spent' thesis at face value; the first genuine test of August demand comes if BTC revisits $62,485",
+      "level": "$62,485",
+      "kind": "support"
+    },
+    {
+      "label": "$61,000: next major support zone below today's low; prior swing support from the mid-July range; if $62,485 fails, this is the next level that BTC traders cite as meaningful demand",
+      "level": "$61,000",
+      "kind": "support"
+    },
+    {
+      "label": "$60,000: top August put protection strike (CoinDesk 'top trade'); psychological round number; significant put OI at this strike as protection buyers hedge the post-expiry gap; if BTC approaches $60,000, the delta hedging from put sellers creates additional support; but a breach of $60,000 triggers the put buyers' payoff and confirms a bearish August trend",
+      "level": "$60,000",
+      "kind": "support"
+    },
+    {
+      "label": "$62,962: today's 20:00 UTC reference close / step-aside gap measurement level; the opening bid for August 2026 BTC trading; serves as the short-term pivot between post-expiry recovery attempts and further softness",
+      "level": "$62,962",
+      "kind": "pivot"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-07-31",
+      "label": "$9.6B Deribit monthly options expiry (08:00 UTC): max pain $64,000, put/call 0.28, 149K contracts; pin mechanics dominated; post-expiry slide to $62,485 (day low); reference close $62,961.99; step-aside gap widened 9× to $2,038.01",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-01",
+      "label": "First August reference close: post-expiry BTC directional signal; if Amazon AWS euphoria and expiry mechanics clearing drive a recovery toward $64,000+, the step-aside gap begins to narrow; if month-end outflows continue into August 1, the bear thesis gains momentum",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-07",
+      "label": "US nonfarm payrolls / jobs data (estimated first Friday of August): labor market strength → September FOMC hike probability update → VIX reaction → BTC ETF flow sentiment signal",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-12",
+      "label": "August CPI print (estimated): primary September FOMC rate path input; below-expectations → September hike odds fall → ETF inflows could recover → BTC framework Condition 2 starts healing; above-expectations → September hike near-certain → risk-off → $60,000 put trade gains traction",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — options expiry dominates; BTC reference close $62,961.99\n\nBTC opened the UTC day at $64,775.47 (essentially unchanged from the July 30 reference close of $64,773.30), briefly surged to $65,411.23 at 01:00 UTC on Amazon AWS +36.7% after-hours enthusiasm, then steadily declined through the Deribit expiry (08:00 UTC settlement ~$63,823), accelerated lower to the day low of $62,485.17 at 15:00 UTC, and partially recovered to the 20:00 UTC reference close of $62,961.99.\n\n### The intraday $65,000 cross — false signal correctly filtered\n\nAt 01:00 UTC, BTC touched $65,411.23 — above the $65,000 Condition 1 threshold. This was the highest price in the step-aside framework period. However, this price was reached:\n1. At 01:00 UTC (not the 20:00 UTC reference-close window)\n2. Before the $9.6B Deribit expiry at 08:00 UTC\n3. As a momentum spike on Amazon AWS news, not a sustained directional move\n\nThe reference-close methodology filtered this correctly. Within 7 hours, BTC had reversed the entire spike and was trading below $64,000. This is the canonical case for why the framework uses a daily reference close rather than intraday highs.\n\n### Volume — elevated on expiry day; but thin on the real-money side\n\nThe $9.6B in notional options expiry inflated volume metrics for the session. Post-expiry (after 08:00 UTC), volume was thin — the Crypto.com candlestick data shows sub-100 BTC candles for most of the post-expiry period, with the 14:00 UTC candle (372 BTC) being the largest post-settlement volume as stop-losses hit below $63,270. The day low at 15:00 UTC ($62,485.17) occurred on moderate volume — not a capitulation spike, suggesting support at that level may be tested again before buyers have fully cleared.\n\n### Trend — step-aside framework; below all key thresholds\n\nBTC remains below the $65,000 step-aside threshold and below the 20-day reference-close moving average (approximately $64,200 based on the prior dossier range). The short-term trend is down; the medium-term trend (July +7.4%) is constructive but the expiry-day selloff resets the near-term chart negatively.\n\n### Strongest support — $62,485 (today's intraday low)\n\nThe $62,485 level is where buyers stepped in post-expiry. It represents the post-pin 'true price' — the level where demand emerged after options market-maker hedging was unwound. A return to $62,485 tests whether those buyers are committed or were an intraday technical bounce.\n\n### Strongest resistance — $65,000 (framework threshold)\n\n$65,000 has now rejected BTC twice in the framework period: July 30 intraday ($65,186 high at 13:00 UTC per prior dossier) and July 31 (today's $65,411 at 01:00 UTC). Two consecutive intraday rejections at the $65,000 zone create a genuine supply cluster that will require a significant macro catalyst (September FOMC dovish surprise, major ETF inflow data) to clear on a reference-close basis.\n\n### What invalidates the step-aside\n\nA reference close above $65,000 simultaneously with confirmed positive ETF flows ends the step-aside. The gap has widened to $2,038.01 — from 'closest since step-aside activation' yesterday to a level that represents a multi-week resolution timeline barring a dramatic catalyst. The next realistic pathway: August CPI below expectations (est. August 12) causes September FOMC hike odds to fall, ETF inflows recover, and BTC trends toward $65,000 over 2–3 weeks."
+}
