@@ -1,0 +1,155 @@
+{
+  "routine": "markets",
+  "date": "2026-08-01",
+  "window": "morning",
+  "generated_at": "2026-08-01T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Amazon's cloud blowout confirms AI demand; bond market now prices a September rate hike",
+    "label": "HOLD — 4 of 6 regime indicators breached entering August; SPX 7,490 (Day 2 above 7,380, BEARISH regime formally reversed); 30Y 5.28% (19-year high), September hike 82.4% (above 70% trigger), Brent $91, WTI $87; BTC $63,052 live (Gate 2 buffer $1,052); PLTR earnings AH Monday, NFP Friday Aug 7",
+    "conviction": "medium",
+    "horizon": "through Aug 7 NFP",
+    "rationale_short": "Amazon's AWS quarter — $42.2B revenue, +37% YoY, fastest growth in 18 quarters — plus Alphabet Cloud's continued expansion gave the market the dual confirmation it needed: AI capex is generating real organic revenue at scale. SPX closed at 7,490 for a second consecutive session above 7,380, formally completing the BEARISH regime reversal. But the macro backdrop entering August is not clean: September rate hike probability sits at 82.4% — well above the 70% formal trigger — after Q2 ECI printed 0.9% QoQ (in-line), and the bond market treated neutral data as insufficient relief. The 30Y closed at 5.28%, a new 19-year high, with three FOMC dissents (Hammack, Kashkari, Logan) for an immediate hike as the explicit policy signal. Brent is at $91 and WTI at $87, both well above formal triggers. AAPL's three simultaneous misses (services, China, Q4 guidance) introduce a quality-rotation question for the Nasdaq. BTC edged up overnight to $63,052 (Crypto.com 11:02 AM UTC) but retains only $1,052 of buffer above Gate 2. The week ahead is the next test: PLTR earnings AH Monday Aug 3 is the DoD-AI binary; July NFP Friday Aug 7 is the next rate-path data point and the most likely catalyst to move September probability materially.",
+    "supporting_data": [
+      {
+        "label": "SPX 7,489.72 (+0.70%); Nasdaq 25,374 (+1.00%); S&P 500 posts fourth consecutive winning month in July; Day 2 of BEARISH regime reversal confirmed",
+        "url": "https://www.washingtonpost.com/business/2026/07/31/wall-street-stocks-dow-nasdaq/ee08da40-8d1d-11f1-8912-d71e69d679d7_story.html"
+      },
+      {
+        "label": "AMZN +15% to ~$272 — biggest single-day gain in over a decade; AWS $42.2B (+37% YoY, 18-quarter high); AI and custom chip businesses each >$25B annual run rate; operating income $27.5B",
+        "url": "https://www.fool.com/investing/2026/07/31/amazons-149-jump-lifts-the-dow-while-apple-drags/"
+      },
+      {
+        "label": "AAPL −8% to ~$309; services $30.74B miss ($31.22B est.), Greater China $18.82B miss ($19.67B est.), Q4 guidance +9-11% miss (>12% consensus); market treating three simultaneous misses as structural",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-31-2026"
+      },
+      {
+        "label": "September rate hike probability 82.4% (above 70% formal trigger); Q2 ECI +0.9% QoQ (in-line, insufficient bond-market relief); FOMC held 3.50-3.75% on July 29 in 9-3 vote; 30Y 5.28% new 19-year high",
+        "url": "https://finance.yahoo.com/economy/policy/articles/theres-now-82-chance-fed-082600953.html"
+      },
+      {
+        "label": "Week ahead Aug 3-7: ISM Manufacturing Monday (exp. 54 from 53.3), PLTR earnings AH Monday, JOLTS + AMD AH Tuesday, ADP + ISM Services Wednesday, July NFP Friday",
+        "url": "https://www.cnbc.com/2026/07/31/stock-market-next-week-outlook-for-aug-3-7-2026.html"
+      },
+      {
+        "label": "PLTR ~$127, Q2 earnings AH Monday Aug 3; options pricing ~15% swing; DoD AI urgency elevated post-July-30 IRGC strikes; first DoD AI pure-play earnings post-US-Iran escalation",
+        "url": "https://www.barchart.com/story/news/3532685/dear-palantir-stock-fans-mark-your-calendars-for-august-3"
+      },
+      {
+        "label": "Brent ~$91/bbl, WTI ~$87; both above formal triggers; Iran ceasefire pause holding but US-Iran escalation trajectory remains in play; crude up ~24% in July",
+        "url": "https://www.cnbc.com/2026/07/27/oil-price-wti-brent-slide-as-iran-reportedly-may-halt-attacks.html"
+      },
+      {
+        "label": "BTC $63,052.74 (−1.41%, live Crypto.com 11:02 AM UTC Aug 1); day range $62,454–$64,017; Gate 2 ($62,000) buffer $1,052; BTC finished July +7.5% for the month",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7489.72,  "change_pct": 0.70,  "as_of": "2026-07-31T20:00:00Z" },
+    "nasdaq": { "level": 25374.0,  "change_pct": 1.00,  "as_of": "2026-07-31T20:00:00Z" },
+    "vix":    { "level": 17.47,    "change_pct": -0.17, "as_of": "2026-07-31T20:00:00Z" },
+    "ust10y": { "level": 4.75,     "change_bps": 8,     "as_of": "2026-07-31T20:00:00Z" },
+    "dxy":    { "level": 100.19,   "change_pct": 0.33,  "as_of": "2026-07-31T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.28,  "trigger_above": 5.00, "unit": "%" },
+    { "name": "September Hike Prob", "value": 82.4,  "trigger_above": 70.0, "unit": "%" },
+    { "name": "Brent Crude",         "value": 91.0,  "trigger_above": 85.0, "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 86.8,  "trigger_above": 79.0, "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7490,  "trigger_below": 7380, "unit": "" },
+    { "name": "BTC Gate 2",          "value": 63052, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMZN",
+      "note": "~$272 Friday close (+15.3%). AWS $42.2B (+37% YoY, 18-quarter best); AI and custom chip businesses each >$25B annual run rate — dual cloud AI confirmation with MSFT Azure 43%. Operating income $27.5B is the clean fundamental metric ($53.4B Anthropic unrealized gain inflated GAAP EPS). Prior August target of $270 hit Day 1. First gap-fill support ~$255.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$309 Friday close (−8%+ from $333.43). Services $30.74B miss, Greater China $18.82B miss, Q4 guidance +9-11% miss. Three simultaneous misses on the quality-rotation gatekeepers; closed below the $315 buyer-defense level. Market treating as structural damage, not a one-quarter miss. Q4 FY26 (October) is the earliest resolution.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$127 Friday close. Q2 earnings AH Monday Aug 3; options pricing ~15% swing. DoD AI urgency elevated post-IRGC strikes; first large-cap DoD AI earnings since US-Iran escalation. Key metrics: AIP commercial ARR growth, US government contract expansion, DoD deal disclosure. Setup is a binary.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$200.75 Friday close (+3.5%). AWS 37% + Azure 43% = strongest dual pre-earnings organic demand confirmation in the briefing series. Circular-financing disclosure ($250B OpenAI backstop) still unaddressed. $216 stop unchanged. No add before August 26 earnings.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$430 Friday close (−7-8%); largest semi decliner on a broad rally day. No AMD-specific catalyst; rate-driven multiple compression from 30Y at 5.28% and September hike at 82.4% is the mechanism. Reports Tuesday AH Aug 4 — data-center GPU revenue vs consensus is the binary. $410-420 is the entry zone if rate environment stabilizes.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$464.72 Friday close (+1.9%); Azure post-earnings gap consolidated. Two-day total +19.6% from pre-earnings close. At ~36x forward earnings with 30Y at 5.28%, $440-450 is the defensible pullback zone. September hike at 82.4% is a multiple-compression headwind at current pricing.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "$558 Friday close (+4.7%); recovered from Wednesday's FCF selloff. AI capex pressure thesis unchanged; $529 prior resistance now acts as support. September hike at 82.4% is a forward PE headwind.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "~$370 Friday close (−3.9%). META $31B capex + AMZN AI chips >$25B annual run rate are positive custom silicon demand signals, but rate environment is the near-term override. September earnings cycle is the next formal reset.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$63,052 live (Crypto.com 11:02 AM UTC Aug 1, −1.41%). Day range $62,454–$64,017. Gate 2 ($62,000) buffer $1,052. BTC edged up from night close (~$62,929) but remains range-bound just above Gate 2. BTC finished July +7.5% for the month despite Friday's sharp intraday test (low $62,369). Weekend Iran risk and 30Y elevation are the primary headwinds.",
+      "sentiment": "neutral"
+    }
+  ],
+  "dont_buy": [
+    {
+      "ticker": "AAPL",
+      "reason": "Three simultaneous Q3 FY26 misses (services $30.74B, China $18.82B, Q4 guidance +9-11%) are the exact quality-rotation gatekeepers identified in prior briefings. The Friday close at ~$309 prices the iPhone beat but does not yet price a sustained services deceleration or structural China impairment through Q4 FY26. Market consensus has shifted from 'one-quarter miss' to 'structural damage' — the $315 buyer-defense level failed to hold.",
+      "better_entry": "Wait for Q4 FY26 earnings (October 2026); re-enter if services growth reaccelerates above 15% YoY. Below $295 on volume prices the structural impairment scenario."
+    },
+    {
+      "ticker": "AMD",
+      "reason": "No catalyst to counter 30Y at 5.28% and September hike probability at 82.4%. Reports Tuesday AH Aug 4 but data-center GPU narrative has been partially displaced by hyperscaler custom silicon wins (AMZN, MSFT). Rate-driven multiple compression is the primary near-term headwind, and the earnings print is the only near-term reversal catalyst.",
+      "better_entry": "After Tuesday AH AMD print confirms or denies MI300 data-center traction. Post-NVDA Aug 26 confirms the full demand picture. Entry zone $410-420 if rate environment stabilizes post-NFP."
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "PLTR — Q2 earnings binary",
+      "direction": "pair",
+      "thesis": "PLTR reports Q2 after the close Monday Aug 3. Options pricing ~15% swing. The DoD AI urgency thesis — reinforced by US retaliatory IRGC strikes and the ongoing US-Iran escalation trajectory — makes PLTR the most defense-AI leveraged large-cap into earnings. Key metrics: AIP commercial ARR growth rate, US government contract expansion, and any explicit DoD AI program disclosure. A beat on government revenue with raised guidance validates the thesis; a miss + September at 82.4% creates a dual headwind (fundamentals + multiple compression) with no near-term relief.",
+      "entry": "Risk-defined exposure (options or small equity) into Monday close. $110-115 is the support zone on a miss; $140+ is the next resistance on a beat with DoD contract expansion.",
+      "invalidation": "Government revenue deceleration or soft guidance removes the DoD spending thesis and neutralizes the geopolitical premium.",
+      "conviction": "medium",
+      "horizon": "resolves Monday AH Aug 3"
+    },
+    {
+      "asset": "30Y Treasury — rate path setup",
+      "direction": "hedge",
+      "thesis": "30Y at 5.28% (new 19-year high) extended +16bps on Friday even after ECI printed at consensus — the bond market is pricing FOMC policy, not data surprises. September probability is 82.4%; the three dissents (Hammack, Kashkari, Logan) are the explicit forward guidance. July NFP (Aug 7) is the next regime-critical input: above 200k with any wage acceleration makes September near-certain and likely extends 30Y toward 5.35-5.40%; below 100k is the only clear reversal catalyst. The 5.00% level is the formal regime-breach recovery gate.",
+      "entry": "5.25-5.35% is the near-term extension zone. Watch 30Y within 15 minutes of 8:30 AM ET Friday Aug 7: above 5.32% confirms hot; below 5.10% signals reversal.",
+      "invalidation": "Sub-100k NFP print with falling wages would clear the formal 30Y breach; September odds falling below 70% removes the second breached indicator.",
+      "conviction": "high",
+      "horizon": "2-4 weeks"
+    },
+    {
+      "asset": "SPX 7,380 — regime maintenance",
+      "direction": "neutral",
+      "thesis": "Two consecutive Friday closes above 7,380 formally reversed the BEARISH designation. The level now functions as the August support that defines whether the reversal is sustained. PLTR earnings Monday and NFP Friday are the two nearest catalysts large enough to push SPX below 7,380 on a negative surprise. A fourth breach (SPX below 7,380) would reclassify the regime and require two new consecutive closes to recover.",
+      "entry": "7,380 is new support; 7,500+ sustained through NFP signals August momentum. Not a trading entry — a regime monitor.",
+      "invalidation": "Any close below 7,380 re-activates the formal BEARISH regime classification.",
+      "conviction": "medium",
+      "horizon": "1-2 weeks"
+    }
+  ],
+  "bear_case": "The BEARISH regime reversal is mechanical, not fundamental: SPX reclaimed 7,380 on one week of Big Tech earnings — MSFT and AMZN — not on a macro shift. September rate hike probability at 82.4% is fixed income's clearest policy signal, and a 30Y at 5.28% (new 19-year high) historically compresses Nasdaq forward multiples over a 3-6 month lag. The FOMC's 9-3 dissent (Hammack, Kashkari, Logan) is the explicit warning that the hawks are close to winning the next meeting. AAPL's structural miss and AMD's −7-8% on a broad rally day signal that rate-driven multiple compression is already differentiating. BTC retained only $1,052 above Gate 2 ($62,000) entering the weekend; a risk-off event or a hot NFP Friday would close the buffer. If July NFP on Aug 7 prints above 200k, September becomes near-certain, 30Y extends toward 5.35-5.40%, and SPX loses 7,380 on Day 1 of the August data week. The read does not hold if SPX closes below 7,380.",
+  "body_mdx": "data/briefings/markets/2026-08-01-morning.mdx"
+}
