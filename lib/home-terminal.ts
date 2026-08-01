@@ -2,7 +2,6 @@ import { getTradeQuotes } from "@/lib/markets";
 import {
   getAllMarketsVerdicts,
   getBriefing,
-  getCalendarArchive,
   getMergedTimeline,
   type CalendarEvent,
   type MarketsVerdict,
@@ -576,10 +575,16 @@ export async function getHomeData(): Promise<HomeData> {
   // The timeline is the scrubbing layer: everything we know of, behind and
   // ahead, so it can be scrolled in both directions rather than starting flat
   // at today.
-  const timeline: CalRow[] = [
-    ...getCalendarArchive().map((e) => ({ ...e, source: "catalyst" as const })),
-    ...upcoming,
-  ]
+  //
+  // Built from the merged set, not from `upcoming`. It used to be archive +
+  // upcoming, which meant the strip's PAST came only from the archive file and
+  // every feed row was cut by the `>= today` filter the moment its date passed.
+  // The Bank of Japan's July 31 decision was on the page all day and gone the
+  // next morning — and the 45-day lookback added to the central-bank tables did
+  // nothing, because the rows it produced were discarded one step later.
+  // `merged` already contains the archive (getCalendarTimeline reads it), so
+  // this is also one source rather than two spliced together.
+  const timeline: CalRow[] = [...merged]
     .sort((a, b) => a.date.localeCompare(b.date))
     .map(toRow);
 

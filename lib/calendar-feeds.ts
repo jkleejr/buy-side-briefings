@@ -85,6 +85,10 @@ export async function getMacroReleases(
   const end = new Date(`${from}T12:00:00Z`);
   end.setUTCMonth(end.getUTCMonth() + monthsAhead);
   const endStr = end.toISOString().slice(0, 10);
+  // Recent prints stay on the strip for the same reason the Fed's do: last
+  // week's CPI is how you read this week's tape, and the schedule is a record
+  // of the week rather than only a countdown.
+  const since = lookbackFrom(from);
 
   const per = await Promise.all(
     FRED_RELEASES.map(async ({ id, label, kind }) => {
@@ -92,12 +96,12 @@ export async function getMacroReleases(
         const url =
           `https://api.stlouisfed.org/fred/release/dates?release_id=${id}` +
           `&api_key=${key}&file_type=json&include_release_dates_with_no_data=true` +
-          `&realtime_start=${from}&realtime_end=${endStr}&sort_order=asc`;
+          `&realtime_start=${since}&realtime_end=${endStr}&sort_order=asc`;
         const res = await fetch(url, { next: { revalidate: 21_600 } });
         if (!res.ok) return [];
         const json = (await res.json()) as FredDates;
         return (json.release_dates ?? [])
-          .filter((r) => r.date >= from)
+          .filter((r) => r.date >= since)
           .map<CalendarEvent>((r) => ({
             date: r.date,
             label,
