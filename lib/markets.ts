@@ -261,10 +261,19 @@ async function fetchChartBars(
         date: q.date.toISOString(),
         close: q.close,
       };
-      if (q.open != null) bar.open = q.open;
-      if (q.high != null) bar.high = q.high;
-      if (q.low != null) bar.low = q.low;
-      if (q.volume != null) bar.volume = q.volume;
+      // A price of zero is not a price. Yahoo returns O/H/L = 0 for the
+      // in-progress bar on some symbols — the current week on 000660.KS and
+      // ^KS11, for instance — while still reporting a real close. Stored as-is
+      // that made a candle whose low was 0, so the last bar drew a wick from
+      // the floor of the chart to the price, and dragged the y-axis and the
+      // derived support levels down with it. Dropping the field instead leaves
+      // a close-only bar, which is what the feed actually knows.
+      const ok = (v: number | null | undefined): v is number =>
+        typeof v === "number" && Number.isFinite(v) && v > 0;
+      if (ok(q.open)) bar.open = q.open;
+      if (ok(q.high)) bar.high = q.high;
+      if (ok(q.low)) bar.low = q.low;
+      if (q.volume != null && Number.isFinite(q.volume)) bar.volume = q.volume;
       return bar;
     })
     .sort((a, b) => a.date.localeCompare(b.date));
