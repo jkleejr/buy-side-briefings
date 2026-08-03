@@ -1,0 +1,203 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-03",
+  "generated_at": "2026-08-03T22:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "STEP-ASIDE — GAP NARROWS SECOND STRAIGHT SESSION TO $1,210.77 — BTC REFERENCE CLOSE $63,789.23 (+$349.87 / +0.55% FROM AUGUST 2): THE SESSION WAS A TALE OF TWO PHASES — MORNING RISK-OFF ON US-IRAN MILITARY STRIKE NEWS DROVE BTC TO A SESSION LOW OF $62,295.78 (08:00 UTC, THE LOWEST SINCE THE POST-EXPIRY TROUGH ON JULY 31), FOLLOWED BY A SHARP RECOVERY WHEN PRESIDENT TRUMP ANNOUNCED HE CALLED OFF PLANNED IRAN STRIKES, OIL PRICES FELL, AND BROAD RISK ASSETS SURGED. THE 14:00 UTC CANDLE (9–10AM ET, US MARKET OPEN) WAS THE DEFINING MOVE: 156 BTC (~$9.98M ON CRYPTO.COM — THE HIGHEST-VOLUME CANDLE OF THE SESSION AT ~19% OF ALL-DAY VOLUME IN A SINGLE HOUR) DROVE BTC FROM $63,347 TO $63,999 (+$618 / +1.94%). BTC THEN CONSOLIDATED IN THE $63,648–$64,034 RANGE THROUGH THE US AFTERNOON, WITH THE 20:00 UTC REFERENCE WINDOW CLOSING AT $63,789.23. THE STEP-ASIDE FRAMEWORK CONDITIONS REMAIN UNMET: (1) REFERENCE CLOSE $63,789.23 IS $1,210.77 BELOW THE $65,000 THRESHOLD — GAP HAS NARROWED FOR TWO CONSECUTIVE SESSIONS (AUGUST 1: $2,341.27 → AUGUST 2: $1,560.64 → AUGUST 3: $1,210.77); (2) ETF FLOWS: SPOT BTC ETFs SAW NET OUTFLOWS ON MONDAY; CONDITION 2 REMAINS NOT MET. THE SESSION HIGH OF $64,033.33 (FROM THE 20:00 UTC CANDLE ITSELF, INDICATING BUYING AT THE REFERENCE CLOSE WINDOW) IS THE CLOSEST BTC HAS TRADED TO $65,000 SINCE THE STEP-ASIDE BEGAN. ISM MANUFACTURING PMI ROSE TO 55.6 IN JULY — STRONGEST SINCE MAY 2022, ABOVE THE 54.0 ESTIMATE — AN AMBIGUOUS SIGNAL FOR BTC: STRONG MANUFACTURING SUPPORTS RISK ASSETS BUT ALSO REDUCES RATE-CUT EXPECTATIONS. MACRO WEEK AHEAD: ADP (AUGUST 5) AND NFP (AUGUST 7) REMAIN THE PRIMARY RE-EVALUATION WINDOWS.",
+
+  "long_pnl": "The step-aside gap has now narrowed for two consecutive sessions for the first time in the framework period: August 1 peak ($2,341.27) → August 2 ($1,560.64) → August 3 ($1,210.77). Framework step-aside traders who exited at the July 24 activation (~$65,000) now measure $63,789.23 against their exit price — a cumulative step-aside benefit of approximately $1,211 (1.86% from threshold). The step-aside protected against the July 31 expiry-day trough ($62,295.78 session low today; the intraday panic low being approximately $144 below the August 2 reference close, confirming the step-aside shielded against meaningful intraday volatility). If the narrowing continues at today's pace (+$349/session), the framework gap closes theoretically in ~3.5 sessions — though $65,000 requires a catalyst, not just organic drift.",
+
+  "short_pnl": "Short/put-protection holders gave back ground for a second straight session as BTC recovered +0.55%. The $60,000 August put is now $3,789 out-of-the-money (+$349 further OTM from yesterday's $3,439). However, the geopolitical morning shock (BTC to $62,295 before recovery) demonstrated that the put protects meaningfully against macro tail events; the ISM beat (55.6 vs 54.0) supports the rate-hawkish scenario that underpins the seasonal/put trade. The step-aside framework gap closing sequence may be temporary: a re-escalation of Iran tensions or a hot August 7 NFP could re-expand the gap rapidly, as occurred on July 31 when it moved from $226.70 to $2,038.01 in a single session.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "medium",
+    "horizon": "Step-aside continues — Condition 1 (reference close > $65,000) NOT MET: gap $1,210.77 narrowed for second consecutive session (August 1: $2,341.27 → August 2: $1,560.64 → August 3: $1,210.77). Condition 2 (positive net ETF flows): NOT MET on Monday — net outflows reported. Both conditions must be simultaneously met on a reference close. The 14:00 UTC candle showing BTC approaching $64,000 is constructive, but the gap to $65,000 remains material. ADP (August 5) and NFP (August 7) are the next re-evaluation windows; a soft NFP print (continuing June's 57K miss vs 110K consensus) could drive BTC through $65,000 and trigger framework re-entry if ETF flows simultaneously turn positive.",
+    "rationale": "Framework Condition 1 (reference close > $65,000): NOT MET. $63,789.23 is $1,210.77 below the threshold. Gap narrowing sequence: July 30 ($226.70) → July 31 ($2,038.01, expiry shock) → August 1 ($2,341.27) → August 2 ($1,560.64) → August 3 ($1,210.77). Today is the second consecutive narrowing session, but BTC remains below all four major moving averages and needs +1.90% from today's close to reach $65,000. Framework Condition 2 (net positive ETF flows): NOT MET — spot ETFs recorded net outflows Monday, with total net assets standing at $76.3B. The 14:00 UTC US-market-open surge (156 BTC / $9.98M in a single candle) is the most constructive demand signal of the week so far, but gap closure requires a macro catalyst (soft NFP, soft CPI) that the ISM beat today has not provided."
+  },
+
+  "so_what": {
+    "line": "Step-aside continues — second consecutive gap narrowing (gap now $1,210.77), but BTC needs +1.90% and positive ETF flows simultaneously; Iran morning panic drove BTC to $62,295 before a +$1,694 reversal on Trump's strike cancellation; NFP (August 7) is the key re-entry catalyst.",
+    "bull": "The gap has narrowed two straight sessions for the first time in the framework period (from $2,341 to $1,211 in two days); the 14:00 UTC session candle (156 BTC / $9.98M — 19% of all-day volume in one hour) shows aggressive institutional buying at the US market open on Iran de-escalation; today's $64,033 intraday high is the closest BTC has traded to $65,000 since the step-aside began; ISM Manufacturing 55.6 signals economic strength that eventually supports institutional BTC allocation.",
+    "bear": "Net ETF outflows on Monday break the July 31 recovery signal — both framework conditions remain unmet; BTC underperformed equity markets significantly (BTC +0.55% reference close vs. Nasdaq +2.22%); BTC remains below all four major moving averages (20d ~$64,288; 50d ~$64,891; 100d ~$67,604; 200d ~$73,308); strong ISM (55.6 vs 54.0 expected) is hawkish for Fed — reduces rate-cut probability, raises dollar strength expectations; August historically BTC's worst month (−7.51% median since 2013); $60,000 put trade ($1.17B OI) remains the dominant August positioning."
+  },
+
+  "snapshot": {
+    "price": 63789.23,
+    "change_pct": 0.55,
+    "change_abs": 349.87,
+    "prev_close": 63439.36,
+    "day_high": 64092.91,
+    "day_low": 62295.78,
+    "volume": "~838 BTC (~$53.4M on Crypto.com; 14:00 UTC candle 156 BTC = ~19% of all-day volume in one hour; total estimated market volume $15–20B, above weekend average but below weekday norm of $25–35B)",
+    "market_cap": "~$1.27T",
+    "extra": [
+      {
+        "label": "14:00 UTC surge: $63,347 → $63,999 (+$618 / +1.94%) on 156 BTC ($9.98M) — the session's highest-volume candle (19% of all-day volume); US market open demand at Iran de-escalation",
+        "value": "The session's defining move came at 14:00 UTC (9–10am ET, US regular market open) when BTC surged $618 in one hourly candle on Crypto.com's highest-volume bar of the session (156 BTC = approximately $9.98M notional, versus the session average of ~42 BTC per candle). This was the precise moment President Trump's Iran strike cancellation news was fully priced: Nasdaq futures turned sharply positive, oil fell, and BTC surged from the sub-$63,400 morning range to briefly touch $63,999.99 at the candle high. The move took BTC from the post-Iran-shock consolidation level directly to within $1 of $64,000 — the clearest demand signal of the framework period since the July 31 ETF-driven recovery. Subsequent hours (15:00–21:00 UTC) held above $63,648, confirming the 14:00 UTC move as accumulation rather than a false break.",
+        "tone": "up"
+      },
+      {
+        "label": "Step-aside gap narrows for second consecutive session: $1,210.77 — the most rapid two-day narrowing in the framework period",
+        "value": "Two-session gap narrowing sequence: August 2 ($1,560.64) → August 3 ($1,210.77) = gap closed by $349.87 today. Cumulative two-day narrowing: $2,341.27 (August 1 peak) → $1,210.77 (August 3) = gap closed by $1,130.50 in two sessions. For context, the July 30 gap was just $226.70 before the expiry-day selloff on July 31 re-expanded it to $2,038.01 in a single session — so rapid gap narrowing on weekend/thin-volume sessions must be confirmed on NFP week institutional volume. The $65,000 threshold is now within a single strong session's reach if macro catalysts align favorably on August 7 (NFP).",
+        "tone": "up"
+      },
+      {
+        "label": "Morning Iran shock: $62,295.78 intraday low (08:00 UTC) — deepest intraday test since the July 31 expiry trough; Iran de-escalation fully reversed the damage within 6 hours",
+        "value": "The 08:00 UTC candle recorded a low of $62,295.78, the deepest intraday level since the July 31 post-expiry selloff drove the daily close to $62,961.99. This represents a $1,493.45 intraday drawdown from the August 2 reference close ($63,439.36) to the August 3 session low — a significant swing that would have triggered stop-losses and margin calls for levered longs. The full recovery from $62,295 to $63,789 reference close (+$1,493.45 / +2.39%) in a single session represents the framework period's largest intraday recovery. For the step-aside framework, this intraday volatility does not matter (only the 20:00 UTC reference close is measured) — but it demonstrates that BTC's geopolitical sensitivity creates significant intraday risk for non-framework participants.",
+        "tone": "neutral"
+      },
+      {
+        "label": "ISM Manufacturing PMI 55.6 — strongest since May 2022: beat expectations but creates a mixed BTC signal (strong economy ≠ imminent rate cut)",
+        "value": "The US ISM Manufacturing PMI rose to 55.6 in July 2026, the strongest reading since May 2022. The June read was 53.3 against a 54.0 economist forecast, making July's 55.6 a material beat. Interpretation for BTC: (1) POSITIVE — economic expansion typically supports risk-asset demand including institutional BTC allocation; (2) AMBIGUOUS/NEGATIVE — strong manufacturing reduces Fed urgency to cut rates, supporting dollar strength and reducing the near-term rate-cut catalyst that has historically driven BTC rallies; a robust economy makes a September rate hike (not just hold) more plausible. The 10-year Treasury yield fell 5.7 bps to 4.688% despite the strong ISM — suggesting markets read the Iran de-escalation (oil price drop → lower CPI expectations) as more influential than the ISM beat for the near-term rate path.",
+        "tone": "neutral"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv": 46,
+    "iv_note": "Estimated ~46% (slightly compressed from ~48% on Sunday; today's intraday range of $62,295–$64,033 demonstrates realized volatility consistent with 45–48% IV; ADP (August 5) and NFP (August 7) will begin anchoring the weekly implied volatility; if Monday night BTC holds the $63,700 zone, IV may compress further ahead of ADP; a hot ISM/hawkish Fed repricing would re-expand IV toward 50–52%)",
+    "put_call": 0.30,
+    "short_interest": "Perpetual funding rates: estimated slightly negative to flat (mild short-side lean persists as perp funding rates reflect the step-aside framework's bearish posture; ETF net outflows on Monday reinforce the institutional short positioning; no significant funding rate spike suggesting crowded short yet — the $60,000 put remains the dominant bearish expression rather than perp shorts)",
+    "max_pain": "$62,000–$63,000 (estimated August weekly; $60,000 put concentration with $1.17B notional OI at Deribit continues to create gravitational pull toward $60,000–$63,000; today's reference close at $63,789 is above the estimated max-pain band, which would create MM delta-hedging sell pressure in the near term)",
+    "notable_flow": "The dominant positioning remains the $60,000 August put ($1.17B notional OI at Deribit per CoinDesk July 31). The 14:00 UTC surge (156 BTC / $9.98M) represents counter-flow from Iran de-escalation buyers at the US market open — these are macro event traders, not structural BTC accumulators. ETF net outflows on Monday (despite the Iran de-escalation rally in equities) confirm that the institutional ETF demand that drove the July 31 +$233M inflow has not sustained into the new week. The absence of ETF inflows despite Nasdaq +2.22% is the most significant positioning signal of the day: BTC decoupled from equity risk-on in terms of institutional ETF flows."
+  },
+
+  "what_traders_are_doing": "THREE MAIN STRATEGIES: (1) STEP-ASIDE CONTINUATION — framework traders remain sidelined as both conditions remain unmet; the gap narrowed to $1,210.77 (second consecutive improvement) but still requires +1.90% and positive ETF flows simultaneously; the 14:00 UTC surge to $64,000 shows BTC has the momentum potential to close the gap, but the NFP trigger (August 7) is needed to simultaneously drive BTC > $65,000 AND generate the sustained ETF inflows that meet Condition 2; framework traders are watching the August 5 ADP and August 7 NFP as the next actionable windows; (2) $60,000 PUT PROTECTION HOLD — the dominant Deribit positioning ($1.17B notional OI) is further OTM today ($3,789 from current price) but the thesis is alive: ISM 55.6 is hawkish, ETF outflows Monday contradict the bull case, August historically BTC's worst month; any macro re-escalation (Iran strikes resume, hot NFP, hot CPI) could drive BTC back toward the $60,000 strike in a single session as occurred with the July 31 trough ($62,961); (3) NFP TACTICAL LONG — macro/crypto traders who believe a soft July NFP (<100K, continuing June's 57K miss) will simultaneously push BTC through $65,000 and trigger ETF inflows; these traders are building positions in the $63,000–$64,000 zone ahead of August 7, targeting a quick +2–4% move to $65,000–$66,000 as the re-entry trigger; risk: a hot NFP (>150K) drives BTC below $62,000 and re-expands the step-aside gap to $3,000+.",
+
+  "news": [
+    {
+      "label": "BTC reference close $63,789.23 — second consecutive gap narrowing; 14:00 UTC Iran de-escalation surge drove BTC from $63,347 to $63,999 on the session's highest-volume candle (156 BTC / $9.98M); today's $64,033 intraday high is the closest to $65,000 since step-aside began",
+      "url": "https://www.coindesk.com/business/2026/08/03/live-updates-traders-say-bitcoin-sell-off-from-usd65-000-points-to-thin-volume-not-panic-selling",
+      "source": "CoinDesk",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin and crypto prices pulling back Monday morning despite Iran de-escalation: BTC opened $63,497 (1.2% above Sunday open), dipped to $62,474 by 8:15am ET on Iran conflict fears; crypto underperformed risk assets even after Trump called off strikes; Yahoo Finance covers BTC's decoupling from equity risk-on",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-august-3-2026-prices-pulling-back-this-morning-despite-de-escalation-with-iran-131220661.html",
+      "source": "Yahoo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Trump calls off Iran strikes — oil falls, US markets surge: SPX +1.48% to 7,600.50, Nasdaq +2.22%, Dow record high, VIX 15.79; oil price drop reduces inflation expectations (hawkish CPI risk); BTC recovers +$1,493 intraday from $62,295 low to close $63,789 reference; Iran situation remains unresolved (Iran denied new negotiations)",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-aug-3-2026-dow-futures-climb-as-oil-slides-on-renewed-iran-talks",
+      "source": "TheStreet",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "ISM Manufacturing PMI 55.6 (July) — strongest since May 2022: beats 54.0 estimate and June's 53.3; manufacturing expansion signals economic strength; hawkish for Fed rate path (reduces urgency to cut); 10-year Treasury fell 5.7 bps to 4.688% (Iran oil effect dominated); mixed for BTC: strong economy eventually supports allocation, but delays rate-cut catalyst",
+      "url": "https://nordfx.com/market-news/forex-cryptocurrency-forecast-august-3-7-2026",
+      "source": "NordFX",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin macro week ahead: ADP (August 5), NFP (August 7) — the step-aside re-entry window: June NFP came in at 57K (well below 110K consensus); if July continues the softening trend, Fed rate-hike probability falls, dollar weakens, ETF inflows likely resume; a soft NFP is the single most plausible catalyst for simultaneously meeting both step-aside framework conditions",
+      "url": "https://cryptonews.net/news/bitcoin/33238448/",
+      "source": "CryptoNews",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin ETF net outflows Monday — Condition 2 of step-aside framework NOT met for August 3: spot BTC ETFs recorded net outflows on Monday, with total net assets $76.3B; the July 31 confirmed +$233M inflow (IBIT $183M = 79%) has not carried over to the new week; both step-aside conditions remain unmet simultaneously; August 7 NFP is the earliest realistic window for sustained ETF flow recovery",
+      "url": "https://www.walletpilot.com/bitcoin-tracker/etfs",
+      "source": "WalletPilot / Farside Investors",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The two-session gap narrowing sequence (August 1: $2,341 → August 2: $1,561 → August 3: $1,211) is the most constructive trend in the step-aside period. However, the sustainability of this narrowing is now at a test: (1) BTC underperformed equities significantly today (BTC +0.55% vs. Nasdaq +2.22%), suggesting the Iran de-escalation/risk-on narrative is not fully translating into BTC demand; (2) ETF outflows on Monday contradict the flow recovery signal from July 31; (3) the 14:00 UTC candle ($63,999 intraday high) shows that $64,000 acts as an intermediate resistance before $65,000. The near-term path to $65,000 runs through two gate events: ADP on August 5 and NFP on August 7. If July NFP prints soft (continuing June's 57K miss), September rate-hike probability falls, dollar weakens, and BTC could push through the 20d EMA ($64,288) and 50d EMA ($64,891) overhead cluster toward $65,000 in a single session. The step-aside framework re-entry would require a simultaneous $65,000 reference close AND positive ETF flows on the same day.",
+    "long_term": "BTC's long-term thesis remains intact but the immediate technical and flow conditions remain challenging. BTC below all four major moving averages (20d ~$64,288; 50d ~$64,891; 100d ~$67,604; 200d ~$73,308) with net ETF outflows is a structurally bearish configuration despite today's reference close improvement. The seasonal backdrop (August historically −7.51% median return following a positive July) and the $1.17B $60,000 August put remain the structural bears. The long-term bull case — AI infrastructure capex super-cycle driving institutional BTC allocation, halving cycle dynamics, and IBIT structural demand — has not changed. The step-aside is not a long-term bearish call; it is a near-term framework response to specific conditions ($65,000 reference close + positive ETF flows) that have not simultaneously materialized."
+  },
+
+  "bull_case": [
+    "Second consecutive day of gap narrowing ($1,561 → $1,211) — the momentum of the narrowing is accelerating: August 1 gap widened by $1,115 from July 30; August 2 narrowed by $780; August 3 narrowed by $350; if NFP week delivers a soft labor market print and ETF flows respond, the two conditions could converge simultaneously for the first time since the step-aside began on July 24",
+    "The 14:00 UTC candle (156 BTC / $9.98M — 19% of the entire session's volume in one hour) is the strongest single demand signal since the July 31 IBIT-led $233M ETF day; it demonstrates that institutional buyers are active at $63,300–$64,000 and willing to apply significant capital when macro catalysts align; the Iran de-escalation was the immediate trigger, but the magnitude of buying at this price level suggests structural accumulation is occurring",
+    "Today's $64,033 intraday high (20:00 UTC candle) is within $1,967 of the $65,000 framework re-entry threshold — the smallest gap to $65,000 on any intraday tick since the step-aside was activated; BTC has demonstrated the volatility to close $2,000 gaps in single sessions (the July 31 expiry-day selloff moved $2,000 in one direction; a reversal of similar magnitude would achieve re-entry)",
+    "ISM Manufacturing 55.6 signals a non-recessionary economy: despite the near-term hawkish rate implication, an economy expanding at the fastest manufacturing pace since May 2022 ultimately supports institutional risk asset allocation; IBIT AUM of $54.4B demonstrates the structural demand pool that re-engages when macro conditions permit; one strong NFP miss (soft labor) could simultaneously reduce hike fears and trigger ETF re-entry flows"
+  ],
+
+  "bear_case": [
+    "BTC underperformed equities materially on August 3 despite a significant risk-on macro session (Nasdaq +2.22%, Dow record high, VIX 15.79, Iran de-escalation): BTC reference close +0.55% is only 24.7% of the Nasdaq's return, suggesting BTC's demand profile is structurally weaker than equity risk assets in the current environment; this 'decoupling' from equity risk-on is a bearish signal for institutional ETF flow recovery",
+    "Net ETF outflows on Monday break the July 31 recovery signal: the $233M July 31 IBIT inflow was cited in the August 2 dossier as an early Condition 2 recovery signal; Monday outflows (the first post-weekend ETF data point) contradict that signal; two consecutive positive ETF days would be the minimum for a 'sustained trend' as required by the framework",
+    "BTC remains below all four major moving averages (20d EMA ~$64,288; 50d EMA ~$64,891; 100d EMA ~$67,604; 200d EMA ~$73,308); each EMA acts as an independent resistance; even reaching $65,000 (the framework threshold) requires BTC to clear the 20d and 50d EMAs sequentially — both have acted as resistance throughout the step-aside period",
+    "The gap narrowing is fragile: the July 30 gap was $226.70 before the July 31 expiry-day selloff re-expanded it to $2,038.01 in one session; the current two-session narrowing from $2,341 to $1,211 could be reversed in a single hot data print (August 7 NFP above consensus, August 12 CPI above expectations, or Iran situation re-escalating); the framework gap has proven to be highly volatile in both directions"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest resistance — $65,000: framework re-entry threshold; 8 consecutive reference closes below (July 24–August 3); dense EMA cluster immediately below ($64,288 20d, $64,891 50d); today's intraday high of $64,033.33 is the closest BTC has come in any session since step-aside activation; requires +1.90% from today's reference close; August 7 NFP is the most likely catalyst to test this level",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,891: 50-day EMA — the most-watched technical level by active traders; BTC has traded below the 50d EMA throughout the entire step-aside period; a sustained daily close above $64,891 would be the first bullish MA signal since step-aside activation; currently $1,102 above today's reference close; a close above the 50d EMA with positive ETF flows on the same day is effectively a Gate re-entry confirmation",
+      "level": "$64,891",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,288: 20-day EMA — nearest moving average overhead; today's high of $64,033 came within $255 of the 20d EMA; a sustained break above $64,288 with above-average volume would be the first bullish MA crossover of the framework period; currently $499 above today's reference close",
+      "level": "$64,288",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,033: today's session high (19:00 UTC candle) — the ceiling from the US afternoon session; a break above $64,033 on Wednesday–Friday this week would confirm the $64,000 level as support for the NFP sprint toward $65,000",
+      "level": "$64,033",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest support — $63,648–$63,879: US afternoon demand floor; BTC consolidated in this range for six consecutive hourly candles (15:00–20:00 UTC) after the 14:00 UTC surge to $64,000; the range absorbed the post-surge pullback and held above $63,648 into the reference close; aligns with the Crypto.com candle data showing repeated closes in the $63,700–$63,880 band in the afternoon session",
+      "level": "$63,648–$63,879",
+      "kind": "support"
+    },
+    {
+      "label": "$63,317–$63,439: prior reference close zone (August 2–August 3 morning consolidation); BTC spent the 00:00–03:00 UTC hours in this range before the Asian-session Iran-panic selloff; this zone will act as support on any post-reference-close pullback and as resistance if BTC gaps below the current afternoon floor",
+      "level": "$63,317–$63,439",
+      "kind": "support"
+    },
+    {
+      "label": "$62,295: today's session low (08:00 UTC candle) — the Iran-panic trough; the deepest intraday test since the July 31 expiry trough; buyers who entered at this level are up +$1,494 / +2.39% from today's low to reference close; a return to $62,295 on weekday volume would require a material macro shock (Iran re-escalation, hot ADP, hot NFP)",
+      "level": "$62,295",
+      "kind": "support"
+    },
+    {
+      "label": "$60,000: top August put strike ($1.17B notional OI at Deribit); round-number psychological support; MM delta-hedging of short puts creates mechanical buy orders below $60,000; a breach would put put holders in-the-money and could trigger delta-unwind selling; August seasonality target: −7.51% median from $63,789 = ~$59,000 by month-end",
+      "level": "$60,000",
+      "kind": "support"
+    },
+    {
+      "label": "$63,789: today's 20:00 UTC reference close — step-aside gap measurement pivot ($1,210.77 below $65,000); immediate benchmark for Tuesday; hold above $63,789 continues the gap-narrowing trend; a break below $63,317 (prior morning range) would reverse today's improvement and widen the gap",
+      "level": "$63,789",
+      "kind": "pivot"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-05",
+      "label": "ADP private payrolls (July): first employment print of NFP week; warm or hot ADP reduces NFP surprise potential and keeps September rate-hike probability elevated; soft ADP (<100K) raises recession-concern bets and would catalyze ETF inflows — critical for Condition 2 of the step-aside framework",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-07",
+      "label": "US nonfarm payrolls (July 2026) — 8:30 AM ET: primary step-aside re-entry trigger; June NFP came in at 57K (well below 110K expected); if July continues the softening trend (<100K), September rate-hike odds fall sharply, dollar weakens, ETF inflows likely resume → the first realistic window for both framework conditions to converge simultaneously; a hot print (>150K) re-expands the gap and vindicates the $60,000 put trade",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-12",
+      "label": "CPI print (estimated): July CPI; below-consensus CPI → September FOMC hold nearly certain → institutional ETF demand could recover sustainably → framework Condition 2 healing confirmed; above-consensus → September hike probability spikes → step-aside gap re-expansion risk",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "September FOMC meeting: rate hold vs. hike; a hold is the primary long-term catalyst for BTC ETF structural demand recovery; a hike would be the most bearish macro outcome for BTC in 2026 and would likely drive BTC below the $60,000 put strike",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — Iran morning shock, US open reversal, $64,000 ceiling\n\nAugust 3, 2026 was a two-phase session for BTC. Phase 1 (00:00–13:00 UTC): a risk-off selloff driven by US-Iran military strike news pushed BTC from the August 2 reference close range ($63,439) down to a session low of $62,295.78 (08:00 UTC candle low) — a $1,144 decline over 8 hours. Phase 2 (13:00–22:00 UTC): Trump announced he called off the planned 'massive' Iran strikes; Nasdaq surged +2.22%; the 14:00 UTC candle (9–10am ET, US market open) drove BTC from $63,347 to $63,999 on the session's highest-volume candle (156 BTC / $9.98M). BTC then consolidated in the $63,648–$64,033 range through the US afternoon and the 20:00 UTC reference close registered $63,789.23.\n\n### Session candle structure (key candles from Crypto.com verified data)\n\n| UTC Time | Open | High | Low | Close | Vol (BTC) | Note |\n|---|---|---|---|---|---|---|\n| 00:00 | 63,574 | 63,603 | 63,206 | 63,318 | 87.7 | Selling from Aug 2 close |\n| 08:00 | 62,623 | 62,647 | **62,296** | 62,542 | 15.8 | Day low — Iran panic peak |\n| 13:00 | 62,703 | 62,810 | 62,557 | 62,710 | 67.3 | Pre-reversal accumulation |\n| **14:00** | 63,348 | **64,000** | 63,137 | 63,965 | **156.1** | ★ US open surge — Iran de-escalation |\n| 15:00 | 63,957 | 63,992 | 63,649 | 63,700 | 63.3 | Post-surge consolidation |\n| **20:00** | 63,876 | **64,033** | 63,770 | **63,789** | 65.7 | Reference close candle |\n\n### Trend — reference close improving but BTC below all major moving averages\n\nThe reference close sequence continues to improve:\n- July 31 ($62,961.99): gap $2,038.01\n- August 1 ($62,658.73): gap $2,341.27 (widening)\n- August 2 ($63,439.36): gap $1,560.64 (first narrowing)\n- August 3 ($63,789.23): gap $1,210.77 (second consecutive narrowing)\n\nHowever, BTC remains below all four major moving averages. Each EMA forms a layer of overhead resistance in the path to $65,000:\n- 20-day EMA: ~$64,288 (nearest overhead MA; $499 above today's reference close)\n- 50-day EMA: ~$64,891 (most-watched by active traders; $1,102 above)\n- 100-day EMA: ~$67,604\n- 200-day EMA: ~$73,308\n\nThe $65,000 framework threshold sits between the 20d EMA ($64,288) and the 50d EMA ($64,891) — effectively, re-entry requires BTC to clear the 20d EMA AND approach the 50d EMA in the same session. This is achievable but requires a catalyst (NFP) rather than organic drift.\n\n### Volume — concentrated in the reversal candle; overall volume moderate\n\nTotal Crypto.com session volume: approximately 838 BTC (~$53.4M), above Saturday's 764 BTC but below weekday averages. The notable feature: the 14:00 UTC candle accounted for 156 BTC (18.6% of all-day volume in a single hour). For comparison, the average candle volume for the rest of the session was ~42 BTC. This extreme concentration in the reversal candle confirms institutional buying at the Iran de-escalation signal rather than passive market-maker flow.\n\nVolume interpretation: the 14:00 UTC surge is a genuine demand signal. The subsequent six-hour consolidation ($63,648–$64,033) on declining volume (15:00–21:00 UTC candles all below 66 BTC) shows the demand sustained the price without additional aggressive buying — a sign of healthy consolidation rather than exhaustion.\n\n### Momentum — higher reference close for second consecutive session; ascending channel\n\nThe reference close progression (July 31: $62,962 → August 1: $62,659 → August 2: $63,439 → August 3: $63,789) describes an ascending pattern after the August 1 trough. The daily candle structure: two consecutive sessions of higher lows (August 2 overnight low $62,721, August 3 session low $62,296) and higher closes ($63,439 → $63,789) establish a short-term ascending channel. The channel continuation requires BTC to hold above $63,317 (August 3 morning consolidation floor) and extend toward $64,000+ on subsequent sessions.\n\n### ★ Strongest support — $63,648–$63,879 (US afternoon demand floor)\n\nSix consecutive hourly candles (15:00–20:00 UTC) closed within the $63,648–$63,879 range after the 14:00 UTC surge. This consolidation band absorbed the post-surge pullback and held into the reference close. Evidence:\n1. Six consecutive hourly closes within a $231 range (tight)\n2. Volume in each post-surge candle was declining (29–66 BTC) suggesting supply was absorbed by ongoing demand\n3. The 20:00 UTC reference close candle itself had a high of $64,033 — buyers were still testing higher prices at the close\n4. This zone will act as the first support if BTC pullbacks in Tuesday's early Asian session before ADP/NFP week data\n\n### ★ Strongest resistance — $65,000 (framework threshold + EMA cluster)\n\nThe $65,000 level has now been rejected on a reference-close basis for eight consecutive sessions (July 24–August 3). The resistance has deepened:\n1. **Eight consecutive reference closes below $65,000** — including today's intraday approach to $64,033 that failed to sustain\n2. **Dense EMA cluster**: 20d ($64,288) and 50d ($64,891) form a 603-wide resistance band that BTC must clear before reaching $65,000\n3. **Framework self-reference**: as the step-aside threshold, $65,000 has institutional significance — accounts monitoring the framework will not re-enter UNTIL this level is cleared on a closing basis simultaneously with ETF flows\n4. **Options structure**: dominant August positioning remains the $60,000 put (bearish); call positioning above $65,000 is thin, meaning market-makers are net short gamma above $65,000 and will sell into rallies approaching this level\n\n### What invalidates the read\n\nThe step-aside is re-entered ONLY if BTC reference close > $65,000 AND positive net ETF flows on the same calendar day — both conditions simultaneously. Current distance: +1.90% to threshold. The earliest realistic convergence window is August 7 NFP (soft labor market print + ETF inflow recovery). A hot NFP (>150K) re-expands the gap to $3,000+ and makes the $60,000 put trade the dominant near-term positioning. If August 7 NFP is soft, the two-session momentum of gap narrowing ($1,210 remaining) could produce re-entry within 2–3 sessions after the print."
+}
