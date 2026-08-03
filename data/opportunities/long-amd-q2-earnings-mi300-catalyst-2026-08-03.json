@@ -1,0 +1,54 @@
+{
+  "id": "long-amd-q2-earnings-mi300-catalyst-2026-08-03",
+  "title": "Long AMD — Q2 Earnings Tuesday AH: MI300 GPU Cycle Validation at 128.7% YTD",
+  "ticker": "AMD",
+  "asset_class": "equity",
+  "category": "event",
+  "direction": "long",
+  "conviction": "medium",
+  "time_horizon": "1-2 weeks",
+  "current_price": 472.12,
+  "entry": "Long AMD $462–$480 on August 3, entering ahead of Tuesday August 4 AH earnings. The entry zone brackets today's trading range, which has AMD recovering from pre-market softness alongside the broader ES +0.5% tape on Iran ceasefire. Do NOT enter above $485 — the options-implied 12.28% swing is already wide and buying too far above the current level compresses the R/R against a potential miss. Size 3% (medium conviction: binary event with consensus already set, MI300 demand well-tracked but not confirmed for Q2).",
+  "stop_loss": "$440 daily close — at $440, AMD has broken below the August 3 session low and is pricing a guidance disappointment or MI300 demand stall. A close at $440 implies either (1) Q2 revenues came in at the low end of AMD's own guidance ($10.9B) and sell-side interprets MI300 attach rate as peaking — shifting the narrative from GPU cycle acceleration to GPU cycle plateau; (2) PLTR's August 3 government revenue miss has spilled into a broader AI-spending rethink that pressures AMD's data-center multiple ahead of the print; or (3) a macro deterioration (ISM prices-paid beat + September hike probability rebounding above 70%) has compressed semi multiples across the board regardless of AMD-specific results. Exit at $440 without waiting for the earnings print if the pre-earnings session closes there.",
+  "targets": [
+    "$520 — post-earnings beat reaction: AMD Q2 revenues beat the $11.32B consensus (actual above $11.5B), MI300X data center GPU revenue cited above $4.5B for the quarter, Q3 FY26 guidance midpoint above $12.0B; sell-side upgrades to $575–590 price targets in the 48 hours following the print; +10% from $472; cover 40% of position at open August 5",
+    "$560 — full data-center acceleration thesis validated: AMD's MI300X share in hyperscaler AI inference workloads confirmed above 25% as at least two of AMZN, META, MSFT, GOOGL explicitly name AMD MI300 in their Q3 capital expenditure commentary; AMD custom ASIC pipeline (Project Violet / next-gen MI400 roadmap) disclosed with named hyperscaler customer commitment; +18.5%; cover 40% of remaining within 1–2 weeks",
+    "$600 — blue-sky: AMD Q2 data center GPU revenues exceed $5.5B, implying annualized run rate above $22B vs NVDA's $90B-plus — narrowing the gap faster than the market models; AMD MI400 sampling with hyperscalers confirmed at September 2026 analyst day, setting up a 2027 cycle argument; full re-rating to 38x forward on $15.75 FY2027 EPS estimate; hold final 20%"
+  ],
+  "levels": {
+    "entry_low": 462.0,
+    "entry_high": 480.0,
+    "stop": 440.0,
+    "targets": [520.0, 560.0, 600.0]
+  },
+  "risk_reward": "1:2.3 to second target (entry midpoint $471, stop $440 = $31 risk; T2 $560 = $89 reward)",
+  "position_size_pct": 3,
+  "catalyst": "AMD reports Q2 2026 results after the close Tuesday August 4. Analyst consensus: revenue $11.32B (+47.3% YoY), EPS $1.61 (+235% YoY). AMD's own Q2 guidance was $11.2B ±$300M, so consensus sits modestly above the midpoint — typical pre-earnings calibration. Options markets are pricing a 12.28% one-day swing, consistent with AMD's recent earnings-day volatility. Tonight's PLTR Q2 government-revenue print (5 PM ET, August 3) functions as a leading indicator: a PLTR beat validates DoD AI spending thesis and shifts AI-spending sentiment into Tuesday's AMD session.",
+  "thesis": "AMD's MI300X accelerator has been the most credible alternative to NVDA's H100/H200/B200 in hyperscaler AI training and inference since Q4 2025. The Q2 2026 print is the first earnings where MI300's full-quarter production ramp is visible in the revenue line: AMD guided $11.2B in Q2, with data-center GPU and server CPU together estimated to account for roughly $7.5–8.0B of that — approximately double the mix from four quarters ago. The question is not whether MI300 is selling (hyperscaler purchase orders have been public through Q1), but whether the cadence is accelerating into the MI400 cycle or plateauing as customers wait for next-gen.\n\nThe macro setup on August 3 is constructive for AMD: Iran ceasefire has removed the regime-breach headwind (breach count down to 2 of 6), September FOMC hike probability has cleared to 63% — below the 70% formal trigger — and ES futures are +0.5%. For a high-multiple semiconductor stock at 35–40x forward, the rate-environment easing is meaningful. The prior AMD short (thesis_broken July 3) was based on a growth-scare NFP scenario that did not materialize; today's entry is the opposite read — a ceasefire-driven risk-on tape with sequential AI spending catalysts (PLTR tonight, AMD Tuesday).\n\nThe counter-party is the bear who argues: (1) AMD's $11.2B guidance midpoint is already in consensus, so an in-line print produces no stock-price reaction — only a beat above $11.5B moves the stock; (2) AMZN's own custom Trainium silicon ($25B+ annual run rate at cost efficiency advantages) limits AMD's hyperscaler TAM at AMZN — the most important single customer — which could suppress the MI300 attach rate more than sell-side models; (3) the 12.28% options swing reflects symmetric downside, not just upside — AMD missing guidance on any metric (revenue, gross margin, or Q3 guidance) produces an equivalent gap-down and the stop at $440 triggers within 24 hours of the print.\n\nPosition sizing at 3% reflects the binary nature: this is an event-driven trade, not a multi-week fundamental thesis. If AMD beats and the stock gaps to $520+, cover 40% at the open on August 5 and let the remainder run on the data-center momentum thesis. If AMD misses and the stock gaps below $440, exit at market on the August 5 open without averaging down.",
+  "bull_case": "AMD beats on MI300 revenue (data-center GPU above $4.5B for the quarter), Q3 guidance midpoint $12.0B+ signals the cycle is still in early innings, and sell-side upgrades push AMD toward $575. The broader AI-semis tape (NVDA August 26, AVGO September) re-rates around the AMD print, lifting the whole complex. AMD stock gaps to $510–525 at the open on August 5; cover 40% of position into the gap and hold the rest for the $560 base-case target.",
+  "bear_case": "AMD matches guidance exactly ($11.2B, $1.61 EPS) with no upside surprise. MI300 data-center revenues come in at $4.0B — in-line but not accelerating — and Q3 guidance of $11.5B mid implies only 2.7% sequential growth. The stock gaps down 8–10% from $472 to $425–435, near or below the $440 stop. AMZN's Trainium disclosure has been framing a TAM ceiling throughout 2026 — any AMD management commentary acknowledging elongated hyperscaler timelines triggers a second leg down to $400. Exit at stop ($440) at the August 5 open.",
+  "invalidation": "$440 daily close before earnings; OR PLTR Aug 3 government revenue miss ($916M consensus) that resets AI spending sentiment heading into Tuesday and causes AMD to gap below $450 in after-hours trading on PLTR's print; OR AMD pre-announces revenue below guidance range (below $10.9B) at any point before August 4; OR a macro event (ISM hot, September hike rebounds above 70%) compresses semi multiples before the AMD print.",
+  "sources": [
+    {
+      "label": "TipRanks: AMD braces for 12.28% move on Q2 earnings — options swing analysis",
+      "url": "https://www.tipranks.com/news/amd-stock-price-forecast-amd-braces-for-a-12-28-move-as-q2-earnings-near"
+    },
+    {
+      "label": "Barchart: Advanced Micro Devices Q2 2026 earnings preview — revenue $11.32B consensus, EPS $1.61",
+      "url": "https://www.barchart.com/story/news/36899734/advanced-micro-devices-quarterly-earnings-preview-what-you-need-to-know"
+    },
+    {
+      "label": "FinancialContent: What to expect from AMD Q2 2026 earnings — August 3 preview",
+      "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-8-3-what-to-expect-from-amds-amd-q2-earnings"
+    },
+    {
+      "label": "Yahoo Finance: AMD stock price and quote",
+      "url": "https://finance.yahoo.com/quote/AMD/"
+    }
+  ],
+  "created_at": "2026-08-03",
+  "expires_at": "2026-08-18",
+  "status": "active",
+  "tags": ["AMD", "semis", "AI", "earnings", "MI300", "data-center", "GPU", "event-driven"],
+  "outcome": null
+}

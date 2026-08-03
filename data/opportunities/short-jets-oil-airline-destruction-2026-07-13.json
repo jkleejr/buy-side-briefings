@@ -46,7 +46,7 @@
   ],
   "created_at": "2026-07-13",
   "expires_at": "2026-08-03",
-  "status": "active",
+  "status": "target_hit",
   "tags": [
     "JETS",
     "airlines",
@@ -59,7 +59,13 @@
     "short",
     "etf"
   ],
-  "outcome": null,
+  "outcome": {
+    "closed_at": "2026-08-03",
+    "final_price": 26.23,
+    "return_pct": 17.7,
+    "outcome_label": "Target 1 hit at $27.00 — JETS at $26.23 on expiry",
+    "note": "JETS reached $26.23 by Aug 3 expiry, fully through T1 at $27.00. WTI's sustained $74–80 range compressed airline margins; the Iran kinetic exchange drove fuel-cost consensus revisions that repriced the sector. Position expires today — closed at current market with +17.7% gain from $31.86 entry reference."
+  },
   "levels": {
     "entry_low": 31.5,
     "entry_high": 33.0,
