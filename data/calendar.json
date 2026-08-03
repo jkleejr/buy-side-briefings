@@ -1,26 +1,19 @@
 {
   "events": [
     {
-      "date": "2026-08-03",
-      "label": "PLTR Q2 2026 earnings AH — $1.808B consensus (+81% YoY); government $916M is the DoD AI thesis validator",
-      "kind": "EARNINGS",
-      "tickers": ["PLTR"],
-      "note": "Updated Aug 3 morning: PLTR reports Q2 2026 AH tonight at 5 PM ET. Options pricing ~12% swing. Government revenue $916M (+65.7% YoY), commercial $892M (+98%), total $1.808B (+81%); Oppenheimer projects 85% growth vs. 79% company midpoint. Rate backdrop significantly eased: September hike now ~63% (down from 82.4% Friday) after Trump paused Iran strikes and restarted talks, sending Brent to $83.32 (cleared) and WTI to $79.54 (borderline). The valuation headwind is lighter, but PLTR at 130x trailing non-GAAP still requires a clean government revenue beat plus raised FY26 guidance above the 79% midpoint. A government revenue miss removes the DoD urgency premium regardless of the rate environment."
-    },
-    {
       "date": "2026-08-07",
-      "label": "July NFP (BLS, 8:30 AM ET) — September rate path with hike odds at 63%; consensus +91K",
+      "label": "July NFP (BLS, 8:30 AM ET) — September hike binary with odds at 64.5%; consensus +91K",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "DXY", "BTC"],
-      "note": "Updated Aug 3 morning: September hike probability has dropped to ~63% (from 82.4% Friday) after Trump paused Iran strikes and oil collapsed. Consensus: +91K (prior 147K, unemployment 4.2%→4.3% expected). Above 150K: September hike rebounds above 70%, re-breaching the trigger; 30Y could extend back toward 5.28%. Below 80K: September probability falls toward 50% or below, beginning to clear the final formal rate-side breach (30Y) on a lagged basis. The NFP matters more than usual given the rapid oil-driven regime improvement on Aug 3 — a strong jobs print could restore 2 of the 2 breaches that just cleared. FOMC September 15-16."
+      "note": "Updated Aug 3 night: September hike probability settled at 64.5% after PLTR's $1.94B beat and a hot ISM (55.6%, 4-year high; prices paid 71.1%) — still below the 70% formal trigger, but the disinflationary buffer is narrower than the oil-driven morning drop suggested. Consensus: +91K (prior 147K, unemployment 4.2%→4.3% expected). Above 130K: September hike rebounds toward 70%, re-triggering the formal breach; 30Y extends toward 5.25-5.30%. Below 80K: September probability falls toward 55% or below, 30Y can approach 5.00% clearing threshold, breach count path to 1-of-6. The 80K-130K range keeps September in neutral territory (55-70%). FOMC September 15-16."
     },
     {
       "date": "2026-08-04",
-      "label": "AMD Q2 2026 earnings AH — MI300 GPU data-center traction vs. AMZN custom silicon ($25B+ ARR)",
+      "label": "AMD Q2 2026 earnings AH — data-center >$6B (95% Polymarket); bar pre-loaded after +12.7% PLTR read-through close",
       "kind": "EARNINGS",
       "tickers": ["AMD", "NVDA", "AVGO"],
-      "note": "Added Aug 3 morning: AMD reports Q2 2026 AH Tuesday Aug 4 at 5 PM ET. Consensus: EPS $1.34 (+396% YoY). Data-center GPU revenue vs. MI300 adoption rate is the binary; AMZN custom silicon ($25B+ annual run rate) adds competitive read-through. PLTR Monday AH print sets the AI spending sentiment heading into AMD's call. Rate headwind eased modestly (September hike ~63% vs. 82.4% Friday) but AMD is −27.7% from June ATH on rate-driven multiple compression. Options pricing ~12.28% swing."
+      "note": "Updated Aug 3 night: AMD closed +12.7% at $484.64 on Monday — the PLTR US commercial beat (+149% YoY) served as a direct read-through for AI platform spending into AMD's MI350/Helios cycle. AMD reports Q2 2026 AH Tuesday Aug 4 at 5 PM ET. Revenue consensus $11.31B (+47% YoY); EPS consensus $1.61; data-center consensus >$6B (95% Polymarket probability). Options pricing 10% swing. The pre-earnings +12.7% move has pre-loaded the bull case: an inline data-center result at $6B from a pre-elevated base risks a sell-the-news reversal. The confirm scenario requires data-center above $7B and MI350 ramp timeline for H1 2027. Rate backdrop: September hike 64.5% (below 70% trigger). Prior morning note: EPS consensus was $1.34 (+396% YoY) — consensus revised upward post-PLTR print."
     },
     {
       "date": "2026-08-13",
@@ -41,7 +34,7 @@
       "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote on September FOMC path",
       "kind": "FOMC",
       "tickers": ["TLT", "TBT", "QQQ", "IWM", "SPY", "GLD"],
-      "note": "Updated July 31 night: Q2 ECI printed +0.9% QoQ (in-line), but September hike probability surged to 82.4% — above the 70% formal trigger — because the bond market treated in-line as insufficient dovish relief given Brent ~$91/bbl and the FOMC's 9-3 dissent structure. Jackson Hole (Aug 27-29) is now the most consequential Fed communication between today and the September 15-16 FOMC decision. With September already at 82.4%, the Warsh keynote will function as a de-facto September rate preview: any 'live meeting' framing locks September; any de-escalation framing (data dependence, growth risk) could push September back below 70%. July NFP (Aug 7) and July CPI (Aug 13) are the two data inputs that arrive before Jackson Hole and determine the probability range Warsh must address."
+      "note": "Updated Aug 3 night: September hike probability is now 64.5% — down from 82.4% on July 31 after Trump paused Iran strikes (oil −6%) and despite a hot ISM print (55.6%, prices paid 71.1%). Warsh's Jackson Hole keynote arrives after July NFP (Aug 7) and July CPI (Aug 13), both of which can push September back above 70% or confirm the oil-deflation-driven improvement. With September at 64.5%, the Warsh keynote framing is the de-facto September rate preview: 'data dependent, watching oil' framing keeps September below 70%; any 'live meeting, inflation concern' language restores the trigger breach. The most consequential path: NFP above 130K (restores hike to 70%+) → CPI above 3.5% (locks September) → Jackson Hole as confirmation, not relief. Inverse: NFP below 80K → CPI ≤2.8% → Warsh can clearly de-escalate and 30Y retreats toward 5.00% clearing."
     },
     {
       "date": "2026-09-02",
