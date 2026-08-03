@@ -432,7 +432,7 @@ function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
                   accent ? "text-[var(--down)]" : "text-[var(--foreground)]"
                 }`}
               >
-                {c.dateLabel.replace(/^[A-Za-z]+ /, "")}
+                {c.dateShort}
               </div>
               <div
                 className={`relative z-[1] mx-auto my-2 h-[11px] w-[11px] rounded-full border-2 border-[var(--background)] ${
@@ -533,7 +533,7 @@ function WeekAhead({ calendar }: { calendar: CalRow[] }) {
           <span className="font-mono text-[11px] uppercase tracking-[0.08em] text-[var(--dim)]">
             {c.day}
             <b className="block font-mono text-[17px] font-semibold not-italic tabular-nums text-[var(--foreground)]">
-              {c.dateLabel.replace(/^[A-Za-z]+ /, "")}
+              {c.dateShort}
             </b>
           </span>
           <span className="text-[14.5px] text-[var(--ink-2)]">

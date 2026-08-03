@@ -87,6 +87,10 @@ export type CalRow = {
   date: string;
   day: string;
   dateLabel: string;
+  /** Numeric month/day for the calendar face — "7/30", "8/2". Alongside `day`
+   *  it answers both "which day of the week" and "which date" at a glance,
+   *  where a bare "30" left you counting columns to work out the month. */
+  dateShort: string;
   label: string;
   kind: string;
   note?: string;
@@ -550,6 +554,7 @@ export async function getHomeData(): Promise<HomeData> {
         day: "numeric",
         timeZone: "UTC",
       }),
+      dateShort: `${d.getUTCMonth() + 1}/${d.getUTCDate()}`,
       label: e.label,
       kind: e.kind,
       note: e.note,
