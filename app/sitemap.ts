@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/situational-awareness",
     "/ai-bubble",
     "/market-history",
-    "/books",
     "/about",
     "/privacy",
     "/terms",
