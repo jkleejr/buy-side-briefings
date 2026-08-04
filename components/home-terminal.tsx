@@ -248,7 +248,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
   const current = view === "morning" ? data.morning : data.evening;
 
   return (
-    <div className="mx-auto max-w-[1100px] px-4 pb-14 sm:px-6">
+    <div className="mx-auto max-w-5xl px-4 pb-14 sm:px-6">
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--foreground)] pt-4">
         <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--dim)]">
           {view === "morning" ? "Morning briefing" : "Night briefing"}
@@ -301,8 +301,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
         </div>
       )}
 
-      <div className="mt-14 flex flex-wrap justify-between gap-2 border-t border-[var(--foreground)] pt-3 font-mono text-[11.5px] text-[var(--dim)]">
-        <span>Every claim links to its source. Compiled twice daily.</span>
+      <div className="mt-14 flex flex-wrap justify-end gap-2 border-t border-[var(--foreground)] pt-3 font-mono text-[11.5px] text-[var(--dim)]">
         <span>
           {view === "morning"
             ? "Night edition follows at 20:00 ET"

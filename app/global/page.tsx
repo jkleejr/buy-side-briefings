@@ -28,7 +28,7 @@ export const revalidate = 60;
 
 export default function GlobalPage() {
   return (
-    <div className="space-y-1">
+    <div className="mx-auto max-w-5xl space-y-1">
       <header className="space-y-1 px-1 pb-2">
         <Link
           href="/"

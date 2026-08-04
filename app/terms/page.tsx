@@ -2,7 +2,7 @@ export const metadata = { title: "Terms — Buy-Side Briefings" };
 
 export default function TermsPage() {
   return (
-    <article className="mx-auto max-w-2xl space-y-4 text-zinc-200">
+    <article className="mx-auto max-w-3xl space-y-4 text-zinc-200">
       <h1 className="text-3xl font-semibold tracking-tight">Terms of Use</h1>
       <p className="leading-7">
         By using this site you agree that all content is provided &ldquo;as is&rdquo; for

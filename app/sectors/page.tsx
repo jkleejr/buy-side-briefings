@@ -11,7 +11,7 @@ export default function SectorsPage() {
   // the page renders straight from SectorRotation, which fetches its own data
   // — so this route no longer makes 11 quote calls of its own.
   return (
-    <div className="space-y-1">
+    <div className="mx-auto max-w-5xl space-y-1">
       <header className="space-y-1 px-1 pb-2">
         <Link
           href="/"

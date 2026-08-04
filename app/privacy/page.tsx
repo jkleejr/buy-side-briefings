@@ -2,7 +2,7 @@ export const metadata = { title: "Privacy — Buy-Side Briefings" };
 
 export default function PrivacyPage() {
   return (
-    <article className="mx-auto max-w-2xl space-y-4 text-zinc-200">
+    <article className="mx-auto max-w-3xl space-y-4 text-zinc-200">
       <h1 className="text-3xl font-semibold tracking-tight">Privacy</h1>
       <p className="leading-7">
         This site uses Vercel Web Analytics, which is cookieless and does not collect personal data

@@ -138,6 +138,11 @@
   --color-down: var(--down);
   --color-dim: var(--dim);
   --font-sans: var(--serif);
+  /* `font-serif` was the one face that wasn't ours. Unregistered, it fell
+     through to Tailwind's built-in ui-serif/Georgia/Times stack — so the
+     briefing headline rendered in Times while every other headline on the
+     site rendered in Charter. Same word, two typefaces, one page apart. */
+  --font-serif: var(--serif);
   /* The utility face is now a real monospace — every `font-mono` label,
      eyebrow, chip and data figure across the site picks this up. */
   --font-mono: var(--mono);
