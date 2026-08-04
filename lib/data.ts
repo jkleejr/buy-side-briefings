@@ -501,14 +501,6 @@ function synthesizeBriefingBody(v: SynthesizableVerdict): string {
     out.push("", "## Bear case", "", v.bear_case);
   }
 
-  const avoid = v.dont_buy ?? [];
-  if (avoid.length) {
-    out.push("", "## What we're avoiding", "");
-    for (const d of avoid) {
-      out.push(`- **${d.ticker}** — ${d.reason} _Better entry: ${d.better_entry}_`);
-    }
-  }
-
   return out.join("\n");
 }
 
@@ -558,8 +550,11 @@ export type RecentMention = {
 
 /**
  * For each ticker in the watchlist, find the most recent verdict that mentions
- * it (in either watchlist_mentions or dont_buy). Returns a map keyed by ticker
- * so the page can look up O(1).
+ * it. Returns a map keyed by ticker so the page can look up O(1).
+ *
+ * Reads `watchlist_mentions` only. It also used to read `dont_buy`, rendering
+ * "Don't buy — <reason>. Better entry <price>." on the ticker card — an
+ * instruction, and the last place on the site still issuing one.
  */
 export function getRecentMentionsByTicker(
   tickers: string[],
@@ -581,190 +576,9 @@ export function getRecentMentionsByTicker(
         verdict_headline: headlineFor(v.verdict),
       });
     }
-    for (const d of v.dont_buy ?? []) {
-      if (!wanted.has(d.ticker) || map.has(d.ticker)) continue;
-      map.set(d.ticker, {
-        ticker: d.ticker,
-        date: v.date,
-        window: v.window,
-        routine: v.routine,
-        note: `Don't buy — ${d.reason}. Better entry ${d.better_entry}.`,
-        sentiment: "negative",
-        verdict_headline: headlineFor(v.verdict),
-      });
-    }
     if (map.size === wanted.size) break; // every ticker matched
   }
   return map;
-}
-
-// ---- Opportunities (data/opportunities/*.json) ----------------------------
-
-export type OpportunityDirection = "long" | "short" | "long_vol" | "short_vol" | "pair";
-export type OpportunityConviction = "low" | "medium" | "high";
-export type OpportunityAssetClass =
-  | "equity"
-  | "etf"
-  | "crypto"
-  | "commodity"
-  | "options"
-  | "fx"
-  | "fixed_income"
-  | "pair";
-export type OpportunityCategory =
-  | "momentum"
-  | "value"
-  | "catalyst"
-  | "contrarian"
-  | "options"
-  | "pair_trade"
-  | "macro"
-  | "sector"
-  | "event"
-  | "thematic";
-export type OpportunityStatus =
-  | "active"
-  | "triggered"
-  | "stopped_out"
-  | "target_hit"
-  | "expired"
-  | "thesis_broken";
-
-export type OpportunityOutcome = {
-  closed_at: string;
-  final_price: number;
-  return_pct: number;
-  outcome_label: string;
-  note?: string;
-};
-
-/**
- * Machine-readable price levels alongside the prose entry/stop/targets —
- * lets the site auto-check live prices against the plan (stop breached,
- * target hit, in entry zone) instead of waiting for a manual close.
- */
-export type OpportunityLevels = {
-  entry_low?: number;
-  entry_high?: number;
-  stop?: number;
-  targets?: number[];
-};
-
-export type Opportunity = {
-  id: string;
-  title: string;
-  ticker: string;
-  asset_class: OpportunityAssetClass;
-  category: OpportunityCategory;
-  direction: OpportunityDirection;
-  conviction: OpportunityConviction;
-  time_horizon: string;
-  current_price?: number;
-  entry: string;
-  stop_loss: string;
-  targets: string[];
-  risk_reward: string;
-  position_size_pct: number;
-  catalyst: string;
-  thesis: string;
-  bull_case: string;
-  bear_case: string;
-  invalidation: string;
-  sources: { label: string; url: string }[];
-  created_at: string;
-  expires_at?: string;
-  status: OpportunityStatus;
-  tags: string[];
-  outcome?: OpportunityOutcome;
-  levels?: OpportunityLevels;
-};
-
-// Daily snapshot of the opportunities slate — written by the morning routine.
-export type OpportunitySnapshot = {
-  date: string;
-  generated_at: string;
-  summary: string;
-  active_ids: string[];
-  new_today_ids: string[];
-  closed_today: Array<{
-    id: string;
-    status: OpportunityStatus;
-    final_price?: number;
-    return_pct?: number;
-    note?: string;
-  }>;
-  current_prices?: Record<string, number>;
-};
-
-export function getAllOpportunities(): Opportunity[] {
-  const dir = path.join(DATA_DIR, "opportunities");
-  if (!fs.existsSync(dir)) return [];
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
-  const list = files
-    .map((f) => readJson<Opportunity>(path.join(dir, f)))
-    .filter((o): o is Opportunity => o !== null);
-  return list.sort((a, b) => {
-    // Active first, then by conviction (high > med > low), then by created_at desc
-    const statusRank = (s: OpportunityStatus) => (s === "active" ? 0 : 1);
-    const sa = statusRank(a.status) - statusRank(b.status);
-    if (sa !== 0) return sa;
-    const convRank = (c: OpportunityConviction) =>
-      c === "high" ? 0 : c === "medium" ? 1 : 2;
-    const cb = convRank(a.conviction) - convRank(b.conviction);
-    if (cb !== 0) return cb;
-    return b.created_at.localeCompare(a.created_at);
-  });
-}
-
-export function getOpportunity(id: string): Opportunity | null {
-  const file = path.join(DATA_DIR, "opportunities", `${id}.json`);
-  return readJson<Opportunity>(file);
-}
-
-export function getAllOpportunitySnapshots(): OpportunitySnapshot[] {
-  const dir = path.join(DATA_DIR, "opportunities-snapshots");
-  if (!fs.existsSync(dir)) return [];
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
-  const list = files
-    .map((f) => readJson<OpportunitySnapshot>(path.join(dir, f)))
-    .filter((s): s is OpportunitySnapshot => s !== null);
-  return list.sort((a, b) => b.date.localeCompare(a.date));
-}
-
-export function getOpportunitySnapshot(date: string): OpportunitySnapshot | null {
-  const file = path.join(DATA_DIR, "opportunities-snapshots", `${date}.json`);
-  return readJson<OpportunitySnapshot>(file);
-}
-
-// Aggregate opportunity stats — win rate, average return, counts.
-export function getOpportunityStats() {
-  const all = getAllOpportunities();
-  const active = all.filter((o) => o.status === "active").length;
-  const closed = all.filter((o) =>
-    ["target_hit", "stopped_out", "expired", "thesis_broken"].includes(o.status),
-  );
-  const wins = closed.filter((o) => o.status === "target_hit").length;
-  const losses = closed.filter(
-    (o) => o.status === "stopped_out" || o.status === "thesis_broken",
-  ).length;
-  const expired = closed.filter((o) => o.status === "expired").length;
-  const returns = closed
-    .map((o) => o.outcome?.return_pct)
-    .filter((r): r is number => typeof r === "number");
-  const avgReturn =
-    returns.length > 0 ? returns.reduce((a, b) => a + b, 0) / returns.length : null;
-  const hitRate =
-    wins + losses > 0 ? (wins / (wins + losses)) * 100 : null;
-  return {
-    total: all.length,
-    active,
-    closed: closed.length,
-    wins,
-    losses,
-    expired,
-    hit_rate_pct: hitRate,
-    avg_return_pct: avgReturn,
-  };
 }
 
 function normalizeDate(value: unknown): string {
@@ -782,8 +596,7 @@ function normalizeDate(value: unknown): string {
 // Curated catalyst calendar — one-off dated events the Yahoo earnings and
 // FRED macro feeds can't know about (IPO pricings, geopolitical deadlines,
 // product launches). Maintained by the daily markets routine alongside the
-// briefings; the website cross-links each event to open opportunities by
-// ticker.
+// briefings.
 // ---------------------------------------------------------------------------
 
 export type CalendarEvent = {
@@ -793,7 +606,7 @@ export type CalendarEvent = {
   kind: string;
   /** Eastern-time clock string when one exists, e.g. "8:30 AM". */
   time_et?: string;
-  /** Tickers whose open opportunities hinge on this event. */
+  /** Tickers the event bears directly on, for cross-linking. */
   tickers?: string[];
   note?: string;
   /**

@@ -122,7 +122,7 @@ export async function getYieldLevels(): Promise<YieldLevels> {
 }
 
 /**
- * Lightweight live quotes for arbitrary symbols (used by the opportunity
+ * Lightweight live quotes for arbitrary symbols (used by the
  * live-check). Returns a symbol → price map; missing/failed symbols are
  * simply absent.
  */

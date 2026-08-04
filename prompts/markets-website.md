@@ -74,6 +74,16 @@ The read MUST be backed by 4–6 specific data points with **inline source
 citations** (markdown links). No vibes. No "feels overbought." If you can't cite
 a number, don't use it.
 
+**`dont_buy` is retired — do not write the field.** "Don't buy X, better entry
+$Y" is an instruction, and it was the last one the site still rendered: it
+surfaced on watchlist cards until 2026-08-04. If a name looks stretched, say so
+in the briefing's own words with the numbers that make it look that way, and
+leave the decision where it belongs.
+
+`trade_setups` keeps its section but not its position: no `direction`, no
+`conviction`. Describe what is forming and the levels that define it. The reader
+decides whether there is a trade in it.
+
 **`verdict.supporting_data` is required — never omit it, never ship it empty.**
 It is not documentation of your reasoning; it is the content of the home page.
 Those 4–6 entries render as the day's articles in the left column, each one a
@@ -134,14 +144,11 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
   "watchlist_mentions": [
     { "ticker": "AAPL", "note": "...", "sentiment": "positive" | "neutral" | "negative" }
   ],
-  "dont_buy": [
-    { "ticker": "...", "reason": "...", "better_entry": "..." }
-  ],
   "trade_setups": [
     {
-      "asset": "...", "direction": "long" | "short" | "pair" | "hedge",
-      "thesis": "...", "entry": "...", "invalidation": "...",
-      "conviction": "low" | "medium" | "high", "horizon": "..."
+      "asset": "...", "thesis": "what is forming, described",
+      "entry": "the levels that define it — not a price to pay",
+      "invalidation": "what would break it", "horizon": "..."
     }
   ],
   "bear_case": "2-3 sentences in third-person voice, ending with explicit invalidation level.",
@@ -283,7 +290,7 @@ Spend your budget on what no feed can know. On every run:
   signal windows ("cover signal opens June 16+"), geopolitical deadlines, court
   and regulatory dates, market holidays. These are the point of the strip; the
   homepage reserves its first detail slots for them. Include `tickers` for any
-  open opportunity that hinges on the event so the website can cross-link them.
+  name the event bears directly on, so the website can cross-link them.
 - **Update** events whose date or framing changed.
 - **Retire** events whose date has passed — by MOVING them to
   `data/calendar-archive.json`, never by deleting them. Cut the object out of
