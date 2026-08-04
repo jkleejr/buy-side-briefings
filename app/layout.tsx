@@ -19,21 +19,25 @@ export const metadata: Metadata = {
     default: "Buy-Side — Market Briefings",
     template: "%s — Buy-Side",
   },
+  // All three descriptions describe the same site in the same terms: a
+  // briefing twice a day, cited, and explicitly not a recommendation. The
+  // previous copy sold "tells you when NOT to buy as much as when to buy" —
+  // a buy/sell call, which the site stopped making in July.
   description:
-    "Opinionated, cited, auditable market briefings. Tells you when NOT to buy as much as when to buy. Not investment advice.",
+    "A market briefing twice a day, morning and night: what happened, what it means, and what would change it — with every claim linked to its source.",
   openGraph: {
     type: "website",
     siteName: "Buy-Side Briefings",
     title: "Buy-Side — Market Briefings",
     description:
-      "Opinionated, cited, auditable market briefings. Buy-side voice — tells you when NOT to buy as much as when to buy.",
+      "A market briefing twice a day, morning and night. Every claim carries a number and every number links to its source. It reports; the decision stays yours.",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Buy-Side — Market Briefings",
     description:
-      "Opinionated, cited, auditable market briefings. Buy-side voice — tells you when NOT to buy.",
+      "A market briefing twice a day, morning and night — every claim linked to its source.",
   },
   robots: {
     index: true,

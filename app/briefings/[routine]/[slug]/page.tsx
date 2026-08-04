@@ -8,7 +8,7 @@ import {
   getVerdictByRef,
 } from "@/lib/data";
 import {
-  formatBriefingTitle,
+  formatBriefingDateLine,
   formatRelativeTime,
   readMinutes,
 } from "@/lib/utils";
@@ -28,7 +28,7 @@ export async function generateMetadata({
   const { routine, slug } = await params;
   const briefing = getBriefing(routine, slug);
   if (!briefing) return { title: "Briefing not found" };
-  return { title: formatBriefingTitle(briefing) };
+  return { title: formatBriefingDateLine(briefing) };
 }
 
 export default async function BriefingPage({
@@ -72,7 +72,7 @@ export default async function BriefingPage({
           )}
         </div>
         <h1 className="font-serif text-[27px] font-semibold leading-[1.15] tracking-[-0.01em] text-[var(--foreground)] sm:text-[31px]">
-          {formatBriefingTitle(briefing)}
+          {formatBriefingDateLine(briefing)}
         </h1>
       </header>
 

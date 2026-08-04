@@ -1,12 +1,15 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Buy-Side Briefings — opinionated, cited, auditable market briefings";
+export const alt =
+  "Buy-Side Briefings — a market briefing twice a day, every claim linked to its source";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 // Default Open Graph image for the site root. Bloomberg-terminal styling:
-// black background, amber branding, headline + tagline + cited disclaimer.
+// black background, amber branding, headline + tagline + a bottom strip.
+// Copy matches the site metadata in app/layout.tsx — this is the same claim,
+// so the two have to be changed together or a shared link contradicts the page.
 export default async function OgImage() {
   return new ImageResponse(
     (
@@ -48,7 +51,7 @@ export default async function OgImage() {
               color: "#e4e4e7",
             }}
           >
-            Opinionated market analysis.
+            Market briefings, twice a day.
           </div>
           <div
             style={{
@@ -58,7 +61,7 @@ export default async function OgImage() {
               color: "#ffa500",
             }}
           >
-            Buy-side voice. Cited every day.
+            Every claim linked to its source.
           </div>
         </div>
 
@@ -76,7 +79,7 @@ export default async function OgImage() {
             borderTop: "1px solid #262626",
           }}
         >
-          <span>Cited, auditable market briefings</span>
+          <span>Morning &amp; night editions</span>
           <span style={{ color: "#ffa500" }}>● LIVE</span>
         </div>
       </div>

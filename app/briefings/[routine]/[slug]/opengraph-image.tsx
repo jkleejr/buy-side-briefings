@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getBriefing, getAllMarketsVerdicts } from "@/lib/data";
-import { formatBriefingTitle } from "@/lib/utils";
+import { formatBriefingDateLine } from "@/lib/utils";
 import { verdictHeadline } from "@/lib/verdict-headline";
 
 export const runtime = "nodejs"; // needs fs to read briefing files
@@ -51,7 +51,7 @@ export default async function BriefingOgImage({
   const headline = verdictHeadline(verdict?.verdict, 90) ?? "Briefing";
   // One accent for every card now that the stance no longer colours it.
   const accentColor = "#93a9e2";
-  const title = formatBriefingTitle(briefing);
+  const title = formatBriefingDateLine(briefing);
 
   return new ImageResponse(
     (

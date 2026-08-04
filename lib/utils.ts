@@ -117,17 +117,6 @@ export function formatLevel(n: number | null | undefined): string {
 }
 
 
-const ROUTINE_FULL: Record<string, string> = {
-  markets: "Markets Briefing",
-  crypto: "Crypto Briefing",
-  kospi: "KOSPI Briefing",
-  politics: "Politics Briefing",
-  quote: "Quote of the Day",
-  "app-ideas": "App Ideas",
-  "pre-earnings": "Pre-Earnings Brief",
-  "demand-signals": "Demand Signals",
-};
-
 /** Display name for a briefing window. */
 export function windowLabel(w: string): string {
   return WINDOW_LABEL[w] ?? w;
@@ -141,33 +130,10 @@ const WINDOW_LABEL: Record<string, string> = {
 };
 
 /**
- * Produce a human-readable briefing title from its structured fields, e.g.
- *   "Markets Briefing · Friday, May 15, 2026 · Morning"
- * Always uses UTC to avoid the date shifting depending on the viewer's TZ.
- */
-export function formatBriefingTitle(b: {
-  routine: string;
-  date: string;
-  window?: string | null;
-}): string {
-  const routineLabel = ROUTINE_FULL[b.routine] ?? b.routine;
-  const d = new Date(`${b.date}T12:00:00Z`);
-  const day = d.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
-  const dateStr = d.toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  });
-  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
-  return `${routineLabel} · ${day}, ${dateStr}${win}`;
-}
-
-/**
- * Date-first line for list rows: "Monday, July 20, 2026 · Night".
- * Same as formatBriefingTitle without the routine prefix — every briefing in
- * the archive is a markets one, so "Markets Briefing · " on all 121 rows was
- * pure repetition pushing the date rightward.
+ * The briefing title: "Monday, July 20, 2026 · Night".
+ * Used for the heading, the <title> and the share card, as well as list rows.
+ * Every briefing in the archive is a markets one, so the old "Markets
+ * Briefing · " prefix was pure repetition pushing the date rightward.
  */
 export function formatBriefingDateLine(b: {
   date: string;
