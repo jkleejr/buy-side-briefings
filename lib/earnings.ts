@@ -137,8 +137,29 @@ async function fetchEarningsItems(
   );
 }
 
+/**
+ * Companies report earnings; indices, currencies, futures and coins do not.
+ *
+ * The watchlist carries benchmarks alongside the single names — the S&P, the
+ * VIX, DXY, USD/JPY, gold, crude, bitcoin, the KOSPI — and asking Yahoo for
+ * their next earnings date put "No upcoming earnings date for: ^GSPC, ^VIX,
+ * DX-Y.NYB…" on the earnings page. Not a bug in the answer, a bad question.
+ * Suffix and prefix are enough to tell them apart: ^index, =X currency pair,
+ * =F futures contract, -USD crypto pair.
+ */
+function reportsEarnings(symbol: string): boolean {
+  return !(
+    symbol.startsWith("^") ||
+    symbol.endsWith("=X") ||
+    symbol.endsWith("=F") ||
+    symbol.endsWith("-USD")
+  );
+}
+
 export async function getEarningsSchedule(): Promise<EarningsSchedule> {
-  const settled = await fetchEarningsItems(getWatchlist());
+  const settled = await fetchEarningsItems(
+    getWatchlist().filter((w) => reportsEarnings(w.symbol)),
+  );
 
   const entries = settled
     .filter((r): r is { kind: "dated"; entry: EarningsEntry } => r.kind === "dated")

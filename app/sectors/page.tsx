@@ -1,40 +1,15 @@
 import Link from "next/link";
-import BigAssetChart from "@/components/big-asset-chart";
 import SectorRotation from "@/components/sector-rotation";
 import Panel from "@/components/panel";
-import { getQuote } from "@/lib/markets";
 
 export const metadata = { title: "Sectors — Buy-Side Briefings" };
 export const revalidate = 300;
 
-// Sector ETFs with a brand color per row used for the per-sector charts.
-const SECTORS: Array<{ symbol: string; label: string; color: string }> = [
-  { symbol: "XLK", label: "Technology", color: "#22d3ee" },
-  { symbol: "XLF", label: "Financials", color: "#3b82f6" },
-  { symbol: "XLE", label: "Energy", color: "#fbbf24" },
-  { symbol: "XLV", label: "Health Care", color: "#a78bfa" },
-  { symbol: "XLY", label: "Consumer Discretionary", color: "#f472b6" },
-  { symbol: "XLP", label: "Consumer Staples", color: "#84cc16" },
-  { symbol: "XLI", label: "Industrials", color: "#fb923c" },
-  { symbol: "XLU", label: "Utilities", color: "#10b981" },
-  { symbol: "XLB", label: "Materials", color: "#a3a3a3" },
-  { symbol: "XLRE", label: "Real Estate", color: "#f97316" },
-  { symbol: "XLC", label: "Communications", color: "#8b5cf6" },
-];
-
-export default async function SectorsPage() {
-  // Pull all 11 quotes in one batch so we can pick top movers for the
-  // featured charts section.
-  const quotes = await Promise.all(SECTORS.map((s) => getQuote(s.symbol)));
-  const enriched = SECTORS.map((s, i) => ({
-    ...s,
-    pct: quotes[i]?.changePct ?? 0,
-  }));
-  const sortedByPct = [...enriched].sort((a, b) => b.pct - a.pct);
-  const top2 = sortedByPct.slice(0, 2);
-  const bottom2 = sortedByPct.slice(-2).reverse();
-  const featured = [...top2, ...bottom2];
-
+export default function SectorsPage() {
+  // The 11-quote batch, the per-sector brand colours and the top/bottom sort
+  // all existed only to pick which four charts to draw. With the charts gone
+  // the page renders straight from SectorRotation, which fetches its own data
+  // — so this route no longer makes 11 quote calls of its own.
   return (
     <div className="space-y-1">
       <header className="space-y-1 px-1 pb-2">
@@ -55,25 +30,14 @@ export default async function SectorsPage() {
       {/* Full sector rotation table (same as dashboard). */}
       <SectorRotation />
 
-      <Panel code="LEAD/LAG" title="Today's leaders &amp; laggards · zoom in">
+      <Panel code="LEAD/LAG" title="Reading today's leaders &amp; laggards">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
-          The 2 best-performing and 2 worst-performing sectors today. The
-          divergence between leaders and laggards is the rotation story — when
-          defensives (XLU/XLP/XLV) lead, the market is taking risk off; when
-          cyclicals (XLI/XLY/XLB) lead, it&apos;s leaning into growth.
+          The divergence between the best and worst performers above is the
+          rotation story — when defensives (XLU/XLP/XLV) lead, the market is
+          taking risk off; when cyclicals (XLI/XLY/XLB) lead, it&apos;s leaning
+          into growth.
         </p>
       </Panel>
-
-      {featured.map((s) => (
-        <BigAssetChart
-          key={s.symbol}
-          symbol={s.symbol}
-          code={s.symbol}
-          title={s.label}
-          color={s.color}
-          metaLabel={s.symbol === featured[0].symbol ? "TODAY'S LEADER" : undefined}
-        />
-      ))}
 
       <Panel code="EDU" title="How to think about sector rotation">
         <div className="space-y-3 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
