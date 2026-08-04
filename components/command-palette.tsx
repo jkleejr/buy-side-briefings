@@ -18,7 +18,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/briefings", code: "BRIEF", label: "Briefings archive", go: "r" },
   { href: "/earnings", code: "EARN", label: "Earnings calendar — schedule for the names you track" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist", go: "w" },
-  { href: "/kospi", code: "KOSPI", label: "KOSPI briefings", go: "k" },
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
