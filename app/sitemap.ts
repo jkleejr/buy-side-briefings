@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/watchlist",
     "/macro",
     "/earnings",
+    "/schedule",
     "/global",
     "/sectors",
     "/kospi",

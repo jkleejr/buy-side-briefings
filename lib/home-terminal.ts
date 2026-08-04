@@ -116,8 +116,6 @@ export type HomeData = {
   sectors: SectorRow[];
   wire: WireRow[];
   calendar: CalRow[];
-  /** Full catalyst run — archived past through everything known ahead. */
-  timeline: CalRow[];
 };
 
 // --- left-rail market pulse (2-col grid) ------------------------------------
@@ -577,21 +575,14 @@ export async function getHomeData(): Promise<HomeData> {
     .slice(0, 7)
     .map(toRow);
 
-  // The timeline is the scrubbing layer: everything we know of, behind and
-  // ahead, so it can be scrolled in both directions rather than starting flat
-  // at today.
+  // The full run — everything behind us as well as ahead — is no longer built
+  // here. It moved to /schedule (lib/schedule.ts), which renders it as a month
+  // calendar instead of a sideways-scrolling strip. The homepage keeps only the
+  // next few catalysts and links across.
   //
-  // Built from the merged set, not from `upcoming`. It used to be archive +
-  // upcoming, which meant the strip's PAST came only from the archive file and
-  // every feed row was cut by the `>= today` filter the moment its date passed.
-  // The Bank of Japan's July 31 decision was on the page all day and gone the
-  // next morning — and the 45-day lookback added to the central-bank tables did
-  // nothing, because the rows it produced were discarded one step later.
-  // `merged` already contains the archive (getCalendarTimeline reads it), so
-  // this is also one source rather than two spliced together.
-  const timeline: CalRow[] = [...merged]
-    .sort((a, b) => a.date.localeCompare(b.date))
-    .map(toRow);
+  // The one thing that must survive the move: the past. `merged` contains the
+  // archive as well as the feeds, and getMergedTimeline's lookback is what
+  // keeps a Bank of Japan decision on the calendar the morning after it lands.
 
   const todayLabel = new Date()
     .toLocaleDateString("en-US", {
@@ -621,6 +612,5 @@ export async function getHomeData(): Promise<HomeData> {
     sectors,
     wire: buildWire(verdicts, featuredKeys),
     calendar,
-    timeline,
   };
 }

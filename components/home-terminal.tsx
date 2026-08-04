@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import LevelsChart from "./levels-chart";
 import Link from "next/link";
 import type {
@@ -208,315 +208,6 @@ const CHART_LABELS: Record<string, string> = {
   "000660.KS": "SK Hynix (KRW)",
 };
 
-// --- the week, on a clock (Idea 04) -------------------------------------------
-// A horizontal timeline of the dated catalysts, with the binary event marked
-// hot — the at-a-glance layer; the detailed card list keeps the notes below.
-
-function timelineLabel(label: string): string {
-  // Drop the trailing parenthetical — the day span on "FOMC decision (28–29)",
-  // the "(est.)" on an unconfirmed earnings date — but only a trailing one.
-  // Cutting at the *first* "(" turned "Bank of Japan (BoJ) decision" into
-  // "Bank of Japan", eating the word that says what the event is.
-  const cut = label
-    .split(/\s+[—–]\s+/)[0]
-    .replace(/\s*\([^()]*\)\s*$/, "")
-    .trim();
-  return cut.length > 44 ? `${cut.slice(0, 44).trim()}…` : cut;
-}
-
-function WeekTimeline({ timeline }: { timeline: CalRow[] }) {
-  // One node per date, but a day is rarely one event. July 30 carried the PCE
-  // print *and* Apple's and Amazon's results; the strip showed PCE alone,
-  // because the node kept the hot row and dropped the rest — so the biggest
-  // earnings of the quarter were invisible on the schedule while sitting in
-  // the data the whole time.
-  //
-  // The lead is still the hot row (the binary must never be shadowed). What
-  // changed is that the others on that date are carried alongside it.
-  const byDate = new Map<string, CalRow>();
-  const alsoOn = new Map<string, CalRow[]>();
-  for (const c of timeline) {
-    const key = `${c.day}-${c.dateLabel}`;
-    const existing = byDate.get(key);
-    if (!existing || (c.hot && !existing.hot)) byDate.set(key, c);
-    alsoOn.set(key, [...(alsoOn.get(key) ?? []), c]);
-  }
-  const nodes = Array.from(byDate.values());
-  const firstAhead = nodes.findIndex((n) => !n.past);
-
-  // Which nodes open a new week. The calendar is sparse — Fri 17 can be
-  // followed by Tue 21 — so this compares the Monday each date belongs to
-  // rather than looking for a Monday node that may not exist.
-  const weekStart = (iso: string) => {
-    const d = new Date(`${iso}T12:00:00Z`);
-    d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
-    return d.toISOString().slice(0, 10);
-  };
-  const startsWeek = nodes.map(
-    (n, i) => i > 0 && weekStart(n.date) !== weekStart(nodes[i - 1].date),
-  );
-
-  /**
-   * The rest of the day, as short names for a second line under the lead.
-   *
-   * Two kinds qualify. Central-bank decisions come first — a rate decision is
-   * the most consequential thing on any day it lands, and it must never be
-   * shadowed by whatever else shares the date (the Bank of Japan's July 31
-   * decision disappeared behind an Employment Cost Index catalyst). Then the
-   * tickers reporting, because a ticker is what you scan a schedule for.
-   *
-   * Authored catalysts are deliberately excluded: they are long prose that
-   * already reads in the detail list below, and truncated to fit here they say
-   * nothing while crowding out the rows that do.
-   */
-  const alsoToday = (c: CalRow): string[] => {
-    const key = `${c.day}-${c.dateLabel}`;
-    const lead = timelineLabel(c.label).toLowerCase();
-    const rest = (alsoOn.get(key) ?? []).filter((o) => o !== c);
-    const seen = new Set<string>();
-    const take = (name: string) => {
-      if (!name || seen.has(name) || lead.includes(name.toLowerCase())) return false;
-      seen.add(name);
-      return true;
-    };
-
-    const banks = rest
-      .filter((o) => o.source === "boj" || o.source === "fomc")
-      .map((o) => (o.source === "boj" ? "BoJ decision" : "FOMC decision"))
-      .filter(take);
-
-    // Matched on kind, not source: an earnings row can arrive from the Yahoo
-    // feed ("AMZN earnings") or as an archived catalyst carrying the outcome
-    // ("AMZN Q2 2026 earnings AH — AWS +37% YoY"). Both start with the ticker,
-    // which is the only part that fits on this line.
-    const tickers = rest
-      .filter((o) => o.kind.toUpperCase() === "EARNINGS")
-      .map((o) => timelineLabel(o.label).split(/[\s,]+/)[0].replace(/[^A-Z0-9.]/gi, ""))
-      .filter((t) => /^[A-Z][A-Z0-9.]{0,5}$/.test(t) && take(t));
-
-    // Composed as segments so "earnings" is said once for the whole ticker
-    // group: "BoJ decision · AAPL · AMZN earnings", not a bare "RIOT" and not
-    // "AAPL earnings · AMZN earnings".
-    const segments: string[] = [...banks];
-    if (tickers.length) segments.push(`${tickers.slice(0, 3).join(" · ")} earnings`);
-    return segments.slice(0, 3);
-  };
-
-  const scroller = useRef<HTMLDivElement>(null);
-  const nodeW = useNodeWidth();
-
-  // Where the present sits, in pixels. Columns are a fixed NODE_W, so this is
-  // index math rather than a DOM measurement — offsetLeft isn't trustworthy on
-  // first paint (webfonts can still be settling) and would park us at the far
-  // edge of the archive. One node of the past stays visible as a hint that
-  // there's more behind.
-  const presentX = Math.max(0, (firstAhead - 1) * nodeW);
-
-  // Open on the present, not at the start of the archive. Jumps without
-  // animating so the page doesn't visibly slide on load.
-  //
-  // Re-asserted after paint and again once webfonts land: setting scrollLeft
-  // once on mount gets clobbered as the strip's final width resolves, which
-  // leaves it pinned to the far right (the Jan 2027 end) instead of on today.
-  useEffect(() => {
-    const el = scroller.current;
-    if (!el || firstAhead <= 0) return;
-
-    let raf = 0;
-    const park = () => {
-      raf = requestAnimationFrame(() => {
-        el.scrollLeft = presentX;
-      });
-    };
-
-    park();
-    const fonts = (document as Document & { fonts?: FontFaceSet }).fonts;
-    fonts?.ready.then(park);
-    window.addEventListener("load", park);
-
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("load", park);
-    };
-  }, [firstAhead, presentX]);
-
-  const page = (dir: -1 | 1) => {
-    const el = scroller.current;
-    if (!el) return;
-    el.scrollBy({
-      left: dir * Math.max(nodeW * 2, el.clientWidth * 0.75),
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ? "auto"
-        : "smooth",
-    });
-  };
-
-  const toPresent = () => {
-    const el = scroller.current;
-    if (!el || firstAhead < 0) return;
-    el.scrollTo({
-      left: presentX,
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ? "auto"
-        : "smooth",
-    });
-  };
-
-  if (nodes.length < 2) return null;
-
-  return (
-    <div>
-      <div className="mb-1 flex items-baseline gap-2">
-        <div className="ml-auto flex items-center gap-1">
-          <TimelineButton label="Scroll to earlier catalysts" onClick={() => page(-1)}>
-            ‹
-          </TimelineButton>
-          <button
-            type="button"
-            onClick={toPresent}
-            className="border border-[var(--border-strong)] px-2 py-[3px] font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
-          >
-            Today
-          </button>
-          <TimelineButton label="Scroll to later catalysts" onClick={() => page(1)}>
-            ›
-          </TimelineButton>
-        </div>
-      </div>
-
-      <div
-        ref={scroller}
-        className="overflow-x-auto overscroll-x-contain"
-        tabIndex={0}
-        role="group"
-        aria-label="Catalyst timeline — scroll for past and upcoming events"
-      >
-        <div
-          className="relative grid grid-flow-col pt-1"
-          style={{ gridAutoColumns: `${nodeW}px` }}
-        >
-          <div className="absolute left-0 right-0 top-[46px] h-[2px] bg-[var(--border-strong)]" />
-          {nodes.map((c, i) => {
-            // Red marks a rate decision, not "the binary". The binary is still
-            // just one day (see BINARY_KINDS in lib/home-terminal), but a
-            // central bank meeting reads at the same weight on the strip, so
-            // BoJ gets the colour without claiming the title.
-            const accent = c.hot || c.kind.toUpperCase() === "BOJ";
-            return (
-            <div
-              key={`${c.dateLabel}-${i}`}
-              data-node
-              className={`relative px-2 text-center ${c.past ? "opacity-45" : ""}`}
-            >
-              {/* Where the past meets the future — a hairline the eye can find. */}
-              {i === firstAhead && i > 0 && (
-                <span
-                  aria-hidden
-                  className="absolute -left-px top-0 bottom-0 border-l border-dashed border-[var(--amber-dim)]"
-                />
-              )}
-              {/* Start of a new week. Same hairline, lighter, so the today
-                  divider still reads as the primary one — and never doubled
-                  up when a week happens to start on the same edge. */}
-              {startsWeek[i] && i !== firstAhead && (
-                <span
-                  aria-hidden
-                  className="absolute -left-px top-0 bottom-0 border-l border-dashed border-[var(--amber-dim)] opacity-45"
-                />
-              )}
-              <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--faint)]">
-                {c.day}
-              </div>
-              <div
-                className={`font-mono text-[19px] font-semibold tabular-nums leading-[1.15] ${
-                  accent ? "text-[var(--down)]" : "text-[var(--foreground)]"
-                }`}
-              >
-                {c.dateShort}
-              </div>
-              <div
-                className={`relative z-[1] mx-auto my-2 h-[11px] w-[11px] rounded-full border-2 border-[var(--background)] ${
-                  accent
-                    ? "bg-[var(--down)] shadow-[0_0_0_4px_color-mix(in_srgb,var(--down)_20%,transparent)]"
-                    : "bg-[var(--border-strong)]"
-                }`}
-              />
-              <div
-                className={`mx-auto max-w-[150px] text-[12px] leading-[1.35] ${
-                  accent ? "font-semibold text-[var(--down)]" : "text-[var(--dim)]"
-                }`}
-              >
-                {timelineLabel(c.label)}
-                {/* Everything else happening that day. Quieter than the lead,
-                    but present — a schedule that hides Amazon's results behind
-                    a macro print isn't a schedule. */}
-                {alsoToday(c).length > 0 && (
-                  <span className="mt-1 block font-mono text-[9.5px] leading-tight text-[var(--faint)]">
-                    {alsoToday(c).join(" · ")}
-                  </span>
-                )}
-                {c.hot && (
-                  <b className="mt-1 block font-mono text-[9.5px] font-bold uppercase tracking-[0.12em] text-[var(--down)]">
-                    {c.tMinus === 0 ? "today" : `T−${c.tMinus}`}
-                  </b>
-                )}
-              </div>
-            </div>
-            );
-          })}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/**
- * Timeline column width. 170px shows about six days on a laptop, but only two
- * on a 390px phone — a strip of mostly empty gutter that hides the week it
- * exists to show. 124px fits three days there and still leaves the label room
- * to breathe.
- *
- * The scroll maths below multiplies by this, so the value has to be the same
- * number the grid is laid out with. Hence a hook rather than a media query in
- * the class list: CSS alone would silently desync `presentX` and park the strip
- * on the wrong day.
- */
-const NODE_W = 170;
-const NODE_W_NARROW = 124;
-
-function useNodeWidth(): number {
-  const [narrow, setNarrow] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 639px)");
-    const sync = () => setNarrow(mq.matches);
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
-  }, []);
-  return narrow ? NODE_W_NARROW : NODE_W;
-}
-
-function TimelineButton({
-  label,
-  onClick,
-  children,
-}: {
-  label: string;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-label={label}
-      className="border border-[var(--border-strong)] px-2 py-[2px] font-mono text-[13px] leading-none text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
-    >
-      {children}
-    </button>
-  );
-}
-
 // --- right column ----------------------------------------------------------------
 
 function WeekAhead({ calendar }: { calendar: CalRow[] }) {
@@ -553,6 +244,14 @@ function WeekAhead({ calendar }: { calendar: CalRow[] }) {
           </span>
         </div>
       ))}
+      {/* The homepage shows the next handful. The month face — and everything
+          already behind us — lives on its own page. */}
+      <Link
+        href="/schedule"
+        className="mt-3 inline-block border-t border-[var(--border)] pt-3 font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--amber)] hover:underline"
+      >
+        Full schedule →
+      </Link>
     </div>
   );
 }
@@ -622,15 +321,6 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
           )}
 
           <Hero brief={current} />
-
-          {/* The catalyst run — full-width glance layer above the columns.
-              Scrolls both ways, so it's no longer only "the week ahead". */}
-          {data.timeline.length >= 2 && (
-            <div className="pt-12">
-              <SectionRule>Schedule</SectionRule>
-              <WeekTimeline timeline={data.timeline} />
-            </div>
-          )}
 
           {/* One full-size chart with a switcher. Three side-by-side tiles put
               the zone labels below legibility, so this trades breadth for a

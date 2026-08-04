@@ -78,6 +78,7 @@ type FredDates = { release_dates?: Array<{ date: string }> };
 export async function getMacroReleases(
   from: string,
   monthsAhead = 6,
+  lookbackDays = CENTRAL_BANK_LOOKBACK_DAYS,
 ): Promise<CalendarEvent[]> {
   const key = process.env.FRED_API_KEY;
   if (!key) return [];
@@ -88,7 +89,7 @@ export async function getMacroReleases(
   // Recent prints stay on the strip for the same reason the Fed's do: last
   // week's CPI is how you read this week's tape, and the schedule is a record
   // of the week rather than only a countdown.
-  const since = lookbackFrom(from);
+  const since = lookbackFrom(from, lookbackDays);
 
   const per = await Promise.all(
     FRED_RELEASES.map(async ({ id, label, kind }) => {
@@ -126,17 +127,20 @@ export async function getMacroReleases(
  * and dropping it the morning after left a fortnight of blank days behind
  * today. The tables are static, so looking back costs nothing.
  */
-const CENTRAL_BANK_LOOKBACK_DAYS = 45;
+export const CENTRAL_BANK_LOOKBACK_DAYS = 45;
 
-function lookbackFrom(from: string): string {
+function lookbackFrom(from: string, days = CENTRAL_BANK_LOOKBACK_DAYS): string {
   const d = new Date(`${from}T12:00:00Z`);
-  d.setUTCDate(d.getUTCDate() - CENTRAL_BANK_LOOKBACK_DAYS);
+  d.setUTCDate(d.getUTCDate() - days);
   return d.toISOString().slice(0, 10);
 }
 
 /** FOMC decisions from the table above — recent past included. */
-export function getFomcEvents(from: string): CalendarEvent[] {
-  const since = lookbackFrom(from);
+export function getFomcEvents(
+  from: string,
+  lookbackDays = CENTRAL_BANK_LOOKBACK_DAYS,
+): CalendarEvent[] {
+  const since = lookbackFrom(from, lookbackDays);
   return FOMC_2026.filter((m) => m.date >= since).map((m) => {
     const d = new Date(`${m.date}T12:00:00Z`);
     const day = d.getUTCDate();
@@ -151,8 +155,11 @@ export function getFomcEvents(from: string): CalendarEvent[] {
 }
 
 /** BoJ policy decisions from the table above — recent past included. */
-export function getBojEvents(from: string): CalendarEvent[] {
-  const since = lookbackFrom(from);
+export function getBojEvents(
+  from: string,
+  lookbackDays = CENTRAL_BANK_LOOKBACK_DAYS,
+): CalendarEvent[] {
+  const since = lookbackFrom(from, lookbackDays);
   return BOJ_2026.filter((m) => m.date >= since).map((m) => {
     const open = new Date(`${m.from}T12:00:00Z`).getUTCDate();
     const close = new Date(`${m.date}T12:00:00Z`).getUTCDate();
@@ -170,6 +177,10 @@ export function getBojEvents(from: string): CalendarEvent[] {
  * Next earnings date for every watchlist name, from the same Yahoo-backed
  * helper /earnings already renders. Estimated dates are marked, because Yahoo
  * projects a quarter forward when a company hasn't confirmed.
+ *
+ * `from` is a floor, not "today": pass a past date and the results reaching
+ * back that far are kept, which is what the month calendar wants when you page
+ * into a month that has already happened.
  */
 export async function getEarningsEvents(from: string): Promise<CalendarEvent[]> {
   try {

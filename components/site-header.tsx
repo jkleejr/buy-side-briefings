@@ -11,6 +11,7 @@ const NAV = [
   { href: "/briefings", code: "BRIEF", label: "Briefings" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist" },
   { href: "/earnings", code: "EARN", label: "Earnings" },
+  { href: "/schedule", code: "SCHED", label: "Schedule" },
   { href: "/market-history", code: "HIST", label: "Market History" },
 ];
 

@@ -664,18 +664,35 @@ export function getCalendarTimeline(): CalendarEvent[] {
  * authored label survives (it carries the framing) on the feed's date (which is
  * authoritative).
  */
-export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> {
-  const { getEarningsEvents, getFomcEvents, getBojEvents, getMacroReleases } = await import(
-    "@/lib/calendar-feeds"
-  );
+export type TimelineWindow = {
+  /** How far behind `from` the mechanical feeds still report. */
+  lookbackDays?: number;
+  /** How far ahead of `from` the FRED release schedule is pulled. */
+  monthsAhead?: number;
+};
+
+export async function getMergedTimeline(
+  from: string,
+  window: TimelineWindow = {},
+): Promise<CalendarEvent[]> {
+  const { getEarningsEvents, getFomcEvents, getBojEvents, getMacroReleases, CENTRAL_BANK_LOOKBACK_DAYS } =
+    await import("@/lib/calendar-feeds");
+
+  const lookbackDays = window.lookbackDays ?? CENTRAL_BANK_LOOKBACK_DAYS;
+  const monthsAhead = window.monthsAhead ?? 6;
+  // The floor for everything, not just the central-bank tables. `from` is the
+  // present; `since` is how far into the past this call is willing to look.
+  const since = new Date(`${from}T12:00:00Z`);
+  since.setUTCDate(since.getUTCDate() - lookbackDays);
+  const sinceStr = since.toISOString().slice(0, 10);
 
   const authored = getCalendarTimeline().map((e) => ({ ...e }));
   const [earnings, macro] = await Promise.all([
-    getEarningsEvents(from),
-    getMacroReleases(from),
+    getEarningsEvents(sinceStr),
+    getMacroReleases(from, monthsAhead, lookbackDays),
   ]);
-  const fomc = getFomcEvents(from);
-  const boj = getBojEvents(from);
+  const fomc = getFomcEvents(from, lookbackDays);
+  const boj = getBojEvents(from, lookbackDays);
 
   // "boj" is here so a hand-written "BoJ meeting" catalyst absorbs the feed row
   // rather than printing beside it, the same way the FOMC pair already works.
@@ -689,12 +706,50 @@ export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> 
   for (const feed of [...fomc, ...boj, ...macro]) {
     const w = wordOf(feed.label);
     if (!w) continue;
+    // Matched from `sinceStr`, not `from`: on the month calendar a CPI print
+    // that has already happened is still a row, and pairing has to keep working
+    // behind the present or the authored copy and the FRED copy both render.
     const twin = authored.find(
-      (a) => a.date >= from && wordOf(a.label) === w && daysApart(a.date, feed.date) <= 4,
+      (a) => a.date >= sinceStr && wordOf(a.label) === w && daysApart(a.date, feed.date) <= 4,
     );
     if (twin) {
-      twin.date = feed.date;
+      // The feed's date is the authoritative one — but only for an event that
+      // hasn't happened yet. Re-dating an *archived* catalyst would march a
+      // print that already landed onto a nearby feed date and file it under the
+      // wrong day, which on a month calendar is a visible lie.
+      if (twin.date >= from) twin.date = feed.date;
       twin.time_et = twin.time_et ?? feed.time_et;
+      swallowed.add(feed);
+    }
+  }
+
+  /**
+   * The leading ticker of an authored earnings label. The routine writes them
+   * ticker-first — "AMD Q2 2026 earnings AH — data-center >$6B" — which is the
+   * only part that can be matched against a feed row.
+   */
+  const leadTicker = (label: string): string | null => {
+    const t = label.trim().split(/[\s,]+/)[0].replace(/[^A-Z0-9.]/gi, "").toUpperCase();
+    return /^[A-Z][A-Z0-9.]{0,5}$/.test(t) ? t : null;
+  };
+
+  // Earnings pair on the ticker rather than a release keyword. The routine
+  // writes "AMD Q2 2026 earnings AH — <framing>" and the Yahoo feed writes a
+  // bare "AMD earnings" for the same print. The old homepage strip collapsed a
+  // date to a single node and hid the collision; a month grid prints both rows
+  // side by side, so the pair has to be resolved here. The authored label wins
+  // (it carries the framing), on the feed's date when the print is still ahead.
+  for (const feed of earnings) {
+    const sym = feed.tickers?.[0]?.toUpperCase();
+    if (!sym) continue;
+    const twin = authored.find(
+      (a) =>
+        a.kind.toUpperCase() === "EARNINGS" &&
+        leadTicker(a.label) === sym &&
+        daysApart(a.date, feed.date) <= 4,
+    );
+    if (twin) {
+      if (twin.date >= from) twin.date = feed.date;
       swallowed.add(feed);
     }
   }
@@ -716,7 +771,7 @@ export async function getMergedTimeline(from: string): Promise<CalendarEvent[]> 
     ...fomc.filter((e) => !swallowed.has(e)),
     ...boj.filter((e) => !swallowed.has(e)),
     ...macro.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
-    ...earnings,
+    ...earnings.filter((e) => !swallowed.has(e)),
   ];
 
   const seen = new Set<string>();
