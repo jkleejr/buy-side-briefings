@@ -26,6 +26,10 @@ const TICKER_STRIP: Array<{ symbol: string; label: string }> = [
   { symbol: "JPY=X", label: "USD/JPY" },
   { symbol: "BTC-USD", label: "BTC" },
   { symbol: "GC=F", label: "Gold" },
+  // WTI front-month — the barrel the briefings quote. Spelled "Crude" rather
+  // than "WTI" so the row reads for someone who doesn't trade it, matching the
+  // homepage chart switcher.
+  { symbol: "CL=F", label: "Crude" },
 ];
 
 type YQuote = {
