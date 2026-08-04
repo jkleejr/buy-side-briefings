@@ -766,6 +766,7 @@ export default function LevelsChart({
     return () => el.removeEventListener("wheel", handler);
   }, [zoomAt, compact]);
 
+
   /**
    * Pointer position → an anchor in data space: an absolute index into
    * `allBars` plus the price under the cursor. Storing anchors this way (rather
@@ -793,6 +794,87 @@ export default function LevelsChart({
 
   const pan = useRef<{ x: number; from: number; span: number } | null>(null);
 
+
+  // --- pinch to zoom, on touch ----------------------------------------------
+  // On a phone the chart had no touch gesture of its own, and `touch-action`
+  // was left at its default whenever no drawing tool was armed. So a pinch on
+  // the chart was a pinch on the *page*: iOS Safari zoomed the whole document,
+  // which reads as the site lurching out from under you rather than the chart
+  // responding. Two fingers on the plot now scale the time axis and nothing
+  // else; one finger still scrolls the page (see touchAction: "pan-y" below).
+  const viewRef = useRef(clampedView);
+  useEffect(() => {
+    viewRef.current = clampedView;
+  }, [clampedView]);
+
+  useEffect(() => {
+    const el = svgRef.current;
+    if (!el || compact || !total) return;
+
+    // Measured against the gesture's own starting spread and span rather than
+    // the previous frame's, so a slow pinch doesn't accumulate rounding drift
+    // and the bar under your fingers stays under your fingers.
+    let start: { dist: number; from: number; span: number; frac: number } | null = null;
+
+    const spread = (t: TouchList) =>
+      Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+    const midX = (t: TouchList) => (t[0].clientX + t[1].clientX) / 2;
+
+    const onStart = (e: TouchEvent) => {
+      if (e.touches.length !== 2) return;
+      const v = viewRef.current;
+      start = {
+        dist: spread(e.touches) || 1,
+        from: v.from,
+        span: v.to - v.from,
+        frac: plotFrac(midX(e.touches)),
+      };
+      // A second finger ends any one-finger pan already in flight, otherwise
+      // the pan keeps tracking finger one while the pinch scales underneath it.
+      pan.current = null;
+      setDragging(false);
+      e.preventDefault();
+    };
+
+    const onMove = (e: TouchEvent) => {
+      if (!start || e.touches.length !== 2) return;
+      e.preventDefault();
+      const ratio = spread(e.touches) / start.dist;
+      if (!Number.isFinite(ratio) || ratio <= 0) return;
+      // Fingers apart → fewer bars on screen.
+      const nextSpan = Math.round(
+        Math.max(MIN_VISIBLE_BARS, Math.min(total, start.span / ratio)),
+      );
+      const anchor = start.from + start.frac * start.span;
+      let from = Math.round(anchor - start.frac * nextSpan);
+      from = Math.max(0, Math.min(from, total - nextSpan));
+      setView({ key, from, to: from + nextSpan });
+    };
+
+    const onEnd = (e: TouchEvent) => {
+      if (e.touches.length < 2) start = null;
+    };
+
+    // Safari raises its own gesture events for a pinch and will still zoom the
+    // document with them, so they have to be refused explicitly — touch-action
+    // alone does not stop them on older iOS.
+    const stopGesture = (e: Event) => e.preventDefault();
+
+    el.addEventListener("touchstart", onStart, { passive: false });
+    el.addEventListener("touchmove", onMove, { passive: false });
+    el.addEventListener("touchend", onEnd);
+    el.addEventListener("touchcancel", onEnd);
+    el.addEventListener("gesturestart", stopGesture);
+    el.addEventListener("gesturechange", stopGesture);
+    return () => {
+      el.removeEventListener("touchstart", onStart);
+      el.removeEventListener("touchmove", onMove);
+      el.removeEventListener("touchend", onEnd);
+      el.removeEventListener("touchcancel", onEnd);
+      el.removeEventListener("gesturestart", stopGesture);
+      el.removeEventListener("gesturechange", stopGesture);
+    };
+  }, [compact, total, plotFrac, key, pan]);
   const onPanMove = useCallback(
     (clientX: number) => {
       const p = pan.current;
@@ -819,6 +901,9 @@ export default function LevelsChart({
       // drawing tool takes the gesture over, exactly as it already did.
       if (tool === "none") {
         if (compact || !total) return;
+        // Second finger of a pinch: the pinch handler owns the gesture, and
+        // starting a pan here would fight it.
+        if (ev.pointerType === "touch" && !ev.isPrimary) return;
         pan.current = {
           x: ev.clientX,
           from: clampedView.from,
@@ -1394,7 +1479,12 @@ export default function LevelsChart({
               style={{
                 minHeight: compact ? undefined : expanded ? undefined : 420,
                 cursor: tool === "none" ? "crosshair" : "cell",
-                touchAction: tool === "none" ? undefined : "none",
+                // "pan-y" keeps one-finger vertical scrolling with the page —
+                // the chart is tall, and a phone reader has to be able to get
+                // past it — while handing pinch and horizontal drag to the
+                // handlers above. Left undefined, the browser claimed the
+                // pinch and zoomed the document instead of the chart.
+                touchAction: tool === "none" ? "pan-y" : "none",
                 // Without this a drag highlights the zone labels instead of drawing.
                 userSelect: tool === "none" ? undefined : "none",
                 WebkitUserSelect: tool === "none" ? undefined : "none",
