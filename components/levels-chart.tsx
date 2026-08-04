@@ -750,7 +750,14 @@ export default function LevelsChart({
     const el = svgRef.current;
     if (!el || compact) return;
     const handler = (e: WheelEvent) => {
-      // Let a horizontal trackpad gesture and browser page-zoom through.
+      // Zoom is held behind ⌘ (the Windows key on non-Mac keyboards, which is
+      // the same `metaKey`). A bare scroll used to zoom, which meant the chart
+      // trapped the page: scrolling down the homepage over it silently
+      // rescaled the time axis instead of moving past it. Now a bare scroll
+      // just scrolls, and zooming is something you ask for.
+      if (!e.metaKey) return;
+      // Still let a horizontal trackpad gesture and browser page-zoom
+      // (pinch reports as ctrlKey) through untouched.
       if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
       e.preventDefault();
       zoomAt(e.deltaY, e.clientX);
@@ -1315,6 +1322,9 @@ export default function LevelsChart({
             {showFib && !fib && tool === "fib" && " · drag a swing to place the grid"}
             {liveView && bars && ` · zoomed to ${bars.length} bars — double-click to reset`}
             {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
+            {/* Zoom is behind a modifier now, so it has to be said somewhere —
+                a gesture nobody can discover is the same as not having it. */}
+            {bars && " · ⌘ + scroll to zoom"}
           </span>
         </div>
       )}
