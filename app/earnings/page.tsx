@@ -1,10 +1,12 @@
 import { getEarningsSchedule, countdownBadge } from "@/lib/earnings";
 import EarningsSchedule from "@/components/earnings-schedule";
 
+// The route stays /earnings — it is linked from the briefings and indexed —
+// but the page presents itself as the Calendar everywhere a reader sees it.
 export const metadata = {
-  title: "Earnings Calendar — Buy-Side Briefings",
+  title: "Calendar — Buy-Side Briefings",
   description:
-    "Upcoming earnings schedule for every stock you track: a timeline chart and full calendar with dates, countdowns, and the Street's EPS and revenue estimates — confirmed vs. estimated.",
+    "Upcoming events for every stock you track: a timeline chart and full calendar with dates, countdowns, and the Street's EPS and revenue estimates — confirmed vs. estimated.",
 };
 
 // Live from Yahoo; refresh hourly.
@@ -42,15 +44,9 @@ export default async function EarningsPage() {
   return (
     <div className="mx-auto max-w-5xl space-y-1">
       <header className="space-y-1 px-1 pb-1">
-        <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)]">
-          WHAT&apos;S AHEAD
-        </span>
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
-          Earnings Calendar
+          Upcoming events
         </h1>
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Every name you track · when it reports & what the Street expects
-        </p>
       </header>
 
       <div className="grid grid-cols-2 gap-1 sm:grid-cols-4">
