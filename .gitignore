@@ -29,6 +29,12 @@
 .idea/
 *.swp
 
+# Claude Code — worktrees are local scratch, never part of the project.
+# They live inside the repo, so without this every session's worktree shows up
+# as untracked forever: pulling can't clear it, because it never came from the
+# remote. (.claude/settings.local.json is already covered by *.local.json.)
+.claude/worktrees/
+
 # scratch
 /tmp/
 *.local.json
