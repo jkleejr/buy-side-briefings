@@ -27,6 +27,15 @@ function monthLabel(month: string): string {
   });
 }
 
+/** "Aug" — the three-letter form the month buttons wear. */
+function monthAbbr(month: string): string {
+  const [y, m] = month.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, 1, 12)).toLocaleDateString("en-US", {
+    month: "short",
+    timeZone: "UTC",
+  });
+}
+
 /**
  * The month's grid, weeks running Monday→Sunday.
  *
@@ -150,45 +159,42 @@ export default function ScheduleCalendar({ data }: { data: ScheduleData }) {
   return (
     <div className="mx-auto max-w-[1100px] px-4 pb-16 sm:px-6">
       {/* --- masthead --- */}
-      <div className="flex flex-wrap items-baseline justify-between gap-3 border-t border-[var(--foreground)] pt-4">
-        <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--dim)]">
+      {/* Carries the page's h1. The month title that used to hold it is gone,
+          and a page whose only headings are the section rules below reads as
+          untitled to a screen reader and to search. Styled as the eyebrow it
+          looks like. */}
+      <div className="border-t border-[var(--foreground)] pt-4">
+        <h1 className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--dim)]">
           Schedule
-        </span>
-        <span className="font-mono text-[11.5px] text-[var(--dim)]">
-          {monthEvents.length} dated {monthEvents.length === 1 ? "event" : "events"} ·{" "}
-          {behind.length} behind · {ahead.length} ahead
-        </span>
+        </h1>
       </div>
 
-      <h1 className="mt-3 text-[30px] leading-tight font-semibold tracking-tight text-[var(--foreground)] sm:text-[38px]">
-        {monthLabel(month)}
-      </h1>
-      <p className="mt-1 max-w-[62ch] text-[15px] leading-relaxed text-[var(--ink-2)]">
-        Every dated catalyst we track — the routine&apos;s hand-written events plus
-        the scheduled earnings, Fed and Bank of Japan decisions, and macro
-        prints. It keeps its past: an event stays on the calendar after it
-        happens, because that is when you come back to read what moved.
-      </p>
-
       {/* --- month nav --- */}
-      <div className="mt-6 flex items-center justify-between gap-3">
+      <div className="mt-5 flex items-center justify-between gap-3">
         <div className="flex items-center gap-1.5">
           <NavButton
             label="Previous month"
             onClick={() => setMonth(addMonths(month, -1))}
             disabled={atStart}
           >
-            ‹ {monthLabel(addMonths(month, -1)).split(" ")[0].slice(0, 3)}
+            ‹ {monthAbbr(addMonths(month, -1))}
           </NavButton>
-          <NavButton label="Jump to the current month" onClick={() => setMonth(data.todayMonth)}>
-            Today
+          {/* The middle button names the month it takes you to — the real
+              current month, not the one being viewed. So while it is August it
+              reads AUG, in September it reads SEP, and the flanking buttons
+              step off the *viewed* month either side. */}
+          <NavButton
+            label={`Jump to ${monthLabel(data.todayMonth)}, the current month`}
+            onClick={() => setMonth(data.todayMonth)}
+          >
+            {monthAbbr(data.todayMonth)}
           </NavButton>
           <NavButton
             label="Next month"
             onClick={() => setMonth(addMonths(month, 1))}
             disabled={atEnd}
           >
-            {monthLabel(addMonths(month, 1)).split(" ")[0].slice(0, 3)} ›
+            {monthAbbr(addMonths(month, 1))} ›
           </NavButton>
         </div>
 
@@ -236,12 +242,25 @@ export default function ScheduleCalendar({ data }: { data: ScheduleData }) {
                   className={[
                     "min-h-[104px] border-b border-r border-[var(--border)] p-1.5",
                     "[&:nth-child(7n+1)]:border-l",
-                    events.length ? "cursor-pointer hover:bg-[var(--panel)]" : "",
+                    events.length ? "cursor-pointer" : "",
                     !c.inMonth ? "opacity-35" : isPast ? "opacity-70" : "",
-                    isSelected ? "bg-[var(--panel)]" : "",
-                    isToday ? "bg-[var(--panel-head)]" : "",
+                    // One background, chosen here rather than stacked as three
+                    // competing `bg-*` utilities — today's shade is the only
+                    // thing marking today now that the chip is gone, and it
+                    // must not lose to a hover or a selection that happens to
+                    // sort later in the stylesheet.
+                    isToday
+                      ? "bg-[var(--panel-head)]"
+                      : isSelected
+                        ? "bg-[var(--panel)]"
+                        : events.length
+                          ? "hover:bg-[var(--panel)]"
+                          : "",
                   ].join(" ")}
                 >
+                  {/* No "today" chip. The shaded cell says it, and the label
+                      was competing with the events for the width of a column.
+                      The date stays bold so the day reads even at a glance. */}
                   <div className="flex items-baseline justify-between">
                     <span
                       className={[
@@ -255,11 +274,6 @@ export default function ScheduleCalendar({ data }: { data: ScheduleData }) {
                     >
                       {c.dayNum}
                     </span>
-                    {isToday && (
-                      <span className="font-mono text-[8.5px] font-semibold uppercase tracking-[0.14em] text-[var(--down)]">
-                        Today
-                      </span>
-                    )}
                   </div>
 
                   {/* Full chips where there's room; a row of dots when there
