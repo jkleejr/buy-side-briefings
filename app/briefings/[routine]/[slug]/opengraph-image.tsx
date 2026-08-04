@@ -146,7 +146,7 @@ export default async function BriefingOgImage({
             borderTop: `1px solid ${accentColor}`,
           }}
         >
-          <span>Buy-side analyst voice · mandatory bear case</span>
+          <span>Buy-side analyst voice · every claim sourced</span>
           <span>Educational only · not advice</span>
         </div>
       </div>

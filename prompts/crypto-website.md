@@ -108,10 +108,10 @@ Body sections (mirror the markets MDX; see `data/briefings/crypto/2026-06-08-dai
 6. `## 🔗 On-chain & flows` — ETF flows, treasury-company activity, leverage/liquidations, exchange reserves
 7. `## 🚫 Don't Buy Right Now` — 1–3 over-extended/at-risk setups with better entry
 8. `## 🎯 Trade Setups` — 2–3, ≥1 short/hedge/avoid
-9. `## 🪞 Bear Case (counter-argument)` — 2–3 sentences, ends with invalidation level
 
-**No `## ⚠️ Regime Risk Indicators` section** — retired 2026-08-03; the site no
-longer renders it. The verdict JSON still carries `regime_risk`; keep it filled.
+**No `## ⚠️ Regime Risk Indicators` and no `## 🪞 Bear Case` section** — both
+retired 2026-08-03; the site no longer renders them. The verdict JSON still
+carries `regime_risk` and `bear_case`; keep both fields filled.
 
 ## Step 7 — Commit and push to deploy
 

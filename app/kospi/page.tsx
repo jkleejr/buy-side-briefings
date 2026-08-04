@@ -41,7 +41,7 @@ export default function KospiPage() {
           News and market updates for the Korea Exchange: the daily call, where the won and foreign
           flows sit, and how the semiconductor leaders (Samsung, SK Hynix) are trading the AI-memory
           cycle. Click <span className="text-[var(--cyan-term)]">FULL ▸</span> on any card for the
-          long-form briefing with citations, levels, and bear case.
+          long-form briefing with citations and levels.
         </p>
       </header>
 

@@ -405,22 +405,32 @@ export function getAllBriefings(): BriefingMeta[] {
 }
 
 /**
- * Drop the "Regime Risk Indicators" trigger table from an authored body.
- * Retired 2026-08-03 — the archive keeps the text on disk, the site no longer
- * shows it. Matches the section heading through to the next `##` (or EOF).
+ * Sections retired from the briefings, matched by the name that opens their
+ * `##` heading (the leading emoji is optional, the trailing parenthetical
+ * varies edition to edition):
+ *
+ *   - Regime Risk Indicators / Regime Status — the trigger table, retired
+ *     2026-08-03.
+ *   - The Other Side / Bear Case — the counter-argument writeup, retired
+ *     2026-08-03. Both names are the same section; it was renamed mid-2026.
+ *
+ * Requiring the name to OPEN the heading is what keeps the near-misses in:
+ * "## 🎯 Verdict — … Regime Unresolved" and "## 🪞 Morning Call Grade — …
+ * Exceeded Bear Case" are ordinary sections that merely mention the words.
  */
-function stripRegimeSection(body: string): string {
-  // "## ⚠️ Regime Risk Indicators", "## 📅 Regime Status — …" — the leading
-  // emoji is optional. Verdict headings that merely mention a regime
-  // ("## 🎯 Verdict — … Regime Unresolved") do not match: the name has to open
-  // the heading.
+const RETIRED_SECTIONS =
+  /^##\s+(?:\S+\s+)?(?:Regime\s+(?:Risk|Status)|The\s+Other\s+Side|Bear\s+Case)\b/u;
+
+/**
+ * Drop the retired sections from an authored body. The archive keeps the text
+ * on disk; the site just stops rendering it.
+ */
+function stripRetiredSections(body: string): string {
   const isHead = (l: string) => /^##[^#]/.test(l);
-  const opensSection = (l: string) =>
-    /^##\s+(?:\S+\s+)?Regime\s+(?:Risk|Status)\b/u.test(l);
   const out: string[] = [];
   let dropping = false;
   for (const line of body.split("\n")) {
-    if (isHead(line)) dropping = opensSection(line);
+    if (isHead(line)) dropping = RETIRED_SECTIONS.test(line);
     if (!dropping) out.push(line);
   }
   return out.join("\n");
@@ -439,7 +449,7 @@ export function getBriefing(routine: string, slug: string): Briefing | null {
       title: data.title ?? `${routine} ${slug}`,
       verdict_ref: data.verdict_ref,
       is_seed: data.is_seed,
-      body: stripRegimeSection(content),
+      body: stripRetiredSections(content),
     };
   }
   // No hand-written .mdx on disk. Under verdict-only automation most days ship
@@ -472,14 +482,13 @@ type SynthesizableVerdict = {
   };
   trade_setups?: TradeSetup[];
   dont_buy?: DontBuy[];
-  bear_case?: string;
 };
 
 /**
  * Render a verdict's structured fields as briefing markdown. Used only as the
  * fallback body when a day has a verdict but no authored .mdx. Mirrors the shape
- * of a real briefing (verdict → key points → setups → bear case) so the page
- * reads consistently with hand-written editions.
+ * of a real briefing (the read → situations worth watching) so the page reads
+ * consistently with hand-written editions.
  */
 function synthesizeBriefingBody(v: SynthesizableVerdict): string {
   const out: string[] = [];
@@ -519,9 +528,8 @@ function synthesizeBriefingBody(v: SynthesizableVerdict): string {
     }
   }
 
-  if (v.bear_case) {
-    out.push("", "## Bear case", "", v.bear_case);
-  }
+  // No bear-case section — retired 2026-08-03, same as in the authored bodies.
+  // The verdict JSON still carries `bear_case`; it just isn't rendered.
 
   return out.join("\n");
 }
