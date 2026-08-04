@@ -2,8 +2,6 @@ import { getTradeQuotes } from "@/lib/markets";
 import {
   getAllMarketsVerdicts,
   getBriefing,
-  getMergedTimeline,
-  type CalendarEvent,
   type MarketsVerdict,
 } from "@/lib/data";
 import { readMinutes as readMinutesOfText } from "@/lib/utils";
@@ -17,7 +15,8 @@ import { clampText, verdictHeadline } from "@/lib/verdict-headline";
 // and a main column that renders the latest morning / evening markets brief as
 // a metric strip, an outlook bar, an editorial headline, clickable key points
 // that link to their source article, a key signal, tickers to watch, sector
-// performance, a wire-headline feed, and the week-ahead calendar). Everything
+// performance, and a wire-headline feed; dated catalysts live on /schedule).
+// Everything
 // maps to REAL data we already produce — the layout mirrors the Figma redesign;
 // the content is ours.
 // ---------------------------------------------------------------------------
@@ -81,29 +80,6 @@ export type WireRow = {
   url?: string;
 };
 
-export type CalRow = {
-  /** ISO date (YYYY-MM-DD) — the timeline needs it to spot week boundaries,
-   *  which the display labels alone can't give it when days are skipped. */
-  date: string;
-  day: string;
-  dateLabel: string;
-  /** Numeric month/day for the calendar face — "7/30", "8/2". Alongside `day`
-   *  it answers both "which day of the week" and "which date" at a glance,
-   *  where a bare "30" left you counting columns to work out the month. */
-  dateShort: string;
-  label: string;
-  kind: string;
-  note?: string;
-  timeET?: string;
-  /** The week's binary event — the one the timeline marks hot. */
-  hot?: boolean;
-  /** Whole days until the event — negative once it's behind us (0 = today). */
-  tMinus?: number;
-  /** True for events already past; the timeline dims them. */
-  past?: boolean;
-  /** Where it came from — "catalyst" is the routine's hand-written material. */
-  source?: "catalyst" | "fomc" | "boj" | "macro" | "earnings";
-};
 
 export type HomeData = {
   todayLabel: string;
@@ -115,7 +91,6 @@ export type HomeData = {
   defaultView: "morning" | "evening";
   sectors: SectorRow[];
   wire: WireRow[];
-  calendar: CalRow[];
 };
 
 // --- left-rail market pulse (2-col grid) ------------------------------------
@@ -529,60 +504,12 @@ export async function getHomeData(): Promise<HomeData> {
       href: `/briefings/${v.routine}/${v.date}-${v.window}`,
     }));
 
-  const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
-
-  // Authored catalysts plus the scheduled earnings and macro prints the routine
-  // was never meant to type by hand.
-  const merged = await getMergedTimeline(today);
-  const upcoming = merged.filter((e) => e.date >= today);
-  // The week's binary — the first macro-regime event ahead. Marked hot on the
-  // timeline so the countdown is legible at a glance.
-  const BINARY_KINDS = new Set(["MACRO", "FOMC", "CPI", "NFP", "PCE"]);
-  const hotDate = upcoming.find((e) => BINARY_KINDS.has(e.kind.toUpperCase()))?.date;
-
-  const toRow = (e: CalendarEvent): CalRow => {
-    const d = new Date(`${e.date}T12:00:00Z`);
-    return {
-      date: e.date,
-      day: d
-        .toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" })
-        .toUpperCase(),
-      dateLabel: d.toLocaleDateString("en-US", {
-        month: "short",
-        day: "numeric",
-        timeZone: "UTC",
-      }),
-      dateShort: `${d.getUTCMonth() + 1}/${d.getUTCDate()}`,
-      label: e.label,
-      kind: e.kind,
-      note: e.note,
-      timeET: e.time_et,
-      hot: BINARY_KINDS.has(e.kind.toUpperCase()) && e.date === hotDate,
-      tMinus: Math.round((Date.parse(e.date) - Date.parse(today)) / 86_400_000),
-      past: e.date < today,
-      source: e.source,
-    };
-  };
-
-  // The detail list is the reading layer, so it guarantees the routine's
-  // catalysts a place rather than letting a busy earnings week crowd them out —
-  // eighteen names report in six weeks and would otherwise fill it entirely.
-  // Chronological within the selection, so it still reads as a calendar.
-  const nextCatalysts = upcoming.filter((e) => e.source === "catalyst").slice(0, 4);
-  const nextOther = upcoming.filter((e) => e.source !== "catalyst").slice(0, 4);
-  const calendar: CalRow[] = [...nextCatalysts, ...nextOther]
-    .sort((a, b) => a.date.localeCompare(b.date))
-    .slice(0, 7)
-    .map(toRow);
-
-  // The full run — everything behind us as well as ahead — is no longer built
-  // here. It moved to /schedule (lib/schedule.ts), which renders it as a month
-  // calendar instead of a sideways-scrolling strip. The homepage keeps only the
-  // next few catalysts and links across.
-  //
-  // The one thing that must survive the move: the past. `merged` contains the
-  // archive as well as the feeds, and getMergedTimeline's lookback is what
-  // keeps a Bank of Japan decision on the calendar the morning after it lands.
+  // The dated-catalyst modules are gone from this page. The strip moved to
+  // /schedule (lib/schedule.ts) as a month calendar; the "Catalysts in detail"
+  // list that replaced it was removed too, so the homepage now carries no
+  // calendar data at all and the header nav is the way across. lib/schedule.ts
+  // owns the merged timeline — and, critically, its two-sided lookback, which
+  // is what keeps a Fed or BoJ decision on the calendar after it lands.
 
   const todayLabel = new Date()
     .toLocaleDateString("en-US", {
@@ -611,6 +538,5 @@ export async function getHomeData(): Promise<HomeData> {
     defaultView,
     sectors,
     wire: buildWire(verdicts, featuredKeys),
-    calendar,
   };
 }

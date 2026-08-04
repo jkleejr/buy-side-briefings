@@ -3,13 +3,7 @@
 import { useState } from "react";
 import LevelsChart from "./levels-chart";
 import Link from "next/link";
-import type {
-  HomeData,
-  BriefView,
-  SectorRow,
-  CalRow,
-  KeyPoint,
-} from "@/lib/home-terminal";
+import type { HomeData, BriefView, SectorRow, KeyPoint } from "@/lib/home-terminal";
 
 // ---------------------------------------------------------------------------
 // Journal homepage — the front page of a small daily, in the Design Notes
@@ -18,7 +12,6 @@ import type {
 //                   at display size, an italic lede, a link into the briefing
 //   tape          : the metric strip as a ruled row of figures
 //   what matters  : the briefing's key points, each sourced — one place, no echo
-//   week ahead    : the calendar, paired beside what-matters
 //   charts        : the majors, with derived support/resistance
 //   sectors       : reference band
 // No verdict / buy-sell call is rendered here — the homepage informs; the
@@ -126,7 +119,7 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
   return (
     <div>
       <SectionRule>What matters today</SectionRule>
-      <div className="flex flex-col">
+      <div className="sm:columns-2 sm:gap-12">
         {points.map((kp, i) => {
           const host = hostLabel(kp.url);
           const body = (
@@ -141,8 +134,13 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
               )}
             </>
           );
+          // Rules sit under each item, not above it. With `first:border-t-0` in
+          // a two-column flow only the DOM-first item loses its rule, so column
+          // two opened with a hairline directly under the section rule and read
+          // as a doubled heading. Bottom rules — the same as the sector table —
+          // have no such first-child special case.
           const cls =
-            "block border-t border-[var(--border)] py-4 first:border-t-0 first:pt-1";
+            "block break-inside-avoid border-b border-[var(--border)] py-4";
           return kp.url ? (
             <a
               key={i}
@@ -207,54 +205,6 @@ const CHART_LABELS: Record<string, string> = {
   // because a bare "570,000" reads as dollars next to Nvidia and Micron.
   "000660.KS": "SK Hynix (KRW)",
 };
-
-// --- right column ----------------------------------------------------------------
-
-function WeekAhead({ calendar }: { calendar: CalRow[] }) {
-  if (!calendar.length) return null;
-  const hot = new Set(["CPI", "FOMC", "BOJ", "NFP", "PCE", "GEO"]);
-  return (
-    <div>
-      <SectionRule>Catalysts in detail</SectionRule>
-      {calendar.map((c, i) => (
-        <div
-          key={i}
-          className="grid grid-cols-[58px_1fr_auto] items-baseline gap-4 border-t border-[var(--border)] py-3 first:border-t-0"
-        >
-          <span className="font-mono text-[11px] uppercase tracking-[0.08em] text-[var(--dim)]">
-            {c.day}
-            <b className="block font-mono text-[17px] font-semibold not-italic tabular-nums text-[var(--foreground)]">
-              {c.dateShort}
-            </b>
-          </span>
-          <span className="text-[14.5px] text-[var(--ink-2)]">
-            {c.label}
-            {(c.timeET || c.note) && (
-              <small className="line-clamp-2 text-[12.5px] italic text-[var(--faint)]">
-                {[c.timeET, c.note].filter(Boolean).join(" — ")}
-              </small>
-            )}
-          </span>
-          <span
-            className={`font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] ${
-              hot.has(c.kind.toUpperCase()) ? "text-[var(--down)]" : "text-[var(--faint)]"
-            }`}
-          >
-            {c.kind}
-          </span>
-        </div>
-      ))}
-      {/* The homepage shows the next handful. The month face — and everything
-          already behind us — lives on its own page. */}
-      <Link
-        href="/schedule"
-        className="mt-3 inline-block border-t border-[var(--border)] pt-3 font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--amber)] hover:underline"
-      >
-        Full schedule →
-      </Link>
-    </div>
-  );
-}
 
 function Sectors({ sectors }: { sectors: SectorRow[] }) {
   if (!sectors.length) return null;
@@ -330,19 +280,14 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
             <LevelsChart symbols={CHART_SYMBOLS} labels={CHART_LABELS} />
           </div>
 
-          {/* What matters + catalyst detail — the two forward-looking modules.
-              The day's articles read on the left, the dated catalysts on the
-              right. Catalysts are pinned to column two: when "what matters"
-              rendered nothing (a verdict shipped without supporting_data), the
-              catalyst list became the first grid item and slid into the wide
-              left column, which read as the articles section having vanished —
-              because it had. Pinning keeps the page's shape independent of
-              whether one feed came through. */}
-          <div className="grid gap-12 pt-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16">
+          {/* The day's articles, now the full width of the page. This was the
+              left column of a two-up with the catalyst list beside it; with the
+              catalysts gone to /schedule, a 1.5fr column would have left a
+              third of the band empty. Two newspaper columns instead — the same
+              treatment the sector table below already uses, and it keeps the
+              measure readable where one full-width column would not. */}
+          <div className="pt-12">
             <WhatMatters points={current.keyPoints} />
-            <div className="lg:col-start-2">
-              <WeekAhead calendar={data.calendar} />
-            </div>
           </div>
 
           {/* Reference band — sectors run full width across the two columns. */}
