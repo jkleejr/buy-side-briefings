@@ -11,7 +11,7 @@ Briefings should read like a **professional research note**, not a blog post or 
 - **Third-person analytical voice.** Avoid "I think," "my view," "a smart bear of MY call would say." Use "the data suggests," "the setup implies," "counter-argument:" etc.
 - **No meta or introspective phrases.** Avoid "the most uncomfortable observation," "am I getting too confident," "honest watch," "the meta thing is," "gut check." These belong in a personal blog, not a research note.
 - **Lead with the finding and the data.** Every section opens with a finding or claim, not a framing.
-- **Bear case as counter-thesis.** The bear-case section is the strongest argument *against* the read, written as if a different desk wrote it. Do not write it as your own self-doubt.
+- **Bear case as counter-thesis.** The JSON's `bear_case` field is the strongest argument *against* the read, written as if a different desk wrote it. Do not write it as your own self-doubt. It no longer gets a section in the body — see the retired sections below.
 - **Levels that would change the picture, explicitly stated** at the end of every read: "If SPX reclaims X, this read no longer holds." State the level; do not turn it into an instruction.
 - **Italics for ticker names or terminology only.** Not for emphasis on personal feeling.
 - **Density over length.** The reader's time is the scarce resource, not the
@@ -215,11 +215,9 @@ Per section, as a ceiling — under is fine, over is not:
 | What changed / What happened | 260 |
 | Window-specific tape view | 260 |
 | Major Stocks | 220 |
-| Regime Risk (table) | 120 |
 | Stretched Here | 150 |
 | Situations Worth Watching | 220 |
 | Strategic Outlook (night) | 300 |
-| The Other Side | 90 |
 
 **How to cut without losing anything.** The budget is met by removing
 repetition and throat-clearing, never by dropping a number or a citation. In
@@ -251,11 +249,19 @@ that hits the word count by dropping evidence has failed the brief.
 5. `## 📅 What changed since last briefing` (morning) or `## 📅 What Happened Today` (night) — 2-3 paragraphs
 6. `## 🌅 <Window>-specific section` — Tactical tape view, base/bull/bear cases with probabilities, critical levels to watch
 7. `## 💎 Major Stocks` — bulleted list with current prices and quick reads
-8. `## ⚠️ Regime Risk Indicators` — trigger checklist with breach/neutralized status
-9. `## 📈 Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
-10. `## 🔍 Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
-11. (night only) `## 🔭 Strategic Outlook — Next 5 Trading Days`
-12. `## 🪞 The Other Side (counter-argument)` — 2–3 sentences, ends with the level that would flip the read
+8. `## 📈 Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
+9. `## 🔍 Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
+10. (night only) `## 🔭 Strategic Outlook — Next 5 Trading Days`
+
+**Two sections are retired — do not write either one.** Both were dropped
+2026-08-03 and the site no longer renders them, so writing one only spends
+word budget that belongs to the read:
+
+- `## ⚠️ Regime Risk Indicators` — the trigger checklist.
+- `## 🪞 The Other Side` / `## 🪞 Bear Case` — the counter-argument writeup.
+
+The verdict JSON still carries `regime_risk` and `bear_case`; keep filling
+both fields. What changes is only what the body renders.
 
 **Reference the most recent briefing on disk** for *voice* — the analytical
 register, the way a claim is stated and sourced. Nothing else.
