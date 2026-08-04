@@ -5,7 +5,6 @@ import remarkGfm from "remark-gfm";
 import {
   getAllBriefings,
   getBriefing,
-  getCalendarEvents,
   getVerdictByRef,
 } from "@/lib/data";
 import {
@@ -13,7 +12,7 @@ import {
   formatRelativeTime,
   readMinutes,
 } from "@/lib/utils";
-import type { RegimeIndicator, SupportingPoint } from "@/lib/data";
+import type { SupportingPoint } from "@/lib/data";
 
 export const revalidate = 300;
 
@@ -80,11 +79,7 @@ export default async function BriefingPage({
       {verdict ? (
         <div className="space-y-7 pt-2">
           <Tier label="30 seconds" accent>
-            <VerdictHead
-              verdict={verdict}
-              bullets={glanceBullets(points)}
-              next={nextCatalyst(briefing.date)}
-            />
+            <VerdictHead verdict={verdict} bullets={glanceBullets(points)} />
           </Tier>
 
           {points.length > 0 && (
@@ -257,116 +252,18 @@ function glanceBullets(points: SupportingPoint[]): string[] {
     });
 }
 
-/** The next dated catalyst after this briefing, for the NEXT chip. */
-function nextCatalyst(
-  briefingDate: string,
-): { token: string; day: string } | null {
-  const e = getCalendarEvents().find((ev) => ev.date > briefingDate);
-  if (!e) return null;
-  // Only meaningful while the event is actually "next" — the curated calendar
-  // rolls forward, so for old briefings the nearest event may be unrelated.
-  const gapDays =
-    (Date.parse(e.date) - Date.parse(briefingDate)) / 86_400_000;
-  if (!Number.isFinite(gapDays) || gapDays > 10) return null;
-  // A readable token: a macro acronym from the label if present, else the
-  // event kind — unless it's the catch-all OTHER, where the label's first
-  // word (usually a ticker: "SKHY regular trading…") says far more.
-  const token =
-    /\b(CPI|FOMC|NFP|PCE|GDP)\b/.exec(e.label)?.[1] ??
-    (e.kind.toUpperCase() !== "OTHER"
-      ? e.kind
-      : e.label.split(/\s+/)[0].replace(/[^A-Za-z0-9-]/g, "").slice(0, 6));
-  const day = new Date(`${e.date}T12:00:00Z`).toLocaleDateString("en-US", {
-    weekday: "short",
-    timeZone: "UTC",
-  });
-  return { token: token.toUpperCase(), day };
-}
-
-/** Shorten a regime indicator's name to a chip label: "SPX vs 7,460 …" → "SPX". */
-function chipName(name: string): string {
-  return name
-    .replace(/\([^)]*\)/g, "")
-    .split(/\s+(?:vs|Gate|Yield|dual|floor)/i)[0]
-    .trim();
-}
-
-function chipValue(value: number, unit?: string): string {
-  if (unit === "%") return `${value}%`;
-  if (unit === "$")
-    return value >= 1000 ? `$${(value / 1000).toFixed(1)}k` : `$${value}`;
-  return value >= 1000 ? value.toLocaleString("en-US") : String(value);
-}
-
-function RegimeChips({
-  regime,
-  next,
-}: {
-  regime?: RegimeIndicator[];
-  next: { token: string; day: string } | null;
-}) {
-  // VIX gate retired 2026-07-25 — drop VIX rows from any verdict, old or new.
-  const rows = (regime ?? []).filter((r) => !/vix/i.test(r.name)).slice(0, 6);
-  if (!rows.length && !next) return null;
-  return (
-    <div className="mt-5 flex flex-wrap gap-2">
-      {rows.map((r, i) => {
-        const breached =
-          (r.trigger_above != null && r.value >= r.trigger_above) ||
-          (r.trigger_below != null && r.value <= r.trigger_below);
-        const gate =
-          r.trigger_above != null
-            ? `≥ ${chipValue(r.trigger_above, r.unit)}`
-            : r.trigger_below != null
-              ? `≤ ${chipValue(r.trigger_below, r.unit)}`
-              : null;
-        return (
-          <span
-            key={i}
-            className="inline-flex items-baseline gap-2 rounded-sm border border-[var(--border-strong)] bg-[var(--panel)] px-2.5 py-1.5 font-mono text-[11.5px] tabular-nums"
-          >
-            <span className="text-[9.5px] uppercase tracking-[0.1em] text-[var(--faint)]">
-              {chipName(r.name)}
-            </span>
-            <span
-              className="font-semibold"
-              style={{ color: breached ? "var(--down)" : "var(--foreground)" }}
-            >
-              {chipValue(r.value, r.unit)}
-            </span>
-            {gate && <span className="text-[var(--faint)]">{gate}</span>}
-          </span>
-        );
-      })}
-      {next && (
-        <span className="inline-flex items-baseline gap-2 rounded-sm border border-[color-mix(in_srgb,var(--amber)_45%,transparent)] bg-[color-mix(in_srgb,var(--amber)_8%,transparent)] px-2.5 py-1.5 font-mono text-[11.5px]">
-          <span className="text-[9.5px] uppercase tracking-[0.1em] text-[var(--faint)]">
-            Next
-          </span>
-          <span className="font-semibold text-[var(--amber)]">
-            {next.token} · {next.day}
-          </span>
-        </span>
-      )}
-    </div>
-  );
-}
-
 function VerdictHead({
   verdict,
   bullets,
-  next,
 }: {
   verdict: {
     verdict: {
       rationale_short: string;
       headline?: string;
     };
-    regime_risk?: RegimeIndicator[];
     generated_at: string;
   };
   bullets: string[];
-  next: { token: string; day: string } | null;
 }) {
   const headline =
     verdict.verdict.headline?.trim() || firstSentence(verdict.verdict.rationale_short);
@@ -391,7 +288,6 @@ function VerdictHead({
           ))}
         </ul>
       )}
-      <RegimeChips regime={verdict.regime_risk} next={next} />
     </div>
   );
 }

@@ -215,7 +215,6 @@ Per section, as a ceiling — under is fine, over is not:
 | What changed / What happened | 260 |
 | Window-specific tape view | 260 |
 | Major Stocks | 220 |
-| Regime Risk (table) | 120 |
 | Stretched Here | 150 |
 | Situations Worth Watching | 220 |
 | Strategic Outlook (night) | 300 |
@@ -251,11 +250,14 @@ that hits the word count by dropping evidence has failed the brief.
 5. `## 📅 What changed since last briefing` (morning) or `## 📅 What Happened Today` (night) — 2-3 paragraphs
 6. `## 🌅 <Window>-specific section` — Tactical tape view, base/bull/bear cases with probabilities, critical levels to watch
 7. `## 💎 Major Stocks` — bulleted list with current prices and quick reads
-8. `## ⚠️ Regime Risk Indicators` — trigger checklist with breach/neutralized status
-9. `## 📈 Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
-10. `## 🔍 Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
-11. (night only) `## 🔭 Strategic Outlook — Next 5 Trading Days`
-12. `## 🪞 The Other Side (counter-argument)` — 2–3 sentences, ends with the level that would flip the read
+8. `## 📈 Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
+9. `## 🔍 Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
+10. (night only) `## 🔭 Strategic Outlook — Next 5 Trading Days`
+11. `## 🪞 The Other Side (counter-argument)` — 2–3 sentences, ends with the level that would flip the read
+
+**No `## ⚠️ Regime Risk Indicators` section.** The trigger checklist was retired
+2026-08-03 — the site no longer renders it, so writing one wastes the word
+budget. The verdict JSON still carries `regime_risk`; keep filling that field.
 
 **Reference the most recent briefing on disk** for *voice* — the analytical
 register, the way a claim is stated and sourced. Nothing else.

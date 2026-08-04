@@ -404,6 +404,28 @@ export function getAllBriefings(): BriefingMeta[] {
   });
 }
 
+/**
+ * Drop the "Regime Risk Indicators" trigger table from an authored body.
+ * Retired 2026-08-03 — the archive keeps the text on disk, the site no longer
+ * shows it. Matches the section heading through to the next `##` (or EOF).
+ */
+function stripRegimeSection(body: string): string {
+  // "## ⚠️ Regime Risk Indicators", "## 📅 Regime Status — …" — the leading
+  // emoji is optional. Verdict headings that merely mention a regime
+  // ("## 🎯 Verdict — … Regime Unresolved") do not match: the name has to open
+  // the heading.
+  const isHead = (l: string) => /^##[^#]/.test(l);
+  const opensSection = (l: string) =>
+    /^##\s+(?:\S+\s+)?Regime\s+(?:Risk|Status)\b/u.test(l);
+  const out: string[] = [];
+  let dropping = false;
+  for (const line of body.split("\n")) {
+    if (isHead(line)) dropping = opensSection(line);
+    if (!dropping) out.push(line);
+  }
+  return out.join("\n");
+}
+
 export function getBriefing(routine: string, slug: string): Briefing | null {
   const file = path.join(DATA_DIR, "briefings", routine, `${slug}.mdx`);
   if (fs.existsSync(file)) {
@@ -417,7 +439,7 @@ export function getBriefing(routine: string, slug: string): Briefing | null {
       title: data.title ?? `${routine} ${slug}`,
       verdict_ref: data.verdict_ref,
       is_seed: data.is_seed,
-      body: content,
+      body: stripRegimeSection(content),
     };
   }
   // No hand-written .mdx on disk. Under verdict-only automation most days ship
