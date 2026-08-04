@@ -226,10 +226,12 @@ is_seed: false
 Body sections (the **May 20 morning briefing** — `data/briefings/markets/2026-05-20-morning.mdx` — is still the template for *tone, length and structure*):
 
 > **Do not copy its verdict framing.** That briefing, and every briefing on disk
-> before 2026-07-30, opens with a `## 🎯 Buy Verdict — 🟠 STEP ASIDE` style
-> heading and carries `Conviction: high` lines and a `## 🚫 Don't Buy Right Now`
-> section. All of that is retired. Take the rhythm and the depth from the
-> template; take the section list from below, which is authoritative.
+> before 2026-07-30, opens with a `## Buy Verdict — STEP ASIDE` style heading
+> and carries `Conviction: high` lines and a `## Don't Buy Right Now` section.
+> All of that is retired. Note also that the archive was written with emoji in
+> its headings; they were stripped on 2026-08-03 and must not return. Take the
+> rhythm and the depth from the template; take the section list from below,
+> which is authoritative.
 
 ### Length — a hard budget, not a suggestion
 
@@ -279,23 +281,30 @@ probability. The 4–6 sourced data points behind the read are a floor, not a
 target — a shorter briefing with the same evidence is the goal, and a briefing
 that hits the word count by dropping evidence has failed the brief.
 
+**No emoji anywhere in the briefing** — not in headings, not as status
+markers, not inline. Headings carry no icon, and a status is a word: write
+"breached", not a tick. The published archive was stripped of them on
+2026-08-03 and they must not come back.
+
+**No standing disclaimer line.** Do not write "Educational analysis only —
+not investment advice"; it is not rendered anywhere on the site any more.
+
 1. `> **Methodology note:**` — one-line description of when/how generated
-2. `*<Window> briefing. Educational analysis only — not investment advice.*`
-3. `## 🎯 The Read — <plain-English summary of the session>` — 1-paragraph read + bullet-point supporting data with inline `[label](url)` citations. **No verdict, no BUY/SELL/HOLD/STEP ASIDE label, no emoji stance marker, no conviction rating.** The heading states what happened, not what to do.
-4. `## 📊 Snapshot — <context>` — markdown table of major indices with levels/changes
-5. `## 📅 What changed since last briefing` (morning) or `## 📅 What Happened Today` (night) — 2-3 paragraphs
-6. `## 🌅 <Window>-specific section` — Tactical tape view, base/bull/bear cases with probabilities, critical levels to watch
-7. `## 💎 Major Stocks` — bulleted list with current prices and quick reads
-8. `## 📈 Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
-9. `## 🔍 Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
-10. (night only) `## 🔭 Strategic Outlook — Next 5 Trading Days`
+2. `## <plain-English summary of the session>` — 1-paragraph read + bullet-point supporting data with inline `[label](url)` citations. The heading is the summary itself: no "The Read —" prefix, no verdict, no BUY/SELL/HOLD/STEP ASIDE label, no stance marker, no conviction rating. It states what happened, not what to do.
+3. `## Snapshot — <context>` — markdown table of major indices with levels/changes
+4. `## What changed since last briefing` (morning) or `## What Happened Today` (night) — 2-3 paragraphs
+5. `## <Window>-specific section` — Tactical tape view, base/bull/bear cases with probabilities, critical levels to watch
+6. `## Major Stocks` — bulleted list with current prices and quick reads
+7. `## Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
+8. `## Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
+9. (night only) `## Strategic Outlook — Next 5 Trading Days`
 
 **Two sections are retired — do not write either one.** Both were dropped
 2026-08-03 and the site no longer renders them, so writing one only spends
 word budget that belongs to the read:
 
-- `## ⚠️ Regime Risk Indicators` — the trigger checklist.
-- `## 🪞 The Other Side` / `## 🪞 Bear Case` — the counter-argument writeup.
+- `## Regime Risk Indicators` — the trigger checklist.
+- `## The Other Side` / `## Bear Case` — the counter-argument writeup.
 
 The verdict JSON still carries `regime_risk` and `bear_case`; keep filling
 both fields. What changes is only what the body renders.

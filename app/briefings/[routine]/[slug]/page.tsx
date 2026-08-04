@@ -78,12 +78,18 @@ export default async function BriefingPage({
 
       {verdict ? (
         <div className="space-y-7 pt-2">
-          <Tier label="30 seconds" accent>
+          {/* The glance and evidence tiers are unlabelled. Their headings were
+              read-times and nothing else — "30 seconds", "1 min · the
+              evidence" — and a reader scanning a briefing does not need to be
+              told that the top of it is short. Only the full read keeps an
+              estimate, because that is the one worth deciding whether to start.
+              The homepage still shows a read-time on the link in. */}
+          <Tier accent>
             <VerdictHead verdict={verdict} bullets={glanceBullets(points)} />
           </Tier>
 
           {points.length > 0 && (
-            <Tier label={`${readMinutes(points.map((p) => p.label).join(" "))} min · the evidence`}>
+            <Tier>
               <Evidence points={points} />
             </Tier>
           )}
@@ -184,7 +190,9 @@ function Tier({
   accent,
   children,
 }: {
-  label: string;
+  /** Omitted on the glance tier, which is the first thing under the title and
+   *  needs no naming — the coloured rule already marks it. */
+  label?: string;
   accent?: boolean;
   children: React.ReactNode;
 }) {
@@ -194,13 +202,15 @@ function Tier({
         accent ? "border-[var(--cyan-term)]" : "border-[var(--border-strong)]"
       }`}
     >
-      <div
-        className={`font-mono text-[10.5px] uppercase tracking-[0.16em] ${
-          accent ? "text-[var(--cyan-term)]" : "text-[var(--faint)]"
-        }`}
-      >
-        {label}
-      </div>
+      {label && (
+        <div
+          className={`font-mono text-[10.5px] uppercase tracking-[0.16em] ${
+            accent ? "text-[var(--cyan-term)]" : "text-[var(--faint)]"
+          }`}
+        >
+          {label}
+        </div>
+      )}
       {children}
     </section>
   );
