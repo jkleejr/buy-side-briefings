@@ -9,9 +9,6 @@ export default function AboutPage() {
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           About
         </h1>
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          What this site is, how it works, and how the verdict is graded.
-        </p>
       </header>
 
       {/* ----- Section 1: What the site does ----- */}

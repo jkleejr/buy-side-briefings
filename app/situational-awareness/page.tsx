@@ -14,7 +14,7 @@ import SituationalAwarenessPortfolio from "@/components/situational-awareness-po
 export const metadata = {
   title: "Situational Awareness — Aschenbrenner's AI Fund | Buy-Side Briefings",
   description:
-    "Tracking Leopold Aschenbrenner's Situational Awareness LP from its SEC filings: the AGI thesis, the picks-and-shovels long book to copy-trade, the semiconductor hedge book, and how to shadow it honestly.",
+    "Tracking Leopold Aschenbrenner's Situational Awareness LP from its SEC filings: the AGI thesis, the picks-and-shovels long book, the semiconductor hedge book, and what the filings do and don't tell you.",
 };
 
 export const revalidate = 3600;
@@ -63,9 +63,6 @@ export default function SituationalAwarenessPage() {
     <div className="mx-auto max-w-5xl space-y-1">
       {/* ---------------------------------------------------------------- */}
       <header className="space-y-1 px-1 pb-1">
-        <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)]">
-          COPY-TRADE DESK
-        </span>
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           Situational Awareness LP
         </h1>

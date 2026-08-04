@@ -373,6 +373,39 @@ function citedLinksFromBody(v: MarketsVerdict): Array<{ label: string; url?: str
   return out;
 }
 
+/**
+ * The subject a point leads with, when it leads with one.
+ *
+ * "PLTR Q2: $1.94B revenue…" and "PLTR AH: range $123.66–$142.91…" are one
+ * company written up twice, and on 2026-08-03 they took two of the six slots on
+ * the front page while the Fed path, Iran and oil shared a single one. The home
+ * page shows the day's *spread*; the briefing page still lists every sourced
+ * point, so nothing is lost by holding one slot per subject here.
+ *
+ * Only a ticker-shaped opening token counts. A point that opens "September hike
+ * 64.5%" or "Dow Jones 53,178" has no subject key and is never dropped — the
+ * cost of guessing wrong is silently hiding a real story.
+ */
+function subjectOf(label: string): string | null {
+  const first = label
+    .replace(/^★\s*/, "")
+    .trim()
+    .split(/[\s,:;]+/)[0]
+    .replace(/[^A-Za-z0-9.]/g, "");
+  return /^[A-Z][A-Z0-9.]{1,5}$/.test(first) ? first.toUpperCase() : null;
+}
+
+function dedupeBySubject<T extends { label: string }>(points: T[]): T[] {
+  const seen = new Set<string>();
+  return points.filter((p) => {
+    const subject = subjectOf(p.label);
+    if (!subject) return true;
+    if (seen.has(subject)) return false;
+    seen.add(subject);
+    return true;
+  });
+}
+
 function buildBrief(
   v: MarketsVerdict,
   window: "morning" | "evening",
@@ -387,8 +420,8 @@ function buildBrief(
   // slid the catalyst list into its place. The briefing body carries the same
   // sourced links inline, so it can stand in rather than leaving a hole.
   const sourced = (v.verdict.supporting_data ?? []).filter((sd) => sd?.label);
-  const keyPoints: KeyPoint[] = (
-    sourced.length ? sourced : citedLinksFromBody(v)
+  const keyPoints: KeyPoint[] = dedupeBySubject(
+    sourced.length ? sourced : citedLinksFromBody(v),
   )
     .slice(0, 6)
     .map((sd) => ({

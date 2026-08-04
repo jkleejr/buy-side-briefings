@@ -217,13 +217,12 @@ export default function TickerSearch() {
         {msg && <div className="text-[10px] text-[var(--dim)]">{msg}</div>}
 
         {/* your watchlist */}
+        {/* Nothing is rendered for an empty personal list. The search box
+            directly above already says what this is for, so the empty state was
+            restating the obvious in the space the list will occupy. */}
         {!mounted ? (
           <div className="py-3 text-center text-[11px] text-[var(--dim)]">Loading…</div>
-        ) : items.length === 0 ? (
-          <div className="py-3 text-center text-[11px] text-[var(--dim)]">
-            Your watchlist is empty — search above to add a ticker.
-          </div>
-        ) : (
+        ) : items.length === 0 ? null : (
           <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((it) => {
               const q = quotes[it.symbol];

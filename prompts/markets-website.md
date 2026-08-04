@@ -93,6 +93,40 @@ retired *the call*, not the evidence: `headline`, `label`, `rationale_short` and
 `supporting_data` all remain mandatory. Write every entry with a real `label`
 carrying a number and a real `url`.
 
+**What those entries are about — in priority order.** The home page is a front
+page. Rank candidates by how much they matter to someone deciding where markets
+go next, not by whether we happen to follow the ticker:
+
+1. **Macro and policy.** The Fed — rate path, hike/cut odds, speeches, minutes —
+   inflation and labour prints, Treasury yields, the dollar.
+2. **Politics and geopolitics, where they reach markets.** Iran and the Gulf,
+   tariffs and trade, sanctions, legislation and elections with a market
+   channel. Political news with no investment channel does not belong here.
+3. **AI and technology.** Model releases, capex and datacenter commitments,
+   semis and the supply chain, the mega-caps. This is the sector the reader
+   follows, so it earns a place most days.
+4. **Gold, oil and bitcoin — when they are actually the story.** Include them
+   when they are moving or driving another asset, not as a standing box to tick.
+5. **Single-company news.** Only when the company is genuinely one of the day's
+   biggest stories, or its result reads across its sector.
+
+The same ranking decides `verdict.headline`. A single earnings print is the
+day's headline only when it moved the market, not merely because it was the
+loudest thing on the tape after the close.
+
+**One subject per entry.** Two entries on the same company is one story told
+twice, and it costs the slot the day's second-most-important story needed. The
+2026-08-03 night verdict spent two of six entries on Palantir's print and a
+third on its read-through, leaving the Fed path, Iran and oil to share one. If a
+company warrants more, give it depth in the body — not a second entry.
+
+**Being on the watchlist is not a reason to cover a name.**
+`data/watchlist.json` is what the reader keeps an eye on; it is not an
+assignment list. A watchlist name earns a `supporting_data` entry on the same
+test as any other name — was this one of the most important things that happened
+today? Per-name observations belong in `watchlist_mentions`, which is what that
+field is for.
+
 ## Step 4 — Identify 2–3 situations worth watching
 
 For each: asset, what is happening, the levels that define it, what would confirm

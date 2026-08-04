@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getThesis } from "@/lib/theses";
 import ProseMarkdown from "@/components/prose-markdown";
 import Panel from "@/components/panel";
@@ -25,12 +24,6 @@ export default function MarketHistoryPage() {
   return (
     <div className="mx-auto max-w-3xl space-y-1">
       <header className="space-y-1 px-1 pb-1">
-        <Link
-          href="/"
-          className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
-        >
-          ◂ DASHBOARD
-        </Link>
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           {meta.title}
         </h1>

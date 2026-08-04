@@ -116,9 +116,6 @@ export default async function WatchlistPage() {
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           Watchlist
         </h1>
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Search any ticker to add it · live quotes · candles · briefing mentions
-        </p>
       </header>
 
       {/* Search any ticker/company and add it to your (browser-stored) watchlist. */}

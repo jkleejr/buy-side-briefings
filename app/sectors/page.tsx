@@ -1,4 +1,3 @@
-import Link from "next/link";
 import SectorRotation from "@/components/sector-rotation";
 import Panel from "@/components/panel";
 
@@ -13,18 +12,9 @@ export default function SectorsPage() {
   return (
     <div className="mx-auto max-w-5xl space-y-1">
       <header className="space-y-1 px-1 pb-2">
-        <Link
-          href="/"
-          className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
-        >
-          ◂ DASHBOARD
-        </Link>
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           Sectors
         </h1>
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          11 S&P sector ETFs · today&apos;s leaders &amp; laggards · rotation context
-        </p>
       </header>
 
       {/* Full sector rotation table (same as dashboard). */}

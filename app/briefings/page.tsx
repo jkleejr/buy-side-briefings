@@ -11,9 +11,6 @@ export default function BriefingsArchivePage() {
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           Briefings archive
         </h1>
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Every briefing published · filter by routine · search
-        </p>
       </header>
       <BriefingsFilters items={items} />
     </div>

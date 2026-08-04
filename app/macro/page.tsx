@@ -1,4 +1,3 @@
-import Link from "next/link";
 import LevelsChart from "@/components/levels-chart";
 import MacroSections from "@/components/macro-sections";
 import Panel from "@/components/panel";
@@ -21,18 +20,9 @@ export default function MacroPage() {
   return (
     <div className="mx-auto max-w-5xl space-y-1">
       <header className="space-y-1 px-1 pb-2">
-        <Link
-          href="/"
-          className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
-        >
-          ◂ DASHBOARD
-        </Link>
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           Fed &amp; Macro
         </h1>
-        <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--amber-dim)]">
-          Rates &amp; policy · inflation &amp; purchasing power · growth · jobs
-        </p>
       </header>
 
       {/* The four macro pillars, each a tile grid fed live from FRED with
