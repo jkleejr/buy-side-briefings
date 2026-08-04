@@ -76,7 +76,7 @@ export default async function OgImage() {
             borderTop: "1px solid #262626",
           }}
         >
-          <span>Educational analysis only · not investment advice</span>
+          <span>Cited, auditable market briefings</span>
           <span style={{ color: "#ffa500" }}>● LIVE</span>
         </div>
       </div>

@@ -69,8 +69,7 @@ export default async function EarningsPage() {
           watchlist
         </a>{" "}
         — add a ticker there and it appears here automatically. Estimated dates
-        (○) can shift; confirmed dates (●) are company-announced. Educational only —
-        not investment advice.
+        (○) can shift; confirmed dates (●) are company-announced.
       </p>
     </div>
   );

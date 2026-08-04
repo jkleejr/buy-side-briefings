@@ -55,7 +55,7 @@ export default function MarketHistoryPage() {
 
       <p className="px-1 pt-2 font-mono text-[10px] leading-snug text-[var(--dim)]">
         This is a standing research report, not a dated call — it&apos;s revised as the picture
-        changes. Educational only — not investment advice.
+        changes.
       </p>
     </div>
   );

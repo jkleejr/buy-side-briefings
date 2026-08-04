@@ -147,7 +147,7 @@ export default async function BriefingOgImage({
           }}
         >
           <span>Buy-side analyst voice · every claim sourced</span>
-          <span>Educational only · not advice</span>
+          <span>Cited, auditable</span>
         </div>
       </div>
     ),

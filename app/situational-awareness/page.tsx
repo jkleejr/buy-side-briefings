@@ -249,7 +249,6 @@ export default function SituationalAwarenessPage() {
         </a>
         , which lag ~45 days and omit shorts, swaps and private positions. This is a
         map of where the fund&apos;s disclosed capital sits — not a live mirror.
-        Educational only — not investment advice.
       </p>
     </div>
   );

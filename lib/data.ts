@@ -495,8 +495,7 @@ function synthesizeBriefingBody(v: SynthesizableVerdict): string {
   // The page header now carries the stance, standfirst and regime chips, so the
   // body opens straight into the reasoning — no repeated run-on verdict label.
   out.push(
-    `> Auto-generated from the ${v.date} ${v.window} market verdict. ` +
-      `Educational analysis only — not investment advice.`,
+    `> Auto-generated from the ${v.date} ${v.window} market verdict.`,
     "",
     `## The read`,
     "",
