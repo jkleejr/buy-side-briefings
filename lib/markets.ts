@@ -21,7 +21,6 @@ const TICKER_STRIP: Array<{ symbol: string; label: string }> = [
   { symbol: "^TNX", label: "10Y" },
   { symbol: "DX-Y.NYB", label: "DXY" },
   { symbol: "BTC-USD", label: "BTC" },
-  { symbol: "ETH-USD", label: "ETH" },
   { symbol: "GC=F", label: "Gold" },
 ];
 
