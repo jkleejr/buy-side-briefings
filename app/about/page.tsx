@@ -27,7 +27,7 @@ export default function AboutPage() {
             The whole site is built around <span className="text-[var(--amber)]">one
             question per session</span>: <em>given everything happening right now, what
             actually matters?</em> The answer is a time-stamped read — what happened,
-            the cited data behind it, and a mandatory bear case.
+            and the cited data behind it.
           </p>
           <p>
             Three layers of context surround that read:
@@ -138,11 +138,6 @@ export default function AboutPage() {
               <li>
                 <span className="text-[var(--amber)]">Supporting data</span> — 4–6 cited
                 data points, each linked back to its source.
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">Mandatory bear case</span> — the
-                strongest argument <em>against</em> the read. Written into the schema
-                so it can&apos;t be skipped.
               </li>
               <li>
                 <span className="text-[var(--amber)]">Trade setups</span> (optional) — named

@@ -106,10 +106,12 @@ Body sections (mirror the markets MDX; see `data/briefings/crypto/2026-06-08-dai
 4. `## 📊 Snapshot` — markdown table: BTC, ETH, total mcap, BTC dominance, Fear & Greed, plus the macro overlay (SPX, DXY, VIX)
 5. `## 📅 What changed since the last briefing` — 2-3 paragraphs, including the macro/risk read
 6. `## 🔗 On-chain & flows` — ETF flows, treasury-company activity, leverage/liquidations, exchange reserves
-7. `## ⚠️ Regime Risk Indicators` — BTC dominance, Fear & Greed, DXY, key BTC support — breached/neutral status (no VIX; it lives in the snapshot as data only)
-8. `## 🚫 Don't Buy Right Now` — 1–3 over-extended/at-risk setups with better entry
-9. `## 🎯 Trade Setups` — 2–3, ≥1 short/hedge/avoid
-10. `## 🪞 Bear Case (counter-argument)` — 2–3 sentences, ends with invalidation level
+7. `## 🚫 Don't Buy Right Now` — 1–3 over-extended/at-risk setups with better entry
+8. `## 🎯 Trade Setups` — 2–3, ≥1 short/hedge/avoid
+
+**No `## ⚠️ Regime Risk Indicators` and no `## 🪞 Bear Case` section** — both
+retired 2026-08-03; the site no longer renders them. The verdict JSON still
+carries `regime_risk` and `bear_case`; keep both fields filled.
 
 ## Step 7 — Commit and push to deploy
 
