@@ -1,77 +1,55 @@
 {
   "events": [
     {
-      "date": "2026-08-04",
-      "label": "JOLTS June (BLS, 10 AM ET) — labor tightness test before ADP and NFP",
-      "kind": "MACRO",
-      "time_et": "10:00 AM",
-      "tickers": ["TBT", "TLT", "QQQ", "IWM"],
-      "note": "Added Aug 4 morning: May JOLTS was 7.594M (highest since May 2024, well above 7.30M expected). June release today at 10 AM ET. Above 7.8M: signals continued labor tightness; September hike pushes back toward 70% formal trigger from current 60.5%. Below 7.0M: incremental support for oil-driven rate-relief narrative. JOLTS-to-NFP sequence matters — a hot JOLTS followed by above-130K NFP Friday restores September hike above 70% in two steps."
-    },
-    {
-      "date": "2026-08-04",
-      "label": "SPCX first public earnings AH — est. $6.9B revenue (+68% YoY); Starlink profitability is the binary",
-      "kind": "EARNINGS",
-      "tickers": ["SPCX"],
-      "note": "Added Aug 4 morning: SpaceX reports its first-ever public earnings AH August 4. Revenue est. $6.9B (+68% YoY). Stock is down 45%+ from June IPO high of $225.64. Key focal points: Starlink profitability milestone, xAI capex burn rate, Starship launch cadence, FY26 guidance. A Starlink profitability confirmation is the most significant catalyst available for re-rating. Structural headwinds: $4.9B net losses in 2025, December 2026 lock-up expiry. Note: the Sept 2 calendar entry was an approximation; the actual date is August 4."
-    },
-    {
-      "date": "2026-08-04",
-      "label": "AMD Q2 2026 earnings AH 5 PM ET — data-center >$6B (95% Polymarket); bar raised by PLTR +15% premarket",
-      "kind": "EARNINGS",
-      "tickers": ["AMD", "NVDA", "AVGO"],
-      "note": "Updated Aug 4 morning: PLTR's premarket surge to $144.90 (+15.3%) extended the AI-spend read-through. AMD reports at 5 PM ET with revenue consensus $11.31B (+47% YoY), data-center >$6B (Polymarket 95%), EPS $1.61, 10% options-priced swing. The +12.7% Monday close has pre-loaded the bull case. Confirming scenario: data-center above $7B AND Helios/MI450 ramp confirmed H1 2027 — PLTR confirmed the platform layer, AMD confirms the GPU compute layer. Breaking scenario: data-center below $5.5B or material custom-silicon displacement commentary (AMZN Trainium, Google TPU). An inline $6B result from $484 risks sell-the-news. September hike 60.5% (below 70% trigger)."
-    },
-    {
       "date": "2026-08-05",
       "label": "ADP Private Payrolls (Aug 5, 8:15 AM ET) — NFP warm-up; consensus ~100K",
       "kind": "MACRO",
       "time_et": "8:15 AM",
       "tickers": ["TBT", "TLT", "QQQ", "IWM"],
-      "note": "Added Aug 4 morning: ADP is the private-sector payroll estimate ahead of Friday BLS NFP (consensus +91K, prior 147K). ADP above 120K with accelerating wages would push September hike probability back toward 70% before the week's primary print. ADP below 70K would reinforce the labor-cooling narrative and extend the oil-driven rate-relief trade. Not a perfect NFP predictor, but a directional signal. ISM Services also Wednesday — if services prices-paid follows Monday's manufacturing at 71.1%, September hike risk returns regardless of ADP."
+      "note": "Updated Aug 4 night: ADP is the private-sector payroll estimate ahead of Friday BLS NFP (consensus +91K, prior 147K). September hike now at ~54% (Kalshi), down from 60.5% morning and 82.4% on July 31. JOLTS June (7.36M, below 7.40M est and 7.54M prior) was the most recent cooling signal. ADP below 70K would push September toward 45-50% and extend the 30Y relief trade toward 5.00%. Above 120K with accelerating wages would push September back toward 60-65%, narrowing the gap to the 70% trigger. ISM Services also Wednesday — if services prices-paid follows manufacturing's 71.1%, September hike risk rises regardless of ADP."
     },
     {
       "date": "2026-08-07",
-      "label": "July NFP (BLS, 8:30 AM ET) — September hike binary with odds at 60.5%; consensus +91K",
+      "label": "July NFP (BLS, 8:30 AM ET) — September hike binary; odds at 54% (Kalshi)",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "IWM", "DXY", "BTC"],
-      "note": "Updated Aug 4 morning: September hike probability fell from 64.5% to 60.5% overnight — oil deflation carrying the rate market despite ISM 55.6% (4-year high) and prices paid 71.1%. Consensus: +91K (prior 147K, unemployment 4.2%→4.3% expected). Above 130K: September hike rebounds toward 70%, re-triggering the formal breach; 30Y extends toward 5.25-5.30%. Below 80K: September falls toward 55%, 30Y can approach 5.00% clearing threshold, breach count path to 1-of-6. In the 80K-130K range: September stays in neutral territory (55-70%). FOMC September 15-16."
+      "note": "Updated Aug 4 night: September hike probability fell from 82.4% (July 31) to ~54% (Aug 4 Kalshi) — a 28-point improvement in four sessions driven by oil deflation and cooling JOLTS (June 7.36M vs 7.54M prior). Regime is now 1-of-6 breaches (30Y at 5.20% only). Consensus: +91K (prior 147K). Above 130K: September rebounds toward 70%, re-triggering formal breach; 30Y extends toward 5.28%; AMD/SPCX AH selloffs compound in regular session. Below 80K: September approaches 45-50%, 30Y has path toward 5.00%; 0-of-6 regime becomes medium-term possibility. In 80K-130K range: neutral; 1-of-6 regime holds. FOMC September 15-16."
     },
     {
       "date": "2026-08-13",
       "label": "July CPI (est.) — Iran oil re-surge and tariff pass-through fully embedded",
       "kind": "MACRO",
       "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA", "IWM"],
-      "note": "Updated July 30 night: July CPI embeds the Iran oil re-surge to $90.74 (Jul 29) and the bounce to ~$89.50 (Jul 30 on US retaliation) on top of the already-elevated July Brent average. Trump tariffs on 99.4% of imports remain a second CPI input. Even with today's soft June Core PCE (+0.1% MoM), July CPI is likely to show oil-driven re-acceleration. A print above 3.5% makes September hike near-certain regardless of ECI or Jackson Hole framing. Bull scenario (CPI ≤2.8%): ceasefire restores, oil retreats, soft PCE extends. Bear scenario (CPI ≥3.8%): oil + tariff dual pass-through; September 50bps probability escalates."
+      "note": "Updated Aug 4 night: July CPI embeds the pre-ceasefire Brent average (~$85-91/bbl) from the Iran escalation period; the August 3-4 collapse to $78-79 may not yet appear in the comp. September hike at 54% means the rate market has partially priced in oil deflation, but July CPI carries the backward-looking oil shock. A print above 3.5% makes September near-certain and sends 30Y back toward 5.28%. Below 3.0% opens the formal 30Y clearing path toward 5.00%. Either print resets Jackson Hole framing."
     },
     {
       "date": "2026-08-26",
-      "label": "NVDA Q2 FY27 earnings (est.) — AWS 37% + Azure 43% are the strongest pre-earnings demand confirmations",
+      "label": "NVDA Q2 FY27 earnings (est.) — PLTR 149% + AMD $6.7B data-center are strongest pre-NVDA demand confirmations",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO"],
-      "note": "Updated July 30 night: AMZN AWS 37% (fastest in 18 quarters; AI + chips each >$25B annual run rate, triple-digit growth) alongside MSFT Azure 43% provides the strongest dual-confirmation of organic AI compute demand the series has seen entering an NVDA call. If enterprise customers funding AWS and Azure at these growth rates are paying from their own capital (not NVDA-backstopped), the circular financing concern is structurally reduced. On the Q2 FY27 call: (1) Circular financing disclosure — OpenAI $250B backstop still unaddressed; (2) AWS/Azure growth implies NVDA demand is real; (3) AMD MI400 share capture in hyperscaler buildout remains the key competitive question; (4) Kimi K3 efficiency headwind unchanged; (5) CXMT Chinese DRAM competition unchanged. Hard stop $216 intact."
+      "note": "Updated Aug 4 night: PLTR's 149% US commercial growth (Aug 3 AH) and AMD's $6.7B data-center Q2 (+107% YoY, Aug 4 AH) are the most constructive demand confirmations heading into an NVDA quarter this cycle has produced. AMD's AH −8% on a strong beat (from an elevated pre-earnings entry of $518) establishes that the market does not automatically reward AI hardware results at premium valuations. On the Q2 FY27 call watch: (1) Circular financing disclosure — OpenAI $250B backstop still unaddressed; (2) AVGO $128.1B purchase commitment and AMD $6.7B data-center confirm hyperscaler demand is real; (3) AMD MI450 share capture in hyperscaler buildout is the key competitive question; (4) Kimi K3 efficiency headwind unchanged. $216 stop intact."
     },
     {
       "date": "2026-08-27",
       "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote on September FOMC path",
       "kind": "FOMC",
       "tickers": ["TLT", "TBT", "QQQ", "IWM", "SPY", "GLD"],
-      "note": "Updated Aug 4 morning: September hike probability is now 60.5% — down from 82.4% on July 31. Warsh's keynote arrives after July NFP (Aug 7) and July CPI (Aug 13). At 60.5%, the keynote framing matters: 'data dependent, watching oil' keeps September below 70%; any 'live meeting, inflation concern' language restores the trigger breach. Consequential path: NFP above 130K → CPI above 3.5% → Jackson Hole as lock. Inverse: NFP below 80K → CPI ≤2.8% → Warsh de-escalates and 30Y retreats toward 5.00% clearing."
+      "note": "Updated Aug 4 night: September hike probability is now ~54% (Kalshi), down from 82.4% on July 31. The keynote arrives after NFP (Aug 7) and CPI (Aug 13). At 54%, the framing matters: 'data-dependent, watching oil deflation' keeps September well below 70%; any 'live meeting, inflation concern' language restores the trigger breach. Consequential path: NFP above 130K then CPI above 3.5% then Jackson Hole as a lock-in signal. Inverse: NFP below 80K then CPI below 3.0% then Warsh de-escalates and 30Y retreats toward 5.00%."
     },
     {
       "date": "2026-12-09",
       "label": "SPCX 180-day IPO lock-up expiry (approx.) — insider/early-investor float unlock",
       "kind": "OTHER",
       "tickers": ["SPCX"],
-      "note": "~180 days after the June 12 debut. Lock-up expiries are a known supply overhang for hot IPOs. Early investors and insiders can sell, materially expanding the ~4% public float."
+      "note": "~180 days after the June 12 debut. Lock-up expiries are a known supply overhang for hot IPOs. Early investors and insiders can sell, materially expanding the ~4% public float. Context: SPCX Q2 showed $18.37B capex vs $7.81B revenue — capital-intensive build raises the stakes for the lock-up dynamic."
     },
     {
       "date": "2027-01-01",
       "label": "OpenAI IPO — target window shifts to H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": ["MSFT", "NVDA"],
-      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). SoftBank sold off −13% on the delay. Microsoft and NVIDIA hold strategic stakes. The delay removes a near-term AI sentiment catalyst. Note: NVDA's circular financing story ($250B OpenAI backstop; July 27–28 WSJ/Bloomberg) adds complexity to the OpenAI IPO timeline if the guarantee structure is disclosed in S-1 filings. MSFT Azure 43% Q4 FY26 and AMZN AWS 37% Q2 both strengthen the narrative that OpenAI's compute investments have downstream demand — relevant for S-1 framing."
+      "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). Microsoft and NVIDIA hold strategic stakes. PLTR's 149% US commercial growth (Aug 3) and AMD's $6.7B data-center (+107%) confirm the enterprise AI adoption that underlies OpenAI's revenue model — constructive for S-1 framing. NVDA circular financing disclosure ($250B OpenAI backstop) remains the unresolved structural question that may surface in S-1 filings."
     }
   ]
 }
