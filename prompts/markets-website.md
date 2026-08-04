@@ -281,6 +281,13 @@ probability. The 4–6 sourced data points behind the read are a floor, not a
 target — a shorter briefing with the same evidence is the goal, and a briefing
 that hits the word count by dropping evidence has failed the brief.
 
+**No section-label prefixes on headings.** A heading says what the section is
+about, not what kind of section it is. Write `## August 3, 2026 Close`, not
+`## Snapshot — August 3, 2026 Close`; `## Next 5 Trading Days`, not
+`## Strategic Outlook — Next 5 Trading Days`. "Snapshot — ", "Night Tape
+View — ", "Morning Tape View — ", "Strategic Outlook — " and "The Read — "
+were all stripped from the archive on 2026-08-03 and must not come back.
+
 **No emoji anywhere in the briefing** — not in headings, not as status
 markers, not inline. Headings carry no icon, and a status is a word: write
 "breached", not a tick. The published archive was stripped of them on
@@ -291,13 +298,13 @@ not investment advice"; it is not rendered anywhere on the site any more.
 
 1. `> **Methodology note:**` — one-line description of when/how generated
 2. `## <plain-English summary of the session>` — 1-paragraph read + bullet-point supporting data with inline `[label](url)` citations. The heading is the summary itself: no "The Read —" prefix, no verdict, no BUY/SELL/HOLD/STEP ASIDE label, no stance marker, no conviction rating. It states what happened, not what to do.
-3. `## Snapshot — <context>` — markdown table of major indices with levels/changes
+3. `## <the session and date, e.g. "August 3, 2026 Close">` — markdown table of major indices with levels/changes. No "Snapshot — " prefix.
 4. `## What changed since last briefing` (morning) or `## What Happened Today` (night) — 2-3 paragraphs
-5. `## <Window>-specific section` — Tactical tape view, base/bull/bear cases with probabilities, critical levels to watch
+5. `## <what the tape is doing, in a phrase>` — the window-specific read: tape view, base/bull/bear cases with probabilities, critical levels to watch. No "Night Tape View — " or "Morning Tape View — " prefix.
 6. `## Major Stocks` — bulleted list with current prices and quick reads
 7. `## Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
 8. `## Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
-9. (night only) `## Strategic Outlook — Next 5 Trading Days`
+9. (night only) `## Next 5 Trading Days` — the week ahead. No "Strategic Outlook — " prefix.
 
 **Two sections are retired — do not write either one.** Both were dropped
 2026-08-03 and the site no longer renders them, so writing one only spends
