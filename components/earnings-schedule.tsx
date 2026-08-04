@@ -148,7 +148,7 @@ function ScheduleTable({ entries }: { entries: EarningsEntry[] }) {
 }
 
 export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
-  const { entries, noDate } = schedule;
+  const { entries } = schedule;
 
   if (entries.length === 0) {
     return (
@@ -169,18 +169,6 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
       <Panel code="SCHED" title="Full schedule — every name you track">
         <ScheduleTable entries={entries} />
       </Panel>
-
-      {noDate.length > 0 && (
-        <Panel code="TBD" title="No date on file yet">
-          <p className="p-2 font-mono text-[10px] leading-relaxed text-[var(--dim)]">
-            Yahoo has no upcoming earnings date for:{" "}
-            <span className="text-[var(--foreground)]">
-              {noDate.map((n) => n.symbol).join(", ")}
-            </span>
-            . These are non-reporting names (e.g. ETFs) or dates not yet scheduled.
-          </p>
-        </Panel>
-      )}
     </div>
   );
 }
