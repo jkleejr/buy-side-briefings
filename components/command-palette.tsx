@@ -11,16 +11,19 @@ type Destination = {
   go?: string;
 };
 
+// Ordered the way the site is read, not alphabetically or by age: home, then
+// the daily pages (briefings, watchlist, calendar), then the market-data pages
+// (sectors, macro, global), then the standing reports, then about.
 const DESTINATIONS: Destination[] = [
-  { href: "/", code: "DASH", label: "Dashboard", go: "d" },
-  { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness — Aschenbrenner's AI fund, tracked from SEC filings" },
-  { href: "/market-history", code: "HIST", label: "Market History — what past booms & crashes say about AI", go: "m" },
+  { href: "/", code: "HOME", label: "Home", go: "h" },
   { href: "/briefings", code: "BRIEF", label: "Briefings archive", go: "r" },
-  { href: "/earnings", code: "CAL", label: "Calendar — upcoming events for the names you track", go: "c" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist", go: "w" },
+  { href: "/earnings", code: "CAL", label: "Calendar — upcoming events for the names you track", go: "c" },
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
+  { href: "/market-history", code: "HIST", label: "Market History — what past booms & crashes say about AI", go: "m" },
+  { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness — Aschenbrenner's AI fund, tracked from SEC filings" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 
