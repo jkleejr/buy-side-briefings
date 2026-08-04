@@ -15,10 +15,9 @@ import { clampText, verdictHeadline } from "@/lib/verdict-headline";
 // and a main column that renders the latest morning / evening markets brief as
 // a metric strip, an outlook bar, an editorial headline, clickable key points
 // that link to their source article, a key signal, tickers to watch, sector
-// performance, and a wire-headline feed; dated catalysts live on /schedule).
-// Everything
-// maps to REAL data we already produce — the layout mirrors the Figma redesign;
-// the content is ours.
+// performance, and a wire-headline feed). There is no dated-catalyst module on
+// the site at all any more. Everything maps to REAL data we already produce —
+// the layout mirrors the Figma redesign; the content is ours.
 // ---------------------------------------------------------------------------
 
 export type MarketRow = {
@@ -281,7 +280,7 @@ function urlHost(url: string | undefined): string | undefined {
 }
 
 // Key a supporting-data point the same way in both the wire and the exclude
-// set, so "what matters today" and "on the wire" can't surface the same item.
+// set, so "news today" and "on the wire" can't surface the same item.
 function wireKey(label: string): string {
   return label.replace(/^★\s*/, "").trim().slice(0, 60).toLowerCase();
 }
@@ -416,7 +415,7 @@ function buildBrief(
   //
   // With a fallback, because one missing field used to blank the whole column:
   // the 2026-07-30 night verdict shipped with no `supporting_data` at all, and
-  // "What matters today" rendered null, which collapsed the two-column grid and
+  // "News today" rendered null, which collapsed the two-column grid and
   // slid the catalyst list into its place. The briefing body carries the same
   // sourced links inline, so it can stand in rather than leaving a hole.
   const sourced = (v.verdict.supporting_data ?? []).filter((sd) => sd?.label);

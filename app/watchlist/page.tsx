@@ -18,7 +18,7 @@ const SUGGESTIONS: Array<{
   {
     category: "AI · Semis depth",
     description:
-      "Beyond NVDA/AMD/AVGO — the picks-and-shovels of the AI capex cycle.",
+      "Beyond NVDA and AMD — the picks-and-shovels of the AI capex cycle.",
     tickers: [
       { symbol: "MU", label: "Micron Technology", why: "Memory cycle bellwether — HBM demand from AI capex" },
       { symbol: "ARM", label: "Arm Holdings", why: "IP licensing across mobile, auto, datacenter — royalty-on-everything model" },

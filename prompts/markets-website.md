@@ -43,7 +43,7 @@ Run searches in parallel where possible. Stay under ~20 searches. If a topic isn
 - DXY, gold, silver
 - BTC, ETH
 
-**Stocks to check:** NVDA, GOOGL, AAPL, MSFT, META, AMZN, TSLA, AMD, TSM, AVGO, PLTR. Note any that moved meaningfully.
+**Stocks to check:** NVDA, GOOGL, AAPL, MSFT, META, AMZN, TSLA, AMD, TSM, PLTR. Note any that moved meaningfully. Checking a name is not a commitment to write about it — see the ranking under `supporting_data`.
 
 **Sentiment / positioning (required):**
 - VIX level + term structure
@@ -86,8 +86,11 @@ decides whether there is a trade in it.
 
 **`verdict.supporting_data` is required — never omit it, never ship it empty.**
 It is not documentation of your reasoning; it is the content of the home page.
-Those 4–6 entries render as the day's articles in the left column, each one a
-link the reader opens. The 2026-07-30 night verdict left the field off and the
+Those 4–6 entries render as **"News today"** — the day's articles, each one a
+link the reader opens. Write them as news: the most impactful stories on the
+market that session, and the ones the briefing itself leans on. If a story is
+worth a paragraph in the briefing body, it is a candidate here; if it is not in
+the briefing at all, it probably does not belong. The 2026-07-30 night verdict left the field off and the
 entire section disappeared from the site. Retiring the buy/hold/step-aside code
 retired *the call*, not the evidence: `headline`, `label`, `rationale_short` and
 `supporting_data` all remain mandatory. Write every entry with a real `label`

@@ -20,6 +20,10 @@ const TICKER_STRIP: Array<{ symbol: string; label: string }> = [
   { symbol: "^VIX", label: "VIX" },
   { symbol: "^TNX", label: "10Y" },
   { symbol: "DX-Y.NYB", label: "DXY" },
+  // Dollars per yen, so the number going up is the yen getting weaker. Labelled
+  // as the pair rather than "Yen" for that reason — the same convention the
+  // homepage chart switcher uses.
+  { symbol: "JPY=X", label: "USD/JPY" },
   { symbol: "BTC-USD", label: "BTC" },
   { symbol: "GC=F", label: "Gold" },
 ];

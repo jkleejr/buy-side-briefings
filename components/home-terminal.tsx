@@ -112,13 +112,13 @@ function Hero({ brief }: { brief: BriefView }) {
   );
 }
 
-// --- what matters today (merged: in-brief + the evidence) --------------------
+// --- news today (merged: in-brief + the evidence) ----------------------------
 
 function WhatMatters({ points }: { points: KeyPoint[] }) {
   if (!points.length) return null;
   return (
     <div>
-      <SectionRule>What matters today</SectionRule>
+      <SectionRule>News today</SectionRule>
       <div className="sm:columns-2 sm:gap-12">
         {points.map((kp, i) => {
           const host = hostLabel(kp.url);
@@ -249,7 +249,10 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-14 sm:px-6">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--foreground)] pt-4">
+      {/* No top rule here. The ticker strip directly above already ends in its
+          own border, so this one drew a second heavy black line a few pixels
+          under it with nothing in between. */}
+      <div className="flex flex-wrap items-center justify-between gap-3 pt-4">
         <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--dim)]">
           {view === "morning" ? "Morning briefing" : "Night briefing"}
           {current ? ` · ${current.timeLabel}` : ""}
