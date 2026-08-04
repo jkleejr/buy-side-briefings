@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/schedule",
     "/global",
     "/sectors",
-    "/kospi",
     "/situational-awareness",
     "/market-history",
     "/about",

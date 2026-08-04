@@ -1,4 +1,4 @@
-import { getAllKospiVerdicts, getAllMarketsVerdicts } from "@/lib/data";
+import { getAllMarketsVerdicts } from "@/lib/data";
 
 // ---------------------------------------------------------------------------
 // Data freshness. The markets-verdict briefings are generated daily and
@@ -37,13 +37,4 @@ function freshnessOf(latest: string | null, staleAfterDays: number): Freshness {
  */
 export function getDataFreshness(): Freshness {
   return freshnessOf(getAllMarketsVerdicts()[0]?.date ?? null, 2);
-}
-
-/**
- * Freshness of the KOSPI feed, which /kospi renders on its own and which the
- * site-wide banner does not cover. It publishes far less often than the markets
- * verdict, so it only reads as stale after a full week.
- */
-export function getKospiFreshness(): Freshness {
-  return freshnessOf(getAllKospiVerdicts()[0]?.date ?? null, 7);
 }
