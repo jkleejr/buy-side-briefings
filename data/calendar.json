@@ -1,19 +1,42 @@
 {
   "events": [
     {
-      "date": "2026-08-07",
-      "label": "July NFP (BLS, 8:30 AM ET) — September hike binary with odds at 64.5%; consensus +91K",
+      "date": "2026-08-04",
+      "label": "JOLTS June (BLS, 10 AM ET) — labor tightness test before ADP and NFP",
       "kind": "MACRO",
-      "time_et": "8:30 AM",
-      "tickers": ["TBT", "TLT", "QQQ", "IWM", "DXY", "BTC"],
-      "note": "Updated Aug 3 night: September hike probability settled at 64.5% after PLTR's $1.94B beat and a hot ISM (55.6%, 4-year high; prices paid 71.1%) — still below the 70% formal trigger, but the disinflationary buffer is narrower than the oil-driven morning drop suggested. Consensus: +91K (prior 147K, unemployment 4.2%→4.3% expected). Above 130K: September hike rebounds toward 70%, re-triggering the formal breach; 30Y extends toward 5.25-5.30%. Below 80K: September probability falls toward 55% or below, 30Y can approach 5.00% clearing threshold, breach count path to 1-of-6. The 80K-130K range keeps September in neutral territory (55-70%). FOMC September 15-16."
+      "time_et": "10:00 AM",
+      "tickers": ["TBT", "TLT", "QQQ", "IWM"],
+      "note": "Added Aug 4 morning: May JOLTS was 7.594M (highest since May 2024, well above 7.30M expected). June release today at 10 AM ET. Above 7.8M: signals continued labor tightness; September hike pushes back toward 70% formal trigger from current 60.5%. Below 7.0M: incremental support for oil-driven rate-relief narrative. JOLTS-to-NFP sequence matters — a hot JOLTS followed by above-130K NFP Friday restores September hike above 70% in two steps."
     },
     {
       "date": "2026-08-04",
-      "label": "AMD Q2 2026 earnings AH — data-center >$6B (95% Polymarket); bar pre-loaded after +12.7% PLTR read-through close",
+      "label": "SPCX first public earnings AH — est. $6.9B revenue (+68% YoY); Starlink profitability is the binary",
+      "kind": "EARNINGS",
+      "tickers": ["SPCX"],
+      "note": "Added Aug 4 morning: SpaceX reports its first-ever public earnings AH August 4. Revenue est. $6.9B (+68% YoY). Stock is down 45%+ from June IPO high of $225.64. Key focal points: Starlink profitability milestone, xAI capex burn rate, Starship launch cadence, FY26 guidance. A Starlink profitability confirmation is the most significant catalyst available for re-rating. Structural headwinds: $4.9B net losses in 2025, December 2026 lock-up expiry. Note: the Sept 2 calendar entry was an approximation; the actual date is August 4."
+    },
+    {
+      "date": "2026-08-04",
+      "label": "AMD Q2 2026 earnings AH 5 PM ET — data-center >$6B (95% Polymarket); bar raised by PLTR +15% premarket",
       "kind": "EARNINGS",
       "tickers": ["AMD", "NVDA", "AVGO"],
-      "note": "Updated Aug 3 night: AMD closed +12.7% at $484.64 on Monday — the PLTR US commercial beat (+149% YoY) served as a direct read-through for AI platform spending into AMD's MI350/Helios cycle. AMD reports Q2 2026 AH Tuesday Aug 4 at 5 PM ET. Revenue consensus $11.31B (+47% YoY); EPS consensus $1.61; data-center consensus >$6B (95% Polymarket probability). Options pricing 10% swing. The pre-earnings +12.7% move has pre-loaded the bull case: an inline data-center result at $6B from a pre-elevated base risks a sell-the-news reversal. The confirm scenario requires data-center above $7B and MI350 ramp timeline for H1 2027. Rate backdrop: September hike 64.5% (below 70% trigger). Prior morning note: EPS consensus was $1.34 (+396% YoY) — consensus revised upward post-PLTR print."
+      "note": "Updated Aug 4 morning: PLTR's premarket surge to $144.90 (+15.3%) extended the AI-spend read-through. AMD reports at 5 PM ET with revenue consensus $11.31B (+47% YoY), data-center >$6B (Polymarket 95%), EPS $1.61, 10% options-priced swing. The +12.7% Monday close has pre-loaded the bull case. Confirming scenario: data-center above $7B AND Helios/MI450 ramp confirmed H1 2027 — PLTR confirmed the platform layer, AMD confirms the GPU compute layer. Breaking scenario: data-center below $5.5B or material custom-silicon displacement commentary (AMZN Trainium, Google TPU). An inline $6B result from $484 risks sell-the-news. September hike 60.5% (below 70% trigger)."
+    },
+    {
+      "date": "2026-08-05",
+      "label": "ADP Private Payrolls (Aug 5, 8:15 AM ET) — NFP warm-up; consensus ~100K",
+      "kind": "MACRO",
+      "time_et": "8:15 AM",
+      "tickers": ["TBT", "TLT", "QQQ", "IWM"],
+      "note": "Added Aug 4 morning: ADP is the private-sector payroll estimate ahead of Friday BLS NFP (consensus +91K, prior 147K). ADP above 120K with accelerating wages would push September hike probability back toward 70% before the week's primary print. ADP below 70K would reinforce the labor-cooling narrative and extend the oil-driven rate-relief trade. Not a perfect NFP predictor, but a directional signal. ISM Services also Wednesday — if services prices-paid follows Monday's manufacturing at 71.1%, September hike risk returns regardless of ADP."
+    },
+    {
+      "date": "2026-08-07",
+      "label": "July NFP (BLS, 8:30 AM ET) — September hike binary with odds at 60.5%; consensus +91K",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "tickers": ["TBT", "TLT", "QQQ", "IWM", "DXY", "BTC"],
+      "note": "Updated Aug 4 morning: September hike probability fell from 64.5% to 60.5% overnight — oil deflation carrying the rate market despite ISM 55.6% (4-year high) and prices paid 71.1%. Consensus: +91K (prior 147K, unemployment 4.2%→4.3% expected). Above 130K: September hike rebounds toward 70%, re-triggering the formal breach; 30Y extends toward 5.25-5.30%. Below 80K: September falls toward 55%, 30Y can approach 5.00% clearing threshold, breach count path to 1-of-6. In the 80K-130K range: September stays in neutral territory (55-70%). FOMC September 15-16."
     },
     {
       "date": "2026-08-13",
@@ -34,14 +57,7 @@
       "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote on September FOMC path",
       "kind": "FOMC",
       "tickers": ["TLT", "TBT", "QQQ", "IWM", "SPY", "GLD"],
-      "note": "Updated Aug 3 night: September hike probability is now 64.5% — down from 82.4% on July 31 after Trump paused Iran strikes (oil −6%) and despite a hot ISM print (55.6%, prices paid 71.1%). Warsh's Jackson Hole keynote arrives after July NFP (Aug 7) and July CPI (Aug 13), both of which can push September back above 70% or confirm the oil-deflation-driven improvement. With September at 64.5%, the Warsh keynote framing is the de-facto September rate preview: 'data dependent, watching oil' framing keeps September below 70%; any 'live meeting, inflation concern' language restores the trigger breach. The most consequential path: NFP above 130K (restores hike to 70%+) → CPI above 3.5% (locks September) → Jackson Hole as confirmation, not relief. Inverse: NFP below 80K → CPI ≤2.8% → Warsh can clearly de-escalate and 30Y retreats toward 5.00% clearing."
-    },
-    {
-      "date": "2026-09-02",
-      "label": "SPCX first earnings as public company (approx.) — Starlink ARR + Starship cadence",
-      "kind": "EARNINGS",
-      "tickers": ["SPCX"],
-      "note": "First earnings print since June 12 IPO. Re-entry gate $115–120 for risk-tolerant 12-month investors. Net losses structural ($4.9B in 2025). December 2026 lock-up expiry adds supply overhang. Watch Starlink ARR growth and Starship launch cadence as primary metrics."
+      "note": "Updated Aug 4 morning: September hike probability is now 60.5% — down from 82.4% on July 31. Warsh's keynote arrives after July NFP (Aug 7) and July CPI (Aug 13). At 60.5%, the keynote framing matters: 'data dependent, watching oil' keeps September below 70%; any 'live meeting, inflation concern' language restores the trigger breach. Consequential path: NFP above 130K → CPI above 3.5% → Jackson Hole as lock. Inverse: NFP below 80K → CPI ≤2.8% → Warsh de-escalates and 30Y retreats toward 5.00% clearing."
     },
     {
       "date": "2026-12-09",
