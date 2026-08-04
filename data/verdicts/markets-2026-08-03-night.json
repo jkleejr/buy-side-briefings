@@ -2,27 +2,30 @@
   "routine": "markets",
   "date": "2026-08-03",
   "window": "night",
-  "generated_at": "2026-08-04T00:30:00Z",
+  "generated_at": "2026-08-04T01:15:00Z",
   "is_seed": false,
   "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
     "headline": "Palantir's 149% commercial surge and Dow record reframe the AI-spending thesis",
-    "label": "Dow 53,178 record; SPX ~7,602 (+1.5%); PLTR $1.94B (+93% YoY, US commercial +149%); AH toward $142; September hike 64.5%; ISM 55.6% (4-yr high); AMD +12.7% ahead of AH Tuesday; breaches 2-of-6",
-    "rationale_short": "Today's session validated and exceeded the morning's constructive read. PLTR's AH print answered the morning's central uncertainty directly: US commercial revenue accelerated to 149% YoY — faster than the DoD government line — meaning the AI platform adoption thesis is enterprise-broad, not defense-urgency-driven. FY26 guidance was raised to $8.15B vs. the $7.65B prior consensus. ISM Manufacturing printed at 55.6% (4-year high), above the 54.0 expected, with prices paid at 71.1% — a hawkish data print — but September hike held at 64.5%, below the 70% formal trigger, as oil deflation continued to dominate the rate market. The regime breach count entered Tuesday at 2 of 6: 30Y yield above 5.00%, WTI at $79.62 (barely above the $79 threshold). AMD's +12.7% pre-earnings session close reflects the PLTR read-through; AMD reports AH Tuesday with data-center consensus >$6B. The read changes if SPX closes below 7,380 or if WTI re-breaches $85 on a ceasefire reversal.",
+    "label": "BUY — Dow 53,178 record; SPX 7,600 (+1.48%); Nasdaq 25,914 (+2.13%); PLTR $127 day close → $142 AH (+11.8%); Q2 $1.94B (+93% YoY), US commercial +149%; ISM 55.6% (4-yr high); 30Y 5.20%, September hike 64.5% (below 70% gate); WTI $79.62 (−5.97%); 2-of-6 breaches; AMD earnings AH Tuesday",
+    "conviction": "medium",
+    "rationale_short": "Today's session validated and exceeded the morning's constructive read. PLTR's AH print answered the morning's central uncertainty directly: US commercial revenue accelerated to 149% YoY — faster than the DoD government line — meaning the AI platform adoption thesis is enterprise-broad, not defense-urgency-driven. FY26 guidance was raised to $8.15B vs. the $7.65B prior consensus. ISM Manufacturing printed at 55.6% (4-year high), above the 54.0 expected, with prices paid at 71.1% — a hawkish data print — but September hike held at 64.5%, below the 70% formal trigger, as oil deflation continued to dominate the rate market. WTI dropped nearly 6% to $79.62 after Trump announced renewed Iran peace talks. The regime breach count is 2 of 6: 30Y yield at 5.20% above 5.00%, and WTI at $79.62 barely above the $79 breach threshold. AMD (+12.7% to $484.64) front-ran the PLTR read-through ahead of its own AH print Tuesday. Conviction is medium, not high: AMD's binary still looms, ISM prices-paid printed hotter than expected, and the $79 WTI breach is within $0.62 of clearing. The read changes if SPX closes below 7,380 or if WTI re-breaches $85 on a ceasefire reversal.",
     "supporting_data": [
       {
         "label": "PLTR Q2: $1.94B revenue (+93% YoY) vs. $1.81B consensus; US commercial +149%; FY26 guidance raised to $8.15B; AH toward $142; Rule of 40 score 155%",
         "url": "https://www.businesswire.com/news/home/20260802523449/en/Palantir-Reports-Q2-2026-U.S.-Comm-Revenue-Growth-of-149-YY-and-Revenue-Growth-of-93-YY-Raises-FY-2026-Revenue-Guidance-to-82-YY-Growth-and-U.S.-Comm-Revenue-Guidance-to-134-YY-Crushing-Consensus-Expectations"
       },
       {
-        "label": "Dow Jones 53,178 (+1.32%, all-time record); SPX ~7,602 (+1.5%); Nasdaq +2.1%; Russell 2,981.91 (+1.73%); VIX 15.86",
-        "url": "https://www.upi.com/Top_News/US/2026/08/03/dow-jones-record/4331785790693/"
+        "label": "Dow Jones 53,178 (+1.32%, all-time record); SPX 7,600 (+1.48%); Nasdaq 25,914 (+2.13%); VIX 15.86 — Yahoo Finance live market recap August 3",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-3-dow-sp-500-nasdaq-big-tech-oil-092516872.html"
       },
       {
         "label": "ISM Manufacturing July 55.6% (highest since May 2022; +2.3pp vs. June); prices paid 71.1% vs. 70.3 exp; employment 52.8%, first above 50 since Aug 2022; managers cite inflation 'worse than pandemic era'",
         "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-6-july-2026-ism-manufacturing-pmi-report-302840669.html"
       },
       {
-        "label": "September hike 64.5% midday (below 70% trigger); 10Y 4.69% (−6bps from July 31 4.75%); WTI $79.62 (−6.0%, barely above $79 breach threshold)",
+        "label": "September hike 64.5% (below 70% trigger); 10Y 4.70% (−5bps); WTI $79.62 (−5.97%, Iran peace talks); Brent $83.82 (−4.68%) — CNBC oil/rates coverage",
         "url": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html"
       },
       {
@@ -36,10 +39,10 @@
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7602.0,  "change_pct":  1.49,  "as_of": "2026-08-03T20:00:00Z" },
-    "nasdaq": { "level": 25574.0, "change_pct":  2.08,  "as_of": "2026-08-03T20:00:00Z" },
+    "sp500":  { "level": 7600.50,  "change_pct":  1.48,  "as_of": "2026-08-03T20:00:00Z" },
+    "nasdaq": { "level": 25913.90, "change_pct":  2.13,  "as_of": "2026-08-03T20:00:00Z" },
     "vix":    { "level": 15.86,   "change_pct": -0.81,  "as_of": "2026-08-03T20:00:00Z" },
-    "ust10y": { "level": 4.69,    "change_bps": -6,     "as_of": "2026-08-03T20:00:00Z" },
+    "ust10y": { "level": 4.70,    "change_bps": -5,     "as_of": "2026-08-03T20:00:00Z" },
     "dxy":    { "level": 99.38,   "change_pct": -0.32,  "as_of": "2026-08-03T20:00:00Z" }
   },
   "regime_risk": [
@@ -47,8 +50,8 @@
     { "name": "September Hike Prob", "value": 64.5,  "trigger_above": 70.0,  "unit": "%" },
     { "name": "Brent Crude",         "value": 83.82, "trigger_above": 85.0,  "unit": "$/bbl" },
     { "name": "WTI Crude",           "value": 79.62, "trigger_above": 79.0,  "unit": "$/bbl" },
-    { "name": "SPX vs 7,380",        "value": 7602,  "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 63900, "trigger_below": 62000, "unit": "$" }
+    { "name": "SPX vs 7,380",        "value": 7600,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 63455, "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
@@ -58,7 +61,7 @@
     },
     {
       "ticker": "AMD",
-      "note": "$484.64 (+12.7% on the day), ahead of AH Tuesday. PLTR's 149% commercial beat is a strong read-through for AI platform spending into AMD's MI350/Helios cycle. Consensus: $11.31B revenue (+47% YoY), $1.61 EPS, data-center >$6B (95% Polymarket). Options pricing 10% swing. The +12.7% pre-earnings move has pre-loaded the bull case; in-line data-center revenue risks a sell-the-news reversal from an elevated base.",
+      "note": "$484.64 (+12.7% on the day), ahead of AH Tuesday. PLTR's 149% commercial beat is a strong read-through for AI platform spending into AMD's MI350/Helios cycle. Additional context: AMD's $5B Anthropic deal (announced July 22) — Anthropic purchasing up to 2GW of MI450 chips on AMD's Helios rack-scale system, first GW deploying H1 2027 — makes AMD-specific AI adoption a direct Q2 focus. Consensus: $11.31B revenue (+47% YoY), $1.61 EPS, data-center >$6B (95% Polymarket). Options pricing 10% swing from $484. The +12.7% pre-earnings move has pre-loaded the bull case; in-line data-center revenue risks a sell-the-news reversal from an elevated base. Bull trigger: data-center above $7B AND confirmed Helios/MI450 ramp timeline for H1 2027.",
       "sentiment": "positive"
     },
     {
@@ -83,7 +86,7 @@
     },
     {
       "ticker": "BTC",
-      "note": "~$63,900 end-of-day (recovered from $62,474 morning low; +1.9% estimated). Gate 2 ($62,000) buffer now ~$1,900 — wider than the morning's $474 scare. PLTR beat removed the primary single-event tail for gate testing. Friday NFP is the next macro catalyst.",
+      "note": "~$63,455 at 9:13pm ET (Crypto.com MCP live; 24h range H$64,093 / L$62,296). Day estimate of ~$63,900 was slightly high — actual 9pm read is $63,455. Gate 2 ($62,000) buffer now ~$1,455 — wider than the morning's sub-$500 scare. PLTR beat removed the primary single-event tail for gate testing. Friday NFP is the next macro catalyst.",
       "sentiment": "positive"
     }
   ],
@@ -95,15 +98,15 @@
     },
     {
       "ticker": "AMD (after pre-earnings +12.7%)",
-      "reason": "AMD closed +12.7% at $484.64 ahead of AH earnings Tuesday. The PLTR read-through is fully priced; an inline or slight data-center beat from a pre-elevated base risks a sell-the-news move. The setup demands a data-center revenue beat above consensus ($6B+) to justify the pre-earnings bid.",
-      "better_entry": "Post-print, after confirming data-center above $6B and MI350 ramp timeline; $440-450 on a revenue in-line result would represent a reset to prior support."
+      "reason": "AMD closed +12.7% at $484.64 ahead of AH earnings Tuesday. The PLTR read-through is fully priced; an inline or slight data-center beat from a pre-elevated base risks a sell-the-news move. The Anthropic deal context raises the bar further — market now expects Helios/MI450 ramp specifics to accompany the revenue print. The setup demands data-center above $6B AND MI450 ramp timeline confirmation to justify the pre-earnings bid.",
+      "better_entry": "Post-print, after confirming data-center above $6B and MI450/Helios ramp timeline; $440-450 on a revenue in-line result would represent a reset to prior support."
     }
   ],
   "trade_setups": [
     {
       "asset": "AMD Q2 AH Tuesday August 4",
       "direction": "pair",
-      "thesis": "AMD reports AH Tuesday with revenue consensus $11.31B (+47% YoY), data-center >$6B (95% Polymarket probability), and options pricing a 10% swing. The stock closed +12.7% today on PLTR read-through — the AI spend cycle is confirmed, but the bar entering Tuesday's print is now higher. The binary: data-center above $7B and MI350 ramp confirmed for H1 2027 is the double-confirmation leg. Data-center inline at $6B or below, or any AMZN custom-silicon displacement commentary, compresses the multiple from the pre-loaded base.",
+      "thesis": "AMD reports AH Tuesday with revenue consensus $11.31B (+47% YoY), data-center >$6B (95% Polymarket probability), and options pricing a 10% swing from $484. The stock closed +12.7% today on PLTR read-through — the AI spend cycle is confirmed, but the bar entering Tuesday's print is now higher. The AMD-Anthropic $5B deal (July 22) means Wall Street expects Helios rack-scale commentary and MI450 deployment timelines alongside the revenue line. The binary: data-center above $7B and MI450 ramp confirmed for H1 2027 is the double-confirmation leg. Data-center inline at $6B or below, or any AMZN custom-silicon displacement commentary, compresses the multiple from the pre-loaded base.",
       "entry": "Watch AH print: >$7B data-center with ramp confirmation, $540+ opens as the next target from $484; data-center $5.5B or below, $440-450 is near-term reset.",
       "invalidation": "Data-center revenue misses $5.5B or management signals Helios rack-scale delays beyond H1 2027.",
       "conviction": "medium",
@@ -112,7 +115,7 @@
     {
       "asset": "WTI $79 — regime clearing watch",
       "direction": "neutral",
-      "thesis": "WTI has closed at $79.54 (Monday AM) and $79.62 (today's close) — two sessions within $0.62-$0.54 of the $79 formal breach threshold. OPEC+ is adding 188k bpd in September; Iran diplomatic talks began Monday. A single sustained close below $79 reduces the breach count from 2-of-6 to 1-of-6 (30Y only), which would be the most constructive regime position since the Iran escalation began in April. What reverses it: any IRGC military action or Trump rhetoric re-escalating the Hormuz risk premium. Time frame: active in each session this week.",
+      "thesis": "WTI closed at $79.62 today — $0.62 above the $79 formal breach threshold — after a 5.97% drop on Iran peace talk resumption. A single sustained close below $79 reduces the breach count from 2-of-6 to 1-of-6 (30Y only), which would be the most constructive regime position in months. What reverses it: any IRGC military action or Trump rhetoric re-escalating the Hormuz risk premium. Brent $83.82 is now $1.18 below the $85 breach threshold — a co-clear is achievable in two more sessions of Iran diplomacy.",
       "entry": "Not a position; a regime threshold to monitor at each day's close. Two consecutive closes below $79 formally clear this breach indicator.",
       "invalidation": "WTI close above $82 on re-escalation restores both oil-side breaches simultaneously.",
       "conviction": "low",
@@ -128,6 +131,6 @@
       "horizon": "August 7 8:30 AM ET"
     }
   ],
-  "bear_case": "ISM at 55.6% with prices paid 71.1% and managers describing inflation as 'worse than pandemic era' is not a disinflationary print — it is the strongest manufacturing output in four years with elevated cost pressures. Oil deflation carried the rate market today, but the Brent ceasefire has collapsed twice before in 2026 (both times rebounding above $100). If Brent reverses above $85 and Friday NFP prints above 130K, September hike surges back through 70% and the two cleared breaches restore immediately. PLTR at $142 AH trades at approximately 83x forward sales — the 149% US commercial growth must sustain to justify that multiple, and a deceleration to 100% in Q3 at this valuation would compress the stock without the DoD urgency as a floor. AMD's +12.7% pre-earnings move means the AI-spend thesis is fully priced ahead of the print; an inline data-center result from a pre-elevated base risks a swift reversal. The read does not hold if SPX closes below 7,380.",
+  "bear_case": "ISM at 55.6% with prices paid 71.1% and managers describing inflation as 'worse than pandemic era' is not a disinflationary print — it is the strongest manufacturing output in four years with elevated cost pressures. Oil deflation carried the rate market today, but the Brent ceasefire has collapsed twice before in 2026 (both times rebounding above $100). If Brent reverses above $85 and Friday NFP prints above 130K, September hike surges back through 70% and the two cleared breaches restore immediately. PLTR at $142 AH trades at approximately 83x forward sales — the 149% US commercial growth must sustain to justify that multiple, and a deceleration to 100% in Q3 at this valuation would compress the stock without the DoD urgency as a floor. AMD's +12.7% pre-earnings move means the AI-spend thesis is fully priced ahead of the print; the AMD-Anthropic deal raises the bar further — the market now needs Helios ramp confirmation, not just a revenue beat. BTC at $63,455 (9:13pm ET) holds Gate 2 with a $1,455 buffer, but Friday NFP remains the next macro stress event. The read does not hold if SPX closes below 7,380.",
   "body_mdx": "data/briefings/markets/2026-08-03-night.mdx"
 }
