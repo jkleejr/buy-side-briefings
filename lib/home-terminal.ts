@@ -504,12 +504,10 @@ export async function getHomeData(): Promise<HomeData> {
       href: `/briefings/${v.routine}/${v.date}-${v.window}`,
     }));
 
-  // The dated-catalyst modules are gone from this page. The strip moved to
-  // /schedule (lib/schedule.ts) as a month calendar; the "Catalysts in detail"
-  // list that replaced it was removed too, so the homepage now carries no
-  // calendar data at all and the header nav is the way across. lib/schedule.ts
-  // owns the merged timeline — and, critically, its two-sided lookback, which
-  // is what keeps a Fed or BoJ decision on the calendar after it lands.
+  // No dated-catalyst module on this page: the sideways strip went first, then
+  // the "Catalysts in detail" list, then /schedule itself. Nothing on the site
+  // renders data/calendar.json now — see the loaders in lib/data.ts, which are
+  // retained but unreferenced.
 
   const todayLabel = new Date()
     .toLocaleDateString("en-US", {
