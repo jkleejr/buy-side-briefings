@@ -1,6 +1,10 @@
 import Panel from "@/components/panel";
 
-export const metadata = { title: "About — Buy-Side Briefings" };
+export const metadata = {
+  title: "About — Buy-Side Briefings",
+  description:
+    "What Buy-Side Briefings is: a market briefing published twice a day, with the data behind it cited and linked. It reports; the investment decision stays with the reader.",
+};
 
 export default function AboutPage() {
   return (
@@ -11,174 +15,88 @@ export default function AboutPage() {
         </h1>
       </header>
 
-      {/* ----- Section 1: What the site does ----- */}
-      <Panel code="WHAT" title="What this site does">
+      {/* ----- Section 1: What the site is ----- */}
+      <Panel code="WHAT" title="What this site is">
         <div className="space-y-2 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
           <p>
-            <span className="text-[var(--amber)]">Buy-Side Briefings</span> is a daily morning
-            read for self-directed investors. One page, terminal-dense, organized like a
-            professional trader&apos;s screen: live market data above the fold, opinionated
-            editorial commentary alongside, and the catalysts ahead below.
+            <span className="text-[var(--amber)]">Buy-Side Briefings</span> publishes a
+            market briefing twice a day — a morning edition before the open and a night
+            edition after the close — for people who manage their own money.
           </p>
           <p>
-            The whole site is built around <span className="text-[var(--amber)]">one
-            question per session</span>: <em>given everything happening right now, what
-            actually matters?</em> The answer is a time-stamped read — what happened,
-            and the cited data behind it.
+            Each briefing covers what happened, what it means, and what would change it.
+            Every claim carries a number, and every number carries a link to where it came
+            from. Around the briefings sit the pages you would check next: a calendar of
+            what is coming, a watchlist, and sector, macro and global market data.
           </p>
           <p>
-            Three layers of context surround that read:
+            <span className="text-[var(--amber)]">The site does not tell you what to buy
+            or sell.</span> That decision is yours, and it depends on things this site
+            does not know. The job here is to put the relevant information in front of you
+            so you can make it well — not to make it for you.
           </p>
-          <ul className="ml-3 list-disc space-y-1 pl-2 text-[var(--foreground)] marker:text-[var(--amber-dim)]">
-            <li>
-              <span className="text-[var(--amber-dim)]">Short term · days to 2 weeks</span> —
-              live ticker tape, market snapshot, regime risk indicators, crypto,
-              SPY/Gold/Silver charts.
-            </li>
-            <li>
-              <span className="text-[var(--amber-dim)]">Mid term · 1–3 months</span> —
-              positioning &amp; valuation, sector rotation, US market breadth, global
-              indices.
-            </li>
-            <li>
-              <span className="text-[var(--amber-dim)]">Long term · 6 months+</span> — Fed
-              policy &amp; macro, real-economy data, BTC halving cycle clock.
-            </li>
-          </ul>
         </div>
       </Panel>
 
-      {/* ----- Section 2: How it works (the pipeline) ----- */}
-      <Panel code="HOW" title="How it works">
+      {/* ----- Section 2: What a briefing carries ----- */}
+      <Panel code="BRIEF" title="What a briefing carries">
         <div className="space-y-2 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
-          <p>
-            <span className="text-[var(--amber-dim)]">Data sources.</span> Live market data
-            comes from two free APIs:
+          <p className="text-[var(--amber-dim)]">
+            Each one is written in three tiers, so you can stop at the depth you need:
           </p>
+          <ul className="ml-3 list-disc space-y-1 pl-2 marker:text-[var(--amber-dim)]">
+            <li>
+              <span className="text-[var(--amber)]">30 seconds</span> — the headline in
+              plain English, and the few points that carried the session.
+            </li>
+            <li>
+              {/* Explicit {" "}: JSX drops the leading space of a text child
+                  that also contains an entity, so "…evidence</span> — the
+                  day&apos;s…" rendered as "evidence— the day's". */}
+              <span className="text-[var(--amber)]">The evidence</span>{" "}
+              — the day&apos;s data points, each linked back to its source.
+            </li>
+            <li>
+              <span className="text-[var(--amber)]">The full read</span> — the long-form
+              note, with the levels that would change the picture stated explicitly.
+            </li>
+          </ul>
+          <p>
+            A market snapshot is captured at the moment of writing — index and rate levels
+            as they stood — so a briefing stays anchored to the tape it was written
+            against rather than quietly reading differently a week later.
+          </p>
+        </div>
+      </Panel>
+
+      {/* ----- Section 3: Where the numbers come from ----- */}
+      <Panel code="DATA" title="Where the numbers come from">
+        <div className="space-y-2 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
           <ul className="ml-3 list-disc space-y-1 pl-2 marker:text-[var(--amber-dim)]">
             <li>
               <span className="text-[var(--amber)]">Yahoo Finance</span> — quotes, charts,
-              sector ETFs, global indices, crypto. No key required. Refresh cadence:
-              60s–5min depending on the panel.
+              sector ETFs, global indices and earnings dates.
             </li>
             <li>
               <span className="text-[var(--amber)]">FRED</span> (Federal Reserve Economic
-              Data) — Fed funds, CPI/Core PCE, unemployment, Treasury yields, balance
-              sheet. Free with an API key. Refreshed hourly.
+              Data) — policy rates, inflation, employment and Treasury yields.
+            </li>
+            <li>
+              <span className="text-[var(--amber)]">Reporting and filings</span>{" "}
+              — cited inline in the briefings, and read from SEC filings where a
+              fund&apos;s holdings are involved.
             </li>
           </ul>
           <p>
-            <span className="text-[var(--amber-dim)]">Editorial pipeline.</span> Briefings
-            are <em>not</em> algorithmic. Each one is written by hand in a chat session
-            with an LLM (Claude), following a structured template that forces specificity
-            and citation. The briefing produces two files committed to the repo:
-          </p>
-          <ul className="ml-3 list-disc space-y-1 pl-2 marker:text-[var(--amber-dim)]">
-            <li>
-              <code className="border border-[var(--border)] bg-[var(--panel-head)] px-1 text-[var(--amber)]">
-                data/briefings/&lt;routine&gt;/&lt;date&gt;-&lt;window&gt;.mdx
-              </code>{" "}
-              — the readable long-form briefing.
-            </li>
-            <li>
-              <code className="border border-[var(--border)] bg-[var(--panel-head)] px-1 text-[var(--amber)]">
-                data/verdicts/&lt;routine&gt;-&lt;date&gt;-&lt;window&gt;.json
-              </code>{" "}
-              — the structured record (headline, supporting data, trade setups,
-              bear case, market snapshot, regime levels).
-            </li>
-          </ul>
-          <p>
-            <span className="text-[var(--amber-dim)]">Rendering.</span> The site is built
-            on Next.js with React Server Components. Pages are mostly server-rendered HTML
-            (fast, almost no JavaScript), with small client islands only where needed
-            (charts, hover toggles, timeframe selectors). The dashboard re-fetches data
-            on its own — your browser doesn&apos;t poll APIs directly.
-          </p>
-          <p>
-            <span className="text-[var(--amber-dim)]">Persistence.</span> Briefings and
-            verdicts live as plain files in the repo. They accumulate over time, and the
-            archive reads all of them — there&apos;s no database, no separate
-            &quot;publishing&quot; step beyond committing the file.
+            Briefings are produced by a scheduled routine that researches the session and
+            commits the result into the repository as plain files; the site rebuilds from
+            them. There is no database, and no publishing step beyond the commit — which
+            is also why the archive can be read all the way back.
           </p>
         </div>
       </Panel>
 
-      {/* ----- Section 3: What a briefing carries ----- */}
-      <Panel code="BRIEF" title="What a briefing carries">
-        <div className="space-y-3 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
-          <p>
-            A briefing is a read on the session, not a standing buy or sell call.
-            Earlier editions ended in a single graded verdict — 🟢 BUY / 🟡 HOLD /
-            🟠 STEP ASIDE / 🔴 BEARISH — scored against SPX returns at +1, +5 and
-            +20 days. That framing is retired. Past briefings keep the verdicts
-            they were written with, but the site no longer organises itself
-            around them, and nothing is graded.
-          </p>
-          <p className="text-[var(--amber-dim)]">
-            A directional call still appears when one is genuinely warranted —
-            it just isn&apos;t the point, and there is no obligation to produce
-            one every session.
-          </p>
-
-          <div className="space-y-2">
-            <p className="text-[var(--amber-dim)]">What each briefing comes with:</p>
-            <ul className="ml-3 list-disc space-y-1 pl-2 marker:text-[var(--amber-dim)]">
-              <li>
-                <span className="text-[var(--amber)]">Headline</span> — what actually
-                happened, in plain English. No prices, no jargon.
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">Rationale</span> — one or two
-                sentences capturing the core read.
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">Supporting data</span> — 4–6 cited
-                data points, each linked back to its source.
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">Trade setups</span> (optional) — named
-                asset, direction, entry, invalidation, time horizon.
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">&ldquo;Don&apos;t buy&rdquo; list</span>{" "}
-                (optional) — names actively avoided right now, with better entry points
-                noted.
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">Market snapshot</span> — index/rate
-                levels captured at the moment the briefing was written, so the read is
-                anchored to a specific tape.
-              </li>
-              <li>
-                <span className="text-[var(--amber)]">Regime levels</span> — the SPX floor
-                in play, with where the tape sat against it.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </Panel>
-
-      {/* ----- Section 4: The voice ----- */}
-      <Panel code="VOICE" title="The voice">
-        <div className="space-y-2 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
-          <p>
-            Most retail-facing market commentary reads like{" "}
-            <span className="text-[var(--amber-dim)]">sell-side cheerleading</span>: every
-            dip is a buying opportunity, every rally is just getting started, and the only
-            verdict is &ldquo;hold.&rdquo; This site is built on the opposite premise — that
-            telling you when <em>not</em> to buy is as important as telling you when to buy.
-          </p>
-          <p>
-            Every briefing is required to include at least one short, hedge, or pair idea,
-            plus the strongest argument <em>against</em> our own positioning.{" "}
-            <span className="text-[var(--amber)]">Conviction in both directions, or no
-            conviction at all.</span>
-          </p>
-        </div>
-      </Panel>
-
-      {/* ----- Section 5: What this is not ----- */}
+      {/* ----- Section 4: What this is not ----- */}
       <Panel code="NOT" title="What this is not">
         <ul className="m-0 space-y-1 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
           <li>
@@ -196,8 +114,7 @@ export default function AboutPage() {
           </li>
           <li>
             <span className="text-[var(--amber-dim)]">— </span>
-            Not a guarantee of future results. Past calls can be wrong; future calls will
-            be wrong.
+            Not a guarantee of anything. A read can be wrong, and some of them will be.
           </li>
         </ul>
       </Panel>
@@ -205,7 +122,7 @@ export default function AboutPage() {
       {/* ----- Disclaimer ----- */}
       <Panel code="DSCLM" title="Disclaimer">
         <p className="p-3 font-mono text-[12px] leading-relaxed text-[var(--amber)]">
-          The content on this site is for educational and entertainment purposes only. It
+          The content on this site is for educational and informational purposes only. It
           does not constitute investment advice, an offer to buy or sell any security, or a
           solicitation of any kind. The author may hold positions in any name mentioned. Do
           your own research, consult a licensed professional, and never invest more than
