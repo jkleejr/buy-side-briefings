@@ -1,0 +1,101 @@
+{
+  "routine": "markets",
+  "date": "2026-08-05",
+  "window": "night",
+  "generated_at": "2026-08-05T22:45:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "ADP misses hard at 44K; Kashkari backs September hike; NVDA lands SpaceX exclusive",
+    "label": "Labor cooling confirmed; dissenting Fed voice reset September odds; chip sector bifurcates on NVDA/SpaceX lock-in",
+    "rationale_short": "July ADP printed 44K — the weakest private-payroll gain of 2026 — but Minneapolis Fed President Kashkari appeared on CNBC the same morning to call for gradual rate hikes starting September, sending September odds from 54% to 58% despite the jobs miss. NVDA surged to ~$220 after Musk confirmed SpaceX will build AI infrastructure exclusively on Nvidia's Vera Rubin; AMD held the $484 floor the morning identified by 51 cents. NFP Friday (consensus +91K) is the binary: below 80K isolates Kashkari as one dissenter and opens a path toward 5.00% on the 30Y; above 130K validates the hike case and sends September through 70%.",
+    "supporting_data": [
+      {
+        "label": "Kashkari: 'now is the time to start slowly moving rates up' — September hike odds rise to 58% despite 44K ADP miss",
+        "url": "https://www.cnbc.com/2026/08/05/feds-kashkari-says-now-is-the-time-to-start-slowly-moving-rates-up.html"
+      },
+      {
+        "label": "ADP July +44K — year's weakest private payrolls; June revised to 95K; ISM Services Employment 47.4% (contraction)",
+        "url": "https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html"
+      },
+      {
+        "label": "SpaceX exclusive Nvidia deal: Musk says SpaceX will build AI infrastructure solely on Vera Rubin; NVDA +3.4% to ~$220",
+        "url": "https://finance.yahoo.com/technology/article/nvidia-stock-rises-after-musk-says-spacex-will-exclusively-use-companys-chips-211803293.html"
+      },
+      {
+        "label": "30Y falls to 5.169% (−2bps); Hormuz interim deal not signed — Gulf official cites 50:50 odds by Friday",
+        "url": "https://www.cnn.com/2026/08/05/middleeast/hormuz-iran-oman-agreement-analysis-intl"
+      },
+      {
+        "label": "Gold surges to $4,304 (+5.3%) on Kashkari inflation read and Hormuz uncertainty",
+        "url": "https://convextrade.com/metrics/gold"
+      },
+      {
+        "label": "AMD closes $483.49 (−6.7% from $518 Tuesday close); AVGO −6.6% to $392.23 as chip sector rotates to NVDA on SpaceX lock-in",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/amd-drops-6-despite-record-142036039.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7737.0,  "change_pct":  0.00, "as_of": "2026-08-05T20:00:00Z" },
+    "nasdaq": { "level": 26530.0, "change_pct": -0.21, "as_of": "2026-08-05T20:00:00Z" },
+    "vix":    { "level": 16.5,    "change_pct": 13.01, "as_of": "2026-08-05T20:00:00Z" },
+    "ust10y": { "level": 4.62,    "change_bps": -2,    "as_of": "2026-08-05T20:00:00Z" },
+    "dxy":    { "level": 99.80,   "change_pct": -0.17, "as_of": "2026-08-05T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.169, "trigger_above": 5.00, "unit": "%" },
+    { "name": "September Hike Odds", "value": 58.0,  "trigger_above": 70.0, "unit": "%" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Surged to ~$220 (+3.4%) after Musk confirmed SpaceX will exclusively use Vera Rubin for AI infrastructure. $216 former stop now functions as support. August 26 Q2 FY27 is the next test — a gross margin beat above 76% with strong Q3 guidance is what $220 requires.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Closed $483.49 (−6.7% from Tuesday's $518 close). $484 floor held by 51 cents. SpaceX's exclusive Nvidia commitment removes the hyperscaler AMD most needed in its 2026 buildout narrative. Two closes below $480 signal the PLTR-read-through premium is still unwinding toward $440-450.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "Consolidating near $158-163 after Tuesday's +26.4% surge. No new catalyst. At 98-100x forward sales; Q3 US commercial growth above 100% YoY is the multiple condition.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Fell to $392.23 (−6.6% from $420.12). SpaceX's exclusive Nvidia commitment diminishes one potential future custom-silicon client. The $128.1B purchase-commitment thesis for other hyperscalers is unchanged.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSM",
+      "note": "Rose to ~$416 (+2.5%). NVDA's SpaceX exclusive requires Vera Rubin at N3/N2 nodes; SpaceX's 2GW-to-10GW compute expansion is a direct TSM utilization signal.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y Treasury",
+      "thesis": "30Y at 5.169% — 16.9bps above the 5.00% breach threshold. ADP 44K would normally open a path toward 5.00%; Kashkari's public hike call has narrowed that path. The regime clears only if NFP confirms the labor softening and isolates Kashkari as a minority view.",
+      "entry": "5.00% is the regime threshold from below; 5.28% is the level where the rate-relief thesis stalls. The 5.169%-to-5.00% move requires NFP below 80K plus no additional Fed hawkish voices before Jackson Hole.",
+      "invalidation": "If a second FOMC official endorses September before NFP, 5.169% holds regardless of the labor print.",
+      "horizon": "48 hours through NFP; medium term through August 13 CPI"
+    },
+    {
+      "asset": "NVDA vs AMD",
+      "thesis": "SpaceX's exclusive Vera Rubin commitment crystallized a bifurcation building for three sessions: dedicated AI infrastructure winners (NVDA, AVGO) vs. open-market competitors (AMD). SpaceX's 2GW-to-10GW compute build runs entirely through NVDA. AMD's DC thesis is intact with other hyperscalers but the highest-capex new buyer chose the rival.",
+      "entry": "NVDA: $216 now functions as support (former stop level); $225 is the next resistance before August 26 earnings. AMD: $484 held by one session; two closes below $480 with volume signal the competitive re-rate is extending toward $440-450.",
+      "invalidation": "NVDA: AMD or Intel wins a comparable exclusive AI infrastructure deal from a top-4 hyperscaler before August 26. AMD: Q3 conference-call guidance showing gross margin recovering to 56%+ removes the selloff's structural rationale.",
+      "horizon": "AMD: 2-5 sessions; NVDA: through August 26 earnings"
+    },
+    {
+      "asset": "Gold",
+      "thesis": "Gold surged to $4,304 (+5.3% on the session) — the driver is Kashkari's read, not simple safe-haven demand (global equities were firm). The market is pricing a scenario where the Fed hikes into labor weakness: tariff goods prices + AI infrastructure supply shocks push inflation above target while payrolls soften. That is gold's best environment.",
+      "entry": "$4,250 is the prior resistance level from above; $4,300 is the new inflection. A close above $4,300 on CPI August 13 above 3.5% confirms the Kashkari scenario has fundamental grounding.",
+      "invalidation": "NFP below 80K + Hormuz signs before Friday: Kashkari's inflation premise loses its labor-market support, and the Hormuz signing removes the geopolitical risk premium. Gold returns toward $4,100-4,200.",
+      "horizon": "1-2 weeks through August 13 CPI"
+    }
+  ],
+  "bear_case": "ADP 44K is the year's softest print, but three FOMC dissenters plus Kashkari's public call mean the labor data is being discounted by at least a fraction of the committee. If CPI August 13 prints above 3.5% on top of today's Kashkari framing, September moves to 70%+ regardless of NFP — the hike path becomes settled and the 30Y extends toward 5.28%. Gold's 5.3% single-session move is a forward-looking tell: the market is not fully convinced oil deflation has beaten inflation. The read no longer holds if the 30Y closes above 5.28% on two consecutive sessions before NFP.",
+  "body_mdx": "data/briefings/markets/2026-08-05-night.mdx"
+}
