@@ -1,0 +1,114 @@
+{
+  "routine": "markets",
+  "date": "2026-08-05",
+  "window": "morning",
+  "generated_at": "2026-08-05T11:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "headline": "Washington and Tehran near Hormuz deal that would unlock trapped Persian Gulf oil supply",
+    "label": "ES +0.39% PM (SPX record 7,736 close); NQ flat (AMD −8.7% PM, SPCX −8% PM drag); WTI $75.40 (−5.7%, clearing $79 trigger); 10Y 4.619% (−7bps); Sept hike ~42% Poly; ADP 8:15 AM ET; NFP Friday",
+    "conviction": "medium",
+    "horizon": "2-3 days",
+    "rationale_short": "The dominant macro regime trade is resolving in one session: WTI crashed to $75.40 as the US-Iran Hormuz 60-day interim deal nears a Wednesday announcement, clearing both oil-side regime breaches and dropping September hike odds to ~42%. That leaves 30Y at ~5.20% as the sole remaining breach — 1-of-6 — against a record SPX close of 7,736. AMD and SPCX both sold off 8%+ AH on earnings beats-with-catches: AMD gross margin 54% vs 56% consensus (Helios AI ramp costs); SPCX $18.37B capex (6x YoY) with no Starlink profitability confirmation. These are stock-specific, not systemic AI failures — Nasdaq futures are flat rather than down, confirming the distinction. ADP at 8:15 AM ET is the intraday trigger: a soft print pushes September hike toward sub-30% and 10Y toward 4.5%, which could compress the last breach. A formal Hormuz signing today would print 1-of-6 on the regime scorecard — the most constructive reading since before the Iran escalation began.",
+    "supporting_data": [
+      {
+        "label": "ES +0.39% premarket; SPX record close 7,736.52 (+1.79% Tuesday); Nasdaq futures little changed as AMD/SPCX AH losses offset Hormuz tailwind",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-04/stock-market-today-dow-s-p-live-updates"
+      },
+      {
+        "label": "WTI $75.40 (−5.7% from ~$80); Brent ~$79 — both clear of regime triggers; 60-day Hormuz interim deal targeted for Wednesday announcement via Qatar/Oman mediation",
+        "url": "https://www.axios.com/2026/08/05/us-iran-strait-of-hormuz-deal-nears"
+      },
+      {
+        "label": "AMD Q2: $11.54B rev (+50% YoY), DC $6.7B (+107%), EPS $1.66 vs $1.60 est., Q3 guide $13B midpoint — all beats; gross margin 54% vs 56% consensus (Helios ramp costs); stock −8.7% PM to ~$442",
+        "url": "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html"
+      },
+      {
+        "label": "SPCX Q2: $7.8B rev (+92% YoY vs $6.72B est.), EBITDA $3.5B vs $2.0B est. — beat; capex $18.37B (6x YoY, $15.83B AI); Starlink profitability not confirmed; stock −8% AH",
+        "url": "https://www.shacknews.com/article/150244/spacex-spcx-q2-2026-earnings-results"
+      },
+      {
+        "label": "JOLTS June 7.36M (−178K vs May's 7.54M revised); September hike odds falling toward ~42% Polymarket from 57.5% on Aug 4 AM",
+        "url": "https://www.babypips.com/news/headline-us-jolts-job-openings-june-2026-fed-rate-outlook-2026-08-04"
+      },
+      {
+        "label": "BTC $64,096 (Crypto.com live, 11:03 UTC Aug 5; range $63,600–$64,550, +0.53%); Gate 2 ($62,000) buffer $2,096",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7766.0,  "change_pct":  0.39, "as_of": "2026-08-05T10:30:00Z" },
+    "nasdaq": { "level": 26460.0, "change_pct":  0.00, "as_of": "2026-08-05T10:30:00Z" },
+    "vix":    { "level": 16.50,   "change_pct":  5.56, "as_of": "2026-08-05T10:30:00Z" },
+    "ust10y": { "level": 4.619,   "change_bps": -7,    "as_of": "2026-08-05T10:30:00Z" },
+    "dxy":    { "level": 99.80,   "change_pct": -0.17, "as_of": "2026-08-05T10:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.20,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 42.0,  "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 78.80, "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 75.40, "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7766,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 64096, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMD",
+      "note": "~$442 premarket (−8.7% from $484.64 close). Q2 beat across all lines: $11.54B rev (+50%), DC $6.7B (+107%), EPS $1.66, Q3 guide $13B midpoint. The market's objection: gross margin 54% vs 56% consensus — Helios AI ramp costs front-loaded by the Anthropic MI450 deployment. Data-center thesis intact; the question is whether margin recovers in Q3 as Helios ramp completes or whether competitive pricing (Trainium, TPU) has permanently moved the floor. $440–445 is the post-earnings support zone. First-day reactions are not entries.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "Down ~8% AH on first public earnings. Revenue $7.8B (+92% YoY, vs $6.72B est.) and EBITDA $3.5B vs $2.0B est. — strong operational beat. Market sold the $18.37B capex print (6x YoY, $15.83B AI infrastructure). No Starlink profitability milestone confirmed. If Q3 capex is similar, FY26 capex approaches $70B+ against ~$30B annualized revenue. AI segment +247% YoY is the bull case; the payback period is the unknown.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$144 area after Tuesday's +15% surge to a record close. Enterprise AI thesis fully confirmed; Q3 sustainment (US commercial above 100% YoY) is the bar. Position discipline at 85x forward sales. Next catalyst: August 26 Q2 FY27 cycle check; no specific catalyst today.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "AI demand reinforced by AMD DC $6.7B (+107%) and SPCX AI +247%. AMD's beat does not displace NVDA's custom-silicon dominance — it confirms the spend pool is large enough for multiple winners. $216 stop intact. August 26 Q2 FY27 is the real test; no NVDA-specific catalyst today.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "XOM",
+      "note": "WTI at $75.40 and declining. If the Hormuz 60-day interim is signed Wednesday, 3–17M bpd of trapped Persian Gulf supply unlocks progressively. Energy complex faces a structural headwind until OPEC+ production responds. No energy longs in this regime.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$64,096 at 11:03 UTC (Crypto.com MCP live). Day range $63,600–$64,550, +0.53%. Gate 2 ($62,000) buffer $2,096. Oil deflation and falling 10Y are constructive for risk assets including crypto. Friday NFP is the next macro stress event.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Hormuz deal close — energy vs. consumer re-rate",
+      "thesis": "WTI at $75.40 has already priced significant Hormuz progress, but a formal 60-day interim signing (targeted today) unlocks the next leg toward $68–70 as trapped Persian Gulf supply restores progressively. The beneficiaries are airlines (fuel cost deflation), consumer discretionary (disposable income tailwind), and trucking/logistics — not energy producers. XOM, CVX face structural headwinds until OPEC+ cuts respond. The deal is a tradable event, not a permanent supply unlock; ceasefire risk resets at each 60-day extension.",
+      "entry": "Formal signing = next WTI leg toward $68–70. Airlines and consumer discretionary are the vehicles. Fade energy on any rip above $78 until deal is signed and first tanker transits confirmed.",
+      "invalidation": "Deal collapses (IRGC military action or Trump escalation) → WTI retraces to $82+ in one session; oil-side regime breaches immediately return; regime flips back to 2-of-6.",
+      "horizon": "Resolves at Wednesday announcement; secondary check at first tanker transit confirmation"
+    },
+    {
+      "asset": "AMD $442 — post-earnings support test",
+      "thesis": "AMD's Q2 data-center $6.7B (+107% YoY) and Q3 guide of $13B midpoint confirms AI hardware spend is intact and AMD is capturing share. The gross margin miss (54% vs 56%) is attributed to Helios ramp costs — MI450 deployments front-loading capital. If margin recovers toward 56%+ in Q3, $440–445 is a textbook earnings-wash entry. If Helios competitive pricing has permanently moved the margin floor lower, the multiple compression is structural. Conference call Q&A on Q3 margin trajectory is the deciding data point.",
+      "entry": "$440–445 support zone holds → next reference at $510–520. Break below $435 with volume invalidates the washout-entry thesis.",
+      "invalidation": "Q3 gross margin guidance below 55% in the call → $420 prior support. NVDA or custom-silicon displacement commentary → structural re-rate below $400.",
+      "horizon": "2–4 weeks; Q3 margin clarity is the resolution"
+    },
+    {
+      "asset": "ADP + NFP sequence — last regime breach clearing event",
+      "thesis": "September hike at ~42% Polymarket (down from 82% on July 31) is being driven entirely by oil deflation, not labor softening. JOLTS June 7.36M was a mild miss but not a labor market collapse. ADP today and NFP Friday (consensus ~91K) are the real test. A soft ADP (< 80K) pushes September hike toward sub-30%, and a sub-75K NFP could compress the 10Y toward 4.5% and the 30Y below 5.00% — which would represent a full regime clear for the first time since the Iran escalation began. That is the most consequential data sequence remaining this week.",
+      "entry": "Watch CME FedWatch September probability within 30 minutes of ADP (8:15 AM ET) and NFP (8:30 AM ET Friday). ADP < 80K with September hike falling toward 35% is an early full-clear signal.",
+      "invalidation": "ADP > 200K → September hike pushes back above 55%; 30Y extends above 5.25%; the oil-relief trade is partially offset by a rate headwind re-imposition.",
+      "horizon": "ADP 8:15 AM ET today; NFP Friday August 7"
+    }
+  ],
+  "bear_case": "The Hormuz deal is the market's load-bearing assumption — and it has collapsed twice in 2026 already. Any IRGC military action or Trump escalation rhetoric restores WTI to $82+ in one session, returning both oil-side breaches simultaneously and pushing September hike back above 55%. AMD's gross margin at 54% vs 56% is not obviously a temporary ramp cost: if Helios competitive pricing has permanently moved the floor, AMD's multiple compression is structural and the AI hardware thesis bifurcates between NVDA (premium, sticky) and AMD (volume, commoditizing). SPCX's $18.37B quarterly capex — with no Starlink profitability confirmation — is the most aggressive spend rate of any public company in 2026; AI revenue at $2.56B (+247% YoY) is impressive but the payback period at this capex scale is unmeasurable. 30Y at ~5.20% remains the sole regime breach; a hot ADP print reverses the narrative that labor is softening. SPX at record 7,766 is simultaneously pricing the Iran deal, labor softening, AI earnings strength, and oil deflation — that concentration creates asymmetric downside to any single factor disappointing.",
+  "body_mdx": "data/briefings/markets/2026-08-05-morning.mdx"
+}
