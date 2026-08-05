@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/earnings",
     "/global",
     "/sectors",
-    "/situational-awareness",
     "/market-history",
     "/about",
     "/privacy",

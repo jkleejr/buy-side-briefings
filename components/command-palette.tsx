@@ -23,7 +23,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
   { href: "/market-history", code: "HIST", label: "Market History — what past booms & crashes say about AI", go: "m" },
-  { href: "/situational-awareness", code: "SITAW", label: "Situational Awareness — Aschenbrenner's AI fund, tracked from SEC filings" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 
