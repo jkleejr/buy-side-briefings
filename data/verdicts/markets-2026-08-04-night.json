@@ -2,31 +2,34 @@
   "routine": "markets",
   "date": "2026-08-04",
   "window": "night",
-  "generated_at": "2026-08-05T02:00:00Z",
+  "generated_at": "2026-08-05T01:12:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "S&P 500 hits record as oil crash seals 1-of-6 regime; AMD and SpaceX sell off on strength",
-    "label": "SPX 7,737 (new ATH, +1.79%); WTI $76.14 (−5.2%, $79 breach cleared); regime 1-of-6; PLTR $158.81 (+26.4%); AMD AH −8% on data-center $6.7B; SPCX AH −7%; September hike 54%; 30Y 5.20% sole breach",
-    "rationale_short": "Every regime condition the morning outlined as the bull case materialized: SPX set a new all-time record, oil cleared the $79 threshold, September hike fell to 54% on cooling JOLTS. The AH tape told a different story — AMD and SpaceX each sold off roughly 7-8% despite beating estimates, confirming the morning's warning that AI hardware infrastructure was fully priced at elevated pre-earnings entries. One breach remains: the 30Y at 5.20%, still 20bps above 5.00%. Closing it requires a data sequence, not more oil. Friday NFP is the first test.",
+    "code": "buy",
+    "emoji": "🟢",
+    "headline": "Stocks close at records as oil slumps on Iran talks and AI spending thesis holds",
+    "label": "BUY — SPX 7,737 (ATH, +1.79%); Dow 54,086 (record, +1.71%); Nasdaq 26,585 (+2.59%); PLTR $158.81 (+26.4%); AVGO $420.12 (+7.1%); AMD AH −8% to ~$477 on $6.7B data-center beat; SPCX $125.33 close, AH −8.6% to $114.60 on capex concern; WTI $76.14 (−5.2%); September hike 54%; 30Y 5.20% sole breach; 1-of-6 regime",
+    "conviction": "medium",
+    "rationale_short": "Every regime condition the morning outlined as the bull case materialized: SPX set a new all-time record, oil cleared the $79 threshold, September hike fell to 54% on cooling JOLTS. The AI spending thesis held across the regular session — PLTR's Monday AH beat carried +26.4% into the close, AVGO surged 7.1% on a $128.1B purchase commitment, and AMD confirmed $6.7B in data-center revenue (+107% YoY). The AH tape told a different story: AMD fell ~8% and SPCX fell 8.6% to $114.60 despite beating revenue estimates by 12.7%, confirming that AI infrastructure plays are fully priced at elevated pre-earnings entries and the tape is selling strength, not rewarding it. One breach remains: the 30Y at 5.20%, 20bps above the 5.00% clearing threshold. Oil deflation has front-loaded its rate-relief contribution; NFP Friday (consensus +91K) is the first real data test of the path to closure.",
     "supporting_data": [
       {
-        "label": "SPX 7,737 (+1.79%, new ATH) — first record in two months; Dow ~54,000 (record); Nasdaq ~26,588 (+2.6%)",
-        "url": "https://www.cnn.com/2026/08/04/investing/us-stock-market"
+        "label": "SPX 7,737 (+1.79%, ATH); Dow 54,086 (+1.71%, record); Nasdaq 26,585 (+2.59%) — US-Iran optimism and tech rally",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-4-dow-sp-500-nasdaq-100140227.html"
       },
       {
-        "label": "WTI $76.14 (−5.2%), Brent $78.87 (−5.9%) — both oil breach thresholds cleared; regime falls to 1-of-6",
+        "label": "WTI $76.14 (−5.2%), Brent $78.87 (−5.9%) — Iran peace-talk optimism; both oil breach thresholds cleared; regime 1-of-6",
         "url": "https://www.forbes.com/advisor/investing/oil-prices-today/"
       },
       {
-        "label": "AMD Q2: $11.5B (+50% YoY), data center $6.7B (+107%), EPS $1.66 vs $1.55 est, Q3 guide $13B; AH −8% from $518 close",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/amd-q2-2026-earnings-record-202927876.html"
+        "label": "AMD Q2: $11.54B (+50% YoY), data center $6.7B (+107%), EPS $1.66 vs $1.55 est, Q3 guide $13B; AH −8% from $518.58 to ~$477",
+        "url": "https://finance.yahoo.com/technology/article/amd-to-report-q2-earnings-as-chip-stocks-continue-to-waver-110000620.html"
       },
       {
-        "label": "JOLTS June 7.36M (vs 7.40M est, 7.54M prior) — September hike fell to ~54% (Kalshi) from 60.5% morning",
+        "label": "JOLTS June 7.36M (vs 7.40M est, 7.54M prior) — September hike fell to ~54% from 64.5%; 30Y steady 5.20%",
         "url": "https://www.bls.gov/news.release/archives/jolts_08042026.htm"
       },
       {
-        "label": "SPCX first public earnings: $7.81B (+92% YoY) vs $6.93B est; capex $18.37B vs $13.22B est; AI segment +247%; AH −7%",
+        "label": "SPCX first public earnings: $7.81B (+92% YoY) vs $6.93B est; capex $18.37B vs $13.22B est; AI +247% to $2.6B; AH −8.6% to $114.60",
         "url": "https://www.cnbc.com/2026/08/04/spacex-spcx-earnings-live-updates-q2-2026.html"
       },
       {
@@ -37,7 +40,7 @@
   },
   "snapshot": {
     "sp500":  { "level": 7737.0,  "change_pct":  1.79, "as_of": "2026-08-04T20:00:00Z" },
-    "nasdaq": { "level": 26588.0, "change_pct":  2.60, "as_of": "2026-08-04T20:00:00Z" },
+    "nasdaq": { "level": 26585.0, "change_pct":  2.59, "as_of": "2026-08-04T20:00:00Z" },
     "vix":    { "level": 14.6,    "change_pct": -7.0,  "as_of": "2026-08-04T20:00:00Z" },
     "ust10y": { "level": 4.64,    "change_bps": -5,    "as_of": "2026-08-04T20:00:00Z" },
     "dxy":    { "level": 99.97,   "change_pct":  0.01, "as_of": "2026-08-04T20:00:00Z" }
@@ -48,28 +51,33 @@
     { "name": "Brent Crude",         "value": 78.87, "trigger_above": 85.0, "unit": "$/bbl" },
     { "name": "WTI Crude",           "value": 76.14, "trigger_above": 79.0, "unit": "$/bbl" },
     { "name": "SPX vs 7,380",        "value": 7737,  "trigger_below": 7380, "unit": "" },
-    { "name": "BTC Gate 2",          "value": 64000, "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",          "value": 64013, "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "PLTR",
-      "note": "$158.81 (+26.4% on the session). Full-session carry of Monday's AH beat. At $158.81, approximately 98-100x forward sales. The 149% US commercial growth rate is the justification, but Q3 must show the same order of magnitude to hold the multiple. Monday's DoD-vs-commercial structural shift (commercial grew faster than government) is now the baseline; any Q3 commercial deceleration below 100% at this multiple compresses the stock materially.",
+      "note": "$158.81 (+26.4% on the session). Full-session carry of Monday's AH beat. At $158.81, approximately 98-100x forward sales. The 149% US commercial growth rate is the justification, but Q3 must show the same order of magnitude to hold the multiple. Monday's structural shift — commercial grew faster than government — is now the baseline; any Q3 commercial deceleration below 100% at this multiple compresses the stock materially.",
       "sentiment": "positive"
     },
     {
       "ticker": "AMD",
-      "note": "$518.58 close; AH ~$477 (−8%). Q2: $11.5B (+50% YoY), data center $6.7B (+107% YoY), EPS $1.66 vs $1.55 est, Q3 guide $13B ± $300M. The morning's explicit warning materialized: AMD had risen from $484 (Monday close) to $518 by the time it reported, compressing the margin for a beat that the bar had already moved beyond. Data center at $6.7B is above the $6B consensus but below the $7B bull threshold. Implied AH ~$477.",
+      "note": "$518.58 close (+7% on the session); AH ~$477 (−8%). Q2: $11.54B (+50% YoY), data center $6.7B (+107% YoY), EPS $1.66 vs $1.55 est, Q3 guide $13B ± $300M. The morning's explicit warning materialized: AMD had risen from $484 (Monday close) to $518.58 by the time it reported, compressing the margin for a beat. Data center at $6.7B is above the $6B consensus but below the $7B bull threshold. The AH tape settled near $477.",
       "sentiment": "neutral"
     },
     {
       "ticker": "NVDA",
-      "note": "$212.69 (+2.3%). No NVDA-specific catalyst. AI sentiment bid continues. $216 stop intact from the briefing series. AMD's AH −8% on a beat is the cautionary read-through heading into August 26 Q2 FY27. The thesis is confirmed (PLTR 149% commercial, AMD $6.7B data center) but the entry price discipline the AMD print underscores is directly relevant for NVDA at $212.",
+      "note": "$212.69 (+2.3%). No NVDA-specific catalyst. AI sentiment bid continues. $216 stop intact from the briefing series. AMD's AH −8% on a strong beat is the cautionary read-through heading into August 26 Q2 FY27. The spending confirmation (PLTR 149% commercial, AMD $6.7B data center) is intact, but the AMD print underscores entry-price discipline directly relevant at $212.",
       "sentiment": "neutral"
     },
     {
       "ticker": "AVGO",
       "note": "$420.12 (+7.1%). $128.1B purchase-commitment program announced. This extends a deal pipeline that already includes the $200B Samsung MOU (July 25) and $30B Apple chip deal (July 8). Custom AI chip demand at hyperscaler scale is the core read-through; constructive for TSM N3/N2 utilization.",
       "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "$125.33 regular session close (+9.43%); AH −8.6% to $114.60. First public earnings: $7.81B (+92% YoY) beat $6.93B consensus, AI segment $2.6B (+247% YoY), net loss narrowed to $541M from $1B. Capex $18.37B ($15.83B in AI) vs $13.22B est — a 2.35x capex-to-revenue ratio. Market sold strength on the capex-burn narrative. Stock is −45%+ from June ATH of $225.64 with December 2026 lock-up expiry adding supply overhang.",
+      "sentiment": "neutral"
     },
     {
       "ticker": "MSFT",
@@ -83,7 +91,7 @@
     },
     {
       "ticker": "AMZN",
-      "note": "~$278 (−2.1%). Gave back modest gains on a record-market day; sector rotation into PLTR/semis rather than a thesis change. AWS +37% YoY remains the structural enterprise demand anchor.",
+      "note": "~$278 (−2.1%). Gave back modest gains on a record-market day; sector rotation into PLTR/semis. AWS +37% YoY remains the structural enterprise demand anchor.",
       "sentiment": "neutral"
     },
     {
@@ -93,33 +101,33 @@
     },
     {
       "ticker": "BTC",
-      "note": "~$64,000 estimated close (midday print was $63,901). Gate 2 ($62,000) buffer approximately $2,000. September hike falling to 54% is modestly positive for crypto risk appetite; Clarity Act progress (per Yahoo Finance coverage) is the regulatory watch.",
+      "note": "$64,013 (Crypto.com live, 01:08 UTC Aug 5). Gate 2 ($62,000) buffer ~$2,013. September hike falling to 54% is modestly positive for crypto risk appetite. Clarity Act regulatory progress is the legislative watch for the rest of the week.",
       "sentiment": "positive"
     }
   ],
   "trade_setups": [
     {
       "asset": "AMD — post-earnings settlement levels",
-      "thesis": "AMD printed $11.5B revenue (+50%) and $6.7B data-center revenue (+107%) then sold off 8% after hours. The morning was precise: AMD had risen from $484 to $518 before reporting, compressing the margin such that even a strong $6.7B data-center result repriced as a sell-the-news event from the elevated entry. The setup now is a post-selloff stabilization test: does $477-480 (implied AH) hold after the premium fully unwinds, or does the regular session continue the retracement toward the pre-PLTR-read-through range of $440-450? The $484 Monday close is the anchor; two consecutive closes below it signal the PLTR premium has fully reverted.",
-      "entry": "Levels that define the setup: $518 (August 4 close before AH); $484 (Monday close, pre-PLTR premium); $477 implied AH settlement; $440-450 pre-read-through range.",
-      "invalidation": "A close back above $518 signals buyers absorbed the AH selloff; a close below $440 signals the full PLTR premium retraced.",
+      "thesis": "AMD printed $11.54B revenue (+50%) and $6.7B data-center revenue (+107%) then sold off 8% after hours. The morning was precise: AMD had risen from $484 to $518.58 before reporting, compressing the margin such that even a strong $6.7B data-center result repriced as a sell-the-news event. The setup now is a post-selloff stabilization test: does $477 (AH settlement) hold after the premium fully unwinds, or does the regular session continue the retracement toward the pre-PLTR-read-through range of $440-450? The $484 Monday close is the anchor; two consecutive closes below it signal the PLTR premium has fully reverted.",
+      "entry": "$518.58 (Aug 4 close before AH); $484 (Monday close, pre-PLTR premium); $477 AH settlement; $440-450 pre-read-through range.",
+      "invalidation": "A close back above $518 signals buyers absorbed the AH selloff; a close below $440 signals full PLTR premium retracement.",
       "horizon": "2-5 sessions post-earnings"
     },
     {
       "asset": "30Y yield — path to 5.00% through data sequence",
-      "thesis": "The 30Y at 5.20% is the sole remaining regime breach, 20bps above the 5.00% formal clearing threshold. Oil deflation has already contributed most of its rate-relief over three sessions (approximately −8bps total). Closing the remaining 20bps requires labor and inflation data, not more oil. The sequence: NFP Friday below 80K pushes September well below 50%, giving the 30Y a technical path toward 5.00%. CPI August 13 below 3.0% would extend it. September at 54% is already 16 points below the 70% trigger; the question is whether NFP and CPI extend that gap or reverse it.",
-      "entry": "5.00% is the formal clearing level. Progress measured in bps. NFP Friday and CPI August 13 are the two data points that determine the path.",
+      "thesis": "The 30Y at 5.20% is the sole remaining regime breach, 20bps above the 5.00% clearing threshold. Oil deflation has front-loaded its contribution over three sessions (~−8bps total). Closing the remaining 20bps requires labor and inflation data. NFP Friday below 80K pushes September well below 50%, giving the 30Y a technical path toward 5.00%. CPI August 13 below 3.0% would extend it. September at 54% is already 16 points below the 70% trigger; NFP and CPI determine whether that gap widens or narrows.",
+      "entry": "5.00% is the formal clearing level. NFP August 7 and CPI August 13 are the two data points that determine the path.",
       "invalidation": "NFP above 130K restores September above 70%, sends 30Y back toward 5.28%, and re-triggers the formal breach.",
       "horizon": "1-3 weeks; NFP August 7 and CPI August 13 are the key dates"
     },
     {
-      "asset": "SPCX — capex-vs-revenue convergence",
-      "thesis": "SpaceX's first public earnings showed $7.81B revenue (+92% YoY) beating estimates by 12.7%, with AI segment growing 247% YoY to $2.56B. But capex of $18.37B (vs $13.22B estimated) represents a 2.35x capex-to-revenue ratio — capital is being deployed into AI infrastructure faster than revenue can absorb it. The stock is already −45%+ from its June ATH. The structural question the setup poses: does the AI segment revenue trajectory converge toward justifying the capex burn by Q3 (reporting November), or does each quarter of elevated capex without proportional revenue acceleration further compress the stock? December 2026 lock-up expiry adds supply overhang.",
-      "entry": "Levels defining the setup: $225.64 June IPO high; current implied AH range (~$120-130 estimated); $100 as psychologically significant at ~57% below IPO high.",
-      "invalidation": "Q3 AI segment revenue above $5B (vs $2.56B Q2) or Starlink reaching operating profitability would break the capex-concern narrative upward.",
+      "asset": "SPCX — capex-vs-revenue convergence watch",
+      "thesis": "SpaceX's first public earnings showed $7.81B revenue (+92% YoY) beating estimates by 12.7%, with AI segment growing 247% YoY to $2.6B. But capex of $18.37B ($15.83B in AI) represents a 2.35x capex-to-revenue ratio — capital is being deployed into AI infrastructure faster than revenue can absorb it. AH dropped to $114.60 (−8.6% from $125.33 close, −49% from June ATH of $225.64). The structural question: does AI segment revenue trajectory converge toward justifying the capex burn by Q3 (reporting November), or does each quarter of elevated capex without proportional revenue acceleration further compress the stock? December 2026 lock-up expiry adds supply overhang.",
+      "entry": "$225.64 June IPO high; $125.33 Aug 4 regular session close; $114.60 AH; $100 as psychological −56% from IPO high.",
+      "invalidation": "Q3 AI segment revenue above $5B (vs $2.6B Q2) or Starlink reaching operating profitability breaks the capex-concern narrative upward.",
       "horizon": "Q3 earnings (November 2026) is the next quantitative test"
     }
   ],
-  "bear_case": "AMD delivered $6.7B in data-center revenue (+107% YoY), a 7% beat on consensus, and a Q3 guide of $13B — and the stock sold off 8% after hours. SPCX beat revenue by 12.7% — and sold off 7%. The tape is not rewarding AI hardware beats; it is selling the news on infrastructure plays priced to perfection. The 30Y at 5.20% is 20bps from clearing, but oil deflation has front-loaded its contribution; NFP Friday at 91K consensus is not soft enough to close the gap in one print. An above-130K surprise restores September above 70% and sends 30Y back toward 5.28%, reversing much of the week's rate-relief trade in a single morning. PLTR at $158.81 (approximately 99x forward sales) requires 149% US commercial growth to sustain quarterly through Q3; any deceleration below 100% compresses the multiple without the DoD urgency floor that previously supported it. If SPX closes below 7,380, this read does not hold.",
+  "bear_case": "AMD delivered $6.7B in data-center revenue (+107% YoY), a beat on consensus, and a Q3 guide of $13B — and the stock sold off 8% after hours. SPCX beat revenue by 12.7% — and sold off 8.6% to $114.60. The tape is not rewarding AI hardware beats; it is selling the news on infrastructure plays priced to perfection. The 30Y at 5.20% is 20bps from clearing, but oil deflation has front-loaded its contribution; NFP Friday at 91K consensus is not soft enough to close the gap in one print. An above-130K surprise restores September above 70% and sends 30Y back toward 5.28%, reversing much of the week's rate-relief trade in a single morning. PLTR at $158.81 (approximately 99x forward sales) requires 149% US commercial growth to sustain quarterly through Q3; any deceleration below 100% compresses the multiple. If SPX closes below 7,380, this read does not hold.",
   "body_mdx": "data/briefings/markets/2026-08-04-night.mdx"
 }
