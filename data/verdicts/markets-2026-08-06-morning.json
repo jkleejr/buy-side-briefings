@@ -2,31 +2,27 @@
   "routine": "markets",
   "date": "2026-08-06",
   "window": "morning",
-  "generated_at": "2026-08-06T11:15:00Z",
+  "generated_at": "2026-08-06T14:00:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "SpaceX's first lockup expires, flooding Nasdaq with insider shares as chip stocks slide",
-    "code": "hold",
-    "emoji": "⏸️",
-    "label": "ES +0.14% PM; NQ −0.48%; SPCX 911.5M share unlock today; MU −3.4%; WTI $74.69; 30Y 5.20% sole breach; NFP 8:30 AM ET Fri; Sep hike ~54%",
-    "conviction": "medium",
-    "horizon": "1-2 days",
-    "rationale_short": "The SpaceX lockup expiry (911.5M insider shares eligible today, first 20% tranche) mechanically explains Nasdaq's underperformance against a Dow printing a new record high — the supply shock is structural, not thesis-destroying. The memory chip complex (MU −3.4%, SKHY −6.1%, SNDK −9%) amplifies the Nasdaq bid deficit, reflecting institutional repositioning out of the AI memory tier on 'AI CapEx peaking' fears; the read-through to NVDA is watched but not yet confirmed by NVDA price action. The regime sits at 1-of-6 breaches: 30Y at 5.20% is the sole open trigger. Oil at $74.69 (−0.7%) confirms Hormuz progress — Iran and Oman reached agreement on navigation route coordinates, the penultimate step before a formal signing. The session's single binary is tomorrow's NFP (8:30 AM ET; consensus ~83K, prior 57K): a sub-80K print takes September hike below 45% and opens the 30Y compression toward 5.00% trigger clearance. If SPX closes below 7,380, this read no longer holds.",
+    "headline": "SpaceX lockup selling confirmed; Dow at records while Nasdaq falls on insider supply",
+    "label": "SPCX −13.6% lockup day one; Dow record; NQ −0.83%; memory complex (MU −3.4%) weighs tech; Hormuz unsigned; NFP tomorrow 8:30 ET; Sep hike 54%",
+    "rationale_short": "SPCX's first 20% insider tranche is being sold — stock at ~$93, below the $135 IPO price — confirming the Q3 Starlink profitability thesis is not yet sufficient to hold insiders back. The Dow/Nasdaq bifurcation (Dow record highs, Nasdaq −0.83%) reflects size-specific supply weight rather than systemic risk; the 30Y at 5.20% remains the sole regime breach. NFP tomorrow at 8:30 AM ET (consensus 80-100K) is the only lever between the current 54% September hike probability and a direction. If SPX closes below 7,380, this read no longer holds.",
     "supporting_data": [
-      { "label": "SPCX lockup expires Aug 6 — 911.5M insider shares (~$123B) eligible; first 20% tranche can sell today", "url": "https://finance.yahoo.com/markets/stocks/articles/spacexs-lockup-expires-aug-6-080500494.html" },
-      { "label": "Oil holds three-day decline; Iran-Oman Hormuz navigation coordinates agreed; formal signing pending", "url": "https://www.bloomberg.com/news/articles/2026-08-05/latest-oil-market-news-and-analysis-for-aug-6" },
-      { "label": "MU −3.4%, SKHY −6.1%, SNDK −9% premarket; memory complex in bear market on AI CapEx-peak fears", "url": "https://finance.yahoo.com/markets/stocks/articles/micron-shares-slide-semiconductor-selloff-122643510.html" },
-      { "label": "Iran says Hormuz agreement reached with Oman on proposed shipping route coordinates; joint statement pending", "url": "https://www.agbi.com/oil-and-gas/2026/08/iran-says-agreement-reached-with-oman-for-hormuz-navigation/" },
-      { "label": "July NFP due Aug 7 at 8:30 AM ET; consensus ~80-88K (prior 57K); September hike ~54% Kalshi", "url": "https://www.financecalendar.com/event/us-employment-situation-non-farm-payrolls-august-2026/" },
-      { "label": "Dow futures +0.33% to record; ES +0.14%; NQ −0.48%; blue-chip vs tech bifurcation on SPCX/chip drag", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-6-dow-sp-nasdaq-091620000.html" }
+      { "label": "SPCX −13.6% lockup day one — insiders sell first 20% tranche; stock prints below $135 IPO price for first time", "url": "https://www.fool.com/investing/2026/08/05/spacexs-lockup-expires-on-aug-6-heres-why-9115-mil/" },
+      { "label": "Dow fifth consecutive record (+0.49%); S&P 500 −0.17%; Nasdaq −0.83% — bifurcation on lockup and chip weight", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-6-dow-sp-nasdaq-091620000.html" },
+      { "label": "Memory complex: MU −3.4%, SKHY −6.1%, SNDK −9% premarket; AI CapEx-peaking thesis vs. NVDA divergence at ~$220", "url": "https://www.tipranks.com/news/amd-intc-mu-nvda-why-nvidia-stock-rises-in-pre-market-while-other-chip-stocks-slide-8-5-2026" },
+      { "label": "Hormuz unsigned August 6; Bessent's Wednesday deadline passed; Iran-Oman coordinates agreed but formal deal absent", "url": "https://www.benzinga.com/news/politics/26/08/60905883/scott-bessent-signals-imminent-us-iran-deal-to-reopen-strait-of-hormuz-sending-oil-lower-we-may-have-a-deal-today-or-tomorrow" },
+      { "label": "July NFP due Aug 7 8:30 AM ET; consensus 80-100K (prior 57K); September hike 54% Kalshi; FOMC Sep 15-16", "url": "https://www.optionstradingreport.com/2026/08/fridays-jobs-report-is-a-rate-hike-vote/" },
+      { "label": "30Y 5.20% sole regime breach; 10Y 4.62% −1bp; WTI $74.69 below oil-side triggers; DXY 7-week low at 99.70", "url": "https://tradingeconomics.com/united-states/30-year-bond-yield" }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7779.0,  "change_pct":  0.14, "as_of": "2026-08-06T11:10:00Z" },
-    "nasdaq": { "level": 26315.0, "change_pct": -0.48, "as_of": "2026-08-06T11:10:00Z" },
-    "vix":    { "level": 16.15,   "change_pct": -0.21, "as_of": "2026-08-06T11:10:00Z" },
-    "ust10y": { "level": 4.611,   "change_bps": -1,    "as_of": "2026-08-06T11:10:00Z" },
-    "dxy":    { "level": 99.70,   "change_pct": -0.10, "as_of": "2026-08-06T11:10:00Z" }
+    "sp500":  { "level": 7779.0,  "change_pct": -0.17, "as_of": "2026-08-06T14:00:00Z" },
+    "nasdaq": { "level": 26315.0, "change_pct": -0.83, "as_of": "2026-08-06T14:00:00Z" },
+    "vix":    { "level": 16.15,   "change_pct": -0.21, "as_of": "2026-08-06T14:00:00Z" },
+    "ust10y": { "level": 4.62,    "change_bps": -1,    "as_of": "2026-08-06T14:00:00Z" },
+    "dxy":    { "level": 99.70,   "change_pct": -0.10, "as_of": "2026-08-06T14:00:00Z" }
   },
   "regime_risk": [
     { "name": "30Y Yield",           "value": 5.20,  "trigger_above": 5.00,  "unit": "%" },
@@ -34,58 +30,58 @@
     { "name": "Brent Crude",         "value": 78.10, "trigger_above": 85.0,  "unit": "$/bbl" },
     { "name": "WTI Crude",           "value": 74.69, "trigger_above": 79.0,  "unit": "$/bbl" },
     { "name": "SPX vs 7,380",        "value": 7779,  "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 64582, "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",          "value": 64200, "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "SPCX",
-      "note": "Lockup day one: 911.5M insider shares eligible for the first 20% tranche today. Stock was −7-10% after Q2 earnings; the lockup removes the last formal supply constraint on insider selling. Key read: if first-day volume stays below 50M shares with price holding above pre-earnings support (~$130 IPO-adjacent), the unlock is being absorbed. If volume exceeds 150M with a close below that support, the December backstop expiry becomes the structural overhang through year-end. Starlink profitability in Q3 is the bull catalyst that could outweigh lockup pressure.",
+      "note": "Lockup day one confirmed: −13.6% signals insiders are selling the first 20% tranche. Stock at ~$93, below the $135 IPO price and down 59% from the June $225 ATH. The diagnostic set up this morning — 50M shares stable = absorbed, 150M+ shares below support = front-running — has resolved toward the latter. December tranche expiry is now the structural floor. Q3 Starlink profitability confirmation (~October earnings) is the only catalyst that could interrupt the liquidation template before December.",
       "sentiment": "negative"
     },
     {
       "ticker": "MU",
-      "note": "−3.4% premarket (~$897). Memory chip complex in a bear market: Samsung-triggered selloff started late July; Michael Burry put position at $1,051.87 is the institutional bear thesis crystallized. The question is whether AI CapEx is 'peaking faster than expected' (structural) or whether this is supply/pricing noise amplified by Burry headlines (cyclical). Below $880 with volume confirms bear thesis; a stabilization above $900 without a specific catalyst would be the first counter-signal.",
+      "note": "−3.4% premarket (~$897). Memory complex in a bear market from July highs. Michael Burry put at $1,051.87 frames the institutional thesis. $880 is near-term support; $920 is where the selloff reverses to neutral. Key read-through: NVDA diverging from MU/SKHY means the selloff may be supply/pricing noise in the HBM tier below Vera Rubin rather than demand-pool. NVDA August 26 Q2 FY27 is the confirming event.",
       "sentiment": "negative"
     },
     {
       "ticker": "NVDA",
-      "note": "The MU/SKHY selloff contains an implicit read-through: if AI memory demand is waning, does that affect NVDA's data-center visibility? NVDA has not sold off in sympathy — that divergence is the single most important signal today. As long as NVDA holds above $216 stop, the memory selloff is tier-specific rather than demand-pool. August 26 Q2 FY27 earnings is the real test.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "BTC",
-      "note": "$64,582 live (Crypto.com, 11:02 UTC). Day range $63,868-$65,044, +0.74%. Gate 2 ($62,000) buffer $2,582. Oil deflation and steady 10Y at 4.61% are constructive. The lockup pressure on NQ has not spilled into crypto — risk-off is equity-specific, not cross-asset.",
+      "note": "~$220, holding through the memory complex selloff. SpaceX's Vera Rubin exclusive (2GW year-end, 10GW 2027 target) established $216 as support. Divergence from MU/SKHY is the session's key signal: if AI hardware demand were peaking structurally, NVDA should be moving with memory; it is not. August 26 Q2 FY27 — gross margin above 76%, guide above consensus — is the level test.",
       "sentiment": "neutral"
     },
     {
       "ticker": "AMD",
-      "note": "$484 post-earnings structure still the key level from yesterday's setup. Two regular-session closes above $484 confirms washout absorbed. Memory complex weakness (MU, SKHY) is a data-center sentiment negative but AMD's DC thesis runs on custom-silicon and MI450 adoption, not HBM pricing — the read-through is indirect. Watch today's open relative to $484.",
+      "note": "~$484, second regular-session test of the floor identified in the August 4 morning brief. One close below $484 on normal volume is noise; a second close below with volume signals SpaceX's NVDA exclusivity has durably repriced AMD's AI-hardware competitive position. Conference-call Q3 gross-margin guidance (56%+) is the deciding datapoint. Two closes above $490 after a guide recovery confirm the washout was absorbed.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$64,200 (+0.3%). Gate 2 ($62,000) buffer intact at $2,200. Oil deflation and steady 10Y are constructive. Equity risk-off is tech-specific — BTC is not tracking the SPCX or memory complex selloff. Cross-asset risk-off would require a simultaneous regime widening event, not currently in view.",
       "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
-      "asset": "SPCX lockup absorption — day-one volume as the signal",
-      "thesis": "The 911.5M-share unlock is mechanical supply hitting the open. The diagnostic is volume and price action in the first regular session: below 50M shares with price above pre-earnings support = insiders not rushing to sell = Q3 narrative (Starlink profitability) is doing work. Above 150M shares with a close below support = insiders front-running the December backstop = the stock has no floor until December 8. The staggered lockup structure (next tranche post Q3 earnings, December backstop) means today's behavior sets the template for every subsequent tranche.",
-      "entry": "Do not add exposure ahead of first-session read. The setup resolves by today's close. After close: if absorbed, the trade is long into Q3 earnings (Starlink profitability catalyst). If not absorbed, the December backstop is the only hard floor — no intermediate support without a fundamental catalyst.",
-      "invalidation": "Q3 earnings miss on AI revenue (<$2B) or Starlink profitability not confirmed — either restores 'capex without payback' bear thesis regardless of lockup absorption.",
-      "horizon": "First-session read: today's close. Q3 catalyst: ~October 2026."
+      "asset": "SPCX post-lockup structure — December tranche as the structural floor",
+      "thesis": "The first-tranche selloff (−13.6%) is the diagnostic: insiders are not holding through the Q3 Starlink profitability setup. The staggered lockup structure means each subsequent tranche (post-Q3 earnings, December backstop) carries the same supply pressure unless a fundamental catalyst intervenes. A first-session close near $93 sets the template; the December backstop is now the structural floor rather than the Starlink thesis.",
+      "entry": "First-session close near $93 is where the selloff crystallizes. Stabilization above $108 (pre-earnings close) after Q3 earnings would be the signal that the fundamental thesis is overriding lockup supply. A second session of high-volume selling below $93 would establish the December tranche as the next reference level.",
+      "invalidation": "Q3 earnings (~October 2026) confirming Starlink profitability and AI revenue above $2B is the only catalyst that could reset the lockup-as-liquidation dynamic before December.",
+      "horizon": "First-session read: today's close. Fundamental resolution: Q3 earnings ~October 2026."
     },
     {
       "asset": "30Y Yield — NFP sequence to 5.00%",
-      "thesis": "The 30Y at 5.20% is the sole regime breach, unchanged for three sessions. The clearing path runs through: NFP July tomorrow (consensus ~83K, prior 57K) and any September hike probability move below 45%. A sequential second sub-80K print would be the strongest labor-softening signal since 2020 and should take September below 40%, compressing the 30Y toward 5.00% by mid-August. Oil deflation (WTI $74.69) has contributed its rate-relief; the remaining compression is labor-data-driven.",
-      "entry": "Watch September hike probability within 30 minutes of NFP release at 8:30 AM ET tomorrow. Below 45%: 30Y compression thesis active. 30Y 5.00% is the trigger clearance; 5.28% is where the setup stalls and 30Y re-breaches further.",
-      "invalidation": "NFP above 150K re-prices September toward 65%, extending the sole breach. ISM Services prices-paid (if released) above 65% adds an inflation signal that could prevent 30Y compression regardless of headline jobs.",
+      "thesis": "The 30Y at 5.20% is the sole regime breach, holding for four sessions. The clearing path runs through NFP tomorrow (consensus 80-100K, prior 57K) and September hike probability moving below 45%. ADP's 44K — softest of 2026, well below 75K consensus — is historically directional for NFP at this magnitude of deviation. Oil deflation (WTI $74.69) has contributed its rate relief; the remaining compression is labor-data-driven.",
+      "entry": "September hike probability within 30 minutes of the 8:30 AM ET NFP release is the leading indicator. Below 45%: 30Y compression thesis active toward 5.00%. Above 70%: 30Y extends toward 5.28% and the regime widens from 1-of-6 to 2-of-6. The 5.00% and 5.28% levels are where the current regime read either clears or worsens.",
+      "invalidation": "NFP above 150K re-prices September toward 65%+, extending the sole breach further. ISM Services prices-paid above 65% would add an inflation layer that could prevent 30Y compression regardless of the headline jobs number.",
       "horizon": "NFP release: tomorrow 8:30 AM ET. 30Y resolution: mid-August."
     },
     {
-      "asset": "Memory complex dislocation — MU as the sentiment indicator",
-      "thesis": "MU, SKHY, and SNDK are all in bear-market territory from July highs. The 'AI CapEx peaking' thesis is the stated bear catalyst. The resolution depends on whether primary AI demand buyers (NVDA, AVGO, AMZN, MSFT) confirm continued infrastructure build-out in upcoming earnings commentary. If NVDA August 26 Q2 FY27 call confirms unchanged datacenter CapEx guidance, the memory selloff was supply/pricing noise and MU is dislocated. If NVDA signals any CapEx slowdown, the memory bear thesis is confirmed structurally.",
-      "entry": "MU $880 is the near-term support; $920 is where the selloff reverses to neutral. The Burry put at $1,051 implies a target near $750-800. Do not catch falling memory on AI sentiment alone — wait for a primary-buyer confirmation event (NVDA earnings or a hyperscaler CapEx update).",
-      "invalidation": "NVDA cutting CapEx guidance Aug 26 — confirms structural AI spending slowdown and extends bear thesis to the full memory complex.",
-      "horizon": "Sentiment read: 1-3 sessions. Fundamental confirmation: NVDA earnings August 26."
+      "asset": "Memory complex vs NVDA — AI demand thesis diagnostic",
+      "thesis": "MU (−3.4%), SKHY (−6.1%), and SNDK (−9%) are in bear-market territory from July highs on the AI CapEx peaking narrative. NVDA at ~$220 has not participated in the selloff. The divergence either means (a) the memory selloff is supply and pricing noise specific to the HBM layer below Vera Rubin, or (b) NVDA has not yet priced the same demand risk. NVDA's August 26 Q2 FY27 earnings is the definitive event for resolving which case is true.",
+      "entry": "MU $880 is near-term support; $920 is where the selloff stalls and the move becomes neutral. The levels that define whether the divergence resolves bullishly (NVDA guide flat-to-up on Aug 26, memory bear isolated) or bearishly (NVDA guide conservative, divergence closes downward) are the August 26 datacenter revenue and gross margin numbers.",
+      "invalidation": "NVDA selling through $216 before August 26 would close the divergence to the downside and confirm the AI demand concern extends beyond the memory tier.",
+      "horizon": "Near-term sentiment: 1-3 sessions. Fundamental confirmation: NVDA earnings August 26."
     }
   ],
-  "bear_case": "The SPCX lockup is not purely mechanical: if insiders sell aggressively on day one, it signals that well-positioned participants are monetizing the AI infrastructure thesis at current prices because they see capex payback as uncertain. MU at −3.4% into a Burry put position is institutional repositioning, not retail noise — if NVDA does not hold above $216 today, the 'AI hardware spending is intact' thesis is directly challenged and the memory bear reads through to the full complex. A simultaneous SPCX lockup failure + memory complex acceleration would create a negative momentum loop in NQ that the 1-of-6 regime reading cannot reflect in real time. NFP above 120K tomorrow re-prices September hike toward 65%, returning the September Hike trigger and making the regime 2-of-6. SPX closing below 7,380 invalidates this morning read entirely.",
+  "bear_case": "The SPCX lockup is not mechanically absorbing: insiders are not treating the AI-infrastructure narrative as a reason to hold at $93. If this signals that well-positioned participants are monetizing because capex payback timelines are uncertain, the MU/SKHY/SNDK selloff and the SPCX unlock are the same trade expressed across two sectors — AI hardware supply is being de-risked at the most-informed tier. NVDA not selling off is the bull side's only read-through; that divergence collapses if NVDA moves through $216 today. NFP above 130K tomorrow re-prices September toward 65%, returning the September trigger and making the regime 2-of-6. SPX closing below 7,380 invalidates this morning read entirely.",
   "body_mdx": "data/briefings/markets/2026-08-06-morning.mdx"
 }
