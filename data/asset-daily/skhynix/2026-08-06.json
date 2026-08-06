@@ -1,0 +1,157 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-08-06",
+  "generated_at": "2026-08-06T21:30:00Z",
+  "currency_symbol": "₩",
+  "day_winner": "bears",
+  "day_summary": "SK Hynix collapsed -10.37% (₩173,000) as SanDisk's muted NAND pricing outlook triggered a KOSPI circuit breaker and ₩3.3T in foreign selling — the thesis-validity floor (₩1,550,000) was breached on a closing basis for the first time since the July 28 earnings rally, mandating a downgrade from BUY to HOLD pending stabilization above the Aug 3 panic trough.",
+  "long_pnl": "Longs from the July 30 entry (~₩1,318,000) are still +13.4% despite today's -10.37% flush; longs entered near the ₩1,668,000 intraday high (Aug 5) are now -10.4%.",
+  "short_pnl": "Shorts were paid today — a -10.37% single-session move is exceptional; covering at or near current levels while ₩1,483,000 holds is the higher-probability path.",
+  "decision": {
+    "action": "hold",
+    "conviction": "medium",
+    "horizon": "2–4 weeks",
+    "rationale": "The thesis-validity floor (₩1,550,000) has been breached on a closing basis (₩1,495,000), triggering a mandatory reassessment per the framework established in prior dossiers. However, the fundamental HBM thesis remains intact: 2026 HBM capacity is sold out, 2027 allocation conversations are underway, and SanDisk's NAND pricing weakness is structurally separate from DRAM/HBM pricing dynamics. Selling into a -10.37% single-session flush after a +26.6% move from entry would chase weakness into a likely support zone. HOLD pending a test of ₩1,483,000 (Aug 3 panic trough). A closing breach of ₩1,483,000 upgrades the signal to SELL."
+  },
+  "so_what": {
+    "line": "Hold — don't sell into the flush. The HBM thesis is intact, the July 30 entry is still profitable, and the next decision point is ₩1,483,000, not today's close.",
+    "bull": "HBM 2026 sold out + 2027 allocations underway — today's selloff was NAND contagion, not a crack in the AI memory demand story.",
+    "bear": "Thesis-validity floor breached; KOSPI circuit breaker + ₩3.3T foreign selling signals macro/positioning risk is larger than initially modeled. A close below ₩1,483,000 confirms the post-earnings re-rating has fully unwound and forces SELL."
+  },
+  "snapshot": {
+    "price": 1495000,
+    "change_pct": -10.37,
+    "change_abs": -173000,
+    "prev_close": 1668000,
+    "week52_high": 1867213,
+    "week52_low": 1030000,
+    "market_cap": "~₩1,089T (~$789B)",
+    "extra": [
+      { "label": "Thesis-Validity Floor (₩1,550,000)", "value": "BREACHED on close (₩1,495,000 < ₩1,550,000)", "tone": "down" },
+      { "label": "Decision Downgrade", "value": "BUY (high) → HOLD (medium)", "tone": "down" },
+      { "label": "KOSPI Close", "value": "6,295.44 (−302.82 pts / −4.59%)", "tone": "down" },
+      { "label": "Foreign Selling (KOSPI)", "value": "₩3.3T (circuit breaker triggered)", "tone": "down" },
+      { "label": "Entry P&L (July 30 ~₩1,318K)", "value": "+13.4% (still profitable)", "tone": "up" },
+      { "label": "Next Decision Level", "value": "₩1,483,000 — close below = SELL signal", "tone": "neutral" },
+      { "label": "Framework Gate (₩1,867,213)", "value": "24.9% above current price", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv_note": "Implied volatility sharply elevated post-selloff; options pricing a continued wide range into next week.",
+    "short_interest": "~1.2% of float (pre-selloff estimate); short-covering flows mixed with fresh short initiation on the floor breach.",
+    "notable_flow": "Foreign investors sold ₩3.3T across KOSPI today — SK Hynix was the largest single-name contributor given its ~7% KOSPI weight. The selling intensity was sufficient to trigger a KOSPI-level circuit breaker (sidecar mechanism), suggesting algorithmic/forced selling rather than purely fundamental repositioning. Domestic institutions were net buyers of the flush, consistent with the Aug 3 pattern."
+  },
+  "what_traders_are_doing": "The circuit breaker event and ₩3.3T foreign outflow created a sharp but potentially mechanical selloff — the domestic institution bid (observed Aug 3) reappeared, and the ₩1,483,000 level (Aug 3 panic trough) is now the structural line that separates a tradeable flush from a confirmed re-rating unwind. Traders who entered on the earnings beat are watching ₩1,483,000 as the tripwire; those with longer-term HBM conviction are sizing into the dip with tight stops below the Aug 3 trough. NAND-focused names (MU, WDC) led the global selloff; DRAM/HBM-specific read-through is still being assessed.",
+  "news": [
+    {
+      "label": "SanDisk Q4 FY2026 beat revenue ($8.97B) but guided Q1 FY27 to $10.3–10.8B midpoint ($10.55B) vs. $10.8B consensus — 'muted NAND pricing' in Q1 flagged as the primary driver",
+      "source": "SanDisk earnings release",
+      "sentiment": "negative"
+    },
+    {
+      "label": "WDC -16%, SNDK -11–13%, MU -5.6% in US premarket/session; SK Hynix led KOSPI lower as Korea opened with the NAND guidance already priced in by global markets",
+      "source": "Market data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "KOSPI circuit breaker (sidecar mechanism) triggered during session; KOSPI closed at 6,295.44 (−4.59%) — second-largest single-day decline in 2026",
+      "source": "KRX market data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Foreign investors sold ₩3.3T across KOSPI — SK Hynix among largest single-name outflows given ~7% index weight",
+      "source": "KRX / KOSCOM data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "FMS 2026 (Flash Memory Summit): SK Hynix confirmed HBM3E 16-Hi mass production ramp, HBM4 sampling by Q4 2026 — HBM capacity sold out through 2026, 2027 allocation conversations underway",
+      "source": "FMS 2026 / SK Hynix IR",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Thesis-validity floor (₩1,550,000) breached on closing basis for first time since July 28 earnings rally — prior dossier framework triggers mandatory HOLD reassessment",
+      "source": "Internal framework",
+      "sentiment": "negative"
+    }
+  ],
+  "outlook": {
+    "short_term": "The ₩1,483,000 level (Aug 3 panic trough) is now the key binary: hold above it and the stock consolidates in a ₩1,483K–₩1,600K range as the market separates NAND pricing from HBM pricing; close below it and the post-earnings re-rating has fully unwound, warranting exit. NFP Friday (Aug 7) is the next macro catalyst — a benign print stabilizes Korean risk appetite; a hot print risks further foreign outflows. Base case: ₩1,483K holds on first test, domestic institutions absorb, and the stock rebuilds above ₩1,550K over 2–3 weeks.",
+    "long_term": "HBM3E and HBM4 ramp cycles remain on track regardless of NAND pricing. The structural AI infrastructure build-out (sovereigns, hyperscalers, HPC) underpins DRAM/HBM demand through at least H1 2027. The framework gate (₩1,867,213) represents the normalized 12-month fundamental target. A rebuild to ₩1,650K–₩1,750K by end of Q3 2026 is the base case, contingent on no further fundamental deterioration."
+  },
+  "bull_case": [
+    "HBM thesis is fully intact: 2026 HBM capacity sold out, 2027 allocation conversations underway per FMS 2026 — SanDisk's NAND pricing weakness does not touch this segment.",
+    "Today's selloff was mechanical (circuit breaker, ₩3.3T foreign outflow) rather than fundamental — domestic institutions were net buyers, the same pattern that marked the Aug 3 trough.",
+    "July 30 entry (~₩1,318,000) remains +13.4% profitable even after today's -10.37% flush — the trade is not broken, it is being tested.",
+    "KOSPI all-time high (6,598.26) was set just yesterday (Aug 5); a single-day circuit-breaker correction is normal mechanics after a 9-day straight run.",
+    "SanDisk's miss was on Q1 FY27 guidance, not reported results — and NAND/DRAM pricing cycles historically decouple from HBM pricing (bespoke, long-lead-time contracts)."
+  ],
+  "bear_case": [
+    "Thesis-validity floor (₩1,550,000) breached on a closing basis — the prior framework language was explicit: 'a CLOSING breach signals the post-earnings re-rating has been fully unwound.' The downgrade is mandatory.",
+    "A -10.37% single-session move on ₩3.3T foreign selling suggests forced/systematic de-risking that can cascade over multiple sessions before finding a bottom.",
+    "KOSPI circuit breaker confirms systemic stress, not just stock-specific selling — macro contagion risk (Korean FX, CDS, broader EM outflows) must be monitored.",
+    "If global AI capex sentiment softens even modestly (e.g. hyperscaler commentary at Q3 earnings), HBM demand trajectory could disappoint — which would invalidate the last remaining bull pillar.",
+    "Close below ₩1,483,000 (Aug 3 panic trough) = confirmed post-earnings unwind → mandatory SELL per the framework."
+  ],
+  "key_levels": [
+    {
+      "label": "★ ₩1,483,000 — Aug 3 panic trough (prior capitulation low); close below = SELL signal per the framework",
+      "level": "₩1,483,000",
+      "kind": "support"
+    },
+    {
+      "label": "₩1,495,000 — today's closing price; also the thesis-validity floor breach close (₩55K below ₩1,550K floor)",
+      "level": "₩1,495,000",
+      "kind": "pivot"
+    },
+    {
+      "label": "₩1,550,000 — thesis-validity floor (pre-earnings reference close Jul 28); reclaiming this on a closing basis restores BUY",
+      "level": "₩1,550,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,668,000 — Aug 5 close (yesterday's high-water mark); first meaningful resistance on any rebound",
+      "level": "₩1,668,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,750,000 — round-number resistance and prior consolidation zone from late July; intermediate bull target",
+      "level": "₩1,750,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ ₩1,867,213 — framework gate level (prior dossier BUY threshold); 24.9% above current price; reclaiming = framework fully restored",
+      "level": "₩1,867,213",
+      "kind": "resistance"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-08-07",
+      "label": "NFP (July jobs report) — US macro print affects Korean risk appetite and KRW/USD; hot print risks additional foreign outflows from KOSPI",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-10",
+      "label": "SK Hynix trading session — first close after weekend; ₩1,483,000 level test is the key outcome to watch",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-20",
+      "label": "NVDA FY2027 Q2 earnings (est.) — HBM pull-through demand commentary is a direct SK Hynix read-through",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-01",
+      "label": "SK Hynix Q3 2026 preliminary results — HBM shipment volumes and pricing trajectory vs. NAND impact",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-15",
+      "label": "FMS 2026 follow-on / HBM4 production update — next formal HBM capacity announcement",
+      "importance": "medium"
+    }
+  ],
+  "analysis": "## Technical Analysis\n\n### Thesis-Validity Framework Status\n| Level | Meaning | Status |\n|-------|---------|--------|\n| ₩1,867,213 | Framework BUY gate | 24.9% above — not in range |\n| ₩1,668,000 | Aug 5 close (ATH area) | Now resistance |\n| ₩1,550,000 | Thesis-validity floor | **BREACHED** (close: ₩1,495,000) |\n| ₩1,495,000 | Today's close | Current price |\n| ₩1,483,000 | Aug 3 panic trough | **KEY DECISION LEVEL** |\n\nThe prior dossier framework was explicit: \"A CLOSING breach [of ₩1,550,000] signals the post-earnings re-rating has been fully unwound and requires BUY thesis reassessment.\" That breach has occurred. The mandatory reassessment outcome: **HOLD**, not SELL, because the breach is 3.6% below the floor (₩1,495K vs ₩1,550K) and the HBM fundamental pillar is intact.\n\n### Price Structure\nSK Hynix sold off -10.37% in a single session, falling from ₩1,668,000 (Aug 5 close) to ₩1,495,000. The move was driven by a KOSPI-level circuit breaker event with ₩3.3T in foreign selling — the largest single-day outflow since early 2026. The pattern closely mirrors the Aug 3 session (-5.2%), which also featured domestic institution buying at the trough. The ₩1,483,000 Aug 3 low is the next critical level.\n\n### NAND vs. HBM Pricing Dynamics\nSanDisk's \"muted NAND pricing\" language refers to commodity NAND flash, where supply/demand balances on a quarterly basis. SK Hynix's HBM (High Bandwidth Memory) contracts are:\n1. **Bespoke / long-lead-time**: 12–18 month supply agreements with hyperscalers and NVDA\n2. **Already allocated**: 2026 capacity sold out as of FMS 2026 confirmation\n3. **Pricing-inelastic**: HBM price per GB is 5–8x NAND price per GB; volume constraints drive revenue, not spot pricing\n\nThe market treated SK Hynix as a proxy for the entire memory complex. The actual read-through to HBM pricing is near-zero in the near term.\n\n### Critical Decision Points Going Forward\n1. **₩1,483,000 (Aug 3 trough)**: Hold above → HOLD maintained. Close below → mandatory SELL signal.\n2. **₩1,550,000 (thesis-validity floor)**: Reclaim on close → BUY reinstated at medium conviction.\n3. **₩1,867,213 (framework gate)**: Full BUY at high conviction (original framework condition).\n\n### Circuit Breaker Context\nThe KOSPI sidecar (circuit breaker) triggered when the index fell more than 5% intraday. This mechanism pauses program trading for 20 minutes and historically marks a short-term capitulation low — the Aug 3 circuit breaker (not formally triggered but sidecar-approached) preceded a 26.6% intraday bounce. Today's breaker, at a ₩6.3K close, suggests institutional rebalancing rather than fundamental collapse.\n\n### July 30 Entry P&L Context\n- Entry: ~₩1,318,000 (July 30, day after earnings-day panic trough)\n- Today's close: ₩1,495,000\n- Unrealized gain: +₩177,000 (+13.4%)\n- The trade is still profitable. Selling into a -10.37% flush with +13.4% unrealized gain would crystallize a real return but abandon the HBM thesis at precisely the moment of maximum NAND fear."
+}
