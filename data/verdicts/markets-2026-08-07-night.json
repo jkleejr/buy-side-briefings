@@ -1,0 +1,105 @@
+{
+  "routine": "markets",
+  "date": "2026-08-07",
+  "window": "night",
+  "generated_at": "2026-08-07T23:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "NFP loses 23,000 jobs — September hike thesis collapses as equities close at records",
+    "label": "Labor shock resolved rate-hike risk but not supply-shock risk: SPX 7,757 record, 30Y holds 5.17%, gold surges $110, Hormuz unresolved",
+    "rationale_short": "July payrolls printed −23,000 against an 80,000 consensus, with May and June revised down a combined 103,000 and average hourly earnings cooling to +3.2% YoY. September hike odds on Kalshi collapsed from 54% to 36% — 34 points below the 70% trigger. Equities rallied to records (SPX +0.62%, Nasdaq +1.30%), but the 30Y eased only 3bps to 5.17% and gold surged +2.61% to $4,350: two cross-asset signals that the inflation-growth tension is unresolved. Khamenei has still not responded to the Hormuz draft; oil held near its regime thresholds. Level that changes the read: 30Y closes below 5.00% on two consecutive sessions, or SPX closes below 7,380.",
+    "supporting_data": [
+      {
+        "label": "NFP −23K vs +80K est; revisions −103K combined; AHE +3.2% YoY vs +3.5% est; unemployment 4.1%",
+        "url": "https://www.bls.gov/news.release/archives/empsit_08072026.htm"
+      },
+      {
+        "label": "September hike collapses to 36% on Kalshi from 54% — 34 points below the 70% formal trigger",
+        "url": "https://www.cnbc.com/2026/08/07/odds-the-fed-hikes-in-september-tumble-following-big-july-jobs-miss.html"
+      },
+      {
+        "label": "SPX record 7,757.64 (+0.62%); Nasdaq 26,690 (+1.30%); week: SPX +3.37%, Nasdaq +4.86%",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-7-2026"
+      },
+      {
+        "label": "Gold +2.61% to $4,350 — surged on NFP miss alongside equities, signaling growth-uncertainty rather than pure rate relief",
+        "url": "https://www.fxleaders.com/news/2026/08/07/gold-price-forecast-today-xau-usd-holds-above-4250-ahead-of-nfp/"
+      },
+      {
+        "label": "Iran-Oman Hormuz draft awaits Khamenei; Pezeshkian: communication 'very difficult at the moment'; Brent $82.15, WTI $78.31",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Draft-Agreement-Reportedly-Awaits-Khamenei-Approval.html"
+      },
+      {
+        "label": "SPCX Day 3 closes $114.92 — flat from Day 2; Morgan Stanley reiterates $140 target, frames lockup as entry",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262089173-spacex-spcx-lockup-rally-morgan-stanley-bullish-140-target-terafab-tradingkey"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7757.64, "change_pct": 0.62,  "as_of": "2026-08-07T20:00:00Z" },
+    "nasdaq": { "level": 26690.62, "change_pct": 1.30, "as_of": "2026-08-07T20:00:00Z" },
+    "vix":    { "level": 14.90,   "change_pct": -2.80, "as_of": "2026-08-07T20:00:00Z" },
+    "ust10y": { "level": 4.60,    "change_bps": -8,    "as_of": "2026-08-07T20:00:00Z" },
+    "dxy":    { "level": 98.80,   "change_pct": -1.15, "as_of": "2026-08-07T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.17,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 36.0,  "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 82.15, "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 78.31, "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7757,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 65300, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "SPCX",
+      "note": "Day 3 closes $114.92 — flat from Day 2 stabilization. Three sessions of distribution, two of absorption. Morgan Stanley reiterates $140 target, framing lockup as entry. Next 7% staggered tranche expected ~Aug 20. Oct Q3 earnings is the fundamental catalyst: Starlink profitability and AI revenue above $2.56B are the tests. Close below $105 on volume would signal the next tranche is being front-run.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$221 area; held $216-221 through the week. SpaceX $15.83B AI capex exclusive is confirmed demand. Aug 26 Q2 FY27 needs gross margin above 76% and guide above consensus. AMD −8% AH from $518 and DDOG −17% on beat-and-raise are the altitude-risk templates at current prices.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$162, consolidating after Tuesday's +26.4% post-earnings surge. NFP labor softness removes the DoD-urgency deflation risk; federal AI spend is structurally supported. Q3 US commercial growth above 100% YoY is the multiple-maintenance condition at ~98x forward sales.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$483-489; $484 floor held for three sessions post-SpaceX exclusivity news. Lisa Su's rebuttal of the competitive displacement thesis needs Q3 gross-margin data to prove. Two closes above $490 on normal volume confirm the floor.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$65,300 (+1.5%) on NFP miss; Gate 2 ($62K) buffer extended to ~$3,300. Benefiting from September hike odds falling to 36%; BTC has tracked the rate-relief narrative consistently this week.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Iran-Oman Hormuz draft — weekend decision",
+      "thesis": "Khamenei has not publicly responded to the restrictive Hormuz draft. The structure has a 3% vs 5-7% transit fee gap between Oman's offer and Iran's ask. Pezeshkian described communication as 'very difficult at the moment.' A negotiated deal (3% transit fee): Brent drops toward $74-75, both oil triggers clear, and the 30Y has a path toward 5.00%. Restrictive draft approved (US/Israeli ship ban): Brent clears $85 and WTI clears $79 simultaneously — the dual breach that held the regime at 3-of-6 earlier this cycle. The deal has failed to close three times in 2026; each miss was followed by an oil recovery from the dip.",
+      "entry": "Brent $82.15 and WTI $78.31 are $2.85 and $0.69 from their respective breach thresholds. Brent holding below $79 for two sessions after any Khamenei announcement signals a workable modification rather than the restrictive version.",
+      "invalidation": "Khamenei approves the restrictive draft; Brent clears $85 and WTI clears $79 — regime widens from 1-of-6 to 3-of-6 at Monday open.",
+      "horizon": "Weekend through Monday open."
+    },
+    {
+      "asset": "30Y Treasury — 5.00% clearing path",
+      "thesis": "The 30Y eased only 3bps to 5.17% on the largest NFP miss of 2026. That limited response confirms the long end is pricing the Hormuz oil premium as much as the rate path. July NFP −23K plus AHE +3.2% YoY removed the wage-inflation channel; August 13 CPI tests whether the supply-inflation channel has attenuated similarly. July CPI embeds the June-July oil prices ($82-91/bbl) before the recent pullback. Below 3.0% on CPI: 30Y has a direct path through 5.00%, the sole formal breach resolves, and the full rate-relief thesis is confirmed. Above 3.5%: 30Y holds 5.17%+ regardless of labor data.",
+      "entry": "Current: 5.17%. Formal threshold: 5.00%. Two consecutive closes below 5.00% extinguish the sole remaining regime breach — the most consequential market event of the next five trading days.",
+      "invalidation": "CPI above 3.5% on August 13 validates Kashkari's supply-shock thesis; September hike odds recover above 55%; 30Y holds 5.20%+.",
+      "horizon": "August 13 CPI as primary catalyst; Hormuz resolution as secondary."
+    },
+    {
+      "asset": "NVDA — August 26 Q2 FY27 setup",
+      "thesis": "NVDA held the $216-221 range through the SpaceX Vera Rubin commitment and the NFP session. At ~$221, the Q2 FY27 earnings (August 26) need gross margin above 76% and a Q3 guide above consensus. The SpaceX $15.83B AI capex commitment is real demand and raises the guide floor — but it also raises what 'good enough' looks like at current prices. AMD −8% AH on a genuine beat from $518 and DDOG −17% on beat-and-raise from 25-30x NTM are the recent templates: altitude amplifies the response to any disappointment. The Jackson Hole keynote begins August 27 — one day after earnings — with no de-risk window between them.",
+      "entry": "Support: $216 (structural, held through SpaceX news and NFP session). Resistance: $222-225. Two closes above $225 through CPI would suggest the market is pricing a clean August 26 beat.",
+      "invalidation": "Two consecutive closes below $210 on normal volume before August 26 would imply the AMD post-earnings pattern is extending.",
+      "horizon": "August 26 Q2 FY27 earnings."
+    }
+  ],
+  "bear_case": "The −23K NFP print is not a soft labor market — it is actual job losses, with three consecutive months of downward revision (May, June, now July) that make the reported-jobs baseline through 2026 materially weaker than the tape priced. Gold at $4,350 and equities at records on the same day is the stagflation correlation: gold is pricing deteriorating real growth alongside persistent supply-driven inflation, not just rate relief. The 30Y at 5.17% — down only 3bps after the largest NFP miss of 2026 — confirms the bond market has not accepted the full 'no hike, no inflation' thesis. If August 13 CPI prints above 3.5% with oil still at $82 and Khamenei unresponsive, Kashkari's supply-shock frame (hike into labor softness because the inflation is supply-side) becomes the dominant policy read. A record SPX at 7,757 with −23K jobs and $4,350 gold is pricing rate relief, not growth; if 30Y does not clear 5.00% by August 15, that pricing is vulnerable. If SPX retreats below 7,380, the record-close bid is not holding.",
+  "body_mdx": "data/briefings/markets/2026-08-07-night.mdx"
+}
