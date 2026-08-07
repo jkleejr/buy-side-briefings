@@ -1,0 +1,170 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T09:00:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+  "day_winner": "bears",
+  "day_summary": "SK Hynix fell a further -4.88% (₩73,000) to ₩1,422,000 in a textbook dead-cat-bounce failure — a gap-up open to ₩1,521,000 ran to ₩1,542,000 (just below the ₩1,550,000 thesis-validity floor) before reversing hard to close below the ₩1,483,000 panic trough, triggering the mandatory SELL signal established in the Aug 6 dossier. KOSPI broke below 6,200. The July 30 entry is still profitable (+7.89%) but the framework gate demands exit.",
+  "long_pnl": "Longs from the July 30 entry (~₩1,318,000) are +7.89% despite two brutal sessions; longs from the Aug 5 high (~₩1,668,000) are now -14.7%. The framework says SELL — protecting the remaining gain is the priority.",
+  "short_pnl": "Shorts initiated on the Aug 6 thesis-floor breach now hold a combined -10.37% + -4.88% gain (entry near ₩1,495,000 = +4.88% on today's session alone); covering partially at today's close locks in exceptional returns from a short-only thesis.",
+  "decision": {
+    "action": "sell",
+    "conviction": "medium",
+    "horizon": "immediate",
+    "rationale": "The Aug 6 dossier was explicit: 'A closing breach of ₩1,483,000 upgrades the signal to SELL.' SK Hynix closed at ₩1,422,000 — ₩61,000 (4.1%) below the tripwire. The mandatory SELL is triggered. Conviction is medium rather than high because the HBM fundamental thesis remains structurally intact (2026 HBM sold out, 2027 allocations underway), and this SELL is mechanical/technical rather than fundamental. However, the dead-cat-bounce failure pattern — gap to ₩1,542,000 then full reversal to new multi-session lows — is a high-confidence bearish continuation signal. The July 30 entry (+7.89%) is still profitable; holding further risks converting a profitable trade into a loss if foreign selling continues next week."
+  },
+  "so_what": {
+    "line": "SELL — the framework tripwire was breached on a confirmed dead-cat-bounce failure; exit to protect the remaining +7.89% gain from the July 30 entry.",
+    "bull": "HBM thesis is fundamentally intact — sold out 2026, 2027 allocations underway, US NFP miss reduces macro headwinds. A re-entry at ₩1,318,000–₩1,400,000 preserves optionality if foreign selling exhausts next week.",
+    "bear": "Two consecutive sessions of -10.37% and -4.88% driven by ₩3.3T+ in foreign outflows, a dead-cat-bounce failure at ₩1,542,000 (short of the ₩1,550,000 thesis floor), and KOSPI breaking 6,200 all point to continued forced selling before stabilization."
+  },
+  "snapshot": {
+    "price": 1422000,
+    "change_pct": -4.88,
+    "change_abs": -73000,
+    "prev_close": 1495000,
+    "day_high": 1542000,
+    "day_low": 1409000,
+    "week52_high": 1867213,
+    "week52_low": 1030000,
+    "market_cap": "~₩1,035T (~$750B)",
+    "extra": [
+      { "label": "Framework SELL Trigger (₩1,483,000)", "value": "BREACHED — close ₩1,422,000 (₩61K below threshold)", "tone": "down" },
+      { "label": "Decision Upgrade", "value": "HOLD (medium) → SELL (medium) — mandatory per Aug 6 framework", "tone": "down" },
+      { "label": "Dead-Cat Pattern", "value": "Gap-up to ₩1,521,000 → high ₩1,542,000 → hard reversal → close ₩1,422,000", "tone": "down" },
+      { "label": "Thesis-Validity Floor (₩1,550,000)", "value": "Never reclaimed — ₩1,542,000 bounce high = ₩8,000 short", "tone": "down" },
+      { "label": "KOSPI Close", "value": "Below 6,200 (second consecutive session of major index weakness)", "tone": "down" },
+      { "label": "Entry P&L (July 30 ~₩1,318K)", "value": "+7.89% — still profitable; SELL to protect", "tone": "up" },
+      { "label": "US NFP Read-Through", "value": "-23K vs +83K expected (released after KRX close at 12:30 UTC) — positive for Monday open", "tone": "neutral" }
+    ]
+  },
+  "positioning": {
+    "iv_note": "Implied volatility remains sharply elevated following back-to-back sessions of -10.37% and -4.88%; options pricing a wide range into next week with skew biased toward further downside.",
+    "short_interest": "~1.8–2.2% of float (estimated post-selloff); fresh short initiation likely on the ₩1,483,000 breach; prior short-covering flows from Aug 6 now replaced by fresh shorts targeting ₩1,400,000 and below.",
+    "notable_flow": "The dead-cat-bounce failure is consistent with institutional re-shorting at resistance (₩1,542,000 = just below ₩1,550,000 thesis floor) rather than sustained covering. KRX session predates the US NFP miss (released 12:30 UTC, after KRX ~06:30 UTC close), so Korean markets absorbed no macro relief from the jobs data — that read-through is reserved for Monday's open."
+  },
+  "what_traders_are_doing": "The playbook today was short-covering into the gap-up open followed by re-initiation of shorts at ₩1,542,000 — the dead-cat ceiling just below the ₩1,550,000 thesis floor. The failure to reclaim even ₩1,542,000 (₩8,000 short of the floor) validated the bear thesis: the post-earnings re-rating has fully unwound. The Aug 3 panic trough (₩1,483,000) has now been breached on a closing basis, and market structure has shifted from 'test the floor' to 'find a new floor.' Domestic institutions who bought Aug 3 and Aug 6 flush are now sitting on losses; further selling into Monday risk remains elevated. The US NFP miss (-23K vs +83K) is the one positive macro input that didn't reach Korean markets Friday — traders will assess whether it sparks a Monday gap-up relief or simply slows the selling.",
+  "news": [
+    {
+      "label": "SK Hynix dead-cat-bounce failure: gap-up open to ₩1,521,000, intraday high ₩1,542,000 (₩8K below the ₩1,550,000 thesis floor), hard reversal to close ₩1,422,000 — closing below the ₩1,483,000 mandatory SELL threshold",
+      "source": "KRX market data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "KOSPI broke below 6,200 — third consecutive session of major index weakness following Wednesday's all-time high close (6,598.26)",
+      "source": "KRX market data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "BigGo Finance: 'Kospi Breaks Below 6,200 as SK Hynix Tumbles 5%' — confirms -4.88% close and broad index deterioration",
+      "source": "BigGo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "US NFP July: -23K vs +83K expected (released 12:30 UTC, AFTER KRX closed ~06:30 UTC) — removes Fed rate-hike tail risk; positive for Monday Korea open but did not benefit Friday's KRX session",
+      "source": "US Bureau of Labor Statistics",
+      "sentiment": "positive"
+    },
+    {
+      "label": "'SK Hynix's Divergent Paths: Record HBM Output and a Bear-Market Stock Collide' — HBM3E 16-Hi mass production and HBM4 sampling confirmed; stock down -24% from Aug 5 ATH area in 2 sessions",
+      "source": "Financial media coverage",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Memory sector contagion persists: MU, WDC, SNDK remain under pressure; AI compute (NVDA, SMCI) rallied on NFP miss — bifurcation between HBM/compute and NAND/storage continues",
+      "source": "Market data",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Framework SELL triggered: prior dossier (Aug 6) stated 'A closing breach of ₩1,483,000 upgrades the signal to SELL' — close ₩1,422,000 confirms the signal",
+      "source": "Internal framework",
+      "sentiment": "negative"
+    }
+  ],
+  "outlook": {
+    "short_term": "The immediate risk is continued foreign selling into Monday's KRX open. The US NFP miss (-23K) is the one macro positive that didn't reach Korean markets, and it may spark a Monday relief — NVDA +0.91% and US markets closing at record highs (SPX 7,757.64) provides a supportive backdrop. However, the structural selling pressure from the SanDisk NAND shock and two consecutive -10%/-5% sessions suggests any Monday bounce should be treated as a re-entry opportunity at lower prices, not the start of a recovery. Key to watch: does the ₩1,409,000 session low hold on Monday, and does domestic institution buying re-emerge at that level? The round-number ₩1,400,000 is the next structural support.",
+    "long_term": "The HBM thesis is fundamentally intact: HBM3E 16-Hi in mass production, HBM4 sampling by Q4 2026, 2026 capacity sold out, 2027 allocations underway. The framework SELL is technical/mechanical — a re-entry is warranted once the stock stabilizes above a clearly defined support level (₩1,318,000–₩1,400,000 zone) with evidence of domestic institution accumulation. The structural AI infrastructure build-out underpins HBM demand through at least H1 2027. A rebuild to ₩1,550,000–₩1,650,000 remains the 6–8 week base case from a lower re-entry point."
+  },
+  "bull_case": [
+    "HBM thesis unbroken: 2026 HBM capacity sold out, HBM4 sampling on track, 2027 allocation conversations already underway — SanDisk NAND guidance is structurally irrelevant to HBM pricing contracts.",
+    "US NFP miss (-23K) reduces Fed rate-hike risk and strengthens KRW/USD; Monday KRX open benefits from US market record close (SPX 7,757.64, Nasdaq +1.3%) — the macro backdrop for Korean equities improved after Friday's KRX close.",
+    "Two-session flush (-10.37% + -4.88%) has covered 24% from the Aug 5 high — this is a sentiment overshoot, not a fundamental impairment. Re-entry at ₩1,318,000–₩1,400,000 offers risk/reward similar to the original July 30 entry.",
+    "Domestic institutions bought the Aug 3 and Aug 6 flushes — the structural buyer of last resort has a track record of absorbing panic-driven foreign outflows at the ₩1,400,000–₩1,483,000 zone.",
+    "NVDA Q2 FY2027 earnings (~Aug 26) is the next major HBM catalyst; a strong SK Hynix HBM pull-through commentary could re-rate the stock above ₩1,550,000 quickly."
+  ],
+  "bear_case": [
+    "Framework SELL is mandatory — the Aug 6 dossier language was unambiguous: 'A closing breach of ₩1,483,000 upgrades the signal to SELL.' Close at ₩1,422,000 is ₩61,000 below the tripwire. The signal is active.",
+    "Dead-cat-bounce failure at ₩1,542,000 (just below the ₩1,550,000 thesis floor) is a high-confidence bearish continuation signal — the stock had two chances to reclaim the floor (Aug 6 and Aug 7) and failed both.",
+    "Back-to-back foreign selling sessions suggest systematic/index-rebalancing flows rather than purely fundamental repositioning — these can persist for 3–5 sessions before exhausting.",
+    "KOSPI below 6,200 increases KRX margin call risk and correlates with broader EM de-risking; KRW/USD weakness amplifies foreign return drag and can drive further outflows independently of SK Hynix fundamentals.",
+    "The ₩1,409,000 session low is just ₩91,000 above the ₩1,318,000 July 30 entry trough — a breach would convert the entire post-earnings trade from profitable to break-even, eliminating the return buffer."
+  ],
+  "key_levels": [
+    {
+      "label": "★ ₩1,483,000 — Aug 3 panic trough (now BREACHED on close); framework SELL was triggered here; now converts to overhead supply/resistance on any bounce",
+      "level": "₩1,483,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,542,000 — today's dead-cat-bounce high (failed to reclaim ₩1,550,000 floor); first resistance zone on a Monday relief bounce",
+      "level": "₩1,542,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,550,000 — thesis-validity floor (pre-earnings close Jul 28); reclaiming this on a closing basis would re-open re-entry consideration",
+      "level": "₩1,550,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ ₩1,409,000 — today's intraday low; first line of structural support; hold above = potential double-bottom with Aug 3 trough; breach = cascade to ₩1,400,000 and below",
+      "level": "₩1,409,000",
+      "kind": "support"
+    },
+    {
+      "label": "₩1,400,000 — round-number support and psychological floor; domestic institution bid likely at this level based on Aug 3 and Aug 6 buying patterns",
+      "level": "₩1,400,000",
+      "kind": "support"
+    },
+    {
+      "label": "₩1,422,000 — today's close; now a pivot: acts as resistance on a Monday gap-down, or as a support/floor if Monday opens higher",
+      "level": "₩1,422,000",
+      "kind": "pivot"
+    },
+    {
+      "label": "₩1,318,000 — July 30 entry / post-earnings trough; structural support representing the original BUY entry; breach would unwind all post-earnings gains",
+      "level": "₩1,318,000",
+      "kind": "support"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-08-10",
+      "label": "KRX Monday open — first KRX session to price in US NFP miss (-23K) and US market record close; ₩1,409,000 hold or breach is the binary outcome",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-12",
+      "label": "US CPI (July) — inflation print affects KRW/USD and Korean risk appetite; soft print extends the NFP-miss macro tailwind for Korean equities",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-20",
+      "label": "NVDA FY2027 Q2 earnings (est.) — HBM pull-through demand and pricing commentary is the direct SK Hynix re-rating catalyst; strong guide could reverse the post-SanDisk de-rating",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-01",
+      "label": "SK Hynix Q3 2026 preliminary results — HBM shipment volumes, pricing trajectory, and NAND exposure quantification vs. market fears",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "FOMC September decision — rate path implications for KRW/USD and EM equity risk appetite",
+      "importance": "medium"
+    }
+  ],
+  "analysis": "## Technical Analysis\n\n### Framework Status — SELL Signal Confirmed\n| Level | Meaning | Status |\n|-------|---------|--------|\n| ₩1,867,213 | Framework BUY gate | 31.3% above — not in range |\n| ₩1,668,000 | Aug 5 close (ATH area) | Distant resistance |\n| ₩1,550,000 | Thesis-validity floor | Breached Aug 6; not reclaimed |\n| ₩1,542,000 | Today's dead-cat high | Failed to reach floor |\n| ₩1,483,000 | Aug 3 panic trough | **BREACHED** — SELL triggered |\n| ₩1,422,000 | Today's close | Current price |\n| ★ ₩1,409,000 | Today's intraday low | Key support |\n\nThe Aug 6 dossier was explicit: *'A closing breach of ₩1,483,000 upgrades the signal to SELL.'* Today's close of ₩1,422,000 — ₩61,000 below the tripwire — confirms the signal. No discretionary override is available under the framework.\n\n### Dead-Cat-Bounce Failure Pattern\nToday's price action is a textbook dead-cat-bounce failure:\n1. **Gap-up open** to ₩1,521,000 (₩26,000 above prior close of ₩1,495,000) — driven by short-covering after yesterday's -10.37% crash\n2. **Intraday high** ₩1,542,000 — strong enough to trigger buy orders but ₩8,000 short of the ₩1,550,000 thesis-validity floor\n3. **Hard reversal** — sellers overwhelmed the bounce; the stock never closed the gap to the thesis floor\n4. **Close ₩1,422,000** — ₩123,000 below the intraday high; new multi-session closing low\n\nThe failure to reclaim ₩1,550,000 on an oversold bounce — after a -10.37% session — is a high-confidence bearish continuation signal. The sellers are in control at precisely the level where they needed to relinquish control.\n\n### Why Today's Selling Was Pre-NFP\nKRX closes approximately 06:30 UTC. The US July NFP data was released at 12:30 UTC — six hours after Korean markets closed. Today's ₩73,000 decline (-4.88%) priced in:\n- Continued SanDisk NAND guidance contagion (three days)\n- Forced/systematic foreign outflows (back-to-back circuit-breaker risk sessions)\n- Failed bounce attempt (dead-cat confirmation)\n\nKorean markets did NOT price in:\n- US NFP miss: -23K vs +83K expected (substantial miss, removes Fed rate-hike tail risk)\n- US SPX record close: 7,757.64 (+0.62%)\n- NVDA +0.91% to $221.22 (AI compute bifurcation from NAND contagion confirmed)\n- VIX 14.90 (-1.65%) — widest Gate 3 buffer of the cycle\n\nThis NFP relief creates a **Monday gap-up asymmetry** — Korean risk assets should benefit from the US reaction to the weak jobs print. The question is whether the structural selling pressure (₩3.3T+ outflows over two sessions) is large enough to overwhelm that relief, or whether the domestic institution bid re-emerges near ₩1,409,000–₩1,400,000.\n\n### Entry P&L Context\n- Entry: ~₩1,318,000 (July 30 trough, day after earnings-day panic)\n- Today's close: ₩1,422,000\n- Unrealized gain: +₩104,000 (+7.89%)\n- Aug 5 peak gain: +₩350,000 (+26.6%)\n- Since Aug 5 peak: -₩246,000 (-19.6% drawdown from the high)\n\nThe trade remains profitable but has given back ~75% of its peak gain in two sessions. The framework SELL preserves +7.89% from entry; staying positioned risks converting the trade to a loss if selling continues toward ₩1,318,000.\n\n### HBM Thesis Status (Fundamental Layer)\nThe SELL is **mechanical/technical**, not fundamental. The HBM thesis pillars remain:\n1. 2026 HBM capacity: fully sold out (confirmed FMS 2026)\n2. 2027 allocation conversations: underway with hyperscalers and NVDA\n3. HBM3E 16-Hi: mass production ramping\n4. HBM4: sampling by Q4 2026\n5. SanDisk NAND pricing: structurally separate from HBM contracts (bespoke, 12–18 month, volume-constrained)\n\nThis means a **re-entry framework** should be defined now:\n- **Re-entry candidate zone**: ₩1,318,000–₩1,409,000 (today's low to July 30 entry)\n- **Re-entry condition**: domestic institution bid confirmed (net buying, 2+ consecutive sessions) + no further foreign outflow circuit-breaker risk\n- **Re-entry signal**: closing above ₩1,483,000 with volume above 30-day average = confirms prior overhead resistance has been reclaimed\n\n### Monday Open Scenarios\n| Scenario | NFP Relief | Korean FX | Likely Price Range |\n|----------|------------|-----------|--------------------|\n| Gap up, sustained | KRW strengthens | Inflows return | ₩1,460,000–₩1,483,000 |\n| Gap up, faded | Mixed | Continued outflows | ₩1,409,000–₩1,450,000 |\n| Gap down | Overlooked | Forced selling | ₩1,350,000–₩1,409,000 |\n\nBase case: mild gap-up (₩1,440,000–₩1,460,000) driven by US market relief, but the dead-cat confirmation keeps overhead supply dense between ₩1,483,000 and ₩1,550,000 — any bounce is a better exit opportunity, not a re-entry signal."
+}

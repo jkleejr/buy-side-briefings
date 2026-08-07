@@ -1,0 +1,198 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T21:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "STEP-ASIDE NEAR-MISS — REFERENCE CLOSE $64,976.94 (+$536.16 / +0.83% FROM AUG 6): THE FRAMEWORK MISSED CLEARING BY $23.06. THE JULY NFP REPORT (−23K JOBS VS +83K EXPECTED, 8:30 AM ET / 12:30 UTC) WAS THE STRONGEST POSSIBLE MACRO CATALYST FOR BTC — IT REMOVED FED RATE-HIKE TAIL RISK IN A SINGLE PRINT, PUSHED SEPTEMBER FOMC PAUSE PROBABILITY TO 56%, AND DROVE BTC TO AN INTRADAY HIGH OF $65,396.97 (12:00 UTC, THE SESSION'S PEAK). BTC TRADED ABOVE $65,000 FOR THREE SEPARATE HOURS DURING THE NFP SURGE (12:00 UTC CLOSE $65,294.58, 13:00 UTC CLOSE $65,007.54). THE US AFTERNOON FADE WAS GRADUAL — THE 14:00 UTC CANDLE (210 BTC, HEAVIEST OF THE SESSION) PULLED BTC BACK FROM $65,280 TO $64,949; THE SESSION THEN DRIFTED BETWEEN $64,739 AND $64,958 THROUGH EARLY EVENING. THE REFERENCE CANDLE (20:00 UTC): OPEN $64,960.16, HIGH $65,045.08, LOW $64,947.27, CLOSE $64,976.94, VOLUME 56.40 BTC. THE REFERENCE CANDLE ITSELF BREACHED $65,000 (HIGH $65,045.08 — THE FOURTH INTRADAY PENETRATION OF THE STEP-ASIDE PERIOD) BUT CLOSED $23.06 BELOW THE THRESHOLD. GAP NARROWED FROM $559.22 (AUG 6) TO $23.06 (AUG 7): A 95.9% COMPRESSION IN A SINGLE SESSION. ETF INFLOWS CONFIRMED FOR AUG 6 ($137.6M — DAY 4 IN AUGUST WITHOUT A SINGLE OUTFLOW DAY); AUG 7 FLOWS PENDING OFFICIAL CONFIRMATION. CONDITION 1 (REFERENCE CLOSE > $65,000): NOT MET BY $23.06. CONDITION 2 (POSITIVE NET ETF FLOWS): LIKELY MET. STEP-ASIDE REMAINS OPERATIVE BY $23.06 — THE THINNEST MARGIN IN THE FRAMEWORK'S HISTORY.",
+
+  "long_pnl": "BTC longs at the Aug 6 reference close ($64,440.78) are +$536.16 / +0.83% at today's reference close. Longs who bought the $64,157 session low (pre-NFP dip) are +$819 / +1.3% from that entry. The session delivered exactly the macro outcome longs needed (massive NFP miss, VIX compression, Fed pause repricing) — the tragedy is that the $23.06 margin between the reference close ($64,976.94) and the step-aside clearance level ($65,000) is a mechanical precision issue, not a fundamental failure. For framework longs sitting on sidelines: the reference candle itself briefly cleared $65,000 ($65,045.08 high) for the fourth time — the supply at $65,000 is weakening. The next 20:00 UTC reference close (Sunday Aug 8 for crypto, which trades 24/7) is the immediate re-evaluation window.",
+
+  "short_pnl": "Step-aside shorts who entered at Aug 6 reference close ($64,440.78) are -$536.16 / -0.83% at today's reference close. Any short entered on the day's open ($64,316.98) is -$659 / -1.02%. The $65,000 resistance survived again on a closing basis — the fourth intraday penetration rejected without a reference close above the level — but the gamma wall is clearly weakening: today's reference candle high of $65,045.08 is the FOURTH intraday breach, and the gap to step-aside clearance is now $23.06. Short thesis: the step-aside framework remains technically active, but betting on the gamma wall holding through a fifth intraday test — with the NFP-induced macro environment fully supportive of BTC — is a low-probability strategy.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "low",
+    "horizon": "Step-aside STILL ACTIVE by $23.06 — Condition 1 (reference close > $65,000): NOT MET; reference close $64,976.94 is $23.06 below threshold; reference candle itself reached $65,045.08 (fourth intraday $65K+ penetration) before closing below; Condition 2 (positive ETF flows): LIKELY MET (day 4 of August without an outflow day; Aug 7 flows pending confirmation); gap compressed 95.9% in a single session from $559.22 to $23.06; the next 20:00 UTC reference close (crypto trades 24/7 — Aug 8 Sunday) is the immediate re-evaluation window; no macro catalyst needed at this proximity — any sustained weekend bid above $65,000 at the 20:00 UTC close terminates the framework",
+    "rationale": "Framework Condition 1 (reference close > $65,000): NOT MET by $23.06. This is the narrowest margin in the entire step-aside period (began July 24). The reference close sequence: July 24–Aug 6 = 12 consecutive closes below $65,000 (gaps ranging from $2,341 to $169); Aug 7 = gap compressed to $23.06. The reference candle high was $65,045.08 — a confirmed fourth penetration of the $65,000 level intraday — but the close at $64,976.94 means Condition 1 is technically not met. LOW conviction on step-aside: the $23.06 gap is within normal hourly candle noise; the NFP macro environment (56% FOMC pause, VIX 14.90, risk-on) is the most supportive backdrop for clearance since the step-aside began; ETF inflows continue; the reference candle itself traded above $65,000. The framework is rules-based and the rule was not met — but the signal strength for imminent clearance has never been higher."
+  },
+
+  "so_what": {
+    "line": "Step-aside missed clearing by $23.06 as today's reference candle itself briefly exceeded $65,000 (high $65,045.08) before settling at $64,976.94 — the gap has compressed 95.9% from $559.22 to $23.06; the July NFP miss (-23K vs +83K) delivered the ideal macro catalyst; next 20:00 UTC reference close is the immediate re-entry watch.",
+    "bull": "The reference candle touched $65,045.08 — $45 above the step-aside threshold — for the FOURTH intraday $65K+ event in the framework's history; NFP miss eliminated Fed rate-hike tail risk (56% Sept FOMC pause); SPX record 7,757.64 and VIX 14.90 are the most supportive macro conditions since the step-aside began; ETF inflows continued for day 4 of August without a single outflow; the framework is $23.06 from re-entry.",
+    "bear": "The fourth intraday $65K penetration was again rejected on a reference close basis — the gamma wall mechanism ($1B+ notional at $65K strike on Deribit) proved more powerful than the strongest possible macro catalyst (NFP -23K); BTC historically weak in August (−7.51% median); $65,000 has now survived four breaches across four days without a reference close; if this morning's NFP shock couldn't push a sustained close through $65K, the question is what catalyst remains."
+  },
+
+  "snapshot": {
+    "price": 64976.94,
+    "change_pct": 0.83,
+    "change_abs": 536.16,
+    "prev_close": 64440.78,
+    "day_high": 65396.97,
+    "day_low": 64157.55,
+    "volume": "~1,330 BTC ($86.5M on Crypto.com through reference close; 12:00–14:00 UTC NFP surge produced the three heaviest candles: 150.54 BTC, 151.90 BTC, 210.05 BTC; reference close candle 56.40 BTC — light and orderly, similar to Aug 6)",
+    "market_cap": "~$1.29T",
+    "extra": [
+      {
+        "label": "REFERENCE CANDLE: open $64,960.16 / high $65,045.08 / low $64,947.27 / close $64,976.94 / volume 56.40 BTC — FOURTH $65K intraday breach, ZERO reference closes above",
+        "value": "The Aug 7 reference candle (Crypto.com 1h, 20:00 UTC, verified): reached $65,045.08 high (the fourth confirmed penetration of the $65,000 step-aside threshold during an hourly candle), held above $65,000 for a brief window during the candle, then closed at $64,976.94 — $23.06 below the threshold. Gap progression: Aug 1 $2,341 → Aug 2 $1,561 → Aug 3 $1,211 → Aug 4 $648 → Aug 5 $169 → Aug 6 $559 (re-expansion) → Aug 7 $23.06 (compression; 95.9% recovery of re-expansion in a single session). The four intraday $65K breaches: Aug 5 $65,044 (reference candle high), Aug 6 $65,009 (05:00 UTC), Aug 6 $65,005 (08:00 UTC), Aug 7 $65,045 (reference candle high). All four rejected on closing basis.",
+        "tone": "neutral"
+      },
+      {
+        "label": "July NFP: −23K jobs vs +83K expected — most extreme jobs miss of 2026; September FOMC pause 56%; BTC to session high $65,396.97",
+        "value": "The July nonfarm payrolls report (8:30 AM ET / 12:30 UTC): −23,000 jobs (expected: +83,000); unemployment rate 4.1% (expected: 4.2%). Immediate BTC reaction: price surged from ~$65,025 (12:00 UTC open) to $65,396.97 (12:00 UTC high) in the first 15 minutes post-release; the 12:00 UTC candle closed at $65,294.58 (the session's highest close on any 1h candle). Three consecutive post-NFP candles (12:00, 13:00, 14:00 UTC) had closes above $64,900, producing the session's peak momentum. The fade to the reference close ($64,976.94) was gradual — 6 hours of drift from $65,294 to $64,739 (18:00 UTC low), then a partial recovery to $64,977 at the reference close. The macro reaction was decisive: rate-cut bets increased, dollar weakened, risk assets broadly rallied. For BTC, this was the most favorable NFP outcome the step-aside framework could have received.",
+        "tone": "up"
+      },
+      {
+        "label": "ETF inflows: $137.6M confirmed Aug 6 (day 4 of August without an outflow); BlackRock IBIT leads cumulative August inflows; Aug 7 flows pending",
+        "value": "US spot BTC ETF confirmed inflows: Aug 3 $170.1M, Aug 4 $211.5M, Aug 5 $244.4M, Aug 6 $137.6M — four consecutive positive days in August without a single outflow day. Three-day Aug 3–5 total was $626M; IBIT led ~76% of that total (~$479M). Aug 7 inflows are unconfirmed as of this writing but are expected to be positive given the session's bullish bias and the NFP catalyst attracting institutional inflows. Condition 2 of the step-aside framework (positive net ETF flows): LIKELY MET for Aug 6 (confirmed), PENDING for Aug 7. If Aug 7 inflows are positive, five consecutive positive ETF days will match the framework's longest consecutive-inflow streak.",
+        "tone": "up"
+      },
+      {
+        "label": "Crypto markets up on NFP: Yahoo Finance headline confirms 'Crypto prices moving higher following July jobs report'",
+        "value": "Yahoo Finance coverage: 'Bitcoin and ethereum prices today, Friday, August 7, 2026: Crypto prices moving higher following July jobs report.' The jobs miss (−23K vs +83K) shifted the macro narrative from 'Fed may hike again' to 'Fed will likely pause in September' — lower rates are structurally positive for non-yielding assets like BTC. Bitcoin tagged an August high above $65,300 in the immediate post-NFP surge. Ethereum and other crypto assets rose in sympathy. The risk-on environment that followed the NFP print — S&P 500 +0.62% to record 7,757.64, Nasdaq +1.3%, VIX −1.65% to 14.90 — was fully supportive of the BTC reference close recovery from the day's low of $64,157.",
+        "tone": "up"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv": 43,
+    "iv_note": "Estimated ~43% — slightly elevated vs Aug 6 (~44%) as the NFP event produced a temporary vol spike that partially decayed through the afternoon; the near-miss on step-aside clearance has increased the optionality of the $65,000 strike: short-call dealers who were comfortably delta-neutral are now very close to needing to flip gamma (if BTC sustains above $65,000 on a reference close, the mechanical buying from dealer hedging would amplify the move); weekend drift will determine whether IV compresses (BTC fades below $64,500) or spikes (BTC sustains above $65,000 heading into Monday).",
+    "put_call": 0.32,
+    "short_interest": "Perpetual funding rates: turned modestly positive after the NFP surge (long bias in perps); the $23.06 gap makes short positioning at or near $64,977 extremely high-risk — any weekend bid above $65,000 at the next reference close terminates the framework and could trigger a $2,000+ squeeze from covering shorts and dealer gamma flipping; the asymmetry overwhelmingly favors long positioning at this proximity to framework clearance.",
+    "max_pain": "$62,000–$63,000 (August monthly, Deribit — estimated; $60,000 put remains dominant August OI; $65,000 call gamma wall has survived four intraday breaches but is weakening; if BTC closes above $65,000 on a reference basis, the max-pain pull toward $62K–$63K for month-end is replaced by a pull toward $66,000–$67,000 from the cup-and-handle measured move target)",
+    "notable_flow": "Three flow signatures defined August 7: (1) PRE-NFP POSITIONING (00:00–12:00 UTC): gradual long accumulation in the $64,157–$65,025 range; total volume 631 BTC in the first 12 hours — steady institutional positioning ahead of the catalyst; (2) NFP SURGE (12:00–14:00 UTC): 512 BTC across the three post-NFP candles (12:00: 150.54 BTC, 13:00: 151.90 BTC, 14:00: 210.05 BTC — heaviest of the session); the 14:00 UTC candle was the 'hot money' flush that pulled BTC from $65,280 to $64,950 — systematic profit-taking by traders who bought the NFP surge, hitting stop-losses for those long above $65,200; (3) REFERENCE CLOSE RECOVERY (19:00–20:00 UTC): 85.47 BTC in the 19:00 candle (recovery from $64,739 low) + 56.40 BTC reference close candle — European close and US institutional close flow attempted to push BTC above $65,000 on the reference candle; the $65,045.08 reference candle high represents this attempt; the $23.06 shortfall means the gamma wall resisted even the combined NFP + ETF + institutional close buying pressure."
+  },
+
+  "what_traders_are_doing": "THREE STRATEGIES AT THE $23 THRESHOLD: (1) STEP-ASIDE CONTINUATION (FORCED) — framework traders remain technically sidelined; the $23.06 gap means the framework is operative by 0.036% of BTC's price — the thinnest technical margin imaginable; these accounts are on maximum alert for Sunday Aug 8's 20:00 UTC reference close; some have pre-positioned small longs with a stop at $64,500 to not miss a potential Monday gap; the NFP macro environment fully validates the step-aside framework's eventual clearance thesis; (2) WEEKEND GAMMA POSITIONING — options traders buying $65,000 calls for the Aug 8–10 reference close windows; the NFP catalyst has repriced the probability of step-aside clearance dramatically higher; the $65,000 gamma wall is now vulnerable to weekend low-liquidity conditions where spot buying can't be absorbed by sufficient dealer hedging; buying near-dated $65K calls costs very little in premium at this proximity; (3) CARRY POSITION LONGS — spot holders who bought the July lows ($59,000–$61,000) and have been holding through the step-aside period; these accounts are indifferent to the $65K threshold (which is a framework rule, not a fundamental resistance) and see the $65K gamma wall as a temporary technical feature; they're positioned for the $70K cup-and-handle measured move on framework clearance.",
+
+  "news": [
+    {
+      "label": "Bitcoin tops $65,000 after 'massive surprise' US jobs miss — The Block: BTC surged to $65,396.97 intraday (session high) after July NFP came in at −23K vs +83K expected; Bitcoin crossed $65,000 briefly in the reference candle (high $65,045.08) but closed at $64,976.94 — step-aside missed clearance by $23.06",
+      "url": "https://www.theblock.co/post/411154/bitcoin-tops-65000-after-massive-surprise-us-jobs-miss",
+      "source": "The Block",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin and ethereum prices today, Friday, August 7, 2026: Crypto prices moving higher following July jobs report — Yahoo Finance: BTC and ETH tracking higher; Bitcoin tagged August high above $65,300 on NFP miss; September Fed pause now 56% probability; dollar weakened; risk assets broadly rallied",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-august-7-2026-crypto-prices-moving-higher-following-july-jobs-report-131451960.html",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin Price Hits $65K Driven by 4-Day Spot ETF Inflow Streak — CryptoTimes: four consecutive days of US spot BTC ETF inflows in August without a single outflow day; BTC crossed $65,000 on the NFP catalyst; BlackRock IBIT leading institutional accumulation",
+      "url": "https://www.cryptotimes.io/2026/08/07/bitcoin-price-reclaims-65k-driven-by-4-day-spot-etf-inflow-streak/",
+      "source": "CryptoTimes",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Live updates: Bitcoin holding near $65,000 as U.S. jobs data falls short of forecasts — CoinDesk: real-time coverage of BTC around the $65,000 zone post-NFP; 'holding near $65,000' as reference close window approached; $65K gamma wall survived reference close by $23.06",
+      "url": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
+      "source": "CoinDesk",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin Price Today (August 07): Why is Bitcoin (BTC) Up Today? Whale Accumulation, Strong ETF Inflows and Falling Treasury Yields Support BTC — Sunday Guardian Live: three structural tailwinds cited — whale accumulation, ETF inflows (four consecutive days), falling Treasury yields (NFP-driven); BTC up on the day",
+      "url": "https://sundayguardianlive.com/business/bitcoin-price-today-august-07-why-is-bitcoin-btc-up-today-whale-accumulation-strong-etf-inflows-and-falling-treasury-yields-support-btc-check-latest-prices-in-usd-inr-gbp-euro-jpy-255792/",
+      "source": "Sunday Guardian Live",
+      "sentiment": "positive"
+    },
+    {
+      "label": "S&P closes at record high as soft jobs report eases rate-hike concerns — Yahoo Finance: S&P 500 record close 7,757.64 (+0.62%), Nasdaq +1.3% to 26,690.62, VIX 14.90; the macro backdrop for BTC was the most supportive of the step-aside period",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-futures-muted-095442868.html",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The step-aside is still technically operative, but the $23.06 gap is within noise range for any given 20:00 UTC reference candle. BTC trades 24/7 — the next reference close (Aug 8, Sunday at 20:00 UTC) is the immediate re-evaluation window. The NFP catalyst has been delivered; the macro environment (56% FOMC pause probability, risk-on, VIX 14.90) is fully aligned for clearance. The four intraday $65K penetrations across four days have progressively weakened the options gamma wall — short-call dealers at $65,000 have collected premium through four tests, but each test transfers more risk to their position. A weekend session with lighter overall trading volume (less natural spot selling) could be the path of least resistance for sustained $65K+ trading. Clearance scenario: BTC sustains above $65,000 at Sunday's 20:00 UTC candle close → Condition 1 met → if Aug 7 ETF inflows confirmed positive → both conditions simultaneously met → step-aside terminates. Post-clearance target sequence: $66,000 → $67,000 → cup-and-handle $70,000 measured move.",
+    "long_term": "The halving cycle, IBIT structural demand ($61B+ cumulative inflows), NFP-driven rate-cut expectations, and the global macro rotation away from the dollar (weakening trend post-NFP) all support BTC's structural bull case. The step-aside framework is a near-term tactical tool, not a long-term bearish view. The September FOMC meeting (September 16) is the next major macro catalyst after the August 12 CPI — a rate hold (base case after NFP) or cut (tail scenario) would both be structurally positive for BTC's ETF demand and risk asset rotation thesis. The cup-and-handle pattern's $70,000 measured move target remains intact."
+  },
+
+  "bull_case": [
+    "The $23.06 gap is within hourly candle noise range — any sustained bid above $65,000 at the next 20:00 UTC reference close (Sunday Aug 8) terminates the step-aside framework; four consecutive intraday $65K penetrations prove buyers above $65,000 are real; the NFP macro environment (56% FOMC pause) is the best possible backdrop for clearance",
+    "ETF inflows continued for a fourth consecutive August day ($137.6M on Aug 6) without a single outflow — institutional accumulation in the $64,000–$65,000 zone represents structural demand that is not sensitive to short-term reference close mechanics; four consecutive inflow days totaling $763.6M in August represents a pace that exceeds any comparable 4-day window in the step-aside period",
+    "July NFP miss (-23K vs +83K) is a game-changer for the rate-cut thesis: September FOMC pause at 56% probability means the primary macro risk that has compressed crypto risk appetite (Fed hiking cycle) is off the table; dollar weakness, Treasury yield decline, and risk-on rotation are all tailwinds that will continue to support BTC through August",
+    "The reference candle itself briefly cleared $65,000 (high $65,045.08) — this is the most definitive evidence that the $65K options gamma wall is not infinitely strong; each successive intraday breach brings the level closer to a sustained reference close above the threshold; a weekend session with thinner spot liquidity could be the path for the fifth breach to finally hold"
+  ],
+
+  "bear_case": [
+    "The $65,000 reference close threshold has survived FOUR intraday breaches across FOUR calendar days (Aug 5: $65,044; Aug 6 05:00 UTC: $65,009; Aug 6 08:00 UTC: $65,005; Aug 7 reference candle: $65,045) — each test has been met with mechanical selling from $65,000 short-call dealers; the gamma wall has survived the strongest possible macro catalyst (NFP -23K jobs); if this can't clear it, the wall may prove more durable than the framework has modeled",
+    "August is historically BTC's worst calendar month (−7.51% median return since 2013): the seasonal headwind is not driven by any fundamental factor but by the combination of post-halving distribution, summer low liquidity, and tax-loss harvesting; the current reference close at $64,976.94 is already 4.7% below the monthly open of $62,659 — a mean-reversion to the $59,000–$60,000 range by month-end would be consistent with historical seasonality",
+    "The step-aside framework has been operative for 14 days (July 24–Aug 7) with 13 reference closes below $65,000; the pattern of 'four intraday breaches, zero reference close penetrations' is the strongest single piece of evidence that the gamma wall is structural — the reference close is the moment of maximum dealer precision (option expiry and settlement reference windows often align with hourly closes), and dealers have successfully defended it 13 times",
+    "Post-NFP fade from $65,397 to $64,977 at reference close: BTC gave back $420 from its session high ($65,397) by the reference close; the 'sell the news' pattern in the afternoon (14:00 UTC candle: 210 BTC, heaviest of session, pulled price from $65,280 to $64,950) suggests institutional sellers were waiting for the NFP spike to exit, not to add"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest resistance — $65,000: step-aside framework threshold; FOUR intraday penetrations (Aug 5 $65,044; Aug 6 05:00 UTC $65,009; Aug 6 08:00 UTC $65,005; Aug 7 reference candle $65,045) without a single reference close penetration in 13 consecutive sessions (July 24–Aug 7); today's reference candle touched $65,045.08 — the closest it's ever been to holding; options gamma wall: $1B+ notional $65K call OI at Deribit; a sustained reference close above $65,000 triggers step-aside termination and dealer delta-flip that mechanically accelerates the move toward $66,000+",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$65,397: today's session high (12:00 UTC NFP surge peak); intraday ceiling for August 7; a reference close above $65,397 would be the most decisive possible clearance and would target $66,000 next session",
+      "level": "$65,397",
+      "kind": "resistance"
+    },
+    {
+      "label": "$66,000: post-clearance technical target — first round-number resistance after step-aside terminates; the $62,300–$65,000 consolidation range's measured move projects $67,700; $66,000 is the first resistance in that range; cup-and-handle $70,000 measured move is the larger objective",
+      "level": "$66,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest support — $64,976.94: today's reference close — the step-aside near-clearance pivot; all four intraday $65K breaches in the framework's history closed back to approximately this level; an opening gap below $64,800 would be the first meaningful post-NFP downside signal; below this level, $64,352 (Aug 4 reference close) is the next channel support",
+      "level": "$64,977",
+      "kind": "support"
+    },
+    {
+      "label": "$64,352.08: Aug 4 reference close — established channel support during the ascending staircase (Aug 1–5); ETF buyers from Aug 4 ($211.5M inflow) have cost basis at this level; a reference close below $64,352 would re-test the Aug 3 channel level ($63,789) and signal the NFP catalyst has been fully digested without clearance",
+      "level": "$64,352",
+      "kind": "support"
+    },
+    {
+      "label": "$64,157.55: today's session low (04:00 UTC pre-NFP dip); the level BTC held before the NFP catalyst; below this level, $63,867 (Aug 5 session low) is the next key support; this level is now the defining marker of 'normal NFP-day drift floor' — any close below $64,157 without a macro deterioration catalyst would be a significant bearish signal",
+      "level": "$64,157",
+      "kind": "support"
+    },
+    {
+      "label": "$64,976.94: today's reference close pivot — also the 'near-clearance close'; on the upside, a gap above $65,000 at tomorrow's 20:00 UTC open/close terminates the framework; on the downside, a reference close below $64,800 would signal the step-aside is extending rather than resolving; the $23.06 margin makes this the most binary pivot in the framework's history",
+      "level": "$64,977",
+      "kind": "pivot"
+    },
+    {
+      "label": "$60,000: August put OI anchor ($1B+ notional, Deribit); round-number psychological support; August seasonal mean-reversion target (−7.51% median from opening price); if step-aside clearance fails and BTC breaks below $63,867, this becomes the structural target on a hot CPI print (Aug 12)",
+      "level": "$60,000",
+      "kind": "support"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-07",
+      "label": "Step-aside near-miss — reference close $64,976.94 missed $65,000 by $23.06 (95.9% of gap compressed in one session); reference candle itself touched $65,045.08 (fourth intraday $65K breach); July NFP −23K vs +83K expected; SPX record 7,757.64; VIX 14.90; step-aside still technically active.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-08",
+      "label": "Sunday Aug 8 / 20:00 UTC reference close — immediate re-evaluation window; BTC trades 24/7; any sustained bid above $65,000 at the next reference candle close terminates the step-aside framework without requiring a new macro catalyst; weekend low-liquidity may favor either side of the $65K level.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-12",
+      "label": "July CPI print — secondary macro event after NFP; above-consensus could partially reverse the September FOMC pause expectation; below-consensus locks in the rate-cut narrative and provides additional macro tailwind for step-aside clearance in the Aug 11–12 reference closes.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "September FOMC — rate hold (base case at 56% post-NFP) or cut (tail scenario); both outcomes are structurally bullish for BTC's ETF demand and the risk-on environment; a hike (now very low probability) would be the sole remaining macro adverse scenario.",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — the $23.06 near-miss\n\nAugust 7, 2026 was the most significant single session in the step-aside framework's history. The July NFP miss (−23,000 jobs vs. +83,000 expected) delivered the strongest possible macro catalyst for BTC at 12:30 UTC — and BTC responded with its highest session price of the step-aside period ($65,396.97 at 12:00 UTC). The reference close at 20:00 UTC came in at $64,976.94 — just $23.06 below the $65,000 step-aside threshold.\n\nThe reference candle itself (20:00 UTC): open $64,960.16, high $65,045.08, low $64,947.27, close $64,976.94, volume 56.40 BTC. The high of $65,045.08 represents the fourth intraday penetration of the $65,000 level during the step-aside period — but the close of $64,976.94 means Condition 1 (reference close > $65,000) was not met by $23.06.\n\n### Full session candle map (Crypto.com 1h, verified)\n\n| UTC 1h | Open | High | Low | Close | Vol (BTC) | Note |\n|---|---|---|---|---|---|---|\n| 04:00 | $64,396 | $64,411 | **$64,157** | $64,254 | 22.85 | Session low — pre-NFP dip |\n| 12:00 | $65,027 | **$65,397** | $64,975 | $65,294 | 150.54 | ★ NFP release — session high |\n| 13:00 | $65,297 | $65,338 | $64,975 | $65,007 | 151.90 | Post-NFP continuation |\n| **14:00** | $65,009 | $65,280 | $64,778 | $64,950 | **210.05** | Heaviest — 'sell the news' |\n| 18:00 | $64,769 | $64,885 | **$64,676** | $64,739 | 61.08 | Afternoon low |\n| 19:00 | $64,731 | $65,036 | $64,731 | $64,958 | 85.47 | Recovery |\n| **20:00** | $64,960 | **$65,045** | $64,947 | **$64,977** | **56.40** | ★ Reference close — $23.06 short |\n\n### Gap trajectory — 95.9% compression in a single session\n\nThe step-aside gap has never moved this dramatically in a single session:\n\n| Date | Reference Close | Gap to $65K |\n|---|---|---|\n| Aug 1 | $62,659 | $2,341 |\n| Aug 2 | $63,439 | $1,561 |\n| Aug 3 | $63,789 | $1,211 |\n| Aug 4 | $64,352 | $648 |\n| Aug 5 | $64,830 | $170 |\n| Aug 6 | $64,441 | $559 (re-expansion) |\n| **Aug 7** | **$64,977** | **$23.06 (95.9% compression from Aug 6)** |\n\nThe previous single-day maximum compression was Aug 5 (gap narrowed $523 from $648 to $170). Aug 7 compressed $536 — a new record for single-day gap reduction.\n\n### The four intraday $65K breaches — pattern analysis\n\n1. **Aug 5, 20:00 UTC**: reference candle high $65,044.22 — reference close $64,830.30 (gap $170)\n2. **Aug 6, 05:00 UTC**: candle high $65,009.60 — candle close $64,913.31 (Asian session)\n3. **Aug 6, 08:00 UTC**: candle high $65,005.81 — candle close $64,944.95 (London open)\n4. **Aug 7, 20:00 UTC**: **reference candle high $65,045.08** — reference close $64,976.94 (gap $23.06)\n\nThe pattern: each successive breach is occurring closer to the reference candle's own close. The Aug 5 breach was 214 ticks above the reference close ($65,044 high vs $64,830 close); the Aug 7 reference candle breach was only 68 ticks above the reference close ($65,045 high vs $64,977 close). The options gamma wall is providing less protection with each test — the delta-hedging mechanism is becoming less effective as the gap narrows.\n\n### Trend — ascending channel restored; strongest single-session recovery in the period\n\nAfter the Aug 6 channel break (gap re-expanded from $170 to $559), Aug 7 restored and extended the narrowing trend with a $536 single-session compression. The reference close at $64,977 is the highest reference close in the step-aside period, surpassing the prior peak of $64,830 (Aug 5). The ascending reference close structure: $62,659 → $63,789 → $64,352 → $64,830 → [Aug 6 regression to $64,441] → $64,977 (new peak).\n\n### Momentum — four-session best; RSI approaching overbought\n\nThe $536 reference close gain on Aug 7 is the largest single-session reference close gain in the step-aside period. BTC RSI (estimated) has moved from ~45 (Aug 6) to ~58–62 (Aug 7) — neutral to modestly bullish territory. The NFP catalyst has injected sustained buying momentum across all time frames. The risk of an overbought RSI pullback is mitigated by the fact that the reference close is still below the key $65,000 level — BTC has not actually 'broken out' from a technical standpoint yet.\n\n### Volume — NFP surge: 3 heaviest candles in 90 minutes; reference close: orderly\n\nThe three post-NFP candles (12:00–14:00 UTC) accounted for 512 of the session's ~1,330 total BTC — 38.5% of all session volume compressed into 3 hours. The 14:00 UTC candle (210 BTC) was the 'sell the news' candle that pulled BTC from $65,280 to $64,950. The reference close candle (56.40 BTC) was near-identical to Aug 6's reference candle (56.83 BTC) — orderly, light, no institutional directional push. Volume is NOT confirming the breakout: the heavy volume occurred at the NFP spike HIGH, not at the reference close. The reference close volume of 56 BTC suggests the $64,977 level settled organically, without a determined institutional push through $65,000.\n\n### ★ Strongest support — $64,976.94 (today's reference close, the near-clearance pivot)\n\nEvidence:\n1. The most recently established reference close — all four intraday $65K breaches in the framework's history have resolved to approximately $64,800–$64,977 range; this is the 'natural settling point' of the market's current supply/demand equilibrium\n2. Above-average institutional buying into this level (ETF inflows, whale accumulation per Sunday Guardian Live report)\n3. The NFP catalyst has re-anchored the reference close near $65,000 — any pullback below $64,977 represents a sell-off that is fighting against the post-NFP macro tailwind\n4. The reference candle's low of $64,947 ($30 below the close) confirms tight support within the candle itself\n\n### ★ Strongest resistance — $65,000 (gamma wall; four breaches, zero reference closes)\n\nThe $65,000 level has now survived 13 consecutive reference closes (July 24–Aug 7) including four intraday penetrations. Evidence for the gamma wall characterization:\n1. $1B+ notional short-call OI at the $65,000 Deribit strike — dealers systematically hedge by selling spot as price approaches $65,000\n2. Four sequential intraday breaches (Aug 5, Aug 6 ×2, Aug 7) have failed to produce a sustained reference close above the level — the pattern is too consistent to be accidental\n3. The reference candle itself produced a 68-tick spread between the high ($65,045) and close ($64,977) — the delta-hedging pressure is mechanical and occurs on a sub-minute timescale within the 1h candle\n4. However: the fact that the reference candle itself now touches $65K (vs earlier breaches in off-peak Asian/London candles) is the strongest signal that the gamma wall is weakening — the dealers are protecting the level with less and less margin\n\n### What clears the step-aside — the $23 path\n\nThe $23.06 gap is within the noise range of a quiet 1h candle. Any of the following scenarios terminates the step-aside on the next 20:00 UTC reference close:\n- A weekend news catalyst (regulatory, geopolitical, macro) that pushes BTC above $65,023 on a sustained basis\n- Low-liquidity weekend spot buying that outpaces dealer hedging capacity\n- ETF pre-announced flows being reported on Monday open (institutional buy orders placed Friday afternoon settling the reference close above $65,000)\n- Pure drift: if BTC simply remains near $64,977 through Sunday, a $24 move at any point during the 20:00 UTC candle clears the framework\n\nWhat invalidates the near-clearance: A reference close below $64,352 (Aug 4 channel support) would signal the channel is deteriorating again; below $63,867 (Aug 5 session low) would be the most significant technical damage in the framework period."
+}
