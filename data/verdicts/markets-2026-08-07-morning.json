@@ -1,0 +1,92 @@
+{
+  "routine": "markets",
+  "date": "2026-08-07",
+  "window": "morning",
+  "generated_at": "2026-08-07T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "Hormuz deal fractures; Brent $83.46 →$85 trigger; WTI $78.05 →$79; SPCX day-2 +3% at $115 (lockup absorbed better than feared); NFP Friday 8:30 ET (cons. 83K); Sep hike 54% Kalshi; 30Y 5.20% sole breach; BTC $64,934 stable",
+    "headline": "Strait of Hormuz deal fractures as Iran moves to bar US ships, sending oil sharply higher",
+    "conviction": "medium",
+    "horizon": "1-2 days",
+    "rationale_short": "The Bessent Hormuz framework is fracturing: Iranian officials circulated a draft plan banning U.S. and Israeli commercial vessels from the Strait, reversing three days of oil deflation that had kept September hike odds contained. Brent at $83.46 is $1.54 from the $85 regime trigger; WTI at $78.05 puts the $79 oil-side gate in play before tomorrow's NFP. The constructive counter-signal is SPCX: Day-2 at ~$115 (+3%) after a Day-1 that held within a 3% band means the feared panic liquidation did not materialize — supply is being absorbed more cleanly than the staggered-lockup template implied. The 30Y at 5.20% remains the sole formal regime breach (1-of-6). Hold: the tape cannot price oil escalation and NFP simultaneously. Tomorrow's 8:30 AM ET print is the resolving event — below 70K collapses September hike odds and allows the 30Y to compress toward 5.00%; above 130K with oil still elevated risks 3-of-6 regime in 24 hours.",
+    "supporting_data": [
+      {
+        "label": "Hormuz doubts lift oil as payrolls loom — Saxo Market Quick Take Aug 7; Brent +1.18% to $83.46, WTI +0.98% to $78.05 on Iranian draft barring US ships",
+        "url": "https://www.home.saxo/content/articles/macro/market-quick-take---hormuz-doubts-lift-oil-as-payrolls-loom---7-august-2026-07082026"
+      },
+      {
+        "label": "SPCX Day-1: Bloomberg confirms shares steady after 911M lockup shares eligible; Day-2 ~$115 +3%",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-06/spacex-shares-steady-after-100-billion-insider-lockup-expires"
+      },
+      {
+        "label": "SpaceX lockup structure — 20% tranche day-1, 7% tranches every 2-4 weeks Aug–Oct, Q3 earnings trigger, December 180-day backstop",
+        "url": "https://pro.stockalarm.io/blog/spacex-ipo-lockup-financials"
+      },
+      {
+        "label": "July NFP due Friday Aug 8 8:30 AM ET; consensus 83K (prior 57K); ADP 44K was softest of 2026",
+        "url": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html"
+      },
+      {
+        "label": "September hike probability ~54% Kalshi; Polymarket 48%; FOMC Sep 15-16; Warsh held in July",
+        "url": "https://kalshi.com/markets/kxfeddecision/fed-meeting/kxfeddecision-26sep"
+      },
+      {
+        "label": "30Y 5.20% — sole regime breach now in 5th session; 10Y ~4.63%; DXY 99.95 +0.28%",
+        "url": "https://tradingeconomics.com/united-states/30-year-bond-yield"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7750.0,  "change_pct": -0.37, "as_of": "2026-08-07T11:15:00Z" },
+    "nasdaq": { "level": 26290.0, "change_pct": -0.09, "as_of": "2026-08-07T11:15:00Z" },
+    "vix":    { "level": 15.33,   "change_pct": -5.08, "as_of": "2026-08-07T11:15:00Z" },
+    "ust10y": { "level": 4.63,    "change_bps": 1,     "as_of": "2026-08-07T11:15:00Z" },
+    "dxy":    { "level": 99.95,   "change_pct": 0.28,  "as_of": "2026-08-07T11:15:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.20,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 54.0,  "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 83.46, "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 78.05, "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7750,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 64934, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "SPCX",
+      "note": "Day-2 after lockup: ~$115, +3%. The feared mass liquidation on Day-1 did not materialize — Bloomberg confirms shares traded within a 3% band as the first 20% tranche (911.5M shares, ~$116B eligible) became available. Day-2 stabilization at $115 is constructively above the $93 distressed scenario modeled in earlier briefs and represents genuine absorption rather than a delayed selloff. The next structural supply event is the 7% staggered tranche in 2-4 weeks; the December 180-day release remains the terminal floor. Q3 Starlink earnings (~October 2026) is the only fundamental catalyst that can revalue the lockup supply overhang before December. Above $120 on volume would confirm the first 20% tranche was absorbed; below $105 on volume would signal the next wave of sellers is front-running the next tranche.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$64,934, +0.57% (Crypto.com live as of 11:03 UTC). Session range $64,157–$64,989 — tight consolidation rather than directional positioning ahead of NFP. Gate 2 ($62,000) buffer intact at $2,934. Constructive signal: oil rising on Hormuz escalation has not triggered a crypto risk-off correlation — BTC is not tracking the geopolitical bid in crude. A cross-asset risk-off would require simultaneous equity deterioration beyond 7,380 SPX, not currently in view.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$220, holding through the Hormuz oil move and unchanged from the prior session's level. The August 26 Q2 FY27 print (gross margin target 76%+, datacenter revenue above consensus) is the defining event for the $216 structural support level. Polysilicon Section 232 tariffs (15%) affect NVDA indirectly via downstream supply chain cost pressure on solar/data-center build partners — a second-order watch item rather than a direct catalyst. Divergence from MU/SKHY (still in bear-market territory from July highs) holds: if this is supply-layer noise in HBM, NVDA holds $216; if AI capex peaking is the driver, the divergence closes before August 26.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NFP binary — July payrolls Friday 8:30 AM ET",
+      "thesis": "The July NFP print (consensus 83K, prior 57K) is the session's dominant variable and will reprice the Hormuz+rate-hike stack simultaneously. With September hike probability at 54% and the 30Y at 5.20% (sole regime breach), the print has a non-linear policy impact: below 70K confirms ADP's 44K signal (softest of 2026, well below the 75K consensus) and should compress September odds toward 35–40%, allowing the 30Y to retrace toward 5.00% and resolve the regime's only breach. Above 130K alongside sticky Brent above $83 re-prices September toward 65–70% and risks pushing the regime from 1-of-6 to 3-of-6 in a single 24-hour window.",
+      "entry": "September hike probability on Kalshi within 10 minutes of the 8:30 AM ET release is the lead indicator. Below 40%: compression thesis active, constructive posture on rate-sensitives. Above 65%: regime expansion risk, posture shifts toward step_aside. The 7,380 SPX floor remains the structural backstop regardless of print direction.",
+      "invalidation": "NFP at 83–100K (in-line) is the ambiguous scenario: hike odds remain 50–58%, oil continues as the dominant driver, and the regime stays in current 1-of-6 configuration with no catalyst for directional resolution. Hold posture extends through the following week.",
+      "horizon": "Binary event: Friday 8:30 AM ET. Posture resolution: 1-2 sessions post-print."
+    },
+    {
+      "asset": "Brent Crude — Hormuz $85 regime trigger watch",
+      "thesis": "The Iranian draft plan banning US and Israeli vessels from the Strait is a break from the Bessent-mediated framework that had kept Brent below $80 for three sessions. At $83.46, Brent is $1.54 from the $85 regime trigger that would add a second formal breach alongside the 30Y. A breach of $85 before the NFP print would move the regime to 2-of-6 regardless of what payrolls shows, warranting a posture shift toward step_aside in energy-cost-sensitive names (consumer discretionary, airlines, industrials).",
+      "entry": "Brent $85 is the formal trigger; WTI $79 is the companion gate. A Hormuz agreement signed in the next 12–24 hours that restores the Bessent framework collapses Brent back toward $78–79 and removes this setup entirely. Absent that, the risk-reward favors being underweight energy-cost-exposed sectors into the NFP print rather than waiting for the double-trigger.",
+      "invalidation": "Hormuz deal signed or Iranian government retracts the draft plan: Brent compresses below $80, oil gates clear, and the sole remaining breach is 30Y at 5.20%. Any Bessent statement before Friday open is the event to watch.",
+      "horizon": "Oil-side resolution: 24–48 hours pending diplomatic clarity. NFP overlay: Friday 8:30 AM ET."
+    }
+  ],
+  "bear_case": "NFP prints above 130K Friday while Hormuz remains unresolved: September hike probability breaks 70% (second breach), Brent holds above $85 (third breach), and the 30Y extends above 5.20% — a 3-of-6 regime configuration in a single 24-hour window that the current hold posture cannot survive. SPCX Day-2 stability is the bull case's only clean read; if Day-3 (Monday) deteriorates back below $105 on volume, the staggered lockup is front-running rather than absorbing, and the AI-infrastructure equity complex loses its anchoring signal heading into NVDA's August 26 earnings. The polysilicon Section 232 tariff is a slow-burn risk that has not yet been priced into semiconductor supply chains — it is not a trigger today but may compound the Hormuz/NFP stack if tech guidance in August earnings references it.",
+  "body_mdx": "data/briefings/markets/2026-08-07-morning.mdx"
+}
