@@ -2,45 +2,48 @@
   "routine": "markets",
   "date": "2026-08-06",
   "window": "night",
-  "generated_at": "2026-08-07T01:00:00Z",
+  "generated_at": "2026-08-07T01:20:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Iran publishes restrictive Hormuz draft; Dow breaks five-day win streak",
-    "label": "SPX 7,710 (−0.18%); Dow 53,885 (−0.85%, 5-day streak ends); SPCX −13.7% at $108.27; WTI $77.29 (+2.8%); Brent $82.49 (+3.8%, near $85 trigger); DDOG −17% on beat; September hike 52%; NFP Friday 8:30 AM ET",
-    "rationale_short": "Iran's state media published a restrictive Hormuz draft banning US and Israeli ships and imposing 20% cargo penalties on violators, reversing three sessions of oil relief. WTI jumped 2.8% to $77.29 — $1.71 from the $79 trigger; Brent reached $82.49, $2.51 from the $85 threshold. The 10Y yield rose 6bps to 4.68% on the oil surge, breaking the Dow's five-day win streak (−0.85%). SPCX closed −13.7% at $108.27, confirming the morning's lockup-selling read; the intraday range ($105.11–$115.75) shows institutional buyers below $110. DDOG fell 17% on beat-and-raise fundamentals — the second software name in two sessions to reprice sharply from elevated multiples. Level that changes this: SPX below 7,380 on a Khamenei approval combined with above-consensus NFP.",
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Iran's Hormuz draft spikes oil and snaps the Dow's five-day winning streak",
+    "label": "HOLD — SPX 7,710 (−0.18%); Nasdaq 26,348 (−0.06%); Dow 53,885 (−0.85%, 5-day streak ends); UWMC −33%; APP −21%; HONA −20%; SPCX +5% despite 911M lockup; WTI $77.29 (+2.8%); Brent $82.49 (+3.8%); AH: TTD −26%, NET +17%, TWLO +15.7%, ABNB +8%; 30Y 5.20% sole breach; 1-of-6 regime; NFP Friday 8:30 AM ET",
+    "conviction": "medium",
+    "rationale_short": "Iran's state media published a restrictive Hormuz draft banning US and Israeli ships and imposing 20% cargo penalties on violators — reversing three sessions of oil relief and sending WTI up 2.8% to $77.29 ($1.71 from the $79 formal trigger) and Brent up 3.8% to $82.49 ($2.51 from $85). The 10Y yield rose 6bps to 4.68% on the oil surge, and the Dow shed 0.85% (−464 pts), ending its five-day winning streak — but SPX lost only 0.18% and Nasdaq just 0.06%, showing tech resilience held the broader index. Intraday earnings carnage was severe: UWM Holdings (UWMC) collapsed 33% after announcing its first-ever dividend suspension and a Q2 net loss of $452M; AppLovin (APP) fell 21% to $331.57 on a Q2 revenue miss ($1.92B vs $1.94B est, +53% YoY) with FCF compressing to $863M vs $1.29B expected; Honeywell Aerospace (HONA) slid 20% after slashing its full-year organic growth outlook to 4–5% from 7–9%. SPCX bucked the lockup-expiry selloff: 911M shares unlocked, more than doubling the float, and the stock still closed up roughly 5% to ~$113 as institutional buyers absorbed supply at the $108 base set Wednesday. After the close, the signal split: Trade Desk (TTD) crashed 26% on revenue growth decelerating to just 3% YoY with a full C-suite reset (CFO, CMO, chief commercial officer all replaced) — a deeper ad-tech implosion than APP's miss. Countering that: Cloudflare (NET) +17%, Twilio (TWLO) +15.7%, and Airbnb (ABNB) +8% all beat on top and bottom lines with raised guidance, setting up a constructive cloud/travel open Friday. September hike odds sit near 52% heading into NFP (consensus 80–88K; ADP 44K argues downside). Below 80K: September falls below 45%, Kashkari isolated, 30Y path to 5.00% opens. Above 130K: September crosses 70%, second regime breach triggers, and Brent at $82.49 means oil could breach simultaneously.",
     "supporting_data": [
       {
-        "label": "Iran Hormuz restrictive draft: bans US/Israeli ships, 20% cargo penalties on violators; WTI +2.8% to $77.29, Brent +3.8% to $82.49",
-        "url": "https://www.cnbc.com/2026/08/06/oil-price-iran-war-strait-hormuz-oman-deal.html"
+        "label": "Iran restrictive Hormuz draft: bans US/Israeli ships, 20% cargo penalties on violators; WTI +2.8% to $77.29, Brent +3.8% to $82.49",
+        "url": "https://www.cnbc.com/amp/2026/08/06/oil-price-iran-war-strait-hormuz-oman-deal.html"
       },
       {
-        "label": "SPCX lockup day one: closes −13.7% at $108.27 (from $125.33 prior); intraday low $105.11, high $115.75; below $135 IPO price",
-        "url": "https://finance.yahoo.com/markets/stocks/article/spacex-lockup-expires-today-with-stock-bucking-higher-100000039.html"
+        "label": "UWMC −33%: Q2 net loss $452M, first-ever dividend suspension; APP −21% to $331.57 on $1.92B revenue miss; HONA −20% on slashed full-year outlook",
+        "url": "https://www.cnbc.com/2026/08/06/stocks-making-the-biggest-moves-midday-umwc-hona-mtsi-pton.html"
       },
       {
-        "label": "Datadog (DDOG) −17%: Q2 revenue $1.12B (+36%), EPS $0.65 beat, guidance raised — FCF margin compressed 29%→25%, sequential growth disappoints",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/datadog-stock-falls-18-beat-162513828.html"
+        "label": "AH: TTD −26% on 3% revenue growth, C-suite reset; NET +17%, TWLO +15.7%, ABNB +8% all beat with raised guidance",
+        "url": "https://www.cnbc.com/2026/08/06/stocks-making-the-biggest-moves-after-hours-sg-abnb-dkng-ttd.html"
       },
       {
-        "label": "Dow −0.85% (−464 pts), five-day win streak snapped; S&P 7,709.96 (−0.18%); 10Y UST +6bps to 4.68% on oil reversal",
+        "label": "SPCX lockup day: 911M shares unlock, stock closes +~5% to ~$113 — bucking conventional selloff thesis; institutional demand absorbed supply",
+        "url": "https://ca.finance.yahoo.com/news/spacex-lockup-expires-today-with-stock-bucking-higher-100000039.html"
+      },
+      {
+        "label": "Dow −0.85% (−464 pts, 5-day win streak ends); SPX 7,709.96 (−0.18%); Nasdaq 26,348 (−0.06%); 10Y +6bps to 4.68%",
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-6-2026"
       },
       {
-        "label": "September hike 52% on Kalshi; NFP consensus 80–88K at 8:30 AM ET Friday; ADP 44K argues for downside risk",
-        "url": "https://news.kalshi.com/p/september-fed-rate-hike-odds-54-percent"
-      },
-      {
-        "label": "AMD $489.28 (+1.2%) after Lisa Su rebutted SpaceX exclusivity impact; NVDA $218.99 (−0.5%); gold $4,240 (−1.5% from $4,304)",
-        "url": "https://investrade.com/mid-morning-look-august-06-2026/"
+        "label": "NFP Friday: July payrolls consensus 80–88K (prev 57K); ADP 44K argues downside risk; pivotal for September hike odds at 52%",
+        "url": "https://www.tradingkey.com/analysis/economic/indicators/262084280-us-july-nfp-preview-job-growth-may-remain-low-how-us-stocks-dollar-gold-react-tradingkey"
       }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7709.96, "change_pct": -0.18, "as_of": "2026-08-06T20:00:00Z" },
+    "sp500":  { "level": 7709.96,  "change_pct": -0.18, "as_of": "2026-08-06T20:00:00Z" },
     "nasdaq": { "level": 26348.35, "change_pct": -0.06, "as_of": "2026-08-06T20:00:00Z" },
-    "vix":    { "level": 15.80,   "change_pct": -4.24, "as_of": "2026-08-06T20:00:00Z" },
-    "ust10y": { "level": 4.68,    "change_bps": 6,     "as_of": "2026-08-06T20:00:00Z" },
-    "dxy":    { "level": 99.70,   "change_pct": 0.00,  "as_of": "2026-08-06T20:00:00Z" }
+    "vix":    { "level": 15.80,    "change_pct": -4.24, "as_of": "2026-08-06T20:00:00Z" },
+    "ust10y": { "level": 4.68,     "change_bps": 6,     "as_of": "2026-08-06T20:00:00Z" },
+    "dxy":    { "level": 99.70,    "change_pct": 0.00,  "as_of": "2026-08-06T20:00:00Z" }
   },
   "regime_risk": [
     { "name": "30Y Yield",           "value": 5.20,  "trigger_above": 5.00,  "unit": "%" },
@@ -48,58 +51,78 @@
     { "name": "WTI Crude",           "value": 77.29, "trigger_above": 79.0,  "unit": "$/bbl" },
     { "name": "September Hike Odds", "value": 52.0,  "trigger_above": 70.0,  "unit": "%" },
     { "name": "SPX vs 7,380",        "value": 7710,  "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 64200, "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",          "value": 64368, "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
+      "ticker": "TTD",
+      "note": "AH −26% after revenue growth decelerated to just 3% YoY — far below the ~20%+ pace the stock had priced in. Simultaneously replaced CFO, CMO, and chief commercial officer. This is a deeper ad-tech implosion than APP's −21% during the regular session; the C-suite reset signals management recognizes the problem is structural, not a one-quarter noise trade. The TTD move arriving the same night as APP's miss confirms ad-tech as the cycle's weak point.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "APP",
+      "note": "Fell 21% to $331.57 on Q2 revenue miss ($1.92B vs $1.94B estimate, +53% YoY) with FCF compressed to $863M vs $1.29B expected; Q3 EBITDA guide at low end of consensus. The $300 intraday level held. First revenue miss in multiple quarters for a stock pricing near-perfection in AI ad-tech. Analyst downgrade notes Friday morning set the re-entry zone.",
+      "sentiment": "negative"
+    },
+    {
       "ticker": "SPCX",
-      "note": "Closed $108.27 (−13.7% from $125.33 prior close). Intraday range $105.11–$115.75 shows institutional buying below $110 but close confirms lockup-selling thesis. Stock is $26.73 below the $135 IPO price. December expiry remains the structural floor; Q3 Starlink profitability (~October) is the only intervening catalyst.",
+      "note": "Closed +~5% to ~$113 on lockup expiry day — 911M insider shares unlocked (more than doubling public float), but institutional buyers absorbed supply at the $108 base set Wednesday. The real lockup fear trade was priced in on Aug 5 (−13.7% to $108.27); Thursday's recovery confirms that zone as a structural floor. Q3 Starlink profitability (~October) is the key catalyst; December expiry is the next supply event.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NET",
+      "note": "AH +17% — Q2 beat with solid full-year and Q3 guide; stock was already at a record high pre-print. One of three infrastructure/communication software names to post strong beats after the close (alongside TWLO and ABNB). Sets up a constructive cloud sector open Friday.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "ABNB",
+      "note": "AH +8% — Q2 EPS $1.37 (est. $1.25), revenue $3.61B (est. $3.58B); raised full-year revenue growth to 'at least mid-teens,' adjusted EBITDA margin target to 35.5%+. Travel demand remains resilient even as the consumer discretionary space broadly shows strain.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "DDOG",
+      "note": "Fell 17% on Q2 revenue $1.12B (+36%), EPS $0.65 beat, guidance raised — FCF margin compressed 29%→25%, sequential growth disappointed. Second SaaS beat-and-raise reprice in two sessions (after Figma −16.5% on Aug 5). Pattern points to multiple compression at 25–30x NTM revenue. Snowflake, MongoDB upcoming prints are the data points that confirm or refute the pattern.",
       "sentiment": "negative"
     },
     {
       "ticker": "NVDA",
-      "note": "Eased to $218.99 (−0.5%) after the five-session, 12% SpaceX-driven rally. $216 support intact. August 26 Q2 FY27 is the test; gross margin above 76% with forward guide above consensus is what $218 requires.",
+      "note": "Held near $219 (−0.5%) as the SpaceX Vera Rubin exclusive continues to anchor sentiment. $216 support intact. August 26 Q2 FY27 earnings is the next real test — gross margin above 76% with strong forward guide is what the current multiple requires.",
       "sentiment": "neutral"
     },
     {
       "ticker": "AMD",
-      "note": "$489.28 (+1.2%) — recovered through the $484 floor after Lisa Su directly addressed the SpaceX NVDA exclusivity news and rebutted claims it forecloses AMD's datacenter pipeline. Two closes above $490 with normal volume would confirm the floor is structural before Q3 guidance.",
+      "note": "$489.28 (+1.2%) — recovered through $484 floor after Lisa Su addressed the SpaceX NVDA exclusivity narrative directly. Two closes above $490 with normal volume would confirm structural recovery before Q3 guidance.",
       "sentiment": "positive"
     },
     {
-      "ticker": "PLTR",
-      "note": "~$162, consolidating after Tuesday's +26.4% surge. No new catalyst. Q3 US commercial growth above 100% YoY remains the multiple condition at ~98–100x forward sales.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "AVGO",
-      "note": "No specific August 6 catalyst; the $128.1B hyperscaler purchase-commitment thesis is unchanged. SpaceX chose NVDA for its own compute, but Broadcom's pipeline covers Google, Apple, and Meta custom silicon.",
+      "ticker": "BTC",
+      "note": "$64,368 (Crypto.com live, 01:14 UTC Aug 7). Gate 2 ($62,000) buffer ~$2,368. Iran oil spike is a mild macro headwind for risk assets; NFP Friday is the next independent variable for rate-sensitive crypto positioning.",
       "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
-      "asset": "NFP binary — 30Y / September hike path",
-      "thesis": "30Y at 5.20% is the sole formal breach; September at 52% is 18 points from the 70% trigger. Friday's NFP (8:30 AM ET; consensus 80–88K; ADP 44K points to downside) is the week's remaining independent variable. Below 80K: September falls below 45%, Kashkari isolated, 30Y has a path toward 5.00%. Above 130K: three dissenters validated, September approaches 70%, and Brent at $82.49 means two regime thresholds could move simultaneously.",
-      "entry": "Binary event. 5.00% and 5.28% are the formal 30Y clearing levels on either side of the current 5.20%.",
+      "asset": "NFP binary — September hike / 30Y path",
+      "thesis": "30Y at 5.20% is the sole formal breach, 20bps above 5.00%. September hike odds at 52% are 18 points from the 70% trigger. Friday's NFP (8:30 AM ET; consensus 80–88K; ADP 44K points to downside) is the week's remaining independent variable. Below 80K: September falls below 45%, Kashkari isolated, 30Y has path toward 5.00%, regime moves to 0-of-6. Above 130K: September approaches 70%, second breach triggers, and with Brent at $82.49, oil breaches could arrive simultaneously.",
+      "entry": "Binary event. 5.00% and 5.28% are the formal 30Y clearing levels on either side of current 5.20%.",
       "invalidation": "Khamenei approves the restrictive Hormuz draft before 8:30 AM ET Friday, pushing Brent above $85 and repricing September odds independent of NFP.",
-      "horizon": "24 hours through NFP Aug 7; medium term through CPI Aug 13"
+      "horizon": "24 hours through NFP Aug 7; medium-term through CPI Aug 13"
     },
     {
       "asset": "Iran Hormuz oil reversal",
-      "thesis": "Three sessions of oil-deflation momentum reversed on a single draft document. Brent at $82.49 is $2.51 from the $85 trigger; WTI at $77.29 is $1.71 from $79. If Khamenei approves the restrictive draft, both oil triggers breach simultaneously — moving the regime from 1-of-6 to 3-of-6. A Khamenei rejection returns oil toward the $74 territory and re-opens the rate-relief and equity-momentum setup that Tuesday through Wednesday had built.",
-      "entry": "Brent $85 and WTI $79 are the formal trigger levels. The week's oil decline (11%) has been partially recaptured (3–4%); Khamenei's response resolves the direction.",
+      "thesis": "Three sessions of oil-deflation momentum reversed on a single draft document. Brent $82.49 is $2.51 from the $85 trigger; WTI $77.29 is $1.71 from $79. Khamenei's response to the restrictive draft is the binary: approval activates two oil regime thresholds simultaneously. A rejection returns oil toward $74, re-opening the rate-relief and equity-momentum setup that Tuesday through Wednesday had built.",
+      "entry": "Brent $85 and WTI $79 are the formal trigger levels. The week's 11% oil decline has been partially recaptured (3–4%); Khamenei's response resolves the direction.",
       "invalidation": "Khamenei rejects the draft or proposes material concessions bringing the framework closer to a full reopening; Brent falls back below $79.",
-      "horizon": "24–72 hours for diplomatic resolution; immediate market transmission on any sign"
+      "horizon": "24–72 hours for diplomatic resolution; immediate market transmission on any approval"
     },
     {
-      "asset": "SaaS multiple compression — DDOG as canary",
-      "thesis": "Datadog fell 17% on Q2 revenue +36% and raised guidance. Figma fell 16.5% on August 5 on a comparable beat-and-raise. The shared variable is not fundamentals but valuation: both traded at 25–30x NTM revenue before the print. DDOG repriced to roughly 20–22x on the day. Whether this signals a structural floor shift for high-growth SaaS multiples will be tested by Snowflake, MongoDB, and other names reporting in the next 2–4 weeks.",
-      "entry": "Sector-level pattern is forming. The next major SaaS print confirms or refutes it. No specific levels define the setup until one of those names reports.",
-      "invalidation": "The next major SaaS print beats and holds its pre-earnings multiple; or DDOG recovers above its pre-earnings close within 3 sessions.",
-      "horizon": "2–4 weeks through remaining SaaS earnings season"
+      "asset": "Ad-tech collapse — TTD + APP as pattern",
+      "thesis": "Trade Desk (TTD) −26% AH on 3% revenue growth plus C-suite reset arrived the same night AppLovin (APP) fell 21% during the session on a revenue miss. Two of the largest independent ad-tech platforms printing in consecutive sessions with catastrophic reactions. The shared variable is not one-off execution but structural: programmatic ad budgets are concentrating toward Google/Meta duopoly, leaving pure-play ad-tech platforms fighting for share at declining margins. The pattern may extend to other names with ad-revenue exposure reporting in coming weeks.",
+      "entry": "No specific level — sector-level pattern forming. The next major ad-tech or DSP print is the confirming data point. MNTN, DV, MGNI are smaller names in the ecosystem that trade directionally with TTD.",
+      "invalidation": "TTD management provides an off-cycle analyst update citing a one-time budget-timing issue rather than structural revenue deceleration; stock recovers above pre-earnings close within 3 sessions.",
+      "horizon": "2–4 weeks through remaining ad-tech earnings"
     }
   ],
-  "bear_case": "Iran's restrictive Hormuz draft, if approved by Khamenei, pushes Brent above $85 and WTI above $79 simultaneously — activating two oil regime thresholds that have not been triggered together this cycle. Friday's NFP landing above 100K in that context removes the labor-softness argument that has kept September hike odds from crossing 70%, and three simultaneous breaches (30Y, Brent, September hike odds) would represent the broadest regime widening since the Iran escalation peaked in June. If SPX closes below 7,380 on that combination, this read no longer holds.",
+  "bear_case": "Iran's restrictive Hormuz draft, if approved by Khamenei before Friday's NFP print, pushes Brent above $85 and WTI above $79 simultaneously — activating two oil regime thresholds that have not been triggered together this cycle. An approval before 8:30 AM ET Friday then collides with an above-consensus NFP (above 130K), removing the labor-softness argument that has kept September hike odds below 70% all week. Three simultaneous breaches — 30Y, Brent, and September hike odds — would represent the broadest regime widening since the Iran escalation peaked in June. The TTD C-suite reset and APP revenue miss in the same 24-hour window, following DDOG −17% and Figma −16.5% on Aug 5, are adding weight to an ad-tech and high-multiple SaaS de-rating that could broaden into the index if NFP disappoints growth expectations. SPX closing below 7,380 on that combination is the level that invalidates this read.",
   "body_mdx": "data/briefings/markets/2026-08-06-night.mdx"
 }
