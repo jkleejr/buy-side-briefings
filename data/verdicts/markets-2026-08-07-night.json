@@ -2,9 +2,12 @@
   "routine": "markets",
   "date": "2026-08-07",
   "window": "night",
-  "generated_at": "2026-08-07T23:15:00Z",
+  "generated_at": "2026-08-08T01:15:00Z",
   "is_seed": false,
   "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "conviction": "medium",
     "headline": "NFP loses 23,000 jobs — September hike thesis collapses as equities close at records",
     "label": "Labor shock resolved rate-hike risk but not supply-shock risk: SPX 7,757 record, 30Y holds 5.17%, gold surges $110, Hormuz unresolved",
     "rationale_short": "July payrolls printed −23,000 against an 80,000 consensus, with May and June revised down a combined 103,000 and average hourly earnings cooling to +3.2% YoY. September hike odds on Kalshi collapsed from 54% to 36% — 34 points below the 70% trigger. Equities rallied to records (SPX +0.62%, Nasdaq +1.30%), but the 30Y eased only 3bps to 5.17% and gold surged +2.61% to $4,350: two cross-asset signals that the inflation-growth tension is unresolved. Khamenei has still not responded to the Hormuz draft; oil held near its regime thresholds. Level that changes the read: 30Y closes below 5.00% on two consecutive sessions, or SPX closes below 7,380.",
@@ -48,7 +51,7 @@
     { "name": "Brent Crude",         "value": 82.15, "trigger_above": 85.0,  "unit": "$/bbl" },
     { "name": "WTI Crude",           "value": 78.31, "trigger_above": 79.0,  "unit": "$/bbl" },
     { "name": "SPX vs 7,380",        "value": 7757,  "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 65300, "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",          "value": 64917, "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
@@ -73,7 +76,7 @@
     },
     {
       "ticker": "BTC",
-      "note": "~$65,300 (+1.5%) on NFP miss; Gate 2 ($62K) buffer extended to ~$3,300. Benefiting from September hike odds falling to 36%; BTC has tracked the rate-relief narrative consistently this week.",
+      "note": "~$64,917 (+0.9%) on NFP miss; Gate 2 ($62K) buffer ~$2,917. September hike odds fell to 36% — BTC tracked rate-relief narrative through the session, tagged $65,300 intraday on the NFP print, then faded into AH as risk-off drift set in.",
       "sentiment": "positive"
     }
   ],
