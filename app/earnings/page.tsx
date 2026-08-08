@@ -1,5 +1,8 @@
 import { getEarningsSchedule, countdownBadge } from "@/lib/earnings";
+import { getFomcEvents, getBojEvents } from "@/lib/calendar-feeds";
+import { todayET } from "@/lib/utils";
 import EarningsSchedule from "@/components/earnings-schedule";
+import PolicyDecisions from "@/components/policy-decisions";
 
 // The route stays /earnings — it is linked from the briefings and indexed —
 // but the page presents itself as the Calendar everywhere a reader sees it.
@@ -37,6 +40,14 @@ export default async function EarningsPage() {
   const schedule = await getEarningsSchedule();
   const { entries } = schedule;
 
+  // Fed and BoJ decisions come from static published tables, so this is a
+  // synchronous read with no failure mode — the calendar can't be thinned by a
+  // feed hiccup the way the earnings half can.
+  const today = todayET();
+  const policy = [...getFomcEvents(today), ...getBojEvents(today)].sort((a, b) =>
+    a.date.localeCompare(b.date),
+  );
+
   const next = entries[0] ?? null;
   const within7 = entries.filter((e) => e.daysUntil >= 0 && e.daysUntil <= 7).length;
   const within30 = entries.filter((e) => e.daysUntil >= 0 && e.daysUntil <= 30).length;
@@ -60,6 +71,8 @@ export default async function EarningsPage() {
         <Stat label="Next 30 Days" value={String(within30)} sub="reports" tone="var(--cyan-term)" />
         <Stat label="Tracked" value={String(entries.length)} sub="with a date" />
       </div>
+
+      <PolicyDecisions events={policy} today={today} />
 
       <EarningsSchedule schedule={schedule} />
 

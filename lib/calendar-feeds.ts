@@ -146,7 +146,8 @@ export function getFomcEvents(
     const day = d.getUTCDate();
     return {
       date: m.date,
-      label: `FOMC decision (${day}–${m.through})`,
+      // Number() strips the table's leading zero: December is 8–9, not 8–09.
+      label: `FOMC decision (${day}–${Number(m.through)})`,
       kind: "FOMC",
       time_et: "2:00 PM",
       source: "fomc",
