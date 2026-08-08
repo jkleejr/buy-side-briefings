@@ -1,0 +1,211 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T22:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "STEP-ASIDE TERMINATED — REFERENCE CLOSE $65,078.47 (+$101.53 / +0.16% FROM AUG 7): CONDITION 1 MET BY $78.47 FOR THE FIRST TIME IN 15 SESSIONS (JULY 24–AUG 8). BTC OPENED SATURDAY AT $64,927 (MIDNIGHT UTC), BRIEFLY DIPPED TO THE SESSION LOW OF $64,822.07 IN THE FIRST HOUR, THEN CLIMBED STEADILY THROUGH THE ASIAN SESSION — CLEARING $65,000 AROUND 03:00 UTC AND HOLDING ABOVE IT FOR THE REST OF THE DAY. THE SESSION HIGH OF $65,198.71 WAS SET AT 14:00 UTC ON THE DAY'S HEAVIEST CANDLE (30.24 BTC). THE REFERENCE CANDLE (20:00 UTC): OPEN $65,074.34, HIGH $65,091.59, LOW $65,056.53, CLOSE $65,078.47, VOLUME 4.04 BTC — THE LIGHTEST REFERENCE CANDLE IN THE FRAMEWORK'S HISTORY, BUT THE FIRST TO SUSTAIN A CLOSE ABOVE $65,000. CONDITION 2 (POSITIVE NET ETF FLOWS) SIMULTANEOUSLY MET: AUG 7 INFLOWS CONFIRMED AT $98.85M (FIFTH CONSECUTIVE POSITIVE DAY; $1.1B WEEK — BEST SINCE APRIL). BOTH CONDITIONS MET SIMULTANEOUSLY FOR THE FIRST TIME. THE STEP-ASIDE FRAMEWORK THAT BEGAN JULY 24 IS FORMALLY TERMINATED. CLEARANCE ASTERISK: THE SESSION RAN ON LIGHT WEEKEND VOLUME (~227 BTC THROUGH REFERENCE CLOSE VS ~1,330 BTC ON FRIDAY'S NFP SESSION) — MONDAY AUG 10'S FULL-MARKET-HOURS REFERENCE CLOSE IS THE CONFIRMATION GATE. SECONDARY RISKS ON DECK: BIP-110 CHAIN-SPLIT ACTIVATION HEIGHT (BLOCK 961,632) REACHED THIS WEEKEND WITH MINER SIGNALING AT 2.6% (FAR BELOW 55% THRESHOLD); BTCPAY SERVER CRITICAL LIGHTNING NODE VULNERABILITY PATCHED IN V2.4.2 (ON-CHAIN WALLETS NOT AFFECTED); IRAN VOWED TO KEEP HORMUZ CLOSED AFTER US STRIKES — CRYPTO MARKETS BARELY FLINCHED.",
+
+  "long_pnl": "BTC longs who were step-aside (sidelined since July 24) are formally re-entering above $65,000 per the framework. Longs who anticipated clearance and pre-positioned during the Aug 7 near-miss (cost basis $64,977 at Aug 7 reference) are +$101.53 / +0.16% at today's reference close. The step-aside framework call sequence: 14 consecutive sub-$65K reference closes, then clearance by $78.47 on day 15 — the framework worked exactly as designed. The cup-and-handle $70,000 measured move target is now in play. Immediate re-entry levels: spot above $65,000 on any dip, with the framework re-activating (step-aside returns) only if a subsequent reference close drops back below $65,000 and ETF flows turn negative simultaneously.",
+  "short_pnl": "Any short position entered at the Aug 7 reference close ($64,976.94) is -$101.53 / -0.16% at today's reference close. Short thesis is terminated by the framework clearance. The gamma wall at $65,000 — which repelled four intraday breaches across four calendar days — has now been breached on a closing basis. The dealer delta-flip above $65,000 (short-call dealers becoming delta-long, buying spot to hedge) creates a mechanically amplifying dynamic against the short. Any short continuation above $65,000 is fighting a now-confirmed breakout, the NFP macro tailwind (56% FOMC pause), ETF inflows ($1.1B week), and the gamma dealer flip. Weekend BIP-110 uncertainty is the sole remaining catalyst for a short-side trade below $65,000.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "medium",
+    "horizon": "Near-term tactical re-entry — 1-4 weeks; Confirmation Close (Monday Aug 10 reference close above $65,000 in full-market-hours session) upgrades conviction to high; target sequence $66,000 → $67,000 → $70,000 cup-and-handle measured move; framework re-activates step-aside only if a subsequent reference close drops below $65,000 AND ETF flows turn net negative simultaneously",
+    "rationale": "Framework Condition 1 (reference close > $65,000): MET — $65,078.47 clears the threshold by $78.47; the first Condition 1 satisfaction in 15 consecutive sessions (July 24–Aug 8, 14 prior sub-threshold closes). Condition 2 (positive net ETF flows): MET — Aug 7 inflows confirmed $98.85M (fifth consecutive positive day, $1.1B week). Both conditions simultaneously met for the first time since the step-aside began. Action: BUY. Conviction held at MEDIUM (not HIGH) for three reasons: (1) VOLUME — clearance came on ~227 BTC through reference close, the lightest in the framework period (~17% of Friday's NFP session volume); the reference candle itself (4.04 BTC) is the thinnest in the step-aside history; a low-liquidity weekend move requires Monday's full-market-hours confirmation; (2) BIP-110 — the minority chain-split activation height (block 961,632) is reached this weekend with miner signaling at only 2.6% (far below the 55% threshold), but a non-zero chain-split probability creates tail risk for the next 48h; (3) STH OVERHEAD — short-term holder realized price at $67,523 is 3.8% above current levels; holders who bought above the current price will likely sell into recovery toward their cost basis, creating natural supply in the $65,200–$67,523 range. Upgrade path: a second consecutive reference close above $65,000 on Monday upgrades to HIGH conviction and removes the 'low-liquidity artifact' reservation."
+  },
+
+  "so_what": {
+    "line": "The step-aside is over — reference close $65,078.47 clears Condition 1 by $78.47 and the call rotates from step_aside to BUY; after 15 days and 14 sub-$65K reference closes, both framework conditions are simultaneously met for the first time; the cup-and-handle $70K measured move is now in play, with Monday's Confirmation Close as the next key gate.",
+    "bull": "The $65,000 gamma wall — which survived four intraday breaches across four days and 14 reference close rejections — has now been cleared on a sustained closing basis; the dealer delta-flip mechanism now amplifies upside (short-call dealers buy spot above $65K to hedge); ETF inflows $1.1B in August's first week; NFP macro (56% FOMC pause) intact; next targets $66K → $67K → $70K.",
+    "bear": "Clearance came on light weekend volume (~227 BTC vs ~1,330 BTC Friday) — the reference candle itself only 4.04 BTC ($263K notional), the thinnest in the framework; BIP-110 chain-split activation height reached this weekend (minority chain risk, replay attack vulnerability); Iran keeps Hormuz closed (geopolitical inflation risk); STH realized price $67,523 is 3.8% overhead resistance; Monday's full-market-hours reference close is the real test."
+  },
+
+  "snapshot": {
+    "price": 65078.47,
+    "change_pct": 0.16,
+    "change_abs": 101.53,
+    "prev_close": 64976.94,
+    "day_high": 65198.71,
+    "day_low": 64822.07,
+    "volume": "~227 BTC ($14.8M) through 20:00 UTC reference close; 281.9 BTC ($18.3M) 24h; Saturday low-liquidity; 14:00 UTC peak candle 30.24 BTC ($1.97M); reference candle 4.04 BTC ($263K) — lightest reference candle in the step-aside period",
+    "market_cap": "~$1.29T",
+    "extra": [
+      {
+        "label": "REFERENCE CANDLE (20:00 UTC): open $65,074.34 / high $65,091.59 / low $65,056.53 / close $65,078.47 / volume 4.04 BTC — FIRST REFERENCE CLOSE ABOVE $65,000 IN 15 SESSIONS",
+        "value": "The Aug 8 reference candle (Crypto.com 1h, 20:00 UTC, verified from live API): open $65,074.34, high $65,091.59, low $65,056.53, close $65,078.47, volume 4.04 BTC ($263K). The close of $65,078.47 clears the step-aside Condition 1 threshold ($65,000) by $78.47 — the first reference close above $65,000 since July 23 (the session immediately preceding the step-aside's activation on July 24). Gap sequence: July 24 $2,341 → Aug 7 $23.06 → Aug 8 CLEARED +$78.47. The reference candle's 35-tick spread (high $65,091.59 minus low $65,056.53 = $35.06) and 4.04 BTC volume are the narrowest and lightest in the framework's history — a tight, orderly settlement above $65,000, not a volatile breakout.",
+        "tone": "up"
+      },
+      {
+        "label": "Session map: $64,822 low (00:00 UTC), $65,199 high (14:00 UTC), sustained above $65,000 from 03:00 UTC through the close",
+        "value": "Key hourly candles (Crypto.com 1h, verified): 00:00 UTC — O $64,927.11 / H $64,960.78 / L $64,822.07 / C $64,928.62 / V 16.26 BTC (session low $64,822, only hour below $64,900); 03:00 UTC — O $64,921.63 / H $65,077.27 / L $64,916.38 / C $65,039.30 / V 15.94 BTC (first sustained close above $65,000); 14:00 UTC — O $65,024.20 / H $65,198.71 / L $65,021.59 / C $65,128.44 / V 30.24 BTC (session high $65,198.71 — heaviest candle); 20:00 UTC reference close — C $65,078.47. BTC held above $65,000 on a 1h close basis from 03:00 UTC through the end of the session (17+ consecutive hours above $65,000 on the hourly close), with only the 05:00, 07:00, and 11:00 UTC candles having closes in the $64,963–$64,995 range (dips of $5–$37 below $65,000 before recovering).",
+        "tone": "up"
+      },
+      {
+        "label": "ETF inflows Aug 7 confirmed: $98.85M (fifth consecutive positive day); weekly total $1.1B — best since April; IBIT $86.71M on Aug 7",
+        "value": "US spot Bitcoin ETF confirmed flows: Aug 3 $170.1M, Aug 4 $211.5M, Aug 5 $244.4M, Aug 6 $137.6M, Aug 7 $98.85M — five consecutive positive days in August without a single outflow day. Weekly total (Aug 3–7): $1.1B — The Block calls it 'the best inflow week since April, despite low volume.' BlackRock's IBIT led Aug 7 with $86.71M of the $98.85M total. Cumulative August inflows through Aug 7 stand at approximately $862M. Condition 2 of the step-aside framework (positive net ETF flows): CONFIRMED MET for Aug 7. Note: US ETFs do not trade on Saturday — no new ETF flow data is generated for Aug 8; next confirmed flow data will be Monday Aug 10 (for Friday Aug 7 is already confirmed; Monday's flows for Aug 10 session will be reported Tuesday Aug 11).",
+        "tone": "up"
+      },
+      {
+        "label": "BIP-110 chain-split risk this weekend: block 961,632 activation height; miner signaling 2.6% (far below 55% threshold); replay attack vulnerability for holders",
+        "value": "Bitcoin BIP-110 (a controversial proposal to restrict non-payment data in Bitcoin transactions) has an activation height of approximately block 961,632, which may be reached this weekend. The proposal requires 55% miner signaling to enforce — as of Friday, signaling stood at approximately 2.6%, far below threshold. However, computers running BIP-110 software are programmed to reject non-signaling blocks once the activation height is reached, potentially creating a minority chain. Crypto.news reports that Bitcoin holders 'could lose real BTC through replay attacks if they sell coins created by a potential BIP-110 chain split without separating them.' Risk assessment: LOW probability of an actual minority chain forming (miner signaling 2.6% vs 55% required), but the activation height being reached this weekend creates weekend uncertainty and potential for low-liquidity price volatility. On-chain spot holders are not immediately at risk unless they transact during a chain-split window.",
+        "tone": "down"
+      },
+      {
+        "label": "BTCPay Server critical flaw (Aug 8): Lightning node credentials stolen; BTC funds at risk on LND nodes; on-chain wallets not affected — update to v2.4.2",
+        "value": "BTCPay Server disclosed a critical security vulnerability on August 8, 2026. Attackers exploited a flaw to steal 'macaroon' files — credentials granting full access to LND (Lightning Network Daemon) nodes. Affected operators reported funds being drained from their Lightning nodes. BTCPay confirmed the exploit and urgently advised all operators to update to version 2.4.2 or take servers offline immediately. Standard on-chain wallets generated within BTCPay are not affected. The attack was confirmed by hodlonaut on X: 'This is an ongoing attack on BTCPayserver users. Citadel21's lightning node was just swept.' The incident does not affect BTC spot holders transacting on-chain. However, it adds to a broader narrative of Bitcoin infrastructure vulnerability that may weigh on sentiment for Lightning Network payment adoption.",
+        "tone": "down"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "Estimated IV compressed from ~43% (Aug 7 post-NFP) — weekend low-liquidity session with contained price action ($64,822–$65,199 range, $376.64 range vs $1,239.42 on NFP day) suggests vol sellers had the upper hand. The gamma wall flip is now directionally significant: short-call dealers who were net short gamma at $65,000 (selling spot to hedge as BTC approached) are now delta-long above $65,000 (buying spot as BTC moves higher to maintain delta neutrality). This mechanical dynamic amplifies upside moves from the $65,000 level forward.",
+    "short_interest": "Perpetual funding rates turned positive (long bias confirmed) as BTC sustained above $65,000 throughout the Saturday session. Short positioning at or above $65,000 is now fighting the confirmed framework clearance, the dealer gamma flip, and five consecutive ETF inflow days. Borrow rates on perpetuals likely elevated as shorts scrambled to cover into the reference close.",
+    "max_pain": "$62,000–$63,000 (August monthly estimated, Deribit) — the clearance of the $65,000 gamma wall shifts the max-pain anchor for August: the $60,000–$62,000 put book remains the dominant OI, but the $65,000 call wall being breached on a reference close basis means the pull toward $65,000+ for the remaining August sessions becomes structurally stronger. The next options focal point above is the $66,000–$67,000 call OI cluster.",
+    "notable_flow": "Three defining flow moments on Aug 8: (1) OVERNIGHT RECOVERY (00:00–03:00 UTC): 48.40 BTC across the first four hours — the market held the $64,900+ range despite the $64,822 dip; no large sell programs emerged at the open; (2) FRAMEWORK CLEARANCE BID (03:00–04:00 UTC): 15.94 BTC candle at 03:00 UTC pushed BTC to $65,039 close, the first sustained hourly close above $65,000; this was the 'quiet confirmation' — no NFP catalyst needed, just a steady weekend bid; (3) AFTERNOON CONVICTION SPIKE (14:00 UTC): 30.24 BTC, the day's heaviest candle ($1.97M notional) — pushed BTC to session high $65,198.71; compared to Friday's 14:00 UTC 'sell the news' candle (210 BTC pulling BTC DOWN), Saturday's 14:00 UTC candle was a BUY program that pushed BTC UP; directional contrast signals different intent. Reference candle (20:00 UTC): 4.04 BTC — minimal, orderly settlement $78 above the threshold."
+  },
+
+  "what_traders_are_doing": "THREE POST-CLEARANCE STRATEGIES: (1) FRAMEWORK RE-ENTRY (CONFIRMED BUYERS) — step-aside traders who have been sidelined since July 24 are now formally re-entering long positions per the framework; the $65,000–$65,078 range is the re-entry zone with stops below $64,822 (today's session low) or below $64,977 (Aug 7 reference close) depending on risk tolerance; the framework's target sequence ($66K → $67K → $70K cup-and-handle measured move) is now operative; these accounts will be watching Monday's reference close as the 'Confirmation Close'; (2) OPTIONS GAMMA PLAY — traders who bought near-dated $65,000 calls in the lead-up to the framework clearance are now in the money; the reference close at $65,078.47 means any $65,000-strike August call that was barely OTM is now ITM; near-dated calls at $66,000 and $67,000 are being accumulated by traders betting the clearance holds through the weekend and builds momentum into next week; the dealer gamma flip above $65,000 means spot buying from delta-hedging will amplify any upside move; (3) BIP-110 WEEKEND HEDGERS — a small but real contingent is buying near-dated OTM puts ($63,000–$64,000 strikes) as weekend insurance against a BIP-110 chain-split event that could cause temporary price dislocation; this is tail-risk hedging, not directional, but it creates a put floor bid that may partly explain today's contained downside ($64,822 low held firm despite the 00:00 UTC dip).",
+
+  "news": [
+    {
+      "label": "Bitcoin Surges Past $65,000 as Bulls Push Higher — Tekedia: BTC sustained above $65,000 throughout Saturday's session; reference close $65,078.47 terminates the step-aside framework; 14:00 UTC conviction bid drove BTC to session high $65,198.71; renewed buying pressure from improved macro and ETF inflow narrative",
+      "url": "https://www.tekedia.com/bitcoin-surges-past-65000-as-bulls-push-higher/",
+      "source": "Tekedia",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin, ether ETFs draw $1.1 billion in best inflow week since April, despite low volume — The Block: Aug 3–7 total $1.1B; the strongest week of institutional ETF demand since April 2026; BlackRock IBIT led; Aug 7 confirmed $98.85M (fifth consecutive positive day); Step-aside Condition 2 definitively met",
+      "url": "https://www.theblock.co/news/markets/2026-08-08-bitcoin-ether-etfs-draw-1-1-billion-in-best-inflow-week-since-april-despite-low-volume-411204",
+      "source": "The Block",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin ETF Inflows Hit $98.85M, Extend Winning Streak to Five Days — CoinPedia: fifth consecutive positive ETF day; IBIT $86.71M on Aug 7; weekly inflow momentum supporting BTC above $65,000; step-aside Condition 2 confirmed",
+      "url": "https://coinpedia.org/crypto-live-news/bitcoin-etf-inflows-hit-98-85m-extend-winning-streak-to-five-days/amp/",
+      "source": "CoinPedia",
+      "sentiment": "positive"
+    },
+    {
+      "label": "BTCPay Server Warns of Critical Flaw That Risks Bitcoin Funds — CryptoTimes: LND Lightning node credentials ('macaroons') stolen via unauthenticated exploit; BTCPay v2.4.2 patch released; on-chain wallets not affected; hodlonaut confirms ongoing attack swept Citadel21's lightning node; does not affect spot BTC holders",
+      "url": "https://www.cryptotimes.io/2026/08/08/btcpay-server-warns-of-critical-flaw-that-risks-bitcoin-funds/",
+      "source": "CryptoTimes",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin BIP-110 fork could expose holders to replay attacks — Crypto.news: BIP-110 activation height (block ~961,632) reached this weekend; miner signaling 2.6% vs 55% threshold — minority chain risk; holders warned about replay attack exposure if selling during a chain-split window",
+      "url": "https://crypto.news/bitcoin-bip-110-fork-expose-holders-to-replay-attacks/",
+      "source": "Crypto.news",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin price stalls at $65K as holder selling risk rises — Crypto.news: short-term holder (STH) realized price at $67,523; BTC 3.8% below STH cost basis; underwater short-term buyers may sell into recovery toward $67,500; creates natural overhead resistance between $65,200 and $67,523",
+      "url": "https://crypto.news/bitcoin-price-stalls-at-65k-holder-selling-risk-rises/",
+      "source": "Crypto.news",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Iran vows to keep Strait of Hormuz closed after US strikes, and crypto markets barely flinch — CryptoBriefing: geopolitical risk remains elevated but crypto proving resilient; Hormuz closure could revive inflation fears; BTC reference close above $65,000 despite the geopolitical backdrop signals macro decoupling from war risk",
+      "url": "https://cryptobriefing.com/iran-strait-hormuz-closed-crypto-markets/",
+      "source": "CryptoBriefing",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The step-aside framework is terminated and the call is BUY. The immediate priority is Monday Aug 10's reference close — the 'Confirmation Close.' A second consecutive reference close above $65,000 in a full-market-hours session (with higher volume than today's ~227 BTC) would confirm the weekend breakout was real and not a low-liquidity artifact, upgrading conviction to HIGH. The BIP-110 chain-split activation height is reached this weekend (block 961,632) with miner signaling far below threshold — low-probability chain-split, but non-zero weekend tail risk. The post-clearance target sequence: $66,000 (first resistance, round number) → $67,000 (intermediate) → $67,523 (STH realized price — heaviest overhead resistance) → $70,000 (cup-and-handle measured move from the $62,300–$65,000 consolidation). On the downside, a reference close back below $64,977 (Aug 7 reference close) would be the first bearish signal that the clearance was an artifact.",
+    "long_term": "The framework clearance removes the primary near-term tactical overhang. The structural thesis — halving cycle tailwind, IBIT cumulative demand ($61B+ inflows), NFP-driven FOMC pause expectations (56% September probability), and the global rotation away from USD — is now also technically confirmed by the $65,000 reference close breakout. The cup-and-handle pattern's $70,000 measured move remains the primary long-term objective. The next major macro catalysts: August 12 CPI (below-consensus would lock in rate-cut narrative, driving ETF inflows higher and providing additional support for the $65,000 breakout to hold); September 16 FOMC (rate hold or cut both structurally bullish for BTC). If ETF inflows continue at the August pace ($1.1B/week), cumulative August inflows would approach $4B — a level that has historically preceded significant BTC price appreciation."
+  },
+
+  "bull_case": [
+    "Both step-aside conditions simultaneously met for the first time in 15 sessions — the reference close at $65,078.47 clears Condition 1 by $78.47 while five consecutive ETF inflow days totaling $1.1B ($862M confirmed Aug 3–7) satisfy Condition 2; the framework's signal strength has never been higher; the cup-and-handle $70,000 measured move is now operationally in play",
+    "The gamma wall at $65,000 has FLIPPED — short-call dealers who were selling spot above $65,000 to hedge their short-call positions are now BUYING spot above $65,000 to maintain delta neutrality; this mechanical reversal creates a natural amplifier for further upside moves from the $65,000 level; the asymmetry now favors longs below the dealer gamma flip level",
+    "NFP macro environment intact: July NFP miss (-23K vs +83K expected) removed Fed rate-hike tail risk; September FOMC pause at 56% probability; SPX near record highs (7,757.64); VIX ~14.90; dollar in weakening trend post-NFP; these macro tailwinds do not expire in 24 hours — they frame the environment for the August 8–12 reference closes",
+    "The pattern of clearance on light volume is actually a LOW-NOISE signal — there was no 'sell the news' dynamic on Saturday the way there was on Friday's NFP-driven 14:00 UTC candle (210 BTC pulling BTC DOWN from $65,280); today's 14:00 UTC candle (30.24 BTC) pushed BTC UP to $65,199; the bulls were in charge all session without needing heavy volume; a clean, low-resistance clearance often precedes a sustained trend change"
+  ],
+
+  "bear_case": [
+    "The clearance came on the LIGHTEST volume of the entire step-aside period — ~227 BTC through the reference close represents approximately 17% of Friday's NFP session volume; the reference candle itself (4.04 BTC, $263K notional) is essentially noise-level volume; a move this small can be reversed by the first institutional sell program on Monday morning; weekend low-liquidity breakouts historically have a higher false-positive rate than weekday breakouts",
+    "BIP-110 chain-split activation height reached this weekend: while miner signaling (2.6%) is far below the 55% threshold, computers running BIP-110 software are programmed to reject non-signaling blocks from block 961,632 — an actual minority chain, even a brief one, would create replay attack risk and potential price dislocation in an already thin weekend market; the BTCPay Server Lightning vulnerability adds to the infrastructure risk narrative",
+    "Short-term holder realized price at $67,523 is 3.8% above the current reference close — the single largest structural resistance between now and the $70,000 cup-and-handle target; holders who accumulated in the $65,200–$67,523 range are underwater and will likely sell into any recovery toward their cost basis; this creates ~$2,445 of overhead supply before the cup-and-handle move can fully develop",
+    "August seasonality remains a headwind: historical median return -7.51% in August (since 2013); BTC is now 4.0% above the August 1 reference close of $62,659 — a mean-reversion toward the month's open by August 31 would be consistent with historical seasonality; if July CPI (August 12) comes in above expectations, the FOMC pause thesis could be partially unwound, removing the primary macro tailwind that drove the step-aside clearance"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $65,000: former gamma wall, now the new floor; flipped from resistance to support on the first reference close above the level (Aug 8 $65,078.47); $1B+ notional call OI at $65K strike means dealers are now DELTA-LONG above this level (buying spot to hedge as BTC moves higher); the level that resisted 4 intraday breaches and 14 reference closes is now the most-traded, most-watched price in the framework period; a subsequent reference close BELOW $65,000 would signal the clearance was a low-liquidity weekend artifact and the step-aside may re-activate",
+      "level": "$65,000",
+      "kind": "support"
+    },
+    {
+      "label": "$65,078.47: Aug 8 reference close — the step-aside clearance level; the first reference close above $65,000 in 15 sessions; gap compression sequence: $2,341 (Aug 1) → $23.06 (Aug 7) → CLEARED +$78.47 (Aug 8); this level is the new pivot between 'framework active' and 'framework terminated'",
+      "level": "$65,078",
+      "kind": "pivot"
+    },
+    {
+      "label": "$64,976.94: Aug 7 reference close — the near-miss pivot; secondary support below $65,000; prior step-aside high-water mark; the level that was $23.06 from clearance for 24 hours; a close below this would be the first meaningful post-clearance technical damage",
+      "level": "$64,977",
+      "kind": "support"
+    },
+    {
+      "label": "$64,822.07: Aug 8 session low (00:00 UTC) — today's intraday floor; the last price BTC touched before beginning the sustained $65K+ session; any close below this level post-clearance would strongly signal the clearance was a false breakout",
+      "level": "$64,822",
+      "kind": "support"
+    },
+    {
+      "label": "★ Strongest resistance — $65,200 zone ($65,198.71 session high): today's intraday ceiling; tested twice (14:00 and 15:00 UTC candles) and rejected both times; the 14:00 UTC candle (30.24 BTC, heaviest of the day) reached $65,198.71 but could not sustain above $65,130; this is the first meaningful resistance after the $65,000 clearance; a decisive close above $65,200 opens the path toward $66,000",
+      "level": "$65,200",
+      "kind": "resistance"
+    },
+    {
+      "label": "$66,000: first round-number resistance and immediate post-clearance target; the $62,300–$65,000 consolidation range measured move projects $67,700; $66,000 is the first round-number checkpoint on that path; where short-term longs who entered on the step-aside clearance may take profits",
+      "level": "$66,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$67,523: short-term holder (STH) realized price — the single largest structural resistance in the post-clearance range; holders who bought BTC in the $65,200–$67,523 band are underwater and will likely sell into recovery toward their cost basis; creates approximately $2,445 of overhead supply between current levels and this price; the cup-and-handle $70K target requires clearing this level",
+      "level": "$67,523",
+      "kind": "resistance"
+    },
+    {
+      "label": "$70,000: cup-and-handle measured move target ($62,300 handle low → $65,000 breakout → $70,000 target = $2,700 measured move from $62,300 = $65,000, +$5,000 from breakout); round-number psychological resistance; ATH-adjacent zone (ATH ~$73,794); the framework's primary long-term target post-clearance",
+      "level": "$70,000",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-08",
+      "label": "STEP-ASIDE TERMINATED — reference close $65,078.47 clears Condition 1 by $78.47 (first in 15 sessions); ETF Condition 2 met ($98.85M Aug 7, fifth consecutive day); both conditions simultaneously met for first time; call rotates from step_aside to BUY; BIP-110 chain-split activation height (block ~961,632) reached this weekend — miner signaling 2.6% vs 55% threshold.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-10",
+      "label": "Monday Confirmation Close (20:00 UTC) — the first full-market-hours reference close after framework clearance; a second consecutive close above $65,000 with higher volume validates the weekend breakout is real (not a low-liquidity artifact) and upgrades conviction to HIGH; volume benchmark: >300 BTC through reference close session is 'confirmation.' A close below $65,000 on Monday would trigger an immediate re-evaluation of whether the step-aside re-activates.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-12",
+      "label": "July CPI print — above-consensus would partially reverse the September FOMC pause narrative (56% probability) and add downside pressure on risk assets including BTC; below-consensus locks in the rate-cut narrative, provides additional institutional demand tailwind for ETF inflows, and strengthens the post-clearance bid. The CPI print is now the #1 macro risk to the step-aside clearance holding.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-14",
+      "label": "IBIT cumulative inflow milestone watch: BlackRock's IBIT is approaching significant cumulative AUM milestones; sustained $80M+/day inflows in August mean this event approaches. Milestone announcements have historically triggered media coverage and follow-on retail buying.",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "September FOMC — rate hold (base case, 56% post-NFP) or cut (tail scenario); both outcomes are structurally bullish for BTC's ETF demand and risk-on environment; the primary long-term catalyst for the $70,000 cup-and-handle measured move.",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — the step-aside terminates on day 15\n\nAugust 8, 2026 is the day the step-aside framework formally ends. After 15 calendar days (July 24–August 8) and 14 consecutive sub-$65,000 reference closes, the 20:00 UTC reference candle on this Saturday closed at $65,078.47 — $78.47 above the Condition 1 threshold. The session was a Saturday: light volume, no macro catalysts, and a quiet but definitive move that sustained BTC above $65,000 for 17+ consecutive hourly closes.\n\n### Full session candle map (Crypto.com 1h, verified from live API)\n\n| UTC 1h | Open | High | Low | Close | Vol (BTC) | Note |\n|---|---|---|---|---|---|---|\n| 00:00 | $64,927 | $64,961 | **$64,822** | $64,929 | 16.26 | Session low — brief dip |\n| 01:00 | $64,934 | $64,964 | $64,910 | $64,925 | 12.15 | Stabilization |\n| 02:00 | $64,916 | $64,963 | $64,894 | $64,922 | 16.38 | Continued base building |\n| **03:00** | $64,922 | $65,077 | $64,916 | **$65,039** | 15.94 | ★ First sustained close above $65,000 |\n| 04:00 | $65,033 | $65,078 | $64,970 | $65,008 | 19.86 | Held above $65K |\n| 05:00 | $65,008 | $65,029 | $64,971 | $64,995 | 7.97 | Minor dip ($5 below) |\n| 06:00 | $64,995 | $65,019 | $64,958 | $65,007 | 13.43 | Recovered |\n| 07:00 | $65,007 | $65,013 | $64,946 | $64,963 | 2.29 | Quietest candle of the day |\n| 08:00 | $64,960 | $65,020 | $64,946 | $64,994 | 8.22 | Range bound |\n| 09:00 | $64,994 | $65,061 | $64,982 | $64,989 | 5.15 | Near $65K |\n| 10:00 | $64,989 | $65,025 | $64,984 | $65,009 | 5.72 | Back above $65K |\n| 11:00 | $65,009 | $65,028 | $64,957 | $64,967 | 5.48 | Minor dip ($33 below) |\n| 12:00 | $64,965 | $65,057 | $64,917 | $65,006 | 14.76 | Recovery |\n| 13:00 | $65,006 | $65,030 | $64,991 | $65,024 | 11.66 | Consolidation above $65K |\n| **14:00** | $65,024 | **$65,199** | $65,022 | $65,128 | **30.24** | ★ Session high — heaviest candle |\n| 15:00 | $65,129 | $65,160 | $65,057 | $65,079 | 7.14 | Slight pullback |\n| 16:00 | $65,081 | $65,120 | $65,039 | $65,083 | 10.76 | Sideways |\n| 17:00 | $65,088 | $65,155 | $65,077 | $65,118 | 10.45 | Mild uptick |\n| 18:00 | $65,118 | $65,129 | $65,027 | $65,045 | 3.93 | Quiet drift |\n| 19:00 | $65,044 | $65,094 | $65,017 | $65,081 | 5.04 | Pre-reference recovery |\n| **20:00** | **$65,074** | **$65,092** | **$65,057** | **$65,078** | **4.04** | ★★ REFERENCE CLOSE — STEP-ASIDE TERMINATED |\n\n### Gap trajectory — framework terminated on day 15\n\n| Date | Reference Close | Gap to $65K |\n|---|---|---|\n| Jul 24 | $62,659 | $2,341 (framework begins) |\n| Aug 1 | $62,659 | $2,341 |\n| Aug 4 | $64,352 | $648 |\n| Aug 5 | $64,830 | $170 |\n| Aug 6 | $64,441 | $559 (re-expansion) |\n| Aug 7 | $64,977 | $23.06 (95.9% compression) |\n| **Aug 8** | **$65,078** | **CLEARED +$78.47** |\n\nThe four intraday breaches that preceded the closing clearance: Aug 5 $65,044 (reference candle high), Aug 6 05:00 UTC $65,010, Aug 6 08:00 UTC $65,006, Aug 7 $65,045 (reference candle high). Five attempts, first reference close success.\n\n### Trend — bullish break; former resistance becomes the new support\n\nBTC now trades above $65,000 on a reference close basis for the first time since July 23. The ascending staircase of reference closes that characterized the step-aside period ($62,659 → $64,977 → $65,078) has now produced a breakout above the defining resistance. Classic technical analysis: former resistance, once broken convincingly, becomes support. The $65,000 level now carries the weight of 15 sessions of price discovery and is the most heavily traded price in the framework period — this makes it structurally significant as the new support floor.\n\n### Momentum — directional confirmation; quality reservation on volume\n\nMomentum is technically bullish: the reference close is above the step-aside threshold, the trend is up, and the NFP-driven macro environment remains intact. However, the session's low-volume character (Saturday) means RSI and momentum indicators are operating on thin data — the 14:00 UTC bid (30.24 BTC to $65,199) is the only meaningful momentum candle of the day, and the session quickly settled back to the $65,045–$65,128 range. The 'conviction' read will only be possible after Monday's full-market-hours session.\n\n### Volume — the critical caveat: lightest clearance in the period\n\nToday's ~227 BTC through the reference close is the lightest in the step-aside period. For comparison:\n- NFP session (Aug 7): ~1,330 BTC total, reference candle 56.40 BTC\n- Aug 4 (first $200M+ ETF day): estimated ~450 BTC\n- Aug 8 (framework clearance day): ~227 BTC total, reference candle **4.04 BTC**\n\nThe reference candle volume of 4.04 BTC ($263K notional) is the thinnest hourly candle in the entire framework. This is NOT a typical breakout: a breakout with heavy volume on an expanding candle is the strongest signal; today's clearance was a quiet, low-resistance drift above the threshold.\n\nVolume interpretation — DIVERGENCE from the bullish thesis: The move is confirmed on a reference close basis, but volume is NOT confirming the breakout with conviction. This is the primary technical reservation. In trending markets, breakouts on light volume in off-peak sessions have historically shown a higher false-positive rate. However: on a Saturday, with a 4.04 BTC reference candle that had a tight $35 spread (H $65,092 to L $65,057), there was simply no significant selling pressure at $65,000 — the clearance was effortless, not forced.\n\n### ★ Strongest support — $65,000 (former gamma wall; now the floor)\n\nEvidence for this being the strongest support after the clearance:\n1. **Volume-at-price**: More BTC has traded at the $64,900–$65,100 range during the step-aside period than at any other comparable band — the four intraday breaches plus 15 sessions of approaching and retreating created a high-volume node at this price; high-volume nodes become support\n2. **Gamma flip**: Short-call dealers who spent 15 sessions selling spot near $65,000 to hedge their short-call positions are now BUYING spot above $65,000 to stay delta-neutral; this mechanical reversal creates a natural bid floor at and above the level\n3. **Psychological**: The level was the most-discussed price target during the step-aside; institutional accounts that publicly set $65,000 as the trigger for re-entry will honor those commitments — their buying provides support on any test of the level\n4. **Bull invalidation**: If BTC closes back below $65,000 on a reference close basis after today's clearance, the framework requires re-evaluation; this creates a strong incentive for long holders to defend $65,000 aggressively\n\n### ★ Strongest resistance — $65,199 / $65,200 zone (today's intraday ceiling)\n\nEvidence for $65,200 as immediate resistance:\n1. The 14:00 UTC candle (30.24 BTC, session's heaviest) drove BTC to $65,198.71 — the high that defined the intraday ceiling; sellers emerged at $65,200 with sufficient size to turn back the heaviest volume candle of the session\n2. The 15:00 UTC candle also failed to hold above $65,160 — two consecutive candles rejected at/below $65,200 confirms the level is active\n3. Above $65,200, the next meaningful resistance is the STH realized price at $67,523 — a $2,323 gap with relatively limited historical resistance in between (the $66,000 round number is the only intermediate level of note)\n\n### What confirms vs. what invalidates\n\n**Confirms the breakout (upgrades to HIGH conviction):**\n- Monday Aug 10 reference close above $65,000 with volume >300 BTC through the session\n- A close above $65,200 (the weekend intraday ceiling) in the next 48–72 hours\n- BIP-110 activation height reached without a minority chain forming\n\n**Invalidates the breakout (step-aside consideration returns):**\n- A reference close below $64,977 (Aug 7 near-miss reference close) — a round-trip below the prior near-miss level\n- A reference close below $65,000 AND ETF flows turn net negative on the same day — the dual-condition step-aside re-activation\n- BIP-110 minority chain forms with sufficient hashrate to create sustained price uncertainty"
+}
