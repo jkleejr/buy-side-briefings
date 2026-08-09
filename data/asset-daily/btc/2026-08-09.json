@@ -1,0 +1,211 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T22:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "CONFIRMATION CLOSE ACHIEVED — BTC REFERENCE CLOSE $65,139.21 (+$60.74 / +0.09% FROM AUG 8): SECOND CONSECUTIVE REFERENCE CLOSE ABOVE $65,000; CONVICTION UPGRADES FROM MEDIUM TO HIGH PER FRAMEWORK. SESSION OPENED AT $64,957.80, DIPPED TO SESSION LOW $64,727.04 AT 03:00 UTC (ASIAN SESSION WEAKNESS; BIP-110 CHAIN-SPLIT ANXIETY PRE-DAWN), THEN SURGED DECISIVELY IN THE 13:00 UTC CANDLE (37.87 BTC, HIGH $65,269.38 — THE DAY'S HEAVIEST CANDLE) BEFORE SETTING THE SESSION HIGH $65,303.42 AT 14:00 UTC. REFERENCE CANDLE (20:00 UTC): OPEN $65,180.14, HIGH $65,190.80, LOW $65,070.32, CLOSE $65,139.21, VOLUME 21.46 BTC — THE HEAVIEST REFERENCE CANDLE SINCE THE STEP-ASIDE BEGAN, CONFIRMING CONVICTION BEHIND THE CLOSE. VOLUME THROUGH REFERENCE CLOSE: ~311 BTC, EXCEEDING THE 300 BTC CONFIRMATION THRESHOLD. BIP-110 MINORITY CHAIN MINED 2 BLOCKS THEN STALLED — 99.85% OF HASHRATE STAYED ON MAIN CHAIN; MINORITY CHAIN IS EFFECTIVELY DEAD. PRICE HELD ABOVE $65,000 FROM THE 13:00 UTC SURGE THROUGH THE REFERENCE CLOSE (7+ CONSECUTIVE HOURLY CLOSES). COLDCARD HARDWARE WALLET HACK ONGOING ($89M–$116M TOTAL SINCE JULY 30) BUT PRICE IMPACT MINIMAL.",
+
+  "long_pnl": "BTC longs who re-entered on the Aug 8 framework clearance at the $65,000–$65,078 zone are now +$60.74 (+0.09%) session-over-session on the reference close. Longs who pre-positioned at the Aug 7 near-miss reference ($64,977) are +$162.27 (+0.25%) over two sessions. The framework's Confirmation Close condition (second consecutive reference close above $65,000 with volume >300 BTC) is now formally met, upgrading conviction from MEDIUM to HIGH and advancing the target sequence to $66,000 → $67,000 → $67,523 (STH realized price) → $70,000 cup-and-handle measured move.",
+  "short_pnl": "Any short entered at Aug 8's reference close ($65,078.47) is -$60.74 / -0.09% at today's reference close. The Confirmation Close removes the 'low-liquidity weekend artifact' bear argument. Two consecutive closes above $65,000 — day one on light Saturday volume (227 BTC), day two on ~311 BTC beating the confirmation threshold — means the breakout has survived both the BIP-110 chain-split event and the Asian session dip to $64,727. Short thesis is now fighting: confirmed technical breakout, HIGH-conviction buy signal, gamma dealer flip above $65,000, ongoing ETF inflow streak, and a BIP-110 tail risk that resolved bearishly (the minority fork collapsed). Continuing short exposure above $65,000 is high-risk.",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "high",
+    "horizon": "Near-to-medium term — 1-6 weeks; target sequence $66,000 → $67,000 → $67,523 (STH realized price) → $70,000 cup-and-handle measured move; framework re-activates step-aside only if a reference close drops below $65,000 AND ETF flows turn net negative simultaneously",
+    "rationale": "CONFIRMATION CLOSE MET — all three upgrade conditions simultaneously satisfied: (1) Reference close $65,139.21 is the SECOND consecutive close above $65,000 (Aug 8 $65,078.47 was the first); (2) Volume through reference close ~311 BTC exceeds the 300 BTC confirmation threshold; (3) BIP-110 chain-split tail risk resolved — minority chain dead with only 2 blocks mined before stalling, 99.85% hashrate on main chain. Conviction upgrades from MEDIUM to HIGH. The 'low-liquidity weekend artifact' reservation from Aug 8 is now retired. Additional evidence: (a) the 13:00 UTC surge candle (37.87 BTC, +$315 from $64,951 to $65,223 on a single candle) was the most decisive single-candle directional move since the step-aside began — real buying intent; (b) the reference candle itself (21.46 BTC) is more than 5x heavier than Aug 8's (4.04 BTC), providing volume confirmation the Aug 8 clearance lacked; (c) BTC held above $65,000 on 7 consecutive hourly closes (13:00–19:00 UTC) before the reference close — sustained, not lucky. Session tested the bears ($64,727 low on BIP-110 anxiety) and buyers came in hard. The framework is now in HIGH-conviction BUY territory."
+  },
+
+  "so_what": {
+    "line": "Confirmation Close achieved — two consecutive reference closes above $65,000 with the second on 311 BTC volume (exceeding the 300 BTC threshold); conviction upgrades from MEDIUM to HIGH; the BIP-110 ghost is gone (minority chain dead after 2 blocks); the $70K cup-and-handle target is now the unobstructed objective.",
+    "bull": "BIP-110 resolved — 99.85% hashrate stayed on main chain and the minority fork collapsed immediately; Confirmation Close removes the 'low-liquidity weekend artifact' caveat; 13:00 UTC surge candle (37.87 BTC) is the cleanest directional buy signal since the step-aside began; ETF streak intact (Aug 3–7 $853M, sixth day confirmed); dealer gamma flip above $65,000 mechanically amplifies every upside move toward $66K.",
+    "bear": "Asian session dipped to $64,727 — a 5% move below $65,000 that tested the new support and found buyers, but proves $65,000 is not frictionless support; Coldcard hardware wallet hack ($89M–$116M since July 30) ongoing and eroding self-custody confidence; STH realized price $67,523 is 3.7% overhead supply; August seasonality historically negative (-7.5% median); CPI Aug 12 is the next macro risk event."
+  },
+
+  "snapshot": {
+    "price": 65139.21,
+    "change_pct": 0.09,
+    "change_abs": 60.74,
+    "prev_close": 65078.47,
+    "day_high": 65303.42,
+    "day_low": 64727.04,
+    "volume": "~311 BTC ($20.3M) through 20:00 UTC reference close; 343.22 BTC ($22.3M) 24h total; 13:00 UTC peak candle 37.87 BTC ($2.47M) — heaviest of the session and of the confirmation day; reference candle 21.46 BTC ($1.40M) — 5.3x heavier than Aug 8's clearance candle (4.04 BTC)",
+    "market_cap": "~$1.29T",
+    "extra": [
+      {
+        "label": "REFERENCE CANDLE (20:00 UTC): open $65,180.14 / high $65,190.80 / low $65,070.32 / close $65,139.21 / volume 21.46 BTC — CONFIRMATION CLOSE; SECOND CONSECUTIVE REFERENCE CLOSE ABOVE $65,000",
+        "value": "The Aug 9 reference candle (Crypto.com 1h, 20:00 UTC, verified from live API): open $65,180.14, high $65,190.80, low $65,070.32, close $65,139.21, volume 21.46 BTC ($1.40M). This reference candle is 5.3× heavier than Aug 8's clearance candle (4.04 BTC) — the volume concern that held conviction at MEDIUM on Saturday is now addressed. The close of $65,139.21 is the second consecutive reference close above $65,000, satisfying the Confirmation Close condition and upgrading conviction to HIGH. The candle's $120 spread (high $65,190 to low $65,070) is wider than Aug 8's $35 spread, reflecting real two-sided participation rather than a thin, noise-level settlement.",
+        "tone": "up"
+      },
+      {
+        "label": "Session map: $64,727 low (03:00 UTC), $65,303 high (14:00 UTC); 13:00 UTC surge (37.87 BTC) recaptured $65,000 decisively; 7+ consecutive hourly closes above $65,000 into reference",
+        "value": "Key hourly candles (Crypto.com 1h, verified): 00:00 UTC — O $64,957.80 / H $64,990.30 / L $64,955.16 / C $64,981.24 / V 8.33 BTC (opened below $65K); 01:00 UTC — O $64,981.24 / H $65,009.70 / L $64,841.81 / C $64,866.69 / V 24.02 BTC (sold off sharply; 24.02 BTC = heaviest early session candle); 03:00 UTC — O $64,816.00 / H $64,816.00 / L $64,727.04 / C $64,792.38 / V 13.17 BTC (★ session low $64,727.04); 08:00 UTC — O $64,831.81 / H $64,938.88 / L $64,786.06 / C $64,823.12 / V 19.04 BTC (second test of sub-$64,800); 13:00 UTC — O $64,951.69 / H $65,269.38 / L $64,951.69 / C $65,223.35 / V 37.87 BTC (★ breakout candle — $317 range, closed +$271 above open; the session's decisive moment); 14:00 UTC — O $65,223.35 / H $65,303.42 / L $65,141.05 / C $65,261.19 / V 31.21 BTC (★ session high $65,303.42); 20:00 UTC — reference close $65,139.21 / V 21.46 BTC.",
+        "tone": "up"
+      },
+      {
+        "label": "BIP-110 chain split RESOLVED: minority chain mined 2 blocks then stalled; 99.85% of hashrate on main chain; 57+ blocks behind; fork effectively dead — tail risk eliminated",
+        "value": "The BIP-110 activation height (block 961,632) was reached overnight. At 06:34 UTC on Aug 9, enforcing nodes produced two blocks on a minority chain (heights 961,633–961,634), triggering a brief consensus split. However, 99.85% of network hashrate remained on the main chain. The minority branch inherited full mining difficulty with essentially no hashrate, making further blocks impossible to produce in any reasonable timeframe. By late morning, the minority chain was 57+ blocks behind the main chain and effectively dead. CoinDesk: 'Controversial Bitcoin fork BIP-110 mines two blocks then stops.' The BTC price barely registered the event — the session low ($64,727) occurred at 03:00 UTC, 3+ hours BEFORE the split at 06:34 UTC, and prices had already begun recovering before the split even happened. BIP-110 tail risk is formally eliminated. Affected users of BIP-110 nodes are advised to reconnect to the main chain.",
+        "tone": "up"
+      },
+      {
+        "label": "Coldcard hardware wallet exploit ongoing: $89M–$116M stolen since July 30; firmware flaw traced to March 2021; self-custody narrative hit; BTC price resilient",
+        "value": "The Coldcard hardware wallet exploit (first disclosed late July 2026) continues. Attackers have exploited a firmware flaw from a March 2021 build that caused seed generation to fall back on a weak software RNG (effective key strength collapsed from 128-bit to as low as 40-bit). Total losses across reports range from $89M (Fox Business, 4,585 addresses) to $116M (TRM Labs). BTC price has proven resilient despite the ongoing exploit — one narrative: the hack may actually accelerate ETF adoption as self-custody trust erodes. Coinkite has released patched firmware. Any Coldcard user who generated seeds between March 2021 and the patch should treat the seed as compromised and migrate to a new seed immediately.",
+        "tone": "down"
+      },
+      {
+        "label": "ETF streak: sixth consecutive positive inflow day (Aug 8 data pending — US ETFs closed weekends); week of Aug 3–7: $853.54M total; IBIT $693M (81% of total); institutional demand intact",
+        "value": "US spot Bitcoin ETF flows: Aug 3 $170.1M (IBIT $111.4M), Aug 4 $211.49M (IBIT $170.35M), Aug 5 $244.4M, Aug 6 $137.6M (IBIT $128.3M), Aug 7 $98.85M (IBIT $86.71M). Week total: $853.54M, the largest since mid-April. BlackRock's IBIT captured $693M of the $853M week — 81 cents of every ETF dollar. The streak is now framed as 'six straight days of inflows' in some reports (counting from late July). Note: US ETFs do not trade on weekends — no new ETF flow data for Aug 8 or Aug 9; next confirmed data covers Monday Aug 10 (reported Tuesday Aug 11). The underlying institutional demand narrative is intact and is the primary fundamental support for the $65,000 breakout holding.",
+        "tone": "up"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "IV remained compressed on Sunday's weekend session despite the BIP-110 chain-split event — the rapid resolution (minority chain dead within hours of formation) prevented vol from spiking. The dealer gamma flip above $65,000 remains directionally active: dealers who are net short call gamma above $65,000 continue to buy spot as BTC moves higher to maintain delta neutrality. The 13:00 UTC 37.87 BTC surge candle may reflect partial dealer delta-hedging as BTC recaptured $65,000 — the gamma acceleration dynamic is now confirmed as operative in a second session.",
+    "short_interest": "Perpetual funding rates confirmed positive through a second consecutive day above $65,000. Shorts that survived Aug 8's reference close are now underwater a second session. The confirmation close removes the 'this is just a weekend artifact' thesis shorts relied on. Short covering into Sunday's 13:00 UTC surge (the 37.87 BTC candle included likely short-cover flows alongside fresh longs) is consistent with the candle's size relative to the surrounding session volume.",
+    "max_pain": "$62,000–$63,000 (August monthly, Deribit) — the max-pain anchor is stale as BTC now trades $2,100+ above it; the pull back toward max pain is diminishing as August expiry approaches with BTC above $65,000 for two consecutive reference closes. The $66,000–$67,000 call OI cluster becomes the next focal point for the market maker positioning dynamic.",
+    "notable_flow": "Three defining flow moments: (1) ASIAN SELL-OFF (01:00 UTC — 24.02 BTC): the heaviest early-session candle moved BTC from $64,981 to a low near $64,841, likely a mix of BIP-110 anxiety front-running and weekend thin-market momentum; (2) BIP-110 LOW (03:00 UTC — 13.17 BTC to $64,727): the session floor — sellers exhausted at $64,727, no follow-through below; (3) CONFIRMATION SURGE (13:00 UTC — 37.87 BTC): the session's decisive candle — a single 1h bar adding $317 in range and closing +$271 above its open; this is the print that confirmed the framework breakout was real and forced short-covering; the 14:00 UTC follow-through (31.21 BTC, new session high $65,303) cemented the momentum."
+  },
+
+  "what_traders_are_doing": "THREE ACTIVE STRATEGIES POST-CONFIRMATION: (1) HIGH-CONVICTION LONGS (FRAMEWORK FULLY ACTIVE) — accounts that were waiting for the Confirmation Close before committing full size are now building positions at $65,100–$65,300; the step-aside framework is now HIGH conviction; target sequence $66K → $67K → $67,523 (STH realized price) → $70K; stop levels: a reference close back below $65,000 is the framework bear trigger; (2) BREAKOUT MOMENTUM TRADERS — the 13:00 UTC surge candle (37.87 BTC, +$317 range) attracted momentum buyers who are now riding the confirmed uptrend; near-dated calls at $66,000 and $67,000 are being accumulated by traders betting on a move toward the cup-and-handle target; (3) COLDCARD / SELF-CUSTODY REFUGEES — Coldcard exploit victims who have migrated funds to new seeds or exchanges may be repositioning into ETF-accessible accounts; this is a structural tailwind for ETF inflow continuation and a subtle spot demand driver as funds move through exchanges; some portion of Sunday's volume may reflect exploit-driven wallet migrations rather than pure speculative flow.",
+
+  "news": [
+    {
+      "label": "BIP-110 Minority Chain Mines 2 Blocks Then Stops: Chain split occurred at 06:34 UTC (block 961,633); minority chain produced 2 blocks then stalled; 99.85% of hashrate on main Bitcoin chain; minority chain 57+ blocks behind; tail risk eliminated — main chain declared dominant — CoinDesk / CryptoSlate",
+      "url": "https://www.coindesk.com/tech/2026/08/09/controversial-bitcoin-fork-bip-110-mines-two-blocks-then-stops",
+      "source": "CoinDesk",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin's Splintered BIP-110 Fork Falls Behind by 18 Blocks (then 57+): Silent miner boycott halted the enforcing chain; 99.85% of hashrate ignored BIP-110; fork freezes at 2 blocks — effectively dead; BTC price barely flinched through the event — News.Bitcoin.com / Crypto.news",
+      "url": "https://news.bitcoin.com/featured/bitcoins-price-barely-blinks-amid-coldcard-sweeps-and-bip-110s-collapse/",
+      "source": "News.Bitcoin.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin ETFs Record Sixth Straight Day of Inflows: Week of Aug 3–7 total $853.54M (largest since mid-April); BlackRock IBIT captured $693M (81% of total); sixth consecutive positive day confirmed — Yellow.com / Cryptonomist",
+      "url": "https://yellow.com/news/bitcoin-etfs-six-day-inflows",
+      "source": "Yellow.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "BlackRock IBIT Captures $479M as Bitcoin ETFs Extend Streak: IBIT led with $479M over three days (Aug 5–7); institutional demand concentrated in single product; ETF inflow momentum supports $65,000 breakout holding — CryptoNews.net",
+      "url": "https://cryptonews.net/news/bitcoin/33268083/",
+      "source": "CryptoNews.net",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin's Price Barely Blinks Amid Coldcard Sweeps and BIP-110's Collapse: BTC held near $65,000 through both events; market resilience interpreted bullishly; self-custody crisis not creating selling pressure in spot market — News.Bitcoin.com",
+      "url": "https://news.bitcoin.com/market-updates/bitcoins-price-barely-blinks-amid-coldcard-sweeps-and-bip-110s-collapse/",
+      "source": "News.Bitcoin.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Coldcard Hack Reaches $89M–$116M as Exploit Drains 4,585+ Addresses: Firmware flaw (March 2021 build) caused seed RNG collapse from 128-bit to ~40-bit; Coinkite patched firmware; affected users urged to migrate seeds; ongoing since July 30 — Fox Business / TRM Labs / Fortune",
+      "url": "https://www.foxbusiness.com/fox-news-tech/coldcard-wallet-attack-drains-up-89m-bitcoin-from-1200-addresses",
+      "source": "Fox Business",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin Fork August 2026: BIP-110, eCash, Covenants and the Quantum Clock — AMINA Bank deep-dive on the ideological divide behind BIP-110; the proposal sought to restrict non-payment data in Bitcoin transactions; critics say filtering valid transactions weakens Bitcoin's neutrality — AMINA Group",
+      "url": "https://aminagroup.com/research/bitcoin-fork-august-2026-bip-110-ecash-covenants-and-the-quantum-clock/",
+      "source": "AMINA Group",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The Confirmation Close is in. The framework is at HIGH conviction. Two consecutive reference closes above $65,000 with the second on 311 BTC volume — exceeding the confirmation threshold. BIP-110 tail risk eliminated. The next six targets in sequence: (1) $65,303 (today's session high, first resistance to clear); (2) $66,000 (round number, near-term objective); (3) $67,000 (intermediate); (4) $67,523 (STH realized price — the structural supply zone); (5) $70,000 (cup-and-handle measured move); and macro trigger: August 12 CPI — above-consensus puts the $65,000 breakout at risk; below-consensus locks in the FOMC pause and accelerates ETF inflow momentum. Monday Aug 10's full market-hours session is the first high-volume test — watch for the 13:00–16:00 UTC window (when institutional accounts are most active on weekdays) to confirm follow-through.",
+    "long_term": "Halving cycle tailwind intact; IBIT cumulative inflows growing toward a major AUM milestone; FOMC September rate decision (hold or cut, both structurally bullish); the Coldcard exploit is paradoxically bullish for ETF demand (self-custody trust eroding → institutional custody alternatives attracting flows). The $70,000 cup-and-handle measured move ($62,300 handle low → $65,000 breakout → +$7,700 = $70,000 target) is the primary long-term objective. If ETF inflows sustain at the August pace, cumulative August demand approaches levels historically preceding significant price appreciation."
+  },
+
+  "bull_case": [
+    "Confirmation Close formally achieved on Aug 9: second consecutive reference close above $65,000 ($65,139.21), volume ~311 BTC exceeds the 300 BTC confirmation threshold, BIP-110 tail risk eliminated (minority chain dead) — all three upgrade conditions met simultaneously; conviction is now HIGH and the framework's maximum-confidence signal is in",
+    "The 13:00 UTC surge candle (37.87 BTC, +$317 range, closed +$271 above its open) is the strongest directional buying signal since the step-aside began July 24 — a single 1h candle that recaptured $65,000 from $64,951 and closed at $65,223; this is institutional intent, not thin-market drift; the follow-through candle at 14:00 UTC (31.21 BTC to a session high $65,303) confirms the bid was real",
+    "BIP-110 resolved bullishly: the feared chain-split tail risk materialized and collapsed in a single morning; the main chain is unambiguously dominant (99.85% hashrate); the resolution removes the last concrete bearish catalyst overhanging the framework clearance and demonstrates Bitcoin's governance resilience to minority forks",
+    "ETF institutional demand ($853M week of Aug 3–7, IBIT leading at $693M / 81% share) provides a structural buyer floor; the Coldcard exploit paradoxically adds to ETF adoption momentum as self-custody trust erodes; the next ETF flow data (Monday Aug 10, reported Tuesday Aug 11) is likely to show continued inflows as the framework clearance + confirmation close narrative attracts new institutional attention"
+  ],
+
+  "bear_case": [
+    "The session low of $64,727.04 — a $351 (0.54%) dip below $65,000 — shows the support at $65,000 is not seamless; the market did test below $65,000 in the Asian session before recovering; if Monday's institutional open-market hours produce a similar dip and buyers don't come back as decisively, the clearance narrative could reverse quickly",
+    "Coldcard hack ($89M–$116M, 4,585+ addresses) is the largest hardware wallet exploit of 2026 and continues to erode confidence in Bitcoin's self-custody value proposition; if the hack narrative broadens to on-chain security concerns or leads to regulatory responses, it could generate selling pressure across the spot market",
+    "Short-term holder (STH) realized price $67,523 is 3.7% overhead — every dollar of recovery toward the cup-and-handle target runs through a supply zone where thousands of underwater holders will seek to exit near breakeven; the $65,200–$67,523 range is not empty air",
+    "August CPI (Aug 12) remains the macro risk: an above-consensus print would reopen the FOMC rate-hike debate, compress the September pause probability below 50%, and likely reverse the ETF inflow streak; historical pattern — BTC drops 8–12% in the week following an above-consensus CPI print when the print changes rate expectations"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $65,000: former gamma wall now confirmed floor by TWO reference closes ($65,078.47 Aug 8, $65,139.21 Aug 9); $1B+ notional call OI at this strike means dealers are now delta-long above it (buying spot to hedge), creating a mechanical bid; today's session tested below $65,000 (low $64,727) and buyers responded with the 37.87 BTC 13:00 UTC surge; the level that repelled 14 reference closes and 4 intraday breaches is now defended on back-to-back days",
+      "level": "$65,000",
+      "kind": "support"
+    },
+    {
+      "label": "$64,727: today's session low (03:00 UTC) — Asian session BIP-110 anxiety floor; the deepest dip of the post-clearance period; buyers came in aggressively in the 13:00 UTC session after testing this level twice (03:00 UTC and 08:00 UTC candle lows $64,786); a close below $64,727 post-confirmation would strongly suggest false breakout",
+      "level": "$64,727",
+      "kind": "support"
+    },
+    {
+      "label": "$64,822: Aug 8 session low — Sunday's first-session floor; two-day support cluster at $64,727–$64,822; if both session lows are breached on a close basis, the entire clearance period's price structure is called into question",
+      "level": "$64,822",
+      "kind": "support"
+    },
+    {
+      "label": "$65,139.21: Aug 9 Confirmation Close — the second consecutive reference close above $65,000; now serves as the near-term pivot between 'confirmation intact' and 'confirmation retest'; a close at or above this level on Monday would add a third day to the streak and tighten the support band",
+      "level": "$65,139",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest resistance — $65,303: today's session high (14:00 UTC); tested and rejected at 14:00 UTC (high $65,303.42, close $65,261) and the 16:00 UTC candle also failed to hold above $65,270; two consecutive rejection candles at $65,265–$65,303 define this as the near-term ceiling; a daily close above $65,303 opens the path to $66,000 without intermediate resistance",
+      "level": "$65,303",
+      "kind": "resistance"
+    },
+    {
+      "label": "$66,000: first round-number resistance and the cup-and-handle path's initial checkpoint; where Aug FOMC-expiry call OI begins to cluster; near-term profit-taking target for traders who re-entered on the framework clearance",
+      "level": "$66,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$67,523: short-term holder (STH) realized price — the single largest structural supply zone between current price and the $70,000 target; holders who accumulated in the $65,200–$67,523 range are underwater and likely to sell into recovery; creating ~$2,384 of overhead supply from current levels",
+      "level": "$67,523",
+      "kind": "resistance"
+    },
+    {
+      "label": "$70,000: cup-and-handle measured move target ($62,300 handle low → $65,000 breakout = $2,700 measured move; $65,000 + $5,000 = $70,000 target using the larger handle); round-number psychological resistance; ATH-proximate zone (~$73,794 ATH); the framework's primary long-term objective",
+      "level": "$70,000",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-09",
+      "label": "CONFIRMATION CLOSE ACHIEVED — reference close $65,139.21 on ~311 BTC volume; second consecutive close above $65,000; conviction upgrades to HIGH per framework; BIP-110 minority chain dead (2 blocks mined, then stalled); Coldcard exploit ongoing ($89M–$116M total since July 30).",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-10",
+      "label": "Monday open-market session — first full-market-hours, full-liquidity session since the Confirmation Close; institutional accounts re-enter the market; watch the 13:00–16:00 UTC window for volume confirmation; a third consecutive reference close above $65,000 would extend the streak and narrow the bull-bear debate; ETF flow data for Monday reported Tuesday Aug 11.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-11",
+      "label": "ETF flow data for Monday Aug 10 released — the first full-market-hours ETF flow data since the Confirmation Close; expected to show continued institutional inflows given the high-conviction framework signal; IBIT flow trajectory (above/below $100M) will indicate institutional uptake of the HIGH-conviction signal.",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-12",
+      "label": "July CPI print — the #1 macro risk to the current breakout holding; above-consensus reopens FOMC rate-hike debate and would likely reverse ETF inflow streak; below-consensus locks in September pause narrative and accelerates institutional demand; consensus expectation roughly flat from June.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "September FOMC — rate hold (base case) or cut; both structurally bullish for BTC demand via ETF; primary long-term catalyst for $70,000 cup-and-handle measured move.",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — the Confirmation Close arrives on the day BIP-110 died\n\nAugust 9, 2026 is the day Bitcoin's framework upgrade to HIGH conviction is formally earned. Two resistance events that have defined the last 72 hours of BTC trading — the $65,000 gamma wall and the BIP-110 chain-split tail risk — both resolved in the bulls' favor in a single session. The reference close of $65,139.21 is the second consecutive reference close above $65,000, and came on ~311 BTC volume (vs the 300 BTC confirmation threshold set in yesterday's dossier).\n\n### Full hourly session map (Crypto.com 1h, verified from live API)\n\n| UTC 1h | Open | High | Low | Close | Vol (BTC) | Note |\n|---|---|---|---|---|---|---|\n| 00:00 | $64,957.80 | $64,990.30 | $64,955.16 | $64,981.24 | 8.33 | Opened below $65K |\n| 01:00 | $64,981.24 | $65,009.70 | $64,841.81 | $64,866.69 | 24.02 | Sharp sell-off |\n| 02:00 | $64,866.69 | $64,866.69 | $64,768.68 | $64,818.70 | 17.98 | Continued weakness |\n| **03:00** | $64,816.00 | $64,816.00 | **$64,727.04** | $64,792.38 | 13.17 | ★ Session low |\n| 04:00 | $64,792.37 | $64,834.96 | $64,783.72 | $64,783.74 | 7.78 | Base building |\n| 05:00 | $64,787.97 | $64,801.71 | $64,770.08 | $64,801.58 | 4.13 | Quiet; pre-BIP-110 split |\n| 06:00 | $64,804.14 | $64,866.11 | $64,792.81 | $64,846.56 | 11.03 | Split event 06:34 UTC; no price impact |\n| 07:00 | $64,846.55 | $64,862.28 | $64,820.87 | $64,831.81 | 8.61 | Stable |\n| 08:00 | $64,831.81 | $64,938.88 | $64,786.06 | $64,823.12 | 19.04 | Second dip test |\n| 09:00 | $64,823.15 | $64,886.14 | $64,808.47 | $64,879.89 | 9.12 | Gradual recovery begins |\n| 10:00 | $64,880.50 | $64,984.28 | $64,876.32 | $64,956.85 | 12.84 | Recovery accelerates |\n| 11:00 | $64,959.20 | $65,009.42 | $64,943.44 | $64,949.99 | 5.17 | Approaches $65K |\n| 12:00 | $64,949.99 | $64,961.37 | $64,911.27 | $64,955.99 | 12.03 | Consolidation below $65K |\n| **13:00** | $64,951.69 | **$65,269.38** | $64,951.69 | **$65,223.35** | **37.87** | ★ Breakout candle — session surge |\n| **14:00** | $65,223.35 | **$65,303.42** | $65,141.05 | $65,261.19 | 31.21 | ★ Session high; continuation |\n| 15:00 | $65,264.81 | $65,265.93 | $65,203.70 | $65,232.26 | 17.07 | Holds gains |\n| 16:00 | $65,230.00 | $65,270.50 | $65,179.80 | $65,234.54 | 19.98 | Second test of $65,270 rejected |\n| 17:00 | $65,230.32 | $65,237.28 | $65,194.57 | $65,194.57 | 8.54 | Slight fade |\n| 18:00 | $65,194.58 | $65,222.92 | $65,183.69 | $65,196.88 | 10.40 | Sideways |\n| 19:00 | $65,196.87 | $65,216.51 | $65,169.70 | $65,182.92 | 11.46 | Pre-reference drift |\n| **20:00** | **$65,180.14** | **$65,190.80** | **$65,070.32** | **$65,139.21** | **21.46** | ★★ REFERENCE CLOSE — CONFIRMATION CLOSE |\n\n### The session in three acts\n\n**Act 1 — Asian session weakness (00:00–12:00 UTC):** BTC opened below $65,000 and sold off aggressively in the 01:00 UTC candle (24.02 BTC, -$115 from open), touching the session low of $64,727.04 at 03:00 UTC. The BIP-110 activation anxiety was front-running an event that occurred at 06:34 UTC — the market sold first and asked questions later. After the BIP-110 split occurred at 06:34 UTC and produced no price reaction (the minority chain was immediately impotent), BTC began a slow recovery. Twelve hours of prices below $65,000 — but the low was $64,727, not a collapse.\n\n**Act 2 — The 13:00 UTC breakout (one decisive candle):** The 13:00 UTC candle (37.87 BTC, open $64,951, high $65,269, close $65,223) recaptured $65,000 in a single hour with 37.87 BTC of volume — more volume than the entire first six hours of the session combined (08:00–13:00 UTC: ~40.5 BTC across five candles, but dominated by the 13:00 surge). This is what institutional intent looks like on a Sunday: a single decisive candle that leaves no ambiguity about who's in charge. The 14:00 UTC candle followed (31.21 BTC to $65,303), confirming the move was not a one-candle wonder.\n\n**Act 3 — Consolidation and confirmation (14:00–20:00 UTC):** BTC traded in a $65,140–$65,270 range for six hours, settling naturally above the prior session's reference close. The reference candle (20:00 UTC, 21.46 BTC) is the heaviest reference candle in the post-clearance period and carries real conviction behind it — a 5.3× improvement over Aug 8's 4.04 BTC clearance candle.\n\n### Trend — breakout confirmed; former resistance is new range floor\n\nTwo consecutive reference closes above $65,000. The step-aside framework is fully terminated. The trend is UP from the July 24 base of $62,659. The ascending reference closes ($62,659 → $64,977 → $65,078 → $65,139) mark a clear staircase recovery. BTC is now above the $65,000 gamma wall on back-to-back days.\n\n### Momentum — VOLUME CONFIRMS (the critical change from Aug 8)\n\nThe 13:00 UTC surge candle (37.87 BTC) is the strongest directional momentum print since the step-aside began. For comparison, the strongest candle in the entire 14-session step-aside period (July 24–Aug 7) was the Aug 7 NFP session's 14:00 UTC candle (210 BTC, but downward). The Aug 9 13:00 UTC candle is the strongest UPWARD momentum candle in the post-clearance period by a substantial margin.\n\nVolume through the reference close: ~311 BTC vs Aug 8's ~227 BTC. The confirmation threshold (300 BTC) is met with margin. Volume is NOW confirming the breakout — the key difference from yesterday's dossier.\n\n### ★ Strongest support — $65,000 (two confirmed reference closes; gamma dealer flip; volume shelf)\n\nEvidence after two days:\n1. **Two reference closes above $65,000** — the level has survived two settlement cycles\n2. **Intraday test today** — the session low was $64,727 (3:00 AM UTC), a full $273 below $65,000; buyers came back with 37.87 BTC at 13:00 UTC; the level absorbed the Asian session selling without a structural break\n3. **Gamma dealer flip** — above $65,000, short-call dealers are delta-long and buy spot as BTC rises; this creates a mechanical support zone at and above the $65,000 strike\n4. **Volume-at-price shelf** — 15+ sessions of BTC trading between $64,700 and $65,200 have created a dense volume shelf; high-volume nodes are support\n\n### ★ Strongest resistance — $65,303 (double rejection; today's ceiling)\n\nEvidence:\n1. The 14:00 UTC candle (31.21 BTC) reached $65,303.42 — the single highest print of the session — but closed at $65,261 (only a $42 body above the open, vs a $317 range); sellers met buyers at $65,303\n2. The 16:00 UTC candle reached $65,270 and closed at $65,234 — a second test and rejection in the $65,265–$65,303 zone\n3. Two consecutive hourly rejection candles at approximately the same price = tested twice, rejected twice = confirmed resistance; a break above $65,303 on a closing candle basis would signal the next leg toward $66,000\n\n### What confirms vs. what invalidates\n\n**Confirms (maintains HIGH conviction):**\n- Monday Aug 10 reference close above $65,000 (third consecutive) on volume >300 BTC\n- A close above $65,303 (today's session ceiling) on a 1h candle basis\n- ETF flow data for Monday Aug 10 (reported Tuesday) showing continued inflows\n\n**Invalidates (step-aside consideration returns):**\n- A reference close below $65,000 AND net negative ETF flows on the same day — the dual-condition step-aside re-activation signal\n- A reference close below $64,977 (Aug 7 near-miss reference close) on any day — this would signal a complete round-trip of the clearance"
+}
