@@ -1,0 +1,206 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-10",
+  "generated_at": "2026-08-10T21:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "FRAMEWORK CONDITION 1 BREACHED — REFERENCE CLOSE $64,172.87 ($966.34 / -1.48% FROM AUG 9 REFERENCE $65,139.21): THE FIRST FULL MARKET-HOURS SESSION SINCE THE CONFIRMATION CLOSE (AUG 9) ENDS BELOW THE $65,000 FRAMEWORK THRESHOLD ON MASSIVE VOLUME. SESSION MAP (CRYPTO.COM 1H, VERIFIED): OPENED $64,897 (00:00 UTC), BRIEFLY SURGED TO DAY HIGH $65,395.94 (01:00 UTC CANDLE, EXTENDING THE AUG 9 MOMENTUM), THEN ROLLED OVER STARTING 09:00 UTC AND COLLAPSED THROUGH $65,000 ON THE 13:00 UTC BREAKDOWN CANDLE (197.67 BTC — THE HEAVIEST SELLING CANDLE OF THE SESSION; OPEN $64,871, CLOSE $64,563, DOWN $308), WITH A SECONDARY DUMP AT 15:00 UTC (198.86 BTC, DOWN $337 FROM $64,627 TO $64,290). SESSION LOW: $63,810.74 (18:00 UTC). REFERENCE CANDLE (20:00 UTC): OPEN $64,054.75, HIGH $64,218.20, LOW $64,027.31, CLOSE $64,172.87, VOLUME 60.76 BTC. TOTAL VOLUME THROUGH REFERENCE CLOSE: ~1,410 BTC ($90.5M) — 4.5X THE AUG 9 CONFIRMATION THRESHOLD OF 300 BTC AND THE HEAVIEST SESSION SINCE THE STEP-ASIDE BEGAN JULY 24. PRIMARY CATALYST: STRATEGY (FORMERLY MICROSTRATEGY) DISCLOSED SELLING 1,690 BTC BETWEEN AUGUST 3–9 AT AN AVERAGE OF $64,262 ($108.6M TOTAL) TO FUND STRC PREFERRED STOCK BUYBACKS; '6,948 BTC SOLD YEAR-TO-DATE' — MICHAEL SAYLOR'S COMPANY HAS TRANSITIONED FROM THE WORLD'S PREMIER BITCOIN HODLER TO A SYSTEMATIC BITCOIN SELLER. FRAMEWORK STATUS: STEP-ASIDE PROTOCOL INITIATED. DUAL-CONDITION STEP-ASIDE REQUIRES: (1) REFERENCE CLOSE < $65,000 ✓ ($64,172.87 — BREACHED BY $827.13); (2) ETF FLOWS NET NEGATIVE — NOT YET CONFIRMED (MONDAY ETF DATA REPORTS TUESDAY AUG 11). GIVEN THE SEVERITY OF THE BREACH ($827 BELOW $65K ON 4.5X CONFIRMATION VOLUME), STEP-ASIDE IS INITIATED PRIOR TO ETF FLOW CONFIRMATION. DECISION: STEP_ASIDE, MEDIUM CONVICTION.",
+
+  "long_pnl": "Any long entered at the Aug 8 framework clearance ($65,000–$65,078) or the Aug 9 Confirmation Close ($65,139) is now underwater: -$827 to -$966 from those entries at today's reference close of $64,172.87 (-1.27% to -1.48%). Longs from the cup-and-handle handle low (~$62,300) are +$1,872 / +3.0% but are sitting through a painful reversal. The framework step-aside initiation is a signal to exit, not to hold through the reversal — the two-day confirmation structure has been unwound in a single session with 4.5x the volume.",
+  "short_pnl": "Shorts initiated at the $65,000–$65,395 zone on Aug 10 (the day high was $65,395.94 at 01:00 UTC) are now +$1,222 to +$827 at the session low of $63,810.74, and +$1,222 to $965 at the reference close of $64,172.87. The Strategy selling narrative (1,690 BTC sold, 6,948 BTC YTD) is a genuine paradigm shift: the world's most committed institutional HODL vehicle is now a systematic seller. Short thesis gains structural credibility from this event.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "medium",
+    "horizon": "Until dual step-aside conditions are resolved: (1) a reference close above $65,000 AND (2) ETF flows confirmed positive; or alternatively, until a reference close below $62,300 (cup-and-handle handle low) warrants considering a sell signal; ETF flow data for Aug 10 reports Tuesday Aug 11 — that data point is the framework's next gate; step-aside is the appropriate stance with a single confirmed condition ($64,172.87 reference close) ahead of ETF confirmation",
+    "rationale": "STEP-ASIDE INITIATED: The dual-condition framework (reference close < $65,000 AND ETF flows net negative) has condition 1 confirmed: the Aug 10 reference close of $64,172.87 is $827.13 below the $65,000 threshold. Condition 2 (ETF flows net negative) cannot be confirmed until Tuesday Aug 11 when Monday's ETF data is published. However, the severity of condition 1's breach warrants immediate step-aside prior to ETF confirmation, for three reasons: (a) The close is $827 below $65,000 — this is not a marginal breach but a substantial one; the Aug 9 Confirmation Close of $65,139.21 is now 42.6% unwound; (b) Volume: ~1,410 BTC through the reference close is 4.5x the Aug 9 Confirmation threshold of 300 BTC — the selling is institutional and decisive, not thin-market noise; (c) Strategy catalyst: the disclosure that the world's premier institutional Bitcoin HODLer has sold 6,948 BTC year-to-date under a 'Digital Credit Capital Framework' is a paradigm-shifting narrative event that removes a structural demand assumption the market has relied on for years. MEDIUM conviction (not HIGH) because: ETF flows could show continued inflows (Bitcoin ETFs are not the same as Strategy's balance sheet), which would cause the step-aside framework to hold pending a second reference close above $65,000; and the session low of $63,810.74 found buyers — the step-aside could resolve quickly if Tuesday's ETF flows are strongly positive."
+  },
+
+  "so_what": {
+    "line": "The Confirmation Close has been reversed in a single session: reference close $64,172.87 is $827 below $65,000 on 1,410 BTC of volume (4.5x the confirmation threshold); Strategy has sold 6,948 BTC YTD under a systematic program — the world's premier Bitcoin HODLer is now a systematic seller; step-aside initiated pending Tuesday's ETF flow confirmation.",
+    "bull": "ETF flows for Monday Aug 10 have not yet been reported (data releases Tuesday) — if the $853M weekly streak continues with strong Monday inflows, the dual-condition step-aside would fail to fully trigger; the session low of $63,810.74 found buyers (reference close recovered $362 from the low to $64,172.87); Strategy's selling may be a temporary structural event, not a permanent reversal of institutional demand.",
+    "bear": "Strategy's 6,948 BTC sold YTD under its 'Digital Credit Capital Framework' removes the most important HODLer from the demand side; 1,410 BTC volume on a single day (4.5x the confirmation threshold) is the largest volume event since the step-aside began July 24 and it was decisively bearish; the confirmation close has been invalidated in a single session; August seasonality historically averages -7.5%; the $65,000 gamma wall has now been broken from above, flipping dealer positioning from delta-long to potentially delta-short below $65,000."
+  },
+
+  "snapshot": {
+    "price": 64172.87,
+    "change_pct": -1.48,
+    "change_abs": -966.34,
+    "prev_close": 65139.21,
+    "day_high": 65395.94,
+    "day_low": 63810.74,
+    "volume": "~1,410 BTC ($90.5M) through 20:00 UTC reference close; heaviest session since step-aside began July 24; 4.5x the Aug 9 Confirmation threshold of 300 BTC; 13:00 UTC breakdown candle 197.67 BTC and 15:00 UTC dump candle 198.86 BTC were the two heaviest hourly candles of the session",
+    "market_cap": "~$1.27T",
+    "extra": [
+      {
+        "label": "REFERENCE CANDLE (20:00 UTC): open $64,054.75 / high $64,218.20 / low $64,027.31 / close $64,172.87 / volume 60.76 BTC — STEP-ASIDE CONDITION 1 CONFIRMED",
+        "value": "The Aug 10 reference candle (Crypto.com 1h, 20:00 UTC, verified from live API): open $64,054.75, high $64,218.20, low $64,027.31, close $64,172.87, volume 60.76 BTC ($3.9M). The close of $64,172.87 is $827.13 below the $65,000 framework threshold — the first reference close below $65,000 since the step-aside period began (all prior references: July 24 $62,659, Aug 7 $64,977, Aug 8 $65,078, Aug 9 $65,139). The reference candle itself is recovery-oriented (the close $64,172 is $145 above the candle low $64,027 — buyers returned in the final hour of the reference candle from the 18:00 UTC session low of $63,810). This partial recovery suggests the selloff found some support but not enough to restore the $65,000 framework level.",
+        "tone": "down"
+      },
+      {
+        "label": "SESSION MAP: Day high $65,395.94 (01:00 UTC) → Breakdown (13:00 UTC, 197.67 BTC) → Session low $63,810.74 (18:00 UTC) → Partial recovery to $64,172.87 reference close",
+        "value": "Key hourly candles (Crypto.com 1h, verified from API): 01:00 UTC — H $65,395.94, C $65,198.08, V 61.90 BTC (★ session high; early Asian momentum from Aug 9 Confirmation Close extended briefly); 09:00 UTC — O $65,237, H $65,238, L $64,960, C $64,969, V 19.32 BTC (rollover begins — lower high, lower low; momentum fades); 12:00 UTC — O $65,129, H $65,244, L $64,841, C $64,879, V 39.70 BTC (acceleration lower; candle low $64,841 breaks below $65,000 for the first time this session); 13:00 UTC — O $64,871, H $64,974, L $64,504, C $64,563, V 197.67 BTC (★ PRIMARY BREAKDOWN CANDLE — the heaviest candle of the session; open $64,871 to close $64,563, down $308 in a single hour; 197.67 BTC = 5x the session average; this is the institutional sell event); 15:00 UTC — O $64,627, H $64,713, L $64,190, C $64,290, V 198.86 BTC (★ SECONDARY DUMP — matching the 13:00 volume; continuation of institutional selling; low $64,190 breaks further from $65,000); 18:00 UTC — O $63,956, H $64,020, L $63,810.74, C $63,890, V 55.64 BTC (★ SESSION LOW $63,810.74; selling exhaustion begins; buyers defend at $63,810); 19:00 UTC — O $63,881, H $64,114, L $63,881, C $64,054, V 106.13 BTC (largest recovery candle; $173 range recovery from $63,881 open; buying emerges); 20:00 UTC — REFERENCE: $64,172.87 close (see above).",
+        "tone": "down"
+      },
+      {
+        "label": "PRIMARY CATALYST: Strategy sells 1,690 BTC ($108.6M) to fund STRC buybacks — 6,948 BTC sold year-to-date; the world's premier institutional Bitcoin HODLer is now a systematic seller under the 'Digital Credit Capital Framework'",
+        "value": "Strategy (formerly MicroStrategy) disclosed that it sold 1,690 BTC between August 3–9 at an average price of $64,262, generating $108.6 million. The proceeds were used entirely to fund buybacks of STRC preferred stock, which has been trading below its $100 par value. Context: Strategy has now sold 6,948 BTC year-to-date under its 'Digital Credit Capital Framework' — a plan adopted in late June that authorizes limited Bitcoin sales to fund preferred dividends, buybacks, and cash reserves when issuing equity looks less attractive. This represents a fundamental paradigm shift: Strategy, long viewed as the world's most committed institutional Bitcoin holder (peak holdings: ~400,000+ BTC), is now a systematic Bitcoin seller. The market reaction was rapid: the 13:00-15:00 UTC breakdown candles (197 BTC and 199 BTC respectively) coincide with the time US markets processed the morning disclosure. BTC fell from ~$65,200 (12:00 UTC) to ~$64,290 (15:00 UTC close) on the news.",
+        "tone": "down"
+      },
+      {
+        "label": "Volume profile: 1,410 BTC ($90.5M) — the heaviest session since step-aside began; 13:00 UTC (197.67 BTC) and 15:00 UTC (198.86 BTC) are the two heaviest candles since the step-aside period began July 24",
+        "value": "Total volume through the 20:00 UTC reference close: ~1,409.66 BTC ($90.5M). For context: Aug 9 Confirmation Close total volume = ~311 BTC (the confirmation threshold); Aug 8 clearance total volume = ~227 BTC. Today's volume is 4.5x Aug 9's and 6.2x Aug 8's. The two 197-199 BTC hourly candles (13:00 and 15:00 UTC) represent the most decisive institutional selling in the entire post-July-24 period. Volume distribution: early session (00:00-12:00 UTC): 452 BTC total; breakdown (13:00-17:00 UTC): 754 BTC in 5 hours; recovery (18:00-20:00 UTC): ~222 BTC. The selloff volume (754 BTC in 5 hours) is 3.3x the prior two-day total (311 BTC on Aug 9 + 227 BTC on Aug 8).",
+        "tone": "down"
+      },
+      {
+        "label": "ETF flows for Monday Aug 10 not yet reported — the framework's second condition remains unconfirmed; data releases Tuesday Aug 11",
+        "value": "US spot Bitcoin ETF flow data for Monday Aug 10 will be published Tuesday Aug 11 morning. The framework's dual step-aside condition requires BOTH: (1) reference close below $65,000 (✓ confirmed, $64,172.87) AND (2) ETF flows net negative. Condition 2 is currently unconfirmed. Context from the prior week: Aug 3–7 total ETF inflows were $853.54M (IBIT $693M, 81% share) — a six-day streak. If Monday's flows also run positive, the dual condition is not fully met and the step-aside remains provisional pending a second reference close below $65,000. If Monday's flows run negative (plausible given the Strategy selling narrative and the bearish session), the dual condition is fully triggered and the step-aside becomes formal. Given the severity of the reference close breach ($827 below $65K on 1,410 BTC), this dossier initiates step-aside now and updates based on Tuesday's ETF data.",
+        "tone": "neutral"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "IV is estimated higher following today's breakdown — the 13:00-15:00 UTC institutional selling sequence and the Strategy narrative shift are genuine volatility events. The Aug 9 Confirmation Close compression of IV (BIP-110 resolved, low vol environment) has reversed. The $65,000 gamma wall that was creating a mechanical bid for dealers (net short calls, buying spot as BTC rises) now acts in reverse below $65,000: dealers may flip to net long puts below $65,000 and SELL spot as BTC falls — the gamma dynamic, previously a support mechanism, can amplify the downside below the $65,000 strike.",
+    "short_interest": "Perpetual funding rates: estimated turning negative as shorts increase following the $65,000 breach. The systematic short strategy (entering on reference closes below $65,000) that was untenable on Aug 8-9 (when the $65K level was holding) becomes the dominant trade post-breach. Any 'buy the dip' long established above $64,500 is now underwater.",
+    "max_pain": "$62,000–$63,000 (August monthly, Deribit estimate) — BTC is now only $172-$2,172 above the August max-pain range. With the $65,000 level broken, the pull toward max pain has become directionally relevant for the first time since the clearance began.",
+    "notable_flow": "Three defining flow events: (1) EARLY ASIAN SURGE (01:00 UTC — 61.90 BTC, high $65,395.94): extension of Aug 9 Confirmation Close momentum; the session briefly reached a new recent high, suggesting buyers were still active at the open; (2) PRIMARY BREAKDOWN (13:00 UTC — 197.67 BTC): the single decisive candle of the session; 197.67 BTC sold in a single hour as US markets processed the Strategy disclosure; this is institutional selling intent on a scale not seen since the step-aside began; (3) SESSION LOW DEFENSE (18:00-19:00 UTC — $63,810 low, followed by 106.13 BTC recovery candle): buying at $63,810 represents the 'buy the dip' crowd testing a support level; the partial recovery to $64,172.87 reference close suggests the session low may hold short-term, but the framework is now in step-aside territory regardless."
+  },
+
+  "what_traders_are_doing": "FOUR STRATEGIC RESPONSES TO THE STEP-ASIDE INITIATION: (1) FRAMEWORK STEP-ASIDE EXITS — longs who entered on Aug 8 ($65,078) or Aug 9 ($65,139) Confirmation Close are exiting or reducing; the step-aside protocol is now active (condition 1 confirmed); exits are occurring in the $64,000-$64,500 range; loss from entry: -$800 to -$1,000; (2) STRATEGY-CATALYST SHORTS — accounts entering short on the Strategy disclosure (1,690 BTC sold, 6,948 YTD) are targeting $62,000-$63,000 (max-pain zone and cup-and-handle handle low); these shorts see the paradigm shift (premier HODLer → systematic seller) as a structural bear catalyst; entry in the $64,800-$65,200 zone (before the breakdown) are now +$600-$1,400 at the session low; (3) DIP-BUYERS AT $63,810 — the session low attracted dip-buyers (19:00 UTC recovery candle: 106.13 BTC, +$173 range); these accounts are betting the step-aside resolves quickly if Tuesday's ETF flows are positive; they hold a tight stop below $63,500 (below the cup handle bottom at $62,300 is the structural breakdown); (4) ETF-FLOW WATCHERS — institutional accounts are waiting for Tuesday Aug 11 ETF data before establishing new positions; if Monday's ETF inflows remain positive, the dual step-aside condition fails to fully trigger and they buy; if flows go negative (consistent with the Strategy selling narrative), they add to shorts.",
+
+  "news": [
+    {
+      "label": "Strategy Sells 1,690 Bitcoin at $64,262 to Fund STRC Buybacks — $108.6M raised; sold Aug 3-9; 6,948 BTC sold year-to-date under Digital Credit Capital Framework; the world's premier Bitcoin HODLer has become a systematic seller — CoinDesk / CryptoBriefing",
+      "url": "https://www.coindesk.com/markets/2026/08/10/strategy-sells-1-690-bitcoin-raises-usd653-million-from-mstr-shares",
+      "source": "CoinDesk",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Michael Saylor and Strategy's 'Sell BTC, Raise Cash' Mantra Stresses Bitcoin Holders: 6,948 Bitcoin Sold Year-to-Date — Strategy has sold BTC in multiple tranches under the Digital Credit Capital Framework; STRC preferred stock trading below $100 par is the financial pressure driving sales — CryptoTimes",
+      "url": "https://www.cryptotimes.io/2026/08/10/michael-saylor-and-strategys-sell-btc-raise-cash-mantra-stresses-bitcoin-holders-6948-bitcoin-sold-year-to-date/",
+      "source": "CryptoTimes",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin Falls Below $64,000; Strategy Sells 1,690 BTC for $108.6M — KuCoin: BTC briefly traded below $64,000 (session low $63,810.74); long liquidations accelerated on the Strategy disclosure; $47M in longs liquidated; $12M in shorts — KuCoin",
+      "url": "https://www.kucoin.com/news/flash/bitcoin-falls-below-64-000-strategy-sells-1-690-btc-for-108-6m",
+      "source": "KuCoin",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin Price Crashes Below $65,000, Drops 5% in 2 Hours — Bitcoin Magazine: the 13:00-15:00 UTC breakdown sequence; ~$1,400 decline from $65,200 to $63,810 in under 3 hours; $47M in long liquidations; Strategy sale identified as primary catalyst — Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-crashes-below-65000",
+      "source": "Bitcoin Magazine",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin and Ethereum Prices Today, Monday August 10, 2026: BTC Breaking Past $65,000 Yet Again — Yahoo Finance (AM edition, before breakdown): the morning headline captured BTC above $65,000; by afternoon the Confirmation Close had been reversed — Yahoo Finance",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-august-10-2026-btc-breaking-past-65000-yet-again-125722282.html",
+      "source": "Yahoo Finance",
+      "sentiment": "negative"
+    },
+    {
+      "label": "MicroStrategy Sells Bitcoin to Fix STRC Stock: Will It Work? — BeInCrypto: STRC preferred stock analysis; the $100 par value buyback rationale; Strategy's capital structure stress; whether BTC sales can stabilize the preferred stock price — BeInCrypto",
+      "url": "https://beincrypto.com/microstrategy-sells-bitcoin-august-fix-strc/",
+      "source": "BeInCrypto",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin Takes 10 Bearish Blows in 2026 Yet Faces Its Mildest Bear Market — News.Bitcoin.com: broader context on BTC's 2026 performance (-27% from October 2025 peak ~$126,000); the $63,000-$65,400 range as the 2026 consolidation zone — News.Bitcoin.com",
+      "url": "https://news.bitcoin.com/featured/bitcoin-takes-10-bearish-blows-in-2026-yet-faces-its-mildest-bear-market/",
+      "source": "News.Bitcoin.com",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The framework is in step-aside territory pending the dual-condition confirmation. Tuesday Aug 11's ETF flow data is the next gate: positive flows (continuing the Aug 3-7 $853M streak) would fail to satisfy condition 2 and create a scenario where BTC can re-attempt $65,000 from below; negative flows would fully trigger the step-aside and shift the near-term target to the $62,000-$63,000 max-pain / cup-handle zone. The session low of $63,810.74 is the immediate support — if BTC closes below $63,500 in any subsequent session, the structural support that defined the cup handle bottom ($62,300) becomes the next target. The Strategy narrative (6,948 BTC sold YTD) is a structural headwind that will weigh on sentiment through August. The August 12 CPI is the macro gate — a soft print could restore institutional buying and ETF inflows; a hot print accelerates selling. Step-aside is the correct protocol until both conditions are resolved.",
+    "long_term": "The halving cycle tailwind remains intact (Bitcoin's 2026 correction from $126,000 is the 'mildest bear market' relative to prior cycles). The ETF institutional demand channel ($853M in a single week as recently as Aug 3-7) represents a structural floor that did not exist in prior Bitcoin cycles. The Coldcard hardware wallet exploit (ongoing, $89M-$116M) continues to paradoxically support ETF adoption as self-custody trust erodes. The $70,000 cup-and-handle measured move target remains the framework's long-term objective — but reaching it now requires first resolving the step-aside (re-establishing a reference close above $65,000 with positive ETF flows), then re-testing and breaking the $65,000 resistance from below. The FOMC September rate decision (hold or cut) remains structurally bullish for BTC on a 3-6 month horizon."
+  },
+
+  "bull_case": [
+    "ETF flow dual condition not yet confirmed: Monday Aug 10 ETF data reports Tuesday Aug 11 — if the $853M weekly streak continues with a positive Monday, the step-aside condition 2 (net negative ETF flows) fails to trigger; the framework could re-assert a buy signal as early as Tuesday evening if both: (a) ETF flows are positive AND (b) Tuesday's reference close retakes $65,000",
+    "Session low $63,810.74 attracted buyers: the 19:00 UTC recovery candle (106.13 BTC, largest recovery candle of the session, +$173 range from $63,881 open to $64,054 close) shows real buying at the session lows; the reference close of $64,172.87 is $362 above the session low — sellers were not able to hold BTC at its lowest point",
+    "Strategy selling is finite and priced in: 1,690 BTC sold (at average $64,262 = $108.6M) is a small fraction of BTC's ~$1.27T market cap; the 'Digital Credit Capital Framework' that authorized the sales was adopted in late June — the market now knows about it, and future sales will be less surprising; once Strategy's STRC preferred stock situation stabilizes, the selling pressure abates",
+    "Halving cycle timing: Bitcoin is in its 2026 consolidation phase after a $126,000 peak; the 2020 halving led to a $69,000 peak 18 months later; the 2024 halving cycle is still maturing; historical patterns suggest the next major leg higher comes in Q4 2026-Q1 2027 regardless of today's step-aside"
+  ],
+
+  "bear_case": [
+    "Strategy's 6,948 BTC sold YTD under the 'Digital Credit Capital Framework' is a paradigm shift: the company that defined institutional Bitcoin holding is now a systematic seller; 6,948 BTC = ~$446M at current prices; if the program continues at this pace, Strategy will sell ~8,000-10,000 BTC by year end — removing a buyer that previously absorbed supply at multiple prior market stress points",
+    "1,410 BTC volume on the breakdown (4.5x the confirmation threshold) is the most decisive institutional selling since the step-aside began July 24; the 13:00 and 15:00 UTC candles (197 and 199 BTC, both sell candles) represent structured, not panic, selling — institutional accounts had pre-positioned for the Strategy disclosure",
+    "The $65,000 gamma wall has inverted: above $65,000, dealers were net short calls and bought spot as BTC rose (a mechanical support); below $65,000, dealers may be net long puts and sell spot as BTC falls — the same gamma dynamic that amplified upside now potentially amplifies downside toward the $62,000-$63,000 max-pain zone",
+    "August seasonality historically negative (-7.5% median for BTC in August); the August 12 CPI print is the macro risk event that could accelerate selling if it comes in above consensus (reviving the FOMC rate-hike narrative that the July NFP miss was supposed to have eliminated); the Coldcard hardware wallet exploit ($89-$116M ongoing) continues to erode self-custody trust"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $63,810.74: today's session low (18:00 UTC); the deepest point of the post-Confirmation-Close correction; buyers defended this level (106.13 BTC recovery candle in the 19:00 UTC hour); a reference close below $63,810 post-step-aside would signal the correction is extending toward the $62,300 cup-handle bottom; also approximately where the Aug 9 Confirmation Close's entire gain above the handle has been erased",
+      "level": "$63,810",
+      "kind": "support"
+    },
+    {
+      "label": "$64,727: Aug 9 session low — the BIP-110 anxiety floor from yesterday's Confirmation Close session; forms a two-day support cluster with today's session low ($63,810-$64,727); a reference close between $63,810 and $64,727 would be a 'double dip' at the support zone, potentially stabilizing the framework",
+      "level": "$64,727",
+      "kind": "support"
+    },
+    {
+      "label": "$62,300: cup-and-handle handle low — the structural support that defined the entire setup for the $65,000 breakout; a reference close below $62,300 would invalidate the cup-and-handle thesis entirely and shift the target to $58,000-$60,000; this is the absolute bull/bear demarcation line",
+      "level": "$62,300",
+      "kind": "support"
+    },
+    {
+      "label": "$64,172.87: today's reference close — the step-aside trigger; acts as the near-term resistance ceiling for any recovery attempt; a close above here in isolation is insufficient to restore the framework — needs a return above $65,000",
+      "level": "$64,172",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest resistance — $65,000: former gamma wall and framework threshold; now overhead resistance after two consecutive reference closes above (Aug 8 $65,078, Aug 9 $65,139) were followed by today's breach; the level needs to be recaptured on a reference close basis AND with positive ETF flows to restore the framework buy signal; the $1B+ notional call OI at this strike is now creating supply (short calls that were previously driving dealer buying are now covered); re-clearing $65,000 on a reference close with >300 BTC volume would re-initiate the confirmation sequence",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$65,395.94: today's session high (01:00 UTC) — the last gasp of the Aug 9 Confirmation Close momentum; clearing this level on a closing basis would represent a full reversal of the step-aside breakdown; unlikely without a major positive catalyst (strongly positive ETF flows, CPI below consensus, etc.)",
+      "level": "$65,395",
+      "kind": "resistance"
+    },
+    {
+      "label": "$67,523: short-term holder (STH) realized price — still the primary overhead supply zone on the path to the $70,000 cup-and-handle target; the step-aside has pushed this level further from reach; it remains the structural ceiling that must be absorbed on any sustained recovery",
+      "level": "$67,523",
+      "kind": "resistance"
+    },
+    {
+      "label": "$70,000: cup-and-handle measured move target ($62,300 handle low → $65,000 breakout); round-number psychological resistance; the primary long-term framework objective; the step-aside has delayed but not cancelled this target — framework needs to re-clear $65,000 and hold first",
+      "level": "$70,000",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-10",
+      "label": "STEP-ASIDE CONDITION 1 TRIGGERED — reference close $64,172.87 on 1,410 BTC volume ($90.5M); Strategy sells 1,690 BTC ($108.6M, 6,948 YTD) paradigm shift; session low $63,810.74; Confirmation Close reversed in single session. Condition 2 (ETF flows) pending Tuesday.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-11",
+      "label": "ETF flow data for Monday Aug 10 released — the framework's gate for step-aside confirmation; positive flows + reference close above $65,000 = step-aside fails to fully trigger; negative flows = step-aside fully confirmed; IBIT flow direction is the primary market signal.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-12",
+      "label": "July CPI print — above-consensus accelerates selling pressure and validates the step-aside; below-consensus restores the rate-cut narrative and provides the macro tailwind for a return to $65,000; the key macro gate in the near-term framework.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "September FOMC — rate hold (base case) or cut; both structurally bullish for BTC on a medium-term horizon; the primary long-term catalyst for the $70,000 cup-and-handle measured move.",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Session overview — The Confirmation Close reversed in a single session\n\nAugust 10, 2026 is the day the two-session $65,000 confirmation structure was unwound. The Aug 9 Confirmation Close ($65,139.21 on 311 BTC) had upgraded the framework to HIGH conviction. Twenty-four hours later, BTC's reference close is $64,172.87 — $966 lower — on 1,410 BTC of volume (4.5x the confirmation threshold). The day's narrative was written by a single event: Strategy's disclosure of selling 1,690 BTC (Aug 3-9, average $64,262) as part of a systematic Bitcoin sales program that has now sold 6,948 BTC year-to-date.\n\n### Full hourly session map (Crypto.com 1h, verified from live API)\n\n| UTC 1h | Open | High | Low | Close | Vol (BTC) | Note |\n|---|---|---|---|---|---|---|\n| 00:00 | $64,897 | $65,335 | $64,818 | $64,971 | 121.55 | Opened strong; gap from Aug 9 close |\n| 01:00 | $64,974 | **$65,395** | $64,891 | $65,198 | 61.90 | ★ Session high $65,395.94 |\n| 02:00 | $65,202 | $65,225 | $64,901 | $65,103 | 43.93 | Begins fading |\n| 03:00 | $65,101 | $65,174 | $64,904 | $64,979 | 34.73 | Below $65K close |\n| 04:00 | $64,979 | $65,105 | $64,916 | $65,009 | 20.88 | Recovers briefly above $65K |\n| 05:00 | $65,001 | $65,169 | $64,980 | $65,141 | 14.99 | Holds above $65K |\n| 06:00 | $65,142 | $65,341 | $65,129 | $65,299 | 19.03 | Strong close above $65K |\n| 07:00 | $65,304 | $65,377 | $65,201 | $65,208 | 15.61 | Consolidation |\n| 08:00 | $65,208 | $65,333 | $65,190 | $65,248 | 15.30 | Stable above $65K |\n| **09:00** | $65,237 | $65,238 | **$64,960** | $64,969 | 19.32 | ★ Rollover begins; lower low below $65K |\n| 10:00 | $64,970 | $65,077 | $64,964 | $65,018 | 14.56 | Recovers to $65K briefly |\n| 11:00 | $65,018 | $65,129 | $64,977 | $65,129 | 10.35 | Last above-$65K close |\n| 12:00 | $65,129 | $65,244 | **$64,841** | $64,879 | 39.70 | Accelerating sell-off; sub-$65K |\n| **13:00** | $64,871 | $64,974 | **$64,504** | $64,563 | **197.67** | ★★ PRIMARY BREAKDOWN — 197.67 BTC, -$308 range |\n| 14:00 | $64,564 | $64,890 | $64,534 | $64,627 | 158.69 | Partial recovery attempt |\n| **15:00** | $64,627 | $64,713 | **$64,190** | $64,290 | **198.86** | ★ SECONDARY DUMP — 198.86 BTC, -$337 range |\n| 16:00 | $64,290 | $64,356 | $63,820 | $63,905 | 122.21 | Continues lower |\n| 17:00 | $63,909 | $64,025 | $63,825 | $63,946 | 77.84 | Slowing descent |\n| **18:00** | $63,956 | $64,020 | **$63,810** | $63,890 | 55.64 | ★ SESSION LOW $63,810.74 |\n| 19:00 | $63,881 | $64,114 | $63,881 | $64,054 | 106.13 | ★ Recovery candle — 106 BTC, +$173 |\n| **20:00** | **$64,054** | **$64,218** | **$64,027** | **$64,172** | **60.76** | ★★ REFERENCE CLOSE — STEP-ASIDE CONDITION 1 |\n| 21:00 | $64,167 | $64,167 | $64,019 | $64,024 | 25.54 | Post-reference: mild drift lower |\n\n### The session in three acts\n\n**Act 1 — Asian momentum continuation (00:00–08:00 UTC):** BTC opened at $64,897 (gap from Aug 9 close at $65,139, overnight drift from the 21:00 UTC candle at $65,192) and quickly pushed to a session high of $65,395.94 in the 01:00 UTC candle — extending the Aug 9 Confirmation Close momentum. The stock held above $65,000 through 08:00 UTC, trading in the $65,100–$65,340 range. This phase looked like the 'Monday institutional confirmation' that the Aug 9 dossier described as the key test: 'watch for the 13:00–16:00 UTC window (when institutional accounts are most active on weekdays) to confirm follow-through.'\n\n**Act 2 — The 09:00 rollover and 13:00-15:00 institutional collapse (09:00–17:00 UTC):** At 09:00 UTC, BTC's first sub-$65,000 hourly low appeared ($64,960). The price recovered briefly but never recaptured the 08:00 UTC close ($65,248). Then came the framework-defining moment: the 13:00 UTC candle (197.67 BTC, open $64,871, high $64,974, low $64,504, close $64,563) — the largest single-hour sell event of the entire post-July-24 period. Exactly the 13:00–16:00 UTC window that the Aug 9 dossier flagged for 'institutional confirmation' delivered instead the institutional breakdown. The 15:00 UTC follow-through (198.86 BTC, low $64,190) confirmed the selling was structural, not a single-candle panic.\n\n**Act 3 — Session low and partial recovery (18:00–20:00 UTC):** BTC found its session low of $63,810.74 at 18:00 UTC, having lost $1,585 from the 01:00 UTC high in 17 hours. The 19:00 UTC recovery candle (106.13 BTC, the largest recovery of the session) brought the price from $63,881 to $64,054 — showing that buyers were willing to step in at the $63,800-$63,900 level. The reference close of $64,172.87 at 20:00 UTC (60.76 BTC) represents a $362 recovery from the session low — meaningful but insufficient to restore the framework.\n\n### Trend — Broken from below; confirmation reversed\n\nThe two-day $65,000 confirmation structure (Aug 8: $65,078, Aug 9: $65,139) has been invalidated. The reference close sequence now reads:\n- July 24 (step-aside begins): $62,659\n- Aug 7 (near-miss): $64,977\n- Aug 8 (clearance): $65,078\n- Aug 9 (confirmation): $65,139\n- **Aug 10 (step-aside condition 1): $64,172** ← structural reversal\n\nThe upward staircase has been interrupted. BTC is now BELOW the $65,000 framework threshold.\n\n### Volume — THE KEY DIFFERENCE FROM AUG 9: 1,410 BTC vs 311 BTC\n\nThis is not a low-liquidity breakdown. Aug 9's Confirmation Close was earned on 311 BTC. Aug 10's breakdown happened on 1,410 BTC — 4.5x the size. The 13:00 and 15:00 UTC candles (197 BTC and 199 BTC, both SELL candles) represent the most decisive institutional selling since the step-aside began July 24. Volume confirms the move. This cannot be dismissed as thin-market noise.\n\nFor comparison:\n- Aug 8 clearance: ~227 BTC (light)\n- Aug 9 confirmation: ~311 BTC (just above the 300 BTC threshold)\n- **Aug 10 breakdown: ~1,410 BTC (decisive)**\n\nThe volume asymmetry (4.5x more volume on the breakdown than the confirmation) is structurally bearish: it means more capital was behind the selling than the buying.\n\n### ★ Strongest Support — $63,810.74 (Session Low; 18:00 UTC)\n\nEvidence:\n1. Buyers defended $63,810 with a 106.13 BTC recovery candle (the 19:00 UTC hour) — real buying at the session floor\n2. $63,810 is approximately $490 above the $63,300 zone where the cup-and-handle base volume support is concentrated (high-volume-at-price shelf from the Aug 5-7 consolidation)\n3. A reference close at or below $63,810 would confirm the correction is extending to the $62,300 cup-handle structural support\n\n### ★ Strongest Resistance — $65,000 (Framework Threshold; Former Gamma Wall)\n\nEvidence:\n1. Two consecutive reference closes above $65,000 (Aug 8, Aug 9) are now in the past — the level has been broken from above\n2. Above $65,000, the gamma dynamics that previously drove dealer buying (net short calls → buy spot) have diminished as the level is no longer intact\n3. Options OI at the $65,000 strike still exists — but it now creates supply (delta-hedging from above is different from below)\n4. The dual-condition re-activation requires a reference close ABOVE $65,000 AND positive ETF flows — it needs to be earned back, not assumed\n\n### What confirms vs. what invalidates\n\n**Step-aside confirmed (maintains step-aside):**\n- Tuesday Aug 11 ETF flows net negative AND reference close below $65,000 (second night) = full dual-condition trigger\n- Any reference close below $63,810 (today's session low) = escalation to sell signal\n\n**Step-aside resolved (buy re-entry pathway):**\n- Tuesday Aug 11 ETF flows POSITIVE AND reference close above $65,000 = step-aside fails to fully trigger; framework re-enters buy monitoring\n- A close above $65,395.94 (today's session high) + positive ETF flows = full framework reversal recovery"
+}
