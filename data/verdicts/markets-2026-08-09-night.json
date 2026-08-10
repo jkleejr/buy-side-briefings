@@ -1,0 +1,99 @@
+{
+  "routine": "markets",
+  "date": "2026-08-09",
+  "window": "night",
+  "generated_at": "2026-08-10T01:25:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "conviction": "medium",
+    "headline": "Oil spikes as Iran rejects Hormuz talks and Houthis strike Saudi Aramco refinery",
+    "label": "HOLD — 2 of 6 breached: 30Y ~5.10% + WTI ~$79.10 (both above thresholds); Brent ~$83.55 ($1.45 below $85 trigger); Sept hike 35%; SPX record 7,758 intact; S&P futures -0.2%; CPI Aug 12 and CRWV Tuesday are the week's two binaries",
+    "rationale_short": "No US equity session Sunday. Two back-to-back escalations changed the oil picture: Iran FM Araghchi ruled out direct talks with the US, citing US violations of the June Islamabad MOU — Bloomberg headline 'Wait for Hormuz Deal Drags On' — and the IRGC separately declared the strait stays closed until Washington meets Tehran's demands on troop withdrawal and compensation. Hours later Houthi drones struck the Saudi Aramco Jazan refinery (400K bbl/day capacity); Saudi Arabia extinguished the fire and called it non-material, but the sequential signal is unambiguous. WTI crude futures rose ~1% to just above $79 Sunday, crossing the formal $79 trigger for the first time since early August — moving the regime count to 2-of-6. Brent at ~$83.55 is $1.45 inside its $85 trigger. Equity futures absorbed the oil move relatively calmly: S&P futures -0.2%, Nasdaq futures +0.1%, Dow futures -99 pts. The rate path remains the dominant macro variable — September hike odds hold at 35% (Kalshi), 30Y at ~5.10% is the other formal breach, and July CPI Wednesday August 12 (8:30 AM ET) is the binary that resolves both: a soft print (<3.0% headline) drops hike odds toward 15-20% and pulls 30Y below 5.00%, meaning the rate signal would clear even with WTI above $79; a hot print (≥3.2% headline) pushes hike odds back above 50%, extends the 30Y breach above 5.20%, and activates all three simultaneously — oil + long rates + rate expectations — a setup that would challenge the record SPX 7,758. BTC holds ~$65,000 (Crypto.com: $64,999.79, high $65,512 / low $64,727, +0.03% 24h); Gate 2 buffer ~$3,000 above $62K. SPCX is projected to gap to ~$133.11 at Monday open on Friday's rate-compression re-rating; oil escalation is the new cross-current for that setup. CoreWeave (CRWV) earnings confirmed Tuesday August 11 — not Monday as prior tracking indicated.",
+    "supporting_data": [
+      {
+        "label": "Iran FM Araghchi rejects direct US talks; IRGC says Hormuz stays closed without US meeting Tehran's demands — Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-09/wait-for-hormuz-deal-stretches-on-as-iran-says-terms-must-be-met"
+      },
+      {
+        "label": "Houthis claim drone strike on Saudi Aramco Jazan refinery (400K bbl/day); Saudi Arabia extinguishes fire, calls it non-material — CNBC",
+        "url": "https://www.cnbc.com/amp/2026/08/09/saudi-aramco-extinguishes-refinery-fire-houthis-claim-attack.html"
+      },
+      {
+        "label": "Iran denies direct US negotiations, passes messages through Pakistan and Qatar intermediaries only — Fortune",
+        "url": "https://fortune.com/2026/08/09/iran-us-talks-hormuz-deal-mou-trump-vance-oman/"
+      },
+      {
+        "label": "July CPI due Wednesday August 12, 8:30 AM ET — resolving binary for September rate path and 30Y breach",
+        "url": "https://investrade.com/weekly-event-calendar-08-10-2026-08-14-2026/"
+      },
+      {
+        "label": "September hike odds at 35% (Kalshi) after July NFP -23K shock — CNBC",
+        "url": "https://www.cnbc.com/2026/08/07/odds-the-fed-hikes-in-september-tumble-following-big-july-jobs-miss.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7757.64,  "change_pct": 0.00, "as_of": "2026-08-07T20:00:00Z" },
+    "nasdaq": { "level": 26690.62, "change_pct": 0.00, "as_of": "2026-08-07T20:00:00Z" },
+    "vix":    { "level": 14.90,    "change_pct": 0.00, "as_of": "2026-08-07T20:00:00Z" },
+    "ust10y": { "level": 4.55,     "change_bps": 0,    "as_of": "2026-08-07T20:00:00Z" },
+    "dxy":    { "level": 98.80,    "change_pct": 0.00, "as_of": "2026-08-07T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.10,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 35.0,  "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 83.55, "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 79.10, "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7757,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 65000, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "SPCX",
+      "note": "Projected gap to ~$133.11 at Monday open on Friday's rate-compression re-rating (last regular session close $114.92 Friday August 7). The WTI breach above $79 is the new cross-current: if oil stays elevated into CPI and the print runs hot, rate compression partially reverses and the $133 gap level loses its fundamental anchor before the August 20 tranche ($8.65B eligible at ~65M shares). Base case: gap holds at $133+ if CPI is soft and WTI compresses on any Hormuz back-channel signal Monday. Two closes below $125 on volume signals the tranche is being front-run ahead of August 20.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Earnings confirmed Tuesday August 11 — one day later than prior tracking. Three metrics: (1) contracted backlog vs Q1 ($25B+ with >18-month average duration = strong); (2) customer concentration (MSFT >60% = risk); (3) financing cost trajectory on $10B+ secured debt. Options traders pricing ~13% post-earnings swing. A strong print re-rates AI hyperscaler capex across the sector; a backlog miss or MSFT concentration spike above 60% on weak 2H guidance is the first credible challenge to the AI capex thesis at current multiples.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$221; held $216-221 through NFP week. CRWV Tuesday August 11 is the demand-chain proxy: clean backlog = Blackwell demand confirmed; CRWV miss = first credible challenge at $221. SpaceX $15.83B AI capex commitment remains real demand underpinning the Q3 FY27 guide. Watch NVDA $216 support in same session as CRWV print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$65,000 Sunday evening (Crypto.com: $64,999.79, 24h high $65,512.99 / low $64,727.04, +0.03% 24h). Gate 2 buffer ~$3,000 above $62K. BTC is tracking sideways while the Hormuz/oil escalation drives energy — no crypto bid on the geopolitical risk. Reclaiming $66,500 opens the $68K zone; a break below $63K narrows Gate 2 buffer to critical levels ahead of Tuesday's CRWV and Wednesday's CPI binaries.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "WTI Crude — Monday August 10 cash open",
+      "thesis": "WTI futures closed Sunday night ~$79.10, just above the formal $79 regime trigger, after Iran explicitly rejected direct Hormuz talks and Houthis droned the Aramco Jazan refinery. The Sunday move is the first formal WTI trigger breach since early August, moving the regime to 2-of-6. The Saudi Aramco fire was extinguished and called non-material, but the structural signal — Iran no-deal plus Houthi escalation — supports a risk premium in crude entering the week. Brent at ~$83.55 is within $1.45 of its own $85 trigger.",
+      "entry": "WTI Monday cash open is the immediate confirmation. Watch $78.00 as support (deal-hope floor) and $81.00 as full escalation signal. Any Hormuz back-channel announcement — Iran-Oman messages still flowing through Pakistan/Qatar intermediaries — would compress WTI back below $77 and clear the oil breach. Brent $85 is the secondary confirmation gate.",
+      "invalidation": "Iran-Oman back-channel produces a draft framework announcement Monday — WTI compresses toward $75-77, clearing the $79 breach. Aramco's 'non-material' characterization of the Jazan fire holds and crude risk premium deflates by Tuesday.",
+      "horizon": "Monday August 10 cash open; oil breach confirmation or clearing by end of day."
+    },
+    {
+      "asset": "July CPI — Wednesday August 12, 8:30 AM ET",
+      "thesis": "The week's resolving binary now arrives with 2-of-6 already breached. Consensus: ~3.4% headline YoY (oil $82-91/bbl embedded in June-July). A soft print (≤2.9% headline, ≤3.1% core) drops September hike odds from 35% toward 15-20%, clears the 30Y breach below 5.00%, and delivers a rate signal that could overwhelm the oil breach — delivering effective 1-of-6 (WTI only) or even 0-of-6 if oil compresses simultaneously. A hot print (≥3.2% headline) re-escalates September odds toward 55%+, extends the 30Y above 5.20%, and pairs with a WTI breach to deliver 2-of-6 in regular session — the setup for a record-to-reversal sequence at SPX 7,758.",
+      "entry": "30Y at ~5.10% is the forward signal — watch Monday-Tuesday bond action for directional drift. DXY at ~98.80 is secondary: a rally above 101.00 post-CPI signals re-escalating hike cycle. The Monday-Tuesday pre-CPI window is where oil and rate signals interact before the binary resolves.",
+      "invalidation": "CPI in-line with June (±0.1%) extends the unresolved regime through August 27 Jackson Hole — base case extends without directional resolution on the rate side.",
+      "horizon": "Wednesday August 12, 8:30 AM ET."
+    },
+    {
+      "asset": "CoreWeave (CRWV) — Tuesday August 11 earnings",
+      "thesis": "The season's last major AI infrastructure print, confirmed for Tuesday. CRWV Q2 consensus: revenue $2.56B, loss -$1.17/share (YoY change -333%); options pricing ~13% post-earnings swing. Three metrics: (1) contracted backlog size and tenure vs Q1 ($25B+ with >18-month average duration = strong); (2) MSFT customer concentration (above 60% = risk); (3) financing cost trajectory on $10B+ secured debt. A clean print re-rates NVDA Blackwell demand and validates compute-shortage monetization; a miss is the first credible challenge to AI capex consensus at current sector multiples.",
+      "entry": "CRWV pre-market reaction Tuesday. Watch NVDA $216-221 support range for sympathy direction in the same session.",
+      "invalidation": "Backlog miss or MSFT concentration above 60% on weak 2H guidance — NVDA $216 support becomes the immediate test; SPCX $133 gap-up level is also at risk in the same session.",
+      "horizon": "Tuesday August 11 pre-market."
+    }
+  ],
+  "bear_case": "The Hormuz deal is no longer stalled — it is actively unwinding. Iran's FM rejected direct US talks Sunday, citing US violations of the June MOU; the IRGC separately declared the strait stays closed without US capitulation on withdrawals and compensation. This is not 'close to a deal' — this is a structural breakdown. Houthis droned the Aramco Jazan refinery in the same session: a 400K bbl/day facility, Saudi says non-material, but the escalation pattern has its own logic now. WTI Sunday futures at ~$79.10 crossed the formal trigger, regime is 2-of-6 for the first time since early August. Brent at ~$83.55 is $1.45 from its own trigger — a single session of incremental escalation (another Houthi strike, an Iranian patrol boat incident, or a Khamenei hardliner statement) pushes Brent through $85 and delivers 3-of-6. The compounding sequence: WTI confirmed above $79 Monday → Brent through $85 on a second escalation → CPI hot Wednesday → September hike odds back above 50% → 30Y pushes above 5.20% → SPCX $133 gap-up faces simultaneous supply pressure at August 20 tranche and rate compression reversal. CRWV earnings Tuesday add an AI-specific binary in the middle of this window: a backlog miss or MSFT concentration spike cascades to NVDA at $221 in a session where oil and rate signals are already elevated. SPX record 7,757 is intact entering Monday, but four sequential triggers land in four trading days — WTI Monday, CRWV Tuesday, CPI Wednesday — any adverse combination is the record-to-reversal setup. July's -23K NFP with 921K temporary layoffs may mark a cycle turn; if August data confirms rising permanent unemployment, Q3 earnings revisions follow and the 7,757 record becomes the cycle high, not the base.",
+  "body_mdx": "data/briefings/markets/2026-08-09-night.mdx"
+}
