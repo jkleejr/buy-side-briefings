@@ -2,48 +2,36 @@
   "routine": "markets",
   "date": "2026-08-10",
   "window": "morning",
-  "generated_at": "2026-08-10T11:15:00Z",
+  "generated_at": "2026-08-10T13:00:00Z",
   "is_seed": false,
   "verdict": {
-    "code": "hold",
-    "emoji": "🟡",
-    "headline": "Iran's new Hormuz demands stall oil deal and lift crude as equity markets hold record highs",
-    "label": "HOLD — 1 of 6 breached: 30Y ~5.08%; Sept hike ~44% (Kalshi, from 67% pre-NFP); ESU26 +0.3% at ~7,782; WTI $78.72 just $0.28 from $79 trigger; Brent $84.39 just $0.61 from $85 trigger; Wednesday July CPI (Aug 12, 8:30 ET) is the week's resolving binary",
-    "conviction": "medium",
-    "horizon": "2-3 days, through CPI (August 12)",
-    "rationale_short": "The framework holds at 1 of 6 breached (30Y ~5.08%) but the oil indicators are back at near-trigger levels heading into the week. Friday's July NFP shock (-23K vs +83K consensus) drove the S&P 500 to a fresh record close of 7,757.64 (+0.62%) and compressed September hike odds from ~67% to ~44% (Kalshi). Monday premarket extends the equity calm: ESU26 +0.32% at ~7,782, NQ futures +0.58% at ~29,896. But oil is the new pressure point: over the weekend Iran's FM Araghchi clarified that a deal with Oman alone will NOT reopen the Strait of Hormuz — Iran requires the US to end the war and provide financial compensation, conditions outside the Oman-brokered framework. Houthi militants also claimed an attack on a Saudi refinery over the weekend. Result: WTI bounced to $78.72 (+0.69%), only $0.28 below the $79 formal trigger; Brent at $84.39 (+1.0%) is $0.61 below the $85 trigger. A single session oil spike on any Hormuz escalation activates a second regime breach (2-of-6), the most material scenario for the framework before Wednesday. BTC holds at $64,998 (Crypto.com live, 11:02 UTC Aug 10), Gate 2 buffer $2,998 above the $62,000 trigger. DXY at 99.5 has broken below the psychologically significant 100 handle on the NFP-driven rate unwind, a moderate macro tailwind for risk assets. Wednesday's July CPI is the singular binary: June came in at +2.9% YoY headline, +3.2% core. A July print at or below those levels pushes September hike odds toward 20%, may pull the 30Y below 5.00% (clearing the sole breach), and targets SPX above 7,850. A hot print re-escalates hike odds toward 65%+, deepens the 30Y breach, and turns Friday's record into an air pocket heading into the Aug 20 SPCX tranche unlock.",
+    "headline": "Iran's new Hormuz demands stall the oil deal and lift crude as equities hold records",
+    "label": "Weekend stalemate hardened into escalation: Iran conditions Hormuz on US war exit; WTI $0.28 from $79; Brent $0.61 from $85; CPI Wednesday August 12 is the week's gate",
+    "rationale_short": "Iran's FM Araghchi stated August 8 that a deal with Oman alone will not reopen the Strait of Hormuz — Iran requires the US to end the war and provide financial compensation, conditions outside the current negotiating track. Houthi forces struck Saudi Aramco's Jazan refinery (400K bbl/day) overnight; fire was extinguished without injuries or disruption. WTI at $78.72 and Brent at $84.39 sit $0.28 and $0.61 from their respective breach triggers; the 30Y held at 5.08%. Level that changes the read: WTI closes above $79 or Brent above $85 before Wednesday's CPI print (August 12, 8:30 AM ET).",
     "supporting_data": [
       {
-        "label": "Iran FM: Hormuz deal alone will not reopen the strait; US must end war and pay compensation — US News / CNN (Aug 8)",
+        "label": "Iran FM: Hormuz deal alone won't reopen the strait; US must end war and pay compensation — US News / CNN (Aug 8)",
         "url": "https://www.usnews.com/news/world/articles/2026-08-08/iran-says-deal-on-strait-of-hormuz-is-close-but-will-not-open-the-waterway-by-itself"
       },
       {
-        "label": "WTI +0.69% at $78.72; Brent +1.0% at $84.39 as Hormuz uncertainty returns — CNBC (Aug 10)",
-        "url": "https://www.cnbc.com/2026/08/10/oil-prices-today-brent-wti-hormuz-trump-iran.html"
+        "label": "Houthi drones and missiles hit Aramco Jazan refinery (400K bbl/day); fire extinguished, no injuries or disruption — Al Jazeera (Aug 9)",
+        "url": "https://www.aljazeera.com/news/2026/8/9/saudi-arabia-says-fire-extinguished-at-aramco-facility-in-jizan"
       },
       {
-        "label": "S&P 500 record close 7,757.64 Friday (+0.62%) on July NFP shock -23K vs +83K consensus — CNBC",
-        "url": "https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html"
+        "label": "WTI $78.72 (+0.69%), Brent $84.39 (+1.0%); WTI $0.28 from $79 trigger, Brent $0.61 from $85 — oil prices rise on Hormuz uncertainty",
+        "url": "https://www.aljazeera.com/economy/2026/8/10/oil-prices-climb-as-iranian-demands-cloud-outlook-for-strait-of-hormuz"
       },
       {
-        "label": "July NFP: -23K vs +83K consensus; prior months revised -103K combined — BLS",
-        "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+        "label": "July CPI due Wednesday August 12 at 8:30 AM ET — BLS release schedule (corrects prior briefing date of Aug 13)",
+        "url": "https://www.bls.gov/schedule/"
       },
       {
-        "label": "September hike odds fall to ~44% (from 67%) after July payroll shock — Kalshi / CNBC (Aug 7)",
+        "label": "September hike odds ~44% CME FedWatch / 33% Kalshi — diverge post-NFP −23K vs +83K consensus; both well below 70% trigger",
         "url": "https://www.cnbc.com/2026/08/07/odds-the-fed-hikes-in-september-tumble-following-big-july-jobs-miss.html"
       },
       {
-        "label": "July CPI due Wednesday August 12, 8:30 AM ET — BLS release schedule",
-        "url": "https://www.bls.gov/news.release/cpi.htm"
-      },
-      {
-        "label": "BTC/USDT $64,998 live — Crypto.com Exchange (Aug 10, 11:02 UTC)",
-        "url": "https://crypto.com/exchange/trade/spot/BTC_USDT"
-      },
-      {
-        "label": "Oil prices climb as Iranian demands cloud Hormuz outlook — Al Jazeera (Aug 10)",
-        "url": "https://www.aljazeera.com/economy/2026/8/10/oil-prices-climb-as-iranian-demands-cloud-outlook-for-strait-of-hormuz"
+        "label": "SPCX Day 5 +15.83% to $133.11 on confirmed lockup absorption; Terafab Texas AI megafactory (SpaceX+Tesla JV) announced Aug 8",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262091571-us-stock-spacex-spcx-price-prediction-tradingkey"
       }
     ]
   },
@@ -51,8 +39,8 @@
     "sp500":  { "level": 7782.0,  "change_pct":  0.32,  "as_of": "2026-08-10T11:00:00Z" },
     "nasdaq": { "level": 26835.0, "change_pct":  0.54,  "as_of": "2026-08-10T11:00:00Z" },
     "vix":    { "level": 15.3,    "change_pct":  2.68,  "as_of": "2026-08-10T11:00:00Z" },
-    "ust10y": { "level": 4.62,    "change_bps":  0,     "as_of": "2026-08-10T11:00:00Z" },
-    "dxy":    { "level": 99.5,    "change_pct": -0.39,  "as_of": "2026-08-10T11:00:00Z" }
+    "ust10y": { "level": 4.62,    "change_bps":  2,     "as_of": "2026-08-10T11:00:00Z" },
+    "dxy":    { "level": 99.5,    "change_pct":  0.71,  "as_of": "2026-08-10T11:00:00Z" }
   },
   "regime_risk": [
     { "name": "30Y Yield",           "value": 5.08,  "trigger_above": 5.00,  "unit": "%" },
@@ -64,44 +52,54 @@
   ],
   "watchlist_mentions": [
     {
-      "ticker": "WTI",
-      "note": "$78.72 (+0.69%) — $0.28 from the $79 formal regime trigger. Brent at $84.39 (+1.0%) is $0.61 from the $85 trigger. The Hormuz deal has materially deteriorated over the weekend: Iran's FM Araghchi stated Aug 8 that a deal with Oman alone will NOT reopen the strait — Iran requires the US to end the war and provide financial compensation, conditions categorically outside the current Oman-brokered framework. A Houthi attack on a Saudi refinery over the weekend adds a fresh risk premium. This is the most acute regime-breach risk heading into Monday's session: a single escalation event pushes both WTI above $79 and Brent above $85, activating a second breach (2-of-6). Conversely, a surprise confirmed deal compresses WTI toward $70-72 and clears both oil indicators. Track White House and Iranian FM statements as the binary catalyst; the Oman-only framework is now dead on arrival without US concessions.",
-      "sentiment": "cautious"
-    },
-    {
       "ticker": "SPCX",
-      "note": "$133.11 area, holding after successfully absorbing the first 20% lockup tranche (Aug 6-8, ~911.5M shares, Day 1 intraday low $105.11, Monday extended to $133.11 +15.8%). The $16.8B Terafab Texas AI compute megafactory (SpaceX + Tesla JV, confirmed Aug 8) reinforced the vertical-integration thesis on top of Q2 ($7.81B revenue +92% YoY, Adj EBITDA $3.5B +191%). Analyst upgrades followed: Argus Buy $160, Bernstein $248, Citi Buy $200; 28 of 30 analysts rate Buy. The Aug 20 staggered 7% tranche (~65M shares at $133 ≈ $8.65B eligible) is the next supply gate. CPI Wednesday sets the rate-compression variable entering that date: soft CPI → $130+ absorption likely; hot CPI → simultaneous multiple compression and supply pressure = highest-beta downside across the watchlist. Watch $128 as the hold level; below $115 on volume signals front-run of remaining tranches.",
-      "sentiment": "bullish"
+      "note": "Day 5: +15.83% to $133.11 on confirmed absorption of the 20% first-tranche lockup (Aug 6-8, 911.5M shares). The $16.8B Terafab Texas AI compute megafactory (SpaceX + Tesla JV, confirmed Aug 8) reinforced the vertical-integration thesis on top of Q2 results ($7.81B revenue +92% YoY). Analyst coverage: Argus Buy $160, Bernstein $248, Citi Buy $200; 28 of 30 analysts Buy. The Aug 20 7% tranche (~65M shares, ~$8.65B eligible) is the next supply gate. Soft CPI Wednesday → absorption above $130 likely. Hot CPI → simultaneous rate and supply pressure; close below $115 on volume is the front-run signal.",
+      "sentiment": "positive"
     },
     {
       "ticker": "BTC",
-      "note": "$64,998 (Crypto.com live, 11:02 UTC Aug 10). Gate 2 buffer is $2,998 above the $62,000 trigger — holding constructively through the post-NFP weekend with no crypto-specific risk event. September hike odds at ~44% and DXY below 100 provide a moderate macro tailwind for risk assets. Reclaiming $66,500 would confirm the August base and open a test of the $68K zone. A hot CPI print Wednesday is the key downside catalyst.",
+      "note": "$64,998 (Crypto.com, 11:02 UTC Aug 10). Gate 2 ($62K) buffer $2,998. September hike at 44% CME / 33% Kalshi provides moderate macro tailwind with DXY below 100. Reclaiming $66,500 confirms the August base. Hot CPI Wednesday is the primary downside catalyst.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$223-224 (closed $223.96 Friday). Holding $216-225 band through SpaceX Vera Rubin exclusive and post-NFP session. Aug 26 Q2 FY27 needs gross margin above 76% and guide above consensus. AMD −8% AH from $518 and DDOG −17% on beat-and-raise are the altitude-risk templates.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$162, consolidating post-earnings (+26.4% Aug 5). Iran escalation, if anything, reinforces DoD AI spend durability — federal AI budgets structurally supported. Q3 US commercial growth above 100% YoY is the ~98x forward-sales multiple condition.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$484, testing the post-SpaceX-exclusivity floor. Monday open is the first post-weekend test of the $484 level. Two closes above $490 on normal volume confirm it; a Monday close below $480 suggests rate-sensitive names are not holding the NFP relief through the weekend escalation.",
       "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
       "asset": "July CPI — Wednesday August 12, 8:30 AM ET",
-      "thesis": "Friday's NFP miss reset the rate-hike debate, making Wednesday's July CPI the week's singular binary. June came in at +2.9% YoY headline, +3.2% core. A July print at or below those levels pushes September hike odds from ~44% toward 20% — the de facto 'hold through year-end' signal that extends SPX records toward 7,850+ and may pull the 30Y below 5.00%, delivering 0-of-6 for the first time since May. A hot print (+3.2%+ headline or +3.5%+ core) re-escalates September odds toward 65%+, pushes the 30Y above 5.20%, and turns Friday's record close into an air pocket heading into the Aug 20 SPCX tranche unlock.",
-      "entry": "Hold into Wednesday. Pre-CPI tells: 30Y yield action Tuesday (currently ~5.08%); a drift above 5.15% before the print signals bond markets pre-pricing a hot read. DXY at 99.5 is the secondary lead — a move above 100.50 post-CPI confirms rate re-escalation.",
-      "invalidation": "CPI in-line (within ±0.1% of June levels) leaves September unresolved and the framework at 1-of-6 through the Aug 27 Jackson Hole keynote (Warsh) — base case extends without directional resolution.",
-      "horizon": "2 days (through July CPI, Wednesday August 12, 8:30 AM ET)"
+      "thesis": "July CPI is the week's singular binary after Friday's NFP shock removed the wage-inflation channel. June CPI came in at +2.9% YoY headline, +3.2% core. July embeds Brent at $82-91/bbl from the June-July peak; the August pullback to $84 is not in this comp. At or below June levels (headline ≤2.9%, core ≤3.2%): 30Y path through 5.00%, September below 25%, regime clearing; rate-relief thesis confirmed. Above 3.2% headline or 3.5% core: September re-escalates toward 65%+, 30Y above 5.20%, SPX record becomes an air pocket into the Aug 20 SPCX tranche. The 30Y at 5.08% — 8bps above the formal threshold — clears on a soft print or breaches further on a hot one.",
+      "entry": "Pre-CPI tell: 30Y action Tuesday — a drift above 5.15% before the print signals bond markets pre-pricing a hot read. DXY at 99.5 — a move above 100.50 post-CPI confirms rate re-escalation.",
+      "invalidation": "CPI in-line (within ±0.1% of June levels) leaves September unresolved; Jackson Hole (Aug 27) then decides.",
+      "horizon": "2 days — Wednesday August 12 at 8:30 AM ET"
     },
     {
-      "asset": "WTI Crude — Hormuz binary",
-      "thesis": "WTI at $78.72 is $0.28 from the $79 regime trigger; Brent at $84.39 is $0.61 from $85. The Oman-only deal framework is now dead on arrival after Iran's FM clarified over the weekend that reopening the strait requires the US to end the war and provide financial compensation — terms outside any current negotiating track. Any Iranian escalation or new Hormuz incident activates a second regime breach (2-of-6) in a single session. Conversely, a surprise US-Iran framework that addresses Iran's new conditions compresses WTI toward $70-72 and clears both oil indicators simultaneously.",
-      "entry": "The current setup is asymmetric with the tail skewed to the upside in oil: the bearish case (deal) requires a new negotiating track that doesn't exist; the bullish case (no deal or escalation) is the current trajectory. Track White House and Iranian FM statements as the binary. Brent above $85 on any Hormuz incident is the regime-change alert.",
-      "invalidation": "A formally signed US-Iran deal addressing the stated conditions compresses WTI below $73 and eliminates the oil regime risk.",
-      "horizon": "Days to 2 weeks depending on negotiations pace"
+      "asset": "WTI/Brent — Hormuz dual-breach",
+      "thesis": "WTI at $78.72 is $0.28 from the $79 trigger; Brent at $84.39 is $0.61 from $85. Iran's FM formally decoupled Hormuz reopening from the Oman routing deal on August 8, requiring the US to end the war and pay compensation. Houthi strikes on Saudi Aramco infrastructure continue alongside diplomacy. A single escalation event before Wednesday activates both oil triggers simultaneously (2-of-6 regime), compounding any CPI risk. A surprise US-Iran framework addressing Iran's stated conditions compresses WTI toward $70-72 and clears both indicators. The deal has failed to close three times in 2026.",
+      "entry": "WTI $78.72 ($0.28 from breach), Brent $84.39 ($0.61 from breach). Brent above $85 on any Hormuz incident is the regime-change alert.",
+      "invalidation": "A formally signed US-Iran deal addressing the stated conditions compresses WTI below $73 and eliminates the oil risk.",
+      "horizon": "Days to 2 weeks"
     },
     {
       "asset": "SPCX — August 20 staggered 7% tranche",
-      "thesis": "The 20% tranche (Aug 6-8, ~911.5M shares) was absorbed without cascading; SPCX extended to $133.11 (+15.8%) on Terafab confirmation. The Aug 20 7% tranche (~65M shares ≈ $8.65B eligible) is the next supply gate. Soft CPI Wednesday → rate compression extends → $130+ absorption likely. Hot CPI → simultaneous multiple compression and supply pressure = highest-beta downside across all watchlist names.",
-      "entry": "Hold above $128 through Wednesday. Aug 20 close above $125 on volume confirms supply absorption. Below $115 on volume signals front-run of remaining tranches.",
-      "invalidation": "Hot CPI (Aug 12) that re-escalates September hike odds above 50% introduces simultaneous rate and supply pressure at $133.",
-      "horizon": "10 days (through August 20 tranche date)"
+      "thesis": "The 20% first tranche (911.5M shares, Aug 6-8) absorbed without cascading below $105; SPCX extended to $133.11 on Day 5 on Terafab confirmation. The Aug 20 7% tranche (~65M shares, ~$8.65B eligible) is the next supply gate. Soft CPI Wednesday → rate compression extends the absorption window → $130+ hold likely. Hot CPI → simultaneous multiple compression and supply pressure is the highest-beta downside scenario across the watchlist. October Q3 earnings (Starlink profitability, AI segment above $2.56B) is the fundamental narrative anchor for the $140+ targets.",
+      "entry": "Absorption floor $105; Day 5 hold level $128+. Aug 20 close above $125 on volume confirms supply cleared. Below $115 on elevated volume signals front-running of remaining tranches.",
+      "invalidation": "Hot CPI (Aug 12) re-escalating September hike odds above 50% introduces simultaneous rate and supply pressure at $133.",
+      "horizon": "10 days — through August 20 tranche date"
     }
   ],
-  "bear_case": "A hot July CPI print Wednesday (Aug 12) is the primary risk: headline +3.2%+ or core +3.5%+ re-escalates September hike odds from ~44% toward 65%+ in a single session, pushes the 30Y above 5.20% (deepening the sole breach), and turns Friday's record SPX close at 7,757 into an air pocket heading into the Aug 20 SPCX tranche unlock. The more proximate risk is an oil spike: WTI at $78.72 is $0.28 from the $79 trigger and Brent at $84.39 is $0.61 from the $85 trigger — Iran's weekend clarification that a deal alone will not reopen the Strait of Hormuz (requiring US war termination and financial compensation) eliminates the near-term de-escalation scenario. A single Hormuz incident activates a second regime breach (2-of-6), combining rate risk and oil risk simultaneously heading into Wednesday's CPI. The tertiary risk remains the July NFP signal: 921,000 July temporary layoffs and prior-month revisions of -103K combined could signal a cycle turn rather than a one-off miss — if August employment confirms the July print, Q3 earnings revisions follow and the SPX record at 7,757 becomes the peak. If SPX loses the 7,600 level on a daily close before Wednesday's CPI, the hold thesis does not extend.",
+  "bear_case": "A hot July CPI print Wednesday (above 3.2% headline or 3.5% core) re-escalates September hike odds from ~44% toward 65%+ in a single session, pushing the 30Y above 5.20% and turning Friday's record SPX close at 7,757 into an air pocket heading into the Aug 20 SPCX tranche unlock. The more proximate risk is an oil spike before Wednesday: WTI at $78.72 is $0.28 from the $79 trigger and Brent at $84.39 is $0.61 from $85 — Iran's formal decoupling of Hormuz reopening from the Oman deal eliminates the near-term de-escalation scenario, and a single Houthi strike or Iranian escalatory action activates both oil triggers simultaneously (2-of-6 regime). If both oil breach and a hot CPI print in the same 48-hour window, three regime indicators breach simultaneously before NVDA earnings on August 26. If SPX loses 7,600 on a daily close before Wednesday, the hold thesis is not intact.",
   "body_mdx": "data/briefings/markets/2026-08-10-morning.mdx"
 }
