@@ -2,101 +2,109 @@
   "routine": "markets",
   "date": "2026-08-11",
   "window": "morning",
-  "generated_at": "2026-08-11T11:30:00Z",
+  "generated_at": "2026-08-11T14:00:00Z",
   "is_seed": false,
   "verdict": {
-    "code": "step_aside",
-    "emoji": "🟠",
-    "headline": "Iran deal collapses after Trump demands compensation from Tehran, sending oil past both price triggers",
-    "label": "STEP ASIDE — 3/6 regime breached: WTI $82.13 (above $79 trigger), Brent $87.72 (above $85), 30Y at 5.25%. September hike odds 51% (CME) and rising. SPX futures +0.1% mask compounding oil-rate risk; July CPI Wednesday Aug 12 at 8:30 AM ET is the sole clearing event.",
-    "conviction": "medium",
-    "horizon": "24-48 hours — through Wednesday August 12 CPI at 8:30 AM ET",
-    "rationale_short": "Both oil regime triggers breached simultaneously on Aug 10: WTI settled at $82.13 (+4.2% from $78.72), Brent at $87.72 (+3.9% from $84.39). The catalyst was a decisive pivot in the Iran negotiating track — Trump told Axios on Sunday the US is 'only semi-negotiating' with Iran, then directed US representatives to demand financial compensation FROM Tehran, conditions that directly reverse the Oman framework and that Iran flatly rejected. Iranian FM Araghchi confirmed no direct US-Iran talks are underway. The 30Y extended to 5.253% (+17bps from yesterday's 5.08%), and September hike odds moved from 44% to ~51%. Three of six regime indicators are now in active breach. SPX futures are +0.1% this morning and Nasdaq futures +0.4% — the equity market has not priced the oil-rate compounding — creating asymmetric setup into Wednesday's CPI. July headline consensus: 3.4% YoY (down from 3.5%), core 2.5% (down from 2.6%); prediction markets lean tame. A soft print clears oil from the immediate rate narrative and drops September odds back below 35%; a hot print (above 3.5% headline or 2.7% core) activates the fourth breach (September above 70%) and introduces simultaneous rate-and-supply pressure into the Aug 20 SPCX tranche at $133. Do not add exposure ahead of the print.",
+    "headline": "Oil retreats from trigger levels but yields and hike odds reprice ahead of CPI Wednesday",
+    "label": "Oil easing pre-CPI; 10Y +8bps to 4.73%, September hike odds ~50%; 30Y still above 5.00%; CRWV AH tonight is the AI demand proxy before Wednesday's 8:30 AM print",
+    "rationale_short": "WTI pulled back to ~$78 (below the $79 trigger) and Brent to ~$83.48 (below $85) overnight — positioning-driven, not a Hormuz resolution. Iran's Zolghadr five-condition demand stands, Houthis escalated attacks on Mocha, and Trump is counter-demanding compensation. The bond market is not treating the oil retreat as regime-clearing: 10Y rose 8bps to 4.73% and September hike odds reached ~50%, up 10 percentage points from Monday, while gold hit its highest level since June 5 ($4,432) on safe-haven demand. July CPI arrives Wednesday at 8:30 AM ET; consensus at 3.4% YoY falls in the ambiguous band and leaves Jackson Hole (Aug 27) to decide the rate path. CRWV reports Q2 tonight AH (5 PM ET); DDOG's 17% post-earnings collapse on an AI customer usage cut establishes how the market reads concentration risk into CRWV's MSFT exposure. If SPX closes below 7,600 on or within two sessions of Wednesday's print, the record-proximity bid has broken.",
     "supporting_data": [
       {
-        "label": "WTI rises above $82 as US and Iran trade contradictory compensation demands; Hormuz deal effectively collapsed — CNBC (Aug 10)",
+        "label": "WTI ~$78.00 (−3.0%), Brent ~$83.48 (−4.8%) — both below Monday's formal triggers; Hormuz deal still unresolved",
         "url": "https://www.cnbc.com/2026/08/10/oil-prices-today-brent-wti-hormuz-trump-iran.html"
       },
       {
-        "label": "Brent crude near $88, WTI ~$82 after Trump's Axios comments and Iran's FM rejection of compensation terms — Bloomberg (Aug 11)",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-10/latest-oil-market-news-and-analysis-for-aug-11"
+        "label": "10Y UST 4.73% (+8bps from Monday's 4.65%); September hike odds ~50% on CME FedWatch, up from 40% Monday",
+        "url": "https://tradingeconomics.com/united-states/government-bond-yield"
       },
       {
-        "label": "30Y Treasury yield rises to 5.25%; September hike probability climbs to ~51% on oil-driven inflation fears — CNBC (Aug 11)",
-        "url": "https://www.cnbc.com/quotes/US30Y"
+        "label": "Gold spot $4,432 (+1.0%) — highest since June 5 on safe-haven flows and CPI positioning",
+        "url": "https://www.cnbc.com/2026/08/11/gold-gains-for-third-session-inflation-reports-in-focus.html"
       },
       {
-        "label": "July CPI (Aug 12, 8:30 AM ET): headline expected 3.4% YoY, core 2.5%; prediction markets lean toward tame — CNBC (Aug 10)",
-        "url": "https://www.cnbc.com/2026/08/10/crucial-cpi-report-will-show-tame-inflation-prediction-markets-show.html"
+        "label": "July CPI consensus: 3.4% YoY headline (from 3.5%), 2.5% core (from 2.6%), +0.2% MoM — Wednesday 8:30 AM ET",
+        "url": "https://x.com/marketsday/status/2086434008062366114"
       },
       {
-        "label": "Intel upsizes stock offering to $20B at $95/share to fund AI compute expansion; stock at $101.65 (+175% YTD) — Bloomberg (Aug 10)",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-10/intel-selling-15-billion-in-common-stock-to-fund-growth"
+        "label": "Datadog Q2: revenue +36% to $1.12B, EPS $0.65 vs $0.58 est., guidance raised — stock fell 17% on AI customer usage cut; recovered +11% pre-market",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/datadog-q2-earnings-revenues-surpass-153400969.html"
       },
       {
-        "label": "DDOG +11.48% on Q2 beat-and-raise; Bending Spoons (BSP) +15.7% ahead of Aug 13 earnings — Yahoo Finance (Aug 11)",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081147026.html"
+        "label": "Iran Hormuz: Trump demands compensation from Tehran; Houthis struck Mocha overnight; Zolghadr five-condition demand unchanged",
+        "url": "https://www.cbsnews.com/live-updates/iran-war-us-negotiation-strait-of-hormuz/"
       }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7760.5,  "change_pct":  0.10,  "as_of": "2026-08-11T11:00:00Z" },
-    "nasdaq": { "level": 26712.0, "change_pct":  0.40,  "as_of": "2026-08-11T11:00:00Z" },
-    "vix":    { "level": 15.46,   "change_pct":  3.76,  "as_of": "2026-08-11T11:00:00Z" },
-    "ust10y": { "level": 4.73,    "change_bps":  2,     "as_of": "2026-08-11T11:00:00Z" },
-    "dxy":    { "level": 99.84,   "change_pct":  0.03,  "as_of": "2026-08-11T11:00:00Z" }
+    "sp500":  { "level": 7751.86, "change_pct": -0.07, "as_of": "2026-08-10T20:00:00Z" },
+    "nasdaq": { "level": 26605.0, "change_pct": -0.28, "as_of": "2026-08-10T20:00:00Z" },
+    "vix":    { "level": 15.46,   "change_pct":  3.76, "as_of": "2026-08-11T13:00:00Z" },
+    "ust10y": { "level": 4.73,    "change_bps":  8,    "as_of": "2026-08-11T13:00:00Z" },
+    "dxy":    { "level": 99.75,   "change_pct":  0.21, "as_of": "2026-08-11T13:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield",           "value": 5.253, "trigger_above": 5.00,  "unit": "%" },
-    { "name": "September Hike Prob", "value": 51.0,  "trigger_above": 70.0,  "unit": "%" },
-    { "name": "Brent Crude",         "value": 87.72, "trigger_above": 85.0,  "unit": "$/bbl" },
-    { "name": "WTI Crude",           "value": 82.13, "trigger_above": 79.0,  "unit": "$/bbl" },
-    { "name": "SPX vs 7,380",        "value": 7760,  "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 64330, "trigger_below": 62000, "unit": "$" }
+    { "name": "30Y Yield",           "value": 5.25,    "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 50.0,    "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 83.48,   "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 78.00,   "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7751.86, "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 64052,   "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
-      "ticker": "SPCX",
-      "note": "~$133.11, unchanged from Monday close. Aug 20 7% tranche (~65M shares, ~$8.65B eligible) remains the supply gate. Oil regime breach (WTI $82, Brent $87.72) introduces a new compounding risk: a hot CPI Wednesday simultaneously compresses multiples via rate escalation and adds supply pressure heading into the tranche date. Prediction markets still lean tame on CPI, making soft-print absorption above $130 the base case. Close below $120 on elevated volume before Wednesday is the front-run signal for tranche front-loading.",
+      "ticker": "NVDA",
+      "note": "~$217–220 pre-market; no company-specific news. CRWV AH tonight is the demand-chain proxy — a clean backlog (above $100B) reprices Blackwell demand ahead of NVDA's August 26 print. $216 structural support is the level to watch if CRWV misses. August 26 Q2 FY27 watch: gross margin above 76%, guide above consensus.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$306; ex-dividend August 10 ($0.27 per share). Still under pressure from Monday's Jefferies Underperform cut (PT $263.66, from $285.56); all-glass iPhone canceled on yield-rate failures. Sell-side consensus is building against; Gene Munster's AI upgrade-cycle thesis is the bull counter but requires a form-factor narrative the canceled glass design does not provide.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Reports Q2 AH tonight at 5 PM ET (prior close ~$90.67). Three watch metrics: (1) contracted backlog vs Q1 $99.4B — above $100B clean, below $95B a miss; (2) MSFT customer concentration — above 60% is concentration risk, below 55% is clean; (3) financing cost trajectory on $10B+ secured debt. Options pricing ~12% post-earnings swing. DDOG's 17% collapse on a beat-and-raise (AI customer usage cut) is the exact template the market will apply to CRWV's MSFT read.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$170–175; Day 6 of post-earnings consolidation (+26.4% on August 5). Iran escalation reinforces DoD AI spend structural thesis. Q3 US commercial growth above 100% YoY is the condition for the ~98x forward-sales multiple.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$483, floor test at $484 ongoing. No two-closes above $490 on normal volume yet. Rate-sensitive; hot CPI is the highest-stress scenario for names holding post-NFP relief at current levels.",
       "sentiment": "neutral"
     },
     {
       "ticker": "BTC",
-      "note": "$64,330 (Crypto.com, 11:01 UTC Aug 11, -1.04%). Gate 2 ($62K) buffer $2,330 — tighter than yesterday's $2,998. Oil breach plus 30Y at 5.25% is beginning to weigh on risk assets. September hike at 51% CME is a headwind; DXY at 99.84, not yet above 100.50 (the post-CPI hot-print confirmation level). Hot CPI Wednesday is the primary downside catalyst toward the $62K gate.",
+      "note": "~$64,052 (−1.67%). Gate 2 ($62K) buffer ~$2,050. September hike repricing from 40% to 50% is the dominant near-term factor. BTC has been tracking rate-move sensitivity; a hot CPI pushing September odds above 65% is the stress scenario for Gate 2.",
       "sentiment": "neutral"
-    },
-    {
-      "ticker": "NVDA",
-      "note": "~$222-224 range; rate and oil headwinds beginning to compound. The $216-225 band remains the holding zone through Aug 26 Q2 FY27 earnings (gross margin above 76%, guide above consensus is the bar). Intel's upsized $20B offering at $95/share confirms AI capex is still accelerating — structurally supportive of the data center thesis but does not offset CPI/rate risk at current levels.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "INTC",
-      "note": "$101.65 (+175% YTD). Upsized stock offering to $20B at $95/share; ~3% dilution. Shares initially fell ~5% on announcement, recovered partially. The raise size and AI demand commentary confirm Intel's foundry ramp is absorbing real customer commitments. Not a regime-level event but reduces near-term upside while overhang clears.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "DDOG",
-      "note": "+11.48% on Q2 beat-and-raise. Prior briefings cited DDOG -17% AH as the altitude-risk template; the actual result flips that narrative. Q2 data shows cloud/AI infrastructure spend is not compressing at the end of the fiscal cycle. A bullish read for NVDA's data center thesis heading into Aug 26 earnings.",
-      "sentiment": "positive"
     }
   ],
   "trade_setups": [
     {
-      "asset": "July CPI — Wednesday August 12, 8:30 AM ET (regime binary)",
-      "thesis": "With Brent at $87.72 and WTI at $82.13 having already breached their regime thresholds, Wednesday's CPI is now a three-way binary: (1) soft (headline ≤3.3%, core ≤2.4%): September odds drop from 51% to below 35%, 30Y retreats from 5.25%, oil decouples from the rate narrative — regime clears to 2/6, full recovery thesis intact; (2) in-line (headline 3.4%, core 2.5%): September stays ~45-50%, 30Y holds ~5.20-5.25%, Jackson Hole Aug 27 decides the medium-term; (3) hot (headline ≥3.5%, core ≥2.7%): September hike probability crosses 70%, activating a fourth breach and triggering simultaneous rate-and-supply pressure into the Aug 20 SPCX tranche. July embeds a Brent average near $82-88/bbl — the same range driving today's oil surge — creating genuine upside risk to the 3.4% headline consensus.",
-      "entry": "Pre-CPI tells: 30Y above 5.30% by Tuesday afternoon signals bond market pre-pricing a hot read. DXY above 100.50 confirms rate re-escalation is being priced. September hike odds above 58% by Tuesday close would be the formal pre-print warning.",
-      "invalidation": "CPI within ±0.1% of consensus (in-line scenario) leaves September unresolved through Jackson Hole (Aug 27).",
-      "horizon": "24 hours — Wednesday August 12 at 8:30 AM ET"
+      "asset": "CRWV — Q2 earnings AH tonight, 5 PM ET",
+      "thesis": "CRWV enters Q2 at ~$90.67 with options pricing a ~12% swing. The AI compute-demand proxy: Q1 contracted backlog was $99.4B with >18-month average duration — the market's confidence level in AI infrastructure monetization. DDOG fell 17% on a beat-and-raise when an AI customer cut usage; CRWV faces the same lens on MSFT concentration. A backlog above $100B and MSFT below 55% reprices Blackwell demand ahead of NVDA's August 26 print. A backlog below $95B or MSFT above 60% reaches NVDA $216 and SPCX $128 in pre-market Wednesday — 14 hours before CPI.",
+      "entry": "Post-close reaction. NVDA $216 and SPCX $128 are the sympathy levels to watch in Wednesday pre-market for the direction of the read-through.",
+      "invalidation": "Backlog above $100B, MSFT concentration below 55%, and stable or improving gross margin — NVDA resistance shifts to $221 and the focus fully moves to CPI.",
+      "horizon": "AH tonight; secondary read Wednesday pre-market."
     },
     {
-      "asset": "WTI / Brent — dual breach active",
-      "thesis": "Both oil regime triggers breached simultaneously Monday: WTI $82.13 (above $79, +$3.41 from trigger), Brent $87.72 (above $85, +$2.72 from trigger). The collapse of the Oman routing framework eliminates the near-term de-escalation scenario; Trump's compensation-from-Iran demand is publicly committed and Iran has publicly rejected it. The deal has now failed to close four times in 2026. A continuation toward WTI $85 / Brent $93 would constitute a second leg requiring defensive positioning in energy-exposed sectors. The one reversal catalyst — a sudden US policy reversal on compensation terms — is unlikely given public commitments. Brent above $93 would embed oil-driven inflation directly into the Q3 CPI series.",
-      "entry": "Regime active at WTI $82.13 / Brent $87.72. Next level that changes the read upward: Brent $93 (second-leg signal, Q3 CPI contamination); downward: WTI below $79 on a verified US-Iran deal (regime clears).",
-      "invalidation": "A formally signed agreement addressing Trump's compensation terms and Iran's Hormuz conditions compresses WTI below $73 and clears the oil breach.",
-      "horizon": "Days to 2 weeks; reassess post-CPI Wednesday"
+      "asset": "Oil triggers — will the retreat hold through today's close?",
+      "thesis": "WTI at ~$78 and Brent at ~$83.48 are below their triggers ($79/$85) for the first time since Saturday, potentially reducing the active regime count from 3-of-6 to 1-of-6 (just the 30Y breach). The retreat is not geopolitically motivated — Zolghadr's conditions stand, Houthis escalated, Trump counter-demanded. It is positioning ahead of CPI. A close above $79 WTI or $85 Brent today re-activates both triggers before Wednesday's print. A close below signals markets are treating the supply-shock premium as priced.",
+      "entry": "Current: WTI ~$78, Brent ~$83.48. Trigger thresholds: $79 and $85. Watch close prices, not intraday.",
+      "invalidation": "Any Iran diplomatic escalation or Houthi action that reprices the Hormuz supply-disruption probability pushes WTI back above $79.",
+      "horizon": "Today's close; CPI Wednesday as the secondary driver of oil direction."
+    },
+    {
+      "asset": "September hike odds — 50% and approaching the formal 70% threshold",
+      "thesis": "CME FedWatch moved from 40% (Monday close) to ~50% Tuesday morning. The formal regime trigger is 70%. A hot CPI (above 3.2%/3.5%) covers most of the 20-point gap in a session. An in-line print (3.4%/2.5%) holds the market at 45–55% and makes Jackson Hole (Aug 27) the resolution point. A soft print (below 2.9%/3.2%) pushes odds below 30% and removes rate hike as a near-term narrative. Fed speakers today (any Kashkari or Warsh statement on the supply-shock channel) can move odds independently of CPI.",
+      "entry": "Current: ~50%. Formal threshold: 70%. Watch for any Fed speaker statement today; CPI Wednesday 8:30 AM ET is the primary catalyst.",
+      "invalidation": "Soft CPI (below 2.9%/3.2%) resets September odds to 25% and removes the 70% formal trigger as a near-term risk.",
+      "horizon": "Through Wednesday's 8:30 AM ET print."
     }
   ],
-  "bear_case": "Both WTI ($82.13) and Brent ($87.72) have breached their regime thresholds simultaneously — the exact scenario Monday's briefing identified as the highest-risk event before Wednesday's CPI. The 30Y has extended to 5.253%, adding 17bps from yesterday, and September hike odds have climbed from 44% to 51%. Three of six regime indicators are now in active breach. The compounding danger arrives Wednesday: July CPI embeds a Brent average near $82-88/bbl, creating genuine upside risk to the 3.4% headline consensus. A print above 3.5% headline or 2.7% core would push September hike odds toward 70%, triggering the fourth breach and introducing simultaneous rate-and-supply pressure for SPCX's Aug 20 tranche at $133 — the highest-beta downside scenario across the watchlist. SPX at 7,760 near records while three regime indicators are actively breached is the structural mismatch defining today's risk: the index has not priced oil-rate compounding. If SPX loses 7,650 on a daily close before Wednesday, the hold thesis is fully broken and defensive repositioning becomes non-optional.",
+  "bear_case": "The oil retreat is a pre-CPI position trim in a market still priced for dual resolution — soft CPI and Hormuz deal — neither of which is in hand. Iran's Zolghadr conditions require a post-war settlement; Houthis escalated overnight; Trump's counter-demand makes the diplomatic path longer. The 10Y at 4.73% and September hike odds at 50% are moving in the opposite direction of what the oil retreat implies, suggesting the rate market is front-running the CPI event, not celebrating the oil move. CRWV's backlog and MSFT concentration risk arrive 14 hours before CPI; DDOG established that a beat-and-raise is insufficient when concentration risk reads through. If CRWV misses and CPI is hot, NVDA $216 and SPCX $128 are simultaneously in play. If SPX closes below 7,600 within two sessions of Wednesday's print, the record-proximity bid that has held for five sessions breaks.",
   "body_mdx": "data/briefings/markets/2026-08-11-morning.mdx"
 }
