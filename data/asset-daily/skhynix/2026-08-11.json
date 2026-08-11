@@ -1,0 +1,172 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T21:30:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+  "day_winner": "bears",
+  "day_summary": "SK Hynix gapped down ₩32,000 at the open to ₩1,405,000, slid to a session low of ₩1,373,000 on heavy institutional selling (net ₩206B sold), then clawed back to close at ₩1,425,000 — a loss of ₩12,000 (-0.83%) on the day. The intraday reversal from -2.3% trough to -0.83% close showed resilient demand near the ₩1,373,000 level, but the stock remains emphatically below the ₩1,483,000 re-entry gate for a third consecutive session. Paradoxically, the broader Korea semiconductor special act — which took effect today and sent equipment makers YEST +15.45% and Jusung Engineering +13.74% — provided zero lift to SK Hynix itself, suggesting the market already had the legislation priced in (or that selling pressure from institutions outweighed any sector tailwinds). Samsung Electronics surged +4.13% to ₩239,500 on its own domestic catalyst, leaving SK Hynix as the notable laggard in the memory complex.",
+  "long_pnl": "Step-aside — no active long position.",
+  "short_pnl": "No short recommended; step-aside is capital-preservation, not directional.",
+  "decision": {
+    "action": "step_aside",
+    "conviction": "medium",
+    "horizon": "until ₩1,483,000 closing re-entry confirmed on above-average volume",
+    "rationale": "Third consecutive close below ₩1,483,000 (₩1,425,000 tonight). The framework is unambiguous: step aside until a single KRX session closes above ₩1,483,000 on volume exceeding the 20-day average. Conviction is medium rather than high because the HBM thesis remains intact (₩54T capex plan, Yongin Y2 + Cheongju M17 build-out, AI server demand underpinning HBM3E pricing), the Korea semiconductor special act is an incremental structural positive, and the ₩1,373,000 session low held without follow-through selling — suggesting distribution is not yet panic-driven. Capital is better preserved off-side while the stock works through this consolidation below the gate."
+  },
+  "so_what": {
+    "line": "Third close below ₩1,483,000 locks step-aside in; watch ₩1,373,000 for signs of a base.",
+    "bull": "Korea semiconductor special act removes regulatory friction for capex execution; ₩54T build-out timeline accelerates, HBM3E pricing holds at premium into Q4, and a single strong close back through ₩1,483,000 flips the framework to re-entry immediately.",
+    "bear": "Institutions net sold ₩206B today — the third consecutive session of meaningful selling. If ₩1,373,000 cracks on tomorrow's post-CPI risk-off, the next technical floor is ₩1,320,000–₩1,340,000 (the prior August congestion zone), extending the step-aside period through the NVDA earnings binary on Aug 26."
+  },
+  "snapshot": {
+    "price": "₩1,425,000",
+    "change_pct": -0.83,
+    "change_abs": -12000,
+    "prev_close": "₩1,437,000",
+    "day_high": "₩1,455,000",
+    "day_low": "₩1,373,000",
+    "week52_high": "₩1,867,213",
+    "week52_low": "₩1,030,000",
+    "volume": "~6.2M shares (~₩8.9T notional)",
+    "market_cap": "~₩1,038T (~$753B)",
+    "extra": [
+      { "label": "Open", "value": "₩1,405,000 (gap-down -2.23% from prev close)" },
+      { "label": "KOSPI", "value": "~6,345 (-0.34% on the day)" },
+      { "label": "Samsung Electronics", "value": "₩239,500 (+4.13%)" },
+      { "label": "YEST Co.", "value": "+15.45% (semiconductor equipment, special act catalyst)" },
+      { "label": "Jusung Engineering", "value": "+13.74% (semiconductor equipment, special act catalyst)" },
+      { "label": "Institutional net flow", "value": "-₩206B (net selling)" },
+      { "label": "Re-entry gate", "value": "₩1,483,000 (step-aside framework threshold)" }
+    ]
+  },
+  "positioning": {
+    "iv": null,
+    "iv_note": "KRX options data unavailable; domestic derivatives market closed.",
+    "put_call": null,
+    "short_interest": "Elevated — foreign investors continue net selling for third session; institutional net -₩206B today.",
+    "max_pain": null,
+    "notable_flow": "Institutions sold ₩206B net in today's session. Equipment makers YEST and Jusung absorbed significant volume on semiconductor special act news while SK Hynix itself saw net outflows, indicating rotation within the semiconductor complex rather than sector-wide buying."
+  },
+  "what_traders_are_doing": "Domestic institutions are rotating out of large-cap memory (SK Hynix) into semiconductor equipment names that are the direct beneficiaries of the Korea semiconductor special act (faster permitting, infrastructure subsidies). Foreign investors continue their net selling streak, cautious ahead of tomorrow's U.S. CPI print. Short-term traders who bought the ₩1,373,000 session low likely took partial profits into the ₩1,425,000–₩1,430,000 close. Options desks are staying flat — no unusual derivatives activity — while longer-duration institutional investors wait for the NVDA earnings signal (Aug 26) to confirm the HBM demand trajectory before rebuilding SK Hynix exposure.",
+  "news": [
+    {
+      "label": "Korea Semiconductor Special Act Takes Effect Aug 11 — Equipment Makers Surge 13–15%",
+      "source": "Korea Economic Daily / Yonhap",
+      "sentiment": "positive"
+    },
+    {
+      "label": "SK Hynix ₩54T Capex Plan Confirmed: Yongin Y2 + Cheongju M17 HBM Fabs on Schedule",
+      "source": "Chosun Biz",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Institutions Net Sell ₩206B in SK Hynix for Third Consecutive Session",
+      "source": "Seoul Economic Daily",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Samsung Electronics +4.13% on Domestic Earnings Optimism — Memory Peer Divergence Widens",
+      "source": "Korea Herald",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "HBM3E Server Demand Remains Strong; SK Hynix Sole Qualified Supplier to Key AI Hyperscalers",
+      "source": "The Elec",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Foreign Investors Continue Net Selling Ahead of U.S. CPI and FOMC Risk Events",
+      "source": "Maeil Business",
+      "sentiment": "negative"
+    }
+  ],
+  "outlook": {
+    "short_term": "The ₩1,373,000 session low is now the line in the sand. A clean hold above it through tomorrow's post-CPI open (KRX opens 9:00 KST, CPI prints 8:30 ET the prior night) is necessary to avoid a deeper leg toward ₩1,320,000–₩1,340,000. Even in a benign CPI outcome, a re-entry trade requires a close back above ₩1,483,000 — which is ₩58,000 (4.1%) away from tonight's close. The step-aside stance is the correct posture through at least the NVDA earnings event on Aug 26, which is the next meaningful read on HBM demand trajectory.",
+    "long_term": "The structural bull case is unchanged: SK Hynix is the only fully-qualified HBM3E supplier to the top-3 AI hyperscalers, the Korea semiconductor special act removes a key capex execution friction (permitting timelines cut from 5+ years to ~2 years), and the ₩54T capex plan positions the company for HBM4 leadership by H1 2027. The week-52 low of ₩1,030,000 and current price of ₩1,425,000 bracket a +38% recovery from the trough — long-term holders have a substantial cushion. The question is whether the current consolidation below ₩1,483,000 is a healthy pause before a retest of ₩1,600,000–₩1,700,000, or the beginning of a more significant distribution phase driven by foreign selling."
+  },
+  "bull_case": [
+    "Korea semiconductor special act effective today cuts fab permitting timelines from 5+ years to approximately 2 years, directly accelerating SK Hynix's Yongin Y2 and Cheongju M17 HBM capacity ramp — the market has not fully priced this in for SK Hynix specifically.",
+    "SK Hynix remains the sole fully-qualified HBM3E supplier to NVIDIA, Google, and Microsoft; any upside surprise in NVDA Q2 FY2027 earnings (Aug 26) flows directly to HBM order visibility and pricing power through 2027.",
+    "Session low of ₩1,373,000 held cleanly with no follow-through — buyers absorbed the institutional selling wave, suggesting distribution is not panic-driven and a base is forming in the ₩1,370,000–₩1,400,000 zone.",
+    "₩54T capex commitment (largest in company history) signals management's confidence in HBM demand sustainability; capex-to-revenue ratio of ~40% is consistent with DRAM super-cycle investment patterns that preceded prior multi-year bull runs."
+  ],
+  "bear_case": [
+    "Third consecutive close below the ₩1,483,000 re-entry gate with no recovery attempt above it intraday — the framework signals ongoing distribution, not consolidation.",
+    "Institutions net sold ₩206B today while equipment peers surged 13–15% on the same semiconductor special act news — the relative underperformance suggests SK Hynix is being used as a source of funds rather than a beneficiary of the structural catalyst.",
+    "Foreign investor selling streak continues with no apparent catalyst to reverse it before the U.S. CPI print (Aug 12) and FOMC (Sept 16) risk events clear the macro calendar.",
+    "If ₩1,373,000 fails on a hot CPI read tomorrow morning (KRX open), next technical support is at ₩1,320,000–₩1,340,000, implying an additional 2.5–4% drawdown from the current close before the next buyer base materializes."
+  ],
+  "key_levels": [
+    {
+      "label": "₩1,373,000 — Today's session low; buyers stepped in decisively, making this the nearest hard floor",
+      "level": "₩1,373,000",
+      "kind": "support"
+    },
+    {
+      "label": "★ ₩1,373,000 — STRONGEST SUPPORT: Three-touch intraday base; only level where institutional selling met durable demand today",
+      "level": "₩1,373,000",
+      "kind": "support"
+    },
+    {
+      "label": "₩1,405,000 — Today's gap-down open; intraday resistance if price re-tests from below",
+      "level": "₩1,405,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,425,000 — Today's closing price; short-term pivot between recovery and renewed selling",
+      "level": "₩1,425,000",
+      "kind": "pivot"
+    },
+    {
+      "label": "₩1,455,000 — Today's session high; sellers rejected every attempt above this level",
+      "level": "₩1,455,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,437,000 — Yesterday's close (Aug 10); prior support now flipped to intraday resistance on any bounce",
+      "level": "₩1,437,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ ₩1,483,000 — STRONGEST RESISTANCE: Step-aside framework re-entry gate; three consecutive closes below confirm distribution; a single close above this level on above-average volume triggers immediate re-entry signal",
+      "level": "₩1,483,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,320,000–₩1,340,000 — Prior August congestion zone; next meaningful buyer base if ₩1,373,000 fails",
+      "level": "₩1,320,000–₩1,340,000",
+      "kind": "support"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-08-12",
+      "label": "U.S. July CPI Print (8:30 ET) — hot read risks KRX risk-off at open; in-line/cool read could reverse the institutional selling streak",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-26",
+      "label": "NVIDIA Q2 FY2027 Earnings — primary read on HBM demand trajectory and SK Hynix order visibility through H1 2027",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-01",
+      "label": "SK Hynix Q3 2026 Preliminary Results (est.) — HBM3E revenue mix and ASP guidance will confirm or challenge the ₩1,483,000 re-entry thesis",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "FOMC Rate Decision — rate trajectory affects KRW/USD and foreign investor appetite for Korean equities; a hold or cut supports inflows",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-08-11",
+      "label": "Korea Semiconductor Special Act Effective Today — permitting reform accelerates Yongin Y2 and Cheongju M17 HBM fab timelines",
+      "importance": "medium"
+    }
+  ],
+  "analysis": "## SK Hynix — 2026-08-11 Post-Close Analysis\n\n### Step-Aside Framework Status\n\n| Condition | Threshold | Today's Close | Status |\n|-----------|-----------|---------------|---------|\n| Close below re-entry gate | ₩1,483,000 | ₩1,425,000 | ✗ Step-aside active (-₩58,000 below gate) |\n| Consecutive closes below gate | ≥1 | **3rd consecutive** | ✗ Distribution pattern deepening |\n| Re-entry signal | Close > ₩1,483,000 + above-avg vol | Not triggered | ✗ |\n\n**Framework verdict: Step-aside. No re-entry signal.** Third consecutive session below ₩1,483,000.\n\n---\n\n### Session Structure\n\nSK Hynix opened ₩32,000 lower than yesterday's ₩1,437,000 close, gapping to ₩1,405,000 at 9:00 KST. The initial selling wave drove price to the session low of ₩1,373,000 by mid-morning — a decline of -2.3% from the open. That level attracted enough dip-buying (likely short-covering plus value-oriented domestic retail) to stabilize the stock, which then ground higher through the afternoon to close at ₩1,425,000.\n\nThe recovery from the session low (+₩52,000 / +3.8% off the trough) is the one technically encouraging element of today's session — it demonstrates demand at ₩1,373,000. However, the close at ₩1,425,000 is still:\n- ₩12,000 (-0.83%) below yesterday's close\n- ₩58,000 (-3.9%) below the ₩1,483,000 re-entry gate\n- ₩30,000 (-2.1%) below today's open\n\n### Why SK Hynix Lagged the Semiconductor Special Act\n\nThe Korea semiconductor special act — signed into law and effective Aug 11 — was a textbook \"sell the news\" event for SK Hynix. Equipment makers YEST (+15.45%) and Jusung Engineering (+13.74%) surged because the act's permitting reform directly reduces their project timelines and revenue visibility. For SK Hynix, the benefit is real but deferred: faster fab builds (Yongin Y2, Cheongju M17) improve 2027–2028 capacity supply, but don't move near-term HBM3E pricing or Q3 revenue guidance.\n\nMeanwhile, institutions — who have been net sellers for three straight sessions — appear to be using the sector enthusiasm in equipment names as an opportunity to reduce exposure to the primary memory names. This rotation dynamic is consistent with the end of a mid-cycle positioning phase.\n\n### Volume and Institutional Flow\n\n- Estimated volume: ~6.2M shares (~₩8.9T notional)\n- Institutional net selling: -₩206B for the session\n- Samsung Electronics net buying: +₩315B (domestic institutions rotated within the sector)\n- Equipment sector (YEST, Jusung, Hana Microdisplay) captured the bulk of the day's semiconductor inflows\n\nThree consecutive days of institutional net selling in SK Hynix totaling an estimated ₩500B+ is not noise — it is a systematic reduction in overweight positions. The question is whether this is a 3–5 session rotation or the beginning of a more durable reallocation.\n\n### Technical Levels in Context\n\n**Support structure:**\n- ₩1,373,000: Today's low. Buyers absorbed the first institutional wave here. A second test on a hot CPI print (tomorrow AM KST) will be decisive.\n- ₩1,320,000–₩1,340,000: Prior August congestion zone. If ₩1,373,000 fails, this is the next cluster.\n\n**Resistance structure:**\n- ₩1,437,000: Yesterday's close, now flipped to intraday resistance.\n- ₩1,455,000: Today's high — every intraday recovery attempt above this was sold.\n- ₩1,483,000: The framework re-entry gate. Three failed closes below it reinforce its role as a structural resistance level.\n\n### Bull Case Preserved\n\nThe long-term investment thesis is not impaired by three sessions of institutional selling:\n1. SK Hynix is the **only fully-qualified HBM3E supplier** to NVIDIA, Google, and Microsoft.\n2. The ₩54T capex plan is the largest in company history and signals management confidence in HBM demand through 2028.\n3. The Korea semiconductor special act reduces the biggest execution risk (permitting delays) on the capex timeline.\n4. NVDA Q2 FY2027 earnings on Aug 26 is the next major read on HBM order book — any upside in NVDA's data center guidance directly implies HBM volume uplift for SK Hynix.\n\nThe step-aside stance protects capital during the current consolidation without abandoning the thesis.\n\n### CPI Risk Tomorrow\n\nU.S. July CPI prints at 8:30 ET tomorrow (Aug 12). KRX opens at 9:00 KST = 1:00 ET the same day, which means KRX will react to the CPI print at its open. A hot CPI read (core >0.3% MoM or headline >2.9% YoY) risks:\n- USD strengthening → KRW weakening → foreign selling pressure on KOSPI\n- Risk-off impulse testing ₩1,373,000 support\n- Potential extension toward ₩1,320,000–₩1,340,000\n\nA benign CPI read (core ≤0.2% MoM) could reverse the foreign selling streak and give SK Hynix a recovery session — but a close back above ₩1,483,000 still requires confirming volume.\n\n**Bottom line: Remain step-aside. Watch ₩1,373,000 on the CPI open. Re-entry requires ₩1,483,000 close + above-average volume — not yet.**"
+}
