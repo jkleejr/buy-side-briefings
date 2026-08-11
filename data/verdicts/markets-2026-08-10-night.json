@@ -2,12 +2,15 @@
   "routine": "markets",
   "date": "2026-08-10",
   "window": "night",
-  "generated_at": "2026-08-10T23:45:00Z",
+  "generated_at": "2026-08-11T01:15:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Iran adds five new Hormuz demands; oil triggers breach and 30Y climbs; equities hold",
-    "label": "Three regime conditions active — 30Y 5.21%, WTI $80.42, Brent $87.69 — as Iran's Supreme Leader advisor adds settlement-level preconditions the Oman transit-fee framework cannot satisfy; SPX holds within 0.07% of record",
-    "rationale_short": "Both formal oil triggers breached in one session (WTI $80.42, Brent $87.69) as Iran's Supreme Leader advisor Zolghadr added five conditions beyond FM Araghchi's weekend demands — naval blockade lifted, forces withdrawn, sanctions removed, assets unfrozen, war damages compensated — moving Hormuz from a fee negotiation to a peace-settlement precondition. The 30Y rose 13bps to 5.21%, past the 5.15% pre-CPI tell flagged in the morning brief, and now 21bps above the 5.00% threshold. SPX closed at 7,751.86 (−0.07%), implying the equity market is treating oil regime breaches as transient ahead of Wednesday's CPI. Level that changes the read: SPX closes below 7,600 on or within two sessions of Wednesday's print.",
+    "code": "hold",
+    "emoji": "🟡",
+    "conviction": "medium",
+    "headline": "Iran adds five settlement-level Hormuz demands, spiking oil and the long bond",
+    "label": "HOLD — 3 of 6 breached: 30Y 5.21%, WTI $80.42, Brent $87.69; Iran Supreme Leader advisor Zolghadr moves Hormuz from transit-fee negotiation to full peace-settlement precondition; SPX −0.07% holds within 6pts of record; CPI Wednesday and CRWV AH Tuesday are the next two binaries",
+    "rationale_short": "Both formal oil triggers breached in one session (WTI $80.42 +2.86%, Brent $87.69 +4.95%) as Iran's Supreme Leader advisor Zolghadr added five conditions beyond FM Araghchi's weekend demands — naval blockade lifted, forces withdrawn, sanctions removed, assets unfrozen, war damages compensated — moving Hormuz from a fee negotiation to a peace-settlement precondition the Oman framework cannot satisfy. The 30Y rose 13bps to 5.21%, past the 5.15% pre-CPI tell flagged in Monday's morning brief, now 21bps above the 5.00% threshold. SPX closed at 7,751.86 (−0.07%), implying equities are treating oil regime breaches as transient ahead of Wednesday's CPI. Apple shed $97B in market cap on the Jefferies cut. Level that changes the read: SPX closes below 7,600 on or within two sessions of Wednesday's print.",
     "supporting_data": [
       {
         "label": "WTI $80.42 (+2.86%), Brent $87.69 (+4.95%) — both formal oil triggers breached; fourth consecutive session of oil gains",
@@ -18,7 +21,7 @@
         "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262093194-crude-oil-surge-iran-hormuz-conditions-houthi-jizan-refinery-tradingkey"
       },
       {
-        "label": "30Y Treasury 5.21% (+13bps) — past the 5.15% pre-CPI tell flagged in this morning's brief; 21bps above 5.00% threshold",
+        "label": "30Y Treasury 5.21% (+13bps) — past the 5.15% pre-CPI tell flagged in Monday's morning brief; 21bps above 5.00% threshold",
         "url": "https://www.federalreserve.gov/releases/h15/"
       },
       {
@@ -26,7 +29,7 @@
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-10-2026"
       },
       {
-        "label": "Apple −2.2% after Jefferies cut to Underperform: all-glass iPhone canceled, iPhone ASP growth estimate cut to 6.8% from 9% for FY26-31",
+        "label": "Apple −2.1% ($306.44, −$97B market cap) after Jefferies cut to Underperform: all-glass iPhone canceled, iPhone ASP growth estimate cut to 6.8% from 9% for FY26-31",
         "url": "https://finance.yahoo.com/markets/stocks/articles/apple-downgraded-jefferies-iphone-pricing-173100792.html"
       },
       {
@@ -48,17 +51,22 @@
     { "name": "Brent Crude",         "value": 87.69,   "trigger_above": 85.0,  "unit": "$/bbl" },
     { "name": "WTI Crude",           "value": 80.42,   "trigger_above": 79.0,  "unit": "$/bbl" },
     { "name": "SPX vs 7,380",        "value": 7751.86, "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 65000,   "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",          "value": 64069,   "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "AAPL",
-      "note": "Fell ~2.2% after Jefferies cut from Hold to Underperform, price target to $263.66 from $285.56. All-glass iPhone canceled due to low yield rates in supply-chain survey. iPhone ASP growth estimate cut to 6.8% from 9% for FY26-31. Sell ratings accumulating across the Street. Bull counter (Gene Munster): AI integration can drive the iPhone 18 upgrade cycle regardless of form-factor setback; tests that thesis in the next product cycle.",
+      "note": "Closed $306.44 (−2.11%, −$97B market cap) after Jefferies cut from Hold to Underperform, price target to $263.66 from $285.56. All-glass iPhone canceled due to low yield rates in supply-chain survey. iPhone ASP growth estimate cut to 6.8% from 9% for FY26-31. Sell ratings accumulating across the Street. Bull counter (Gene Munster): AI integration can drive the iPhone 18 upgrade cycle regardless of form-factor setback.",
       "sentiment": "negative"
     },
     {
       "ticker": "NVDA",
-      "note": "Pulled back from Friday's $223.96 close; semiconductors were the session's sector laggard. No company-specific catalyst Monday. $216 structural support intact; August 26 Q2 FY27 needs gross margin above 76% and guide above consensus. Three active regime conditions entering the final two-week setup window.",
+      "note": "Closed $217.54 (−2.87% from Friday's $223.96); semiconductors were the session's sector laggard alongside AAPL. No company-specific catalyst Monday. $216 structural support intact; August 26 Q2 FY27 earnings need gross margin above 76% and guide above consensus. CRWV AH Tuesday is the demand-chain proxy: clean $99.4B backlog = Blackwell demand confirmed; CRWV miss is the first credible challenge to NVDA $216 support before the August 26 print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Closed $90.67 (range $89.01-$93.98), slipping below $90 intraday as margin and capex-spend concerns resurfaced ahead of Q2 AH Tuesday August 11 (5 PM ET). Options pricing ~12% post-earnings swing. Three metrics: (1) contracted backlog vs Q1 ($99.4B; >18-month average duration = strong); (2) MSFT customer concentration (above 60% = risk); (3) financing cost trajectory on $10B+ secured debt. A clean print re-rates NVDA Blackwell demand and AI infrastructure across the sector; backlog miss or MSFT concentration above 60% cascades to NVDA $216 and SPCX $128 in the same session.",
       "sentiment": "neutral"
     },
     {
@@ -68,21 +76,28 @@
     },
     {
       "ticker": "SPCX",
-      "note": "Day 5: held $131.65-$139.60 range (close ~$133-134); absorption floor $128 intact through broader semiconductor weakness and three active macro regime indicators. Terafab ($16.8B, Aug 8) confirmed vertical-integration thesis. August 20 7% tranche (~$8.65B eligible) is the next supply gate. Hot CPI Wednesday introduces simultaneous rate and supply pressure at current levels — highest-beta downside scenario in the watchlist this week.",
+      "note": "Day 5: held $131.65-$139.60 range (close ~$133-134); absorption floor $128 intact through broader semiconductor weakness and three active macro regime indicators. Terafab ($16.8B, Aug 8) confirmed vertical-integration thesis. August 20 7% tranche (~$8.65B eligible) is the next supply gate. Hot CPI Wednesday introduces simultaneous rate and supply pressure at current levels — highest-beta downside scenario in the watchlist this week. CRWV AH Tuesday is the co-risk event: a CRWV miss cascades to SPCX $128 absorption floor before the supply-pressure window.",
       "sentiment": "positive"
     },
     {
       "ticker": "AMD",
-      "note": "Testing the $484 floor from the morning brief's Monday test. No confirmation yet of two closes above $490 on normal volume. Hot CPI is the most direct test of whether rate-sensitive names hold the NFP relief through a supply-shock regime.",
+      "note": "Testing the $484 floor. No confirmation yet of two closes above $490 on normal volume. Hot CPI is the most direct test of whether rate-sensitive names hold the NFP relief through a supply-shock regime.",
       "sentiment": "neutral"
     },
     {
       "ticker": "BTC",
-      "note": "~$65,000 end of day (intraday dip toward $64,000 on a reported Strategy 1,690-BTC sale, per CoinDesk). Gate 2 ($62K) buffer ~$3,000 intact. Tracked oil and rate moves but held the $65K level. September hike odds at 35-40% remain the stabilizing macro factor; Wednesday CPI is the primary catalyst.",
+      "note": "~$64,069 post-close (Crypto.com live: $64,069.68, 24h high $65,395.94 / low $63,810.74, −1.47%). Gate 2 ($62K) buffer narrowed to ~$2,069 — down from ~$3,000 at Monday's regular close. Intraday dip toward $63,810 on reported Strategy 1,690-BTC sale (CoinDesk). BTC tracked oil and rate moves but held above $63,810 floor. September hike odds at 35-40% remain the stabilizing macro factor; Wednesday CPI is the primary catalyst. Break below $63K narrows Gate 2 buffer to critical levels ahead of CRWV Tuesday and CPI Wednesday.",
       "sentiment": "neutral"
     }
   ],
   "trade_setups": [
+    {
+      "asset": "CoreWeave (CRWV) — Tuesday August 11 AH, 5 PM ET",
+      "thesis": "CRWV enters earnings at $90.67, slipping below $90 intraday, after a 50%+ rebound over two weeks. Options pricing ~12% post-earnings swing. Three metrics: (1) contracted backlog vs Q1 ($99.4B, >18-month average duration); (2) MSFT customer concentration (above 60% = risk); (3) financing cost trajectory on $10B+ secured debt. A clean print re-rates NVDA Blackwell demand and validates AI compute-shortage monetization. A miss — backlog below $95B or MSFT concentration above 60% on weak 2H guidance — is the first credible challenge to AI capex consensus at current sector multiples and reaches NVDA $216 and SPCX $128 in the same session. This binary lands 14 hours before CPI: a CRWV miss + hot CPI Wednesday is the two-session sequence that breaks the record-proximity equity bid.",
+      "entry": "CRWV AH price reaction Tuesday. Watch NVDA $216 support and SPCX $128 absorption floor as sympathy indicators in Wednesday's pre-market.",
+      "invalidation": "Backlog above $100B and MSFT concentration below 55% with in-line or improving gross margins — NVDA $221 resistance becomes the CPI-week test rather than $216 support.",
+      "horizon": "Tuesday August 11 AH; secondary read Wednesday pre-market into CPI."
+    },
     {
       "asset": "July CPI — Wednesday August 12, 8:30 AM ET",
       "thesis": "CPI enters a 3-of-6 regime (30Y at 5.21%, WTI $80.42, Brent $87.69). July embeds Brent at $82-91/bbl from the June-July peak; the current $87.69 is a floor for the comp, not a headwind yet to reverse. The 30Y's pre-CPI tell (above 5.15%) fired Monday, one day ahead of the signal window. Below 2.9%/3.2% (headline/core): 30Y compresses toward 5.00%; oil triggers may be treated as transient; September below 25%. Above 3.2%/3.5%: Kashkari's supply-shock thesis confirmed with the labor market already printing losses; 30Y to 5.30%+; three conditions carry into the NVDA earnings window August 26.",
@@ -99,12 +114,12 @@
     },
     {
       "asset": "SPCX — Day 5 hold into August 20 tranche",
-      "thesis": "SPCX held $131-$134 range on Day 5, absorbing semiconductor weakness and three active macro regime indicators. The 20% first-tranche absorption thesis held through a session that should have stressed it — both oil triggers active and 30Y at its highest since before the NFP miss. The August 20 7% tranche (~65M shares, ~$8.65B eligible) is the next supply gate. Soft CPI extends the absorption window above $128. Hot CPI introduces simultaneous rate-compression and supply-pressure at $134 — the highest-beta downside scenario in the watchlist this week. October Q3 earnings (Starlink profitability, AI segment above $2.56B) remains the fundamental narrative anchor.",
+      "thesis": "SPCX held $131-$134 range on Day 5, absorbing semiconductor weakness and three active macro regime indicators. The 20% first-tranche absorption thesis held through a session that should have stressed it — both oil triggers active and 30Y at its highest since before the NFP miss. The August 20 7% tranche (~65M shares, ~$8.65B eligible) is the next supply gate. Soft CPI extends the absorption window above $128. Hot CPI introduces simultaneous rate-compression and supply-pressure at $134. CRWV AH Tuesday is the co-risk: a miss cascades to SPCX $128 before Wednesday's CPI.",
       "entry": "Absorption floor $105. Current hold level $128. Day 5 close ~$133-134. Close below $120 on elevated volume before August 20 signals the next tranche is being front-run.",
       "invalidation": "Hot CPI re-escalates September odds above 50%; simultaneous rate pressure and supply anxiety test the $128 absorption floor before August 20.",
       "horizon": "10 days — through August 20 tranche."
     }
   ],
-  "bear_case": "The regime moved from 1-of-6 to 3-of-6 active conditions in one session. Iran's Supreme Leader advisor Zolghadr's five conditions — blockade lifted, forces withdrawn, sanctions removed, assets unfrozen, war damages compensated — are the terms of a post-war settlement, not an oil-transit negotiation, and the Oman framework that was the week's diplomatic anchor cannot satisfy them. The 30Y at 5.21% has already fired its own pre-CPI tell (above 5.15%), which the morning brief identified as the bond market's signal for pre-pricing a hot Wednesday read. SPX at 7,751 is priced for two simultaneous resolutions — a soft CPI and a near-term Hormuz deal — that the current geopolitical structure does not support. If CPI prints above 3.2%/3.5%, three regime conditions carry into the NVDA earnings window (August 26) with no de-risk window before Warsh's Jackson Hole keynote (August 27). If SPX closes below 7,600 within two sessions of Wednesday's print, the record-proximity bid has broken.",
+  "bear_case": "The regime moved from 1-of-6 to 3-of-6 active conditions in one session. Iran's Supreme Leader advisor Zolghadr's five conditions — blockade lifted, forces withdrawn, sanctions removed, assets unfrozen, war damages compensated — are the terms of a post-war settlement, not an oil-transit negotiation, and the Oman framework that was the week's diplomatic anchor cannot satisfy them. The 30Y at 5.21% has already fired its own pre-CPI tell (above 5.15%), confirming the bond market is pre-pricing a hot Wednesday read rather than fading the oil move as transient. SPX at 7,751 is priced for two simultaneous resolutions — a soft CPI and a near-term Hormuz deal — that the current geopolitical structure does not support. Post-close, BTC has narrowed its Gate 2 buffer from ~$3,000 to ~$2,069 ($64,069 vs $62K gate), and the overnight CRWV AH print Tuesday is now the most proximate risk: a backlog miss or MSFT concentration spike arrives 14 hours before CPI, compressing the window between adverse prints. The sequential scenario: CRWV misses Tuesday → NVDA breaks $216, SPCX tests $128 → hot CPI Wednesday → September hike odds back above 50% → 30Y to 5.30%+ → SPX record-to-reversal sequence. If SPX closes below 7,600 within two sessions of Wednesday's print, the record-proximity bid has broken.",
   "body_mdx": "data/briefings/markets/2026-08-10-night.mdx"
 }
