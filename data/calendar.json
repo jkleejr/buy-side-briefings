@@ -1,28 +1,12 @@
 {
   "events": [
     {
-      "date": "2026-08-12",
-      "label": "July CPI (8:30 AM ET) — arrives with CRWV $104B backlog positive and 3-of-6 regime active",
-      "kind": "MACRO",
-      "time_et": "8:30 AM",
-      "tickers": ["TBT", "TLT", "XLE", "QQQ", "BTC", "NVDA", "IWM"],
-      "note": "Updated Aug 12 morning: CRWV confirmed +16% pre-market above $105 (all three criteria met: $104B backlog, Meta $21B + Anthropic + Jane Street $6B, Adj EPS beat); Brent $91.60 overnight (+$3.37) — sixth consecutive advance, now $6.60 above $85 trigger; NVDA $222.05 pre-market on $500B+ Apollo/BlackRock/Goldman Sachs/KKR AI infrastructure commitment. Kalshi <55% above 3.3% — soft skew set before overnight Brent move. 30Y ~5.22% (12 sessions above 5.00%). CPI consensus: 3.4% YoY / 2.5% core. Soft (<3.2%/2.9%): September below 25%, oil treated transient, CRWV/NVDA gains extend. Hot (≥3.5%/3.2%): supply-shock confirmed, 30Y to 5.30%+, pre-market AI bid partially unwound. Invalidation: SPX closes below 7,600 within two sessions of the print."
-    },
-    {
-      "date": "2026-08-12",
-      "label": "Cisco (CSCO) Q4 FY2026 earnings — after close",
-      "kind": "EARNINGS",
-      "time_et": "After close",
-      "tickers": ["CSCO"],
-      "note": "Consensus: EPS $1.17, revenue ~$16.83B (within own guidance of $16.7–$16.9B). Call 4:30 PM ET. CRWV's AI infrastructure demand confirmation sets favorable context for enterprise networking spend — AI networking order flow (Ethernet/Silicon One) is the watch item. A guide-raise reprices the broader infrastructure trade alongside NVDA."
-    },
-    {
       "date": "2026-08-13",
       "label": "July PPI (BLS, 8:30 AM ET) — inflation follow-on to CPI",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TBT", "TLT", "QQQ", "XLE"],
-      "note": "Follows July CPI (Aug 12). If CPI is ambiguous (3.2–3.5% headline), PPI is the secondary data point that firms or softens the September hike narrative. Brent at $91.60 pre-CPI means pipeline energy cost is elevated — PPI energy component is the watch item. Hot PPI after hot CPI entrenches Kashkari supply-shock framework and pushes September hike odds toward the 70% formal trigger."
+      "note": "Updated Aug 12 night: July CPI delivered 3.4% headline (in-line) / 2.5% core (below soft threshold); September hike odds fell from ~50% to ~38–40% (CME FedWatch: 62% hold). The 30Y held flat at ~5.25% — did not compress on the core surprise. PPI's energy component is the primary watch item: WTI held $82–83 through July, embedding a cost that the CPI core measure did not surface. Hot PPI energy line re-anchors September odds above 40% and blocks the 30Y compression path toward 5.10%. CSCO −4% AH creates a morning headwind for enterprise networking names. 30Y direction post-PPI: below 5.15% = first de-escalation signal entering Jackson Hole; above 5.28% = rate overhang re-entrenches entering the NVDA setup window."
     },
     {
       "date": "2026-08-20",
@@ -33,17 +17,17 @@
     },
     {
       "date": "2026-08-26",
-      "label": "NVDA Q2 FY27 earnings (est.) — SpaceX Vera Rubin exclusive raises gross-margin bar",
+      "label": "NVDA Q2 FY27 earnings (est.) — CSCO beat-and-sell AH template raises the bar at altitude",
       "kind": "EARNINGS",
       "tickers": ["NVDA", "AMD", "TSM", "AVGO", "SPCX"],
-      "note": "Updated Aug 10 night: NVDA pulled back from $223.96 (Friday close) on Monday as chips led the session lower. Three active regime conditions — 30Y 5.21%, WTI $80.42, Brent $87.69 — entering the final two-week setup window. At ~$217-220, Q2 FY27 call watch: (1) Gross margin above 76% — SpaceX $15.83B AI capex commitment raises the demand floor but AMD −8% AH from $518 and DDOG −17% on a beat-and-raise establish that altitude amplifies disappointment at current prices. (2) Q3 guide above consensus — SpaceX 10GW and hyperscaler pipeline confirm demand; guide at consensus rather than above replays the AMD template. Jackson Hole keynote Aug 27 begins one day after earnings — no de-risk window. If CPI is ambiguous and three conditions remain active through August 26, the macro headwind compounds the altitude risk. $216 is structural support."
+      "note": "Updated Aug 12 night: NVDA settled $223.40 after CPI day (+$225.10 intraday high; $216 structural support intact). CSCO Q4 FY2026 beat-and-raise ($17.3B revenue, EPS $1.22, FY27 guidance $72.2–73.4B) still drew −4% AH, establishing the 'good news already priced' ceiling for AI infrastructure names. CRWV's $104B backlog and CPI's 2.5% core are the best available macro and demand evidence heading into the print. Three active regime conditions: 30Y ~5.25% (13th session above 5.00%), WTI $83.09 (above $79), Brent above $85. Q2 FY27 call watch: (1) Gross margin above 76% — minimum bar; meeting it alone may not expand the multiple per the CSCO template. (2) Q3 guide above consensus — required at $223.40. Jackson Hole keynote Aug 27 begins one day after earnings — no de-risk window. Level that changes the setup read positively: NVDA AH holds $225+ AND 30Y closes below 5.15% in the two sessions before Aug 26."
     },
     {
       "date": "2026-08-27",
-      "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote after NFP + CPI",
+      "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote after NFP + CPI + PPI",
       "kind": "FOMC",
       "tickers": ["TLT", "TBT", "QQQ", "IWM", "SPY", "GLD"],
-      "note": "Updated Aug 7 night: September hike now at 36% (Kalshi) after NFP −23K collapsed odds from 54%. Warsh keynote arrives after both NFP (Aug 7) and CPI (Aug 13). At 36%, 'live meeting' language would be a shock; 'data-dependent, watching oil and labor' is the base path. NFP removed the wage-inflation channel; CPI determines whether supply-inflation remains. If CPI is above 3.5%, Kashkari's three-dissenter bloc is validated and Warsh's Jackson Hole language is the final gate. If CPI is below 3.0%, Warsh de-escalates and 30Y retreats toward 5.00%. NVDA earnings land Aug 26 — one day before the keynote, with no de-risk window."
+      "note": "Updated Aug 12 night: September hike odds at ~38–40% (CME FedWatch: 62% hold) after July CPI core 2.5% — furthest below 70% trigger since before the July 31 ECI spike. July PPI (Aug 13) is the intervening data point before Jackson Hole. At 38–40%, 'live meeting' language would be a shock; 'data-dependent, watching oil and labor' is the base path. NFP removed the wage-inflation channel; CPI core surprised soft; PPI determines whether supply-inflation persists. 30Y held flat at ~5.25% despite the core surprise — the bond market's prior reading persists. NVDA earnings land Aug 26 — one day before the keynote, with no de-risk window. If September odds hold above 35% through Aug 26, the macro overhang compounds altitude risk for the NVDA print."
     },
     {
       "date": "2026-12-09",
