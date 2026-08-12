@@ -1,0 +1,114 @@
+{
+  "routine": "markets",
+  "date": "2026-08-12",
+  "window": "morning",
+  "generated_at": "2026-08-12T11:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "⏸️",
+    "headline": "CoreWeave confirms AI demand as oil re-escalates ahead of July CPI",
+    "label": "Hold — CRWV Q2 clears every bar ($104B backlog, +107% YoY revenue); Brent $89 (above $85) and WTI $83 (above $79) re-breach, pushing regime count back to 3-of-6; July CPI at 8:30 AM ET (consensus 3.4%) is the session's clearing event; CSCO Q4 AH tonight",
+    "conviction": "medium",
+    "horizon": "1–2 sessions; CPI at 8:30 AM ET is the resolution catalyst",
+    "rationale_short": "CRWV's Q2 print cleared every metric the market was using as a proxy for AI infrastructure demand: $2.58B revenue (+107% YoY, beat $2.56B est.), $104B contracted backlog (above the $100B threshold established as the clean-read bar), EPS of -$1.14 (beat -$1.41 est. by $0.27/share), and Q3 guidance of $3.45B–$3.60B. The DDOG collapse template — beat-and-raise followed by -17% on AI customer usage-cut fears — did not apply. The backlog number and duration signal are structurally different from DDOG's customer-usage concern; the read-through to NVDA's August 26 print is constructive. The +11% AH surge then -3.4% pre-market fade is profit-taking on the AH spike, not a fundamental reversal. The macro frame containing the AI trade, however, has deteriorated overnight: Brent re-escalated to $89 (above the $85 formal trigger) and WTI to $83 (above $79), reversing Tuesday's brief dip below both levels. The oil move is driven by the same unresolved geopolitical dynamics — Iran's Zolghadr five-condition demand unchanged, Pakistan's claim of an imminent Hormuz deal explicitly disputed by Tehran, and Houthi strikes on Red Sea shipping alternatives continuing. Breach count is back to 3-of-6 (30Y yield, Brent, WTI) after briefly touching 1-of-6 on Tuesday's positioning-driven retreat. The 10Y yield crept to 4.73% overnight, and September hike odds remain at ~50% — 20 points below the formal 70% threshold but directionally exposed to the morning's CPI print. July CPI (8:30 AM ET, consensus 3.4% YoY / 2.5% core / +0.2% MoM) is the session's binary event and the only data point that can materially shift September hike odds in either direction before Jackson Hole (August 27). SPX futures are slightly green pre-print (+0.11% to ~7,776), VIX subdued at 15.28. Hold through the 8:30 AM print; the CPI result, not the CRWV read-through, determines today's directional trade.",
+    "supporting_data": [
+      {
+        "label": "CRWV Q2: Revenue $2.58B (+107% YoY, beat $2.56B est.), backlog $104B, EPS -$1.14 (beat -$1.41 est.); Q3 guide $3.45B–$3.60B; stock +11% AH",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-11/coreweave-revenue-surges-on-booming-demand-for-ai-computing"
+      },
+      {
+        "label": "CRWV Q2 MarketBeat confirmation: beat by $0.20/share on EPS; net loss $626M (widened from $290M on $640M interest expense)",
+        "url": "https://www.marketbeat.com/instant-alerts/coreweave-nasdaqcrwv-releases-quarterly-earnings-results-beats-estimates-by-020-eps-2026-08-11/"
+      },
+      {
+        "label": "Brent crude above $89/bbl; Iran's Zolghadr conditions unchanged; Pakistan's deal claim disputed by Tehran; Houthis active on Red Sea alternatives",
+        "url": "https://www.aljazeera.com/economy/2026/8/10/oil-prices-climb-as-iranian-demands-cloud-outlook-for-strait-of-hormuz"
+      },
+      {
+        "label": "July CPI consensus: 3.4% YoY (from 3.5%), 2.5% core (from 2.6%), +0.2% MoM — due 8:30 AM ET today; prediction markets <55% on >3.3% headline",
+        "url": "https://www.nbcnews.com/business/economy/cpi-inflation-july-2026-rcna591698"
+      },
+      {
+        "label": "CNBC prediction markets: tamer July CPI expected; Vanguard chief economist sees 3.3% headline; JPMorgan scenario matrix — sub-3.3% strongly bullish, >3.5% sell trigger",
+        "url": "https://www.cnbc.com/2026/08/10/crucial-cpi-report-will-show-tame-inflation-prediction-markets-show.html"
+      },
+      {
+        "label": "Cisco Q4 FY2026 AH tonight (call 4:30 PM ET); consensus EPS $1.17, revenue ~$16.83B — enterprise AI networking spend read-through",
+        "url": "https://investor.cisco.com/news/news-details/2026/Cisco-Schedules-Conference-Call-for-Q4-Fiscal-Year-2026-Financial-Results/default.aspx"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7728.0,  "change_pct": -0.32, "as_of": "2026-08-11T20:00:00Z" },
+    "nasdaq": { "level": 26445.0, "change_pct": -0.60, "as_of": "2026-08-11T20:00:00Z" },
+    "vix":    { "level": 15.28,   "change_pct": -1.16, "as_of": "2026-08-12T11:00:00Z" },
+    "ust10y": { "level": 4.73,    "change_bps":  3,    "as_of": "2026-08-12T11:00:00Z" },
+    "dxy":    { "level": 99.83,   "change_pct":  0.01, "as_of": "2026-08-12T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.27,    "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 50.0,    "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 89.0,    "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 83.0,    "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7728.0,  "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 64194,   "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$217–220 pre-market. CRWV's $104B contracted backlog (above the $100B threshold) is the most direct read-through available for Blackwell demand ahead of NVDA's August 26 Q2 FY27 print. The DDOG collapse template did not apply to CRWV — the backlog signal and customer duration are structurally different from a usage-cut concern. CRWV's Q3 guide of $3.45B–$3.60B confirms hyperscaler GPU absorption accelerating into 2H26. The remaining variable is whether CPI pushes September hike odds from 50% toward 70%, compressing growth multiples independently of the demand signal. $216 structural support is the watch level on a hot CPI reaction.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "~$91.19 pre-market (−3.4% from Tuesday close), after surging +11% AH on the Q2 beat. The pullback is AH-spike profit-taking, not a fundamental reversal: $104B contracted backlog (above the $100B bar), EPS beat of $0.27/share, and Q3 revenue guide of $3.45B–$3.60B all confirmed. MSFT concentration not flagged as a concern in initial reports. Let the regular-session open establish the true reaction before adding; the thesis is intact.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CSCO",
+      "note": "Reports Q4 FY2026 AH tonight (call 4:30 PM ET). Consensus: EPS $1.17, Revenue ~$16.83B (within own guidance of $16.7B–$16.9B). CRWV's confirmed AI infrastructure demand sets a favorable context for enterprise networking spend. Watch for AI networking (Ethernet/Silicon One) order flow and any commentary on accelerated data-center buildout timelines — a guide-raise on AI networking reprices the broader infrastructure trade.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$306; post ex-dividend (Aug 10, $0.27/share). Jefferies Underperform cut to $263.66 PT remains the active overhang; all-glass iPhone canceled on yield-rate failures. Sell-side consensus is building against the stock. CPI is not the primary driver; this is a stock-specific thesis deterioration story. No entry.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$483–484, floor test ongoing. Rate-sensitive; a hot CPI pushing September hike odds above 60% is the highest-stress scenario for names holding post-NFP relief at current levels. No two-closes above $490 on normal volume yet — the breakout confirmation is not in hand.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$64,194 (−0.13%, Crypto.com 11:01 UTC). Gate 2 ($62,000) buffer ~$2,194. The oil re-escalation driving 10Y yields higher is the dominant near-term risk — September hike repricing from 40% to 50% has been tracking BTC's consolidation range. A hot CPI pushing September odds above 65% is the stress scenario for Gate 2. Buffer is marginally wider than Tuesday (~$2,194 vs ~$2,052) on a modest intraday bid.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "July CPI — 8:30 AM ET binary event; the session resolves here",
+      "thesis": "With Brent at $89 (above $85 trigger) and the 10Y at 4.73%, a hot print (>3.5% YoY) compounds the oil-driven inflation narrative and pushes September hike odds from 50% toward the 70% formal threshold in a single session — simultaneously activating the rate-hike risk and the oil regime breach. An in-line or soft print (≤3.3%) at current oil prices is the relief trade: it decouples the supply-shock inflation premium from the Fed's policy response and removes September as a live hike meeting. JPMorgan's scenario matrix: sub-3.3% is strongly bullish; 3.3–3.5% broadly neutral; above 3.5% is the sell trigger. Morningstar frames July as a 'bounce back' after June's MoM decline (-0.4%) — any MoM overshoot on the +0.2% consensus carries disproportionate signal weight.",
+      "entry": "Pre-CPI: SPX futures ~7,776 (+0.11%). Do not add risk ahead of the 8:30 AM print. Monitor CME FedWatch September hike odds in real time post-release as the primary read of market interpretation.",
+      "invalidation": "A sub-3.3% print removes September as the primary narrative and shifts focus to whether oil holds below $85/$79 as the only remaining breach driver beyond 30Y.",
+      "horizon": "8:30 AM ET today; secondary catalyst: CSCO AH tonight."
+    },
+    {
+      "asset": "Oil regime breach — Brent $89 and WTI $83 re-activate 3-of-6",
+      "thesis": "Brent re-escalated from Tuesday's $83.48 (below $85) to $89 (above $85 trigger); WTI from $78 (below $79) to $83 (above $79). The oil retreat on Tuesday was positioning-driven ahead of CPI, not geopolitically motivated — Iran's Zolghadr conditions are unchanged, Pakistan's deal claim was explicitly disputed by Tehran, and Houthi strikes on Red Sea shipping alternatives continued overnight. The brief 1-of-6 breach window on Tuesday has closed; breach count is back to 3-of-6 (30Y yield, Brent, WTI). A soft CPI alone is insufficient to close the oil breach without a Hormuz diplomatic development.",
+      "entry": "Current: Brent ~$89, WTI ~$83. Both re-breached. Watch for any Iran diplomatic signal or Trump statement that reprices the Hormuz supply-disruption probability.",
+      "invalidation": "Iran accepting a US-brokered framework or explicit Hormuz reopening timeline pulls WTI toward $75–76 and Brent toward $80, resolving both oil breaches. Requires a formal diplomatic development, not a Pakistan-or-China third-party signal.",
+      "horizon": "Open-ended — Hormuz resolution is the only sustainable breach removal catalyst."
+    },
+    {
+      "asset": "NVDA into August 26 — CRWV backlog is the demand validation",
+      "thesis": "CRWV's $104B contracted backlog (>$100B bar) is the strongest pre-NVDA demand validation available. The DDOG template (-17% on AI customer usage cut) did not materialize: CRWV's backlog growth and Q3 guide signal hyperscaler GPU demand is accelerating into 2H26, not decelerating. NVDA bull case into August 26: gross margin above 76%, revenue guide above consensus. The rate risk (September hike odds) is the multiple headwind that is independent of demand — a hot CPI compresses the multiple even on a clean demand signal.",
+      "entry": "$216 structural support is the buy-the-dip level on a hot CPI selloff. Above $220, the setup trades on the August 26 print.",
+      "invalidation": "CPI above 3.5% + September hike odds above 65% → growth multiple compression regardless of the AI demand signal from CRWV.",
+      "horizon": "Through NVDA's August 26 Q2 FY27 print."
+    }
+  ],
+  "bear_case": "The oil re-escalation from Tuesday's brief retreat is the session's most important regime signal: Brent at $89 and WTI at $83 mean the 1-of-6 breach window that appeared on Tuesday has closed and we are back to 3-of-6 (30Y, Brent, WTI). The diplomatic backdrop that temporarily drove prices lower is unchanged in every material respect — Iran's Zolghadr conditions stand, Pakistan's deal optimism was disputed by Tehran, and Houthi strikes on Red Sea shipping alternatives continued. The 10Y at 4.73% and September hike odds at ~50% are the rate market's response to an oil supply shock that is not self-resolving. The 20-point gap to the 70% formal hike-probability threshold can close in a single session on a hot CPI print (>3.5%). Morningstar's framing of July as a 'bounce back' (MoM +0.2% vs June's -0.4%) means any MoM overshoot is an interpretive inflection for the trend narrative, not just a one-month blip. If CPI prints hot and NVDA trades below $216, the AI multiple has corrected for the rate environment, not the demand environment — that is the bear trap. CRWV's confirmed $104B backlog is the bull counter, but it is a read-through, not a direct NVDA catalyst; the translation to NVDA's August 26 gross margin and guide is the gap between the two.",
+  "body_mdx": "data/briefings/markets/2026-08-12-morning.mdx"
+}
