@@ -1,0 +1,195 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-12",
+  "generated_at": "2026-08-12T21:15:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "STEP-ASIDE CONTINUES — ETF FLOWS TURNED POSITIVE BUT PRICE STILL $1,451 BELOW THRESHOLD: REFERENCE CLOSE $63,548.72 (-$148.48 / -0.23% FROM AUG 11 $63,697.20, API-VERIFIED CRYPTO.COM 1H). SESSION MAP: OPENED $63,700.53 (00:00 UTC), PRE-CPI RALLY TO SESSION HIGH $64,431.41 (12:00 UTC, PEAKING AS CPI PRINTED AT 8:30 ET = 12:30 UTC), TWO-CANDLE POST-CPI SELL WAVE (13:00 UTC: 492.34 BTC / -$297 RANGE; 14:00 UTC: 632.17 BTC / -$471 RANGE — 1,124.51 BTC / $71.5M IN 2 HOURS), DRIFT LOWER TO SESSION LOW $63,243.41 (19:00 UTC — IMPORTANTLY HIGHER THAN AUG 11 SESSION LOW $63,174.26, BREAKING THE LOWER-LOWS SEQUENCE), RECOVERY TO REFERENCE CLOSE $63,548.72 (20:00 UTC: O $63,360.58, H $63,548.72, L $63,360.58, C $63,548.72, V 150.45 BTC). TOTAL SESSION VOLUME: ~3,057 BTC (~$194.3M, 11% ABOVE AUG 11'S 2,753 BTC). CPI VERDICT: IN-LINE (HEADLINE +0.1% MOM / +3.4% YOY; CORE +0.2% MOM / +2.5% YOY) — SEPTEMBER FOMC PAUSE CONFIRMED BUT BTC COULD NOT SUSTAIN PRE-CPI GAINS; 'CPI BUYS FED TIME, NOT CONVICTION' (THE BLOCK). KEY DEVELOPMENT: AUG 11 BITCOIN ETF FLOWS REPORTED THIS MORNING — NET +$4.89M (IBIT +$50.19M; FIRST POSITIVE FLOW DAY SINCE AUG 10 OUTFLOW OF $144.67M). RE-ENTRY STATUS: CONDITION 2 (POSITIVE ETF FLOWS) NOW MET; CONDITION 1 (REFERENCE CLOSE > $65,000) NOT MET — STEP-ASIDE CONTINUES, CONVICTION REDUCED TO MEDIUM.",
+
+  "long_pnl": "Step-aside — no active long position. Longs initiated at the Aug 9 Confirmation Close ($65,139) or Aug 8 clearance ($65,078) remain $1,530-$1,591 underwater at today's reference close ($63,548.72). The framework step-aside that triggered on Aug 10-11 has protected capital from this extended drawdown. The one-condition improvement (ETF flows positive) does not re-enter the position — both conditions must be simultaneously met: reference close >$65,000 AND positive flows. Longs from the cup-handle low (~$62,300) retain a +$1,248 / +2.0% cushion.",
+  "short_pnl": "Shorts from the $65,000 breakdown zone (Aug 10, $64,500-$65,200 entry) are up +$1,452-$1,652 at today's reference close, and held through the session low at $63,243. The post-CPI 2-hour sell wave (1,124 BTC, $71.5M) added profitably to these positions. However: (1) the lower-lows sequence STOPPED today (Aug 12 low $63,243 > Aug 11 low $63,174.26); (2) ETF flows turned positive; (3) CPI tail risk is removed. Shorts should tighten stops and recognize the step-aside conditions are improving — a catalyst that drives a reference close above $65,000 with positive flows would immediately re-enter the framework from the long side.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "medium",
+    "horizon": "Step-aside until BOTH re-entry conditions are met simultaneously: (1) reference close above $65,000 AND (2) positive ETF flows on the same day or the prior day; as of today: Condition 2 is met (Aug 11 ETF flows +$4.89M positive); Condition 1 is NOT met (reference close $63,548.72 is $1,451.28 below the $65,000 threshold); the framework requires both; step-aside continues; next monitoring window: Aug 13 post-CPI clean tape and ETF flow data for Aug 12",
+    "rationale": "STEP-ASIDE CONTINUES WITH REDUCED CONVICTION: The dual-condition step-aside triggered on Aug 10-11 (both conditions confirmed simultaneously) remains active, but one of the two triggers has now resolved. Aug 11 ETF flows came in at +$4.89M (IBIT +$50.19M), the first positive flow day after the $144.67M Aug 10 outflow — Condition 2 of the re-entry is now satisfied. However, the reference close of $63,548.72 is $1,451.28 below the $65,000 threshold, so Condition 1 remains unmet. Conviction is downgraded from HIGH (both step-aside conditions were simultaneously confirmed) to MEDIUM for four reasons: (a) ETF flows returned to positive — one of the two re-entry conditions is now met; (b) the session low of $63,243.41 did NOT make a new low below Aug 11's $63,174.26 — the lower-lows sequence that characterized the step-aside period has stopped; (c) CPI in-line (+0.2% core) removes the hot-inflation tail risk that was the most aggressive bear catalyst; (d) despite the positive developments, BTC actually fell -0.23% on a day when SPX was +0.3% and AI stocks surged — the relative underperformance vs. equities is a bearish signal confirming the $65,000 threshold is the right re-entry gate. MEDIUM conviction step-aside: protect capital, do not re-enter, but prepare the $65,000 re-entry trigger."
+  },
+
+  "so_what": {
+    "line": "Step-aside Day 3: reference close $63,548.72 (-0.23%), one re-entry condition now met (Aug 11 ETF flows +$4.89M positive) but price still $1,451 below the $65,000 threshold; lower-lows sequence stopped (today's session low $63,243 > yesterday's $63,174); CPI in-line removed hot-inflation tail risk; step-aside conviction downgraded to MEDIUM.",
+    "bull": "ETF flows turned positive after a single negative day ($4.89M vs. prior -$144.67M) — the structural demand channel is intact; lower-lows sequence stopped (first session in 4 that didn't make a new low); CPI in-line removes the biggest downside macro catalyst; session low $63,243 found buyers quickly and recovered $305 to reference close; the IBIT in-kind threshold cut (96%) continues to structurally expand the ETF demand base.",
+    "bear": "BTC fell -0.23% on a day when SPX rallied +0.3% and AI stocks surged — Bitcoin is underperforming equities post-CPI as capital rotates toward the AI earnings trade; post-CPI 2-hour sell wave (1,124 BTC / $71.5M in 13:00-14:00 UTC) matched the character and scale of the prior two days' institutional selling; reference close is $1,451 below the $65,000 re-entry threshold; the in-line CPI 'buys Fed time, not conviction' for risk assets; without a positive macro catalyst (a soft surprise was needed, not an in-line print) to break $65,000, the step-aside is likely to persist for several more sessions."
+  },
+
+  "snapshot": {
+    "price": 63548.72,
+    "change_pct": -0.23,
+    "change_abs": -148.48,
+    "prev_close": 63697.20,
+    "day_high": 64431.41,
+    "day_low": 63243.41,
+    "volume": "~3,057 BTC (~$194.3M) through 20:00 UTC reference close; post-CPI sell wave (13:00-14:00 UTC): 1,124.51 BTC ($71.5M) in 2 hours; reference candle (20:00 UTC): 150.45 BTC ($9.56M); total session volume 11% above Aug 11 (~2,753 BTC)",
+    "market_cap": "~$1.260T",
+    "extra": [
+      {
+        "label": "REFERENCE CANDLE (20:00 UTC, Crypto.com 1h, API-verified): O $63,360.58 / H $63,548.72 / L $63,360.58 / C $63,548.72 / V 150.45 BTC — candle closed at its high, micro-structure bullish; step-aside Day 3",
+        "value": "The Aug 12 reference candle (Crypto.com 1h, 20:00 UTC) closed at its high ($63,548.72 = close = high), which is a constructive micro-structure signal — buyers dominated the reference window. The reference close of $63,548.72 is: $1,451.28 below the $65,000 re-entry threshold (Condition 1 unmet); $305.31 above today's session low of $63,243.41 (recovery from the low); $148.48 below the Aug 11 reference close ($63,697.20, -0.23%). The candle's low ($63,360.58) matching the open indicates the reference period had no intraday selloff — entirely a recovery candle.",
+        "tone": "neutral"
+      },
+      {
+        "label": "SESSION MAP: Open $63,700 (00:00 UTC) → Pre-CPI high $64,431.41 (12:00 UTC) → 2-hour post-CPI sell wave (13:00-14:00 UTC, 1,124 BTC) → Session low $63,243.41 (19:00 UTC) → Recovery to reference $63,548.72",
+        "value": "Key hourly candles (Crypto.com 1h, API-verified): 00:00 UTC — O $63,548.47, C $63,700.53, V 62.64 BTC (session opens above prior reference); 12:00 UTC — ★ SESSION HIGH $64,431.41: O $64,187.60, H $64,431.41, L $63,918.42, C $64,068.16, V 314.33 BTC (pre-CPI high; CPI printed at 12:30 UTC / 8:30 ET mid-candle); 13:00 UTC — ★ PRIMARY SELL CANDLE: O $64,078.14, H $64,114.51, L $63,775.37, C $63,781.66, V 492.34 BTC (-$297 range); 14:00 UTC — ★ HEAVIEST CANDLE: O $63,777.13, H $63,887.41, L $63,295.80, C $63,311.95, V 632.17 BTC (largest volume candle; -$471 range; breaks below $63,500); 15:00-18:00 UTC — stabilization and mild drift (148-226 BTC per candle, $63,311-$63,430 range); 19:00 UTC — ★ SESSION LOW: O $63,321.13, H $63,403.88, L $63,243.41, C $63,364.76, V 173.74 BTC (buyers step in; low $63,243.41 does NOT break below Aug 11's $63,174.26 — lower-lows sequence STOPS); 20:00 UTC — ★★ REFERENCE: C $63,548.72, V 150.45 BTC (closes at the high of the candle).",
+        "tone": "down"
+      },
+      {
+        "label": "KEY DEVELOPMENT: Aug 11 ETF flows = +$4.89M (POSITIVE) — IBIT +$50.19M; first positive flow day after Aug 10's $144.67M outflow; re-entry Condition 2 NOW MET",
+        "value": "US spot Bitcoin ETFs recorded net inflows of $4.89M on Tuesday August 11 — the first positive flow day since the $144.67M Aug 10 outflow that triggered Condition 2 of the step-aside. BlackRock's IBIT led with $50.19M in inflows; other issuers recorded mild outflows that reduced the net total to $4.89M. This reversal is structurally significant: the $144.67M Aug 10 outflow was 17% of the prior week's $854M inflow streak; the immediate return to positive flows on Aug 11 confirms the structural demand channel is intact. The re-entry framework now requires only ONE more condition: a reference close above $65,000 on the same day or day after positive ETF flows. From today's $63,548.72, that requires a +2.29% move in a single session — possible but not imminent without a strong directional catalyst.",
+        "tone": "up"
+      },
+      {
+        "label": "LOWER-LOWS SEQUENCE STOPPED: Aug 12 session low $63,243.41 is HIGHER than Aug 11 low $63,174.26 — first session in four days that didn't make a new structural low",
+        "value": "The declining lows sequence that defined the step-aside period: Aug 9 low ~$64,727, Aug 10 low $63,810.74, Aug 11 low $63,174.26, Aug 12 low $63,243.41 (HIGHER = sequence stopped). This is the first session since the Aug 9 Confirmation Close where the session low did not break the prior session's low. Combined with the return to positive ETF flows, this is the clearest indicator that the step-aside period may be approaching resolution. The next test: if Aug 13 also holds above $63,243, the double-bottom at $63,174-$63,243 would become a meaningful support cluster for a recovery attempt toward $65,000.",
+        "tone": "up"
+      },
+      {
+        "label": "CPI IN-LINE BUT BTC UNDERPERFORMED EQUITIES — 'buys Fed time, not conviction'; AI stocks surge took capital from crypto",
+        "value": "The July CPI (0.1% MoM, 3.4% YoY; core 0.2% MoM, 2.5% YoY) matched consensus exactly. The immediate post-CPI response: BTC spiked to $64,431 (the session high) then sold off on 1,124 BTC in 2 hours while SPX rallied +0.3% and AI stocks surged (CRWV +18%, SMCI +9%). The Block's headline captures the dynamic: 'Bitcoin dips under $64,000 as in-line CPI buys the Fed time, not conviction.' An in-line print confirms the disinflationary trend but doesn't provide the upside surprise (e.g. core below 0.1%) needed to trigger risk-on buying in BTC specifically. Capital rotated toward AI equities (earnings-driven conviction) rather than Bitcoin (macro-driven speculation). This relative underperformance vs. SPX on a positive macro day is the strongest near-term bearish signal — the market is saying BTC needs its own catalyst ($65,000 re-entry with positive flows) rather than a macro tailwind.",
+        "tone": "down"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "IV is elevated but compressing as the CPI binary resolved without surprises. The August max-pain zone ($62,000-$63,000) remains directionally relevant — BTC is now only $243-$1,243 above it. However, the lower-lows stopping and ETF flows turning positive are reducing the gamma-sellers' confidence in the downside scenario. The $65,000 gamma wall (former dealer support, now resistance) needs to be re-earned for the dynamics to flip back to supportive. The CPI vol crush has reduced front-month IV; longer-dated options (September FOMC) will maintain elevated vol given ongoing macro uncertainty.",
+    "short_interest": "Perpetual funding rates: turning from negative toward neutral as the lower-lows stopped and one re-entry condition resolved; systematic shorts who entered at $64,500-$65,200 are significantly in-the-money (+$1,452-$1,652) and likely taking partial profits near $63,243 session low; the medium conviction step-aside does not suggest a fresh short entry here — the framework's next direction depends on the ETF flows and price relative to $65,000",
+    "max_pain": "$62,000–$63,000 (August monthly Deribit estimate) — BTC is now $1,243-$1,549 above the max-pain zone; the gamma pull toward max-pain is real but weakening as positive catalysts (ETF flows, lower-lows stop) begin to offset",
+    "notable_flow": "Three defining flow events on Aug 12: (1) PRE-CPI BID (00:00-12:00 UTC): BTC rallied $731 from $63,700 to $64,431 on below-average volume (~1,000 BTC in 12 hours) — speculative pre-CPI long-positioning; (2) POST-CPI 2-HOUR SELL WAVE (13:00-14:00 UTC, 1,124 BTC / $71.5M): the same institutional program that drove the Aug 10 and Aug 11 sell waves appeared again; same time window, same size; the sell wave was triggered by the in-line CPI confirming that no upside surprise was coming for BTC, combined with AI stocks surging as alternative destinations for risk capital; (3) METAPLANET WALLET MOVEMENT: Japan's Metaplanet (a major Bitcoin corporate accumulator) moved 3,881 BTC between wallets per CoinDesk — portfolio management action (cold-to-hot or internal transfer), not necessarily selling; the timing suggests consolidation of custody rather than market impact."
+  },
+
+  "what_traders_are_doing": "FIVE STRATEGIC POSTURES DAY 3 OF STEP-ASIDE: (1) STEP-ASIDE COMPLIERS — in cash or equivalents; watching for the dual re-entry condition: reference close >$65,000 AND positive ETF flows; today's +$4.89M ETF flow satisfies Condition 2; now watching for the price to recover above $65,000; the framework is one condition away from re-entry; (2) SYSTEMATIC SHORTS (Strategy-paradigm and post-Confirmation-Close) — in-the-money shorts from $64,500-$65,200 are tightening stops and taking partial profits near the session low ($63,243); the lower-lows stopping and ETF flows turning positive are signals to reduce short size; maintaining the bear thesis requires a reference close below $63,174 (Aug 11 low) — which did not happen today; (3) CPI DIP BUYERS — accounts who bought the $63,243 session low (19:00 UTC) and recovered $305 to the $63,548 reference close; these positions are 24-hour momentum plays targeting a recovery toward $64,000-$65,000 on the post-CPI clean tape (Aug 13); they hold tight stops at $63,174 (the prior session low); (4) AI EQUITY ROTATORS — institutional accounts who transferred capital from BTC to AI equities (CRWV, SMCI) on the earnings cycle; these accounts are neutral on BTC until the re-entry conditions are met; (5) IBIT STRUCTURAL LONGS — long-horizon accumulation accounts who see the positive ETF flow resumption and the lower-lows stop as confirmation that the step-aside is nearing resolution; they are rebuilding small positions in BTC near $63,000-$64,000 with a target of the $70,000 cup-and-handle measured move; these accounts accept framework risk in exchange for early positioning.",
+
+  "news": [
+    {
+      "label": "Bitcoin ETFs Return to Positive Flows on Aug 11: Net +$4.89M, IBIT +$50.19M — First Positive Flow Day After Aug 10 $144.67M Outflow; Dual Step-Aside Condition 2 Now Resolved",
+      "url": "https://www.kucoin.com/news/flash/spot-bitcoin-etfs-record-4-89m-inflows-only-blackrock-s-ibit-attracts-capital-on-august-11",
+      "source": "KuCoin",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Crypto ETF Flows Stabilize on August 11 as Bitcoin Returns to $4.9M Inflow — FinanceFeeds: sharp turnaround from Monday's $144.67M outflow; IBIT dominates; structural demand channel intact",
+      "url": "https://financefeeds.com/crypto-etf-flows-stabilize-on-august-11-as-bitcoin-returns-to-4-9-million-inflow/",
+      "source": "FinanceFeeds",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin Dips Under $64,000 as In-Line CPI Buys the Fed Time, Not Conviction — The Block: headline capture of BTC's underperformance vs. equities post-CPI; capital rotated to AI earnings plays",
+      "url": "https://www.theblock.co/news/markets/2026-08-12-bitcoin-dips-under-64000-in-line-cpi-buys-fed-time-not-conviction-analysts-411594",
+      "source": "The Block",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin, Ether, and XRP Prices Hold Steady After In-Line CPI Print — CryptoTimes: contained reaction with limited directional follow-through; options markets had priced only ~1.3% expected move",
+      "url": "https://www.cryptotimes.io/2026/08/12/bitcoin-ether-and-xrp-prices-hold-steady-after-in-line-cpi-print/",
+      "source": "CryptoTimes",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Live Updates: Bitcoin Slips Toward $63,000 After CPI, AI Stocks Surge on Q2 Beats — CoinDesk: Metaplanet moves 3,881 BTC between wallets; BTC underperforms as capital flows to AI equities",
+      "url": "https://www.coindesk.com/tech/2026/08/12/live-updates-bitcoin-at-usd63-600-as-japan-s-metaplanet-moves-3-881-btc-between-wallets",
+      "source": "CoinDesk",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin Price Forecast: BTC-USD at $64,279 as $63,900 Support and $65,600 Liquidation Cluster Frame the CPI Reaction — TradingNews: pre-CPI technical framing; $63,900 support failed post-print",
+      "url": "https://www.tradingnews.com/news/bitcoin-btc-usd-defends-63k-usd-with-144m-in-etf-outflows",
+      "source": "TradingNews",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The step-aside is transitioning from 'both conditions confirmed' (HIGH conviction) to 'one condition resolved, one remaining' (MEDIUM conviction). The framework is now one session away from a re-entry signal: if Aug 13 produces a reference close above $65,000 with the positive ETF flow data already in hand, both conditions would be simultaneously met and the framework would signal re-entry. However, from today's $63,548.72, a +2.29% move in a single session requires a strong catalyst. Post-CPI, the macro tape is clean (no major events until Aug 26 NVDA earnings), which means a catalyst for BTC would need to be crypto-specific: a large institutional accumulation announcement, another IBIT threshold reduction, or a positive Strategy disclosure. Without that, BTC may consolidate in the $63,000-$64,500 range while the step-aside window remains open.",
+    "long_term": "The halving cycle tailwind, ETF institutional demand channel, and $70,000 cup-and-handle target remain intact. The structural positive from the IBIT in-kind threshold cut (96% reduction, $25M → $1M) expands the ETF addressable market permanently. Today's $4.89M ETF inflow confirms the Aug 10 outflow was a single-session reversal in a structurally positive trend. The $65,000 re-entry gate is the line between step-aside and active long: the framework will signal re-entry as soon as price and flows align above that threshold simultaneously. The September FOMC (rate hold or cut) is a structurally bullish medium-term catalyst on a 3-6 month horizon."
+  },
+
+  "bull_case": [
+    "ETF flows turned positive on Aug 11 (+$4.89M) after only one negative day — the $144.67M Aug 10 outflow was a single-session blip in a structurally positive demand trend ($854M inflow streak in the prior week); the IBIT in-kind threshold cut (96%) permanently expands the institutional demand base",
+    "Lower-lows sequence STOPPED: Aug 12 session low $63,243.41 is HIGHER than Aug 11's $63,174.26 — the first session in four that didn't make a new structural low; a double-bottom at $63,174-$63,243 would be a meaningful base for a recovery attempt toward $65,000",
+    "CPI in-line (core +0.2% MoM) removes the hot-inflation tail risk — a +0.4%+ MoM print would have accelerated selling toward $62,300; with that risk eliminated, the next macro event for BTC is the September FOMC (structurally bullish on a rate-hold or cut scenario)",
+    "The framework is ONE condition from re-entry: positive ETF flows are now confirmed for the prior day (Aug 11); only a reference close above $65,000 is needed to simultaneously satisfy both re-entry conditions; accounts positioned near $63,000 have a clearly defined risk/reward"
+  ],
+
+  "bear_case": [
+    "BTC fell -0.23% and underperformed SPX (+0.3%) on a positive macro day — when a stock or asset can't rally on good news, it signals underlying supply/demand imbalance; capital is rotating from BTC to AI equities (CRWV +18%, SMCI +9%) as the earnings cycle provides a higher-conviction destination for risk capital",
+    "The post-CPI 2-hour sell wave (13:00-14:00 UTC, 1,124 BTC / $71.5M) matched the character of the Aug 10 and Aug 11 selling — same time window, same institutional program, same scale; this is the third consecutive session with a defined institutional selling program in the 13:00-15:00 UTC window regardless of the macro backdrop",
+    "Reference close ($63,548.72) is $1,451 below the $65,000 re-entry threshold; the pre-CPI high of $64,431 was $569 below $65,000 — even at the session's maximum optimism, BTC couldn't reach within $500 of the re-entry gate; the $65,000 recovery requires more than just a positive CPI print",
+    "August seasonal average -7.5% for BTC historically; the max-pain zone ($62,000-$63,000) remains $1,243-$1,549 below today's close; if the lower-lows resume with a break below $63,174, the next support is $62,300 (cup-handle structural level) — still $1,248 below current price"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $63,174–$63,243: double-bottom zone from Aug 11 (session low $63,174.26) and Aug 12 (session low $63,243.41); two consecutive sessions where buyers stepped in near this zone and recovered the reference price; the lower-lows sequence stopped here; a close below $63,174 would re-initiate the lower-lows trend and target $62,300",
+      "level": "$63,174–$63,243",
+      "kind": "support"
+    },
+    {
+      "label": "$62,300: cup-and-handle handle low — the structural support that defined the entire setup for the $65,000 breakout; a reference close below $62,300 would invalidate the cup-and-handle measured move and shift the target from $70,000 to $58,000-$60,000; the absolute bull/bear demarcation for the multi-month framework; $62,000-$63,000 also corresponds to the August max-pain zone",
+      "level": "$62,300",
+      "kind": "support"
+    },
+    {
+      "label": "$60,000: round-number psychological floor and major multi-year support; a break below here would signal a trend reversal of the halving cycle thesis and trigger systematic selling from long-only ETF holders",
+      "level": "$60,000",
+      "kind": "support"
+    },
+    {
+      "label": "$63,548.72: today's reference close — near-term resistance ceiling for any recovery; below the $63,697 Aug 11 reference and the $63,810 Aug 10 session low; the $63,243-$63,697 range is the 'broken support now resistance' zone",
+      "level": "$63,548.72",
+      "kind": "pivot"
+    },
+    {
+      "label": "$64,431.41: today's session high (12:00 UTC, pre-CPI peak) — the maximum recovery attempt; bulls could not reach $65,000 even at the best point today ($569 short); this level is the near-term resistance ceiling between today's reference and the $65,000 threshold; a recovery through $64,431 with volume would be a meaningful intermediate step toward the re-entry conditions",
+      "level": "$64,431",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest resistance — $65,000: framework re-entry threshold AND former gamma wall; three consecutive reference closes below (Aug 10: $64,172, Aug 11: $63,697, Aug 12: $63,548); one of two re-entry conditions (positive ETF flows) is now met, making $65,000 the single remaining gate; a reference close above $65,000 with same-day or prior-day positive ETF flows triggers the re-entry; heavy call OI at $65,000 creates mechanical supply; the pre-CPI session high of $64,431 was $569 short — re-earning $65,000 requires a sustained push above this intermediate resistance",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$67,523: short-term holder (STH) realized price — structural overhead supply zone representing cost-basis holders underwater; this tertiary resistance becomes relevant only after $65,000 is reclaimed and positive momentum is re-established",
+      "level": "$67,523",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-12",
+      "label": "Step-aside Day 3: reference close $63,548.72 (-0.23%); CPI in-line (0.1% MoM / 3.4% YoY; core 0.2% / 2.5%); Aug 11 ETF flows +$4.89M (Condition 2 MET); session low $63,243 higher than Aug 11's $63,174 (lower-lows stopped); Metaplanet moves 3,881 BTC between wallets; post-CPI 2-hour sell wave 1,124 BTC; step-aside conviction MEDIUM.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-13",
+      "label": "First post-CPI clean tape — with the CPI binary resolved and ETF Condition 2 met, Aug 13's reference close will determine whether a $65,000 recovery attempt is building; ETF flow data for Aug 12 reported Aug 13 morning; continuation of positive flows + BTC reference above $64,500 would be the setup for re-entry attempt",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-26",
+      "label": "NVDA Q2 FY2027 earnings — strong HBM demand commentary and AI infrastructure validation would support crypto risk appetite; the $500B AI financing ecosystem (including Bitcoin-adjacent digital infrastructure demand) creates indirect BTC positive on a strong earnings print",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "September FOMC — rate hold (base case post-CPI) or cut; both structurally bullish for BTC on a 3-6 month horizon; the $70,000 cup-and-handle measured move target aligns with a post-FOMC easing environment",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Step-Aside Day 3 — The CPI Verdict and the Framework Reset\n\nAugust 12, 2026 is the session that resolved the CPI binary without providing BTC with a directional catalyst. The July CPI landed in-line (0.1% MoM, 3.4% YoY; core 0.2% MoM, 2.5% YoY), matching consensus exactly. The market reaction for BTC: a pre-CPI rally to $64,431 that was fully given back to a session low of $63,243, then a partial recovery to the $63,548.72 reference close. Net: -0.23% on the day while SPX was +0.3% and AI stocks surged 10-18%.\n\n### Full Hourly Session Map (Crypto.com 1h, API-Verified)\n\n| UTC 1h | Open | High | Low | Close | Vol (BTC) | Note |\n|--------|------|------|-----|-------|-----------|------|\n| 00:00 | $63,548 | $63,704 | $63,482 | $63,700 | 62.64 | Session opens above prior reference |\n| 01:00 | $63,700 | $63,810 | $63,641 | $63,772 | 60.59 | Mild drift higher |\n| 02:00 | $63,772 | $63,810 | $63,641 | $63,699 | 71.67 | |\n| 03:00 | $63,699 | $63,858 | $63,672 | $63,783 | 39.65 | |\n| 04:00 | $63,783 | $63,796 | $63,654 | $63,725 | 44.02 | |\n| 05:00 | $63,725 | $63,844 | $63,685 | $63,791 | 28.32 | |\n| 06:00 | $63,791 | $63,791 | $63,549 | $63,667 | 52.74 | |\n| 07:00 | $63,667 | $63,789 | $63,549 | $63,783 | 29.55 | |\n| 08:00 | $63,783 | $63,813 | $63,715 | $63,735 | 37.12 | |\n| 09:00 | $63,735 | $64,058 | $63,703 | $64,056 | 84.01 | Pre-CPI build begins |\n| 10:00 | $64,056 | $64,168 | $64,011 | $64,086 | 82.09 | |\n| 11:00 | $64,086 | $64,200 | $64,062 | $64,182 | 18.47 | |\n| **12:00** | $64,187 | **$64,431** | $63,918 | $64,068 | 314.33 | ★ SESSION HIGH $64,431.41 (CPI printed 12:30 UTC) |\n| **13:00** | $64,078 | $64,114 | $63,775 | $63,781 | **492.34** | ★ PRIMARY SELL CANDLE |\n| **14:00** | $63,777 | $63,887 | $63,295 | $63,311 | **632.17** | ★ HEAVIEST CANDLE |\n| 15:00 | $63,312 | $63,511 | $63,257 | $63,382 | 148.69 | Stabilizing |\n| 16:00 | $63,382 | $63,519 | $63,301 | $63,430 | 226.02 | |\n| 17:00 | $63,430 | $63,491 | $63,345 | $63,406 | 166.70 | |\n| 18:00 | $63,404 | $63,465 | $63,310 | $63,321 | 142.18 | |\n| **19:00** | $63,321 | $63,403 | **$63,243** | $63,364 | 173.74 | ★ SESSION LOW $63,243.41 — higher than Aug 11 |\n| **20:00** | **$63,360** | **$63,548** | **$63,360** | **$63,548** | **150.45** | ★★ REFERENCE CLOSE — closed at high |\n| 21:00 | $63,548 | $63,607 | $63,370 | $63,504 | 107.26 | Post-reference drift |\n\n### The Session in Three Acts\n\n**Act 1 — Asian session and pre-CPI rally (00:00–12:00 UTC):** BTC opened at $63,700 and spent 12 hours drifting higher as pre-CPI positioning accumulated. Volume was light (18-84 BTC per hour) — speculative, not institutional. The session high of $64,431 was reached at 12:00 UTC, peaking as the CPI data was released at 8:30 ET (12:30 UTC). Notably, the pre-CPI session high of $64,431 was $569 below $65,000 — even at maximum optimism, the market didn't price a clean $65,000 recovery.\n\n**Act 2 — Post-CPI sell wave (13:00–14:00 UTC):** Two consecutive sell candles:\n- 13:00 UTC: 492.34 BTC, from $64,078 open to $63,781 close (-$297). The 'CPI was in-line, not a positive surprise for BTC' realization.\n- 14:00 UTC: 632.17 BTC (heaviest of the session), from $63,777 to $63,311 (-$466). Capital rotation toward AI equities (CRWV +18%, SMCI +9%) as AI earnings provided a higher-conviction destination.\n\nTotal post-CPI sell wave: 1,124.51 BTC ($71.5M) in 2 hours. This is the THIRD consecutive session with an institutional sell program in the 13:00-15:00 UTC window (Aug 10: ~396 BTC; Aug 11: 1,105 BTC; Aug 12: 1,124 BTC). The program is consistent and repeating, suggesting the same institutional accounts are systematically managing BTC exposure.\n\n**Act 3 — Session low and recovery (15:00–20:00 UTC):** BTC stabilized in the $63,300-$63,430 range before the session low of $63,243.41 at 19:00 UTC. Critically, this low is **HIGHER** than Aug 11's $63,174.26 — the lower-lows sequence that defined the step-aside period has stopped for one session. Buyers defended $63,243 and the reference candle (20:00 UTC) closed at its high ($63,548.72), a bullish micro-structure signal.\n\n### Volume — Three Consecutive Institutional Sell Windows\n\n| Session | Sell Window | Volume | BTC Amount | Time |\n|---------|------------|--------|------------|------|\n| Aug 10 | 13:00-15:00 UTC | Peak candles | ~396 BTC | 2 heavy candles |\n| Aug 11 | 13:00-15:00 UTC | 1,105 BTC | $70.2M | 3 consecutive candles |\n| Aug 12 | 13:00-14:00 UTC | 1,124 BTC | $71.5M | 2 consecutive candles |\n\nThe institutional selling program has now appeared three sessions running in the same time window. The volumes on Aug 11 and Aug 12 are nearly identical ($70.2M vs $71.5M) — suggesting a programmatic position reduction. The fact that this program appeared on a 'positive' CPI day confirms it is not macro-reactive but rather a systematic portfolio rebalancing or risk reduction from a specific institution.\n\n### ★ Strongest Support — $63,174–$63,243 (Double-Bottom Zone)\n\nEvidence:\n1. Aug 11 session low $63,174.26: buyers absorbed selling at this level and recovered $523 to the $63,697 reference close\n2. Aug 12 session low $63,243.41: buyers again defended near this zone, recovering $305 to the $63,548 reference close\n3. Two consecutive sessions with buyers stepping in near $63,174-$63,243 creates a meaningful base; the pattern of 'buy the $63,200 zone' is becoming institutionally recognized\n4. A reference close below $63,174 would invalidate the double-bottom and signal extension toward $62,300\n\n### ★ Strongest Resistance — $65,000 (Framework Re-Entry Threshold; Former Gamma Wall)\n\nEvidence:\n1. Three consecutive reference closes below $65,000 (Aug 10: $64,172, Aug 11: $63,697, Aug 12: $63,548) — the threshold was earned briefly (Aug 8-9) and then lost\n2. Today's session high of $64,431 was $569 short of $65,000 — the market's maximum pre-CPI bid didn't reach the threshold even with CPI optimism\n3. One of two re-entry conditions (positive ETF flows) is now met — making $65,000 the sole remaining gate; once crossed on a reference close, the framework re-entry is triggered immediately\n4. Above $65,000, the gamma dynamics that previously provided mechanical support (dealer buying above the strike) may partially re-activate as new call OI builds at higher strikes\n\n### The Framework Status — One Condition From Re-Entry\n\n| Condition | Status | Detail |\n|-----------|--------|--------|\n| Reference close > $65,000 | ✗ NOT MET | $63,548.72 vs $65,000 = $1,451 gap |\n| Positive ETF flows (same day or prior) | ✓ MET | Aug 11 flows: +$4.89M (reported Aug 12) |\n| **Both conditions** | **✗ Step-aside continues** | Need price + flows simultaneously |\n\n### What Confirms vs. What Invalidates\n\n**Step-aside resolved (re-entry):**\n1. Reference close above $65,000 with positive ETF flows in hand (both conditions met) → BUY\n2. The positive flow condition is already banked for 24 hours (Aug 11 data) — tomorrow's ETF flow data will either extend it or reset it\n\n**Step-aside deepens:**\n1. Reference close below $63,174 (Aug 11 low) → lower-lows resume; targets $62,300\n2. ETF flows return to negative on Aug 12 (reported Aug 13) → Condition 2 no longer met\n3. Macro shock (U.S.-Iran escalation) spikes risk-off across all assets"
+}
