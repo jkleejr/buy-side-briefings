@@ -2,19 +2,22 @@
   "routine": "markets",
   "date": "2026-08-11",
   "window": "night",
-  "generated_at": "2026-08-12T01:00:00Z",
+  "generated_at": "2026-08-12T01:15:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "CoreWeave posts $104B backlog as small caps rotate ahead of Wednesday's CPI gate",
-    "label": "CRWV +13% AH on clean Q2 beat; Russell +0.32% while S&P shed 0.38%; oil triggers still active; 10Y 4.73%, 30Y ~5.22%; CPI 8:30 AM ET Wednesday",
-    "rationale_short": "CoreWeave cleared all three morning criteria: backlog hit $104B (above the $100B clean threshold), Meta ($21B), Anthropic and Jane Street ($6B) diversified the customer base away from MSFT concentration risk, and the stock surged ~13% AH toward $100-101. The day session split sharply: Russell 2000 +0.32% while S&P 500 fell 0.38% — a 70bps divergence consistent with rate-sensitivity buyers pre-positioning for a soft CPI. Oil did not retreat: WTI held ~$82 and Brent $88.23, both above their triggers for a fifth consecutive session. September hike odds held at ~50% CME. July CPI arrives Wednesday 8:30 AM ET; Kalshi now prices less than 55% chance above 3.3%, skewing the market consensus toward ambiguous-to-soft. If SPX closes below 7,600 within two sessions of tomorrow's print, the record-proximity bid breaks.",
+    "code": "hold",
+    "emoji": "🟡",
+    "conviction": "medium",
+    "headline": "CoreWeave posts $104B backlog beat as small caps rotate ahead of Wednesday CPI",
+    "label": "HOLD — 3 of 6 breached: CRWV +13% AH on clean Q2 beat; Russell +0.32% vs SPX -0.38%; 30Y ~5.22%, WTI ~$82, Brent $88.23; CPI 8:30 AM ET Wednesday",
+    "rationale_short": "CoreWeave cleared all three morning criteria: backlog hit $104B (above the $100B clean threshold, now grown to $129B as of August 11), Meta ($21B), Anthropic and Jane Street ($6B) diversified the customer base away from MSFT concentration risk, and the stock surged ~13% AH toward $102. The day session split sharply: Russell 2000 +0.32% while S&P 500 fell 0.38% — a 70bps divergence consistent with rate-sensitivity buyers pre-positioning for a soft CPI. Oil did not retreat: WTI held ~$82 and Brent $88.23, both above their triggers for a fifth consecutive session. September hike odds held at ~50% CME. July CPI arrives Wednesday 8:30 AM ET; Kalshi prices less than 55% chance above 3.3%, skewing the consensus toward ambiguous-to-soft. 3-of-6 regime indicators remain active (30Y 5.22%, WTI, Brent). If SPX closes below 7,600 within two sessions of tomorrow's print, the record-proximity bid breaks.",
     "supporting_data": [
       {
-        "label": "CRWV Q2: $104B backlog (+$4.6B vs Q1), Rev $2.58B vs $2.56B est (+112% YoY), Adj EPS -$1.03 vs -$1.20 est; Meta $21B + Anthropic + Jane Street $6B added; AH +13% to ~$101",
+        "label": "CRWV Q2: $104B backlog (+$4.6B vs Q1, grown to $129B by Aug 11), Rev $2.58B vs $2.56B est (+112% YoY), Adj EPS -$1.03 vs -$1.20 est; Meta $21B + Anthropic + Jane Street $6B added; AH +13% to ~$102",
         "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html"
       },
       {
-        "label": "Russell 2000 +0.32% to 3,027.12 vs S&P 500 -0.38%; large-cap/small-cap divergence signals pre-CPI rate rotation",
+        "label": "Russell 2000 +0.32% vs S&P 500 -0.38%; large-cap/small-cap divergence signals pre-CPI rate rotation",
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-11-2026"
       },
       {
@@ -48,12 +51,12 @@
     { "name": "Brent Crude",         "value": 88.23,   "trigger_above": 85.0,  "unit": "$/bbl" },
     { "name": "WTI Crude",           "value": 82.00,   "trigger_above": 79.0,  "unit": "$/bbl" },
     { "name": "SPX vs 7,380",        "value": 7722.0,  "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 64000,   "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",          "value": 63762,   "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "CRWV",
-      "note": "Regular close ~$91; AH +13% toward $100-101 on Q2 beat. All three morning criteria met: backlog $104B (above $100B threshold), customer base diversified with Meta $21B + Anthropic + Jane Street $6B (reduces MSFT concentration), Adj EPS -$1.03 beat by $0.17. DDOG concentration-risk template did not apply. NVDA pre-market Wednesday is the read-through signal. The watch level at which the AH gains partially unwind: hot CPI (above 3.2%/3.5%) tomorrow morning.",
+      "note": "Regular close ~$91; AH +13% to $102.21 on Q2 beat. All three morning criteria met: backlog $104B at Q2 end (grown to $129B as of August 11 — 246% YoY surge), customer base diversified with Meta $21B + Anthropic + Jane Street $6B (reduces MSFT concentration), Adj EPS -$1.03 beat by $0.17. 2026 guidance $12.4B-$13.2B rev, $960M-$1.15B adj operating income, 59% adj EBITDA margin, 5% operating margin. The watch level at which the AH gains partially unwind: hot CPI (above 3.2%/3.5%) tomorrow morning.",
       "sentiment": "positive"
     },
     {
@@ -83,7 +86,7 @@
     },
     {
       "ticker": "BTC",
-      "note": "~$64,000; held flat through session as September hike odds remained stable at ~50%. Gate 2 ($62K) buffer ~$2K. Soft CPI is the only near-term catalyst to extend the buffer meaningfully. Below $63K narrows the buffer to critical levels ahead of CPI.",
+      "note": "~$63,762 post-close (Crypto.com live: $63,762, 24h high $64,503 / low $63,225). Gate 2 ($62K) buffer ~$1,762 — narrowed from ~$2,000 at prior session close. BTC tracked oil and rate moves but held above $63K. September hike odds at ~50% remain the stabilizing macro factor; Wednesday CPI is the primary catalyst. Break below $63K narrows Gate 2 buffer to critical levels.",
       "sentiment": "neutral"
     }
   ],
@@ -104,12 +107,12 @@
     },
     {
       "asset": "NVDA — CRWV read-through into August 26 earnings",
-      "thesis": "CRWV's $104B backlog with Anthropic hosting agreement is the best available pre-print evidence for NVDA's Blackwell demand cycle. The morning's scenario — 'clean print reprices NVDA Blackwell demand' — materialized. NVDA pre-market Wednesday is the primary read-through. If CPI is also soft, the two catalysts compound against $216 support. If CPI is hot, $216 is the structural test; the CRWV positive does not insulate against simultaneous rate and oil pressure.",
+      "thesis": "CRWV's $104B backlog (growing to $129B) with Anthropic hosting agreement is the best available pre-print evidence for NVDA's Blackwell demand cycle. The morning's scenario — 'clean print reprices NVDA Blackwell demand' — materialized. NVDA pre-market Wednesday is the primary read-through. If CPI is also soft, the two catalysts compound against $216 support. If CPI is hot, $216 is the structural test; the CRWV positive does not insulate against simultaneous rate and oil pressure.",
       "entry": "NVDA ~$217 regular close. $216 structural support. $221+ resistance. August 26 print is the terminal catalyst.",
       "invalidation": "Hot CPI AND 30Y above 5.30% AND NVDA AH fails to hold $216 simultaneously — three conditions required.",
       "horizon": "Wednesday pre-market through August 26 Q2 FY27."
     }
   ],
-  "bear_case": "The CRWV positive resolves the AI-demand binary but leaves three macro conditions active. Oil at $82 and $88.23 is structurally embedded in Iran's Zolghadr framework — a post-war settlement precondition the Oman channel cannot satisfy in the CPI window. The 30Y at ~5.22% has been above 5.00% for eleven sessions; if CPI confirms the supply-shock channel (above 3.2%/3.5%), the next reference level is 5.30%, not 5.00%. The Russell's Tuesday outperformance is a bet, not a data read: if CPI is hot, the rate-sensitive names that rallied (small caps, AMD) experience the sharpest reversal. CRWV's AH gain (+13%) prices a sustained AI infrastructure demand cycle on $12.4-13.2B guidance backed by $35-39B annual capex — a 3x capex-to-revenue ratio that depends on continuous hyperscaler commitment at current rates. The level that changes the equity-resilience read: SPX closes below 7,600 within two sessions of tomorrow's print.",
+  "bear_case": "The CRWV positive resolves the AI-demand binary but leaves three macro conditions active. Oil at $82 and $88.23 is structurally embedded in Iran's Zolghadr framework — a post-war settlement precondition the Oman channel cannot satisfy in the CPI window. The 30Y at ~5.22% has been above 5.00% for eleven sessions; if CPI confirms the supply-shock channel (above 3.2%/3.5%), the next reference level is 5.30%, not 5.00%. The Russell's Tuesday outperformance is a bet, not a data read: if CPI is hot, the rate-sensitive names that rallied (small caps, AMD) experience the sharpest reversal. CRWV's AH gain (+13%) prices a sustained AI infrastructure demand cycle on $12.4-13.2B guidance backed by $35-39B annual capex — a 3x capex-to-revenue ratio that depends on continuous hyperscaler commitment at current rates. BTC has narrowed its Gate 2 buffer to ~$1,762 ($63,762 vs $62K gate). The level that changes the equity-resilience read: SPX closes below 7,600 within two sessions of tomorrow's print.",
   "body_mdx": "data/briefings/markets/2026-08-11-night.mdx"
 }
