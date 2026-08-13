@@ -1,54 +1,58 @@
 {
   "events": [
     {
-      "date": "2026-08-13",
-      "label": "July PPI (BLS, 8:30 AM ET) — energy component is the 30Y pivot test",
-      "kind": "MACRO",
-      "time_et": "8:30 AM",
-      "tickers": ["TBT", "TLT", "QQQ", "XLE"],
-      "note": "Updated Aug 13 morning: CSCO's beat-and-raise extended from −4% AH to −6% pre-market (~$116 from $123.88). PPI consensus: +0.2% headline MoM / +0.3% core; energy expected −3.0%. WTI held $82–83 through July — the oil-price cost CPI's service-side core did not capture. Hot energy line (above −1%): September odds climb to 40-45%, 30Y re-anchors above 5.25% entering Jackson Hole. In-line: 30Y drifts toward 5.20%; first compression signal. 30Y at 5.236% entering the print — 14th consecutive session above 5.00%. Below 5.20% on two consecutive closes is the de-escalation signal the equity market needs before August 26."
-    },
-    {
-      "date": "2026-08-13",
-      "label": "AMAT Q3 FY26 earnings (after close) — semi-equipment CSCO counter-test",
-      "kind": "EARNINGS",
-      "time_et": "After close (4:30 PM ET)",
-      "tickers": ["AMAT", "NVDA", "AMD", "TSM", "ASML"],
-      "note": "Added Aug 13 morning: Consensus $3.36 EPS / $9.0B revenue (+35.5% YoY). AMAT at ~$539, 27% below year-to-date peak of $739. CSCO's beat-and-raise sold 6% on priced-in AI networking orders. AMAT is the capital equipment layer — if AMAT beats on forward semiconductor equipment demand, CSCO's sell is networking-specific. If AMAT misses on forward guidance, the altitude ceiling extends to the full semiconductor stack. AH above $550 on a beat = CSCO template contained; AH below $520 on a miss = template broadens toward NVDA's August 26 setup."
-    },
-    {
       "date": "2026-08-20",
       "label": "SPCX next staggered tranche (~7%) — second unlock after Aug 6 first tranche",
       "kind": "OTHER",
-      "tickers": ["SPCX"],
+      "tickers": [
+        "SPCX"
+      ],
       "note": "Updated Aug 10 morning: Day 5 (Aug 10) closed $133.11, up 15.83% from Day 3's $114.92 — 20% first tranche absorbed above the $105 floor. Terafab Texas AI compute megafactory (SpaceX + Tesla JV, $16.8B, announced Aug 8) provided the incremental catalyst. Next staggered tranche (~7%, ~65M shares, ~$8.65B eligible) expected around Aug 20. Absorption thesis: close above $128 through CPI (Aug 12). Front-run signal: close below $115 on elevated volume before Aug 20 means the next tranche is being pre-sold. CPI Wednesday is the binary: soft → rate compression extends absorption window; hot → simultaneous multiple compression and supply pressure. Morgan Stanley $140, Bernstein $248, Citi $200 targets; 28 of 30 analysts Buy. October Q3 earnings (Starlink profitability, AI segment above $2.56B) is the narrative anchor."
     },
     {
       "date": "2026-08-26",
       "label": "NVDA Q2 FY27 earnings (est.) — CSCO beat-and-sell AH template raises the bar at altitude",
       "kind": "EARNINGS",
-      "tickers": ["NVDA", "AMD", "TSM", "AVGO", "SPCX"],
-      "note": "Updated Aug 13 morning: NVDA pre-market ~$220.88 (−1.1% from $223.40 close). CSCO's beat-and-raise extended overnight to −6% pre-market (~$116 from $123.88) — the altitude ceiling is firmer than the initial −4% AH suggested. AMAT after close today (Aug 13) is the CSCO counter-test: if AMAT beats on forward semiconductor equipment demand, CSCO's sell is networking-specific; if AMAT misses, the template broadens. Q2 FY27 call watch: (1) Gross margin above 76% — minimum bar; meeting it alone may not expand the multiple per the CSCO template. (2) Q3 guide above consensus — required at $223.40. Active regime conditions: 30Y 5.236% (14th session above 5.00%), WTI $81.41 (above $79; buffer narrowing), Brent $87.17 (above $85). Jackson Hole keynote Aug 27 arrives one day after earnings — no de-risk window. Level that changes the setup read positively: NVDA AH holds $225+ AND 30Y closes below 5.15% in the two sessions before Aug 26."
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "TSM",
+        "AVGO",
+        "SPCX"
+      ],
+      "note": "Updated Aug 13 night: NVDA closes 25.30, reclaiming 25 resistance for the first time. CSCO extended total sell to −8.5% (13.39 from 23.88) and AMAT fell −3.89% AH (EPS beat, revenue slight miss, Q4 guide 0.25B) — altitude ceiling confirmed across both networking and semiconductor equipment. NVDA bar for August 26: gross margin above 76% and guide above consensus are the minimum; AMAT established that meeting the minimum is not sufficient to hold gains. September hike odds 32% (most favorable since pre-ECI); 30Y 5.24% (15th session above 5.00%). Jackson Hole Aug 27 arrives one day after the print — no de-risk window. Level that changes the setup positively: NVDA AH holds 28+ on a materially better-than-expected print AND 30Y is below 5.15% entering August 26."
     },
     {
       "date": "2026-08-27",
       "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote after NFP + CPI + PPI",
       "kind": "FOMC",
-      "tickers": ["TLT", "TBT", "QQQ", "IWM", "SPY", "GLD"],
-      "note": "Updated Aug 12 night: September hike odds at ~38–40% (CME FedWatch: 62% hold) after July CPI core 2.5% — furthest below 70% trigger since before the July 31 ECI spike. July PPI (Aug 13) is the intervening data point before Jackson Hole. At 38–40%, 'live meeting' language would be a shock; 'data-dependent, watching oil and labor' is the base path. NFP removed the wage-inflation channel; CPI core surprised soft; PPI determines whether supply-inflation persists. 30Y held flat at ~5.25% despite the core surprise — the bond market's prior reading persists. NVDA earnings land Aug 26 — one day before the keynote, with no de-risk window. If September odds hold above 35% through Aug 26, the macro overhang compounds altitude risk for the NVDA print."
+      "tickers": [
+        "TLT",
+        "TBT",
+        "QQQ",
+        "IWM",
+        "SPY",
+        "GLD"
+      ],
+      "note": "Updated Aug 13 night: September hike odds 32% (lowest since before July 31 ECI spike) after July PPI 0.0% MoM and CPI core 2.5%. Two consecutive soft inflation prints; 30Y held at 5.24% — 15th session above 5.00% — bond market prior unmoved. At 32%, data-dependent hold language from Warsh is approximately the base case. Gap between a speech validating the 30Y persistence (citing 3.4% annual CPI, SPR at 40-year lows, Hormuz disruption) and one confirming patience is wide. NVDA earnings land Aug 26 — one day before the keynote, no de-risk window. If September odds hold above 35% post-NVDA, the macro overhang compounds altitude risk."
     },
     {
       "date": "2026-12-09",
       "label": "SPCX 180-day IPO lock-up expiry (approx.) — terminal insider/early-investor float unlock",
       "kind": "OTHER",
-      "tickers": ["SPCX"],
+      "tickers": [
+        "SPCX"
+      ],
       "note": "~180 days after the June 12 debut. Lock-up expiries are the known supply overhang for hot IPOs. Context after Aug 6-7: 20% first tranche absorbed at $105-$115; next tranches scheduled Aug 20 and late September. Q3 Starlink profitability (~October call) is the only fundamental catalyst that could revalue the lockup discount before the December terminal release. SPCX Q2: $18.37B capex vs $7.81B revenue; AI segment $2.56B (+247% YoY)."
     },
     {
       "date": "2027-01-01",
       "label": "OpenAI IPO — target window H1 2027 after 2026 delay",
       "kind": "OTHER",
-      "tickers": ["MSFT", "NVDA"],
+      "tickers": [
+        "MSFT",
+        "NVDA"
+      ],
       "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). PLTR's 149% US commercial growth, AMD's $6.7B data-center (+107%), and SpaceX's exclusive Nvidia commitment ($15.83B AI capex) confirm the enterprise AI adoption underlying OpenAI's revenue model. NVDA circular financing disclosure ($250B OpenAI backstop) remains the unresolved structural question that may surface in S-1 filings."
     }
   ]

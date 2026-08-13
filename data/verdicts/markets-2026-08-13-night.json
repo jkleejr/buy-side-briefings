@@ -1,0 +1,125 @@
+{
+  "routine": "markets",
+  "date": "2026-08-13",
+  "window": "night",
+  "generated_at": "2026-08-13T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "S&P 500 sets a record at 7,799 as flat PPI cuts September hike odds to 32%",
+    "label": "Record close on soft PPI; NVDA reclaims $225; AMAT AH extends altitude signal into semiconductor equipment",
+    "rationale_short": "July PPI (0.0% vs. +0.2% expected) resolved the morning's binary in the Bull direction: the S&P 500 set a record, September hike odds fell to 32%, and NVDA closed above $225 resistance for the first time. Where the morning underestimated: CSCO extended its total sell to −8.5% ($113.39 from $123.88), and AMAT fell −3.89% AH on a mixed Q3 (EPS beat, revenue slight miss) despite a strong Q4 guide of $10.25B. The altitude ceiling has extended into semiconductor equipment — not just networking. The 30Y at 5.24% (15th session above 5.00%) is unchanged after two consecutive soft inflation prints. Level that changes the read: 30Y closes below 5.10% before Jackson Hole AND September odds hold below 28%.",
+    "supporting_data": [
+      {
+        "label": "July PPI 0.0% MoM (vs +0.2%); goods −0.7%; core +0.2% (vs +0.3%); annual +4.7%",
+        "url": "https://www.cnbc.com/2026/08/13/wholesale-prices-were-flat-in-july-below-expectations-for-0point2percent-increase.html"
+      },
+      {
+        "label": "S&P 500 7,798.99 (+0.65%), record close clearing 7,800 intraday; September hike odds fall to 32%",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-13-2026"
+      },
+      {
+        "label": "AMAT Q3: EPS $3.50 beat ($3.45 est.); revenue $9.115B slight miss; Q4 guide $10.25B; AH −3.89%",
+        "url": "https://www.tipranks.com/news/amat-slips-despite-earnings-beat"
+      },
+      {
+        "label": "30Y UST 5.24% — 15th consecutive session above 5.00%; bond market prior holds after two soft prints",
+        "url": "https://www.cnbc.com/2026/08/13/treasury-yields-wall-street-inflation-data.html"
+      },
+      {
+        "label": "Hormuz: US SPR below 300M barrels (lowest since January 1983); 8–15 daily transits vs. 130 pre-war",
+        "url": "https://us.cnn.com/2026/08/13/world/live-news/iran-war-trump"
+      },
+      {
+        "label": "Silver Lake in talks to acquire Workday at ~$43B; WDAY surges ~18% intraday to ~$206",
+        "url": "https://www.cnbc.com/2026/08/13/workday-skyrockets-25percent-before-trading-halted-on-report-of-silver-lake-takeover.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7798.99,  "change_pct":  0.65, "as_of": "2026-08-13T20:00:00Z" },
+    "nasdaq": { "level": 26803.03, "change_pct":  0.81, "as_of": "2026-08-13T20:00:00Z" },
+    "vix":    { "level": 14.63,   "change_pct": -0.34,  "as_of": "2026-08-13T20:00:00Z" },
+    "ust10y": { "level": 4.65,    "change_bps":  -4,    "as_of": "2026-08-13T20:00:00Z" },
+    "dxy":    { "level": 99.87,   "change_pct": -0.14,  "as_of": "2026-08-13T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.24,    "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 32.0,    "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 87.92,   "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 82.11,   "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7798.99, "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 63486,   "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$225.30 (+0.85%). First close above the $225 resistance that held as intraday ceiling on August 12. AMAT's AH result (EPS beat, revenue slight miss, Q4 guide $10.25B, still −3.89% AH) confirmed altitude sensitivity in the semiconductor equipment layer. The bar for August 26 is not merely beating consensus; it is beating decisively enough to change the institutional prior established by CSCO and reinforced by AMAT.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CSCO",
+      "note": "$113.39 regular close — a cumulative −8.5% from its $123.88 Wednesday regular close, extending from the −6% pre-market level the morning brief cited. Two-session confirmed: a genuine beat-and-raise on AI orders does not expand the multiple at altitude.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AMAT",
+      "note": "Q3 EPS $3.50 (beat $3.45); revenue $9.115B (slight miss vs $9.175B); Q4 guide $10.25B (+/- $500M, +12.5% sequential). AH −3.89%. Morning brief's scenarios: AH above $550 = template contained in networking; below $520 = template broadens to full stack. Result landed ~$527 — altitude ceiling confirmed in semiconductor equipment, degree of extension closer to moderate than catastrophic.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "$594.97 (+2.8%). Strongest mega-cap session, reversing two sessions of AI capex ROI underperformance. Soft PPI reducing near-term hike risk is the immediate driver; operating margin compression (31% vs. 43% a year ago) is unchanged.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "$305.26 (+1.0%). Participated in macro rally; Jefferies Underperform (PT $263.66) is unchanged as the only active analyst signal.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$481 (approx. −3.6% from $499 Aug 12 close). Declined despite positive macro backdrop and soft PPI — likely in sympathy with CSCO/AMAT altitude signal. $484 support level is back in range.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "Iran/Hormuz structurally unchanged — 8-15 daily transits vs. 130 pre-war; SPR below 300M barrels. DoD AI spend thesis holds with escalation levels intact. No new company-specific catalyst.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "SPCX",
+      "note": "~$142.31 (+2.3% from $139.05 Aug 12 close). Absorbed the rate relief from soft PPI and 32% September odds. August 20 tranche (~7%, ~$8.65B eligible) arrives in 7 days. Both oil triggers remain active: WTI $82.11 (above $79) and Brent $87.92 (above $85). Absorption thesis: continued close above $128. Front-run signal: close below $120 on elevated volume before August 20.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$63,486 (−0.2%). Gate 2 ($62K) buffer ~$1.5K. September odds at 32% are the most favorable crypto macro environment since before the July 31 ECI spike, but BTC's weekly and monthly price trends have turned negative — macro improvement did not produce a positive crypto session today.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA ahead of August 26 — altitude ceiling confirmed in semi-equipment",
+      "thesis": "NVDA closed at $225.30, above the $225 resistance that capped the prior session. AMAT's AH result updated the setup: EPS beat, strong Q4 guide ($10.25B), still down ~3.89% AH. The altitude ceiling is real in the semiconductor equipment layer, not just networking. Two adjacent AI infrastructure prints have now sold on strong results. The bar for NVDA is beating by enough to change the institutional prior — not merely meeting gross margin above 76% and guide above consensus.",
+      "entry": "$225 is now proven support via today's close; $216 is structural support below. A close above $227 before August 26 extends the reclaim; a return below $221 re-establishes the ceiling setup entering the print.",
+      "invalidation": "NVDA AH holds above $228 on a materially better-than-expected print, with 30Y below 5.15% entering the August 26 call.",
+      "horizon": "Through August 26 earnings and Jackson Hole keynote August 27-29."
+    },
+    {
+      "asset": "30Y Yield — 15 sessions above 5.00% despite two soft prints",
+      "thesis": "CPI core 2.5% and PPI flat — two consecutive below-expected inflation readings — and the 30Y has compressed only 1bp to 5.24%. The bond market's prior has not broken. Jackson Hole (August 27-29) is the next venue. If Warsh's keynote validates the 30Y's persistence citing 3.4% annual CPI, SPR at 40-year lows, and Hormuz as a persistent supply risk, the 30Y is not compressing before year-end. If the speech confirms patience given the CPI/PPI trajectory, the path to 5.10% opens.",
+      "entry": "30Y at 5.24%, 15th session above 5.00%. Below 5.20% on two consecutive closes is the first de-escalation signal. Above 5.28% re-establishes the rate overhang.",
+      "invalidation": "30Y closes below 5.10% on two consecutive sessions — the formal trigger clears.",
+      "horizon": "Through Jackson Hole keynote August 27-29 and the September 18 FOMC meeting."
+    },
+    {
+      "asset": "SPCX — August 20 tranche with oil triggers still active",
+      "thesis": "SPCX at $142.31 has absorbed the PPI-driven rate relief. Both oil triggers remain active: WTI $82.11 and Brent $87.92. Hormuz transit volumes at 8-15/day vs. 130 pre-war and SPR below 300M barrels make oil-side de-escalation dependent on genuine diplomatic progress, not Trump rhetoric. The August 20 tranche (~$8.65B eligible) is the next supply gate.",
+      "entry": "SPCX $142.31. Absorption thesis: continued close above $128. Front-run signal: close below $120 on elevated volume before August 20.",
+      "invalidation": "WTI closes below $79 on two consecutive sessions, removing the primary oil trigger ahead of the tranche.",
+      "horizon": "Through August 20 tranche and October Q3 earnings."
+    }
+  ],
+  "bear_case": "The 30Y at 5.24% after flat PPI and 2.5% CPI core is the bond market's explicit statement that two months of below-consensus inflation data do not move its prior. With SPR below 300 million barrels (lowest since January 1983) and Hormuz transits at 8-15/day vs. 130 pre-war, an oil supply disruption is ongoing and will eventually surface in services inflation data. CSCO's cumulative −8.5% sell and AMAT's −3.89% AH decline on strong forward guidance confirm that the altitude ceiling now applies across networking and semiconductor equipment simultaneously — sharpening the NVDA risk entering August 26. If Warsh's Jackson Hole keynote reads the 30Y's persistence as the appropriate market equilibrium given these supply conditions, September odds stabilize above 35% and today's equity record becomes the near-term ceiling. The SPX read no longer holds if it closes below 7,600.",
+  "body_mdx": "data/briefings/markets/2026-08-13-night.mdx"
+}
