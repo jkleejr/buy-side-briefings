@@ -1,0 +1,182 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T21:15:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "STEP-ASIDE CONTINUES — BOTH CONDITIONS UNMET: REFERENCE CLOSE $63,418.13 (-$189.14 / -0.30% FROM AUG 12 API-VERIFIED CRYPTO.COM $63,607.27). SESSION MAP: OPENED $63,484.56 (00:00 UTC), STEADY ASIA-SESSION CLIMB TO SESSION HIGH $64,017.77 (05:00 UTC — FIRST TEST OF $64K RESISTANCE, DRIVEN BY CARRY-OVER CPI OPTIMISM FROM U.S. EQUITY RALLY), GRADUAL FADE THROUGH EUROPEAN HOURS ($63,942 AT 06:00 UTC → $63,484 AT 11:00 UTC), PARTIAL RECOVERY AND SECOND TEST OF $64K (14:00 UTC: H $64,006.72 — SECOND REJECTION AT $64,000 IN A SINGLE SESSION), VIOLENT 15:00 UTC SELL CANDLE (O $63,863 → C $63,410, -$453 IN ONE HOUR — THE CLEAREST 'DISTRIBUTION' CANDLE OF THE SESSION), 16:00 UTC FLASH CAPITULATION (O $63,414, H $63,570, L $62,833.76 SESSION LOW — A $1,184 DECLINE FROM THE 14:00 UTC HIGH WITH HIGHEST HOURLY VOLUME OF THE SESSION, BOTTOM WICK RECOVERY TO CLOSE $63,165 SUGGESTS DIP BUYERS ABSORBED AT $62,833), GRADUAL RECOVERY 17:00-20:00 UTC ($63,137 → $63,311 → $63,411 → REFERENCE CLOSE $63,418.13). KEY DEVELOPMENT: AUG 12 BITCOIN ETF FLOWS REPORTED THIS MORNING — NET -$61.1M (IBIT -$14.3M, FBTC -$46.8M APPROXIMATELY — A REVERSAL OF AUG 11'S NET +$4.89M POSITIVE DAY). CONDITION 2 (POSITIVE ETF FLOWS) NOW REVERTED TO NOT MET. RE-ENTRY STATUS: CONDITION 1 (REFERENCE CLOSE > $65,000 — $1,582 BELOW CURRENT CLOSE) NOT MET; CONDITION 2 (POSITIVE ETF FLOWS — AUG 12 NET -$61.1M OUTFLOWS) NOT MET. BOTH CONDITIONS UNMET — STEP-ASIDE CONTINUES, CONVICTION HIGH. BTC HAS DROPPED BACK BELOW BOTH THE 20-DAY EMA (~$64,147) AND 50-DAY EMA (~$64,557), CONFIRMING THAT THE CPI-DAY RALLY FAILED TO ESTABLISH NEW TECHNICAL GROUND. THE SESSION'S NARRATIVE: BITCOIN'S POST-CPI OPTIMISM COULD NOT SUSTAIN $64K TWICE IN ONE TRADING DAY; EACH ATTEMPT WAS MET WITH DECISIVE INSTITUTIONAL SELLING. THE $62,833 WICK SUGGESTS DIP BUYERS EXIST AT THAT LEVEL, ESTABLISHING A NEW NEAR-TERM RANGE FLOOR.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "high",
+    "horizon": "step-aside until BOTH re-entry conditions are met: (1) reference close (20:00 UTC Crypto.com 1h candle) > $65,000 AND (2) most recent daily U.S. spot-BTC ETF net flows positive; current status: Condition 1 = NOT MET ($63,418 — $1,582 below threshold); Condition 2 = NOT MET (Aug 12 ETF flows net -$61.1M); conviction HIGH given dual-condition failure and two consecutive rejections at $64,000",
+    "rationale": "Two clean $64,000 rejections in a single session confirm that the post-CPI optimism that sent BTC to $64,017 has dissipated. The breakout above the 50-day EMA ($64,557) that briefly occurred has been reversed; BTC closed at $63,418 — below both the 20-day EMA ($64,147) and the 50-day EMA ($64,557). The Aug 12 ETF flows, reported on the morning of Aug 13, showed a net -$61.1M outflow (reversing Aug 11's +$4.89M). This means Condition 2 is no longer met. With both re-entry conditions unmet, step-aside is the correct posture. The $62,833 session low provides a data point that buyers exist below $63,000, but the fundamental re-entry criteria — a closing price above $65,000 that confirms a new structural demand level — remains $1,582 away. The 24h range ($62,833-$64,017 = $1,184 spread) reflects significant speculative activity with no directional conviction."
+  },
+
+  "so_what": {
+    "line": "Step-aside continues: two $64K rejection tests confirm the ceiling, ETF outflows of $61.1M on Aug 12 reverted Condition 2 to not met, close remains $1,582 below the $65,000 re-entry threshold.",
+    "bull": "The $62,833 bottom wick (recovered from $62,833 to close $63,418 without institutional panic selling) shows buyers exist at $62,800-$63,000. If BTC consolidates in the $63,000-$64,000 range for 2-3 sessions and ETF flows return to positive, the $65,000 threshold becomes achievable. The macro backdrop (September FOMC rate hold confirmed post-CPI) is not bearish for BTC.",
+    "bear": "BTC failed to hold above the 50-day EMA ($64,557) or 20-day EMA ($64,147) on the best macro day of the cycle (CPI in-line). Two clean $64K rejections in one session. ETF flows turned negative at -$61.1M the day after the only positive flow session. Step-aside is the only rational posture; trying to call a bottom in a range-bound market costs premium and misses the clean re-entry signal."
+  },
+
+  "snapshot": {
+    "price": 63418.13,
+    "change_pct": -0.30,
+    "change_abs": -189.14,
+    "prev_close": 63607.27,
+    "day_high": 64017.77,
+    "day_low": 62833.76,
+    "week52_high": 109000,
+    "week52_low": 49000,
+    "volume": "~$10.7B 24h global volume; Crypto.com 1h session volume: ~1,286 BTC ($81.5M notional, 00:00-20:00 UTC)",
+    "market_cap": "~$1.261T",
+    "extra": [
+      {
+        "label": "STEP-ASIDE STATUS: BOTH CONDITIONS UNMET — Reference Close $63,418.13 vs $65,000 Threshold (Condition 1); Aug 12 ETF Net -$61.1M (Condition 2 Reverted)",
+        "value": "Condition 1: $63,418.13 < $65,000 — NOT MET; distance: $1,582 below threshold (2.5% required to clear). Condition 2: Aug 12 U.S. spot-BTC ETF flows = net -$61.1M (IBIT -$14.3M, FBTC -$46.8M est.) — NOT MET; reversal of Aug 11's sole positive flow day (+$4.89M). Both conditions must be met simultaneously for re-entry. Current probability of meeting both in next 5 sessions: LOW given two $64K rejections and ETF outflow trend.",
+        "tone": "down"
+      },
+      {
+        "label": "Two $64K Rejections in One Session — Technical Failure: BTC Below 20-Day EMA ($64,147) and 50-Day EMA ($64,557) at Close",
+        "value": "Session high $64,017.77 (05:00 UTC) and second test $64,006.72 (14:00 UTC) both rejected — BTC could not sustain above $64,000 on two separate attempts in a single session. At the reference close of $63,418.13, BTC is: $729 below the 20-day EMA ($64,147); $1,139 below the 50-day EMA ($64,557); $1,582 below the $65,000 re-entry threshold; $3,317 below the 100-day EMA ($66,735). The post-CPI EMA-recapture attempt has been fully rejected.",
+        "tone": "down"
+      },
+      {
+        "label": "Aug 12 ETF Flows: Net -$61.1M — Condition 2 Reverted to Not Met (IBIT -$14.3M, FBTC -$46.8M est.)",
+        "value": "Bloomberg/Bloomingbit reported: U.S. spot-Bitcoin ETFs saw $61.1 million in net outflows after one day of inflows (Aug 11's net +$4.89M was the only positive flow day since Aug 10's -$144.67M outflow). BlackRock IBIT: approximately -$14.3M; Fidelity FBTC: approximately -$46.8M. The one-session positive flow on Aug 11 was insufficient to establish a trend; the reversion to outflows on Aug 12 confirms that institutional appetite for spot-BTC ETF products has not durably recovered from the Aug 10 reset. Condition 2 reverts to NOT MET.",
+        "tone": "down"
+      },
+      {
+        "label": "$62,833.76 Session Low — Bottom Wick Recovery Pattern; Near-Term Dip-Buyer Support Level Established",
+        "value": "The 16:00 UTC candle produced the session low at $62,833.76 with the highest hourly volume of the session (~264 BTC on Crypto.com alone). The candle opened at $63,414, briefly traded down to $62,833 (a $581 flash decline), and recovered to close at $63,165 — a ~$332 recovery from the low. This bottom-wick pattern suggests tactical dip buyers absorbed the panic selling at $62,833. However, this level is $584 below the current close and $2,166 below the $65,000 re-entry threshold; it is a near-term range floor, not a catalyst for re-entry.",
+        "tone": "neutral"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "BTC options implied volatility at-the-money (near-dated, est.): elevated from the $1,184 intraday range ($62,833-$64,017) which is outsized for a net -0.30% close. The wide range compresses IV temporarily as the realized vol disappoints relative to implied; but the two $64K rejection patterns and flash capitulation to $62,833 will keep premium elevated as market-makers price tail risk. Perp funding rate: likely near-zero or slightly negative (reflecting the weak close on a day that could have been bullish).",
+    "short_interest": "Estimated perp open interest: flat to slightly short-biased after the $62,833 flash low, which likely forced short-term long liquidations and rebuilt short exposure on the bounce. The two $64K rejections are likely adding conviction to the short thesis among technical traders; however, the step-aside framework does not add short exposure — it simply holds cash.",
+    "notable_flow": "Two distinct institutional selling events: (1) 14:00-15:00 UTC: the second $64K test produced a $453 sell candle (O $63,863, C $63,410) — this appears to be programmatic distribution by accounts who were waiting for the second $64K re-test to confirm resistance; (2) 16:00 UTC: the flash decline to $62,833 on the highest hourly session volume suggests a cascade of stop-loss liquidations in leveraged long positions; the recovery to $63,165 within the same candle indicates buyers absorb at ~$62,800-$63,000. Net interpretation: the distribution happens at $64K, the absorption happens at $62,800-$63,000 — BTC is range-bound between these two poles."
+  },
+
+  "what_traders_are_doing": "FOUR POSTURES: (1) STEP-ASIDE HOLDERS — following the framework, hold cash, wait for both re-entry conditions; the two $64K rejections and negative ETF flows confirm the framework's conservatism is warranted; the $1,582 gap to $65,000 is not trivial; no action until both conditions met simultaneously; (2) RANGE TRADERS — buying near $62,800-$63,000 and selling near $64,000-$64,500; today's session was a textbook range trade that paid well for both sides (buy at session low $62,833, sell at session high $64,017 = $1,184 spread); (3) SHORT-BIAS ACCOUNTS — the two $64K rejections plus EMA failure have emboldened technical shorts; their thesis: BTC reverts toward $61,000-$62,000 (prior support) if $62,833 breaks; their entry is the $64,000-$64,500 zone on any bounce; (4) ACCUMULATION ACCOUNTS (long-term) — not visible in daily data but the $62,833 recovery suggests long-term holders who began buying in the $60,000-$62,000 zone are defending their positions; they are not re-entry signals for the framework (which requires $65,000 close).",
+
+  "news": [
+    {
+      "label": "Bitcoin Price Today (August 13): $65K Resistance, Failed Breakout and Weak Post-CPI Momentum Pressure BTC — Two $64K Rejections in One Session",
+      "url": "https://sundayguardianlive.com/business/bitcoin-price-today-august-13-why-is-bitcoin-btc-down-today-65k-resistance-failed-breakout-and-weak-post-cpi-momentum-pressure-btc-check-latest-prices-in-usd-inr-gbp-euro-jpy-260435/",
+      "source": "Sunday Guardian",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin Holds Steady Near $63,400 Amid ETF Outflows and Macro Uncertainty — Step-Aside Conditions Both Unmet",
+      "url": "https://www.interactivecrypto.com/bitcoin-holds-steady-near-63-400-amid-etf-outflows-and-macro-uncertainty-aug-2026",
+      "source": "Interactive Crypto",
+      "sentiment": "negative"
+    },
+    {
+      "label": "US Spot-Bitcoin ETFs See $61.1 Million in Net Outflows After One Day of Inflows — Condition 2 Reverts to Not Met",
+      "url": "https://en.bloomingbit.io/feed/news/118249",
+      "source": "Bloomingbit",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Crypto Daily Market Report – August 13, 2026: BTC Range-Bound $62,833-$64,017; Two $64K Resistance Tests Failed",
+      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-august-13-2026",
+      "source": "KuCoin",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin Market Resistance Nears $65,000 — Saylor's Model Analysis Shows $64K-$65K as Critical Overhead Supply Zone",
+      "url": "https://en.cryptonomist.ch/2026/08/12/bitcoin-market-resistance-65000/",
+      "source": "Cryptonomist",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The step-aside remains the correct posture. The dual $64K rejections and ETF outflow reversion remove both technical and fundamental catalysts for a near-term re-entry. BTC must close above $65,000 (currently $1,582 away, a 2.5% gain from today's close) with concurrent positive daily ETF flows. The most likely near-term scenario is range-bound consolidation between the $62,833 session low and the $64,000-$64,500 resistance zone. A sustained 3+ consecutive positive ETF flow session and a macro catalyst (rate cut news, large institutional announcement) would be required to drive a clean close above $65,000. The $62,833 low is a watch level: a break below it on a closing basis would represent further deterioration and push the step-aside framework toward evaluating a lower potential re-entry threshold.",
+    "long_term": "The structural bull case for BTC — September FOMC rate hold-to-cut trajectory, long-term institutional adoption via spot-BTC ETFs, and the Bitcoin halving effect (April 2024 supply reduction still working through the market) — remains intact. The $65,000 re-entry threshold is a risk-management filter, not a valuation judgment; BTC could absolutely rally above $65,000 from here. The framework's conservatism is warranted by the current technical evidence: failing to hold above key moving averages (20-day EMA $64,147, 50-day EMA $64,557) on what should have been a bullish macro catalyst (CPI in-line, September FOMC pause confirmed) is a caution signal. A re-entry above $65,000 remains the most responsible path."
+  },
+
+  "bull_case": [
+    "The $62,833 bottom wick with high-volume recovery — dip buyers absorbed the flash capitulation immediately and returned BTC to $63,165+ within the same candle; the $62,800-$63,000 zone has demonstrated accumulation buyer support in two sessions (Aug 12 low $63,243, Aug 13 low $62,833); this suggests a base is forming",
+    "September FOMC rate hold (confirmed post-CPI July in-line data) is structurally positive for BTC: lower opportunity cost for non-yielding assets, dollar weakness potential, and the long-term narrative of institutional adoption supported by central bank accommodation",
+    "ETF outflow is modest ($61.1M) compared to the Aug 10 outflow ($144.67M) and the prior week's five-session inflow streak ($854M aggregate): the outflow trend is not a capitulation event but a routine profit-taking cycle; sustained positive flows are more likely to return within 3-5 sessions if the price stabilizes above $62,800",
+    "Two-sided range with defined bounds: $62,800-$63,000 support / $64,000-$64,500 resistance provides range traders with a clear framework; if BTC resolves this range with a close above $64,500, the path to $65,000 becomes achievable within 1-2 sessions; the post-CPI macro backdrop (risk-on) provides a tailwind for this scenario"
+  ],
+
+  "bear_case": [
+    "Two separate tests of $64,000 resistance in a single session — both decisively rejected at $64,017 and $64,006: when resistance is tested twice in one session and both attempts fail, the probability of a third attempt succeeding decreases meaningfully; the $64K ceiling has now been validated with double evidence",
+    "BTC dropped back below both the 20-day EMA ($64,147) and 50-day EMA ($64,557) after the failed breakout — breaking the EMA cluster is typically a precondition for trend confirmation; two consecutive days below these levels after a brief recapture attempt is technically bearish and suggests the July sell-off trend has not been reversed",
+    "ETF flows reverted to negative on the day after the only positive flow day: the net -$61.1M on Aug 12 (reported Aug 13 morning) shows that institutional demand for BTC products remains inconsistent and below the sustained-positive-flow threshold that would justify re-entry; a single positive day ($4.89M) followed by a negative reversal does not establish demand",
+    "The $65,000 re-entry threshold is 2.5% above today's close and requires both a significant price move AND concurrent positive ETF flows — the dual-condition nature of the re-entry filter means small advances of 1-2% are insufficient; BTC can oscillate $500-$800 per session within the $62,800-$64,500 range without triggering either condition"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $62,833.76: today's session low; flash capitulation wick with highest hourly session volume; bottom wick recovery from $62,833 to close $63,165 suggests absorbed demand at this level; two consecutive sessions where the low has been higher than the prior low's vicinity (Aug 12 low $63,243 vs Aug 13 low $62,833 — a minor break lower); a closing candle below $62,833 would signal further deterioration toward $62,000 prior support",
+      "level": "$62,833",
+      "kind": "support"
+    },
+    {
+      "label": "$63,000: round-number psychological support; the $62,833-$63,100 zone held on the intraday recovery after the flash low; multiple analysts cite $62,000-$63,000 as the 'strong resistance that has become support' per Bitfinex Alpha analysis",
+      "level": "$63,000",
+      "kind": "support"
+    },
+    {
+      "label": "$63,418.13: today's reference close (20:00 UTC Crypto.com candle) — pivot for tomorrow's session; open below this level on Aug 14 is bearish confirmation; open above and hold is range stabilization",
+      "level": "$63,418",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest resistance — $64,000–$64,017: today's double-test rejection zone; the session high was $64,017.77 (05:00 UTC) and the second test peaked at $64,006.72 (14:00 UTC); both rejected with selling intensity; also near the 20-day EMA ($64,147) and midpoint of the 50-day EMA cluster; this is the most evidenced near-term ceiling in the technical picture",
+      "level": "$64,000–$64,017",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,147: 20-day EMA — BTC closed $729 below this level; reclaiming the 20-day EMA on a closing basis is the first technical prerequisite before $65,000 becomes achievable; failed EMA recapture after the post-CPI spike is a bearish signal",
+      "level": "$64,147",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,557: 50-day EMA — BTC closed $1,139 below this level; the 50-day EMA cluster alongside the 20-day EMA ($64,147) creates a resistance zone from $64,147 to $64,557 that BTC must clear on a closing basis before the $65,000 re-entry threshold becomes plausible",
+      "level": "$64,557",
+      "kind": "resistance"
+    },
+    {
+      "label": "$65,000: Framework Condition 1 re-entry threshold — a closing price above this level (on a 20:00 UTC Crypto.com 1h candle basis) is required for the step-aside to end; currently $1,582 above today's close (2.5%); also the key psychological resistance identified in multiple analyst reports as the level BTC must clear for trend confirmation",
+      "level": "$65,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$66,735: 100-day EMA — the medium-term trend reference; above the 100-day EMA signals structural recovery; at $3,317 above today's close, this level is the intermediate bull-case target if the step-aside re-entry criteria are met",
+      "level": "$66,735",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-13",
+      "label": "Aug 12 ETF flows reported: net -$61.1M (IBIT -$14.3M, FBTC -$46.8M est.) — Condition 2 reverts to not met. Two $64K rejections in one session ($64,017 at 05:00 UTC; $64,006 at 14:00 UTC). Flash low $62,833.76 at 16:00 UTC. Reference close $63,418.13 (-$189.14/-0.30%). Both step-aside conditions unmet.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-14",
+      "label": "Aug 13 ETF flows reported (morning) — key Condition 2 watch: a second consecutive day of positive flows following a potential multi-day positive streak would re-establish Condition 2; continuation of outflows deepens step-aside conviction.",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "FOMC rate decision — confirmed September pause (post-July CPI in-line): rate hold is priced in and mildly positive for BTC; a surprise cut would be more materially bullish and could catalyze a move toward $65,000+.",
+      "importance": "medium"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Step-Aside Framework — Dual-Condition Status\n\n| Condition | Threshold | Aug 12 (prev dossier) | Aug 13 (today) | Status |\n|-----------|-----------|----------------------|----------------|--------|\n| (1) Reference close | > $65,000 | $63,607.27 | $63,418.13 | ✗ NOT MET ($1,582 below) |\n| (2) ETF flows | Net positive | MET (+$4.89M Aug 11 flows) | NOT MET (-$61.1M Aug 12 flows) | ✗ REVERTED |\n\n**Framework verdict: STEP-ASIDE, HIGH CONVICTION. Both conditions now unmet.**\n\n---\n\n### Session Structure — Two $64K Tests and a Flash Low\n\nThe Aug 13 session is the clearest technical case study in BTC's current range dynamics:\n\n**Phase 1 — Asia Rally (00:00-05:00 UTC):**\nBTC carried post-CPI optimism from U.S. equity markets into the Asia session. A steady climb from the $63,484 open reached the session high of $64,017.77 at 05:00 UTC — touching the $64,000 psychological ceiling for the first time since August 10. Volume was modest (typical Asia-session thin trading).\n\n**Phase 2 — First Rejection and Fade (05:00-11:00 UTC):**\nFrom the $64,017 high, BTC faded steadily through the European morning session, pulling back to $63,484 by 11:00 UTC. The fade was orderly — no panic, just systematic selling from accounts who faded the $64,000 level.\n\n**Phase 3 — Recovery and Second Test (12:00-14:00 UTC):**\nA recovery attempt drove BTC from $63,484 back to $64,006.72 at 14:00 UTC — a second nearly-identical test of $64,000 resistance. This is the critical pattern: two tests at the same level within 9 hours of each other, both precisely at $64,000. This is institutional resistance, not random noise.\n\n**Phase 4 — Distribution and Capitulation (14:00-16:00 UTC):**\n- 14:00 UTC: Second $64K rejection peak\n- 15:00 UTC: The distribution candle — O $63,863, H $63,945, C $63,410; a $453 close-from-open loss in one hour; this is a textbook distribution signature (open high, close low) with sellers absorbing all buying pressure\n- 16:00 UTC: The capitulation candle — O $63,414, H $63,570, L $62,833.76 (session low), C $63,165; flash decline of $581 from open to low in minutes, then recovery of $332 from low to close; highest hourly volume of the session on Crypto.com (~264 BTC); the bottom wick pattern suggests leveraged-long stop-losses triggered the $62,833 spike, and dip buyers immediately absorbed\n\n**Phase 5 — Slow Recovery (17:00-20:00 UTC):**\nFrom the $62,833 flash low, BTC ground higher over four hours: $63,137 → $63,311 → $63,411 → $63,418.13 (reference close). The recovery was low-volume, suggesting it was organic accumulation rather than short-covering. The close at $63,418 is effectively flat with the $63,414 close of the 16:00 UTC candle — the recovery fully retraced the capitulation but added no new ground.\n\n### Volume Context\n\n| Period | Crypto.com Volume | Significance |\n|--------|-------------------|---------------|\n| 05:00 UTC (session high) | 39.77 BTC | Low volume — $64K spike was thin; not institutional |\n| 14:00 UTC (2nd test) | 120.01 BTC | Moderate — more participation on second test |\n| 15:00 UTC (distribution) | 61.08 BTC | Moderate — organized distribution, not panic |\n| 16:00 UTC (flash low) | 264.51 BTC | HIGH — stop-loss cascade + dip buyers meeting |\n| 17:00-20:00 UTC (recovery) | 348.5 BTC total | Low-to-moderate — organic, thin recovery |\n\nThe pattern: high volume at the flash low ($62,833) absorbs stop-loss liquidations and establishes the near-term floor. Low volume at the $64,000 tests shows the bulls lacked conviction. This is the technical signature of a range-bound market: sellers appear at the top, buyers at the bottom, with no directional conviction.\n\n### EMA Structure — Key Technical Context\n\n| Moving Average | Level | BTC Close vs MA | Interpretation |\n|----------------|-------|-----------------|----------------|\n| 20-day EMA | $64,147 | -$729 (-1.1%) BELOW | Bearish — failed recapture |\n| 50-day EMA | $64,557 | -$1,139 (-1.8%) BELOW | Bearish — well below |\n| 100-day EMA | $66,735 | -$3,317 (-5.2%) BELOW | Trend confirmation pending |\n| Re-entry threshold | $65,000 | -$1,582 (-2.5%) BELOW | Framework stop |\n\nBTC closed below all key moving averages AND below the re-entry threshold. The post-CPI EMA recapture attempt (Aug 12-13) has been rejected at the 20-day EMA cluster. This is the primary technical argument for maintaining the step-aside: the trend has not reversed.\n\n### ★ Strongest Support — $62,833.76 (Flash Low)\n\nEvidence:\n1. Highest hourly volume of the session at the low — $62,833 attracted buyers at scale; the 264 BTC Crypto.com volume in the 16:00 UTC candle alone represents $16.7M in that single hour\n2. Bottom wick recovery of $332 within the same candle — buyers absorbed immediately, preventing a close at the extreme low\n3. The session low being $584 below the reference close ($63,418) with a $332 intrabar recovery shows there IS demand below $63,000 — but the framework requires the CLOSE to be above $65,000, not just a wicking low at $62,833\n4. Caveat: the $62,833 low is lower than Aug 12's $63,243 low — a minor 'lower low' pattern on the daily timeframe; a closing candle below $62,833 would signal further deterioration\n\n### ★ Strongest Resistance — $64,000–$64,017 (Double Rejection)\n\nEvidence:\n1. Two tests at nearly identical levels (within $11 of each other) in a single session — this is the highest-evidence resistance in the chart; the market has now confirmed $64,000 as a ceiling twice in one day\n2. Each test was met with distribution volume (61-120 BTC per hour) on Crypto.com — organized selling, not retail panic\n3. The $64,000 level is also below the 20-day EMA ($64,147) and 50-day EMA ($64,557) — institutional sellers from these MAs have downside targets and will sell into any bounce toward the EMA cluster\n4. Multiple analyst reports (Sunday Guardian, Interactive Crypto, Cryptonomist) confirm the $64,000-$65,000 zone as the primary overhead resistance for August 2026\n\n### What Triggers Re-Entry\n\nBoth conditions must be met simultaneously:\n\n**Condition 1 — Reference Close > $65,000:**\n- Requires a $1,582 (2.5%) gain from today's close without reversal at the 20-day EMA ($64,147), 50-day EMA ($64,557), or the double-rejection zone ($64,000-$64,017)\n- Most likely catalyst: a significant institutional announcement, positive macro surprise, or sustained ETF inflows driving momentum through the EMA cluster in a single session\n\n**Condition 2 — Positive Net ETF Flows:**\n- Requires one or more consecutive days of net positive U.S. spot-BTC ETF flows\n- After Aug 10's -$144.67M and Aug 12's -$61.1M, two consecutive positive-flow days would re-establish the condition\n- Most likely catalyst: large IBIT inflow on a positive price day creates a self-reinforcing cycle\n\n**The dual-condition filter's value:** BTC could easily gap above $65,000 on a low-volume Asia-session move and close there briefly, then reverse. The ETF-flow condition ensures that institutional demand has returned on a measurable basis — not just a speculative spike. Both conditions must be met in the SAME session to trigger re-entry."
+}
