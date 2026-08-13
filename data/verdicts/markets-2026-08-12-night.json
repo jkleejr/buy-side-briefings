@@ -2,12 +2,15 @@
   "routine": "markets",
   "date": "2026-08-12",
   "window": "night",
-  "generated_at": "2026-08-12T21:30:00Z",
+  "generated_at": "2026-08-13T01:15:00Z",
   "is_seed": false,
   "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "conviction": "medium",
     "headline": "Tame CPI core eases September odds; Cisco's beat-and-sell signals AI trade altitude",
-    "label": "CPI core 2.5% — below soft threshold; September odds 38–40%; CRWV +19.5%; CSCO beat-and-raise drops 4% AH",
-    "rationale_short": "July CPI's split print — 3.4% headline (in-line) with core at 2.5%, below the morning's own soft-scenario threshold — shifted September hike odds from ~50% to ~38–40%. CRWV extended to $107.96 (+19.5%), NVDA settled at $223.40, and AMD resolved its floor test upward (+3%). The counter-signal: Cisco's $17.3B Q4 beat with FY2027 guidance well above consensus still drew a 4% after-hours sell, establishing that the AI infrastructure trade has priced substantial good news ahead of NVDA's August 26 print. Level that changes the equity-resilience read: SPX closes below 7,600 and 30Y prints above 5.28% on the same day.",
+    "label": "HOLD — 3 of 6 breached: CPI core 2.5% — below soft threshold; September odds 38–40%; CRWV +19.5%; CSCO beat-and-raise drops ~2% AH",
+    "rationale_short": "July CPI's split print — 3.4% headline (in-line) with core at 2.5%, below the morning's own soft-scenario threshold — shifted September hike odds from ~50% to ~38–40%. CRWV extended to $107.96 (+19.5%), NVDA settled at $223.40, and AMD resolved its floor test upward (+3%). The counter-signal: Cisco's $17.3B Q4 beat with FY2027 guidance well above consensus still drew a ~2% after-hours sell, establishing that the AI infrastructure trade has priced substantial good news ahead of NVDA's August 26 print. Level that changes the equity-resilience read: SPX closes below 7,600 and 30Y prints above 5.28% on the same day.",
     "supporting_data": [
       {
         "label": "July CPI +0.1% MoM, +3.4% YoY; core +0.2% MoM / +2.5% YoY — headline in-line, core below soft threshold",
@@ -22,7 +25,7 @@
         "url": "https://www.tradingkey.com/news/market-movers/262100371-market-movers-crwv-20260812"
       },
       {
-        "label": "CSCO Q4 FY26: $17.3B rev (beat), EPS $1.22 (beat), $9.3B AI orders FY26; FY27 guide $72.2–73.4B — AH −4%",
+        "label": "CSCO Q4 FY26: $17.25B rev (beat), EPS $1.22 (beat), $9B AI orders FY26; FY27 guide $72.2–73.4B — AH ~−2%",
         "url": "https://finance.yahoo.com/markets/stocks/articles/cisco-reports-fourth-quarter-fiscal-200500620.html"
       },
       {
@@ -36,11 +39,11 @@
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7745.0,  "change_pct":  0.30, "as_of": "2026-08-12T20:00:00Z" },
-    "nasdaq": { "level": 26687.0, "change_pct":  0.59, "as_of": "2026-08-12T20:00:00Z" },
+    "sp500":  { "level": 7748.5,  "change_pct":  0.26, "as_of": "2026-08-12T20:00:00Z" },
+    "nasdaq": { "level": 26588.5, "change_pct":  0.54, "as_of": "2026-08-12T20:00:00Z" },
     "vix":    { "level": 15.28,   "change_pct":  0.00, "as_of": "2026-08-12T20:00:00Z" },
-    "ust10y": { "level": 4.69,    "change_bps": -4,    "as_of": "2026-08-12T20:00:00Z" },
-    "dxy":    { "level": 99.83,   "change_pct": -0.01, "as_of": "2026-08-12T20:00:00Z" }
+    "ust10y": { "level": 4.65,    "change_bps": -3,    "as_of": "2026-08-12T20:00:00Z" },
+    "dxy":    { "level": 99.84,   "change_pct":  0.01, "as_of": "2026-08-12T20:00:00Z" }
   },
   "regime_risk": [
     { "name": "30Y Yield",           "value": 5.25,   "trigger_above": 5.00,  "unit": "%" },
@@ -48,7 +51,7 @@
     { "name": "Brent Crude",         "value": 89.0,   "trigger_above": 85.0,  "unit": "$/bbl" },
     { "name": "WTI Crude",           "value": 83.09,  "trigger_above": 79.0,  "unit": "$/bbl" },
     { "name": "SPX vs 7,380",        "value": 7745.0, "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 64200,  "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",          "value": 63580,  "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
@@ -63,7 +66,7 @@
     },
     {
       "ticker": "CSCO",
-      "note": "Q4 FY2026: revenue $17.3B vs $16.83B est; non-GAAP EPS $1.22 vs $1.17 est; $4B Q4 AI orders ($9.3B FY26 total); FY2027 guidance $72.2–73.4B (EPS $5.05–5.11 vs $4.64 consensus). AH reaction: −4%. A strong beat-and-raise still sold off, establishing the 'good news already priced' ceiling for AI infrastructure names at current altitudes.",
+      "note": "Q4 FY2026: revenue $17.25B vs est (beat), non-GAAP EPS $1.22 (beat); $9B AI orders FY26 total; FY2027 guidance $72.2–73.4B above consensus. AH reaction: ~−2%. A solid beat-and-raise still sold off, establishing the 'good news already priced' ceiling for AI infrastructure names at current altitudes.",
       "sentiment": "negative"
     },
     {
@@ -93,7 +96,7 @@
     },
     {
       "ticker": "BTC",
-      "note": "~$64,200 (+~1%). Gate 2 ($62K) buffer ~$2.2K. September odds at ~38-40% reduce the near-term hike risk premium that had been pressuring crypto. PPI Thursday is the next macro input.",
+      "note": "~$63,580 (live post-close; 24h range $63,298–$64,521). Gate 2 ($62K) buffer ~$1,580. September odds at ~38-40% reduce the near-term hike risk premium that had been pressuring crypto. Buffer has tightened from ~$2.2K at earlier read. PPI Thursday is the next macro input.",
       "sentiment": "positive"
     }
   ],
@@ -120,6 +123,6 @@
       "horizon": "Through August 20 tranche and October Q3 earnings (Starlink profitability, AI segment)."
     }
   ],
-  "bear_case": "CPI's 2.5% core is one month's data, not a trend. The 30Y at ~5.25% has been above 5.00% for 13 consecutive sessions; it did not compress on a core surprise. CSCO's 4% AH sell on a beat-and-raise quantifies the altitude ceiling for the AI infrastructure trade — NVDA at $223.40 faces the identical dynamic on August 26 with no de-risk window before Jackson Hole on August 27. July PPI tomorrow carries the energy-component read from a month when WTI held $82-83; a hot PPI energy print re-anchors September odds above 40% and sends the 30Y back toward 5.28%. The level that invalidates the equity-resilience read: SPX closes below 7,600 on or within two sessions of the PPI print.",
+  "bear_case": "CPI's 2.5% core is one month's data, not a trend. The 30Y at ~5.25% has been above 5.00% for 13 consecutive sessions; it did not compress on a core surprise. CSCO's ~2% AH sell on a beat-and-raise quantifies the altitude ceiling for the AI infrastructure trade — NVDA at $223.40 faces the identical dynamic on August 26 with no de-risk window before Jackson Hole on August 27. July PPI tomorrow carries the energy-component read from a month when WTI held $82-83; a hot PPI energy print re-anchors September odds above 40% and sends the 30Y back toward 5.28%. The level that invalidates the equity-resilience read: SPX closes below 7,600 on or within two sessions of the PPI print.",
   "body_mdx": "data/briefings/markets/2026-08-12-night.mdx"
 }
