@@ -1,0 +1,114 @@
+{
+  "routine": "markets",
+  "date": "2026-08-13",
+  "window": "morning",
+  "generated_at": "2026-08-13T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Cisco's AI networking beat confirms infrastructure demand as oil eases from Hormuz highs",
+    "code": "hold",
+    "emoji": "⚖️",
+    "label": "3-of-6 regime active: CSCO +1.7% pre-market (AH-faded from +8% pop) on $17.3B Q4 beat; Brent $87.92 (−$3.68); PPI 8:30 AM ET; 10Y 4.65% (−3bps)",
+    "conviction": "medium",
+    "horizon": "2-3 days",
+    "rationale_short": "July CPI landed exactly at consensus — 3.4% YoY / 0.1% MoM / core 2.5% — eliminating the upside-surprise channel that would have pushed September hike odds above 65% and 30Y above 5.28%. The S&P closed +0.26% at 7,749; Nasdaq +0.54% at 26,588. Futures edge +0.08% / +0.13% this morning — controlled handoff, not a breakout. Cisco's Q4 FY2026 beat ($17.3B revenue +18% YoY, non-GAAP EPS $1.22, AI orders $4B quarterly / $9B cumulative, FY27 guidance $72.2–73.4B) confirms enterprise networking and infrastructure demand is durable. The stock's AH-fade from +8% initial pop to +1.7% pre-market is a 'priced-in' signal on a name up 60% YTD, not a fundamental miss. Brent's overnight decline from $91.60 to $87.92 (−$3.68, −1.19%) tracks Iran-Oman Hormuz diplomacy — FM Araghchi confirmed proximity to a deal but conditioned reopening on US sanctions relief and war reparations, meaning 8–15 vessel transits/day (vs. ~130 pre-conflict) remain the structural ceiling. Regime count unchanged at 3-of-6 (30Y ~5.18%, Brent $87.92, WTI $82.11). Today's decisive catalyst: July PPI at 8:30 AM ET — consensus headline +0.1% MoM / +2.3% YoY. Soft/in-line print extends the CPI confirmation and pushes September hike probability toward 25%; hot print (≥+0.3% / +2.8% YoY) reopens the rate debate and likely drives 30Y back toward 5.25%+ before August 27 Jackson Hole.",
+    "supporting_data": [
+      {
+        "label": "CSCO Q4 FY2026: $17.3B revenue (+18% YoY, beat $16.82B est), EPS $1.22 (beat $1.17), AI orders $9B cumulative, FY27 guidance $72.2–73.4B; AH-faded from +8% to +1.7% pre-market",
+        "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2026-EARNINGS/default.aspx"
+      },
+      {
+        "label": "July CPI 3.4% YoY / 0.1% MoM / core 2.5% — in-line on every measure; gasoline −2.9% MoM; shelter +0.1%; no upside surprise to rate path",
+        "url": "https://www.nbcnews.com/business/economy/cpi-inflation-july-2026-rcna591698"
+      },
+      {
+        "label": "July PPI preview: headline +0.1% MoM / +2.3% YoY consensus; release 8:30 AM ET Aug 13; prices seen subdued at survey date",
+        "url": "https://continuumeconomics.com/a/b6e8faf2/preview-due-august-13-us-july-ppi-prices-seen-subdued-when-data-was-surveyed"
+      },
+      {
+        "label": "Iran FM Araghchi: close to Oman-mediated Hormuz deal but conditions US sanctions relief + war reparations unmet; Strait at 8–15 transits vs. ~130 pre-conflict; Oman oil spill emerging threat",
+        "url": "https://edition.cnn.com/2026/08/13/world/live-news/iran-war-trump"
+      },
+      {
+        "label": "S&P 500 +0.26% to 7,749; Nasdaq +0.54% to 26,588 on Aug 12 — CPI in-line eases rate pressure; futures +0.08% / +0.13% pre-market Aug 13",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/08/12/stock-market-today-aug-12-stocks-edge-higher-as-inflation-data-eases-fed-rate-pressure/"
+      },
+      {
+        "label": "BTC $63,655 (Crypto.com live, 11:02 UTC Aug 13) — Gate 2 ($62K) buffer $1,655, compressed from $2,194 yesterday; September hike prob declining post-CPI",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7749.0,  "change_pct":  0.26,  "as_of": "2026-08-12T20:00:00Z" },
+    "nasdaq": { "level": 26588.0, "change_pct":  0.54,  "as_of": "2026-08-12T20:00:00Z" },
+    "vix":    { "level": 14.85,   "change_pct": -2.81,  "as_of": "2026-08-13T11:00:00Z" },
+    "ust10y": { "level": 4.65,    "change_bps": -3,     "as_of": "2026-08-13T11:00:00Z" },
+    "dxy":    { "level": 99.50,   "change_pct": -0.34,  "as_of": "2026-08-13T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",           "value": 5.18,   "trigger_above": 5.00,  "unit": "%" },
+    { "name": "September Hike Prob", "value": 35.0,   "trigger_above": 70.0,  "unit": "%" },
+    { "name": "Brent Crude",         "value": 87.92,  "trigger_above": 85.0,  "unit": "$/bbl" },
+    { "name": "WTI Crude",           "value": 82.11,  "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "SPX vs 7,380",        "value": 7749.0, "trigger_below": 7380,  "unit": "" },
+    { "name": "BTC Gate 2",          "value": 63655,  "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CSCO",
+      "note": "Q4 FY2026 delivered across every metric: revenue $17.3B (+18% YoY, beat $16.82B), non-GAAP EPS $1.22 (beat $1.17), AI orders $4B in the quarter ($9B cumulative, above $3.7B prior guidance), FY27 guidance $72.2–73.4B (above analyst expectations). Product orders +35% YoY, +25% excl. hyperscalers — demand broad-based across every geography and customer market. The tell is not the beat but the reaction: initial AH pop to +8% faded to +1.7% pre-market, with the stock stuck below $124.62 resistance after a 60% YTD run. That asymmetry — beats every number, doesn't break resistance — is the 'priced-in' signal. Fundamentally the infrastructure bull case is confirmed. Tactically the stock needs a vol compression period before the next leg. Watch August 27 Jackson Hole for rate-path clarity as the next potential re-rating catalyst.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "CSCO's $9B cumulative AI orders and $4B quarterly demand run-rate directly validates NVDA's Blackwell backlog narrative ahead of August 26 Q2 FY27. The read-through: enterprise networking demand accelerating (+35% YoY orders) means AI infrastructure buildout is still in early innings, not peak spend. NVDA pre-market tracking slightly positive on the CSCO read-through. $216 structural support remains the floor; $225 resistance the target. Two conditions still required to invalidate the setup: hot PPI AND 30Y above 5.25% at Thursday's close.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "No new catalyst overnight. AMD continues its $484 floor test — the most rate-sensitive large-cap AI name in the setup. PPI at 8:30 AM ET is the binary: soft print (≤+0.1% / ≤+2.3% YoY) extends the floor-resolution-upward thesis toward $500; hot print (≥+0.3% / +2.8% YoY) brings $484 back under pressure. Yesterday's Nasdaq +0.54% gain on CPI was a positive setup, and futures +0.13% this morning maintains the bid. No change to the thesis.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Yesterday's primary catalyst. Today the question is whether the +16% pre-market move sustained through the August 12 session or if AH fatigue set in, similar to CSCO's AH-fade pattern. CSCO's AI orders confirmation ($9B cumulative, $4B quarterly) is positive context for CRWV's $104B backlog — the demand narrative is intact. Watch for any follow-through buying in neocloud names (IREN, Cipher Digital) as a confirming signal that yesterday's infrastructure rerating was durable.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$63,655 (Crypto.com live, 11:02 UTC). Gate 2 ($62K) buffer compressed from $2,194 yesterday to $1,655 today — modest drift lower on overnight BTC weakness (−0.86%). September hike probability declining from 50% post-CPI is a positive macro tailwind; if PPI prints soft, September odds approaching 25% would remove a key rate headwind. The stress scenario remains a hot PPI print pushing September odds back above 50%, which historically compresses risk appetite and challenges the $62K gate. Buffer thin but not yet at risk.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "Prior close ~$306. No new catalyst. Jefferies Underperform (PT $263.66) in Day 4 with no evidence of a rebuttal catalyst. AI iPhone upgrade cycle remains the unfounded bull thesis — no form-factor evidence. CSCO's enterprise AI spend confirmation does not translate to consumer hardware demand.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "July PPI — Thursday August 13, 8:30 AM ET",
+      "thesis": "PPI arrives as the direct sequel to yesterday's in-line CPI, making it the highest-information release of the week. Consensus: headline +0.1% MoM / +2.3% YoY, core +0.2% MoM. The Continuum Economics preview noted prices were subdued at the survey date — before Brent's move to $91+ in the final survey window. Two scenarios define the session: (1) Soft/in-line (≤+0.1% / ≤+2.3%): confirms CPI was not a one-print anomaly, pushes September hike probability toward 25%, 30Y compresses toward 5.10%, AI infrastructure and rate-sensitive names extend yesterday's gains. (2) Hot (≥+0.3% / ≥+2.8%): reopens the rate debate before August 27 Jackson Hole, 30Y moves toward 5.25%+, NVDA tests $216 support, AMD tests $484 floor. The asymmetry: a soft print is partially priced in (futures only +0.08%), so the upside surprise is modest; a hot print is not priced in and produces outsized downside — especially with 30Y already at 5.18%.",
+      "entry": "Watch 30Y direction in the first 30 minutes post-print: below 5.10% is the de-escalation signal; above 5.25% is the rate-debate-reopened signal.",
+      "invalidation": "Soft print (≤+0.1% / ≤+2.3%) removes PPI as a near-term narrative and extends the CPI relief rally into next week.",
+      "horizon": "8:30 AM ET today; secondary read for August 27 Jackson Hole positioning."
+    },
+    {
+      "asset": "CSCO — post-earnings price action into $124.62 resistance",
+      "thesis": "CSCO beat every metric and raised guidance, yet the stock faded from +8% AH to +1.7% pre-market — a classic 'priced-in' dynamic on a stock up 60% YTD. The TradingKey framework identifies $124.62 as near-term resistance. The setup: if PPI is soft, CSCO gets a rate-tailwind to close the AH-fade gap and test $124.62; if PPI is hot, the AH-fade extends and the $120 level (pre-earnings close) becomes the new base test. Tactically, CSCO is not a new entry at current levels — the entry point was the CRWV-driven infrastructure re-rating earlier this week. The near-term trade is a rate-path binary: PPI decides whether $124.62 acts as resistance or becomes a launchpad.",
+      "entry": "CSCO pre-market ~$122.52 (up 1.7%). $120 prior close support. $124.62 resistance. PPI is the binary gating the direction.",
+      "invalidation": "Hot PPI AND CSCO fails $120 on a closing basis — both conditions simultaneously indicate the AH-fade is a structural re-rating, not a temporary absorption.",
+      "horizon": "Today's session through August 27 Jackson Hole."
+    },
+    {
+      "asset": "NVDA — CSCO demand confirmation into August 26 Q2 FY27",
+      "thesis": "CSCO's $4B quarterly / $9B cumulative AI orders with FY27 AI revenue targets raised to $6.5–7B is the most concrete demand-chain validation for NVDA's Blackwell cycle since CRWV's $104B backlog. At $222 pre-market (from yesterday's close), NVDA prices a soft PPI and a clean August 26 simultaneously. The residual risk: hot PPI introduces simultaneous rate and supply pressure before the August 26 print, the same dual-headwind scenario that constrained the setup through the oil-escalation period. The two conditions for downside: hot PPI AND 30Y above 5.25% at Thursday's close.",
+      "entry": "NVDA ~$222 pre-market. $216 structural support. $225 resistance. August 26 Q2 FY27 is the terminal catalyst — gross margin above 76% and guide above consensus required.",
+      "invalidation": "Hot PPI AND 30Y above 5.25% AND NVDA fails $216 on a closing basis.",
+      "horizon": "Today through August 26 Q2 FY27 print."
+    }
+  ],
+  "bear_case": "The bull case is increasingly priced in at 7,749 SPX — an index that has absorbed CPI, multiple oil spikes, and Hormuz closure while remaining above 7,700. CSCO's AH-fade from +8% to +1.7% despite beating every metric (revenue +18%, EPS beat, AI orders above guidance, guide-raise) is the clearest signal yet that the AI infrastructure trade is entering a phase where 'beats must be perfect and then some' to produce incremental gains. Three structural risks remain unresolved: (1) PPI today. Consensus is soft (+0.1%/+2.3%) but the survey predates Brent's $88–92 range in the July window — producer energy costs may not show the gasoline relief that CPI captured. A hot print (≥+0.3%/+2.8%) is not priced into +0.08% futures and would directly challenge the 30Y at 5.18%, already 18bps above the 5.00% trigger. (2) Hormuz Strait. FM Araghchi's conditions — sanctions relief plus war reparations — have no viable near-term US compliance pathway. The diplomacy is real, but 8–15 vessel transits versus 130 pre-conflict means the physical supply disruption continues. Brent at $87.92 has declined $3.68 but remains $2.92 above the $85 trigger. A deal-failure headline (which Araghchi's conditions make structurally likely in the near term) would re-spike Brent toward $91–93. (3) BTC Gate 2 buffer compressing. $63,655 versus the $62K gate leaves $1,655 of buffer — down from $2,194 yesterday. A hot PPI print pushing September hike odds from 35% back toward 55% would compress this buffer further. The level that resets the equity-resilience read: SPX closes below 7,600 within two sessions of today's PPI print.",
+  "body_mdx": "data/briefings/markets/2026-08-13-morning.mdx"
+}
