@@ -2,123 +2,106 @@
   "routine": "markets",
   "date": "2026-08-14",
   "window": "morning",
-  "generated_at": "2026-08-14T11:08:15Z",
+  "generated_at": "2026-08-14T11:46:20Z",
   "is_seed": false,
   "verdict": {
-    "code": "hold",
-    "emoji": "⚖️",
-    "headline": "AMAT slips on mixed earnings, lifting the stakes for Nvidia's critical August 26 report",
-    "label": "AMAT −3.89% AH (EPS beat, rev miss) extends altitude ceiling to semi-equipment; Retail Sales + UMich (8:30/10:00 ET) are session pivots; SPX record 7,799 holds into options expiration",
-    "conviction": "medium",
-    "horizon": "2 weeks",
-    "rationale_short": "July PPI came in flat at 0.0% MoM (vs. +0.2% est.), core +0.2% (vs. +0.3% est.) — the first material dovish surprise in the inflation string since CPI: 30Y fell 2.2 bps to 5.214%, September hike odds eased to an estimated ~32% (from ~40% pre-print), and the S&P 500 closed at a fresh intraday and closing record (7,798.99) before going flat after-hours. AMAT's Q3 FY26 result then reset the narrative overnight: EPS $3.50 beat $3.45, but revenue of $9.115B missed the $9.175B estimate by ~$61M, and the stock slid 3.89% AH. The CSCO beat-and-raise sell (−6% from $123.88, Aug 12) and AMAT's equipment-layer AH decline now bracket the full AI infrastructure stack — networking and semiconductor equipment have both demonstrated an altitude ceiling in back-to-back earnings prints. The implication for NVDA's August 26 print is direct: the market is not rewarding AI capex chain beats regardless of their quality. This session's remaining macro inputs are Retail Sales at 8:30 ET (headline est. +0.1–0.3%; core ex-auto est. +0.2%) and Michigan Consumer Sentiment preliminary at 10:00 ET (est. 54.5 vs. 55.2 prior). A consumer-side miss on both releases would converge with the AI premium compression narrative and create a bearish setup entering the two-week run-up to Jackson Hole (Aug 27-29). Level that changes the read: SPX close below 7,700 on combined retail miss + UMich below 53.",
+    "headline": "Bond market eases for first time in two weeks; S&P futures hold flat after record",
+    "label": "Post-record consolidation; 30Y drifts toward 5.19%; AMD and AMAT China signal in focus",
+    "rationale_short": "The 30Y has compressed pre-market to approximately 5.19% — the first meaningful move in the long end after CPI core 2.5% and PPI flat — but still 4bps above the 5.15% threshold needed to relieve growth-multiple pressure. September hike odds hold at ~33%. The session's two reads: whether today's 30Y close sustains the compression, and whether AMD's open reveals that AMAT's China equipment-demand signal is extending beyond capital goods to chip designers. If the 30Y reclaims 5.24% on no catalyst, Jackson Hole remains the only venue to move the long end before August 26.",
     "supporting_data": [
       {
-        "label": "AMAT Q3 FY26: EPS $3.50 (beat $3.45 est.), revenue $9.115B (miss $9.175B est.) — stock −3.89% AH; altitude ceiling confirmed in semi-equipment",
-        "url": "https://www.tipranks.com/news/amat-slips-despite-earnings-beat"
+        "label": "30Y ~5.19% pre-market — first break below 5.24% in 16 sessions after CPI core 2.5% and PPI 0.0%",
+        "url": "https://fred.stlouisfed.org/series/DGS30"
       },
       {
-        "label": "July PPI 0.0% MoM (vs. +0.2% est.), core +0.2% (vs. +0.3% est.); 30Y yield eased 2.2 bps to 5.214% on the print",
-        "url": "https://www.nbcnews.com/business/markets/stocks-bonds-ppi-inflation-rcna592331"
+        "label": "September hike odds ~33% — stable post-PPI; Warsh described Jackson Hole keynote as 'blank piece of paper'",
+        "url": "https://www.fxstreet.com/news/forex-today-easing-fed-rate-hike-bets-weigh-on-usd-amid-mideast-stalemate-202608140633"
       },
       {
-        "label": "S&P 500 record close 7,798.99 on Aug 13 (+0.65% session); Nasdaq 26,803.03 (+0.81%); Aug 14 futures flat pre-open",
-        "url": "https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html"
+        "label": "WTI $81.27, Brent $87.18 — Hormuz deal elusive; fresh tanker attacks; US claims 9M bpd transiting",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-13/latest-oil-market-news-and-analysis-for-aug-14"
       },
       {
-        "label": "30Y UST 5.214% — first meaningful compression since CSCO week; still above 5.00% regime trigger (15th+ consecutive session)",
-        "url": "https://www.cnbc.com/2026/08/13/treasury-yields-wall-street-inflation-data.html"
+        "label": "Reddit (RDDT) +12% pre-market on S&P 500 inclusion effective Aug 18; passive demand peaks at Aug 17 close",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/08/61198738/reddit-stock-pops-on-long-awaited-sp-500-inclusion"
       },
       {
-        "label": "Retail Sales (July, 8:30 ET) est. +0.1–0.3% MoM; Core Retail Sales (ex-auto) est. +0.2%; Michigan Consumer Sentiment prel. (10:00 ET) est. 54.5 vs. 55.2 prior",
-        "url": "https://www.investing.com/news/stock-market-news/retail-sales-and-core-retail-sales-among-economic-data-due-friday-93CH-4858936"
+        "label": "AMAT fell despite record revenue, profit, and 13th consecutive margin expansion — China demand softening cited alongside altitude",
+        "url": "https://stocksdownunder.com/applied-materials-amat-earnings-stock-drop/"
       },
       {
-        "label": "BTC $62,847 (live 11:02 UTC, Crypto.com) — Gate 2 buffer $847; narrowed $555 overnight from Aug 13 close ($63,402)",
-        "url": "https://crypto.com/price/bitcoin"
+        "label": "WDAY/Silver Lake buyout talks ongoing at ~$43B — no deal announced; 4-8 week resolution timeline",
+        "url": "https://www.benzinga.com/markets/private-markets/26/08/61194469/silver-lake-in-talks-to-take-workday-private-at-43-billion-valuation"
       }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7798.99,  "change_pct":  0.65, "as_of": "2026-08-13T20:00:00Z" },
-    "nasdaq": { "level": 26803.03, "change_pct":  0.81, "as_of": "2026-08-13T20:00:00Z" },
-    "vix":    { "level": 14.68,    "change_pct": -3.93, "as_of": "2026-08-13T20:00:00Z" },
-    "ust10y": { "level": 4.65,     "change_bps":  -2,   "as_of": "2026-08-14T11:00:00Z" },
-    "dxy":    { "level": 99.80,    "change_pct": -0.20, "as_of": "2026-08-14T11:00:00Z" }
+    "sp500":  { "level": 7798.99, "change_pct": 0.65, "as_of": "2026-08-13T21:00:00Z" },
+    "nasdaq": { "level": 26803.03, "change_pct": 0.81, "as_of": "2026-08-13T21:00:00Z" },
+    "vix":    { "level": 14.63,  "change_pct": 0.00, "as_of": "2026-08-13T21:00:00Z" },
+    "ust10y": { "level": 4.69,   "change_bps": 4,    "as_of": "2026-08-14T11:00:00Z" },
+    "dxy":    { "level": 99.83,  "change_pct": -0.04, "as_of": "2026-08-14T11:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield",           "value": 5.214,  "trigger_above": 5.00,  "unit": "%" },
-    { "name": "September Hike Prob", "value": 32.0,   "trigger_above": 70.0,  "unit": "%" },
-    { "name": "Brent Crude",         "value": 87.07,  "trigger_above": 85.0,  "unit": "$/bbl" },
-    { "name": "WTI Crude",           "value": 81.25,  "trigger_above": 79.0,  "unit": "$/bbl" },
-    { "name": "SPX vs 7,380",        "value": 7799.0, "trigger_below": 7380,  "unit": "" },
-    { "name": "BTC Gate 2",          "value": 62847,  "trigger_below": 62000, "unit": "$" }
+    { "name": "30Y Yield", "value": 5.19, "trigger_above": 5.28, "unit": "%" },
+    { "name": "WTI", "value": 81.27, "trigger_above": 79.0, "unit": "$/bbl" },
+    { "name": "Brent", "value": 87.18, "trigger_above": 85.0, "unit": "$/bbl" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "NVDA",
-      "note": "~$221 (premarket est., flat on subdued futures). The CSCO and AMAT prints in the same reporting week now constitute a two-datapoint pattern: AI infrastructure beats at altitude do not expand the multiple. NVDA enters August 26 as the final test of this rule. Gross margin >76% and FY27 revenue guidance above prior consensus are the bars — but the market's established template is that those bars get sold. $216 is structural support; $225 is first resistance. A close below $215 on 2× average volume before August 26 would be the first pre-print sentiment break. Jackson Hole keynote follows August 27.",
+      "note": "Pre-market ~$225.09 (−0.09%). Holding $225 support for second session. China exposure separately managed via export-controlled Hopper H20 — AMAT China signal does not directly apply. Bar for August 26 unchanged: gross margin above 78%, data-center guide visibly ahead of sell-side. $216 is structural support.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Closed ~$481 on August 13 as sole semiconductor decliner in the record session. AMAT China signal is the watch item: open below $478 extends the China demand read to chip designers. $484 above = equipment-specific containment; $475 below on volume = broader spread confirmed.",
       "sentiment": "neutral"
     },
     {
       "ticker": "AMAT",
-      "note": "~$518 pre-market (from ~$539 pre-earnings; −3.89% AH confirmed). EPS $3.50 beat $3.45; revenue $9.115B missed $9.175B estimate by ~$61M. The revenue miss in semiconductor equipment is the operative signal: the AI capex cycle is delivering margins but not incremental volume pull-through to the equipment layer. If the earnings call showed customers deferring rather than canceling orders, the thesis damage is limited. If customers are reducing orders, the equipment ramp underlying chip demand is softening structurally. AMAT's call transcript is the key read into the NVDA setup.",
-      "sentiment": "negative"
-    },
-    {
-      "ticker": "CSCO",
-      "note": "Consolidating in the $114-116 range after the −6% AH sell from $123.88 (Aug 12). AMAT's result confirms CSCO's reaction was not isolated to networking — two consecutive AI infrastructure names hit their ceiling in the same earnings week. The pattern is now two data points deep.",
-      "sentiment": "negative"
-    },
-    {
-      "ticker": "AMD",
-      "note": "~$495-499 (Aug 12-13 range). Structural headwind: SpaceX exclusive chip deal with NVDA (announced Aug 4-5) removed AMD from the largest AI compute build-out in the space sector; AMD fell 6%+ on the announcement. MI350 ramp and hyperscaler co-design timelines are the only path to regaining share. $484 remains key structural support.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "PLTR",
-      "note": "~$174.94 (Aug 12-13 close est.). Iran Hormuz structural DoD AI spend thesis unchanged. No new catalyst today.",
-      "sentiment": "positive"
-    },
-    {
-      "ticker": "AAPL",
-      "note": "~$302 (Aug 12-13 close est.). Continued index underperformance. Jefferies Underperform (PT $263.66) remains the latest analyst signal. No catalyst today.",
+      "note": "Post-earnings decline despite record results: record revenue, record profit, 13th consecutive quarter of margin expansion. China equipment demand softening cited alongside altitude valuation. What changes: China revenue stabilizes in Q4.",
       "sentiment": "negative"
     },
     {
       "ticker": "SPCX",
-      "note": "~$139 (Aug 12-13 close est.). August 20 tranche is 6 days away (~$8.65B eligible). WTI $81.25 (above $79 trigger; buffer $2.25); Brent $87.07 (above $85; buffer $2.07). Both oil triggers remain active. Two consecutive WTI closes below $79 would clear the primary oil-side condition before the tranche. Front-run signal: SPCX close below $120 on elevated volume before August 20.",
+      "note": "$142.31 (Aug 13 close). August 20 second tranche in 6 days. Rate relief absorbed; oil triggers still active (WTI $81.27 above $79). Absorption thesis requires continued close above $128.",
       "sentiment": "neutral"
     },
     {
-      "ticker": "BTC",
-      "note": "~$62,847 (live 11:02 UTC, Crypto.com). Gate 2 ($62K) buffer: $847 — narrowed $555 overnight from $63,402 (Aug 13 close). Dovish PPI reduces near-term hike risk (September odds ~32%), providing marginal support. The gate is now 1.4% below spot. A risk-off session driven by retail miss or UMich disappointment today could test the gate before close.",
+      "ticker": "TSM",
+      "note": "July monthly revenue $467.58B NT (+44.7% YoY) was a record. AMAT China signal not visible in July foundry data. August revenue (due September) is the first test of whether the China equipment-demand signal extends to the foundry layer.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "WDAY",
+      "note": "~$206 (Aug 13 close). Silver Lake buyout talks ongoing at ~$43B. No announcement. Deal confirmation sets a valuation floor for the enterprise SaaS category; collapse sends WDAY sharply lower.",
       "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
-      "asset": "NVDA — August 26 print as altitude-ceiling test",
-      "thesis": "CSCO's 6% AH sell on a genuine beat-and-raise (Aug 12) and AMAT's 3.89% AH slip on EPS beat / revenue miss (Aug 13) have established a two-datapoint altitude ceiling pattern across the AI infrastructure stack — networking (CSCO) and semiconductor equipment (AMAT). NVDA on August 26 is the first hyperscale GPU printer at altitude in this cycle, and the last AI name the market has not yet tested. If NVDA beats on gross margin and revenue and the stock sells AH, the ceiling is a confirmed market structure condition entering Jackson Hole (August 27-29). If NVDA beats and rallies AH, the ceiling is product-mix specific, not GPU compute. The asymmetry entering the print is skewed toward the ceiling scenario — two precedents vs. zero counter-examples.",
-      "entry": "NVDA ~$221 pre-market. The trade is pre-print: a long requires confidence not just in the result quality but that the market will reward it — and the CSCO/AMAT template argues against that. Net: reduce NVDA exposure ahead of August 26 unless there is specific conviction on the gross margin path above 76% AND a thesis for why the altitude ceiling breaks this time. $216 support; $225 resistance.",
-      "invalidation": "NVDA beats and trades AH above $230 on >2× average volume — invalidates the altitude ceiling thesis and confirms CSCO/AMAT reactions were product-mix-specific, not AI-infrastructure-wide.",
-      "horizon": "Through August 26 print and Jackson Hole keynote August 27."
+      "asset": "30Y UST",
+      "thesis": "The pre-market compression to ~5.19% is the first meaningful move in the long end after two consecutive below-consensus inflation prints. Whether it holds through Friday's close is the session's primary test. Two consecutive closes at or below 5.18% before August 26 would be the first concrete evidence the soft-data trajectory is working on the long end ahead of Jackson Hole.",
+      "entry": "Levels that define it: 5.20% close confirms compression is holding. 5.23% bounce on no catalyst confirms the bond market is holding its prior against the soft-data read.",
+      "invalidation": "30Y above 5.28% post-Jackson Hole reinstates the rate overhang entering September 18 FOMC.",
+      "horizon": "August 14 close through Jackson Hole (August 27-29)"
     },
     {
-      "asset": "Retail Sales + UMich — consumer binary at 8:30 and 10:00 ET",
-      "thesis": "Retail Sales (July, +0.1–0.3% consensus) and Michigan Consumer Sentiment preliminary (54.5 est. vs. 55.2 prior) arrive on a day when S&P 500 futures are flat after a record close. The index is priced for a soft-landing consumer. If retail sales miss and UMich drops below 53, it combines a consumer slowdown signal with the AI infrastructure altitude ceiling from AMAT/CSCO — two thesis pillars undermined in a single session. That combination would challenge the record-high market read materially.",
-      "entry": "No new equity position pre-data. Watch SPX reaction below 7,750 intraday as the first signal a dual-miss is being priced. A SPX close below 7,700 on miss + UMich <53 changes the weekly read materially and sets a bearish tone into the NVDA/Jackson Hole fortnight.",
-      "invalidation": "Retail sales above +0.4% with UMich holding above 55 — confirms consumer resilience and extends the Goldilocks case.",
-      "horizon": "Today's session; sets tone for the Jackson Hole run-up week of August 24."
+      "asset": "AMD",
+      "thesis": "AMAT's earnings decline surfaced a China equipment demand component that may extend to chip designers. AMD closed as the sole semiconductor decliner in the record August 13 session. AMD has meaningful China data-center revenue. The altitude-plus-China thesis is forming around AMD; the August 14 open relative to $478 and $484 is the session's first real-time read on how far the signal has traveled.",
+      "entry": "Levels that define it: open below $478 = China read extends to chip designers; hold above $484 on two closes post-AMAT = equipment-specific containment; break below $475 on volume = broader semiconductor spread confirmed.",
+      "invalidation": "AMD holds above $484 on two consecutive sessions after AMAT's result, with no new China-specific negative catalyst.",
+      "horizon": "August 14-18"
     },
     {
-      "asset": "30Y Yield — first compression post-PPI; path to 5.15% now in view",
-      "thesis": "30Y at 5.214% after a 2.2 bps PPI-driven decline is the first material compression since the regime breach was established. The prior brief's intermediate de-escalation signal (5.20%) has been nearly reached. To confirm de-escalation, the 30Y needs at least two consecutive closes below 5.20% — which it has not yet achieved. Jackson Hole (August 27-29) is the next regime-level catalyst for the long end. A retail miss today could take 30Y below 5.20% intraday, potentially setting up the first consecutive close test.",
-      "entry": "30Y at 5.214%. First de-escalation signal: two consecutive closes below 5.20%. Full clearing: close below 5.00% on two consecutive sessions. A hot retail beat or hawkish Fed commentary before Jackson Hole re-anchors the 30Y above 5.25%.",
-      "invalidation": "30Y closes back above 5.25% on any data surprise — retail beat, UMich surge, or Fed official hawkishness pre-Jackson Hole.",
-      "horizon": "Through Jackson Hole keynote August 27."
+      "asset": "RDDT",
+      "thesis": "S&P 500 inclusion effective August 18 drives mechanical passive demand. RDDT at ~$177 pre-market (+12%) reflects index mechanics, not a fundamental re-rating of Reddit's advertising durability in an AI-search environment. Peak buying concentrates at the August 17 closing auction. Post-mechanics, RDDT reverts to its own fundamental case.",
+      "entry": "Mechanical demand peaks August 17 close. Two sessions of RDDT holding above ~$177 post-August 18 tests whether the fundamental bid supports the mechanical bid.",
+      "invalidation": "RDDT reverses below its inclusion-announcement close (~$158) within two sessions of August 18.",
+      "horizon": "August 17-21"
     }
   ],
-  "bear_case": "The S&P 500 at a record 7,799 embeds three simultaneous assumptions: (1) the AI capex cycle continues rewarding the equity premium, (2) the Fed holds in September, (3) the consumer holds above trend. All three are under concurrent pressure. The AI capex assumption is now two data points into failure mode: CSCO sold on a beat-and-raise (−6%, Aug 12); AMAT sold on an EPS beat / revenue miss (−3.89% AH, Aug 13). The revenue miss in semiconductor equipment is the telling detail — it signals that downstream demand for the equipment powering the chip fabs is softening at the margin, one level below the GPU itself. If Michigan Sentiment preliminary today drops below 53 alongside a retail miss, assumption (3) begins to crack in the same session the AI ceiling is confirmed. The 30Y at 5.214% — still above the 5.00% trigger — keeps the Fed-hold assumption fragile; one hot data print could re-anchor September odds above 40%. Scenario that invalidates the equity-resilience read: S&P closes below 7,700 within two sessions on combined (a) consumer data miss today AND (b) NVDA fails to break the altitude ceiling on August 26. That outcome makes 7,380 — the structural support level — the next test before Jackson Hole.",
+  "bear_case": "The 30Y pre-market compression to 5.19% required two consecutive below-consensus inflation prints and an entire week to deliver 5bps of relief — a rate that would take months to close the remaining gap to 5.00%. The bond market retains its structural prior: 3.4% annual CPI, SPR at 40-year lows, and Iran's stated conditions (sanction relief, war reparations) remain formally unmet. If August 14's session produces a 30Y bounce above 5.23% on no catalyst, the long end is explicitly holding its prior and the path to 5.15% is on Warsh's keynote alone. September hike odds at 33% are asymmetrically positioned: from 33%, a speech that validates 30Y persistence at current levels has significantly more room to move odds upward than a soft speech has to move them lower. That read no longer holds if the 30Y closes below 5.15% on two consecutive sessions before August 26.",
   "body_mdx": "data/briefings/markets/2026-08-14-morning.mdx"
 }
