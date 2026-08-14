@@ -1,0 +1,66 @@
+{
+  "routine": "markets",
+  "date": "2026-08-14",
+  "window": "night",
+  "generated_at": "2026-08-15T00:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Retail miss and Broadcom VMware exploit pull S&P from record; small caps reach new highs",
+    "label": "Data double miss stalls large caps; AVGO extends altitude ceiling; Russell 2000 closes at a record",
+    "rationale_short": "The morning brief's 'binary-free' read was wrong: retail sales (−0.6% MoM) and UMich sentiment (51.0 vs 54.5) both missed, pulling the S&P −0.17% from its record while AMD's $490 close validated the AMAT China signal as equipment-specific. AVGO fell 4.1% on VMware exploitation and AI concentration — a third altitude ceiling data point, distinct from the AMAT China story. The 30Y auction stop-through at 5.22% is the first confirmed demand signal at current yield levels; Jackson Hole remains the primary venue for resolving compression or re-anchoring.",
+    "supporting_data": [
+      { "label": "Retail sales July −0.6% MoM, largest drop in >1 year; motor vehicles −1.8%, nonstore −2.2% — Bloomberg, Aug 14", "url": "https://www.bloomberg.com/news/articles/2026-08-14/us-retail-sales-fall-by-most-in-more-than-a-year" },
+      { "label": "UMich prelim sentiment 51.0 vs 54.5 expected; short-term expectations −11%, long-term −17% — Bloomberg, Aug 14", "url": "https://www.bloomberg.com/news/articles/2026-08-14/us-consumer-sentiment-declines-for-first-time-in-three-months" },
+      { "label": "AVGO −4.1% to $389.79: VMware CVE-2026-59310 exploited (361 IPs, 47 countries); AI = 72% of next-quarter sequential growth — TipRanks, Aug 14", "url": "https://www.tipranks.com/news/why-broadcom-avgo-stock-is-sinking-today-august-14-2026" },
+      { "label": "$25B 30Y auction cleared at 5.22% (stop-through from 5.24% secondary); highest 30Y since 2001, demand present — Aug 14", "url": "https://boingboing.net/2026/08/14/us-30-year-bond-yields-highest-since-2001.html" },
+      { "label": "AMD $490.54 (+2.0%), above $484 containment threshold; Russell 2000 +0.3% to 3,062, record close — TheStreet, Aug 14", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026" },
+      { "label": "WTI $82.37 (+1.4%), Brent $88.38 (+1.5%); oil rises on Hormuz supply despite demand miss — Fortune, Aug 14", "url": "https://fortune.com/article/price-of-oil-08-14-2026/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7786.0,  "change_pct": -0.17, "as_of": "2026-08-14T21:00:00Z" },
+    "nasdaq": { "level": 26729.0, "change_pct": -0.28, "as_of": "2026-08-14T21:00:00Z" },
+    "vix":    { "level": 14.25,   "change_pct": -2.60, "as_of": "2026-08-14T21:00:00Z" },
+    "ust10y": { "level": 4.70,    "change_bps": 5,     "as_of": "2026-08-14T21:00:00Z" },
+    "dxy":    { "level": 99.92,   "change_pct": 0.05,  "as_of": "2026-08-14T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",    "value": 5.22,  "trigger_above": 5.28, "unit": "%" },
+    { "name": "BTC",          "value": 62721, "trigger_below": 62000, "unit": "$" },
+    { "name": "SPX vs 7,700", "value": 7786,  "trigger_below": 7700,  "unit": "pts" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "~$225.38 (+0.04%); held $225 for second consecutive session. Bar for August 26 unchanged: gross margin above 78%, data-center guide visibly ahead of most optimistic sell-side scenario.", "sentiment": "neutral" },
+    { "ticker": "AMD",  "note": "$490.54 (+2.0%); above $484 on one close. Morning brief's equipment-specific containment signal cleared in one session; second close above $484 confirms.", "sentiment": "positive" },
+    { "ticker": "AVGO", "note": "$389.79 (−4.1%); VMware CVE-2026-59310 active exploitation and AI revenue concentration (~72% of sequential growth) both hit at altitude. $380 is structural support below; $400 is now resistance.", "sentiment": "negative" },
+    { "ticker": "RDDT", "note": "~$178.09 (+12.7% from Thursday's ~$157); August 17 closing auction is the mechanical peak. Post-inclusion fundamental test begins Tuesday August 19.", "sentiment": "positive" },
+    { "ticker": "TSLA", "note": "$342.27 (+0.7%); outperformed in a weak session. No catalyst identified.", "sentiment": "neutral" },
+    { "ticker": "WDAY", "note": "Silver Lake $43B acquisition talks unchanged; 4-8 week resolution timeline from the August 13 Reuters report.", "sentiment": "positive" },
+    { "ticker": "BTC",  "note": "~$62,721; Gate 2 ($62K) buffer narrows to ~$720 — below the $830 from the morning brief. Close below $62,000 is the first formal gate breach.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AVGO",
+      "thesis": "AVGO closed at $389.79 between $380 structural support and $400 new resistance, compressed by VMware CVE-2026-59310 exploitation liability and AI revenue concentration concerns ahead of September earnings.",
+      "entry": "$380 is structural support below; $400 is now resistance after the 4.1% session decline. The two levels define the current range.",
+      "invalidation": "VMware issue contained with no additional exploitation headlines in the next five sessions; stock recovers above $400 before September earnings without a guide revision.",
+      "horizon": "5-10 sessions into early September earnings"
+    },
+    {
+      "asset": "30Y Treasury",
+      "thesis": "The $25B 30Y auction stop-through at 5.22% (2bps below 5.24% secondary) is the first confirmed demand signal at current yield levels after three consecutive soft inflation prints. The 5.15% compression target is 7bps away.",
+      "entry": "5.22% is the confirmed demand level; 5.15% is the de-escalation target cited across prior briefings. 5.28% is the re-anchoring level that removes the compression thesis.",
+      "invalidation": "30Y closes above 5.28% before Jackson Hole on no new data — confirms market is absorbing, not pricing further compression.",
+      "horizon": "Jackson Hole August 27-29 is the next catalyst"
+    },
+    {
+      "asset": "RDDT",
+      "thesis": "RDDT at $178.09 heading into Monday's mechanical S&P 500 inclusion auction. The August 17 closing auction concentrates passive buying; the post-inclusion sessions test whether fundamental demand — advertising durability in an AI-search environment — supports the price.",
+      "entry": "$177 is the level that defines the fundamental bid test; $158 (pre-announcement close) is the reversion level that would indicate the pop was mechanical only.",
+      "invalidation": "RDDT holds above $177 for two sessions after August 18 — fundamental demand present. Falls below $158 within two sessions — mechanical pop only.",
+      "horizon": "August 18-20 post-inclusion window"
+    }
+  ],
+  "bear_case": "The retail sales and UMich misses are not the soft patch the equity market is pricing — they are the consumer dimension of a stagflationary backdrop where oil-driven supply inflation (WTI $82.37, Brent $88.38, SPR at 40-year lows) prevents the Fed from accommodating the growth slowdown. The UMich short-term inflation expectations spike (+11% of respondents citing Middle East and energy) arriving simultaneously with weak demand is the worst combination for the 30Y: the bond market will not compress below 5.15% if consumers are pricing more inflation even as spending softens. The altitude ceiling has three sector confirmations entering NVDA's August 26 print — CSCO (networking), AMAT (semiconductor equipment), and AVGO (networking silicon) — and all three delivered results at or above estimates before declining. If SPX cannot hold 7,700 through NVDA's result, the 7,799 record close was the cycle high.",
+  "body_mdx": "data/briefings/markets/2026-08-14-night.mdx"
+}
