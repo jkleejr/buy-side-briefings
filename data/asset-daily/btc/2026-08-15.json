@@ -1,0 +1,191 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T21:55:00Z",
+  "is_seed": false,
+
+  "day_winner": "flat",
+  "day_summary": "STEP-ASIDE CONTINUES — BOTH CONDITIONS UNMET: REFERENCE CLOSE $63,100.31 (+$195.87 / +0.31% FROM AUG 14 API-VERIFIED CRYPTO.COM REFERENCE CLOSE $62,904.44). WEEKEND CONSOLIDATION — TIGHTEST RANGE IN 5+ DAYS ($62,793.55-$63,193.90 = $400 RANGE VS AUG 14'S $1,086; CRYPTO.COM SESSION VOLUME 379 BTC / $23.88M — WEEKEND LIQUIDITY VACUUM). SESSION MAP: OPENED $62,904.44 (PREV REFERENCE CLOSE — AUG 14 21:00 UTC O $62,904.44 → IMMEDIATE SMALL DRIFT TO C $62,919.51), EARLY POST-CLOSE DUNK TO SESSION LOW $62,793.55 (AUG 14 22:00 UTC — 2 HOURS AFTER REF CLOSE, 34.79 BTC VOLUME; PROBED BELOW PREV CLOSE BUT ABOVE AUG 14'S INTRADAY LOW $62,536.37), SHARP ONE-HOUR RECOVERY TO $63,073 (AUG 14 23:00 UTC — 51.53 BTC = SESSION'S HIGHEST VOLUME CANDLE; BUYERS ABSORBED THE DIP), ASIA SESSION DRIFT HIGHER TO SESSION HIGH $63,193.90 (AUG 15 03:00 UTC — TESTED BUT FAILED TO CLEAR $63,200-$63,418 RESISTANCE), MINOR EUROPEAN OPEN DIP TO $62,914.95 (AUG 15 08:00 UTC — ECHO OF AUG 14'S DISTRIBUTION PATTERN BUT $156 VS AUG 14'S $408), FLAT GRIND $62,983-$63,124 THROUGH US SESSION ON ~5-10 BTC/H VOLUME, REFERENCE CLOSE $63,100.31 (AUG 15 20:00 UTC — 5.77 BTC; THIN CLOSE WITH UPWARD DRIFT IN POST-REFERENCE HOUR TO $63,161 AT 21:46 UTC). KEY DEVELOPMENT: AUG 14 ETF FLOWS REPORTED SATURDAY MORNING — NET -$57.63M (IBIT/BLACKROCK -$55.51M, FBTC/FIDELITY -$6.84M, DEFI/HASHDEX -$1.42M; BITB/BITWISE +$6.14M — FIRST ETF INFLOW SINCE AUG 11; GBTC/ARKB/HODL/MSBT ZERO CHANGE — OUTFLOWS DECELERATING SHARPLY: AUG 13 -$131.13M → AUG 14 -$57.63M, -56%; THIRD CONSECUTIVE OUTFLOW DAY). SEC CANCELED AUG 14 CRYPTO OFFERING RULES VOTE CITING 'UNFORESEEN SCHEDULING ISSUE' — PROPOSED ~400-PAGE RULE WITH THREE TOKEN-OFFERING EXEMPTION PATHWAYS ($75M ANNUAL FUNDRAISING CAP, DECENTRALIZATION SAFE HARBOR) HAD NO RESCHEDULED DATE; PREDICTION-MARKET ODDS OF 2026 CRYPTO LEGISLATION FELL TO 20% FROM 80% (SENATE IN 5-WEEK RECESS AFTER DECLINING CLARITY ACT). WEEKLY DAMAGE: BTC FELL ~$2,500 FROM MONDAY'S OPEN (~$65,500) TO TODAY'S CLOSE ($63,100); TOTAL WEEKLY ETF OUTFLOWS ~$289M REVERSING MOST OF PRIOR WEEK'S +$854M INFLOW (ETFs HOLD $77.3B / 6.07% OF BTC MARKET CAP). RE-ENTRY STATUS: CONDITION 1 (REFERENCE CLOSE > $65,000 — $1,899.69 BELOW CURRENT CLOSE, 3.01% GAP — NARROWED FROM YESTERDAY'S 3.3% / $2,095.56) NOT MET; CONDITION 2 (POSITIVE ETF FLOWS — AUG 14 NET -$57.63M — THIRD CONSECUTIVE OUTFLOW DAY) NOT MET. BOTH CONDITIONS UNMET — STEP-ASIDE CONTINUES, CONVICTION HIGH.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "high",
+    "horizon": "step-aside until BOTH re-entry conditions are met: (1) reference close (20:00 UTC Crypto.com 1h candle) > $65,000 AND (2) most recent daily U.S. spot-BTC ETF net flows positive; current status: Condition 1 = NOT MET ($63,100.31 — $1,899.69 below threshold, 3.01% gap — slightly NARROWED from yesterday's 3.3%); Condition 2 = NOT MET (Aug 14 ETF flows net -$57.63M — third consecutive outflow day; HOWEVER: outflows DECELERATING sharply, -56% vs Aug 13's -$131.13M; BITB posted first ETF inflow since Aug 11 at +$6.14M; ARKB returned to zero outflow); conviction HIGH given dual-condition failure; note that no ETF trading occurs Sat-Sun, so earliest possible Condition 2 flip is Monday Aug 17 session results (reported Tue Aug 18)",
+    "rationale": "Aug 15 (Saturday) is a weekend consolidation session — thin volume (379 BTC / $23.88M on Crypto.com), a narrow $400 range ($62,793-$63,193), and a near-flat close (+$195.87 / +0.31%) that does not change the structural picture. The step-aside framework's two conditions remain unmet. The dominant story is the SEC's surprise cancellation of its Aug 14 crypto offering rules vote — the most concrete near-term regulatory catalyst for institutional allocators has been removed with no rescheduled date, contributing to a -$2,500 weekly decline and -$289M in weekly ETF outflows. The constructive development: ETF outflow deceleration (-$131.13M Aug 13 → -$57.63M Aug 14, -56% in one session), with ARKB returning to zero outflow and BITB posting the first net inflow since Aug 11 (+$6.14M). However, IBIT (BlackRock, -$55.51M) remains the dominant outflow driver — institutional base is still redeeming. Step-aside remains the only defensible posture until the $65,000 threshold and positive ETF flows coincide."
+  },
+
+  "so_what": {
+    "line": "Step-aside holds into the weekend: both conditions remain unmet ($63,100 vs $65,000 threshold; Aug 14 ETF outflows -$57.63M — third consecutive day); Saturday session was thin consolidation with no directional catalyst; the one constructive signal is ETF outflow deceleration (-56% vs yesterday).",
+    "bull": "ETF outflow deceleration is the key: -$131.13M (Aug 13) → -$57.63M (Aug 14) = a 56% reduction in one session; ARKB went from -$58.82M to $0 (the biggest single-fund outflow driver vanished); BITB posted +$6.14M — first ETF inflow since Aug 11; if Monday's (Aug 17) session turns net-positive, Condition 2 flips and only a $65,000 close stands between step-aside and re-entry.",
+    "bear": "IBIT (BlackRock) still outflowed -$55.51M on Aug 14 — the world's largest spot Bitcoin ETF remains in active redemption mode; weekly ETF bleed totals ~$289M reversing most of the prior week's +$854M; SEC canceled the crypto offering rules vote removing near-term policy clarity; prediction markets at 20% odds of 2026 legislation; $65,000 was tested six times (Aug 5-10) without a close — the re-entry threshold is a six-time-tested ceiling, not approaching near-term; $1.17B in put option OI near $62,000 creates cascade risk if $62,500 breaks on thin weekend liquidity."
+  },
+
+  "snapshot": {
+    "price": 63100.31,
+    "change_pct": 0.31,
+    "change_abs": 195.87,
+    "prev_close": 62904.44,
+    "day_high": 63193.90,
+    "day_low": 62793.55,
+    "week52_high": 109000,
+    "week52_low": 49000,
+    "volume": "379.4 BTC ($23.88M) on Crypto.com 24h; ~$4.97B global 24h (Yahoo Finance); weekend thin-volume session — Crypto.com hourly volume averaged ~18 BTC/h vs Aug 14's peak 162-167 BTC/h at the session extremes",
+    "market_cap": "~$1.25T",
+    "extra": [
+      {
+        "label": "STEP-ASIDE STATUS: BOTH CONDITIONS UNMET — Reference Close $63,100.31 vs $65,000 Threshold (Condition 1); Aug 14 ETF Net -$57.63M (Condition 2 — Third Consecutive Outflow Day; Decelerating: -$131.13M Aug 13 → -$57.63M Aug 14, -56%)",
+        "value": "Condition 1: $63,100.31 < $65,000 — NOT MET; distance: $1,899.69 below threshold (3.01% required to clear — NARROWED slightly from yesterday's 3.3% / $2,095.56 gap). Condition 2: Aug 14 U.S. spot-BTC ETF flows = net -$57.63M (IBIT/BlackRock -$55.51M, FBTC/Fidelity -$6.84M, DEFI/Hashdex -$1.42M; BITB/Bitwise +$6.14M — first net inflow in any product since Aug 11; GBTC/ARKB/HODL/MSBT: no change) — NOT MET; outflows decelerating sharply (-56% vs Aug 13). No ETF trading Sat/Sun; earliest Condition 2 flip is Monday Aug 17 session (reported Tue Aug 18). Both conditions must be met simultaneously for re-entry.",
+        "tone": "down"
+      },
+      {
+        "label": "SEC CANCELED AUG 14 CRYPTO OFFERING RULES VOTE — Regulatory Clarity Delayed Indefinitely; 2026 Legislation Odds Fall to 20% (from 80%); CLARITY Act Stalled in Senate",
+        "value": "The SEC pulled its August 14 Open Meeting — at which it was to vote on a ~400-page proposed rule creating three exemption pathways for token offerings (including a $75M annual fundraising cap and a decentralization safe harbor) — citing an 'unforeseen scheduling issue' with no rescheduled date. The CFTC is stepping up as digital-asset regulatory authority shifts. Context: The Senate is in a 5-week recess after declining to advance the CLARITY Act. Prediction markets now price 2026 crypto legislation at 20% (down from 80% earlier this year). This removes the most concrete near-term regulatory catalyst for institutional re-entry and likely contributes to sustained ETF caution.",
+        "tone": "down"
+      },
+      {
+        "label": "ETF OUTFLOW DECELERATION — Aug 13: -$131.13M → Aug 14: -$57.63M (-56%); BITB +$6.14M First ETF Inflow Since Aug 11; ARKB Returns to Zero; IBIT Still -$55.51M",
+        "value": "The outflow pace is narrowing. Key shifts on Aug 14: (1) ARKB (Ark Invest) — Aug 13's largest single-fund outflow driver at -$58.82M — reported ZERO outflow; (2) BITB (Bitwise) posted +$6.14M, the first net inflow from any ETF product since Aug 11; (3) GBTC, HODL, MSBT reported no change vs Aug 13's broadened selling. Remaining concentration: IBIT (BlackRock) -$55.51M — the world's largest spot BTC ETF is still in active redemption mode; a single IBIT reversal day ($100M+ inflow) could swing Condition 2. Cumulative weekly outflows: ~$289M (reversing most of the prior week's +$854M net inflow; spot ETFs hold $77.3B / 6.07% of BTC market cap).",
+        "tone": "neutral"
+      },
+      {
+        "label": "WEEKEND CONSOLIDATION — $400 Range ($62,793-$63,193); Session Volume 379 BTC; Early $62,793 Dunk Absorbed; Tight Grind $62,983-$63,124 Through US Hours",
+        "value": "Saturday's session was the tightest in 5+ days. The $400 intraday range ($62,793.55 low to $63,193.90 high) is less than 37% of Aug 14's $1,086 range. Structure: (1) early dunk to $62,793.55 (22:00 UTC Aug 14, 2h post-reference close) absorbed on 34.79 BTC with a sharp 51.53-BTC recovery candle; (2) Asia session drifted to the session high $63,193.90 at 03:00 UTC Aug 15; (3) minor EU open dip to $62,914.95 at 08:00 UTC; (4) US session grind $62,983-$63,124 on average 9 BTC/h for 11 hours. Post-reference action (21:00 UTC): $63,161 (+$61 from the reference close), confirming slight upward drift. ETFs don't trade Sat-Sun — no institutional ETF demand until Monday's U.S. session.",
+        "tone": "neutral"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "Weekend implied volatility compressed by thin liquidity — the $400 realized range on 379 BTC represents one of the lowest-volatility sessions in the recent post-Aug-10 period. Near-dated options IV is muted on weekends when no institutional ETF flow can amplify moves. However, structural skew remains toward puts: the five-session slide from $65,500 to $63,100 (-$2,400, -3.7%) and $289M weekly ETF outflows establish a bearish backdrop that sustains put premium relative to calls. Monday's open is the next realized-vol catalyst.",
+    "short_interest": "~1.79 million BTC at break-even cost basis in the $62,500-$65,000 range (on-chain data) — this zone is a structural battleground for a massive long-holder cohort; selling pressure from break-even exits could amplify any downside move. $1.17B in put option OI near the $62,000 strike: a daily close below $62,000 could trigger cascading put exercises and forced selling acceleration toward $58,500-$60,000.",
+    "notable_flow": "Aug 14 ETF breakdown (reported Saturday morning): IBIT/BlackRock -$55.51M (largest single-product outflow; notably HIGHER than Aug 13's -$5.74M — IBIT accelerated its outflow even as the rest of the basket moderated); FBTC/Fidelity -$6.84M (sharply smaller than Aug 13's -$55.12M); BITB/Bitwise +$6.14M (first net inflow since Aug 11 — a contrarian signal in the broader outflow trend); DEFI/Hashdex -$1.42M. Cumulative Aug 10-14 outflows: approximately $389M over 4 sessions (with one positive day, Aug 11). Weekend note: no ETF trading Sat-Sun; next flow data will cover Monday Aug 17 session (reported Tue Aug 18). $1.17B put option overhang near $62,000 is the options-market bear case in play."
+  },
+
+  "what_traders_are_doing": "FOUR POSTURES ON AUG 15 (SATURDAY): (1) STEP-ASIDE FRAMEWORKS — no action; watching for Mon Aug 17 ETF flows (reported Tue Aug 18) as the single most important Condition 2 data point; positive IBIT inflow day = Condition 2 met; also watching: SEC reschedule announcement for the canceled crypto vote; the $65,000 threshold ($1,899 away, 3.01%) will require a sustained move that cannot begin on weekend thin liquidity; (2) WEEKEND RANGE DEFENDERS — the $62,793-$62,800 zone is the near-term floor; dip-buyers from Aug 14 (who defended $62,536) and today (who defended $62,793) have a clear trade: buy $62,500-$62,800, stop below $62,500, target $63,418 (prior support/resistance); the break-even cost-basis of 1.79M BTC in this range creates structural demand; (3) REGULATORY UNCERTAINTY SELLERS — the SEC vote cancellation is the macro bear catalyst for this cohort; they argue: (a) no regulatory clarity = no institutional capital unlock; (b) prediction market at 20% for 2026 legislation = multi-year delay; (c) CLARITY Act stall = continued legal ambiguity; their trade is short BTC at $63,000-$63,500 targeting $61,000-$62,000 on the first weekday catalyst; (4) STRUCTURAL BEARS — positioning for a $62,500 breakdown on thin Sunday liquidity; the thesis is the five-week $62,500-$66,000 range is breaking lower; they cite: three consecutive ETF outflow sessions, IBIT outflow ACCELERATING ($5.74M Aug 13 → $55.51M Aug 14), 12 MA sell signals vs 0 buy signals, all four major EMAs above current price; target $58,500-$60,000 if $62,500 breaks with a daily close.",
+
+  "news": [
+    {
+      "label": "Aug 14 U.S. Spot Bitcoin ETFs: Net -$57.63M — IBIT -$55.51M, FBTC -$6.84M, BITB +$6.14M (First ETF Inflow Since Aug 11); Third Consecutive Outflow Day; Outflows Decelerating -56% vs Aug 13",
+      "url": "https://en.bloomingbit.io/feed/news/118385",
+      "source": "Bloomingbit",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SEC Cancels Friday August 14 Crypto Offering Rules Vote — Proposed Rule Would Have Created Three Token-Offering Exemptions ($75M Cap, Decentralization Safe Harbor); No Rescheduled Date Given",
+      "url": "https://cryptodaily.co.uk/2026/08/sec-pulls-aug-14-crypto-offering-rules-vote",
+      "source": "Crypto Daily",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin's $3.4B ETF Bleed 'More Cyclical Than Structural' — Investing.com: Weekly $289M Outflow Reverses Most of Prior Week's $854M Gain; $77.3B Held in Spot ETFs (6.07% of Market Cap)",
+      "url": "https://www.investing.com/analysis/bitcoins-34-billion-etf-bleed-looks-more-cyclical-than-structural-200681474",
+      "source": "Investing.com",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Bitcoin's $2,500 Weekly Slide Turns SEC Delay Into a Crypto Risk-Premium Test — BTC Down From ~$65,500 Monday to ~$63,100 Friday Close; CLARITY Act Stalled in Senate Recess",
+      "url": "https://ts2.tech/en/bitcoins-2500-weekly-slide-turns-sec-delay-into-a-crypto-risk-premium-test/",
+      "source": "TS2 Space",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Why a Weekend Break Below $62,500 Could Unleash a Bitcoin Selling Wave Toward $58,500 — 1.79M BTC at Break-Even in Range; $1.17B Put Option OI Near $62,000; ETFs Dark Sat-Sun",
+      "url": "https://cryptoslate.com/bitcoin-has-nowhere-to-hide-this-weekend-if-62500-breaks/",
+      "source": "CryptoSlate",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Bitcoin Ecosystem Logs Six Venture Deals in Week Ending Aug 15, 2026 — Three Transactions in Financial-Service Infrastructure Spanning CeFi and DeFi",
+      "url": "https://en.coinotag.com/bitcoin-ecosystem-logs-six-venture-deals-week-ending-aug-15-2026",
+      "source": "COINOTAG",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "Weekend consolidation delivered the expected thin-volume holding action. The next 48 hours hinge on the $62,793 (Saturday session low) and $62,500 (five-week range floor) holding through Sunday's Asia/EU sessions — with no ETF demand until Monday, the range must be defended by crypto-native buyers alone. If $62,500 breaks on thin Sunday liquidity, $1.17B in put OI near $62,000 could cascade the slide toward $60,000-$61,000. If BTC holds $62,793-$63,100 through the weekend, Monday's first ETF flow session (Aug 17) becomes the binary: positive flows flip Condition 2; negative flows for a fourth consecutive session confirm the institutional redemption trend is structural, not cyclical. The step-aside maintains the defensive posture through the weekend — no actionable change is possible until weekday ETF data.",
+    "long_term": "The structural bull case remains intact (halving supply dynamics, September FOMC rate-hold trajectory, long-term spot ETF institutional adoption pipeline). However, the regulatory picture has materially worsened this week: SEC canceled the crypto offering rules vote, the CLARITY Act stalled, and prediction markets price 2026 legislation at 20%. BTC trades below all four major daily moving averages (20/50/100/200-DMA at $64,147/$64,557/$67,600/$73,300), RSI is at 44 (sub-neutral), and the weekly trend is down $2,500 from Monday. Re-entry above $65,000 with confirmed positive ETF flows remains the most responsible medium-term path, but the timeline for reaching that threshold has likely extended given the regulatory headwind."
+  },
+
+  "bull_case": [
+    "ETF outflow deceleration is the most actionable bull signal in today's data: -$131.13M (Aug 13) → -$57.63M (Aug 14) = a 56% reduction in one session, with ARKB returning to zero outflow (its $58.82M Aug 13 selling was the biggest single-fund outflow of the cycle and it stopped entirely in one session) and BITB posting +$6.14M (first positive ETF since Aug 11) — the selling wave is losing sellers; if IBIT stabilizes or turns positive on Monday (Aug 17), Condition 2 immediately flips and only the $65,000 threshold separates step-aside from re-entry",
+    "The $62,793 Saturday session low was absorbed without a cascade: 34.79 BTC on the dip candle (vs. Aug 14's 167.5 BTC stop-loss cascade at $62,536) followed by an immediate 51.53-BTC recovery candle — buyers are present at $62,800 just as they were at $62,536 on Aug 14; the $62,500-$62,800 zone is now a two-test, two-hold demand zone; a weekend hold above $62,793 sets up Monday's ETF session from a stable base",
+    "The Investing.com analysis framing the $3.4B ETF bleed as 'cyclical rather than structural' is the medium-term bull thesis: the $77.3B held in spot ETFs (6.07% of market cap) represents a permanent institutional base that temporarily redeems on uncertainty but does not structurally exit; when the next positive catalyst arrives (SEC vote rescheduled, FOMC in September, positive macro data), the ETF inflow reloads from a deep institutional reserve; BITB's +$6.14M is the first signal that some products are already moving from redemption to accumulation mode"
+  ],
+
+  "bear_case": [
+    "IBIT (BlackRock) ACCELERATED its outflow: -$5.74M on Aug 13 → -$55.51M on Aug 14 — a 9.7x increase in one session, even as the rest of the basket moderated or turned positive; IBIT is the world's largest spot BTC ETF by AUM and its outflow trajectory moved in the OPPOSITE direction from the overall trend; sustained IBIT outflows signal the most sophisticated institutional allocators are not finding a bottom and are not buying the dip, contradicting the 'cyclical bleed' framing",
+    "The SEC's canceled crypto vote removed the most concrete near-term institutional catalyst: allocators who were positioned for regulatory clarity as a potential buy trigger (long options into the Aug 14 vote) are now unwinding; prediction markets at 20% for 2026 legislation (down from 80%) represent a fundamental re-pricing of the regulatory risk premium; without a policy catalyst or ETF inflow inflection, there is no new buyer base to push BTC above $65,000",
+    "Technical structure is decisively bearish with no reversal signal: below all four major EMAs (20/50/100/200-DMA), RSI at 44 (sub-neutral and declining), 12 MA sell signals vs 0 buy signals; the $65,000-$65,500 zone tested SIX times (Aug 5-10) without a single daily close above — this is a confirmed ceiling; each failed $65,000 test has been followed by further ETF outflows, creating a cycle where the technical resistance triggers institutional redemption, which then extends the technical weakness"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $62,793.55: Saturday session low (22:00 UTC Aug 14, 2h post-reference close); absorbed on 34.79 BTC with immediate 51.53-BTC recovery candle; BTC never revisited below $62,914 for the remaining 21+ hours; first line of defense for the $62,500 range floor; a daily close below $62,793 is the signal that bears are testing the floor in earnest — most critical level to watch on Sunday's Asia session",
+      "level": "$62,793",
+      "kind": "support"
+    },
+    {
+      "label": "$62,536: Aug 14 intraday extreme low — deepest penetration of the range floor this cycle, absorbed with 167.5 BTC stop-loss cascade then sharp recovery; second test would be more dangerous than the first given deteriorating ETF backdrop; combined with $62,793, these two lows define the demand zone floor in the $62,500-$62,800 zone",
+      "level": "$62,536",
+      "kind": "support"
+    },
+    {
+      "label": "$62,500: Five-week trading range floor (Aug 5-Aug 15) and round-number support; ~1.79M BTC at break-even cost basis in the $62,500-$65,000 range (structural holder defense); $1.17B put option OI near $62,000 creates cascade risk if $62,500 breaks on a daily close; prior-week CryptoSlate analysis: '$62,500 break could unleash a selling wave toward $58,500'",
+      "level": "$62,500",
+      "kind": "support"
+    },
+    {
+      "label": "$63,100.31: Saturday reference close (20:00 UTC Aug 15 Crypto.com 1h candle) — Sunday and Monday session pivot; gap-down below $63,100 on Sunday open is bearish; hold above and especially a move toward $63,193 (Saturday session high) sets up a test of $63,418 resistance",
+      "level": "$63,100",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest resistance — $63,418.13: Aug 13 reference close; price has failed to close above this level in every session since Aug 13 (Aug 14 recovery peaked at $63,254; Aug 15 session high $63,193.90 — both fell short); this is the equilibrium the market cleared and cannot reclaim; the $63,200-$63,418 zone is populated with sellers who have capped every bounce; a daily close above $63,418 would partially reverse the lower-close sequence",
+      "level": "$63,418",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,000-$64,017: Aug 13 double-rejection zone (BTC reached $64,017 twice on Aug 13 before reversing sharply); clusters with the 20-day EMA (~$64,147) and 50-day EMA (~$64,557) directly above — three sources of resistance within $150 of each other; even a strong recovery from current levels hits this wall",
+      "level": "$64,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,147 / $64,557: 20-day EMA and 50-day EMA cluster — both sloping downward; BTC has been below both for multiple consecutive sessions; 12 MA sell signals vs 0 buy signals on daily screens; a daily close above this zone would be the first technical signal of trend reversal",
+      "level": "$64,350",
+      "kind": "resistance"
+    },
+    {
+      "label": "$65,000-$65,500: Framework Condition 1 re-entry threshold; also a six-time ceiling (Aug 5-10: BTC tested $65,000-$65,500 six times without a single daily close above); $1,899.69 above the reference close (3.01%); multiple resistance layers ($63,418, $64,000-$64,017, 20/50-DMA at $64,147-$64,557) must all be cleared to reach this level",
+      "level": "$65,000",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-15",
+      "label": "Aug 14 ETF flows confirmed: net -$57.63M (IBIT -$55.51M, FBTC -$6.84M, BITB +$6.14M — first inflow since Aug 11) — third consecutive outflow day; outflows decelerating 56% vs Aug 13. SEC canceled Aug 14 crypto offering rules vote. Reference close $63,100.31 (+0.31%); weekend consolidation range $62,793-$63,193.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-17",
+      "label": "U.S. equity and ETF markets reopen Monday — first ETF trading session after the three-day outflow streak; this session's flows (reported Tue Aug 18) are the single most important near-term data point for the step-aside framework; a net-positive session would satisfy Condition 2 if simultaneously accompanied by a $65,000+ reference close; also watch: any SEC announcement on rescheduling the canceled crypto offering rules vote",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-18",
+      "label": "Aug 17 ETF flow data reported — direct Condition 2 read; fourth-consecutive-outflow-day test or inflection to positive; also: watch for SEC reschedule announcement for the canceled Aug 14 crypto offering rules meeting",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "FOMC rate decision — consensus expects a hold (post-July CPI: +0.1% MoM / +3.4% YoY, in-line); rate hold is neutral-to-mildly positive for BTC; a surprise cut would be materially bullish and could catalyze a move toward $65,000+",
+      "importance": "medium"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Step-Aside Framework — Dual-Condition Status\n\n| Condition | Threshold | Aug 14 (yesterday) | Aug 15 (today) | Status |\n|-----------|-----------|---------------------|----------------|--------|\n| (1) Reference close | > $65,000 | $62,904.44 | $63,100.31 | ✗ NOT MET ($1,899.69 below — gap NARROWED from $2,095.56 / 3.3% to 3.01%) |\n| (2) ETF flows | Net positive | NOT MET (-$131.13M Aug 13 flows) | NOT MET (-$57.63M Aug 14 flows) | ✗ DECELERATING but still negative |\n\n**Framework verdict: STEP-ASIDE, HIGH CONVICTION. Both conditions unmet. One constructive signal: ETF outflows decelerating -56% in one session; BITB posted first inflow since Aug 11.**\n\n---\n\n### Session Structure — Early Dunk, Overnight Recovery, Saturday Sideways Grind\n\n**Phase 1 — Immediate Post-Close Probe (Aug 14 21:00-22:00 UTC):**\n- 21:00 UTC: O $62,904.44, H $62,939.07, L $62,867.58, C $62,919.51 (opens on reference close, slight drift higher)\n- 22:00 UTC: O $62,919.50, H $62,962.72, **L $62,793.55 (SESSION LOW)**, C $62,878.94 — 34.79 BTC volume\n\nThe session low occurred 2 hours after Friday's reference close. Unlike Aug 14's 167.5-BTC stop-loss cascade at $62,536, this dip used moderate volume (34.79 BTC) and did not trigger the same panic-sell dynamic — bears probed below the reference close but could not force a capitulation.\n\n**Phase 2 — Sharp Overnight Recovery (Aug 14 23:00 - Aug 15 02:00 UTC):**\n- 23:00 UTC: O $62,879, H $63,073, L $62,860, C $63,048 — **51.53 BTC (session's highest volume candle)** — buyers absorbed the $62,793 low with the session's biggest candle\n- 00:00 UTC Aug 15: O $63,048, H $63,064, L $62,981, C $63,015\n- 01:00 UTC: C $63,036 (25.39 BTC — second highest; overnight momentum sustained)\n- 02:00 UTC: C $63,138 (19.15 BTC — drift higher into Asia session)\n\n**Phase 3 — Asia Session High (Aug 15 03:00-06:00 UTC):**\n- 03:00 UTC: O $63,138, **H $63,193.90 (SESSION HIGH)**, L $63,041, C $63,052 (13.98 BTC — moderate)\n- The $63,193.90 high tested the $63,200-$63,418 resistance zone but failed to clear it — sellers appeared at the same level that has capped every bounce since Aug 13\n- 04:00-06:00 UTC: Settled back to $63,081-$63,115 range (declining from the session high, confirming the resistance)\n\n**Phase 4 — European Open Minor Dip (Aug 15 07:00-08:00 UTC):**\n- 08:00 UTC: O $63,071, H $63,128, **L $62,914.95**, C $62,933 — 24.44 BTC (second-highest hourly volume)\n- A minor echo of Aug 14's European distribution candle (-$408 at 06:00 UTC); today's move was only -$156 and volume was much lower — European sellers exist but are not aggressive on a Saturday\n\n**Phase 5 — US Session / Saturday Afternoon Grind (Aug 15 09:00-20:00 UTC):**\nThe most remarkable feature of today's session: from 09:00 UTC through the reference close (20:00 UTC), BTC traded in a **$94 band** ($63,026-$63,124) for 11 hours on average volume of ~9 BTC/h:\n- 09:00 UTC: Recovery to $63,030 (from $62,933 EU low)\n- 10:00-16:00 UTC: Range $63,026-$63,124 — 7 consecutive candles inside a $98 range\n- 17:00 UTC: $63,070 close on 3.95 BTC — thinnest candle of the session\n- 18:00-19:00 UTC: $63,047-$63,124 range with 9-10 BTC/h\n\n**Reference Close (20:00 UTC Aug 15):**\n- Candle: O $63,123, H $63,123, L $63,068, **C $63,100.31** (5.77 BTC — extremely thin)\n- Post-reference continuation (21:00 UTC): C $63,161 (+$61 from reference), showing slight upward drift\n\n---\n\n### VOLUME Analysis — Weekend Liquidity Vacuum (Critical to Interpreting Today's Action)\n\n| Period | Volume (Crypto.com 1h) | Interpretation |\n|--------|------------------------|----------------|\n| 22:00 UTC Aug 14 (session low) | 34.79 BTC | Moderate — not a cascade; bears probed, contained |\n| 23:00 UTC Aug 14 (recovery) | 51.53 BTC | Session HIGH — buyers dominated the recovery |\n| 01:00 UTC Aug 15 | 25.39 BTC | Second-highest — overnight momentum sustained |\n| 08:00 UTC (EU dip) | 24.44 BTC | Third-highest — European selling present but minor |\n| 10:00-16:00 UTC (US session) | 3.95-10.78 BTC/h | Extremely thin — no institutional participation |\n| Reference close (20:00 UTC) | 5.77 BTC | Near-zero — the reference close is a vacuum price |\n\n**Critical context:** Aug 14's peak volatility hours (13:00-14:00 UTC) each registered 162-167 BTC — today's **entire 24-hour session** (379 BTC total) is equivalent to just 2.3 of Aug 14's peak hours. The reference close at $63,100.31 on 5.77 BTC is essentially the market's 'least-wrong' price in a near-empty room — it carries almost no informational value about true supply/demand.\n\n**Volume conclusion:** The session low at $62,793 was absorbed without a cascade (34.79 BTC vs. Aug 14's 167.5 BTC at $62,536) — mildly constructive. The lack of high-volume buying on the recovery (session-high volume was only 51.53 BTC on the 23:00 UTC recovery candle) means no new institutional conviction was added. **Weekend volume is too thin to establish a directional read — Monday's session is the first tradable signal.**\n\n---\n\n### ★ Strongest Support — $62,793.55 (Saturday Session Low)\n\nEvidence:\n1. Tested at 22:00 UTC Aug 14 on 34.79 BTC with a fast 51.53-BTC recovery candle — buyers appeared immediately\n2. Price never returned to or below $62,914 for the remaining 21+ hours of the session\n3. Combined with Aug 14's $62,536 intraday low, the $62,500-$62,800 zone now has two test-and-hold data points — a validated demand zone\n4. Weakness: tested only once on thin weekend volume; not stress-tested by institutional ETF-driven selling pressure\n\n### ★ Strongest Resistance — $63,418.13 (Aug 13 Reference Close)\n\nEvidence:\n1. Price has not achieved a reference close above $63,418 since Aug 13; every recovery attempt falls short:\n   - Aug 14 afternoon peak: $63,254 high (failed $164 below $63,418)\n   - Aug 15 Asia session high: $63,193.90 (failed $224 below $63,418 — even further)\n2. The $63,193-$63,254 recent bounce ceiling is narrowing, not expanding — sellers are appearing at progressively lower highs\n3. Multiple analyst consensus cites $63,300-$63,500 as the 'prior support now resistance' zone\n\n---\n\n### Pattern in Play: Descending Range With Weekend Compression\n\nBTC is in a descending, range-compressing pattern:\n- Weekly range: ~$65,500 (Monday high) → ~$63,100 (Friday-Saturday close) — $2,400 weekly decline\n- Daily range progression: Aug 12 (CPI day, $1,600+ range) → Aug 13 (~$647) → Aug 14 ($1,086 — volatile) → Aug 15 ($400 — compressed)\n- The compression pattern: high-volatility moves on weekday ETF-flow days, range compression on weekends\n- **Implication:** Monday's session resets the volatility regime. The key question: does the descending-range pattern continue (lower high on Monday's rally attempt) or does IBIT stabilize and give the ETF-flow-driven bottom it needs?\n\n### Moving Averages Context\n\nBTC remains below all major daily moving averages (all four sloping downward):\n- 20-day EMA: ~$64,147 (above current by ~$1,047)\n- 50-day EMA: ~$64,557 (above current by ~$1,457)\n- 100-day EMA: ~$67,600 (above current by ~$4,500)\n- 200-day EMA: ~$73,300 (above current by ~$10,200)\n\nThe $64,000-$64,557 zone is a moving-average cluster (20-DMA + 50-DMA + prior Aug 13 double-rejection) that will be the wall for any rally attempt.\n\n### RSI and Momentum\n\nRSI (14-period, daily): estimated 44-47, below neutral 50 and declining. The RSI trend supports sellers: a RSI below 50 with a declining slope in a downtrend accelerates the technical bear case. Daily MA-based screens show 12 sell signals vs. 0 buy signals — the broadest technical consensus since Aug 10.\n\n### What Would Change the Read\n\n**Sunday (Aug 16) — watch for:**\n- A Sunday Asia close above $63,418 → first signal of a short-squeeze; would not satisfy either condition but changes the near-term technical tone\n- A Sunday close below $62,793 → bears testing the range floor without ETF buyers; escalates the $62,500 breakdown risk\n- Most likely: continuation of the $62,800-$63,200 range on thin volume\n\n**Monday (Aug 17) — the first actionable session:**\n- IBIT inflow (+any amount) → Condition 2 met; assess Condition 1 at Monday's 20:00 UTC reference close\n- IBIT outflow (4th consecutive day) → step-aside deepens; monitor $62,500 floor with institutional sellers resuming\n- A Monday reference close above $64,000 → approaching the EMA cluster; signals a potential reversal but still $1,000 from Condition 1\n\n**Re-entry gates remain unchanged:**\n1. Reference close > $65,000 (currently $1,899.69 away — 3.01%)\n2. Concurrent net-positive U.S. spot-BTC ETF flows\nBoth must occur on the same session. No weekend action can satisfy these conditions."
+}
