@@ -1,0 +1,106 @@
+{
+  "routine": "markets",
+  "date": "2026-08-15",
+  "window": "morning",
+  "generated_at": "2026-08-15T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Retail slump and consumer gloom dampen record-week glow ahead of Nvidia and Warsh",
+    "label": "Post-record pause; 30Y closes back at 5.24% after Friday retail miss; NVDA bar and Warsh are the next gates",
+    "conviction": 2,
+    "horizon": "1-2 weeks (through NVDA Aug 26 and Jackson Hole Aug 28)",
+    "rationale_short": "The S&P 500 backed off its Thursday record to 7,785.76 (-0.17%) after retail sales for July came in at -0.6% MoM versus expectations of +0.1% — the first meaningful consumption softening since spring. The University of Michigan's August preliminary consumer sentiment also disappointed on both headline and inflation expectations. More critically, the 30Y UST, which had compressed to 5.19% pre-market on Friday, closed the session back at 5.24% — invalidating the week's compression on no new catalyst and confirming the bond market's structural prior. WTI ($82.40) and Brent ($88.52) both closed higher as Treasury Secretary Bessent threatened 'economic isolation' of Iran, keeping the Hormuz risk premium embedded. The three-week gain streak is intact, breadth is genuine (Russell 2000 closed at a fresh record of 3,062), and the AI thesis is unbroken. But adding to risk into a two-binary-catalyst fortnight is analytically difficult. The session's governing question for the Aug 17 week: do the FOMC Minutes (Wednesday, Aug 19) and PMI flash (Friday, Aug 21) reinforce or challenge the soft-data trajectory? Then Aug 26: NVDA guides Q3, and Aug 28: Warsh delivers Jackson Hole.",
+    "supporting_data": [
+      {
+        "label": "Retail sales July -0.6% MoM vs +0.1% expected; core -0.3% vs -0.2% forecast — first monthly contraction since March 2026",
+        "url": "https://finance.yahoo.com/economy/articles/u-retail-sales-dropped-0-124445798.html"
+      },
+      {
+        "label": "UMich August prelim sentiment missed — Americans more dour on economy as inflation stays top of mind (Aug 14 recap)",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html"
+      },
+      {
+        "label": "30Y UST closes at 5.24% — full reversal of 5.19% pre-market compression on no new catalyst; bond market holds structural prior",
+        "url": "https://www.etftrends.com/fixed-income-content-hub/treasury-yields-snapshot-august-14-2026/"
+      },
+      {
+        "label": "Brent $88.52, WTI $82.40 — Bessent warns of Iran 'economic isolation' measures 'never before seen'; Hormuz deadlock persists",
+        "url": "https://www.cnbc.com/2026/08/14/oil-prices-today-brent-wti-hormuz.html"
+      },
+      {
+        "label": "NVDA Q2 FY2027 earnings Aug 26 after close — ~$91B revenue bar; result lands one day before Jackson Hole opens",
+        "url": "https://www.financecalendar.com/event/nvda-earnings-august-2026/"
+      },
+      {
+        "label": "Warsh keynote Friday Aug 28 at Jackson Hole (Aug 27-29) — last Fed communication before Sep 15-16 FOMC",
+        "url": "https://www.regardsofwallstreet.com/news/jackson-hole-2026-dates-schedule-warsh-first-speech"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7785.76, "change_pct": -0.17, "as_of": "2026-08-14T20:00:00Z" },
+    "nasdaq": { "level": 26776.00, "change_pct": -0.10, "as_of": "2026-08-14T20:00:00Z" },
+    "vix":    { "level": 14.63,   "change_pct": 0.00,  "as_of": "2026-08-14T20:00:00Z" },
+    "ust10y": { "level": 4.68,    "change_bps": 3,     "as_of": "2026-08-14T20:00:00Z" },
+    "dxy":    { "level": 99.61,   "change_pct": -0.36, "as_of": "2026-08-14T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.24, "trigger_above": 5.28, "unit": "%" },
+    { "name": "WTI",       "value": 82.40, "trigger_above": 79.0, "unit": "$/bbl" },
+    { "name": "Brent",     "value": 88.52, "trigger_above": 85.0, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$225 area. Earnings Aug 26 after close — Q2 FY2027 bar is ~$91B revenue and gross margin above 78% with a data-center guide visibly ahead of sell-side consensus. The result arrives one day before Jackson Hole opens; a clear beat re-rates the AI complex heading into Warsh's keynote. A miss on revenue, margin, or forward guide collapses the AI premium on the eve of the most critical Fed communication of the cycle. $216 remains structural support.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "China equipment-demand signal from AMAT is the unresolved read into the Aug 17 week. Watch the open relative to $478 (signal extends to chip designers) and $484 (equipment-specific containment). Two consecutive sessions above $484 post-AMAT without additional China catalysts would contain the read to capital goods.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "RDDT",
+      "note": "S&P 500 inclusion effective Aug 18. Passive demand concentrates at the Aug 17 closing auction. Post-inclusion, RDDT's price discovery reverts to its fundamental case — AI-search displacement of Reddit's advertising model is the unresolved medium-term question.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "WDAY",
+      "note": "~$206 area (Aug 14 close). Silver Lake buyout talks at ~$43B ongoing; a completed deal could top $60B with a standard premium. Options hedging signals market uncertainty on deal timeline. Confirmation sets a valuation floor for enterprise SaaS; collapse reopens the SaaS multiple debate.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSM",
+      "note": "August revenue report (due September) is the first test of whether AMAT's China equipment-demand softening extends to the foundry layer. July foundry data ($467.58B NT revenue, +44.7% YoY record) predated the AMAT signal.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA (Aug 26 earnings)",
+      "thesis": "NVDA reports Q2 FY2027 on Aug 26 after close — one day before Jackson Hole opens. Bar is ~$91B revenue, gross margin above 78%, and a Q3 guide that visibly exceeds sell-side consensus. A clear beat re-rates the AI complex heading into Warsh's keynote, creating a compounding positive for risk assets in the Aug 26-28 window. A miss on any leg collapses the AI premium on the eve of the highest-stakes Fed communication in this cycle.",
+      "entry": "Setup window is Aug 17-25. Below $216 on no NVDA-specific catalyst implies macro-driven multiple compression. Above $232 in the week pre-print suggests sell-side bar migration — the beat threshold rises with it. $216 remains structural support.",
+      "invalidation": "NVDA closes above $232 before Aug 26 on no new catalyst (bar migration risk). Below $208 on volume ahead of print signals macro factors dominating ahead of the report.",
+      "horizon": "Aug 17-28 (through Jackson Hole)"
+    },
+    {
+      "asset": "30Y UST (Jackson Hole rate setup)",
+      "thesis": "The 30Y closed Aug 14 at 5.24% — fully reversing the week's pre-market compression to 5.19%. Soft retail and UMich data were insufficient to hold the long end. FOMC Minutes (Aug 19) and PMI flash (Aug 21) are the week's primary reads. If PMI flash services shows acceleration, September hike odds migrate above 40% before Warsh speaks. If soft, the setup into Aug 28 is a speech to already-dovish bond markets.",
+      "entry": "Two consecutive closes at or below 5.18% before Aug 25 would be the first concrete evidence the soft-data trajectory is working on the long end ahead of Jackson Hole. Two closes above 5.28% before Aug 19 shift September hike probability materially before the Minutes land.",
+      "invalidation": "30Y above 5.28% post-FOMC Minutes on no new inflation catalyst — September hike odds exceed 45%.",
+      "horizon": "Aug 17-28 (through Jackson Hole)"
+    },
+    {
+      "asset": "RDDT (S&P 500 inclusion mechanics)",
+      "thesis": "Reddit's S&P 500 inclusion is effective Aug 18. Mechanical passive demand concentrates at the Aug 17 closing auction — index funds must be fully weighted before the open. Post-inclusion, RDDT's price discovery shifts back to its fundamental case and the AI-search displacement risk to advertising monetization.",
+      "entry": "Mechanical demand peaks Aug 17 close. Two sessions above the inclusion-announcement close post-Aug 18 tests whether fundamental demand supports the mechanical bid.",
+      "invalidation": "RDDT reverses below its inclusion-announcement close within two sessions of Aug 18.",
+      "horizon": "Aug 17-21"
+    }
+  ],
+  "bear_case": "Friday's retail print (-0.6% MoM) is the single most important data point of the week that closed, and it arrives before the most consequential Fed communication of the cycle. The bond market's refusal to hold the 5.19% compression — closing at 5.24% on a day with a soft consumer print and no hawkish Fed speaker — is the session's clearest signal: the long end is not ready to yield to soft data alone. At 5.24%, the 30Y is still 24bps above the level that would materially relieve growth-multiple pressure, and the only path there before September 15 runs through Warsh's Aug 28 keynote. September hike odds at ~33% have asymmetric upside: if FOMC Minutes (Aug 19) or PMI flash (Aug 21) show any services acceleration, odds migrate above 40% before Warsh speaks, eliminating the dovish setup Jackson Hole requires. Bessent's 'economic isolation' language on Iran ratchets the Hormuz risk premium higher — WTI and Brent are both above regime triggers, and two of three regime risk indicators are breached. A consumer sector that delivered -0.6% retail growth in July while sentiment deteriorated does not easily recover in time to support the multiple expansion implied by S&P 500 at record. The bull case requires NVDA to clear the bar, Warsh to signal dovishly, and oil to calm — three concurrent conditions, in sequence, over 12 days.",
+  "body_mdx": "data/briefings/markets/2026-08-15-morning.mdx"
+}
