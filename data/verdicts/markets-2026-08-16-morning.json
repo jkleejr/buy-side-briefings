@@ -1,0 +1,106 @@
+{
+  "routine": "markets",
+  "date": "2026-08-16",
+  "window": "morning",
+  "generated_at": "2026-08-16T11:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Retail earnings and Fed minutes settle whether July's spending crash was a one-time shock",
+    "label": "Consumer health verdict this week: HD/TGT/WMT earnings wave faces July's -0.6% retail miss; FOMC Minutes Wed Aug 19; RDDT joins S&P 500 Aug 18; 30Y at 5.24%, 4bps from trigger; 2 of 3 regime indicators breached",
+    "conviction": 2,
+    "horizon": "This week through Aug 20 (Walmart/Deere); NVDA earnings Aug 26 and Warsh at Jackson Hole Aug 28 are the next structural gates",
+    "rationale_short": "The S&P 500 enters August's most data-intensive week just 13 points below its all-time closing record (7,798.99, set Aug 13), but with a deteriorating consumer signal demanding a verdict: July retail sales came in at -0.6% MoM versus the +0.1% consensus estimate — the worst monthly decline in over a year — while the University of Michigan's August preliminary consumer sentiment collapsed to 51 against a 55 forecast, hitting levels not seen since late 2025. This week delivers that verdict in compressed form. Home Depot reports Tuesday before the open (consensus EPS $4.73 vs. $4.68 year-ago), followed by Target, Lowe's, TJX, and Analog Devices Wednesday, then Walmart (consensus EPS $0.74, revenue $186.7B), Alibaba, Deere & Co, and Ross Stores Thursday. Their guidance tone — traffic patterns, ticket sizes, and second-half visibility — will determine whether July's government data print was an idiosyncratic shock or the first confirmed leg of a structural consumption deceleration. Complicating the read: FOMC Minutes land Wednesday afternoon from the contentious July 28-29 meeting where three board members dissented in favor of an immediate rate hike — the most hawkish internal split in recent memory. The minutes reveal how close the hawkish minority came to prevailing; any language suggesting September remains genuinely live reprices rate markets before Walmart and Deere have even reported, eliminating the dovish setup Jackson Hole requires. Monday's early reads — Empire State Manufacturing (estimate 10.2 vs. 15.6 prior, a meaningful step-down) and NAHB Housing (estimate 35.0 vs. 34.0 prior) — project continued deceleration without signaling a break. RDDT joins the S&P 500 at the Aug 18 open, concentrating passive fund buying at Monday's closing auction; post-inclusion, price discovery reverts to its fundamental AI-search monetization case. The 30Y UST closed Friday at 5.24% — just 4bps from the 5.28% regime trigger — having rejected Friday's soft consumer data as a sufficient dovish catalyst. Brent ($88.52) and WTI ($82.40) remain above their respective regime triggers as the Hormuz deadlock persists with no diplomatic breakthrough signaled over the weekend. BTC holds ~$63,000, essentially flat and non-directive to the macro read.",
+    "supporting_data": [
+      {
+        "label": "July retail sales -0.6% MoM vs. +0.1% expected — worst monthly decline in over a year; core -0.3% vs. -0.2% forecast",
+        "url": "https://finance.yahoo.com/economy/articles/u-retail-sales-dropped-0-124445798.html"
+      },
+      {
+        "label": "UMich August preliminary consumer sentiment 51 vs. 55 estimate — inflation expectations still elevated",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html"
+      },
+      {
+        "label": "FOMC Minutes Wed Aug 19: July 28-29 meeting featured 3 dissents for a rate hike — hawkish depth to be revealed",
+        "url": "https://www.capitalstreetfx.com/market-analysis/week-ahead-1721-august-2026-fomc-minutes/"
+      },
+      {
+        "label": "Reddit (RDDT) joins S&P 500 effective Aug 18, replacing AvalonBay ($AVB) — passive demand concentrates at Aug 17 close",
+        "url": "https://www.cnbc.com/2026/08/13/reddit-shares-jump-11percent-on-inclusion-in-sp-500.html"
+      },
+      {
+        "label": "Retail earnings week: HD Tue, TGT/Lowe's/TJX Wed, WMT/Deere Thu — WMT consensus $0.74 EPS on $186.7B revenue",
+        "url": "https://www.washingtonpost.com/business/2026/08/15/wall-street-home-depot-target-fed/773c3908-987f-11f1-9ef9-1be722184483_story.html"
+      },
+      {
+        "label": "Brent above $89, WTI above $83 — Hormuz deadlock intact with no weekend breakthrough; oil risk premium remains embedded",
+        "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7785.76, "change_pct": -0.17, "as_of": "2026-08-14T20:00:00Z" },
+    "nasdaq": { "level": 26776.00, "change_pct": -0.10, "as_of": "2026-08-14T20:00:00Z" },
+    "vix":    { "level": 14.63,   "change_pct": 0.00,  "as_of": "2026-08-14T20:00:00Z" },
+    "ust10y": { "level": 4.68,    "change_bps": 3,     "as_of": "2026-08-14T20:00:00Z" },
+    "dxy":    { "level": 99.61,   "change_pct": -0.36, "as_of": "2026-08-14T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.24, "trigger_above": 5.28, "unit": "%" },
+    { "name": "WTI",       "value": 82.40, "trigger_above": 79.0, "unit": "$/bbl" },
+    { "name": "Brent",     "value": 88.52, "trigger_above": 85.0, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$225 area. Earnings Aug 26 after close — the $91B revenue / 78%+ gross margin bar still governs the AI complex. Two weeks out, the print lands one day before Jackson Hole opens (Aug 27); a clear beat re-rates the AI thesis heading into Warsh's keynote. A miss on revenue, margin, or forward guide collapses the AI premium on the eve of the most critical Fed communication of the cycle. $216 remains structural support.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "HD",
+      "note": "Reports Tuesday Aug 18 before open. Consensus EPS $4.73 vs. $4.68 year-ago. As the first major consumer discretionary print of the week, HD's traffic commentary and comp guidance will set the tone for Target and Walmart. July's -0.6% retail sales print is the key context: does HD confirm the government data or rebut it with real receipts?",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "WMT",
+      "note": "Reports Thursday Aug 20 before open. Consensus EPS $0.74 on $186.7B revenue. Walmart is the single most comprehensive consumer barometer of the earnings week — spanning food, general merchandise, pharmacy, and grocery across income cohorts. Its U.S. comp guide and traffic data for Q3 will be the definitive read on whether the July retail miss was a blip or a break.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "RDDT",
+      "note": "S&P 500 inclusion effective Aug 18 (replacing AVB). Passive demand concentrates at the Aug 17 (Monday) closing auction — index funds must be fully weighted before the open. Post-inclusion, RDDT's price discovery reverts to its fundamental case: AI-search displacement of Reddit's advertising monetization remains the unresolved medium-term question.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "WDAY",
+      "note": "Silver Lake buyout talks reported Aug 13 sent the stock +17%. Talks ongoing at a ~$43B valuation; deal not finalized. Confirmation would set a valuation floor for enterprise SaaS and validate the mega-cap software take-private thesis. A collapse reopens the SaaS multiple debate and removes the bid premium.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "RDDT (S&P 500 inclusion mechanics)",
+      "thesis": "Reddit joins the S&P 500 at the Aug 18 open. Passive funds must hold full-weight RDDT by the open, concentrating mechanical buying demand at Monday's (Aug 17) closing auction. The stock surged ~12-15% on the announcement (after-hours Thursday Aug 14). Post-inclusion, two sessions above the announcement-night close tests whether fundamental demand supports the mechanical bid — or whether the inclusion pop is a pure sell-the-news.",
+      "entry": "Mechanical demand peaks Aug 17 close. Watch the Aug 18 open vs. the pre-announcement baseline. Two sessions of sustained prices above the inclusion-announcement close post-Aug 18 signal fundamental demand confirmation.",
+      "invalidation": "RDDT reverses below its inclusion-announcement close within two sessions of Aug 18 open.",
+      "horizon": "Aug 17-21"
+    },
+    {
+      "asset": "Retail sector (consumer health directional)",
+      "thesis": "Five major retailers report across Tuesday-Thursday against the worst retail-sales government print in over a year (-0.6% MoM). If HD, WMT, and TGT confirm the July softness in real-time comp data and guide conservatively for Q3, the consensus bull case (consumer resilience supporting the multiple) cracks before Jackson Hole. If they rebut it — traffic stable, ticket sizes holding — the July government data print becomes an outlier and the record-high multiple finds a new floor.",
+      "entry": "HD Tuesday is the first read; set positioning before WMT Thursday close. Two confirming beats (HD + WMT) with Q3 guidance held vs. prior establish the rebut case. Two misses or guidance cuts establish the deceleration case.",
+      "invalidation": "Mixed signals across HD and WMT with divergent guidance — consumer read remains ambiguous through Aug 20.",
+      "horizon": "Aug 18-21 (results week)"
+    },
+    {
+      "asset": "30Y UST (FOMC Minutes rate-path setup)",
+      "thesis": "The 30Y closed Aug 14 at 5.24%, just 4bps from the 5.28% regime trigger — having rejected a soft retail and sentiment print as a dovish catalyst. FOMC Minutes (Wednesday Aug 19) will reveal whether the hawkish dissenters (3 of ~12 voters) came close enough to prevailing that September is a live hike meeting. If yes, September odds migrate above 40% and the bond market reprices before retail earnings have landed and before Warsh speaks. If the minutes read as a 'good debate, clear hold,' the dovish Jackson Hole setup is preserved.",
+      "entry": "Two consecutive closes at or below 5.18% before Aug 25 would be the first evidence the soft-data trajectory is working on the long end. Two closes above 5.28% before or immediately after the Minutes shifts September hike probability to the critical 40-50% zone.",
+      "invalidation": "30Y above 5.28% post-FOMC Minutes on no new inflation catalyst — September hike odds exceed 45%, removing the dovish Jackson Hole setup.",
+      "horizon": "Aug 17-28 (through Jackson Hole)"
+    }
+  ],
+  "bear_case": "Three things need to go right simultaneously this week, and their sequencing is the problem. The consumer has to hold (retail guidance can't confirm July's -0.6% miss), the Fed has to show restraint (FOMC Minutes can't reveal a near-majority for a July hike), and oil has to stay capped (Hormuz deadlock resolves or at minimum doesn't escalate). Friday's data showed all three moving in the wrong direction at once: retail collapsed, sentiment crashed, and the 30Y refused to rally on soft data — meaning the bond market's structural prior (elevated-for-longer) is not being dislodged by a single month of consumption weakness. The 4bps cushion between 5.24% and the 5.28% regime trigger is the most important number heading into the week: one hawkish sentence in the FOMC Minutes, one services PMI surprise (Friday Aug 21), or one Hormuz escalation can close that gap before Warsh has spoken. At 5.24%, the 30Y is already 24bps above the level at which growth-multiple pressure would materially ease, and the only credible path to compression runs through Warsh's Aug 28 keynote — which is still two weeks away. Meanwhile, the Hormuz deadlock shows no weekend breakthrough, keeping Brent above $88 and WTI above $82, both above regime triggers. A consumer sector that delivered -0.6% in July while sentiment hit 51 does not easily self-correct across one month's earnings wave; if Walmart or Home Depot guide Q3 below consensus, the July government print gets confirmed in real time, and the multiple re-rates before the AI complex's own test (NVDA Aug 26) has even begun. Two of three regime indicators are breached.",
+  "body_mdx": "data/briefings/markets/2026-08-16-morning.mdx"
+}
