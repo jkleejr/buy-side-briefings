@@ -1,0 +1,88 @@
+{
+  "routine": "markets",
+  "date": "2026-08-17",
+  "window": "night",
+  "generated_at": "2026-08-17T22:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Iran ends Hormuz talks; Brent crosses $90 and 30Y hits 19-year high",
+    "label": "Dual regime breach: both morning binary risks resolved to the downside as oil and long-end yields cleared their thresholds",
+    "rationale_short": "Iran ruled out any Hormuz MOU extension and Brent surpassed $90; the 30Y closed at 5.31%, the first breach of the 5.28% regime trigger at a 19-year high. MSFT and META each fell more than 3% on reinforcing headwinds — a Morgan Stanley hyperscaler creditworthiness note and a 30-state AG trial — while RDDT closed -7.14% as insider supply overwhelmed the S&P 500 inclusion auction. The level that changes this read: SPX closes above 7,800 on two consecutive sessions with the 30Y back below 5.25%.",
+    "supporting_data": [
+      {
+        "label": "Brent above $90: Iran rules out Hormuz deal extension, threatens escalation",
+        "url": "https://www.cnbc.com/2026/08/17/oil-prices-iran-war-strait-hormuz.html"
+      },
+      {
+        "label": "30Y Treasury 5.31% — 19-year high; first close above 5.28% regime trigger",
+        "url": "https://www.cnbc.com/2026/08/17/treasury-yields-federal-reserve-fomc-minutes.html"
+      },
+      {
+        "label": "MSFT −3.17%: Morgan Stanley flags hyperscaler AI capex-to-revenue gap",
+        "url": "https://www.tradingkey.com/news/market-movers/262112776-market-movers-msft-20260817"
+      },
+      {
+        "label": "META −3.63%: 30-state AG trial commences; FCF compressed to $784M on 55% opex surge",
+        "url": "https://www.tradingkey.com/news/market-movers/262112774-market-movers-meta-20260817"
+      },
+      {
+        "label": "RDDT −7.14% on S&P 500 inclusion day; insider Form 144 supply overwhelms passive auction",
+        "url": "https://www.tradingkey.com/news/market-movers/262113020-market-movers-rddt-20260817"
+      },
+      {
+        "label": "Gold +0.9% to ~$4,412 — safe-haven bid alongside Brent spike",
+        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-august-17-2026-gold-ticks-up-after-lower-retail-sales-report-134755206.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7747.0,  "change_pct": -0.47, "as_of": "2026-08-17T21:00:00Z" },
+    "nasdaq": { "level": 26647.0, "change_pct": -0.31, "as_of": "2026-08-17T21:00:00Z" },
+    "vix":    { "level": 14.48,   "change_pct": -0.48, "as_of": "2026-08-17T21:00:00Z" },
+    "ust10y": { "level": 4.70,    "change_bps": 1,     "as_of": "2026-08-17T21:00:00Z" },
+    "dxy":    { "level": 99.77,   "change_pct": -0.13, "as_of": "2026-08-17T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",    "value": 5.31, "trigger_above": 5.28, "unit": "%" },
+    { "name": "Brent Crude",  "value": 91.5, "trigger_above": 85.0, "unit": "USD" },
+    { "name": "WTI Crude",    "value": 85.5, "trigger_above": 79.0, "unit": "USD" },
+    { "name": "BTC Gate 2",   "value": 62800, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "~$225, roughly flat. Anthropic $11.5B Q2 validates AI thesis; MSFT −3.17% on capex-to-revenue gap is the counter-signal entering Aug 26. Bar unchanged: gross margin above 78% AND data-center guide materially above the most aggressive sell-side estimate, both simultaneously.", "sentiment": "neutral" },
+    { "ticker": "AMD",   "note": "$506.24 (−1.58%). Second consecutive close above $484 confirmed — AMAT containment signal holds. Next resistance $520.", "sentiment": "positive" },
+    { "ticker": "MSFT",  "note": "$480.35 (−3.17%). Morgan Stanley hyperscaler creditworthiness note at a session where 30Y simultaneously hit a 19-year high. Azure capex-to-revenue gap is the primary fundamental overhang at ~30x NTM.", "sentiment": "negative" },
+    { "ticker": "META",  "note": "$568.97 (−3.63%). 30-state AG trial commenced August 17; FCF compressed to $784M on elevated AI and Reality Labs spend (>$4B quarterly operating losses). Margin-recovery thesis under strain at ~25x NTM.", "sentiment": "negative" },
+    { "ticker": "RDDT",  "note": "~$165.38 (−7.14%). Inclusion auction overwhelmed by insider Form 144 supply. Below the $177 post-mechanics threshold on the inclusion day itself. Next test: $158 (pre-announcement close).", "sentiment": "negative" },
+    { "ticker": "AVGO",  "note": "$393.20 (+0.05%). Essentially flat; VMware CVE-2026-59310 headwind and 72% AI sequential revenue concentration unchanged. $380 support, $400 resistance into September earnings.", "sentiment": "neutral" },
+    { "ticker": "TSM",   "note": "$430.03 (+0.86%). Only major AI infrastructure name that rose — Anthropic $11.5B Q2 confirms HBM demand durability.", "sentiment": "positive" },
+    { "ticker": "TSLA",  "note": "$339.30 (−0.9%). Tracking broader market; no specific catalyst.", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "$305.59 (−0.1%). Minimal session reaction. Jefferies Underperform (PT $263.66) unchanged.", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$174. Roughly flat; no new catalyst.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y Treasury Yield",
+      "thesis": "The 30Y closed at 5.31%, the first breach of the 5.28% trigger and the highest yield in 19 years. FOMC Minutes Wednesday (July 28–29 meeting, three hawkish dissenters) could extend the move toward 5.40% — a level historically associated with broad P/E compression in long-duration tech — if the dissenters' rationale was fiscal sustainability rather than CPI persistence.",
+      "entry": "5.28% was the trigger (now breached); 5.40% is the next technically meaningful level; 5.20–5.25% is retracement support if Minutes reveal isolated dissenters on inflation.",
+      "invalidation": "30Y retraces below 5.25% on two sessions after FOMC Minutes; September hike odds fall below 25%.",
+      "horizon": "3–5 sessions"
+    },
+    {
+      "asset": "MSFT / META — AI capex re-rating",
+      "thesis": "Both fell 3%+ on the same session with distinct catalysts (hyperscaler creditworthiness note; AG trial), together representing a simultaneous re-rating of AI infrastructure spending cost (MSFT) and AI application profitability (META). NVDA's August 26 print is the next test of whether the re-rating extends to the infrastructure enabler.",
+      "entry": "MSFT $480 with $460–470 as next meaningful support; META $569 with $540 as technical support below.",
+      "invalidation": "Either name recovers above today's close within 2 sessions on no new catalyst, indicating the specific drivers were already absorbed.",
+      "horizon": "5–10 sessions"
+    },
+    {
+      "asset": "RDDT post-inclusion price discovery",
+      "thesis": "RDDT closed at ~$165.38 on its S&P 500 inclusion day — below the $177 post-mechanics threshold identified in the morning brief. The question is whether $158 (pre-announcement close) holds as support or whether the full reversal of the inclusion pop is now underway. Two closes below $158 on Aug 18–19 would confirm the advertising-durability question was not answered by the passive mechanics.",
+      "entry": "$158 is the pre-announcement reference; $165 is current close; $177 is the level that would indicate fundamental demand present.",
+      "invalidation": "Two consecutive closes above $177 on Aug 18–19 confirm advertising-durability demand met the passive bid.",
+      "horizon": "2–3 sessions"
+    }
+  ],
+  "bear_case": "VIX at 14.48 did not reprice despite a 30Y breach, Brent above $90, and two 3%+ mega-cap declines — that vol compression in the face of multiple simultaneous shocks is historically associated with further gains rather than dislocation. Credit spreads have not widened materially, and sellers are not showing distress. Brent retracing below $89 on interim Hormuz progress and the 30Y compressing below 5.25% on dovish FOMC Minutes would reverse all three bear triggers simultaneously. If SPX reclaims 7,800 on two consecutive sessions with 30Y below 5.25%, this read no longer holds.",
+  "body_mdx": "data/briefings/markets/2026-08-17-night.mdx"
+}
