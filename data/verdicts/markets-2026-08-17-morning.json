@@ -1,0 +1,106 @@
+{
+  "routine": "markets",
+  "date": "2026-08-17",
+  "window": "morning",
+  "generated_at": "2026-08-17T12:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Anthropic blowout validates AI spending cycle as Hormuz ceasefire formally expires today",
+    "label": "AI capex reconfirmed: Anthropic Q2 $11.5B revenue (+14x YoY, first adj. operating profit); memory semis lead (MU near $1K, SNDK +5.7% premarket); RDDT passive MOC auction tonight (~16.7M shares, ~3x ADV); Hormuz ceasefire expires today, talks deadlocked; 30Y at 5.27% — 1bp from 5.28% regime trigger; Sep hike odds 30%; FOMC Minutes Wed Aug 19; HD earnings Tue; WMT/Deere Thu; 2 of 3 regime indicators breached",
+    "conviction": 2,
+    "horizon": "This week through Aug 21 (Flash PMIs); NVDA earnings Aug 26 and Warsh at Jackson Hole Aug 28 are the next structural gates",
+    "rationale_short": "The S&P 500 enters Monday with muted green premarket futures (+0.1%) and a narrowly-led tape — memory semiconductors are doing the heavy lifting after Anthropic's Q2 revenue surge to $11.5B (14x YoY growth, first-ever adjusted operating profit) landed Friday after the close, sending Micron approaching the $1,000/share level and SanDisk +5.7% premarket, validating the AI infrastructure capex cycle that underpins NVDA's Aug 26 print and the broader AI complex. The rest of the market is in a wait-and-see posture: September Fed hike odds have declined to 30% following last week's in-line CPI and the -0.6% MoM retail sales miss, but Wednesday's FOMC Minutes (July 28-29 meeting, three hawkish dissents) will reveal how close those dissenters came to a majority — any language suggesting September is genuinely live reprices the long end before Warsh has even spoken at Jackson Hole. The 30Y sits at 5.27%, one basis point from the 5.28% regime trigger, having absorbed Friday's soft retail and sentiment data without yielding ground; the bond market's structural prior of elevated-for-longer is not being dislodged by a single month of consumption weakness, and the cushion is now effectively gone. Today's primary market-moving event is not on the economic calendar: the Iran-US interim Hormuz ceasefire formally expires this evening with negotiations deadlocked and no weekend breakthrough, keeping Brent above $88 and WTI above $82 — both above regime triggers — and introducing a binary escalation risk into a week already crowded with consumer earnings. Tomorrow's Home Depot print is the first consumer verdict against July's government data disaster; HD CEO Ted Decker's absence on medical leave adds execution uncertainty to an already high-stakes setup. Walmart on Thursday is the definitive read on whether the July retail miss was a blip or a break. The RDDT MOC auction tonight is a well-telegraphed mechanical event: JPMorgan estimates approximately 16.7M shares — roughly 8% of RDDT's 207M diluted float and nearly 3x its average daily volume — must be purchased by S&P 500 index funds at tonight's closing auction, concentrating what was an 11% inclusion pop into a single market-on-close print. BTC holds $63,669, flat and non-directive. Empire State Manufacturing (estimate 10.2 vs. 15.6 prior) and NAHB Housing (estimate 35.0 vs. 34.0 prior) release this morning but are unlikely to move the tape on their own.",
+    "supporting_data": [
+      {
+        "label": "Anthropic Q2 revenue surges to $11.5B, +14x YoY — first adjusted operating profit; IPO speculation intensifies",
+        "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html"
+      },
+      {
+        "label": "Micron approaches $1,000 premarket, SanDisk +5.7%, SMH +1.2% — AI memory demand + supply tightening",
+        "url": "https://invezz.com/sg/news/2026/08/17/micron-stock-nears-dollar1000-sk-hynix-sandisk-rise-premarket-whats-driving-it/"
+      },
+      {
+        "label": "September Fed hike odds fall to 30%; FOMC Minutes Wednesday Aug 19 from 3-dissent hawkish July meeting",
+        "url": "https://www.benzinga.com/markets/equities/26/08/61240267/stock-market-today-dow-futures-slip-sp-500-rises-as-september-fed-hike-odds-fall-to-30-sandisk-micron-hive-in-focus"
+      },
+      {
+        "label": "RDDT joins S&P 500 Aug 18; JPMorgan estimates ~16.7M shares (~3x ADV) must buy at tonight's MOC auction",
+        "url": "https://www.cnbc.com/2026/08/13/reddit-shares-jump-11percent-on-inclusion-in-sp-500.html"
+      },
+      {
+        "label": "Hormuz ceasefire expires today — Iran-US talks deadlocked, no weekend breakthrough; Brent $88.31, WTI $82.32",
+        "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-august-17-2026/"
+      },
+      {
+        "label": "Retail earnings week: HD Tue (CEO Decker on medical leave; consensus EPS $4.73 on $47.24B revenue), WMT/Deere Thu",
+        "url": "https://www.washingtonpost.com/business/2026/08/15/wall-street-home-depot-target-fed/773c3908-987f-11f1-9ef9-1be722184483_story.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7794,    "change_pct": 0.11,  "as_of": "2026-08-17T12:00:00Z" },
+    "nasdaq": { "level": 26910,   "change_pct": 0.50,  "as_of": "2026-08-17T12:00:00Z" },
+    "vix":    { "level": 14.25,   "change_pct": -2.60, "as_of": "2026-08-17T12:00:00Z" },
+    "ust10y": { "level": 4.69,    "change_bps": -1,    "as_of": "2026-08-17T12:00:00Z" },
+    "dxy":    { "level": 99.37,   "change_pct": -0.31, "as_of": "2026-08-17T12:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.27, "trigger_above": 5.28, "unit": "%" },
+    { "name": "WTI",       "value": 82.32, "trigger_above": 79.0, "unit": "$/bbl" },
+    { "name": "Brent",     "value": 88.31, "trigger_above": 85.0, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$226 area premarket. Earnings Aug 26 after close — the AI capex thesis just received its most direct validation of the cycle from Anthropic's Q2 $11.5B revenue surge (14x YoY). Anthropic's continued mass-compute deployment on AWS underscores that infrastructure spending has not peaked. The Aug 26 print still sets the bar for whether NVDA's own revenue and gross margin guide holds the AI premium heading into Warsh's Jackson Hole keynote. $216 structural support.",
+      "sentiment": "bullish"
+    },
+    {
+      "ticker": "MU",
+      "note": "Approaching $1,000/share premarket (+3.5%) as AI HBM memory demand and NAND supply constraints converge. SanDisk (SNDK) +5.7%, SMH +1.2%. This is the clearest alpha signal in Monday's tape — memory is early-cycle in the AI infrastructure buildout and the Anthropic Q2 surge confirms the demand side has not softened. The thesis holds as long as HBM pricing and capacity additions stay in balance.",
+      "sentiment": "bullish"
+    },
+    {
+      "ticker": "RDDT",
+      "note": "S&P 500 inclusion effective Aug 18 open. ~$177.56 premarket vs. $158.12 pre-announcement close. JPMorgan estimates ~16.7M shares (~8% of diluted float, ~3x average daily volume) must execute at tonight's MOC auction. This is a well-telegraphed mechanical event; post-inclusion, price discovery reverts to RDDT's fundamental case: AI-search monetization of its corpus and advertising revenue growth vs. displacement risk.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "HD",
+      "note": "Reports Tuesday Aug 18 before open. Consensus EPS $4.73 on $47.24B revenue vs. $4.68/$45.28B year-ago. CEO Ted Decker on temporary medical leave — adds execution uncertainty. As the first major consumer discretionary print of the week, HD's traffic commentary and comp guidance is the first live rebuttal or confirmation of July's -0.6% MoM retail sales miss. A comp beat with raised guide makes July a blip; a miss or narrowed guide starts the deceleration thesis.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "WMT",
+      "note": "Reports Thursday Aug 20 before open. The single most comprehensive consumer barometer of the week — spanning food, general merchandise, pharmacy, and grocery across income cohorts. Its U.S. comp guide and traffic data for Q3 will be the definitive read on whether the July retail miss was idiosyncratic or a structural break. Consensus EPS $0.74 on $186.7B revenue.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Memory semiconductor complex (MU / SNDK / SMH)",
+      "thesis": "Anthropic's Q2 revenue surge to $11.5B (first adjusted operating profit) is the most direct AI-capex validation of the cycle. AI infrastructure spending at this scale is HBM-intensive; Micron and SK Hynix are the primary HBM suppliers, and NAND supply tightening (SanDisk's inventory management) compounds the setup. The premarket move (+3.5% MU, +5.7% SNDK) is fundamental, not mechanical — earnings confirmation follows with MU's next report.",
+      "entry": "SMH breaking above its Aug 14 close on volume is the initial confirmation. Two sessions above that close post-Monday open signals institutional follow-through beyond the Anthropic news catalyst. Micron's specific $1,000 psychological level is a momentum trigger if cleared on the open.",
+      "invalidation": "FOMC Minutes (Wed) reveal hawkish surprise pushing 30Y above 5.28%; rate-sensitive multiple compression overwhelms AI capex tailwind in semis. Or Hormuz escalation spikes oil and forces risk-off across tech.",
+      "horizon": "Aug 17-26 (through NVDA print)"
+    },
+    {
+      "asset": "RDDT (S&P 500 inclusion MOC mechanics)",
+      "thesis": "Tonight's closing auction concentrates roughly 3x average daily volume of forced passive buying into a single print. The stock surged 11% on the announcement (Aug 13) and is trading around $177-178 premarket. Post-inclusion, the mechanical bid evaporates and price discovery reverts to fundamentals. Two sessions of sustained prices above the pre-announcement close ($158.12) post-Aug 18 test whether fundamental demand supports the inclusion premium.",
+      "entry": "Mechanical demand peaks at tonight's MOC. Watch the Aug 18 open vs. the $158.12 pre-announcement baseline. Post-inclusion fades below $170 within two sessions are a sell-the-news signal; sustained holds above $177 indicate fundamental bid.",
+      "invalidation": "RDDT reverses below its inclusion-announcement close within two sessions of the Aug 18 open.",
+      "horizon": "Aug 17-21"
+    },
+    {
+      "asset": "30Y UST (FOMC Minutes binary catalyst)",
+      "thesis": "The 30Y sits at 5.27% — 1bp from the 5.28% regime trigger — having rejected Friday's soft retail and consumer sentiment data as sufficient dovish catalysts. Wednesday's FOMC Minutes will reveal the depth of the hawkish July dissent (3 of ~12 voters). If the minutes suggest September is genuinely live, September hike odds push back above 40% and the 30Y clears its trigger before Warsh speaks. If the minutes read as 'robust debate, clear hold,' the dovish Jackson Hole setup is preserved and the 30Y has room to decompress toward 5.10%.",
+      "entry": "Two consecutive closes at or below 5.18% before Aug 25 = dovish minutes confirmed, Jackson Hole setup intact. Two closes above 5.28% immediately post-Minutes = September now live, Warsh keynote trading from a hawkish prior.",
+      "invalidation": "30Y above 5.28% post-FOMC Minutes on no new inflation catalyst — September hike odds exceed 45%, eliminating the dovish Jackson Hole narrative.",
+      "horizon": "Aug 17-28 (through Jackson Hole)"
+    }
+  ],
+  "bear_case": "Three overlapping risks converge this week, and today's Hormuz expiry is the most time-sensitive. If Iran takes action in the strait following the ceasefire's formal expiration — even a limited harassment of tanker traffic — Brent clears $90 and likely $92 (next psychological level) before the week is out, embedding an oil shock the Fed cannot easily offset. That alone pushes the 30Y through its 5.28% trigger before FOMC Minutes have even landed. Then the minutes themselves: three hawkish dissenters in July is not a fringe position — if the transcript reveals the majority explicitly declined to act in July only because they wanted one more CPI reading, the September meeting becomes a live hike event, and the 30Y doesn't just breach 5.28% but accelerates toward 5.40%, collapsing the dovish Jackson Hole setup before Warsh has spoken. Finally, tomorrow's Home Depot print: if HD's traffic data or comparable-store commentary confirms rather than rebuts July's -0.6% MoM retail sales miss, the consumer pillar beneath the 22x forward multiple cracks — leaving AI/semis as the only growth driver at record-high price levels. That is a narrow leadership base that creates index fragility: one miss from NVDA on Aug 26 against that backdrop becomes a multi-percent S&P correction with no offsetting sector bid. Two of three regime indicators are currently breached; the 30Y is one basis point from making it three.",
+  "body_mdx": "data/briefings/markets/2026-08-17-morning.mdx"
+}
