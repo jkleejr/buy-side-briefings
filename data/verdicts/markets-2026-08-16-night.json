@@ -1,0 +1,114 @@
+{
+  "routine": "markets",
+  "date": "2026-08-16",
+  "window": "night",
+  "generated_at": "2026-08-17T01:20:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "conviction": "medium",
+    "headline": "Reddit's index inclusion Monday leads a week of consumer earnings and Fed minutes",
+    "label": "HOLD — 2 of 3 regime triggers breached: WTI ~$82 and Brent ~$88.50 above oil thresholds; 30Y at 5.24%, 4bps below 5.28% gate; BTC $63,060 Sunday holds $62K floor with $1,060 buffer; Sep hike odds 34% (↓21pp week); RDDT $3B passive auction Monday 4pm ET, consumer earnings Tue–Wed, FOMC Minutes Wed 2pm",
+    "rationale_short": "Sunday — no equity session. Carrying forward Friday Aug 14's close: S&P 500 7,785.76 (-0.17%), Nasdaq Composite 26,729 (-0.30%), completing the third consecutive weekly gain despite the session's sharp headwinds (July retail sales -0.6% MoM, largest monthly drop in over a year; UMich prelim sentiment 51.0 vs 55.2 prior). Two regime triggers remain breached — WTI ~$82 and Brent ~$88.50 above thresholds — while the 30Y at 5.24% sits 4bps below the 5.28% gate, a signal that matters: the long end refused to hold 5.19% compression even on that data. September hike odds fell to 34% this week (from ~55%) on CPI/PPI soft reads, but the bond market's verdict is the structural tell that soft data alone cannot move the long end. The dominant Monday event is RDDT's S&P 500 inclusion closing auction at 4pm ET: approximately $3B of passive demand (~16.7M shares, ~3x ADV) must be absorbed before Tuesday's effective date. Friday's other headline was WDAY +17.78% on Silver Lake $54B deal talks — confirmation or denial early Monday reshapes enterprise SaaS sentiment across the tape. AMD at $514 has now broken decisively above the $484 containment level ($30 above the prior breakout threshold). BTC holds $63,060 (Crypto.com Sunday evening) with $1,060 buffer above the $62K gate. The week's binary sequence runs Monday through Friday: RDDT mechanics → consumer earnings (Walmart Tue, Target/Home Depot Wed) → FOMC Minutes Wed 2pm ET → Flash PMI Fri 9:45am ET — then NVDA Aug 26 and Warsh at Jackson Hole Aug 28.",
+    "supporting_data": [
+      {
+        "label": "S&P 500 closes 7,785.76 (-0.17%), third straight weekly gain; Nasdaq Composite 26,729 (-0.30%) — Trading Strategy Guides Aug 14",
+        "url": "https://tradingstrategyguides.com/stock-market-recap-august-14-2026-sp-500-secures-3rd-weekly-gain/"
+      },
+      {
+        "label": "RDDT S&P 500 inclusion effective Aug 18; ~$3B passive demand (~16.7M shares, 3x ADV) concentrated at Monday Aug 17 closing auction — Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/reddit-p-500-debut-could-160300828.html"
+      },
+      {
+        "label": "WDAY +17.78% Friday on Silver Lake ~$54B acquisition talks; largest single-day gain since 2016 — ts2.tech Aug 14",
+        "url": "https://ts2.tech/en/workday-stock-wday-holds-18-gain-as-silver-lake-talks-point-to-54-billion-deal-math/"
+      },
+      {
+        "label": "FOMC Minutes (July 28–29 meeting) release Wednesday Aug 19 at 2:00pm ET; September hike odds ~34% after CPI/PPI soft prints — Capital Street FX",
+        "url": "https://www.capitalstreetfx.com/market-analysis/week-ahead-1721-august-2026-fomc-minutes/"
+      },
+      {
+        "label": "Hormuz talks between Tehran and Oman ongoing Sunday; WTI ~$82, Brent ~$88.50; Bessent Iran economic isolation threat embedded in oil risk premium — Al Jazeera live Aug 16",
+        "url": "https://www.aljazeera.com/news/liveblog/2026/8/16/iran-war-live-talks-on-hormuz-strait-continue-israel-kills-11-in-lebanon"
+      },
+      {
+        "label": "BTC $63,060 Sunday evening (Crypto.com live); 24h range $62,712–$63,394; $1,060 buffer above $62K gate — Crypto.com",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "Flash PMI (Manufacturing, Services, Composite) Friday Aug 21 at 9:45am ET; week-ahead schedule — Investrade",
+        "url": "https://investrade.com/weekly-event-calendar-08-17-2026-08-21-2026/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7785.76, "change_pct": -0.17, "as_of": "2026-08-14T20:00:00Z" },
+    "nasdaq": { "level": 26729.16, "change_pct": -0.30, "as_of": "2026-08-14T20:00:00Z" },
+    "vix":    { "level": 14.25,   "change_pct": -2.60, "as_of": "2026-08-14T20:00:00Z" },
+    "ust10y": { "level": 4.68,    "change_bps": 3,     "as_of": "2026-08-14T20:00:00Z" },
+    "dxy":    { "level": 99.61,   "change_pct": -0.36, "as_of": "2026-08-14T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.24, "trigger_above": 5.28, "unit": "%" },
+    { "name": "WTI",       "value": 82.13, "trigger_above": 79.0, "unit": "$/bbl" },
+    { "name": "Brent",     "value": 88.50, "trigger_above": 85.0, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "RDDT",
+      "note": "~$176–178 (Friday close, +12.65% on S&P 500 inclusion announcement). Inclusion effective Tuesday Aug 18. The mechanical event is the Monday Aug 17 closing auction: ~$3B passive demand (~16.7M shares, ~3x ADV) concentrated in the 3:50–4:00pm ET window. Post-Aug 18, price discovery reverts to fundamentals. $158 (pre-announcement close) is the reversion level confirming a mechanical-only pop; two sessions above $178 post-inclusion signals genuine fundamental demand present.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$225.16 (Friday close, -0.06%). No weekend news. Reports Q2 FY2027 on Aug 26 after close — one session before Jackson Hole. Bar: ~$91B revenue, gross margin above 78%, data-center guide visibly ahead of sell-side consensus. AMAT's AH reset (double-beat, -5% AH) is the fourth altitude-ceiling confirmation entering this print. $216 structural support.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$514.39 (Friday close, among top AI gainers Friday). Decisively above the $484 containment threshold — a $30 move above the prior breakout level. Second close above $484 confirmed; the magnitude of the break shifts the question to whether $484 holds as support on any pullback. Watch Monday for follow-through or fade in the context of AMAT's AH reset.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "WDAY",
+      "note": "$206.45 (Friday close, +17.78%) — Workday's largest single-day gain since 2016. Silver Lake acquisition talks at ~$54B implied deal value per Reuters. Q2 FY2027 earnings not until Aug 27 — this move is entirely M&A-driven. Confirmation sets a valuation floor for enterprise SaaS; denial reopens the multiple debate on the eve of the highest-stakes Fed communication of the cycle. Watch Monday premarket for deal developments.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$63,060 (Crypto.com, Sunday Aug 16 evening); 24h range $62,712–$63,394. $62K gate buffer $1,060. Weekend price action flat from Friday; no new catalyst. Holding the gate on a quiet Sunday before a binary macro week is a modest constructive signal.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMAT",
+      "note": "~$506 area (post-AH Friday). Q3: revenue $9.12B (+25% YoY), EPS $3.50 — both beat; Q4 guide $10.25B vs $9.54B expected. Stock fell ~5% AH despite the double-beat on altitude-ceiling dynamics and margin-pace concerns. Fourth altitude-ceiling sector confirmation entering NVDA's Aug 26 print.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "RDDT (S&P 500 inclusion mechanics)",
+      "thesis": "RDDT heads into the Monday Aug 17 closing auction with ~$3B of passive index-fund demand (~16.7M shares, ~3x ADV) required by the Aug 18 effective date. Mechanical demand concentrates in the 3:50–4:00pm ET window. Post-Aug 18, fundamental price discovery resumes — the AI-search displacement risk to Reddit's advertising model is the unresolved medium-term question.",
+      "entry": "Mechanical demand peaks at the Aug 17 close. $176–178 (Friday close range) is the passive-bid anchor; $158 (pre-announcement close) is the reversion level confirming a mechanical-only pop. Two sessions above $178 post-inclusion signals genuine fundamental demand.",
+      "invalidation": "RDDT reverses below $158 within two sessions of Aug 18.",
+      "horizon": "Aug 17–21"
+    },
+    {
+      "asset": "NVDA (Aug 26 earnings)",
+      "thesis": "NVDA reports Q2 FY2027 on Aug 26 after close — one session before Jackson Hole opens. Bar: ~$91B revenue, gross margin above 78%, Q3 guide visibly above sell-side consensus. Four altitude-ceiling confirmations registered (CSCO, AVGO, AMAT ×2) before the print. A clean beat re-rates the AI complex heading into Warsh's Aug 28 keynote; a miss on any leg collapses the AI premium on the highest-stakes Fed communication of this cycle.",
+      "entry": "Setup window Aug 17–25. Below $216 on no NVDA-specific catalyst signals macro multiple compression. Above $232 pre-print suggests sell-side bar migration — the beat threshold rises with the stock price.",
+      "invalidation": "NVDA closes above $232 before Aug 26 on no new catalyst (bar migration risk). Below $208 on volume ahead of print signals macro factors dominating.",
+      "horizon": "Aug 17–28 (through Jackson Hole)"
+    },
+    {
+      "asset": "30Y UST (FOMC Minutes + Jackson Hole setup)",
+      "thesis": "30Y at 5.24% — fully reversed its 5.19% pre-market compression on a session with -0.6% retail and UMich 51.0. The long end won't move on soft data alone. FOMC Minutes (Aug 19) and PMI flash services (Aug 21) are the week's decisive reads before Jackson Hole. September hike odds at 34% — if PMI flash shows services reacceleration, odds migrate above 40% before Warsh speaks, eliminating the dovish setup the compression thesis requires.",
+      "entry": "Two consecutive closes at or below 5.18% before Aug 25 is the first concrete evidence the soft-data trajectory is working on the long end. Two closes above 5.28% before Aug 19 shift September hike probability materially before the Minutes land.",
+      "invalidation": "30Y above 5.28% post-FOMC Minutes on no new inflation catalyst — September hike odds exceed 45%.",
+      "horizon": "Aug 17–28 (through Jackson Hole)"
+    }
+  ],
+  "bear_case": "The bond market's structural signal from Friday is the clearest tell of the week: the 30Y refused to hold 5.19% compression on the softest consumer print in over a year (-0.6% retail, UMich 51.0), closing back at 5.24%. If that data point can't move the long end, the bar for valuation relief before Jackson Hole is higher than current equity multiples imply. WTI and Brent both remain above regime thresholds while Hormuz transit is described as moving at a trickle; Tehran-Oman talks ongoing but unresolved means the oil risk premium is structural, not episodic. AMD's $514 close ($30 above the $484 breakout level) while consumer data deteriorates and AMAT got slapped AH on a double-beat raises the altitude-ceiling question at the index level: how far does multiple expansion run with the consumer printing -0.6% retail and UMich at 51.0? The week ahead requires three sequential outcomes in the right direction — dovish FOMC Minutes, flat-to-soft PMI, and NVDA clearing a rising sell-side bar — across 12 days. Any single failure cascades into the Jackson Hole keynote, where Warsh has explicitly stated he is 'not constrained by market prices.'",
+  "body_mdx": "data/briefings/markets/2026-08-16-night.mdx"
+}
