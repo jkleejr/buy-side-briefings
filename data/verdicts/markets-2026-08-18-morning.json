@@ -1,0 +1,99 @@
+{
+  "routine": "markets",
+  "date": "2026-08-18",
+  "window": "morning",
+  "generated_at": "2026-08-18T11:05:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Iran-Hormuz ceasefire collapses as the 30-year Treasury hits a 19-year high",
+    "code": "step_aside",
+    "emoji": "⚠️",
+    "label": "Full regime breach (3/3): Hormuz ceasefire collapsed — Iran threatens offensive posture; 30Y at 5.311% (19-yr high, 5.28% trigger breached); Brent $90.97 + WTI $85.00 (both above triggers); S&P futures -0.41%, Nasdaq futures -0.76%; FOMC Minutes tomorrow 2 PM ET; RDDT fundamental test begins at open",
+    "conviction": "high",
+    "horizon": "1-2 weeks",
+    "rationale_short": "All three regime indicators are simultaneously breached for the first time this cycle. The trigger is speed, not drift: Trump's rejection of the Iran ceasefire extension on Monday sent ship traffic through Hormuz to a near-halt overnight, pushing WTI to ~$85 (+$2.68 from Monday) and Brent to ~$91 (+$2.66) — both well above their regime thresholds. Simultaneously, the 30-year Treasury crossed 5.28% to a 19-year high at 5.311%, driven by energy inflation expectations, fiscal deficit concerns, and weakening foreign Treasury demand. Consumer data entering the week was already soft: UMich sentiment fell to 51.0 (from 55.2 in July) and July retail sales came in at -0.6% MoM. Wednesday's FOMC Minutes will be parsed for stagflation acknowledgment, but they predate the ceasefire collapse — they will read as dated the moment they're released. S&P 500 futures are -0.41% premarket, Nasdaq futures -0.76%. RDDT inclusion mechanics completed at Monday's MOC auction; today's open begins the fundamental demand test.",
+    "supporting_data": [
+      {
+        "label": "Iran ceasefire deadline expires; Trump rejects extension, Iran threatens 'fully offensive' posture — CNN, Aug 17",
+        "url": "https://www.cnn.com/2026/08/17/world/live-news/iran-war-trump"
+      },
+      {
+        "label": "30-year Treasury at 5.311%, highest since June 2007; S&P futures -0.41% — CNBC, Aug 17",
+        "url": "https://www.cnbc.com/2026/08/17/treasury-yields-federal-reserve-fomc-minutes.html"
+      },
+      {
+        "label": "Three things that could drive the 30-year yield even higher — CNBC, Aug 18",
+        "url": "https://www.cnbc.com/2026/08/18/30-year-treasury-yield-three-things-that-could-drive-it-even-higher.html"
+      },
+      {
+        "label": "Oil prices rise as ceasefire deal expires; Brent ~$91, WTI ~$85 — Marketplace, Aug 17",
+        "url": "https://www.marketplace.org/episode/2026/08/17/oil-prices-up-as-ceasefire-deal-expires"
+      },
+      {
+        "label": "Reddit (RDDT) joins S&P 500 Aug 18; Polymarket 27% probability of positive open — Benzinga, Aug 18",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/08/61265010/stock-market-will-sp-500-open-up-or-down-today-18"
+      },
+      {
+        "label": "FOMC Minutes from July 28-29 meeting release Wednesday Aug 19 at 2 PM ET — Federal Reserve",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7746.0,  "change_pct": -0.41, "as_of": "2026-08-18T11:00:00Z" },
+    "nasdaq": { "level": 26706.0, "change_pct": -0.76, "as_of": "2026-08-18T11:00:00Z" },
+    "vix":    { "level": 15.19,   "change_pct": 6.60,  "as_of": "2026-08-18T11:00:00Z" },
+    "ust10y": { "level": 4.73,    "change_bps": 4,     "as_of": "2026-08-18T11:00:00Z" },
+    "dxy":    { "level": 99.40,   "change_pct": 0.03,  "as_of": "2026-08-18T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.311, "trigger_above": 5.28, "unit": "%" },
+    { "name": "WTI",       "value": 85.00, "trigger_above": 79.0,  "unit": "$/bbl" },
+    { "name": "Brent",     "value": 90.97, "trigger_above": 85.0,  "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "RDDT",
+      "note": "Inclusion-day open (Aug 18). Passive buying completed at Monday's closing MOC auction (~16.7M shares, ~3x ADV). Two-session fundamental test now begins: two closes above $177 confirms durable demand from advertising/AI-data-licensing thesis; reversion below $158.12 (pre-announcement close) = mechanical pop fully unwound. Macro risk-off adds downside pressure to the test.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XLE",
+      "note": "Energy sector direct beneficiary of Hormuz closure: WTI ~$85, Brent ~$91, both well above regime triggers and moving higher. Integrated majors (XOM, CVX) have near-term tailwind. Risk: if Hormuz disruption triggers broad risk-off equity selling, energy names de-correlate only partially before correlation converges.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$226 range into August 26 earnings. Anthropic Q2 ($11.5B, +14x YoY) remains the AI capex demand validation. Full regime breach raises the bar: gross margin above 78% AND data-center guide materially above consensus — both simultaneously — required to hold tape against 5.311% 30-year headwind. $216 structural support.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MU",
+      "note": "Memory AI-infrastructure thesis intact near $1,000. Anthropic demand validation and NAND supply constraints have not reversed. Watch whether energy/rates pressure forces rotation out of AI/semis into defensives or energy — that rotation, not the fundamental thesis, is the near-term risk.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$64,224 per Crypto.com live (11:01 UTC). Up 0.9% from prior session. Gate 2 support at $62K leaves $2,224 buffer. In risk-off macro environments, BTC correlation with equities rises on the downside — watch for break below $62K if equity selling accelerates into the close.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y UST (first confirmed regime breach close)",
+      "thesis": "5.311% on the 30-year is a 19-year high and the first confirmed close above the 5.28% regime trigger. Three catalysts compound: (1) Hormuz oil shock passes energy inflation directly into long-run expectations; (2) Treasury auction demand weakening (recent 25-year high yield at auction); (3) Jackson Hole Aug 25 — if Warsh or Powell does not explicitly address long-end overshoot, the silence will be read as tolerance. Short TLT / long TBT on yield compression rallies is the carry-favorable position.",
+      "entry": "Two consecutive 30Y closes above 5.28% confirms breach is structural. Any intraday compression toward 5.20% driven by dovish FOMC Minutes Wednesday 2 PM is the re-entry point for short duration.",
+      "invalidation": "Two 30Y closes below 5.18% before Aug 25 — requires both dovish Minutes surprise and Hormuz de-escalation simultaneously.",
+      "horizon": "Aug 18–28 (through Jackson Hole)"
+    },
+    {
+      "asset": "RDDT (post-inclusion fundamental test)",
+      "thesis": "Monday's MOC auction completed the ~$2.97B passive bid (~3x ADV). Today's open is purely fundamental. Bull case: RDDT is now the only pure-play social media platform in the S&P 500 alongside Meta, with AI-data-licensing optionality as a differentiated growth driver. Bear case: 12.63% inclusion pop on top of a July move already pricing AI optimism leaves limited margin of safety, and macro risk-off adds pressure.",
+      "entry": "$177 two-session hold (Aug 18-19) = fundamental demand confirmed. Below $165 by Friday = mean-revert trade toward $158.12 pre-announcement level.",
+      "invalidation": "Above $185 within two sessions = momentum extension rather than fundamental test.",
+      "horizon": "Aug 18–22"
+    }
+  ],
+  "bear_case": "All three regime indicators — 30Y yield, WTI, and Brent — are simultaneously breached for the first time this cycle, and the catalyst (Hormuz ceasefire collapse) is both fast-moving and outside the Fed's toolkit. An oil shock is structurally stagflationary: it raises inflation expectations (pushing the long end higher) while simultaneously slowing consumer spending (July retail sales already -0.6% MoM, UMich sentiment at 51.0). Wednesday's FOMC Minutes predate the ceasefire collapse — they will offer no policy clarity on the week's primary risk. The fuller scenario: Hormuz disruption extends beyond four weeks, Brent reaches $95+, the 30-year rises toward 5.50% before Jackson Hole, three retail prints this week (HD Tuesday, TGT Wednesday, WMT Thursday) confirm consumer softness is a trend not a pull-forward, and NVDA's August 26 print fails to beat on both margin and guide simultaneously. In that sequence, the S&P 500's narrow leadership base provides no floor — energy adds inflation, AI/semis need multiple expansion that a 5.50% 30-year will not support. This bear case requires both Hormuz de-escalation AND two 30Y closes back below 5.18% to be invalidated.",
+  "body_mdx": "data/briefings/markets/2026-08-18-morning.mdx"
+}
