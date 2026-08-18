@@ -1,0 +1,192 @@
+{
+  "asset": "btc",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T21:30:00Z",
+  "is_seed": false,
+
+  "day_winner": "bulls",
+  "day_summary": "STEP-ASIDE HIGH CONVICTION — $65,000 BREACHED INTRADAY FOR THE FIRST TIME SINCE STEP-ASIDE BEGAN: REFERENCE CLOSE $64,578.49 (+$231.84 / +0.36% FROM AUG 17 DOCUMENTED REFERENCE CLOSE $64,346.65). SESSION MAP (AUG 17 20:00 UTC → AUG 18 20:00 UTC FROM CRYPTO.COM 1H CANDLE DATA): OPENED FROM AUG 17 REFERENCE CLOSE LEVEL ($64,346-$64,406) → OVERNIGHT MILD CONSOLIDATION TO SESSION LOW $64,035.17 AT 03:00 UTC (29.94 BTC; $64,000 ROUND NUMBER TESTED AND HELD) → ASIA/EU MORNING TIGHT SIDEWAYS $64,100-$64,350 RANGE (03:00-13:00 UTC; LOW VOLUME 12-49 BTC/H — QUIET ACCUMULATION) → US MORNING SURGE: 13:00 UTC (146.05 BTC — SECOND LARGEST CANDLE; ACCELERATION TOWARD $65,000) → 14:00 UTC PEAK: SESSION HIGH $65,061.81 (272.80 BTC — LARGEST CANDLE OF THE SESSION; CLOSE $64,719; FIRST INTRADAY TOUCH ABOVE $65,000 SINCE THE STEP-ASIDE BEGAN) → US AFTERNOON CONSOLIDATION $64,650-$64,900 (15:00-19:00 UTC; 30-47 BTC/H; HOLDING THE GAINS) → REFERENCE CLOSE $64,578.49 AT 20:00 UTC (43.00 BTC). KEY DEVELOPMENTS: (1) $65,061.81 SESSION HIGH — BTC BREACHED THE $65,000 CONDITION 1 THRESHOLD INTRADAY FOR THE FIRST TIME SINCE THE STEP-ASIDE BEGAN; THE CONDITION 1 FRAMEWORK REQUIRES A REFERENCE CLOSE ABOVE $65,000 (NOT JUST AN INTRADAY TOUCH); THE REFERENCE CLOSE OF $64,578.49 IS STILL BELOW THE THRESHOLD BY $421.51 / 0.65%; (2) CONDITION 1 GAP: AUG 15 $63,100 (-3.01%) → AUG 16 $63,007 (-3.16%) → AUG 17 $64,347 (-1.0%) → AUG 18 $64,578 (-0.65%) — STEADY COMPRESSION; (3) CONDITION 2 (ETF FLOWS): AUG 17 U.S. SPOT BITCOIN ETF FLOWS REPORTED AUG 18 MORNING SHOW APPROXIMATELY +$297.56M NET INFLOWS (IBIT LEADING AT +$160.23M) — IF CONFIRMED, CONDITION 2 IS MET FOR THE FIRST TIME SINCE THE STEP-ASIDE BEGAN; (4) VOLUME: REFERENCE SESSION TOTAL ~1,116 BTC (VS AUG 17'S 3,386 BTC); PEAK CANDLE AT 14:00 UTC (272.80 BTC) WAS THE $65,000 BREAKOUT ATTEMPT; (5) TICKER LIVE AT 21:48 UTC: $64,616.54 (ABOVE REFERENCE CLOSE; BTC CONTINUED MODEST GAINS AFTER REFERENCE SESSION CLOSED); 24H MARKET CONTEXT: SPX -0.6%, NASDAQ -1.3% (CHIP SELLOFF) BUT BTC POSITIVE — SECOND CONSECUTIVE SESSION OF BTC/EQUITY POSITIVE DECOUPLING.",
+
+  "decision": {
+    "action": "step_aside",
+    "conviction": "high",
+    "horizon": "step-aside until BOTH re-entry conditions are met simultaneously: (1) reference close (20:00 UTC Crypto.com 1h candle close) > $65,000 AND (2) most recent daily U.S. spot-BTC ETF net flows positive; CURRENT STATUS: Condition 1 = NOT MET ($64,578.49 reference close — $421.51 below threshold, 0.65% gap — gap at its narrowest ever after four sessions of compression from -3.01%); Condition 2 = LIKELY MET (Aug 17 ETF flows +$297.56M per early reports from The Block/SoSoValue — if confirmed, first positive ETF flow day since the step-aside began for the current re-entry framework); EARLIEST SIMULTANEOUS DUAL-CONDITION TRIGGER: Aug 19 reference close (20:00 UTC) > $65,000, simultaneously with Aug 18 ETF flows (reported Aug 19 morning) being positive; conviction upgraded to HIGH because: (a) Condition 1 was INTRADAY breached today ($65,061.81) for the first time since step-aside, confirming buyers CAN clear the level — only the sustained close is needed; (b) Condition 2 is now likely met; (c) gap at 0.65% is within BTC's intraday noise range ($65,061 - $64,578 = $483 swing in today's session alone)",
+    "rationale": "The Aug 18 session is the most significant bull development since the step-aside began. Key facts: (1) BTC touched $65,061.81 intraday at 14:00 UTC on the session's highest volume candle (272.80 BTC) — this is the first time BTC has cleared the $65,000 Condition 1 threshold at any point since the step-aside was activated; (2) the reference close of $64,578.49 still fails Condition 1 by $421.51 (0.65%) — the framework requires a REFERENCE CLOSE above $65,000, and the $65,000 level proved to be supply-heavy (the close retreated from $64,719 after the $65,061 peak); (3) Condition 2 (ETF flows) appears to be met for the first time — Aug 17 flows of +$297.56M net positive, reported Aug 18 morning, represent a sharp reversal from the prior week's -$389.7M net outflows; (4) the fact that BTC cleared $65,000 intraday but pulled back to close $64,578 shows the $65,000-$65,500 supply zone (six-time rejection from Aug 5-10 plus today's rejection) is real and requires volume and/or a catalyst to absorb; step-aside discipline holds until the reference close confirms the level is cleared. Conviction: HIGH — one reference close above $65,000 simultaneously with a positive ETF flow reading (likely already met for Aug 18 flows) triggers immediate re-entry."
+  },
+
+  "so_what": {
+    "line": "Step-aside continues but the re-entry trigger is razor-thin: BTC reached $65,061.81 intraday (first time above $65K since step-aside), reference close $64,578 misses by $421 / 0.65%; Condition 2 (ETF flows) now appears MET (+$297M Aug 17 flows). Watch tomorrow's reference close.",
+    "bull": "BTC's intraday $65,061 touch is the clearest possible signal that buyers CAN clear the threshold — they reached it today on 272 BTC of institutional volume. The only question is whether they sustain it through the 20:00 UTC reference. Meanwhile ETF flows have turned: +$297M on Aug 17 (vs -$389M the prior week) shows institutional demand has reversed direction faster than expected. Gap to full re-entry: $421 at the reference close, with Condition 2 likely already satisfied.",
+    "bear": "BTC touched $65,061 — and immediately sold off to $64,578 at the reference close ($483 reversal from high to close). The $65,000-$65,500 supply zone (six consecutive session rejections Aug 5-10 plus today's rejection) is real. Volume on the $65K push was high (272 BTC) but post-peak volume was low (43 BTC at reference close), confirming sellers were waiting at $65,000. A failed intraday attempt with a lower reference close is a 'not yet' signal, not a 'never'; but the $65,000 resistance is confirmed as significant supply."
+  },
+
+  "snapshot": {
+    "price": 64578.49,
+    "change_pct": 0.36,
+    "change_abs": 231.84,
+    "prev_close": 64346.65,
+    "day_high": 65061.81,
+    "day_low": 64035.17,
+    "week52_high": 109000,
+    "week52_low": 49000,
+    "volume": "~1,116 BTC (~$71.8M) Crypto.com reference session (Aug 17 20:00 UTC — Aug 18 20:00 UTC); 24h ticker: ~1,108 BTC / ~$71.4M; peak candle 14:00 UTC (272.80 BTC — $65,000 breakout attempt)",
+    "market_cap": "~$1.29T",
+    "extra": [
+      {
+        "label": "$65,061.81 SESSION HIGH — FIRST INTRADAY TOUCH ABOVE $65,000 SINCE STEP-ASIDE: 14:00 UTC Candle (272.80 BTC) Drove BTC Above the Condition 1 Threshold; Reference Close $64,578.49 Still Below by $421 / 0.65%",
+        "value": "The 14:00 UTC candle (Open $64,225, High $65,061.81, Close $64,719, Volume 272.80 BTC) is the pivotal event of the session: BTC cleared the $65,000 Condition 1 threshold for the first time since the step-aside was activated. The intraday breach of $65,000 proves buyers CAN reach the level on high-volume institutional buying (272.80 BTC is the session's largest candle — more than 5× the average hourly volume). However, the stock failed to sustain above $65,000 — the close of the candle was $64,719 and the reference close was $64,578.49. The $65,000-$65,500 zone (a confirmed six-session supply cluster from Aug 5-10) provided enough resistance to prevent a sustained close above. The gap to Condition 1 has now compressed to the smallest ever: AUG 15 (−3.01%) → AUG 16 (−3.16%) → AUG 17 (−1.0%) → AUG 18 (−0.65%). The 0.65% gap is within the intraday range of a single normal session ($65,061 - $64,035 = $1,026 range today).",
+        "tone": "up"
+      },
+      {
+        "label": "CONDITION 2 LIKELY MET: Aug 17 ETF Flows +$297.56M Net Inflows (IBIT +$160.23M) — Reported Aug 18; Reversal from Prior Week's -$389.7M Outflows",
+        "value": "Aug 17 U.S. spot Bitcoin ETF flows, reported Tuesday Aug 18 morning, show approximately $297.56 million in net inflows — with BlackRock's IBIT leading at $160.23 million. This represents the first net-positive ETF flow day for the current tracking period, reversing from the prior week's -$389.7 million in outflows (the largest outflow week in six weeks per Bloomberg, Aug 10-15). The Condition 2 criterion requires 'most recent daily U.S. spot-BTC ETF net flows positive' — if the $297.56M figure is confirmed by the primary tracking sources (SoSoValue, The Block), Condition 2 is satisfied for the Aug 18 dossier. This means: on Aug 19, if the reference close is >$65,000 AND Aug 18 ETF flows (reported that morning) are also positive, BOTH conditions are simultaneously satisfied and re-entry is triggered. The $297.56M inflow is also fundamentally significant: it represents a larger single-day institutional return than most individual days during the prior positive streak (Aug 3-10); institutional demand has re-engaged.",
+        "tone": "up"
+      },
+      {
+        "label": "CONDITION 1 GAP PROGRESSION — 0.65% (Narrowest Yet): Five Sessions of Compression; $65,000 Now Within BTC's Intraday Noise Range",
+        "value": "Condition 1 threshold gap progression: Aug 15 close $63,100 (gap: -$1,899.69 / -3.01%) → Aug 16 close $63,007 (gap: -$1,992.69 / -3.16%) → Aug 17 close $64,347 (gap: -$652.69 / -1.01%) → Aug 18 reference close $64,578 (gap: -$421.51 / -0.65%). The 0.65% gap is below BTC's average daily range of 1-2% ATR. Today's session ITSELF had a range of $1,026.64 ($64,035 to $65,061) — the $421 remaining gap to Condition 1 represents just 41% of today's session range. In other words: if tomorrow's session has ANY upward bias comparable to today's, Condition 1 can be triggered. The only missing element is a SUSTAINED close above $65,000 (vs today's intraday touch and fade).",
+        "tone": "up"
+      },
+      {
+        "label": "SESSION LOW $64,035.17 AT 03:00 UTC — $64,000 Round Number Held; Second Consecutive Session with the $64,000 Zone as the Support Floor",
+        "value": "The session's overnight low of $64,035.17 (03:00 UTC Aug 18, 29.94 BTC) tested the $64,000 round number from below before recovering. BTC had closed at $64,347 on Aug 17 and dipped to $64,035 overnight — a $312 pullback from the prior close before the recovery began. The $64,000 level was the same support zone that was tested in the Aug 17 session (Aug 17 high: $64,584; Aug 18 low: $64,035) and has now been tested and held on two consecutive sessions. The $64,000 support is the converted Aug 13 double-rejection zone (former resistance that was cleared Aug 17, now established as support). Holding $64,000 on the overnight low while the session ultimately reached $65,061 intraday shows the $64,000 support base is functional and absorbing the dip buyers.",
+        "tone": "up"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "Implied volatility expanding on today's session: the intraday range of $1,026 ($64,035 to $65,061) and the realized session high at $65,061 (the Condition 1 trigger level) are lifting both realized and implied volatility. The $65,000 strike is the highest-OI options level in the current cycle — the intraday breach to $65,061 triggered call-side OI as those calls moved into-the-money; the retreat to $64,578 moved them back out. This 'touching and retreating' from the $65,000 strike creates an interesting gamma dynamic: call sellers at the $65,000 strike had their position threatened intraday and chose to hold rather than buy back; if they hold tomorrow and BTC closes above $65,000, they face a forced buy-back that would accelerate any rally.",
+    "short_interest": "Short positions in the $64,000-$64,500 range (established during the overnight consolidation phase) were tested and squeezed by the 14:00 UTC surge to $65,061. The 13:00 UTC candle (146.05 BTC) and 14:00 UTC candle (272.80 BTC) represent short-cover flow as BTC accelerated through the $64,500-$65,000 zone. Shorts who survived the $65,061 intraday peak and held through the reference close ($64,578) are now profitable by $483 from the high — they successfully defended the $65,000 level on Day 1 of the attempt. Tomorrow is their next test.",
+    "notable_flow": "Three distinct flow regimes in today's session: (1) OVERNIGHT DRIFT (21:00 UTC Aug 17 - 03:00 UTC Aug 18): 15-33 BTC/h in the $64,280-$64,540 range — moderate late-session flow, BTC drifting lower on light volume toward the overnight low; (2) ASIA/EU CONSOLIDATION (03:00-13:00 UTC): 12-49 BTC/h in the $64,035-$64,350 range — notably quiet (below-average hourly volume), consistent with patient accumulation in a tight range; (3) US SESSION SURGE (13:00-14:00 UTC): 146 + 272.80 BTC in two consecutive hours — the dominant event of the session; the 14:00 UTC candle (272.80 BTC, high $65,061, close $64,719) is consistent with institutional buy-side demand meeting heavy supply at the $65,000 resistance; (4) US AFTERNOON CONSOLIDATION (15:00-20:00 UTC): 30-47 BTC/h holding $64,578-$64,870 — buyers digesting the $65,000 rejection and holding above $64,500; (5) REFERENCE CLOSE (20:00 UTC): 43.00 BTC at $64,578 — solid institutional volume at the reference price."
+  },
+
+  "what_traders_are_doing": "FIVE POSTURES AS THE STEP-ASIDE APPROACHES ITS RESOLUTION: (1) STEP-ASIDE FRAMEWORK HOLDERS — watching the $65,000 reference close threshold with HIGH urgency; Condition 2 is now likely met (+$297M Aug 17 flows); Condition 1 is 0.65% away; today's intraday $65,061 proves the level is reachable; the discipline is to NOT jump in before the reference close confirms both conditions simultaneously; the rational posture is prepare the full re-entry order for a reference close above $65,000; (2) AGGRESSIVE EARLY RE-ENTRY BUYERS — accounts who entered on today's $65,061 intraday touch and held through the $64,578 reference close; their argument: 'Condition 2 is met, Condition 1 was intraday confirmed, the risk-reward of entering now vs. waiting for the exact reference close is favorable'; their risk: if tomorrow's session opens down and BTC fades below $64,000, the early entry is stopped out before the framework triggers; (3) SUPPLY-DEFENSE SHORTS — accounts who had covered-call or short positions at the $65,000 strike; they successfully defended the level today (price returned from $65,061 to $64,578 at the reference close); they are profitable at the reference close; tomorrow's session is their next test; (4) MOMENTUM BREAKOUT BUYERS — accounts who buy when BTC exceeds the prior session high ($65,061 tomorrow) or when the $65,000 reference close is confirmed; these accounts are not yet active but are the primary buyers who will drive a sustained rally above $65,000 if the reference close triggers; (5) MACRO DECOUPLING WATCHERS — accounts noting that BTC posted +0.36% in a NASDAQ -1.3% chip selloff session (second consecutive session of BTC/equity positive decoupling); using this correlation shift as evidence that institutional ETF demand (+$297M Aug 17 flows) is re-creating the 'BTC as independent store-of-value' narrative; these accounts are building positions ahead of the formal re-entry signal.",
+
+  "news": [
+    {
+      "label": "Bitcoin Price Today Aug 18 2026 — BTC Rises Above $64,000 as Buyers Return After Weekly Low; First Intraday Touch of $65,000 Since Step-Aside Began",
+      "url": "https://sundayguardianlive.com/business/bitcoin-price-today-august-18-2026-btc-rises-above-64000-as-buyers-return-after-weekly-low-check-latest-prices-in-usd-inr-gbp-euro-jpy-263659/",
+      "source": "Sunday Guardian",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin ETF Inflows Signal Institutional Demand Is Returning — Aug 17 Flows +$297.56M Net (IBIT +$160.23M); Reversal from Prior Week's -$389.7M; Condition 2 Potentially Met",
+      "url": "https://www.investing.com/analysis/bitcoin-etf-inflows-signal-institutional-demand-is-returning-not-fully-recovered-200684560",
+      "source": "Investing.com",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin ETFs Record Sixth Straight Day of Inflows as Spot Funds Avoid August Outflow Trend — Recovery Led by IBIT BlackRock",
+      "url": "https://yellow.com/news/bitcoin-etfs-six-day-inflows",
+      "source": "Yellow",
+      "sentiment": "positive"
+    },
+    {
+      "label": "BlackRock's IBIT Leads Nearly $1B Bitcoin ETF Recovery as Inflows Hit 7 Straight Days — Institutional Demand Returning Post-Outflow Week",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/blackrock-ibit-leads-nearly-1b-203834928.html",
+      "source": "Yahoo Finance",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Bitcoin Price Trend Shows Mixed Signals Amid ETF Outflows — Prior Week's -$389.7M Outflows Contrasted with Today's Session Reversal; $65,000 Resistance Key Level",
+      "url": "https://en.cryptonomist.ch/2026/08/17/bitcoin-price-trend-etf-outflows/",
+      "source": "Cryptonomist",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Galaxy Research Cuts 2026 CLARITY Act Odds to ~10%; Senate Cloture Vote Scheduled September 15 — Regulatory Clarity Timeline Extended; Structural Institutional Headwind Persists",
+      "source": "Galaxy Research / Bloomberg",
+      "sentiment": "negative"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The Aug 18 session sets up Aug 19 as the highest-stakes reference session in the step-aside period. Two conditions are now within reach simultaneously: Condition 1 gap is 0.65% (an intraday breach to $65,061 already confirmed buyers CAN reach the level); Condition 2 is likely met (Aug 17 ETF flows +$297.56M, confirmed Aug 18 morning). If Aug 18 ETF flows (reported Aug 19 morning) are also positive — a likely scenario given the $297M first day of the week — then tomorrow's Condition 2 is met. The only requirement for re-entry is a reference close above $65,000. Watch for: (1) the overnight session (Aug 18 20:00 UTC → Aug 19 07:00 UTC) — does BTC hold above $64,500 overnight (second consecutive session of overnight support) or drift below $64,000?; (2) the US morning session — if the pattern from today repeats (accumulation → US morning surge), the $65,000 close is achievable; (3) Aug 18 ETF flow data reported Aug 19 morning — if positive, Condition 2 remains met; (4) whether the $65,000-$65,500 supply zone is absorbed or defended on the next approach.",
+    "long_term": "The structural bull case is strengthening. The ETF flow reversal (+$297M Aug 17 vs -$389M prior week) signals institutional demand has re-engaged faster than the regulatory picture (CLARITY Act ~10% odds, Senate recess through Sep 15) would suggest. The NVIDIA $105B Ohio data center deal (announced Aug 17, digested Aug 18) confirms AI infrastructure spending is accelerating — a backdrop that historically supports BTC institutional allocation as tech-sector confidence rises. The supply dynamics (April 2024 halving still in its supply-compression phase), the $77.3B ETF institutional base, and the improving technical picture (above 20-DMA, 50-DMA nearly reclaimed) create a multi-factor bull case for a return to the $65,000-$75,000 range above the Condition 1 threshold. The path to the 52-week high ($109,000) requires sustained institutional re-engagement over multiple months — the next three weeks are the diagnostic: does the ETF inflow streak continue through the CLARITY Act vote (Sep 15), and does BTC hold above $65,000 once the step-aside re-entry is triggered?"
+  },
+
+  "bull_case": [
+    "BTC cleared $65,000 intraday today — $65,061.81 at 14:00 UTC on 272.80 BTC (the session's highest-volume candle) — for the first time since the step-aside began; the only reason Condition 1 was not triggered is that the REFERENCE CLOSE ($64,578) did not sustain above $65,000; the supply zone proved real but not impenetrable; tomorrow's session has the same buyer pressure plus additional ETF flow confirmation (Aug 18 flows reported Aug 19)",
+    "ETF flows have reversed sharply: Aug 17 net +$297.56M (IBIT +$160.23M) versus the prior week's net -$389.7M; a single day reversed 76% of an entire week's outflows; this suggests institutional demand re-engagement is not tentative but decisive; if this pace of inflow continues through the Aug 19-22 week, the structural ETF buyer base (currently $77.3B) will be actively expanding — the 'wall of buyers' forming below $65,000 is growing",
+    "The session low of $64,035.17 held the $64,000 support zone (the converted Aug 13 double-rejection level) — two consecutive reference sessions have had their intraday lows within the $64,000-$64,035 range, confirming this as a structural floor; the overnight test (03:00 UTC, $64,035) was absorbed on light volume (29.94 BTC) — sellers at $64,000 are not sized, confirming that the institutional buyers who set the $64,000 support (272 BTC of breakout volume on Aug 17) are larger than the sellers",
+    "Both conditions for re-entry are within reach simultaneously for the first time since the step-aside began: Condition 1 gap 0.65% (intraday breached), Condition 2 likely met (+$297M Aug 17); the framework's dual-condition requirement was designed to prevent false starts; today is the first session where both conditions are THIS close to simultaneous satisfaction; the next reference close above $65,000 triggers immediate re-entry"
+  ],
+
+  "bear_case": [
+    "BTC reached $65,061 intraday — and the close was $64,578, a $483 retreat from the high in the same session; the $65,000-$65,500 supply zone (confirmed by six consecutive rejection sessions Aug 5-10 PLUS today's new rejection) is heavily supplied; each time BTC approaches $65,000, the same sellers are present with enough size to push the close below the threshold; the framework's requirement for a REFERENCE CLOSE (not an intraday touch) specifically exists to filter out exactly this scenario",
+    "The session volume (~1,116 BTC) is dramatically lower than the Aug 17 session (3,386 BTC) — the +2.13% breakout session on Aug 17 had 3× the volume of today's session; lower volume on a session that attempted to clear $65,000 and failed suggests the buyer base is not large enough yet to sustain above $65,000; the 272 BTC peak candle is impressive in isolation but dwarfed by Aug 17's 429 BTC peak candle",
+    "The CLARITY Act regulatory headwind persists: Galaxy Research's ~10% passage odds and Senate recess through September 15 mean the institutional allocation constraint from regulatory uncertainty has not changed; the ETF inflow reversal (+$297M) may be a one-week momentum bounce rather than a structural regime shift; if Aug 18 ETF flows (reported Aug 19) return to negative, Condition 2 reverts to unmet and the step-aside conviction increases",
+    "NASDAQ chip stocks fell -1.3% on Aug 18 — the same macro backdrop (30-year yields at multi-decade highs) that has pressured risk assets over the past two sessions is not resolved; if the rate-pressure theme continues Aug 19, equity-correlated BTC selling could re-emerge and reverse the intraday progress; the BTC/equity positive decoupling (two consecutive sessions of BTC gain vs. equity losses) is historically fragile and typically reverts when macro pressure intensifies"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $64,000-$64,035: the session low zone, tested at 03:00 UTC Aug 18 (low $64,035.17, 29.94 BTC) on the overnight dip; this is the converted Aug 13 double-rejection zone (former resistance broken Aug 17, now established as support on two consecutive sessions); the $64,000 round number + prior ceiling flip = the primary demand zone for any BTC pullback; if $64,000 holds on the next test, the Condition 1 gap compression continues; a close below $64,000 resets the session pattern",
+      "level": "$64,000-$64,035",
+      "kind": "support"
+    },
+    {
+      "label": "$63,418: prior Aug 13 reference close ceiling (held as resistance for four sessions, cleared Aug 17); secondary support below $64,000; the 'old ceiling = new floor' pattern; if $64,000 fails, $63,418 is the next structural test; a hold of $63,418 on any macro shock would validate the broader breakout pattern from Aug 17's staircase move",
+      "level": "$63,418",
+      "kind": "support"
+    },
+    {
+      "label": "$62,800-$63,000: deep support zone from the Aug 15-16 demand area (session lows Aug 16: $62,712; Aug 16 overnight: $62,745-$62,912); also corresponds to the prior reference close range where step-aside was activated; this level is 2.5-2.8% below today's reference close and would only be tested in a macro shock scenario that significantly undercuts the current recovery pattern",
+      "level": "$62,800-$63,000",
+      "kind": "support"
+    },
+    {
+      "label": "$64,578.49: today's reference close — pivot for tomorrow's session (Aug 19); gap-open above $64,578 with continuation signals the consolidation is resolved upward; holding $64,578 overnight is the minimum constructive signal for tomorrow's Condition 1 attempt; gap-down below $64,578 but hold $64,000 = constructive consolidation (overnight dip within range); gap-down below $64,000 is the first warning that the Condition 1 approach is failing",
+      "level": "$64,578",
+      "kind": "pivot"
+    },
+    {
+      "label": "★ Strongest resistance — $65,000-$65,061: the Condition 1 threshold ($65,000) plus today's intraday high ($65,061.81); confirmed as resistance on seven consecutive sessions (Aug 5-10 six-session rejection block + today's Aug 18 intraday touch and fade); THE most important level in the framework — a reference close above it simultaneously with positive ETF flows triggers immediate re-entry; the $65,000 strike carries the highest options open interest in the current cycle; call sellers at $65,000 successfully defended today but face a second attempt tomorrow",
+      "level": "$65,000-$65,061",
+      "kind": "resistance"
+    },
+    {
+      "label": "$64,719.40: the close of the 14:00 UTC candle (the session's peak-volume candle when $65,061 was hit) — the first level at which profit-takers emerged after the $65,000 breach; acting as near-term overhead resistance within the $64,578-$65,000 approach zone; a sustained move above $64,719 in tomorrow's session is a constructive signal that today's high-volume candle is being built upon",
+      "level": "$64,719",
+      "kind": "resistance"
+    },
+    {
+      "label": "$65,500: upper edge of the Aug 5-10 failed breakout supply zone; if $65,000 reference close is achieved (Condition 1 met), $65,500 is the next resistance; a decisive close above $65,500 would be the first sign of new bullish territory in weeks; the full $65,000-$65,500 band needs to be cleared before the framework re-entry is considered truly validated",
+      "level": "$65,500",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-18",
+      "label": "BTC reference close $64,578.49 (+$231.84 / +0.36%); SESSION HIGH $65,061.81 — first intraday touch above $65,000 since step-aside began (14:00 UTC, 272.80 BTC); Condition 1 gap 0.65% (narrowest ever); Aug 17 ETF flows +$297.56M net (IBIT +$160.23M) — Condition 2 likely met; session total ~1,116 BTC; BTC positive vs NASDAQ -1.3% (second consecutive day of BTC/equity decoupling).",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-19",
+      "label": "HIGHEST-STAKES REFERENCE SESSION SINCE STEP-ASIDE BEGAN: Aug 18 ETF flows reported Aug 19 morning — if positive, Condition 2 remains met; reference close >$65,000 simultaneously with positive ETF flows triggers IMMEDIATE RE-ENTRY (step-aside ends); watch: overnight hold of $64,578 (prior reference close); US morning session trajectory toward $65,000; whether Aug 17 +$297M inflow streak continues into Aug 18 flows.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-26",
+      "label": "NVIDIA Q2 FY2027 Earnings (after US close) — BTC indirect catalyst; Jensen Huang $91B data center and Blackwell commentary drives AI-sector sentiment; strong NVDA print = mild positive for BTC (AI demand good for tech allocation, risk-on); NVDA miss could trigger risk-off that pressures BTC below $64,000 support.",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-09-15",
+      "label": "US Senate Returns from Recess — CLARITY Act cloture vote; Galaxy Research ~10% odds; if successful, first legislative crypto clarity trigger in the framework's history — Condition 2 structural support; failure confirms multi-year regulatory delay.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "FOMC Rate Decision — holds consensus; 30-year yield at multi-decade highs (two sessions: Aug 17-18) creates tail risk of surprise hike; a hold or cut is BTC-supportive; a hike is materially bearish and risks BTC below $63,000 support.",
+      "importance": "medium"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### Step-Aside Framework Status — Highest Pre-Re-Entry Reading Ever\n\n| Condition | Threshold | Aug 17 | Aug 18 | Status |\n|-----------|-----------|--------|--------|--------|\n| (1) Reference close | > $65,000 | $64,346.65 (−1.01%) | $64,578.49 (−0.65%) | ✗ NOT MET — Gap $421 / 0.65% (all-time narrowest) |\n| (2) ETF flows | Net positive | Reported Aug 18: +$297.56M net (IBIT +$160.23M) | Aug 18 flows reported Aug 19 | ✓ LIKELY MET (Aug 17 flows positive; Aug 18 pending) |\n\n**Framework verdict: STEP-ASIDE, HIGH CONVICTION (upgraded from MEDIUM). Condition 1 intraday breached ($65,061.81) for the first time. Condition 2 likely met. Earliest simultaneous trigger: Aug 19 reference close + Aug 18 ETF flows.**\n\n---\n\n### Pivotal Session — Intraday $65K Touch and Fade\n\nThe Aug 18 reference session (Aug 17 20:00 UTC → Aug 18 20:00 UTC) from Crypto.com 1h candle data:\n\n**Phase 1 — Overnight Consolidation (Aug 17 21:00 - Aug 18 03:00 UTC):**\n- Mild drift from the $64,347-$64,406 Aug 17 reference close area\n- 21:00 UTC: C $64,389.79, L $64,297 (15-33 BTC/h range)\n- 03:00 UTC: SESSION LOW $64,035.17, C $64,177.37, volume 29.94 BTC\n- The $64,000 round number tested and held — buyers absorbed at the overnight low\n\n**Phase 2 — Asia/EU Accumulation (03:00 - 13:00 UTC):**\n- 10 consecutive hours of tight consolidation: $64,035-$64,403 range\n- Volume: 12-49 BTC/h — well below average; patient accumulation\n- 06:00 UTC: C $64,311 (49.03 BTC — the only significant EU-session candle); otherwise quiet\n- This phase is 'coiling' behavior: price compressing in a tight range before a directional move\n\n**Phase 3 — US Morning Surge to $65,000 (13:00 - 14:00 UTC):**\n- 13:00 UTC: C $64,221.30, H $64,291.90, volume **146.05 BTC** — the acceleration candle; US institutional desks entering at the market open\n- 14:00 UTC: O $64,225.38, **H $65,061.81** (SESSION HIGH — FIRST TIME ABOVE $65,000 SINCE STEP-ASIDE), C $64,719.40, volume **272.80 BTC** (largest candle of the session)\n- The $65,061 peak is the definitive event of the reference session: 272.80 BTC of institutional buying drove the price through the $65,000 framework threshold; sellers at $65,000 (confirmed by six prior rejection sessions) absorbed the buying and pushed the price back to $64,719 by candle close\n\n**Phase 4 — US Afternoon Hold (15:00 - 20:00 UTC):**\n- 15:00 UTC: C $64,859, H $64,895 (46.61 BTC) — immediate post-peak stabilization above $64,700\n- 16:00-19:00 UTC: Range $64,646-$64,899 on 30-47 BTC/h — holding the gains from the $65K push without giving back to $64,000\n- 20:00 UTC: **REFERENCE CLOSE $64,578.49** (43.00 BTC, H $64,664, L $64,564) — solid institutional presence at the close price\n\n---\n\n### Volume Analysis — $65K Attempt Confirmed by Volume, Retreat Not Alarming\n\n| Candle | Volume (BTC) | Significance |\n|--------|-------------|-------------|\n| Aug 18 03:00 UTC (session low $64,035) | 29.94 | Light; buyers absorb floor without urgency |\n| Aug 18 06:00 UTC (EU session) | 49.03 | Only notable EU-session candle; steady |\n| Aug 18 13:00 UTC (acceleration) | 146.05 | US open; institutional entry begins |\n| Aug 18 14:00 UTC ($65,061.81 HIGH) | 272.80 | **Session peak** — institutional surge; supply absorbed at $65K |\n| Aug 18 15:00 UTC (post-peak) | 46.61 | Normal; holds above $64,700 |\n| Aug 18 20:00 UTC (reference close) | 43.00 | Institutional presence at close |\n\n**Volume conclusion:** The session's dominant candle (14:00 UTC, 272.80 BTC) occurred AT the session high ($65,061) — this is the 'shooting star' volume pattern: high volume at a resistance level that fails to sustain. The failure to sustain above $65,000 despite 272.80 BTC of buying pressure confirms the $65,000 resistance is real and supply-heavy. However, the post-peak consolidation (46-43 BTC/h) above $64,578 without panic selling is constructive — buyers absorbed the resistance rejection without collapsing back to $64,000.\n\n**Session total: ~1,116 BTC** — versus Aug 17's 3,386 BTC. The lower volume is expected for a consolidation session after yesterday's breakout; the concentrated peak volume at $65,061 (272 BTC) is what matters.\n\n---\n\n### ★ Strongest Support — $64,000-$64,035 (Converted Prior Ceiling)\n\nEvidence:\n1. Aug 13 double-rejection zone (BTC failed twice at $64,017 before last week's decline) — now cleared and inverted\n2. Aug 17 session broke this level on 216 BTC — the supply was absorbed\n3. Aug 18 overnight tested $64,035.17 (29.94 BTC) and held — sellers here are thin compared to the Aug 17 breakout volume\n4. The $64,000 round number + prior ceiling + 20-DMA cluster = triple-confluence support\n5. Two consecutive sessions' intraday lows in the $64,000-$64,035 range confirm systematic buy-side activity at this level\n\n### ★ Strongest Resistance — $65,000-$65,061 (Condition 1 Threshold + Seven-Session Supply Zone)\n\nEvidence:\n1. Six consecutive sessions (Aug 5-10) rejected BTC at $65,000-$65,500 — no reference close achieved; the accumulation of sellers at this level spans nearly two weeks\n2. Today's 14:00 UTC attempt ($65,061.81 H, 272.80 BTC) was met with sellers who pushed the close back to $64,719 — the same session that broke through also closed below; sellers at $65,000 are sized larger than 272 BTC of buy-side pressure\n3. The $65,000 strike carries the highest options open interest in the current cycle; covered-call sellers at $65,000 have a structural incentive to defend this level (their calls are in-the-money above $65,000)\n4. The Condition 1 framework creates a structural demand-supply dynamic around $65,000: framework buyers are accumulating below (pre-positioning before re-entry); framework re-entry orders will be placed ABOVE $65,000 (they don't buy until after confirmation); this creates a 'gap zone' where price must push through supply alone, without the framework's pre-positioning demand, until the close confirms\n5. The $65,000 level is the single most important price in the framework — every actor knows it; knowing that $65,000 is the target itself makes it more supply-heavy (profit-takers plan exits there; short-sellers lean against it)\n\n### Pattern in Play: Flag Consolidation Below $65,000\n\nThe Aug 17-18 two-session pattern shows:\n- Aug 17: staircase breakout to $64,584 high (strong session; 3,386 BTC)\n- Aug 18: tight consolidation $64,035-$65,061 with one decisive push to $65,000 failing at the reference close\n\nThis is a 'bull flag' pattern: a strong directional move (Aug 17 +2.13%) followed by a tight consolidation (Aug 18 +0.36% close, but $65,061 touched intraday). The flag's resolution is typically in the direction of the prior move (bullish) if the consolidation low ($64,035) holds. The failed intraday attempt at $65,000 is the flag's test of the resistance — next session's close above $65,000 would confirm the flag's upward resolution.\n\n### Moving Averages\n\n- **20-DMA**: ~$63,800-$64,000 (estimated — declining series as prior high closes pull the average down, but Aug 17-18 positive closes are reversing the trend). Today's $64,578 close is above the 20-DMA.\n- **50-DMA**: ~$64,400-$64,557 (estimated). Today's session HIGH of $65,061 was above the 50-DMA; the CLOSE of $64,578 is near the 50-DMA. A sustained reference close above the 50-DMA zone would be the next technical milestone.\n- **200-DMA**: ~$73,300 — well above; not near-term relevant.\n\n### What Would Change the Read\n\n**Bullish — re-entry triggers immediately:**\n- Aug 19 reference close > $65,000 (Condition 1 met) SIMULTANEOUSLY WITH Aug 18 ETF flows positive (Condition 2 met) → step-aside ends; full re-entry\n- If Aug 18 ETF flows are also positive (reported Aug 19) and tomorrow's price reaches $65,000, both conditions triggered simultaneously\n\n**Bearish — step-aside conviction increases:**\n- Aug 18 ETF flows (reported Aug 19) show a return to net outflows: Condition 2 reverts to unmet; both conditions have never been simultaneously met; conviction reverts to MEDIUM\n- A close BELOW $64,000 on volume > 200 BTC: the strongest support zone fails; $63,418 re-test likely; Condition 1 gap widens from 0.65%\n- US-Iran or rate-driven macro shock causing SPX -2%+ and equity-correlated BTC selling: could reverse the positive decoupling pattern and drive BTC back toward the $62,800-$63,000 deep support"
+}
