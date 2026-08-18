@@ -1,0 +1,71 @@
+{
+  "routine": "markets",
+  "date": "2026-08-18",
+  "window": "night",
+  "generated_at": "2026-08-19T01:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip stocks slide on Netlist DDR5 patent action; FOMC Minutes set the 30Y path Wednesday",
+    "label": "S&P 7,703 (−0.57%); Nasdaq −1.2%; SOXX −5.5%; MU −7.6%, AMD −5%, NVDA −2.19%; 30Y holds 5.31%; Brent $90.97; FOMC Minutes Wednesday 2pm ET",
+    "rationale_short": "The morning's base case held at its lower bound — S&P closed at 7,703 within the 7,700–7,780 range — but the driver shifted from macro to sector-specific. Netlist's new ITC and federal patent actions against Micron targeting DDR5 server memory sent SOXX down 5.5% and MU down 7.6%, spreading to AMD (−5%) and NVDA (−2.19%). The 30Y held at 5.31% without extending, Brent moderated to $90.97, and no second Hormuz vessel action materialized within 24 hours. FOMC Minutes at 2pm ET Wednesday are the next pivotal event — the fiscal-vs-inflation-persistence distinction the morning flagged remains unresolved. Level that changes the read: S&P reclaims 7,780 with 30Y retracing below 5.25% on a dovish Minutes reading and TGT in-line or above consensus.",
+    "supporting_data": [
+      { "label": "MU −7.6%: Netlist files new ITC and federal patent actions targeting DDR5 products", "url": "https://invezz.com/en-ae/news/2026/08/18/mu-stock-falls-7percent-as-memory-stocks-face-the-heat/" },
+      { "label": "SOXX −5.5%; Nasdaq −1.2%: chip stocks lead tech selloff — Yahoo Finance live, Aug 18", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html" },
+      { "label": "30Y holds 5.31% (19-year high); FOMC Minutes Wednesday 2pm ET with three hawkish dissenters", "url": "https://www.cnbc.com/2026/08/17/treasury-yields-federal-reserve-fomc-minutes.html" },
+      { "label": "META −3.56%: 29-state AG trial Day 2; states cite $1.4T potential liability, $200B more likely", "url": "https://www.tradingkey.com/news/market-movers/262115381-market-movers-meta-20260818" },
+      { "label": "Brent $90.97, WTI $84.92; no second Hormuz vessel action within 24h of vessel strike", "url": "https://fortune.com/article/price-of-oil-08-18-2026/" },
+      { "label": "Nikkei −2.54% to 67,460; KOSPI −1.55%; DAX −0.5% — global risk spread from Monday", "url": "https://www.wftv.com/news/business/asia-shares-decline/DXPGCJOG2AYW5G4XPJTZCHHBEQ/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7703.0,  "change_pct": -0.57, "as_of": "2026-08-18T21:00:00Z" },
+    "nasdaq": { "level": 26327.0, "change_pct": -1.20, "as_of": "2026-08-18T21:00:00Z" },
+    "vix":    { "level": 15.19,   "change_pct": 0.00,  "as_of": "2026-08-18T21:00:00Z" },
+    "ust10y": { "level": 4.72,    "change_bps": 2,     "as_of": "2026-08-18T21:00:00Z" },
+    "dxy":    { "level": 99.40,   "change_pct": -0.37, "as_of": "2026-08-18T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.31,  "trigger_above": 5.40, "unit": "%" },
+    { "name": "Brent Crude", "value": 90.97, "trigger_above": 94.0, "unit": "USD" },
+    { "name": "WTI Crude",   "value": 84.92, "trigger_above": 85.0, "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 64000, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA",  "note": "~$220 (−2.19%). Netlist DDR5 patent action adds supply-chain legal friction to the altitude ceiling entering Aug 26. Bar unchanged: gross margin above 78% AND data-center guide materially above the most aggressive sell-side estimate, simultaneously.", "sentiment": "neutral" },
+    { "ticker": "AMD",   "note": "~$481 (−5%). Closed below $484 for the first time since the AMAT containment signal confirmed. Netlist/MU patent action spread as sector move. $470 is next watch level; recovery above $484 within two sessions would confirm the dip was sector-driven.", "sentiment": "negative" },
+    { "ticker": "MSFT",  "note": "~$465 (−3.04%). Two-session cumulative decline of 6.1% from Morgan Stanley note and 30Y persistence at 5.31%. At ~29x NTM, multiple remains above what the rate mechanically supports. Azure capex-to-revenue is the unresolved variable.", "sentiment": "negative" },
+    { "ticker": "META",  "note": "~$549 (−3.56%). 29-state AG trial Day 2; states describe $200B as 'more likely' damages. Seven-week trial with Zuckerberg testimony pending. FCF at $784M on opex up 55% YoY; margin-recovery thesis under strain.", "sentiment": "negative" },
+    { "ticker": "MU",    "note": "−7.6%. Netlist DDR5 patent action: new ITC + federal filings seeking exclusion orders on DDR5 server memory products. DDR5 is critical for AI datacenter workloads. ITC exclusion orders take 12–18 months and go through appeals; market prices headline before merits.", "sentiment": "negative" },
+    { "ticker": "RDDT",  "note": "~$163–165 (est). Second S&P 500 session. Still below the $177 fundamental-demand threshold; $158 (pre-announcement close) is the support defining whether the full inclusion pop has reversed.", "sentiment": "negative" },
+    { "ticker": "TSM",   "note": "~$430 (est). Chip sector weakness from Netlist/MU action overlays Monday's Anthropic demand validation. HBM architecture uses DDR5-adjacent memory; legal cloud adds an indirect variable to the supply thesis.", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "~$385 (est). Tracking chip selloff. VMware CVE-2026-59310 headwind unchanged. $380 support, $400 resistance into September earnings.", "sentiment": "neutral" },
+    { "ticker": "AAPL",  "note": "~$305 (est). Market-tracking; no new catalyst.", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "~$339 (est). Market-tracking; no new catalyst.", "sentiment": "neutral" },
+    { "ticker": "PLTR",  "note": "~$174 (est). Market-tracking; no new catalyst.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y Treasury Yield",
+      "thesis": "The 30Y held at 5.31% on Tuesday without extending toward the 5.40% level the brief has been watching. FOMC Minutes Wednesday reveal whether the three July dissenters acted on fiscal sustainability and Treasury supply-absorption concerns (structural, unresponsive to soft data) or CPI persistence (which five consecutive soft prints may have addressed). That distinction determines the 30Y's next move more than any other variable this week.",
+      "entry": "5.31% is current; 5.40% is the extension level; 5.20–5.25% is the retracement zone on a dovish read.",
+      "invalidation": "Two consecutive closes below 5.25% following the Minutes; September hike odds fall below 25%.",
+      "horizon": "2–4 sessions"
+    },
+    {
+      "asset": "AMD — $484 containment signal",
+      "thesis": "AMD fell 5% to ~$481, closing below $484 for the first time since confirming the AMAT containment signal last week. The move came from Netlist's MU patent action, not AMD-specific fundamentals. The question is whether AMD recovers above $484 within two sessions (sector-driven dip, containment holds) or extends toward $450–460 (broader chip sector re-rating).",
+      "entry": "$484 is the signal level; $470 is the next technical support; $520 is resistance.",
+      "invalidation": "Two consecutive closes above $484 on no new company-specific negative confirms dip. Close below $470 on above-average volume confirms breakdown.",
+      "horizon": "2–5 sessions"
+    },
+    {
+      "asset": "TGT / consumer retail read",
+      "thesis": "TGT reports before Wednesday's open (consensus $2.35 EPS; Q1 comparable sales were +5.6%). HD's +1.7% comp beat sets the comparison. One miss is noise; two misses across HD, TGT, WMT shifts the consumer narrative to structural deceleration rather than June pull-forward. HD beat — TGT's comparable-store guidance is the next data point.",
+      "entry": "TGT comparable-store guidance is the signal; EPS vs. consensus is secondary.",
+      "invalidation": "TGT comparable-store guidance below +3% YoY with a traffic miss confirms consumer deceleration thesis. Beat or in-line maintains consumer resilience narrative.",
+      "horizon": "1 session (Wednesday)"
+    }
+  ],
+  "bear_case": "The Netlist DDR5 patent action is a legal claim, not confirmed supply disruption — ITC proceedings run 12–18 months and exclusion orders are rarely upheld without extensive appeals. The market has absorbed two shock sessions with the Fear & Greed Index at 59 (Greed), suggesting the re-rating is contained rather than spreading broadly. Brent moderated to $90.97 and no second Hormuz vessel action materialized on Tuesday, partially resolving the morning's binary. If FOMC Minutes reveal three dissenters motivated by CPI persistence only, five consecutive soft prints collectively argue for 30Y retracement to 5.20–5.25% and September hike odds below 20%, which would lift tech multiples and reduce the AMD/NVDA overhang simultaneously. If S&P reclaims 7,780 with 30Y below 5.25% on two consecutive sessions, this read no longer holds.",
+  "body_mdx": "data/briefings/markets/2026-08-18-night.mdx"
+}
