@@ -2,12 +2,15 @@
   "routine": "markets",
   "date": "2026-08-17",
   "window": "night",
-  "generated_at": "2026-08-17T22:30:00Z",
+  "generated_at": "2026-08-18T01:10:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Iran ends Hormuz talks; Brent crosses $90 and 30Y hits 19-year high",
-    "label": "Dual regime breach: both morning binary risks resolved to the downside as oil and long-end yields cleared their thresholds",
-    "rationale_short": "Iran ruled out any Hormuz MOU extension and Brent surpassed $90; the 30Y closed at 5.31%, the first breach of the 5.28% regime trigger at a 19-year high. MSFT and META each fell more than 3% on reinforcing headwinds — a Morgan Stanley hyperscaler creditworthiness note and a 30-state AG trial — while RDDT closed -7.14% as insider supply overwhelmed the S&P 500 inclusion auction. The level that changes this read: SPX closes above 7,800 on two consecutive sessions with the 30Y back below 5.25%.",
+    "code": "step_aside",
+    "emoji": "🔴",
+    "conviction": "medium-high",
+    "headline": "Iran exits Hormuz talks, sending oil above $90 and 30-year yields to a 19-year high",
+    "label": "STEP ASIDE — 3 of 4 regime triggers breached: 30Y 5.31% (first close above 5.28% gate, 19-year high); Brent $91.50 and WTI $85.50 both above oil thresholds; BTC $64,289 AH holds above $62K gate. VIX +6.60% to 15.19 on the session — confirming the vol reprice the dual-breach warranted. MSFT −3.17%, META −3.63%, RDDT −7.14% (inclusion day). FOMC Minutes Wednesday 2pm ET; Walmart Thursday; NVDA Aug 26",
+    "rationale_short": "Iran ruled out any Hormuz MOU extension and Brent surpassed $90; the 30Y closed at 5.31%, the first breach of the 5.28% regime trigger at a 19-year high. VIX moved decisively higher (+6.60% to 15.19) confirming the session's macro stress was real. MSFT and META each fell more than 3% on reinforcing headwinds — a Morgan Stanley hyperscaler creditworthiness note and a 30-state AG trial — while RDDT closed −7.14% as insider Form 144 supply overwhelmed the S&P 500 inclusion auction. BTC recovered from a $63,020 intraday low to $64,289 AH, holding the $62K gate by a $2,289 buffer. The level that changes this read: SPX closes above 7,800 on two consecutive sessions with the 30Y back below 5.25%.",
     "supporting_data": [
       {
         "label": "Brent above $90: Iran rules out Hormuz deal extension, threatens escalation",
@@ -38,15 +41,15 @@
   "snapshot": {
     "sp500":  { "level": 7747.0,  "change_pct": -0.47, "as_of": "2026-08-17T21:00:00Z" },
     "nasdaq": { "level": 26647.0, "change_pct": -0.31, "as_of": "2026-08-17T21:00:00Z" },
-    "vix":    { "level": 14.48,   "change_pct": -0.48, "as_of": "2026-08-17T21:00:00Z" },
+    "vix":    { "level": 15.19,   "change_pct": 6.60,  "as_of": "2026-08-17T21:00:00Z" },
     "ust10y": { "level": 4.70,    "change_bps": 1,     "as_of": "2026-08-17T21:00:00Z" },
     "dxy":    { "level": 99.77,   "change_pct": -0.13, "as_of": "2026-08-17T21:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield",    "value": 5.31, "trigger_above": 5.28, "unit": "%" },
-    { "name": "Brent Crude",  "value": 91.5, "trigger_above": 85.0, "unit": "USD" },
-    { "name": "WTI Crude",    "value": 85.5, "trigger_above": 79.0, "unit": "USD" },
-    { "name": "BTC Gate 2",   "value": 62800, "trigger_below": 62000, "unit": "USD" }
+    { "name": "30Y Yield",    "value": 5.31,  "trigger_above": 5.28, "unit": "%" },
+    { "name": "Brent Crude",  "value": 91.5,  "trigger_above": 85.0, "unit": "USD" },
+    { "name": "WTI Crude",    "value": 85.5,  "trigger_above": 79.0, "unit": "USD" },
+    { "name": "BTC Gate 2",   "value": 64289, "trigger_below": 62000, "unit": "USD" }
   ],
   "watchlist_mentions": [
     { "ticker": "NVDA",  "note": "~$225, roughly flat. Anthropic $11.5B Q2 validates AI thesis; MSFT −3.17% on capex-to-revenue gap is the counter-signal entering Aug 26. Bar unchanged: gross margin above 78% AND data-center guide materially above the most aggressive sell-side estimate, both simultaneously.", "sentiment": "neutral" },
@@ -58,6 +61,7 @@
     { "ticker": "TSM",   "note": "$430.03 (+0.86%). Only major AI infrastructure name that rose — Anthropic $11.5B Q2 confirms HBM demand durability.", "sentiment": "positive" },
     { "ticker": "TSLA",  "note": "$339.30 (−0.9%). Tracking broader market; no specific catalyst.", "sentiment": "neutral" },
     { "ticker": "AAPL",  "note": "$305.59 (−0.1%). Minimal session reaction. Jefferies Underperform (PT $263.66) unchanged.", "sentiment": "neutral" },
+    { "ticker": "BTC",   "note": "$64,289 AH (Crypto.com 9pm ET); intraday low $63,020, well above $62K gate. Buffer now $2,289. +1.89% on 24h basis. Constructive overnight recovery — gate holds.", "sentiment": "positive" },
     { "ticker": "PLTR",  "note": "~$174. Roughly flat; no new catalyst.", "sentiment": "neutral" }
   ],
   "trade_setups": [
@@ -77,12 +81,12 @@
     },
     {
       "asset": "RDDT post-inclusion price discovery",
-      "thesis": "RDDT closed at ~$165.38 on its S&P 500 inclusion day — below the $177 post-mechanics threshold identified in the morning brief. The question is whether $158 (pre-announcement close) holds as support or whether the full reversal of the inclusion pop is now underway. Two closes below $158 on Aug 18–19 would confirm the advertising-durability question was not answered by the passive mechanics.",
+      "thesis": "RDDT closed at ~$165.38 on its S&P 500 inclusion day — below the $177 post-mechanics threshold. The question is whether $158 (pre-announcement close) holds as support or whether the full reversal of the inclusion pop is now underway. Two closes below $158 on Aug 18–19 would confirm the advertising-durability question was not answered by the passive mechanics.",
       "entry": "$158 is the pre-announcement reference; $165 is current close; $177 is the level that would indicate fundamental demand present.",
       "invalidation": "Two consecutive closes above $177 on Aug 18–19 confirm advertising-durability demand met the passive bid.",
       "horizon": "2–3 sessions"
     }
   ],
-  "bear_case": "VIX at 14.48 did not reprice despite a 30Y breach, Brent above $90, and two 3%+ mega-cap declines — that vol compression in the face of multiple simultaneous shocks is historically associated with further gains rather than dislocation. Credit spreads have not widened materially, and sellers are not showing distress. Brent retracing below $89 on interim Hormuz progress and the 30Y compressing below 5.25% on dovish FOMC Minutes would reverse all three bear triggers simultaneously. If SPX reclaims 7,800 on two consecutive sessions with 30Y below 5.25%, this read no longer holds.",
+  "bear_case": "Three of four regime indicators breached simultaneously — 30Y at 5.31% (19-year high), Brent at $91.50, WTI at $85.50 — while VIX repriced +6.60% to 15.19, confirming the session's macro stress was not a non-event. Unlike Friday's vol compression, Monday's VIX move is consistent with a genuine risk-off tone. The setup into Tuesday: Walmart earnings and Home Depot (consumer resilience check), FOMC Minutes Wednesday 2pm ET (three hawkish dissenters from the July 28–29 meeting), Flash PMI Friday. Brent retracing below $89 on interim Hormuz progress and the 30Y compressing below 5.25% on dovish Minutes would reverse all three regime breaches simultaneously. Credit spreads have not widened materially and SPX avoided a full-percent decline, which keeps this STEP ASIDE rather than BEARISH. NVDA Aug 26 remains the single most important event for the AI tape heading into Jackson Hole.",
   "body_mdx": "data/briefings/markets/2026-08-17-night.mdx"
 }
