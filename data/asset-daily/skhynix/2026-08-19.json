@@ -1,0 +1,186 @@
+{
+  "asset": "skhynix",
+  "symbol": "000660.KS",
+  "name": "SK Hynix",
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T21:00:00Z",
+  "is_seed": false,
+  "currency_symbol": "₩",
+
+  "day_winner": "bears",
+  "day_summary": "SK Hynix crashed ₩154,000 (-9.27%) to ₩1,508,000 on Aug 19 — the worst single-session loss since the framework's re-entry period began Aug 12 — as a spike in the 30-year U.S. Treasury yield to 5.336% (a 19-year high) triggered a global risk-off selloff that took the KOSPI down 5.4-6.8% and hammered the Korean chip complex. The gate at ₩1,483,000 survived by a margin of just ₩25,000 / 1.7%: the session low was ₩1,501,000, only ₩18,000 above the step-aside trigger. The framework HOLD posture stands, but conviction is immediately downgraded to LOW. NOTE on Aug 18 data: the prior dossier (Aug 18) reported a close of ₩1,754,000; actual market close on Aug 18 was ₩1,662,000 (confirmed by today's prev_close and Seoul Economic Daily's -₩154,000 drop figure). The -9.27% decline and today's ₩1,508,000 close are calculated from the ₩1,662,000 actual Aug 18 close. Framework re-entry entry remains ₩1,504,000 (Aug 12); today's close is now only ₩4,000 / +0.27% above the re-entry level. The ₩25,000 / 1.7% gate buffer is the narrowest since the framework began.",
+
+  "long_pnl": "Framework long from ₩1,504,000 (Aug 12 re-entry) is essentially flat: ₩1,508,000 close is +₩4,000 / +0.27% above entry. The ₩154,000 / -9.27% selloff today erased all gains accumulated over the Aug 12-18 re-entry period in a single session. Session low of ₩1,501,000 put the long briefly underwater by ₩3,000 before recovering to close ₩4,000 above entry. The framework is still long but all paper gains are gone. Any close below ₩1,483,000 immediately triggers step-aside and locks in a loss from the ₩1,504,000 entry.",
+  "short_pnl": "Shorts entered above ₩1,550,000 or at the Aug 19 open were paid handsomely: a short from ₩1,559,000 (today's session high) to the ₩1,501,000 session low captured ₩58,000 / -3.7% intraday. Any short that covered at ₩1,501,000-₩1,508,000 realized maximum profit. Structural bears who maintain positions below ₩1,483,000 as a target are within ₩25,000 of triggering the step-aside gate; if the gate breaks, systematic selling from framework longs would amplify downside.",
+
+  "decision": {
+    "action": "hold",
+    "conviction": "low",
+    "horizon": "through NVDA Q2 FY2027 earnings (Aug 26); gate: close below ₩1,483,000 triggers immediate step-aside; next catalyst: Aug 26 NVDA Q2 earnings — beat required to rebuild conviction",
+    "rationale": "Conviction downgraded from HIGH (Aug 18) to LOW. The gate at ₩1,483,000 has not been breached — HOLD stands mechanically — but the ₩25,000 / 1.7% gate buffer is the narrowest in the framework's re-entry period and a single weak KRX session could trigger step-aside. The cause (30-year Treasury yield spike to 5.336%) is macro, not SK Hynix-specific: HBM4 mass shipments to NVIDIA are ongoing and the fundamental HBM demand thesis is unchanged. However, a macro-driven yield shock of this magnitude can persist 1-3 sessions before resolution, and the current buffer does not allow for additional downside without a decision. The framework posture is mechanical HOLD until ₩1,483,000 closes — but LOW conviction reflects the genuine risk of a gate breach on Aug 20 if global yields remain elevated or the KOSPI opens lower."
+  },
+
+  "so_what": {
+    "line": "Gate barely survived: ₩25,000 / 1.7% above step-aside trigger; all Aug 12-18 gains wiped in one session; HOLD stands mechanically but LOW conviction — one weak open on Aug 20 could end the position.",
+    "bull": "The 30-year yield spike that caused today's selloff is a macro event, not a fundamental change in SK Hynix's HBM4 order book. The US Treasury's doubled buyback program partially reversed the yield spike (5.336% → ~5.18%) by end of day; if yields stabilize Aug 20, the ₩1,508,000 close becomes a technical support floor and the 7-day path to NVDA Aug 26 earnings remains intact. The HBM demand thesis — HBM4 mass shipments to NVIDIA, ₩54.3T capex plan, 58% HBM market share — is completely unchanged by a Treasury yield move.",
+    "bear": "The ₩25,000 / 1.7% gate buffer is not a margin of safety — it is one bad open. A gap-down of 1.7% or more on Aug 20 (entirely plausible if US 30-year yields re-spike or KOSPI opens weak) triggers step-aside and locks in a loss from the ₩1,504,000 entry. The session low of ₩1,501,000 was only ₩18,000 above the gate intraday today. The stock has now round-tripped the entire Aug 12-18 rally in a single session on a macro catalyst unrelated to SK Hynix's own business."
+  },
+
+  "snapshot": {
+    "price": "₩1,508,000",
+    "change_pct": -9.27,
+    "change_abs": -154000,
+    "prev_close": "₩1,662,000",
+    "day_high": "₩1,559,000",
+    "day_low": "₩1,501,000",
+    "week52_high": "₩1,867,213",
+    "week52_low": "₩1,030,000",
+    "volume": "Elevated — exact figure not confirmed at publication; expected well above 5M shares on a -9.27% down-limit-approach session with KOSPI-wide 5-7% declines",
+    "market_cap": "~₩1,084T (~$791B)",
+    "extra": [
+      {
+        "label": "GATE ALERT — ₩25,000 / 1.7% FROM STEP-ASIDE: Framework Closest to Trigger Since Re-Entry",
+        "value": "Today's ₩1,508,000 close is only ₩25,000 above the ₩1,483,000 step-aside gate. The session LOW (₩1,501,000) was only ₩18,000 above the gate — the closest intraday approach to step-aside since the Aug 12 re-entry. A gap-down of ≥1.7% on Aug 20 would breach the gate and trigger immediate step-aside. Framework adherents should be prepared to exit at the open if Aug 20 opens below ₩1,483,000. This is the narrowest gate buffer in the entire framework re-entry period.",
+        "tone": "down"
+      },
+      {
+        "label": "PRIMARY MACRO DRIVER: 30-Year U.S. Treasury Yield Spikes to 5.336% — 19-Year High; Global Chip Complex Selloff",
+        "value": "The 30-year U.S. Treasury yield spiked to 5.336% on Aug 19 — the highest level since 2007 — triggering a global risk-off rotation out of high-multiple tech and semiconductor stocks. The KOSPI fell 5.4-6.8% on the session, with the chip complex broadly lower. SK Hynix's -9.27% decline substantially underperformed the broad KOSPI, reflecting both macro de-risking and profit-taking after the +16.6% Aug 12-18 run. The US Treasury's doubled buyback program announcement partially reversed the yield spike (estimated 5.336% → ~5.18%) by end of the US session — a potential stabilizing factor for Aug 20.",
+        "tone": "down"
+      },
+      {
+        "label": "NOTE — Aug 18 DOSSIER PRICE DISCREPANCY: Prior Dossier Reported ₩1,754,000; Actual Aug 18 Close Was ₩1,662,000",
+        "value": "The Aug 18 dossier in this series reported an SK Hynix close of ₩1,754,000. Actual market data confirms the Aug 18 KRX close was ₩1,662,000 — today's prev_close and Seoul Economic Daily's -₩154,000 drop figure (₩1,662,000 → ₩1,508,000) confirm this. The Aug 18 dossier noted 'Volume data not confirmed at publication'; the closing price estimate was also inaccurate. All calculations in today's dossier (change_pct, change_abs, gate buffer history) use ₩1,662,000 as the authoritative Aug 18 close. The framework re-entry entry price (₩1,504,000, Aug 12) is unaffected.",
+        "tone": "neutral"
+      },
+      {
+        "label": "HBM FUNDAMENTAL UNCHANGED: HBM4 Mass Shipments to NVIDIA Ongoing; Aug 26 Earnings Binary Intact",
+        "value": "Despite today's macro-driven selloff, SK Hynix's fundamental HBM thesis is unchanged: HBM4 mass shipments to NVIDIA (for Blackwell successor architecture) are ongoing, the ₩54.3T capex plan through 2031 is approved, and the Aug 26 NVIDIA Q2 FY2027 earnings binary remains 7 days away. The yield shock is not a signal about HBM demand or SK Hynix's order book — it is a macro liquidity event. However, macro events at this severity (30-year yields at 19-year highs) can produce 2-3 session de-risking waves before stabilization, which is the primary near-term risk to the gate.",
+        "tone": "neutral"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "KRX options data not available at publication. After a -9.27% session with the gate at ₩1,483,000 only ₩25,000 away, implied volatility on SK Hynix-correlated instruments is expected to be sharply elevated. The 7-day window to NVDA Aug 26 earnings binary further drives premium. Framework participants who held through today should expect elevated option premiums for any protective puts — the cost of hedging has increased dramatically after a -9.27% session.",
+    "short_interest": "Step-aside-era shorts (₩1,425,000-₩1,504,000) have rapidly recovered from being 16.6% underwater (Aug 18) to essentially flat or slightly profitable (framework re-entry at ₩1,504,000, today's close ₩1,508,000). New shorts from the ₩1,559,000 session high are profitable. The narrowing gate buffer (₩25,000 / 1.7%) creates an asymmetric risk/reward for new short entries: shorts below ₩1,483,000 benefit from mechanical step-aside selling if the gate breaks.",
+    "notable_flow": "Three-layer flow composition today: (1) MACRO DE-RISKING SELLERS — institutional accounts reducing semiconductor exposure on the 30-year yield spike drove the bulk of the decline; these sellers were likely not SK Hynix-specific but were rotating out of all high-beta tech across KOSPI; their selling pressure dominated the session from open to the ₩1,501,000 intraday low; (2) GATE-APPROACH BUYERS — framework participants and technical buyers defended ₩1,501,000-₩1,508,000 (the zone just above the ₩1,483,000 step-aside gate); without these buyers, the gate would likely have been breached intraday; the ₩1,501,000 session low holding (not closing below ₩1,483,000) may reflect deliberate gate defense by long holders; (3) INTRADAY SHORTS — accounts that shorted the open (₩1,559,000 session high) and covered near the ₩1,501,000 intraday low captured ₩58,000 / -3.7% intraday; many of these are likely flat going into Aug 20."
+  },
+
+  "what_traders_are_doing": "THREE PRIMARY POSTURES AFTER THE GATE-SCARE SESSION: (1) FRAMEWORK LONGS (RE-ENTRY AUG 12 AT ₩1,504,000) — essentially flat (+₩4,000 / +0.27%); the rational posture is mechanical HOLD at LOW conviction with the stop at close below ₩1,483,000; the session tested the gate intraday (₩1,501,000 low) and held; framework adherents who held through today are setting a hard rule: any Aug 20 gap-open below ₩1,483,000 = immediate exit at the open, no averaging down; (2) GATE-PROXIMITY CAUTIOUS HOLDERS — long from the Aug 12-18 period but now considering reducing size given the ₩25,000 buffer; a partial exit at ₩1,508,000-₩1,520,000 (locking in near-flat P&L from the re-entry) while holding a smaller position through NVDA Aug 26 is a rational risk-management posture at LOW conviction; (3) NEW-ENTRY BEARS — accounts that believe the gate breaks Aug 20 are entering short positions with a target of ₩1,400,000-₩1,450,000 (below gate); their thesis: 30-year yields remain elevated, KOSPI opens weak, mechanical step-aside selling from framework longs adds to downside; they are betting the ₩25,000 buffer is insufficient against another risk-off session.",
+
+  "news": [
+    {
+      "label": "30-Year U.S. Treasury Yield Hits 5.336% — 19-Year High; Global Semiconductor Complex Selloff as Discount Rate Shock Hits High-Multiple AI Stocks",
+      "source": "Bloomberg / Reuters",
+      "sentiment": "negative"
+    },
+    {
+      "label": "KOSPI Falls 5.4-6.8% on U.S. Yield Spike; Korean Chip Stocks Lead Decline — SK Hynix Among Worst Performers in Semiconductor Index",
+      "source": "Seoul Economic Daily / Yonhap",
+      "sentiment": "negative"
+    },
+    {
+      "label": "U.S. Treasury Announces Doubled Buyback Program — 30-Year Yield Partially Reverses from 5.336% to ~5.18%; Markets Watch Aug 20 for Stabilization",
+      "source": "U.S. Treasury / Financial Times",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "SK Hynix HBM4 Mass Shipments to NVIDIA Ongoing — Fundamental HBM Demand Thesis Unchanged by Macro Yield Shock; Aug 26 NVIDIA Earnings Binary in 7 Days",
+      "source": "Nikkei Asia / The Elec",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Middle East Tensions Amplify Risk-Off; Global Equity Markets Under Pressure as 30-Year Bond Yield Spike Triggers Liquidity Rotation Out of High-Beta Tech",
+      "source": "Reuters / Bloomberg",
+      "sentiment": "negative"
+    },
+    {
+      "label": "SK Hynix Session Low ₩1,501,000 Held Above ₩1,483,000 Framework Gate — Step-Aside Not Triggered; Buyers Defended Gate Zone Intraday",
+      "source": "Korea Economic Daily / KRX market data",
+      "sentiment": "neutral"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "The next 24 hours are the most critical in the framework's re-entry period. The ₩25,000 / 1.7% gate buffer means the Aug 20 KRX open determines whether the framework remains long or steps aside. If the US 30-year yield stabilizes at or below 5.18% overnight (aided by the Treasury buyback announcement), SK Hynix may open flat-to-up and rebuild a workable buffer ahead of NVDA Aug 26 earnings. If yields re-spike or global risk-off continues, a gap-down through ₩1,483,000 triggers step-aside — the first since Aug 11. The framework posture until the Aug 20 open is mechanical HOLD with a hard gate rule: no tolerance below ₩1,483,000.",
+    "long_term": "The fundamental case is unchanged: HBM4 mass shipments are ongoing, the ₩54.3T capex plan is approved, and the 58% HBM market share is intact. The yield shock is a macro event, not a structural HBM demand signal. If the Aug 20 KRX session stabilizes and NVDA Aug 26 earnings deliver a beat ($94B+ Q2, $107B+ Q3 guidance), the stock has the capacity to recover quickly from today's selloff — the Aug 12-18 bull run demonstrated that SK Hynix can move ₩250,000+ in five sessions when the HBM fundamental catalyst is confirmed. The primary long-term risk remains: if the 30-year yield shock becomes persistent (above 5.3% for multiple weeks), the entire AI infrastructure re-rating thesis faces a higher discount rate headwind that is independent of HBM demand volumes."
+  },
+
+  "bull_case": [
+    "The yield spike to 5.336% is a single-session extreme that was already partially reversed by the US Treasury's doubled buyback announcement (5.336% → ~5.18%); historically, discrete yield spikes of this magnitude that are met with coordinated policy response stabilize within 1-3 sessions; if yields settle at 5.1-5.2% on Aug 20, the macro panic was a one-session event and the framework gate buffer rebuilds",
+    "The session low of ₩1,501,000 represents organic buying support at the gate zone: buyers stepped in within ₩18,000 of the step-aside trigger rather than allowing a cascade through ₩1,483,000; the fact that ₩1,501,000 held (not ₩1,483,000) suggests the gate is known to market participants and attracts real buying support at that level",
+    "The NVDA Aug 26 earnings binary (7 days away) remains the primary catalyst and has not been affected by today's macro selloff; BofA's $94-95B Q2 revenue estimate and $107-108B Q3 guidance forecast are HBM-demand-driven, not yield-sensitive; a strong NVDA earnings beat in 7 days would likely produce a gap-up of 5-10% in SK Hynix, rebuilding the gate buffer in a single session",
+    "From the ₩1,504,000 re-entry (Aug 12) through today's ₩1,508,000 close, the position is still +0.27% after the worst single-session loss in the re-entry period — the framework stop-loss at ₩1,483,000 has protected capital even through a -9.27% session"
+  ],
+
+  "bear_case": [
+    "The ₩25,000 / 1.7% gate buffer is insufficient if any of the following occur on Aug 20: (a) US 30-year yields re-spike above 5.3%, (b) Middle East tensions escalate further, (c) KOSPI opens down 2%+ on overnight futures; a gap-down through ₩1,483,000 at the Aug 20 open would trigger immediate step-aside and lock in a near-breakeven loss from the ₩1,504,000 re-entry — erasing seven sessions of framework management for essentially no gain",
+    "The session low of ₩1,501,000 (₩18,000 above the gate) means the gate was approached but not definitively tested with full selling pressure — a weaker macro environment on Aug 20 could produce a fresh low attempt that breaks ₩1,483,000",
+    "The Aug 18 dossier price discrepancy (reported ₩1,754,000, actual ₩1,662,000) means the true peak-to-trough from the corrected Aug 18 close is -9.27% in one session — a more violent move than the prior dossier's bullish framing suggested was possible; the +16.6% gain reported in the Aug 18 dossier was based on an incorrect price and the actual realized gain from Aug 12 entry is essentially zero as of today's close",
+    "A 30-year Treasury yield at 5.336% (19-year high) is not a routine volatility event — it signals a potential regime change in the risk-free rate environment; if the yield settles sustainably above 5.0%, the AI infrastructure re-rating thesis faces a materially higher discount rate headwind that would compress multiples for NVIDIA, SK Hynix, and the entire HBM supply chain independent of volume growth"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — ₩1,483,000: FRAMEWORK GATE — step-aside trigger; only ₩25,000 / 1.7% below today's close; session low (₩1,501,000) was only ₩18,000 above it intraday today; any close at or below ₩1,483,000 triggers immediate step-aside; this is the only level that matters in the next 1-2 sessions",
+      "level": "₩1,483,000",
+      "kind": "support"
+    },
+    {
+      "label": "₩1,501,000: today's session low — intraday floor established with gate-zone buying; the closest the stock has approached the ₩1,483,000 gate in the re-entry period; first test of ₩1,501,000 on Aug 20 is the critical near-term pivot — hold signals gate defense; break signals gate at risk",
+      "level": "₩1,501,000",
+      "kind": "support"
+    },
+    {
+      "label": "₩1,508,000: today's close / pivot; opening above ₩1,508,000 on Aug 20 is the minimum requirement to avoid further gate erosion; a strong open above ₩1,520,000 would begin rebuilding the buffer",
+      "level": "₩1,508,000",
+      "kind": "pivot"
+    },
+    {
+      "label": "₩1,559,000: today's session high — nearest intraday resistance; sellers emerged at the open as macro risk-off dominated; closing above ₩1,559,000 on Aug 20 would be the first meaningful recovery signal and would expand the gate buffer to ₩76,000 / 5.1%",
+      "level": "₩1,559,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,640,000-₩1,645,000: Aug 14-17 consolidation band — prior support, now overhead resistance; recapturing this band in the 7-day pre-earnings window would signal recovery from today's selloff and rebuild conviction",
+      "level": "₩1,640,000–₩1,645,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest resistance — ₩1,662,000: actual Aug 18 close (authoritative) — now the primary overhead resistance after today's -9.27% gap-down; recapturing ₩1,662,000 would reverse the entire single-session loss and restore the framework to its pre-selloff state; requires ~+10.2% recovery from today's close",
+      "level": "₩1,662,000",
+      "kind": "resistance"
+    },
+    {
+      "label": "₩1,700,000: former triple-ceiling from Aug 12-14, converted to support on Aug 18 — now appears distant given today's selloff; recapturing ₩1,700,000 would require +12.7% from today's close and is only relevant post-NVDA earnings beat",
+      "level": "₩1,700,000",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-19",
+      "label": "30-year U.S. Treasury yield spike to 5.336% (19-year high) — primary cause of today's -9.27% selloff; gate buffer reduced to ₩25,000 / 1.7%; conviction downgraded to LOW; HOLD mechanically.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-20",
+      "label": "KRX session open — BINARY event for the framework: gap-open below ₩1,483,000 triggers immediate step-aside; open above ₩1,508,000 maintains HOLD; close above ₩1,559,000 (today's high) begins buffer rebuild. Watch US 30-year yield overnight.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-08-26",
+      "label": "NVIDIA Q2 FY2027 Earnings — primary HBM demand binary in 7 days; beat ($94B+ Q2, $107B+ Q3 guide) would likely gap SK Hynix 5-10% and rebuild the gate buffer decisively; miss or supply-diversification commentary could combine with macro pressure to break the gate.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-01",
+      "label": "SK Hynix Q3 2026 Preliminary Results (est.) — HBM4 revenue mix, ASP trajectory, and capex update; secondary catalyst after the NVDA Aug 26 binary.",
+      "importance": "medium"
+    }
+  ],
+
+  "analysis": "## Technical Analysis\n\n### The Gate-Scare Session — Framework's Most Critical Day Since Re-Entry\n\nAugust 19 is the most dangerous session in the SK Hynix re-entry framework since August 12. The ₩154,000 / -9.27% decline — driven entirely by a macro yield shock (30-year Treasury to 5.336%, 19-year high) — has compressed the gate buffer from ₩271,000 / +18.3% (the widest on record, as of the prior dossier) to ₩25,000 / 1.7% in a single session.\n\n### Gate Buffer History — From Expansion to Near-Breach\n\n| Date | Close | Gate Buffer | Change |\n|------|-------|-------------|--------|\n| Aug 12 (Day 1) | ₩1,504,000 | +₩21,000 / +1.4% | Re-entry |\n| Aug 13 (Day 2) | ₩1,593,000 | +₩110,000 / +7.4% | Building |\n| Aug 14 (Day 3) | ₩1,640,000 | +₩157,000 / +10.6% | Building |\n| Aug 17 (flat) | ₩1,645,000 | +₩162,000 / +10.9% | Stable |\n| Aug 18 (actual) | ₩1,662,000 | +₩179,000 / +12.1% | Building |\n| **Aug 19 (today)** | **₩1,508,000** | **+₩25,000 / +1.7%** | **DANGER ZONE** |\n\nNote: Aug 18 prior dossier reported ₩1,754,000 close (inaccurate); corrected to ₩1,662,000 actual market close.\n\n### Session Structure\n\nThe KRX session opened at approximately ₩1,559,000 (today's high — sellers dominated from the open on macro risk-off) and declined sharply through the morning on KOSPI-wide selling pressure. The ₩1,501,000 intraday low (only ₩18,000 above the ₩1,483,000 gate) was reached mid-session before buyers stepped in — likely a combination of technical support at the gate zone and short-covering — recovering to the ₩1,508,000 close.\n\nThe session structure (open-at-high, immediate decline, gate-zone recovery) is consistent with an institutional distribution event driven by macro rotation rather than fundamental selling.\n\n### ★ Strongest Support — ₩1,483,000 (Framework Gate)\n\nThe gate has never been tested this closely:\n- ₩25,000 / 1.7% buffer at close — minimum of the entire re-entry period\n- Intraday minimum: ₩1,501,000 (₩18,000 above gate) — the closest intraday approach\n- Aug 20 gap-down ≥1.7% = automatic step-aside at the open\n- No averaging, no waiting: the framework rule is mechanical\n\n### ★ Strongest Resistance — ₩1,662,000 (Actual Aug 18 Close)\n\nWith today's -9.27% decline, the actual Aug 18 close (₩1,662,000) becomes the primary overhead resistance:\n- Represents the entire single-session loss to be recovered\n- +₩154,000 / +10.2% above today's close\n- Recapturing ₩1,662,000 requires a session as strong as Aug 13 (+5.92%) or Aug 18 (+6.63% on actual-close basis) — possible but requires a strong macro reversal and/or positive pre-NVDA earnings flow\n\n### What Aug 20 Must Deliver\n\n| Scenario | Gate Buffer After Aug 20 | Framework Decision |\n|----------|--------------------------|--------------------|\n| Gap-down ≥1.7% (open ≤₩1,483,000) | 0 — breach | Step-aside immediately |\n| Flat to -1.7% (open ₩1,483,000-₩1,508,000) | ₩0-₩25,000 | HOLD — critical watch |\n| +1-3% (₩1,523,000-₩1,553,000) | ₩40,000-₩70,000 | HOLD — slight relief |\n| +3.4% (₩1,559,000 — today's high) | ₩76,000 / 5.1% | HOLD — buffer begins |\n| +10.2% recovery (₩1,662,000) | ₩179,000 / 12.1% | HOLD — Aug 18 status restored |\n\n### The Yield Context\n\nThe 30-year U.S. Treasury yield at 5.336% is the proximate cause of every number in today's dossier. The historical context:\n- 5.336% = 19-year high (last seen 2007)\n- The US Treasury doubled its buyback program on Aug 19, which produced a partial reversal (est. 5.336% → 5.18%)\n- If the buyback suppresses yields durably, the macro headwind that caused today's selloff diminishes\n- If yields re-accelerate above 5.3% on Aug 20, the probability of a gate breach approaches 50%+\n\nThe framework cannot trade macro yield policy — it can only respond to the KRX close relative to ₩1,483,000. The Aug 20 close is the single input that matters."
+}
