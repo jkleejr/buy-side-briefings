@@ -2,93 +2,66 @@
   "routine": "markets",
   "date": "2026-08-19",
   "window": "morning",
-  "generated_at": "2026-08-19T11:15:00Z",
+  "generated_at": "2026-08-19T13:00:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Three-dissenter Fed minutes arrive today as Seoul's chip rout reaches Wall Street",
-    "code": "step_aside",
-    "emoji": "⏸️",
-    "label": "FOMC Minutes (2pm ET) binary swing event; 3 of 4 regime indicators breached; Seoul semi rout pre-market",
-    "conviction": "medium-low",
-    "horizon": "1-2 sessions",
-    "rationale_short": "The July 28–29 FOMC Minutes (14:00 ET) land with three dissenters — Hammack, Kashkari, Logan — who voted for a 25bps hike, and nine of 18 FOMC members penciling in a 2026 increase. September hike odds sit at ~31%. The defining read is the character of the dissent: fiscal-sustainability dissent (Treasury supply absorption, deficit trajectory) has no ceiling from soft demand data and pushes the 30Y toward 5.40%; inflation-persistence-only dissent allows five consecutive soft CPI prints to temper further 30Y extension and targets a retrace below 5.25%. Overnight, South Korea's KOSPI fell ~4.6% as SK Hynix shed 9.93% and Samsung lost 7.54%, tracking the US semiconductor rout and adding a pre-market headwind that flows directly into NVDA, AMD, AMAT, and TSM. On Hormuz: the June MOU officially expired Monday (Aug 18) and Trump confirmed no Iran talks are occurring; Brent holds above $91 with the physical-disruption premium entrenched. Futures are fractionally green (+0.05–0.12%) suggesting the 'no talks' announcement was priced in — the live variable is the Minutes. Step aside into the 2pm release; reassess on the 30Y reaction.",
+    "headline": "KOSPI hits circuit breaker as chip selloff deepens; TGT comps beat; FOMC Minutes at 2pm ET",
+    "label": "Asian chip carnage triggers Seoul circuit breaker; TGT consumer beat; 30Y at 5.33% entering FOMC Minutes",
+    "rationale_short": "The 30Y touched 5.33% overnight — a new 19-year high — as $432B in July deficit spending and $1.7T in corporate bond issuance sustain long-end supply pressure independent of rate expectations. KOSPI fell 6.39% and triggered the year's 48th circuit breaker before partially recovering; SK Hynix shed 9.93%, Samsung 7.54%. TGT reported +3.8% comparable sales vs. +2.4% consensus, raised full-year net sales guidance to ~5%, and is the session's clearest consumer signal entering WMT Thursday. FOMC Minutes at 2pm ET determine the path: fiscal-sustainability dissent pushes the 30Y toward 5.40% regardless of soft data; CPI-persistence-only dissent allows September odds to compress below 20% and the 30Y to retrace toward 5.20-5.25%.",
     "supporting_data": [
-      {
-        "label": "FOMC Minutes (Jul 28-29) preview: 3 dissenters, 9 of 18 pencil in 2026 hike; September odds ~31%",
-        "url": "https://www.newsquawk.com/headlines/preview-fomc-minutes-due-wednesday-19th-august-2026-at-1900bst1400edt"
-      },
-      {
-        "label": "S&P 500, Nasdaq 100 futures rise despite Trump's 'no talks' with Iran; SK Hynix, KEYS in focus — Benzinga",
-        "url": "https://www.benzinga.com/markets/equities/26/08/61293924/stock-market-today-sp-500-nasdaq-100-futures-rise-as-trump-says-no-talks-are-happening-with-iran-keysight-technologies-mercury-systems-sk-hynix-in-focus"
-      },
-      {
-        "label": "South Korean shares nosedive: Samsung -7.54%, SK Hynix -9.93%, KOSPI -4.6% on yield spike and Hormuz tensions",
-        "url": "https://www.kedglobal.com/korean-stock-market/newsView/ked202608190001"
-      },
-      {
-        "label": "Brent above $91; June MOU expired Aug 18; Trump confirms no Iran talks, US naval blockade remains",
-        "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html"
-      },
-      {
-        "label": "Keysight Technologies Q3 beat: EPS $3.07 vs $2.48 est.; revenue $1.85B vs $1.75B est.",
-        "url": "https://stockmarketwatch.com/live/stock-market-today"
-      },
-      {
-        "label": "10Y Treasury eases to 4.70%; FOMC Minutes fiscal-sustainability vs. inflation-persistence dissent framing",
-        "url": "https://roboforex.com/blog/analysis/fomc-meeting-minutes-uk-cpi-market-week-ahead-august-2026/"
-      }
+      { "label": "TGT comps +3.8% vs. +2.4% est.; FY net sales raised to ~5%; $752M tariff refund — CNBC, Aug 19", "url": "https://www.cnbc.com/2026/08/19/target-tgt-q2-2026-earnings.html" },
+      { "label": "KOSPI −6.39%, triggers 48th sidecar of 2026; SK Hynix −9.93%, Samsung −7.54% — TradingKey, Aug 19", "url": "https://www.tradingkey.com/analysis/stocks/more/262116337-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey" },
+      { "label": "30Y touches 5.33%, new 19-year high; $432B July deficit and $1.7T corporate issuance flood long end — CNBC, Aug 19", "url": "https://www.cnbc.com/2026/08/18/treasury-yields-." },
+      { "label": "MU, NVDA, AMD, INTC extending premarket rally after two-session chip selloff — Yahoo Finance, Aug 19", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-skhy-nvda-amd-intc-085017500.html" },
+      { "label": "Brent above $91 third consecutive session; Trump confirms no Iran talks, Hormuz blockade intact — CoinPaper", "url": "https://coinpaper.com/34319/crude-oil-prices-brent-tests-90-wti-eyes-85-as-hormuz-shipping-slows" },
+      { "label": "FOMC Minutes (July 28–29) at 2pm ET; three dissenters' fiscal vs. CPI rationale is the defining read — Newsquawk", "url": "https://www.newsquawk.com/headlines/preview-fomc-minutes-due-wednesday-19th-august-2026-at-1900bst1400edt" }
     ]
   },
   "snapshot": {
     "sp500":  { "level": 7710.0,  "change_pct": 0.09,  "as_of": "2026-08-19T11:00:00Z" },
     "nasdaq": { "level": 26679.0, "change_pct": 0.12,  "as_of": "2026-08-19T11:00:00Z" },
-    "vix":    { "level": 15.84,   "change_pct": 4.28,  "as_of": "2026-08-18T21:00:00Z" },
+    "vix":    { "level": 15.84,   "change_pct": 4.28,  "as_of": "2026-08-19T11:00:00Z" },
     "ust10y": { "level": 4.70,    "change_bps": -3,    "as_of": "2026-08-19T11:00:00Z" },
     "dxy":    { "level": 99.46,   "change_pct": -0.20, "as_of": "2026-08-19T11:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield",   "value": 5.30, "trigger_above": 5.28, "unit": "%" },
-    { "name": "Brent Crude", "value": 91.5, "trigger_above": 85.0, "unit": "USD" },
-    { "name": "WTI Crude",   "value": 85.5, "trigger_above": 79.0, "unit": "USD" },
+    { "name": "30Y Yield",   "value": 5.33, "trigger_above": 5.40, "unit": "%" },
+    { "name": "Brent Crude", "value": 91.5, "trigger_above": 94.0, "unit": "USD" },
     { "name": "BTC Gate 2",  "value": 64468, "trigger_below": 62000, "unit": "USD" }
   ],
   "watchlist_mentions": [
-    { "ticker": "NVDA",  "note": "~$225, watching for Seoul semi rout read-through at the open. SK Hynix -9.93% overnight on the same AI/HBM demand narrative. August 26 earnings remain the fundamental clearing event.", "sentiment": "negative" },
-    { "ticker": "AMD",   "note": "~$506. Two consecutive closes above $484 confirmed; $520 is the next resistance. Seoul chip rout is a near-term headwind — watch whether $484 holds on any open-auction weakness.", "sentiment": "neutral" },
-    { "ticker": "TSM",   "note": "~$430. Direct exposure to Samsung/SK Hynix weakness via HBM supply chain; Seoul rout (-7.54% Samsung, -9.93% SK Hynix) pressures TSMC's peer read-through.", "sentiment": "negative" },
-    { "ticker": "KEYS",  "note": "~$230 pre-market +2%. Q3 beat: EPS $3.07 vs $2.48 est.; revenue $1.85B vs $1.75B. Defense/test-and-measurement benefiting from Pentagon Hormuz-related procurement. Session momentum name.", "sentiment": "positive" },
-    { "ticker": "MSFT",  "note": "~$480. 30Y at 5.30% with FOMC Minutes pending; fiscal-sustainability dissent outcome is the key variable for duration-sensitive mega-cap. Azure guide remains the fundamental resolver.", "sentiment": "negative" },
-    { "ticker": "META",  "note": "~$569. 30-state AG trial ongoing; operating margin compression vs. prior year still the primary drag. No new catalyst pre-FOMC Minutes.", "sentiment": "negative" },
-    { "ticker": "RDDT",  "note": "~$165. Post-inclusion fundamental price discovery ongoing. $177 (demand confirmed) vs. $158 (pop reversed) remain the two-sided resolution levels. No change today.", "sentiment": "neutral" },
-    { "ticker": "AAPL",  "note": "~$305. Market-tracking; no active session catalyst.", "sentiment": "neutral" },
-    { "ticker": "GOOGL", "note": "~$341. Market-tracking; no active session catalyst.", "sentiment": "neutral" },
-    { "ticker": "AMZN",  "note": "~$261. Market-tracking; no active session catalyst.", "sentiment": "neutral" },
-    { "ticker": "TSLA",  "note": "~$339. Market-tracking; no active session catalyst.", "sentiment": "neutral" },
-    { "ticker": "BTC",   "note": "~$64,468 (live; +0.38% on 24h basis). $2,468 above the $62K Gate 2 floor. Safe-haven divergence from dollar (DXY 99.46) persists; geopolitical premium remains intact in crypto, not USD.", "sentiment": "positive" }
+    { "ticker": "NVDA",  "note": "~$220 (Tuesday close), bouncing pre-market. KOSPI chip carnage (SK Hynix −9.93%) did not extend to US pre-market materially; chips broadly recovering. August 26 earnings bar unchanged: gross margin above 78% AND data-center guide materially above most aggressive sell-side estimate, simultaneously.", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "~$465 (Tuesday close), down 6.1% over two sessions from Morgan Stanley hyperscaler note. At ~29x NTM against 30Y at 5.33%, mechanical multiple compression case is intact. No new catalyst today; Azure capex-to-revenue ratio is the primary overhang.", "sentiment": "negative" },
+    { "ticker": "META",  "note": "~$549 (Tuesday close). AG trial Day 3; states' opening arguments continue. $200B damages floor established Day 2. Zuckerberg expected to testify during ~7-week trial. FCF $784M on opex +55% YoY; operating margin 31% vs. 43% a year ago.", "sentiment": "negative" },
+    { "ticker": "AMD",   "note": "~$481 (Tuesday close, below $484 AMAT containment signal). Pre-market bounce with chip sector. Two consecutive closes above $484 required to confirm containment. Today's close is the first post-break test.", "sentiment": "neutral" },
+    { "ticker": "MU",    "note": "Pre-market bounce after −7.6% Tuesday. Netlist DDR5 ITC + federal patent actions unchanged; 12-18 month ITC proceedings now the operative frame. Market absorbed the headline; merits timeline is the new frame.", "sentiment": "neutral" },
+    { "ticker": "TGT",   "note": "Comps +3.8% vs. +2.4% consensus; FY net sales guidance raised to ~5% (+1pp). $752M tariff refund inflated EPS ($1.65/share); comparable-store sales unaffected. Second consecutive retail beat after HD +1.7% Monday.", "sentiment": "positive" },
+    { "ticker": "PLTR",  "note": "~$174. Market-tracking; no specific catalyst today.", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "~$339. Market-tracking; no specific catalyst today.", "sentiment": "neutral" }
   ],
   "trade_setups": [
     {
-      "asset": "30Y Treasury — FOMC Minutes dissent character",
-      "thesis": "Three dissenters (Hammack, Kashkari, Logan) voted to hike at July 28–29. The Minutes' framing of that dissent is the day's definitive variable. Fiscal-sustainability dissent (driven by Treasury supply absorption and deficit trajectory) has no natural ceiling from five consecutive soft CPI prints and extends the 30Y toward 5.40%. Inflation-persistence-only dissent allows the soft data to constrain the move; 30Y retraces to 5.20–5.25% support. The 10Y's easing to 4.70% today is pre-Minutes tentative; the 2pm reaction overwrites it.",
-      "entry": "5.30% current (trigger 5.28% breached); 5.40% is the next technically meaningful level on fiscal-sustainability read; 5.20–5.25% is retracement support on benign dissent.",
-      "invalidation": "Minutes reveal isolated inflation-persistence dissent only; 30Y retraces below 5.25% by Thursday open.",
-      "horizon": "1–2 sessions"
+      "asset": "30Y Treasury (^TYX)",
+      "thesis": "The 30Y printed 5.33% overnight — 2 basis points above Tuesday's 5.31% close — as the $432B July deficit and $1.7T in corporate bond issuance flood the long end with duration supply. FOMC Minutes at 2pm ET resolve the critical question: fiscal-sustainability dissent is not addressed by soft demand data and points toward 5.40%; CPI-persistence-only dissent allows five consecutive soft prints to constrain the move toward 5.20-5.25%.",
+      "entry": "5.33% current; 5.40% is the next technically meaningful level if fiscal framing confirmed; 5.20-5.25% is retracement support on benign dissent read",
+      "invalidation": "Minutes confirm CPI-persistence-only dissent; 30Y retraces below 5.20% within two sessions",
+      "horizon": "Today (2pm ET Minutes) through Thursday close"
     },
     {
-      "asset": "US semiconductor complex — Seoul rout read-through",
-      "thesis": "SK Hynix (–9.93%) and Samsung (–7.54%) in Seoul are the overnight proxy for the US AI/HBM hardware complex. The sell-off traces back to elevated US yields and renewed Hormuz risk premium weighing on global growth expectations — not a demand-specific revision. NVDA's Aug 26 earnings remain the fundamental clearing event; the near-term setup is open-auction pressure from the Seoul rout. Two consecutive US sessions closing below SPX 7,650 would confirm the rout is transmitting beyond Asia.",
-      "entry": "NVDA ~$225; AMD ~$506; TSM ~$430. Watch the open-auction to see if $484 (AMD) and $220 (NVDA) hold.",
-      "invalidation": "NVDA, AMD, TSM all recover above prior-day close within the first 30 minutes of trading — Seoul weakness was not transmitted.",
-      "horizon": "1–3 sessions"
+      "asset": "AMD",
+      "thesis": "AMD closed Tuesday at ~$481, below the $484 containment signal broken by the Netlist/MU sector selloff. Pre-market bounce with chip complex broadly. AMD's data-center GPU thesis is unchanged; the break is legal-headline spillover from a Netlist/MU action with 12-18 month ITC proceedings. Resolution depends on whether AMD closes back above $484 within two sessions (sector-dip containment) or persists below $470 (broader re-rating).",
+      "entry": "Levels: $484 above (containment holding), $470 below on elevated volume (breakdown confirmed)",
+      "invalidation": "Two consecutive closes above $484 confirm Netlist spillover was contained; close below $470 on above-average volume confirms broader chip re-rating",
+      "horizon": "1-2 sessions"
     },
     {
-      "asset": "Brent Crude — MOU expiry premium lock-in",
-      "thesis": "The June MOU expired Monday (Aug 18) with Trump explicitly confirming no Iran talks. Brent above $91 is now pricing an entrenched physical-disruption premium, not speculative ceasefire-expiry risk. The next catalyst is either a confirmed second physical interdiction event (extends toward $94–96) or back-channel Oman-mediated contact resuming (compresses toward $87–89). The absence of a follow-on strike within 48h is the precondition for any meaningful correction.",
-      "entry": "$91.50 current; $94–96 on physical escalation; $87–89 on back-channel re-engagement.",
-      "invalidation": "No further Hormuz physical incidents within 48h AND confirmed Oman back-channel contact; Brent retraces below $89.",
-      "horizon": "48–72 hours"
+      "asset": "TGT and retail consumer read",
+      "thesis": "TGT reported +3.8% comparable sales vs. +2.4% consensus and raised FY net sales guidance to ~5% — the second consecutive beat in the retail gauntlet after HD's +1.7% Monday. The stock reaction today signals whether consumer-positive data is absorbing into prices or being overridden by FOMC Minutes anxiety and the 30Y at 5.33%. WMT Thursday is the third data point.",
+      "entry": "TGT's comparable-store reaction today vs. Monday's pre-report close defines whether the HD-TGT pattern has market significance",
+      "invalidation": "TGT drops below Monday's pre-report close despite the beat (macro override); WMT misses Thursday (three-name gauntlet fails to confirm resilience)",
+      "horizon": "Today through Thursday (WMT print)"
     }
   ],
-  "bear_case": "The June MOU expiry converts Hormuz from a negotiation-failure risk (compressible on diplomacy) to a structural physical-disruption premium with no diplomatic off-ramp visible. If the FOMC Minutes reveal that three dissenters were primarily motivated by fiscal sustainability and Treasury supply absorption — not merely CPI persistence — the 30Y has a path to 5.40%+ that five consecutive soft CPI prints cannot close. At 5.40% on the 30Y, duration-sensitive mega-cap (MSFT, META, GOOGL) reprices materially, and the AI capex-to-revenue question for NVDA becomes sharper going into August 26. Seoul's semiconductor session (-9.93% SK Hynix) is the early signal of that repricing. If SPX closes below 7,650 before the FOMC Minutes reaction is fully digested, the base-to-bear ratio flips: three regime indicators remain breached, 30Y is at or above the 5.28% trigger, and oil is pricing physical interdiction. BTC below $62,000 would close the last remaining non-breached regime indicator and confirm a full regime breach configuration.",
+  "bear_case": "The 30Y printed 5.33% overnight — a new 19-year high above a close that already sat at 19-year highs. If the FOMC Minutes confirm the three dissenters (Hammack, Kashkari, Logan) were primarily motivated by fiscal sustainability and Treasury supply absorption, that argument is structural and unaddressed by the five consecutive soft data prints since the July 28-29 meeting. A $432B July deficit and $1.7T in corporate bond issuance represent supply pressure that exists independent of inflation outcomes or policy rates. At 5.40% on the 30Y, duration-sensitive mega-cap reprices further — MSFT at 29x NTM compresses materially, and NVDA enters its August 26 print against a structurally higher discount rate. TGT's consumer beat offsets one session of macro pressure; it does not resolve structural supply-absorption dynamics in the long end. If SPX closes below 7,620 today, the August-low retest reopens. This read no longer holds if 30Y retraces below 5.20% on a CPI-persistence-only Minutes reading.",
   "body_mdx": "data/briefings/markets/2026-08-19-morning.mdx"
 }
