@@ -2,11 +2,14 @@
   "routine": "markets",
   "date": "2026-08-18",
   "window": "night",
-  "generated_at": "2026-08-19T01:00:00Z",
+  "generated_at": "2026-08-19T01:15:00Z",
   "is_seed": false,
   "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "conviction": "medium",
     "headline": "Chip stocks slide on Netlist DDR5 patent action; FOMC Minutes set the 30Y path Wednesday",
-    "label": "S&P 7,703 (−0.57%); Nasdaq −1.2%; SOXX −5.5%; MU −7.6%, AMD −5%, NVDA −2.19%; 30Y holds 5.31%; Brent $90.97; FOMC Minutes Wednesday 2pm ET",
+    "label": "HOLD — 0 of 4 regime triggers breached: 30Y holds 5.31% (below 5.40% gate); Brent $90.97 and WTI $84.92 both below updated oil gates; BTC ~$64,539 holds above $62K floor. SOXX −5.5% on Netlist DDR5 patent action; VIX +4.28% to 15.84. FOMC Minutes Wednesday 2pm ET",
     "rationale_short": "The morning's base case held at its lower bound — S&P closed at 7,703 within the 7,700–7,780 range — but the driver shifted from macro to sector-specific. Netlist's new ITC and federal patent actions against Micron targeting DDR5 server memory sent SOXX down 5.5% and MU down 7.6%, spreading to AMD (−5%) and NVDA (−2.19%). The 30Y held at 5.31% without extending, Brent moderated to $90.97, and no second Hormuz vessel action materialized within 24 hours. FOMC Minutes at 2pm ET Wednesday are the next pivotal event — the fiscal-vs-inflation-persistence distinction the morning flagged remains unresolved. Level that changes the read: S&P reclaims 7,780 with 30Y retracing below 5.25% on a dovish Minutes reading and TGT in-line or above consensus.",
     "supporting_data": [
       { "label": "MU −7.6%: Netlist files new ITC and federal patent actions targeting DDR5 products", "url": "https://invezz.com/en-ae/news/2026/08/18/mu-stock-falls-7percent-as-memory-stocks-face-the-heat/" },
@@ -20,7 +23,7 @@
   "snapshot": {
     "sp500":  { "level": 7703.0,  "change_pct": -0.57, "as_of": "2026-08-18T21:00:00Z" },
     "nasdaq": { "level": 26327.0, "change_pct": -1.20, "as_of": "2026-08-18T21:00:00Z" },
-    "vix":    { "level": 15.19,   "change_pct": 0.00,  "as_of": "2026-08-18T21:00:00Z" },
+    "vix":    { "level": 15.84,   "change_pct": 4.28,  "as_of": "2026-08-18T21:00:00Z" },
     "ust10y": { "level": 4.72,    "change_bps": 2,     "as_of": "2026-08-18T21:00:00Z" },
     "dxy":    { "level": 99.40,   "change_pct": -0.37, "as_of": "2026-08-18T21:00:00Z" }
   },
@@ -28,7 +31,7 @@
     { "name": "30Y Yield",   "value": 5.31,  "trigger_above": 5.40, "unit": "%" },
     { "name": "Brent Crude", "value": 90.97, "trigger_above": 94.0, "unit": "USD" },
     { "name": "WTI Crude",   "value": 84.92, "trigger_above": 85.0, "unit": "USD" },
-    { "name": "BTC Gate 2",  "value": 64000, "trigger_below": 62000, "unit": "USD" }
+    { "name": "BTC Gate 2",  "value": 64539, "trigger_below": 62000, "unit": "USD" }
   ],
   "watchlist_mentions": [
     { "ticker": "NVDA",  "note": "~$220 (−2.19%). Netlist DDR5 patent action adds supply-chain legal friction to the altitude ceiling entering Aug 26. Bar unchanged: gross margin above 78% AND data-center guide materially above the most aggressive sell-side estimate, simultaneously.", "sentiment": "neutral" },
