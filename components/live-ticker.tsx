@@ -93,8 +93,12 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
             desktop window pushed the tape onto a second row and shoved the
             page down. It now scrolls sideways instead — quotes slide off the
             end and come back when the window widens. min-w-0 is what lets the
-            flex child actually shrink below its content width. */}
-        <div className="panel-scroll flex min-w-0 flex-1 flex-nowrap items-center gap-x-5 overflow-x-auto font-mono text-[11px]">
+            flex child actually shrink below its content width.
+
+            scroll-hidden, not panel-scroll: the tape spans the whole page, so
+            a visible track under it looked like a stray rule. It still scrolls
+            by wheel and trackpad. */}
+        <div className="scroll-hidden flex min-w-0 flex-1 flex-nowrap items-center gap-x-5 overflow-x-auto font-mono text-[11px]">
         {quotes.map((q) => {
           const up = (q.changePct ?? 0) > 0;
           const down = (q.changePct ?? 0) < 0;

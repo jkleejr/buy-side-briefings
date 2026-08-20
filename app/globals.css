@@ -178,6 +178,13 @@ body {
   animation: term-blink 2s steps(2, end) infinite;
 }
 
+/* Scrolls, but shows no bar. The ticker tape runs the full width of the page
+   under the header, so its 6px track read as a second rule drawn across the
+   site rather than as a control. Wheel, trackpad and shift-drag still scroll
+   it — only the bar is gone. */
+.scroll-hidden { scrollbar-width: none; -ms-overflow-style: none; }
+.scroll-hidden::-webkit-scrollbar { display: none; height: 0; width: 0; }
+
 /* Thin scrollbar inside panels */
 .panel-scroll::-webkit-scrollbar { height: 6px; width: 6px; }
 .panel-scroll::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
