@@ -1,0 +1,92 @@
+{
+  "routine": "markets",
+  "date": "2026-08-20",
+  "window": "night",
+  "generated_at": "2026-08-20T22:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Walmart's call confirms demand softening; 30Y reverses Bessent's gain; S&P 500 falls to weekly low",
+    "label": "S&P 500 −0.95% to 7,642; 30Y +4bps to 5.24% reversing Wednesday's relief; WMT −9.15% on CFO demand warning; Brent $93.01; BTC $71,834 on Clarity Act",
+    "rationale_short": "Walmart CFO Rainey confirmed a softer consumer environment than February — gas above $4 creating psychological headwinds, $2.9B in tariff refunds deployed as price cuts to defend traffic — framing the 9% selloff as demand defense, not just tariff pass-through. The 30Y rose 4bps to 5.24%, fully reversing Wednesday's Bessent buyback gift in a single session. Bitcoin held above $70K on Trump's Clarity Act push at a White House crypto meeting, diverging from equity weakness. Level that changes the macro read: 30Y holds below 5.20% through Friday, or Brent pulls back below $91 on a Hormuz de-escalation signal.",
+    "supporting_data": [
+      { "label": "WMT CFO Rainey: 'softer consumer environment than February'; gas >$4 psychological impact; $2.9B tariff refunds used for price cuts — NBC News, Aug 20", "url": "https://www.nbcnews.com/business/consumer/walmart-earnings-tariffs-sales-growth-rcna593450" },
+      { "label": "30Y +4bps to 5.24%, 10Y +4bps to 4.69% — Wednesday's 9bps Bessent relief fully reversed in one session — Bloomberg, Aug 20", "url": "https://www.bloomberg.com/news/articles/2026-08-20/why-bond-yields-are-rising-what-it-means-for-mortgage-rates-savings-and-more" },
+      { "label": "S&P 500 −0.95% to 7,642; Dow −1.32% to 52,759; Nasdaq −1.00% to 26,067 — weekly lows — Yahoo Finance/TheStreet, Aug 20", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-aug-20-135212527.html" },
+      { "label": "Brent $93.01 (+1.52%), within 1% of $94 regime trigger; WMT CFO cites $2B+ added fuel costs for FY27 — Fortune/OilPrice, Aug 20", "url": "https://fortune.com/article/price-of-oil-08-20-2026/" },
+      { "label": "BTC $71,834 (+11.5% from Tuesday), ETH $2,261; Trump pushes Clarity Act at White House with Coinbase, Robinhood, Kraken — BNN Bloomberg/Forbes, Aug 20", "url": "https://www.bnnbloomberg.ca/markets/crypto/2026/08/20/bitcoin-crypto-shares-climb-after-trump-pushes-clarity-act/" },
+      { "label": "Nikkei −3.16% to 65,326 tracking Wednesday's US chip selloff (AMD −4%, AVGO −5%) — Business Recorder, Aug 20", "url": "https://www.brecorder.com/news/40435609/nikkei-slumps-sharply-as-tech-selloff-spreads" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7642.0,  "change_pct": -0.95, "as_of": "2026-08-20T21:00:00Z" },
+    "nasdaq": { "level": 26067.0, "change_pct": -1.00, "as_of": "2026-08-20T21:00:00Z" },
+    "vix":    { "level": 14.89,   "change_pct": -1.26, "as_of": "2026-08-20T21:00:00Z" },
+    "ust10y": { "level": 4.69,    "change_bps": 4,     "as_of": "2026-08-20T21:00:00Z" },
+    "dxy":    { "level": 99.60,   "change_pct": 0.82,  "as_of": "2026-08-20T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.24, "trigger_above": 5.40, "unit": "%" },
+    { "name": "Brent Crude", "value": 93.01, "trigger_above": 94.0, "unit": "$/bbl" },
+    { "name": "BTC Gate 2",  "value": 71834, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "WMT",
+      "note": "Closed $103.84 (−9.15%). CFO Rainey: 'softer consumer environment than in February'; gas >$4 creates psychological headwinds on spending; $2.9B tariff refunds deployed as price cuts to defend traffic. Weakest U.S. comparable-store sales growth in six years at +2.6%. The miss was framed as demand defense — not just tariff cost pass-through. FY27 net sales guidance raised to +4-5% (volume intact); the deterioration is in the forward margin line, compounded by $2B+ in fuel costs.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$216.95 (−0.28%). Essentially flat against a −0.95% tape — outperformed the session. BABA's AI cloud +45% for 12 consecutive quarters (pre-market data) is the demand read-through for the Aug 26 print; WMT's demand warning is the new macro uncertainty competing with it. Bar unchanged: gross margin above 78% AND data-center guide materially above the most aggressive sell-side estimate, both simultaneously.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$466.71 (+0.37%). Minimal recovery from Wednesday's $465 close. Still 17 points below $484 containment signal and six consecutive sessions below it. AMD's failure to recover into Wednesday's rate relief — and Thursday's flat-to-slightly-positive close against a down tape — are mixed signals entering NVDA's print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "$365.80 (+1.05%). Modest bounce from Wednesday's 5% selloff to $362. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries) and 72% AI revenue concentration unchanged. $380 is now resistance; $340–$350 next support. Q3 FY2026 results (est. Sept 4–5) are the first resolution window.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$71,834. Held and extended above $70K on Trump's Clarity Act push at White House crypto meeting (Coinbase CEO Brian Armstrong, Robinhood CEO Vlad Tenev, Kraken co-CEO, ICE CEO). First sustained breach of $70K since early June. Regulatory catalyst is driving crypto independent of the equity selloff — the two markets diverged on Thursday.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial ongoing (~Day 5 of 7-week trial). $200B damages floor from Day 2 unchanged. No new case developments Thursday. Wednesday's rate relief reversed; litigation remains the dominant near-term variable over the multiple.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$483.40 (−0.19%). Flat session. 30Y at 5.24% narrows but does not close the multi-turn valuation gap. Azure capex-to-revenue ratio widening ahead of revenue acceleration remains the structural unresolved fundamental.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "$177.80. No new catalysts Thursday. AI enterprise software adoption thesis intact; no new positioning data.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA — competing signals entering Aug 26; six days to print",
+      "thesis": "BABA's AI cloud +45% for 12 consecutive quarters (the strongest enterprise AI demand read-through of the week) competes directly with WMT's demand-softening call (softer consumer environment, gas >$4 psychological headwind) heading into NVDA's Aug 26 Q2 FY27 print. Enterprise AI demand (BABA) and consumer macro health (WMT) are moving in opposite directions simultaneously. The NVDA print becomes the single instrument that settles which signal is more structurally determinative for the sector. Gross margin above 78% AND data-center guide materially above consensus are both required for the enterprise signal to win.",
+      "entry": "NVDA at $216.95; $216 as session structural support. AMD at $466.71 (17 points below $484 containment) is the chip-sector leading indicator — two AMD closes above $484 before Aug 26 would signal sector sentiment reset.",
+      "invalidation": "AMD closes below $450 before Aug 26, or 30Y clears 5.30%, or Brent breaches $94 before the print.",
+      "horizon": "August 26 after close; Jackson Hole keynote August 27 is the immediate post-print risk event with no de-risk window."
+    },
+    {
+      "asset": "30Y Yield — Bessent's gift reversed; 5.24% and approaching 5.30% bear trigger",
+      "thesis": "The 30Y fell 9bps on August 19 (Bessent's unscheduled doubled buyback announcement) and rose 4bps on August 20 (WMT demand warning + oil pressure + risk-off). Net: +5bps over two sessions — the structural supply pressures ($432B July deficit, $1.7T corporate issuance) are not being pre-empted by the September 9 buyback signal. The 5.30% level identified in the morning brief as the bear trigger is now 6bps away.",
+      "entry": "5.24% current. Watch Friday close: below 5.20% suggests the Bessent supply-signal is being priced early; above 5.30% indicates supply dynamics are winning before the actual buyback program begins Sept 9.",
+      "invalidation": "Brent pulls back below $91 on Hormuz de-escalation, or a soft macro surprise that materially compresses September hike odds below 20%.",
+      "horizon": "Friday close; Aug 26 NVDA print; Jackson Hole Aug 27–29."
+    }
+  ],
+  "bear_case": "Walmart CFO Rainey's explicit 'softer consumer environment than in February' and gas prices above $4 creating psychological headwinds constitute the first direct demand-softening confirmation from the world's largest retailer — 140 million weekly U.S. shoppers across all income cohorts. The 30Y reversed Wednesday's Bessent gift in a single session, suggesting structural Treasury supply pressures are not being contained by the September 9 forward buyback signal alone. Brent at $93.01 is one geopolitical event from activating the second formal regime indicator. NVDA enters its Aug 26 print with chips under multi-week pressure (AMD 17 points below $484, AVGO below $380 structural support) and a newly confirmed weaker consumer backdrop. Level that flips this read: 30Y holds below 5.20% through Friday and Brent pulls back below $91 on a Hormuz de-escalation signal — both simultaneously.",
+  "body_mdx": "data/briefings/markets/2026-08-20-night.mdx"
+}
