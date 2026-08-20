@@ -1,0 +1,104 @@
+{
+  "routine": "markets",
+  "date": "2026-08-20",
+  "window": "morning",
+  "generated_at": "2026-08-20T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Bessent doubles long-bond buybacks, pulling yields off 19-year highs as Walmart and Deere print",
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "Treasury buyback circuit-breaker drops 30Y from 5.34% to 5.20%; DE beats hard at $5.10 vs. $4.79 est.; WMT consensus $0.73 EPS / $186B revenue due pre-open; 0 of 3 regime indicators breached",
+    "conviction": 6,
+    "horizon": "1-2 weeks",
+    "rationale_short": "The morning's structural event is Bessent's announcement that Treasury is doubling long-end buyback operations from $2B to $4B per operation, effective September 9 through November 4, covering the 10-20Y and 20-30Y sectors. The 30Y fell ~14 basis points from Tuesday's 5.34% (19-year high) to ~5.20% on the news — the largest single-session relief in the long end in months — while DXY fell to ~98.83, a 2.5-month low. Bessent has in effect drawn a practical pain threshold under long-dated yields. Separately, Deere (DE) delivered a massive Q3 beat at $5.10 EPS vs. $4.67-4.79 consensus ($1.379B net income) despite the consensus weak-ag-demand narrative, validating capex/equipment cycle resilience. Walmart reports FY2027 Q2 pre-open (consensus: EPS $0.73, revenue ~$186.3B, +5% YoY); the prior two legs of the retail gauntlet — HD (+1.7% comps) and TGT (+3.8% comps) — both beat, setting a supportive consumer backdrop. Regime indicators: 30Y at 5.20% (trigger 5.40%), Brent ~$88 (trigger $94), BTC $72,053 (trigger below $62,000) — 0 of 3 breached. The buyback announcement removes the acute long-end tail risk that was the primary bear case entering this week. BTC at $72,053 (+0.12%) is far above its Gate 2 level. Operation Economic Fury (Iran isolation) keeps an oil premium embedded but WTI near $85 is comfortably below Brent's $94 regime trigger.",
+    "supporting_data": [
+      { "label": "Bessent doubles long-end buybacks to $4B per op; 30Y drops 14bps to 5.20% — Bloomberg, Aug 19", "url": "https://www.bloomberg.com/news/articles/2026-08-19/-the-treasury-is-watching-bessent-s-buybacks-jolt-bond-market" },
+      { "label": "Treasury doubles long-term bond buybacks to $4B, yields fall sharply — Benzinga, Aug 19", "url": "https://www.benzinga.com/markets/economic-data/26/08/61299914/treasury-doubles-long-term-bond-buybacks" },
+      { "label": "Treasury doubles long-bond buybacks to $4B — Quartz/QZ, Aug 19", "url": "https://qz.com/treasury-long-term-bond-buybacks-liquidity-081926" },
+      { "label": "Deere Q3: net income $1.379B, EPS $5.10 vs. $4.79 consensus; beat on weak-ag-demand setup — PR Newswire, Aug 20", "url": "https://www.prnewswire.com/news-releases/deere-reports-third-quarter-net-income-of-1-379-billion-302856316.html" },
+      { "label": "WMT FY2027 Q2 earnings call Aug 20 at 7am CDT; consensus EPS $0.73, revenue $186.3B (+5% YoY) — Walmart IR, Aug 13", "url": "https://corporate.walmart.com/news/2026/08/13/walmart-to-host-second-quarter-earnings-conference-call-august-20-2026" },
+      { "label": "Trump 'Operation Economic Fury' against Iran; S&P futures +0.16%, Nasdaq +0.42%; 66% crowd bullish — Benzinga, Aug 20", "url": "https://www.benzinga.com/markets/prediction-markets/26/08/61320693/stock-market-will-sp-500-open-up-or-down-today-20" },
+      { "label": "Global Economy Briefing Aug 20: 10Y at 4.65%, DXY at 98.83, dollar at 2.5-month low — Rio Times, Aug 20", "url": "https://www.riotimesonline.com/global-economy-briefing-august-20-2026/" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7727.0,  "change_pct": 0.16,  "as_of": "2026-08-20T11:00:00Z" },
+    "nasdaq": { "level": 26791.0, "change_pct": 0.42,  "as_of": "2026-08-20T11:00:00Z" },
+    "vix":    { "level": 15.81,   "change_pct": -0.19, "as_of": "2026-08-20T11:00:00Z" },
+    "ust10y": { "level": 4.65,    "change_bps": -5,    "as_of": "2026-08-20T11:00:00Z" },
+    "dxy":    { "level": 98.83,   "change_pct": -0.63, "as_of": "2026-08-20T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.20, "trigger_above": 5.40, "unit": "%" },
+    { "name": "Brent Crude", "value": 88.0, "trigger_above": 94.0, "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 72053, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "WMT",
+      "note": "FY2027 Q2 reporting pre-open today. Consensus: EPS $0.73 (+7.4% YoY), revenue ~$186.3B (+5% YoY). Enters print with a strong setup: two prior retail gauntlet beats (HD +1.7% comps, TGT +3.8% comps). Key tariff read: can WMT pass through costs or is margin compression widening? Stock reaction today sets consumer-discretionary narrative for Q3 earnings season.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "DE",
+      "note": "Q3 FY2026 beat: EPS $5.10 vs. $4.79 consensus ($4.67 low-end), net income $1.379B vs. $1.289B YoY. Massive outperformance on a pessimistic weak-ag-demand setup. Capex/equipment cycle holding better than feared. Watch 9am CDT call for guidance on ag recovery timeline and construction segment.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BABA",
+      "note": "Alibaba reports today. Key reads: tariff and U.S.-China backdrop under Operation Economic Fury; cloud and AI monetization (Qwen); domestic consumer. Watch reaction against elevated geopolitical uncertainty.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$220 area. Entering August 26 earnings with the long-end rate environment materially improved (30Y from 5.34% to 5.20%). Bar unchanged: gross margin above 78% AND data-center guide materially above most aggressive sell-side estimate, simultaneously. Treasury buyback relief is constructive for high-multiple growth names.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$465, down 6.1% over two sessions from Morgan Stanley hyperscaler note. At ~29x NTM, the 14bps move in the 30Y (5.34% → 5.20%) provides modest multiple re-expansion support. Azure capex-to-revenue overhang unchanged. No specific catalyst today.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$549. AG antitrust trial Day 4; $200B damages floor established Day 2. Zuckerberg expected to testify during ~7-week trial. FCF and opex trajectory ($784M FCF on opex +55% YoY) unresolved. Rate relief is constructive but litigation is the near-term overhang.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$481, below $484 containment signal from the Netlist/MU selloff earlier this week. Pre-market recovery ongoing. Two consecutive closes above $484 needed to confirm sector-dip containment. Rate relief is constructive for the data-center GPU thesis.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$174. High-multiple AI name benefits from 30Y yield relief (discount rate compression). No specific catalyst today.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "TLT / Long-End Treasuries (20-30Y)",
+      "thesis": "Bessent's doubling of long-end buybacks to $4B per operation (Sept 9–Nov 4) establishes the Treasury as an institutional buyer of last resort in the 10-30Y sector. The 30Y fell 14bps from 5.34% to 5.20% on the announcement — this creates a practical bid in the 5.20-5.40% range. The formal regime trigger (5.40%) remains the stop. The supply dynamics ($432B July deficit, $1.7T corporate issuance) haven't changed, but the buyback schedule creates an asymmetric setup: yields above 5.25% on any retest face a structural headwind from Treasury intervention.",
+      "entry": "TLT on any intraday retracement; 30Y at 5.25%+ is re-entry on continuation of rate pressure. Scale into long-duration exposure below 5.30% with stops at 5.40%.",
+      "invalidation": "30Y closes above 5.40% despite buyback schedule — fiscal dynamics overwhelming $4B-per-op intervention pace.",
+      "horizon": "2-4 weeks (through Nov 4 buyback window)"
+    },
+    {
+      "asset": "DE (Deere & Company)",
+      "thesis": "Deere printed $5.10 EPS vs. $4.79 consensus — a 6.5% beat magnitude — on a setup where consensus was already skeptical (Seeking Alpha preview: 'earnings beat streak vs. weak Ag demand'). Net income grew $90M YoY to $1.379B. The pessimistic setup means the beat has room to drive multiple re-rating, not just relief. Capex/industrial cycle repricing higher is a secondary thesis for the broader industrials sector.",
+      "entry": "Gap-up open; ideal entry on any intraday pullback to within 1% of open. Watch 9am CDT call for guidance cadence — any raised full-year outlook is the continuation signal.",
+      "invalidation": "Beat acknowledged but guidance disappoints or management signals ag weakness accelerating into Q4; stock gives up gap.",
+      "horizon": "1-2 sessions post-print for the initial move; reassess on guidance tone"
+    },
+    {
+      "asset": "WMT (Walmart) — Event Read",
+      "thesis": "WMT is the capstone of the retail consumer gauntlet (HD +1.7% comps → TGT +3.8% comps → WMT today). Entering print with consensus EPS $0.73, revenue $186.3B. The setup question is tariff margin absorption: WMT with 70% of products sourced from overseas and ~140M weekly U.S. shoppers is the definitive tariff pass-through signal. A comps beat with margin hold → risk-on consumer confirmation. A comps beat with margin squeeze → tariff cost absorption is the Q3 earnings season theme.",
+      "entry": "Two-way. Long on comps beat + margin hold (WMT closes above yesterday's close). Cautious on margin miss even with comps beat — retail discretionary underweight until WMT confirms cost pass-through.",
+      "invalidation": "WMT closes below pre-report level despite any top-line beat — signals market is repricing margin compression over consumer health.",
+      "horizon": "Today's close through next week's retail sector follow-through"
+    }
+  ],
+  "bear_case": "The 30Y at 5.20% is still a 17-year high — Bessent's $4B-per-op circuit breaker stabilizes yields rather than resolving the structural fiscal imbalance driving them. The $432B July deficit and $1.7T corporate bond issuance that pressured the long end through August remain on the forward supply calendar; the buyback program runs only through November 4. If WMT's earnings today reveal margin compression despite top-line resilience — matching the pattern the AI commentary suggests for tariff pass-through — then the Q3 earnings season risk becomes systemic margin erosion across consumer-facing sectors. Iran's 'Operation Economic Fury' designation keeps the Hormuz oil premium intact; WTI near $85 and Brent near $88 are cost inputs for every freight-intensive consumer business. The next test for rate resilience is the August CPI print (due next week): stickiness above 3% would cause September cut odds to collapse further and raise the question of how long $4B-per-op can hold the long end against persistent fundamental supply pressure. SPX below 7,650 on any session close reopens the August-low retest; a WMT earnings disappointment today would be the clearest catalyst.",
+  "body_mdx": "data/briefings/markets/2026-08-20-morning.mdx"
+}
