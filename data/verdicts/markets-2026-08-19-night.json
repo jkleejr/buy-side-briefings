@@ -2,32 +2,35 @@
   "routine": "markets",
   "date": "2026-08-19",
   "window": "night",
-  "generated_at": "2026-08-19T22:30:00Z",
+  "generated_at": "2026-08-20T01:10:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Bessent doubles Treasury buybacks; chips fall through rate relief; 30Y hits 5.20%",
-    "label": "Rate compression surprise; chips defy the bid; gold surges 3.7%; WMT tomorrow",
-    "rationale_short": "Bessent's unscheduled announcement of doubled long-dated bond buyback operations — $2B to $4B+ per operation for 10-to-30-year bonds, effective September 9 — drove the 30Y down 9 basis points to 5.196%, confirming the morning brief's bull yield threshold. FOMC Minutes confirmed the three dissenters' concern was CPI persistence, not fiscal sustainability, meaning five consecutive soft data prints are structurally relevant to the September hike debate. The session anomaly: AMD fell 4%, AVGO fell 5%, INTC fell 4% — chips declining through rate relief — while health care and cyclicals lifted the S&P to +0.31%. That divergence carries into NVDA's August 26 print as the defining setup question. If the 30Y holds below 5.25% into the NVDA print and chips cannot recover, the bar for NVDA to revive the sector is higher than the rate improvement alone suggests.",
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — 0 of 4 regime triggers breached: 30Y 5.196% (below 5.25% gate); SPX 7,715 (above 7,700 floor); Gold $4,493 (below $4,500 gate); DXY 98.79 (above 98.00 floor). Bessent buyback operation drives 9-basis-point yield relief; chips defy the bid. WMT Thursday pre-open.",
+    "conviction": "medium",
+    "headline": "Bessent doubles Treasury buybacks, pushing long bond yields sharply lower",
+    "rationale_short": "Bessent's unscheduled announcement of doubled long-dated bond buyback operations — $2B to $4B+ per operation for 10-to-30-year bonds, effective September 9 — drove the 30Y down 9 basis points to 5.196%, confirming the morning brief's bull yield threshold. FOMC Minutes confirmed the three dissenters' concern was CPI persistence, not fiscal sustainability, meaning five consecutive soft data prints are structurally relevant to the September hike debate. The session anomaly: AMD fell 4%, AVGO fell 5%, INTC fell 4% — chips declining through rate relief — while health care and cyclicals lifted the S&P to +0.31%. BTC recovered from ~$64,722 at the US close to ~$69,321 by late evening on dollar weakness. That divergence carries into NVDA's August 26 print as the defining setup question. If the 30Y holds below 5.25% into the NVDA print and chips cannot recover, the bar for NVDA to revive the sector is higher than the rate improvement alone suggests.",
     "supporting_data": [
       {
         "label": "Bessent doubles bond buybacks: $2B → $4B+ per op, 10-20yr and 20-30yr, eff. Sept 9–Nov 4",
         "url": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html"
       },
       {
-        "label": "30Y −9bps to 5.196%; 10Y −5.7bps to 4.647%; DXY −0.77% to 98.79",
-        "url": "https://www.cnbc.com/2026/08/19/treasury-yields-multi-decade-highs-bonds-inflation.html"
+        "label": "30Y −9bps to 5.196%; 10Y −6bps to 4.647%; DXY −0.77% to 98.79",
+        "url": "https://www.nbcnews.com/business/economy/bonds-bessent-treasury-debt-repurchase-rcna593319"
       },
       {
         "label": "FOMC Minutes: dissenters cited CPI persistence — higher rates if inflation stays elevated",
-        "url": "https://www.cnbc.com/2026/08/19/fed-minutes-july-2026-officials-saw-need-for-rate-hike-if-inflation-doesnt-cool.html"
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-19-dow-sp-500-nasdaq-081116064.html"
       },
       {
         "label": "AMD −4% to ~$465, AVGO −5% to ~$362, INTC −4%: chips defy 9-basis-point yield relief",
         "url": "https://247wallst.com/investing/2026/08/19/intel-and-amd-fall-4-nvidia-unchanged-as-chip-selloff-defies-bond-yield-relief/"
       },
       {
-        "label": "Gold +3.66% to $4,493; BTC ~$64,722; ETH ~$1,917 — dollar weakness + safe-haven demand",
-        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-wednesday-august-19-2026-gold-strengthens-ahead-of-fomc-minutes-release-161123813.html"
+        "label": "Gold +3.66% to $4,493; BTC ~$64,722 at close, recovered to ~$69,321 late-evening — dollar weakness",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-19/long-dated-treasuries-rally-as-treasury-boosts-bond-buybacks"
       },
       {
         "label": "Trump pauses 50% Canada tariffs 3 days; deal pending; Canadian equities +1%",
@@ -75,32 +78,32 @@
       "sentiment": "negative"
     },
     {
-      "ticker": "TGT",
-      "note": "Q2 comparable-store sales +3.8% vs. +2.4% est. (beat confirmed Aug 19). Stock fell premarket despite 140bps beat — macro-override scenario validated. Consumer signal confirmed in the numbers; capital rotated to health care and cyclicals.",
+      "ticker": "WMT",
+      "note": "Q2 FY2027 earnings Thursday pre-open (consensus ~$186.8B revenue, EPS ~$0.74, comps ~4%). HD beat at +1.7% comparable-store sales (Aug 18), TGT beat at +3.8% but fell on macro override (Aug 19). WMT is the third and final data point in the retail gauntlet — the broadest single-company consumer read across grocery, general merchandise, and pharmacy.",
       "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
+      "asset": "WMT",
+      "thesis": "WMT reports Q2 FY2027 earnings Thursday pre-open. HD beat at +1.7% comparable-store sales (August 18), TGT beat at +3.8% but fell on macro override (August 19). WMT is the third and final data point in the retail gauntlet — grocery, general merchandise, and pharmacy across income cohorts, the broadest single-company consumer read of the three. TGT's macro override means the question is not only whether WMT beats, but whether the tape absorbs a beat constructively or redirects capital.",
+      "entry": "Consensus: ~$186.8B revenue, comparable-store sales ~4%, EPS ~$0.74. Three-of-three beats defines whether UMich 51.0 and retail sales −0.6% reflect survey pessimism or actual spending behavior.",
+      "invalidation": "WMT comparable-store sales above 4.5% with raised FY guidance would validate resilience against the structural deceleration narrative. Comps below 3.5% with flat or lowered guidance would confirm three-name deceleration.",
+      "horizon": "August 20, pre-open."
+    },
+    {
       "asset": "AMD",
-      "thesis": "AMD closed at ~$465, 19 points below the $484 AMAT containment signal established last week, extending the break driven by Netlist DDR5 sector spillover rather than AMD-specific fundamentals. Wednesday showed chips do not recover automatically into rate relief — AMD fell 4% into a 9-basis-point yield decline. The NVDA August 26 print is the sector-level catalyst that could restore or deepen the current setup.",
+      "thesis": "AMD closed at ~$465, 19 points below the $484 AMAT containment signal, extending the break driven by Netlist DDR5 sector spillover rather than AMD-specific fundamentals. Wednesday showed chips do not recover automatically into rate relief — AMD fell 4% into a 9-basis-point yield decline. The NVDA August 26 print is the sector-level catalyst that could restore or deepen the current setup.",
       "entry": "$484 is the containment level defining sector normalization vs. re-rating. $450 is the next structured support level if selling extends through the NVDA print.",
       "invalidation": "Two consecutive closes above $484 on above-average volume would indicate the KOSPI/Netlist pressure resolved as a sector dip. Close below $450 on above-average volume entering NVDA's print would signal a broader chip sector repricing.",
       "horizon": "NVDA August 26 earnings is the defining sector catalyst; AMD's setup resolves in the same window."
     },
     {
       "asset": "AVGO",
-      "thesis": "AVGO at ~$362 broke through the $380 structural support level on two simultaneous overhangs: VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries as of August 14) creating enterprise remediation uncertainty, and 72% AI revenue concentration (~72% of next-quarter sequential revenue growth) concentrating execution risk in a single segment. At approximately 65x trailing P/E, multiple compression on any miss is asymmetric.",
+      "thesis": "AVGO at ~$362 broke through the $380 structural support level on two simultaneous overhangs: VMware CVE-2026-59310 active exploitation creating enterprise remediation uncertainty, and 72% AI revenue concentration concentrating execution risk in a single segment. At approximately 65x trailing P/E, multiple compression on any miss is asymmetric.",
       "entry": "$380 is the resistance level where the structural overhang framing reverses. $340–$350 is the next structured support zone if current pressure extends into September.",
       "invalidation": "Recovery above $380 on above-average volume, or a formal VMware incident-containment statement narrowing enterprise liability uncertainty before the Q3 print.",
       "horizon": "AVGO Q3 FY2026 earnings, est. September 4–5, are the first public resolution of both overhangs."
-    },
-    {
-      "asset": "WMT",
-      "thesis": "WMT reports Q2 2026 earnings Thursday pre-open. HD beat at +1.7% comparable-store sales (August 18), TGT beat at +3.8% but fell on macro override (August 19). WMT is the third and final data point in the retail gauntlet — grocery, general merchandise, and pharmacy across income cohorts, the broadest single-company consumer read of the three. TGT's macro override means the question is not only whether WMT beats, but whether the tape absorbs a beat constructively or redirects capital.",
-      "entry": "Consensus: ~$186.3–186.9B revenue, comparable-store sales ~4%, EPS ~$0.73. Three-of-three beats defines whether UMich 51.0 and retail sales −0.6% reflect survey pessimism or actual spending behavior.",
-      "invalidation": "WMT comparable-store sales above 4.5% with raised FY guidance would validate resilience against the structural deceleration narrative. Comps below 3.5% with flat or lowered guidance would confirm three-name deceleration.",
-      "horizon": "August 20, pre-open."
     }
   ],
   "bear_case": "The 30Y's 9-basis-point decline was driven by a policy intervention — Bessent's buyback operations run only through November 4, and the underlying supply dynamics (July deficit $432B, $1.7T in corporate bond issuance) reassert the moment the program expires. Chips falling through a 9-basis-point yield decline (AMD −4%, AVGO −5%) signals that the Netlist DDR5 patent action and AVGO's VMware overhang are exerting sector-specific pressure that monetary tailwinds alone cannot offset. If WMT misses comparable-store guidance Thursday and chips extend their slide into NVDA's August 26 print, S&P 7,700 becomes the first support to test. S&P below 7,620 reopens the August-low retest.",
