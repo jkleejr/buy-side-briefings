@@ -451,7 +451,7 @@ function buildBrief(
     sentiment: sentimentFor(v.verdict.code),
     code: v.verdict.code,
     headline: headlineOf(v),
-    lede: clampText(v.verdict.rationale_short, 360),
+    lede: ledeFrom(v.verdict.rationale_short),
     keyPoints,
     keySignal: v.verdict.supporting_data?.[0]
       ? firstClause(v.verdict.supporting_data[0].label.replace(/^★\s*/, ""))
@@ -460,6 +460,42 @@ function buildBrief(
     href: `/briefings/${v.routine}/${v.date}-${v.window}`,
     isSeed: !!v.is_seed,
   };
+}
+
+// --- hero lede --------------------------------------------------------------
+
+// The homepage lede is the day in a paragraph: enough of the routine's
+// rationale to know what actually happened and why it mattered, stopping well
+// short of the full read. It used to be a hard 360-character clamp, which cut
+// the day off after two sentences; whole sentences up to ~640 characters give
+// the reader the necessary detail without turning the hero into an article.
+//
+// Sentences that read as a desk stance are dropped rather than truncated
+// around: the routine still ends its rationale with a directional call, and no
+// buy/sell/hold language belongs on the site.
+const STANCE_SENTENCE =
+  /^\s*(hold|buy|sell|stay|add|trim|fade|accumulate|reduce|upgrade|downgrade|remain)\b/i;
+const STANCE_PHRASE =
+  /\b(upgrad\w+ to (a )?buy|downgrad\w+ to (a )?sell|warrants? (a )?(buy|sell|hold|upgrade|downgrade)|remains? a (buy|sell|hold))\b/i;
+
+function ledeFrom(rationaleShort: string | undefined, maxChars = 640): string {
+  const text = (rationaleShort ?? "").trim();
+  if (!text) return "";
+
+  const sentences = text.split(/(?<=[.!?])\s+/).filter(Boolean);
+  const kept: string[] = [];
+  let used = 0;
+  for (const sentence of sentences) {
+    if (STANCE_SENTENCE.test(sentence) || STANCE_PHRASE.test(sentence)) continue;
+    if (kept.length && used + sentence.length + 1 > maxChars) break;
+    kept.push(sentence);
+    used += sentence.length + 1;
+  }
+
+  // Every sentence looked like a stance, or the first one alone runs past the
+  // budget — fall back to a clamp so the hero is never empty or endless.
+  if (!kept.length) return clampText(text, maxChars);
+  return clampText(kept.join(" "), maxChars);
 }
 
 // --- top-level gather ------------------------------------------------------
