@@ -30,9 +30,12 @@ function Pct({ pct }: { pct: number | null }) {
   );
 }
 
+// A section label. It used to draw a hard rule under itself; the labels are
+// spaced far enough apart to separate the bands on their own, and the rules
+// read as clutter once there were three of them down one page.
 function SectionRule({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mb-3 border-b border-[var(--foreground)] pb-2 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--dim)]">
+    <h2 className="mb-5 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--dim)]">
       {children}
     </h2>
   );
@@ -308,7 +311,9 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
         </div>
       )}
 
-      <div className="mt-14 flex flex-wrap justify-end gap-2 border-t border-[var(--foreground)] pt-3 font-mono text-[11.5px] text-[var(--dim)]">
+      {/* No rule above this line either — the only two rules left on the site
+          are the header's (nav from tape) and the footer's. */}
+      <div className="mt-14 flex flex-wrap justify-end gap-2 pt-3 font-mono text-[11.5px] text-[var(--dim)]">
         <span>
           {view === "morning"
             ? "Night edition follows at 20:00 ET"
