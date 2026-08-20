@@ -13,10 +13,16 @@ import type { CalendarEvent } from "@/lib/data";
  *
  * Recent decisions stay listed after they happen — a Fed decision that landed
  * last week is how you read this week's tape, and a calendar that drops it the
- * next morning leaves a blank fortnight behind today.
+ * next morning leaves a blank fortnight behind today. They are listed in the
+ * same ink as everything else; only the countdown badge carries state.
  */
 
-/** Colour by imminence. Past decisions read as settled, not as urgent. */
+/**
+ * Colour by imminence — on the countdown badge only, the same amber ≤7d /
+ * cyan ≤30d scale the earnings schedule uses. A decision that has already
+ * happened is dimmed here too; its badge already reads "−23d", so nothing
+ * else in the row needs to shout about it.
+ */
 function tone(days: number): string {
   if (days < 0) return "text-[var(--dim)]";
   if (days <= 7) return "text-[var(--amber)]";
@@ -85,7 +91,6 @@ export default function PolicyDecisions({
             {events.map((e) => {
               const days = daysBetween(today, e.date);
               const t = tone(days);
-              const muted = days < 0 ? "text-[var(--dim)]" : "text-[var(--foreground)]";
               return (
                 <tr
                   key={`${e.source}-${e.date}`}
@@ -94,8 +99,13 @@ export default function PolicyDecisions({
                   <td className={`px-2 py-1 font-bold ${t}`}>
                     {countdownBadge(days)}
                   </td>
-                  <td className={`px-2 py-1 ${muted}`}>{fmtDate(e.date)}</td>
-                  <td className={`px-2 py-1 ${muted}`}>{e.label}</td>
+                  {/* Every row reads at full strength. Greying the date and
+                      the event on past decisions made two rows look disabled
+                      next to the rest of the table — and a decision that has
+                      already landed is exactly the one you re-read to make
+                      sense of the tape. */}
+                  <td className="px-2 py-1 text-[var(--foreground)]">{fmtDate(e.date)}</td>
+                  <td className="px-2 py-1 text-[var(--foreground)]">{e.label}</td>
                   <td className="px-2 py-1 text-[var(--dim)]">{when(e)}</td>
                 </tr>
               );
@@ -104,10 +114,11 @@ export default function PolicyDecisions({
         </table>
       </div>
       <p className="border-t border-[var(--border)] px-2 py-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
-        FOMC dates from federalreserve.gov, BoJ from boj.or.jp — both published
-        well ahead and rarely moved. Decisions from the last 45 days stay listed.
-        The Fed announces at 2:00 PM ET; the BoJ lands overnight ET, so you wake
-        up to it.
+        Amber ≤7d · cyan ≤30d · grey for a decision already past. FOMC dates
+        from federalreserve.gov, BoJ from boj.or.jp — both published well ahead
+        and rarely moved. Decisions from the last 45 days stay listed. The Fed
+        announces at 2:00 PM ET; the BoJ lands overnight ET, so you wake up to
+        it.
       </p>
     </Panel>
   );
