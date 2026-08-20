@@ -380,37 +380,17 @@ function Evidence({ points }: { points: SupportingPoint[] }) {
 }
 
 // ---------------------------------------------------------------------------
-// The full read — everything the model wrote. Visible on desktop; collapsed
-// behind a tap on mobile (CSS-only: a hidden checkbox drives the reveal).
+// The full read — everything the model wrote, on every screen. This used to sit
+// behind a "tap to expand" toggle on mobile, which meant tapping into a
+// briefing and then tapping again to actually read it: two taps for the one
+// thing the page exists to show. The tier label above it already carries the
+// read-time, so the length is disclosed without hiding the text.
 // ---------------------------------------------------------------------------
 
 function FullRead({ body }: { body: string }) {
-  const heads =
-    body
-      .match(/^##\s+(.+)$/gm)
-      ?.map((h) => h.replace(/^##\s+/, "").trim().toLowerCase())
-      .slice(0, 5) ?? [];
-  const contents = heads.length
-    ? heads.join(", ").replace(/^./, (c) => c.toUpperCase())
-    : "The full analysis";
   return (
-    <div>
-      <input type="checkbox" id="full-read-toggle" className="peer sr-only" />
-      <label
-        htmlFor="full-read-toggle"
-        className="mt-2 block cursor-pointer text-[14.5px] italic leading-[1.5] text-[var(--faint)] peer-checked:hidden sm:hidden"
-      >
-        {contents} — tap to expand ▾
-      </label>
-      <label
-        htmlFor="full-read-toggle"
-        className="mt-2 hidden cursor-pointer font-mono text-[12px] italic text-[var(--faint)] peer-checked:block sm:peer-checked:hidden"
-      >
-        − collapse ▴
-      </label>
-      <div className="briefing-body hidden peer-checked:block sm:block">
-        <BriefingMarkdown source={body} />
-      </div>
+    <div className="briefing-body">
+      <BriefingMarkdown source={body} />
     </div>
   );
 }
