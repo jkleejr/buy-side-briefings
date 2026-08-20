@@ -86,12 +86,22 @@ function EditionSwitch({
 }
 
 function Hero({ brief }: { brief: BriefView }) {
+  // The lede sets into two newspaper columns on wide screens so the hero fills
+  // the page instead of hugging the left third — but only when there's enough
+  // of it to fill both. A two-line lede split down the middle reads as a
+  // broken sentence, so short ones stay a single measured column.
+  const wideLede = brief.lede.length > 190;
   return (
-    <div className="max-w-[780px] pt-10 sm:pt-14">
-      <h1 className="text-[30px] font-semibold leading-[1.13] tracking-[-0.008em] [text-wrap:balance] sm:text-[38px] lg:text-[46px]">
+    <div className="pt-10 sm:pt-14">
+      <h1 className="text-[30px] font-semibold leading-[1.13] tracking-[-0.008em] [text-wrap:balance] sm:text-[38px] lg:text-[52px]">
         {brief.headline}
       </h1>
-      <p className="mt-5 max-w-[62ch] text-[17px] italic leading-[1.6] text-[var(--ink-3)] sm:text-[19px]">
+      <p
+        className={[
+          "mt-5 text-[17px] italic leading-[1.6] text-[var(--ink-3)] sm:text-[19px]",
+          wideLede ? "max-w-[74ch] lg:max-w-none lg:columns-2 lg:gap-12" : "max-w-[62ch]",
+        ].join(" ")}
+      >
         {brief.lede}
       </p>
       <Link
