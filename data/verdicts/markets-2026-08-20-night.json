@@ -2,18 +2,21 @@
   "routine": "markets",
   "date": "2026-08-20",
   "window": "night",
-  "generated_at": "2026-08-20T22:30:00Z",
+  "generated_at": "2026-08-21T01:15:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Walmart's call confirms demand softening; 30Y reverses Bessent's gain; S&P 500 falls to weekly low",
-    "label": "S&P 500 −0.95% to 7,642; 30Y +4bps to 5.24% reversing Wednesday's relief; WMT −9.15% on CFO demand warning; Brent $93.01; BTC $71,834 on Clarity Act",
-    "rationale_short": "Walmart CFO Rainey confirmed a softer consumer environment than February — gas above $4 creating psychological headwinds, $2.9B in tariff refunds deployed as price cuts to defend traffic — framing the 9% selloff as demand defense, not just tariff pass-through. The 30Y rose 4bps to 5.24%, fully reversing Wednesday's Bessent buyback gift in a single session. Bitcoin held above $70K on Trump's Clarity Act push at a White House crypto meeting, diverging from equity weakness. Level that changes the macro read: 30Y holds below 5.20% through Friday, or Brent pulls back below $91 on a Hormuz de-escalation signal.",
+    "code": "hold",
+    "emoji": "🟡",
+    "label": "HOLD — 0 of 4 regime triggers breached: 30Y 5.24% (below 5.40% gate); Brent $93.01 (below $94 gate); SPX 7,642 (above 7,600 floor); DXY 99.60 (above 98.00 floor). WMT −9.15% on demand warning; 30Y reverses Bessent's yield relief; BTC ~$73,900 AH on Clarity Act divergence.",
+    "conviction": "medium",
+    "headline": "Walmart's demand warning erases rate-relief rally as Treasury yields climb back",
+    "rationale_short": "Walmart CFO Rainey confirmed a softer consumer environment than February — gas above $4 creating psychological headwinds, $2.9B in tariff refunds deployed as price cuts to defend traffic — framing the 9% selloff as demand defense, not just tariff pass-through. The 30Y rose 4bps to 5.24%, fully reversing Wednesday's Bessent buyback gift in a single session. Bitcoin extended its rally to ~$73,900 in after-hours (up from the $71,834 close) on Trump's Clarity Act push at a White House crypto meeting, diverging sharply from equity weakness. Level that changes the macro read: 30Y holds below 5.20% through Friday, or Brent pulls back below $91 on a Hormuz de-escalation signal.",
     "supporting_data": [
       { "label": "WMT CFO Rainey: 'softer consumer environment than February'; gas >$4 psychological impact; $2.9B tariff refunds used for price cuts — NBC News, Aug 20", "url": "https://www.nbcnews.com/business/consumer/walmart-earnings-tariffs-sales-growth-rcna593450" },
       { "label": "30Y +4bps to 5.24%, 10Y +4bps to 4.69% — Wednesday's 9bps Bessent relief fully reversed in one session — Bloomberg, Aug 20", "url": "https://www.bloomberg.com/news/articles/2026-08-20/why-bond-yields-are-rising-what-it-means-for-mortgage-rates-savings-and-more" },
       { "label": "S&P 500 −0.95% to 7,642; Dow −1.32% to 52,759; Nasdaq −1.00% to 26,067 — weekly lows — Yahoo Finance/TheStreet, Aug 20", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-aug-20-135212527.html" },
       { "label": "Brent $93.01 (+1.52%), within 1% of $94 regime trigger; WMT CFO cites $2B+ added fuel costs for FY27 — Fortune/OilPrice, Aug 20", "url": "https://fortune.com/article/price-of-oil-08-20-2026/" },
-      { "label": "BTC $71,834 (+11.5% from Tuesday), ETH $2,261; Trump pushes Clarity Act at White House with Coinbase, Robinhood, Kraken — BNN Bloomberg/Forbes, Aug 20", "url": "https://www.bnnbloomberg.ca/markets/crypto/2026/08/20/bitcoin-crypto-shares-climb-after-trump-pushes-clarity-act/" },
+      { "label": "BTC surges 12% in two days as Trump and crypto execs push Clarity Act; above $70K since early June low — CNBC, Aug 20", "url": "https://www.cnbc.com/2026/08/20/bitcoin-surges-as-trump-crypto-execs-lead-final-push-for-clarity-act.html" },
       { "label": "Nikkei −3.16% to 65,326 tracking Wednesday's US chip selloff (AMD −4%, AVGO −5%) — Business Recorder, Aug 20", "url": "https://www.brecorder.com/news/40435609/nikkei-slumps-sharply-as-tech-selloff-spreads" }
     ]
   },
@@ -27,7 +30,7 @@
   "regime_risk": [
     { "name": "30Y Yield",   "value": 5.24, "trigger_above": 5.40, "unit": "%" },
     { "name": "Brent Crude", "value": 93.01, "trigger_above": 94.0, "unit": "$/bbl" },
-    { "name": "BTC Gate 2",  "value": 71834, "trigger_below": 62000, "unit": "$" }
+    { "name": "BTC Gate 2",  "value": 73900, "trigger_below": 62000, "unit": "$" }
   ],
   "watchlist_mentions": [
     {
@@ -52,7 +55,7 @@
     },
     {
       "ticker": "BTC",
-      "note": "~$71,834. Held and extended above $70K on Trump's Clarity Act push at White House crypto meeting (Coinbase CEO Brian Armstrong, Robinhood CEO Vlad Tenev, Kraken co-CEO, ICE CEO). First sustained breach of $70K since early June. Regulatory catalyst is driving crypto independent of the equity selloff — the two markets diverged on Thursday.",
+      "note": "~$73,900 AH (closed ~$71,834 during the session; high of $72,344 intraday). Extended above $70K on Trump's Clarity Act push at White House crypto meeting (Coinbase CEO Brian Armstrong, Robinhood CEO Vlad Tenev, Kraken co-CEO, ICE CEO). First sustained breach of $70K since early June. Regulatory catalyst is driving crypto independent of the equity selloff — the two markets diverged on Thursday and BTC continues to climb in after-hours.",
       "sentiment": "positive"
     },
     {
@@ -81,7 +84,7 @@
     },
     {
       "asset": "30Y Yield — Bessent's gift reversed; 5.24% and approaching 5.30% bear trigger",
-      "thesis": "The 30Y fell 9bps on August 19 (Bessent's unscheduled doubled buyback announcement) and rose 4bps on August 20 (WMT demand warning + oil pressure + risk-off). Net: +5bps over two sessions — the structural supply pressures ($432B July deficit, $1.7T corporate issuance) are not being pre-empted by the September 9 buyback signal. The 5.30% level identified in the morning brief as the bear trigger is now 6bps away.",
+      "thesis": "The 30Y fell 9bps on August 19 (Bessent's unscheduled doubled buyback announcement) and rose 4bps on August 20 (WMT demand warning + oil pressure + risk-off). Net: +5bps over two sessions — the structural supply pressures ($432B July deficit, $1.7T corporate issuance) are not being pre-empted by the September 9 buyback signal. The 5.30% level is now 6bps away.",
       "entry": "5.24% current. Watch Friday close: below 5.20% suggests the Bessent supply-signal is being priced early; above 5.30% indicates supply dynamics are winning before the actual buyback program begins Sept 9.",
       "invalidation": "Brent pulls back below $91 on Hormuz de-escalation, or a soft macro surprise that materially compresses September hike odds below 20%.",
       "horizon": "Friday close; Aug 26 NVDA print; Jackson Hole Aug 27–29."
