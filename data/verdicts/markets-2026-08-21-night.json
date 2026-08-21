@@ -1,0 +1,94 @@
+{
+  "routine": "markets",
+  "date": "2026-08-21",
+  "window": "night",
+  "generated_at": "2026-08-21T22:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil regime threshold crossed on Iran escalation as PMI boom masks second straight weekly loss",
+    "label": "Brent $94.39 — regime trigger active; composite PMI 56.0 (4-year high) lifts Friday; S&P −1.4% weekly; 30Y 5bps from 5.30% trigger; VIX +7.5% on green day",
+    "rationale_short": "Brent closed at $94.39, crossing the formal regime threshold the morning brief identified as the level that changes the chip-sector setup, driven by Trump's 'economic D-Day' Iran escalation — Bessent details the plan Monday. A flash composite PMI of 56.0 (the fastest US business growth since April 2022, services 56.8 vs. 54.0 estimate) explained the day's small equity gains but did not reverse two back-to-back weekly losses. With oil now through the threshold and 30Y at 5.25% (5bps from the 5.30% formal trigger), the setup heading into NVDA's Aug 26 print is materially more asymmetric than Thursday; the level that would contain it is Brent retreating below $93 on credible Iran de-escalation before the print.",
+    "supporting_data": [
+      { "label": "Brent $94.39 — formal $94 regime trigger crossed; Trump declares 'economic D-Day' against Iran; Bessent to detail Monday", "url": "https://www.worldoil.com/news/2026/8/21/oil-prices-rise-toward-94-as-u-s-prepares-new-iran-economic-measures/" },
+      { "label": "Flash composite PMI 56.0 (4-year high); services 56.8 vs. 54.0 estimate; manufacturing 53.2 miss; factory output 13-month low", "url": "https://www.benzinga.com/markets/economic-data/26/08/61363926/sp-global-flash-us-pmi-august-2026-composite-52-month-high" },
+      { "label": "BTC weekly +22% (best since March 2024); hit $79,400 intraday; $80K ceiling untested on a close as Clarity Act momentum continues", "url": "https://www.bloomberg.com/news/articles/2026-08-21/bitcoin-leaps-past-75-000-as-crypto-rally-continues-in-asia" },
+      { "label": "S&P 500 −1.4% weekly, Nasdaq −2.0%; Dow back-to-back weekly losses as bond volatility remains the dominant driver", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-bitcoin-080533702.html" },
+      { "label": "ROST gap-and-fade: opened $243.85, closed $232.80 — below $235 threshold; ex-refund FY EPS guide ~$8.01–$8.17 vs headline $8.61–$8.77", "url": "https://finance.yahoo.com/markets/stocks/articles/why-ross-stores-rost-dipped-220002892.html" },
+      { "label": "Gold $4,587 (+1.58%); DXY 98.80 (−0.10%); VIX 16.01 (+7.5% from Thursday's 14.89) despite Friday equity gains", "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-friday-august-21-2026-gold-remains-strong-amid-us-debt-concerns-161052751.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7715.47,  "change_pct": 0.31,  "as_of": "2026-08-21T21:00:00Z" },
+    "nasdaq": { "level": 26342.08, "change_pct": 0.20,  "as_of": "2026-08-21T21:00:00Z" },
+    "vix":    { "level": 16.01,    "change_pct": 7.52,  "as_of": "2026-08-21T21:00:00Z" },
+    "ust10y": { "level": 4.70,     "change_bps": 1,     "as_of": "2026-08-21T21:00:00Z" },
+    "dxy":    { "level": 98.80,    "change_pct": -0.10, "as_of": "2026-08-21T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.25, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent Crude", "value": 94.39, "trigger_above": 94.0, "unit": "$/bbl" },
+    { "name": "BTC Gate 2",  "value": 78500, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$216.17 (−0.45%). Essentially flat for the week entering the print. Brent is now formally above the $94 regime trigger; 30Y at 5.25% is 5bps from 5.30%. Five days to the Aug 26 AH print. Bar unchanged: gross margin above 78% AND data-center guide materially above the most aggressive sell-side estimate (~$38–39B for Q3 FY28 revenue), both simultaneously. PMI services at 56.8 supports enterprise AI demand; manufacturing PMI supply-chain stress is the cost-structure counter.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$473.25 (+1.4%). First meaningful recovery move in seven sessions below $484 containment — gaining toward but not through the level. BABA AI cloud +45% demand read-through intact. Two closes above $484 before NVDA's Aug 26 print flip the chip-sector leading indicator constructive. A reversal below $460 before Wednesday is the negative confirmation.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "~$78,500 close; hit $79,400 intraday. Weekly +22% (best since March 2024). The $80K psychological ceiling has not been tested on a close. Thin weekend liquidity is the next test. Clarity Act has no Senate floor date. Gate 2 at $62K is $16,500 below current; the $68K momentum-exhaustion signal applies first.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "ROST",
+      "note": "$232.80 close. Gapped to $243.85 on Q2 beat (EPS $2.66 vs. $1.94; comps +10%; AH Thursday +7.92%), then faded below the $235 threshold identified in the morning brief. Ex-refund FY EPS guide is ~$8.01–$8.17 vs. the headline $8.61–$8.77. The traffic-driven comp is structurally real; the tariff refund inflated the headline and the sell-side priced through it by close.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial Day 7 of 7-week trial; $200B damages floor from Day 2 unchanged. 30Y at 5.25% maintains multiple compression pressure on long-duration growth names. No new case developments Friday.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Below $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries) unchanged. Q3 FY2026 (est. Sept 4–5) is the first resolution window for VMware remediation cost guidance and AI revenue breadth. $340–$350 is the next structured support zone.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "Below $315 structural buyer-defense level. Tim Cook transition and Q4 FY26 guidance miss overhang unchanged. No new Friday catalyst.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent crude — first formal breach; Bessent press conference Monday",
+      "thesis": "Brent closed at $94.39, crossing the formal $94 regime trigger for the first time. Trump's 'economic D-Day' Iran escalation (secondary sanctions on nations trading with Tehran) is the proximate driver; Bessent details specifics Monday Aug 24. Iranian President Pezeshkian's de-escalation language is the counter — the first substantive signal from Tehran since the conflict began — but no formal negotiating channel has opened. PMI manufacturing supply-chain stress and shipping disruptions add structural oil supply uncertainty independent of the geopolitical catalyst.",
+      "entry": "The breach level is $94; $93 is the threshold where de-escalation begins pricing in. Above $96 historically elevates risk premia across long-duration assets and compresses growth-sector multiples.",
+      "invalidation": "Credible Iran de-escalation or formal diplomatic channel announced before Monday's Bessent press conference. Brent closing below $93 on two consecutive sessions.",
+      "horizon": "72 hours to Monday close; definitively resolved by NVDA print Aug 26"
+    },
+    {
+      "asset": "30Y Treasury — 5bps from completing the two-indicator configuration",
+      "thesis": "The two-indicator stagflation framework activates when Brent >$94 AND 30Y >5.30% simultaneously. Brent is now active. 30Y at 5.25% is 5bps from the second trigger. Bifurcated PMI — services running hot, manufacturing supply-chain stress extending — is the precise configuration that keeps the Fed's rate path uncertain and the long end supply-driven. No scheduled macro data before Monday's Bessent press conference; direction will follow oil and any long-end auction dynamics.",
+      "entry": "5.25% current; 5.30% is the formal trigger for the full stagflation configuration. 5.20% is the level where the Bessent buyback supply-signal begins pricing in early.",
+      "invalidation": "Bessent's Monday statement anchors oil supply expectations, Brent retreats below $93, and 30Y pulls back below 5.20%. A soft macro surprise compressing September hike odds materially below 25%.",
+      "horizon": "Monday close; Aug 26 NVDA print; Jackson Hole Aug 28 Warsh keynote"
+    },
+    {
+      "asset": "AMD — seven sessions below $484; first recovery move",
+      "thesis": "AMD gained 1.4% to close at $473.25 Friday — the first meaningful recovery in the seven-session streak below $484 containment. $484 functions as the chip-sector leading indicator heading into NVDA's Aug 26 print: below it signals multiple exhaustion at sector altitude; above it on two consecutive closes would signal a sentiment reset. The BABA AI cloud +45% demand read-through argues fundamentals are intact; the seven-session containment failure argues multiple compression is the dominant market read regardless of demand.",
+      "entry": "AMD at $473.25; $484 is the containment level that changes the sector configuration. $450 is the negative confirmation level if the recovery reverses before NVDA's print.",
+      "invalidation": "AMD closes above $484 on Tuesday and Wednesday before the NVDA print, or NVDA delivers gross margin >78% AND data-center guide >$39B — both conditions simultaneously — which would revalue the sector independent of AMD's current position.",
+      "horizon": "Tuesday Aug 25 and Wednesday Aug 26 close before NVDA reports"
+    }
+  ],
+  "bear_case": "The Brent regime trigger has fired — the same configuration that framed the August 7 NFP shock. Bessent's Monday 'Operation Economic Fury' press conference adds to supply disruption risk rather than resolving it. 30Y at 5.25% is 5bps from activating the rate leg of the two-indicator stagflation configuration. Bifurcated PMI (services 56.8 vs. manufacturing supply-chain stress at a 13-month output low) argues the Fed cannot cut in September, which keeps the long end supply-driven. VIX at 16.01 rising on a green Friday is the most direct market signal: options desks are buying protection for the NVDA print and Warsh keynote that equity cash has not yet priced. The level that flips this: Brent back below $93 AND 30Y back below 5.20%, both within 48 hours of Monday's open.",
+  "body_mdx": "data/briefings/markets/2026-08-21-night.mdx"
+}
