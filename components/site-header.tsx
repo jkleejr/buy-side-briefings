@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { todayET } from "@/lib/utils";
+import BrandMark from "./brand-mark";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
 import PaletteButton from "./palette-button";
@@ -33,9 +35,21 @@ export default function SiteHeader() {
           label, chip and eyebrow on the site — the nav was the one piece of
           instrumentation still set in Charter, which muddies at 13px. */}
       <div className="mx-auto flex max-w-[1600px] items-baseline gap-5 px-4 py-2.5 font-mono text-[12px] sm:px-6">
-        {/* Inline nav (tablet+) with active-route highlight + overflow fade.
-            The nav's first item is TODAY → "/", so home stays reachable
-            without a wordmark. */}
+        {/* The house mark, left of everything and always a link home. The
+            nav's first item is still TODAY → "/" and still carries the
+            active-route rule; the mark is the brand, not the wayfinding. */}
+        <Link
+          href="/"
+          aria-label="Buy-Side Briefings — home"
+          className="flex shrink-0 items-center gap-2 self-center"
+        >
+          <BrandMark className="h-[18px] w-[17px]" />
+          <span className="hidden font-semibold uppercase tracking-[0.14em] text-[var(--foreground)] sm:inline">
+            Buy-Side
+          </span>
+        </Link>
+
+        {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
         <HeaderNav items={NAV} />
 
         <div className="ml-auto flex shrink-0 items-baseline gap-3 font-mono text-[10.5px] tracking-[0.1em] text-[var(--dim)]">

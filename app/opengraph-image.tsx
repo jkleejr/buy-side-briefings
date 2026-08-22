@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { OgMark } from "@/lib/og-mark";
 
 export const runtime = "edge";
 export const alt =
@@ -7,7 +8,9 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 // Default Open Graph image for the site root. Bloomberg-terminal styling:
-// black background, amber branding, headline + tagline + a bottom strip.
+// black background, amber branding, headline + tagline + a bottom strip. The
+// top bar leads with the house mark — the same five candles as the favicon and
+// the site header, so a shared link is recognisably ours before it is read.
 // Copy matches the site metadata in app/layout.tsx — this is the same claim,
 // so the two have to be changed together or a shared link contradicts the page.
 export default async function OgImage() {
@@ -26,18 +29,18 @@ export default async function OgImage() {
           justifyContent: "space-between",
         }}
       >
-        {/* Top bar — bracket code + brand */}
+        {/* Top bar — house mark + brand */}
         <div
           style={{
             display: "flex",
-            alignItems: "baseline",
-            gap: 16,
+            alignItems: "center",
+            gap: 18,
             fontSize: 28,
             letterSpacing: "0.15em",
             textTransform: "uppercase",
           }}
         >
-          <span style={{ color: "#ffa500", fontWeight: 700 }}>BSB</span>
+          <OgMark height={56} />
           <span style={{ color: "#71717a" }}>Buy-Side Briefings · Terminal</span>
         </div>
 
