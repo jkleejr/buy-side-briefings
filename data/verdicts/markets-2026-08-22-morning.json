@@ -1,0 +1,125 @@
+{
+  "routine": "markets",
+  "date": "2026-08-22",
+  "window": "morning",
+  "generated_at": "2026-08-22T11:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "⚠️",
+    "headline": "Nvidia earnings and Warsh's Jackson Hole debut set a binary week for the bull case",
+    "label": "STEP ASIDE — 0 of 3 regime triggers breached: 30Y 5.25% (5bps from gate); Brent $93.64 (36-cent buffer); BTC $76.9K above $62K floor. NVDA Aug 26 AH + Warsh Jackson Hole keynote Aug 28 + PCE Aug 28 concentrate three binary events in a 36-hour window. VIX +7.52% on a green Friday signals institutional hedging into the event cluster.",
+    "conviction": "medium",
+    "horizon": "through Aug 28 (NVDA print + Warsh keynote + PCE as the three clearing events)",
+    "rationale_short": "Zero formal regime breaches, but 36-cent buffer on Brent and 5bps on the 30Y are not margins of safety — they are proximity signals entering a long weekend with no Iran diplomacy channel open. The differentiating read is VIX closing 16.01, up 7.52% on a tape that finished green (+0.43%): options desks bought protection on a day equity cash did not justify it. Flash composite PMI 56.0 (52-month high) confirms services growth at 56.8, but manufacturing supply-chain delays at near 4-year worst keep the September Fed path contested. The week of Aug 24–28 is maximum event density: NVDA Q2 FY27 AH Aug 26 (bar: gross margin >78% AND data-center guide materially above the ~$38–39B sell-side ceiling, both simultaneously), Kevin Warsh's first Jackson Hole keynote Aug 28 (first as Fed Chair, 19 days from Sept 16 FOMC), and July PCE Aug 28 — all in a 36-hour window with no de-risk gap between events. Weekly losses of 1.4% (S&P) and 2.0% (Nasdaq) driven by bond volatility, not earnings, establish the fragile entry point. Moderna and Merck's mRNA melanoma Phase 3 success (recurrence-free survival primary endpoint met) sent MRNA +100% on Aug 19 and drove the healthcare sector to its best week since June 26 — the rotation into XLV is the active bright spot independent of macro.",
+    "supporting_data": [
+      {
+        "label": "BTC $76,883 live (Crypto.com; -1.11% 24h; 24h high $78,832; failed $80K ceiling Friday; weekend thin liquidity)",
+        "url": "https://www.coindesk.com/daybook-us/2026/08/21/bitcoin-faces-usd80-000-test-as-thinner-weekend-liquidity-looms"
+      },
+      {
+        "label": "Brent $93.64 Friday close (WTI $86.75); Iran 'economic warfare' threat; no diplomacy channel into weekend; proximity to $94 trigger",
+        "url": "https://fortune.com/article/price-of-oil-08-21-2026/"
+      },
+      {
+        "label": "Flash composite PMI 56.0 (52-month high Aug 2026); services 56.8 (20-month high) vs 54.0 est; manufacturing 53.2 miss; supply-chain delays near 4-year worst",
+        "url": "https://www.benzinga.com/markets/economic-data/26/08/61363926/sp-global-flash-us-pmi-august-2026-composite-52-month-high"
+      },
+      {
+        "label": "Moderna/Merck intismeran autogene Phase 3 melanoma success; recurrence-free survival + metastasis-free survival endpoints met; MRNA +100% Aug 19",
+        "url": "https://www.statnews.com/2026/08/19/mrna-cancer-vaccine-trial-melanoma-merck-moderna/"
+      },
+      {
+        "label": "S&P −1.4% weekly; Nasdaq −2.0% weekly; VIX 16.01 +7.52% on green Friday close — options desk hedging into NVDA/Warsh cluster",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-bitcoin-080533702.html"
+      },
+      {
+        "label": "Week ahead: NVDA Q2 FY27 AH Aug 26; GDP + New Home Sales Wed; Jackson Hole Aug 27–29; Warsh keynote Aug 28; PCE Aug 28",
+        "url": "https://www.cnbc.com/2026/08/21/stock-market-next-week-outlook-for-aug-24-28-2026.html"
+      },
+      {
+        "label": "30Y 5.25% (5bps from 5.30% trigger); DXY 98.80 (below 99); Bessent doubled Treasury buybacks to $4B/operation; 10Y +2bps to 4.71%",
+        "url": "https://www.fxstreet.com/news/united-states-dollar-index-remains-below-9900-as-10-year-us-yield-steadies-202608210652"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7674.37,  "change_pct":  0.43, "as_of": "2026-08-21T21:00:00Z" },
+    "nasdaq": { "level": 26180.46, "change_pct":  0.43, "as_of": "2026-08-21T21:00:00Z" },
+    "vix":    { "level": 16.01,    "change_pct":  7.52, "as_of": "2026-08-21T21:00:00Z" },
+    "ust10y": { "level": 4.71,     "change_bps":  2,    "as_of": "2026-08-21T21:00:00Z" },
+    "dxy":    { "level": 98.80,    "change_pct": -0.10, "as_of": "2026-08-21T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.25,  "trigger_above": 5.30,  "unit": "%" },
+    { "name": "Brent Crude", "value": 93.64, "trigger_above": 94.0,  "unit": "$/bbl" },
+    { "name": "BTC Gate 2",  "value": 76883, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$216.85 (Aug 21 close). T-4 sessions to Q2 FY27 print Aug 26 AH. Bar unchanged: gross margin >78% AND data-center guide materially above the ~$38–39B sell-side ceiling, both simultaneously. Flash PMI services 56.8 (20-month high) is the strongest enterprise AI demand signal ahead of the quarter; manufacturing supply-chain delays at near 4-year worst argue for elevated cost-structure pressure on gross margin. AMD at ~$473 (seven sessions below $484 containment) remains the chip-sector leading indicator. Two AMD closes above $484 before Wednesday are the constructive pre-print signal. VIX +7.52% Friday signals options-desk hedging specifically into this print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$473 (estimated Fri close). Seven sessions below $484 containment level. Flash PMI services beat is a demand read-through; manufacturing miss and supply-chain deterioration are headwinds for data-center capex timing. Two consecutive closes above $484 before NVDA's Aug 26 print are the leading indicator for a sector-wide re-rating. A reversal below $460 before Wednesday would be the negative confirmation.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$76,883 live (Crypto.com, -1.11% 24h). Friday's $79,525 intraday high failed to close above $80K — the first test of the ceiling since the Clarity Act surge. Weekend liquidity at 20–30% below weekday depth; BTC has faded ~$1,200 from Friday's close (~$78,100) already. Clarity Act has no Senate floor date. Gate 2 ($62K) is $14,883 below current. $74K is the first momentum-exhaustion test; two weekend closes below $74K confirm the ceiling rejection.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ROST",
+      "note": "~$247 range (post-earnings). Q2 beat: EPS $2.66 vs $1.94 est; comps +10% (traffic-driven); FY guide raised to $8.61–$8.77 vs prior $7.50–$7.74 and consensus $7.79. Analysts lifted targets. The structural trade-down thesis (off-price capturing wallet share from general merchandise) is confirmed at double-digit comps. Watch whether the $240 gap-open support holds through any broad market pressure this week.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MRNA",
+      "note": "+100% since Aug 19 announcement. Phase 3 melanoma trial: intismeran autogene (personalized mRNA vaccine) + Keytruda met recurrence-free survival and distant metastasis-free survival endpoints in 1,137 high-risk patients (stage IIB–IV). First mRNA cancer vaccine to succeed at Phase 3. Healthcare sector saw its best week since June 26. The catalyst is structural, not speculative: FDA pathway and commercial readiness are now the forward variables.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial ongoing (Day 8 of 7-week trial). $200B damages floor from Day 2 unchanged. 30Y at 5.25% maintains multiple compression on long-duration growth names. No new case developments Friday.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Below $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries) unchanged. Q3 FY2026 results (est. Sept 4–5) are the first resolution window for VMware remediation cost guidance. $340–$350 is the next structured support zone.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$308.91 (last close; still below $315 structural buyer-defense level). Tim Cook transition and Q4 FY26 guidance miss overhang unchanged. No new catalyst. Jackson Hole policy risk on rate path is the incremental overhang given duration sensitivity of hardware valuation.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA — binary event Aug 26 AH; do not pre-position",
+      "thesis": "The setup is event-dependent, not technical. Flash PMI services at 56.8 (20-month high) is the strongest enterprise AI demand signal heading into the quarter; manufacturing supply-chain delays at near 4-year worst argue for elevated cost-structure pressure on gross margin. The bar has two simultaneous conditions: gross margin >78% AND data-center guide materially above ~$38–39B (Q3 FY28 revenue), both required — in-line on either does not expand the multiple at current altitude. Jay Woods (Freedom Capital Markets) says an NVDA beat opens the path to S&P 8,000; the miss case is unquantified but concentrated in the 36 hours before Warsh at Jackson Hole with no de-risk gap.",
+      "entry": "$216.85 current. $225 is the resistance level (prior support Aug 12–13). $205 is the defined-risk stop entering post-print. AMD two closes above $484 before Aug 26 are the leading chip-sector indicator to watch.",
+      "invalidation": "AMD fails to reclaim $484 before Aug 26 and NVDA gross margin prints below 78%; or Brent closes above $94 before Wednesday, adding the stagflation framework to the event risk stack.",
+      "horizon": "Aug 26 AH result; Warsh Jackson Hole keynote Aug 28 is the immediate post-print risk event."
+    },
+    {
+      "asset": "BTC — $80K ceiling rejection; weekend liquidity test",
+      "thesis": "Friday's $79,525 intraday high failed to close above $80K — the structural test the Clarity Act surge was building toward. Weekend liquidity runs 20–30% below weekday depth. A weekend close above $80K is the breakout; a close below $74K confirms ceiling rejection and momentum exhaustion. The Clarity Act has no Senate floor date; the legislative catalyst remains forward-looking with no scheduled catalysts this weekend.",
+      "entry": "$76,883 live. $80K is the breakout trigger. $74K is the first momentum-exhaustion support. $68K on two closes is the trend-reversal signal. Gate 2 ($62K) remains the structural floor.",
+      "invalidation": "BTC closes below $74K over the weekend — signals Clarity Act premium is being unwound ahead of any Senate action. Below $62K invalidates the breakout structure.",
+      "horizon": "Weekend through Monday open; Senate schedule week of Aug 24 as legislative catalyst update."
+    },
+    {
+      "asset": "MRNA / XLV healthcare — mRNA cancer vaccine as structural catalyst",
+      "thesis": "The Moderna/Merck Phase 3 melanoma success is the first mRNA cancer vaccine to clear Phase 3. The mechanism (personalized tumor-specific vaccine + Keytruda) addresses the largest unmet need in oncology. MRNA +100% from the announcement; XLV outperforming for the week. This is not speculative biotech momentum — it is a proven Phase 3 dataset with an FDA regulatory pathway. The forward variables are commercial readiness and FDA submission timeline, not efficacy risk. Healthcare as a sector rotation destination from tech (macro headwind) is the structural trade.",
+      "entry": "XLV (sector ETF) provides diversified exposure without single-stock binary risk. MRNA directly: monitor for consolidation post-100% gap before re-entry. MRK is the lower-volatility play (Keytruda confirmed as the combination partner).",
+      "invalidation": "FDA raises manufacturing or safety concerns in the IND review; broader market selloff overrides the sector-specific catalyst.",
+      "horizon": "4–8 weeks; FDA submission timeline and any investor day are the next fundamental catalysts."
+    }
+  ],
+  "bear_case": "Two consecutive weekly losses (S&P −1.4%, Nasdaq −2.0%) driven by bond volatility — not by earnings misses or geopolitical shock — establish a fragile entry into the most event-dense week of the quarter. VIX at 16.01 rising 7.52% on a green Friday is the institutional tell: options desks are buying event protection that equity cash has not yet repriced. The 30Y is 5bps from completing the stagflation framework at 5.30% (peaked at 5.33%, a 19-year high, on Aug 17–18 before Bessent's doubled buybacks gave partial relief). Brent at $93.64 is 36 cents from the $94 formal trigger with no Iran diplomacy channel open on a weekend — Trump's 'economic warfare' language reduces the probability of a voluntary supply normalization. BTC, which closed at ~$78,100 Friday, has already faded to $76,883 in weekend thin liquidity after failing to break $80K on a close — if it tests $74K before Monday, the Clarity Act momentum is visibly exhausted. The 36-hour sequence Aug 26 AH (NVDA) through Aug 28 (Warsh keynote + PCE) has no de-risk window: an NVDA in-line result meets a hawkish Warsh framing of Brent $94+ as a higher-for-longer supply signal, and the July PCE same morning. The level where the constructive read breaks completely: Brent closes above $94 before NVDA's print, OR NVDA gross margin prints below 78%, OR 30Y reverts above 5.30% after the PCE.",
+  "body_mdx": "data/briefings/markets/2026-08-22-morning.mdx"
+}
