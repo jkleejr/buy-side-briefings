@@ -45,7 +45,7 @@ export default function SiteHeader() {
           aria-label="Buy-Side Briefings — home"
           className="flex shrink-0 items-center self-center"
         >
-          <BrandMark className="h-[18px] w-[17px]" />
+          <BrandMark className="h-[22px] w-[21px]" />
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}

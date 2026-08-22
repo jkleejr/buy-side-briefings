@@ -7,7 +7,6 @@ export default function SiteFooter() {
         <span className="ml-auto flex gap-4 text-[9.5px] uppercase tracking-[0.18em]">
           <Link href="/about" className="hover:text-[var(--amber)]">About</Link>
           <Link href="/privacy" className="hover:text-[var(--amber)]">Privacy</Link>
-          <Link href="/terms" className="hover:text-[var(--amber)]">Terms</Link>
         </span>
       </div>
     </footer>
