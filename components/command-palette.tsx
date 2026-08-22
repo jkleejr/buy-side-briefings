@@ -159,7 +159,9 @@ export default function CommandPalette() {
             esc
           </span>
         </div>
-        <ul className="max-h-[50vh] overflow-y-auto">
+        {/* pb-1 stands in for the removed shortcut footer, which used to give the
+            panel a base — without it the last row sits flush on the border. */}
+        <ul className="max-h-[50vh] overflow-y-auto pb-1">
           {results.map((d, i) => (
             <li key={d.href}>
               <button
@@ -190,9 +192,6 @@ export default function CommandPalette() {
             </li>
           )}
         </ul>
-        <div className="border-t border-[var(--border)] px-3 py-1 font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
-          ↑↓ move · enter go · outside: g + letter jumps · ? opens this
-        </div>
       </div>
     </div>
   );

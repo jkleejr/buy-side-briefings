@@ -35,18 +35,17 @@ export default function SiteHeader() {
           label, chip and eyebrow on the site — the nav was the one piece of
           instrumentation still set in Charter, which muddies at 13px. */}
       <div className="mx-auto flex max-w-[1600px] items-baseline gap-5 px-4 py-2.5 font-mono text-[12px] sm:px-6">
-        {/* The house mark, left of everything and always a link home. The
-            nav's first item is still TODAY → "/" and still carries the
-            active-route rule; the mark is the brand, not the wayfinding. */}
+        {/* The house mark, left of everything and always a link home. Mark
+            only, no wordmark — the nav's first item is still TODAY → "/" and
+            still carries the active-route rule, so the mark is the brand, not
+            the wayfinding. The name lives in the aria-label, which is what a
+            screen reader announces for the link. */}
         <Link
           href="/"
           aria-label="Buy-Side Briefings — home"
-          className="flex shrink-0 items-center gap-2 self-center"
+          className="flex shrink-0 items-center self-center"
         >
           <BrandMark className="h-[18px] w-[17px]" />
-          <span className="hidden font-semibold uppercase tracking-[0.14em] text-[var(--foreground)] sm:inline">
-            Buy-Side
-          </span>
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
