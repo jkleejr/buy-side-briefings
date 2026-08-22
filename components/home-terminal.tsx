@@ -317,7 +317,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
         <span>
           {view === "morning"
             ? "Night edition follows at 8:00 PM ET"
-            : "Morning edition follows at 6:00 AM ET"}
+            : "Morning edition follows at 7:00 AM ET"}
         </span>
       </div>
     </div>
