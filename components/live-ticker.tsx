@@ -147,7 +147,13 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
             className="flex shrink-0 items-center gap-1 font-mono text-[10px] uppercase tracking-widest text-[var(--down)]"
             title={
               lastOk
-                ? `Yahoo feed unreachable — showing last good prices from ${new Date(lastOk).toLocaleTimeString()}`
+                ? `Yahoo feed unreachable — showing last good prices from ${new Date(
+                    lastOk,
+                  ).toLocaleTimeString("en-US", {
+                    hour: "numeric",
+                    minute: "2-digit",
+                    hour12: true,
+                  })}`
                 : "Yahoo feed unreachable — prices below may be stale"
             }
           >
@@ -157,8 +163,9 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
               <span className="hidden text-[var(--dim)] sm:inline">
                 · LAST{" "}
                 {new Date(lastOk).toLocaleTimeString("en-US", {
-                  hour: "2-digit",
+                  hour: "numeric",
                   minute: "2-digit",
+                  hour12: true,
                 })}
               </span>
             )}

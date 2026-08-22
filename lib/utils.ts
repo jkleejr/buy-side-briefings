@@ -86,7 +86,7 @@ export function formatChartDate(iso: string): {
 }
 
 /**
- * Compact X-axis tick label for charts: "Jun 10" for daily series, "14:30"
+ * Compact X-axis tick label for charts: "Jun 10" for daily series, "2:30 PM"
  * (US Eastern) for intraday timestamps. Raw ISO strings on an axis are
  * unreadable, especially at mobile widths.
  */
@@ -96,9 +96,9 @@ export function formatChartTick(iso: string, intraday?: boolean): string {
   if (isNaN(d.getTime())) return iso;
   if (intraday && !isDateOnly) {
     return d.toLocaleTimeString("en-US", {
-      hour: "2-digit",
+      hour: "numeric",
       minute: "2-digit",
-      hour12: false,
+      hour12: true,
       timeZone: "America/New_York",
     });
   }

@@ -316,8 +316,8 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
       <div className="mt-14 flex flex-wrap justify-end gap-2 pt-3 font-mono text-[11.5px] text-[var(--dim)]">
         <span>
           {view === "morning"
-            ? "Night edition follows at 20:00 ET"
-            : "Morning edition follows at 06:00 ET"}
+            ? "Night edition follows at 8:00 PM ET"
+            : "Morning edition follows at 6:00 AM ET"}
         </span>
       </div>
     </div>
