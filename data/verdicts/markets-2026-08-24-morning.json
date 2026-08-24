@@ -2,133 +2,125 @@
   "routine": "markets",
   "date": "2026-08-24",
   "window": "morning",
-  "generated_at": "2026-08-24T11:15:00Z",
+  "generated_at": "2026-08-24T10:00:00Z",
   "is_seed": false,
   "verdict": {
-    "code": "step_aside",
-    "emoji": "⚠️",
-    "headline": "US-Canada tariff war erupts as Nvidia earnings week and Warsh Jackson Hole debut begin",
-    "label": "STEP ASIDE — 0 of 3 regime triggers breached: Brent $93.09 (below $94 gate; breach resolved but Canada 50% tariffs live and Bessent Iran sanctions press conference 18:00 GMT). 30Y 5.25% (5bps from gate). BTC $77,502 above $62K floor. Event density this week is highest of the year: NVDA AH Aug 26 + GDP/PCE Wed-Fri + Warsh Jackson Hole Fri.",
-    "conviction": "medium",
-    "horizon": "through Aug 28 (Warsh Jackson Hole keynote + PCE as week-end clearing events)",
-    "rationale_short": "Brent pulled back to $93.09 at the Monday open — 130 cents below Friday's formal $94 trigger breach — as oil traders sold ahead of Bessent's 18:00 GMT Iran sanctions press conference (classic buy-the-rumor, sell-the-news unwind). The Brent regime breach is resolved; formal trigger count drops to 0 of 3. The step-aside posture shifts from oil-driven to calendar- and tariff-driven. US-Canada trade talks collapsed Friday night, triggering 50% tariffs on ~$20B of Canadian goods effective immediately with Canada retaliating dollar-for-dollar; automotive supply chains, energy transport, and consumer goods pricing are all in the blast radius. S&P 500 futures are off 0.3% premarket and Nasdaq futures down 0.5%; DXY firms 0.21% to 98.94 on risk-off. The week's event stack is dense: NVDA earnings AH Wednesday (consensus $93-95B revenue, ~96% YoY growth; Vera Rubin platform timeline commentary as key forward signal), Q2 GDP 2nd estimate and Personal Income/Spending both Wednesday morning, Warsh's first Jackson Hole keynote Friday (1-in-3 September rate-hike odds; topic 'Financial Innovation: Implications for Payments and Policy'), and PCE Friday. The Canada tariff shock is the overlooked new risk: 50% levies with matching Canadian retaliation compound structural inflation from oil still above $90/bbl — exactly the environment Warsh will need to acknowledge on Friday. BTC at $77,502 live (Crypto.com; +0.91% 24h) remains pinned below the $80K ceiling with no Clarity Act Senate floor date. Step aside until Bessent's Iran announcement and the NVDA print clear the event queue.",
+    "headline": "Bessent's Iran sanctions and Canada tariff collapse open NVDA week on simultaneous macro pressure",
+    "label": "Futures red; Brent $93 after $94 breach; 30Y 5.28%; Canada 50% tariffs live; NVDA T-2",
+    "rationale_short": "The Aug 21 conditional — Brent above $94 before NVDA's print changes the setup — triggered Friday ($94.39 close); Brent has since pulled back to $93.09 as markets wait on Bessent's Iran sanctions detail. The 30Y closed Friday at 5.28%, 2bps from the 5.30% bear trigger, and US-Canada 50% tariffs on $28B of goods went into effect at midnight. The read changes if Brent re-crosses $94 on comprehensive secondary sanctions language today, or if 30Y closes above 5.30% before NVDA's Aug 26 print.",
     "supporting_data": [
       {
-        "label": "Brent crude -1.38% to $93.09, WTI -1.62% to $85.65 at Monday open; oil sells off ahead of Bessent 18:00 GMT Iran sanctions press conference",
+        "label": "Brent $93.09 (-1.38%) Monday; Iran threatened Hormuz ship seizures; Bessent press conference today",
         "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
       },
       {
-        "label": "US-Canada trade talks collapse; 50% tariffs on ~$20B of Canadian goods effective immediately; Carney retaliating dollar-for-dollar on 'uneconomic' US demands",
-        "url": "https://www.axios.com/2026/08/22/us-canada-tariffs-trade-trump-carney"
+        "label": "S&P futures -0.31%, Nasdaq -0.77%; market weighing Iran sanctions, Canada tariffs, NVDA week, Jackson Hole",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-24-dow-sp-500-nasdaq-080306047.html"
       },
       {
-        "label": "Bessent: 'At dawn begins an economic D-Day — the greatest financial offensive ever marshalled against an adversary'; Iran sanctions details at 18:00 GMT Monday",
-        "url": "https://www.agbi.com/oil-and-gas/2026/08/oil-prices-slide-as-traders-await-new-us-sanctions-on-iran/"
+        "label": "US-Canada 50% tariffs on $28B effective midnight; Canada retaliates Sept 8 on dairy, appliances, electronics",
+        "url": "https://finance.yahoo.com/markets/article/us-canada-trade-talks-collapse-as-new-50-tariffs-go-into-effect-160526827.html"
       },
       {
-        "label": "S&P 500 futures -0.3%, Nasdaq futures -0.5% premarket; DXY +0.21% to 98.94 on risk-off; gold extends rally as tariff shock hits",
-        "url": "https://stocktwits.com/news-articles/markets/equity/why-nasdaq-futures-falling-today-nvidia-alibaba-iran-sanctions-sls-spcx-rklb-stocks/cZYKBA7RJni"
+        "label": "Iran threatened Hormuz ship seizures as Bessent vows \"greatest financial offensive ever\" against Tehran",
+        "url": "https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html"
       },
       {
-        "label": "NVDA AH August 26: consensus $93-95B revenue (~96% YoY); Vera Rubin platform transition timeline and Blackwell GM sustainability are the forward read",
-        "url": "https://intellectia.ai/blog/nvidia-earnings-preview-august-2026"
+        "label": "30Y 5.28% Friday close — 2bps from 5.30% trigger; Bessent $4B+ buyback ops begin Sept 9",
+        "url": "https://fred.stlouisfed.org/series/dgs30"
       },
       {
-        "label": "Warsh Jackson Hole keynote August 28: first as Fed Chair; 1-in-3 September rate-hike odds; topic 'Financial Innovation: Implications for Payments and Policy'",
-        "url": "https://www.regardsofwallstreet.com/news/jackson-hole-2026-dates-schedule-warsh-first-speech"
-      },
-      {
-        "label": "BTC $77,502 live (Crypto.com; +0.91% 24h; range $76,660-$78,059); $80K ceiling intact; Clarity Act has no Senate floor date",
-        "url": "https://www.coindesk.com/price/bitcoin"
-      },
-      {
-        "label": "Economic calendar: GDP Q2 2nd estimate + Personal Income/Spending + Durable Goods all Wednesday Aug 26; PCE + Warsh keynote both Friday Aug 28",
-        "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
+        "label": "NVDA Q2 FY27 Aug 26 AH; revenue consensus $91.85B vs $91.0B guidance; GAAP GM 74.9%; EPS $2.08",
+        "url": "https://intellectia.ai/blog/nvda-earnings-august-26-2026-preview"
       }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7651.00, "change_pct": -0.30, "as_of": "2026-08-24T11:00:00Z" },
-    "nasdaq": { "level": 26049.00, "change_pct": -0.50, "as_of": "2026-08-24T11:00:00Z" },
-    "vix":    { "level": 16.84,   "change_pct":  5.18, "as_of": "2026-08-24T11:00:00Z" },
-    "ust10y": { "level": 4.72,    "change_bps":  1,    "as_of": "2026-08-24T11:00:00Z" },
-    "dxy":    { "level": 98.94,   "change_pct":  0.21, "as_of": "2026-08-24T11:00:00Z" }
+    "sp500":  { "level": 7650.0,  "change_pct": -0.31, "as_of": "2026-08-24T10:00:00Z" },
+    "nasdaq": { "level": 25979.0, "change_pct": -0.77, "as_of": "2026-08-24T10:00:00Z" },
+    "vix":    { "level": 15.13,   "change_pct":  0.00, "as_of": "2026-08-21T21:00:00Z" },
+    "ust10y": { "level": 4.71,    "change_bps":  0,    "as_of": "2026-08-24T10:00:00Z" },
+    "dxy":    { "level": 98.99,   "change_pct":  0.19, "as_of": "2026-08-24T10:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield",   "value": 5.25,  "trigger_above": 5.30,  "unit": "%" },
-    { "name": "Brent Crude", "value": 93.09, "trigger_above": 94.00, "unit": "$/bbl" },
-    { "name": "BTC Gate 2",  "value": 77502, "trigger_below": 62000, "unit": "$" }
+    { "name": "30Y Yield", "value": 5.28, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 93.09, "trigger_above": 94.0, "unit": "USD/bbl" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "NVDA",
-      "note": "~$219 premarket into earnings week. Q2 FY27 AH Aug 26. Street consensus: $93-95B revenue (~96% YoY); Vera Rubin platform transition timeline and Blackwell GM sustainability are the two forward signals that matter more than the headline. NVDA's own Q2 guide was $91B revenue (±2%) with non-GAAP GM ~75%; Q1 actual was 78.4%, so a beat on margins above 76-77% would be a positive surprise. Analyst price targets cluster $275-$325 (avg ~$305, implying 25-45% upside from ~$219). The event stack has no de-risk gap: NVDA prints AH Wednesday, GDP lands Wednesday morning before the open, and Warsh speaks Friday. Canada 50% tariffs are a secondary read-through — NVDA's direct Canada exposure is limited but retaliatory rare-earth pressure from Beijing (which rejected diplomatic channels last week) is the tail risk on supply chain.",
+      "note": "$214.92 (day range $214.50–$218.74). Q2 FY27 print T-2, Aug 26 AH. Consensus: revenue $91.85B vs $91.0B guidance midpoint; GAAP GM 74.9%; EPS $2.08. Data Center was $75.2B last quarter (+92% YoY). The Q3 FY27 forward guide is the market-moving number. Jackson Hole starts 20 hours after the print — no de-risk gap.",
       "sentiment": "neutral"
     },
     {
       "ticker": "AMD",
-      "note": "Still below $484 containment. The two-closes-above-$484 pre-NVDA signal is unchanged as the chip-sector's forward indicator; AMD has not achieved it. Lisa Su's data-center inference roadmap (OpenAI, Meta, Anthropic, Microsoft) represents structural demand, but the stock has not yet confirmed the NVDA-print pre-positioning signal. Below $460 before Wednesday is the negative pre-print confirmation.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "BTC",
-      "note": "$77,502 live (Crypto.com, +0.91% 24h; 24h range $76,660-$78,059). $80K ceiling is intact with no close above it since the Clarity Act surge. Clarity Act has no Senate floor date — the legislative catalyst remains forward-looking with no scheduled trigger this week. Two closes below $74K would confirm the ceiling rejection and Clarity Act premium unwind. BTC Gate 2 ($62K) is $15,502 below current — not structurally in play.",
-      "sentiment": "neutral"
+      "note": "$465.20 (day range $462–$478). Seven sessions below $484 containment. Two sessions remain before NVDA prints. No recovery on Friday's services PMI beat (56.8 vs 54.0 est.). AMD closing below $450 today is the negative confirmation the prior briefing cited.",
+      "sentiment": "negative"
     },
     {
       "ticker": "ROST",
-      "note": "Q2 beat (EPS $2.66 vs $1.94 est; comps +10% traffic-driven; FY guide raised to $8.61-$8.77 vs prior $7.50-$7.74) confirmed the trade-down thesis. Watch $240 gap-open support into any broader market pressure from tariff/macro events this week. Canada tariff shock (consumer goods pricing) is a secondary structural tailwind for off-price retail as budget-conscious households trade further down.",
+      "note": "$239.67 (Fri close). Held above $235 consolidation floor — no gap-and-fade. The $0.60/share IEEPA tariff refund premium largely unwound through Friday's session; the underlying traffic-driven comp (+10%, record customer count) survived the full-day tape.",
       "sentiment": "positive"
     },
     {
-      "ticker": "MRNA",
-      "note": "Phase 3 melanoma trial (intismeran autogene + Keytruda) met recurrence-free and distant metastasis-free survival endpoints in 1,137 high-risk patients. First mRNA cancer vaccine at Phase 3 efficacy confirmation. +100% since Aug 19 announcement. FDA submission timeline and commercial manufacturing readiness are the forward variables; efficacy risk is retired. XLV healthcare rotation continues as a destination away from tech/AI through the event-heavy week.",
+      "ticker": "BTC",
+      "note": "~$78,000. Clarity Act bid from last week holding above Gate 2 ($62K). $80K is the next ceiling; $68K on two consecutive closes is the momentum-exhaustion signal.",
       "sentiment": "positive"
-    },
-    {
-      "ticker": "WMT",
-      "note": "Q2 FY27 (Aug 20): eCommerce +23%; comp +2.6%; Q3 EPS guide missed FactSet consensus. Canada tariff escalation is the new risk layer: Walmart imports significant quantities of Canadian goods (agricultural products, packaging) and any retaliatory cost pressure flows through its already-thin Q3 margin guide. Consumer trade-down intact (structurally positive) but import cost inflation from both Iran-linked oil and Canada tariffs is a margin headwind into Q3.",
-      "sentiment": "neutral"
     },
     {
       "ticker": "META",
-      "note": "Antitrust trial ongoing (Day 9+). $200B damages floor from Day 2 unchanged. 30Y at 5.25% maintains multiple compression on long-duration growth names. Warsh Jackson Hole keynote (Aug 28) is the next policy-path catalyst that directly affects META's duration sensitivity. Canada tariffs are not a direct revenue headwind but the broader risk-off environment pressures high-multiple names.",
+      "note": "Antitrust trial ongoing (~Day 11 of 7-week trial). $200B damages floor from Day 2 unchanged. 30Y at 5.28% maintains multiple compression pressure on long-duration growth names.",
       "sentiment": "negative"
     },
     {
-      "ticker": "AVGO",
-      "note": "Below $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries) unchanged. Q3 FY2026 results (est. Sept 4-5) are the first resolution window for VMware remediation cost guidance. $340-$350 is the next structured support zone. Canada tariff disruption is a secondary infrastructure cost factor for enterprise deployments.",
-      "sentiment": "negative"
+      "ticker": "PLTR",
+      "note": "$179.94 (Aug 23 close). 52-week range $106–$207. Federal AI budget cycle is the near-term variable; no new fundamental data this week.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSM",
+      "note": "July revenue NT$467.58B (+44.7% YoY). Advanced-node and HBM demand intact; NVDA read-through unchanged. No new developments.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$483.40. Azure $100B annual run-rate confirmed. Flat on the 30Y headwind; US-Canada tariff uncertainty adds cost-push risk to enterprise software pricing.",
+      "sentiment": "neutral"
     },
     {
       "ticker": "AAPL",
-      "note": "~$308.91 last close; still below $315 structural buyer-defense level. Tim Cook transition and Q4 FY26 guidance miss overhang unchanged. Canada is a meaningful market (~$8B in annual revenue); new 50% tariff retaliation and potential consumer boycott of US brands in Canada is a modest but real new headwind. Warsh Jackson Hole keynote Aug 28 is the rate-path catalyst — any hawkish lean extends the higher-for-longer discount rate applied to hardware-cycle duration.",
+      "note": "Below $315 structural buyer-defense level. Tim Cook transition and Q4 FY26 guidance miss overhang unchanged. No new catalyst.",
       "sentiment": "negative"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "AWS +37% YoY ($42.2B) confirmed from Q2. No new developments; tariff environment adds cost-push risk to logistics segment.",
+      "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
-      "asset": "NVDA — binary event AH August 26; do not pre-position",
-      "thesis": "NVDA's own Q2 FY27 guide is $91B revenue (±2%) and non-GAAP GM ~75%; Q1 actual was 78.4%, making the 75% guide a company-set floor. Street consensus has risen to $93-95B revenue (~96% YoY growth), implying the buy-side is already above the company's guide. The two-factor bar to drive a positive re-rating: (1) data-center revenue materially above the implied ~$77-79B consensus range, AND (2) non-GAAP GM at or above 76-77% (not just the 75% company floor). Vera Rubin platform transition timeline commentary is the new forward-looking watch: any pull-forward of Vera Rubin production ramp or expansion of the inference architecture addressable market sets the next multiple. The event stack context: GDP prints Wednesday morning before the open (Q2 2nd estimate; soft GDP + NVDA beat = best-case risk-on), Warsh keynote Friday (two days after the print with no de-risk gap). Canada tariff/supply chain context: NVDA's direct Canada revenue is limited, but secondary rare-earth risk from Beijing (rejected diplomacy last week) is the tail on supply.",
-      "entry": "~$219 current. $225 is resistance. $205 is the defined-risk stop entering post-print. AMD two closes above $484 before Aug 26 are the pre-event leading indicator — AMD has not achieved this.",
-      "invalidation": "AMD fails $484 before Aug 26 AND NVDA GM prints at or below 75% (company's own floor); or Bessent's Iran sanctions produce a Brent reversal above $96 before Wednesday, activating stagflation overlay on the NVDA print night.",
-      "horizon": "AH Aug 26 result; Warsh Jackson Hole Aug 28 is the immediate post-print macro risk event."
+      "asset": "Brent — Bessent press conference resolves direction",
+      "thesis": "Brent crossed $94 Friday ($94.39), then pulled back to $93.09 as markets await the press conference. The resolution is binary: comprehensive secondary sanctions (any sovereign buying Iranian oil faces US financial exclusion) returns Brent above $94 and re-activates the regime trigger through NVDA's print. Targeted sanctions or diplomatic framing keeps Brent in the $91–93 band. Iran's Hormuz threat is unresolved — six vessels transited in 24 hours — but enforcement of seizure language would be a step-change escalation.",
+      "entry": "The levels: $94 on a close is the re-trigger; $91 on a close deactivates the regime threshold. Bessent's press conference is the catalyst; no meaningful pre-conference signal is available.",
+      "invalidation": "Brent closes above $94 after the press conference — the prior conditional is re-active. Or: Pezeshkian's de-escalation language produces a confirmed negotiating channel, returning Brent below $91.",
+      "horizon": "Today's close defines the NVDA-week setup; Jackson Hole (Aug 27–29) is the next major event for re-evaluation."
     },
     {
-      "asset": "Oil — 'sell the news' on Bessent Iran press conference 18:00 GMT",
-      "thesis": "Brent has already sold off 1.38% to $93.09 in anticipation of Bessent's 18:00 GMT press conference, pulling the formal regime breach back below $94. If the announced sanctions match the 'toughest-ever' rhetoric (secondary sanctions on Chinese buyers), oil's initial reaction is likely to be a further squeeze before sellers reassert demand-destruction pricing. The structural dynamic: secondary sanctions on China (the marginal buyer of Iranian crude) are simultaneously a supply shock AND a demand shock for Chinese import demand of global crude — a self-limiting mechanism. Short-term, the 'buy the rumor' has already run; 'sell the news' continuation targets $91-92 Brent in the 24-48 hours post-announcement unless sanctions are materially more aggressive than priced.",
-      "entry": "Brent ~$93.09 heading into 18:00 GMT. $91-92 target on 'sell the news' reaction. $94 re-entry above the trigger is the stop/reversal signal — a close above $94 post-announcement reactivates the regime breach.",
-      "invalidation": "Sanctions details include direct military asset targeting or Strait of Hormuz closure threat not previously flagged; or Beijing announces immediate retaliatory export controls on rare earths (re-activates the commodity shock overlay).",
-      "horizon": "24-48 hours post-announcement (through Wednesday morning)."
+      "asset": "AMD — chip-sector leading indicator in the two-session window",
+      "thesis": "Seven sessions below $484 containment without a meaningful recovery bid. BABA AI cloud +45% for 12 consecutive quarters argues enterprise AI demand is intact; AMD's containment failure tracks multiple exhaustion at current NVDA altitude rather than demand deterioration. The two sessions before NVDA's print are the window: a recovery above $484 would flip the chip-sector leading indicator constructive. Below $450 would flip it negative.",
+      "entry": "The levels: $484 is recovery confirmation; $450 is negative confirmation; $465 is the current anchor. Today's close is more informative than any intraday move.",
+      "invalidation": "AMD closes below $450 today — signals the chip sector is not bid into NVDA's print. Or: AMD closes above $484 on volume — flips the indicator constructive.",
+      "horizon": "Two sessions (today and Tuesday); NVDA prints Aug 26 AH."
     },
     {
-      "asset": "MRNA / XLV healthcare — structural rotation destination",
-      "thesis": "MRNA's Phase 3 melanoma success is the first mRNA cancer vaccine at this endpoint. The mechanism shifts XLV from defensive-rotation to structural-catalyst status: there is now a confirmed, large-sample efficacy dataset in one of oncology's hardest endpoints. The sector-rotation logic is particularly valid in a week where tech faces binary NVDA risk, macro is uncertain, and the Canada tariff shock pressures broad industrials. XLV provides diversified healthcare exposure without single-name binary risk. MRK (Keytruda combination partner) is the lowest-volatility access point.",
-      "entry": "XLV for diversified exposure. MRNA: monitor for consolidation post-gap before re-entry. MRK for lower-volatility combination-partner exposure.",
-      "invalidation": "FDA raises manufacturing or safety concerns; broad market selloff on NVDA miss or Warsh hawkish surprise overrides the sector-specific catalyst.",
-      "horizon": "4-8 weeks; FDA submission timeline and investor day as the next catalysts."
+      "asset": "US-Canada 50% tariff cascade — FOMC and Jackson Hole implications",
+      "thesis": "50% tariffs on $28B of Canadian goods effective Monday; Canada retaliates Sept 8 on dairy, appliances, and agricultural equipment. Manufacturing PMI already showed supply-chain stress at a 13-month high Friday. The Sept 8 Canada counter-tariffs arrive 8 days before the Sept 16 FOMC. If Warsh at Jackson Hole (Aug 28) frames the Canada-US escalation plus Iran-driven energy pressure as a dual inflation risk, September hike odds — currently at 31% — would increase. The interaction with the Bessent press conference is the key variable: oil above $94 plus tariff cost-push from Canada is the combination that moves the September FOMC discussion.",
+      "entry": "The level: 30Y closing above 5.30% before Friday's Warsh keynote shifts the September FOMC from 'hold' to 'live.' The current 30Y at 5.28% is the threshold to watch at Monday and Tuesday's closes.",
+      "invalidation": "Bessent's press conference produces targeted (not secondary) sanctions and Brent falls to $90–91; Warsh frames Iran oil as transitory and Canada tariffs as supply-chain rather than inflationary — 30Y stays below 5.25%, September hike odds fall below 20%.",
+      "horizon": "September 16 FOMC; Warsh's Jackson Hole keynote (Aug 28) is the intermediate inflection point."
     }
   ],
-  "bear_case": "The US-Canada tariff shock is the new inflationary input that the August 23 verdict did not price: 50% tariffs on ~$20B of Canadian goods (effective immediately) alongside dollar-for-dollar Canadian retaliation create a structural cost-push inflation input that arrives simultaneously with oil still above $90/bbl and the 30Y only 5bps from its formal gate. The sequence that gets materially worse: Bessent's 18:00 GMT press conference announces secondary sanctions more aggressive than priced (e.g. direct asset-freeze of Chinese state oil companies, not just purchase restrictions), oil reverses the morning's sell-off and closes above $94 — reactivating the Brent regime breach and triggering the stagflation framework for the second consecutive session. Simultaneously, Canada's Carney announces retaliatory action targeting US tech and financial services (not just goods), expanding the trade war beyond the initially flagged $20B in goods. NVDA prints Wednesday AH with non-GAAP GM at or below 75% (company's own floor, below Q1 actual of 78.4%) — signaling the AI infrastructure buildout is decelerating faster than the buy-side modeled. In that sequence, Wednesday's GDP 2nd estimate prints soft (below 2.0%), and Warsh on Friday signals the hiking cycle is not finished — 'structural inflation from tariffs is not transitory' — repricing September hike odds from 1-in-3 to near-even. The 30Y breaks 5.30% for the first time this cycle. Multiple regime triggers activate simultaneously for the first time. The S&P 500 corrects sharply from the 7,650 premarket level toward 7,400-7,500. The breadth of the downside catalyst list — tariffs, Iran sanctions, NVDA binary, rate path, and GDP in a 72-hour window — is why the step-aside posture is maintained even with 0 formal triggers active today.",
+  "bear_case": "US-Canada 50% tariffs add cost-push pressure to an economy where manufacturing supply-chain stress is already at a 13-month high. If Bessent announces comprehensive secondary sanctions on Iran oil buyers, Brent returns above $94 and the 30Y — already at 5.28% — has a direct path to 5.30%. The combination of oil above $94, 30Y at the bear threshold, AMD unable to recover above $484 entering NVDA's print, and Canada counter-tariffs arriving 8 days before the September 16 FOMC is the maximum adverse scenario for the week. NVDA at $214 enters with a consensus revenue estimate ($91.85B) that is only 0.9% above management's own guidance midpoint — the bar is already priced as a beat. If Bessent's press conference announces full secondary sanctions and the setup deteriorates, the level where the constructive read is definitively broken: Brent above $94 on today's close or 30Y above 5.30% before NVDA's Aug 26 print.",
   "body_mdx": "data/briefings/markets/2026-08-24-morning.mdx"
 }
