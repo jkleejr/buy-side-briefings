@@ -1,0 +1,109 @@
+{
+  "routine": "markets",
+  "date": "2026-08-23",
+  "window": "night",
+  "generated_at": "2026-08-24T00:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Oil slips below key threshold as Bessent's Iran sanctions details loom for Monday",
+    "label": "HOLD — 0 of 3 regime triggers breached: Brent ~$93.45 (retreated 1% below $94 trigger in thin Sunday session; Bessent full Iran sanctions press conference Monday is the determining catalyst); 30Y ~5.25% (5bps from 5.30% gate); BTC $77,639 (above $62K floor). Three binary events this week: Bessent Mon → NVDA Q2 FY2027 AH Wed → Warsh Jackson Hole keynote Fri Aug 28.",
+    "conviction": "medium",
+    "rationale_short": "No US equity session Sunday. The week's dominant development arrived early: Brent crude fell ~1% to ~$93.45 in Sunday trade — retreating from the $94.20 breach logged in Saturday weekend futures — as markets front-ran ambiguity ahead of Bessent's Monday morning press conference on 'the toughest-ever Iran sanctions.' The technical regime breach that opened Saturday cleared on thin Sunday liquidity, bringing the indicator count back to 0-of-3. The retreat is not de-escalation: Iran's President Pezeshkian continues to signal Tehran wants war to end 'from a position of strength' and no credible diplomatic channel is open; Bessent's press conference Monday morning is the first true resolution event for the $94 Brent trigger. BTC holds at $77,639 (Crypto.com, live) in a $75,551–$78,059 daily range — choppy but range-bound, with the $80K ceiling unbroken and $74K as the nearest momentum support. 30Y remains near 5.25% with Bloomberg flagging 'US long bonds under pressure' heading into the week; Treasury's doubling of buyback operations (max per operation raised from $2B to $4B, targeting the 10-to-20Y and 20-to-30Y segments) has not durably closed the gap to the 5.30% gate. This week stacks three sequential binary events across five sessions: Bessent full sanctions framework Monday morning (does it include comprehensive secondary-sanctions restricting Chinese and Indian buyers of Iranian oil?) → NVDA Q2 FY2027 earnings Wednesday AH (management guided $91B ±2% revenue, gross margin ~75%; data center and Blackwell mix the primary metrics) → Warsh's Jackson Hole debut keynote Friday Aug 28 (markets pricing ~1-in-3 odds of a September hike; Warsh's 'not constrained by market prices' posture flags hawkish surprise risk that 69% of fund managers are not positioned for). NVDA slipped to ~$214.72 in Sunday trading from Friday's $216.85 close. AMD is below the $484 containment level entering the week — two closes above $484 before Wednesday would signal a chip-sector sentiment reset ahead of the NVDA print.",
+    "supporting_data": [
+      {
+        "label": "Oil falls 1% to ~$93.45 ahead of Bessent's Monday announcement of further Iran sanctions; Brent retreats from Saturday $94.20 breach — 93.3 The Drive / Reuters",
+        "url": "https://www.933thedrive.com/2026/08/23/oil-falls-1-ahead-of-us-announcement-to-impose-further-sanctions-on-iran/"
+      },
+      {
+        "label": "Bloomberg (Aug 23): US long bonds risk deeper selloff without clear Warsh guidance at Jackson Hole; 30Y near 5.25%",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-23/us-long-bonds-risk-deeper-selloff-without-clear-warsh-guidance"
+      },
+      {
+        "label": "Bessent declares 'toughest sanctions in history' on Iran; full details press conference Monday morning — SAHI News",
+        "url": "https://www.sahi.com/news/bessent-declares-us-will-impose-toughest-sanctions-in-history-against-iran-sanctions-PE"
+      },
+      {
+        "label": "Iran criticizes US 'extraterritorial sovereignty' ahead of Monday sanctions framework — CNBC",
+        "url": "https://www.cnbc.com/2026/08/22/iran-criticizes-us-sanctions-extraterritorial-sovereignty.html"
+      },
+      {
+        "label": "Week Ahead: Warsh at Jackson Hole keynote Friday Aug 28; ~1-in-3 odds September hike; 19 days before Sept 16 FOMC — Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4939393-week-ahead-warsh-at-jackson-hole"
+      },
+      {
+        "label": "NVDA Q2 FY2027 earnings Aug 26 AH; management guided $91B ±2% revenue; gross margin ~75%; Blackwell/data center the primary metrics — MarketBeat",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-8-26-nvidia-co-stock/"
+      },
+      {
+        "label": "BTC $77,639 live (Crypto.com); daily range $75,551–$78,059; $80K ceiling unbroken; $74K nearest momentum support — Crypto.com Exchange",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7674.37,  "change_pct": 0.43,  "as_of": "2026-08-21T21:00:00Z" },
+    "nasdaq": { "level": 26180.46, "change_pct": 0.43,  "as_of": "2026-08-21T21:00:00Z" },
+    "vix":    { "level": 16.01,    "change_pct": 7.52,  "as_of": "2026-08-21T21:00:00Z" },
+    "ust10y": { "level": 4.71,     "change_bps": 2,     "as_of": "2026-08-21T21:00:00Z" },
+    "dxy":    { "level": 98.80,    "change_pct": -0.10, "as_of": "2026-08-21T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.25,  "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent Crude", "value": 93.45, "trigger_above": 94.0, "unit": "$/bbl" },
+    { "name": "BTC Gate 2",  "value": 77639, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "~$214.72 Sunday (down from Friday close $216.85). Q2 FY2027 print Wednesday AH — 3 sessions away. Management guided $91B ±2% revenue with gross margin ~75%. Bull case requires gross margin improvement AND data-center guide materially above the most aggressive sell-side estimates, simultaneously. AMD at sub-$484 (below containment) is the pre-print sector sentiment gauge: two closes above $484 on Monday and Tuesday signal a chip-sector reset. 30Y at 5.25% maintains multiple compression overhang on long-duration growth.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$77,639 live (Crypto.com; daily range $75,551–$78,059). Choppy but range-bound — the $80K psychological ceiling remains unbroken and Sunday's low of $75,551 confirmed $74K–$75.5K as the first meaningful support zone below current. The regime Gate 2 at $62K is ~$15.6K below current. Clarity Act has no Senate floor date. Thin Sunday liquidity amplifies moves in both directions; look for direction after Bessent's Monday press conference.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial entering final weeks; $200B damages floor from Day 2 unchanged. 30Y at 5.25% maintains multiple compression overhang. Bessent's Iran framework Monday is the first-order risk event: a comprehensive secondary-sanctions scheme that triggers risk-off rotation into defensives compresses long-duration growth multiples further heading into Warsh's Friday keynote.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Below $484 containment. Seven-plus sessions sub-$484. The pre-NVDA leading indicator: two closes above $484 on Monday and Tuesday before Wednesday's NVDA AH print would signal chip-sector sentiment reset independent of macro. Failure to reclaim $484 before the NVDA print confirms the containment level and leaves the sector read negative-to-neutral into the quarter's largest result.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Below $380 structural support. VMware CVE-2026-59310 active exploitation still unresolved. Q3 FY2026 results (est. Sept 4–5) remain the first window for VMware remediation cost guidance and AI revenue breadth. $340–$350 is the next structural support zone ahead of the print.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent Crude — retreated to ~$93.45; Bessent full framework Monday morning",
+      "thesis": "Brent pulled back 1% to ~$93.45 on Sunday, clearing the $94 formal trigger that had been breached in Saturday weekend futures ($94.20). This is thin Sunday liquidity, not a diplomatic de-escalation — no credible channel to end the US–Iran conflict is open, and Iran criticized the approach as 'extraterritorial sovereignty.' The determining event is Bessent's Monday morning press conference, where full details of 'the toughest sanctions in history' drop. The binary: does the framework include comprehensive secondary-sanctions restricting Chinese and Indian buyers of Iranian oil? Yes → Brent likely pushes back above $94 and the $94 breach re-opens in Monday's session. No (primarily rhetorical/signaling with limited new OFAC targets) → Brent drifts further toward $91–92.",
+      "entry": "Brent ~$93.45 Sunday. Bessent Monday morning press conference is the first catalyst. A Monday close above $94 converts the Sunday retreat into a confirmed re-breach.",
+      "invalidation": "Bessent's Monday framework is primarily signaling (no new secondary-sanctions targets, no China/India enforcement mechanism), Brent settles below $91. Iranian diplomatic channel reopens with formal ceasefire terms.",
+      "horizon": "Monday Bessent press conference; session close Monday"
+    },
+    {
+      "asset": "30Y Treasury — 5.25%, 5bps from completing the stagflation framework",
+      "thesis": "The 30Y at 5.25% is 5bps from the 5.30% trigger. Bloomberg (Aug 23) flags 'US long bonds risk deeper selloff without clear Warsh guidance' — framing Warsh's Friday Jackson Hole keynote as the rate market's primary binary for the week. Treasury's doubling of buyback operations (max per operation $2B → $4B, targeting 10-to-20Y and 20-to-30Y maturities) provided temporary relief but has not durably closed the gap to 5.30%. A Brent push back above $94 on Monday's Bessent press conference alongside a hawkish Warsh reorientation Friday would complete the stagflation framework for the first time.",
+      "entry": "30Y ~5.25% heading into Monday. Bessent Monday and Warsh Friday are the week's two rate catalysts. September hike odds at ~1-in-3.",
+      "invalidation": "Warsh strikes neutral-to-dovish tone at Jackson Hole (confirms pause, no September hike language); 30Y falls below 5.10%. Brent pulls back below $91 on diplomatic progress.",
+      "horizon": "Monday bond open through Jackson Hole Friday Aug 28"
+    },
+    {
+      "asset": "NVDA — 3 sessions to Wednesday AH print",
+      "thesis": "Q2 FY2027 print Wednesday AH is the week's largest single-stock event. Management guided $91B ±2% revenue with gross margin ~75%. NVDA at ~$214.72 Sunday (down from Friday's $216.85 close) enters the week with a slight headwind. Flash PMI services 56.8 (Friday, 20-month high) remains the strongest enterprise AI demand proxy. AMD at sub-$484 containment is the pre-print sector sentiment gauge: two AMD closes above $484 before Wednesday signal a sector reset independent of macro. 30Y at 5.25% and Brent at $93.45 both near their triggers — macro overhang compresses the multiple ceiling on any NVDA beat.",
+      "entry": "NVDA ~$214.72 Sunday. Watch Monday and Tuesday AMD action for the pre-print sector signal.",
+      "invalidation": "AMD closes above $484 both Monday and Tuesday. NVDA gross margin above prior floor AND data-center guide above consensus on Aug 26 revalue the sector independent of macro. Brent spike above $97 creates competing demand headwind.",
+      "horizon": "Monday–Wednesday pre-print; Aug 26 AH"
+    }
+  ],
+  "bear_case": "Brent's Sunday retreat from $94.20 to $93.45 is thin weekend liquidity moving away from the trigger, not a de-escalation signal — the formal $94 breach can re-open in Monday's session if Bessent's press conference delivers a comprehensive secondary-sanctions framework restricting China's and India's purchases of Iranian oil. The 30Y at 5.25% sits 5bps from completing the stagflation two-indicator framework for the first time, and Bloomberg is explicitly flagging 'deeper selloff' risk without clear Warsh guidance. The S&P's two consecutive weekly losses (−1.4%, −2.0%) driven by bond volatility — not earnings misses — reflect a market already repricing the rate path before Warsh has spoken. Three binary events across five sessions (Bessent Mon → NVDA Wed AH → Warsh Fri) with realistic adverse scenarios for each: Bessent framework expands secondary-sanctions enforcement comprehensively → Brent re-breaches $94; NVDA gross margin misses or guide is in-line with consensus → chip sector re-rates lower; Warsh signals hawkish framework reorientation → 30Y clears 5.30% and the stagflation configuration locks in. Any two of three disappointing in tandem establishes the cascade. BTC's failure to close above $80K through Sunday — fading from Friday's $79,525 intraday high to a $75,551 Sunday low — removes the crypto momentum catalyst from the bull thesis. The level that flips this read: Brent durably below $91 AND 30Y below 5.10% simultaneously after Monday's close.",
+  "body_mdx": "data/briefings/markets/2026-08-23-night.mdx"
+}
