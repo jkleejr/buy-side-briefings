@@ -174,10 +174,7 @@ export default function TickerSearch() {
   }
 
   return (
-    <Panel
-      code="ADD"
-      title="Search & add a ticker"
-    >
+    <Panel title="Search & add a ticker">
       <div className="space-y-2 p-2 font-mono">
         {/* search box */}
         <div className="relative">

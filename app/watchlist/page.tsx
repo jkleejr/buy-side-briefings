@@ -122,7 +122,7 @@ export default async function WatchlistPage() {
       <TickerSearch />
 
       {entries.length > 0 && (
-        <Panel code="LEVELS" title="Support & resistance">
+        <Panel title="Support & resistance levels">
           <div className="p-2">
             <p className="pb-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
               Daily candles with the levels the price keeps turning at. A level is
@@ -162,10 +162,7 @@ export default async function WatchlistPage() {
       )}
 
       {suggestionCategories.length > 0 && (
-        <Panel
-          code="ADD?"
-          title="Suggested additions"
-        >
+        <Panel title="Suggested additions">
           <div className="divide-y divide-[var(--border)]">
             {suggestionCategories.map((cat) => (
               <div key={cat.category} className="p-3">
