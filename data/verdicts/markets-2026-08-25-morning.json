@@ -2,65 +2,97 @@
   "routine": "markets",
   "date": "2026-08-25",
   "window": "morning",
-  "generated_at": "2026-08-25T10:30:00Z",
+  "generated_at": "2026-08-25T11:30:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Chip sector enters the print session; last pre-NVDA read; Bessent watch active",
-    "label": "NVDA premarket steady at $215; AMD Tuesday close is the real-time signal; Bessent institution announcement still pending",
-    "rationale_short": "NVDA premarket at $215.54 (+0.38%) signals the acute pre-print de-risking has exhausted — the $210 Monday session low was the floor, not the start of a momentum extension. The bar remains the highest of this AI cycle: a sustained post-earnings rally requires gross margin materially above 74.9% AND Q3 data-center guide above the sell-side's ~$39B high simultaneously. Two live variables determine the macro backdrop for Wednesday's open: AMD's Tuesday close vs. $470 and Bessent's pending 'major financial institution' sanction, which could reprice Brent above $94 before NVDA opens. The read changes if AMD closes above $470 on volume (de-risk exhausted) or the Bessent announcement targets a Chinese crude buyer (Brent above $94, regime trigger reactivated).",
+    "headline": "Iran sanctions land milder than feared as Brent retreats ahead of Nvidia's print tomorrow",
+    "label": "Brent $92.16 after 'Operation Economic Outcast'; 30Y 5.236%; S&P futures +0.12%; NVDA T-1 to Wednesday AH",
+    "rationale_short": "The session's dominant macro risk — that Bessent's Iran press conference would push Brent above $94 and re-activate the regime trigger before NVDA's print — has resolved in the market's favor. 'Operation Economic Outcast' targeted ~60 Iranian entities with secondary sanctions on aviation, digital assets, gold, shipping, and technology, but stopped short of the blanket dollar-system exclusion oil traders had feared. Brent dropped to $92.16 from Monday's $93.16, now $1.84 below the $94 threshold. The 30Y also retreated to 5.236%, 6bps from the 5.30% trigger. Both regime indicators are moving away from thresholds entering NVDA's Wednesday AH print. Consumer Confidence (August) and Case-Shiller Home Price Index (June) at 10 AM ET are the session's remaining macro disruptors. The read changes if: (1) consumer confidence collapses below 85, signaling tariff-season household deterioration 22 days before the September FOMC; (2) AMD closes below $450 today — demand-skeptical chip-sector confirmation the session before the highest-bar print of the AI cycle; or (3) Warsh drops hawkish language from Jackson Hole before Friday that reverses the 30Y rally.",
     "supporting_data": [
-      { "label": "NVDA premarket $215.54, +0.38%; reports Q2 FY27 Wednesday AH; consensus $92B revenue, $2.09 EPS — Benzinga", "url": "https://www.benzinga.com/trading-ideas/previews/26/08/61388955/nvidia-earnings-preview-stock-has-dropped-after-5-of-last-6-reports-and-a-simple-beat-may-not-be-enough" },
-      { "label": "NVDA has fallen after 5 of last 6 reports; 'a simple beat may not be enough' — Benzinga earnings preview", "url": "https://www.benzinga.com/trading-ideas/previews/26/08/61388955/nvidia-earnings-preview-stock-has-dropped-after-5-of-last-6-reports-and-a-simple-beat-may-not-be-enough" },
-      { "label": "Bessent expects 'major financial institution' sanction by week's end; Chinese banks warned — NBC News", "url": "https://www.nbcnews.com/business/economy/bessent-iran-sanctions-d-day-rcna594103" },
-      { "label": "September hike odds 30.6%; Warsh Jackson Hole keynote Aug 28, 10 a.m. ET — Benzinga", "url": "https://www.benzinga.com/markets/macro-economic-events/26/08/61373140/kevin-warsh-heads-to-jackson-hole-what-markets-are-bracing-for" },
-      { "label": "AMD $454 entering Tuesday; 8 sessions below $484; chip-sector selloff at 2x broad-tech rate Monday — 24/7 Wall St.", "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/" },
-      { "label": "Brent $93.16 Monday close; $94 regime trigger deactivated; 30Y ~5.24%, 6bps from 5.30% — CNBC", "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html" }
+      { "label": "Brent $92.16, -1.1%; Operation Economic Outcast targets 60 Iranian entities across 5 sectors; oil markets price outcome as less severe than feared — Yahoo Finance", "url": "https://finance.yahoo.com/energy/articles/oil-prices-steady-investors-weigh-011547751.html" },
+      { "label": "S&P 500 futures +0.12%, Nasdaq futures +0.37%, QQQ premarket +0.69%; stocks advance as Iran sanctions seen as manageable — Benzinga", "url": "https://www.benzinga.com/markets/equities/26/08/61401802/stock-market-today-dow-jones-sp-500-futures-advance-as-scott-bessent-expands-sanctions-on-iran-navitas-semiconductor-gorilla-technology-real-brokerage-in-focus" },
+      { "label": "30Y Treasury 5.236%, -4bps from Monday; 6bps from 5.30% regime trigger; Warsh Jackson Hole keynote Aug 28 10 AM ET — CNBC", "url": "https://www.cnbc.com/amp/2026/08/24/treasury-yields-warsh-jackson-hole.html" },
+      { "label": "NVDA premarket ~$215-$217, T-1 to Wednesday AH Q2 FY27 print; consensus $92B revenue, $2.09 EPS, 74.9% GAAP GM; dual bar: GM above 74.9% AND Q3 DC guide above ~$39B simultaneously — Intellectia", "url": "https://intellectia.ai/blog/nvda-earnings-august-2026" },
+      { "label": "Consumer Confidence (Aug) and Case-Shiller Home Price Index (June) due 10 AM ET Tuesday — session's key macro disruptors — Investing.com", "url": "https://investing.com/news/stock-market-news/consumer-confidence-and-housing-data-take-center-stage-tuesday-93CH-3587524" },
+      { "label": "BTC $79,326 (+2.28%); session range $77,442–$81,271; $80K ceiling tested intraday; digital-asset secondary sanctions in Operation Economic Outcast had no negative BTC effect — Crypto.com live", "url": "https://crypto.com/exchange/trade/BTC_USDT" }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7652.86,  "change_pct": -0.28, "as_of": "2026-08-24T21:00:00Z" },
-    "nasdaq": { "level": 25980.19, "change_pct": -0.76, "as_of": "2026-08-24T21:00:00Z" },
-    "vix":    { "level": 15.13,    "change_pct": -5.49, "as_of": "2026-08-24T21:00:00Z" },
-    "ust10y": { "level": 4.71,     "change_bps": 0,     "as_of": "2026-08-24T21:00:00Z" },
-    "dxy":    { "level": 98.99,    "change_pct": 0.19,  "as_of": "2026-08-24T21:00:00Z" }
+    "sp500":  { "level": 7662.0,  "change_pct":  0.12, "as_of": "2026-08-25T11:00:00Z" },
+    "nasdaq": { "level": 26077.0, "change_pct":  0.37, "as_of": "2026-08-25T11:00:00Z" },
+    "vix":    { "level": 15.85,   "change_pct":  4.76, "as_of": "2026-08-25T11:00:00Z" },
+    "ust10y": { "level": 4.71,    "change_bps":  0,    "as_of": "2026-08-25T11:00:00Z" },
+    "dxy":    { "level": 99.01,   "change_pct":  0.01, "as_of": "2026-08-25T11:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield", "value": 5.24, "trigger_above": 5.30, "unit": "%" },
-    { "name": "Brent",     "value": 93.16, "trigger_above": 94.00, "unit": "USD/bbl" }
+    { "name": "30Y Yield", "value": 5.236, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 92.16, "trigger_above": 94.00, "unit": "USD/bbl" }
   ],
   "watchlist_mentions": [
-    { "ticker": "NVDA", "note": "Premarket $215.54, +0.38% from Monday's ~$210 close. Q2 FY27 prints Wednesday AH — the last session before the most watched chip print of the year. Consensus $92B revenue, $2.09 EPS. Dual bar for sustained rally: gross margin materially above 74.9% AND Q3 data-center guide materially above ~$39B sell-side high — both simultaneously. NVDA has fallen after 5 of the last 6 reports. Below $200 before the print without a macro catalyst shifts the read to demand-skeptical.", "sentiment": "neutral" },
-    { "ticker": "AMD", "note": "$454.36 Monday close. Ninth consecutive session below $484 containment entering Tuesday. Tuesday's close is the chip sector's pre-print verdict: above $470 on volume indicates de-risking exhaustion; below $450 is demand-skeptical negative confirmation; $430 is the next structural floor. BABA AI cloud demand (+45% for 12 consecutive quarters) argues the fundamentals are intact — the price action reflects multiple exhaustion, not a demand signal.", "sentiment": "negative" },
-    { "ticker": "AVGO", "note": "Below $380 structural support — broke through Monday's chip-sector selloff (Intel -5%, AMD -4%) on top of VMware CVE-2026-59310 active exploitation and 72% AI revenue concentration dual overhang. Q3 FY2026 results (est. Sept 4-5) are the first public accounting of VMware remediation costs. $340-$350 is the next structural support zone.", "sentiment": "negative" },
-    { "ticker": "BTC", "note": "~$78,872 premarket Tuesday — slight overnight drift from $78,989 Monday close. $80K ceiling confirmed on first contact Monday (intraday high $80,012, rejected). The next session's open above $80K on volume would signal ceiling weakness; a reversal below $76,661 (Monday intraday low) without a macro catalyst would signal rejection momentum. Bessent's OFAC digital-asset targeting had no near-term negative effect; medium-term institutional flow effects remain an open variable.", "sentiment": "neutral" },
-    { "ticker": "META", "note": "~$559, +1.7% Monday. 30Y at 5.24% maintains multiple compression. Antitrust trial ongoing (Day 12 of 7 weeks). Bessent's pending institution announcement adds unquantified secondary overhang; no direct META exposure confirmed.", "sentiment": "neutral" },
-    { "ticker": "MSFT", "note": "$487.31, +0.8% Monday. Azure $100B run-rate intact. Value rotation beneficiary Monday. Canada tariff cost-push headwind unchanged.", "sentiment": "positive" },
-    { "ticker": "AAPL", "note": "$310.34, +0.3% Monday. Below $315 structural buyer-defense level. Tim Cook transition and Q4 FY26 guidance miss overhang unchanged; no new catalyst.", "sentiment": "neutral" },
-    { "ticker": "PLTR", "note": "~$177. Federal AI budget cycle the near-term variable; no new catalyst this session.", "sentiment": "neutral" }
+    {
+      "ticker": "NVDA",
+      "note": "~$215–$217 premarket Tuesday, T-1 to the most watched chip print of the AI cycle. Wednesday AH consensus: $92B revenue vs. $91.0B guidance midpoint, $2.09 EPS, 74.9% GAAP GM. The dual bar for a sustained post-earnings rally: gross margin materially above 74.9% AND Q3 data-center guide materially above the sell-side's ~$39B high — both simultaneously. NVDA has fallen after 5 of the last 6 reports regardless of beat magnitude. Macro backdrop has improved (Brent retreating, 30Y at 5.236%) but does not change the earnings execution requirement.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$455–$467 premarket Tuesday. Tenth consecutive session below $484 containment ceiling entering Tuesday's close. Today's AMD close is the chip sector's final leading indicator before NVDA prints: above $470 on volume = de-risk exhaustion; below $450 = demand-skeptical negative confirmation. Base case remains that BABA AI cloud demand (+45%, 12 consecutive quarters) argues intact enterprise AI fundamentals — AMD's containment failure reflects multiple exhaustion, not demand deterioration. $430 is next structural floor.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$79,326 (+2.28%) as of 11:02 UTC Tuesday. Session range $77,442–$81,271. Tested the $80K ceiling intraday (high $81,271) and pulled back — ceiling remains the signal level. Bessent's Operation Economic Outcast included secondary sanctions on Iranian digital-asset sectors; no negative BTC effect observed, consistent with prior read that OFAC digital-asset targeting has no near-term BTC price impact. Two consecutive closes above $80K would signal ceiling weakness.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Below $380 structural support. VMware CVE-2026-59310 active exploitation and 72% AI revenue concentration dual overhang unchanged. Q3 FY2026 results estimated Sept 4-5 — the first public accounting of VMware remediation costs. $340–$350 is next structural support zone.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "~$559. Antitrust trial ongoing (approx. Day 13 of 7-week trial). 30Y at 5.236% maintains multiple compression on long-duration growth names. No new fundamental catalyst.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$487.31, +0.8% Monday. Azure $100B annual run-rate intact. Value-rotation beneficiary Monday. Canada tariff cost-push headwind unchanged.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "$310.34, +0.3% Monday. Below $315 structural buyer-defense level. Tim Cook transition and Q4 FY26 guidance miss overhang unchanged. No new catalyst.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$177. Federal AI budget cycle the near-term variable; no new fundamental data this week.",
+      "sentiment": "neutral"
+    }
   ],
   "trade_setups": [
     {
-      "asset": "AMD ($454.36) — Tuesday close as pre-print sector read",
-      "thesis": "Eight sessions below $484 containment, AMD enters Tuesday as the chip sector's real-time pre-print signal. Monday confirmed the two-session recovery scenario (consecutive closes above $484) is closed before NVDA prints. The question Tuesday's close answers: is the sector selloff multiple-exhaustion or demand-skeptical? BABA AI cloud demand (+45%, 12 consecutive quarters) and AMD's own Q2 results (revenue +50%, data-center +107%) argue the fundamentals are intact — the price action reflects positioning.",
-      "entry": "AMD above $470 on above-average Tuesday volume signals de-risk exhaustion; below $450 before Wednesday shifts the pre-print read to demand-skeptical. $430 is the next structural support if the selloff extends.",
-      "invalidation": "NVDA Wednesday AH gross margin above 78% AND Q3 DC guide above ~$39B — AMD likely recovers above $484 on the session regardless of Tuesday's close.",
-      "horizon": "1 session (Tuesday close), then NVDA Wednesday AH print resolves the sector"
+      "asset": "Brent ($92.16) — Operation Economic Outcast resolved softer than feared; monitoring re-escalation",
+      "thesis": "The morning's dominant macro risk — that Bessent's Iran press conference would push Brent above $94 and re-activate the regime trigger before NVDA's print — resolved in the market's favor. 'Operation Economic Outcast' was comprehensive in scope (~60 entities, 5 Iranian sectors) but stopped short of the blanket dollar-exclusion threat oil markets had priced. Brent dropped to $92.16, now $1.84 below the regime trigger. The regime trigger requires Brent above $94 AND 30Y above 5.30% simultaneously — both are retreating. The risk is re-escalation: Tehran has telegraphed Hormuz ship seizure threats, and a confirmed seizure would be a step-change escalation Brent hasn't priced.",
+      "entry": "$94 close remains the regime re-trigger level. A reversal above $93.50 today on new Bessent follow-on language or a confirmed Hormuz seizure would narrow the gap materially. Current trajectory argues the worst-case scenario has been priced out for this week.",
+      "invalidation": "Brent closes above $94 — regime trigger reactivated before NVDA's print. Or: Iran executes Hormuz vessel seizure; Brent could gap above $95.",
+      "horizon": "1 session (today's close); NVDA Wednesday AH print then resets the risk framework"
     },
     {
-      "asset": "NVDA (~$215) entering the highest-bar print of the AI cycle",
-      "thesis": "Consensus at $92B revenue and $2.09 EPS sits materially above NVDA's $91.0B guidance midpoint. At ~22x forward revenue, the multiple compresses only on a simultaneous beat-and-raise where gross margin prints above 78% AND the Q3 data-center guide explicitly exceeds the most aggressive sell-side estimate. In-line on either replicates the CSCO and AMAT altitude-ceiling conditions — both beat, both sold off. NVDA has fallen after 5 of the last 6 reports; the premarket recovery to $215.54 suggests cautious constructiveness, not capitulation.",
-      "entry": "Gross margin above 78% AND Q3 DC guide above ~$39B simultaneously defines the constructive resolution. Below $200 before the print without a macro catalyst is demand-skeptical positioning.",
-      "invalidation": "Gross margin materially above 78% AND Q3 FY2027 guide above $97B simultaneously. 30Y retreats below 5.10% on Warsh dovish pivot before Friday.",
+      "asset": "NVDA (~$215–$217) — T-1 holding pattern; macro improved but bar unchanged",
+      "thesis": "NVDA enters T-1 with a better macro backdrop than Monday (Brent at $92.16 vs. $93.16, 30Y at 5.236% vs. 5.28% Friday) but faces the identical execution bar: consensus at $92B revenue and $2.09 EPS sits only 0.9% above the company's $91.0B guidance midpoint. The multiple (~22x forward revenue) compresses unless gross margin AND Q3 data-center guide simultaneously exceed the highest sell-side estimates. Today's session is a holding pattern — AMD's close and Consumer Confidence at 10 AM are the session's reads. The print tomorrow defines the setup.",
+      "entry": "Below $210 before the print without a macro catalyst = demand-skeptical positioning, not a trading entry. Constructive resolution requires GM above 78% AND Q3 DC guide above ~$39B simultaneously on Wednesday.",
+      "invalidation": "NVDA breaks below $210 intraday on no news — pre-print positioning unwinding. Or: Consumer Confidence collapse below 85 at 10 AM creates a macro-negative backdrop that compresses the multiple before the print.",
       "horizon": "24 hours (Wednesday AH print)"
     },
     {
-      "asset": "30Y Treasury (~5.24%) entering Jackson Hole with Bessent tail live",
-      "thesis": "The 30Y held at ~5.24% overnight — 6bps from the 5.30% formal trigger. Two inflation vectors give Warsh material for a higher-for-longer framing Friday: Canada retaliatory tariffs (Sept 8) and ongoing Iran sanctions pressure. Bessent's pending institution announcement could move Brent above $94 before Warsh speaks, completing the two-indicator configuration with the FOMC 22 days away.",
-      "entry": "30Y above 5.30% = both regime indicators potentially active. 30Y below 5.20% = rate risk materially reduced for September FOMC. September hike odds currently 30.6%.",
-      "invalidation": "Warsh strikes neutral-to-dovish tone at Jackson Hole; 30Y falls below 5.10%. Brent durably below $91 on Iran diplomatic progress.",
-      "horizon": "4 sessions (Warsh keynote Aug 28)"
+      "asset": "Consumer Confidence (Aug) + Case-Shiller (June) at 10 AM ET — session's only remaining macro disruptor",
+      "thesis": "The July reading already fell to 90.8 (from 92.2 in June, missing expectations). The August reading arrives 22 days before the September 16 FOMC with US-Canada 50% tariffs live (effective Monday) and Canada retaliatory tariffs hitting dairy, appliances, and electronics September 8. A second consecutive miss — especially below 88 — would be the first data signal that US households are absorbing tariff-season cost-push faster than the soft-landing consensus expects. September FOMC hike odds currently at 30.6%; a consumer confidence collapse and Warsh-hawkish Jackson Hole keynote Friday is the path above 40%.",
+      "entry": "Consumer Confidence below 85 = soft-landing crack signal; watch 30Y response — if 30Y re-crosses 5.26% on the print, the Warsh Friday keynote becomes the regime-watch event. Above 93 = consumer resilient; 30Y stays in 5.20–5.30% range and NVDA heads into Wednesday with a clean macro backdrop.",
+      "invalidation": "Warsh makes market-moving comments at Jackson Hole before Friday's keynote (impromptu interview, panel remarks) that overshadow the data releases.",
+      "horizon": "10 AM ET release; September 16 FOMC is the medium-term context"
     }
   ],
-  "bear_case": "The chip sector delivered a coordinated vote of no-confidence Monday — NVDA -2.9%, AMD -4%, Intel -5%, TSMC -3%, MU -5.8%, at 2x the broad-tech selloff rate — and NVDA has now fallen after 5 of the last 6 reports regardless of the beat magnitude. A print at or near consensus without a material guide beat is the most likely path to a continued chip-sector drawdown pulling Nasdaq toward 25,500-25,700. The unquantified tail: Bessent's pending 'major institution' announcement, if targeting a Chinese crude buyer, hands NVDA the worst possible macro backdrop — Brent above $94 with 30Y at 5.24% and 6bps from the trigger, and a Warsh keynote in 3 days that could extend higher-for-longer framing. The level that flips this: NVDA Wednesday AH gross margin above 78% AND Q3 DC guide above $39B simultaneously; or Warsh strikes unambiguously dovish and 30Y falls below 5.10%.",
+  "bear_case": "The morning's constructive read rests on two regime indicators simultaneously retreating — both can reverse. The operative bear sequence for the next 48 hours: Consumer Confidence at 10 AM ET collapses to or below 85, the first genuine signal that US consumers are absorbing the Canada 50% tariff cost-push ahead of Canada's September 8 retaliatory salvo. That reading arrives 22 days before the September FOMC and would push September hike odds from 30.6% toward 40%+, giving Warsh's Jackson Hole keynote Friday a hawkish backdrop that sends the 30Y through 5.30%. Simultaneously: AMD closes below $450 today — confirming demand-skeptical chip positioning after 10 consecutive sessions below $484 — entering NVDA's print without the leading indicator. Tomorrow, NVDA meets consensus ($92B revenue) without simultaneously exceeding both gross margin (above 78%) and Q3 DC guide (above ~$39B) thresholds — the most likely outcome given NVDA has fallen after 5 of the last 6 reports on beats of comparable magnitude. The resulting chip-sector selloff (-3-5% NVDA, AMD back toward $430) in a backdrop where the September FOMC just went 'live' and Warsh has yet to give Friday's keynote defines the maximum adverse entry point for the September FOMC window. Add an Iran re-escalation (Hormuz seizure, Brent back above $94) and the setup becomes the triple-overlay worst case: energy inflation re-ignites, long-end rates surge, and the highest-bar AI print of the cycle disappoints.",
   "body_mdx": "data/briefings/markets/2026-08-25-morning.mdx"
 }
