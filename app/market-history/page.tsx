@@ -40,23 +40,18 @@ export default function MarketHistoryPage() {
       </header>
 
       {meta.summary && (
-        <Panel code="TL;DR" title="The short version">
+        <Panel title="The short version">
           <p className="p-2 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
             {meta.summary}
           </p>
         </Panel>
       )}
 
-      <Panel code="HIST" title="What History Says">
+      <Panel title="What History Says">
         <article className="px-3 py-2">
           <ProseMarkdown>{body}</ProseMarkdown>
         </article>
       </Panel>
-
-      <p className="px-1 pt-2 font-mono text-[10px] leading-snug text-[var(--dim)]">
-        This is a standing research report, not a dated call — it&apos;s revised as the picture
-        changes.
-      </p>
     </div>
   );
 }
