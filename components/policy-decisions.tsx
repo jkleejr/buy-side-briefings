@@ -113,13 +113,6 @@ export default function PolicyDecisions({
           </tbody>
         </table>
       </div>
-      <p className="border-t border-[var(--border)] px-2 py-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
-        Amber ≤7d · cyan ≤30d · grey for a decision already past. FOMC dates
-        from federalreserve.gov, BoJ from boj.or.jp — both published well ahead
-        and rarely moved. Decisions from the last 45 days stay listed. The Fed
-        announces at 2:00 PM ET; the BoJ lands overnight ET, so you wake up to
-        it.
-      </p>
     </Panel>
   );
 }

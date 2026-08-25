@@ -87,8 +87,7 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
         })}
       </div>
       <p className="mt-2 border-t border-[var(--border)] pt-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
-        ● confirmed date · ○ estimated · amber ≤7d · cyan ≤30d. Names reporting
-        beyond +90d are listed in the table below.
+        ● confirmed date · ○ estimated
       </p>
     </div>
   );

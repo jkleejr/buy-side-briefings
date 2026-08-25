@@ -144,17 +144,6 @@ export default async function WatchlistPage() {
         </Panel>
       )}
 
-      <Panel code="HOW" title="How this list is built">
-        <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
-          Edit{" "}
-          <code className="text-[var(--amber)]">data/watchlist.json</code> in the repo to
-          add or remove names. Pick a timeframe to refresh every card&apos;s candles.
-          Hover any chart for the day · date · time · OHLC popup. The latest briefing
-          that mentioned the ticker (in either Watchlist Mentions or Don&apos;t Buy) is
-          linked at the bottom of each card.
-        </p>
-      </Panel>
-
       {entries.length === 0 ? (
         <Panel code="EMPTY" title="No tickers configured">
           <div className="p-4 text-center font-mono text-[11px] text-[var(--dim)]">
@@ -226,15 +215,6 @@ export default async function WatchlistPage() {
                 </table>
               </div>
             ))}
-            <div className="border-t border-[var(--border)] bg-[var(--panel-head)] p-3 font-mono text-[10px] leading-snug text-[var(--dim)]">
-              <span className="text-[var(--amber-dim)]">To add ▸</span> open{" "}
-              <code className="text-[var(--amber)]">data/watchlist.json</code>, append an
-              entry like{" "}
-              <code className="text-[var(--amber)]">
-                {`{ "symbol": "MU", "label": "Micron Technology" }`}
-              </code>
-              , commit + push. The watchlist re-renders within ~2 minutes.
-            </div>
           </div>
         </Panel>
       )}

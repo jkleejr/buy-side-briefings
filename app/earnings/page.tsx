@@ -75,15 +75,6 @@ export default async function EarningsPage() {
       <PolicyDecisions events={policy} today={today} />
 
       <EarningsSchedule schedule={schedule} />
-
-      <p className="px-1 pt-2 font-mono text-[10px] leading-snug text-[var(--dim)]">
-        Dates and consensus via Yahoo Finance, refreshed hourly. Drawn from your{" "}
-        <a href="/watchlist" className="text-[var(--cyan-term)] hover:underline">
-          watchlist
-        </a>{" "}
-        — add a ticker there and it appears here automatically. Estimated dates
-        (○) can shift; confirmed dates (●) are company-announced.
-      </p>
     </div>
   );
 }
