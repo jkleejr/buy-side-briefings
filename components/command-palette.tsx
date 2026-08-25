@@ -18,11 +18,11 @@ const DESTINATIONS: Destination[] = [
   { href: "/", code: "HOME", label: "Home", go: "h" },
   { href: "/briefings", code: "BRIEF", label: "Briefings archive", go: "r" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist", go: "w" },
-  { href: "/earnings", code: "CAL", label: "Calendar — upcoming events for the names you track", go: "c" },
+  { href: "/earnings", code: "CAL", label: "Calendar — upcoming events", go: "c" },
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
-  { href: "/market-history", code: "HIST", label: "Market History — what past booms & crashes say about AI", go: "m" },
+  { href: "/market-history", code: "HIST", label: "Market History — past booms & crashes", go: "m" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 

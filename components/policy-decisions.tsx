@@ -67,7 +67,7 @@ export default function PolicyDecisions({
 }) {
   if (events.length === 0) {
     return (
-      <Panel code="POLICY" title="Central bank decisions">
+      <Panel title="Central bank decisions">
         <p className="p-4 text-center font-mono text-[11px] text-[var(--dim)]">
           No scheduled decisions on file.
         </p>
@@ -76,7 +76,7 @@ export default function PolicyDecisions({
   }
 
   return (
-    <Panel code="POLICY" title="Central bank decisions — Fed and Bank of Japan">
+    <Panel title="Central bank decisions">
       <div className="overflow-x-auto">
         <table className="w-full border-collapse font-mono text-[11px]">
           <thead>

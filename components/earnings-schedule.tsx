@@ -151,7 +151,7 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
 
   if (entries.length === 0) {
     return (
-      <Panel code="EARN" title="Upcoming earnings">
+      <Panel title="Upcoming earnings">
         <p className="p-4 text-center font-mono text-[11px] text-[var(--dim)]">
           No upcoming earnings dates available right now.
         </p>
@@ -161,11 +161,11 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
 
   return (
     <div className="space-y-1">
-      <Panel code="CHART" title="Earnings timeline — next 90 days">
+      <Panel title="Earnings timeline — next 90 days">
         <TimelineChart entries={entries} />
       </Panel>
 
-      <Panel code="SCHED" title="Full schedule — every name you track">
+      <Panel title="Full schedule">
         <ScheduleTable entries={entries} />
       </Panel>
     </div>
