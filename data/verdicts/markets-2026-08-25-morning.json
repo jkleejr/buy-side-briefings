@@ -1,0 +1,66 @@
+{
+  "routine": "markets",
+  "date": "2026-08-25",
+  "window": "morning",
+  "generated_at": "2026-08-25T10:30:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip sector enters the print session; last pre-NVDA read; Bessent watch active",
+    "label": "NVDA premarket steady at $215; AMD Tuesday close is the real-time signal; Bessent institution announcement still pending",
+    "rationale_short": "NVDA premarket at $215.54 (+0.38%) signals the acute pre-print de-risking has exhausted — the $210 Monday session low was the floor, not the start of a momentum extension. The bar remains the highest of this AI cycle: a sustained post-earnings rally requires gross margin materially above 74.9% AND Q3 data-center guide above the sell-side's ~$39B high simultaneously. Two live variables determine the macro backdrop for Wednesday's open: AMD's Tuesday close vs. $470 and Bessent's pending 'major financial institution' sanction, which could reprice Brent above $94 before NVDA opens. The read changes if AMD closes above $470 on volume (de-risk exhausted) or the Bessent announcement targets a Chinese crude buyer (Brent above $94, regime trigger reactivated).",
+    "supporting_data": [
+      { "label": "NVDA premarket $215.54, +0.38%; reports Q2 FY27 Wednesday AH; consensus $92B revenue, $2.09 EPS — Benzinga", "url": "https://www.benzinga.com/trading-ideas/previews/26/08/61388955/nvidia-earnings-preview-stock-has-dropped-after-5-of-last-6-reports-and-a-simple-beat-may-not-be-enough" },
+      { "label": "NVDA has fallen after 5 of last 6 reports; 'a simple beat may not be enough' — Benzinga earnings preview", "url": "https://www.benzinga.com/trading-ideas/previews/26/08/61388955/nvidia-earnings-preview-stock-has-dropped-after-5-of-last-6-reports-and-a-simple-beat-may-not-be-enough" },
+      { "label": "Bessent expects 'major financial institution' sanction by week's end; Chinese banks warned — NBC News", "url": "https://www.nbcnews.com/business/economy/bessent-iran-sanctions-d-day-rcna594103" },
+      { "label": "September hike odds 30.6%; Warsh Jackson Hole keynote Aug 28, 10 a.m. ET — Benzinga", "url": "https://www.benzinga.com/markets/macro-economic-events/26/08/61373140/kevin-warsh-heads-to-jackson-hole-what-markets-are-bracing-for" },
+      { "label": "AMD $454 entering Tuesday; 8 sessions below $484; chip-sector selloff at 2x broad-tech rate Monday — 24/7 Wall St.", "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/" },
+      { "label": "Brent $93.16 Monday close; $94 regime trigger deactivated; 30Y ~5.24%, 6bps from 5.30% — CNBC", "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7652.86,  "change_pct": -0.28, "as_of": "2026-08-24T21:00:00Z" },
+    "nasdaq": { "level": 25980.19, "change_pct": -0.76, "as_of": "2026-08-24T21:00:00Z" },
+    "vix":    { "level": 15.13,    "change_pct": -5.49, "as_of": "2026-08-24T21:00:00Z" },
+    "ust10y": { "level": 4.71,     "change_bps": 0,     "as_of": "2026-08-24T21:00:00Z" },
+    "dxy":    { "level": 98.99,    "change_pct": 0.19,  "as_of": "2026-08-24T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.24, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 93.16, "trigger_above": 94.00, "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Premarket $215.54, +0.38% from Monday's ~$210 close. Q2 FY27 prints Wednesday AH — the last session before the most watched chip print of the year. Consensus $92B revenue, $2.09 EPS. Dual bar for sustained rally: gross margin materially above 74.9% AND Q3 data-center guide materially above ~$39B sell-side high — both simultaneously. NVDA has fallen after 5 of the last 6 reports. Below $200 before the print without a macro catalyst shifts the read to demand-skeptical.", "sentiment": "neutral" },
+    { "ticker": "AMD", "note": "$454.36 Monday close. Ninth consecutive session below $484 containment entering Tuesday. Tuesday's close is the chip sector's pre-print verdict: above $470 on volume indicates de-risking exhaustion; below $450 is demand-skeptical negative confirmation; $430 is the next structural floor. BABA AI cloud demand (+45% for 12 consecutive quarters) argues the fundamentals are intact — the price action reflects multiple exhaustion, not a demand signal.", "sentiment": "negative" },
+    { "ticker": "AVGO", "note": "Below $380 structural support — broke through Monday's chip-sector selloff (Intel -5%, AMD -4%) on top of VMware CVE-2026-59310 active exploitation and 72% AI revenue concentration dual overhang. Q3 FY2026 results (est. Sept 4-5) are the first public accounting of VMware remediation costs. $340-$350 is the next structural support zone.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "~$78,872 premarket Tuesday — slight overnight drift from $78,989 Monday close. $80K ceiling confirmed on first contact Monday (intraday high $80,012, rejected). The next session's open above $80K on volume would signal ceiling weakness; a reversal below $76,661 (Monday intraday low) without a macro catalyst would signal rejection momentum. Bessent's OFAC digital-asset targeting had no near-term negative effect; medium-term institutional flow effects remain an open variable.", "sentiment": "neutral" },
+    { "ticker": "META", "note": "~$559, +1.7% Monday. 30Y at 5.24% maintains multiple compression. Antitrust trial ongoing (Day 12 of 7 weeks). Bessent's pending institution announcement adds unquantified secondary overhang; no direct META exposure confirmed.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "$487.31, +0.8% Monday. Azure $100B run-rate intact. Value rotation beneficiary Monday. Canada tariff cost-push headwind unchanged.", "sentiment": "positive" },
+    { "ticker": "AAPL", "note": "$310.34, +0.3% Monday. Below $315 structural buyer-defense level. Tim Cook transition and Q4 FY26 guidance miss overhang unchanged; no new catalyst.", "sentiment": "neutral" },
+    { "ticker": "PLTR", "note": "~$177. Federal AI budget cycle the near-term variable; no new catalyst this session.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AMD ($454.36) — Tuesday close as pre-print sector read",
+      "thesis": "Eight sessions below $484 containment, AMD enters Tuesday as the chip sector's real-time pre-print signal. Monday confirmed the two-session recovery scenario (consecutive closes above $484) is closed before NVDA prints. The question Tuesday's close answers: is the sector selloff multiple-exhaustion or demand-skeptical? BABA AI cloud demand (+45%, 12 consecutive quarters) and AMD's own Q2 results (revenue +50%, data-center +107%) argue the fundamentals are intact — the price action reflects positioning.",
+      "entry": "AMD above $470 on above-average Tuesday volume signals de-risk exhaustion; below $450 before Wednesday shifts the pre-print read to demand-skeptical. $430 is the next structural support if the selloff extends.",
+      "invalidation": "NVDA Wednesday AH gross margin above 78% AND Q3 DC guide above ~$39B — AMD likely recovers above $484 on the session regardless of Tuesday's close.",
+      "horizon": "1 session (Tuesday close), then NVDA Wednesday AH print resolves the sector"
+    },
+    {
+      "asset": "NVDA (~$215) entering the highest-bar print of the AI cycle",
+      "thesis": "Consensus at $92B revenue and $2.09 EPS sits materially above NVDA's $91.0B guidance midpoint. At ~22x forward revenue, the multiple compresses only on a simultaneous beat-and-raise where gross margin prints above 78% AND the Q3 data-center guide explicitly exceeds the most aggressive sell-side estimate. In-line on either replicates the CSCO and AMAT altitude-ceiling conditions — both beat, both sold off. NVDA has fallen after 5 of the last 6 reports; the premarket recovery to $215.54 suggests cautious constructiveness, not capitulation.",
+      "entry": "Gross margin above 78% AND Q3 DC guide above ~$39B simultaneously defines the constructive resolution. Below $200 before the print without a macro catalyst is demand-skeptical positioning.",
+      "invalidation": "Gross margin materially above 78% AND Q3 FY2027 guide above $97B simultaneously. 30Y retreats below 5.10% on Warsh dovish pivot before Friday.",
+      "horizon": "24 hours (Wednesday AH print)"
+    },
+    {
+      "asset": "30Y Treasury (~5.24%) entering Jackson Hole with Bessent tail live",
+      "thesis": "The 30Y held at ~5.24% overnight — 6bps from the 5.30% formal trigger. Two inflation vectors give Warsh material for a higher-for-longer framing Friday: Canada retaliatory tariffs (Sept 8) and ongoing Iran sanctions pressure. Bessent's pending institution announcement could move Brent above $94 before Warsh speaks, completing the two-indicator configuration with the FOMC 22 days away.",
+      "entry": "30Y above 5.30% = both regime indicators potentially active. 30Y below 5.20% = rate risk materially reduced for September FOMC. September hike odds currently 30.6%.",
+      "invalidation": "Warsh strikes neutral-to-dovish tone at Jackson Hole; 30Y falls below 5.10%. Brent durably below $91 on Iran diplomatic progress.",
+      "horizon": "4 sessions (Warsh keynote Aug 28)"
+    }
+  ],
+  "bear_case": "The chip sector delivered a coordinated vote of no-confidence Monday — NVDA -2.9%, AMD -4%, Intel -5%, TSMC -3%, MU -5.8%, at 2x the broad-tech selloff rate — and NVDA has now fallen after 5 of the last 6 reports regardless of the beat magnitude. A print at or near consensus without a material guide beat is the most likely path to a continued chip-sector drawdown pulling Nasdaq toward 25,500-25,700. The unquantified tail: Bessent's pending 'major institution' announcement, if targeting a Chinese crude buyer, hands NVDA the worst possible macro backdrop — Brent above $94 with 30Y at 5.24% and 6bps from the trigger, and a Warsh keynote in 3 days that could extend higher-for-longer framing. The level that flips this: NVDA Wednesday AH gross margin above 78% AND Q3 DC guide above $39B simultaneously; or Warsh strikes unambiguously dovish and 30Y falls below 5.10%.",
+  "body_mdx": "data/briefings/markets/2026-08-25-morning.mdx"
+}
