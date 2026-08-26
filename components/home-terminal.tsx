@@ -194,14 +194,17 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
 }
 
 /**
- * Halve the list for the two-column news grid, first half then second, so the
- * eye still travels down column one before column two. An odd count leaves the
+ * Halve a list for the two-column bands, first half then second, so the eye
+ * still travels down column one before column two. An odd count leaves the
  * extra item in column one, which keeps the taller column on the left.
+ *
+ * Splitting in JS rather than leaning on CSS `columns-2` is what lets each
+ * column have a real last-child, so the bottom row of each can drop its rule.
  */
-function splitColumns(points: KeyPoint[]): KeyPoint[][] {
-  if (points.length < 2) return [points];
-  const half = Math.ceil(points.length / 2);
-  return [points.slice(0, half), points.slice(half)];
+function splitColumns<T>(items: T[]): T[][] {
+  if (items.length < 2) return [items];
+  const half = Math.ceil(items.length / 2);
+  return [items.slice(0, half), items.slice(half)];
 }
 
 // The benchmarks the homepage carries: the broad market, the AI bellwether
@@ -254,30 +257,49 @@ function Sectors({ sectors }: { sectors: SectorRow[] }) {
   return (
     <div>
       <SectionRule>Sectors · 1D</SectionRule>
-      {/* Two newspaper columns so eleven rows don't tower over the band. */}
-      <div className="sm:columns-2 sm:gap-12">
-        {sectors.map((s) => {
-          const pct = s.pct ?? 0;
-          const up = pct >= 0;
-          const w = Math.max(2, Math.min(80, (Math.abs(pct) / maxAbs) * 80));
-          return (
-            <div
-              key={s.code}
-              className="grid break-inside-avoid grid-cols-[1fr_88px_64px] items-center gap-2 border-b border-[var(--border)] py-2"
-            >
-              <span className="text-[14px] text-[var(--ink-2)]">{s.name}</span>
-              <span>
-                <span
-                  className={`inline-block h-2 align-middle ${up ? "bg-[var(--up)]" : "bg-[var(--down)]"}`}
-                  style={{ width: `${w}px` }}
-                />
-              </span>
-              <span className="text-right font-mono text-[13.5px] tabular-nums">
-                <Pct pct={s.pct} />
-              </span>
-            </div>
-          );
-        })}
+      {/* Two newspaper columns so eleven rows don't tower over the band, split
+          explicitly rather than by CSS `columns-2` — see splitColumns. */}
+      <div className="sm:grid sm:grid-cols-2 sm:gap-x-12">
+        {splitColumns(sectors).map((column, ci, cols) => (
+          <div key={ci}>
+            {column.map((s, i) => {
+              const pct = s.pct ?? 0;
+              const up = pct >= 0;
+              const w = Math.max(
+                2,
+                Math.min(80, (Math.abs(pct) / maxAbs) * 80),
+              );
+              // Bottom row of each column drops its rule, which otherwise
+              // trailed a hairline into the empty space under the band.
+              // Column one only from sm up: stacked on a phone it is mid-list.
+              const dropRule =
+                i === column.length - 1
+                  ? ci === cols.length - 1
+                    ? "border-b-0"
+                    : "sm:border-b-0"
+                  : "";
+              return (
+                <div
+                  key={s.code}
+                  className={`grid grid-cols-[1fr_88px_64px] items-center gap-2 border-b border-[var(--border)] py-2 ${dropRule}`}
+                >
+                  <span className="text-[14px] text-[var(--ink-2)]">
+                    {s.name}
+                  </span>
+                  <span>
+                    <span
+                      className={`inline-block h-2 align-middle ${up ? "bg-[var(--up)]" : "bg-[var(--down)]"}`}
+                      style={{ width: `${w}px` }}
+                    />
+                  </span>
+                  <span className="text-right font-mono text-[13.5px] tabular-nums">
+                    <Pct pct={s.pct} />
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );
