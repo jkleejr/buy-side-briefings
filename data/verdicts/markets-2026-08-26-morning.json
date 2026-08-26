@@ -1,0 +1,99 @@
+{
+  "routine": "markets",
+  "date": "2026-08-26",
+  "window": "morning",
+  "generated_at": "2026-08-26T11:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Nvidia's AI verdict arrives tonight as PCE inflation data sets the rate backdrop first",
+    "label": "S&P futures -0.1%; NVDA prints AH today; core PCE at 8:30 AM ET; Brent $88.88 (3rd straight decline); 30Y ~5.23%",
+    "rationale_short": "The session runs in two acts: PCE at 8:30 AM ET opens it, Nvidia's Q2 FY27 print closes it after the bell. Futures are flat to modestly negative (-0.1% S&P, -0.2% Nasdaq) — a rational holding pattern ahead of the most binary single-stock event of the AI cycle. The macro backdrop has materially improved since Monday: Brent fell for a third consecutive session to $88.88, now $5.12 below the $94 regime trigger, and the 30Y has retreated from its August 19 high of 5.34% to approximately 5.23% — both indicators moving away from their respective thresholds simultaneously. Consumer confidence (89.4 vs. 90.2 consensus) missed yesterday and markets shrugged. The PCE print at 8:30 AM ET is the first key catalyst: July core PCE is expected to hold at 3.3% YoY — in-line or cooler keeps bonds steady and preserves the constructive macro setup heading into NVDA's print; a hot print (above 3.5%) risks a bond selloff that compresses NVDA's multiple on the very day it reports. On NVDA: consensus is $92.2B revenue and $2.09 EPS; the dual bar for a sustained post-earnings rally remains gross margin materially above 74.9% AND Q3 data-center guide above approximately $39B simultaneously. NVDA has fallen after five of the last six reports on beats of comparable magnitude. The constructive read rests on both regime indicators retreating AND NVDA clearing the dual bar; either failing alone changes the read materially. Warsh's Jackson Hole keynote Friday at 10 AM ET — his first as Fed Chair — remains the week's final macro event regardless of how NVDA trades Thursday.",
+    "supporting_data": [
+      { "label": "S&P 500 futures -0.1%, Nasdaq 100 futures -0.2%; stocks hold steady in wait mode ahead of NVDA print and PCE data — Yahoo Finance", "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-26-dow-sp-500-nasdaq-081834782.html" },
+      { "label": "NVDA Q2 FY27 prints AH today; consensus $92.2B revenue (+97.4% YoY), $2.09 EPS (vs. $1.05 prior year); 13 consecutive beats; dual bar: GM above 74.9% AND Q3 DC guide above ~$39B simultaneously — Kiplinger", "url": "https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-august-2026" },
+      { "label": "July core PCE due 8:30 AM ET Wednesday — expected 3.3% YoY, unchanged from prior month; Fed's preferred inflation gauge; 3 weeks before September 16 FOMC — Continuum Economics", "url": "https://continuumeconomics.com/a/9839c4c8/preview-due-august-26-us-july-personal-income-and-spending-pce-prices-to-match-cpi-savings-finding-a-base" },
+      { "label": "Brent $88.88 (-0.03%), third consecutive decline; down ~4.3% from Monday's $93.09; both regime indicators (Brent, 30Y) retreating from thresholds — Trading Economics", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+      { "label": "Warsh Jackson Hole keynote Friday Aug 28 at 10 AM ET; September FOMC hike odds ~30-31%; Warsh's first speech as Fed Chair with inflation above target and FOMC divided — MNI Markets", "url": "https://www.mnimarkets.com/articles/chair-warsh-to-give-jackson-hole-keynote-speech-aug-28-at-10am-et-1787258124058" },
+      { "label": "Consumer Confidence 89.4 (vs. 90.2 consensus) in August; labor market outlook particularly downbeat; Canada 50% tariff cost-push the cited factor — Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-08-25/asian-stocks-set-to-gain-as-oil-extends-declines-markets-wrap" },
+      { "label": "BTC $78,764 (-0.65%); session range $77,852–$79,568; $80K ceiling intact after Tuesday's test at $81,271; modest pullback into NVDA day — Crypto.com live", "url": "https://crypto.com/exchange/trade/BTC_USDT" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7669.0,  "change_pct": -0.11, "as_of": "2026-08-26T11:00:00Z" },
+    "nasdaq": { "level": 26099.0, "change_pct": -0.20, "as_of": "2026-08-26T11:00:00Z" },
+    "vix":    { "level": 15.49,   "change_pct": -2.27, "as_of": "2026-08-26T11:00:00Z" },
+    "ust10y": { "level": 4.72,    "change_bps":  1,    "as_of": "2026-08-26T11:00:00Z" },
+    "dxy":    { "level": 99.02,   "change_pct":  0.01, "as_of": "2026-08-26T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.23, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 88.88, "trigger_above": 94.00, "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Flat to slightly negative premarket ahead of Q2 FY27 print AH today. Consensus: $92.2B revenue vs. $91.0B guidance midpoint (1.1% above the bar), $2.09 EPS, 74.9% GAAP GM. The print has been flagged as the AI cycle's bellwether for months — the market has priced in the expectation of a beat. The dual bar for a sustained post-earnings rally: gross margin materially above 74.9% AND Q3 data-center guide materially above approximately $39B simultaneously. NVDA has fallen after five of the last six reports on beats of comparable magnitude; the whisper number sits well above consensus. A beat on revenue and EPS alone without clearing both thresholds simultaneously is the most likely single outcome and historically the trigger for a sell-the-news response.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Heading into NVDA's print below $484 containment for an eleventh consecutive session. The Consumer Confidence miss at 89.4 adds a mild demand-skeptical overhang to the chip complex. AMD close today is the final leading indicator before NVDA prints: above $470 on volume signals de-risk exhaustion; below $450 would be a negative confirmation into the print. $430 remains the next structural floor.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$78,764 (−0.65%) as of 11:04 UTC Wednesday. Session range $77,852–$79,568. Pulled back from Tuesday's intraday high of $81,271 — $80K ceiling held. The Digital Asset secondary sanctions from Operation Economic Outcast had no sustained negative BTC effect (consistent with prior read). Two consecutive closes above $80K would signal ceiling weakness and flag a move toward $85K.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial ongoing (~Day 14 of 7-week trial). 30Y declining from 5.34% peak removes some multiple compression pressure on long-duration growth names. No new fundamental catalyst; Warsh keynote Friday is the next macro input.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Below $380 structural support. VMware CVE-2026-59310 active exploitation and 72% AI revenue concentration dual overhang unchanged. Q3 FY2026 results estimated Sept 4-5 — first public accounting of VMware remediation costs. $340–$350 is next structural support zone.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$487.31 vicinity. Azure $100B annual run-rate intact. Macro improvement (Brent falling, 30Y retreating) reduces multiple compression pressure. Canada tariff cost-push headwind on enterprise software pricing unchanged.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "Below $315 structural buyer-defense level. Tim Cook transition and Q4 FY26 guidance miss overhang unchanged. No new catalyst before Warsh Friday.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$177. Federal AI budget cycle the near-term variable; no new fundamental data this week.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Core PCE (July) at 8:30 AM ET — the session's rate backdrop-setter",
+      "thesis": "July core PCE is expected to print 3.3% YoY, matching the prior month, with a 0.2% monthly gain. This is the Fed's preferred inflation gauge, and it arrives 21 days before the September 16 FOMC with Canada 50% tariffs live and Canada's September 8 retaliatory salvo still ahead. A print at or below consensus is the cleanest setup for NVDA: 30Y holds in the 5.20–5.26% range, September FOMC hike odds stay near 30%, and NVDA's multiple doesn't compress pre-print. A hot print — above 3.5% YoY or 0.3%+ monthly — triggers a bond selloff, pushes 30Y back toward the 5.30% threshold, and compresses NVDA's multiple on the day it reports. The combination of hot PCE plus NVDA disappointment is the maximum adverse scenario for the week.",
+      "entry": "In-line or cooler than 3.3% core = green light for existing positioning heading into NVDA's print. Above 3.5% core = reduce risk before the bell; Warsh's Friday keynote becomes the next gate. Below 3.0% core = constructive rate relief; could see bonds rally and equities lift ahead of NVDA.",
+      "invalidation": "A significantly hot print (above 3.5%) that drives 30Y above 5.30% before NVDA's print changes the macro backdrop from improving to breached, regardless of what NVDA delivers.",
+      "horizon": "8:30 AM ET today; the September 16 FOMC is the medium-term policy context"
+    },
+    {
+      "asset": "NVDA AH print — the AI cycle's binary verdict",
+      "thesis": "The dual bar for a sustained post-earnings rally: gross margin materially above 74.9% AND Q3 data-center guide materially above approximately $39B simultaneously. Meeting one but not both is historically insufficient — NVDA has fallen after 5 of 6 reports on single-threshold beats. The whisper for revenue is above $95B in some circles; missing consensus at $92.2B while meeting EPS is the cleanest disappointment scenario. The macro backdrop entering the print has improved materially: Brent at $88.88 (well below $94 threshold), 30Y declining from its 19-year peak. A constructive macro does not change the execution requirement, but does mean an in-line-or-better print receives a more favorable multiple than it would have 48 hours ago.",
+      "entry": "Dual-bar clear (GM above 74.9% AND Q3 DC guide above $39B) = re-risk the AI complex Thursday. Single-bar beat only = likely sell-the-news; hold existing, do not add. Revenue miss or GM below 74.9% = defensive rotation confirmed; watch AMD's response for chip-complex confirmation.",
+      "invalidation": "NVDA breaks below $210 intraday before the bell on no new macro news — suggests institutional de-risking ahead of the print beyond what the macro warrants.",
+      "horizon": "Today AH; Thursday's open defines the post-print setup for the week; Warsh's Friday keynote (Aug 28) is the next macro event regardless of outcome"
+    },
+    {
+      "asset": "30Y Yield (~5.23%) and Warsh Jackson Hole positioning",
+      "thesis": "The 30Y peaked at 5.34% on August 19 — a 19-year high — and has since declined to approximately 5.23%, 7bps below the regime trigger. The decline reflects the Treasury market pricing in that the Bessent buyback program (effective September 9), combined with Brent's three-session retreat, has reduced the dual-trigger risk materially. The Warsh Jackson Hole keynote Friday at 10 AM ET is the week's final macro variable: 69% of fund managers surveyed expect a neutral tone, meaning neutral is already priced. A hawkish surprise (framing Canada tariffs and energy cost-push as inflation risks requiring September action) would push 30Y back through 5.30% and lift September FOMC hike odds above 40%. Dovish or neutral = September hike odds stay sub-30% and current 30Y recovery holds.",
+      "entry": "30Y stays below 5.27% through today's PCE = constructive setup for equities into Friday. 30Y re-crosses 5.30% today = regime breach re-activates regardless of NVDA's outcome. The 5.23% current level provides a 7bps cushion; PCE is the first stress test of that cushion.",
+      "invalidation": "Hot PCE drives 30Y above 5.30% intraday; Warsh drops hawkish signals in pre-keynote remarks (Jackson Hole panels begin Thursday) before Friday's formal address.",
+      "horizon": "Warsh keynote August 28 at 10 AM ET; September 16 FOMC is the terminal decision point"
+    }
+  ],
+  "bear_case": "The session's improved macro setup is real but fragile. The maximum adverse sequence: PCE at 8:30 AM ET prints above 3.5% core — the first genuine signal that Canada tariff cost-push and energy price pass-through are re-accelerating inflation above the 3.3% plateau the market has priced as a ceiling. That print pushes the 30Y back through the 5.30% regime trigger before NVDA reports, compressing NVDA's multiple on the day of its print. NVDA then meets revenue consensus ($92.2B) without simultaneously clearing gross margin above 74.9% AND Q3 data-center guide above approximately $39B — the single most likely earnings outcome given NVDA's history of falling after 5 of the last 6 reports on comparable beats. The resulting chip-complex selloff (-3 to 5% NVDA, AMD back toward $430) occurs with the September FOMC now 'live' at above 40% odds, and Warsh's Jackson Hole keynote Friday providing an additional rate-hawkish catalyst. Consumer Confidence already missed at 89.4 — if the PCE also surprises hot, the two readings together tell a coherent story: the US consumer is absorbing tariff-season cost-push faster than the soft-landing consensus expects. Add any Iran re-escalation (Brent reversing its three-session decline above $91) and the setup becomes the maximum adverse triple: energy re-ignites, long-end rates surge through the trigger, and the highest-bar AI print of the cycle disappoints.",
+  "body_mdx": "data/briefings/markets/2026-08-26-morning.mdx"
+}
