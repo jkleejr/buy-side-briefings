@@ -275,13 +275,13 @@ export default async function MacroSections() {
       >
         <TileGrid tiles={policyTiles(m)} />
       </Panel>
-      <Panel code="PRICES" title="Inflation & purchasing power">
+      <Panel title="Inflation & purchasing power">
         <TileGrid tiles={inflationTiles(m)} />
       </Panel>
-      <Panel code="GROWTH" title="Economic growth & activity">
+      <Panel title="Economic growth & activity">
         <TileGrid tiles={growthTiles(m)} />
       </Panel>
-      <Panel code="LABOR" title="Unemployment & labor">
+      <Panel title="Unemployment & labor">
         <TileGrid tiles={laborTiles(m)} />
       </Panel>
     </>

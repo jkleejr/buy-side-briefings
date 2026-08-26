@@ -20,7 +20,7 @@ export default function SectorsPage() {
       {/* Full sector rotation table (same as dashboard). */}
       <SectorRotation />
 
-      <Panel code="LEAD/LAG" title="Reading today's leaders &amp; laggards">
+      <Panel title="Reading today's leaders &amp; laggards">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           The divergence between the best and worst performers above is the
           rotation story — when defensives (XLU/XLP/XLV) lead, the market is
@@ -29,7 +29,7 @@ export default function SectorsPage() {
         </p>
       </Panel>
 
-      <Panel code="EDU" title="How to think about sector rotation">
+      <Panel title="How to think about sector rotation">
         <div className="space-y-3 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
           <div>
             <div className="text-[var(--amber)]">What rotation tells you</div>

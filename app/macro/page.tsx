@@ -34,7 +34,7 @@ export default function MacroPage() {
           All four carry real OHLC from Yahoo. Only TLT reports traded volume —
           yields and the dollar index are calculated, so every bar reads zero
           and the chart disables its own Vol button for them. */}
-      <Panel code="RATES" title="Rates, bonds & the dollar">
+      <Panel title="Rates, bonds & the dollar">
         <div className="p-2">
           <LevelsChart symbols={MACRO_SYMBOLS} labels={MACRO_LABELS} />
         </div>

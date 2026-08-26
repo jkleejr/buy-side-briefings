@@ -58,7 +58,6 @@ export default async function SectorRotation() {
 
   return (
     <Panel
-      code="SECT"
       title="Sector Rotation · 11 ETFs"
       href="/sectors"
       meta={<span>SORT ▾ TODAY</span>}
