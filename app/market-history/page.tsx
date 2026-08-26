@@ -22,7 +22,7 @@ export default function MarketHistoryPage() {
   const { meta, body } = thesis;
 
   return (
-    <div className="mx-auto max-w-3xl space-y-1">
+    <div className="mx-auto max-w-5xl space-y-1">
       <header className="space-y-1 px-1 pb-1">
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           {meta.title}
