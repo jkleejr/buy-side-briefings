@@ -37,7 +37,7 @@ export default function GlobalPage() {
       {/* Today's snapshot — same component as the dashboard. */}
       <GlobalMarketsPanel />
 
-      <Panel code="ASIA" title="Asia · trades while the US sleeps">
+      <Panel title="Asia">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           Tokyo opens ~7pm US ET; Hong Kong + Shanghai ~9:30pm ET; Korea ~8pm ET.
           By the time you wake up, ~6 hours of Asian price discovery has happened.
@@ -49,7 +49,7 @@ export default function GlobalPage() {
         </div>
       </Panel>
 
-      <Panel code="EUROPE" title="Europe · the morning US gets">
+      <Panel title="Europe">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           London/Frankfurt/Paris open ~3am US ET. By the time US opens at 9:30am,
           Europe is mid-session and has already digested overnight Asia plus
@@ -61,7 +61,7 @@ export default function GlobalPage() {
         </div>
       </Panel>
 
-      <Panel code="EM" title="Emerging markets · the growth lane">
+      <Panel title="Emerging Markets">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           Nifty (India) is the biggest EM growth story — increasingly important as
           foreign capital diversifies away from China. Bovespa (Brazil) is the EM
