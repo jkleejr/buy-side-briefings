@@ -3,7 +3,12 @@
 import { useState } from "react";
 import LevelsChart from "./levels-chart";
 import Link from "next/link";
-import type { HomeData, BriefView, SectorRow, KeyPoint } from "@/lib/home-terminal";
+import type {
+  HomeData,
+  BriefView,
+  SectorRow,
+  KeyPoint,
+} from "@/lib/home-terminal";
 
 // ---------------------------------------------------------------------------
 // Journal homepage — the front page of a small daily, in the Design Notes
@@ -109,7 +114,8 @@ function Hero({ brief }: { brief: BriefView }) {
             "MORNING'S" and stranded the read-time on its own line, which read
             as two separate links. */}
         <span className="whitespace-nowrap">
-          Read {brief.window === "morning" ? "this morning's" : "tonight's"} briefing
+          Read {brief.window === "morning" ? "this morning's" : "tonight's"}{" "}
+          briefing
         </span>
         <span className="whitespace-nowrap text-[var(--dim)]">
           · {brief.readMin} min →
@@ -126,47 +132,76 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
   return (
     <div>
       <SectionRule>News today</SectionRule>
-      <div className="sm:columns-2 sm:gap-12">
-        {points.map((kp, i) => {
-          const host = hostLabel(kp.url);
-          const body = (
-            <>
-              <div className="text-[16.5px] leading-[1.5] text-[var(--ink-soft)]">
-                {kp.text}
-              </div>
-              {host && (
-                <div className="mt-1.5 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--amber)]">
-                  {host}
+      {/* Split into two explicit columns rather than CSS `columns-2`. Under
+          multi-column the browser flows the items itself, so the DOM's last
+          child is only the foot of column two — `last:border-b-0` left column
+          one still trailing a hairline into empty space. Splitting the array
+          makes "last in this column" a real last-child in both. Reading order
+          is unchanged: down column one, then down column two. */}
+      <div className="sm:grid sm:grid-cols-2 sm:gap-x-12">
+        {splitColumns(points).map((column, ci, cols) => (
+          <div key={ci}>
+            {column.map((kp, i) => {
+              const host = hostLabel(kp.url);
+              const body = (
+                <>
+                  <div className="text-[16.5px] leading-[1.5] text-[var(--ink-soft)]">
+                    {kp.text}
+                  </div>
+                  {host && (
+                    <div className="mt-1.5 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--amber)]">
+                      {host}
+                    </div>
+                  )}
+                </>
+              );
+              // Rules sit under each item, not above it. With `first:border-t-0` in
+              // a two-column flow only the DOM-first item loses its rule, so column
+              // two opened with a hairline directly under the section rule and read
+              // as a doubled heading. Bottom rules — the same as the sector table —
+              // have no such first-child special case.
+              // The final item of each column drops its rule. Column one only
+              // does so once the columns are side by side — stacked on mobile it
+              // is mid-list, and a gap there reads as the list ending early.
+              const dropRule =
+                i === column.length - 1
+                  ? ci === cols.length - 1
+                    ? "border-b-0"
+                    : "sm:border-b-0"
+                  : "";
+              const cls = `block border-b border-[var(--border)] py-4 ${dropRule}`;
+              return kp.url ? (
+                <a
+                  key={i}
+                  href={kp.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${cls} -mx-3 rounded-sm px-3 hover:bg-[var(--panel)]`}
+                >
+                  {body}
+                </a>
+              ) : (
+                <div key={i} className={cls}>
+                  {body}
                 </div>
-              )}
-            </>
-          );
-          // Rules sit under each item, not above it. With `first:border-t-0` in
-          // a two-column flow only the DOM-first item loses its rule, so column
-          // two opened with a hairline directly under the section rule and read
-          // as a doubled heading. Bottom rules — the same as the sector table —
-          // have no such first-child special case.
-          const cls =
-            "block break-inside-avoid border-b border-[var(--border)] py-4";
-          return kp.url ? (
-            <a
-              key={i}
-              href={kp.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${cls} -mx-3 rounded-sm px-3 hover:bg-[var(--panel)]`}
-            >
-              {body}
-            </a>
-          ) : (
-            <div key={i} className={cls}>
-              {body}
-            </div>
-          );
-        })}
+              );
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );
+}
+
+/**
+ * Halve the list for the two-column news grid, first half then second, so the
+ * eye still travels down column one before column two. An odd count leaves the
+ * extra item in column one, which keeps the taller column on the left.
+ */
+function splitColumns(points: KeyPoint[]): KeyPoint[][] {
+  if (points.length < 2) return [points];
+  const half = Math.ceil(points.length / 2);
+  return [points.slice(0, half), points.slice(half)];
 }
 
 // The benchmarks the homepage carries: the broad market, the AI bellwether
