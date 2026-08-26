@@ -260,7 +260,6 @@ export default async function MacroSections() {
   return (
     <>
       <Panel
-        code="POLICY"
         title="Interest rates & monetary policy"
         meta={
           <a
