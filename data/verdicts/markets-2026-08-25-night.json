@@ -2,70 +2,97 @@
   "routine": "markets",
   "date": "2026-08-25",
   "window": "night",
-  "generated_at": "2026-08-26T01:20:00Z",
+  "generated_at": "2026-08-25T22:00:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Oil drops on Iran diplomacy as chip stocks rebound before Nvidia earnings",
-    "code": "hold",
-    "emoji": "⚖️",
-    "label": "Regime clean — both triggers deactivated — but NVDA print and Warsh keynote are 24–72 hours away",
-    "conviction": "medium",
-    "rationale_short": "Brent's 4.9% drop to $88.58 is the session's defining move: Bessent's sanctions spared the institutions that actually clear Iran's oil money, and a Pakistani field marshal arrived in Tehran carrying what was reported as a sanctions-relief proposal — the war premium is unwinding structurally, not just on data noise. Both regime triggers are now inactive (30Y at 5.23% vs. 5.30% threshold; Brent at $88.58 vs. $94 threshold). Chip stocks staged a broad recovery — NVDA +2.47% snapping a seven-session losing streak, AMD +4.34%, Intel +3.15%, Marvell +7% — but the recovery is entirely pre-earnings positioning ahead of Wednesday's NVDA print. BTC hit an intraday high of $81,271 — its second consecutive breach of the $80K ceiling — before settling near $78,313; the ceiling is real and tested. On the negative: DKS -31% on earnings miss and full-year EPS guidance slashed from $13.50–14.50 to $11–12 (midpoint 19% below consensus), dragging NKE and ASO lower — consumer athletic spending is deteriorating. MRNA +10% adds positive biotech sentiment as the melanoma vaccine trial momentum continues. Verdict stays at neutral until NVDA (Wednesday AH) and Warsh (Friday) resolve.",
+    "headline": "Oil drops 4% on Iran diplomacy shift; chip stocks rebound broadly before Nvidia's print tomorrow",
+    "label": "SPX 7,677 (+0.32%); Brent $88.58 (-4.9%); NVDA +2.47%; AMD +4.34%; DKS -31%; NVDA reports Wednesday AH",
+    "rationale_short": "Brent's 4.9% drop to $88.58 is the session's defining move: Bessent's sanctions framework spared the institutions that clear Iran's oil money, and a Pakistani diplomat arrived in Tehran carrying a sanctions-relief proposal — the war premium is unwinding structurally. Both regime triggers are inactive (30Y at 5.23% vs. 5.30% threshold; Brent at $88.58 vs. $94 threshold). Chip stocks staged a broad recovery — NVDA +2.47% snapping a seven-session losing streak, AMD +4.34%, Intel +3.15%, Marvell +7% — but the recovery is pre-print positioning, not a fundamental signal. BTC hit an intraday high of $81,271 — its second consecutive breach of $80K — before settling at $78,313; the ceiling is real and has now been tested twice. DKS fell 31% on a guidance cut of 19% below consensus — consumer athletic spending is deteriorating. If NVDA delivers gross margin above 78% and a Q3 data-center guide above $39B simultaneously Wednesday AH, the chip-sector reset thesis is validated.",
     "supporting_data": [
-      { "label": "Crude Oil Price Today, August 25, 2026: Brent Falls to $88.58 as the War Premium Unwinds — Eastern Herald", "url": "https://easternherald.com/2026/08/25/crude-oil-price-today-august-25-2026/" },
-      { "label": "Bessent & Warsh Go Down the Jackson Hole — Advisor Perspectives", "url": "https://www.advisorperspectives.com/commentaries/2026/08/25/bessent-warsh-down-jackson-hole" },
-      { "label": "Nasdaq Climbs as Chip Stocks Rebound Ahead of Nvidia Earnings and Inflation Data — HDFCSky", "url": "https://hdfcsky.com/news/nasdaq-climbs-0-88percent-as-chip-stocks-rebound-dow-flat-ahead-of-nvidia-earnings-and-inflation-data-august-25-2026" },
-      { "label": "The Nasdaq Floats as Oil Sinks and Memory Stocks Recover — The Motley Fool", "url": "https://www.fool.com/investing/2026/08/25/the-nasdaq-floats-as-oil-sinks/" },
-      { "label": "DICK'S Sporting Goods plunges 31% after earnings miss — Seeking Alpha", "url": "https://seekingalpha.com/news/4636761-dicks-sporting-goods-plunges-31-after-earnings-miss" },
-      { "label": "Moderna stock up 10% on Aug 25 — cancer vaccine momentum continues — TradingKey", "url": "https://www.tradingkey.com/news/market-movers/262130677-market-movers-mrna-20260825" },
-      { "label": "Warsh's Jackson Hole remarks in focus as US long bonds remain under pressure — Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-08-23/us-long-bonds-risk-deeper-selloff-without-clear-warsh-guidance" },
-      { "label": "Stock Market News for Aug 25, 2026 — Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-25-132700491.html" }
+      { "label": "Brent $88.58 (-4.9%); war premium unwinding after Bessent's sanctions spared Chinese clearing banks; Pakistani diplomat in Tehran — Eastern Herald, Aug 25", "url": "https://easternherald.com/2026/08/25/crude-oil-price-today-august-25-2026/" },
+      { "label": "NVDA +2.47% to ~$215, AMD +4.34% to $474, Intel +3.15%, Marvell +7% — chip sector rebounds as oil falls ahead of NVDA Wednesday AH print — HDFCSky", "url": "https://hdfcsky.com/news/nasdaq-climbs-0-88percent-as-chip-stocks-rebound-dow-flat-ahead-of-nvidia-earnings-and-inflation-data-august-25-2026" },
+      { "label": "CB Consumer Confidence 89.4 in August (seven-month low); Expectations Index 68.2, below the 80 recession-risk threshold — FXStreet, Aug 25", "url": "https://www.fxstreet.com/news/us-cb-consumer-confidence-index-eases-to-894-in-august-202608251406" },
+      { "label": "DICK'S Sporting Goods -31% after EPS miss and FY guidance cut to $11-12 from $13.50-14.50 — midpoint 19% below consensus — Seeking Alpha", "url": "https://seekingalpha.com/news/4636761-dicks-sporting-goods-plunges-31-after-earnings-miss" },
+      { "label": "BTC intraday high $81,271 — second consecutive breach of $80K ceiling, rejected on close at $78,313; VIX 14.70 (-2.84%) — Yahoo Finance, Aug 25", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-25-132700491.html" },
+      { "label": "Jackson Hole begins Aug 27; Warsh keynote Aug 28 10 a.m. ET; September hike odds 28-39%; long bonds under pressure ahead — Bloomberg / Cabot Wealth", "url": "https://www.bloomberg.com/news/articles/2026-08-23/us-long-bonds-risk-deeper-selloff-without-clear-warsh-guidance" }
     ]
   },
   "snapshot": {
     "sp500":  { "level": 7677.28,  "change_pct": 0.32,  "as_of": "2026-08-25T21:00:00Z" },
     "nasdaq": { "level": 26151.30, "change_pct": 0.66,  "as_of": "2026-08-25T21:00:00Z" },
-    "vix":    { "level": 14.70,   "change_pct": -2.84, "as_of": "2026-08-25T21:00:00Z" },
-    "ust10y": { "level": 4.74,    "change_bps": 3,     "as_of": "2026-08-25T21:00:00Z" },
-    "dxy":    { "level": 98.84,   "change_pct": -0.15, "as_of": "2026-08-25T21:00:00Z" }
+    "vix":    { "level": 14.70,    "change_pct": -2.84, "as_of": "2026-08-25T21:00:00Z" },
+    "ust10y": { "level": 4.74,     "change_bps": 3,     "as_of": "2026-08-25T21:00:00Z" },
+    "dxy":    { "level": 98.84,    "change_pct": -0.15, "as_of": "2026-08-25T21:00:00Z" }
   },
   "regime_risk": [
     { "name": "30Y Yield", "value": 5.23, "trigger_above": 5.30, "unit": "%" },
     { "name": "Brent",     "value": 88.58, "trigger_above": 94.00, "unit": "USD/bbl" }
   ],
   "watchlist_mentions": [
-    { "ticker": "NVDA", "note": "~$215 Tuesday close (up 2.47% from ~$210; snapping a seven-session losing streak — longest since 2022). Prints Wednesday AH: Q2 FY27 consensus $92B revenue, $2.09 EPS. Stock has fallen after 5 of last 6 earnings reports. The dual bar for a sustained rally remains: gross margin improvement above prior floor AND data-center guide materially above consensus simultaneously. 30Y at 5.23% still caps the multiple ceiling absent a guide beat. Tuesday's recovery is entirely pre-print positioning — not a signal about the fundamental setup.", "sentiment": "neutral" },
-    { "ticker": "AMD", "note": "~$474 Tuesday close (up 4.34% from $454.36). Ninth consecutive session below $484 containment. Tuesday's bounce is part of the sector rebound into NVDA print, not a reclaim of $484. Two AMD closes above $484 before Wednesday's print would flip the configuration constructive; the window closes at Wednesday's open. $430 remains the next structural support on the downside; $484 is the recovery threshold.", "sentiment": "neutral" },
-    { "ticker": "BTC", "note": "Settled near $78,313; intraday high $81,271 — second consecutive breach of the $80K ceiling, again rejected on close. The ceiling is real and has now been tested twice. Brent's sharp drop and the Iran diplomacy read-through are net neutral to BTC (no new OFAC targeting of digital assets today). A daily close above $80K remains the first credible momentum signal. Support zone: $75K–$76K.", "sentiment": "neutral" },
-    { "ticker": "MRNA", "note": "Up approximately 10% Tuesday, recovering from post-177% surge pullback. Merck-partnered intismeran autogene Phase 3 melanoma data remains the catalyst; Bank of America raised target to $170. The stock has now partially recaptured the post-gap pullback. 2027 commercialization window is Wall Street's base case.", "sentiment": "positive" },
-    { "ticker": "DKS", "note": "Down 31% Tuesday on Q2 FY2026 earnings miss (EPS $3.53 vs. $3.78 expected; revenue $5.59B vs. $5.65B expected) and full-year EPS guidance slashed to $11–12 from $13.50–14.50 (midpoint 19% below consensus of $14.20). Contagion hit NKE and ASO. Consumer athletic spend is deteriorating; 'promotional backdrop' cited — a margin headwind across sporting goods retail.", "sentiment": "negative" },
-    { "ticker": "META", "note": "Antitrust trial ongoing; $200B damages floor unchanged. 30Y at 5.23% maintains multiple compression slightly below trigger. Oil drop and DXY softness are mild positives for global ad revenue read-through.", "sentiment": "neutral" },
-    { "ticker": "AVGO", "note": "Chip sector rebound (Marvell +7%, Intel +3%) provides a rising tide. VMware CVE-2026-59310 active exploitation unchanged. Q3 FY2026 results estimated Sept 4–5. $380 structural support still the key level to recover.", "sentiment": "neutral" },
-    { "ticker": "MSFT", "note": "Value rotation and Azure $100B run-rate intact. Closed around $490 area (estimate). Oil drop reduces energy cost-push on cloud margins marginally. Canada tariff headwind unchanged.", "sentiment": "positive" }
+    {
+      "ticker": "NVDA",
+      "note": "~$215 Tuesday close (+2.47%, snapping a seven-session losing streak). Prints Wednesday AH: Q2 FY27 consensus $92B revenue, $2.09 EPS. Stock has fallen after 5 of last 6 earnings reports. Dual bar for sustained rally: gross margin above 78% AND Q3 data-center guide above ~$39B simultaneously. 30Y at 5.23% still caps the multiple ceiling absent a guide beat. Tuesday's recovery is pre-print positioning, not a signal about the fundamental setup.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "~$474 Tuesday close (+4.34% from $454.36). Ninth consecutive session below $484 containment ceiling. Tuesday's bounce is part of the sector-wide rebound into NVDA's print, not a reclaim of $484. $430 remains next structural support; $484 is the recovery threshold.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Settled $78,313; intraday high $81,271 — second consecutive breach of the $80K ceiling, rejected on close for the second time. The ceiling is real and has now been tested twice. Without NVDA follow-through and macro relief simultaneously, the double-rejection pattern argues the $75K-$76K support zone is the next test.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial ongoing (approx. Day 14 of 7 weeks). 30Y at 5.23% maintains multiple compression. Oil drop and DXY softness are mild positives for global ad revenue read-through. Bessent institution announcement pending.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$490 area. Value rotation and Azure $100B run-rate intact. Oil drop reduces energy cost-push on cloud margins marginally. Canada tariff headwind unchanged.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "~$310 area. Below $315 structural buyer defense; no new catalyst.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Chip sector rebound (Marvell +7%, Intel +3.15%) provides a rising tide. VMware CVE-2026-59310 overhang and 72% AI revenue concentration unchanged. Q3 FY2026 (est. Sept 4-5) is the first accounting of both. $380 is the recovery threshold.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$177. Federal AI budget cycle the near-term variable; no new catalyst.",
+      "sentiment": "neutral"
+    }
   ],
   "trade_setups": [
     {
-      "asset": "NVDA (~$215) — 1 session to Wednesday AH print",
-      "thesis": "NVDA enters the print having recovered from Monday's -2.9% drawdown. The setup is cleaner than Monday suggested: chip sector staged broad recovery Tuesday (AMD +4.34%, Intel +3.15%, Marvell +7%), oil is no longer a macro headwind with Brent at $88.58, and 30Y at 5.23% is not pressing the multiple ceiling. But the earnings bar is extremely high — $92B revenue, $2.09 EPS consensus — and NVDA has fallen after 5 of the last 6 reports regardless of beat magnitude. The dual bar for a sustained rally: gross margin improvement above prior floor AND data-center guide above ~$97B simultaneously.",
-      "entry": "NVDA gross margin above 78% AND Q3 FY2027 DC guide above $97B resolves the setup constructively. A beat without the guide — consensus revenue at ~$92B — is the most likely path to another post-earnings drawdown. Below $205 pre-print would signal demand-skeptical deterioration.",
-      "invalidation": "NVDA gross margin above 78% AND Q3 guide above $97B simultaneously; 30Y retreats below 5.10% on Warsh dovish pivot.",
-      "horizon": "24 hours (Wednesday AH print)"
+      "asset": "NVDA (~$215) — 1 session to Wednesday AH print; de-risk cleared",
+      "thesis": "NVDA enters the print having recovered from Monday's -2.9% drawdown: chip sector staged broad recovery Tuesday (AMD +4.34%, Intel +3.15%, Marvell +7%), Brent at $88.58 is no longer a macro headwind, and 30Y at 5.23% is 7bps from the trigger. The setup is materially more constructive than any comparable pre-print session this AI cycle. The execution bar is unchanged: consensus $92B revenue, $2.09 EPS. Dual gate required for a sustained rally: gross margin above 78% AND Q3 data-center guide materially above ~$39B simultaneously. NVDA has declined after 5 of the last 6 prints regardless of beat magnitude.",
+      "entry": "Gross margin above 78% AND Q3 DC guide above $39B = the levels that define a constructive post-print tape. In-line on either leaves the multiple (~22x forward revenue) unchanged with sell-side at maximum consensus — the conditions for another altitude-ceiling reaction.",
+      "invalidation": "Gross margin below 77% or Q3 DC guide below $37B. Either alone is a negative surprise at current multiple levels.",
+      "horizon": "24 hours — Wednesday AH print"
     },
     {
       "asset": "Brent crude (~$88.58) — war premium unwinding",
-      "thesis": "Two catalysts hit simultaneously: Bessent's sanctions framework spared the institutions that clear Iran's oil money (removing the structural enforcement mechanism), and a Pakistani diplomat arrived in Tehran carrying a sanctions-relief proposal. Both together mark a shift from maximum-pressure enforcement toward a negotiating posture. The $94 regime trigger is now $5.42 away — the largest buffer since the trigger was set. If the Pakistan-Iran talks produce a framework, Brent could test $85 or lower.",
-      "entry": "Brent durably below $88 confirms the war premium is structurally unwound. Brent re-test above $92 would require a major escalation signal — Bessent announcing secondary sanctions on Chinese/Indian crude buyers or Iranian military action in the Strait.",
-      "invalidation": "Pakistan-Iran talks collapse; Bessent announces Chinese or Indian bank secondary sanctions; Strait of Hormuz incident.",
-      "horizon": "3–5 sessions (Pakistan-Iran talks outcome; Bessent's 'major financial institution announcement' if still pending)"
+      "thesis": "Two catalysts hit simultaneously Tuesday: Bessent's sanctions framework spared the institutions that actually clear Iran's oil money (removing the structural enforcement mechanism), and a Pakistani diplomat arrived in Tehran carrying a reported sanctions-relief proposal. Both together mark a shift from maximum-pressure enforcement toward a negotiating posture. The $94 regime trigger is now $5.42 away — the largest buffer since the trigger was established. If Pakistan-Iran talks produce a framework, Brent could test $85 or lower.",
+      "entry": "Brent durably below $88 confirms the war premium is structurally unwound. Re-test above $92 would require a major escalation — Bessent announcing Chinese or Indian bank secondary sanctions, or an Iranian military action in the Strait.",
+      "invalidation": "Pakistan-Iran talks collapse; Bessent's 'major financial institution announcement' targets Chinese crude buyers; Strait of Hormuz incident.",
+      "horizon": "3-5 sessions (Pakistan-Iran talks outcome; Bessent institution announcement pending)"
     },
     {
-      "asset": "30Y Treasury (~5.23%) — Warsh keynote setup",
-      "thesis": "30Y eased 1bp to 5.23% as Brent fell — oil/rate linkage holding. The 5.30% trigger is 7bps away, the largest buffer since oil first triggered. Warsh's Friday keynote (Aug 28) is the decisive event: if he frames Canada tariff escalation and Iran energy dislocation as compounding inflation vectors, the 30Y could test 5.30% and restore the second regime indicator. A neutral-to-dovish keynote — acknowledging the inflation path without committing to more hikes — could push 30Y back toward 5.10% and meaningfully reduce the regime risk score. PCE data Wednesday morning is the first read.",
+      "asset": "30Y yield (5.23%) — Warsh keynote is the rate-path decision",
+      "thesis": "The 30Y eased 1bp to 5.23% as Brent fell — oil/rate linkage holding. The 5.30% trigger is 7bps away, the largest buffer since it was set. Warsh's Friday keynote (Aug 28) is the decisive input: if he frames Canada tariff escalation and Iran energy dislocation as compounding inflation vectors, the 30Y could test 5.30% and restore the second regime indicator. A neutral-to-dovish keynote could push the 30Y back toward 5.10% and materially reduce the regime risk score. The Consumer Confidence Expectations Index at 68.2 (below 80 recession-risk threshold) gives him empirical support for either framing.",
       "entry": "30Y above 5.30% = both regime indicators active simultaneously. 30Y below 5.10% = rate regime materially reduced for September FOMC.",
-      "invalidation": "Warsh strikes unambiguously neutral-to-dovish tone; 30Y falls below 5.10%. Hot PCE Wednesday is the bear case for that scenario.",
-      "horizon": "4 sessions (PCE Wednesday, Warsh Friday Aug 28)"
+      "invalidation": "Warsh strikes unambiguously neutral-to-dovish tone; 30Y falls below 5.10%.",
+      "horizon": "4 sessions — Warsh keynote Friday Aug 28; September 16 FOMC is the medium-term context"
     }
   ],
-  "bear_case": "The day's constructive read on oil and chips rests on two assumptions: that Pakistan-Iran talks are real and durable, and that NVDA delivers on both gross margin and the guide simultaneously. Both are low-probability as stated. Pakistan's diplomatic capacity is limited — the actual decision-maker on sanctions is Bessent, who called it 'Operation Economic Outcast' two days ago and has not signaled any pivot. The sanctions framework is still active; oil's drop is a sentiment trade, not a structural change. On NVDA: a beat without the guide has produced drawdowns five times in six attempts. The chip sector's Tuesday rebound was entirely positioning — AMD still hasn't reclaimed $484 after nine sessions, meaning no structural reset has occurred. DKS's -31% on 19%-below-consensus guidance is the consumer print that matters for the macro read: discretionary spending is cracking, and athletic wear is a leading indicator for broader consumer health. If NVDA disappoints Wednesday — the most likely single outcome based on base rates — the chip sector gives back Tuesday's recovery and Nasdaq tests 25,700–25,900. Add a hawkish Warsh Friday (PCE hot Wednesday would set that up) and the 30Y re-tests 5.30%, activating both regime indicators simultaneously for the first time. BTC's second rejection at $80K on closing basis confirms the ceiling is structural, not incidental — without NVDA follow-through and macro relief simultaneously, momentum fades toward $75K–$76K support.",
+  "bear_case": "The day's constructive read rests on two assumptions: that the Pakistan-Iran diplomatic track is real and durable, and that NVDA delivers on both gross margin and the guide simultaneously. Both are low-probability as stated. Bessent called it 'Operation Economic Outcast' two days ago and has not signaled any pivot; the sanctions framework is still active and the war premium's decline is a sentiment trade, not a structural change. On NVDA: a beat without the guide has produced drawdowns five times in six attempts. AMD's ninth session below $484 means no structural reset has occurred — Tuesday's bounce is positioning, not confirmation. DKS's -31% on a 19%-below-consensus guidance cut is the consumer print that matters for the macro read: discretionary spending is deteriorating, and athletic wear is a leading indicator for broader consumer health. If NVDA disappoints Wednesday — the most likely single outcome based on base rates — the chip sector gives back Tuesday's recovery and Nasdaq tests 25,700-25,900. Add a hawkish Warsh Friday and the 30Y re-tests 5.30%, activating both regime indicators simultaneously for the first time. BTC's second rejection at $80K confirms the ceiling is structural; without NVDA follow-through and macro relief simultaneously, momentum fades toward the $75K-$76K support zone.",
   "body_mdx": "data/briefings/markets/2026-08-25-night.mdx"
 }
