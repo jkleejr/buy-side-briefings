@@ -40,7 +40,7 @@ export default function MarketHistoryPage() {
       </header>
 
       {meta.summary && (
-        <Panel title="The short version">
+        <Panel title="Overview">
           <p className="p-2 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
             {meta.summary}
           </p>
