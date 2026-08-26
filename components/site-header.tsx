@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { todayET } from "@/lib/utils";
+import { todayETDisplay } from "@/lib/utils";
 import BrandMark from "./brand-mark";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
@@ -27,7 +27,7 @@ const NAV = [
 ];
 
 export default function SiteHeader() {
-  const dateStr = todayET();
+  const dateStr = todayETDisplay();
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--foreground)] bg-[var(--background)]">
       {/* The chrome wears the monospace utility face, not the reading serif.

@@ -198,3 +198,20 @@ export function nowUtcHM(): string {
 export function todayET(): string {
   return new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
 }
+
+/**
+ * Today's date in US market time, formatted MM-DD-YYYY for display.
+ *
+ * Deliberately separate from todayET(): that one's YYYY-MM-DD is a key, not a
+ * label — it is compared against briefing slugs and calendar dates and passed
+ * to the lite-read route, so it has to stay ISO. This is the display-only
+ * spelling, for chrome that a reader looks at rather than code that sorts.
+ */
+export function todayETDisplay(): string {
+  return new Date().toLocaleDateString("en-US", {
+    timeZone: "America/New_York",
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric",
+  }).replace(/\//g, "-");
+}
