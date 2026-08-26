@@ -260,7 +260,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
           own border, so this one drew a second heavy black line a few pixels
           under it with nothing in between. */}
       <div className="flex flex-wrap items-center justify-between gap-3 pt-4">
-        <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--dim)]">
+        <span className="font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
           {view === "morning" ? "Morning briefing" : "Night briefing"}
           {current ? ` · ${current.timeLabel}` : ""}
         </span>
