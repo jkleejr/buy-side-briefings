@@ -1,0 +1,115 @@
+{
+  "routine": "markets",
+  "date": "2026-08-27",
+  "window": "morning",
+  "generated_at": "2026-08-27T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — Nasdaq futs +1%, NVDA +7.4% premarket; $96.2B Q2 rev (+106%), $108B Q3 guide; AWS 2M GPU deal; Brent $86.93 (4th decline); 30Y ~5.19%",
+    "headline": "Nvidia's blowout quarter gives the AI trade a green light heading into Jackson Hole",
+    "conviction": "high",
+    "horizon": "1-3 days",
+    "rationale_short": "NVDA simultaneously cleared both bars of the dual-bar test: gross margin at 75% (above 74.9% threshold) and Q3 guidance of $108B versus $104.2B consensus, with data-center revenue of $89B up 117% year over year. Revenue of $96.2B beat the $92.2B consensus by $4B; EPS of $2.22 beat $2.09. The AWS announcement — 2 million Nvidia GPU units purchased, Vera CPU integrated with the Rubin architecture — is the largest single hyperscaler commitment disclosed this cycle and directly refutes the OpenAI 'Jalapeno' custom-chip competitive thesis that had overhung the complex entering the print. CFO Colette Kress guided FY28 revenue growth of approximately 70% and CPU revenue more than doubling, extending visibility well beyond the current fiscal year. The macro backdrop is unambiguously constructive: Brent at $86.93 (-1.03%) posts a fourth consecutive session decline from Monday's $93.09, now $7.07 below the $94 regime trigger; the 10Y at 4.64% (-8bps) and the 30Y at approximately 5.19% both declined as July core PCE printed exactly in-line at 3.3% — the in-line read drew a line under the bond-market anxiety from last week's yield spike. Headline PCE at 3.7% was 0.1pp above the Dow Jones consensus but attributable to energy and food pass-through rather than services re-acceleration; the market correctly read this as non-threatening to the September FOMC calculus. Both regime indicators (Brent and 30Y) are retreating from their respective triggers simultaneously. The single remaining gate: Kevin Warsh's Jackson Hole keynote tomorrow (Friday, August 28) at 10 AM ET, 19 days before the September 16 FOMC. Markets are pricing 33% odds of a September hike and 69% of fund managers expect a neutral Warsh tone — neutral is priced in. Goldman Sachs warned of amplified FX volatility around the keynote given the unresolved 3-way dissent from July 29 FOMC (Hammack, Kashkari, Logan voted for a hike — the first such 3-way split since 2016). If Warsh is neutral or dovish, horizon extends to 1-2 weeks. Tonight's AH event: MRVL reports, providing the first independent test of whether the hyperscaler AI infrastructure demand NVDA cited is sector-wide or company-specific.",
+    "supporting_data": [
+      { "label": "Nasdaq futs +1% in early Thursday trading; NVDA drives tech rally after bullish sales guidance — Bloomberg markets wrap", "url": "https://www.bloomberg.com/news/articles/2026-08-26/nasdaq-futures-rise-on-bullish-nvidia-sales-growth-markets-wrap" },
+      { "label": "NVDA Q2 FY27: $96.2B revenue (+106% YoY, vs. $92.18B consensus), EPS $2.22 (vs. $2.09), data center $89B (+117%), GM 75%; Q3 guide $108B vs. $104.2B consensus — CNBC live updates", "url": "https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html" },
+      { "label": "AWS commits to 2M Nvidia GPU units, Vera CPU + Rubin integration; hyperscaler capex $800B (2026) → $1.3T (2027); FY28 rev +~70%, CPU rev >2x — RexShares NVDA earnings detail", "url": "https://www.rexshares.com/nvidia-earnings/" },
+      { "label": "July core PCE 3.3% YoY (in-line); headline PCE 3.7% (+0.1pp hot, energy/food pass-through); monthly +0.2% on both measures — CNBC BEA release", "url": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html" },
+      { "label": "Brent $86.93 (-1.03%), 4th consecutive decline from Monday's $93.09; now $7.07 below $94 regime trigger — Trading Economics", "url": "https://tradingeconomics.com/commodity/brent-crude-oil" },
+      { "label": "Warsh Jackson Hole keynote Friday Aug 28 at 10 AM ET; September FOMC hike odds ~33%; July 29 FOMC saw rare 3-way dissent (Hammack, Kashkari, Logan); Goldman Sachs warns amplified FX volatility — Regards of Wallstreet", "url": "https://www.regardsofwallstreet.com/news/jackson-hole-2026-dates-schedule-warsh-first-speech" },
+      { "label": "Goldman Sachs warns of amplified FX volatility for Warsh's Jackson Hole debut; EUR/USD cited as most sensitive pair given unresolved policy uncertainty — BigGo Finance", "url": "https://finance.biggo.com/news/4bdca185-b608-4b0f-a895-e3f2ef41d945" },
+      { "label": "MRVL reports AH today (Aug 27); market expects 35.1% YoY revenue growth; second AI semiconductor read-through after NVDA's dual-bar beat — StockStory", "url": "https://stockstory.org/us/stocks/nasdaq/mrvl/news/earnings/marvell-technology-mrvl-reports-earnings-tomorrow-what-to-expect" },
+      { "label": "BTC $79,686 (+1.2%); intraday high $80,529 (briefly broke $80K ceiling); session range $77,619–$80,529; risk-on NVDA bid — Crypto.com live", "url": "https://crypto.com/exchange/trade/BTC_USDT" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7723.0,  "change_pct":  0.70, "as_of": "2026-08-27T11:00:00Z" },
+    "nasdaq": { "level": 26360.0, "change_pct":  1.00, "as_of": "2026-08-27T11:00:00Z" },
+    "vix":    { "level": 15.21,   "change_pct": -1.81, "as_of": "2026-08-27T11:00:00Z" },
+    "ust10y": { "level": 4.64,    "change_bps":  -8,   "as_of": "2026-08-27T11:00:00Z" },
+    "dxy":    { "level": 99.06,   "change_pct":  0.04, "as_of": "2026-08-27T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.19, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 86.93, "trigger_above": 94.00, "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Premarket +7.4% (~$225.21 at 5:46 AM EDT); AH +5.33% ($220.84) immediately post-print. Q2 FY27: revenue $96.2B (+106% YoY), EPS $2.22 (vs. $2.09 consensus), data-center $89B (+117%), gross margin 75% — both bars of the dual-bar test cleared simultaneously. Q3 guidance $108B (+/-2%) versus $104.2B consensus; FY28 outlook ~70% revenue growth with CPU revenue more than doubling. AWS committed to 2 million Nvidia GPU units and Vera CPU integration with the Rubin architecture — the largest single hyperscaler commitment disclosed this cycle. Per the trade setup from yesterday: dual-bar cleared → re-risk the AI complex Thursday.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Rallying in sympathy with NVDA's dual-bar beat; chip complex broadly lifting premarket. The hyperscaler capex expansion narrative ($800B → $1.3T in 2027) is a multi-quarter tailwind for AMD's data-center GPU roadmap. AMD's below-$484 containment from eleven prior sessions is the first test today: sustained break above $484 on volume would confirm the NVDA read-through is sector-wide. $430 structural floor holds.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MRVL",
+      "note": "Reports AH today (August 27). Market expects 35.1% YoY revenue growth. Critical test of whether NVDA's hyperscaler capex narrative is sector-wide or company-specific. If MRVL's custom ASIC and optical interconnect revenue confirms the AI infrastructure demand NVDA cited, the re-risk extends to the broader complex. A MRVL miss or cautious guide raises the NVDA-specificity question and is the day's primary AH risk event ahead of Warsh's Friday keynote.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "AWS's 2M GPU commitment + Vera CPU integration with Nvidia's Rubin architecture signals Amazon is doubling down on Nvidia-based infrastructure rather than custom Trainium chips alone. Bullish read for Amazon's AI infrastructure positioning; competitive caution signal for Google TPUs and Microsoft Azure custom silicon. The $1.3T hyperscaler capex figure for 2027 implies sustained GPU cluster buildout across all three hyperscalers.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$79,686 (+1.2%) as of 11:03 UTC Thursday. Session range $77,619–$80,529 — briefly broke above the $80K ceiling intraday. NVDA's risk-on bid providing a crypto tailwind. Two consecutive daily closes above $80K would signal the ceiling is breaking and flag a move toward $85K. One intraday touch is not confirmation; the close matters.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial ongoing (~Day 15 of 7-week trial). PCE core in-line and 30Y declining removes multiple compression pressure on long-duration growth names. NVDA's blowout provides a positive macro read for AI capex spending that benefits Meta's AI infrastructure build. Warsh Friday is the next macro gate for long-duration tech multiples.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "VMware CVE-2026-59310 active exploitation and 72% AI revenue concentration overhang unchanged. The NVDA earnings read-through and hyperscaler capex expansion narrative ($800B → $1.3T) is a broad positive for AI infrastructure spend including AVGO's custom ASIC business. Q3 FY2026 results estimated Sept 4-5 — first public accounting of VMware remediation costs. $340–$350 remains next structural support.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "Azure $100B annual run-rate. Hyperscaler capex expansion to $1.3T in 2027 implies continued GPU cluster build — Azure is a direct beneficiary alongside AWS. PCE core in-line removes incremental rate pressure on long-duration tech multiples. Canada tariff cost-push on enterprise software pricing unchanged. Warsh Friday is the next macro input.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "Below $315 structural buyer-defense level. Tim Cook succession uncertainty and Q4 FY26 guidance miss overhang unchanged. NVDA's positive read does not directly benefit Apple's consumer hardware revenue mix. No new catalyst before Warsh's Friday keynote.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "~$177. Federal AI budget cycle the near-term variable; NVDA's hyperscaler capex expansion commentary ($800B → $1.3T) implies the AI infrastructure buildout that Palantir's enterprise AI software monetizes is accelerating. No new fundamental data this week; Warsh Friday is the macro input.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AI complex re-risk: NVDA + chip sympathy (AMD, AMAT, ASML) ahead of MRVL's AH print",
+      "thesis": "NVDA's dual-bar clear triggers the re-risk signal: gross margin at 75% (above 74.9%) AND Q3 total guide at $108B (well above the data-center quarterly run-rate threshold) cleared simultaneously. The setup is reinforced by the AWS 2M GPU commitment and hyperscaler capex growing to $1.3T in 2027. Macro backdrop constructive: both regime triggers (Brent and 30Y) are retreating. The sympathy play — AMD, AMAT, ASML on the positive guidance read — extends this trade. Risk to setup: MRVL disappointing AH tonight would raise the NVDA-specific vs. sector-wide question and require partial de-risk before Friday.",
+      "entry": "Re-risk on the open; size with reference to Warsh keynote risk Friday at 10 AM ET. AMD above $484 on volume today confirms chip-complex read-through. MRVL AH tonight is the check-in before the Warsh gate.",
+      "invalidation": "NVDA fades below $215 intraday on volume (institutional sell-the-news); or Warsh previews a hawkish frame in today's Jackson Hole panel discussions before Friday's formal keynote. Either breaks the setup.",
+      "horizon": "Immediate open through MRVL AH tonight; Warsh keynote Friday 10 AM ET is the next macro gate"
+    },
+    {
+      "asset": "Duration positioning ahead of Warsh's Jackson Hole keynote (Friday, Aug 28 at 10 AM ET)",
+      "thesis": "The 30Y at approximately 5.19% is 11bps below the 5.30% regime trigger, down from 5.34% on August 19. Core PCE at 3.3% (in-line) confirmed the disinflationary trajectory on core services is holding; but headline at 3.7% (energy/food) gives Warsh justification for a hawkish frame if he chooses it. The 3-way dissent at July 29 FOMC means internal pressure exists. Goldman Sachs flagged amplified FX volatility. Optimal pre-Warsh positioning: neutral on duration, stay short the extreme ends of the yield curve. September FOMC hike odds at 33% mean a hawkish Warsh reprices to 45-50%, triggering a 30Y spike back above 5.30%.",
+      "entry": "Hold duration positioning neutral through Friday's open. After Warsh: neutral or dovish (focus on July payrolls -23K, labor softening) → add duration selectively, extend on tech complex. Hawkish (3.7% headline as September hike justification) → reduce risk, 30Y re-breach alert.",
+      "invalidation": "Warsh previews hawkish tone in today's Jackson Hole panel discussions before Friday's formal 10 AM ET speech — watch for any framing of 3.7% headline PCE as requiring September action.",
+      "horizon": "Friday August 28 at 10 AM ET; September 16 FOMC is the terminal policy decision"
+    },
+    {
+      "asset": "MRVL AH tonight — sector-wide vs. NVDA-specific read",
+      "thesis": "Marvell Technology reports after today's close with a consensus expectation of 35.1% YoY revenue growth. If MRVL matches or beats on AI custom ASIC revenue and delivers a strong forward guide, it confirms that NVDA's hyperscaler AI infrastructure demand is sector-wide — validating the AI complex re-risk and extending the constructive read into Warsh's keynote. A MRVL beat + strong guide means the chip complex enters Warsh's speech on a two-beat foundation, making macro the only remaining gate. A MRVL miss or cautious guide forces partial re-risk reversal before Friday.",
+      "entry": "Monitor MRVL AH immediately after the close. Beat + strong guide → hold AI complex longs through Warsh. In-line or miss → reduce chip complex exposure before Thursday's close.",
+      "invalidation": "MRVL AH miss on revenue or guide materially below 35.1% YoY; or AI/custom ASIC revenue fails to confirm NVDA's hyperscaler capex expansion narrative.",
+      "horizon": "Today AH; MRVL's tone determines Friday pre-Warsh positioning"
+    }
+  ],
+  "bear_case": "The constructive setup is real but contains two time-bombs. First, and most proximate: Kevin Warsh steps to the Jackson Hole podium tomorrow morning (Friday, August 28, 10 AM ET) with a 3-way dissent from July's FOMC in his pocket, headline PCE at 3.7%, and core at 3.3% — both above the 2% target. If Warsh frames the speech around the headline PCE reading rather than labor market weakness (-23,000 July payrolls), September FOMC hike odds could reprice from 33% to 45-50% in minutes. That repricing would push the 30Y back through the 5.30% regime trigger — re-activating the bear regime on the day after the most bullish NVDA print in years. Goldman Sachs has explicitly flagged amplified FX volatility for the EUR/USD pair, meaning the dislocation could spread to currency markets and create cross-asset feedback into equities. The 11bps cushion between current 30Y levels (~5.19%) and the trigger (~5.30%) sounds comfortable; a 15bps yield spike is less than an hour's work in a hawkish Fed repricing. Second, and more structural: OpenAI's 'Jalapeno' custom inference processor is entering the field in a compute environment where inference is displacing training as the dominant workload. If custom silicon captures 10-15% of the inference market by mid-2027, NVDA's FY28 guidance (+70% revenue growth) faces execution risk at the margin. The AWS commitment of 2M GPUs speaks to training and dense-compute demand; inference economics favor efficiency over raw power, which is exactly the attack surface custom chips optimize for. The bear case is not that NVDA failed — they cleared the dual bar with material margin — but that the re-risk is being built on the foundation of a Warsh keynote the market hasn't seen, over an inference market transition NVDA's guidance visibility doesn't fully extend to.",
+  "body_mdx": "data/briefings/markets/2026-08-27-morning.mdx"
+}
