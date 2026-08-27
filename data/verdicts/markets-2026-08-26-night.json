@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-08-26",
+  "window": "night",
+  "generated_at": "2026-08-27T01:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "buy",
+    "emoji": "🟢",
+    "label": "BUY — 0 of 2 regime triggers breached: 30Y 5.18% (vs 5.30% gate), Brent ~$88 (vs $94 gate). NVDA: $96.2B rev (+106% YoY), DC $89B, GM 75% (misses 78% gate), Q3 guide $108B; AH +4% to ~$219. SPX 7,676 (-0.01%).",
+    "conviction": "medium",
+    "headline": "Nvidia shatters revenue estimates and guides higher, validating AI spending boom",
+    "rationale_short": "NVDA's Q2 FY27 print is the night's defining event and a broad beat: revenue $96.2B (vs $92.1B consensus, +4.5%), EPS $2.22 (vs $2.09), Data Center $89B (vs $86.33B), Q3 guide $108B (vs $104.2B consensus), FY28 revenue +70% with supply constrained through year-end. The dual gate from Tuesday was half-cleared: DC acceleration is confirmed at scale, but gross margin came in at 75% (both GAAP and non-GAAP), missing the 78% threshold required for full multiple re-rating. The market's verdict is constructive: AH +4% to ~$218.77, signaling a gap-up Thursday open for the chip sector. Regular session was held flat (SPX -0.01%, NDX -0.5%) as investors sat on their hands ahead of the print. Regime indicators remain inactive: 30Y at 5.18% (12bps below the 5.30% trigger), Brent near Tuesday's close well below $94. Bessent doubled bond buyback operations to at least $4B per auction targeting 10-to-20Y and 20-to-30Y bonds — keeping long yields anchored and the 30Y trigger buffer intact heading into Warsh's Friday keynote at Jackson Hole. BTC settled ~$78,869 (intraday range $77,619–$79,249), holding above support but still below the $80K ceiling that rejected the last two intraday spikes. Nasdaq composite, VIX, and DXY Aug 26 closes are estimated from prior-session levels and session character; conviction is medium accordingly.",
+    "supporting_data": [
+      { "label": "NVDA Q2 FY27: revenue $96.2B (+106% YoY), EPS $2.22 (beat $2.09), DC $89B, GM 75%, Q3 guide $108B — NVIDIA press release via SEC, Aug 26", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm" },
+      { "label": "NVDA AH +4% to ~$218.77; FY28 revenue guide +70%, supply constrained through FY28 — StockTitan, Aug 26", "url": "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-second-quarter-fiscal-98x41cxh35vk.html" },
+      { "label": "SPX holds near 7,676 (-0.01%), NDX -0.5% as chip sector held back ahead of NVDA print — Vantage Markets, Aug 26", "url": "https://www.vantagemarkets.com/en/market-analysis/sp500-today-august-26-2026-nvidia-earnings/" },
+      { "label": "Bessent doubles bond buyback ops to at least $4B/auction targeting 10-20Y and 20-30Y; dollar and bond markets on edge ahead of Warsh Jackson Hole keynote — CNBC, Aug 26", "url": "https://www.cnbc.com/2026/08/26/jackson-hole-warsh-bessent-bonds-treasury-dollar.html" },
+      { "label": "30Y yield 5.18% (+1bp), below 5.30% regime trigger; Treasury yield buyback relief — Fortune, Aug 24", "url": "https://fortune.com/2026/08/24/treasury-bond-yields-buybacks-borrowing-costs/" },
+      { "label": "BTC settled $78,869; intraday range $77,619–$79,249; below $80K ceiling rejected twice last week — Crypto.com exchange data, Aug 27 00:11 UTC", "url": "https://crypto.com/exchange/trade/BTC_USDT" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7676.00, "change_pct": -0.01, "as_of": "2026-08-26T21:00:00Z" },
+    "nasdaq": { "level": 26020.00, "change_pct": -0.50, "as_of": "2026-08-26T21:00:00Z" },
+    "vix":    { "level": 14.80, "change_pct": 0.68,  "as_of": "2026-08-26T21:00:00Z" },
+    "ust10y": { "level": 4.64, "change_bps": 0,      "as_of": "2026-08-26T21:00:00Z" },
+    "dxy":    { "level": 98.80, "change_pct": -0.04, "as_of": "2026-08-26T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.18, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 88.00, "trigger_above": 94.00, "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Q2 FY27: revenue $96.2B (+106% YoY, beat $92.1B), EPS $2.22 (beat $2.09), Data Center $89B (beat $86.33B), GAAP/non-GAAP gross margin 75.0% (misses 78% dual-gate threshold), Q3 guide $108B (beat $104.2B consensus). FY28: revenue +70% YoY, CPU revenue more than doubles, supply constrained through year-end. AH +4% to ~$218.77. The dual gate was half-cleared: DC acceleration confirmed at scale; GM at 75% (third consecutive quarter at this level) prevents full multiple re-rating at current ~22x forward revenue. AH reaction constructive without being euphoric.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Chip sector gap-up anticipated Thursday on NVDA's print. AMD spent nine consecutive sessions below $484 containment ceiling. NVDA's $89B DC print confirms hyperscaler capex expansion — AMD's MI400 series is the primary alt-supply beneficiary. $484 is the structural recovery threshold; $430 is next structural support if reclaim fails.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Direct beneficiary of NVDA's $89B DC print: hyperscaler custom silicon demand confirmed at scale. VMware CVE-2026-59310 overhang and 72% AI revenue concentration unchanged. Q3 FY2026 (est. Sept 4-5) is the next data point. $380 is the recovery threshold.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Settled $78,869; intraday range $77,619–$79,249. Third consecutive session where the $80K ceiling was tested and rejected intraday ($79,249 high Wednesday). The ceiling is structural until proven otherwise: three tests, three rejections. Without Thursday chip-sector follow-through converting to broad risk-on, path of least resistance targets $75K–$76K support zone.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "Antitrust trial ongoing (~Day 15 of 7 weeks). 30Y at 5.18% maintains multiple compression. NVDA beat reduces AI infrastructure cost uncertainty — mild positive read-through for hyperscaler ad-revenue certainty. Bessent major-institution announcement still pending.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "NVDA's $89B DC revenue confirms Azure and hyperscaler capex is accelerating — positive for Azure $100B run-rate thesis. 30Y at 5.18% maintains multiple compression. Chip sector gap-up Thursday is a rising-tide signal. Canada tariff headwind unchanged.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "NVDA (~$219 AH) — post-print read-through into Thursday open",
+      "thesis": "NVDA's Q2 FY27 print clears the revenue and guide bars decisively: $96.2B revenue (beat 4.5%), DC $89B (beat 3.1%), Q3 guide $108B (beat $104.2B). Fifth consecutive EPS beat. GM at 75% misses the 78% dual-gate but the market (AH +4%) is interpreting it as an investment posture (Rubin/Blackwell supply ramp), not a structural margin problem. Q3 guided at $108B (+12% sequential) validates the DC acceleration thesis at scale. Chip sector (AMD, AVGO, Marvell, Intel) is primed for a gap-up Thursday open. 30Y at 5.18% is not the multiple ceiling it would be above 5.30%.",
+      "entry": "Long NVDA / chip sector into Thursday gap-up. GM at 75% is the entry caveat — if price action stalls at $220–$225 resistance zone and reverses intraday, it signals the market has repriced the GM miss as the binding constraint, not the revenue beat.",
+      "invalidation": "NVDA reverses AH gains and opens below Tuesday's $213 close on Thursday — implies market repricing on GM miss overrides the revenue/guide beat.",
+      "horizon": "2-3 sessions; Warsh Jackson Hole keynote Friday Aug 28 is the next macro-level risk event"
+    },
+    {
+      "asset": "30Y yield (5.18%) — Warsh keynote Friday is the rate-path decision",
+      "thesis": "Bessent's doubling of bond buyback operations (at least $4B/auction, targeting 10-to-20Y and 20-to-30Y) kept the 30Y at 5.18% Wednesday — 12bps below the 5.30% trigger. Warsh's Friday keynote is the decisive input: a hawkish frame (Canada tariffs + Iran energy as compounding inflation) re-tests 5.30% and activates the first regime indicator; a neutral-to-dovish frame opens a path to 5.10% and material regime-risk reduction. Consumer Confidence Expectations Index at 68.2 (below 80 recession-risk threshold) gives Warsh empirical cover for either framing. Bessent's buyback intervention adds a policy variable that complicates the read.",
+      "entry": "30Y above 5.30% = first regime indicator active (Brent inactive at ~$88). 30Y below 5.10% = rate regime materially reduced ahead of September 16 FOMC.",
+      "invalidation": "Warsh strikes unambiguously dovish tone; 30Y falls below 5.10% Friday.",
+      "horizon": "2 sessions — Warsh keynote Friday Aug 28"
+    }
+  ],
+  "bear_case": "NVDA's print looks clean at the headline level but contains the seeds of the next disappointment: gross margin at 75% marks the third consecutive quarter at or below this level, not an isolated Rubin-ramp data point. At ~22x forward revenue, the market was pricing 78%+ margins; three consecutive quarters at 75% is a structural step-down, not a transition. The AH +4% move is half of what the prior bull case required for a full re-rating — five of six post-earnings prints produced drawdowns regardless of beat magnitude, and the pattern is unchanged: the stock enters Thursday elevated on the print, vulnerable to day-two profit-taking once initial beat euphoria fades and the GM miss narrative takes hold. Jackson Hole Friday is the second risk layer: Bessent's bond buyback doubling creates the illusion of yield stability without altering the fundamental rate path — if Warsh's keynote frames Canada tariffs and Iran energy as compounding inflation vectors, the 30Y moves from 5.18% toward 5.30%, activating the first regime indicator at the worst possible moment (post-NVDA euphoria, before September FOMC). BTC's third test of the $80K ceiling (intraday high $79,249 Wednesday, rejected for the third time) confirms the structural resistance — three rejections at the same ceiling is the pattern until a clean weekly close above it. The path of least resistance is $75K–$76K support on any coordinated risk-off catalyst. If Thursday's chip-sector gap-up fades intraday on the GM miss narrative, and Warsh strikes a hawkish tone Friday, next week's setup is materially worse than Wednesday's closing tape implied.",
+  "body_mdx": "data/briefings/markets/2026-08-26-night.mdx"
+}
