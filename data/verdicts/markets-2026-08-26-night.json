@@ -1,0 +1,98 @@
+{
+  "routine": "markets",
+  "date": "2026-08-26",
+  "window": "night",
+  "generated_at": "2026-08-26T22:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Nvidia delivers the dual-bar beat; chip sector resets ahead of Warsh's keynote Friday",
+    "label": "SPX -0.07% to 7,672; NVDA AH +5% to ~$220 on $96.2B revenue, 75% GM, $108B Q3 guide; PCE core 3.3% in-line; 10Y -10bps; AMD +4.91%; META $18B settlement",
+    "rationale_short": "NVDA cleared both bars simultaneously — gross margin 75% (above 74.9%) and Q3 guide $108B (above $104.2B expected), ex-China. Core PCE at 3.3% preserved the rate backdrop: the 10Y fell 10bps to 4.64%, removing the multiple compression that preceded the print. The Q3 guide excluding China makes the $108B a floor, not a ceiling, if export policy eases; the China exclusion also caps the read-through if Huawei Ascend continues gaining share there. The session now shifts to Warsh's Friday keynote — a neutral-to-hold signal confirms the macro improvement; hawkish framing citing Canada tariff cost-push would push the 30Y back above 5.20% into a chip-sector post-NVDA window. If the 30Y crosses 5.25% before Friday close, this read no longer holds.",
+    "supporting_data": [
+      { "label": "NVDA Q2 FY27: $96.2B revenue (+106% YoY), DC $89B (+117%), GM 75%, Q3 guide $108B vs. $104.2B; AH +5% to ~$220; Q3 guide excludes China DC — Yahoo Finance", "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-posts-record-96-2b-234000383.html" },
+      { "label": "Amazon AWS: 2M Nvidia GPUs + millions of Vera CPUs committed through 2027-28; Huang guides 70% FY28 revenue growth, CPU revenue more than doubles — 24/7 Wall St.", "url": "https://247wallst.com/cards/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastr-nvda-press-release-01m0zz5dnvc0bmmeyqsyhz8k4y" },
+      { "label": "Core PCE July +3.3% YoY (in-line); headline +3.7% (slight upside); 10Y fell 10bps to 4.64% — CNBC", "url": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html" },
+      { "label": "AMD +4.91% to $479.18; Raymond James Strong Buy, target $641 from $565; chip sector enters Thursday open with NVDA beat as backdrop — Yahoo Finance", "url": "https://finance.yahoo.com/technology/articles/amd-sinks-2-9-nvidias-195630849.html" },
+      { "label": "Meta $18B child-safety settlement with 48 state AGs; sweeping under-18 platform changes; certainty replaces 7-week trial overhang — TechCrunch", "url": "https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/" },
+      { "label": "Jackson Hole begins Aug 27; Warsh keynote Fri Aug 28 10 AM ET; September hike odds ~33% — Regards of Wall Street", "url": "https://www.regardsofwallstreet.com/news/jackson-hole-2026-dates-schedule-warsh-first-speech" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7672.16, "change_pct": -0.07, "as_of": "2026-08-26T21:00:00Z" },
+    "nasdaq": { "level": 26095.0, "change_pct": -0.21, "as_of": "2026-08-26T21:00:00Z" },
+    "vix":    { "level": 15.45,   "change_pct": 5.10,  "as_of": "2026-08-26T21:00:00Z" },
+    "ust10y": { "level": 4.64,    "change_bps": -10,   "as_of": "2026-08-26T21:00:00Z" },
+    "dxy":    { "level": 98.90,   "change_pct": 0.06,  "as_of": "2026-08-26T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.15, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 86.50, "trigger_above": 94.00, "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Regular close ~$210; AH +5% to ~$220 on dual-bar beat: $96.2B revenue (+106% YoY), DC $89B (+117%), GM 75%, Q3 guide $108B ex-China. Amazon AWS deal 2M GPUs + millions of Vera CPUs through 2027-28. FY28 guidance: 70% revenue growth, CPU revenue more than doubles. Morning's constructive scenario (~40% probability) confirmed. The China exclusion in the Q3 guide is the remaining structural variable.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$479.18 (+4.91%); Raymond James upgraded to Strong Buy, target $641 from $565. Tenth consecutive session below $484 ceiling, but NVDA's dual-bar beat removes the demand-skeptical scenario entirely. Thursday open is the first post-print read on whether $484 breaks.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "$578.77 (+1.6%). $18B child-safety settlement with 48 state AGs ends the 7-week federal trial. Sweeping under-18 platform changes (default 2-hour daily limits on Facebook/Instagram). Federal FTC antitrust case is separate and ongoing. Certainty replaces an open liability variable.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "$496.37 (+1.9%). 10Y falling 10bps to 4.64% is a meaningful long-duration benefit; Azure $100B run-rate intact. Canada tariff headwind on enterprise software margins unchanged.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AAPL",
+      "note": "$313.45 (+1.1%). Recovered with the broader market. Below $315 structural support; no new catalyst before Warsh Friday. Cook transition and China demand uncertainty unchanged.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "$355.59 (-1.8%). Chip sector rebound provided no tailwind; VMware CVE-2026-59310 overhang and 72% AI revenue concentration unchanged. Q3 FY2026 results (est. Sep 4-5) are the next data point; the first public accounting of remediation costs. $380 remains resistance; $340-350 is next support.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "$178.13 (+0.6%). Slight positive with the session. Federal AI budget cycle remains the near-term variable; no new catalyst this week.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$78,521 (-0.58%). Third consecutive session where BTC held below $80K; no sustained breach. Debasement bid (DXY flat, Bessent buyback ops effective Sep 9) provides structural support. Two consecutive closes above $80K would signal the ceiling breaking; reversal below $76,661 (August 24 intraday low) without a macro catalyst would be the downside confirmation.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "AMD / Chip Sector",
+      "thesis": "AMD at $479 has had nine consecutive sessions below the $484 structural ceiling. NVDA's dual-bar beat — GM 75% and Q3 guide $108B — removes the demand-skeptical scenario that was capping AMD's multiple alongside execution concerns. Raymond James raised the target to $641 on the $201B server-CPU forecast. Thursday is the first post-print session; the setup is the most favorable AMD has seen since early August.",
+      "entry": "Two consecutive regular-session closes above $484 on above-average volume would confirm the ceiling has broken. Below $460 Thursday signals the market is treating NVDA's beat as isolated to the Blackwell stack, not a sector-wide read-through.",
+      "invalidation": "Warsh hawkish keynote Friday pushing 30Y above 5.25% would add rate compression on top of the AMD multiple, capping any breakout regardless of NVDA's fundamental read.",
+      "horizon": "Thursday through Friday close; Warsh keynote is the gating event."
+    },
+    {
+      "asset": "30Y Treasury / Rate Regime",
+      "thesis": "The 30Y retreated from Tuesday's 5.23% to approximately 5.15% today after PCE core printed in-line. At 15bps below the 5.30% formal trigger, the yield has the most room it has had since early August. The Bessent long-dated buyback program ($4B+ per op) begins September 9; structural demand is coming. Warsh's Friday keynote is the next directional catalyst.",
+      "entry": "30Y holding below 5.20% through Friday would formally deactivate the rate-regime risk for the first time since mid-July. A sustained break above 5.25% into the Warsh keynote would re-trigger compression concerns heading into September FOMC.",
+      "invalidation": "A hawkish Warsh keynote citing Canada tariff inflation and headline PCE at 3.7% is the direct path to 30Y back above 5.25%. If 30Y crosses 5.30%, the regime trigger reactivates in the same session as the post-NVDA chip reset.",
+      "horizon": "Friday (Warsh keynote) through September 16 FOMC."
+    },
+    {
+      "asset": "BTC",
+      "thesis": "BTC has had three consecutive sessions testing $80K — each with an intraday breach and a close below. The ceiling is structural. Two attempts preceded Wednesday's third; the debasement bid (DXY declining, Bessent Treasury buyback program) provides support from below. The ceiling and the floor are converging.",
+      "entry": "Two consecutive regular-session closes above $80,000 would signal the ceiling breaking. Bessent's pending 'major financial institution' sanction, if targeting a Chinese bank Thursday, is the session's crypto-adjacent wildcard — a China-bank announcement historically produces a brief BTC spike followed by reversal. $76,661 (August 24 intraday low) is the support level that would signal the ceiling is reasserting as a range top.",
+      "invalidation": "A hawkish Warsh driving yields sharply higher Friday, combined with no new crypto-specific catalyst, returns BTC to the lower end of the $76-78K range.",
+      "horizon": "Thursday through Warsh Friday; then reassess at September 9 (buyback ops begin)."
+    }
+  ],
+  "bear_case": "The constructive scenario happened — but notice what it did not resolve. NVDA's Q3 guide of $108B explicitly excludes China data center revenue; if Huawei Ascend 910C continues gaining enterprise share in China, $108B becomes a ceiling rather than a floor. Gross margin at 75% is the second consecutive quarter of compression from the 78-80% peak range; if memory and wafer costs continue rising, higher revenue converts to margin compression rather than multiple expansion. CSCO (-4% AH on beat-and-raise) and AMAT (-3.9% AH on beat) demonstrated that AI infrastructure altitude does not guarantee multiple re-rate even on a clean print. NVDA's +5% AH on a bigger beat is more constructive but not unprecedented confirmation of sustained multiple expansion. If the 30Y crosses 5.25% following Warsh's Friday keynote, NVDA's expanded multiple faces rate compression from above and margin pressure from below simultaneously, and this read no longer holds.",
+  "body_mdx": "data/briefings/markets/2026-08-26-night.mdx"
+}
