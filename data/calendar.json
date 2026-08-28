@@ -1,39 +1,40 @@
 {
   "events": [
     {
-      "date": "2026-08-27",
-      "label": "Jackson Hole Economic Policy Symposium (Aug 27–29) — Warsh keynote Aug 28; AI-earnings trifecta as backdrop",
-      "kind": "FOMC",
-      "tickers": ["TLT", "TBT", "QQQ", "IWM", "SPY", "GLD"],
-      "note": "Updated Aug 27 night: Symposium underway. Warsh keynote Friday Aug 28 at 10 a.m. ET — his first as Fed Chair, 19 days before the September 16 FOMC. Backdrop has strengthened since Aug 26: NVDA confirmed dual-bar beat ($227.98, +8.74%), Salesforce +22% (Agentforce ARR $1.5B, +240% YoY; Anthropic partnership), CrowdStrike +21% — AI revenue actualization confirmed across hardware, software, and security. Core PCE July 3.3% (in-line); headline 3.7%. 30Y at 5.18%, 12bps from 5.30% trigger. September hike odds ~33%. Central question: does Warsh frame Canada tariff cost-push (Sept 8 effective) + headline PCE 3.7% as non-transitory inflation vectors (hawkish), or note core in-line and hold? Neutral pushes 30Y toward 5.05-5.10%; hawkish pushes 30Y back above 5.20-5.25% into a post-NVDA chip window where multiples have just expanded. UMich final August (preliminary: 51.0) prints mid-session. Bessent 'major financial institution' sanction still pending — if announced Friday before keynote, oil spike enters the keynote backdrop."
-    },
-    {
-      "date": "2026-08-28",
-      "label": "Bessent 'major financial institution' sanction — still pending as of Aug 27 close; Iranian crude-financing target",
-      "kind": "GEO",
-      "tickers": ["SPY", "QQQ", "BTC"],
-      "note": "Updated Aug 27 night: Still unannounced through Thursday close. Treasury Secretary Bessent committed to naming the institution 'by week's end' (announced Aug 24). Most plausible target: a non-US bank facilitating Iranian crude purchases — a Chinese institution is the geopolitically significant scenario. Brent $87.65 (+1.3%), $6.35 below $94 trigger. A routine entity sanction is absorbed easily at this buffer. A Chinese-bank sanction arriving Friday morning before Warsh speaks would layer oil-spike risk onto Warsh's keynote backdrop — the 15% tail scenario for the week."
+      "date": "2026-09-04",
+      "label": "August jobs report (BLS, 8:30 AM ET) — first post-Warsh payrolls print; September FOMC gate",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "tickers": ["TLT", "TBT", "SPY", "QQQ", "IWM"],
+      "note": "Added Aug 28 morning: The first Friday after Labor Day. With Warsh's Jackson Hole debut deliberately non-committal on the September rate path and three July dissenters (Hammack, Kashkari, Logan) on record for an immediate hike, this print is the most consequential pre-FOMC data point of the cycle. A soft print (below 150K payrolls, AHE below 0.2% MoM) pushes 30Y toward 5.05-5.10% and makes a September hold consensus. A hot print (above 200K, AHE above 0.3% MoM) — arriving 4 days before Canada's retaliatory tariffs (September 8) — pushes 30Y above 5.25% and activates the two-variable September hike case. The 30Y at 5.199% at Friday's August 28 close is 10bps from the 5.30% regime trigger."
     },
     {
       "date": "2026-09-05",
       "label": "AVGO Q3 FY2026 earnings (est.) — through $380 structural support; VMware + AI concentration dual overhang",
       "kind": "EARNINGS",
       "tickers": ["AVGO", "NVDA", "AMD"],
-      "note": "Updated Aug 19 night: AVGO fell 5% to ~$362 on August 19, breaking through $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries per Aug 14 disclosure) + 72% AI revenue concentration (~72% of next-quarter sequential growth) create dual overhang. At ~65x trailing P/E, any miss or margin compression compounds. Q3 FY2026 results (est. September 4–5) are the first public accounting of both: VMware remediation costs in financial guidance, enterprise customer commentary on the incident, and AI revenue breadth. $380 is now resistance; $340–350 is the next structured support zone. Monday's chip-sector selloff (Intel -5%, AMD -4%) increases sector contagion risk. Flip: recovery above $380 on volume, or formal VMware incident-containment statement before earnings."
+      "note": "Updated Aug 19 night: AVGO fell 5% to ~$362 on August 19, breaking through $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries per Aug 14 disclosure) + 72% AI revenue concentration (~72% of next-quarter sequential growth) create dual overhang. At ~65x trailing P/E, any miss or margin compression compounds. Q3 FY2026 results (est. September 4–5) are the first public accounting of both: VMware remediation costs in financial guidance, enterprise customer commentary on the incident, and AI revenue breadth. $380 is now resistance; $340–350 is the next structured support zone. Flip: recovery above $380 on volume, or formal VMware incident-containment statement before earnings."
     },
     {
       "date": "2026-09-08",
       "label": "Canada retaliatory tariffs effective — dairy, appliances, ag equipment, pulp, paper, electronics",
       "kind": "GEO",
       "tickers": ["SPY", "IWM", "XLI", "XLP"],
-      "note": "Updated Aug 24 night: Carney confirmed Sept 8 date on track. Aug 24 statement: 'We are at war with the United States'; accused Trump administration of seeking to destroy Canada's core industries (steel, aluminum, autos). Dollar-for-dollar retaliation against US 50% tariffs on $28B of Canadian goods (effective Aug 24). Arrives 8 days before September 16 FOMC. Manufacturing supply-chain stress at 13-month high as of Aug 22 PMI. If Warsh at Jackson Hole (Aug 28) cites Canada-US tariff cascade as an inflation risk, September hike odds above 31% would increase."
+      "note": "Updated Aug 28 morning: Carney confirmed Sept 8 date on track. Dollar-for-dollar retaliation against US 50% tariffs on $28B of Canadian goods (effective Aug 24). Warsh's Jackson Hole keynote (Aug 28) focused on framework reform rather than citing Canada tariff cost-push — the tariff-inflation linkage was not incorporated into his public framing. Tariffs arrive 4 days after the August jobs report (Sept 4) and 8 days before September 16 FOMC. If the jobs report is hot and Canada tariff cost-push enters Fed communications in the days between Sept 8 and Sept 16, September hike odds above 40% are the two-variable scenario."
     },
     {
       "date": "2026-09-09",
       "label": "Bessent Treasury long-dated buyback ops begin — $4B+ per op, 10-20yr and 20-30yr bonds",
       "kind": "OTHER",
       "tickers": ["TLT", "TBT", "QQQ", "SPY"],
-      "note": "Added Aug 19 night: Treasury Secretary Bessent announced August 19 the department will double the size of long-dated bond buyback operations, raising the maximum per-operation from $2B to at least $4B for bonds maturing in the 10-to-20-year and 20-to-30-year ranges. Effective September 9, runs through November 4 (end of current refunding quarter). Immediate market impact: 30Y fell 9bps to 5.196% on the announcement. The program provides structural demand support for the long end through Jackson Hole (Aug 27–29) and into October. If underlying supply dynamics ($432B July deficit, $1.7T corporate issuance) overwhelm the $4B+ buyback, the 30Y could reassert above 5.25% before the program begins."
+      "note": "Added Aug 19 night: Treasury Secretary Bessent announced August 19 the department will double the size of long-dated bond buyback operations, raising the maximum per-operation from $2B to at least $4B for bonds maturing in the 10-to-20-year and 20-to-30-year ranges. Effective September 9, runs through November 4 (end of current refunding quarter). The program provides structural demand support for the long end. If underlying supply dynamics overwhelm the $4B+ buyback, the 30Y could reassert above 5.25% before or during the program. BTC's structural debasement bid is partially underwritten by the buyback program as a signal of Treasury demand-management."
+    },
+    {
+      "date": "2026-09-16",
+      "label": "FOMC decision — September rate path; first post-Warsh/post-Canada-tariff decision",
+      "kind": "FOMC",
+      "tickers": ["TLT", "TBT", "SPY", "QQQ", "GLD", "BTC"],
+      "note": "Added Aug 28 morning: Warsh's Jackson Hole keynote declined to signal the September outcome; three July dissenters (Hammack, Kashkari, Logan) voted for an immediate hike. The August jobs report (Sept 4), Canada's retaliatory tariffs (Sept 8), and any Fed communications in between are the three inputs that determine the vote count. A soft jobs print plus no tariff-inflation escalation makes a hold near-consensus; a hot jobs print plus tariff cost-push framing makes a hike live above 40% odds. The 30Y at 5.199% at Friday Aug 28 close is 10bps from the 5.30% regime trigger."
     },
     {
       "date": "2026-12-09",
