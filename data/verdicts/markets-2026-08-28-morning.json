@@ -1,0 +1,97 @@
+{
+  "routine": "markets",
+  "date": "2026-08-28",
+  "window": "morning",
+  "generated_at": "2026-08-28T11:20:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "⏸️",
+    "label": "ES -0.04% (7,739); NQ -0.32% (29,600); MRVL -7.58% pre-mkt (beat $2.74B rev / $0.94 EPS, margin guide weak); RBRK -8.30% (sell-the-news after +11% Thu); NVDA $227.98 (+8.74% Thu close); AMD $472.35 (-0.91% Thu); BTC $79,577; 10Y 4.66%; Warsh keynote 10 AM ET",
+    "headline": "Marvell beats but sinks premarket, narrowing AI trade to Nvidia ahead of Warsh debut",
+    "conviction": "medium",
+    "horizon": "Through Warsh keynote 10 AM ET today; reassess for Friday afternoon session",
+    "rationale_short": "Marvell's Q2 beat — revenue $2.74B (vs $2.72B est), adj. EPS $0.94 (vs $0.93 est) — was real but razor-thin after a 187% YTD run, and the Q3 guide of $3.15B was undercut by gross margin compression concerns, sending shares -7.58% premarket. Rubrik's parallel -8.30% premarket (after surging +11.33% in Thursday's regular session on its own beat) reinforces the pattern: the bar for high-multiple tech infrastructure is priced for perfection, and anything short of a blowout sells. The AMD divergence — down 0.91% Thursday while NVDA gained 8.74% — has now been extended into Friday's premarket via MRVL: the market's answer is emphatically that AI demand is Blackwell-specific, not a broad-based semi cycle. Nasdaq futures -0.32% vs S&P -0.04% maps that story precisely. Warsh's 10 AM ET Jackson Hole keynote is the week's defining event: with September hike odds at ~33%, 10Y at 4.66% (+2bps), and headline PCE at 3.7% alongside a softening labor market, the asymmetry is live in both directions. A dovish framing pushes the rate-regime risk formally off the table; a hawkish framing citing Canada tariff cost-push re-activates compression concerns heading into September FOMC. Hold positions; add nothing new ahead of the podium.",
+    "supporting_data": [
+      { "label": "Nasdaq futures slip as Marvell and Rubrik sink premarket — ts2.tech Aug 28", "url": "https://ts2.tech/en/stock-market-today-08-28-2026/" },
+      { "label": "Rubrik stock plunges despite strong Q2 print: rev $427M vs $396M est, EPS $0.22 vs $0.04 est; AH -9.73% after +11.33% regular session — Benzinga", "url": "https://www.benzinga.com/markets/earnings/26/08/61481897/rubrik-stock-plunges-despite-strong-q2-print" },
+      { "label": "Marvell Technology announces Q2 earnings: beats by $0.01 EPS ($0.94 adj.), revenue $2.739B vs $2.72B est.; Q3 guide $3.15B; pre-mkt -7.58% — MarketBeat", "url": "https://www.marketbeat.com/instant-alerts/earnings-marvell-technology-nasdaq-mrvl-announces-quarterly-earnings-results-beats-estimates-by-001-eps-2026-08-27/" },
+      { "label": "Stock market today Aug 27: Nvidia surges on blowout results, closes $227.98 (+8.74%); AMD -0.91% — Motley Fool", "url": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-nvidia-surges-on-blowout-results-and-surprising-guidance/" },
+      { "label": "Fed Chair Warsh keynote Friday 10 AM ET, Jackson Hole; September hike odds ~33%; first public address since assuming chair — centraljersey.com", "url": "https://centraljersey.com/2026/08/28/kevin-warsh-jackson-hole-speech-august-28-2026-fed-rates/" },
+      { "label": "JHole deep-dive: S&P 500, Nasdaq, crypto rally scenario on dovish Warsh framing — FX Street", "url": "https://www.fxstreet.com/analysis/jhole-deep-dive-sp-500-nasdaq-crypto-rally-on-dovish-speech-202508250908" }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7739.50, "change_pct": -0.04, "as_of": "2026-08-28T09:00:00Z" },
+    "nasdaq": { "level": 29600.0, "change_pct": -0.32, "as_of": "2026-08-28T09:00:00Z" },
+    "vix":    { "level": 15.80,   "change_pct":  1.21, "as_of": "2026-08-28T09:00:00Z" },
+    "ust10y": { "level": 4.66,    "change_bps":     2, "as_of": "2026-08-28T09:00:00Z" },
+    "dxy":    { "level": 99.05,   "change_pct":  0.08, "as_of": "2026-08-28T09:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.16, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 86.70, "trigger_above": 94.00, "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "MRVL",
+      "note": "Q2 beat: revenue $2.74B (vs $2.72B est), adj. EPS $0.94 (vs $0.93 est). Q3 guide $3.15B. Gross margin outlook compressed; shares -7.58% premarket to ~$97. Stock had run 187% YTD entering earnings — the bar was priced for a blowout; a $0.01 beat delivers a selloff. The Google custom chip deal ($12.2B) and AI data-infrastructure thesis are intact structurally, but near-term margin pressure from rising memory and packaging costs is the new friction. Watch for stabilization near the August 1 earnings base at ~$88-90 if selling accelerates at the open.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "RBRK",
+      "note": "Q2 beat: revenue $427M (vs $396M est), EPS $0.22 (vs $0.04 est); FY27 rev guide raised to $1.685-$1.693B (vs $1.65B est). Shares -8.30% premarket after surging +11.33% regular session Thursday — the market ran it in anticipation and is now selling the confirmation. Subscription ARR +33% YoY to $1.66B is genuinely strong. The selloff is multiple compression on a high-growth cybersecurity name rather than a thesis challenge; the reaction mirrors MRVL's — valuation buffers are thin after strong YTD runs.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "$227.98 Thursday close (+8.74%). Institutional confirmation is complete: two criteria met — regular-session close above $220 on above-average volume. The AH momentum from the Q2 beat ($225 pre-mkt Wednesday) was ratified rather than faded, distinguishing NVDA's move from the CSCO/AMAT patterns of prior quarters. Friday enters with NVDA as the lone confirmed beneficiary of the AI demand cycle. No new catalyst pre-Warsh.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$472.35 Thursday close (-0.91%). The $484 ceiling held for a fifteenth consecutive session despite NVDA's +8.74% institutional confirmation. The divergence is now complete: two data points (Wednesday AH divergence at -0.92% pre-market, Thursday regular session -0.91%) confirm the market is pricing AI semiconductor demand as Blackwell-specific. MRVL's premarket Friday selloff adds a third confirmation. The two-consecutive-close signal above $484 at above-average volume remains the ceiling-break criterion; no indication it is imminent.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "~$496 (Thursday close estimate). No direct earnings catalyst. Warsh dovish framing at 10 AM ET is the single most constructive scenario for MSFT's long-duration multiple. 10Y at 4.66% is one tick below the threshold where duration starts to bite. Canada tariff margin headwind (effective September 8) unchanged.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "~$579 (Thursday close). $18B settlement overhang cleared; FTC antitrust case ongoing. DXY ~99.05 near flat — international revenue translation neutral. Pre-Warsh paralysis applies equally here; no new stock-specific catalyst.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$79,577 (-0.05% from 24h ago). Fourth consecutive session failing to establish a sustained close above $80,000. The debasement bid is providing a floor but not momentum; Warsh's keynote carries direct implications — a dovish framing reduces the relative premium for rate-insensitive stores of value, while a hawkish framing supports the debasement narrative. Support at $76,661 (August 24 intraday low) is the near-term floor. Bessent buyback operations remain scheduled for September 9.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "MRVL — post-earnings mean reversion vs. structural support",
+      "thesis": "MRVL's -7.58% premarket on a narrow beat after a 187% YTD run is a valuation-compression event, not a thesis-destruction event. The Google custom chip deal ($12.2B) and AI data-infrastructure exposure remain structurally intact. The market is repricing gross margin risk — when that recalibration completes, the setup shifts to whether the August 1 earnings base (~$88-90) holds as support. At current pre-market prices (~$97), the stock is offering the first meaningful risk-adjusted entry since the May breakout.",
+      "entry": "A stabilization pattern on above-average volume after the initial gap down — ideally a hammer or doji on the 30-minute chart near $94-97 — would be the entry signal. A close below the August 1 earnings base ($88) would invalidate and signal a deeper recalibration toward the July gap fill at $82.",
+      "invalidation": "Warsh hawkish keynote raising the 30Y above 5.25% adds rate-compression to the margin-compression already in play; that combination would extend the selloff below $88. Also invalidated if MRVL management comments on the earnings call (if any) confirm the margin issue is structural rather than transient.",
+      "horizon": "1-3 sessions following the post-earnings reset."
+    },
+    {
+      "asset": "Warsh keynote asymmetry — rates and risk assets",
+      "thesis": "September hike odds at 33% mean Warsh's 10 AM ET speech is the most asymmetric market event since May's inaugural FOMC. Inflation at 3.4% (core PCE) and labor softening are the two signal variables — the Chair who dwells on inflation is hawkish, the Chair who dwells on jobs is dovish. The backdrop is arguably the most constructive since late 2025: NVDA confirmed AI capex, durable goods +1.1%, MRVL/RBRK selloffs are valuation not demand. A dovish framing formally deactivates the 30Y regime trigger (currently at 5.16%, trigger 5.30%) for the first time since mid-July.",
+      "entry": "30Y remaining below 5.20% through Friday close (confirmed dovish) would be the regime-deactivation signal; add risk exposure into the September 16 FOMC window. A 10Y spike through 4.75% on a hawkish surprise would be the stop signal for any risk longs added this week.",
+      "invalidation": "Oil spike toward $89-91 on any Bessent sanction named before Warsh speaks would hand the Fed Chair a simultaneous commodity-inflation signal that increases the probability of a hawkish framing regardless of his prepared remarks.",
+      "horizon": "10 AM ET today through September 16 FOMC."
+    },
+    {
+      "asset": "NVDA vs. sector — long NVDA, reduce AMD/MRVL weight",
+      "thesis": "The divergence is now confirmed across three data points: AMD -0.91% Thursday despite NVDA +8.74%, MRVL -7.58% Friday despite a beat, and RBRK -8.30% in a parallel 'sell the news'. NVDA at $227.98 is the sole institutional conviction trade in the AI semi complex. The pair trade — long NVDA, light on AMD/MRVL — captures both the confirmed demand cycle and the mean-reversion risk in the crowded names.",
+      "entry": "NVDA already confirmed above $220 (closed $227.98). The pair trade entry is already live for those who followed Wednesday's setup. Trimming AMD below $470 on continued divergence and MRVL at open-price stabilization would complete the rotation.",
+      "invalidation": "Warsh dovish framing triggers a sector-wide relief rally that lifts AMD through $484 and MRVL back above $105 — in that scenario, the narrow-NVDA thesis dilutes and the pair trade should be unwound.",
+      "horizon": "Through September 16 FOMC."
+    }
+  ],
+  "bear_case": "MRVL's -7.58% on a beat that beat by $0.01 EPS and $20M revenue is the most concentrated signal the tape has delivered this week: the AI infrastructure trade outside Blackwell is a valuation problem, not just a timing problem. If NVDA at $227.98 is 24x+ forward revenue, MRVL at $97 after a 187% YTD run and a narrow beat carries the same risk. The same 'sell the news' dynamic that hit RBRK (-9.73% AH despite beating rev by $31M) applies everywhere the setup was already priced for perfection. Warsh's hawkish framing — citing 3.7% headline PCE, Canada tariff cost-push effective September 8, and a labor market that hasn't broken decisively — would push the 10Y through 4.75% and re-rate the entire high-multiple complex simultaneously with the sector's worst post-earnings print of the cycle. The 30Y at 5.16% is 14bps from a formal regime trigger; a hawkish keynote puts it there before the September 16 FOMC. In that scenario, the NVDA beat becomes a ceiling not a floor — priced for perfection at a moment when the rate backdrop is re-tightening.",
+  "body_mdx": "data/briefings/markets/2026-08-28-morning.mdx"
+}
