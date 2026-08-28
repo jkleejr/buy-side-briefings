@@ -1,0 +1,112 @@
+{
+  "routine": "markets",
+  "date": "2026-08-27",
+  "window": "night",
+  "generated_at": "2026-08-28T01:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Tech surges behind Nvidia's blowout results as Wall Street braces for Fed chief's speech",
+    "label": "SPX +0.72% to 7,727; Nasdaq +1.57% to 26,541; NVDA +8% to $228; CRM +12% AH; OKTA +19% AH; CRWD +11% AH; BTC breaks $80K to $80,249; 30Y 5.16%; Warsh keynote Friday 10am ET",
+    "rationale_short": "NVDA's first post-dual-bar-beat session delivered +8% to $227.98, adding roughly $435B in market cap and driving tech as the sole advancing S&P 500 sector (+3%). Breadth was the problem: 10 of 11 sectors declined — the SPX gain is an index-weight story, not a broad rally. The AH software sweep (CRM +12%, OKTA +19%, CRWD +11%, ESTC +16.6%) broadens the AI monetization thesis from silicon to the application layer; three separate software stacks beating estimates in the same session is not coincidental. BTC broke the $80K ceiling that had capped three consecutive sessions, printing $80,249 at 8pm ET — the debasement bid and risk-on flows from the earnings wave drove the breach. The 30Y settled near 5.16%, 14bps below the 5.30% formal trigger and below the 5.20% comfort threshold, providing the rate context for Friday's Warsh keynote. CME FedWatch places two-in-three odds on a September hold. Friday's binary gate: Warsh neutral-to-dovish confirms the week's constructive read-through; hawkish framing citing Canada tariff cost-push pushes the 30Y back above 5.25% and compresses the multiple that Thursday's session extended. If 30Y crosses 5.30% before Friday close, this read does not hold.",
+    "supporting_data": [
+      {
+        "label": "NVDA +8% to $227.98, first post-earnings session on $96.2B Q2 / $108B Q3 guide; tech sole advancing S&P sector (+3%); XSW software ETF hits all-time high — The Motley Fool",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-tech-strength-powers-nasdaq-higher-as-nvidia-leads-rally/"
+      },
+      {
+        "label": "CRM +12% AH ($11.35B Q2 rev, EPS $5.90, guide raised); OKTA +19% AH (EPS $1.05, rev $805M, guide raised); CRWD +11% AH (Q2 $1.47B, +26% YoY, FY27 guide $5.99-6.01B) — FXStreet",
+        "url": "https://www.fxstreet.com/news/software-triumphs-crowdstrike-salesforce-okta-surge-afterhours-on-q2-earnings-202608262051"
+      },
+      {
+        "label": "BTC breaks $80K ceiling for first time after three-session cap; $80,249 at 8pm ET; debasement bid + earnings risk-on — Fortune",
+        "url": "https://fortune.com/article/price-of-bitcoin-08-27-2026/"
+      },
+      {
+        "label": "Warsh keynote Friday Aug 28 10am ET; Sept hike odds ~33%; markets under pressure to clarify rate path; 30Y eases to 5.16% — Axios",
+        "url": "https://www.axios.com/2026/08/27/warsh-guidance-jackson-hole"
+      },
+      {
+        "label": "CrowdStrike Q2: $1.47B rev (+26% YoY), record ARR net new $333M, FY27 guide raised; Citi and 10 others raise targets — Benzinga",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/08/61472513/crowdstrike-stock-best-day-ever-analyst-price-targets"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7727.0,  "change_pct": 0.72,  "as_of": "2026-08-27T21:00:00Z" },
+    "nasdaq": { "level": 26541.0, "change_pct": 1.57,  "as_of": "2026-08-27T21:00:00Z" },
+    "vix":    { "level": 15.21,   "change_pct": -1.55, "as_of": "2026-08-27T21:00:00Z" },
+    "ust10y": { "level": 4.67,    "change_bps": 3,     "as_of": "2026-08-27T21:00:00Z" },
+    "dxy":    { "level": 99.17,   "change_pct": 0.27,  "as_of": "2026-08-27T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.16, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent",     "value": 86.50, "trigger_above": 94.00, "unit": "USD/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$227.98 (+8.0%). First regular-session trading day post-dual-bar-beat ($96.2B Q2, $108B Q3 guide ex-China). Tech XLK +3%, XSW software ETF printed an all-time high. AH -$1.95 to ~$226 — profit-taking after the session's move. The AWS 2M GPU + Vera CPU commitment through 2027-28 remains the structural demand anchor; the China exclusion in the Q3 guide stays the open variable.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "$476.67 (-0.89%). Failed to break the $484 structural ceiling for the tenth consecutive session despite NVDA's +8% read-through — the market is treating NVDA's beat as Blackwell-specific, not a broad AI-silicon demand signal. Raymond James target of $641 unchanged. Below $460 on Friday would confirm the ceiling is reasserting as a range top rather than a compression zone.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CRM",
+      "note": "AH +12% after Q2: $11.35B revenue (vs. $11.32B est.), adj. EPS $5.90 more than doubled YoY. Anthropic partnership expanded. Software applications layer receiving the AI monetization premium that was silicon-only six months ago.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "OKTA",
+      "note": "AH +17-19% after Q2: adj. EPS $1.05 (vs. $0.97 est.), revenue $805M (vs. $795M est.), full-year guidance raised. Identity remains the highest-velocity AI security category; this is the third consecutive beat-and-raise quarter.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CRWD",
+      "note": "Q2 FY27: $1.47B revenue (+26% YoY), record net new ARR $333M, FY27 guide raised to $5.99-6.01B. 11 analysts raised targets. Cybersecurity for AI workloads is structurally accelerating. Stock opened Thursday sharply higher post-AH beat on Wednesday.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "Estimated +2-3% Thursday on NVDA read-through and software AH beats. Azure $100B run-rate intact; CRM beat with Anthropic partnership has direct Microsoft Copilot competitive read. Canada tariff enterprise software margin headwind unchanged.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "VMware CVE-2026-59310 overhang unchanged. Q3 FY2026 results (est. Sep 4-5) remain the first accounting of remediation costs. NVDA's beat does not resolve the VMware liability variable. $380 resistance, $340-350 support.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$80,249 (+1.82%). Broke the $80K ceiling that capped three consecutive sessions; high of $80,862 intraday. Debasement bid (DXY +0.27% but yields only +3bps) combined with earnings risk-on drove the breach. Bessent Treasury buyback program begins Sep 9. Two consecutive closes above $80K would confirm the breakout is structural. A reversal back below $78,500 without a macro catalyst would signal this was a false break.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Software Sector (CRM / OKTA / CRWD)",
+      "thesis": "Three independent software stacks (enterprise CRM, identity security, endpoint security) all reported beat-and-raise quarters in the same AH session. The AI monetization thesis has extended from silicon (NVDA, AMD) to the application layer. XSW software ETF printed an all-time high during the Thursday session before the CRM/OKTA beats hit. The Friday open is the first pricing event on all three simultaneously.",
+      "entry": "Friday open gap-up on CRM/OKTA/CRWD above their respective 52-week highs would signal a sector-wide re-rating event, not company-specific. Sustained volume above the 20-day average through the Warsh keynote window would confirm institutional rotation into software.",
+      "invalidation": "Warsh hawkish keynote pushing 30Y above 5.25% would compress long-duration software multiples immediately. A scenario where multiple beats are met with 'sell the news' by Friday close would indicate the re-rating was already priced pre-earnings.",
+      "horizon": "Friday open through close (Warsh keynote is the gating event); then reassess at September FOMC Sept 16."
+    },
+    {
+      "asset": "AMD / AI Silicon Breadth",
+      "thesis": "AMD closed -0.89% on the day NVDA gained +8%. The divergence is the signal: the market has decided NVDA's Blackwell beat is supply-stack-specific, not a broad AI silicon read-through. AMD at $476.67 is ten sessions below the $484 ceiling; Raymond James' $641 target requires the market to accept AMD's MI350X as a credible NVDA alternative. The setup is deteriorating — the best possible NVDA backdrop produced a red close for AMD.",
+      "entry": "Only two consecutive regular-session closes above $484 on above-average volume change this read. Below $460 following Friday's Warsh keynote would confirm AMD is in a sideways trap rather than a pre-breakout compression.",
+      "invalidation": "A Warsh speech that is explicitly neutral or accommodative, combined with AMD breaking $484 on volume Friday, would reset this setup. A specific AMD AI-related enterprise win announcement (hyperscaler MI350X order) would override the technical read.",
+      "horizon": "Friday through September FOMC (Sept 16). AMD's own Q3 FY2026 results are the next fundamental catalyst."
+    },
+    {
+      "asset": "BTC / 30Y Rate Regime",
+      "thesis": "BTC's breach of $80K removes the ceiling that had been structural for three sessions. The debasement bid (Bessent buyback program begins Sep 9) and risk-on from the software earnings wave are the near-term drivers. The 30Y at 5.16% is 14bps below the formal regime trigger (5.30%) and below the 5.20% comfort zone — if Warsh is neutral Friday, the rate context for the BTC debasement thesis improves materially.",
+      "entry": "Two consecutive closes above $80K (today plus Friday) would confirm the breakout. A Warsh neutral keynote with 30Y holding below 5.20% through Friday close reactivates the Sep 9 Bessent buyback bid as a structural support.",
+      "invalidation": "A hawkish Warsh driving 30Y above 5.25% on Friday would create rate compression that historically reverses debasement bids within 48-72 hours. BTC reversal below $78,500 without a macro catalyst would confirm the $80K breach was a false break driven by short-term earnings euphoria.",
+      "horizon": "Friday (Warsh keynote) through September 9 (Bessent buyback ops begin)."
+    }
+  ],
+  "bear_case": "Thursday's gains are structurally thin. Ten of eleven S&P 500 sectors declined; the index rose because NVDA added roughly $435B in market cap on a single day — a weight-driven move, not a broad market advance. AMD's inability to break $484 despite NVDA's best-backdrop scenario in months reveals the AI silicon read-through is increasingly Blackwell-specific. CRM, OKTA, and CRWD beat in AH, but software multiples entering these prints were already elevated; gap-up opens frequently resolve as 'sell the news' events within the first hour of trading when conviction is thin. BTC's $80K breach has happened twice before this month — each was followed by a reversal within 48 hours as short-covering exhausted itself. The Warsh keynote is the session's genuine binary: core PCE at 3.3% remains above target, Canada tariff cost-push is a documented inflation source, and a hawkish opening framing would push the 30Y from 5.16% back above 5.25% in a single session — compressing every re-rating that Thursday's session attempted simultaneously. Regime clearance is not confirmed until the 30Y closes below 5.10% for two consecutive sessions, which has not happened.",
+  "body_mdx": "data/briefings/markets/2026-08-27-night.mdx"
+}
