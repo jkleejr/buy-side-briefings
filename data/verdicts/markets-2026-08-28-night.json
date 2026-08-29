@@ -2,108 +2,65 @@
   "routine": "markets",
   "date": "2026-08-28",
   "window": "night",
-  "generated_at": "2026-08-29T00:30:00Z",
+  "generated_at": "2026-08-29T02:00:00Z",
   "is_seed": false,
   "verdict": {
-    "headline": "Warsh warns inflation battle isn't over, turning September rate hike into a coin flip",
-    "code": "step_aside",
-    "emoji": "🟠",
-    "label": "STEP ASIDE — September hike now ~50%; SPX -0.25% to 7,712; 30Y at 5.19%, 11bps from trigger; BTC failed $80K breakout",
-    "conviction": "medium",
-    "rationale_short": "Warsh's Jackson Hole debut was unambiguous: inflation 'still too high,' the Fed 'has more work to do.' September hike odds jumped from ~33% to ~50-60% in one speech, and the 10Y rose 5bps to 4.70% with DXY ticking up to 99.47. The S&P fell a contained -0.25% and VIX actually dipped to 14.51 — orderly, not a rout — but that calm surface conceals a real regime shift. The 30Y sits at 5.19%, 11bps from the 5.30% trigger. BTC's false break — spike to $81,500 intraday through the $80K ceiling, reversal to $77,848 (-2.97%) — is the clearest risk-off tell of the session. MRVL AH -7.45% and RBRK AH decline extend the altitude-rejection pattern across AI infrastructure. Into Monday: the AI earnings tailwind from Thursday provides a floor, but do not add risk. Reduce into any strength. The September coin-flip is a persistent new overhang.",
+    "headline": "Warsh signals inflation work unfinished; September hike odds jump to 59%",
+    "label": "Chip selloff on hawkish Warsh; curve flattens while 30Y holds inside regime trigger",
+    "rationale_short": "Warsh's Jackson Hole keynote — delivered after the morning brief was generated — concluded that summer PCE/CPI improvements 'do not tell me that underlying trends have meaningfully improved,' lifting September hike odds from 33% to 59% and dragging the chip complex 4–10% lower. The 30Y counterintuitively fell to 5.17% as the 2Y rose 9bps to 4.32%, a curve-flattening outcome: the bond market priced a near-term hike alongside slower long-run growth. The 5.30% regime trigger was not breached. The August jobs report on September 4 is now the deciding print; above 200K payrolls with AHE above 0.3% cements the hike and tests 5.30%.",
     "supporting_data": [
-      {
-        "label": "Warsh: inflation 'still too high,' Fed 'has more work to do'; Sept hike odds jump to ~50-60%",
-        "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-fed-inflation-rate-hike.html"
-      },
-      {
-        "label": "September Fed decision is now a coin flip as rate-hike bets jump post-Warsh",
-        "url": "https://www.cnbc.com/2026/08/28/-september-fed-decision-now-a-coin-flip-as-rate-hike-odds-increase.html"
-      },
-      {
-        "label": "Odds jump to ~60% on Warsh speech (Mishtalk); Chase flags 25bps September hike now expected",
-        "url": "https://mishtalk.com/economics/expect-a-fed-rate-hike-odds-jump-to-60-percent-on-warshs-speech/"
-      },
-      {
-        "label": "MRVL AH -7.45% to $223.46 from $241.45 close; altitude-rejection confirmed on 187% YTD run",
-        "url": "https://www.tradingkey.com/news/market-movers/262138703-market-movers-mrvl-20260828"
-      },
-      {
-        "label": "Rubrik (RBRK) tumbles AH despite raised guidance and $1.66B ARR — sell-the-guide pattern",
-        "url": "https://en.cryptonomist.ch/2026/08/28/rubrik-stock-tumbles-after-hours-despite-raised-guidance-and-1-66b-arr/"
-      },
-      {
-        "label": "S&P 500, Nasdaq end week on down note as rate-hike bets spike post-Warsh Jackson Hole",
-        "url": "https://uk.finance.yahoo.com/news/stock-market-today-friday-august-28-dow-sp-500-nasdaq-dip-fed-warsh-jackson-hole-speech-081514091.html"
-      }
+      { "label": "September hike odds 59% (from 33%); Warsh says summer reads 'do not tell me underlying trends improved'", "url": "https://www.benzinga.com/markets/prediction-markets/26/08/61499396/fed-hike-odds-warsh-jackson-hole" },
+      { "label": "30Y fell 3bps to 5.17% as 2Y rose 9bps to 4.32%; curve flattens on hike-then-slow pricing", "url": "https://www.cnbc.com/2026/08/28/treasury-yields-jackson-hole.html" },
+      { "label": "NVDA -4.57% to $217.55; AMD -2.33% to $465.58; Nasdaq -0.52% to 26,402", "url": "https://www.cnbc.com/2026/08/27/stock-market-today-live-updates.html" },
+      { "label": "MRVL -10.28% to $216.62; distribution at altitude confirmed on 187% YTD run despite Google deal", "url": "https://www.cnbc.com/2026/08/28/marvell-mrvl-q2-earnings-outlook.html" },
+      { "label": "BTC above $81K intraday before falling back; $80K close-confirmation criterion still open", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-august-28-2026-bitcoin-moves-above-81000-before-falling-back-111816647.html" },
+      { "label": "S&P +0.5% weekly, Nasdaq +0.9%; Dow first winning week in three despite Friday decline", "url": "https://www.cnbc.com/2026/08/27/stock-market-today-live-updates.html" }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7711.76,  "change_pct": -0.25, "as_of": "2026-08-28T20:00:00Z" },
+    "sp500":  { "level": 7711.76, "change_pct": -0.25, "as_of": "2026-08-28T20:00:00Z" },
     "nasdaq": { "level": 26402.42, "change_pct": -0.52, "as_of": "2026-08-28T20:00:00Z" },
-    "vix":    { "level": 14.51,    "change_pct": -4.60, "as_of": "2026-08-28T20:00:00Z" },
-    "ust10y": { "level": 4.70,     "change_bps": 5,     "as_of": "2026-08-28T20:00:00Z" },
-    "dxy":    { "level": 99.47,    "change_pct": 0.41,  "as_of": "2026-08-28T20:00:00Z" }
+    "vix":    { "level": 14.46,   "change_pct": -4.93, "as_of": "2026-08-28T20:00:00Z" },
+    "ust10y": { "level": 4.67,    "change_bps": 1,     "as_of": "2026-08-28T20:00:00Z" },
+    "dxy":    { "level": 99.50,   "change_pct": 0.40,  "as_of": "2026-08-28T20:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield",   "value": 5.19,  "trigger_above": 5.30, "unit": "%" },
-    { "name": "Brent Crude", "value": 88.22, "trigger_above": 94.0, "unit": "$/bbl" }
+    { "name": "30Y Yield", "value": 5.17, "trigger_above": 5.30, "unit": "%" }
   ],
   "watchlist_mentions": [
-    {
-      "ticker": "MRVL",
-      "note": "Opened -6.96% premarket from Thursday's AH selloff; closed $241.45, then printed AH $223.46 (-7.45%). Two consecutive sessions of altitude rejection confirm the buy-the-earnings sell-the-guide pattern on a 187% YTD run. Below $230 Monday open is a second-leg confirmation.",
-      "sentiment": "negative"
-    },
-    {
-      "ticker": "RBRK",
-      "note": "Rubrik AH decline despite $1.66B ARR and raised guidance. Same altitude-rejection template as MRVL, CSCO, AMAT. Growing evidence that cyber/AI infrastructure names are distributing at peak growth-cycle valuations after the Thursday AI beat-and-raise surge.",
-      "sentiment": "negative"
-    },
-    {
-      "ticker": "NVDA",
-      "note": "Gave back a portion of Thursday's +8.74%; likely mild Friday pressure on rate-hike repricing. AI cycle thesis intact — the FY28 70% guide and AWS commitment are durable. Monday open into the September coin-flip environment is the next tell for whether institutional buyers step back in.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "AMD",
-      "note": "Sixteenth consecutive session below $484. Warsh speech adds a rate headwind to an already-hardening ceiling. The AI-cycle backdrop that NVDA, CRM, and CRWD created Thursday did not lift AMD. Rate pressure and failing breakout reinforce the step-aside read on this name.",
-      "sentiment": "negative"
-    },
-    {
-      "ticker": "AAPL",
-      "note": "Roughly flat near $313, still below $315 structural support. Warsh's hawkish turn is a multiple-compression risk for consumer-facing tech at elevated valuations. No catalyst before September FOMC.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "BTC",
-      "note": "$77,848 (-2.97%); intraday spike to $81,500 briefly broke the $80K ceiling — a failed bull trap. Warsh hawkishness removed the macro bid. Five sessions, five failures at $80K. Next support zone: $72,000-$73,000. ETH likely tracking lower in sympathy.",
-      "sentiment": "negative"
-    }
+    { "ticker": "NVDA",  "note": "Fell 4.57% to $217.55 after Thursday's 8.74% surge; approaching $215-220 structural support zone; Warsh hawkish adds rate-channel pressure on the 24x forward-revenue multiple. Two consecutive closes above $225 on volume confirm the floor held.", "sentiment": "negative" },
+    { "ticker": "AMD",   "note": "Fell 2.33% to $465.58; 17th session below $484 ceiling. Thursday's three-beat AI backdrop failed to break the ceiling; Warsh's hawkish signal provides a new macro reason for the multiple to stay compressed.", "sentiment": "negative" },
+    { "ticker": "AAPL",  "note": "Modest decline to approximately $310; below $315 structural support; rate-channel headwind from Warsh adds to a defensive multiple already under pressure.", "sentiment": "neutral" },
+    { "ticker": "MSFT",  "note": "Slight decline with broader Nasdaq; Azure $100B annual revenue and NVDA GPU commitment unchanged; no stock-specific catalyst.", "sentiment": "neutral" },
+    { "ticker": "META",  "note": "Modest decline with broader tech; no stock-specific catalyst; Warsh hawkish is a multiple headwind across high-multiple names.", "sentiment": "neutral" },
+    { "ticker": "AMZN",  "note": "Slight decline from morning's $256; AWS 2M NVDA GPU commitment unchanged; no new catalyst.", "sentiment": "neutral" },
+    { "ticker": "TSLA",  "note": "Slight decline from $354.81; no stock-specific catalyst this session.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Modest decline; MRVL Google custom-silicon deal confirmed (unchanged); still approximately 20% below February high with no new catalyst.", "sentiment": "neutral" },
+    { "ticker": "AVGO",  "note": "Flat at $369.29 (+0.14%); held while peers sold off; Q3 FY2026 earnings (est. September 4-5) are the next catalyst — VMware CVE-2026-59310 overhang and 72% AI revenue concentration both unresolved.", "sentiment": "neutral" }
   ],
   "trade_setups": [
     {
-      "asset": "30Y Treasury — 5.30% trigger watch",
-      "thesis": "Warsh shifted September hike odds from ~33% to ~50-60% in one speech. The 30Y closed at 5.19%, 11bps below the regime trigger. Any further hawkish catalyst — hot CPI next month, an FOMC speaker corroborating Warsh, or a strong NFP — could close that gap in a single session.",
-      "entry": "30Y above 5.25% is the warning zone; above 5.30% is a formal regime breach. Hedge via SPX downside or long TLT puts if 30Y trades into the 5.25-5.30% band. Current position: 11bps of buffer.",
-      "invalidation": "30Y drops back below 5.10% on soft data or a clearly dovish FOMC speaker before September meeting.",
-      "horizon": "2-3 weeks"
+      "asset": "2Y-30Y Treasury spread (curve flattener)",
+      "thesis": "September hike odds at 59% lifted the 2Y +9bps to 4.32% while the 30Y fell 3bps to 5.17% — a curve-flattening outcome consistent with pricing a near-term hike followed by eventual economic slowdown. The spread now sits around 85bps and is narrowing. The August jobs report (September 4) is the next inflection: a hot print tightens the spread further; a soft print reverses it as hike odds unwind.",
+      "entry": "Spread at approximately 85bps (5.17% minus 4.32%). Below 75bps confirms accelerating flattening; a move back above 100bps on a jobs miss signals the hike scenario unwinding.",
+      "invalidation": "Spread widens above 100bps on soft August jobs data (below 150K payrolls, AHE below 0.2%)",
+      "horizon": "September 4-16 (jobs report to FOMC decision)"
     },
     {
-      "asset": "MRVL — second-leg breakdown from altitude",
-      "thesis": "Two consecutive sessions of sell-the-guide; AH at $223 signals the Monday open should be pressured. Failed BTC breakout and Warsh rate repricing reinforce risk-off sentiment across high-multiple growth. The 187% YTD run and margin-outlook questions are the fundamental overhang.",
-      "entry": "Monday open and sustained trade below $230 on elevated volume confirms the breakdown. Cover on recovery above $245 with volume.",
-      "invalidation": "Sustained close above $245.",
-      "horizon": "5-7 sessions"
+      "asset": "NVDA at $215-220 structural support",
+      "thesis": "NVDA reversed from Thursday's $227.98 to $217.55 Friday, driven by Warsh's hawkish signal and a broad semi sector risk-off. The $215-220 zone is the structural support established by the two institutional-confirmation closes on August 26-27. A sustained close below $215 would extend the distribution toward the September gap fill at $205-210; a recovery above $225 with volume after the jobs print confirms the support held.",
+      "entry": "The levels that define this setup: $215 as the structural floor, $225 as recovery confirmation. The AVGO earnings read-through on September 4-5 adds a second catalyst window within the same timeframe.",
+      "invalidation": "Two consecutive closes above $225 on above-average volume confirm floor held; close below $215 extends distribution",
+      "horizon": "September 2-9 (first post-Labor Day sessions through AVGO earnings)"
     },
     {
-      "asset": "BTC — failed $80K breakout reversal",
-      "thesis": "Five attempts, five failures. The intraday spike to $81,500 and -4% reversal to $77,848 is a textbook bull trap. Warsh's hawkish tone reduced the macro bid. The Bessent BTC buyback (Sep 9) is a known support event but may not be enough to overcome the rate headwind.",
-      "entry": "Sustained trade below $76,500 confirms the range break lower; next support $72,000-$73,000. The Sep 9 Bessent buyback is a potential bounce catalyst — watch for re-accumulation near $74,000-$75,000 ahead of that date.",
-      "invalidation": "Sustained daily close above $80,000.",
-      "horizon": "1-2 weeks"
+      "asset": "BTC $80K support level",
+      "thesis": "BTC moved above $81,000 intraday Friday before the Warsh DXY bid (+0.4%) pulled it back. Thursday's $80,257 was the first confirmed close above $80K in four attempts; Friday added an intraday high but not a second confirmed close. The two-consecutive-closes criterion for resistance-to-support conversion is not yet met. Bessent Treasury buybacks starting September 9 provide structural demand; the September 2 first-session-back reaction to Warsh will be the next data point.",
+      "entry": "Two consecutive closes above $80K confirm the level as support. The intraday $81K touch establishes the next upside reference. A close below $76,661 (August 24 intraday low) signals range-top behavior rather than a confirmed break.",
+      "invalidation": "Close above $81,000 sustained into September 9 alongside Bessent buyback launch confirms structural break; close below $76,661 on September 2 signals range failure",
+      "horizon": "September 2-16"
     }
   ],
-  "bear_case": "Friday's orderly decline is masking a real regime inflection. Warsh was unambiguous — the Fed is not done, September is live, and rate-hike odds moved 20+ percentage points in a single speech. The 30Y is 11bps from the 5.30% trigger. BTC's failed $80K breakout (spike to $81,500, reversal to $77,848) is the sharpest risk-off signal crypto has sent in five sessions. MRVL and RBRK's AH declines extend the altitude-rejection pattern; if this spreads to NVDA and AVGO when they next report or face a technical re-test, the AI-earnings floor weakens simultaneously with a rate-pressure ceiling tightening. If Monday opens risk-off and the 10Y trades through 4.75%, the SPX should find the 7,650 level; a close below that breaks the post-August-24 recovery structure and shifts the read to full bearish.",
+  "bear_case": "At 59% the September hike probability is the most aggressive near-term policy pricing of the cycle, and the bond market's curve-flattening response — front end up, long end down — historically precedes the steepest equity drawdowns in the 60 days following a cycle-first hike. The Bessent buyback program suppressing the 30Y is temporary structural demand, not fundamental demand: if Treasury Q4 supply overwhelms the $4B+ per-operation buyback bid, the 30Y breaks 5.30% simultaneously with peak hike-cycle pricing. The hot-jobs / Canada-tariff-cost-push two-variable scenario is what the market is not pricing at 59%; if August payrolls print above 200K with AHE above 0.3%, the FOMC hike becomes near-certain and tariff-side inflation enters September 8-16 Fed communications. If SPX falls below 7,600 on the jobs report, this session's weekly gains are erased and the rate-channel multiple compression is live.",
   "body_mdx": "data/briefings/markets/2026-08-28-night.mdx"
 }
