@@ -329,7 +329,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
       <div className="flex items-center justify-between gap-3 pt-4">
         <span className="min-w-0 truncate font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
           {view === "morning" ? "Morning briefing" : "Night briefing"}
-          {current ? ` ${current.timeLabel}` : ""}
+          {current ? `, ${current.timeLabel}` : ""}
         </span>
         <span className="flex shrink-0 items-center gap-3 font-mono text-[11.5px] text-[var(--dim)]">
           <span className="hidden not-italic sm:inline">
