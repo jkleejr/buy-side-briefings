@@ -1,0 +1,115 @@
+{
+  "routine": "markets",
+  "date": "2026-08-29",
+  "window": "morning",
+  "generated_at": "2026-08-29T11:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "⚠️",
+    "headline": "Warsh's hawkish Jackson Hole finale makes a September rate hike the base case",
+    "label": "Step aside: Sep hike ~67%; INTU's 'AI competition' warning expands software risk; 30Y at 5.19%, 11bps from trigger; BTC $80K break fails",
+    "conviction": "medium",
+    "horizon": "Through September 16 FOMC",
+    "rationale_short": "Warsh's full Jackson Hole address, read in its entirety by close Friday, landed more hawkish than the premarket consensus assumed: he amplified the three-July-dissenter bloc's inflation-persistence framing and characterized the September 16 FOMC as a live decision. September hike probability moved from ~33% (Thursday morning) to ~67% by the close. NVDA gave back nearly all of Thursday's +6% post-earnings gap (-4.3% Friday), consistent with the CSCO/AMAT/MRVL high-multiple repricing pattern — conviction beats meet a hawkish rate backdrop and the altitude resets. The sharper catalyst is INTU's -9.2%: management explicitly cited 'AI competition' as a demand headwind alongside a full-year EPS guide of $22.68-$23.12 vs. $27.30 consensus — the first megacap software company to frame AI substitution as a current-quarter erosion rather than a future risk, prompting a JPMorgan downgrade and a price target cut to $331. The 30Y held 5.19% — still 11bps inside the 5.30% regime trigger — but the hawkish pivot and the September gauntlet (NFP Sep 4 est. +475K, Canada tariffs Sep 8, CPI Sep 11, FOMC Sep 16) keep directional pressure firmly upward on yields. BTC failed to confirm Friday's $80,257 close: the Saturday session opened at $79,839 and has traded down to $77,635 (-2.5%), testing the $76,864 intraday support cited in the prior setup. The regime framework has not formally triggered (2 of 2 indicators inside their thresholds), but the trade risk is asymmetric ahead of the September calendar stack. Step aside until the 30Y resolves the trigger question post-NFP.",
+    "supporting_data": [
+      {
+        "label": "Warsh hawkish pivot at Jackson Hole — September rate hike ~67%; Fed at 3.5%-3.75% after August hold; Iran energy shocks sustain inflation",
+        "url": "https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks"
+      },
+      {
+        "label": "INTU -9.2%: 'AI competition' demand headwind + full-year EPS $22.68-$23.12 vs $27.30 est; Q1 guide $2.44-2.48 vs $4.02 est; JPMorgan downgrade",
+        "url": "https://www.tipranks.com/news/intu-earnings-intuit-stock-falls-on-weak-guidance-and-comments-about-ai-competition"
+      },
+      {
+        "label": "NVDA -4.3% Friday sell-the-news after +6% Thursday earnings pop; Warsh hawkish backdrop accelerates high-multiple repricing",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026"
+      },
+      {
+        "label": "BTC $77,635 (-2.5% Saturday AM): fails to hold Friday $80,257 first-close-above-$80K; $76,864 intraday support now in play",
+        "url": "https://finance.yahoo.com/quote/BTC-USD/history/"
+      },
+      {
+        "label": "Jobs report September 4 (8:30 AM ET): NFP consensus +475K, unemployment 5.1%; hot number would cement September hike",
+        "url": "https://www.financecalendar.com/us-jobs-report/"
+      },
+      {
+        "label": "September FOMC hike probability shifting — Forbes Markets Shift Toward September Rate Hike",
+        "url": "https://www.forbes.com/sites/simonmoore/2026/07/29/september-rate-hike-becomes-most-likely-outcome-according-to-markets/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7712.0,  "change_pct": -0.25, "as_of": "2026-08-28T20:00:00Z" },
+    "nasdaq": { "level": 26355.0, "change_pct": -0.70, "as_of": "2026-08-28T20:00:00Z" },
+    "vix":    { "level": 14.57,   "change_pct": -4.14, "as_of": "2026-08-28T20:00:00Z" },
+    "ust10y": { "level": 4.72,    "change_bps": 4,     "as_of": "2026-08-28T20:00:00Z" },
+    "dxy":    { "level": 99.23,   "change_pct": 0.08,  "as_of": "2026-08-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.19, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent Crude", "value": 88.29, "trigger_above": 94.00, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "$216-218 estimated Friday close (down ~4.3% from Thursday's $226.15 post-earnings close). The Thursday +6% earnings pop fully retraced in one session — Warsh's hawkish pivot compressed the multiple in real time. This is the fourth instance of a high-multiple AI name repricing the morning after a strong beat (CSCO, AMAT, MRVL, now NVDA intraday reversal). $220 structural support is the line; a close below it on Monday opens the $210 gap fill. Q3 guide and gross margin trajectory (75% vs. prior 78-80% peak) remain the next fundamental catalysts. Next Blackwell production data point expected around September 4-5 (AVGO earnings estimated).",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "INTU",
+      "note": "~$395-400 estimated Friday close (-9.2% from prior close). The 'AI competition' language is the pivotal phrase: management explicitly cited demand erosion from AI substitutes in consumer tax prep and SMB accounting — not future risk, current-quarter impact. Full-year EPS guide $22.68-$23.12 vs. $27.30 consensus is a 15-16% miss. JPMorgan downgrade with PT $331 implies further downside. The read-across: every SaaS company that serves tasks AI can increasingly perform faces the same fundamental question investors are now asking about INTU. Earnings next week from CRM (reported) and upcoming software names will be tested against the INTU template.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "CRM",
+      "note": "$263-265 estimated Friday close (+3.06%). Beat on Q2 and guided above consensus — a direct counterpoint to INTU's AI-competition narrative. Salesforce framed AI as an enabler of its Agentforce platform rather than a substitute. The CRM/INTU divergence is the AI software fault line: companies deploying AI as a product (CRM, ServiceNow) vs. companies whose existing product competes against AI (INTU, legacy document/workflow SaaS). CRM's hold at post-earnings levels through the week ahead is the confirmation read.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CRWD",
+      "note": "~$460 estimated close (up ~9% Thursday post-earnings). Cybersecurity remains structurally insulated from AI substitution risk — AI expansion of the threat surface increases CRWD's TAM. No Friday-specific catalyst; watching Monday's open for post-earnings absorption vs. extension.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$77,635 (-2.5% Saturday morning). Friday's $80,257 'first close above $80K' proved a one-session event. The Saturday session opened near the Friday high ($79,839) and sold off steadily, with an intraday low of $76,864 — 3bps above the $76,661 structural support that the trade setup named as invalidation. Bessent buyback program starts September 9 — structural demand support remains intact but the near-term momentum thesis (two consecutive daily closes above $80K for confirmation) has failed. The regime is now range ($76.6K-$80K) until the buyback program activates or the macro backdrop clears.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MRVL",
+      "note": "~$218-220 area (absorbing Thursday's -8% premarket from $236). The earnings-base support ($215-220) has held into the weekend. No new fundamental catalyst. The $230 ceiling-break criterion (two consecutive closes above, above-average volume) remains the re-entry signal.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CRML",
+      "note": "~$7.99 (Critical Metals Corp). Trading on $1.55B Trump administration rare-earth supply package and a September 15 ASIC court hearing for its European Lithium acquisition. Small-cap/speculative; in focus due to critical minerals policy tailwind.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y yield — 11bps from regime trigger with hawkish catalyst now confirmed",
+      "thesis": "Warsh's hawkish pivot narrows the margin at 5.19% (11bps from 5.30%) with the two structural catalysts still ahead: NFP September 4 (est. +475K — a hot print would make September hike near-certain) and Canada's September 8 retaliatory tariffs. The prior morning verdict placed the 30Y at 5.199% and the hawkish risk as a tail — it is now the base case. The pathway to a trigger breach is shorter and more probability-weighted than at any point since July.",
+      "entry": "30Y above 5.30% on a daily close formally activates the regime framework. The inverse: a 30Y close below 5.10% after a soft NFP print (sub-200K) would signal the trigger is deactivating through the September FOMC window.",
+      "invalidation": "NFP September 4 prints below 200K and the 30Y closes at or below 5.10% on September 4.",
+      "horizon": "Through September 4 jobs report; reset after FOMC September 16."
+    },
+    {
+      "asset": "INTU — AI competition repricing, watching SaaS read-across",
+      "thesis": "INTU's explicit 'AI competition' language and 15-16% full-year EPS guidance miss is not a company-specific event — it is a sector-level signal. The question for the week ahead is which other enterprise/consumer SaaS names face the same demand question. Any software company whose core product automates a task AI can now perform is a candidate for the INTU repricing template.",
+      "entry": "Short the SaaS ETF (IGV) or individual names (ADSK, DOCN, HUBS) that similarly face AI substitution on a 3-5% bounce. Entry on relative weakness vs. S&P on Monday's open.",
+      "invalidation": "INTU recovers above $430 on volume — would suggest the sell was an overreaction and AI competition risk is being re-priced back.",
+      "horizon": "3-5 sessions through the first week of September."
+    },
+    {
+      "asset": "BTC — $76,661 structural support, Bessent buyback T-minus 11 days",
+      "thesis": "BTC is at $77,635 with a Saturday intraday low of $76,864 — the $76,661 Aug 24 structural support is the line. The Bessent buyback program starts September 9 (11 days), creating a defined lower bound for risk appetite. If BTC closes below $76,661 before then, the $80K break-and-fail is a confirmed failed breakout, and the next support is the prior range top around $72-73K.",
+      "entry": "Hold above $76,661 going into next week — the Bessent bid approaches. A close below $76,661 on Monday or Tuesday is the exit signal.",
+      "invalidation": "Close below $76,661 on Monday (August 31) session.",
+      "horizon": "Through September 9 buyback start."
+    }
+  ],
+  "bear_case": "The bear case has materially tightened in the past 24 hours. Warsh's hawkish pivot removes the 'Fed neutral' backstop that has insulated equity multiples since the July hold. If NFP September 4 prints above 400K — the consensus at 475K — the September 16 rate hike is effectively certain, the 30Y moves toward and likely through 5.30%, and the regime framework formally activates on both rate-compression and tariff-stacking grounds. INTU's 'AI competition' disclosure is the second structural risk: if AI substitution is reducing current-quarter demand for SaaS products, the free-cash-flow assumptions underpinning software multiples at 25-35x forward earnings are directly challenged — a sector-level repricing that cannot be resolved before the next round of software earnings. NVDA's Friday reversal (-4.3% on a strong beat) is the fourth data point confirming that high-multiple AI infrastructure reprices immediately when even a frame of doubt enters the macro backdrop. All four regime indicators are moving adversely: 30Y directionally toward trigger, INTU AI risk new, NVDA repricing pattern persistent, BTC $80K break failed. If SPX closes below 7,600 after the September 16 FOMC, the current step-aside call becomes outright bearish.",
+  "body_mdx": "data/briefings/markets/2026-08-29-morning.mdx"
+}
