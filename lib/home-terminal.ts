@@ -62,6 +62,7 @@ export type BriefView = {
   code: string;
   headline: string;
   lede: string;
+  ledeShort: string;
   keyPoints: KeyPoint[];
   keySignal: string;
   tickers: TickerCard[];
@@ -452,6 +453,7 @@ function buildBrief(
     code: v.verdict.code,
     headline: headlineOf(v),
     lede: ledeFrom(v.verdict.rationale_short),
+    ledeShort: mobileLedeFrom(v.verdict.rationale_short),
     keyPoints,
     keySignal: v.verdict.supporting_data?.[0]
       ? firstClause(v.verdict.supporting_data[0].label.replace(/^★\s*/, ""))
@@ -473,10 +475,47 @@ function buildBrief(
 // Sentences that read as a desk stance are dropped rather than truncated
 // around: the routine still ends its rationale with a directional call, and no
 // buy/sell/hold language belongs on the site.
+//
+// A phone gets a shorter cut of the same paragraph. At 640 characters the lede
+// ran eleven lines on a 390px screen and pushed the link into the briefing off
+// the bottom of the hero, so the first thing to do with the page was scroll
+// past it. The budget below is one or two whole sentences — the cut still
+// lands on a sentence boundary, never mid-clause with an ellipsis.
 const STANCE_SENTENCE =
   /^\s*(hold|buy|sell|stay|add|trim|fade|accumulate|reduce|upgrade|downgrade|remain)\b/i;
 const STANCE_PHRASE =
   /\b(upgrad\w+ to (a )?buy|downgrad\w+ to (a )?sell|warrants? (a )?(buy|sell|hold|upgrade|downgrade)|remains? a (buy|sell|hold))\b/i;
+
+const MOBILE_LEDE_CHARS = 220;
+
+// A first sentence that overruns the budget on its own is kept whole up to this
+// ceiling: one extra line on the phone reads better than an ellipsis dropped
+// mid-clause, which leaves the reader holding half a thought.
+const MOBILE_LEDE_CEILING = 320;
+
+function mobileLedeFrom(rationaleShort: string | undefined): string {
+  const clamped = ledeFrom(rationaleShort, MOBILE_LEDE_CHARS);
+  if (!clamped.endsWith("…")) return clamped;
+
+  const first = (rationaleShort ?? "")
+    .trim()
+    .split(/(?<=[.!?])\s+/)
+    .filter(Boolean)
+    .find((s) => !STANCE_SENTENCE.test(s) && !STANCE_PHRASE.test(s));
+
+  if (!first) return clamped;
+  if (first.length <= MOBILE_LEDE_CEILING) return first;
+
+  // Past the ceiling the sentence has to be cut. These rationales build long
+  // sentences out of clauses joined by an em dash or a semicolon, so stopping
+  // on one leaves a complete thought where a cut at an arbitrary word leaves
+  // the reader mid-clause.
+  const cut = first.slice(0, MOBILE_LEDE_CHARS);
+  const stop = Math.max(cut.lastIndexOf("; "), cut.lastIndexOf(" — "));
+  return stop > MOBILE_LEDE_CHARS * 0.5
+    ? `${cut.slice(0, stop).trim()}…`
+    : clamped;
+}
 
 function ledeFrom(rationaleShort: string | undefined, maxChars = 640): string {
   const text = (rationaleShort ?? "").trim();

@@ -102,9 +102,15 @@ function Hero({ brief }: { brief: BriefView }) {
       {/* One paragraph running the full width — not two newspaper columns.
           Columns filled the space but read as two separate blurbs: the eye
           finished the left one and had to hunt back up for the rest of the
-          same sentence. Long lines want a little more leading, hence 1.65. */}
+          same sentence. Long lines want a little more leading, hence 1.65.
+
+          The phone gets the short cut of the same paragraph: the full lede ran
+          eleven lines there and pushed the link into the briefing off the
+          bottom of the hero. Only one of the two is ever laid out, so the
+          hidden one stays out of the accessibility tree as well. */}
       <p className="mt-5 text-[17px] italic leading-[1.6] text-[var(--ink-3)] sm:text-[19px] lg:leading-[1.65]">
-        {brief.lede}
+        <span className="sm:hidden">{brief.ledeShort}</span>
+        <span className="hidden sm:inline">{brief.lede}</span>
       </p>
       <Link
         href={brief.href}
