@@ -67,7 +67,7 @@ function EditionSwitch({
   setView: (v: "morning" | "evening") => void;
 }) {
   return (
-    <span className="inline-flex overflow-hidden rounded-full border border-[var(--border-strong)] font-mono text-[11px] not-italic">
+    <span className="inline-flex shrink-0 border border-[var(--border-strong)] font-mono text-[11px] not-italic">
       {(["morning", "evening"] as const).map((w) => {
         const brief = w === "morning" ? data.morning : data.evening;
         const active = view === w;
@@ -85,7 +85,7 @@ function EditionSwitch({
               brief ? "cursor-pointer" : "cursor-not-allowed opacity-40",
             ].join(" ")}
           >
-            {w === "morning" ? "☀ AM" : "☾ PM"}
+            {w === "morning" ? "AM" : "PM"}
           </button>
         );
       })}
@@ -322,12 +322,16 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
       {/* No top rule here. The ticker strip directly above already ends in its
           own border, so this one drew a second heavy black line a few pixels
           under it with nothing in between. */}
-      <div className="flex flex-wrap items-center justify-between gap-3 pt-4">
-        <span className="font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
+      {/* No wrapping here. With flex-wrap the longer morning label pushed the
+          switch onto a second line, where justify-between put it flush LEFT —
+          so the control appeared to jump corners between AM and PM. The label
+          truncates instead, and the switch is pinned right on every width. */}
+      <div className="flex items-center justify-between gap-3 pt-4">
+        <span className="min-w-0 truncate font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
           {view === "morning" ? "Morning briefing" : "Night briefing"}
-          {current ? ` · ${current.timeLabel}` : ""}
+          {current ? ` ${current.timeLabel}` : ""}
         </span>
-        <span className="flex items-center gap-3 font-mono text-[11.5px] text-[var(--dim)]">
+        <span className="flex shrink-0 items-center gap-3 font-mono text-[11.5px] text-[var(--dim)]">
           <span className="hidden not-italic sm:inline">
             {current?.dateLabel ?? data.todayLabel}
           </span>
@@ -379,8 +383,8 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
       <div className="mt-14 flex flex-wrap justify-end gap-2 pt-3 font-mono text-[11.5px] text-[var(--dim)]">
         <span>
           {view === "morning"
-            ? "Night edition follows at 8:00 PM ET"
-            : "Morning edition follows at 7:00 AM ET"}
+            ? "Night edition follows at 8 PM ET"
+            : "Morning edition follows at 7 AM ET"}
         </span>
       </div>
     </div>
