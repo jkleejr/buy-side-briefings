@@ -236,35 +236,52 @@ Body sections (the **May 20 morning briefing** — `data/briefings/markets/2026-
 ### Length — a hard budget, not a suggestion
 
 Briefings had drifted to a **23-minute read** (morning ~3,500 words, night
-~5,550). That is not depth, it is repetition: the same MSFT number appeared in
-the read, the recap, the tape view and the stock list, four times in four
-voices. Budget:
+~5,550). Cutting the cap to 1,900/2,600 in August helped, but the structure
+kept producing the same failure: the day's biggest mover got a paragraph in
+the read, a row in the table, a paragraph in the recap and a bullet in the
+stock list — four passes at one fact. The reader wanted the day's story, not
+four angles on it. Budget:
 
 | | words | reads in |
 |---|---|---|
-| **morning** | **1,500–1,900** | ~8 min |
-| **night** | **2,100–2,600** | ~11 min |
+| **morning** | **900–1,200** | ~5 min |
+| **night** | **1,200–1,600** | ~7 min |
 
-Per section, as a ceiling — under is fine, over is not:
+Per section, as a ceiling — under is fine, over is not. These sum to the
+budget; there is no slack to redistribute:
 
-| section | words |
-|---|---|
-| The Read | 200 |
-| Snapshot (table) | 120 |
-| What changed / What happened | 260 |
-| Window-specific tape view | 260 |
-| Major Stocks | 220 |
-| Stretched Here | 150 |
-| Situations Worth Watching | 220 |
-| Strategic Outlook (night) | 300 |
+| section | morning | night |
+|---|---|---|
+| The read (paragraph + bullets) | 220 | 240 |
+| Snapshot (table) | 120 | 150 |
+| What changed / Why it happened | 220 | 260 |
+| Movers | 180 | 200 |
+| What to watch | 200 | 220 |
+| Next 5 Trading Days (night, table) | — | 300 |
+
+**The day has one story.** Find it before writing a word: the single thing a
+reader who saw nothing today must know. It gets the heading, the read and
+whatever depth it needs. Everything else is a line, not a paragraph. A briefing
+that gives four topics equal weight has told the reader nothing about which one
+mattered.
+
+**One fact, one place — enforced.** This is the rule the old structure broke
+most often. On 2026-08-28, MRVL's -10.28% appeared in the read, the snapshot
+table, the recap paragraph and the Movers list: roughly 200 words to deliver
+one number and one reason. If a name carries the day it belongs in the read and
+gets **no** Movers bullet. If it is a secondary mover it gets **one** Movers
+line and no paragraph anywhere. The snapshot table row is not a repeat — it is
+the number's home, and prose about that name must add a reason the table cannot
+carry.
 
 **How to cut without losing anything.** The budget is met by removing
 repetition and throat-clearing, never by dropping a number or a citation. In
 order:
 
-- **Say it once.** Every fact belongs to exactly one section. If MSFT's Azure
-  print is the lead, the stock list says "MSFT — see the read" or omits it.
-  Cross-reference; do not restate.
+- **Cut the name that did nothing.** "MSFT, AMZN, META, GOOGL: mild declines
+  with the broader Nasdaq. No stock-specific catalysts" is zero information
+  spent on four tickers. A name with no move and no news is omitted — from the
+  prose and from the table. Checking a name is not a commitment to mention it.
 - **Tables carry data, prose carries meaning.** A level, a change and a
   threshold belong in a table row. Reserve sentences for what the number
   implies — that is the part a table cannot hold.
@@ -273,13 +290,23 @@ order:
   claim.
 - **One sentence, one job.** Every sentence should carry a number, a source, or
   a consequence. A sentence doing none of those is padding.
-- **No scenario tables that restate each other.** Base/bull/bear needs a line
-  each with a level and a probability, not a paragraph each.
+- **Scenarios are lines, not paragraphs.** Base/bull/bear gets a level and a
+  probability each, in one line or one table — never a paragraph each.
+- **Do not re-explain the framework.** The reader knows what the regime
+  triggers are. State the level and the distance to it; skip the recap of why
+  the trigger exists.
 
 Precision is not the thing being cut. Keep every citation, every level, every
 probability. The 4–6 sourced data points behind the read are a floor, not a
 target — a shorter briefing with the same evidence is the goal, and a briefing
 that hits the word count by dropping evidence has failed the brief.
+
+**The methodology note is one line, and it is not a source list.** Every claim
+in the body already carries an inline citation, so re-listing the outlets at
+the top spends 60 words repeating what the links say. Write when it was
+generated and against what close — nothing else:
+
+> **Methodology note:** Night briefing, generated after the August 28 US close. Sources cited inline.
 
 **No section-label prefixes on headings.** A heading says what the section is
 about, not what kind of section it is. Write `## August 3, 2026 Close`, not
@@ -296,22 +323,47 @@ markers, not inline. Headings carry no icon, and a status is a word: write
 **No standing disclaimer line.** Do not write "Educational analysis only —
 not investment advice"; it is not rendered anywhere on the site any more.
 
-1. `> **Methodology note:**` — one-line description of when/how generated
-2. `## <plain-English summary of the session>` — 1-paragraph read + bullet-point supporting data with inline `[label](url)` citations. The heading is the summary itself: no "The Read —" prefix, no verdict, no BUY/SELL/HOLD/STEP ASIDE label, no stance marker, no conviction rating. It states what happened, not what to do.
-3. `## <the session and date, e.g. "August 3, 2026 Close">` — markdown table of major indices with levels/changes. No "Snapshot — " prefix.
-4. `## What changed since last briefing` (morning) or `## What Happened Today` (night) — 2-3 paragraphs
-5. `## <what the tape is doing, in a phrase>` — the window-specific read: tape view, base/bull/bear cases with probabilities, critical levels to watch. No "Night Tape View — " or "Morning Tape View — " prefix.
-6. `## Major Stocks` — bulleted list with current prices and quick reads
-7. `## Stretched Here` — 2–4 names trading well ahead of their fundamentals, with the specific numbers that make them look extended and the level where that would change. Describe the setup; do not instruct the reader away from it.
-8. `## Situations Worth Watching` — 2–3 specific setups forming in the tape: what is happening, the levels that define it, and what would confirm or break it. **Frame as observation, never as a recommendation** — no entry price to take, no direction to put on, no conviction rating. The reader decides whether to act.
-9. (night only) `## Next 5 Trading Days` — the week ahead. No "Strategic Outlook — " prefix.
+1. `> **Methodology note:**` — one line, per the rule above. Not a source list.
+2. `## <plain-English summary of the session>` — the read: **one** paragraph
+   (120 words, hard) on the day's one story, then 4–6 bullets of supporting
+   data with inline `[label](url)` citations, one line each. The heading is the
+   summary itself: no "The Read —" prefix, no verdict, no BUY/SELL/HOLD/STEP
+   ASIDE label, no stance marker, no conviction rating. It states what
+   happened, not what to do.
+3. `## <the session and date, e.g. "August 3, 2026 Close">` — markdown table of
+   levels and changes. Rows earn their place: the indices, rates, dollar, oil
+   and crypto always; single names only if they moved or carry news. No prose
+   under the table — if a European or Asian close matters, it is a row.
+4. `## What changed since last briefing` (morning) or `## Why it happened`
+   (night) — 2 paragraphs, and they answer *why*, not *what*. The what is in
+   the read and the table already. This is also where the tape view lives: the
+   base/bull/bear cases as one line each with a probability and a level, and
+   the levels that would change the picture. Continuity with the prior
+   briefing's call goes here, in a sentence, not a section.
+5. `## Movers` — only names that moved ~2%+ or carry news, **maximum 5**, one
+   sentence each: the move, the reason, and the level that would change it. A
+   name already carried by the read gets no bullet here. Fewer than five is a
+   normal day, not a gap to fill.
+6. `## What to watch` — **maximum 3** setups, ~60 words each: what is forming,
+   the level that confirms or breaks it, and when it resolves. This includes
+   names trading well ahead of their fundamentals — the old `Stretched Here`
+   and `Situations Worth Watching` sections said the same thing about the same
+   two names and are merged here. **Frame as observation, never as a
+   recommendation** — no entry price to take, no direction to put on, no
+   conviction rating. The reader decides whether to act.
+7. (night only) `## Next 5 Trading Days` — the week ahead as a table, one row
+   per day, ~25 words per row: the catalyst and what it decides. No "Strategic
+   Outlook — " prefix.
 
-**Two sections are retired — do not write either one.** Both were dropped
-2026-08-03 and the site no longer renders them, so writing one only spends
-word budget that belongs to the read:
+**Four sections are retired — do not write any of them.** Writing one only
+spends word budget that belongs to the read:
 
-- `## Regime Risk Indicators` — the trigger checklist.
-- `## The Other Side` / `## Bear Case` — the counter-argument writeup.
+- `## Regime Risk Indicators` — the trigger checklist (dropped 2026-08-03).
+- `## The Other Side` / `## Bear Case` — the counter-argument writeup (dropped
+  2026-08-03).
+- `## Stretched Here` — merged into `## What to watch` (2026-08-29).
+- `## Major Stocks` — replaced by the shorter, ranked `## Movers` (2026-08-29).
+  It listed every name checked, including the ones that did nothing.
 
 The verdict JSON still carries `regime_risk` and `bear_case`; keep filling
 both fields. What changes is only what the body renders.
