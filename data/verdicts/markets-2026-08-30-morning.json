@@ -1,0 +1,110 @@
+{
+  "routine": "markets",
+  "date": "2026-08-30",
+  "window": "morning",
+  "generated_at": "2026-08-30T11:10:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "⚠️",
+    "headline": "September rate hike is the base case; Friday's payrolls will seal it or force a rethink",
+    "label": "Step aside: Sep hike ~67%; Canada $19.9B tariffs Sep 8; NFP Sep 4 est. +475K; BTC $78.1K holds $76.6K support; 30Y at 5.20%, 10bps from trigger",
+    "conviction": "medium",
+    "horizon": "Through September 4 NFP; posture reset after September 16 FOMC",
+    "rationale_short": "Equity markets emerge from the weekend with no new session to reprice. The macro backdrop is unchanged from Friday's close: Warsh's hawkish Jackson Hole delivery remains the dominant rate narrative, with September 16 FOMC hike probability holding near 67%. The one meaningful weekend development is BTC: the coin recovered from Saturday's intraday low of $76,864 — which tested the structural support named in the prior setup — to $78,151 Sunday morning (+0.67%), with the $76,661 Aug 24 support intact. A Sunday close above $78K going into Monday would be constructive but does not change the headline posture: BTC needs two consecutive daily closes above $80K to flip the near-term read bullish. The week ahead is the highest-density event corridor since the Jackson Hole run: ISM Manufacturing (Mon), ADP (Wed), Bank of Canada decision (Wed, expected hold), ISM Services (Thu), then NFP (Fri Sep 4, consensus +475K, unemployment 5.1%). Canada's retaliatory tariffs — $19.9B of US goods at 15%, 25%, and 50% rates — take effect September 8, just four days after NFP. A hot jobs print followed immediately by a tariff-stacking inflation impulse is the pathway to 30Y piercing the 5.30% regime trigger and the September hike becoming a near-certainty. INTU's 'AI competition' warning is entering its second week without a management walk-back; Monday's tape will reveal whether the SaaS read-across (ADSK, HUBS, DOCN) expands or the sell is absorbed as idiosyncratic. NVDA's Friday -4.3% sell-the-news reversal leaves the stock at ~$217, structurally below the $220 support — Monday's open will price whether this is a one-session reset or a deeper repricing cycle. Step aside posture intact through at minimum NFP Friday.",
+    "supporting_data": [
+      {
+        "label": "Canada retaliatory tariffs — $19.9B of US goods at 15-25-50% rates effective September 8, 2026",
+        "url": "https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html"
+      },
+      {
+        "label": "Canada-US trade war escalation: $19.9bn in counter-tariffs confirmed — Al Jazeera",
+        "url": "https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products"
+      },
+      {
+        "label": "Week ahead Aug 31-Sep 4: ISM, ADP, BoC, NFP — Newsquawk calendar",
+        "url": "https://www.newsquawk.com/headlines/newsquawk-weekly-economic-calendar---31st-august---4th-september-2026"
+      },
+      {
+        "label": "Warsh hawkish Jackson Hole framing; Sep FOMC hike ~67% base case — Charles Schwab market update",
+        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+      },
+      {
+        "label": "BTC Sunday $78,151 — $76,661 Aug 24 support held through weekend; Bessent buyback T-minus 10 days",
+        "url": "https://finance.yahoo.com/quote/BTC-USD/history/"
+      },
+      {
+        "label": "INTU -9.2% AI competition warning — SaaS repricing template still active into second week",
+        "url": "https://www.tipranks.com/news/intu-earnings-intuit-stock-falls-on-weak-guidance-and-comments-about-ai-competition"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7712.0,  "change_pct": -0.25, "as_of": "2026-08-28T20:00:00Z" },
+    "nasdaq": { "level": 26355.0, "change_pct": -0.70, "as_of": "2026-08-28T20:00:00Z" },
+    "vix":    { "level": 14.57,   "change_pct": -4.14, "as_of": "2026-08-28T20:00:00Z" },
+    "ust10y": { "level": 4.72,    "change_bps": 4,     "as_of": "2026-08-28T20:00:00Z" },
+    "dxy":    { "level": 99.23,   "change_pct": 0.08,  "as_of": "2026-08-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.20, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent Crude", "value": 88.29, "trigger_above": 94.00, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NFP",
+      "note": "Friday September 4, 8:30 AM ET: consensus +475K, unemployment 5.1%. This is the last major labor market data point before the September 16 FOMC. A print above 400K confirms the September hike is near-certain and likely pushes the 30Y toward the 5.30% trigger; below 200K would meaningfully reduce hike probability and could flip regime bias dovish. Given that Warsh's hawkish framing relied explicitly on inflation persistence through a strong labor market, Friday's number is the single most consequential event of the next 30 days. ADP on Wednesday (consensus: ~400K private payrolls) will serve as the directional signal-ahead.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$78,151 Sunday morning (+0.67% from yesterday's $77,635 open). Saturday's intraday low of $76,864 tested but held the $76,661 Aug 24 structural support — the named invalidation level from the prior setup. Sunday trading band: $77,499-$78,338. The Bessent buyback program starts September 9 (10 days), providing a structural demand backstop. Two consecutive daily closes above $80K remains the bull re-entry criterion. A Monday open above $78.5K on risk-on tape would be constructive but does not yet satisfy that criterion.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "~$217 (estimated Sunday; Thursday post-earnings close ~$226.15, Friday close estimated $216-218 down ~4.3%). The full sell-the-news reversal of the Thursday +6% earnings pop is the fourth instance of the high-multiple AI infrastructure repricing pattern (CSCO, AMAT, MRVL, NVDA). $220 structural support is the critical level; a Monday open and close below $220 opens the $210 gap fill. Next Blackwell production data point expected around AVGO earnings (estimated September 4-5). The Friday reversal, while negative, is not a new catalyst — it was priced Friday. Monday is the first session where dip-buyers and sellers resolve the distribution question.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "INTU",
+      "note": "~$395-400 (Friday close, -9.2%). The 'AI competition' demand erosion narrative has had two days to age — no management walk-back, no analyst upgrade. JPMorgan PT $331 remains the downside anchor with a fresh downgrade. Monday's session will reveal whether the SaaS read-across expands (ADSK, HUBS, DOCN selling sympathetically) or whether the market treats INTU as idiosyncratic. A 3-5% bounce toward $415-420 on low volume is the short re-entry signal per the prior setup; a recovery above $430 would signal the sell was overdone.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "CRM",
+      "note": "~$263-265 (Friday close, +3.06% post-earnings). The Salesforce/Intuit AI software fault line is now the defining sector bifurcation: AI-as-product (CRM, ServiceNow) vs. AI-as-substitute (INTU, legacy workflow SaaS). Monday's tape will test whether CRM holds the post-earnings premium on risk-off broadmarket tape or whether the macro backdrop overwhelms company-specific strength. CRM holding above $260 is the confirmation that the bifurcation read-through has legs.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CRWD",
+      "note": "~$460 (estimated Sunday; +9% Thursday post-earnings). Monday is the first full post-earnings absorptive session. Cybersecurity's structural insulation from AI substitution risk — AI expands the threat surface, increasing CRWD TAM — remains the bull thesis. A Monday close above $460 on normal volume signals post-earnings base is holding; a close below $445 would signal distribution.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y yield — five-day gauntlet with 10bps of headroom to regime trigger",
+      "thesis": "The 30Y enters the week at 5.20%, 10bps from the 5.30% regime trigger. The week-ahead event stack — ADP Wednesday, NFP Friday (+475K consensus), Canada tariffs September 8 — is the most concentrated inflation/rate catalyst corridor since Jackson Hole. A hot NFP print (above 400K) combined with Canada tariff repricing of import prices could push 30Y above 5.30% by Monday of the following week. Warsh's three-dissenter hawkish bloc makes a rate hike at the September 16 FOMC the base case; a formal 30Y trigger breach this week would be the first time the regime framework activates since its construction.",
+      "entry": "Daily close above 5.30% on 30Y formally activates the regime framework and converts the step-aside posture to bearish. Inverse: 30Y closes at or below 5.10% after a soft NFP (sub-200K) would signal the trigger is deactivating through the September FOMC window.",
+      "invalidation": "NFP September 4 prints below 200K and 30Y closes at or below 5.10% on September 4.",
+      "horizon": "Through September 4 NFP; hard posture reset on September 16 FOMC outcome."
+    },
+    {
+      "asset": "BTC — $76,661 support held; Bessent bid T-minus 10 days",
+      "thesis": "BTC's Saturday intraday low ($76,864) tested and held the $76,661 Aug 24 structural support. Sunday recovery to $78,151 shows the support level has held over the weekend. With the Bessent buyback program starting September 9, there is a defined structural demand backstop approaching in 10 days. The trade: hold above $76,661 through Monday's open; two consecutive closes above $80K is the bull confirmation. A Monday close below $76,661 is the exit signal — confirmed failed breakout, next support is the $72-73K prior range top.",
+      "entry": "Hold long above $76,661 with the Bessent bid as structural lower bound. Re-enter aggressively on two consecutive daily closes above $80K.",
+      "invalidation": "Daily close below $76,661.",
+      "horizon": "Through September 9 Bessent buyback start."
+    },
+    {
+      "asset": "INTU / IGV SaaS AI repricing — monitoring read-across on Monday open",
+      "thesis": "INTU's Friday close at ~$395-400 established the AI substitution repricing baseline. Monday is the first session where the read-across either confirms (ADSK, HUBS, DOCN selling) or denies (INTU idiosyncratic, sector stabilizes) the broader SaaS de-rating thesis. A 3-5% sector bounce into resistance is the short entry on AI-as-substitute exposure.",
+      "entry": "Short IGV or individual names (ADSK, HUBS, DOCN) on a 3-5% bounce from Friday close, targeting relative weakness vs. S&P. Monday open on risk-on tape is the entry window.",
+      "invalidation": "INTU recovers above $430 on volume; IGV holds its 20-day moving average on the first session.",
+      "horizon": "3-5 sessions through first week of September."
+    }
+  ],
+  "bear_case": "The bear case has a specific pathway and a five-day fuse. If NFP September 4 prints above 400K (consensus +475K), the September 16 rate hike is near-certain. Canada's retaliatory tariffs ($19.9B, 15-50% rates) take effect four days later on September 8, injecting a tariff-stacking inflation impulse into the same week a hot labor market is cementing the hike thesis. The 30Y, already at 5.20% (10bps from trigger), would be expected to breach 5.30% in this scenario — formally activating the regime framework for the first time. NVDA at $217 is already in a technical failure pattern; a Monday open below $210 would signal the AI infrastructure repricing is expanding beyond one-session distribution. INTU's 'AI competition' language has not been walked back — if Monday brings sympathetic selling in ADSK, HUBS, or DOCN, the SaaS sector faces a multiple compression event that runs independent of the rate backdrop. The combined scenario — rate hike locked in + tariff inflation stacking + AI-substitute repricing across software — is the bear case for SPX 7,500-7,600 by September 16 FOMC. Conversion from step-aside to outright bearish requires a close below SPX 7,600 post-NFP or a 30Y close above 5.30% on any session this week.",
+  "body_mdx": "data/briefings/markets/2026-08-30-morning.mdx"
+}
