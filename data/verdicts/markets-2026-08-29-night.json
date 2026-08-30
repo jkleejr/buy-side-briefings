@@ -1,0 +1,88 @@
+{
+  "routine": "markets",
+  "date": "2026-08-29",
+  "window": "night",
+  "generated_at": "2026-08-30T00:15:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "Bitcoin retreats as Warsh's rate-hike warning carries into the weekend",
+    "label": "HOLD — 0 of 2 regime triggers active: 30Y 5.17% (5.30% gate untouched); BTC $78,153 (above $62K floor, $80K two-close criterion unmet). No US equity session Saturday; August jobs print Sept 4 is the rate-path decider.",
+    "conviction": "medium",
+    "rationale_short": "No US equity session Saturday. BTC has retraced from Friday's $81,142 intraday high to $78,153 at 8pm ET Saturday (Crypto.com live; 24h range $77,377–$78,338), confirming the $80K resistance-to-support conversion has failed — Thursday's $80,257 was the first close above $80K in four attempts, but Friday closed below the level and Saturday's range seals the miss. The two-consecutive-closes criterion was never met. Warsh's Jackson Hole hawkish read (September hike odds tracking 59–68% over the weekend per prediction markets) continues to suppress dollar-rival assets. Friday's equity snapshot (S&P –0.25%, Nasdaq –0.52%) is unchanged; regime indicators hold: 30Y at 5.17% is 13bps from the 5.30% trigger, DXY at 99.50 maintained dollar bid. Next week stacks two binary catalysts in the same session: August BLS jobs report (Sept 4, 8:30am ET) and AVGO Q3 FY2026 earnings (est. Sept 4–5 AH). The jobs print is the rate-path decider: above 200K payrolls with AHE above 0.3% likely cements the September hike and tests 5.30%; July's –23K payroll miss set a mechanically low bar, so even an in-line print could clear it.",
+    "supporting_data": [
+      {
+        "label": "BTC $78,153 live at 8pm ET Sat (24h range $77,377–$78,338); Friday intraday $81,142 high closed below $80K — Crypto.com Exchange",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "Bitcoin moved above $81,000 Friday before falling back; $80K close-confirmation criterion unmet — Yahoo Finance",
+        "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-august-28-2026-bitcoin-moves-above-81000-before-falling-back-111816647.html"
+      },
+      {
+        "label": "September hike odds at 59% after Warsh keynote; weekend tracking 60–68% — Benzinga",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/08/61499396/fed-hike-odds-warsh-jackson-hole"
+      },
+      {
+        "label": "August BLS jobs report Sept 4 is the rate-path decider; July payrolls fell –23K — BLS",
+        "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+      },
+      {
+        "label": "Bitcoin Daily Market Analysis Aug 29, 2026 — CoinStats AI",
+        "url": "https://coinstats.app/ai/a/latest-news-for-bitcoin"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7711.76, "change_pct": -0.25, "as_of": "2026-08-28T20:00:00Z" },
+    "nasdaq": { "level": 26402.42, "change_pct": -0.52, "as_of": "2026-08-28T20:00:00Z" },
+    "vix":    { "level": 14.46,   "change_pct": -4.93, "as_of": "2026-08-28T20:00:00Z" },
+    "ust10y": { "level": 4.67,    "change_bps": 1,     "as_of": "2026-08-28T20:00:00Z" },
+    "dxy":    { "level": 99.50,   "change_pct": 0.40,  "as_of": "2026-08-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.17, "trigger_above": 5.30, "unit": "%" },
+    { "name": "BTC Gate 2", "value": 78153, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "BTC",
+      "note": "$78,153 at 8pm ET Saturday (Crypto.com live; 24h range $77,377–$78,338). Friday's $81,142 intraday high was not sustained on a closing basis — two-consecutive-closes above $80K criterion unmet. Saturday's range confirms the level remains resistance, not support. Bessent Treasury buybacks starting September 9 provide structural demand backdrop; the September 4 jobs report is the next rate-path input. A Monday close below $76,661 (August 24 intraday low) signals range-top failure and potential retracement toward $74K.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Last close $217.55 (Friday Aug 28). No weekend equity session. The $215–220 structural support zone holds as the key reference into Monday's open. Two consecutive closes above $225 on volume confirm the floor held; a close below $215 extends the distribution toward the September gap at $205–210. AVGO Q3 FY2026 earnings (Sept 4–5) are the next chip-sector read-through catalyst.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Last close ~$369.29 (Friday Aug 28). Q3 FY2026 earnings est. September 4–5 AH — the week's largest single-stock event. VMware CVE-2026-59310 active exploitation overhang and 72% AI revenue concentration remain unresolved. A strong AI revenue guide would be the first chip-sector sentiment reset since NVDA's August 26 beat.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Last close $465.58 (Friday Aug 28). Seventeenth-plus session below $484 containment ceiling entering next week. No new weekend catalyst; Warsh hawkish signal maintains multiple compression overhang. AVGO earnings September 4–5 are the next sector data point.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "BTC — $80K resistance confirmed; Monday open is the retest",
+      "thesis": "Friday's $81,142 intraday high followed by a sub-$80K close, and Saturday's $77,377–$78,338 range, together confirm that $80K remains resistance rather than support. The two-consecutive-closes criterion required for resistance-to-support conversion was not met — Thursday Aug 27 ($80,257) was the first and only qualifying close. Monday's open is the first post-Warsh equity session and will set the near-term direction: a Monday BTC close above $80K on normal volume restarts the conversion attempt; a close below $76,661 (August 24 intraday low) signals range-top failure and a retracement path toward $74K.",
+      "entry": "BTC $78,153 Saturday 8pm ET. Monday close above $80K restarts the conversion thesis; below $76,661 confirms range failure.",
+      "invalidation": "Two consecutive closes above $80K in the first sessions of September confirm support conversion. Bessent buyback launch September 9 adds structural bid.",
+      "horizon": "September 2 (Monday open) through September 9 (Bessent buyback launch)"
+    },
+    {
+      "asset": "2Y-30Y Treasury spread — 85bps curve flattener into jobs week",
+      "thesis": "September hike odds tracking 59–68% over the weekend keep the 2Y bid elevated and the 30Y under latent pressure. Friday's curve-flattening outcome (2Y +9bps to 4.32%; 30Y –3bps to 5.17%) extends into the week as the rate narrative is unchanged. The August jobs report (September 4, 8:30am ET) is the binary: hot print (above 200K payrolls, AHE above 0.3%) tightens the spread further toward 75bps; soft print reverses hike odds and steepens the curve back above 100bps.",
+      "entry": "Spread ~85bps (5.17% minus 4.32%) entering the week. Below 75bps confirms accelerating flattening; above 100bps on a jobs miss signals the hike scenario unwinding.",
+      "invalidation": "August payrolls below 150K with AHE below 0.2% reverses hike odds sharply; 30Y falls below 5.00%.",
+      "horizon": "September 2–16 (Monday open through FOMC decision)"
+    }
+  ],
+  "bear_case": "The Warsh Jackson Hole playbook — 'summer PCE/CPI improvements do not tell me underlying trends have meaningfully improved' — is now the market's base narrative with September hike odds at 59–68%, and the bond market's curve-flattening response (front end up, long end anchored by buybacks) historically precedes the steepest equity drawdowns in the 60 days following a cycle-first hike. Bessent's buyback program suppressing the 30Y is temporary structural demand: if Treasury Q4 supply overwhelms the $4B+ per-operation buyback bid, the 30Y breaks 5.30% simultaneously with peak hike-cycle pricing. July payrolls printed –23K — the weakest since COVID lockdowns — but set a mechanically low bar; if August payrolls rebound above 200K with AHE above 0.3%, the September hike is near-certain and the two-indicator stagflation framework assembles for the first time. BTC's failure to hold the $80K close criterion over five attempts (four pre-buyback squeeze, one post-squeeze) removes the crypto momentum narrative from the bull case into September. The level that flips this read: August payrolls below 100K with AHE flat — that would push September hike odds below 30%, take the 30Y durably below 5.00%, and put the rate-compression thesis back in play.",
+  "body_mdx": "data/briefings/markets/2026-08-29-night.mdx"
+}
