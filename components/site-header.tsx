@@ -39,11 +39,17 @@ export default function SiteHeader() {
             only, no wordmark — the nav's first item is still TODAY → "/" and
             still carries the active-route rule, so the mark is the brand, not
             the wayfinding. The name lives in the aria-label, which is what a
-            screen reader announces for the link. */}
+            screen reader announces for the link.
+
+            The -1px nudge is optical, not geometric: the mark's box was already
+            centred on the row. The nav reads its centre off the cap band, with
+            descenders hanging below it, and the mark's own weight sits low
+            because the candle bodies cluster under the midline while only thin
+            wicks reach the top. Both offsets point down, ~0.8px together. */}
         <Link
           href="/"
           aria-label="Buy Side — home"
-          className="flex shrink-0 items-center self-center"
+          className="flex shrink-0 -translate-y-px items-center self-center"
         >
           <BrandMark className="h-[18px] w-[17px]" />
         </Link>
