@@ -3,7 +3,7 @@ import { OgMark } from "@/lib/og-mark";
 
 export const runtime = "edge";
 export const alt =
-  "Buy Side — a market briefing twice a day, every claim linked to its source";
+  "Buy Side — a market report twice a day, every claim linked to its source";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -54,7 +54,7 @@ export default async function OgImage() {
               color: "#e4e4e7",
             }}
           >
-            Market briefings, twice a day.
+            Market reports, twice a day.
           </div>
           <div
             style={{

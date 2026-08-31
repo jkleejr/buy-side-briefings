@@ -5,7 +5,7 @@ import { formatBriefingDateLine } from "@/lib/utils";
 import { verdictHeadline } from "@/lib/verdict-headline";
 
 export const runtime = "nodejs"; // needs fs to read briefing files
-export const alt = "Buy Side — Markets briefing";
+export const alt = "Buy Side — Markets report";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -34,7 +34,7 @@ export default async function BriefingOgImage({
             justifyContent: "center",
           }}
         >
-          Briefing not found
+          Report not found
         </div>
       ),
       { ...size },
@@ -97,7 +97,7 @@ export default async function BriefingOgImage({
               color: accentColor,
             }}
           >
-            BRIEFING
+            REPORT
           </div>
           <div
             style={{

@@ -6,7 +6,7 @@ import { getDataFreshness, type Freshness } from "@/lib/freshness";
  */
 export function FreshnessNotice({
   freshness: f,
-  noun = "Briefings",
+  noun = "Reports",
 }: {
   freshness: Freshness;
   noun?: string;

@@ -27,7 +27,7 @@ export async function generateMetadata({
 }) {
   const { routine, slug } = await params;
   const briefing = getBriefing(routine, slug);
-  if (!briefing) return { title: "Briefing not found" };
+  if (!briefing) return { title: "Report not found" };
   return { title: formatBriefingDateLine(briefing) };
 }
 
@@ -52,7 +52,7 @@ export default async function BriefingPage({
         href="/briefings"
         className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
       >
-        ◂ ALL BRIEFINGS
+        ◂ ALL REPORTS
       </Link>
 
       <header className="space-y-2 border-b border-[var(--border)] pb-4">

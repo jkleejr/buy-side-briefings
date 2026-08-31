@@ -182,7 +182,7 @@ export default function WatchlistCards({
                         href={`/briefings/${mention.routine}/${mention.date}-${mention.window}`}
                         className="text-[var(--amber)] hover:underline"
                       >
-                        ▸ {mention.verdict_headline ?? "Briefing"}
+                        ▸ {mention.verdict_headline ?? "Report"}
                       </Link>
                       <span className="text-[var(--dim)]">
                         {mention.date} {mention.window ?? ""}
@@ -194,7 +194,7 @@ export default function WatchlistCards({
                   </div>
                 ) : (
                   <div className="border-t border-[var(--border)] pt-1.5 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)]">
-                    no briefing mention yet
+                    no report mention yet
                   </div>
                 )}
               </div>

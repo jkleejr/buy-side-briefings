@@ -10,7 +10,7 @@ import ThemeToggle from "./theme-toggle";
 // then standing reports, then the audit trail.
 const NAV = [
   { href: "/", code: "TODAY", label: "Today" },
-  { href: "/briefings", code: "BRIEF", label: "Briefings" },
+  { href: "/briefings", code: "RPT", label: "Reports" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist" },
   // Route is still /earnings; the nav calls it what the page now calls itself.
   { href: "/earnings", code: "CAL", label: "Calendar" },

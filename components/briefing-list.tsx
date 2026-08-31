@@ -19,13 +19,13 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
   if (list.length === 0) {
     const empty = (
       <div className="p-3 text-center font-mono text-[11px] text-[var(--dim)]">
-        No briefings yet. Generate one via Claude and commit to{" "}
+        No reports yet. Generate one via Claude and commit to{" "}
         <code className="text-[var(--amber-dim)]">data/briefings/</code>.
       </div>
     );
     if (!panel) return empty;
     return (
-      <Panel title="Recent Briefings">
+      <Panel title="Recent Reports">
         {empty}
       </Panel>
     );
@@ -80,7 +80,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
   if (!panel) return body;
   return (
     <Panel
-      title="Recent Briefings"
+      title="Recent Reports"
       meta={
         <Link href="/briefings" className="text-[var(--cyan-term)] hover:underline">
           ALL ▸

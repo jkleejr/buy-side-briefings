@@ -23,20 +23,20 @@ export const metadata: Metadata = {
   // previous copy sold "tells you when NOT to buy as much as when to buy" —
   // a buy/sell call, which the site stopped making in July.
   description:
-    "A market briefing twice a day, morning and night: what happened, what it means, and what would change it — with every claim linked to its source.",
+    "A market report twice a day, morning and night: what happened, what it means, and what would change it — with every claim linked to its source.",
   openGraph: {
     type: "website",
     siteName: "Buy Side",
     title: "Buy Side",
     description:
-      "A market briefing twice a day, morning and night. Every claim carries a number and every number links to its source. It reports; the decision stays yours.",
+      "A market report twice a day, morning and night. Every claim carries a number and every number links to its source. It informs; the decision stays yours.",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Buy Side",
     description:
-      "A market briefing twice a day, morning and night — every claim linked to its source.",
+      "A market report twice a day, morning and night — every claim linked to its source.",
   },
   robots: {
     index: true,

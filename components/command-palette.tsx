@@ -14,7 +14,7 @@ type Destination = {
 // (sectors, macro, global), then the standing reports, then about.
 const DESTINATIONS: Destination[] = [
   { href: "/", code: "HOME", label: "Home" },
-  { href: "/briefings", code: "BRIEF", label: "Briefings archive" },
+  { href: "/briefings", code: "RPT", label: "Reports archive" },
   { href: "/watchlist", code: "WATCH", label: "Watchlist" },
   { href: "/earnings", code: "CAL", label: "Calendar — upcoming events" },
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
