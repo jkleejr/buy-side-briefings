@@ -7,22 +7,20 @@ type Destination = {
   href: string;
   code: string;
   label: string;
-  /** Second letter of the `g` chord, e.g. "n" → press g then n. */
-  go?: string;
 };
 
 // Ordered the way the site is read, not alphabetically or by age: home, then
 // the daily pages (briefings, watchlist, calendar), then the market-data pages
 // (sectors, macro, global), then the standing reports, then about.
 const DESTINATIONS: Destination[] = [
-  { href: "/", code: "HOME", label: "Home", go: "h" },
-  { href: "/briefings", code: "BRIEF", label: "Briefings archive", go: "r" },
-  { href: "/watchlist", code: "WATCH", label: "Watchlist", go: "w" },
-  { href: "/earnings", code: "CAL", label: "Calendar — upcoming events", go: "c" },
+  { href: "/", code: "HOME", label: "Home" },
+  { href: "/briefings", code: "BRIEF", label: "Briefings archive" },
+  { href: "/watchlist", code: "WATCH", label: "Watchlist" },
+  { href: "/earnings", code: "CAL", label: "Calendar — upcoming events" },
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
-  { href: "/market-history", code: "HIST", label: "Market History — past booms & crashes", go: "m" },
+  { href: "/market-history", code: "HIST", label: "Market History — past booms & crashes" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 
@@ -38,8 +36,7 @@ function isTypingTarget(el: EventTarget | null): boolean {
 
 /**
  * Terminal-style command palette. ⌘K / Ctrl+K opens it; type to filter,
- * ↑/↓ + Enter to navigate. Outside the palette, `g` then a letter jumps
- * straight to a destination (g n → NVIDIA), like a real terminal.
+ * ↑/↓ + Enter to navigate.
  */
 export default function CommandPalette() {
   const router = useRouter();
@@ -47,7 +44,6 @@ export default function CommandPalette() {
   const [query, setQuery] = useState("");
   const [cursor, setCursor] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const pendingG = useRef<number | null>(null);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -70,7 +66,7 @@ export default function CommandPalette() {
     [router],
   );
 
-  // Global shortcuts: ⌘K toggle + `g <letter>` chord.
+  // Global shortcut: ⌘K toggles the palette. `?` opens it too.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
@@ -80,25 +76,10 @@ export default function CommandPalette() {
       }
       if (open || isTypingTarget(e.target) || e.metaKey || e.ctrlKey || e.altKey) return;
 
-      // `?` opens the palette too — it doubles as the shortcut reference,
-      // since every row shows its g-chord.
       if (e.key === "?") {
         e.preventDefault();
         setOpen(true);
-        return;
       }
-
-      const now = Date.now();
-      if (pendingG.current && now - pendingG.current < 1200) {
-        const dest = DESTINATIONS.find((d) => d.go === e.key.toLowerCase());
-        pendingG.current = null;
-        if (dest) {
-          e.preventDefault();
-          navigate(dest.href);
-        }
-        return;
-      }
-      if (e.key === "g") pendingG.current = now;
     }
     function onOpenEvent() {
       setOpen(true);
@@ -109,7 +90,7 @@ export default function CommandPalette() {
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("bsb:palette", onOpenEvent);
     };
-  }, [open, navigate]);
+  }, [open]);
 
   useEffect(() => {
     if (open) {
@@ -178,11 +159,6 @@ export default function CommandPalette() {
                   {d.code}
                 </span>
                 <span>{d.label}</span>
-                {d.go && (
-                  <span className="ml-auto shrink-0 text-[9px] uppercase tracking-widest text-[var(--dim)]">
-                    g {d.go}
-                  </span>
-                )}
               </button>
             </li>
           ))}
