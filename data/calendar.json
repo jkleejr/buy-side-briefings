@@ -1,12 +1,35 @@
 {
   "events": [
     {
+      "date": "2026-08-31",
+      "label": "Chicago PMI (9:45 AM ET) — first NFP week signal; Iran oil escalation adds inflation context",
+      "kind": "MACRO",
+      "time_et": "9:45 AM",
+      "tickers": ["SPY", "QQQ", "IWM"],
+      "note": "Added Aug 31 morning: Opens the NFP approach sequence. US-Iran exchange overnight pushed Brent above $90 (from $88.22 Friday), adding an oil-inflation channel to the week's data. A weak PMI read (below 50) does not automatically offset the oil channel if Warsh treats supply shocks as a reason for caution-into-hike. Followed by ISM Manufacturing and JOLTS on September 1, ADP on September 3, ISM Services on September 3, and payrolls on September 4."
+    },
+    {
+      "date": "2026-09-01",
+      "label": "ISM Manufacturing + JOLTS (10:00 AM ET) — labor market demand signal ahead of NFP",
+      "kind": "MACRO",
+      "time_et": "10:00 AM",
+      "tickers": ["SPY", "TLT", "IWM"],
+      "note": "Added Aug 31 morning: ISM Manufacturing below 50 signals contraction; JOLTS job openings above 8M supports the strong-labor-market thesis underpinning September hike odds at 57%. Both arrive the day after the Ternus CEO transition at Apple and two days after US-Iran exchange reopened Strait risk."
+    },
+    {
+      "date": "2026-09-03",
+      "label": "ADP private payrolls + ISM Services (est. Wednesday-Thursday) — pre-NFP labor read",
+      "kind": "MACRO",
+      "tickers": ["SPY", "TLT", "QQQ"],
+      "note": "Added Aug 31 morning: ADP consensus ~400K private payrolls. ISM Services above 55 + ADP above 400K with Brent above $90 is the three-variable hot-inflation scenario entering NFP Friday. ADP in this context is a directional signal, not a precision estimate — the September 4 payrolls print is the gate."
+    },
+    {
       "date": "2026-09-04",
       "label": "August jobs report (BLS, 8:30 AM ET) — first post-Warsh payrolls print; September FOMC gate",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": ["TLT", "TBT", "SPY", "QQQ", "IWM"],
-      "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech (delivered Aug 28) was more hawkish than initial reports suggested — he said summer PCE/CPI data 'do not tell me that underlying trends have meaningfully improved' and that the Fed 'has more work to do.' September hike odds jumped from 33% to 59% on CME FedWatch by end of day. The 2Y rose 9bps to 4.32% while the 30Y fell 3bps to 5.17% (curve flattening). August payrolls are now the deciding event: below 150K/AHE below 0.2% resets hike odds toward 35% and compresses 30Y to 5.00-5.10%; above 200K/AHE above 0.3% locks in 65%+ odds and tests 5.25-5.30% on the 30Y, within 5bps of the 5.30% regime trigger. Canada's retaliatory tariffs arrive September 8 — 4 days after this print and 12 days before the FOMC. If jobs are hot and tariff cost-push enters Warsh communications in the September 8-16 window, the two-variable hike case is live above 65%."
+      "note": "Updated Aug 31 morning: Iran oil channel now a third input alongside rate path and tariffs. US-Iran exchange pushed Brent above $90 on Aug 31; if Brent sustains above $90 through NFP week, the Fed's inflation calculus tightens even on a soft labor market print. Consensus: +475K payrolls, 5.1% unemployment. Below 150K/AHE below 0.2% resets hike odds toward 35%; above 200K/AHE above 0.3% locks in 65%+ odds and tests 5.25-5.30% on the 30Y. Canada's retaliatory tariffs arrive September 8, four days after this print. Warsh updated Aug 28: summer PCE/CPI data 'do not tell me that underlying trends have meaningfully improved' and the Fed 'has more work to do.'"
     },
     {
       "date": "2026-09-05",
@@ -34,7 +57,7 @@
       "label": "FOMC decision — September rate path; first post-Warsh/post-Canada-tariff decision",
       "kind": "FOMC",
       "tickers": ["TLT", "TBT", "SPY", "QQQ", "GLD", "BTC"],
-      "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech was hawkish — September hike odds closed at 59% on CME FedWatch, up from 33%. Warsh said summer PCE/CPI data 'do not tell me that underlying trends have meaningfully improved' and the Fed 'has more work to do.' The 2Y rose 9bps to 4.32% while the 30Y fell to 5.17% (curve flattening). Three inputs determine the vote: August jobs (Sept 4), Canada tariffs (Sept 8), and any Warsh communications in September 8-16. At 59%, a September hike is now the modal outcome unless soft jobs data or tariff-side disinflation changes the picture. 30Y at 5.17% at Aug 28 close, 13bps inside the 5.30% regime trigger."
+      "note": "Updated Aug 31 morning: Four inputs now determine the vote. August jobs (Sept 4), Canada tariffs (Sept 8), Warsh communications Sept 8-16, and the Iran oil channel — US-Iran exchange on Aug 31 pushed Brent above $90; if sustained, it adds 20-30bps to headline CPI and enters Fed communications. September hike odds 57% on CME FedWatch (from 59% at Aug 28 close). 30Y at 5.21% on Aug 31, 9bps inside the 5.30% regime trigger; touched 5.31% intraday last week without a close confirmation. The Bessent buyback program starts September 9 with structural demand suppressing equilibrium 30Y yields by an estimated 10-15bps."
     },
     {
       "date": "2026-12-09",

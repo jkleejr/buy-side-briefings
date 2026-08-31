@@ -2,104 +2,89 @@
   "routine": "markets",
   "date": "2026-08-31",
   "window": "morning",
-  "generated_at": "2026-08-31T11:15:00Z",
+  "generated_at": "2026-08-31T12:00:00Z",
   "is_seed": false,
   "verdict": {
-    "code": "step_aside",
-    "emoji": "⚠️",
-    "headline": "U.S.-Iran combat resumes in the Gulf, sending oil higher ahead of a pivotal jobs week",
-    "label": "Step aside: Iran strikes resume (Brent ~$90, 4pts from regime trigger); Sep hike ~57%; AAPL Ternus Day 1 (-0.7% premarket); 30Y 5.21% (briefly touched 5.31% trigger); BTC $78.7K above $76.7K support; NFP Fri +475K est.",
-    "conviction": "medium",
-    "horizon": "Through September 4 NFP; posture reset on September 16 FOMC outcome",
-    "rationale_short": "Monday opens with two new macro overlays stacked on top of Friday's hawkish backdrop. First: the U.S. struck Iranian rocket launchers on Larak Island in the Strait of Hormuz overnight — the first publicly acknowledged U.S.-Iran military exchange since late July — with Iran retaliating against U.S. bases in Jordan. Brent has crossed $90/bbl, adding an oil-price inflation impulse to an already-stressed rate environment; the $94 Brent regime trigger is now 4pts away versus a prior cushion of ~6. Second: Tim Cook's 15-year Apple tenure ends today, with John Ternus officially becoming CEO on September 1. AAPL is -0.72% premarket (~$316.83), a muted initial reaction, but the hardware-first lens Ternus brings into September's annual product event is an execution risk the market will reprice on signal rather than announcement. These developments compound but do not yet transform Friday's posture: the 30Y yield touched 5.31% intraday last week — formally crossing the regime trigger — before closing at 5.21% on August 28. That intraday breach without a close confirmation means the trigger has not formally activated; it is, however, a warning shot with zero margin. September FOMC hike probability has softened to ~57% (from Friday's ~67%), reflecting partial post-Jackson Hole digestion — the directional signal remains hawkish but is less unanimous than it was 48 hours ago. The decisive data corridor begins today: Chicago PMI (9:45 ET), then ISM Manufacturing and JOLTS tomorrow (Sep 1), ADP Wednesday, ISM Services Thursday, and NFP Friday (consensus +475K, 5.1% unemployment). BTC at $78,652 is constructive — live support above $76,661 with the Bessent buyback program 9 days out (Sep 9). NVDA is +0.70% premarket at $219.07, partially recovering Friday's -4.3% sell-the-news; still below $220 structural support, making this a recovery attempt rather than a confirmed base. Step-aside posture is intact: the regime framework has not formally triggered, and the NFP print is the single most consequential data point before the September 16 FOMC. Adding risk exposure ahead of that combination — Iran oil shock, hot NFP tail, Canada tariffs Sep 8 — has an asymmetric cost structure that does not favor longs.",
+    "headline": "US-Iran strikes resume after month-long pause; Brent crosses $90 on Strait mine threat",
+    "label": "Brent $90.61; ES -0.1%; September hike odds 57%; 30Y at 5.21%, 9bps from trigger",
+    "rationale_short": "CENTCOM struck rocket launchers on Iran's Larak Island on Sunday after the IRGC was observed readying sea mines for the Strait of Hormuz; Iran retaliated with ballistic missiles at US air bases in Jordan; a supertanker was mined and halted in the southern Strait. Brent jumped $2.39 to $90.61 while equity futures are contained at -0.1%, pricing a managed exchange rather than a Strait closure. If tanker transit suspends, $90 becomes a floor heading into the September 4 jobs print and September 16 FOMC — the same rate path the 30Y's 5.31% intraday near-breach last week had already flagged.",
     "supporting_data": [
       {
-        "label": "US-Iran strikes resume at Strait of Hormuz, equities subdued — CNBC live markets update Aug 31",
-        "url": "https://www.cnbc.com/2026/08/30/stock-market-today-live-updates.html"
+        "label": "US struck Larak Island rocket launchers; IRGC was readying sea mines for Strait of Hormuz — first strike in over a month",
+        "url": "https://www.cnbc.com/2026/08/31/oil-prices-hormuz-iran-larak-island-centcom.html"
       },
       {
-        "label": "Apple names John Ternus CEO replacing Tim Cook, who becomes chairman — CNBC",
+        "label": "Brent $90.61 +2.85%; WTI $85.53 +2.55% — oil jumps on Strait mine threat; supertanker halted",
+        "url": "https://www.investing.com/news/commodities-news/oil-jumps-more-than-2-after-us-attack-on-irans-larak-island-4882075"
+      },
+      {
+        "label": "Iran ballistic missiles at King Hussein and Al-Azraq air bases in Jordan; Jordan intercepted 8 — ABC News",
+        "url": "https://abcnews.com/International/live-updates/iran-live-updates-centcom-targeted-iranian-forces-posed/?id=136080582"
+      },
+      {
+        "label": "Supertanker struck by naval mines in southern Strait of Hormuz; brought to a complete halt — CBS News",
+        "url": "https://www.cbsnews.com/live-updates/iran-war-us-strikes-strait-of-hormuz-larak-island/"
+      },
+      {
+        "label": "CME FedWatch: September hike odds 57%; prediction markets 48-52% — essentially unchanged from Friday's 59%",
+        "url": "https://news.bitcoin.com/finance/fedwatch-turns-hawkish-with-57-odds-of-september-rate-increase/"
+      },
+      {
+        "label": "Apple CEO transition: John Ternus takes over September 1; Tim Cook becomes chairman — CNBC",
         "url": "https://www.cnbc.com/2026/04/20/apple-names-john-ternus-ceo-replacing-tim-cook-who-becomes-chairman.html"
-      },
-      {
-        "label": "September FOMC rate hike now expected amid energy shocks — Chase",
-        "url": "https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks"
-      },
-      {
-        "label": "Newsquawk weekly calendar Aug 31–Sep 4: Chicago PMI, ISM Mfg, JOLTS, ADP, ISM Svc, NFP",
-        "url": "https://www.newsquawk.com/headlines/newsquawk-weekly-economic-calendar---31st-august---4th-september-2026"
-      },
-      {
-        "label": "Canada retaliatory tariffs — $19.9B of US goods at 15-25-50% effective September 8, 2026",
-        "url": "https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html"
-      },
-      {
-        "label": "BTC/USDT live ticker — Crypto.com Exchange",
-        "url": "https://crypto.com/exchange/trade/spot/BTC_USDT"
       }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7704.0,  "change_pct": -0.10, "as_of": "2026-08-31T11:00:00Z" },
-    "nasdaq": { "level": 26329.0, "change_pct": -0.10, "as_of": "2026-08-31T11:00:00Z" },
-    "vix":    { "level": 14.51,   "change_pct": -0.41, "as_of": "2026-08-31T11:00:00Z" },
-    "ust10y": { "level": 4.72,    "change_bps": 0,     "as_of": "2026-08-31T11:00:00Z" },
-    "dxy":    { "level": 99.54,   "change_pct": -0.12, "as_of": "2026-08-31T11:00:00Z" }
+    "sp500":  { "level": 7704.0,  "change_pct": -0.10, "as_of": "2026-08-31T12:00:00Z" },
+    "nasdaq": { "level": 26329.0, "change_pct": -0.10, "as_of": "2026-08-31T12:00:00Z" },
+    "vix":    { "level": 14.51,   "change_pct": 0.34,  "as_of": "2026-08-31T12:00:00Z" },
+    "ust10y": { "level": 4.72,    "change_bps": 5,     "as_of": "2026-08-31T12:00:00Z" },
+    "dxy":    { "level": 99.54,   "change_pct": -0.12, "as_of": "2026-08-31T12:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield", "value": 5.21, "trigger_above": 5.30, "unit": "%" },
-    { "name": "Brent Crude", "value": 90.10, "trigger_above": 94.00, "unit": "$/bbl" }
+    { "name": "30Y Yield", "value": 5.21, "trigger_above": 5.30, "unit": "%" }
   ],
   "watchlist_mentions": [
     {
       "ticker": "AAPL",
-      "note": "~$316.83 premarket (-0.72%). Tim Cook's 15-year tenure ends today; John Ternus officially becomes CEO September 1. The market reaction is muted — succession was announced in April — but Ternus is a hardware engineer, not a platform strategist, and AAPL's premium multiple rests on the AI services narrative. September's product event is Ternus' first major public test; street is watching for an AI platform vision or a hardware-cycle pivot. AAPL near $320 with a hardware-first executive taking the wheel during an AI-valuation era is a new uncertainty layer. History of planned megacap CEO handoffs shows Year 1 swings from -38% to +76%; hold, don't add, until Ternus signals strategic direction.",
+      "note": "~$316.83 premarket (-0.72%). Tim Cook's final day; John Ternus officially becomes CEO September 1. The market has priced the transition since the April 20 announcement. The unresolved question is whether Ternus, a hardware engineer, articulates an AI platform vision at September's annual product event — that is the repricing risk, not today's session.",
       "sentiment": "neutral"
     },
     {
       "ticker": "NVDA",
-      "note": "~$219.07 premarket (+0.70% from $217.55 close). Friday's -4.3% sell-the-news reversal is being partially recovered. Still structurally below $220 support; a sustained daily close above $220 is the signal the distribution was a single-session flush rather than the start of a deeper repricing. Next Blackwell read-through expected around AVGO earnings (~Sep 4-5). Setup unchanged: $220 is the bull/bear line.",
+      "note": "$219.07 premarket (+0.70% from Friday's $217.55 close). Partially recovering Friday's -4.57% session. Still below $220 structural support. Two closes above $225 on volume is the recovery criterion from the August 26-27 institutional buying zone at $215-220.",
       "sentiment": "neutral"
     },
     {
       "ticker": "BTC",
-      "note": "$78,652 live (Crypto.com, 11:02 UTC). 24h range: $76,988-$79,409. The $76,661 Aug 24 structural support has held through Friday's session, the weekend, and today's overnight range. Bessent buyback program starts in 9 days (September 9). Two consecutive daily closes above $80K remains the bull re-entry criterion. A daily close below $76,661 is the exit signal. The Iran geopolitical variable is the new wildcard — BTC sometimes catches a flight-to-safety bid in geopolitical risk-off but can also sell with risk assets in sustained deleveraging.",
+      "note": "~$78,652 live (11:02 UTC). Weekend range $76,864-$79,409; $76,661 August 24 support has held through two retests. $80K two-close confirmation still open. Bessent buyback program starts September 9. Iran geopolitical risk adds a new variable — BTC can bid as a safe haven or sell with risk assets in sustained deleveraging.",
       "sentiment": "neutral"
-    },
-    {
-      "ticker": "NFP",
-      "note": "Friday September 4, 8:30 ET. Consensus: +475K payrolls, 5.1% unemployment. Advance signals this week: Chicago PMI today (9:45 ET), ISM Manufacturing Sep 1 (10:00 ET), JOLTS Sep 1, ADP Wednesday (consensus ~400K private payrolls), ISM Services Thursday. The Iran oil shock adds a complication: if Brent stays above $90 through NFP week, the Fed's energy-inflation calculus tightens even on a soft labor market print. A sub-200K NFP is the only near-term catalyst that could materially reduce September hike probability and flip regime bias dovish.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "INTU",
-      "note": "~$395-405 (estimated; second Monday of the AI-competition repricing). No management walk-back has materialized. The AAPL leadership transition may briefly overshadow the SaaS sector story in the headlines, but the structural question — AI as substitute vs. AI as product — remains unresolved. CRM vs. INTU bifurcation (AI-as-product premium vs. AI-as-substitute discount) remains the key sector spread to monitor.",
-      "sentiment": "negative"
     }
   ],
   "trade_setups": [
     {
-      "asset": "30Y yield — trigger briefly breached intraday; close above 5.30% is formal activation",
-      "thesis": "The 30Y touched 5.31% intraday last week — formally crossing the 5.30% regime trigger — before closing at 5.21% on August 28. That intraday breach without a closing confirmation means the framework has not formally activated, but the cushion is zero. The Iran oil shock adds a new inflation input the bond market will price through this week's data corridor. A confirmed daily close at or above 5.30% converts step-aside to outright bearish — the first formal regime activation since the framework was constructed.",
-      "entry": "A daily close at or above 5.30% on the 30Y formally activates the regime. Size into inverse duration (TBT, TMV, short TLT) on that trigger. Inverse signal: a post-NFP close at or below 5.10% would indicate the trigger is deactivating through the September FOMC window.",
-      "invalidation": "NFP September 4 prints below 200K and 30Y closes at or below 5.10%.",
-      "horizon": "Through September 4 NFP; hard reset September 16 FOMC."
+      "asset": "Brent crude",
+      "thesis": "Brent crossed $90 on the Larak Island exchange and a mined supertanker in the southern Strait — the first vessel halted by mines this cycle. The setup is a binary: if IRGC widens mine operations or tanker operators announce voluntary transit suspensions, $94-100 is the next structured zone; if the exchange is contained, Brent reverts toward $86-88. The $90 breach is the signal that the mine threat has been priced as real rather than rhetorical.",
+      "entry": "$90 is the current breach level; $86-88 is the reversion zone if contained; $94 is the regime risk threshold",
+      "invalidation": "A confirmed US-Iran pause via CENTCOM statement or Qatar mediation channel brings Brent below $87. Two consecutive tanker-transit-suspension announcements by a major operator confirms the escalation scenario.",
+      "horizon": "3-7 days; resolves with the September 4 jobs print or further military exchange"
     },
     {
-      "asset": "Brent crude — Iran escalation pushes oil toward regime threshold",
-      "thesis": "Brent crossed $90/bbl on renewed U.S.-Iran strikes (Larak Island rocket launchers), now within 4pts of the $94 regime trigger. Prior cushion was ~6pts. If the Strait of Hormuz faces any physical supply disruption, Brent could move rapidly through $94. Oil above $94 would be the second regime indicator at trigger simultaneously with the 30Y — a multi-indicator regime breach converts step-aside to an unambiguous bearish read.",
-      "entry": "Long energy (XLE, CVX, XOM) on any escalation news threatening physical supply. $92 Brent is the early warning level; $94 is regime activation.",
-      "invalidation": "Iran-US diplomatic progress via Qatar mediation causes Brent to close below $87 for two consecutive sessions.",
-      "horizon": "Geopolitical; reassess weekly."
+      "asset": "30Y UST",
+      "thesis": "The 30Y touched 5.31% intraday last week before closing at 5.21% on August 28 — a near-breach without close confirmation, leaving 9bps of cushion. The oil channel is newly open: sustained Brent above $90 adds an estimated 20-30bps to headline CPI over 3-6 months and could enter Warsh communications before September 16. The Bessent buyback program starting September 9 provides structural demand estimated at 10-15bps of yield suppression.",
+      "entry": "5.21% is current; 5.30% is the regime close trigger; 5.00% is the dovish de-escalation level on a soft NFP",
+      "invalidation": "NFP September 4 below 150K with AHE below 0.2% resets the 30Y toward 5.00-5.10%",
+      "horizon": "Resolves September 4 (NFP) through September 16 (FOMC)"
     },
     {
-      "asset": "BTC — $76,661 support holds through two retests; Bessent bid T-9 days",
-      "thesis": "The $76,661 Aug 24 support has now been tested twice (weekend intraday low $76,864; today's 24h low $76,988) and held. The Bessent buyback program provides a structural demand backstop starting September 9. Two consecutive daily closes above $80K is the bull confirmation threshold. The Iran geopolitical variable is the key new input — a sustained risk-off deleveraging scenario is the primary downside risk to this setup.",
-      "entry": "Hold above $76,661. Add aggressively on two consecutive daily closes above $80K.",
-      "invalidation": "Daily close below $76,661.",
-      "horizon": "Through September 9 Bessent buyback start."
+      "asset": "NVDA",
+      "thesis": "At $219.07 premarket, NVDA is recovering Friday's -4.57% session but remains below $220 structural support. The August 26-27 institutional buying zone ($215-220) has not broken. Geopolitical risk sessions historically compress growth multiples; the floor holds or breaks on the first full session with Iran as a market backdrop.",
+      "entry": "$215-220 is the support zone; $220 is the structural level; $225+ on two closes confirms the base held",
+      "invalidation": "A daily close below $215 breaks the August 26-27 buying thesis and opens the $205-210 gap",
+      "horizon": "This week; September 4 jobs report is the macro catalyst"
     }
   ],
-  "bear_case": "The bear pathway now has three simultaneous triggers where Friday had two. The added variable is Iran: if the Strait of Hormuz escalates from airstrikes to a naval supply disruption, Brent could break above $94 concurrent with the 30Y threatening 5.30% — activating two regime indicators simultaneously for the first time since the framework was constructed. This week's data stack amplifies the risk: a hot NFP print (above 400K) would lock in the September 16 FOMC hike and push 30Y through 5.30% in a formal close. Canada's $19.9B tariffs take effect September 8, four days after NFP, stacking an import-inflation impulse on top of the oil-price and labor-market inflation picture. In a combined scenario — Brent above $94 + NFP above 400K + Canada tariffs effective + 30Y closing above 5.30% — the framework registers a multi-indicator regime breach for the first time, and the posture conversion to outright bearish is the mechanical next step. SPX 7,500-7,600 by September 16 FOMC is the downside target under that scenario. Secondary bear inputs: AAPL under Ternus fails to articulate an AI platform vision at the September product event, converting a neutral transition overhang to active selling at peak-Cook multiple; INTU's AI-competition repricing spreads into ADSK, HUBS, and DOCN without being absorbed as idiosyncratic. Step-aside is the correct posture ahead of this conjunction — no single trigger alone is sufficient to flip the call, but two firing in the same NFP week would be.",
+  "bear_case": "The scenario linking both stories: Brent sustaining above $94 concurrent with the 30Y closing above 5.30% would mark the first multi-indicator regime breach since the framework was constructed. This week's data stack amplifies the risk — a hot NFP (above 200K, AHE above 0.3%) locks in the September 16 hike while Canada's tariffs arrive September 8. If the Strait disruption pushes Brent toward $94-100, a third inflationary input enters Fed communications before September 16. If SPX closes below 7,650 in the first two sessions of this week, the current contained-exchange read is wrong.",
   "body_mdx": "data/briefings/markets/2026-08-31-morning.mdx"
 }
