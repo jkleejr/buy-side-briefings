@@ -7,7 +7,7 @@ import PolicyDecisions from "@/components/policy-decisions";
 // The route stays /earnings — it is linked from the briefings and indexed —
 // but the page presents itself as the Calendar everywhere a reader sees it.
 export const metadata = {
-  title: "Calendar — Buy-Side Briefings",
+  title: "Calendar",
   description:
     "Upcoming events for every stock you track: a timeline chart and full calendar with dates, countdowns, and the Street's EPS and revenue estimates — confirmed vs. estimated.",
 };

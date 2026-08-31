@@ -22,7 +22,7 @@ const LABELS: Record<string, string> = {
   "^GSPTSE": "TSX",
 };
 
-export const metadata = { title: "Global Markets — Buy-Side Briefings" };
+export const metadata = { title: "Global Markets" };
 export const revalidate = 60;
 
 export default function GlobalPage() {

@@ -1,7 +1,7 @@
 import Panel from "@/components/panel";
 
 export const metadata = {
-  title: "About — Buy-Side Briefings",
+  title: "About",
   description:
     "Buy-Side Briefings is a personal website with automated daily reports on the stock market — a trustworthy source of information that keeps readers updated.",
 };

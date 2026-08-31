@@ -57,7 +57,7 @@ const SUGGESTIONS: Array<{
   },
 ];
 
-export const metadata = { title: "Watchlist — Buy-Side Briefings" };
+export const metadata = { title: "Watchlist" };
 export const revalidate = 120;
 
 const INITIAL_RANGE = "5D" as const;

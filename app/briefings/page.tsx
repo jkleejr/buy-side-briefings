@@ -1,7 +1,7 @@
 import { getAllBriefings } from "@/lib/data";
 import BriefingsFilters from "@/components/briefings-filters";
 
-export const metadata = { title: "Briefings Archive — Buy-Side Briefings" };
+export const metadata = { title: "Briefings Archive" };
 
 export default function BriefingsArchivePage() {
   const items = getAllBriefings();

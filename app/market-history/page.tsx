@@ -3,7 +3,7 @@ import ProseMarkdown from "@/components/prose-markdown";
 import Panel from "@/components/panel";
 
 export const metadata = {
-  title: "Market History — Buy-Side Briefings",
+  title: "Market History",
   description:
     "What 180 years of tech booms and market crashes say about the AI era: run-ups, drawdowns, recoveries, who captured the value, and scenarios for what comes next.",
 };

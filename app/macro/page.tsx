@@ -13,7 +13,7 @@ const MACRO_LABELS: Record<string, string> = {
   "DX-Y.NYB": "Dollar",
 };
 
-export const metadata = { title: "Macro — Buy-Side Briefings" };
+export const metadata = { title: "Macro" };
 export const revalidate = 60;
 
 export default function MacroPage() {

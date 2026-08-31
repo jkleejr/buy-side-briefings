@@ -1,7 +1,7 @@
 import SectorRotation from "@/components/sector-rotation";
 import Panel from "@/components/panel";
 
-export const metadata = { title: "Sectors — Buy-Side Briefings" };
+export const metadata = { title: "Sectors" };
 export const revalidate = 300;
 
 export default function SectorsPage() {

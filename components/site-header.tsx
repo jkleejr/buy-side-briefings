@@ -42,7 +42,7 @@ export default function SiteHeader() {
             screen reader announces for the link. */}
         <Link
           href="/"
-          aria-label="Buy-Side Briefings — home"
+          aria-label="Buy Side — home"
           className="flex shrink-0 items-center self-center"
         >
           <BrandMark className="h-[18px] w-[17px]" />

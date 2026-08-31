@@ -15,8 +15,8 @@ const SITE_URL = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Buy-Side — Market Briefings",
-    template: "%s — Buy-Side",
+    default: "Buy Side",
+    template: "%s — Buy Side",
   },
   // All three descriptions describe the same site in the same terms: a
   // briefing twice a day, cited, and explicitly not a recommendation. The
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     "A market briefing twice a day, morning and night: what happened, what it means, and what would change it — with every claim linked to its source.",
   openGraph: {
     type: "website",
-    siteName: "Buy-Side Briefings",
-    title: "Buy-Side — Market Briefings",
+    siteName: "Buy Side",
+    title: "Buy Side",
     description:
       "A market briefing twice a day, morning and night. Every claim carries a number and every number links to its source. It reports; the decision stays yours.",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buy-Side — Market Briefings",
+    title: "Buy Side",
     description:
       "A market briefing twice a day, morning and night — every claim linked to its source.",
   },
