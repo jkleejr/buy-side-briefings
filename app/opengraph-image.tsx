@@ -3,7 +3,7 @@ import { OgMark } from "@/lib/og-mark";
 
 export const runtime = "edge";
 export const alt =
-  "Buy-Side Briefings — a market briefing twice a day, every claim linked to its source";
+  "Buy Side — a market briefing twice a day, every claim linked to its source";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,7 +41,7 @@ export default async function OgImage() {
           }}
         >
           <OgMark height={56} />
-          <span style={{ color: "#71717a" }}>Buy-Side Briefings · Terminal</span>
+          <span style={{ color: "#71717a" }}>Buy Side · Terminal</span>
         </div>
 
         {/* Headline */}
