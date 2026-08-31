@@ -41,10 +41,10 @@
      ratio, and it earns the emphasis. */
   --fib: #857149;
   --fib-strong: #9d7615;
-  --serif: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
-    "Times New Roman", serif;
-  --mono: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, Consolas,
-    "Liberation Mono", monospace;
+  /* One face per platform, in order: macOS/iOS, Windows, then everything else.
+     Charter is the design; the rest only ever render where it is absent. */
+  --serif: Charter, "Palatino Linotype", Georgia, serif;
+  --mono: ui-monospace, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 /* Dark ground — every token remapped; components reference the vars at runtime
@@ -160,13 +160,6 @@ body {
 body {
   font-size: 15px;
   line-height: 1.55;
-}
-
-/* Display role — same family, used at headline sizes. Kept as a class so the
-   markup that opted into a display face doesn't need to change. */
-.font-display {
-  font-family: var(--serif);
-  font-variant-numeric: lining-nums;
 }
 
 /* Blinking dot for "live" indicators — quieter than the terminal version. */
