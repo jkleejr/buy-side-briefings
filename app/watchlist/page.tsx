@@ -1,9 +1,7 @@
-import { getRecentMentionsByTicker, getWatchlist, type RecentMention } from "@/lib/data";
-import { getChartSeries, getQuote } from "@/lib/markets";
-import type { ChartPoint } from "@/lib/chart-ranges";
+import { getWatchlist } from "@/lib/data";
+import { getQuote } from "@/lib/markets";
 import { formatPct } from "@/lib/utils";
 import Panel from "@/components/panel";
-import WatchlistCards, { type WatchQuote } from "@/components/watchlist-cards";
 import TickerSearch from "@/components/ticker-search";
 import LevelsChart from "@/components/levels-chart";
 
@@ -60,12 +58,9 @@ const SUGGESTIONS: Array<{
 export const metadata = { title: "Watchlist" };
 export const revalidate = 120;
 
-const INITIAL_RANGE = "5D" as const;
-
 export default async function WatchlistPage() {
   const entries = getWatchlist();
   const symbols = entries.map((e) => e.symbol);
-  const mentionsMap = getRecentMentionsByTicker(symbols);
 
   // The switcher shows raw tickers, which is fine for NVDA or AMD but useless
   // for a foreign listing like "000660.KS". Label only the symbols that aren't
@@ -73,6 +68,12 @@ export default async function WatchlistPage() {
   // while the US names stay compact.
   const chartLabels = Object.fromEntries(
     entries.filter((e) => e.symbol.includes(".")).map((e) => [e.symbol, e.label]),
+  );
+
+  // The personal note per ticker, shown top-right of the chart for whichever
+  // symbol is selected.
+  const chartNotes = Object.fromEntries(
+    entries.filter((e) => e.note).map((e) => [e.symbol, e.note as string]),
   );
 
   // Filter suggestions to drop any tickers already in the user's watchlist.
@@ -85,30 +86,12 @@ export default async function WatchlistPage() {
     c.tickers.map((t) => t.symbol),
   );
 
-  // Parallel: live quote + initial-range series per watchlist ticker, plus
-  // a separate batch for suggestion quotes (no sparkline data needed there).
-  const [quotes, sparks, suggestionQuotes] = await Promise.all([
-    Promise.all(entries.map((e) => getQuote(e.symbol))),
-    Promise.all(entries.map((e) => getChartSeries(e.symbol, INITIAL_RANGE))),
-    Promise.all(suggestionSymbols.map((s) => getQuote(s))),
-  ]);
+  const suggestionQuotes = await Promise.all(
+    suggestionSymbols.map((s) => getQuote(s)),
+  );
   const suggestionQuoteBySymbol = new Map(
     suggestionSymbols.map((s, i) => [s, suggestionQuotes[i]]),
   );
-
-  // Convert arrays → maps keyed by symbol for the client component.
-  const seriesBySymbol: Record<string, ChartPoint[]> = {};
-  const quoteBySymbol: Record<string, WatchQuote> = {};
-  const mentionsByKey: Record<string, RecentMention | undefined> = {};
-  entries.forEach((e, i) => {
-    seriesBySymbol[e.symbol] = sparks[i];
-    quoteBySymbol[e.symbol] = {
-      price: quotes[i]?.price ?? null,
-      changePct: quotes[i]?.changePct ?? null,
-      avg50pct: quotes[i]?.avg50pct ?? null,
-    };
-    mentionsByKey[e.symbol] = mentionsMap.get(e.symbol);
-  });
 
   return (
     <div className="mx-auto max-w-5xl space-y-1">
@@ -138,27 +121,20 @@ export default async function WatchlistPage() {
               symbols={symbols}
               initialSymbol={symbols[0]}
               labels={chartLabels}
+              notes={chartNotes}
               defaultLevels
             />
           </div>
         </Panel>
       )}
 
-      {entries.length === 0 ? (
+      {entries.length === 0 && (
         <Panel code="EMPTY" title="No tickers configured">
           <div className="p-4 text-center font-mono text-[11px] text-[var(--dim)]">
             Add tickers to{" "}
             <code className="text-[var(--amber)]">data/watchlist.json</code> and commit.
           </div>
         </Panel>
-      ) : (
-        <WatchlistCards
-          entries={entries}
-          initialRange={INITIAL_RANGE}
-          initialSeriesBySymbol={seriesBySymbol}
-          quoteBySymbol={quoteBySymbol}
-          mentions={mentionsByKey}
-        />
       )}
 
       {suggestionCategories.length > 0 && (
