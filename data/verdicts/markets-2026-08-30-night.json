@@ -1,0 +1,100 @@
+{
+  "routine": "markets",
+  "date": "2026-08-30",
+  "window": "night",
+  "generated_at": "2026-08-31T01:00:00Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "hold",
+    "emoji": "🟡",
+    "headline": "US strikes near Strait of Hormuz send oil surging ahead of jobs week",
+    "label": "HOLD — 0 of 2 regime triggers active: 30Y 5.17% (5.30% gate clear); BTC $77,481 (above $62K floor). No US equity session Sunday; US military action near Hormuz adds oil-inflation overhang into Monday's open.",
+    "conviction": "medium",
+    "rationale_short": "No US equity session Sunday. BTC has drifted lower to $77,481 at 8pm ET (Crypto.com live; 24h range $76,988–$79,409), down from Saturday's $78,153 — the five-attempt $80K resistance conversion remains unmet and the risk-off tone from the Iran strike is a modest additional headwind. The dominant Sunday night story: US forces hit Iranian rocket launchers at Larak Island in the Strait of Hormuz, ending roughly a month of relative quiet in the ongoing 2026 Hormuz campaign. Brent crude surged above $90/barrel and WTI hit ~$86 (+2% at open); S&P 500 futures slipped 0.1% Sunday night. The geopolitical escalation opens an oil-CPI channel at the worst possible moment — Warsh's hawkish Jackson Hole speech already has September hike odds at 59–68%, and a sustained oil-driven inflation impulse is the mechanism that would push the 30Y the 13bps remaining to the 5.30% regime trigger. Friday's equity snapshot (S&P –0.25%, Nasdaq –0.52%) is unchanged. Wall Street is on pace for a positive August (Dow +2.1% for the month entering Monday), but that month-end tailwind competes directly with the geopolitical risk premium and the jobs-week calendar: August BLS (Sept 4, 8:30am ET) is the rate-path binary — above 200K payrolls with AHE above 0.3% plus oil-driven CPI risk assembles a full hawkish tableau and likely cements the September hike.",
+    "supporting_data": [
+      {
+        "label": "BTC $77,481 live at 8pm ET Sun (24h range $76,988–$79,409); $80K resistance intact — Crypto.com Exchange",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "US strikes Iranian rocket launchers at Larak Island; first military action in a month — The National",
+        "url": "https://www.thenationalnews.com/news/us/2026/08/30/us-strikes-iran-near-strait-of-hormuz-in-first-military-action-in-a-month/"
+      },
+      {
+        "label": "Oil jumps 2% at week's open on US military action near Hormuz; Brent above $90 — Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-30/latest-oil-market-news-and-analysis-for-aug-31"
+      },
+      {
+        "label": "Stock futures fall after US strikes Iran; S&P futures –0.1% Sunday night — CNBC Live Updates",
+        "url": "https://www.cnbc.com/2026/08/30/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "2026 Strait of Hormuz crisis — campaign context and escalation timeline",
+        "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7711.76,  "change_pct": -0.25, "as_of": "2026-08-28T20:00:00Z" },
+    "nasdaq": { "level": 26402.42, "change_pct": -0.52, "as_of": "2026-08-28T20:00:00Z" },
+    "vix":    { "level": 14.46,    "change_pct": -4.93, "as_of": "2026-08-28T20:00:00Z" },
+    "ust10y": { "level": 4.72,     "change_bps": 5,     "as_of": "2026-08-28T20:00:00Z" },
+    "dxy":    { "level": 99.50,    "change_pct": 0.40,  "as_of": "2026-08-28T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.17, "trigger_above": 5.30, "unit": "%" },
+    { "name": "BTC Gate 2", "value": 77481, "trigger_below": 62000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "BTC",
+      "note": "$77,481 at 8pm ET Sunday (Crypto.com live; 24h range $76,988–$79,409). Fifth failed $80K conversion attempt — Friday's intraday $81,142 high was not sustained on a closing basis, Saturday's range $77,377–$78,338 confirmed the miss, and Sunday's range extends the retracement. The risk-off Iran strike adds a modest headwind. Two consecutive closes above $80K remain the criterion for resistance-to-support conversion. A close below $76,661 (August 24 intraday low) on Monday signals range-top failure and opens a path toward $74K. Bessent Treasury buybacks launching September 9 remain the next structural support catalyst.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "OIL",
+      "note": "Brent above $90/barrel, WTI ~$86 at Sunday open (+2%). US military struck Iranian rocket launchers at Larak Island ending ~1 month of relative Hormuz calm. The inflationary channel is the key risk: sustained Brent above $90 adds ~0.2–0.3pp to headline CPI on a trailing 3-month basis. If oil holds these levels into the September 4 jobs report, it materially hardens the case for the September Fed hike. Watch Monday's full session for whether the surge sustains or fades as geopolitical detail emerges.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Last close $217.55 (Friday Aug 28). No weekend session. The $215–220 structural support zone remains the key reference into Monday. Two consecutive closes above $225 on volume confirm the floor held; a close below $215 extends the distribution toward the September gap at $205–210. Iran strike / oil spike is a risk-off input that caps near-term multiple expansion. AVGO Q3 FY2026 earnings (est. Sept 4–5 AH) are the next chip-sector read-through.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Last close ~$369.29 (Friday Aug 28). Q3 FY2026 earnings est. September 4–5 AH — the week's largest single-stock event. VMware CVE-2026-59310 active exploitation overhang and 72% AI revenue concentration remain the key risk factors. A strong AI revenue guide would be the first chip-sector sentiment reset since NVDA's August 26 beat. The Iran escalation and oil spike do not directly affect AVGO's thesis but contribute to the broader risk-off environment heading into report week.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Last close $465.58 (Friday Aug 28). Seventeenth-plus session below $484 containment ceiling. Warsh hawkish overhang + Sunday Iran escalation maintains multiple compression pressure. AVGO earnings September 4–5 are the next sector catalyst. No new weekend-specific AMD catalyst.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "BTC — $80K resistance entrenched; Hormuz risk adds headwind",
+      "thesis": "Five consecutive failed $80K conversion attempts (four pre-buyback squeeze, one post-squeeze ending with Friday's $81,142 intraday high that did not close above). BTC has retraced to $77,481 Sunday evening. The Iran strike introduces mild additional risk-off pressure. Monday's open is the next live session: a BTC close above $80K restarts the two-consecutive-closes conversion attempt; a close below $76,661 (August 24 intraday low) signals range-top failure and a retracement path toward $74K. Bessent Treasury buybacks (September 9 launch) remain the structural support backstop.",
+      "entry": "BTC $77,481 Sunday 8pm ET. Monday close above $80K restarts conversion; below $76,661 confirms range failure.",
+      "invalidation": "Two consecutive closes above $80K confirm support conversion. Bessent buyback launch September 9 adds structural bid.",
+      "horizon": "September 2 (Monday open) through September 9 (Bessent buyback launch)"
+    },
+    {
+      "asset": "Energy / Oil — Brent above $90 on Hormuz escalation",
+      "thesis": "US strikes on Iranian rocket launchers at Larak Island ended ~1 month of Hormuz calm and sent Brent above $90 (+2% at Sunday open). The 2026 Hormuz campaign has disrupted shipping since late February; each military re-escalation has added 2–4% to crude in the first 48 hours before partially fading. If Brent sustains above $90, the CPI read-through is meaningful for Fed rate expectations and tightens the September hike calculus. Long energy into Monday's open is the tactical play; the invalidation is a swift diplomatic de-escalation announcement that reverses the premium.",
+      "entry": "Brent ~$90, WTI ~$86 Sunday night. Hold above $90 Monday close sustains the risk premium.",
+      "invalidation": "Diplomatic ceasefire or Hormuz re-opening announcement; Brent back below $87.",
+      "horizon": "Monday August 31 through September 4 (jobs report)"
+    },
+    {
+      "asset": "2Y-30Y Treasury spread — oil adds upward pressure on the 30Y trigger",
+      "thesis": "Spread entered the week at ~85bps (30Y 5.17% minus 2Y 4.32%). The Iran-driven oil surge adds an inflationary channel that could push the 30Y toward the 5.30% regime trigger. If Brent holds above $90 into the August jobs report (Sept 4) and payrolls come in above 200K with AHE above 0.3%, the combined oil-CPI + hot-payrolls input likely cements September hike and tests 5.30% on the 30Y. The two-indicator framework (30Y gate + BTC floor) currently reads 0-of-2 triggered; a hot jobs print plus sustained oil could change that.",
+      "entry": "30Y at ~5.17% Friday close. Watch 5.25% as the early warning level; 5.30% is the hard regime gate.",
+      "invalidation": "August payrolls below 150K with AHE below 0.2%; Brent fades below $87. Both together reverse hike odds and take 30Y durably below 5.00%.",
+      "horizon": "Monday August 31 through September 4 (jobs report), September 16 (FOMC)"
+    }
+  ],
+  "bear_case": "The Hormuz escalation assembles the most complete bear scenario in the 2026 framework: (1) Oil above $90 adds a real CPI impulse on top of already-elevated services inflation; (2) Warsh's hawkish Jackson Hole speech has September hike odds at 59–68%, and oil-driven CPI makes any near-term pivot language impossible; (3) The 30Y sits just 13bps from the 5.30% regime trigger — a sustained inflationary oil shock is the mechanism that closes that gap; (4) BTC has failed five consecutive $80K conversion attempts and trades at $77,481, removing the crypto momentum narrative; (5) The August jobs report (Sept 4) compares against July's –23K miss, meaning even a modest rebound above 150K with solid AHE reads as 'strong' and cements the September hike. If payrolls rebound above 200K, AHE above 0.3%, and Brent holds above $90 — the first simultaneous stagflation reading (cost-push inflation + tightening labor = hot CPI + negative real growth signal) assembles in real time. The 30Y tests 5.30%, the 2Y-30Y spread compresses below 75bps, equities price the hike, and BTC retraces toward $74K. The level that flips this read: a Hormuz de-escalation that takes Brent back below $85, combined with a soft jobs print (below 100K, AHE flat) — that binary would push September hike odds below 30% and open a rate-compression rally.",
+  "body_mdx": "data/briefings/markets/2026-08-30-night.mdx"
+}
