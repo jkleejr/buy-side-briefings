@@ -26,8 +26,8 @@ export default function MacroPage() {
       </header>
 
       {/* The four macro pillars, each a tile grid fed live from FRED with
-          data/macro.json as the manual fallback. The homepage keeps the
-          compact FedPanel snapshot; this page is the full read. */}
+          data/macro.json as the manual fallback. This page is the only Fed
+          read on the site — the homepage carries no macro panel. */}
       <MacroSections />
 
       {/* Same chart as the homepage: candles, derived levels, drawing tools.
