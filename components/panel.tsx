@@ -62,7 +62,7 @@ export default function Panel({
     >
       <header className="flex min-w-0 items-center gap-2 border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
         {header}
-        <div className="ml-auto flex shrink-0 items-center gap-2 text-[10px] uppercase tracking-wider text-[var(--dim)]">
+        <div className="ml-auto flex shrink-0 items-center gap-2 font-mono text-[10px] uppercase tracking-wider text-[var(--dim)]">
           {meta}
           {asOf && (
             <span className="hidden whitespace-nowrap font-mono text-[9px] tracking-widest text-[var(--dim)] sm:inline">
