@@ -25,6 +25,17 @@ function fmtDate(iso: string): string {
   });
 }
 
+/**
+ * What to print in the timeline's name column. A US ticker is the clearest
+ * label it has, but a foreign listing is an exchange code — "000660.KS" and
+ * "005930.KS" name SK Hynix and Samsung to nobody. Those carry the watchlist
+ * label instead. Keyed on the dot, which is what separates a plain ticker from
+ * an exchange-suffixed one, the same rule the levels chart's switcher uses.
+ */
+function axisName(e: EarningsEntry): string {
+  return e.symbol.includes(".") ? e.label : e.symbol;
+}
+
 // ---- The "chart": a horizontal gantt of when each name reports ------------
 function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
   const onAxis = entries.filter((e) => e.daysUntil <= HORIZON);
@@ -53,8 +64,11 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
           const left = `${(Math.max(e.daysUntil, 0) / HORIZON) * 100}%`;
           return (
             <div key={e.symbol} className="flex items-center gap-2">
-              <span className="w-14 shrink-0 text-right font-mono text-[11px] font-bold text-[var(--foreground)]">
-                {e.symbol}
+              <span
+                title={e.symbol}
+                className="w-14 shrink-0 truncate text-right font-mono text-[11px] font-bold text-[var(--foreground)]"
+              >
+                {axisName(e)}
               </span>
               <div className="relative h-4 flex-1">
                 {/* gridlines */}

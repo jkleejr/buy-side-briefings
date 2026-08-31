@@ -1,4 +1,4 @@
-import { getEarningsSchedule, countdownBadge } from "@/lib/earnings";
+import { getEarningsSchedule } from "@/lib/earnings";
 import { getFomcEvents, getBojEvents } from "@/lib/calendar-feeds";
 import { todayET } from "@/lib/utils";
 import EarningsSchedule from "@/components/earnings-schedule";
@@ -15,42 +15,20 @@ export const metadata = {
 // Live from Yahoo; refresh hourly.
 export const revalidate = 3600;
 
-function Stat({ label, value, sub, tone }: { label: string; value: string; sub?: string; tone?: string }) {
-  return (
-    <div className="flex flex-col gap-0.5 border border-[var(--border)] bg-[var(--panel)] px-2 py-1.5">
-      <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
-        {label}
-      </span>
-      <span
-        className="font-mono text-[13px] font-semibold tracking-tight"
-        style={{ color: tone ?? "var(--foreground)" }}
-      >
-        {value}
-      </span>
-      {sub && (
-        <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--dim)]">
-          {sub}
-        </span>
-      )}
-    </div>
-  );
-}
-
 export default async function EarningsPage() {
   const schedule = await getEarningsSchedule();
-  const { entries } = schedule;
 
   // Fed and BoJ decisions come from static published tables, so this is a
   // synchronous read with no failure mode — the calendar can't be thinned by a
   // feed hiccup the way the earnings half can.
+  //
+  // Lookback 0: the page is titled "Upcoming events", and a decision that has
+  // already happened is not one. A meeting dated today still counts, since
+  // `since` is today itself rather than tomorrow.
   const today = todayET();
-  const policy = [...getFomcEvents(today), ...getBojEvents(today)].sort((a, b) =>
-    a.date.localeCompare(b.date),
+  const policy = [...getFomcEvents(today, 0), ...getBojEvents(today, 0)].sort(
+    (a, b) => a.date.localeCompare(b.date),
   );
-
-  const next = entries[0] ?? null;
-  const within7 = entries.filter((e) => e.daysUntil >= 0 && e.daysUntil <= 7).length;
-  const within30 = entries.filter((e) => e.daysUntil >= 0 && e.daysUntil <= 30).length;
 
   return (
     <div className="mx-auto max-w-5xl space-y-1">
@@ -59,18 +37,6 @@ export default async function EarningsPage() {
           Upcoming events
         </h1>
       </header>
-
-      <div className="grid grid-cols-2 gap-1 sm:grid-cols-4">
-        <Stat
-          label="Next Up"
-          value={next ? next.symbol : "—"}
-          sub={next ? `${countdownBadge(next.daysUntil)} · ${next.isEstimate ? "est" : "confirmed"}` : undefined}
-          tone="var(--amber)"
-        />
-        <Stat label="Next 7 Days" value={String(within7)} sub="reports" tone={within7 ? "var(--amber)" : undefined} />
-        <Stat label="Next 30 Days" value={String(within30)} sub="reports" tone="var(--cyan-term)" />
-        <Stat label="Tracked" value={String(entries.length)} sub="with a date" />
-      </div>
 
       <PolicyDecisions events={policy} today={today} />
 

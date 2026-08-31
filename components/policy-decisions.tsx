@@ -11,17 +11,20 @@ import type { CalendarEvent } from "@/lib/data";
  * no revenue estimate, so they get their own panel rather than em-dashed
  * cells in the earnings schedule.
  *
- * Recent decisions stay listed after they happen — a Fed decision that landed
- * last week is how you read this week's tape, and a calendar that drops it the
- * next morning leaves a blank fortnight behind today. They are listed in the
- * same ink as everything else; only the countdown badge carries state.
+ * Forward-looking only. Past decisions used to stay listed on the argument
+ * that last week's Fed meeting is how you read this week's tape — but on a page
+ * headed "Upcoming events" they read as clutter, and the reports cover what a
+ * decision did far better than a dated row can. The page asks for a zero
+ * lookback; the tone() guard below still handles a negative countdown so a
+ * meeting dated today can't fall through a gap.
  */
 
 /**
  * Colour by imminence — on the countdown badge only, the same amber ≤7d /
- * cyan ≤30d scale the earnings schedule uses. A decision that has already
- * happened is dimmed here too; its badge already reads "−23d", so nothing
- * else in the row needs to shout about it.
+ * cyan ≤30d scale the earnings schedule uses. The negative branch is
+ * unreachable from the calendar page, which asks for no lookback, and is kept
+ * only so a stale build serving yesterday's date degrades to a dim row rather
+ * than a mis-coloured one.
  */
 function tone(days: number): string {
   if (days < 0) return "text-[var(--dim)]";

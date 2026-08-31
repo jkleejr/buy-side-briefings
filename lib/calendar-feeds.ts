@@ -135,7 +135,7 @@ function lookbackFrom(from: string, days = CENTRAL_BANK_LOOKBACK_DAYS): string {
   return d.toISOString().slice(0, 10);
 }
 
-/** FOMC decisions from the table above — recent past included. */
+/** FOMC decisions from the table above. Pass 0 for upcoming-only. */
 export function getFomcEvents(
   from: string,
   lookbackDays = CENTRAL_BANK_LOOKBACK_DAYS,
@@ -155,7 +155,7 @@ export function getFomcEvents(
   });
 }
 
-/** BoJ policy decisions from the table above — recent past included. */
+/** BoJ policy decisions from the table above. Pass 0 for upcoming-only. */
 export function getBojEvents(
   from: string,
   lookbackDays = CENTRAL_BANK_LOOKBACK_DAYS,
