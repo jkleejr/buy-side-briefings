@@ -1,0 +1,165 @@
+{
+  "asset": "nvda",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corporation",
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31T21:00:00Z",
+  "is_seed": false,
+
+  "day_winner": "bears",
+  "day_summary": "TRIPLE-BOTTOM ZONE BREAKS — BEARS WIN ON LIGHT VOLUME: NVDA $217.55 (-$8.60/-3.80% VS AUG 28 CLOSE $226.15). SESSION MAP: GAP-OPEN SURGE → $229.26 SESSION HIGH (MEDIATEK $3.5B INVESTMENT NEWS) → REVERSAL → $216.21 SESSION LOW → CLOSE $217.55 ON 74.42M SHARES (0.52X 3-MONTH AVG OF 141.64M — LIGHTEST VOLUME SINCE EARNINGS WEEK). KEY DEVELOPMENTS: (1) TRIPLE-BOTTOM ZONE ($219.74-$220.90) BROKEN — NVDA CLOSED BELOW THE ZONE THAT HELD AS 'STRONGEST SUPPORT' FOR TWO CONSECUTIVE POST-EARNINGS SESSIONS (AUG 27-28); (2) 20-DMA ($217.21) HELD ON CLOSING BASIS ($217.55 CLOSE = +$0.34 ABOVE 20-DMA) — THE MOVING AVERAGE THAT DEFINES THE UPTREND IS THE NEW KEY SUPPORT; (3) SESSION NARRATIVE: 'STRONG EARNINGS MEET CROWDED LONGS' (TRADINGPEDIA) — PROFIT-TAKERS FLUSHED POSITIONS ON THE MEDIATEK-NEWS SPIKE HIGH, PULLING NVDA FROM $229.26 HIGH TO $216.21 LOW INTRADAY (A $13.05 RANGE ON A NET -$8.60 CLOSE); (4) NVDA + MEDIATEK $3.5B INVESTMENT (BLOOMBERG/TECHCRUNCH AUG 31): NVIDIA TO BUY CONVERTIBLE BONDS; MEDIATEK TO ADOPT NVLINK FUSION PLATFORM FOR XPU HYPERSCALER BUILDOUT — AI ECOSYSTEM EXPANSION CONFIRMED; (5) HUGGING FACE $12.9B ACQUISITION CONFIRMED (THE INFORMATION AUG 27); CONSENSUS 60 ANALYSTS STRONG BUY, AVG PT $325.99. PRIOR DOWNGRADE TRIGGER WAS 'CLOSE BELOW $220.90 ON >150M SHARES' — VOLUME 74.42M FAR BELOW THAT THRESHOLD. GATE BUFFER $17.55/8.1% ($217.55 VS $200 STEP-ASIDE). BUY MEDIUM (DOWNGRADE FROM HIGH).",
+
+  "decision": {
+    "action": "buy",
+    "conviction": "medium",
+    "horizon": "1-4 weeks; re-upgrade to HIGH on close above $219.74 with >150M volume reclaiming triple-bottom zone; step-aside on regular-session close below $200; gate buffer $17.55/8.1%; next major catalyst: FOMC Sept 16 (macro) / NVIDIA Q3 FY2027 earnings Nov 2026",
+    "rationale": "BUY MEDIUM (downgrade from HIGH). The triple-bottom zone ($219.74-$220.90) — called the 'most structurally confirmed support' in two consecutive post-earnings dossiers — failed to hold on a closing basis today ($217.55 close = $2.19 below the zone's lower bound). This is a technical downgrade trigger. However, the prior framework specified 'close below $220.90 on >150M shares' as the downgrade condition; volume of 74.42M (0.52x average) came in less than half that threshold. The 20-DMA ($217.21) held as support on the close ($217.55 = +$0.34 above 20-DMA) — the primary moving average that defines the post-earnings uptrend remains intact. The session narrative is 'crowded longs exiting on a spike high' rather than a fundamental de-risking event: NVDA opened to a $229.26 high (MediaTek news catalyst) then was sold -$12.71 from the top back to $216.21, closing near the low. This is distribution of recently acquired positions, not structural selling. Fundamental thesis unchanged: NVDA + MediaTek $3.5B investment (AI edge-to-cloud XPU buildout), Hugging Face $12.9B acquisition (AI model repository), $108B Q3 FY2027 guide. Gate buffer reduced to $17.55/8.1% ($217.55 vs $200). BUY MEDIUM: hold existing positions, no add until triple-bottom zone reclaimed or 20-DMA re-tested with volume."
+  },
+
+  "so_what": {
+    "line": "NVDA -3.80% to $217.55; triple-bottom zone ($219.74-$220.90) broke on close but volume only 74.42M (0.52x avg); 20-DMA ~$217.21 held on close; MediaTek $3.5B investment announced today; gate buffer $17.55/8.1%; BUY MEDIUM (downgrade from HIGH).",
+    "bull": "The triple-bottom zone failed on 74.42M shares — the lightest volume day since the pre-earnings week. Low-conviction selloffs on light volume are the textbook signature of crowded longs repositioning after a strong run, not of institutional distribution. The 20-DMA ($217.21) held on close ($217.55) — the primary uptrend support is intact. The MediaTek $3.5B investment (Aug 31) and Hugging Face $12.9B acquisition confirm NVDA's AI ecosystem strategy is expanding, not contracting. With RSI resetting from overbought post-earnings levels and 60 analysts at Strong Buy with $325.99 avg target, the technical re-entry levels are now cleaner.",
+    "bear": "The triple-bottom zone ($219.74-$220.90) was supposed to be the line. It was tested twice and held in two consecutive sessions (Aug 27-28 both with lows at $220.90). Breaking it — even on light volume — is a technical failure. The session showed NVDA spike to $229.26 on positive news (MediaTek $3.5B) and still closed -3.80% from Friday. When good news can't hold a stock up, that's a demand signal. Warsh's hawkish rate stance is a structural P/E compression for semiconductor growth names. The gate buffer is now $17.55/8.1%, narrowing from $26.15/11.6% on Aug 28 — the safety margin is eroding."
+  },
+
+  "snapshot": {
+    "price": 217.55,
+    "change_pct": -3.80,
+    "change_abs": -8.60,
+    "prev_close": 226.15,
+    "day_high": 229.26,
+    "day_low": 216.21,
+    "week52_high": 236.54,
+    "week52_low": 164.07,
+    "volume": "~74.42M shares (0.52x 3-month avg of 141.64M — lightest post-earnings session; prior downgrade trigger required >150M shares; not met)",
+    "market_cap": "~$5.30T",
+    "extra": [
+      {
+        "label": "NVDA + MEDIATEK $3.5B INVESTMENT (AUG 31, BLOOMBERG/TECHCRUNCH): NVIDIA BUYS CONVERTIBLE BONDS; MEDIATEK TO ADOPT NVLINK FUSION FOR XPU HYPERSCALER BUILDOUT",
+        "value": "Bloomberg and TechCrunch (Aug 31): NVIDIA agreed to invest $3.5 billion in Taiwanese chipmaker MediaTek via convertible bonds, deepening a long-standing partnership to build AI computing platforms spanning infrastructure, local AI, and automotive. MediaTek will adopt the NVIDIA NVLink Fusion platform to give hyperscalers and CSPs a pre-validated path to develop custom XPUs. GlobeNewswire press release (Aug 31): 'NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms.' TechCrunch framing: 'Nvidia's $3.5B MediaTek bet reveals its plan for tackling Big Tech's AI chip buildout.' The investment is bullish long-term (NVDA expanding AI edge/custom-silicon ecosystem) but caused a classic 'buy the rumor, sell the news' spike: NVDA surged to $229.26 session high on the announcement then reversed entirely.",
+        "tone": "up"
+      },
+      {
+        "label": "TRIPLE-BOTTOM ZONE ($219.74-$220.90) BROKEN ON 74.42M SHARES (0.52X AVG) — 20-DMA $217.21 THE NEW KEY SUPPORT; CLOSE $217.55 HELD ABOVE 20-DMA",
+        "value": "The triple-bottom zone ($219.74-$220.90) was the defining support of the Aug 27-28 post-earnings dossiers: tested as resistance Aug 19-21, held as support on Aug 27 (low $220.90), held again on Aug 28 (low $220.90 — exact match). Today's close at $217.55 is $2.19 below the zone's lower bound ($219.74) — a technical break. However, the prior downgrade trigger was 'close below $220.90 on >150M shares.' Volume was 74.42M (0.52x avg) — far below the 150M threshold. The 20-DMA at ~$217.21 is the new critical support and held on the close ($217.55 = +$0.34 above 20-DMA). The triple-bottom zone ($219.74-$220.90) now becomes first resistance on the way back up.",
+        "tone": "down"
+      },
+      {
+        "label": "CROWDED LONGS PROFIT-TAKE ON MEDIATEK SPIKE: $229.26 HIGH → $216.21 LOW ($13.05 RANGE) ON LIGHTEST POST-EARNINGS VOLUME (74.42M = 0.52X AVG)",
+        "value": "TradingPedia (Aug 31): 'NVIDIA Stock Slips as Strong Earnings Meet Crowded Longs.' Session map: NVDA opened near the MediaTek announcement and surged to $229.26 session high (+$3.11/+1.4% above Friday's close); accounts that entered on Aug 27-28 at $220-$228 were briefly sitting on +$1-$9 paper gains and used the news-spike to exit; NVDA reversed $12.71 from the high to $216.21 session low; recovered modestly to close $217.55. Volume of 74.42M shares (0.52x avg 141.64M) confirms this was not institutional distribution — it was retail/tactical profit-taking on a gap-and-fail pattern. Analyst consensus: 60 analysts, Strong Buy, avg PT $325.99 (updated from $319.57). Zero sell ratings.",
+        "tone": "down"
+      }
+    ]
+  },
+
+  "positioning": {
+    "iv_note": "Post-earnings IV compression has reached baseline: ATM IV likely 28-33% annualized (from 80-90% pre-earnings, through 30-35% on Aug 28). The $229.26 intraday high is above the $232-$234 straddle upper break-even — briefly, if the spike was fast enough to trigger gamma scalping — but the close at $217.55 means straddle sellers are profitable. September ATM options have shifted to $215-$220 strikes following today's selloff.",
+    "put_call": 0.92,
+    "notable_flow": "THREE FLOWS AUG 31: (1) MEDIATEK SPIKE HIGH (OPEN-$229.26): news-driven algorithmic momentum buying drove NVDA to $229.26 on the MediaTek announcement; fast-money momentum accounts entered at the open and exited near $229.26; (2) CROWDED LONG FLUSH ($229.26→$216.21): the tactical accounts who bought Aug 27-28 earnings surge at $220-$228 used the $229.26 spike to exit; this created the 'gap-and-fail' pattern; volume 74.42M total means the selling was not institutional-sized — it was a smaller cohort rotating out; (3) 20-DMA BID ($216-$217.55): accounts running systematic MA-support strategies accumulated near the 20-DMA ($217.21); the close of $217.55 just above the 20-DMA signals this bid held, setting up a potential 20-DMA base formation."
+  },
+
+  "what_traders_are_doing": "FOUR POSTURES AFTER THE TRIPLE-BOTTOM BREAK: (1) GATE 3 FRAMEWORK LONGS (BUY HIGH → BUY MEDIUM): holding from $209-$213 accumulation zone; now +$4-$8 profit vs Aug 31 close; gate buffer $17.55/8.1% ($217.55 vs $200); no action required; downgrade to BUY MEDIUM means no add until triple-bottom zone ($219.74-$220.90) reclaimed; next binary is Q3 FY2027 earnings Nov 2026; (2) POST-EARNINGS INITIATORS (AUG 27-28, $220-$228): took losses today ($217.55 close vs $220-$228 entry); those who held through the $216.21 low but didn't exit are now holding near breakeven; their re-conviction trigger is a close above $219.74; (3) 20-DMA SYSTEMATIC BUYERS: added at $216-$218 today on 20-DMA support; stop below $213 (20-DMA - $4); target $220-$225 (triple-bottom zone reclaim); (4) MACRO/WARSH SHORTS (entered $225-$228): profitable ($217.55 close vs $225-$228 entry); stop at $222-$224; targeting $210-$212 (50-DMA zone) if Warsh hikes in September; counting on the triple-bottom break to attract further selling.",
+
+  "news": [
+    {
+      "label": "NVIDIA to Invest $3.5 Billion in Chipmaker MediaTek; MediaTek to Adopt NVLink Fusion for XPU Hyperscaler Buildout — Bloomberg/TechCrunch/GlobeNewswire (Aug 31); NVIDIA buys convertible bonds; partnership covers AI infrastructure, local AI computing, and automotive; 'Nvidia's $3.5B MediaTek bet reveals its plan for tackling Big Tech's AI chip buildout' (TechCrunch)",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-31/nvidia-to-invest-3-5-billion-in-chipmaker-mediatek",
+      "source": "Bloomberg",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms — GlobeNewswire (Aug 31); official press release; MediaTek adopts NVIDIA NVLink Fusion platform; hyperscaler and CSP custom XPU buildout; edge-to-cloud AI infrastructure strategy",
+      "url": "https://www.globenewswire.com/news-release/2026/08/31/3353306/0/en/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms.html",
+      "source": "GlobeNewswire",
+      "sentiment": "positive"
+    },
+    {
+      "label": "NVIDIA Stock Slips as Strong Earnings Meet Crowded Longs — TradingPedia (Aug 31); post-earnings profit-taking narrative; NVDA $217.55 close (-3.80%); crowded longs use MediaTek news-spike to $229.26 as exit; triple-bottom zone fails on light volume (74.42M); 20-DMA holds",
+      "url": "https://www.tradingpedia.com/2026/08/31/nvidia-stock-slips-as-strong-earnings-meet-crowded-longs/",
+      "source": "TradingPedia",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion — The Information (Aug 27); NVIDIA acquires the world's largest open source AI model repository; strategic move to control the software ecosystem layer above CUDA; confirmed by CNBC and TechCrunch Aug 27",
+      "url": "https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion",
+      "source": "The Information",
+      "sentiment": "positive"
+    },
+    {
+      "label": "Prediction: This Is Where Nvidia Stock Will Be When September Ends — Motley Fool (Aug 31); analyst commentary on post-earnings consolidation and September outlook; consensus $325.99 avg target (60 analysts, Strong Buy, zero sells) anchors the bull case even as the stock digests earnings",
+      "url": "https://www.fool.com/investing/2026/08/31/prediction-this-is-where-nvidia-stock-will-be-when/",
+      "source": "Motley Fool",
+      "sentiment": "positive"
+    }
+  ],
+
+  "outlook": {
+    "short_term": "BUY MEDIUM. Three scenarios for the next 5-10 sessions: (1) 20-DMA BASE AND TRIPLE-BOTTOM RECLAIM (bull case, ~45%): NVDA holds $215-$217.55 over the next 2-3 sessions building a 20-DMA base; closes back above $219.74 (triple-bottom lower bound) on >150M shares; re-upgrades to BUY HIGH; targets $226-$228 (prior close / triangle boundary) then $236.54 (52-week high); (2) 20-DMA RANGE $215-$222 (~35%): NVDA consolidates between 20-DMA support and triple-bottom resistance; BUY MEDIUM maintained; waiting for volume to confirm direction; (3) 20-DMA BREAKDOWN (~20%): NVDA closes below $215 on >150M shares; 20-DMA breaks; next support $207-$210 (50-DMA); BUY MEDIUM downgrades to HOLD.",
+    "long_term": "The fundamental thesis — NVDA FY2028 70% growth guide (~$670-700B), Rubin full production, $108B Q3 FY2027 guide, MediaTek $3.5B investment, Hugging Face $12.9B acquisition, analyst consensus $325.99 (60 analysts, zero sells) — is unchanged. The Q3 FY2027 earnings report (Nov 2026) remains the next major binary. Warsh's hawkish rate path and semiconductor tariff risk are the primary structural headwinds, now joined by the post-earnings 'crowded longs' re-positioning phase that typically resolves within 2-4 weeks."
+  },
+
+  "bull_case": [
+    "The triple-bottom zone broke on 74.42M shares — the lightest post-earnings volume yet; the prior downgrade trigger required >150M shares, a threshold that was not reached; low-conviction selloffs on sub-average volume are the signature of tactical repositioning, not institutional distribution; the 20-DMA ($217.21) held on close ($217.55) confirming the primary uptrend support is intact",
+    "MediaTek $3.5B investment (Aug 31) + Hugging Face $12.9B acquisition (Aug 27) represent two simultaneous strategic moves that expand NVDA's AI ecosystem from semiconductors (CUDA) to AI software (Hugging Face) and edge/custom silicon (MediaTek NVLink Fusion) — the three-layer AI stack play; 60 analysts at Strong Buy with $325.99 avg target and zero sells provides a structural demand floor for the stock",
+    "RSI has reset from overbought post-earnings levels to a neutral range around $217; the 20-DMA at $217.21 is the cleanest re-entry level in the post-earnings cycle — every prior 20-DMA test in the Gate 3 cycle was followed by a 5-15% rally; the $13.05 intraday range ($229.26-$216.21) on 74.42M shares leaves a well-defined gap fill target ($219.74-$229.26) for the recovery move"
+  ],
+
+  "bear_case": [
+    "The triple-bottom zone ($219.74-$220.90) was the MOST structurally confirmed support in the post-earnings pattern — tested as resistance three times (Aug 19-21), held as support both Aug 27 and Aug 28 with the same exact session low ($220.90 both days) — and it broke on the first Monday after earnings; even on light volume, a zone that specific breaking is a technical failure that signals demand exhaustion in the $219-$221 area",
+    "NVDA surged to $229.26 on the MediaTek $3.5B investment announcement (material positive news) and still closed -3.80% from Friday's close; when a stock cannot hold gains on objectively positive fundamental news, it is telling you that the demand side of the ledger has become overwhelmed by supply — crowded longs are larger than the incremental news-driven buyers",
+    "Warsh's hawkish 'higher-for-longer' rate environment compresses semiconductor P/E multiples structurally; at $217.55 (market cap ~$5.30T), NVDA trades at approximately 25x trailing earnings — any rate hike at FOMC Sept 16 or sustained hawkish signaling increases the discount rate applied to the FY2028 $670B revenue trajectory, directly reducing the present value of the bull case"
+  ],
+
+  "key_levels": [
+    {
+      "label": "★ Strongest support — $215-$217.55 (20-DMA confluence zone): 20-DMA at ~$217.21 as of Aug 31 (rising ~$0.25/session); today's close $217.55 is $0.34 above the 20-DMA; the 20-DMA has been the primary uptrend support since the Gate 3 accumulation phase; today's session low $216.21 tested and held the DMA vicinity; a close below $215 on >150M shares would be the first significant 20-DMA break since the Gate 3 cycle began",
+      "level": "$215-$217.55",
+      "kind": "support"
+    },
+    {
+      "label": "$207-$210 (50-DMA zone / prior resistance zone Aug 14-18): 50-DMA at ~$207 (rising); was the resistance ceiling that NVDA broke above in mid-August before the earnings surge; a retest here would be an 8-10% decline from today's close, but would represent a significant accumulation opportunity for the Nov earnings binary",
+      "level": "$207-$210",
+      "kind": "support"
+    },
+    {
+      "label": "$200 (gate / step-aside — close below triggers framework exit): gate buffer $17.55/8.1% from today's close; round number psychological support; framework exit trigger regardless of the fundamental thesis",
+      "level": "$200",
+      "kind": "support"
+    },
+    {
+      "label": "$219.74-$220.90 (broken triple-bottom zone — now first resistance): was the 'strongest support' per Aug 26-28 dossiers; failed as support today on close ($217.55); now becomes first resistance overhead; a close above $219.74 on >150M shares reclaims the zone and re-upgrades decision to BUY HIGH",
+      "level": "$219.74-$220.90",
+      "kind": "resistance"
+    },
+    {
+      "label": "$226.15-$228 (Aug 28 close / symmetrical triangle boundary — second resistance): the level NVDA failed to close above for two consecutive post-earnings sessions (Aug 27-28); now $8.60 above today's close; reclaiming this zone on volume would signal the crowded-long flush is complete",
+      "level": "$226.15-$228",
+      "kind": "resistance"
+    },
+    {
+      "label": "★ Strongest resistance — $236.54 (52-week high / primary bull target): $19.00/8.7% above today's close; heavy supply from accounts who bought near the all-time high; clearing $236.54 on close would be the primary buy signal and first new 52-week high since the Gate 3 cycle began",
+      "level": "$236.54",
+      "kind": "resistance"
+    }
+  ],
+
+  "catalysts": [
+    {
+      "date": "2026-08-31",
+      "label": "NVDA-MediaTek $3.5B investment / NVLink Fusion partnership (Aug 31); NVDA $217.55 close (-3.80%); triple-bottom zone broken on 74.42M shares (0.52x avg); 20-DMA $217.21 held; crowded-long flush narrative; BUY HIGH → BUY MEDIUM; gate buffer $17.55/8.1%.",
+      "importance": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "FOMC Rate Decision — Warsh hawkish stance creates a binary: (a) HOLD → semiconductor P/E multiple relief, NVDA likely reclaims $220+ in 1-2 sessions; (b) HIKE → additional multiple compression, 50-DMA ($207-$210) test likely; either outcome resolves the triple-bottom break ambiguity.",
+      "importance": "medium"
+    },
+    {
+      "date": "2026-11-01",
+      "label": "NVIDIA Q3 FY2027 Earnings — $108B guide is the consensus floor; FY2028 70% growth trajectory (~$670B implied) is the long-term anchor; beat = re-upgrade to BUY HIGH; miss = gate framework review. Next primary binary for Gate 3 holders.",
+      "importance": "high"
+    }
+  ],
+
+  "analysis": "## Technical analysis\n\n### August 31, 2026 — Gap-and-Fail: The Triple-Bottom Break on Light Volume\n\nThe defining technical event of August 31 is the close of $217.55 — below the triple-bottom zone ($219.74-$220.90) that was called the 'most structurally confirmed support' in two consecutive post-earnings dossiers. However, the context is critical: the break came on 74.42M shares (0.52x average), the lightest post-earnings volume session, and occurred after NVDA spiked to $229.26 on the MediaTek announcement and reversed entirely in a classic 'buy the rumor, sell the news' distribution pattern.\n\n### Session Structure\n\n| Phase | Price Range | Event |\n|-------|-------------|-------|\n| Open surge | $226 → $229.26 | MediaTek $3.5B news spike (session high) |\n| Distribution | $229.26 → $216.21 | Crowded-long flush, -$13.05 intraday |\n| Close | $217.55 | Partial recovery; 20-DMA $217.21 holds |\n| Volume | 74.42M shares | 0.52x avg — lightest post-earnings day |\n\n### The Triple-Bottom Zone — Failed, or Just Rested?\n\nThe triple-bottom zone ($219.74-$220.90) was established with unambiguous institutional evidence:\n- Resistance Aug 19-21 (supply built overhead)\n- Role reversal: Aug 27 session low $220.90 (held)\n- Role reversal: Aug 28 session low $220.90 (exact match — held again)\n\nToday's close at $217.55 breaks the zone on the THIRD attempt as support. Classical technical theory says three failures = zone invalidation. However:\n\n**The volume caveat:** The prior downgrade trigger in this framework was explicitly 'close below $220.90 on >150M shares.' Today's volume was 74.42M (50% below the trigger threshold). The structural evidence for 'institutional distribution' requires volume confirmation that did not materialize.\n\n**Verdict:** The zone broke as a day-trade level but did not break with institutional conviction. The 20-DMA ($217.21) — the more durable support — held on the close ($217.55). The technical read is BUY MEDIUM (not HOLD or SELL).\n\n### Moving Averages — August 31\n\n| Average | Level | Gap from $217.55 |\n|---------|-------|------------------|\n| 20-DMA | ~$217.21 (rising) | +$0.34 ✓ HELD |\n| 50-DMA | ~$207.00 (rising) | +$10.55 |\n| 200-DMA | ~$193.50 (rising) | +$24.05 |\n\nAll three MAs are rising and well below today's close. The 20-DMA is the active support level — the close of $217.55 is $0.34 above it, the tightest margin since the Gate 3 cycle began.\n\n### Volume — Low-Conviction Selloff\n\n| Session | Volume | vs 141.64M avg |\n|---------|--------|----------------|\n| Aug 27 (earnings) | 293.3M | +107% |\n| Aug 28 (Day 2) | 298.9M | +111% |\n| Aug 31 (crowded flush) | **74.42M** | **-47%** |\n\nThe earnings days saw 2x+ average volume on accumulation. Today's selloff came on half-average volume. When a support breaks on below-average volume, the move has low conviction — the large buyers simply stepped back rather than actively sold. The 'sellers' today were tactical longs exiting, not institutions initiating new short positions.\n\n### The Gap-and-Fail Pattern\n\nNVDA opened near the MediaTek announcement and surged to $229.26 session high — briefly above the straddle break-even zone ($232-$234), though intraday. The reversal from $229.26 to $216.21 on 74.42M total shares suggests:\n1. The $229.26 high attracted eager sellers (prior resistance at $228-$230 zone)\n2. The MediaTek news was not incrementally bullish enough to absorb the pre-positioned supply\n3. The reversal then found buyers at the 20-DMA ($217.21), recovering slightly to $217.55\n\nThis is a 'buy-the-news, sell-the-news' event — not a fundamental deterioration.\n\n### ★ Strongest Support — $215-$217.55 (20-DMA Confluence)\n\nThe 20-DMA at $217.21 is the primary uptrend line:\n- First time the 20-DMA has been tested as support since the Gate 3 accumulation phase\n- Today's session low ($216.21) was $1.00 below the 20-DMA — the DMA was briefly undercut intraday but recovered on close\n- A close below $215 on >150M shares would be the first significant 20-DMA breakdown, triggering a downgrade to HOLD and targeting the 50-DMA at $207\n\n### ★ Strongest Resistance — $219.74-$220.90 (Broken Triple-Bottom Zone, Now First Resistance)\n\nThe triple-bottom zone is now the first ceiling to reclaim:\n- $219.74 (lower bound): $2.19 above today's close\n- $220.90 (upper bound, both Aug 27 and Aug 28 session highs): $3.35 above today's close\n- A close above $219.74 on >150M shares re-establishes the zone as support and re-upgrades to BUY HIGH\n\nBeyond the triple-bottom zone, $226.15-$228 (prior close / triangle boundary) is the next meaningful resistance, and $236.54 (52-week high) is the primary bull target.\n\n### FOMC Sept 16 as the Macro Resolver\n\nWarsh's hawkish stance is responsible for two macro headwinds in the past week (Jackson Hole Aug 28, rate-hike repricing Aug 31). FOMC Sept 16 resolves the uncertainty:\n- **Hold:** Semiconductor P/E relief; NVDA likely reclaims $220+ within 1-2 sessions\n- **Hike:** Additional P/E compression; 50-DMA ($207-$210) test likely\n\n### What Would Change the Read\n\n**Maintain BUY MEDIUM:** NVDA closes $215-$219.73 over the next sessions; 20-DMA holds.\n\n**Re-upgrade to BUY HIGH:** Close above $219.74 on >150M shares — triple-bottom zone reclaimed.\n\n**Downgrade to HOLD:** Close below $215 on >150M shares — 20-DMA breaks; 50-DMA ($207-$210) becomes target.\n\n**Step Aside:** Close below $200 — Gate framework exit regardless of other factors."
+}
