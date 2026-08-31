@@ -210,8 +210,8 @@ export function todayET(): string {
 export function todayETDisplay(): string {
   return new Date().toLocaleDateString("en-US", {
     timeZone: "America/New_York",
-    month: "2-digit",
-    day: "2-digit",
+    month: "numeric",
+    day: "numeric",
     year: "numeric",
-  }).replace(/\//g, "-");
+  });
 }
