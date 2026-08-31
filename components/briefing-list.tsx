@@ -25,7 +25,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
     );
     if (!panel) return empty;
     return (
-      <Panel title="Recent Reports">
+      <Panel title="History">
         {empty}
       </Panel>
     );
@@ -79,14 +79,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
 
   if (!panel) return body;
   return (
-    <Panel
-      title="Recent Reports"
-      meta={
-        <Link href="/briefings" className="text-[var(--cyan-term)] hover:underline">
-          ALL ▸
-        </Link>
-      }
-    >
+    <Panel title="History">
       {body}
     </Panel>
   );
