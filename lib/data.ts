@@ -566,50 +566,6 @@ export function getWatchlist(): WatchlistEntry[] {
   }
 }
 
-export type RecentMention = {
-  ticker: string;
-  date: string;
-  window?: string;
-  routine: string;
-  note: string;
-  sentiment: "positive" | "neutral" | "negative";
-  /** The briefing's plain-English headline — what happened, not a call. */
-  verdict_headline?: string;
-};
-
-/**
- * For each ticker in the watchlist, find the most recent verdict that mentions
- * it. Returns a map keyed by ticker so the page can look up O(1).
- *
- * Reads `watchlist_mentions` only. It also used to read `dont_buy`, rendering
- * "Don't buy — <reason>. Better entry <price>." on the ticker card — an
- * instruction, and the last place on the site still issuing one.
- */
-export function getRecentMentionsByTicker(
-  tickers: string[],
-): Map<string, RecentMention> {
-  const map = new Map<string, RecentMention>();
-  if (tickers.length === 0) return map;
-  const wanted = new Set(tickers);
-  // getAllMarketsVerdicts already returns newest-first.
-  for (const v of getAllMarketsVerdicts()) {
-    for (const m of v.watchlist_mentions ?? []) {
-      if (!wanted.has(m.ticker) || map.has(m.ticker)) continue;
-      map.set(m.ticker, {
-        ticker: m.ticker,
-        date: v.date,
-        window: v.window,
-        routine: v.routine,
-        note: m.note,
-        sentiment: m.sentiment,
-        verdict_headline: headlineFor(v.verdict),
-      });
-    }
-    if (map.size === wanted.size) break; // every ticker matched
-  }
-  return map;
-}
-
 function normalizeDate(value: unknown): string {
   if (value instanceof Date) {
     const y = value.getUTCFullYear();
