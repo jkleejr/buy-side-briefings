@@ -284,22 +284,27 @@ export default function HomeTerminal({
           Its own line also lets the date show on a phone. It was hidden below
           the sm breakpoint only because three items could not share one row
           there; stacked, there is nothing to crowd. */}
-      <div className="pt-4">
-        <div className="font-mono text-[11px] text-[var(--dim)]">
-          {current?.dateLabel ?? data.todayLabel}
-        </div>
-        {/* No wrapping on this row. With flex-wrap the longer morning label
-            pushed the switch onto a second line, where justify-between put it
-            flush LEFT — so the control appeared to jump corners between AM and
-            PM. The label truncates instead, and the switch is pinned right on
-            every width. */}
-        <div className="mt-1.5 flex items-center justify-between gap-3">
-          <span className="min-w-0 truncate font-mono text-[11px] text-[var(--dim)]">
+      {/* The two lines sit in one column with the switch beside them, tops
+          aligned — the switch used to line up with the second line instead.
+          Padding is pt-4 (16px) plus the 23px the switch already sat below the
+          date, so the switch keeps the position it had and the text drops to
+          meet it rather than the switch rising.
+
+          No wrapping. With flex-wrap the longer morning label pushed the switch
+          onto a second line, where justify-between put it flush LEFT — so the
+          control appeared to jump corners between AM and PM. The label
+          truncates instead, and the switch is pinned right on every width. */}
+      <div className="flex items-start justify-between gap-3 pt-[39px]">
+        <div className="min-w-0">
+          <div className="font-mono text-[11px] text-[var(--dim)]">
+            {current?.dateLabel ?? data.todayLabel}
+          </div>
+          <div className="mt-1.5 truncate font-mono text-[11px] text-[var(--dim)]">
             {view === "morning" ? "Morning report" : "Night report"}
             {current ? `, ${current.timeLabel}` : ""}
-          </span>
-          <EditionSwitch data={data} view={view} setView={setView} />
+          </div>
         </div>
+        <EditionSwitch data={data} view={view} setView={setView} />
       </div>
 
       {current ? (
