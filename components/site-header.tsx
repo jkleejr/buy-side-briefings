@@ -13,14 +13,6 @@ const NAV = [
   { href: "/briefings", code: "RPT", label: "Reports" },
   // Route is still /earnings; the nav calls it what the page now calls itself.
   { href: "/earnings", code: "CAL", label: "Calendar" },
-  // The sister site, not a route here: it opens in its own tab and never
-  // takes the active-route highlight.
-  {
-    href: "https://ai-capital-flow.vercel.app/",
-    code: "FLOW",
-    label: "AI Capital Flow",
-    external: true,
-  },
   // Market History is deliberately not here — the page stays published and
   // stays in the command palette (⌘K, "m"), it just isn't top-level chrome.
 ];
