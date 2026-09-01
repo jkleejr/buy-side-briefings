@@ -15,7 +15,6 @@ type Destination = {
 const DESTINATIONS: Destination[] = [
   { href: "/", code: "HOME", label: "Home" },
   { href: "/briefings", code: "RPT", label: "Reports" },
-  { href: "/watchlist", code: "WATCH", label: "Watchlist" },
   { href: "/earnings", code: "CAL", label: "Calendar — upcoming events" },
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },

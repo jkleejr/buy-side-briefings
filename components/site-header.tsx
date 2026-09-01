@@ -11,7 +11,6 @@ import ThemeToggle from "./theme-toggle";
 const NAV = [
   { href: "/", code: "TODAY", label: "Today" },
   { href: "/briefings", code: "RPT", label: "Reports" },
-  { href: "/watchlist", code: "WATCH", label: "Watchlist" },
   // Route is still /earnings; the nav calls it what the page now calls itself.
   { href: "/earnings", code: "CAL", label: "Calendar" },
   // The sister site, not a route here: it opens in its own tab and never

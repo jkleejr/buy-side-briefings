@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/briefings",
-    "/watchlist",
     "/macro",
     "/earnings",
     "/global",
