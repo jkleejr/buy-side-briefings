@@ -57,11 +57,7 @@ export default async function SectorRotation() {
   rows.sort((a, b) => (b.pct ?? -999) - (a.pct ?? -999));
 
   return (
-    <Panel
-      title="Sector Rotation · 11 ETFs"
-      href="/sectors"
-      meta={<span>SORT ▾ TODAY</span>}
-    >
+    <Panel title="Sector Rotation · 11 ETFs" meta={<span>SORT ▾ TODAY</span>}>
       <table className="w-full font-mono text-[11px]">
         <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
           <tr>

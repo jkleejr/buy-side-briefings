@@ -16,7 +16,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/", code: "HOME", label: "Home" },
   { href: "/briefings", code: "RPT", label: "Reports" },
   { href: "/earnings", code: "CAL", label: "Calendar — upcoming events" },
-  { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
   { href: "/about", code: "ABT", label: "About" },

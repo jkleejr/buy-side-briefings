@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/macro",
     "/earnings",
     "/global",
-    "/sectors",
     "/about",
     "/privacy",
   ].map((path) => ({

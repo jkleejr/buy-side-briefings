@@ -330,10 +330,10 @@ export default function HomeTerminal({
             <WhatMatters points={current.keyPoints} />
           </div>
 
-          {/* Reference band — the same sector-rotation panel the /sectors page
-              renders, rather than a homepage-only bar band that could only show
-              the day's move. This one carries the ETF and the ~50d column too,
-              and its header links through to the full page. */}
+          {/* Reference band — the sector-rotation panel, which replaced a
+              homepage-only bar band that could only show the day's move. This
+              one carries the ETF and the ~50d column too. It is now the only
+              place the table renders; the /sectors page it came from is gone. */}
           {sectors && <div className="pt-12">{sectors}</div>}
         </>
       ) : (
