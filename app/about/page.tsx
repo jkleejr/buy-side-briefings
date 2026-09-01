@@ -2,7 +2,7 @@
 export const metadata = {
   title: "About",
   description:
-    "Buy Side uses Claude Opus 5 to generate daily reports on the stock market — a trustworthy source of information that keeps readers updated.",
+    "Buy Side uses Claude Opus 5 to generate daily reports on the stock market — a trustworthy source of information that keeps readers updated on the latest events.",
 };
 
 export default function AboutPage() {
@@ -19,12 +19,8 @@ export default function AboutPage() {
           <p>
             <span className="text-[var(--amber)]">Buy Side</span> uses Claude
             Opus 5 to generate daily reports on the stock market. The goal is to
-            create a trustworthy source of information and keep readers updated.
-          </p>
-          <p>
-            The stock market is fast paced and narratives can change quickly based on the
-            news. Traders and investors should be informed on the latest events and
-            current state of the stock market.
+            create a trustworthy source of information and keep readers updated
+            on the latest events.
           </p>
         </div>
       </section>
