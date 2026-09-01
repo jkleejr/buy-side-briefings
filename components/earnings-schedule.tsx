@@ -81,9 +81,12 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
 
   return (
     <div className="p-2">
-      {/* Axis header */}
+      {/* Axis header. The +90d tick is deliberately absent: it sits at
+          left:100%, and centring a label on the container's right edge hangs
+          half of it outside the panel. The gridline still marks the boundary,
+          and the horizon is named in the section above. */}
       <div className="relative mb-1 ml-16 h-4 border-b border-[var(--border)]">
-        {[0, 30, 60, 90].map((d) => (
+        {[0, 30, 60].map((d) => (
           <div
             key={d}
             className="absolute top-0 flex h-full flex-col items-center"
