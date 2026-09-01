@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { BriefingMeta } from "@/lib/data";
 import { windowLabel } from "@/lib/utils";
 import BriefingList from "./briefing-list";
+import Panel from "./panel";
 
 type Props = {
   items: BriefingMeta[];
@@ -42,13 +43,7 @@ export default function BriefingsFilters({ items }: Props) {
 
   return (
     <div className="space-y-1">
-      <div className="border border-[var(--border)] bg-[var(--panel)]">
-        <div className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
-            Filters
-          </span>
-        </div>
-
+      <Panel title="Filters">
         <div className="space-y-1.5 p-2">
           {/* Morning / evening. The routine chips that used to live here
               (Crypto, KOSPI, Markets) are gone — every recent briefing is a
@@ -106,7 +101,7 @@ export default function BriefingsFilters({ items }: Props) {
             {hasActiveFilter ? " (filtered)" : ""}
           </div>
         </div>
-      </div>
+      </Panel>
 
       <BriefingList items={filtered} />
     </div>
