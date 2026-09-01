@@ -179,14 +179,42 @@ export function formatBriefingTitleShort(b: {
 }
 
 
+const WORDS_PER_MINUTE = 200;
+
 /**
- * Honest read-time in minutes from the actual text (~200 wpm). The homepage
- * used to estimate from the verdict summary alone, promising "5 min" over a
- * 5,000-word briefing — always compute from the words the reader will face.
+ * Roughly how long a table row takes to scan. A close table is read at a
+ * glance, not at reading speed, but it is not free either — counting its cells
+ * as prose overstated a report by a minute, counting them as nothing would
+ * understate a 25-row week-ahead table.
  */
-export function readMinutes(text: string): number {
-  const words = text.split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 200));
+const TABLE_ROW_SECONDS = 2.5;
+
+/**
+ * Honest read-time in minutes for a markdown report.
+ *
+ * Counts what a reader actually reads. The input is markdown, so three things
+ * have to come out before counting or the estimate drifts long:
+ *   - link targets — `](https://very/long/url)` is one token to split() and
+ *     zero words to a reader; a report carries a dozen or more
+ *   - table rows — counted separately at a scanning rate, not a reading one
+ *   - syntax marks — #, *, >, backticks, brackets
+ *
+ * Measured against the archive, the old raw split() overstated by up to a
+ * minute, most on the table-heavy night reports.
+ */
+export function readMinutes(markdown: string): number {
+  let t = markdown.replace(/```[\s\S]*?```/g, " ");
+  t = t.replace(/\]\([^)]*\)/g, "]");
+
+  // Count body rows before removing them; the |---|---| separator is not one.
+  const rows = (t.match(/^[ \t]*\|.*\|[ \t]*$/gm) ?? []).filter(
+    (r) => !/^[ \t]*\|[\s:|-]+\|[ \t]*$/.test(r),
+  );
+  t = t.replace(/^[ \t]*\|.*$/gm, " ").replace(/[#>*_`~[\]]/g, " ");
+
+  const words = t.split(/\s+/).filter(Boolean).length;
+  const seconds = (words / WORDS_PER_MINUTE) * 60 + rows.length * TABLE_ROW_SECONDS;
+  return Math.max(1, Math.round(seconds / 60));
 }
 
 /** Current time as "HH:MM UTC" — stamped at server render, i.e. the moment the data was fetched. */
