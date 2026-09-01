@@ -240,24 +240,35 @@ Reports had drifted to a **23-minute read** (morning ~3,500 words, night
 kept producing the same failure: the day's biggest mover got a paragraph in
 the read, a row in the table, a paragraph in the recap and a bullet in the
 stock list — four passes at one fact. The reader wanted the day's story, not
-four angles on it. Budget:
+four angles on it.
+
+The first cut, on 2026-08-29, went to 1,200/1,600 and read too thin — the
+2026-08-31 night report landed at 1,260 words and had room it did not use.
+Raised on 2026-09-01. Budget:
 
 | | words | reads in |
 |---|---|---|
-| **morning** | **900–1,200** | ~5 min |
-| **night** | **1,200–1,600** | ~7 min |
+| **morning** | **1,100–1,500** | ~6 min |
+| **night** | **1,500–2,000** | ~9 min |
+
+**The extra words buy depth, not repetition.** Everything below about one fact
+in one place still holds without exception — the failure that made reports long
+was saying a name four times, and a larger budget must not fund that. Spend the
+room on evidence: the number behind the claim, the mechanism linking two moves,
+the level that would falsify the read. If the day is genuinely thin, come in
+under; the budget is a ceiling with a floor, not a quota to fill.
 
 Per section, as a ceiling — under is fine, over is not. These sum to the
 budget; there is no slack to redistribute:
 
 | section | morning | night |
 |---|---|---|
-| The read (paragraph + bullets) | 220 | 240 |
-| Snapshot (table) | 120 | 150 |
-| What changed / Why it happened | 220 | 260 |
-| Movers | 180 | 200 |
-| What to watch | 200 | 220 |
-| Next 5 Trading Days (night, table) | — | 300 |
+| The read (paragraph + bullets) | 280 | 320 |
+| Snapshot (table) | 140 | 170 |
+| What changed / Why it happened | 280 | 330 |
+| Movers | 220 | 250 |
+| What to watch | 260 | 280 |
+| Next 5 Trading Days (night, table) | — | 350 |
 
 **The day has one story.** Find it before writing a word: the single thing a
 reader who saw nothing today must know. It gets the heading, the read and
