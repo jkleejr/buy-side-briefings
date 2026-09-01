@@ -32,7 +32,7 @@ function isTypingTarget(el: EventTarget | null): boolean {
 }
 
 /**
- * Terminal-style command palette. ⌘K / Ctrl+K opens it; type to filter,
+ * Terminal-style command palette. ⌘I / Ctrl+I opens it; type to filter,
  * ↑/↓ + Enter to navigate.
  */
 export default function CommandPalette() {
@@ -63,10 +63,10 @@ export default function CommandPalette() {
     [router],
   );
 
-  // Global shortcut: ⌘K toggles the palette. `?` opens it too.
+  // Global shortcut: ⌘I toggles the palette. `?` opens it too.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "i") {
         e.preventDefault();
         setOpen((s) => !s);
         return;
