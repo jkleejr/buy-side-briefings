@@ -10,13 +10,13 @@ type Destination = {
 };
 
 // Ordered the way the site is read, not alphabetically or by age: home, then
-// the daily pages (briefings, watchlist, calendar), then the market-data pages
-// (sectors, macro, global), then the standing reports, then about.
+// the daily pages (reports, calendar), then the market-data pages (macro,
+// global), then about.
 const DESTINATIONS: Destination[] = [
   { href: "/", code: "HOME", label: "Home" },
   { href: "/briefings", code: "RPT", label: "Reports" },
-  { href: "/earnings", code: "CAL", label: "Calendar — upcoming events" },
-  { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
+  { href: "/earnings", code: "CAL", label: "Calendar" },
+  { href: "/macro", code: "MACRO", label: "Macro" },
   { href: "/global", code: "GLBL", label: "Global markets" },
   { href: "/about", code: "ABT", label: "About" },
 ];
