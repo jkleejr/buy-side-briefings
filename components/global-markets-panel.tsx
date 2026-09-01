@@ -1,6 +1,5 @@
 import YahooFinance from "yahoo-finance2";
 import { formatPct } from "@/lib/utils";
-import Panel from "./panel";
 
 const yahooFinance = new YahooFinance({
   suppressNotices: ["yahooSurvey", "ripHistorical"],
@@ -58,19 +57,15 @@ export default async function GlobalMarketsPanel() {
   }
 
   return (
-    <Panel
-      title="Global Markets"
-      /* Just the source. The refresh interval and the UTC stamp were
-         instrumentation for a reader who is not asking either question, and
-         the stamp re-rendered on every request. No case override: it takes the
-         meta slot's small caps like every other panel label. */
-      meta={<span>Yahoo</span>}
-    >
+    <section className="border border-[var(--border)] bg-[var(--panel)]">
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-        {REGIONS.map((region) => (
+        {REGIONS.map((region, i) => (
           <div key={region.name} className="flex flex-col">
-            <div className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
-              {region.name}
+            <div className="flex items-baseline justify-between border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
+              <span>{region.name}</span>
+              {i === REGIONS.length - 1 && (
+                <span className="text-[var(--dim)]">Yahoo</span>
+              )}
             </div>
             <table className="w-full font-mono text-[11px]">
               <tbody>
@@ -106,6 +101,6 @@ export default async function GlobalMarketsPanel() {
           </div>
         ))}
       </div>
-    </Panel>
+    </section>
   );
 }
