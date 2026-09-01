@@ -5,8 +5,11 @@
   "generated_at": "2026-09-01T00:20:00Z",
   "is_seed": false,
   "verdict": {
+    "code": "step_aside",
+    "emoji": "🔴",
+    "conviction": "medium",
     "headline": "Oil shock read as inflation, not fear: hike bets rise even as factory data collapses",
-    "label": "Chicago PMI contracts to 47.1 while September hike odds reach 66%; energy leads, gold and crypto fall",
+    "label": "STEP ASIDE — 2 of 4 regime triggers breached: Brent $90.69 and WTI $85.54 both above oil thresholds. Chicago PMI 47.1 vs 57.9 consensus (weakest print of 2026); September hike odds 66.1%; 10Y 4.75% (20-month high); gold fell 1.02% as rate expectations overrode the haven bid; crypto slipped; energy the only sector with a bid.",
     "rationale_short": "Manufacturing activity contracted sharply and rate-hike odds rose in the same session, with oil the link between them. The cross-asset signature — gold down, yields at a 20-month high, dollar slightly lower — shows the market pricing the Iran escalation as an inflation event rather than a risk event, which removes the growth-relief valve equities have leaned on since June. A 30Y close above 5.30% or a payrolls print above 200K would confirm the frame; Brent back under $87 would dissolve it.",
     "supporting_data": [
       {
@@ -43,11 +46,10 @@
     "dxy": { "level": 99.54, "change_pct": -0.12, "as_of": "2026-08-31T20:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield", "value": 5.25, "trigger_above": 5.30, "unit": "%" },
-    { "name": "10Y Yield", "value": 4.75, "trigger_above": 5.00, "unit": "%" },
-    { "name": "SPX vs 7,650", "value": 7686.14, "trigger_below": 7650, "unit": "index" },
-    { "name": "Gold", "value": 4483.70, "trigger_below": 4400, "unit": "USD/oz" },
-    { "name": "BTC", "value": 77668, "trigger_below": 76661, "unit": "USD" }
+    { "name": "30Y Yield",   "value": 5.25,    "trigger_above": 5.28, "unit": "%" },
+    { "name": "Brent Crude", "value": 90.69,   "trigger_above": 85.0, "unit": "USD" },
+    { "name": "WTI Crude",   "value": 85.54,   "trigger_above": 79.0, "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 77668,   "trigger_below": 62000, "unit": "USD" }
   ],
   "watchlist_mentions": [
     { "ticker": "NVDA", "note": "Rose 1.48% to reclaim the $220 structural level and finished August up roughly 7%; a close under $215 breaks the August 26-27 support zone.", "sentiment": "positive" },
