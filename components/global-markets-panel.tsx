@@ -59,7 +59,7 @@ export default async function GlobalMarketsPanel() {
 
   return (
     <Panel asOf={nowUtcHM()}
-      title="Global Markets · Overnight & Sessions"
+      title="Global Markets"
       href="/global"
       meta={<span>YAHOO · 60s</span>}
     >

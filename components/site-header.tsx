@@ -7,12 +7,16 @@ import PaletteButton from "./palette-button";
 import ThemeToggle from "./theme-toggle";
 
 // Ordered by the daily job-to-be-done: today's read first, then the archive,
-// then standing reports, then the audit trail.
+// then what is coming, then the reference pages, then about. Same order as the
+// command palette, so the two never present the site differently.
 const NAV = [
   { href: "/", code: "TODAY", label: "Today" },
   { href: "/briefings", code: "RPT", label: "Reports" },
   // Route is still /earnings; the nav calls it what the page now calls itself.
   { href: "/earnings", code: "CAL", label: "Calendar" },
+  { href: "/macro", code: "MACRO", label: "Macro" },
+  { href: "/global", code: "GLBL", label: "Global Markets" },
+  { href: "/about", code: "ABT", label: "About" },
 ];
 
 export default function SiteHeader() {
