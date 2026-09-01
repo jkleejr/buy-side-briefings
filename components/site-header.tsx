@@ -13,8 +13,6 @@ const NAV = [
   { href: "/briefings", code: "RPT", label: "Reports" },
   // Route is still /earnings; the nav calls it what the page now calls itself.
   { href: "/earnings", code: "CAL", label: "Calendar" },
-  // Market History is deliberately not here — the page stays published and
-  // stays in the command palette (⌘K, "m"), it just isn't top-level chrome.
 ];
 
 export default function SiteHeader() {

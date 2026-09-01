@@ -19,7 +19,6 @@ const DESTINATIONS: Destination[] = [
   { href: "/sectors", code: "SECT", label: "Sector rotation" },
   { href: "/macro", code: "MACRO", label: "Macro — Fed, inflation, labor" },
   { href: "/global", code: "GLBL", label: "Global markets" },
-  { href: "/market-history", code: "HIST", label: "Market History — past booms & crashes" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 

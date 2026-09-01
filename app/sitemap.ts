@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/earnings",
     "/global",
     "/sectors",
-    "/market-history",
     "/about",
     "/privacy",
   ].map((path) => ({
