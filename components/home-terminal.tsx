@@ -39,7 +39,7 @@ function Pct({ pct }: { pct: number | null }) {
 // read as clutter once there were three of them down one page.
 function SectionRule({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mb-5 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--dim)]">
+    <h2 className="mb-5 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--foreground)]">
       {children}
     </h2>
   );

@@ -1,4 +1,3 @@
-import Panel from "@/components/panel";
 
 export const metadata = {
   title: "About",
@@ -15,7 +14,7 @@ export default function AboutPage() {
         </h1>
       </header>
 
-      <Panel title="What this site is">
+      <section className="border border-[var(--border)] bg-[var(--panel)]">
         <div className="space-y-2 p-3 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
           <p>
             <span className="text-[var(--amber)]">Buy Side</span> uses Claude
@@ -28,7 +27,7 @@ export default function AboutPage() {
             current state of the stock market.
           </p>
         </div>
-      </Panel>
+      </section>
     </article>
   );
 }
