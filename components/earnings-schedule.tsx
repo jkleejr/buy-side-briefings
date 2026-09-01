@@ -37,14 +37,41 @@ function fmtDate(iso: string): string {
 }
 
 /**
- * What to print in the timeline's name column. A US ticker is the clearest
- * label it has, but a foreign listing is an exchange code — "000660.KS" and
- * "005930.KS" name SK Hynix and Samsung to nobody. Those carry the watchlist
- * label instead. Keyed on the dot, which is what separates a plain ticker from
- * an exchange-suffixed one, the same rule the levels chart's switcher uses.
+ * What to print wherever this page shows a symbol — the timeline axis and the
+ * schedule table's ticker column both. A US ticker is the clearest label it
+ * has, but a foreign listing is an exchange code: "000660.KS" and "005930.KS"
+ * name SK Hynix and Samsung to nobody. Those carry the watchlist label instead.
+ * Keyed on the dot, which is what separates a plain ticker from an
+ * exchange-suffixed one, the same rule the levels chart's switcher uses.
  */
-function axisName(e: EarningsEntry): string {
+function displayTicker(e: EarningsEntry): string {
   return e.symbol.includes(".") ? e.label : e.symbol;
+}
+
+/**
+ * Company names arrive from Yahoo in registry form — "Micron Technology, Inc.",
+ * "Samsung Electronics Co., Ltd." — where the legal suffix is the same on every
+ * row and identifies nothing. Stripping it is what lets the column stay narrow
+ * enough for the estimates beside it to matter.
+ *
+ * Applied repeatedly from the end, so a stacked suffix unwinds in order:
+ * "Co., Ltd." drops Ltd then Co, and TSMC's "Company Limited" drops both. A
+ * separator is required before the token, which is why "Amazon.com" keeps its
+ * ".com" — there is no comma or space in front of it.
+ */
+const LEGAL_SUFFIX =
+  /[\s,&]+(?:inc(?:orporated)?|corp(?:oration)?|co(?:mpany)?|ltd|limited|plc|ag|s\.?a|n\.?v)\.?$/i;
+
+function stripLegalSuffix(name: string): string {
+  let out = name.trim();
+  // Bounded rather than while(true): three passes clears the longest form on
+  // file ("Co., Ltd."), and a name that is nothing but suffixes keeps itself.
+  for (let i = 0; i < 3; i++) {
+    const next = out.replace(LEGAL_SUFFIX, "").trim();
+    if (!next || next === out) break;
+    out = next;
+  }
+  return out;
 }
 
 // ---- The "chart": a horizontal gantt of when each name reports ------------
@@ -79,7 +106,7 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
                 title={e.symbol}
                 className="w-14 shrink-0 truncate text-right font-mono text-[11px] font-bold text-[var(--foreground)]"
               >
-                {axisName(e)}
+                {displayTicker(e)}
               </span>
               <div className="relative h-4 flex-1">
                 {/* gridlines */}
@@ -147,8 +174,12 @@ function ScheduleTable({ entries }: { entries: EarningsEntry[] }) {
                   {countdownBadge(e.daysUntil)}
                 </td>
                 <td className="px-2 py-1 text-[var(--foreground)]">{fmtDate(e.date)}</td>
-                <td className="px-2 py-1 font-bold text-[var(--amber)]">{e.symbol}</td>
-                <td className="px-2 py-1 text-[var(--dim)]">{e.name ?? e.label}</td>
+                <td className="px-2 py-1 font-bold text-[var(--amber)]">
+                  {displayTicker(e)}
+                </td>
+                <td className="px-2 py-1 text-[var(--dim)]">
+                  {stripLegalSuffix(e.name ?? e.label)}
+                </td>
                 <td className="px-2 py-1 text-right text-[var(--foreground)]">
                   {e.price != null ? `$${e.price.toLocaleString()}` : "—"}
                 </td>
