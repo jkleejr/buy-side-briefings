@@ -122,9 +122,7 @@ function Hero({ brief }: { brief: BriefView }) {
           Read {brief.window === "morning" ? "this morning's" : "tonight's"}{" "}
           report
         </span>
-        <span className="whitespace-nowrap text-[var(--dim)]">
-          · {brief.readMin} min →
-        </span>
+        <span className="whitespace-nowrap">· {brief.readMin} min →</span>
       </Link>
     </div>
   );

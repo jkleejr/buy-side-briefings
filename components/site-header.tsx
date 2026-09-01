@@ -50,7 +50,7 @@ export default function SiteHeader() {
         <HeaderNav items={NAV} />
 
         <div className="ml-auto flex shrink-0 items-baseline gap-3 font-mono text-[10.5px] tracking-[0.1em] text-[var(--dim)]">
-          <span className="hidden self-center text-[var(--foreground)] lg:inline">
+          <span className="hidden self-center text-[var(--amber)] lg:inline">
             {dateStr}
           </span>
           <ThemeToggle />
