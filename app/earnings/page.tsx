@@ -32,7 +32,7 @@ export default async function EarningsPage() {
 
   return (
     <div className="mx-auto max-w-5xl space-y-1">
-      <header className="space-y-1 px-1 pb-1">
+      <header className="space-y-1 px-1 pb-2">
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           Upcoming events
         </h1>
