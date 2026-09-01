@@ -62,9 +62,9 @@ export default async function GlobalMarketsPanel() {
       title="Global Markets"
       /* Just the source. The refresh interval and the UTC stamp were
          instrumentation for a reader who is not asking either question, and
-         the stamp re-rendered on every request. normal-case overrides the
-         meta slot's small-caps treatment so it reads "Yahoo", not "YAHOO". */
-      meta={<span className="normal-case tracking-normal">Yahoo</span>}
+         the stamp re-rendered on every request. No case override: it takes the
+         meta slot's small caps like every other panel label. */
+      meta={<span>Yahoo</span>}
     >
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {REGIONS.map((region) => (
