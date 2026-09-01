@@ -107,7 +107,7 @@ function Hero({ brief }: { brief: BriefView }) {
           eleven lines there and pushed the link into the briefing off the
           bottom of the hero. Only one of the two is ever laid out, so the
           hidden one stays out of the accessibility tree as well. */}
-      <p className="mt-5 text-[17px] leading-[1.6] text-[var(--ink-3)] sm:text-[19px] lg:leading-[1.65]">
+      <p className="mt-5 text-[17px] leading-[1.6] text-[var(--foreground)] sm:text-[19px] lg:leading-[1.65]">
         <span className="sm:hidden">{brief.ledeShort}</span>
         <span className="hidden sm:inline">{brief.lede}</span>
       </p>
