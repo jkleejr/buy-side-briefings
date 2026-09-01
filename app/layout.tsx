@@ -58,7 +58,11 @@ export default function RootLayout({
             purpose: it has to run before the body paints. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem("bsb:theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t}}catch(e){}`,
+            // Dark is the site's default: with nothing stored we stamp "dark"
+            // rather than leaving the attribute off and letting
+            // prefers-color-scheme decide. The catch stamps it too, so a
+            // browser that blocks storage still opens dark rather than light.
+            __html: `try{var t=localStorage.getItem("bsb:theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:"dark"}catch(e){document.documentElement.dataset.theme="dark"}`,
           }}
         />
       </head>

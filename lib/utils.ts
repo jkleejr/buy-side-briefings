@@ -214,11 +214,13 @@ export function todayET(): string {
  * to the lite-read route, so it has to stay ISO. This is the display-only
  * spelling, for chrome that a reader looks at rather than code that sorts.
  */
+const FMT_TODAY_ET = new Intl.DateTimeFormat("en-US", {
+  timeZone: "America/New_York",
+  month: "numeric",
+  day: "numeric",
+  year: "2-digit",
+});
+
 export function todayETDisplay(): string {
-  return new Date().toLocaleDateString("en-US", {
-    timeZone: "America/New_York",
-    month: "numeric",
-    day: "numeric",
-    year: "numeric",
-  });
+  return FMT_TODAY_ET.format(new Date());
 }

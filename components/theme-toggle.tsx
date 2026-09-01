@@ -40,9 +40,9 @@ const serverSnapshot = () => null;
 /**
  * Switches between the two grounds — warm paper and dark — and remembers it.
  *
- * Until someone picks a side the site still follows the OS, so a viewer whose
- * laptop flips to dark at sunset gets the dark ground without ever touching
- * this. Choosing here opts out of that and sticks.
+ * The site opens dark for everyone; the bootstrap in app/layout.tsx stamps
+ * data-theme="dark" when nothing is stored, so the OS preference no longer
+ * decides the first paint. Choosing here overrides it and sticks.
  */
 export default function ThemeToggle() {
   const theme = useSyncExternalStore<Theme | null>(
@@ -72,10 +72,14 @@ export default function ThemeToggle() {
       aria-label={label}
       className="border border-[var(--border)] px-1.5 py-0.5 font-mono text-[9px] not-italic uppercase tracking-widest text-[var(--dim)] hover:border-[var(--amber-dim)] hover:text-[var(--amber)]"
     >
-      {/* Fixed width so the header doesn't shift when the glyph resolves on
+      {/* The glyph names the theme you are in, not the one the click would
+          take you to: moon on the dark ground, sun on the light one. The
+          action stays in the label, which is what a screen reader reads.
+
+          Fixed width so the header doesn't shift when the glyph resolves on
           hydration, or later when it swaps. */}
       <span className="inline-block w-[1.1em] text-center">
-        {theme === null ? "" : theme === "dark" ? "☀" : "☾"}
+        {theme === null ? "" : theme === "dark" ? "☾" : "☀"}
       </span>
     </button>
   );

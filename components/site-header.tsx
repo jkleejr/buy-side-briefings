@@ -51,7 +51,9 @@ export default function SiteHeader() {
 
         <div className="ml-auto flex shrink-0 items-baseline gap-3 font-mono text-[10.5px] tracking-[0.1em] text-[var(--dim)]">
           <ThemeToggle />
-          <span className="hidden self-center lg:inline">{dateStr}</span>
+          <span className="hidden self-center text-[var(--foreground)] lg:inline">
+            {dateStr}
+          </span>
           <MobileNav items={NAV} />
         </div>
       </div>
