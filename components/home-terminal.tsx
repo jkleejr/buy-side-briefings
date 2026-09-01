@@ -322,21 +322,30 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
       {/* No top rule here. The ticker strip directly above already ends in its
           own border, so this one drew a second heavy black line a few pixels
           under it with nothing in between. */}
-      {/* No wrapping here. With flex-wrap the longer morning label pushed the
-          switch onto a second line, where justify-between put it flush LEFT —
-          so the control appeared to jump corners between AM and PM. The label
-          truncates instead, and the switch is pinned right on every width. */}
-      <div className="flex items-center justify-between gap-3 pt-4">
-        <span className="min-w-0 truncate font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
-          {view === "morning" ? "Morning report" : "Night report"}
-          {current ? `, ${current.timeLabel}` : ""}
-        </span>
-        <span className="flex shrink-0 items-center gap-3 font-mono text-[11.5px] text-[var(--dim)]">
-          <span className="hidden not-italic sm:inline">
-            {current?.dateLabel ?? data.todayLabel}
+      {/* Date on its own line above the edition label, both flush left and set
+          identically. They used to share a row at opposite ends in 11px/0.12em
+          and 11.5px/no-tracking — the same face, but different enough in size
+          and letterspacing to read as two typefaces sitting a few inches apart.
+
+          Its own line also lets the date show on a phone. It was hidden below
+          the sm breakpoint only because three items could not share one row
+          there; stacked, there is nothing to crowd. */}
+      <div className="pt-4">
+        <div className="font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
+          {current?.dateLabel ?? data.todayLabel}
+        </div>
+        {/* No wrapping on this row. With flex-wrap the longer morning label
+            pushed the switch onto a second line, where justify-between put it
+            flush LEFT — so the control appeared to jump corners between AM and
+            PM. The label truncates instead, and the switch is pinned right on
+            every width. */}
+        <div className="mt-1.5 flex items-center justify-between gap-3">
+          <span className="min-w-0 truncate font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
+            {view === "morning" ? "Morning report" : "Night report"}
+            {current ? `, ${current.timeLabel}` : ""}
           </span>
           <EditionSwitch data={data} view={view} setView={setView} />
-        </span>
+        </div>
       </div>
 
       {current ? (
