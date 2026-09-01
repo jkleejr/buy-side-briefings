@@ -1,76 +1,119 @@
 {
   "events": [
     {
-      "date": "2026-08-31",
-      "label": "Chicago PMI (9:45 AM ET) — first NFP week signal; Iran oil escalation adds inflation context",
-      "kind": "MACRO",
-      "time_et": "9:45 AM",
-      "tickers": ["SPY", "QQQ", "IWM"],
-      "note": "Added Aug 31 morning: Opens the NFP approach sequence. US-Iran exchange overnight pushed Brent above $90 (from $88.22 Friday), adding an oil-inflation channel to the week's data. A weak PMI read (below 50) does not automatically offset the oil channel if Warsh treats supply shocks as a reason for caution-into-hike. Followed by ISM Manufacturing and JOLTS on September 1, ADP on September 3, ISM Services on September 3, and payrolls on September 4."
-    },
-    {
       "date": "2026-09-01",
-      "label": "ISM Manufacturing + JOLTS (10:00 AM ET) — labor market demand signal ahead of NFP",
+      "label": "ISM Manufacturing + JOLTS (10:00 AM ET) \u2014 labor market demand signal ahead of NFP",
       "kind": "MACRO",
       "time_et": "10:00 AM",
-      "tickers": ["SPY", "TLT", "IWM"],
+      "tickers": [
+        "SPY",
+        "TLT",
+        "IWM"
+      ],
       "note": "Added Aug 31 morning: ISM Manufacturing below 50 signals contraction; JOLTS job openings above 8M supports the strong-labor-market thesis underpinning September hike odds at 57%. Both arrive the day after the Ternus CEO transition at Apple and two days after US-Iran exchange reopened Strait risk."
     },
     {
       "date": "2026-09-03",
-      "label": "ADP private payrolls + ISM Services (est. Wednesday-Thursday) — pre-NFP labor read",
+      "label": "ADP private payrolls + ISM Services (est. Wednesday-Thursday) \u2014 pre-NFP labor read",
       "kind": "MACRO",
-      "tickers": ["SPY", "TLT", "QQQ"],
-      "note": "Added Aug 31 morning: ADP consensus ~400K private payrolls. ISM Services above 55 + ADP above 400K with Brent above $90 is the three-variable hot-inflation scenario entering NFP Friday. ADP in this context is a directional signal, not a precision estimate — the September 4 payrolls print is the gate."
+      "tickers": [
+        "SPY",
+        "TLT",
+        "QQQ"
+      ],
+      "note": "Added Aug 31 morning: ADP consensus ~400K private payrolls. ISM Services above 55 + ADP above 400K with Brent above $90 is the three-variable hot-inflation scenario entering NFP Friday. ADP in this context is a directional signal, not a precision estimate \u2014 the September 4 payrolls print is the gate."
     },
     {
       "date": "2026-09-04",
-      "label": "August jobs report (BLS, 8:30 AM ET) — first post-Warsh payrolls print; September FOMC gate",
+      "label": "August jobs report (BLS, 8:30 AM ET) \u2014 first post-Warsh payrolls print; September FOMC gate",
       "kind": "MACRO",
       "time_et": "8:30 AM",
-      "tickers": ["TLT", "TBT", "SPY", "QQQ", "IWM"],
-      "note": "Updated Aug 31 morning: Iran oil channel now a third input alongside rate path and tariffs. US-Iran exchange pushed Brent above $90 on Aug 31; if Brent sustains above $90 through NFP week, the Fed's inflation calculus tightens even on a soft labor market print. Consensus: +475K payrolls, 5.1% unemployment. Below 150K/AHE below 0.2% resets hike odds toward 35%; above 200K/AHE above 0.3% locks in 65%+ odds and tests 5.25-5.30% on the 30Y. Canada's retaliatory tariffs arrive September 8, four days after this print. Warsh updated Aug 28: summer PCE/CPI data 'do not tell me that underlying trends have meaningfully improved' and the Fed 'has more work to do.'"
+      "tickers": [
+        "TLT",
+        "TBT",
+        "SPY",
+        "QQQ",
+        "IWM"
+      ],
+      "note": "The week's binary. Above 200K with AHE over 0.3% takes September hike odds past 70% and pressures the 30Y through the 5.30% trigger; under 150K resets the frame built by Warsh and the oil shock. Baseline entering the print is 66.1% hike odds."
     },
     {
       "date": "2026-09-05",
-      "label": "AVGO Q3 FY2026 earnings (est.) — through $380 structural support; VMware + AI concentration dual overhang",
+      "label": "AVGO Q3 FY2026 earnings (est.) \u2014 through $380 structural support; VMware + AI concentration dual overhang",
       "kind": "EARNINGS",
-      "tickers": ["AVGO", "NVDA", "AMD"],
-      "note": "Updated Aug 19 night: AVGO fell 5% to ~$362 on August 19, breaking through $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries per Aug 14 disclosure) + 72% AI revenue concentration (~72% of next-quarter sequential growth) create dual overhang. At ~65x trailing P/E, any miss or margin compression compounds. Q3 FY2026 results (est. September 4–5) are the first public accounting of both: VMware remediation costs in financial guidance, enterprise customer commentary on the incident, and AI revenue breadth. $380 is now resistance; $340–350 is the next structured support zone. Flip: recovery above $380 on volume, or formal VMware incident-containment statement before earnings."
+      "tickers": [
+        "AVGO",
+        "NVDA",
+        "AMD"
+      ],
+      "note": "Updated Aug 19 night: AVGO fell 5% to ~$362 on August 19, breaking through $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries per Aug 14 disclosure) + 72% AI revenue concentration (~72% of next-quarter sequential growth) create dual overhang. At ~65x trailing P/E, any miss or margin compression compounds. Q3 FY2026 results (est. September 4\u20135) are the first public accounting of both: VMware remediation costs in financial guidance, enterprise customer commentary on the incident, and AI revenue breadth. $380 is now resistance; $340\u2013350 is the next structured support zone. Flip: recovery above $380 on volume, or formal VMware incident-containment statement before earnings."
+    },
+    {
+      "date": "2026-09-07",
+      "label": "Labor Day \u2014 US equity and bond markets closed",
+      "kind": "HOLIDAY",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "BTC"
+      ],
+      "note": "Cash markets shut for the session. Crypto and oil trade the weekend's Strait of Hormuz headlines unhedged, so a transit-suspension escalation over the long weekend gaps into Tuesday's open \u2014 eight days before the FOMC."
     },
     {
       "date": "2026-09-08",
-      "label": "Canada retaliatory tariffs effective — dairy, appliances, ag equipment, pulp, paper, electronics",
+      "label": "Canada retaliatory tariffs effective \u2014 dairy, appliances, ag equipment, pulp, paper, electronics",
       "kind": "GEO",
-      "tickers": ["SPY", "IWM", "XLI", "XLP"],
-      "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech was hawkish — September hike odds rose to 59% from 33%. Warsh did not explicitly cite Canada tariff cost-push in the speech, leaving the tariff-inflation linkage as an open variable in the September 8-16 window. Tariffs arrive 4 days after the August jobs report (Sept 4) and 8 days before September 16 FOMC. With hike odds already at 59%, if hot jobs data and tariff cost-push both enter Fed communications between September 8 and 16, September hike odds above 65% are the two-variable scenario. DXY rose 0.4% to 99.50 on the Warsh hawkish signal — any tariff escalation that re-prices the dollar is the third input."
+      "tickers": [
+        "SPY",
+        "IWM",
+        "XLI",
+        "XLP"
+      ],
+      "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech was hawkish \u2014 September hike odds rose to 59% from 33%. Warsh did not explicitly cite Canada tariff cost-push in the speech, leaving the tariff-inflation linkage as an open variable in the September 8-16 window. Tariffs arrive 4 days after the August jobs report (Sept 4) and 8 days before September 16 FOMC. With hike odds already at 59%, if hot jobs data and tariff cost-push both enter Fed communications between September 8 and 16, September hike odds above 65% are the two-variable scenario. DXY rose 0.4% to 99.50 on the Warsh hawkish signal \u2014 any tariff escalation that re-prices the dollar is the third input."
     },
     {
       "date": "2026-09-09",
-      "label": "Bessent Treasury long-dated buyback ops begin — $4B+ per op, 10-20yr and 20-30yr bonds",
+      "label": "Bessent Treasury long-dated buyback ops begin \u2014 $4B+ per op, 10-20yr and 20-30yr bonds",
       "kind": "OTHER",
-      "tickers": ["TLT", "TBT", "QQQ", "SPY"],
+      "tickers": [
+        "TLT",
+        "TBT",
+        "QQQ",
+        "SPY"
+      ],
       "note": "Added Aug 19 night: Treasury Secretary Bessent announced August 19 the department will double the size of long-dated bond buyback operations, raising the maximum per-operation from $2B to at least $4B for bonds maturing in the 10-to-20-year and 20-to-30-year ranges. Effective September 9, runs through November 4 (end of current refunding quarter). The program provides structural demand support for the long end. If underlying supply dynamics overwhelm the $4B+ buyback, the 30Y could reassert above 5.25% before or during the program. BTC's structural debasement bid is partially underwritten by the buyback program as a signal of Treasury demand-management."
     },
     {
       "date": "2026-09-16",
-      "label": "FOMC decision — September rate path; first post-Warsh/post-Canada-tariff decision",
+      "label": "FOMC decision (Sep 15-16) \u2014 September rate path; market prices 66.1% odds of a hike to 3.75-4.00%",
       "kind": "FOMC",
-      "tickers": ["TLT", "TBT", "SPY", "QQQ", "GLD", "BTC"],
-      "note": "Updated Aug 31 morning: Four inputs now determine the vote. August jobs (Sept 4), Canada tariffs (Sept 8), Warsh communications Sept 8-16, and the Iran oil channel — US-Iran exchange on Aug 31 pushed Brent above $90; if sustained, it adds 20-30bps to headline CPI and enters Fed communications. September hike odds 57% on CME FedWatch (from 59% at Aug 28 close). 30Y at 5.21% on Aug 31, 9bps inside the 5.30% regime trigger; touched 5.31% intraday last week without a close confirmation. The Bessent buyback program starts September 9 with structural demand suppressing equilibrium 30Y yields by an estimated 10-15bps."
+      "tickers": [
+        "TLT",
+        "TBT",
+        "SPY",
+        "QQQ",
+        "GLD",
+        "BTC"
+      ],
+      "note": "Updated Aug 31 morning: Four inputs now determine the vote. August jobs (Sept 4), Canada tariffs (Sept 8), Warsh communications Sept 8-16, and the Iran oil channel \u2014 US-Iran exchange on Aug 31 pushed Brent above $90; if sustained, it adds 20-30bps to headline CPI and enters Fed communications. September hike odds 57% on CME FedWatch (from 59% at Aug 28 close). 30Y at 5.21% on Aug 31, 9bps inside the 5.30% regime trigger; touched 5.31% intraday last week without a close confirmation. The Bessent buyback program starts September 9 with structural demand suppressing equilibrium 30Y yields by an estimated 10-15bps."
     },
     {
       "date": "2026-12-09",
-      "label": "SPCX 180-day IPO lock-up expiry (approx.) — terminal insider/early-investor float unlock",
+      "label": "SPCX 180-day IPO lock-up expiry (approx.) \u2014 terminal insider/early-investor float unlock",
       "kind": "OTHER",
-      "tickers": ["SPCX"],
+      "tickers": [
+        "SPCX"
+      ],
       "note": "~180 days after the June 12 debut. Lock-up expiries are the known supply overhang for hot IPOs. Context after Aug 6-7: 20% first tranche absorbed at $105-$115; next tranches scheduled Aug 20 and late September. Q3 Starlink profitability (~October call) is the only fundamental catalyst that could revalue the lockup discount before the December terminal release. SPCX Q2: $18.37B capex vs $7.81B revenue; AI segment $2.56B (+247% YoY)."
     },
     {
       "date": "2027-01-01",
-      "label": "OpenAI IPO — target window H1 2027 after 2026 delay",
+      "label": "OpenAI IPO \u2014 target window H1 2027 after 2026 delay",
       "kind": "OTHER",
-      "tickers": ["MSFT", "NVDA"],
+      "tickers": [
+        "MSFT",
+        "NVDA"
+      ],
       "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). PLTR's 149% US commercial growth, AMD's $6.7B data-center (+107%), and SpaceX's exclusive Nvidia commitment ($15.83B AI capex) confirm the enterprise AI adoption underlying OpenAI's revenue model. NVDA circular financing disclosure ($250B OpenAI backstop) remains the unresolved structural question that may surface in S-1 filings."
     }
   ]
