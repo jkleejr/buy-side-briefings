@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import LevelsChart from "./levels-chart";
+import LevelsChart from "./levels-chart-lazy";
 import Link from "next/link";
 import type {
   HomeData,

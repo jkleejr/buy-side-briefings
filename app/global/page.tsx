@@ -1,5 +1,5 @@
 import GlobalMarketsPanel from "@/components/global-markets-panel";
-import LevelsChart from "@/components/levels-chart";
+import LevelsChart from "@/components/levels-chart-lazy";
 import Panel from "@/components/panel";
 
 // One chart per region rather than one per index — the page's argument is that

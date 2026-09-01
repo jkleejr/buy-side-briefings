@@ -1,4 +1,4 @@
-import LevelsChart from "@/components/levels-chart";
+import LevelsChart from "@/components/levels-chart-lazy";
 import MacroSections from "@/components/macro-sections";
 import Panel from "@/components/panel";
 
