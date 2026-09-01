@@ -268,12 +268,6 @@ type Props = {
    */
   labels?: Record<string, string>;
   /**
-   * Personal one-line note per symbol, shown top-right for whichever symbol is
-   * selected. Optional and per-symbol: a name with nothing worth saying simply
-   * has no entry, and the row collapses to the levels headline alone.
-   */
-  notes?: Record<string, string>;
-  /**
    * Whether the volume pane and the derived levels start switched on. Both
    * default off: the chart opens as plain price, and the overlays are there
    * when you go looking for them. A page built around the levels (the
@@ -289,14 +283,12 @@ export default function LevelsChart({
   variant = "full",
   title,
   labels,
-  notes,
   defaultVolume = false,
   defaultLevels = false,
 }: Props) {
   const { H, padR: PAD_R_LABELS, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
   const compact = variant === "compact";
   const [symbol, setSymbol] = useState(initialSymbol ?? symbols[0]);
-  const note = notes?.[symbol];
   const [range, setRange] = useState<ChartRange>(compact ? "1Y" : "3M");
 
   // Bar size. Held as a pin like the candle/line mode: null follows the range's
@@ -1163,22 +1155,9 @@ export default function LevelsChart({
             )}
           </>
         )}
-        {/* Right rail: the live levels headline, and under it the note for
-            whichever symbol is selected. The note used to live on a per-ticker
-            card below this chart; it reads better here, against the chart it
-            describes, than repeated 27 times down the page. */}
-        {(analysis || note) && (
-          <span className="ml-auto flex min-w-0 flex-col items-end gap-0.5 pl-2 text-right">
-            {analysis && (
-              <span className="whitespace-nowrap font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">
-                {headline}
-              </span>
-            )}
-            {note && (
-              <span className="max-w-[74ch] font-mono text-[10px] leading-snug text-[var(--dim)] [text-wrap:balance]">
-                {note}
-              </span>
-            )}
+        {analysis && (
+          <span className="ml-auto shrink-0 whitespace-nowrap font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">
+            {headline}
           </span>
         )}
       </div>
