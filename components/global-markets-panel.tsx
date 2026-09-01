@@ -1,5 +1,5 @@
 import YahooFinance from "yahoo-finance2";
-import { formatPct, nowUtcHM } from "@/lib/utils";
+import { formatPct } from "@/lib/utils";
 import Panel from "./panel";
 
 const yahooFinance = new YahooFinance({
@@ -58,10 +58,13 @@ export default async function GlobalMarketsPanel() {
   }
 
   return (
-    <Panel asOf={nowUtcHM()}
+    <Panel
       title="Global Markets"
-      href="/global"
-      meta={<span>YAHOO · 60s</span>}
+      /* Just the source. The refresh interval and the UTC stamp were
+         instrumentation for a reader who is not asking either question, and
+         the stamp re-rendered on every request. normal-case overrides the
+         meta slot's small-caps treatment so it reads "Yahoo", not "YAHOO". */
+      meta={<span className="normal-case tracking-normal">Yahoo</span>}
     >
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {REGIONS.map((region) => (
