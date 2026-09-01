@@ -83,11 +83,11 @@ export default function PolicyDecisions({
       <div className="overflow-x-auto">
         <table className="w-full border-collapse font-mono text-[11px]">
           <thead>
-            <tr className="border-b border-[var(--border)] text-[9px] uppercase tracking-widest text-[var(--dim)]">
-              <th className="px-2 py-1 text-left">When</th>
-              <th className="px-2 py-1 text-left">Date</th>
-              <th className="px-2 py-1 text-left">Event</th>
-              <th className="px-2 py-1 text-left">Time ET</th>
+            <tr className="border-b border-[var(--border)] bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
+              <th className="px-2 py-1 text-left font-normal">When</th>
+              <th className="px-2 py-1 text-left font-normal">Date</th>
+              <th className="px-2 py-1 text-left font-normal">Event</th>
+              <th className="px-2 py-1 text-left font-normal">Time ET</th>
             </tr>
           </thead>
           <tbody>

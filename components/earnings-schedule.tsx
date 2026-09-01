@@ -150,15 +150,15 @@ function ScheduleTable({ entries }: { entries: EarningsEntry[] }) {
     <div className="overflow-x-auto">
       <table className="w-full border-collapse font-mono text-[11px]">
         <thead>
-          <tr className="border-b border-[var(--border)] text-[9px] uppercase tracking-widest text-[var(--dim)]">
-            <th className="px-2 py-1 text-left">When</th>
-            <th className="px-2 py-1 text-left">Date</th>
-            <th className="px-2 py-1 text-left">Ticker</th>
-            <th className="px-2 py-1 text-left">Name</th>
-            <th className="px-2 py-1 text-right">Price</th>
-            <th className="px-2 py-1 text-right">EPS est</th>
-            <th className="px-2 py-1 text-right">Rev est</th>
-            <th className="px-2 py-1 text-left">Status</th>
+          <tr className="border-b border-[var(--border)] bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
+            <th className="px-2 py-1 text-left font-normal">When</th>
+            <th className="px-2 py-1 text-left font-normal">Date</th>
+            <th className="px-2 py-1 text-left font-normal">Ticker</th>
+            <th className="px-2 py-1 text-left font-normal">Name</th>
+            <th className="px-2 py-1 text-right font-normal">Price</th>
+            <th className="px-2 py-1 text-right font-normal">EPS est</th>
+            <th className="px-2 py-1 text-right font-normal">Rev est</th>
+            <th className="px-2 py-1 text-left font-normal">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -223,7 +223,7 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
            than stranded under the last row where the eye arrives after it has
            already needed it. */
         meta={
-          <span className="whitespace-nowrap normal-case tracking-normal">
+          <span className="whitespace-nowrap">
             <span className="text-[var(--up)]">●</span> confirmed ·{" "}
             <span className="text-[var(--dim)]">○</span> estimated
           </span>

@@ -87,15 +87,15 @@ export default async function GlobalMarketsPanel() {
                       : "text-[var(--dim)]";
                   return (
                     <tr key={idx.symbol} className="border-t border-[var(--border)] first:border-t-0">
-                      <td className="px-2 py-0.5 text-[var(--foreground)]">
+                      <td className="px-2 py-1 text-[var(--foreground)]">
                         {idx.label}
                       </td>
-                      <td className="px-2 py-0.5 text-right text-[var(--foreground)]">
+                      <td className="px-2 py-1 text-right text-[var(--foreground)]">
                         {price === null
                           ? "—"
                           : price.toLocaleString("en-US", { maximumFractionDigits: 2 })}
                       </td>
-                      <td className={`px-2 py-0.5 text-right ${pctCls}`}>
+                      <td className={`px-2 py-1 text-right ${pctCls}`}>
                         {pct === null ? "—" : formatPct(pct)}
                       </td>
                     </tr>

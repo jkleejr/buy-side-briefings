@@ -78,19 +78,19 @@ export default async function SectorRotation() {
             const downTrend = (r.m1 ?? 0) < 0;
             return (
               <tr key={r.symbol} className="border-t border-[var(--border)]">
-                <td className="px-2 py-0.5 text-[var(--foreground)]">
+                <td className="px-2 py-1 text-[var(--foreground)]">
                   {r.label}
                 </td>
-                <td className="px-2 py-0.5 text-[var(--dim)]">
+                <td className="px-2 py-1 text-[var(--dim)]">
                   {r.symbol}
                 </td>
                 <td
                   className={
                     upToday
-                      ? "px-2 py-0.5 text-right text-[var(--up)]"
+                      ? "px-2 py-1 text-right text-[var(--up)]"
                       : downToday
-                        ? "px-2 py-0.5 text-right text-[var(--down)]"
-                        : "px-2 py-0.5 text-right text-[var(--dim)]"
+                        ? "px-2 py-1 text-right text-[var(--down)]"
+                        : "px-2 py-1 text-right text-[var(--dim)]"
                   }
                 >
                   {r.pct === null ? "—" : formatPct(r.pct)}
@@ -98,10 +98,10 @@ export default async function SectorRotation() {
                 <td
                   className={
                     upTrend
-                      ? "px-2 py-0.5 text-right text-[var(--up)]"
+                      ? "px-2 py-1 text-right text-[var(--up)]"
                       : downTrend
-                        ? "px-2 py-0.5 text-right text-[var(--down)]"
-                        : "px-2 py-0.5 text-right text-[var(--dim)]"
+                        ? "px-2 py-1 text-right text-[var(--down)]"
+                        : "px-2 py-1 text-right text-[var(--dim)]"
                   }
                 >
                   {r.m1 === null ? "—" : formatPct(r.m1)}

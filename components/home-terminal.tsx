@@ -94,7 +94,7 @@ function EditionSwitch({
 
 function Hero({ brief }: { brief: BriefView }) {
   return (
-    <div className="pt-7 sm:pt-10">
+    <div className="pt-5">
       <h1 className="text-[30px] font-semibold leading-[1.13] tracking-[-0.008em] [text-wrap:balance] sm:text-[38px] lg:text-[52px]">
         {brief.headline}
       </h1>
