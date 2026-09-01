@@ -1,6 +1,5 @@
 import YahooFinance from "yahoo-finance2";
 import { formatPct } from "@/lib/utils";
-import Panel from "./panel";
 
 const yahooFinance = new YahooFinance({
   suppressNotices: ["yahooSurvey", "ripHistorical"],
@@ -57,11 +56,15 @@ export default async function SectorRotation() {
   rows.sort((a, b) => (b.pct ?? -999) - (a.pct ?? -999));
 
   return (
-    <Panel title="Sector Rotation · 11 ETFs" meta={<span>SORT ▾ TODAY</span>}>
+    <section className="border border-[var(--border)] bg-[var(--panel)]">
       <table className="w-full font-mono text-[11px]">
+        {/* The panel header is gone; its title now leads the header row itself,
+            in the same ink, so the block opens on one line instead of two. */}
         <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
           <tr>
-            <th className="px-2 py-1 text-left font-normal">Sector</th>
+            <th className="px-2 py-1 text-left font-normal text-[var(--amber)]">
+              Sector Rotation
+            </th>
             <th className="px-2 py-1 text-left font-normal">ETF</th>
             <th className="px-2 py-1 text-right font-normal">Today</th>
             <th className="px-2 py-1 text-right font-normal">~50d</th>
@@ -108,6 +111,6 @@ export default async function SectorRotation() {
           })}
         </tbody>
       </table>
-    </Panel>
+    </section>
   );
 }
