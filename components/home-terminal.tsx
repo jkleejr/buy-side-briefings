@@ -6,7 +6,6 @@ import Link from "next/link";
 import type {
   HomeData,
   BriefView,
-  SectorRow,
   KeyPoint,
 } from "@/lib/home-terminal";
 
@@ -251,69 +250,24 @@ const CHART_LABELS: Record<string, string> = {
   // $82.21"). Spelled out rather than "WTI" so the row stays readable to
   // someone who doesn't trade crude; the ticker is in the chart's source line.
   "CL=F": "Crude Oil",
-  "^KS11": "KOSPI",
-  // Quoted in won, unlike every other price chart here — the label says so,
-  // because a bare "570,000" reads as dollars next to Nvidia and Micron.
+  // Both Korean lines are quoted in won, unlike every other price chart here,
+  // and both say so — a bare "570,000" or "3,240" reads as dollars sitting next
+  // to Nvidia and Micron. The index carried no currency while the stock beside
+  // it did, which made the omission look deliberate.
+  "^KS11": "KOSPI (KRW)",
   "000660.KS": "SK Hynix (KRW)",
 };
 
-function Sectors({ sectors }: { sectors: SectorRow[] }) {
-  if (!sectors.length) return null;
-  const maxAbs = Math.max(1, ...sectors.map((s) => Math.abs(s.pct ?? 0)));
-  return (
-    <div>
-      <SectionRule>Sectors · 1D</SectionRule>
-      {/* Two newspaper columns so eleven rows don't tower over the band, split
-          explicitly rather than by CSS `columns-2` — see splitColumns. */}
-      <div className="sm:grid sm:grid-cols-2 sm:gap-x-12">
-        {splitColumns(sectors).map((column, ci, cols) => (
-          <div key={ci}>
-            {column.map((s, i) => {
-              const pct = s.pct ?? 0;
-              const up = pct >= 0;
-              const w = Math.max(
-                2,
-                Math.min(80, (Math.abs(pct) / maxAbs) * 80),
-              );
-              // Bottom row of each column drops its rule, which otherwise
-              // trailed a hairline into the empty space under the band.
-              // Column one only from sm up: stacked on a phone it is mid-list.
-              const dropRule =
-                i === column.length - 1
-                  ? ci === cols.length - 1
-                    ? "border-b-0"
-                    : "sm:border-b-0"
-                  : "";
-              return (
-                <div
-                  key={s.code}
-                  className={`grid grid-cols-[1fr_88px_64px] items-center gap-2 border-b border-[var(--border)] py-2 ${dropRule}`}
-                >
-                  <span className="text-[14px] text-[var(--ink-2)]">
-                    {s.name}
-                  </span>
-                  <span>
-                    <span
-                      className={`inline-block h-2 align-middle ${up ? "bg-[var(--up)]" : "bg-[var(--down)]"}`}
-                      style={{ width: `${w}px` }}
-                    />
-                  </span>
-                  <span className="text-right font-mono text-[13.5px] tabular-nums">
-                    <Pct pct={s.pct} />
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 // --- shell -----------------------------------------------------------------------
 
-export default function HomeTerminal({ data }: { data: HomeData }) {
+export default function HomeTerminal({
+  data,
+  sectors,
+}: {
+  data: HomeData;
+  /** Server-rendered <SectorRotation />, passed in from app/page.tsx. */
+  sectors?: React.ReactNode;
+}) {
   const [view, setView] = useState<"morning" | "evening">(data.defaultView);
   const current = view === "morning" ? data.morning : data.evening;
 
@@ -376,10 +330,11 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
             <WhatMatters points={current.keyPoints} />
           </div>
 
-          {/* Reference band — sectors run full width across the two columns. */}
-          <div className="pt-12">
-            <Sectors sectors={data.sectors} />
-          </div>
+          {/* Reference band — the same sector-rotation panel the /sectors page
+              renders, rather than a homepage-only bar band that could only show
+              the day's move. This one carries the ETF and the ~50d column too,
+              and its header links through to the full page. */}
+          {sectors && <div className="pt-12">{sectors}</div>}
         </>
       ) : (
         <div className="py-16 text-center text-[14px] italic text-[var(--dim)]">
