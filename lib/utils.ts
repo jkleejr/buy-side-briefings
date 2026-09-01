@@ -26,6 +26,52 @@ export function formatPct(n: number | null | undefined): string {
 }
 
 /**
+ * Date formatters, built once and reused.
+ *
+ * `toLocaleDateString(locale, options)` constructs a fresh Intl.DateTimeFormat
+ * on every call, and construction — not formatting — is the expensive half. The
+ * report archive renders 200+ rows that each called four of these helpers, so a
+ * single render built 800+ formatters and did it again on every keystroke in
+ * the filter box. Vercel flagged it as a 576ms INP on nav clicks.
+ *
+ * Held as module constants rather than a cache keyed on options: the set is
+ * small, fixed, and known at author time.
+ */
+const FMT_ET_CLOCK = new Intl.DateTimeFormat("en-US", {
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+  timeZone: "America/New_York",
+  timeZoneName: "short",
+});
+const FMT_WEEKDAY_LONG_UTC = new Intl.DateTimeFormat("en-US", {
+  weekday: "long",
+  timeZone: "UTC",
+});
+const FMT_DATE_LONG_UTC = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const FMT_DATE_SHORT_UTC = new Intl.DateTimeFormat("en-US", {
+  weekday: "short",
+  month: "short",
+  day: "numeric",
+  timeZone: "UTC",
+});
+const FMT_WEEKDAY_LONG_ET = new Intl.DateTimeFormat("en-US", {
+  weekday: "long",
+  timeZone: "America/New_York",
+});
+const FMT_DATE_LONG_ET = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "America/New_York",
+});
+
+/**
  * Format an ISO timestamp as a US Eastern clock time, e.g. "8:30 PM ET".
  * Returns null if input is missing/invalid.
  */
@@ -33,13 +79,7 @@ export function formatBriefingTime(iso?: string | null): string | null {
   if (!iso) return null;
   const d = new Date(iso);
   if (isNaN(d.getTime())) return null;
-  return d.toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true,
-    timeZone: "America/New_York",
-    timeZoneName: "short",
-  });
+  return FMT_ET_CLOCK.format(d);
 }
 
 /**
@@ -57,31 +97,11 @@ export function formatChartDate(iso: string): {
   const d = isDateOnly ? new Date(`${iso}T12:00:00Z`) : new Date(iso);
   if (isNaN(d.getTime())) return { day: "", full: iso, time: null };
 
-  const dayOpts: Intl.DateTimeFormatOptions = { weekday: "long" };
-  const fullOpts: Intl.DateTimeFormatOptions = {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  };
-  if (isDateOnly) {
-    dayOpts.timeZone = "UTC";
-    fullOpts.timeZone = "UTC";
-  } else {
-    dayOpts.timeZone = "America/New_York";
-    fullOpts.timeZone = "America/New_York";
-  }
-
-  const day = d.toLocaleDateString("en-US", dayOpts);
-  const full = d.toLocaleDateString("en-US", fullOpts);
-  const time = isDateOnly
-    ? null
-    : d.toLocaleTimeString("en-US", {
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true,
-        timeZone: "America/New_York",
-        timeZoneName: "short",
-      });
+  // A date-only input is read at noon UTC and printed in UTC; a full timestamp
+  // is market data and prints in Eastern.
+  const day = (isDateOnly ? FMT_WEEKDAY_LONG_UTC : FMT_WEEKDAY_LONG_ET).format(d);
+  const full = (isDateOnly ? FMT_DATE_LONG_UTC : FMT_DATE_LONG_ET).format(d);
+  const time = isDateOnly ? null : FMT_ET_CLOCK.format(d);
   return { day, full, time };
 }
 
@@ -140,15 +160,8 @@ export function formatBriefingDateLine(b: {
   window?: string | null;
 }): string {
   const d = new Date(`${b.date}T12:00:00Z`);
-  const day = d.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
-  const dateStr = d.toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  });
   const win = b.window ? ` · ${windowLabel(b.window)}` : "";
-  return `${day}, ${dateStr}${win}`;
+  return `${FMT_WEEKDAY_LONG_UTC.format(d)}, ${FMT_DATE_LONG_UTC.format(d)}${win}`;
 }
 
 /**
@@ -161,14 +174,8 @@ export function formatBriefingTitleShort(b: {
   window?: string | null;
 }): string {
   const d = new Date(`${b.date}T12:00:00Z`);
-  const dateStr = d.toLocaleDateString("en-US", {
-    weekday: "short",
-    month: "short",
-    day: "numeric",
-    timeZone: "UTC",
-  });
   const win = b.window ? ` · ${windowLabel(b.window)}` : "";
-  return `${dateStr}${win}`;
+  return `${FMT_DATE_SHORT_UTC.format(d)}${win}`;
 }
 
 
