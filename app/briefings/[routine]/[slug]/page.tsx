@@ -47,10 +47,11 @@ export default async function BriefingPage({
   const fullReadMin = readMinutes(briefing.body);
 
   return (
-    <article className="mx-auto max-w-3xl space-y-4">
+    <div className="mx-auto max-w-5xl px-4 pb-14 pt-[39px] sm:px-6">
+      <article className="max-w-3xl space-y-4">
       <Link
         href="/briefings"
-        className="font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
+        className="block w-fit font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
       >
         ◂ ALL REPORTS
       </Link>
@@ -104,7 +105,8 @@ export default async function BriefingPage({
         </div>
       )}
 
-    </article>
+      </article>
+    </div>
   );
 }
 

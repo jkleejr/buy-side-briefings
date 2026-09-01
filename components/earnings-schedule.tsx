@@ -140,10 +140,6 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
           );
         })}
       </div>
-      <p className="mt-2 border-t border-[var(--border)] pt-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
-        <span className="text-[var(--up)]">●</span> confirmed date ·{" "}
-        <span className="text-[var(--dim)]">○</span> estimated
-      </p>
     </div>
   );
 }
@@ -220,7 +216,19 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
 
   return (
     <div className="space-y-1">
-      <Panel title="Earnings timeline">
+      <Panel
+        title="Earnings timeline"
+        /* The key reads as a header label, not a footnote: it explains the
+           column of dots below it, so it belongs level with the title rather
+           than stranded under the last row where the eye arrives after it has
+           already needed it. */
+        meta={
+          <span className="whitespace-nowrap normal-case tracking-normal">
+            <span className="text-[var(--up)]">●</span> confirmed ·{" "}
+            <span className="text-[var(--dim)]">○</span> estimated
+          </span>
+        }
+      >
         <TimelineChart entries={entries} />
       </Panel>
 

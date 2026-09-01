@@ -9,7 +9,7 @@ import PolicyDecisions from "@/components/policy-decisions";
 export const metadata = {
   title: "Calendar",
   description:
-    "Upcoming events for every stock you track: a timeline chart and full calendar with dates, countdowns, and the Street's EPS and revenue estimates — confirmed vs. estimated.",
+    "Upcoming Events for every stock you track: a timeline chart and full calendar with dates, countdowns, and the Street's EPS and revenue estimates — confirmed vs. estimated.",
 };
 
 // Live from Yahoo; refresh hourly.
@@ -22,7 +22,7 @@ export default async function EarningsPage() {
   // synchronous read with no failure mode — the calendar can't be thinned by a
   // feed hiccup the way the earnings half can.
   //
-  // Lookback 0: the page is titled "Upcoming events", and a decision that has
+  // Lookback 0: the page is titled "Upcoming Events", and a decision that has
   // already happened is not one. A meeting dated today still counts, since
   // `since` is today itself rather than tomorrow.
   const today = todayET();
@@ -31,10 +31,10 @@ export default async function EarningsPage() {
   );
 
   return (
-    <div className="mx-auto max-w-5xl space-y-1">
-      <header className="space-y-1 px-1 pb-2">
+    <div className="mx-auto max-w-5xl space-y-1 px-4 pb-14 pt-[39px] sm:px-6">
+      <header className="space-y-1 pb-2">
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
-          Upcoming events
+          Upcoming Events
         </h1>
       </header>
 

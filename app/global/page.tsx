@@ -27,8 +27,8 @@ export const revalidate = 60;
 
 export default function GlobalPage() {
   return (
-    <div className="mx-auto max-w-5xl space-y-1">
-      <header className="space-y-1 px-1 pb-2">
+    <div className="mx-auto max-w-5xl space-y-1 px-4 pb-14 pt-[39px] sm:px-6">
+      <header className="space-y-1 pb-2">
         <h1 className="font-mono text-2xl font-semibold tracking-tight text-[var(--foreground)]">
           Global Markets
         </h1>
