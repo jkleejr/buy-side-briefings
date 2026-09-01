@@ -347,7 +347,7 @@ export default function HomeTerminal({
 
       {/* No rule above this line either — the only two rules left on the site
           are the header's (nav from tape) and the footer's. */}
-      <div className="mt-14 flex flex-wrap justify-end gap-2 pt-3 font-mono text-[11.5px] text-[var(--dim)]">
+      <div className="mt-14 flex flex-wrap justify-end gap-2 pt-3 font-mono text-[11.5px] text-[var(--foreground)]">
         <span>
           {view === "morning"
             ? "Night edition follows at 8 PM ET"
