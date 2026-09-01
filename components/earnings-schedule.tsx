@@ -8,11 +8,22 @@ import {
 
 const HORIZON = 90; // days shown on the timeline chart axis
 
-// Colour a row by how imminent the report is.
-function tone(days: number): { dot: string; text: string } {
-  if (days <= 7) return { dot: "var(--amber)", text: "text-[var(--amber)]" };
-  if (days <= 30) return { dot: "var(--cyan-term)", text: "text-[var(--cyan-term)]" };
-  return { dot: "var(--dim)", text: "text-[var(--dim)]" };
+// Colour the countdown by how imminent the report is.
+function tone(days: number): { text: string } {
+  if (days <= 7) return { text: "text-[var(--amber)]" };
+  if (days <= 30) return { text: "text-[var(--cyan-term)]" };
+  return { text: "text-[var(--dim)]" };
+}
+
+/**
+ * The timeline marker reads the same as the schedule table's Status column:
+ * green for a date the company has confirmed, grey for one Yahoo is estimating.
+ * It used to take the countdown's amber/cyan/grey instead, which meant the dot
+ * and the number beside it both said "how soon" and nothing said "how sure".
+ * Filled vs hollow still carries it for anyone who can't separate the two hues.
+ */
+function dotColor(isEstimate: boolean): string {
+  return isEstimate ? "var(--dim)" : "var(--up)";
 }
 
 function fmtDate(iso: string): string {
@@ -87,8 +98,10 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
                   <span
                     className="inline-block h-2.5 w-2.5 -translate-x-1/2 rounded-full"
                     style={{
-                      background: e.isEstimate ? "transparent" : t.dot,
-                      border: `1.5px solid ${t.dot}`,
+                      background: e.isEstimate
+                        ? "transparent"
+                        : dotColor(e.isEstimate),
+                      border: `1.5px solid ${dotColor(e.isEstimate)}`,
                     }}
                   />
                   <span className={`whitespace-nowrap font-mono text-[9px] ${t.text}`}>
@@ -101,7 +114,8 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
         })}
       </div>
       <p className="mt-2 border-t border-[var(--border)] pt-1 font-mono text-[9px] leading-relaxed text-[var(--dim)]">
-        ● confirmed date · ○ estimated
+        <span className="text-[var(--up)]">●</span> confirmed date ·{" "}
+        <span className="text-[var(--dim)]">○</span> estimated
       </p>
     </div>
   );
