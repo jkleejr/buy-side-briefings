@@ -294,10 +294,10 @@ export default function HomeTerminal({
           truncates instead, and the switch is pinned right on every width. */}
       <div className="flex items-start justify-between gap-3 pt-[39px]">
         <div className="min-w-0">
-          <div className="font-mono text-[11px] text-[var(--foreground)]">
+          <div className="font-mono text-[12.5px] text-[var(--foreground)]">
             {current?.dateLabel ?? data.todayLabel}
           </div>
-          <div className="mt-1.5 truncate font-mono text-[11px] text-[var(--foreground)]">
+          <div className="mt-1.5 truncate font-mono text-[12.5px] text-[var(--foreground)]">
             {view === "morning" ? "Morning report" : "Night report"}
             {current ? `, ${current.timeLabel}` : ""}
           </div>
@@ -347,7 +347,7 @@ export default function HomeTerminal({
 
       {/* No rule above this line either — the only two rules left on the site
           are the header's (nav from tape) and the footer's. */}
-      <div className="mt-14 flex flex-wrap justify-end gap-2 pt-3 font-mono text-[11.5px] text-[var(--foreground)]">
+      <div className="mt-14 flex flex-wrap justify-end gap-2 pt-3 font-mono text-[12.5px] text-[var(--foreground)]">
         <span>
           {view === "morning"
             ? "Night edition follows at 8 PM ET"
