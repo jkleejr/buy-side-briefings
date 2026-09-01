@@ -2,26 +2,38 @@
   "events": [
     {
       "date": "2026-09-01",
-      "label": "ISM Manufacturing + JOLTS (10:00 AM ET) \u2014 labor market demand signal ahead of NFP",
+      "label": "ISM Manufacturing (10:00 AM ET) + JOLTS (9:00 AM ET) \u2014 consensus 55.2 and 7.330M",
       "kind": "MACRO",
-      "time_et": "10:00 AM",
+      "time_et": "9:00 AM",
       "tickers": [
         "SPY",
         "TLT",
         "IWM"
       ],
-      "note": "Added Aug 31 morning: ISM Manufacturing below 50 signals contraction; JOLTS job openings above 8M supports the strong-labor-market thesis underpinning September hike odds at 57%. Both arrive the day after the Ternus CEO transition at Apple and two days after US-Iran exchange reopened Strait risk."
+      "note": "Consensus ISM 55.2 vs 55.6 in July; JOLTS 7.330M vs 7.359M prior. Read against Monday's Chicago PMI at 47.1 \u2014 a print near 55 makes Chicago a regional outlier, sub-50 makes it the national signal. Prices-paid is where the Brent pass-through shows up first."
     },
     {
-      "date": "2026-09-03",
-      "label": "ADP private payrolls + ISM Services (est. Wednesday-Thursday) \u2014 pre-NFP labor read",
+      "date": "2026-09-02",
+      "label": "ADP private payrolls \u2014 first labour read of the week, consensus ~400K",
       "kind": "MACRO",
       "tickers": [
         "SPY",
         "TLT",
         "QQQ"
       ],
-      "note": "Added Aug 31 morning: ADP consensus ~400K private payrolls. ISM Services above 55 + ADP above 400K with Brent above $90 is the three-variable hot-inflation scenario entering NFP Friday. ADP in this context is a directional signal, not a precision estimate \u2014 the September 4 payrolls print is the gate."
+      "note": "A soft private-payrolls print with September hike odds above 60% is the stagflation combination in its clearest form. Directional only; Friday's BLS print is the gate."
+    },
+    {
+      "date": "2026-09-03",
+      "label": "ISM Services + weekly jobless claims \u2014 services is where oil pass-through lands",
+      "kind": "MACRO",
+      "time_et": "10:00 AM",
+      "tickers": [
+        "SPY",
+        "TLT",
+        "QQQ"
+      ],
+      "note": "Services is roughly two-thirds of the economy and the channel through which Brent above $90 reaches core inflation. Claims test whether the factory weakness in Chicago PMI has reached hiring."
     },
     {
       "date": "2026-09-04",

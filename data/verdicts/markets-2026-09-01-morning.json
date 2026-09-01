@@ -2,113 +2,107 @@
   "routine": "markets",
   "date": "2026-09-01",
   "window": "morning",
-  "generated_at": "2026-09-01T12:15:00Z",
+  "generated_at": "2026-09-01T12:45:00Z",
   "is_seed": false,
   "verdict": {
-    "code": "step_aside",
-    "emoji": "⚠️",
-    "headline": "Renewed US-Iran strikes and surging factory prices sharpen the September rate-hike knife",
-    "label": "Step aside — high conviction: US-Iran resumes, Brent +3.2% to $90.91; ISM Mfg Aug 56.0 (Prices Paid 59.5 vs 53.2 prior); 10Y 4.79% new 20-mo high; 30Y ~5.27%, 3bps from trigger; NFP Fri +475K est.",
-    "conviction": "high",
-    "horizon": "Through September 4 NFP; hard posture reset after September 16 FOMC",
-    "rationale_short": "Two overnight catalysts have materially upgraded the bear case without yet formally flipping the regime. First, US forces struck Iran's Larak Island in the Strait of Hormuz — resuming active combat in the now six-month-old war — prompting Iranian missile responses against the UAE and Jordan; Brent crude surged 3.2% to $90.91, injecting a fresh energy-inflation impulse at the worst possible moment. Second, ISM Manufacturing for August printed 56.0 (consensus 54.5, prior 54.2), the strongest factory read since January 2019, with the Prices Paid sub-index surging to 59.5 from 53.2 — the sharpest single-month jump in nearly two years. The combination reads as stagflationary: manufacturing activity is booming, input costs are accelerating. Both catalysts arrived simultaneously on the first session of September, the month the Fed is most likely to hike. The 10-year yield has moved to 4.79%, a new 20-month high; the 30Y is estimated at ~5.27%, within 3bps of the 5.30% regime trigger. September 16 FOMC hike probability, which entered the week at ~67%, has moved above 75% on this morning's data. Canada's $19.9B retaliatory tariffs remain on calendar for September 8 — oil above $90 arriving ahead of that date stacks an energy inflation wave on top of tariff-driven import price pressures. ISM Manufacturing's Prices Paid surge (59.5) is itself a forward inflation signal that will flow into CPI readings over the coming 1-2 months. NFP Friday (+475K consensus) is now almost a moot gate for hike conviction: even a modest print (~300K) would not be soft enough to derail the September move given the oil spike and factory inflation data. BTC is holding $78,010 (range: $77,690-$79,257 today) with the $76,661 Aug 24 structural support intact; Bessent buyback program begins September 9. Equities are down ~0.5% (SPX) to ~1% (NDX) in premarket, but the damage could extend at the open if ISM Prices Paid drives a further repricing of the long end. Step-aside posture maintained at high conviction: the formal regime breach threshold (30Y daily close above 5.30%) has not yet been triggered, but the current trajectory — oil spike plus factory inflation plus a hot labor market — makes a close above 5.30% this week the base case, not the tail risk.",
+    "headline": "A global bond selloff opens September, with Japan's benchmark yield at a 30-year high",
+    "label": "Japan's 10Y hits 3% for the first time since 1996; US 30Y trades above 5.30%, gilts clear 5.2%, Bund at a 2011 high. Brent $91.28 after two supertankers were struck in Hormuz. Dow futures -335. ISM and JOLTS today.",
+    "rationale_short": "The oil-inflation impulse from the Strait of Hormuz is being paid for at the long end of every developed bond market at once, not in equities: Japan's 10-year reached 3% for the first time since 1996, the US 30-year traded through the 5.30% level it has never closed above, and gilts cleared 5.2%. The mechanism is term premium and repatriation rather than growth — Japanese institutions hold the largest foreign Treasury position, and domestic 30-year paper near 4.18% changes what that position is worth. A US 30-year close above 5.30% marks the level crossed; a close back under 5.25% says the buyback bid is still absorbing supply.",
     "supporting_data": [
       {
-        "label": "US strikes Iran's Larak Island in Strait of Hormuz; Brent crude surges — CNBC oil report",
-        "url": "https://www.cnbc.com/2026/08/31/oil-prices-hormuz-iran-larak-island-centcom.html"
+        "label": "Japan's 10-year JGB reaches 3% for the first time since 1996; 20-year at 3.885%, 30-year set for a record 4.18% close",
+        "url": "https://www.euronews.com/business/2026/09/01/japans-10-year-yield-hits-3-a-first-since-1996-as-rate-hikes-dominate-the-g20"
       },
       {
-        "label": "Oil rises over 1% after US forces strike Iran's Larak Island — CNBC",
-        "url": "https://www.cnbc.com/2026/08/31/oil-prices-hormuz-iran-larak-island-centcom.html"
+        "label": "US 30-year bond enters September on its worst stretch since 2006, with the yield above 5.30%",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-01/us-30-year-bond-enters-september-on-its-worst-stretch-since-2006"
       },
       {
-        "label": "ISM Manufacturing PMI August 56.0 (highest since Jan 2019); Prices Paid 59.5 — ISM report",
-        "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/"
+        "label": "Global bond rout spreads: UK gilts past 5.2%, Germany's 10-year at 3.34%, the highest since 2011",
+        "url": "https://www.investing.com/news/economy-news/global-bond-rout-deepens-as-japan-yield-hits-key-threshold-4883562"
       },
       {
-        "label": "US Manufacturing PMI set for eighth consecutive expansion month — FXStreet preview",
-        "url": "https://www.fxstreet.com/news/ism-manufacturing-pmi-set-to-signal-steady-expansion-in-us-factory-activity-202609010900"
+        "label": "Two supertankers carrying Saudi crude struck by projectiles minutes apart in the Strait of Hormuz; Brent $91.28",
+        "url": "https://www.insurancejournal.com/news/international/2026/09/01/883510.htm"
       },
       {
-        "label": "Dow futures fall 200+ points on bond yield surge as September opens — CNBC live updates",
-        "url": "https://www.cnbc.com/2026/08/31/stock-market-today-live-updates.html"
+        "label": "Dow futures shed 335 points (-0.6%), S&P 500 futures -0.6%, Nasdaq-100 futures -1.2% before the open",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-1-2026"
       },
       {
-        "label": "Canada retaliatory tariffs $19.9B of US goods at 15-50% rates effective September 8, 2026",
-        "url": "https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html"
-      },
-      {
-        "label": "Week ahead Aug 31-Sep 4: ISM, ADP, BoC, NFP event calendar — Newsquawk",
-        "url": "https://www.newsquawk.com/headlines/newsquawk-weekly-economic-calendar---31st-august---4th-september-2026"
+        "label": "CME FedWatch puts September 15-16 hike odds at 66.1%, roughly double the pre-Jackson Hole level",
+        "url": "https://www.forbes.com/sites/digital-assets/2026/08/31/cme-fedwatch-provides-a-66-chance-fed-will-hike-rates-in-september/"
       }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7673.0,  "change_pct": -0.51, "as_of": "2026-09-01T12:00:00Z" },
-    "nasdaq": { "level": 26091.0, "change_pct": -1.01, "as_of": "2026-09-01T12:00:00Z" },
-    "vix":    { "level": 15.0,    "change_pct": 2.95,  "as_of": "2026-09-01T12:00:00Z" },
-    "ust10y": { "level": 4.79,    "change_bps": 7,     "as_of": "2026-09-01T12:00:00Z" },
-    "dxy":    { "level": 99.41,   "change_pct": 0.18,  "as_of": "2026-09-01T12:00:00Z" }
+    "sp500":  { "level": 7686.14,  "change_pct": -0.60, "as_of": "2026-09-01T12:30:00Z" },
+    "nasdaq": { "level": 26370.89, "change_pct": -1.20, "as_of": "2026-09-01T12:30:00Z" },
+    "vix":    { "level": 15.18,    "change_pct": 5.20,  "as_of": "2026-09-01T12:30:00Z" },
+    "ust10y": { "level": 4.79,     "change_bps": 4,     "as_of": "2026-09-01T12:30:00Z" },
+    "dxy":    { "level": 99.54,    "change_pct": -0.12, "as_of": "2026-08-31T20:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield", "value": 5.27, "trigger_above": 5.30, "unit": "%" },
-    { "name": "Brent Crude", "value": 90.91, "trigger_above": 94.00, "unit": "$/bbl" }
+    { "name": "30Y Yield", "value": 5.28, "trigger_above": 5.30, "unit": "%" },
+    { "name": "10Y Yield", "value": 4.79, "trigger_above": 5.00, "unit": "%" },
+    { "name": "Brent Crude", "value": 91.28, "trigger_above": 94.00, "unit": "$/bbl" },
+    { "name": "SPX vs 7,650", "value": 7686.14, "trigger_below": 7650, "unit": "index" }
   ],
   "watchlist_mentions": [
     {
-      "ticker": "NFP",
-      "note": "Friday September 4, 8:30 AM ET: consensus +475K, unemployment 5.1%. Today's ISM Manufacturing beat (56.0) with Prices Paid surging to 59.5 raises the floor for what constitutes a 'soft' number — the bar for NFP to derail the September hike has moved meaningfully higher. Even a 300K print likely does not offset the oil + factory inflation combination. ADP Wednesday (private payrolls, consensus ~400K) is the directional preview; a beat would lock in the hike with near-certainty before Friday.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "OIL",
-      "note": "Brent crude at $90.91 (+3.2%) on US-Iran Larak Island strike resumption. Strait of Hormuz accounts for ~20% of global oil shipments; active combat in the waterway creates a persistent supply-disruption premium. The regime trigger for Brent is $94.00. At $90.91, Brent is $3.09 from trigger — the closest the regime risk indicator has been to activation. National gasoline average has been above $4/gallon every day in August. This energy cost channel is the most direct transmission mechanism from geopolitics to CPI; each $5 increase in Brent adds approximately 0.15-0.20pp to headline PCE over 3-6 months.",
-      "sentiment": "negative"
-    },
-    {
-      "ticker": "BTC",
-      "note": "$78,010 on Crypto.com exchange at 12:04 UTC (-0.63% on the day). Day range: $77,690-$79,257. The $76,661 Aug 24 structural support remains intact — the named invalidation level from the prior setup. BTC touched $79,257 intraday (overnight Asia session) before retreating on the Iran risk-off wave. The Bessent buyback program begins September 9 (8 days), providing a structural demand backstop. Two consecutive daily closes above $80K remains the bull confirmation threshold. Current posture: hold long above $76,661 support; risk-off geopolitical shock creates downside pressure but programmatic buying backstop is approaching.",
-      "sentiment": "neutral"
-    },
-    {
       "ticker": "NVDA",
-      "note": "~$219.14 premarket (+1.0% from Friday's ~$217). The Friday sell-the-news reversal (-4.3%) from the Thursday earnings pop is partially recovering in premarket. The critical question: does NVDA hold above $220 structural support on the open or does the macro risk-off backdrop (oil, yields) overwhelm company-specific stabilization. A Tuesday close above $220 would signal the Friday reversal was a one-session distribution; a close below $210 would open the gap fill target and signal the AI infrastructure repricing is deepening. AVGO earnings (estimated September 4-5) is the next Blackwell production data point.",
+      "note": "Down about 1% premarket with the semiconductor group as yields rose; no company news since Monday's reclaim of $220. The move is rate-sensitivity rather than anything Blackwell-specific, which makes a 30Y close back under 5.25% the condition that unwinds it.",
       "sentiment": "neutral"
     },
     {
-      "ticker": "INTU",
-      "note": "~$395-400 estimated (Friday close -9.2%). The 'AI competition' demand erosion narrative has not been walked back — no management comment, no analyst upgrade in four days. Monday's tape confirmed the read-across: CRM held its post-earnings premium while INTU-adjacent SaaS names showed sympathy selling. Today's ISM Manufacturing beat (56.0) is a net positive for enterprise software demand broadly but does nothing to address INTU's specific AI substitution risk to its tax and accounting automation products. JPMorgan's $331 PT remains the downside anchor. The SaaS AI fault line (AI-as-product vs. AI-as-substitute) is now a week into pricing; Tuesday's session determines whether the gap widens or closes.",
+      "ticker": "MU",
+      "note": "Off more than 1% premarket alongside NVDA and AMD, with SMH down over 1%. Memory carries the highest duration sensitivity in the complex because the AI-capex earnings stream is furthest out.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CL=F",
+      "note": "Brent at $91.28 (+0.87%), up 8.96% over the past month, after two supertankers carrying Saudi crude were struck in the Omani corridor. The $94.00 regime trigger sits $2.72 above spot; energy was the only sector bid in premarket for a second session.",
       "sentiment": "negative"
     },
     {
-      "ticker": "CRM",
-      "note": "~$263-265 estimated. The Salesforce/Intuit AI software bifurcation (AI-as-product vs. AI-as-substitute) enters its second week. CRM's post-earnings premium ($260+ support) has held; today's macro risk-off backdrop (oil, yields) is the first test of whether the multiple can survive a broadmarket drawdown. A CRM close above $260 amid an S&P down ~0.5% would validate the bifurcation thesis as sector-specific, not just index-beta.",
-      "sentiment": "positive"
+      "ticker": "GC=F",
+      "note": "$4,456.86, near a two-week low and down a second consecutive session into an escalation. Gold falling while yields rise says the market is pricing the Hormuz strikes as an inflation event, not a risk event — the same cross-asset signature as Monday.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "$78,616.87 (+0.80%), holding above the $76,661 August 24 structural support through the overnight rout. It has not reclaimed the $80,000 level lost last week; Treasury buyback operations begin September 9.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "^VIX",
+      "note": "15.18 (+5.20%). Higher, but with no event premium priced into a week carrying ISM, ADP, ISM Services and Friday payrolls — the equity market has still not marked the rate move.",
+      "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
-      "asset": "30Y yield — 3bps from regime trigger; ISM Prices Paid surge pulls timeline forward",
-      "thesis": "The 30Y enters Tuesday at ~5.27%, 3bps from the 5.30% regime trigger. Today's ISM Manufacturing Prices Paid (59.5 from 53.2) plus Brent crude at $90.91 represent two simultaneous inflation acceleration signals. The week-ahead event stack — ADP Wednesday, NFP Friday (+475K consensus), Canada tariffs September 8 — was already the most inflation-dense corridor since Jackson Hole; today's ISM and oil move have pre-validated the inflationary read. A daily close above 5.30% on the 30Y formally converts the step-aside posture to bearish. The oil spike alone — historical correlation suggests a 5% crude move adds ~3-5bps to the long end within 48 hours — makes Tuesday a plausible trigger date.",
-      "entry": "Watch for 30Y daily close above 5.30% — formal regime trigger. Inverse: 30Y closes at or below 5.10% only if NFP prints sub-200K and oil reverses on a ceasefire announcement.",
-      "invalidation": "US-Iran ceasefire announced (oil reverses below $85) AND NFP September 4 prints below 200K AND 30Y closes at or below 5.10%.",
-      "horizon": "Through September 4 NFP; hard reset on September 16 FOMC outcome."
+      "asset": "US 30-year Treasury yield at 5.28%",
+      "thesis": "The long bond traded above 5.30% during the overnight rout but has never closed there. Bloomberg records the worst run into September since 2006, and the marginal seller is now foreign: Japanese institutions holding the largest foreign Treasury position face domestic 30-year paper near 4.18%. Whether the level is a ceiling or a floor is decided by a settlement print, not an intraday tag.",
+      "entry": "The levels that define it: a daily close above 5.30% marks the line crossed; a close back under 5.25% says the buyback bid, with operations beginning September 9, is still absorbing supply.",
+      "invalidation": "A close under 5.25% with Brent back below $88 on a Hormuz de-escalation.",
+      "horizon": "Today's 4:00 PM ET settlement, then Friday's payrolls print."
     },
     {
-      "asset": "Brent crude / energy sector — $90.91 with $94.00 regime trigger in view",
-      "thesis": "Brent at $90.91 is the closest the regime risk indicator has been to its $94.00 trigger since the framework was established. The Strait of Hormuz conflict (20% of global oil shipments) creates a persistent supply-disruption premium that does not resolve on a single strike; prior conflict cycles in July and August showed Brent recovering to pre-strike levels within 3-5 sessions only when a ceasefire or de-escalation was announced. No ceasefire is in sight. Energy sector (XLE, CVX, XOM) is the direct beneficiary; simultaneously, airline (DAL, UAL), trucking (ODFL, SAIA), and chemical (LYB, HUN) names face margin compression on fuel costs.",
-      "entry": "Long energy sector ETF (XLE) above $90.91 Brent; trail stop to $88.00 (prior resistance-now-support). Short margin-sensitive transportation names on any relief bounce.",
-      "invalidation": "Brent closes back below $88.00 on ceasefire/de-escalation news.",
-      "horizon": "Through geopolitical de-escalation or Brent hitting $94.00 regime trigger, whichever first."
+      "asset": "ISM Manufacturing (10:00 AM ET) against Monday's Chicago PMI",
+      "thesis": "Consensus is 55.2 for August against 55.6 in July, which would be the eighth consecutive month of expansion. Monday's Chicago PMI printed 47.1 versus 57.9 expected, the weakest reading of 2026. The two cannot both be describing the national factory economy, and the prices-paid component is where the oil pass-through appears first. JOLTS at 9:00 AM ET is forecast at 7.330M against 7.359M prior.",
+      "entry": "A national print near 55 makes Chicago a regional outlier and leaves the hike path intact; a sub-50 print makes Chicago the signal and adds the growth leg to a stagflation read.",
+      "invalidation": "A soft ISM alongside a JOLTS undershoot below 7.2M, which would pull hike odds back under 50%.",
+      "horizon": "Resolves today between 9:00 and 10:30 AM ET."
     },
     {
-      "asset": "BTC — $76,661 support holds; Bessent bid T-minus 8 days",
-      "thesis": "BTC's day range of $77,690-$79,257 shows the coin absorbed the Iran risk-off wave without breaching the $76,661 structural support. The Bessent Treasury buyback program begins September 9 — now 8 days away — providing a defined demand backstop. The risk-off geopolitical tape is the primary headwind; if the broader market continues selling into the open, BTC may retest $77,500-$78,000. A sustained break below $76,661 (daily close) is the exit signal. Two consecutive daily closes above $80K is the bull confirmation for an aggressive re-entry.",
-      "entry": "Hold long above $76,661. Re-enter aggressively on two consecutive daily closes above $80K.",
-      "invalidation": "Daily close below $76,661.",
-      "horizon": "Through September 9 Bessent buyback start."
+      "asset": "The Japan repatriation channel — JGB 10Y at 3%, USD/JPY at 159.75",
+      "thesis": "Japan's 10-year touched 3% for the first time since 1996 and the 30-year is set for a record close near 4.18%. Rising domestic yields reduce the incentive for Japanese institutions to hold foreign duration, and their Treasury position is the largest of any foreign holder. The yen is the variable that decides whether the incentive becomes a flow: at 159.75, unhedged foreign carry still pays.",
+      "entry": "A weak yen alongside 3%-plus JGB yields keeps the Treasury bid in place; a yen rally through 155 with JGB yields still rising is the combination that pulls the money home.",
+      "invalidation": "The Bank of Japan signalling a slower tightening path, which would take the 10-year back under 2.85%.",
+      "horizon": "Weeks, not sessions."
     }
   ],
-  "bear_case": "The bear case now has a specific three-layer inflation stack and a narrowed fuse. Layer one: US-Iran military escalation has pushed Brent crude to $90.91, $3.09 from the $94.00 regime trigger. With the Strait of Hormuz conflict entering its seventh month and no ceasefire signal, the oil premium is structural rather than episodic. Layer two: ISM Manufacturing Prices Paid surged to 59.5 from 53.2 — the biggest single-month jump in nearly two years — signaling that input cost inflation is now running hot across the manufacturing base. This feeds into PPI and, with a 2-3 month lag, into CPI. Layer three: Canada's $19.9B retaliatory tariffs at 15-50% rates take effect September 8, seven days from now, adding import-price inflation on top of energy and manufacturing costs. The 30Y, now estimated at ~5.27%, is 3bps from the 5.30% regime trigger — the formal conversion point from step-aside to bearish. If NFP Friday September 4 prints above 400K (consensus +475K), the September 16 hike is near-certain, and the 30Y could pierce 5.30% on the NFP release itself. In the combined scenario — hot NFP + oil above $90 + Canada tariffs + 30Y trigger breach — the pathway to SPX 7,500-7,600 by September 16 FOMC sharpens materially. The additional bear amplifier that didn't exist in last week's setup: if NVDA fails to hold $220 on the open and the AI infrastructure repricing expands to a broader semiconductor sell-off (AMD, AMAT, LRCX), the tech weight alone could subtract another 1-2% from the S&P in the same window. Conversion from step-aside to outright bearish requires a 30Y close above 5.30% or an SPX close below 7,600 post-NFP.",
+  "bear_case": "The read treats this as a term-premium event, and the stronger case is that it is a growth event wearing a rate costume. Monday's Chicago PMI at 47.1 was the weakest print of 2026, and if ISM confirms it at 10:00 AM ET, the long end is rising into a contracting factory economy — the configuration in which equity multiples compress without any offsetting earnings growth. The offsetting argument is that a 66.1% hike probability is a market pricing tightening it can absorb, and the S&P closed August up 2.96%. If the 30-year closes back under 5.25% and the S&P holds 7,650 through Friday's payrolls, this read no longer holds.",
   "body_mdx": "data/briefings/markets/2026-09-01-morning.mdx"
 }
