@@ -3,7 +3,6 @@ import { todayETDisplay } from "@/lib/utils";
 import BrandMark from "./brand-mark";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
-import PaletteButton from "./palette-button";
 import ThemeToggle from "./theme-toggle";
 
 // Ordered by the daily job-to-be-done: today's read first, then the archive,
@@ -15,7 +14,7 @@ const NAV = [
   // Route is still /earnings; the nav calls it what the page now calls itself.
   { href: "/earnings", code: "CAL", label: "Calendar" },
   { href: "/macro", code: "MACRO", label: "Macro" },
-  { href: "/global", code: "GLBL", label: "Global Markets" },
+  { href: "/global", code: "GLBL", label: "Global" },
   { href: "/about", code: "ABT", label: "About" },
 ];
 
@@ -51,7 +50,6 @@ export default function SiteHeader() {
         <HeaderNav items={NAV} />
 
         <div className="ml-auto flex shrink-0 items-baseline gap-3 font-mono text-[10.5px] tracking-[0.1em] text-[var(--dim)]">
-          <PaletteButton />
           <ThemeToggle />
           <span className="hidden self-center lg:inline">{dateStr}</span>
           <MobileNav items={NAV} />

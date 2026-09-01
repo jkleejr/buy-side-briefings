@@ -32,8 +32,9 @@ function isTypingTarget(el: EventTarget | null): boolean {
 }
 
 /**
- * Terminal-style command palette. ⌘I / Ctrl+I opens it; type to filter,
- * ↑/↓ + Enter to navigate.
+ * Terminal-style command palette. `?` opens it; type to filter, ↑/↓ + Enter
+ * to navigate. There is no modifier chord — ⌘I was retired along with the
+ * header badge that advertised it.
  */
 export default function CommandPalette() {
   const router = useRouter();
@@ -63,14 +64,9 @@ export default function CommandPalette() {
     [router],
   );
 
-  // Global shortcut: ⌘I toggles the palette. `?` opens it too.
+  // `?` opens the palette. No modifier chord.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "i") {
-        e.preventDefault();
-        setOpen((s) => !s);
-        return;
-      }
       if (open || isTypingTarget(e.target) || e.metaKey || e.ctrlKey || e.altKey) return;
 
       if (e.key === "?") {
