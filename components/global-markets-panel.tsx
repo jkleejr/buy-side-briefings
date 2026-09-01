@@ -61,10 +61,14 @@ export default async function GlobalMarketsPanel() {
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {REGIONS.map((region, i) => (
           <div key={region.name} className="flex flex-col">
-            <div className="flex items-baseline justify-between border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
-              <span>{region.name}</span>
+            <div className="flex items-baseline justify-between border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono uppercase">
+              <span className="text-[11px] tracking-wider text-[var(--amber)]">
+                {region.name}
+              </span>
               {i === REGIONS.length - 1 && (
-                <span className="text-[var(--dim)]">Yahoo</span>
+                <span className="text-[10px] tracking-wider text-[var(--dim)]">
+                  Yahoo
+                </span>
               )}
             </div>
             <table className="w-full font-mono text-[11px]">
