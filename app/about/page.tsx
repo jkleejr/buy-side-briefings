@@ -2,7 +2,7 @@
 export const metadata = {
   title: "About",
   description:
-    "Buy Side uses Claude Opus 5 to generate daily reports on the stock market — a trustworthy source of information that keeps readers updated on the latest events.",
+    "Buy Side uses Claude Opus 5 to generate daily reports on the stock market.",
 };
 
 export default function AboutPage() {
@@ -18,9 +18,7 @@ export default function AboutPage() {
         <div className="space-y-2 p-2 font-mono text-[12px] leading-relaxed text-[var(--foreground)]">
           <p>
             <span className="text-[var(--amber)]">Buy Side</span> uses Claude
-            Opus 5 to generate daily reports on the stock market. The goal is to
-            create a trustworthy source of information and keep readers updated
-            on the latest events.
+            Opus 5 to generate daily reports on the stock market.
           </p>
         </div>
       </section>
