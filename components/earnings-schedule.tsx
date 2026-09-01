@@ -220,7 +220,7 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
 
   return (
     <div className="space-y-1">
-      <Panel title="Earnings timeline — next 90 days">
+      <Panel title="Earnings timeline">
         <TimelineChart entries={entries} />
       </Panel>
 

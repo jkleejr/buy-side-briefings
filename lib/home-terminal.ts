@@ -446,7 +446,7 @@ function buildBrief(
   return {
     window,
     dateLabel: dateLabelOf(v.date),
-    timeLabel: window === "morning" ? "7 AM ET" : "8 PM ET",
+    timeLabel: window === "morning" ? "8 AM ET" : "8 PM ET",
     readMin: readMinutes(v),
     metrics: buildMetrics(v),
     sentiment: sentimentFor(v.verdict.code),
