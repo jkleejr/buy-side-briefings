@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { todayETDisplay } from "@/lib/utils";
 import BrandMark from "./brand-mark";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
@@ -19,7 +18,6 @@ const NAV = [
 ];
 
 export default function SiteHeader() {
-  const dateStr = todayETDisplay();
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--foreground)] bg-[var(--background)]">
       {/* The chrome wears the monospace utility face, not the reading serif.
@@ -50,9 +48,6 @@ export default function SiteHeader() {
         <HeaderNav items={NAV} />
 
         <div className="ml-auto flex shrink-0 items-baseline gap-3 font-mono text-[10.5px] tracking-[0.1em] text-[var(--dim)]">
-          <span className="hidden self-center text-[var(--foreground)] lg:inline">
-            {dateStr}
-          </span>
           <ThemeToggle />
           <MobileNav items={NAV} />
         </div>
