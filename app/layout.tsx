@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Buy Side",
-    template: "%s — Buy Side",
+    template: "Buy Side — %s",
   },
   // All three descriptions describe the same site in the same terms: a
   // briefing twice a day, cited, and explicitly not a recommendation. The

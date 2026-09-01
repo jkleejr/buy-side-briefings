@@ -40,6 +40,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
           <li key={`${b.routine}-${b.slug}`}>
             <Link
               href={`/briefings/${b.routine}/${b.slug}`}
+              prefetch={false}
               title={dateLine}
               className="flex items-center gap-2 px-2 py-2.5 font-mono text-[11px] hover:bg-[var(--panel-head)] sm:py-1.5"
             >
