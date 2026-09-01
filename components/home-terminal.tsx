@@ -296,10 +296,10 @@ export default function HomeTerminal({
           truncates instead, and the switch is pinned right on every width. */}
       <div className="flex items-start justify-between gap-3 pt-[39px]">
         <div className="min-w-0">
-          <div className="font-mono text-[11px] text-[var(--dim)]">
+          <div className="font-mono text-[11px] text-[var(--foreground)]">
             {current?.dateLabel ?? data.todayLabel}
           </div>
-          <div className="mt-1.5 truncate font-mono text-[11px] text-[var(--dim)]">
+          <div className="mt-1.5 truncate font-mono text-[11px] text-[var(--foreground)]">
             {view === "morning" ? "Morning report" : "Night report"}
             {current ? `, ${current.timeLabel}` : ""}
           </div>
