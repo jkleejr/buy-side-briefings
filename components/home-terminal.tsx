@@ -14,7 +14,7 @@ import type {
 // Journal homepage — the front page of a small daily, in the Design Notes
 // theme (warm paper, serif editorial voice, monospace utility labels).
 //   hero          : eyebrow (edition + time) with an AM/PM switch, the headline
-//                   at display size, an italic lede, a link into the briefing
+//                   at display size, an upright lede, a link into the briefing
 //   tape          : the metric strip as a ruled row of figures
 //   what matters  : the briefing's key points, each sourced — one place, no echo
 //   charts        : the majors, with derived support/resistance
@@ -108,7 +108,7 @@ function Hero({ brief }: { brief: BriefView }) {
           eleven lines there and pushed the link into the briefing off the
           bottom of the hero. Only one of the two is ever laid out, so the
           hidden one stays out of the accessibility tree as well. */}
-      <p className="mt-5 text-[17px] italic leading-[1.6] text-[var(--ink-3)] sm:text-[19px] lg:leading-[1.65]">
+      <p className="mt-5 text-[17px] leading-[1.6] text-[var(--ink-3)] sm:text-[19px] lg:leading-[1.65]">
         <span className="sm:hidden">{brief.ledeShort}</span>
         <span className="hidden sm:inline">{brief.lede}</span>
       </p>
@@ -331,7 +331,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
           the sm breakpoint only because three items could not share one row
           there; stacked, there is nothing to crowd. */}
       <div className="pt-4">
-        <div className="font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
+        <div className="font-mono text-[11px] text-[var(--dim)]">
           {current?.dateLabel ?? data.todayLabel}
         </div>
         {/* No wrapping on this row. With flex-wrap the longer morning label
@@ -340,7 +340,7 @@ export default function HomeTerminal({ data }: { data: HomeData }) {
             PM. The label truncates instead, and the switch is pinned right on
             every width. */}
         <div className="mt-1.5 flex items-center justify-between gap-3">
-          <span className="min-w-0 truncate font-mono text-[11px] tracking-[0.12em] text-[var(--dim)]">
+          <span className="min-w-0 truncate font-mono text-[11px] text-[var(--dim)]">
             {view === "morning" ? "Morning report" : "Night report"}
             {current ? `, ${current.timeLabel}` : ""}
           </span>
