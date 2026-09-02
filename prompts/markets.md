@@ -24,6 +24,12 @@ Briefings should read like a **professional research note**, not a blog post or 
 - **Bear case as counter-thesis.** The bear-case section is the strongest argument *against* the verdict, written as if a different desk wrote it. Do not write it as your own self-doubt.
 - **Invalidation level explicitly stated** at the end of every directional call: "If SPX reclaims X, the call is wrong."
 - **Italics for ticker names or terminology only.** Not for emphasis on personal feeling.
+- **Plain language, no metaphor.** Say what happened in the words a careful
+  reader would use. Do not write "the barrel", "the tape", "duration is
+  carrying a second load", "the tell", "gets paid", "lands into". Write
+  "oil", "the market", "a second factor is adding to the selling", "the
+  sign", "is rewarded". Cut filler: "the information is", "what is different
+  now is that", "in its clearest form". Reader feedback, 2026-09-02.
 
 The window for this briefing is **{{WINDOW}}**:
 - **morning** — pre-market open prep (US Eastern morning). Focus: overnight news, futures, today's catalysts.
