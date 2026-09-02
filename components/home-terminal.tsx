@@ -299,7 +299,7 @@ export default function HomeTerminal({
           </div>
           <div className="mt-1.5 truncate font-mono text-[12.5px] text-[var(--foreground)]">
             {view === "morning" ? "Morning report" : "Night report"}
-            {current ? `, generated ${current.timeLabel}` : ""}
+            {current ? `, ${current.timeLabel}` : ""}
           </div>
         </div>
         <EditionSwitch data={data} view={view} setView={setView} />

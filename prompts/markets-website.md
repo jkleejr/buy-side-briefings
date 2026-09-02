@@ -158,7 +158,7 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
   "routine": "markets",
   "date": "YYYY-MM-DD",
   "window": "morning" | "night",
-  "generated_at": "the EXACT output of `date -u +%Y-%m-%dT%H:%M:%SZ`, run immediately before you write this file — never rounded, never estimated. The site prints it as the report's time; on 2026-09-01 a run that finished at 12:39Z was stamped 12:45:00Z, and the night before, a run that finished at 00:14Z was stamped 00:35:00Z.",
+  "generated_at": "any ISO timestamp as a placeholder — it is overwritten mechanically by `node scripts/stamp-verdict.mjs <file>` in Step 7, which is the only stamp the site trusts",
   "is_seed": false,
   "verdict": {
     "headline": "plain-English news headline, ~90 chars, no prices or jargon",
@@ -445,6 +445,19 @@ Spend your budget on what no feed can know. On every run:
 ```
 
 ## Step 7 — Commit and push to deploy
+
+**First, stamp the verdict with the real clock — this is not optional:**
+
+```
+node scripts/stamp-verdict.mjs data/verdicts/markets-<YYYY-MM-DD>-<window>.json
+```
+
+It rewrites `generated_at` to the moment the report was finished. The homepage
+eyebrow ("Morning report, generated 8:38 AM ET") and the report page's own
+"generated" line both print this field, and the model-written value was found
+to be an estimate (2026-09-01: stamped 12:45:00Z for a run that finished at
+12:39Z). Run the script, then `git add`.
+
 
 ```bash
 git add data/verdicts/markets-<DATE>-<WINDOW>.json data/briefings/markets/<DATE>-<WINDOW>.mdx data/calendar.json

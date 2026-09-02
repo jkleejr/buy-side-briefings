@@ -279,7 +279,7 @@ function VerdictHead({
   return (
     <div className="pt-2">
       <div className="flex flex-wrap items-center gap-3">
-        <span className="font-mono text-[11px] text-[var(--faint)]">
+        <span className="font-mono text-[11px] text-[var(--amber)]">
           generated {formatBriefingTime(verdict.generated_at) ?? "—"}
         </span>
       </div>
