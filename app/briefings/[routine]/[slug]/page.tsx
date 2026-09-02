@@ -58,7 +58,7 @@ export default async function BriefingPage({
       </Link>
 
       <header className="space-y-2 border-b border-[var(--border)] pb-4">
-        <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+        <div className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[var(--amber)]">
           <span>{formatDateShort(briefing.date)}</span>
           {briefing.is_seed && (
             <>
