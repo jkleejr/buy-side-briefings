@@ -48,7 +48,7 @@ export default async function BriefingPage({
   const fullReadMin = readMinutes(briefing.body);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pb-14 pt-[39px] sm:px-6">
+    <div className="mx-auto max-w-5xl px-4 pb-14 pt-6 sm:px-6 sm:pt-[39px]">
       <article className="max-w-3xl space-y-4">
       <Link
         href="/briefings"
