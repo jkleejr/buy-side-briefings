@@ -17,6 +17,14 @@ Reports should read like a **professional research note**, not a blog post or in
 - **Density over length.** The reader's time is the scarce resource, not the
   page. Two sentences carrying four numbers beat two paragraphs carrying the
   same four.
+- **Plain language, no metaphor.** Say what happened in the words a careful
+  reader would use. Do not write "the barrel", "the tape", "duration is
+  carrying a second load", "the tell", "gets paid", "lands into". Write
+  "oil", "the market", "a second factor is adding to the selling", "the
+  sign", "is rewarded". If a sentence needs a metaphor to make its point, the
+  point is not yet clear. Cut filler: "the information is", "what is
+  different now is that", "in its clearest form". Reader feedback,
+  2026-09-02: the report was a good read but this language got in the way.
 
 The window for this report is **{{WINDOW}}**:
 - **morning** — pre-market open prep (US Eastern morning). Focus: overnight news, futures, today's catalysts.
