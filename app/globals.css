@@ -51,12 +51,12 @@
    so they follow the viewer's OS preference with no per-component work. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #16150f;
+    --background: #0e0d0a;
     --foreground: #ece6d9;
-    --panel: #201d16;
-    --panel-head: #26231b;
-    --border: #302d24;
-    --border-strong: #423e32;
+    --panel: #171612;
+    --panel-head: #1c1b16;
+    --border: #26241c;
+    --border-strong: #3a372c;
     --amber: #93a9e2;
     --amber-dim: #8695bd;
     --cyan: #d68d80;
@@ -101,12 +101,12 @@
   --fib-strong: #9d7615;
 }
 :root[data-theme="dark"] {
-  --background: #16150f;
+  --background: #0e0d0a;
   --foreground: #ece6d9;
-  --panel: #201d16;
-  --panel-head: #26231b;
-  --border: #302d24;
-  --border-strong: #423e32;
+  --panel: #171612;
+  --panel-head: #1c1b16;
+  --border: #26241c;
+  --border-strong: #3a372c;
   --amber: #93a9e2;
   --amber-dim: #8695bd;
   --cyan: #d68d80;
