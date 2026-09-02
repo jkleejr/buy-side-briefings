@@ -12,7 +12,7 @@ const NAV = [
   { href: "/briefings", code: "RPT", label: "Reports" },
   // Route is still /earnings; the nav calls it what the page now calls itself.
   { href: "/earnings", code: "CAL", label: "Calendar" },
-  { href: "/macro", code: "MACRO", label: "Macro" },
+  { href: "/macro", code: "MAC", label: "Macro" },
   { href: "/global", code: "GLBL", label: "Global" },
   { href: "/about", code: "ABT", label: "About" },
 ];
