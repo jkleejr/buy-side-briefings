@@ -230,6 +230,18 @@ export function todayET(): string {
  * to the lite-read route, so it has to stay ISO. This is the display-only
  * spelling, for chrome that a reader looks at rather than code that sorts.
  */
+const FMT_DATE_SHORT_NUMERIC_UTC = new Intl.DateTimeFormat("en-US", {
+  month: "numeric",
+  day: "numeric",
+  year: "2-digit",
+  timeZone: "UTC",
+});
+
+/** A report date (YYYY-MM-DD) as "9/1/26" — the eyebrow form on report pages. */
+export function formatDateShort(date: string): string {
+  return FMT_DATE_SHORT_NUMERIC_UTC.format(new Date(`${date}T12:00:00Z`));
+}
+
 const FMT_TODAY_ET = new Intl.DateTimeFormat("en-US", {
   timeZone: "America/New_York",
   month: "numeric",
