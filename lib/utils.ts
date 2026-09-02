@@ -5,18 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatRelativeTime(iso: string): string {
-  const then = new Date(iso).getTime();
-  const now = Date.now();
-  const diff = Math.max(0, now - then);
-  const minutes = Math.floor(diff / 60_000);
-  const hours = Math.floor(diff / 3_600_000);
-  const days = Math.floor(diff / 86_400_000);
-  if (minutes < 60) return `${minutes}m ago`;
-  if (hours < 48) return `${hours}h ago`;
-  return `${days}d ago`;
-}
-
 export function formatPct(n: number | null | undefined): string {
   // Defensive: a single missing/non-finite value must never crash the static
   // build (the whole site is one prerender). Render an em-dash instead.

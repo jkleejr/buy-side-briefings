@@ -9,7 +9,7 @@ import {
 } from "@/lib/data";
 import {
   formatBriefingDateLine,
-  formatRelativeTime,
+  formatBriefingTime,
   readMinutes,
 } from "@/lib/utils";
 import type { SupportingPoint } from "@/lib/data";
@@ -283,7 +283,7 @@ function VerdictHead({
     <div className="pt-2">
       <div className="flex flex-wrap items-center gap-3">
         <span className="font-mono text-[11px] text-[var(--faint)]">
-          generated {formatRelativeTime(verdict.generated_at)}
+          generated {formatBriefingTime(verdict.generated_at) ?? "—"}
         </span>
       </div>
       {headline && (
