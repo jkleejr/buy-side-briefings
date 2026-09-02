@@ -1,6 +1,7 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
+import { syncThemeColor } from "@/lib/theme-color";
 
 type Theme = "light" | "dark";
 
@@ -62,7 +63,14 @@ export default function ThemeToggle() {
       // Private mode: the theme still applies for this page view.
     }
     listeners.forEach((l) => l());
+    syncThemeColor();
   };
+
+  // The header is on every page, so this is where the browser chrome first
+  // learns the ground colour; the OS flipping its scheme re-syncs it too.
+  useEffect(() => {
+    syncThemeColor();
+  }, [theme]);
 
   return (
     <button

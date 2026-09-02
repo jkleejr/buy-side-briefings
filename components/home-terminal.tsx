@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { syncThemeColor } from "@/lib/theme-color";
 import LevelsChart from "./levels-chart-lazy";
 import Link from "next/link";
 import type {
@@ -276,8 +277,10 @@ export default function HomeTerminal({
   // keep the plain theme.
   useEffect(() => {
     document.documentElement.dataset.edition = view;
+    syncThemeColor();
     return () => {
       delete document.documentElement.dataset.edition;
+      syncThemeColor();
     };
   }, [view]);
 
