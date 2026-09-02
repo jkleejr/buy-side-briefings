@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { isActiveRoute } from "@/lib/nav-active";
 
 type NavItem = { href: string; code: string; label: string; external?: boolean };
 
@@ -17,12 +18,7 @@ export default function HeaderNav({ items }: { items: NavItem[] }) {
     <div className="relative hidden min-w-0 flex-1 md:block">
       <nav className="flex items-baseline gap-5 overflow-x-auto pr-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {items.map((item) => {
-          const active =
-            item.external
-              ? false
-              : item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+          const active = item.external ? false : isActiveRoute(item.href, pathname);
           const cls = `shrink-0 whitespace-nowrap pb-0.5 font-mono text-[12px] tracking-[0.02em] ${
             active
               ? "border-b-2 border-[var(--amber)] font-semibold text-[var(--foreground)]"

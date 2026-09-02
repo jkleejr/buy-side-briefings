@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { isActiveRoute } from "@/lib/nav-active";
 import { useState, useEffect } from "react";
 
 type NavItem = { href: string; code: string; label: string; external?: boolean };
@@ -50,11 +51,7 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
               // page you are on — including the homepage on a cold load. It
               // used to mark nothing, and the only highlight a reader ever saw
               // was hover.
-              const active = item.external
-                ? false
-                : item.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(item.href);
+              const active = item.external ? false : isActiveRoute(item.href, pathname);
               const cls = `flex items-baseline gap-2 border-t border-[var(--border)] px-4 py-3 font-mono text-[13px] uppercase tracking-wider first:border-t-0 hover:bg-[rgba(255,165,0,0.06)] hover:text-[var(--amber)] ${
                 active
                   ? "border-l-2 border-l-[var(--amber)] font-semibold text-[var(--amber)]"
