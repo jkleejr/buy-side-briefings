@@ -13,7 +13,7 @@ type Destination = {
 // the daily pages (reports, calendar), then the market-data pages (macro,
 // global), then about.
 const DESTINATIONS: Destination[] = [
-  { href: "/", code: "HOME", label: "Home" },
+  { href: "/", code: "TODAY", label: "Today" },
   { href: "/briefings", code: "RPT", label: "Reports" },
   { href: "/earnings", code: "CAL", label: "Calendar" },
   { href: "/macro", code: "MAC", label: "Macro" },
