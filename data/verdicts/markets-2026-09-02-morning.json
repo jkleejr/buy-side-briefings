@@ -1,0 +1,118 @@
+{
+  "routine": "markets",
+  "date": "2026-09-02",
+  "window": "morning",
+  "generated_at": "2026-09-02T11:57:51Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "⚠️",
+    "headline": "US-Iran Strait of Hormuz attack lifts crude to six-week high on eve of jobs week",
+    "label": "Step aside HIGH conviction: Brent $94.86 formally breaches $94 regime trigger; BTC $76,635 breaks $76,661 invalidation; 10Y at 4.81%; ADP 8:15am ET (~47K consensus); AVGO ±8.7% implied tonight; Canada tariffs T-minus 6 days",
+    "conviction": "high",
+    "horizon": "Through September 4 NFP; posture reset on September 16 FOMC",
+    "rationale_short": "The first formal regime indicator breach arrived overnight: Brent crude crossed the $94.00 trigger, trading at $94.86 as escalating US-Iran hostilities — headlined by an overnight attack on a cargo ship in the Strait of Hormuz — pushed oil to its highest level in nearly six weeks. The 10-year yield has climbed to 4.81% (intraday high 4.814%), its highest since January 2025, and DXY is at 99.73 (+0.30%), confirming a broad risk-off re-pricing across energy, rates, and FX simultaneously. VIX has jumped 9.52% to 16.34 in morning trading. BTC at $76,635 has formally broken below the $76,661 August 24 structural support — the invalidation level explicitly flagged in the prior setup; the Bessent buyback program is T-minus 7 days (September 9) but cannot halt a confirmed breakdown. Next structural support for BTC is the $72–73K prior range top.\n\nThe macro picture has shifted materially since Friday. The ADP July print (44K vs. 70K estimate) established that private-sector hiring momentum has stalled well below any trajectory consistent with the prior +475K NFP consensus. August ADP (~47K consensus, due 8:15 AM ET today) is expected to confirm the deceleration — per FXStreet's morning preview, the report is 'set to confirm that US job creation has lost steam.' This creates a genuine stagflationary fault line: the labor market is cooling faster than the Fed's hawkish framework anticipated, yet oil-driven supply inflation is simultaneously surging on geopolitical risk plus Canada's imminent $19.9B tariff stack (effective September 8). Warsh has two dissenting hawks and hike odds near two-thirds; the Beige Book at 2:00 PM ET will be read closely for any escalation of wage or price-pass-through language that argues for hiking even into a weakening jobs market.\n\nAVGO Q3 earnings report after close tonight (consensus $29.43B revenue, +84.52% YoY; EPS $2.55; ±8.7% implied move) is the one near-term positive wildcard. AI infrastructure demand readings from Broadcom's custom accelerator and networking lines could temporarily lift the AI-related tape. However, a beat does not resolve the macro regime: Brent above $94, 10Y at 4.81%, Canada tariffs six days away, and a weakening jobs trend are structural headwinds that one quarterly earnings report cannot override. S&P 500 fell 0.71% and Nasdaq fell 1.03% on Tuesday; premarket suggests further weakness with QQQ down approximately 0.59%. Step-aside posture maintained with conviction elevated to high on the Brent trigger breach. Conversion to outright bearish still requires a 30Y daily close above 5.30% or an SPX daily close below 7,600.",
+    "supporting_data": [
+      {
+        "label": "Brent at six-week high on US-Iran Strait of Hormuz attack — Fortune, Sep 1 2026",
+        "url": "https://fortune.com/2026/09/01/oil-prices-bond-yields-inflation-fe/"
+      },
+      {
+        "label": "ADP August employment report preview: job creation has lost steam — FXStreet, Sep 2 2026",
+        "url": "https://www.fxstreet.com/news/adp-employment-report-is-expected-to-show-a-moderate-increase-in-private-payrolls-in-august-202609020815"
+      },
+      {
+        "label": "ADP July: +44K private payrolls (below 70K est.) — CNBC, Aug 5 2026",
+        "url": "https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html"
+      },
+      {
+        "label": "AVGO Q3 2026 earnings report — MarketBeat",
+        "url": "https://www.marketbeat.com/earnings/reports/2026-9-2-broadcom-inc-stock/"
+      },
+      {
+        "label": "AVGO earnings Sep 2: ±8.7% implied move — Earnings Watcher",
+        "url": "https://earnings-watcher.com/wiki/avgo-earnings-september-2026"
+      },
+      {
+        "label": "Canada counter-tariffs on 700+ US products effective September 8 — Al Jazeera, Aug 25 2026",
+        "url": "https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products"
+      },
+      {
+        "label": "September FOMC rate hike odds — Polymarket",
+        "url": "https://polymarket.com/event/fed-decision-in-september-762"
+      },
+      {
+        "label": "September 2026 economic calendar: NFP, FOMC, ECB, CPI — ForexCashbackRebate",
+        "url": "https://www.forexcashbackrebate.com/blogs/september-2026-economic-calendar-highlights-nfp-fomc-ecb-cpi-more/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7657.0,  "change_pct": -0.71, "as_of": "2026-09-01T20:00:00Z" },
+    "nasdaq": { "level": 26084.0, "change_pct": -1.03, "as_of": "2026-09-01T20:00:00Z" },
+    "vix":    { "level": 16.34,   "change_pct": 9.52,  "as_of": "2026-09-02T09:30:00Z" },
+    "ust10y": { "level": 4.81,    "change_bps": 4,     "as_of": "2026-09-02T09:30:00Z" },
+    "dxy":    { "level": 99.73,   "change_pct": 0.30,  "as_of": "2026-09-02T09:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.22, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent Crude", "value": 94.86, "trigger_above": 94.00, "unit": "$/bbl" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "ADP",
+      "note": "August private payrolls due 8:15 AM ET today. Consensus ~47K; July actual was 44K (well below 70K estimate). Two consecutive below-estimate prints would confirm the labor market deceleration thesis. A soft print today could complicate the September FOMC calculus — rate hike odds (~67%) are anchored on sticky inflation, not jobs momentum, so a sub-50K print likely does not move hike probabilities dramatically given Warsh's hawkish disposition and rising oil prices. Watch whether the initial market reaction is 'soft data = no hike' (yields fall) or 'soft data + oil surge = stagflation' (yields steady, equities sell). The latter is the more dangerous read.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Q3 2026 earnings after close tonight. Consensus: $29.43B revenue (+84.52% YoY), EPS $2.55. Options priced ±8.7% implied move. AI custom accelerator and networking revenue are the key lines — any acceleration in hyperscaler AI capex commentary would provide read-through to the broader AI infrastructure trade (NVDA, MRVL, ANET). Closed at $369.68 on Sep 1 (-0.18%). A beat-and-raise is the base case given prior-quarter AI revenue trajectory (+143% in the previous report). The risk: AVGO's fiscal year-end quarter has historically seen conservative guide-downs. The geopolitical/macro backdrop (Brent above trigger, 10Y at 4.81%) may cap the after-hours reaction even on a strong print.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "BTC",
+      "note": "$76,635 (live as of 11:51 UTC from Crypto.com exchange). The $76,661 August 24 structural support — the explicit invalidation level from the prior setup — has been formally broken. 24h range: $76,255–$78,425. Bessent buyback program remains T-minus 7 days (September 9) but a confirmed daily close below $76,661 invalidates the prior long thesis per stated criteria. Next structural support is the $72–73K prior range top. A recovery above $78K by end of day could be read as a false break; absent that, the tactical setup has flipped from 'hold above support' to 'next leg down toward $72-73K.' Risk-off macro backdrop (Brent surge, yields at Jan 2025 highs) is not supportive.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Estimated ~$217 (below $220 structural support since the Friday sell-the-news reversal). AVGO's earnings tonight are the most direct data point on AI infrastructure demand trajectory — a strong AVGO print would provide sentiment support to NVDA even ahead of its own next catalyst. However, the pattern of high-multiple AI stocks reversing on earnings beats (CSCO, AMAT, MRVL, NVDA itself) argues against blind extrapolation. Monday's post-AVGO opening trade in NVDA will be the tell for whether the AI infrastructure theme can hold despite macro headwinds.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NFP",
+      "note": "August nonfarm payrolls due Friday September 4, 8:30 AM ET. Original consensus was +475K, but ADP July (+44K) and the expected August ADP (~47K) suggest the actual NFP could come in significantly softer. 'Analysts expect weak labor figures' per September 2 reporting. A sub-200K NFP print would meaningfully reduce September FOMC hike probability from the current ~67% base case; a sub-100K print would be a material dovish shock. However, even a weak NFP may not move yields down sharply if oil (Brent $94.86) and Canada tariffs (effective Sep 8) are simultaneously injecting inflation. The stagflationary combination is the worst-case for risk assets: weakening growth + elevated inflation = no Fed put.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "OIL",
+      "note": "Brent crude at $94.86 has formally crossed the $94.00 regime trigger. The driver is US-Iran escalation: overnight attacks on a cargo ship in the Strait of Hormuz have raised fears of sustained disruption to Middle East energy flows. This is the first of the two remaining regime indicators to formally breach. The geopolitical premium could unwind quickly if the Strait of Hormuz situation de-escalates, but with Canada tariffs stacking inflation on September 8, even a modest Brent pullback to $90-92 would leave the inflationary impulse elevated. A sustained close above $94 through the week would confirm the regime trigger is active.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent Crude — first regime indicator breach; geopolitical bid active",
+      "thesis": "Brent at $94.86 has crossed the $94.00 regime trigger for the first time, driven by US-Iran Strait of Hormuz escalation. The 30Y yield stands at an estimated 5.22%, 8bps from its own 5.30% trigger. With ADP soft (~47K) and Canada tariffs arriving September 8, the inflationary stacking effect (energy + tariffs) is the pathway to 30Y breaching its trigger even if the labor market is weakening. A sustained Brent close above $94 through the week is the confirmation that the oil regime indicator is active, not a one-session spike. Watch crude inventories tomorrow (Sep 3 EIA report) for demand-side confirmation of the supply/geopolitical bid.",
+      "entry": "Short energy-sensitive consumer discretionary and transportation names on Brent closes above $95. Long energy (XLE, integrated majors) on sustained Strait of Hormuz escalation. If Brent closes back below $92 on de-escalation, the regime trigger deactivates.",
+      "invalidation": "Brent daily close below $92.00 on confirmed Strait of Hormuz de-escalation.",
+      "horizon": "Through September 4 NFP; reassess after EIA inventory data Thursday."
+    },
+    {
+      "asset": "BTC — invalidation confirmed; next support $72-73K",
+      "thesis": "BTC at $76,635 has traded through the $76,661 August 24 support level that was the explicit invalidation threshold in the prior setup. The Bessent program (starting September 9, T-minus 7 days) provides a structural backstop approaching but cannot prevent a technical breakdown in the near term. The risk-off macro backdrop — Brent above $94, yields at Jan 2025 highs, VIX up 9.52% — is not supportive of a snap recovery. Prior range top at $72–73K is the next meaningful support. A recovery above $78K on a sustained intraday move and daily close would signal a false break, but absent that, the setup has flipped bearish.",
+      "entry": "Exited per stated criteria (close below $76,661). Do not re-enter until two consecutive daily closes above $80K, or Bessent program activation data confirms the structural bid is absorbing supply.",
+      "invalidation": "Daily close above $78,500 on volume (false break scenario).",
+      "horizon": "Monitor through September 9 Bessent program start."
+    },
+    {
+      "asset": "30Y yield — one indicator from dual regime breach",
+      "thesis": "With Brent formally breached and 30Y at approximately 5.22% (8bps from the 5.30% trigger), the confluence of ADP/NFP data this week and Canada tariff repricing creates a corridor where both regime indicators could breach simultaneously. ADP today (soft consensus ~47K) is unlikely to push 30Y higher in isolation, but NFP Friday is the decisive print. A surprise-to-the-upside NFP (above prior consensus area) even on a degraded base, combined with oil at $95+ and Canada tariff pass-through, would be the pathway to 5.30% breach. A second breach would convert step-aside to formally bearish.",
+      "entry": "Watch for 30Y close above 5.25% post-ADP as early warning that markets are beginning to price oil-inflation persistence even on weak jobs. Full bear conversion signal remains 30Y daily close above 5.30%.",
+      "invalidation": "ADP and NFP both come in well below expectations (sub-50K and sub-150K respectively), collapsing hike odds below 40% and pulling 30Y back to 5.10%.",
+      "horizon": "Through September 4 NFP."
+    }
+  ],
+  "bear_case": "Two regime indicators are now in simultaneous stress for the first time. Brent has formally crossed $94 on US-Iran Strait of Hormuz escalation — a geopolitical catalyst that can spike quickly and persist if the conflict broadens. The 30Y sits 8bps from its own trigger (5.30%) while the labor market is decelerating faster than the Fed's hawkish framework assumed (ADP July +44K, August ~47K). The stagflationary pathway is: (1) ADP and NFP both confirm a labor market deceleration, preventing the Fed from leaning purely hawkish on employment grounds; (2) simultaneously, Brent stays above $94 and Canada's $19.9B tariffs take effect September 8, injecting a front-loaded supply-side inflation shock that keeps the 30Y elevated or drives it through 5.30%; (3) the Fed is forced to hike anyway into weakening growth because inflation is supply-driven and tariff-anchored — not demand-driven; (4) Warsh's hawkish bloc (three dissenting hawks) votes to hike at the September 16 FOMC regardless of jobs data because their inflation call is structural. In this scenario, 30Y breaks 5.30% by September 8-10, formally tripping the second and final regime indicator, converting the framework to fully bearish and targeting SPX 7,400-7,500 through the FOMC. BTC's break of $76,661 would then extend toward $72-73K before the Bessent program can absorb the supply. AVGO's earnings tonight are the one circuit-breaker: a strong beat with bullish AI capex commentary could temporarily delay the technical deterioration, but it addresses zero of the macro drivers.",
+  "body_mdx": "data/briefings/markets/2026-09-02-morning.mdx"
+}
