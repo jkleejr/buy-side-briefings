@@ -236,10 +236,12 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
         <TimelineChart entries={entries} />
       </Panel>
 
-      <Panel title="Full schedule">
-        <ScheduleTable entries={entries} />
-      </Panel>
-      <SourceLine left={YAHOO} right="Refreshed hourly" />
+      <div>
+        <Panel title="Full schedule">
+          <ScheduleTable entries={entries} />
+        </Panel>
+        <SourceLine left={YAHOO} right="Refreshed hourly" />
+      </div>
     </div>
   );
 }

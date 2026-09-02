@@ -281,6 +281,7 @@ export default async function MacroSections() {
       <Panel title="Economic growth & activity">
         <TileGrid tiles={growthTiles(m)} />
       </Panel>
+      <div>
       <Panel title="Unemployment & labor">
         <TileGrid tiles={laborTiles(m)} />
       </Panel>
@@ -288,6 +289,7 @@ export default async function MacroSections() {
         left="Source: FRED · Federal Reserve Bank of St. Louis"
         right="Updated on each official release"
       />
+      </div>
     </>
   );
 }

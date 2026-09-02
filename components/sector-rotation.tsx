@@ -57,7 +57,7 @@ export default async function SectorRotation() {
   rows.sort((a, b) => (b.pct ?? -999) - (a.pct ?? -999));
 
   return (
-    <>
+    <div>
     <section className="border border-[var(--border)] bg-[var(--panel)]">
       <table className="w-full font-mono text-[11px]">
         {/* The panel header is gone; its title now leads the header row itself,
@@ -115,6 +115,6 @@ export default async function SectorRotation() {
       </table>
     </section>
     <SourceLine left={YAHOO} right={DELAYED} />
-    </>
+    </div>
   );
 }
