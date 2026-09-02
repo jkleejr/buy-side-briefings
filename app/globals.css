@@ -171,6 +171,38 @@ body {
   animation: term-blink 2s steps(2, end) infinite;
 }
 
+/* Route loading state: a short terminal transcript. Each line prints on its
+   own delay (steps(1) so it pops in rather than fades — a prompt does not
+   ease), the dots cycle on the line still in flight, and a block cursor
+   blinks at the end. Timings are set inline per line in app/loading.tsx. */
+@keyframes term-print {
+  to { opacity: 1; }
+}
+.term-line {
+  opacity: 0;
+  animation: term-print 1ms steps(1, end) forwards;
+}
+@keyframes term-dots {
+  0%   { content: ""; }
+  25%  { content: "."; }
+  50%  { content: ".."; }
+  75%, 100% { content: "..."; }
+}
+.term-dots::after {
+  content: "...";
+  display: inline-block;
+  width: 1.6em;            /* holds the width so "ok" does not slide */
+  text-align: left;
+  animation: term-dots 1.2s steps(1, end) infinite;
+}
+@keyframes term-cursor {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.term-cursor {
+  animation: term-cursor 1s steps(1, end) infinite;
+}
+
 /* Scrolls, but shows no bar. The ticker tape runs the full width of the page
    under the header, so its 6px track read as a second rule drawn across the
    site rather than as a control. Wheel, trackpad and shift-drag still scroll
@@ -227,6 +259,9 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .term-blink { animation: none; }
+  .term-line { opacity: 1; animation: none; }
+  .term-dots::after { animation: none; }
+  .term-cursor { animation: none; }
   .tick-up, .tick-down { animation: none; }
 }
 
