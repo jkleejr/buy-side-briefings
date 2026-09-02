@@ -283,11 +283,11 @@ export default async function MacroSections() {
       </Panel>
       <Panel title="Unemployment & labor">
         <TileGrid tiles={laborTiles(m)} />
-        <SourceLine
-          left="Source: FRED · Federal Reserve Bank of St. Louis"
-          right="Updated on each official release"
-        />
       </Panel>
+      <SourceLine
+        left="Source: FRED · Federal Reserve Bank of St. Louis"
+        right="Updated on each official release"
+      />
     </>
   );
 }

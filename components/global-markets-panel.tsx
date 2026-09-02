@@ -58,6 +58,7 @@ export default async function GlobalMarketsPanel() {
   }
 
   return (
+    <>
     <section className="border border-[var(--border)] bg-[var(--panel)]">
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {REGIONS.map((region) => (
@@ -99,7 +100,8 @@ export default async function GlobalMarketsPanel() {
           </div>
         ))}
       </div>
-      <SourceLine left={YAHOO} right={DELAYED} />
     </section>
+    <SourceLine left={YAHOO} right={DELAYED} />
+    </>
   );
 }

@@ -238,8 +238,8 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
 
       <Panel title="Full schedule">
         <ScheduleTable entries={entries} />
-        <SourceLine left={YAHOO} right="Refreshed hourly" />
       </Panel>
+      <SourceLine left={YAHOO} right="Refreshed hourly" />
     </div>
   );
 }
