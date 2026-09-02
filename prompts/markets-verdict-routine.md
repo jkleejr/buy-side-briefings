@@ -18,8 +18,8 @@ prompts live in the cloud account, not in this repo** — this file is the
 in-repo source of truth. To change what a routine does, edit the cloud prompt
 to match this file.
 
-- **Markets Verdict — Morning** (`trig_01Uvs8J4Hnm2gLZE3NZXHZrr`, cron `35 11 * * *`,
-  fires 7:35am ET so the file is up by ~8am; see the jitter note below): premarket read — S&P futures, Nasdaq, VIX, 10Y, DXY, the 3-5 stories
+- **Markets Verdict — Morning** (`trig_01Uvs8J4Hnm2gLZE3NZXHZrr`, cron `50 11 * * *`,
+  fires 7:50am ET; see the timing note below): premarket read — S&P futures, Nasdaq, VIX, 10Y, DXY, the 3-5 stories
   moving markets, today's calendar. Writes `data/verdicts/markets-<TODAY>-morning.json`.
 - **Markets Verdict — Night** (`trig_012oQHNd9A91W2UC6dgBKwt8`, cron `0 0 * * *`,
   8pm ET): post-close read — closing levels, after-hours moves, what drove the
@@ -27,20 +27,23 @@ to match this file.
 
 The two report routines that write the MDX run on the same clock, weekdays
 only: **Morning markets report** (`trig_01DC21E5s31c9nWwJPnJsWgb`, cron
-`40 11 * * 1-5`, fires 7:40am ET, publishes ~8am) and **Night markets report**
+`55 11 * * 1-5`, fires 7:55am ET) and **Night markets report**
 (`trig_01JZb1FRWVGhNtBRAgR7mZ1n`, cron `0 0 * * 2-6`, 8pm ET — Tue-Sat in UTC
 is Mon-Fri evening in New York).
 
-**The scheduler fires late — plan for it.** Over August the morning run
-started 5–27 minutes after its cron (2026-09-01: cron 12:05Z, fired 12:32Z),
-and a run then takes 7–15 minutes. The morning crons are therefore set
-~25 minutes before the 8am ET publish target: verdict `35 11`, report
-`40 11`. Worst case observed lands ~8:25am; typical ~8:00. The homepage label
-"Morning report, 8 AM ET" is the publish target, not the fire time.
+**Timing target: finished between 8:00 and 8:45 ET, both windows.** The
+scheduler fires 5–27 minutes after a cron (2026-09-01: cron 12:05Z, fired
+12:32Z) and a run then takes 7–15 minutes, so a cron at 7:55am lands between
+8:07 and 8:37 at the observed extremes — inside the window from both ends.
+Firing earlier risked a fast run finishing before 8; firing at 8:05 risked a
+slow one finishing after 8:45. Night fires at 8:00pm and has landed 8:14–8:19.
+The homepage and the report page print the actual finish time from
+`generated_at`, stamped by `scripts/stamp-verdict.mjs`; the variation is
+meant to be visible, not hidden behind a fixed label.
 
 **Crons are UTC, so they drift an hour when DST ends** (2026-11-01). To hold
-the same ET times through the winter, the morning pair becomes `35 12` /
-`40 12` and night `0 1 * * *`; reverse all three when DST resumes.
+the same ET times through the winter, the morning pair becomes `50 12` /
+`55 12` and night `0 1 * * *`; reverse all three when DST resumes.
 
 Both: schema-by-example (read a recent same-window verdict file and match its
 keys exactly; verdict.headline = plain-English news-first home title, ~90 chars, no prices/percentages/jargon), JSON.parse-validate before committing, commit + push to `deploy`
