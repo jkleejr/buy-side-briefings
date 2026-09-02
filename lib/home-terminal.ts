@@ -4,7 +4,7 @@ import {
   getBriefing,
   type MarketsVerdict,
 } from "@/lib/data";
-import { readMinutes as readMinutesOfText } from "@/lib/utils";
+import { readMinutes as readMinutesOfText, formatBriefingTime } from "@/lib/utils";
 import { clampText, verdictHeadline } from "@/lib/verdict-headline";
 
 // ---------------------------------------------------------------------------
@@ -446,7 +446,7 @@ function buildBrief(
   return {
     window,
     dateLabel: dateLabelOf(v.date),
-    timeLabel: window === "morning" ? "8 AM ET" : "8 PM ET",
+    timeLabel: formatBriefingTime(v.generated_at) ?? (window === "morning" ? "8 AM ET" : "8 PM ET"),
     readMin: readMinutes(v),
     metrics: buildMetrics(v),
     sentiment: sentimentFor(v.verdict.code),
