@@ -158,7 +158,7 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
   "routine": "markets",
   "date": "YYYY-MM-DD",
   "window": "morning" | "night",
-  "generated_at": "ISO 8601 timestamp UTC",
+  "generated_at": "the EXACT output of `date -u +%Y-%m-%dT%H:%M:%SZ`, run immediately before you write this file — never rounded, never estimated. The site prints it as the report's time; on 2026-09-01 a run that finished at 12:39Z was stamped 12:45:00Z, and the night before, a run that finished at 00:14Z was stamped 00:35:00Z.",
   "is_seed": false,
   "verdict": {
     "headline": "plain-English news headline, ~90 chars, no prices or jargon",

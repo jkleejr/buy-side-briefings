@@ -30,8 +30,16 @@ const FMT_ET_CLOCK = new Intl.DateTimeFormat("en-US", {
   minute: "2-digit",
   hour12: true,
   timeZone: "America/New_York",
-  timeZoneName: "short",
 });
+
+/**
+ * Eastern clock, e.g. "8:30 PM ET". Intl's own zone name changes with the
+ * season — "EDT" in summer, "EST" in winter — and the rest of the site says
+ * "ET", so the zone is appended as a constant rather than asked of Intl.
+ */
+function etClock(d: Date): string {
+  return `${FMT_ET_CLOCK.format(d)} ET`;
+}
 const FMT_WEEKDAY_LONG_UTC = new Intl.DateTimeFormat("en-US", {
   weekday: "long",
   timeZone: "UTC",
@@ -67,7 +75,7 @@ export function formatBriefingTime(iso?: string | null): string | null {
   if (!iso) return null;
   const d = new Date(iso);
   if (isNaN(d.getTime())) return null;
-  return FMT_ET_CLOCK.format(d);
+  return etClock(d);
 }
 
 /**
@@ -89,7 +97,7 @@ export function formatChartDate(iso: string): {
   // is market data and prints in Eastern.
   const day = (isDateOnly ? FMT_WEEKDAY_LONG_UTC : FMT_WEEKDAY_LONG_ET).format(d);
   const full = (isDateOnly ? FMT_DATE_LONG_UTC : FMT_DATE_LONG_ET).format(d);
-  const time = isDateOnly ? null : FMT_ET_CLOCK.format(d);
+  const time = isDateOnly ? null : etClock(d);
   return { day, full, time };
 }
 

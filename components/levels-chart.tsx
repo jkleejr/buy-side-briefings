@@ -1134,10 +1134,10 @@ export default function LevelsChart({
         day: "numeric",
         year: "numeric",
         ...(isIntradayInterval(interval)
-          ? ({ hour: "numeric", minute: "2-digit", timeZoneName: "short" } as const)
+          ? ({ hour: "numeric", minute: "2-digit" } as const)
           : {}),
         timeZone: isIntradayInterval(interval) ? "America/New_York" : "UTC",
-      })
+      }) + (isIntradayInterval(interval) ? " ET" : "")
     : "—";
 
   // Unique per instance — two charts on one page must not share a clip path.
