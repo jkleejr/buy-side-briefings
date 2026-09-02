@@ -1,4 +1,5 @@
 import { getMacroSnapshot, type MacroSnapshot } from "@/lib/macro";
+import SourceLine from "./source-line";
 import Panel from "./panel";
 
 export const revalidate = 3600;
@@ -282,6 +283,10 @@ export default async function MacroSections() {
       </Panel>
       <Panel title="Unemployment & labor">
         <TileGrid tiles={laborTiles(m)} />
+        <SourceLine
+          left="Source: FRED · Federal Reserve Bank of St. Louis"
+          right="Updated on each official release"
+        />
       </Panel>
     </>
   );

@@ -1,4 +1,5 @@
 import YahooFinance from "yahoo-finance2";
+import SourceLine, { YAHOO, DELAYED } from "./source-line";
 import { formatPct } from "@/lib/utils";
 
 const yahooFinance = new YahooFinance({
@@ -111,6 +112,7 @@ export default async function SectorRotation() {
           })}
         </tbody>
       </table>
+      <SourceLine left={YAHOO} right={DELAYED} />
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import Panel from "@/components/panel";
+import SourceLine, { YAHOO } from "./source-line";
 import {
   type EarningsEntry,
   type EarningsSchedule as Schedule,
@@ -237,6 +238,7 @@ export default function EarningsSchedule({ schedule }: { schedule: Schedule }) {
 
       <Panel title="Full schedule">
         <ScheduleTable entries={entries} />
+        <SourceLine left={YAHOO} right="Refreshed hourly" />
       </Panel>
     </div>
   );

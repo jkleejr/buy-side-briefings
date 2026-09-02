@@ -1,5 +1,6 @@
 import YahooFinance from "yahoo-finance2";
 import { formatPct } from "@/lib/utils";
+import SourceLine, { YAHOO, DELAYED } from "./source-line";
 
 const yahooFinance = new YahooFinance({
   suppressNotices: ["yahooSurvey", "ripHistorical"],
@@ -59,17 +60,10 @@ export default async function GlobalMarketsPanel() {
   return (
     <section className="border border-[var(--border)] bg-[var(--panel)]">
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-        {REGIONS.map((region, i) => (
+        {REGIONS.map((region) => (
           <div key={region.name} className="flex flex-col">
-            <div className="flex items-baseline justify-between border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono uppercase">
-              <span className="text-[11px] tracking-wider text-[var(--amber)]">
-                {region.name}
-              </span>
-              {i === REGIONS.length - 1 && (
-                <span className="text-[10px] tracking-wider text-[var(--dim)]">
-                  Yahoo
-                </span>
-              )}
+            <div className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
+              {region.name}
             </div>
             <table className="w-full font-mono text-[11px]">
               <tbody>
@@ -105,6 +99,7 @@ export default async function GlobalMarketsPanel() {
           </div>
         ))}
       </div>
+      <SourceLine left={YAHOO} right={DELAYED} />
     </section>
   );
 }
