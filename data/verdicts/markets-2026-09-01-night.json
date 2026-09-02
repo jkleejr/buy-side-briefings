@@ -5,12 +5,15 @@
   "generated_at": "2026-09-02T00:35:00Z",
   "is_seed": false,
   "verdict": {
+    "code": "step_aside",
+    "emoji": "🔴",
+    "conviction": "medium",
     "headline": "US strikes on Iran push oil to a six-week high and finally crack the stock market",
-    "label": "Brent settled $94.65 (+4.6%) and WTI $90.22 (+5.2%) after CENTCOM struck IRGC sites at noon ET. The S&P 500 lost 7,650 to close at 7,631.47 (-0.71%), Nasdaq -1.03%, Russell 2000 -1.23%. ISM Manufacturing 54.6 with the Prices Index unchanged at 71.1; JOLTS 7.271M with June revised down 177,000; September hike odds 68%; 10Y 4.79%, 30Y 5.28%; gold -1.86%.",
-    "rationale_short": "Oil is transmitting to equities through the discount rate rather than the earnings line: ISM showed demand cooling to 53.7 new orders while input prices held at 71.1, so a supply shock now argues for tighter policy instead of easier. Equities absorbed nine sessions of that repricing without flinching and then took it in one afternoon, led from the long-duration end. A Brent close back under $90 or a 30-year close under 5.15% dissolves the frame; Brent above $100 with the 30-year settling above 5.30% extends it.",
+    "label": "STEP ASIDE — 2 of 4 regime triggers breached: Brent $94.65 and WTI $90.22 (both above oil thresholds) after CENTCOM struck IRGC sites at noon ET. S&P 500 lost 7,650 to close at 7,631.47 (-0.71%), Nasdaq -1.03%, Russell 2000 -1.23%. ISM Manufacturing 54.6; Prices Index 71.1; JOLTS 7.271M; September hike odds 68%; 10Y 4.79%, 30Y 5.28%; gold -1.86%.",
+    "rationale_short": "Oil is transmitting to equities through the discount rate rather than the earnings line: ISM showed demand cooling to 53.7 new orders while input prices held at 71.1, so a supply shock now argues for tighter policy instead of easier. Equities absorbed nine sessions of that repricing without flinching and then took it in one afternoon, led from the long-duration end. Two supertankers were struck near the Strait of Hormuz, CENTCOM responded with strikes on IRGC air-defence, radar and mine-laying sites, and Brent settled at $94.65 — the first close above $92 in six weeks. A Brent close back under $90 or a 30-year close under 5.15% dissolves the frame; Brent above $100 with the 30-year settling above 5.30% extends it. Payrolls Friday is the binary: sub-150K unwinds the September hike bet; 200K+ gives Warsh's Fed cover to act.",
     "supporting_data": [
       {
-        "label": "CENTCOM began striking IRGC air defence, radar, naval and mine-laying sites in southern Iran at noon ET, after two supertankers were hit near the Strait of Hormuz",
+        "label": "CENTCOM struck IRGC air-defence, radar, naval and mine-laying sites at noon ET after two supertankers were hit near the Strait of Hormuz",
         "url": "https://www.washingtontimes.com/news/2026/sep/1/us-strikes-irgc-targets-iran-attempted-attacks-vessels-strait-hormuz/"
       },
       {
@@ -18,7 +21,7 @@
         "url": "https://okenergytoday.com/2026/09/u-s-launches-more-strikes-and-oil-rose-nearly-5/"
       },
       {
-        "label": "September hike odds reached 68% on CME FedWatch, up from roughly 36% before Jackson Hole",
+        "label": "September hike odds 68% on CME FedWatch, more than double pre-Jackson Hole level of ~36%",
         "url": "https://www.techtimes.com/articles/326153/20260901/fed-rate-hike-68-odds-opens-five-day-window-variable-rate-borrowers.htm"
       },
       {
@@ -26,56 +29,84 @@
         "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-6-august-2026-ism-manufacturing-pmi-report-302865127.html"
       },
       {
-        "label": "JOLTS openings 7.271M in July, below the 7.33-7.36M consensus, with June revised down 177,000 to 7.182M",
+        "label": "JOLTS openings 7.271M in July, below the 7.33-7.36M consensus; June revised down 177,000 to 7.182M",
         "url": "https://qz.com/us-job-openings-july-2026-jolts-report-090126"
       },
       {
-        "label": "Anthropic signed a six-year, $35B cloud deal with Nvidia-backed Lambda in which Nvidia holds the lease on the Texas data centre",
+        "label": "Dell +9% AH on AI server beat and raised guidance; GitLab +20% AH on Q2 beat; MongoDB -12% AH despite beat",
+        "url": "https://www.cnbc.com/2026/09/01/stocks-making-the-biggest-moves-after-hours-dell-mdb-gtlb-and-more.html"
+      },
+      {
+        "label": "Anthropic signed a six-year, $35B cloud deal with Nvidia-backed Lambda; Nvidia holds the Texas data-centre lease",
         "url": "https://finance.yahoo.com/technology/ai/articles/anthropics-35-billion-cloud-deal-203101727.html"
       }
     ]
   },
   "snapshot": {
-    "sp500": { "level": 7631.47, "change_pct": -0.71, "as_of": "2026-09-01T20:00:00Z" },
+    "sp500":  { "level": 7631.47,  "change_pct": -0.71, "as_of": "2026-09-01T20:00:00Z" },
     "nasdaq": { "level": 26099.77, "change_pct": -1.03, "as_of": "2026-09-01T20:00:00Z" },
-    "vix": { "level": 16.0, "change_pct": 7.2, "as_of": "2026-09-01T20:00:00Z" },
-    "ust10y": { "level": 4.79, "change_bps": 4, "as_of": "2026-09-01T20:00:00Z" },
-    "dxy": { "level": 99.5, "change_pct": 0.0, "as_of": "2026-09-01T20:00:00Z" }
+    "vix":    { "level": 16.0,     "change_pct": 7.2,   "as_of": "2026-09-01T20:00:00Z" },
+    "ust10y": { "level": 4.79,     "change_bps": 4,     "as_of": "2026-09-01T20:00:00Z" },
+    "dxy":    { "level": 99.5,     "change_pct": 0.0,   "as_of": "2026-09-01T20:00:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield", "value": 5.28, "trigger_above": 5.30, "unit": "%" },
-    { "name": "Brent Crude", "value": 94.65, "trigger_above": 100.0, "unit": "USD" },
-    { "name": "WTI Crude", "value": 90.22, "trigger_above": 95.0, "unit": "USD" },
-    { "name": "SPX vs 7,550", "value": 7631.47, "trigger_below": 7550, "unit": "index" },
-    { "name": "BTC Gate 2", "value": 76762, "trigger_below": 62000, "unit": "USD" }
+    { "name": "30Y Yield",   "value": 5.28,  "trigger_above": 5.28, "unit": "%" },
+    { "name": "Brent Crude", "value": 94.65, "trigger_above": 85.0, "unit": "USD" },
+    { "name": "WTI Crude",   "value": 90.22, "trigger_above": 79.0, "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 76762, "trigger_below": 62000, "unit": "USD" }
   ],
   "watchlist_mentions": [
-    { "ticker": "AMD", "note": "Fell 2.36% to $459.61 with the semis, on discount-rate pressure rather than company news; a 30-year close back under 5.25% is what unwinds the group's derating.", "sentiment": "negative" },
-    { "ticker": "NVDA", "note": "Down roughly 1% as Anthropic's $35B six-year deal with Lambda left Nvidia as chip supplier, equity holder in both counterparties and lessee of the Texas data centre. The question raised is financing circularity, not demand.", "sentiment": "neutral" },
-    { "ticker": "BTC", "note": "Fell below $77,000 to about $76,762 on the strikes, with roughly $115M of long liquidations inside an hour. The $76,661 support is now at the price rather than below it.", "sentiment": "negative" },
-    { "ticker": "GC=F", "note": "Gold fell 1.86% to $4,358.74, a third consecutive decline into an escalating conflict — the clearest sign the tape is pricing inflation rather than fear.", "sentiment": "negative" },
-    { "ticker": "CL=F", "note": "WTI settled at $90.22, up 5.2% and its first close above $90 since July 23.", "sentiment": "positive" }
+    {
+      "ticker": "CL=F",
+      "note": "WTI settled at $90.22 (+5.2%), first close above $90 since July 23. Two supertanker strikes in two days; voluntary operator transit suspensions are the next escalation trigger worth watching.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Gold fell 1.86% to $4,358.74, a third consecutive decline into an escalating conflict — the clearest cross-asset signal that the tape is pricing inflation rather than fear.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Down roughly 1% as Anthropic's $35B six-year deal with Lambda left Nvidia as chip supplier, equity holder in both counterparties, and lessee of the Texas data centre. The question raised is financing circularity, not demand.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Fell 2.36% to $459.61 with the semis, on discount-rate pressure rather than company news; a 30-year close back under 5.25% is what unwinds the group's derating.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Fell to ~$76,762 on the strikes, with roughly $115M of long liquidations inside an hour. The $76,661 support is now at the price rather than below it — a sustained close under that level would be the next technical break.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "DELL",
+      "note": "Jumped ~9% after hours after beating on both lines and raising fiscal 2027 guidance on AI server demand. Opens Wednesday as a tell on market appetite for AI-infrastructure beats in a rising-rate tape.",
+      "sentiment": "positive"
+    }
   ],
   "trade_setups": [
     {
       "asset": "30Y Treasury",
-      "thesis": "The long bond has traded above 5.30% in two separate sessions and closed there in neither, settling at 5.28% today. Treasury long-dated buyback operations beginning September 9 are the offsetting structural bid against the oil-inflation input.",
-      "entry": "A daily close above 5.30% marks the level crossed rather than tagged; a close back under 5.15% says the buyback bid is absorbing supply at the long end",
+      "thesis": "The long bond has been above 5.30% intraday twice and closed at 5.28% in both sessions, refusing to confirm the level. Treasury buyback operations beginning September 9 are the structural bid against the oil-inflation input. The 30Y closing above 5.30% marks the regime breach that the framework requires.",
+      "entry": "A daily close above 5.30% is the trigger; a close back under 5.15% says the buyback bid is absorbing supply at the long end",
       "invalidation": "Brent back under $90 or a payrolls print under 150K removes the inflation impulse driving the move",
       "horizon": "This week, with the September 4 jobs report the decisive test"
     },
     {
       "asset": "Brent crude",
-      "thesis": "Two supertankers have been hit and US forces have struck the mine-laying capability behind it, yet crude is still transiting Hormuz. The distinction that matters is between headline escalation and measured supply disruption, and transit behaviour marks it, not strike counts.",
+      "thesis": "Two supertankers have been hit and US forces have struck the mine-laying capability behind it, yet crude is still transiting Hormuz. The distinction that matters is between headline escalation and measured supply disruption — transit behaviour, not strike counts, marks the difference.",
       "entry": "Voluntary transit suspensions by major operators put $100 in play; a return under $90 says the premium is decaying on July's schedule",
-      "invalidation": "A confirmed halt in hostilities or Gulf mediation collapses the premium built over three sessions",
-      "horizon": "Days"
+      "invalidation": "A confirmed halt in hostilities or Gulf mediation collapses the risk premium built over three sessions",
+      "horizon": "Days; Iran's response cadence has tracked 24-36 hour cycles"
     },
     {
       "asset": "S&P 500",
-      "thesis": "The index lost 7,650 in one afternoon after absorbing nine sessions of the same rate move, and the adjustment came from the long-duration end — Nasdaq -1.03% and Russell -1.23% against the Dow's -0.79%. The VIX ended above 16 after closing under 15 on August 31, so an event premium now exists where there was none.",
+      "thesis": "The index lost 7,650 in one afternoon after absorbing nine sessions of the same rate move, and the adjustment came from the long-duration end — Nasdaq -1.03% and Russell -1.23% against the Dow's -0.79%. The VIX ended at 16.0 after closing under 15 on August 31, so an event premium now exists where there was none.",
       "entry": "Holding 7,580 through Thursday says one afternoon completed the adjustment; losing 7,550 says multiples are still repricing into payrolls",
-      "invalidation": "A reclaim of 7,700 on softer oil returns the tape to its pre-strike range",
+      "invalidation": "A reclaim of 7,700 on softer oil or de-escalation news returns the tape to its pre-strike range",
       "horizon": "Through Friday's jobs report"
     }
   ],
