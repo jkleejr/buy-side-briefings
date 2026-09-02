@@ -1,6 +1,5 @@
 import YahooFinance from "yahoo-finance2";
 import { formatPct } from "@/lib/utils";
-import SourceLine, { YAHOO, DELAYED } from "./source-line";
 
 const yahooFinance = new YahooFinance({
   suppressNotices: ["yahooSurvey", "ripHistorical"],
@@ -58,7 +57,6 @@ export default async function GlobalMarketsPanel() {
   }
 
   return (
-    <div>
     <section className="border border-[var(--border)] bg-[var(--panel)]">
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {REGIONS.map((region) => (
@@ -101,7 +99,5 @@ export default async function GlobalMarketsPanel() {
         ))}
       </div>
     </section>
-    <SourceLine left={YAHOO} right={DELAYED} />
-    </div>
   );
 }
