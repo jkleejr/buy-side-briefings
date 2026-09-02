@@ -1,5 +1,6 @@
 import GlobalMarketsPanel from "@/components/global-markets-panel";
 import LevelsChart from "@/components/levels-chart-lazy";
+import SourceLine, { YAHOO, DELAYED } from "@/components/source-line";
 import Panel from "@/components/panel";
 
 // One chart per region rather than one per index — the page's argument is that
@@ -45,7 +46,7 @@ export default function GlobalPage() {
           green.
         </p>
         <div className="border-t border-[var(--border)] p-2">
-          <LevelsChart symbols={ASIA} labels={LABELS} />
+          <LevelsChart symbols={ASIA} labels={LABELS} sourceLine={false} />
         </div>
       </Panel>
 
@@ -57,10 +58,12 @@ export default function GlobalPage() {
           sensitivity; FTSE for energy and commodity exposure.
         </p>
         <div className="border-t border-[var(--border)] p-2">
-          <LevelsChart symbols={EUROPE} labels={LABELS} />
+          <LevelsChart symbols={EUROPE} labels={LABELS} sourceLine={false} />
         </div>
       </Panel>
 
+      {/* One source line for the three charts, under the last frame. */}
+      <div>
       <Panel title="Emerging Markets">
         <p className="p-2 font-mono text-[11px] leading-snug text-[var(--dim)]">
           Nifty (India) is the biggest EM growth story — increasingly important as
@@ -69,9 +72,11 @@ export default function GlobalPage() {
           as the dollar weakened.
         </p>
         <div className="border-t border-[var(--border)] p-2">
-          <LevelsChart symbols={EM} labels={LABELS} />
+          <LevelsChart symbols={EM} labels={LABELS} sourceLine={false} />
         </div>
       </Panel>
+      <SourceLine left={YAHOO} right={DELAYED} />
+      </div>
 
     </div>
   );

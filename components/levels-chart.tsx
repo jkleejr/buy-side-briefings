@@ -275,6 +275,13 @@ type Props = {
    */
   defaultVolume?: boolean;
   defaultLevels?: boolean;
+  /**
+   * Whether the chart prints its own source/delay line underneath. On by
+   * default for a chart standing on its own, like the homepage's. Off when the
+   * chart sits inside a Panel — the line would land inside the frame, and the
+   * page prints a SourceLine under the frame instead.
+   */
+  sourceLine?: boolean;
 };
 
 export default function LevelsChart({
@@ -285,6 +292,7 @@ export default function LevelsChart({
   labels,
   defaultVolume = false,
   defaultLevels = false,
+  sourceLine = true,
 }: Props) {
   const { H, padR: PAD_R_LABELS, gap: LABEL_GAP, labelSize, subSize } = SIZES[variant];
   const compact = variant === "compact";
@@ -2153,7 +2161,7 @@ export default function LevelsChart({
         )}
       </div>
 
-      {!compact && (
+      {!compact && sourceLine && (
       <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 px-1 pt-2 font-mono text-[9px] normal-case tracking-normal text-[var(--faint)]">
         {/* Where the numbers come from — the symbol is named because "Gold"
             could reasonably mean spot, GLD or futures. */}

@@ -1,4 +1,5 @@
 import LevelsChart from "@/components/levels-chart-lazy";
+import SourceLine, { YAHOO, DELAYED } from "@/components/source-line";
 import MacroSections from "@/components/macro-sections";
 import Panel from "@/components/panel";
 
@@ -34,11 +35,14 @@ export default function MacroPage() {
           All four carry real OHLC from Yahoo. Only TLT reports traded volume —
           yields and the dollar index are calculated, so every bar reads zero
           and the chart disables its own Vol button for them. */}
-      <Panel title="Rates, bonds & the dollar">
-        <div className="p-2">
-          <LevelsChart symbols={MACRO_SYMBOLS} labels={MACRO_LABELS} />
-        </div>
-      </Panel>
+      <div>
+        <Panel title="Rates, bonds & the dollar">
+          <div className="p-2">
+            <LevelsChart symbols={MACRO_SYMBOLS} labels={MACRO_LABELS} sourceLine={false} />
+          </div>
+        </Panel>
+        <SourceLine left={YAHOO} right={DELAYED} />
+      </div>
 
     </div>
   );
