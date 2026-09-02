@@ -146,7 +146,7 @@ const WINDOW_LABEL: Record<string, string> = {
 };
 
 /**
- * The briefing title: "Monday, July 20, 2026 · Night".
+ * The briefing title: "Monday, July 20, 2026 - Night".
  * Used for the heading, the <title> and the share card, as well as list rows.
  * Every briefing in the archive is a markets one, so the old "Markets
  * Briefing · " prefix was pure repetition pushing the date rightward.
@@ -156,12 +156,12 @@ export function formatBriefingDateLine(b: {
   window?: string | null;
 }): string {
   const d = new Date(`${b.date}T12:00:00Z`);
-  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
+  const win = b.window ? ` - ${windowLabel(b.window)}` : "";
   return `${FMT_WEEKDAY_LONG_UTC.format(d)}, ${FMT_DATE_LONG_UTC.format(d)}${win}`;
 }
 
 /**
- * Compact variant for narrow screens: "Wed, Jun 10 · Night". The routine is
+ * Compact variant for narrow screens: "Wed, Jun 10 - Night". The routine is
  * already shown as a code chip next to the title, so repeating "Markets
  * Briefing · " only pushes the date off-screen.
  */
@@ -170,7 +170,7 @@ export function formatBriefingTitleShort(b: {
   window?: string | null;
 }): string {
   const d = new Date(`${b.date}T12:00:00Z`);
-  const win = b.window ? ` · ${windowLabel(b.window)}` : "";
+  const win = b.window ? ` - ${windowLabel(b.window)}` : "";
   return `${FMT_DATE_SHORT_UTC.format(d)}${win}`;
 }
 
