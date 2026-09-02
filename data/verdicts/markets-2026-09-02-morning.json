@@ -1,0 +1,108 @@
+{
+  "routine": "markets",
+  "date": "2026-09-02",
+  "window": "morning",
+  "generated_at": "2026-09-02T12:04:24Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Government bond selloff turns global as Japan's 10-year hits a level unseen since 1996",
+    "label": "Synchronized sovereign repricing: JGB 10Y at 3% (first since 1996) with the 5Y at a record 2.26%, 30Y gilt 5.89% (highest since May 1998), Bund 10Y 3.36%, UST 10Y 4.81% (highest since November 2023) and 30Y 5.286%. Brent $94.86 after US drones struck anchored Iranian tankers across ~100 targets; Iran fired on a US base in Jordan. VIX 16.34 (+9.5%), gold -1.86% Tuesday, DXY ~99.5. Futures lower into the 8:15 ADP print (consensus ~47K).",
+    "rationale_short": "The oil-to-discount-rate channel identified Tuesday held, but its scope changed: duration is being sold in four major sovereign markets at once, which reprices the price of duration itself rather than one country's fiscal position. Two inputs are stacking — the barrel supplying an inflation impulse that argues for tighter policy everywhere, and roughly $132 billion of long-dated hyperscaler issuance landing in the maturity buckets sovereigns are trying to fund. Confirmation is still absent: the 30-year has traded above 5.30% twice and closed there neither time, and futures price the September hike at 66% against 26% on Kalshi. A 30-year close above 5.30% or Brent through $100 extends the frame; a 10-year back under 4.70% with the S&P reclaiming 7,700 dissolves it.",
+    "supporting_data": [
+      {
+        "label": "JGB 10Y reached 3% for the first time since 1996 and the 5Y hit a record 2.26%; 10Y gilts rose 11bps to 5.25% with the 30Y at 5.89%, highest since May 1998, and the Bund 10Y touched 3.36%",
+        "url": "https://www.investing.com/news/economy-news/global-bond-rout-deepens-as-japan-yield-hits-key-threshold-4883562"
+      },
+      {
+        "label": "US 10-year Treasury yield touched 4.81%, its highest since November 2023; the 30-year rose 2bps to 5.286%",
+        "url": "https://www.cnbc.com/2026/09/02/bond-yields-treasurys-inflation.html"
+      },
+      {
+        "label": "Fed funds futures price September hike odds above 66% while Kalshi prices a hold at 73% and a hike at 26% — an unusually wide split into the September 16 meeting",
+        "url": "https://cryptobriefing.com/fed-rate-hike-probability-september-2026/"
+      },
+      {
+        "label": "US drones struck anchored Iranian government tankers across roughly 100 targets under a new 'tanker for tanker' policy — the first tanker strike in retaliation rather than blockade enforcement",
+        "url": "https://www.axios.com/2026/09/02/iran-tankers-hormuz-attacks-oil"
+      },
+      {
+        "label": "Hyperscalers issued roughly $132 billion of bonds through July 2026 against $109 billion in all of 2025 and $20 billion in 2024, weighted to maturities of five years and longer",
+        "url": "https://insight.factset.com/hyperscalers-tap-external-financing-as-ai-capex-outruns-cash-flow"
+      },
+      {
+        "label": "Dell Q2 revenue a record $47.0B (+58%) with EPS $7.04 vs $4.87 consensus, FY27 revenue guidance raised $25B to ~$192B, and AI server backlog at a record $95B",
+        "url": "https://www.cnbc.com/2026/09/01/dell-q2-earnings-report-2027.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7631.47,  "change_pct": -0.71, "as_of": "2026-09-01T20:00:00Z" },
+    "nasdaq": { "level": 26099.77, "change_pct": -1.03, "as_of": "2026-09-01T20:00:00Z" },
+    "vix":    { "level": 16.34,    "change_pct": 9.52,  "as_of": "2026-09-02T11:30:00Z" },
+    "ust10y": { "level": 4.81,     "change_bps": 2,     "as_of": "2026-09-02T11:30:00Z" },
+    "dxy":    { "level": 99.5,     "change_pct": 0.0,   "as_of": "2026-09-02T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.286, "trigger_above": 5.30,  "unit": "%" },
+    { "name": "10Y Yield",   "value": 4.81,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "Brent Crude", "value": 94.86, "trigger_above": 85.0,  "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 76988, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CL=F",
+      "note": "Brent at $94.86 has held above $94 through the escalation, supplying the inflation impulse behind the global yield move. US drones hit the engine rooms of anchored Iranian government tankers, which targets export capacity directly; loadings and voluntary transit suspensions, not strike counts, are what would convert this into a measured supply disruption.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Gold fell 1.86% to $4,358.74 for a third consecutive session while US forces struck Iranian tankers — the cross-asset tell that the tape is pricing inflation and bond supply rather than fear.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "DX-Y.NYB",
+      "note": "The dollar held near 99.5 and barely moved on the escalation, consistent with gold: no haven bid is being paid on geopolitical headlines while the rate path is repricing.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "Traded $76,988 (-1.6%) after opening at $77,395.89 and reaching $76,597, leaving the $76,661 support inside the day's range for a second session.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "^VIX",
+      "note": "At 16.34, up 9.52%, against a 2026 low of 14.13 set on August 31 — an event premium now exists where there was none two sessions ago. Reported as data, not as a regime trigger.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "^GSPC",
+      "note": "Closed at 7,631.47, below the 7,650 level flagged Tuesday, with futures lower pre-open and the Nasdaq leading again. 7,580-7,700 is the range that holds if one afternoon completed the adjustment.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y Treasury",
+      "thesis": "The long bond has traded above 5.30% in two separate sessions and closed there in neither, sitting at 5.286%. What is different now is that the bid it would need is global: gilts at 5.89% and JGBs at 3% are competing for the same duration buyers, and Treasury's long-dated buyback operations do not begin until September 9.",
+      "entry": "A daily close above 5.30% marks the level crossed rather than tagged; a close under 5.15% says the buyback bid is being anticipated",
+      "invalidation": "Brent back under $90 or a payrolls print under 150K removes the inflation impulse driving the move",
+      "horizon": "This week, with Friday's jobs report the decisive test"
+    },
+    {
+      "asset": "September FOMC pricing",
+      "thesis": "Fed funds futures price a hike at above 66% while Kalshi prices one at 26% and a hold at 73%. A gap that wide between the two venues is a dispersion that resolves rather than persists, and this week's labour data is what resolves it. ADP is due at 8:15 AM ET with consensus near 47,000 against 44,000 in July, the weakest in six months.",
+      "entry": "A print under 30,000 alongside an unchanged inflation impulse is the stagflation combination in its clearest form; above 70,000 closes the gap the hawkish way",
+      "invalidation": "A Beige Book showing districts absorbing rather than passing through oil costs weakens the hawkish side of the split",
+      "horizon": "Through Friday's August jobs report"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "The strike pattern changed from escort and mine-laying capability to export capacity: US drones hit the engine rooms of anchored Iranian government tankers under a stated 'tanker for tanker' policy. Crude has nonetheless held near $94.86 rather than extending, because transit through Hormuz has not stopped.",
+      "entry": "Iranian loadings and voluntary transit suspensions by major operators put $100 in play; a return under $90 says the premium is decaying on July's schedule",
+      "invalidation": "A confirmed halt in hostilities or a return to the June deal framework collapses the risk premium built over four sessions",
+      "horizon": "Days; the exchange has run on 24-36 hour cycles"
+    }
+  ],
+  "bear_case": "The read treats a common input as a regime change. Four sovereign markets selling off together is what happens when one global variable — the barrel — moves, not evidence that the price of duration has been permanently re-rated, and September issuance windows reliably thin the bid in exactly this week of the year. The hawkish pricing is also thinner than it looks: futures at 66% sit against Kalshi's 73% hold, and a labour market whose openings were revised down 177,000 will not sustain that pricing through a soft payrolls print. If the 10-year closes back under 4.70% and the S&P reclaims 7,700, this read no longer holds.",
+  "body_mdx": "data/briefings/markets/2026-09-02-morning.mdx"
+}
