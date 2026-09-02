@@ -284,7 +284,7 @@ function VerdictHead({
         </span>
       </div>
       {headline && (
-        <p className="mt-3 text-[21px] font-semibold leading-[1.3] tracking-[-0.005em] text-[var(--foreground)] [text-wrap:balance]">
+        <p className="mt-3 text-[21px] font-semibold leading-[1.3] tracking-[-0.005em] text-[var(--foreground)]">
           {headline}
         </p>
       )}
