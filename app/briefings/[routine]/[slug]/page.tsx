@@ -284,12 +284,12 @@ function VerdictHead({
         </span>
       </div>
       {headline && (
-        <p className="mt-3 max-w-[40ch] text-[21px] font-semibold leading-[1.3] tracking-[-0.005em] text-[var(--foreground)] [text-wrap:balance]">
+        <p className="mt-3 text-[21px] font-semibold leading-[1.3] tracking-[-0.005em] text-[var(--foreground)] [text-wrap:balance]">
           {headline}
         </p>
       )}
       {bullets.length > 0 && (
-        <ul className="mt-3 max-w-[62ch] list-disc space-y-1.5 pl-5">
+        <ul className="mt-3 list-disc space-y-1.5 pl-5">
           {bullets.map((b, i) => (
             <li key={i} className="text-[15.5px] leading-[1.5] text-[var(--ink-2)]">
               {b}
