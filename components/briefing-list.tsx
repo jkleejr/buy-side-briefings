@@ -46,7 +46,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
             >
               {/* Date line, then what the briefing is actually about. The
                   headline is the point of the row — the date only says when. */}
-              <span className="flex min-w-0 flex-1 flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-2">
+              <span className="flex min-w-0 flex-1 flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-2 sm:pr-5">
                 <span className="truncate text-[var(--foreground)] sm:hidden">
                   {formatBriefingTitleShort(b)}
                 </span>
