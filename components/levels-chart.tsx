@@ -2097,13 +2097,19 @@ export default function LevelsChart({
       </div>
 
       {!compact && (
-      <div className="flex flex-wrap gap-4 px-1 pt-2 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)]">
-        {/* Where the numbers come from and how fresh they are — the symbol is
-            named because "Gold" could reasonably mean spot, GLD or futures. */}
-        <span className="basis-full text-[var(--faint)] normal-case tracking-normal">
+      <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 px-1 pt-2 font-mono text-[9px] normal-case tracking-normal text-[var(--faint)]">
+        {/* Where the numbers come from — the symbol is named because "Gold"
+            could reasonably mean spot, GLD or futures. */}
+        <span>
           Source: Yahoo Finance · {symbol} · last bar {lastBarLabel}
-          {" · "}quotes may be delayed
         </span>
+        {/* How fresh they are, on the right. Yahoo's free feed lags the
+            exchange by ~15 minutes for stocks, ETFs, indices and futures during
+            the session. Crypto venues don't charge for the feed, so a -USD pair
+            is close to current and gets no such note. */}
+        {!symbol.endsWith("-USD") && (
+          <span className="whitespace-nowrap">Quotes delayed ~15 min</span>
+        )}
       </div>
       )}
     </div>
