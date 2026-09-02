@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-09-01",
+  "window": "night",
+  "generated_at": "2026-09-02T00:35:00Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "US strikes on Iran push oil to a six-week high and finally crack the stock market",
+    "label": "Brent settled $94.65 (+4.6%) and WTI $90.22 (+5.2%) after CENTCOM struck IRGC sites at noon ET. The S&P 500 lost 7,650 to close at 7,631.47 (-0.71%), Nasdaq -1.03%, Russell 2000 -1.23%. ISM Manufacturing 54.6 with the Prices Index unchanged at 71.1; JOLTS 7.271M with June revised down 177,000; September hike odds 68%; 10Y 4.79%, 30Y 5.28%; gold -1.86%.",
+    "rationale_short": "Oil is transmitting to equities through the discount rate rather than the earnings line: ISM showed demand cooling to 53.7 new orders while input prices held at 71.1, so a supply shock now argues for tighter policy instead of easier. Equities absorbed nine sessions of that repricing without flinching and then took it in one afternoon, led from the long-duration end. A Brent close back under $90 or a 30-year close under 5.15% dissolves the frame; Brent above $100 with the 30-year settling above 5.30% extends it.",
+    "supporting_data": [
+      {
+        "label": "CENTCOM began striking IRGC air defence, radar, naval and mine-laying sites in southern Iran at noon ET, after two supertankers were hit near the Strait of Hormuz",
+        "url": "https://www.washingtontimes.com/news/2026/sep/1/us-strikes-irgc-targets-iran-attempted-attacks-vessels-strait-hormuz/"
+      },
+      {
+        "label": "Brent settled $4.16 higher at $94.65 (+4.6%), highest since July 24; WTI settled up $4.46 at $90.22 (+5.2%), highest since July 23",
+        "url": "https://okenergytoday.com/2026/09/u-s-launches-more-strikes-and-oil-rose-nearly-5/"
+      },
+      {
+        "label": "September hike odds reached 68% on CME FedWatch, up from roughly 36% before Jackson Hole",
+        "url": "https://www.techtimes.com/articles/326153/20260901/fed-rate-hike-68-odds-opens-five-day-window-variable-rate-borrowers.htm"
+      },
+      {
+        "label": "ISM Manufacturing 54.6 versus 55.6 in July; Prices Index unchanged at 71.1 while New Orders fell three points to 53.7",
+        "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-6-august-2026-ism-manufacturing-pmi-report-302865127.html"
+      },
+      {
+        "label": "JOLTS openings 7.271M in July, below the 7.33-7.36M consensus, with June revised down 177,000 to 7.182M",
+        "url": "https://qz.com/us-job-openings-july-2026-jolts-report-090126"
+      },
+      {
+        "label": "Anthropic signed a six-year, $35B cloud deal with Nvidia-backed Lambda in which Nvidia holds the lease on the Texas data centre",
+        "url": "https://finance.yahoo.com/technology/ai/articles/anthropics-35-billion-cloud-deal-203101727.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7631.47, "change_pct": -0.71, "as_of": "2026-09-01T20:00:00Z" },
+    "nasdaq": { "level": 26099.77, "change_pct": -1.03, "as_of": "2026-09-01T20:00:00Z" },
+    "vix": { "level": 16.0, "change_pct": 7.2, "as_of": "2026-09-01T20:00:00Z" },
+    "ust10y": { "level": 4.79, "change_bps": 4, "as_of": "2026-09-01T20:00:00Z" },
+    "dxy": { "level": 99.5, "change_pct": 0.0, "as_of": "2026-09-01T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.28, "trigger_above": 5.30, "unit": "%" },
+    { "name": "Brent Crude", "value": 94.65, "trigger_above": 100.0, "unit": "USD" },
+    { "name": "WTI Crude", "value": 90.22, "trigger_above": 95.0, "unit": "USD" },
+    { "name": "SPX vs 7,550", "value": 7631.47, "trigger_below": 7550, "unit": "index" },
+    { "name": "BTC Gate 2", "value": 76762, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AMD", "note": "Fell 2.36% to $459.61 with the semis, on discount-rate pressure rather than company news; a 30-year close back under 5.25% is what unwinds the group's derating.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "Down roughly 1% as Anthropic's $35B six-year deal with Lambda left Nvidia as chip supplier, equity holder in both counterparties and lessee of the Texas data centre. The question raised is financing circularity, not demand.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Fell below $77,000 to about $76,762 on the strikes, with roughly $115M of long liquidations inside an hour. The $76,661 support is now at the price rather than below it.", "sentiment": "negative" },
+    { "ticker": "GC=F", "note": "Gold fell 1.86% to $4,358.74, a third consecutive decline into an escalating conflict — the clearest sign the tape is pricing inflation rather than fear.", "sentiment": "negative" },
+    { "ticker": "CL=F", "note": "WTI settled at $90.22, up 5.2% and its first close above $90 since July 23.", "sentiment": "positive" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y Treasury",
+      "thesis": "The long bond has traded above 5.30% in two separate sessions and closed there in neither, settling at 5.28% today. Treasury long-dated buyback operations beginning September 9 are the offsetting structural bid against the oil-inflation input.",
+      "entry": "A daily close above 5.30% marks the level crossed rather than tagged; a close back under 5.15% says the buyback bid is absorbing supply at the long end",
+      "invalidation": "Brent back under $90 or a payrolls print under 150K removes the inflation impulse driving the move",
+      "horizon": "This week, with the September 4 jobs report the decisive test"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Two supertankers have been hit and US forces have struck the mine-laying capability behind it, yet crude is still transiting Hormuz. The distinction that matters is between headline escalation and measured supply disruption, and transit behaviour marks it, not strike counts.",
+      "entry": "Voluntary transit suspensions by major operators put $100 in play; a return under $90 says the premium is decaying on July's schedule",
+      "invalidation": "A confirmed halt in hostilities or Gulf mediation collapses the premium built over three sessions",
+      "horizon": "Days"
+    },
+    {
+      "asset": "S&P 500",
+      "thesis": "The index lost 7,650 in one afternoon after absorbing nine sessions of the same rate move, and the adjustment came from the long-duration end — Nasdaq -1.03% and Russell -1.23% against the Dow's -0.79%. The VIX ended above 16 after closing under 15 on August 31, so an event premium now exists where there was none.",
+      "entry": "Holding 7,580 through Thursday says one afternoon completed the adjustment; losing 7,550 says multiples are still repricing into payrolls",
+      "invalidation": "A reclaim of 7,700 on softer oil returns the tape to its pre-strike range",
+      "horizon": "Through Friday's jobs report"
+    }
+  ],
+  "bear_case": "The read treats a war-risk premium as an inflation regime. Brent at $94.65 is only its highest since July 24 and WTI at $90.22 its highest since July 23 — a retest of summer levels, not a breakout, and every escalation premium this year has decayed within days of the last strike. The growth evidence cuts against the read as well: ISM at 54.6 is the eighth consecutive month of expansion, and a labour market whose openings were revised down 177,000 will not sustain 68% hike odds through a soft payrolls print. If Brent closes back under $90 and the S&P reclaims 7,700, this read no longer holds.",
+  "body_mdx": "data/briefings/markets/2026-09-01-night.mdx"
+}

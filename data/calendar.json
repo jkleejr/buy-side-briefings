@@ -1,20 +1,8 @@
 {
   "events": [
     {
-      "date": "2026-09-01",
-      "label": "ISM Manufacturing (10:00 AM ET) + JOLTS (9:00 AM ET) \u2014 consensus 55.2 and 7.330M",
-      "kind": "MACRO",
-      "time_et": "9:00 AM",
-      "tickers": [
-        "SPY",
-        "TLT",
-        "IWM"
-      ],
-      "note": "Consensus ISM 55.2 vs 55.6 in July; JOLTS 7.330M vs 7.359M prior. Read against Monday's Chicago PMI at 47.1 \u2014 a print near 55 makes Chicago a regional outlier, sub-50 makes it the national signal. Prices-paid is where the Brent pass-through shows up first."
-    },
-    {
       "date": "2026-09-02",
-      "label": "ADP private payrolls \u2014 first labour read of the week, consensus ~400K",
+      "label": "ADP private payrolls (7:15 AM ET) — consensus 48K vs 44K prior; Fed Beige Book and EIA inventories same day",
       "kind": "MACRO",
       "tickers": [
         "SPY",
@@ -25,19 +13,19 @@
     },
     {
       "date": "2026-09-03",
-      "label": "ISM Services + weekly jobless claims \u2014 services is where oil pass-through lands",
+      "label": "ISM Services (10:00 AM ET) — consensus 53.7 vs 53.6 prior; the prices component is the tell",
       "kind": "MACRO",
       "time_et": "10:00 AM",
       "tickers": [
         "SPY",
-        "TLT",
-        "QQQ"
+        "QQQ",
+        "XLE"
       ],
-      "note": "Services is roughly two-thirds of the economy and the channel through which Brent above $90 reaches core inflation. Claims test whether the factory weakness in Chicago PMI has reached hiring."
+      "note": "Services is two-thirds of the economy and where a $94 barrel reaches consumer prices first. A services prices component above 70 makes the manufacturing Prices Index at 71.1 a trend rather than a sector quirk."
     },
     {
       "date": "2026-09-04",
-      "label": "August jobs report (BLS, 8:30 AM ET) \u2014 first post-Warsh payrolls print; September FOMC gate",
+      "label": "August jobs report (BLS, 8:30 AM ET) — first post-Warsh payrolls print; September FOMC gate",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": [
@@ -47,33 +35,33 @@
         "QQQ",
         "IWM"
       ],
-      "note": "The week's binary. Above 200K with AHE over 0.3% takes September hike odds past 70% and pressures the 30Y through the 5.30% trigger; under 150K resets the frame built by Warsh and the oil shock. Baseline entering the print is 66.1% hike odds."
+      "note": "Last major labour print before the Sep 15-16 FOMC. Above 200K with average hourly earnings over 0.3% takes hike odds past 70% and pressures a 30Y close above 5.30%; under 150K sets the revised-down openings data against an ISM Prices Index stuck at 71.1."
     },
     {
       "date": "2026-09-05",
-      "label": "AVGO Q3 FY2026 earnings (est.) \u2014 through $380 structural support; VMware + AI concentration dual overhang",
+      "label": "AVGO Q3 FY2026 earnings (est.) — through $380 structural support; VMware + AI concentration dual overhang",
       "kind": "EARNINGS",
       "tickers": [
         "AVGO",
         "NVDA",
         "AMD"
       ],
-      "note": "Updated Aug 19 night: AVGO fell 5% to ~$362 on August 19, breaking through $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries per Aug 14 disclosure) + 72% AI revenue concentration (~72% of next-quarter sequential growth) create dual overhang. At ~65x trailing P/E, any miss or margin compression compounds. Q3 FY2026 results (est. September 4\u20135) are the first public accounting of both: VMware remediation costs in financial guidance, enterprise customer commentary on the incident, and AI revenue breadth. $380 is now resistance; $340\u2013350 is the next structured support zone. Flip: recovery above $380 on volume, or formal VMware incident-containment statement before earnings."
+      "note": "Updated Aug 19 night: AVGO fell 5% to ~$362 on August 19, breaking through $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries per Aug 14 disclosure) + 72% AI revenue concentration (~72% of next-quarter sequential growth) create dual overhang. At ~65x trailing P/E, any miss or margin compression compounds. Q3 FY2026 results (est. September 4–5) are the first public accounting of both: VMware remediation costs in financial guidance, enterprise customer commentary on the incident, and AI revenue breadth. $380 is now resistance; $340–350 is the next structured support zone. Flip: recovery above $380 on volume, or formal VMware incident-containment statement before earnings."
     },
     {
       "date": "2026-09-07",
-      "label": "Labor Day \u2014 US equity and bond markets closed",
+      "label": "Labor Day — US equity and bond markets closed",
       "kind": "HOLIDAY",
       "tickers": [
         "SPY",
         "QQQ",
         "BTC"
       ],
-      "note": "Cash markets shut for the session. Crypto and oil trade the weekend's Strait of Hormuz headlines unhedged, so a transit-suspension escalation over the long weekend gaps into Tuesday's open \u2014 eight days before the FOMC."
+      "note": "Cash markets shut for the session. Crypto and oil trade the weekend's Strait of Hormuz headlines unhedged, so a transit-suspension escalation over the long weekend gaps into Tuesday's open — eight days before the FOMC."
     },
     {
       "date": "2026-09-08",
-      "label": "Canada retaliatory tariffs effective \u2014 dairy, appliances, ag equipment, pulp, paper, electronics",
+      "label": "Canada retaliatory tariffs effective — dairy, appliances, ag equipment, pulp, paper, electronics",
       "kind": "GEO",
       "tickers": [
         "SPY",
@@ -81,11 +69,21 @@
         "XLI",
         "XLP"
       ],
-      "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech was hawkish \u2014 September hike odds rose to 59% from 33%. Warsh did not explicitly cite Canada tariff cost-push in the speech, leaving the tariff-inflation linkage as an open variable in the September 8-16 window. Tariffs arrive 4 days after the August jobs report (Sept 4) and 8 days before September 16 FOMC. With hike odds already at 59%, if hot jobs data and tariff cost-push both enter Fed communications between September 8 and 16, September hike odds above 65% are the two-variable scenario. DXY rose 0.4% to 99.50 on the Warsh hawkish signal \u2014 any tariff escalation that re-prices the dollar is the third input."
+      "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech was hawkish — September hike odds rose to 59% from 33%. Warsh did not explicitly cite Canada tariff cost-push in the speech, leaving the tariff-inflation linkage as an open variable in the September 8-16 window. Tariffs arrive 4 days after the August jobs report (Sept 4) and 8 days before September 16 FOMC. With hike odds already at 59%, if hot jobs data and tariff cost-push both enter Fed communications between September 8 and 16, September hike odds above 65% are the two-variable scenario. DXY rose 0.4% to 99.50 on the Warsh hawkish signal — any tariff escalation that re-prices the dollar is the third input."
+    },
+    {
+      "date": "2026-09-08",
+      "label": "Oracle Q1 FY2027 results — first large AI-capex print since the Anthropic-Lambda deal",
+      "kind": "OTHER",
+      "tickers": [
+        "ORCL",
+        "NVDA"
+      ],
+      "note": "Carries a planned $20B equity issuance to fund AI infrastructure alongside the print. Read-through to how the market is pricing debt- and equity-funded datacenter buildout after Nvidia turned lessor on the $35B Lambda-Anthropic contract."
     },
     {
       "date": "2026-09-09",
-      "label": "Bessent Treasury long-dated buyback ops begin \u2014 $4B+ per op, 10-20yr and 20-30yr bonds",
+      "label": "Bessent Treasury long-dated buyback ops begin — $4B+ per op, 10-20yr and 20-30yr bonds",
       "kind": "OTHER",
       "tickers": [
         "TLT",
@@ -97,7 +95,7 @@
     },
     {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) \u2014 September rate path; market prices 66.1% odds of a hike to 3.75-4.00%",
+      "label": "FOMC decision (Sep 15-16) — September rate path; market prices 68% odds of a hike",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -107,11 +105,11 @@
         "GLD",
         "BTC"
       ],
-      "note": "Updated Aug 31 morning: Four inputs now determine the vote. August jobs (Sept 4), Canada tariffs (Sept 8), Warsh communications Sept 8-16, and the Iran oil channel \u2014 US-Iran exchange on Aug 31 pushed Brent above $90; if sustained, it adds 20-30bps to headline CPI and enters Fed communications. September hike odds 57% on CME FedWatch (from 59% at Aug 28 close). 30Y at 5.21% on Aug 31, 9bps inside the 5.30% regime trigger; touched 5.31% intraday last week without a close confirmation. The Bessent buyback program starts September 9 with structural demand suppressing equilibrium 30Y yields by an estimated 10-15bps."
+      "note": "Updated Aug 31 morning: Four inputs now determine the vote. August jobs (Sept 4), Canada tariffs (Sept 8), Warsh communications Sept 8-16, and the Iran oil channel — US-Iran exchange on Aug 31 pushed Brent above $90; if sustained, it adds 20-30bps to headline CPI and enters Fed communications. September hike odds 57% on CME FedWatch (from 59% at Aug 28 close). 30Y at 5.21% on Aug 31, 9bps inside the 5.30% regime trigger; touched 5.31% intraday last week without a close confirmation. The Bessent buyback program starts September 9 with structural demand suppressing equilibrium 30Y yields by an estimated 10-15bps."
     },
     {
       "date": "2026-12-09",
-      "label": "SPCX 180-day IPO lock-up expiry (approx.) \u2014 terminal insider/early-investor float unlock",
+      "label": "SPCX 180-day IPO lock-up expiry (approx.) — terminal insider/early-investor float unlock",
       "kind": "OTHER",
       "tickers": [
         "SPCX"
@@ -120,7 +118,7 @@
     },
     {
       "date": "2027-01-01",
-      "label": "OpenAI IPO \u2014 target window H1 2027 after 2026 delay",
+      "label": "OpenAI IPO — target window H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": [
         "MSFT",
