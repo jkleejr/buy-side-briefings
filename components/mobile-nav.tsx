@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 type NavItem = { href: string; code: string; label: string; external?: boolean };
 
 export default function MobileNav({ items }: { items: NavItem[] }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   // Close menu on route change or escape key.
   useEffect(() => {
@@ -44,8 +46,20 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
             aria-label="Mobile navigation"
           >
             {items.map((item) => {
-              const cls =
-                "flex items-baseline gap-2 border-t border-[var(--border)] px-4 py-3 font-mono text-[13px] uppercase tracking-wider text-[var(--foreground)] first:border-t-0 hover:bg-[rgba(255,165,0,0.06)] hover:text-[var(--amber)]";
+              // Same active rule as the desktop nav, so the drawer marks the
+              // page you are on — including the homepage on a cold load. It
+              // used to mark nothing, and the only highlight a reader ever saw
+              // was hover.
+              const active = item.external
+                ? false
+                : item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
+              const cls = `flex items-baseline gap-2 border-t border-[var(--border)] px-4 py-3 font-mono text-[13px] uppercase tracking-wider first:border-t-0 hover:bg-[rgba(255,165,0,0.06)] hover:text-[var(--amber)] ${
+                active
+                  ? "border-l-2 border-l-[var(--amber)] font-semibold text-[var(--amber)]"
+                  : "border-l-2 border-l-transparent text-[var(--foreground)]"
+              }`;
               const inner = (
                 <>
                   <span className="text-[var(--amber-dim)]">{item.code}</span>
@@ -72,6 +86,7 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
                 <Link
                   key={item.href}
                   href={item.href}
+                  aria-current={active ? "page" : undefined}
                   onClick={() => setOpen(false)}
                   className={cls}
                 >
