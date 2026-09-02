@@ -347,34 +347,72 @@ export default function LevelsChart({
   // year-scale levels onto an intraday chart.
   const key = `${symbol}|${range}|${interval}`;
 
+  // Fetch once on mount or when the symbol/range/interval changes, then again
+  // every 60s while the tab is visible — the same cadence as the ticker strip,
+  // and the same 60s the /api/chart route caches for, so polling faster would
+  // only re-read the cache. A refresh that fails keeps the bars already on
+  // screen rather than replacing a chart with an error; only the first load
+  // reports one. The zoom is keyed on symbol|range|interval, not on the bars,
+  // so a refresh does not reset a reader's view.
   useEffect(() => {
     let cancelled = false;
-    fetch(
-      `/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}` +
-        `&interval=${interval}&warmup=1`,
-    )
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((j) => {
-        if (cancelled) return;
-        const data: ChartPoint[] = j?.data ?? [];
-        setLoaded({
-          key,
-          bars: data.length ? data : null,
-          visibleFrom: typeof j?.visibleFrom === "number" ? j.visibleFrom : 0,
-          error: data.length ? null : "No price history for this symbol and range.",
-        });
-      })
-      .catch(() => {
-        if (!cancelled)
+    let timer: ReturnType<typeof setInterval> | null = null;
+
+    const load = (refresh: boolean) => {
+      fetch(
+        `/api/chart?symbol=${encodeURIComponent(symbol)}&range=${range}` +
+          `&interval=${interval}&warmup=1`,
+        refresh ? { cache: "no-store" } : undefined,
+      )
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+        .then((j) => {
+          if (cancelled) return;
+          const data: ChartPoint[] = j?.data ?? [];
+          if (refresh && !data.length) return;
+          setLoaded({
+            key,
+            bars: data.length ? data : null,
+            visibleFrom: typeof j?.visibleFrom === "number" ? j.visibleFrom : 0,
+            error: data.length ? null : "No price history for this symbol and range.",
+          });
+        })
+        .catch(() => {
+          if (cancelled || refresh) return;
           setLoaded({
             key,
             bars: null,
             visibleFrom: 0,
             error: "Couldn't load price history. Try again shortly.",
           });
-      });
+        });
+    };
+
+    const start = () => {
+      if (timer) return;
+      timer = setInterval(() => load(true), 60_000);
+    };
+    const stop = () => {
+      if (timer) clearInterval(timer);
+      timer = null;
+    };
+    // A background tab stops polling; coming back fetches at once so the
+    // chart is current the moment it is looked at again.
+    const onVisibility = () => {
+      if (document.visibilityState === "visible") {
+        load(true);
+        start();
+      } else {
+        stop();
+      }
+    };
+
+    load(false);
+    if (document.visibilityState === "visible") start();
+    document.addEventListener("visibilitychange", onVisibility);
     return () => {
       cancelled = true;
+      stop();
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, [symbol, range, interval, key]);
 
