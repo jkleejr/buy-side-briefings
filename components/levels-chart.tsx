@@ -331,6 +331,25 @@ export default function LevelsChart({
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
+  // The height the chart last rendered at, so the loading and error states can
+  // hold the frame at that size while a new symbol or range is fetched. They
+  // were a fixed 240px against a ~460px chart, so every switch collapsed the
+  // panel by 200px and everything below it jumped up and back down. Starts
+  // null, so the very first load — with nothing to preserve — uses the small
+  // default; after that the frame never changes size on a switch.
+  const [heldHeight, setHeldHeight] = useState<number | null>(null);
+  useEffect(() => {
+    const el = svgRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([entry]) => {
+      const h = entry.contentRect.height;
+      if (h > 0) setHeldHeight(h);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  });
+  const placeholderHeight = heldHeight ?? (compact ? 150 : 240);
+
   // The fetched payload carries the symbol it belongs to, so switching symbols
   // reads as "loading" without synchronously clearing state inside the effect
   // (which triggers a cascading re-render — see react-hooks/set-state-in-effect).
@@ -1484,13 +1503,13 @@ export default function LevelsChart({
         )}
         {!bars && !error && (
           <div className="flex items-center justify-center font-mono text-[11px] text-[var(--faint)]"
-            style={{ height: compact ? 150 : 240 }}>
+            style={{ height: placeholderHeight }}>
             Loading {symbol}…
           </div>
         )}
         {error && (
           <div className="flex items-center justify-center px-4 text-center font-mono text-[11px] text-[var(--warn)]"
-            style={{ height: compact ? 150 : 240 }}>
+            style={{ height: placeholderHeight }}>
             {error}
           </div>
         )}
@@ -2128,7 +2147,7 @@ export default function LevelsChart({
 
         {bars && !analysis && (
           <div className="flex items-center justify-center px-4 text-center font-mono text-[11px] text-[var(--faint)]"
-            style={{ height: compact ? 150 : 240 }}>
+            style={{ height: placeholderHeight }}>
             Not enough history to derive levels for {symbol}.
           </div>
         )}
