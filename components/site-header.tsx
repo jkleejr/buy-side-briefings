@@ -31,7 +31,7 @@ export default function SiteHeader() {
             the wayfinding. The name lives in the aria-label, which is what a
             screen reader announces for the link.
 
-            The mark is the cash-stack photo (public/brand/cash-stack.png,
+            The mark is the pixel-style cash stack (public/brand/cash-stack.png,
             shipped at 4x of its 24px render with a light unsharp mask, and
             `unoptimized` so Next does not re-encode it at quality 75 — the
             optimizer pass is what made the mark look soft). `priority` so the
