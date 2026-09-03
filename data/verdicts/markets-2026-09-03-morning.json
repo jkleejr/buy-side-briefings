@@ -2,96 +2,102 @@
   "routine": "markets",
   "date": "2026-09-03",
   "window": "morning",
-  "generated_at": "2026-09-03T11:55:35Z",
+  "generated_at": "2026-09-03T12:04:04Z",
   "is_seed": false,
   "verdict": {
-    "code": "step_aside",
-    "emoji": "⏸️",
-    "headline": "August hiring slowed sharply, muddying the case for the Fed rate hike expected next week",
-    "label": "ADP private payrolls 38,000 in August (47,000 expected), slowest since January; manufacturing shed 17,000 jobs. S&P 500 futures flat to -0.05% with prior close 7,666.60 (+0.46%); 10Y Treasury ~4.79% (eased from 4.81% on ADP miss); Brent ~$94.82; DXY 99.58; VIX 16.81 (+2.88%). September Fed hike odds ~62% (CME FedWatch) even after the miss. August jobs report (NFP) due Friday September 4 at 8:30 AM ET.",
-    "conviction": "moderate",
-    "horizon": "Through Friday's jobs report",
-    "rationale_short": "Yesterday's ADP report showed 38,000 private jobs added in August — the fewest since January, below July's 46,000 and the 47,000 forecast, with manufacturing alone shedding 17,000. That reading sits in direct conflict with the inflation story that has been pushing September rate hike odds toward 62% since Fed Chair Kevin Warsh signaled a hawkish tilt at Jackson Hole. Oil near $95 and the 10-year Treasury yield at its highest level since November 2023 argue for higher rates; a labor market growing at 38,000 jobs a month argues for pausing. These two signals cannot both be fully correct at once. The S&P 500 recovered 0.46% on Wednesday to 7,666 and futures are nearly flat this morning, which reflects the market's uncertainty rather than a clear view. The data that resolves the standoff arrives tomorrow at 8:30 AM ET: August payrolls below 100,000 would likely drain most of the hike pricing and give equities room; a print above 175,000 would confirm the hawkish setup and push long-dated yields higher. Today's ISM Services at 10:00 AM ET and weekly jobless claims at 8:30 AM are secondary inputs. Neither adding new long exposure nor pressing the short side is well supported by the evidence before that print.",
+    "headline": "Software took the AI bid before the bell while two hardware beats were sold",
+    "label": "Snowflake +24% pre-market on product revenue of $1.49B (+37%) and a raised $6.07B full-year guide; Broadcom -2.5% and Hewlett Packard Enterprise -3% despite beats, on a $230M Q4 guidance shortfall and a beat-and-raise respectively. 10Y 4.784% off Wednesday's 4.818% high, DXY under 99.50, VIX 15.49 (-5.2%), December gold $4,470.70, Brent $95.25 (-0.40%). Index futures within 0.1% of flat. September hike odds still 62-66%. August payrolls Friday at 8:30 AM ET.",
+    "rationale_short": "The market has narrowed what it pays for inside the AI trade: consumption already in reported revenue rather than capex guided forward. Snowflake's third consecutive quarter of product-revenue acceleration drew a 24% bid and carried Datadog, ServiceNow and Salesforce with it, while Broadcom's 221% AI semiconductor growth and Hewlett Packard Enterprise's beat-and-raise were both sold. The enabling condition is the long end pausing — the 10-year at 4.784% and the dollar through 99.50 — which is what lets the highest-duration equity on the tape re-rate first. That same duration makes it the first thing at risk: a payrolls print above 150,000 tomorrow that puts the 10-year through 4.818% would take back more from software than from semis.",
     "supporting_data": [
       {
-        "label": "ADP private payrolls rose 38,000 in August, the slowest since January and below the 47,000 consensus, with manufacturing shedding 17,000 jobs and medium-sized businesses adding zero",
-        "url": "https://mediacenter.adp.com/2026-09-02-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-38,000-Jobs-in-August"
+        "label": "Snowflake product revenue $1.49B, up 37% and a third consecutive quarter of acceleration; full-year product guide raised to $6.07B (+36%), non-GAAP operating margin 15% with the full-year guide to 14.5% from 13.5%, net revenue retention 126%, RPO $9B (+30%)",
+        "url": "https://seekingalpha.com/news/4639794-snowflake-signals-fy-2027-product-revenue-of-6_07b-with-14_5-percent-non-gaap-operating"
       },
       {
-        "label": "CME FedWatch shows roughly 62% odds of a September 16 rate hike, elevated by Warsh's inflation-focused Jackson Hole speech on August 28 and only modestly reduced by the ADP miss",
-        "url": "https://phemex.com/news/article/cme-fedwatch-sees-66-odds-of-september-fed-rate-hike-95095"
+        "label": "Broadcom Q3 revenue $29.59B beat $29.36B and rose 86% year over year with AI semiconductor revenue $16.7B (+221%), but Q4 total revenue guidance of $34.8B missed the $35.03B consensus by $230M",
+        "url": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html"
       },
       {
-        "label": "US and Iran exchanged further strikes overnight; Brent held near $95 as Hormuz transit continued at about 8 million barrels a day — the premium is holding rather than spiking",
-        "url": "https://www.investing.com/news/economy-news/us-stock-index-futures-subdued-as-oil-treasury-yields-rise-on-iran-tensions-4885553"
+        "label": "Hewlett Packard Enterprise revenue $12.213B against $11.892B expected (+33.7% YoY), adjusted EPS $1.11 against $0.93, next-quarter guide of $14.35B at the midpoint is 10.2% above consensus, full-year revenue growth raised to 34-37% — and the stock fell 3% pre-market",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hewlett-packard-enterprise-nyse-hpe-204316661.html"
       },
       {
-        "label": "ISM Manufacturing fell to 54.6 in August from 55.6 in July, still expanding but below the 55.2 consensus — another data point showing the economy is growing more slowly",
-        "url": "https://tradingeconomics.com/united-states/business-confidence"
+        "label": "The dollar index weakened below 99.50, easing 0.13% to 99.545, as the 10-year Treasury yield slipped from its multi-year high to 4.784% — Wednesday's 38,000 ADP print reaching the dollar and the long end a day later",
+        "url": "https://www.fxstreet.com/news/united-states-dollar-index-weakens-below-9950-as-yields-ease-202609030510"
       },
       {
-        "label": "August jobs report (NFP) due Friday September 4 at 8:30 AM ET — this data will likely determine whether the Fed hikes on September 16 or holds",
-        "url": "https://www.bls.gov/schedule/2026/home.htm"
+        "label": "December gold futures opened at $4,436.40 (+0.5%) and traded $4,470.70 at 6:53 AM ET on the pullback in the dollar and yields, ending a four-session slide",
+        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-thursday-september-3-2026-gold-moves-higher-on-hopes-that-iran-war-reescalation-will-be-short-lived-110444019.html"
+      },
+      {
+        "label": "CME FedWatch still prices a September 15-16 hike near 62-66%, roughly double where it sat before Chair Warsh's Jackson Hole speech on August 28",
+        "url": "https://www.forbes.com/sites/digital-assets/2026/08/31/cme-fedwatch-provides-a-66-chance-fed-will-hike-rates-in-september/"
       }
     ]
   },
   "snapshot": {
-    "sp500":  { "level": 7666.60, "change_pct": 0.46,  "as_of": "2026-09-02T20:00:00Z" },
-    "nasdaq": { "level": 26217.1, "change_pct": 0.45,  "as_of": "2026-09-02T20:00:00Z" },
-    "vix":    { "level": 16.81,   "change_pct": 2.88,  "as_of": "2026-09-03T11:51:00Z" },
-    "ust10y": { "level": 4.79,    "change_bps": -2,    "as_of": "2026-09-03T11:51:00Z" },
-    "dxy":    { "level": 99.58,   "change_pct": 0.06,  "as_of": "2026-09-03T11:51:00Z" }
+    "sp500":  { "level": 7666.60,  "change_pct": 0.46,  "as_of": "2026-09-02T20:00:00Z" },
+    "nasdaq": { "level": 26217.83, "change_pct": 0.45,  "as_of": "2026-09-02T20:00:00Z" },
+    "vix":    { "level": 15.49,    "change_pct": -5.20, "as_of": "2026-09-03T11:45:00Z" },
+    "ust10y": { "level": 4.784,    "change_bps": -1,    "as_of": "2026-09-03T11:45:00Z" },
+    "dxy":    { "level": 99.51,    "change_pct": -0.13, "as_of": "2026-09-03T11:45:00Z" }
   },
   "regime_risk": [
-    { "name": "30Y Yield",   "value": 5.286, "trigger_above": 5.30,  "unit": "%" },
-    { "name": "10Y Yield",   "value": 4.79,  "trigger_above": 5.00,  "unit": "%" },
-    { "name": "Brent Crude", "value": 94.82, "trigger_above": 85.0,  "unit": "USD" },
-    { "name": "BTC Gate 2",  "value": 77908, "trigger_below": 62000, "unit": "USD" }
+    { "name": "30Y Yield",   "value": 5.26,  "trigger_above": 5.30,  "unit": "%" },
+    { "name": "10Y Yield",   "value": 4.784, "trigger_above": 5.00,  "unit": "%" },
+    { "name": "Brent Crude", "value": 95.25, "trigger_above": 85.0,  "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 77100, "trigger_below": 62000, "unit": "USD" }
   ],
   "watchlist_mentions": [
     {
+      "ticker": "NVDA",
+      "note": "Unchanged pre-market at $217.28 on no company news, after leading the Dow on Wednesday. Notable for what it did not do: the AI-hardware selling that took Broadcom down 2.5% and Hewlett Packard Enterprise down 3% has not reached the largest name in the group, which is the test of whether this morning's move is a guidance reaction or a rotation out of hardware.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "December futures opened $4,436.40 (+0.5%) and traded $4,470.70 at 6:53 AM ET, clearing the $4,450 level Wednesday night's report named as the marker for a haven bid. Brent is lower on the same session, so the move is a dollar-and-real-yield trade rather than a Gulf premium. A rally that persists while Brent falls further confirms it is rates, not geopolitics.",
+      "sentiment": "positive"
+    },
+    {
       "ticker": "CL=F",
-      "note": "Brent near $94.82, slightly lower than Wednesday's close, as US-Iran exchanges continue but Hormuz transit runs at roughly 8 million barrels a day without voluntary operator suspensions. The oil risk premium is holding rather than growing. A voluntary suspension by a major tanker operator would be the event that pushes Brent toward $100; a US-Iran pause announcement would unwind much of the premium built since late August.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "^GSPC",
-      "note": "S&P 500 closed at 7,666.60 on Wednesday, recovering 0.46% after two down sessions, with futures nearly flat Thursday morning. The 7,600-7,700 band has contained the past week's moves. The next break comes from Friday's jobs report: a weak print that kills hike pricing could push the index back toward 7,750-7,800; a strong print that confirms the stagflation setup puts 7,550 in view.",
-      "sentiment": "neutral"
-    },
-    {
-      "ticker": "BTC-USD",
-      "note": "BTC at $77,908, up about 1.7% from Wednesday's open, and holding above the $76,661 support level that has now held through two separate retests. The recovery is modest but the support is intact. A two-day close above $80,000 would be the next confirmation that the base built over the past two weeks is holding.",
+      "note": "Brent $95.25, down 0.40%, snapping a three-day rally after Trump said the latest attacks on Iran would be short-lived. The escalation premium is decaying rather than building. A voluntary Hormuz transit suspension by a major operator is the event that reverses it; continued restraint drifts the barrel toward $88-90.",
       "sentiment": "neutral"
     },
     {
       "ticker": "^VIX",
-      "note": "VIX at 16.81, up 2.88% on the day, against the 2026 low of 14.13 set August 31. An event premium now exists that was absent three sessions ago. Reported as context for how nervous the options market is, not as a trigger for any change in the overall read.",
+      "note": "15.49, down 5.2% from Wednesday's 16.34 close, back toward the 14.13 low set August 31. The event premium that appeared three sessions ago has been sold ahead of tomorrow's payrolls, which is the opposite of how the options market usually approaches a binary print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "^GSPC",
+      "note": "Closed 7,666.60 on Wednesday (+0.46%) with futures within 0.1% of flat this morning. The 7,600-7,700 band has held for a week. Today's ISM Services and tomorrow's payrolls are what break it: 7,740 on the upside, 7,620 on the downside.",
       "sentiment": "neutral"
     }
   ],
   "trade_setups": [
     {
-      "asset": "August payrolls (NFP)",
-      "thesis": "Tomorrow's jobs report is the single most important input for the next two weeks of market direction. The ADP miss (38,000) points toward a weak print, but ADP has frequently diverged from the official government number. If NFP comes in below 100,000, the case for a September 16 hike collapses and long-dated Treasury yields would fall, giving equities room to recover. If NFP comes in above 175,000, the hike is likely locked in, and the oil-plus-rates setup that pressured markets since last week reasserts itself.",
-      "entry": "No new equity exposure makes sense ahead of this print. Existing positions can be held at current levels without adding risk.",
-      "invalidation": "Any print in the 100,000-175,000 range keeps the outcome ambiguous through the September 11 CPI release",
+      "asset": "Enterprise software (SNOW, DDOG, NOW, CRM)",
+      "thesis": "A single result repriced the group: Snowflake's 37% product-revenue growth and raised $6.07B full-year guide drew a 24% pre-market bid, and Datadog (+5%), ServiceNow (+3%) and Salesforce (+1.5%) followed on no news of their own. What is forming is a duration trade dressed as an earnings reaction — software is the longest-duration equity on the tape and re-rates first when the discount rate stops rising, which is exactly what the 10-year did at 4.784% after touching 4.818%.",
+      "entry": "The 10-year at 4.818% is the level that defines it: the read-across is intact below it and unwinds above it",
+      "invalidation": "A payrolls print above 150,000 tomorrow with firm average hourly earnings, or a 30Y close above 5.30%, takes the discount-rate premise away",
       "horizon": "Resolves at 8:30 AM ET Friday, September 4"
     },
     {
-      "asset": "30Y Treasury",
-      "thesis": "The 30-year yield has reached above 5.30% in two separate sessions — intraday on August 28 and briefly on September 2 — and closed below that level both times (currently around 5.286%). The level has been tagged rather than broken. Treasury's long-dated buyback operations start September 9, which should provide some demand. A close above 5.30% would be the first confirmed break; a close under 5.15% would suggest the buyback demand is being anticipated early.",
-      "entry": "5.286% is current; watch for a daily close above 5.30% as the first clean break of the level",
-      "invalidation": "A weak NFP print Friday removes the inflation-driven selling pressure and likely brings the 30Y back toward 5.10-5.15%",
-      "horizon": "Through September 9 when Treasury buybacks begin; decisive test is Friday's jobs report"
+      "asset": "AI hardware (AVGO, HPE)",
+      "thesis": "Two beats were sold in the same session. Broadcom grew AI semiconductor revenue 221% to $16.7B and guided Q4 AI up 236%, and still fell 2.5% on a $230M shortfall in total Q4 revenue. Hewlett Packard Enterprise beat on revenue, earnings and next-quarter guidance, raised its full-year outlook, and fell 3%. The bar has moved from whether AI revenue is growing to whether it is carrying the whole company, and neither name cleared it.",
+      "entry": "Nvidia unchanged at $217.28 is the level that defines whether this is guidance-specific or a group repricing",
+      "invalidation": "A session where an AI-hardware beat is bought would show the pattern was two idiosyncratic guides rather than a change in what the market pays for",
+      "horizon": "Today's cash session is the first full test of both reactions"
     },
     {
-      "asset": "Brent crude",
-      "thesis": "Brent has stayed in the $94-96 band since the latest US-Iran exchange began, without extending further despite continuing strikes. The restraint reflects that Hormuz transit has not stopped. The setup is a binary: if a major tanker operator announces a voluntary transit suspension, $100 is the next target; if the exchanges remain contained and no operator suspends, the premium decays and Brent drifts back toward $88-90.",
-      "entry": "Voluntary transit suspension announcements are the escalation signal to watch, not the strike count itself",
-      "invalidation": "A confirmed pause in hostilities through Qatar mediation or CENTCOM statement collapses the risk premium",
-      "horizon": "Days; the exchange has run on 24-48 hour cycles"
+      "asset": "30Y Treasury",
+      "thesis": "The long bond has spent five sessions inside 5.30% without a close above it, sitting near 5.26%, having traded through the level twice and settled under it each time. Treasury's enlarged long-dated buyback operations begin September 9 at $4B-plus per operation, which is after Friday's payrolls, so the level faces its decisive test without the structural bid behind it.",
+      "entry": "5.26% is current; a daily close above 5.30% is the first confirmed break of the level",
+      "invalidation": "A close under 5.15% says the September 9 buyback demand is being anticipated early",
+      "horizon": "Through September 9; the decisive input is Friday's jobs report"
     }
   ],
+  "bear_case": "The software move is one company's result, not a rotation. Snowflake's acceleration is idiosyncratic — AI products contributed about half of it — and a 24% single-name gap dragging peers 1.5-5% higher on no news of their own is a beta reflex that typically fades within two sessions. The rates premise is thinner still: the 10-year has eased six-tenths of a basis point from Wednesday's close, September hike odds remain at 62-66%, and a VIX at 15.49 into a binary payrolls print is complacency rather than confirmation. If the 10-year closes above 4.818% or August payrolls print above 150,000, the duration argument reverses and the software complex gives back more than the hardware names it outperformed.",
   "body_mdx": "data/briefings/markets/2026-09-03-morning.mdx"
 }
