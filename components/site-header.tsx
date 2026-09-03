@@ -32,7 +32,7 @@ export default function SiteHeader() {
             screen reader announces for the link.
 
             The mark is the pixel-style cash stack (public/brand/cash-stack.png,
-            shipped at ~3.5x of its 27px render with a light unsharp mask, and
+            shipped at 4x of its 27px render with a light unsharp mask, and
             `unoptimized` so Next does not re-encode it at quality 75 — the
             optimizer pass is what made the mark look soft). `priority` so the
             sticky header paints with the first frame rather than after an
@@ -45,8 +45,8 @@ export default function SiteHeader() {
           <Image
             src="/brand/cash-stack.png"
             alt=""
-            width={118}
-            height={96}
+            width={132}
+            height={108}
             priority
             unoptimized
             className="h-[27px] w-auto"
