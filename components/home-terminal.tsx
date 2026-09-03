@@ -112,9 +112,12 @@ function Hero({ brief }: { brief: BriefView }) {
         <span className="sm:hidden">{brief.ledeShort}</span>
         <span className="hidden sm:inline">{brief.lede}</span>
       </p>
+      {/* The link sits flush right, on its own row under the lede, so it
+          lands where the eye finishes the paragraph and mirrors the AM/PM
+          switch pinned to the right edge above. */}
       <Link
         href={brief.href}
-        className="mt-6 inline-flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--amber)]"
+        className="mt-6 flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-right font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--amber)]"
       >
         {/* The label is one unit: without nowrap the phone broke it after
             "MORNING'S" and stranded the read-time on its own line, which read
