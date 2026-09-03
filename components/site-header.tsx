@@ -32,8 +32,11 @@ export default function SiteHeader() {
             screen reader announces for the link.
 
             The mark is the banded-stacks image (public/brand/banded-stacks.png,
-            shipped at 3x of its 22px render). `priority` so the sticky header
-            paints with the first frame rather than after an image fetch. */}
+            shipped at 4x of its 22px render with a light unsharp mask, and
+            `unoptimized` so Next does not re-encode it at quality 75 — the
+            optimizer pass is what made the mark look soft). `priority` so the
+            sticky header paints with the first frame rather than after an
+            image fetch. */}
         <Link
           href="/"
           aria-label="Buy Side — home"
@@ -42,9 +45,10 @@ export default function SiteHeader() {
           <Image
             src="/brand/banded-stacks.png"
             alt=""
-            width={83}
-            height={66}
+            width={111}
+            height={88}
             priority
+            unoptimized
             className="h-[22px] w-auto"
           />
         </Link>
