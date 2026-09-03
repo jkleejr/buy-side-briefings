@@ -31,9 +31,8 @@ export default function SiteHeader() {
             the wayfinding. The name lives in the aria-label, which is what a
             screen reader announces for the link.
 
-            The mark is the cash-stack photo cut out to transparency
-            (public/brand/cash-stack.png,
-            shipped at 4x of its 22px render with a light unsharp mask, and
+            The mark is the cash-stack photo (public/brand/cash-stack.png,
+            shipped at 4x of its 24px render with a light unsharp mask, and
             `unoptimized` so Next does not re-encode it at quality 75 — the
             optimizer pass is what made the mark look soft). `priority` so the
             sticky header paints with the first frame rather than after an
@@ -46,11 +45,11 @@ export default function SiteHeader() {
           <Image
             src="/brand/cash-stack.png"
             alt=""
-            width={109}
-            height={88}
+            width={118}
+            height={96}
             priority
             unoptimized
-            className="h-[22px] w-auto"
+            className="h-[24px] w-auto"
           />
         </Link>
 
