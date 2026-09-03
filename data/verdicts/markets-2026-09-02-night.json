@@ -1,0 +1,102 @@
+{
+  "routine": "markets",
+  "date": "2026-09-02",
+  "window": "night",
+  "generated_at": "2026-09-03T00:14:29Z",
+  "is_seed": false,
+  "verdict": {
+    "code": "step_aside",
+    "emoji": "🔴",
+    "conviction": "medium",
+    "headline": "Weak August hiring data puts Friday's jobs report at the center of everything",
+    "label": "STEP ASIDE — 2 of 4 regime triggers still active: Brent $94.86 and WTI $90.72 (both above oil thresholds). S&P 500 recovered to 7,666.60 (+0.46%), Nasdaq +0.45%, Dow +0.56%. ADP private payrolls: only 38K in August vs 48K expected, weakest since January. 10Y 4.79%, 30Y 5.26% (retreated from 5.28% threshold). September hike odds fell to ~62% from 68%.",
+    "rationale_short": "Stocks bounced today because Treasury yields paused and NY Fed President Williams said long-term rates are rising because the economy is strong, not because inflation is spiraling. That was enough to push the S&P 500 back above 7,650 after three losing sessions. But the setup has not cleared. Oil held almost all of its post-strike gains from Tuesday — Brent at $94.86 and WTI at $90.72 — so both crude thresholds in the regime framework remain breached. The bigger development was the ADP report: private employers added only 38,000 jobs in August, the lowest monthly total since January and well below the 48,000 economists expected. That points toward a soft government payrolls print on Friday. If Friday's number comes in below 150,000, the September rate hike is likely off the table and the regime pressure on stocks begins to dissolve. If it comes in above 175,000, the Fed has reason to raise rates on September 16 and the rate pressure on stocks deepens. The regime is on hold, not clearing.",
+    "supporting_data": [
+      {
+        "label": "ADP: private employers added only 38,000 jobs in August, the weakest since January; manufacturing shed 17,000 positions",
+        "url": "https://mediacenter.adp.com/2026-09-02-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-38,000-Jobs-in-August"
+      },
+      {
+        "label": "NY Fed President Williams said rising long-term yields reflect a solid economy rather than inflation fears — his comments helped pull yields off their highs on Wednesday",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-02-2026"
+      },
+      {
+        "label": "September rate hike odds fell to roughly 62% from 68% after the weak ADP data, as reported by CME FedWatch trackers",
+        "url": "https://en.coinotag.com/adp-38000-jobs-cools-fed-hike-odds-bitcoin"
+      },
+      {
+        "label": "Brent crude settled at $94.86 (+0.23%) and WTI at $90.72 (+0.56%), holding near six-week highs as US-Iran tensions persist near the Strait of Hormuz",
+        "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      },
+      {
+        "label": "Snowflake surged 20% after hours on a strong second-quarter beat; Broadcom fell 2% on a weaker-than-expected fourth-quarter revenue forecast of $34.8B vs $35.0B estimated",
+        "url": "https://www.cnbc.com/2026/09/02/stocks-making-the-biggest-moves-after-hours-snow-avgo-ntsk-five.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7666.60,  "change_pct": 0.46,  "as_of": "2026-09-02T20:00:00Z" },
+    "nasdaq": { "level": 26217.83, "change_pct": 0.45,  "as_of": "2026-09-02T20:00:00Z" },
+    "vix":    { "level": 16.34,    "change_pct": 2.1,   "as_of": "2026-09-02T20:00:00Z" },
+    "ust10y": { "level": 4.79,     "change_bps": 0,     "as_of": "2026-09-02T20:00:00Z" },
+    "dxy":    { "level": 99.58,    "change_pct": -0.07, "as_of": "2026-09-02T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.26,  "trigger_above": 5.28, "unit": "%" },
+    { "name": "Brent Crude", "value": 94.86, "trigger_above": 85.0, "unit": "USD" },
+    { "name": "WTI Crude",   "value": 90.72, "trigger_above": 79.0, "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 77248, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CL=F",
+      "note": "WTI held at $90.72 (+0.56%) with Brent at $94.86 — barely moved from Tuesday's post-strike levels. The geopolitical premium is sticky. Whether it decays or extends depends on whether Iran retaliates to Wednesday's fresh strikes.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Bitcoin recovered to $77,248 from Tuesday's near-support close around $76,762. The $62,000 lower trigger in the regime framework is not under threat at current levels. Weak ADP data lowering rate hike odds modestly gave crypto room to breathe.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "SNOW",
+      "note": "Snowflake surged 20% after hours after posting adjusted earnings of 62 cents per share on $1.55B in revenue, both well above expectations. It opens Thursday as a read on whether investors are still willing to reward profitable software growth.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Broadcom fell 2% after hours despite reporting solid results, after its fourth-quarter revenue outlook of $34.8B came in below the $35.0B consensus. In a market already cautious about multiples, guidance misses at this scale get punished.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Rose modestly in the session alongside a broader Dow recovery. The Anthropic-Lambda cloud deal from Tuesday remains a conversation about financing circularity rather than any demand problem for Nvidia chips.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "30Y Treasury",
+      "thesis": "The 30-year yield fell to 5.26% today, just below the 5.28% level that marks the top of the regime framework. The weak ADP data gives the bond market a reason to keep yields contained heading into Friday's payrolls. A soft payrolls print pushes the 30-year well below 5.20% and removes one of the two remaining sources of regime pressure. A strong print puts 5.30%+ back in play immediately.",
+      "entry": "Watch Friday's payrolls: below 150K sends this toward 5.10%; above 175K puts 5.30%+ back in play",
+      "invalidation": "A payrolls print in the 150-175K gray zone leaves the 30-year stuck near 5.25% without resolution",
+      "horizon": "Friday's report at 8:30 AM ET is the deciding event"
+    },
+    {
+      "asset": "S&P 500",
+      "thesis": "The index reclaimed 7,650 on Wednesday but on thin conviction — the bounce came from yield relief and a Fed official's reassurance, not from earnings or economic acceleration. Options buyers pushed the VIX slightly higher even as stocks rose, which suggests traders are buying protection for Friday rather than betting on clear skies.",
+      "entry": "Holding above 7,650 through Thursday implies the market sees a soft payrolls print as likely; breaking below 7,600 before the report means pre-positioning risk is rising",
+      "invalidation": "A strong payrolls beat puts 7,550 at risk; a big miss puts 7,800 in play",
+      "horizon": "The Friday 8:30 AM payrolls print is the binary"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Oil barely moved Wednesday despite a new round of US strikes in the region — that price stability in the face of escalating news suggests the market has already priced a risk premium and is waiting for either supply disruption (transit closures, production cuts) or de-escalation. Oil is not driving the next leg; labor data is.",
+      "entry": "A voluntary suspension of Hormuz transits by major shipping operators puts $100 in play; confirmed de-escalation collapses the premium back toward $88",
+      "invalidation": "A ceasefire announcement or Iranian stand-down collapses the premium quickly",
+      "horizon": "Days; geopolitical news is the trigger, not a calendar event"
+    }
+  ],
+  "bear_case": "Today's bounce was small and came from a Fed official's words, not from any fundamental change. ADP at 38,000 jobs sounds like a clear signal, but ADP diverged from the government payrolls report earlier this year — July NFP came in at -23,000 even after ADP had flagged weakness. A solid 175,000+ government jobs print on Friday would make today's ADP look like noise, push September hike odds back above 70%, and unwind today's bounce and then some. Oil has not retreated — both crude thresholds are still breached, and another Hormuz incident would accelerate the move. The read that the rate pressure is easing assumes Friday confirms the ADP signal. If it does not, the regime deepens.",
+  "body_mdx": "data/briefings/markets/2026-09-02-night.mdx"
+}
