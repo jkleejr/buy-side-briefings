@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BrandMark from "./brand-mark";
+import Image from "next/image";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
 import ThemeToggle from "./theme-toggle";
@@ -31,17 +31,22 @@ export default function SiteHeader() {
             the wayfinding. The name lives in the aria-label, which is what a
             screen reader announces for the link.
 
-            The -1px nudge is optical, not geometric: the mark's box was already
-            centred on the row. The nav reads its centre off the cap band, with
-            descenders hanging below it, and the mark's own weight sits low
-            because the candle bodies cluster under the midline while only thin
-            wicks reach the top. Both offsets point down, ~0.8px together. */}
+            The mark is a photo of stacked bills (public/brand/money-stacks.png,
+            shipped at 3x of its 22px render). `priority` so the sticky header
+            paints with the first frame rather than after an image fetch. */}
         <Link
           href="/"
           aria-label="Buy Side — home"
-          className="flex shrink-0 -translate-y-px items-center self-center"
+          className="flex shrink-0 items-center self-center"
         >
-          <BrandMark className="h-[18px] w-[17px]" />
+          <Image
+            src="/brand/money-stacks.png"
+            alt=""
+            width={89}
+            height={66}
+            priority
+            className="h-[22px] w-auto"
+          />
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
