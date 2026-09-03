@@ -124,18 +124,6 @@
   --fib-strong: #d3bb5a;
 }
 
-/* Morning edition on the dark theme: the ground warms to the near-black the
-   site used to open on, with its panels and rules, so the AM/PM switch on
-   the homepage reads as dawn against the deeper night ground. Set only by
-   the homepage (see EditionSwitch in components/home-terminal.tsx). */
-:root[data-theme="dark"][data-edition="morning"] {
-  --background: #16150f;
-  --panel: #201d16;
-  --panel-head: #26231b;
-  --border: #302d24;
-  --border-strong: #423e32;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -164,7 +152,7 @@ html,
 body {
   background: var(--background);
   color: var(--foreground);
-  /* Soft hand-off when the edition switch re-tints the ground. */
+  /* Soft hand-off when the theme toggle re-tints the ground. */
   transition: background-color 0.25s ease;
   font-family: var(--serif);
   /* Lining figures so prices don't dance; tabular so columns align. */

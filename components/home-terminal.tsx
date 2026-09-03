@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { syncThemeColor } from "@/lib/theme-color";
+import { useState } from "react";
 import LevelsChart from "./levels-chart-lazy";
 import Link from "next/link";
 import type {
@@ -272,20 +271,6 @@ export default function HomeTerminal({
 }) {
   const [view, setView] = useState<"morning" | "evening">(data.defaultView);
   const current = view === "morning" ? data.morning : data.evening;
-
-  // The edition tints the ground: on the dark theme the AM view sits on the
-  // warmer near-black the site used to open on, PM on the deeper one (see the
-  // [data-edition] rule in globals.css). Stamped on <html> because the ground
-  // is painted outside this component; cleared on unmount so other pages
-  // keep the plain theme.
-  useEffect(() => {
-    document.documentElement.dataset.edition = view;
-    syncThemeColor();
-    return () => {
-      delete document.documentElement.dataset.edition;
-      syncThemeColor();
-    };
-  }, [view]);
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-14 sm:px-6">
