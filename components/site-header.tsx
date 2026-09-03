@@ -38,13 +38,13 @@ export default function SiteHeader() {
             sticky header paints with the first frame rather than after an
             image fetch.
 
-            The -3px nudge centres the mark on the nav text, not on the row:
+            The -2px nudge sits the mark just under the nav text's centre:
             the nav's active underline hangs below its text, so the text's
             visual centre (measured: y=19) sits above the row's (22). */}
         <Link
           href="/"
           aria-label="Buy Side — home"
-          className="flex shrink-0 -translate-y-[3px] items-center self-center"
+          className="flex shrink-0 -translate-y-[2px] items-center self-center"
         >
           <Image
             src="/brand/cash-stack.png"
