@@ -32,15 +32,19 @@ export default function SiteHeader() {
             screen reader announces for the link.
 
             The mark is the pixel-style cash stack (public/brand/cash-stack.png,
-            shipped at 4x of its 27px render with a light unsharp mask, and
+            shipped at 4.5x of its 24px render with a light unsharp mask, and
             `unoptimized` so Next does not re-encode it at quality 75 — the
             optimizer pass is what made the mark look soft). `priority` so the
             sticky header paints with the first frame rather than after an
-            image fetch. */}
+            image fetch.
+
+            The -3px nudge centres the mark on the nav text, not on the row:
+            the nav's active underline hangs below its text, so the text's
+            visual centre (measured: y=19) sits above the row's (22). */}
         <Link
           href="/"
           aria-label="Buy Side — home"
-          className="flex shrink-0 items-center self-center"
+          className="flex shrink-0 -translate-y-[3px] items-center self-center"
         >
           <Image
             src="/brand/cash-stack.png"
@@ -49,7 +53,7 @@ export default function SiteHeader() {
             height={108}
             priority
             unoptimized
-            className="h-[27px] w-auto"
+            className="h-[24px] w-auto"
           />
         </Link>
 
