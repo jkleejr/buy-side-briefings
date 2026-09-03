@@ -1,0 +1,104 @@
+{
+  "routine": "markets",
+  "date": "2026-09-02",
+  "window": "night",
+  "generated_at": "2026-09-03T00:14:58Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "The weakest private hiring since January barely dented the odds of a Fed rate hike",
+    "label": "ADP printed 38,000 private jobs against a ~47,000 consensus and September hike odds fell only to ~64% from 68.2%. Gold settled -2.86% at $4,325 and silver -3.73% at $64.13. The 10-year touched 4.81%, highest since November 2023, then closed back at 4.79%, unchanged. S&P 500 +0.46% to 7,666.60, Dow +0.56%, Nasdaq +0.45%, Russell 2000 +1.12%. Broadcom fell 5% after hours on a $34.8B Q4 guide against $35.03B expected.",
+    "rationale_short": "A labour miss bought no dovish repricing because the inflation input is not coming from the labour market: the Beige Book, published the same afternoon, reported input prices rising strongly under tariffs and energy while selling-price increases stayed moderate. Equities rose because the long end declined to make a new high, not because the policy path eased — the Russell 2000 led at +1.12% after being Tuesday's worst at -1.23%, the signature of a pause in a rate move rather than a reversal. Gold's fourth consecutive decline through an active US-Iran escalation says the Gulf is still being priced as an inflation input rather than a fear event. Friday's payrolls is what actually resolves the hike trade: a print near the 50-55K consensus with earnings at or under 0.3% breaks it, above 150,000 with hot earnings extends it.",
+    "supporting_data": [
+      {
+        "label": "ADP private payrolls rose 38,000 in August against a ~47,000 consensus and July's upwardly revised 46,000 — the slowest month since January; manufacturing shed 17,000 and professional and business services 16,000",
+        "url": "https://mediacenter.adp.com/2026-09-02-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-38,000-Jobs-in-August"
+      },
+      {
+        "label": "CME FedWatch odds of a September rate hike fell to roughly 64% from 68.2% a day earlier",
+        "url": "https://en.coinotag.com/adp-38000-jobs-cools-fed-hike-odds-bitcoin"
+      },
+      {
+        "label": "Beige Book: activity up modestly and prices up moderately, with input prices rising strongly under tariffs and energy costs; the pace of price increases slowed in three of twelve districts and was unchanged in eight",
+        "url": "https://www.aol.com/articles/economic-activity-edged-prices-rose-181723000.html"
+      },
+      {
+        "label": "The 10-year yield touched 4.81%, its highest since November 2023, before easing to 4.79% and pausing a five-session rally",
+        "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+      },
+      {
+        "label": "Gold settled at $4,325 (-2.86%) and silver at $64.13 (-3.73%) on higher real yields and a firm dollar, despite the Iran escalation",
+        "url": "https://www.riotimesonline.com/gold-silver-precious-metals-wednesday-september-2-2026/"
+      },
+      {
+        "label": "Broadcom fell 5% after hours: Q3 revenue $29.59B beat $29.36B and EPS $3.32 beat $3.24, with AI semi revenue $16.7B up 221%, but Q4 revenue guidance of $34.8B missed the $35.03B consensus",
+        "url": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7666.60,  "change_pct": 0.46,  "as_of": "2026-09-02T20:00:00Z" },
+    "nasdaq": { "level": 26217.83, "change_pct": 0.45,  "as_of": "2026-09-02T20:00:00Z" },
+    "vix":    { "level": 16.34,    "change_pct": 0.0,   "as_of": "2026-09-01T20:00:00Z" },
+    "ust10y": { "level": 4.79,     "change_bps": 0,     "as_of": "2026-09-02T20:00:00Z" },
+    "dxy":    { "level": 99.0,     "change_pct": 0.0,   "as_of": "2026-09-02T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.26,  "trigger_above": 5.30,  "unit": "%" },
+    { "name": "10Y Yield",   "value": 4.79,  "trigger_above": 4.85,  "unit": "%" },
+    { "name": "Brent Crude", "value": 94.86, "trigger_above": 85.0,  "unit": "USD" },
+    { "name": "Gold",        "value": 4325,  "trigger_above": 4450,  "unit": "USD" },
+    { "name": "SPX vs 7,580", "value": 7666.60, "trigger_below": 7580, "unit": "index" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "GC=F",
+      "note": "Gold settled at $4,325, down 2.86%, a fourth consecutive decline through an active US-Iran escalation, with silver down 3.73% to $64.13. The tape is still pricing the Gulf as an inflation input rather than a fear event; a move back above $4,450 alongside a firmer barrel would mark that changing.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Rose about 3.3%, the best performer in the Dow and the largest single contributor to its 295-point gain, on no company news — the same duration trade that sold it Tuesday, running the other way.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CL=F",
+      "note": "WTI settled at $90.72 (+0.56%) with Brent at $94.86 (+0.23%), a fourth session above $94. Transit volumes through Hormuz, not strike counts, remain the marker that would convert the premium into a measured supply disruption.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Held near $77,000 and shrugged off the ADP miss, keeping the $76,661 support above the price for a second session. Crypto trades the Labor Day weekend's Hormuz headlines with no cash equity market to absorb them until September 8.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "^GSPC",
+      "note": "Added 0.46% to 7,666.60, reclaiming the 7,650 level lost Tuesday and snapping a three-day slide. The gain came from the long end declining to make a new high rather than from an easier policy path, which is why the rate-sensitive Russell led at +1.12%.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "August nonfarm payrolls (September 4)",
+      "thesis": "ADP's 38,000 sits against a consensus near 50,000-55,000 for the BLS print, with unemployment forecast at 4.1% and average hourly earnings at 3.0% year over year. The two series have diverged sharply this year — July payrolls fell 23,000 against an +83,000 consensus — and the hike trade barely moved on ADP, which means the BLS number is carrying the whole resolution.",
+      "entry": "A print near consensus with average hourly earnings at or under 0.3% is what breaks the hike trade; above 150,000 with hot earnings extends it",
+      "invalidation": "A revision-heavy report that muddies both series leaves the 64% odds intact into the September 15-16 FOMC",
+      "horizon": "Friday, 8:30 AM ET"
+    },
+    {
+      "asset": "30Y Treasury",
+      "thesis": "The long bond has traded through 5.30% twice and settled under it every time, closing near 5.26% today in a fourth session inside the level. Treasury's enlarged long-dated buyback operations begin September 9 at $4 billion-plus per operation, so the structural bid arrives after Friday's payrolls rather than before it.",
+      "entry": "A daily close above 5.30% marks the level crossed rather than tagged; a close under 5.15% says the buyback bid is being anticipated",
+      "invalidation": "A payrolls print that pulls hike odds under 50% removes the policy input driving the long end",
+      "horizon": "Through September 9, when the buyback operations begin"
+    },
+    {
+      "asset": "Gold",
+      "thesis": "Gold has fallen for four consecutive sessions through a week of US strikes on Iranian targets, settling 2.86% lower at $4,325 with silver down 3.73%. The market is treating the Gulf as a source of inflation rather than of fear, which is the assumption underneath every other position on the page.",
+      "entry": "A move back above $4,450 alongside a firmer barrel says a haven premium is being paid and the regime has changed; continued declines with Brent above $94 confirm the inflation framing",
+      "invalidation": "A Brent close back under $90 removes the inflation impulse and the framing question with it",
+      "horizon": "Days, resolving around Friday's payrolls and the Labor Day weekend"
+    }
+  ],
+  "bear_case": "The read treats a four-point move in hike odds as evidence the labour market no longer matters to the Fed, when the simpler explanation is that one private survey rarely moves a committee eleven days out. ADP has diverged from the BLS all year, and the Beige Book's own data was collected on or before August 24 — before the oil move it is being used to explain. Gold's decline is as easily read as position unwinding into a long weekend as a statement about the inflation regime. If Friday's payrolls prints near consensus with earnings at or under 0.3% and hike odds fall under 50%, this read no longer holds.",
+  "body_mdx": "data/briefings/markets/2026-09-02-night.mdx"
+}

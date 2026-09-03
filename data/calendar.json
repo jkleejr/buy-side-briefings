@@ -1,18 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-09-02",
-      "label": "ADP private payrolls (8:15 AM ET) — consensus ~47K vs 44K prior; EIA inventories 9:30 AM, Fed Beige Book 1:00 PM",
-      "kind": "MACRO",
-      "time_et": "8:15 AM",
-      "tickers": [
-        "SPY",
-        "TLT",
-        "QQQ"
-      ],
-      "note": "July's 44K was the weakest in six months. Futures price the September hike above 66% while Kalshi prices a hold at 73% — this week's labour data is what resolves that split. A print under 30K against an unchanged inflation impulse is the stagflation combination in its clearest form; above 70K closes the gap the hawkish way. The Beige Book is the first district-level read on whether oil costs are being absorbed or passed through. Directional only; Friday's BLS print is the gate."
-    },
-    {
       "date": "2026-09-03",
       "label": "ISM Services (10:00 AM ET) — consensus 53.7 vs 53.6 prior; the prices component is the tell",
       "kind": "MACRO",
@@ -20,13 +8,14 @@
       "tickers": [
         "SPY",
         "QQQ",
-        "XLE"
+        "XLE",
+        "AVGO"
       ],
-      "note": "Services is two-thirds of the economy and where a $94 barrel reaches consumer prices first. A services prices component above 70 makes the manufacturing Prices Index at 71.1 a trend rather than a sector quirk."
+      "note": "Updated Sep 2 night: services is two-thirds of the economy and where a $94 barrel reaches consumer prices first. A services prices component above 70 makes the manufacturing Prices Index at 71.1 a trend rather than a sector quirk — and the Beige Book already reported input prices rising strongly under tariffs and energy while selling prices held moderate. Also AVGO first full session after a Q4 revenue guide of $34.8B against $35.03B expected sent it down 5% after hours."
     },
     {
       "date": "2026-09-04",
-      "label": "August jobs report (BLS, 8:30 AM ET) — first post-Warsh payrolls print; September FOMC gate",
+      "label": "August jobs report (BLS, 8:30 AM ET) — consensus ~50-55K, unemployment 4.1%, average hourly earnings 3.0% YoY",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": [
@@ -36,19 +25,7 @@
         "QQQ",
         "IWM"
       ],
-      "note": "Last major labour print before the Sep 15-16 FOMC. Above 200K with average hourly earnings over 0.3% takes hike odds past 70% and pressures a 30Y close above 5.30%; under 150K sets the revised-down openings data against an ISM Prices Index stuck at 71.1."
-    },
-    {
-      "date": "2026-09-02",
-      "label": "AVGO Q3 FY2026 earnings (confirmed, after the close) — guided to ~$29.4B revenue, +84% YoY; consensus $29.43B and GAAP EPS $2.55",
-      "kind": "EARNINGS",
-      "tickers": [
-        "AVGO",
-        "NVDA",
-        "AMD"
-      ],
-      "time_et": "5:00 PM",
-      "note": "Corrected Sep 2 morning: the date is confirmed for September 2 after the close, not the September 4-5 estimate carried previously. Largest AI-capex print of the week, landing into the same long-end pressure its customers are funding themselves in. Earlier context from Aug 19 night: AVGO fell 5% to ~$362 on August 19, breaking through $380 structural support. VMware CVE-2026-59310 active exploitation (361 IPs, 47 countries per Aug 14 disclosure) + 72% AI revenue concentration (~72% of next-quarter sequential growth) create dual overhang. At ~65x trailing P/E, any miss or margin compression compounds. Q3 FY2026 results (est. September 4–5) are the first public accounting of both: VMware remediation costs in financial guidance, enterprise customer commentary on the incident, and AI revenue breadth. $380 is now resistance; $340–350 is the next structured support zone. Flip: recovery above $380 on volume, or formal VMware incident-containment statement before earnings."
+      "note": "Updated Sep 2 night: ADP printed 38,000 and moved September hike odds only four points, to ~64% from 68.2%, so the BLS print carries the whole resolution. The two series have diverged sharply this year — July payrolls fell 23,000 against an +83,000 consensus. A print near consensus with average hourly earnings at or under 0.3% is what breaks the hike trade and pulls odds under 50%; above 150,000 with hot earnings extends it and pressures a 30Y close above 5.30%. Last major labour print before the Sep 15-16 FOMC."
     },
     {
       "date": "2026-09-07",
@@ -93,7 +70,7 @@
         "QQQ",
         "SPY"
       ],
-      "note": "Added Aug 19 night: Treasury Secretary Bessent announced August 19 the department will double the size of long-dated bond buyback operations, raising the maximum per-operation from $2B to at least $4B for bonds maturing in the 10-to-20-year and 20-to-30-year ranges. Effective September 9, runs through November 4 (end of current refunding quarter). The program provides structural demand support for the long end. If underlying supply dynamics overwhelm the $4B+ buyback, the 30Y could reassert above 5.25% before or during the program. BTC's structural debasement bid is partially underwritten by the buyback program as a signal of Treasury demand-management."
+      "note": "Added Aug 19 night: Treasury Secretary Bessent announced August 19 the department will double the size of long-dated bond buyback operations, raising the maximum per-operation from $2B to at least $4B for bonds maturing in the 10-to-20-year and 20-to-30-year ranges. Effective September 9, runs through November 4 (end of current refunding quarter). The program provides structural demand support for the long end. If underlying supply dynamics overwhelm the $4B+ buyback, the 30Y could reassert above 5.25% before or during the program. BTC's structural debasement bid is partially underwritten by the buyback program as a signal of Treasury demand-management. Updated Sep 2 night: the 30Y closed near 5.26% in a fourth session inside 5.30%, having traded through the level twice without a close above it. The buyback bid arrives after Friday payrolls rather than before it, so the level is tested unsupported first."
     },
     {
       "date": "2026-09-16",
@@ -107,7 +84,7 @@
         "GLD",
         "BTC"
       ],
-      "note": "Updated Sep 2 morning: Four inputs determine the vote — August jobs (Sept 4), Canada tariffs (Sept 8), Warsh communications Sept 8-16, and the Iran oil channel, with Brent holding above $94 through the escalation. Venue dispersion is now the story in the pricing: fed funds futures put the hike above 66% while Kalshi prices a hold at 73% and a hike at 26%. The 30Y sat at 5.286% on Sep 2, inside the 5.30% regime trigger for a third session, having traded above it twice without a close. The move is no longer US-specific — JGB 10Y at 3% (first since 1996) and 30Y gilts at 5.89% (highest since May 1998) mean the long end is competing globally for the same duration buyers. Bessent buybacks start September 9 against that backdrop."
+      "note": "Updated Sep 2 night: ADP at 38,000 — the weakest private hiring since January — moved September hike odds only to ~64% from 68.2%, leaving Friday BLS payrolls as the print that resolves the venue dispersion between fed funds futures and Kalshi. The Beige Book published Sep 2 described the bind directly: input prices rising strongly under tariffs and energy, selling-price increases only moderate, the pace of increases slowing in three of twelve districts and unchanged in eight. That is margin compression rather than disinflation, and it is why a labour miss bought no dovish repricing — gold fell 2.86% and silver 3.73% on the same session. The 30Y sat near 5.26%, inside the 5.30% trigger for a fourth session. Canada retaliatory tariffs (Sep 8) and Treasury long-dated buybacks (Sep 9) both land inside the window."
     },
     {
       "date": "2026-12-09",
