@@ -31,8 +31,8 @@ export default function SiteHeader() {
             the wayfinding. The name lives in the aria-label, which is what a
             screen reader announces for the link.
 
-            The mark is the falling-money image (public/brand/falling-money.png,
-            shipped at 3x of its 24px render). `priority` so the sticky header
+            The mark is the banded-stacks image (public/brand/banded-stacks.png,
+            shipped at 3x of its 22px render). `priority` so the sticky header
             paints with the first frame rather than after an image fetch. */}
         <Link
           href="/"
@@ -40,12 +40,12 @@ export default function SiteHeader() {
           className="flex shrink-0 items-center self-center"
         >
           <Image
-            src="/brand/falling-money.png"
+            src="/brand/banded-stacks.png"
             alt=""
-            width={58}
-            height={72}
+            width={83}
+            height={66}
             priority
-            className="h-[24px] w-auto"
+            className="h-[22px] w-auto"
           />
         </Link>
 
