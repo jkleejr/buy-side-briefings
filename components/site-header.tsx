@@ -31,7 +31,8 @@ export default function SiteHeader() {
             the wayfinding. The name lives in the aria-label, which is what a
             screen reader announces for the link.
 
-            The mark is the banded-stacks image (public/brand/banded-stacks.png,
+            The mark is the cash-stack photo cut out to transparency
+            (public/brand/cash-stack.png,
             shipped at 4x of its 22px render with a light unsharp mask, and
             `unoptimized` so Next does not re-encode it at quality 75 — the
             optimizer pass is what made the mark look soft). `priority` so the
@@ -43,9 +44,9 @@ export default function SiteHeader() {
           className="flex shrink-0 items-center self-center"
         >
           <Image
-            src="/brand/banded-stacks.png"
+            src="/brand/cash-stack.png"
             alt=""
-            width={111}
+            width={109}
             height={88}
             priority
             unoptimized
