@@ -79,7 +79,8 @@ export type MarketsVerdict = {
   watchlist_mentions: WatchlistMention[];
   dont_buy: DontBuy[];
   trade_setups: TradeSetup[];
-  bear_case: string;
+  /** Retired 2026-09-03: routines no longer write it; never rendered. */
+  bear_case?: string;
   body_mdx: string;
 };
 
@@ -191,7 +192,8 @@ export type CryptoVerdict = {
   watchlist_mentions: WatchlistMention[];
   dont_buy: DontBuy[];
   trade_setups: TradeSetup[];
-  bear_case: string;
+  /** Retired 2026-09-03: routines no longer write it; never rendered. */
+  bear_case?: string;
   body_mdx: string;
 };
 
@@ -262,7 +264,8 @@ export type KospiVerdict = {
   watchlist_mentions: WatchlistMention[];
   dont_buy: DontBuy[];
   trade_setups: TradeSetup[];
-  bear_case: string;
+  /** Retired 2026-09-03: routines no longer write it; never rendered. */
+  bear_case?: string;
   body_mdx: string;
 };
 
@@ -528,7 +531,7 @@ function synthesizeBriefingBody(v: SynthesizableVerdict): string {
   }
 
   // No bear-case section — retired 2026-08-03, same as in the authored bodies.
-  // The verdict JSON still carries `bear_case`; it just isn't rendered.
+  // `bear_case` stopped being written on 2026-09-03; older files still carry it.
 
   return out.join("\n");
 }

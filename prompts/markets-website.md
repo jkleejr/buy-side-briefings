@@ -11,7 +11,23 @@ Reports should read like a **professional research note**, not a blog post or in
 - **Third-person analytical voice.** Avoid "I think," "my view," "a smart bear of MY call would say." Use "the data suggests," "the setup implies," "counter-argument:" etc.
 - **No meta or introspective phrases.** Avoid "the most uncomfortable observation," "am I getting too confident," "honest watch," "the meta thing is," "gut check." These belong in a personal blog, not a research note.
 - **Lead with the finding and the data.** Every section opens with a finding or claim, not a framing.
-- **Bear case as counter-thesis.** The JSON's `bear_case` field is the strongest argument *against* the read, written as if a different desk wrote it. Do not write it as your own self-doubt. It no longer gets a section in the body — see the retired sections below.
+- **Balanced, factual, not swayed.** Weigh the evidence on both sides inside
+  the read itself and state only what it supports. Separate what happened
+  (sourced numbers) from what it means (interpretation), and make clear which
+  is which. Where the evidence conflicts, say so in a sentence rather than
+  siding with the louder story. Say what is uncertain. A reader should be able
+  to reach a different conclusion from the same facts without feeling misled.
+- **Headlines, descriptions and headings must not mislead.** `verdict.headline`,
+  `rationale_short`, the lede and every section heading have to be supported
+  by numbers in the body. Size the words to the move: a 0.7% decline is not a
+  rout, "crack" needs a level that actually broke, "surge", "collapse" and
+  "crisis" need the magnitude to earn them. Do not imply causation the sources
+  do not state: "as" and "after" are not "because". The headline names the
+  day's real story at the size it actually happened.
+- **Insight over recap.** The value of the report is what the numbers mean
+  together and what they say about what comes next, stated plainly and sourced.
+  A section that only restates prices the table already shows is not earning
+  its words.
 - **Levels that would change the picture, explicitly stated** at the end of every read: "If SPX reclaims X, this read no longer holds." State the level; do not turn it into an instruction.
 - **Italics for ticker names or terminology only.** Not for emphasis on personal feeling.
 - **Density over length.** The reader's time is the scarce resource, not the
@@ -151,9 +167,11 @@ conviction rating.
 The `trade_setups` field in the JSON keeps its shape (other parts of the site
 read it), but `thesis` describes the situation rather than recommending it.
 
-Also write the **strongest counter-argument** to the read — 2–3 sentences in
-clean third-person voice. End with the level that would flip it: "If SPX
-reclaims X, this read no longer holds."
+Do not write a separate counter-argument. `bear_case` is no longer written
+(2026-09-03): no page ever rendered it, and a one-sided read plus a bolted-on
+rebuttal is not balance. The balance belongs inside the read: where the
+evidence cuts both ways, say so there, and end the read with the level or
+event that would change the picture.
 
 ## Step 5 — Write the verdict JSON
 
@@ -196,7 +214,6 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
       "invalidation": "what would break it", "horizon": "..."
     }
   ],
-  "bear_case": "2-3 sentences in third-person voice, ending with explicit invalidation level.",
   "body_mdx": "data/briefings/markets/YYYY-MM-DD-window.mdx"
 }
 ```
@@ -384,8 +401,8 @@ spends word budget that belongs to the read:
 - `## Major Stocks` — replaced by the shorter, ranked `## Movers` (2026-08-29).
   It listed every name checked, including the ones that did nothing.
 
-The verdict JSON still carries `regime_risk` and `bear_case`; keep filling
-both fields. What changes is only what the body renders.
+The verdict JSON still carries `regime_risk`; keep filling it. `bear_case` is
+no longer written (2026-09-03). What changes is only what the body renders.
 
 **Reference the most recent report on disk** for *voice* — the analytical
 register, the way a claim is stated and sourced. Nothing else.
