@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-09-04",
+  "window": "morning",
+  "generated_at": "2026-09-04T12:29:31Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "September Fed hike odds slid to a coin flip while oil had its biggest weekly run since July",
+    "label": "S&P 7,747.71 into August payrolls; hike odds near a coin flip, WTI +10.4% on the week",
+    "rationale_short": "Thursday's 1.06% gain repriced the September FOMC on Governor Waller's support for a hold, which he made explicitly conditional on inflation not surprising higher. CME FedWatch odds of a hike fell roughly 12 points on the remarks, from about 67% to a coin flip. Over the same week the inflation inputs moved the other way: WTI rose 10.4% and Brent 7.6% on Hormuz shipping risk, US average diesel prices set a record, and ISM services prices paid printed 72.6 against 70.3. Three releases resolve Waller's condition before the September 15-16 decision — August payrolls this morning, PPI on the 10th, CPI on the 11th. The labour side has been consistently soft (ADP 38,000, ISM services employment 47.8, July payrolls -23,000 with 103,000 of downward revisions), so a soft print is what the price already assumes; a payrolls number above roughly 150,000 with firm average hourly earnings is the outcome that restores the hike odds Waller removed and puts the 10-year back through 4.818%. A second complication sits underneath the dollar: the yen's move to 155.28 owes as much to Bank of Japan hike bets after Deputy Governor Himino's inflation comments as to the Fed, and the BOJ decides September 18, two days after the FOMC. With the VIX at 14.32 and futures roughly flat pre-print, positioning leaves little cushion in either direction.",
+    "lede_short": "Thursday's rally cut September hike odds to a coin flip on Governor Waller's support for a hold — support he made conditional on inflation behaving. This week it did not: WTI rose 10.4%, US diesel prices set a record, and ISM services prices paid printed 72.6. Payrolls this morning, PPI on the 10th and CPI on the 11th all land before the September 15-16 decision, and the soft labour outcome is the one already in the price.",
+    "supporting_data": [
+      {
+        "label": "Waller said he would support a September hold — \"Give disinflation a chance. We can wait one meeting\" — and CME hike odds fell about 12 points to a coin flip, but he conditioned it on the data, warning \"it may not take much acceleration in inflation to nudge me into supporting tighter policy\"",
+        "url": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html"
+      },
+      {
+        "label": "WTI rose 10.4% on the week and Brent 7.6%, the steepest weekly gains since mid-July, with US average diesel prices at a record — the energy pass-through reaches PPI on September 10 before it reaches CPI",
+        "url": "https://www.investing.com/news/commodities-news/oil-prices-set-for-weekly-gain-as-usiran-hostilities-intensify-4888883"
+      },
+      {
+        "label": "ADP put August private payrolls at 38,000 against 48,000 expected, the weakest since January, with manufacturing down 17,000 and professional and business services down 16,000 — the hiring left is in health and education, not the cyclical economy",
+        "url": "https://www.prnewswire.com/news-releases/adp-national-employment-report-private-sector-employment-increased-by-38-000-jobs-in-august-302867661.html"
+      },
+      {
+        "label": "ISM Services registered 55.4% in August with prices paid at 72.6 against 70.3 and employment at 47.8 in contraction — activity is still expanding at a cost base that has not cooled, and without hiring behind it",
+        "url": "https://www.prnewswire.com/news-releases/services-pmi-at-55-4-august-2026-ism-services-pmi-report-302868046.html"
+      },
+      {
+        "label": "July payrolls fell 23,000 against 83,000 expected and May and June were revised down a combined 103,000 — the revision record is why one in-line August print settles less than the market is treating it as settling",
+        "url": "https://www.cnn.com/2026/08/07/economy/us-jobs-report-july"
+      },
+      {
+        "label": "The yen reached 155.28 per dollar, its strongest in a month, on Bank of Japan hike bets after Deputy Governor Himino flagged upside inflation risks — the BOJ decides September 18, two days after the FOMC",
+        "url": "https://www.cnbc.com/2026/09/03/yen-japan-intervention-boj.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7747.71, "change_pct": 1.06, "as_of": "2026-09-03T20:00:00.000Z" },
+    "nasdaq": { "level": 26584.06, "change_pct": 1.40, "as_of": "2026-09-03T20:00:00.000Z" },
+    "vix": { "level": 14.32, "change_pct": -5.79, "as_of": "2026-09-03T20:15:00.000Z" },
+    "ust10y": { "level": 4.74, "change_bps": -4, "as_of": "2026-09-03T20:00:00.000Z" },
+    "dxy": { "level": 98.97, "change_pct": -0.63, "as_of": "2026-09-03T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.25, "trigger_above": 5.30, "unit": "%" },
+    { "name": "10Y Yield", "value": 4.74, "trigger_above": 4.818, "unit": "%" },
+    { "name": "SPX vs 7,700", "value": 7747.71, "trigger_below": 7700, "unit": "index" },
+    { "name": "Crude Oil (WTI)", "value": 91.36, "trigger_above": 95.0, "unit": "$/bbl" },
+    { "name": "DXY", "value": 98.97, "trigger_below": 98.0, "unit": "index" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "TSLA", "note": "Closed +5.4% at $376.37 before the Cybercab reveal; 45 vehicles are authorised for commercial robotaxi use in Texas, so the deployment is small relative to the pre-event move.", "sentiment": "neutral" },
+    { "ticker": "BTC-USD", "note": "Above $81,000, up 5.1% from Thursday's open, on the largest ETF inflow in nine months after the Waller repricing. The most rate-sensitive asset on the list and the first to give it back if hike odds rebuild.", "sentiment": "positive" },
+    { "ticker": "CL=F", "note": "WTI $91.36, up 10.4% on the week on Hormuz transit risk — the largest macro move of the week and the input most likely to show in the September 10 PPI print.", "sentiment": "negative" },
+    { "ticker": "GC=F", "note": "Gold $4,469.69, a third consecutive up session, tracking the fall in real rates rather than a haven bid.", "sentiment": "positive" },
+    { "ticker": "^VIX", "note": "14.32 into a binary payrolls print, below the mid-September seasonal median near 18. Reported as data, not as a threshold.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-Year Treasury",
+      "thesis": "The long end has come off a three-year high on a repricing of Fed expectations rather than on softer inflation data. August payrolls, PPI on September 10 and CPI on September 11 all land before the September 15-16 decision, and energy has moved against the disinflation case all week.",
+      "entry": "4.70% on the downside and 4.818% — Wednesday's three-year high — on the upside define the range the print resolves.",
+      "invalidation": "A close through 4.818% says the hold repricing has been given back; a sustained break below 4.70% says the market is pricing the condition as met.",
+      "horizon": "Through the September 15-16 FOMC"
+    },
+    {
+      "asset": "Crude oil and the September inflation prints",
+      "thesis": "WTI +10.4% and Brent +7.6% on the week, with US average diesel at a record, is a cost-push input arriving four trading days before August PPI. Producer prices are where energy and tariff pass-through registers before consumer prices, and Canada's retaliatory tariffs take effect September 8.",
+      "entry": "WTI holding above $90 and Brent above $95 keeps the pass-through live into the September 10 PPI print.",
+      "invalidation": "A de-escalation in Hormuz transit risk that takes WTI back under $85 removes the energy leg of the inflation argument before PPI.",
+      "horizon": "September 8-11"
+    },
+    {
+      "asset": "USD/JPY",
+      "thesis": "The yen's move to 155.28, its strongest in a month, is being driven by Bank of Japan hike bets after Deputy Governor Himino's comments on upside inflation risk as much as by the Fed. The BOJ decides September 18, two days after the FOMC, so the currency has a domestic driver that does not depend on the US print.",
+      "entry": "155 on the downside and 158 on the upside bracket whether this is a repricing of the funding currency or a one-day reaction.",
+      "invalidation": "A move back above 158 says Thursday was a Fed story alone and the BOJ leg was overstated.",
+      "horizon": "Through the September 18 BOJ decision"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-04-morning.mdx"
+}
