@@ -49,7 +49,13 @@ export default async function BriefingPage({
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-14 pt-6 sm:px-6 sm:pt-[39px]">
-      <article className="max-w-3xl space-y-4">
+      {/* The reading measure is narrower than the shell the rest of the site
+          uses, so it needs its own centring: a bare max-w-3xl inside a
+          max-w-5xl parent has no auto margins and pins the column to the left
+          edge, which on a wide screen reads as a layout fault rather than as a
+          measure — the text and the rules beside it sat left with a third of
+          the page empty to their right. */}
+      <article className="mx-auto max-w-3xl space-y-4">
       <Link
         href="/briefings"
         className="block w-fit font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
