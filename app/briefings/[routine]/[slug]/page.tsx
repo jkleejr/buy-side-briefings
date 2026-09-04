@@ -249,13 +249,19 @@ function starRank(label: string): number {
 }
 
 /**
- * The three bullets anyone can read at a glance: the highest-priority points,
- * cut to their first clause. The full sourced versions live one tier below.
+ * The bullets anyone can read at a glance: the highest-priority points, cut to
+ * their first clause. The full sourced versions live one tier below.
+ *
+ * Five, raised from three on 2026-09-04. The verdicts carry 6-7 points, so at
+ * three the glance was showing under half of what the day actually turned on
+ * and the tier read as a teaser rather than a summary. Five is the ceiling: a
+ * sixth pushes the sourced tier below the fold on a laptop, which is where the
+ * reader is supposed to go next.
  */
 function glanceBullets(points: SupportingPoint[]): string[] {
   return [...points]
     .sort((a, b) => starRank(b.label) - starRank(a.label))
-    .slice(0, 3)
+    .slice(0, 5)
     .map((p) => {
       const clean = stripMarks(p.label);
       let cut = clean.length;

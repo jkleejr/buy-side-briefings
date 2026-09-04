@@ -166,6 +166,26 @@ retired *the call*, not the evidence: `headline`, `label`, `rationale_short` and
 `supporting_data` all remain mandatory. Write every entry with a real `label`
 carrying a number and a real `url`.
 
+**Every label must carry its significance, not just its number.** These entries
+are read twice: as "News today" on the home page, and — the top five, ranked —
+as the glance bullets at the top of the report, which for a hurried reader are
+the whole report. A label that stops at the print is a data dump in both places.
+State the number, then what it means, in the same breath:
+
+> ✗ ISM Services PMI registered 55.4% in August, up 1.3 points from 54.1%, with
+>   prices paid at 72.6 against 70.3, business activity 61.7, new orders 60.9
+>   and employment at 47.8 — in contraction
+>
+> ✓ ISM Services rose to 55.4% while its employment index fell to 47.8 — the
+>   economy is expanding on activity the labour market is no longer hiring for,
+>   and prices paid at 72.6 says the cost side has not cooled with it
+
+Same numbers, one fewer of them, and the reader now knows why the print
+mattered. Cut the secondary sub-indices that carry no argument; keep the two or
+three that do and say what they add up to. The consequence goes AFTER an em
+dash, never after a semicolon — the glance bullet truncates on the first
+semicolon, so anything you put there is dropped from the top of the report.
+
 **What those entries are about — in priority order.** The home page is a front
 page. Rank candidates by how much they matter to someone deciding where markets
 go next, not by whether we happen to follow the ticker:
