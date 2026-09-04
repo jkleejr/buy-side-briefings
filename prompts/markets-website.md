@@ -350,14 +350,17 @@ room on evidence: the number behind the claim, the mechanism linking two moves,
 the level that would falsify the read. If the day is genuinely thin, come in
 under; the budget is a ceiling with a floor, not a quota to fill.
 
-Per section, as a ceiling — under is fine, over is not. These sum to the
-budget; there is no slack to redistribute:
+Per section, as a ceiling — under is fine, over is not. These sum to roughly
+the budget; there is no slack to redistribute. The words cut from
+"What changed / Why it happened" on 2026-09-04 are not freed for other
+sections — that section was carrying twice the length its job needs, and the
+report is meant to come in shorter for it:
 
 | section | morning | night |
 |---|---|---|
 | The read (paragraph + bullets) | 280 | 320 |
 | Snapshot (table) | 140 | 170 |
-| What changed / Why it happened | 280 | 330 |
+| What changed / Why it happened | 170 | 190 |
 | Movers | 220 | 250 |
 | What to watch | 260 | 280 |
 | Next 5 Trading Days (night, table) | — | 350 |
@@ -438,11 +441,19 @@ not investment advice"; it is not rendered anywhere on the site any more.
    and crypto always; single names only if they moved or carry news. No prose
    under the table — if a European or Asian close matters, it is a row.
 4. `## What changed since last report` (morning) or `## Why it happened`
-   (night) — 2 paragraphs, and they answer *why*, not *what*. The what is in
-   the read and the table already. This is also where the tape view lives: the
-   base/bull/bear cases as one line each with a probability and a level, and
-   the levels that would change the picture. Continuity with the prior
-   report's call goes here, in a sentence, not a section.
+   (night) — the mechanism, and nothing else. It answers *why*; the *what* is
+   already in the read and the table, so restating either wastes the section.
+
+   **Keep it short and direct.** One tight paragraph, or 3-4 bullets — whichever
+   carries the reasoning in fewer words. Prefer bullets when the causes are
+   separate and parallel (one cause per bullet, each with the number that
+   evidences it); prose only when they form a chain, where the point is that A
+   moved rates which repriced B. No throat-clearing, no scene-setting, no
+   re-telling the headline: every line names a cause and its evidence.
+
+   Continuity with the prior report goes here as one sentence. The levels that
+   would change the picture go here too, as one line — if the section is running
+   long, the *why* wins and the levels move to `## What to watch`.
 5. `## Movers` — only names that moved ~2%+ or carry news, **maximum 5**, one
    sentence each: the move, the reason, and the level that would change it. A
    name already carried by the read gets no bullet here. Fewer than five is a
