@@ -1,19 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-09-03",
-      "label": "ISM Services (10:00 AM ET) — consensus 54.5 vs 54.1 prior; the prices component is the tell",
-      "kind": "MACRO",
-      "time_et": "10:00 AM",
-      "tickers": [
-        "SPY",
-        "QQQ",
-        "XLE",
-        "AVGO"
-      ],
-      "note": "Updated Sep 3 morning: consensus revised to 54.5 against 54.1 prior; weekly jobless claims at 8:30 AM ET expected 205K vs 203K. Services is two-thirds of the economy and where a $95 barrel reaches consumer prices first. A services prices component above 70 makes the manufacturing Prices Index at 71.1 a trend rather than a sector quirk — and the Beige Book already reported input prices rising strongly under tariffs and energy while selling prices held moderate. Also the first full session for AVGO (-2.5% pre-market on a Q4 guide $230M light) and HPE (-3% despite beating on revenue, EPS and next-quarter guidance), against SNOW +24% — the test of whether the market is now paying for AI consumption in reported revenue rather than AI capex guided forward."
-    },
-    {
       "date": "2026-09-04",
       "label": "August jobs report (BLS, 8:30 AM ET) — consensus ~50-55K, unemployment 4.1%, average hourly earnings 3.0% YoY",
       "kind": "MACRO",
@@ -25,7 +12,7 @@
         "QQQ",
         "IWM"
       ],
-      "note": "Updated Sep 2 night: ADP printed 38,000 and moved September hike odds only four points, to ~64% from 68.2%, so the BLS print carries the whole resolution. The two series have diverged sharply this year — July payrolls fell 23,000 against an +83,000 consensus. A print near consensus with average hourly earnings at or under 0.3% is what breaks the hike trade and pulls odds under 50%; above 150,000 with hot earnings extends it and pressures a 30Y close above 5.30%. Last major labour print before the Sep 15-16 FOMC."
+      "note": "Updated Sep 3 night: Waller's support for a September hold cut CME hike odds roughly 12 points to about 54.6%, so the print now lands into a tape already positioned for the dovish outcome — VIX 15.20 (-7%), 10Y 4.74%. Three labour signals point soft: ADP 38,000, ISM services employment 47.8 in contraction, continuing claims 1.78 million. That makes the hot print the asymmetric one: above 150,000 with firm average hourly earnings restores the odds Waller removed and puts the 10-year back through 4.818%. Near consensus with earnings at or under 0.3% confirms the hold and pushes the 10-year through 4.70%. Last major labour print before the Sep 15-16 FOMC."
     },
     {
       "date": "2026-09-07",
@@ -73,8 +60,36 @@
       "note": "Added Aug 19 night: Treasury Secretary Bessent announced August 19 the department will double the size of long-dated bond buyback operations, raising the maximum per-operation from $2B to at least $4B for bonds maturing in the 10-to-20-year and 20-to-30-year ranges. Effective September 9, runs through November 4 (end of current refunding quarter). The program provides structural demand support for the long end. If underlying supply dynamics overwhelm the $4B+ buyback, the 30Y could reassert above 5.25% before or during the program. BTC's structural debasement bid is partially underwritten by the buyback program as a signal of Treasury demand-management. Updated Sep 2 night: the 30Y closed near 5.26% in a fourth session inside 5.30%, having traded through the level twice without a close above it. The buyback bid arrives after Friday payrolls rather than before it, so the level is tested unsupported first."
     },
     {
+      "date": "2026-09-10",
+      "label": "August PPI (8:30 AM ET) — first of the two inflation prints Waller's hold is conditioned on",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "tickers": [
+        "TLT",
+        "SPY",
+        "QQQ",
+        "GLD"
+      ],
+      "note": "Added Sep 3 night: producer prices are where tariff and energy pass-through shows up before it reaches CPI, and they arrive two days after Canada's retaliatory tariffs take effect. ISM services prices paid at 72.6 and manufacturing prices at 71.1 argue the risk is to the upside. Waller said it 'may not take much acceleration in inflation' to move him back toward tightening, so this is the first of two prints that can undo the ~12-point repricing of September 3."
+    },
+    {
+      "date": "2026-09-11",
+      "label": "August CPI (8:30 AM ET) — the last inflation print before the FOMC, four trading days out",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "tickers": [
+        "TLT",
+        "SPY",
+        "QQQ",
+        "IWM",
+        "GLD",
+        "BTC"
+      ],
+      "note": "Added Sep 3 night: the print that resolves Waller's condition with no scheduled Fed communication left to soften it. Core CPI at or under 0.3% month over month keeps the hold intact; above 0.3% re-arms the hike inside four trading days of the September 15-16 decision, and would reverse the September 3 rally on the same mechanism that produced it."
+    },
+    {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — September rate path; futures price a hike above 66%, Kalshi at 26%",
+      "label": "FOMC decision (Sep 15-16) — September rate path; hike odds ~54.6% after Waller backed a hold",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -84,7 +99,7 @@
         "GLD",
         "BTC"
       ],
-      "note": "Updated Sep 2 night: ADP at 38,000 — the weakest private hiring since January — moved September hike odds only to ~64% from 68.2%, leaving Friday BLS payrolls as the print that resolves the venue dispersion between fed funds futures and Kalshi. The Beige Book published Sep 2 described the bind directly: input prices rising strongly under tariffs and energy, selling-price increases only moderate, the pace of increases slowing in three of twelve districts and unchanged in eight. That is margin compression rather than disinflation, and it is why a labour miss bought no dovish repricing — gold fell 2.86% and silver 3.73% on the same session. The 30Y sat near 5.26%, inside the 5.30% trigger for a fourth session. Canada retaliatory tariffs (Sep 8) and Treasury long-dated buybacks (Sep 9) both land inside the window."
+      "note": "Updated Sep 3 night: Governor Waller told a Reuters event he would support holding — 'Give disinflation a chance. We can wait one meeting' — and CME September hike odds fell about 12 points to roughly 54.6%, still above even. The hold is explicitly conditional: policy is 'only slightly restricting aggregate demand' and 'it may not take much acceleration in inflation to nudge me into supporting tighter policy.' August PPI (Sep 10) and CPI (Sep 11) both resolve that condition before the decision, with ISM services prices paid at 72.6 and manufacturing prices at 71.1 arguing the risk is to the upside. Canada retaliatory tariffs (Sep 8) and Treasury long-dated buybacks (Sep 9) land inside the window. One governor is not the committee."
     },
     {
       "date": "2026-12-09",

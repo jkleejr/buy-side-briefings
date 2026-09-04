@@ -1,0 +1,103 @@
+{
+  "routine": "markets",
+  "date": "2026-09-03",
+  "window": "night",
+  "generated_at": "2026-09-04T00:14:36Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "A Fed governor said wait one meeting and stocks took their best day since August 4",
+    "label": "S&P 500 +1.06% to 7,747.71, Dow +624.16 to 53,686.11, Nasdaq +1.40% to 26,584.06, Russell 2000 +0.51% to 2,968.28. Waller's support for a September hold cut CME hike odds roughly 12 points to about 54.6%; the 10-year eased to 4.74% from Wednesday's 4.818% three-year high and the dollar hit its weakest since May, USD/JPY -1.80% to 155.86. ISM Services printed 55.4 with prices paid at 72.6 and employment at 47.8. Gold $4,427.99 (+0.92%), BTC $81,491.82 (+5.5%), VIX 15.20 (-7%). August payrolls Friday at 8:30 AM ET.",
+    "rationale_short": "The session repriced the Fed on a committee member's words rather than on data: Waller's 'give disinflation a chance, we can wait one meeting' moved September hike odds about 12 points in minutes, and every asset that trades off real rates followed — gold, silver, bitcoin and the small caps. The inflation evidence moved the other way on the same morning, with ISM services prices paid at 72.6 against 70.3 and manufacturing prices at 71.1. Waller conditioned the hold on inflation not surprising to the upside, and the two prints that resolve that condition — PPI September 10 and CPI September 11 — both land before the September 15-16 decision. A payrolls print above 150,000 tomorrow, or a core CPI above 0.3% month over month, restores the hike odds this session removed.",
+    "supporting_data": [
+      {
+        "label": "Waller said he would support holding rates steady in September — 'What's the cost of waiting one meeting? Hiking 25 basis points, one meeting right now, is not going to bring the CPI down to 2%' — while adding that new data before the meeting could change his position",
+        "url": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html"
+      },
+      {
+        "label": "CME FedWatch odds of a September hike fell roughly 12 percentage points to about 54.6% within minutes of the remarks",
+        "url": "https://investinglive.com/education/how-waller-moved-the-fed-rate-hike-odds-by-12-points-in-minutes-a-look-inside-cme-fedwatch/"
+      },
+      {
+        "label": "ISM Services PMI registered 55.4% in August, up 1.3 points from 54.1%, with prices paid at 72.6 against 70.3, business activity 61.7, new orders 60.9 and employment at 47.8 — in contraction",
+        "url": "https://www.prnewswire.com/news-releases/services-pmi-at-55-4-august-2026-ism-services-pmi-report-302868046.html"
+      },
+      {
+        "label": "The dollar fell to its weakest level since May and the yen surged, USD/JPY down 1.80% to 155.86, as traders pared rate-hike expectations",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-03/dollar-falls-to-weakest-since-may-on-waller-comments-yen-surge"
+      },
+      {
+        "label": "Nvidia confirmed a $12.93 billion acquisition of Hugging Face — about $11.9 billion to stockholders plus up to $1.0 billion in employee retention equity — for a platform hosting three million models and half a million datasets used by 18 million developers; its second-largest deal after December's $20 billion Groq asset purchase, expected to close in the first half of 2027",
+        "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/"
+      },
+      {
+        "label": "Initial jobless claims rose to 206,000 with continuing claims at 1.78 million as the 10-year Treasury yield eased to about 4.74% from Wednesday's three-year high",
+        "url": "https://www.cnbc.com/2026/09/03/us-treasury-yields-bonds.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7747.71,  "change_pct": 1.06,  "as_of": "2026-09-03T20:00:00Z" },
+    "nasdaq": { "level": 26584.06, "change_pct": 1.40,  "as_of": "2026-09-03T20:00:00Z" },
+    "vix":    { "level": 15.20,    "change_pct": -7.00, "as_of": "2026-09-03T20:15:00Z" },
+    "ust10y": { "level": 4.74,     "change_bps": -4,    "as_of": "2026-09-03T20:00:00Z" },
+    "dxy":    { "level": 99.51,    "change_pct": -0.05, "as_of": "2026-09-03T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield",   "value": 5.27,  "trigger_above": 5.30,  "unit": "%" },
+    { "name": "10Y Yield",   "value": 4.74,  "trigger_above": 5.00,  "unit": "%" },
+    { "name": "Brent Crude", "value": 95.80, "trigger_above": 85.0,  "unit": "USD" },
+    { "name": "BTC Gate 2",  "value": 81492, "trigger_below": 62000, "unit": "USD" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Up about 1.4% at midday on confirmation of the $12.93 billion Hugging Face acquisition — roughly 0.3% of market capitalisation, and a purchase of distribution rather than capacity: the layer where 18 million developers choose which models to run. The muted reaction says the market treats it as strategic rather than financial, and it closes in the first half of 2027 subject to regulatory approval.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Up 7.1% to roughly $382, its best day in months, entirely ahead of the Cybercab unveil in Austin at 5:45 PM ET. The whole move preceded the event, so Friday trades the reveal against a price that already assumes it — the setup that produces a muted or negative reaction unless the event carries specifics on volume and timing.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Down 3.40% in a second full session of selling, after Q3 AI semiconductor revenue of $16.7 billion grew 221% and Q4 total revenue guidance came in $230 million light. Two sessions makes it a repricing of the guide rather than an overnight reaction, and it happened on a day the index rose 1.06%.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Settled $4,427.99, up 0.92%, a second consecutive gain after four straight declines, with silver up 1.42% to $66.24. The metal is tracking the dollar and real yields — it rose as DXY hit its weakest since May — rather than the Gulf, the framing that has held all week.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "^VIX",
+      "note": "15.20, down 7%, the lowest close of the week going into a binary payrolls print. Volatility is being sold into the event rather than bought, which is the same positioning that made Wednesday's ADP miss and today's hot ISM prices component so cheap to ignore.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "August payrolls (SPY, QQQ, IWM, TLT)",
+      "thesis": "The tape enters Friday's print already positioned for the outcome it wants. Hike odds sit near 54.6% after Waller, the VIX closed at 15.20, and three labour signals point soft — ADP at 38,000, ISM services employment at 47.8 in contraction, and continuing claims at 1.78 million. What is forming is asymmetry: the soft print is largely in the price, the hot one is not.",
+      "entry": "Consensus is roughly 50,000-55,000 with unemployment at 4.1% and average hourly earnings 3.0% year over year; 150,000 is the level above which the repricing reverses",
+      "invalidation": "A print near or below consensus with average hourly earnings at or under 0.3% confirms the hold and pushes the 10-year through 4.70%",
+      "horizon": "Resolves at 8:30 AM ET Friday, September 4"
+    },
+    {
+      "asset": "August PPI and CPI (September 10 and 11)",
+      "thesis": "Waller's support for a hold is explicitly conditional on inflation not surprising to the upside, and he said it may not take much acceleration to move him the other way. The leading evidence points up: ISM services prices paid at 72.6 against 70.3, manufacturing prices at 71.1, and Canada's retaliatory tariffs taking effect September 8, two days before PPI. Both prints land before the September 15-16 decision with no scheduled Fed communication left to soften them.",
+      "entry": "Core CPI at or under 0.3% month over month keeps the hold intact; above 0.3% re-arms the hike inside four trading days of the meeting",
+      "invalidation": "A services prices component that turns lower in the September ISM, or a PPI that shows tariff pass-through stalling, removes the condition",
+      "horizon": "September 10-11, four and three trading days before the FOMC"
+    },
+    {
+      "asset": "USD/JPY and global duration",
+      "thesis": "The dollar closed at its weakest since May with the yen up 1.80% at 155.86, and that is the cleanest test of whether Thursday was a US-specific repricing or a global one. A yen that keeps appreciating tightens conditions in the funding currency behind a large share of global duration positioning — the same channel that took the Nikkei down 2.85% on Wednesday, before it closed 0.17% lower today at 64,214.48.",
+      "entry": "155.86 is the level; continued appreciation extends the pressure on carry structures",
+      "invalidation": "A reversal back above 158 says the dollar move was a one-day reaction to one speech",
+      "horizon": "Through the September 15-16 FOMC, with the Bank of Japan meeting behind it"
+    }
+  ],
+  "bear_case": "One governor is not the committee, and Waller has been the dovish outlier on this one before. The data that arrived on the same session argued the other way: services prices paid at 72.6 is the hottest reading of the cycle, it sits alongside manufacturing prices at 71.1, and Canada's retaliatory tariffs add a fresh cost-push input on September 8. Hike odds at 54.6% are still above even, meaning the market's own base case remains a hike despite a 1.06% rally, and a VIX at 15.20 into a payrolls print prices no risk of being wrong. If August payrolls print above 150,000 with firm average hourly earnings, or core CPI comes in above 0.3% month over month on September 11, hike odds return above 65% and the 10-year retakes 4.818% — at which point Thursday's gain reverses on the identical mechanism that produced it.",
+  "body_mdx": "data/briefings/markets/2026-09-03-night.mdx"
+}
