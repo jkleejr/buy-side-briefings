@@ -26,6 +26,13 @@ prompts were updated to match on 2026-09-04; the two *report* routines pick it
 up from `prompts/markets-website.md`, which their own prompts tell them to read
 and treat as overriding.
 
+**Scenario probabilities are retired (2026-09-04).** "Base 60% / bull 25% /
+bear 15%" is a directional call wearing a percentage — the same thing the
+buy/hold/step-aside code was, at one remove. Reports state what would have to
+happen instead: the level, what breaking it would mean, what could break it.
+Probabilities the *market* charges for — CME FedWatch odds, options-implied
+moves — are data and stay. Rule lives in `prompts/markets-website.md`.
+
 **`verdict.code` is retired (2026-09-04) — do not write it.** The
 buy/hold/step_aside/bearish field outlived the call itself by six weeks: the
 routines kept emitting it and `MarketsVerdict` kept requiring it, while the only

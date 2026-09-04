@@ -396,14 +396,23 @@ order:
   claim.
 - **One sentence, one job.** Every sentence should carry a number, a source, or
   a consequence. A sentence doing none of those is padding.
-- **Scenarios are lines, not paragraphs.** Base/bull/bear gets a level and a
-  probability each, in one line or one table — never a paragraph each.
+- **No scenario probabilities, and no bull/bear framing.** Retired 2026-09-04,
+  for the reason the buy/hold/step-aside call was: "base 60% / bull 25% /
+  bear 15%" is a directional call wearing a percentage, and a number that
+  precise implies a rigour nothing behind it supports. Write what would have to
+  happen instead — the level, what breaking it would mean, and what on the
+  calendar could break it. "A payrolls print above 150,000 puts the 10-year
+  through 4.818%, which takes back more from software than from semis" informs;
+  "bear case, 20%" does not.
+  **Market-priced probabilities are data and stay** — CME FedWatch hike odds,
+  options-implied moves, anything a venue actually quotes. The retired thing is
+  a probability *we* assign to a direction, not one the market is charging for.
 - **Do not re-explain the framework.** The reader knows what the regime
   triggers are. State the level and the distance to it; skip the recap of why
   the trigger exists.
 
-Precision is not the thing being cut. Keep every citation, every level, every
-probability. The 4–6 sourced data points behind the read are a floor, not a
+Precision is not the thing being cut. Keep every citation and every level. The
+4–6 sourced data points behind the read are a floor, not a
 target — a shorter report with the same evidence is the goal, and a report
 that hits the word count by dropping evidence has failed the brief.
 
