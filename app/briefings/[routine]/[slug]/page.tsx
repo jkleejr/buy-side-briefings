@@ -202,11 +202,12 @@ function Tier({
   children: React.ReactNode;
 }) {
   return (
-    <section
-      className={`border-l-2 pl-4 sm:pl-5 ${
-        accent ? "border-[var(--cyan-term)]" : "border-[var(--border-strong)]"
-      }`}
-    >
+    // Only the glance tier carries a rule. The other two had one in the same
+    // place and weight, so instead of marking "this is the tier that matters"
+    // the device just striped the whole page — three rules down one edge read
+    // as a frame, not as emphasis. The indent stays on all three so the
+    // columns still line up under each other.
+    <section className={accent ? "border-l-2 border-[var(--cyan-term)] pl-4 sm:pl-5" : "pl-4 sm:pl-5"}>
       {label && (
         <div
           className={`font-mono text-[10.5px] uppercase tracking-[0.16em] ${

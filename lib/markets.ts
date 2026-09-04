@@ -31,6 +31,16 @@ const TICKER_STRIP: Array<{ symbol: string; label: string }> = [
   { symbol: "CL=F", label: "Oil" },
 ];
 
+/** The quote fields that reconstruct a daily bar — see appendQuoteBar. */
+type YQuoteBar = {
+  regularMarketPrice?: number;
+  regularMarketTime?: Date | number;
+  regularMarketOpen?: number;
+  regularMarketDayHigh?: number;
+  regularMarketDayLow?: number;
+  regularMarketVolume?: number;
+};
+
 type YQuote = {
   symbol?: string;
   regularMarketPrice?: number;
@@ -257,7 +267,7 @@ async function fetchChartBars(
     includePrePost: false,
   })) as { quotes?: YahooQuoteBar[] };
   const quotes = result?.quotes ?? [];
-  return quotes
+  const bars = quotes
     .filter((q): q is YahooQuoteBar & { date: Date; close: number } =>
       q.close != null && q.date != null,
     )
@@ -283,6 +293,60 @@ async function fetchChartBars(
       return bar;
     })
     .sort((a, b) => a.date.localeCompare(b.date));
+
+  return interval === "1d" ? appendQuoteBar(symbol, bars) : bars;
+}
+
+/**
+ * Close the gap between Yahoo's two feeds.
+ *
+ * The chart endpoint publishes a completed daily bar hours after the quote
+ * endpoint has that session's close. At 3:20am ET on 2026-09-04 the ^GSPC
+ * chart still ended at Sep 2 (7,666.60) while quote() already reported Sep 3's
+ * close of 7,747.71 — and no request shape recovers the missing bar (tried
+ * period1-only, period2=now, period2=now+30d; all returned the same 7 bars).
+ *
+ * The homepage reads both: the ticker strip from quote, the chart from bars.
+ * So the same index printed two different prices a session apart, and the
+ * chart's was a day stale.
+ *
+ * The quote is not just a price — it carries the whole session (open, day high,
+ * day low, price, volume), so the missing bar can be appended as a real OHLCV
+ * bar rather than a close-only stub that would draw as a hairline candle.
+ *
+ * Daily interval only: weekly and monthly bars aggregate sessions, so appending
+ * one day to them would be a different unit, and intraday bars are finer than a
+ * quote can reconstruct. Guarded on a strictly later UTC day, so the ordinary
+ * case — Yahoo already including the in-progress session, which is what happens
+ * during market hours and always for 24/7 crypto — appends nothing.
+ */
+async function appendQuoteBar(symbol: string, bars: ChartBar[]): Promise<ChartBar[]> {
+  if (!bars.length) return bars;
+  try {
+    const q = (await yahooFinance.quote(symbol)) as YQuoteBar;
+    const close = q?.regularMarketPrice;
+    const t = q?.regularMarketTime;
+    const when = t instanceof Date ? t : typeof t === "number" ? new Date(t * 1000) : null;
+    if (!when || !Number.isFinite(when.getTime()) || typeof close !== "number") return bars;
+
+    const day = when.toISOString().slice(0, 10);
+    if (day <= bars[bars.length - 1].date.slice(0, 10)) return bars;
+
+    const ok = (v: number | null | undefined): v is number =>
+      typeof v === "number" && Number.isFinite(v) && v > 0;
+    const bar: ChartBar = { date: when.toISOString(), close };
+    if (ok(q.regularMarketOpen)) bar.open = q.regularMarketOpen;
+    if (ok(q.regularMarketDayHigh)) bar.high = q.regularMarketDayHigh;
+    if (ok(q.regularMarketDayLow)) bar.low = q.regularMarketDayLow;
+    if (q.regularMarketVolume != null && Number.isFinite(q.regularMarketVolume)) {
+      bar.volume = q.regularMarketVolume;
+    }
+    return [...bars, bar];
+  } catch (err) {
+    // A missing quote is not a reason to lose the chart.
+    console.error(`[markets] quote-bar append failed for ${symbol}:`, err);
+    return bars;
+  }
 }
 
 export async function getChartSeries(
