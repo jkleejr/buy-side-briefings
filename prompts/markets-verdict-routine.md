@@ -66,6 +66,8 @@ The rule now is one owner per window:
   A second check with `git ls-tree origin/deploy` runs immediately before
   `git add`, in case the report published while the verdict was working. On a
   conflict the verdict abandons its own version.
+- Both were renamed with a `(backstop)` suffix on 2026-09-04 so the
+  routine list itself says which one runs the show.
 - So the verdict routines really write on **weekends, US market holidays, and
   any weekday the report run failed** — that last case is why they still fire
   daily rather than on a weekend-only cron.
@@ -74,11 +76,11 @@ The visible payoff: the home page headline and the report a reader clicks into
 always come from the same run, and a weekday morning deploys once instead of
 twice.
 
-- **Markets Verdict — Morning** (`trig_01Uvs8J4Hnm2gLZE3NZXHZrr`, cron
+- **Markets Verdict — Morning (backstop)** (`trig_01Uvs8J4Hnm2gLZE3NZXHZrr`, cron
   `30 12 * * *`, 8:30am ET daily — moved from 7:50 → 7:55 → 8:30 on 2026-09-04):
   premarket read — S&P futures, Nasdaq, VIX, 10Y, DXY, the 3-5 stories moving
   markets, today's calendar. Writes `data/verdicts/markets-<TODAY>-morning.json`.
-- **Markets Verdict — Night** (`trig_012oQHNd9A91W2UC6dgBKwt8`, cron
+- **Markets Verdict — Night (backstop)** (`trig_012oQHNd9A91W2UC6dgBKwt8`, cron
   `30 0 * * *`, 8:30pm ET daily — moved from 8:00pm on 2026-09-04): post-close
   read — closing levels, after-hours moves, what drove the session, setup into
   tomorrow. Writes `data/verdicts/markets-<TODAY>-night.json`.
