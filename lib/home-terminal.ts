@@ -58,8 +58,6 @@ export type BriefView = {
   timeLabel: string;
   readMin: number;
   metrics: MetricCard[];
-  sentiment: { label: string; pct: number };
-  code: string;
   headline: string;
   lede: string;
   ledeShort: string;
@@ -144,21 +142,6 @@ function pctStr(n: number | null | undefined): string {
 function dirOf(n: number | null | undefined): "up" | "down" | "flat" {
   if (n === null || n === undefined || !Number.isFinite(n) || n === 0) return "flat";
   return n > 0 ? "up" : "down";
-}
-
-function sentimentFor(code: string): { label: string; pct: number } {
-  switch (code) {
-    case "buy":
-      return { label: "BULLISH", pct: 84 };
-    case "hold":
-      return { label: "CONSTRUCTIVE", pct: 60 };
-    case "step_aside":
-      return { label: "MIXED", pct: 46 };
-    case "bearish":
-      return { label: "BEARISH", pct: 18 };
-    default:
-      return { label: "NEUTRAL", pct: 50 };
-  }
 }
 
 function headlineOf(v: MarketsVerdict): string {
@@ -449,11 +432,9 @@ function buildBrief(
     timeLabel: formatBriefingTime(v.generated_at) ?? (window === "morning" ? "8 AM ET" : "8 PM ET"),
     readMin: readMinutes(v),
     metrics: buildMetrics(v),
-    sentiment: sentimentFor(v.verdict.code),
-    code: v.verdict.code,
     headline: headlineOf(v),
     lede: ledeFrom(v.verdict.rationale_short),
-    ledeShort: mobileLedeFrom(v.verdict.rationale_short),
+    ledeShort: mobileLedeFrom(v.verdict.lede_short, v.verdict.rationale_short),
     keyPoints,
     keySignal: v.verdict.supporting_data?.[0]
       ? firstClause(v.verdict.supporting_data[0].label.replace(/^★\s*/, ""))
@@ -479,42 +460,81 @@ function buildBrief(
 // A phone gets a shorter cut of the same paragraph. At 640 characters the lede
 // ran eleven lines on a 390px screen and pushed the link into the briefing off
 // the bottom of the hero, so the first thing to do with the page was scroll
-// past it. The budget below is one or two whole sentences — the cut still
+// past it. The budget below is two or three whole sentences — the cut always
 // lands on a sentence boundary, never mid-clause with an ellipsis.
 const STANCE_SENTENCE =
   /^\s*(hold|buy|sell|stay|add|trim|fade|accumulate|reduce|upgrade|downgrade|remain)\b/i;
 const STANCE_PHRASE =
   /\b(upgrad\w+ to (a )?buy|downgrad\w+ to (a )?sell|warrants? (a )?(buy|sell|hold|upgrade|downgrade)|remains? a (buy|sell|hold))\b/i;
 
-const MOBILE_LEDE_CHARS = 220;
+/**
+ * The phone lede.
+ *
+ * Preferred source is `verdict.lede_short` — 2-3 sentences the routine writes
+ * for this slot, meant to carry the report's insight standing entirely on its
+ * own. That is the only version that is a summary; everything below is
+ * salvage for the days that don't have one.
+ *
+ * The fallback takes whole sentences off the front of `rationale_short`. It
+ * reads accurately — these rationales open with the thesis and follow it with
+ * the evidence — but it is the start of the read, not a précis of it, so a
+ * point made in the last sentence is simply absent. Counted in sentences
+ * rather than characters: a flat character budget produced a one-sentence lede
+ * most days, because these rationales open with a 250-300 character sentence
+ * and any budget tight enough to keep the hero short cut the second one off.
+ */
+const MOBILE_LEDE_MIN_SENTENCES = 2;
+const MOBILE_LEDE_MAX_SENTENCES = 3;
 
-// A first sentence that overruns the budget on its own is kept whole up to this
-// ceiling: one extra line on the phone reads better than an ellipsis dropped
-// mid-clause, which leaves the reader holding half a thought.
-const MOBILE_LEDE_CEILING = 320;
+/** Soft budget: a third sentence is only added if it fits inside this. */
+const MOBILE_LEDE_CHARS = 520;
 
-function mobileLedeFrom(rationaleShort: string | undefined): string {
-  const clamped = ledeFrom(rationaleShort, MOBILE_LEDE_CHARS);
-  if (!clamped.endsWith("…")) return clamped;
+/**
+ * Hard ceiling, the same length the desktop lede runs to. The first two
+ * sentences answer only to this — nothing shorter is allowed to drop the
+ * second one — and it is what a runaway single sentence is clamped against.
+ */
+const MOBILE_LEDE_CEILING = 640;
 
-  const first = (rationaleShort ?? "")
+/** Whole sentences, stance lines dropped, capped at MOBILE_LEDE_MAX_SENTENCES. */
+function usableSentences(text: string | undefined): string[] {
+  return (text ?? "")
     .trim()
     .split(/(?<=[.!?])\s+/)
     .filter(Boolean)
-    .find((s) => !STANCE_SENTENCE.test(s) && !STANCE_PHRASE.test(s));
+    .filter((s) => !STANCE_SENTENCE.test(s) && !STANCE_PHRASE.test(s))
+    .slice(0, MOBILE_LEDE_MAX_SENTENCES);
+}
 
-  if (!first) return clamped;
-  if (first.length <= MOBILE_LEDE_CEILING) return first;
+function mobileLedeFrom(
+  ledeShort: string | undefined,
+  rationaleShort: string | undefined,
+): string {
+  // A written lede is used as written, minus the two safety rails every string
+  // from the routines gets: no stance language, and a length the hero can hold.
+  const written = usableSentences(ledeShort);
+  if (written.length) return clampText(written.join(" "), MOBILE_LEDE_CEILING);
 
-  // Past the ceiling the sentence has to be cut. These rationales build long
-  // sentences out of clauses joined by an em dash or a semicolon, so stopping
-  // on one leaves a complete thought where a cut at an arbitrary word leaves
-  // the reader mid-clause.
-  const cut = first.slice(0, MOBILE_LEDE_CHARS);
-  const stop = Math.max(cut.lastIndexOf("; "), cut.lastIndexOf(" — "));
-  return stop > MOBILE_LEDE_CHARS * 0.5
-    ? `${cut.slice(0, stop).trim()}…`
-    : clamped;
+  const sentences = usableSentences(rationaleShort);
+
+  // Every sentence read as a stance — fall back to the shared builder, which
+  // clamps the raw text rather than leaving the hero empty.
+  if (!sentences.length) return ledeFrom(rationaleShort, MOBILE_LEDE_CHARS);
+
+  const kept: string[] = [];
+  let used = 0;
+  for (const sentence of sentences) {
+    const next = used + sentence.length + (kept.length ? 1 : 0);
+    const limit =
+      kept.length < MOBILE_LEDE_MIN_SENTENCES ? MOBILE_LEDE_CEILING : MOBILE_LEDE_CHARS;
+    // The first sentence is taken whatever its length; the clamp below is what
+    // handles the rare rationale that opens with a paragraph-long one.
+    if (kept.length && next > limit) break;
+    kept.push(sentence);
+    used = next;
+  }
+
+  return clampText(kept.join(" "), MOBILE_LEDE_CEILING);
 }
 
 function ledeFrom(rationaleShort: string | undefined, maxChars = 640): string {

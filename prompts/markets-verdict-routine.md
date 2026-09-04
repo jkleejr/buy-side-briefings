@@ -11,39 +11,109 @@ all come from it, so these files must keep being written.
 the site does not tell readers what to do with their money. Write
 `verdict.headline` (what happened, plain English) and `rationale_short` (the
 read — what it means and what would change it). Describe the tape; do not
-instruct the reader. If a sentence could be rewritten as "so buy X" or "so sell
-X", rewrite it as what the evidence shows instead — see
-`prompts/markets-website.md` Step 3. **The routine
-prompts live in the cloud account, not in this repo** — this file is the
+instruct the reader. If a sentence could be rewritten as "so buy X" or "so
+sell X", rewrite it as what the evidence shows instead — see
+`prompts/markets-website.md` Step 3.
+
+**`verdict.lede_short` is required (2026-09-03).** Two to three sentences that
+stand alone as the whole read — this is what a phone shows under the headline in
+place of `rationale_short`, so for most readers it is the only prose from the
+report they see. Write it last, from the finished report, and make it carry the
+insight rather than the opening. Under ~500 characters. Omitting it is not fatal
+— the site falls back to slicing the front off `rationale_short` — but the
+fallback is the start of the read, not a summary of it. Both cloud verdict
+prompts were updated to match on 2026-09-04; the two *report* routines pick it
+up from `prompts/markets-website.md`, which their own prompts tell them to read
+and treat as overriding.
+
+**`verdict.code` is retired (2026-09-04) — do not write it.** The
+buy/hold/step_aside/bearish field outlived the call itself by six weeks: the
+routines kept emitting it and `MarketsVerdict` kept requiring it, while the only
+consumer was a `sentimentFor()` helper whose output no component ever rendered.
+The field is now optional on the type, the dead view plumbing is gone, and both
+cloud prompts have been told to omit it. Files on disk keep theirs and still
+parse.
+
+**The routine prompts live in the cloud account, not in this repo** — this file is the
 in-repo source of truth. To change what a routine does, edit the cloud prompt
 to match this file.
 
-- **Markets Verdict — Morning** (`trig_01Uvs8J4Hnm2gLZE3NZXHZrr`, cron `50 11 * * *`,
-  fires 7:50am ET; see the timing note below): premarket read — S&P futures, Nasdaq, VIX, 10Y, DXY, the 3-5 stories
-  moving markets, today's calendar. Writes `data/verdicts/markets-<TODAY>-morning.json`.
-- **Markets Verdict — Night** (`trig_012oQHNd9A91W2UC6dgBKwt8`, cron `0 0 * * *`,
-  8pm ET): post-close read — closing levels, after-hours moves, what drove the
-  session, setup into tomorrow. Writes `data/verdicts/markets-<TODAY>-night.json`.
+**Sources (2026-09-04):** all four prompts now say to search the Wall Street
+Journal and Bloomberg every run for the read, and to cite the primary source
+underneath the story — the agency, the company release or filing, the exchange,
+or a free wire — because a paywalled link is a dead click for most readers. WSJ
+and Bloomberg are cited directly only for their own original reporting, flagged
+`(subscription)`. Working around a paywall is forbidden, as is citing a story
+the run could not actually read. Full rule: "Where to read vs. what to cite" in
+`prompts/markets-website.md`.
 
-The two report routines that write the MDX run on the same clock, weekdays
-only: **Morning markets report** (`trig_01DC21E5s31c9nWwJPnJsWgb`, cron
-`55 11 * * 1-5`, fires 7:55am ET) and **Night markets report**
-(`trig_01JZb1FRWVGhNtBRAgR7mZ1n`, cron `0 0 * * 2-6`, 8pm ET — Tue-Sat in UTC
-is Mon-Fri evening in New York).
+**Ownership: the report routine is the primary, the verdict routine is the
+backstop (changed 2026-09-04).** Both write the same
+`data/verdicts/markets-<date>-<window>.json`, from their own independent
+research — the report has never read the verdict. Until 2026-09-04 they simply
+raced, and the loser's work was thrown away or, worse, merged: `695713a`
+replaced `d629dda` wholesale on 09-03 (different headline, different
+supporting_data), and on 09-02 the collision produced `6507cf2`, a merge commit
+where a run had to arbitrate between two versions of the same file.
 
-**Timing target: finished between 8:00 and 8:45 ET, both windows.** The
-scheduler fires 5–27 minutes after a cron (2026-09-01: cron 12:05Z, fired
-12:32Z) and a run then takes 7–15 minutes, so a cron at 7:55am lands between
-8:07 and 8:37 at the observed extremes — inside the window from both ends.
-Firing earlier risked a fast run finishing before 8; firing at 8:05 risked a
-slow one finishing after 8:45. Night fires at 8:00pm and has landed 8:14–8:19.
+The rule now is one owner per window:
+
+- **Reports run first and own the file.** Morning 8:00am, night 8:00pm,
+  weekdays. They write it exactly as before; nothing in their prompts changed.
+- **Verdicts run 30 minutes later and defer.** Both prompts open with a
+  BACKSTOP block: after the pull, `test -f` the target path — if it exists the
+  report already published, so stop immediately, do no research, commit nothing.
+  A second check with `git ls-tree origin/deploy` runs immediately before
+  `git add`, in case the report published while the verdict was working. On a
+  conflict the verdict abandons its own version.
+- So the verdict routines really write on **weekends, US market holidays, and
+  any weekday the report run failed** — that last case is why they still fire
+  daily rather than on a weekend-only cron.
+
+The visible payoff: the home page headline and the report a reader clicks into
+always come from the same run, and a weekday morning deploys once instead of
+twice.
+
+- **Markets Verdict — Morning** (`trig_01Uvs8J4Hnm2gLZE3NZXHZrr`, cron
+  `30 12 * * *`, 8:30am ET daily — moved from 7:50 → 7:55 → 8:30 on 2026-09-04):
+  premarket read — S&P futures, Nasdaq, VIX, 10Y, DXY, the 3-5 stories moving
+  markets, today's calendar. Writes `data/verdicts/markets-<TODAY>-morning.json`.
+- **Markets Verdict — Night** (`trig_012oQHNd9A91W2UC6dgBKwt8`, cron
+  `30 0 * * *`, 8:30pm ET daily — moved from 8:00pm on 2026-09-04): post-close
+  read — closing levels, after-hours moves, what drove the session, setup into
+  tomorrow. Writes `data/verdicts/markets-<TODAY>-night.json`.
+- **Morning markets report** (`trig_01DC21E5s31c9nWwJPnJsWgb`, cron
+  `0 12 * * 1-5`, 8:00am ET weekdays — moved from 7:55 on 2026-09-04).
+- **Night markets report** (`trig_01JZb1FRWVGhNtBRAgR7mZ1n`, cron
+  `0 0 * * 2-6`, 8:00pm ET — Tue-Sat in UTC is Mon-Fri evening in New York).
+
+**Timing target: finished between 8:00 and 8:45 ET, both windows.** Measured
+over the ten most recent runs of each (2026-08-21 → 09-03):
+
+| | fire lag after cron | run length |
+|---|---|---|
+| Verdict | 0.3–3.6 min | 5.4–11.4 min |
+| Report | 0.2–7.2 min | 2.5–21.6 min |
+
+The report's cron is set so its fastest possible run still lands after 8:00
+(8:00 + 2.7 min = 8:03); its slowest in the sample finishes 8:29. The 30-minute
+gap before the verdict clears the report's slowest observed run by 9 minutes,
+and rule (b) covers the case where it does not.
+
+One outlier sits outside those lag bands: 2026-09-01, cron 12:05Z fired 12:32Z,
+a 27-minute scheduler delay. It is the only one in twenty runs. Under the old
+design it would have caused a collision; under the new one the verdict simply
+finds the file missing at 8:30, publishes, and the late report overwrites it —
+still one story on the page at any moment.
+
 The homepage and the report page print the actual finish time from
 `generated_at`, stamped by `scripts/stamp-verdict.mjs`; the variation is
 meant to be visible, not hidden behind a fixed label.
 
 **Crons are UTC, so they drift an hour when DST ends** (2026-11-01). To hold
-the same ET times through the winter, the morning pair becomes `50 12` /
-`55 12` and night `0 1 * * *`; reverse all three when DST resumes.
+the same ET times through the winter all four move an hour later in UTC:
+morning report `0 13 * * 1-5`, morning verdict `30 13 * * *`, night report
+`0 1 * * 2-6`, night verdict `30 1 * * *`. Reverse all four when DST resumes.
 
 Both: schema-by-example (read a recent same-window verdict file and match its
 keys exactly; verdict.headline = plain-English news-first home title, ~90 chars, no prices/percentages/jargon), JSON.parse-validate before committing, commit + push to `deploy`

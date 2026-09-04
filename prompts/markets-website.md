@@ -18,7 +18,7 @@ Reports should read like a **professional research note**, not a blog post or in
   siding with the louder story. Say what is uncertain. A reader should be able
   to reach a different conclusion from the same facts without feeling misled.
 - **Headlines, descriptions and headings must not mislead.** `verdict.headline`,
-  `rationale_short`, the lede and every section heading have to be supported
+  `rationale_short`, `lede_short` and every section heading have to be supported
   by numbers in the body. Size the words to the move: a 0.7% decline is not a
   rout, "crack" needs a level that actually broke, "surge", "collapse" and
   "crisis" need the magnitude to earn them. Do not imply causation the sources
@@ -78,6 +78,41 @@ Run searches in parallel where possible. Stay under ~20 searches. If a topic isn
 
 **News scan:** AI/semis/quantum headlines. Fed/macro. Politics affecting markets. Earnings today. China/Iran/oil geopolitics.
 
+### Where to read vs. what to cite — two different lists
+
+**Read widely, and include the Wall Street Journal and Bloomberg every run.**
+They are the best read on which story actually matters in a session and on how
+the market is framing it, which is exactly the judgement Step 3 asks for. Search
+both alongside Reuters, AP, CNBC and Yahoo Finance. Use them to decide the day's
+ONE story and to check your read against professional framing.
+
+**Cite what the reader can open.** Every URL in `supporting_data` and every
+inline citation is a link a reader will click, and most readers have neither
+subscription — a paywalled citation is a dead click. So when a WSJ or Bloomberg
+story gives you a fact, cite the thing underneath it:
+
+| the fact | cite instead |
+|---|---|
+| an economic release | the agency: BLS, BEA, ISM, the Fed, Treasury, FRED |
+| an earnings number | the company's own press release / IR page, or the SEC filing |
+| a price, level or yield | the exchange, CME FedWatch, or a free quote page |
+| a wire story | Reuters, AP or CNBC carrying the same reporting |
+
+This is not a downgrade. The agency print and the company release are the
+*primary* sources — WSJ and Bloomberg are reporting them too, and citing the
+original is both openable and closer to the number.
+
+Cite WSJ or Bloomberg directly ONLY when the story is genuinely theirs: original
+reporting or a scoop no free outlet carries. Then say so in the label, e.g.
+`"WSJ (subscription): ..."`, so the reader knows before clicking. One such
+citation in a report is reasonable; three means the primary sources weren't
+looked for.
+
+**Never work around a paywall** — no archive mirrors, no cache tricks, no
+reader-mode workarounds. If you cannot read a story, do not cite it, and do not
+infer its contents from the headline. A headline you couldn't verify is not a
+sourced fact.
+
 ## Step 3 — Form the read
 
 **Do not issue a standing buy/hold/step-aside/bearish verdict.** That framing is
@@ -87,6 +122,17 @@ one. Your job is to say what happened and what it means.
 Write `verdict.headline` — what actually happened, in plain English, ~90
 characters, no prices or jargon. This is the line the home page and the archive
 lead with, so it carries the session.
+
+**Write `verdict.lede_short` — 2-3 sentences, and make them the whole read.**
+This is what a phone shows under the headline instead of `rationale_short`, and
+for most readers it is the only prose from the report they will see. It is not
+an excerpt and not a trimmed `rationale_short`: write it last, from the finished
+report, so it carries the report's actual insight — what happened, what it means
+and what would change it — in three sentences that stand entirely on their own.
+A reader who stops here should have the read, not the first third of it. Same
+rules as everything else: no stance, no jargon, sized to the move, and every
+claim in it supported by numbers in the body. Keep it under ~500 characters;
+past that the hero pushes the link to the report off a 390px screen.
 
 A directional call is allowed, but only when the tape genuinely warrants one —
 a level breaking, a catalyst resolving, a setup invalidating. When you make one,
@@ -189,7 +235,8 @@ Use this exact schema (see `data/verdicts/markets-2026-05-20-morning.json` as th
   "verdict": {
     "headline": "plain-English news headline, ~90 chars, no prices or jargon",
     "label": "short tape summary — no BUY/HOLD/STEP ASIDE prefix",
-    "rationale_short": "1-3 sentence read; what it means and what would change it",
+    "rationale_short": "the full read; what it means and what would change it",
+    "lede_short": "2-3 sentences that stand alone as the whole read — the phone lede, written last from the finished report, under ~500 chars",
     "supporting_data": [
       { "label": "data point with number", "url": "source URL" }
     ]

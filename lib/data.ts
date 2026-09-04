@@ -55,7 +55,12 @@ export type MarketsVerdict = {
   generated_at: string;
   is_seed?: boolean;
   verdict: {
-    code: VerdictCode;
+    /**
+     * Retired 2026-09-04: the routines no longer write it. Kept optional so the
+     * verdicts on disk that still carry one keep parsing. Nothing reads it —
+     * the homepage's dead `sentiment`/`code` view fields went with it.
+     */
+    code?: VerdictCode;
     emoji: string;
     label: string;
     /** Plain-English news headline (no prices/percentages/jargon) for the home
@@ -66,6 +71,17 @@ export type MarketsVerdict = {
      *  verdicts — use verdictHorizon() for a display string with a fallback. */
     horizon?: string;
     rationale_short: string;
+    /**
+     * The phone lede: 2-3 sentences that carry the report's actual insight and
+     * stand on their own. Not a shorter `rationale_short` — it is written to be
+     * the whole read for someone who sees only these sentences.
+     *
+     * Optional. Verdicts written before 2026-09-03 don't have it, and the
+     * homepage falls back to slicing `rationale_short` on a sentence boundary
+     * (see mobileLedeFrom in lib/home-terminal.ts), which produces an accurate
+     * opening but not a summary.
+     */
+    lede_short?: string;
     supporting_data: SupportingPoint[];
   };
   snapshot: {
