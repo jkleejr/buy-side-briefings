@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-09-05",
+  "window": "morning",
+  "generated_at": "2026-09-05T12:53:19Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Stronger-than-expected jobs report puts September Fed rate hike back in play",
+    "label": "S&P 7,718.60 (week-end); August payrolls +162,000 vs 53,000 expected; hike odds 58–65%; PPI Sept 10, CPI Sept 11",
+    "rationale_short": "Friday's August payrolls report reversed most of the ground Waller gained Thursday. The economy added 162,000 jobs against a 53,000 consensus, and prior-month revisions added 55,000 more jobs to June and July combined — partially walking back the \"weakening labour market\" story that July's original -23,000 print had established. September hike odds rebuilt from roughly 50% to 58–65% by the close, the 10-year yield rose 2 basis points to 4.76%, and the S&P 500 fell 0.38% to 7,718.60 as markets repriced what Friday's number meant for the September 15–16 decision.\n\nThe composition of the August beat matters. Food services added 59,000 jobs and local government education added 42,000 — together, about 62% of the month's total. The education component is sensitive to back-to-school seasonal adjustment and is not a durable signal on its own. Average hourly earnings rose 0.3% month-over-month (+3.1% year-over-year), decelerating from last year's pace but not yet at a level the Fed has described as resolved. Unemployment held at 4.1%.\n\nThree factors mean PPI on September 10 and CPI on September 11 are the remaining inputs that set the actual odds — not the payrolls print:\n\n1. Energy: WTI closed near $91.20 Friday, up roughly 9% for the week on continued Strait of Hormuz disruptions. Energy is the input PPI is most sensitive to, and Thursday's print is the first to fully capture this week's oil move.\n2. Trade: Canada's retaliatory tariffs of 15–50% on $27.6 billion of US goods take effect Tuesday September 8, the first trading day after Labor Day. Steel, aluminum, dairy, appliances and agricultural equipment all face new duties on day one of the reopened week.\n3. Silence: The FOMC quiet period started today (September 5) and runs through September 17. No Fed speakers can clarify the committee's position between now and the decision.\n\nThe 10-year yield at 4.76% sits between the two levels that define the stakes: a close through 4.818% (last week's three-year high) would mean the hold repricing has been fully given back; a sustained break below 4.70% would mean the market is pricing a hold as settled. Neither has happened. The S&P 500 at 7,718.60 remains above 7,700, the level prior regime risk flags. US equity markets are closed Monday for Labor Day and reopen Tuesday with Canada's new tariffs already in effect.",
+    "lede_short": "Friday's payrolls beat (+162,000 vs 53,000 expected) restored September hike odds to 58–65%, reversing most of Waller's Thursday repricing. But energy and tariffs — WTI up ~9% on the week from Hormuz disruptions, Canada's counter-tariffs effective Tuesday — both land in PPI on September 10 and CPI on September 11 before the Fed decides. With the FOMC quiet period started, those two prints are the remaining inputs.",
+    "supporting_data": [
+      {
+        "label": "August payrolls +162,000 against 53,000 expected, with June and July revised up a combined 55,000 — the labour market looked to be deteriorating in July; this report revises that picture and rebuilds the case for a hike at the same time energy and tariff inputs are pointing the same direction",
+        "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+      },
+      {
+        "label": "September hike odds rebuilt to 58–65% after the payrolls print, reversing most of Waller's Thursday repricing — with the FOMC quiet period starting today (through September 17), PPI on September 10 and CPI on September 11 set the final odds with no Fed speakers to bridge them to the decision",
+        "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
+      },
+      {
+        "label": "WTI closed near $91.20, up roughly 9% for the week on continued Strait of Hormuz disruptions — energy is what PPI is most sensitive to, and Thursday September 10 is the first print to fully capture this week's oil move before the Fed decides",
+        "url": "https://www.investing.com/news/commodities-news/oil-prices-set-for-weekly-gain-as-usiran-hostilities-intensify-4888883"
+      },
+      {
+        "label": "Canada's retaliatory tariffs of 15–50% on $27.6 billion of US goods take effect Tuesday September 8, covering steel, aluminum, dairy, appliances and agricultural equipment — a cost-push input that reaches PPI on September 10 before it reaches CPI on September 11",
+        "url": "https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html"
+      },
+      {
+        "label": "Governor Waller said Thursday he would support a September hold — \"Give disinflation a chance\" — but conditioned it explicitly on inflation not surprising higher; Friday's payrolls beat plus the week's energy and tariff moves are the conditions he said would change his position",
+        "url": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7718.60, "change_pct": -0.38, "as_of": "2026-09-04T20:00:00.000Z" },
+    "nasdaq": { "level": 26506.99, "change_pct": -0.29, "as_of": "2026-09-04T20:00:00.000Z" },
+    "vix": { "level": 14.53, "change_pct": 1.47, "as_of": "2026-09-04T20:15:00.000Z" },
+    "ust10y": { "level": 4.76, "change_bps": 2, "as_of": "2026-09-04T20:00:00.000Z" },
+    "dxy": { "level": 99.16, "change_pct": 0.19, "as_of": "2026-09-04T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.25, "trigger_above": 5.30, "unit": "%" },
+    { "name": "10Y Yield", "value": 4.76, "trigger_above": 4.818, "unit": "%" },
+    { "name": "SPX vs 7,700", "value": 7718.60, "trigger_below": 7700, "unit": "index" },
+    { "name": "Crude Oil (WTI)", "value": 91.20, "trigger_above": 95.0, "unit": "$/bbl" },
+    { "name": "DXY", "value": 99.16, "trigger_below": 98.0, "unit": "index" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "BTC-USD",
+      "note": "Live near $79,756 Saturday morning — down from the $81,000+ levels reached Thursday when Waller's remarks cut hike odds to ~50%. The rebuilding of September hike odds to 58–65% after payrolls is a headwind for assets that are sensitive to interest-rate expectations.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CL=F",
+      "note": "WTI $91.20, up roughly 9% on the week from Strait of Hormuz disruptions and well below the $95 regime trigger — the largest macro move of the week and the input most likely to push the September 10 PPI print above consensus.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "^VIX",
+      "note": "14.53 into a week with PPI, CPI, and Canada's tariffs all landing before the September 15–16 decision — below the seasonal median for mid-September. Reported as data, not as a threshold.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-Year Treasury",
+      "thesis": "The 10-year yield at 4.76% sits between two levels that define the stakes: the three-year high of 4.818% from last week, and the post-Waller low near 4.70%. Friday's payrolls beat moved the yield toward the upper end without breaking through. PPI on September 10 and CPI on September 11 are the remaining inputs, with energy (+9% WTI on the week) and Canada tariffs (effective September 8) both pointing toward upside cost pressure.",
+      "entry": "4.76% current; 4.818% is the level that would mean the hold repricing has been fully given back; 4.70% on the downside is the level that would mean the market is pricing a hold as settled.",
+      "invalidation": "A CPI print showing core at or below 3.0% year-over-year would push the 10-year below 4.70% and make a hold the dominant expectation. A PPI or CPI print above consensus, combined with energy at current levels, would drive a test of 4.818%.",
+      "horizon": "Through the September 15–16 FOMC decision"
+    },
+    {
+      "asset": "Canada tariffs and the September inflation prints",
+      "thesis": "Canada's retaliatory tariffs of 15–50% on $27.6 billion of US goods take effect Tuesday September 8, the first trading day after Labor Day. Steel and aluminum — where Canada is now matching the 50% US rate — are upstream inputs to manufacturing and construction. Combined with WTI near $91 and Brent near $95, the cost-push inputs arriving in PPI on September 10 are broader than at any point this cycle.",
+      "entry": "The PPI print on September 10 is the first data that captures both the energy move and the tariff-on-tariff dynamic. A print above consensus would push September hike odds above 70%. A print below consensus keeps the FOMC genuinely contested into CPI on September 11.",
+      "invalidation": "A de-escalation in Hormuz transit risk that takes WTI back below $85 before September 10 would remove the energy leg of the upside PPI argument.",
+      "horizon": "September 8–11"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-05-morning.mdx"
+}
