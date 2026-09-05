@@ -1220,7 +1220,11 @@ export default function LevelsChart({
             )}
           </>
         )}
-        {analysis && (
+        {/* The levels readout sits in the caption row under the toolbar, beside
+            the bar size and the zoom hint, so the top row is just symbol and
+            price. Only the compact variant keeps it up here — it has no
+            toolbar, so there is no caption row to move it to. */}
+        {analysis && compact && (
           <span className="ml-auto shrink-0 whitespace-nowrap font-mono text-[9.5px] uppercase tracking-[0.12em] text-[var(--faint)]">
             {headline}
           </span>
@@ -1466,6 +1470,7 @@ export default function LevelsChart({
               : levelsOn
                 ? "levels re-derived for this window"
                 : "levels hidden"}
+            {levelsOn && headline && ` · ${headline}`}
             {!hasVolume && bars && " · no traded volume"}
             {bodiesCollapse && bars && " · 24h market — bodies run from the prior close"}
             {fibSummary && ` · ${fibSummary}`}

@@ -67,7 +67,7 @@ The rule now is one owner per window:
 
 - **Reports run first and own the file.** Morning 8:00am, night 8:00pm,
   weekdays. They write it exactly as before; nothing in their prompts changed.
-- **Verdicts run 30 minutes later and defer.** Both prompts open with a
+- **Verdicts run 45 minutes later and defer.** Both prompts open with a
   BACKSTOP block: after the pull, `test -f` the target path — if it exists the
   report already published, so stop immediately, do no research, commit nothing.
   A second check with `git ls-tree origin/deploy` runs immediately before
@@ -84,11 +84,11 @@ always come from the same run, and a weekday morning deploys once instead of
 twice.
 
 - **Markets Verdict — Morning (backstop)** (`trig_01Uvs8J4Hnm2gLZE3NZXHZrr`, cron
-  `30 12 * * *`, 8:30am ET daily — moved from 7:50 → 7:55 → 8:30 on 2026-09-04):
+  `45 12 * * *`, 8:45am ET daily — moved 7:50 → 7:55 → 8:30 → 8:45 on 2026-09-04):
   premarket read — S&P futures, Nasdaq, VIX, 10Y, DXY, the 3-5 stories moving
   markets, today's calendar. Writes `data/verdicts/markets-<TODAY>-morning.json`.
 - **Markets Verdict — Night (backstop)** (`trig_012oQHNd9A91W2UC6dgBKwt8`, cron
-  `30 0 * * *`, 8:30pm ET daily — moved from 8:00pm on 2026-09-04): post-close
+  `45 0 * * *`, 8:45pm ET daily — moved from 8:00pm on 2026-09-04): post-close
   read — closing levels, after-hours moves, what drove the session, setup into
   tomorrow. Writes `data/verdicts/markets-<TODAY>-night.json`.
 - **Morning markets report** (`trig_01DC21E5s31c9nWwJPnJsWgb`, cron
@@ -105,9 +105,24 @@ over the ten most recent runs of each (2026-08-21 → 09-03):
 | Report | 0.2–7.2 min | 2.5–21.6 min |
 
 The report's cron is set so its fastest possible run still lands after 8:00
-(8:00 + 2.7 min = 8:03); its slowest in the sample finishes 8:29. The 30-minute
-gap before the verdict clears the report's slowest observed run by 9 minutes,
-and rule (b) covers the case where it does not.
+(8:00 + 2.7 min = 8:03); its slowest in the sample finishes 8:29.
+
+**Verified live 2026-09-04, and the gap went 30 → 45 minutes as a result.**
+Both backstops exited clean on the first real test — the morning ran 29
+seconds, the night 31, against 5–11 minutes for a run that does the work, with
+`test -f` → FILE EXISTS → "Per rule (a), stopping immediately" in the log and
+no WebSearch and no commit. Rule (a) works.
+
+But the margin was two minutes, not the nine projected. The scheduler fired the
+report 19.6 minutes late that morning — outside the 0.2–7.2 min band this was
+sized against — so it finished 12:30:10Z and the backstop started 12:32:28Z.
+Had the report been three minutes slower the untested rule (b) path would have
+had to catch it. At 45 minutes, a 19-minute scheduler delay plus the slowest
+run on record (21.6 min) still lands before the backstop fires.
+
+The cost falls on weekends, when the backstop is the only publisher: the read
+now lands ~8:50–8:56 ET rather than ~8:35, outside the 8:45 target above. That
+target describes weekdays, which is where it matters.
 
 One outlier sits outside those lag bands: 2026-09-01, cron 12:05Z fired 12:32Z,
 a 27-minute scheduler delay. It is the only one in twenty runs. Under the old
@@ -121,8 +136,8 @@ meant to be visible, not hidden behind a fixed label.
 
 **Crons are UTC, so they drift an hour when DST ends** (2026-11-01). To hold
 the same ET times through the winter all four move an hour later in UTC:
-morning report `0 13 * * 1-5`, morning verdict `30 13 * * *`, night report
-`0 1 * * 2-6`, night verdict `30 1 * * *`. Reverse all four when DST resumes.
+morning report `0 13 * * 1-5`, morning verdict `45 13 * * *`, night report
+`0 1 * * 2-6`, night verdict `45 1 * * *`. Reverse all four when DST resumes.
 
 Both: schema-by-example (read a recent same-window verdict file and match its
 keys exactly; verdict.headline = plain-English news-first home title, ~90 chars, no prices/percentages/jargon), JSON.parse-validate before committing, commit + push to `deploy`
