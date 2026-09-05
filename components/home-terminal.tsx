@@ -95,7 +95,14 @@ function EditionSwitch({
 function Hero({ brief }: { brief: BriefView }) {
   return (
     <div className="pt-5">
-      <h1 className="text-[30px] font-semibold leading-[1.13] tracking-[-0.008em] [text-wrap:balance] sm:text-[38px] lg:text-[52px]">
+      {/* `pretty`, not `balance`. Balance evens every line to the same length,
+          so a two-line headline splits down the middle and both lines stop well
+          short of the right edge — it was not running out of room, it was
+          declining to use it. `pretty` fills each line to the measure the way
+          normal wrapping does, and only intervenes to stop the last line being
+          a single stranded word. Browsers without it fall back to normal
+          wrapping, which is the behaviour we want anyway. */}
+      <h1 className="text-[30px] font-semibold leading-[1.13] tracking-[-0.008em] [text-wrap:pretty] sm:text-[38px] lg:text-[52px]">
         {brief.headline}
       </h1>
       {/* One paragraph running the full width — not two newspaper columns.
