@@ -1,0 +1,86 @@
+{
+  "routine": "markets",
+  "date": "2026-09-04",
+  "window": "night",
+  "generated_at": "2026-09-05T00:17:19Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Payrolls came in three times forecast, and stocks gave back only part of Thursday's rally",
+    "label": "S&P 7,718.60 (-0.38%) on a 162,000 payrolls print; September hike odds back near 57%",
+    "rationale_short": "August payrolls rose 162,000 against a consensus near 53,000, and June and July were revised up a combined 55,000 — July from a reported loss of 23,000 to a gain of 21,000. September hike odds reached about 65% within minutes of the release and settled near 57% by the afternoon, with two-year yields leading the move up four basis points to 4.37% and the dollar index up 0.3% to 99.23. The equity response was smaller than the rates response: the S&P 500 surrendered 0.38% of Thursday's 1.06% gain, the VIX rose 0.08 point to 14.40, and the Russell 2000 closed higher. Composition is part of why. Leisure and hospitality added 62,000, restaurants and bars alone 59,000, and local government education 42,000, while the information sector cut 23,000 jobs — close to three times its 8,000 monthly average. That is a strong headline built on the least rate-sensitive parts of the economy, and it does not settle the inflation question the Fed said it is waiting on. Assets without earnings behind them took the full move instead: bitcoin fell as much as 3.5% to $78,649 and gold's three-session advance stalled. The ten-year peaked at 4.812%, just under Wednesday's 4.818% three-year high, and stopped short for the second time; the thirty-year has traded through 5.30% without closing above it in six sessions. What resolves this is the calendar, not another opinion: the FOMC blackout runs from September 5 through September 17, so August PPI on the 10th and CPI on the 11th land with no official able to soften them. Core CPI above 0.3% month over month leaves hike odds no scheduled route back down before the September 15-16 decision.",
+    "lede_short": "August payrolls rose 162,000 against a consensus near 53,000, with June and July revised up a combined 55,000, and September hike odds went back to about 57%. The market took it calmly: the S&P 500 gave back 0.38% of Thursday's 1.06% gain and the VIX rose 0.08 point. Composition is part of why — leisure and hospitality added 62,000 while the information sector shed 23,000. PPI on the 10th and CPI on the 11th are the last inputs before the decision, with the Fed silent from Saturday.",
+    "supporting_data": [
+      {
+        "label": "Nonfarm payrolls rose 162,000 in August with unemployment steady at 4.1% — three times the 53,000 expected and above every estimate in the Bloomberg survey, which restored the September hike Governor Waller's remarks had priced out a day earlier",
+        "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+      },
+      {
+        "label": "June was revised up 11,000 to 31,000 and July up 44,000 to 21,000, from a reported loss of 23,000 — the summer was 55,000 stronger than first reported, which reverses the downward-revision pattern that had been the argument for discounting any single print",
+        "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html"
+      },
+      {
+        "label": "Rate futures implied about 65% odds of a September hike immediately after the release, up from roughly 55%, easing back to about 57% by the New York afternoon; two-year yields led the move up four basis points to 4.37% and the dollar index rose 0.3% to 99.23 — the front end reprices policy, so the concentration there says the meeting was repriced, not growth",
+        "url": "https://finance.yahoo.com/markets/currencies/articles/asian-shares-climb-ahead-us-023357590.html"
+      },
+      {
+        "label": "The information sector cut 23,000 jobs in August, close to three times its 8,000 monthly average, led by computing infrastructure and data processing — the AI-exposed part of the labour market is contracting while the headline accelerates on leisure and hospitality",
+        "url": "https://www.techtimes.com/articles/326693/20260904/august-payrolls-smashed-forecasts-ai-exposed-information-sector-cut-jobs-record-pace.htm"
+      },
+      {
+        "label": "Leisure and hospitality added 62,000 with restaurants and bars alone contributing 59,000, and local government education 42,000, against a 31,000 average monthly gain over the prior twelve months — the beat is concentrated in the least rate-sensitive hiring in the report",
+        "url": "https://www.upi.com/Top_News/US/2026/09/04/nonfarm-payrolls-bureau-labor-statistics-august-2026/8801788532242/"
+      },
+      {
+        "label": "Bitcoin fell as much as 3.5% to $78,649, reversing its push above $81,000, on a session that cost the S&P 500 0.38% — the gap between the two is the measure of where the leverage against a September hike is sitting",
+        "url": "https://www.coindesk.com/markets/2026/09/04/u-s-added-stronger-than-expected-162-000-jobs-in-august-as-labor-market-bounced-back"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7718.60, "change_pct": -0.38, "as_of": "2026-09-04T20:00:00.000Z" },
+    "nasdaq": { "level": 26506.99, "change_pct": -0.29, "as_of": "2026-09-04T20:00:00.000Z" },
+    "vix": { "level": 14.40, "change_pct": 0.56, "as_of": "2026-09-04T20:15:00.000Z" },
+    "ust10y": { "level": 4.79, "change_bps": 3, "as_of": "2026-09-04T20:00:00.000Z" },
+    "dxy": { "level": 99.23, "change_pct": 0.30, "as_of": "2026-09-04T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.79, "trigger_above": 4.818, "unit": "%" },
+    { "name": "30Y Yield", "value": 5.25, "trigger_above": 5.30, "unit": "%" },
+    { "name": "SPX vs 7,700", "value": 7718.60, "trigger_below": 7700, "unit": "index" },
+    { "name": "DXY", "value": 99.23, "trigger_above": 100.0, "unit": "index" },
+    { "name": "Crude Oil (WTI)", "value": 91.48, "trigger_above": 95.0, "unit": "$/bbl" },
+    { "name": "BTC", "value": 79570, "trigger_below": 78000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "TSLA", "note": "Fell 6% after the NHTSA opened an audit query into how Tesla self-certified the Cybercab as meeting federal safety standards without a permanently attached steering wheel, pedals or mirrors — on the day commercial deployment began in Austin. The question is upstream of fleet size.", "sentiment": "negative" },
+    { "ticker": "LULU", "note": "Closed at $100.61, down 17.38% to an eight-year low, on a second full-year guidance cut. Comparable sales fell 9%, North America 12% and leggings 20%; the signature-category decline is what separates this from a discounting problem.", "sentiment": "negative" },
+    { "ticker": "BTC-USD", "note": "Fell as much as 3.5% to $78,649 and traded near $79,570, giving back most of Thursday's 5.5% gain on a session that cost equities 0.38%. The most rate-sensitive asset on the list and the clearest read on hike odds.", "sentiment": "negative" },
+    { "ticker": "CL=F", "note": "WTI settled $91.48, up 0.20%, and roughly 10% on the week on Hormuz transit risk. The energy pass-through reaches the September 10 PPI print before it reaches CPI.", "sentiment": "negative" },
+    { "ticker": "GC=F", "note": "Gold $4,470.66, down 0.07% — the three-session advance stalled as real rates and the dollar reversed. No haven bid on the day.", "sentiment": "neutral" },
+    { "ticker": "^VIX", "note": "14.40, up 0.08 point on a hawkish surprise into a three-day weekend with a live rate decision eleven days out. Reported as data, not as a threshold.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-Year Treasury",
+      "thesis": "The ten-year peaked at 4.812% after the payrolls print and stopped short of Wednesday's 4.818% three-year high for the second time in three sessions. Two-year yields led the day, which says the market repriced the September meeting rather than the growth path. Treasury's enlarged long-dated buyback operations begin September 9 at $4 billion or more per operation, arriving after the repricing rather than before it.",
+      "entry": "4.818% on the upside and 4.70% on the downside are the levels the September 10 PPI and September 11 CPI prints resolve.",
+      "invalidation": "A close above 4.818% says the repricing has outrun the buyback bid; a third failure at that level says the long end has priced the hike already.",
+      "horizon": "Through the September 15-16 FOMC"
+    },
+    {
+      "asset": "The August inflation prints inside the Fed blackout",
+      "thesis": "The FOMC blackout runs from September 5 through September 17, so August PPI on the 10th and CPI on the 11th land with no scheduled Fed communication able to soften them. WTI up roughly 10% on the week and ISM services prices paid at 72.6 both argue the risk is to the upside, and the payrolls print removed the labour-market argument for waiting.",
+      "entry": "Core CPI at or under 0.3% month over month keeps a hold arguable; above 0.3% leaves hike odds no scheduled route lower before the decision.",
+      "invalidation": "A soft PPI on the 10th followed by core CPI at or under 0.3% would leave the payrolls beat as the only hawkish input on the board.",
+      "horizon": "September 10-11"
+    },
+    {
+      "asset": "Bitcoin against the VIX",
+      "thesis": "Bitcoin took a 3.5% drawdown on a print that cost the S&P 500 0.38% and left the VIX at 14.40. The gap measures where leverage against a September hike is concentrated, and it is not in listed equity volatility.",
+      "entry": "$78,000 on the downside and $81,000 on the upside bracket whether the payrolls repricing sticks.",
+      "invalidation": "A close back above $81,000 before the decision says the print changed less than the 57% hike odds imply; a break of $78,000 with the VIX still near 14 says the adjustment is being made in crypto alone.",
+      "horizon": "Through the September 15-16 FOMC"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-04-night.mdx"
+}

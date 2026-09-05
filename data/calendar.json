@@ -1,18 +1,17 @@
 {
   "events": [
     {
-      "date": "2026-09-04",
-      "label": "August jobs report (BLS, 8:30 AM ET) — consensus ~50-55K, unemployment 4.1%, average hourly earnings 3.0% YoY",
-      "kind": "MACRO",
-      "time_et": "8:30 AM",
+      "date": "2026-09-05",
+      "label": "FOMC blackout begins — runs through September 17, covering both August inflation prints",
+      "kind": "SIGNAL",
       "tickers": [
         "TLT",
-        "TBT",
         "SPY",
         "QQQ",
-        "IWM"
+        "GLD",
+        "BTC"
       ],
-      "note": "Updated Sep 3 night: Waller's support for a September hold cut CME hike odds roughly 12 points to about 54.6%, so the print now lands into a tape already positioned for the dovish outcome — VIX 15.20 (-7%), 10Y 4.74%. Three labour signals point soft: ADP 38,000, ISM services employment 47.8 in contraction, continuing claims 1.78 million. That makes the hot print the asymmetric one: above 150,000 with firm average hourly earnings restores the odds Waller removed and puts the 10-year back through 4.818%. Near consensus with earnings at or under 0.3% confirms the hold and pushes the 10-year through 4.70%. Last major labour print before the Sep 15-16 FOMC."
+      "note": "Added Sep 4 night: Fed policy bars FOMC participants and staff from public comment from the second Saturday before a meeting until the Thursday after it. August PPI (Sep 10) and CPI (Sep 11) therefore land with no official able to soften or steer the reaction, which is what makes an upside core CPI print harder to walk back before the Sep 15-16 decision."
     },
     {
       "date": "2026-09-07",
@@ -38,14 +37,15 @@
       "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech was hawkish — September hike odds rose to 59% from 33%. Warsh did not explicitly cite Canada tariff cost-push in the speech, leaving the tariff-inflation linkage as an open variable in the September 8-16 window. Tariffs arrive 4 days after the August jobs report (Sept 4) and 8 days before September 16 FOMC. With hike odds already at 59%, if hot jobs data and tariff cost-push both enter Fed communications between September 8 and 16, September hike odds above 65% are the two-variable scenario. DXY rose 0.4% to 99.50 on the Warsh hawkish signal — any tariff escalation that re-prices the dollar is the third input."
     },
     {
-      "date": "2026-09-08",
-      "label": "Oracle Q1 FY2027 results — first large AI-capex print since the Anthropic-Lambda deal",
+      "date": "2026-09-09",
+      "label": "Apple 'Surprise and Shine' event, 1:00 PM ET — first launch under CEO John Ternus",
       "kind": "OTHER",
+      "time_et": "1:00 PM",
       "tickers": [
-        "ORCL",
-        "NVDA"
+        "AAPL",
+        "QQQ"
       ],
-      "note": "Carries a planned $20B equity issuance to fund AI infrastructure alongside the print. Read-through to how the market is pricing debt- and equity-funded datacenter buildout after Nvidia turned lessor on the $35B Lambda-Anthropic contract."
+      "note": "Added Sep 4 night: iPhone 18 Pro updates with a foldable widely expected, alongside new Apple Watch models and iOS 27. First product launch under Ternus, so the event is a read on hardware demand and on the new chief executive's launch cadence."
     },
     {
       "date": "2026-09-09",
@@ -73,6 +73,27 @@
       "note": "Added Sep 3 night: producer prices are where tariff and energy pass-through shows up before it reaches CPI, and they arrive two days after Canada's retaliatory tariffs take effect. ISM services prices paid at 72.6 and manufacturing prices at 71.1 argue the risk is to the upside. Waller said it 'may not take much acceleration in inflation' to move him back toward tightening, so this is the first of two prints that can undo the ~12-point repricing of September 3."
     },
     {
+      "date": "2026-09-10",
+      "label": "ECB rate decision — a 25bp increase widely expected, same day as US PPI",
+      "kind": "MACRO",
+      "tickers": [
+        "TLT",
+        "SPY",
+        "DXY"
+      ],
+      "note": "Added Sep 4 night: the euro area decision lands the same morning as August PPI, so two policy inputs hit the dollar and global duration at once. A hike alongside a hot US producer-price print pushes both long ends the same way."
+    },
+    {
+      "date": "2026-09-10",
+      "label": "Oracle Q1 FY2027 results — first large AI-capex print since the Anthropic-Lambda deal",
+      "kind": "OTHER",
+      "tickers": [
+        "ORCL",
+        "NVDA"
+      ],
+      "note": "Carries a planned $20B equity issuance to fund AI infrastructure alongside the print. Read-through to how the market is pricing debt- and equity-funded datacenter buildout after Nvidia turned lessor on the $35B Lambda-Anthropic contract. Updated Sep 4 night: the print is now dated September 10, landing the same day as August PPI and the ECB decision."
+    },
+    {
       "date": "2026-09-11",
       "label": "August CPI (8:30 AM ET) — the last inflation print before the FOMC, four trading days out",
       "kind": "MACRO",
@@ -89,7 +110,7 @@
     },
     {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — September rate path; hike odds ~54.6% after Waller backed a hold",
+      "label": "FOMC decision (Sep 15-16) — September rate path; hike odds back near 57% after August payrolls printed 162,000",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -99,7 +120,7 @@
         "GLD",
         "BTC"
       ],
-      "note": "Updated Sep 3 night: Governor Waller told a Reuters event he would support holding — 'Give disinflation a chance. We can wait one meeting' — and CME September hike odds fell about 12 points to roughly 54.6%, still above even. The hold is explicitly conditional: policy is 'only slightly restricting aggregate demand' and 'it may not take much acceleration in inflation to nudge me into supporting tighter policy.' August PPI (Sep 10) and CPI (Sep 11) both resolve that condition before the decision, with ISM services prices paid at 72.6 and manufacturing prices at 71.1 arguing the risk is to the upside. Canada retaliatory tariffs (Sep 8) and Treasury long-dated buybacks (Sep 9) land inside the window. One governor is not the committee. Updated Sep 4 morning: the condition behind the hold moved against it over the week — WTI +10.4% and Brent +7.6% on Hormuz transit risk, with US average diesel prices at a record, arriving four trading days before the Sep 10 PPI print."
+      "note": "Updated Sep 3 night: Governor Waller told a Reuters event he would support holding — 'Give disinflation a chance. We can wait one meeting' — and CME September hike odds fell about 12 points to roughly 54.6%, still above even. The hold is explicitly conditional: policy is 'only slightly restricting aggregate demand' and 'it may not take much acceleration in inflation to nudge me into supporting tighter policy.' August PPI (Sep 10) and CPI (Sep 11) both resolve that condition before the decision, with ISM services prices paid at 72.6 and manufacturing prices at 71.1 arguing the risk is to the upside. Canada retaliatory tariffs (Sep 8) and Treasury long-dated buybacks (Sep 9) land inside the window. One governor is not the committee. Updated Sep 4 morning: the condition behind the hold moved against it over the week — WTI +10.4% and Brent +7.6% on Hormuz transit risk, with US average diesel prices at a record, arriving four trading days before the Sep 10 PPI print. Updated Sep 4 night: August payrolls at 162,000 against ~53,000 consensus, with 55,000 of upward revisions to June and July, took hike odds to about 65% on the release and about 57% by the close — above where they sat before Waller spoke. The blackout from Sep 5 to Sep 17 means PPI (Sep 10) and CPI (Sep 11) resolve the condition with no Fed communication left."
     },
     {
       "date": "2026-09-18",
