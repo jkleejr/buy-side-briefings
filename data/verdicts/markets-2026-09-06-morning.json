@@ -1,0 +1,104 @@
+{
+  "routine": "markets",
+  "date": "2026-09-06",
+  "window": "morning",
+  "generated_at": "2026-09-06T12:56:57Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "A jobs surprise three times the forecast puts the September rate hike back on the table",
+    "label": "S&P 500 closed the week at 7,718.60; 10Y at 4.79%, DXY 99.18 after 162K August payrolls nearly tripled the 53K consensus and lifted September hike odds to 66%; Canada tariffs start Tuesday, PPI Wednesday September 10, CPI Thursday September 11",
+    "rationale_short": "Friday's payrolls print reset the market's reading of labour conditions. August nonfarm payrolls rose 162,000 — nearly three times the 53,000 Dow Jones consensus — and July's -23,000 reading was revised upward by 44,000 to +21,000, removing the labour-market deterioration narrative that Governor Waller had leaned on Thursday to argue for a September hold. Average hourly earnings rose 0.3% for the month and 3.1% over the prior year, a pace that does not signal wage disinflation. CME FedWatch September hike odds rose from roughly 50% after Waller's Thursday remarks to 66% by Friday's close. The FOMC quiet period began Saturday September 5 and runs through September 17, so no Fed official can publicly respond to Friday's data before the September 15-16 decision.\n\nThe S&P 500 fell 0.38% to 7,718.60 — 18 points above the 7,700 level watched as regime support — and the 10-year Treasury yield rose 5 basis points to 4.79%, within 3 basis points of the 4.818% three-year high it briefly touched on Wednesday before Waller's repricing pulled it back. The VIX edged up 1.5% to 14.53, consistent with higher uncertainty rather than outright stress. US markets are closed Monday for Labor Day.\n\nThe inflation inputs heading into next week are stacked. WTI crude settled Friday at $91.48, up roughly 9% for the week on Hormuz shipping risk, with US average diesel prices at a record high. Canada's retaliatory tariffs — matching US Section 338 levies dollar-for-dollar, doubling steel and aluminum tariffs to 50%, and covering about 700 product categories across $27.6 billion in US imports — took effect at 12:01am Tuesday, the same morning US markets reopen. Both inputs arrive in the August PPI data on September 10, four trading days before the FOMC meets. The week closes with CPI on September 11, and the BOJ follows on September 17-18.\n\nWhat changes the picture: PPI and CPI both below the June-July trend would allow Waller's conditional argument to survive — his framing of 'give disinflation a chance' requires the data not to show acceleration. A PPI above trend, particularly with energy and tariff pass-through visible in goods categories, removes that support. The two readings are not independent: WTI's 9% weekly gain alone could add 0.2-0.3 percentage points to core goods categories of PPI before any tariff effect is counted. On the other side, wages at 3.1% year-over-year are not accelerating, and the sectors driving August payrolls — food services and local government education — are not the inflation-sensitive cyclicals; a hold case built on that distinction still exists if PPI comes in soft.",
+    "lede_short": "August payrolls came in at 162,000 — nearly three times the 53,000 consensus — and September hike odds on CME FedWatch rose from roughly 50% to 66%. The S&P fell 0.38%, the 10-year rose to 4.79%, and markets face PPI on September 10 and CPI on September 11 alongside Canada's retaliatory tariffs starting Tuesday — all before the September 15-16 FOMC. A below-trend PPI and CPI keeps the hold case alive; above-trend confirms what 66% odds are already pricing.",
+    "supporting_data": [
+      {
+        "label": "August nonfarm payrolls rose 162,000 against a 53,000 consensus, with the unemployment rate steady at 4.1% and average hourly earnings +0.3% month-over-month and +3.1% year-over-year — July was simultaneously revised from -23,000 to +21,000, removing the labour-market deterioration narrative three prior prints had built",
+        "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm"
+      },
+      {
+        "label": "CME FedWatch September hike odds rose from roughly 50% after Governor Waller's Thursday repricing to 66% after Friday's payrolls — the FOMC quiet period that began Saturday means no Fed official can publicly respond to the data before the September 15-16 decision",
+        "url": "https://cryptorank.io/news/feed/3543b-fed-rate-hike-odds-september-cme-fedwatch"
+      },
+      {
+        "label": "Canada's retaliatory tariffs took effect at 12:01am Tuesday September 8, matching US Section 338 levies dollar-for-dollar across $27.6 billion in US goods — steel and aluminum tariffs doubled to 50%, roughly 700 product categories covered — the first tariff-driven producer cost input that arrives in the same week as PPI on September 10",
+        "url": "https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html"
+      },
+      {
+        "label": "WTI crude settled Friday at $91.48, up roughly 9% for the week on Hormuz shipping risk, with US average diesel prices at a record high — three consecutive weeks of energy gains arrive in August PPI on September 10 as a cost-push input before any tariff pass-through is counted",
+        "url": "https://tradingeconomics.com/commodity/crude-oil"
+      },
+      {
+        "label": "The 10-year Treasury yield rose 5 basis points Friday to 4.79% after payrolls — within 3 basis points of the 4.818% three-year high the week's data had been building toward before Waller's Thursday repricing — and now faces the PPI and CPI readings that determine whether it breaks through or retreats ahead of the FOMC",
+        "url": "https://www.federalreserve.gov/releases/h15/"
+      },
+      {
+        "label": "USD/JPY reversed from 155.28 Thursday to 156.23 Friday as post-payrolls dollar strength offset the yen's BOJ-driven gains — BOJ Governor Ueda confirmed the September 17-18 meeting will closely assess heightened inflation risks, putting two rate decisions in 48 hours that together shape the yen's path through mid-September",
+        "url": "https://tradingeconomics.com/japan/currency"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7718.60, "change_pct": -0.38, "as_of": "2026-09-04T20:00:00.000Z" },
+    "nasdaq": { "level": 26506.99, "change_pct": -0.29, "as_of": "2026-09-04T20:00:00.000Z" },
+    "vix": { "level": 14.53, "change_pct": 1.47, "as_of": "2026-09-04T20:15:00.000Z" },
+    "ust10y": { "level": 4.79, "change_bps": 5, "as_of": "2026-09-04T20:00:00.000Z" },
+    "dxy": { "level": 99.18, "change_pct": 0.21, "as_of": "2026-09-04T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.25, "trigger_above": 5.30, "unit": "%" },
+    { "name": "10Y Yield", "value": 4.79, "trigger_above": 4.818, "unit": "%" },
+    { "name": "SPX vs 7,700", "value": 7718.60, "trigger_below": 7700, "unit": "index" },
+    { "name": "Crude Oil (WTI)", "value": 91.48, "trigger_above": 95.0, "unit": "$/bbl" },
+    { "name": "DXY", "value": 99.18, "trigger_below": 98.0, "unit": "index" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CL=F",
+      "note": "WTI $91.48, up roughly 9% for the week on Hormuz shipping risk — the single largest macro move of the week and the input most likely to register in PPI on September 10. Above $90 keeps the energy argument for a hike intact into the data.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "^GSPC",
+      "note": "Closed at 7,718.60, down 0.38% Friday, 18 points above the 7,700 level watched as regime support. The margin is narrow: a hot PPI or CPI reading Tuesday through Thursday could push the index below it when markets reopen alongside Canada tariff news.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "Around $79,952 Sunday (Crypto.com live), down from the $81,000+ level Thursday's Waller-driven repricing reached — gave back most of that bid as hike odds rose to 66% after payrolls. BTC remains the most rate-sensitive asset on the watchlist and often moves before PPI or CPI data is digested.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "JPY=X",
+      "note": "USD/JPY reversed from 155.28 Thursday to 156.23 Friday as post-payrolls dollar strength dominated the BOJ-driven yen bid. BOJ Governor Ueda signaled the September 17-18 meeting will closely assess inflation risks — the BOJ decision arrives two days after the FOMC, keeping yen dynamics live through the full mid-September window.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Gold fell Friday after the payrolls surprise sent yields and the dollar higher, ending a three-session run that had tracked the fall in real rates through Waller's repricing. The reversal shows gold's sensitivity to the rate path: Thursday's Waller rally and Friday's payrolls selloff each moved it within the session.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-Year Treasury",
+      "thesis": "The 10-year yield closed Friday at 4.79%, within 3 basis points of the 4.818% three-year high it reached on Wednesday before Waller's repricing. The August PPI on September 10 and CPI on September 11 are the last inflation readings before the September 15-16 FOMC quiet period ends. Energy and tariff inputs both lean toward cost pressure in the PPI: WTI +9% for the week and Canada tariffs effective Tuesday on $27.6B of US goods.",
+      "entry": "4.79% at Friday's close, with 4.818% on the upside — the prior three-year high — and 4.70% on the downside, where the Waller repricing had pulled it, defining the range that PPI and CPI resolve.",
+      "invalidation": "A close through 4.818% after PPI says the hold repricing has been fully given back and the hike case is in the price; a sustained break below 4.70% says the inflation data surprised soft enough to restore the hold.",
+      "horizon": "Through the September 15-16 FOMC"
+    },
+    {
+      "asset": "Canada tariffs and the September inflation chain",
+      "thesis": "Canada's retaliatory measures — $27.6B in US goods covered, steel and aluminum tariffs doubled to 50%, 700 product categories — took effect Tuesday. They enter producer costs in the same week WTI's 9% weekly gain also arrives in PPI data. The August PPI on September 10 is the first official reading that follows both the August 22 US tariff escalation and September 8 Canada response. Producer prices are where energy and tariff pass-through appears before it reaches consumers.",
+      "entry": "WTI holding above $90 and Canada tariff pass-through registering in goods categories of PPI above the June-July trend are the two conditions that keep the cost-push argument alive into the September 16 FOMC.",
+      "invalidation": "A PPI print below the June-July goods trend, with energy not visibly registering in the components despite $91 WTI, would indicate the pass-through is slower than the weekly energy move implied and the hike case loses one of its two inflation legs.",
+      "horizon": "September 8-11 (tariffs through PPI and CPI)"
+    },
+    {
+      "asset": "USD/JPY across two central bank decisions",
+      "thesis": "The yen's move from 155.28 to 156.23 on Friday reflects the dollar bid after payrolls dominating Thursday's BOJ-driven yen strength. The BOJ meets September 17-18, two days after the FOMC, and Governor Ueda's confirmation that the board will closely assess heightened inflation risks means the yen has a domestic driver that does not depend on the US rate path alone. Two rate decisions in 48 hours leaves USD/JPY in a position where the first (FOMC September 16) and the second (BOJ September 18) could move in opposite directions.",
+      "entry": "155 on the downside — where Thursday's yen strength stalled before payrolls — and 158 on the upside frame whether the dollar leg or the yen leg dominates into mid-September.",
+      "invalidation": "A move above 158 would indicate the dollar is fully dominant and the BOJ leg was overstated in Thursday's session; a sustained break below 155 would indicate the market is pricing a BOJ hike as more certain than a Fed hike.",
+      "horizon": "Through the September 15-16 FOMC and September 17-18 BOJ"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-06-morning.mdx"
+}
