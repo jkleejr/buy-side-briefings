@@ -20,8 +20,13 @@ export default function HeaderNav({ items }: { items: NavItem[] }) {
         {items.map((item) => {
           const active = item.external ? false : isActiveRoute(item.href, pathname);
           const cls = `shrink-0 whitespace-nowrap pb-0.5 font-mono text-[12px] tracking-[0.02em] ${
+            // The current page is marked by its colour, not by a rule under
+            // it. The border stays on both states, transparent, so dropping
+            // the visible one doesn't change the row's height. Weight and
+            // aria-current still carry the state for anyone who can't use the
+            // colour.
             active
-              ? "border-b-2 border-[var(--amber)] font-semibold text-[var(--foreground)]"
+              ? "border-b-2 border-transparent font-semibold text-[var(--amber)]"
               : "border-b-2 border-transparent text-[var(--dim)] hover:text-[var(--foreground)]"
           }`;
 
