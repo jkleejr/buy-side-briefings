@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import HeaderNav, { HeaderNavLink } from "./header-nav";
 import MobileNav from "./mobile-nav";
 import ThemeToggle from "./theme-toggle";
@@ -34,25 +35,31 @@ export default function SiteHeader() {
           label, chip and eyebrow on the site — the nav was the one piece of
           instrumentation still set in Charter, which muddies at 13px. */}
       <div className="mx-auto flex max-w-[1600px] items-center gap-5 px-4 py-2.5 font-mono text-[12px] sm:px-6">
-        {/* The wordmark, left of everything and always a link home. Set in
-            the reading serif rather than the nav's mono: it is the one piece
-            of the chrome that is the brand rather than instrumentation, and
-            the same face the headlines use ties the two ends of the page
-            together. The nav's first item is still TODAY → "/" and still
-            carries the active-route rule, so this is the brand, not the
-            wayfinding.
+        {/* The house mark, left of everything and always a link home. Mark
+            only, no wordmark — the nav's first item is still TODAY → "/" and
+            still carries the active-route rule, so this is the brand, not the
+            wayfinding. The name lives in the aria-label, which is what a
+            screen reader announces for the link.
 
-            Centred in the row rather than sitting on the nav baseline. The
-            row is baseline-aligned for the nav items, which are all one size;
-            the mark is larger, and baseline-aligning it hung it off the top of
-            the bar with the space all underneath. A three-letter monogram also
-            wants more letterspacing than a word does. */}
+            `unoptimized` so Next does not re-encode it at quality 75 — the
+            optimizer pass is what softens pixel art. `priority` so the sticky
+            header paints with the first frame rather than after an image
+            fetch. No optical nudge needed: the row centres its items, so the
+            mark sits on the same centre line as the nav. */}
         <Link
           href="/"
           aria-label="Buy Side — home"
-          className="shrink-0 self-center font-serif text-[15px] font-semibold leading-none tracking-[0.08em] text-[var(--foreground)]"
+          className="flex shrink-0 items-center"
         >
-          BSB
+          <Image
+            src="/brand/cash-stack.png"
+            alt=""
+            width={840}
+            height={690}
+            priority
+            unoptimized
+            className="h-[18px] w-auto"
+          />
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
