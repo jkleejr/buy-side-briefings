@@ -90,7 +90,7 @@ export default async function BriefingPage({
         ◂ ALL REPORTS
       </Link>
 
-      <header className="space-y-2 pb-4">
+      <header className="space-y-2">
         <div className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[var(--amber)]">
           <span>{formatDateShort(briefing.date)}</span>
           {briefing.window && (
@@ -116,7 +116,7 @@ export default async function BriefingPage({
       </header>
 
       {verdict ? (
-        <div className="space-y-7 pt-2">
+        <div className="space-y-7">
           {/* The glance and evidence tiers are unlabelled. Their headings were
               read-times and nothing else — "30 seconds", "1 min · the
               evidence" — and a reader scanning a briefing does not need to be
@@ -323,7 +323,11 @@ function VerdictHead({
   bullets: string[];
 }) {
   return (
-    <div className="pt-2">
+    // pt-1 rather than pt-2: the accent rule is drawn on the section around
+    // this, so the padding above the text is also the length of rule standing
+    // above it. Halving it drops the top of the rule closer to the line it
+    // marks without moving the text.
+    <div className="pt-1">
       <div className="flex flex-wrap items-center gap-3">
         <span className="font-mono text-[11px] text-[var(--amber)]">
           generated {formatBriefingTime(verdict.generated_at) ?? "—"}
