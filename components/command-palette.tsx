@@ -102,11 +102,11 @@ export default function CommandPalette() {
       onClick={() => setOpen(false)}
     >
       <div
-        className="mx-auto max-w-lg border border-[var(--amber-dim)] bg-[var(--background)] shadow-[0_8px_40px_rgba(30,29,26,0.18)]"
+        className="mx-auto max-w-lg border border-[var(--lapis-dim)] bg-[var(--background)] shadow-[0_8px_40px_rgba(30,29,26,0.18)]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center gap-2 border-b border-[var(--border)] px-3 py-2">
-          <span className="font-mono text-[11px] text-[var(--amber)]">▸</span>
+          <span className="font-mono text-[11px] text-[var(--lapis)]">▸</span>
           <input
             ref={inputRef}
             value={query}
@@ -144,11 +144,11 @@ export default function CommandPalette() {
                 onClick={() => navigate(d.href)}
                 className={`flex w-full items-baseline gap-2 px-3 py-1.5 text-left font-mono text-[12px] ${
                   i === cursor
-                    ? "bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                    ? "bg-[rgba(255,165,0,0.1)] text-[var(--lapis)]"
                     : "text-[var(--foreground)]"
                 }`}
               >
-                <span className="w-14 shrink-0 text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+                <span className="w-14 shrink-0 text-[10px] uppercase tracking-widest text-[var(--lapis-dim)]">
                   {d.code}
                 </span>
                 <span>{d.label}</span>

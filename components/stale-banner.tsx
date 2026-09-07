@@ -13,7 +13,7 @@ export function FreshnessNotice({
 }) {
   if (!f.is_stale || !f.latest_date) return null;
   return (
-    <div className="border-b border-[var(--amber-dim)] bg-[rgba(255,165,0,0.07)] px-2 py-1 text-center font-mono text-[10px] uppercase tracking-widest text-[var(--amber)]">
+    <div className="border-b border-[var(--lapis-dim)] bg-[rgba(255,165,0,0.07)] px-2 py-1 text-center font-mono text-[10px] uppercase tracking-widest text-[var(--lapis)]">
       ⚠ {noun} as of {f.latest_date} · {f.days_old} days old — calls below may be
       outdated · live quotes unaffected
     </div>

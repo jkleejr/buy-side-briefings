@@ -18,11 +18,12 @@
   --panel-head: #ece8dc;
   --border: #e4dfd4;          /* hairline rule */
   --border-strong: #cbc5b7;
-  /* Accent tokens keep their legacy names so every component re-themes from
-     here alone: --amber is the lapis working accent, --cyan the oxblood
-     secondary (evening editions, comparison series). */
-  --amber: #2f4f9e;
-  --amber-dim: #6b7aa3;
+  /* The two accents, named for what they are: --lapis the working accent,
+     --cyan the oxblood secondary (evening editions, comparison series). They
+     were --amber and --cyan-term, kept from a palette this one replaced, so
+     the names described colours neither of them had been for a long time. */
+  --lapis: #2f4f9e;
+  --lapis-dim: #6b7aa3;
   --cyan: #8d3b34;
   --up: #2f7d4f;
   --down: #b0392f;
@@ -57,8 +58,8 @@
     --panel-head: #1b1b18;
     --border: #25241f;
     --border-strong: #383730;
-    --amber: #93a9e2;
-    --amber-dim: #8695bd;
+    --lapis: #93a9e2;
+    --lapis-dim: #8695bd;
     --cyan: #d68d80;
     --up: #6cbe84;
     --down: #e28579;
@@ -84,8 +85,8 @@
   --panel-head: #ece8dc;
   --border: #e4dfd4;
   --border-strong: #cbc5b7;
-  --amber: #2f4f9e;
-  --amber-dim: #6b7aa3;
+  --lapis: #2f4f9e;
+  --lapis-dim: #6b7aa3;
   --cyan: #8d3b34;
   --up: #2f7d4f;
   --down: #b0392f;
@@ -107,8 +108,8 @@
   --panel-head: #1b1b18;
   --border: #25241f;
   --border-strong: #383730;
-  --amber: #93a9e2;
-  --amber-dim: #8695bd;
+  --lapis: #93a9e2;
+  --lapis-dim: #8695bd;
   --cyan: #d68d80;
   --up: #6cbe84;
   --down: #e28579;
@@ -131,8 +132,8 @@
   --color-panel-head: var(--panel-head);
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
-  --color-amber-term: var(--amber);
-  --color-amber-dim: var(--amber-dim);
+  --color-lapis-term: var(--lapis);
+  --color-lapis-dim: var(--lapis-dim);
   --color-cyan-term: var(--cyan);
   --color-up: var(--up);
   --color-down: var(--down);
@@ -282,7 +283,7 @@ html.theme-switching *::after {
 
 /* Keyboard focus ring in the working accent. */
 :focus-visible {
-  outline: 2px solid var(--amber);
+  outline: 2px solid var(--lapis);
   outline-offset: 2px;
 }
 

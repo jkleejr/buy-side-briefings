@@ -22,7 +22,7 @@ export default function Error({
       </p>
       <button
         onClick={reset}
-        className="border border-[var(--amber)] bg-[rgba(255,165,0,0.06)] px-3 py-1 text-[11px] uppercase tracking-widest text-[var(--amber)] transition-colors hover:bg-[rgba(255,165,0,0.14)]"
+        className="border border-[var(--lapis)] bg-[rgba(255,165,0,0.06)] px-3 py-1 text-[11px] uppercase tracking-widest text-[var(--lapis)] transition-colors hover:bg-[rgba(255,165,0,0.14)]"
       >
         Retry
       </button>

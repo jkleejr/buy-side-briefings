@@ -20,7 +20,7 @@ import type { CalendarEvent } from "@/lib/data";
  */
 
 /**
- * Colour by imminence — on the countdown badge only, the same amber ≤7d /
+ * Colour by imminence — on the countdown badge only, the same lapis ≤7d /
  * cyan ≤30d scale the earnings schedule uses. The negative branch is
  * unreachable from the calendar page, which asks for no lookback, and is kept
  * only so a stale build serving yesterday's date degrades to a dim row rather
@@ -28,7 +28,7 @@ import type { CalendarEvent } from "@/lib/data";
  */
 function tone(days: number): string {
   if (days < 0) return "text-[var(--dim)]";
-  if (days <= 7) return "text-[var(--amber)]";
+  if (days <= 7) return "text-[var(--lapis)]";
   if (days <= 30) return "text-[var(--cyan-term)]";
   return "text-[var(--dim)]";
 }

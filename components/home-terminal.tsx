@@ -124,7 +124,7 @@ function Hero({ brief }: { brief: BriefView }) {
           switch pinned to the right edge above. */}
       <Link
         href={brief.href}
-        className="mt-6 flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-right font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--amber)]"
+        className="mt-6 flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-right font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--lapis)]"
       >
         {/* The label is one unit: without nowrap the phone broke it after
             "MORNING'S" and stranded the read-time on its own line, which read
@@ -163,7 +163,7 @@ function WhatMatters({ points }: { points: KeyPoint[] }) {
                     {kp.text}
                   </div>
                   {host && (
-                    <div className="mt-1.5 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--amber)]">
+                    <div className="mt-1.5 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--lapis)]">
                       {host}
                     </div>
                   )}

@@ -20,7 +20,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
     const empty = (
       <div className="p-3 text-center font-mono text-[11px] text-[var(--dim)]">
         No reports yet. Generate one via Claude and commit to{" "}
-        <code className="text-[var(--amber-dim)]">data/briefings/</code>.
+        <code className="text-[var(--lapis-dim)]">data/briefings/</code>.
       </div>
     );
     if (!panel) return empty;

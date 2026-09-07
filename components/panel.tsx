@@ -31,11 +31,11 @@ export default function Panel({
       title={`Open ${title} detail page`}
     >
       {code && (
-        <span className="shrink-0 font-mono text-[10px] tracking-widest text-[var(--amber-dim)]">
+        <span className="shrink-0 font-mono text-[10px] tracking-widest text-[var(--lapis-dim)]">
           {code}
         </span>
       )}
-      <h3 className="truncate font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
+      <h3 className="truncate font-mono text-[11px] uppercase tracking-wider text-[var(--lapis)]">
         {title}
       </h3>
       <span className="shrink-0 font-mono text-[10px] text-[var(--cyan-term)]">▸</span>
@@ -43,11 +43,11 @@ export default function Panel({
   ) : (
     <>
       {code && (
-        <span className="shrink-0 font-mono text-[10px] tracking-widest text-[var(--amber-dim)]">
+        <span className="shrink-0 font-mono text-[10px] tracking-widest text-[var(--lapis-dim)]">
           {code}
         </span>
       )}
-      <h3 className="min-w-0 truncate font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
+      <h3 className="min-w-0 truncate font-mono text-[11px] uppercase tracking-wider text-[var(--lapis)]">
         {title}
       </h3>
     </>

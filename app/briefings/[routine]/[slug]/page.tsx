@@ -91,7 +91,7 @@ export default async function BriefingPage({
       </Link>
 
       <header className="space-y-2">
-        <div className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[var(--amber)]">
+        <div className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[var(--lapis)]">
           <span>{formatDateShort(briefing.date)}</span>
           {briefing.window && (
             <>
@@ -158,12 +158,12 @@ function BriefingMarkdown({ source }: { source: string }) {
       remarkPlugins={[remarkGfm]}
       components={{
         h2: ({ children }) => (
-          <h2 className="mt-6 mb-2 font-mono text-base font-semibold uppercase tracking-wider text-[var(--amber)]">
+          <h2 className="mt-6 mb-2 font-mono text-base font-semibold uppercase tracking-wider text-[var(--lapis)]">
             {children}
           </h2>
         ),
         h3: ({ children }) => (
-          <h3 className="mt-4 mb-1.5 font-mono text-sm font-semibold tracking-wider text-[var(--amber-dim)]">
+          <h3 className="mt-4 mb-1.5 font-mono text-sm font-semibold tracking-wider text-[var(--lapis-dim)]">
             {children}
           </h3>
         ),
@@ -173,7 +173,7 @@ function BriefingMarkdown({ source }: { source: string }) {
         a: ({ children, href }) => (
           <a
             href={href}
-            className="text-[var(--cyan-term)] underline underline-offset-4 hover:text-[var(--amber)]"
+            className="text-[var(--cyan-term)] underline underline-offset-4 hover:text-[var(--lapis)]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -188,15 +188,15 @@ function BriefingMarkdown({ source }: { source: string }) {
         ),
         li: ({ children }) => <li className="leading-relaxed">{children}</li>,
         strong: ({ children }) => (
-          <strong className="font-semibold text-[var(--amber)]">{children}</strong>
+          <strong className="font-semibold text-[var(--lapis)]">{children}</strong>
         ),
         blockquote: ({ children }) => (
-          <blockquote className="my-3 border-l-2 border-[var(--amber-dim)] pl-3 italic text-[var(--dim)]">
+          <blockquote className="my-3 border-l-2 border-[var(--lapis-dim)] pl-3 italic text-[var(--dim)]">
             {children}
           </blockquote>
         ),
         code: ({ children }) => (
-          <code className="border border-[var(--border)] bg-[var(--panel-head)] px-1 py-0.5 text-[12px] text-[var(--amber)]">
+          <code className="border border-[var(--border)] bg-[var(--panel-head)] px-1 py-0.5 text-[12px] text-[var(--lapis)]">
             {children}
           </code>
         ),
@@ -206,7 +206,7 @@ function BriefingMarkdown({ source }: { source: string }) {
           </div>
         ),
         th: ({ children }) => (
-          <th className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 text-left text-[10px] uppercase tracking-wider text-[var(--amber-dim)]">
+          <th className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 text-left text-[10px] uppercase tracking-wider text-[var(--lapis-dim)]">
             {children}
           </th>
         ),
@@ -333,7 +333,7 @@ function VerdictHead({
     // marks without moving the text.
     <div className="pt-1">
       <div className="flex flex-wrap items-center gap-3">
-        <span className="font-mono text-[11px] text-[var(--amber)]">
+        <span className="font-mono text-[11px] text-[var(--lapis)]">
           generated {formatBriefingTime(verdict.generated_at) ?? "—"}
         </span>
       </div>
@@ -389,7 +389,7 @@ function EvidenceRow({ point }: { point: SupportingPoint }) {
           href={point.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="whitespace-nowrap font-mono text-[11px] tracking-[0.06em] text-[var(--amber)] hover:underline"
+          className="whitespace-nowrap font-mono text-[11px] tracking-[0.06em] text-[var(--lapis)] hover:underline"
         >
           {src} →
         </a>

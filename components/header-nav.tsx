@@ -16,7 +16,7 @@ type NavItem = { href: string; code: string; label: string; external?: boolean }
 function navItemClass(active: boolean): string {
   return `shrink-0 whitespace-nowrap font-mono text-[12px] leading-none tracking-[0.02em] ${
     active
-      ? "font-semibold text-[var(--amber)]"
+      ? "font-semibold text-[var(--lapis)]"
       : "text-[var(--dim)] hover:text-[var(--foreground)]"
   }`;
 }

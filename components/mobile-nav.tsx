@@ -28,7 +28,7 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
         onClick={() => setOpen((s) => !s)}
         aria-label={open ? "Close navigation" : "Open navigation"}
         aria-expanded={open}
-        className="flex items-center justify-center border border-[var(--border)] px-2 py-1 font-mono text-[14px] leading-none text-[var(--amber)] hover:bg-[rgba(255,165,0,0.06)] md:hidden"
+        className="flex items-center justify-center border border-[var(--border)] px-2 py-1 font-mono text-[14px] leading-none text-[var(--lapis)] hover:bg-[rgba(255,165,0,0.06)] md:hidden"
       >
         {open ? "✕" : "☰"}
       </button>
@@ -43,7 +43,7 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
           />
           {/* Slide-down menu */}
           <nav
-            className="fixed inset-x-0 top-[40px] z-50 flex flex-col border-y border-[var(--amber)] bg-[var(--background)] shadow-2xl md:hidden"
+            className="fixed inset-x-0 top-[40px] z-50 flex flex-col border-y border-[var(--lapis)] bg-[var(--background)] shadow-2xl md:hidden"
             aria-label="Mobile navigation"
           >
             {items.map((item) => {
@@ -52,14 +52,14 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
               // used to mark nothing, and the only highlight a reader ever saw
               // was hover.
               const active = item.external ? false : isActiveRoute(item.href, pathname);
-              const cls = `flex items-baseline gap-2 border-t border-[var(--border)] px-4 py-3 font-mono text-[13px] uppercase tracking-wider first:border-t-0 hover:bg-[rgba(255,165,0,0.06)] hover:text-[var(--amber)] ${
+              const cls = `flex items-baseline gap-2 border-t border-[var(--border)] px-4 py-3 font-mono text-[13px] uppercase tracking-wider first:border-t-0 hover:bg-[rgba(255,165,0,0.06)] hover:text-[var(--lapis)] ${
                 active
-                  ? "border-l-2 border-l-[var(--amber)] font-semibold text-[var(--amber)]"
+                  ? "border-l-2 border-l-[var(--lapis)] font-semibold text-[var(--lapis)]"
                   : "border-l-2 border-l-transparent text-[var(--foreground)]"
               }`;
               const inner = (
                 <>
-                  <span className="text-[var(--amber-dim)]">{item.code}</span>
+                  <span className="text-[var(--lapis-dim)]">{item.code}</span>
                   <span>{item.label}</span>
                   {item.external && (
                     <span aria-hidden="true" className="text-[var(--dim)]">↗</span>

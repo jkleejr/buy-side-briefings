@@ -88,7 +88,7 @@ export default function ThemeToggle() {
       onClick={choose}
       title={label}
       aria-label={label}
-      className="border border-[var(--border)] px-1.5 py-0.5 font-mono text-[9px] not-italic uppercase tracking-widest text-[var(--dim)] hover:border-[var(--amber-dim)] hover:text-[var(--amber)]"
+      className="border border-[var(--border)] px-1.5 py-0.5 font-mono text-[9px] not-italic uppercase tracking-widest text-[var(--dim)] hover:border-[var(--lapis-dim)] hover:text-[var(--lapis)]"
     >
       {/* The glyph names the theme you are in, not the one the click would
           take you to: moon on the dark ground, sun on the light one. The

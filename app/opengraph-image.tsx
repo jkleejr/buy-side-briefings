@@ -8,7 +8,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 // Default Open Graph image for the site root. Bloomberg-terminal styling:
-// black background, amber branding, headline + tagline + a bottom strip. The
+// black background, lapis branding, headline + tagline + a bottom strip. The
 // top bar leads with the house mark — the same five candles as the favicon and
 // the site header, so a shared link is recognisably ours before it is read.
 // Copy matches the site metadata in app/layout.tsx — this is the same claim,

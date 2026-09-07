@@ -109,7 +109,7 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
               : "tick-down"
             : "";
           const labelEl = (
-            <span className="uppercase tracking-wider text-[var(--amber-dim)]">
+            <span className="uppercase tracking-wider text-[var(--lapis-dim)]">
               {q.label}
             </span>
           );

@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className="border border-[var(--border)] bg-[var(--panel)]">
         <div className="space-y-2 px-2 py-1 font-mono text-[11px] leading-relaxed text-[var(--foreground)]">
           <p>
-            <span className="text-[var(--amber)]">Buy Side</span> uses Claude
+            <span className="text-[var(--lapis)]">Buy Side</span> uses Claude
             Opus 5 to generate daily reports on the stock market.
           </p>
         </div>

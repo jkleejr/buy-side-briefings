@@ -11,7 +11,7 @@ const HORIZON = 90; // days shown on the timeline chart axis
 
 // Colour the countdown by how imminent the report is.
 function tone(days: number): { text: string } {
-  if (days <= 7) return { text: "text-[var(--amber)]" };
+  if (days <= 7) return { text: "text-[var(--lapis)]" };
   if (days <= 30) return { text: "text-[var(--cyan-term)]" };
   return { text: "text-[var(--dim)]" };
 }
@@ -19,7 +19,7 @@ function tone(days: number): { text: string } {
 /**
  * The timeline marker reads the same as the schedule table's Status column:
  * green for a date the company has confirmed, grey for one Yahoo is estimating.
- * It used to take the countdown's amber/cyan/grey instead, which meant the dot
+ * It used to take the countdown's lapis/oxblood/grey instead, which meant the dot
  * and the number beside it both said "how soon" and nothing said "how sure".
  * Filled vs hollow still carries it for anyone who can't separate the two hues.
  */
@@ -174,7 +174,7 @@ function ScheduleTable({ entries }: { entries: EarningsEntry[] }) {
                   {countdownBadge(e.daysUntil)}
                 </td>
                 <td className="px-2 py-1 text-[var(--foreground)]">{fmtDate(e.date)}</td>
-                <td className="px-2 py-1 font-bold text-[var(--amber)]">
+                <td className="px-2 py-1 font-bold text-[var(--lapis)]">
                   {displayTicker(e)}
                 </td>
                 <td className="px-2 py-1 text-[var(--dim)]">

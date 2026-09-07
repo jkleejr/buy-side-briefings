@@ -64,7 +64,7 @@ export default async function SectorRotation() {
             in the same ink, so the block opens on one line instead of two. */}
         <thead className="bg-[var(--panel-head)] text-[10px] uppercase tracking-wider text-[var(--dim)]">
           <tr>
-            <th className="px-2 py-1 text-left font-normal text-[var(--amber)]">
+            <th className="px-2 py-1 text-left font-normal text-[var(--lapis)]">
               Sector Rotation
             </th>
             <th className="px-2 py-1 text-left font-normal">ETF</th>

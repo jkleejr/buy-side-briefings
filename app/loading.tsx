@@ -32,7 +32,7 @@ export default function Loading() {
               className="term-line whitespace-nowrap"
               style={{ animationDelay: `${line.delay}ms` }}
             >
-              <span className="text-[var(--amber)]" aria-hidden="true">
+              <span className="text-[var(--lapis)]" aria-hidden="true">
                 {i === 0 ? "▮" : ">"}
               </span>{" "}
               <span className={last ? "term-dots text-[var(--foreground)]" : undefined}>
@@ -49,8 +49,8 @@ export default function Loading() {
           style={{ animationDelay: `${LINES[LINES.length - 1].delay + 150}ms` }}
           aria-hidden="true"
         >
-          <span className="text-[var(--amber)]">&gt;</span>{" "}
-          <span className="term-cursor text-[var(--amber)]">▮</span>
+          <span className="text-[var(--lapis)]">&gt;</span>{" "}
+          <span className="term-cursor text-[var(--lapis)]">▮</span>
         </div>
       </div>
     </div>

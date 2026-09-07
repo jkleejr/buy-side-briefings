@@ -1373,9 +1373,9 @@ export default function LevelsChart({
                             setSymbol(sym);
                             close();
                           }}
-                          className={`flex w-full items-center gap-2.5 px-3 py-1.5 text-left font-mono text-[11.5px] hover:bg-[var(--panel-head)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                          className={`flex w-full items-center gap-2.5 px-3 py-1.5 text-left font-mono text-[11.5px] hover:bg-[var(--panel-head)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--lapis)] ${
                             active
-                              ? "text-[var(--amber)]"
+                              ? "text-[var(--lapis)]"
                               : "text-[var(--foreground)]"
                           }`}
                         >
@@ -1468,9 +1468,9 @@ export default function LevelsChart({
                         ? `${INTERVAL_LABELS[iv]} bars`
                         : `${INTERVAL_LABELS[iv]} bars aren't available over ${range}`
                     }
-                    className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] normal-case tracking-[0.11em] last:border-r-0 disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                    className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] normal-case tracking-[0.11em] last:border-r-0 disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--lapis)] ${
                       iv === interval
-                        ? "bg-[var(--amber)] text-[var(--background)]"
+                        ? "bg-[var(--lapis)] text-[var(--background)]"
                         : "text-[var(--dim)] enabled:hover:bg-[var(--panel)]"
                     }`}
                   >
@@ -1514,9 +1514,9 @@ export default function LevelsChart({
                   }
                   setTool(t);
                 }}
-                className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[11px] leading-5 last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[11px] leading-5 last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--lapis)] ${
                   active
-                    ? "bg-[var(--amber)] text-[var(--background)]"
+                    ? "bg-[var(--lapis)] text-[var(--background)]"
                     : "text-[var(--dim)] hover:bg-[var(--panel)]"
                 }`}
               >
@@ -1567,7 +1567,7 @@ export default function LevelsChart({
             type="button"
             onClick={undo}
             disabled={!shapes.length}
-            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--lapis)]"
           >
             Undo
           </button>
@@ -1575,7 +1575,7 @@ export default function LevelsChart({
             type="button"
             onClick={clearAll}
             disabled={!shapes.length && !manualAnchors}
-            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--lapis)]"
           >
             Clear
           </button>
@@ -1593,9 +1593,9 @@ export default function LevelsChart({
               disabled={ind.disabled}
               aria-pressed={ind.on}
               title={ind.hint}
-              className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+              className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--lapis)] ${
                 ind.on
-                  ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                  ? "border-[var(--lapis)] bg-[rgba(255,165,0,0.1)] text-[var(--lapis)]"
                   : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
               }`}
             >
@@ -2122,7 +2122,7 @@ export default function LevelsChart({
                       )
                       .join("")}
                     fill="none"
-                    stroke="var(--amber)"
+                    stroke="var(--lapis)"
                     strokeWidth={1.4}
                     strokeLinejoin="round"
                     strokeLinecap="round"
@@ -2173,7 +2173,7 @@ export default function LevelsChart({
                     cx={hover.x}
                     cy={hover.y}
                     r={4.5}
-                    fill="var(--amber)"
+                    fill="var(--lapis)"
                     stroke="var(--panel)"
                     strokeWidth={2}
                   />
@@ -2182,7 +2182,7 @@ export default function LevelsChart({
                       cx={hover.x}
                       cy={rsiY(rsi[hover.i] as number)}
                       r={3.5}
-                      fill="var(--amber)"
+                      fill="var(--lapis)"
                       stroke="var(--panel)"
                       strokeWidth={1.5}
                     />

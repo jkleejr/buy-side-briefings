@@ -51,7 +51,7 @@ export default function BriefingsFilters({ items }: Props) {
               edition you're after. */}
           {windows.length > 1 && (
             <div className="flex flex-wrap items-center gap-1.5">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--lapis-dim)]">
                 Routine
               </span>
               <FilterChip
@@ -72,7 +72,7 @@ export default function BriefingsFilters({ items }: Props) {
 
           {/* Search row */}
           <div className="flex flex-wrap items-center gap-1.5">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--amber-dim)]">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--lapis-dim)]">
               Search
             </span>
             <input
@@ -80,7 +80,7 @@ export default function BriefingsFilters({ items }: Props) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="title, date, headline…"
-              className="flex-1 min-w-[120px] border border-[var(--border)] bg-[var(--background)] px-2 py-1 font-mono text-[11px] text-[var(--foreground)] placeholder:text-[var(--dim)] focus:border-[var(--amber)] focus:outline-none"
+              className="flex-1 min-w-[120px] border border-[var(--border)] bg-[var(--background)] px-2 py-1 font-mono text-[11px] text-[var(--foreground)] placeholder:text-[var(--dim)] focus:border-[var(--lapis)] focus:outline-none"
             />
             {hasActiveFilter && (
               <button
@@ -89,7 +89,7 @@ export default function BriefingsFilters({ items }: Props) {
                   setWindow(null);
                   setQuery("");
                 }}
-                className="border border-[var(--border)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] hover:border-[var(--amber-dim)] hover:text-[var(--amber)]"
+                className="border border-[var(--border)] px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-[var(--dim)] hover:border-[var(--lapis-dim)] hover:text-[var(--lapis)]"
               >
                 Clear
               </button>
@@ -124,8 +124,8 @@ function FilterChip({
       className={
         "border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-widest transition-colors " +
         (active
-          ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-          : "border-[var(--border)] text-[var(--dim)] hover:border-[var(--amber-dim)] hover:text-[var(--amber)]")
+          ? "border-[var(--lapis)] bg-[rgba(255,165,0,0.1)] text-[var(--lapis)]"
+          : "border-[var(--border)] text-[var(--dim)] hover:border-[var(--lapis-dim)] hover:text-[var(--lapis)]")
       }
     >
       {label}

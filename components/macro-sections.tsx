@@ -39,11 +39,11 @@ function TileGrid({ tiles }: { tiles: Tile[] }) {
           it.flag === "alert"
             ? "text-[var(--down)]"
             : it.flag === "warn"
-              ? "text-[var(--amber)]"
+              ? "text-[var(--lapis)]"
               : "text-[var(--foreground)]";
         return (
           <div key={it.label} className={`px-2 py-1.5 ${flagBg}`}>
-            <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--amber-dim)]">
+            <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--lapis-dim)]">
               {it.label}
             </div>
             <div className={`mt-0.5 font-mono text-[13px] ${flagText}`}>{it.value}</div>

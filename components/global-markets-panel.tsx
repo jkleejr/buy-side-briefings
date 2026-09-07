@@ -61,7 +61,7 @@ export default async function GlobalMarketsPanel() {
       <div className="grid grid-cols-1 divide-y divide-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {REGIONS.map((region) => (
           <div key={region.name} className="flex flex-col">
-            <div className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[11px] uppercase tracking-wider text-[var(--amber)]">
+            <div className="border-b border-[var(--border)] bg-[var(--panel-head)] px-2 py-1 font-mono text-[11px] uppercase tracking-wider text-[var(--lapis)]">
               {region.name}
             </div>
             <table className="w-full font-mono text-[11px]">
