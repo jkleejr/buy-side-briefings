@@ -32,14 +32,17 @@ export default function SiteHeader() {
             carries the active-route rule, so this is the brand, not the
             wayfinding.
 
-            Uppercase at 15px wants a little letterspacing — set solid it
-            reads as one long word. */}
+            Centred in the row rather than sitting on the nav baseline. The
+            row is baseline-aligned for the nav items, which are all one size;
+            the mark is larger, and baseline-aligning it hung it off the top of
+            the bar with the space all underneath. A three-letter monogram also
+            wants more letterspacing than a word does. */}
         <Link
           href="/"
           aria-label="Buy Side — home"
-          className="shrink-0 font-serif text-[15px] font-semibold leading-none tracking-[0.03em] text-[var(--foreground)]"
+          className="shrink-0 self-center font-serif text-[15px] font-semibold leading-none tracking-[0.08em] text-[var(--foreground)]"
         >
-          BUY SIDE
+          BSB
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
