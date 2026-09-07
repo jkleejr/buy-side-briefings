@@ -21,17 +21,19 @@ import type LevelsChart from "./levels-chart";
  *
  * The placeholder reserves the full variant's rendered height, so nothing below
  * the chart moves when it arrives. Anything that changes that height has to
- * change here too. Measured, not derived: 38px hero row + 38px control row +
- * 500px chart frame (SIZES.full.H = 460 plus its padding and axis) + 22px
- * source line = 598. The old 556 predated the toolbar it was counting and left
- * a ~42px jump on every load.
+ * change here too. Measured, not derived: 38px hero row + 56px control row
+ * (two lines at a desktop width — the window, bar-size, drawing and indicator
+ * groups no longer fit on one) + 500px chart frame (SIZES.full.H = 460 plus
+ * its padding and axis) + 22px source line = 616. It can only ever be right
+ * for one width; too tall would leave a gap under the chart, so this tracks
+ * the desktop case and narrow screens close the rest as the toolbar wraps.
  */
 const Chart = dynamic(() => import("./levels-chart"), {
   ssr: false,
   loading: () => (
     <div
       aria-hidden="true"
-      className="h-[598px] w-full animate-pulse rounded-none bg-[var(--panel)]"
+      className="h-[616px] w-full animate-pulse rounded-none bg-[var(--panel)]"
     />
   ),
 });

@@ -63,7 +63,7 @@ export default function ChartMenu({
         aria-expanded={open}
         aria-label={ariaLabel}
         onClick={() => setOpen((o) => !o)}
-        className={`flex items-center gap-1.5 rounded-md border px-2.5 py-1 font-mono text-[11px] leading-5 disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+        className={`flex items-center gap-1.5 border px-2.5 py-1 font-mono text-[11px] leading-5 disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
           open
             ? "border-[var(--amber)] bg-[rgba(255,165,0,0.08)] text-[var(--foreground)]"
             : "border-[var(--border-strong)] text-[var(--foreground)] hover:bg-[var(--panel)]"
@@ -82,7 +82,7 @@ export default function ChartMenu({
         <div
           role="menu"
           style={{ minWidth }}
-          className={`absolute top-[calc(100%+4px)] z-50 max-h-[70vh] overflow-y-auto overscroll-contain rounded-lg border border-[var(--border-strong)] bg-[var(--panel)] py-1 shadow-2xl ${
+          className={`absolute top-[calc(100%+4px)] z-50 max-h-[70vh] overflow-y-auto overscroll-contain border border-[var(--border-strong)] bg-[var(--panel)] py-1 shadow-2xl ${
             align === "right" ? "right-0" : "left-0"
           }`}
         >

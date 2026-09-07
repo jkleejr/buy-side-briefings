@@ -1224,7 +1224,14 @@ export default function LevelsChart({
    */
   const enoughForRSI = !!allBars && allBars.length > RSI_PERIOD;
   const enoughForEMA = !!allBars && allBars.length >= EMA_CONFIGS[0].period;
-  const indicators = [
+  const indicators: Array<{
+    id: string;
+    label: string;
+    on: boolean;
+    disabled: boolean;
+    hint: string;
+    toggle: () => void;
+  }> = [
     {
       id: "line",
       label: "Line",
@@ -1240,7 +1247,7 @@ export default function LevelsChart({
     },
     {
       id: "vol",
-      label: "Volume",
+      label: "Vol",
       on: volumeOn,
       disabled: !hasVolume,
       hint: hasVolume
@@ -1250,7 +1257,7 @@ export default function LevelsChart({
     },
     {
       id: "sr",
-      label: "Support / resistance",
+      label: "S/R",
       on: levelsOn,
       disabled: !analysis,
       hint: analysis
@@ -1279,7 +1286,6 @@ export default function LevelsChart({
       toggle: () => setShowEMA((v) => !v),
     },
   ];
-  const activeIndicatorCount = indicators.filter((i) => i.on && !i.disabled).length;
 
   return (
     <div
@@ -1385,7 +1391,7 @@ export default function LevelsChart({
             <button
               type="button"
               onClick={() => setExpanded((v) => !v)}
-              className="ml-auto shrink-0 rounded-md border border-[var(--border-strong)] px-2.5 py-1 font-mono text-[11px] leading-5 text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+              className="ml-auto shrink-0 border border-[var(--border-strong)] px-2.5 py-1 font-mono text-[11px] leading-5 text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
             >
               {expanded ? "Exit \u2715" : "Expand \u2922"}
             </button>
@@ -1437,42 +1443,6 @@ export default function LevelsChart({
               </div>
             </div>
           )}
-
-          <Sep />
-
-          {/* The five overlays behind one control. As a row of toggles they
-              were the widest thing in the toolbar and gave equal weight to
-              five things a reader turns on once; the count on the trigger says
-              how many are live without spending the width. */}
-          <ChartMenu
-            ariaLabel="Indicators"
-            minWidth={248}
-            label={`Indicators${activeIndicatorCount ? ` (${activeIndicatorCount})` : ""}`}
-          >
-            {() =>
-              indicators.map((ind) => (
-                <button
-                  key={ind.id}
-                  type="button"
-                  role="menuitemcheckbox"
-                  aria-checked={ind.on}
-                  disabled={ind.disabled}
-                  title={ind.hint}
-                  onClick={ind.toggle}
-                  className={`flex w-full items-center gap-2.5 px-3 py-1.5 text-left font-mono text-[11.5px] disabled:opacity-35 hover:bg-[var(--panel-head)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-                    ind.on && !ind.disabled
-                      ? "text-[var(--amber)]"
-                      : "text-[var(--foreground)]"
-                  }`}
-                >
-                  <span aria-hidden className="w-2 shrink-0">
-                    {ind.on && !ind.disabled ? "\u2713" : ""}
-                  </span>
-                  <span className="flex-1">{ind.label}</span>
-                </button>
-              ))
-            }
-          </ChartMenu>
 
           <Sep />
 
@@ -1558,6 +1528,29 @@ export default function LevelsChart({
           >
             Clear
           </button>
+
+          {/* The overlays, one button each. Driven off the same list the menu
+              used, so each keeps its disabled rule and the reason for it —
+              a greyed toggle with no explanation reads as broken, and these
+              switch off for real reasons (no traded volume on this symbol,
+              too few bars to compute RSI on this range). */}
+          {indicators.map((ind) => (
+            <button
+              key={ind.id}
+              type="button"
+              onClick={ind.toggle}
+              disabled={ind.disabled}
+              aria-pressed={ind.on}
+              title={ind.hint}
+              className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                ind.on
+                  ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                  : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
+              }`}
+            >
+              {ind.label}
+            </button>
+          ))}
 
           <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
             {INTERVAL_LABELS[interval]} bars ·{" "}
