@@ -152,8 +152,6 @@ html,
 body {
   background: var(--background);
   color: var(--foreground);
-  /* Soft hand-off when the theme toggle re-tints the ground. */
-  transition: background-color 0.25s ease;
   font-family: var(--serif);
   /* Lining figures so prices don't dance; tabular so columns align. */
   font-variant-numeric: lining-nums tabular-nums;
@@ -264,8 +262,22 @@ body {
   .term-line { opacity: 1; animation: none; }
   .term-dots::after { animation: none; }
   .term-cursor { animation: none; }
-  html, body { transition: none; }
   .tick-up, .tick-down { animation: none; }
+}
+
+/* Theme switch: the whole page repaints in one frame.
+   The ground used to ease over 250ms, the handful of controls carrying
+   Tailwind's transition-colors eased over 150ms, and everything else — the
+   header, every border, every panel — snapped at once, so the page changed
+   theme in three visible waves from the top down. The toggle puts this class
+   on <html> for the frame it flips in and takes it off after, so nothing has
+   an old colour left to animate from and hover transitions still work the rest
+   of the time. */
+html.theme-switching,
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition: none !important;
 }
 
 /* Keyboard focus ring in the working accent. */

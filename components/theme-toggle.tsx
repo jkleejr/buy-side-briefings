@@ -56,7 +56,17 @@ export default function ThemeToggle() {
   const label = theme ? `Switch to the ${next} theme` : "Switch theme";
 
   const choose = () => {
-    document.documentElement.dataset.theme = next;
+    const root = document.documentElement;
+    // Suppress every transition for the flip, so the header, the ground, the
+    // borders and the panels all take their new colour in the same frame
+    // instead of over 0ms, 150ms and 250ms respectively.
+    root.classList.add("theme-switching");
+    root.dataset.theme = next;
+    // Read a layout property to force the new values to be computed while
+    // transitions are still off — otherwise removing the class below could
+    // leave something with an old colour to animate from.
+    void root.offsetHeight;
+    requestAnimationFrame(() => root.classList.remove("theme-switching"));
     try {
       localStorage.setItem(KEY, next);
     } catch {
