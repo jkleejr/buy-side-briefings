@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import HeaderNav from "./header-nav";
 import MobileNav from "./mobile-nav";
 import ThemeToggle from "./theme-toggle";
@@ -25,36 +24,22 @@ export default function SiteHeader() {
           label, chip and eyebrow on the site — the nav was the one piece of
           instrumentation still set in Charter, which muddies at 13px. */}
       <div className="mx-auto flex max-w-[1600px] items-baseline gap-5 px-4 py-2.5 font-mono text-[12px] sm:px-6">
-        {/* The house mark, left of everything and always a link home. Mark
-            only, no wordmark — the nav's first item is still TODAY → "/" and
-            still carries the active-route rule, so the mark is the brand, not
-            the wayfinding. The name lives in the aria-label, which is what a
-            screen reader announces for the link.
+        {/* The wordmark, left of everything and always a link home. Set in
+            the reading serif rather than the nav's mono: it is the one piece
+            of the chrome that is the brand rather than instrumentation, and
+            the same face the headlines use ties the two ends of the page
+            together. The nav's first item is still TODAY → "/" and still
+            carries the active-route rule, so this is the brand, not the
+            wayfinding.
 
-            The mark is the pixel-style cash stack (public/brand/cash-stack.png,
-            shipped at well above its 18px render with a light unsharp mask, and
-            `unoptimized` so Next does not re-encode it at quality 75 — the
-            optimizer pass is what made the mark look soft). `priority` so the
-            sticky header paints with the first frame rather than after an
-            image fetch.
-
-            The -2px nudge sits the mark just under the nav text's centre:
-            the nav's active underline hangs below its text, so the text's
-            visual centre (measured: y=19) sits above the row's (22). */}
+            Uppercase at 15px wants a little letterspacing — set solid it
+            reads as one long word. */}
         <Link
           href="/"
           aria-label="Buy Side — home"
-          className="flex shrink-0 -translate-y-[2px] items-center self-center"
+          className="shrink-0 font-serif text-[15px] font-semibold leading-none tracking-[0.03em] text-[var(--foreground)]"
         >
-          <Image
-            src="/brand/cash-stack.png"
-            alt=""
-            width={132}
-            height={108}
-            priority
-            unoptimized
-            className="h-[18px] w-auto"
-          />
+          BUY SIDE
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
