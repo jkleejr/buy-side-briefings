@@ -12,6 +12,7 @@ import {
   formatBriefingTime,
   formatDateShort,
   readMinutes,
+  windowLabel,
 } from "@/lib/utils";
 import type { SupportingPoint } from "@/lib/data";
 
@@ -29,7 +30,12 @@ export async function generateMetadata({
   const { routine, slug } = await params;
   const briefing = getBriefing(routine, slug);
   if (!briefing) return { title: "Report not found" };
-  return { title: formatBriefingDateLine(briefing) };
+  // The tab says which edition it is, not which day. The archive is what keeps
+  // the record of dates; a tab full of "Sunday, September 6, 2026 - Night" is
+  // unreadable at tab width, and every open report looked alike.
+  return {
+    title: briefing.window ? `${windowLabel(briefing.window)} Report` : "Report",
+  };
 }
 
 export default async function BriefingPage({
@@ -47,6 +53,27 @@ export default async function BriefingPage({
   const points = verdict?.verdict.supporting_data ?? [];
   const fullReadMin = readMinutes(briefing.body);
 
+  // The title is the report's own headline — what the session was about — not
+  // the date it carries. The date and window stay in the eyebrow above it, so
+  // nothing is lost. Falls back to the date line for the rare report with no
+  // verdict attached (nothing to take a headline from).
+  // Widened the same way VerdictHead types it: `headline` is optional because
+  // not every routine's verdict carries one (kospi doesn't).
+  const head: { rationale_short: string; headline?: string } | undefined =
+    verdict?.verdict;
+  // An authored frontmatter title is the next-best headline for the handful of
+  // one-off briefs whose verdict_ref doesn't resolve (it keys on
+  // routine-date-window, which a special slug like "-nvda-pre-earnings" never
+  // matches). getAllBriefings() synthesizes "<routine> <slug>" when there is no
+  // real title, so only use it when it is something a person actually wrote.
+  const authoredTitle =
+    briefing.title && briefing.title !== `${briefing.routine} ${briefing.slug}`
+      ? briefing.title.trim()
+      : "";
+  const headline = head
+    ? head.headline?.trim() || firstSentence(head.rationale_short)
+    : authoredTitle;
+
   return (
     <div className="mx-auto max-w-5xl px-4 pb-14 pt-6 sm:px-6 sm:pt-[39px]">
       {/* The reading measure is narrower than the shell the rest of the site
@@ -63,9 +90,17 @@ export default async function BriefingPage({
         ◂ ALL REPORTS
       </Link>
 
-      <header className="space-y-2 border-b border-[var(--border)] pb-4">
+      <header className="space-y-2 pb-4">
         <div className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[var(--amber)]">
           <span>{formatDateShort(briefing.date)}</span>
+          {briefing.window && (
+            <>
+              <span>-</span>
+              {/* normal-case overrides the row's uppercase: the window reads as
+                  a word ("Night"), while the SEED chip beside it stays a chip. */}
+              <span className="normal-case">{windowLabel(briefing.window)}</span>
+            </>
+          )}
           {briefing.is_seed && (
             <>
               <span>·</span>
@@ -76,7 +111,7 @@ export default async function BriefingPage({
           )}
         </div>
         <h1 className="font-serif text-[27px] font-semibold leading-[1.15] tracking-[-0.01em] text-[var(--foreground)] sm:text-[31px]">
-          {formatBriefingDateLine(briefing)}
+          {headline || formatBriefingDateLine(briefing)}
         </h1>
       </header>
 
@@ -287,8 +322,6 @@ function VerdictHead({
   };
   bullets: string[];
 }) {
-  const headline =
-    verdict.verdict.headline?.trim() || firstSentence(verdict.verdict.rationale_short);
   return (
     <div className="pt-2">
       <div className="flex flex-wrap items-center gap-3">
@@ -296,11 +329,6 @@ function VerdictHead({
           generated {formatBriefingTime(verdict.generated_at) ?? "—"}
         </span>
       </div>
-      {headline && (
-        <p className="mt-3 text-[21px] font-semibold leading-[1.3] tracking-[-0.005em] text-[var(--foreground)]">
-          {headline}
-        </p>
-      )}
       {bullets.length > 0 && (
         <ul className="mt-3 list-disc space-y-1.5 pl-5">
           {bullets.map((b, i) => (

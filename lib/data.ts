@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { verdictHeadline as headlineFor } from "@/lib/verdict-headline";
+import { formatDateShort } from "@/lib/utils";
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
 
@@ -514,7 +515,7 @@ function synthesizeBriefingBody(v: SynthesizableVerdict): string {
   // The page header now carries the stance, standfirst and regime chips, so the
   // body opens straight into the reasoning — no repeated run-on verdict label.
   out.push(
-    `> Auto-generated from the ${v.date} ${v.window} market verdict.`,
+    `> Generated from the ${v.window} market verdict on ${formatDateShort(v.date)}.`,
     "",
     `## The read`,
     "",
