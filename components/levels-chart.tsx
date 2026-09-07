@@ -12,6 +12,7 @@ import {
   INTERVAL_LABELS,
   INTERVAL_SHORT,
   RANGE_INTERVALS,
+  orderedIntervals,
   defaultInterval,
   isIntradayInterval,
   type ChartInterval,
@@ -326,6 +327,9 @@ export default function LevelsChart({
   // offers it, which resolveInterval on the server enforces too.
   const [intervalPin, setIntervalPin] = useState<ChartInterval | null>(null);
   const intervalOptions = RANGE_INTERVALS[range];
+  // Membership stays keyed on RANGE_INTERVALS (default first); the picker
+  // reads shortest bar to longest.
+  const intervalDisplay = orderedIntervals(range);
   const interval: ChartInterval =
     intervalPin && intervalOptions.includes(intervalPin)
       ? intervalPin
@@ -1118,23 +1122,6 @@ export default function LevelsChart({
     setFibDraft(null);
   }, [commit]);
 
-  // --- expand ----------------------------------------------------------------
-  const [expanded, setExpanded] = useState(false);
-  useEffect(() => {
-    if (!expanded) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setExpanded(false);
-    };
-    window.addEventListener("keydown", onKey);
-    // Stop the page scrolling behind the overlay.
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      window.removeEventListener("keydown", onKey);
-      document.body.style.overflow = prev;
-    };
-  }, [expanded]);
-
   // "99.7% to support" is technically true on a 25-year window and useless as
   // a readout — a level that far away tells you nothing about the next move.
   const nearestDrawn = zones.filter((z) => z.mid < (analysis?.price ?? 0))[0];
@@ -1288,13 +1275,7 @@ export default function LevelsChart({
   ];
 
   return (
-    <div
-      className={
-        expanded
-          ? "fixed inset-0 z-[100] overflow-auto bg-[var(--background)] p-4 sm:p-6"
-          : undefined
-      }
-    >
+    <div>
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pb-2">
         {compact ? (
           <span className="font-mono text-[11px] font-bold tracking-[0.1em] text-[var(--foreground)]">
@@ -1315,7 +1296,9 @@ export default function LevelsChart({
             <ChartMenu
               ariaLabel="Choose asset"
               minWidth={272}
-              label={labels?.[symbol] ?? symbol}
+              label={
+                <span className="font-bold">{labels?.[symbol] ?? symbol}</span>
+              }
             >
               {(close) =>
                 assetGroups.map((g) => (
@@ -1375,6 +1358,7 @@ export default function LevelsChart({
             {windowReturn && (
               <span className="font-mono text-[12px] tabular-nums">
                 <span
+                  className="font-bold"
                   style={{
                     color: windowReturn.abs >= 0 ? "var(--up)" : "var(--down)",
                   }}
@@ -1388,13 +1372,6 @@ export default function LevelsChart({
               </span>
             )}
 
-            <button
-              type="button"
-              onClick={() => setExpanded((v) => !v)}
-              className="ml-auto shrink-0 border border-[var(--border-strong)] px-2.5 py-1 font-mono text-[11px] leading-5 text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
-            >
-              {expanded ? "Exit \u2715" : "Expand \u2922"}
-            </button>
           </>
         )}
         {/* The levels readout sits in the caption row under the toolbar, beside
@@ -1424,7 +1401,7 @@ export default function LevelsChart({
                 role="group"
                 aria-label="Bar size"
               >
-              {intervalOptions.map((iv) => (
+              {intervalDisplay.map((iv) => (
                 <button
                   key={iv}
                   type="button"
@@ -1489,10 +1466,17 @@ export default function LevelsChart({
             })}
           </div>
 
-          {/* Ink colour. Shown only when a drawing tool is armed — it means
-              nothing while the crosshair is active. */}
-          {tool !== "none" && (
-            <div className="flex items-center gap-1 border border-[var(--border-strong)] px-1 py-0.5">
+          {/* Ink colour. Always in the row, dimmed and inert until a tool is
+              armed. It used to mount on arming and unmount on releasing, which
+              pushed Undo, Clear and all five indicator buttons sideways every
+              time — the toolbar rearranged itself under the pointer that had
+              just clicked it. */}
+          <div
+            aria-hidden={tool === "none"}
+            className={`flex items-center gap-1 border border-[var(--border-strong)] px-1 py-0.5 ${
+              tool === "none" ? "pointer-events-none opacity-30" : ""
+            }`}
+          >
               {DRAW_COLORS.map((c) => (
                 <button
                   key={c.id}
@@ -1507,10 +1491,10 @@ export default function LevelsChart({
                       : "border-[var(--border-strong)]"
                   }`}
                   style={{ background: c.value }}
+                  tabIndex={tool === "none" ? -1 : undefined}
                 />
               ))}
-            </div>
-          )}
+          </div>
 
           <button
             type="button"
@@ -1552,7 +1536,20 @@ export default function LevelsChart({
             </button>
           ))}
 
-          <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
+        </div>
+      )}
+
+      {/* The status line, on its own row.
+          It sat at the end of the button row, where its length decides the
+          row's wrapping: turning S/R on swaps "levels hidden" for "levels
+          re-derived for this window" plus the headline, which was enough to
+          push the caption onto a second line and shove the chart down. On its
+          own row it can say anything without moving a control, and it is held
+          to one line — it scrolls sideways rather than wrapping, so the height
+          is the same in every state. */}
+      {!compact && (
+        <div className="panel-scroll overflow-x-auto overscroll-x-contain pb-2">
+          <span className="block whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
             {INTERVAL_LABELS[interval]} bars ·{" "}
             {scale?.useLog
               ? "log scale"
@@ -1636,7 +1633,7 @@ export default function LevelsChart({
               onPointerDown={onPointerDown}
               onDoubleClick={() => setView(null)}
               style={{
-                minHeight: compact ? undefined : expanded ? undefined : 420,
+                minHeight: compact ? undefined : 420,
                 cursor: tool === "none" ? "crosshair" : "cell",
                 // "pan-y" keeps one-finger vertical scrolling with the page —
                 // the chart is tall, and a phone reader has to be able to get
