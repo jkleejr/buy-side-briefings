@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Buy Side",
-    template: "Buy Side - %s",
+    // Page first, site second: a tab is truncated from the right, so the
+    // half that identifies the page has to come before the half that is the
+    // same on every page.
+    template: "%s - Buy Side",
   },
   // All three descriptions describe the same site in the same terms: a
   // briefing twice a day, cited, and explicitly not a recommendation. The
