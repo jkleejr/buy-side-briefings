@@ -1353,8 +1353,8 @@ export default function LevelsChart({
             )}
 
             {/* Return across the window on screen, in the site's own direction
-                colours. The range label after it names the window the number
-                covers — without it "+24.12 (+11.7%)" is a figure with no term. */}
+                colours. No range label after it: the active window is already
+                lit up in the row directly below. */}
             {windowReturn && (
               <span className="font-mono text-[12px] tabular-nums">
                 <span
@@ -1367,8 +1367,7 @@ export default function LevelsChart({
                   {fmtLevel(Math.abs(windowReturn.abs))} (
                   {windowReturn.abs >= 0 ? "+" : "\u2212"}
                   {Math.abs(windowReturn.pct).toFixed(1)}%)
-                </span>{" "}
-                <span className="text-[var(--faint)]">{range}</span>
+                </span>
               </span>
             )}
 
