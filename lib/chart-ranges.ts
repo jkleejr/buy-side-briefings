@@ -60,10 +60,12 @@ export const RANGE_INTERVALS: Record<ChartRange, ChartInterval[]> = {
   "1D": ["1h"],
   "5D": ["1h"],
   "1M": ["1d", "1h"],
-  "3M": ["1d", "1h"],
-  "1Y": ["1d", "1mo"],
-  "5Y": ["1d", "1mo"],
-  ALL: ["1mo"],
+  "3M": ["1d", "1h", "1wk"],
+  "1Y": ["1d", "1wk", "1mo"],
+  // Weekly first, so a five-year window opens at ~260 bars rather than the
+  // ~1,250 daily ones, which draw sub-pixel at this chart's width.
+  "5Y": ["1wk", "1d", "1mo"],
+  ALL: ["1mo", "1wk"],
 };
 
 /**
@@ -75,7 +77,7 @@ export const RANGE_INTERVALS: Record<ChartRange, ChartInterval[]> = {
  * disabled instead — the control says what exists and what is available, which
  * are two different facts.
  */
-export const PICKER_INTERVALS: ChartInterval[] = ["1h", "1d", "1mo"];
+export const PICKER_INTERVALS: ChartInterval[] = ["1h", "1d", "1wk", "1mo"];
 
 export function defaultInterval(range: ChartRange): ChartInterval {
   return RANGE_INTERVALS[range][0];
