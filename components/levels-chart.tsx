@@ -1274,6 +1274,37 @@ export default function LevelsChart({
     },
   ];
 
+  /**
+   * The right-hand half of the caption row. The left half is a constant — what
+   * size the bars are and how to zoom — so anything conditional lives here,
+   * where appearing and disappearing moves nothing. Empty in the resting
+   * state, which is why the row reads as just "weekly bars (⌘ + scroll to
+   * zoom)" until you turn something on.
+   */
+  const statusNotes: string[] = [];
+  if (scale?.useLog) statusNotes.push("log scale");
+  if (levelsOn) {
+    statusNotes.push(
+      headline
+        ? `${headline} (levels re-derived for this window)`
+        : "levels re-derived for this window",
+    );
+  }
+  if (!hasVolume && bars) statusNotes.push("no traded volume");
+  if (bodiesCollapse && bars) {
+    statusNotes.push("24h market \u2014 bodies run from the prior close");
+  }
+  if (fibSummary) statusNotes.push(fibSummary);
+  if (showFib && !fib && tool === "fib") {
+    statusNotes.push("drag a swing to place the grid");
+  }
+  if (liveView && bars) {
+    statusNotes.push(`zoomed to ${bars.length} bars \u2014 double-click to reset`);
+  }
+  if (shapes.length > 0) {
+    statusNotes.push(`${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`);
+  }
+
   return (
     <div>
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pb-2">
@@ -1538,34 +1569,29 @@ export default function LevelsChart({
         </div>
       )}
 
-      {/* The status line, on its own row.
-          It sat at the end of the button row, where its length decides the
-          row's wrapping: turning S/R on swaps "levels hidden" for "levels
-          re-derived for this window" plus the headline, which was enough to
-          push the caption onto a second line and shove the chart down. On its
-          own row it can say anything without moving a control, and it is held
-          to one line — it scrolls sideways rather than wrapping, so the height
-          is the same in every state. */}
+      {/* The caption row: a constant on the left, everything conditional on
+          the right.
+          It used to be one run of text at the end of the button row, so its
+          length decided that row's wrapping — turning S/R on was enough to
+          push it to a second line and shove the chart down. Split this way the
+          left half never changes width for a reason the reader didn't ask for,
+          and the right half can say anything without moving it. Still one line
+          in every state: it scrolls sideways rather than wrapping. */}
       {!compact && (
         <div className="panel-scroll overflow-x-auto overscroll-x-contain pb-2">
-          <span className="block whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
-            {INTERVAL_LABELS[interval]} bars ·{" "}
-            {scale?.useLog
-              ? "log scale"
-              : levelsOn
-                ? "levels re-derived for this window"
-                : "levels hidden"}
-            {levelsOn && headline && ` · ${headline}`}
-            {!hasVolume && bars && " · no traded volume"}
-            {bodiesCollapse && bars && " · 24h market — bodies run from the prior close"}
-            {fibSummary && ` · ${fibSummary}`}
-            {showFib && !fib && tool === "fib" && " · drag a swing to place the grid"}
-            {liveView && bars && ` · zoomed to ${bars.length} bars — double-click to reset`}
-            {shapes.length > 0 && ` · ${shapes.length} drawing${shapes.length > 1 ? "s" : ""}`}
-            {/* Zoom is behind a modifier now, so it has to be said somewhere —
-                a gesture nobody can discover is the same as not having it. */}
-            {bars && " · ⌘ + scroll to zoom"}
-          </span>
+          <div className="flex w-max min-w-full items-center justify-between gap-6 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
+            <span className="whitespace-nowrap">
+              {INTERVAL_LABELS[interval]} bars
+              {/* Zoom is behind a modifier, so it has to be said somewhere — a
+                  gesture nobody can discover is the same as not having it. */}
+              {bars && " (\u2318 + scroll to zoom)"}
+            </span>
+            {statusNotes.length > 0 && (
+              <span className="whitespace-nowrap">
+                {statusNotes.join(" \u00b7 ")}
+              </span>
+            )}
+          </div>
         </div>
       )}
 
