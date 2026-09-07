@@ -46,15 +46,50 @@ type YQuote = {
   regularMarketPrice?: number;
   regularMarketChange?: number;
   regularMarketChangePercent?: number;
+  regularMarketPreviousClose?: number;
   fiftyDayAverageChangePercent?: number;
 };
+
+/**
+ * Yahoo's quote for the CBOE yield indices (^TNX and its siblings) collapses
+ * while the bond market is shut: it returns the last value as BOTH the price
+ * and the previous close, with open, dayHigh and dayLow all equal to it too. So
+ * regularMarketChange is 0 and the strip printed "10Y 4.78 0.00%" every
+ * weekend and every holiday, while the equity indices beside it kept a real
+ * prior close and showed Friday's move.
+ *
+ * Detected by the shape rather than by symbol, since it is a property of the
+ * quote and not of the instrument: no change, and a previous close identical to
+ * the price.
+ */
+function quoteChangeIsMissing(q: YQuote | undefined): boolean {
+  if (!q || q.regularMarketPrice == null) return false;
+  const flat = q.regularMarketChange == null || q.regularMarketChange === 0;
+  return flat && q.regularMarketPreviousClose === q.regularMarketPrice;
+}
+
+/**
+ * Recover a day's move from the daily history, which still carries both
+ * sessions when the quote does not. Returns null if there is nothing to
+ * compare against, so the caller keeps whatever the quote said.
+ */
+async function changeFromHistory(
+  symbol: string,
+): Promise<{ change: number; changePct: number } | null> {
+  const closes = await getDailyCloses(symbol, 1);
+  if (closes.length < 2) return null;
+  const prev = closes[closes.length - 2].close;
+  const last = closes[closes.length - 1].close;
+  if (!prev) return null;
+  return { change: last - prev, changePct: ((last - prev) / prev) * 100 };
+}
 
 export async function getTickerStrip(): Promise<LiveQuote[]> {
   const symbols = TICKER_STRIP.map((t) => t.symbol);
   try {
     const results = (await yahooFinance.quote(symbols)) as YQuote | YQuote[];
     const arr: YQuote[] = Array.isArray(results) ? results : [results];
-    return TICKER_STRIP.map((t) => {
+    const rows = TICKER_STRIP.map((t) => {
       const q = arr.find((r) => r?.symbol === t.symbol);
       return {
         symbol: t.symbol,
@@ -63,7 +98,20 @@ export async function getTickerStrip(): Promise<LiveQuote[]> {
         change: q?.regularMarketChange ?? null,
         changePct: q?.regularMarketChangePercent ?? null,
         avg50pct: q?.fiftyDayAverageChangePercent ?? null,
+        needsHistory: quoteChangeIsMissing(q),
       };
+    });
+
+    // Only the rows the quote could not answer for, and only then — on a normal
+    // session this costs nothing.
+    const repairs = await Promise.all(
+      rows.map((r) => (r.needsHistory ? changeFromHistory(r.symbol) : null)),
+    );
+
+    return rows.map((row, i) => {
+      const { needsHistory, ...r } = row;
+      const fix = needsHistory ? repairs[i] : null;
+      return fix ? { ...r, change: fix.change, changePct: fix.changePct } : r;
     });
   } catch (err) {
     console.error("[markets] ticker strip fetch failed:", err);
