@@ -1144,6 +1144,14 @@ export default function LevelsChart({
   const clipId = `lvl-clip-${symbol.replace(/[^A-Za-z0-9]/g, "")}-${variant}`;
 
   const hoveredBar = hover && bars ? bars[hover.i] : null;
+  // The close of the bar before the hovered one. Read from the full series
+  // rather than the visible slice: the warm-up bars fetched ahead of the
+  // window mean even the leftmost bar on screen has a real prior close, so the
+  // first bar of a range shows a change like every other bar instead of 0%.
+  const hoveredPrevClose =
+    hover && allBars
+      ? (allBars[clampedView.from + hover.i - 1]?.close ?? null)
+      : null;
   const hoveredZone =
     hoveredBar && analysis && levelsOn
       ? zones.find((z) => hoveredBar.close >= z.lo && hoveredBar.close <= z.hi) ?? null
@@ -1277,28 +1285,39 @@ export default function LevelsChart({
                 ["none", "Crosshair", "✛"],
                 ["line", "Straight line", "╱"],
                 ["free", "Freehand", "✎"],
-                ["fib", "Drag a Fibonacci swing", "𝑓"],
+                ["fib", "Fibonacci — drag a swing to place the grid, click again to hide it", "𝑓"],
               ] as const
-            ).map(([t, label, glyph]) => (
+            ).map(([t, label, glyph]) => {
+              // ƒ is the only Fibonacci control now, so it reflects and toggles
+              // whether the grid is showing — not merely whether the tool is
+              // armed. The other three stay a plain radio group.
+              const active = t === "fib" ? showFib : tool === t;
+              return (
               <button
                 key={t}
                 type="button"
                 title={label}
                 aria-label={label}
-                aria-pressed={tool === t}
+                aria-pressed={active}
                 onClick={() => {
+                  if (t === "fib") {
+                    const next = !showFib;
+                    setShowFib(next);
+                    setTool(next ? "fib" : "none");
+                    return;
+                  }
                   setTool(t);
-                  if (t === "fib") setShowFib(true);
                 }}
                 className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[11px] leading-5 last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-                  tool === t
+                  active
                     ? "bg-[var(--amber)] text-[var(--background)]"
                     : "text-[var(--dim)] hover:bg-[var(--panel)]"
                 }`}
               >
                 {glyph}
               </button>
-            ))}
+              );
+            })}
           </div>
 
           {/* Ink colour. Shown only when a drawing tool is armed — it means
@@ -1430,30 +1449,6 @@ export default function LevelsChart({
             }`}
           >
             EMA
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              const next = !showFib;
-              setShowFib(next);
-              // Turning the grid on with nothing drawn would show an empty
-              // chart, so it arms the tool; turning it off releases it.
-              if (next && !manualAnchors) setTool("fib");
-              else if (!next && tool === "fib") setTool("none");
-            }}
-            aria-pressed={fibOn}
-            title={
-              fib
-                ? "Hide the Fibonacci grid you drew"
-                : "Drag a swing on the chart to place a Fibonacci grid — levels fill in between the two points and project past both ends"
-            }
-            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-              fibOn
-                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
-            }`}
-          >
-            Fib
           </button>
           <button
             type="button"
@@ -2086,8 +2081,11 @@ export default function LevelsChart({
                 }}
               >
                 <b className="text-[11.5px]">{hoveredBar.close.toFixed(2)}</b>{" "}
-                {/* change vs the first bar of the current range, not today's price */}
-                {(((hoveredBar.close - bars[0].close) / bars[0].close) * 100).toFixed(1)}%
+                {/* change vs the previous bar — the session's own move, which is
+                    what a reader hovering a candle is asking about. Omitted
+                    only when there is genuinely no bar before this one. */}
+                {hoveredPrevClose != null &&
+                  `${(((hoveredBar.close - hoveredPrevClose) / hoveredPrevClose) * 100).toFixed(1)}%`}
                 <br />
                 <span className="text-[var(--faint)]">
                   {new Date(hoveredBar.date).toLocaleString("en-US", {
