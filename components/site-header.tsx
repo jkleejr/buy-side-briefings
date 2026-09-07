@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HeaderNav from "./header-nav";
+import HeaderNav, { HeaderNavLink } from "./header-nav";
 import MobileNav from "./mobile-nav";
 import ThemeToggle from "./theme-toggle";
 
@@ -15,6 +15,16 @@ const NAV = [
   { href: "/global", code: "GLBL", label: "Global" },
   { href: "/about", code: "ABT", label: "About" },
 ];
+
+/**
+ * About sits apart from the rest, over on the right beside the theme toggle.
+ * The inline row is the daily circuit — today's read, the archive, what's
+ * coming, the reference pages — and About is the one entry a reader visits
+ * once. NAV stays whole for the mobile drawer and the command palette, so
+ * nothing is harder to reach; only the desktop row is split.
+ */
+const PRIMARY_NAV = NAV.filter((i) => i.href !== "/about");
+const ABOUT = NAV.find((i) => i.href === "/about")!;
 
 export default function SiteHeader() {
   return (
@@ -46,9 +56,14 @@ export default function SiteHeader() {
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
-        <HeaderNav items={NAV} />
+        <HeaderNav items={PRIMARY_NAV} />
 
         <div className="ml-auto flex shrink-0 items-center gap-3 font-mono text-[10.5px] tracking-[0.1em] text-[var(--dim)]">
+          {/* Hidden below md for the same reason the inline row is: the
+              drawer already carries About there. */}
+          <div className="hidden md:block">
+            <HeaderNavLink item={ABOUT} />
+          </div>
           <ThemeToggle />
           <MobileNav items={NAV} />
         </div>
