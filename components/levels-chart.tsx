@@ -1210,6 +1210,17 @@ export default function LevelsChart({
    */
   const enoughForRSI = !!allBars && allBars.length > RSI_PERIOD;
   const enoughForEMA = !!allBars && allBars.length >= EMA_CONFIGS[0].period;
+
+  /**
+   * Between clicking a window and its bars arriving there is no series, so
+   * every "can this be computed" test answers no and all five buttons greyed
+   * out for the length of the fetch — a toolbar that flickers out under the
+   * pointer that just used it. Whether an overlay is available is a fact about
+   * the data, and mid-fetch we do not have the data to say. So during a load
+   * nothing is disabled and the toggles keep the state the reader set; the
+   * answer lands when the bars do.
+   */
+  const loadingSeries = !bars && !error;
   const indicators: Array<{
     id: string;
     label: string;
@@ -1234,8 +1245,11 @@ export default function LevelsChart({
     {
       id: "vol",
       label: "Vol",
-      on: volumeOn,
-      disabled: !hasVolume,
+      // `volumeOn` folds in hasVolume, which is false mid-fetch — the button
+      // would drop out of its lit state and back. It shows intent while
+      // loading and the resolved answer after.
+      on: loadingSeries ? showVolume && !compact : volumeOn,
+      disabled: loadingSeries ? false : !hasVolume,
       hint: hasVolume
         ? "Show or hide the volume pane"
         : `${symbol} reports no traded volume`,
@@ -1245,7 +1259,7 @@ export default function LevelsChart({
       id: "sr",
       label: "S/R",
       on: levelsOn,
-      disabled: !analysis,
+      disabled: loadingSeries ? false : !analysis,
       hint: analysis
         ? "Show or hide the derived support and resistance levels"
         : `No levels derived for ${symbol} on this range`,
@@ -1255,7 +1269,7 @@ export default function LevelsChart({
       id: "rsi",
       label: "RSI",
       on: rsiOn,
-      disabled: !enoughForRSI,
+      disabled: loadingSeries ? false : !enoughForRSI,
       hint: enoughForRSI
         ? "Show or hide the RSI momentum pane"
         : "Not enough bars to compute RSI on this range",
@@ -1265,7 +1279,7 @@ export default function LevelsChart({
       id: "ema",
       label: "EMA",
       on: emaOn,
-      disabled: !enoughForEMA,
+      disabled: loadingSeries ? false : !enoughForEMA,
       hint: enoughForEMA
         ? "Show or hide the exponential moving averages"
         : "Not enough bars to compute an EMA on this range",
@@ -1591,8 +1605,11 @@ export default function LevelsChart({
             <span className="whitespace-nowrap">
               {INTERVAL_LABELS[interval]} bars
               {/* Zoom is behind a modifier, so it has to be said somewhere — a
-                  gesture nobody can discover is the same as not having it. */}
-              {bars && " (\u2318 + scroll to zoom)"}
+                  gesture nobody can discover is the same as not having it.
+                  Keyed on the absence of an error, not the presence of bars:
+                  keyed on bars it blinked out for the length of every fetch,
+                  and the gesture is no less true while the series loads. */}
+              {!error && " (\u2318 + scroll to zoom)"}
             </span>
             {statusNotes.length > 0 && (
               <span className="whitespace-nowrap">
