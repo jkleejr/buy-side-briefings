@@ -1,0 +1,100 @@
+{
+  "routine": "markets",
+  "date": "2026-09-07",
+  "window": "morning",
+  "generated_at": "2026-09-07T12:27:01Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Asia repriced the AI memory trade on a record inventory squeeze while US markets were shut",
+    "label": "US closed for Labor Day; Kospi +4.61% to 6,995.39, Nikkei +2.12% to 66,399; memory inventories below 10 days; Brent $97.58",
+    "rationale_short": "US cash equity and Treasury markets were closed for Labor Day, so Monday's pricing happened in Seoul and Tokyo. The Kospi closed 4.61% higher at 6,995.39 and the Nikkei 225 rose 2.12% to 66,399 after KB Securities reported that memory inventories at Samsung Electronics and SK Hynix have fallen below ten days of supply, and forecast hyperscaler AI infrastructure spending of about $1.3 trillion in 2027 with memory taking 57% of it against 14% in 2025.\n\nWhat that forecast describes is a redistribution, not an expansion. Memory now accounts for 40-50% of a datacenter server's bill of materials against 30-35% a year ago, and NVIDIA notified its largest customers on August 22 that AI server prices would rise more than 15% on Vera Rubin and Grace Blackwell configurations shipping in early 2027. The shortage that lifts the memory makers is charged onward to everyone who buys their output. Friday's US session had already split along that line, with SanDisk up 8% and Micron up 5% on a day the S&P 500 fell 0.38%, so Monday extended a divergence rather than starting one.\n\nTwo qualifications sit against the size of the move. The inventory figure and the 2027 capex number are a broker's estimates, not a company disclosure — no supplier confirmed either on Monday, and the first company data able to test them is more than a week away. And the shortage is not new: J.P. Morgan Global Research estimates DRAM prices rise more than 400% between the start of 2024 and the end of 2026. Monday tightened an existing move rather than revealing a new one.\n\nEurope traded the other side. The STOXX 600 slipped 0.1% to 649.98 with oil and gas up 1.14% and healthcare down more than 1%, as Brent for November rose 1.4% to $97.58 following US strikes on three Iranian oil tankers on Saturday and Tehran's statement that a restricted maritime zone would extend from the US blockade line toward the Strait of Hormuz.\n\nNothing repriced in US rates. The 10-year held 4.79% and the 30-year 5.25%, with September hike odds near 57% from Friday's close, so three days of Hormuz escalation and the memory repricing all arrive at Tuesday's 9:30 ET open at once — alongside Canada's retaliatory tariffs on $27.6 billion of US goods, which take effect the same morning. The levels that define the picture are unchanged because nothing traded: 4.818% on the 10-year, 5.30% on the 30-year, 7,700 on the S&P 500 and $95 on WTI. August PPI on Thursday is the first print to capture the week's energy move, and it lands with the FOMC in blackout through September 17.",
+    "lede_short": "With US markets closed for Labor Day, Asia did the pricing: the Kospi rose 4.61% and the Nikkei 2.12% after KB Securities put Samsung and SK Hynix memory inventories below ten days of supply and forecast memory taking 57% of a $1.3 trillion 2027 hyperscaler budget. That describes who captures AI spending rather than how much of it there is — memory is already 40-50% of a server's cost. Tuesday's open takes that alongside Brent at $97.58 and Thursday's PPI.",
+    "supporting_data": [
+      {
+        "label": "KB Securities put memory inventories at Samsung and SK Hynix below ten days of supply and forecast hyperscaler AI infrastructure spending near $1.3 trillion in 2027, with memory taking 57% of it against 14% in 2025 — the estimate that drove the Asian session, and a projection rather than a shipment figure any company has confirmed",
+        "url": "https://www.sdxcentral.com/news/ai-infra-spend-to-hit-13t-as-supply-shrinks-for-memory-giants-to-10-days/"
+      },
+      {
+        "label": "The Kospi closed up 4.61% at 6,995.39 on net buying from both foreign and institutional accounts — within five points of 7,000, a level the index has never closed above, and the clearest expression of the memory repricing on a day US markets could not trade it",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008741406"
+      },
+      {
+        "label": "Brent for November rose 1.4% to $97.58 after US forces struck three Iranian oil tankers on Saturday and Iran's national security chief said a restricted maritime zone would extend from the US blockade line toward the Strait of Hormuz — the energy input reaches Thursday's PPI before it reaches anything else, and the Fed is in blackout through September 17",
+        "url": "https://www.thenationalnews.com/news/gulf/2026/09/07/iran-threatens-to-impose-restricted-zone-outside-strait-of-hormuz/"
+      },
+      {
+        "label": "NVIDIA told its largest customers on August 22 that AI server prices will rise more than 15% on Vera Rubin and Grace Blackwell configurations shipping in early 2027, with memory now 40-50% of a server's bill of materials against 30-35% a year ago — the memory shortage is a cost transfer to the buyer, which is why semis and software moved in opposite directions on Friday",
+        "url": "https://www.techtimes.com/articles/325718/20260827/memory-will-cost-cloud-giants-more-gpus-2027-nvidia-uses-that-justify-15-server-hike.htm"
+      },
+      {
+        "label": "The Nikkei 225 closed 1,378 points higher at 66,399, up 2.12%, with Kioxia up 7.93% and SoftBank Group up 6.82% — semiconductors and AI-linked names supplied nearly all of the index gain, making the Japanese move narrower than the headline implies",
+        "url": "https://japannews24.com/nikkei-jumps-1378-points-as-chip-shares-lead-rebound/"
+      },
+      {
+        "label": "SanDisk rose 8% and Micron 5% on Friday while the S&P 500 fell 0.38% — memory led on a session the broad market sold, so Monday's Asian move extended an existing divergence rather than opening one",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-rises-8-micron-gains-150036426.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7718.60,  "change_pct": -0.38, "as_of": "2026-09-04T20:00:00.000Z" },
+    "nasdaq": { "level": 26506.99, "change_pct": -0.29, "as_of": "2026-09-04T20:00:00.000Z" },
+    "vix":    { "level": 14.40,    "change_pct": 0.56,  "as_of": "2026-09-04T20:00:00.000Z" },
+    "ust10y": { "level": 4.79,     "change_bps": 3,     "as_of": "2026-09-04T20:00:00.000Z" },
+    "dxy":    { "level": 99.23,    "change_pct": 0.30,  "as_of": "2026-09-04T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield",       "value": 4.79,    "trigger_above": 4.818, "unit": "%" },
+    { "name": "30Y Yield",       "value": 5.25,    "trigger_above": 5.30,  "unit": "%" },
+    { "name": "SPX vs 7,700",    "value": 7718.60, "trigger_below": 7700,  "unit": "index" },
+    { "name": "DXY",             "value": 99.23,   "trigger_above": 100.0, "unit": "index" },
+    { "name": "Crude Oil (WTI)", "value": 91.48,   "trigger_above": 95.0,  "unit": "$/bbl" },
+    { "name": "BTC",             "value": 79486,   "trigger_below": 78000, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "MU",
+      "note": "The direct US read-through to Monday's Asian session. KB Securities put Samsung and SK Hynix inventories below ten days of supply, and Micron rose 5% on Friday alongside SanDisk's 8% while the S&P 500 fell 0.38%. The move rests on a broker's 2027 capex projection rather than a company disclosure; no supplier confirmed an inventory or shipment figure on Monday.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Sits on the paying side of the same shortage. Memory is now 40-50% of a datacenter server's bill of materials against 30-35% a year ago, and NVIDIA notified its largest customers on August 22 that AI server prices would rise more than 15% on Vera Rubin and Grace Blackwell configurations shipping in early 2027. Rising memory content raises the price of the system rather than the margin on it.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CL=F",
+      "note": "WTI settled at $91.48 on September 4, up about 9% on the week, with NYMEX on a shortened Labor Day session. Brent carried Monday's move, rising 1.4% to $97.58 after US strikes on three Iranian tankers and Iran's restricted-zone statement. The $95.00 level on WTI is the regime threshold, and Thursday's August PPI is the first print to capture the move.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "Trading at $79,486 midday Monday (Crypto.com; 24-hour range $78,983-$80,563), down 0.6% over 24 hours. A third weekend at $80,000 without a close through it, and with no US venue to reprice either the memory news or the Hormuz escalation. $78,000 is the downside reference into PPI and CPI.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Semis against software at Tuesday's US open",
+      "thesis": "US cash markets reopen at 9:30 ET on Tuesday carrying three days of Hormuz escalation, the Asian memory repricing and Canada's retaliatory tariffs on $27.6 billion of US goods, all effective the same morning. The informative part is the split rather than the index level: if memory's rise is a transfer of AI spending between sectors rather than an expansion of it, semiconductors and software separate further, as they did on Friday when SanDisk gained 8% and Micron 5% on a session the S&P 500 fell 0.38%.",
+      "entry": "7,718.60 is Friday's S&P 500 close and 7,700 the level below it that the regime framework flags. The semis-versus-software spread on Tuesday is what distinguishes a sector transfer from a broad AI-spending expansion.",
+      "invalidation": "Semiconductors and software rising together would argue the market is reading the KB forecast as more total AI spending rather than a redistribution of it. A broad decline on oil would say the Hormuz escalation outweighed the memory news.",
+      "horizon": "Tuesday, September 8"
+    },
+    {
+      "asset": "August PPI and the energy pass-through",
+      "thesis": "Brent at $97.58 and WTI's roughly 9% weekly gain reach producer prices before they reach consumer prices, and August PPI at 8:30 ET on Thursday, September 10 is the first print to capture the move. It arrives with the FOMC in blackout through September 17, so no official can soften it before the September 15-16 decision. ISM services prices paid at 72.6 in August, above July's 70.3, points the same direction.",
+      "entry": "A WTI close above $95 before Thursday would make energy the dominant line in the print. September hike odds near 57% from Friday's close are the starting point the print moves from.",
+      "invalidation": "A de-escalation that returns WTI below $85 before Thursday would remove the energy leg. A PPI print at or below consensus despite the oil move would say the pass-through is slower than the weekly gain implies.",
+      "horizon": "September 10-11, into the September 15-16 FOMC"
+    },
+    {
+      "asset": "The 2027 capex forecast behind the memory move",
+      "thesis": "Seoul traded Monday on hyperscaler spending KB Securities puts at $1.3 trillion in 2027, with memory taking 57% of it. That number has not yet met a company disclosure. Oracle reports Q1 FY2027 on Thursday, September 10 with a $20 billion equity issuance behind it — the first large AI-capex print of the month and the first opportunity for a company rather than a broker to support or undercut the figure.",
+      "entry": "Oracle's capex guidance and the terms of the $20 billion issuance are the specific disclosures that bear on the forecast. Micron's next quarterly report is the direct memory-side test.",
+      "invalidation": "Capex guidance below the run-rate implied by a $1.3 trillion 2027 total, or evidence that hyperscalers are deferring rather than pre-buying memory, would undercut the basis of Monday's move. Confirmation of multi-year supply agreements at higher prices would support it.",
+      "horizon": "Thursday, September 10 and the following two weeks"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-07-morning.mdx"
+}
