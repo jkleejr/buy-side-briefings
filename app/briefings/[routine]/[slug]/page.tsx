@@ -116,7 +116,11 @@ export default async function BriefingPage({
       </header>
 
       {verdict ? (
-        <div className="space-y-7">
+        <div className="space-y-7 pt-1">
+          {/* pt-1 on this container nudges the whole glance block — rule,
+              timestamp and bullets together — a few pixels clear of the
+              headline. Padding here rather than a margin on the tier, so the
+              accent rule moves with the text it marks instead of staying put. */}
           {/* The glance and evidence tiers are unlabelled. Their headings were
               read-times and nothing else — "30 seconds", "1 min · the
               evidence" — and a reader scanning a briefing does not need to be
