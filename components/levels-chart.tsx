@@ -1221,6 +1221,14 @@ export default function LevelsChart({
    * answer lands when the bars do.
    */
   const loadingSeries = !bars && !error;
+
+  /**
+   * Whether the ink colour means anything for the armed tool. Only the line
+   * and freehand shapes are drawn in it — a Fibonacci swing stores two anchors
+   * and nothing else, and its grid draws in var(--fib), so offering a colour
+   * while ƒ is armed offered a choice that changed nothing.
+   */
+  const inkApplies = tool === "line" || tool === "free";
   const indicators: Array<{
     id: string;
     label: string;
@@ -1518,15 +1526,21 @@ export default function LevelsChart({
             })}
           </div>
 
-          {/* Ink colour. Always in the row, dimmed and inert until a tool is
-              armed. It used to mount on arming and unmount on releasing, which
-              pushed Undo, Clear and all five indicator buttons sideways every
-              time — the toolbar rearranged itself under the pointer that had
-              just clicked it. */}
+          {/* Ink colour. Always in the row, dimmed and inert unless the armed
+              tool actually draws in it — that is the line and the freehand, not
+              the crosshair and not ƒ. It used to mount on arming and unmount on
+              releasing, which pushed Undo, Clear and all five indicator buttons
+              sideways every time — the toolbar rearranged itself under the
+              pointer that had just clicked it. */}
           <div
-            aria-hidden={tool === "none"}
+            aria-hidden={!inkApplies}
+            title={
+              inkApplies
+                ? undefined
+                : "Ink colour applies to the line and freehand tools"
+            }
             className={`flex items-center gap-1 border border-[var(--border-strong)] px-1 py-0.5 ${
-              tool === "none" ? "pointer-events-none opacity-30" : ""
+              inkApplies ? "" : "pointer-events-none opacity-30"
             }`}
           >
               {DRAW_COLORS.map((c) => (
@@ -1543,7 +1557,8 @@ export default function LevelsChart({
                       : "border-[var(--border-strong)]"
                   }`}
                   style={{ background: c.value }}
-                  tabIndex={tool === "none" ? -1 : undefined}
+                  disabled={!inkApplies}
+                  tabIndex={inkApplies ? undefined : -1}
                 />
               ))}
           </div>
