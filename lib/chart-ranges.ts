@@ -57,37 +57,30 @@ export function isIntradayInterval(i: ChartInterval): boolean {
  * per bar. Those are left out even though the feed would serve them.
  */
 export const RANGE_INTERVALS: Record<ChartRange, ChartInterval[]> = {
-  "1D": ["5m", "30m", "1h"],
-  "5D": ["30m", "5m", "1h"],
-  "1M": ["1d", "30m", "1h"],
-  "3M": ["1d", "1h", "1wk"],
-  "1Y": ["1d", "1wk"],
-  "5Y": ["1wk", "1d", "1mo"],
-  ALL: ["1mo", "1wk"],
+  "1D": ["1h"],
+  "5D": ["1h"],
+  "1M": ["1d", "1h"],
+  "3M": ["1d", "1h"],
+  "1Y": ["1d", "1mo"],
+  "5Y": ["1d", "1mo"],
+  ALL: ["1mo"],
 };
+
+/**
+ * The bar sizes the picker shows, always, in this order.
+ *
+ * It used to render whatever the current range allowed, so buttons appeared and
+ * vanished as you moved between windows and the row re-laid itself out under
+ * the pointer. The set is fixed now and a size a window cannot serve is shown
+ * disabled instead — the control says what exists and what is available, which
+ * are two different facts.
+ */
+export const PICKER_INTERVALS: ChartInterval[] = ["1h", "1d", "1mo"];
 
 export function defaultInterval(range: ChartRange): ChartInterval {
   return RANGE_INTERVALS[range][0];
 }
 
-/** Shortest bar to longest — the order the picker always reads in. */
-const INTERVAL_ORDER: ChartInterval[] = ["5m", "30m", "1h", "1d", "1wk", "1mo"];
-
-/**
- * The intervals a range allows, in bar-size order.
- *
- * RANGE_INTERVALS is written default-first, because `defaultInterval` and
- * `resolveInterval` both read entry [0]. Rendering the picker straight from it
- * therefore printed whatever that range's default happened to be at the front:
- * 5Y read "1w 1d 1mo" and 5D read "30m 5m 1h". Which bar is the default is a
- * data question; the order they are listed in is a reading one, and they are
- * not the same order.
- */
-export function orderedIntervals(range: ChartRange): ChartInterval[] {
-  return [...RANGE_INTERVALS[range]].sort(
-    (a, b) => INTERVAL_ORDER.indexOf(a) - INTERVAL_ORDER.indexOf(b),
-  );
-}
 
 /** The requested interval if the range allows it, else that range's default. */
 export function resolveInterval(

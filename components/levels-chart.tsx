@@ -12,7 +12,7 @@ import {
   INTERVAL_LABELS,
   INTERVAL_SHORT,
   RANGE_INTERVALS,
-  orderedIntervals,
+  PICKER_INTERVALS,
   defaultInterval,
   isIntradayInterval,
   type ChartInterval,
@@ -327,9 +327,8 @@ export default function LevelsChart({
   // offers it, which resolveInterval on the server enforces too.
   const [intervalPin, setIntervalPin] = useState<ChartInterval | null>(null);
   const intervalOptions = RANGE_INTERVALS[range];
-  // Membership stays keyed on RANGE_INTERVALS (default first); the picker
-  // reads shortest bar to longest.
-  const intervalDisplay = orderedIntervals(range);
+  // The picker shows the same three sizes on every window; RANGE_INTERVALS
+  // decides which of them this window can actually serve.
   const interval: ChartInterval =
     intervalPin && intervalOptions.includes(intervalPin)
       ? intervalPin
@@ -1419,37 +1418,46 @@ export default function LevelsChart({
         <div className="flex flex-wrap items-center gap-2 pb-2">
           <RangeSelector value={range} onChange={setRange} loading={!bars && !error} />
 
-          {/* Bar size. Only the sizes this window can actually be drawn at —
-              Yahoo won't serve 30-minute bars past 60 days, and an hourly year
-              is 2,000 candles of mush — so the options change with the range
-              rather than offering a pick that would fail or be unreadable. */}
-          {intervalOptions.length > 1 && (
-            <div className="flex items-center gap-2">
-              <Sep />
-              <div
-                className="flex border border-[var(--border-strong)]"
-                role="group"
-                aria-label="Bar size"
-              >
-              {intervalDisplay.map((iv) => (
-                <button
-                  key={iv}
-                  type="button"
-                  onClick={() => setIntervalPin(iv)}
-                  aria-pressed={iv === interval}
-                  title={`${INTERVAL_LABELS[iv]} bars`}
-                  className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] normal-case tracking-[0.11em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-                    iv === interval
-                      ? "bg-[var(--amber)] text-[var(--background)]"
-                      : "text-[var(--dim)] hover:bg-[var(--panel)]"
-                  }`}
-                >
-                  {INTERVAL_SHORT[iv]}
-                </button>
-              ))}
-              </div>
+          {/* Bar size. The three sizes are always all here; the ones this
+              window cannot be drawn at are disabled rather than removed —
+              Yahoo won't serve hourly bars past 730 days, and a daily ALL
+              chart is 6,000 candles of mush. Showing the whole set means the
+              row never re-lays itself out when you change window, and the
+              greyed button says the pairing is unavailable rather than
+              silently not existing. */}
+          <div className="flex items-center gap-2">
+            <Sep />
+            <div
+              className="flex border border-[var(--border-strong)]"
+              role="group"
+              aria-label="Bar size"
+            >
+              {PICKER_INTERVALS.map((iv) => {
+                const allowed = intervalOptions.includes(iv);
+                return (
+                  <button
+                    key={iv}
+                    type="button"
+                    onClick={() => setIntervalPin(iv)}
+                    disabled={!allowed}
+                    aria-pressed={iv === interval}
+                    title={
+                      allowed
+                        ? `${INTERVAL_LABELS[iv]} bars`
+                        : `${INTERVAL_LABELS[iv]} bars aren't available over ${range}`
+                    }
+                    className={`border-r border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] normal-case tracking-[0.11em] last:border-r-0 disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                      iv === interval
+                        ? "bg-[var(--amber)] text-[var(--background)]"
+                        : "text-[var(--dim)] enabled:hover:bg-[var(--panel)]"
+                    }`}
+                  >
+                    {INTERVAL_SHORT[iv]}
+                  </button>
+                );
+              })}
             </div>
-          )}
+          </div>
 
           <Sep />
 

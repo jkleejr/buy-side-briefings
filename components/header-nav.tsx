@@ -16,18 +16,19 @@ export default function HeaderNav({ items }: { items: NavItem[] }) {
 
   return (
     <div className="relative hidden min-w-0 flex-1 md:block">
-      <nav className="flex items-baseline gap-5 overflow-x-auto pr-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <nav className="flex items-center gap-5 overflow-x-auto pr-6 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {items.map((item) => {
           const active = item.external ? false : isActiveRoute(item.href, pathname);
-          const cls = `shrink-0 whitespace-nowrap pb-0.5 font-mono text-[12px] tracking-[0.02em] ${
-            // The current page is marked by its colour, not by a rule under
-            // it. The border stays on both states, transparent, so dropping
-            // the visible one doesn't change the row's height. Weight and
-            // aria-current still carry the state for anyone who can't use the
-            // colour.
+          // The current page is marked by its colour, not by a rule under it.
+          // With the rule gone the pb-0.5 and the 2px transparent border it sat
+          // in go too: they padded every item below its text, so the items'
+          // boxes centred while their text rode high — which is what made the
+          // wordmark beside them look low. Weight and aria-current still carry
+          // the state for anyone who can't use the colour.
+          const cls = `shrink-0 whitespace-nowrap font-mono text-[12px] leading-none tracking-[0.02em] ${
             active
-              ? "border-b-2 border-transparent font-semibold text-[var(--amber)]"
-              : "border-b-2 border-transparent text-[var(--dim)] hover:text-[var(--foreground)]"
+              ? "font-semibold text-[var(--amber)]"
+              : "text-[var(--dim)] hover:text-[var(--foreground)]"
           }`;
 
           // Off-site links leave in a new tab and say so with a small arrow,

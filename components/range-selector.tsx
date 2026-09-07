@@ -36,9 +36,6 @@ export default function RangeSelector({ value, onChange, loading, className }: P
           </button>
         );
       })}
-      {loading && (
-        <span className="ml-1 text-[var(--amber-dim)]">·</span>
-      )}
     </div>
   );
 }
