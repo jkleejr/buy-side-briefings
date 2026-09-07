@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import LevelsChart from "./levels-chart-lazy";
+import { CHART_ASSET_GROUPS, CHART_LABELS, CHART_SYMBOLS } from "@/lib/chart-assets";
 import Link from "next/link";
 import type {
   HomeData,
@@ -227,44 +228,6 @@ function splitColumns<T>(items: T[]): T[][] {
 // "S&P 500 743.29" a few inches under a ticker strip reading 7,457.69. These
 // are the same symbols the ticker and pulse rail already use, so every number
 // on the homepage now comes from one place.
-const CHART_SYMBOLS = [
-  "^GSPC",
-  "NVDA",
-  "AAPL",
-  "MU",
-  "BTC-USD",
-  "^VIX",
-  "DX-Y.NYB",
-  "JPY=X",
-  "GC=F",
-  "CL=F",
-  "^KS11",
-  "000660.KS",
-];
-const CHART_LABELS: Record<string, string> = {
-  "^GSPC": "S&P 500",
-  NVDA: "Nvidia",
-  AAPL: "Apple",
-  MU: "Micron",
-  "BTC-USD": "Bitcoin",
-  "^VIX": "VIX",
-  // Same symbol the ticker strip and /macro use — one dollar number sitewide.
-  "DX-Y.NYB": "Dollar",
-  // Labelled as the pair, not "Yen", because the quote is dollars-per-yen: the
-  // line going up is the yen getting *weaker*. "Yen ▲" would read backwards.
-  "JPY=X": "USD/JPY",
-  "GC=F": "Gold",
-  // WTI front-month, which is the barrel the briefings quote ("WTI settled
-  // $82.21"). Spelled out rather than "WTI" so the row stays readable to
-  // someone who doesn't trade crude; the ticker is in the chart's source line.
-  "CL=F": "Crude Oil",
-  // Both Korean lines are quoted in won, unlike every other price chart here,
-  // and both say so — a bare "570,000" or "3,240" reads as dollars sitting next
-  // to Nvidia and Micron. The index carried no currency while the stock beside
-  // it did, which made the omission look deliberate.
-  "^KS11": "KOSPI (KRW)",
-  "000660.KS": "SK Hynix (KRW)",
-};
 
 // --- shell -----------------------------------------------------------------------
 
@@ -330,7 +293,12 @@ export default function HomeTerminal({
               chart you can actually read. */}
           <div className="pt-12">
             <SectionRule>Charts</SectionRule>
-            <LevelsChart symbols={CHART_SYMBOLS} labels={CHART_LABELS} />
+            <LevelsChart
+              symbols={CHART_SYMBOLS}
+              labels={CHART_LABELS}
+              groups={CHART_ASSET_GROUPS}
+              quotes={data.chartQuotes}
+            />
           </div>
 
           {/* The day's articles, now the full width of the page. This was the

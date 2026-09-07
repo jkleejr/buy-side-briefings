@@ -1,4 +1,5 @@
 import { getTradeQuotes } from "@/lib/markets";
+import { CHART_SYMBOLS } from "@/lib/chart-assets";
 import {
   getAllMarketsVerdicts,
   getBriefing,
@@ -89,6 +90,13 @@ export type HomeData = {
   defaultView: "morning" | "evening";
   sectors: SectorRow[];
   wire: WireRow[];
+  /**
+   * Last price for every asset the chart picker lists, so the menu can print a
+   * price beside each name without the client fetching twelve quotes when it
+   * opens. Refreshes with the page (revalidate 300), which is the right
+   * cadence for a number that only orients the reader before they pick.
+   */
+  chartQuotes: Record<string, number | null>;
 };
 
 // --- left-rail market pulse (2-col grid) ------------------------------------
@@ -580,13 +588,20 @@ export async function getHomeData(): Promise<HomeData> {
     }
   }
 
-  const [pulseQuotes, sectorQuotes, tickerQuotesArr] = await Promise.all([
-    getTradeQuotes(PULSE_LIST.map((m) => m.symbol)),
-    getTradeQuotes(SECTOR_LIST.map((s) => s.symbol)),
-    watchTickers.size
-      ? getTradeQuotes(Array.from(watchTickers))
-      : Promise.resolve([]),
-  ]);
+  const [pulseQuotes, sectorQuotes, tickerQuotesArr, chartQuotesArr] =
+    await Promise.all([
+      getTradeQuotes(PULSE_LIST.map((m) => m.symbol)),
+      getTradeQuotes(SECTOR_LIST.map((s) => s.symbol)),
+      watchTickers.size
+        ? getTradeQuotes(Array.from(watchTickers))
+        : Promise.resolve([]),
+      getTradeQuotes(CHART_SYMBOLS),
+    ]);
+
+  const chartQuotes: Record<string, number | null> = {};
+  for (const sym of CHART_SYMBOLS) {
+    chartQuotes[sym] = chartQuotesArr.find((q) => q.symbol === sym)?.price ?? null;
+  }
 
   const pulse: MarketRow[] = PULSE_LIST.map((m) => {
     const q = pulseQuotes.find((x) => x.symbol === m.symbol);
@@ -663,5 +678,6 @@ export async function getHomeData(): Promise<HomeData> {
     defaultView,
     sectors,
     wire: buildWire(verdicts, featuredKeys),
+    chartQuotes,
   };
 }

@@ -32,6 +32,8 @@ import {
   type FibLevel,
 } from "@/lib/fibonacci";
 import RangeSelector from "./range-selector";
+import ChartMenu from "./chart-menu";
+import type { ChartAssetGroup } from "@/lib/chart-assets";
 import {
   appendPoint,
   colorValue,
@@ -268,6 +270,18 @@ type Props = {
    */
   labels?: Record<string, string>;
   /**
+   * How the asset picker groups the symbols ("Equities", "Global", …). Without
+   * it the menu lists `symbols` as one ungrouped block, which is what the
+   * macro and global pages want — their charts are already one theme each.
+   */
+  groups?: ChartAssetGroup[];
+  /**
+   * Last price per symbol, for the price column in the asset picker. Gathered
+   * server-side so opening the menu costs no requests; omitted, the menu simply
+   * shows names.
+   */
+  quotes?: Record<string, number | null>;
+  /**
    * Whether the volume pane and the derived levels start switched on. Both
    * default off: the chart opens as plain price, and the overlays are there
    * when you go looking for them. A page built around the levels (the
@@ -284,12 +298,19 @@ type Props = {
   sourceLine?: boolean;
 };
 
+/** Hairline divider between the groups in the chart toolbar. */
+function Sep() {
+  return <span aria-hidden className="h-4 w-px shrink-0 bg-[var(--border-strong)]" />;
+}
+
 export default function LevelsChart({
   symbols,
   initialSymbol,
   variant = "full",
   title,
   labels,
+  groups,
+  quotes,
   defaultVolume = false,
   defaultLevels = false,
   sourceLine = true,
@@ -1172,6 +1193,94 @@ export default function LevelsChart({
    */
   const fibX = (i: number) => (fib?.manual ? i - clampedView.from : i);
 
+  // --- header ---------------------------------------------------------------
+
+  /** Last close on screen — the price the header leads with. */
+  const lastPrice = bars && bars.length ? bars[bars.length - 1].close : null;
+
+  /**
+   * Return across the window on screen: first visible close to last. Keyed on
+   * `bars`, which is the visible slice, so it re-derives when the range, the
+   * symbol or the zoom changes — switching 3M → 1Y updates it without any
+   * extra wiring.
+   */
+  const windowReturn = useMemo(() => {
+    if (!bars || bars.length < 2) return null;
+    const start = bars[0].close;
+    const end = bars[bars.length - 1].close;
+    if (!start) return null;
+    const abs = end - start;
+    return { abs, pct: (abs / start) * 100 };
+  }, [bars]);
+
+  /** Ungrouped fallback for the pages that pass a themed symbol list. */
+  const assetGroups: ChartAssetGroup[] = groups ?? [{ label: "", symbols }];
+
+  /**
+   * The overlays, behind one menu. Each keeps the disabled rule and the
+   * explanation its button carried — a greyed row with no reason reads as
+   * broken, and these are switched off for good reasons (no traded volume, too
+   * few bars to compute RSI).
+   */
+  const enoughForRSI = !!allBars && allBars.length > RSI_PERIOD;
+  const enoughForEMA = !!allBars && allBars.length >= EMA_CONFIGS[0].period;
+  const indicators = [
+    {
+      id: "line",
+      label: "Line",
+      on: mode === "line",
+      disabled: false,
+      hint:
+        mode === "line"
+          ? bodiesCollapse
+            ? "Switch to candles — body measured from the prior close, since this market has no daily open"
+            : "Switch to candles — open, high, low and close per bar"
+          : "Switch to a line through the closes",
+      toggle: () => setModePin(mode === "line" ? "candle" : "line"),
+    },
+    {
+      id: "vol",
+      label: "Volume",
+      on: volumeOn,
+      disabled: !hasVolume,
+      hint: hasVolume
+        ? "Show or hide the volume pane"
+        : `${symbol} reports no traded volume`,
+      toggle: () => setShowVolume((v) => !v),
+    },
+    {
+      id: "sr",
+      label: "Support / resistance",
+      on: levelsOn,
+      disabled: !analysis,
+      hint: analysis
+        ? "Show or hide the derived support and resistance levels"
+        : `No levels derived for ${symbol} on this range`,
+      toggle: () => setShowLevels((v) => !v),
+    },
+    {
+      id: "rsi",
+      label: "RSI",
+      on: rsiOn,
+      disabled: !enoughForRSI,
+      hint: enoughForRSI
+        ? "Show or hide the RSI momentum pane"
+        : "Not enough bars to compute RSI on this range",
+      toggle: () => setShowRSI((v) => !v),
+    },
+    {
+      id: "ema",
+      label: "EMA",
+      on: emaOn,
+      disabled: !enoughForEMA,
+      hint: enoughForEMA
+        ? "Show or hide the exponential moving averages"
+        : "Not enough bars to compute an EMA on this range",
+      toggle: () => setShowEMA((v) => !v),
+    },
+  ];
+  const activeIndicatorCount = indicators.filter((i) => i.on && !i.disabled).length;
+
   return (
     <div
       className={
@@ -1180,7 +1289,7 @@ export default function LevelsChart({
           : undefined
       }
     >
-      <div className="flex flex-wrap items-baseline gap-2 pb-2">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pb-2">
         {compact ? (
           <span className="font-mono text-[11px] font-bold tracking-[0.1em] text-[var(--foreground)]">
             {symbol}
@@ -1197,35 +1306,89 @@ export default function LevelsChart({
           </span>
         ) : (
           <>
-            {/* Always one row, scrolled rather than wrapped. Thirteen symbols
-                wrapped into three ragged rows on a 390px screen, and because
-                the buttons are joined by shared borders the broken-off ends
-                read as a rendering fault rather than as a second row.
-                Not gated on a breakpoint: the same mess appears on a tablet,
-                just one row later. Where the row does fit there is nothing to
-                scroll, so wide screens look exactly as they did. */}
-            <div className="panel-scroll flex min-w-0 max-w-full flex-nowrap overflow-x-auto overscroll-x-contain border border-[var(--border-strong)]">
-              {symbols.map((s) => (
-                <button
-                  key={s}
-                  type="button"
-                  onClick={() => setSymbol(s)}
-                  aria-pressed={s === symbol}
-                  className={`shrink-0 whitespace-nowrap border-r border-[var(--border-strong)] px-2.5 py-2 font-mono text-[10px] font-bold tracking-[0.1em] last:border-r-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] sm:py-1 ${
-                    s === symbol
-                      ? "bg-[var(--amber)] text-[var(--background)]"
-                      : "text-[var(--dim)] hover:bg-[var(--panel)]"
-                  }`}
-                >
-                  {labels?.[s] ?? s}
-                </button>
-              ))}
-            </div>
-            {analysis && (
-              <span className="font-mono text-[15px] font-semibold tabular-nums text-[var(--foreground)]">
-                {analysis.price.toLocaleString("en-US", { maximumFractionDigits: 2 })}
+            <ChartMenu
+              ariaLabel="Choose asset"
+              minWidth={272}
+              label={labels?.[symbol] ?? symbol}
+            >
+              {(close) =>
+                assetGroups.map((g) => (
+                  <div key={g.label || "all"}>
+                    {g.label && (
+                      <div className="px-3 pb-1 pt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--faint)]">
+                        {g.label}
+                      </div>
+                    )}
+                    {g.symbols.map((sym) => {
+                      const active = sym === symbol;
+                      const q = quotes?.[sym];
+                      return (
+                        <button
+                          key={sym}
+                          type="button"
+                          role="menuitemradio"
+                          aria-checked={active}
+                          onClick={() => {
+                            setSymbol(sym);
+                            close();
+                          }}
+                          className={`flex w-full items-center gap-2.5 px-3 py-1.5 text-left font-mono text-[11.5px] hover:bg-[var(--panel-head)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                            active
+                              ? "text-[var(--amber)]"
+                              : "text-[var(--foreground)]"
+                          }`}
+                        >
+                          <span aria-hidden className="w-2 shrink-0">
+                            {active ? "\u2022" : ""}
+                          </span>
+                          <span className="min-w-0 flex-1 truncate">
+                            {labels?.[sym] ?? sym}
+                          </span>
+                          {q != null && (
+                            <span className="shrink-0 tabular-nums text-[var(--faint)]">
+                              {fmtLevel(q)}
+                            </span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                ))
+              }
+            </ChartMenu>
+
+            {lastPrice != null && (
+              <span className="font-mono text-[19px] font-semibold tabular-nums text-[var(--foreground)]">
+                {fmtLevel(lastPrice)}
               </span>
             )}
+
+            {/* Return across the window on screen, in the site's own direction
+                colours. The range label after it names the window the number
+                covers — without it "+24.12 (+11.7%)" is a figure with no term. */}
+            {windowReturn && (
+              <span className="font-mono text-[12px] tabular-nums">
+                <span
+                  style={{
+                    color: windowReturn.abs >= 0 ? "var(--up)" : "var(--down)",
+                  }}
+                >
+                  {windowReturn.abs >= 0 ? "+" : "\u2212"}
+                  {fmtLevel(Math.abs(windowReturn.abs))} (
+                  {windowReturn.abs >= 0 ? "+" : "\u2212"}
+                  {Math.abs(windowReturn.pct).toFixed(1)}%)
+                </span>{" "}
+                <span className="text-[var(--faint)]">{range}</span>
+              </span>
+            )}
+
+            <button
+              type="button"
+              onClick={() => setExpanded((v) => !v)}
+              className="ml-auto shrink-0 rounded-md border border-[var(--border-strong)] px-2.5 py-1 font-mono text-[11px] leading-5 text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
+            >
+              {expanded ? "Exit \u2715" : "Expand \u2922"}
+            </button>
           </>
         )}
         {/* The levels readout sits in the caption row under the toolbar, beside
@@ -1248,10 +1411,8 @@ export default function LevelsChart({
               is 2,000 candles of mush — so the options change with the range
               rather than offering a pick that would fail or be unreadable. */}
           {intervalOptions.length > 1 && (
-            <div className="flex items-center gap-1">
-              <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">
-                Bars
-              </span>
+            <div className="flex items-center gap-2">
+              <Sep />
               <div
                 className="flex border border-[var(--border-strong)]"
                 role="group"
@@ -1276,6 +1437,44 @@ export default function LevelsChart({
               </div>
             </div>
           )}
+
+          <Sep />
+
+          {/* The five overlays behind one control. As a row of toggles they
+              were the widest thing in the toolbar and gave equal weight to
+              five things a reader turns on once; the count on the trigger says
+              how many are live without spending the width. */}
+          <ChartMenu
+            ariaLabel="Indicators"
+            minWidth={248}
+            label={`Indicators${activeIndicatorCount ? ` (${activeIndicatorCount})` : ""}`}
+          >
+            {() =>
+              indicators.map((ind) => (
+                <button
+                  key={ind.id}
+                  type="button"
+                  role="menuitemcheckbox"
+                  aria-checked={ind.on}
+                  disabled={ind.disabled}
+                  title={ind.hint}
+                  onClick={ind.toggle}
+                  className={`flex w-full items-center gap-2.5 px-3 py-1.5 text-left font-mono text-[11.5px] disabled:opacity-35 hover:bg-[var(--panel-head)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
+                    ind.on && !ind.disabled
+                      ? "text-[var(--amber)]"
+                      : "text-[var(--foreground)]"
+                  }`}
+                >
+                  <span aria-hidden className="w-2 shrink-0">
+                    {ind.on && !ind.disabled ? "\u2713" : ""}
+                  </span>
+                  <span className="flex-1">{ind.label}</span>
+                </button>
+              ))
+            }
+          </ChartMenu>
+
+          <Sep />
 
           {/* Drawing tools. Crosshair is the resting state so the chart still
               reads normally; arming a tool takes the pointer over. */}
@@ -1358,104 +1557,6 @@ export default function LevelsChart({
             className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
           >
             Clear
-          </button>
-          <button
-            type="button"
-            onClick={() => setModePin(mode === "line" ? "candle" : "line")}
-            aria-pressed={mode === "line"}
-            title={
-              mode === "line"
-                ? bodiesCollapse
-                  ? "Switch to candles — body measured from the prior close, since this market has no daily open"
-                  : "Switch to candles — open, high, low and close per bar"
-                : "Switch to a line through the closes"
-            }
-            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-              mode === "line"
-                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
-            }`}
-          >
-            Line
-          </button>
-          <button
-            type="button"
-            onClick={() => setShowVolume((v) => !v)}
-            disabled={!hasVolume}
-            aria-pressed={volumeOn}
-            title={
-              hasVolume
-                ? "Show or hide the volume pane"
-                : `${symbol} reports no traded volume`
-            }
-            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-              volumeOn
-                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
-            }`}
-          >
-            Vol
-          </button>
-          <button
-            type="button"
-            onClick={() => setShowLevels((v) => !v)}
-            disabled={!analysis}
-            aria-pressed={levelsOn}
-            title={
-              analysis
-                ? "Show or hide the derived support and resistance levels"
-                : `No levels derived for ${symbol} on this range`
-            }
-            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-              levelsOn
-                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
-            }`}
-          >
-            S/R
-          </button>
-          <button
-            type="button"
-            onClick={() => setShowRSI((v) => !v)}
-            disabled={!allBars || allBars.length <= RSI_PERIOD}
-            aria-pressed={rsiOn}
-            title={
-              !allBars || allBars.length <= RSI_PERIOD
-                ? "Not enough bars to compute RSI on this range"
-                : "Show or hide the RSI momentum pane"
-            }
-            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-              rsiOn
-                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
-            }`}
-          >
-            RSI
-          </button>
-          <button
-            type="button"
-            onClick={() => setShowEMA((v) => !v)}
-            disabled={!allBars || allBars.length < EMA_CONFIGS[0].period}
-            aria-pressed={emaOn}
-            title={
-              !allBars || allBars.length < EMA_CONFIGS[0].period
-                ? "Not enough bars to compute an EMA on this range"
-                : "Show or hide the 9 / 20 / 50 EMAs"
-            }
-            className={`border px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)] ${
-              emaOn
-                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
-                : "border-[var(--border-strong)] text-[var(--dim)] hover:bg-[var(--panel)]"
-            }`}
-          >
-            EMA
-          </button>
-          <button
-            type="button"
-            onClick={() => setExpanded((v) => !v)}
-            className="border border-[var(--border-strong)] px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--dim)] hover:bg-[var(--panel)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--amber)]"
-          >
-            {expanded ? "Exit ✕" : "Expand ⤢"}
           </button>
 
           <span className="font-mono text-[9px] uppercase tracking-[0.11em] text-[var(--faint)]">

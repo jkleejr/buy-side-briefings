@@ -23,9 +23,12 @@ export default function RangeSelector({ value, onChange, loading, className }: P
             onClick={() => onChange(r)}
             disabled={loading && active}
             className={
+              // The active window is the one fact this row carries, so it is
+              // stated at full contrast rather than as a tinted outline — the
+              // amber-on-amber-tint read as "hovered", not "selected".
               "border px-1.5 py-0.5 transition-colors " +
               (active
-                ? "border-[var(--amber)] bg-[rgba(255,165,0,0.1)] text-[var(--amber)]"
+                ? "border-[var(--foreground)] bg-[var(--foreground)] text-[var(--background)]"
                 : "border-[var(--border)] text-[var(--dim)] hover:border-[var(--amber-dim)] hover:text-[var(--amber)]")
             }
           >
