@@ -52,7 +52,7 @@ export default function SiteHeader() {
           aria-label="Buy Side — home"
           className="shrink-0 self-center font-serif text-[15px] font-semibold leading-none tracking-[0.08em] text-[var(--foreground)]"
         >
-          BSB
+          [BSB]
         </Link>
 
         {/* Inline nav (tablet+) with active-route highlight + overflow fade. */}
