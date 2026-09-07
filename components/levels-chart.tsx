@@ -1628,7 +1628,7 @@ export default function LevelsChart({
             </span>
             {statusNotes.length > 0 && (
               <span className="whitespace-nowrap">
-                {statusNotes.join(" \u00b7 ")}
+                {statusNotes.join(" - ")}
               </span>
             )}
           </div>
