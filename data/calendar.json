@@ -1,17 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-09-07",
-      "label": "Labor Day — US equity and bond markets closed",
-      "kind": "HOLIDAY",
-      "tickers": [
-        "SPY",
-        "QQQ",
-        "BTC"
-      ],
-      "note": "Cash markets shut for the session. Crypto and oil trade the weekend's Strait of Hormuz headlines unhedged, so a transit-suspension escalation over the long weekend gaps into Tuesday's open — eight days before the FOMC."
-    },
-    {
       "date": "2026-09-08",
       "label": "Canada retaliatory tariffs effective — dairy, appliances, ag equipment, pulp, paper, electronics",
       "kind": "GEO",
@@ -24,15 +13,15 @@
       "note": "Updated Aug 28 night: Warsh's full Jackson Hole speech was hawkish — September hike odds rose to 59% from 33%. Warsh did not explicitly cite Canada tariff cost-push in the speech, leaving the tariff-inflation linkage as an open variable in the September 8-16 window. Tariffs arrive 4 days after the August jobs report (Sept 4) and 8 days before September 16 FOMC. With hike odds already at 59%, if hot jobs data and tariff cost-push both enter Fed communications between September 8 and 16, September hike odds above 65% are the two-variable scenario. DXY rose 0.4% to 99.50 on the Warsh hawkish signal — any tariff escalation that re-prices the dollar is the third input."
     },
     {
-      "date": "2026-09-09",
-      "label": "Apple 'Surprise and Shine' event, 1:00 PM ET — first launch under CEO John Ternus",
-      "kind": "OTHER",
-      "time_et": "1:00 PM",
+      "date": "2026-09-08",
+      "label": "Iran-Oman Strait of Hormuz transit agreement signalled 'days away' — signal window opens",
+      "kind": "SIGNAL",
       "tickers": [
-        "AAPL",
-        "QQQ"
+        "CL=F",
+        "XLE",
+        "DAL"
       ],
-      "note": "Added Sep 4 night: iPhone 18 Pro updates with a foldable widely expected, alongside new Apple Watch models and iOS 27. First product launch under Ternus, so the event is a read on hardware demand and on the new chief executive's launch cadence."
+      "note": "Added Sep 7 night: Iran's foreign ministry spokesman said the agreement is in its final stages and will be documented with the International Maritime Organization. A deal reopening transit removes risk premium from crude and adds no refining capacity, so it would widen the diesel crack rather than close it — Brent back toward $90 with the crack holding above $100 confirms the constraint is structural; both falling together says it was a blockade byproduct. No fixed date announced."
     },
     {
       "date": "2026-09-09",
@@ -47,17 +36,27 @@
       "note": "Added Aug 19 night: Treasury Secretary Bessent announced August 19 the department will double the size of long-dated bond buyback operations, raising the maximum per-operation from $2B to at least $4B for bonds maturing in the 10-to-20-year and 20-to-30-year ranges. Effective September 9, runs through November 4 (end of current refunding quarter). The program provides structural demand support for the long end. If underlying supply dynamics overwhelm the $4B+ buyback, the 30Y could reassert above 5.25% before or during the program. BTC's structural debasement bid is partially underwritten by the buyback program as a signal of Treasury demand-management. Updated Sep 2 night: the 30Y closed near 5.26% in a fourth session inside 5.30%, having traded through the level twice without a close above it. The buyback bid arrives after Friday payrolls rather than before it, so the level is tested unsupported first."
     },
     {
-      "date": "2026-09-10",
-      "label": "August PPI (8:30 AM ET) — first of the two inflation prints Waller's hold is conditioned on",
+      "date": "2026-09-09",
+      "label": "EIA Weekly Petroleum Status Report — distillate stocks last 104.2M bbl, roughly 14% below the five-year average",
       "kind": "MACRO",
-      "time_et": "8:30 AM",
+      "time_et": "10:30 AM",
       "tickers": [
-        "TLT",
-        "SPY",
-        "QQQ",
-        "GLD"
+        "CL=F",
+        "XLE",
+        "DAL"
       ],
-      "note": "Added Sep 3 night: producer prices are where tariff and energy pass-through shows up before it reaches CPI, and they arrive two days after Canada's retaliatory tariffs take effect. ISM services prices paid at 72.6 and manufacturing prices at 71.1 argue the risk is to the upside. Waller said it 'may not take much acceleration in inflation' to move him back toward tightening, so this is the first of two prints that can undo the ~12-point repricing of September 3."
+      "note": "Added Sep 7 night: the last supply data before Thursday's PPI, and the direct test of whether the refining constraint is easing. Crude stocks sit about 1% ABOVE their five-year average while distillate sits 14% below — the split that put the diesel crack at a record above $106/bbl against a normal $15-25. Another distillate draw extends the shortage into the print; a build is the first evidence it is easing."
+    },
+    {
+      "date": "2026-09-09",
+      "label": "Apple 'Surprise and Shine' event, 1:00 PM ET — first launch under CEO John Ternus",
+      "kind": "OTHER",
+      "time_et": "1:00 PM",
+      "tickers": [
+        "AAPL",
+        "QQQ"
+      ],
+      "note": "Added Sep 4 night: iPhone 18 Pro updates with a foldable widely expected, alongside new Apple Watch models and iOS 27. First product launch under Ternus, so the event is a read on hardware demand and on the new chief executive's launch cadence."
     },
     {
       "date": "2026-09-10",
@@ -79,6 +78,19 @@
         "NVDA"
       ],
       "note": "First large AI-capex disclosure of the month, and the first chance for a company rather than a broker to support or undercut KB Securities' $1.3 trillion 2027 hyperscaler forecast, with memory at 57% of it. A $20 billion equity issuance sits behind the print."
+    },
+    {
+      "date": "2026-09-10",
+      "label": "August PPI (8:30 AM ET) — first of the two inflation prints Waller's hold is conditioned on",
+      "kind": "MACRO",
+      "time_et": "8:30 AM",
+      "tickers": [
+        "TLT",
+        "SPY",
+        "QQQ",
+        "GLD"
+      ],
+      "note": "Added Sep 3 night: producer prices are where tariff and energy pass-through shows up before it reaches CPI, and they arrive two days after Canada's retaliatory tariffs take effect. ISM services prices paid at 72.6 and manufacturing prices at 71.1 argue the risk is to the upside. Waller said it 'may not take much acceleration in inflation' to move him back toward tightening, so this is the first of two prints that can undo the ~12-point repricing of September 3."
     },
     {
       "date": "2026-09-11",
