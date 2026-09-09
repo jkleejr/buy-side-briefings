@@ -1,18 +1,17 @@
 import { ImageResponse } from "next/og";
-import { OgMark } from "@/lib/og-mark";
+import { OgLogo } from "@/lib/og-logo";
 
 export const runtime = "edge";
-export const alt =
-  "Buy Side — a market report twice a day, every claim linked to its source";
+export const alt = "Buy Side — automated daily stock market reports";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Default Open Graph image for the site root. Bloomberg-terminal styling:
-// black background, lapis branding, headline + tagline + a bottom strip. The
-// top bar leads with the house mark — the same five candles as the favicon and
-// the site header, so a shared link is recognisably ours before it is read.
-// Copy matches the site metadata in app/layout.tsx — this is the same claim,
-// so the two have to be changed together or a shared link contradicts the page.
+// Default Open Graph image for the site root. Terminal styling: black ground,
+// the house mark, a headline and a bottom strip. The mark is the same PNG the
+// site header uses, so a shared link is recognisably ours before it is read.
+// Copy matches the description in app/layout.tsx — the same claim in both, so
+// the two have to change together or a shared link contradicts the page it
+// opens.
 export default async function OgImage() {
   return new ImageResponse(
     (
@@ -40,31 +39,34 @@ export default async function OgImage() {
             textTransform: "uppercase",
           }}
         >
-          <OgMark height={56} />
-          <span style={{ color: "#71717a" }}>Buy Side · Terminal</span>
+          <OgLogo height={56} />
+          <span style={{ color: "#a1a1aa" }}>Buy Side</span>
         </div>
 
         {/* Headline */}
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
           <div
             style={{
-              fontSize: 88,
+              fontSize: 92,
               fontWeight: 700,
               lineHeight: 1.05,
               color: "#e4e4e7",
             }}
           >
-            Market reports, twice a day.
+            Automated daily
           </div>
           <div
             style={{
-              fontSize: 88,
+              fontSize: 92,
               fontWeight: 700,
               lineHeight: 1.05,
-              color: "#ffa500",
+              // The site's working accent. This was #ffa500, a pure orange that
+              // appears nowhere on the site — the card was branded in a colour
+              // the page it opens does not use.
+              color: "#93a9e2",
             }}
           >
-            Every claim linked to its source.
+            stock market reports.
           </div>
         </div>
 
@@ -83,7 +85,7 @@ export default async function OgImage() {
           }}
         >
           <span>Morning &amp; night editions</span>
-          <span style={{ color: "#ffa500" }}>● LIVE</span>
+          <span style={{ color: "#93a9e2" }}>● LIVE</span>
         </div>
       </div>
     ),

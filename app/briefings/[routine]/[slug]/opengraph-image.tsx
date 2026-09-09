@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { OgMark } from "@/lib/og-mark";
+import { OgLogo } from "@/lib/og-logo";
 import { getBriefing, getAllMarketsVerdicts } from "@/lib/data";
 import { formatBriefingDateLine } from "@/lib/utils";
 import { verdictHeadline } from "@/lib/verdict-headline";
@@ -26,7 +26,7 @@ export default async function BriefingOgImage({
             width: "100%",
             height: "100%",
             background: "#000",
-            color: "#ffa500",
+            color: "#93a9e2",
             fontFamily: "monospace",
             fontSize: 48,
             display: "flex",
@@ -81,7 +81,7 @@ export default async function BriefingOgImage({
           }}
         >
           <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
-            <OgMark height={46} />
+            <OgLogo height={46} />
             <span style={{ color: "#71717a" }}>Buy Side</span>
           </div>
           <span style={{ color: "#b45309" }}>{title}</span>

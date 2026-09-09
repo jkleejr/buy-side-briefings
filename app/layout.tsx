@@ -21,25 +21,22 @@ export const metadata: Metadata = {
     // same on every page.
     template: "%s - Buy Side",
   },
-  // All three descriptions describe the same site in the same terms: a
-  // briefing twice a day, cited, and explicitly not a recommendation. The
-  // previous copy sold "tells you when NOT to buy as much as when to buy" —
-  // a buy/sell call, which the site stopped making in July.
-  description:
-    "A market report twice a day, morning and night: what happened, what it means, and what would change it — with every claim linked to its source.",
+  // One sentence, used verbatim in all three places. They used to differ in
+  // length and emphasis, so a link preview, a search result and the page
+  // itself each described the site slightly differently.
+  description: "Automated daily stock market reports.",
   openGraph: {
     type: "website",
     siteName: "Buy Side",
     title: "Buy Side",
-    description:
-      "A market report twice a day, morning and night. Every claim carries a number and every number links to its source. It informs; the decision stays yours.",
+    description: "Automated daily stock market reports.",
+    url: SITE_URL,
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Buy Side",
-    description:
-      "A market report twice a day, morning and night — every claim linked to its source.",
+    description: "Automated daily stock market reports.",
   },
   robots: {
     index: true,
