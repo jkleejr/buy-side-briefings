@@ -25,7 +25,7 @@ export default async function BriefingOgImage({
           style={{
             width: "100%",
             height: "100%",
-            background: "#000",
+            background: "#0d0d0b",
             color: "#93a9e2",
             fontFamily: "monospace",
             fontSize: 48,
@@ -60,7 +60,7 @@ export default async function BriefingOgImage({
         style={{
           width: "100%",
           height: "100%",
-          background: "#000",
+          background: "#0d0d0b",
           color: "#e4e4e7",
           fontFamily: "monospace",
           display: "flex",
