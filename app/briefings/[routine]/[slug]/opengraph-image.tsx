@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { OgLogo } from "@/lib/og-logo";
 import { getBriefing, getAllMarketsVerdicts } from "@/lib/data";
 import { formatBriefingDateLine } from "@/lib/utils";
-import { verdictHeadline } from "@/lib/verdict-headline";
+import { clampText, verdictHeadline } from "@/lib/verdict-headline";
 
 export const runtime = "nodejs"; // needs fs to read briefing files
 export const alt = "Buy Side — Markets report";
@@ -47,7 +47,12 @@ export default async function BriefingOgImage({
       )
     : null;
 
-  const rationale = verdict?.verdict.rationale_short ?? "";
+  // Clamped here, in the string. Satori does not implement -webkit-line-clamp,
+  // so the CSS version of this clamped nothing and a long summary ran off the
+  // bottom of the card — invisible until the bar below it was removed. ~120
+  // characters is two lines at this size and measure.
+  const rationaleFull = verdict?.verdict.rationale_short ?? "";
+  const rationale = rationaleFull ? clampText(rationaleFull, 120) : "";
   // The share card now leads with the news headline instead of a stance.
   const headline = verdictHeadline(verdict?.verdict, 90) ?? "Briefing";
   // One accent for every card now that the stance no longer colours it.
@@ -84,7 +89,7 @@ export default async function BriefingOgImage({
             <OgLogo height={46} />
             <span style={{ color: "#71717a" }}>Buy Side</span>
           </div>
-          <span style={{ color: "#b45309" }}>{title}</span>
+          <span style={{ color: "#71717a" }}>{title}</span>
         </div>
 
         {/* Headline: verdict */}
@@ -121,11 +126,6 @@ export default async function BriefingOgImage({
                 color: "#e4e4e7",
                 maxWidth: 1080,
                 marginTop: 12,
-                // Clamp to ~2 lines visually
-                display: "-webkit-box",
-                WebkitLineClamp: 2,
-                WebkitBoxOrient: "vertical",
-                overflow: "hidden",
               }}
             >
               {rationale}
@@ -133,23 +133,6 @@ export default async function BriefingOgImage({
           )}
         </div>
 
-        {/* Bottom bar */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "baseline",
-            justifyContent: "space-between",
-            fontSize: 20,
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            color: "#71717a",
-            paddingTop: 20,
-            borderTop: `1px solid ${accentColor}`,
-          }}
-        >
-          <span>Buy-side analyst voice · every claim sourced</span>
-          <span>Cited, auditable</span>
-        </div>
       </div>
     ),
     { ...size },
