@@ -2,7 +2,7 @@
   "events": [
     {
       "date": "2026-09-09",
-      "label": "Bessent Treasury long-dated buyback ops begin — $4B+ per op, 10-20yr and 20-30yr bonds",
+      "label": "Bessent Treasury long-dated buyback ops begin \u2014 $4B+ per op, 10-20yr and 20-30yr bonds",
       "kind": "OTHER",
       "tickers": [
         "TLT",
@@ -14,30 +14,30 @@
     },
     {
       "date": "2026-09-09",
-      "label": "EIA Weekly Petroleum Status Report — distillate stocks last 104.2M bbl, roughly 14% below the five-year average",
-      "kind": "MACRO",
-      "time_et": "10:30 AM",
-      "tickers": [
-        "CL=F",
-        "XLE",
-        "DAL"
-      ],
-      "note": "Added Sep 7 night: the last supply data before Thursday's PPI, and the direct test of whether the refining constraint is easing. Crude stocks sit about 1% ABOVE their five-year average while distillate sits 14% below — the split that put the diesel crack at a record above $106/bbl against a normal $15-25. Another distillate draw extends the shortage into the print; a build is the first evidence it is easing."
-    },
-    {
-      "date": "2026-09-09",
-      "label": "Apple 'Surprise and Shine' event, 1:00 PM ET — first launch under CEO John Ternus",
+      "label": "Apple 'Surprise and Shine' event, 1:00 PM ET \u2014 first launch under CEO John Ternus",
       "kind": "OTHER",
       "time_et": "1:00 PM",
       "tickers": [
         "AAPL",
         "QQQ"
       ],
-      "note": "Added Sep 4 night: iPhone 18 Pro updates with a foldable widely expected, alongside new Apple Watch models and iOS 27. First product launch under Ternus, so the event is a read on hardware demand and on the new chief executive's launch cadence."
+      "note": "Added Sep 4 night: iPhone 18 Pro updates with a foldable widely expected, alongside new Apple Watch models and iOS 27. First product launch under Ternus, so the event is a read on hardware demand and on the new chief executive's launch cadence. Updated Sep 9 morning: the foldable is expected to start between $2,099 and $2,299, roughly double the current flagship, which makes the event a test of pricing power rather than of unit demand. AAPL closed near $319 after a 1.17% decline on Sep 8."
     },
     {
       "date": "2026-09-10",
-      "label": "ECB rate decision — a 25bp increase widely expected, same day as US PPI",
+      "label": "EIA Weekly Petroleum Status Report (delayed to Thu noon ET) \u2014 distillate stocks last 104.2M bbl, roughly 14% below the five-year average",
+      "kind": "MACRO",
+      "time_et": "12:00 PM",
+      "tickers": [
+        "CL=F",
+        "XLE",
+        "DAL"
+      ],
+      "note": "Added Sep 7 night: the last supply data before Thursday's PPI, and the direct test of whether the refining constraint is easing. Crude stocks sit about 1% ABOVE their five-year average while distillate sits 14% below \u2014 the split that put the diesel crack at a record above $106/bbl against a normal $15-25. Another distillate draw extends the shortage into the print; a build is the first evidence it is easing. Updated Sep 9 morning: the release moved from Wednesday 10:30 AM to Thursday noon ET because of the September 7 federal closure, so the first supply data since the Saudi outages now lands the same morning as August PPI rather than a day ahead of it."
+    },
+    {
+      "date": "2026-09-10",
+      "label": "ECB rate decision \u2014 a 25bp increase widely expected, same day as US PPI",
       "kind": "MACRO",
       "tickers": [
         "TLT",
@@ -48,7 +48,7 @@
     },
     {
       "date": "2026-09-10",
-      "label": "Oracle Q1 FY2027 results, after the close — options pricing a roughly 11% move on ~$19.1B revenue consensus",
+      "label": "Oracle Q1 FY2027 results, after the close \u2014 options pricing a roughly 11% move on ~$19.1B revenue consensus",
       "kind": "OTHER",
       "tickers": [
         "ORCL",
@@ -60,7 +60,7 @@
     },
     {
       "date": "2026-09-10",
-      "label": "August PPI (8:30 AM ET) — first of the two inflation prints Waller's hold is conditioned on",
+      "label": "August PPI (8:30 AM ET) \u2014 first of the two inflation prints Waller's hold is conditioned on",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": [
@@ -73,7 +73,7 @@
     },
     {
       "date": "2026-09-11",
-      "label": "August CPI (8:30 AM ET) — the last inflation print before the FOMC, four trading days out",
+      "label": "August CPI (8:30 AM ET) \u2014 the last inflation print before the FOMC, four trading days out",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": [
@@ -87,8 +87,20 @@
       "note": "Added Sep 3 night: the print that resolves Waller's condition with no scheduled Fed communication left to soften it. Core CPI at or under 0.3% month over month keeps the hold intact; above 0.3% re-arms the hike inside four trading days of the September 15-16 decision, and would reverse the September 3 rally on the same mechanism that produced it."
     },
     {
+      "date": "2026-09-14",
+      "label": "Iran-Oman temporary Hormuz transit route \u2014 date not fixed, described Sep 7 as in its final stages",
+      "kind": "SIGNAL",
+      "tickers": [
+        "CL=F",
+        "XLE",
+        "DAL",
+        "SPY"
+      ],
+      "note": "Added Sep 9 morning: a signal window rather than a scheduled event \u2014 the date is indicative. Hormuz is effectively closed to commercial traffic, with roughly 6 transits on Aug 30 against about 85 a day normally. A signed route would remove the war premium from crude but not the demand leg underneath it: Chinese imports were 8.93M b/d in August, up 6.2% on July. So a settlement is not symmetrical with the escalation that produced $100 Brent."
+    },
+    {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — September rate path; hike odds near 60% after the August payrolls print",
+      "label": "FOMC decision (Sep 15-16) \u2014 September rate path; hike odds near 60% after the August payrolls print",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -98,11 +110,11 @@
         "GLD",
         "BTC"
       ],
-      "note": "Arrives with Saudi and Iranian export capacity degraded and OPEC output already down 900,000 b/d in August."
+      "note": "Arrives with Saudi and Iranian export capacity degraded and OPEC output already down 900,000 b/d in August. Updated Sep 9 morning: Brent cleared $100 for the first time since July 24 after US forces destroyed five Iranian tankers, and the curve repriced only at the front end \u2014 the two-year up 2bp to 4.413%, the ten-year unchanged at 4.786%. Hike odds near 59%."
     },
     {
       "date": "2026-09-18",
-      "label": "Bank of Japan policy decision — markets pricing a September hike after Deputy Governor Himino flagged upside inflation risks",
+      "label": "Bank of Japan policy decision \u2014 markets pricing a September hike after Deputy Governor Himino flagged upside inflation risks",
       "kind": "OTHER",
       "tickers": [
         "JPY=X",
@@ -114,7 +126,7 @@
     },
     {
       "date": "2026-12-09",
-      "label": "SPCX 180-day IPO lock-up expiry (approx.) — terminal insider/early-investor float unlock",
+      "label": "SPCX 180-day IPO lock-up expiry (approx.) \u2014 terminal insider/early-investor float unlock",
       "kind": "OTHER",
       "tickers": [
         "SPCX"
@@ -123,7 +135,7 @@
     },
     {
       "date": "2027-01-01",
-      "label": "OpenAI IPO — target window H1 2027 after 2026 delay",
+      "label": "OpenAI IPO \u2014 target window H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": [
         "MSFT",
