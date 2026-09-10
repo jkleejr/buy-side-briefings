@@ -77,7 +77,7 @@
     },
     {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 57% odds of a quarter-point hike to 3.75%-4.00%",
+      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 61% odds of a quarter-point hike to 3.75%-4.00%",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -87,7 +87,7 @@
         "GLD",
         "BTC"
       ],
-      "note": "The long end broke its range the week before the meeting: 10Y through 4.818% to 4.857%, 30Y at 5.30%. What the curve does if a hike is delivered is the question, not the hike."
+      "note": "Blackout runs through September 17, so neither the PPI nor the CPI print gets framed by an official before the decision; NY Fed's Williams has signaled openness to a hike, a shift from favoring a hold"
     },
     {
       "date": "2026-09-18",
@@ -110,6 +110,16 @@
         "XLI",
         "XLY"
       ]
+    },
+    {
+      "date": "2026-11-03",
+      "label": "US midterm elections — Trump's pledged $5,000 per-adult 'dividend' is contingent on Republicans holding both chambers",
+      "kind": "GEO",
+      "tickers": [
+        "TLT",
+        "SPY"
+      ],
+      "note": "Pointed at about $154.5B of tariff revenue in the first ten months of FY2026; even 100 million recipients would cost $500B. The House is currently projected to go to the Democrats, so it is a tail input — but it lands on a long end that spent September repricing term premium."
     },
     {
       "date": "2026-11-04",
