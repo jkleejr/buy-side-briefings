@@ -174,15 +174,16 @@ function shortLabel(s: string): string {
   return label.toUpperCase().slice(0, 18);
 }
 
-// Honest read-time: count the words the briefing page will actually show —
-// the full body (authored .mdx or synthesized) plus the verdict summary and
-// sourced points. The old estimate counted only the summary and promised
-// "5 min" over a 5,000-word night brief.
+// Read-time for the "Read this morning's report ~ N min" link. Must be the
+// same number the briefing page prints in its "The full read · N min" label,
+// so it is the same calculation over the same text: readMinutes() over the
+// briefing body (authored .mdx or synthesized) and nothing else. An earlier
+// version also folded in the verdict rationale and the sourced points, which
+// roughly doubled the figure — the homepage promised 11 min for a report the
+// page itself called 6.
 function readMinutes(v: MarketsVerdict): number {
   const body = getBriefing(v.routine, `${v.date}-${v.window}`)?.body ?? "";
-  const parts: string[] = [body, v.verdict.rationale_short];
-  for (const s of v.verdict.supporting_data ?? []) parts.push(s.label);
-  return Math.max(2, readMinutesOfText(parts.join(" ")));
+  return readMinutesOfText(body);
 }
 
 function dateLabelOf(date: string): string {
