@@ -1,56 +1,8 @@
 {
   "events": [
     {
-      "date": "2026-09-10",
-      "label": "EIA Weekly Petroleum Status Report (delayed to Thu noon ET) — distillate stocks last 104.2M bbl, roughly 14% below the five-year average",
-      "kind": "MACRO",
-      "time_et": "12:00 PM",
-      "tickers": [
-        "CL=F",
-        "XLE",
-        "DAL"
-      ],
-      "note": "Added Sep 7 night: the last supply data before Thursday's PPI, and the direct test of whether the refining constraint is easing. Crude stocks sit about 1% ABOVE their five-year average while distillate sits 14% below — the split that put the diesel crack at a record above $106/bbl against a normal $15-25. Another distillate draw extends the shortage into the print; a build is the first evidence it is easing. Updated Sep 9 morning: the release moved from Wednesday 10:30 AM to Thursday noon ET because of the September 7 federal closure, so the first supply data since the Saudi outages now lands the same morning as August PPI rather than a day ahead of it."
-    },
-    {
-      "date": "2026-09-10",
-      "label": "ECB rate decision — a 25bp increase widely expected, same day as US PPI",
-      "kind": "MACRO",
-      "tickers": [
-        "TLT",
-        "SPY",
-        "DXY"
-      ],
-      "note": "Added Sep 4 night: the euro area decision lands the same morning as August PPI, so two policy inputs hit the dollar and global duration at once. A hike alongside a hot US producer-price print pushes both long ends the same way."
-    },
-    {
-      "date": "2026-09-10",
-      "label": "Oracle Q1 FY2027 results, after the close — options pricing a roughly 10% move on consensus of $1.67 a share and ~$19.1B revenue",
-      "kind": "OTHER",
-      "tickers": [
-        "ORCL",
-        "NBIS",
-        "QQQ"
-      ],
-      "note": "The test of the AI capex bid that held the Nasdaq's Sep 8 loss to a third of the Dow's.",
-      "time_et": "4:00 PM"
-    },
-    {
-      "date": "2026-09-10",
-      "label": "August PPI (8:30 AM ET) — first of the two inflation prints Waller's hold is conditioned on",
-      "kind": "MACRO",
-      "time_et": "8:30 AM",
-      "tickers": [
-        "TLT",
-        "SPY",
-        "QQQ",
-        "GLD"
-      ],
-      "note": "Added Sep 3 night: producer prices are where tariff and energy pass-through shows up before it reaches CPI, and they arrive two days after Canada's retaliatory tariffs take effect. ISM services prices paid at 72.6 and manufacturing prices at 71.1 argue the risk is to the upside. Waller said it 'may not take much acceleration in inflation' to move him back toward tightening, so this is the first of two prints that can undo the ~12-point repricing of September 3."
-    },
-    {
       "date": "2026-09-11",
-      "label": "August CPI (8:30 AM ET) — the last inflation print before the FOMC, four trading days out",
+      "label": "August CPI (8:30 AM ET) — the last inflation print before the FOMC, consensus 0.4% m/m and 3.4% y/y",
       "kind": "MACRO",
       "time_et": "8:30 AM",
       "tickers": [
@@ -61,7 +13,7 @@
         "GLD",
         "BTC"
       ],
-      "note": "Added Sep 3 night: the print that resolves Waller's condition with no scheduled Fed communication left to soften it. Core CPI at or under 0.3% month over month keeps the hold intact; above 0.3% re-arms the hike inside four trading days of the September 15-16 decision, and would reverse the September 3 rally on the same mechanism that produced it."
+      "note": "Updated Sep 10 night: arrives into pricing that already assumes its conclusion — hike odds for Sept 16 moved to roughly 70% after PPI, with an increase fully priced by October. Like PPI it covers August and cannot contain WTI's $102.48 settle. Core at or under consensus leaves the market priced ahead of its own data; above it removes the last argument for a hold, with blackout running through September 17."
     },
     {
       "date": "2026-09-14",
@@ -73,11 +25,11 @@
         "DAL",
         "SPY"
       ],
-      "note": "Added Sep 9 morning: a signal window rather than a scheduled event — the date is indicative. Hormuz is effectively closed to commercial traffic, with roughly 6 transits on Aug 30 against about 85 a day normally. A signed route would remove the war premium from crude but not the demand leg underneath it: Chinese imports were 8.93M b/d in August, up 6.2% on July. So a settlement is not symmetrical with the escalation that produced $100 Brent."
+      "note": "Added Sep 9 morning: a signal window rather than a scheduled event — the date is indicative. Hormuz is effectively closed to commercial traffic, with roughly 6 transits on Aug 30 against about 85 a day normally. A signed route would remove the war premium from crude but not the demand leg underneath it: Chinese imports were 8.93M b/d in August, up 6.2% on July. So a settlement is not symmetrical with the escalation that produced $100 Brent. Updated Sep 10 night: with WTI settling above $100 for the first time this cycle, this is now the only identified catalyst that could take war premium out of crude — and a settle back under $100 is what would take the energy input out of the rates move."
     },
     {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 61% odds of a quarter-point hike to 3.75%-4.00%",
+      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 70% odds of a quarter-point hike to 3.75%-4.00%",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -87,7 +39,7 @@
         "GLD",
         "BTC"
       ],
-      "note": "Blackout runs through September 17, so neither the PPI nor the CPI print gets framed by an official before the decision; NY Fed's Williams has signaled openness to a hike, a shift from favoring a hold"
+      "note": "Updated Sep 10 night: odds moved from about 61% to roughly 70% after August PPI, with an increase fully priced by October rather than December. Blackout runs through September 17, so neither the PPI nor the CPI print gets framed by an official before the decision. The open question is how the long end reacts to a hike aimed at an oil shock the Fed cannot supply — the thirty-year is already at 5.37%, its highest since 2007."
     },
     {
       "date": "2026-09-18",
@@ -125,7 +77,7 @@
       "date": "2026-11-04",
       "kind": "SIGNAL",
       "label": "Treasury expanded long-end buyback program ends — ops of at least $4B run from September 9",
-      "note": "The count of completed operations is what separates absorbed supply from purchased calm at the long end. 30Y at 5.30%, with 5.33% the August 18 nineteen-year high above it.",
+      "note": "The count of completed operations is what separates absorbed supply from purchased calm at the long end. Updated Sep 10 night: the 30Y cleared 5.33%, August 18's prior high, and closed at 5.37% — its highest since 2007 — while the program was buying that maturity. The 2007 peak is 5.44%.",
       "tickers": [
         "TLT"
       ]
