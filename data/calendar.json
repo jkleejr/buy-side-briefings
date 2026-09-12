@@ -1,19 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-09-11",
-      "time_et": "10:00 AM",
-      "kind": "MACRO",
-      "label": "University of Michigan preliminary September sentiment — the first survey taken across $100 crude and record retail diesel",
-      "tickers": [
-        "SPY",
-        "TLT",
-        "GLD",
-        "XLE"
-      ],
-      "note": "Added Sep 11 morning: August put the index at 51.7 with year-ahead inflation expectations at 4.0%, down from 4.2% in July, and the long-run measure steady at 3.3% for a third month. A year-ahead reading back toward 4.2% would matter to a committee that has cited anchored expectations as the reason an energy shock can be looked through."
-    },
-    {
       "date": "2026-09-14",
       "label": "Iran-Oman temporary Hormuz transit route — date not fixed, described Sep 7 as in its final stages",
       "kind": "SIGNAL",
@@ -23,11 +10,11 @@
         "DAL",
         "SPY"
       ],
-      "note": "Added Sep 9 morning: a signal window rather than a scheduled event — the date is indicative. Hormuz is effectively closed to commercial traffic, with roughly 6 transits on Aug 30 against about 85 a day normally. A signed route would remove the war premium from crude but not the demand leg underneath it: Chinese imports were 8.93M b/d in August, up 6.2% on July. So a settlement is not symmetrical with the escalation that produced $100 Brent. Updated Sep 10 night: with WTI settling above $100 for the first time this cycle, this is now the only identified catalyst that could take war premium out of crude — and a settle back under $100 is what would take the energy input out of the rates move."
+      "note": "Added Sep 9 morning: a signal window rather than a scheduled event — the date is indicative. Hormuz is effectively closed to commercial traffic, with roughly 6 transits on Aug 30 against about 85 a day normally. A signed route would remove the war premium from crude but not the demand leg underneath it: Chinese imports were 8.93M b/d in August, up 6.2% on July. So a settlement is not symmetrical with the escalation that produced $100 Brent. Updated Sep 10 night: with WTI settling above $100 for the first time this cycle, this is now the only identified catalyst that could take war premium out of crude — and a settle back under $100 is what would take the energy input out of the rates move. Updated Sep 11 night: Iranian state media said Tehran will meet Gulf states in Oman over the Strait. WTI fell 2.4% on the headline and still settled at $100.05 — the week's clearest de-escalation news did not break the level, and crude ended the week up 9.4%."
     },
     {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 70% odds of a quarter-point hike to 3.75%-4.00%",
+      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 90% odds of a quarter-point hike to 3.75%-4.00%",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -37,7 +24,20 @@
         "GLD",
         "BTC"
       ],
-      "note": "Updated Sep 10 night: odds moved from about 61% to roughly 70% after August PPI, with an increase fully priced by October rather than December. Blackout runs through September 17, so neither the PPI nor the CPI print gets framed by an official before the decision. The open question is how the long end reacts to a hike aimed at an oil shock the Fed cannot supply — the thirty-year is already at 5.37%, its highest since 2007."
+      "note": "Updated Sep 11 night: odds moved from about 71% to roughly 90% after August CPI core ran 0.3% against a 0.2% estimate and the Michigan survey put year-ahead inflation expectations at 4.6%. Blackout runs through September 17, so no official frames either number before the decision. August retail sales land at 8:30 a.m. the same morning, putting a growth reading hours ahead of a hike aimed at an energy shock the Fed cannot supply. The ten-year closed at 4.96%, its highest of this cycle, with 5.00% above it."
+    },
+    {
+      "date": "2026-09-16",
+      "time_et": "8:30 AM",
+      "kind": "MACRO",
+      "label": "August retail sales — consensus +0.2% m/m against +0.5% in July, six hours before the FOMC decision",
+      "tickers": [
+        "XRT",
+        "SPY",
+        "IWM",
+        "TLT"
+      ],
+      "note": "Added Sep 11 night: the only growth print between the expectations shock and the decision. Preliminary September sentiment at 47.8 and year-ahead inflation expectations at 4.6% describe a consumer under pressure; retail sales measure whether that has reached spending yet. A print at or under 0.2% alongside a delivered hike is the growth-versus-inflation trade-off in one morning."
     },
     {
       "date": "2026-09-18",
@@ -50,6 +50,18 @@
         "QQQ"
       ],
       "note": "Added Sep 4 morning: the yen reached 155.28 per dollar on Sep 3, its strongest in a month, on BOJ hike bets rather than on the Fed alone. The decision lands two days after the Sep 15-16 FOMC, so the funding currency behind a large share of global duration positioning reprices twice inside four sessions. A yen driven by Japanese tightening keeps appreciating on a hot US print as well as a soft one; USD/JPY back above 158 would say the BOJ leg was overstated."
+    },
+    {
+      "date": "2026-09-25",
+      "time_et": "10:00 AM",
+      "kind": "MACRO",
+      "label": "Final September consumer sentiment — confirms or revises the 4.6% year-ahead inflation expectation",
+      "tickers": [
+        "TLT",
+        "GLD",
+        "SPY"
+      ],
+      "note": "Added Sep 11 night: the preliminary reading jumped six tenths to 4.6% on a survey period dominated by $100 crude and record retail diesel, and revisions to this series have been large in both directions this year. A final reading holding at or above 4.6% makes the expectations move structural; a revision back toward 4.2% makes it an energy artifact the committee can discount in November."
     },
     {
       "date": "2026-09-29",
