@@ -170,21 +170,7 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
               </span>
             )}
           </span>
-        ) : (
-          // The dot alone carries it: green and blinking means live. The
-          // source and cadence move to the tooltip rather than spending
-          // characters on the bar.
-          <span
-            className="flex shrink-0 items-center"
-            title="Live — Yahoo Finance, refreshed every 60s"
-          >
-            <span
-              role="img"
-              aria-label="Live prices from Yahoo Finance, refreshed every 60 seconds"
-              className="term-blink glow-dot-up inline-block h-1.5 w-1.5 rounded-full bg-[var(--up)]"
-            />
-          </span>
-        )}
+        ) : null}
       </div>
     </div>
   );

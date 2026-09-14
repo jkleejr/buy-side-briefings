@@ -163,15 +163,6 @@ body {
   line-height: 1.55;
 }
 
-/* Blinking dot for "live" indicators — quieter than the terminal version. */
-@keyframes term-blink {
-  0%, 60% { opacity: 1; }
-  61%, 100% { opacity: 0.35; }
-}
-.term-blink {
-  animation: term-blink 2s steps(2, end) infinite;
-}
-
 /* Route loading state: a short terminal transcript. Each line prints on its
    own delay (steps(1) so it pops in rather than fades — a prompt does not
    ease), the dots cycle on the line still in flight, and a block cursor
@@ -259,7 +250,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .term-blink { animation: none; }
   .term-line { opacity: 1; animation: none; }
   .term-dots::after { animation: none; }
   .term-cursor { animation: none; }
