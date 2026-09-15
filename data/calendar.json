@@ -2,7 +2,7 @@
   "events": [
     {
       "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 87% odds of a quarter-point hike to 3.75%-4.00%, with the dot plot the open question",
+      "label": "FOMC decision (Sep 15-16) — futures pricing roughly 92% odds of a quarter-point hike to 3.75%-4.00%, with the dot plot the open question",
       "kind": "FOMC",
       "tickers": [
         "TLT",
@@ -12,7 +12,7 @@
         "GLD",
         "BTC"
       ],
-      "note": "Updated Sep 11 night: odds moved from about 71% to roughly 90% after August CPI core ran 0.3% against a 0.2% estimate and the Michigan survey put year-ahead inflation expectations at 4.6%. Blackout runs through September 17, so no official frames either number before the decision. August retail sales land at 8:30 a.m. the same morning, putting a growth reading hours ahead of a hike aimed at an energy shock the Fed cannot supply. The ten-year closed at 4.96%, its highest of this cycle, with 5.00% above it. Updated Sep 14 morning: the Oman meeting was postponed with no new date, so the committee hikes into an unresolved energy shock — WTI near $102.60, Brent near $108. The thirty-year is at 5.35%, nine basis points below the 2007 peak of 5.44%. Updated Sep 14 night: the ten-year touched 5.01% intraday, its first 5% print since 2023, and was bought back under the level; the thirty-year closed at 5.353%. Goldman Sachs abandoned its call for no change and now expects a 25 bp hike, with David Mericle writing the committee \"will be reluctant to surprise\" a market pricing one — but the bank still carries no further increases after September, which is a testable disagreement with any median dot showing two. With the hike priced, the Summary of Economic Projections is the entire information content of the meeting."
+      "note": "Updated Sep 11 night: odds moved from about 71% to roughly 90% after August CPI core ran 0.3% against a 0.2% estimate and the Michigan survey put year-ahead inflation expectations at 4.6%. Blackout runs through September 17, so no official frames either number before the decision. August retail sales land at 8:30 a.m. the same morning, putting a growth reading hours ahead of a hike aimed at an energy shock the Fed cannot supply. The ten-year closed at 4.96%, its highest of this cycle, with 5.00% above it. Updated Sep 14 morning: the Oman meeting was postponed with no new date, so the committee hikes into an unresolved energy shock — WTI near $102.60, Brent near $108. The thirty-year is at 5.35%, nine basis points below the 2007 peak of 5.44%. Updated Sep 14 night: the ten-year touched 5.01% intraday, its first 5% print since 2023, and was bought back under the level; the thirty-year closed at 5.353%. Goldman Sachs abandoned its call for no change and now expects a 25 bp hike, with David Mericle writing the committee \"will be reluctant to surprise\" a market pricing one — but the bank still carries no further increases after September, which is a testable disagreement with any median dot showing two. With the hike priced, the Summary of Economic Projections is the entire information content of the meeting. Updated Sep 15 morning: the ten-year broke through 5% overnight to 5.02% and as high as 5.041%, clearing the 2023 peak for the highest print since 2007, with the thirty-year up seven basis points to 5.40% against the two-year's five. Hike pricing firmed to about 92% from 87%. The long end moved more than the front, so the committee publishes its inflation path over a Saudi pipeline outage described as lasting weeks — a supply shock the rate it sets cannot address. A ten-year back under 4.90% would say the break was a pre-decision hedge."
     },
     {
       "date": "2026-09-16",
@@ -144,6 +144,30 @@
         "NVDA"
       ],
       "note": "OpenAI delayed its anticipated 2026 IPO to H1 2027 (announced June 26, 2026). PLTR's 149% US commercial growth, AMD's $6.7B data-center (+107%), and SpaceX's exclusive Nvidia commitment ($15.83B AI capex) confirm the enterprise AI adoption underlying OpenAI's revenue model. NVDA circular financing disclosure ($250B OpenAI backstop) remains the unresolved structural question that may surface in S-1 filings."
+    },
+    {
+      "date": "2026-09-15",
+      "time_et": "2:15 PM",
+      "kind": "OTHER",
+      "label": "Senate cloture vote on the Clarity Act (H.R. 3633) — 60 votes needed against 53 Republican seats, so at least seven Democratic or independent votes are required",
+      "tickers": [
+        "BTC",
+        "COIN",
+        "ETH"
+      ],
+      "note": "Added Sep 15 morning: a procedural vote on the motion to proceed, not final passage. The bill would split digital-asset oversight between the SEC and CFTC. Bitcoin gave back 3% from an overnight $79,530 to about $77,800 into the vote, and Polymarket odds of the bill becoming law in 2026 fell from above 30% Monday to roughly 18% — the market is pricing the vote arithmetic rather than the argument. Unresolved: stablecoin rewards and ethics provisions tied to the President's family crypto interests."
+    },
+    {
+      "date": "2026-09-30",
+      "kind": "SIGNAL",
+      "label": "Saudi East-West pipeline restart window — shut since Sep 11, described as mostly out of service for weeks, with repairs estimated at three to five weeks",
+      "tickers": [
+        "CL=F",
+        "XLE",
+        "TLT",
+        "SPY"
+      ],
+      "note": "Added Sep 15 morning: the 1,200 km line carries roughly 4 million barrels a day from Abqaiq to Yanbu and was the workaround for the Hormuz blockade, so its loss removes the escape route rather than adding a second problem. About 4% of global supply is at risk and the kingdom could exhaust exportable oil within days. Sep 30 is an indicative marker, not an announced restart date. A confirmed restart is the single event that takes WTI back under $100 without any diplomacy behind it, and it is the input currently setting the long end of the Treasury curve."
     }
   ]
 }
