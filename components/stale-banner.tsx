@@ -4,7 +4,7 @@ import { getDataFreshness, type Freshness } from "@/lib/freshness";
  * Presentational staleness strip. `noun` names the feed being flagged so a
  * page-level notice ("Sector reads") never reads as if the whole site is behind.
  */
-export function FreshnessNotice({
+function FreshnessNotice({
   freshness: f,
   noun = "Reports",
 }: {

@@ -56,17 +56,6 @@ const FMT_DATE_SHORT_UTC = new Intl.DateTimeFormat("en-US", {
   day: "numeric",
   timeZone: "UTC",
 });
-const FMT_WEEKDAY_LONG_ET = new Intl.DateTimeFormat("en-US", {
-  weekday: "long",
-  timeZone: "America/New_York",
-});
-const FMT_DATE_LONG_ET = new Intl.DateTimeFormat("en-US", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-  timeZone: "America/New_York",
-});
-
 /**
  * Format an ISO timestamp as a US Eastern clock time, e.g. "8:30 PM ET".
  * Returns null if input is missing/invalid.
@@ -84,54 +73,6 @@ export function formatBriefingTime(iso?: string | null): string | null {
  * For date-only inputs, time is null. For full ISO datetimes (intraday data),
  * time is formatted in US Eastern (market) time.
  */
-export function formatChartDate(iso: string): {
-  day: string;
-  full: string;
-  time: string | null;
-} {
-  const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(iso);
-  const d = isDateOnly ? new Date(`${iso}T12:00:00Z`) : new Date(iso);
-  if (isNaN(d.getTime())) return { day: "", full: iso, time: null };
-
-  // A date-only input is read at noon UTC and printed in UTC; a full timestamp
-  // is market data and prints in Eastern.
-  const day = (isDateOnly ? FMT_WEEKDAY_LONG_UTC : FMT_WEEKDAY_LONG_ET).format(d);
-  const full = (isDateOnly ? FMT_DATE_LONG_UTC : FMT_DATE_LONG_ET).format(d);
-  const time = isDateOnly ? null : etClock(d);
-  return { day, full, time };
-}
-
-/**
- * Compact X-axis tick label for charts: "Jun 10" for daily series, "2:30 PM"
- * (US Eastern) for intraday timestamps. Raw ISO strings on an axis are
- * unreadable, especially at mobile widths.
- */
-export function formatChartTick(iso: string, intraday?: boolean): string {
-  const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(iso);
-  const d = isDateOnly ? new Date(`${iso}T12:00:00Z`) : new Date(iso);
-  if (isNaN(d.getTime())) return iso;
-  if (intraday && !isDateOnly) {
-    return d.toLocaleTimeString("en-US", {
-      hour: "numeric",
-      minute: "2-digit",
-      hour12: true,
-      timeZone: "America/New_York",
-    });
-  }
-  return d.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    timeZone: isDateOnly ? "UTC" : "America/New_York",
-  });
-}
-
-export function formatLevel(n: number | null | undefined): string {
-  // Defensive: one malformed level must not crash the static build.
-  if (n === null || n === undefined || !Number.isFinite(n)) return "—";
-  if (n >= 1000) return n.toLocaleString("en-US", { maximumFractionDigits: 1 });
-  return n.toFixed(2);
-}
-
 
 /** Display name for a briefing window. */
 export function windowLabel(w: string): string {
@@ -213,12 +154,6 @@ export function readMinutes(markdown: string): number {
   return Math.max(1, Math.round(seconds / 60));
 }
 
-/** Current time as "HH:MM UTC" — stamped at server render, i.e. the moment the data was fetched. */
-export function nowUtcHM(): string {
-  const d = new Date();
-  return `${String(d.getUTCHours()).padStart(2, "0")}:${String(d.getUTCMinutes()).padStart(2, "0")} UTC`;
-}
-
 /**
  * Today's calendar date (YYYY-MM-DD) in US market time (America/New_York).
  * Use this for any "what day is it now" comparison against briefing/calendar/
@@ -234,9 +169,9 @@ export function todayET(): string {
  * Today's date in US market time, formatted MM-DD-YYYY for display.
  *
  * Deliberately separate from todayET(): that one's YYYY-MM-DD is a key, not a
- * label — it is compared against briefing slugs and calendar dates and passed
- * to the lite-read route, so it has to stay ISO. This is the display-only
- * spelling, for chrome that a reader looks at rather than code that sorts.
+ * label — it is compared against briefing slugs and calendar dates, so it has
+ * to stay ISO. This is the display-only spelling, for chrome that a reader
+ * looks at rather than code that sorts.
  */
 const FMT_DATE_SHORT_NUMERIC_UTC = new Intl.DateTimeFormat("en-US", {
   month: "numeric",
@@ -250,13 +185,3 @@ export function formatDateShort(date: string): string {
   return FMT_DATE_SHORT_NUMERIC_UTC.format(new Date(`${date}T12:00:00Z`));
 }
 
-const FMT_TODAY_ET = new Intl.DateTimeFormat("en-US", {
-  timeZone: "America/New_York",
-  month: "numeric",
-  day: "numeric",
-  year: "2-digit",
-});
-
-export function todayETDisplay(): string {
-  return FMT_TODAY_ET.format(new Date());
-}

@@ -43,7 +43,7 @@ const STORAGE_PREFIX = "bsb.drawings.v1";
 const MAX_SHAPES = 200;
 const MAX_POINTS_PER_PATH = 2000;
 
-export function drawingsKey(symbol: string, range: string): string {
+function drawingsKey(symbol: string, range: string): string {
   return `${STORAGE_PREFIX}:${symbol}:${range}`;
 }
 

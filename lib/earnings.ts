@@ -173,20 +173,6 @@ export async function getEarningsSchedule(): Promise<EarningsSchedule> {
   return { asOf: new Date().toISOString(), entries, noDate };
 }
 
-/**
- * Next-earnings entry keyed by symbol, for an arbitrary set of names (e.g. the
- * single-name desks on /stocks). Symbols Yahoo can't date simply drop out, so
- * the caller renders a date only when one is actually known.
- */
-export async function getNextEarnings(
-  items: { symbol: string; label: string }[],
-): Promise<Map<string, EarningsEntry>> {
-  const settled = await fetchEarningsItems(items);
-  const map = new Map<string, EarningsEntry>();
-  for (const r of settled) if (r.kind === "dated") map.set(r.entry.symbol, r.entry);
-  return map;
-}
-
 /** Compact revenue formatter: $91.7B, $815M. */
 export function fmtRevenue(v: number | null): string {
   if (v == null) return "—";

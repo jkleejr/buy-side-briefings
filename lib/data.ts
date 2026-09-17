@@ -162,11 +162,6 @@ export function getAllMarketsVerdicts(): MarketsVerdict[] {
   });
 }
 
-export function getLatestMarketsVerdict(): MarketsVerdict | null {
-  const all = getAllMarketsVerdicts();
-  return all[0] ?? null;
-}
-
 // ---- Crypto briefings (data/verdicts/crypto-*.json) -----------------------
 // A parallel routine to markets, focused on BTC/ETH. Once-daily cadence
 // (window "daily"). Shares the verdict/conviction vocabulary but carries a
@@ -228,10 +223,6 @@ export function getAllCryptoVerdicts(): CryptoVerdict[] {
     const t2 = `${a.date}-${a.window}`;
     return t1.localeCompare(t2);
   });
-}
-
-export function getLatestCryptoVerdict(): CryptoVerdict | null {
-  return getAllCryptoVerdicts()[0] ?? null;
 }
 
 // ---- KOSPI briefings (data/verdicts/kospi-*.json) -------------------------
@@ -300,10 +291,6 @@ export function getAllKospiVerdicts(): KospiVerdict[] {
     const t2 = `${a.date}-${a.window}`;
     return t1.localeCompare(t2);
   });
-}
-
-export function getLatestKospiVerdict(): KospiVerdict | null {
-  return getAllKospiVerdicts()[0] ?? null;
 }
 
 /**
@@ -598,10 +585,12 @@ function normalizeDate(value: unknown): string {
 }
 
 // ---------------------------------------------------------------------------
-// Curated catalyst calendar — one-off dated events the Yahoo earnings and
-// FRED macro feeds can't know about (IPO pricings, geopolitical deadlines,
-// product launches). Maintained by the daily markets routine alongside the
-// briefings.
+// Catalyst calendar event shape. data/calendar.json and
+// data/calendar-archive.json are still maintained by the daily markets routine
+// (prompts/markets-website.md Step 6b) but no page renders them since the
+// schedule page was removed on 2026-08-03; the loaders that read them were
+// removed on 2026-09-17. The type stays because components/policy-decisions.tsx
+// and lib/calendar-feeds.ts still describe their rows with it.
 // ---------------------------------------------------------------------------
 
 export type CalendarEvent = {
@@ -621,171 +610,3 @@ export type CalendarEvent = {
    */
   source?: "catalyst" | "fomc" | "boj" | "macro" | "earnings";
 };
-
-export function getCalendarEvents(): CalendarEvent[] {
-  const file = path.join(DATA_DIR, "calendar.json");
-  const parsed = readJson<{ events: CalendarEvent[] }>(file);
-  if (!parsed?.events) return [];
-  return [...parsed.events].sort((a, b) => a.date.localeCompare(b.date));
-}
-
-/**
- * Past catalysts. calendar.json is rewritten daily and pruned of anything
- * before today, so history only survives here — backfilled from that file's
- * git revisions and appended to as events age out. Lets the homepage timeline
- * scroll backwards instead of starting abruptly at today.
- */
-export function getCalendarArchive(): CalendarEvent[] {
-  const file = path.join(DATA_DIR, "calendar-archive.json");
-  const parsed = readJson<{ events: CalendarEvent[] }>(file);
-  if (!parsed?.events) return [];
-  return [...parsed.events].sort((a, b) => a.date.localeCompare(b.date));
-}
-
-/**
- * The full catalyst timeline — archived past plus upcoming, de-duped on the
- * boundary (an event can sit in both files the day it ages out).
- */
-export function getCalendarTimeline(): CalendarEvent[] {
-  const seen = new Set<string>();
-  const out: CalendarEvent[] = [];
-  for (const e of [...getCalendarArchive(), ...getCalendarEvents()]) {
-    const sig = `${e.date}|${e.kind}|${e.label.slice(0, 24)}`;
-    if (seen.has(sig)) continue;
-    seen.add(sig);
-    out.push({ source: "catalyst", ...e });
-  }
-  return out.sort((a, b) => a.date.localeCompare(b.date));
-}
-
-/**
- * Everything the strip should know about: the routine's catalysts, plus the
- * scheduled earnings and macro prints it was never meant to write by hand.
- *
- * The routine describes the same releases in its own words, and not always on
- * the right day — its "July CPI release" sat on Aug 13 where the actual BLS
- * date is Aug 12. Matching on date alone missed that and showed the print
- * twice, so releases are paired on their keyword within a few days: the
- * authored label survives (it carries the framing) on the feed's date (which is
- * authoritative).
- */
-export type TimelineWindow = {
-  /** How far behind `from` the mechanical feeds still report. */
-  lookbackDays?: number;
-  /** How far ahead of `from` the FRED release schedule is pulled. */
-  monthsAhead?: number;
-};
-
-export async function getMergedTimeline(
-  from: string,
-  window: TimelineWindow = {},
-): Promise<CalendarEvent[]> {
-  const { getEarningsEvents, getFomcEvents, getBojEvents, getMacroReleases, CENTRAL_BANK_LOOKBACK_DAYS } =
-    await import("@/lib/calendar-feeds");
-
-  const lookbackDays = window.lookbackDays ?? CENTRAL_BANK_LOOKBACK_DAYS;
-  const monthsAhead = window.monthsAhead ?? 6;
-  // The floor for everything, not just the central-bank tables. `from` is the
-  // present; `since` is how far into the past this call is willing to look.
-  const since = new Date(`${from}T12:00:00Z`);
-  since.setUTCDate(since.getUTCDate() - lookbackDays);
-  const sinceStr = since.toISOString().slice(0, 10);
-
-  const authored = getCalendarTimeline().map((e) => ({ ...e }));
-  const [earnings, macro] = await Promise.all([
-    getEarningsEvents(sinceStr),
-    getMacroReleases(from, monthsAhead, lookbackDays),
-  ]);
-  const fomc = getFomcEvents(from, lookbackDays);
-  const boj = getBojEvents(from, lookbackDays);
-
-  // "boj" is here so a hand-written "BoJ meeting" catalyst absorbs the feed row
-  // rather than printing beside it, the same way the FOMC pair already works.
-  const RELEASE_WORDS = ["cpi", "ppi", "pce", "jobs", "payroll", "fomc", "boj"];
-  const wordOf = (label: string) =>
-    RELEASE_WORDS.find((w) => label.toLowerCase().includes(w));
-  const daysApart = (a: string, b: string) =>
-    Math.abs(Date.parse(a) - Date.parse(b)) / 86_400_000;
-
-  const swallowed = new Set<CalendarEvent>();
-  for (const feed of [...fomc, ...boj, ...macro]) {
-    const w = wordOf(feed.label);
-    if (!w) continue;
-    // Matched from `sinceStr`, not `from`: on the month calendar a CPI print
-    // that has already happened is still a row, and pairing has to keep working
-    // behind the present or the authored copy and the FRED copy both render.
-    const twin = authored.find(
-      (a) => a.date >= sinceStr && wordOf(a.label) === w && daysApart(a.date, feed.date) <= 4,
-    );
-    if (twin) {
-      // The feed's date is the authoritative one — but only for an event that
-      // hasn't happened yet. Re-dating an *archived* catalyst would march a
-      // print that already landed onto a nearby feed date and file it under the
-      // wrong day, which on a month calendar is a visible lie.
-      if (twin.date >= from) twin.date = feed.date;
-      twin.time_et = twin.time_et ?? feed.time_et;
-      swallowed.add(feed);
-    }
-  }
-
-  /**
-   * The leading ticker of an authored earnings label. The routine writes them
-   * ticker-first — "AMD Q2 2026 earnings AH — data-center >$6B" — which is the
-   * only part that can be matched against a feed row.
-   */
-  const leadTicker = (label: string): string | null => {
-    const t = label.trim().split(/[\s,]+/)[0].replace(/[^A-Z0-9.]/gi, "").toUpperCase();
-    return /^[A-Z][A-Z0-9.]{0,5}$/.test(t) ? t : null;
-  };
-
-  // Earnings pair on the ticker rather than a release keyword. The routine
-  // writes "AMD Q2 2026 earnings AH — <framing>" and the Yahoo feed writes a
-  // bare "AMD earnings" for the same print. The old homepage strip collapsed a
-  // date to a single node and hid the collision; a month grid prints both rows
-  // side by side, so the pair has to be resolved here. The authored label wins
-  // (it carries the framing), on the feed's date when the print is still ahead.
-  for (const feed of earnings) {
-    const sym = feed.tickers?.[0]?.toUpperCase();
-    if (!sym) continue;
-    const twin = authored.find(
-      (a) =>
-        a.kind.toUpperCase() === "EARNINGS" &&
-        leadTicker(a.label) === sym &&
-        daysApart(a.date, feed.date) <= 4,
-    );
-    if (twin) {
-      if (twin.date >= from) twin.date = feed.date;
-      swallowed.add(feed);
-    }
-  }
-
-  const authoredDates = new Set(authored.map((e) => e.date));
-
-  // Central-bank decisions are never dropped for sharing a date. They used to
-  // be: any authored catalyst on the same day removed them, so the Bank of
-  // Japan's July 31 decision vanished the moment the night routine wrote a
-  // catalyst for the 31st. A rate decision is a fixed, scheduled fact — it does
-  // not stop happening because something else also happens that day.
-  //
-  // Genuine duplicates are still caught upstream by the keyword pass: an
-  // authored row that actually says "BoJ" or "FOMC" absorbs the feed row and
-  // keeps the authored wording. What the date rule was removing was the
-  // *unrelated* collision, which is exactly the case worth keeping.
-  const merged = [
-    ...authored,
-    ...fomc.filter((e) => !swallowed.has(e)),
-    ...boj.filter((e) => !swallowed.has(e)),
-    ...macro.filter((e) => !swallowed.has(e) && !authoredDates.has(e.date)),
-    ...earnings.filter((e) => !swallowed.has(e)),
-  ];
-
-  const seen = new Set<string>();
-  return merged
-    .filter((e) => {
-      const sig = `${e.date}|${e.source}|${e.label.slice(0, 24)}`;
-      if (seen.has(sig)) return false;
-      seen.add(sig);
-      return true;
-    })
-    .sort((a, b) => a.date.localeCompare(b.date));
-}

@@ -1,18 +1,7 @@
-// Scheduled events the briefing routine doesn't write by hand.
-//
-// data/calendar.json is maintained by the daily routine and is deliberately
-// narrative: Kimi K3's weights dropping, an IPO lock-up expiring, AMD's AI Day.
-// prompts/markets-website.md tells it to cover "events the Yahoo-earnings and
-// FRED-macro feeds can't know about" — but nothing was ever merging those two
-// feeds in, so the homepage strip showed only what the routine typed. Twelve of
-// eighteen scheduled watchlist earnings and every macro print after the next one
-// were simply absent.
-//
-// This module supplies the mechanical half. The routine's catalysts stay the
-// headline act — see CATALYST_RANK in lib/home-terminal.ts, which keeps them on
-// the timeline node when they share a date with an earnings row.
+// Central-bank decision dates the /earnings page lists beside watchlist
+// earnings. Published years ahead and rarely moved, so static tables are
+// honest here — FRED exposes data releases, not Fed meetings.
 
-import { getEarningsSchedule } from "@/lib/earnings";
 import type { CalendarEvent } from "@/lib/data";
 
 /**
@@ -55,70 +44,6 @@ const BOJ_2026: Array<{ from: string; date: string }> = [
   { from: "2026-10-29", date: "2026-10-30" },
   { from: "2026-12-17", date: "2026-12-18" },
 ];
-
-/**
- * FRED release IDs for the prints that actually move a session. Deliberately
- * short: every extra release is another row competing with the catalysts.
- */
-const FRED_RELEASES: Array<{ id: number; label: string; kind: string }> = [
-  { id: 10, label: "CPI", kind: "MACRO" },
-  { id: 50, label: "Jobs report", kind: "MACRO" },
-  { id: 46, label: "PPI", kind: "MACRO" },
-  { id: 54, label: "PCE / personal income", kind: "MACRO" },
-];
-
-type FredDates = { release_dates?: Array<{ date: string }> };
-
-/**
- * Forward-dated macro releases straight from FRED, which publishes the actual
- * schedule rather than a rule of thumb. Beats deriving "first Friday" or
- * "second Wednesday": the routine's hand-written entry had July CPI on Aug 13,
- * and the real date is Aug 12.
- */
-export async function getMacroReleases(
-  from: string,
-  monthsAhead = 6,
-  lookbackDays = CENTRAL_BANK_LOOKBACK_DAYS,
-): Promise<CalendarEvent[]> {
-  const key = process.env.FRED_API_KEY;
-  if (!key) return [];
-
-  const end = new Date(`${from}T12:00:00Z`);
-  end.setUTCMonth(end.getUTCMonth() + monthsAhead);
-  const endStr = end.toISOString().slice(0, 10);
-  // Recent prints stay on the strip for the same reason the Fed's do: last
-  // week's CPI is how you read this week's tape, and the schedule is a record
-  // of the week rather than only a countdown.
-  const since = lookbackFrom(from, lookbackDays);
-
-  const per = await Promise.all(
-    FRED_RELEASES.map(async ({ id, label, kind }) => {
-      try {
-        const url =
-          `https://api.stlouisfed.org/fred/release/dates?release_id=${id}` +
-          `&api_key=${key}&file_type=json&include_release_dates_with_no_data=true` +
-          `&realtime_start=${since}&realtime_end=${endStr}&sort_order=asc`;
-        const res = await fetch(url, { next: { revalidate: 21_600 } });
-        if (!res.ok) return [];
-        const json = (await res.json()) as FredDates;
-        return (json.release_dates ?? [])
-          .filter((r) => r.date >= since)
-          .map<CalendarEvent>((r) => ({
-            date: r.date,
-            label,
-            kind,
-            time_et: "8:30 AM",
-            source: "macro",
-          }));
-      } catch {
-        // A macro feed hiccup should thin the calendar, never break the page.
-        return [];
-      }
-    }),
-  );
-
-  return per.flat();
-}
 
 /**
  * How far back the fixed central-bank tables still report. The schedule is a
@@ -172,31 +97,4 @@ export function getBojEvents(
       source: "boj",
     };
   });
-}
-
-/**
- * Next earnings date for every watchlist name, from the same Yahoo-backed
- * helper /earnings already renders. Estimated dates are marked, because Yahoo
- * projects a quarter forward when a company hasn't confirmed.
- *
- * `from` is a floor, not "today": pass a past date and the results reaching
- * back that far are kept, which is what the month calendar wants when you page
- * into a month that has already happened.
- */
-export async function getEarningsEvents(from: string): Promise<CalendarEvent[]> {
-  try {
-    const { entries } = await getEarningsSchedule();
-    return entries
-      .filter((e) => e.date >= from)
-      .map<CalendarEvent>((e) => ({
-        date: e.date,
-        label: `${e.symbol} earnings${e.isEstimate ? " (est.)" : ""}`,
-        kind: "EARNINGS",
-        tickers: [e.symbol],
-        note: e.name ?? undefined,
-        source: "earnings",
-      }));
-  } catch {
-    return [];
-  }
 }

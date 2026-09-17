@@ -207,13 +207,6 @@ body {
 .panel-scroll::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
 .panel-scroll::-webkit-scrollbar-track { background: transparent; }
 
-/* --- Legacy terminal effect classes, neutralized ---------------------------
-   The CRT/phosphor layer is gone. These classes remain defined (no-ops or
-   quiet equivalents) so older markup renders cleanly without a sweep. */
-.glow-amber, .glow-up, .glow-down, .glow-cyan, .glow-fg { text-shadow: none; }
-.glow-dot-up, .glow-dot-amber { box-shadow: none; }
-.boot-in { animation: none; }
-
 /* Tick flash — kept: a cell pulses faintly green/red when its value changes. */
 @keyframes tick-up {
   0% { background-color: rgba(21, 127, 61, 0.16); }
@@ -225,29 +218,6 @@ body {
 }
 .tick-up { animation: tick-up 0.8s ease-out; }
 .tick-down { animation: tick-down 0.8s ease-out; }
-
-/* Corner ticks — registration marks, redrawn in ink. */
-.term-corners {
-  --c: rgba(30, 29, 26, 0.4);
-  --s: 9px;
-  --t: 1px;
-  background-image:
-    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
-    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
-    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c)),
-    linear-gradient(var(--c), var(--c)), linear-gradient(var(--c), var(--c));
-  background-repeat: no-repeat;
-  background-size:
-    var(--s) var(--t), var(--t) var(--s),
-    var(--s) var(--t), var(--t) var(--s),
-    var(--s) var(--t), var(--t) var(--s),
-    var(--s) var(--t), var(--t) var(--s);
-  background-position:
-    0 0, 0 0,
-    100% 0, 100% 0,
-    0 100%, 0 100%,
-    100% 100%, 100% 100%;
-}
 
 @media (prefers-reduced-motion: reduce) {
   .term-line { opacity: 1; animation: none; }
@@ -275,12 +245,4 @@ html.theme-switching *::after {
 :focus-visible {
   outline: 2px solid var(--lapis);
   outline-offset: 2px;
-}
-
-/* Data tables: faint accent wash on row hover so the eye can track a row. */
-.term-table tbody tr {
-  transition: background-color 0.1s ease;
-}
-.term-table tbody tr:hover {
-  background-color: rgba(47, 79, 158, 0.05);
 }

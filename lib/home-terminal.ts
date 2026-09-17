@@ -648,9 +648,9 @@ export async function getHomeData(): Promise<HomeData> {
     }));
 
   // No dated-catalyst module on this page: the sideways strip went first, then
-  // the "Catalysts in detail" list, then /schedule itself. Nothing on the site
-  // renders data/calendar.json now — see the loaders in lib/data.ts, which are
-  // retained but unreferenced.
+  // the "Catalysts in detail" list, then /schedule itself. The routine still
+  // maintains data/calendar.json and data/calendar-archive.json, but nothing on
+  // the site renders them and the loaders were removed on 2026-09-17.
 
   const todayLabel = new Date()
     .toLocaleDateString("en-US", {

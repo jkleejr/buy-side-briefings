@@ -155,4 +155,5 @@ denominated accordingly (what was "5 of 7" with a VIX breach becomes "4 of 6").
 dossiers under `data/asset-daily/` for the single-name desk pages. Those pages
 were removed and the dossier steps were stripped from both cloud prompts — the
 routines must NOT write to `data/asset-daily/` anymore. The historical dossier
-data stays in the repo (track record + archive).
+data was removed from the tree on 2026-09-17 (nothing read it); it remains in
+git history before that date.
