@@ -1,0 +1,161 @@
+{
+  "routine": "markets",
+  "date": "2026-09-17",
+  "window": "morning",
+  "generated_at": "2026-09-17T12:13:53Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Futures take back the Fed-day loss after Washington says the Saudi pipeline restarts in days",
+    "label": "Oil, not the Fed, is driving the recovery: WTI $102.14, ten-year back to 4.988%, Dow futures +457",
+    "rationale_short": "Equity futures have recovered most of Wednesday's post-Fed decline and the agent is oil rather than the Fed. US Energy Secretary Chris Wright said the Saudi East-West pipeline outage is a brief interruption that will be measured in days; WTI fell 3.2% to settle at $102.43 from Tuesday's $106.12 and trades near $102.14, while Brent is at $105.81. The ten-year, which closed above 5% after Chair Warsh's press conference, is back to 4.988% and the thirty-year at 5.341%. Dow futures are up 457 points, or 0.9%, with S&P 500 futures up 0.9% and Nasdaq-100 futures up 1.2% - the Nasdaq leading names the yield as the thing being traded, inverting Wednesday's ordering when banks drove a 1.21% Dow loss and the Composite finished flat. The long end falling the morning after a rate increase only happens when term premium, not the expected funds rate, is what it has been pricing. But nothing has been repaired. Satellite images of the struck pumping station led independent analysts to estimate weeks rather than days, and the Fed's projections are untouched underneath the move: a median funds rate of 4.1% at the end of both 2026 and 2027, with 16 of 18 officials seeing at least one further increase this year. The relief is in the input the committee says it cannot set, not in the path it does. With October likely skipped for its proximity to the midterms, December is the next decision and the market has eleven weeks of data to argue with the dots rather than five. A confirmed restart takes WTI under $100 and removes the input that built a 5% ten-year; a WTI settle back above $105, or a ten-year above Wednesday's 5.016% close, would date this entire move to a statement rather than a supply change.",
+    "lede_short": "Futures have taken back most of Wednesday's post-Fed loss, and oil did it, not the Fed: Washington says the Saudi pipeline outage will be measured in days, WTI is near $102 and the ten-year is back to 4.988%. Nothing has been repaired - satellite images led independent analysts to estimate weeks - and the Fed's 4.1% median through 2027 is unchanged underneath. A WTI settle back above $105 would date the move to a statement.",
+    "supporting_data": [
+      {
+        "label": "US Energy Secretary Chris Wright called the Saudi East-West pipeline outage a \"brief and temporary interruption\" that \"will be measured in days,\" taking WTI down 3.2% to $102.43 and Brent down 2.7% to $105.83 - the outage that put WTI at $106.12 on Tuesday is being priced out on an official's estimate while the line is still shut",
+        "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html"
+      },
+      {
+        "label": "Satellite images show fire-damaged structures and blackened ground at the East-West pumping station after the September 11 drone attack, and independent analysts warned the line could stay down for weeks - days against weeks is the whole disagreement, which makes the restart announcement the event rather than the daily price",
+        "url": "https://www.cnbc.com/2026/09/14/iran-war-saudi-arabia-east-west-pipeline-oil.html"
+      },
+      {
+        "label": "The ten-year yield is at 4.988%, nearly two basis points lower, and the thirty-year at 5.341%, down one - the long end falling the morning after a rate increase happens when the term-premium input reprices faster than the funds rate itself",
+        "url": "https://www.cnbc.com/2026/09/17/treasury-yields-move-lower-after-fed-kicks-off-hiking-cycle.html"
+      },
+      {
+        "label": "Dow futures advanced 457 points, or 0.9%, with S&P 500 futures up 0.9% and Nasdaq-100 futures up 1.2% as US crude traded around $100 - close to a full recovery of Wednesday's 631-point Dow loss, and the Nasdaq leading it names the yield as what is being traded",
+        "url": "https://www.cnbc.com/2026/09/16/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "The Fed's projections still put the median funds rate at 4.1% at the end of both 2026 and 2027, with 16 of 18 officials seeing at least one further increase this year - none of the overnight move touches that, so the relief is in the input the committee says it cannot set, not in the path it does",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm"
+      },
+      {
+        "label": "The Bank of England decides today with a hold at 3.75% priced above 80%, against UK inflation that rose to 3.1% in August on motor fuel up 23% year on year - the same energy input reaching a second economy, with a hike widely anticipated in November",
+        "url": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7551.81,
+      "change_pct": -0.45,
+      "as_of": "2026-09-16T20:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 25978.42,
+      "change_pct": -0.01,
+      "as_of": "2026-09-16T20:00:00.000Z"
+    },
+    "vix": {
+      "level": 17.2,
+      "change_pct": 0.58,
+      "as_of": "2026-09-16T20:15:00.000Z"
+    },
+    "ust10y": {
+      "level": 4.988,
+      "change_bps": -2,
+      "as_of": "2026-09-17T11:45:00.000Z"
+    },
+    "dxy": {
+      "level": 99.696,
+      "change_pct": 0.31,
+      "as_of": "2026-09-16T20:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 4.988,
+      "trigger_above": 5.016,
+      "unit": "%"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 5.341,
+      "trigger_above": 5.44,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,500",
+      "value": 7551.81,
+      "trigger_below": 7500,
+      "unit": "index"
+    },
+    {
+      "name": "DXY",
+      "value": 99.696,
+      "trigger_above": 100.0,
+      "unit": "index"
+    },
+    {
+      "name": "Crude Oil (WTI)",
+      "value": 102.14,
+      "trigger_below": 100.0,
+      "unit": "$/bbl"
+    },
+    {
+      "name": "Gold",
+      "value": 4240.1,
+      "trigger_above": 4500,
+      "unit": "$/oz"
+    },
+    {
+      "name": "BTC",
+      "value": 76400,
+      "trigger_below": 75000,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CL=F",
+      "note": "Settled at $102.43 on Wednesday, down 3.2% from Tuesday's $106.12, after US Energy Secretary Chris Wright described the Saudi East-West pipeline outage as a brief interruption measured in days. WTI trades near $102.14 and Brent at $105.81 into Thursday's US open, with Saudi Arabia routing additional cargoes to Asian refiners by ship-to-ship transfer near Oman's Sohar port. Independent analysts reading satellite images of the struck pumping station estimate weeks rather than days, so the restart announcement is the event and the price is currently trading the claim.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "INTC",
+      "note": "No confirmation or denial since Wednesday's 7.2% gain to $104.13 on the report that SK Hynix is in exploratory talks to lease part of Intel's Ohio plant for memory production. Reuters reported a deal covering advanced memory such as HBM could draw opposition from the South Korean government on technology-sensitivity grounds. The stock is holding a move that still rests on a report neither company has confirmed.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "Above $76,400, up roughly 1%, with ether up about 2%, after $345 million of crypto liquidations over 24 hours - $208 million of them shorts against $137 million of longs. The forced buying came from bears rather than new demand, which is the weaker version of a recovery. The $75,000 area that has held since August survived both a delivered hike and a hawkish projection set.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TTWO",
+      "note": "Annual shareholder meeting Thursday, with Grand Theft Auto VI scheduled for November 19 and the stock down 17% in 2026. The decline already prices scepticism about that release window; a reaffirmation or a slip at the meeting is what resolves it.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Closed Wednesday at $4,240.10, down 1.2%, after a session high of $4,365.57 - a $125 round trip that dated the post-Fed repricing to the press conference rather than the statement. With the ten-year back below 5% and the dollar's Wednesday gain at 0.31% to 99.696, the yield and currency drivers that pushed bullion down have partially reversed without the policy path changing.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "WTI crude and the pipeline restart claim",
+      "thesis": "The market has priced the US Energy Department's estimate of days over independent analysts' estimate of weeks. Energy Secretary Chris Wright called the East-West outage a brief and temporary interruption measured in days, and WTI fell 3.2% to $102.43 from Tuesday's $106.12 settle on that statement alone. Satellite images of the struck pumping station, taken after the September 11 drone attack, show fire-damaged structures and blackened ground, and analysts reading them warned of weeks. Nothing has been repaired and the line is still shut, so what is forming is a gap between a price and a physical fact that gets closed by an announcement rather than by drift. Saudi ship-to-ship transfers to Asian refiners near Oman's Sohar port are a genuine partial offset and cut the other way.",
+      "entry": "$100 below and $105 above define it; $102.14 is the current reference against Tuesday's $106.12 and Wednesday's $102.43 settle. The restart announcement and weekly EIA distillate stocks are the observables.",
+      "invalidation": "A confirmed restart takes WTI under $100 and removes the input that built a 5% ten-year; a settle back above $105 says the days estimate was optimistic and returns the same input to the long end.",
+      "horizon": "Days to three weeks, on the Energy Secretary's own timeline"
+    },
+    {
+      "asset": "Market pricing against the committee's 4.1% median, now dated to December",
+      "thesis": "The projections put the median funds rate at 4.1% at the end of 2026 and again at the end of 2027, with 16 of 18 officials seeing at least one more increase this year, and none of the overnight rally touches that. What changed overnight is the calendar: the Fed is expected to skip October given its proximity to the midterm elections, which moves the next live decision to December and gives the market eleven weeks of inflation and labour data to argue with the dots rather than five. The CNBC Fed Survey has 55% of respondents expecting more than a single further hike. The counter-evidence is that a longer runway cuts both ways - eleven weeks of softening energy prices would discount the dots as readily as eleven weeks of pass-through would confirm them.",
+      "entry": "Wednesday's 5.016% ten-year close and this morning's 4.988% bracket the immediate range; the thirty-year at 5.341% against its 2007 peak of 5.44% is the longer reference.",
+      "invalidation": "A ten-year holding back above 5.016% would say the overnight relief was a one-session reaction to an oil statement; a sustained move under 4.94% with the funds rate unchanged would say the market is discounting the 2027 median.",
+      "horizon": "Eleven weeks, into the December meeting"
+    },
+    {
+      "asset": "The Bank of England and Bank of Japan around Friday's quarterly expiry",
+      "thesis": "Three central bank decisions land inside three sessions and the quarter's largest options expiration falls on the third. The Bank of England decides today with a hold at 3.75% priced above 80%, against UK inflation that rose to 3.1% in August driven by motor fuel up 23% year on year - the same energy input reaching a second economy, with a hike widely anticipated at the November meeting. The Bank of Japan follows Friday, with a 25 basis point move to 1.25% widely expected, repricing the funding currency behind a large share of global duration positioning two days after the Fed. Friday's expiry then removes whatever gamma has been pinning the index, which is why the sessions after a Fed meeting in expiry week often move more than the meeting did.",
+      "entry": "3.75% UK Bank Rate and the November hike pricing are the UK reference; 1.25% is the expected BOJ level. The DXY at 99.696 against 100 is where the dollar side of it reads.",
+      "invalidation": "A BoE hike today, or a BOJ hold on Friday, would each move the dollar leg against current positioning; a DXY break above 100 with the ten-year still under 5% would separate the currency move from the yield move.",
+      "horizon": "Two sessions, through Friday's expiration"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-17-morning.mdx"
+}
