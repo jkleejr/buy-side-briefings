@@ -1,48 +1,8 @@
 {
   "events": [
     {
-      "date": "2026-09-16",
-      "label": "FOMC decision (Sep 15-16) — a quarter-point hike to 3.75%-4.00% priced near 93%, with the median dot beyond September the open question",
-      "kind": "FOMC",
-      "tickers": [
-        "TLT",
-        "TBT",
-        "SPY",
-        "QQQ",
-        "GLD",
-        "BTC"
-      ],
-      "note": "Updated Sep 11 night: odds moved from about 71% to roughly 90% after August CPI core ran 0.3% against a 0.2% estimate and the Michigan survey put year-ahead inflation expectations at 4.6%. Blackout runs through September 17, so no official frames either number before the decision. August retail sales land at 8:30 a.m. the same morning, putting a growth reading hours ahead of a hike aimed at an energy shock the Fed cannot supply. The ten-year closed at 4.96%, its highest of this cycle, with 5.00% above it. Updated Sep 14 morning: the Oman meeting was postponed with no new date, so the committee hikes into an unresolved energy shock — WTI near $102.60, Brent near $108. The thirty-year is at 5.35%, nine basis points below the 2007 peak of 5.44%. Updated Sep 14 night: the ten-year touched 5.01% intraday, its first 5% print since 2023, and was bought back under the level; the thirty-year closed at 5.353%. Goldman Sachs abandoned its call for no change and now expects a 25 bp hike, with David Mericle writing the committee \"will be reluctant to surprise\" a market pricing one — but the bank still carries no further increases after September, which is a testable disagreement with any median dot showing two. With the hike priced, the Summary of Economic Projections is the entire information content of the meeting. Updated Sep 15 morning: the ten-year broke through 5% overnight to 5.02% and as high as 5.041%, clearing the 2023 peak for the highest print since 2007, with the thirty-year up seven basis points to 5.40% against the two-year's five. Hike pricing firmed to about 92% from 87%. The long end moved more than the front, so the committee publishes its inflation path over a Saudi pipeline outage described as lasting weeks — a supply shock the rate it sets cannot address. A ten-year back under 4.90% would say the break was a pre-decision hedge. Updated Sep 15 night: the ten-year reached 5.045% and ended the session at 5.00% — its first close at the level since 2007, one day after the same print was rejected. Hike pricing settled near 91%. The input that moved between the two sessions was crude, not policy: WTI +4.7% to $106.12 on reported Saudi cargo cancellations. September Empire State fell thirteen points to 7.6 with prices paid at 63.1, above its four-year high, so the committee hikes into decelerating activity and accelerating input costs. Goldman Sachs still carries no increases after September; a median dot showing two more would be the widest gap between the committee and the forecasters this cycle. Updated Sep 16 morning: hike pricing firmed to about 93% and the ten-year held 5.008% after Tuesday's 5.041% high, its sixth advance in seven sessions. The path, not the rate, is the meeting's content and the disagreement is now measurable: markets price roughly 41.2 bp of total 2026 tightening while eleven banks (Barclays, Citigroup, Nomura, UBS, Wells Fargo among them) forecast 50 and Bank of America, Deutsche Bank and RBC forecast 75, against Goldman's zero-more. An 85% majority of economists, 86 of 101, told Reuters the Fed moves today and 37 of 70 see at least one more by end-March, with the majority no longer forecasting lower rates in 2027. Crude fell for the first time in a week into the decision — WTI -1.29% to $104.46 on an unexpected US inventory build — so a hawkish median lands on a market already pricing relief on the input that built the 5% yield."
-    },
-    {
-      "date": "2026-09-16",
-      "time_et": "8:30 AM",
-      "kind": "MACRO",
-      "label": "August retail sales — the reference is July's 0.6% decline, the largest in more than a year, six hours before the FOMC decision",
-      "tickers": [
-        "XRT",
-        "SPY",
-        "IWM",
-        "TLT"
-      ],
-      "note": "Added Sep 11 night: the only growth print between the expectations shock and the decision. Preliminary September sentiment at 47.8 and year-ahead inflation expectations at 4.6% describe a consumer under pressure; retail sales measure whether that has reached spending yet. A print at or under 0.2% alongside a delivered hike is the growth-versus-inflation trade-off in one morning. Updated Sep 16 morning: the reference point is July's 0.6% decline against a 0.1% expected rise, the largest drop in more than a year. This is the only growth reading between the inflation data that forced the hike and the hike itself."
-    },
-    {
-      "date": "2026-09-16",
-      "time_et": "4:45 PM",
-      "kind": "OTHER",
-      "label": "Lennar Q3 FY26 earnings — consensus $1.30 a share on revenue down 5% to $8.37B, printing two hours after the Fed decision",
-      "tickers": [
-        "LEN",
-        "XHB",
-        "ITB",
-        "TLT"
-      ],
-      "note": "Added Sep 16 morning: full-year FY26 EPS consensus has compressed to $5.52 from $8.06 in FY25, and deliveries are forecast at 21,181 units at an ASP of $377,230. A homebuilder reporting hours after the first hike since 2023 is the cleanest read on whether mortgage-rate expectations have already done the damage the rate is about to confirm."
-    },
-    {
       "date": "2026-09-17",
-      "label": "Bank of England decision — the second of three central bank decisions in three days",
+      "label": "Bank of England decision \u2014 the second of three central bank decisions in three days",
       "kind": "OTHER",
       "tickers": [
         "FXB",
@@ -52,8 +12,21 @@
       "note": "Added Sep 14 night: the Fed decides Wednesday, the BoE Thursday and the BoJ Friday. Three decisions inside three sessions is what turns a US energy shock into a global tightening impulse or leaves it domestic. The UK is importing the same crude: Brent above $108 with no Hormuz meeting scheduled."
     },
     {
+      "date": "2026-09-17",
+      "time_et": "8:30 AM",
+      "kind": "MACRO",
+      "label": "August housing starts, weekly jobless claims and the Philadelphia Fed survey - the first US activity data priced against the new projections",
+      "tickers": [
+        "XHB",
+        "ITB",
+        "TLT",
+        "SPY"
+      ],
+      "note": "Added Sep 16 night: Lennar reported the same evening that its operating environment deteriorated as mortgage rates rose through the quarter, at roughly 6.8% on the thirty-year at quarter end, with new orders down 4% and the average sale price down to $371,000 from $389,000. Housing starts is the industry-wide check on whether that is company-specific or the shape of the sector at a funds rate the committee now projects at 4.1% through 2027."
+    },
+    {
       "date": "2026-09-18",
-      "label": "Bank of Japan policy decision — markets pricing a September hike after Deputy Governor Himino flagged upside inflation risks",
+      "label": "Bank of Japan policy decision \u2014 markets pricing a September hike after Deputy Governor Himino flagged upside inflation risks",
       "kind": "OTHER",
       "tickers": [
         "JPY=X",
@@ -65,7 +38,7 @@
     },
     {
       "date": "2026-09-18",
-      "label": "Rescheduled Iran-Gulf Hormuz meeting — NO date announced; Sep 18 is an indicative marker, not a scheduled event",
+      "label": "Rescheduled Iran-Gulf Hormuz meeting \u2014 NO date announced; Sep 18 is an indicative marker, not a scheduled event",
       "kind": "SIGNAL",
       "tickers": [
         "CL=F",
@@ -73,12 +46,12 @@
         "SPY",
         "TLT"
       ],
-      "note": "Added Sep 14 morning: Oman postponed the Sep 14 Salalah meeting at Saudi Arabia's request and set no replacement date. Until one is announced there is no scheduled event that can take war premium out of crude, and Saudi Arabia's East-West pipeline — roughly 5M b/d to the Red Sea — is still shut after the Sep 10-11 drone strikes from Iraq. A WTI settle back below $100 would say the premium is deflating without a framework; above $105 puts a second month of energy pass-through into the data the Fed sees after Wednesday. Updated Sep 14 night: still no date. Brent ran above $109 intraday to about $108.15 and WTI to roughly $102.64, between the $100 and $105 settles this entry named. The dislocation to watch is that XLE reversed from up 1.2% premarket to down 0.94% at the close on that rally, with utilities off 1.34%."
+      "note": "Added Sep 14 morning: Oman postponed the Sep 14 Salalah meeting at Saudi Arabia's request and set no replacement date. Until one is announced there is no scheduled event that can take war premium out of crude, and Saudi Arabia's East-West pipeline \u2014 roughly 5M b/d to the Red Sea \u2014 is still shut after the Sep 10-11 drone strikes from Iraq. A WTI settle back below $100 would say the premium is deflating without a framework; above $105 puts a second month of energy pass-through into the data the Fed sees after Wednesday. Updated Sep 14 night: still no date. Brent ran above $109 intraday to about $108.15 and WTI to roughly $102.64, between the $100 and $105 settles this entry named. The dislocation to watch is that XLE reversed from up 1.2% premarket to down 0.94% at the close on that rally, with utilities off 1.34%."
     },
     {
       "date": "2026-09-18",
       "kind": "OTHER",
-      "label": "Quarterly options expiration — the largest expiry of the quarter, landing the session after the Fed and on the Bank of Japan decision",
+      "label": "Quarterly options expiration \u2014 the largest expiry of the quarter, landing the session after the Fed and on the Bank of Japan decision",
       "tickers": [
         "SPY",
         "QQQ",
@@ -90,7 +63,7 @@
       "date": "2026-09-22",
       "time_et": "9:45 AM",
       "kind": "MACRO",
-      "label": "Flash September PMIs (US, euro zone, UK) — the first broad activity reading covering the period since crude cleared $100",
+      "label": "Flash September PMIs (US, euro zone, UK) \u2014 the first broad activity reading covering the period since crude cleared $100",
       "tickers": [
         "SPY",
         "TLT",
@@ -100,7 +73,7 @@
     },
     {
       "date": "2026-09-25",
-      "label": "Anthropic public S-1 expected — risk factors are the first document pricing the company's own call for slower capability growth",
+      "label": "Anthropic public S-1 expected \u2014 risk factors are the first document pricing the company's own call for slower capability growth",
       "kind": "IPO",
       "tickers": [
         "NVDA",
@@ -108,13 +81,13 @@
         "CRWD",
         "QQQ"
       ],
-      "note": "Added Sep 14 night: the filing precedes a mid-October roadshow supporting a listing valued at up to $2 trillion, with Morgan Stanley, Goldman Sachs and JPMorgan leading. It lands weeks after CEO Dario Amodei argued publicly for slowing the rate at which model capabilities improve — a statement that on Sep 14 cost Marvell 6.00%, the Kospi 3.26% and SoftBank 10%, while cybersecurity rose 13-15%. The same session identified Anthropic as the customer behind a six-year, $13.7 billion compute contract, so the argument and the spending are not yet in conflict. The S-1 language is where they have to be reconciled in writing."
+      "note": "Added Sep 14 night: the filing precedes a mid-October roadshow supporting a listing valued at up to $2 trillion, with Morgan Stanley, Goldman Sachs and JPMorgan leading. It lands weeks after CEO Dario Amodei argued publicly for slowing the rate at which model capabilities improve \u2014 a statement that on Sep 14 cost Marvell 6.00%, the Kospi 3.26% and SoftBank 10%, while cybersecurity rose 13-15%. The same session identified Anthropic as the customer behind a six-year, $13.7 billion compute contract, so the argument and the spending are not yet in conflict. The S-1 language is where they have to be reconciled in writing."
     },
     {
       "date": "2026-09-25",
       "time_et": "10:00 AM",
       "kind": "MACRO",
-      "label": "Final September consumer sentiment — confirms or revises the 4.6% year-ahead inflation expectation",
+      "label": "Final September consumer sentiment \u2014 confirms or revises the 4.6% year-ahead inflation expectation",
       "tickers": [
         "TLT",
         "GLD",
@@ -135,48 +108,74 @@
     {
       "date": "2026-09-30",
       "kind": "SIGNAL",
-      "label": "Saudi East-West pipeline restart window — shut since Sep 11, described as mostly out of service for weeks, with repairs estimated at three to five weeks",
+      "label": "Saudi East-West pipeline restart window \u2014 shut since Sep 11, described as mostly out of service for weeks, with repairs estimated at three to five weeks",
       "tickers": [
         "CL=F",
         "XLE",
         "TLT",
         "SPY"
       ],
-      "note": "Added Sep 15 morning: the 1,200 km line carries roughly 4 million barrels a day from Abqaiq to Yanbu and was the workaround for the Hormuz blockade, so its loss removes the escape route rather than adding a second problem. About 4% of global supply is at risk and the kingdom could exhaust exportable oil within days. Sep 30 is an indicative marker, not an announced restart date. A confirmed restart is the single event that takes WTI back under $100 without any diplomacy behind it, and it is the input currently setting the long end of the Treasury curve. Updated Sep 15 night: WTI cleared $105 for a 4.7% gain to $106.12 and Brent rose 3% to $108.88 on reports the kingdom cancelled some European crude cargoes — WTI outrunning Brent narrowed the spread on a Gulf supply shock, which reads as physical tightness rather than headline risk. Refined-product costs reach the CPI basket with a four-to-six-week lag, putting this week's barrel in the November data rather than October's. Updated Sep 16 morning: WTI fell 1.29% to $104.46 and Brent 1.02% to $107.64 on an unexpected build in US crude inventories — the first decline in a week, and the first move down that came from supply arithmetic rather than diplomacy. The outage is unchanged, so the loss has been offset rather than resolved; a return above $105 would say the build was a weekly artifact."
+      "note": "Added Sep 15 morning: the 1,200 km line carries roughly 4 million barrels a day from Abqaiq to Yanbu and was the workaround for the Hormuz blockade, so its loss removes the escape route rather than adding a second problem. About 4% of global supply is at risk and the kingdom could exhaust exportable oil within days. Sep 30 is an indicative marker, not an announced restart date. A confirmed restart is the single event that takes WTI back under $100 without any diplomacy behind it, and it is the input currently setting the long end of the Treasury curve. Updated Sep 15 night: WTI cleared $105 for a 4.7% gain to $106.12 and Brent rose 3% to $108.88 on reports the kingdom cancelled some European crude cargoes \u2014 WTI outrunning Brent narrowed the spread on a Gulf supply shock, which reads as physical tightness rather than headline risk. Refined-product costs reach the CPI basket with a four-to-six-week lag, putting this week's barrel in the November data rather than October's. Updated Sep 16 morning: WTI fell 1.29% to $104.46 and Brent 1.02% to $107.64 on an unexpected build in US crude inventories \u2014 the first decline in a week, and the first move down that came from supply arithmetic rather than diplomacy. The outage is unchanged, so the loss has been offset rather than resolved; a return above $105 would say the build was a weekly artifact."
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "OTHER",
+      "label": "Third-quarter bank earnings open - the test of whether Sep 16's regional selloff was deposit betas or positioning",
+      "tickers": [
+        "KBE",
+        "JPM",
+        "HBAN",
+        "CFG",
+        "GS"
+      ],
+      "note": "Added Sep 16 night: on the day of the hike the SPDR S&P Bank ETF fell 2.6%, its worst session since February 27, with Huntington Bancshares down 5.6% and Citizens Financial 4.8% against JPMorgan's roughly 1%. A four-to-five-times gap between regional and money-center names prices deposit competition and credit at a 4.1% funds rate held through 2027, not net interest margin. Mid-October results either show that in deposit betas and provisions or they do not. The date is indicative of the usual opening week."
     },
     {
       "date": "2026-10-15",
-      "label": "Anthropic IPO roadshow opens (indicative) — potentially the largest listing in history at up to $2T, days ahead of the November midterms",
+      "label": "Anthropic IPO roadshow opens (indicative) \u2014 potentially the largest listing in history at up to $2T, days ahead of the November midterms",
       "kind": "IPO",
       "tickers": [
         "NVDA",
         "MSFT",
         "QQQ"
       ],
-      "note": "Added Sep 14 night: the date is indicative, not scheduled — the timeline moved from September to mid-October at the earliest. A $2 trillion debut would eclipse SpaceX's $1.77 trillion June 2026 listing. The supply side of the AI trade absorbing an offering that size, into a long end that touched 5% on the ten-year in September, is the test no earnings print delivers."
+      "note": "Added Sep 14 night: the date is indicative, not scheduled \u2014 the timeline moved from September to mid-October at the earliest. A $2 trillion debut would eclipse SpaceX's $1.77 trillion June 2026 listing. The supply side of the AI trade absorbing an offering that size, into a long end that touched 5% on the ten-year in September, is the test no earnings print delivers."
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "FOMC",
+      "label": "October FOMC decision (indicative date) - the first test of whether market pricing converges on the 4.1% median or the dots get discounted",
+      "tickers": [
+        "TLT",
+        "SPY",
+        "QQQ",
+        "KBE",
+        "GLD"
+      ],
+      "note": "Added Sep 16 night: the date is indicative pending the published Fed table. Market pricing entered Sep 16 charging roughly 41 bp of total 2026 tightening including that day's 25 bp; the September projections imply another full quarter point this year and no easing through 2027, and 16 of 18 officials see at least one more increase. October pricing moved to roughly 50% by the close. A ten-year back under 4.94% with October odds falling toward 25% would say the press-conference repricing was a one-session reaction; a hold above 5.04% would say the market has accepted 4.1% held for five more quarters."
     },
     {
       "date": "2026-11-03",
-      "label": "US midterm elections — Trump's pledged $5,000 per-adult 'dividend' is contingent on Republicans holding both chambers",
+      "label": "US midterm elections \u2014 Trump's pledged $5,000 per-adult 'dividend' is contingent on Republicans holding both chambers",
       "kind": "GEO",
       "tickers": [
         "TLT",
         "SPY"
       ],
-      "note": "Pointed at about $154.5B of tariff revenue in the first ten months of FY2026; even 100 million recipients would cost $500B. The House is currently projected to go to the Democrats, so it is a tail input — but it lands on a long end that spent September repricing term premium."
+      "note": "Pointed at about $154.5B of tariff revenue in the first ten months of FY2026; even 100 million recipients would cost $500B. The House is currently projected to go to the Democrats, so it is a tail input \u2014 but it lands on a long end that spent September repricing term premium."
     },
     {
       "date": "2026-11-04",
       "kind": "SIGNAL",
-      "label": "Treasury expanded long-end buyback program ends — ops of at least $4B run from September 9",
-      "note": "The count of completed operations is what separates absorbed supply from purchased calm at the long end. Updated Sep 10 night: the 30Y cleared 5.33%, August 18's prior high, and closed at 5.37% — its highest since 2007 — while the program was buying that maturity. The 2007 peak is 5.44%.",
+      "label": "Treasury expanded long-end buyback program ends \u2014 ops of at least $4B run from September 9",
+      "note": "The count of completed operations is what separates absorbed supply from purchased calm at the long end. Updated Sep 10 night: the 30Y cleared 5.33%, August 18's prior high, and closed at 5.37% \u2014 its highest since 2007 \u2014 while the program was buying that maturity. The 2007 peak is 5.44%.",
       "tickers": [
         "TLT"
       ]
     },
     {
       "date": "2026-12-09",
-      "label": "SPCX 180-day IPO lock-up expiry (approx.) — terminal insider/early-investor float unlock",
+      "label": "SPCX 180-day IPO lock-up expiry (approx.) \u2014 terminal insider/early-investor float unlock",
       "kind": "OTHER",
       "tickers": [
         "SPCX"
@@ -185,7 +184,7 @@
     },
     {
       "date": "2027-01-01",
-      "label": "OpenAI IPO — target window H1 2027 after 2026 delay",
+      "label": "OpenAI IPO \u2014 target window H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": [
         "MSFT",

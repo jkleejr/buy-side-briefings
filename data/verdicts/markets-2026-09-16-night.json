@@ -1,0 +1,155 @@
+{
+  "routine": "markets",
+  "date": "2026-09-16",
+  "window": "night",
+  "generated_at": "2026-09-17T00:13:55Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Fed hikes and signals no cuts through 2027; stocks reverse during Warsh's press conference",
+    "label": "Hike delivered and priced; the 2027 median was not. Dow -1.21%, Nasdaq flat, banks worst day since February",
+    "rationale_short": "The Federal Open Market Committee raised the funds rate a quarter point to 3.75%-4.00% on a unanimous 12-0 vote, the first increase since July 2023, and the market treated it as settled for half an hour: the S&P 500 reached roughly 7,618 late in the morning and rose again in the minutes after the statement. The reversal came from the projections and the press conference. The median funds rate now sits at 4.1% at the end of 2026 and 4.1% again at the end of 2027 - one more increase, then a full year with no cuts, with the first decline deferred to 3.9% in 2028 - and Chair Warsh said policy had not been restrictive at 3.50%-3.75%, which implies a quarter point may not have made it so. June's 2026 median was 3.8%, so the committee added a hike and removed a year of easing in the same document; the second is the larger number, and it is priced at the maturity that sets mortgage and corporate borrowing costs. August retail sales, up 1.2% with the control group up 1.4% against an 0.4% estimate, had already removed the growth objection six hours earlier. The S&P 500 closed at 7,551.81, down 0.45%, the Dow lost 1.21% and the Nasdaq Composite finished flat - a dispersion the index level hides, with the SPDR S&P Bank ETF down 2.6% for its worst session since February 27 while Intel rose 7.2% and Microsoft 1.97%. Gold made the repricing legible: a session high of $4,365.57 and a 1.2% loss at $4,240.10 by 3:10 p.m. The ten-year traded as low as 4.94% before closing near 5.01%. Market pricing entered the day at roughly 41 basis points of total 2026 tightening, today's 25 included, against a committee median implying another full quarter point and no relief through 2027; October pricing has moved to roughly 50%. Either that converges on the dots over the next two weeks or the projections get discounted the way June's were. A WTI settle under $100 would take the energy input out of the long end without any diplomacy behind it; a ten-year back under 4.94% would say the press-conference repricing was a one-session reaction rather than a change in the path the market charges for.",
+    "lede_short": "The Fed's quarter-point hike to 3.75%-4.00% was priced; the projections were not. The median funds rate now sits at 4.1% at the end of both 2026 and 2027 - one more increase, then a year with no cuts - and stocks reversed during Warsh's press conference, the S&P closing down 0.45% with banks taking most of the damage. October pricing near 50% is where the market either accepts that path or discounts it.",
+    "supporting_data": [
+      {
+        "label": "The Fed's projections put the median funds rate at 4.1% for both end-2026 and end-2027, easing only to 3.9% in 2028, with 16 of 18 officials seeing at least one more increase this year - June's 2026 median was 3.8%, so the committee added a hike and removed a year of cuts in the same document",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm"
+      },
+      {
+        "label": "Warsh said the Fed \"cannot affect any individual price,\" citing oil and groceries, but will \"ensure that any change in relative prices don't broaden out\" - a chair naming energy as the thing he cannot fix while raising rates against what it does to everything else, a standard that only resolves when the pass-through data arrives",
+        "url": "https://www.cnbc.com/2026/09/16/fed-meeting-today-live-updates.html"
+      },
+      {
+        "label": "August retail sales rose 1.2% to $773.9 billion against an 0.8% estimate, with the control group up 1.4% against 0.4% and 12 of 13 categories higher - the largest gain in five months, landing six hours before the decision and removing the growth objection to a hawkish path",
+        "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+      },
+      {
+        "label": "The SPDR S&P Bank ETF fell 2.6% for its worst session since February 27, with Huntington Bancshares down 5.6% and Citizens Financial 4.8% against JPMorgan's roughly 1% - regionals falling four to five times as far as the largest bank prices deposit competition at a 4.1% funds rate, not the curve",
+        "url": "https://www.local10.com/business/2026/09/16/stocks-give-up-early-gains-and-fall-after-the-fed-hikes-interest-rates/"
+      },
+      {
+        "label": "Gold reached a session high of $4,365.57, up more than 1%, then traded down 1.2% at $4,240.10 by 3:10 p.m. as the dollar strengthened - a $125 round trip inside one afternoon that dates the repricing to the press conference rather than to the statement",
+        "url": "https://www.cnbc.com/2026/09/16/gold-gains-with-fed-rate-decision-in-spotlight.html"
+      },
+      {
+        "label": "Intel rose 7.2% to $104.13 on a report that SK Hynix is in exploratory talks to make memory chips at Intel's Ohio campus, putting part of a delayed $100 billion site to work - SK Hynix said nothing is concluded, so confirmation or denial revalues it rather than the report",
+        "url": "https://www.cnbc.com/2026/09/16/intel-sk-hynix-us-memory-chips.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7551.81,
+      "change_pct": -0.45,
+      "as_of": "2026-09-16T20:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 25978.42,
+      "change_pct": -0.01,
+      "as_of": "2026-09-16T20:00:00.000Z"
+    },
+    "vix": {
+      "level": 17.2,
+      "change_pct": 0.58,
+      "as_of": "2026-09-16T20:15:00.000Z"
+    },
+    "ust10y": {
+      "level": 5.01,
+      "change_bps": 0,
+      "as_of": "2026-09-16T20:00:00.000Z"
+    },
+    "dxy": {
+      "level": 99.696,
+      "change_pct": 0.31,
+      "as_of": "2026-09-16T20:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 5.01,
+      "trigger_above": 5.0,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,500",
+      "value": 7551.81,
+      "trigger_below": 7500,
+      "unit": "index"
+    },
+    {
+      "name": "DXY",
+      "value": 99.696,
+      "trigger_above": 100.0,
+      "unit": "index"
+    },
+    {
+      "name": "Crude Oil (WTI)",
+      "value": 104.0,
+      "trigger_below": 100.0,
+      "unit": "$/bbl"
+    },
+    {
+      "name": "Gold",
+      "value": 4240.1,
+      "trigger_above": 4500,
+      "unit": "$/oz"
+    },
+    {
+      "name": "BTC",
+      "value": 75600,
+      "trigger_below": 75000,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "INTC",
+      "note": "Rose 7.2% to $104.13 on a report that SK Hynix is in exploratory talks to manufacture memory chips at Intel's Ohio campus, which would put part of a delayed $100 billion site to work. SK Hynix said publicly that nothing has been concluded and that it is exploring options, so the confirmation or the denial is what revalues the stock rather than the report. With Microsoft's 1.97% gain it is most of the arithmetic behind the Nasdaq Composite finishing flat while the Dow lost 1.21%.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Reached a session high of $4,365.57, up more than 1%, then traded down 1.2% at $4,240.10 by 3:10 p.m. as the dollar rose 0.31% to 99.696. A $125 round trip inside one afternoon dates the repricing to the press conference rather than to the statement, and makes gold the cleanest single measure of what the projections changed.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "CL=F",
+      "note": "Fell roughly 2% to about $104 after the EIA reported crude inventories down 640,000 barrels to 423.4 million for the week ended September 11 - a draw, not the 7.1 million build the API had previewed - with distillate up 1.6 million to 107.9 million but still historically tight. Retail diesel set records on the day of the decision. The Saudi East-West line remains shut since September 11 with repairs estimated at three to five weeks.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "Traded between roughly $75,000 and $76,500 after the decision and was near $75,600 into the evening, with a session low of $74,913 and ether near $2,376 in a $2,370-$2,430 range. The $75,000 area that has held since August survived both a delivered hike and a hawkish projection set, which is the outcome this morning's read named as the sign the rate and the failed Clarity Act vote were discounted in advance.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "^VIX",
+      "note": "Closed at 17.20, up 0.58%, on a session in which the Dow fell 1.21% and the S&P 500 reversed roughly 95 points from its intraday high. A volatility index barely moving through that is a market repricing a rate path rather than pricing a risk event, and it leaves Friday's quarterly expiration as the larger positioning date.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Market pricing against the committee's 4.1% median",
+      "thesis": "The meeting resolved the rate and reopened the path. Market pricing entered the day at roughly 41 basis points of total 2026 tightening, today's 25 included, while the Summary of Economic Projections implies another full quarter point this year and a funds rate held at 4.1% through the whole of 2027, with the first decline deferred to 3.9% in 2028. Sixteen of eighteen officials see at least one more increase this year and four see two. What is forming is a convergence trade in one direction or the other: October pricing has already moved to roughly 50% from a market that was charging for almost no further tightening this morning. The counter-evidence is that June's dots were discounted and proved close to right only because an energy shock intervened, so the committee's record at this horizon is not itself an argument.",
+      "entry": "4.94% and 5.04% bracket the ten-year's range on the day; 5.01% is the closing reference and roughly 50% is what October now costs on CME FedWatch.",
+      "invalidation": "A ten-year back under 4.94% with October pricing falling back toward 25% would say the press-conference repricing was a one-session reaction; a hold above 5.04% would say the market has accepted a 4.1% rate held through 2027.",
+      "horizon": "Two weeks, into the October meeting"
+    },
+    {
+      "asset": "Distillate and the second-round effects Warsh named",
+      "thesis": "Warsh set the standard himself: the Fed cannot affect the price of oil, but will act to stop a relative price change from broadening out. That makes refined product, not crude, the observable. EIA reported crude stocks down 640,000 barrels to 423.4 million and distillate up 1.6 million to 107.9 million for the week ended September 11, against an API preview of a 7.1 million crude build that did not materialise. Retail diesel set records on the day of the decision. Refined-product costs reach the CPI basket with a four-to-six-week lag, which puts this week's barrel in the data the committee reads in November rather than October, and the Saudi East-West line is still shut with repairs estimated at three to five weeks.",
+      "entry": "$100 below and $105 above are the levels that define it; about $104 is the closing reference against Tuesday's $106.12 settle. Weekly distillate stocks and the pipeline restart announcement are the observables.",
+      "invalidation": "A WTI settle under $100 takes the energy input out of the long end without any diplomacy behind it; distillate drawing again with crude above $105 puts a second month of pass-through into the November data.",
+      "horizon": "Two to six weeks, through the October CPI reporting period"
+    },
+    {
+      "asset": "Regional banks against money-center banks",
+      "thesis": "The Dow's 1.21% loss against a flat Nasdaq Composite was a sector move, not an index move, and the dispersion inside financials is sharper than the dispersion across the market. The SPDR S&P Bank ETF fell 2.6% for its worst session since February 27, with Huntington Bancshares down 5.6% and Citizens Financial 4.8% while JPMorgan fell roughly 1%. A four-to-five-times gap between regional and money-center names on a day the funds rate went up prices deposit competition and credit rather than net interest margin - the reading that a rate held near 4.1% for five more quarters costs a regional funding base more than it earns on the asset side. Against that, a single session after a Fed decision is a thin basis for a structural claim, and the same names rallied on the June projections.",
+      "entry": "The 2.6% ETF decline and the 5.6%/4.8%/1.0% spread across Huntington, Citizens and JPMorgan are the reference points.",
+      "invalidation": "Third-quarter results in mid-October either show the deposit betas and credit provisions this session priced, or they do not; regionals recovering the gap against JPMorgan before then would place the move in positioning.",
+      "horizon": "Four weeks, into third-quarter bank earnings"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-16-night.mdx"
+}
