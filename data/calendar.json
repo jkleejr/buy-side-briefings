@@ -1,32 +1,8 @@
 {
   "events": [
     {
-      "date": "2026-09-17",
-      "label": "Bank of England decision \u2014 the second of three central bank decisions in three days",
-      "kind": "OTHER",
-      "tickers": [
-        "FXB",
-        "TLT",
-        "SPY"
-      ],
-      "note": "Added Sep 14 night: the Fed decides Wednesday, the BoE Thursday and the BoJ Friday. Three decisions inside three sessions is what turns a US energy shock into a global tightening impulse or leaves it domestic. The UK is importing the same crude: Brent above $108 with no Hormuz meeting scheduled."
-    },
-    {
-      "date": "2026-09-17",
-      "time_et": "8:30 AM",
-      "kind": "MACRO",
-      "label": "August housing starts, weekly jobless claims and the Philadelphia Fed survey - the first US activity data priced against the new projections",
-      "tickers": [
-        "XHB",
-        "ITB",
-        "TLT",
-        "SPY"
-      ],
-      "note": "Added Sep 16 night: Lennar reported the same evening that its operating environment deteriorated as mortgage rates rose through the quarter, at roughly 6.8% on the thirty-year at quarter end, with new orders down 4% and the average sale price down to $371,000 from $389,000. Housing starts is the industry-wide check on whether that is company-specific or the shape of the sector at a funds rate the committee now projects at 4.1% through 2027."
-    },
-    {
       "date": "2026-09-18",
-      "label": "Bank of Japan policy decision \u2014 markets pricing a September hike after Deputy Governor Himino flagged upside inflation risks",
+      "label": "Bank of Japan policy decision — markets pricing a September hike after Deputy Governor Himino flagged upside inflation risks",
       "kind": "OTHER",
       "tickers": [
         "JPY=X",
@@ -34,11 +10,11 @@
         "TLT",
         "QQQ"
       ],
-      "note": "Added Sep 4 morning: the yen reached 155.28 per dollar on Sep 3, its strongest in a month, on BOJ hike bets rather than on the Fed alone. The decision lands two days after the Sep 15-16 FOMC, so the funding currency behind a large share of global duration positioning reprices twice inside four sessions. A yen driven by Japanese tightening keeps appreciating on a hot US print as well as a soft one; USD/JPY back above 158 would say the BOJ leg was overstated."
+      "note": "Added Sep 4 morning: the yen reached 155.28 per dollar on Sep 3, its strongest in a month, on BOJ hike bets rather than on the Fed alone. The decision lands two days after the Sep 15-16 FOMC, so the funding currency behind a large share of global duration positioning reprices twice inside four sessions. A yen driven by Japanese tightening keeps appreciating on a hot US print as well as a soft one; USD/JPY back above 158 would say the BOJ leg was overstated. Updated Sep 17 night: 97% of surveyed economists expect a 25bp move to 1.25%, the highest policy rate since April 1995, which makes the signalled path the variable rather than the decision. USD/JPY at 155.37 and the DXY at 100.20 after clearing 100 for the first time in nearly seven weeks."
     },
     {
       "date": "2026-09-18",
-      "label": "Rescheduled Iran-Gulf Hormuz meeting \u2014 NO date announced; Sep 18 is an indicative marker, not a scheduled event",
+      "label": "Rescheduled Iran-Gulf Hormuz meeting — NO date announced; Sep 18 is an indicative marker, not a scheduled event",
       "kind": "SIGNAL",
       "tickers": [
         "CL=F",
@@ -46,24 +22,36 @@
         "SPY",
         "TLT"
       ],
-      "note": "Added Sep 14 morning: Oman postponed the Sep 14 Salalah meeting at Saudi Arabia's request and set no replacement date. Until one is announced there is no scheduled event that can take war premium out of crude, and Saudi Arabia's East-West pipeline \u2014 roughly 5M b/d to the Red Sea \u2014 is still shut after the Sep 10-11 drone strikes from Iraq. A WTI settle back below $100 would say the premium is deflating without a framework; above $105 puts a second month of energy pass-through into the data the Fed sees after Wednesday. Updated Sep 14 night: still no date. Brent ran above $109 intraday to about $108.15 and WTI to roughly $102.64, between the $100 and $105 settles this entry named. The dislocation to watch is that XLE reversed from up 1.2% premarket to down 0.94% at the close on that rally, with utilities off 1.34%."
+      "note": "Added Sep 14 morning: Oman postponed the Sep 14 Salalah meeting at Saudi Arabia's request and set no replacement date. Until one is announced there is no scheduled event that can take war premium out of crude, and Saudi Arabia's East-West pipeline — roughly 5M b/d to the Red Sea — is still shut after the Sep 10-11 drone strikes from Iraq. A WTI settle back below $100 would say the premium is deflating without a framework; above $105 puts a second month of energy pass-through into the data the Fed sees after Wednesday. Updated Sep 14 night: still no date. Brent ran above $109 intraday to about $108.15 and WTI to roughly $102.64, between the $100 and $105 settles this entry named. The dislocation to watch is that XLE reversed from up 1.2% premarket to down 0.94% at the close on that rally, with utilities off 1.34%."
     },
     {
       "date": "2026-09-18",
       "kind": "OTHER",
-      "label": "Quarterly options expiration \u2014 the largest expiry of the quarter, landing the session after the Fed and on the Bank of Japan decision",
+      "label": "Quarterly options expiration - more than $1 trillion of notional exposure, the largest single-day unwind of 2026, on the final day of the BOJ meeting",
       "tickers": [
         "SPY",
         "QQQ",
         "IWM"
       ],
-      "note": "Added Sep 15 night: the VIX fell to 17.10 from 17.29 on a session the S&P 500 lost 0.45%, so positions are being reduced into the decision rather than hedged. Expiry two days later removes whatever gamma is pinning the index, which is why the days after a Fed meeting that falls in expiry week often move more than the meeting itself."
+      "note": "Updated Sep 17 night: the VIX fell to 15.42 into the expiry, pricing calm one session before the options positioning holding the index steady is removed. It lands two days after the Fed's first hike in three years and on the BOJ decision, so the funding currency reprices in the same session."
+    },
+    {
+      "date": "2026-09-21",
+      "kind": "SIGNAL",
+      "label": "Saudi East-West pipeline half-capacity restart window closes - Aramco said 'within days' on Sep 17",
+      "tickers": [
+        "USO",
+        "XLE",
+        "TLT",
+        "SPY"
+      ],
+      "note": "Added Sep 17 night: the first of the restart's two stages. A confirmed partial resumption plus a WTI settle under $100 takes the energy input out of the long end without any diplomacy behind it; silence past this window, or a settle back above $105, says the bypass is slower than announced. Falls on the first session after the quarterly expiry."
     },
     {
       "date": "2026-09-22",
       "time_et": "9:45 AM",
       "kind": "MACRO",
-      "label": "Flash September PMIs (US, euro zone, UK) \u2014 the first broad activity reading covering the period since crude cleared $100",
+      "label": "Flash September PMIs (US, euro zone, UK) — the first broad activity reading covering the period since crude cleared $100",
       "tickers": [
         "SPY",
         "TLT",
@@ -73,7 +61,7 @@
     },
     {
       "date": "2026-09-25",
-      "label": "Anthropic public S-1 expected \u2014 risk factors are the first document pricing the company's own call for slower capability growth",
+      "label": "Anthropic public S-1 expected — risk factors are the first document pricing the company's own call for slower capability growth",
       "kind": "IPO",
       "tickers": [
         "NVDA",
@@ -81,13 +69,13 @@
         "CRWD",
         "QQQ"
       ],
-      "note": "Added Sep 14 night: the filing precedes a mid-October roadshow supporting a listing valued at up to $2 trillion, with Morgan Stanley, Goldman Sachs and JPMorgan leading. It lands weeks after CEO Dario Amodei argued publicly for slowing the rate at which model capabilities improve \u2014 a statement that on Sep 14 cost Marvell 6.00%, the Kospi 3.26% and SoftBank 10%, while cybersecurity rose 13-15%. The same session identified Anthropic as the customer behind a six-year, $13.7 billion compute contract, so the argument and the spending are not yet in conflict. The S-1 language is where they have to be reconciled in writing."
+      "note": "Added Sep 14 night: the filing precedes a mid-October roadshow supporting a listing valued at up to $2 trillion, with Morgan Stanley, Goldman Sachs and JPMorgan leading. It lands weeks after CEO Dario Amodei argued publicly for slowing the rate at which model capabilities improve — a statement that on Sep 14 cost Marvell 6.00%, the Kospi 3.26% and SoftBank 10%, while cybersecurity rose 13-15%. The same session identified Anthropic as the customer behind a six-year, $13.7 billion compute contract, so the argument and the spending are not yet in conflict. The S-1 language is where they have to be reconciled in writing."
     },
     {
       "date": "2026-09-25",
       "time_et": "10:00 AM",
       "kind": "MACRO",
-      "label": "Final September consumer sentiment \u2014 confirms or revises the 4.6% year-ahead inflation expectation",
+      "label": "Final September consumer sentiment — confirms or revises the 4.6% year-ahead inflation expectation",
       "tickers": [
         "TLT",
         "GLD",
@@ -106,18 +94,6 @@
       ]
     },
     {
-      "date": "2026-09-30",
-      "kind": "SIGNAL",
-      "label": "Saudi East-West pipeline restart window \u2014 shut since Sep 11; Washington says days, independent analysts reading satellite images say weeks",
-      "tickers": [
-        "CL=F",
-        "XLE",
-        "TLT",
-        "SPY"
-      ],
-      "note": "Added Sep 15 morning: the 1,200 km line carries roughly 4 million barrels a day from Abqaiq to Yanbu and was the workaround for the Hormuz blockade, so its loss removes the escape route rather than adding a second problem. About 4% of global supply is at risk and the kingdom could exhaust exportable oil within days. Sep 30 is an indicative marker, not an announced restart date. A confirmed restart is the single event that takes WTI back under $100 without any diplomacy behind it, and it is the input currently setting the long end of the Treasury curve. Updated Sep 15 night: WTI cleared $105 for a 4.7% gain to $106.12 and Brent rose 3% to $108.88 on reports the kingdom cancelled some European crude cargoes \u2014 WTI outrunning Brent narrowed the spread on a Gulf supply shock, which reads as physical tightness rather than headline risk. Refined-product costs reach the CPI basket with a four-to-six-week lag, putting this week's barrel in the November data rather than October's. Updated Sep 16 morning: WTI fell 1.29% to $104.46 and Brent 1.02% to $107.64 on an unexpected build in US crude inventories \u2014 the first decline in a week, and the first move down that came from supply arithmetic rather than diplomacy. The outage is unchanged, so the loss has been offset rather than resolved; a return above $105 would say the build was a weekly artifact. Updated Sep 17 morning: US Energy Secretary Chris Wright called the outage a brief and temporary interruption that will be measured in days, and WTI fell 3.2% to settle at $102.43 with Brent down 2.7% to $105.83 — the first move that repriced the outage itself rather than weekly inventories. The line is still shut and independent analysts reading satellite images of the struck pumping station estimate weeks, so the restart announcement, not the daily price, is the event. Sep 30 remains an indicative marker."
-    },
-    {
       "date": "2026-10-13",
       "kind": "OTHER",
       "label": "Third-quarter bank earnings open - the test of whether Sep 16's regional selloff was deposit betas or positioning",
@@ -132,14 +108,26 @@
     },
     {
       "date": "2026-10-15",
-      "label": "Anthropic IPO roadshow opens (indicative) \u2014 potentially the largest listing in history at up to $2T, days ahead of the November midterms",
+      "label": "Anthropic IPO roadshow opens (indicative) — potentially the largest listing in history at up to $2T, days ahead of the November midterms",
       "kind": "IPO",
       "tickers": [
         "NVDA",
         "MSFT",
         "QQQ"
       ],
-      "note": "Added Sep 14 night: the date is indicative, not scheduled \u2014 the timeline moved from September to mid-October at the earliest. A $2 trillion debut would eclipse SpaceX's $1.77 trillion June 2026 listing. The supply side of the AI trade absorbing an offering that size, into a long end that touched 5% on the ten-year in September, is the test no earnings print delivers."
+      "note": "Added Sep 14 night: the date is indicative, not scheduled — the timeline moved from September to mid-October at the earliest. A $2 trillion debut would eclipse SpaceX's $1.77 trillion June 2026 listing. The supply side of the AI trade absorbing an offering that size, into a long end that touched 5% on the ten-year in September, is the test no earnings print delivers."
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "SIGNAL",
+      "label": "Saudi East-West pipeline returns to full capacity (approx.) - Aramco targets full capability on the 7 million b/d line roughly six weeks from Sep 16, after restoring about half within days via a bypass",
+      "tickers": [
+        "CL=F",
+        "XLE",
+        "TLT",
+        "SPY"
+      ],
+      "note": "Updated Sep 17 night: the restart is two events, not one. Aramco is routing around the damaged section to resume roughly half the line within days, and targets full capability in about six weeks after three pumping stations were damaged in the Sep 10 drone attack. WTI settled at $101.91 on the news but is still up more than 18% on the month, so the market has priced the first stage and not the second. A WTI settle under $100 removes the energy input that built a 5% ten-year; above $105 says the bypass is slower or smaller than announced."
     },
     {
       "date": "2026-10-28",
@@ -156,19 +144,19 @@
     },
     {
       "date": "2026-11-03",
-      "label": "US midterm elections \u2014 Trump's pledged $5,000 per-adult 'dividend' is contingent on Republicans holding both chambers",
+      "label": "US midterm elections — Trump's pledged $5,000 per-adult 'dividend' is contingent on Republicans holding both chambers",
       "kind": "GEO",
       "tickers": [
         "TLT",
         "SPY"
       ],
-      "note": "Pointed at about $154.5B of tariff revenue in the first ten months of FY2026; even 100 million recipients would cost $500B. The House is currently projected to go to the Democrats, so it is a tail input \u2014 but it lands on a long end that spent September repricing term premium."
+      "note": "Pointed at about $154.5B of tariff revenue in the first ten months of FY2026; even 100 million recipients would cost $500B. The House is currently projected to go to the Democrats, so it is a tail input — but it lands on a long end that spent September repricing term premium."
     },
     {
       "date": "2026-11-04",
       "kind": "SIGNAL",
-      "label": "Treasury expanded long-end buyback program ends \u2014 ops of at least $4B run from September 9",
-      "note": "The count of completed operations is what separates absorbed supply from purchased calm at the long end. Updated Sep 10 night: the 30Y cleared 5.33%, August 18's prior high, and closed at 5.37% \u2014 its highest since 2007 \u2014 while the program was buying that maturity. The 2007 peak is 5.44%.",
+      "label": "Treasury expanded long-end buyback program ends — ops of at least $4B run from September 9",
+      "note": "The count of completed operations is what separates absorbed supply from purchased calm at the long end. Updated Sep 10 night: the 30Y cleared 5.33%, August 18's prior high, and closed at 5.37% — its highest since 2007 — while the program was buying that maturity. The 2007 peak is 5.44%.",
       "tickers": [
         "TLT"
       ]
@@ -184,7 +172,7 @@
     },
     {
       "date": "2026-12-09",
-      "label": "SPCX 180-day IPO lock-up expiry (approx.) \u2014 terminal insider/early-investor float unlock",
+      "label": "SPCX 180-day IPO lock-up expiry (approx.) — terminal insider/early-investor float unlock",
       "kind": "OTHER",
       "tickers": [
         "SPCX"
@@ -193,7 +181,7 @@
     },
     {
       "date": "2027-01-01",
-      "label": "OpenAI IPO \u2014 target window H1 2027 after 2026 delay",
+      "label": "OpenAI IPO — target window H1 2027 after 2026 delay",
       "kind": "OTHER",
       "tickers": [
         "MSFT",

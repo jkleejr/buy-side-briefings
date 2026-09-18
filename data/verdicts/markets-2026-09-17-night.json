@@ -1,0 +1,166 @@
+{
+  "routine": "markets",
+  "date": "2026-09-17",
+  "window": "night",
+  "generated_at": "2026-09-18T00:15:15Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Stocks erase the Fed-day loss after Saudi Arabia finds a way around its damaged pipeline",
+    "label": "Oil drove the recovery, not the Fed: WTI settled $101.91, the ten-year fell to 4.949%, S&P 500 +1.17%",
+    "rationale_short": "The day after the first rate increase in three years, the market unwound the whole reaction to it. The S&P 500 rose 1.17% to 7,640.82, the Dow 316.14 points to 51,778.04 and the Nasdaq Composite 1.56%, while the ten-year yield fell to 4.949% - back under the 5% it broke after Chair Warsh's press conference. Nothing in the policy path changed. What changed is that Saudi Aramco found a way around the damage: it is bypassing a wrecked section of the East-West pipeline to restore roughly half of the 7 million barrel-a-day line within days, and is targeting full capability in about six weeks. WTI settled at $101.91 and Brent at $104.82. That resolves the days-against-weeks argument in both directions at once, and the half that arrives first is the half the front of the curve was pricing. The evidence that this was an energy repricing rather than a growth repricing came from the labour data: initial claims fell 10,000 to 196,000 against a 207,000 forecast, with continuing claims down 39,000 to 1.73 million, and the ten-year fell about seven basis points anyway. A print that strong lifted yields repeatedly this summer. When data that strong cannot lift the long end, the long end is pricing something other than growth. Duration led the equity move - the Nasdaq's 1.56% against the Dow's 0.61% inverts Wednesday's ordering exactly - and AMD rose 7% in a third consecutive session of semiconductor gains with no earnings, guidance change or rating action behind it. The Bank of England held Bank Rate at 3.75% on a 6-3 vote with three members voting for 4%, its minutes citing the same crude and refined energy prices. What has come out of the oil price is the tail risk, not the shock: WTI is still up more than 18% on the month, the full restart is six weeks away, and the committee's 4.1% median for both end-2026 and end-2027 is untouched by any of this week's rally. A WTI settle back above $105, or a ten-year back above Wednesday's 5.016% close, would say the bypass is slower or smaller than announced and would return the energy input to the long end.",
+    "lede_short": "The day after the Fed's first hike in three years, the market took the whole reaction back - the S&P 500 up 1.17% to 7,640.82, the ten-year down to 4.949% - and oil did it, not the Fed: Aramco can bypass the damaged Saudi pipeline to restore half its 7 million barrel-a-day capacity within days, though full capability is six weeks out. Jobless claims came in at 196,000 against a 207,000 forecast and yields fell anyway. A WTI settle back above $105 would undo it.",
+    "supporting_data": [
+      {
+        "label": "Saudi Aramco is bypassing a damaged section of the East-West pipeline to resume about half its capacity within days, and targets full capability on the 7 million barrel-a-day link in roughly six weeks after three pumping stations were damaged - the days-against-weeks argument resolves in both directions at once, and the half that arrives first is the half the front of the curve was pricing",
+        "url": "https://gcaptain.com/oil-extends-drop-as-saudi-arabia-moves-to-restore-vital-pipeline/"
+      },
+      {
+        "label": "Initial jobless claims fell 10,000 to 196,000 for the week ended September 12 against a 207,000 forecast, with continuing claims down 39,000 to 1.73 million - a labour print that strong lifted yields repeatedly this summer, and the ten-year fell about seven basis points instead, which locates the long end's driver in energy and term premium rather than growth",
+        "url": "https://www.dol.gov/newsroom/releases/eta"
+      },
+      {
+        "label": "WTI settled at $101.91 and Brent at $104.82, down 52 cents and $1.01, with Saudi Arabia routing extra cargoes to Asian refiners by ship-to-ship transfer outside Hormuz near Oman's Sohar port - US crude is still up more than 18% on the month, so what has come out of the price is the tail risk rather than the shock itself",
+        "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html"
+      },
+      {
+        "label": "The Bank of England held Bank Rate at 3.75% on a 6-3 vote, with Greene, Mann and Pill again voting for 4%, and the minutes cited Middle East conflict pushing crude and refined energy prices further above pre-conflict levels - the same input reaching a second central bank, three votes from moving, with UK CPI at 3.1% and expected to rise further",
+        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026"
+      },
+      {
+        "label": "Generac rose about 18% on a long-term agreement to supply backup generators for Amazon's data centers, with $2.4 billion of initial deliveries across 2027 and 2028, up to $8 billion over the life of the deal, and a warrant letting Amazon buy 1.69 million shares at $200.93 - the second supplier in ten days repriced by the same buyer on the same equity-warrant structure, after Qualcomm's",
+        "url": "https://www.cnbc.com/2026/09/17/generac-shares-surge-on-amazon-deal-wall-street-thinks-it-has-more-to-go-.html"
+      },
+      {
+        "label": "More than $1 trillion of notional options exposure expires Friday in the quarterly triple witching, the largest single-day unwind of 2026, on the final day of the Bank of Japan's meeting - the VIX fell to 15.42 into it, so the calm is being priced one session before the mechanism holding the index steady is removed",
+        "url": "https://www.ebc.com/forex/september-triple-witching-2026-fed-boj-expiry"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7640.82,
+      "change_pct": 1.17,
+      "as_of": "2026-09-17T20:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 26382.0,
+      "change_pct": 1.56,
+      "as_of": "2026-09-17T20:00:00.000Z"
+    },
+    "vix": {
+      "level": 15.42,
+      "change_pct": -10.35,
+      "as_of": "2026-09-17T20:15:00.000Z"
+    },
+    "ust10y": {
+      "level": 4.949,
+      "change_bps": -7,
+      "as_of": "2026-09-17T20:00:00.000Z"
+    },
+    "dxy": {
+      "level": 100.2,
+      "change_pct": -0.1,
+      "as_of": "2026-09-17T20:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 4.949,
+      "trigger_above": 5.016,
+      "unit": "%"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 5.3,
+      "trigger_above": 5.44,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,500",
+      "value": 7640.82,
+      "trigger_below": 7500,
+      "unit": "index"
+    },
+    {
+      "name": "DXY",
+      "value": 100.2,
+      "trigger_above": 100.36,
+      "unit": "index"
+    },
+    {
+      "name": "Crude Oil (WTI)",
+      "value": 101.91,
+      "trigger_below": 100.0,
+      "unit": "$/bbl"
+    },
+    {
+      "name": "Gold",
+      "value": 4307.31,
+      "trigger_above": 4500,
+      "unit": "$/oz"
+    },
+    {
+      "name": "BTC",
+      "value": 76500,
+      "trigger_below": 75000,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CL=F",
+      "note": "Settled at $101.91, down 52 cents, with Brent at $104.82. Saudi Aramco is bypassing the damaged section of the East-West pipeline to restore roughly half of its 7 million barrel-a-day capacity within days, and targets full capability in about six weeks after three pumping stations were damaged. Saudi Arabia is also shuttling extra cargoes to Asian refiners outside Hormuz near Oman's Sohar port. US crude remains up more than 18% on the month, so the price has given back the tail risk rather than the shock. A settle under $100 removes the energy input from the long end; a settle above $105 says the bypass is slower or smaller than announced.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Rose 7% to about $549, leading a third consecutive session of semiconductor gains, with Broadcom up 3% and Nvidia 2%. No earnings, guidance change or rating action sits behind the move; it is the highest-beta large-cap expression of a rally caused by the ten-year falling back under 5%. AMD said separately it is working with SiFive to tune its ROCm software for RISC-V datacenter servers, which is strategy rather than the day's trigger.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "Rose about 2% and was the buyer behind two of the day's single-name moves. Amazon signed a long-term agreement for Generac backup generators worth $2.4 billion of initial deliveries across 2027-2028 and up to $8 billion over the deal's life, taking a warrant for 1.69 million Generac shares at $200.93 with more than 300,000 vesting immediately and the rest against purchases through 2033. It holds a comparable warrant for 25 million Qualcomm shares at $161.26 from the September 8 datacenter agreement. Amazon is now paying for both the silicon and the power behind its buildout partly in supplier equity.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GNRC",
+      "note": "Rose about 18% to roughly $207 after opening 27.8% higher, on the Amazon backup-generator agreement disclosed in a September 16 SEC filing. The $8 billion figure is a ceiling over the life of the deal rather than a contracted amount, and the warrant tranches vest against actual purchases running through 2033, so the delivery schedule rather than the headline number is what determines how much of the revaluation is earned.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "INTC",
+      "note": "Rose about 3.2% on price-target raises, with the SK Hynix report that drove Wednesday's 7.2% gain still neither confirmed nor denied by either company. Two sessions of gains now rest on an unconfirmed lease of part of the Ohio campus for memory production, which Reuters reported could draw opposition from the South Korean government on technology-sensitivity grounds. A denial is what takes the move back.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Rose about 1% to $4,307.31, recovering most of Wednesday's $125 intraday round trip as the ten-year fell back under 5% and the dollar came off a seven-week high of 100.36. Bullion tracking the real-rate move rather than the funds rate is consistent with the rest of the session, in which the delivered hike changed nothing and the energy input changed everything.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "The Saudi East-West pipeline restart, now two events rather than one",
+      "thesis": "Wednesday's recovery priced the US Energy Secretary's estimate of days against independent analysts' estimate of weeks. Thursday delivered both: Aramco can route around the damaged section and restore roughly half the 7 million barrel-a-day line within days, and needs about six weeks to return it to full capability after three pumping stations were damaged. Half the capacity on the near timeline is enough to take the tail risk out of the front of the curve, which is what WTI's settle at $101.91 reflects; the six weeks is why US crude is still 18% higher on the month. What is forming is a market that has priced the first half of a two-stage repair, with the second stage unpriced and unverified. The counter-evidence is the physical workaround already running: Saudi ship-to-ship transfers to Asian refiners outside Hormuz are doing part of the pipeline's job independently of the repair schedule.",
+      "entry": "$100 below and $105 above define it, against a $101.91 settle. The partial-restart confirmation and weekly EIA distillate stocks are the observables.",
+      "invalidation": "A confirmed partial resumption plus a WTI settle under $100 removes the energy input that built a 5% ten-year; a settle back above $105 says the bypass is slower or smaller than announced and returns that input to the long end.",
+      "horizon": "Days for the first half, late October for the remainder"
+    },
+    {
+      "asset": "The Bank of Japan decision landing inside the year's largest options expiry",
+      "thesis": "A 25 basis point move to 1.25%, the highest policy rate since April 1995, is expected by 97% of surveyed economists, which makes the statement and the signalled path the variable rather than the decision itself. It lands on the same session as a quarterly triple witching of more than $1 trillion notional, the largest single-day unwind of 2026, two days after the Fed's first hike in three years. The funding currency behind a large share of global duration positioning therefore reprices in the same session that removes whatever options positioning has been holding the index steady. USD/JPY sits at 155.37 and the DXY at 100.20, having cleared 100 for the first time in nearly seven weeks and pulled back from 100.36. The VIX at 15.42 prices calm one session before that mechanism is withdrawn.",
+      "entry": "1.25% is the expected BOJ level; 155.37 on USD/JPY and 100.36 on the DXY are the currency references. Reuters-polled forecasts put the path at 1.5% by end-March and 1.75% in the second quarter of 2027.",
+      "invalidation": "A hold, or a hike delivered with no further tightening signalled, moves the dollar leg against current positioning; a DXY break above 100.36 with the ten-year still under 5% would separate the currency move from the yield move.",
+      "horizon": "One session, through Friday's expiration"
+    },
+    {
+      "asset": "Whether the energy shock has reached the price and labour data",
+      "thesis": "Chair Warsh's stated standard is not the level of oil, which he says the Fed cannot set, but whether the shock produces second and third order effects. Nothing in Thursday's session tested that. Claims at 196,000 against a 207,000 forecast covered a week containing Labor Day, when the series is known to fluctuate, so the strength of the print is not yet established. Flash September PMIs on the 22nd carry the first prices-paid readings covering the period after the hike, and retail diesel set records the week of the decision. What is forming is a gap between a market that has priced the energy input out of the long end and a data calendar that has not yet reported whether it passed through. The committee's median of 4.1% for both end-2026 and end-2027 is untouched by any of this week's move.",
+      "entry": "4.949% on the ten-year against Wednesday's 5.016% close brackets the range. The PMI prices-paid components, next Thursday's claims and the EIA distillate series are the observables.",
+      "invalidation": "A prices-paid reading that rises with the September crude average, or claims holding near 196,000 without the Labor Day week, argues the committee's median rather than the market's discount of it; a soft PMI with falling prices paid does the reverse.",
+      "horizon": "One week, into the flash PMIs and the following claims print"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-17-night.mdx"
+}
