@@ -81,11 +81,11 @@ The rule now is one owner per window:
 
 **Branches (2026-09-18):** `deploy` is the only branch anything writes to —
 every routine pushes there and Vercel publishes it as production. `main` is
-GitHub's default branch and is a mirror: `.github/workflows/sync-main.yml`
-fast-forwards it after every push to `deploy`, and `vercel.json` tells Vercel
-not to build it. Nothing and no one pushes to `main` directly. The other
-branches that used to exist were merged or, for the 2026-07-21 snapshot,
-kept as the tag `archive/main-2026-07-21`.
+GitHub's default branch and is updated by hand only, when the owner decides to
+fast-forward it to `deploy` (`git push origin origin/deploy:main`); no routine
+and no automation touches it. `vercel.json` tells Vercel not to build `main`.
+The other branches that used to exist were merged or, for the 2026-07-21
+snapshot, kept as the tag `archive/main-2026-07-21`.
 
 The visible payoff: the home page headline and the report a reader clicks into
 always come from the same run, and a weekday morning deploys once instead of
