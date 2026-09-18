@@ -1,0 +1,161 @@
+{
+  "routine": "markets",
+  "date": "2026-09-18",
+  "window": "morning",
+  "generated_at": "2026-09-18T12:18:50Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "The Bank of Japan hiked to a 31-year high and the yen fell instead of firming",
+    "label": "A dovish hike: policy rate 1.25% on a 7-2 vote, yen to 157.09, JGB yields lower, Nikkei +1.51%",
+    "rationale_short": "The Bank of Japan lifted its policy rate 25 basis points to 1.25%, the highest since 1995, and every Japanese market moved against the textbook response to tightening. The yen weakened as much as 0.7% to 157.09 per dollar, the ten-year JGB yield slipped to about 2.95% in a third straight decline, and the Nikkei 225 closed 1.51% higher at 65,102. The 7-2 vote is why: board members Toichiro Asada and Ayano Sato, both reflationists appointed this year by Prime Minister Takaichi, dissented in favour of a hold, which told the market the path is shallower than the level. Roughly 90% of surveyed economists had already forecast the 25 basis point move, so the division rather than the decision was the new information. The consequence for US markets is that the currency behind a large share of global carry funding did not get dearer this week, two days after the Fed's first increase in three years. Both of this week's tightenings have now landed without global funding conditions tightening: the ten-year is back under 5% from Wednesday's 5.016% close, the yen is cheaper to borrow than it was, and crude is roughly $8 off its September 14 high. The policy rates went up and the cost of carrying risk did not. That cuts two ways. US policy has not softened alongside them - CME FedWatch puts October 28 hike odds near 55% with an 87% chance of at least one more this year - and a yen through 157 reopens the intervention question that this hike was supposed to settle, given that Tokyo and Washington intervened jointly to support the currency this month. WTI at $100.04 is sitting exactly on the level Thursday's report named as the point at which the energy input leaves the long end, and Aramco's window for restoring half the East-West pipeline closes Monday. A ten-year back above 5.016%, or a WTI settle above $105, restores that input; USD/JPY through 158 puts intervention back on the table with the policy tool already spent.",
+    "lede_short": "The Bank of Japan raised its policy rate to 1.25%, the highest since 1995, and the yen fell to 157.09, JGB yields slipped to 2.95% and the Nikkei rose 1.51% - all three against the textbook response, because the 7-2 vote said the path is shallower than the level. Both of this week's hikes have landed without global funding tightening. USD/JPY through 158, or a ten-year back above 5.016%, would change that.",
+    "supporting_data": [
+      {
+        "label": "The Bank of Japan raised its policy rate 25 basis points to 1.25%, its highest since 1995, on a 7-2 vote with Toichiro Asada and Ayano Sato dissenting in favour of a hold - roughly 90% of surveyed economists expected the move, so the two dissents rather than the hike were the new information, and both dissenters are reflationists appointed this year",
+        "url": "https://www.cnbc.com/2026/09/18/japan-raises-rates-30-year-high-yen-jgb.html"
+      },
+      {
+        "label": "The yen fell as much as 0.7% to 157.09 per dollar, the ten-year JGB yield slipped to about 2.95% and the Nikkei 225 gained 966 points to close at 65,102 - a currency that weakens on its own rate rise is pricing the guidance rather than the decision, which leaves yen-funded positions in foreign assets cheaper to hold rather than costlier",
+        "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html"
+      },
+      {
+        "label": "WTI traded at $100.04 and Brent at $102.41, both lower for a third straight session and Brent more than $5 below its September 14 high near $108, after Saudi Arabia signalled half the East-West pipeline's capacity returns within days - $100 is the exact level Thursday's report named as the point at which the energy input leaves the long end, and crude is sitting on it before the bell",
+        "url": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html"
+      },
+      {
+        "label": "CME FedWatch put the probability of a further 25 basis point increase at the October 28 meeting near 55%, with an 87% chance of at least one more this year after Chair Warsh's press conference - the US policy path has not softened this week even as the funding and energy channels both loosened",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Citadel Securities counted nearly $9.6 trillion of US options notional expiring on or before today, about 35% of the entire US options market, in an August 31 note from the firm's Scott Rubner - the VIX at 15.41 is pricing calm into the session that removes a third of the market's outstanding options positioning",
+        "url": "https://cryptobriefing.com/citadel-securities-9-6t-options-expiration/"
+      },
+      {
+        "label": "AMD has reportedly notified partners of a roughly 10% price increase on AI accelerators, Radeon GPUs and motherboard chipsets from the fourth quarter, citing higher TSMC wafer costs, with Ryzen CPUs left off the list - TSMC is separately reported to have told Nvidia, Apple, AMD and Qualcomm of 5% to 10% wafer increases, 8% to 10% on sub-5nm, so this is a cost pass-through across the fabless layer rather than one company's pricing decision, and AMD has confirmed none of it",
+        "url": "https://wccftech.com/amd-notifies-partners-of-10-price-hike/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7640.82,
+      "change_pct": 0.3,
+      "as_of": "2026-09-18T12:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 26382.0,
+      "change_pct": 0.6,
+      "as_of": "2026-09-18T12:00:00.000Z"
+    },
+    "vix": {
+      "level": 15.41,
+      "change_pct": -0.06,
+      "as_of": "2026-09-18T12:00:00.000Z"
+    },
+    "ust10y": {
+      "level": 4.93,
+      "change_bps": -7,
+      "as_of": "2026-09-18T12:00:00.000Z"
+    },
+    "dxy": {
+      "level": 100.24,
+      "change_pct": 0.04,
+      "as_of": "2026-09-18T12:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 4.93,
+      "trigger_above": 5.016,
+      "unit": "%"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 5.282,
+      "trigger_above": 5.44,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,500",
+      "value": 7640.82,
+      "trigger_below": 7500,
+      "unit": "index"
+    },
+    {
+      "name": "DXY",
+      "value": 100.24,
+      "trigger_above": 100.36,
+      "unit": "index"
+    },
+    {
+      "name": "Crude Oil (WTI)",
+      "value": 100.04,
+      "trigger_below": 100.0,
+      "unit": "$/bbl"
+    },
+    {
+      "name": "Gold",
+      "value": 4385.0,
+      "trigger_above": 4500,
+      "unit": "$/oz"
+    },
+    {
+      "name": "BTC",
+      "value": 76700,
+      "trigger_below": 75000,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CL=F",
+      "note": "Trading at $100.04, down $1.87, with Brent at $102.41 and both lower for a third straight session. Brent is more than $5 below its September 14 high near $108 after Saudi Arabia signalled that roughly half the East-West pipeline's capacity returns within days, with full capability about six weeks out. Crude is sitting on the $100 that Thursday's report named as the point at which the energy input leaves the long end. Aramco's 'within days' window closes Monday, so the level resolves rather than approaches. A settle above $105 says the bypass is slower or smaller than announced.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Up more than 1% in early pre-market on a report that it notified partners of a roughly 10% price increase on AI accelerators, Radeon GPUs and motherboard chipsets beginning in the fourth quarter, citing higher TSMC wafer costs, with Ryzen CPUs left off the list. AMD has confirmed none of it; the figure comes from supply-chain reporting and a denial is what takes the move back. TSMC is separately reported to have notified Nvidia, Apple, AMD and Qualcomm of 5% to 10% wafer increases, 8% to 10% on sub-5nm, which places the cost at the foundry rather than at any one customer.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Up about 2% off a one-month low after falling 4.2% Thursday to $79.88 on a $3 billion convertible senior note offering due 2033, with a 2.375%-2.875% coupon and a 22.5%-27.5% conversion premium, plus a $500 million purchaser option. ARK Investment Management bought 239,083 shares worth about $19.1 million into the decline. Against 2026 capital expenditure guidance of $35-39 billion the raise is roughly 8% of one year's planned spending, so the capital intensity rather than the coupon is what the equity is being asked to absorb.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "JPY=X",
+      "note": "The yen weakened as much as 0.7% to 157.09 per dollar on the BOJ's own rate increase, with the ten-year JGB yield slipping to about 2.95% and the Nikkei 225 closing 1.51% higher at 65,102. The 7-2 vote, with two dissents in favour of holding, is the reason all three moved against the textbook response. Tokyo and Washington intervened jointly to support the currency this month and Treasury Secretary Bessent pressed publicly for the hike; the hike arrived and the currency fell through 157 anyway. A slide toward 158 puts intervention back on the table with the policy tool already spent.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Spot gold rose about 1% to roughly $4,385 with December futures at $4,421.30, and silver futures gained 2.34% to $67.64. Metals firming while the dollar holds at 100.24 and the ten-year sits under 5% is a real-rate move rather than a policy-rate one, consistent with a week in which two central banks raised and long yields fell.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "WTI crude sitting on $100 rather than near it",
+      "thesis": "Thursday's report named $100 as the point at which the energy input leaves the long end and $105 as the point at which it returns. Crude opened the US session at $100.04, a third session into a decline, with Brent at $102.41 and more than $5 off its September 14 high near $108. What is forming is a test of that level with a scheduled resolution behind it rather than a drift toward it: Aramco's 'within days' window for restoring roughly half the 7 million barrel-a-day East-West line closes Monday. The counter-evidence is that the second stage of the repair, full capability in about six weeks, is unpriced and unverified, and Brent is still roughly $12 above the $90 the EIA assumes for the second half of 2026.",
+      "entry": "$100.04 against the $100 and $105 settles that bracket it. Confirmation of the partial restart and next week's EIA distillate stocks are the observables.",
+      "invalidation": "A settle below $100 would be the first time since the September 10 attack that crude stopped setting the ten-year; a settle back above $105 says the bypass is slower or smaller than announced and returns the energy input to the long end.",
+      "horizon": "Three sessions, through Monday's restart window"
+    },
+    {
+      "asset": "The yen at 157 after a hike that was supposed to lift it",
+      "thesis": "Tokyo and Washington intervened jointly to support the yen this month, and Treasury Secretary Bessent pressed publicly for a BOJ increase, saying he expected Japan to act. The increase arrived, to a 31-year-high 1.25%, and the currency weakened as much as 0.7% to 157.09 while JGB yields fell. The 7-2 split, with two Takaichi-appointed reflationists voting to hold, is what the market priced. What is forming is a policy tool that has been spent without producing the currency effect it was spent for, which leaves intervention as the remaining lever and the carry channel funding global duration intact rather than unwound. The evidence on the other side is that 1.25% is still a rising path with a majority behind it, and Governor Ueda's guidance can be firmed at the next meeting without another move.",
+      "entry": "157.09 against the 155.37 level of Thursday and the 158 that the September 4 calendar entry named as the point saying the BOJ leg was overstated.",
+      "invalidation": "A slide toward 158 puts intervention back on the table with the rate tool already used; a reversal under 155 would say the market re-read the guidance rather than the vote.",
+      "horizon": "Days, with the next BOJ meeting the scheduled resolution"
+    },
+    {
+      "asset": "The quarterly expiry, and the first session without it",
+      "thesis": "Citadel Securities counted nearly $9.6 trillion of US options notional expiring on or before this session, about 35% of the entire US options market, in an August 31 note from Scott Rubner, with volume concentrating between 3:00 and 4:00 PM ET. The VIX at 15.41 measures expected volatility with that positioning still in place, so it is not a reading on what the index does once the positioning is gone. What is forming is a gap between a measured calm and part of the mechanism producing it: Monday's open is the first session in which the index trades without roughly a third of the options market's outstanding notional. The counter-evidence is that expiries are scheduled, widely modelled events, and the last several have passed without a regime change.",
+      "entry": "7,640.82 on the S&P 500 against the 7,500 line, with the VIX at 15.41 as the reference for what was priced beforehand.",
+      "invalidation": "An S&P 500 hold above 7,500 through Monday with the VIX under 17 says the calm was not positioning-dependent; a break of 7,500 with the VIX above 20 says it was.",
+      "horizon": "Two sessions, through Monday's open"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-18-morning.mdx"
+}

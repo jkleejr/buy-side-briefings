@@ -2,18 +2,6 @@
   "events": [
     {
       "date": "2026-09-18",
-      "label": "Bank of Japan policy decision — markets pricing a September hike after Deputy Governor Himino flagged upside inflation risks",
-      "kind": "OTHER",
-      "tickers": [
-        "JPY=X",
-        "^N225",
-        "TLT",
-        "QQQ"
-      ],
-      "note": "Added Sep 4 morning: the yen reached 155.28 per dollar on Sep 3, its strongest in a month, on BOJ hike bets rather than on the Fed alone. The decision lands two days after the Sep 15-16 FOMC, so the funding currency behind a large share of global duration positioning reprices twice inside four sessions. A yen driven by Japanese tightening keeps appreciating on a hot US print as well as a soft one; USD/JPY back above 158 would say the BOJ leg was overstated. Updated Sep 17 night: 97% of surveyed economists expect a 25bp move to 1.25%, the highest policy rate since April 1995, which makes the signalled path the variable rather than the decision. USD/JPY at 155.37 and the DXY at 100.20 after clearing 100 for the first time in nearly seven weeks."
-    },
-    {
-      "date": "2026-09-18",
       "label": "Rescheduled Iran-Gulf Hormuz meeting — NO date announced; Sep 18 is an indicative marker, not a scheduled event",
       "kind": "SIGNAL",
       "tickers": [
@@ -27,13 +15,13 @@
     {
       "date": "2026-09-18",
       "kind": "OTHER",
-      "label": "Quarterly options expiration - more than $1 trillion of notional exposure, the largest single-day unwind of 2026, on the final day of the BOJ meeting",
+      "label": "Quarterly options expiration — nearly $9.6 trillion of US options notional expires on or before Sep 18, about 35% of the entire US options market, per Citadel Securities",
       "tickers": [
         "SPY",
         "QQQ",
         "IWM"
       ],
-      "note": "Updated Sep 17 night: the VIX fell to 15.42 into the expiry, pricing calm one session before the options positioning holding the index steady is removed. It lands two days after the Fed's first hike in three years and on the BOJ decision, so the funding currency reprices in the same session."
+      "note": "Updated Sep 17 night: the VIX fell to 15.42 into the expiry, pricing calm one session before the options positioning holding the index steady is removed. It lands two days after the Fed's first hike in three years and on the BOJ decision, so the funding currency reprices in the same session. Updated Sep 18 morning: Citadel Securities' Scott Rubner put the total expiring on or before Sep 18 at nearly $9.6 trillion, about 35% of the US options market and far above the $1 trillion this entry first carried, with volume concentrating 3:00–4:00 PM ET. The VIX at 15.41 measures volatility with that positioning still in place, so Monday's open rather than today's close is the reading on what the index does without it."
     },
     {
       "date": "2026-09-21",
@@ -92,6 +80,18 @@
         "XLI",
         "XLY"
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "kind": "OTHER",
+      "label": "AMD's reported ~10% price increase on AI accelerators, Radeon GPUs and chipsets takes effect (Q4 start) — unconfirmed by the company",
+      "tickers": [
+        "AMD",
+        "NVDA",
+        "TSM",
+        "QCOM"
+      ],
+      "note": "Added Sep 18 morning: AMD notified partners on Sep 17 of a roughly 10% increase from the fourth quarter, citing higher TSMC wafer costs, with Ryzen CPUs left off the list. TSMC is separately reported to have told Nvidia, Apple, AMD and Qualcomm of 5%–10% wafer increases, 8%–10% on sub-5nm. If it holds, it is the first broad pass-through of foundry cost into AI hardware pricing and a gross-margin question for every fabless buyer, not just AMD. A company denial takes it back."
     },
     {
       "date": "2026-10-13",
