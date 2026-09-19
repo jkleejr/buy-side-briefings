@@ -1,0 +1,161 @@
+{
+  "routine": "markets",
+  "date": "2026-09-18",
+  "window": "night",
+  "generated_at": "2026-09-19T00:13:07Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil fell for a third day and long-term borrowing costs rose anyway, ending a month-long link",
+    "label": "A whole-curve rise on falling crude: 10Y 5.006%, 2Y 4.743%, 30Y 5.336%; S&P 500 +0.17% but lower on the week",
+    "rationale_short": "For a month the long end of the Treasury curve has taken its direction from crude - the September 10 pipeline attack lifted both, the Aramco bypass took both down. Friday broke that. WTI settled at $100.30, down 1.6% and lower for a third straight session, and the ten-year yield rose about six basis points to 5.006% regardless, back above the 5% it gave up Thursday. The two-year rose as much, to 4.743%, and the thirty-year four basis points to 5.336%. That parallel shift is the evidence: a shock premium leaving the oil price should pull the long end down and flatten the curve, while a front-end-led rise across the whole curve prices the funds rate. What the market repriced was the projection published Wednesday, in which 16 of 18 officials see at least one further increase this year and four see two, rather than anything about the barrel. The session's other mechanism was the expiry: roughly $7 trillion of US options notional came off, the second-largest triple witching on record, with Citadel Securities counting 60% of it cleared at the open. The VIX fell 4.08% to 14.81 in the same session, which means the calm was measured under positioning that no longer exists - Monday is the first session the index trades without it. Equities took the yield move unevenly. The S&P 500 added 0.17% to 7,650.50 and the Nasdaq 0.39%, while the Dow lost 95.40 points and the index still finished the week down more than 1.5%; quantum computing names, the longest-duration equities in the market, fell 5% to 8% with no company news among them. Europe repriced something separate: Volkswagen cut 2026 margin guidance to at most 1% from 4.0%-5.5% on EUR 10 billion of one-off items, roughly EUR 6 billion of it a Porsche impairment, blaming US tariffs and collapsing Chinese demand, and the DAX fell 1.65% while the FTSE fell 1.53%. The evidence is not all one way. Gold rose 1.00% to $4,384.78 with silver up 2.01%, which is what inflation compensation rather than a higher real rate looks like, and one session after a record expiry is a weak base for declaring a change of driver. The ten-year now sits between Thursday's 4.949% close and Wednesday's 5.016%, and that bracket defines the read: a WTI settle under $100 with the ten-year holding above 5.016% finishes the energy explanation for a 5% long end, while yields back under 4.949% as crude breaks $100 says Thursday's mechanism was right and Friday was the expiry talking.",
+    "lede_short": "Crude fell for a third session to settle at $100.30 and the ten-year yield rose to 5.006% anyway, back above 5%, with the two-year moving as much to 4.743% - a whole-curve shift that prices the Fed rather than the oil price. For a month the long end had taken its direction from energy. If yields fall back under 4.949% as WTI breaks $100, that rotation was the $7 trillion options expiry talking rather than a change of driver.",
+    "supporting_data": [
+      {
+        "label": "The ten-year Treasury yield rose more than five basis points to 5.004%, the two-year more than five to 4.743% and the thirty-year four to 5.336% as traders kept reading the policy path after Wednesday's decision - the short end moving with the long end is the part that matters, because it prices the Fed rather than the oil price or the term premium",
+        "url": "https://www.cnbc.com/2026/09/18/treasury-yields-fed-rates-volatile-week.html"
+      },
+      {
+        "label": "WTI settled at $100.30, down 1.6%, and Brent at $103.87, a third consecutive decline that left crude near flat on the week as Saudi Arabia works to restore about half the East-West pipeline within days and full capacity in roughly six weeks - the energy input that built a 5% ten-year came out of the price and the yield went up regardless",
+        "url": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html"
+      },
+      {
+        "label": "About $7 trillion of US options notional expired, the second-largest triple witching on record and roughly a quarter of the market, with Citadel Securities counting 60% of it cleared at the open - the positioning that has been damping realized moves came off, so Monday is the first session the index trades without it",
+        "url": "https://www.investing.com/news/stock-market-news/triple-witching-event-sees-7-trillion-in-us-options-expire-93CH-4907480"
+      },
+      {
+        "label": "The Federal Reserve raised its target range 25 basis points to 3.75%-4.00% on Wednesday, its first increase in three years, with 16 of 18 officials projecting at least one further move this year and four penciling in two - that median, not the decision, is what the curve spent Friday pricing",
+        "url": "https://www.kiplinger.com/investing/live/fed-meeting-updates-and-commentary-september-2026"
+      },
+      {
+        "label": "The SEC granted trading venues a five-year conditional Innovation Exemption from the exchange definition to handle tokenized US-listed stock, with caps on symbols and volume and a requirement that tokens carry full dividend and voting rights - bitcoin reclaimed $80,000 and Coinbase closed 11.53% higher near $194, the clearest single-day beneficiary of a rule that has five years to prove itself",
+        "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+      },
+      {
+        "label": "Volkswagen cut 2026 margin guidance to at most 1% from 4.0%-5.5% on EUR 10 billion ($11.5 billion) of one-off items, roughly EUR 6 billion of it a Porsche impairment, citing US tariffs and collapsing Chinese demand for foreign luxury brands - the DAX fell 1.65% and European indices dropped about 1.5% across the board while US indices finished mixed",
+        "url": "https://www.investing.com/news/stock-market-news/volkswagen-and-porsche-holding-cut-outlook-4907633"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7650.5,
+      "change_pct": 0.17,
+      "as_of": "2026-09-18T20:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 26522.55,
+      "change_pct": 0.39,
+      "as_of": "2026-09-18T20:00:00.000Z"
+    },
+    "vix": {
+      "level": 14.81,
+      "change_pct": -4.08,
+      "as_of": "2026-09-18T20:00:00.000Z"
+    },
+    "ust10y": {
+      "level": 5.006,
+      "change_bps": 6,
+      "as_of": "2026-09-18T20:00:00.000Z"
+    },
+    "dxy": {
+      "level": 100.3,
+      "change_pct": 0.06,
+      "as_of": "2026-09-18T20:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 5.006,
+      "trigger_above": 5.016,
+      "unit": "%"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 5.336,
+      "trigger_above": 5.44,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,500",
+      "value": 7650.5,
+      "trigger_below": 7500,
+      "unit": "index"
+    },
+    {
+      "name": "DXY",
+      "value": 100.3,
+      "trigger_above": 100.36,
+      "unit": "index"
+    },
+    {
+      "name": "Crude Oil (WTI)",
+      "value": 100.3,
+      "trigger_below": 100.0,
+      "unit": "$/bbl"
+    },
+    {
+      "name": "Gold",
+      "value": 4384.78,
+      "trigger_above": 4500,
+      "unit": "$/oz"
+    },
+    {
+      "name": "BTC",
+      "value": 80888,
+      "trigger_below": 75000,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "CL=F",
+      "note": "Settled at $100.30, down 1.6%, with Brent at $103.87 - a third consecutive decline that left crude close to flat on the week. Aramco is working to restore about half the 7 million barrel-a-day East-West line within days and full capacity in roughly six weeks, and the 'within days' window closes early next week. The change from Thursday is that crude fell and the ten-year rose about six basis points anyway, which is the first session this month in which the two moved apart.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "^GSPC",
+      "note": "Closed at 7,650.50, up 0.17%, but still finished the week lower after the Fed's first rate increase in three years; the Dow lost 95.40 points and more than 1.5% on the week while the Nasdaq added 0.39%. Roughly $7 trillion of options notional expired in the second-largest triple witching on record, with 60% clearing at the open, so Monday is the first session the index trades without that positioning. The 7,500 line is what frames it.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC-USD",
+      "note": "Back above $80,000 at $80,888, up 5.5% over 24 hours, after falling to about $75,000 earlier in the week on the Senate's failure to advance the CLARITY Act and the Fed's increase. The SEC's five-year conditional Innovation Exemption for venues trading tokenized US-listed stock arrived Thursday and Coinbase closed 11.53% higher near $194. The exemption caps how many symbols and how much volume a venue may handle, so the size of the opportunity is bounded by the conditions attached to it.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GC=F",
+      "note": "Spot gold rose 1.00% to $4,384.78 with an intraday weekly high of $4,439.80, and silver gained 2.01% to $66.51. Metals firming while nominal yields rose across the entire curve is consistent with the increase being read as inflation compensation rather than a higher real rate - the one asset class that disagreed with the day's policy-repricing read.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "^VIX",
+      "note": "Fell 0.63 to 14.81, a 4.08% decline, in the session that removed roughly a quarter of the US options market. The reading measures expected volatility under positioning that no longer exists, which makes it a poor guide to what the index does next week rather than a signal of calm.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "The S&P 500's first session without the expiry",
+      "thesis": "Roughly $7 trillion of US options notional expired Friday, the second-largest triple witching on record and about a quarter of the market, with Citadel Securities counting 60% of it cleared at the open. What is forming is a gap between a measured calm and part of the mechanism producing it: the VIX printed 14.81, down 4.08%, while that positioning was still in place, so it is not a reading on what the index does once the flow absorbing directional pressure is gone. The evidence on the other side is that quarterly expiries are scheduled and widely modelled, and the last several have passed without a change in regime.",
+      "entry": "7,650.50 on the S&P 500 against the 7,500 line, with the VIX at 14.81 as the reference for what was priced beforehand.",
+      "invalidation": "A hold above 7,500 through Monday with the VIX under 17 says the calm was not positioning-dependent; a break of 7,500 says it was.",
+      "horizon": "Two sessions, through Monday's open"
+    },
+    {
+      "asset": "Crude and the ten-year, moving apart for the first time this month",
+      "thesis": "Since the September 10 pipeline attack the long end and the oil price have moved together in both directions. Friday they separated: WTI settled $100.30, down 1.6% for a third straight session, while the ten-year rose about six basis points to 5.006% and the two-year rose as much to 4.743%. A parallel shift led by the front end prices the funds rate; a shock premium leaving crude should have taken the long end down. Aramco's window for restoring half the East-West line closes early next week, with full capacity about six weeks out, which puts a scheduled test behind the separation. The counter-evidence is that one session after a record expiry is a weak base for declaring a change of driver.",
+      "entry": "The ten-year at 5.006%, bracketed by Thursday's 4.949% close and Wednesday's 5.016%, against WTI at $100.30.",
+      "invalidation": "A WTI settle under $100 with the ten-year above 5.016% finishes the energy explanation for a 5% long end; yields back under 4.949% as crude breaks $100 says Thursday's mechanism was right and Friday was the expiry.",
+      "horizon": "Three sessions, through the restart window"
+    },
+    {
+      "asset": "The tariff channel into Xi Jinping's state visit from September 24",
+      "thesis": "Volkswagen cut 2026 margin guidance to at most 1% from 4.0%-5.5% on EUR 10 billion of one-off items and named US tariffs and collapsing Chinese demand for foreign luxury brands as the causes, taking the DAX down 1.65% while US indices finished mixed. Four days later Xi arrives at the White House for the first time in eleven years, travelling with a large business delegation. What is forming is a scheduled event on the exact channel that just cost a major automaker EUR 10 billion, with European and US autos priced differently for it. The counter-evidence is that state visits frequently produce communiqués rather than terms, and the Porsche impairment is specific to one brand's China exposure.",
+      "entry": "The DAX at 25,308.88 after a 1.65% fall against the S&P 500's 7,650.50, with Volkswagen closing 5.6% lower and Porsche 3.3%.",
+      "invalidation": "Tariff relief or announced purchase commitments would read into autos, industrials and agricultural exporters; a visit producing no terms leaves the demand channel Volkswagen described intact.",
+      "horizon": "One week, through September 25"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-18-night.mdx"
+}
