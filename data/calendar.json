@@ -2,18 +2,6 @@
   "events": [
     {
       "date": "2026-09-23",
-      "time_et": "9:45 AM",
-      "kind": "MACRO",
-      "label": "Flash September PMIs (US, euro zone, UK) — the first broad activity reading covering the period since crude cleared $100",
-      "tickers": [
-        "SPY",
-        "TLT",
-        "XLE"
-      ],
-      "note": "Added Sep 15 night: Empire State fell thirteen points to 7.6 with prices paid at 63.1 on responses collected September 2-10, before the pipeline outage fully priced. The flash PMIs say whether that was a regional print or the shape of the whole quarter, and their own prices-paid components are the first post-hike read on whether energy is reaching output prices. Updated Sep 18 night: the release is Wednesday Sep 23, not Sep 22. The test sharpened this session — crude fell for a third day and the whole Treasury curve rose anyway, so the prices-paid components now have to say whether the energy pass-through the long end was pricing ever reached output prices."
-    },
-    {
-      "date": "2026-09-23",
       "kind": "GEO",
       "label": "All Iranian airlines shut down worldwide, per Treasury — foreign airports and fuel suppliers face exclusion from the dollar system",
       "tickers": [
@@ -23,6 +11,30 @@
         "SPY"
       ],
       "note": "Added Sep 22 morning: Bessent told CNBC that on September 23 every Iranian airline will be grounded globally, and that any airport providing fuel, landing services or ticket sales will be knocked out of the dollar system. It follows the Operation Economic Outcast bank designations. This is escalation on the financial and aviation track rather than the military one: it raises the cost to Iran of holding out without removing a barrel from the market, which is why Brent gave back its 1% gain on the same morning a Kyodo report put a Hormuz reopening on the table. Whether the deadline is enforced against a named third-country carrier or airport is what makes it a real cost rather than a warning."
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "GEO",
+      "label": "Treasury sanctions grounding Iranian airlines worldwide take effect — secondary designations on foreign airports, fuel suppliers and ticketing firms",
+      "tickers": [
+        "CL=F",
+        "USO",
+        "XLE",
+        "SPY"
+      ],
+      "note": "Added Sep 23 morning: the mechanism is secondary sanctions on the companies that service Iranian carriers abroad, not a direct ban on the airlines, so compliance is enforced by the threat of losing dollar access. It escalates the financial track on the same morning crude falls a sixth day on de-escalation reporting — cost to Tehran of holding out, with no barrel removed from the market. Enforcement against a named third-country airport or carrier is what makes it a real cost rather than a warning."
+    },
+    {
+      "date": "2026-09-23",
+      "time_et": "9:45 AM",
+      "kind": "MACRO",
+      "label": "Flash September PMIs (US, euro zone, UK) — the first broad activity reading covering the period since crude cleared $100",
+      "tickers": [
+        "SPY",
+        "TLT",
+        "XLE"
+      ],
+      "note": "Added Sep 15 night: Empire State fell thirteen points to 7.6 with prices paid at 63.1 on responses collected September 2-10, before the pipeline outage fully priced. The flash PMIs say whether that was a regional print or the shape of the whole quarter, and their own prices-paid components are the first post-hike read on whether energy is reaching output prices. Updated Sep 18 night: the release is Wednesday Sep 23, not Sep 22. The test sharpened this session — crude fell for a third day and the whole Treasury curve rose anyway, so the prices-paid components now have to say whether the energy pass-through the long end was pricing ever reached output prices. Updated Sep 23 morning: consensus is near 53.5 manufacturing and 56 services against August finals of 53.9 and 56.8. It prints into a ten-year that has not moved at 4.959% across the last four sessions of falling crude, so the composite is now the cleanest test of whether what is left in the long end is growth and Fed path rather than war premium."
     },
     {
       "date": "2026-09-24",
@@ -36,7 +48,7 @@
         "GM",
         "SOYB"
       ],
-      "note": "Added Sep 18 night: lands four days after Volkswagen cut 2026 margin guidance to at most 1% from 4.0%-5.5% on EUR 10 billion of one-off items and named US tariffs and collapsing Chinese demand as the causes, taking the DAX down 1.65% and General Motors 5.16% at midday. Tariff relief or announced purchase commitments would read directly into autos, industrials and agricultural exporters; a visit producing communiqués and no terms leaves that demand channel intact. Updated Sep 21 morning: Xi arrives Wednesday Sep 23 with the bilateral Thursday Sep 24. Sunday's preparatory talks in New York centred on a framework for alerting each side to AI incidents posing national-security risks, per Treasury Secretary Bessent — the AI and export-control track is the part of the agenda the market has priced least, and the one semis read directly. Trump's decision to delay the $14B Taiwan arms package removed the cancellation trigger Beijing had flagged, and the PBOC held its loan prime rates at 3.00%/3.50% for a 16th month on Sep 20 rather than spend a rate tool before the talks. Updated Sep 21 night: the bilateral now lands on a semiconductor complex that has just re-rated — the PHLX Semiconductor Index rose 4.3% on Sep 21 with Arm up 17%, Intel 12% and AMD 10% to a $1 trillion market value — and a state dinner at which AI executives are expected. That makes the AI export-control track the part of the agenda with the most immediate price consequence in either direction."
+      "note": "Added Sep 18 night: lands four days after Volkswagen cut 2026 margin guidance to at most 1% from 4.0%-5.5% on EUR 10 billion of one-off items and named US tariffs and collapsing Chinese demand as the causes, taking the DAX down 1.65% and General Motors 5.16% at midday. Tariff relief or announced purchase commitments would read directly into autos, industrials and agricultural exporters; a visit producing communiqués and no terms leaves that demand channel intact. Updated Sep 21 morning: Xi arrives Wednesday Sep 23 with the bilateral Thursday Sep 24. Sunday's preparatory talks in New York centred on a framework for alerting each side to AI incidents posing national-security risks, per Treasury Secretary Bessent — the AI and export-control track is the part of the agenda the market has priced least, and the one semis read directly. Trump's decision to delay the $14B Taiwan arms package removed the cancellation trigger Beijing had flagged, and the PBOC held its loan prime rates at 3.00%/3.50% for a 16th month on Sep 20 rather than spend a rate tool before the talks. Updated Sep 21 night: the bilateral now lands on a semiconductor complex that has just re-rated — the PHLX Semiconductor Index rose 4.3% on Sep 21 with Arm up 17%, Intel 12% and AMD 10% to a $1 trillion market value — and a state dinner at which AI executives are expected. That makes the AI export-control track the part of the agenda with the most immediate price consequence in either direction. Updated Sep 23 morning: Xi is in Washington, the first visit by a Chinese leader to US soil since 2015. China's suspension of rare-earth export controls expires Nov 10, and Nvidia's current guidance assumes no data-center chip sales to China — the two specific numbers the summit can move."
     },
     {
       "date": "2026-09-24",
@@ -63,6 +75,16 @@
     },
     {
       "date": "2026-09-25",
+      "kind": "HOLIDAY",
+      "label": "China closed for Mid-Autumn Festival; US durable goods orders for August and final Q2 GDP",
+      "tickers": [
+        "SPY",
+        "TLT"
+      ],
+      "note": "Added Sep 18 night: durable goods is the read on whether capital spending is still being placed with the ten-year above 5%, and it prints into a session with Asian liquidity reduced. It also lands the day after Xi leaves, so any tariff outcome is priced without a Chinese cash market open to price it back."
+    },
+    {
+      "date": "2026-09-25",
       "time_et": "10:00 AM",
       "kind": "MACRO",
       "label": "Final September consumer sentiment — confirms or revises the 4.6% year-ahead inflation expectation",
@@ -72,16 +94,6 @@
         "SPY"
       ],
       "note": "Added Sep 11 night: the preliminary reading jumped six tenths to 4.6% on a survey period dominated by $100 crude and record retail diesel, and revisions to this series have been large in both directions this year. A final reading holding at or above 4.6% makes the expectations move structural; a revision back toward 4.2% makes it an energy artifact the committee can discount in November."
-    },
-    {
-      "date": "2026-09-25",
-      "kind": "HOLIDAY",
-      "label": "China closed for Mid-Autumn Festival; US durable goods orders for August and final Q2 GDP",
-      "tickers": [
-        "SPY",
-        "TLT"
-      ],
-      "note": "Added Sep 18 night: durable goods is the read on whether capital spending is still being placed with the ten-year above 5%, and it prints into a session with Asian liquidity reduced. It also lands the day after Xi leaves, so any tariff outcome is priced without a Chinese cash market open to price it back."
     },
     {
       "date": "2026-09-29",
@@ -103,7 +115,7 @@
         "XLE",
         "TLT"
       ],
-      "note": "Updated Sep 22 night: Saudi Arabia restarted the East-West pipeline (about 4m b/d, ~4% of global supply), so the bypass around the strait is open again and the market no longer needs Hormuz reopened to get the barrels. The window now tests whether the strait itself reopens on the reported timetable or the pipeline restart is the only supply that returned. Brent reclaiming $100 says the restart is slower than priced; under $95 says the barrels are treated as back."
+      "note": "Updated Sep 22 night: Saudi Arabia restarted the East-West pipeline (about 4m b/d, ~4% of global supply), so the bypass around the strait is open again and the market no longer needs Hormuz reopened to get the barrels. The window now tests whether the strait itself reopens on the reported timetable or the pipeline restart is the only supply that returned. Brent reclaiming $100 says the restart is slower than priced; under $95 says the barrels are treated as back. Updated Sep 23 morning: Reuters reported a senior Iranian official putting terms on the offer — an easing of military pressure and the lifting of the port blockade — and said the proposal reached Washington through mediators on Sep 16. Trump told the UN he expects a deal only after the November midterms, so the window and the administration's stated timeline are roughly seven weeks apart."
     },
     {
       "date": "2026-10-01",
@@ -184,6 +196,19 @@
       "tickers": [
         "TLT"
       ]
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "GEO",
+      "label": "China's suspension of rare-earth export controls expires, alongside the tariff truce deadline — the hard date behind the Xi-Trump summit",
+      "tickers": [
+        "NVDA",
+        "MP",
+        "TSM",
+        "XLI",
+        "QQQ"
+      ],
+      "note": "Added Sep 23 morning: the expiry is Beijing's leverage going into Thursday's bilateral and the deadline that survives a summit producing communiques without terms. China Rare Earth Group is reported in talks to acquire a shareholder in MP Materials. It lands one week after the Nov 3 midterms and eighteen days before the Dec FOMC, so a lapse would reach input costs and the long end in the same window."
     },
     {
       "date": "2026-11-19",
