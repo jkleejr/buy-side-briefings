@@ -1,0 +1,139 @@
+{
+  "routine": "markets",
+  "date": "2026-09-22",
+  "window": "night",
+  "generated_at": "2026-09-23T00:18:11Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Saudi pipeline restarts and US meets Iran, sending Brent under $100 as yields stall",
+    "label": "Close: S&P 500 7,764.80 flat, Nasdaq 27,244.28 +0.45% (record), Dow 51,863.83 -185 pts, Russell 2000 2,875.36 +0.52%; VIX 14.21; 10Y 4.959%, 30Y 5.296%; Brent ~$98.47 -1.87%, WTI ~$92; gold $4,307.63; DXY 100.42; BTC $86,625",
+    "rationale_short": "Two pieces of Iran news arrived on the same day and both cut the same way. Saudi Arabia restarted the East-West pipeline, the four-million-barrel-a-day line that moves crude around the Strait of Hormuz and had been shut since drone attacks on September 13, and US officials held a three-hour meeting with an Iranian delegation in New York, with another scheduled. Brent fell a fifth straight session to roughly $98.47, down 1.87% and its lowest since September 8, settling under $100 for the first time in two weeks and about 9% below the September 14 high near $108.\n\nThe important change is that the supply stories stopped being alternatives. The four-day decline through Monday priced Saudi crude rerouting through Hormuz at 2.9 million barrels a day — a workaround that still depends on the strait. The restarted East-West line bypasses the strait entirely, so the market no longer needs Hormuz reopened to get the barrels. That removes most of what the $100 level was defending, which is why a fifth decline came on physical supply rather than on another unverified headline.\n\nWhat did not happen is the rate relief. The ten-year finished under a basis point lower at 4.959% and the thirty-year flat at 5.296%, against roughly eight basis points that the two prior crude declines took out of the long end. CME FedWatch still prices about 59.7% odds of a 25 basis point increase on October 28, essentially unchanged from before crude broke $100. Barkin tied last week's hike to inflation risk outweighing employment risk, citing survey prices-received growth averaging 3.5% since late 2023 and CFOs expecting 4.1% price increases next year, and left further tightening open. The inflation the Fed is pointing at sits in pricing behaviour rather than in the energy line, which is consistent with the energy premium being largely out of yields already.\n\nEquities took the relief unevenly. The Nasdaq Composite set a second consecutive record at 27,244.28 and the Nasdaq 100 reached its first record since June on a sixth straight semiconductor advance; the Russell 2000 rose 0.52%, answering the prior session's breadth question. But financials sold off — JPMorgan 3.35% and American Express 2.62% lower — taking the Dow down 185 points while the S&P 500 finished flat. The session broadened at the small-cap end and narrowed at the large-cap value end at once.\n\nThe levels that would change the picture: a ten-year back above 5.041%, last week's nineteen-year high, with Brent still under $100 would say the long end is pricing demand rather than energy; a ten-year below 4.90% on further crude weakness would say the transmission is still live. Brent reclaiming $100 would say the pipeline restart is running slower than Tuesday priced, with one security source saying full resumption could take weeks.",
+    "lede_short": "Saudi Arabia restarted the four-million-barrel-a-day East-West pipeline that bypasses Hormuz, and US and Iranian officials met for three hours in New York; Brent fell a fifth session to about $98.47, its first close under $100 in two weeks. But the ten-year held 4.959% and the thirty-year 5.296% — a fifth day of cheaper crude bought no rate relief. A ten-year above 5.041% with Brent under $100 would say the long end is pricing demand, not energy.",
+    "supporting_data": [
+      {
+        "label": "Saudi Arabia restarted the East-West pipeline and prepared to resume crude exports from Yanbu after drone attacks halted loadings on September 13, restoring a route that carries about four million barrels a day, roughly 4% of global supply — the first physical supply to return rather than another headline about supply, which is why crude moved on it where two days of unverified reports moved it within a dollar",
+        "url": "https://www.usnews.com/news/world/articles/2026-09-22/saudi-arabia-restarts-east-west-oil-pipeline-to-resume-exports-from-yanbu-sources-say"
+      },
+      {
+        "label": "Trump said US envoys Steve Witkoff and Jared Kushner held a 'very good' three-hour meeting with an Iranian delegation in New York, with another scheduled 'in the very near future' — the contact the market had priced as a possibility since Friday is now an event with named participants and a stated follow-up",
+        "url": "https://www.aljazeera.com/news/2026/9/22/trump-says-us-officials-met-with-iranian-delegation-for-three-hours-2"
+      },
+      {
+        "label": "Brent fell a fifth straight session to roughly $98.47, down 1.87% and its lowest since September 8, with WTI trading in a $91.30-$93.82 range — Brent is about 9% below the September 14 high near $108 and has now settled under the $100 level it broke on Monday",
+        "url": "https://www.cnbc.com/2026/09/21/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "The ten-year Treasury yield finished less than a basis point lower at 4.959% and the thirty-year flat at 5.296% — the two prior sessions of falling crude took roughly eight basis points off the long end and this one took none, the first evidence that the energy premium has largely been removed from yields already",
+        "url": "https://fred.stlouisfed.org/series/DGS10"
+      },
+      {
+        "label": "Richmond Fed President Tom Barkin said inflation risks outweighed employment risks in last week's hike decision, citing survey prices-received growth averaging 3.5% since late 2023 and a CFO survey showing firms expect 4.1% price increases next year, and left further hikes open with 'Will additional hikes be required, and how many? We'll see.' — the inflation the Fed is pointing at sits in pricing behaviour rather than in the energy line",
+        "url": "https://www.richmondfed.org/press_room/speeches"
+      },
+      {
+        "label": "CME FedWatch priced roughly 59.7% odds of a further 25 basis point increase at the October 28 meeting — essentially unchanged from the ~60% that prevailed before crude broke $100, so five sessions of falling energy have moved the expected Fed path by nothing",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7764.8,
+      "change_pct": 0.0,
+      "as_of": "2026-09-22T20:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 27244.28,
+      "change_pct": 0.45,
+      "as_of": "2026-09-22T20:00:00.000Z"
+    },
+    "vix": {
+      "level": 14.21,
+      "change_pct": -4.44,
+      "as_of": "2026-09-22T20:00:00.000Z"
+    },
+    "ust10y": {
+      "level": 4.959,
+      "change_bps": -1,
+      "as_of": "2026-09-22T20:00:00.000Z"
+    },
+    "dxy": {
+      "level": 100.42,
+      "change_pct": 0.0,
+      "as_of": "2026-09-22T20:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 4.959,
+      "trigger_above": 5.041,
+      "unit": "%"
+    },
+    {
+      "name": "30Y Yield",
+      "value": 5.296,
+      "trigger_above": 5.44,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 100.42,
+      "trigger_above": 102.0,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,800",
+      "value": 7764.8,
+      "trigger_below": 7600.0,
+      "unit": ""
+    },
+    {
+      "name": "Gold",
+      "value": 4307.63,
+      "trigger_below": 4200.0,
+      "unit": "$/oz"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMD",
+      "note": "Part of a sixth straight advance in the Philadelphia Semiconductor Index that carried the Nasdaq 100 to its first record since June. The only committed number behind the re-rating remains the roughly 10% price increase effective October 1, which does not reach a reported result until the late-October print.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Advanced with the semiconductor group on its sixth consecutive higher close. No company-specific catalyst in the session; the move is the index trade rather than a name-specific one.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "JPM",
+      "note": "Down 3.35%, among the session's largest decliners and a main reason the Dow fell 185 points while the Nasdaq set a record. A ten-year pinned at 4.959% removes the falling-rate tailwind the group carried through the prior two sessions.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US long end vs crude",
+      "thesis": "The link between cheaper oil and lower long-end yields stopped working in this session. Brent has fallen from roughly $108 on September 14 to $98.47, but almost all of the yield response happened in two sessions: eight basis points off the ten-year then, under one today. With October hike odds static near 59.7% and Barkin locating inflation in survey pricing behaviour rather than energy, what is left in the long end looks like a Fed path rather than a war premium.",
+      "entry": "Ten-year 4.959% against last week's 5.041% nineteen-year high; thirty-year 5.296%. Flash September PMIs and Powell both land Wednesday, September 23.",
+      "invalidation": "A ten-year back above 5.041% with Brent still under $100 says the long end is pricing demand rather than energy. A move below 4.90% on further crude weakness says the energy transmission is still live.",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "Brent crude / energy equities",
+      "thesis": "The Hormuz bypass is physically open again. Saudi Arabia restarted the East-West pipeline and prepared to resume Yanbu exports, which restores the route around the strait rather than the workaround through it, so the market no longer needs Hormuz reopened to get the barrels. Against that, one security source briefed on the work said complete resumption could take weeks, and seven supertankers with capacity for 14 million barrels loaded at Gulf terminals over the weekend — exports still routing through the strait.",
+      "entry": "Brent ~$98.47, settled under the $100 level broken Monday, about 9% below the September 14 high near $108. Aramco's full-capacity target is indicated around October 28.",
+      "invalidation": "Brent reclaiming $100 says the restart is running slower than Tuesday's move priced. Holding under $95 says the four million barrels a day are being treated as effectively back.",
+      "horizon": "This week to several weeks"
+    },
+    {
+      "asset": "Nasdaq breadth vs financials",
+      "thesis": "The second consecutive Nasdaq record came with the Russell 2000 up 0.52%, which is broader than Monday's record and answers the prior session's breadth question. But financials were among the worst performers, with JPMorgan down 3.35% and American Express 2.62%, taking the Dow down 185 points while the S&P 500 finished flat. The market broadened at the small-cap end and narrowed at the large-cap value end in the same session, on a semiconductor group now up six days running.",
+      "entry": "Nasdaq Composite 27,244.28 (record), Russell 2000 2,875.36, S&P 500 7,764.80, Dow 51,863.83, VIX 14.21 near the bottom of its recent range.",
+      "invalidation": "A third record alongside a positive Russell and stabilising banks would confirm the broadening. One carried by semiconductors alone, with financials still lower, would say the base under the index has not widened.",
+      "horizon": "This week"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-22-night.mdx"
+}
