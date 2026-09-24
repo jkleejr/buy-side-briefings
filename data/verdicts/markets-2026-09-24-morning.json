@@ -1,0 +1,89 @@
+{
+  "routine": "markets",
+  "date": "2026-09-24",
+  "window": "morning",
+  "generated_at": "2026-09-24T12:13:39Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "The bond selloff runs into a second day and the long bond reaches its 2007 high",
+    "label": "Premarket: S&P 500 futures -0.6%, Nasdaq 100 -1.0%, Dow -0.3%; 10Y 5.139%, 30Y 5.438%, 2Y 4.897%; Brent $104.19; gold futures $4,293; BTC ~$84,300; JGB 10Y 3.08%. US-China truce extended to January 10. Costco reports after the close.",
+    "rationale_short": "The long end kept selling overnight after Wednesday's PMI-led repricing. The thirty-year rose another 3 basis points to 5.438%, within a basis point of its 2007 high of 5.44%, the ten-year reached 5.139%, its highest since July 2007, and the two-year 4.897%, its highest since 2023. New York Fed President Williams called another increase this year \"reasonable\" without committing to October, a second official after Barr, with CME FedWatch near 73% for October 28. Brent rose a second day to $104.19 and Japan's ten-year added 10 basis points to 3.08% on Tokyo's reopening, so the selling is global rather than a US auction story.\n\nThe night's constructive news did not help. Treasury Secretary Bessent said the US-China truce is extended two months to January 10, removing the November deadline the semiconductor group was carrying, and Nasdaq 100 futures still fell 1% against 0.6% for the S&P 500. This morning the discount rate matters more to equities than trade policy does.\n\nThe levels that would change the picture: a thirty-year close above 5.44% sets a two-decade high while Treasury's buyback program is still buying that maturity; a close back under 5.35% would put Wednesday's move down to one survey and a weak auction. Friday's core PCE is the first hard inflation data since the repricing.",
+    "lede_short": "The bond selloff ran into a second day: the thirty-year reached 5.438%, a basis point from its 2007 high, and the ten-year 5.139% as a second Fed official called another hike reasonable. The US-China truce was extended to January 10, yet Nasdaq futures fell 1%, the most of any index — rates, not trade policy, are setting prices. A long-bond close above 5.44% or Friday's PCE decides whether the move holds.",
+    "supporting_data": [
+      {
+        "label": "Nasdaq 100 futures fell 1%, S&P 500 futures 0.6% and Dow futures 0.3%, with the thirty-year at 5.438% and the two-year at 4.897%, its highest since 2023 — the heaviest selling is in the longest-duration index, which is what a rates move rather than a growth scare produces",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-24-dow-sp-500-nasdaq-080352893.html"
+      },
+      {
+        "label": "The ten-year touched 5.139%, its highest since July 2007 — a second day higher after the largest one-day rise since April 2025, so the move is extending rather than fading",
+        "url": "https://www.cnbc.com/2026/09/24/us-treasury-yields-bonds-fed-inflation.html"
+      },
+      {
+        "label": "New York Fed President Williams called another rate increase this year 'reasonable' but did not commit to October — a second voter after Barr describing a further hike as the default, with CME FedWatch near 73% for October 28",
+        "url": "https://www.cnbc.com/2026/09/24/feds-williams-another-rate-hike-by-year-end.html"
+      },
+      {
+        "label": "Bessent said the US-China trade truce, due to lapse in November, is extended two months to January 10 as Xi began his state visit — a deadline removed from the quarter, yet chip-heavy futures are still the weakest",
+        "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html"
+      },
+      {
+        "label": "Brent rose 1.1% to $104.19 by 4:01 a.m. ET as prospects for a quick US-Iran breakthrough faded — a second day higher takes back most of the September decline the long end had been counting on",
+        "url": "https://uk.advfn.com/market-news/article/23469/brent-rises-to-104-19-as-traders-monitor-u-s-iran-talks-and-hormuz-shipping"
+      },
+      {
+        "label": "Japan's ten-year rose 10 basis points to 3.08% as Tokyo reopened after five closed sessions — the selling is global, so a US-only explanation such as the five-year auction is not enough on its own",
+        "url": "https://tradingeconomics.com/japan/government-bond-yield"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7706.03, "change_pct": -0.6, "as_of": "2026-09-24T12:00:00Z" },
+    "nasdaq": { "level": 26936.04, "change_pct": -1.0, "as_of": "2026-09-24T12:00:00Z" },
+    "vix": { "level": 15.18, "change_pct": 6.83, "as_of": "2026-09-23T20:00:00Z" },
+    "ust10y": { "level": 5.139, "change_bps": 3, "as_of": "2026-09-24T12:00:00Z" },
+    "dxy": { "level": 101.09, "change_pct": 0.6, "as_of": "2026-09-23T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.139, "trigger_above": 5.041, "unit": "%" },
+    { "name": "30Y Yield", "value": 5.438, "trigger_above": 5.44, "unit": "%" },
+    { "name": "DXY", "value": 101.09, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7706.03, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4293.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "The truce extension to January 10 removes the November deadline from the China policy track, and Huang is expected at tonight's state dinner. Futures say rates are outweighing that: Nasdaq 100 futures are down 1% on a night of constructive trade news.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MU",
+      "note": "Rose 5.00% to $1,096.16 on Wednesday's down day, six sessions before its September 30 fiscal fourth quarter. The highest-momentum AI name opens into a duration-led Nasdaq decline.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US thirty-year at its 2007 high",
+      "thesis": "The long bond has risen for a second session to 5.438%, within a basis point of the 2007 high, on a hot PMI, a poorly received five-year auction, two Fed officials leaning toward another increase and Brent back above $104. Treasury's expanded buyback program is buying that maturity through November 4, so a new high would be set against an official bid.",
+      "entry": "Thirty-year 5.438% against the 5.44% 2007 high; ten-year 5.139%. Seven-year auction today; August core PCE Friday.",
+      "invalidation": "A close above 5.44% confirms a two-decade high in term premium. A close back under 5.35% puts Wednesday's move down to one survey and a weak auction.",
+      "horizon": "Today through Friday's PCE"
+    },
+    {
+      "asset": "Semiconductors: duration or crowded-trade unwind",
+      "thesis": "The Philadelphia Semiconductor Index rose more than 8% during Tokyo's five-day holiday and the truce extension removed the group's main policy deadline, yet Nasdaq 100 futures are the weakest index. The relative move against the Nasdaq 100 today separates a rates-driven decline from positioning coming out of a crowded trade.",
+      "entry": "Nasdaq 100 futures -1.0%; Micron $1,096.16 after a 5.00% gain on Wednesday; Micron reports September 30.",
+      "invalidation": "Chips falling in line with long-duration growth says rates. Chips falling notably more on a day policy risk eased says positioning.",
+      "horizon": "Today into September 30"
+    },
+    {
+      "asset": "Costco and Friday's PCE",
+      "thesis": "The repricing so far rests on a survey. Costco after the close is the first large consumer read at a 5.1% ten-year, and core PCE on Friday is the first hard inflation data since.",
+      "entry": "Costco consensus near $94.87 billion revenue and $6.52 EPS; October hike odds near 73% on CME FedWatch.",
+      "invalidation": "A firm consumer print and a firm core PCE make the repricing durable. Soft readings leave roughly 73% October odds resting on one survey and a weak auction.",
+      "horizon": "Tonight through Friday"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-24-morning.mdx"
+}
