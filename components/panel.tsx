@@ -38,7 +38,7 @@ export default function Panel({
       <h3 className="truncate font-mono text-[11px] uppercase tracking-wider text-[var(--lapis)]">
         {title}
       </h3>
-      <span className="shrink-0 font-mono text-[10px] text-[var(--cyan-term)]">▸</span>
+      <span className="shrink-0 font-mono text-[10px] text-[var(--cyan)]">▸</span>
     </Link>
   ) : (
     <>

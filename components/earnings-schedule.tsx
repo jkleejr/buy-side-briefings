@@ -12,7 +12,7 @@ const HORIZON = 90; // days shown on the timeline chart axis
 // Colour the countdown by how imminent the report is.
 function tone(days: number): { text: string } {
   if (days <= 7) return { text: "text-[var(--lapis)]" };
-  if (days <= 30) return { text: "text-[var(--cyan-term)]" };
+  if (days <= 30) return { text: "text-[var(--cyan)]" };
   return { text: "text-[var(--dim)]" };
 }
 

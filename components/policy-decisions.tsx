@@ -29,7 +29,7 @@ import type { CalendarEvent } from "@/lib/data";
 function tone(days: number): string {
   if (days < 0) return "text-[var(--dim)]";
   if (days <= 7) return "text-[var(--lapis)]";
-  if (days <= 30) return "text-[var(--cyan-term)]";
+  if (days <= 30) return "text-[var(--cyan)]";
   return "text-[var(--dim)]";
 }
 

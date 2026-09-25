@@ -267,7 +267,7 @@ export default async function MacroSections() {
             href={m.fed.fed_watch_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--cyan-term)] hover:underline"
+            className="text-[var(--cyan)] hover:underline"
           >
             FEDWATCH ▸
           </a>

@@ -85,7 +85,7 @@ export default async function BriefingPage({
       <article className="mx-auto max-w-3xl space-y-4">
       <Link
         href="/briefings"
-        className="block w-fit font-mono text-[10px] uppercase tracking-widest text-[var(--cyan-term)] hover:underline"
+        className="block w-fit font-mono text-[10px] uppercase tracking-widest text-[var(--cyan)] hover:underline"
       >
         ◂ ALL REPORTS
       </Link>
@@ -173,7 +173,7 @@ function BriefingMarkdown({ source }: { source: string }) {
         a: ({ children, href }) => (
           <a
             href={href}
-            className="text-[var(--cyan-term)] underline underline-offset-4 hover:text-[var(--lapis)]"
+            className="text-[var(--cyan)] underline underline-offset-4 hover:text-[var(--lapis)]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -246,11 +246,11 @@ function Tier({
     // the device just striped the whole page — three rules down one edge read
     // as a frame, not as emphasis. The indent stays on all three so the
     // columns still line up under each other.
-    <section className={accent ? "border-l-2 border-[var(--cyan-term)] pl-4 sm:pl-5" : "pl-4 sm:pl-5"}>
+    <section className={accent ? "border-l-2 border-[var(--cyan)] pl-4 sm:pl-5" : "pl-4 sm:pl-5"}>
       {label && (
         <div
           className={`font-mono text-[10.5px] uppercase tracking-[0.16em] ${
-            accent ? "text-[var(--cyan-term)]" : "text-[var(--faint)]"
+            accent ? "text-[var(--cyan)]" : "text-[var(--faint)]"
           }`}
         >
           {label}

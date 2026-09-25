@@ -70,7 +70,7 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
                   SEED
                 </span>
               )}
-              <span className="shrink-0 text-[var(--cyan-term)]">▸</span>
+              <span className="shrink-0 text-[var(--cyan)]">▸</span>
             </Link>
           </li>
         );
