@@ -97,8 +97,13 @@ export default function LiveTicker({ initial }: { initial: LiveQuote[] }) {
 
             scroll-hidden, not panel-scroll: the tape spans the whole page, so
             a visible track under it looked like a stray rule. It still scrolls
-            by wheel and trackpad. */}
-        <div className="scroll-hidden flex min-w-0 flex-1 flex-nowrap items-center gap-x-5 overflow-x-auto font-mono text-[11px]">
+            by wheel and trackpad.
+
+            justify-center-safe centres the quotes when they all fit, so a wide
+            window doesn't leave the tape hugging the left with a gap on the
+            right, and falls back to start-aligned when they overflow, so the
+            first quote never gets pushed out of reach of the scroll. */}
+        <div className="scroll-hidden flex min-w-0 flex-1 flex-nowrap items-center justify-center-safe gap-x-5 overflow-x-auto font-mono text-[11px]">
         {quotes.map((q) => {
           const up = (q.changePct ?? 0) > 0;
           const down = (q.changePct ?? 0) < 0;
