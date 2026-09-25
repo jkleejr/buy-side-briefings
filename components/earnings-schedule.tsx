@@ -9,12 +9,11 @@ import {
 
 const HORIZON = 90; // days shown on the timeline chart axis
 
-// Colour the countdown by how imminent the report is.
-function tone(days: number): { text: string } {
-  if (days <= 7) return { text: "text-[var(--lapis)]" };
-  if (days <= 30) return { text: "text-[var(--cyan)]" };
-  return { text: "text-[var(--dim)]" };
-}
+// Every countdown reads the same grey. The calendar used to colour them by
+// how close the report was (lapis, then the secondary), which pulled the eye
+// to the colour instead of the date; the order of the list already says
+// what is next.
+const COUNTDOWN = "text-[var(--dim)]";
 
 /**
  * The timeline marker reads the same as the schedule table's Status column:
@@ -102,7 +101,6 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
 
       <div className="space-y-1">
         {onAxis.map((e) => {
-          const t = tone(e.daysUntil);
           const left = `${(Math.max(e.daysUntil, 0) / HORIZON) * 100}%`;
           return (
             <div key={e.symbol} className="flex items-center gap-2">
@@ -135,7 +133,7 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
                       border: `1.5px solid ${dotColor(e.isEstimate)}`,
                     }}
                   />
-                  <span className={`whitespace-nowrap font-mono text-[9px] ${t.text}`}>
+                  <span className={`whitespace-nowrap font-mono text-[9px] ${COUNTDOWN}`}>
                     {countdownBadge(e.daysUntil)}
                   </span>
                 </span>
@@ -167,10 +165,9 @@ function ScheduleTable({ entries }: { entries: EarningsEntry[] }) {
         </thead>
         <tbody>
           {entries.map((e) => {
-            const t = tone(e.daysUntil);
             return (
               <tr key={e.symbol} className="border-b border-[var(--border)] last:border-0">
-                <td className={`px-2 py-1 font-bold ${t.text}`}>
+                <td className={`px-2 py-1 font-bold ${COUNTDOWN}`}>
                   {countdownBadge(e.daysUntil)}
                 </td>
                 <td className="px-2 py-1 text-[var(--foreground)]">{fmtDate(e.date)}</td>

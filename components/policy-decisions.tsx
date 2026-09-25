@@ -15,23 +15,11 @@ import type { CalendarEvent } from "@/lib/data";
  * that last week's Fed meeting is how you read this week's tape — but on a page
  * headed "Upcoming events" they read as clutter, and the reports cover what a
  * decision did far better than a dated row can. The page asks for a zero
- * lookback; the tone() guard below still handles a negative countdown so a
- * meeting dated today can't fall through a gap.
+ * lookback.
  */
 
-/**
- * Colour by imminence — on the countdown badge only, the same lapis ≤7d /
- * cyan ≤30d scale the earnings schedule uses. The negative branch is
- * unreachable from the calendar page, which asks for no lookback, and is kept
- * only so a stale build serving yesterday's date degrades to a dim row rather
- * than a mis-coloured one.
- */
-function tone(days: number): string {
-  if (days < 0) return "text-[var(--dim)]";
-  if (days <= 7) return "text-[var(--lapis)]";
-  if (days <= 30) return "text-[var(--cyan)]";
-  return "text-[var(--dim)]";
-}
+// Countdowns are plain grey, the same as the earnings schedule's.
+const COUNTDOWN = "text-[var(--dim)]";
 
 function fmtDate(iso: string): string {
   return new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", {
@@ -93,13 +81,12 @@ export default function PolicyDecisions({
           <tbody>
             {events.map((e) => {
               const days = daysBetween(today, e.date);
-              const t = tone(days);
               return (
                 <tr
                   key={`${e.source}-${e.date}`}
                   className="border-b border-[var(--border)] last:border-0"
                 >
-                  <td className={`px-2 py-1 font-bold ${t}`}>
+                  <td className={`px-2 py-1 font-bold ${COUNTDOWN}`}>
                     {countdownBadge(days)}
                   </td>
                   {/* Every row reads at full strength. Greying the date and
