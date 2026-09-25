@@ -25,6 +25,8 @@ const TICKER_STRIP: Array<{ symbol: string; label: string }> = [
   // homepage chart switcher uses.
   { symbol: "JPY=X", label: "USD/JPY" },
   { symbol: "BTC-USD", label: "BTC" },
+  // The one single stock on the strip: the AI trade most reports turn on.
+  { symbol: "NVDA", label: "NVDA" },
   { symbol: "GC=F", label: "Gold" },
   // WTI front-month — the barrel the briefings quote. Labelled "Oil" rather
   // than "WTI" so the row reads for someone who doesn't trade it.
