@@ -341,7 +341,7 @@ Raised on 2026-09-01. Budget:
 | | words | reads in |
 |---|---|---|
 | **morning** | **1,100–1,500** | ~6 min |
-| **night** | **1,500–2,000** | ~9 min |
+| **night** | **1,300–1,800** | ~8 min |
 
 **The extra words buy depth, not repetition.** Everything below about one fact
 in one place still holds without exception — the failure that made reports long
@@ -354,7 +354,9 @@ Per section, as a ceiling — under is fine, over is not. These sum to roughly
 the budget; there is no slack to redistribute. The words cut from
 "What changed / Why it happened" on 2026-09-04 are not freed for other
 sections — that section was carrying twice the length its job needs, and the
-report is meant to come in shorter for it:
+report is meant to come in shorter for it. The same goes for the ~230 words
+cut from Next 5 Trading Days on 2026-09-25, which is why the night budget
+dropped from 1,500–2,000 to 1,300–1,800:
 
 | section | morning | night |
 |---|---|---|
@@ -363,7 +365,7 @@ report is meant to come in shorter for it:
 | What changed / Why it happened | 170 | 190 |
 | Movers | 220 | 250 |
 | What to watch | 260 | 280 |
-| Next 5 Trading Days (night, table) | — | 350 |
+| Next 5 Trading Days (night, list) | — | 120 |
 
 **The day has one story.** Find it before writing a word: the single thing a
 reader who saw nothing today must know. It gets the heading, the read and
@@ -474,9 +476,15 @@ not investment advice"; it is not rendered anywhere on the site any more.
    two names and are merged here. **Frame as observation, never as a
    recommendation** — no entry price to take, no direction to put on, no
    conviction rating. The reader decides whether to act.
-7. (night only) `## Next 5 Trading Days` — the week ahead as a table, one row
-   per day, ~25 words per row: the catalyst and what it decides. No "Strategic
-   Outlook — " prefix.
+7. (night only) `## Next 5 Trading Days` — the week ahead as a plain list,
+   **not a table**: one bullet per trading day, ~20 words each, in the form
+   `- **Fri Sep 25** — Final consumer sentiment and Costco's first session after
+   results. Tests whether inflation expectations follow oil higher.` Name the
+   catalyst, then say in one short sentence what it decides. Skip a day that
+   has nothing on it rather than padding it. No "Strategic Outlook — " prefix.
+   (Changed 2026-09-25: the table read as a dense grid and ran ~350 words.
+   Older reports still carry the table; the page shows it as text, so do not
+   copy it.)
 
 **Four sections are retired — do not write any of them.** Writing one only
 spends word budget that belongs to the read:
