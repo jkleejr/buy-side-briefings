@@ -365,7 +365,7 @@ dropped from 1,500–2,000 to 1,300–1,800:
 | What changed / Why it happened | 170 | 190 |
 | Movers | 220 | 250 |
 | What to watch | 260 | 280 |
-| Next 5 Trading Days (night, list) | — | 120 |
+| Next 5 Trading Days (night, short paragraphs) | — | 120 |
 
 **The day has one story.** Find it before writing a word: the single thing a
 reader who saw nothing today must know. It gets the heading, the read and
@@ -377,7 +377,7 @@ mattered.
 most often. On 2026-08-28, MRVL's -10.28% appeared in the read, the snapshot
 table, the recap paragraph and the Movers list: roughly 200 words to deliver
 one number and one reason. If a name carries the day it belongs in the read and
-gets **no** Movers bullet. If it is a secondary mover it gets **one** Movers
+gets **no** Movers entry. If it is a secondary mover it gets **one** Movers
 line and no paragraph anywhere. The snapshot table row is not a repeat — it is
 the number's home, and prose about that name must add a reason the table cannot
 carry.
@@ -466,9 +466,13 @@ not investment advice"; it is not rendered anywhere on the site any more.
    would change the picture go here too, as one line — if the section is running
    long, the *why* wins and the levels move to `## What to watch`.
 5. `## Movers` — only names that moved ~2%+ or carry news, **maximum 5**, one
-   sentence each: the move, the reason, and the level that would change it. A
-   name already carried by the read gets no bullet here. Fewer than five is a
-   normal day, not a gap to fill.
+   sentence each: the move, the reason, and the level that would change it.
+   **No bullet points** (changed 2026-09-25): each name is its own short
+   paragraph that opens with the name in bold, the way `## What to watch`
+   opens each setup, e.g. `**Synopsys** is up about 3% after HSBC upgraded it
+   to buy.` Older reports carry this section as a bulleted list; do not copy
+   that. A name already carried by the read gets no entry here. Fewer than
+   five is a normal day, not a gap to fill.
 6. `## What to watch` — **maximum 3** setups, ~60 words each: what is forming,
    the level that confirms or breaks it, and when it resolves. This includes
    names trading well ahead of their fundamentals — the old `Stretched Here`
@@ -476,15 +480,17 @@ not investment advice"; it is not rendered anywhere on the site any more.
    two names and are merged here. **Frame as observation, never as a
    recommendation** — no entry price to take, no direction to put on, no
    conviction rating. The reader decides whether to act.
-7. (night only) `## Next 5 Trading Days` — the week ahead as a plain list,
-   **not a table**: one bullet per trading day, ~20 words each, in the form
-   `- **Fri Sep 25** — Final consumer sentiment and Costco's first session after
-   results. Tests whether inflation expectations follow oil higher.` Name the
-   catalyst, then say in one short sentence what it decides. Skip a day that
-   has nothing on it rather than padding it. No "Strategic Outlook — " prefix.
-   (Changed 2026-09-25: the table read as a dense grid and ran ~350 words.
-   Older reports still carry the table; the page shows it as text, so do not
-   copy it.)
+7. (night only) `## Next 5 Trading Days` — the week ahead as short
+   paragraphs, **not a table and not bullet points**: one paragraph per trading
+   day, ~20 words each, separated by a blank line and opening with the day in
+   bold, e.g. `**Fri Sep 25** — Final consumer sentiment and Costco's first
+   session after results. Tests whether inflation expectations follow oil
+   higher.` Name the catalyst, then say in one short sentence what it decides.
+   Skip a day that has nothing on it rather than padding it. No "Strategic
+   Outlook — " prefix. (Changed 2026-09-25: the table read as a dense grid and
+   ran ~350 words, and the owner wants no bullets in this section or in
+   Movers. Older reports carry a table or a bulleted list here; do not copy
+   either.)
 
 **Four sections are retired — do not write any of them.** Writing one only
 spends word budget that belongs to the read:
