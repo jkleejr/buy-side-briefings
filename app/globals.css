@@ -11,27 +11,31 @@
    including the dark ground, which mirrors every token below.
    ========================================================================== */
 
+/* Light mode is the dark theme mirrored (2026-09-25): dark mode's ink #ece6d9
+   is the page, its ground #0d0d0b is the ink, and panels, rules and grey text
+   keep their dark-mode spacing from each end, walked the other way. The old
+   #faf8f2 ground sat at 94% of white and read as glare. */
 :root {
-  --background: #faf8f2;      /* warm paper */
-  --foreground: #1f1d19;      /* ink */
-  --panel: #f3f0e7;           /* warm raised fill */
-  --panel-head: #ece8dc;
-  --border: #e4dfd4;          /* hairline rule */
-  --border-strong: #cbc5b7;
+  --background: #ece6d9;      /* warm paper: dark mode's ink, mirrored */
+  --foreground: #0d0d0b;      /* ink */
+  --panel: #e3ddd0;           /* warm raised fill */
+  --panel-head: #ded8cc;
+  --border: #d4cfc5;          /* hairline rule */
+  --border-strong: #c1bcb4;
   /* The two accents, named for what they are: --lapis the working accent,
      --cyan the oxblood secondary (evening editions, comparison series). They
      were --amber and --cyan-term, kept from a palette this one replaced, so
      the names described colours neither of them had been for a long time. */
   --lapis: #2f4f9e;
-  --lapis-dim: #6b7aa3;
+  --lapis-dim: #68769e;
   --cyan: #8d3b34;
   --up: #2f7d4f;
   --down: #b0392f;
-  --dim: #6d6a62;
-  --faint: #98938a;
+  --dim: #5a564d;
+  --faint: #827d70;
   /* Ink scale for body copy at graded softness (tokenized so dark mode maps). */
   --ink-soft: #2b2924;
-  --ink-2: #3c3a34;
+  --ink-2: #34322c;
   --ink-3: #4c4a43;
   --warn: #b06a1e;            /* seed / stale amber */
   --ceiling: #2f4f9e;         /* chart: resistance / overhead — the lapis pole */
@@ -79,21 +83,21 @@
 /* Explicit theme overrides — a future in-page toggle stamps data-theme on the
    root and must win over the OS media query in both directions. */
 :root[data-theme="light"] {
-  --background: #faf8f2;
-  --foreground: #1f1d19;
-  --panel: #f3f0e7;
-  --panel-head: #ece8dc;
-  --border: #e4dfd4;
-  --border-strong: #cbc5b7;
+  --background: #ece6d9;
+  --foreground: #0d0d0b;
+  --panel: #e3ddd0;
+  --panel-head: #ded8cc;
+  --border: #d4cfc5;
+  --border-strong: #c1bcb4;
   --lapis: #2f4f9e;
-  --lapis-dim: #6b7aa3;
+  --lapis-dim: #68769e;
   --cyan: #8d3b34;
   --up: #2f7d4f;
   --down: #b0392f;
-  --dim: #6d6a62;
-  --faint: #98938a;
+  --dim: #5a564d;
+  --faint: #827d70;
   --ink-soft: #2b2924;
-  --ink-2: #3c3a34;
+  --ink-2: #34322c;
   --ink-3: #4c4a43;
   --warn: #b06a1e;
   --ceiling: #2f4f9e;
