@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import {
@@ -15,6 +14,7 @@ import {
   windowLabel,
 } from "@/lib/utils";
 import type { SupportingPoint } from "@/lib/data";
+import ReportBackLink from "@/components/report-back-link";
 
 export const revalidate = 300;
 
@@ -83,12 +83,7 @@ export default async function BriefingPage({
           measure — the text and the rules beside it sat left with a third of
           the page empty to their right. */}
       <article className="mx-auto max-w-3xl space-y-4">
-      <Link
-        href="/briefings"
-        className="block w-fit font-mono text-[10px] uppercase tracking-widest text-[var(--cyan)] hover:underline"
-      >
-        ◂ ALL REPORTS
-      </Link>
+      <ReportBackLink />
 
       <header className="space-y-2">
         <div className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[var(--lapis)]">

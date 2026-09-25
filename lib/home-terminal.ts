@@ -449,7 +449,8 @@ function buildBrief(
       ? firstClause(v.verdict.supporting_data[0].label.replace(/^★\s*/, ""))
       : v.verdict.label,
     tickers,
-    href: `/briefings/${v.routine}/${v.date}-${v.window}`,
+    // ?from=today tells the report page to offer "Today" as its back link.
+    href: `/briefings/${v.routine}/${v.date}-${v.window}?from=today`,
     isSeed: !!v.is_seed,
   };
 }
@@ -644,7 +645,7 @@ export async function getHomeData(): Promise<HomeData> {
       window: v.window === "morning" ? "morning" : "evening",
       dayLabel: dayLabelOf(v.date),
       headline: clampText(headlineOf(v), 70),
-      href: `/briefings/${v.routine}/${v.date}-${v.window}`,
+      href: `/briefings/${v.routine}/${v.date}-${v.window}?from=today`,
     }));
 
   // No dated-catalyst module on this page: the sideways strip went first, then
