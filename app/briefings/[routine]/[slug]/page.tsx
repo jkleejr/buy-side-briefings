@@ -335,7 +335,7 @@ function VerdictHead({
       {bullets.length > 0 && (
         <ul className="mt-3 list-disc space-y-1.5 pl-5">
           {bullets.map((b, i) => (
-            <li key={i} className="text-[15.5px] leading-[1.5] text-[var(--ink-2)]">
+            <li key={i} className="text-[15.5px] leading-[1.5] text-[var(--foreground)]">
               {b}
             </li>
           ))}
