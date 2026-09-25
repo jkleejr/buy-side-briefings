@@ -185,3 +185,49 @@ export function formatDateShort(date: string): string {
   return FMT_DATE_SHORT_NUMERIC_UTC.format(new Date(`${date}T12:00:00Z`));
 }
 
+
+// Words that end in a full stop without ending the sentence, so "U.S. yields"
+// or "Goldman Sachs Inc. said" is not split there.
+const ABBREVIATIONS = new Set([
+  "u.s", "u.k", "e.u", "inc", "corp", "co", "ltd", "plc", "vs", "etc", "e.g",
+  "i.e", "no", "st", "mr", "mrs", "ms", "dr", "jan", "feb", "mar", "apr",
+  "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec", "est", "adj", "approx", "a.m", "p.m",
+]);
+
+/** Split prose into sentences at ". ", "! " and "? ", skipping abbreviations. */
+export function splitSentences(text: string): string[] {
+  const t = text.trim();
+  const out: string[] = [];
+  let start = 0;
+  const re = /[.!?]["')\]]?\s+/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(t))) {
+    const end = m.index + 1;
+    const word = t.slice(start, end).split(/\s+/).pop() ?? "";
+    const bare = word.replace(/^[("'[]+/, "").replace(/[.!?]$/, "").toLowerCase();
+    if (ABBREVIATIONS.has(bare) || /^[a-z]$/i.test(bare)) continue;
+    out.push(t.slice(start, m.index + m[0].trimEnd().length).trim());
+    start = m.index + m[0].length;
+  }
+  if (start < t.length) out.push(t.slice(start).trim());
+  return out.filter(Boolean);
+}
+
+/**
+ * Shortens prose for a summary slot without ever cutting a sentence in half:
+ * the first sentence is always kept whole, and later ones are added while
+ * they fit under `softMax` characters. Replaces character clamps that chopped
+ * mid-phrase and added "…" — the glance bullets and "News today" both lost
+ * the meaning half of every point that way once points ran past 150–190
+ * characters.
+ */
+export function wholeSentences(text: string, softMax: number): string {
+  const sentences = splitSentences(text);
+  if (!sentences.length) return text.trim();
+  let out = sentences[0];
+  for (const s of sentences.slice(1)) {
+    if (out.length + 1 + s.length > softMax) break;
+    out += " " + s;
+  }
+  return out;
+}

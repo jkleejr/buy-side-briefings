@@ -11,6 +11,7 @@ import {
   formatBriefingTime,
   formatDateShort,
   readMinutes,
+  splitSentences,
   windowLabel,
 } from "@/lib/utils";
 import type { SupportingPoint } from "@/lib/data";
@@ -264,14 +265,6 @@ function firstSentence(text: string | undefined): string {
   return (m ? m[0] : clean).trim();
 }
 
-function clampText(text: string, maxChars: number): string {
-  const t = text.trim();
-  if (t.length <= maxChars) return t;
-  const cut = t.slice(0, maxChars);
-  const lastSpace = cut.lastIndexOf(" ");
-  return cut.slice(0, lastSpace > 0 ? lastSpace : maxChars).trim() + "…";
-}
-
 /** Strip the analyst's priority marks (★★ / ★ / ⚠) off a point label. */
 function stripMarks(label: string): string {
   return label.replace(/^[★⚠️\s]+/u, "").trim();
@@ -284,8 +277,8 @@ function starRank(label: string): number {
 }
 
 /**
- * The bullets anyone can read at a glance: the highest-priority points, cut to
- * their first clause. The full sourced versions live one tier below.
+ * The bullets anyone can read at a glance: the highest-priority points, each
+ * shown as its complete first sentence. The full sourced versions live one tier below.
  *
  * Five, raised from three on 2026-09-04. The verdicts carry 6-7 points, so at
  * three the glance was showing under half of what the day actually turned on
@@ -297,15 +290,10 @@ function glanceBullets(points: SupportingPoint[]): string[] {
   return [...points]
     .sort((a, b) => starRank(b.label) - starRank(a.label))
     .slice(0, 5)
-    .map((p) => {
-      const clean = stripMarks(p.label);
-      let cut = clean.length;
-      for (const sep of [";", ". "]) {
-        const i = clean.indexOf(sep, 30);
-        if (i > 0 && i < cut) cut = i;
-      }
-      return clampText(clean.slice(0, cut), 190);
-    });
+    // The whole first sentence, never less. A 190-char clamp here used to
+    // chop every point mid-phrase and add "…", and a cut at the first
+    // semicolon left half-sentences; both read as an unfinished report.
+    .map((p) => splitSentences(stripMarks(p.label))[0] ?? "");
 }
 
 function VerdictHead({

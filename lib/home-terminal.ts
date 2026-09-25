@@ -5,7 +5,7 @@ import {
   getBriefing,
   type MarketsVerdict,
 } from "@/lib/data";
-import { readMinutes as readMinutesOfText, formatBriefingTime } from "@/lib/utils";
+import { readMinutes as readMinutesOfText, formatBriefingTime, wholeSentences } from "@/lib/utils";
 import { clampText, verdictHeadline } from "@/lib/verdict-headline";
 
 // ---------------------------------------------------------------------------
@@ -418,7 +418,8 @@ function buildBrief(
     .slice(0, 6)
     .map((sd) => ({
       label: shortLabel(sd.label),
-      text: clampText(sd.label.replace(/^★\s*/, ""), 150),
+      // Whole sentences only: a 150-char clamp cut every point mid-phrase.
+      text: wholeSentences(sd.label.replace(/^★\s*/, ""), 150),
       url: sd.url,
     }));
 
