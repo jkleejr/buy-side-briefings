@@ -124,16 +124,18 @@ function Hero({ brief }: { brief: BriefView }) {
           switch pinned to the right edge above. */}
       <Link
         href={brief.href}
-        className="mt-6 flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-right font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--lapis)]"
+        className="group mt-6 flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-right font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--lapis)]"
       >
         {/* The label is one unit: without nowrap the phone broke it after
             "MORNING'S" and stranded the read-time on its own line, which read
-            as two separate links. */}
-        <span className="whitespace-nowrap">
+            as two separate links. Underlined per span on hover, since the
+            link is a flex row and an underline set on it would not reach
+            its children. */}
+        <span className="whitespace-nowrap decoration-1 underline-offset-4 group-hover:underline group-focus-visible:underline">
           Read {brief.window === "morning" ? "this morning's" : "tonight's"}{" "}
           report
         </span>
-        <span className="whitespace-nowrap">~ {brief.readMin} min →</span>
+        <span className="whitespace-nowrap decoration-1 underline-offset-4 group-hover:underline group-focus-visible:underline">~ {brief.readMin} min →</span>
       </Link>
     </div>
   );
