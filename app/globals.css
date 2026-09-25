@@ -15,7 +15,10 @@
    less yellow than the warm paper before it (#faf8f2 at 94% read as glare;
    a beige mirror of the dark theme, #ece6d9, cast yellow against the lapis).
    The ink is a near-black tinted to the same hue, and panels, rules and grey
-   text are steps between the two, so paper and ink belong together. */
+   text are steps between the two, so paper and ink belong together.
+   Secondary is plum (#7a3466) rather than oxblood, so it never reads as a
+   price drop, and green is darkened a touch to clear 4.5:1 on panels.
+   --floor stays oxblood: the chart drawing tools offer it as "Red". */
 :root {
   --background: #f1eee8;      /* bone */
   --foreground: #141310;      /* ink */
@@ -29,10 +32,10 @@
      the names described colours neither of them had been for a long time. */
   --lapis: #2f4f9e;
   --lapis-dim: #68769e;
-  --cyan: #8d3b34;
-  --up: #2f7d4f;
+  --cyan: #7a3466;
+  --up: #2b6e47;
   --down: #b0392f;
-  --dim: #666560;
+  --dim: #63625d;
   --faint: #8e8b87;
   /* Ink scale for body copy at graded softness (tokenized so dark mode maps). */
   --ink-soft: #2b2924;
@@ -92,10 +95,10 @@
   --border-strong: #c7c4bf;
   --lapis: #2f4f9e;
   --lapis-dim: #68769e;
-  --cyan: #8d3b34;
-  --up: #2f7d4f;
+  --cyan: #7a3466;
+  --up: #2b6e47;
   --down: #b0392f;
-  --dim: #666560;
+  --dim: #63625d;
   --faint: #8e8b87;
   --ink-soft: #2b2924;
   --ink-2: #373633;
