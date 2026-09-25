@@ -11,17 +11,18 @@
    including the dark ground, which mirrors every token below.
    ========================================================================== */
 
-/* Light mode is the dark theme mirrored (2026-09-25): dark mode's ink #ece6d9
-   is the page, its ground #0d0d0b is the ink, and panels, rules and grey text
-   keep their dark-mode spacing from each end, walked the other way. The old
-   #faf8f2 ground sat at 94% of white and read as glare. */
+/* Light mode is "Bone" (2026-09-25): a pale ivory ground at 86% of white,
+   less yellow than the warm paper before it (#faf8f2 at 94% read as glare;
+   a beige mirror of the dark theme, #ece6d9, cast yellow against the lapis).
+   The ink is a near-black tinted to the same hue, and panels, rules and grey
+   text are steps between the two, so paper and ink belong together. */
 :root {
-  --background: #ece6d9;      /* warm paper: dark mode's ink, mirrored */
-  --foreground: #0d0d0b;      /* ink */
-  --panel: #e3ddd0;           /* warm raised fill */
-  --panel-head: #ded8cc;
-  --border: #d4cfc5;          /* hairline rule */
-  --border-strong: #c1bcb4;
+  --background: #f1eee8;      /* bone */
+  --foreground: #141310;      /* ink */
+  --panel: #e9e6e0;           /* warm raised fill */
+  --panel-head: #e4e1db;
+  --border: #dbd8d2;          /* hairline rule */
+  --border-strong: #c7c4bf;
   /* The two accents, named for what they are: --lapis the working accent,
      --cyan the oxblood secondary (evening editions, comparison series). They
      were --amber and --cyan-term, kept from a palette this one replaced, so
@@ -31,11 +32,11 @@
   --cyan: #8d3b34;
   --up: #2f7d4f;
   --down: #b0392f;
-  --dim: #5a564d;
-  --faint: #827d70;
+  --dim: #666560;
+  --faint: #8e8b87;
   /* Ink scale for body copy at graded softness (tokenized so dark mode maps). */
   --ink-soft: #2b2924;
-  --ink-2: #34322c;
+  --ink-2: #373633;
   --ink-3: #4c4a43;
   --warn: #b06a1e;            /* seed / stale amber */
   --ceiling: #2f4f9e;         /* chart: resistance / overhead — the lapis pole */
@@ -83,21 +84,21 @@
 /* Explicit theme overrides — a future in-page toggle stamps data-theme on the
    root and must win over the OS media query in both directions. */
 :root[data-theme="light"] {
-  --background: #ece6d9;
-  --foreground: #0d0d0b;
-  --panel: #e3ddd0;
-  --panel-head: #ded8cc;
-  --border: #d4cfc5;
-  --border-strong: #c1bcb4;
+  --background: #f1eee8;
+  --foreground: #141310;
+  --panel: #e9e6e0;
+  --panel-head: #e4e1db;
+  --border: #dbd8d2;
+  --border-strong: #c7c4bf;
   --lapis: #2f4f9e;
   --lapis-dim: #68769e;
   --cyan: #8d3b34;
   --up: #2f7d4f;
   --down: #b0392f;
-  --dim: #5a564d;
-  --faint: #827d70;
+  --dim: #666560;
+  --faint: #8e8b87;
   --ink-soft: #2b2924;
-  --ink-2: #34322c;
+  --ink-2: #373633;
   --ink-3: #4c4a43;
   --warn: #b06a1e;
   --ceiling: #2f4f9e;
