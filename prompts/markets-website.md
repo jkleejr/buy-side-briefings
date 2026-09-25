@@ -11,6 +11,12 @@ Reports should read like a **professional research note**, not a blog post or in
 - **Third-person analytical voice.** Avoid "I think," "my view," "a smart bear of MY call would say." Use "the data suggests," "the setup implies," "counter-argument:" etc.
 - **No meta or introspective phrases.** Avoid "the most uncomfortable observation," "am I getting too confident," "honest watch," "the meta thing is," "gut check." These belong in a personal blog, not a research note.
 - **Lead with the finding and the data.** Every section opens with a finding or claim, not a framing.
+- **Every sentence is finished and ends with a full stop.** That includes each
+  `supporting_data` label, each bullet in the read, each Movers and Next 5
+  Trading Days paragraph, and each What to watch setup. A line that ends on a
+  bare word ("…as in Treasuries", "…offered in public") reads as text that was
+  cut off, and readers take it as an unfinished report (owner, 2026-09-25).
+  Before committing, check the last character of every one of those lines.
 - **Balanced, factual, not swayed.** Weigh the evidence on both sides inside
   the read itself and state only what it supports. Separate what happened
   (sourced numbers) from what it means (interpretation), and make clear which
@@ -178,13 +184,14 @@ State the number, then what it means, in the same breath:
 >
 > ✓ ISM Services rose to 55.4% while its employment index fell to 47.8 — the
 >   economy is expanding on activity the labour market is no longer hiring for,
->   and prices paid at 72.6 says the cost side has not cooled with it
+>   and prices paid at 72.6 says the cost side has not cooled with it.
 
 Same numbers, one fewer of them, and the reader now knows why the print
 mattered. Cut the secondary sub-indices that carry no argument; keep the two or
-three that do and say what they add up to. The consequence goes AFTER an em
-dash, never after a semicolon — the glance bullet truncates on the first
-semicolon, so anything you put there is dropped from the top of the report.
+three that do and say what they add up to. The consequence goes after an em
+dash, and the label ends with a full stop. The glance bullets and "News today"
+show each label's whole first sentence, so keep the point and its meaning in
+that first sentence.
 
 **What those entries are about — in priority order.** The home page is a front
 page. Rank candidates by how much they matter to someone deciding where markets
