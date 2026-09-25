@@ -124,18 +124,22 @@ function Hero({ brief }: { brief: BriefView }) {
           switch pinned to the right edge above. */}
       <Link
         href={brief.href}
-        className="group mt-6 flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-right font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--lapis)]"
+        className="group mt-6 flex justify-end text-right font-mono text-[12.5px] font-semibold uppercase tracking-[0.1em] text-[var(--lapis)]"
       >
-        {/* The label is one unit: without nowrap the phone broke it after
+        {/* One span carries the underline, so it runs unbroken across the
+            label, the space and the read-time; it used to be two flex items
+            with a gap between them, each underlined on its own. Inside it,
+            each unit is nowrap: without that the phone broke the label after
             "MORNING'S" and stranded the read-time on its own line, which read
-            as two separate links. Underlined per span on hover, since the
-            link is a flex row and an underline set on it would not reach
-            its children. */}
-        <span className="whitespace-nowrap decoration-1 underline-offset-4 group-hover:underline group-focus-visible:underline">
-          Read {brief.window === "morning" ? "this morning's" : "tonight's"}{" "}
-          report
+            as two separate links. A narrow screen can still wrap at the space
+            between the two units. */}
+        <span className="decoration-1 underline-offset-4 group-hover:underline group-focus-visible:underline">
+          <span className="whitespace-nowrap">
+            Read {brief.window === "morning" ? "this morning's" : "tonight's"}{" "}
+            report
+          </span>{" "}
+          <span className="whitespace-nowrap">~ {brief.readMin} min →</span>
         </span>
-        <span className="whitespace-nowrap decoration-1 underline-offset-4 group-hover:underline group-focus-visible:underline">~ {brief.readMin} min →</span>
       </Link>
     </div>
   );
