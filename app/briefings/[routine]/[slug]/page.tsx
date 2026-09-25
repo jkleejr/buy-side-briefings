@@ -169,7 +169,7 @@ function BriefingMarkdown({ source }: { source: string }) {
         a: ({ children, href }) => (
           <a
             href={href}
-            className="text-[var(--cyan)] underline underline-offset-4 hover:text-[var(--lapis)]"
+            className="text-[var(--foreground)] underline underline-offset-4 hover:text-[var(--lapis)]"
             target="_blank"
             rel="noopener noreferrer"
           >
