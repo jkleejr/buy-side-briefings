@@ -1,0 +1,94 @@
+{
+  "routine": "markets",
+  "date": "2026-09-24",
+  "window": "night",
+  "generated_at": "2026-09-25T00:13:47Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Long-term borrowing costs top their 2007 peak, but an Iran deal report pulls stocks back to flat",
+    "label": "Close: S&P 500 7,704.13 -0.02%, Nasdaq 26,939.37 +0.01%, Dow 51,349.98 -161.61 pts (-0.31%); 30Y 5.46% (highest since 2004), 10Y ~5.15%, 2Y ~4.91%; 7Y auction 5.085%; Brent $106.60 +3.4%, WTI $94.61 +2.7%; gold ~$4,251 -0.85%; BTC ~$84,300",
+    "rationale_short": "The thirty-year Treasury yield closed at 5.46%, above its 5.44% 2007 peak and the highest since 2004, after Treasury sold about $44 billion of seven-year notes at 5.085% against 5.078% in when-issued trading, with a 2.42 bid-to-cover against 2.50 last month. It was the second tailed coupon auction in two sessions, and the long end rose on a day Treasury bought back $6 billion of 2037-2046 bonds. The two-year was little changed near 4.91%, so the move was led by the long end rather than by the October meeting, and Reuters reported Japanese and European yields at multi-year highs too.\n\nEquities did not follow. Nasdaq 100 futures were down 1% before the open. The Nasdaq Composite closed up 0.01% and the S&P 500 down 0.02% after Reuters reported US and Iranian negotiators in New York exploring a phased deal in which Tehran reopens the Strait of Hormuz and Washington lifts its blockade. The same report named the obstacle: neither side wants to give up its leverage first. Oil read it more cautiously than stocks did. Brent still settled 3.4% higher at $106.60, off its highs. New York Fed President John Williams called another increase by year-end 'reasonable', and CME FedWatch put October hike odds at 77.5%, up from about 73%.\n\nThis morning's report was right on bonds, where the thirty-year cleared 5.44%, and wrong on stocks, where one Hormuz headline outweighed the rates move. August PCE is scheduled for September 30, not Friday as earlier reports carried. The first hard inflation test therefore lands on the same day as Micron's fiscal fourth quarter.\n\nWhat would change the picture: a thirty-year close back under 5.40% would say two weak auctions and one survey drove the break and the buyback is enough. A confirmed phased Hormuz sequence that takes Brent back below $100 would remove one of the two inputs behind the long-end selling. If the report stays a report, the equity recovery rests on nothing the bond or oil markets have accepted.",
+    "lede_short": "The thirty-year Treasury yield closed at 5.46%, above its 2007 peak and the highest since 2004, after a second weak auction in two days and with October hike odds up to 77.5%. Stocks shrugged it off: a Reuters report of a phased US-Iran deal to reopen Hormuz took Nasdaq futures from down 1% to a flat close, though Brent still rose 3.4% to $106.60. A thirty-year back under 5.40% would say bonds have come round to the equity view.",
+    "supporting_data": [
+      {
+        "label": "The thirty-year Treasury yield rose to 5.46%, above its 5.44% 2007 peak and the highest since 2004, as Japan's ten-year hit its highest since 1996 and European yields set multi-year highs — the long-end selloff is global, so a US-only explanation such as auction supply does not cover it",
+        "url": "https://money.usnews.com/investing/news/articles/2026-09-24/u-s-30-year-bond-yield-rises-to-highest-since-2004-as-selloff-deepens"
+      },
+      {
+        "label": "US and Iranian negotiators in New York are exploring a phased deal in which Tehran reopens the Strait of Hormuz and Washington lifts its blockade, Reuters reported — the headline took Nasdaq futures from down 1% to a flat close, though the report says neither side wants to give up its leverage first",
+        "url": "https://www.usnews.com/news/world/articles/2026-09-24/us-and-iran-discuss-phased-deal-to-reopen-hormuz-and-end-us-blockade-sources-say"
+      },
+      {
+        "label": "Treasury sold about $44 billion of seven-year notes at 5.085% against 5.078% in when-issued trading, bid-to-cover 2.42 against 2.50 last month — the second tailed coupon auction in two sessions, on a day a $6 billion buyback did not stop the long end rising",
+        "url": "https://www.marketscreener.com/news/seven-year-u-s-treasury-auction-yield-hits-33-year-high-ce785adfd988f42c"
+      },
+      {
+        "label": "New York Fed President John Williams called another rate increase by year-end 'reasonable' and CME FedWatch put October hike odds at 77.5%, up from about 73% after Barr — a second voter now describes a further hike as the default path",
+        "url": "https://www.cnbc.com/2026/09/24/feds-williams-another-rate-hike-by-year-end.html"
+      },
+      {
+        "label": "Brent rose 3.4% to settle at $106.60 and WTI 2.7% to $94.61, off session highs after the Hormuz report — oil trimmed its gain on the deal headline without reversing it, a more cautious read than stocks gave the same news",
+        "url": "https://www.cnbc.com/2026/09/24/oil-iran-crude-kepler-trump-us-un-.html"
+      },
+      {
+        "label": "Akamai agreed a seven-year, $11.6 billion cloud commitment with Anthropic and is raising 2026 capex by about $1.7 billion, memory included — shares rose about 20% after hours, and the memory purchases are a demand signal six days before Micron reports",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001086222/000119312526401048/d288154dex991.htm"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7704.13, "change_pct": -0.02, "as_of": "2026-09-24T20:00:00.000Z" },
+    "nasdaq": { "level": 26939.37, "change_pct": 0.01, "as_of": "2026-09-24T20:00:00.000Z" },
+    "vix": { "level": null, "change_pct": null, "as_of": "2026-09-24T20:00:00.000Z" },
+    "ust10y": { "level": 5.15, "change_bps": 3, "as_of": "2026-09-24T20:00:00.000Z" },
+    "dxy": { "level": null, "change_pct": null, "as_of": "2026-09-24T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.46, "trigger_above": 5.44, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.15, "trigger_above": 5.22, "unit": "%" },
+    { "name": "DXY", "value": 101.0, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,704", "value": 7704.13, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4250.85, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "MU",
+      "note": "Reports fiscal Q4 on September 30 after the close, consensus near $50.8bn revenue and $31.43 adjusted EPS, on the same day as August PCE. Akamai's capex increase for its Anthropic deal explicitly includes memory purchases.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "The US-China truce was extended to January 10, but Trump said Blackwell sales to China were not discussed and broad advanced-chip export blocks stay, so the China data-center assumption in current guidance is unchanged.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ORCL",
+      "note": "Fell about 4% after sending a force majeure notice to a Blue Owl unit on the New Mexico Project Jupiter data center, citing power delays. Oracle says the project remains on schedule.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The long bond closed at 5.46%, above the 5.44% 2007 peak and the highest since 2004, after a second tailed coupon auction in two sessions and despite a $6 billion Treasury buyback in the 2037-2046 sector. The two-year was little changed near 4.91%, so the move is in the long end rather than in October meeting odds. One close above the peak is a break; two or three would confirm it.",
+      "entry": "Thirty-year 5.46% against the 5.44% 2007 peak and 5.40% Wednesday close; seven-year auction stop 5.085%.",
+      "invalidation": "A close back under 5.40% would say two weak auctions and one survey drove the break and the buyback is sufficient. Holding above 5.44% through Monday and Tuesday, with no coupon auction scheduled, would say the demand problem is not about supply.",
+      "horizon": "This week through the September 30 PCE"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent settled 3.4% higher at $106.60 even after Reuters reported US-Iran negotiators discussing a phased Hormuz reopening, so oil treated the report as a possibility, not a deal. Stocks recovered their morning losses on the same headline. The seven-day window on the reported Iranian offer closes September 29.",
+      "entry": "Brent $106.60 against $103.08 Wednesday and the $100 level; WTI $94.61.",
+      "invalidation": "A confirmed phased sequence taking Brent back under $100 would remove one of the two inputs behind the long-end selling. Brent holding above $106 through September 29 would say the market does not expect the reopening on that timetable.",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "Micron into fiscal Q4",
+      "thesis": "Micron reports on September 30 after the close, hours after August PCE, with consensus near $50.8 billion of revenue and $31.43 adjusted EPS. Akamai's added memory purchases for its Anthropic deal and Bank of America's higher Nebius estimates say AI-infrastructure demand is still being priced higher while the ten-year sits above 5%.",
+      "entry": "Consensus $50.8bn revenue and $31.43 adjusted EPS; ten-year about 5.15%; October hike odds 77.5%.",
+      "invalidation": "A hot core PCE the same morning would test the memory trade on valuation regardless of the print. An in-line PCE and a beat would say demand is outrunning the discount rate.",
+      "horizon": "Through September 30"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-24-night.mdx"
+}
