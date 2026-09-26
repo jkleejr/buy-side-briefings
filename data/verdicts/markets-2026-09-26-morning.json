@@ -1,0 +1,101 @@
+{
+  "routine": "markets",
+  "date": "2026-09-26",
+  "window": "morning",
+  "generated_at": "2026-09-26T12:47:29Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "🛢️",
+    "headline": "Trump reportedly turns down Iran's plan to reopen Hormuz after oil's Friday drop",
+    "label": "Weekend: S&P 500 closed Fri at 7,743.41 (+0.51%, week +0.6%), Nasdaq 27,068.72 (+0.5%); 10Y 5.163%, 30Y 5.488% (highest close since 2004); Brent $104.32 (-2.14%) before the rejection report; Oct hike odds ~76%; BTC ~$84,060 Sat.",
+    "conviction": "low",
+    "horizon": "five trading sessions, through Friday October 2",
+    "rationale_short": "What happened: Brent fell 2.14% to $104.32 on Friday, and the Dow rose 0.93% to end a three-week losing streak, while Iran's seven-day plan to reopen the Strait of Hormuz was on the table. After that, the Wall Street Journal reported, citing US officials, that President Trump had rejected the plan and told aides he expects bombing to resume after the November midterms. Free outlets including France 24 carried the report. The White House has not responded publicly. Oil and stock futures have not traded since, so no market has priced it yet.\n\nWhat it means: part of Friday's drop in oil rested on a deal that now looks less likely. Two things limit that reading. The report comes from unnamed officials, not a formal US answer. And Brent had given back only about 2% of its rise, so Friday priced a possible deal, not a signed one. The bond market had already moved away from oil. The thirty-year closed at 5.488%, its highest since 2004, on a day oil fell, and consumers' five-year inflation expectations rose to 3.4% from 3.3%. A higher oil price on Sunday night would add to a bond market that was already under strain without it.\n\nWhat would change the picture: a formal US reply, or a counter-offer before Iran's reported window closes on September 29, would reopen the deal path. On the calendar, August PCE on September 30 is the first hard inflation data against about 76% odds of an October hike, and September payrolls follow on October 2. This read is lower-conviction than usual: it is a weekend, the rejection is a single anonymously sourced report, and this run could not open the underlying articles, only search summaries that several outlets agree on.",
+    "lede_short": "Oil fell 2% on Friday partly on Iran's seven-day plan to reopen Hormuz. The Wall Street Journal then reported, citing US officials, that Trump had rejected it, and no market has traded since. With the thirty-year yield already at 5.488%, its highest since 2004, a higher oil price when futures open Sunday night would add to the pressure on bonds. A formal US counter-offer before September 29 would reopen the deal path.",
+    "supporting_data": [
+      {
+        "label": "The Wall Street Journal reported, citing US officials, that Trump rejected Iran's seven-day Hormuz plan and expects bombing to resume after the midterms — the plan behind part of Friday's oil drop now looks less likely, though no formal US answer has been given.",
+        "url": "https://www.france24.com/en/middle-east/20260926-trump-reportedly-rejects-iran-s-7-day-plan-to-reopen-strait-of-hormuz"
+      },
+      {
+        "label": "Brent settled 2.14% lower at $104.32 and WTI 2.33% lower at $92.41 on Friday, before the rejection report — the first oil price after the news comes when futures reopen Sunday evening.",
+        "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "The thirty-year Treasury yield closed Friday at 5.488%, its highest since 2004, on a day oil fell — bonds were already under strain without help from oil, so a rise in oil would add to it.",
+        "url": "https://www.cnbc.com/2026/09/25/treasury-yields-bonds-debt.html"
+      },
+      {
+        "label": "CME FedWatch put the chance of an October 28 rate hike at about 76% at Friday's close — the market expects another hike before any of next week's data is in.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "August core PCE is forecast to rise 0.3% on the month and 3.2% on the year, due September 30, with September payrolls forecast at 100,000 on October 2 — the week's two hard tests of whether a 76% chance of a hike is justified.",
+        "url": "https://www.cmcmarkets.com/en-gb/news-and-analysis/the-week-ahead-us-pce-jobs-report-micron-earnings"
+      },
+      {
+        "label": "Final September consumer sentiment showed five-year inflation expectations at 3.4%, up from 3.3% — long-run expectations moving is the survey result a Fed that is raising rates responds to.",
+        "url": "https://data.sca.isr.umich.edu/"
+      },
+      {
+        "label": "Bitcoin traded near $84,060 Saturday morning in an $83,150-$84,600 24-hour range, about flat — the one market open over the weekend shows no reaction to the Iran report.",
+        "url": "https://www.coinbase.com/price/bitcoin"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7743.41, "change_pct": 0.51, "as_of": "2026-09-25T20:00:00.000Z" },
+    "nasdaq": { "level": 27068.72, "change_pct": 0.5, "as_of": "2026-09-25T20:00:00.000Z" },
+    "vix": { "level": 15.67, "change_pct": null, "as_of": "2026-09-25T20:00:00.000Z" },
+    "ust10y": { "level": 5.163, "change_bps": 1, "as_of": "2026-09-25T20:00:00.000Z" },
+    "dxy": { "level": 101.15, "change_pct": null, "as_of": "2026-09-25T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.488, "trigger_above": 5.44, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.163, "trigger_above": 5.22, "unit": "%" },
+    { "name": "DXY", "value": 101.15, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,743", "value": 7743.41, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4284.2, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "MU",
+      "note": "Reports fiscal Q4 on September 30 after the close, the same day as August PCE. Consensus is about $50.8 billion in revenue and $31.45 in earnings per share, and options price a move of about 9%.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Closed Friday at $630.12, up 188% in 2026. Its reported price increase takes effect October 1, the first test of the pricing power that rally assumes.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XOM",
+      "note": "Energy stocks fell with oil on Friday. Monday's open is the first stock market reaction to the reported rejection of Iran's Hormuz plan.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent fell 2.14% to $104.32 on Friday partly on Iran's seven-day plan, which the Wall Street Journal reports Trump has since rejected. The report is anonymously sourced and has no formal US answer behind it, so the Sunday open is the first measure of how much weight the market gives it.",
+      "entry": "Brent $104.32 Friday settle against Thursday's $106.60 and the $100 level.",
+      "invalidation": "A settle back above $106.60 would mean the market has taken out the whole deal premium. A formal US counter-offer before September 29 would put $100 back in view.",
+      "horizon": "Through September 29"
+    },
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The long bond closed at 5.488%, a second close above the 5.44% 2007 high, on a day oil fell 2%. Inflation expectations, not oil alone, are now the main input, and the rejection report could add oil back on top.",
+      "entry": "Thirty-year 5.488% against 5.44% and 5.40%; ten-year 5.163% against this week's 5.22% high.",
+      "invalidation": "A close under 5.40% would say this week was auctions and one survey. A third close above 5.44% on Monday, a day with no coupon auction, would confirm the break.",
+      "horizon": "Through the September 30 PCE"
+    },
+    {
+      "asset": "August PCE and September payrolls against October hike odds",
+      "thesis": "FedWatch prices about 76% odds of an October 28 hike. Core PCE is forecast at 0.3% on the month and 3.2% on the year, and payrolls at 100,000 after August's 162,000.",
+      "entry": "October odds about 76%; ten-year 5.163%.",
+      "invalidation": "Core PCE at or below 0.2% with payrolls under forecast would test the hike case. Core at 0.4% or higher with payrolls near August's pace would leave little doubt about October.",
+      "horizon": "September 30 to October 2"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-26-morning.mdx"
+}
