@@ -1,0 +1,94 @@
+{
+  "routine": "markets",
+  "date": "2026-09-25",
+  "window": "night",
+  "generated_at": "2026-09-26T00:12:49Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil falls and stocks finish a winning week, but long-term borrowing costs hit another two-decade high",
+    "label": "Close: S&P 500 7,743.41 +0.51%, Nasdaq 27,068.72 +0.5%, Dow 51,828.62 +478.64 pts (+0.93%); 30Y 5.488% (highest close since 2004), 10Y 5.163%; Oct hike odds ~76%; Brent $104.32 -2.14%, WTI $92.41 -2.33%; gold ~$4,284; DXY ~101.15.",
+    "rationale_short": "Oil fell and stocks rose, but the long bond did not follow. Brent settled 2.14% lower at $104.32 as Iran's seven-day Hormuz plan stayed on the record, and the Dow gained 478.64 points to end a three-week losing streak. The S&P 500 rose 0.6% on the week and the Nasdaq 100 2.1%. The thirty-year Treasury yield still closed at 5.488%, its highest since 2004 and above Thursday's close.\n\nThis morning's report set the test: a thirty-year close at or above 5.48% with Brent lower would mean oil is no longer the main driver of the long end. That is what happened. The morning read was right on oil and stocks and wrong on bonds. Final September sentiment confirmed year-ahead inflation expectations at 4.6% and moved five-year expectations up to 3.4% from 3.3%. August durable goods were flat against a forecast 0.4% fall. CME FedWatch October hike odds went back to about 76% from 71% before the open, even though oil fell further through the day.\n\nWhat would change the picture: a thirty-year close under 5.40% would say this week was two weak auctions and one survey. A third close above 5.44% on Monday, with no coupon auction, would confirm the break. August PCE on September 30 is the first hard inflation data against 76% October odds.",
+    "lede_short": "Oil fell 2% and stocks finished a winning week, but the thirty-year Treasury yield still closed at 5.488%, its highest since 2004. Consumers' year-ahead inflation expectations held at 4.6% and October hike odds went back to about 76%, so the long end is now pricing inflation expectations rather than oil. A thirty-year close under 5.40% would end the split between stocks and bonds.",
+    "supporting_data": [
+      {
+        "label": "The thirty-year Treasury yield closed at 5.488% and the ten-year at 5.163% — the long end rose on a day oil fell 2%, so the week's bond selling no longer depends on oil alone.",
+        "url": "https://www.cnbc.com/2026/09/25/treasury-yields-bonds-debt.html"
+      },
+      {
+        "label": "Final September consumer sentiment rose to 48.1, with year-ahead inflation expectations at 4.6% and five-year expectations up to 3.4% from 3.3% — long-run expectations moving is the survey result a Fed on a hiking path reacts to.",
+        "url": "https://data.sca.isr.umich.edu/"
+      },
+      {
+        "label": "CME FedWatch put the chance of an October 28 hike at about 76%, up from 71% before the open — the morning's drop in hike odds, which followed oil, was reversed by the close.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Brent fell 2.14% to $104.32 and WTI 2.33% to $92.41 as the Dow rose 0.93% to end a three-week losing streak — stocks took the oil relief, while the long bond rose anyway.",
+        "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "August durable goods orders were flat at $338.6 billion against a forecast 0.4% fall, with orders excluding transportation up 0.3% — the goods economy is holding up, which gives the Fed no growth reason to skip October.",
+        "url": "https://www.census.gov/manufacturing/m3/adv/current/index.html"
+      },
+      {
+        "label": "Atlas Energy Solutions rose 18.2% after disclosing about $613.5 million of cost reimbursement agreements with an unnamed frontier AI lab for power equipment — the second supplier in two days to book AI-lab data-center spending.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001984060/000119312526401582/aesi-ex99_1.htm"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7743.41, "change_pct": 0.51, "as_of": "2026-09-25T20:00:00.000Z" },
+    "nasdaq": { "level": 27068.72, "change_pct": 0.5, "as_of": "2026-09-25T20:00:00.000Z" },
+    "vix": { "level": 15.67, "change_pct": null, "as_of": "2026-09-25T20:00:00.000Z" },
+    "ust10y": { "level": 5.163, "change_bps": 1, "as_of": "2026-09-25T20:00:00.000Z" },
+    "dxy": { "level": 101.15, "change_pct": null, "as_of": "2026-09-25T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.488, "trigger_above": 5.44, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.163, "trigger_above": 5.22, "unit": "%" },
+    { "name": "DXY", "value": 101.15, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,743", "value": 7743.41, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4284.2, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "MU",
+      "note": "Reports fiscal Q4 on September 30 after the close, the same day as August PCE, with consensus near $50.8bn revenue and $31.43 adjusted EPS.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Closed at $630.12, up 188% in 2026 against about 22% for Nvidia, the widest gap of the AI boom. The reported price increase takes effect October 1.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "META",
+      "note": "Fell 3.3% Friday but gained about 12% on the week after the Muse agent launch.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The long bond closed at 5.488%, its highest since 2004 and a second close above the 5.44% 2007 peak, on a day Brent fell 2.14%. The input has shifted from oil to inflation expectations, with the year-ahead survey measure at 4.6% and five-year at 3.4%.",
+      "entry": "Thirty-year 5.488% against the 5.44% 2007 peak and 5.40%; ten-year 5.163% against this week's 5.22% high.",
+      "invalidation": "A close under 5.40% would say this week was auctions and one survey. A third close above 5.44% on Monday, with no coupon auction, would confirm the break.",
+      "horizon": "Through the September 30 PCE"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent fell 2.14% to $104.32 on Iran's seven-day Hormuz plan, which Washington has not accepted, while Houthi missiles targeted Taif and Yanbu. The drop rests on an offer, not an agreement.",
+      "entry": "Brent $104.32 against Thursday's $106.60 and the $100 level.",
+      "invalidation": "A US acceptance that starts the seven-day clock would put Brent under $100 in reach. No answer by September 29 leaves the drop without a deal under it.",
+      "horizon": "Through September 29"
+    },
+    {
+      "asset": "August PCE against October hike odds",
+      "thesis": "FedWatch prices about 76% odds of an October 28 hike before the first hard inflation data since the repricing. Survey expectations at 4.6% have raised the bar for a benign print.",
+      "entry": "October odds about 76%; ten-year 5.163%.",
+      "invalidation": "A soft core PCE would test whether the hike case rests on data or on expectations alone. A print at or above consensus would put the ten-year's 5.22% high back in play.",
+      "horizon": "September 30"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-25-night.mdx"
+}
