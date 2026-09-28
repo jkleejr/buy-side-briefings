@@ -1,0 +1,144 @@
+{
+  "routine": "markets",
+  "date": "2026-09-28",
+  "window": "morning",
+  "generated_at": "2026-09-28T12:25:57Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil jumps and the bond selloff resumes after Trump rejects Iran's Hormuz plan",
+    "label": "Pre-market: Brent ~$108.48 (+4%), WTI ~$96.16 (+4%); S&P 500 futures -0.5%, Nasdaq-100 futures -0.8%; 2Y 4.916% (+5 bp), 10Y 5.219%, 30Y 5.529%; gold ~-3% below $4,200; DXY 101.15; BTC ~$83,100.",
+    "rationale_short": "Trump's rejection of Iran's seven-day plan to reopen the Strait of Hormuz put Brent up about 4% near $108.50, above Thursday's $106.60 settle, so the market has taken out the rest of Friday's deal premium. Unlike last week, when the thirty-year rose on inflation expectations while oil fell, oil and yields are now pushing the same way: the two-year is up 5 basis points to 4.916%, the ten-year is back at last week's 5.22% high and the thirty-year trades near 5.53%. Gold's 3% fall and a two-month high in the dollar say the market is pricing higher oil through the Fed rather than as a reason to buy havens. One signal cuts the other way: October hike odds are quoted near 70-72%, below Friday's 76%. A Brent settle back under $106.60 with the thirty-year under 5.44% would say the morning moves were a reaction to headlines rather than a repricing.",
+    "lede_short": "Oil rose about 4% to near $108.50 after Trump rejected Iran's plan to reopen the Strait of Hormuz, and stock futures fell 0.5%. Unlike last week, oil and bond yields are rising together: the two-year leads, the thirty-year trades near 5.53%, and gold's 3% drop says the market is pricing this through the Fed, not as a flight to safety. A Brent settle back under $106.60 with the thirty-year under 5.44% would undo that read.",
+    "supporting_data": [
+      {
+        "label": "Brent rose about 4% to $108.48 and WTI about 4% to $96.16 after Trump rejected Iran's Hormuz conditions — Brent is back above Thursday's $106.60 settle, so Friday's deal premium is gone.",
+        "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html"
+      },
+      {
+        "label": "The two-year rose more than 5 basis points to 4.916%, the ten-year to 5.219% and the thirty-year traded at 5.529% — the front end leading ties the selloff to the Fed path, and the ten-year is back at last week's 5.22% high.",
+        "url": "https://www.cnbc.com/2026/09/28/treasury-yields-bonds-selloff.html"
+      },
+      {
+        "label": "Spot gold fell about 3% below $4,200 to its lowest since August 5 — gold falling on an escalation day says higher oil is being priced through rates, not as a reason to buy havens.",
+        "url": "https://www.fxstreet.com/news/gold-slides-nearly-3-as-fed-hike-bets-rising-treasury-yields-weigh-202609281103"
+      },
+      {
+        "label": "Dow futures fell 251 points, S&P 500 futures 0.5% and Nasdaq-100 futures 0.8% — a larger drop than Sunday night's 0.2%, led by the growth stocks most exposed to yields.",
+        "url": "https://www.cnbc.com/2026/09/27/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Nvidia added $150 billion to its buyback for a $235 billion total and is up about 1.5% pre-market while the semiconductor ETF falls about 2% — the largest chipmaker is holding up as the rest of the sector sells off on yields.",
+        "url": "https://www.cnbc.com/2026/09/28/nvidia-share-buyback-plan-gets-150-billion-boost.html"
+      },
+      {
+        "label": "The Kospi fell 2.7% as it reopened after Chuseok, with Samsung Electronics down 5.43% and SK Hynix down 5.05% — Asia's memory makers took the yield and Oracle data-center news in one session, days before Micron reports.",
+        "url": "https://www.koreatimes.co.kr/economy/20260928/kospi-sharply-down-late-monday-morning-on-chip-profit-taking"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7743.41,
+      "change_pct": -0.5,
+      "as_of": "2026-09-28T12:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 27068.72,
+      "change_pct": -0.8,
+      "as_of": "2026-09-28T12:00:00.000Z"
+    },
+    "vix": {
+      "level": 15.67,
+      "change_pct": null,
+      "as_of": "2026-09-25T20:00:00.000Z"
+    },
+    "ust10y": {
+      "level": 5.219,
+      "change_bps": 3,
+      "as_of": "2026-09-28T12:00:00.000Z"
+    },
+    "dxy": {
+      "level": 101.15,
+      "change_pct": 0.18,
+      "as_of": "2026-09-28T12:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "30Y Yield",
+      "value": 5.529,
+      "trigger_above": 5.44,
+      "unit": "%"
+    },
+    {
+      "name": "10Y Yield",
+      "value": 5.219,
+      "trigger_above": 5.22,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 101.15,
+      "trigger_above": 102.0,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,600",
+      "value": 7743.41,
+      "trigger_below": 7600.0,
+      "unit": ""
+    },
+    {
+      "name": "Gold",
+      "value": 4150.0,
+      "trigger_below": 4200.0,
+      "unit": "$/oz"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Up about 1.5% pre-market after adding $150 billion to its buyback, for a $235 billion total, and launching AI-agent containment software, while the semiconductor ETF falls about 2%.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "META",
+      "note": "Down about 3% pre-market after a gain of almost 13% last week on the Muse agent launch, with no new company news.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MU",
+      "note": "Reports fiscal Q4 on September 30. Samsung and SK Hynix fell more than 5% each in Seoul on Monday, so the print arrives against weaker memory-stock sentiment.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "XOM",
+      "note": "Up about 1.5% pre-market with Brent up 4%, less than half of oil's move.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year trades near 5.53% against Friday's 5.488% close, with oil now adding to the inflation-expectations pressure that drove last week's rise. A close above 5.44% would be the third straight above the 2007 peak.",
+      "entry": "Thirty-year 5.529% against 5.5% and 5.44%; ten-year 5.219% against last week's 5.22% high.",
+      "invalidation": "A close under 5.44% would say the oil move is not reaching the long end.",
+      "horizon": "Today's close through the September 30 PCE"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent is up about 4% near $108.50 after the rejection, above Thursday's $106.60 settle, as Iran holds its terms and Qatari mediators are reported to meet both sides.",
+      "entry": "Brent ~$108.48 against $106.60 and Friday's $104.32 settle.",
+      "invalidation": "A settle back under $106.60, or a formal US counter-offer, would put Friday's $104.32 back in range.",
+      "horizon": "This week"
+    },
+    {
+      "asset": "Semiconductors (SOXX, MU, AMD)",
+      "thesis": "The semiconductor ETF is down about 2% pre-market and the Kospi's memory makers fell more than 5%, while Nvidia rises on its buyback. Rates, not company news, are driving most of the sector's move.",
+      "entry": "SOXX about -2% pre-market; Samsung -5.43%, SK Hynix -5.05% in Seoul.",
+      "invalidation": "Micron's fiscal Q4 on September 30 and AMD's October 1 price increase test whether higher rates are hitting AI demand or only valuations.",
+      "horizon": "September 30 to October 1"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-28-morning.mdx"
+}
