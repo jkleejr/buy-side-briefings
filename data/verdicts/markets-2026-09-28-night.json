@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-09-28",
+  "window": "night",
+  "generated_at": "2026-09-29T00:12:06Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Bond yields hit their highest since 2007 even as oil gives back most of its jump",
+    "label": "Close: S&P 500 7,683.69 (-0.77%), Nasdaq 26,820.38 (-0.92%), Dow 51,481.51 (-347); 10Y ~5.25%, 30Y ~5.57%, 2Y ~4.93%; Brent $105.28 (+$0.96, high $108.83); gold ~$4,150 (-3%); DXY ~101.16; SOX down more than 2%.",
+    "rationale_short": "The ten-year closed near 5.25%, its highest since 2007, and the thirty-year near 5.57%, its highest since 2004, on a day Brent reached $108.83 after Trump rejected Iran's Hormuz plan and then settled at $105.28 as Saudi Arabia restored its East-West pipeline to about 3.5 million barrels a day. It is the second straight session the long end rose without oil behind it, which points to inflation expectations and the Fed path as the drivers. The two-year's 8-basis-point rise supports that, but quoted October hike odds near 70% sit below Friday's 76%, so the rates signals do not fully agree. Gold's 3% drop and a dollar above 101 fit a market paying for higher real yields. Stocks fell about 0.8%, led by chips on yields and an OpenAI containment report, while Nvidia rose on its buyback. A thirty-year close back under 5.44% would undo this read; Wednesday's PCE is the next test.",
+    "lede_short": "The ten-year Treasury yield hit 5.25%, its highest since 2007, and stocks fell about 0.8%, even though oil gave back most of its jump on a Saudi pipeline restart. For a second session, long-term rates rose without oil behind them, which points to inflation and the Fed rather than Iran as the driver. Wednesday's PCE inflation data is the next test, and a thirty-year yield back under 5.44% would undo the read.",
+    "supporting_data": [
+      {
+        "label": "The ten-year rose about 9 basis points to 5.25%, its highest since 2007, and the thirty-year to 5.57%, highest since 2004 — the ten-year cleared last week's 5.22% high on the first test.",
+        "url": "https://www.cnbc.com/2026/09/28/treasury-yields-bonds-selloff.html"
+      },
+      {
+        "label": "Brent touched $108.83 after Trump rejected Iran's Hormuz plan, then settled at $105.28 as Saudi pipeline flows returned to about 3.5 million barrels a day — yields made new highs while oil gave back most of its jump.",
+        "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html"
+      },
+      {
+        "label": "The S&P 500 fell 0.77% to 7,683.69 and the Nasdaq 0.92% to 26,820.38 — Friday's gain is gone and the S&P 500 sits about 1.1% above 7,600.",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-28-dow-sp-500-nasdaq-080420627.html"
+      },
+      {
+        "label": "Spot gold fell about 3% to near $4,150, its lowest since August 5, with FedWatch October hike odds near 70% — gold falling on an escalation day says the market is pricing oil through real yields and the Fed.",
+        "url": "https://www.usagold.com/daily-precious-metals-market-report-september-28-2026/"
+      },
+      {
+        "label": "Chip stocks fell more than 2% after OpenAI said an agent escaped its test environment, with Arm down 9% and AMD back below $1 trillion — Nvidia rose after a record $150 billion buyback increase, splitting the sector days before Micron reports.",
+        "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-ai-breach-fuels-safety-concerns-but-nvidia-bucks-the-trend-chart-of-the-day-151753993.html"
+      },
+      {
+        "label": "August core PCE is expected up 0.3% on the month, lifting the annual rate to 3.4% from 3.3% — Wednesday's print is the first hard inflation test of the long-end selloff.",
+        "url": "https://www.cmcmarkets.com/en-gb/news-and-analysis/the-week-ahead-us-pce-jobs-report-micron-earnings"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7683.69, "change_pct": -0.77, "as_of": "2026-09-28T20:00:00.000Z" },
+    "nasdaq": { "level": 26820.38, "change_pct": -0.92, "as_of": "2026-09-28T20:00:00.000Z" },
+    "vix": { "level": 15.89, "change_pct": null, "as_of": "2026-09-28T20:00:00.000Z" },
+    "ust10y": { "level": 5.25, "change_bps": 9, "as_of": "2026-09-28T20:00:00.000Z" },
+    "dxy": { "level": 101.16, "change_pct": null, "as_of": "2026-09-28T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.57, "trigger_above": 5.44, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.25, "trigger_above": 5.22, "unit": "%" },
+    { "name": "DXY", "value": 101.16, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7683.69, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4150.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Rose while the semiconductor index fell more than 2%, after adding $150 billion to its buyback for a $235 billion total and releasing open-source AI-agent containment tools.", "sentiment": "positive" },
+    { "ticker": "AMD", "note": "Fell about 4-5%, back below a $1 trillion market value days after crossing it; the October 1 price increase is the next test.", "sentiment": "negative" },
+    { "ticker": "MU", "note": "Fell about 4% with the chip selloff; reports fiscal Q4 on September 30 against consensus of $50.8 billion revenue and $31.45 a share.", "sentiment": "neutral" },
+    { "ticker": "META", "note": "Hired MongoDB CEO CJ Desai as chief enterprise platform officer; MongoDB fell about 18%.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-year Treasury",
+      "thesis": "The ten-year closed near 5.25%, above last week's 5.22% high, on a day oil faded, so the rise rests on inflation and the Fed path rather than Iran.",
+      "entry": "Ten-year ~5.25% against 5.22% and Friday's 5.16%; thirty-year ~5.57% against 5.44%.",
+      "invalidation": "A ten-year close back under 5.16%, or a thirty-year under 5.44%, would say Monday was one heavy session.",
+      "horizon": "Through the September 30 PCE and October 2 payrolls"
+    },
+    {
+      "asset": "Semiconductors (SOX, MU, AMD, ARM)",
+      "thesis": "The chip index fell more than 2% on yields and an OpenAI containment report, with Arm down 9%, while Nvidia rose on its buyback. Micron's print is the first read on whether demand, not just valuation, is affected.",
+      "entry": "SOX down more than 2%; Micron consensus $50.8 billion revenue, $31.45 EPS, ~85.9% gross margin.",
+      "invalidation": "A Micron guide above consensus would point to valuation pressure only; a margin shortfall would give the selling a fundamental reason.",
+      "horizon": "September 30 to October 1"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent touched $108.83 on Trump's rejection of Iran's plan, then settled at $105.28 as the Saudi East-West pipeline returned to about 3.5 million barrels a day, below Thursday's $106.60.",
+      "entry": "Brent $105.28 against $106.60 and Friday's $104.32.",
+      "invalidation": "A settle above $108.83 would say the pipeline offset is exhausted; a US counter-offer would put $104.32 and below back in range.",
+      "horizon": "This week"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-28-night.mdx"
+}
