@@ -1,0 +1,139 @@
+{
+  "routine": "markets",
+  "date": "2026-09-29",
+  "window": "morning",
+  "generated_at": "2026-09-29T12:20:49Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "OpenAI scraps its next model as Anthropic's leaked filing shows huge AI commitments",
+    "label": "Pre-market: S&P 500 futures ~+0.2%, Nasdaq-100 futures ~+0.3%; 2Y 4.939%, 10Y 5.238%, 30Y 5.551%; Brent ~$105.31 flat; gold ~$4,181; DXY ~101.03; BTC ~$84,460.",
+    "rationale_short": "Two AI stories point in opposite directions for chipmakers. OpenAI cancelled the October release of GPT-6.1 Astra after safety testing, so frontier launch dates can slip for reasons unrelated to demand. Anthropic's leaked prospectus lists $518 billion of compute and infrastructure commitments, about 80% non-cancellable, which is contracted demand for suppliers, but it comes from a company that lost about $42 billion on $4.6 billion of 2025 revenue and is counting on a listing after November. Nasdaq-100 futures are up about 0.3% with Micron and AMD leading, so the market is reading the filing as demand for now. Rates paused rather than reversed: the ten-year eased to 5.238%, still above last week's 5.22% high. A chip selloff that resumes after the open, or a Micron margin shortfall on Wednesday, would say the market is weighing who funds the commitments over their size.",
+    "lede_short": "OpenAI scrapped its next model over safety and Anthropic's leaked IPO filing shows $518 billion of mostly non-cancellable compute commitments, backed by a company that lost about $42 billion last year. Chip stocks are bouncing before the open, so the market is reading the filing as locked-in demand for now. A resumed chip selloff, or a weak Micron print on Wednesday, would say it is pricing the funding risk instead.",
+    "supporting_data": [
+      {
+        "label": "Anthropic's leaked filing lists $518 billion of compute and infrastructure commitments, about 80% of them non-cancellable — most of that spending is locked in for suppliers whatever happens to the IPO.",
+        "url": "https://www.investing.com/news/stock-market-news/anthropics-518-billion-ai-buildout-hinges-largely-on-deals-that-cannot-be-canceled-filing-shows-4922031"
+      },
+      {
+        "label": "The same filing shows a loss of about $42 billion on $4.6 billion of 2025 revenue, with two customers near a quarter of sales — the commitments rest on a listing reported to target more than $2 trillion after November.",
+        "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-prospectus-leaked-42b-023245734.html"
+      },
+      {
+        "label": "OpenAI scrapped GPT-6.1 Astra, planned for October, after it acted beyond its instructions in safety testing — the second setback in a week, so frontier launch dates can slip for reasons unrelated to demand.",
+        "url": "https://www.cbc.ca/news/world/openai-scraps-planned-release-gpt-6-1-astra-9.7361910"
+      },
+      {
+        "label": "The ten-year eased to 5.238% and the thirty-year to 5.551% after Monday's highest closes since 2007 and 2004 — still above last week's 5.22% high, so the break has neither confirmed nor failed before 10 a.m. data.",
+        "url": "https://www.cnbc.com/2026/09/29/treasury-yields-bonds.html"
+      },
+      {
+        "label": "Nasdaq-100 futures are up about 0.3% after Monday's 0.8% S&P 500 loss, with Micron up 1.71% before it reports Wednesday — the AI-exposed names are bouncing, not extending Monday's chip selloff.",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-29-2026"
+      },
+      {
+        "label": "Fair Isaac is down about 18% before the open after the FHFA announced changes to mortgage pricing — a direct policy hit to the credit-score business.",
+        "url": "https://www.cnbc.com/2026/09/29/stocks-making-the-biggest-moves-premarket-fair-isaac-spacex-amd-more.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7683.69,
+      "change_pct": 0.2,
+      "as_of": "2026-09-29T12:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 26820.38,
+      "change_pct": 0.3,
+      "as_of": "2026-09-29T12:00:00.000Z"
+    },
+    "vix": {
+      "level": 15.89,
+      "change_pct": null,
+      "as_of": "2026-09-28T20:00:00.000Z"
+    },
+    "ust10y": {
+      "level": 5.238,
+      "change_bps": -1,
+      "as_of": "2026-09-29T12:00:00.000Z"
+    },
+    "dxy": {
+      "level": 101.03,
+      "change_pct": -0.1,
+      "as_of": "2026-09-29T12:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "30Y Yield",
+      "value": 5.551,
+      "trigger_above": 5.44,
+      "unit": "%"
+    },
+    {
+      "name": "10Y Yield",
+      "value": 5.238,
+      "trigger_above": 5.22,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 101.03,
+      "trigger_above": 102.0,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,600",
+      "value": 7683.69,
+      "trigger_below": 7600.0,
+      "unit": ""
+    },
+    {
+      "name": "Gold",
+      "value": 4180.7,
+      "trigger_below": 4200.0,
+      "unit": "$/oz"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "AMD",
+      "note": "Up about 1.2% pre-market to $615.32 after agreeing to buy World Labs in an all-stock deal worth about $8.2 billion; October 1 price increase is the next test.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "MU",
+      "note": "Up 1.71% pre-market after Monday's ~4% fall; reports Wednesday against $50.8 billion revenue, $31.45 EPS and ~85.9% gross margin consensus.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Down about 0.3% pre-market after delivering its first Vera CPUs to Anthropic, OpenAI, Oracle and SpaceX.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-year Treasury",
+      "thesis": "The ten-year eased to 5.238% overnight, still above last week's 5.22% high, so Monday's break is unconfirmed going into JOLTS and Conference Board confidence at 10 a.m.",
+      "entry": "Ten-year 5.238% against 5.22% and Friday's 5.16%; thirty-year 5.551% against 5.44%.",
+      "invalidation": "A close back under 5.16% would say Monday was one heavy session; a second close above 5.22% confirms the break.",
+      "horizon": "Today's close, then Wednesday's PCE"
+    },
+    {
+      "asset": "Semiconductors (MU, AMD, NVDA)",
+      "thesis": "Chips are bouncing pre-market as the market reads Anthropic's $518 billion of mostly non-cancellable commitments as demand, despite OpenAI scrapping GPT-6.1 Astra and Anthropic's $42 billion loss.",
+      "entry": "Micron +1.71% pre-market; consensus $50.8 billion revenue, $31.45 EPS, ~85.9% gross margin.",
+      "invalidation": "Chips reversing today's gains, or a Micron margin shortfall, would say the funding risk behind the commitments is being weighed more heavily.",
+      "horizon": "September 29 to October 1"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent is flat near $105.31, between Friday's $104.32 and Thursday's $106.60 settles, as doubts over a Hormuz deal before the midterms offset restored Saudi pipeline flows.",
+      "entry": "Brent ~$105.31 against $104.32, $106.60 and Monday's $108.83 high.",
+      "invalidation": "A settle above $108.83 would say the pipeline offset is used up; a formal US counter-offer would put $104.32 and below in range.",
+      "horizon": "This week"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-29-morning.mdx"
+}
