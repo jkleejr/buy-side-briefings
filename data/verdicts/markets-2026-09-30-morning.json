@@ -1,0 +1,80 @@
+{
+  "routine": "markets",
+  "date": "2026-09-30",
+  "window": "morning",
+  "generated_at": "2026-09-30T12:13:32Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Long-term yields ease from a 2002 high after a top Fed official plays down an October hike",
+    "label": "Pre-market: S&P 500 futures about +0.03%, Nasdaq-100 futures about -0.07%; 2Y 4.876%, 10Y 5.221%, 30Y 5.553%; October hike odds ~50%; Brent $103.73 (+1.1%); DXY 101.37; gold ~$4,177; BTC ~$83,260.",
+    "rationale_short": "New York Fed President John Williams said he sees no need for urgency after September's hike and expects one more increase late this year, and October hike odds fell from about 70% on Monday to about 50%. The thirty-year is down 4 basis points to 5.553% after touching its highest since 2002 on Tuesday, and the ten-year is down 3 basis points to 5.221%. Stock futures are flat. Brent is up 1.1% to $103.73 and heading for a monthly gain of about 14%, so the oil input to inflation has not eased. August PCE at 8:30 a.m., with core expected at 0.3%, and Micron after the close are the day's tests. A ten-year close back above 5.29% would say the relief is over; a thirty-year close under 5.44% would say the rise in long yields is fading.",
+    "lede_short": "Long-term Treasury yields are easing from Tuesday's highest level since 2002 after New York Fed President John Williams said there is no urgency for another hike, cutting October hike odds from about 70% to about 50%. The relief comes from the Fed, not the data: August PCE at 8:30 a.m. and Micron after the close still have to confirm it. A ten-year close back above 5.29% would say the relief is over.",
+    "supporting_data": [
+      {
+        "label": "New York Fed President Williams said he sees no need for urgency and expects one more hike late this year — October hike odds fell from about 70% to about 50%, moving the likely timing toward December.",
+        "url": "https://finance.yahoo.com/economy/article/no-need-for-urgency-new-york-feds-williams-squashes-notion-of-an-october-rate-hike-202237159.html"
+      },
+      {
+        "label": "The thirty-year is down 4 basis points to 5.553% and the ten-year 3 basis points to 5.221% after Tuesday's multi-decade highs — the long end is recovering more than the short end, partly reversing Tuesday's move.",
+        "url": "https://www.cnbc.com/2026/09/30/treasury-yields-bonds-selloff.html"
+      },
+      {
+        "label": "August PCE is due at 8:30 a.m., with core expected up 0.3% and headline steady at 3.7% a year — a hotter core reading would put an October hike back in play despite Williams.",
+        "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+      },
+      {
+        "label": "Brent rose 1.1% to $103.73 after President Trump denied he would ease sanctions on Iran — it is heading for a monthly gain of about 14%, so oil is still adding to inflation pressure.",
+        "url": "https://www.aol.com/articles/oil-climbs-trump-denies-willing-013508000.html"
+      },
+      {
+        "label": "Micron reports after the close with options pricing a 7% move, below its 8% average — traders expect a smaller surprise than usual from the first big read on AI memory demand this quarter.",
+        "url": "https://www.cnbc.com/2026/09/30/micron-earnings-hit-wall-street-after-the-bell-heres-how-traders-are-positioned-into-the-report.html"
+      },
+      {
+        "label": "The US offered up to 40 million more barrels from its emergency oil reserve, the last of March's 172 million-barrel release — the reserve is nearly spent and has not held prices down.",
+        "url": "https://www.thenationalnews.com/news/us/2026/09/29/us-to-withdraw-more-oil-from-emergency-stockpile-as-country-faces-rising-fuel-prices/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7670.84, "change_pct": 0.03, "as_of": "2026-09-30T12:00:00.000Z" },
+    "nasdaq": { "level": 26797.54, "change_pct": -0.07, "as_of": "2026-09-30T12:00:00.000Z" },
+    "vix": { "level": 16.03, "change_pct": null, "as_of": "2026-09-29T20:00:00.000Z" },
+    "ust10y": { "level": 5.221, "change_bps": -3, "as_of": "2026-09-30T12:00:00.000Z" },
+    "dxy": { "level": 101.37, "change_pct": null, "as_of": "2026-09-29T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.553, "trigger_above": 5.44, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.221, "trigger_above": 5.22, "unit": "%" },
+    { "name": "DXY", "value": 101.37, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7670.84, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4177.3, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Reports fiscal Q4 after the close against consensus near $51.2 billion revenue, $31.59 adjusted EPS and ~86% gross margin, with Q1 guidance expected near $56.6 billion; options price a 7% move.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-year Treasury",
+      "thesis": "Williams's comments pulled October hike odds to about 50% and the ten-year back to 5.221%, just under the 5.22% level it broke on Monday; PCE decides whether the relief holds.",
+      "entry": "Ten-year 5.221% against Tuesday's ~5.29% high above and 5.22% at hand.",
+      "invalidation": "A close back above 5.29% would say the relief is over; a close well under 5.22% would say Monday's break has failed.",
+      "horizon": "Today's PCE through Friday's payrolls."
+    },
+    {
+      "asset": "Micron (MU)",
+      "thesis": "The first large AI-hardware print of the quarter, arriving with the chip sector down about 14% over the quarter and options pricing a smaller move than usual.",
+      "entry": "Consensus revenue ~$51.2 billion, gross margin ~86%, Q1 guide ~$56.6 billion; implied move ~7%.",
+      "invalidation": "A guide above $56.6 billion with margin held would point to rates, not demand, behind the chip drop; a margin below 86% would give it a fundamental reason.",
+      "horizon": "September 30 to October 1."
+    },
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year sits at 5.553%, 9 basis points below the 2002 high of 5.644%, easing on the Fed rather than on data.",
+      "entry": "Thirty-year 5.553% between 5.44% below and 5.644% above.",
+      "invalidation": "A close above 5.644% would take long yields to levels last seen in 2001; a close under 5.44% would say the rise is fading.",
+      "horizon": "Through Friday's payrolls."
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-30-morning.mdx"
+}
