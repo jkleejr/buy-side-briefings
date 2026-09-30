@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-09-29",
+  "window": "night",
+  "generated_at": "2026-09-30T00:11:55Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Weak consumer data pulls short-term yields down, but the 30-year touches its highest since 2002",
+    "label": "Close: S&P 500 7,670.84 (-0.16%), Nasdaq 26,797.54 (-0.09%); 2Y 4.891%, 10Y ~5.25%, 30Y ~5.57% (high above 5.61%); Brent $102.59 (-2.6%); DXY ~101.40; gold ~$4,152; BTC ~$83,400.",
+    "rationale_short": "Consumer confidence fell to 81.9, its lowest since 2014, and job openings missed at 7.079 million, so the two-year fell more than 3 basis points to 4.891% and October hike odds eased to about 64%. The long end did not follow: the thirty-year touched above 5.61%, its highest since 2002, and closed near 5.57%, while the ten-year held near 5.25%. Oil fell 2.6% the same day, so neither oil nor the Fed path explains the move; inflation worry and heavy corporate issuance are the reported reasons. Stocks slipped 0.16%. The ten-year finished about flat, so the pressure is concentrated at the longest maturity. PCE and Micron on Wednesday are the next tests, and a thirty-year close under 5.44% would undo this read.",
+    "lede_short": "Consumer confidence hit its lowest since 2014 and job openings missed, pulling the two-year yield down, yet the 30-year still touched its highest level since 2002 on a day oil fell 2.6%. That says long-term rates are being driven by inflation worry and bond supply rather than by the Fed or Iran, so weaker data alone may not bring them down. Wednesday's PCE and Micron results are the next tests; a 30-year close under 5.44% would undo this read.",
+    "supporting_data": [
+      {
+        "label": "The thirty-year topped 5.61%, its highest since June 2002, as inflation worry and heavy corporate debt supply weighed on bonds — it rose on a day the two-year fell, so the Fed path is not what is lifting it.",
+        "url": "https://www.cnbc.com/2026/09/29/treasury-yields-bonds.html"
+      },
+      {
+        "label": "Conference Board consumer confidence fell 6.7 points to 81.9, the lowest since 2014, against forecasts near 89 — respondents cited prices and fuel, so the drop is an inflation complaint as much as a jobs one.",
+        "url": "https://www.conference-board.org/topics/consumer-confidence/"
+      },
+      {
+        "label": "August job openings came in at 7.079 million, below the 7.225 million estimate and down from 7.335 million — with hires and quits unchanged, the labour market is cooling slowly rather than breaking.",
+        "url": "https://www.bls.gov/news.release/jolts.nr0.htm"
+      },
+      {
+        "label": "Brent settled down 2.6% at $102.59 and WTI down 3.5% at $89.38 on signs Middle East exports are recovering — oil fell below last week's range, and bonds still did not rally.",
+        "url": "https://finance.yahoo.com/energy/articles/oil-prices-rise-second-session-003313319.html"
+      },
+      {
+        "label": "The S&P 500 fell 0.16% to 7,670.84 and the Nasdaq 0.09%, a second straight loss but off the lows — stocks absorbed the rate move quietly, with the VIX near 16.",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-29-2026"
+      },
+      {
+        "label": "Fair Isaac fell about 25% after the FHFA put FICO and VantageScore on one mortgage pricing grid — a policy change that removes the pricing advantage behind its mortgage business.",
+        "url": "https://www.fool.com/investing/2026/09/29/why-fair-isaac-corporation-plunged-today/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7670.84, "change_pct": -0.16, "as_of": "2026-09-29T20:00:00.000Z" },
+    "nasdaq": { "level": 26797.54, "change_pct": -0.09, "as_of": "2026-09-29T20:00:00.000Z" },
+    "vix": { "level": 16.03, "change_pct": null, "as_of": "2026-09-29T20:00:00.000Z" },
+    "ust10y": { "level": 5.25, "change_bps": 0, "as_of": "2026-09-29T20:00:00.000Z" },
+    "dxy": { "level": 101.40, "change_pct": 0.18, "as_of": "2026-09-29T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.57, "trigger_above": 5.44, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.25, "trigger_above": 5.22, "unit": "%" },
+    { "name": "DXY", "value": 101.40, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7670.84, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4152.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Reports fiscal Q4 after Wednesday's close against consensus of $50.8 billion revenue, $31.45 a share and ~85.9% gross margin; the premarket chip bounce faded into Tuesday's close.", "sentiment": "neutral" },
+    { "ticker": "AMD", "note": "Its October 1 price increase on AI accelerators takes effect Thursday, the next test of pricing power after Monday's fall below a $1 trillion value.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year touched above 5.61%, its highest since 2002, while the two-year fell on weak data, so the long end is trading on inflation worry and supply rather than the Fed path.",
+      "entry": "Thirty-year ~5.57% against the 2002 high of 5.644% above and 5.44% below; two-year 4.891%.",
+      "invalidation": "A thirty-year close under 5.44% would say the supply and inflation premium is fading; a close above 5.644% would take it to levels not seen since 2001-2002.",
+      "horizon": "Through Wednesday's PCE and Friday's payrolls"
+    },
+    {
+      "asset": "Semiconductors (MU, SOX)",
+      "thesis": "The premarket chip rebound faded into the close, leaving Micron's print as the first company-level read on whether AI spending commitments are demand the supply chain can count on.",
+      "entry": "Micron consensus $50.8 billion revenue, $31.45 EPS, ~85.9% gross margin; the chip index is down about 14% this quarter.",
+      "invalidation": "A guide above consensus would point to valuation pressure only; a margin shortfall would give the chip weakness a fundamental reason.",
+      "horizon": "September 30 to October 1"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent settled at $102.59, below last week's $104.32-$106.60 range, on recovering Gulf exports rather than a deal.",
+      "entry": "Brent $102.59 against $104.32 above and $100 below.",
+      "invalidation": "A settle back above $104.32 would put the drop down to one session; a settle under $100 would start to ease the fuel-price pressure in the confidence data.",
+      "horizon": "This week"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-29-night.mdx"
+}
