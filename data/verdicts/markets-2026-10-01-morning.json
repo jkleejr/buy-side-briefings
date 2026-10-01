@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-01",
+  "window": "morning",
+  "generated_at": "2026-10-01T12:15:34Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Long-term Treasury yields climb past their 2002 highs overnight as chip stocks hold up futures",
+    "label": "Pre-market: S&P 500 futures +0.3%, Nasdaq-100 futures +0.6%, Dow futures +0.2% after a three-month low; 10Y ~5.30% (high ~5.32%), 30Y ~5.64% (high ~5.66%); Oct hike odds ~37%; Brent (Dec) $100.15; gold ~$4,205; BTC ~$83,970.",
+    "rationale_short": "The thirty-year Treasury yield traded at about 5.66% overnight, above its 2002 high of 5.644%, and the ten-year reached about 5.32%, both the highest since 2002, the day after Treasuries' worst quarter since 1994. October hike odds have fallen to about 37% from more than 70% a week ago, so the rise is coming from inflation, debt and supply worries rather than the expected Fed path. European stocks fell 1% and Dow futures touched a three-month low, but Micron's results and Google's Gemini 4 Argon launch lifted chip and AI names and Nasdaq-100 futures 0.6%. The thirty-year is back near 5.64%, so today's close decides whether the break holds; a close back under 5.60% would make the overnight high look like a spike.",
+    "lede_short": "The 30-year Treasury yield moved above its 2002 high overnight and the 10-year reached its highest since 2002, even as October rate-hike odds fell to about 37%, which points to inflation and debt worries rather than the Fed. Chip and AI stocks are holding Nasdaq futures up while European stocks and Dow futures fell. The 30-year is back at the line, so today's close decides it; a close under 5.60% would make the overnight high look like a spike.",
+    "supporting_data": [
+      {
+        "label": "Ten-year and thirty-year yields hit 5.32% and 5.66%, the highest since 2002, a day after Treasuries' worst quarter since 1994 — the thirty-year moved past the 5.644% level that marked its 2002 high.",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N45N0KO:0-dow-futures-hit-three-month-low-as-yields-surge-micron-earnings-offer-support/"
+      },
+      {
+        "label": "October hike odds fell to about 37% from more than 70% a week ago while long yields kept rising — the pressure on the long end is not coming from the expected Fed path.",
+        "url": "https://www.babypips.com/analysis/headline-mixed-us-data-october-rate-hike-odds-2026-10-01"
+      },
+      {
+        "label": "Brent rose back above $100, up 2.2% to $100.15, after a report that Chinese refiners suspended October fuel exports — the oil-driven inflation worry behind long yields gained support before the open.",
+        "url": "https://www.cnbc.com/2026/10/01/oil-prices-today-wti-brent.html"
+      },
+      {
+        "label": "The STOXX 600 fell 1% to 628.1, its lowest since mid-September, with banks leading — the bond selloff is global, not a US reaction to one data print.",
+        "url": "https://1027wbow.com/2026/10/01/european-stocks-start-quarter-lower-as-global-yields-hit-multi-year-highs/"
+      },
+      {
+        "label": "S&P 500 futures rose 0.3% and Nasdaq-100 futures 0.6%, with Nvidia, AMD and Broadcom higher after Micron's results — chip stocks are rising against higher rates while the rest of the market is not.",
+        "url": "https://www.cnbc.com/2026/09/30/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Google launched Gemini 4 Argon with a record 77.9% on the DeepSWE v1.1 coding benchmark, and Alphabet rose about 2% before the open — a second AI catalyst on top of Micron.",
+        "url": "https://finance.yahoo.com/technology/ai/articles/alphabet-shares-rise-google-launches-102136709.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7651.54, "change_pct": 0.3, "as_of": "2026-10-01T12:00:00.000Z" },
+    "nasdaq": { "level": 26861.06, "change_pct": 0.6, "as_of": "2026-10-01T12:00:00.000Z" },
+    "vix": { "level": 16.34, "change_pct": null, "as_of": "2026-09-30T20:00:00.000Z" },
+    "ust10y": { "level": 5.298, "change_bps": 0, "as_of": "2026-10-01T12:00:00.000Z" },
+    "dxy": { "level": 101.45, "change_pct": null, "as_of": "2026-09-30T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.64, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.298, "trigger_above": 5.34, "unit": "%" },
+    { "name": "DXY", "value": 101.45, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7651.54, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4204.7, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "About 1% lower pre-market despite the beat and $61.5 billion guide; customer supply commitments rose to $32 billion, but the company flagged slightly softer margins this quarter and higher fiscal 2027 operating costs. Peers rose on the results.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Up about 2% pre-market after launching Gemini 4 Argon, which scored a record 77.9% on DeepSWE v1.1; access starts with cybersecurity researchers and paying customers.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Higher pre-market with AMD and Broadcom as Micron's results lifted the chip group.", "sentiment": "positive" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year traded at about 5.66% overnight, above its 2002 high of 5.644%, and is back near 5.64%; the first close above the line has not yet happened.",
+      "entry": "Thirty-year ~5.64% against 5.644% (2002 high) and 5.60% below.",
+      "invalidation": "A close above 5.644% would put long yields at levels last seen in 2001; a close under 5.60% would make the overnight high look like a spike rather than a new range.",
+      "horizon": "Today's close through Friday's payrolls."
+    },
+    {
+      "asset": "ISM manufacturing (10 a.m.)",
+      "thesis": "Forecasts near 54.8 against 54.6, with one at 55.5 led by new orders; Wednesday's upward growth revisions lifted long yields more than soft inflation lowered them.",
+      "entry": "Consensus 54.8; upper forecast 55.5; initial claims expected near 201,000.",
+      "invalidation": "Above 55.5 adds to the growth case behind long yields; under 54 tests whether weak data can lower long yields at all.",
+      "horizon": "Today."
+    },
+    {
+      "asset": "Semiconductors vs. the broad market",
+      "thesis": "Nasdaq-100 futures are up twice as much as S&P 500 futures while Dow futures touched a three-month low; chip stocks are rising against higher discount rates on Micron's results.",
+      "entry": "Ten-year ~5.30% against the 5.34% overnight high; Micron near $1,060 against $1,000.",
+      "invalidation": "A ten-year above 5.34% or Micron below $1,000 would test whether the chip group can keep separating from rates.",
+      "horizon": "This week."
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-01-morning.mdx"
+}
