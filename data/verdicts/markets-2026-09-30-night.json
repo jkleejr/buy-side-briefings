@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-09-30",
+  "window": "night",
+  "generated_at": "2026-10-01T00:11:37Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Softer inflation cuts October hike odds, but long-term bond yields still climb to new highs",
+    "label": "Close: S&P 500 7,651.54 (-0.25%), Nasdaq 26,861.06 (+0.24%), Dow 50,906.05 (-0.86%); 2Y 4.895%, 10Y ~5.30%, 30Y ~5.63%; Oct hike odds 47.1%; Brent $103.71; DXY ~101.5; gold ~$4,157; BTC ~$83,600.",
+    "rationale_short": "Core PCE rose 0.2% in August and 3.0% from a year earlier, below forecasts of 0.3% and 3.3%, and October hike odds fell to about 47%. Long yields rose anyway: the ten-year closed near 5.30%, around its highest since 2007, and the thirty-year near 5.63%, about 1 basis point under its 2002 high, while the two-year barely moved. Most of the inflation miss came from a methodology revision, and the same update raised second-quarter growth to 2.2% from 1.5%; ADP's 90,000 beat added to it. The S&P 500 gave up early gains to finish down 0.25%. Micron beat and guided above consensus but slipped after hours on higher capital spending. A thirty-year close above 5.644% would confirm the move; a close under 5.44% would undo it.",
+    "lede_short": "Inflation came in below forecasts and October rate-hike odds fell under 50%, yet the 10-year yield closed near its highest since 2007 and the 30-year ended about a basis point from its 2002 high. Much of the inflation miss came from a change in how prices are measured, and the same data showed faster spring growth, so long-term rates are not easing on soft prints. Friday's payrolls is the next test; a 30-year close under 5.44% would undo this read.",
+    "supporting_data": [
+      {
+        "label": "Core PCE rose 0.2% in August and 3.0% from a year earlier, against forecasts of 0.3% and 3.3% — but a methodology revision alone cut July's core rate from 3.3% to 3.0%, so most of the miss is measurement, not slower price growth.",
+        "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+      },
+      {
+        "label": "The ten-year rose more than 4 basis points to 5.298% while the two-year held at 4.895% — long yields rose on a soft inflation day, so investors are demanding more to hold long bonds rather than pricing more Fed hikes.",
+        "url": "https://www.cnbc.com/2026/09/30/treasury-yields-bonds-selloff.html"
+      },
+      {
+        "label": "Second-quarter GDP was revised to 2.2% annualized from 1.5%, with consumer spending at 3.8% — a stronger spring economy weakens the case that rate hikes are already slowing demand.",
+        "url": "https://apps.bea.gov/scb/issues/2026/09-september/0926-nea-annual-update.htm"
+      },
+      {
+        "label": "October hike odds fell to 47.1% on CME FedWatch, but only 10% of pricing has the Fed holding through year-end — the soft print moved the timing of the next hike, not whether it comes.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Micron reported $54.23 billion of revenue against about $50.45 billion expected and guided to $61.5 billion — the stock still slipped about 1.2% after hours as fiscal 2027 capital spending rises by more than $10 billion.",
+        "url": "https://www.globenewswire.com/news-release/2026/09/30/3372366/14450/en/micron-technology-inc-reports-record-fiscal-fourth-quarter-and-full-year-2026-results.html"
+      },
+      {
+        "label": "The S&P 500 fell 0.25% to 7,651.54 and the Dow 0.86% while the Nasdaq rose 0.24% — stocks gave up early gains as yields climbed, closing a September loss of 0.5% and a quarterly gain of 2%.",
+        "url": "https://www.local10.com/business/2026/09/30/most-us-stocks-fall-after-the-bond-market-cranks-the-pressure-even-higher/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7651.54, "change_pct": -0.25, "as_of": "2026-09-30T20:00:00.000Z" },
+    "nasdaq": { "level": 26861.06, "change_pct": 0.24, "as_of": "2026-09-30T20:00:00.000Z" },
+    "vix": { "level": 16.34, "change_pct": 1.87, "as_of": "2026-09-30T20:00:00.000Z" },
+    "ust10y": { "level": 5.298, "change_bps": 4, "as_of": "2026-09-30T20:00:00.000Z" },
+    "dxy": { "level": 101.5, "change_pct": 0.1, "as_of": "2026-09-30T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.63, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.298, "trigger_above": 5.30, "unit": "%" },
+    { "name": "DXY", "value": 101.5, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7651.54, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4157.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Fiscal Q4 revenue $54.23 billion and adjusted EPS $33.42 beat; Q1 guide $61.5 billion with ~86.25% gross margin. Shares slipped about 1.2% after hours on fiscal 2027 capex rising by more than $10 billion.", "sentiment": "neutral" },
+    { "ticker": "NVDA", "note": "Rose 1.54% to $230.71 on a day the Dow fell 0.86%, helping the Nasdaq finish higher.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Rose 1.48% to $516.50 alongside Nvidia as the Nasdaq outperformed.", "sentiment": "neutral" },
+    { "ticker": "AMD", "note": "Its reported price increase on AI accelerators takes effect Thursday, October 1.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year rose to about 5.63% on a soft inflation day while the two-year held near 4.9%, so the long end is trading on supply, growth and inflation premium rather than the Fed path.",
+      "entry": "Thirty-year ~5.63% against the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would take long yields to levels last seen in 2001; a close under 5.44% would say the rise is fading.",
+      "horizon": "Through Thursday's ISM and Friday's payrolls"
+    },
+    {
+      "asset": "Micron (MU)",
+      "thesis": "Results and guidance beat by wide margins, but higher capital spending drew the after-hours focus, so the first full session decides whether demand or cost is the chip sector's story.",
+      "entry": "Regular-session close $1,066.10; about $1,056 after hours.",
+      "invalidation": "A close above $1,066.10 would show demand outweighing the spending worry; a drop below $1,000 would make spending the issue.",
+      "horizon": "October 1-2"
+    },
+    {
+      "asset": "Fed path (October hike odds)",
+      "thesis": "Soft PCE cut October hike odds to 47.1%, while ADP's 90,000 beat and upward GDP revisions point the other way; payrolls decides which carries.",
+      "entry": "October odds 47.1%; payroll consensus about 84,000.",
+      "invalidation": "Above 150,000 would likely push October odds back above 60%; under 50,000 would favour December.",
+      "horizon": "Friday, October 2"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-09-30-night.mdx"
+}

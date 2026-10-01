@@ -1,18 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-09-30",
-      "kind": "OTHER",
-      "label": "Micron fiscal Q4 — consensus near $50.8bn revenue and $31.43 adjusted EPS, the first hard AI-capex number since the long end repriced",
-      "tickers": [
-        "MU",
-        "NVDA",
-        "QQQ",
-        "SOXX"
-      ],
-      "note": "Added Sep 23 night: Micron rose 5.00% to $1,096.16 on a session the Nasdaq fell 1.13% and the thirty-year closed at its highest since 2004, so the name diverged from both the index and the discount rate. Memory pricing is the one AI-capex line that reports before the quarter ends, which makes this the print that either validates the divergence or closes it. It also lands on quarter end."
-    },
-    {
       "date": "2026-10-01",
       "kind": "OTHER",
       "label": "AMD's reported ~10% price increase on AI accelerators, Radeon GPUs and chipsets takes effect (Q4 start) — unconfirmed by the company",
@@ -162,6 +150,16 @@
         "MU"
       ],
       "note": "Replaces the November deadline as the date the China policy track resolves"
+    },
+    {
+      "date": "2026-10-07",
+      "label": "Minutes of the September 15-16 FOMC meeting — how many officials favoured an October hike",
+      "kind": "FOMC",
+      "time_et": "2:00 PM",
+      "tickers": [
+        "TLT"
+      ],
+      "note": "October hike odds stood at 47.1% after August PCE."
     }
   ]
 }
