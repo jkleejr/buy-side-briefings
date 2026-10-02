@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-10-02",
+  "window": "morning",
+  "generated_at": "2026-10-02T12:15:38Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Long-term bond yields hold just below their 2002 high as the September jobs report nears",
+    "label": "Pre-market: S&P 500 futures +0.4%, Nasdaq-100 futures +0.6%; 30Y ~5.618% (+1 bp, 2002 high 5.644%), 10Y ~5.243%, 2Y ~4.79% (-9 bp Thursday); Oct hike odds ~35%; Brent ~$102; DXY ~101.9; gold ~$4,179; BTC ~$86,460; Hang Seng -2.6%.",
+    "rationale_short": "The thirty-year Treasury yield is at about 5.618%, 2.6 basis points under its 2002 high, with the September jobs report due at 8:30 a.m. Thursday's pullback did not carry overnight. The short end did the moving: the two-year fell 9 basis points on Thursday to about 4.79% as October hike odds fell to about 35%, widening the gap to the thirty-year to roughly 83 basis points. Short yields falling with the Fed path while long yields hold near 24-year highs says the pressure on long bonds is not mainly about the Fed; oil near $102 and government-bond selling abroad are still in place. Economists expect about 90,000 jobs. A thirty-year close above 5.644% would resume the rise; a close under 5.44% would say it is fading.",
+    "lede_short": "The 30-year Treasury yield sits about 5.62% this morning, just under its 2002 high, as the September jobs report arrives. Two-year yields fell on Thursday with October hike odds while long yields barely moved, which says the long-end pressure is not mainly about the Fed. A 30-year close above 5.644% would resume the rise; a close under 5.44% would say it is fading.",
+    "supporting_data": [
+      {
+        "label": "The thirty-year rose about 1 basis point to 5.618% and the ten-year held near 5.243% before payrolls — long yields are holding Thursday's levels rather than extending the pullback.",
+        "url": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html"
+      },
+      {
+        "label": "The two-year fell 9 basis points on Thursday to just under 4.80% while the ten-year closed about 4 basis points lower — the curve steepened, so falling hike odds are reaching short yields but not long ones.",
+        "url": "https://www.home.saxo/content/articles/options/the-average-stock-led-correlation-got-bid---options-brief---2-october-2026-02102026"
+      },
+      {
+        "label": "Economists expect about 90,000 September jobs, unemployment at 4.1% and hourly earnings up 0.3%, after August's 162,000 — a print near consensus would be a slowdown, not a contraction.",
+        "url": "https://www.kiplinger.com/investing/economy/what-to-expect-from-the-september-jobs-report"
+      },
+      {
+        "label": "October hike odds stood near 35% on CME FedWatch at Thursday's close, from about 71% a week earlier — the jobs report decides whether that decline continues or reverses.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Hong Kong's Hang Seng fell 2.6% to 23,972.29, its lowest since July, on its first session back from holiday — it priced a week of higher global yields in one day while US futures rose.",
+        "url": "http://www.goskagit.com/news/world/world-shares-mixed-after-global-bond-sell-off-deepens-and-ahead-of-us-jobs-data/article_a12d2475-7825-5c5d-955b-078dab3e208e.html"
+      },
+      {
+        "label": "Nike fell 9.6% pre-market to about $31.79 after guiding fiscal 2027 revenue down by a high single-digit percentage — the clearest sign yet this week that demand outside AI is weakening.",
+        "url": "https://www.tradingpedia.com/2026/10/02/nike-drops-as-weak-outlook-overshadows-earnings-beat/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7666.45, "change_pct": 0.4, "as_of": "2026-10-02T12:00:00.000Z" },
+    "nasdaq": { "level": 26871.60, "change_pct": 0.6, "as_of": "2026-10-02T12:00:00.000Z" },
+    "vix": { "level": 16.39, "change_pct": 0.31, "as_of": "2026-10-01T20:00:00.000Z" },
+    "ust10y": { "level": 5.243, "change_bps": 0, "as_of": "2026-10-02T12:00:00.000Z" },
+    "dxy": { "level": 101.9, "change_pct": null, "as_of": "2026-10-02T12:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.618, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.243, "trigger_above": 5.344, "unit": "%" },
+    { "name": "DXY", "value": 101.9, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7666.45, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4179.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "TSLA", "note": "Third-quarter deliveries due today against a company-compiled consensus of 461,974, down 7.1% from a year earlier; estimates range from about 422,000 to 482,000.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Up about 3% over 24 hours to about $86,460 ahead of payrolls, rising with stock futures while the dollar sits near its 2026 high.", "sentiment": "positive" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year sits 2.6 basis points under its 2002 high while two-year yields fall with hike odds; payrolls test whether the long end responds to the Fed path at all.",
+      "entry": "Thirty-year ~5.618% between the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would resume the rise; a close under 5.44% would say it is fading. A soft print with the thirty-year still above 5.6% would say the pressure is not about the Fed.",
+      "horizon": "Today's payrolls through next Wednesday's Fed minutes"
+    },
+    {
+      "asset": "Consumer discretionary",
+      "thesis": "Nike's guide and General Mills at a 52-week low point to weaker spending outside AI; Tesla deliveries are today's next read.",
+      "entry": "Tesla consensus 461,974 deliveries, range about 422,000 to 482,000; Nike ~$31.79 pre-market.",
+      "invalidation": "Deliveries above consensus alongside firm payrolls would weaken the read.",
+      "horizon": "Friday, October 2"
+    },
+    {
+      "asset": "S&P 500 vs. global stocks",
+      "thesis": "Hong Kong fell 2.6% to a July low as US futures rose; the US market has stood apart from the global response to higher yields.",
+      "entry": "S&P 500 prior close 7,666.45; 7,600 below.",
+      "invalidation": "An S&P 500 close under 7,600 with the thirty-year above 5.644% would mean US stocks are following the rest of the world; a close above 7,666.45 with yields under the line would keep the gap open.",
+      "horizon": "October 2-7"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-02-morning.mdx"
+}
