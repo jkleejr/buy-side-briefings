@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-01",
+  "window": "night",
+  "generated_at": "2026-10-02T00:11:43Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Long-term bond yields touch their highest since 2002, then pull back before the jobs report",
+    "label": "Close: S&P 500 7,666.45 (+0.19%), Nasdaq 26,871.60 (+0.04%), Dow 50,926.56 (+0.04%); 10Y 5.243% (-5 bp, intraday 5.344%), 30Y ~5.613%; Oct hike odds ~35%; Brent ~$100; DXY ~101.85; gold ~$4,177; BTC ~$84,000.",
+    "rationale_short": "The ten-year hit 5.344% intraday, its highest since April 2002, and the thirty-year traded above its 2002 high of 5.644%, but both reversed: the ten-year closed at 5.243% and the thirty-year near 5.613%, so the break was not confirmed at the close. The reversal did not come from softer data. ISM prices paid jumped to 77.9 and Brent rose back near $100 on China's fuel-export halt; strategists pointed to buying after a 50-basis-point rise in 18 sessions and positioning before payrolls. Stocks rose slightly, led by chips after Micron and by Accenture's 16% gain, while European stocks hit three-month lows. One reversal does not end a rise of this size: a thirty-year close above 5.644% would resume it, and a close under 5.44% would say it is fading.",
+    "lede_short": "Long-term Treasury yields touched their highest since 2002 on Thursday morning, then reversed: the 30-year closed near 5.61%, back under its 2002 high. The pullback came from positioning before Friday's jobs report, not softer data, since factory prices paid jumped to their highest since May. Payrolls decide the next move; a 30-year close above 5.644% would resume the rise, and one under 5.44% would say it is fading.",
+    "supporting_data": [
+      {
+        "label": "The ten-year hit 5.344% intraday, its highest since April 2002, then eased 5 basis points to 5.243%, and the thirty-year closed near 5.613% — the 2002 high held at the close, so the long-end break has not been confirmed.",
+        "url": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html"
+      },
+      {
+        "label": "ISM manufacturing slipped to 54.5 against 55.0 expected while prices paid jumped to 77.9 from 71.1 — factory costs rose at the fastest pace since May, so Thursday's yield drop came from positioning rather than softer inflation.",
+        "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html"
+      },
+      {
+        "label": "October hike odds fell to about 35% on CME FedWatch from about 71% a week earlier — expected Fed moves have eased for a week while long yields only paused on Thursday.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Brent rose about 2% back near $100 after Chinese refiners suspended fuel exports beyond Hong Kong and Macau — the inflation pressure behind long yields grew even as yields fell.",
+        "url": "https://live.euronext.com/en/financial-news/oil-prices-rise-2-china-suspends-fuel-exports"
+      },
+      {
+        "label": "Nike guided fiscal 2027 revenue down by a high single-digit percentage after Greater China fell 22%, and its shares fell about 6% after hours — demand outside AI is weakening going into payrolls.",
+        "url": "https://www.businesswire.com/news/home/20261001788082/en/NIKE-Inc.-Reports-Fiscal-2027-First-Quarter-Results"
+      },
+      {
+        "label": "The S&P 500 rose 0.19% to 7,666.45, ending a three-day losing streak, as chips and Accenture's 16% gain offset pressure from yields — European stocks fell 1.3% to a three-month low on the same bond moves.",
+        "url": "https://www.cnbc.com/2026/09/30/stock-market-today-live-updates.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7666.45, "change_pct": 0.19, "as_of": "2026-10-01T20:00:00.000Z" },
+    "nasdaq": { "level": 26871.60, "change_pct": 0.04, "as_of": "2026-10-01T20:00:00.000Z" },
+    "vix": { "level": 16.39, "change_pct": 0.31, "as_of": "2026-10-01T20:00:00.000Z" },
+    "ust10y": { "level": 5.243, "change_bps": -5, "as_of": "2026-10-01T20:00:00.000Z" },
+    "dxy": { "level": 101.85, "change_pct": 0.3, "as_of": "2026-10-01T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.613, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.243, "trigger_above": 5.344, "unit": "%" },
+    { "name": "DXY", "value": 101.85, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,600", "value": 7666.45, "trigger_below": 7600.0, "unit": "" },
+    { "name": "Gold", "value": 4177.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Rose about 3% in its first full session after results, holding above Wednesday's $1,066.10 close; its $32 billion in customer commitments lifted the Nikkei 3.3%.", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "Gained early after launching Gemini 4 Argon; usage data is weeks away as access starts with researchers and paying customers.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Third-quarter deliveries due Friday against a company-compiled consensus of 461,974; shares fell about 8% over the five sessions going in.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year traded above its 2002 high intraday but closed near 5.613%, after a reversal attributed to positioning rather than softer data; payrolls decide whether the rise resumes.",
+      "entry": "Thirty-year ~5.613% between the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would resume the rise; a close under 5.44% would say it is fading.",
+      "horizon": "Friday's payrolls through next Wednesday's Fed minutes"
+    },
+    {
+      "asset": "Semiconductors vs. rates",
+      "thesis": "Chips rose with Micron and the Nikkei while European stocks hit three-month lows, a gap that holds only while chip earnings rise faster than discount rates.",
+      "entry": "Ten-year 5.243% against Thursday's intraday high of 5.344%; Micron above $1,066.10.",
+      "invalidation": "A ten-year close above 5.344% or Micron under $1,066.10 would test the gap.",
+      "horizon": "October 2-7"
+    },
+    {
+      "asset": "Consumer discretionary",
+      "thesis": "Nike's high single-digit revenue decline guide and General Mills at a 52-week low point to weaker demand outside AI; Tesla deliveries are the next read.",
+      "entry": "Nike $32.96 after hours; Tesla consensus 461,974 deliveries.",
+      "invalidation": "Deliveries well above consensus alongside firm payrolls would weaken the read.",
+      "horizon": "Friday, October 2"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-01-night.mdx"
+}
