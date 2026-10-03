@@ -1,0 +1,94 @@
+{
+  "routine": "markets",
+  "date": "2026-10-03",
+  "window": "morning",
+  "generated_at": "2026-10-03T12:48:25Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "📉",
+    "headline": "Long-term bond yields rose all week even as weak hiring cut the odds of a Fed hike",
+    "label": "Weekend: S&P 500 closed Fri at 7,722.72 (+0.73%, week -0.3%), Nasdaq 27,190.86 (+1.19%, week +0.5%); 10Y 5.281% (week +12 bp), 30Y 5.629% (week +14 bp, 2002 high 5.644%); Oct hike odds ~20% vs ~76% a week ago; Brent $102.25; BTC ~$84,800 Sat.",
+    "conviction": "low",
+    "horizon": "five trading sessions, through Friday October 9",
+    "rationale_short": "What happened: over the week, the market's odds of an October 28 Fed rate hike fell from about 76% to about 20% on CME FedWatch, after September payrolls rose only 29,000 and unemployment rose to 4.2%. Long-term yields did not follow. The ten-year rose about 12 basis points on the week to 5.281% and the thirty-year about 14 basis points to 5.629%, 1.5 basis points under its 2002 high, while Brent fell about 2% to $102.25. The S&P 500 ended the week 0.3% lower and the Nasdaq 0.5% higher.\n\nWhat it means: when long yields rise in a week that both a hike and oil look less likely, the pressure on long bonds is coming from somewhere other than the Fed's next move. Sources this week point to inflation worry, US deficits and heavy bond supply, alongside a global government-bond selloff. That is an interpretation, not something one week can prove; Friday's late rise could also be positioning after Thursday's rally. Stocks so far have looked past it, with the Nasdaq-100 at a record.\n\nWhat would change the picture: a thirty-year close above 5.644% would take long yields to their highest since 2002 and resume the rise; a close under 5.44% would say it is fading. Monday's ISM services prices index is the first test, after manufacturing prices paid jumped to 77.9; Wednesday's minutes of the September hike follow. This read is lower-conviction than usual: it is a weekend, no stock or bond market has traded since Friday, and several outlets this run tried to read were blocked, so some figures rest on search summaries and Friday's close data.",
+    "lede_short": "Weak September hiring cut the odds of an October Fed hike from about 76% to about 20% this week, yet the 30-year yield rose about 14 basis points to 5.629%, just under its 2002 high. Long-bond pressure that rises as Fed odds fall points to inflation, deficits and supply rather than the Fed's next move. A 30-year close above 5.644% would resume the rise; Monday's ISM services prices index is the first test.",
+    "supporting_data": [
+      {
+        "label": "CME FedWatch odds of an October 28 hike fell to about 20% at Friday's close from about 76% a week earlier — the market has largely stopped expecting an October move.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "The thirty-year Treasury yield closed Friday at 5.629%, up about 14 basis points on the week and 1.5 basis points under its 2002 high — long yields rose in the same week hike odds collapsed, so the Fed path is not what is driving them.",
+        "url": "https://fred.stlouisfed.org/series/DGS30"
+      },
+      {
+        "label": "September payrolls rose 29,000, unemployment rose to 4.2% and hourly earnings rose 0.1% — weak hiring with slow wage growth removed the labour-market case for an October hike.",
+        "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+      },
+      {
+        "label": "The S&P 500 ended the week at 7,722.72, down about 0.3%, while the Nasdaq rose about 0.5% to 27,190.86 — stocks have absorbed a ten-year yield near 5.28%, the highest in about two decades, without a broad selloff.",
+        "url": "https://www.benzinga.com/news/26/10/62141603/nvidia-nasdaq-100-record-high-western-digital-sinks-soft-jobs-report-fed-hike-bets-markets-friday"
+      },
+      {
+        "label": "ISM services for September is due Monday, expected at 55.1 against 55.4, with Fed minutes from the September hike on Wednesday — prices paid matters most after the manufacturing index hit 77.9 against 72.3 expected.",
+        "url": "https://www.newsquawk.com/headlines/week-in-focus-4-9th-october-2026-fomc-minutes-us-ism-services-pmi-opec-canadian-jobs-and-ecb-minutes"
+      },
+      {
+        "label": "OPEC+ meets online Sunday and is expected to leave November output targets unchanged — a rollover adds no planned supply, and actual output already runs below target.",
+        "url": "https://www.tokenpost.com/news/investing/25827"
+      },
+      {
+        "label": "Crude through Hormuz is back near its prewar 13.5 million barrels a day, but refined fuel shipments are at about 677,000 against 3.6 million before the war — crude supply has recovered while diesel and other fuels have not.",
+        "url": "https://www.inquirer.com/news/nation-world/iran-strait-of-hormuz-oil-20261002.html"
+      },
+      {
+        "label": "Bitcoin traded near $84,800 Saturday morning, down about 2% in 24 hours in an $83,750-$87,150 range — the one market open this weekend has not followed Friday's stock rally.",
+        "url": "https://crypto.com/exchange/trade/BTC_USD"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7722.72, "change_pct": 0.73, "as_of": "2026-10-02T20:00:00.000Z" },
+    "nasdaq": { "level": 27190.86, "change_pct": 1.19, "as_of": "2026-10-02T20:00:00.000Z" },
+    "vix": { "level": 15.52, "change_pct": -5.31, "as_of": "2026-10-02T20:00:00.000Z" },
+    "ust10y": { "level": 5.281, "change_bps": 5, "as_of": "2026-10-02T20:00:00.000Z" },
+    "dxy": { "level": 101.69, "change_pct": -0.19, "as_of": "2026-10-02T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.629, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.281, "trigger_above": 5.344, "unit": "%" },
+    { "name": "DXY", "value": 101.69, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,666", "value": 7722.72, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4217.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Closed Friday at $233.95, up 1.34%, after its first record intraday high since May; chips led the Nasdaq-100 to a record as hike odds fell.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Rose about 5% Friday after third-quarter deliveries of 486,532 beat the 461,974 consensus; results due October 21.", "sentiment": "neutral" },
+    { "ticker": "PEP", "note": "PepsiCo's results this week are one of the few earnings reports before the season starts the following week.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $84,800 Saturday morning, down about 2% in 24 hours after failing to hold above $87,000.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year rose about 14 basis points this week to 5.629% while October hike odds fell from about 76% to about 20%, so the long-end pressure is coming from outside the Fed path; it sits 1.5 basis points under its 2002 high.",
+      "entry": "Thirty-year 5.629% between the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would resume the rise; a close under 5.44% would say this week's rise was positioning.",
+      "horizon": "October 5-9, through the Fed minutes"
+    },
+    {
+      "asset": "ISM services prices against December hike odds",
+      "thesis": "Hiring slowed to 29,000 while manufacturing prices paid reached 77.9; Monday's services prices index decides whether inflation alone keeps a later hike priced.",
+      "entry": "ISM services expected at 55.1 against 55.4 prior; manufacturing prices paid 77.9.",
+      "invalidation": "A soft services prices index alongside weak payrolls would weaken the case for any further hike; a jump like manufacturing's would keep it alive.",
+      "horizon": "Monday, October 5"
+    },
+    {
+      "asset": "S&P 500 against the ten-year",
+      "thesis": "Stocks ended the week roughly flat while the ten-year rose about 12 basis points to 5.281%; valuations have so far absorbed higher long yields.",
+      "entry": "S&P 500 7,722.72 against Thursday's 7,666.45; ten-year 5.281% against Thursday's intraday high of 5.344%.",
+      "invalidation": "A ten-year close above 5.344% or an S&P 500 close under 7,666.45 would test whether stocks can keep looking past long yields.",
+      "horizon": "October 5-9"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-03-morning.mdx"
+}
