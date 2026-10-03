@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-02",
+  "window": "night",
+  "generated_at": "2026-10-03T00:11:08Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Weak hiring pulls short-term yields down, but long yields rise and the Nasdaq-100 hits a record",
+    "label": "Close: S&P 500 7,722.72 (+0.73%), Nasdaq 27,190.86 (+1.19%), Nasdaq-100 30,825 (record), Dow +0.49%; payrolls +29,000, unemployment 4.2%; 2Y ~4.73% (-6 bp), 10Y ~5.28% (+4-5 bp), 30Y 5.629% (+2 bp); Oct hike odds ~20%; WTI $91.11, Brent $102.25; gold ~$4,217; BTC ~$84,500.",
+    "rationale_short": "September payrolls rose 29,000, unemployment rose to 4.2% and wages rose 0.1%, and October hike odds fell to about 20% from about 35%. The two-year yield fell 6 basis points to 4.73%, but long yields reversed an early drop: the ten-year closed up about 4 basis points near 5.28% and the thirty-year rose 2 basis points to 5.629%, 1.5 basis points under its 2002 high, on a day WTI fell 1.9% on the G7 reserve release. The gap between two- and thirty-year yields widened to about 90 basis points, which is what the morning report said would mean the long-end pressure is not mainly about the Fed. Stocks followed the lower Fed path: the Nasdaq-100 closed at a record and the S&P 500 rose 0.73%. Whether Friday's long-end rise was positioning after Thursday's rally or a lasting demand for more yield cannot be told from one session. A thirty-year close above 5.644% would resume the rise; a close under 5.44% would say it is fading.",
+    "lede_short": "US employers added just 29,000 jobs in September, and the odds of an October rate hike fell to about 20%. Short-term yields fell, but long-term yields rose anyway, with the 30-year at 5.629%, just under its 2002 high, while the Nasdaq-100 closed at a record. Weak hiring removed the Fed as the reason for high long yields; a 30-year close above 5.644% would resume the rise, and one under 5.44% would say it is fading.",
+    "supporting_data": [
+      {
+        "label": "Payrolls rose 29,000 in September, unemployment rose to 4.2% and hourly earnings rose 0.1% — weak hiring with slow wage growth removes the labour case for an October hike.",
+        "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+      },
+      {
+        "label": "The ten-year rose almost 5 basis points to 5.281% and the thirty-year added 2 basis points to 5.629% after both fell on the release — lower Fed odds are not reaching long bonds, which sit 1.5 basis points under their 2002 high.",
+        "url": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html"
+      },
+      {
+        "label": "October hike odds fell to about 20% on CME FedWatch from about 35% before the report — the jobs data delayed the Fed path, with a December hike still widely priced.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "The Nasdaq-100 rose 1.1% to a record 30,825 and the Russell 2000 gained 1.06% — stocks priced the lower hike odds and set aside a ten-year near its highest close since 2002.",
+        "url": "https://www.benzinga.com/news/26/10/62141603/nvidia-nasdaq-100-record-high-western-digital-sinks-soft-jobs-report-fed-hike-bets-markets-friday"
+      },
+      {
+        "label": "The G7 agreed to release up to 100 million barrels of diesel and crude over four months, front-loading diesel — WTI fell 1.9% to $91.11 but Brent held near $102, so long yields rose on a day oil did not.",
+        "url": "https://www.nbcnews.com/business/energy/g-7-diesel-crude-release-trump-macron-rcna601132"
+      },
+      {
+        "label": "Tesla delivered 486,532 vehicles in the third quarter, about 25,000 above the 461,974 consensus, and its shares rose about 5% — a beat that weakens the case for broad consumer weakness after Nike's guide.",
+        "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7722.72, "change_pct": 0.73, "as_of": "2026-10-02T20:00:00.000Z" },
+    "nasdaq": { "level": 27190.86, "change_pct": 1.19, "as_of": "2026-10-02T20:00:00.000Z" },
+    "vix": { "level": 15.52, "change_pct": -5.31, "as_of": "2026-10-02T20:00:00.000Z" },
+    "ust10y": { "level": 5.281, "change_bps": 5, "as_of": "2026-10-02T20:00:00.000Z" },
+    "dxy": { "level": 101.69, "change_pct": -0.19, "as_of": "2026-10-02T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.629, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.281, "trigger_above": 5.344, "unit": "%" },
+    { "name": "DXY", "value": 101.69, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,666", "value": 7722.72, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4217.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Touched a record intraday high of $237.88 and closed at $233.95, up 1.34%, its first record since May, as lower hike odds lifted chips.", "sentiment": "positive" },
+    { "ticker": "TSLA", "note": "Rose about 5% after third-quarter deliveries of 486,532 beat the 461,974 consensus, though down 2.1% from a year earlier; results due October 21.", "sentiment": "positive" },
+    { "ticker": "AVGO", "note": "Rose about 3% as banks prepared a potential $60 billion financing package for AI chip infrastructure.", "sentiment": "positive" },
+    { "ticker": "BTC", "note": "Near $84,500 in the evening, giving back the pre-payroll gain to about $86,460 even as stocks rallied.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year rose 2 basis points to 5.629% on a payroll miss that cut October hike odds to about 20%, so the long-end pressure is coming from outside the Fed path; it sits 1.5 basis points under its 2002 high.",
+      "entry": "Thirty-year 5.629% between the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would resume the rise; a close under 5.44% would say Friday's rise was positioning.",
+      "horizon": "October 5-9, through the Fed minutes"
+    },
+    {
+      "asset": "Nasdaq-100 vs. the ten-year",
+      "thesis": "The Nasdaq-100 set a record with the ten-year near 5.28%; chip valuations have absorbed higher long yields while hike odds fell.",
+      "entry": "Ten-year ~5.28% against Thursday's intraday high of 5.344%; S&P 500 7,722.72 against Thursday's 7,666.45.",
+      "invalidation": "A ten-year close above 5.344% with hike odds still low, or an S&P 500 close under 7,666.45, would test the gap.",
+      "horizon": "October 5-9"
+    },
+    {
+      "asset": "Inflation vs. hiring",
+      "thesis": "Hiring slowed to 29,000 while manufacturing prices paid reached 77.9; ISM services prices decide whether a December hike stays priced.",
+      "entry": "ISM services expected near 55.7 on Monday; manufacturing prices paid 77.9.",
+      "invalidation": "A soft services prices index alongside weak payrolls would weaken the case for any further hike.",
+      "horizon": "Monday, October 5"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-02-night.mdx"
+}
