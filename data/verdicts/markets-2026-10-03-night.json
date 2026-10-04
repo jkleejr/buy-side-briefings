@@ -1,0 +1,85 @@
+{
+  "routine": "markets",
+  "date": "2026-10-03",
+  "window": "night",
+  "generated_at": "2026-10-04T00:47:15Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⏸️",
+    "headline": "Long-term bond yields sit near 2002 highs as a week of inflation tests begins",
+    "label": "Weekend: S&P 500 closed Fri at 7,722.72 (+0.73%, week -0.3%), Nasdaq 27,190.86 (+1.19%, week +0.5%); 10Y 5.281%, 30Y 5.629% (2002 high 5.644%); Oct hike odds ~20%; Aug core PCE 3.0% y/y, 2.0% 3-month annualized; BTC ~$84,800 Sat evening, flat on the day.",
+    "conviction": "low",
+    "rationale_short": "What happened: no stock or bond market traded today. Markets closed Friday with the S&P 500 at 7,722.72, down about 0.3% on the week, and the Nasdaq up about 0.5%. Over the week, CME FedWatch odds of an October 28 hike fell from about 76% to about 20% after September payrolls rose only 29,000. Long yields rose anyway: the ten-year ended at 5.281% and the thirty-year at 5.629%, 1.5 basis points under its 2002 high. Bitcoin, the one market open, held near $84,800 through Saturday in a range of about $500.\n\nWhat it means: two readings of inflation now point different ways. August core PCE was 3.0% from a year earlier, but its three-month annualized pace slowed to 2.0%, the Fed's target. Against that, ISM manufacturing prices paid jumped to 77.9 and Brent is still near $102 with the Strait of Hormuz disrupted. Long yields rising while hike odds fell suggests investors are asking more to hold long-term bonds for reasons beyond the Fed's next move, such as inflation risk, deficits and bond supply; one week cannot prove which.\n\nWhat would change the picture: a thirty-year close above 5.644% would put long yields at their highest since 2002; a close under 5.44% would say the rise is fading. Sunday's OPEC+ meeting, expected to hold November targets, Monday's ISM services prices index and Wednesday's minutes of the September hike are the tests. Conviction is low: no market traded today, and the news sites this run tried to read were blocked, so weekend developments, including reports of further tanker attacks near Hormuz, could not be checked.",
+    "lede_short": "Markets enter the week with the 30-year Treasury yield at 5.629%, just under its 2002 high, even though weak hiring cut October hike odds to about 20%. Inflation signals conflict: core PCE slowed to a 2.0% three-month pace, but factory prices paid jumped to 77.9 and Brent sits near $102. Monday's ISM services prices index is the first test; a 30-year close above 5.644% would resume the rise.",
+    "supporting_data": [
+      {
+        "label": "The thirty-year Treasury yield closed Friday at 5.629%, 1.5 basis points under its 2002 high, after rising about 14 basis points on the week — long yields climbed in the same week hike odds fell, so the Fed path is not what is driving them.",
+        "url": "https://fred.stlouisfed.org/series/DGS30"
+      },
+      {
+        "label": "CME FedWatch odds of an October 28 hike stood near 20% at Friday's close, down from about 76% a week earlier — the market has largely stopped expecting an October move.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "August core PCE prices rose 3.0% from a year earlier, but the three-month annualized pace slowed to 2.0% — recent months are running at the Fed's target even though the yearly figure is not.",
+        "url": "https://www.bea.gov/sites/default/files/2026-09/pi0826.pdf"
+      },
+      {
+        "label": "ISM services for September is due Monday, expected near 55.1 against 55.4, with minutes of the September hike on Wednesday — its prices index will show whether manufacturing's jump to 77.9 is spreading to services.",
+        "url": "https://www.newsquawk.com/headlines/week-in-focus-4-9th-october-2026-fomc-minutes-us-ism-services-pmi-opec-canadian-jobs-and-ecb-minutes"
+      },
+      {
+        "label": "OPEC+ meets online Sunday and is expected to leave November output targets unchanged — that adds no planned supply, and actual output already runs below target.",
+        "url": "https://www.agbi.com/oil-and-gas/2026/09/opec-likely-to-keep-output-targets-steady-at-sunday-meeting/"
+      },
+      {
+        "label": "Bitcoin traded near $84,800 Saturday evening, up 0.2% in 24 hours in an $84,507-$85,031 range — the one market open this weekend is steady after slipping from above $87,000 on Friday.",
+        "url": "https://crypto.com/exchange/trade/BTC_USD"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7722.72, "change_pct": 0.73, "as_of": "2026-10-02T20:00:00.000Z" },
+    "nasdaq": { "level": 27190.86, "change_pct": 1.19, "as_of": "2026-10-02T20:00:00.000Z" },
+    "vix": { "level": 15.52, "change_pct": -5.31, "as_of": "2026-10-02T20:00:00.000Z" },
+    "ust10y": { "level": 5.281, "change_bps": 5, "as_of": "2026-10-02T20:00:00.000Z" },
+    "dxy": { "level": 101.69, "change_pct": -0.19, "as_of": "2026-10-02T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.629, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.281, "trigger_above": 5.344, "unit": "%" },
+    { "name": "DXY", "value": 101.69, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,666", "value": 7722.72, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4217.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Closed Friday at $233.95, up 1.34%, after its first record intraday high since May; chips led the Nasdaq-100 to a record as hike odds fell.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Rose about 5% Friday after third-quarter deliveries of 486,532 beat the 461,974 consensus; results due October 21.", "sentiment": "neutral" },
+    { "ticker": "PEP", "note": "PepsiCo reports this week, one of the few large earnings reports before the season starts the following week.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $84,800 Saturday evening, up 0.2% in 24 hours in a narrow $84,507-$85,031 range.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year rose about 14 basis points last week to 5.629% while October hike odds fell from about 76% to about 20%, so the long-end pressure is coming from outside the Fed path; it sits 1.5 basis points under its 2002 high.",
+      "entry": "Thirty-year 5.629% between the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would resume the rise; a close under 5.44% would say last week's rise was positioning.",
+      "horizon": "October 5-9, through the Fed minutes"
+    },
+    {
+      "asset": "ISM services prices against December hike odds",
+      "thesis": "Core PCE slowed to a 2.0% three-month pace while manufacturing prices paid reached 77.9; Monday's services prices index shows which signal is spreading.",
+      "entry": "ISM services expected near 55.1 against 55.4 prior; manufacturing prices paid 77.9.",
+      "invalidation": "A soft services prices index alongside weak payrolls would weaken the case for any further hike; a jump like manufacturing's would keep it alive.",
+      "horizon": "Monday, October 5"
+    },
+    {
+      "asset": "Oil after the OPEC+ meeting",
+      "thesis": "Brent ended the week at $102.25 with Hormuz shipping disrupted; OPEC+ is expected to hold November targets on Sunday, adding no planned supply.",
+      "entry": "Brent $102.25, WTI $91.11 at Friday's close.",
+      "invalidation": "An unexpected OPEC+ output increase, or confirmed new tanker attacks over the weekend, would move oil at Sunday evening's futures open.",
+      "horizon": "Sunday evening to Monday, October 5"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-03-night.mdx"
+}
