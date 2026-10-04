@@ -1,0 +1,90 @@
+{
+  "routine": "markets",
+  "date": "2026-10-04",
+  "window": "morning",
+  "generated_at": "2026-10-04T12:47:04Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⏸️",
+    "headline": "More tankers hit near Hormuz as OPEC+ holds output and bond yields stay near 2002 highs",
+    "label": "Sunday: S&P 500 closed Fri at 7,722.72 (+0.73%, week -0.3%), Nasdaq 27,190.86 (+1.19%, week +0.5%); 10Y 5.281%, 30Y 5.629% (2002 high 5.644%); Oct hike odds ~20%; Brent $102.25; OPEC+ holds November targets; BTC ~$85,200 Sun, +0.5% in 24h.",
+    "conviction": "low",
+    "horizon": "five trading sessions, through Friday October 9",
+    "rationale_short": "What happened: no stock or bond market has traded since Friday. The S&P 500 closed at 7,722.72, down about 0.3% on the week, and the Nasdaq rose about 0.5%. The ten-year Treasury yield ended at 5.281% and the thirty-year at 5.629%, 1.5 basis points under its 2002 high, even though CME FedWatch odds of an October 28 hike fell from about 76% to about 20% over the week. Brent settled at $102.25 Friday, roughly flat on the week on a like-for-like contract basis. On Sunday, OPEC+ kept November output targets unchanged, as expected. Over the weekend the UK's maritime security agency reported at least two more tankers struck near Oman and in the Strait of Hormuz, and Iran's parliament speaker said the strait would not reopen until Iran's conditions are met.\n\nWhat it means: the OPEC+ decision adds no planned supply, and the weekend attacks plus Iran's statement give no sign that shipping through Hormuz is about to normalise. That keeps oil a live input to the inflation worry that has pushed long yields up even as Fed hike odds fell. Against that, Brent did not rise last week despite the war, after G7 governments agreed to release emergency fuel stocks, so the weekend news may already be in the price. Which way oil opens on Sunday evening is the first evidence, and this run cannot see it yet.\n\nWhat would change the picture: a thirty-year close above 5.644% would put long yields at their highest since 2002; a close under 5.44% would say the rise is fading. Monday's ISM services prices index shows whether manufacturing's jump to 77.9 in prices paid is spreading; Wednesday's minutes of the September hike follow. Conviction is low: it is a weekend, and nearly every news site this run tried to open was blocked, so weekend events rest on search summaries rather than articles read in full.",
+    "lede_short": "OPEC+ held November output steady on Sunday and at least two more tankers were reported struck near Hormuz, with Iran saying the strait stays shut until its conditions are met. That keeps oil, at $102.25 Brent, feeding the inflation worry that lifted the 30-year yield to 5.629% even as October hike odds fell to about 20%. Sunday evening's oil open and Monday's ISM services prices index are the first tests; a 30-year close above 5.644% would be a new high since 2002.",
+    "supporting_data": [
+      {
+        "label": "OPEC+ kept November output targets unchanged on Sunday, extending the pause that began in October, with the next meeting on November 1 — the group is adding no planned supply while Hormuz shipping stays disrupted.",
+        "url": "https://www.opec.org/press-room.html"
+      },
+      {
+        "label": "The UK's maritime security agency reported at least two tankers struck over the weekend near Oman and in the Strait of Hormuz, and Iran's parliament speaker said the strait will not reopen until Iran's seven conditions are met — the weekend gave no sign of shipping returning to normal.",
+        "url": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html"
+      },
+      {
+        "label": "The thirty-year Treasury yield closed Friday at 5.629%, 1.5 basis points under its 2002 high, after rising about 14 basis points on the week — long yields climbed while hike odds fell, which points to inflation and supply worries rather than the Fed's next move.",
+        "url": "https://fred.stlouisfed.org/series/DGS30"
+      },
+      {
+        "label": "CME FedWatch odds of an October 28 hike stood near 20% at Friday's close, down from about 76% a week earlier — after September payrolls rose only 29,000, the market has largely stopped expecting an October move.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Brent settled at $102.25 on Friday, down 6 cents on the day and roughly flat on the week on a like-for-like contract basis, after G7 governments agreed to release emergency fuel stocks — oil has stopped rising, but has not fallen despite the release.",
+        "url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+      },
+      {
+        "label": "ISM services for September is due Monday, expected near 55.1 against 55.4, with minutes of the September hike on Wednesday — its prices index will show whether manufacturing's jump to 77.9 is spreading to services.",
+        "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+      },
+      {
+        "label": "Bitcoin traded near $85,200 Sunday morning, up about 0.5% in 24 hours in an $84,551-$85,427 range — the one market open this weekend has been steady through the tanker and OPEC+ news.",
+        "url": "https://crypto.com/exchange/trade/BTC_USD"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7722.72, "change_pct": 0.73, "as_of": "2026-10-02T20:00:00.000Z" },
+    "nasdaq": { "level": 27190.86, "change_pct": 1.19, "as_of": "2026-10-02T20:00:00.000Z" },
+    "vix": { "level": 15.52, "change_pct": -5.31, "as_of": "2026-10-02T20:00:00.000Z" },
+    "ust10y": { "level": 5.281, "change_bps": 5, "as_of": "2026-10-02T20:00:00.000Z" },
+    "dxy": { "level": 101.69, "change_pct": -0.19, "as_of": "2026-10-02T20:00:00.000Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.629, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.281, "trigger_above": 5.344, "unit": "%" },
+    { "name": "DXY", "value": 101.69, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,666", "value": 7722.72, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4217.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Closed Friday at $233.95, up 1.34%, after its first record intraday high since May; chips led the Nasdaq-100 to a record as hike odds fell.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Rose about 5% Friday after third-quarter deliveries of 486,532 beat the 461,974 consensus; results due October 21.", "sentiment": "neutral" },
+    { "ticker": "PEP", "note": "PepsiCo reports this week, one of the few large earnings reports before the season starts the following week.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $85,200 Sunday morning, up about 0.5% in 24 hours in an $84,551-$85,427 range.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Oil at the Sunday evening open",
+      "thesis": "OPEC+ held November targets and at least two more tankers were reported struck near Hormuz over the weekend, while the G7 fuel-stock release held Brent roughly flat last week at $102.25.",
+      "entry": "Brent $102.25 at Friday's settle.",
+      "invalidation": "A sharp rise at the open would say the weekend attacks outweigh the reserve release; a flat or lower open would say they were already in the price.",
+      "horizon": "Sunday evening to Monday, October 5"
+    },
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year rose about 14 basis points last week to 5.629% while October hike odds fell from about 76% to about 20%, so the pressure on long bonds is coming from outside the Fed path; it sits 1.5 basis points under its 2002 high.",
+      "entry": "Thirty-year 5.629% between the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would resume the rise; a close under 5.44% would say last week's rise was positioning.",
+      "horizon": "October 5-9, through the Fed minutes"
+    },
+    {
+      "asset": "ISM services prices against December hike odds",
+      "thesis": "Hiring slowed to 29,000 while manufacturing prices paid reached 77.9; Monday's services prices index shows whether price pressure is spreading.",
+      "entry": "ISM services expected near 55.1 against 55.4 prior; manufacturing prices paid 77.9.",
+      "invalidation": "A soft services prices index alongside weak payrolls would weaken the case for any further hike; a jump like manufacturing's would keep it alive.",
+      "horizon": "Monday, October 5"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-04-morning.mdx"
+}
