@@ -1,0 +1,150 @@
+{
+  "routine": "markets",
+  "date": "2026-10-04",
+  "window": "night",
+  "generated_at": "2026-10-05T00:48:18Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⏸️",
+    "headline": "Oil edges up as Houthis claim strikes on Saudi oil sites before a week of inflation tests",
+    "label": "Sunday night: S&P 500 closed Fri at 7,722.72 (+0.73%, week -0.3%), Nasdaq 27,190.86 (+1.19%); S&P and Nasdaq-100 futures +0.1% at Sunday open; Brent $103.06 (+0.8%) early Sunday evening; 10Y 5.281%, 30Y 5.629% (2002 high 5.644%); Oct hike odds ~20%; BTC ~$86,500, +2.0% in 24h.",
+    "conviction": "low",
+    "rationale_short": "What happened: stock and oil futures reopened Sunday evening for the first time since Friday. S&P 500 and Nasdaq-100 futures rose about 0.1%, which is close to no change. Brent rose 81 cents, or 0.8%, to $103.06 by about 6pm New York time, and US crude rose 0.5% to $91.57. Reuters tied the move to a Houthi claim of missile and drone attacks on Saudi Aramco sites near Riyadh and in Khurais; the claim had not been independently verified, and the Saudi-led coalition called an earlier version of it misleading. Earlier Sunday, OPEC+ kept November output targets unchanged. Bitcoin rose about 2% over 24 hours to near $86,500.\n\nWhat it means: the first priced reaction to a weekend of tanker strikes, an unverified attack on Saudi oil sites and no new OPEC+ supply is a rise in oil of less than 1%, and almost none in stock futures. That suggests investors had already priced much of the Gulf risk, or are waiting for proof of damage before paying more for oil. Either way, oil near $103 keeps feeding the inflation worry that lifted the thirty-year Treasury yield to 5.629% last week even as October hike odds fell to about 20%. The two signals point different ways: a quiet open argues against panic, while a higher oil price argues against inflation easing soon.\n\nWhat would change the picture: confirmed damage that cuts Saudi output would test whether oil's small move was too calm. A thirty-year yield close above 5.644% would be the highest since 2002; a close under 5.44% would say last week's rise is fading. Monday's ISM services prices index shows whether manufacturing's jump in prices paid to 77.9 is spreading, and Wednesday's minutes of the September hike follow. Conviction is low: no cash market has traded since Friday, Sunday-evening futures trade thinly, and nearly every news site this run tried to open was blocked, so weekend events rest on search summaries rather than articles read in full.",
+    "lede_short": "Oil rose 0.8% to $103.06 at Sunday evening's open after the Houthis claimed unverified strikes on Saudi oil sites, while stock futures barely moved. A small, calm reaction suggests much of the Gulf risk was already priced, but oil near $103 still feeds the inflation worry that has the 30-year yield at 5.629%, just under its 2002 high. Confirmed damage to Saudi output, or Monday's ISM services prices index, could change that.",
+    "supporting_data": [
+      {
+        "label": "Brent rose 81 cents, or 0.8%, to $103.06 by 22:02 GMT Sunday, and US crude rose 0.5% to $91.57, after the Houthis claimed attacks on Saudi Aramco sites in Riyadh and Khurais — the claim was unverified, and oil's first reaction was small.",
+        "url": "https://www.investing.com/news/commodities-news/oil-climbs-after-yemeni-houthis-attack-saudi-aramco-sites-4930963"
+      },
+      {
+        "label": "S&P 500 and Nasdaq-100 futures each rose about 0.1% and Dow futures about 53 points at Sunday evening's open — stock investors showed little reaction to the weekend's Gulf news.",
+        "url": "https://www.cnbc.com/2026/10/04/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "The thirty-year Treasury yield closed Friday at 5.629%, 1.5 basis points under its 2002 high, after rising about 14 basis points on the week — long yields climbed while hike odds fell, which points to inflation and supply worries rather than the Fed's next move.",
+        "url": "https://fred.stlouisfed.org/series/DGS30"
+      },
+      {
+        "label": "OPEC+ kept November output targets unchanged on Sunday, with its core members still pumping about 5 million barrels a day below prewar levels — the group is adding no planned supply while Gulf shipping stays disrupted.",
+        "url": "https://www.opec.org/press-room.html"
+      },
+      {
+        "label": "CME FedWatch odds of an October 28 hike stood near 20% at Friday's close, down from about 76% a week earlier — after September payrolls rose only 29,000, the market has largely stopped expecting an October move.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "ISM services for September is due Monday, with forecasts between about 55.1 and 55.7 against 55.4, and minutes of the September hike follow Wednesday — the services prices index will show whether manufacturing's jump to 77.9 is spreading.",
+        "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+      },
+      {
+        "label": "Bitcoin traded near $86,500 Sunday evening, up about 2% in 24 hours in an $84,712-$86,793 range — the one market open all weekend firmed rather than fell on the Gulf news.",
+        "url": "https://crypto.com/exchange/trade/BTC_USD"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7722.72,
+      "change_pct": 0.73,
+      "as_of": "2026-10-02T20:00:00.000Z"
+    },
+    "nasdaq": {
+      "level": 27190.86,
+      "change_pct": 1.19,
+      "as_of": "2026-10-02T20:00:00.000Z"
+    },
+    "vix": {
+      "level": 15.52,
+      "change_pct": -5.31,
+      "as_of": "2026-10-02T20:00:00.000Z"
+    },
+    "ust10y": {
+      "level": 5.281,
+      "change_bps": 5,
+      "as_of": "2026-10-02T20:00:00.000Z"
+    },
+    "dxy": {
+      "level": 101.69,
+      "change_pct": -0.19,
+      "as_of": "2026-10-02T20:00:00.000Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "30Y Yield",
+      "value": 5.629,
+      "trigger_above": 5.644,
+      "unit": "%"
+    },
+    {
+      "name": "10Y Yield",
+      "value": 5.281,
+      "trigger_above": 5.344,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 101.69,
+      "trigger_above": 102.0,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7722.72,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "Gold",
+      "value": 4217.0,
+      "trigger_below": 4200.0,
+      "unit": "$/oz"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Closed Friday at $233.95, up 1.34%, after its first record intraday high since May; chips led the Nasdaq-100 to a record as hike odds fell.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Rose about 5% Friday after third-quarter deliveries of 486,532 beat the 461,974 consensus; results due October 21.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PEP",
+      "note": "Reports Thursday, October 8; analysts expect about $2.30 a share on revenue near $25 billion, one of the few large reports before earnings season.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Near $86,500 Sunday evening, up about 2% in 24 hours in an $84,712-$86,793 range.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Oil after the Aramco claim",
+      "thesis": "Brent rose 0.8% to $103.06 at Sunday's open on an unverified Houthi claim of strikes on Saudi Aramco sites, with OPEC+ adding no supply; the small move says investors are waiting for evidence of damage.",
+      "entry": "Brent $103.06, US crude $91.57 early Sunday evening.",
+      "invalidation": "Confirmed loss of Saudi output would test whether the reaction was too small; a denial of damage and a fall back toward Friday's $102.25 would say the claim is already discounted.",
+      "horizon": "Monday, October 5"
+    },
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year rose about 14 basis points last week to 5.629% while October hike odds fell from about 76% to about 20%, so the pressure is coming from outside the Fed path; it sits 1.5 basis points under its 2002 high.",
+      "entry": "Thirty-year 5.629% between the 2002 high of 5.644% above and 5.44% below.",
+      "invalidation": "A close above 5.644% would resume the rise; a close under 5.44% would say last week's rise was positioning.",
+      "horizon": "October 5-9, through the Fed minutes"
+    },
+    {
+      "asset": "ISM services prices against December hike odds",
+      "thesis": "Core PCE slowed to a 2.0% three-month pace while manufacturing prices paid reached 77.9; Monday's services prices index shows which signal is spreading.",
+      "entry": "ISM services forecast about 55.1-55.7 against 55.4 prior; manufacturing prices paid 77.9.",
+      "invalidation": "A soft services prices index alongside weak payrolls would weaken the case for any further hike; a jump like manufacturing's would keep it alive.",
+      "horizon": "Monday, October 5"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-04-night.mdx"
+}
