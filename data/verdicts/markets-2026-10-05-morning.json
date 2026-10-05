@@ -1,0 +1,134 @@
+{
+  "routine": "markets",
+  "date": "2026-10-05",
+  "window": "morning",
+  "generated_at": "2026-10-05T12:21:43Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Euro falls to a 17-month low as Spain calls a snap election and French borrowing costs climb",
+    "label": "Pre-market Mon: S&P 500 futures fractionally lower, Nasdaq-100 -0.1% from Friday's records; DXY ~102.20 (+0.27%), EUR/USD ~1.120 (17-month low); France-Germany 10Y spread 147 bp (widest since 2012); 10Y ~5.26-5.28%; Brent ~$101-102 after Saudi price cut; BTC ~$86,100.",
+    "rationale_short": "What happened: Spain's prime minister called a snap election for November 29 after parliament rejected his housing measures, France's 10-year yield rose 4.1 basis points to 4.907% for a spread over Germany of 147 basis points, the widest since 2012, and the euro fell to its weakest against the dollar in 17 months. The dollar index rose to about 102.20, through the 102 line this report uses for a stronger-dollar regime. US futures are only fractionally lower and the 10-year is little changed near 5.26-5.28%. Oil gave back Sunday's rise after Saudi Arabia cut its November price to Asia to the widest discount since 2020.\n\nWhat it means: the bond-market pressure of the past two weeks has moved to Europe, and it is reaching the US through the dollar rather than through Treasury yields. That fits Treasury Secretary Bessent's weekend description of a global rather than US-specific rise in yields. A dollar rising while October hike odds sit near 18% tightens conditions for US exporters and commodity prices without the Fed acting.\n\nWhat would change the picture: a dollar index back under 102 and a French spread below 140 basis points would mark this as a one-day reaction. A French spread past 150 with the S&P 500 closing under 7,666.45 would say US stocks are following Europe. Today's ISM services prices index and Wednesday's Fed minutes are the US tests, with the 30-year 1.5 basis points under its 2002 high of 5.644%. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited articles.",
+    "lede_short": "Spain called a snap election and France's borrowing premium over Germany hit its widest since 2012, sending the euro to a 17-month low and the dollar index above 102. US futures and Treasury yields barely moved, so Europe's stress is reaching the US through a stronger dollar rather than higher rates. A dollar back under 102 would mark it as a one-day reaction; a French spread past 150 with the S&P 500 under 7,666 would say it is spreading.",
+    "supporting_data": [
+      {
+        "label": "The euro hit its weakest level against the dollar in 17 months as political uncertainty in Spain and France spread into wider markets — two of the euro area's four largest economies now carry political risk at the same time.",
+        "url": "https://www.cnbc.com/2026/10/05/euro-dollar-spain-france-risk.html"
+      },
+      {
+        "label": "France's 10-year yield rose 4.1 basis points to 4.907% and its spread over Germany widened to 147 basis points, the most since 2012 — French borrowing costs are 9 basis points from 5%, and French banks led the CAC 40's 0.86% early drop.",
+        "url": "https://eurasiabusinessnews.com/2026/10/05/european-stock-markets-open-mixed-as-french-fiscal-fears-hit-cac-40/"
+      },
+      {
+        "label": "Spain's Pedro Sánchez called a snap election for November 29 after parliament rejected his housing measures — a second dated political risk alongside France's 2027 budget.",
+        "url": "https://www.npr.org/2026/10/05/nx-s1-5991404/spain-snap-elections"
+      },
+      {
+        "label": "The dollar index traded near 102.20, up 0.27%, through the 102 line — the dollar, not Treasuries, is absorbing money leaving euro assets.",
+        "url": "https://www.fxstreet.com/news/united-states-dollar-index-gathers-strength-above-10200-on-safe-haven-flows-202610050257"
+      },
+      {
+        "label": "Saudi Aramco cut November Arab Light to Asia to $5 below the Oman/Dubai average, the widest discount since June 2020, against expectations of a rise — a seller defending market share is evidence supply is reaching buyers despite the Houthi attacks.",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L1N45Q05Y:0-saudi-arabia-cuts-arab-light-crude-oil-osp-for-asia-for-november/"
+      },
+      {
+        "label": "Treasury Secretary Bessent said the rise in Treasury yields follows a global trend and would concern him only if it were idiosyncratic — Monday's moves, with European yields rising faster than US ones, fit that description.",
+        "url": "https://www.investing.com/news/economy-news/bessent-says-rising-treasury-yields-reflect-global-trend-not-cause-for-alarm-4930869"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7722.72,
+      "change_pct": 0.73,
+      "as_of": "2026-10-02T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 27190.86,
+      "change_pct": 1.19,
+      "as_of": "2026-10-02T20:00:00Z"
+    },
+    "vix": {
+      "level": 15.31,
+      "change_pct": -6.59,
+      "as_of": "2026-10-02T20:00:00Z"
+    },
+    "ust10y": {
+      "level": 5.27,
+      "change_bps": -1,
+      "as_of": "2026-10-05T12:20:00Z"
+    },
+    "dxy": {
+      "level": 102.2,
+      "change_pct": 0.27,
+      "as_of": "2026-10-05T12:20:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "30Y Yield",
+      "value": 5.629,
+      "trigger_above": 5.644,
+      "unit": "%"
+    },
+    {
+      "name": "10Y Yield",
+      "value": 5.27,
+      "trigger_above": 5.344,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 102.2,
+      "trigger_above": 102.0,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7722.72,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "Gold",
+      "value": 4130.0,
+      "trigger_below": 4200.0,
+      "unit": "$/oz"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "BTC",
+      "note": "About $86,100 at 8:20 a.m. ET on Crypto.com after touching about $86,990 overnight; up about 1% over 24 hours and not following the euro lower.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ETH",
+      "note": "About $2,716, up about 0.6% over 24 hours in a $2,691-$2,739 range.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US dollar index",
+      "thesis": "The dollar index rose through 102 on euro weakness tied to France and Spain, while October hike odds sit near 18%; the dollar is rising for reasons outside the Fed path.",
+      "entry": "DXY about 102.20 against the 102.0 line.",
+      "invalidation": "A close back under 102 would mark the move as a one-day reaction; a close above it would confirm a stronger-dollar regime.",
+      "horizon": "October 5-7, through the Fed minutes"
+    },
+    {
+      "asset": "ISM services prices and the 30-year Treasury",
+      "thesis": "Manufacturing prices paid jumped to 77.9; the services prices index shows whether that is spreading, with the 30-year 1.5 basis points under its 2002 high.",
+      "entry": "ISM services forecast near 55 against 55.4; 30-year 5.629% against 5.644%.",
+      "invalidation": "A soft services prices reading would support the view that the hike debate is over; a jump and a 30-year close above 5.644% would reopen it.",
+      "horizon": "Monday, October 5"
+    },
+    {
+      "asset": "S&P 500 against European stress",
+      "thesis": "The S&P 500 is less than 1% from its record while French spreads are at their widest since 2012; US stocks have so far stood apart from Europe.",
+      "entry": "S&P 500 7,722.72 against Thursday's 7,666.45; France-Germany spread 147 bp.",
+      "invalidation": "A French spread past 150 bp with an S&P close under 7,666.45 would say US stocks are following Europe; a spread under 140 with the S&P above 7,700 would say they are not.",
+      "horizon": "October 5-9"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-05-morning.mdx"
+}
