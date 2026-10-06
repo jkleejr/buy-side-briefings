@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-05",
+  "window": "night",
+  "generated_at": "2026-10-06T00:12:11Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Long Treasury yields close at a 24-year high on hot service prices as the Nasdaq sets a record",
+    "label": "Close Mon: S&P 500 7,773.95 (+0.66%), Nasdaq 27,477.31 (+1.05%, record), Dow +0.18%; VIX 16.21 (+0.90); 30Y ~5.661% (above 2002 high 5.644%; intraday 5.703%), 10Y ~5.307% (intraday 5.349%); DXY ~102.27; WTI ~$89; NVDA $238.90 record.",
+    "rationale_short": "What happened: the ISM services prices index rose to 74.0, its highest since July 2022 and above a 72.9 forecast, and services employment returned to 50.1. The thirty-year Treasury yield reached 5.703% and the ten-year 5.349% intraday, the highest since 2002, before closing near 5.661% and 5.307%, each up about 3 basis points. The thirty-year close is above the 5.644% 2002 high this report has used as its line for renewed long-bond pressure. Stocks did not follow: the Nasdaq rose 1.05% to a record and Nvidia closed at a record $238.90, while the Dow gained only 0.18% and the VIX rose 0.90 points. The dollar index held above 102 at about 102.27 on the euro's slide.\n\nWhat it means: long yields rose for a second session without help from the Fed path, with October hike odds near 19%. Either investors want more yield to hold long bonds regardless of the Fed, which a narrow, technology-led stock rally has not priced, or the long end is repricing inflation while growth holds, which stocks can carry. One session does not separate them; this week's three-, ten- and thirty-year auctions and Wednesday's Fed minutes are the next evidence.\n\nWhat would change the picture: a thirty-year close back under 5.644% would say Monday's break did not hold; a ten-year close above 5.349% with the Nasdaq lower would show higher yields reaching the market's leaders, and an S&P 500 close under 7,666.45 would show the index following. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources.",
+    "lede_short": "The thirty-year Treasury yield closed above its 2002 high after service-sector prices rose at the fastest pace since 2022, yet the Nasdaq and Nvidia closed at records. Long yields are rising while Fed hike odds stay near 19%, so the pressure is coming from inflation or bond supply rather than the Fed. This week's ten- and thirty-year auctions decide which; a thirty-year back under 5.644% would undo Monday's break.",
+    "supporting_data": [
+      {
+        "label": "The ISM services prices index rose 1.4 points to 74.0, the highest since July 2022, against a 72.9 forecast, while employment returned to 50.1 — service prices are rising with factory prices, and hiring in services stopped shrinking.",
+        "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-9-september-2026-ism-services-pmi-report-302898421.html"
+      },
+      {
+        "label": "The thirty-year yield closed near 5.661% and the ten-year near 5.307%, after intraday highs of 5.703% and 5.349%, the highest since 2002 — the thirty-year close is above its 5.644% 2002 high for the first time.",
+        "url": "https://www.cnbc.com/2026/10/05/treasury-yields-bonds-fed-rates.html"
+      },
+      {
+        "label": "The Nasdaq rose 1.05% to a record 27,477.31 and Nvidia 2.1% to a record $238.90, a $5.76 trillion value — stocks priced steady Fed odds and set aside 24-year highs in long yields.",
+        "url": "https://www.staradvertiser.com/2026/10/05/breaking-news/nasdaq-notches-record-high-close-as-investors-focus-on-earnings/"
+      },
+      {
+        "label": "The dollar index rose 0.33% to about 102.27 after touching 102.53, its highest since April 2025 — the euro's slide on Spanish and French political risk kept the dollar above 102 all session.",
+        "url": "https://tradingeconomics.com/united-states/currency"
+      },
+      {
+        "label": "October hike odds stood near 19% on CME FedWatch on Monday morning, against about 64% two weeks earlier — long yields rose without help from the expected Fed path.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Intel fell about 4% after Elon Musk confirmed talks with TSMC about joining his Terafab chip venture, where Intel had been the only named partner — the first sign Intel's foundry role there could be shared.",
+        "url": "https://qz.com/intel-stock-tsmc-musk-terafab-chip-venture-100526"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7773.95, "change_pct": 0.66, "as_of": "2026-10-05T20:00:00Z" },
+    "nasdaq": { "level": 27477.31, "change_pct": 1.05, "as_of": "2026-10-05T20:00:00Z" },
+    "vix": { "level": 16.21, "change_pct": 5.88, "as_of": "2026-10-05T20:15:00Z" },
+    "ust10y": { "level": 5.307, "change_bps": 3, "as_of": "2026-10-05T20:00:00Z" },
+    "dxy": { "level": 102.27, "change_pct": 0.33, "as_of": "2026-10-05T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.661, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.307, "trigger_above": 5.349, "unit": "%" },
+    { "name": "DXY", "value": 102.27, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,666", "value": 7773.95, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4139.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Closed at a record $238.90, up 2.12%, a $5.76 trillion market value, on a day long Treasury yields set 24-year highs.", "sentiment": "positive" },
+    { "ticker": "MSFT", "note": "Rose 1.48% to $525.18 after a Melius Research upgrade citing demand for AI security and governance products.", "sentiment": "positive" },
+    { "ticker": "META", "note": "Rose 1.90% to $741.90 as part of the large-technology rally that took the Nasdaq to a record.", "sentiment": "positive" },
+    { "ticker": "TSM", "note": "US shares rose about 2% after Elon Musk confirmed talks about TSMC joining the Terafab venture; TSMC has not commented and Musk called them just discussions.", "sentiment": "positive" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year closed near 5.661%, above its 5.644% 2002 high for the first time, after the ISM services prices index hit 74.0, with October hike odds near 19%; three Treasury auctions this week test whether demand for long bonds holds at these yields.",
+      "entry": "Thirty-year ~5.661% between Monday's 5.703% intraday high above and the 5.644% 2002 high below.",
+      "invalidation": "A close back under 5.644% by Friday would say the break did not hold; a close above 5.703%, especially after a weak thirty-year auction on Thursday, would extend it.",
+      "horizon": "October 6-9, through the auctions and Fed minutes"
+    },
+    {
+      "asset": "Nasdaq and Nvidia against the ten-year",
+      "thesis": "The Nasdaq and Nvidia set records with the ten-year at 5.307%, 4 basis points under its intraday high, in a narrow rally: the Dow rose 0.18% and the VIX rose 0.90 points on the up day.",
+      "entry": "Ten-year 5.307% against 5.349%; S&P 500 7,773.95 against 7,666.45.",
+      "invalidation": "A ten-year close above 5.349% with the Nasdaq lower would show the discount rate reaching the leaders; an S&P 500 close under 7,666.45 would show the index following; continued records with the ten-year steady would say stocks are carrying the yield level.",
+      "horizon": "This week"
+    },
+    {
+      "asset": "Dollar index above 102",
+      "thesis": "The dollar index closed near 102.27 after a 102.53 high, the highest since April 2025, driven by the euro's slide on Spanish and French political risk rather than by US rates.",
+      "entry": "DXY ~102.27 against the 102 line.",
+      "invalidation": "A close back under 102 would mark Monday as a reaction to Spain's election call; Fed minutes on Wednesday showing several officials open to more hikes would add a rate reason to the euro reason.",
+      "horizon": "Through Wednesday's Fed minutes"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-05-night.mdx"
+}
