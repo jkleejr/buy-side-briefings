@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-10-06",
+  "window": "morning",
+  "generated_at": "2026-10-06T12:14:34Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Treasuries recover part of Monday's selloff as oil falls, with stocks set to open near a record",
+    "label": "Pre-market Tue: S&P 500 futures +0.25%, Nasdaq 100 futures +0.40%, Dow futures +0.42%; 30Y ~5.626% (back under 2002 high 5.644%), 10Y ~5.269% (-4 bp); Brent ~$98.5, WTI ~$87.6; DXY ~102.16; Oct hike odds ~22.7%.",
+    "rationale_short": "What happened: before the open the thirty-year Treasury yield was near 5.626%, back under the 5.644% 2002 high it closed above for the first time on Monday, and the ten-year was near 5.269%, about 4 basis points lower. Brent fell from about $101 to under $99 on steady Middle East exports and the G7 reserve release, and German ten-year yields fell more than 6 basis points. Stock futures rose with bonds, leaving the S&P 500 0.6% under its August record. October hike odds stood near 22.7% on CME FedWatch, about where they were on Monday.\n\nWhat it means: the bond recovery followed oil, not the Fed path, so the inflation reading behind Monday's long-bond selling is the thing in question. A pre-market move is not a close, and the three-, ten- and thirty-year auctions this week test demand directly. Iran has said Hormuz stays shut until its conditions are met, so the oil decline rests on supply around the strait and could reverse on a fresh incident.\n\nWhat would change the picture: a thirty-year close above 5.644% today would say Monday's break is holding; a close under it, with a steady three-year auction, would say it did not. An S&P 500 close under 7,666.45 would show the index following yields. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources.",
+    "lede_short": "Treasuries recovered part of Monday's selloff before the open, putting the thirty-year yield back under its 2002 high, as Brent fell below $99 on steady Gulf exports and the G7 reserve release. Fed hike odds barely moved, so the bond move followed oil, and stock futures rose with it toward the S&P 500's August record. Today's close and this week's three Treasury auctions decide whether Monday's break holds; a thirty-year close above 5.644% would say it does.",
+    "supporting_data": [
+      {
+        "label": "The thirty-year yield fell to 5.626% and the ten-year to 5.269% early Tuesday, a day after the thirty-year touched 5.702% — the long bond is back under its 5.644% 2002 high before the open, though not yet on a close.",
+        "url": "https://newsquawk.com/headlines/newsquawk-daily-us-opening-news---6th-october-2026"
+      },
+      {
+        "label": "Brent fell to about $98.6 as Middle East crude exports held up and G7 members began releasing reserves — lower oil eases the inflation input behind Monday's selling in long bonds.",
+        "url": "https://www.cnbc.com/2026/10/05/oil-slips-as-middle-east-crude-exports-rise-g7-to-release-stocks.html"
+      },
+      {
+        "label": "S&P 500 futures rose 0.25% and Nasdaq futures 0.40%, with the S&P 500 0.6% below its mid-August peak — a record close today would be the first since August, made with the ten-year above 5.2%.",
+        "url": "https://investing.com/news/economy-news/wall-st-futures-rise-as-yields-oil-dip-4933888"
+      },
+      {
+        "label": "October hike odds stood near 22.7% on CME FedWatch, against about 19% on Monday morning, with year-end odds near 84% — the expected Fed path drove neither Monday's selloff nor Tuesday's recovery.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "The dollar index held near 102.16 after an 18-month high of 102.53, with the euro under $1.12 on French and Spanish political risk — Europe's currency stress has not reversed with US yields.",
+        "url": "https://www.axios.com/2026/10/05/euro-dollar-france-spain"
+      },
+      {
+        "label": "Iran's parliament speaker said Hormuz will not reopen until seven conditions from the June agreement are met — the oil decline rests on supply around the strait, not a reopening.",
+        "url": "https://www.freemalaysiatoday.com/category/world/2026/10/04/iran-says-strait-of-hormuz-will-not-reopen-until-conditions-are-met"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7773.95, "change_pct": 0.25, "as_of": "2026-10-06T11:30:00Z" },
+    "nasdaq": { "level": 27477.31, "change_pct": 0.40, "as_of": "2026-10-06T11:30:00Z" },
+    "vix": { "level": 16.21, "change_pct": 5.88, "as_of": "2026-10-05T20:15:00Z" },
+    "ust10y": { "level": 5.269, "change_bps": -4, "as_of": "2026-10-06T11:30:00Z" },
+    "dxy": { "level": 102.16, "change_pct": -0.11, "as_of": "2026-10-06T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.626, "trigger_above": 5.644, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.269, "trigger_above": 5.349, "unit": "%" },
+    { "name": "DXY", "value": 102.16, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,666", "value": 7773.95, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4121.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "GOOGL", "note": "Bloomberg reported Alphabet is near a nuclear power deal with Constellation Energy worth at least $1 billion; neither company commented.", "sentiment": "neutral" },
+    { "ticker": "NVDA", "note": "Comes into Tuesday off a record $238.90 close; no stock-specific news before the open.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year fell to about 5.626% before the open, back under the 5.644% 2002 high it closed above on Monday, as oil fell; the three-year auction at 1 p.m. is the first of three sales this week.",
+      "entry": "Thirty-year ~5.626% against the 5.644% 2002 high and Monday's 5.702% intraday high.",
+      "invalidation": "A close back above 5.644% would say Monday's break is holding; a close under it with steady auction demand would say it did not.",
+      "horizon": "October 6-8, through the three auctions"
+    },
+    {
+      "asset": "S&P 500 against its August record",
+      "thesis": "The index is 0.6% under its mid-August peak with futures higher as yields and oil fall; a record would be the first since August, made with the ten-year above 5.2%.",
+      "entry": "S&P 500 7,773.95 at Monday's close, against the August record above and 7,666.45 below.",
+      "invalidation": "A reversal from near the record on rising yields would show the record still depends on bonds; a close under 7,666.45 would show the index following yields lower.",
+      "horizon": "This week, before bank earnings open on October 13"
+    },
+    {
+      "asset": "Fed path before the minutes",
+      "thesis": "October hike odds are near 22.7% and year-end odds near 84%, so the market has moved the next hike to December; Williams and Bowman speak Tuesday and the September minutes come Wednesday.",
+      "entry": "October hike odds ~22.7% on CME FedWatch.",
+      "invalidation": "A speaker or the minutes arguing for an October move would lift those odds; no pushback would leave December as the priced date.",
+      "horizon": "October 6-7"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-06-morning.mdx"
+}
