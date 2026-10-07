@@ -1,0 +1,144 @@
+{
+  "routine": "markets",
+  "date": "2026-10-06",
+  "window": "night",
+  "generated_at": "2026-10-07T00:12:20Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "S&P 500 closes at its first record since August as the ten-year eases, but long bonds hold",
+    "label": "Close Tue: S&P 500 7,818.93 (+0.58%, record), Nasdaq 27,599.79 (+0.45%, record), Dow +0.49%, Russell 2000 -0.59%; VIX 15.01; 10Y ~5.27% (-5 bp), 30Y ~5.66% (flat, above 5.644%); Brent $100.58, WTI $89.44; 3Y auction 4.932%, 2.62 bid-to-cover.",
+    "rationale_short": "What happened: the S&P 500 rose 0.58% to 7,818.93, its first close above 7,800 and first record since August 13, and the Nasdaq set a second straight record. The ten-year Treasury yield fell about 5 basis points to 5.27% and the $58 billion three-year auction cleared near average at 4.932%, though indirect bidders took only 57.6% against a 65.9% average. The thirty-year held near 5.66%, above the 5.644% 2002 high it broke on Monday. The Russell 2000 fell 0.59%. Oil's pre-market decline reversed: Brent settled up 26 cents at $100.58.\n\nWhat it means: the record rests on lower intermediate yields and AI spending news (Google's 20-year Constellation nuclear deal, Marvell's raised outlook, Nvidia near $6 trillion), not on broad relief. The long end did not join in, and the ten-to-thirty-year spread widened to about 39 basis points, which points to a supply or inflation premium the record has not yet had to absorb.\n\nWhat would change the picture: a weak thirty-year auction on Thursday would support the supply explanation; a thirty-year close under 5.644% would undo Monday's break, a close above 5.703% would extend it. A ten-year close above 5.349% with the index at a record would show stocks carrying higher yields; an S&P 500 close under 7,666.45 would show it following them. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources.",
+    "lede_short": "The S&P 500 closed at its first record since August as the ten-year Treasury yield eased to 5.27%, led by chipmakers and Google's nuclear power deal with Constellation. The relief was partial: the thirty-year stayed above its 2002 high and small caps fell, so the record rests on a few large AI names. Thursday's thirty-year auction is the test; a close above 5.703% would put the long-bond pressure back on the record.",
+    "supporting_data": [
+      {
+        "label": "The S&P 500 rose 0.58% to a record 7,818.93, its first close above 7,800 and first record since August 13 — while the Russell 2000 fell 0.59%, so the gain came from a narrow group of large stocks.",
+        "url": "https://www.cnbc.com/2026/10/05/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "The ten-year yield eased about 5 basis points to 5.27% while the thirty-year held near 5.66% — the long end stayed above its 2002 high and the ten-to-thirty-year spread widened to about 39 basis points.",
+        "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+      },
+      {
+        "label": "The $58 billion three-year sale cleared at 4.932% with a 2.62 bid-to-cover against a 2.65 average and indirects at 57.6% against 65.9% — the sale passed, but the buyers usually read as foreign demand were thinner before the ten- and thirty-year auctions.",
+        "url": "https://investinglive.com/news/us-treasury-sells-58-billion-of-3-or-notes-at-a-high-yield-of-4-932/"
+      },
+      {
+        "label": "Google agreed a 20-year deal to buy 3,590 megawatts from 11 Constellation nuclear units, funding $4.3 billion of upgrades with first power in 2028 — Constellation rose as much as 15% and lifted the nuclear group.",
+        "url": "https://www.googlecloudpresscorner.com/2026-10-06-Google-and-Constellation-Announce-Landmark-Agreement-to-Bring-890-MW-of-New-Nuclear-Capacity-to-PJM-Grid-as-Part-of-Long-Term-Power-Deal"
+      },
+      {
+        "label": "Brent settled up 26 cents at $100.58 and WTI up 1 cent at $89.44 after Brent traded under $99 before the open — attacks on tankers near Hormuz kept the morning's decline from lasting.",
+        "url": "https://www.nbcnews.com/business/markets/stocks-records-oil-nvidia-rcna601852"
+      },
+      {
+        "label": "Marvell rose about 6% after raising its fiscal 2027 and 2028 revenue outlook at its investor day, and Broadcom about 4% — the market read the custom AI chip case as good news for the whole category.",
+        "url": "https://247wallst.com/investing/2026/10/06/marvell-rallies-6-as-investor-day-presses-the-custom-ai-silicon-case-broadcom-advances-4/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7818.93,
+      "change_pct": 0.58,
+      "as_of": "2026-10-06T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 27599.79,
+      "change_pct": 0.45,
+      "as_of": "2026-10-06T20:00:00Z"
+    },
+    "vix": {
+      "level": 15.01,
+      "change_pct": -3.29,
+      "as_of": "2026-10-06T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 5.27,
+      "change_bps": -5,
+      "as_of": "2026-10-06T20:00:00Z"
+    },
+    "dxy": {
+      "level": 102.16,
+      "change_pct": -0.1,
+      "as_of": "2026-10-06T12:00:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "30Y Yield",
+      "value": 5.66,
+      "trigger_above": 5.644,
+      "unit": "%"
+    },
+    {
+      "name": "10Y Yield",
+      "value": 5.27,
+      "trigger_above": 5.349,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 102.16,
+      "trigger_above": 102.0,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7818.93,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "Gold",
+      "value": 4121.0,
+      "trigger_below": 4200.0,
+      "unit": "$/oz"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Rose again toward a $6 trillion market value, which needs a share price near $250, about 5% above Monday's record $238.90 close.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Rose nearly 3% to a record alongside Nvidia as chipmakers led the S&P 500 to its first record since August.",
+      "sentiment": "positive"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "Agreed a 20-year deal for 3,590 megawatts from 11 Constellation nuclear units, with first power in 2028 — a long-dated commitment to AI power supply.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Rose about 4% to $376.09 as Marvell's investor day made the case for custom AI chips.",
+      "sentiment": "positive"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year held near 5.66%, above its 5.644% 2002 high, while the ten-year eased 5 basis points; the three-year auction drew thinner indirect demand (57.6% against a 65.9% average). Thursday's $22 billion thirty-year sale tests whether the long end carries a supply premium.",
+      "entry": "Thirty-year ~5.66% between Monday's 5.703% intraday high and the 5.644% 2002 high.",
+      "invalidation": "A close under 5.644% would undo Monday's break; a close above 5.703%, especially after a weak auction, would extend it.",
+      "horizon": "October 7-9, through the ten- and thirty-year auctions"
+    },
+    {
+      "asset": "S&P 500 record against small caps",
+      "thesis": "The S&P 500 set its first record since August at 7,818.93 while the Russell 2000 fell 0.59%; the gain came from chipmakers and AI power news rather than broad relief.",
+      "entry": "S&P 500 7,818.93; prior record area from August; 7,666.45 below.",
+      "invalidation": "A ten-year close above 5.349% with the index holding the record would show stocks carrying higher yields; an S&P 500 close under 7,666.45 would show the index following yields lower.",
+      "horizon": "Through the start of bank earnings on October 13"
+    },
+    {
+      "asset": "Hard-drive makers (STX, WDC)",
+      "thesis": "Seagate and Western Digital fell about 8% and 6% by late morning, after roughly 10% drops on Friday, on Toshiba's plan to double hard-drive capacity by fiscal 2027 — the first direct supply threat to the scarcity behind their 2026 gains.",
+      "entry": "Seagate near $819 and Western Digital near $415 in late-morning trading.",
+      "invalidation": "Stabilisation with Micron flat would mark the move as specific to drives rather than storage demand; further losses in Micron would widen it to memory.",
+      "horizon": "Into October earnings"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-06-night.mdx"
+}
