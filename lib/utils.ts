@@ -116,7 +116,12 @@ export function formatBriefingTitleShort(b: {
 }
 
 
-const WORDS_PER_MINUTE = 200;
+/**
+ * Adult silent reading of non-fiction averages ~240-260 wpm. 200 was a
+ * slow-reader figure: a 1,160-word night report came out at 7 min and read
+ * in well under that.
+ */
+const WORDS_PER_MINUTE = 250;
 
 /**
  * Roughly how long a table row takes to scan. A close table is read at a
@@ -124,7 +129,7 @@ const WORDS_PER_MINUTE = 200;
  * as prose overstated a report by a minute, counting them as nothing would
  * understate a 25-row week-ahead table.
  */
-const TABLE_ROW_SECONDS = 2.5;
+const TABLE_ROW_SECONDS = 2;
 
 /**
  * Honest read-time in minutes for a markdown report.
