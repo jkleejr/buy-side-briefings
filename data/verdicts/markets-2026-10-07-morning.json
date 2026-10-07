@@ -1,0 +1,139 @@
+{
+  "routine": "markets",
+  "date": "2026-10-07",
+  "window": "morning",
+  "generated_at": "2026-10-07T12:18:50Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Long-bond yields return to their 2002-high area as oil climbs back above $100 before key auction",
+    "label": "Pre-market Wed: S&P 500 futures -0.14% to -0.33%, Nasdaq 100 futures -0.41% to -0.70%; 30Y ~5.70% (Monday high 5.703%), 10Y ~5.31%; Brent $101.58 (+1.0%), WTI $90.22; October hold odds ~78%; BTC ~$83,575 (-3.2%).",
+    "rationale_short": "What happened: overnight the thirty-year Treasury yield touched 5.70%, level with Monday's 5.703% intraday high and above the 5.644% 2002 high, and the ten-year rose back to about 5.30-5.32% from Tuesday's 5.27% close. Brent rose 1% to $101.58 on Houthi attacks on Saudi Arabia and a storm heading for US Gulf production. CME FedWatch still showed about 78% odds of an October hold. Stock futures fell, led by the Nasdaq, a day after the S&P 500's first record since August.\n\nWhat it means: with October policy odds little changed, the rise is in what investors want for holding long bonds as oil climbs, not a new rate call. San Francisco Fed President Daly added AI-driven chip demand to the inflation risks, which ties the market's leading sector to the case for more tightening. Tuesday's record was narrow, so the largest AI names carry most of the exposure.\n\nWhat would change the picture: the $39 billion ten-year auction at 1 p.m. and the Fed minutes at 2 p.m. A ten-year close above 5.349% or a thirty-year close above 5.703% would extend the move; a thirty-year close under 5.644% would undo it. An S&P 500 close under 7,666.45 would show stocks following yields lower. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources.",
+    "lede_short": "The thirty-year Treasury yield is back at 5.70%, level with Monday's high since 2002, as Brent returned above $101 on Houthi attacks on Saudi Arabia and a Gulf storm. October Fed odds barely moved, so the pressure is on long bonds rather than the rate path, and stock futures slipped from Tuesday's record. Today's ten-year auction and Fed minutes decide it: a thirty-year close above 5.703% would extend the move, one under 5.644% would undo it.",
+    "supporting_data": [
+      {
+        "label": "The thirty-year Treasury yield touched 5.70%, its highest since 2002, and Nasdaq 100 futures fell 0.41% — the long end took back Tuesday's relief before the ten-year auction and the Fed minutes.",
+        "url": "https://www.investing.com/news/economy-news/wall-st-futures-slip-as-yields-and-oil-rebound-fed-minutes-in-focus-4936151"
+      },
+      {
+        "label": "Brent rose 1% to $101.58 and WTI 0.9% to $90.22 on Houthi attacks on Saudi Arabia and a storm heading for US Gulf output — oil, the input behind Monday's bond selling, is rising again.",
+        "url": "https://www.nst.com.my/business/corporate/2026/10/1549509/asia-shares-weaker-oil-investors-weigh-saudi-houthi-escalation"
+      },
+      {
+        "label": "CME FedWatch put October hold odds near 78% with a December hike largely priced — the overnight rise in yields came from the long end, not a change in the expected rate path.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Fed's Daly said AI, tariffs and energy could keep inflation sticky enough to need more tightening if they persist — a Fed official now names AI chip demand as an inflation source.",
+        "url": "https://investinglive.com/central-banks/fed-s-daly-more-tightening-depends-on-whether-ai-tariff-and-energy-shocks-persist/"
+      },
+      {
+        "label": "The Treasury sells $39 billion of ten-year notes today and $22 billion of thirty-year bonds Thursday — the first long-bond sale with yields above the 2002 high tests demand directly.",
+        "url": "https://www.newsquawk.com/headlines/us-to-sell-usd-39bln-10yr-notes-on-october-7th-to-sell-usd-58bln-3yr-notes-on-october-6th-to-sell-usd-22bln-30-year-bonds-on-october-8th-all-to-settle-on-october-15th"
+      },
+      {
+        "label": "Constellation Brands beat with $3.74 adjusted EPS but beer depletions fell 0.6% and it cut its margin forecast to 31-32% — volume weakness is now reaching profit, and the stock fell about 5% pre-market.",
+        "url": "https://www.cbrands.com/blogs/stories/earnings-recap-constellation-brands-second-quarter-fiscal-2027-earnings-results"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7818.93,
+      "change_pct": -0.14,
+      "as_of": "2026-10-07T11:30:00Z"
+    },
+    "nasdaq": {
+      "level": 27599.79,
+      "change_pct": -0.41,
+      "as_of": "2026-10-07T11:30:00Z"
+    },
+    "vix": {
+      "level": 15.01,
+      "change_pct": -3.29,
+      "as_of": "2026-10-06T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 5.31,
+      "change_bps": 4,
+      "as_of": "2026-10-07T11:30:00Z"
+    },
+    "dxy": {
+      "level": 102.36,
+      "change_pct": 0.2,
+      "as_of": "2026-10-07T11:30:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "30Y Yield",
+      "value": 5.7,
+      "trigger_above": 5.703,
+      "unit": "%"
+    },
+    {
+      "name": "10Y Yield",
+      "value": 5.31,
+      "trigger_above": 5.349,
+      "unit": "%"
+    },
+    {
+      "name": "DXY",
+      "value": 102.36,
+      "trigger_above": 102.0,
+      "unit": ""
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7818.93,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "Gold",
+      "value": 4121.0,
+      "trigger_below": 4200.0,
+      "unit": "$/oz"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Rose 2.1% Tuesday to a record market value of about $5.76 trillion; with the record narrow and Daly naming AI chip demand as an inflation risk, it carries much of the index's sensitivity to today's yields.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Down about 3.2% over 24 hours to roughly $83,575, moving with Nasdaq futures rather than against higher yields.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "ETH",
+      "note": "Down about 4.9% over 24 hours to roughly $2,580.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year touched 5.70% overnight, level with Monday's 5.703% intraday high and above the 5.644% 2002 high, as oil rose and October Fed odds held. Today's ten-year auction and Thursday's $22 billion thirty-year sale test demand at these yields.",
+      "entry": "Thirty-year ~5.70%; 5.703% Monday high above, 5.644% 2002 high below.",
+      "invalidation": "A close above 5.703% would extend the break; a close under 5.644% would undo it again.",
+      "horizon": "October 7-8, through the ten- and thirty-year auctions"
+    },
+    {
+      "asset": "US 10-year Treasury auction",
+      "thesis": "The $39 billion ten-year sale comes with the yield near 5.31%, under Monday's 5.349% high, after Tuesday's three-year drew indirect bidding of 57.6% against a 65.9% average.",
+      "entry": "Ten-year ~5.31%; 5.349% Monday intraday high.",
+      "invalidation": "A sale clearing above the pre-auction yield with thin indirect demand would favour the supply explanation; a ten-year close above 5.349% would be a new high for the move.",
+      "horizon": "Today, 1 p.m. ET"
+    },
+    {
+      "asset": "S&P 500 record against the Fed minutes",
+      "thesis": "The S&P 500 closed at a record 7,818.93 on narrow chip-led gains; futures are lower as yields rise. Minutes showing support for another hike soon, with Daly tying AI to inflation, would test that leadership.",
+      "entry": "S&P 500 7,818.93 record close; 7,666.45 below.",
+      "invalidation": "A close under 7,666.45 would show the index following yields lower; a record held while the ten-year rises would show earnings expectations outweighing rates.",
+      "horizon": "Today through bank results from October 13"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-07-morning.mdx"
+}
