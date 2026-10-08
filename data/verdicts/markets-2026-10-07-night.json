@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-10-07",
+  "window": "night",
+  "generated_at": "2026-10-08T00:14:40Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Stocks slip from records as yields hit new 2002 highs, then ease after a strong ten-year sale",
+    "label": "Close Wed: S&P 500 7,801.77 (-0.22%), Nasdaq 27,538.69 (-0.22%), Dow 51,179.87 (-0.66%), Russell 2000 2,793.36 (-1.31%); 10Y ~5.29-5.32% (intraday ~5.365%), 30Y ~5.67-5.68% (intraday 5.732%); 10Y auction indirects 80.3%; Brent $100.20, WTI $88.28.",
+    "rationale_short": "What happened: the ten-year Treasury yield reached about 5.365% and the thirty-year 5.732% before 1 p.m., both the highest since 2002. The $39 billion ten-year auction then drew 80.3% indirect bidding against a 72.4% average, and yields came back to about 5.29-5.32% and 5.67-5.68%. The September minutes showed most officials expected another hike before year-end, with no timing, and October hike odds stayed near 20%. The S&P 500 fell 0.22% to 7,801.77, the Russell 2000 1.31%. Brent settled down 38 cents at $100.20 after the IEA agreed to release diesel first.\n\nWhat it means: strong demand at 5.30% weakens the view that the long end is rising because buyers are scarce. It leaves open why yields are this high, with oil near $100 and a Fed still leaning toward a hike. This morning's report was right on the direction of yields and stocks, and wrong that the auction would favour the supply explanation and that oil would extend its rise.\n\nWhat would change the picture: a weak thirty-year auction on Thursday with a close above 5.732% would put supply back at the centre; demand near the ten-year's would point to inflation expectations instead. An S&P 500 close under 7,666.45 would show the index following yields lower. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources, and the VIX close was unavailable.",
+    "lede_short": "Long-term Treasury yields reached their highest since 2002 on Wednesday, then fell back after a $39 billion ten-year sale drew strong foreign demand. Stocks slipped 0.2% from their records, and the Fed minutes confirmed most officials still expect another hike this year. The auction weakens the idea that the long end is rising because buyers are scarce, and Thursday's thirty-year sale is the second test: a close above 5.732% would show the auction did not cap yields.",
+    "supporting_data": [
+      {
+        "label": "The $39 billion ten-year sold near 5.30% with indirect bidders taking 80.3% against a 72.4% average, after the yield hit about 5.365%, its highest since 2002 — buyers turned up at these yields, which undercuts the supply explanation for the long end.",
+        "url": "https://www.cnbc.com/2026/10/07/treasury-yields-auction-fomc-minutes.html"
+      },
+      {
+        "label": "The September minutes showed most officials saw another hike as likely appropriate before year-end, with no timing — confirming what markets price, with October hike odds near 20%.",
+        "url": "https://www.cnbc.com/2026/10/06/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "The S&P 500 fell 0.22% to 7,801.77 and the Russell 2000 1.31% to 2,793.36 — a small step back from the record, with the selling heaviest in the companies most exposed to borrowing costs.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-7-133458375.html"
+      },
+      {
+        "label": "Brent settled down 38 cents at $100.20 and WTI down $1.16 at $88.28 after the IEA agreed to prioritise diesel releases — supply pledges outweighed new Houthi strikes on Saudi Arabia and a 3.2 million-barrel US crude draw.",
+        "url": "https://cnbc.com/2026/10/07/oil-prices-today-brent-wti-hormuz.html"
+      },
+      {
+        "label": "The thirty-year touched 5.732%, its highest since May 2002, before ending near 5.67-5.68% — still above the 5.644% 2002 high going into Thursday's $22 billion sale.",
+        "url": "https://www.cnbc.com/2026/10/07/treasury-yields-auction-fomc-minutes.html"
+      },
+      {
+        "label": "European stocks fell about 1%, with the DAX and CAC 40 down 1.4% and the STOXX 600 near a four-month low — Europe closed on the morning's yield high, before the US auction pulled yields back.",
+        "url": "https://irishtimes.com/business/2026/10/07/european-stocks-fall-as-wall-street-retreats-from-record-highs"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7801.77, "change_pct": -0.22, "as_of": "2026-10-07T20:00:00Z" },
+    "nasdaq": { "level": 27538.69, "change_pct": -0.22, "as_of": "2026-10-07T20:00:00Z" },
+    "vix": { "level": null, "change_pct": null, "as_of": "2026-10-07T20:15:00Z" },
+    "ust10y": { "level": 5.30, "change_bps": 3, "as_of": "2026-10-07T20:00:00Z" },
+    "dxy": { "level": 102.30, "change_pct": 0.1, "as_of": "2026-10-07T15:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.675, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.30, "trigger_above": 5.365, "unit": "%" },
+    { "name": "DXY", "value": 102.30, "trigger_above": 102.0, "unit": "" },
+    { "name": "SPX vs 7,666", "value": 7801.77, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4111.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "BTC",
+      "note": "Down about 2.8% over 24 hours to about $83,210 on Crypto.com, a second day trading with rate-sensitive assets as yields reached new 2002 highs.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 30-year Treasury",
+      "thesis": "The thirty-year touched 5.732%, its highest since May 2002, then ended near 5.67-5.68% after a ten-year auction with 80.3% indirect bidding. Thursday's $22 billion thirty-year sale tests whether that demand extends to the longest bonds.",
+      "entry": "Thirty-year ~5.67-5.68%, between the 5.644% 2002 high and Wednesday's 5.732% intraday peak.",
+      "invalidation": "Indirect demand near 80% would point to inflation expectations rather than supply; a weak sale with a close above 5.732% would extend the break above 2002. A close under 5.644% would undo it.",
+      "horizon": "October 8, the thirty-year auction"
+    },
+    {
+      "asset": "S&P 500 against the Russell 2000",
+      "thesis": "The S&P 500 is 0.2% below its record at 7,801.77 while the Russell 2000 has fallen about 1.9% in two sessions to 2,793.36; large AI names are holding the index up as yields rise.",
+      "entry": "S&P 500 7,801.77, record 7,818.93, 7,666.45 below; ten-year intraday high ~5.365%.",
+      "invalidation": "An S&P 500 close under 7,666.45 would show the index following yields lower; a ten-year close above 5.365% with the index near its record would show stocks absorbing higher rates.",
+      "horizon": "Through bank results from October 13"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent settled at $100.20 despite new Houthi strikes on Saudi Arabia and a 3.2 million-barrel US crude draw, as the IEA prioritised diesel releases; supply pledges are holding it near $100.",
+      "entry": "Brent $100.20; $98 below, $102 above.",
+      "invalidation": "A settle under $98 would remove much of the inflation input behind the long end; further strikes with Brent above $102 would restore it.",
+      "horizon": "Through the IEA board meeting October 14-15"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-07-night.mdx"
+}
