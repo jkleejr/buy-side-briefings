@@ -1,0 +1,80 @@
+{
+  "routine": "markets",
+  "date": "2026-10-09",
+  "window": "morning",
+  "generated_at": "2026-10-09T12:21:27Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Delta cuts its full-year profit outlook by about a quarter as fuel costs outrun strong demand",
+    "label": "Pre-market Fri: S&P 500 futures +0.4%, Nasdaq 100 futures +0.8%, Dow futures +0.1%; Delta about -4% after cutting 2026 EPS to $5.10-5.60; Brent $102.91 (-1.3%); 10Y ~5.227% (flat); gold ~$4,191 (+1.4%).",
+    "rationale_short": "What happened: Delta, the first large company to report third-quarter results, earned $1.72 a share on an adjusted basis against about $1.75 expected and cut its 2026 range to $5.10-5.60 from $6.50-7.50. Revenue rose 21%, but fuel cost $4.14 billion, up 62%, and Delta expects a roughly $6 billion increase in its fuel bill for the year. Brent fell 1.3% to $102.91 after President Trump said the US will not attack Iran before the midterms, though the Hormuz blockade and 1.28 million barrels a day of hurricane shut-ins remain. Stock futures are higher, led by the AI names that fell on Thursday, and the ten-year is flat near 5.227%.\n\nWhat it means: the damage at Delta came from cost, not sales; customers are still spending and margins are absorbing the oil price. That is the pattern to check in next week's bank results and the October 14 CPI report. The market is not treating one airline as a market-wide signal: futures are up and oil is down. Last night's report expected Delta to show how Brent above $100 reaches guidance, and it did.\n\nWhat would change the picture: Brent back under $100, from the IEA's October 14-15 release details or a quieter Gulf, eases the margin pressure for fuel-heavy companies; above $105 it widens. Chip stocks recovering most of Thursday's losses before CPI would mark the OpenAI sell-off as a one-headline event, and an S&P 500 close under 7,666.45 would show weakness spreading. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources; VIX, Russell 2000 and DXY readings were unavailable.",
+    "lede_short": "Delta cut its 2026 profit outlook by about a quarter as a 62% jump in its fuel bill outran revenue that rose 21%, the first large result of the season to show what Brent above $100 costs. Stock futures are higher and oil is 1.3% lower, so the market is not reading one airline as a broad signal. Brent back under $100 would ease the pressure on fuel-heavy companies; above $105 it widens.",
+    "supporting_data": [
+      {
+        "label": "Delta earned $1.72 a share against about $1.75 expected and cut its 2026 range to $5.10-5.60 from $6.50-7.50 — its first miss in two years came from costs while the company said demand held.",
+        "url": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html"
+      },
+      {
+        "label": "Delta's fuel bill rose 62% to $4.14 billion, more than $500 million above July's guidance, with a roughly $6 billion increase expected for the year — oil above $100 is now cutting margins at a company whose sales are still growing.",
+        "url": "https://ca.investing.com/news/stock-market-news/delta-air-lines-cuts-profit-outlook-as-fuel-costs-outpace-fare-gains-4873218"
+      },
+      {
+        "label": "Brent fell 1.3% to $102.91 after President Trump said the US will not attack Iran before the November 3 midterms — the Hormuz blockade and hurricane shut-ins of about 1.28 million barrels a day limit how far the pledge can take oil.",
+        "url": "https://sundayguardianlive.com/world/crude-oil-prices-today-brent-falls-13-to-10291-wti-drops-12-to-9040-as-trump-signals-no-iran-attack-before-november-3-midterm-elections-302059/"
+      },
+      {
+        "label": "S&P 500 futures rose 0.4% and Nasdaq 100 futures 0.8% by 7:32 a.m. ET — the AI names that fell hardest on Thursday's OpenAI report are leading a partial recovery.",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-9-dow-sp-500-nasdaq-080148117.html"
+      },
+      {
+        "label": "The ten-year yield is near 5.227%, essentially flat and about 14 basis points under Wednesday's high — this morning's stock gains are not coming from lower rates.",
+        "url": "https://www.cnbc.com/2026/10/08/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "T-Mobile fell 7%, AT&T almost 6% and Verizon more than 5% premarket after SpaceX agreed to buy nationwide 800 MHz spectrum — the market is pricing Starlink Mobile as a direct competitor, pending FCC approval.",
+        "url": "https://www.cnbc.com/2026/10/09/stocks-making-the-biggest-moves-premarket-dal-spcx-tmus.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7765.36, "change_pct": 0.4, "as_of": "2026-10-09T11:32:00Z" },
+    "nasdaq": { "level": 27193.34, "change_pct": 0.8, "as_of": "2026-10-09T11:32:00Z" },
+    "vix":    { "level": null, "change_pct": null, "as_of": "2026-10-09T11:32:00Z" },
+    "ust10y": { "level": 5.227, "change_bps": 0, "as_of": "2026-10-09T11:00:00Z" },
+    "dxy":    { "level": null, "change_pct": null, "as_of": "2026-10-09T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.602, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.227, "trigger_above": 5.365, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7765.36, "trigger_below": 7666.45, "unit": "" },
+    { "name": "Gold", "value": 4191.5, "trigger_below": 4100.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Up 1.6% premarket after a 2.9% loss on Thursday's OpenAI revenue report; a partial recovery that does not yet settle the question.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Up 1.1% over 24 hours to about $83,208 on Crypto.com, back above Thursday's $80,320 low and moving with tech futures.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent crude",
+      "thesis": "Delta's outlook cut shows Brent above $100 reducing margins at companies whose sales are still growing. Oil eased 1.3% on a political pledge while the Hormuz blockade and hurricane shut-ins remain.",
+      "entry": "Brent ~$102.91; $100 below, $105 above.",
+      "invalidation": "A move under $100, from the IEA's October 14-15 release details or a quieter Gulf, eases the margin pressure; a settle above $105 widens it.",
+      "horizon": "Through the IEA meeting, Oct 14-15"
+    },
+    {
+      "asset": "Chip stocks / S&P 500",
+      "thesis": "Nvidia, Micron and Oracle fell 2.9-5.5% on Thursday's OpenAI revenue report and are recovering part of it premarket. Whether they recover most of it before CPI separates a one-headline sell-off from a repricing.",
+      "entry": "S&P 500 Thursday close 7,765.36; 7,666.45 below.",
+      "invalidation": "A second down day in chips, or an S&P 500 close under 7,666.45, would show the weakness spreading; recovery of most of Thursday's losses would mark it as a measurement question.",
+      "horizon": "Three sessions, through Oct 14 CPI"
+    },
+    {
+      "asset": "US mobile carriers (TMUS, T, VZ)",
+      "thesis": "Carriers fell 5-7% premarket on SpaceX's 800 MHz spectrum purchase while tower companies rose 6-8%, pricing satellite-to-phone service as a share threat before regulators have approved the deal.",
+      "entry": "Premarket declines of about 7% (TMUS), 6% (T) and 5% (VZ).",
+      "invalidation": "A recovery by Monday would mean the first move priced the headline rather than the competition.",
+      "horizon": "Days for the price reaction; months for FCC review"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-09-morning.mdx"
+}
