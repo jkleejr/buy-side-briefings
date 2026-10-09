@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-10-08",
+  "window": "night",
+  "generated_at": "2026-10-09T00:14:03Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Tech stocks have their worst day since August on a report that OpenAI earns less than thought",
+    "label": "Close Thu: S&P 500 7,765.36 (-0.47%), Nasdaq 27,193.34 (-1.25%), Dow 51,231.64 (+0.10%); chip index -3.4%; 10Y ~5.23% (-5 bp), 30Y ~5.60%; 30Y auction 5.618%, bid-to-cover 2.54; Brent ~$104 (+4%).",
+    "rationale_short": "What happened: a Financial Times report that OpenAI told investors its annualized revenue is near $50 billion, about $20 billion below the figure that had circulated, sent the Philadelphia chip index down 3.4% and the Nasdaq down 1.25%, its worst day since mid-August. Nvidia fell 2.9%, Micron 4.8%, Intel 5.3% and Oracle 5.5%. The S&P 500 fell 0.47% to 7,765.36 and the Dow rose 0.1%. The $22 billion thirty-year sold at 5.618% with a 2.54 bid-to-cover, and the ten-year eased about 5 basis points to near 5.23%. Brent rose about 4% to near $104 on Iranian tanker attacks and hurricane shut-ins, holding most of the gain after President Trump said there would be no strike on Iran before the midterms.\n\nWhat it means: Wednesday's selling followed yields; Thursday's came with yields falling, which points to doubt about AI revenue rather than borrowing costs. The report does not by itself show AI hardware demand slowing: OpenAI's figure is net revenue and the higher number apparently used a gross measure. This morning's report was right on oil and wrong on yields, which fell rather than pressing Wednesday's highs.\n\nWhat would change the picture: chip stocks recovering most of Thursday's losses before CPI on October 14 would mark the selling as a one-headline event. A second down day, or more OpenAI-linked financing at Broadcom or Oracle, would show the market reconsidering what OpenAI can pay for. An S&P 500 close under 7,666.45 would show the weakness spreading to the broad index. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources; Russell 2000, VIX and DXY closes were unavailable.",
+    "lede_short": "The Nasdaq fell 1.25%, its worst day since mid-August, after a report that OpenAI's annualized revenue is near $50 billion, about $20 billion below what had circulated, and chip stocks lost 3.4%. Treasury yields fell after a solid thirty-year sale, so the selling was about AI revenue, not interest rates. If chip stocks win back the losses before Wednesday's inflation report, it was one headline; an S&P 500 close under 7,666 would show it spreading.",
+    "supporting_data": [
+      {
+        "label": "The Nasdaq fell 1.25% to 27,193.34, its worst day since mid-August, after the FT reported OpenAI's annualized revenue near $50 billion against about $70 billion previously cited — the largest AI customer's revenue is in question, not borrowing costs.",
+        "url": "https://www.cnn.com/2026/10/08/investing/openai-nasdaq-stocks"
+      },
+      {
+        "label": "Nvidia fell 2.9%, Micron 4.8% and Oracle 5.5% as the chip index lost 3.4% — the companies most exposed to OpenAI's spending fell hardest.",
+        "url": "https://www.thestandard.com.hk/finance/article/345024/SP-500-Nasdaq-end-lower-as-crude-prices-jump-chip-stocks-weigh"
+      },
+      {
+        "label": "The $22 billion thirty-year sold at 5.618% with a 2.54 bid-to-cover and 72.3% to indirect bidders — a second long-dated sale this week found buyers at 2002-era yields.",
+        "url": "https://www.treasurydirect.gov/auctions/announcements-data-results/"
+      },
+      {
+        "label": "The ten-year fell about 5 basis points to near 5.23% and the thirty-year to 5.602% — yields fell and tech fell anyway, so rates did not drive the day.",
+        "url": "https://finance.yahoo.com/markets/currencies/articles/us-bonds-fall-lifting-yields-162459356.html"
+      },
+      {
+        "label": "Oil jumped more than 5% before paring gains after President Trump said the US will not attack Iran before the November 3 midterms — Brent still ended about 4% higher near $104 on tanker attacks and hurricane shut-ins.",
+        "url": "https://finance.yahoo.com/energy/articles/oil-rises-middle-east-supply-012532668.html"
+      },
+      {
+        "label": "Initial jobless claims fell to 197,000 against about 200,000 expected — no labour-market reason for the Fed to wait, with December hike odds near 69% on FedWatch.",
+        "url": "https://www.dol.gov/ui/data.pdf"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7765.36, "change_pct": -0.47, "as_of": "2026-10-08T20:00:00Z" },
+    "nasdaq": { "level": 27193.34, "change_pct": -1.25, "as_of": "2026-10-08T20:00:00Z" },
+    "vix": { "level": null, "change_pct": null, "as_of": "2026-10-08T20:15:00Z" },
+    "ust10y": { "level": 5.23, "change_bps": -5, "as_of": "2026-10-08T20:00:00Z" },
+    "dxy": { "level": null, "change_pct": null, "as_of": "2026-10-08T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.602, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.23, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7765.36, "trigger_below": 7666.45, "unit": "" },
+    { "name": "DXY", "value": 102.30, "trigger_above": 102.0, "unit": "" },
+    { "name": "Gold", "value": 4107.0, "trigger_below": 4200.0, "unit": "$/oz" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Fell 2.9% as the chip index lost 3.4% on the FT report that OpenAI's annualized revenue is near $50 billion; fell less than Micron (-4.8%) and Oracle (-5.5%).", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "Down about 1.8% over 24 hours to about $81,745 on Crypto.com, low $80,320; a third day lower, this time moving with tech while yields fell.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Semiconductors (Philadelphia chip index)",
+      "thesis": "The chip index fell 3.4% on one report that OpenAI's revenue is about $20 billion below what had circulated, with the most OpenAI-exposed names (Micron, Oracle) falling most. Whether the market treats it as a measurement question or a demand question is unresolved.",
+      "entry": "Thursday's losses: Nvidia -2.9%, Micron -4.8%, Oracle -5.5%.",
+      "invalidation": "Recovery of most of the losses by Tuesday would mark a one-headline event; a second down day or more OpenAI-linked financing at Broadcom or Oracle would show the market repricing AI demand.",
+      "horizon": "Through CPI on October 14"
+    },
+    {
+      "asset": "S&P 500",
+      "thesis": "The index is 0.7% below its October 6 record of 7,818.93 at 7,765.36, with the Dow higher; the selling so far is concentrated in AI suppliers.",
+      "entry": "S&P 500 7,765.36; 7,666.45 below, record 7,818.93 above.",
+      "invalidation": "A close under 7,666.45 would show weakness spreading to the broad index; holding it through CPI with tech recovering leaves Thursday as a sector sell-off.",
+      "horizon": "Through October 14"
+    },
+    {
+      "asset": "US 10-year Treasury and Brent",
+      "thesis": "Brent near $104 with the ten-year at about 5.23% is an unusual pairing after two auctions found buyers. September CPI tests whether the oil rise reaches core inflation and December hike odds near 69%.",
+      "entry": "Ten-year ~5.23%, intraday high 5.331%; Brent ~$104, $100 below.",
+      "invalidation": "A hot core CPI would bring the ten-year back toward 5.331%; Brent under $100 on IEA release details or a quieter Gulf would take pressure off yields.",
+      "horizon": "October 14-15, CPI and the IEA board"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-08-night.mdx"
+}
