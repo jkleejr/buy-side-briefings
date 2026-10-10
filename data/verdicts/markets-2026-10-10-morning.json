@@ -1,0 +1,88 @@
+{
+  "routine": "markets",
+  "date": "2026-10-10",
+  "window": "morning",
+  "generated_at": "2026-10-10T12:48:41Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Stocks end the week near a record as bank results and inflation data come next",
+    "label": "Weekend: S&P 500 closed Fri at 7,811.54 (+0.59%, week about +1.1%), 7 pts under its 7,818.93 record; Nasdaq 27,366.17 (week about +0.6%); 10Y ~5.24% (week about -4 to -5 bp, Wed high 5.331%), 30Y ~5.60%; Brent ~$103-104; BTC ~$82,780 Sat; Dec hike odds ~69%.",
+    "conviction": "low",
+    "horizon": "four trading sessions, Tuesday October 13 through Friday October 16 (bond market shut Monday for Columbus Day)",
+    "rationale_short": "What happened: the S&P 500 rose about 1.1% over the week, going by Friday's close of 7,811.54 against the prior Friday's 7,722.72, and ended 7 points under its October 6 record. That came through a rough patch: Thursday's report that OpenAI's revenue was lower than estimated hit AI stocks, and Friday's SpaceX spectrum deal sent Verizon, AT&T and T-Mobile down 9% to 13%. The ten-year yield ended near 5.24%, about 4 to 5 basis points lower on the week, after touching 5.331% on Wednesday, its highest since 2002. Brent ended near $103-104, still above $100 with the Strait of Hormuz closed. Bitcoin is near $82,780 on Saturday, little changed in 24 hours.\n\nWhat it means: stocks absorbed a sector-specific shock, a hit to the AI story and long yields at 2002 highs, and still finished the week up. That shows resilience, but it also means the index goes into earnings season priced close to its best level, with less room for disappointment. The evidence points both ways: bond buyers took more than 72% of Friday's 30-year auction as indirect bidders, a sign of demand at these yields, while futures markets still price about a 69% chance of a December rate hike, a sign inflation worry has not gone away. Which side wins is not settled by this week.\n\nWhat would change the picture: September CPI on Wednesday, October 14, forecast at about 3.6-3.7% for the year from 3.4%, is the first full month of oil above $100 and the last inflation report before the Fed's October 28 decision. A core reading above forecast would likely push the ten-year back toward 5.331%; a soft one would ease pressure on stocks near their record. Bank results from Tuesday show whether borrowers and spending are holding up under these rates. An S&P 500 close above 7,818.93 would be a new record; a close under 7,666.45 would show the week's weakness spreading. This read is lower-conviction than usual: it is a weekend, no stock or bond market has traded since Friday, news sites could not be opened from this run so figures rest on search summaries of the cited sources, sources disagree on the week's percentage gains and on Friday's oil settlement, and VIX and dollar-index closes were unavailable.",
+    "lede_short": "The S&P 500 rose about 1.1% this week to within 7 points of its record despite an AI revenue scare, a telecom selloff and ten-year yields touching 5.331%, their highest since 2002. That leaves stocks priced near their best going into bank results from Tuesday and September CPI on Wednesday, forecast at 3.6-3.7% with oil above $100. A hot core reading would test the bond-yield highs again; a soft one would ease the main pressure on stocks.",
+    "supporting_data": [
+      {
+        "label": "The S&P 500 closed Friday at 7,811.54, up 0.59% on the day and about 1.1% on the week, 7 points under its October 6 record — stocks finished higher through a week of sector shocks, so the index enters earnings season near its peak.",
+        "url": "https://www.washingtonpost.com/business/2026/10/09/wall-street-stocks-dow-nasdaq/63e004dc-c41e-11f1-8170-681419af1cc9_story.html"
+      },
+      {
+        "label": "September CPI is due Wednesday, October 14, with headline inflation forecast at about 3.6-3.7% from 3.4% — it is the first full month of oil above $100 and the last inflation report before the Fed's October 28 decision.",
+        "url": "https://lufkindailynews.com/news_reuters/business/bank-earnings-cpi-headline-busy-markets-week-as-s-p-500-hovers-near-records/article_916e0aec-ed38-5d64-8310-708320e5e4fa.html"
+      },
+      {
+        "label": "The ten-year yield ended near 5.24%, about 4 to 5 basis points lower on the week, after touching 5.331% on Wednesday — long-term borrowing costs eased but remain close to their highest since 2002.",
+        "url": "https://www.cnbc.com/2026/10/09/us-treasurys-bond-yields-midterms.html"
+      },
+      {
+        "label": "Indirect bidders, a group that includes foreign central banks, took more than 72% of Friday's $22 billion 30-year bond sale — buyers are showing up at these yields, which argues against a disorderly rise.",
+        "url": "https://www.cnbc.com/2026/10/09/us-treasurys-bond-yields-midterms.html"
+      },
+      {
+        "label": "JPMorgan, Wells Fargo and Citigroup are scheduled to report on Tuesday, October 13, with Bank of America on CPI morning — their loan losses and consumer spending data are the first broad check on how households are handling high rates and $4 gasoline.",
+        "url": "https://lufkindailynews.com/news_reuters/business/bank-earnings-cpi-headline-busy-markets-week-as-s-p-500-hovers-near-records/article_916e0aec-ed38-5d64-8310-708320e5e4fa.html"
+      },
+      {
+        "label": "Brent ended Friday near $103-104 after President Trump said the US will not strike Iran before the November 3 midterms — the pledge eased fears of escalation but the Strait of Hormuz remains closed, so oil stays above $100.",
+        "url": "https://cnbc.com/2026/10/09/oil-falls-as-trump-comments-on-iran-talks-ease-supply-concerns.html"
+      },
+      {
+        "label": "Bitcoin traded near $82,780 on Saturday morning, little changed over 24 hours in a $82,214-83,253 range — it is holding above Thursday's $80,320 low with no weekend move to signal a shift in risk appetite.",
+        "url": "https://crypto.com/exchange/trade/BTC_USD"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7811.54, "change_pct": 0.59, "as_of": "2026-10-09T20:00:00Z" },
+    "nasdaq": { "level": 27366.17, "change_pct": 0.64, "as_of": "2026-10-09T20:00:00Z" },
+    "vix": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:15:00Z" },
+    "ust10y": { "level": 5.24, "change_bps": 1, "as_of": "2026-10-09T20:00:00Z" },
+    "dxy": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.60, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.24, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7811.54, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 82776.86, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "JPM", "note": "Reports Tuesday, October 13, opening third-quarter bank earnings; credit losses and consumer spending commentary are the figures that matter with the ten-year near 5.24%.", "sentiment": "neutral" },
+    { "ticker": "VZ", "note": "Closed Friday at $41.65 after an 8.75% drop, its worst day since 2002, on SpaceX's spectrum purchase; Monday shows whether the selling continues or eases.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "Near $82,780 on Crypto.com Saturday morning, flat over 24 hours in a $82,214-83,253 range, above Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-year Treasury against September CPI",
+      "thesis": "The ten-year eased about 4 to 5 basis points on the week to about 5.24% but sits 9 basis points under Wednesday's 2002-era high, and December hike odds near 69% show inflation worry is still priced. CPI is the first full month of oil above $100.",
+      "entry": "Ten-year ~5.24%; Wednesday's high 5.331%; headline CPI forecast about 3.6-3.7% year on year.",
+      "invalidation": "A core reading above forecast would likely take the ten-year back toward 5.331% and firm December hike odds; a soft core reading would ease them.",
+      "horizon": "Wednesday, October 14"
+    },
+    {
+      "asset": "S&P 500",
+      "thesis": "The index ended the week 7.39 points under its October 6 record after absorbing the AI revenue scare and the telecom selloff. It enters earnings season priced near its peak, so results have less room to disappoint.",
+      "entry": "S&P 500 7,811.54; record 7,818.93 above, 7,666.45 below.",
+      "invalidation": "A close above 7,818.93 would be a new record; a close under 7,666.45 would show weakness spreading beyond single sectors.",
+      "horizon": "October 13-16, through bank results and CPI"
+    },
+    {
+      "asset": "Large US banks",
+      "thesis": "JPMorgan, Wells Fargo and Citigroup report Tuesday and Bank of America on Wednesday. Their loan-loss provisions and card spending are the first broad read on households facing ten-year yields above 5% and gasoline near $4.37, against consumer sentiment at 46.3.",
+      "entry": "Results Tuesday, October 13, and Wednesday, October 14, before the open.",
+      "invalidation": "Rising provisions or weaker card spending would confirm the strain the sentiment survey shows; steady credit would say households are absorbing it so far.",
+      "horizon": "October 13-14"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-10-morning.mdx"
+}
