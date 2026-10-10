@@ -1,0 +1,80 @@
+{
+  "routine": "markets",
+  "date": "2026-10-09",
+  "window": "night",
+  "generated_at": "2026-10-10T00:13:04Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Phone carriers have their worst days in decades after SpaceX buys nationwide spectrum",
+    "label": "Close Fri: S&P 500 7,811.54 (+0.59%), Nasdaq 27,366.17 (+0.64%), Dow 51,654.95 (+0.83%); Verizon -8.75%, AT&T -9.81%, T-Mobile -13.27%; 10Y ~5.24% (+1 bp), 30Y ~5.60%; Brent ~$103.5 (-0.7%); UMich sentiment 46.3.",
+    "rationale_short": "What happened: Verizon fell 8.75%, its worst day since July 2002, AT&T 9.81%, its worst since 2000, and T-Mobile 13.27%, its worst since 2013, after SpaceX agreed to buy Grain Management's nationwide 800 MHz spectrum. The broad market rose: the S&P 500 gained 0.59% to 7,811.54, 7 points under its October 6 record, and the Dow 0.83%, as a Bloomberg report that OpenAI expects $70 billion or more in annualized revenue by year-end reversed part of Thursday's AI selloff. The ten-year was about flat near 5.24%, Brent eased about 0.7% to near $103.5, and consumer sentiment fell to 46.3, the lowest since May.\n\nWhat it means: SpaceX already holds 65 megahertz of mid-band spectrum from EchoStar; nationwide low-band adds coverage to that capacity, so the market read Friday's smaller deal as the step that makes Starlink Mobile a credible competitor. Spectrum is not a network, the deal needs FCC approval, and JPMorgan analysts see limited near-term risk, so the size of the move reflects slower long-run growth and less pricing power being priced in rather than a near-term hit. This morning's report was right that the carriers' losses would hold and that chips would recover part of Thursday's loss.\n\nWhat would change the picture: the carriers recovering half of Friday's losses by their third-quarter reports would mark an overreaction to the headline; further losses would mean the threat is being priced as permanent. An S&P 500 close above 7,818.93 would show Thursday's AI scare reversed, and a close under 7,666.45 would show weakness spreading. September CPI on October 14 tests the ten-year against Wednesday's 5.331% high. Note: news sites could not be opened from this run, so figures rest on search summaries of the cited sources; Russell 2000, VIX, DXY and gold closes were unavailable.",
+    "lede_short": "Verizon, AT&T and T-Mobile fell 9% to 13%, their worst days in 13 to 26 years, after SpaceX bought nationwide low-band spectrum that makes its phone service a credible competitor, while the S&P 500 rose 0.6% to within 7 points of its record. The deal still needs FCC approval and spectrum is not a network, so a recovery of half the losses would mark an overreaction; further declines would mean the threat is being priced as permanent.",
+    "supporting_data": [
+      {
+        "label": "Verizon fell 8.75%, its worst day since 2002, AT&T 9.81% and T-Mobile 13.27% after SpaceX agreed to buy nationwide spectrum — the market is pricing Starlink Mobile as a direct competitor for phone subscribers.",
+        "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html"
+      },
+      {
+        "label": "SpaceX's purchase includes up to 14 megahertz of 800 MHz low-band spectrum, reported at about $8 billion, and the FCC will review it — low-band adds the indoor and long-range coverage a satellite service lacks.",
+        "url": "https://www.macrumors.com/2026/10/09/spacex-starlink-mobile-carrier/"
+      },
+      {
+        "label": "The S&P 500 rose 0.59% to 7,811.54, 7 points under its record, and the Dow 0.83% — the carriers' losses stayed inside one industry while the broad market ended the week higher.",
+        "url": "https://rollingout.com/2026/10/09/stock-market-climbs-as-t-mobile-att/"
+      },
+      {
+        "label": "Bloomberg reported OpenAI expects annualized revenue of $70 billion or more by year-end, against the $50 billion run rate reported Thursday — Nvidia and Micron rebounded as the gap read as timing and accounting.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-micron-stocks-bounce-openai-133435783.html"
+      },
+      {
+        "label": "Consumer sentiment fell to 46.3 in October from 48.1, the lowest since May's record low — households are under strain from gasoline near $4.37 a gallon even as stocks sit near records.",
+        "url": "http://www.sca.isr.umich.edu/"
+      },
+      {
+        "label": "Treasury yields were steady with the ten-year near 5.24% after a week of 2002-era highs at the long end — Friday's stock gains came without help from bonds.",
+        "url": "https://www.cnbc.com/2026/10/09/us-treasurys-bond-yields-midterms.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7811.54, "change_pct": 0.59, "as_of": "2026-10-09T20:00:00Z" },
+    "nasdaq": { "level": 27366.17, "change_pct": 0.64, "as_of": "2026-10-09T20:00:00Z" },
+    "vix": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:15:00Z" },
+    "ust10y": { "level": 5.24, "change_bps": 1, "as_of": "2026-10-09T20:00:00Z" },
+    "dxy": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.60, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.24, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7811.54, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 82544.0, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Rose from the open after Bloomberg reported OpenAI expects $70 billion or more in annualized revenue by year-end, recovering part of Thursday's 2.9% loss; closing change unavailable.", "sentiment": "positive" },
+    { "ticker": "BTC", "note": "Up about 1.0% over 24 hours to about $82,544 on Crypto.com, range $81,550-83,480, holding above Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US wireless carriers (Verizon, AT&T, T-Mobile)",
+      "thesis": "The three carriers had their worst days in 13 to 26 years on a spectrum deal that gives SpaceX nationwide low-band coverage on top of its EchoStar mid-band holdings. The deal needs FCC approval and spectrum is not a network, so whether the move is a headline reaction or a lasting repricing is unresolved.",
+      "entry": "Verizon $41.65, AT&T $22.17, T-Mobile $148.58 after Friday's losses.",
+      "invalidation": "Recovery of half the losses by third-quarter reports would mark an overreaction; further losses or cuts to long-run subscriber forecasts would mark a lasting repricing. An FCC condition limiting SpaceX to satellite-only use would remove the core of the concern.",
+      "horizon": "Through carrier third-quarter results later in October; FCC review runs for months"
+    },
+    {
+      "asset": "S&P 500",
+      "thesis": "The index closed 7.39 points under its October 6 record of 7,818.93 after Thursday's AI selloff was largely reversed. Bank results and CPI decide whether it breaks out or the weakness broadens.",
+      "entry": "S&P 500 7,811.54; record 7,818.93 above, 7,666.45 below.",
+      "invalidation": "A close above 7,818.93 would show the AI scare fully reversed; a close under 7,666.45 would show weakness spreading beyond one sector.",
+      "horizon": "Through CPI on October 14"
+    },
+    {
+      "asset": "US 10-year Treasury",
+      "thesis": "September CPI, forecast near 0.6% for the month and 3.6-3.7% for the year, is the first full month of Brent above $100, with year-ahead inflation expectations at 4.7% in the sentiment survey.",
+      "entry": "Ten-year ~5.24%; Wednesday's high 5.331%.",
+      "invalidation": "A hot core reading would take the ten-year back toward 5.331% and firm December hike odds near 69%; a soft one would ease pressure on stocks near their record.",
+      "horizon": "October 14"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-09-night.mdx"
+}
