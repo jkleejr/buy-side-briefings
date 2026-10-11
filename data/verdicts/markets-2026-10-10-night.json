@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-10",
+  "window": "night",
+  "generated_at": "2026-10-11T00:47:16Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Quiet weekend leaves stocks near a record ahead of bank results and inflation data",
+    "label": "Saturday night: S&P 500 closed Fri at 7,811.54 (+0.59%, week about +1.1%), 7 pts under its 7,818.93 record; Nasdaq 27,366.17 (week about +0.6%); 10Y ~5.24% (Wed high 5.331%), 30Y ~5.60%; Brent ~$103-104; BTC ~$82,900 Sat evening (+0.5% in 24h); Dec hike odds ~69%.",
+    "conviction": "low",
+    "rationale_short": "What happened: no stock or bond market traded on Saturday, and searches turned up no major weekend news on the Gulf, the Fed or the companies that moved on Friday. The S&P 500 ended the week at 7,811.54, about 1.1% above the prior Friday's 7,722.72 and 7 points under its October 6 record, after an AI revenue scare on Thursday and Friday's 9% to 13% falls in Verizon, AT&T and T-Mobile on SpaceX's spectrum purchase. The ten-year yield ended near 5.24% after touching 5.331% on Wednesday, its highest since 2002. Brent ended near $103-104 with the Strait of Hormuz still closed. Bitcoin, the only market trading, was near $82,900 Saturday evening, up about 0.5% in 24 hours in an $82,480-83,108 range.\n\nWhat it means: a quiet weekend changes nothing about the setup the week left behind. Stocks go into earnings season close to their best level, which shows they absorbed three separate shocks, but also leaves less room for disappointment. The evidence on rates points both ways: strong demand at Friday's 30-year bond sale argues against a disorderly rise in yields, while futures still price about a 69% chance of a December hike. Bitcoin's narrow range says weekend risk appetite has not shifted in either direction.\n\nWhat would change the picture: Monday is Columbus Day, so stocks trade but the bond market is shut, which means the first test of yields comes Tuesday alongside JPMorgan, Wells Fargo and Citigroup results. September CPI on Wednesday, forecast at about 3.6-3.7% for the year from 3.4%, is the first full month of oil above $100 and the last inflation report before the Fed's October 28 decision. A hot core reading would likely push the ten-year back toward 5.331%; a soft one would ease the main pressure on stocks. An S&P 500 close above 7,818.93 would be a new record; a close under 7,666.45 would show weakness spreading. Conviction is low: no cash market has traded since Friday, news sites could not be opened from this run so figures rest on search summaries of the cited sources and the morning report, and VIX and dollar-index closes were unavailable.",
+    "lede_short": "Saturday brought no market-moving news, so stocks stay where Friday left them: the S&P 500 about 1.1% higher on the week and 7 points under its record despite an AI revenue scare, a telecom selloff and 2002-high bond yields. Bank results on Tuesday and September CPI on Wednesday decide what comes next; a hot core reading would test the ten-year's 5.331% high again, while a soft one would ease the main pressure on stocks.",
+    "supporting_data": [
+      {
+        "label": "The S&P 500 closed Friday at 7,811.54, up 0.59% on the day and about 1.1% on the week, 7 points under its October 6 record — stocks finished higher through a week of sector shocks, so the index enters earnings season near its peak.",
+        "url": "https://www.washingtonpost.com/business/2026/10/09/wall-street-stocks-dow-nasdaq/63e004dc-c41e-11f1-8170-681419af1cc9_story.html"
+      },
+      {
+        "label": "September CPI is due Wednesday, October 14, with headline inflation forecast at about 3.6-3.7% from 3.4% — it is the first full month of oil above $100 and the last inflation report before the Fed's October 28 decision.",
+        "url": "https://lufkindailynews.com/news_reuters/business/bank-earnings-cpi-headline-busy-markets-week-as-s-p-500-hovers-near-records/article_916e0aec-ed38-5d64-8310-708320e5e4fa.html"
+      },
+      {
+        "label": "JPMorgan, Wells Fargo and Citigroup report on Tuesday, October 13, with Bank of America on CPI morning — their loan losses and spending data are the first broad check on how households are handling high rates and $4 gasoline.",
+        "url": "https://lufkindailynews.com/news_reuters/business/bank-earnings-cpi-headline-busy-markets-week-as-s-p-500-hovers-near-records/article_916e0aec-ed38-5d64-8310-708320e5e4fa.html"
+      },
+      {
+        "label": "The ten-year yield ended the week near 5.24%, after touching 5.331% on Wednesday, and indirect bidders took more than 72% of Friday's 30-year sale — buyers are showing up at these yields, but borrowing costs remain close to their highest since 2002.",
+        "url": "https://www.cnbc.com/2026/10/09/us-treasurys-bond-yields-midterms.html"
+      },
+      {
+        "label": "Verizon fell 8.75%, AT&T 9.81% and T-Mobile 13.27% on Friday after SpaceX agreed to buy nationwide spectrum — Monday's open is the first chance to see whether that selling continues or was an overreaction.",
+        "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html"
+      },
+      {
+        "label": "Bitcoin traded near $82,900 Saturday evening, up about 0.5% in 24 hours in an $82,480-83,108 range — the one market open all weekend stayed calm and above Thursday's $80,320 low.",
+        "url": "https://crypto.com/exchange/trade/BTC_USD"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7811.54, "change_pct": 0.59, "as_of": "2026-10-09T20:00:00Z" },
+    "nasdaq": { "level": 27366.17, "change_pct": 0.64, "as_of": "2026-10-09T20:00:00Z" },
+    "vix": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:15:00Z" },
+    "ust10y": { "level": 5.24, "change_bps": 1, "as_of": "2026-10-09T20:00:00Z" },
+    "dxy": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.60, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.24, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7811.54, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 82898.75, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "JPM", "note": "Reports Tuesday, October 13, opening third-quarter bank earnings; credit losses and consumer spending commentary matter most with the ten-year near 5.24%.", "sentiment": "neutral" },
+    { "ticker": "VZ", "note": "Closed Friday at $41.65 after an 8.75% drop, its worst day since 2002, on SpaceX's spectrum purchase; Monday shows whether the selling continues or eases.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "Near $82,900 on Crypto.com Saturday evening, up about 0.5% over 24 hours in an $82,480-83,108 range, above Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500",
+      "thesis": "The index ended the week 7 points under its record after absorbing three separate shocks. Bank results and CPI decide whether it breaks out or the weakness broadens.",
+      "entry": "S&P 500 7,811.54; record 7,818.93 above, 7,666.45 below.",
+      "invalidation": "A close above 7,818.93 would be a new record; a close under 7,666.45 would show weakness spreading beyond one sector.",
+      "horizon": "Through CPI on October 14"
+    },
+    {
+      "asset": "US 10-year Treasury",
+      "thesis": "September CPI is the first full month of Brent above $100; the bond market is shut Monday for Columbus Day, so Tuesday is the first day yields can react to anything said over the long weekend.",
+      "entry": "Ten-year ~5.24%; Wednesday's high 5.331%.",
+      "invalidation": "A hot core reading would take the ten-year back toward 5.331% and firm December hike odds near 69%; a soft one would ease pressure on stocks near their record.",
+      "horizon": "October 13-14"
+    },
+    {
+      "asset": "US wireless carriers (Verizon, AT&T, T-Mobile)",
+      "thesis": "The carriers had their worst days in 13 to 26 years on Friday; the SpaceX deal needs FCC approval and spectrum is not a network, so whether the move is a headline reaction or a lasting repricing is unresolved.",
+      "entry": "Verizon $41.65, AT&T $22.17, T-Mobile $148.58 at Friday's close.",
+      "invalidation": "Recovery of half the losses by third-quarter reports would mark an overreaction; further losses would mean the threat is being priced as permanent.",
+      "horizon": "Through carrier third-quarter results later in October"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-10-night.mdx"
+}
