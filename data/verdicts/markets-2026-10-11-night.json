@@ -1,0 +1,87 @@
+{
+  "routine": "markets",
+  "date": "2026-10-11",
+  "window": "night",
+  "generated_at": "2026-10-12T00:47:17Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Stock futures open flat despite more weekend tanker attacks near Hormuz",
+    "label": "Sunday night: S&P 500 futures +0.03%, Nasdaq 100 futures +0.07% at the open; S&P 500 closed Fri at 7,811.54 (+0.59%, week about +1.1%), 7 pts under its 7,818.93 record; 10Y ~5.24% (Wed high 5.331%); Brent ~$104.7 Fri; second tanker damaged near Hormuz Sun; BTC ~$83,790 (+1.1% in 24h).",
+    "conviction": "low",
+    "rationale_short": "What happened: US stock futures opened Sunday evening almost unchanged, with S&P 500 futures up 0.03% and Nasdaq 100 futures up 0.07%, according to CNBC. That came after a second weekend attack near Hormuz: the UK's maritime monitor reported an outbound tanker struck by an unknown projectile on Saturday, causing a fire, and a separate vessel damaged on Sunday, with all crew reported safe. Iran's Revolutionary Guards also claimed a supertanker hit a mine on Saturday; that claim is unconfirmed. The S&P 500 ended Friday at 7,811.54, about 1.1% up on the week and 7 points under its October 6 record, and the ten-year yield ended near 5.24% after touching 5.331% on Wednesday. Brent settled near $104.7 on Friday. Bitcoin was near $83,790 Sunday night, up about 1.1% in 24 hours.\n\nWhat it means: the first market open after the weekend did not treat the attacks as a new shock. Stock investors are holding positions close to a record rather than selling ahead of a busy week. That matches what happened the week to October 4, when eleven tankers were attacked and Brent still finished below its highs. The weekend attacks do differ in one way: they hit the route along Oman's coast that had brought crude flows back near prewar levels, so supply risk is higher even if prices have not moved yet. Flat futures on a Sunday night are thin trading and say little about how Monday's full session will go.\n\nWhat would change the picture: Monday is Columbus Day, so stocks trade but the bond market is shut, and Tuesday is the first day yields can react. JPMorgan, Goldman Sachs, Citigroup and Wells Fargo report Tuesday, and September CPI comes Wednesday, October 14, with the Cleveland Fed's nowcast at about 3.6% for the year from 3.4%. A core monthly gain of 0.3% or more would likely push the ten-year back toward 5.331%; 0.2% or less would ease pressure on stocks. An S&P 500 close above 7,818.93 would be a new record; a close under 7,666.45 would show weakness spreading. Conviction is low: news pages could not be opened from this run, so figures rest on search summaries of the cited sources, the Sunday-evening oil price could not be confirmed, and VIX and dollar-index closes were unavailable.",
+    "lede_short": "Stock futures opened almost flat Sunday night even after two more tankers were hit near Hormuz, so the first market back read the weekend as more of the same rather than a new shock. The attacks did hit the Oman-coast route that had brought crude flows back toward normal, which raises supply risk even though prices have not moved. Tuesday's bank results and Wednesday's CPI decide the week, with the S&P 500 7 points under its record.",
+    "supporting_data": [
+      {
+        "label": "S&P 500 futures rose 0.03% and Nasdaq 100 futures 0.07% at Sunday's open — the first market back after the weekend's Gulf attacks showed no rush to sell, though Sunday-night trading is thin.",
+        "url": "https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "The UK maritime monitor reported a tanker set on fire by an unknown projectile in the Strait of Hormuz on Saturday and a second vessel damaged on Sunday, with all crew safe — attacks continued for a second day, on the route Iran says it has not authorized.",
+        "url": "https://www.cnn.com/2026/10/11/middleeast/iran-hormuz-oil-analysis-intl"
+      },
+      {
+        "label": "Crude moving through Hormuz reached about 13.5 million barrels a day in early October, near the prewar level, on a US-protected route along Oman's coast — the weekend attacks matter because they target the route that recovery depends on.",
+        "url": "https://www.cnbc.com/2026/10/06/crude-oil-tanker-strait-hormuz-iran-attack.html"
+      },
+      {
+        "label": "The Cleveland Fed's nowcast puts September headline inflation at about 3.6% for the year, up from 3.4% — energy drives the rise, so Wednesday's core monthly figure is what decides whether rate-hike worry grows.",
+        "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting"
+      },
+      {
+        "label": "The S&P 500 closed Friday at 7,811.54, up about 1.1% on the week and 7 points under its October 6 record — stocks go into bank results and CPI near their peak, with little cushion if either disappoints.",
+        "url": "https://www.washingtonpost.com/business/2026/10/09/wall-street-stocks-dow-nasdaq/63e004dc-c41e-11f1-8170-681419af1cc9_story.html"
+      },
+      {
+        "label": "The ten-year yield ended the week near 5.24% after touching 5.331% on Wednesday, its highest since 2002 — the bond market is shut Monday for Columbus Day, so Tuesday is the first day yields can react to the weekend.",
+        "url": "https://www.cnbc.com/2026/10/09/us-treasurys-bond-yields-midterms.html"
+      },
+      {
+        "label": "Bitcoin was near $83,790 Sunday night, up about 1.1% in 24 hours in an $82,725-84,129 range — the one market open all weekend edged higher through the Gulf news and stayed above Thursday's $80,320 low.",
+        "url": "https://crypto.com/exchange/trade/BTC_USD"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7811.54, "change_pct": 0.59, "as_of": "2026-10-09T20:00:00Z" },
+    "nasdaq": { "level": 27366.17, "change_pct": 0.64, "as_of": "2026-10-09T20:00:00Z" },
+    "vix": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:15:00Z" },
+    "ust10y": { "level": 5.24, "change_bps": 1, "as_of": "2026-10-09T20:00:00Z" },
+    "dxy": { "level": null, "change_pct": null, "as_of": "2026-10-09T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.60, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.24, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7811.54, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 83789.52, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "JPM", "note": "Reports Tuesday, October 13, with Goldman Sachs, Citigroup and Wells Fargo; loan losses and consumer spending are the figures that matter with the ten-year near 5.24% and oil near $104.", "sentiment": "neutral" },
+    { "ticker": "XOM", "note": "Oil producers are the first stocks to show how Monday's full session reads the weekend tanker attacks, after Brent settled near $104.7 on Friday.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $83,790 on Crypto.com Sunday night, up about 1.1% over 24 hours in an $82,725-84,129 range, above Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500",
+      "thesis": "Futures opened flat after a weekend of Gulf attacks, with the index 7 points under its record. Monday is the first full session to price the weekend, ahead of bank results and CPI.",
+      "entry": "S&P 500 7,811.54; record 7,818.93 above, 7,666.45 below.",
+      "invalidation": "A close above 7,818.93 would be a new record; a close under 7,666.45 would show weakness spreading beyond single sectors.",
+      "horizon": "October 12-16"
+    },
+    {
+      "asset": "US 10-year Treasury against September CPI",
+      "thesis": "The ten-year sits 9 basis points under Wednesday's 2002-era high. The bond market is shut Monday, so Tuesday's open and Wednesday's CPI come back to back.",
+      "entry": "Ten-year ~5.24%; Wednesday's high 5.331%; Cleveland Fed nowcast about 3.6% headline.",
+      "invalidation": "A core monthly gain of 0.3% or more would likely take the ten-year back toward 5.331%; 0.2% or less would ease hike pressure.",
+      "horizon": "Tuesday, October 13 to Wednesday, October 14"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Two days of attacks hit the Oman-coast route that had restored Hormuz flows, yet stock futures showed no alarm. Whether oil holds near $105 or climbs shows if the supply risk is being priced.",
+      "entry": "Brent near $104.7 at Friday's settlement.",
+      "invalidation": "A sustained move well above $105 would say the southern route is seen at risk; holding near Friday's level would say the attacks are being read as part of the existing pattern.",
+      "horizon": "Monday through CPI on Wednesday"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-11-night.mdx"
+}
