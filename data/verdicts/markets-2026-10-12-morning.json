@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-12",
+  "window": "morning",
+  "generated_at": "2026-10-12T12:24:42Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil slips as an unconfirmed Russia-Ukraine energy truce outweighs a weekend of Gulf attacks",
+    "label": "Pre-market: Brent ~$103-104 (about -1%), WTI ~$90-91; S&P 500 futures ~+0.1%, Nasdaq 100 futures ~-0.1%; S&P 500 Fri 7,811.54, 7 pts under its 7,818.93 record; gold ~$4,206 (+0.3%); KOSPI -3.65% on chip selling; bond market closed for Columbus Day, 10Y ~5.24% Fri.",
+    "rationale_short": "Brent is about 1% lower before the open, near $103-104, after President Trump said Russia and Ukraine had agreed to an energy ceasefire that neither side has confirmed. Oil fell even after Houthi missiles killed 12 people at Riyadh's airport on Saturday and two more tankers were hit near Hormuz, so the market gave more weight to possible extra Russian supply than to new Gulf damage. Gulf flows kept moving through Hormuz and Saudi Arabia's East-West pipeline, which explains part of that. The truce is unsigned and Russia struck a Kyiv power plant on Sunday, so the drop rests on an announcement. Gold rose to $4,206, its highest since October 2, which suggests investors are still paying for protection. Stock futures are flat, with the S&P 500 7 points under its record; the bond market is shut today, so Tuesday's bank results and Wednesday's CPI are the first real tests. If Brent climbs back above Friday's $104.7 settlement, the market has stopped trusting the truce; a core CPI gain of 0.3% or more would likely take the ten-year back toward 5.331%.",
+    "lede_short": "Oil fell about 1% before the open on an energy truce between Russia and Ukraine that neither side has confirmed, even after a deadly Houthi strike in Riyadh and two more tanker attacks near Hormuz. The market is weighing possible Russian supply above new Gulf damage, while gold at a one-month high shows the hedge is still in place. Brent back above $104.7, or a hot CPI on Wednesday, would change the picture.",
+    "supporting_data": [
+      {
+        "label": "Brent fell about 1.5% to $103 and WTI 1.8% to $90.2 in early trading — oil is lower on the truce headline but has not broken $100.",
+        "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-october-12-2026-brent-falls-1-5percent-to-103-wti-drops-1-8percent-to-90-2-middle-east-risks-persist"
+      },
+      {
+        "label": "Trump said Russia and Ukraine agreed to an immediate energy ceasefire, while Zelensky said Kyiv is awaiting details and will stop hitting refineries only if Russia stops hitting the grid — the oil drop rests on an announcement, not on a change in supply.",
+        "url": "https://www.cnbc.com/2026/10/11/trump-energy-ceasefire-russia-ukraine-zelenskyy.html"
+      },
+      {
+        "label": "Saudi Arabia said Houthi missiles on Riyadh's airport killed 12 people and wounded about 300 on Saturday, the third strike there in a week — Gulf risk now reaches Saudi Arabia itself, not only Hormuz.",
+        "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured"
+      },
+      {
+        "label": "The KOSPI fell 3.65% as Samsung and SK hynix dropped more than 4% despite Samsung's record quarterly profit — selling a record quarter points to worry about next year's AI spending.",
+        "url": "https://koreatimes.co.kr/economy/others/20261012/kospi-plunges-365-despite-samsungs-record-earnings"
+      },
+      {
+        "label": "Spot gold rose 0.3% to $4,206 an ounce, its highest since October 2, on weaker oil and a softer dollar — gold rising while oil falls suggests investors are still paying for protection against the Gulf.",
+        "url": "https://www.brecorder.com/news/40443775/gold-gains-on-weaker-oil-dollar-us-inflation-data-in-focus"
+      },
+      {
+        "label": "S&P 500 third-quarter earnings are tracking 29.6% growth as JPMorgan, Goldman Sachs, Citigroup and Wells Fargo open the season on Tuesday — stocks 7 points under their record need the results to match.",
+        "url": "https://www.cnbc.com/2026/10/09/earnings-season-kicks-into-high-gear-as-big-banks-report-next-week.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7811.54, "change_pct": 0.59, "as_of": "2026-10-09T20:00:00Z" },
+    "nasdaq": { "level": 27366.17, "change_pct": 0.64, "as_of": "2026-10-09T20:00:00Z" },
+    "vix": { "level": 14.84, "change_pct": -3.70, "as_of": "2026-10-09T20:15:00Z" },
+    "ust10y": { "level": 5.24, "change_bps": 0, "as_of": "2026-10-09T20:00:00Z" },
+    "dxy": { "level": 102.2, "change_pct": -0.03, "as_of": "2026-10-12T07:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.60, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.24, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7811.54, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 83127.71, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "XOM", "note": "Oil producers open with Brent about 1% lower near $103-104 on the unconfirmed Russia-Ukraine energy truce, after Friday's $104.7 settlement.", "sentiment": "neutral" },
+    { "ticker": "JPM", "note": "Reports Tuesday with Goldman Sachs, Citigroup and Wells Fargo, the first test of a season tracking 29.6% S&P 500 earnings growth, a day before CPI.", "sentiment": "neutral" },
+    { "ticker": "NVDA", "note": "Roughly flat premarket after the semiconductor ETF's 5% weekly fall; Samsung and SK hynix dropped more than 4% in Seoul overnight on AI-spending worry.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $83,128 on Crypto.com, about flat over 24 hours in an $82,943-84,276 range, above Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent crude",
+      "thesis": "Oil eased about 1% on an unsigned Russia-Ukraine energy truce despite a deadly Houthi strike in Riyadh and two more tanker attacks; the move rests on an announcement rather than on supply.",
+      "entry": "Brent ~$103-104; Friday settlement $104.7; $100 below.",
+      "invalidation": "Further Russian grid strikes or a Houthi hit that stops Saudi exports would take Brent back above $105; confirmation from both sides and a holding pause would support the move under $104.",
+      "horizon": "October 12-16"
+    },
+    {
+      "asset": "US 10-year Treasury against September CPI",
+      "thesis": "The cash Treasury market is shut Monday; the ten-year resumes Tuesday near 5.24%, 9 basis points under last Wednesday's 5.331% high, a day before CPI.",
+      "entry": "Ten-year ~5.24%; high 5.331%; December hike odds above 75% on CME FedWatch as of October 2.",
+      "invalidation": "A core monthly gain of 0.3% or more would likely take the ten-year back toward 5.331%; 0.2% or less would ease pressure on stocks.",
+      "horizon": "Tuesday, October 13 to Wednesday, October 14"
+    },
+    {
+      "asset": "US semiconductors after Korea",
+      "thesis": "The semiconductor ETF fell about 5% last week and Korea's chipmakers dropped more than 4% overnight; Nasdaq 100 futures are the one index contract lower.",
+      "entry": "S&P 500 7,811.54; record 7,818.93 above, 7,666.45 below.",
+      "invalidation": "Nvidia and AMD holding within 1-2% of Friday's close would say the Korean selling stayed in Korea; an S&P 500 close under 7,666.45 would show weakness spreading.",
+      "horizon": "This week, through CPI"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-12-morning.mdx"
+}
