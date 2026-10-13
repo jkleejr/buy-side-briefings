@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-13",
+  "window": "morning",
+  "generated_at": "2026-10-13T12:17:06Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "The memory-chip sell-off spreads from Korea to Tokyo and Europe, pulling Nasdaq futures lower",
+    "label": "Pre-market: KOSPI -5.46% at 6,035; SK hynix -10.09%, Samsung -7.39%; Nasdaq 100 futures about -0.6%, Dow futures about +0.2%; Micron about -3%, under $1,000; 10Y ~5.19% (about -5 bp); Brent ~$105-106; gold $4,184.70; BTC ~$83,180; Goldman +3.6% on earnings.",
+    "rationale_short": "Monday's fall in US memory stocks went global overnight: the KOSPI lost 5.46% on more than 4.5 trillion won of foreign selling as SK hynix fell 10% and Samsung 7.4%, and the selling reached chip-equipment makers, with Tokyo Electron down more than 5% and ASML about 3.3%. The trigger is CXMT's claim of a denser memory design, joined by Broadcom chief executive Hock Tan calling capital the biggest constraint on AI growth. Nasdaq 100 futures are down about 0.6% while Dow futures rise and the ten-year falls 5 basis points to about 5.19%, so money is rotating out of chips rather than out of stocks. Morningstar says CXMT still faces major hurdles to commercialise the design, which suggests part of the move is positioning. ASML on Wednesday and TSMC on Thursday decide which reading holds; steady guidance and Micron back above $1,000 would end it, while an S&P 500 close under 7,666.45 would show the selling reaching the broad index.",
+    "lede_short": "The chip sell-off that started in US memory stocks on Monday spread overnight: Korea's main index fell 5.5% as SK hynix lost 10%, and chip-equipment makers fell in Tokyo and Europe. Nasdaq futures are lower while Dow futures and bonds rise, so investors are leaving chips rather than stocks. ASML on Wednesday and TSMC on Thursday decide whether this stays a memory-pricing scare or becomes a question about AI spending.",
+    "supporting_data": [
+      {
+        "label": "The KOSPI fell 5.46% to 6,035 after briefly breaking 6,000, on more than 4.5 trillion won of foreign selling, the sixth straight day — the most direct market for the AI memory boom is seeing steady foreign outflows.",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008795752"
+      },
+      {
+        "label": "SK hynix fell 10.09% and Samsung 7.39% on China's CXMT memory design claims — the two makers of most of the world's AI memory led the sell-off a day after Micron fell 3.9%.",
+        "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-shares-plunge-on-black-tuesday-amid-concerns-over-chinese-chip/12918371"
+      },
+      {
+        "label": "Tokyo Electron fell more than 5%, Kioxia 8.8% and ASML about 3.3% — equipment makers falling with memory means the selling has spread beyond the companies CXMT competes with.",
+        "url": "https://www.cnbc.com/2026/10/12/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Broadcom's Hock Tan said capital may be the biggest constraint on AI growth, while saying compute demand still exceeds supply — the worry is who pays for the build-out, not falling demand.",
+        "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html"
+      },
+      {
+        "label": "The ten-year Treasury yield fell more than 5 basis points to 5.1937% as oil eased — bonds are rallying into Wednesday's CPI, so the chip selling is not a rates story.",
+        "url": "https://www.cnbc.com/2026/10/13/us-treasurys-bonds-yields.html"
+      },
+      {
+        "label": "JPMorgan earned $5.57 a share against $5.90 expected but raised full-year net interest income guidance to $106.2 billion, while Goldman's $17.01 beat — bank results are holding up the Dow as chips fall.",
+        "url": "https://www.cnbc.com/2026/10/13/bank-earnings-live-updates.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7807.24, "change_pct": -0.06, "as_of": "2026-10-12T20:00:00Z" },
+    "nasdaq": { "level": 27245.90, "change_pct": -0.44, "as_of": "2026-10-12T20:00:00Z" },
+    "vix": { "level": 15.21, "change_pct": 2.49, "as_of": "2026-10-12T20:15:00Z" },
+    "ust10y": { "level": 5.19, "change_bps": -5, "as_of": "2026-10-13T11:30:00Z" },
+    "dxy": { "level": 102.29, "change_pct": -0.3, "as_of": "2026-10-13T07:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "30Y Yield", "value": 5.56, "trigger_above": 5.732, "unit": "%" },
+    { "name": "10Y Yield", "value": 5.19, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7807.24, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 83179.8, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "About 3% lower pre-market and under $1,000 for the first time since September as the CXMT-driven memory sell-off spread through Korea, where SK hynix fell 10%.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "Down 0.64% pre-market to $224.88 as the chip selling widened to equipment makers and Broadcom's chief executive flagged capital as AI's biggest constraint; ASML Wednesday and TSMC Thursday are the next tests.", "sentiment": "neutral" },
+    { "ticker": "JPM", "note": "Missed at $5.57 a share against $5.90, or $5.75 excluding $658 million of securities losses, but raised 2026 net interest income guidance to $106.2 billion; shares turned about 1% higher pre-market.", "sentiment": "neutral" },
+    { "ticker": "GS", "note": "Up about 3.6% pre-market after earning $17.01 a share on $18.68 billion of net revenue, well above estimates, on equities trading.", "sentiment": "positive" },
+    { "ticker": "BTC", "note": "Near $83,180 on Crypto.com after a 24-hour low of $80,931, about 3.6% above Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Memory and chip equipment into ASML and TSMC",
+      "thesis": "The CXMT-driven memory sell-off spread overnight to Korea, Tokyo and European equipment makers, with Micron under $1,000 pre-market; ASML Wednesday and TSMC Thursday decide whether it stays a memory-pricing scare or becomes a question about AI spending.",
+      "entry": "Micron $1,000; SK hynix 1.443 million won; S&P 500 7,807.24 with 7,666.45 below.",
+      "invalidation": "Steady ASML orders and TSMC guidance with Micron back above $1,000 would confine it to memory; an S&P 500 close under 7,666.45 would show it reaching the broad index.",
+      "horizon": "October 13-15"
+    },
+    {
+      "asset": "US 10-year Treasury against September CPI",
+      "thesis": "Yields fell about 5 basis points into Wednesday's CPI as oil eased, leaving the ten-year near 5.19%, about 14 basis points under its 5.331% high, with CME FedWatch pricing about 84.7% odds of a December hike.",
+      "entry": "Ten-year ~5.19%; high 5.331%.",
+      "invalidation": "A core CPI monthly gain of 0.3% or more would likely put 5.331% back in play; 0.2% or less would extend the relief.",
+      "horizon": "October 14"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent gave back part of Monday's gain but stays about $1 above the $104.7 line that marks the market no longer trusting the unconfirmed Russia-Ukraine energy truce.",
+      "entry": "Brent ~$105-106; $104.7 below; $106.65 Monday settlement above.",
+      "invalidation": "A confirmed halt to grid and refinery strikes would put Brent under $104.7; a Houthi strike that stops Saudi loadings would take it above $106.65.",
+      "horizon": "October 13-15, with the IEA board meeting October 14-15"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-13-morning.mdx"
+}
