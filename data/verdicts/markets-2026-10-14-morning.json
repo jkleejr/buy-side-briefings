@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-14",
+  "window": "morning",
+  "generated_at": "2026-10-14T12:13:21Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "ASML says AI chip demand will outrun its supply into 2028, but memory stocks keep falling before CPI",
+    "label": "Pre-market: S&P 500 futures about +0.2%, Dow futures about +0.3%; ASML about +2.4% in Amsterdam on raised 2026 outlook; Micron $941.31 pre-market; Bank of America about -4%; 10Y 5.195% (-2 bp); Brent ~$106.3 on Hormuz attacks; BTC $83,700; September CPI at 8:30.",
+    "rationale_short": "ASML reported record third-quarter sales of €11.7 billion, raised its 2026 outlook to €44-45 billion and said planned supply for 2027 and 2028 will not fully meet demand, which answers the AI-spending half of the five-day chip sell-off. It does not answer the memory half: Micron traded at $941.31 before the open and SK hynix fell another 3.06%, because China's CXMT threatens memory prices, not equipment orders. Bank of America fell about 4% on a $1.2 billion Treasury penalty and a revenue miss while Morgan Stanley beat on equities trading. The ten-year eased to 5.195% before a CPI print expected at 0.6% headline and 0.2% core. A second 0.3% core reading would likely put the ten-year's 5.331% high back in play; an S&P 500 close under 7,666.45 would show the chip selling reaching the broad index, and TSMC on Thursday decides whether memory weakness spreads to AI guidance.",
+    "lede_short": "ASML said demand for its chipmaking tools will outrun its supply into 2028 and raised its sales outlook, which eases the worry that AI spending is slowing. Memory chipmakers are still falling before the open, because China's CXMT threatens their prices, not equipment orders. September CPI at 8:30 decides the rates side: a second hot core reading would likely push the ten-year back toward its 5.331% high.",
+    "supporting_data": [
+      {
+        "label": "ASML reported record third-quarter sales of €11.7 billion, raised its 2026 outlook to €44-45 billion and said planned supply for 2027 and 2028 will not fully meet demand — the largest chip-tool maker is seeing more AI orders than it can fill, not fewer.",
+        "url": "https://www.globenewswire.com/news-release/2026/10/14/3380319/0/en/asml-reports-11-7-billion-total-net-sales-and-5-0-billion-net-income-in-q3-2026.html"
+      },
+      {
+        "label": "Economists expect September CPI at 0.6% on the month and 3.6% on the year, with core at 0.2% — energy drives the headline, and core decides whether the Fed's hiking cycle ends in December.",
+        "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html"
+      },
+      {
+        "label": "Micron traded at $941.31 before the open, extending Tuesday's 3.62% loss, and SK hynix fell another 3.06% despite ASML's results — the memory selling is about Chinese price competition, which equipment demand does not answer.",
+        "url": "https://www.tipranks.com/news/why-micron-sandisk-and-sk-hynix-stocks-are-falling-in-pre-market-despite-asmls-strong-q3-results"
+      },
+      {
+        "label": "The ten-year Treasury yield eased 2 basis points to 5.195% ahead of CPI — about 14 basis points under its 5.331% high, the level a hot core print would test.",
+        "url": "https://www.cnbc.com/2026/10/14/us-treasury-yields-cpi-inflation-report.html"
+      },
+      {
+        "label": "Bank of America fell about 4% before the open after a $1.2 billion Treasury anti-money-laundering penalty cut earnings to 91 cents a share against $1.10 expected — and $1.08 without the penalty was still short.",
+        "url": "https://www.cnbc.com/2026/10/14/bank-of-america-bac-q3-2026-earnings.html"
+      },
+      {
+        "label": "Brent rose to about $106.32 and briefly above $107 after a container ship and a tanker were hit in the Strait of Hormuz — it is back near Monday's $106.65, about $2 above the $104.7 truce line.",
+        "url": "https://www.euronews.com/2026/10/14/oil-prices-rise-after-reported-attacks-on-ships-in-strait-of-hormuz"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7805.45, "change_pct": -0.02, "as_of": "2026-10-13T20:00:00Z" },
+    "nasdaq": { "level": 27204.38, "change_pct": -0.15, "as_of": "2026-10-13T20:00:00Z" },
+    "vix": { "level": 15.21, "change_pct": 0.0, "as_of": "2026-10-12T20:15:00Z" },
+    "ust10y": { "level": 5.195, "change_bps": -2, "as_of": "2026-10-14T11:30:00Z" },
+    "dxy": { "level": 102.3, "change_pct": 0.0, "as_of": "2026-10-13T14:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.195, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7805.45, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 83700.53, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Traded at $941.31 before the open, extending Tuesday's 3.62% loss despite ASML's results; the CXMT memory-pricing worry is unanswered until TSMC on Thursday.", "sentiment": "negative" },
+    { "ticker": "ASML", "note": "Record €11.7 billion quarter, 2026 outlook raised to €44-45 billion, supply short of demand in 2027 and 2028; up about 2.4% in Amsterdam.", "sentiment": "positive" },
+    { "ticker": "BAC", "note": "Down about 4% before the open on a $1.2 billion Treasury penalty; 91 cents a share against $1.10 expected, $1.08 excluding the penalty.", "sentiment": "negative" },
+    { "ticker": "MS", "note": "Earned $3.03 a share on $20.3 billion of revenue against $2.91 and $19.95 billion expected, led by equities trading.", "sentiment": "positive" },
+    { "ticker": "BTC", "note": "Near $83,700 on Crypto.com, up 0.6% over 24 hours, about 4.2% above last Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-year Treasury against September CPI",
+      "thesis": "The ten-year eased to 5.195% ahead of a CPI print expected at 0.6% headline and 0.2% core, about 14 basis points under its 5.331% high.",
+      "entry": "Ten-year 5.195%; high 5.331%; core consensus +0.2% m/m; FedWatch October hike odds near 21%.",
+      "invalidation": "A second straight 0.3% core reading would likely put 5.331% back in play; 0.2% or less would support the view that the Fed stops after December.",
+      "horizon": "October 14"
+    },
+    {
+      "asset": "Memory chipmakers into TSMC",
+      "thesis": "ASML's supply shortfall into 2028 eased the AI-spending worry, but Micron and SK hynix kept falling on CXMT's threat to memory prices.",
+      "entry": "Micron $941.31 pre-market; S&P 500 7,805.45 with 7,666.45 below.",
+      "invalidation": "Unchanged TSMC AI guidance on Thursday would confine the selling to memory pricing; a cut would revive the spending worry; an S&P 500 close under 7,666.45 would show the selling reaching the broad index.",
+      "horizon": "October 14-15"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent rose to about $106.32 and briefly above $107 on Hormuz ship attacks and a Houthi strike on an Aramco building, against the prospect of more Russian diesel.",
+      "entry": "Brent ~$106.3; Monday's $106.65 settle above; $104.7 truce line below.",
+      "invalidation": "A settle above $106.65 would add to October inflation pressure; a confirmed Russian energy truce would test $104.7.",
+      "horizon": "October 14-16, with the IEA board meeting October 14-15"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-14-morning.mdx"
+}
