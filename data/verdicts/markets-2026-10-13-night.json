@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-13",
+  "window": "night",
+  "generated_at": "2026-10-14T00:12:14Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip stocks fall for a fifth day and banks slip after results, but the S&P 500 closes flat",
+    "label": "Close: S&P 500 7,805.45 (-0.02%), 0.2% under its record; Nasdaq 27,204.38 (-0.15%); Dow 51,670.10 (-0.35%); PHLX chips -1.2%, fifth straight loss; Micron -3.62%; Citigroup about -4.1%; 10Y ~5.215%; Brent $105.69 (-0.9%); BTC ~$83,245.",
+    "rationale_short": "The PHLX semiconductor index fell 1.2% for a fifth straight session as Micron lost another 3.6% on China's CXMT memory design and Broadcom's Hock Tan compared some AI investment flows to casino gambling, but the S&P 500 closed down only 0.02% because advancers beat decliners 271 to 230 and the largest technology names held up. That makes this a sector sell-off rather than a market one, confirming this morning's rotation read. The morning was wrong on banks: Citigroup fell about 4.1% and Wells Fargo 2.2% on credit costs and revenue, pulling the Dow 0.35% lower. New York Fed President Williams said one more hike may be appropriate this year and none in 2027, and the ten-year eased to about 5.215% before Wednesday's CPI. ASML on Wednesday and TSMC on Thursday decide whether the chip selling stays about memory; an S&P 500 close under 7,666.45 would show it reaching the broad index, and a 0.3% core CPI reading would likely put the ten-year's 5.331% high back in play.",
+    "lede_short": "Chip stocks fell for a fifth straight day on Chinese memory competition and doubts about who pays for AI, but the S&P 500 closed flat because more stocks rose than fell and the biggest tech names held up. Banks, expected to steady the Dow, instead fell on credit costs. Wednesday's CPI and the ASML and TSMC results this week decide whether this stays a chip-sector sell-off; an S&P 500 close under 7,666 would show it spreading.",
+    "supporting_data": [
+      {
+        "label": "The PHLX semiconductor index fell 1.2% for a fifth straight session after Broadcom's Hock Tan compared some AI investment flows to casino gambling — Chinese memory competition and doubts over AI funding are now weighing on chips at once.",
+        "url": "https://www.marketscreener.com/news/s-p-500-flat-as-chipmakers-fall-and-bank-earnings-roll-in-ce785dddd080f22c"
+      },
+      {
+        "label": "The S&P 500 closed down 0.02% at 7,805.45 while the Dow fell 0.35% and the Nasdaq 0.15% — the index absorbed a fifth day of chip losses and sits 0.2% under its record.",
+        "url": "https://www.cnbc.com/2026/10/12/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "New York Fed President John Williams said one more rate hike may be appropriate this year and he sees no need for one in 2027 — a ceiling on the hiking cycle from a voter, the day before CPI.",
+        "url": "https://www.investing.com/news/economy-news/ny-feds-williams-sees-one-more-rate-hike-this-year-disinflation-ahead-4947377"
+      },
+      {
+        "label": "Economists expect September CPI at 0.6% on the month and 3.6% on the year, with core at 0.2% — a second 0.3% core reading would test the ten-year's 5.331% high.",
+        "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html"
+      },
+      {
+        "label": "Micron fell 3.62% on a second day of CXMT-driven selling while CXMT's own Shanghai shares closed 2.8% lower — the selling is about the whole sector's valuation, not a clear winner taking share.",
+        "url": "https://www.cnbc.com/2026/10/13/sk-hynix-softbank-samsung-electronics-shares-tech-stocks-fall.html"
+      },
+      {
+        "label": "Brent fell 96 cents to $105.69 while WTI rose 40 cents to $94.14 as traders weighed more Russian diesel reaching the market — Brent stays about $1 above the $104.7 line the energy truce is judged against.",
+        "url": "https://www.cnbc.com/2026/10/13/oil-prices-today-brent-wti-hormuz.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7805.45, "change_pct": -0.02, "as_of": "2026-10-13T20:00:00Z" },
+    "nasdaq": { "level": 27204.38, "change_pct": -0.15, "as_of": "2026-10-13T20:00:00Z" },
+    "vix": { "level": 15.21, "change_pct": 0.0, "as_of": "2026-10-12T20:15:00Z" },
+    "ust10y": { "level": 5.215, "change_bps": -2, "as_of": "2026-10-13T20:00:00Z" },
+    "dxy": { "level": 102.3, "change_pct": 0.0, "as_of": "2026-10-13T14:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.215, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7805.45, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 83245.49, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Fell 3.62% on a second day of CXMT-driven selling, below $1,000; the PHLX chip index has now fallen five sessions in a row. ASML Wednesday and TSMC Thursday are the next tests.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "The largest technology names, Nvidia among them, offset chip losses from the open, keeping the Nasdaq's loss to 0.15% while the chip index fell 1.2%.", "sentiment": "neutral" },
+    { "ticker": "JPM", "note": "Fell about 0.9% after a rare earnings miss of $5.57 a share against $5.90, despite raising full-year net interest income guidance.", "sentiment": "neutral" },
+    { "ticker": "C", "note": "Fell about 4.1% despite earning $2.85 a share against $2.66 expected, on higher credit-loss provisions; testing $125.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "Near $83,245 on Crypto.com, up 2.2% over 24 hours after a $80,931 low, about 3.6% above last Thursday's $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10-year Treasury against September CPI",
+      "thesis": "The ten-year eased to about 5.215%, about 12 basis points under its 5.331% high, after Williams said he sees one more hike this year and none in 2027; consensus core CPI is 0.2% on the month.",
+      "entry": "Ten-year ~5.215%; high 5.331%; core CPI consensus +0.2% m/m, headline +0.6% m/m and 3.6% y/y.",
+      "invalidation": "A second straight 0.3% core reading would likely put 5.331% back in play; 0.2% or less would support the view that the Fed stops after December.",
+      "horizon": "October 14"
+    },
+    {
+      "asset": "Semiconductors into ASML and TSMC",
+      "thesis": "The PHLX chip index fell for a fifth session on CXMT's memory design and Broadcom's warning on AI funding, while the S&P 500 held flat on positive breadth and megacap strength.",
+      "entry": "S&P 500 7,805.45 with 7,666.45 below; Micron below $1,000; SK hynix 1.443 million won.",
+      "invalidation": "Steady ASML orders and unchanged TSMC AI guidance would leave this a memory-pricing scare; an S&P 500 close under 7,666.45 would show the selling reaching the broad index.",
+      "horizon": "October 14-15"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent eased 96 cents to $105.69 on the prospect of more Russian diesel but stays about $1 above the $104.7 line, with Moscow still not confirming the energy truce.",
+      "entry": "Brent $105.69; $104.7 below; Monday's $106.65 settlement above.",
+      "invalidation": "A confirmed halt to strikes would put Brent under $104.7; a Houthi strike that stops Saudi loadings would take it back above $106.65.",
+      "horizon": "October 14-16, with the IEA board meeting October 14-15"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-13-night.mdx"
+}
