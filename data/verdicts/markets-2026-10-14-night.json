@@ -1,0 +1,142 @@
+{
+  "routine": "markets",
+  "date": "2026-10-14",
+  "window": "night",
+  "generated_at": "2026-10-15T00:12:54Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Hotter core inflation lifts the odds of an October rate hike, and debt-funded AI stocks fall hardest",
+    "label": "Close: S&P 500 7,718.94 (-1.11%), worst day since July, 0.7% above 7,666.45; Nasdaq 26,692.87 (-1.88%); Dow 51,621.48 (-0.09%); PHLX chips -4.3%, sixth straight loss; CoreWeave about -16%, Oracle about -9%; 10Y ~5.20% after a 5.323% intraday high; October hike odds ~44%; BTC $81,653.",
+    "rationale_short": "September core CPI rose 0.3% for a second month against 0.2% expected, and headline inflation reached 3.7%, roughly doubling the odds of an October 28 hike to about 44%. The ten-year jumped to 5.323%, just under its 5.331% high, then gave the move back to about 5.20%, while the two-year held its rise, so the selling came from short-term rate expectations and credit markets rather than long-term yields. CoreWeave's bonds traded near 15% and Oracle's 2032 bond at 7.24%; CoreWeave fell about 16%, Dell 11% and Oracle 9%, and the chip index lost 4.3% for its sixth straight decline. This morning's read was right that a 0.3% core reading would push the ten-year back toward its high, and wrong that ASML's outlook had contained the chip selling to memory makers. The Dow's 0.09% loss shows the selling stayed concentrated in AI. TSMC's guidance and PPI on Thursday are the next tests; an S&P 500 close under 7,666.45 would show the selling spreading beyond AI and chips.",
+    "lede_short": "Core inflation beat forecasts for a second month, roughly doubling the odds of an October rate hike to about 44%. Long-term yields gave back their jump, but the AI companies that borrow most to build data centers fell hard, CoreWeave about 16% and Oracle 9%, and chip stocks lost 4.3% for a sixth straight day. The S&P 500 fell 1.1% and sits 0.7% above 7,666; TSMC and producer prices on Thursday decide whether it holds.",
+    "supporting_data": [
+      {
+        "label": "Core CPI rose 0.3% in September for a second month, against 0.2% expected, and headline inflation reached 3.7% — gasoline drove the headline, but the beat the Fed sets policy on came from core.",
+        "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+      },
+      {
+        "label": "Odds of an October 28 rate hike roughly doubled to about 44% from 22%, and the ten-year briefly hit 5.323% — 0.8 basis points short of its 5.331% high before it gave the move back.",
+        "url": "https://www.cnbc.com/amp/2026/10/14/us-treasury-yields-cpi-inflation-report.html"
+      },
+      {
+        "label": "CoreWeave's bonds traded at yields near 15% and Oracle's 2032 bond at 7.24%, with Oracle closing down nearly 9% — lenders are charging the most-indebted AI builders more as hike odds rise.",
+        "url": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html"
+      },
+      {
+        "label": "The PHLX semiconductor index fell 4.3%, extending a six-session slide to 11.6% — the biggest drop of the run came on the day ASML's outlook lifted European chip stocks.",
+        "url": "https://en.sedaily.com/international/2026/10/15/us-stocks-fall-on-cpi-shock-as-chip-index-tumbles-43-percent"
+      },
+      {
+        "label": "The S&P 500 fell 1.11% to 7,718.94 and the Nasdaq 1.88% while the Dow lost 0.09% — the worst day since July, but the selling stayed concentrated in AI and chips.",
+        "url": "https://www.cnbc.com/2026/10/13/stock-market-today-live-updates-.html"
+      },
+      {
+        "label": "Brent settled about $106.10, up 0.4%, as Houthi-Saudi clashes and Hormuz attacks offset more Russian diesel — about $1.40 above the $104.7 truce line, with gasoline already half of September's CPI gain.",
+        "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-houthisaudi-attacks-spur-supply-uncertainty-4947751"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7718.94,
+      "change_pct": -1.11,
+      "as_of": "2026-10-14T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 26692.87,
+      "change_pct": -1.88,
+      "as_of": "2026-10-14T20:00:00Z"
+    },
+    "vix": {
+      "level": 16.87,
+      "change_pct": 10.5,
+      "as_of": "2026-10-14T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 5.2,
+      "change_bps": -1,
+      "as_of": "2026-10-14T20:00:00Z"
+    },
+    "dxy": {
+      "level": 102.5,
+      "change_pct": 0.3,
+      "as_of": "2026-10-14T20:00:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 5.2,
+      "trigger_above": 5.331,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7718.94,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "BTC vs 80,320",
+      "value": 81652.67,
+      "trigger_below": 80320.0,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Fell 3.2%, about 7.5% below this month's record — a smaller loss than its debt-funded customers took on the hot CPI print.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AMD",
+      "note": "Fell about 5.7%, the largest loss among the large chip designers as the chip index fell 4.3%.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "MU",
+      "note": "Fell about 4.1% as the chip index extended its slide to six sessions and 11.6%.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "AVGO",
+      "note": "Fell about 3.1% with the chip index.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSM",
+      "note": "Reports Thursday before the US open; guided third-quarter gross margin to 65-67% against 67.7% in the second quarter. Fourth-quarter guidance and 2027 spending decide whether chips steady.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "At $81,653 on Crypto.com, down 1.8% over 24 hours from an $84,071 high, 1.7% above last Thursday's $80,320 low.",
+      "sentiment": "negative"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Semiconductors into TSMC",
+      "thesis": "The chip index has fallen six sessions and 11.6%, the last 4.3% on hike odds and AI-borrower credit worries rather than any change in chip orders. TSMC's guidance is the first industry data since.",
+      "entry": "PHLX chip index ~11,700; TSMC third-quarter gross margin guidance 65-67%; Nvidia about 7.5% below its record.",
+      "invalidation": "Guidance held or raised would give chips a reason to steady that does not depend on rates; a cut would back the AI-funding worry with supplier numbers.",
+      "horizon": "October 15"
+    },
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "The index fell 1.11% to 7,718.94, 52 points above the level that separates an AI and chip sell-off from a broad one; the Dow's 0.09% loss shows the selling has stayed concentrated so far.",
+      "entry": "S&P 500 7,718.94; 7,666.45 below; PPI expected +0.5% m/m and retail sales +0.3% Thursday.",
+      "invalidation": "A close under 7,666.45 would show the selling spreading; a soft PPI and steady TSMC guidance would leave the index's loss confined to one sector.",
+      "horizon": "October 15-16"
+    },
+    {
+      "asset": "Credit for AI borrowers (CoreWeave, Oracle)",
+      "thesis": "CoreWeave's bonds yield near 15% and Oracle's 2032 bond 7.24%, while the ten-year ended near 5.20% after a 5.323% intraday high. The stress is in company credit, not long-term Treasury yields.",
+      "entry": "CoreWeave bond yields near 15%; Oracle 2032 bond 7.24%; ten-year ~5.20%.",
+      "invalidation": "Bond yields rising further with the ten-year steady would confirm a company-specific credit problem; easing yields would mean the equity losses rested mainly on hike odds.",
+      "horizon": "Through the October 28 FOMC"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-14-night.mdx"
+}
