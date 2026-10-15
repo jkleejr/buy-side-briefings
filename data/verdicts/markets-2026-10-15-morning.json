@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-15",
+  "window": "morning",
+  "generated_at": "2026-10-15T12:13:32Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "The AI sell-off spreads to Asia and keeps going even as bond yields and rate-hike odds fall",
+    "label": "Pre-market: Nasdaq 100 futures about -1.1% to -1.3%, S&P 500 futures about -0.3%, Dow futures about +0.3%; Kospi -7.57% after a circuit breaker; Nikkei -4.9%; TSMC beat but -2% in Taipei; 10Y 5.099%, 2Y 4.74%; October hike odds ~32%; Brent ~$104.4; BTC $80,810 after an $80,114 low; PPI at 8:30.",
+    "rationale_short": "Wednesday's fall in AI stocks was explained by higher odds of an October rate hike. Overnight the ten-year fell to about 5.10%, the two-year 6 basis points to 4.74%, and October hike odds fell to about 32% after Fed officials said they could wait. The selling continued anyway: Korea's Kospi fell 7.57% after a circuit-breaker halt, the Nikkei 4.9%, and TSMC lost 2% after beating its own revenue guidance and guiding the fourth quarter about 14% higher. CoreWeave's and Oracle's bond yields reached records. That points to doubts about how AI spending is financed and valued rather than to the cost of money, though Asia was partly catching up to Wednesday's US moves. Last night's read was right that TSMC's guidance was the test for chips and wrong that it would steady them. A hot PPI at 8:30 would revive the rates explanation; an S&P 500 close under 7,666.45 would show the selling spreading beyond AI.",
+    "lede_short": "Korean and Japanese stocks fell 7.6% and 4.9% overnight as the AI sell-off went global, and TSMC fell even after beating its forecasts. US bond yields and the odds of an October rate hike both fell, so the selling now looks driven by doubts about how AI spending is financed, not by interest rates. Producer prices at 8:30 test that, and the S&P 500 is set to open about 29 points above 7,666, the level that would show the selling spreading.",
+    "supporting_data": [
+      {
+        "label": "Korea's Kospi closed down 7.57% at 5,554.22 after a 20-minute circuit-breaker halt, with SK hynix down about 11% and Samsung about 9.5% — the steepest fall in the global AI sell-off so far, and its lowest close since April 7.",
+        "url": "https://moneycheck.com/kospi-sell-off-samsung-and-sk-hynix-shares-drop-on-ai-debt-and-rate-fears"
+      },
+      {
+        "label": "TSMC's third-quarter revenue of $46.7 billion beat its own $44.6-45.8 billion guidance, and it guided the fourth quarter to $52.3-54.3 billion — AI demand at the largest supplier is still rising, yet its shares fell 2%.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm"
+      },
+      {
+        "label": "Nasdaq futures fell about 1% and CoreWeave another 4.5-6.3% before the open, with CoreWeave's and Oracle's bond yields at records — lenders are still repricing AI borrowers while Treasury yields fall.",
+        "url": "https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-premarket-tech-sell-off-gathers-pace-as-chipmakers-hammered/"
+      },
+      {
+        "label": "The ten-year fell to 5.099% and the two-year 6 basis points to 4.74% ahead of PPI — rates are easing, so they no longer explain the continued selling in AI stocks.",
+        "url": "https://www.cnbc.com/2026/10/15/us-treasury-yields-investors-economic-data-.html"
+      },
+      {
+        "label": "October hike odds fell to 32% from 54% on CME FedWatch after Fed officials said they could wait — the hot core CPI reading has moved the expected timing of a hike, not whether one comes.",
+        "url": "https://www.economies.com/markets/americas-news/us-10-year-treasury-yields-fall-to-three-week-low-as-fed-remarks-ease-rate-hike-bets-50140"
+      },
+      {
+        "label": "Brent fell about 1.5% to $104.4 on reports Washington may ease sanctions on some tankers to cut record freight costs — just under the $104.7 truce line despite a ship sinking near Hormuz.",
+        "url": "https://financefeeds.com/brent-crude-oil-price-104-us-weighs-tanker-sanctions-easing-hormuz-sinking-bull-110-bear-98/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7718.94, "change_pct": -1.11, "as_of": "2026-10-14T20:00:00Z" },
+    "nasdaq": { "level": 26692.87, "change_pct": -1.88, "as_of": "2026-10-14T20:00:00Z" },
+    "vix": { "level": 16.87, "change_pct": 10.5, "as_of": "2026-10-14T20:15:00Z" },
+    "ust10y": { "level": 5.099, "change_bps": -10, "as_of": "2026-10-15T11:30:00Z" },
+    "dxy": { "level": 102.06, "change_pct": -0.1, "as_of": "2026-10-15T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.099, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7718.94, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 80809.91, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "TSM", "note": "Third-quarter revenue $46.7 billion against $44.6-45.8 billion guidance; fourth quarter guided to $52.3-54.3 billion with 65-67% gross margin; capital spending unchanged at $60-64 billion. Shares fell 2% in Taipei.", "sentiment": "neutral" },
+    { "ticker": "NVDA", "note": "Down about 1.3-1.8% before the open, less than Micron's 3.7% and AMD's 2.3%.", "sentiment": "negative" },
+    { "ticker": "MU", "note": "Down about 3.7% before the open as SK hynix fell about 11% and Samsung about 9.5% in Seoul.", "sentiment": "negative" },
+    { "ticker": "AMD", "note": "Down about 2.3% before the open after Wednesday's 5.7% fall.", "sentiment": "negative" },
+    { "ticker": "ORCL", "note": "Down about 2.1% before the open after Wednesday's 9% fall, with its bond yields at records.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "Traded as low as $80,114 on Crypto.com, below last Thursday's $80,320 low, before recovering to $80,810; down 3.4% over 24 hours.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US rates against September PPI",
+      "thesis": "The ten-year fell to 5.099% and October hike odds to about 32% while AI stocks kept falling. PPI decides whether rates return as the driver.",
+      "entry": "Ten-year 5.099%; two-year 4.74%; PPI consensus about +0.5% m/m, core +0.3%; retail sales +0.3%.",
+      "invalidation": "A hot PPI would pull the two-year back toward 4.81% and hike odds above 40%; tech falling on a soft PPI would show the selling is not about rates.",
+      "horizon": "October 15"
+    },
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "Futures about -0.3% put the index near 7,695, about 29 points above the level; Dow futures rising and Nasdaq futures falling show rotation within the market rather than a broad fall.",
+      "entry": "S&P 500 7,718.94 Wednesday close; 7,666.45 below.",
+      "invalidation": "A close under 7,666.45 would mean the selling had spread beyond AI and chips.",
+      "horizon": "October 15-16"
+    },
+    {
+      "asset": "Credit for AI borrowers (CoreWeave, Oracle) against Treasuries",
+      "thesis": "CoreWeave's and Oracle's bond yields reached records while the ten-year fell to 5.10%, so the gap between company borrowing costs and Treasury yields is widening.",
+      "entry": "Record bond yields at CoreWeave and Oracle; ten-year 5.099%.",
+      "invalidation": "A widening gap would show a company-specific credit problem lower rates do not fix; bonds steadying while shares fall would point to valuation rather than solvency.",
+      "horizon": "Through Warsh on October 16 and the October 28 FOMC"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-15-morning.mdx"
+}
