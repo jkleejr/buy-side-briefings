@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-16",
+  "window": "morning",
+  "generated_at": "2026-10-16T12:16:40Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Fed chair gives no hint of an October hike and the odds halve, but AI stocks get little relief",
+    "label": "Pre-market: S&P 500 futures about +0.1% to +0.2%, Nasdaq 100 futures about flat, Dow futures about +0.1%; October hike odds ~15% from over 25%; 10Y 5.07%; Kospi +2.05% to 5,668.05; CoreWeave about -3.5% to -4%; Tesla about +4% to +5%; Brent $105.21; gold $4,176.70; BTC $82,248.",
+    "rationale_short": "Warsh declined in Bangkok to pre-judge any remaining meeting this year, and October hike odds fell to about 15% from more than 25% on Thursday; Goldman Sachs now expects an October pause and a December hike. The ten-year barely moved, at 5.07%, so the market moved the timing of a hike rather than long-term borrowing costs. AI stocks took little from it: Nasdaq 100 futures are flat, Micron, Intel and AMD are lower, CoreWeave is down about 3.5-4% with its 2031 bonds yielding nearly 16%, and SK hynix rose only 0.79% as the Kospi recovered about a quarter of Thursday's 7.57% fall. Last night's report named Warsh as the test of whether the rotation out of chips holds if rates rise; rates eased instead, which leaves AI financing and valuations as the more likely driver of the selling. A Nasdaq that lags the Dow again today would support that; an S&P 500 close under 7,666.45 would show the selling spreading beyond AI.",
+    "lede_short": "Fed Chair Warsh gave no hint of an October rate hike, and the odds of one fell to about 15% from more than 25%. AI stocks barely benefited: Nasdaq futures are flat and CoreWeave is lower again, so the selling looks driven by doubts over how AI spending is financed rather than by interest rates. A close under 7,666 on the S&P 500 would show the selling spreading to the rest of the market.",
+    "supporting_data": [
+      {
+        "label": "October hike odds fell to about 15% from more than 25% after Warsh declined to pre-judge the October 27-28 meeting — the near-term hike risk faded, though Goldman still expects a December increase.",
+        "url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html"
+      },
+      {
+        "label": "The ten-year was little changed at 5.07% while Japan's ten-year rose 4.5 basis points to 2.935% — lower October odds moved the timing of a hike, not long-term borrowing costs.",
+        "url": "https://www.swissinfo.ch/eng/asian-stocks-rise,-us-futures-gain-after-warsh:-markets-wrap/92225060"
+      },
+      {
+        "label": "Nasdaq 100 futures were near flat and Micron, Intel and AMD slipped before the open while Nvidia rose 0.4% — the drop in hike odds brought little buying back to chips.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/why-nasdaq-futures-edging-higher-084253877.html"
+      },
+      {
+        "label": "The Kospi rose 2.05% to 5,668.05, ending a seven-session losing streak, but SK hynix gained only 0.79% after Thursday's 11% fall — the most AI-exposed memory maker recovered the least.",
+        "url": "https://www.koreajoongangdaily.com/business/kospi-rebounds-over-2-on-eased-chip-rout-fed-bets/12924733"
+      },
+      {
+        "label": "CoreWeave fell about 3.5-4% before the open with its 2031 bonds yielding nearly 16% — Jensen Huang's defense lifted the stock for one session but has not lowered its borrowing costs.",
+        "url": "https://stockstotrade.com/news/coreweave-inc-crwv-news-2026_10_16/"
+      },
+      {
+        "label": "Kpler put Hormuz oil flows at 11.62 million barrels a day against a 17.15 million baseline, with Brent at $105.21 — about 50 cents above the $104.7 truce line as the reserve release's diesel phase nears its end.",
+        "url": "https://invezz.com/uk/news/2026/10/16/oil-supply-is-rising-but-brent-still-wont-crack-below-dollar105-heres-why/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7744.06, "change_pct": 0.33, "as_of": "2026-10-15T20:00:00Z" },
+    "nasdaq": { "level": 26713.03, "change_pct": 0.08, "as_of": "2026-10-15T20:00:00Z" },
+    "vix": { "level": 16.47, "change_pct": -2.37, "as_of": "2026-10-15T20:15:00Z" },
+    "ust10y": { "level": 5.07, "change_bps": -3, "as_of": "2026-10-16T06:00:00Z" },
+    "dxy": { "level": 102.06, "change_pct": -0.4, "as_of": "2026-10-15T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.07, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7744.06, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 82247.52, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "TSLA", "note": "Up about 4-5% before the open after showing a second-generation Roadster with SpaceX-built thrusters; production targeted for 2028. Reports October 21.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Up 0.4% before the open while Micron, Intel and AMD slipped.", "sentiment": "neutral" },
+    { "ticker": "CRWV", "note": "Down about 3.5-4% before the open after Thursday's 5.94% rebound; 2031 bonds yield nearly 16% and five-year default insurance reached a record 1,194.5 basis points.", "sentiment": "negative" },
+    { "ticker": "MSTR", "note": "Down about 3% after MSCI adopted rules, effective with the November index review, that could remove it from MSCI's indexes.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "At $82,248 on Crypto.com, up 1.7% over 24 hours, about $1,900 above the $80,320 low it briefly broke on Thursday.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "The index came within about four points of 7,666.45 on Thursday and closed 78 points above it. With October hike odds down to about 15%, whether the Nasdaq keeps lagging the Dow today shows whether rates or AI financing is driving the selling.",
+      "entry": "7,744.06 Thursday close; 7,666.45 below; monthly options expiry today.",
+      "invalidation": "A close below 7,666.45 would show the selling spreading beyond AI; chips lagging again with hike odds at 15% would show rates are not the cause.",
+      "horizon": "October 16 options expiry and the following week"
+    },
+    {
+      "asset": "10Y Treasury against 5.331%",
+      "thesis": "Warsh's remarks cut October hike odds by about 10 points but moved the ten-year only about 3 basis points, so December is where the hike risk now sits. The Fed's quiet period begins Saturday, leaving FedWatch as the only policy signal until October 28.",
+      "entry": "Ten-year 5.07%; October hike odds about 15%.",
+      "invalidation": "A ten-year rising toward 5.331% with October odds unchanged would show long-term yields rising on inflation risk regardless of the hike's timing.",
+      "horizon": "Through the October 27-28 FOMC"
+    },
+    {
+      "asset": "Brent against the $104.7 truce line",
+      "thesis": "Brent at $105.21 sits about 50 cents above the line while Kpler shows Hormuz flows at 11.62 million barrels a day against a 17.15 million baseline; the diesel-first phase of the G7/IEA reserve release ends around October 22.",
+      "entry": "Brent $105.21; $104.7 truce line; Hormuz flows 11.62 million b/d.",
+      "invalidation": "A settle below $104.7 would show supply returning faster than shipping disruption removes it; flows still a third below normal would make that hard to sustain once reserve barrels taper.",
+      "horizon": "Through about October 22"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-16-morning.mdx"
+}
