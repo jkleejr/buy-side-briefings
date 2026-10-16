@@ -1,0 +1,132 @@
+{
+  "routine": "markets",
+  "date": "2026-10-15",
+  "window": "night",
+  "generated_at": "2026-10-16T00:12:22Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Wholesale prices jump the most since 2022, yet yields fall as money rotates from chips into the Dow",
+    "label": "Close: S&P 500 7,744.06 (+0.33%) after an intraday low near 7,670, four points above 7,666.45; Dow 52,177.69 (+1.08%); Russell 2000 +1.38%; Nasdaq 26,713.03 (+0.08%); chips -0.88%; 10Y ~5.10% (about -10 bp); October hike odds ~32%; BTC $82,237 after a $79,688 low.",
+    "rationale_short": "September PPI rose 1.3% on the month and 6.3% on the year, the largest annual gain since December 2022, with energy behind over 80% of it; retail sales beat at 0.8% but the control group rose only 0.1%. The ten-year still fell about 10 basis points to roughly 5.10% and October hike odds held near 32%, so the hot print moved neither yields nor the Fed path. Stocks split the same way: the S&P 500 fell to about 7,670, four points above 7,666.45, then closed up 0.33%, while the Dow rose 1.08%, the Russell 2000 1.38% and the chip index fell another 0.88%. CoreWeave reversed a 9.5% drop to close up 5.94% after Jensen Huang said its cost of capital is falling. This morning's read that the selling is about AI financing and valuation rather than rates held up; its worry about 7,666.45 did not. Warsh speaks tonight in Bangkok; a close under 7,666.45 would show the rotation turning into broad selling.",
+    "lede_short": "Producer prices rose 6.3% on the year, the most since 2022, and Treasury yields fell anyway as investors sold chip stocks and bought bonds. The S&P 500 dipped to within four points of 7,666 and closed up 0.3%, with the Dow up 1.1% while chips fell again, so the AI selling is rotating money within the market, not out of it. Fed Chair Warsh speaks tonight; a close under 7,666 would mean the selling had spread.",
+    "supporting_data": [
+      {
+        "label": "Producer prices rose 1.3% in September and 6.3% on the year, the most since December 2022, with energy over 80% of the gain — but the measure excluding food, energy and trade is at 5.0%, so the pressure is not only oil.",
+        "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm"
+      },
+      {
+        "label": "The ten-year fell about 10 basis points to roughly 5.10% and October hike odds stayed near 32% after the PPI — a hot inflation print that moved neither yields nor the Fed path.",
+        "url": "https://www.cnbc.com/2026/10/15/us-treasury-yields-investors-economic-data-.html"
+      },
+      {
+        "label": "Retail sales rose 0.8% against 0.3% expected, but the control group rose only 0.1% — households are paying more for fuel and spending less on everything else.",
+        "url": "https://www.investing.com/news/economic-indicators/us-retail-sales-beat-expectations-in-september-on-higher-gasoline-prices-4951732"
+      },
+      {
+        "label": "The Dow rose 1.08% to 52,177.69 and the Russell 2000 1.38% while Nvidia fell 1.84% — money left AI hardware for the rest of the market rather than leaving stocks.",
+        "url": "https://ts2.tech/en/dow-jumps-1-1-russell-2000-rises-1-4-as-broad-rotation-beats-tech/"
+      },
+      {
+        "label": "Jensen Huang said CoreWeave's cost of capital is falling and it needs no backstop, after its default insurance hit a record 1,194.5 basis points — the stock reversed a 9.5% drop to close up 5.94%.",
+        "url": "https://www.investing.com/news/stock-market-news/nvidia-ceo-says-coreweave-needs-no-backstop-as-shares-extend-slide-4952315"
+      },
+      {
+        "label": "WTI rose about 3% to $97.97 on an 8-million-barrel inventory draw and Hormuz shipping attacks, while Brent settled at $105.92 — energy already drove over 80% of September's PPI gain.",
+        "url": "https://www.cnbc.com/2026/10/15/oil-prices-today-brent-wti.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7744.06,
+      "change_pct": 0.33,
+      "as_of": "2026-10-15T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 26713.03,
+      "change_pct": 0.08,
+      "as_of": "2026-10-15T20:00:00Z"
+    },
+    "vix": {
+      "level": 16.47,
+      "change_pct": -2.37,
+      "as_of": "2026-10-15T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 5.1,
+      "change_bps": -10,
+      "as_of": "2026-10-15T20:00:00Z"
+    },
+    "dxy": {
+      "level": 102.06,
+      "change_pct": -0.4,
+      "as_of": "2026-10-15T20:00:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 5.1,
+      "trigger_above": 5.331,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7744.06,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "BTC vs 80,320",
+      "value": 82236.99,
+      "trigger_below": 80320.0,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Fell 1.84% as chips fell again; Huang said CoreWeave's cost of capital is decreasing and it needs no Nvidia backstop.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Reversed a 9.5% morning drop to close up 5.94% after Huang's remarks; five-year default insurance had hit a record 1,194.5 basis points.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Reports Wednesday October 21 after the close — the first US megacap report since the AI sell-off began.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Fell to $79,688 on Crypto.com, below last week's $80,320 low, before recovering to $82,237.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500",
+      "thesis": "The index held 7,666.45 intraday by about four points on a 6.3% PPI and closed 78 points above it, with the Dow and small caps rising while chips fell — a rotation within the market rather than broad selling.",
+      "entry": "7,666.45 support; 7,744 close",
+      "invalidation": "A close below 7,666.45 would show the selling spreading beyond AI and chips",
+      "horizon": "Through Friday's options expiry and Warsh's remarks"
+    },
+    {
+      "asset": "CoreWeave credit vs stock",
+      "thesis": "Shares rebounded 5.94% after Huang's comments while five-year default insurance sat near a record 1,194.5 basis points; whether the spread follows the stock decides whether the rebound has lenders behind it.",
+      "entry": "CDS near 1,194.5 bp record",
+      "invalidation": "Spread narrowing with the stock would confirm; shares holding while the spread stays near the record would leave the rebound resting on comments",
+      "horizon": "1-2 weeks"
+    },
+    {
+      "asset": "10Y Treasury vs hike odds",
+      "thesis": "Yields fell about 10 basis points on a hot PPI as investors bought bonds with proceeds from chip sales; Warsh's Bangkok remarks test whether that holds if October hike odds rise from 32%.",
+      "entry": "~5.10% ten-year; 32% October hike odds",
+      "invalidation": "Hike odds back above 45% with the ten-year rising toward 5.331% would end the safety bid",
+      "horizon": "Friday through the October 28 meeting"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-15-night.mdx"
+}
