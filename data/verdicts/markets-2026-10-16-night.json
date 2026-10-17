@@ -1,0 +1,142 @@
+{
+  "routine": "markets",
+  "date": "2026-10-16",
+  "window": "night",
+  "generated_at": "2026-10-17T00:12:12Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip stocks fall an eighth straight day and pull the S&P 500 below the line it held all week",
+    "label": "Close: S&P 500 7,659.44 (-1.09%), seven points below 7,666.45; Nasdaq 26,140.03 (-2.14%, week -4.5%); Dow 52,002.41 (-0.34%); Russell 2000 -1.72%; chips -3.8%, eighth straight fall; VIX ~20; 10Y ~5.085%; Brent $109.86 (+3.7%); BTC $81,494.",
+    "rationale_short": "The chip index fell 3.8% for an eighth straight day, its longest losing run since 2008 and 11.4% on the week, and CoreWeave lost about 12% as questions about debt-funded AI buildouts returned a day after Jensen Huang's defense. The S&P 500 fell 1.09% to 7,659.44, seven points below 7,666.45, the level the last two reports named as the sign of selling spreading beyond AI. Rates were not the cause: the two-year fell about 3 basis points and FedWatch put an October hold above 80%. The break was narrow. The Dow lost only 0.34% as energy rose with Brent at $109.86, while the Russell 2000 fell 1.72%, so the selling reached small caps but not the whole market. This morning's read that the selling is about AI financing rather than rates held up. A close back above 7,666.45 would point to an options-expiry overshoot; the Dow joining the decline would confirm broader selling. Meta and Tesla report Wednesday.",
+    "lede_short": "Chip stocks fell for an eighth straight day, the longest run since 2008, and pulled the S&P 500 1.1% lower to 7,659, just under the level it had held all week. Rates were not the cause: near-term Fed hike odds fell. The Dow lost only 0.3% as oil neared $110, so the selling reached small caps but not the whole market. A close back above 7,666 would make Friday look like an options-expiry overshoot.",
+    "supporting_data": [
+      {
+        "label": "The chip index fell 3.8% for an eighth straight day and 11.4% on the week, its worst week since April 2025, with CoreWeave down about 12% — questions about debt-funded AI buildouts undid Thursday's rebound in one session.",
+        "url": "https://www.cnn.com/2026/10/16/investing/tech-stocks-ai-coreweave"
+      },
+      {
+        "label": "The S&P 500 fell 1.1% to 7,659.44 and the Nasdaq 2.1%, while the Dow lost only 0.3% and rose 0.7% on the week — a 5-point weekly gap between the Nasdaq and the Dow measures the move out of tech.",
+        "url": "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-friday-10-16-2026"
+      },
+      {
+        "label": "The two-year fell more than 3 basis points to 4.715% and FedWatch put an October hold above 80% — near-term rate risk eased and chips fell anyway, so rates are not what is driving the selling.",
+        "url": "https://www.cnbc.com/2026/10/16/us-treasury-yields-investors-hot-inflation-data-.html"
+      },
+      {
+        "label": "Brent touched $110 for the first time since May and settled up 3.7% at $109.86 as Iran stepped up attacks near Hormuz — oil adds a second cost pressure on top of September's hot PPI.",
+        "url": "https://cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html"
+      },
+      {
+        "label": "The VIX rose about 21% to just above 20 after topping 22 intraday, its first time there in four months — options buyers paid for protection they declined to buy on Thursday.",
+        "url": "https://www.cnbc.com/2026/10/16/wall-streets-fear-gauge-is-ripping-traders-see-it-going-even-higher.html"
+      },
+      {
+        "label": "About 70 S&P 500 companies report next week, with Tesla and Meta on Wednesday, after 85% of the first 46 beat estimates — Meta's spending plans are the first direct read on AI demand since the chip selling began.",
+        "url": "https://www.cnbc.com/2026/10/16/major-earnings-reports-market-fears-next-week.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7659.44,
+      "change_pct": -1.09,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 26140.03,
+      "change_pct": -2.14,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "vix": {
+      "level": 20.01,
+      "change_pct": 21.5,
+      "as_of": "2026-10-16T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 5.085,
+      "change_bps": -1,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "dxy": {
+      "level": 101.8,
+      "change_pct": -0.25,
+      "as_of": "2026-10-16T20:00:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 5.085,
+      "trigger_above": 5.331,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7659.44,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "BTC vs 80,320",
+      "value": 81494.02,
+      "trigger_below": 80320.0,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "NVDA",
+      "note": "Fell 1.17% to $214.70 while Micron fell 5.6% and Intel 5.8% — again the smallest decline among the major chip names.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Fell about 12% and is down 25% on the week, undoing Thursday's rebound after Huang's defense in one session.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Closed down 2.13% at $354.72 after trading up about 2.4% before the open on the Roadster reveal; reports Wednesday October 21.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "PLTR",
+      "note": "Fell 7.2% to $186.03, the largest drop among the large AI software names.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "META",
+      "note": "Fell 3.72% to $709.33 ahead of Wednesday's results, where capital spending plans are the read on AI demand.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Little changed near $81,500, about $1,200 above the $80,320 low; Strategy fell nearly 10% on the MSCI index rule change.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500",
+      "thesis": "The index closed seven points below 7,666.45 on options-expiry day, with the Dow down only 0.34% and the Russell 2000 down 1.72%; whether the break holds decides whether the selling has spread beyond AI hardware.",
+      "entry": "7,666.45 line; 7,659.44 close",
+      "invalidation": "A close back above 7,666.45 would point to an expiry overshoot; a second close below with the Dow down more than 1% would confirm broader selling",
+      "horizon": "Early next week"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent settled at $109.86 after touching $110 for the first time since May, with Hormuz flows about 30% below pre-war levels and the diesel-first reserve release ending around October 22.",
+      "entry": "$110 intraday high; $104.7 truce line",
+      "invalidation": "A settle above $110 as the release tapers would strengthen the December hike case; a return toward $104.7 would ease it",
+      "horizon": "Through October 22"
+    },
+    {
+      "asset": "Meta and the AI demand read",
+      "thesis": "Meta reports Wednesday after an 11.4% weekly fall in chips; its capital spending guidance is the first direct read from a large AI buyer since the selling began.",
+      "entry": "Meta $709.33 close; chip index eight straight declines",
+      "invalidation": "Spending held or raised would argue against the slowdown chip prices imply; a cut would support it",
+      "horizon": "October 21"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-16-night.mdx"
+}
