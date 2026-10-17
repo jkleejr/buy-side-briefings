@@ -1,0 +1,144 @@
+{
+  "routine": "markets",
+  "date": "2026-10-17",
+  "window": "morning",
+  "generated_at": "2026-10-17T12:48:39Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "After chip stocks' worst week since April 2025, Meta and Tesla results become the next test",
+    "label": "Saturday: S&P 500 closed Fri at 7,659.44 (-1.09%, week -1.9%), seven points under 7,666.45; Nasdaq 26,140.03 (week -4.5%); Dow 52,002.41 (week +0.7%); chips -11.4% on the week; VIX ~20; 10Y ~5.085%; Brent $109.86; BTC ~$81,508 Sat (-0.8% in 24h).",
+    "conviction": "low",
+    "horizon": "Monday October 19 through Wednesday October 21, when Tesla and Meta report",
+    "rationale_short": "What happened: no stock, bond or oil market has traded since Friday, when the chip index fell 3.8% for an eighth straight day and 11.4% for the week, its worst week since April 2025. The S&P 500 closed at 7,659.44, seven points below 7,666.45, the level recent reports named as the sign of selling spreading beyond AI. The Nasdaq lost 4.5% on the week while the Dow gained 0.7%. Rates eased rather than rose: the two-year fell about 3 basis points and FedWatch put an October hold above 80%. Brent settled at $109.86 after touching $110. UKMTO logged 12 attacks on ships in the week to October 16, ten inside the Strait of Hormuz, and says most attacks go unreported. Bitcoin, the only market trading, was near $81,508 Saturday morning, down 0.8% in 24 hours and about $1,200 above its $80,320 low.\n\nWhat it means: the week's selling was concentrated in AI suppliers and in companies that borrowed to build data centres, not spread across the market, and it happened while near-term hike odds fell. That points to doubts about how AI spending is financed rather than to interest rates. The evidence is not one-sided. Jefferies called the CoreWeave selloff overdone and Bank of America described the AI trade as resilient, while Bank of America's Michael Hartnett expects risk aversion to dominate the coming weeks. The break below 7,666.45 came on monthly options-expiry day, so one close does not yet confirm it.\n\nWhat would change the picture: a close back above 7,666.45 early next week would make Friday look like an options-driven overshoot. A second close below it with the Dow falling more than 1% would show selling spreading past AI. Meta's capital spending plans on Wednesday are the first direct read from a large AI buyer since the selling began; spending held or raised would argue against the slowdown chip prices imply, and a cut would support it. Oil above $110 would add to the inflation pressure that keeps a December hike in play ahead of the October 27-28 Fed meeting. Conviction is low because no market has reopened and several data sources could not be checked directly this morning.",
+    "lede_short": "Chip stocks just had their worst week since April 2025, falling 11.4%, and pulled the S&P 500 just under the level it had held all week, while the Dow rose 0.7%. Near-term rate hike odds fell during the selling, so it reflects doubts about how AI spending is financed, not interest rates. A close back above 7,666 on Monday would make Friday look like an options-expiry overshoot; Meta's spending plans on Wednesday are the next real test.",
+    "supporting_data": [
+      {
+        "label": "The chip index fell 3.8% on Friday for an eighth straight day and 11.4% on the week, its worst week since April 2025 — the longest losing run since 2008 is concentrated in AI suppliers, not the whole market.",
+        "url": "https://www.cnn.com/2026/10/16/investing/tech-stocks-ai-coreweave"
+      },
+      {
+        "label": "The S&P 500 closed at 7,659.44, seven points under 7,666.45, while the Nasdaq lost 4.5% on the week and the Dow gained 0.7% — the break is narrow and came on options-expiry day, so one close does not confirm it.",
+        "url": "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-friday-10-16-2026"
+      },
+      {
+        "label": "The two-year fell about 3 basis points to 4.715% and FedWatch put an October hold above 80% — rate risk eased as chips fell, so rates are not what drove the week.",
+        "url": "https://www.cnbc.com/2026/10/16/us-treasury-yields-investors-hot-inflation-data-.html"
+      },
+      {
+        "label": "Jefferies called the CoreWeave selloff overdone after the stock lost about 12% on Friday — analysts are split on whether the AI financing worry has run too far.",
+        "url": "https://www.cnbc.com/2026/10/16/coreweave-stock-selloff-analysts.html"
+      },
+      {
+        "label": "UKMTO logged 12 attacks on ships in the week to October 16, ten inside Hormuz, and says most attacks go unreported — with Brent at $109.86, oil supply risk enters Monday unresolved.",
+        "url": "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ukmto-says-most-ship-attacks-go-unreported/"
+      },
+      {
+        "label": "About 70 S&P 500 companies report next week, with Tesla and Meta on Wednesday — Meta's capital spending plans are the first direct read on AI demand since the chip selling began.",
+        "url": "https://www.cnbc.com/2026/10/16/major-earnings-reports-market-fears-next-week.html"
+      },
+      {
+        "label": "Bitcoin traded near $81,508 on Saturday morning, down 0.8% in 24 hours in a $80,799 to $82,491 range — it is holding about $1,200 above its $80,320 low and has not added to Friday's risk-off move.",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7659.44,
+      "change_pct": -1.09,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 26140.03,
+      "change_pct": -2.14,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "vix": {
+      "level": 20.01,
+      "change_pct": 21.5,
+      "as_of": "2026-10-16T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 5.085,
+      "change_bps": -1,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "dxy": {
+      "level": 101.8,
+      "change_pct": -0.25,
+      "as_of": "2026-10-16T20:00:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 5.085,
+      "trigger_above": 5.331,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7659.44,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "BTC vs 80,320",
+      "value": 81508.39,
+      "trigger_below": 80320.0,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "META",
+      "note": "Closed Friday at $709.33, down 3.72%; reports Wednesday, where capital spending plans are the read on AI demand.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Closed Friday at $354.72, down 2.13%, after an early Roadster-driven gain faded; reports Wednesday.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "CRWV",
+      "note": "Lost about 12% on Friday and about a quarter of its value on the week; Jefferies called the selloff overdone.",
+      "sentiment": "negative"
+    },
+    {
+      "ticker": "NVDA",
+      "note": "Closed Friday at $214.70, down 1.17%, again the smallest fall among the large chip names.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Near $81,508 on Saturday morning, down 0.8% in 24 hours and about $1,200 above the $80,320 low.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "The index closed seven points below the line on options-expiry day, with the Dow up 0.7% on the week; Monday and Tuesday show whether the break holds before Meta and Tesla report.",
+      "entry": "7,659.44 Friday close; 7,666.45 line.",
+      "invalidation": "A close back above 7,666.45 would point to an expiry overshoot; a second close below with the Dow down more than 1% would show selling spreading past AI.",
+      "horizon": "October 19-21"
+    },
+    {
+      "asset": "Meta and the AI demand read",
+      "thesis": "Meta reports Wednesday after an 11.4% weekly fall in chips; its capital spending guidance is the first direct read from a large AI buyer since the selling began.",
+      "entry": "Meta $709.33 close; chip index eight straight declines.",
+      "invalidation": "Spending held or raised would argue against the slowdown chip prices imply; a cut would support it.",
+      "horizon": "October 21"
+    },
+    {
+      "asset": "Brent crude at $110",
+      "thesis": "Brent settled at $109.86 after touching $110 for the first time since May, with ship attacks near Hormuz at their highest since the war began and the diesel-first reserve release ending around October 22.",
+      "entry": "$109.86 settle; $110 intraday high.",
+      "invalidation": "A settle above $110 as the release tapers would strengthen the December hike case; a fall back toward $104.7 would ease it.",
+      "horizon": "Through the October 27-28 FOMC"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-17-morning.mdx"
+}
