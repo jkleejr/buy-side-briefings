@@ -1,0 +1,89 @@
+{
+  "routine": "markets",
+  "date": "2026-10-17",
+  "window": "night",
+  "generated_at": "2026-10-18T00:47:57Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Iran says two tankers hit mines in Hormuz as markets wait on Meta and Tesla results",
+    "label": "Saturday night: no session. S&P 500 closed Fri at 7,659.44 (-1.09%, week -1.9%), seven points under 7,666.45; Nasdaq 26,140.03 (week -4.5%); Dow 52,002.41 (week +0.7%); VIX ~20; 10Y ~5.085%; Brent $109.86 Fri; BTC ~$81,509 (flat 24h).",
+    "conviction": "low",
+    "horizon": "Sunday evening's oil and futures open through Wednesday October 21, when Tesla, Meta and Texas Instruments report",
+    "rationale_short": "What happened: no stock, bond or oil market has traded since Friday's close, when the S&P 500 finished at 7,659.44, seven points below the 7,666.45 level recent reports named as the sign of selling spreading beyond AI, after the chip index's eighth straight loss. On Saturday Iran's Revolutionary Guards said two oil tankers carrying about 2 million barrels of crude each caught fire after hitting mines in the Strait of Hormuz. That claim is not independently confirmed: US Central Command says it has cleared the strait of mines and that ships are being hit by projectiles instead. Either way, ships are still being struck, with four tankers reported hit since Friday. Bitcoin, the only market trading, was near $81,509 on Saturday night, almost unchanged over 24 hours and about $1,200 above its $80,320 low.\n\nWhat it means: the weekend added oil risk, not new information about the AI selling that drove the week. Brent settled Friday at $109.86 after touching $110, and these attacks happened after that price was set, so oil's Sunday evening open is the first market to price them. The two accounts disagree on how the ships were hit, and the difference matters: mines would be harder and slower to clear than projectile attacks. Neither side's account has been independently verified, so the size of any oil move is uncertain. Bitcoin's flat weekend says nothing about whether the stock selling continues; it did not join Friday's decline either.\n\nWhat would change the picture: an oil settle above $110 would add to the inflation pressure that keeps a Fed hike in play ahead of the October 27-28 meeting, while a fade back toward $104.7 would ease it. For stocks, a close back above 7,666.45 early in the week would make Friday look like an options-expiry overshoot; a second close below it with the Dow down more than 1% would show the selling spreading past AI. Netflix reports Tuesday, and Tesla, Meta and Texas Instruments on Wednesday. Meta's capital spending plans and Texas Instruments' demand outlook are the first direct reads on whether chip prices reflect a real slowdown. Conviction is low because markets are closed and this run could only check sources through search results, not by reading the articles in full.",
+    "lede_short": "Iran says two tankers hit mines in Hormuz on Saturday; the US says it cleared the mines and ships are being hit by projectiles. Either way, attacks continued after oil settled near $110 on Friday, so Sunday's oil open is the first price on them. For stocks the weekend changed little: the S&P 500 sits just under 7,666, and results from Meta and Texas Instruments on Wednesday are the next real test of the chip selling.",
+    "supporting_data": [
+      {
+        "label": "Iran's Revolutionary Guards said two tankers carrying about 2 million barrels of crude each caught fire after hitting mines in Hormuz — the claim is unconfirmed, but it came after oil settled Friday, so Sunday's open is the first price on it.",
+        "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/"
+      },
+      {
+        "label": "US Central Command says it has cleared the strait of mines and that ships are being hit by projectiles, with four tankers reported hit since Friday — the two sides disagree on how, but agree ships are still being struck.",
+        "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels"
+      },
+      {
+        "label": "Attacks on tankers in Hormuz reached their highest of any week since the war began in February — with Brent at $109.86, the supply risk behind Friday's 3.7% oil gain has not eased.",
+        "url": "https://gcaptain.com/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say/"
+      },
+      {
+        "label": "The S&P 500 closed Friday at 7,659.44, seven points under 7,666.45, while the Nasdaq lost 4.5% on the week and the Dow gained 0.7% — the break is narrow and came on options-expiry day, so one close does not confirm it.",
+        "url": "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-friday-10-16-2026"
+      },
+      {
+        "label": "Netflix reports Tuesday and Tesla, Meta and Texas Instruments on Wednesday — Meta's spending plans and Texas Instruments' outlook are the first direct reads on whether the chip selling reflects a real slowdown.",
+        "url": "https://www.cnbc.com/2026/10/16/major-earnings-reports-market-fears-next-week.html"
+      },
+      {
+        "label": "The chip index fell for an eighth straight day on Friday and 11.4% on the week, its longest losing run since 2008 — the weekend brought no new information on the AI financing worries behind it.",
+        "url": "https://www.cnn.com/2026/10/16/investing/tech-stocks-ai-coreweave"
+      },
+      {
+        "label": "Bitcoin was near $81,509 on Saturday night, almost unchanged over 24 hours in an $80,817 to $81,772 range — it is holding about $1,200 above its $80,320 low and has not joined the stock selling.",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7659.44, "change_pct": -1.09, "as_of": "2026-10-16T20:00:00Z" },
+    "nasdaq": { "level": 26140.03, "change_pct": -2.14, "as_of": "2026-10-16T20:00:00Z" },
+    "vix": { "level": 20.01, "change_pct": 21.5, "as_of": "2026-10-16T20:15:00Z" },
+    "ust10y": { "level": 5.085, "change_bps": -1, "as_of": "2026-10-16T20:00:00Z" },
+    "dxy": { "level": 101.8, "change_pct": -0.25, "as_of": "2026-10-16T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.085, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7659.44, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81508.94, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "META", "note": "Closed Friday at $709.33, down 3.72%; reports Wednesday, where capital spending plans are the read on AI demand.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Closed Friday at $354.72, down 2.13%; reports Wednesday October 21.", "sentiment": "neutral" },
+    { "ticker": "TXN", "note": "Reports Wednesday with guidance of $2.23 to $2.57 a share; its demand outlook is a direct read on whether the chip selling reflects a real slowdown.", "sentiment": "neutral" },
+    { "ticker": "NFLX", "note": "Reports Tuesday October 20, the first large company to report in the coming week.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $81,509 Saturday night, almost unchanged over 24 hours and about $1,200 above the $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent settled Friday at $109.86 after touching $110; Saturday's tanker strikes, mines or projectiles, happened after that price was set, so Sunday evening's open is the first market reaction.",
+      "entry": "$109.86 Friday settle; $110 intraday high; $104.7 truce line",
+      "invalidation": "A settle above $110 would strengthen the case for a Fed hike; a return toward $104.7 would ease it",
+      "horizon": "Sunday evening open through October 22"
+    },
+    {
+      "asset": "S&P 500",
+      "thesis": "The index closed seven points below 7,666.45 on options-expiry day; whether the break holds decides whether the selling has spread beyond AI hardware.",
+      "entry": "7,666.45 line; 7,659.44 close",
+      "invalidation": "A close back above 7,666.45 would point to an expiry overshoot; a second close below with the Dow down more than 1% would confirm broader selling",
+      "horizon": "Early next week"
+    },
+    {
+      "asset": "Meta, Texas Instruments and the AI demand read",
+      "thesis": "Both report Wednesday after an 11.4% weekly fall in chips; Meta's spending plans and Texas Instruments' outlook are the first direct reads since the selling began.",
+      "entry": "Meta $709.33 close; TXN guidance $2.23 to $2.57 a share",
+      "invalidation": "Spending held or raised and a steady chip outlook would argue against the slowdown chip prices imply; cuts would support it",
+      "horizon": "October 21"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-17-night.mdx"
+}
