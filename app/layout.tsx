@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import CommandPalette from "@/components/command-palette";
 import SiteHeader from "@/components/site-header";
-import SiteFooter from "@/components/site-footer";
 import StaleBanner from "@/components/stale-banner";
 import TickerStrip from "@/components/ticker-strip";
 import { getSiteUrl } from "@/lib/site-url";
@@ -71,7 +70,6 @@ export default function RootLayout({
         <StaleBanner />
         <TickerStrip />
         <main className="mx-auto w-full max-w-[1600px] flex-1 px-1.5 py-1.5 sm:px-2 sm:py-2">{children}</main>
-        <SiteFooter />
         <CommandPalette />
       </body>
     </html>
