@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-19",
+  "window": "morning",
+  "generated_at": "2026-10-19T12:13:46Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip stocks lead a futures rebound as oil falls on a Russia sanctions waiver",
+    "label": "Pre-market Monday: Nasdaq 100 futures +0.99%, S&P 500 futures +0.47%, Dow flat; Brent about $107-108.5 (-1.5% to -2%) after the Russia waiver; 10Y ~5.08% (about -1 bp); S&P 500 closed Friday at 7,659.44, under 7,666.45; BTC ~$82,389.",
+    "rationale_short": "What happened: futures point to a rebound in the AI shares that led last week's selling. Reuters reported Nasdaq 100 futures up 0.99% and S&P 500 futures up 0.47%, after Brent fell about 1.8% when President Trump suspended sanctions and proposed tariffs on buyers of Russian oil under the Graham Act. Intel rose about 4% premarket on a JPMorgan upgrade. The 10-year Treasury yield sits near 5.08%, about a basis point lower.\n\nWhat it means: Reuters framed last week's selling as a worry that higher rates would hurt debt-funded AI building, and CoreWeave's credit default swaps near 1,000 basis points show that stress. Cheaper oil eases that worry only if it reaches bond yields, and so far it has barely done so. The Hormuz shortfall is unchanged, with Gulf exports near 8.5 million barrels a day against more than 20 million before the war, so the oil relief rests on one executive order that can be revisited within 60 days. The futures gain is a bounce after the Nasdaq's 4.5% weekly fall, not yet a change in the rates picture.\n\nWhat would change the picture: a close back above 7,666.45 on the S&P 500 would make Friday look like an options-expiry overshoot, while a second close below it with the Dow lower would show selling broadening. A 10-year move toward 5.0% would confirm that cheaper oil is easing rates; a Brent settle back above $110 would undo the waiver's effect. SpaceX reports Tuesday and Tesla and Meta Wednesday, the first spending figures from large AI buyers since the selling began.",
+    "lede_short": "Stock futures are pointing higher, led by the chip stocks that drove last week's selling, after oil fell about 2% on a US waiver of some Russia sanctions. Bond yields have barely moved, so the bounce does not yet show the cheaper money AI borrowers need. A close back above 7,666 on the S&P 500 and a 10-year yield moving toward 5% would confirm it; Meta's and Tesla's spending figures on Wednesday are the next real test.",
+    "supporting_data": [
+      {
+        "label": "Reuters reported Nasdaq 100 futures up 0.99% and S&P 500 futures up 0.47%, with Dow futures flat, as AI shares rebounded from their worst week since June — the buying is concentrated in the names that fell most, not spread across the market.",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N4650KA:0-wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall/"
+      },
+      {
+        "label": "Trump's order suspends sanctions and proposed tariffs on buyers of Russian oil under the Graham Act, with up to 60 days to assess the impact — the supply relief is aimed at diesel, where inflation pressure is sharpest, but it can be revisited.",
+        "url": "https://www.investing.com/news/commodities-news/oil-slips-as-trumps-sanction-waiver-may-lead-to-more-russian-fuel-supplies-4956112"
+      },
+      {
+        "label": "Brent traded at $108.52 and WTI at $101.28 early Monday while Kpler put Gulf crude exports near 8.5 million barrels a day against more than 20 million before the war — the waiver trims the price, but the Hormuz shortfall behind $110 oil is unchanged.",
+        "url": "https://www.brecorder.com/news/40444883/oil-slips-from-five-month-high-with-hormuz-transits-in-focus"
+      },
+      {
+        "label": "Credit default swaps on CoreWeave reached about 1,000 basis points last week, implying roughly a 63% chance of default within five years — that is the financing stress behind the chip selling, and one day of futures gains does not address it.",
+        "url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html"
+      },
+      {
+        "label": "Intel rose about 4% premarket after JPMorgan upgraded it to neutral, and Datadog 3.6% on a Bernstein upgrade — the early buying is led by analyst calls on beaten-down names, not by new demand data.",
+        "url": "https://www.investing.com/news/stock-market-news/intel-jumps-on-jpmorgan-upgrade-datadog-rallies-4957102"
+      },
+      {
+        "label": "SpaceX reports Tuesday and Tesla and Meta on Wednesday — these are the first spending figures from large AI buyers since the selling began, and they test the rebound before the October 27-28 Fed meeting does.",
+        "url": "https://kfgo.com/2026/10/19/spacex-tesla-earnings-to-test-musks-ai-spending-ambitions-as-merger-talk-grows"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7659.44, "change_pct": -1.09, "as_of": "2026-10-16T20:00:00Z" },
+    "nasdaq": { "level": 26140.03, "change_pct": -2.15, "as_of": "2026-10-16T20:00:00Z" },
+    "vix": { "level": 19.99, "change_pct": 21.4, "as_of": "2026-10-16T20:15:00Z" },
+    "ust10y": { "level": 5.08, "change_bps": -1, "as_of": "2026-10-19T11:00:00Z" },
+    "dxy": { "level": 101.9, "change_pct": 0.1, "as_of": "2026-10-19T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.08, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7659.44, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 82389.09, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "INTC", "note": "Up about 4% premarket after JPMorgan upgraded it to neutral from underweight.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Up about 1.1% premarket with the chip rebound, per Reuters; no company-specific news.", "sentiment": "neutral" },
+    { "ticker": "META", "note": "Reports Wednesday October 21; capital spending plans are the first direct read on AI demand since the selling began.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Reports Wednesday October 21, a day after SpaceX.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $82,389, up 0.4% over 24 hours and about $2,070 above the $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "Friday closed seven points under the line used for selling that spreads beyond AI; a 0.47% futures gain would open the index near 7,695, so the cash close decides whether Friday's break holds.",
+      "entry": "7,666.45 line; 7,659.44 Friday close.",
+      "invalidation": "A close above 7,666.45 points to an options-expiry overshoot; a second close below it with the Dow lower would show the selling broadening.",
+      "horizon": "October 19-20"
+    },
+    {
+      "asset": "10-year Treasury yield and the AI rebound",
+      "thesis": "Chip stocks are rebounding while the 10-year has barely moved from about 5.08%; if the bounce reflects easing rate pressure, yields should follow oil lower.",
+      "entry": "5.08% now; 5.0% as confirmation; 5.331% regime line.",
+      "invalidation": "A 10-year holding above 5.08% while chips rally leaves the move resting on positioning ahead of Tuesday's and Wednesday's earnings.",
+      "horizon": "October 19-21"
+    },
+    {
+      "asset": "Brent crude between $104.7 and $110",
+      "thesis": "The Russia sanctions waiver took Brent from $109.86 to about $107-108.5, but Gulf exports remain under half their pre-war level.",
+      "entry": "$109.86 Friday settle; $110 high; $104.7 earlier truce level.",
+      "invalidation": "A settle above $110 would mean Hormuz has outweighed the Russian supply; a fall toward $104.7 would need fewer tanker attacks, not only a policy waiver.",
+      "horizon": "October 19-23"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-19-morning.mdx"
+}
