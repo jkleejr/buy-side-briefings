@@ -1,0 +1,144 @@
+{
+  "routine": "markets",
+  "date": "2026-10-18",
+  "window": "night",
+  "generated_at": "2026-10-19T00:47:51Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Stock futures edge up as investors test last week's AI sell-off",
+    "label": "Sunday night: futures reopened higher after the worst week since June; S&P 500 closed Fri at 7,659.44 (-1.09%, week -1.9%), seven points under 7,666.45; Nasdaq 26,140.03 (week -4.5%); VIX ~20; 10Y ~5.085%; Brent $109.86 Fri settle; BTC ~$82,455 (+1.2% in 24h).",
+    "conviction": "low",
+    "horizon": "Monday's session through Wednesday October 21, when Tesla, Meta and Texas Instruments report",
+    "rationale_short": "What happened: stock futures reopened Sunday evening with small gains. CNBC reported Nasdaq-100 futures up 0.4% and S&P 500 and Dow futures up about 0.2%, describing traders cautiously buying last week's dip in AI shares; Bloomberg reported larger gains of 0.5% and 0.9%. The cash market last closed Friday at 7,659.44 on the S&P 500, seven points below the 7,666.45 level recent reports named as the sign of selling spreading beyond AI, after the Nasdaq's 4.5% weekly fall. Over the weekend Iran's Revolutionary Guards said two supertankers hit mines and caught fire near Hormuz, and at least nine ships have been attacked around the strait since October 11. CNBC described oil as stable early Sunday, but this run could not confirm a Brent or WTI price from the reopen. Bitcoin was near $82,455, up 1.2% in 24 hours.\n\nWhat it means: the first prices after the weekend point to a pause in the selling, not a reversal. A 0.2% to 0.5% futures gain would put the S&P 500 back around or just above 7,666.45, so Monday's close, not the overnight quote, decides whether Friday's break holds. The weekend tanker news had not, on the reports available, moved oil much from Friday's $109.86 settle, which matters because oil near $110 is what keeps a Fed rate rise in discussion. The evidence conflicts on size: CNBC and Bloomberg report different futures gains, and overnight moves on thin volume often fade.\n\nWhat would change the picture: a Monday close back above 7,666.45 would make Friday look like an options-expiry overshoot; a second close below it with the Dow down more than 1% would show the selling spreading past AI. A Brent settle above $110 would add to inflation pressure before the October 27-28 Fed meeting, while a fall toward $104.7 would ease it. Netflix reports Tuesday; Tesla, Meta and Texas Instruments on Wednesday, with Meta's spending plans the first direct read from a large AI buyer. Conviction is low because this run could only check sources through search results and could not confirm an oil price from the reopen.",
+    "lede_short": "Stock futures reopened Sunday evening a little higher, between 0.2% and 0.9% depending on the index and the source, as investors cautiously bought last week's AI sell-off. That is a pause, not a recovery: the S&P 500 closed Friday just under 7,666, and Monday's close decides whether that break holds. Oil looked stable despite weekend tanker attacks near Hormuz, and Meta's spending plans on Wednesday are the next real test for AI stocks.",
+    "supporting_data": [
+      {
+        "label": "CNBC reported Nasdaq-100 futures up 0.4% and S&P 500 and Dow futures up about 0.2% on Sunday evening — investors are cautiously buying last week's AI dip, but overnight gains this small often fade by the close.",
+        "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Bloomberg (subscription) reported larger futures gains of 0.5% for the S&P 500 and 0.9% for the Nasdaq 100 — the two reports disagree on size but agree on direction.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-18/stock-market-today-dow-s-p-live-updates"
+      },
+      {
+        "label": "The S&P 500 closed Friday at 7,659.44, seven points under 7,666.45, while the Nasdaq lost 4.5% on the week and the Dow gained 0.7% — Sunday's futures gains are enough to put the index back near that line, so Monday's close decides whether the break holds.",
+        "url": "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-friday-10-16-2026"
+      },
+      {
+        "label": "Iran's Revolutionary Guards said two supertankers hit mines and caught fire near Hormuz, and at least nine ships have been attacked around the strait since October 11 — the supply risk behind Brent's $109.86 Friday settle has not eased.",
+        "url": "https://uk.investing.com/news/economy-news/iran-war-tankers-hit-near-hormuz-as-tehran-offers-us-reopening-plan-4915988"
+      },
+      {
+        "label": "Brent settled Friday at $109.86, near $110, and Iran says the strait would reopen only if US forces leave the region — a de-escalation that would bring oil down still depends on terms the US has not accepted.",
+        "url": "https://financefeeds.com/oil-price-near-110-as-iran-demands-us-withdrawal-but-keeps-hormuz-proposal-open/"
+      },
+      {
+        "label": "Netflix reports Tuesday and Tesla, Meta and Texas Instruments on Wednesday — Meta's spending plans are the first direct read from a large AI buyer on whether the chip selling reflects a real slowdown.",
+        "url": "https://www.cnbc.com/2026/10/16/major-earnings-reports-market-fears-next-week.html"
+      },
+      {
+        "label": "Bitcoin traded near $82,455 on Sunday night, up 1.2% in 24 hours in an $80,665 to $82,470 range — it is about $2,100 above its $80,320 low and moving with, not against, the firmer futures.",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7659.44,
+      "change_pct": -1.09,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 26140.03,
+      "change_pct": -2.14,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "vix": {
+      "level": 20.01,
+      "change_pct": 21.5,
+      "as_of": "2026-10-16T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 5.085,
+      "change_bps": -1,
+      "as_of": "2026-10-16T20:00:00Z"
+    },
+    "dxy": {
+      "level": 101.8,
+      "change_pct": -0.25,
+      "as_of": "2026-10-16T20:00:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 5.085,
+      "trigger_above": 5.331,
+      "unit": "%"
+    },
+    {
+      "name": "SPX vs 7,666",
+      "value": 7659.44,
+      "trigger_below": 7666.45,
+      "unit": ""
+    },
+    {
+      "name": "BTC vs 80,320",
+      "value": 82454.52,
+      "trigger_below": 80320.0,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "META",
+      "note": "Closed Friday at $709.33, down 3.72%; reports Wednesday, where capital spending plans are the read on AI demand.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TSLA",
+      "note": "Closed Friday at $354.72, down 2.13%; reports Wednesday October 21.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "TXN",
+      "note": "Reports Wednesday October 21; its demand outlook is a direct read on whether the chip selling reflects a real slowdown.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "NFLX",
+      "note": "Reports Tuesday October 20 after the close, the first large company to report in the coming week.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "BTC",
+      "note": "Near $82,455 Sunday night, up 1.2% over 24 hours and about $2,100 above the $80,320 low.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "Futures rose 0.2% to 0.5% Sunday evening after a close seven points below 7,666.45; Monday's cash close, not the overnight quote, decides whether Friday's break holds.",
+      "entry": "7,666.45 line; 7,659.44 Friday close.",
+      "invalidation": "A close back above 7,666.45 would point to an options-expiry overshoot; a second close below with the Dow down more than 1% would confirm broader selling.",
+      "horizon": "October 19-21"
+    },
+    {
+      "asset": "Brent crude",
+      "thesis": "Brent settled Friday at $109.86; reports described oil as stable at the Sunday reopen despite weekend tanker attacks, but no verified price was available to this run.",
+      "entry": "$109.86 Friday settle; $110 intraday high; $104.7 truce line.",
+      "invalidation": "A settle above $110 would strengthen the case for a Fed rate rise; a return toward $104.7 would ease it.",
+      "horizon": "October 19-22"
+    },
+    {
+      "asset": "Meta, Texas Instruments and the AI demand read",
+      "thesis": "Both report Wednesday after an 11.4% weekly fall in chips; Meta's spending plans and Texas Instruments' outlook are the first direct reads since the selling began.",
+      "entry": "Meta $709.33 Friday close.",
+      "invalidation": "Spending held or raised and a steady chip outlook would argue against the slowdown chip prices imply; cuts would support it.",
+      "horizon": "October 21"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-18-night.mdx"
+}
