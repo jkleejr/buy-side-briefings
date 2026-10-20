@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-20",
+  "window": "morning",
+  "generated_at": "2026-10-20T12:07:56Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Monday's chip rebound fades as Seoul chipmakers and AI cloud stocks fall again",
+    "label": "Pre-market Tuesday: Nasdaq 100 futures -0.62%, S&P 500 futures about -0.15%, Dow futures about +0.2%; CoreWeave -4.7% premarket; Kospi -3.73%; Brent ~$110-111; 10Y ~5.13%; S&P 500 closed Monday at 7,690.73, above 7,666.45; BTC ~$81,535.",
+    "rationale_short": "What happened: the selling that paused on Monday resumed overnight where it began. Seoul's Kospi fell 3.73% to 5,552.74, with SK hynix down 4.23%, and AI infrastructure firm Elice opened 16% below its IPO price. In US premarket trading CoreWeave fell 4.7% and Nebius about 4%, and Reuters had Nasdaq 100 futures down 0.62%, roughly half of Monday's 1.11% Nasdaq gain. The decline is narrow: S&P 500 futures were off about 0.15% and Dow futures up about 0.2%, helped by RTX raising its full-year guidance.\n\nWhat it means: last night's report read Monday as relief rather than an easing of the AI financing worry, and that has held. The pressure is on companies that need to borrow or raise money to build AI capacity, not on reported demand: HSBC repeated a bearish view on CoreWeave, whose bonds yielded around 15% last week. Oil near a five-month high of $110-111 and a 10-year near 5.13% offer those borrowers no relief. Industrial results outside AI, from RTX and GE Aerospace, show the rest of the market holding up, which argues against reading this as broad selling.\n\nWhat would change the picture: an S&P 500 close below 7,666.45 would show the selling spreading beyond AI; a close above it with the Dow higher would keep it contained. A CoreWeave close back above Monday's 52-week low would be the first sign the funding worry is easing. SpaceX reports tonight and Meta and Tesla on Wednesday, the first spending figures from large AI buyers since the selling began.",
+    "lede_short": "Monday's chip rebound is fading: Seoul's main index fell 3.7% and CoreWeave is down about 5% before the open, with Nasdaq futures off 0.6% while Dow futures edge up. The selling is aimed at AI companies that need to borrow, and oil near $110 and a 5.1% 10-year yield give them no relief. An S&P 500 close below 7,666 would show it spreading; SpaceX's spending figures tonight and Meta's Wednesday are the next tests.",
+    "supporting_data": [
+      {
+        "label": "Reuters had Nasdaq 100 futures down 0.62% at 07:06 ET and CoreWeave down 4.7% premarket as Brent rose toward $111 — the AI names that led Monday's rebound are leading the reversal.",
+        "url": "https://www.devdiscourse.com/article/international/3995162-us-stocks-nasdaq-futures-fall-as-oil-prices-jump-key-earnings-loom"
+      },
+      {
+        "label": "The Kospi closed down 3.73% at 5,552.74, with SK hynix down 4.23%, and AI infrastructure firm Elice opened 16% below its IPO price — investors are reluctant to fund new AI capacity even at a discount, and they are selling the memory makers that supply it.",
+        "url": "https://www.koreaherald.com/article/10908892"
+      },
+      {
+        "label": "HSBC repeated a bearish view on CoreWeave, whose bonds yielded around 15% last week — borrowing costs at that level are the problem Monday's rebound did not solve.",
+        "url": "https://invezz.com/news/2026/10/20/coreweave-stock-falls-5-in-premarket-why-hsbc-sees-36-downside"
+      },
+      {
+        "label": "Brent held near $110, a five-month high, after Houthi claims of strikes on Saudi oil sites and a tanker hitting a mine in the Strait of Hormuz — high oil keeps inflation, and with it bond yields, from easing.",
+        "url": "https://www.cnbc.com/2026/10/20/brent-crude-holds-near-five-month-high-middle-east-tension.html"
+      },
+      {
+        "label": "RTX reported $25.0 billion in sales and raised its full-year adjusted EPS range to $7.65-7.75 on a $340 billion backlog — results outside AI are holding up, which is why Dow futures are higher while the Nasdaq's are lower.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000101829/000010182926000030/a2026-10x208xkerexhibit99.htm"
+      },
+      {
+        "label": "FedWatch priced about a 15% chance of an October hike and 89% for December — the rate path has not shifted toward easing, so cheaper money is not behind any bounce.",
+        "url": "https://www.fxstreet.com/news/gold-stalls-below-4-200-as-fed-rate-hike-bets-limit-upside-202610191104"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7690.73, "change_pct": 0.41, "as_of": "2026-10-19T20:00:00Z" },
+    "nasdaq": { "level": 26430.89, "change_pct": 1.11, "as_of": "2026-10-19T20:00:00Z" },
+    "vix": { "level": 18.44, "change_pct": -7.75, "as_of": "2026-10-19T20:15:00Z" },
+    "ust10y": { "level": 5.13, "change_bps": -2, "as_of": "2026-10-20T11:00:00Z" },
+    "dxy": { "level": 102.0, "change_pct": 0.2, "as_of": "2026-10-19T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.13, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7690.73, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81535.17, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "CRWV", "note": "Down 4.7% premarket after a 52-week low on Monday; HSBC repeated a bearish view.", "sentiment": "negative" },
+    { "ticker": "MU", "note": "Lower premarket on reports its Taiwan union is preparing to strike Thursday over bonuses; date unconfirmed.", "sentiment": "negative" },
+    { "ticker": "META", "note": "Reports Wednesday October 21; capital spending plans are the direct read on AI demand.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Reports Wednesday October 21, after Monday's 3.74% gain.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $81,535, down 1.0% over 24 hours and about $1,200 above the $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "Monday closed 24 points above the line; a 0.15% futures decline would open near 7,679, so the selling is so far confined to AI names.",
+      "entry": "7,666.45 line; 7,690.73 Monday close.",
+      "invalidation": "A close below 7,666.45 after Netflix and SpaceX report would show the selling spreading; a close above it with the Dow higher keeps it contained.",
+      "horizon": "October 20-22"
+    },
+    {
+      "asset": "CoreWeave against Monday's 52-week low",
+      "thesis": "A 4.7% premarket fall would take CoreWeave to a new low, with the stock moving on borrowing costs rather than reported demand.",
+      "entry": "Monday's 52-week low; bonds yielding around 15%.",
+      "invalidation": "A close back above Monday's low, with SpaceX and Meta holding or raising spending, would be the first sign the funding worry is easing.",
+      "horizon": "October 20-21"
+    },
+    {
+      "asset": "10-year Treasury yield and Brent crude",
+      "thesis": "The 10-year near 5.13% and Brent near $110-111 keep pressure on borrowers; oil is set by Gulf flows near 8.5 million barrels a day, not by the Russia waiver.",
+      "entry": "5.13% now; 5.0% and 5.331% bounds; Brent about $111 intraday high, $104.7 earlier truce level.",
+      "invalidation": "A Brent settle above $111 keeps inflation expectations behind the 10-year; a fall toward $104.7 would need Gulf flows to recover.",
+      "horizon": "October 20-23"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-20-morning.mdx"
+}
