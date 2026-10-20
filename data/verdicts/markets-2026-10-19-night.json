@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-19",
+  "window": "night",
+  "generated_at": "2026-10-20T00:12:02Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip stocks end an eight-day slide, but AI debt worries and bond yields did not ease",
+    "label": "Monday close: Nasdaq 26,430.89 (+1.11%), S&P 500 7,690.73 (+0.41%), back above 7,666.45; Dow 51,966.03 (-0.07%); chip index +1.61%; VIX 18.44 (-7.75%); 10Y ~5.07-5.08%; Brent $109.55 (-0.3%), WTI $103.66 (+2.2%); BTC ~$81,840.",
+    "rationale_short": "What happened: the chip index rose 1.61% and ended its longest losing streak since 2008, the Nasdaq gained 1.11% and the S&P 500 closed at 7,690.73, back above the 7,666.45 line it broke on Friday. The gain was narrow: the Dow slipped 0.07% and the Russell 2000 added 0.25%. The largest moves came on analyst calls, led by Amazon's roughly 5% rise after Morgan Stanley named it a top pick. CoreWeave hit a 52-week low and closed slightly lower despite a Goldman Sachs upgrade, and the 10-year yield stayed near 5.07-5.08%.\n\nWhat it means: Monday reads as relief after the Nasdaq's 4.5% weekly fall rather than an easing of the AI financing worry behind it, since the company at the centre of that worry did not rally and long-term borrowing costs did not fall. The morning report's read held for stocks and bonds but not for oil: Brent gave back nearly all of the Russia waiver's drop to settle at $109.55, and WTI rose 2.2%. Builder confidence fell to 29, the lowest since 2012, which shows rates above 5% weighing on housing as well as AI.\n\nWhat would change the picture: a close back below 7,666.45 on the S&P 500 would undo Monday's recovery; CoreWeave rising with narrower credit swaps would be the first sign the financing stress is easing. A 10-year below 5.0% would support the rebound; a move toward 5.331% would put rates back at the centre before the October 27-28 Fed meeting. Netflix and SpaceX report Tuesday, Tesla and Meta Wednesday.",
+    "lede_short": "Chip stocks ended their longest losing streak since 2008 and the Nasdaq rose 1.1%, putting the S&P 500 back above the level it broke on Friday. The rebound was led by analyst upgrades, though: CoreWeave, the company at the centre of the AI debt worry, closed lower, and the 10-year yield stayed above 5%. A yield under 5% would make the rebound more convincing; Meta's and Tesla's results on Wednesday are the next real test.",
+    "supporting_data": [
+      {
+        "label": "The Nasdaq rose 1.11% to 26,430.89 and the S&P 500 0.41% to 7,690.73 while the Dow fell 0.07% — chips ended an eight-day slide, but the buying was about a fifth the size of last week's move out of tech.",
+        "url": "https://vistapglobal.com/stock-market-today-october-19-2026-nasdaq-gains-1-11-as-ai-stocks-rebound-housing-confidence-weakens-aapl-amzn-amwl-docs-eprx-jpm-lpl-modd-nflx-nvda-ser-sln-spcx-tsla-wfc/"
+      },
+      {
+        "label": "The 10-year yield ended little changed near 5.07-5.08% with an October Fed hold priced above 85% — lower hike odds were already in the price, so bonds gave Monday's rebound no help.",
+        "url": "https://www.cnbc.com/amp/2026/10/19/bonds-treasurys-us-yields.html"
+      },
+      {
+        "label": "Builder confidence fell three points to 29 in October, the lowest since June 2012, with 43% of builders cutting prices — mortgage rates above 7% are now weighing on housing as well as AI financing.",
+        "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/builder-sentiment-falls-on-rising-rates"
+      },
+      {
+        "label": "Brent settled 0.3% lower at $109.55 after falling more than $3 intraday, while WTI rose 2.2% to $103.66, its highest since September 15 — the Russia waiver's relief faded as the Houthis claimed strikes on Saudi oil sites.",
+        "url": "https://finance.yahoo.com/energy/articles/oil-slips-trumps-sanction-waiver-222256196.html"
+      },
+      {
+        "label": "CoreWeave hit a 52-week low and closed fractionally lower despite a Goldman Sachs upgrade, with credit swaps still at distressed levels — the AI debt worry behind last week's selling did not ease with the chip rebound.",
+        "url": "https://cnbc.com/2026/10/19/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Amazon rose about 5% after Morgan Stanley named it a top pick and raised its target to $350, citing 37% AWS growth — the day's largest gains came from rating changes, not new demand data.",
+        "url": "https://247wallst.com/investing/2026/10/19/amazon-jumps-5-as-morgan-stanley-names-it-top-pick-on-faster-aws-growth-microsoft-and-alphabet-edge-higher/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7690.73, "change_pct": 0.41, "as_of": "2026-10-19T20:00:00Z" },
+    "nasdaq": { "level": 26430.89, "change_pct": 1.11, "as_of": "2026-10-19T20:00:00Z" },
+    "vix": { "level": 18.44, "change_pct": -7.75, "as_of": "2026-10-19T20:15:00Z" },
+    "ust10y": { "level": 5.08, "change_bps": -1, "as_of": "2026-10-19T20:00:00Z" },
+    "dxy": { "level": 102.0, "change_pct": 0.2, "as_of": "2026-10-19T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.08, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7690.73, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81840.38, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AMZN", "note": "Up about 5% to around $262 after Morgan Stanley named it a top pick with a $350 target; still below its August record near $287.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Up about 1.6% with the chip index's first gain in nine sessions; no company-specific news.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Up 3.74% two days before Wednesday's results, more than recovering Friday's 2.13% fall.", "sentiment": "neutral" },
+    { "ticker": "PLTR", "note": "Up 4.36%, recovering part of Friday's 7.2% drop.", "sentiment": "neutral" },
+    { "ticker": "META", "note": "Reports Wednesday October 21; capital spending plans are the first direct read on AI demand from a large buyer since the selling began.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Near $81,840, down 0.4% over 24 hours and about $1,520 above the $80,320 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "S&P 500 against 7,666.45",
+      "thesis": "Monday closed 24 points above the line Friday broke; holding it through Wednesday's earnings would make Friday look like an options-expiry move.",
+      "entry": "7,666.45 line; 7,690.73 Monday close.",
+      "invalidation": "A close back below 7,666.45, especially after Netflix or Meta disappoint, would show Monday's rebound was positioning.",
+      "horizon": "October 20-22"
+    },
+    {
+      "asset": "CoreWeave against its 52-week low",
+      "thesis": "Chips rose while CoreWeave made a new low, suggesting buyers are choosing the strongest balance sheets rather than the whole AI buildout.",
+      "entry": "52-week low set October 19; Friday's close as the first reference above.",
+      "invalidation": "A close above Friday's level with credit default swaps narrowing would be the first sign the financing stress is easing.",
+      "horizon": "Through mid-November results"
+    },
+    {
+      "asset": "10-year Treasury yield between 5.0% and 5.331%",
+      "thesis": "The 10-year has held above 5% through a 4.5% weekly Nasdaq fall and a 14-year low in builder confidence, so weak data is not pulling it lower.",
+      "entry": "~5.08% now; 5.0% below; 5.331% regime line above.",
+      "invalidation": "A move under 5.0% would ease housing and AI borrowing; a move toward 5.331% would put rates back at the centre before the October 27-28 Fed meeting.",
+      "horizon": "October 20-28"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-19-night.mdx"
+}
