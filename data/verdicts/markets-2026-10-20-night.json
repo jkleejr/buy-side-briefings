@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-20",
+  "window": "night",
+  "generated_at": "2026-10-21T00:14:07Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "The Dow and small caps rose while tech stood still, then SpaceX and Super Micro reported strong AI demand",
+    "label": "Tuesday close: Dow 52,495.88 (+1.02%), Russell 2000 2,773.42 (+1.65%), S&P 500 7,712.57 (+0.28%), Nasdaq 26,424.82 (-0.02%); VIX 17.31 (-6.13%); 10Y ~5.12% (about -3 bp); Brent $108.79 (-0.7%); BTC ~$82,990. After hours: SpaceX about +5%, Super Micro about +11%, Netflix -4% to -6%.",
+    "rationale_short": "What happened: the Dow rose 1.02% and the Russell 2000 1.65% while the Nasdaq slipped 0.02%. 3M's 6.09% gain on a raised profit forecast and a record close in health care led the market, and the chip index added only 0.47%. A report of a US-Iran compromise briefly pushed oil, the dollar and the 10-year yield lower; Brent recovered most of the drop after a diplomat denied it and settled at $108.79. After the close, SpaceX reported revenue of $14.58 billion against $12.72 billion expected, with its AI business up more than ninefold, and Super Micro raised its quarterly revenue range to $18.5-19.5 billion. Netflix fell after cutting its advertising forecast.\n\nWhat it means: for a second day, investors paid for reported profits rather than AI promises. The after-hours results are the first large-buyer evidence that AI spending is turning into revenue faster than modelled, but SpaceX still spent more than it took in, so they show demand rather than easier funding. The morning report's read was half right: AI did not lead, but the S&P 500 held 46 points above 7,666.45 and CoreWeave recovered its premarket fall.\n\nWhat would change the picture: a Nasdaq close above Monday's 26,430.89 on Wednesday would show the after-hours gains carried; a fade would show buyers still prefer reported profits. Meta's spending plans and CoreWeave against its 52-week low test the funding worry. The 10-year's drop rests on a denied headline; a Brent settle above about $112 would undo it before the October 27-28 Fed meeting.",
+    "lede_short": "Money kept moving into companies with reported profits: the Dow rose 1% and small caps 1.7% while the Nasdaq was flat. After the close, SpaceX and Super Micro reported AI demand well above estimates and rose in late trading, the first large-buyer sign that AI spending is turning into revenue. Whether those gains lift the Nasdaq on Wednesday, and what Meta says about spending that evening, decide if tech rejoins the rally.",
+    "supporting_data": [
+      {
+        "label": "The Dow gained 529.85 points to 52,495.88 and the S&P 500 0.28% to 7,712.57 while the Nasdaq slipped 0.02% — a second day of money moving to companies with reported profits, with chips no longer leading.",
+        "url": "https://www.kiplinger.com/investing/stocks/dow-gains-529-points-on-3m-data-center-deal-stock-market-today"
+      },
+      {
+        "label": "SpaceX reported revenue of $14.58 billion against $12.72 billion expected, with AI capital spending above $16.4 billion — the first large AI buyer since last week's selloff showed that spending turning into revenue faster than modelled.",
+        "url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html"
+      },
+      {
+        "label": "Brent settled near $109, down 0.7%, after touching about $112, as a diplomat denied a report that a US-Iran deal was close — the drop in oil and yields rests on a headline that has already been walked back.",
+        "url": "https://www.rigzone.com/news/oil_slips_as_iran_talks_fuel_volatility-20-oct-2026-184889-article"
+      },
+      {
+        "label": "Super Micro raised its quarterly revenue range to $18.5-19.5 billion from $14.5-15.5 billion, against $15.23 billion expected — server orders show AI demand holding despite the funding worry.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000025/smcifirstquarterfy2027busi.htm"
+      },
+      {
+        "label": "The S&P 500 health care index rose 2.28% to a record while General Motors fell about 7.5% on a soft full-year range — investors are paying for steady and raised earnings, not leaving the market.",
+        "url": "https://www.benzinga.com/markets/equities/26/10/62475717/health-care-stocks-hit-record-highs-gm-drops-nearly-8-stock-market-today"
+      },
+      {
+        "label": "Housing starts fell 5.2% to a 1.221 million annual rate in September, with single-family starts at a one-year low of 859,000 — a 10-year yield above 5% is now showing up in construction as well as builder confidence.",
+        "url": "https://www.census.gov/construction/nrc/current/index.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7712.57, "change_pct": 0.28, "as_of": "2026-10-20T20:00:00Z" },
+    "nasdaq": { "level": 26424.82, "change_pct": -0.02, "as_of": "2026-10-20T20:00:00Z" },
+    "vix": { "level": 17.31, "change_pct": -6.13, "as_of": "2026-10-20T20:15:00Z" },
+    "ust10y": { "level": 5.12, "change_bps": -3, "as_of": "2026-10-20T20:00:00Z" },
+    "dxy": { "level": 101.7, "change_pct": -0.3, "as_of": "2026-10-20T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.12, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7712.57, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 82988.13, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "SPCX", "note": "Up about 5% after hours on revenue of $14.58 billion against $12.72 billion expected; AI segment revenue $7.56 billion, up 830%; total capital spending $19.6 billion.", "sentiment": "positive" },
+    { "ticker": "META", "note": "Down about 2%, a fifth straight decline and more than 12% lower going into Wednesday's results; options imply about a 6% move.", "sentiment": "negative" },
+    { "ticker": "TSLA", "note": "Reports Wednesday after the close; margins, cash flow and capital spending are the focus, with options implying about a 6% move.", "sentiment": "neutral" },
+    { "ticker": "CRWV", "note": "Recovered a 5% premarket fall to close up about 1.65% at $62.13; HSBC repeated its bearish view on the company's debt.", "sentiment": "neutral" },
+    { "ticker": "NFLX", "note": "Down 4% to 6% after hours despite an EPS beat, after cutting its 2026 advertising forecast to $2.7 billion from $3 billion.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq Composite",
+      "thesis": "The Nasdaq was flat while the Dow rose 1%. SpaceX and Super Micro reported AI demand above estimates after the close; whether that lifts the index shows if buyers will again pay for AI growth or keep favouring reported profits.",
+      "entry": "Monday's close of 26,430.89 versus Tuesday's 26,424.82.",
+      "invalidation": "After-hours gains fading with the Nasdaq below 26,424.82 while the Dow rises would show the rotation toward reported profits still holds.",
+      "horizon": "Wednesday's session, before Meta reports"
+    },
+    {
+      "asset": "META / CRWV",
+      "thesis": "Meta has fallen five straight sessions into results. Spending that rises faster than revenue would revive the AI funding worry that CoreWeave carries; spending matched by revenue growth would ease it.",
+      "entry": "CoreWeave against Monday's 52-week low; Meta's options-implied move of about 6%.",
+      "invalidation": "A CoreWeave close back below Monday's 52-week low after Meta reports would show the funding worry has returned.",
+      "horizon": "Wednesday night through Thursday"
+    },
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "The 10-year eased about 3 basis points to near 5.12% on a US-Iran deal report that was then denied, so the drop rests on a headline rather than data.",
+      "entry": "10-year between 5.0% and 5.331%; Brent's intraday high near $112.",
+      "invalidation": "A Brent settle above about $112 would leave yields where they were going into the Fed meeting; a confirmed deal is the clearest route below 5.0%.",
+      "horizon": "Through the October 27-28 Fed meeting"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-20-night.mdx"
+}
