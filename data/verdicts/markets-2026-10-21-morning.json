@@ -1,0 +1,79 @@
+{
+  "routine": "markets",
+  "date": "2026-10-21",
+  "window": "morning",
+  "generated_at": "2026-10-21T12:08:29Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "AI stocks lead futures higher after SpaceX and Super Micro results, with Meta and Tesla due tonight",
+    "label": "Pre-market: Nasdaq 100 futures +0.5% to +0.75%, S&P 500 futures about +0.3% to +0.4%, Dow futures flat to +0.2%; Super Micro +12%, SpaceX +8% to +10%, Netflix about -7%; 10Y 5.12% (unchanged); Brent $110.46 (+1.5%); Kospi +3.3%; BTC ~$83,530.",
+    "rationale_short": "What happened: Nasdaq 100 futures rose 0.5% to 0.75% before the open, against about 0.3% for the S&P 500 and a flat Dow, after Super Micro raised its quarterly revenue range to $18.5-19.5 billion and SpaceX reported revenue of $14.58 billion, up 161%. Super Micro was up about 12% and SpaceX 8% to 10% premarket; Nvidia, AMD and Intel rose 1.5% to 2.3%, and Seoul's Kospi gained 3.3%, recovering most of Tuesday's 3.73% fall. Rates gave no help: the 10-year was unchanged at 5.12%, Brent rose 1.5% back to about $110 as US-Iran talks stalled, and France's 10-year touched 5% for the first time since 2002.\n\nWhat it means: for two sessions buyers paid for reported profits over AI promises. Reported AI revenue is the same kind of evidence, and it is moving the AI names that led last week's eight-day chip decline. Last night's report asked whether the after-hours results would lift the Nasdaq above Monday's 26,430.89; futures say yes, but only the close confirms it, and the gain rests on company results rather than cheaper money.\n\nWhat would change the picture: a Nasdaq close below Tuesday's 26,424.82 with the Dow outperforming would show the preference for reported profits still in charge. Meta's spending and Tesla's results come tonight; spending that outgrows revenue, confirmed by a CoreWeave close below Monday's 52-week low, would revive the AI funding worry. A Brent settle above about $112 would raise the odds of a 10-year test of 5.331% before the October 27-28 Fed meeting.",
+    "lede_short": "Super Micro's raised revenue range and SpaceX's revenue beat put Nasdaq futures up about 0.5% to 0.75% before the open, led by the AI names that fell hardest last week, while Seoul's chip stocks recovered most of Tuesday's drop. The gain rests on company results: the 10-year is still at 5.12% and oil is back near $110. A Nasdaq close above 26,430.89 would confirm it, and Meta's spending plans tonight test whether it lasts.",
+    "supporting_data": [
+      {
+        "label": "Reuters had Nasdaq futures leading as SpaceX rose about 9.4% and Super Micro 12.7% premarket, with Nvidia up about 1.5% and AMD about 1.8% — the buying is in the AI names that led last week's selling, not spread across the market.",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N4670PS:0-nasdaq-futures-lead-gains-as-spacex-super-micro-results-lift-ai-trade/"
+      },
+      {
+        "label": "Brent December futures rose 1.5% to $110.46 from Tuesday's $108.79 close as US-Iran talks stalled — Tuesday's drop on a deal report has been reversed, so oil is not easing inflation or yields.",
+        "url": "https://www.aa.com.tr/en/energy/oil/oil-rises-as-iran-tensions-us-crude-stock-draw-fuel-supply-concerns/60411"
+      },
+      {
+        "label": "Super Micro raised its quarterly revenue range to $18.5-19.5 billion from $14.5-15.5 billion, citing AI platform demand — a 27% lift at the midpoint shows server customers ordering more despite the funding worry.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000025/smcifirstquarterfy2027busi.htm"
+      },
+      {
+        "label": "France's 10-year yield touched 5.002%, its first time above 5% since 2002, before easing to about 4.98% — long-dated government debt is under pressure outside the US too, ahead of Friday's Moody's decision on France.",
+        "url": "https://www.cnbc.com/2026/10/21/france-protests-bonds-debt.html"
+      },
+      {
+        "label": "The Kospi rose 3.3% to 5,735.66 and the Nikkei 0.9% to 64,621.24 while Hong Kong and Shanghai fell — the memory-chip market that led Tuesday's decline recovered most of it in one session.",
+        "url": "https://www.usnews.com/news/business/articles/2026-10-21/asian-shares-are-mixed-with-kospi-up-3-after-us-stocks-rally-on-strong-earnings"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7712.57, "change_pct": 0.28, "as_of": "2026-10-20T20:00:00Z" },
+    "nasdaq": { "level": 26424.82, "change_pct": -0.02, "as_of": "2026-10-20T20:00:00Z" },
+    "vix": { "level": 17.31, "change_pct": -6.13, "as_of": "2026-10-20T20:15:00Z" },
+    "ust10y": { "level": 5.12, "change_bps": 0, "as_of": "2026-10-21T11:30:00Z" },
+    "dxy": { "level": 101.8, "change_pct": 0.0, "as_of": "2026-10-21T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.12, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7712.57, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 83533.05, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "SPCX", "note": "Up about 8% to 10% premarket after revenue of $14.58 billion, up 161%; Musk said SpaceX and Tesla have formed special committees to study a merger.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Up about 1.5% premarket as Super Micro's raised revenue range lifted AI hardware names after the chip index's eight-session decline.", "sentiment": "positive" },
+    { "ticker": "AMD", "note": "Up about 1.8% premarket alongside the wider AI hardware rebound.", "sentiment": "positive" },
+    { "ticker": "META", "note": "Reports after the close after five straight declines; options imply about a 6% move, and spending against revenue growth is the focus.", "sentiment": "neutral" },
+    { "ticker": "TSLA", "note": "Reports after the close; consensus about $0.43 a share on $27.79 billion revenue, with the SpaceX merger committees likely to draw questions.", "sentiment": "neutral" },
+    { "ticker": "NFLX", "note": "Down almost 7% premarket after in-line revenue and a cut to its 2026 advertising forecast to $2.7 billion.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq Composite",
+      "thesis": "Futures are up 0.5% to 0.75% on SpaceX and Super Micro results after two sessions in which buyers favoured reported profits over AI names. The close shows whether that preference has turned.",
+      "entry": "Monday's close of 26,430.89 versus Tuesday's 26,424.82; the chip index near its summer low around 11,000.",
+      "invalidation": "A Nasdaq close below 26,424.82 with the Dow outperforming would show the move toward reported profits still holds.",
+      "horizon": "Wednesday's session"
+    },
+    {
+      "asset": "META / TSLA / CRWV",
+      "thesis": "Meta reports after five straight declines with about a 6% implied move; Tesla reports with consensus about $0.43 a share and new merger committees. Spending that outgrows revenue would revive the AI funding worry.",
+      "entry": "Meta's options-implied move of about 6%; CoreWeave against Monday's 52-week low.",
+      "invalidation": "A CoreWeave close below Monday's 52-week low after the results would show the funding worry has returned.",
+      "horizon": "Wednesday night through Thursday"
+    },
+    {
+      "asset": "US 10Y / Brent / France 10Y",
+      "thesis": "The 10-year is unchanged at 5.12% while Brent has recovered to about $110 and France's 10-year touched 5%, so pressure on long-dated debt is not easing.",
+      "entry": "10-year between 5.0% and 5.331%; Brent's Tuesday intraday high near $112.",
+      "invalidation": "A Brent settle above about $112 would raise the odds of a test of 5.331%; a confirmed US-Iran deal is the clearest route below 5.0%.",
+      "horizon": "Through Friday's Moody's decision on France and the October 27-28 Fed meeting"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-21-morning.mdx"
+}
