@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-22",
+  "window": "morning",
+  "generated_at": "2026-10-22T12:16:05Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Doubts about AI spending return as Lam, Tesla and Meta pull tech futures sharply lower",
+    "label": "Pre-market: Nasdaq 100 futures about -1.7% to -1.9%, S&P 500 futures about -1.0%, Dow futures -356 points; Lam ~-9%, Tesla ~-3% to -5%, Meta ~-2%; Kospi -3.52%, Nikkei -2.65%; Brent ~$112.27 (+3.2%); 10Y ~5.05-5.07% (-8 to -9 bp); BTC $81,817.",
+    "rationale_short": "What happened: Nasdaq 100 futures fell 1.7% to 1.9% and S&P 500 futures about 1%, enough to erase Wednesday's 1.05% Nasdaq gain. Lam Research fell about 9% premarket after a December-quarter guide that only matched estimates, Tesla fell 3% to 5% after cutting its 2026 spending floor to $20 billion from $25 billion, and Meta slipped about 2% after creating a non-voting share class it can use to fund its AI buildout. The Kospi fell 3.52% and the Nikkei 2.65% as Samsung and SK hynix dropped 4% to 5.5%. Brent rose 3.2% to $112.27 on unconfirmed Iranian claims that seven tankers were hit, yet the 10-year fell about 9 basis points.\n\nWhat it means: Wednesday's gain paid for AI revenue already reported; overnight the question moved to how the building is funded, and the market marked down both a spending cut and a new funding tool. Super Micro's 27% revenue raise still stands, so the evidence cuts both ways. Treasuries are acting as a refuge from stocks, so oil is not setting yields today.\n\nWhat would change the picture: a Nasdaq close below Tuesday's 26,424.82 and an S&P 500 close below 7,666.45 would show Wednesday's rebound failed. Holding both would show reported revenue still outweighs the funding worry. A 10-year break below 5.0% would show stock fears outweighing oil.",
+    "lede_short": "Tech futures fell nearly 2% as Lam Research's in-line guide, Tesla's $5 billion spending cut and Meta's new funding share class put the cost of AI building back at the center, and Seoul's chipmakers erased Wednesday's rally overnight. Oil rose 3% on unconfirmed tanker attacks, yet Treasury yields fell, a sign buyers are seeking safety. A Nasdaq close below 26,424.82 would mean Wednesday's rebound failed.",
+    "supporting_data": [
+      {
+        "label": "Reuters had Nasdaq futures down more than 1%, with Tesla off 5.3%, Meta 1.9%, Intel 5.1%, and AMD, Qualcomm, Marvell, Broadcom and Micron between 2.9% and 5.3% — the selling is spread across chip makers, not confined to the three companies that reported.",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N4680M6:0-nasdaq-futures-drop-over-1-as-ai-worries-resurface-oil-climbs/"
+      },
+      {
+        "label": "Tesla now expects 2026 capital spending in excess of $20 billion, down from in excess of $25 billion in its second-quarter filing — a $5 billion cut by one of the largest AI and robotics spenders was read as a slower pace, not as discipline.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066775/tsla-20260930.htm"
+      },
+      {
+        "label": "Meta's board approved a listed, non-voting Class C stock effective January 19, 2027 — with free cash flow negative last quarter, the market took a new funding tool as a sign that spending will outrun cash.",
+        "url": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/"
+      },
+      {
+        "label": "The Kospi fell 3.52% to 5,533.77 and the Nikkei 2.65% to 62,907.84, with SK hynix down 5.49% and Samsung 4.03% — Seoul closed below Tuesday's level, erasing Wednesday's 3.29% recovery in one session.",
+        "url": "https://www.tradingkey.com/analysis/stocks/more/262231586-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey"
+      },
+      {
+        "label": "Lam Research guided the December quarter to $8.6 billion, plus or minus $400 million, after record revenue of $8.22 billion — an in-line guide was not enough for chip equipment, the part of the trade priced furthest ahead, and the stock fell about 9% premarket.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm"
+      },
+      {
+        "label": "Brent rose 3.2% to $112.27 after Iran's Revolutionary Guard said seven tankers were hit overnight, a claim no shipper or government had confirmed — yet the 10-year yield fell about 9 basis points, so bond buyers are seeking safety rather than pricing oil-driven inflation.",
+        "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-ceasefire-talks-ongoing/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7757.22, "change_pct": 0.58, "as_of": "2026-10-21T20:00:00Z" },
+    "nasdaq": { "level": 26702.86, "change_pct": 1.05, "as_of": "2026-10-21T20:00:00Z" },
+    "vix":    { "level": 16.68, "change_pct": -3.6, "as_of": "2026-10-21T20:15:00Z" },
+    "ust10y": { "level": 5.05, "change_bps": -9, "as_of": "2026-10-22T11:00:00Z" },
+    "dxy":    { "level": 101.99, "change_pct": 0.2, "as_of": "2026-10-19T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.05, "trigger_above": 5.331, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7757.22, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81816.94, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "TSLA", "note": "Down about 3% to 5% premarket after cutting its 2026 capital spending floor to $20 billion from $25 billion.", "sentiment": "negative" },
+    { "ticker": "META", "note": "Down about 2% premarket despite a revenue beat, after approving a non-voting Class C share class effective January 19, 2027.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "Down about 2.2% to 2.4% premarket with the chip group as AI spending doubts returned.", "sentiment": "negative" },
+    { "ticker": "AMD", "note": "Among chip makers down 2.9% to 5.3% premarket per Reuters.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "At $81,817 on Crypto.com, down 2.1% over 24 hours and about 1.9% above the $80,320 October 8 low.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq Composite / S&P 500",
+      "thesis": "Futures imply a Nasdaq open near Tuesday's close and an S&P 500 about 0.2% above 7,666.45 as the AI funding question returns after one day of buying reported revenue.",
+      "entry": "Nasdaq 26,424.82 (Tuesday close); S&P 500 7,666.45.",
+      "invalidation": "Closes below both would show Wednesday's rebound failed; holding both would show reported revenue still outweighs the funding worry.",
+      "horizon": "Thursday's session"
+    },
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "The 10-year fell about 9 basis points while Brent rose 3.2% to $112.27, so Treasuries are acting as a refuge from stocks rather than tracking oil.",
+      "entry": "10-year at 5.0% below and 5.331% above; Brent at $112.27.",
+      "invalidation": "Confirmed tanker attacks with Brent holding above $112 could return pressure on yields; a break below 5.0% would show stock fears outweighing oil.",
+      "horizon": "Through jobless claims today and the October 27-28 Fed meeting"
+    },
+    {
+      "asset": "BTC",
+      "thesis": "Bitcoin fell 2.1% with tech stocks, trading as a risk asset rather than a hedge, and sits about 1.9% above its October 8 low.",
+      "entry": "$80,320 below; $84,912 24-hour high above.",
+      "invalidation": "A break below $80,320 would take it under the October 8 low; a recovery above $84,912 would show the selling was limited to equities.",
+      "horizon": "This week, likely following the Nasdaq"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-22-morning.mdx"
+}
