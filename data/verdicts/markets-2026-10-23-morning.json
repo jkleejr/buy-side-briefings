@@ -1,0 +1,79 @@
+{
+  "routine": "markets",
+  "date": "2026-10-23",
+  "window": "morning",
+  "generated_at": "2026-10-23T12:09:28Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil reaches a five-month high on attacks in Saudi Arabia as stock futures steady after the tech sell-off",
+    "label": "Pre-market: S&P 500 futures about -0.2%, Dow futures -308 points (-0.58%), Nasdaq 100 futures flat; Brent ~$114.49; 10Y 4.978% (+2 bp); gold Dec futures $4,030.40 (-0.7%); Kospi +0.30%; BTC $81,654.",
+    "rationale_short": "What happened: Brent rose to about $114.49, its highest since May and on course for a 3.3% weekly gain, after Houthi militants claimed strikes on Saudi energy sites, an attack on Dammam's airport killed two, and Aramco ordered its Dhahran headquarters fully evacuated. WTI near $101 is set for a weekly fall, so the premium sits in seaborne Gulf crude. The 10-year rose about 2 basis points to 4.978% after Thursday's roughly 17 basis point fall. Stock futures are little changed after the Nasdaq's worst day since June: Dow futures are down about 0.6% as telecoms slide on a SpaceX wireless report, and Nasdaq 100 futures are flat. Seoul's Kospi recovered from a 2.36% loss at the open to close up 0.30%.\n\nWhat it means: Thursday's bond rally came from money leaving tech, not softer data, and with futures stable that demand eased while oil kept rising. Both conditions of last night's test still hold, the 10-year under 5.0% with Brent above $113, but the gap narrowed. FedWatch odds of an October hike are near 7%, so the Fed meeting next week is about December guidance.\n\nWhat would change the picture: a 10-year back above 5.11% with Brent above $113 would show oil setting yields again before the Fed. A Nasdaq close back above 26,424.82 would show Thursday was a one-day reaction; a second lower close led by chips would show the funding and supply questions are setting prices.",
+    "lede_short": "Brent rose to about $114, its highest since May, after attacks on Saudi Arabia and an evacuation of Aramco's headquarters, while stock futures held steady after the Nasdaq's worst day since June. The 10-year yield edged up to 4.98%, so Thursday's rush into bonds is holding under 5% but no longer extending. A 10-year back above 5.11% with oil this high would show oil, not the tech sell-off, setting yields before the Fed meets.",
+    "supporting_data": [
+      {
+        "label": "Brent traded near $114.49, its highest since May and on course for a 3.3% weekly gain, while WTI near $101 is set for a 1.1% weekly fall — the risk premium sits in seaborne Gulf crude, not in US supply.",
+        "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+      },
+      {
+        "label": "Aramco ordered all remaining essential staff out of its Dhahran headquarters, and an attack on Dammam's King Fahd airport killed two — Saudi supply, not only the Strait of Hormuz, is now inside the oil risk premium.",
+        "url": "https://gulfnews.com/world/gulf/saudi/saudi-aramco-orders-full-evacuation-of-dhahran-headquarters-amid-houthi-attacks-1.500719958"
+      },
+      {
+        "label": "The 10-year Treasury yield rose about 2 basis points to 4.978% with the 2-year near 4.66% — Thursday's rally into bonds is holding below 5.0% but stopped extending once oil kept rising.",
+        "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html"
+      },
+      {
+        "label": "FedWatch odds of an October hike fell to 7.2% from 27.7% a week earlier — the market has moved the next increase to December, so next week's meeting is about guidance rather than a move.",
+        "url": "https://247wallst.com/investing/2026/10/23/the-10-year-yield-just-fell-below-5-as-investors-fled-ai-stocks/"
+      },
+      {
+        "label": "Dow futures fell 308 points while Nasdaq 100 futures were flat, and AT&T, Verizon and T-Mobile slid on a report that SpaceX wants 80,000 US cell sites — the tech selling paused overnight and the weakness moved to telecoms.",
+        "url": "https://money.usnews.com/investing/news/articles/2026-10-23/wall-street-futures-dip-after-ai-rout-telecoms-slide"
+      },
+      {
+        "label": "Seoul's Kospi opened 2.36% lower and closed up 0.30% at 5,550.30, with SK hynix up about 4.4% — Asian chip buyers did not extend Thursday's US sell-off.",
+        "url": "https://en.sedaily.com/finance/2026/10/23/kospi-closes-up-030-percent-at-555030"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500":  { "level": 7663.43, "change_pct": -1.21, "as_of": "2026-10-22T20:00:00Z" },
+    "nasdaq": { "level": 26008.86, "change_pct": -2.6, "as_of": "2026-10-22T20:00:00Z" },
+    "vix":    { "level": 19.03, "change_pct": 14.1, "as_of": "2026-10-22T20:15:00Z" },
+    "ust10y": { "level": 4.978, "change_bps": 2, "as_of": "2026-10-23T11:30:00Z" },
+    "dxy":    { "level": 101.8, "change_pct": 0.0, "as_of": "2026-10-21T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.978, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,425", "value": 26008.86, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81653.79, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "At $81,654 on Crypto.com, down 0.2% over 24 hours and about 1.7% above the $80,320 October 8 low.", "sentiment": "neutral" },
+    { "ticker": "ETH", "note": "At $2,400, little changed over 24 hours after Thursday's 3.9% fall.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "The 10-year rose about 2 basis points to 4.978% as Brent reached about $114.49, so Thursday's flight into bonds is holding under 5.0% but no longer extending while oil rises on attacks in Saudi Arabia.",
+      "entry": "10-year at 5.0% and 5.11%; Brent at $113.",
+      "invalidation": "A 10-year above 5.11% with Brent above $113 would show oil-driven inflation setting yields again; holding under 5.0% would show bonds still weighing slower growth more heavily.",
+      "horizon": "Flash PMIs and Michigan sentiment today, Moody's on France tonight, the Fed decision on October 28"
+    },
+    {
+      "asset": "Nasdaq Composite",
+      "thesis": "Flat futures leave the Nasdaq near Thursday's 26,008.86 close, 1.6% below the line that defined Wednesday's rebound, while the Kospi recovered from a 2.36% opening loss.",
+      "entry": "26,008.86 below; 26,424.82 above.",
+      "invalidation": "A second lower close led by chips would show the AI funding and supply questions are setting prices; a close above 26,424.82 would show Thursday was a one-day reaction.",
+      "horizon": "Through Microsoft and Alphabet results on October 28"
+    },
+    {
+      "asset": "BTC",
+      "thesis": "Bitcoin is about 1.7% above its October 8 low and has traded with the Nasdaq this week rather than with gold or oil.",
+      "entry": "$80,320 below; $84,385 above.",
+      "invalidation": "A break below $80,320 would take it under the October low; a move above $84,385 would show the selling stayed in equities.",
+      "horizon": "This week"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-23-morning.mdx"
+}
