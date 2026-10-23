@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-22",
+  "window": "night",
+  "generated_at": "2026-10-23T00:11:32Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Nasdaq has its worst day since June on chip and Meta selling as the 10-year falls below 5%",
+    "label": "Close: Nasdaq 26,008.86 (-2.60%), S&P 500 7,663.43 (-1.21%), Dow 52,867.98 (+0.02%), Russell 2000 2,784.03 (+0.11%); VIX 19.03; 10Y ~4.96% (about -17 bp); Brent $113.17 (+4%); chip index more than -6%, Lam Research -11.76%, Meta -6.98%, AMD -8.10%.",
+    "rationale_short": "What happened: the Nasdaq fell 2.60% to 26,008.86, its worst day since June, and the S&P 500 fell 1.21% to 7,663.43, its worst since July. The Dow ended up 0.02% and the Russell 2000 0.11%, and most US stocks rose. The chip index fell more than 6% after Lam Research said supply constraints would push some shipments from the December quarter into March; Lam fell 11.76%, AMD 8.1% and Nvidia 4.4%. Meta fell nearly 7% after lifting its 2026 expense range to $175-179 billion. The 10-year yield fell about 17 basis points to 4.96%, its largest one-day drop since March 2023, while Brent rose 4% to $113.17.\n\nWhat it means: this morning's report said closes below 26,424.82 on the Nasdaq and 7,666.45 on the S&P 500 would show Wednesday's rebound failed, and both happened, the S&P 500 by only 3 points. The selling was concentrated in AI holdings, and the money went to Treasuries and the rest of the market, not to gold, which fell about 2.4%. Bonds weighed slower growth above oil-driven inflation for the day.\n\nWhat would change the picture: a Nasdaq close back above 26,424.82 by the October 28 Fed decision would show this was a one-day reaction to two results. A 10-year back above Wednesday's 5.11% would show the bond buying was a one-day refuge. Microsoft's and Alphabet's results on October 28 are the next test of AI spending.",
+    "lede_short": "The Nasdaq fell 2.6%, its worst day since June, as Lam Research's supply warning sent chips down more than 6% and Meta's higher expense range cost it nearly 7%, while most other US stocks rose. Bond buyers took the other side, pulling the 10-year about 17 basis points to 4.96% even as Brent rose 4%. A Nasdaq close back above 26,424.82 would mean today's break did not hold.",
+    "supporting_data": [
+      {
+        "label": "The Nasdaq fell 2.6% and the S&P 500 1.2% for its worst day since July, while most US stocks rose — the loss came from the largest AI holdings, not from a broad retreat from stocks.",
+        "url": "https://www.bnnbloomberg.ca/markets/2026/10/22/ai-stocks-drag-markets-down-worldwide-as-oil-prices-climb-to-their-highest-since-may/"
+      },
+      {
+        "label": "The chip index fell more than 6% after Lam Research cited supply chain constraints, with Lam down 11.76%, AMD 8.1% and Nvidia 4.4% — the market read a supplier shortage as a cap on how fast AI chip sales can grow next quarter.",
+        "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html"
+      },
+      {
+        "label": "Meta lifted its 2026 total expense range to $175-179 billion after a quarter with free cash flow of about -$2.1 billion — Wednesday's after-hours gain reversed into a near-7% fall once costs were weighed against the revenue beat.",
+        "url": "https://www.gurufocus.com/news/9136945/meta-stocks-fall-663-as-ai-budget-keeps-swelling"
+      },
+      {
+        "label": "The 10-year yield fell about 17 basis points to 4.96%, its largest one-day drop since March 2023, as the VIX rose 14% to 19.03 — Treasuries acted as the refuge from the tech selling and broke the 5.0% line.",
+        "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-22"
+      },
+      {
+        "label": "Brent rose 4% to $113.17, its highest close since May 4, on reports the US plans to resume strikes on Iran — oil and yields moved in opposite directions, so bonds weighed slower growth above oil-driven inflation.",
+        "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html"
+      },
+      {
+        "label": "Jobless claims fell to 194,000 against 200,000 expected — the bond rally did not come from labour data but from investors leaving tech.",
+        "url": "https://www.cnbc.com/amp/2026/10/22/treasurys-bonds-ai-yields.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7663.43, "change_pct": -1.21, "as_of": "2026-10-22T20:00:00Z" },
+    "nasdaq": { "level": 26008.86, "change_pct": -2.60, "as_of": "2026-10-22T20:00:00Z" },
+    "vix": { "level": 19.03, "change_pct": 14.1, "as_of": "2026-10-22T20:15:00Z" },
+    "ust10y": { "level": 4.96, "change_bps": -17, "as_of": "2026-10-22T20:00:00Z" },
+    "dxy": { "level": 101.8, "change_pct": 0.0, "as_of": "2026-10-21T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.96, "trigger_above": 5.11, "unit": "%" },
+    { "name": "SPX vs 7,666", "value": 7663.43, "trigger_below": 7666.45, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81273.45, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "META", "note": "Fell 6.98% to $648.85 after lifting its 2026 total expense range to $175-179 billion; free cash flow about -$2.1 billion and no 2027 spending figure.", "sentiment": "negative" },
+    { "ticker": "LRCX", "note": "Fell 11.76% to $230.15 after saying supply constraints push some shipments from the December quarter into March; December guide $8.6 billion.", "sentiment": "negative" },
+    { "ticker": "AMD", "note": "Fell 8.10% to $507.93 with the chip index, which lost more than 6%.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "Fell 4.40% with the chip selling after Lam's supply warning.", "sentiment": "negative" },
+    { "ticker": "TSLA", "note": "Fell 3.08% to $374.58 after cutting its 2026 spending floor to $20 billion.", "sentiment": "negative" },
+    { "ticker": "PLTR", "note": "Fell 2.74% to $196.19, less than the Nasdaq.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq Composite / S&P 500",
+      "thesis": "Both indexes closed below the levels that defined Wednesday's rebound, the S&P 500 by only 3 points, on selling concentrated in chips and Meta while most stocks rose.",
+      "entry": "Nasdaq 26,424.82 and S&P 500 7,666.45 above; Thursday's 26,008.86 and 7,663.43 closes.",
+      "invalidation": "Closes back above both by the October 28 Fed decision would show a one-day reaction to two results; a second lower close led by chips would show the funding and supply questions setting prices.",
+      "horizon": "Through Microsoft's and Alphabet's results on October 28"
+    },
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "The 10-year fell about 17 basis points to 4.96% while Brent rose 4% to $113.17, the opposite of this month's pattern, as bonds weighed slower growth over oil-driven inflation.",
+      "entry": "10-year at 5.0% and Wednesday's 5.11%; Brent at $111.",
+      "invalidation": "A 10-year back above 5.11% would show the bond buying was a one-day refuge; resumed US strikes on Iran would test the pattern.",
+      "horizon": "Through the October 27-28 Fed meeting"
+    },
+    {
+      "asset": "BTC",
+      "thesis": "Bitcoin fell 3.6% to $81,273 with tech stocks, and its 24-hour low of $80,914 is less than 1% above $80,320.",
+      "entry": "$80,320 below; $84,385, the 24-hour high, above.",
+      "invalidation": "A break below $80,320 would take it under its October 8 low; a recovery above $84,385 would show the selling was limited to equities.",
+      "horizon": "This week, alongside the Nasdaq"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-22-night.mdx"
+}
