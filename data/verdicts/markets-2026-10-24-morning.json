@@ -1,0 +1,140 @@
+{
+  "routine": "markets",
+  "date": "2026-10-24",
+  "window": "morning",
+  "generated_at": "2026-10-24T12:48:41Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Oil climbs on attacks in Saudi Arabia as a Fed decision and Big Tech results crowd one week",
+    "label": "Saturday: S&P 500 closed Fri at 7,623.68 (-0.52%), Nasdaq 25,955.34 (-0.21%), Dow 52,215.16 (-1.23%); 10Y 4.999%; Brent $116.72 (+6.2% on the week); BTC ~$80,813 Sat (-1.2% in 24h).",
+    "conviction": "low",
+    "horizon": "Monday October 26 through Thursday October 29, when the Fed decides and Microsoft, Alphabet and Amazon report",
+    "rationale_short": "What happened: no stock, bond or oil market has traded since Friday. The Dow fell 1.23% to 52,215.16 while the Nasdaq slipped 0.21%, and Brent settled at $116.72, its highest close since April 29 and up 6.2% on the week, after Houthi strikes on Saudi Arabia. The 10-year ended at 4.999%, about 5 basis points higher on the day but about 11 lower on the week. On Saturday the Saudi-led coalition said it shot down a ballistic missile and a drone aimed at the kingdom, and Iran's foreign minister said Tehran backs a political process between Riyadh and the Houthis. Bitcoin, the only market trading, was near $80,813, down 1.2% in 24 hours.\n\nWhat it means: the weekend added no sign that attacks on Saudi Arabia are easing, so oil's Sunday evening open starts from a risk premium that has grown for three weeks. Iran's offer is words, not a ceasefire, and Saudi officials have said they have not asked for Iranian mediation. Next week puts the two forces that moved markets this month into the same three days: the Fed decision and September PCE inflation on Wednesday, then Microsoft and Alphabet that evening and Amazon on Thursday. FedWatch puts an October hike under 10% and a December move near 80%, so the Fed's words on inflation matter more than its decision.\n\nWhat would change the picture: a 10-year above 5.11% with Brent above $113 would show oil-driven inflation setting rates. A 10-year back below 4.95% would show worry about AI spending and growth back in charge. Hyperscaler spending plans that hold up would argue against the slowdown chip prices have priced in since mid-October; cuts would support it. Conviction is low because no market has reopened and this run could check its sources only through search results.",
+    "lede_short": "Nothing but bitcoin has traded since Friday, when Brent closed at $116.72, its highest since April, and the Dow fell 1.2% while the 10-year yield rose back to just under 5.0%. The weekend brought more Houthi attacks on Saudi Arabia and only an Iranian offer of talks, so oil's risk has not eased. Next week the Fed, PCE inflation and Microsoft, Alphabet and Amazon results land within three days; a 10-year above 5.11% would show oil, not AI, setting rates.",
+    "supporting_data": [
+      {
+        "label": "Brent settled at $116.72 on Friday, its highest since April 29, after a 6.2% weekly gain — the oil risk has widened from Iran and Hormuz to Saudi Arabia's own energy sites, and the weekend did not reduce it.",
+        "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+      },
+      {
+        "label": "On Saturday the coalition said it shot down a ballistic missile and a drone aimed at Saudi Arabia, while Iran's foreign minister said Tehran backs a political process — attacks are continuing, and the only diplomatic move is an offer Riyadh has not accepted.",
+        "url": "https://www.pbs.org/newshour/world/saudi-diplomat-says-iran-is-encouraging-houthi-escalation-of-attacks-on-the-kingdom"
+      },
+      {
+        "label": "The 10-year ended Friday at 4.999%, up about 5 basis points on the day but down about 11 on the week — oil pushed yields up on Friday without undoing the week's move into bonds.",
+        "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html"
+      },
+      {
+        "label": "The Dow fell 1.23% to 52,215.16 on Friday while the Nasdaq slipped 0.21% — the selling moved from AI stocks to the wider market as oil rose, rather than deepening in tech.",
+        "url": "https://kiplinger.com/investing/stocks/dow-drops-652-points-as-oil-treasury-yields-rise-stock-market-today"
+      },
+      {
+        "label": "FedWatch puts an October hike below 10% and a December move near 80%, with Microsoft and Alphabet reporting hours after Wednesday's decision and Amazon on Thursday — the Fed's words on inflation and the hyperscalers' spending plans will arrive almost together.",
+        "url": "https://www.theglobeandmail.com/investing/article-wall-streets-week-ahead-earnings-flood-fed-meeting-pose-pivotal-tests/"
+      },
+      {
+        "label": "Bitcoin was near $80,813 Saturday morning, down 1.2% in 24 hours with a low of $80,445 — it is drifting lower with the Nasdaq, not reacting to oil.",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": {
+      "level": 7623.68,
+      "change_pct": -0.52,
+      "as_of": "2026-10-23T20:00:00Z"
+    },
+    "nasdaq": {
+      "level": 25955.34,
+      "change_pct": -0.21,
+      "as_of": "2026-10-23T20:00:00Z"
+    },
+    "vix": {
+      "level": 18.94,
+      "change_pct": -0.47,
+      "as_of": "2026-10-23T20:15:00Z"
+    },
+    "ust10y": {
+      "level": 4.999,
+      "change_bps": 5,
+      "as_of": "2026-10-23T20:00:00Z"
+    },
+    "dxy": {
+      "level": 101.8,
+      "change_pct": 0.0,
+      "as_of": "2026-10-21T11:30:00Z"
+    }
+  },
+  "regime_risk": [
+    {
+      "name": "10Y Yield",
+      "value": 4.999,
+      "trigger_above": 5.11,
+      "unit": "%"
+    },
+    {
+      "name": "Nasdaq vs 26,424",
+      "value": 25955.34,
+      "trigger_below": 26424.82,
+      "unit": ""
+    },
+    {
+      "name": "BTC vs 80,320",
+      "value": 80813.28,
+      "trigger_below": 80320.0,
+      "unit": "$"
+    }
+  ],
+  "watchlist_mentions": [
+    {
+      "ticker": "BTC",
+      "note": "Near $80,813 on Crypto.com Saturday, down 1.2% in 24 hours; its $80,445 low is about $125 above the $80,320 level recent reports watched. Crypto.com's daily candles show an intraday low of $79,780 on October 15, so that level has already been briefly broken once.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "ETH",
+      "note": "Near $2,371, down 1.3% in 24 hours.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "MSFT",
+      "note": "Reports Wednesday after the Fed decision; its capital spending plans are the first big-buyer read on AI demand since Meta's.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "GOOGL",
+      "note": "Reports Wednesday after the close alongside Microsoft.",
+      "sentiment": "neutral"
+    },
+    {
+      "ticker": "AMZN",
+      "note": "Reports Thursday.",
+      "sentiment": "neutral"
+    }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "Brent closed the week at its highest since April 29 and weekend attacks on Saudi Arabia continued, while the 10-year sits just under 5.0% after a weekly fall of about 11 basis points.",
+      "entry": "10-year at 4.95% below and 5.11% above; Brent at $113 and $116.72.",
+      "invalidation": "A 10-year above 5.11% with Brent above $113 would show oil-driven inflation setting rates; a return below 4.95% would show growth worry back in charge.",
+      "horizon": "Through the October 28 Fed decision"
+    },
+    {
+      "asset": "Brent",
+      "thesis": "The weekend brought more attacks on Saudi Arabia and an Iranian offer of talks that Riyadh has not taken up, so Sunday's open starts from a premium that has grown three weeks running.",
+      "entry": "$116.72 settlement above; $113 below.",
+      "invalidation": "An open well below $113 would show the market treating the Saudi attacks as contained; a confirmed hit on Saudi export facilities would add to the premium.",
+      "horizon": "Next 1-2 weeks"
+    },
+    {
+      "asset": "Nasdaq Composite",
+      "thesis": "Two lower closes, but Friday's small loss against the Dow's 1.23% shows the AI selling paused ahead of Microsoft, Alphabet and Amazon results.",
+      "entry": "25,955.34 Friday close below; 26,424.82 above.",
+      "invalidation": "A close above 26,424.82 would show the October 22 break did not hold; a close below 25,955.34 after the hyperscaler results would show Meta's cost problem reads across.",
+      "horizon": "Through October 29"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-24-morning.mdx"
+}
