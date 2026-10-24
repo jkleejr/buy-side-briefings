@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-10-23",
+  "window": "night",
+  "generated_at": "2026-10-24T00:12:21Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil reaches a six-month high and the selling moves from tech stocks to the Dow",
+    "label": "Close: Dow 52,215.16 (-1.23%), S&P 500 7,623.68 (-0.52%), Nasdaq 25,955.34 (-0.21%); 10Y 4.999% (about +5 bp), 30Y 5.312%; Brent $116.72 (+3.1%), WTI ~$103.27; flash composite PMI 57.6, output prices 59.8; AT&T -7.96%.",
+    "rationale_short": "What happened: the Dow fell 1.23% to 52,215.16 while the Nasdaq slipped only 0.21% and the S&P 500 0.52%, with consumer staples, utilities and healthcare lower alongside most sectors. Brent settled up 3.1% at $116.72, its highest close since April 29, after Houthi strikes on Saudi energy sites, and gained 6.2% on the week. The October flash PMI showed the composite easing to 57.6 but output prices rising to 59.8, the fastest since August 2022. The 10-year rose about 5 basis points to 4.999% and the 30-year to 5.312%. American Express said it will cut about 5% of its workforce to prepare for AI, and AT&T fell 7.96% on SpaceX's reported push for 80,000 cell sites.\n\nWhat it means: Thursday's selling sat in AI stocks; Friday's moved to the rest of the market as oil and prices rose together. This morning's test was mixed: Brent stayed well above $113 and the 10-year rose with it, but stopped just below 5.0% and well short of Wednesday's 5.11%. The 10-year still ended the week about 11 basis points lower, so Friday reversed only part of the move into bonds.\n\nWhat would change the picture: a 10-year above 5.11% with Brent above $113 before Wednesday's Fed decision would show oil-driven inflation setting rates again; a return below 4.95% would show growth worry back in charge. Brent back below $113 would show the Saudi strikes priced as contained. Microsoft and Alphabet on Wednesday and Amazon on Thursday decide whether Meta's cost problem reads across, with the Nasdaq between 25,955.34 and 26,424.82.",
+    "lede_short": "The selling moved from tech to the rest of the market: the Dow fell 1.2% while the Nasdaq slipped 0.2%, as Brent rose 3.1% to $116.72, its highest close since April, and a business survey showed prices rising at the fastest pace since 2022. The 10-year climbed back to just under 5.0%. A move above 5.11% before Wednesday's Fed decision would show oil, not the AI selling, setting rates again.",
+    "supporting_data": [
+      {
+        "label": "Brent rose 3.1% to settle at $116.72, its highest since April 29, and 6.2% on the week after Houthi strikes on Saudi energy sites — the oil risk has widened from Iran to Saudi supply, with traders expecting renewed US strikes on Iran.",
+        "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+      },
+      {
+        "label": "The flash US composite PMI eased to 57.6 while output prices rose to 59.8, the highest since August 2022 — growth cooled slightly as firms passed on costs faster, the combination the Fed has the least room to look through.",
+        "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/07d16568e63346999890940d47639cd9"
+      },
+      {
+        "label": "The Dow fell 1.23% to 52,215.16 while the Nasdaq slipped 0.21%, with staples, utilities and healthcare lower too — the selling moved from AI stocks to the rest of the market rather than deepening in tech.",
+        "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
+      },
+      {
+        "label": "The 10-year rose about 5 basis points to 4.999% and the 30-year to 5.312% — bonds gave back a third of Thursday's rally once oil and prices rose together, but the 10-year stayed under 5.0%.",
+        "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html"
+      },
+      {
+        "label": "American Express will cut about 5% of its global workforce to prepare for AI, with a $336 million charge — a day after Barclays confirmed 5,000 cuts, AI cost-cutting is reaching large financial employers.",
+        "url": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html"
+      },
+      {
+        "label": "AT&T fell 7.96% to $20.93 after Bloomberg reported SpaceX is seeking access to about 80,000 US cell sites — the market is pricing a new wireless competitor before any lease is signed.",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/10/23/stock-market-today-oct-23-at-and-t-slides-on-spacex-cell-site-talks/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7623.68, "change_pct": -0.52, "as_of": "2026-10-23T20:00:00Z" },
+    "nasdaq": { "level": 25955.34, "change_pct": -0.21, "as_of": "2026-10-23T20:00:00Z" },
+    "vix": { "level": 18.94, "change_pct": -0.47, "as_of": "2026-10-23T20:15:00Z" },
+    "ust10y": { "level": 4.999, "change_bps": 5, "as_of": "2026-10-23T20:00:00Z" },
+    "dxy": { "level": 101.8, "change_pct": 0.0, "as_of": "2026-10-21T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.999, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 25955.34, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81044.2, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "T", "note": "Fell 7.96% to $20.93 on volume about 88% above average after the SpaceX cell-site report and a Bernstein downgrade.", "sentiment": "negative" },
+    { "ticker": "AXP", "note": "Fell more than 3% after saying it will cut about 5% of its global workforce to prepare for AI, with a $336 million charge.", "sentiment": "negative" },
+    { "ticker": "GM", "note": "Ended its worst week since November 2023, down 9.6%, as Brent rose 6.2%.", "sentiment": "negative" },
+    { "ticker": "BTC", "note": "Held at $81,044, its 24-hour low of $80,511 above the $80,320 October 8 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "The 10-year rose about 5 basis points to 4.999% as Brent settled at $116.72 and the flash PMI's output prices hit their highest since August 2022, reversing part of Thursday's 17 basis point fall.",
+      "entry": "10-year at 4.95% below and Wednesday's 5.11% above; Brent at $113 and $116.72.",
+      "invalidation": "A 10-year above 5.11% with Brent above $113 would show oil-driven inflation setting rates; a return below 4.95% would show growth worry back in charge.",
+      "horizon": "Through the October 28 Fed decision"
+    },
+    {
+      "asset": "Brent",
+      "thesis": "Brent is at its highest settlement since April 29 after a third weekly gain, with the risk premium widening from Iran to Saudi infrastructure.",
+      "entry": "$116.72 settlement above; $113 below.",
+      "invalidation": "A fall back below $113 would show the Saudi strikes priced as contained; Saudi confirmation of the Houthi-claimed Yanbu hit would add to the premium.",
+      "horizon": "Next 1-2 weeks"
+    },
+    {
+      "asset": "Nasdaq Composite",
+      "thesis": "Two lower closes, but Friday's 0.21% loss against the Dow's 1.23% shows the AI selling did not deepen ahead of Microsoft, Alphabet and Amazon results.",
+      "entry": "25,955.34 Friday close below; 26,424.82 above.",
+      "invalidation": "A close above 26,424.82 would show Thursday's break did not hold; a close below 25,955.34 on the hyperscaler results would show Meta's cost problem reads across.",
+      "horizon": "Through October 29"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-23-night.mdx"
+}
