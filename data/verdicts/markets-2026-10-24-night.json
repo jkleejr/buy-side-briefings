@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-10-24",
+  "window": "night",
+  "generated_at": "2026-10-25T00:47:30Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Bitcoin dips and recovers on a quiet Saturday before a week of Fed and Big Tech news",
+    "label": "Saturday night: S&P 500 closed Fri at 7,623.68 (-0.52%), Nasdaq 25,955.34 (-0.21%), Dow 52,215.16 (-1.23%); 10Y 4.999%; Brent $116.72 Fri settle (+6.2% on the week); BTC ~$80,867 (+0.25% in 24h, low $79,232).",
+    "conviction": "low",
+    "horizon": "Sunday evening's futures and oil open through Thursday October 29, when the Fed has decided and Microsoft, Alphabet and Amazon have reported",
+    "rationale_short": "What happened: no stock, bond or oil market traded on Saturday. The last closes are Friday's: the Dow fell 1.23% to 52,215.16, the S&P 500 0.52% to 7,623.68 and the Nasdaq 0.21% to 25,955.34. Brent settled at $116.72, its highest close since April 29 and up 6.2% on the week, and the 10-year ended at 4.999%, about 11 basis points lower on the week. On Saturday the Saudi-led coalition reported intercepting more Houthi missiles aimed at the kingdom, and Iran's foreign minister repeated an offer to mediate that neither side has accepted. Bitcoin, the only market open, fell as low as $79,232 during the day, below the $80,320 October 8 low, then recovered to about $80,867, up 0.25% over 24 hours.\n\nWhat it means: the weekend did not change the two forces behind this month's moves. Attacks on Saudi Arabia continued and the diplomacy is still an unanswered offer, so oil's Sunday evening open starts from a three-week risk premium with nothing yet to remove it. Bitcoin's drop below $80,320 lasted only hours and it ended the day slightly higher, so the break did not hold; one weekend dip on thin trading says little either way about risk appetite.\n\nWhat would change the picture: a 10-year above 5.11% with Brent above $113 would show oil-driven inflation setting rates into Wednesday's Fed decision. A 10-year back below 4.95% would show worry about growth and AI spending back in charge. Brent opening well below $113 would show the Saudi attacks treated as contained. Conviction is low: this run could check the weekend news only through search results, not by opening the articles, and reports disagree on the exact dates and targets of Saturday's interceptions.",
+    "lede_short": "Only bitcoin traded on Saturday: it fell to $79,232, briefly below its October 8 low, then recovered to about $80,867. Friday's closes still stand, with Brent at $116.72, its highest since April, and the 10-year just under 5.0%, and more Houthi missiles at Saudi Arabia gave oil no reason to ease. A 10-year above 5.11% before Wednesday's Fed decision would show oil, not AI, setting rates.",
+    "supporting_data": [
+      {
+        "label": "Bitcoin fell as low as $79,232 on Saturday, below the $80,320 October 8 low, then recovered to about $80,867, up 0.25% in 24 hours — the break lasted hours, not days, so it does not yet signal a new leg down.",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      },
+      {
+        "label": "Brent settled Friday at $116.72, its highest since April 29, after a 6.2% weekly gain — that is the price oil reopens from on Sunday evening, with the risk now covering Saudi energy sites as well as Iran.",
+        "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+      },
+      {
+        "label": "The Saudi-led coalition reported intercepting another Houthi ballistic missile aimed at Riyadh — the attacks on the kingdom have not paused, though reports differ on the exact timing and targets.",
+        "url": "https://english.aaj.tv/news/330477760/saudi-coalition-intercepts-houthi-ballistic-missile-aimed-at-riyadh"
+      },
+      {
+        "label": "Iran has offered to mediate between Riyadh and the Houthis since October 11 and neither side has answered — the only diplomatic track is an offer, not talks.",
+        "url": "https://houseofsaud.com/iran-mediation-offer-saudi-houthi-silence/"
+      },
+      {
+        "label": "The 10-year ended Friday at 4.999%, up about 5 basis points on the day but down about 11 on the week — oil pushed yields back toward 5.0% without undoing the week's move into bonds.",
+        "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html"
+      },
+      {
+        "label": "The Dow fell 1.23% to 52,215.16 on Friday while the Nasdaq slipped 0.21% — the selling had spread from AI stocks to the wider market as oil rose, and that is where the week starts.",
+        "url": "https://kiplinger.com/investing/stocks/dow-drops-652-points-as-oil-treasury-yields-rise-stock-market-today"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7623.68, "change_pct": -0.52, "as_of": "2026-10-23T20:00:00Z" },
+    "nasdaq": { "level": 25955.34, "change_pct": -0.21, "as_of": "2026-10-23T20:00:00Z" },
+    "vix": { "level": 18.94, "change_pct": -0.47, "as_of": "2026-10-23T20:15:00Z" },
+    "ust10y": { "level": 4.999, "change_bps": 5, "as_of": "2026-10-23T20:00:00Z" },
+    "dxy": { "level": 101.8, "change_pct": 0.0, "as_of": "2026-10-21T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.999, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 25955.34, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 80866.95, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "Near $80,867 on Crypto.com Saturday night, up 0.25% in 24 hours, after an intraday low of $79,232 that briefly broke the $80,320 October 8 low.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Reports Wednesday after the Fed decision; its capital spending plans are the first big-buyer read on AI demand since Meta's.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Reports Wednesday after the close alongside Microsoft.", "sentiment": "neutral" },
+    { "ticker": "AMZN", "note": "Reports Thursday.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "Brent closed the week at its highest since April 29 and weekend attacks on Saudi Arabia continued, while the 10-year sits just under 5.0% after a weekly fall of about 11 basis points.",
+      "entry": "10-year at 4.95% below and 5.11% above; Brent at $113 and $116.72.",
+      "invalidation": "A 10-year above 5.11% with Brent above $113 would show oil-driven inflation setting rates; a return below 4.95% would show growth worry back in charge.",
+      "horizon": "Through the October 28 Fed decision"
+    },
+    {
+      "asset": "Brent",
+      "thesis": "Sunday's open starts from a premium that has grown three weeks running, with more interceptions over Saudi Arabia on Saturday and no answer to Iran's mediation offer.",
+      "entry": "$116.72 settlement above; $113 below.",
+      "invalidation": "An open well below $113 would show the market treating the Saudi attacks as contained; a confirmed hit on Saudi export facilities would add to the premium.",
+      "horizon": "Next 1-2 weeks"
+    },
+    {
+      "asset": "Bitcoin",
+      "thesis": "Saturday's dip to $79,232 broke the $80,320 October 8 low for a few hours before bitcoin recovered above it.",
+      "entry": "$80,320 below; $81,100 Saturday high above.",
+      "invalidation": "A daily close below $80,320 would show the break holding; a move above $81,100 would show the dip absorbed.",
+      "horizon": "Through Monday's US open"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-24-night.mdx"
+}
