@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-10-25",
+  "window": "night",
+  "generated_at": "2026-10-26T00:47:36Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Oil eases and stock futures edge up as a week of Fed and Big Tech news begins",
+    "label": "Sunday night: Brent ~$115 (-1.1% from $116.72 Fri settle), WTI ~$102 (-1.2%); S&P 500 futures +0.4%, Nasdaq-100 futures +0.6%; S&P 500 last closed Fri at 7,623.68 (-0.52%); 10Y 4.999%; BTC ~$80,158 (-0.88% in 24h).",
+    "conviction": "low",
+    "horizon": "Monday's open through Thursday October 29, after the Fed decision and Microsoft, Alphabet and Amazon results",
+    "rationale_short": "What happened: there was no stock or bond session today. When oil reopened at 6pm ET, Brent fell about 1.1% to around $115 and US crude about 1.2% to roughly $102, from Friday's settlements; Brent's $116.72 Friday close was its highest since April 29. S&P 500 futures rose about 0.4% and Nasdaq-100 futures about 0.6%. Saudi Arabia and Aramco still had not confirmed damage from the Houthis' claimed weekend strikes on Yanbu, Rabigh and the East-West pipeline. Bitcoin was near $80,158, down 0.88% in 24 hours and just below its $80,320 October 8 low.\n\nWhat it means: the oil open was the first test of the weekend's claims against Saudi Arabia's main export port, and it came back mild. Brent dipped rather than jumped and stayed well above $113, which reads as a market waiting for proof of damage rather than paying more for the risk. The evidence still cuts both ways: a 1% dip leaves most of October's risk premium in the price, and attacks on the kingdom have not stopped. A 0.4% rise in stock futures is small next to Friday's losses and says little before Wednesday.\n\nWhat would change the picture: confirmed damage at Yanbu or on the pipeline would likely push Brent back above $116.72; Brent below $113 would show the attacks treated as contained. A 10-year above 5.11% with Brent above $113 before Wednesday's Fed decision would show oil-driven inflation setting rates; a 10-year below 4.95% would show growth and AI-spending worry back in charge. Conviction is low because no full session has traded, this run could check its sources only through search results, and sources differ slightly on the exact Sunday figures.",
+    "lede_short": "Oil reopened lower on Sunday evening, with Brent down about 1% to around $115, because Saudi Arabia has still not confirmed damage from the Houthis' claimed strikes on its main export port. Stock futures rose modestly, but most of October's oil premium remains and the attacks have not stopped. Confirmed damage would likely send Brent back above Friday's $116.72; a fall below $113 would show the risk treated as contained before Wednesday's Fed decision.",
+    "supporting_data": [
+      {
+        "label": "Brent fell about 1.1% to around $115 and US crude about 1.2% to roughly $102 at Sunday's open — oil eased rather than jumped after the weekend's claims, but stayed well above the $113 level that would show the risk treated as contained.",
+        "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Saudi Arabia and Aramco had still not confirmed damage from the Houthis' claimed strikes on Yanbu, Rabigh and the East-West pipeline, and the coalition reported only interceptions — that lack of confirmation is the most likely reason oil did not add to its premium.",
+        "url": "https://houseofsaud.com/houthis-target-yanbu-aramco-samref/"
+      },
+      {
+        "label": "S&P 500 futures rose about 0.4% and Nasdaq-100 futures about 0.6% on Sunday evening — a modest rebound attempt after Friday's 0.52% S&P loss, too small to say much before Wednesday's Fed decision and tech results.",
+        "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Fed funds futures put the chance of a hold on Wednesday at about 90% — the decision itself is largely expected, so what the Fed says about oil-driven inflation is what could move bonds.",
+        "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Microsoft and Alphabet report Wednesday after the close and Amazon on Thursday — their spending plans are the next test of the AI selling that pulled tech lower this month.",
+        "url": "https://www.babypips.com/analysis/fundies-cheat-sheet-2026-10-26-fed-big-tech-oil-saudi"
+      },
+      {
+        "label": "Bitcoin was near $80,158 on Sunday night, down 0.88% in 24 hours and just below its $80,320 October 8 low — it has crossed that level several times this weekend on thin trading, so this is not yet a clear break.",
+        "url": "https://crypto.com/exchange/trade/BTC_USDT"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7623.68, "change_pct": -0.52, "as_of": "2026-10-23T20:00:00Z" },
+    "nasdaq": { "level": 25955.34, "change_pct": -0.21, "as_of": "2026-10-23T20:00:00Z" },
+    "vix": { "level": 18.94, "change_pct": -0.47, "as_of": "2026-10-23T20:15:00Z" },
+    "ust10y": { "level": 4.999, "change_bps": 5, "as_of": "2026-10-23T20:00:00Z" },
+    "dxy": { "level": 101.8, "change_pct": 0.0, "as_of": "2026-10-21T11:30:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.999, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 25955.34, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 80158.09, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "Near $80,158 on Crypto.com Sunday night, down 0.88% in 24 hours; 24-hour range $79,835 to $81,029, just below the $80,320 October 8 low.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Reports Wednesday after the Fed decision; its capital spending plans are the first big-buyer read on AI demand since Meta's.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Reports Wednesday after the close alongside Microsoft.", "sentiment": "neutral" },
+    { "ticker": "AMZN", "note": "Reports Thursday.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent",
+      "thesis": "Brent reopened about 1% lower near $115 with no confirmed damage from the weekend's claimed strikes on Yanbu, leaving most of October's premium in the price.",
+      "entry": "$116.72 Friday settlement above; $113 below.",
+      "invalidation": "Confirmed damage at Yanbu or on the East-West pipeline would likely push Brent back above $116.72; a fall below $113 would show the attacks treated as contained.",
+      "horizon": "Next 1-2 weeks"
+    },
+    {
+      "asset": "US 10Y / Brent",
+      "thesis": "The 10-year sits just under 5.0% while Brent eased at Sunday's open, with the Fed deciding Wednesday and a hold priced at about 90%.",
+      "entry": "10-year at 4.95% below and 5.11% above; Brent at $113 and $116.72.",
+      "invalidation": "A 10-year above 5.11% with Brent above $113 would show oil-driven inflation setting rates; a return below 4.95% would show growth worry back in charge.",
+      "horizon": "Through the October 28 Fed decision"
+    },
+    {
+      "asset": "Bitcoin",
+      "thesis": "Bitcoin is just below the $80,320 October 8 low again after crossing it several times over the weekend.",
+      "entry": "$80,320 below; $81,029 weekend high above.",
+      "invalidation": "A daily close below $80,320 would show the break holding; a move above $81,029 would show the dip absorbed.",
+      "horizon": "Through Monday's US open"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-25-night.mdx"
+}
