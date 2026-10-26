@@ -1,0 +1,81 @@
+{
+  "routine": "markets",
+  "date": "2026-10-26",
+  "window": "morning",
+  "generated_at": "2026-10-26T12:07:26Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil falls on Iran diplomacy and stock futures edge up as a Fed week begins",
+    "label": "Pre-market: Brent ~$110-115 (from $116.72 Fri settle), WTI ~$101; S&P 500 futures +0.3%, Dow futures +0.4%; 10Y ~4.99%; EWZ ~-27% pre-market on Lula win; BTC $80,351.",
+    "rationale_short": "What happened: oil is giving back much of last week's gain after President Trump said there would be no US strike on Iran on Sunday and Qatari mediators travelled to Tehran. Brent has traded between roughly $110 and $115, down from Friday's $116.72 settlement, and WTI near $101. S&P 500 futures are up about 0.3% and Dow futures about 0.4%. Saudi Arabia has confirmed no damage from the claimed Houthi strikes on Yanbu. Separately, Brazil's stocks fell about 27% in US pre-market trading after Lula's surprise re-election.\n\nWhat it means: the oil drop comes from diplomacy, not restored supply; the Houthi attacks continued over the weekend and analysts describe the move as traders cutting positions. The 10-year near 4.99% has barely moved, which says bonds are waiting for Wednesday's Fed statement, where a hold is priced at about 90% and the open question is the roughly 79% chance of a December hike.\n\nWhat would change the picture: Brent back above $116.72 on a confirmed Saudi outage or a failed Qatari effort would undo the morning's relief; Brent holding below $113 into Wednesday leaves room for the 10-year to stay under 5%. A 10-year above 5.11% would show oil-driven inflation setting rates again.",
+    "lede_short": "Oil fell toward $110 after Trump ruled out an immediate strike on Iran and Qatari mediators went to Tehran, and stock futures rose about 0.3%. The drop comes from diplomacy rather than restored Saudi supply, and the 10-year near 4.99% shows bonds waiting for Wednesday's Fed statement. Brent back above Friday's $116.72 would undo the relief; holding below $113 leaves room for yields to stay under 5%.",
+    "supporting_data": [
+      {
+        "label": "Brent fell about 2% to around $114.50 in Asian trading and later reports put it below $110 — oil is giving back last week's gain on Iran diplomacy, though analysts describe the move as position-cutting rather than a better supply outlook.",
+        "url": "https://www.euronews.com/2026/10/26/oil-plunges-more-than-6-from-near-wartime-highs-as-diplomacy-over-iran-seemingly-gathers"
+      },
+      {
+        "label": "Trump said there would be no US strike on Iran on Sunday and asked whether to make a deal or finish them off, as Qatari mediators visited Tehran — both outcomes remain open, which is why oil eased without collapsing.",
+        "url": "https://www.pakistantoday.com.pk/2026/10/25/trump-rules-out-iran-strike-for-today-weighs-deal-against-further-military-action"
+      },
+      {
+        "label": "Fed funds futures put a hold on Wednesday at 90.6% with the range at 3.75%-4.00%, and a December hike at about 79% — the statement's guidance on further hikes is what can move bonds, not the decision itself.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Lula won a fourth term with 51.76% of the vote and the Brazil ETF fell about 27% in US pre-market trading — investors had positioned for a Bolsonaro win, and Bolsonaro says he will seek to annul the result.",
+        "url": "https://invezz.com/news/2026/10/26/brazil-stocks-brace-for-selloff-after-lulas-win-ewz-etf-falls-27-in-premarket/"
+      },
+      {
+        "label": "CoreWeave, Nebius and IREN fell 2%-4% pre-market after Elon Musk wrote that debt markets have almost shut off funding for companies without revenue outside AI data centers — a funding question added to an October sell-off of 30%-40% in those names, two days before Microsoft and Alphabet report.",
+        "url": "https://www.cnbc.com/2026/10/26/neocloud-stocks-today-coreweave-nebius-iren-elon-musk.html"
+      },
+      {
+        "label": "EQT agreed to buy Range Resources in an all-stock deal with a combined enterprise value above $50 billion, and Range rose about 9.5% pre-market — the deal creates the largest US natural gas producer.",
+        "url": "https://ir.rangeresources.com/news-releases/news-release-details/eqt-announces-strategic-acquisition-range-resources-creating"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7623.68, "change_pct": -0.52, "as_of": "2026-10-23T20:00:00Z" },
+    "nasdaq": { "level": 25955.34, "change_pct": -0.21, "as_of": "2026-10-23T20:00:00Z" },
+    "vix": { "level": 18.94, "change_pct": -0.47, "as_of": "2026-10-23T20:15:00Z" },
+    "ust10y": { "level": 4.99, "change_bps": -1, "as_of": "2026-10-26T11:05:00Z" },
+    "dxy": { "level": 101.83, "change_pct": -0.1, "as_of": "2026-10-26T11:05:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.99, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 25955.34, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 80351.43, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "BTC", "note": "$80,351 on Crypto.com at 12:06 UTC, down 0.2% in 24 hours, sitting on the $80,320 October 8 low.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Reports Wednesday after the close; its spending plans carry more weight after Musk's warning on neocloud funding.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Reports Wednesday after the close alongside Microsoft.", "sentiment": "neutral" },
+    { "ticker": "AMZN", "note": "Reports Thursday.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent",
+      "thesis": "Brent has fallen toward $110 on Iran diplomacy while Saudi supply risk is unchanged and the Houthi attacks continue.",
+      "entry": "$113 and the $110 area below; $116.72 Friday settlement above.",
+      "invalidation": "A confirmed outage at Yanbu or on the East-West pipeline, or a failed Qatari effort, would likely send Brent back above $116.72.",
+      "horizon": "Through the November 3 midterms"
+    },
+    {
+      "asset": "US 10Y",
+      "thesis": "The 10-year holds just under 5% while oil falls, waiting for the Fed's guidance on a December hike priced at about 79%.",
+      "entry": "5.11% above; 4.95% below.",
+      "invalidation": "A statement tying further hikes to oil would test 5.11%; pushback on December pricing would likely take the 10-year below 4.95%.",
+      "horizon": "Through the October 28 Fed decision"
+    },
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "Musk's warning adds a funding question to October's neocloud sell-off, putting more weight on Microsoft, Alphabet and Amazon spending plans.",
+      "entry": "Nasdaq 26,424.82 above; Friday's 25,955 close as the base.",
+      "invalidation": "A close above 26,424.82 would show October's tech selling ending; capital-spending cuts would test it from below.",
+      "horizon": "Through Amazon's results on Thursday"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-26-morning.mdx"
+}
