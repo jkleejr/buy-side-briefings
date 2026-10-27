@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-10-26",
+  "window": "night",
+  "generated_at": "2026-10-27T00:12:17Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip stocks lead a rebound after Anthropic files for its IPO, two days before big tech reports",
+    "label": "Close: S&P 500 +0.70% to 7,676.77, Nasdaq +0.82% to 26,169.38, Dow +0.28%; SOXX +2.85%; VIX 18.49; 10Y 4.986%; EWZ -19.8%; Brent ~$111-116; BTC $80,241.",
+    "rationale_short": "What happened: Anthropic publicly filed for a Nasdaq IPO under the ticker ANT, and the AI trade had its first good day in a week. The S&P 500 rose 0.70% and the Nasdaq 0.82%, while the semiconductor fund gained 2.85%, led by Nvidia, AMD, Micron and Broadcom. The 10-year held under 5% at 4.986% and the VIX fell to 18.49. Separately, Brazil's Ibovespa fell 13.88%, its worst day since March 2020, after Lula's re-election.\n\nWhat it means: the filing shows $16.3 billion of first-half revenue and puts a public price on a frontier AI lab, which opens equity markets as a funding source for the biggest buyers of compute a day after Elon Musk warned that debt funding for AI data-center companies has nearly shut. The same filing shows an $80.7 billion first-half loss, mostly non-cash, and about a quarter of revenue from two customers, and the Fed still has a December hike priced at about 79%.\n\nWhat would change the picture: a Nasdaq close above 26,424.82 after Microsoft and Alphabet report on Wednesday would show October's tech selling ending; a close back under Friday's 25,955 would show today as a one-day bounce. A 10-year above 5.11% after Wednesday's Fed decision would put rates back in charge of tech.",
+    "lede_short": "Anthropic's IPO filing lifted chip stocks nearly 3% and the Nasdaq 0.82%, the AI trade's first good day in a week. The filing shows revenue growing fast enough to fund large compute purchases, but also an $80.7 billion first-half loss, and the Nasdaq is still below last week's 26,424.82. Microsoft and Alphabet on Wednesday, after the Fed, decide whether that level is cleared or today was a bounce.",
+    "supporting_data": [
+      {
+        "label": "Anthropic filed its S-1 to list on the Nasdaq as ANT, showing $16.3 billion of first-half revenue against an $80.7 billion mostly non-cash loss — the first public price for a frontier AI lab, with about 25% of revenue from two customers.",
+        "url": "https://www.anthropic.com/news/s1-sec"
+      },
+      {
+        "label": "Nvidia rose 2.4%, AMD 2.8%, Micron 3% and Broadcom 2.3% as the semiconductor fund gained nearly 3% — the compute suppliers rose about four times as much as the S&P 500's 0.70%, so the filing was read as demand for chips.",
+        "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Fed funds futures put a hold on Wednesday at about 90% and a December hike at about 79%, with the 10-year closing at 4.986% — the rate backdrop that drove October's tech selling is unchanged going into the decision.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Brazil's Ibovespa fell 13.88% and the Brazil ETF 19.8% after Lula won 51.79% of the runoff — the worst day since March 2020, after markets had priced his win at about 20%.",
+        "url": "https://www.riotimesonline.com/brazil-stocks-close-down-13-9-percent-lula-win-2026/"
+      },
+      {
+        "label": "Brent eased on Iran diplomacy but CNBC put its settlement at $115.81, down only 0.8% — the morning's drop toward $110 largely reversed, leaving Friday's $116.72 high within reach.",
+        "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html"
+      },
+      {
+        "label": "Tesla rose 5.21% to its highest since July after Barclays upgraded it to overweight with a $450 target — the stock is still down about 13.7% for the year.",
+        "url": "https://www.gurufocus.com/news/9143012/tesla-tsla-shares-rise-as-barclays-boosts-price-target-to-450"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7676.77, "change_pct": 0.7, "as_of": "2026-10-26T20:00:00Z" },
+    "nasdaq": { "level": 26169.38, "change_pct": 0.82, "as_of": "2026-10-26T20:00:00Z" },
+    "vix": { "level": 18.49, "change_pct": -4.9, "as_of": "2026-10-26T20:15:00Z" },
+    "ust10y": { "level": 4.986, "change_bps": -1, "as_of": "2026-10-26T21:00:00Z" },
+    "dxy": { "level": 101.63, "change_pct": -0.1, "as_of": "2026-10-26T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.986, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 26169.38, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 80240.72, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Up 2.4% as chip suppliers led the rebound after Anthropic's IPO filing.", "sentiment": "positive" },
+    { "ticker": "AMD", "note": "Up 2.8% with the semiconductor fund's 2.85% gain.", "sentiment": "positive" },
+    { "ticker": "AVGO", "note": "Up 2.3% on the same compute-demand read of the Anthropic filing.", "sentiment": "positive" },
+    { "ticker": "TSLA", "note": "Up 5.21% to its highest since July after a Barclays upgrade to overweight and a $450 target.", "sentiment": "positive" },
+    { "ticker": "GOOGL", "note": "Down about 1.1% as Anthropic, which it competes with and holds a stake in, filed to list; reports Wednesday after the close.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Up about 1.5%; reports Wednesday after the Fed decision.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "$80,241 at 00:09 UTC, trading on both sides of the $80,320 October 8 low over 24 hours and not joining the tech rebound.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "Anthropic's filing lifted chips and the Nasdaq, recovering a little under half the gap to last week's 26,424.82, with Microsoft, Alphabet and Amazon spending plans due this week.",
+      "entry": "26,424.82 above; Friday's 25,955.34 close below.",
+      "invalidation": "A close above 26,424.82 would show October's tech selling ending; a capex cut or a close under 25,955 would mark today as a bounce.",
+      "horizon": "Through Amazon's results on Thursday"
+    },
+    {
+      "asset": "US 10Y",
+      "thesis": "The 10-year holds under 5% into a Fed decision where a hold is priced and the December hike odds of about 79% are the open question.",
+      "entry": "5.11% above; 4.95% below.",
+      "invalidation": "A statement tying further hikes to oil would test 5.11%; pushback on December would likely take the 10-year below 4.95%.",
+      "horizon": "Through the October 28 Fed decision"
+    },
+    {
+      "asset": "Brent",
+      "thesis": "Iran diplomacy eased oil intraday, but the reported settlement near $115.81 leaves Friday's six-month high close while Houthi attacks on Saudi Arabia continue.",
+      "entry": "$116.72 Friday settlement above; the $110 area below.",
+      "invalidation": "A close above $116.72 would put oil back in charge of rates; a confirmed Iran framework would likely test $110.",
+      "horizon": "Through the November 3 midterms"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-26-night.mdx"
+}
