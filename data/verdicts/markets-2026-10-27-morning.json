@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-27",
+  "window": "morning",
+  "generated_at": "2026-10-27T12:16:21Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Oil climbs back to $116 after a Houthi attack claim on Saudi Arabia, as the Fed meeting opens",
+    "label": "Pre-market: Brent ~$116.1-116.5 (Fri high $116.72), WTI ~$102.45; S&P 500 futures +0.1% to +0.3%; 10Y 4.982%; DXY ~102.0; gold ~$4,004; Kospi +3.09%; BTC $79,782.",
+    "rationale_short": "What happened: Brent fell about 1% overnight on continued Iran diplomacy, then reversed above $116 after the Houthis said a ballistic missile set Saudi Arabia's Ras Tanura refinery on fire. Saudi Arabia says it intercepted three missiles and has confirmed no damage. The 10-year is flat at 4.982%, the dollar index is near a two-week high around 102, and stock futures are up about 0.1%-0.3%, while South Korea's Kospi rose 3.09% on chip buying. Celestica is up about 17% pre-market after guiding 2027 revenue to $40 billion.\n\nWhat it means: oil is within about 0.5% of Friday's $116.72 high, but the move has so far shown up in the dollar and gold rather than in Treasury yields, and the rise prices risk rather than lost barrels. December hike odds edged up to about 82% from about 79%, a small move in the direction oil would push, ahead of Wednesday's decision where a hold is priced.\n\nWhat would change the picture: a Brent settlement above $116.72 with the 10-year through 5% would mean oil is setting rates again before the Fed; a 10-year above 5.11% is the level that drove tech lower earlier in October. Brent back under $115 would leave Monday's tech rebound intact.",
+    "lede_short": "Oil climbed back above $116 after the Houthis claimed a strike on Saudi Arabia's Ras Tanura refinery, within about 0.5% of Friday's high, though Saudi Arabia reports no damage. Bonds have not followed: the 10-year is flat at 4.982% and stock futures are slightly higher on chip buying. A Brent settlement above $116.72 with the 10-year through 5% would put oil back in charge of rates before Wednesday's Fed decision.",
+    "supporting_data": [
+      {
+        "label": "Brent rose about 0.3% to $116.12 and WTI to $102.45 after both had fallen about 1% earlier in the session — oil is about 13% higher in October, with Strait of Hormuz flows at roughly 60% of normal.",
+        "url": "https://hedgeweek.com/news/oil-holds-above-116-as-middle-east-tensions-sustain-market-volatility"
+      },
+      {
+        "label": "The Houthis said a ballistic missile set Saudi Arabia's Ras Tanura refinery on fire, while Saudi Arabia said it intercepted three missiles — with no damage confirmed, oil's rise prices risk rather than lost supply.",
+        "url": "https://www.usnews.com/news/world/articles/2026-10-27/yemens-houthis-say-they-launched-an-attack-on-saudi-ras-tanura-oil-refinery"
+      },
+      {
+        "label": "The 10-year slipped less than 1 bp to 4.982% as the Fed's two-day meeting opened, with the 30-year at 5.297% — the bond market is not yet treating $116 oil as a new inflation shock.",
+        "url": "https://www.cnbc.com/2026/10/27/treasury-yields-federal-reserve-monetary-policy-meeting.html"
+      },
+      {
+        "label": "Fed funds futures price about an 11% chance of a hike on Wednesday and about 82% for December — up from about 79% on Monday, a small move in the direction oil would push.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Celestica's third-quarter revenue rose 83% to $5.83 billion, above its own guidance, and it guided 2027 revenue to $40 billion — the shares are up about 17% pre-market on evidence that AI hardware orders are still rising.",
+        "url": "https://www.gurufocus.com/news/9144024/celestica-cls-reports-strong-q3-results-raises-2026-and-2027-outlook"
+      },
+      {
+        "label": "South Korea's Kospi rose 3.09% and the Nikkei 1.73% while the FTSE 100 fell about 0.8% — chip buying is outweighing oil in Asia, while energy-importing Europe is taking the hit.",
+        "url": "https://fortune.com/2026/10/27/tech-bulls-barely-winning-fight-against-oil-bears-meta"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7676.77, "change_pct": 0.7, "as_of": "2026-10-26T20:00:00Z" },
+    "nasdaq": { "level": 26169.38, "change_pct": 0.82, "as_of": "2026-10-26T20:00:00Z" },
+    "vix": { "level": 18.49, "change_pct": -4.9, "as_of": "2026-10-26T20:15:00Z" },
+    "ust10y": { "level": 4.982, "change_bps": 0, "as_of": "2026-10-27T11:30:00Z" },
+    "dxy": { "level": 102.0, "change_pct": 0.4, "as_of": "2026-10-27T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.982, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 25,955", "value": 26169.38, "trigger_below": 25955.34, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 79782.49, "trigger_below": 80320.0, "unit": "$" },
+    { "name": "Gold vs 3,975", "value": 4004.0, "trigger_below": 3975.23, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "NVDA", "note": "Asian chip stocks rallied overnight, with the Kospi up 3.09%, extending Monday's compute-supplier rebound.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Reports Wednesday after the Fed decision; its spending plans are the test of Celestica's $40 billion 2027 guide.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Reports Wednesday after the Fed decision.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "$79,782 at 12:14 UTC, below its $80,320 October 8 low and not joining the tech rebound.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Brent / US 10Y",
+      "thesis": "Brent is back above $116 on a Houthi attack claim against Ras Tanura, about 60 cents under Friday's high, while the 10-year holds at 4.982% into the Fed decision.",
+      "entry": "Brent $116.72 above, $115 below; 10-year 5% and 5.11% above.",
+      "invalidation": "A Brent settlement above $116.72 with the 10-year through 5% would show oil setting rates again; Saudi confirmation of no damage or new Tehran talks would likely take Brent under $115.",
+      "horizon": "Through the October 28 Fed decision"
+    },
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "Celestica's $40 billion 2027 guide shows AI hardware orders still rising, while CoreWeave's record 15.76% bond yield shows smaller borrowers paying more to fund the same build-out.",
+      "entry": "26,424.82 above; Friday's 25,955.34 close below.",
+      "invalidation": "A close above 26,424.82 after Microsoft and Alphabet report would show October's tech selling ending; a close under 25,955.34 would mark Monday as a one-day bounce.",
+      "horizon": "Through Amazon's results on Thursday"
+    },
+    {
+      "asset": "Bitcoin / Gold",
+      "thesis": "Bitcoin sits just under its $80,320 October 8 low and gold near $4,004 is close to its $3,975.23 low, both with the dollar at a two-week high.",
+      "entry": "BTC $80,320; gold $3,975.23.",
+      "invalidation": "A daily bitcoin close under $80,320 would turn weeks of crossing that level into a break; a hawkish Fed statement would test both levels on the same day.",
+      "horizon": "Through the October 28 Fed decision"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-27-morning.mdx"
+}
