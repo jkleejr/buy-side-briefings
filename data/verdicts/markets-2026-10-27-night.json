@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-10-27",
+  "window": "night",
+  "generated_at": "2026-10-28T00:13:20Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Chip stocks rise a third day as suppliers help fund their AI customers, before the Fed",
+    "label": "Close: S&P 500 +0.60% to 7,722.60, Nasdaq +1.18% to 26,477.81, Dow +0.03%; SOX +3.60%; VIX ~17.5; 10Y ~4.99%; Brent $113.88; BTC $80,676.",
+    "rationale_short": "What happened: the Nasdaq rose 1.18% to 26,477.81, closing above the 26,424.82 level the last two reports were watching, and the semiconductor index gained 3.60% for a third straight day. Broadcom arranged $63 billion of debt for a vehicle that leases its chips to Anthropic, and Nvidia and AMD put $4 billion into Meta's share sale. Brent fell 1.7% to $113.88 and the 10-year held near 4.99%.\n\nWhat it means: the chip rally is now being carried partly by the chipmakers financing their own customers, which eases Monday's worry about AI funding but moves part of the risk onto the sellers. Participation was narrow, with 239 new Nasdaq lows against 62 new highs on below-average volume, and Meta closed at $620.19, under its $625 offering price. The Fed still has a December hike priced at better than 80%.\n\nWhat would change the picture: a Nasdaq close back under 26,424.82 after Microsoft and Alphabet report on Wednesday would return the index to its range, and under Monday's 26,169.38 would erase this week's gain. A 10-year above 5.11% after Wednesday's Fed decision would put rates back in charge of tech.",
+    "lede_short": "Chip stocks rose a third day and the Nasdaq closed at 26,477.81, above the 26,424.82 level that marked October's tech selling, after Broadcom, Nvidia and AMD helped finance their own AI customers. The gain was narrow, with more new lows than highs and Meta below its $625 offering price. Microsoft and Alphabet on Wednesday, after the Fed, decide whether the level holds.",
+    "supporting_data": [
+      {
+        "label": "Broadcom and four lenders lined up $63 billion for a vehicle that buys Broadcom chips and leases them to Anthropic — Broadcom backstops the senior debt, so the seller now carries part of the risk of its own sale.",
+        "url": "https://www.thestar.com.my/tech/tech-news/2026/10/27/wall-street-banks-blackstone-line-up-63-billion-to-finance-broadcom-chips-for-anthropic"
+      },
+      {
+        "label": "Nvidia committed $3 billion and AMD $1 billion to Meta's roughly $97.5 billion equity raise, priced at $625 a share — two suppliers are helping fund the purchase of their own hardware, and Meta closed below that price at $620.19.",
+        "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+      },
+      {
+        "label": "The semiconductor index rose 3.60% and the Nasdaq 1.18% to 26,477.81, but the Nasdaq had 239 new lows against 62 new highs on below-average volume — the index cleared 26,424.82 on a narrow group of large stocks.",
+        "url": "https://cappnotes.substack.com/p/closing-look-tuesday-october-27-2026"
+      },
+      {
+        "label": "Fed funds futures price about a 10% chance of a hike on Wednesday and better than 80% for December — the rate backdrop behind October's tech selling has not eased going into the decision.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Brent settled down 1.7% at $113.88 and WTI under $100 at $99.90 on renewed Middle East diplomacy — oil moved away from Friday's $116.72, which kept the 10-year near 4.99%.",
+        "url": "https://www.cnbc.com/2026/10/27/oil-today-iran-us-crude-wti-brent-trump.html"
+      },
+      {
+        "label": "Consumer confidence rose 7.5 points to 91.7, its highest since June, as gasoline eased — with durable goods orders up 1.8% against 0.6% expected, the data gives the Fed no reason to drop a December hike.",
+        "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-increased-in-october-302920731.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7722.6, "change_pct": 0.6, "as_of": "2026-10-27T20:00:00Z" },
+    "nasdaq": { "level": 26477.81, "change_pct": 1.18, "as_of": "2026-10-27T20:00:00Z" },
+    "vix": { "level": 17.52, "change_pct": -4.73, "as_of": "2026-10-27T20:15:00Z" },
+    "ust10y": { "level": 4.99, "change_bps": 0, "as_of": "2026-10-27T21:00:00Z" },
+    "dxy": { "level": 101.63, "change_pct": -0.04, "as_of": "2026-10-26T21:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.99, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 26477.81, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 80676.04, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AVGO", "note": "Up about 4% after arranging $63 billion of financing so Anthropic can lease its chips, with Broadcom backstopping the senior debt.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Up about 0.9%; committed $3 billion to Meta's equity offering as part of a wider infrastructure deal.", "sentiment": "neutral" },
+    { "ticker": "AMD", "note": "Committed $1 billion to Meta's offering; Anthropic's filing shows more than $20 billion of expected AMD compute purchases alongside up to $5 billion of AMD equity commitments.", "sentiment": "neutral" },
+    { "ticker": "META", "note": "Down 1.64% to $620.19, below the $625 price of its roughly $97.5 billion equity raise.", "sentiment": "negative" },
+    { "ticker": "MSFT", "note": "Reports Wednesday after the Fed decision; spending plans test whether the Nasdaq holds above 26,424.82.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Reports Wednesday after the close alongside Microsoft.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "Back above the $80,320 October 8 low at about $80,676 in the early evening, up 0.8%.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "The Nasdaq closed above 26,424.82 a day before Microsoft and Alphabet report, on a rally led by chips and with more new lows than highs.",
+      "entry": "26,424.82 and Monday's 26,169.38 below.",
+      "invalidation": "A close back under 26,424.82 after results would return the index to its range; under 26,169.38 would erase this week's gain.",
+      "horizon": "Through Amazon's results on Thursday"
+    },
+    {
+      "asset": "US 10Y",
+      "thesis": "The 10-year holds near 4.99% into a Fed decision where a hold is priced and a December hike is priced at better than 80%, after strong confidence and durable goods data.",
+      "entry": "5.11% above; 4.95% below.",
+      "invalidation": "A statement keeping December open would test 5.11%; pushback on December would likely take the 10-year below 4.95%.",
+      "horizon": "Through the October 28 Fed decision and October 29 PCE"
+    },
+    {
+      "asset": "Supplier-backed AI funding (Meta, Broadcom)",
+      "thesis": "Chipmakers are financing their own customers' purchases through lease backstops and equity stakes; Meta closed below its $625 offering price.",
+      "entry": "Meta's $625 offering price.",
+      "invalidation": "Meta holding under $625 and the planned Broadcom-deal bonds pricing wide would show the market charging more for this funding; a move back above $625 would show the raise absorbed.",
+      "horizon": "Through the November 2 Apple and Palantir results"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-27-night.mdx"
+}
