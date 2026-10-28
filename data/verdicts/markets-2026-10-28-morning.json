@@ -1,0 +1,83 @@
+{
+  "routine": "markets",
+  "date": "2026-10-28",
+  "window": "morning",
+  "generated_at": "2026-10-28T12:08:08Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "SK Hynix's record quarter lifts chip stocks again before the Fed and Microsoft, Alphabet results",
+    "label": "Pre-market: Nasdaq-100 futures +0.41%, S&P 500 futures +0.1%, Dow futures -0.17%; 10Y 5.013%; Brent $114.87; DXY 102.42; BTC ~$80,850.",
+    "rationale_short": "What happened: SK Hynix reported a record 83.3 trillion won of third-quarter operating profit against a consensus near 77 trillion and said memory demand should exceed supply through 2030. Nasdaq-100 futures rose 0.41% and Micron about 4% before the open, and the Kospi closed up 6.8%. The 10-year rose back above 5% to 5.013% and Brent gained 0.87% to $114.87 on Houthi attacks and US threats toward Iran.\n\nWhat it means: Tuesday's chip rally rested mostly on suppliers financing their customers; SK Hynix supplies the demand evidence that was missing. Rates have not eased with it, though. A December hike is still priced at 76.5% going into today's Fed decision, and NXP fell 8.5% on a guide that only matched forecasts, so chip results still need to beat.\n\nWhat would change the picture: a Nasdaq close back under 26,424.82 after Microsoft and Alphabet report tonight would return the index to its range, and under 26,169.38 would erase this week's gain. A 10-year above 5.11% after Chair Warsh's press conference would put rates back in charge of tech.",
+    "lede_short": "SK Hynix's record profit and its call that memory stays short through 2030 have Nasdaq futures up 0.41% before the open, giving Tuesday's financing-led chip rally a demand number. Rates have not followed: the 10-year is back above 5% and a December hike is still 76.5% priced into today's Fed decision. Microsoft and Alphabet tonight decide whether the Nasdaq holds above 26,424.82.",
+    "supporting_data": [
+      {
+        "label": "SK Hynix's third-quarter operating profit rose 632% to a record 83.3 trillion won and its shares closed about 10.9% higher — the largest memory supplier to Nvidia is reporting demand, not financing, behind the chip rally.",
+        "url": "https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html"
+      },
+      {
+        "label": "Nasdaq-100 futures rose 0.41% and Micron about 4% before the open while Dow futures fell 0.17% — the buying is again concentrated in memory and chips rather than spread across the market.",
+        "url": "https://www.investing.com/news/economy-news/nasdaq-futures-rise-as-sk-hynix-boosts-chips-before-fed-decision-earnings-4978026"
+      },
+      {
+        "label": "Fed funds futures price a 90.6% chance of a hold today and 76.5% for a December hike — the decision matters only for what Chair Warsh says about December.",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+      },
+      {
+        "label": "Brent rose 0.87% to $114.87 and WTI 1.59% to $101.49 after Houthi attacks on Saudi Arabia and US threats to renew strikes on Iran — oil retraced most of Tuesday's drop and the 10-year moved back above 5% with it.",
+        "url": "https://thenationalnews.com/business/energy/2026/10/28/oil-prices-up-due-to-houthi-strikes-and-us-threat-to-renew-iran-war"
+      },
+      {
+        "label": "Microsoft has guided Azure to 44%–45% growth and Alphabet's capex guide is $195–205 billion, with both reporting tonight — their spending plans test whether SK Hynix's demand outlook holds at the biggest buyers.",
+        "url": "https://www.tradingview.com/news/tradingview:a009e0a42094b:0-microsoft-alphabet-set-to-report-q3-earnings-who-s-spending-more-on-ai-buildout/"
+      },
+      {
+        "label": "NXP guided fourth-quarter revenue to a $3.85 billion midpoint, level with the $3.84 billion consensus, and fell about 8.5% before the bell — after three days of chip gains, results that only match forecasts are being sold.",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001413447/000141344726000057/nxp3q26exhibit991.htm"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7722.6, "change_pct": 0.6, "as_of": "2026-10-27T20:00:00Z" },
+    "nasdaq": { "level": 26477.81, "change_pct": 1.18, "as_of": "2026-10-27T20:00:00Z" },
+    "vix": { "level": 17.52, "change_pct": -4.73, "as_of": "2026-10-27T20:15:00Z" },
+    "ust10y": { "level": 5.013, "change_bps": 2.5, "as_of": "2026-10-28T11:00:00Z" },
+    "dxy": { "level": 102.42, "change_pct": 0.1, "as_of": "2026-10-28T11:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.013, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 26477.81, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 80850.0, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "MU", "note": "Up about 4% before the open after SK Hynix's record quarter and its call that memory demand exceeds supply through 2030.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Up about 0.8% before the open; SK Hynix, a main memory supplier, said HBM4 is in full mass production.", "sentiment": "neutral" },
+    { "ticker": "AMD", "note": "Up about 1.5% before the open with the chip group.", "sentiment": "neutral" },
+    { "ticker": "MSFT", "note": "Reports tonight; Azure guided to 44%–45% constant-currency growth, and the first fiscal 2027 capex guide is due.", "sentiment": "neutral" },
+    { "ticker": "GOOGL", "note": "Reports tonight; capex guide of $195–205 billion after Google Cloud grew 82% last quarter.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "About $80,850, up 1.5% over 24 hours and above the $80,320 October 8 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "The Nasdaq sits above 26,424.82 on a chip-led rally that now has SK Hynix's demand numbers behind it, with Microsoft and Alphabet reporting tonight.",
+      "entry": "26,424.82 and Monday's 26,169.38 below.",
+      "invalidation": "A close back under 26,424.82 after results would return the index to its range; under 26,169.38 would erase this week's gain.",
+      "horizon": "Through Amazon's results on Thursday"
+    },
+    {
+      "asset": "US 10Y",
+      "thesis": "The 10-year is back above 5% at 5.013% into a Fed decision where a hold is priced and a December hike is 76.5% priced.",
+      "entry": "5.11% above; 4.95% below.",
+      "invalidation": "Clear support for a December hike would test 5.11%; pushback on December would likely take the 10-year below 4.95%.",
+      "horizon": "Through today's Fed decision and Thursday's September PCE"
+    },
+    {
+      "asset": "Brent",
+      "thesis": "Brent is back to $114.87 on Houthi attacks and US threats toward Iran, about 1.6% under Friday's $116.72 high, ahead of the November 3 midterms.",
+      "entry": "$116.72 above; $113.88 below.",
+      "invalidation": "A settlement above $116.72 with the 10-year above 5% would make oil the driver of rates into PCE; a move under $113.88 would undo the overnight rise.",
+      "horizon": "Through the November 3 midterms"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-28-morning.mdx"
+}
