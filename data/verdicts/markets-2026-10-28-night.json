@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-28",
+  "window": "night",
+  "generated_at": "2026-10-29T00:11:43Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Alphabet falls after hours on cash burn while Microsoft rises, after a split Fed holds rates",
+    "label": "Close: S&P 500 +0.28% to 7,743.98, Nasdaq about +0.27% to ~26,550, Dow about +0.19%; SOX +1.75%; VIX 16.91; 10Y ~5.02%; Brent $115.32; BTC $81,261. After hours: Alphabet -8% to -10%, Microsoft +2.5% to +4%.",
+    "rationale_short": "What happened: the Fed held at 3.75%–4.00% in a 10-2 vote, with two officials dissenting for a hike, and December hike odds rose to 85.7%. Stocks edged higher, with the S&P 500 up 0.28% and chips up 1.75% on SK Hynix's record quarter. After the close, Microsoft rose 2.5%–4% on 48% Azure growth and capex about $5 billion under forecasts, while Alphabet fell 8%–10% as $51.4 billion of capex left free cash flow at negative $9.07 billion despite 103% cloud growth.\n\nWhat it means: both companies showed strong AI demand, and the market split them on what it costs. That puts the chip suppliers in the middle, since Alphabet's planned 2027 spending is their revenue but investors sold the company committing to it. The 10-year rose to about 5.02% as the 2-year fell, which points to inflation risk rather than a single hike.\n\nWhat would change the picture: a Nasdaq close under 26,424.82 after Amazon reports on Thursday would put the index back in its range. A 10-year above 5.11% after Thursday's PCE would put rates back in charge of tech. Amazon's results rewarding higher spending would undo tonight's split.",
+    "lede_short": "Microsoft and Alphabet both reported cloud growth far above forecasts, and the market split them on cost: Microsoft rose after hours on lower-than-expected spending, while Alphabet fell 8%–10% as its capex pushed free cash flow to negative $9.07 billion. Earlier, a split Fed held rates and December hike odds rose to 85.7%. Amazon and Thursday's PCE decide whether the Nasdaq holds 26,424.82 and the 10-year stays under 5.11%.",
+    "supporting_data": [
+      {
+        "label": "Alphabet's capex was $51.4 billion and free cash flow negative $9.07 billion, a second negative quarter, with a significant 2027 spending increase guided — the shares fell about 10% after hours even as Google Cloud grew 103%.",
+        "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
+      },
+      {
+        "label": "Azure revenue rose 48% to about $33.2 billion, above Microsoft's own 44%–45% guide — Microsoft showed more cloud growth for less spending than forecast, and the shares rose after hours.",
+        "url": "https://www.geekwire.com/2026/microsoft-azure-revenue-surges-48-to-33-2b-beating-expectations-as-cloud-and-ai-demand-grows/"
+      },
+      {
+        "label": "The Fed held at 3.75%–4.00% in a 10-2 vote, with Cook and Hammack dissenting for a hike — a hold with two hawkish dissents keeps a December hike open.",
+        "url": "https://www.cnbc.com/2026/10/28/fed-meeting-today-live-updates.html"
+      },
+      {
+        "label": "December hike odds rose to 85.7% while the 10-year rose about 3 bp to near 5.02% and the 2-year fell to 4.704% — the bond market is pricing inflation risk more than one hike.",
+        "url": "https://www.cnbc.com/2026/10/28/us-treasurys-bonds-yields-federal-reserve.html"
+      },
+      {
+        "label": "WTI rose 2.9% to $102.78 and Brent 1.3% to $115.32 on reports the US may renew strikes on Iran after the midterms — oil took back all of Tuesday's drop and is pushing on long yields.",
+        "url": "https://www.cnbc.com/2026/10/28/oil-price-today-wti-brent-hormuz.html"
+      },
+      {
+        "label": "The semiconductor index rose 1.75% to 11,684.00 as SK Hynix gained 13.3% and Micron 5.86% — chips led the session before Alphabet's report tested the AI spending case after hours.",
+        "url": "https://cappnotes.substack.com/p/closing-look-wednesday-october-28"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7743.98, "change_pct": 0.28, "as_of": "2026-10-28T20:00:00Z" },
+    "nasdaq": { "level": 26550.0, "change_pct": 0.27, "as_of": "2026-10-28T20:00:00Z" },
+    "vix": { "level": 16.91, "change_pct": -3.5, "as_of": "2026-10-28T20:15:00Z" },
+    "ust10y": { "level": 5.02, "change_bps": 3, "as_of": "2026-10-28T20:00:00Z" },
+    "dxy": { "level": 102.4, "change_pct": 0.0, "as_of": "2026-10-28T16:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 5.02, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,424", "value": 26550.0, "trigger_below": 26424.82, "unit": "" },
+    { "name": "BTC vs 80,320", "value": 81261.04, "trigger_below": 80320.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "GOOGL", "note": "Down 8%–10% after hours from $322.22; capex of $51.4 billion left free cash flow at negative $9.07 billion despite 103% Google Cloud growth.", "sentiment": "negative" },
+    { "ticker": "MSFT", "note": "Up 2.5%–4% after hours; Azure grew 48% and capex came in about $5 billion under forecasts.", "sentiment": "positive" },
+    { "ticker": "NVDA", "note": "Down 1.17% while the semiconductor index rose 1.75%, missing the memory-led rally.", "sentiment": "neutral" },
+    { "ticker": "AMD", "note": "Up 3.24% with the memory-led chip rally.", "sentiment": "positive" },
+    { "ticker": "BTC", "note": "About $81,261 in the evening, up 0.7% over 24 hours and above the $80,320 October 8 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "The Nasdaq closed about 125 points above 26,424.82, but Alphabet's after-hours drop on cash burn puts the level up against Amazon's results on Thursday.",
+      "entry": "26,424.82, with Monday's 26,169.38 below.",
+      "invalidation": "A close under 26,424.82 would put the index back in its range; under 26,169.38 would erase this week's gain. Amazon's results being rewarded for higher spending would undo tonight's split.",
+      "horizon": "Through Amazon's results on Thursday"
+    },
+    {
+      "asset": "US 10Y",
+      "thesis": "The 10-year is near 5.02% after a hold with two hike dissents and December odds at 85.7%, with the 2-year falling as long yields rose.",
+      "entry": "5.11% above; 5% below.",
+      "invalidation": "PCE above the 3.6% headline and 3.1% core expected would test 5.11%; a softer print would likely take the 10-year back under 5%.",
+      "horizon": "Through the October 29 PCE and GDP release"
+    },
+    {
+      "asset": "Brent",
+      "thesis": "Brent rose 1.3% to $115.32 on reports of renewed US strikes on Iran after the midterms, about 1.2% under Friday's $116.72 high.",
+      "entry": "$116.72 above; Tuesday's $113.88 settle below.",
+      "invalidation": "A settlement above $116.72 would put oil behind the rise in long yields; a move under $113.88 would undo this week's gain.",
+      "horizon": "Through the November 3 midterms"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-28-night.mdx"
+}
