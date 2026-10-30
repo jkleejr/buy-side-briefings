@@ -1,0 +1,82 @@
+{
+  "routine": "markets",
+  "date": "2026-10-29",
+  "window": "night",
+  "generated_at": "2026-10-30T00:14:17Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Alphabet has its worst day on record, and Amazon falls after hours on the same spending worry",
+    "label": "Close: S&P 500 about -0.3% to 7,720.39, Nasdaq about -1.4% to ~26,184, Dow about -0.3%; Russell 2000 +1.01%; SOX -1.42%; VIX 17.20; 10Y ~4.98%; Brent $114.88; BTC $77,639. Alphabet -12.64%; after hours: Amazon about -7%, Intel about -21%.",
+    "rationale_short": "What happened: Alphabet fell 12.64%, its largest one-day drop on record and about $500 billion of market value, and the Nasdaq fell about 1.4% to close roughly 15 points above Monday's 26,169.38. After the close, Amazon fell about 7% even though AWS grew 39%, as Amazon missed on earnings and said 2027 spending will be meaningfully more than this year's $220 billion. Intel fell about 21% after hours on a weak fourth-quarter guide.\n\nWhat it means: two companies with accelerating cloud growth were sold on what that growth costs, and the selling reached Caterpillar, a supplier of AI power. It stayed narrow: the Russell 2000 rose 1.01%, Europe rallied, and the 10-year fell to about 4.98% after in-line PCE, so rates did not drive the day. Bitcoin broke its October 8 low after Binance paused withdrawals.\n\nWhat would change the picture: a Nasdaq close back above 26,424.82 would mean the market absorbed both reports; a close under 26,169.38 would erase the week's gain. A 10-year back above 5.11% on next Friday's jobs report would remove the support small caps had today.",
+    "lede_short": "Alphabet fell 12.64%, its worst day on record, and Amazon fell about 7% after hours despite 39% AWS growth, as both were sold on the cost of AI spending rather than on demand. The selling stayed in tech: small caps rose 1% and the 10-year fell under 5% on in-line inflation. The Nasdaq closed 15 points above 26,169.38; a close below it erases the week's gain, and a close back above 26,424.82 would undo the read.",
+    "supporting_data": [
+      {
+        "label": "Alphabet's Class A shares fell 12.64% to $283.82, past the 11.63% record drop of March 2020 — about $500 billion of value went in one session on a quarter whose cash miss, not its 103% cloud growth, set the price.",
+        "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html"
+      },
+      {
+        "label": "AWS revenue rose 39% to $45.98 billion, but Amazon earned $1.89 a share against $1.96 expected and spent $77.26 billion on capex — the shares fell about 7% after hours, so the market applied Alphabet's test to Amazon the same day.",
+        "url": "https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html"
+      },
+      {
+        "label": "September PCE rose 3.6% from a year earlier and core 3.1%, both in line, while third-quarter GDP grew 3.4% — the 10-year fell about 4 bp to 4.98%, so rates did not add to the pressure on tech.",
+        "url": "https://www.cnbc.com/amp/2026/10/29/treasury-yields-federal-reserve-rates.html"
+      },
+      {
+        "label": "The Russell 2000 rose 1.01% to 2,859.22 while the semiconductor index fell 1.42% — money moved out of AI-linked stocks rather than out of stocks.",
+        "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-29"
+      },
+      {
+        "label": "Binance paused withdrawals on several networks after suspicious outflows estimated at $3.3 billion to $5.8 billion — bitcoin fell under its $80,320 October 8 low to about $77,640.",
+        "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/"
+      },
+      {
+        "label": "Intel guided fourth-quarter revenue to $15–$16 billion against about $17 billion expected and fell about 21% after hours — weak PC sales and supply limits, not AI demand, drove the miss.",
+        "url": "https://qz.com/intel-stock-falls-revenue-forecast-pc-demand-102926"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7720.39, "change_pct": -0.3, "as_of": "2026-10-29T20:00:00Z" },
+    "nasdaq": { "level": 26184.0, "change_pct": -1.38, "as_of": "2026-10-29T20:00:00Z" },
+    "vix": { "level": 17.2, "change_pct": 1.71, "as_of": "2026-10-29T20:15:00Z" },
+    "ust10y": { "level": 4.98, "change_bps": -4, "as_of": "2026-10-29T20:00:00Z" },
+    "dxy": { "level": 102.0, "change_pct": 0.0, "as_of": "2026-10-29T14:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.98, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 26,169", "value": 26184.0, "trigger_below": 26169.38, "unit": "" },
+    { "name": "BTC vs 77,500", "value": 77639.18, "trigger_below": 77500.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "GOOGL", "note": "Fell 12.64% to $283.82, its worst day on record, removing about $500 billion of market value.", "sentiment": "negative" },
+    { "ticker": "AMZN", "note": "Fell 4.25% to $243.79 in the session and about 7% after hours; AWS grew 39% but EPS missed and 2027 capex is guided above $220 billion.", "sentiment": "negative" },
+    { "ticker": "MSFT", "note": "Gave up a 3.5% premarket gain to close about 0.2% lower on one recap.", "sentiment": "neutral" },
+    { "ticker": "NVDA", "note": "Fell 0.80% to $213.66, less than the semiconductor index's 1.42% decline.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "About $77,639 at 8:12pm ET, down 4.5% over 24 hours and below the $80,320 October 8 low after Binance paused withdrawals.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "The Nasdaq closed about 15 points above Monday's 26,169.38 after Alphabet's record drop, with Amazon and Intel lower after hours going into Friday.",
+      "entry": "26,169.38 below; 26,424.82 above.",
+      "invalidation": "A close under 26,169.38 would erase this week's gain; a close back above 26,424.82 would mean the market absorbed both Alphabet and Amazon.",
+      "horizon": "Through Apple and Palantir results on November 2"
+    },
+    {
+      "asset": "Russell 2000 vs Nasdaq",
+      "thesis": "Small caps rose 1.01% while the Nasdaq fell 1.4% and the 10-year moved back under 5%, which points to rotation out of AI spenders rather than out of stocks.",
+      "entry": "Russell 2000 at 2,859.22; 10-year at 4.98% against 5.11%.",
+      "invalidation": "Small caps giving back Thursday's gain alongside tech would make it broad selling; a 10-year above 5.11% would remove the lower yields that supported the move.",
+      "horizon": "Through the November 6 jobs report"
+    },
+    {
+      "asset": "Bitcoin",
+      "thesis": "BTC broke its $80,320 October 8 low after Binance paused withdrawals, trading near $77,639 against a 24-hour low of $77,500.",
+      "entry": "$77,500 below; $80,320 above.",
+      "invalidation": "A recovery above $80,320 through Friday's monthly options expiry would make this a reaction to one exchange; a daily close under $77,500 would extend the decline.",
+      "horizon": "Through the October 30 monthly options expiry"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-29-night.mdx"
+}
