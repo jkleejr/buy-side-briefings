@@ -1,0 +1,80 @@
+{
+  "routine": "markets",
+  "date": "2026-10-30",
+  "window": "morning",
+  "generated_at": "2026-10-30T12:10:28Z",
+  "is_seed": false,
+  "verdict": {
+    "headline": "Amazon and Intel pull Nasdaq futures down about 2% as bonds rally on the AI spending selloff",
+    "label": "Pre-market: Nasdaq-100 futures -2.0% to -2.5%, S&P 500 futures about -1.0%, Dow futures about flat; Amazon about -7%, Intel about -25%; 10Y ~4.91%–4.94%; 2Y ~4.57%; Brent (Dec) ~$116.59; BTC $77,376.",
+    "rationale_short": "What happened: Nasdaq-100 futures are down 2.0%–2.5% after Amazon fell about 7% and Intel about 25% premarket. Amazon's free cash flow outflow topped $42 billion over 12 months and its holiday guide missed. Intel guided fourth-quarter revenue to $15–$16 billion against $17.1 billion expected. The Kospi fell 3.48% and European tech about 2%, while the 10-year fell about 6 bp to near 4.92% and the 2-year about 8 bp to 4.57%.\n\nWhat it means: this is the third day of selling over what AI spending costs, but it is not broad. Dow futures are flat and Treasuries are rallying even as Brent rises on Iran, so demand for safety is outweighing the inflation risk for now. Amazon's problem is cash and Intel's is PC demand, two different causes landing on the same index.\n\nWhat would change the picture: a Nasdaq close back above 26,169.38 would mean the market absorbed three weak tech reports in three sessions; a close under last Friday's 25,955.34 would leave the index down for the week. A confirmed US strike on Iran that lifts oil and puts the 10-year back above 5.11% would remove the bond rally that is cushioning the selling.",
+    "lede_short": "Nasdaq futures are down about 2% after Amazon fell 7% and Intel 25% premarket, the third day of selling over what AI spending costs. The selling is narrow: Dow futures are flat and the 10-year fell to about 4.92% despite oil rising on Iran. A Nasdaq close under last Friday's 25,955.34 would leave the index down for the week; a close back above 26,169.38 would undo the read.",
+    "supporting_data": [
+      {
+        "label": "Amazon fell about 7% and Intel about 25% premarket, a combined loss of about $300 billion in market value if the moves hold — Nasdaq-100 futures were down 2.16% at 4am ET, so two reports are setting the index's direction on their own.",
+        "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163"
+      },
+      {
+        "label": "Amazon's free cash flow outflow topped $42 billion over the 12 months to September, nearly double the 2022 record, and its holiday-quarter sales guide came in below consensus — the market is pricing the cash Amazon spends, not AWS's 39% growth.",
+        "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
+      },
+      {
+        "label": "The 10-year fell about 6 bp to 4.91%–4.94% and the 2-year more than 8 bp to 4.57%, with the 10-year on track for a 36–37 bp drop in October — bonds are rallying with the tech selling, and fed funds futures are pricing less certainty of a December hike.",
+        "url": "https://investinglive.com/news/some-good-news-treasuries-rally-as-ai-selloff-drives-flight-to-safety-10-year-yield-at-one-month-low/"
+      },
+      {
+        "label": "Brent's expiring December contract rose toward $116.59 after a tanker was hit in the Strait of Hormuz and Trump was briefed on options for new strikes on Iran — oil is the one large asset rising, and it is the main risk to the bond rally.",
+        "url": "https://www.brecorder.com/news/40446647/oil-rises-on-supply-concerns-as-houthis-attack-saudi-arabia-list-3"
+      },
+      {
+        "label": "The Kospi fell 3.48% and the Nikkei 2.1% as the Bank of Japan held at 1.25%, and European tech fell about 2% — the selling reached the Asian and European chip suppliers overnight.",
+        "url": "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "Binance confirmed about $6.3 billion in losses from the theft and pledged to cover them, with about 18,270 BTC sitting in 19 wallets that have not moved — bitcoin is at $77,376, down 3.3% in 24 hours and below its October 8 low.",
+        "url": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7720.39, "change_pct": -0.3, "as_of": "2026-10-29T20:00:00Z" },
+    "nasdaq": { "level": 26184.0, "change_pct": -1.38, "as_of": "2026-10-29T20:00:00Z" },
+    "vix": { "level": 17.2, "change_pct": 1.71, "as_of": "2026-10-29T20:15:00Z" },
+    "ust10y": { "level": 4.925, "change_bps": -6, "as_of": "2026-10-30T10:00:00Z" },
+    "dxy": { "level": 102.0, "change_pct": 0.0, "as_of": "2026-10-29T14:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.925, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 25,955", "value": 26184.0, "trigger_below": 25955.34, "unit": "" },
+    { "name": "BTC vs 76,343", "value": 77376.42, "trigger_below": 76342.83, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AMZN", "note": "Down about 7% premarket after a 12-month free cash outflow above $42 billion, a holiday-quarter guide below consensus and a reaffirmed $220 billion capex plan.", "sentiment": "negative" },
+    { "ticker": "NVDA", "note": "Down 0.8%–3.0% premarket depending on the source, less than Micron's roughly 5.6% decline.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "At $77,376, down 3.3% over 24 hours and about $1,000 above the $76,343 low after Binance confirmed $6.3 billion in losses.", "sentiment": "negative" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Nasdaq / AI spending",
+      "thesis": "Futures put the Composite near 25,660, below Monday's 26,169.38 and last Friday's 25,955.34, on the third day of selling over AI spending costs.",
+      "entry": "25,955.34 below; 26,169.38 above.",
+      "invalidation": "A close back above 26,169.38 would mean the market absorbed Alphabet, Amazon and Intel; a close under 25,955.34 leaves the index down for the week.",
+      "horizon": "Through Apple and Palantir results on November 2"
+    },
+    {
+      "asset": "10-year Treasury vs oil",
+      "thesis": "The 10-year fell to about 4.92% as money left tech, while Brent's expiring contract rose toward $116.59 on Iran strike reports; safety demand is outweighing the inflation risk for now.",
+      "entry": "10-year 4.95% and 5.11%; Brent ~$116.59.",
+      "invalidation": "A confirmed US strike that lifts oil and puts the 10-year back above 5.11% would reverse the bond rally; a 10-year holding under 4.95% means the safety bid is still winning.",
+      "horizon": "Through the November 6 jobs report"
+    },
+    {
+      "asset": "Bitcoin",
+      "thesis": "BTC is at $77,376, below the $80,320 October 8 low, with a monthly options expiry today and 18,270 stolen BTC in unmoved wallets.",
+      "entry": "$76,343 below; $80,320 above.",
+      "invalidation": "A daily close under $76,343 would extend the decline; a move back above $80,320 would make the Binance theft a one-day shock.",
+      "horizon": "Through the October 30 monthly options expiry and month-end"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-30-morning.mdx"
+}
