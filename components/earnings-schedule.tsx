@@ -74,6 +74,18 @@ function stripLegalSuffix(name: string): string {
   return out;
 }
 
+// Names Yahoo spells in a way nobody says them: "Amazon.com" (the ".com"
+// survives the suffix strip on purpose) and "SK hynix" (the company's own
+// lowercase styling).
+const NAME_OVERRIDES: Record<string, string> = {
+  AMZN: "Amazon",
+  "000660.KS": "SK Hynix",
+};
+
+function displayName(e: EarningsEntry): string {
+  return NAME_OVERRIDES[e.symbol] ?? stripLegalSuffix(e.name ?? e.label);
+}
+
 // ---- The "chart": a horizontal gantt of when each name reports ------------
 function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
   const onAxis = entries.filter((e) => e.daysUntil <= HORIZON);
@@ -184,7 +196,7 @@ function ScheduleTable({ entries }: { entries: EarningsEntry[] }) {
                   {displayTicker(e)}
                 </td>
                 <td className="px-2 py-1 text-[var(--foreground)]">
-                  {stripLegalSuffix(e.name ?? e.label)}
+                  {displayName(e)}
                 </td>
                 <td className="px-2 py-1 text-right text-[var(--foreground)]">
                   {e.price != null ? `$${e.price.toLocaleString()}` : "—"}
