@@ -52,14 +52,15 @@ export default function MobileNav({ items }: { items: NavItem[] }) {
               // used to mark nothing, and the only highlight a reader ever saw
               // was hover.
               const active = item.external ? false : isActiveRoute(item.href, pathname);
-              const cls = `flex items-baseline gap-2 border-t border-[var(--border)] px-4 py-3 font-mono text-[13px] uppercase tracking-wider first:border-t-0 hover:bg-[rgba(255,165,0,0.06)] hover:text-[var(--lapis)] ${
+              const cls = `flex items-baseline gap-2 border-t border-[var(--border)] px-4 py-3 font-mono text-[13px] uppercase tracking-wider text-[var(--lapis)] first:border-t-0 hover:bg-[rgba(255,165,0,0.06)] ${
                 active
-                  ? "border-l-2 border-l-[var(--lapis)] font-semibold text-[var(--lapis)]"
-                  : "border-l-2 border-l-transparent text-[var(--foreground)]"
+                  ? "border-l-2 border-l-[var(--lapis)] font-semibold"
+                  : "border-l-2 border-l-transparent"
               }`;
               const inner = (
                 <>
-                  <span className="text-[var(--lapis-dim)]">{item.code}</span>
+                  {/* The label alone: with the code beside it the drawer read
+                      "TODAY TODAY". */}
                   <span>{item.label}</span>
                   {item.external && (
                     <span aria-hidden="true" className="text-[var(--dim)]">↗</span>
