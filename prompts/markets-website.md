@@ -64,8 +64,9 @@ git fetch origin && git checkout deploy && git pull origin deploy
 known page, e.g. `https://www.cnbc.com/markets/`. If it loads, carry on as
 normal. If it fails (a `blocked`, `host_not_allowed` or `ENOTFOUND` error), do
 not stop: write the report from search results, and
-- put this sentence in the methodology note: "This run could not open article
-  pages (web access was blocked), so figures come from search-result text."
+- say so in the methodology note's workflow sentence: "Web access was
+  blocked, so no article pages opened and figures come from search-result
+  text."
 - put the same fact, with the exact error, at the top of your final summary,
   and say the routine's cloud environment needs Network access set to Full.
 
@@ -135,7 +136,8 @@ drop out just because the page wouldn't load for you. When you cite one:
 - state only what the search result itself says (its headline and snippet),
   never details you are guessing at from the headline;
 - prefer a second source that confirms the same number, when one exists;
-- the methodology note says the run could not open article pages (Step 1).
+- the methodology note's workflow sentence names how many stories you could
+  not open.
 An unimportant story you could not open is not worth the citation.
 
 ## Step 3 — Form the read
@@ -446,15 +448,27 @@ Precision is not the thing being cut. Keep every citation and every level. The
 target — a shorter report with the same evidence is the goal, and a report
 that hits the word count by dropping evidence has failed the brief.
 
-**The methodology note is one line, and it is not a source list.** Every claim
-in the body already carries an inline citation, so re-listing the outlets at
-the top spends 60 words repeating what the links say. Write when it was
-generated and against what close — nothing else:
+**The methodology note tells the reader how this report was made — two or
+three sentences, in this order** (reader direction 2026-10-31):
 
-> **Methodology note:** Night report, generated after the August 28 US close. Sources cited inline.
+1. **Did the workflow work?** One sentence on how the run went: whether the
+   Step 1 web check passed, how many articles you opened and how many you
+   could not, and any number you could not get (e.g. no 30-year close). If
+   everything worked, say so in a few words. This is how the reader knows the
+   process is healthy, so never skip it and never soften a failure.
+2. **Why this story?** One or two sentences on why the heading story is the
+   day's story: what made it outrank the other candidates (its size, what it
+   changes, what it tests), and which runner-up you weighed and ranked below
+   it. This is the reasoning the reader cannot see anywhere else.
 
-The one exception: if the Step 1 page check failed, add its sentence ("This
-run could not open article pages ...") to the end of the note.
+Leave out everything the reader already knows or the page already shows:
+- the window, date or generation time (the page header prints them);
+- that markets are closed on weekends or holidays, or that crypto trades
+  around the clock;
+- that levels are carried from the last close (the table says so);
+- a source list or "Sources cited inline" (the links are in the body).
+
+> **Methodology note:** Web check passed; opened 11 of 12 articles (the Bloomberg piece is paywalled, so its figure is cited from Reuters). Intel leads because its 29% fall dragged chips down about 7% and moved the selling from AI's buyers to its suppliers; Amazon's miss was the runner-up, but it recovered most of its premarket loss by the close.
 
 **No section-label prefixes on headings.** A heading says what the section is
 about, not what kind of section it is. Write `## August 3, 2026 Close`, not
@@ -471,7 +485,7 @@ markers, not inline. Headings carry no icon, and a status is a word: write
 **No standing disclaimer line.** Do not write "Educational analysis only —
 not investment advice"; it is not rendered anywhere on the site any more.
 
-1. `> **Methodology note:**` — one line, per the rule above. Not a source list.
+1. `> **Methodology note:**` — two or three sentences, per the rule above: did the workflow work, and why this story. Not a source list.
 2. `## <plain-English summary of the session>` — the read: **one** paragraph
    (120 words, hard) on the day's one story, **and nothing after it** — no
    bullet list. The sourced data points go in `verdict.supporting_data` only:
@@ -653,7 +667,7 @@ git push origin deploy
 ## Failure handling
 
 - If WebSearch returns rate-limit or no results twice in a row for the same query, move on with what you have. Note "data unavailable" inline; do not fabricate.
-- If a market is closed (weekend, holiday) and the cron still fires, write a *reflection* report focused on what's known since the last close + what to position for next session. Mark `"window": "morning"` and adjust the methodology note.
+- If a market is closed (weekend, holiday) and the cron still fires, write a *reflection* report focused on what's known since the last close + what to position for next session. Mark `"window": "morning"`. The methodology note does not mention that the market is closed; the reader knows.
 - If the `git push` fails, retry once. If it fails again, leave the commit locally and exit with a clear log line — do not amend, do not force-push.
 
 ## Calibration — important
