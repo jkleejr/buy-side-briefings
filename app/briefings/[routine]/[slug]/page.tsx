@@ -368,7 +368,7 @@ function VerdictHead({
                       rel="noopener noreferrer"
                       className="whitespace-nowrap font-mono text-[11px] tracking-[0.06em] text-[var(--lapis)] hover:underline"
                     >
-                      {src} →
+                      {src} ▸
                     </a>
                   </>
                 )}
