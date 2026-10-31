@@ -136,7 +136,13 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
                       border: `1.5px solid ${dotColor(e.isEstimate)}`,
                     }}
                   />
-                  <span className={`whitespace-nowrap font-mono text-[9px] ${COUNTDOWN}`}>
+                  {/* Confirmed dates read in white, estimates stay grey, so
+                      the countdown says "how sure" along with its dot. */}
+                  <span
+                    className={`whitespace-nowrap font-mono text-[9px] ${
+                      e.isEstimate ? COUNTDOWN : "text-[var(--foreground)]"
+                    }`}
+                  >
                     {countdownBadge(e.daysUntil)}
                   </span>
                 </span>
