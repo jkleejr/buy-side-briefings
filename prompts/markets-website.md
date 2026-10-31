@@ -453,6 +453,18 @@ not investment advice"; it is not rendered anywhere on the site any more.
    summary itself: no "The Read —" prefix, no verdict, no BUY/SELL/HOLD/STEP
    ASIDE label, no stance marker, no conviction rating. It states what
    happened, not what to do.
+
+   **This heading is the report page's title.** The site lifts it out of the
+   body and prints it at the top of the report, under the date and the
+   read-time. `verdict.headline` is the homepage's headline for the same
+   report, so the reader sees one and then clicks through to the other:
+   **word them differently.** The homepage line is the short plain-English
+   hook (~90 chars, no prices); this one is the fuller version, in title case,
+   and may carry the numbers. On 2026-10-30 night they were "Intel's worst day
+   since 1974 drags chip stocks down and gives the Nasdaq its worst month in
+   19 months" (homepage) and "Intel's Worst Day Since 1974 Takes Chip Stocks
+   Down About 7% and Gives the Nasdaq Its Worst Month Since March 2025" (this
+   heading) — that is the pattern to follow.
 3. `## <the session and date, e.g. "August 3, 2026 Close">` — markdown table of
    levels and changes. Rows earn their place: the indices, rates, dollar, oil
    and crypto always; single names only if they moved or carry news. No prose

@@ -70,9 +70,16 @@ export default async function BriefingPage({
     briefing.title && briefing.title !== `${briefing.routine} ${briefing.slug}`
       ? briefing.title.trim()
       : "";
-  const headline = head
-    ? head.headline?.trim() || firstSentence(head.rationale_short)
-    : authoredTitle;
+  // The full read's own opening heading is the page title, and it comes out
+  // of the body so it is not printed twice. The verdict headline is the one
+  // the homepage shows; repeating it here put the same sentence in front of a
+  // reader who had just clicked it, with the report's real headline buried
+  // under "The full read". The verdict headline stays as the fallback for a
+  // body that opens without a heading.
+  const lead = leadHeading(briefing.body);
+  const headline =
+    lead.title ||
+    (head ? head.headline?.trim() || firstSentence(head.rationale_short) : authoredTitle);
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-14 pt-6 sm:px-6 sm:pt-[39px]">
@@ -105,6 +112,9 @@ export default async function BriefingPage({
             </>
           )}
         </div>
+        <div className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-[var(--faint)]">
+          The full read - {fullReadMin} min
+        </div>
         <h1 className="font-serif text-[27px] font-semibold leading-[1.15] tracking-[-0.01em] text-[var(--foreground)] sm:text-[31px]">
           {headline || formatBriefingDateLine(briefing)}
         </h1>
@@ -126,13 +136,13 @@ export default async function BriefingPage({
             <VerdictHead verdict={verdict} bullets={glanceBullets(points)} />
           </Tier>
 
-          <Tier label={`The full read · ${fullReadMin} min`}>
-            <FullRead body={briefing.body} />
+          <Tier>
+            <FullRead body={lead.body} />
           </Tier>
         </div>
       ) : (
         <div className="briefing-body">
-          <BriefingMarkdown source={briefing.body} />
+          <BriefingMarkdown source={lead.body} />
         </div>
       )}
 
@@ -248,6 +258,21 @@ function Tier({
       {children}
     </section>
   );
+}
+
+/**
+ * The body's first heading as plain text, and the body without it. Reports
+ * open with a methodology note and then the `## <summary>` heading; anything
+ * before the heading stays in the body.
+ */
+function leadHeading(body: string): { title: string; body: string } {
+  const m = body.match(/^#{1,6}[ \t]+(.+?)[ \t#]*$/m);
+  if (!m || m.index === undefined) return { title: "", body };
+  const title = m[1]
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`]/g, "")
+    .trim();
+  return { title, body: body.slice(0, m.index) + body.slice(m.index + m[0].length) };
 }
 
 /** First sentence of a longer rationale, for a headline fallback. */
