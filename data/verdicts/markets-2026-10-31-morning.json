@@ -1,0 +1,84 @@
+{
+  "routine": "markets",
+  "date": "2026-10-31",
+  "window": "morning",
+  "generated_at": "2026-10-31T12:48:28Z",
+  "is_seed": false,
+  "verdict": {
+    "emoji": "⚖️",
+    "headline": "Chip selloff and Hormuz tanker fires set up a week of midterms, AMD results and jobs data",
+    "label": "Saturday: S&P 500 closed Fri at 7,579.97 (-1.82%), Nasdaq 25,437.00 (-2.86%, -5.3% in October); VIX 19.42; 10Y ~4.91%; DXY 101.92; Brent (Dec) $117.64; BTC ~$77,496 Sat (+0.2% in 24h).",
+    "conviction": "low",
+    "horizon": "Monday November 2 through Friday November 6, when the midterms, AMD's results and the October jobs report land",
+    "rationale_short": "What happened: no stock, bond or oil market has traded since Friday. The Nasdaq fell 2.86% to 25,437.00 on Friday after Intel's 28.58% drop, ending October down 5.3%, while the 10-year fell to about 4.91% and Brent's expiring December contract settled at $117.64, a six-month high. Overnight, Iran's Revolutionary Guard said tankers using an 'unauthorized' route struck mines and caught fire in the Strait of Hormuz, which the US disputes, and Iran's supreme leader ordered the military to answer any threat. Trump said the war will be 'wrapped up soon'. Bitcoin, the only market trading, was near $77,496, up 0.2% in 24 hours and above Friday's $76,176 low.\n\nWhat it means: the weekend added to the oil risk rather than easing it. Tanker fires are a supply event, and Trump's comment is a prediction, not a deal, so Sunday evening's oil open starts from Friday's high with no new reason to fall. That keeps the week's main tension in place: tech selling pushed yields down, while oil pushes inflation risk up. Bitcoin has steadied after the Binance theft, but Binance has not confirmed when withdrawals will resume.\n\nWhat would change the picture: AMD's results on Tuesday will show whether Intel's guide spreads to the rest of the chip sector; a Nasdaq close back above 25,955.34 would undo last week's decline. A 10-year back above 5.11% before Friday's jobs report would mean oil had taken over from the demand for safety. Conviction is low because no market has reopened and this run could check its sources only through search results.",
+    "lede_short": "Nothing but bitcoin has traded since Friday, when Intel's 28.58% fall left the Nasdaq down 5.3% for October and Brent closed at a six-month high. Overnight Iran said tankers struck mines and caught fire in Hormuz, a claim the US disputes, so oil's Sunday open starts with more risk, not less. AMD's results on Tuesday test whether Intel's miss spreads; a 10-year back above 5.11% before Friday's jobs report would mean oil, not tech, is setting rates.",
+    "supporting_data": [
+      {
+        "label": "Iran's Revolutionary Guard said tankers using an 'unauthorized' route struck mines and caught fire in Hormuz, the US disputed it, and Iran's supreme leader ordered an immediate response to any threat — the weekend added to the risk on oil's main shipping route rather than reducing it.",
+        "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon"
+      },
+      {
+        "label": "Trump said the war is 'going to get wrapped up soon' while reports said strike fears are growing for after Tuesday's midterms — the two point in opposite directions, and neither is an agreement oil can price.",
+        "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
+      },
+      {
+        "label": "The Nasdaq fell 2.86% on Friday and 5.3% in October, its worst month since March 2025, while the Dow rose 1.7% for the month — the selling is concentrated in tech, and the week opens with that unresolved.",
+        "url": "https://www.cnn.com/2026/10/30/investing/us-stocks-ai-investment"
+      },
+      {
+        "label": "Next week brings ISM manufacturing and Apple on Monday, the midterms and AMD on Tuesday, and October jobs on Friday with consensus at 55,000 and unemployment at 4.2% — AMD is the first chipmaker to report after Intel's guide.",
+        "url": "https://www.cnbc.com/2026/10/30/stock-market-next-week-outlook-for-nov-2-6-2026.html"
+      },
+      {
+        "label": "Binance said about $3 billion of the $6.3 billion stolen has been frozen and deposits and withdrawals are suspended — bitcoin near $77,496 has held above Friday's $76,176 low, but the unfrozen half is still a possible source of selling.",
+        "url": "https://www.foxbusiness.com/technology/binance-says-security-incident-had-estimated-6-3b-impact-3b-assets-frozen"
+      },
+      {
+        "label": "December hike odds on CME FedWatch fell to 72.7% from 83.0% on Friday — the market still expects a hike, and Friday's jobs report is the next input.",
+        "url": "https://www.actionforex.com/action-insight/market-overview/659298-dollar-falls-across-the-board-as-markets-scale-back-fed-hike-expectations-beyond-december/"
+      }
+    ]
+  },
+  "snapshot": {
+    "sp500": { "level": 7579.97, "change_pct": -1.82, "as_of": "2026-10-30T20:00:00Z" },
+    "nasdaq": { "level": 25437.0, "change_pct": -2.86, "as_of": "2026-10-30T20:00:00Z" },
+    "vix": { "level": 19.42, "change_pct": 12.91, "as_of": "2026-10-30T20:15:00Z" },
+    "ust10y": { "level": 4.91, "change_bps": -3, "as_of": "2026-10-30T20:00:00Z" },
+    "dxy": { "level": 101.92, "change_pct": -0.12, "as_of": "2026-10-30T20:00:00Z" }
+  },
+  "regime_risk": [
+    { "name": "10Y Yield", "value": 4.91, "trigger_above": 5.11, "unit": "%" },
+    { "name": "Nasdaq vs 25,437", "value": 25437.0, "trigger_below": 25437.0, "unit": "" },
+    { "name": "BTC vs 76,176", "value": 77495.77, "trigger_below": 76176.0, "unit": "$" }
+  ],
+  "watchlist_mentions": [
+    { "ticker": "AMD", "note": "Closed Friday at $504.80 after a 10.88% fall; reports Tuesday after the close, the first chipmaker result since Intel's guide.", "sentiment": "neutral" },
+    { "ticker": "AAPL", "note": "Reports Monday after the close; consensus is $1.99 a share on $113.4 billion of revenue, per CMC Markets.", "sentiment": "neutral" },
+    { "ticker": "NVDA", "note": "Closed Friday at $204.64, down 4.22%, less than half AMD's decline.", "sentiment": "neutral" },
+    { "ticker": "BTC", "note": "About $77,496 at 12:47 UTC Saturday, up 0.2% in 24 hours, in a $76,257–$78,091 range and above Friday's $76,176 low.", "sentiment": "neutral" }
+  ],
+  "trade_setups": [
+    {
+      "asset": "Semiconductors / AMD report",
+      "thesis": "The semiconductor index has had two drops of more than 6% in just over a week, and AMD fell 10.88% into its Tuesday report.",
+      "entry": "AMD $504.80 and Nvidia $204.64 closes; Nasdaq 25,437 below, 25,955.34 above.",
+      "invalidation": "A steady AMD guide would make Intel's miss look company-specific; a Nasdaq close above 25,955.34 would undo last week's decline. A cautious guide and a close under 25,437 would extend it.",
+      "horizon": "Through AMD results on November 3"
+    },
+    {
+      "asset": "Oil vs 10-year Treasury",
+      "thesis": "Weekend tanker fires in Hormuz add to oil's risk while the 10-year sits near 4.91% on demand for safety; the two pull yields in opposite directions.",
+      "entry": "10-year at 4.91% against 5.11%; Brent January at $113.43 at Friday's close.",
+      "invalidation": "A 10-year back above 5.11% before the jobs report would mean oil's inflation risk has taken over; a verified de-escalation that pulls Brent well below $113 would remove that pressure.",
+      "horizon": "Through the November 6 jobs report"
+    },
+    {
+      "asset": "Bitcoin",
+      "thesis": "BTC has held above Friday's $76,176 low through Saturday, with Binance withdrawals still suspended and about half the stolen assets unfrozen.",
+      "entry": "$76,176 below; $80,320 above.",
+      "invalidation": "A daily close under $76,176 would extend the decline; a move back above $80,320 would make the theft look like a contained shock.",
+      "horizon": "Through the week of November 2"
+    }
+  ],
+  "body_mdx": "data/briefings/markets/2026-10-31-morning.mdx"
+}
