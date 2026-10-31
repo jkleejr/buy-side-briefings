@@ -1380,7 +1380,7 @@ export default function LevelsChart({
                           }`}
                         >
                           <span aria-hidden className="w-2 shrink-0">
-                            {active ? "\u2022" : ""}
+                            {active ? "\u25B8" : ""}
                           </span>
                           <span className="min-w-0 flex-1 truncate">
                             {labels?.[sym] ?? sym}
