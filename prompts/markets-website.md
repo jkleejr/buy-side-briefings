@@ -173,9 +173,9 @@ retired *the call*, not the evidence: `headline`, `label`, `rationale_short` and
 carrying a number and a real `url`.
 
 **Every label must carry its significance, not just its number.** These entries
-are read twice: as "News today" on the home page, and — the top five, ranked —
-as the glance bullets at the top of the report, which for a hurried reader are
-the whole report. A label that stops at the print is a data dump in both places.
+are read twice: as "News today" on the home page, and — all of them, ranked,
+each ending in a link to its source — as the bullets at the top of the report,
+which for a hurried reader are the whole report. A label that stops at the print is a data dump in both places.
 State the number, then what it means, in the same breath:
 
 > ✗ ISM Services PMI registered 55.4% in August, up 1.3 points from 54.1%, with
@@ -189,9 +189,8 @@ State the number, then what it means, in the same breath:
 Same numbers, one fewer of them, and the reader now knows why the print
 mattered. Cut the secondary sub-indices that carry no argument; keep the two or
 three that do and say what they add up to. The consequence goes after an em
-dash, and the label ends with a full stop. The glance bullets and "News today"
-show each label's whole first sentence, so keep the point and its meaning in
-that first sentence.
+dash, and the label ends with a full stop. "News today" shows each label's
+whole first sentence, so keep the point and its meaning in that first sentence.
 
 **What those entries are about — in priority order.** The home page is a front
 page. Rank candidates by how much they matter to someone deciding where markets

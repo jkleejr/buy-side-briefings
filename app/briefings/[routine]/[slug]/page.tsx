@@ -11,7 +11,6 @@ import {
   formatBriefingTime,
   formatDateShort,
   readMinutes,
-  splitSentences,
   windowLabel,
 } from "@/lib/utils";
 import type { SupportingPoint } from "@/lib/data";
@@ -126,12 +125,6 @@ export default async function BriefingPage({
           <Tier accent>
             <VerdictHead verdict={verdict} bullets={glanceBullets(points)} />
           </Tier>
-
-          {points.length > 0 && (
-            <Tier>
-              <Evidence points={points} />
-            </Tier>
-          )}
 
           <Tier label={`The full read · ${fullReadMin} min`}>
             <FullRead body={briefing.body} />
@@ -277,23 +270,17 @@ function starRank(label: string): number {
 }
 
 /**
- * The bullets anyone can read at a glance: the highest-priority points, each
- * shown as its complete first sentence. The full sourced versions live one tier below.
- *
- * Five, raised from three on 2026-09-04. The verdicts carry 6-7 points, so at
- * three the glance was showing under half of what the day actually turned on
- * and the tier read as a teaser rather than a summary. Five is the ceiling: a
- * sixth pushes the sourced tier below the fold on a laptop, which is where the
- * reader is supposed to go next.
+ * The bullets: every sourced point, highest priority first, each ending in a
+ * link to its source. There used to be a second, grey "sourced points" tier
+ * under these that repeated the same sentences with the links attached; the
+ * points are one sentence each, so the two tiers said everything twice. With
+ * the links on the bullets that tier is gone, and the bullets carry every
+ * point rather than the top five so nothing went with it.
  */
-function glanceBullets(points: SupportingPoint[]): string[] {
+function glanceBullets(points: SupportingPoint[]): { text: string; url?: string }[] {
   return [...points]
     .sort((a, b) => starRank(b.label) - starRank(a.label))
-    .slice(0, 5)
-    // The whole first sentence, never less. A 190-char clamp here used to
-    // chop every point mid-phrase and add "…", and a cut at the first
-    // semicolon left half-sentences; both read as an unfinished report.
-    .map((p) => splitSentences(stripMarks(p.label))[0] ?? "");
+    .map((p) => ({ text: stripMarks(p.label), url: p.url }));
 }
 
 function VerdictHead({
@@ -307,7 +294,7 @@ function VerdictHead({
     };
     generated_at: string;
   };
-  bullets: string[];
+  bullets: { text: string; url?: string }[];
 }) {
   return (
     // pt-1 rather than pt-2: the accent rule is drawn on the section around
@@ -322,92 +309,47 @@ function VerdictHead({
       </div>
       {bullets.length > 0 && (
         <ul className="mt-3 list-disc space-y-1.5 pl-5">
-          {bullets.map((b, i) => (
-            <li key={i} className="text-[15.5px] leading-[1.5] text-[var(--foreground)]">
-              {b}
-            </li>
-          ))}
+          {bullets.map((b, i) => {
+            const src = sourceLabel(b.url);
+            return (
+              <li key={i} className="text-[15.5px] leading-[1.5] text-[var(--foreground)]">
+                {b.text}
+                {b.url && src && (
+                  <>
+                    {" "}
+                    <a
+                      href={b.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whitespace-nowrap font-mono text-[11px] tracking-[0.06em] text-[var(--lapis)] hover:underline"
+                    >
+                      {src} →
+                    </a>
+                  </>
+                )}
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>
   );
 }
 
-// ---------------------------------------------------------------------------
-// The evidence — every sourced point, bold lead + link. First three visible,
-// the rest behind a native <details> expander.
-// ---------------------------------------------------------------------------
-
+/** The source's site name, for the link at the end of a bullet: INVESTING, CNN. */
 function sourceLabel(url: string | undefined): string | null {
   if (!url) return null;
   try {
     const parts = new URL(url).hostname.replace(/^www\./, "").split(".");
-    const name = parts.length >= 2 ? parts[parts.length - 2] : parts[0];
-    return name.toUpperCase().slice(0, 10);
+    // Step past a country domain's second level (koreatimes.co.kr, bbc.co.uk),
+    // which otherwise came out as "CO". No length cap: a 10-character clamp
+    // printed actionforex.com as "ACTIONFORE".
+    let i = parts.length - 2;
+    if (i > 0 && parts[parts.length - 1].length === 2 && /^(co|com|ac|or|org|net|gov|ne)$/.test(parts[i])) i--;
+    return (parts[Math.max(i, 0)] ?? "").toUpperCase() || null;
   } catch {
     return null;
   }
-}
-
-/** Split "June CPI preview (BLS...): consensus …" into a bold lead + the rest. */
-function splitLead(label: string): { lead: string | null; rest: string } {
-  const clean = stripMarks(label);
-  const m = clean.match(/^(.{3,60}?)(?::\s+|\s+—\s+)/);
-  if (m) return { lead: m[1], rest: clean.slice(m[0].length) };
-  return { lead: null, rest: clean };
-}
-
-function EvidenceRow({ point }: { point: SupportingPoint }) {
-  const { lead, rest } = splitLead(point.label);
-  const src = sourceLabel(point.url);
-  return (
-    <div className="text-[15px] leading-[1.55] text-[var(--ink-3)]">
-      {lead && (
-        <b className="font-semibold text-[var(--foreground)]">{lead}</b>
-      )}
-      {lead ? " — " : ""}
-      {rest}{" "}
-      {point.url && src && (
-        <a
-          href={point.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="whitespace-nowrap font-mono text-[11px] tracking-[0.06em] text-[var(--lapis)] hover:underline"
-        >
-          {src} →
-        </a>
-      )}
-    </div>
-  );
-}
-
-function Evidence({ points }: { points: SupportingPoint[] }) {
-  const shown = points.slice(0, 3);
-  const more = points.slice(3);
-  return (
-    <div className="mt-3 space-y-3.5">
-      {shown.map((p, i) => (
-        <EvidenceRow key={i} point={p} />
-      ))}
-      {more.length > 0 && (
-        <details className="group">
-          <summary className="cursor-pointer list-none font-mono text-[12px] italic text-[var(--faint)] hover:text-[var(--dim)]">
-            <span className="group-open:hidden">
-              + {more.length} more sourced point{more.length > 1 ? "s" : ""} ▾
-            </span>
-            <span className="hidden group-open:inline">
-              − show fewer ▴
-            </span>
-          </summary>
-          <div className="mt-3.5 space-y-3.5">
-            {more.map((p, i) => (
-              <EvidenceRow key={i} point={p} />
-            ))}
-          </div>
-        </details>
-      )}
-    </div>
-  );
 }
 
 // ---------------------------------------------------------------------------
