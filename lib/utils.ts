@@ -73,6 +73,14 @@ export function windowLabel(w: string): string {
   return WINDOW_LABEL[w] ?? w;
 }
 
+/** "AM" / "PM" for the two editions that run, as the homepage switch says
+ *  it; the retired windows keep their names. */
+export function windowShort(w: string): string {
+  if (w === "morning") return "AM";
+  if (w === "night") return "PM";
+  return windowLabel(w);
+}
+
 const WINDOW_LABEL: Record<string, string> = {
   morning: "Morning",
   afternoon: "Afternoon",

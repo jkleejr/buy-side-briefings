@@ -4,7 +4,7 @@ import {
   formatBriefingDateLine,
   formatBriefingTime,
   formatDateShort,
-  windowLabel,
+  windowShort,
 } from "@/lib/utils";
 import Panel from "./panel";
 
@@ -37,9 +37,9 @@ export default function BriefingList({ items, limit, panel = true }: Props) {
       {list.map((b) => {
         const dateLine = formatBriefingDateLine(b);
         const clock = formatBriefingTime(b.generated_at);
-        // "10/30/26 - Night", the same date line the report page itself opens
-        // with. The long weekday spelling stays in the tooltip.
-        const shortLine = `${formatDateShort(b.date)}${b.window ? ` - ${windowLabel(b.window)}` : ""}`;
+        // "10/30/26 - PM": the report page's date line, with the edition as the
+        // homepage switch names it. The long weekday spelling stays in the tooltip.
+        const shortLine = `${formatDateShort(b.date)}${b.window ? ` - ${windowShort(b.window)}` : ""}`;
         return (
           <li key={`${b.routine}-${b.slug}`}>
             <Link

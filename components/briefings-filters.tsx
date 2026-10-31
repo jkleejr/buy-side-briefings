@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { BriefingMeta } from "@/lib/data";
-import { windowLabel } from "@/lib/utils";
+import { windowShort } from "@/lib/utils";
 import BriefingList from "./briefing-list";
 import Panel from "./panel";
 
@@ -30,7 +30,7 @@ export default function BriefingsFilters({ items }: Props) {
     return items.filter((b) => {
       if (window && b.window !== window) return false;
       if (q) {
-        const haystack = [b.title ?? "", b.routine, b.date, b.window ?? "", b.verdict_headline ?? ""]
+        const haystack = [b.title ?? "", b.routine, b.date, b.window ?? "", b.window ? windowShort(b.window) : "", b.verdict_headline ?? ""]
           .join(" ")
           .toLowerCase();
         if (!haystack.includes(q)) return false;
@@ -62,7 +62,7 @@ export default function BriefingsFilters({ items }: Props) {
               {windows.map((w) => (
                 <FilterChip
                   key={w}
-                  label={windowLabel(w)}
+                  label={windowShort(w)}
                   active={window === w}
                   onClick={() => setWindow(w)}
                 />
