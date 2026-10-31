@@ -177,7 +177,7 @@ function ScheduleTable({ entries }: { entries: EarningsEntry[] }) {
                 <td className="px-2 py-1 font-bold text-[var(--lapis)]">
                   {displayTicker(e)}
                 </td>
-                <td className="px-2 py-1 text-[var(--dim)]">
+                <td className="px-2 py-1 text-[var(--foreground)]">
                   {stripLegalSuffix(e.name ?? e.label)}
                 </td>
                 <td className="px-2 py-1 text-right text-[var(--foreground)]">
