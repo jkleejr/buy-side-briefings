@@ -461,6 +461,9 @@ three sentences, in this order** (reader direction 2026-10-31):
    changes, what it tests), and which runner-up you weighed and ranked below
    it. This is the reasoning the reader cannot see anywhere else.
 
+Write it in plain, everyday words, the way you would explain it to a friend:
+"it only affects crypto, not stocks or bonds", not "it touches crypto alone".
+
 Leave out everything the reader already knows or the page already shows:
 - the window, date or generation time (the page header prints them);
 - that markets are closed on weekends or holidays, or that crypto trades
