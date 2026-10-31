@@ -101,7 +101,10 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
 
       <div className="space-y-1">
         {onAxis.map((e) => {
-          const left = `${(Math.max(e.daysUntil, 0) / HORIZON) * 100}%`;
+          const pct = (Math.max(e.daysUntil, 0) / HORIZON) * 100;
+          // In the last third the countdown goes on the dot's left: on a phone
+          // a right-hand "T-88d" ran past the panel edge.
+          const flip = e.daysUntil > 60;
           return (
             <div key={e.symbol} className="flex items-center gap-2">
               <span
@@ -121,11 +124,11 @@ function TimelineChart({ entries }: { entries: EarningsEntry[] }) {
                 ))}
                 {/* the report marker */}
                 <span
-                  className="absolute top-1/2 flex -translate-y-1/2 items-center gap-1"
-                  style={{ left }}
+                  className={`absolute top-1/2 flex -translate-y-1/2 items-center gap-1 ${flip ? "flex-row-reverse" : ""}`}
+                  style={flip ? { right: `${100 - pct}%` } : { left: `${pct}%` }}
                 >
                   <span
-                    className="inline-block h-2.5 w-2.5 -translate-x-1/2 rounded-full"
+                    className={`inline-block h-2.5 w-2.5 shrink-0 rounded-full ${flip ? "translate-x-1/2" : "-translate-x-1/2"}`}
                     style={{
                       background: e.isEstimate
                         ? "transparent"
