@@ -80,7 +80,7 @@ function EditionSwitch({
             className={[
               "px-3 py-1 tracking-[0.08em]",
               active
-                ? "bg-[var(--foreground)] font-semibold text-[var(--background)]"
+                ? "bg-[var(--lapis)] font-semibold text-[var(--background)]"
                 : "text-[var(--dim)]",
               brief ? "cursor-pointer" : "cursor-not-allowed opacity-40",
             ].join(" ")}
