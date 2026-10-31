@@ -113,7 +113,7 @@ export default async function BriefingPage({
           )}
         </div>
         <div className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-[var(--faint)]">
-          The full read - {fullReadMin} min
+          The full read ~ {fullReadMin} min
         </div>
         <h1 className="font-serif text-[27px] font-semibold leading-[1.15] tracking-[-0.01em] text-[var(--foreground)] sm:text-[31px]">
           {headline || formatBriefingDateLine(briefing)}
