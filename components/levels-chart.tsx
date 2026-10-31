@@ -1349,7 +1349,7 @@ export default function LevelsChart({
               ariaLabel="Choose asset"
               minWidth={272}
               label={
-                <span className="font-bold">{labels?.[symbol] ?? symbol}</span>
+                <span className="font-bold text-[var(--lapis)]">{labels?.[symbol] ?? symbol}</span>
               }
             >
               {(close) =>

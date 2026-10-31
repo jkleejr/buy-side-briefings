@@ -24,11 +24,12 @@ export default function RangeSelector({ value, onChange, loading, className }: P
             disabled={loading && active}
             className={
               // The active window is the one fact this row carries, so it is
-              // stated at full contrast rather than as a tinted outline — the
-              // the tinted outline read as "hovered", not "selected".
+              // a solid fill rather than a tinted outline — the tinted outline
+              // read as "hovered", not "selected". Lapis, like the selected
+              // bar size beside it; it was a white fill.
               "border px-1.5 py-0.5 transition-colors " +
               (active
-                ? "border-[var(--foreground)] bg-[var(--foreground)] text-[var(--background)]"
+                ? "border-[var(--lapis)] bg-[var(--lapis)] text-[var(--background)]"
                 : "border-[var(--border)] text-[var(--dim)] hover:border-[var(--lapis-dim)] hover:text-[var(--lapis)]")
             }
           >
