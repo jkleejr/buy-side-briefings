@@ -50,12 +50,6 @@ const FMT_DATE_LONG_UTC = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
   timeZone: "UTC",
 });
-const FMT_DATE_SHORT_UTC = new Intl.DateTimeFormat("en-US", {
-  weekday: "short",
-  month: "short",
-  day: "numeric",
-  timeZone: "UTC",
-});
 /**
  * Format an ISO timestamp as a US Eastern clock time, e.g. "8:30 PM ET".
  * Returns null if input is missing/invalid.
@@ -100,21 +94,6 @@ export function formatBriefingDateLine(b: {
   const win = b.window ? ` - ${windowLabel(b.window)}` : "";
   return `${FMT_WEEKDAY_LONG_UTC.format(d)}, ${FMT_DATE_LONG_UTC.format(d)}${win}`;
 }
-
-/**
- * Compact variant for narrow screens: "Wed, Jun 10 - Night". The routine is
- * already shown as a code chip next to the title, so repeating "Markets
- * Briefing · " only pushes the date off-screen.
- */
-export function formatBriefingTitleShort(b: {
-  date: string;
-  window?: string | null;
-}): string {
-  const d = new Date(`${b.date}T12:00:00Z`);
-  const win = b.window ? ` - ${windowLabel(b.window)}` : "";
-  return `${FMT_DATE_SHORT_UTC.format(d)}${win}`;
-}
-
 
 /**
  * Adult silent reading of non-fiction averages ~240-260 wpm. 200 was a
