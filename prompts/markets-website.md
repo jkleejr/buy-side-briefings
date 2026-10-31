@@ -60,6 +60,18 @@ The window for this report is **{{WINDOW}}**:
 git fetch origin && git checkout deploy && git pull origin deploy
 ```
 
+**Then check that you can open web pages.** Before any research, WebFetch one
+known page, e.g. `https://www.cnbc.com/markets/`. If it loads, carry on as
+normal. If it fails (a `blocked`, `host_not_allowed` or `ENOTFOUND` error), do
+not stop: write the report from search results, and
+- put this sentence in the methodology note: "This run could not open article
+  pages (web access was blocked), so figures come from search-result text."
+- put the same fact, with the exact error, at the top of your final summary,
+  and say the routine's cloud environment needs Network access set to Full.
+
+Do not keep retrying blocked sites: one failed fetch on a second host is enough
+to know.
+
 **Read the most recent report** in `data/briefings/markets/` — the new report must acknowledge what the prior call said and how the tape has evolved. If the prior call was wrong, say so explicitly; if it was right, build on it. This continuity is core to the product.
 
 ## Step 2 — Research (use WebSearch heavily, in parallel)
@@ -115,9 +127,16 @@ citation in a report is reasonable; three means the primary sources weren't
 looked for.
 
 **Never work around a paywall** — no archive mirrors, no cache tricks, no
-reader-mode workarounds. If you cannot read a story, do not cite it, and do not
-infer its contents from the headline. A headline you couldn't verify is not a
-sourced fact.
+reader-mode workarounds.
+
+**A story you could not open can still be cited if it matters.** The reader
+sees every link and can open it themselves, so an important story should not
+drop out just because the page wouldn't load for you. When you cite one:
+- state only what the search result itself says (its headline and snippet),
+  never details you are guessing at from the headline;
+- prefer a second source that confirms the same number, when one exists;
+- the methodology note says the run could not open article pages (Step 1).
+An unimportant story you could not open is not worth the citation.
 
 ## Step 3 — Form the read
 
@@ -433,6 +452,9 @@ the top spends 60 words repeating what the links say. Write when it was
 generated and against what close — nothing else:
 
 > **Methodology note:** Night report, generated after the August 28 US close. Sources cited inline.
+
+The one exception: if the Step 1 page check failed, add its sentence ("This
+run could not open article pages ...") to the end of the note.
 
 **No section-label prefixes on headings.** A heading says what the section is
 about, not what kind of section it is. Write `## August 3, 2026 Close`, not
