@@ -12,7 +12,7 @@ Reports should read like a **professional research note**, not a blog post or in
 - **No meta or introspective phrases.** Avoid "the most uncomfortable observation," "am I getting too confident," "honest watch," "the meta thing is," "gut check." These belong in a personal blog, not a research note.
 - **Lead with the finding and the data.** Every section opens with a finding or claim, not a framing.
 - **Every sentence is finished and ends with a full stop.** That includes each
-  `supporting_data` label, each bullet in the read, each Movers and Next 5
+  `supporting_data` label, each Movers and Next 5
   Trading Days paragraph, and each What to watch setup. A line that ends on a
   bare word ("…as in Treasuries", "…offered in public") reads as text that was
   cut off, and readers take it as an unfinished report (owner, 2026-09-25).
@@ -146,8 +146,8 @@ put it in `rationale_short` as a sentence in context ("...which argues for
 waiting until X confirms"), not as a code or a label. Most sessions do not
 warrant one. Silence is a valid output; a manufactured call is not.
 
-The read MUST be backed by 4–6 specific data points with **inline source
-citations** (markdown links). No vibes. No "feels overbought." If you can't cite
+The read MUST be backed by 4–6 specific data points, each in
+`supporting_data` with its source `url`. No vibes. No "feels overbought." If you can't cite
 a number, don't use it.
 
 **`dont_buy` is retired — do not write the field.** "Don't buy X, better entry
@@ -346,8 +346,11 @@ Raised on 2026-09-01. Budget:
 
 | | words | reads in |
 |---|---|---|
-| **morning** | **1,100–1,500** | ~6 min |
-| **night** | **1,300–1,800** | ~8 min |
+| **morning** | **950–1,350** | ~5 min |
+| **night** | **1,100–1,600** | ~6 min |
+
+(Lowered on 2026-10-30 by the ~180 words the read's bullet list used to take;
+see section 2 below. Those words are not freed for other sections.)
 
 **The extra words buy depth, not repetition.** Everything below about one fact
 in one place still holds without exception — the failure that made reports long
@@ -366,7 +369,7 @@ dropped from 1,500–2,000 to 1,300–1,800:
 
 | section | morning | night |
 |---|---|---|
-| The read (paragraph + bullets) | 280 | 320 |
+| The read (one paragraph) | 120 | 120 |
 | Snapshot (table) | 140 | 170 |
 | What changed / Why it happened | 170 | 190 |
 | Movers | 220 | 250 |
@@ -420,7 +423,7 @@ order:
   the trigger exists.
 
 Precision is not the thing being cut. Keep every citation and every level. The
-4–6 sourced data points behind the read are a floor, not a
+4–6 sourced data points in `supporting_data` are a floor, not a
 target — a shorter report with the same evidence is the goal, and a report
 that hits the word count by dropping evidence has failed the brief.
 
@@ -448,8 +451,12 @@ not investment advice"; it is not rendered anywhere on the site any more.
 
 1. `> **Methodology note:**` — one line, per the rule above. Not a source list.
 2. `## <plain-English summary of the session>` — the read: **one** paragraph
-   (120 words, hard) on the day's one story, then 4–6 bullets of supporting
-   data with inline `[label](url)` citations, one line each. The heading is the
+   (120 words, hard) on the day's one story, **and nothing after it** — no
+   bullet list. The sourced data points go in `verdict.supporting_data` only:
+   the site prints them as the bullets at the top of the report, each ending in
+   its source link, so a bullet list here repeated every one of them a screen
+   later (owner, 2026-10-30). Go straight from the paragraph to the next
+   section. The heading is the
    summary itself: no "The Read —" prefix, no verdict, no BUY/SELL/HOLD/STEP
    ASIDE label, no stance marker, no conviction rating. It states what
    happened, not what to do.
