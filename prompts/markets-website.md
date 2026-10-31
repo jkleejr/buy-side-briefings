@@ -473,7 +473,11 @@ not investment advice"; it is not rendered anywhere on the site any more.
    Down About 7% and Gives the Nasdaq Its Worst Month Since March 2025" (this
    heading) — that is the pattern to follow.
 3. `## <the session and date, e.g. "August 3, 2026 Close">` — markdown table of
-   levels and changes. Rows earn their place: the indices, rates, dollar, oil
+   levels and changes, with exactly three columns: `| Asset | Level | Change |`.
+   The site splits a three-column table into equal thirds; a fourth column
+   (a "Note", say) drops it back to content-sized columns. Context that would
+   go in a note goes in the Change cell, briefly ("+12.91% (intraday high
+   23.93)"). Rows earn their place: the indices, rates, dollar, oil
    and crypto always; single names only if they moved or carry news. No prose
    under the table — if a European or Asian close matters, it is a row.
 4. `## What changed since last report` (morning) or `## Why it happened`

@@ -14,6 +14,7 @@ import {
   windowLabel,
 } from "@/lib/utils";
 import type { SupportingPoint } from "@/lib/data";
+import type { Element } from "hast";
 import ReportBackLink from "@/components/report-back-link";
 
 export const revalidate = 300;
@@ -199,9 +200,20 @@ function BriefingMarkdown({ source }: { source: string }) {
             {children}
           </code>
         ),
-        table: ({ children }) => (
+        table: ({ children, node }) => (
           <div className="my-3 overflow-x-auto border border-[var(--border)]">
-            <table className="w-full border-collapse font-mono text-[11px]">{children}</table>
+            {/* A three-column table (the Asset | Level | Change snapshot) gets
+                equal thirds. Auto layout sized each column to its content, so
+                Level sat squeezed against Change with the right half empty.
+                Wider tables keep auto layout: equal columns would crush their
+                long text cells on a phone. */}
+            <table
+              className={`w-full border-collapse font-mono text-[11px] ${
+                columnCount(node) === 3 ? "table-fixed" : ""
+              }`}
+            >
+              {children}
+            </table>
           </div>
         ),
         th: ({ children }) => (
@@ -273,6 +285,14 @@ function leadHeading(body: string): { title: string; body: string } {
     .replace(/[*_`]/g, "")
     .trim();
   return { title, body: body.slice(0, m.index) + body.slice(m.index + m[0].length) };
+}
+
+/** Cells in a markdown table's header row, read off the hast node. */
+function columnCount(node: Element | undefined): number {
+  const child = (n: Element | undefined, tag: string) =>
+    n?.children.find((c): c is Element => c.type === "element" && c.tagName === tag);
+  const row = child(child(node, "thead"), "tr");
+  return row?.children.filter((c) => c.type === "element" && c.tagName === "th").length ?? 0;
 }
 
 /** First sentence of a longer rationale, for a headline fallback. */
